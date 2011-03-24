@@ -48,6 +48,26 @@ TARGET=translations_merge
 
 .INCLUDE : target.mk
 
+.IF "$(SYSTEM_TRANSLATE_TOOLKIT)" != "YES"
+
+OO2PO=$(AUGMENT_LIBRARY_PATH) $(WRAPCMD) $(SOLARBINDIR)/oo2po
+PO2OO=$(AUGMENT_LIBRARY_PATH) $(WRAPCMD) $(SOLARBINDIR)/po2oo
+
+TRANSLATE_TOOLKIT_PYTHONPATH=$(SOLARLIBDIR)$/translate_toolkit
+.IF "$(SYSTEM_PYTHON)" == "YES"
+PYTHONPATH:=$(TRANSLATE_TOOLKIT_PYTHONPATH)
+.ELSE
+PYTHONPATH:=$(SOLARLIBDIR)/python:$(TRANSLATE_TOOLKIT_PYTHONPATH)
+.ENDIF
+.EXPORT: PYTHONPATH
+
+.ELSE                   # "$(SYSTEM_PYTHON)"!="YES"
+
+OO2PO=$(AUGMENT_LIBRARY_PATH) $(WRAPCMD) oo2po
+PO2OO=$(AUGMENT_LIBRARY_PATH) $(WRAPCMD) po2oo
+
+.ENDIF                  # "$(SYSTEM_PYTHON)"!="YES"
+
 .IF "$(WITH_LANG)" == "ALL"
     all_languages:=$(shell cd $(PRJ)/source && ls -1)
 .ELSE
@@ -60,7 +80,7 @@ $(MISC)/sdf-template/en-US.sdf :
     $(SOLARSRC)/solenv/bin/localize -e -l en-US -f $(SRC_ROOT)/$(PRJNAME)/$@
 
 pot : $(MISC)/sdf-template/en-US.sdf
-    oo2po -P -i $< -o $(MISC)/pot
+    $(OO2PO) -P -i $< -o $(MISC)/pot
 
 $(MISC)/sdf-l10n/%.sdf : $(MISC)/sdf-template/en-US.sdf
 .IF "$(WITH_LANG)" == "kid"
@@ -68,7 +88,7 @@ $(MISC)/sdf-l10n/%.sdf : $(MISC)/sdf-template/en-US.sdf
     sed -e "s/\ten-US\t/\tkid\t/" < $@.tmp > $@
     rm -f $@.tmp
 .ELSE
-    po2oo -i $(PRJ)/source/$(@:b) -t $(MISC)/sdf-template/en-US.sdf -o $@ -l $(@:b)
+    $(PO2OO) -i $(PRJ)/source/$(@:b) -t $(MISC)/sdf-template/en-US.sdf -o $@ -l $(@:b)
 # FIXME: waiting for fix of http://bugs.locamotion.org/show_bug.cgi?id=1883
 # po2oo --skipsource -i $(PRJ)/source/$(@:b) -t $(MISC)/sdf-template/en-US.sdf -o $@ -l $(@:b)
     grep -v "	en-US	" $@ > $@.tmp
