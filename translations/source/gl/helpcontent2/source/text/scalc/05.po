@@ -1,0 +1,547 @@
+#. extracted from helpcontent2/source/text/scalc/05.oo
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: http://qa.openoffice.org/issues/enter_bug.cgi?comment=&component=l10n&form_name=enter_issue&short_desc=Localization+issue+in+file%3A+helpcontent2%2Fsource%2Ftext%2Fscalc%2F05.oo&subcomponent=ui\n"
+"POT-Creation-Date: 2011-03-29 20:41+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: gl\n"
+"X-Generator: Translate Toolkit 1.8.1\n"
+"X-Accelerator-Marker: ~\n"
+
+#: empty_cells.xhp#tit.help.text
+msgid "Handling of Empty Cells"
+msgstr ""
+
+#: empty_cells.xhp#bm_id3146799.help.text
+msgid "<bookmark_value>empty cells;handling of</bookmark_value>"
+msgstr "<bookmark_value>códigos de erro;lista de</bookmark_value>"
+
+#: empty_cells.xhp#hd_id1502121.help.text
+msgid "<variable id=\"empty_cells\"><link href=\"text/scalc/05/empty_cells.xhp\">Handling of Empty Cells</link></variable>"
+msgstr ""
+
+#: empty_cells.xhp#par_id8266853.help.text
+msgid "In older versions of the software, empty cells were forced to numeric 0 in some contexts and to empty string in others, except in direct comparison where =A1=0 and =A1=\"\" both resulted in TRUE if A1 was empty. Emptiness now is inherited until used, so both =VLOOKUP(...)=0 and =VLOOKUP(...)=\"\" give TRUE if the lookup resulted in an empty cell being returned. "
+msgstr ""
+
+#: empty_cells.xhp#par_id2733542.help.text
+msgid "A simple reference to an empty cell is still displayed as numeric 0 but is not necessarily of type numeric anymore, so also comparisons with the referencing cell work as expected. "
+msgstr ""
+
+#: empty_cells.xhp#par_id4238715.help.text
+msgid "For the following examples, A1 contains a number, B1 is empty, C1 contains the reference to B1:"
+msgstr ""
+
+#: empty_cells.xhp#par_id8277230.help.text
+msgid "A1: 1 B1: <empty> C1: =B1 (displays 0)"
+msgstr ""
+
+#: empty_cells.xhp#par_id4086428.help.text
+msgctxt "empty_cells.xhp#par_id4086428.help.text"
+msgid "=B1=0 => TRUE"
+msgstr ""
+
+#: empty_cells.xhp#par_id9024628.help.text
+msgid "=B1=\"\" => TRUE"
+msgstr ""
+
+#: empty_cells.xhp#par_id3067110.help.text
+msgid "=C1=0 => TRUE"
+msgstr ""
+
+#: empty_cells.xhp#par_id8841822.help.text
+msgid "=C1=\"\" => TRUE (previously was FALSE)"
+msgstr ""
+
+#: empty_cells.xhp#par_id4077578.help.text
+msgid "=ISNUMBER(B1) => FALSE"
+msgstr ""
+
+#: empty_cells.xhp#par_id9094515.help.text
+msgid "=ISNUMBER(C1) => FALSE (previously was TRUE)"
+msgstr ""
+
+#: empty_cells.xhp#par_id396740.help.text
+msgid "=ISNUMBER(VLOOKUP(1;A1:C1;2)) => FALSE (B1)"
+msgstr ""
+
+#: empty_cells.xhp#par_id3859675.help.text
+msgid "=ISNUMBER(VLOOKUP(1;A1:C1;3)) => FALSE (C1, previously was TRUE)"
+msgstr ""
+
+#: empty_cells.xhp#par_id402233.help.text
+msgctxt "empty_cells.xhp#par_id402233.help.text"
+msgid "=ISTEXT(B1) => FALSE"
+msgstr ""
+
+#: empty_cells.xhp#par_id1623889.help.text
+msgctxt "empty_cells.xhp#par_id1623889.help.text"
+msgid "=ISTEXT(C1) => FALSE"
+msgstr ""
+
+#: empty_cells.xhp#par_id7781914.help.text
+msgid "=ISTEXT(VLOOKUP(1;A1:C1;2)) => FALSE (B1, previously was TRUE)"
+msgstr ""
+
+#: empty_cells.xhp#par_id300912.help.text
+msgid "=ISTEXT(VLOOKUP(1;A1:C1;3)) => FALSE (C1)"
+msgstr ""
+
+#: empty_cells.xhp#par_id9534592.help.text
+msgid "=ISBLANK(B1) => TRUE"
+msgstr ""
+
+#: empty_cells.xhp#par_id4969328.help.text
+msgid "=ISBLANK(C1) => FALSE"
+msgstr ""
+
+#: empty_cells.xhp#par_id9635914.help.text
+msgid "=ISBLANK(VLOOKUP(1;A1:C1;2)) => TRUE (B1, previously was FALSE)"
+msgstr ""
+
+#: empty_cells.xhp#par_id2476577.help.text
+msgid "=ISBLANK(VLOOKUP(1;A1:C1;3)) => FALSE (C1)"
+msgstr ""
+
+#: empty_cells.xhp#par_id4217047.help.text
+msgid "Note that Microsoft Excel behaves different and always returns a number as the result of a reference to an empty cell or a formula cell with the result of an empty cell. For example:"
+msgstr ""
+
+#: empty_cells.xhp#par_id2629474.help.text
+msgid "A1: <empty>"
+msgstr ""
+
+#: empty_cells.xhp#par_id8069704.help.text
+msgid "B1: =A1 => displays 0, but is just a reference to an empty cell"
+msgstr ""
+
+#: empty_cells.xhp#par_id4524674.help.text
+msgid "=ISNUMBER(A1) => FALSE"
+msgstr ""
+
+#: empty_cells.xhp#par_id4396801.help.text
+msgid "=ISTEXT(A1) => FALSE"
+msgstr ""
+
+#: empty_cells.xhp#par_id5293740.help.text
+msgid "=A1=0 => TRUE"
+msgstr ""
+
+#: empty_cells.xhp#par_id7623828.help.text
+msgid "=A1=\"\" => TRUE"
+msgstr ""
+
+#: empty_cells.xhp#par_id2861720.help.text
+msgid "=ISNUMBER(B1) => FALSE (MS-Excel: TRUE)"
+msgstr ""
+
+#: empty_cells.xhp#par_id9604480.help.text
+msgctxt "empty_cells.xhp#par_id9604480.help.text"
+msgid "=ISTEXT(B1) => FALSE"
+msgstr ""
+
+#: empty_cells.xhp#par_id2298959.help.text
+msgctxt "empty_cells.xhp#par_id2298959.help.text"
+msgid "=B1=0 => TRUE"
+msgstr ""
+
+#: empty_cells.xhp#par_id4653767.help.text
+msgid "=B1=\"\" => TRUE (MS-Excel: FALSE)"
+msgstr ""
+
+#: empty_cells.xhp#par_id8801538.help.text
+msgid "C1: =VLOOKUP(...) with empty cell result => displays empty (MS-Excel: displays 0)"
+msgstr ""
+
+#: empty_cells.xhp#par_id6746421.help.text
+msgid "=ISNUMBER(VLOOKUP(...)) => FALSE"
+msgstr ""
+
+#: empty_cells.xhp#par_id4876247.help.text
+msgid "=ISTEXT(VLOOKUP(...)) => FALSE"
+msgstr ""
+
+#: empty_cells.xhp#par_id7458723.help.text
+msgid "=ISNUMBER(C1) => FALSE (MS-Excel: TRUE)"
+msgstr ""
+
+#: empty_cells.xhp#par_id2753379.help.text
+msgctxt "empty_cells.xhp#par_id2753379.help.text"
+msgid "=ISTEXT(C1) => FALSE"
+msgstr ""
+
+#: 02140000.xhp#tit.help.text
+msgid "Error Codes in %PRODUCTNAME Calc"
+msgstr "Códigos de erro en %PRODUCTNAME Calc"
+
+#: 02140000.xhp#bm_id3146797.help.text
+msgid "<bookmark_value>error codes;list of</bookmark_value>"
+msgstr "<bookmark_value>códigos de erro;lista de</bookmark_value>"
+
+#: 02140000.xhp#hd_id3146797.1.help.text
+msgid "<link href=\"text/scalc/05/02140000.xhp\" name=\"Error Codes in %PRODUCTNAME Calc\">Error Codes in <item type=\"productname\">%PRODUCTNAME</item> Calc</link>"
+msgstr "<link href=\"text/scalc/05/02140000.xhp\" name=\"Códigos de erro en %PRODUCTNAME Calc\">Códigos de erro en <item type=\"productname\">%PRODUCTNAME</item> Calc</link>"
+
+#: 02140000.xhp#par_id3150275.2.help.text
+msgid "The following table is an overview of the error messages for <item type=\"productname\">%PRODUCTNAME</item> Calc. If the error occurs in the cell that contains the cursor, the error message is displayed on the <emph>Status Bar</emph>."
+msgstr ""
+
+#: 02140000.xhp#par_id3153968.3.help.text
+msgid "Error Code"
+msgstr "Código de erro"
+
+#: 02140000.xhp#par_id3125863.4.help.text
+msgid "Message"
+msgstr "Mensaxe"
+
+#: 02140000.xhp#par_id3151112.5.help.text
+msgid "Explanation"
+msgstr "Explicación"
+
+#: 02140000.xhp#par_id1668467.help.text
+msgid "###"
+msgstr ""
+
+#: 02140000.xhp#bm_id0202201010205429.help.text
+msgid "<bookmark_value>### error message</bookmark_value>"
+msgstr ""
+
+#: 02140000.xhp#par_id3165766.13.help.text
+msgid "none"
+msgstr ""
+
+#: 02140000.xhp#par_id3169266.14.help.text
+msgid "The cell is not wide enough to display the contents."
+msgstr ""
+
+#: 02140000.xhp#par_id3153188.6.help.text
+msgid "501"
+msgstr "501"
+
+#: 02140000.xhp#par_id3148645.7.help.text
+msgid "Invalid character"
+msgstr "Carácter non válido"
+
+#: 02140000.xhp#par_id3155854.8.help.text
+msgid "Character in a formula is not valid."
+msgstr ""
+
+#: 02140000.xhp#par_id3145253.9.help.text
+msgid "502"
+msgstr "502"
+
+#: 02140000.xhp#par_id3147397.10.help.text
+msgid "Invalid argument"
+msgstr "Argumento non válido"
+
+#: 02140000.xhp#par_id3153160.11.help.text
+msgid "Function argument is not valid, for example, a negative number for the root function."
+msgstr "O argumento da función non é válido, por exemplo, un número negativo para a función de raíz."
+
+#: 02140000.xhp#par_id3154015.12.help.text
+msgid "503"
+msgstr "503"
+
+#: 02140000.xhp#par_id1628467.help.text
+msgid "#NUM!"
+msgstr "#NUM!"
+
+#: 02140000.xhp#par_id3155766.13.help.text
+msgid "Invalid floating point operation"
+msgstr "Operación non válida en punto flotante"
+
+#: 02140000.xhp#par_id3159266.14.help.text
+msgid "A calculation results in an overflow of the defined value range."
+msgstr ""
+
+#: 02140000.xhp#par_id3149258.15.help.text
+msgid "504"
+msgstr "504"
+
+#: 02140000.xhp#par_id3147344.16.help.text
+msgid "Parameter list error"
+msgstr "Erro na lista de parámetros"
+
+#: 02140000.xhp#par_id3147003.17.help.text
+msgid "Function parameter is not valid, for example, text instead of a number, or a domain reference instead of cell reference."
+msgstr "O parámetro de función non é válido, por exemplo: un texto en vez dun número ou unha referencia de dominio en vez dunha referencia de cela."
+
+#: 02140000.xhp#par_id3154532.27.help.text
+msgid "508"
+msgstr "508"
+
+#: 02140000.xhp#par_id3150107.28.help.text
+msgid "Error: Pair missing"
+msgstr "Erro: falta un par"
+
+#: 02140000.xhp#par_id3149129.29.help.text
+msgid "Missing bracket, for example, closing brackets, but no opening brackets"
+msgstr "Falta unha paréntese. Por exemplo, hai paréntese de pechamento, mais non paréntese de abertura."
+
+#: 02140000.xhp#par_id3149895.30.help.text
+msgid "509"
+msgstr "509"
+
+#: 02140000.xhp#par_id3155097.31.help.text
+msgid "Missing operator"
+msgstr "Falta un operador"
+
+#: 02140000.xhp#par_id3154649.32.help.text
+msgid "Operator is missing, for example, \"=2(3+4) * \", where the operator between \"2\" and \"(\" is missing."
+msgstr "Falta o operador, por exemplo, \"=2(3+4) * \", onde falta o operador entre \"2\" e \"(\"."
+
+#: 02140000.xhp#par_id3153813.33.help.text
+msgid "510"
+msgstr "510"
+
+#: 02140000.xhp#par_id3153483.34.help.text
+msgctxt "02140000.xhp#par_id3153483.34.help.text"
+msgid "Missing variable"
+msgstr "Falta unha variábel"
+
+#: 02140000.xhp#par_id3154710.35.help.text
+msgid "Variable is missing, for example when two operators are together \"=1+*2\"."
+msgstr "Falta unha variábel, por exemplo, cando dous operadores están xuntos \"=1+*2\"."
+
+#: 02140000.xhp#par_id3154739.36.help.text
+msgid "511"
+msgstr "511"
+
+#: 02140000.xhp#par_id3145112.37.help.text
+msgctxt "02140000.xhp#par_id3145112.37.help.text"
+msgid "Missing variable"
+msgstr "Falta unha variábel"
+
+#: 02140000.xhp#par_id3145319.38.help.text
+msgid "Function requires more variables than are provided, for example, AND() and OR()."
+msgstr "A función require máis variábeis das fornecidas, por exemplo E() e OU()."
+
+#: 02140000.xhp#par_id3149050.39.help.text
+msgid "512"
+msgstr "512"
+
+#: 02140000.xhp#par_id3150393.40.help.text
+msgid "Formula overflow"
+msgstr "Fórmula excedente"
+
+#: 02140000.xhp#par_id3159259.41.help.text
+msgid "                  <emph>Compiler:</emph> the total number of internal tokens, (that is, operators, variables, brackets) in the formula exceeds 512."
+msgstr ""
+
+#: 02140000.xhp#par_id3150537.42.help.text
+msgid "513"
+msgstr "513"
+
+#: 02140000.xhp#par_id3147412.43.help.text
+msgid "String overflow"
+msgstr "Cadea de caracteres excedente"
+
+#: 02140000.xhp#par_id3145635.44.help.text
+msgid "                  <emph>Compiler:</emph> an identifier in the formula exceeds 64 KB in size. <emph>Interpreter:</emph> a result of a string operation exceeds 64 KB in size."
+msgstr "<emph>Compilador:</emph> un identificador na fórmula excede 64 KB de tamaño. <emph>Intérprete:</emph> o resultado dunha operación de cadea de caracteres excede 64 KB de tamaño."
+
+#: 02140000.xhp#par_id3149147.45.help.text
+msgid "514"
+msgstr "514"
+
+#: 02140000.xhp#par_id3157904.46.help.text
+msgctxt "02140000.xhp#par_id3157904.46.help.text"
+msgid "Internal overflow"
+msgstr "Fluxo excedente interno."
+
+#: 02140000.xhp#par_id3149352.47.help.text
+msgid "Sort operation attempted on too much numerical data (max. 100000) or a calculation stack overflow."
+msgstr "Tentativa de operación de clasificación con demasiados datos numéricos (máx. 100.000) ou un excedente de cálculo acumulado."
+
+#: 02140000.xhp#par_id3154841.51.help.text
+msgid "516"
+msgstr "516"
+
+#: 02140000.xhp#par_id3147423.52.help.text
+msgctxt "02140000.xhp#par_id3147423.52.help.text"
+msgid "Internal syntax error"
+msgstr "Erro interno de sintaxe"
+
+#: 02140000.xhp#par_id3148437.53.help.text
+msgid "Matrix is expected on the calculation stack, but is not available."
+msgstr "Esperábase unha matriz na serie de cálculos, mais non se pode acceder a ela."
+
+#: 02140000.xhp#par_id3155261.54.help.text
+msgid "517"
+msgstr "517"
+
+#: 02140000.xhp#par_id3153934.55.help.text
+msgctxt "02140000.xhp#par_id3153934.55.help.text"
+msgid "Internal syntax error"
+msgstr "Erro interno de sintaxe"
+
+#: 02140000.xhp#par_id3149507.56.help.text
+msgid "Unknown code, for example, a document with a newer function is loaded in an older version that does not contain the function."
+msgstr "Código descoñecido, por exemplo, un documento cunha función máis actual cargalo cunha versión anterior que non contén a función."
+
+#: 02140000.xhp#par_id3148585.57.help.text
+msgid "518"
+msgstr "518"
+
+#: 02140000.xhp#par_id3149189.58.help.text
+msgctxt "02140000.xhp#par_id3149189.58.help.text"
+msgid "Internal syntax error"
+msgstr "Erro interno de sintaxe"
+
+#: 02140000.xhp#par_id3149545.59.help.text
+msgid "Variable is not available"
+msgstr "Non é posíbel acceder á variábel"
+
+#: 02140000.xhp#par_id3146142.60.help.text
+msgid "519"
+msgstr "519"
+
+#: 02140000.xhp#par_id8169499.help.text
+msgid "#VALUE"
+msgstr ""
+
+#: 02140000.xhp#par_id3155954.61.help.text
+msgid "No result (#VALUE is in the cell rather than Err:519!)"
+msgstr "Non hai resultado (na cela aparece #VALOR en vez de Err:519!)"
+
+#: 02140000.xhp#par_id3153108.62.help.text
+msgid "The formula yields a value that does not correspond to the definition; or a cell that is referenced in the formula contains text instead of a number."
+msgstr ""
+
+#: 02140000.xhp#par_id3150338.63.help.text
+msgid "520"
+msgstr "520"
+
+#: 02140000.xhp#par_id3150017.64.help.text
+msgctxt "02140000.xhp#par_id3150017.64.help.text"
+msgid "Internal syntax error"
+msgstr "Erro interno de sintaxe"
+
+#: 02140000.xhp#par_id3148758.65.help.text
+msgid "Compiler creates an unknown compiler code."
+msgstr "O compilador crea un código de compilación descoñecido."
+
+#: 02140000.xhp#par_id3154324.66.help.text
+msgid "521"
+msgstr "521"
+
+#: 02140000.xhp#par_id3153737.67.help.text
+msgctxt "02140000.xhp#par_id3153737.67.help.text"
+msgid "Internal syntax error"
+msgstr "Erro interno de sintaxe"
+
+#: 02140000.xhp#par_id3155436.68.help.text
+msgid "No result."
+msgstr "Sen resultado."
+
+#: 02140000.xhp#par_id3153045.69.help.text
+msgid "522"
+msgstr "522"
+
+#: 02140000.xhp#par_id3149008.70.help.text
+msgid "Circular reference"
+msgstr "Referencia circular"
+
+#: 02140000.xhp#par_id3157972.71.help.text
+msgid "Formula refers directly or indirectly to itself and the <emph>Iterations</emph> option is not set under <switchinline select=\"sys\"><caseinline select=\"MAC\">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline> - %PRODUCTNAME Calc - Calculate."
+msgstr ""
+
+#: 02140000.xhp#par_id3149538.72.help.text
+msgid "523"
+msgstr "523"
+
+#: 02140000.xhp#par_id3150930.73.help.text
+msgid "The calculation procedure does not converge"
+msgstr "O procedemento de cálculo non converxe"
+
+#: 02140000.xhp#par_id3150272.74.help.text
+msgid "Function missed a targeted value, or <link href=\"text/shared/optionen/01060500.xhp\">iterative references</link> do not reach the minimum change within the maximum steps that are set."
+msgstr "Falta un valor de destino da función, ou as <link href=\"text/shared/optionen/01060500.xhp\">referencias iterativas</link> non atinxen o cambio mínimo dentro dos pasos máximos estabelecidos."
+
+#: 02140000.xhp#par_id3153544.75.help.text
+msgid "524"
+msgstr "524"
+
+#: 02140000.xhp#par_id2129886.help.text
+msgid "#REF"
+msgstr ""
+
+#: 02140000.xhp#bm_id3154634.help.text
+msgid "<bookmark_value>invalid references; error messages</bookmark_value>               <bookmark_value>error messages;invalid references</bookmark_value>               <bookmark_value>#REF error message</bookmark_value>"
+msgstr "<bookmark_value>referencias non válidas; mensaxes de erro</bookmark_value><bookmark_value>mensaxes de erro;referencias non válidas</bookmark_value><bookmark_value>mensaxe de erro #REF</bookmark_value>"
+
+#: 02140000.xhp#par_id3154634.76.help.text
+msgid "invalid references (instead of Err:524 cell contains #REF)"
+msgstr "Referencias non válidas (en vez de Err:524 a cela contén #REF)"
+
+#: 02140000.xhp#par_id3147539.77.help.text
+msgid "                  <emph>Compiler:</emph> a column or row description name could not be resolved. <emph>Interpreter:</emph> in a formula, the column, row, or sheet that contains a referenced cell is missing."
+msgstr "<emph>Compilador:</emph> non pode determinarse o nome dunha descrición de fila ou columna. <emph>Intérprete:</emph> nunha fórmula, falta a columna, a fila ou a folla que contén unha cela á que se fai referencia."
+
+#: 02140000.xhp#par_id3155984.78.help.text
+msgid "525"
+msgstr "525"
+
+#: 02140000.xhp#par_id4737083.help.text
+msgid "#NAME?"
+msgstr "#NOME?"
+
+#: 02140000.xhp#bm_id3148428.help.text
+msgid "<bookmark_value>invalid names; error messages</bookmark_value>               <bookmark_value>#NAME error message</bookmark_value>"
+msgstr "<bookmark_value>nomes non válidos; mensaxes de erro</bookmark_value><bookmark_value>mensaxe de erro #NAME</bookmark_value>"
+
+#: 02140000.xhp#par_id3148428.79.help.text
+msgid "invalid names (instead of Err:525 cell contains #NAME?)"
+msgstr "nomes non válidos (en vez de Err:525, a cela contén #NAME?)"
+
+#: 02140000.xhp#par_id3156259.80.help.text
+msgid "An identifier could not be evaluated, for example, no valid reference, no valid domain name, no column/row label, no macro, incorrect decimal divider, add-in not found."
+msgstr "Non foi posíbel avaliar un identificador. Por exemplo, non hai ningunha referencia válida, ningún nome de dominio válido, ningunha etiqueta de columna/fila, ningunha macro, divisor decimal incorreto, suplemento non encontrado."
+
+#: 02140000.xhp#par_id3153720.81.help.text
+msgid "526"
+msgstr "526"
+
+#: 02140000.xhp#par_id3154315.82.help.text
+msgctxt "02140000.xhp#par_id3154315.82.help.text"
+msgid "Internal syntax error"
+msgstr "Erro interno de sintaxe"
+
+#: 02140000.xhp#par_id3083286.83.help.text
+msgid "Obsolete, no longer used, but could come from old documents if the result is a formula from a domain."
+msgstr "Obsoleto, xa non se usa, mais podería proceder de documentos antigos, se o resultado é unha fórmula dun dominio."
+
+#: 02140000.xhp#par_id3152483.84.help.text
+msgid "527"
+msgstr "527"
+
+#: 02140000.xhp#par_id3152966.85.help.text
+msgctxt "02140000.xhp#par_id3152966.85.help.text"
+msgid "Internal overflow"
+msgstr "Fluxo excedente interno."
+
+#: 02140000.xhp#par_id3149709.86.help.text
+msgid "                  <emph>Interpreter: </emph>References, such as when a cell references a cell, are too encapsulated."
+msgstr "<emph>Intérprete: </emph>as referencias están demasiado encapsuladas. Por exemplo, cando unha cela fai referencia a outra."
+
+#: 02140000.xhp#par_id5324564.help.text
+msgid "532"
+msgstr ""
+
+#: 02140000.xhp#par_id3623462.help.text
+msgid "#DIV/0!"
+msgstr "#DIV/0!"
+
+#: 02140000.xhp#par_id7941831.help.text
+msgid "Division by zero"
+msgstr "División por cero"
+
+#: 02140000.xhp#par_id5844294.help.text
+msgid "Division operator / if the denominator is 0<br/>Some more functions return this error, for example:<br/>VARP with less than 1 argument<br/>STDEVP with less than 1 argument<br/>VAR with less than 2 arguments<br/>STDEV with less than 2 arguments<br/>STANDARDIZE with stdev=0<br/>NORMDIST with stdev=0"
+msgstr ""
