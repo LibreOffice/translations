@@ -92,11 +92,7 @@ $(MISC)/sdf-l10n/%.sdf : $(MISC)/sdf-template/en-US.sdf
     sed -e "s/\ten-US\t/\tkid\t/" < $@.tmp > $@
     rm -f $@.tmp
 .ELSE
-    $(PO2OO) -i $(PRJ)/source/$(@:b) -t $(MISC)/sdf-template/en-US.sdf -o $@ -l $(@:b)
-# FIXME: waiting for fix of http://bugs.locamotion.org/show_bug.cgi?id=1883
-# po2oo --skipsource -i $(PRJ)/source/$(@:b) -t $(MISC)/sdf-template/en-US.sdf -o $@ -l $(@:b)
-    grep -v "	en-US	" $@ > $@.tmp
-    mv $@.tmp $@
+    $(PO2OO) --skipsource -i $(PRJ)/source/$(@:b) -t $(MISC)/sdf-template/en-US.sdf -o $@ -l $(@:b)
 .ENDIF
 
 $(MISC)/merge.done : $(foreach,i,$(all_languages) $(MISC)/sdf-l10n/$i.sdf)
