@@ -11,67 +11,6 @@ use strict;
 
 $ENV{LC_ALL} = "C";
 
-sub check_whitespaces($)
-{
-    my ($h) = @_;
-    my $src_limited = "c|cpp|cxx|h|hrc|hxx|idl|inl|java|map|MK|pmk|pl|pm|sdi|sh|src|tab|xcu|xml";
-    my $src_full = "c|cpp|cxx|h|hrc|hxx|idl|inl|java|map|mk|MK|pmk|pl|pm|sdi|sh|src|tab|xcu|xml";
-
-    my $found_bad = 0;
-    my $filename;
-    my $reported_filename = "";
-    my $lineno;
-    sub bad_line {
-	my ($why, $line, $file_filter) = @_;
-        if (!defined $file_filter || $filename =~ /\.($file_filter)$/) {
-	if (!$found_bad) {
-	    print STDERR "*\n";
-	    print STDERR "* You have some suspicious patch lines:\n";
-	    print STDERR "*\n";
-	    $found_bad = 1;
-	}
-	if ($reported_filename ne $filename) {
-	    print STDERR "* In $filename\n";
-	    $reported_filename = $filename;
-	}
-	print STDERR "* $why (line $lineno)\n";
-	print STDERR "$filename:$lineno:$line\n";
-        }
-    }
-    open( FILES, "git-diff-index -p -M --cached $h |" ) ||  die "Cannot run git diff-index.";
-    while (<FILES>) {
-	if (m|^diff --git a/(.*) b/\1$|) {
-	    $filename = $1;
-	    next;
-	}
-	if (/^@@ -\S+ \+(\d+)/) {
-	    $lineno = $1 - 1;
-	    next;
-	}
-	if (/^ /) {
-	    $lineno++;
-	    next;
-	}
-	if (s/^\+//) {
-	    $lineno++;
-	    chomp;
-	    if (/\s$/) {
-		bad_line("trailing whitespace", $_ , $src_limited);
-	    }
-	    if (/^\s* 	/) {
-		bad_line("indent SP followed by a TAB", $_, $src_limited);
-	    }
-	    if (/^(?:[<>=]){7}$/) {
-		bad_line("unresolved merge conflict", $src_full);
-	    }
-	}
-    }
-    if ( $found_bad)
-    {
-	exit($found_bad);
-    }
-}
-
 # Do the work :-)
 
 # Initial commit: diff against an empty tree object
@@ -110,20 +49,6 @@ EOM
     exit( 1 );
 }
 
-# check for missing doxygen comments in new files
-#my $doxycheck = "../../bin/find-undocumented-classes";
-#if (! -e $doxycheck) {
-#    # bootstrap repo
-#    $doxycheck =~ s|../../||;
-#}
-#open(FILES, "git diff-index --cached --name-only --diff-filter=A $against |") || die "Cannot run git diff-index.";
-#while (my $file = <FILES>) {
-#    chomp($file);
-#    if ($file =~ /\.hxx$/) {
-#        system("$doxycheck -q $file | sed 's|".getcwd()."/||;'");
-#    }
-#}
-
 # run 'msgcat --nowrap' when committing *.po files
 open(FILES, "git diff-index --cached --name-only $against |") || die "Cannot run git diff-index.";
 while (my $file = <FILES>) {
@@ -134,8 +59,6 @@ while (my $file = <FILES>) {
     }
 }
 
-# fix whitespace in code
-check_whitespaces( $against);
 
 # all OK
 exit( 0 );
