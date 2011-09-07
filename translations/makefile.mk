@@ -48,15 +48,19 @@ TARGET=translations_merge
 
 .INCLUDE : target.mk
 
+.IF "$(OS_FOR_BUILD)"=="WNT" && "$(SYSTEM_PYTHON)"!="YES"
+PYTHONCMD=$(AUGMENT_LIBRARY_PATH) $(WRAPCMD) $(SOLARBINDIR)/python
+.ELSE
+PYTHONCMD=$(WRAPCMD) $(PYTHON)
+.ENDIF
+
 .IF "$(SYSTEM_TRANSLATE_TOOLKIT)" == "YES"
 
 OO2PO=oo2po
-PO2OO=po2oo
 
 .ELSE                   # "$(SYSTEM_TRANSLATE_TOOLKIT)" == "YES"
 
 OO2PO=$(AUGMENT_LIBRARY_PATH) $(WRAPCMD) $(SOLARBINDIR)/oo2po
-PO2OO=$(AUGMENT_LIBRARY_PATH) $(WRAPCMD) $(SOLARBINDIR)/po2oo
 
 TRANSLATE_TOOLKIT_PYTHONPATH=$(SOLARLIBDIR)$/translate_toolkit
 .IF "$(SYSTEM_PYTHON)" == "YES" || "$(OS)" == "MACOSX"
@@ -94,7 +98,7 @@ $(MISC)/sdf-l10n/%.sdf : $(MISC)/sdf-template/en-US.sdf
     sed -e "s/\ten-US\t/\tkid\t/" < $@.tmp > $@
     rm -f $@.tmp
 .ELSE
-    $(PO2OO) --skipsource -i $(PRJ)/source/$(@:b) -t $(MISC)/sdf-template/en-US.sdf -o $@ -l $(@:b)
+    $(PYTHONCMD) $(SOLARBINDIR)/po2lo --skipsource -i $(PRJ)/source/$(@:b) -t $(MISC)/sdf-template/en-US.sdf -o $@ -l $(@:b)
 .ENDIF
 
 $(MISC)/merge.done : $(foreach,i,$(all_languages) $(MISC)/sdf-l10n/$i.sdf)
