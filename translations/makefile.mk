@@ -91,23 +91,21 @@ $(MISC)/sdf-template/en-US.sdf :
 
 pot : $(MISC)/sdf-template/en-US.sdf
     $(OO2PO) -P -i $< -o $(MISC)/pot
+    $(PERL) $(SOLARBINDIR)/addkeyid2pot.pl $(MISC)/pot
 
 $(MISC)/sdf-l10n/%.sdf : $(MISC)/sdf-template/en-US.sdf
-.IF "$(WITH_LANG)" == "kid"
-    $(PERL) $(SOLARVER)/$(INPATH)/bin$(UPDMINOREXT)/keyidGen.pl $< $@.tmp
-    sed -e "s/\ten-US\t/\tkid\t/" < $@.tmp > $@
-    rm -f $@.tmp
-.ELSE
     $(PYTHONCMD) $(SOLARBINDIR)/po2lo --skipsource -i $(PRJ)/source/$(@:b) -t $(MISC)/sdf-template/en-US.sdf -o $@ -l $(@:b)
-.ENDIF
 
-$(MISC)/merge.done : $(foreach,i,$(all_languages) $(MISC)/sdf-l10n/$i.sdf)
+$(MISC)/sdf-l10n/qtz.sdf : $(MISC)/sdf-template/en-US.sdf
+    $(PERL) $(SOLARBINDIR)/keyidGen.pl $< $@
+
+$(MISC)/merge.done : $(foreach,i,$(all_languages) $(MISC)/sdf-l10n/$i.sdf) $(MISC)/sdf-l10n/qtz.sdf
 .IF "$(L10N_LOCK)" != "YES"
     $(IFEXIST) $(MISC)/sdf $(THEN) $(RENAME) $(MISC)/sdf $(MISC)/sdf$(INPATH)_begone $(FI)
     -rm -rf $(MISC)/sdf$(INPATH)_begone
     -$(MKDIRHIER) $(MISC)/sdf
 .ENDIF			# "$(L10n_LOCK)" != "YES"
-    $(PERL) $(SOLARVER)/$(INPATH)/bin$(UPDMINOREXT)/fast_merge.pl -sdf_files $(mktmp $<) -merge_dir $(MISC)/sdf && $(TOUCH) $@
+    $(PERL) $(SOLARBINDIR)/fast_merge.pl -sdf_files $(mktmp $<) -merge_dir $(MISC)/sdf && $(TOUCH) $@
     $(COPY) $(PRJ)/localization_present.mk $(PRJ)/$(COMMON_OUTDIR)$(PROEXT)/inc
 
 ALLTAR : $(MISC)/merge.done
