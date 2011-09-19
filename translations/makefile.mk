@@ -48,7 +48,7 @@ TARGET=translations_merge
 
 .INCLUDE : target.mk
 
-.IF "$(OS_FOR_BUILD)"=="WNT" || "$(SYSTEM_PYTHON)"!="YES"
+.IF "$(OS_FOR_BUILD)"=="WNT" || ("$(SYSTEM_PYTHON)"!="YES" && "$(OS)" != "MACOSX")
 PYTHONCMD=$(AUGMENT_LIBRARY_PATH) $(WRAPCMD) $(SOLARBINDIR)/python
 .ELSE
 PYTHONCMD=$(WRAPCMD) $(PYTHON)
