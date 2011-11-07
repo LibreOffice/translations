@@ -49,8 +49,12 @@ TARGET=translations_merge
 .INCLUDE : target.mk
 
 .IF "$(OS_FOR_BUILD)"=="WNT" || ("$(SYSTEM_PYTHON)"!="YES" && "$(OS)" != "MACOSX")
-PYTHONHOME:=$(SOLARLIBDIR)$/python
-PYTHONPATH:=$(SOLARLIBDIR)$/python
+# watch for the path delimiter
+.IF "$(OS_FOR_BUILD)"=="WNT"
+PYTHONPATH:=$(PWD)$/$(BIN);$(SOLARLIBDIR);$(SOLARLIBDIR)$/python;$(SOLARLIBDIR)$/python$/lib-dynload
+.ELSE
+PYTHONPATH:=$(PWD)$/$(BIN):$(SOLARLIBDIR):$(SOLARLIBDIR)$/python:$(SOLARLIBDIR)$/python$/lib-dynload
+.ENDIF
 .EXPORT: PYTHONHOME
 .EXPORT: PYTHONPATH
 PYTHONCMD=$(AUGMENT_LIBRARY_PATH) $(WRAPCMD) $(SOLARBINDIR)/python
