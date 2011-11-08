@@ -72,9 +72,9 @@ $(MISC)/sdf-template/en-US.sdf :
     -$(MKDIRHIER) $(MISC)/sdf-template
     -$(MKDIRHIER) $(MISC)/sdf-l10n
 .IF "$(OS)" == "WNT" 
-    $(SOLARSRC)/solenv/bin/localize -e -l en-US -f $(shell cygpath -m $(SRC_ROOT)/$(PRJNAME)/$@)
+    $(SOLARSRC)/solenv/bin/localize -f $(shell cygpath -m $(SRC_ROOT)/$(PRJNAME)/$@)
 .ELSE
-    $(SOLARSRC)/solenv/bin/localize -e -l en-US -f $(SRC_ROOT)/$(PRJNAME)/$@
+    $(SOLARSRC)/solenv/bin/localize -f $(SRC_ROOT)/$(PRJNAME)/$@
 .ENDIF                  # "$(OS)" == "WNT" 
 
 pot : $(MISC)/sdf-template/en-US.sdf
