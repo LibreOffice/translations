@@ -3,16 +3,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: http://qa.openoffice.org/issues/enter_bug.cgi?comment=&component=l10n&form_name=enter_issue&short_desc=Localization+issue+in+file%3A+helpcontent2%2Fsource%2Ftext%2Fscalc%2F05.oo&subcomponent=ui\n"
-"POT-Creation-Date: 2011-10-07 14:44+0200\n"
-"PO-Revision-Date: 2011-05-23 20:21+0200\n"
-"Last-Translator: dedebekri <bsenalp@gmail.com>\n"
+"POT-Creation-Date: 2011-11-26 00:03+0200\n"
+"PO-Revision-Date: 2011-10-25 11:28+0200\n"
+"Last-Translator: Ayhan <ayhanyalcinsoy@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Translate Toolkit 1.8.1\n"
+"X-Generator: Translate Toolkit 1.9.0\n"
 "X-Accelerator-Marker: ~\n"
 
 #: empty_cells.xhp#tit.help.text
@@ -29,7 +29,7 @@ msgstr "<variable id=\"empty_cells\"><link href=\"text/scalc/05/empty_cells.xhp\
 
 #: empty_cells.xhp#par_id8266853.help.text
 msgid "In older versions of the software, empty cells were forced to numeric 0 in some contexts and to empty string in others, except in direct comparison where =A1=0 and =A1=\"\" both resulted in TRUE if A1 was empty. Emptiness now is inherited until used, so both =VLOOKUP(...)=0 and =VLOOKUP(...)=\"\" give TRUE if the lookup resulted in an empty cell being returned. "
-msgstr "Önceleri, boş hücreler 0 olan sayısal değerlikli kabul ediliyordu ve diğerlerine göre de boş metinler idi. Direk karşılaştırmalar haricinde A1=0 ve A1=\"\" olan karşılaştırmalarda A1 boş ise her iki değerde DOĞRU oluyordu. Şimdi boşluk kullanılana kadar saklı kalmaktadır, böylece her iki durumda da arama işlemi sonucu boş bir hücre dönüyor ise, =DİKEYARA(...)=0 ve =DİKEYARA(...)=\"\" DOĞRU değerini verirler."
+msgstr "Önceleri, boş hücreler 0 olan sayısal değerlikli kabul ediliyordu ve diğerlerine göre de boş metinler idi. Direk karşılaştırmalar haricinde A1=0 ve A1=\"\" olan karşılaştırmalarda A1 boş ise her iki değerde DOĞRU oluyordu. Şimdi boşluk kullanılana kadar saklı kalmaktadır, böylece her iki durumda da arama işlemi sonucu boş bir hücre dönüyor ise, =DÜŞEYARA(...)=0 ve =DÜŞEYARA(...)=\"\" DOĞRU değerini verirler."
 
 #: empty_cells.xhp#par_id2733542.help.text
 msgid "A simple reference to an empty cell is still displayed as numeric 0 but is not necessarily of type numeric anymore, so also comparisons with the referencing cell work as expected. "
@@ -70,11 +70,11 @@ msgstr "=ESAYIYSA(C1) => YANLIŞ (Önceden DOĞRU oluyordu)"
 
 #: empty_cells.xhp#par_id396740.help.text
 msgid "=ISNUMBER(VLOOKUP(1;A1:C1;2)) => FALSE (B1)"
-msgstr "=ESAYIYSA(DİKEYARA(1;A1:C1;2)) => YANLIŞ (B1)"
+msgstr "=ESAYIYSA(DÜŞEYARA(1;A1:C1;2)) => YANLIŞ (B1)"
 
 #: empty_cells.xhp#par_id3859675.help.text
 msgid "=ISNUMBER(VLOOKUP(1;A1:C1;3)) => FALSE (C1, previously was TRUE)"
-msgstr "=ESAYIYSA(DİKEYARA(1;A1:C1;3)) => YANLIŞ (C1, önceden DOĞRU oluyordu)."
+msgstr "=ESAYIYSA(DÜŞEYARA(1;A1:C1;3)) => YANLIŞ (C1, önceden DOĞRU oluyordu)."
 
 #: empty_cells.xhp#par_id402233.help.text
 msgctxt "empty_cells.xhp#par_id402233.help.text"
@@ -88,11 +88,11 @@ msgstr "=EMETİNSE(C1) =>YANLIŞ"
 
 #: empty_cells.xhp#par_id7781914.help.text
 msgid "=ISTEXT(VLOOKUP(1;A1:C1;2)) => FALSE (B1, previously was TRUE)"
-msgstr "=EMETİNSE(DİKEYARA(1;A1:C1;2)) => YANLIŞ (B1, önceden DOĞRU oluyordu)."
+msgstr "=EMETİNSE(DÜŞEYARA(1;A1:C1;2)) => YANLIŞ (B1, önceden DOĞRU oluyordu)."
 
 #: empty_cells.xhp#par_id300912.help.text
 msgid "=ISTEXT(VLOOKUP(1;A1:C1;3)) => FALSE (C1)"
-msgstr "=ESAYIYSA(DİKEYARA(1;A1:C1;3)) => YANLIŞ (C1)."
+msgstr "=ESAYIYSA(DÜŞEYARA(1;A1:C1;3)) => YANLIŞ (C1)."
 
 #: empty_cells.xhp#par_id9534592.help.text
 msgid "=ISBLANK(B1) => TRUE"
@@ -104,11 +104,11 @@ msgstr "=EBOŞSA(C1) => YANLIŞ"
 
 #: empty_cells.xhp#par_id9635914.help.text
 msgid "=ISBLANK(VLOOKUP(1;A1:C1;2)) => TRUE (B1, previously was FALSE)"
-msgstr "=EBOŞSA(DİKEYARA(1;A1:C1;2)) => DOĞRU (B1, önceleri YANLIŞ oluyordu)"
+msgstr "=EBOŞSA(DÜŞEYARA(1;A1:C1;2)) => DOĞRU (B1, önceleri YANLIŞ oluyordu)"
 
 #: empty_cells.xhp#par_id2476577.help.text
 msgid "=ISBLANK(VLOOKUP(1;A1:C1;3)) => FALSE (C1)"
-msgstr "=EBOŞSA(DİKEYARA(1;A1:C1;3)) => YANLIŞ (C1)"
+msgstr "=EBOŞSA(DÜŞEYARA(1;A1:C1;3)) => YANLIŞ (C1)"
 
 #: empty_cells.xhp#par_id4217047.help.text
 msgid "Note that Microsoft Excel behaves different and always returns a number as the result of a reference to an empty cell or a formula cell with the result of an empty cell. For example:"
@@ -158,15 +158,15 @@ msgstr "=B1=\"\" => DOĞRU (MS-Excel: YANLIŞ)"
 
 #: empty_cells.xhp#par_id8801538.help.text
 msgid "C1: =VLOOKUP(...) with empty cell result => displays empty (MS-Excel: displays 0)"
-msgstr "C1: =DİKEYARA(...) boş bir hücre ile sonuç => boşluk görüntüler (MS-Excel: 0 görüntüler)"
+msgstr "C1: =DÜŞEYARA(...) boş bir hücre ile sonuç => boşluk görüntüler (MS-Excel: 0 görüntüler)"
 
 #: empty_cells.xhp#par_id6746421.help.text
 msgid "=ISNUMBER(VLOOKUP(...)) => FALSE"
-msgstr "=ESAYIYSA(DİKEYARA(...)) => YANLIŞ"
+msgstr "=ESAYIYSA(DÜŞEYARA(...)) => YANLIŞ"
 
 #: empty_cells.xhp#par_id4876247.help.text
 msgid "=ISTEXT(VLOOKUP(...)) => FALSE"
-msgstr "=EMETİNSE(DİKEYARA(...)) => YANLIŞ"
+msgstr "=EMETİNSE(DÜŞEYARA(...)) => YANLIŞ"
 
 #: empty_cells.xhp#par_id7458723.help.text
 msgid "=ISNUMBER(C1) => FALSE (MS-Excel: TRUE)"
@@ -193,6 +193,18 @@ msgstr "<link href=\"text/scalc/05/02140000.xhp\" name=\"Error Codes in %PRODUCT
 msgid "The following table is an overview of the error messages for <item type=\"productname\">%PRODUCTNAME</item> Calc. If the error occurs in the cell that contains the cursor, the error message is displayed on the <emph>Status Bar</emph>."
 msgstr "Aşağıdaki tablo, <item type=\"productname\">%PRODUCTNAME</item> Calc için hata mesajlarına bir genel bakış sunar. Eğer imlecin bulunduğu hücrede hata var ise, hata kodu hücrede, ve hata mesajı <emph>Durum Çubuğu</emph>'nda görüntülenir."
 
+#: 02140000.xhp#bm_id0202201010205429.help.text
+msgid "<bookmark_value>### error message</bookmark_value>"
+msgstr "<bookmark_value>### hata iletisi</bookmark_value>"
+
+#: 02140000.xhp#bm_id3154634.help.text
+msgid "<bookmark_value>invalid references; error messages</bookmark_value>               <bookmark_value>error messages;invalid references</bookmark_value>               <bookmark_value>#REF error message</bookmark_value>"
+msgstr "<bookmark_value>geçersiz başvurular; hata iletileri</bookmark_value><bookmark_value>hata iletileri;geçersiz başvurular</bookmark_value><bookmark_value>#BAŞV hata iletisi</bookmark_value>"
+
+#: 02140000.xhp#bm_id3148428.help.text
+msgid "<bookmark_value>invalid names; error messages</bookmark_value>               <bookmark_value>#NAME error message</bookmark_value>"
+msgstr "<bookmark_value>geçersiz adlar; hata iletileri</bookmark_value><bookmark_value>#AD hata iletisi</bookmark_value>"
+
 #: 02140000.xhp#par_id3153968.3.help.text
 msgid "Error Code"
 msgstr "Hata Kodu"
@@ -208,10 +220,6 @@ msgstr "Açıklama"
 #: 02140000.xhp#par_id1668467.help.text
 msgid "###"
 msgstr "###"
-
-#: 02140000.xhp#bm_id0202201010205429.help.text
-msgid "<bookmark_value>### error message</bookmark_value>"
-msgstr "<bookmark_value>### hata iletisi</bookmark_value>"
 
 #: 02140000.xhp#par_id3165766.13.help.text
 msgid "none"
@@ -242,16 +250,12 @@ msgid "Invalid argument"
 msgstr "Geçersiz bağımsız değişken"
 
 #: 02140000.xhp#par_id3153160.11.help.text
-msgid "Function argument is not valid, for example, a negative number for the root function."
-msgstr "İşlev değişkeni geçersiz, örneğin karekök işlemi için bir negatif sayı."
+msgid "Function argument is not valid. For example, a negative number for the SQRT() function, for this please use IMSQRT()."
+msgstr ""
 
 #: 02140000.xhp#par_id3154015.12.help.text
-msgid "503"
-msgstr "503"
-
-#: 02140000.xhp#par_id1628467.help.text
-msgid "#NUM!"
-msgstr "#SAYI!"
+msgid "503<br/>#NUM!"
+msgstr ""
 
 #: 02140000.xhp#par_id3155766.13.help.text
 msgid "Invalid floating point operation"
@@ -400,12 +404,8 @@ msgid "Variable is not available"
 msgstr "Değişken mevcut değil"
 
 #: 02140000.xhp#par_id3146142.60.help.text
-msgid "519"
-msgstr "519"
-
-#: 02140000.xhp#par_id8169499.help.text
-msgid "#VALUE"
-msgstr "#DEĞER"
+msgid "519<br/>#VALUE"
+msgstr ""
 
 #: 02140000.xhp#par_id3155954.61.help.text
 msgid "No result (#VALUE is in the cell rather than Err:519!)"
@@ -466,16 +466,8 @@ msgid "Function missed a targeted value, or <link href=\"text/shared/optionen/01
 msgstr "İşlev hedef değere ulaşamıyor, veya <link href=\"text/shared/optionen/01060500.xhp\">Yinelemeli başvurular</link> ayarlanan azami adım değerinde asgari değişim değerine ulaşılamıyor."
 
 #: 02140000.xhp#par_id3153544.75.help.text
-msgid "524"
-msgstr "524"
-
-#: 02140000.xhp#par_id2129886.help.text
-msgid "#REF"
-msgstr "#BAŞV"
-
-#: 02140000.xhp#bm_id3154634.help.text
-msgid "<bookmark_value>invalid references; error messages</bookmark_value>               <bookmark_value>error messages;invalid references</bookmark_value>               <bookmark_value>#REF error message</bookmark_value>"
-msgstr "<bookmark_value>geçersiz başvurular; hata iletileri</bookmark_value><bookmark_value>hata iletileri;geçersiz başvurular</bookmark_value><bookmark_value>#BAŞV hata iletisi</bookmark_value>"
+msgid "524<br/>#REF"
+msgstr ""
 
 #: 02140000.xhp#par_id3154634.76.help.text
 msgid "invalid references (instead of Err:524 cell contains #REF)"
@@ -486,16 +478,8 @@ msgid "                  <emph>Compiler:</emph> a column or row description name
 msgstr "<emph>Derleyici:</emph> Bir sütun veya satır tanımlama ismi çözülemedi. <emph>Yorumlayıcı:</emph> Bir formülde, sütun, satır, veya çalışma sayfası isminde başvurulan hücre bulunamıyor"
 
 #: 02140000.xhp#par_id3155984.78.help.text
-msgid "525"
-msgstr "525"
-
-#: 02140000.xhp#par_id4737083.help.text
-msgid "#NAME?"
-msgstr "#AD?"
-
-#: 02140000.xhp#bm_id3148428.help.text
-msgid "<bookmark_value>invalid names; error messages</bookmark_value>               <bookmark_value>#NAME error message</bookmark_value>"
-msgstr "<bookmark_value>geçersiz adlar; hata iletileri</bookmark_value><bookmark_value>#AD hata iletisi</bookmark_value>"
+msgid "525<br/>#NAME?"
+msgstr ""
 
 #: 02140000.xhp#par_id3148428.79.help.text
 msgid "invalid names (instead of Err:525 cell contains #NAME?)"
@@ -532,12 +516,8 @@ msgid "                  <emph>Interpreter: </emph>References, such as when a ce
 msgstr "<emph>Yorumlayıcı: </emph>Başvurular, bir hücredeki hücre başvuruları çok karmaşık."
 
 #: 02140000.xhp#par_id5324564.help.text
-msgid "532"
-msgstr "532"
-
-#: 02140000.xhp#par_id3623462.help.text
-msgid "#DIV/0!"
-msgstr "#BÖLÜM/0!"
+msgid "532<br/>#DIV/0!"
+msgstr ""
 
 #: 02140000.xhp#par_id7941831.help.text
 msgid "Division by zero"

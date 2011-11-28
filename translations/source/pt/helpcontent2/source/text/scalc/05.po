@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: http://qa.openoffice.org/issues/enter_bug.cgi?comment=&component=l10n&form_name=enter_issue&short_desc=Localization+issue+in+file%3A+helpcontent2%2Fsource%2Ftext%2Fscalc%2F05.oo&subcomponent=ui\n"
-"POT-Creation-Date: 2011-10-07 14:44+0200\n"
-"PO-Revision-Date: 2011-09-26 12:46+0200\n"
+"POT-Creation-Date: 2011-11-26 00:03+0200\n"
+"PO-Revision-Date: 2011-11-27 03:59+0200\n"
 "Last-Translator: Sérgio <smarquespt@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: pt\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Translate Toolkit 1.8.1\n"
+"X-Generator: Pootle 2.1.6\n"
 "X-Accelerator-Marker: ~\n"
 
 #: empty_cells.xhp#tit.help.text
@@ -33,7 +33,7 @@ msgstr "Em versões mais antigas da aplicação, as células vazias eram obrigad
 
 #: empty_cells.xhp#par_id2733542.help.text
 msgid "A simple reference to an empty cell is still displayed as numeric 0 but is not necessarily of type numeric anymore, so also comparisons with the referencing cell work as expected. "
-msgstr "Uma referência simples a uma célula vazia é apresentada como 0 numérico, mas já não é necessariamente do tipo numérico; como tal, também as comparações com a célula de referência funcionam do modo previsto. "
+msgstr "Uma referência simples a uma célula vazia é exibida como 0, mas não é necessariamente do tipo numérico; como tal, também as comparações com a célula de referência funcionam do modo previsto. "
 
 #: empty_cells.xhp#par_id4238715.help.text
 msgid "For the following examples, A1 contains a number, B1 is empty, C1 contains the reference to B1:"
@@ -41,7 +41,7 @@ msgstr "Para os exemplos apresentados em seguida, A1 contém um número, B1 est�
 
 #: empty_cells.xhp#par_id8277230.help.text
 msgid "A1: 1 B1: <empty> C1: =B1 (displays 0)"
-msgstr "A1: 1 B1: <empty> C1: =B1 (apresenta 0)"
+msgstr "A1: 1 B1: <vazio> C1: =B1 (exibe 0)"
 
 #: empty_cells.xhp#par_id4086428.help.text
 msgctxt "empty_cells.xhp#par_id4086428.help.text"
@@ -120,7 +120,7 @@ msgstr "A1: <empty>"
 
 #: empty_cells.xhp#par_id8069704.help.text
 msgid "B1: =A1 => displays 0, but is just a reference to an empty cell"
-msgstr "B1: =A1 => apresenta 0, mas corresponde apenas a uma referência a uma célula vazia"
+msgstr "B1: =A1 => exibe 0, mas corresponde apenas a uma referência da célula vazia"
 
 #: empty_cells.xhp#par_id4524674.help.text
 msgid "=ISNUMBER(A1) => FALSE"
@@ -158,7 +158,7 @@ msgstr "=B1=\"\" => VERDADEIRO (MS-Excel: FALSO)"
 
 #: empty_cells.xhp#par_id8801538.help.text
 msgid "C1: =VLOOKUP(...) with empty cell result => displays empty (MS-Excel: displays 0)"
-msgstr "C1: =PROCV(...) com resultado de célula vazia => apresenta uma célula vazia (MS-Excel: apresenta 0)"
+msgstr "C1: =PROCV(...) com resultado de célula vazia => exibe uma célula vazia (MS-Excel: exibe 0)"
 
 #: empty_cells.xhp#par_id6746421.help.text
 msgid "=ISNUMBER(VLOOKUP(...)) => FALSE"
@@ -187,11 +187,23 @@ msgstr "<bookmark_value>códigos de erro;lista de</bookmark_value>"
 
 #: 02140000.xhp#hd_id3146797.1.help.text
 msgid "<link href=\"text/scalc/05/02140000.xhp\" name=\"Error Codes in %PRODUCTNAME Calc\">Error Codes in <item type=\"productname\">%PRODUCTNAME</item> Calc</link>"
-msgstr "<link href=\"text/scalc/05/02140000.xhp\" name=\"Error Codes in %PRODUCTNAME Calc\">Códigos de erro no <item type=\"productname\">%PRODUCTNAME</item> Calc</link>"
+msgstr "<link href=\"text/scalc/05/02140000.xhp\" name=\"Error Codes in %PRODUCTNAME Calc\">Códigos de erro no <item type=\"productname\">%PRODUCTNAME</item>Calc</link>"
 
 #: 02140000.xhp#par_id3150275.2.help.text
 msgid "The following table is an overview of the error messages for <item type=\"productname\">%PRODUCTNAME</item> Calc. If the error occurs in the cell that contains the cursor, the error message is displayed on the <emph>Status Bar</emph>."
-msgstr "A tabela seguinte apresenta uma descrição geral das mensagens de erro do <item type=\"productname\">%PRODUCTNAME</item> Calc. Se o erro ocorrer na célula que contém o cursor, será apresentada a mensagem de erro na <emph>Barra de estado</emph>."
+msgstr "A tabela seguinte apresenta uma descrição geral das mensagens de erro do <item type=\"productname\">%PRODUCTNAME</item> Calc. Se o erro ocorrer na célula que contém o cursor, será exibida uma mensagem de erro na <emph>Barra de estado</emph>."
+
+#: 02140000.xhp#bm_id0202201010205429.help.text
+msgid "<bookmark_value>### error message</bookmark_value>"
+msgstr "<bookmark_value>mensagem de erro ###</bookmark_value>"
+
+#: 02140000.xhp#bm_id3154634.help.text
+msgid "<bookmark_value>invalid references; error messages</bookmark_value>               <bookmark_value>error messages;invalid references</bookmark_value>               <bookmark_value>#REF error message</bookmark_value>"
+msgstr "<bookmark_value>referências inválidas; mensagens de erro</bookmark_value>               <bookmark_value>mensagens de erro;referências inválidas</bookmark_value>               <bookmark_value>#REF (mensagem de erro)</bookmark_value>"
+
+#: 02140000.xhp#bm_id3148428.help.text
+msgid "<bookmark_value>invalid names; error messages</bookmark_value>               <bookmark_value>#NAME error message</bookmark_value>"
+msgstr "<bookmark_value>nomes inválidos; mensagens de erro</bookmark_value><bookmark_value>#NOME (mensagem de erro)</bookmark_value>"
 
 #: 02140000.xhp#par_id3153968.3.help.text
 msgid "Error Code"
@@ -209,13 +221,9 @@ msgstr "Explicação"
 msgid "###"
 msgstr "###"
 
-#: 02140000.xhp#bm_id0202201010205429.help.text
-msgid "<bookmark_value>### error message</bookmark_value>"
-msgstr "<bookmark_value>mensagem de erro ###</bookmark_value>"
-
 #: 02140000.xhp#par_id3165766.13.help.text
 msgid "none"
-msgstr "nenhum"
+msgstr "nenhuma"
 
 #: 02140000.xhp#par_id3169266.14.help.text
 msgid "The cell is not wide enough to display the contents."
@@ -242,16 +250,12 @@ msgid "Invalid argument"
 msgstr "Argumento inválido"
 
 #: 02140000.xhp#par_id3153160.11.help.text
-msgid "Function argument is not valid, for example, a negative number for the root function."
-msgstr "O argumento de função não é válido, por exemplo, um número negativo para a função raiz."
+msgid "Function argument is not valid. For example, a negative number for the SQRT() function, for this please use IMSQRT()."
+msgstr "O argumento é inválido. Por exemplo, utilizou um número negativo para a função RAIZQ(). Para valores negativos utilize IMRAIZ()."
 
 #: 02140000.xhp#par_id3154015.12.help.text
-msgid "503"
-msgstr "503"
-
-#: 02140000.xhp#par_id1628467.help.text
-msgid "#NUM!"
-msgstr "#NUM!"
+msgid "503<br/>#NUM!"
+msgstr "503<br/>#NUM!"
 
 #: 02140000.xhp#par_id3155766.13.help.text
 msgid "Invalid floating point operation"
@@ -400,12 +404,8 @@ msgid "Variable is not available"
 msgstr "A variável não está disponível"
 
 #: 02140000.xhp#par_id3146142.60.help.text
-msgid "519"
-msgstr "519"
-
-#: 02140000.xhp#par_id8169499.help.text
-msgid "#VALUE"
-msgstr "#VALOR"
+msgid "519<br/>#VALUE"
+msgstr "519<br/>#VALOR"
 
 #: 02140000.xhp#par_id3155954.61.help.text
 msgid "No result (#VALUE is in the cell rather than Err:519!)"
@@ -451,7 +451,7 @@ msgstr "Referência circular"
 
 #: 02140000.xhp#par_id3157972.71.help.text
 msgid "Formula refers directly or indirectly to itself and the <emph>Iterations</emph> option is not set under <switchinline select=\"sys\"><caseinline select=\"MAC\">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline> - %PRODUCTNAME Calc - Calculate."
-msgstr "Fórmula refere-se direta ou indiretamente a si própria e a opção <emph>Iterações</emph> não se encontra definida em <switchinline select=\"sys\"><caseinline select=\"MAC\">%PRODUCTNAME - Preferências</caseinline><defaultinline>Ferramentas - Opções</defaultinline></switchinline> - %PRODUCTNAME Calc - Calcular."
+msgstr "Fórmula refere-se direta ou indiretamente a si própria e à opção <emph>Iterações</emph> não se encontra definida em <switchinline select=\"sys\"><caseinline select=\"MAC\">%PRODUCTNAME - Preferências</caseinline><defaultinline>Ferramentas - Opções</defaultinline></switchinline> - %PRODUCTNAME Calc - Calcular."
 
 #: 02140000.xhp#par_id3149538.72.help.text
 msgid "523"
@@ -466,16 +466,8 @@ msgid "Function missed a targeted value, or <link href=\"text/shared/optionen/01
 msgstr "A função falhou um valor de destino ou <link href=\"text/shared/optionen/01060500.xhp\">as referências iterativas</link> não atingiram a alteração mínima nos passos máximos definidos."
 
 #: 02140000.xhp#par_id3153544.75.help.text
-msgid "524"
-msgstr "524"
-
-#: 02140000.xhp#par_id2129886.help.text
-msgid "#REF"
-msgstr "#REF"
-
-#: 02140000.xhp#bm_id3154634.help.text
-msgid "<bookmark_value>invalid references; error messages</bookmark_value>               <bookmark_value>error messages;invalid references</bookmark_value>               <bookmark_value>#REF error message</bookmark_value>"
-msgstr "<bookmark_value>referências inválidas; mensagens de erro</bookmark_value>               <bookmark_value>mensagens de erro;referências inválidas</bookmark_value>               <bookmark_value>#REF (mensagem de erro)</bookmark_value>"
+msgid "524<br/>#REF"
+msgstr "524<br/>#REF"
 
 #: 02140000.xhp#par_id3154634.76.help.text
 msgid "invalid references (instead of Err:524 cell contains #REF)"
@@ -486,16 +478,8 @@ msgid "                  <emph>Compiler:</emph> a column or row description name
 msgstr "                  <emph>Compilador:</emph> não foi possível resolver um nome de descrição de coluna ou linha. <emph>Interpretador:</emph> numa fórmula, a coluna, linha ou folha que contém a célula referenciada está em falta."
 
 #: 02140000.xhp#par_id3155984.78.help.text
-msgid "525"
-msgstr "525"
-
-#: 02140000.xhp#par_id4737083.help.text
-msgid "#NAME?"
-msgstr "#NOME?"
-
-#: 02140000.xhp#bm_id3148428.help.text
-msgid "<bookmark_value>invalid names; error messages</bookmark_value>               <bookmark_value>#NAME error message</bookmark_value>"
-msgstr "<bookmark_value>nomes inválidos; mensagens de erro</bookmark_value>               <bookmark_value>#NOME (mensagem de erro)</bookmark_value>"
+msgid "525<br/>#NAME?"
+msgstr "525<br/>#NOME?"
 
 #: 02140000.xhp#par_id3148428.79.help.text
 msgid "invalid names (instead of Err:525 cell contains #NAME?)"
@@ -532,12 +516,8 @@ msgid "                  <emph>Interpreter: </emph>References, such as when a ce
 msgstr "                  <emph>Interpretador: </emph>As referências, tais como quando uma célula faz referência a outra célula, encontram-se demasiado resumidas."
 
 #: 02140000.xhp#par_id5324564.help.text
-msgid "532"
-msgstr "532"
-
-#: 02140000.xhp#par_id3623462.help.text
-msgid "#DIV/0!"
-msgstr "#DIV/0!"
+msgid "532<br/>#DIV/0!"
+msgstr "532<br/>#DIV/0!"
 
 #: 02140000.xhp#par_id7941831.help.text
 msgid "Division by zero"

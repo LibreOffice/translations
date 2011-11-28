@@ -3,16 +3,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: http://qa.openoffice.org/issues/enter_bug.cgi?comment=&component=l10n&form_name=enter_issue&short_desc=Localization+issue+in+file%3A+helpcontent2%2Fsource%2Ftext%2Fscalc%2F01.oo&subcomponent=ui\n"
-"POT-Creation-Date: 2011-10-07 14:45+0200\n"
-"PO-Revision-Date: 2011-07-11 13:28+0200\n"
-"Last-Translator: Ikuya <ikuya@fruitsbasket.info>\n"
+"POT-Creation-Date: 2011-11-26 00:04+0200\n"
+"PO-Revision-Date: 2011-11-22 05:50+0200\n"
+"Last-Translator: matuaki <matuaki.ooo@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Translate Toolkit 1.8.1\n"
+"X-Generator: Translate Toolkit 1.9.0\n"
 "X-Accelerator-Marker: ~\n"
 
 #: 04020000.xhp#tit.help.text
@@ -1297,9 +1297,8 @@ msgid "GETPIVOTDATA"
 msgstr "GETPIVOTDATA"
 
 #: 04060109.xhp#par_id3593859.help.text
-#, fuzzy
 msgid "<ahelp hid=\".\">The GETPIVOTDATA function returns a result value from a pivot table. The value is addressed using field and item names, so it remains valid if the layout of the pivot table changes.</ahelp>"
-msgstr "<ahelp hid=\".\">GETPIVOTDATA 関数は、データパイロット表からの結果の値を返します。この値はフィールド名と項目名を使用して解決されるため、データパイロット表のレイアウトが変わっても有効です。</ahelp>"
+msgstr "<ahelp hid=\".\">GETPIVOTDATA 関数は、ピボットテーブルからの結果の値を返します。この値はフィールド名と項目名を使用して解決されるため、ピボットテーブルのレイアウトが変わっても有効です。</ahelp>"
 
 #: 04060109.xhp#hd_id9741508.help.text
 msgctxt "04060109.xhp#hd_id9741508.help.text"
@@ -1311,14 +1310,12 @@ msgid "Two different syntax definitions can be used:"
 msgstr "2 種類の構文定義を使用できます。"
 
 #: 04060109.xhp#par_id1665089.help.text
-#, fuzzy
 msgid "GETPIVOTDATA(TargetField; pivot table; [ Field 1; Item 1; ... ])"
-msgstr "GETPIVOTDATA(対象フィールド; データパイロット; [ フィールド 1; 項目 1; ... ])"
+msgstr "GETPIVOTDATA(対象フィールド; ピボットテーブル; [ フィールド 1; 項目 1; ... ])"
 
 #: 04060109.xhp#par_id4997100.help.text
-#, fuzzy
 msgid "GETPIVOTDATA(pivot table; Constraints)"
-msgstr "GETPIVOTDATA(データパイロット; 制約)"
+msgstr "GETPIVOTDATA(ピボットテーブル; 制約)"
 
 #: 04060109.xhp#par_id1672109.help.text
 msgid "The second syntax is assumed if exactly two parameters are given, of which the first parameter is a cell or cell range reference. The first syntax is assumed in all other cases. The Function Wizard shows the first syntax."
@@ -1334,9 +1331,8 @@ msgid "            <emph>TargetField</emph> is a string that selects one of the 
 msgstr "<emph>ターゲットフィールド</emph> は、データパイロット表のデータフィールドのいずれかを選択する文字列です。この文字列はソース列の名前、または「Sum - Sales」のように表に示されているとおりのデータフィールドの名前の場合があります。"
 
 #: 04060109.xhp#par_id8296151.help.text
-#, fuzzy
 msgid "            <emph>pivot table</emph> is a reference to a cell or cell range that is positioned within a pivot table or contains a pivot table. If the cell range contains several pivot tables, the table that was created last is used."
-msgstr "<emph>データパイロット</emph> は、データパイロット表内に置かれるか、データパイロット表を含むセルまたはセル範囲への参照です。セル範囲に複数のデータパイロット表が含まれる場合、最後に作成された表が使用されます。"
+msgstr "<emph>ピボットテーブル</emph> は、ピボットテーブル表内に置かれるか、ピボットテーブル表を含むセルまたはセル範囲への参照です。セル範囲に複数のピボットテーブル表が含まれる場合、最後に作成された表が使用されます。"
 
 #: 04060109.xhp#par_id4809411.help.text
 #, fuzzy
@@ -1344,9 +1340,8 @@ msgid "If no <emph>Field n / Item n</emph> pairs are given, the grand total is r
 msgstr "<emph>フィールド名/項目名</emph> のペアが指定されていない場合、総計が返されます。それ以外の場合は、各ペアが結果によって満たす必要のある制約を追加します。<emph>フィールド名</emph> は、データパイロット表からのフィールドの名前です。<emph>項目名</emph> は、そのフィールドからの項目の名前です。"
 
 #: 04060109.xhp#par_id6454969.help.text
-#, fuzzy
 msgid "If the pivot table contains only a single result value that fulfills all of the constraints, or a subtotal result that summarizes all matching values, that result is returned. If there is no matching result, or several ones without a subtotal for them, an error is returned. These conditions apply to results that are included in the pivot table."
-msgstr "データパイロット表にすべての制約を満たす 1 つの結果値、またはすべての一致する値をまとめた小計の結果しか含まれない場合、その結果が返されます。一致する結果がない場合や、結果の一部の結果があるだけで結果の小計がない場合、エラーが返されます。これらの条件は、データパイロット表に含まれる結果に適用されます。"
+msgstr "ピボットテーブルにすべての制約を満たす 1 つの結果値、またはすべての一致する値をまとめた小計の結果しか含まれない場合、その結果が返されます。一致する結果がない場合や、結果の一部の結果があるだけで結果の小計がない場合、エラーが返されます。これらの条件は、ピボットテーブルに含まれる結果に適用されます。"
 
 #: 04060109.xhp#par_id79042.help.text
 #, fuzzy
@@ -1354,9 +1349,8 @@ msgid "If the source data contains entries that are hidden by settings of the pi
 msgstr "ソースデータにデータパイロット表の設定によって非表示にされた項目が含まれる場合、それらの項目は無視されます。フィールド/項目ペアの順序は重要ではありません。フィールド名と項目名は大文字と小文字が区別されません。"
 
 #: 04060109.xhp#par_id7928708.help.text
-#, fuzzy
 msgid "If no constraint for a page field is given, the field's selected value is implicitly used. If a constraint for a page field is given, it must match the field's selected value, or an error is returned. Page fields are the fields at the top left of a pivot table, populated using the \"Page Fields\" area of the pivot table layout dialog. From each page field, an item (value) can be selected, which means only that item is included in the calculation."
-msgstr "ページフィールドに制約が設定されていない場合、フィールドで選択された値は暗黙的に使用されます。 ページフィールドに制約が設定されている場合、その制約はフィールドで選択した値と一致する必要があり、一致しない場合はエラーが返されます。 ページフィールドは、「データパイロットのレイアウト」ダイアログの「ページフィールド」エリアを使って生成された、データパイロット表の左上にあるフィールドです。 それぞれのページフィールドから項目 (値) を選択できます。これは、選択された項目が計算に含まれることのみを意味します。"
+msgstr "ページフィールドに制約が設定されていない場合、フィールドで選択された値は暗黙的に使用されます。 ページフィールドに制約が設定されている場合、その制約はフィールドで選択した値と一致する必要があり、一致しない場合はエラーが返されます。 ページフィールドは、「ピボットテーブルのレイアウト」ダイアログの「ページフィールド」エリアを使って生成された、ピボットテーブルの左上にあるフィールドです。 それぞれのページフィールドから項目 (値) を選択できます。これは、選択された項目が計算に含まれることのみを意味します。"
 
 #: 04060109.xhp#par_id3864253.help.text
 #, fuzzy
@@ -1368,18 +1362,16 @@ msgid "Second Syntax"
 msgstr "2 番目の構文"
 
 #: 04060109.xhp#par_id9937131.help.text
-#, fuzzy
 msgid "            <emph>pivot table</emph> has the same meaning as in the first syntax."
-msgstr "<emph>データパイロット</emph> は、1 番目の構文での意味と同じ意味です。"
+msgstr "<emph>ピボットテーブル</emph> は、1 番目の構文での意味と同じ意味です。"
 
 #: 04060109.xhp#par_id5616626.help.text
 msgid "            <emph>Constraints</emph> is a space-separated list. Entries can be quoted (single quotes). The whole string must be enclosed in quotes (double quotes), unless you reference the string from another cell."
 msgstr "<emph>制約</emph> は、スペースで区切られたリストです。 項目を引用できます (一重引用符)。 別のセルから文字列を参照するのでなければ、文字列全体を引用符 (二重引用符) で囲む必要があります。"
 
 #: 04060109.xhp#par_id4076357.help.text
-#, fuzzy
 msgid "One of the entries can be the data field name. The data field name can be left out if the pivot table contains only one data field, otherwise it must be present."
-msgstr "項目の 1 つをデータフィールド名にすることができます。データパイロット表にデータフィールドが 1 つしか含まれない場合、データフィールド名を省略することができます。それ以外の場合は、データフィールド名が必要です。 "
+msgstr "項目の 1 つをデータフィールド名にすることができます。ピボットテーブルにデータフィールドが 1 つしか含まれない場合、データフィールド名を省略することができます。それ以外の場合は、データフィールド名が必要です。 "
 
 #: 04060109.xhp#par_id8231757.help.text
 #, fuzzy
@@ -4122,8 +4114,8 @@ msgid "            <emph>Sigma</emph> (optional) is the known standard deviation
 msgstr "            <emph>母分散(シグマ)</emph> (オプション) は母集団の標準偏差です。このパラメータを省略すると、標本の標準偏差が使われます。"
 
 #: 04060182.xhp#par_id0305200911372999.help.text
-msgid "See also the <link href=\"http://wiki.services.openoffice.org/wiki/Documentation/How_Tos/Calc:_ZTEST_function\">Wiki page</link>."
-msgstr "<link href=\"http://wiki.services.openoffice.org/wiki/Documentation/How_Tos/Calc:_ZTEST_function\">Wiki page</link>も見てください。"
+msgid "See also the <link href=\"http://wiki.documentfoundation.org/Documentation/How_Tos/Calc:_ZTEST_function\">Wiki page</link>."
+msgstr ""
 
 #: 04060182.xhp#bm_id3153623.help.text
 msgid "<bookmark_value>HARMEAN function</bookmark_value>         <bookmark_value>means;harmonic</bookmark_value>"
@@ -8381,8 +8373,8 @@ msgstr "<ahelp hid=\".\">ASC 関数は、ASCII およびカタカナ文字を全
 
 #: 04060110.xhp#par_id9912411.help.text
 msgctxt "04060110.xhp#par_id9912411.help.text"
-msgid "See <link href=\"http://wiki.services.openoffice.org/mwiki/index.php?title=Calc/Features/JIS_and_ASC_functions\">http://wiki.services.openoffice.org/mwiki/index.php?title=Calc/Features/JIS_and_ASC_functions</link> for a conversion table."
-msgstr "変換テーブルについては、<link href=\"http://wiki.services.openoffice.org/mwiki/index.php?title=Calc/Features/JIS_and_ASC_functions\">http://wiki.services.openoffice.org/mwiki/index.php?title=Calc/Features/JIS_and_ASC_functions</link> を参照してください。"
+msgid "See <link href=\"http://wiki.documentfoundation.org/Calc/Features/JIS_and_ASC_functions\">http://wiki.documentfoundation.org/Calc/Features/JIS_and_ASC_functions</link> for a conversion table."
+msgstr ""
 
 #: 04060110.xhp#hd_id9204992.help.text
 msgctxt "04060110.xhp#hd_id9204992.help.text"
@@ -8871,8 +8863,8 @@ msgstr "<ahelp hid=\".\">JIS 関数は、ASCII およびカタカナ文字を半
 
 #: 04060110.xhp#par_id1551561.help.text
 msgctxt "04060110.xhp#par_id1551561.help.text"
-msgid "See <link href=\"http://wiki.services.openoffice.org/mwiki/index.php?title=Calc/Features/JIS_and_ASC_functions\">http://wiki.services.openoffice.org/mwiki/index.php?title=Calc/Features/JIS_and_ASC_functions</link> for a conversion table."
-msgstr "変換テーブルについては、<link href=\"http://wiki.services.openoffice.org/mwiki/index.php?title=Calc/Features/JIS_and_ASC_functions\">http://wiki.services.openoffice.org/mwiki/index.php?title=Calc/Features/JIS_and_ASC_functions</link> を参照してください。"
+msgid "See <link href=\"http://wiki.documentfoundation.org/Calc/Features/JIS_and_ASC_functions\">http://wiki.documentfoundation.org/Calc/Features/JIS_and_ASC_functions</link> for a conversion table."
+msgstr ""
 
 #: 04060110.xhp#hd_id2212897.help.text
 msgctxt "04060110.xhp#hd_id2212897.help.text"
@@ -9808,9 +9800,8 @@ msgid "Data field"
 msgstr "データフィールド"
 
 #: 12090105.xhp#bm_id7292397.help.text
-#, fuzzy
 msgid "<bookmark_value>calculating;pivot table</bookmark_value>"
-msgstr "<bookmark_value>計算;データパイロット</bookmark_value>"
+msgstr "<bookmark_value>計算;ピボットテーブル</bookmark_value>"
 
 #: 12090105.xhp#hd_id3150871.1.help.text
 msgctxt "12090105.xhp#hd_id3150871.1.help.text"
@@ -9818,9 +9809,8 @@ msgid "Data field"
 msgstr "データフィールド"
 
 #: 12090105.xhp#par_id3154124.16.help.text
-#, fuzzy
 msgid "The contents of this dialog is different for data fields in the <emph>Data</emph> area, and data fields in the <emph>Row</emph> or <emph>Column</emph> area of the <link href=\"text/scalc/01/12090102.xhp\" name=\"Pivot table\">Pivot Table</link> dialog."
-msgstr "このダイアログの内容は<emph>データ</emph> 範囲のデータフィールドとは異なります。 また、ダイアログ <link href=\"text/scalc/01/12090102.xhp\" name=\"データパイロット\">データパイロット</link> の <emph>行</emph> 範囲または <emph>列</emph> 範囲のデータフィールドとも異なります。"
+msgstr "このダイアログの内容は<emph>データ</emph> 範囲のデータフィールドとは異なります。 また、ダイアログ <link href=\"text/scalc/01/12090102.xhp\" name=\"ピボットテーブル\">ピボットテーブル</link> の <emph>行</emph> 範囲または <emph>列</emph> 範囲のデータフィールドとも異なります。"
 
 #: 12090105.xhp#hd_id3152596.2.help.text
 msgctxt "12090105.xhp#hd_id3152596.2.help.text"
@@ -11653,9 +11643,8 @@ msgid "Pivot Table"
 msgstr "ピボットテーブル"
 
 #: 12090102.xhp#bm_id2306894.help.text
-#, fuzzy
 msgid "<bookmark_value>pivot table function;show details</bookmark_value><bookmark_value>pivot table function;drill down</bookmark_value>"
-msgstr "<bookmark_value>DataPilot 機能;詳細を表示する</bookmark_value><bookmark_value>データパイロット機能; ドリルダウン</bookmark_value>"
+msgstr "<bookmark_value>DataPilot 機能;詳細を表示する</bookmark_value><bookmark_value>ピボットテーブル機能; ドリルダウン</bookmark_value>"
 
 #: 12090102.xhp#hd_id3149165.1.help.text
 #, fuzzy
@@ -11669,9 +11658,8 @@ msgid "<ahelp hid=\".uno:DataPilotExec\">Specify the layout of the table that is
 msgstr "<ahelp hid=\".uno:DataPilotExec\">データパイロットで生成された表のレイアウトを指定します。</ahelp>"
 
 #: 12090102.xhp#par_id3148798.34.help.text
-#, fuzzy
 msgid "The pivot table displays data fields as buttons which you can drag and drop to define the pivot table."
-msgstr "データパイロットでは、データフィールドがボタンとして表示されます。このボタンをドラッグ＆ドロップするだけで、データパイロット表を定義できます。"
+msgstr "ピボットテーブルでは、データフィールドがボタンとして表示されます。このボタンをドラッグ＆ドロップするだけで、ピボットテーブルを定義できます。"
 
 #: 12090102.xhp#hd_id3154908.18.help.text
 msgctxt "12090102.xhp#hd_id3154908.18.help.text"
@@ -11679,9 +11667,8 @@ msgid "Layout"
 msgstr "レイアウト"
 
 #: 12090102.xhp#par_id3150768.19.help.text
-#, fuzzy
 msgid "<ahelp hid=\"HID_SC_DPLAY_SELECT\">To define the layout of a pivot table, drag and drop data field buttons onto the <emph>Page Fields, Row Fields, Column Fields, </emph>and<emph> Data Fields </emph>areas.</ahelp> You can also use drag and drop to rearrange the data fields on a pivot table."
-msgstr "<ahelp hid=\"HID_SC_DPLAY_SELECT\">データパイロット表のレイアウトを定義するには、<emph>ページフィールド、行フィールド、列フィールド</emph> および <emph>データフィールド</emph> の範囲にデータフィールドを示すボタンをドラッグ＆ドロップします。</ahelp>また、データパイロット表内では、ボタンをドラッグ＆ドロップで自由に配置できます。"
+msgstr "<ahelp hid=\"HID_SC_DPLAY_SELECT\">ピボットテーブルのレイアウトを定義するには、<emph>ページフィールド、行フィールド、列フィールド</emph> および <emph>データフィールド</emph> の範囲にデータフィールドを示すボタンをドラッグ＆ドロップします。</ahelp>また、ピボットテーブル内では、ボタンをドラッグ＆ドロップで自由に配置できます。"
 
 #: 12090102.xhp#par_id3147229.20.help.text
 msgid "$[officename] automatically adds a caption to buttons that are dragged into the <emph>Data Fields </emph>area. The caption contains the name of the data field as well as the formula that created the data."
@@ -11748,9 +11735,8 @@ msgid "<ahelp hid=\"SC:EDIT:RID_SCDLG_PIVOT_LAYOUT:ED_OUTAREA\">Select the area 
 msgstr "<ahelp hid=\"SC:EDIT:RID_SCDLG_PIVOT_LAYOUT:ED_OUTAREA\">データパイロット表の結果を表示する場所を選択します。</ahelp>"
 
 #: 12090102.xhp#par_id3155961.6.help.text
-#, fuzzy
 msgid "If the selected area contains data, the pivot table overwrites the data. To prevent the loss of existing data, let the pivot table automatically select the area to display the results."
-msgstr "この場所を選択すると、データパイロット表はデータを上書きします。既存のデータを消去しないために、データパイロットに自動的に範囲を選択させ、結果を表示させます。"
+msgstr "この場所を選択すると、ピボットテーブルはデータを上書きします。既存のデータを消去しないために、ピボットテーブルに自動的に範囲を選択させ、結果を表示させます。"
 
 #: 12090102.xhp#hd_id3147364.7.help.text
 msgid "Ignore empty rows"
@@ -11789,9 +11775,8 @@ msgid "Add filter"
 msgstr "フィルタの追加"
 
 #: 12090102.xhp#par_idN1089B.help.text
-#, fuzzy
 msgid "<ahelp hid=\".\">Adds a Filter button to pivot tables that are based on spreadsheet data.</ahelp>"
-msgstr "<ahelp hid=\".\">表計算ドキュメントのデータに基づいて、データパイロット表に フィルタ ボタンを追加します。</ahelp>"
+msgstr "<ahelp hid=\".\">表計算ドキュメントのデータに基づいて、ピボットテーブルに フィルタ ボタンを追加します。</ahelp>"
 
 #: 12090102.xhp#par_idN108B2.help.text
 msgid "<ahelp hid=\".\">Opens the Filter dialog.</ahelp>"
@@ -11806,9 +11791,8 @@ msgid "<ahelp hid=\".\">Select this check box and double-click an item label in 
 msgstr "<ahelp hid=\".\">項目の詳細の表示または非表示を切り替えるには、このチェックボックスを選択して、表内の項目ラベルをダブルクリックします。セルの内容を編集するには、このチェックボックスをクリアして、表内のセルをダブルクリックします。</ahelp>"
 
 #: 12090102.xhp#par_idN108DC.help.text
-#, fuzzy
 msgid "To examine details inside a pivot table"
-msgstr "データパイロット表内で詳細を調べる"
+msgstr "ピボットテーブル内で詳細を調べる"
 
 #: 12090102.xhp#par_idN108E0.help.text
 msgid "Do one of the following:"
@@ -11835,9 +11819,8 @@ msgid "<ahelp hid=\".\">Choose the field that you want to view the details for.<
 msgstr "<ahelp hid=\".\">詳細を表示するフィールドを選択します。</ahelp>"
 
 #: 12090102.xhp#par_id3149817.35.help.text
-#, fuzzy
 msgid "<link href=\"text/scalc/04/01020000.xhp\" name=\"Pivot table shortcut keys\">Pivot table shortcut keys</link>"
-msgstr "<link href=\"text/scalc/04/01020000.xhp\" name=\"データパイロットのショートカットキー\">データパイロットのショートカットキー</link>"
+msgstr "<link href=\"text/scalc/04/01020000.xhp\" name=\"ピボットテーブルのショートカットキー\">ピボットテーブルのショートカットキー</link>"
 
 #: func_eomonth.xhp#tit.help.text
 msgid "EOMONTH"
@@ -12382,15 +12365,15 @@ msgstr "<ahelp hid=\".uno:DataFilterRemoveFilter\">選択されたセル範囲�
 #: 12090000.xhp#tit.help.text
 msgctxt "12090000.xhp#tit.help.text"
 msgid "Pivot Table"
-msgstr "データパイロット"
+msgstr "ピボットテーブル"
 
 #: 12090000.xhp#hd_id3150275.1.help.text
 msgid "<link href=\"text/scalc/01/12090000.xhp\" name=\"Pivot Table\">Pivot Table</link>"
-msgstr "<link href=\"text/scalc/01/12090000.xhp\" name=\"データパイロット\">データパイロット</link>"
+msgstr "<link href=\"text/scalc/01/12090000.xhp\" name=\"ピボットテーブル\">ピボットテーブル</link>"
 
 #: 12090000.xhp#par_id3153562.2.help.text
 msgid "A pivot table provides a summary of large amounts of data. You can then rearrange the pivot table to view different summaries of the data."
-msgstr "データパイロットは大量のデータの概要を表示します。データパイロットを配置し直すことによって、さまざまな側面から見たデータの概要を表示できます。"
+msgstr "ピボットテーブルは大量のデータの概要を表示します。ピボットテーブルを配置し直すことによって、さまざまな側面から見たデータの概要を表示できます。"
 
 #: 12090000.xhp#hd_id3155923.3.help.text
 msgid "<link href=\"text/scalc/01/12090100.xhp\" name=\"Create\">Create</link>"
@@ -12399,7 +12382,7 @@ msgstr "<link href=\"text/scalc/01/12090100.xhp\" name=\"作成\">作成</link>"
 #: 12090000.xhp#par_idN105FB.help.text
 msgctxt "12090000.xhp#par_idN105FB.help.text"
 msgid "<link href=\"text/scalc/01/12090102.xhp\" name=\"Pivot table dialog\">Pivot table dialog</link>"
-msgstr "<link href=\"text/scalc/01/12090102.xhp\" name=\"データパイロットダイアログ\">データパイロットダイアログ</link>"
+msgstr "<link href=\"text/scalc/01/12090102.xhp\" name=\"ピボットテーブルダイアログ\">ピボットテーブルダイアログ</link>"
 
 #: solver.xhp#tit.help.text
 msgid "Solver"
@@ -14215,16 +14198,16 @@ msgid "Weight"
 msgstr "重さ"
 
 #: 04060116.xhp#par_id3148476.180.help.text
-msgid "g, sg, lbm, u, ozm, stone, ton, grain, pweight, hweight, shweight"
-msgstr "g、sg、lbm、u、ozm、stone、ton、grain、pweight、hweight、shweight"
+msgid "<emph>g</emph>, sg, lbm, <emph>u</emph>, ozm, stone, ton, grain, pweight, hweight, shweight, brton"
+msgstr ""
 
 #: 04060116.xhp#par_id3155361.181.help.text
 msgid "Length"
 msgstr "長さ"
 
 #: 04060116.xhp#par_id3148925.182.help.text
-msgid "m, mi, Nmi, in, ft, yd, ang, Pica, ell, parsec"
-msgstr "m、mi、Nmi、in、ft、yd、ang、Pica、ell、parsec"
+msgid "<emph>m</emph>, mi, Nmi, in, ft, yd, ang, Pica, ell, <emph>parsec</emph>, <emph>lightyear</emph>, survey_mi"
+msgstr ""
 
 #: 04060116.xhp#par_id3158429.183.help.text
 msgctxt "04060116.xhp#par_id3158429.183.help.text"
@@ -14232,104 +14215,260 @@ msgid "Time"
 msgstr "時刻"
 
 #: 04060116.xhp#par_id3150707.184.help.text
-msgid "yr, day, hr, mn, sec"
-msgstr "yr、day、hr、mn、sec"
+msgid "yr, day, hr, mn, <emph>sec</emph>, <emph>s</emph>"
+msgstr ""
 
 #: 04060116.xhp#par_id3153238.185.help.text
 msgid "Pressure"
 msgstr "圧力"
 
 #: 04060116.xhp#par_id3166437.186.help.text
-msgid "Pa, atm, mmHg, Torr, psi"
-msgstr "Pa、atm、mmHg、Torr、psi"
+msgid "<emph>Pa</emph>, <emph>atm</emph>, <emph>at</emph>, <emph>mmHg</emph>, Torr, psi"
+msgstr ""
 
 #: 04060116.xhp#par_id3152944.187.help.text
 msgid "Force"
 msgstr "力"
 
 #: 04060116.xhp#par_id3155582.188.help.text
-msgid "N, dyn, pond"
-msgstr "N、dyn、pond"
+msgid "<emph>N</emph>, <emph>dyn</emph>, <emph>dy</emph>, lbf, <emph>pond</emph>"
+msgstr ""
 
 #: 04060116.xhp#par_id3153686.189.help.text
 msgid "Energy"
 msgstr "エネルギー"
 
 #: 04060116.xhp#par_id3153386.190.help.text
-msgid "J, e, c, cal, eV, HPh, Wh, BTU"
-msgstr "J、e、c、cal、eV、HPh、Wh、BTU"
+msgid "<emph>J</emph>, <emph>e</emph>, <emph>c</emph>, <emph>cal</emph>, <emph>eV</emph>, <emph>ev</emph>, HPh, <emph>Wh</emph>, <emph>wh</emph>, flb, BTU, btu"
+msgstr ""
 
 #: 04060116.xhp#par_id3154100.191.help.text
 msgid "Power"
 msgstr "出力"
 
 #: 04060116.xhp#par_id3149915.192.help.text
-msgid "W, HP, PS"
-msgstr "W、HP、PS"
+msgid "<emph>W</emph>, <emph>w</emph>, HP, PS"
+msgstr ""
 
 #: 04060116.xhp#par_id3148988.193.help.text
 msgid "Field strength"
 msgstr "場の強さ"
 
 #: 04060116.xhp#par_id3148616.194.help.text
-msgid "T, ga"
-msgstr "T、ga"
+msgid "<emph>T</emph>, <emph>ga</emph>"
+msgstr ""
 
 #: 04060116.xhp#par_id3151120.195.help.text
 msgid "Temperature"
 msgstr "温度"
 
 #: 04060116.xhp#par_id3148659.196.help.text
-msgid "C, F, K, Reau, Rank"
-msgstr "C、F、K、Reau、Rank"
+msgid "C, F, <emph>K</emph>, <emph>kel</emph>, Reau, Rank"
+msgstr ""
 
 #: 04060116.xhp#par_id3154610.197.help.text
 msgid "Volume"
 msgstr "体積"
 
 #: 04060116.xhp#par_id3149423.198.help.text
-msgid "l, tsp, tbs, oz, cup, pt, qt, gal, m3, mi3, Nmi3, in3, ft3, yd3, ang3, Pica3, barrel, bushel, regton, Schooner, Middy, Glass"
-msgstr "l、tsp、tbs、oz、cup、pt、qt、gal、m3、mi3、Nmi3、in3、ft3、yd3、ang3、Pica3、barrel、bushel、regton、Schooner、Middy、Glass"
+msgid "<emph>l</emph>, <emph>L</emph>, <emph>lt</emph>, tsp, tbs, oz, cup, pt, us_pt, qt, gal, <emph>m3</emph>, mi3, Nmi3, in3, ft3, yd3, ang3, Pica3, barrel, bushel, regton, Schooner, Middy, Glass"
+msgstr ""
 
 #: 04060116.xhp#par_id3149244.199.help.text
 msgid "Area"
 msgstr "面積"
 
 #: 04060116.xhp#par_id3150425.200.help.text
-msgid "m2, mi2, Nmi2, in2, ft2, yd2, ang2, Pica2, Morgen, ar, acre, ha"
-msgstr "m2、mi2、Nmi2、in2、ft2、yd2、ang2、Pica2、Morgen、ar、acre、ha"
+msgid "<emph>m2</emph>, mi2, Nmi2, in2, ft2, yd2, <emph>ang2</emph>, Pica2, Morgen, <emph>ar</emph>, acre, ha"
+msgstr ""
 
 #: 04060116.xhp#par_id3150629.201.help.text
 msgid "Speed"
 msgstr "速度"
 
 #: 04060116.xhp#par_id3159246.202.help.text
-msgid "m/s, m/h, mph, kn, admkn"
-msgstr "m/s、m/h、mph、kn、admkn"
+msgid "<emph>m/s</emph>, <emph>m/sec</emph>, m/h, mph, kn, admkn"
+msgstr ""
+
+#: 04060116.xhp#par_id3150789.201.help.text
+msgid "Information"
+msgstr ""
+
+#: 04060116.xhp#par_id3159899.202.help.text
+msgid "<emph>bit</emph>, <emph>byte</emph>"
+msgstr ""
 
 #: 04060116.xhp#par_id3143277.203.help.text
-msgid "Each unit of measure can be preceded by a prefix character from the following list:"
-msgstr "各単位の前には、次の表の単位記号を追加することができます:"
+msgid "Units of measure in <emph>bold</emph> can be preceded by a prefix character from the following list:"
+msgstr ""
 
 #: 04060116.xhp#par_id3148422.204.help.text
-msgid "Permitted prefix characters"
-msgstr "<emph>使用できる単位記号</emph>"
+msgid "Prefix"
+msgstr ""
 
-#: 04060116.xhp#par_id3149490.205.help.text
-msgid "10^(<0)"
-msgstr "10^(<0)"
+#: 04060116.xhp#par_id3148423.help.text
+msgid "Multiplier"
+msgstr ""
 
-#: 04060116.xhp#par_id3149931.206.help.text
-msgid "d, c, m, u, n, p, f, a, z, y"
-msgstr "d、c、m、u、n、p、f、a、z、y"
+#: 04060116.xhp#par_id3149490.help.text
+msgid "Y (yotta)"
+msgstr ""
 
-#: 04060116.xhp#par_id3149589.207.help.text
-msgid "10^(>0)"
-msgstr "10^(>0)"
+#: 04060116.xhp#par_id3149931.help.text
+msgid "10^24"
+msgstr ""
 
-#: 04060116.xhp#par_id3151248.208.help.text
-msgid "e, h, k, M, G, T, P, E, Z, Y"
-msgstr "e、h、k、M、G、T、P、E、Z、Y"
+#: 04060116.xhp#par_id3149491.help.text
+msgid "Z (zetta)"
+msgstr ""
+
+#: 04060116.xhp#par_id3149932.help.text
+msgid "10^21"
+msgstr ""
+
+#: 04060116.xhp#par_id3149492.help.text
+msgid "E (exa)"
+msgstr ""
+
+#: 04060116.xhp#par_id3149933.help.text
+msgid "10^18"
+msgstr ""
+
+#: 04060116.xhp#par_id3149493.help.text
+msgid "P (peta)"
+msgstr ""
+
+#: 04060116.xhp#par_id3149934.help.text
+msgid "10^15"
+msgstr ""
+
+#: 04060116.xhp#par_id3149494.help.text
+msgid "T (tera)"
+msgstr ""
+
+#: 04060116.xhp#par_id3149935.help.text
+msgid "10^12"
+msgstr ""
+
+#: 04060116.xhp#par_id3149495.help.text
+msgid "G (giga)"
+msgstr ""
+
+#: 04060116.xhp#par_id3149936.help.text
+msgid "10^9"
+msgstr ""
+
+#: 04060116.xhp#par_id3149496.help.text
+msgid "M (mega)"
+msgstr ""
+
+#: 04060116.xhp#par_id3149937.help.text
+msgid "10^6"
+msgstr ""
+
+#: 04060116.xhp#par_id3149497.help.text
+msgid "k (kilo)"
+msgstr ""
+
+#: 04060116.xhp#par_id3149938.help.text
+msgid "10^3"
+msgstr ""
+
+#: 04060116.xhp#par_id3149498.help.text
+msgid "h (hecto)"
+msgstr ""
+
+#: 04060116.xhp#par_id3149939.help.text
+msgid "10^2"
+msgstr ""
+
+#: 04060116.xhp#par_id3149499.help.text
+msgid "e (deca)"
+msgstr ""
+
+#: 04060116.xhp#par_id3149940.help.text
+msgid "10^1"
+msgstr ""
+
+#: 04060116.xhp#par_id3149500.help.text
+msgid "d (deci)"
+msgstr ""
+
+#: 04060116.xhp#par_id3143940.help.text
+msgid "10^-1"
+msgstr ""
+
+#: 04060116.xhp#par_id3149501.help.text
+msgid "c (centi)"
+msgstr ""
+
+#: 04060116.xhp#par_id3149941.help.text
+msgid "10^-2"
+msgstr ""
+
+#: 04060116.xhp#par_id3149502.help.text
+msgid "m (milli)"
+msgstr ""
+
+#: 04060116.xhp#par_id3149942.help.text
+msgid "10^-3"
+msgstr ""
+
+#: 04060116.xhp#par_id3149503.help.text
+msgid "u (micro)"
+msgstr ""
+
+#: 04060116.xhp#par_id3149943.help.text
+msgid "10^-6"
+msgstr ""
+
+#: 04060116.xhp#par_id3149504.help.text
+msgid "n (nano)"
+msgstr ""
+
+#: 04060116.xhp#par_id3149944.help.text
+msgid "10^-9"
+msgstr ""
+
+#: 04060116.xhp#par_id3149505.help.text
+msgid "p (pico)"
+msgstr ""
+
+#: 04060116.xhp#par_id3149945.help.text
+msgid "10^-12"
+msgstr ""
+
+#: 04060116.xhp#par_id3149506.help.text
+msgid "f (femto)"
+msgstr ""
+
+#: 04060116.xhp#par_id3149946.help.text
+msgid "10^-15"
+msgstr ""
+
+#: 04060116.xhp#par_id3149507.help.text
+msgid "a (atto)"
+msgstr ""
+
+#: 04060116.xhp#par_id3149947.help.text
+msgid "10^-18"
+msgstr ""
+
+#: 04060116.xhp#par_id3149508.help.text
+msgid "z (zepto)"
+msgstr ""
+
+#: 04060116.xhp#par_id3149948.help.text
+msgid "10^-21"
+msgstr ""
+
+#: 04060116.xhp#par_id3149509.help.text
+msgid "y (yocto)"
+msgstr ""
+
+#: 04060116.xhp#par_id3149949.help.text
+msgid "10^-24"
+msgstr ""
 
 #: 04060116.xhp#par_id0908200903061174.help.text
 msgid "Information units \"bit\" and \"byte\" may also be prefixed by one of the following IEC 60027-2 / IEEE 1541 prefixes:"
@@ -14387,10 +14526,6 @@ msgstr "<emph>変換元単位</emph> は、変換元の単位です。"
 #: 04060116.xhp#par_id3153790.213.help.text
 msgid "            <emph>ToUnit</emph> is the unit to which conversion is taking place. Both units must be of the same type."
 msgstr "<emph>ToUnit</emph>は変換が行われる単位です。 両方の単位は同じ種類である必要があります。"
-
-#: 04060116.xhp#par_id09022809540918.help.text
-msgid "<link href=\"http://wiki.services.openoffice.org/wiki/Documentation/How_Tos/Calc:_CONVERT_ADD_function\">Current list of CONVERT_ADD units in the OpenOffice.org Wiki.</link>"
-msgstr "<link href=\"http://wiki.services.openoffice.org/wiki/Documentation/How_Tos/Calc:_CONVERT_ADD_function\">CONVERT_ADD 関数の現在の単位リストは OpenOffice.org Wiki にあります。</link>"
 
 #: 04060116.xhp#hd_id3156270.214.help.text
 msgctxt "04060116.xhp#hd_id3156270.214.help.text"
@@ -17024,6 +17159,14 @@ msgstr " 書式を含む"
 msgid "<ahelp hid=\"SC:CHECKBOX:RID_SCPAGE_SORT_OPTIONS:BTN_FORMATS\"> Preserves the current cell formatting.</ahelp>"
 msgstr "<ahelp hid=\"SC:CHECKBOX:RID_SCPAGE_SORT_OPTIONS:BTN_FORMATS\"> セルの現在の書式を保持します。</ahelp>"
 
+#: 12030200.xhp#hd_id3147438.help.text
+msgid "Enable natural sort"
+msgstr ""
+
+#: 12030200.xhp#par_id3149378.help.text
+msgid "<ahelp hid=\"SC:CHECKBOX:RID_SCPAGE_SORT_OPTIONS:BTN_NATURALSORT\">Natural sort is a sort algorithm that sorts string-prefixed numbers based on the value of the numerical element in each sorted number, instead of the traditional way of sorting them as ordinary strings.</ahelp> For instance, let's assume you have a series of values such as, A1, A2, A3, A4, A5, A6, ..., A19, A20, A21. When you put these values into a range of cells and run the sort, it will become A1, A11, A12, A13, ..., A19, A2, A20, A21, A3, A4, A5, ..., A9. While this sorting behavior may make sense to those who understand the underlying sorting mechanism, to the rest of the population it seems completely bizarre, if not outright inconvenient. With the natural sort feature enabled, values such as the ones in the above example get sorted \"properly\", which improves the convenience of sorting operations in general."
+msgstr ""
+
 #: 12030200.xhp#hd_id3153878.10.help.text
 msgid " Copy sort results to:"
 msgstr " 並べ替え結果の貼り付け先"
@@ -19463,14 +19606,12 @@ msgid "<ahelp hid=\"HID_SC_SUBT_FUNC\">Select the mathematical function that you
 msgstr "<ahelp hid=\"HID_SC_SUBT_FUNC\">小計を求めるときに使用する数学関数を選択します。</ahelp>"
 
 #: 12080700.xhp#tit.help.text
-#, fuzzy
 msgid "Show Details (Pivot Table)"
-msgstr "詳細を表示する (データパイロット)"
+msgstr "詳細を表示する (ピボットテーブル)"
 
 #: 12080700.xhp#hd_id3344523.help.text
-#, fuzzy
 msgid "<link href=\"text/scalc/01/12080700.xhp\">Show Details (Pivot Table)</link>"
-msgstr "<link href=\"text/scalc/01/12080700.xhp\">詳細を表示する (データパイロット)</link>"
+msgstr "<link href=\"text/scalc/01/12080700.xhp\">詳細を表示する (ピボットテーブル)</link>"
 
 #: 12080700.xhp#par_id871303.help.text
 #, fuzzy
@@ -20937,8 +21078,8 @@ msgid "Choose <switchinline select=\"sys\"><caseinline select=\"MAC\">%PRODUCTNA
 msgstr "<switchinline select=\"sys\"><caseinline select=\"MAC\">%PRODUCTNAME → 設定</caseinline><defaultinline>ツール → オプション</defaultinline></switchinline> → <link href=\"text/shared/optionen/01060500.xhp\" name=\"表計算ドキュメント → 計算式\">%PRODUCTNAME Calc - 計算式</link> を選択して、同じエントリを検索するときの $[officename] Calc の動作を定義します。"
 
 #: 04060101.xhp#par_id3882869.help.text
-msgid "See also the Wiki page about <link href=\"http://wiki.services.openoffice.org/wiki/Documentation/How_Tos/Conditional_Counting_and_Summation\">Conditional Counting and Summation</link>."
-msgstr "<link href=\"http://wiki.services.openoffice.org/wiki/Documentation/How_Tos/Conditional_Counting_and_Summation\">条件付き計算と合計</link> については、Wiki ページも参照してください。"
+msgid "See also the Wiki page about <link href=\"http://wiki.documentfoundation.org/Documentation/How_Tos/Conditional_Counting_and_Summation\">Conditional Counting and Summation</link>."
+msgstr ""
 
 #: 04060101.xhp#bm_id3150882.help.text
 msgid "<bookmark_value>DCOUNT function</bookmark_value>         <bookmark_value>counting rows;with numeric values</bookmark_value>"
@@ -21589,10 +21730,9 @@ msgid "<ahelp hid=\"SC:LISTBOX:RID_SCDLG_DAPIDATA:LB_OBJTYPE\">Click the source 
 msgstr "<ahelp hid=\"SC:LISTBOX:RID_SCDLG_DAPIDATA:LB_OBJTYPE\">選択したデータソースのソースの種類を選択します。</ahelp>「テーブル」、「クエリー」、「SQL」、および「SQL [Native]」が選択できます。"
 
 #: 12090101.xhp#par_id3147348.11.help.text
-#, fuzzy
 msgctxt "12090101.xhp#par_id3147348.11.help.text"
 msgid "<link href=\"text/scalc/01/12090102.xhp\" name=\"Pivot table dialog\">Pivot table dialog</link>"
-msgstr "<link href=\"text/scalc/01/12090102.xhp\" name=\"データパイロットダイアログ\">データパイロットダイアログ</link>"
+msgstr "<link href=\"text/scalc/01/12090102.xhp\" name=\"ピボットテーブルダイアログ\">ピボットテーブルダイアログ</link>"
 
 #: 12010100.xhp#tit.help.text
 msgctxt "12010100.xhp#tit.help.text"
@@ -23592,8 +23732,8 @@ msgid "            <item type=\"input\">=WEIBULL(2;1;1;1)</item> returns 0.86."
 msgstr "<item type=\"input\">=WEIBULL(2;1;1;1)</item> は、0.86 を返します。"
 
 #: 04060185.xhp#par_id0305200911372899.help.text
-msgid "See also the <link href=\"http://wiki.services.openoffice.org/wiki/Documentation/How_Tos/Calc:_WEIBULL_function\">Wiki page</link>."
-msgstr "<link href=\"http://wiki.services.openoffice.org/wiki/Documentation/How_Tos/Calc:_WEIBULL_function\">Wiki page</link>を見てください。"
+msgid "See also the <link href=\"http://wiki.documentfoundation.org/Documentation/How_Tos/Calc:_WEIBULL_function\">Wiki page</link>."
+msgstr ""
 
 #: 04070000.xhp#tit.help.text
 msgid "Names"
@@ -23739,9 +23879,8 @@ msgid "Data Field Options"
 msgstr "データフィールドオプション"
 
 #: 12090106.xhp#bm_id711386.help.text
-#, fuzzy
 msgid "<bookmark_value>hiding;data fields, from calculations in pivot table</bookmark_value><bookmark_value>display options in pivot table</bookmark_value><bookmark_value>sorting;options in pivot table</bookmark_value><bookmark_value>data field options for pivot table</bookmark_value>"
-msgstr "<bookmark_value>除外;データフィールド、データパイロットの計算から</bookmark_value><bookmark_value>データパイロットの表示オプション</bookmark_value><bookmark_value>並べ替え;データパイロットのオプション</bookmark_value><bookmark_value>データパイロットのデータフィールドオプション</bookmark_value>"
+msgstr "<bookmark_value>除外;データフィールド、ピボットテーブルの計算から</bookmark_value><bookmark_value>ピボットテーブルの表示オプション</bookmark_value><bookmark_value>並べ替え;ピボットテーブルのオプション</bookmark_value><bookmark_value>ピボットテーブルのデータフィールドオプション</bookmark_value>"
 
 #: 12090106.xhp#par_idN10542.help.text
 msgctxt "12090106.xhp#par_idN10542.help.text"
@@ -23749,9 +23888,8 @@ msgid "Data Field Options"
 msgstr "データフィールドオプション"
 
 #: 12090106.xhp#par_idN10546.help.text
-#, fuzzy
 msgid "You can specify additional options for column, row, and page data fields in the <link href=\"text/scalc/01/12090105.xhp\">pivot table</link>."
-msgstr "<link href=\"text/scalc/01/12090105.xhp\">データパイロット</link>では、列、行、およびページデータフィールドの追加オプションを指定できます。"
+msgstr "<link href=\"text/scalc/01/12090105.xhp\">ピボットテーブル</link>では、列、行、およびページデータフィールドの追加オプションを指定できます。"
 
 #: 12090106.xhp#par_idN10557.help.text
 msgctxt "12090106.xhp#par_idN10557.help.text"
@@ -23810,9 +23948,8 @@ msgid "Empty line after each item"
 msgstr "各項目の後に空白行"
 
 #: 12090106.xhp#par_idN10597.help.text
-#, fuzzy
 msgid "<ahelp hid=\"1495385090\">Adds an empty row after the data for each item in the pivot table.</ahelp>"
-msgstr "<ahelp hid=\"1495385090\">データパイロット表の項目ごとに、空の行をデータの後に追加します。</ahelp>"
+msgstr "<ahelp hid=\"1495385090\">ピボットテーブルの項目ごとに、空の行をデータの後に追加します。</ahelp>"
 
 #: 12090106.xhp#par_idN1059A.help.text
 msgid "Show automatically"
@@ -23868,9 +24005,8 @@ msgid "Hierarchy"
 msgstr "階層"
 
 #: 12090106.xhp#par_idN105C8.help.text
-#, fuzzy
 msgid "<ahelp hid=\"1495387657\">Select the hierarchy that you want to use. The pivot table must be based on an external source data that contains data hierarchies.</ahelp>"
-msgstr "<ahelp hid=\"1495387657\">使用する階層を選択します。データパイロットは、データ階層を含む外部ソースデータをベースとする必要があります。</ahelp>"
+msgstr "<ahelp hid=\"1495387657\">使用する階層を選択します。ピボットテーブルは、データ階層を含む外部ソースデータをベースとする必要があります。</ahelp>"
 
 #: 04070200.xhp#tit.help.text
 msgctxt "04070200.xhp#tit.help.text"
@@ -24006,9 +24142,8 @@ msgid "Select Source"
 msgstr "ソースの選択"
 
 #: 12090100.xhp#par_id3145119.2.help.text
-#, fuzzy
 msgid "<ahelp hid=\".uno:DataDataPilotRun\">Opens a dialog where you can select the source for your pivot table, and then create your table.</ahelp>"
-msgstr "<ahelp hid=\".uno:DataDataPilotRun\">データパイロット表のソースを選択して、ユーザー独自の表を作成するダイアログを開きます。</ahelp>"
+msgstr "<ahelp hid=\".uno:DataDataPilotRun\">ピボットテーブルのソースを選択して、ユーザー独自の表を作成するダイアログを開きます。</ahelp>"
 
 #: 12090100.xhp#hd_id3154760.5.help.text
 msgctxt "12090100.xhp#hd_id3154760.5.help.text"
@@ -24051,10 +24186,9 @@ msgid "<ahelp hid=\".\">Opens the <emph>External Source</emph> dialog where you 
 msgstr "<ahelp hid=\".\"><emph>オートフォーマット</emph> ダイアログを開くと、あらかじめ用意された中から表のレイアウトを選択できます。</ahelp>"
 
 #: 12090100.xhp#par_idN10670.help.text
-#, fuzzy
 msgctxt "12090100.xhp#par_idN10670.help.text"
 msgid "<link href=\"text/scalc/01/12090102.xhp\" name=\"Pivot table dialog\">Pivot table dialog</link>"
-msgstr "<link href=\"text/scalc/01/12090102.xhp\" name=\"データパイロットダイアログ\">データパイロットダイアログ</link>"
+msgstr "<link href=\"text/scalc/01/12090102.xhp\" name=\"ピボットテーブルダイアログ\">ピボットテーブルダイアログ</link>"
 
 #: 12050200.xhp#tit.help.text
 msgctxt "12050200.xhp#tit.help.text"
@@ -25037,14 +25171,12 @@ msgid "<link href=\"text/scalc/01/12090200.xhp\" name=\"Refresh\">Refresh</link>
 msgstr " <link href=\"text/scalc/01/12090200.xhp\" name=\"更新\">更新</link>"
 
 #: 12090200.xhp#par_id3149456.2.help.text
-#, fuzzy
 msgid "<ahelp hid=\".uno:RecalcPivotTable\">Updates the pivot table.</ahelp>"
-msgstr "<ahelp hid=\".uno:RecalcPivotTable\">データパイロット表を更新します。</ahelp>"
+msgstr "<ahelp hid=\".uno:RecalcPivotTable\">ピボットテーブルを更新します。</ahelp>"
 
 #: 12090200.xhp#par_id3150400.3.help.text
-#, fuzzy
 msgid "After you import an Excel spreadsheet that contains a pivot table, click in the table, and then choose <emph>Data - Pivot Table - Refresh</emph>."
-msgstr "回転表を含む Excel の表計算ドキュメントをインポートした後には、その表をクリックしてから、<emph>データ → データパイロット → 更新</emph> で行ないます。"
+msgstr "回転表を含む Excel の表計算ドキュメントをインポートした後には、その表をクリックしてから、<emph>データ → ピボットテーブル → 更新</emph> で行ないます。"
 
 #: 05020000.xhp#tit.help.text
 msgctxt "05020000.xhp#tit.help.text"
