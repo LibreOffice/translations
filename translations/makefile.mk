@@ -71,7 +71,7 @@ PYTHONCMD=$(WRAPCMD) $(PYTHON)
 $(MISC)/sdf-template/en-US.sdf :
     -$(MKDIRHIER) $(MISC)/sdf-template
     -$(MKDIRHIER) $(MISC)/sdf-l10n
-.IF "$(OS)" == "WNT" 
+.IF "$(OS_FOR_BUILD)"=="WNT"
     $(SOLARSRC)/solenv/bin/localize -f $(shell cygpath -m $(SRC_ROOT)/$(PRJNAME)/$@)
 .ELSE
     $(SOLARSRC)/solenv/bin/localize -f $(SRC_ROOT)/$(PRJNAME)/$@
