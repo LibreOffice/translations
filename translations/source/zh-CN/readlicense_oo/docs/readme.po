@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: http://qa.openoffice.org/issues/enter_bug.cgi?comment=&component=l10n&form_name=enter_issue&short_desc=Localization+issue+in+file%3A+readlicense_oo%2Fdocs%2Freadme.oo&subcomponent=ui\n"
-"POT-Creation-Date: 2012-01-05 10:51+0200\n"
-"PO-Revision-Date: 2011-11-26 05:54+0200\n"
+"POT-Creation-Date: 2012-01-11 13:59+0200\n"
+"PO-Revision-Date: 2012-01-11 20:04+0200\n"
 "Last-Translator: Dean <xslidian@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: zh_CN\n"
@@ -17,7 +17,7 @@ msgstr ""
 
 #: readme.xrm#Welcome.Welcome.readmeitem.text
 msgid "${PRODUCTNAME} ${PRODUCTVERSION} ReadMe"
-msgstr "${PRODUCTNAME} ${PRODUCTVERSION} ReadMe"
+msgstr "${PRODUCTNAME} ${PRODUCTVERSION} 自述文档"
 
 #: readme.xrm#LatestUpdates.LatestUpdates.readmeitem.text
 msgid "For latest updates to this readme file, see <a href=\"http://www.libreoffice.org/welcome/readme.html\">http://www.libreoffice.org/welcome/readme.html</a>"
@@ -104,30 +104,20 @@ msgid "1024x768 resolution (higher resolution recommended), at least 256 colors"
 msgstr "1024x768 分辨率（建议使用更高分辨率），至少 256 色"
 
 #: readme.xrm#edssc3d.edssc3d.readmeitem.text
-msgctxt "readme.xrm#edssc3d.edssc3d.readmeitem.text"
 msgid "Please be aware that administrator rights are needed for the installation process."
-msgstr "请注意，安装过程中需要拥有管理员权限。"
+msgstr "请注意，安装过程需要拥有管理员权限。"
 
 #: readme.xrm#MSOReg1.MSOReg1.readmeitem.text
 msgid "Registration of ${PRODUCTNAME} as default application for Microsoft Office formats can be forced or suppressed by using the following command line switches with the installer:"
 msgstr "通过使用下列含有该安装程序的命令行开关项，可以强制或禁止将 ${PRODUCTNAME} 注册为 Microsoft Office 格式默认的应用程序："
 
 #: readme.xrm#MSOReg2.MSOReg2.readmeitem.text
-msgid "<tt>/msoreg=1</tt> will force registration of ${PRODUCTNAME} as default application for Microsoft Office formats."
-msgstr "<tt>/msoreg=1</tt> 强制将 ${PRODUCTNAME} 注册为 Microsoft Office 格式默认的应用程序。"
+msgid "<tt>REGISTER_ALL_MSO_TYPES=1</tt> will force registration of ${PRODUCTNAME} as default application for Microsoft Office formats."
+msgstr "<tt>REGISTER_ALL_MSO_TYPES=1</tt> 可强制将 ${PRODUCTNAME} 注册为 Microsoft Office 格式的默认应用程序。"
 
 #: readme.xrm#MSOReg3.MSOReg3.readmeitem.text
-msgid "<tt>/msoreg=0</tt> will suppress registration of ${PRODUCTNAME} as default application for Microsoft Office formats."
-msgstr "<tt>/msoreg=0</tt> 禁止将 ${PRODUCTNAME} 注册为 Microsoft Office 格式默认的应用程序。"
-
-#: readme.xrm#DLLA1.DLLA1.readmeitem.text
-msgid "If you perform an administrative installation using setup /a, you need to make sure that the file msvc90.dll is installed on the system. This file is required for ${PRODUCTNAME} to start after an administrative installation. You can get the file from <a href=\"http://www.microsoft.com/downloads/details.aspx?familyid=9B2DA534-3E03-4391-8A4D-074B9F2BC1BF\">http://www.microsoft.com/downloads/details.aspx?familyid=9B2DA534-3E03-4391-8A4D-074B9F2BC1BF</a>"
-msgstr "如果您使用 setup /a 执行管理安装，则需要确保系统上安装了 msvc90.dll 文件。${PRODUCTNAME} 需要此文件才能在管理安装后启动。您可以从 <a href=\"http://www.microsoft.com/downloads/details.aspx?familyid=9B2DA534-3E03-4391-8A4D-074B9F2BC1BF\">http://www.microsoft.com/downloads/details.aspx?familyid=9B2DA534-3E03-4391-8A4D-074B9F2BC1BF</a> 获取该文件"
-
-#: readme.xrm#AdminNeeded.AdminNeeded.readmeitem.text
-msgctxt "readme.xrm#AdminNeeded.AdminNeeded.readmeitem.text"
-msgid "Please be aware that administrator rights are needed for the installation process."
-msgstr "请注意，安装过程中需要拥有管理员权限。"
+msgid "<tt>REGISTER_NO_MSO_TYPES=1</tt> will suppress registration of ${PRODUCTNAME} as default application for Microsoft Office formats."
+msgstr "<tt>REGISTER_NO_MSO_TYPES=1</tt> 可阻止将 ${PRODUCTNAME} 注册为 Microsoft Office 格式的默认应用程序。"
 
 #: readme.xrm#s2we10.s2we10.readmeitem.text
 msgid "As a general rule, you are recommended to install ${PRODUCTNAME} via the installation methods recommended by your particular Linux distribution (such as the Ubuntu Software Center, in the case of Ubuntu Linux). This is because it is usually the simplest way to obtain an installation that is optimally integrated into your system. Indeed, ${PRODUCTNAME} may well be already installed by default when you originally install your Linux operating system."
@@ -186,8 +176,9 @@ msgid "Installation of ${PRODUCTNAME} on Debian/Ubuntu-based Linux systems"
 msgstr "在基于 Debian/Ubuntu 的 Linux 系统上安装 ${PRODUCTNAME}"
 
 #: readme.xrm#debianinstall1.debianinstall1.readmeitem.text
-msgid "If you have a previous version of ${PRODUCTNAME} already installed, then you will need to de-install it before proceeding further. For instructions on how to do that, please read the section below entitled Deinstallation of a Previous Version of ${PRODUCTNAME}. For instructions on how to install a language pack (after having installed the US English version of ${PRODUCTNAME}), please read the section below entitled Installing a Language Pack."
-msgstr "如果您已安装 ${PRODUCTNAME} 旧版本，需要先卸载才能继续。关于如何卸载的说明请阅读下文中题为“卸载旧版 ${PRODUCTNAME}”的段落。关于如何安装语言包（在安装美式英语版的 ${PRODUCTNAME} 后），请阅读下文中题为“安装语言包”的段落。"
+msgctxt "readme.xrm#debianinstall1.debianinstall1.readmeitem.text"
+msgid "If you have a previous version of ${PRODUCTNAME} already installed, then you will need to de-install it before proceeding further. For instructions on how to install a language pack (after having installed the US English version of ${PRODUCTNAME}), please read the section below entitled Installing a Language Pack."
+msgstr "如果安装过先前版本的 ${PRODUCTNAME}，则需要卸载后再继续。关于如何 (在安装美式英语版 ${PRODUCTNAME} 后) 安装语言包的说明，请阅读下方题为“安装语言包”的段落。"
 
 #: readme.xrm#debianinstall2.debianinstall2.readmeitem.text
 msgctxt "readme.xrm#debianinstall2.debianinstall2.readmeitem.text"
@@ -236,8 +227,9 @@ msgid "Installation of ${PRODUCTNAME} on Fedora, Suse, Mandriva and other Linux 
 msgstr "在 Fedora、Suse、Mandriva 及其他使用 RPM 软件包的 Linux 系统上的安装 ${PRODUCTNAME}"
 
 #: readme.xrm#rpminstall1.rpminstall1.readmeitem.text
-msgid "If you have a previous version of ${PRODUCTNAME} already installed, then you will need to de-install it before proceeding further. For instructions on how to do that, please read the section below entitled De-installation of a Previous Version of ${PRODUCTNAME}. For instructions on how to install a language pack (after having installed the US English version of ${PRODUCTNAME}), please read the section below entitled Installing a Language Pack."
-msgstr "如果您已安装 ${PRODUCTNAME} 旧版本，需要先卸载才能继续。关于如何卸载的说明请阅读下文中题为“卸载旧版 ${PRODUCTNAME}”的段落。关于如何安装语言包（在安装美式英语版的 ${PRODUCTNAME} 后），请阅读下文中题为“安装语言包”的段落。"
+msgctxt "readme.xrm#rpminstall1.rpminstall1.readmeitem.text"
+msgid "If you have a previous version of ${PRODUCTNAME} already installed, then you will need to de-install it before proceeding further. For instructions on how to install a language pack (after having installed the US English version of ${PRODUCTNAME}), please read the section below entitled Installing a Language Pack."
+msgstr "如果安装过先前版本的 ${PRODUCTNAME}，则需要卸载后再继续。关于如何 (在安装美式英语版 ${PRODUCTNAME} 后) 安装语言包的说明，请阅读下方题为“安装语言包”的段落。"
 
 #: readme.xrm#rpminstall2.rpminstall2.readmeitem.text
 msgctxt "readme.xrm#rpminstall2.rpminstall2.readmeitem.text"
