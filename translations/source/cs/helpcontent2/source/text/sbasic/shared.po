@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: http://qa.openoffice.org/issues/enter_bug.cgi?comment=&component=l10n&form_name=enter_issue&short_desc=Localization+issue+in+file%3A+helpcontent2%2Fsource%2Ftext%2Fsbasic%2Fshared.oo&subcomponent=ui\n"
 "POT-Creation-Date: 2012-01-11 13:59+0200\n"
-"PO-Revision-Date: 2012-01-15 20:28+0200\n"
+"PO-Revision-Date: 2012-01-18 00:21+0200\n"
 "Last-Translator: Jindřich <khagaroth@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: cs\n"
@@ -93,7 +93,7 @@ msgstr "sVar = LTrim(Str(iVar))"
 
 #: 03120103.xhp#par_id3154924.16.help.text
 msgid "Msgbox sVar & chr(13) & Str(iVar)"
-msgstr "Msgbox sVar & \" \" & dVar"
+msgstr "Msgbox sVar & chr(13) & Str(iVar)"
 
 #: 03120103.xhp#par_id3152811.17.help.text
 msgctxt "03120103.xhp#par_id3152811.17.help.text"
@@ -924,7 +924,7 @@ msgstr "<link href=\"text/sbasic/shared/03120300.xhp\" name=\"Úprava obsahu ře
 
 #: 03120300.xhp#par_id3149178.2.help.text
 msgid "The following functions edit, format, and align the contents of strings. Use the & operator to concatenate strings."
-msgstr "Následující funkce upravují, formátují a zarovnávají obsah řetězce. Řetězce sjednotíte pomocí operátoru &."
+msgstr "Následující funkce upravují, formátují a zarovnávají obsah řetězce. Řetězce spojíte pomocí operátoru &."
 
 #: 03102100.xhp#tit.help.text
 msgid "Dim Statement [Runtime]"
@@ -6181,7 +6181,7 @@ msgstr "Proměnné typu Integer"
 
 #: 01020100.xhp#par_id3146966.41.help.text
 msgid "Integer variables range from -32768 to 32767. If you assign a floating-point value to an integer variable, the decimal places are rounded to the next integer. Integer variables are rapidly calculated in procedures and are suitable for counter variables in loops. An integer variable only requires two bytes of memory. \"%\" is the type-declaration character."
-msgstr "Proměnné typu Integer (celá čísla) mohou být v rozsahu od -32768 do 32767. Pokud celočíselné proměnné přiřadíte hodnotu s desetinnou čárkou, zaokrouhlí se na nejbližší celé číslo. Celočíselné proměnné se počítají velmi rychle a jsou vhodné pro počítadla ve smyčkách. Proměnná typu integer vyžaduje v paměti jen dva bajty. Znak typové deklarace je \"%\"."
+msgstr "Proměnné typu integer (celá čísla) mají rozsah od -32768 do 32767. Pokud celočíselné proměnné přiřadíte hodnotu s desetinnou čárkou, zaokrouhlí se na nejbližší celé číslo. Celočíselné proměnné se počítají velmi rychle a jsou vhodné pro proměnné čítačů ve smyčkách. Proměnná typu integer vyžaduje v paměti jen dva bajty. Znak typové deklarace je \"%\"."
 
 #: 01020100.xhp#par_id3153810.43.help.text
 msgid "Dim Variable%"
@@ -6197,7 +6197,7 @@ msgstr "Proměnné typu Long Integer"
 
 #: 01020100.xhp#par_id3151193.46.help.text
 msgid "Long integer variables range from -2147483648 to 2147483647. If you assign a floating-point value to a long integer variable, the decimal places are rounded to the next integer. Long integer variables are rapidly calculated in procedures and are suitable for counter variables in loops for large values. A long integer variable requires four bytes of memory. \"&\" is the type-declaration character."
-msgstr "Proměnné typu Long integer (dlouhá celá čísla) mohou být v rozsahu od 2147483648  do 2147483647. Pokud dlouhé celočíselné proměnné přiřadíte hodnotu s desetinnou čárkou, zaokrouhlí se na nejbližší celé číslo. Celočíselné proměnné se počítají velmi rychle a jsou vhodné pro počítadla ve smyčkách. Proměnná typu Long integer vyžaduje v paměti čtyři bajty. Znak typové deklarace je \"&\"."
+msgstr "Proměnné typu long integer (dlouhá celá čísla) mají rozsah od -2147483648 do 2147483647. Pokud dlouhé celočíselné proměnné přiřadíte hodnotu s desetinnou čárkou, zaokrouhlí se na nejbližší celé číslo. Dlouhé celočíselné proměnné se počítají velmi rychle a jsou vhodné pro proměnné čítačů ve smyčkách. Proměnná typu long integer vyžaduje v paměti čtyři bajty. Znak typové deklarace je \"&\"."
 
 #: 01020100.xhp#par_id3154708.48.help.text
 msgid "Dim Variable&"
@@ -18370,7 +18370,7 @@ msgstr "Syntaxe:"
 
 #: 03090202.xhp#par_id3148473.4.help.text
 msgid "For counter=start To end [Step step]"
-msgstr "For Počítadlo=Začátek To Konec [Step Krok]"
+msgstr "For čítač=začátek To konec [Step krok]"
 
 #: 03090202.xhp#par_id3156024.5.help.text
 msgctxt "03090202.xhp#par_id3156024.5.help.text"
@@ -18388,7 +18388,7 @@ msgstr "blok příkazů"
 
 #: 03090202.xhp#par_id3153897.8.help.text
 msgid "Next [counter]"
-msgstr "Next [Počítadlo]"
+msgstr "Next [čítač]"
 
 #: 03090202.xhp#hd_id3150400.9.help.text
 msgid "Variables:"
@@ -18396,7 +18396,7 @@ msgstr "Proměnné:"
 
 #: 03090202.xhp#par_id3150358.10.help.text
 msgid "<emph>Counter:</emph> Loop counter initially assigned the value to the right of the equal sign (start). Only numeric variables are valid. The loop counter increases or decreases according to the variable Step until End is passed."
-msgstr "<emph>Počítadlo:</emph> Počítadlu smyčky se původně přiřadí hodnota vpravo od rovnítka (Začátek). Jsou platné jen číselné hodnoty. Počítadlo smyčky se zvyšuje nebo snižuje podle proměnné Krok, než dosáhne proměnné Konec."
+msgstr "<emph>Čítač:</emph> Čítači smyčky se na začátku přiřadí hodnota vpravo od rovnítka (začátek). Platné jsou pouze číselné proměnné. Čítač smyčky se zvyšuje nebo snižuje podle proměnné Krok, dokud nedosáhne hodnoty Konec."
 
 #: 03090202.xhp#par_id3152455.11.help.text
 msgid "<emph>Start:</emph> Numeric variable that defines the initial value at the beginning of the loop."
@@ -18408,7 +18408,7 @@ msgstr "<emph>Konec:</emph> Číselná proměnná určující konečnou hodnotu 
 
 #: 03090202.xhp#par_id3156281.13.help.text
 msgid "<emph>Step:</emph> Sets the value by which to increase or decrease the loop counter. If Step is not specified, the loop counter is incremented by 1. In this case, End must be greater than Start. If you want to decrease Counter, End must be less than Start, and Step must be assigned a negative value."
-msgstr "<emph>Krok:</emph> Nastaví hodnotu, o kterou se zvyšuje nebo snižuje počítadlo smyčky. Pokud není Krok určen, zvyšuje se počítadlo o 1. V tom případě musí být Konec větší než Začátek. Pokud chcete počítadlo snižovat, musí být Konec nižší než Začátek a krok musí mít zápornou hodnotu."
+msgstr "<emph>Krok:</emph> Nastaví hodnotu, o kterou se zvyšuje nebo snižuje čítač smyčky. Pokud není Krok určen, zvyšuje se čítač o 1. V tom případě musí být Konec větší než Začátek. Pokud chcete čítač snižovat, musí být Konec nižší než Začátek a Krok musí mít zápornou hodnotu."
 
 #: 03090202.xhp#par_id3154684.14.help.text
 msgid "The <emph>For...Next</emph> loop repeats all of the statements in the loop for the number of times that is specified by the parameters."
@@ -18416,7 +18416,7 @@ msgstr "Smyčka <emph>For...Next</emph> provádí všechny příkazy ve smyčce 
 
 #: 03090202.xhp#par_id3147287.15.help.text
 msgid "As the counter variable is decreased, $[officename] Basic checks if the end value has been reached. As soon as the counter passes the end value, the loop automatically ends."
-msgstr "Při snižování nebo zvyšování počítadla kontroluje $[officename] Basic, zda již přesáhlo koncovou hodnotu. Jakmile počítadlo dosáhne nebo překročí koncovou hodnotu, smyčka automaticky skončí."
+msgstr "Při snižování nebo zvyšování čítače kontroluje $[officename] Basic, zda již přesáhlo koncovou hodnotu. Jakmile čítač dosáhne nebo překročí koncovou hodnotu, smyčka automaticky skončí."
 
 #: 03090202.xhp#par_id3159154.16.help.text
 msgid "It is possible to nest <emph>For...Next</emph> statements. If you do not specify a variable following the <emph>Next</emph> statement, <emph>Next</emph> automatically refers to the most recent <emph>For</emph> statement."
@@ -18428,7 +18428,7 @@ msgstr "Pokud určíte krok 0, příkazy mezi <emph>For</emph> a <emph>Next</emp
 
 #: 03090202.xhp#par_id3155854.18.help.text
 msgid "When counting down the counter variable, $[officename] Basic checks for overflow or underflow. The loop ends when Counter exceeds End (positive Step value) or is less than End (negative Step value)."
-msgstr "Při snižování či zvyšování počítadla kontroluje $[officename] Basic přetečení nebo podtečení. Smyčka skončí, když Počítadlo překročí Konec (kladný Krok) nebo je nižší než Konec (záporný Krok)."
+msgstr "Při snižování či zvyšování čítače kontroluje $[officename] Basic přetečení nebo podtečení. Smyčka skončí, když Počítadlo překročí Konec (kladný Krok) nebo je nižší než Konec (záporný Krok)."
 
 #: 03090202.xhp#par_id3145273.19.help.text
 msgid "Use the <emph>Exit For</emph> statement to exit the loop unconditionally. This statement must be within a <emph>For...Next</emph> loop. Use the <emph>If...Then</emph> statement to test the exit condition as follows:"
@@ -23278,7 +23278,7 @@ msgstr "Znaky ve formátovacím kódu, které mají zvláštní význam, lze jak
 
 #: 03120301.xhp#par_id3155411.28.help.text
 msgid "Characters that must be preceded by a backslash in the format code in order to be displayed as literal characters are date- and time-formatting characters (a, c, d, h, m, n, p, q, s, t, w, y, /, :), numeric-formatting characters (#, 0, %, E, e, comma, period), and string-formatting characters (@, &, <, >, !)."
-msgstr "Znaky, před které musíte přidat zpětné lomítko, aby se zobrazily přímo jako znaky jsou formátovací znaky pro datum a čas (a, c, d, h, m, n, p, q, s, t, w, y, /, :), formátovací znaky pro čísla (#, 0, %, E, e, čárka, tečka) a formátovací znaky pro řetězce (@, &, <, >, !)."
+msgstr "Znaky, před které musíte přidat zpětné lomítko, aby se zobrazily přímo jako znaky, jsou formátovací znaky pro datum a čas (a, c, d, h, m, n, p, q, s, t, w, y, /, :), formátovací znaky pro čísla (#, 0, %, E, e, čárka, tečka) a formátovací znaky pro řetězce (@, &, <, >, !)."
 
 #: 03120301.xhp#par_id3145749.30.help.text
 msgid "You can also use the following predefined number formats. Except for \"General Number\", all of the predefined format codes return the number as a decimal number with two decimal places."
