@@ -68,23 +68,22 @@ PYTHONCMD=$(WRAPCMD) $(PYTHON)
     all_languages:=$(WITH_LANG:s/en-US//)
 .ENDIF			# "$(WITH_LANG)" == "ALL"
 
-$(MISC)/sdf-template/en-US.sdf :
-    -$(MKDIRHIER) $(MISC)/sdf-template
-    -$(MKDIRHIER) $(MISC)/sdf-l10n
-.IF "$(OS_FOR_BUILD)"=="WNT"
-    $(SRC_ROOT)/solenv/bin/localize -f $(shell cygpath -m $(SRC_ROOT)/$(PRJNAME)/$@)
-.ELSE
-    $(SRC_ROOT)/solenv/bin/localize -f $(SRC_ROOT)/$(PRJNAME)/$@
-.ENDIF                  # "$(OS)" == "WNT" 
+$(MISC)/sdf-template/en-US.sdf .ERRREMOVE : $(SOLARBINDIR)/cfgex \
+        $(SOLARBINDIR)/helpex $(SOLARBINDIR)/localize $(SOLARBINDIR)/propex \
+        $(SOLARBINDIR)/transex3 $(SOLARBINDIR)/ulfex $(SOLARBINDIR)/xrmex
+    $(MKDIRHIER) $(@:d)
+    $(LOCALIZE) $(SRC_ROOT) $@
 
 pot : $(MISC)/sdf-template/en-US.sdf
     $(OO2PO) -P -i $< -o $(MISC)/pot
     $(PERL) $(SOLARBINDIR)/addkeyid2pot.pl $(MISC)/pot
 
 $(MISC)/sdf-l10n/%.sdf : $(MISC)/sdf-template/en-US.sdf
+    $(MKDIRHIER) $(@:d)
     $(PYTHONCMD) $(SOLARBINDIR)/po2lo --skipsource -i $(PRJ)/source/$(@:b) -t $(MISC)/sdf-template/en-US.sdf -o $@ -l $(@:b)
 
 $(MISC)/sdf-l10n/qtz.sdf : $(MISC)/sdf-template/en-US.sdf
+    $(MKDIRHIER) $(@:d)
     $(PERL) $(SOLARBINDIR)/keyidGen.pl $< $@
 
 $(MISC)/merge.done : $(foreach,i,$(all_languages) $(MISC)/sdf-l10n/$i.sdf) $(MISC)/sdf-l10n/qtz.sdf
