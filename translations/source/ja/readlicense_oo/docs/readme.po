@@ -3,9 +3,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: http://qa.openoffice.org/issues/enter_bug.cgi?comment=&component=l10n&form_name=enter_issue&short_desc=Localization+issue+in+file%3A+readlicense_oo%2Fdocs%2Freadme.oo&subcomponent=ui\n"
-"POT-Creation-Date: 2011-11-26 00:04+0200\n"
-"PO-Revision-Date: 2011-05-07 17:07+0200\n"
-"Last-Translator: ikuya <ikuya@fruitsbasket.info>\n"
+"POT-Creation-Date: 2012-01-21 16:00+0200\n"
+"PO-Revision-Date: 2012-01-12 18:01+0200\n"
+"Last-Translator: Ikuya <ikuya@fruitsbasket.info>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
@@ -57,7 +57,7 @@ msgstr "インストールに関する注記"
 
 #: readme.xrm#javaneeded.javaneeded.readmeitem.text
 msgid "${PRODUCTNAME} requires a recent version of Java Runtime Environment (JRE) for full functionality. JRE is not part of the ${PRODUCTNAME} installation package, it should be installed separately."
-msgstr ""
+msgstr "${PRODUCTNAME} のすべての機能を使うにはJava 実行環境 (JRE) の最近のバージョンが必要です。JREは ${PRODUCTNAME} には含まれていないので、別途インストールする必要があります。"
 
 #: readme.xrm#sdfsdfgf42r.sdfsdfgf42r.readmeitem.text
 msgid "System Requirements"
@@ -104,7 +104,6 @@ msgid "1024x768 resolution (higher resolution recommended), at least 256 colors"
 msgstr "グラフィックモニター解像度 1024x768 以上、256 色以上"
 
 #: readme.xrm#edssc3d.edssc3d.readmeitem.text
-msgctxt "readme.xrm#edssc3d.edssc3d.readmeitem.text"
 msgid "Please be aware that administrator rights are needed for the installation process."
 msgstr "注: インストールを実行するには、管理者権限が必要です。"
 
@@ -113,21 +112,12 @@ msgid "Registration of ${PRODUCTNAME} as default application for Microsoft Offic
 msgstr "Microsoft Office 形式のデフォルトアプリケーションとして ${PRODUCTNAME} を登録するか否かは、次のようにコマンドラインでインストーラのオプションを使用して指定できます。"
 
 #: readme.xrm#MSOReg2.MSOReg2.readmeitem.text
-msgid "<tt>/msoreg=1</tt> will force registration of ${PRODUCTNAME} as default application for Microsoft Office formats."
-msgstr "<tt>/msoreg=1</tt> は、Microsoft Office 形式のデフォルトアプリケーションとして ${PRODUCTNAME} の登録を強制的に行います。"
+msgid "<tt>REGISTER_ALL_MSO_TYPES=1</tt> will force registration of ${PRODUCTNAME} as default application for Microsoft Office formats."
+msgstr "<tt>REGISTER_ALL_MSO_TYPES=1</tt> を指定すると、強制的に ${PRODUCTNAME} をMicrosoft Officeフォーマットの既定アプリケーションとして登録します。"
 
 #: readme.xrm#MSOReg3.MSOReg3.readmeitem.text
-msgid "<tt>/msoreg=0</tt> will suppress registration of ${PRODUCTNAME} as default application for Microsoft Office formats."
-msgstr "<tt>/msoreg=0</tt> は、Microsoft Office 形式のデフォルトアプリケーションとして ${PRODUCTNAME} の登録を行いません。"
-
-#: readme.xrm#DLLA1.DLLA1.readmeitem.text
-msgid "If you perform an administrative installation using setup /a, you need to make sure that the file msvc90.dll is installed on the system. This file is required for ${PRODUCTNAME} to start after an administrative installation. You can get the file from <a href=\"http://www.microsoft.com/downloads/details.aspx?familyid=9B2DA534-3E03-4391-8A4D-074B9F2BC1BF\">http://www.microsoft.com/downloads/details.aspx?familyid=9B2DA534-3E03-4391-8A4D-074B9F2BC1BF</a>"
-msgstr "setup.exe /a を使用して管理インストールを行う場合、 msvc90.dll がシステムにインストールされていることを確認する必要があります。このファイルは、管理インストールの後 ${PRODUCTNAME} を使用するのに必要です。次の URL からファイルを入手できます。 <a href=\"http://www.microsoft.com/downloads/details.aspx?familyid=9B2DA534-3E03-4391-8A4D-074B9F2BC1BF&amp;displaylang=ja\">http://www.microsoft.com/downloads/details.aspx?familyid=9B2DA534-3E03-4391-8A4D-074B9F2BC1BF&amp;displaylang=ja</a>"
-
-#: readme.xrm#AdminNeeded.AdminNeeded.readmeitem.text
-msgctxt "readme.xrm#AdminNeeded.AdminNeeded.readmeitem.text"
-msgid "Please be aware that administrator rights are needed for the installation process."
-msgstr "注: インストールを実行するには、管理者権限が必要です。"
+msgid "<tt>REGISTER_NO_MSO_TYPES=1</tt> will suppress registration of ${PRODUCTNAME} as default application for Microsoft Office formats."
+msgstr "<tt>REGISTER_NO_MSO_TYPES=1</tt> を指定すると、 ${PRODUCTNAME} をMicrosoft Office フォーマットの既定アプリケーションとして登録しません。"
 
 #: readme.xrm#s2we10.s2we10.readmeitem.text
 msgid "As a general rule, you are recommended to install ${PRODUCTNAME} via the installation methods recommended by your particular Linux distribution (such as the Ubuntu Software Center, in the case of Ubuntu Linux). This is because it is usually the simplest way to obtain an installation that is optimally integrated into your system. Indeed, ${PRODUCTNAME} may well be already installed by default when you originally install your Linux operating system."
@@ -186,8 +176,9 @@ msgid "Installation of ${PRODUCTNAME} on Debian/Ubuntu-based Linux systems"
 msgstr " ${PRODUCTNAME} を Debian/Ubuntu ベースのLinuxシステムにインストールする方法"
 
 #: readme.xrm#debianinstall1.debianinstall1.readmeitem.text
-msgid "If you have a previous version of ${PRODUCTNAME} already installed, then you will need to de-install it before proceeding further. For instructions on how to do that, please read the section below entitled Deinstallation of a Previous Version of ${PRODUCTNAME}. For instructions on how to install a language pack (after having installed the US English version of ${PRODUCTNAME}), please read the section below entitled Installing a Language Pack."
-msgstr "${PRODUCTNAME} の以前のバージョンが既にインストールされている場合、先に進む前にそれをアンインストールしなければなりません。どうやってアンインストールするかについての説明は、以下にある ${PRODUCTNAME} の以前のバージョンのアンインストールと題された節をお読みください。どうやって言語パックを(${PRODUCTNAME} の US English 版をインストールした後で)インストールするかについての説明は、以下にある言語パックのインストールと題された節をお読みください。"
+msgctxt "readme.xrm#debianinstall1.debianinstall1.readmeitem.text"
+msgid "If you have a previous version of ${PRODUCTNAME} already installed, then you will need to de-install it before proceeding further. For instructions on how to install a language pack (after having installed the US English version of ${PRODUCTNAME}), please read the section below entitled Installing a Language Pack."
+msgstr "${PRODUCTNAME} の以前のバージョンがすでにインストールされている場合、先に進む前にそれをアンインストールしなければなりません。どうやって言語パックを(${PRODUCTNAME} の US English 版をインストールした後で)インストールするかについての説明は、以下にある言語パックのインストールと題された節をお読みください。"
 
 #: readme.xrm#debianinstall2.debianinstall2.readmeitem.text
 msgctxt "readme.xrm#debianinstall2.debianinstall2.readmeitem.text"
@@ -236,8 +227,9 @@ msgid "Installation of ${PRODUCTNAME} on Fedora, Suse, Mandriva and other Linux 
 msgstr " ${PRODUCTNAME} を Fedora, SUSE, Mandriva や他のRPMを採用したLinuxシステムにインストールする方法"
 
 #: readme.xrm#rpminstall1.rpminstall1.readmeitem.text
-msgid "If you have a previous version of ${PRODUCTNAME} already installed, then you will need to de-install it before proceeding further. For instructions on how to do that, please read the section below entitled De-installation of a Previous Version of ${PRODUCTNAME}. For instructions on how to install a language pack (after having installed the US English version of ${PRODUCTNAME}), please read the section below entitled Installing a Language Pack."
-msgstr "${PRODUCTNAME} の以前のバージョンが既にインストールされている場合、先に進む前にそれをアンインストールしなければなりません。どうやってアンインストールするかについての説明は、以下にある ${PRODUCTNAME} の以前のバージョンのアンインストールと題された節をお読みください。どうやって言語パックを(${PRODUCTNAME} の US English 版をインストールした後で)インストールするかについての説明は、以下にある言語パックのインストールと題された節をお読みください。"
+msgctxt "readme.xrm#rpminstall1.rpminstall1.readmeitem.text"
+msgid "If you have a previous version of ${PRODUCTNAME} already installed, then you will need to de-install it before proceeding further. For instructions on how to install a language pack (after having installed the US English version of ${PRODUCTNAME}), please read the section below entitled Installing a Language Pack."
+msgstr "${PRODUCTNAME} の以前のバージョンがすでにインストールされている場合、先に進む前にそれをアンインストールしなければなりません。どうやって言語パックを(${PRODUCTNAME} の US English 版をインストールした後で)インストールするかについての説明は、以下にある言語パックのインストールと題された節をお読みください。"
 
 #: readme.xrm#rpminstall2.rpminstall2.readmeitem.text
 msgctxt "readme.xrm#rpminstall2.rpminstall2.readmeitem.text"
@@ -281,8 +273,8 @@ msgid "Now run the installation command again:"
 msgstr "ここで再度インストール用コマンドを実行してください:"
 
 #: readme.xrm#rpminstallB.rpminstallB.readmeitem.text
-msgid "For Fedora-based systems: su -c 'yum install *redhat*.rpm'"
-msgstr "Fedora ベースのシステム向け: su -c 'yum install *redhat*.rpm'"
+msgid "For Fedora-based systems: su -c 'yum install *freedesktop*.rpm'"
+msgstr "Fedora ベースのシステム向け: su -c 'yum install *freedesktop*.rpm'"
 
 #: readme.xrm#rpminstallC.rpminstallC.readmeitem.text
 msgid "For Mandriva-based systems: sudo urpmi *mandriva*.rpm"
@@ -353,7 +345,7 @@ msgstr "他のRPMを使用するシステム(Suse等)向け: rpm -Uvh *.rpm"
 
 #: readme.xrm#linuxlangpackA.linuxlangpackA.readmeitem.text
 msgid "Now start one of the ${PRODUCTNAME} applications - Writer, for instance. Go to the Tools menu and choose Options. In the Options dialog box, click on \"Language Settings\" and then click on \"Languages\". Dropdown the \"User interface\" list and select the language you just installed. If you want, do the same thing for the \"Locale setting\", the \"Default currency\", and the \"Default languages for documents\"."
-msgstr "ここで${PRODUCTNAME}のアプリケーションの1つ - 例えば Writer を開始します。ツールメニューに行きオプションを選択してください。オプションのダイアログボックスで、\"言語設定\"をクリックしそして\"言語\"をクリックしてください。\"ユーザーインターフェイス\"リストをドロップダウンし、インストールした言語を選択してください。お望みなら、同じことを\"ロケール設定\"や\"既定の通貨\"、\"文書のための既定の言語\"でも行ってください。"
+msgstr "ここで${PRODUCTNAME}のアプリケーションの1つ - 例えば Writer を開始します。ツールメニューに行きオプションを選択してください。オプションのダイアログボックスで、\"言語設定\"をクリックしそして\"言語\"をクリックしてください。\"ユーザーインタフェース\"リストをドロップダウンし、インストールした言語を選択してください。お望みなら、同じことを\"ロケール設定\"や\"既定の通貨\"、\"文書のための既定の言語\"でも行ってください。"
 
 #: readme.xrm#linuxlangpackB.linuxlangpackB.readmeitem.text
 msgid "After adjusting those settings, click on OK. The dialog box will close, and you will see an information message telling you that your changes will only be activated after you exit ${PRODUCTNAME} and start it again (remember to also exit the QuickStarter if it is started)."

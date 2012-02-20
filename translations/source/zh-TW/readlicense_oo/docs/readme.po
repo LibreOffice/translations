@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: http://qa.openoffice.org/issues/enter_bug.cgi?comment=&component=l10n&form_name=enter_issue&short_desc=Localization+issue+in+file%3A+readlicense_oo%2Fdocs%2Freadme.oo&subcomponent=ui\n"
-"POT-Creation-Date: 2011-11-26 00:04+0200\n"
-"PO-Revision-Date: 2011-04-05 11:23+0200\n"
+"POT-Creation-Date: 2012-01-21 16:00+0200\n"
+"PO-Revision-Date: 2012-02-08 18:19+0200\n"
 "Last-Translator: Cheng-Chia <pswo10680@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: zh_TW\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Translate Toolkit 1.9.0\n"
+"X-Generator: Pootle 2.1.6\n"
 "X-Accelerator-Marker: ~\n"
 
 #: readme.xrm#Welcome.Welcome.readmeitem.text
@@ -57,7 +57,7 @@ msgstr "安裝注意事項"
 
 #: readme.xrm#javaneeded.javaneeded.readmeitem.text
 msgid "${PRODUCTNAME} requires a recent version of Java Runtime Environment (JRE) for full functionality. JRE is not part of the ${PRODUCTNAME} installation package, it should be installed separately."
-msgstr ""
+msgstr "${PRODUCTNAME} 需要近期的 Java Runtime Environment (JRE) 版本才能執行全部的功能。JRE 不屬於 ${PRODUCTNAME} 安裝包的一部分，它應該個別安裝。"
 
 #: readme.xrm#sdfsdfgf42r.sdfsdfgf42r.readmeitem.text
 msgid "System Requirements"
@@ -104,7 +104,6 @@ msgid "1024x768 resolution (higher resolution recommended), at least 256 colors"
 msgstr "1024x768 解析度 (建議使用更高解析度)，至少 256 色"
 
 #: readme.xrm#edssc3d.edssc3d.readmeitem.text
-msgctxt "readme.xrm#edssc3d.edssc3d.readmeitem.text"
 msgid "Please be aware that administrator rights are needed for the installation process."
 msgstr "請注意，安裝程序需要管理員權限。"
 
@@ -113,21 +112,12 @@ msgid "Registration of ${PRODUCTNAME} as default application for Microsoft Offic
 msgstr "執行安裝程式時使用以下指令行開關，可強制或不讓 ${PRODUCTNAME} 註冊為 Microsoft Office 格式的預設應用程式："
 
 #: readme.xrm#MSOReg2.MSOReg2.readmeitem.text
-msgid "<tt>/msoreg=1</tt> will force registration of ${PRODUCTNAME} as default application for Microsoft Office formats."
-msgstr "<tt>/msoreg=1</tt> 會強制註冊 ${PRODUCTNAME} 為 Microsoft Office 格式的預設應用程式。"
+msgid "<tt>REGISTER_ALL_MSO_TYPES=1</tt> will force registration of ${PRODUCTNAME} as default application for Microsoft Office formats."
+msgstr "<tt>REGISTER_ALL_MSO_TYPES=1</tt> 會強迫 ${PRODUCTNAME} 註冊為 Microsoft Office 格式的預設應用程式。"
 
 #: readme.xrm#MSOReg3.MSOReg3.readmeitem.text
-msgid "<tt>/msoreg=0</tt> will suppress registration of ${PRODUCTNAME} as default application for Microsoft Office formats."
-msgstr "<tt>/msoreg=0</tt> 則不會註冊 ${PRODUCTNAME} 為 Microsoft Office 格式的預設應用程式。"
-
-#: readme.xrm#DLLA1.DLLA1.readmeitem.text
-msgid "If you perform an administrative installation using setup /a, you need to make sure that the file msvc90.dll is installed on the system. This file is required for ${PRODUCTNAME} to start after an administrative installation. You can get the file from <a href=\"http://www.microsoft.com/downloads/details.aspx?familyid=9B2DA534-3E03-4391-8A4D-074B9F2BC1BF\">http://www.microsoft.com/downloads/details.aspx?familyid=9B2DA534-3E03-4391-8A4D-074B9F2BC1BF</a>"
-msgstr "如果使用安裝程式 /a 執行管理安裝，您必須確定系統上已安裝檔案 msvc90.dll。管理安裝之後，${PRODUCTNAME} 需要此檔案才能啟動。您可以從 <a href=\"http://www.microsoft.com/downloads/details.aspx?familyid=9B2DA534-3E03-4391-8A4D-074B9F2BC1BF\">http://www.microsoft.com/downloads/details.aspx?familyid=9B2DA534-3E03-4391-8A4D-074B9F2BC1BF</a> 取得檔案"
-
-#: readme.xrm#AdminNeeded.AdminNeeded.readmeitem.text
-msgctxt "readme.xrm#AdminNeeded.AdminNeeded.readmeitem.text"
-msgid "Please be aware that administrator rights are needed for the installation process."
-msgstr "請注意，安裝程序需要管理員權限。"
+msgid "<tt>REGISTER_NO_MSO_TYPES=1</tt> will suppress registration of ${PRODUCTNAME} as default application for Microsoft Office formats."
+msgstr "<tt>REGISTER_NO_MSO_TYPES=1</tt> 會阻止 ${PRODUCTNAME} 註冊為 Microsoft Office 格式的預設應用程式。"
 
 #: readme.xrm#s2we10.s2we10.readmeitem.text
 msgid "As a general rule, you are recommended to install ${PRODUCTNAME} via the installation methods recommended by your particular Linux distribution (such as the Ubuntu Software Center, in the case of Ubuntu Linux). This is because it is usually the simplest way to obtain an installation that is optimally integrated into your system. Indeed, ${PRODUCTNAME} may well be already installed by default when you originally install your Linux operating system."
@@ -186,8 +176,9 @@ msgid "Installation of ${PRODUCTNAME} on Debian/Ubuntu-based Linux systems"
 msgstr "在 Debian/Ubuntu 為基礎的 Linux 系統上安裝 ${PRODUCTNAME}"
 
 #: readme.xrm#debianinstall1.debianinstall1.readmeitem.text
-msgid "If you have a previous version of ${PRODUCTNAME} already installed, then you will need to de-install it before proceeding further. For instructions on how to do that, please read the section below entitled Deinstallation of a Previous Version of ${PRODUCTNAME}. For instructions on how to install a language pack (after having installed the US English version of ${PRODUCTNAME}), please read the section below entitled Installing a Language Pack."
-msgstr "若您已安裝前一個 ${PRODUCTNAME} 版本，那麼您需要在進一步處理之前將它解除安裝。若要瞭解如何解除安裝，請閱讀標題為「解除安裝舊版 ${PRODUCTNAME}」的小節。若要瞭解如何安裝語言包 (在安裝完 US English 版${PRODUCTNAME} 後)，請閱讀標題為「安裝套件包」的小節。"
+msgctxt "readme.xrm#debianinstall1.debianinstall1.readmeitem.text"
+msgid "If you have a previous version of ${PRODUCTNAME} already installed, then you will need to de-install it before proceeding further. For instructions on how to install a language pack (after having installed the US English version of ${PRODUCTNAME}), please read the section below entitled Installing a Language Pack."
+msgstr "若您已經有安裝過 ${PRODUCTNAME} 的先前版本，那麼在繼續處理前您需要先移除它。至於如何安裝語言包 (在安裝完 US English 版本的 ${PRODUCTNAME} 後) 的指示，請閱讀下方標題為「安裝語言包」的小節。"
 
 #: readme.xrm#debianinstall2.debianinstall2.readmeitem.text
 msgctxt "readme.xrm#debianinstall2.debianinstall2.readmeitem.text"
@@ -236,8 +227,9 @@ msgid "Installation of ${PRODUCTNAME} on Fedora, Suse, Mandriva and other Linux 
 msgstr "在 Fedora、Suse、Mandriva 與其它採用 RPM 套件的 Linux 系統上安裝 ${PRODUCTNAME}"
 
 #: readme.xrm#rpminstall1.rpminstall1.readmeitem.text
-msgid "If you have a previous version of ${PRODUCTNAME} already installed, then you will need to de-install it before proceeding further. For instructions on how to do that, please read the section below entitled De-installation of a Previous Version of ${PRODUCTNAME}. For instructions on how to install a language pack (after having installed the US English version of ${PRODUCTNAME}), please read the section below entitled Installing a Language Pack."
-msgstr "若您已安裝前一個 ${PRODUCTNAME} 版本，那麼您需要在進一步處理之前將它解除安裝。若要瞭解如何解除安裝，請閱讀標題為「解除安裝舊版 ${PRODUCTNAME}」的小節。若要瞭解如何安裝語言包 (在安裝完 US English 版${PRODUCTNAME} 後)，請閱讀標題為「安裝套件包」的小節。"
+msgctxt "readme.xrm#rpminstall1.rpminstall1.readmeitem.text"
+msgid "If you have a previous version of ${PRODUCTNAME} already installed, then you will need to de-install it before proceeding further. For instructions on how to install a language pack (after having installed the US English version of ${PRODUCTNAME}), please read the section below entitled Installing a Language Pack."
+msgstr "若您已經安裝過先前版本的 ${PRODUCTNAME}，那麼您需要在繼續處理之前需要先將它移除。至於如何安裝語言包 (在安裝完 US English 版本的 ${PRODUCTNAME} 後) 的指示，請閱讀下方標題為「安裝語言包」的小節。"
 
 #: readme.xrm#rpminstall2.rpminstall2.readmeitem.text
 msgctxt "readme.xrm#rpminstall2.rpminstall2.readmeitem.text"
@@ -256,7 +248,7 @@ msgstr "對目錄點擊滑鼠右鍵，並選擇「以終端機開啟」，接著
 #: readme.xrm#rpminstall5.rpminstall5.readmeitem.text
 msgctxt "readme.xrm#rpminstall5.rpminstall5.readmeitem.text"
 msgid "For Fedora-based systems: su -c 'yum install *.rpm'"
-msgstr "若是以 Fedora 為基礎的系統：su -c 'yum install *redhat*.rpm'"
+msgstr "若是以 Fedora 為基礎的系統：su -c 'yum install *freedesktop*.rpm'"
 
 #: readme.xrm#rpminstall6.rpminstall6.readmeitem.text
 msgctxt "readme.xrm#rpminstall6.rpminstall6.readmeitem.text"
@@ -281,8 +273,8 @@ msgid "Now run the installation command again:"
 msgstr "現在再次執行安裝指令："
 
 #: readme.xrm#rpminstallB.rpminstallB.readmeitem.text
-msgid "For Fedora-based systems: su -c 'yum install *redhat*.rpm'"
-msgstr "若是以 Fedora 為基礎的系統：su -c 'yum install *redhat*.rpm'"
+msgid "For Fedora-based systems: su -c 'yum install *freedesktop*.rpm'"
+msgstr "若是以 Fedora 為基礎的系統：su -c 'yum install *freedesktop*.rpm'"
 
 #: readme.xrm#rpminstallC.rpminstallC.readmeitem.text
 msgid "For Mandriva-based systems: sudo urpmi *mandriva*.rpm"

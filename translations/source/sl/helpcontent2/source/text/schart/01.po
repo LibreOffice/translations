@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: http://qa.openoffice.org/issues/enter_bug.cgi?subcomponent=ui&comment=&short_desc=Localization%20issue%20in%20file%3A%20helpcontent2/source/text/schart/01.oo&component=l10n&form_name=enter_issue\n"
-"POT-Creation-Date: 2011-11-27 22:10+0200\n"
+"POT-Creation-Date: 2012-01-23 10:26+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -11,7 +11,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 1.3-rc1\n"
+"X-Generator: Translate Toolkit 1.9.0\n"
 "X-Accelerator-Marker: ~\n"
 
 #: 04020000.xhp#tit.help.text
@@ -1790,11 +1790,11 @@ msgstr "Za spremembo lastnosti črte"
 
 #: smooth_line_properties.xhp#par_id1601611.help.text
 msgid "Select Cubic Spline or B-Spline."
-msgstr "Izberite krivuljo kubičnih ali B-zlepkov"
+msgstr "Izberite krivuljo kubičnih ali B-polinomov"
 
 #: smooth_line_properties.xhp#par_id879848.help.text
 msgid "These are mathematical models that influence the display of the curves. The curves are created by joining together segments of polynomials."
-msgstr "To sta matematična modela, ki vplivata na prikaz krivulj. Krivulje tvorijo spojeni odseki polinomov."
+msgstr "To sta matematična modela, ki vplivata na prikaz krivulj. Krivulje tvorijo spojeni polinomski odseki."
 
 #: smooth_line_properties.xhp#par_id3464461.help.text
 msgid "Optionally set the resolution. A higher value leads to a smoother line."
@@ -1802,15 +1802,15 @@ msgstr "Nastavite lahko tudi ločljivost. Višja vrednost pomeni bolj gladko čr
 
 #: smooth_line_properties.xhp#par_id6998809.help.text
 msgid "For B-spline lines optionally set the degree of the polynomials."
-msgstr "Za črte B-zlepka lahko nastavite stopnjo polinomov."
+msgstr "Za B-polinomske krivulje lahko nastavite stopnjo polinomov."
 
 #: smooth_line_properties.xhp#par_id3424481.help.text
 msgid "<ahelp hid=\".\" visibility=\"hidden\">Apply a cubic spline model.</ahelp>"
-msgstr "<ahelp hid=\".\" visibility=\"hidden\">Dodeli model kubičnega zlepka.</ahelp>"
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">Dodeli model kubične polinomske krivulje.</ahelp>"
 
 #: smooth_line_properties.xhp#par_id1068758.help.text
 msgid "<ahelp hid=\".\" visibility=\"hidden\">Apply a B-spline model.</ahelp>"
-msgstr "<ahelp hid=\".\" visibility=\"hidden\">Dodeli model B-zlepka.</ahelp>"
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">Dodeli model B-polinomske krivulje.</ahelp>"
 
 #: smooth_line_properties.xhp#par_id2320932.help.text
 msgid "<ahelp hid=\".\" visibility=\"hidden\">Set the resolution.</ahelp>"
@@ -2200,7 +2200,7 @@ msgstr "Kliknite <emph>Lastnosti</emph>, da določite podrobnosti krivulj."
 
 #: type_xy.xhp#par_id5989562.help.text
 msgid "<emph>Cubic Spline</emph> interpolates your data points with polynomials of degree 3. The transitions between the polynomial pieces are smooth, having the same slope and curvature. "
-msgstr "<emph>Kubični zlepki</emph> interpolira podatkovne točke s polinomi tretje stopnje. Prehodi med polinomskimi deli so gladki, z istim naklonom in ukrivljenostjo. "
+msgstr "<emph>Kubična polinomska krivulja</emph> interpolira podatkovne točke s polinomi tretje stopnje. Prehodi med polinomskimi deli so gladki, z istim naklonom in ukrivljenostjo. "
 
 #: type_xy.xhp#par_id6128421.help.text
 msgid "The <emph>Resolution</emph> determines how many line segments are calculated to draw a piece of polynomial between two data points. You can see the intermediate points if you click any data point."
@@ -2208,7 +2208,7 @@ msgstr "<emph>Ločljivost</emph> določa, koliko delov črte je izračunanih za 
 
 #: type_xy.xhp#par_id9280373.help.text
 msgid "<emph>B-Spline</emph> uses a parametric, interpolating B-spline curve. Those curves are built piecewise from polynomials. The <emph>Degree of polynomials</emph> sets the degree of these polynomials."
-msgstr "<emph>B-zlepek</emph> uporablja podatkovne točke kot nadzorne točke, ki tvorijo krivuljo B-zlepkov. Te krivulje so kosoma sestavljene iz polinomov. <emph>Stopnja polinomov</emph> določa stopnjo teh polinomov. "
+msgstr "<emph>Polinomska krivulja B</emph> uporablja parametrično in interpolirano polinomsko krivuljo B, ki jo tvorijo polinomi. Stopnjo teh polinomov določa <emph>Stopnja polinomov</emph>."
 
 #: type_column_bar.xhp#tit.help.text
 msgid "Chart Type Column and Bar"
@@ -2384,7 +2384,7 @@ msgstr "<variable id=\"statistik\"><ahelp hid=\".\">Če želite stolpce napake v
 
 #: 04050000.xhp#par_id3401287.help.text
 msgid "An error bar is an indicator line that spans over a range from y - NegativeErrorValue to y + PositiveErrorValue. In this term, y is the value of the data point. When \"standard deviation\" is selected, y is the mean value of the data series. NegativeErrorValue and PositiveErrorValue are the amounts calculated by the error bar function or given explicitly."
-msgstr "Stolpec napake je črta pokazatelja, ki se razteza v obsegu od y - NegativnaVrednostNapake do y + PozitivnaVrednostNapake. V tem smislu je y vrednost podatkovne točke. Če je izbran \"standardni odklon\", je y srednja vrednost niza podatkov. Vrednosti NegativeErrorValue in PositiveErrorValue izračuna funkcija stolpca napake ali pa sta podani eksplicitno."
+msgstr "Stolpec napake je črta pokazatelja, ki se razteza v obsegu od y - NegativnaVrednostNapake do y + PozitivnaVrednostNapake. V tem smislu je y vrednost podatkovne točke. Če je izbran \"standardni odklon\", je y srednja vrednost niza podatkov. Vrednosti NegativnaVrednostNapake in PozitivnaVrednostNapake izračuna funkcija stolpca napake ali pa sta podani eksplicitno."
 
 #: 04050000.xhp#par_id3153965.23.help.text
 msgid "The <emph>Insert - Y Error Bars</emph> menu command is only available for 2D charts."
