@@ -53,7 +53,7 @@ sdf-l10n/$(1).sdf: sdf-template/en-US.sdf $(OUTDIR_FOR_BUILD)/bin/po2lo \
 ifeq ($(OS_FOR_BUILD),WNT)
 	$(call gb_Helper_abbreviate_dirs_native, \
 		$(gb_PYTHON) $(shell cygpath -m $(OUTDIR_FOR_BUILD))/bin/po2lo --skipsource -i \
-			$(SRCDIR)/translations/source/$(1) -t $$< -o $$@ -l $(1))
+			$(shell cygpath -m $(SRCDIR)/translations/source/$(1)) -t $$< -o $$@ -l $(1))
         $(echo $(gb_PYTHON))
 else
 	$(call gb_Helper_abbreviate_dirs_native, \
