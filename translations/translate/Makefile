@@ -50,10 +50,16 @@ merge.done: $(foreach lang,$(my_languages),sdf-l10n/$(lang).sdf) sdf-l10n/qtz.sd
 define lang_rule
 sdf-l10n/$(1).sdf: sdf-template/en-US.sdf $(OUTDIR_FOR_BUILD)/bin/po2lo \
 		$(shell find $(SRCDIR)/translations/source/$(1) -name "*\.po") | sdf-l10n
+ifeq ($(OS_FOR_BUILD),WNT)
+	$(call gb_Helper_abbreviate_dirs_native, \
+		$(gb_PYTHON) $(shell cygpath -m $(OUTDIR_FOR_BUILD))/bin/po2lo --skipsource -i \
+			$(SRCDIR)/translations/source/$(1) -t $$< -o $$@ -l $(1))
+        $(echo $(gb_PYTHON))
+else
 	$(call gb_Helper_abbreviate_dirs_native, \
 		$(gb_PYTHON) $(OUTDIR_FOR_BUILD)/bin/po2lo --skipsource -i \
 			$(SRCDIR)/translations/source/$(1) -t $$< -o $$@ -l $(1))
-
+endif
 endef
 
 $(foreach lang,$(my_languages),$(eval $(call lang_rule,$(lang))))
