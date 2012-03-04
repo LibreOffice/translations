@@ -3,14 +3,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: http://qa.openoffice.org/issues/enter_bug.cgi?comment=&component=l10n&form_name=enter_issue&short_desc=Localization+issue+in+file%3A+readlicense_oo%2Fdocs%2Freadme.oo&subcomponent=ui\n"
-"POT-Creation-Date: 2011-11-26 00:04+0200\n"
+"POT-Creation-Date: 2012-02-21 19:42+0200\n"
 "PO-Revision-Date: 2011-04-12 00:37+0200\n"
 "Last-Translator: anipeter <peter.ani@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: ml\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: ml\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Translate Toolkit 1.9.0\n"
 "X-Accelerator-Marker: ~\n"
@@ -104,7 +104,6 @@ msgid "1024x768 resolution (higher resolution recommended), at least 256 colors"
 msgstr "800x600 വിശ്ലേഷണം അഥവാ ഉയര്ന്നത്, കുറഞ്ഞത്  256 നിറങ്ങള്"
 
 #: readme.xrm#edssc3d.edssc3d.readmeitem.text
-msgctxt "readme.xrm#edssc3d.edssc3d.readmeitem.text"
 msgid "Please be aware that administrator rights are needed for the installation process."
 msgstr ""
 
@@ -113,20 +112,11 @@ msgid "Registration of ${PRODUCTNAME} as default application for Microsoft Offic
 msgstr ""
 
 #: readme.xrm#MSOReg2.MSOReg2.readmeitem.text
-msgid "<tt>/msoreg=1</tt> will force registration of ${PRODUCTNAME} as default application for Microsoft Office formats."
+msgid "<tt>REGISTER_ALL_MSO_TYPES=1</tt> will force registration of ${PRODUCTNAME} as default application for Microsoft Office formats."
 msgstr ""
 
 #: readme.xrm#MSOReg3.MSOReg3.readmeitem.text
-msgid "<tt>/msoreg=0</tt> will suppress registration of ${PRODUCTNAME} as default application for Microsoft Office formats."
-msgstr ""
-
-#: readme.xrm#DLLA1.DLLA1.readmeitem.text
-msgid "If you perform an administrative installation using setup /a, you need to make sure that the file msvc90.dll is installed on the system. This file is required for ${PRODUCTNAME} to start after an administrative installation. You can get the file from <a href=\"http://www.microsoft.com/downloads/details.aspx?familyid=9B2DA534-3E03-4391-8A4D-074B9F2BC1BF\">http://www.microsoft.com/downloads/details.aspx?familyid=9B2DA534-3E03-4391-8A4D-074B9F2BC1BF</a>"
-msgstr ""
-
-#: readme.xrm#AdminNeeded.AdminNeeded.readmeitem.text
-msgctxt "readme.xrm#AdminNeeded.AdminNeeded.readmeitem.text"
-msgid "Please be aware that administrator rights are needed for the installation process."
+msgid "<tt>REGISTER_NO_MSO_TYPES=1</tt> will suppress registration of ${PRODUCTNAME} as default application for Microsoft Office formats."
 msgstr ""
 
 #: readme.xrm#s2we10.s2we10.readmeitem.text
@@ -189,7 +179,8 @@ msgid "Installation of ${PRODUCTNAME} on Debian/Ubuntu-based Linux systems"
 msgstr ""
 
 #: readme.xrm#debianinstall1.debianinstall1.readmeitem.text
-msgid "If you have a previous version of ${PRODUCTNAME} already installed, then you will need to de-install it before proceeding further. For instructions on how to do that, please read the section below entitled Deinstallation of a Previous Version of ${PRODUCTNAME}. For instructions on how to install a language pack (after having installed the US English version of ${PRODUCTNAME}), please read the section below entitled Installing a Language Pack."
+msgctxt "readme.xrm#debianinstall1.debianinstall1.readmeitem.text"
+msgid "If you have a previous version of ${PRODUCTNAME} already installed, then you will need to de-install it before proceeding further. For instructions on how to install a language pack (after having installed the US English version of ${PRODUCTNAME}), please read the section below entitled Installing a Language Pack."
 msgstr ""
 
 #: readme.xrm#debianinstall2.debianinstall2.readmeitem.text
@@ -239,7 +230,8 @@ msgid "Installation of ${PRODUCTNAME} on Fedora, Suse, Mandriva and other Linux 
 msgstr ""
 
 #: readme.xrm#rpminstall1.rpminstall1.readmeitem.text
-msgid "If you have a previous version of ${PRODUCTNAME} already installed, then you will need to de-install it before proceeding further. For instructions on how to do that, please read the section below entitled De-installation of a Previous Version of ${PRODUCTNAME}. For instructions on how to install a language pack (after having installed the US English version of ${PRODUCTNAME}), please read the section below entitled Installing a Language Pack."
+msgctxt "readme.xrm#rpminstall1.rpminstall1.readmeitem.text"
+msgid "If you have a previous version of ${PRODUCTNAME} already installed, then you will need to de-install it before proceeding further. For instructions on how to install a language pack (after having installed the US English version of ${PRODUCTNAME}), please read the section below entitled Installing a Language Pack."
 msgstr ""
 
 #: readme.xrm#rpminstall2.rpminstall2.readmeitem.text
@@ -284,15 +276,19 @@ msgid "Now run the installation command again:"
 msgstr ""
 
 #: readme.xrm#rpminstallB.rpminstallB.readmeitem.text
-msgid "For Fedora-based systems: su -c 'yum install *redhat*.rpm'"
+msgid "For Fedora-based systems: su -c 'yum install *freedesktop*.rpm'"
 msgstr ""
 
 #: readme.xrm#rpminstallC.rpminstallC.readmeitem.text
 msgid "For Mandriva-based systems: sudo urpmi *mandriva*.rpm"
 msgstr ""
 
+#: readme.xrm#rpminstallF.rpminstallF.readmeitem.text
+msgid "For SUSE-based systems: rpm -Uvh *suse*.rpm"
+msgstr ""
+
 #: readme.xrm#rpminstallD.rpminstallD.readmeitem.text
-msgid "For other RPM-based systems (Suse, etc.): rpm -Uvh *suse*.rpm"
+msgid "For other RPM-based systems: rpm -Uvh *freedesktop*.rpm"
 msgstr ""
 
 #: readme.xrm#rpminstallE.rpminstallE.readmeitem.text
