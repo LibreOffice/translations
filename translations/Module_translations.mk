@@ -30,7 +30,7 @@ $(eval $(call gb_Module_Module,translations))
 ifneq (,$(filter-out en-US,$(WITH_LANG)))
 
 $(eval $(call gb_Module_add_targets,translations,\
-	Package_translate \
+	CustomTarget_translate \
 ))
 
 endif

@@ -25,51 +25,57 @@
 # in which case the provisions of the GPLv3+ or the LGPLv3+ are applicable
 # instead of those above.
 
-gb_PARTIALBUILD:=T
-include $(GBUILDDIR)/gbuild_simple.mk
+$(eval $(call gb_CustomTarget_CustomTarget,translations/translate,new_style))
 
-all: merge.done
+TRTR := $(call gb_CustomTarget_get_workdir,translations/translate)
 
-all_languages := $(shell cd $(SRCDIR)/translations/source && ls -1)
+$(call gb_CustomTarget_get_target,translations/translate) : $(TRTR)/merge.done
+
 ifeq ($(WITH_LANG),ALL)
-my_languages := $(all_languages)
+tr_langs := $(shell cd $(SRCDIR)/translations/source && ls -1)
 else
-my_languages := $(filter-out en-US,$(WITH_LANG))
+tr_langs := $(filter-out en-US,$(WITH_LANG))
 endif
 
 #TODO: remove localization_present.mk when translations are in tail_build
-merge.done: $(foreach lang,$(my_languages),sdf-l10n/$(lang).sdf) sdf-l10n/qtz.sdf
+$(TRTR)/merge.done : $(foreach lang,$(tr_langs),$(TRTR)/sdf-l10n/$(lang).sdf) \
+		$(TRTR)/sdf-l10n/qtz.sdf
+	$(call gb_Output_announce,$(subst $(WORKDIR)/,,$@),$(true),MRG,2)
 	$(call gb_Helper_abbreviate_dirs_native, \
-		rm -rf sdf && mkdir sdf && \
-		perl $(OUTDIR_FOR_BUILD)/bin/fast_merge.pl -sdf_files \
-			$(call var2file,$(shell $(gb_MKTEMP)),100,$^) -merge_dir sdf && \
+		rm -rf $(TRTR)/sdf && mkdir $(TRTR)/sdf && \
+		RESPONSEFILE=$(call var2file,$(shell $(gb_MKTEMP)),100,$^) && \
+		perl $(OUTDIR_FOR_BUILD)/bin/fast_merge.pl -sdf_files $${RESPONSEFILE} \
+			-merge_dir $(TRTR)/sdf \
+			$(if $(findstring s,$(MAKEFLAGS)),> /dev/null) && \
+		rm -f $${RESPONSEFILE} && \
 		cp -f $(SRCDIR)/translations/localization_present.mk \
-		$(WORKDIR)/CustomTarget/translations/localization_present.mk && \
+			$(WORKDIR)/CustomTarget/translations/localization_present.mk && \
 		touch $@)
 
 define lang_rule
-sdf-l10n/$(1).sdf: sdf-template/en-US.sdf $(OUTDIR_FOR_BUILD)/bin/po2lo \
-		$(shell find $(SRCDIR)/translations/source/$(1) -name "*\.po") | sdf-l10n
+$(TRTR)/sdf-l10n/$(1).sdf : $(TRTR)/sdf-template/en-US.sdf $(OUTDIR_FOR_BUILD)/bin/po2lo \
+		$$(shell find $(SRCDIR)/translations/source/$(1) -name "*\.po") | $(TRTR)/sdf-l10n/.dir
+	$$(call gb_Output_announce,$$(subst $(WORKDIR)/,,$$@),$(true),SDF,1)
 	$$(call gb_Helper_abbreviate_dirs_native, \
 		$(gb_PYTHON) $(OUTDIR_FOR_BUILD)/bin/po2lo --skipsource -i \
 			$(SRCDIR)/translations/source/$(1) -t $$< -o $$@ -l $(1))
 
 endef
 
-$(foreach lang,$(my_languages),$(eval $(call lang_rule,$(lang))))
+$(foreach lang,$(tr_langs),$(eval $(call lang_rule,$(lang))))
 
-sdf-l10n/qtz.sdf: sdf-template/en-US.sdf $(OUTDIR_FOR_BUILD)/bin/keyidGen.pl | sdf-l10n
+$(TRTR)/sdf-l10n/qtz.sdf : $(TRTR)/sdf-template/en-US.sdf \
+		$(OUTDIR_FOR_BUILD)/bin/keyidGen.pl | $(TRTR)/sdf-l10n/.dir
+	$(call gb_Output_announce,$(subst $(WORKDIR)/,,$@),$(true),SDF,1)
 	$(call gb_Helper_abbreviate_dirs_native, \
-		perl $(OUTDIR_FOR_BUILD)/bin/keyidGen.pl $< $@)
+		perl $(OUTDIR_FOR_BUILD)/bin/keyidGen.pl $< $@ \
+			$(if $(findstring s,$(MAKEFLAGS)),> /dev/null))
 
-sdf-l10n:
-	mkdir $@
-
-sdf-template/en-US.sdf: \
-		$(foreach file,cfgex helpex localize propex transex3 ulfex xrmex, \
-			$(OUTDIR_FOR_BUILD)/bin/$(file))
+$(TRTR)/sdf-template/en-US.sdf : $(OUTDIR_FOR_BUILD)/bin/propex \
+		$(foreach exec,cfgex helpex localize transex3 ulfex xrmex, \
+			$(call gb_Executable_get_target_for_build,$(exec)))
+	$(call gb_Output_announce,$(subst $(WORKDIR)/,,$@),$(true),LOC,1)
 	$(call gb_Helper_abbreviate_dirs_native, \
 		mkdir -p $(dir $@) && $(call gb_Helper_execute,localize) $(SRCDIR) $@)
 
-.DEFAULT_GOAL := all
 # vim: set noet sw=4 ts=4:
