@@ -58,7 +58,7 @@ $(TRTR)/sdf-l10n/$(1).sdf : $(TRTR)/sdf-template/en-US.sdf $(OUTDIR_FOR_BUILD)/b
 	$$(call gb_Output_announce,$$(subst $(WORKDIR)/,,$$@),$(true),SDF,1)
 	$$(call gb_Helper_abbreviate_dirs_native, \
 		$(gb_PYTHON) $(OUTDIR_FOR_BUILD)/bin/po2lo --skipsource -i \
-			$(SRCDIR)/translations/source/$(1) -t $$< -o $$@ -l $(1))
+			source/$(1) -t $$< -o $$@ -l $(1))
 
 endef
 
