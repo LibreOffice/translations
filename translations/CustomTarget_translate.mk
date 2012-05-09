@@ -41,7 +41,7 @@ endif
 $(TRTR)/merge.done : $(foreach lang,$(tr_langs),$(TRTR)/sdf-l10n/$(lang).sdf) \
 		$(TRTR)/sdf-l10n/qtz.sdf
 	$(call gb_Output_announce,$(subst $(WORKDIR)/,,$@),$(true),MRG,2)
-	$(call gb_Helper_abbreviate_dirs_native, \
+	$(call gb_Helper_abbreviate_dirs, \
 		rm -rf $(TRTR)/sdf && mkdir $(TRTR)/sdf && \
 		RESPONSEFILE=$(call var2file,$(shell $(gb_MKTEMP)),100,$^) && \
 		perl $(OUTDIR_FOR_BUILD)/bin/fast_merge.pl -sdf_files $${RESPONSEFILE} \
@@ -56,7 +56,7 @@ define lang_rule
 $(TRTR)/sdf-l10n/$(1).sdf : $(TRTR)/sdf-template/en-US.sdf $(OUTDIR_FOR_BUILD)/bin/po2lo \
 		$$(shell find $(SRCDIR)/translations/source/$(1) -name "*\.po") | $(TRTR)/sdf-l10n/.dir
 	$$(call gb_Output_announce,$$(subst $(WORKDIR)/,,$$@),$(true),SDF,1)
-	$$(call gb_Helper_abbreviate_dirs_native, \
+	$$(call gb_Helper_abbreviate_dirs, \
 		$(gb_PYTHON) $(OUTDIR_FOR_BUILD)/bin/po2lo --skipsource -i \
 			source/$(1) -t $$< -o $$@ -l $(1))
 
@@ -67,7 +67,7 @@ $(foreach lang,$(tr_langs),$(eval $(call lang_rule,$(lang))))
 $(TRTR)/sdf-l10n/qtz.sdf : $(TRTR)/sdf-template/en-US.sdf \
 		$(OUTDIR_FOR_BUILD)/bin/keyidGen.pl | $(TRTR)/sdf-l10n/.dir
 	$(call gb_Output_announce,$(subst $(WORKDIR)/,,$@),$(true),SDF,1)
-	$(call gb_Helper_abbreviate_dirs_native, \
+	$(call gb_Helper_abbreviate_dirs, \
 		perl $(OUTDIR_FOR_BUILD)/bin/keyidGen.pl $< $@ \
 			$(if $(findstring s,$(MAKEFLAGS)),> /dev/null))
 
@@ -75,7 +75,7 @@ $(TRTR)/sdf-template/en-US.sdf : $(OUTDIR_FOR_BUILD)/bin/propex \
 		$(foreach exec,cfgex helpex localize transex3 ulfex xrmex, \
 			$(call gb_Executable_get_target_for_build,$(exec)))
 	$(call gb_Output_announce,$(subst $(WORKDIR)/,,$@),$(true),LOC,1)
-	$(call gb_Helper_abbreviate_dirs_native, \
+	$(call gb_Helper_abbreviate_dirs, \
 		mkdir -p $(dir $@) && $(call gb_Helper_execute,localize) $(SRCDIR) $@)
 
 # vim: set noet sw=4 ts=4:
