@@ -27,34 +27,39 @@
 
 $(eval $(call gb_CustomTarget_CustomTarget,translations/translate,new_style))
 
-TRTR := $(call gb_CustomTarget_get_workdir,translations/translate)
+translations_DIR := $(call gb_CustomTarget_get_workdir,translations/translate)
 
-$(call gb_CustomTarget_get_target,translations/translate) : $(TRTR)/merge.done
+$(call gb_CustomTarget_get_target,translations/translate) : \
+	$(translations_DIR)/merge.done
 
 ifeq ($(WITH_LANG),ALL)
-tr_langs := $(shell cd $(SRCDIR)/translations/source && ls -1)
+translations_LANGS := $(shell cd $(SRCDIR)/translations/source && ls -1)
 else
-tr_langs := $(filter-out en-US,$(WITH_LANG))
+translations_LANGS := $(filter-out en-US,$(WITH_LANG))
 endif
 
 #TODO: remove localization_present.mk when translations are in tail_build
-$(TRTR)/merge.done : $(foreach lang,$(tr_langs),$(TRTR)/sdf-l10n/$(lang).sdf) \
-		$(TRTR)/sdf-l10n/qtz.sdf
+$(translations_DIR)/merge.done : \
+		$(foreach lang,$(translations_LANGS),$(translations_DIR)/sdf-l10n/$(lang).sdf) \
+		$(translations_DIR)/sdf-l10n/qtz.sdf
 	$(call gb_Output_announce,$(subst $(WORKDIR)/,,$@),$(true),MRG,2)
 	$(call gb_Helper_abbreviate_dirs, \
-		rm -rf $(TRTR)/sdf && mkdir $(TRTR)/sdf && \
+		rm -rf $(translations_DIR)/sdf && mkdir $(translations_DIR)/sdf && \
 		RESPONSEFILE=$(call var2file,$(shell $(gb_MKTEMP)),100,$^) && \
 		perl $(OUTDIR_FOR_BUILD)/bin/fast_merge.pl -sdf_files $${RESPONSEFILE} \
-			-merge_dir $(TRTR)/sdf \
+			-merge_dir $(translations_DIR)/sdf \
 			$(if $(findstring s,$(MAKEFLAGS)),> /dev/null) && \
 		rm -f $${RESPONSEFILE} && \
 		cp -f $(SRCDIR)/translations/localization_present.mk \
 			$(WORKDIR)/CustomTarget/translations/localization_present.mk && \
 		touch $@)
 
-define lang_rule
-$(TRTR)/sdf-l10n/$(1).sdf : $(TRTR)/sdf-template/en-US.sdf $(OUTDIR_FOR_BUILD)/bin/po2lo \
-		$$(shell find $(SRCDIR)/translations/source/$(1) -name "*\.po") | $(TRTR)/sdf-l10n/.dir
+define translations_RULE
+$(translations_DIR)/sdf-l10n/$(1).sdf : \
+		$(translations_DIR)/sdf-template/en-US.sdf \
+		$(OUTDIR_FOR_BUILD)/bin/po2lo \
+		$$(shell find $(SRCDIR)/translations/source/$(1) -name "*\.po") \
+		| $(translations_DIR)/sdf-l10n/.dir
 	$$(call gb_Output_announce,$$(subst $(WORKDIR)/,,$$@),$(true),SDF,1)
 	$$(call gb_Helper_abbreviate_dirs, \
 		$(gb_PYTHON) $(OUTDIR_FOR_BUILD)/bin/po2lo --skipsource -i \
@@ -62,16 +67,17 @@ $(TRTR)/sdf-l10n/$(1).sdf : $(TRTR)/sdf-template/en-US.sdf $(OUTDIR_FOR_BUILD)/b
 
 endef
 
-$(foreach lang,$(tr_langs),$(eval $(call lang_rule,$(lang))))
+$(foreach lang,$(translations_LANGS),$(eval $(call translations_RULE,$(lang))))
 
-$(TRTR)/sdf-l10n/qtz.sdf : $(TRTR)/sdf-template/en-US.sdf \
-		$(OUTDIR_FOR_BUILD)/bin/keyidGen.pl | $(TRTR)/sdf-l10n/.dir
+$(translations_DIR)/sdf-l10n/qtz.sdf : \
+		$(translations_DIR)/sdf-template/en-US.sdf \
+		$(OUTDIR_FOR_BUILD)/bin/keyidGen.pl | $(translations_DIR)/sdf-l10n/.dir
 	$(call gb_Output_announce,$(subst $(WORKDIR)/,,$@),$(true),SDF,1)
 	$(call gb_Helper_abbreviate_dirs, \
 		perl $(OUTDIR_FOR_BUILD)/bin/keyidGen.pl $< $@ \
 			$(if $(findstring s,$(MAKEFLAGS)),> /dev/null))
 
-$(TRTR)/sdf-template/en-US.sdf : $(OUTDIR_FOR_BUILD)/bin/propex \
+$(translations_DIR)/sdf-template/en-US.sdf : $(OUTDIR_FOR_BUILD)/bin/propex \
 		$(foreach exec,cfgex helpex localize transex3 ulfex xrmex, \
 			$(call gb_Executable_get_target_for_build,$(exec)))
 	$(call gb_Output_announce,$(subst $(WORKDIR)/,,$@),$(true),LOC,1)
