@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: http://qa.openoffice.org/issues/enter_bug.cgi?comment=&component=l10n&form_name=enter_issue&short_desc=Localization+issue+in+file%3A+sw%2Fsource%2Fui%2Ftable.oo&subcomponent=ui\n"
-"POT-Creation-Date: 2012-05-29 12:13+0200\n"
+"POT-Creation-Date: 2012-06-16 12:42+0200\n"
 "PO-Revision-Date: 2012-01-12 17:25+0200\n"
 "Last-Translator: mbalabanov <m.balabanov@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -14,10 +14,6 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Translate Toolkit 1.9.0\n"
 "X-Accelerator-Marker: ~\n"
-
-#: table.src#MSG_ERR_TABLE_MERGE.infobox.text
-msgid "Selected table cells are too complex to merge."
-msgstr "Избраните клетки са твърде сложни, за да бъдат слети."
 
 #: colwd.src#DLG_COL_WIDTH.FT_WIDTH.fixedtext.text
 msgid "~Width"
@@ -35,17 +31,61 @@ msgstr "~Колона"
 msgid "Column Width"
 msgstr "Ширина на колона"
 
-#: rowht.src#DLG_ROW_HEIGHT.CB_AUTOHEIGHT.checkbox.text
-msgid "~Fit to size"
-msgstr "~Напасване по размера"
+#: instable.src#DLG_INSERT_TABLE.FT_NAME.fixedtext.text
+msgctxt "instable.src#DLG_INSERT_TABLE.FT_NAME.fixedtext.text"
+msgid "Name"
+msgstr "Име"
 
-#: rowht.src#DLG_ROW_HEIGHT.FL_HEIGHT.fixedline.text
-msgid "Height"
-msgstr "Височина"
+#: instable.src#DLG_INSERT_TABLE.FT_COL.fixedtext.text
+msgid "~Columns"
+msgstr "~Колони"
 
-#: rowht.src#DLG_ROW_HEIGHT.modaldialog.text
-msgid "Row Height"
-msgstr "Височина на ред"
+#: instable.src#DLG_INSERT_TABLE.FT_ROW.fixedtext.text
+msgid "~Rows"
+msgstr "~Редове"
+
+#: instable.src#DLG_INSERT_TABLE.FL_TABLE.fixedline.text
+msgid "Size"
+msgstr "Размер"
+
+#: instable.src#DLG_INSERT_TABLE.CB_HEADER.checkbox.text
+msgctxt "instable.src#DLG_INSERT_TABLE.CB_HEADER.checkbox.text"
+msgid "Heading"
+msgstr "Заглавие"
+
+#: instable.src#DLG_INSERT_TABLE.CB_REPEAT_HEADER.checkbox.text
+msgctxt "instable.src#DLG_INSERT_TABLE.CB_REPEAT_HEADER.checkbox.text"
+msgid "Repeat heading"
+msgstr "Повтаряне на заглавието"
+
+#: instable.src#DLG_INSERT_TABLE.FT_REPEAT_HEADER.fixedtext.text
+msgctxt "instable.src#DLG_INSERT_TABLE.FT_REPEAT_HEADER.fixedtext.text"
+msgid "The first %POSITION_OF_CONTROL rows"
+msgstr "Първите %POSITION_OF_CONTROL реда"
+
+#: instable.src#DLG_INSERT_TABLE.CB_DONT_SPLIT.checkbox.text
+msgctxt "instable.src#DLG_INSERT_TABLE.CB_DONT_SPLIT.checkbox.text"
+msgid "Don't split table"
+msgstr "Таблицата да не се разделя"
+
+#: instable.src#DLG_INSERT_TABLE.CB_BORDER.checkbox.text
+msgctxt "instable.src#DLG_INSERT_TABLE.CB_BORDER.checkbox.text"
+msgid "Border"
+msgstr "Кант"
+
+#: instable.src#DLG_INSERT_TABLE.BT_AUTOFORMAT.pushbutton.text
+msgctxt "instable.src#DLG_INSERT_TABLE.BT_AUTOFORMAT.pushbutton.text"
+msgid "Auto~Format..."
+msgstr "~Автоформат..."
+
+#: instable.src#DLG_INSERT_TABLE.FL_OPTIONS.fixedline.text
+msgctxt "instable.src#DLG_INSERT_TABLE.FL_OPTIONS.fixedline.text"
+msgid "Options"
+msgstr "Настройки"
+
+#: instable.src#DLG_INSERT_TABLE.modaldialog.text
+msgid "Insert Table"
+msgstr "Вмъкване на таблица"
 
 #: chartins.src#DLG_INSERT_CHART.FL_1.fixedline.text
 msgid "Selection"
@@ -89,22 +129,153 @@ msgstr "Създ~аване"
 msgid "AutoFormat Chart (1-4)"
 msgstr "Автоформат на диаграма (1-4)"
 
-#: mergetbl.src#DLG_MERGE_TABLE.FL_MERGE.fixedline.text
-msgctxt "mergetbl.src#DLG_MERGE_TABLE.FL_MERGE.fixedline.text"
+#: splittbl.src#DLG_SPLIT_TABLE.FL_SPLIT.fixedline.text
+msgctxt "splittbl.src#DLG_SPLIT_TABLE.FL_SPLIT.fixedline.text"
 msgid "Mode"
 msgstr "Режим"
 
-#: mergetbl.src#DLG_MERGE_TABLE.RB_MERGE_PREV.radiobutton.text
-msgid "Join with ~previous table"
-msgstr "Съединяване с ~предходната таблица"
+#: splittbl.src#DLG_SPLIT_TABLE.RB_CNTNT.radiobutton.text
+msgid "~Copy heading"
+msgstr "~Копиране на заглавия"
 
-#: mergetbl.src#DLG_MERGE_TABLE.RB_MERGE_NEXT.radiobutton.text
-msgid "Join with ~next table"
-msgstr "Съединяване със ~следващата таблица"
+#: splittbl.src#DLG_SPLIT_TABLE.RB_BOX_PARA.radiobutton.text
+msgid "C~ustom heading (apply Style)"
+msgstr "Заглавие по и~збор (с прилагане на стил)"
 
-#: mergetbl.src#DLG_MERGE_TABLE.modaldialog.text
-msgid "Merge Tables"
-msgstr "Сливане на таблици"
+#: splittbl.src#DLG_SPLIT_TABLE.RB_BOX_NOPARA.radiobutton.text
+msgid "Cu~stom heading"
+msgstr "Заглавие по и~збор"
+
+#: splittbl.src#DLG_SPLIT_TABLE.RB_BORDER.radiobutton.text
+msgid "~No heading"
+msgstr "~Без заглавие"
+
+#: splittbl.src#DLG_SPLIT_TABLE.modaldialog.text
+msgid "Split Table"
+msgstr "Разделяне на таблица"
+
+#: rowht.src#DLG_ROW_HEIGHT.CB_AUTOHEIGHT.checkbox.text
+msgid "~Fit to size"
+msgstr "~Напасване по размера"
+
+#: rowht.src#DLG_ROW_HEIGHT.FL_HEIGHT.fixedline.text
+msgid "Height"
+msgstr "Височина"
+
+#: rowht.src#DLG_ROW_HEIGHT.modaldialog.text
+msgid "Row Height"
+msgstr "Височина на ред"
+
+#: tautofmt.src#DLG_AUTOFMT_TABLE.FL_FORMAT.fixedline.text
+msgid "Format"
+msgstr "Форматиране"
+
+#: tautofmt.src#DLG_AUTOFMT_TABLE.BTN_NUMFORMAT.checkbox.text
+msgid "~Number format"
+msgstr "~Числов формат"
+
+#: tautofmt.src#DLG_AUTOFMT_TABLE.BTN_BORDER.checkbox.text
+msgid "~Borders"
+msgstr "~Кантове"
+
+#: tautofmt.src#DLG_AUTOFMT_TABLE.BTN_FONT.checkbox.text
+msgid "F~ont"
+msgstr "~Шрифт"
+
+#: tautofmt.src#DLG_AUTOFMT_TABLE.BTN_PATTERN.checkbox.text
+msgid "~Pattern"
+msgstr "~Шарка"
+
+#: tautofmt.src#DLG_AUTOFMT_TABLE.BTN_ALIGNMENT.checkbox.text
+msgid "Alignmen~t"
+msgstr "~Подравняване"
+
+#: tautofmt.src#DLG_AUTOFMT_TABLE.FL_FORMATS.fixedline.text
+msgid "Formatting"
+msgstr "Форматиране"
+
+#: tautofmt.src#DLG_AUTOFMT_TABLE.BTN_MORE.morebutton.text
+msgid "~More"
+msgstr "~Още"
+
+#: tautofmt.src#DLG_AUTOFMT_TABLE.BTN_ADD.pushbutton.text
+msgid "~Add"
+msgstr "~Добавяне"
+
+#: tautofmt.src#DLG_AUTOFMT_TABLE.BTN_REMOVE.pushbutton.text
+msgid "~Delete"
+msgstr "~Изтриване"
+
+#: tautofmt.src#DLG_AUTOFMT_TABLE.BTN_RENAME.pushbutton.text
+msgid "~Rename"
+msgstr "~Преименуване"
+
+#: tautofmt.src#DLG_AUTOFMT_TABLE.STR_ADD_TITLE.string.text
+msgid "Add AutoFormat"
+msgstr "Добавяне на автоформат"
+
+#: tautofmt.src#DLG_AUTOFMT_TABLE.STR_ADD_LABEL.string.text
+msgctxt "tautofmt.src#DLG_AUTOFMT_TABLE.STR_ADD_LABEL.string.text"
+msgid "Name"
+msgstr "Име"
+
+#: tautofmt.src#DLG_AUTOFMT_TABLE.STR_DEL_TITLE.string.text
+msgid "Delete AutoFormat"
+msgstr "Изтриване на автоформат"
+
+#: tautofmt.src#DLG_AUTOFMT_TABLE.STR_DEL_MSG.string.text
+msgid "The following AutoFormat entry will be deleted:"
+msgstr "Следният запис за автоформат ще бъде изтрит:"
+
+#: tautofmt.src#DLG_AUTOFMT_TABLE.STR_RENAME_TITLE.string.text
+msgid "Rename AutoFormat"
+msgstr "Преименуване на автоформат"
+
+#: tautofmt.src#DLG_AUTOFMT_TABLE.STR_BTN_CLOSE.string.text
+msgid "~Close"
+msgstr "~Затваряне"
+
+#: tautofmt.src#DLG_AUTOFMT_TABLE.STR_JAN.string.text
+msgid "Jan"
+msgstr "Яну"
+
+#: tautofmt.src#DLG_AUTOFMT_TABLE.STR_FEB.string.text
+msgid "Feb"
+msgstr "Фев"
+
+#: tautofmt.src#DLG_AUTOFMT_TABLE.STR_MAR.string.text
+msgid "Mar"
+msgstr "Мар"
+
+#: tautofmt.src#DLG_AUTOFMT_TABLE.STR_NORTH.string.text
+msgid "North"
+msgstr "Север"
+
+#: tautofmt.src#DLG_AUTOFMT_TABLE.STR_MID.string.text
+msgid "Mid"
+msgstr "Център"
+
+#: tautofmt.src#DLG_AUTOFMT_TABLE.STR_SOUTH.string.text
+msgid "South"
+msgstr "Юг"
+
+#: tautofmt.src#DLG_AUTOFMT_TABLE.STR_SUM.string.text
+msgid "Sum"
+msgstr "Сума"
+
+#: tautofmt.src#DLG_AUTOFMT_TABLE.STR_INVALID_AFNAME.string.text
+msgid ""
+"You have entered an invalid name.\n"
+"The desired AutoFormat could not be created. \n"
+"Try again using a different name."
+msgstr ""
+"Въвели сте невалидно име.\n"
+"Желаният автоформат не може да бъде създаден. \n"
+"Опитайте отново с различно име."
+
+#: tautofmt.src#DLG_AUTOFMT_TABLE.modaldialog.text
+msgid "AutoFormat"
+msgstr "Автоформат"
 
 #: tabledlg.src#TEXT_TEXTFLOW.#define.text
 msgid "Text Flow"
@@ -325,30 +496,22 @@ msgstr "Долу"
 msgid "The name of the table must not contain spaces."
 msgstr "Името на таблицата не трябва да съдържа интервали."
 
-#: splittbl.src#DLG_SPLIT_TABLE.FL_SPLIT.fixedline.text
-msgctxt "splittbl.src#DLG_SPLIT_TABLE.FL_SPLIT.fixedline.text"
+#: mergetbl.src#DLG_MERGE_TABLE.FL_MERGE.fixedline.text
+msgctxt "mergetbl.src#DLG_MERGE_TABLE.FL_MERGE.fixedline.text"
 msgid "Mode"
 msgstr "Режим"
 
-#: splittbl.src#DLG_SPLIT_TABLE.RB_CNTNT.radiobutton.text
-msgid "~Copy heading"
-msgstr "~Копиране на заглавия"
+#: mergetbl.src#DLG_MERGE_TABLE.RB_MERGE_PREV.radiobutton.text
+msgid "Join with ~previous table"
+msgstr "Съединяване с ~предходната таблица"
 
-#: splittbl.src#DLG_SPLIT_TABLE.RB_BOX_PARA.radiobutton.text
-msgid "C~ustom heading (apply Style)"
-msgstr "Заглавие по и~збор (с прилагане на стил)"
+#: mergetbl.src#DLG_MERGE_TABLE.RB_MERGE_NEXT.radiobutton.text
+msgid "Join with ~next table"
+msgstr "Съединяване със ~следващата таблица"
 
-#: splittbl.src#DLG_SPLIT_TABLE.RB_BOX_NOPARA.radiobutton.text
-msgid "Cu~stom heading"
-msgstr "Заглавие по и~збор"
-
-#: splittbl.src#DLG_SPLIT_TABLE.RB_BORDER.radiobutton.text
-msgid "~No heading"
-msgstr "~Без заглавие"
-
-#: splittbl.src#DLG_SPLIT_TABLE.modaldialog.text
-msgid "Split Table"
-msgstr "Разделяне на таблица"
+#: mergetbl.src#DLG_MERGE_TABLE.modaldialog.text
+msgid "Merge Tables"
+msgstr "Сливане на таблици"
 
 #: convert.src#DLG_CONV_TEXT_TABLE.CB_TAB.radiobutton.text
 msgid "~Tabs"
@@ -421,169 +584,6 @@ msgstr "Символ"
 msgid "Convert Table to Text"
 msgstr "Преобразуване на таблица в текст"
 
-#: tautofmt.src#DLG_AUTOFMT_TABLE.FL_FORMAT.fixedline.text
-msgid "Format"
-msgstr "Форматиране"
-
-#: tautofmt.src#DLG_AUTOFMT_TABLE.BTN_NUMFORMAT.checkbox.text
-msgid "~Number format"
-msgstr "~Числов формат"
-
-#: tautofmt.src#DLG_AUTOFMT_TABLE.BTN_BORDER.checkbox.text
-msgid "~Borders"
-msgstr "~Кантове"
-
-#: tautofmt.src#DLG_AUTOFMT_TABLE.BTN_FONT.checkbox.text
-msgid "F~ont"
-msgstr "~Шрифт"
-
-#: tautofmt.src#DLG_AUTOFMT_TABLE.BTN_PATTERN.checkbox.text
-msgid "~Pattern"
-msgstr "~Шарка"
-
-#: tautofmt.src#DLG_AUTOFMT_TABLE.BTN_ALIGNMENT.checkbox.text
-msgid "Alignmen~t"
-msgstr "~Подравняване"
-
-#: tautofmt.src#DLG_AUTOFMT_TABLE.FL_FORMATS.fixedline.text
-msgid "Formatting"
-msgstr "Форматиране"
-
-#: tautofmt.src#DLG_AUTOFMT_TABLE.BTN_MORE.morebutton.text
-msgid "~More"
-msgstr "~Още"
-
-#: tautofmt.src#DLG_AUTOFMT_TABLE.BTN_ADD.pushbutton.text
-msgid "~Add"
-msgstr "~Добавяне"
-
-#: tautofmt.src#DLG_AUTOFMT_TABLE.BTN_REMOVE.pushbutton.text
-msgid "~Delete"
-msgstr "~Изтриване"
-
-#: tautofmt.src#DLG_AUTOFMT_TABLE.BTN_RENAME.pushbutton.text
-msgid "~Rename"
-msgstr "~Преименуване"
-
-#: tautofmt.src#DLG_AUTOFMT_TABLE.STR_ADD_TITLE.string.text
-msgid "Add AutoFormat"
-msgstr "Добавяне на автоформат"
-
-#: tautofmt.src#DLG_AUTOFMT_TABLE.STR_ADD_LABEL.string.text
-msgctxt "tautofmt.src#DLG_AUTOFMT_TABLE.STR_ADD_LABEL.string.text"
-msgid "Name"
-msgstr "Име"
-
-#: tautofmt.src#DLG_AUTOFMT_TABLE.STR_DEL_TITLE.string.text
-msgid "Delete AutoFormat"
-msgstr "Изтриване на автоформат"
-
-#: tautofmt.src#DLG_AUTOFMT_TABLE.STR_DEL_MSG.string.text
-msgid "The following AutoFormat entry will be deleted:"
-msgstr "Следният запис за автоформат ще бъде изтрит:"
-
-#: tautofmt.src#DLG_AUTOFMT_TABLE.STR_RENAME_TITLE.string.text
-msgid "Rename AutoFormat"
-msgstr "Преименуване на автоформат"
-
-#: tautofmt.src#DLG_AUTOFMT_TABLE.STR_BTN_CLOSE.string.text
-msgid "~Close"
-msgstr "~Затваряне"
-
-#: tautofmt.src#DLG_AUTOFMT_TABLE.STR_JAN.string.text
-msgid "Jan"
-msgstr "Яну"
-
-#: tautofmt.src#DLG_AUTOFMT_TABLE.STR_FEB.string.text
-msgid "Feb"
-msgstr "Фев"
-
-#: tautofmt.src#DLG_AUTOFMT_TABLE.STR_MAR.string.text
-msgid "Mar"
-msgstr "Мар"
-
-#: tautofmt.src#DLG_AUTOFMT_TABLE.STR_NORTH.string.text
-msgid "North"
-msgstr "Север"
-
-#: tautofmt.src#DLG_AUTOFMT_TABLE.STR_MID.string.text
-msgid "Mid"
-msgstr "Център"
-
-#: tautofmt.src#DLG_AUTOFMT_TABLE.STR_SOUTH.string.text
-msgid "South"
-msgstr "Юг"
-
-#: tautofmt.src#DLG_AUTOFMT_TABLE.STR_SUM.string.text
-msgid "Sum"
-msgstr "Сума"
-
-#: tautofmt.src#DLG_AUTOFMT_TABLE.STR_INVALID_AFNAME.string.text
-msgid ""
-"You have entered an invalid name.\n"
-"The desired AutoFormat could not be created. \n"
-"Try again using a different name."
-msgstr ""
-"Въвели сте невалидно име.\n"
-"Желаният автоформат не може да бъде създаден. \n"
-"Опитайте отново с различно име."
-
-#: tautofmt.src#DLG_AUTOFMT_TABLE.modaldialog.text
-msgid "AutoFormat"
-msgstr "Автоформат"
-
-#: instable.src#DLG_INSERT_TABLE.FT_NAME.fixedtext.text
-msgctxt "instable.src#DLG_INSERT_TABLE.FT_NAME.fixedtext.text"
-msgid "Name"
-msgstr "Име"
-
-#: instable.src#DLG_INSERT_TABLE.FT_COL.fixedtext.text
-msgid "~Columns"
-msgstr "~Колони"
-
-#: instable.src#DLG_INSERT_TABLE.FT_ROW.fixedtext.text
-msgid "~Rows"
-msgstr "~Редове"
-
-#: instable.src#DLG_INSERT_TABLE.FL_TABLE.fixedline.text
-msgid "Size"
-msgstr "Размер"
-
-#: instable.src#DLG_INSERT_TABLE.CB_HEADER.checkbox.text
-msgctxt "instable.src#DLG_INSERT_TABLE.CB_HEADER.checkbox.text"
-msgid "Heading"
-msgstr "Заглавие"
-
-#: instable.src#DLG_INSERT_TABLE.CB_REPEAT_HEADER.checkbox.text
-msgctxt "instable.src#DLG_INSERT_TABLE.CB_REPEAT_HEADER.checkbox.text"
-msgid "Repeat heading"
-msgstr "Повтаряне на заглавието"
-
-#: instable.src#DLG_INSERT_TABLE.FT_REPEAT_HEADER.fixedtext.text
-msgctxt "instable.src#DLG_INSERT_TABLE.FT_REPEAT_HEADER.fixedtext.text"
-msgid "The first %POSITION_OF_CONTROL rows"
-msgstr "Първите %POSITION_OF_CONTROL реда"
-
-#: instable.src#DLG_INSERT_TABLE.CB_DONT_SPLIT.checkbox.text
-msgctxt "instable.src#DLG_INSERT_TABLE.CB_DONT_SPLIT.checkbox.text"
-msgid "Don't split table"
-msgstr "Таблицата да не се разделя"
-
-#: instable.src#DLG_INSERT_TABLE.CB_BORDER.checkbox.text
-msgctxt "instable.src#DLG_INSERT_TABLE.CB_BORDER.checkbox.text"
-msgid "Border"
-msgstr "Кант"
-
-#: instable.src#DLG_INSERT_TABLE.BT_AUTOFORMAT.pushbutton.text
-msgctxt "instable.src#DLG_INSERT_TABLE.BT_AUTOFORMAT.pushbutton.text"
-msgid "Auto~Format..."
-msgstr "~Автоформат..."
-
-#: instable.src#DLG_INSERT_TABLE.FL_OPTIONS.fixedline.text
-msgctxt "instable.src#DLG_INSERT_TABLE.FL_OPTIONS.fixedline.text"
-msgid "Options"
-msgstr "Настройки"
-
-#: instable.src#DLG_INSERT_TABLE.modaldialog.text
-msgid "Insert Table"
-msgstr "Вмъкване на таблица"
+#: table.src#MSG_ERR_TABLE_MERGE.infobox.text
+msgid "Selected table cells are too complex to merge."
+msgstr "Избраните клетки са твърде сложни, за да бъдат слети."

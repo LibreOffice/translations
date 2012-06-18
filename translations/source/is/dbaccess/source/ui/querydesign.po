@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: http://qa.openoffice.org/issues/enter_bug.cgi?comment=&component=l10n&form_name=enter_issue&short_desc=Localization+issue+in+file%3A+dbaccess%2Fsource%2Fui%2Fquerydesign.oo&subcomponent=ui\n"
-"POT-Creation-Date: 2012-05-29 12:13+0200\n"
+"POT-Creation-Date: 2012-06-16 12:41+0200\n"
 "PO-Revision-Date: 2011-04-05 11:01+0200\n"
 "Last-Translator: Sveinn í Felli <sveinki@nett.is>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -14,74 +14,6 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Translate Toolkit 1.9.0\n"
 "X-Accelerator-Marker: ~\n"
-
-#: querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.FL_JOIN.fixedline.text
-msgid "Options"
-msgstr "Valkostir"
-
-#: querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.FT_LISTBOXTITLE.fixedtext.text
-msgid "~Type"
-msgstr "~Tegund"
-
-#: querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.1.stringlist.text
-msgid "Inner join"
-msgstr "Innri töflutenging"
-
-#: querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.2.stringlist.text
-msgid "Left join"
-msgstr "Vinstri töflutenging"
-
-#: querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.3.stringlist.text
-msgid "Right join"
-msgstr "Hægri töflutenging"
-
-#: querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.4.stringlist.text
-msgid "Full (outer) join"
-msgstr "Ytri töflutenging"
-
-#: querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.5.stringlist.text
-msgid "Cross join"
-msgstr "Krossfeldi töflutenging"
-
-#: querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.CB_NATURAL.checkbox.text
-msgid "Natural"
-msgstr "Náttúruleg"
-
-#: querydlg.src#DLG_QRY_JOIN.WND_CONTROL.FL_INVOLVED_TABLES.fixedline.text
-msgid "Tables involved"
-msgstr "Töflur sem koma við sögu"
-
-#: querydlg.src#DLG_QRY_JOIN.WND_CONTROL.FL_INVOLVED_FIELDS.fixedline.text
-msgid "Fields involved"
-msgstr "Svið sem koma við sögu"
-
-#: querydlg.src#DLG_QRY_JOIN.modaldialog.text
-msgid "Join Properties"
-msgstr "Eiginleikar tengingar"
-
-#: querydlg.src#STR_JOIN_TYPE_HINT.string.text
-msgid "Please note that some databases may not support this join type."
-msgstr "Athugaðu að sumir gagnagrunnar styðja ekki þessa tegund töflutengingar."
-
-#: querydlg.src#STR_QUERY_INNER_JOIN.string.text
-msgid "Includes only records for which the contents of the related fields of both tables are identical."
-msgstr "Inniheldur aðeins færslur þar sem gildi í tengdum sviðum fyrir báðar töflur eru eins."
-
-#: querydlg.src#STR_QUERY_LEFTRIGHT_JOIN.string.text
-msgid "Contains ALL records from table '%1' but only records from table '%2' where the values in the related fields are matching."
-msgstr "Inniheldur ALLAR færslur frá töflu '%1' en aðeins færslur frá töflu '%2' þar sem gildi í tengdum sviðum passa."
-
-#: querydlg.src#STR_QUERY_FULL_JOIN.string.text
-msgid "Contains ALL records from '%1' and from '%2'."
-msgstr "Inniheldur ALLAR færslur frá '%1' og með '%2'."
-
-#: querydlg.src#STR_QUERY_CROSS_JOIN.string.text
-msgid "Contains the cartesian product of ALL records from '%1' and from '%2'."
-msgstr "Inniheldur mengjamargfeldi (cartesian) af ÖLLUM færslum frá '%1' og með '%2'."
-
-#: querydlg.src#STR_QUERY_NATURAL_JOIN.string.text
-msgid "Contains only one column for each pair of equally-named columns from '%1' and from '%2'."
-msgstr "Inniheldur aðeins einn dálk fyrir hvert par þar sem nöfn á dálkum eru eins frá '%1' og með '%2'."
 
 #: query.src#STR_QUERY_UNDO_TABWINSHOW.string.text
 msgid "Add Table Window"
@@ -275,6 +207,7 @@ msgstr " - %PRODUCTNAME Base: fyrirspurnahönnun"
 msgid " - %PRODUCTNAME Base: View Design"
 msgstr " - %PRODUCTNAME Base: Skoða hönnun"
 
+#. For $object$, one of the values of the RSC_QUERY_OBJECT_TYPE resource will be inserted.
 #: query.src#STR_QUERY_SAVEMODIFIED.string.text
 msgid ""
 "$object$ has been changed.\n"
@@ -283,10 +216,12 @@ msgstr ""
 "$object$ var breytt.\n"
 "Viltu vista breytingar?"
 
+#. For $object$, one of the values of the RSC_QUERY_OBJECT_TYPE resource (except "SQL command", which doesn't make sense here) will be inserted.
 #: query.src#STR_ERROR_PARSING_STATEMENT.string.text
 msgid "$object$ is based on an SQL command which could not be parsed."
 msgstr "$object$ er byggt á SQL skipun sem ekki var hægt að þátta."
 
+#. For $object$, one of the values of the RSC_QUERY_OBJECT_TYPE resource (except "SQL command", which doesn't make sense here) will be inserted.
 #: query.src#STR_INFO_OPENING_IN_SQL_VIEW.string.text
 msgid "$object$ will be opened in SQL view."
 msgstr "$object$ verður opnað í SQL sýn."
@@ -310,3 +245,71 @@ msgstr "Fyrirspurnin skilar ekki niðurstöðu, og þar sem er ekki hægt að no
 #: query.src#STR_NO_DATASOURCE_OR_CONNECTION.string.text
 msgid "Both the ActiveConnection and the DataSourceName parameter are missing or wrong - cannot initialize the query designer."
 msgstr "Báðar breyturnar ActiveConnection og DataSourceName vantar eða eru rangar - get ekki frumstillt hönnun á fyrirspurn."
+
+#: querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.FL_JOIN.fixedline.text
+msgid "Options"
+msgstr "Valkostir"
+
+#: querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.FT_LISTBOXTITLE.fixedtext.text
+msgid "~Type"
+msgstr "~Tegund"
+
+#: querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.1.stringlist.text
+msgid "Inner join"
+msgstr "Innri töflutenging"
+
+#: querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.2.stringlist.text
+msgid "Left join"
+msgstr "Vinstri töflutenging"
+
+#: querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.3.stringlist.text
+msgid "Right join"
+msgstr "Hægri töflutenging"
+
+#: querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.4.stringlist.text
+msgid "Full (outer) join"
+msgstr "Ytri töflutenging"
+
+#: querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.5.stringlist.text
+msgid "Cross join"
+msgstr "Krossfeldi töflutenging"
+
+#: querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.CB_NATURAL.checkbox.text
+msgid "Natural"
+msgstr "Náttúruleg"
+
+#: querydlg.src#DLG_QRY_JOIN.WND_CONTROL.FL_INVOLVED_TABLES.fixedline.text
+msgid "Tables involved"
+msgstr "Töflur sem koma við sögu"
+
+#: querydlg.src#DLG_QRY_JOIN.WND_CONTROL.FL_INVOLVED_FIELDS.fixedline.text
+msgid "Fields involved"
+msgstr "Svið sem koma við sögu"
+
+#: querydlg.src#DLG_QRY_JOIN.modaldialog.text
+msgid "Join Properties"
+msgstr "Eiginleikar tengingar"
+
+#: querydlg.src#STR_JOIN_TYPE_HINT.string.text
+msgid "Please note that some databases may not support this join type."
+msgstr "Athugaðu að sumir gagnagrunnar styðja ekki þessa tegund töflutengingar."
+
+#: querydlg.src#STR_QUERY_INNER_JOIN.string.text
+msgid "Includes only records for which the contents of the related fields of both tables are identical."
+msgstr "Inniheldur aðeins færslur þar sem gildi í tengdum sviðum fyrir báðar töflur eru eins."
+
+#: querydlg.src#STR_QUERY_LEFTRIGHT_JOIN.string.text
+msgid "Contains ALL records from table '%1' but only records from table '%2' where the values in the related fields are matching."
+msgstr "Inniheldur ALLAR færslur frá töflu '%1' en aðeins færslur frá töflu '%2' þar sem gildi í tengdum sviðum passa."
+
+#: querydlg.src#STR_QUERY_FULL_JOIN.string.text
+msgid "Contains ALL records from '%1' and from '%2'."
+msgstr "Inniheldur ALLAR færslur frá '%1' og með '%2'."
+
+#: querydlg.src#STR_QUERY_CROSS_JOIN.string.text
+msgid "Contains the cartesian product of ALL records from '%1' and from '%2'."
+msgstr "Inniheldur mengjamargfeldi (cartesian) af ÖLLUM færslum frá '%1' og með '%2'."
+
+#: querydlg.src#STR_QUERY_NATURAL_JOIN.string.text
+msgid "Contains only one column for each pair of equally-named columns from '%1' and from '%2'."
+msgstr "Inniheldur aðeins einn dálk fyrir hvert par þar sem nöfn á dálkum eru eins frá '%1' og með '%2'."
