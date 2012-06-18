@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: http://qa.openoffice.org/issues/enter_bug.cgi?comment=&component=l10n&form_name=enter_issue&short_desc=Localization+issue+in+file%3A+dbaccess%2Fsource%2Fui%2Fquerydesign.oo&subcomponent=ui\n"
-"POT-Creation-Date: 2012-05-29 12:13+0200\n"
-"PO-Revision-Date: 2012-02-08 16:40+0200\n"
+"POT-Creation-Date: 2012-06-16 12:41+0200\n"
+"PO-Revision-Date: 2012-03-25 05:51+0200\n"
 "Last-Translator: Cheng-Chia <pswo10680@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: zh_TW\n"
@@ -12,76 +12,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Pootle 2.1.6\n"
+"X-Generator: Translate Toolkit 1.9.0\n"
 "X-Accelerator-Marker: ~\n"
-
-#: querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.FL_JOIN.fixedline.text
-msgid "Options"
-msgstr "選項"
-
-#: querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.FT_LISTBOXTITLE.fixedtext.text
-msgid "~Type"
-msgstr "類型(~T)"
-
-#: querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.1.stringlist.text
-msgid "Inner join"
-msgstr "內部連結"
-
-#: querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.2.stringlist.text
-msgid "Left join"
-msgstr "左向連結"
-
-#: querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.3.stringlist.text
-msgid "Right join"
-msgstr "右向連結"
-
-#: querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.4.stringlist.text
-msgid "Full (outer) join"
-msgstr "完整的連結"
-
-#: querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.5.stringlist.text
-msgid "Cross join"
-msgstr "交叉連結"
-
-#: querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.CB_NATURAL.checkbox.text
-msgid "Natural"
-msgstr "自然"
-
-#: querydlg.src#DLG_QRY_JOIN.WND_CONTROL.FL_INVOLVED_TABLES.fixedline.text
-msgid "Tables involved"
-msgstr "相關的表格"
-
-#: querydlg.src#DLG_QRY_JOIN.WND_CONTROL.FL_INVOLVED_FIELDS.fixedline.text
-msgid "Fields involved"
-msgstr "相關的欄位"
-
-#: querydlg.src#DLG_QRY_JOIN.modaldialog.text
-msgid "Join Properties"
-msgstr "連結特性"
-
-#: querydlg.src#STR_JOIN_TYPE_HINT.string.text
-msgid "Please note that some databases may not support this join type."
-msgstr "請注意，有些資料庫可能不支援此連結類型。"
-
-#: querydlg.src#STR_QUERY_INNER_JOIN.string.text
-msgid "Includes only records for which the contents of the related fields of both tables are identical."
-msgstr "僅包含兩個表格中相關欄位相同的資料條目。"
-
-#: querydlg.src#STR_QUERY_LEFTRIGHT_JOIN.string.text
-msgid "Contains ALL records from table '%1' but only records from table '%2' where the values in the related fields are matching."
-msgstr "含有「%1」中的所有資料條目和「%2」中兩個表格的相關欄位相同的資料條目。"
-
-#: querydlg.src#STR_QUERY_FULL_JOIN.string.text
-msgid "Contains ALL records from '%1' and from '%2'."
-msgstr "含有「%1」和「%2」內全部的資料條目。"
-
-#: querydlg.src#STR_QUERY_CROSS_JOIN.string.text
-msgid "Contains the cartesian product of ALL records from '%1' and from '%2'."
-msgstr "包含來自「%1」和「%2」的所有記錄之卡笛生乘積 (Cartesian product)。"
-
-#: querydlg.src#STR_QUERY_NATURAL_JOIN.string.text
-msgid "Contains only one column for each pair of equally-named columns from '%1' and from '%2'."
-msgstr "僅包含「%1」和「%2」中每組相同名稱欄中的一欄。"
 
 #: query.src#STR_QUERY_UNDO_TABWINSHOW.string.text
 msgid "Add Table Window"
@@ -275,6 +207,7 @@ msgstr "- %PRODUCTNAME Base：查詢設計"
 msgid " - %PRODUCTNAME Base: View Design"
 msgstr "- %PRODUCTNAME Base：檢視設計"
 
+#. For $object$, one of the values of the RSC_QUERY_OBJECT_TYPE resource will be inserted.
 #: query.src#STR_QUERY_SAVEMODIFIED.string.text
 msgid ""
 "$object$ has been changed.\n"
@@ -283,10 +216,12 @@ msgstr ""
 "$object$ 已變更。\n"
 "是否要儲存變更？"
 
+#. For $object$, one of the values of the RSC_QUERY_OBJECT_TYPE resource (except "SQL command", which doesn't make sense here) will be inserted.
 #: query.src#STR_ERROR_PARSING_STATEMENT.string.text
 msgid "$object$ is based on an SQL command which could not be parsed."
 msgstr "$object$ 採用無法剖析的 SQL 指令。"
 
+#. For $object$, one of the values of the RSC_QUERY_OBJECT_TYPE resource (except "SQL command", which doesn't make sense here) will be inserted.
 #: query.src#STR_INFO_OPENING_IN_SQL_VIEW.string.text
 msgid "$object$ will be opened in SQL view."
 msgstr "$object$ 會於 SQL 檢視中開啟。"
@@ -310,3 +245,71 @@ msgstr "查詢不會建立結果集，因此無法成為其他查詢的一部份
 #: query.src#STR_NO_DATASOURCE_OR_CONNECTION.string.text
 msgid "Both the ActiveConnection and the DataSourceName parameter are missing or wrong - cannot initialize the query designer."
 msgstr "缺少或錯誤的 ActiveConnection 與 DataSourceName 引數 - 無法初始化查詢設計工具。"
+
+#: querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.FL_JOIN.fixedline.text
+msgid "Options"
+msgstr "選項"
+
+#: querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.FT_LISTBOXTITLE.fixedtext.text
+msgid "~Type"
+msgstr "類型(~T)"
+
+#: querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.1.stringlist.text
+msgid "Inner join"
+msgstr "內部連結"
+
+#: querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.2.stringlist.text
+msgid "Left join"
+msgstr "左向連結"
+
+#: querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.3.stringlist.text
+msgid "Right join"
+msgstr "右向連結"
+
+#: querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.4.stringlist.text
+msgid "Full (outer) join"
+msgstr "完整的連結"
+
+#: querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.5.stringlist.text
+msgid "Cross join"
+msgstr "交叉連結"
+
+#: querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.CB_NATURAL.checkbox.text
+msgid "Natural"
+msgstr "自然"
+
+#: querydlg.src#DLG_QRY_JOIN.WND_CONTROL.FL_INVOLVED_TABLES.fixedline.text
+msgid "Tables involved"
+msgstr "相關的表格"
+
+#: querydlg.src#DLG_QRY_JOIN.WND_CONTROL.FL_INVOLVED_FIELDS.fixedline.text
+msgid "Fields involved"
+msgstr "相關的欄位"
+
+#: querydlg.src#DLG_QRY_JOIN.modaldialog.text
+msgid "Join Properties"
+msgstr "連結屬性"
+
+#: querydlg.src#STR_JOIN_TYPE_HINT.string.text
+msgid "Please note that some databases may not support this join type."
+msgstr "請注意，有些資料庫可能不支援此連結類型。"
+
+#: querydlg.src#STR_QUERY_INNER_JOIN.string.text
+msgid "Includes only records for which the contents of the related fields of both tables are identical."
+msgstr "僅包含兩個表格中相關欄位相同的資料條目。"
+
+#: querydlg.src#STR_QUERY_LEFTRIGHT_JOIN.string.text
+msgid "Contains ALL records from table '%1' but only records from table '%2' where the values in the related fields are matching."
+msgstr "含有「%1」中的所有資料條目和「%2」中兩個表格的相關欄位相同的資料條目。"
+
+#: querydlg.src#STR_QUERY_FULL_JOIN.string.text
+msgid "Contains ALL records from '%1' and from '%2'."
+msgstr "含有「%1」和「%2」內全部的資料條目。"
+
+#: querydlg.src#STR_QUERY_CROSS_JOIN.string.text
+msgid "Contains the cartesian product of ALL records from '%1' and from '%2'."
+msgstr "包含來自「%1」和「%2」的所有記錄之卡笛生乘積 (Cartesian product)。"
+
+#: querydlg.src#STR_QUERY_NATURAL_JOIN.string.text
+msgid "Contains only one column for each pair of equally-named columns from '%1' and from '%2'."
+msgstr "僅包含「%1」和「%2」中每組相同名稱欄中的一欄。"

@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: querydesign\n"
 "Report-Msgid-Bugs-To: http://qa.openoffice.org/issues/enter_bug.cgi?comment=&component=l10n&form_name=enter_issue&short_desc=Localization+issue+in+file%3A+dbaccess%2Fsource%2Fui%2Fquerydesign.oo&subcomponent=ui\n"
-"POT-Creation-Date: 2012-05-29 12:13+0200\n"
+"POT-Creation-Date: 2012-06-16 12:41+0200\n"
 "PO-Revision-Date: 2011-10-20 23:32+0300\n"
 "Last-Translator: Yury Tarasievich\n"
 "Language-Team: <en@li.org>\n"
@@ -14,74 +14,6 @@ msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "X-Generator: Translate Toolkit 1.9.0\n"
 "X-Accelerator-Marker: ~\n"
-
-#: querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.FL_JOIN.fixedline.text
-msgid "Options"
-msgstr "Настаўленні"
-
-#: querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.FT_LISTBOXTITLE.fixedtext.text
-msgid "~Type"
-msgstr "Тып"
-
-#: querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.1.stringlist.text
-msgid "Inner join"
-msgstr "Унутраны \"JOIN\""
-
-#: querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.2.stringlist.text
-msgid "Left join"
-msgstr "Левы \"JOIN\""
-
-#: querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.3.stringlist.text
-msgid "Right join"
-msgstr "Правы \"JOIN\""
-
-#: querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.4.stringlist.text
-msgid "Full (outer) join"
-msgstr "Поўны (вонкавы) \"JOIN\""
-
-#: querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.5.stringlist.text
-msgid "Cross join"
-msgstr "Крыжаваны 'join'"
-
-#: querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.CB_NATURAL.checkbox.text
-msgid "Natural"
-msgstr "Натуральны"
-
-#: querydlg.src#DLG_QRY_JOIN.WND_CONTROL.FL_INVOLVED_TABLES.fixedline.text
-msgid "Tables involved"
-msgstr "Табліцы, якія ўдзельнічаюць"
-
-#: querydlg.src#DLG_QRY_JOIN.WND_CONTROL.FL_INVOLVED_FIELDS.fixedline.text
-msgid "Fields involved"
-msgstr "Палі, якія ўдзельнічаюць"
-
-#: querydlg.src#DLG_QRY_JOIN.modaldialog.text
-msgid "Join Properties"
-msgstr "Уласцівасці \"JOIN\""
-
-#: querydlg.src#STR_JOIN_TYPE_HINT.string.text
-msgid "Please note that some databases may not support this join type."
-msgstr "Заўважце, што некаторыя базы даных не падтрымліваюць гэтага тыпу \"JOIN\"."
-
-#: querydlg.src#STR_QUERY_INNER_JOIN.string.text
-msgid "Includes only records for which the contents of the related fields of both tables are identical."
-msgstr "Улучае толькі тыя запісы, у якіх ідэнтычнае змесціва адпаведных палёў у абедзвюх табліцах."
-
-#: querydlg.src#STR_QUERY_LEFTRIGHT_JOIN.string.text
-msgid "Contains ALL records from table '%1' but only records from table '%2' where the values in the related fields are matching."
-msgstr "Утрымлівае УСЕ запісы з табліцы '%1', але толькі тыя запісы з табліцы '%2', у якіх значэнні адпаведных палёў ідэнтычныя."
-
-#: querydlg.src#STR_QUERY_FULL_JOIN.string.text
-msgid "Contains ALL records from '%1' and from '%2'."
-msgstr "Утрымлівае УСЕ запісы з табліц '%1' і '%2'."
-
-#: querydlg.src#STR_QUERY_CROSS_JOIN.string.text
-msgid "Contains the cartesian product of ALL records from '%1' and from '%2'."
-msgstr "Утрымлівае дэкартаў здабытак УСІХ запісаў з '%1' і з '%2'."
-
-#: querydlg.src#STR_QUERY_NATURAL_JOIN.string.text
-msgid "Contains only one column for each pair of equally-named columns from '%1' and from '%2'."
-msgstr "акнавае толькі адну калонку для кожнай пары аднолькава названых калонак з '%1' і з '%2'."
 
 #: query.src#STR_QUERY_UNDO_TABWINSHOW.string.text
 msgid "Add Table Window"
@@ -275,6 +207,7 @@ msgstr " - %PRODUCTNAME Base: распрацоўка звароту"
 msgid " - %PRODUCTNAME Base: View Design"
 msgstr " - %PRODUCTNAME Base: распрацоўка віду"
 
+#. For $object$, one of the values of the RSC_QUERY_OBJECT_TYPE resource will be inserted.
 #: query.src#STR_QUERY_SAVEMODIFIED.string.text
 msgid ""
 "$object$ has been changed.\n"
@@ -283,10 +216,12 @@ msgstr ""
 "$object$ быў зменены.\n"
 "Ці жадаеце замацаваць змены?"
 
+#. For $object$, one of the values of the RSC_QUERY_OBJECT_TYPE resource (except "SQL command", which doesn't make sense here) will be inserted.
 #: query.src#STR_ERROR_PARSING_STATEMENT.string.text
 msgid "$object$ is based on an SQL command which could not be parsed."
 msgstr "Не ўдалося разабраць выраз SQL, на якім аснаваны $object$."
 
+#. For $object$, one of the values of the RSC_QUERY_OBJECT_TYPE resource (except "SQL command", which doesn't make sense here) will be inserted.
 #: query.src#STR_INFO_OPENING_IN_SQL_VIEW.string.text
 msgid "$object$ will be opened in SQL view."
 msgstr "$object$ адкрыецца ў паглядзе SQL."
@@ -310,3 +245,71 @@ msgstr "Зварот не стварае збору вынікаў, таму н�
 #: query.src#STR_NO_DATASOURCE_OR_CONNECTION.string.text
 msgid "Both the ActiveConnection and the DataSourceName parameter are missing or wrong - cannot initialize the query designer."
 msgstr "Неіснуючыя або няправільныя абодва параметры (ActiveConnection і DataSourceName), без якіх немагчыма ініцыялізаваць дызайнер* зваротаў."
+
+#: querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.FL_JOIN.fixedline.text
+msgid "Options"
+msgstr "Настаўленні"
+
+#: querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.FT_LISTBOXTITLE.fixedtext.text
+msgid "~Type"
+msgstr "Тып"
+
+#: querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.1.stringlist.text
+msgid "Inner join"
+msgstr "Унутраны \"JOIN\""
+
+#: querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.2.stringlist.text
+msgid "Left join"
+msgstr "Левы \"JOIN\""
+
+#: querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.3.stringlist.text
+msgid "Right join"
+msgstr "Правы \"JOIN\""
+
+#: querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.4.stringlist.text
+msgid "Full (outer) join"
+msgstr "Поўны (вонкавы) \"JOIN\""
+
+#: querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.5.stringlist.text
+msgid "Cross join"
+msgstr "Крыжаваны 'join'"
+
+#: querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.CB_NATURAL.checkbox.text
+msgid "Natural"
+msgstr "Натуральны"
+
+#: querydlg.src#DLG_QRY_JOIN.WND_CONTROL.FL_INVOLVED_TABLES.fixedline.text
+msgid "Tables involved"
+msgstr "Табліцы, якія ўдзельнічаюць"
+
+#: querydlg.src#DLG_QRY_JOIN.WND_CONTROL.FL_INVOLVED_FIELDS.fixedline.text
+msgid "Fields involved"
+msgstr "Палі, якія ўдзельнічаюць"
+
+#: querydlg.src#DLG_QRY_JOIN.modaldialog.text
+msgid "Join Properties"
+msgstr "Уласцівасці \"JOIN\""
+
+#: querydlg.src#STR_JOIN_TYPE_HINT.string.text
+msgid "Please note that some databases may not support this join type."
+msgstr "Заўважце, што некаторыя базы даных не падтрымліваюць гэтага тыпу \"JOIN\"."
+
+#: querydlg.src#STR_QUERY_INNER_JOIN.string.text
+msgid "Includes only records for which the contents of the related fields of both tables are identical."
+msgstr "Улучае толькі тыя запісы, у якіх ідэнтычнае змесціва адпаведных палёў у абедзвюх табліцах."
+
+#: querydlg.src#STR_QUERY_LEFTRIGHT_JOIN.string.text
+msgid "Contains ALL records from table '%1' but only records from table '%2' where the values in the related fields are matching."
+msgstr "Утрымлівае УСЕ запісы з табліцы '%1', але толькі тыя запісы з табліцы '%2', у якіх значэнні адпаведных палёў ідэнтычныя."
+
+#: querydlg.src#STR_QUERY_FULL_JOIN.string.text
+msgid "Contains ALL records from '%1' and from '%2'."
+msgstr "Утрымлівае УСЕ запісы з табліц '%1' і '%2'."
+
+#: querydlg.src#STR_QUERY_CROSS_JOIN.string.text
+msgid "Contains the cartesian product of ALL records from '%1' and from '%2'."
+msgstr "Утрымлівае дэкартаў здабытак УСІХ запісаў з '%1' і з '%2'."
+
+#: querydlg.src#STR_QUERY_NATURAL_JOIN.string.text
+msgid "Contains only one column for each pair of equally-named columns from '%1' and from '%2'."
+msgstr "акнавае толькі адну калонку для кожнай пары аднолькава названых калонак з '%1' і з '%2'."

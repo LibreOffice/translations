@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: http://qa.openoffice.org/issues/enter_bug.cgi?comment=&component=l10n&form_name=enter_issue&short_desc=Localization+issue+in+file%3A+dbaccess%2Fsource%2Fui%2Fquerydesign.oo&subcomponent=ui\n"
-"POT-Creation-Date: 2012-05-29 12:13+0200\n"
+"POT-Creation-Date: 2012-06-16 12:41+0200\n"
 "PO-Revision-Date: 2011-04-07 12:34+0200\n"
 "Last-Translator: Andras <timar74@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -14,74 +14,6 @@ msgstr ""
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
 "X-Generator: Translate Toolkit 1.9.0\n"
 "X-Accelerator-Marker: ~\n"
-
-#: querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.FL_JOIN.fixedline.text
-msgid "Options"
-msgstr "خيارات"
-
-#: querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.FT_LISTBOXTITLE.fixedtext.text
-msgid "~Type"
-msgstr "ال~نوع"
-
-#: querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.1.stringlist.text
-msgid "Inner join"
-msgstr "ربط داخلي"
-
-#: querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.2.stringlist.text
-msgid "Left join"
-msgstr "ربط لليسار"
-
-#: querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.3.stringlist.text
-msgid "Right join"
-msgstr "ربط لليمين"
-
-#: querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.4.stringlist.text
-msgid "Full (outer) join"
-msgstr "ربط كامل (خارجي)"
-
-#: querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.5.stringlist.text
-msgid "Cross join"
-msgstr "ربط رأسي"
-
-#: querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.CB_NATURAL.checkbox.text
-msgid "Natural"
-msgstr "عادي"
-
-#: querydlg.src#DLG_QRY_JOIN.WND_CONTROL.FL_INVOLVED_TABLES.fixedline.text
-msgid "Tables involved"
-msgstr "الجداول المعنية"
-
-#: querydlg.src#DLG_QRY_JOIN.WND_CONTROL.FL_INVOLVED_FIELDS.fixedline.text
-msgid "Fields involved"
-msgstr "الحقول المعنية"
-
-#: querydlg.src#DLG_QRY_JOIN.modaldialog.text
-msgid "Join Properties"
-msgstr "خصائص الربط"
-
-#: querydlg.src#STR_JOIN_TYPE_HINT.string.text
-msgid "Please note that some databases may not support this join type."
-msgstr "الرجاء ملاحظة أن بعض قواعد البيانات قد لا تدعم نوع الربط هذا."
-
-#: querydlg.src#STR_QUERY_INNER_JOIN.string.text
-msgid "Includes only records for which the contents of the related fields of both tables are identical."
-msgstr "تضمين السجلات التي تتطابق فيها محتويات الحقول المرتبطة لكلا الجدولين فقط."
-
-#: querydlg.src#STR_QUERY_LEFTRIGHT_JOIN.string.text
-msgid "Contains ALL records from table '%1' but only records from table '%2' where the values in the related fields are matching."
-msgstr "احتواء كل السجلات من الجدول '%1'، وفقط السجلات من '%2' التي تتطابق فيها محتويات الحقول المرتبطة."
-
-#: querydlg.src#STR_QUERY_FULL_JOIN.string.text
-msgid "Contains ALL records from '%1' and from '%2'."
-msgstr "احتواء كل السجلات من '%1' و'%2'."
-
-#: querydlg.src#STR_QUERY_CROSS_JOIN.string.text
-msgid "Contains the cartesian product of ALL records from '%1' and from '%2'."
-msgstr "احتواء المنتج الديكارتي لكل السجلات من '%1' و'%2'."
-
-#: querydlg.src#STR_QUERY_NATURAL_JOIN.string.text
-msgid "Contains only one column for each pair of equally-named columns from '%1' and from '%2'."
-msgstr "احتواء عمود واحد فقط لكل زوج من الأعمدة المتساوية في الاسم من '%1' و'%2'."
 
 #: query.src#STR_QUERY_UNDO_TABWINSHOW.string.text
 msgid "Add Table Window"
@@ -275,6 +207,7 @@ msgstr " - قاعدة %PRODUCTNAME: تصميم الاستعلام"
 msgid " - %PRODUCTNAME Base: View Design"
 msgstr " - قاعدة %PRODUCTNAME: تصميم العرض"
 
+#. For $object$, one of the values of the RSC_QUERY_OBJECT_TYPE resource will be inserted.
 #: query.src#STR_QUERY_SAVEMODIFIED.string.text
 msgid ""
 "$object$ has been changed.\n"
@@ -283,10 +216,12 @@ msgstr ""
 "$object$ تم تغييره.\n"
 "هل ترغب في حفظ التغييرات؟"
 
+#. For $object$, one of the values of the RSC_QUERY_OBJECT_TYPE resource (except "SQL command", which doesn't make sense here) will be inserted.
 #: query.src#STR_ERROR_PARSING_STATEMENT.string.text
 msgid "$object$ is based on an SQL command which could not be parsed."
 msgstr "يستند $object$ إلى أمر SQL تعذر تحليله."
 
+#. For $object$, one of the values of the RSC_QUERY_OBJECT_TYPE resource (except "SQL command", which doesn't make sense here) will be inserted.
 #: query.src#STR_INFO_OPENING_IN_SQL_VIEW.string.text
 msgid "$object$ will be opened in SQL view."
 msgstr "يتم فتح $object$ في عرض SQL."
@@ -310,3 +245,71 @@ msgstr "لا يقوم الاستعلام بإنشاء مجموعة نتائج، 
 #: query.src#STR_NO_DATASOURCE_OR_CONNECTION.string.text
 msgid "Both the ActiveConnection and the DataSourceName parameter are missing or wrong - cannot initialize the query designer."
 msgstr "كل من معلمتي ActiveConnectio وDataSourceName مفقودة أو خاطئة - لا يمكن تهيئة مصمم الاستعلامات."
+
+#: querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.FL_JOIN.fixedline.text
+msgid "Options"
+msgstr "خيارات"
+
+#: querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.FT_LISTBOXTITLE.fixedtext.text
+msgid "~Type"
+msgstr "ال~نوع"
+
+#: querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.1.stringlist.text
+msgid "Inner join"
+msgstr "ربط داخلي"
+
+#: querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.2.stringlist.text
+msgid "Left join"
+msgstr "ربط لليسار"
+
+#: querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.3.stringlist.text
+msgid "Right join"
+msgstr "ربط لليمين"
+
+#: querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.4.stringlist.text
+msgid "Full (outer) join"
+msgstr "ربط كامل (خارجي)"
+
+#: querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.LB_JOINTYPE.5.stringlist.text
+msgid "Cross join"
+msgstr "ربط رأسي"
+
+#: querydlg.src#DLG_QRY_JOIN.WND_JOIN_CONTROL.CB_NATURAL.checkbox.text
+msgid "Natural"
+msgstr "عادي"
+
+#: querydlg.src#DLG_QRY_JOIN.WND_CONTROL.FL_INVOLVED_TABLES.fixedline.text
+msgid "Tables involved"
+msgstr "الجداول المعنية"
+
+#: querydlg.src#DLG_QRY_JOIN.WND_CONTROL.FL_INVOLVED_FIELDS.fixedline.text
+msgid "Fields involved"
+msgstr "الحقول المعنية"
+
+#: querydlg.src#DLG_QRY_JOIN.modaldialog.text
+msgid "Join Properties"
+msgstr "خصائص الربط"
+
+#: querydlg.src#STR_JOIN_TYPE_HINT.string.text
+msgid "Please note that some databases may not support this join type."
+msgstr "الرجاء ملاحظة أن بعض قواعد البيانات قد لا تدعم نوع الربط هذا."
+
+#: querydlg.src#STR_QUERY_INNER_JOIN.string.text
+msgid "Includes only records for which the contents of the related fields of both tables are identical."
+msgstr "تضمين السجلات التي تتطابق فيها محتويات الحقول المرتبطة لكلا الجدولين فقط."
+
+#: querydlg.src#STR_QUERY_LEFTRIGHT_JOIN.string.text
+msgid "Contains ALL records from table '%1' but only records from table '%2' where the values in the related fields are matching."
+msgstr "احتواء كل السجلات من الجدول '%1'، وفقط السجلات من '%2' التي تتطابق فيها محتويات الحقول المرتبطة."
+
+#: querydlg.src#STR_QUERY_FULL_JOIN.string.text
+msgid "Contains ALL records from '%1' and from '%2'."
+msgstr "احتواء كل السجلات من '%1' و'%2'."
+
+#: querydlg.src#STR_QUERY_CROSS_JOIN.string.text
+msgid "Contains the cartesian product of ALL records from '%1' and from '%2'."
+msgstr "احتواء المنتج الديكارتي لكل السجلات من '%1' و'%2'."
+
+#: querydlg.src#STR_QUERY_NATURAL_JOIN.string.text
+msgid "Contains only one column for each pair of equally-named columns from '%1' and from '%2'."
+msgstr "احتواء عمود واحد فقط لكل زوج من الأعمدة المتساوية في الاسم من '%1' و'%2'."
