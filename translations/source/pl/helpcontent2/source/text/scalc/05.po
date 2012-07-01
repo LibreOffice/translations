@@ -3,16 +3,16 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: http://qa.openoffice.org/issues/enter_bug.cgi?comment=&component=l10n&form_name=enter_issue&short_desc=Localization+issue+in+file%3A+helpcontent2%2Fsource%2Ftext%2Fscalc%2F05.oo&subcomponent=ui\n"
-"POT-Creation-Date: 2012-06-16 12:42+0200\n"
-"PO-Revision-Date: 2012-02-17 20:43+0200\n"
-"Last-Translator: marcinz <marcinzb@interia.pl>\n"
+"POT-Creation-Date: 2012-06-26 09:53+0200\n"
+"PO-Revision-Date: 2012-06-28 09:55+0200\n"
+"Last-Translator: Konrad <raknor@wp.pl>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Translate Toolkit 1.9.0\n"
+"X-Generator: Pootle 2.1.6\n"
 "X-Accelerator-Marker: ~\n"
 
 #: empty_cells.xhp#tit.help.text
@@ -29,7 +29,7 @@ msgstr "<variable id=\"empty_cells\"><link href=\"text/scalc/05/empty_cells.xhp\
 
 #: empty_cells.xhp#par_id8266853.help.text
 msgid "In older versions of the software, empty cells were forced to numeric 0 in some contexts and to empty string in others, except in direct comparison where =A1=0 and =A1=\"\" both resulted in TRUE if A1 was empty. Emptiness now is inherited until used, so both =VLOOKUP(...)=0 and =VLOOKUP(...)=\"\" give TRUE if the lookup resulted in an empty cell being returned. "
-msgstr "We wcześniejszych wersjach programu w niektórych kontekstach wymuszane było wstawianie w pustych komórkach wartości 0, a w innych – pustego ciągu. Wyjątek stanowiło bezpośrednie porównanie, gdzie zarówno formuła =A1=0, jak i formuła =A1=\"\" zwracały wartość PRAWDA w przypadku, gdy komórka A1 była pusta. Atrybut braku zawartości jest teraz dziedziczony aż do momentu użycia, dlatego tak formuła =VLOOKUP(...)=0, jak i formuła =VLOOKUP(...)=\"\" zwracają wartość PRAWDA, jeśli wynikiem wyszukiwania jest pusta komórka. "
+msgstr "We wcześniejszych wersjach programu w niektórych kontekstach wymuszane było wstawianie w pustych komórkach wartości 0, a w innych – pustego ciągu. Wyjątek stanowiło bezpośrednie porównanie, gdzie zarówno formuła =A1=0, jak i formuła =A1=\"\" zwracały wartość PRAWDA w przypadku, gdy komórka A1 była pusta. Atrybut braku zawartości jest teraz dziedziczony aż do momentu użycia, dlatego tak formuła =WYSZUKAJ.PIONOWO(...)=0, jak i formuła =WYSZUKAJ.PIONOWO(...)=\"\" zwracają wartość PRAWDA, jeśli wynikiem wyszukiwania jest pusta komórka. "
 
 #: empty_cells.xhp#par_id2733542.help.text
 msgid "A simple reference to an empty cell is still displayed as numeric 0 but is not necessarily of type numeric anymore, so also comparisons with the referencing cell work as expected. "
@@ -46,69 +46,69 @@ msgstr "A1: 1 B1: <empty> C1: =B1 (wyświetla 0)"
 #: empty_cells.xhp#par_id4086428.help.text
 msgctxt "empty_cells.xhp#par_id4086428.help.text"
 msgid "=B1=0 => TRUE"
-msgstr "=B1=0 => TRUE"
+msgstr "=B1=0 => PRAWDA"
 
 #: empty_cells.xhp#par_id9024628.help.text
 msgid "=B1=\"\" => TRUE"
-msgstr "=B1=\"\" => TRUE"
+msgstr "=B1=\"\" => PRAWDA"
 
 #: empty_cells.xhp#par_id3067110.help.text
 msgid "=C1=0 => TRUE"
-msgstr "=C1=0 => TRUE"
+msgstr "=C1=0 => PRAWDA"
 
 #: empty_cells.xhp#par_id8841822.help.text
 msgid "=C1=\"\" => TRUE (previously was FALSE)"
-msgstr "=C1=\"\" => TRUE (poprzednio FALSE)"
+msgstr "=C1=\"\" => PRAWDA (poprzednio FAŁSZ)"
 
 #: empty_cells.xhp#par_id4077578.help.text
 msgid "=ISNUMBER(B1) => FALSE"
-msgstr "=ISNUMBER(B1) => FALSE"
+msgstr "=CZY.LICZBA(B1) => FAŁSZ"
 
 #: empty_cells.xhp#par_id9094515.help.text
 msgid "=ISNUMBER(C1) => FALSE (previously was TRUE)"
-msgstr "=ISNUMBER(C1) => FALSE (poprzednio TRUE)"
+msgstr "=CZY.LICZBA(C1) => FAŁSZ (poprzednio PRAWDA)"
 
 #: empty_cells.xhp#par_id396740.help.text
 msgid "=ISNUMBER(VLOOKUP(1;A1:C1;2)) => FALSE (B1)"
-msgstr "=ISNUMBER(VLOOKUP(1;A1:C1;2)) => FALSE (B1)"
+msgstr "=CZY.LICZBA(WYSZUKAJ.PIONOWO(1;A1:C1;2)) => FAŁSZ (B1)"
 
 #: empty_cells.xhp#par_id3859675.help.text
 msgid "=ISNUMBER(VLOOKUP(1;A1:C1;3)) => FALSE (C1, previously was TRUE)"
-msgstr "=ISNUMBER(VLOOKUP(1;A1:C1;3)) => FALSE (C1, poprzednio TRUE)"
+msgstr "=CZY.LICZBA(WYSZUKAJ.PIONOWO(1;A1:C1;3)) => FAŁSZ (C1, poprzednio PRAWDA)"
 
 #: empty_cells.xhp#par_id402233.help.text
 msgctxt "empty_cells.xhp#par_id402233.help.text"
 msgid "=ISTEXT(B1) => FALSE"
-msgstr "=ISTEXT(B1) => FALSE"
+msgstr "=CZY.TEKST(B1) => FAŁSZ"
 
 #: empty_cells.xhp#par_id1623889.help.text
 msgctxt "empty_cells.xhp#par_id1623889.help.text"
 msgid "=ISTEXT(C1) => FALSE"
-msgstr "=ISTEXT(C1) => FALSE"
+msgstr "=CZY.TEKST(C1) => FAŁSZ"
 
 #: empty_cells.xhp#par_id7781914.help.text
 msgid "=ISTEXT(VLOOKUP(1;A1:C1;2)) => FALSE (B1, previously was TRUE)"
-msgstr "=ISTEXT(VLOOKUP(1;A1:C1;2)) => FALSE (B1, poprzednio TRUE)"
+msgstr "=CZY.TEKST(WYSZUKAJ.PIONOWO(1;A1:C1;2)) => FAŁSZ (B1, poprzednio PRAWDA)"
 
 #: empty_cells.xhp#par_id300912.help.text
 msgid "=ISTEXT(VLOOKUP(1;A1:C1;3)) => FALSE (C1)"
-msgstr "=ISTEXT(VLOOKUP(1;A1:C1;3)) => FALSE (C1)"
+msgstr "=CZY.TEKST(WYSZUKAJ.PIONOWO(1;A1:C1;3)) => FAŁSZ (C1)"
 
 #: empty_cells.xhp#par_id9534592.help.text
 msgid "=ISBLANK(B1) => TRUE"
-msgstr "=ISBLANK(B1) => TRUE"
+msgstr "=CZY.PUSTA(B1) => PRAWDA"
 
 #: empty_cells.xhp#par_id4969328.help.text
 msgid "=ISBLANK(C1) => FALSE"
-msgstr "=ISBLANK(C1) => FALSE"
+msgstr "=CZY.PUSTA(C1) => FAŁSZ"
 
 #: empty_cells.xhp#par_id9635914.help.text
 msgid "=ISBLANK(VLOOKUP(1;A1:C1;2)) => TRUE (B1, previously was FALSE)"
-msgstr "=ISBLANK(VLOOKUP(1;A1:C1;2)) => TRUE (B1, poprzednio FALSE)"
+msgstr "=CZY.PUSTA(WYSZUKAJ.PIONOWO(1;A1:C1;2)) => PRAWDA (B1, poprzednio FAŁSZ)"
 
 #: empty_cells.xhp#par_id2476577.help.text
 msgid "=ISBLANK(VLOOKUP(1;A1:C1;3)) => FALSE (C1)"
-msgstr "=ISBLANK(VLOOKUP(1;A1:C1;3)) => FALSE (C1)"
+msgstr "=CZY.PUSTA(WYSZUKAJ.PIONOWO(1;A1:C1;3)) => FAŁSZ (C1)"
 
 #: empty_cells.xhp#par_id4217047.help.text
 msgid "Note that Microsoft Excel behaves different and always returns a number as the result of a reference to an empty cell or a formula cell with the result of an empty cell. For example:"
@@ -124,58 +124,58 @@ msgstr "B1: =A1 => wyświetla wartość 0, ale jest to tylko odwołanie do puste
 
 #: empty_cells.xhp#par_id4524674.help.text
 msgid "=ISNUMBER(A1) => FALSE"
-msgstr "=ISNUMBER(A1) => FALSE"
+msgstr "=CZY.LICZBA(A1) => FAŁSZ"
 
 #: empty_cells.xhp#par_id4396801.help.text
 msgid "=ISTEXT(A1) => FALSE"
-msgstr "=ISTEXT(A1) => FALSE"
+msgstr "=CZY.TEKST(A1) => FAŁSZ"
 
 #: empty_cells.xhp#par_id5293740.help.text
 msgid "=A1=0 => TRUE"
-msgstr "=A1=0 => TRUE"
+msgstr "=A1=0 => PRAWDA"
 
 #: empty_cells.xhp#par_id7623828.help.text
 msgid "=A1=\"\" => TRUE"
-msgstr "=A1=\"\" => TRUE"
+msgstr "=A1=\"\" => PRAWDA"
 
 #: empty_cells.xhp#par_id2861720.help.text
 msgid "=ISNUMBER(B1) => FALSE (MS-Excel: TRUE)"
-msgstr "=ISNUMBER(B1) => FALSE (MS-Excel: TRUE)"
+msgstr "=CZY.LICZBA(B1) => FAŁSZ (MS-Excel: PRAWDA)"
 
 #: empty_cells.xhp#par_id9604480.help.text
 msgctxt "empty_cells.xhp#par_id9604480.help.text"
 msgid "=ISTEXT(B1) => FALSE"
-msgstr "=ISTEXT(B1) => FALSE"
+msgstr "=CZY.TEKST(B1) => FAŁSZ"
 
 #: empty_cells.xhp#par_id2298959.help.text
 msgctxt "empty_cells.xhp#par_id2298959.help.text"
 msgid "=B1=0 => TRUE"
-msgstr "=B1=0 => TRUE"
+msgstr "=B1=0 => PRAWDA"
 
 #: empty_cells.xhp#par_id4653767.help.text
 msgid "=B1=\"\" => TRUE (MS-Excel: FALSE)"
-msgstr "=B1=\"\" => TRUE (MS-Excel: FALSE)"
+msgstr "=B1=\"\" => PRAWDA (MS-Excel: FAŁSZ)"
 
 #: empty_cells.xhp#par_id8801538.help.text
 msgid "C1: =VLOOKUP(...) with empty cell result => displays empty (MS-Excel: displays 0)"
-msgstr "C1: =VLOOKUP(...) gdy wynikiem jest pusta komórka => wyświetla pustą komórkę (MS-Excel: wyświetla 0)"
+msgstr "C1: =WYSZUKAJ.PIONOWO(...) gdy wynikiem jest pusta komórka => wyświetla pustą komórkę (MS-Excel: wyświetla 0)"
 
 #: empty_cells.xhp#par_id6746421.help.text
 msgid "=ISNUMBER(VLOOKUP(...)) => FALSE"
-msgstr "=ISNUMBER(VLOOKUP(...)) => FALSE"
+msgstr "=CZY.LICZBA(WYSZUKAJ.PIONOWO(...)) => FAŁSZ"
 
 #: empty_cells.xhp#par_id4876247.help.text
 msgid "=ISTEXT(VLOOKUP(...)) => FALSE"
-msgstr "=ISTEXT(VLOOKUP(...)) => FALSE"
+msgstr "=CZY.TEKST(WYSZUKAJ.PIONOWO(...)) => FAŁSZ"
 
 #: empty_cells.xhp#par_id7458723.help.text
 msgid "=ISNUMBER(C1) => FALSE (MS-Excel: TRUE)"
-msgstr "=ISNUMBER(C1) => FALSE (MS-Excel: TRUE)"
+msgstr "=CZY.LICZBA(C1) => FAŁSZ (MS-Excel: PRAWDA)"
 
 #: empty_cells.xhp#par_id2753379.help.text
 msgctxt "empty_cells.xhp#par_id2753379.help.text"
 msgid "=ISTEXT(C1) => FALSE"
-msgstr "=ISTEXT(C1) => FALSE"
+msgstr "=CZY.TEKST(C1) => FAŁSZ"
 
 #: 02140000.xhp#tit.help.text
 msgid "Error Codes in %PRODUCTNAME Calc"
@@ -199,11 +199,11 @@ msgstr "<bookmark_value>komunikat o błędzie ###</bookmark_value>"
 
 #: 02140000.xhp#bm_id3154634.help.text
 msgid "<bookmark_value>invalid references; error messages</bookmark_value>               <bookmark_value>error messages;invalid references</bookmark_value>               <bookmark_value>#REF error message</bookmark_value>"
-msgstr "<bookmark_value>nieprawidłowe odwołania; komunikaty o błędach</bookmark_value>               <bookmark_value>komunikaty o błędach;nieprawidłowe odwołania</bookmark_value>               <bookmark_value>komunikat o błędzie #REF</bookmark_value>"
+msgstr "<bookmark_value>nieprawidłowe odwołania; komunikaty o błędach</bookmark_value>               <bookmark_value>komunikaty o błędach;nieprawidłowe odwołania</bookmark_value>               <bookmark_value>komunikat o błędzie #ADR</bookmark_value>"
 
 #: 02140000.xhp#bm_id3148428.help.text
 msgid "<bookmark_value>invalid names; error messages</bookmark_value>               <bookmark_value>#NAME error message</bookmark_value>"
-msgstr "<bookmark_value>nieprawidłowe nazwy; komunikaty o błędach</bookmark_value>               <bookmark_value>komunikat o błędzie #NAME</bookmark_value>"
+msgstr "<bookmark_value>nieprawidłowe nazwy; komunikaty o błędach</bookmark_value>               <bookmark_value>komunikat o błędzie #NAZWA</bookmark_value>"
 
 #: 02140000.xhp#par_id3153968.3.help.text
 msgid "Error Code"
@@ -251,11 +251,11 @@ msgstr "Nieprawidłowy argument"
 
 #: 02140000.xhp#par_id3153160.11.help.text
 msgid "Function argument is not valid. For example, a negative number for the SQRT() function, for this please use IMSQRT()."
-msgstr "Argument funkcji nie jest poprawny. Na przykład liczba ujemna dla funkcji SQRT(), dla tego przypadku proszę użyć IMSQRT()."
+msgstr "Argument funkcji nie jest poprawny. Na przykład liczba ujemna dla funkcji PIERWIASTEK(), dla tego przypadku proszę użyć PIERWIASTEK.LICZBY.ZESP()."
 
 #: 02140000.xhp#par_id3154015.12.help.text
 msgid "503<br/>#NUM!"
-msgstr "503<br/>#NUM!"
+msgstr "503<br/>#LICZBA!"
 
 #: 02140000.xhp#par_id3155766.13.help.text
 msgid "Invalid floating point operation"
@@ -325,7 +325,7 @@ msgstr "Brak zmiennej"
 
 #: 02140000.xhp#par_id3145319.38.help.text
 msgid "Function requires more variables than are provided, for example, AND() and OR()."
-msgstr "Funkcja wymaga większej liczby zmiennych niż podano, na przykład AND() i OR()."
+msgstr "Funkcja wymaga większej liczby zmiennych niż podano, na przykład I() i LUB()."
 
 #: 02140000.xhp#par_id3149050.39.help.text
 msgid "512"
@@ -405,11 +405,11 @@ msgstr "Zmienna nie jest dostępna"
 
 #: 02140000.xhp#par_id3146142.60.help.text
 msgid "519<br/>#VALUE"
-msgstr "519<br/>#VALUE"
+msgstr "519<br/>#ARG"
 
 #: 02140000.xhp#par_id3155954.61.help.text
 msgid "No result (#VALUE is in the cell rather than Err:519!)"
-msgstr "Brak wyniku (w komórce jest #VALUE zamiast Err:519!)"
+msgstr "Brak wyniku (w komórce jest #ARG zamiast Błąd:519!)"
 
 #: 02140000.xhp#par_id3153108.62.help.text
 msgid "The formula yields a value that does not correspond to the definition; or a cell that is referenced in the formula contains text instead of a number."
@@ -467,11 +467,11 @@ msgstr "Wynik funkcji jest niewłaściwy lub <link href=\"text/shared/optionen/0
 
 #: 02140000.xhp#par_id3153544.75.help.text
 msgid "524<br/>#REF"
-msgstr "524<br/>#REF"
+msgstr "524<br/>#ADR"
 
 #: 02140000.xhp#par_id3154634.76.help.text
 msgid "invalid references (instead of Err:524 cell contains #REF)"
-msgstr "Nieprawidłowe odwołania (komórka zawiera #ADR zamiast Err:524) "
+msgstr "Nieprawidłowe odwołania (komórka zawiera #ADR zamiast Błąd:524) "
 
 #: 02140000.xhp#par_id3147539.77.help.text
 msgid "                  <emph>Compiler:</emph> a column or row description name could not be resolved. <emph>Interpreter:</emph> in a formula, the column, row, or sheet that contains a referenced cell is missing."
@@ -479,11 +479,11 @@ msgstr "                  <emph>Kompilator:</emph> nie można uzyskać nazwy kol
 
 #: 02140000.xhp#par_id3155984.78.help.text
 msgid "525<br/>#NAME?"
-msgstr "525<br/>#NAME?"
+msgstr "525<br/>#NAZWA?"
 
 #: 02140000.xhp#par_id3148428.79.help.text
 msgid "invalid names (instead of Err:525 cell contains #NAME?)"
-msgstr "Nieprawidłowe nazwy (komórka zawiera #NAZWA? zamiast Err:525)"
+msgstr "Nieprawidłowe nazwy (komórka zawiera #NAZWA? zamiast Błąd:525)"
 
 #: 02140000.xhp#par_id3156259.80.help.text
 msgid "An identifier could not be evaluated, for example, no valid reference, no valid domain name, no column/row label, no macro, incorrect decimal divider, add-in not found."
@@ -517,7 +517,7 @@ msgstr "                  <emph>Interpreter: </emph>Odwołania, takie jak odwoł
 
 #: 02140000.xhp#par_id5324564.help.text
 msgid "532<br/>#DIV/0!"
-msgstr "532<br/>#DIV/0!"
+msgstr "532<br/>#DZIEL/0!"
 
 #: 02140000.xhp#par_id7941831.help.text
 msgid "Division by zero"
