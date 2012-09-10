@@ -4,9 +4,9 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: http://qa.openoffice.org/issues/enter_bug.cgi?comment=&component=l10n&form_name=enter_issue&short_desc=Localization+issue+in+file%3A+connectivity%2Fsource%2Fresource.oo&subcomponent=ui\n"
 "POT-Creation-Date: 2012-07-04 16:39+0200\n"
-"PO-Revision-Date: 2012-06-18 15:32+0200\n"
-"Last-Translator: Modestas <modestas.rimkus@gmail.com>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2012-09-05 11:48+0300\n"
+"Last-Translator: Modestas Rimkus <modestas.rimkus@gmail.com>\n"
+"Language-Team: Lithuanian <komp_lt@konferencijos.lt>\n"
 "Language: lt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -14,6 +14,7 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Generator: Translate Toolkit 1.9.0\n"
 "X-Accelerator-Marker: ~\n"
+"X-Project-Style: openoffice\n"
 
 #: conn_error_message.src#256___2_100___0.string.text
 msgid "The record operation has been vetoed."
@@ -122,7 +123,6 @@ msgid "This statement type not supported by this database driver."
 msgstr "Toks sakinio tipas nesuderinamas su duomenų bazės tvarkykle."
 
 #: conn_shared_res.src#STR_UNSPECIFIED_ERROR.string.text
-#, fuzzy
 msgid "An unknown error occurred."
 msgstr "Įvyko nežinoma klaida."
 
@@ -135,14 +135,12 @@ msgid "The library '$libname$' could not be loaded."
 msgstr "Nepavyko įkelti bibliotekos „$libname$“."
 
 #: conn_shared_res.src#STR_ERROR_REFRESH_ROW.string.text
-#, fuzzy
 msgid "An error occurred while refreshing the current row."
-msgstr "Atnaujinant eilutę įvyko klaida."
+msgstr "Atnaujinant veikiamąją eilutę įvyko klaida."
 
 #: conn_shared_res.src#STR_ERROR_GET_ROW.string.text
-#, fuzzy
 msgid "An error occurred while getting the current row."
-msgstr "Įkeliant eilutę įvyko klaida."
+msgstr "Įkeliant veikiamąją eilutę įvyko klaida."
 
 #: conn_shared_res.src#STR_CAN_NOT_CANCEL_ROW_UPDATE.string.text
 msgid "The row update can not be canceled."
@@ -157,7 +155,6 @@ msgid "The query can not be executed. The 'IS NULL' can only be used with a colu
 msgstr "Užklausos įvykdyti negalima - sąlygą IS NULL galima naudoti tik su stulpelio vardu."
 
 #: conn_shared_res.src#STR_ILLEGAL_MOVEMENT.string.text
-#, fuzzy
 msgid "Illegal cursor movement occurred."
 msgstr "Įvykdytas neleistinas žymeklio judesys."
 
@@ -291,7 +288,7 @@ msgstr "Sakinyje neteisingai atrinkti stulpeliai."
 
 #: conn_shared_res.src#STR_COLUMN_NOT_UPDATEABLE.string.text
 msgid "The column at position '$position$' could not be updated."
-msgstr "Nepavyko atnaujinti stulpelio „$position$“."
+msgstr "Nepavyko atnaujinti stulpelio pozicijos „$position$“."
 
 #: conn_shared_res.src#STR_COULD_NOT_LOAD_FILE.string.text
 msgid "The file $filename$ could not be loaded."
@@ -348,7 +345,6 @@ msgid "The connection could not be created. May be the necessary data provider i
 msgstr "Ryšio užmegzti nepavyko. Galbūt neįdiegtas reikiamas duomenų šaltinis."
 
 #: conn_shared_res.src#STR_COULD_NOT_DELETE_INDEX.string.text
-#, fuzzy
 msgid "The index could not be deleted. An unknown error while accessing the file system occurred."
 msgstr "Nepavyko pašalinti rodyklės: kreipiantis į failų sistemą įvyko nežinoma klaida."
 
@@ -390,7 +386,7 @@ msgstr "Netinkamas stulpelio „$columnname$“ tikslumas."
 
 #: conn_shared_res.src#STR_INVALID_PRECISION_SCALE.string.text
 msgid "Precision is less than scale for column '$columnname$'."
-msgstr ""
+msgstr "Stulpelyje „$columnname$“ dešimtainių skilčių yra mažiau nei numatyta."
 
 #: conn_shared_res.src#STR_INVALID_COLUMN_NAME_LENGTH.string.text
 msgid "Invalid column name length for column '$columnname$'."
@@ -406,35 +402,37 @@ msgid ""
 "\n"
 "The specified value \"$value$ is longer than the number of digits allowed."
 msgstr ""
+"Stulpelis „$columnname$“ buvo apibrėžtas kaip dešimtainis, didžiausias ženklų skaičius yra $precision$ (dešimtainių skilčių: $scale$).\n"
+"\n"
+"Nurodyta reikšmė „$value$“ yra ilgesnė, nei leidžiama."
 
 #: conn_shared_res.src#STR_COLUMN_NOT_ALTERABLE.string.text
 msgid "The column '$columnname$' could not be altered. May be the file system is write protected."
-msgstr ""
+msgstr "Nepavyko pakeisti stulpelio „$columnname$“. Gali būti, kad failų sistema yra apsaugota nuo rašymo."
 
 #: conn_shared_res.src#STR_INVALID_COLUMN_VALUE.string.text
 msgid "The column '$columnname$' could not be updated. The value is invalid for that column."
-msgstr ""
+msgstr "Nepavyko atnaujinti stulpelio „$columnname$“. Nurodyta reikšmė šiame stulpelyje neleidžiama."
 
 #: conn_shared_res.src#STR_COLUMN_NOT_ADDABLE.string.text
 msgid "The column '$columnname$' could not be added. May be the file system is write protected."
-msgstr ""
+msgstr "Nepavyko pridėti stulpelio „$columnname$“. Gali būti, kad failų sistema yra apsaugota nuo rašymo."
 
 #: conn_shared_res.src#STR_COLUMN_NOT_DROP.string.text
 msgid "The column at position '$position$' could not be dropped. May be the file system is write protected."
-msgstr ""
+msgstr "Stulpelio nuo pozicijos „$position$“ pašalinti nepavyko. Gali būti, kad failų sistema yra apsaugota nuo rašymo."
 
 #: conn_shared_res.src#STR_TABLE_NOT_DROP.string.text
 msgid "The table '$tablename$' could not be dropped. May be the file system is write protected."
-msgstr ""
+msgstr "Lentelės „$tablename$“ pašalinti nepavyko. Gali būti, kad failų sistema yra apsaugota nuo rašymo."
 
 #: conn_shared_res.src#STR_COULD_NOT_ALTER_TABLE.string.text
-#, fuzzy
 msgid "The table could not be altered."
-msgstr "Tipo nepavyko konvertuoti."
+msgstr "Lentelės pakeisti nepavyko."
 
 #: conn_shared_res.src#STR_INVALID_DBASE_FILE.string.text
 msgid "The file '$filename$' is an invalid (or unrecognized) dBase file."
-msgstr ""
+msgstr "Failas „$filename$“ nėra tinkamas dBase failas arba jis nebuvo atpažintas."
 
 #: conn_shared_res.src#STR_CANNOT_OPEN_BOOK.string.text
 msgid "Cannot open Evolution address book."
@@ -442,135 +440,132 @@ msgstr "Nepavyko atverti „Evolution“ adresų knygos."
 
 #: conn_shared_res.src#STR_SORT_BY_COL_ONLY.string.text
 msgid "Can only sort by table columns."
-msgstr ""
+msgstr "Rikiuoti galima tik pagal lentelės stulpelius."
 
 #: conn_shared_res.src#STR_QUERY_COMPLEX_COUNT.string.text
 msgid "The query can not be executed. It is too complex. Only \"COUNT(*)\" is supported."
-msgstr ""
+msgstr "Užklausos įvykdyti nepavyko: ji per sudėtinga, galima naudoti tik „COUNT(*)“."
 
 #: conn_shared_res.src#STR_QUERY_INVALID_BETWEEN.string.text
 msgid "The query can not be executed. The 'BETWEEN' arguments are not correct."
-msgstr ""
+msgstr "Užklausos įvykdyti nepavyko: BETWEEN argumentai yra neteisingi."
 
 #: conn_shared_res.src#STR_QUERY_FUNCTION_NOT_SUPPORTED.string.text
 msgid "The query can not be executed. The function is not supported."
-msgstr ""
+msgstr "Užklausos įvykdyti nepavyko: tokia funkcija nenaudotina."
 
 #: conn_shared_res.src#STR_TABLE_READONLY.string.text
 msgid "The table can not be changed. It is read only."
-msgstr ""
+msgstr "Lentelės pakeisti negalima, ji skirta tik skaitymui."
 
 #: conn_shared_res.src#STR_DELETE_ROW.string.text
 msgid "The row could not be deleted. The option \"Display inactive records\" is set."
-msgstr ""
+msgstr "Eilutės pašalinti nepavyko: pažymėta parinktis „Rodyti neaktyvius įrašus“."
 
 #: conn_shared_res.src#STR_ROW_ALREADY_DELETED.string.text
 msgid "The row could not be deleted. It is already deleted."
-msgstr ""
+msgstr "Eilutės pašalinti nepavyko: ji jau yra pašalinta."
 
 #: conn_shared_res.src#STR_QUERY_MORE_TABLES.string.text
-#, fuzzy
 msgid "The query can not be executed. It contains more than one table."
-msgstr "Užklausai įvykdyti reikia bent vienos lentelės."
+msgstr "Užklausos įvykdyti nepavyko: joje yra daugiau nei viena lentelė."
 
 #: conn_shared_res.src#STR_QUERY_NO_TABLE.string.text
-#, fuzzy
 msgid "The query can not be executed. It contains no valid table."
-msgstr "Užklausai įvykdyti reikia bent vienos lentelės."
+msgstr "Užklausos įvykdyti nepavyko: joje nėra tinkamos lentelės."
 
 #: conn_shared_res.src#STR_QUERY_NO_COLUMN.string.text
-#, fuzzy
 msgid "The query can not be executed. It contains no valid columns."
-msgstr "Užklausai įvykdyti reikia bent vienos lentelės."
+msgstr "Užklausos įvykdyti nepavyko: joje nėra tinkamų stulpelių."
 
 #: conn_shared_res.src#STR_INVALID_PARA_COUNT.string.text
 msgid "The count of the given parameter values doesn't match the parameters."
-msgstr ""
+msgstr "Duotųjų parametrų reikšmių skaičius neatitinka parametrų."
 
 #: conn_shared_res.src#STR_NO_VALID_FILE_URL.string.text
 msgid "The URL '$URL$' is not valid. A connection can not be created."
-msgstr ""
+msgstr "URL adresas „$URL$“ yra neteisingas. Ryšio užmegzti negalima."
 
 #: conn_shared_res.src#STR_NO_CLASSNAME.string.text
 msgid "The driver class '$classname$' could not be loaded."
-msgstr ""
+msgstr "Nepavyko įkelti tvarkyklių klasės „$classname$“."
 
 #: conn_shared_res.src#STR_NO_JAVA.string.text
 msgid "No Java installation could be found. Please check your installation."
-msgstr ""
+msgstr "Nerasta „Java“ aplinka. Patikrinkite diegimą."
 
 #: conn_shared_res.src#STR_NO_RESULTSET.string.text
 msgid "The execution of the query doesn't return a valid result set."
-msgstr ""
+msgstr "Užklausos vykdymas nepateikia tinkamos rezultatų aibės."
 
 #: conn_shared_res.src#STR_NO_ROWCOUNT.string.text
 msgid "The execution of the update statement doesn't effect any rows."
-msgstr ""
+msgstr "Atnaujinimo sakinio vykdymas neįtakoja jokių eilučių."
 
 #: conn_shared_res.src#STR_NO_CLASSNAME_PATH.string.text
 msgid "The additional driver class path is '$classpath$'."
-msgstr ""
+msgstr "Papildomos tvarkyklių klasės adresas yra „$classpath$“."
 
 #: conn_shared_res.src#STR_UNKNOWN_PARA_TYPE.string.text
 msgid "The type of parameter at position '$position$' is unknown."
-msgstr ""
+msgstr "Parametro ties pozicija „$position$“ tipas yra nežinomas."
 
 #: conn_shared_res.src#STR_UNKNOWN_COLUMN_TYPE.string.text
 msgid "The type of column at position '$position$' is unknown."
-msgstr ""
+msgstr "Stulpelio ties pozicija „$position$“ tipas yra nežinomas."
 
 #: conn_shared_res.src#STR_NO_KDE_INST.string.text
 msgid "No suitable KDE installation was found."
-msgstr ""
+msgstr "Nerasta tinkama KDE aplinka."
 
 #: conn_shared_res.src#STR_KDE_VERSION_TOO_OLD.string.text
 msgid "KDE version $major$.$minor$ or higher is required to access the KDE Address Book."
-msgstr ""
+msgstr "$major$.$minor$ arba naujesnės versijos KDE aplinka yra būtina, jei norite prisijungti prie KDE adresų knygos."
 
 #: conn_shared_res.src#STR_KDE_VERSION_TOO_NEW.string.text
 msgid "The found KDE version is too new. Only KDE up to version $major$.$minor$ is known to work with this product.\n"
-msgstr ""
+msgstr "Aptikta KDE versija yra per nauja. Su šia programa suderinamos KDE aplinkos tik iki $major$.$minor$ versijos.\n"
 
 #: conn_shared_res.src#STR_KDE_VERSION_TOO_NEW_WORK_AROUND.string.text
 msgid ""
 "If you are sure that your KDE version works, you might execute the following Basic macro to disable this version check:\n"
 "\n"
 msgstr ""
+"Jei žinote, kad turima KDE aplinka veikia, versijos tikrinimą galite išjungti įvykdę šią „Basic“ makrokomandą:\n"
+"\n"
 
 #: conn_shared_res.src#STR_PARA_ONLY_PREPARED.string.text
 msgid "Parameters can appear only in prepared statements."
-msgstr ""
+msgstr "Parametrai gali būti tik paruoštuose sakiniuose."
 
 #: conn_shared_res.src#STR_NO_TABLE.string.text
 msgid "No such table!"
-msgstr ""
+msgstr "Nėra tokios lentelės!"
 
 #: conn_shared_res.src#STR_NO_MAC_OS_FOUND.string.text
 msgid "No suitable Mac OS installation was found."
-msgstr ""
+msgstr "Nerasta tinkama „Mac OS“ sistema."
 
 #: conn_shared_res.src#STR_NO_STROAGE.string.text
 msgid "The connection can not be established. No storage or URL was given."
-msgstr ""
+msgstr "Ryšio užmegzti nepavyko. Nenurodytas kaupiklis arba URL adresas."
 
 #: conn_shared_res.src#STR_INVALID_FILE_URL.string.text
 msgid "The given URL contains no valid local file system path. Please check the location of your database file."
-msgstr ""
+msgstr "Nurodytame URL adrese nėra tinkamo vietinės failų sistemos adreso. Patikrinkite, kurioje vietoje yra jūsų duomenų bazės failas."
 
 #: conn_shared_res.src#STR_NO_TABLE_CONTAINER.string.text
-#, fuzzy
 msgid "An error occurred while obtaining the connection's table container."
-msgstr "Kuriant kalendorių įvyko klaida."
+msgstr "Sudarant ryšio lentelės sudėtinį rodinį įvyko klaida."
 
 #: conn_shared_res.src#STR_NO_TABLE_EDITOR_DIALOG.string.text
-#, fuzzy
 msgid "An error occurred while creating the table editor dialog."
-msgstr "Kuriant kalendorių įvyko klaida."
+msgstr "Kuriant lentelės taisymo langą įvyko klaida."
 
 #: conn_shared_res.src#STR_NO_TABLENAME.string.text
 msgid "There is no table named '$tablename$'."
-msgstr ""
+msgstr "Nėra lentelės pavadinimu „$tablename$“."
 
 #: conn_shared_res.src#STR_NO_DOCUMENTUI.string.text
 msgid "The provided DocumentUI is not allowed to be NULL."
-msgstr ""
+msgstr "„DocumentUI“ reikšmė negali būti NULL."

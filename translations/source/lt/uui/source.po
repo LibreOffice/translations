@@ -4,16 +4,17 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: http://qa.openoffice.org/issues/enter_bug.cgi?comment=&component=l10n&form_name=enter_issue&short_desc=Localization+issue+in+file%3A+uui%2Fsource.oo&subcomponent=ui\n"
 "POT-Creation-Date: 2012-07-04 16:39+0200\n"
-"PO-Revision-Date: 2012-08-15 17:40+0200\n"
-"Last-Translator: Modestas <modestas.rimkus@gmail.com>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2012-08-24 14:58+0300\n"
+"Last-Translator: Modestas Rimkus <modestas.rimkus@gmail.com>\n"
+"Language-Team: Lithuanian <komp_lt@konferencijos.lt>\n"
 "Language: lt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Pootle 2.1.6\n"
+"X-Generator: Translate Toolkit 1.9.0\n"
 "X-Accelerator-Marker: ~\n"
+"X-Project-Style: openoffice\n"
 
 #: newerverwarn.src#RID_DLG_NEWER_VERSION_WARNING.FT_INFO.fixedtext.text
 msgid ""
@@ -136,7 +137,7 @@ msgstr "Netinkamas dokumento parašas"
 
 #: ids.src#STR_WARNING_INCOMPLETE_ENCRYPTION_TITLE.string.text
 msgid "Non-Encrypted Streams"
-msgstr ""
+msgstr "Nešifruoti srautai"
 
 #: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_IO_ABORT___ERRCODE_RES_MASK_.string.text
 msgid "The operation executed on $(ARG1) was aborted."
@@ -414,17 +415,19 @@ msgstr "Failas „$(ARG1)“ yra užblokuotas kito naudotojo. Šiuo metu nėra g
 
 #: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_LOCKING_LOCKED_SELF___ERRCODE_RES_MASK_.string.text
 msgid "The file $(ARG1) is locked by yourself. Currently, another write access to this file cannot be granted."
-msgstr ""
+msgstr "Esate užblokavę failą „$(ARG1)“. Šiuo metu nėra galimybės dar kartą suteikti rašymo į šį failą teisių."
 
 #: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_LOCKING_NOT_LOCKED___ERRCODE_RES_MASK_.string.text
 msgid "The file $(ARG1) is currently not locked by yourself."
-msgstr ""
+msgstr "Nesate užblokavę failo „$(ARG1)“."
 
 #: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_LOCKING_LOCK_EXPIRED___ERRCODE_RES_MASK_.string.text
 msgid ""
 "The previously obtained lock for file $(ARG1) has expired.\n"
 "This can happen due to problems on the server managing the file lock. It cannot be guaranteed that write operations on this file will not overwrite changes done by other users!"
 msgstr ""
+"Ankstesnės failo „$(ARG1)“ blokuotės galiojimas baigėsi.\n"
+"Taip galėjo nutikti dėl problemų serveryje, kuriame tvarkomos blokuotės. Gali būti, kad įrašę šį failą perrašysite kitų naudotojų atliktus pakeitimus!"
 
 #: ids.src#RID_UUI_ERRHDL._ERRCODE_UUI_UNKNOWNAUTH_UNTRUSTED_.string.text
 msgid ""
@@ -489,23 +492,30 @@ msgid ""
 "\n"
 " $(ARG1)."
 msgstr ""
+"Nepavyko įkelti komponento. Gali būti sugadintas arba nebaigtas diegimas.\n"
+"Visas klaidos pranešimas:\n"
+"\n"
+" $(ARG1)."
 
 #: logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_ERROR.fixedtext.text
-#, fuzzy
 msgid "Message from server:"
-msgstr "Serverio pranešimas"
+msgstr "Serverio pranešimas:"
 
 #: logindlg.src#DLG_UUI_LOGIN.FT_INFO_LOGIN_REQUEST.fixedtext.text
 msgid ""
 "Enter user name and password for: \n"
 "%1"
 msgstr ""
+"Įveskite šios paskyros naudotojo vardą ir slaptažodį: \n"
+"%1"
 
 #: logindlg.src#DLG_UUI_LOGIN.STR_LOGIN_REALM.string.text
 msgid ""
 "Enter user name and password for: \n"
 "\"%2\" on %1"
 msgstr ""
+"Įveskite šios paskyros naudotojo vardą ir slaptažodį: \n"
+"„%2“ sistemoje „%1“"
 
 #: logindlg.src#DLG_UUI_LOGIN.FT_LOGIN_PATH.fixedtext.text
 msgid "~Path"
@@ -524,18 +534,17 @@ msgid "A~ccount"
 msgstr "Paskyra"
 
 #: logindlg.src#DLG_UUI_LOGIN.CB_LOGIN_SAVEPASSWORD.checkbox.text
-#, fuzzy
 msgctxt "logindlg.src#DLG_UUI_LOGIN.CB_LOGIN_SAVEPASSWORD.checkbox.text"
 msgid "~Remember password"
-msgstr "Prisiminti slaptažodį"
+msgstr "Įsiminti slaptažodį"
 
 #: logindlg.src#DLG_UUI_LOGIN.CB_LOGIN_USESYSCREDS.checkbox.text
 msgid "~Use system credentials"
-msgstr ""
+msgstr "Naudoti sistemos prisijungimo duomenis"
 
 #: logindlg.src#DLG_UUI_LOGIN.modaldialog.text
 msgid "Authentication Required"
-msgstr ""
+msgstr "Būtina nustatyti tapatybę"
 
 #: alreadyopen.src#STR_ALREADYOPEN_MSG.string.text
 msgid ""
@@ -544,6 +553,10 @@ msgid ""
 "Open document read-only, or ignore own file locking and open the document for editing.\n"
 "\n"
 msgstr ""
+"Kitoje sistemoje esate užblokavę dokumento failą „$(ARG1)“ nuo $(ARG2)\n"
+"\n"
+"Galima atverti dokumentą tik skaitymui, arba nepaisyti savos blokuotės ir atverti dokumentą taisymui.\n"
+"\n"
 
 #: alreadyopen.src#STR_ALREADYOPEN_READONLY_BTN.string.text
 msgctxt "alreadyopen.src#STR_ALREADYOPEN_READONLY_BTN.string.text"
@@ -561,6 +574,10 @@ msgid ""
 "Close document on other system and retry saving or ignore own file locking and save current document.\n"
 "\n"
 msgstr ""
+"Kitoje sistemoje esate užblokavę dokumento failą „$(ARG1)“ nuo $(ARG2)\n"
+"\n"
+"Užverkite dokumentą kitoje sistemoje ir mėginkite įrašyti dar kartą arba nepaisykite savos blokuotės ir įrašykite veikiamąjį dokumentą.\n"
+"\n"
 
 #: alreadyopen.src#STR_ALREADYOPEN_RETRY_SAVE_BTN.string.text
 msgctxt "alreadyopen.src#STR_ALREADYOPEN_RETRY_SAVE_BTN.string.text"
@@ -581,7 +598,7 @@ msgstr "Dokumente yra makrokomandų."
 
 #: secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.PB_VIEWSIGNS.pushbutton.text
 msgid "View Signatures..."
-msgstr "Rodyti parašus..."
+msgstr "Rodyti parašus…"
 
 #: secmacrowarnings.src#RID_XMLSECDLG_MACROWARN.FI_DESCR2.fixedtext.text
 msgid "Macros may contain viruses. Disabling macros for a document is always safe. If you disable macros you may lose functionality provided by the document macros."
@@ -605,19 +622,19 @@ msgstr "„%PRODUCTNAME“ - saugumo perspėjimas"
 
 #: masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.FT_INFOTEXT.fixedtext.text
 msgid "Passwords for web connections are protected by a master password. You will be asked to enter it once per session, if %PRODUCTNAME retrieves a password from the protected password list."
-msgstr ""
+msgstr "Žiniatinklio prisijungimų slaptažodžiai apsaugoti pagrindiniu slaptažodžiu. Jei „%PRODUCTNAME“ paims slaptažodį iš apsaugotųjų slaptažodžių sąrašo, pagrindinį slaptažodį reikės įvesti kartą per seansą."
 
 #: masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.FT_MASTERPASSWORD_CRT.fixedtext.text
 msgid "~Enter password"
-msgstr "Įvesti slaptažodį"
+msgstr "Įveskite slaptažodį"
 
 #: masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.FT_MASTERPASSWORD_REPEAT.fixedtext.text
 msgid "~Reenter password"
-msgstr "Prisiminti slaptažodį"
+msgstr "Pakartokite slaptažodį"
 
 #: masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.FT_CAUTIONTEXT.fixedtext.text
 msgid "Caution: If you forget the master password, you will be unable to access any of the information protected by it. Passwords are case-sensitive."
-msgstr ""
+msgstr "Dėmesio: jei pamiršite pagrindinį slaptažodį, neteksite prieigos prie visos juo apsaugotos informacijos. Slaptažodžiuose didžiosios ir mažosios raidės laikomos skirtingomis."
 
 #: masterpasscrtdlg.src#DLG_UUI_MASTERPASSWORD_CRT.modaldialog.text
 msgid "Set Master Password"
@@ -629,44 +646,39 @@ msgstr "Filtro pasirinkimas"
 
 #: passworderrs.src#STR_ERROR_PASSWORD_TO_OPEN_WRONG.string.text
 msgid "The password is incorrect. The file cannot be opened."
-msgstr ""
+msgstr "Slaptažodis neteisingas. Failo negalima atverti."
 
 #: passworderrs.src#STR_ERROR_PASSWORD_TO_MODIFY_WRONG.string.text
 msgid "The password is incorrect. The file cannot be modified."
-msgstr ""
+msgstr "Slaptažodis neteisingas. Failo negalima pakeisti."
 
 #: passworderrs.src#STR_ERROR_MASTERPASSWORD_WRONG.string.text
-#, fuzzy
 msgid "The master password is incorrect."
-msgstr "Slaptažodis nustatytas."
+msgstr "Pagrindinis slaptažodis neteisingas."
 
 #: passworderrs.src#STR_ERROR_SIMPLE_PASSWORD_WRONG.string.text
-#, fuzzy
 msgid "The password is incorrect."
-msgstr "Slaptažodis nustatytas."
+msgstr "Slaptažodis neteisingas."
 
 #: passworderrs.src#STR_ERROR_PASSWORDS_NOT_IDENTICAL.string.text
 msgid "The password confirmation does not match."
-msgstr ""
+msgstr "Neteisingai patvirtintas slaptažodis."
 
 #: passworddlg.src#DLG_UUI_PASSWORD.STR_ENTER_PASSWORD_TO_OPEN.string.text
 msgid "Enter password to open file: \n"
 msgstr "Įveskite slaptažodį failui atverti: \n"
 
 #: passworddlg.src#DLG_UUI_PASSWORD.STR_ENTER_PASSWORD_TO_MODIFY.string.text
-#, fuzzy
 msgid "Enter password to modify file: \n"
-msgstr "Įveskite slaptažodį failui atverti: \n"
+msgstr "Įveskite slaptažodį failui taisyti: \n"
 
 #: passworddlg.src#DLG_UUI_PASSWORD.STR_ENTER_SIMPLE_PASSWORD.string.text
-#, fuzzy
 msgid "Enter password: "
-msgstr "Įvesti slaptažodį"
+msgstr "Įveskite slaptažodį:"
 
 #: passworddlg.src#DLG_UUI_PASSWORD.STR_CONFIRM_SIMPLE_PASSWORD.string.text
-#, fuzzy
 msgid "Confirm password: "
-msgstr "Patvirtinkite slaptažodį"
+msgstr "Patvirtinkite slaptažodį:"
 
 #: passworddlg.src#DLG_UUI_PASSWORD.STR_TITLE_CREATE_PASSWORD.string.text
 msgid "Set Password"
@@ -703,7 +715,7 @@ msgstr "Saugumo perspėjimas:"
 
 #: unknownauthdlg.src#DLG_UUI_UNKNOWNAUTH.PB_VIEW__CERTIFICATE.pushbutton.text
 msgid "Examine Certificate..."
-msgstr "Peržiūrėti liudijimą..."
+msgstr "Peržiūrėti liudijimą…"
 
 #: unknownauthdlg.src#DLG_UUI_UNKNOWNAUTH.PB_HELP.helpbutton.text
 msgid "Help"
@@ -731,9 +743,8 @@ msgid "Website Certified by an Unknown Authority"
 msgstr "Svetainės liudijimą išdavė nežinoma įstaiga"
 
 #: filechanged.src#STR_FILECHANGED_TITLE.string.text
-#, fuzzy
 msgid "Document Has Been Changed by Others"
-msgstr "Dokumentas įrašytas taip"
+msgstr "Dokumentas buvo pakeistas kitų naudotojų"
 
 #: filechanged.src#STR_FILECHANGED_MSG.string.text
 msgid ""
@@ -742,11 +753,15 @@ msgid ""
 "Do you want to save anyway?\n"
 "\n"
 msgstr ""
+"Nuo taisymo „%PRODUCTNAME“ programa pradžios failas buvo pakeistas. Įrašę savąją dokumento versiją perrašysite kitų naudotojų pakeitimus.\n"
+"\n"
+"Ar vis tiek įrašyti?\n"
+"\n"
 
 #: filechanged.src#STR_FILECHANGED_SAVEANYWAY_BTN.string.text
 msgid "~Save Anyway"
-msgstr ""
+msgstr "Vis tiek įrašyti"
 
 #: lockfailed.src#STR_LOCKFAILED_MSG.string.text
 msgid "The file could not be locked for exclusive access by %PRODUCTNAME, due to missing permission to create a lock file on that file location."
-msgstr ""
+msgstr "Failo nepavyko užblokuoti išskirtinai „%PRODUCTNAME“ programai, nes nesuteiktas leidimas kurti blokuotes to failo vietoje."
