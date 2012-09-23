@@ -38,6 +38,9 @@ else
 translations_LANGS := $(filter-out en-US,$(WITH_LANG))
 endif
 
+$(translations_DIR)/sdf/%.sdf : $(translations_DIR)/merge.done
+	touch $@
+
 #TODO: remove localization_present.mk when translations are in tail_build
 $(translations_DIR)/merge.done : \
 		$(foreach lang,$(translations_LANGS),$(translations_DIR)/sdf-l10n/$(lang).sdf) \
