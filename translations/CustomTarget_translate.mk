@@ -55,20 +55,22 @@ $(translations_DIR)/merge.done : \
 			$(WORKDIR)/CustomTarget/translations/localization_present.mk && \
 		touch $@)
 
-define translations_RULE
-$(translations_DIR)/sdf-l10n/$(1).sdf : \
+$(translations_DIR)/sdf-l10n/%.sdf : \
 		$(translations_DIR)/sdf-template/en-US.sdf \
 		$(OUTDIR_FOR_BUILD)/bin/po2lo \
-		$$(shell find $(SRCDIR)/translations/source/$(1) -name "*\.po") \
 		| $(translations_DIR)/sdf-l10n/.dir
-	$$(call gb_Output_announce,$$(subst $(WORKDIR)/,,$$@),$(true),SDF,1)
-	$$(call gb_Helper_abbreviate_dirs, \
+	$(call gb_Output_announce,$(subst $(WORKDIR)/,,$@),$(true),SDF,1)
+	$(call gb_Helper_abbreviate_dirs, \
 		$(gb_PYTHON) $(OUTDIR_FOR_BUILD)/bin/po2lo --skipsource -i \
-			source/$(1) -t $$< -o $$@ -l $(1))
+			source/$* -t $< -o $@ -l $*)
+
+define translations_make_po_deps
+$(translations_DIR)/sdf-l10n/$(1).sdf : \
+		$$(shell find $(SRCDIR)/translations/source/$(1) -name "*\.po")
 
 endef
 
-$(foreach lang,$(translations_LANGS),$(eval $(call translations_RULE,$(lang))))
+$(eval $(foreach lang,$(translations_LANGS),$(call translations_make_po_deps,$(lang))))
 
 $(translations_DIR)/sdf-l10n/qtz.sdf : \
 		$(translations_DIR)/sdf-template/en-US.sdf \
