@@ -41,7 +41,8 @@ endif
 #TODO: remove localization_present.mk when translations are in tail_build
 $(translations_DIR)/merge.done : \
 		$(foreach lang,$(translations_LANGS),$(translations_DIR)/sdf-l10n/$(lang).sdf) \
-		$(translations_DIR)/sdf-l10n/qtz.sdf
+		$(translations_DIR)/sdf-l10n/qtz.sdf \
+		$(OUTDIR_FOR_BUILD)/bin/fast_merge.pl
 	$(call gb_Output_announce,$(subst $(WORKDIR)/,,$@),$(true),MRG,2)
 	$(call gb_Helper_abbreviate_dirs, \
 		rm -rf $(translations_DIR)/sdf && mkdir $(translations_DIR)/sdf && \
