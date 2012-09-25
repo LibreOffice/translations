@@ -49,7 +49,7 @@ $(translations_DIR)/merge.done : \
 	$(call gb_Output_announce,$(subst $(WORKDIR)/,,$@),$(true),MRG,2)
 	$(call gb_Helper_abbreviate_dirs, \
 		rm -rf $(translations_DIR)/sdf && mkdir $(translations_DIR)/sdf && \
-		RESPONSEFILE=$(call var2file,$(shell $(gb_MKTEMP)),100,$^) && \
+		RESPONSEFILE=$(call var2file,$(shell $(gb_MKTEMP)),100,$(filter %.sdf,$^)) && \
 		perl $(OUTDIR_FOR_BUILD)/bin/fast_merge.pl -sdf_files $${RESPONSEFILE} \
 			-merge_dir $(translations_DIR)/sdf \
 			$(if $(findstring s,$(MAKEFLAGS)),> /dev/null) && \
