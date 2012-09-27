@@ -85,7 +85,7 @@ $(translations_DIR)/sdf-l10n/qtz.sdf : \
 			$(if $(findstring s,$(MAKEFLAGS)),> /dev/null))
 
 $(translations_DIR)/sdf-template/en-US.sdf : $(OUTDIR_FOR_BUILD)/bin/propex \
-		$(foreach exec,cfgex helpex localize transex3 ulfex xrmex, \
+		$(foreach exec,cfgex helpex localize transex3 uiex ulfex xrmex, \
 			$(call gb_Executable_get_target_for_build,$(exec)))
 	$(call gb_Output_announce,$(subst $(WORKDIR)/,,$@),$(true),LOC,1)
 	$(call gb_Helper_abbreviate_dirs, \
