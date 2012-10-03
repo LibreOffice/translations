@@ -62,7 +62,7 @@ $(translations_DIR)/merge.done : \
 $(translations_DIR)/sdf-l10n/%.sdf : \
 		$(translations_DIR)/sdf-template/en-US.sdf \
 		$(OUTDIR_FOR_BUILD)/bin/po2lo \
-		| $(translations_DIR)/sdf-l10n/.dir
+		| $(translations_DIR)/sdf-l10n/.dir \
 		  $(gb_PYTHONTARGET)
 	$(call gb_Output_announce,$(subst $(WORKDIR)/,,$@),$(true),SDF,1)
 	$(call gb_Helper_abbreviate_dirs, \
