@@ -66,7 +66,7 @@ $(translations_DIR)/sdf-l10n/%.sdf : \
 	$(call gb_Output_announce,$(subst $(WORKDIR)/,,$@),$(true),SDF,1)
 	$(call gb_Helper_abbreviate_dirs, \
 		$(gb_PYTHON) $(OUTDIR_FOR_BUILD)/bin/po2lo --skipsource -i \
-			$(realpath $(SRCDIR)/translations/source/$*) -t $< -o $@ -l $*)
+			$(call gb_Helper_symlinked_native,$(SRCDIR)/translations/source/$*) -t $< -o $@ -l $*)
 
 define translations_make_po_deps
 $(translations_DIR)/sdf-l10n/$(1).sdf : \
