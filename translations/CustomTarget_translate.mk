@@ -50,7 +50,7 @@ $(translations_DIR)/merge.done : \
 	$(call gb_Helper_abbreviate_dirs, \
 		rm -rf $(translations_DIR)/sdf && mkdir $(translations_DIR)/sdf && \
 		RESPONSEFILE=$(call var2file,$(shell $(gb_MKTEMP)),100,$(filter %.sdf,$^)) && \
-		perl $(OUTDIR_FOR_BUILD)/bin/fast_merge.pl -sdf_files $${RESPONSEFILE} \
+		$(PERL) $(OUTDIR_FOR_BUILD)/bin/fast_merge.pl -sdf_files $${RESPONSEFILE} \
 			-merge_dir $(translations_DIR)/sdf \
 			$(if $(findstring s,$(MAKEFLAGS)),> /dev/null) && \
 		rm -f $${RESPONSEFILE} && \
@@ -82,7 +82,7 @@ $(translations_DIR)/sdf-l10n/qtz.sdf : \
 		$(OUTDIR_FOR_BUILD)/bin/keyidGen.pl | $(translations_DIR)/sdf-l10n/.dir
 	$(call gb_Output_announce,$(subst $(WORKDIR)/,,$@),$(true),SDF,1)
 	$(call gb_Helper_abbreviate_dirs, \
-		perl $(OUTDIR_FOR_BUILD)/bin/keyidGen.pl $< $@ \
+		$(PERL) $(OUTDIR_FOR_BUILD)/bin/keyidGen.pl $< $@ \
 			$(if $(findstring s,$(MAKEFLAGS)),> /dev/null))
 
 $(translations_DIR)/sdf-template/en-US.sdf : $(OUTDIR_FOR_BUILD)/bin/propex \
