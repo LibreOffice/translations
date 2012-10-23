@@ -58,7 +58,6 @@ $(translations_DIR)/merge.done : \
 			$(WORKDIR)/CustomTarget/translations/localization_present.mk && \
 		touch $@)
 
-# TODO: remove the realpaths when we have git submodules
 $(translations_DIR)/sdf-l10n/%.sdf : \
 		$(translations_DIR)/sdf-template/en-US.sdf \
 		$(OUTDIR_FOR_BUILD)/bin/po2lo \
@@ -71,7 +70,7 @@ $(translations_DIR)/sdf-l10n/%.sdf : \
 
 define translations_make_po_deps
 $(translations_DIR)/sdf-l10n/$(1).sdf : \
-		$$(shell find $(realpath $(SRCDIR)/translations/source/$(1)) -name "*\.po")
+		$$(shell find $(SRCDIR)/translations/source/$(1) -name "*\.po")
 
 endef
 
