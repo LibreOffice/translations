@@ -30,14 +30,65 @@ $(eval $(call gb_CustomTarget_CustomTarget,translations/translate))
 translations_DIR := $(call gb_CustomTarget_get_workdir,translations/translate)
 
 $(call gb_CustomTarget_get_target,translations/translate) : \
-	$(translations_DIR)/pot.done
+	$(translations_DIR)/merge.done
 
-$(translations_DIR)/pot.done : $(foreach exec,cfgex helpex localize transex3 \
-                                         propex uiex ulfex xrmex treex, \
-			$(call gb_Executable_get_target_for_build,$(exec)))
-	$(call gb_Output_announce,$(subst .pot,,$(subst $(WORKDIR)/,,$@)),$(true),POT,1)
+ifeq ($(WITH_LANG),ALL)
+translations_LANGS := $(shell cd $(SRCDIR)/translations/source && ls -1)
+else
+translations_LANGS := $(filter-out en-US,$(WITH_LANG))
+endif
+
+$(translations_DIR)/sdf/%.sdf : $(translations_DIR)/merge.done
+	touch $@
+
+#TODO: remove localization_present.mk when translations are in tail_build
+$(translations_DIR)/merge.done : \
+		$(foreach lang,$(translations_LANGS),$(translations_DIR)/sdf-l10n/$(lang).sdf) \
+		$(translations_DIR)/sdf-l10n/qtz.sdf \
+		$(OUTDIR_FOR_BUILD)/bin/fast_merge.pl
+	$(call gb_Output_announce,$(subst $(WORKDIR)/,,$@),$(true),MRG,2)
 	$(call gb_Helper_abbreviate_dirs, \
-		mkdir -p $(dir $@) && $(call gb_Helper_execute,localize) $(SRCDIR) $(dir $@)/pot) \
-		&& touch $@
+		rm -rf $(translations_DIR)/sdf && mkdir $(translations_DIR)/sdf && \
+		RESPONSEFILE=$(call var2file,$(shell $(gb_MKTEMP)),100,$(filter %.sdf,$^)) && \
+		$(PERL) $(OUTDIR_FOR_BUILD)/bin/fast_merge.pl -sdf_files $${RESPONSEFILE} \
+			-merge_dir $(translations_DIR)/sdf \
+			$(if $(findstring s,$(MAKEFLAGS)),> /dev/null) && \
+		rm -f $${RESPONSEFILE} && \
+		cp -f $(SRCDIR)/translations/localization_present.mk \
+			$(WORKDIR)/CustomTarget/translations/localization_present.mk && \
+		touch $@)
+
+$(translations_DIR)/sdf-l10n/%.sdf : \
+		$(translations_DIR)/sdf-template/en-US.sdf \
+		$(OUTDIR_FOR_BUILD)/bin/po2lo \
+		| $(translations_DIR)/sdf-l10n/.dir \
+		  $(gb_PYTHONTARGET)
+	$(call gb_Output_announce,$(subst $(WORKDIR)/,,$@),$(true),SDF,1)
+	$(call gb_Helper_abbreviate_dirs, \
+		$(gb_PYTHON) $(OUTDIR_FOR_BUILD)/bin/po2lo --skipsource -i \
+			$(SRCDIR)/translations/source/$* -t $< -o $@ -l $*)
+
+define translations_make_po_deps
+$(translations_DIR)/sdf-l10n/$(1).sdf : \
+		$$(shell find $(SRCDIR)/translations/source/$(1) -name "*\.po")
+
+endef
+
+$(eval $(foreach lang,$(translations_LANGS),$(call translations_make_po_deps,$(lang))))
+
+$(translations_DIR)/sdf-l10n/qtz.sdf : \
+		$(translations_DIR)/sdf-template/en-US.sdf \
+		$(OUTDIR_FOR_BUILD)/bin/keyidGen.pl | $(translations_DIR)/sdf-l10n/.dir
+	$(call gb_Output_announce,$(subst $(WORKDIR)/,,$@),$(true),SDF,1)
+	$(call gb_Helper_abbreviate_dirs, \
+		$(PERL) $(OUTDIR_FOR_BUILD)/bin/keyidGen.pl $< $@ \
+			$(if $(findstring s,$(MAKEFLAGS)),> /dev/null))
+
+$(translations_DIR)/sdf-template/en-US.sdf : $(OUTDIR_FOR_BUILD)/bin/propex \
+		$(foreach exec,cfgex helpex localize transex3 uiex ulfex xrmex, \
+			$(call gb_Executable_get_target_for_build,$(exec)))
+	$(call gb_Output_announce,$(subst $(WORKDIR)/,,$@),$(true),LOC,1)
+	$(call gb_Helper_abbreviate_dirs, \
+		mkdir -p $(dir $@) && $(call gb_Helper_execute,localize) $(SRCDIR) $@)
 
 # vim: set noet sw=4 ts=4:
