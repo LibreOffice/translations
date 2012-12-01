@@ -38,6 +38,7 @@ $(translations_DIR)/pot.done : $(foreach exec,cfgex helpex localize transex3 \
 	$(call gb_Output_announce,$(subst .pot,,$(subst $(WORKDIR)/,,$@)),$(true),POT,1)
 	$(call gb_Helper_abbreviate_dirs, \
 		mkdir -p $(dir $@) && $(call gb_Helper_execute,localize) $(SRCDIR) $(dir $@)/pot) \
+		&& find $(dir $@)/pot -type f -printf "%P\n" | sed -e "s/\.pot/.po/" > $(dir $@)/LIST \
 		&& touch $@
 
 # vim: set noet sw=4 ts=4:
