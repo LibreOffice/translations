@@ -3,9 +3,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.freedesktop.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2012-12-10 11:45+0100\n"
-"PO-Revision-Date: 2012-12-11 12:36+0000\n"
-"Last-Translator: Lucian <oprea.luci@gmail.com>\n"
+"POT-Creation-Date: 2012-12-26 11:14+0100\n"
+"PO-Revision-Date: 2013-01-04 10:11+0000\n"
+"Last-Translator: Ákos <nagy.akos@libreoffice.ro>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: ro\n"
 "MIME-Version: 1.0\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < 20)) ? 1 : 2);;\n"
 "X-Generator: Pootle 2.5.0-beta1\n"
 "X-Accelerator-Marker: ~\n"
-"X-POOTLE-MTIME: 1355229402.0\n"
+"X-POOTLE-MTIME: 1357294261.0\n"
 
 #: miscdlgs.src
 msgctxt ""
@@ -4517,7 +4517,7 @@ msgctxt ""
 "STR_PROGRESS_CALCULATING\n"
 "string.text"
 msgid "calculating"
-msgstr "se calculează"
+msgstr "calculare"
 
 #: globstr.src
 msgctxt ""
@@ -4802,7 +4802,6 @@ msgstr ""
 "\n"
 "Doriți să ieșiți din modul înregistrare ?\n"
 "\n"
-" "
 
 #: globstr.src
 msgctxt ""
@@ -5688,6 +5687,21 @@ msgstr "Formatarea condiționată nu a putut fi creată, ștergeți-le sau schim
 msgctxt ""
 "globstr.src\n"
 "RID_GLOBSTR\n"
+"STR_EDIT_EXISTING_COND_FORMATS\n"
+"string.text"
+msgid ""
+"The selected cell already contains conditional formatting. You can either edit the existing conditional format or you define a new overlapping conditional format.\n"
+"\n"
+" Do you want to edit the existing conditional format?"
+msgstr ""
+"Celula selectată conține deja formatare condiționată. Puteți edita formatarea condiționată existentă sau puteți defini o condiție care suprascrie formatarea actuală.\n"
+"\n"
+" Doriți că modificați actuala formatare condiționată?"
+
+#: globstr.src
+msgctxt ""
+"globstr.src\n"
+"RID_GLOBSTR\n"
 "STR_QUERY_FORMULA_RECALC_ONLOAD_ODS\n"
 "string.text"
 msgid ""
@@ -5713,6 +5727,15 @@ msgstr ""
 "Acest document ultima dată a fost salvat cu Excel. Unele formule pot da rezultate diferite după recalcularea lor.\n"
 "\n"
 "Doriți că recalculați toate celulele care conțin formule?"
+
+#: globstr.src
+msgctxt ""
+"globstr.src\n"
+"RID_GLOBSTR\n"
+"STR_ALWAYS_PERFORM_SELECTED\n"
+"string.text"
+msgid "Always perform this without prompt in the future."
+msgstr "Executare automată, fără confirmare pe viitor."
 
 #: condformatmgr.src
 msgctxt ""
@@ -8742,6 +8765,14 @@ msgstr "- toate -"
 #: scstring.src
 msgctxt ""
 "scstring.src\n"
+"SCSTR_MULTIPLE\n"
+"string.text"
+msgid "- multiple -"
+msgstr "- multimplu -"
+
+#: scstring.src
+msgctxt ""
+"scstring.src\n"
 "SCSTR_STDFILTER\n"
 "string.text"
 msgid "~Standard Filter..."
@@ -11493,6 +11524,42 @@ msgstr "Utilizați numele funcției în engleză"
 msgctxt ""
 "optdlg.src\n"
 "RID_SCPAGE_FORMULA\n"
+"FL_CUSTOM_CALC_OPTIONS\n"
+"fixedline.text"
+msgid "Detailed calculation settings"
+msgstr "Setări de calculare detailate"
+
+#: optdlg.src
+msgctxt ""
+"optdlg.src\n"
+"RID_SCPAGE_FORMULA\n"
+"BTN_CUSTOM_CALC_DEFAULT\n"
+"radiobutton.text"
+msgid "Default"
+msgstr "Implicit"
+
+#: optdlg.src
+msgctxt ""
+"optdlg.src\n"
+"RID_SCPAGE_FORMULA\n"
+"BTN_CUSTOM_CALC_CUSTOM\n"
+"radiobutton.text"
+msgid "Custom"
+msgstr "Personalizat"
+
+#: optdlg.src
+msgctxt ""
+"optdlg.src\n"
+"RID_SCPAGE_FORMULA\n"
+"BTN_CUSTOM_CALC_DETAILS\n"
+"pushbutton.text"
+msgid "Details..."
+msgstr "Detalii..."
+
+#: optdlg.src
+msgctxt ""
+"optdlg.src\n"
+"RID_SCPAGE_FORMULA\n"
 "FL_FORMULA_SEPS\n"
 "fixedline.text"
 msgid "Separators"
@@ -11538,37 +11605,82 @@ msgstr "Rese~tează"
 msgctxt ""
 "optdlg.src\n"
 "RID_SCPAGE_FORMULA\n"
-"FL_CUSTOM_CALC_OPTIONS\n"
+"FL_RECALC_OPTIONS\n"
 "fixedline.text"
-msgid "Detailed calculation settings"
-msgstr "Setări de calculare detailate"
+msgid "Recalculation on file load"
+msgstr "Recalculare la încărcare fișier"
 
 #: optdlg.src
 msgctxt ""
 "optdlg.src\n"
 "RID_SCPAGE_FORMULA\n"
-"BTN_CUSTOM_CALC_DEFAULT\n"
-"radiobutton.text"
-msgid "Default"
-msgstr "Implicit"
+"FT_OOXML_RECALC\n"
+"fixedtext.text"
+msgid "Excel 2007 and newer"
+msgstr "Excel 2007 sau mai nou"
+
+#: optdlg.src
+msgctxt ""
+"optdlg.src\n"
+"RID_SCPAGE_FORMULA.LB_OOXML_RECALC\n"
+"1\n"
+"stringlist.text"
+msgid "Always recalculate"
+msgstr "Recalculează totdeauna"
+
+#: optdlg.src
+msgctxt ""
+"optdlg.src\n"
+"RID_SCPAGE_FORMULA.LB_OOXML_RECALC\n"
+"2\n"
+"stringlist.text"
+msgid "Never recalculate"
+msgstr "Fără recalculare"
+
+#: optdlg.src
+msgctxt ""
+"optdlg.src\n"
+"RID_SCPAGE_FORMULA.LB_OOXML_RECALC\n"
+"3\n"
+"stringlist.text"
+msgid "Prompt user"
+msgstr "Avertizează utilizatorul"
 
 #: optdlg.src
 msgctxt ""
 "optdlg.src\n"
 "RID_SCPAGE_FORMULA\n"
-"BTN_CUSTOM_CALC_CUSTOM\n"
-"radiobutton.text"
-msgid "Custom"
-msgstr "Personalizat"
+"FT_ODF_RECALC\n"
+"fixedtext.text"
+msgid "ODF Spreadsheet (not saved by LibreOffice)"
+msgstr "ODF Spreadsheet (nu e salvat de LibreOffice)"
 
 #: optdlg.src
 msgctxt ""
 "optdlg.src\n"
-"RID_SCPAGE_FORMULA\n"
-"BTN_CUSTOM_CALC_DETAILS\n"
-"pushbutton.text"
-msgid "Details..."
-msgstr "Detalii..."
+"RID_SCPAGE_FORMULA.LB_ODF_RECALC\n"
+"1\n"
+"stringlist.text"
+msgid "Always recalculate"
+msgstr "Recalculează totdeauna"
+
+#: optdlg.src
+msgctxt ""
+"optdlg.src\n"
+"RID_SCPAGE_FORMULA.LB_ODF_RECALC\n"
+"2\n"
+"stringlist.text"
+msgid "Never recalculate"
+msgstr "Fără recalculare"
+
+#: optdlg.src
+msgctxt ""
+"optdlg.src\n"
+"RID_SCPAGE_FORMULA.LB_ODF_RECALC\n"
+"3\n"
+"stringlist.text"
+msgid "Prompt user"
+msgstr "Avertizează utilizatorul"
 
 #: optdlg.src
 msgctxt ""
@@ -12791,7 +12903,10 @@ msgid ""
 "Not all sheets have been loaded because the maximum number of sheets was exceeded.\n"
 "\n"
 "Please be warned that re-saving this document will permanently delete those sheets that have not been loaded!"
-msgstr "Unele foi nu au putut fi încărcate deoarece numărul maxim de foi a fost depășit."
+msgstr ""
+"Unele foi nu au putut fi încărcate deoarece numărul maxim de foi a fost depășit.\n"
+"\n"
+"Aveți grijă, că dacă salvați acest document, foile de calcul neîncărcate se vor pierde definitv!"
 
 #: scerrors.src
 msgctxt ""
@@ -13736,7 +13851,7 @@ msgctxt ""
 "1\n"
 "string.text"
 msgid "Calculates the standard deviation of all cells in a data range whose contents match the search criteria."
-msgstr "Calculează abaterea standard a tuturor celuleor dintr-un interval de date al cărui conținut se potrivește criteriilor de căutare."
+msgstr "Calculează abaterea standard a tuturor celulelor dintr-un interval de date al cărui conținut se potrivește criteriilor de căutare."
 
 #: scfuncs.src
 msgctxt ""
@@ -17173,7 +17288,7 @@ msgctxt ""
 "RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_XOR\n"
 "3\n"
 "string.text"
-msgid "Logical value 1, logical value 2, ... are 1 to 30 conditions to be tested and which returns either TRUE or FALSE."
+msgid "Logical value 1, logical value 2, ... are 1 to 30 conditions to be tested and which return either TRUE or FALSE."
 msgstr "Valoarea logică 1, valoarea logică 2, ... sunt condiții de la 1 la 30 care trebuie testate și care pot întoarce TRUE sau FALSE."
 
 #: scfuncs.src
@@ -17458,6 +17573,240 @@ msgstr "Intervalul din care sunt totalizate valorile."
 #: scfuncs.src
 msgctxt ""
 "scfuncs.src\n"
+"RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_AVERAGE_IF\n"
+"1\n"
+"string.text"
+msgid "Averages the arguments that meet the conditions."
+msgstr "Totalizează argumentele care întrunesc condițiile."
+
+#: scfuncs.src
+msgctxt ""
+"scfuncs.src\n"
+"RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_AVERAGE_IF\n"
+"2\n"
+"string.text"
+msgid "range"
+msgstr "interval"
+
+#: scfuncs.src
+msgctxt ""
+"scfuncs.src\n"
+"RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_AVERAGE_IF\n"
+"3\n"
+"string.text"
+msgid "The range to be evaluated by the criteria given."
+msgstr "Intervalul care va fi evaluat de criteriile date."
+
+#: scfuncs.src
+msgctxt ""
+"scfuncs.src\n"
+"RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_AVERAGE_IF\n"
+"4\n"
+"string.text"
+msgid "criteria"
+msgstr "criterii"
+
+#: scfuncs.src
+msgctxt ""
+"scfuncs.src\n"
+"RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_AVERAGE_IF\n"
+"5\n"
+"string.text"
+msgid "The cell range in which the search criteria are given."
+msgstr "Intervalul de celule în care sunt date criteriile de căutare."
+
+#: scfuncs.src
+msgctxt ""
+"scfuncs.src\n"
+"RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_AVERAGE_IF\n"
+"6\n"
+"string.text"
+msgid "average_range"
+msgstr "interval_mediu"
+
+#: scfuncs.src
+msgctxt ""
+"scfuncs.src\n"
+"RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_AVERAGE_IF\n"
+"7\n"
+"string.text"
+msgid "The range from which the values are to be averaged."
+msgstr "Intervalul din care sunt calculate mediile valorilor."
+
+#: scfuncs.src
+msgctxt ""
+"scfuncs.src\n"
+"RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM_IFS\n"
+"1\n"
+"string.text"
+msgid "Totals the values of cells in a range that meet multiple criteria in multiple ranges."
+msgstr "Însumează valoarea celulelor dintr-un interval, care corespund unor criterii definite în mai multe intervale."
+
+#: scfuncs.src
+msgctxt ""
+"scfuncs.src\n"
+"RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM_IFS\n"
+"2\n"
+"string.text"
+msgid "sum_range"
+msgstr "intervalul_sumei"
+
+#: scfuncs.src
+msgctxt ""
+"scfuncs.src\n"
+"RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM_IFS\n"
+"3\n"
+"string.text"
+msgid "The range from which the values are to be totalled."
+msgstr "Intervalul din care sunt totalizate valorile."
+
+#: scfuncs.src
+msgctxt ""
+"scfuncs.src\n"
+"RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM_IFS\n"
+"4\n"
+"string.text"
+msgid "range "
+msgstr "interval "
+
+#: scfuncs.src
+msgctxt ""
+"scfuncs.src\n"
+"RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM_IFS\n"
+"5\n"
+"string.text"
+msgid "Range 1, range 2,... are the ranges to be evaluated by the criteria given."
+msgstr "Interval 1, interval 2, ... intervalele evaluate după criteriile definite."
+
+#: scfuncs.src
+msgctxt ""
+"scfuncs.src\n"
+"RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM_IFS\n"
+"6\n"
+"string.text"
+msgid "criteria "
+msgstr "criterii "
+
+#: scfuncs.src
+msgctxt ""
+"scfuncs.src\n"
+"RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM_IFS\n"
+"7\n"
+"string.text"
+msgid "Criteria 1, criteria 2,... are the cell ranges in which the search criteria are given."
+msgstr "Criteria 1, criteria 2, ... intervalele de celule care conțin criteriile de căutare."
+
+#: scfuncs.src
+msgctxt ""
+"scfuncs.src\n"
+"RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_AVERAGE_IFS\n"
+"1\n"
+"string.text"
+msgid "Averages the value of the cells that meet multiple criteria in multiple ranges."
+msgstr "Redă media celulelor, care corespund unor criterii definite în mai multe intervale."
+
+#: scfuncs.src
+msgctxt ""
+"scfuncs.src\n"
+"RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_AVERAGE_IFS\n"
+"2\n"
+"string.text"
+msgid "average_range"
+msgstr "interval_mediu"
+
+#: scfuncs.src
+msgctxt ""
+"scfuncs.src\n"
+"RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_AVERAGE_IFS\n"
+"3\n"
+"string.text"
+msgid "The range from which the values are to be averaged."
+msgstr "Intervalul din care sunt calculate mediile valorilor."
+
+#: scfuncs.src
+msgctxt ""
+"scfuncs.src\n"
+"RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_AVERAGE_IFS\n"
+"4\n"
+"string.text"
+msgid "range "
+msgstr "interval "
+
+#: scfuncs.src
+msgctxt ""
+"scfuncs.src\n"
+"RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_AVERAGE_IFS\n"
+"5\n"
+"string.text"
+msgid "Range 1, range 2,... are the ranges to be evaluated by the criteria given."
+msgstr "Interval 1, interval 2, ... intervalele evaluate după criteria definită."
+
+#: scfuncs.src
+msgctxt ""
+"scfuncs.src\n"
+"RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_AVERAGE_IFS\n"
+"6\n"
+"string.text"
+msgid "criteria "
+msgstr "criterii "
+
+#: scfuncs.src
+msgctxt ""
+"scfuncs.src\n"
+"RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_AVERAGE_IFS\n"
+"7\n"
+"string.text"
+msgid "Criteria 1, criteria 2,... are the cell ranges in which the search criteria are given."
+msgstr "Criteria 1, criteria 2, ... intervalele de celule care conțin criteria de căutare."
+
+#: scfuncs.src
+msgctxt ""
+"scfuncs.src\n"
+"RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COUNT_IFS\n"
+"1\n"
+"string.text"
+msgid "Counts the cells that meet multiple criteria in multiple ranges."
+msgstr "Numără acele celule, care corespund unor criterii definite în mai multe intervale."
+
+#: scfuncs.src
+msgctxt ""
+"scfuncs.src\n"
+"RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COUNT_IFS\n"
+"2\n"
+"string.text"
+msgid "range "
+msgstr "interval "
+
+#: scfuncs.src
+msgctxt ""
+"scfuncs.src\n"
+"RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COUNT_IFS\n"
+"3\n"
+"string.text"
+msgid "Range 1, range 2,... are the ranges to be evaluated by the criteria given."
+msgstr "Interval 1, interval 2, ... intervalele evaluate după criteria definită."
+
+#: scfuncs.src
+msgctxt ""
+"scfuncs.src\n"
+"RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COUNT_IFS\n"
+"4\n"
+"string.text"
+msgid "criteria "
+msgstr "criterii "
+
+#: scfuncs.src
+msgctxt ""
+"scfuncs.src\n"
+"RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COUNT_IFS\n"
+"5\n"
+"string.text"
+msgid "Criteria 1, criteria 2,... are the cell ranges in which the search criteria are given."
+msgstr "Criteria 1, criteria 2, ... intervalele de celule care conțin criteria de căutare."
+
+#: scfuncs.src
+msgctxt ""
+"scfuncs.src\n"
 "RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COUNT_IF\n"
 "1\n"
 "string.text"
@@ -17705,7 +18054,7 @@ msgctxt ""
 "3\n"
 "string.text"
 msgid "A value between -1 and 1 for which the arccosine is to be returned."
-msgstr "O valoare cuprinsă între -1 și +1 pentru care se calculează arccosinusul."
+msgstr "O valoare cuprinsă între -1 și +1 pentru care se calculează arc-cosinusul."
 
 #: scfuncs.src
 msgctxt ""
@@ -17732,7 +18081,7 @@ msgctxt ""
 "3\n"
 "string.text"
 msgid "A value between -1 and 1 for which the arcsine is to be returned."
-msgstr "O valoare cuprinsă între -1 și +1 pentru care se calculează arcsinusul."
+msgstr "O valoare cuprinsă între -1 și +1 pentru care se calculează arc-sinusul."
 
 #: scfuncs.src
 msgctxt ""
@@ -17840,7 +18189,7 @@ msgctxt ""
 "3\n"
 "string.text"
 msgid "The value for which the arctangent is to be returned."
-msgstr "Valoarea căreia i se calculează arctangenta."
+msgstr "Valoarea căreia i se calculează arc-tangenta."
 
 #: scfuncs.src
 msgctxt ""
@@ -18209,7 +18558,7 @@ msgctxt ""
 "3\n"
 "string.text"
 msgid "The angle in radians for which the secant is to be calculated."
-msgstr "Unghiul în radiani căruia  se calculează secantul."
+msgstr "Unghiul în radiani căruia se calculează secantul."
 
 #: scfuncs.src
 msgctxt ""
@@ -19001,7 +19350,7 @@ msgctxt ""
 "3\n"
 "string.text"
 msgid "Integer 1; integer 2,... are integers for which the greatest common divisor is to be calculated."
-msgstr "Întreg 1, întreg 2, ... sunt numerele întregi cărora li se calculează cel mai mare divizor comun. "
+msgstr "Întreg 1, întreg 2, ... sunt numerele întregi cărora li se calculează cel mai mare divizor comun."
 
 #: scfuncs.src
 msgctxt ""

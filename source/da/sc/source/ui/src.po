@@ -3,9 +3,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.freedesktop.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2012-12-10 11:45+0100\n"
-"PO-Revision-Date: 2012-12-12 22:14+0000\n"
-"Last-Translator: Leif <leiflodahl@gmail.com>\n"
+"POT-Creation-Date: 2012-12-26 11:14+0100\n"
+"PO-Revision-Date: 2013-01-01 15:26+0000\n"
+"Last-Translator: wkn <wkn@kor.dk>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: da\n"
 "MIME-Version: 1.0\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Pootle 2.5.0-beta1\n"
 "X-Accelerator-Marker: ~\n"
-"X-POOTLE-MTIME: 1355350473.0\n"
+"X-POOTLE-MTIME: 1357054019.0\n"
 
 #: miscdlgs.src
 msgctxt ""
@@ -5687,6 +5687,21 @@ msgstr "Betingede formateringer kan ikke oprettes, slettes eller ændres i besky
 msgctxt ""
 "globstr.src\n"
 "RID_GLOBSTR\n"
+"STR_EDIT_EXISTING_COND_FORMATS\n"
+"string.text"
+msgid ""
+"The selected cell already contains conditional formatting. You can either edit the existing conditional format or you define a new overlapping conditional format.\n"
+"\n"
+" Do you want to edit the existing conditional format?"
+msgstr ""
+"Den markerede celle indeholder allerede en betinget formatering. Du kan enten redigere det eksisterende betingede format eller definere et nyt overlappende betinget format.\n"
+"\n"
+"Vil du redigere det eksisterende betingede format?"
+
+#: globstr.src
+msgctxt ""
+"globstr.src\n"
+"RID_GLOBSTR\n"
 "STR_QUERY_FORMULA_RECALC_ONLOAD_ODS\n"
 "string.text"
 msgid ""
@@ -5712,6 +5727,15 @@ msgstr ""
 "Dette dokument blev senest gemt med Excel.  Visse formelceller kan resultere i andre resultater ved genberegning.\n"
 " \n"
 "Ønsker du at genberegne alle formelceller nu?"
+
+#: globstr.src
+msgctxt ""
+"globstr.src\n"
+"RID_GLOBSTR\n"
+"STR_ALWAYS_PERFORM_SELECTED\n"
+"string.text"
+msgid "Always perform this without prompt in the future."
+msgstr "Udfør altid dette uden bekræftelse i fremtiden."
 
 #: condformatmgr.src
 msgctxt ""
@@ -8741,6 +8765,14 @@ msgstr "- alle -"
 #: scstring.src
 msgctxt ""
 "scstring.src\n"
+"SCSTR_MULTIPLE\n"
+"string.text"
+msgid "- multiple -"
+msgstr "- flere -"
+
+#: scstring.src
+msgctxt ""
+"scstring.src\n"
 "SCSTR_STDFILTER\n"
 "string.text"
 msgid "~Standard Filter..."
@@ -11492,6 +11524,42 @@ msgstr "Brug engelske funktionsnavne"
 msgctxt ""
 "optdlg.src\n"
 "RID_SCPAGE_FORMULA\n"
+"FL_CUSTOM_CALC_OPTIONS\n"
+"fixedline.text"
+msgid "Detailed calculation settings"
+msgstr "Detaljerede indstillinger for beregning"
+
+#: optdlg.src
+msgctxt ""
+"optdlg.src\n"
+"RID_SCPAGE_FORMULA\n"
+"BTN_CUSTOM_CALC_DEFAULT\n"
+"radiobutton.text"
+msgid "Default"
+msgstr "Standard"
+
+#: optdlg.src
+msgctxt ""
+"optdlg.src\n"
+"RID_SCPAGE_FORMULA\n"
+"BTN_CUSTOM_CALC_CUSTOM\n"
+"radiobutton.text"
+msgid "Custom"
+msgstr "Tilpasset"
+
+#: optdlg.src
+msgctxt ""
+"optdlg.src\n"
+"RID_SCPAGE_FORMULA\n"
+"BTN_CUSTOM_CALC_DETAILS\n"
+"pushbutton.text"
+msgid "Details..."
+msgstr "Detaljer..."
+
+#: optdlg.src
+msgctxt ""
+"optdlg.src\n"
+"RID_SCPAGE_FORMULA\n"
 "FL_FORMULA_SEPS\n"
 "fixedline.text"
 msgid "Separators"
@@ -11537,37 +11605,82 @@ msgstr "Nuls~til"
 msgctxt ""
 "optdlg.src\n"
 "RID_SCPAGE_FORMULA\n"
-"FL_CUSTOM_CALC_OPTIONS\n"
+"FL_RECALC_OPTIONS\n"
 "fixedline.text"
-msgid "Detailed calculation settings"
-msgstr "Detaljerede indstillinger for beregning"
+msgid "Recalculation on file load"
+msgstr "Genberegn ved filåbning"
 
 #: optdlg.src
 msgctxt ""
 "optdlg.src\n"
 "RID_SCPAGE_FORMULA\n"
-"BTN_CUSTOM_CALC_DEFAULT\n"
-"radiobutton.text"
-msgid "Default"
-msgstr "Standard"
+"FT_OOXML_RECALC\n"
+"fixedtext.text"
+msgid "Excel 2007 and newer"
+msgstr "Excel 2007 og nyere"
+
+#: optdlg.src
+msgctxt ""
+"optdlg.src\n"
+"RID_SCPAGE_FORMULA.LB_OOXML_RECALC\n"
+"1\n"
+"stringlist.text"
+msgid "Always recalculate"
+msgstr "Genberegn altid"
+
+#: optdlg.src
+msgctxt ""
+"optdlg.src\n"
+"RID_SCPAGE_FORMULA.LB_OOXML_RECALC\n"
+"2\n"
+"stringlist.text"
+msgid "Never recalculate"
+msgstr "Genberegn aldrig"
+
+#: optdlg.src
+msgctxt ""
+"optdlg.src\n"
+"RID_SCPAGE_FORMULA.LB_OOXML_RECALC\n"
+"3\n"
+"stringlist.text"
+msgid "Prompt user"
+msgstr "Spørg bruger"
 
 #: optdlg.src
 msgctxt ""
 "optdlg.src\n"
 "RID_SCPAGE_FORMULA\n"
-"BTN_CUSTOM_CALC_CUSTOM\n"
-"radiobutton.text"
-msgid "Custom"
-msgstr "Tilpasset"
+"FT_ODF_RECALC\n"
+"fixedtext.text"
+msgid "ODF Spreadsheet (not saved by LibreOffice)"
+msgstr "ODF regneark (ikke gemt med LibreOffice)"
 
 #: optdlg.src
 msgctxt ""
 "optdlg.src\n"
-"RID_SCPAGE_FORMULA\n"
-"BTN_CUSTOM_CALC_DETAILS\n"
-"pushbutton.text"
-msgid "Details..."
-msgstr "Detaljer..."
+"RID_SCPAGE_FORMULA.LB_ODF_RECALC\n"
+"1\n"
+"stringlist.text"
+msgid "Always recalculate"
+msgstr "Genberegn altid"
+
+#: optdlg.src
+msgctxt ""
+"optdlg.src\n"
+"RID_SCPAGE_FORMULA.LB_ODF_RECALC\n"
+"2\n"
+"stringlist.text"
+msgid "Never recalculate"
+msgstr "Genberegn aldrig"
+
+#: optdlg.src
+msgctxt ""
+"optdlg.src\n"
+"RID_SCPAGE_FORMULA.LB_ODF_RECALC\n"
+"3\n"
+"stringlist.text"
+msgid "Prompt user"
+msgstr "Spørg bruger"
 
 #: optdlg.src
 msgctxt ""
@@ -17175,8 +17288,8 @@ msgctxt ""
 "RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_XOR\n"
 "3\n"
 "string.text"
-msgid "Logical value 1, logical value 2, ... are 1 to 30 conditions to be tested and which returns either TRUE or FALSE."
-msgstr "Logisk_værdi_1; logisk_værdi_2; ... er 1 til 30 betingelser, der skal testes, og som returnerer enten SAND eller FALSK."
+msgid "Logical value 1, logical value 2, ... are 1 to 30 conditions to be tested and which return either TRUE or FALSE."
+msgstr "Logisk værdi 1, logisk værdi 2, ... er fra 1 til 30 betingelser, der skal testes, og som returnerer enten SAND eller FALSK."
 
 #: scfuncs.src
 msgctxt ""
@@ -17456,6 +17569,240 @@ msgctxt ""
 "string.text"
 msgid "The range from which the values are to be totalled."
 msgstr "Området hvis værdier skal lægges sammen."
+
+#: scfuncs.src
+msgctxt ""
+"scfuncs.src\n"
+"RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_AVERAGE_IF\n"
+"1\n"
+"string.text"
+msgid "Averages the arguments that meet the conditions."
+msgstr "Beregner gennemsnittet af de argumenter, som opfylder kriterierne."
+
+#: scfuncs.src
+msgctxt ""
+"scfuncs.src\n"
+"RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_AVERAGE_IF\n"
+"2\n"
+"string.text"
+msgid "range"
+msgstr "Område"
+
+#: scfuncs.src
+msgctxt ""
+"scfuncs.src\n"
+"RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_AVERAGE_IF\n"
+"3\n"
+"string.text"
+msgid "The range to be evaluated by the criteria given."
+msgstr "Området kriterierne skal anvendes på."
+
+#: scfuncs.src
+msgctxt ""
+"scfuncs.src\n"
+"RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_AVERAGE_IF\n"
+"4\n"
+"string.text"
+msgid "criteria"
+msgstr "Kriterier"
+
+#: scfuncs.src
+msgctxt ""
+"scfuncs.src\n"
+"RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_AVERAGE_IF\n"
+"5\n"
+"string.text"
+msgid "The cell range in which the search criteria are given."
+msgstr "Celleområdet som søgekriterierne er angivet i."
+
+#: scfuncs.src
+msgctxt ""
+"scfuncs.src\n"
+"RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_AVERAGE_IF\n"
+"6\n"
+"string.text"
+msgid "average_range"
+msgstr "gennemsnit_område"
+
+#: scfuncs.src
+msgctxt ""
+"scfuncs.src\n"
+"RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_AVERAGE_IF\n"
+"7\n"
+"string.text"
+msgid "The range from which the values are to be averaged."
+msgstr "Området for hvis værdier der skal beregnes gennemsnit."
+
+#: scfuncs.src
+msgctxt ""
+"scfuncs.src\n"
+"RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM_IFS\n"
+"1\n"
+"string.text"
+msgid "Totals the values of cells in a range that meet multiple criteria in multiple ranges."
+msgstr "Summerer værdierne af cellerne i et område, som opfylder flere kriterier i flere områder."
+
+#: scfuncs.src
+msgctxt ""
+"scfuncs.src\n"
+"RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM_IFS\n"
+"2\n"
+"string.text"
+msgid "sum_range"
+msgstr "Sum_område"
+
+#: scfuncs.src
+msgctxt ""
+"scfuncs.src\n"
+"RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM_IFS\n"
+"3\n"
+"string.text"
+msgid "The range from which the values are to be totalled."
+msgstr "Området hvis værdier skal lægges sammen."
+
+#: scfuncs.src
+msgctxt ""
+"scfuncs.src\n"
+"RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM_IFS\n"
+"4\n"
+"string.text"
+msgid "range "
+msgstr "Område "
+
+#: scfuncs.src
+msgctxt ""
+"scfuncs.src\n"
+"RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM_IFS\n"
+"5\n"
+"string.text"
+msgid "Range 1, range 2,... are the ranges to be evaluated by the criteria given."
+msgstr "Område 1, område 2,... er de intervaller der skal behandles ud fra de givne kriterier."
+
+#: scfuncs.src
+msgctxt ""
+"scfuncs.src\n"
+"RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM_IFS\n"
+"6\n"
+"string.text"
+msgid "criteria "
+msgstr "kriterier"
+
+#: scfuncs.src
+msgctxt ""
+"scfuncs.src\n"
+"RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_SUM_IFS\n"
+"7\n"
+"string.text"
+msgid "Criteria 1, criteria 2,... are the cell ranges in which the search criteria are given."
+msgstr "Kriterie 1, kriterie 2,... er de celleområder hvor søgekriterierner er defineret."
+
+#: scfuncs.src
+msgctxt ""
+"scfuncs.src\n"
+"RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_AVERAGE_IFS\n"
+"1\n"
+"string.text"
+msgid "Averages the value of the cells that meet multiple criteria in multiple ranges."
+msgstr "Beregner gennemsnittet af værdien af de celler, der opfylder flere kriterier i flere områder."
+
+#: scfuncs.src
+msgctxt ""
+"scfuncs.src\n"
+"RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_AVERAGE_IFS\n"
+"2\n"
+"string.text"
+msgid "average_range"
+msgstr "gennemsnit_område"
+
+#: scfuncs.src
+msgctxt ""
+"scfuncs.src\n"
+"RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_AVERAGE_IFS\n"
+"3\n"
+"string.text"
+msgid "The range from which the values are to be averaged."
+msgstr "Området hvis værdier der skal beregnes gennemsnit for."
+
+#: scfuncs.src
+msgctxt ""
+"scfuncs.src\n"
+"RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_AVERAGE_IFS\n"
+"4\n"
+"string.text"
+msgid "range "
+msgstr "Område "
+
+#: scfuncs.src
+msgctxt ""
+"scfuncs.src\n"
+"RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_AVERAGE_IFS\n"
+"5\n"
+"string.text"
+msgid "Range 1, range 2,... are the ranges to be evaluated by the criteria given."
+msgstr "Område 1, område 2,... er de intervaller skal behandles ud fra de givne kriterier."
+
+#: scfuncs.src
+msgctxt ""
+"scfuncs.src\n"
+"RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_AVERAGE_IFS\n"
+"6\n"
+"string.text"
+msgid "criteria "
+msgstr "kriterier"
+
+#: scfuncs.src
+msgctxt ""
+"scfuncs.src\n"
+"RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_AVERAGE_IFS\n"
+"7\n"
+"string.text"
+msgid "Criteria 1, criteria 2,... are the cell ranges in which the search criteria are given."
+msgstr "Kriterie 1, kriterie 2,... er de celleområder hvor søgekriterierne er defineret."
+
+#: scfuncs.src
+msgctxt ""
+"scfuncs.src\n"
+"RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COUNT_IFS\n"
+"1\n"
+"string.text"
+msgid "Counts the cells that meet multiple criteria in multiple ranges."
+msgstr "Tæller de celler, der opfylder flere kriterier i flere områder."
+
+#: scfuncs.src
+msgctxt ""
+"scfuncs.src\n"
+"RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COUNT_IFS\n"
+"2\n"
+"string.text"
+msgid "range "
+msgstr "Område "
+
+#: scfuncs.src
+msgctxt ""
+"scfuncs.src\n"
+"RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COUNT_IFS\n"
+"3\n"
+"string.text"
+msgid "Range 1, range 2,... are the ranges to be evaluated by the criteria given."
+msgstr "Område 1, område 2,... er de områder der skal behandles ud fra de givne kriterier."
+
+#: scfuncs.src
+msgctxt ""
+"scfuncs.src\n"
+"RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COUNT_IFS\n"
+"4\n"
+"string.text"
+msgid "criteria "
+msgstr "kriterier"
+
+#: scfuncs.src
+msgctxt ""
+"scfuncs.src\n"
+"RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_COUNT_IFS\n"
+"5\n"
+"string.text"
+msgid "Criteria 1, criteria 2,... are the cell ranges in which the search criteria are given."
+msgstr "Kriterie 1, kriterie 2,... er de celleområder hvor søgekriterierne er defineret."
 
 #: scfuncs.src
 msgctxt ""
