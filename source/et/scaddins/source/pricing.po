@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.freedesktop.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
 "POT-Creation-Date: 2012-12-26 11:14+0100\n"
-"PO-Revision-Date: 2013-01-06 19:35+0000\n"
+"PO-Revision-Date: 2013-01-22 01:27+0000\n"
 "Last-Translator: Mihkel Tõnnov <mihhkel@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: et\n"
@@ -12,9 +12,9 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: LibreOffice\n"
+"X-Generator: Pootle 2.5.0-beta1\n"
 "X-Accelerator-Marker: ~\n"
-"X-POOTLE-MTIME: 1357500939.0\n"
+"X-POOTLE-MTIME: 1358818066.0\n"
 
 #: pricing.src
 msgctxt ""
@@ -23,7 +23,7 @@ msgctxt ""
 "1\n"
 "string.text"
 msgid "pricing of a barrier option"
-msgstr "Barjäärioptsiooni hinnastamine"
+msgstr "Automaattehingute optsiooni hinna määratlemine"
 
 #: pricing.src
 msgctxt ""
@@ -32,7 +32,7 @@ msgctxt ""
 "2\n"
 "string.text"
 msgid "spot"
-msgstr ""
+msgstr "algväärtus"
 
 #: pricing.src
 msgctxt ""
@@ -71,7 +71,6 @@ msgid "r"
 msgstr "i"
 
 #: pricing.src
-#, fuzzy
 msgctxt ""
 "pricing.src\n"
 "RID_PRICING_FUNCTION_DESCRIPTIONS.PRICING_FUNCDESC_OptBarrier\n"
@@ -87,7 +86,7 @@ msgctxt ""
 "8\n"
 "string.text"
 msgid "rf"
-msgstr ""
+msgstr "iv"
 
 #: pricing.src
 msgctxt ""
@@ -96,7 +95,7 @@ msgctxt ""
 "9\n"
 "string.text"
 msgid "foreign interest rate (continuously compounded)"
-msgstr ""
+msgstr "Intressimäär välisvaluutas (pidevalt liituv)"
 
 #: pricing.src
 msgctxt ""
@@ -105,7 +104,7 @@ msgctxt ""
 "10\n"
 "string.text"
 msgid "T"
-msgstr ""
+msgstr "T"
 
 #: pricing.src
 msgctxt ""
@@ -123,17 +122,16 @@ msgctxt ""
 "12\n"
 "string.text"
 msgid "strike"
-msgstr ""
+msgstr "realiseerimishind"
 
 #: pricing.src
-#, fuzzy
 msgctxt ""
 "pricing.src\n"
 "RID_PRICING_FUNCTION_DESCRIPTIONS.PRICING_FUNCDESC_OptBarrier\n"
 "13\n"
 "string.text"
 msgid "strike level of the option"
-msgstr "Optsiooni täitmistase"
+msgstr "Optsiooni realiseerimis- ehk täitmishind"
 
 #: pricing.src
 msgctxt ""
@@ -172,14 +170,13 @@ msgid "upper barrier (set to 0 for no upper barrier)"
 msgstr "Ülemine barjäär (puudumist tähistab 0)"
 
 #: pricing.src
-#, fuzzy
 msgctxt ""
 "pricing.src\n"
 "RID_PRICING_FUNCTION_DESCRIPTIONS.PRICING_FUNCDESC_OptBarrier\n"
 "18\n"
 "string.text"
 msgid "rebate"
-msgstr "rabatt"
+msgstr "fikseeritud_tagasimakse"
 
 #: pricing.src
 msgctxt ""
@@ -188,7 +185,7 @@ msgctxt ""
 "19\n"
 "string.text"
 msgid "amount of money paid at maturity if barrier was hit"
-msgstr "Barjääri tabamise korral tähtaja lõpus makstav raha"
+msgstr "Barjääri ületamise korral tähtaja lõpus makstav raha"
 
 #: pricing.src
 msgctxt ""
@@ -197,7 +194,7 @@ msgctxt ""
 "20\n"
 "string.text"
 msgid "put/call"
-msgstr ""
+msgstr "müügi-/ostuoptsioon"
 
 #: pricing.src
 msgctxt ""
@@ -206,7 +203,7 @@ msgctxt ""
 "21\n"
 "string.text"
 msgid "string to define if the option is a (p)ut or a (c)all"
-msgstr ""
+msgstr "String, mis määrab, kas tegu on müügi- (p) või ostuoptsiooniga (c)"
 
 #: pricing.src
 msgctxt ""
@@ -215,7 +212,7 @@ msgctxt ""
 "22\n"
 "string.text"
 msgid "knock in/out"
-msgstr ""
+msgstr "sisse-/väljalülituv"
 
 #: pricing.src
 msgctxt ""
@@ -224,7 +221,7 @@ msgctxt ""
 "23\n"
 "string.text"
 msgid "string to define if the option is of type knock-(i)n or knock-(o)ut"
-msgstr ""
+msgstr "String, mis määrab, kas optsioon on hinnast sõltuvalt sisse- (i) või väljalülituv (o)"
 
 #: pricing.src
 msgctxt ""
@@ -233,7 +230,7 @@ msgctxt ""
 "24\n"
 "string.text"
 msgid "barrier_type"
-msgstr ""
+msgstr "barjääri_tüüp"
 
 #: pricing.src
 msgctxt ""
@@ -242,7 +239,7 @@ msgctxt ""
 "25\n"
 "string.text"
 msgid "string to define whether the barrier is observed (c)ontinuously or only at the (e)nd/maturity"
-msgstr ""
+msgstr "String, mis määrab, kas barjääri jälgitakse pidevalt (c) või üksnes lõpus/tähtajal (e)"
 
 #: pricing.src
 msgctxt ""
@@ -251,17 +248,16 @@ msgctxt ""
 "26\n"
 "string.text"
 msgid "greek"
-msgstr ""
+msgstr "riskimuutuja"
 
 #: pricing.src
-#, fuzzy
 msgctxt ""
 "pricing.src\n"
 "RID_PRICING_FUNCTION_DESCRIPTIONS.PRICING_FUNCDESC_OptBarrier\n"
 "27\n"
 "string.text"
 msgid "optional parameter, if left out then the function simply returns the option price; if set, the function returns price sensitivities (Greeks) to one of the input parameters; possible values are (d)elta, (g)amma, (t)heta, v(e)ga, v(o)lga, v(a)nna, (r)ho, rho(f)"
-msgstr "Valikuline parameeter, mille väljajätmisel tagastab funktsioon lihtsalt optsiooni hinna. Määramisel tagastab funktsioon hinna tundlikkuse ühele sisendparameetrile; võimalikud väärtused on d (delta), g (gamma), t (teeta), e (veega), o (volga), a (vanna), r (roo), f (rhof)"
+msgstr "Valikuline parameeter, mille väljajätmisel tagastab funktsioon lihtsalt optsiooni hinna. Määramisel tagastab funktsioon hinna tundlikkuse (riskimuutuja) ühe sisendparameetri suhtes; võimalikud väärtused on d (delta), g (gamma), t (teeta), e (veega), o (volga), a (vanna), r (roo), f (roo-f)"
 
 #: pricing.src
 msgctxt ""
@@ -270,7 +266,7 @@ msgctxt ""
 "1\n"
 "string.text"
 msgid "pricing of a touch/no-touch option"
-msgstr ""
+msgstr "Barjääri saavutava/mittesaavutava optsiooni hinna määratlemine"
 
 #: pricing.src
 msgctxt ""
@@ -279,7 +275,7 @@ msgctxt ""
 "2\n"
 "string.text"
 msgid "spot"
-msgstr ""
+msgstr "algväärtus"
 
 #: pricing.src
 msgctxt ""
@@ -315,7 +311,7 @@ msgctxt ""
 "6\n"
 "string.text"
 msgid "r"
-msgstr ""
+msgstr "i"
 
 #: pricing.src
 msgctxt ""
@@ -324,7 +320,7 @@ msgctxt ""
 "7\n"
 "string.text"
 msgid "interest rate (continuously compounded)"
-msgstr ""
+msgstr "Intressimäär (pidevalt liituv)"
 
 #: pricing.src
 msgctxt ""
@@ -333,7 +329,7 @@ msgctxt ""
 "8\n"
 "string.text"
 msgid "rf"
-msgstr ""
+msgstr "iv"
 
 #: pricing.src
 msgctxt ""
@@ -342,7 +338,7 @@ msgctxt ""
 "9\n"
 "string.text"
 msgid "foreign interest rate (continuously compounded)"
-msgstr ""
+msgstr "Intressimäär välisvaluutas (pidevalt liituv)"
 
 #: pricing.src
 msgctxt ""
@@ -351,7 +347,7 @@ msgctxt ""
 "10\n"
 "string.text"
 msgid "T"
-msgstr ""
+msgstr "T"
 
 #: pricing.src
 msgctxt ""
@@ -405,7 +401,7 @@ msgctxt ""
 "16\n"
 "string.text"
 msgid "foreign/domestic"
-msgstr ""
+msgstr "välis-/ kohalik valuuta"
 
 #: pricing.src
 msgctxt ""
@@ -414,7 +410,7 @@ msgctxt ""
 "17\n"
 "string.text"
 msgid "string to define if the option pays one unit of (d)omestic currency (cash or nothing) or (f)oreign currency (asset or nothing)"
-msgstr ""
+msgstr "String, mis määrab, kas optsioon tasub ühe ühiku kohalikku valuutat (d; sularaha või mitte midagi) või välisvaluutat (f; vara või mitte midagi)"
 
 #: pricing.src
 msgctxt ""
@@ -423,7 +419,7 @@ msgctxt ""
 "18\n"
 "string.text"
 msgid "knock in/out"
-msgstr ""
+msgstr "sisse-/väljalülituv"
 
 #: pricing.src
 msgctxt ""
@@ -432,7 +428,7 @@ msgctxt ""
 "19\n"
 "string.text"
 msgid "string to define if the option is of type knock-(i)n (touch) or knock-(o)ut (no-touch)"
-msgstr ""
+msgstr "String, mis määrab, kas optsioon on barjääri ületamisest sõltuvalt sisse- (i) või väljalülituv (o)"
 
 #: pricing.src
 msgctxt ""
@@ -441,7 +437,7 @@ msgctxt ""
 "20\n"
 "string.text"
 msgid "barrier_type"
-msgstr ""
+msgstr "barjääri_tüüp"
 
 #: pricing.src
 msgctxt ""
@@ -450,7 +446,7 @@ msgctxt ""
 "21\n"
 "string.text"
 msgid "string to define whether the barrier is observed (c)ontinuously or only at the (e)nd/maturity"
-msgstr ""
+msgstr "String, mis määrab, kas barjääri jälgitakse pidevalt (c) või üksnes lõpus/tähtajal (e)"
 
 #: pricing.src
 msgctxt ""
@@ -459,17 +455,16 @@ msgctxt ""
 "22\n"
 "string.text"
 msgid "greek"
-msgstr ""
+msgstr "riskimuutuja"
 
 #: pricing.src
-#, fuzzy
 msgctxt ""
 "pricing.src\n"
 "RID_PRICING_FUNCTION_DESCRIPTIONS.PRICING_FUNCDESC_OptTouch\n"
 "23\n"
 "string.text"
 msgid "optional parameter, if left out then the function simply returns the option price; if set, the function returns price sensitivities (Greeks) to one of the input parameters; possible values are (d)elta, (g)amma, (t)heta, v(e)ga, v(o)lga, v(a)nna, (r)ho, rho(f)"
-msgstr "Valikuline parameeter, mille väljajätmisel tagastab funktsioon lihtsalt optsiooni hinna. Määramisel tagastab funktsioon hinna tundlikkuse ühele sisendparameetrile; võimalikud väärtused on d (delta), g (gamma), t (teeta), e (veega), o (volga), a (vanna), r (roo), f (rhof)"
+msgstr "Valikuline parameeter, mille väljajätmisel tagastab funktsioon lihtsalt optsiooni hinna. Määramisel tagastab funktsioon hinna tundlikkuse (riskimuutuja) ühe sisendparameetri suhtes; võimalikud väärtused on d (delta), g (gamma), t (teeta), e (veega), o (volga), a (vanna), r (roo), f (roo-f)"
 
 #: pricing.src
 msgctxt ""
@@ -478,7 +473,7 @@ msgctxt ""
 "1\n"
 "string.text"
 msgid "probability that an asset hits a barrier assuming it follows dS/S = mu dt + vol dW"
-msgstr ""
+msgstr "Tõenäosus, et vara ületab barjääri, eeldusel, et see järgib valemit dS/S = µ dt + vol dW"
 
 #: pricing.src
 msgctxt ""
@@ -487,7 +482,7 @@ msgctxt ""
 "2\n"
 "string.text"
 msgid "spot"
-msgstr ""
+msgstr "algväärtus"
 
 #: pricing.src
 msgctxt ""
@@ -523,7 +518,7 @@ msgctxt ""
 "6\n"
 "string.text"
 msgid "drift"
-msgstr ""
+msgstr "triiv"
 
 #: pricing.src
 msgctxt ""
@@ -532,7 +527,7 @@ msgctxt ""
 "7\n"
 "string.text"
 msgid "parameter mu in dS/S = mu dt + vol dW"
-msgstr ""
+msgstr "Parameeter µ valemis dS/S = µ dt + vol dW"
 
 #: pricing.src
 msgctxt ""
@@ -541,7 +536,7 @@ msgctxt ""
 "8\n"
 "string.text"
 msgid "T"
-msgstr ""
+msgstr "T"
 
 #: pricing.src
 msgctxt ""
@@ -595,7 +590,7 @@ msgctxt ""
 "1\n"
 "string.text"
 msgid "probability that an asset will at maturity end up between two barrier levels, assuming it follows dS/S = mu dt + vol dW (if the last two optional parameters (strike, put/call) are specified, the probability of S_T in [strike, upper barrier] for a call and S_T in [lower barrier, strike] for a put will be returned)"
-msgstr ""
+msgstr "Tõenäosus, et vara on tähtaja lõpul kahe barjääritaseme vahel, eeldusel, et see järgib valemit dS/S = µ dt + vol dW (kui kaks viimast valikulist parameetrit (realiseerimishind ning müügi-/ostuoptsioon) on määratud, siis tagastatakse ostuoptsiooni puhul S_T tõenäosus hulgas [realiseerimishind, ülemine barjäär] ning müügioptsiooni puhul S_T tõenäosus hulgas [alumine barjäär, realiseerimishind])"
 
 #: pricing.src
 msgctxt ""
@@ -604,7 +599,7 @@ msgctxt ""
 "2\n"
 "string.text"
 msgid "spot"
-msgstr ""
+msgstr "algväärtus"
 
 #: pricing.src
 msgctxt ""
@@ -640,7 +635,7 @@ msgctxt ""
 "6\n"
 "string.text"
 msgid "drift"
-msgstr ""
+msgstr "triiv"
 
 #: pricing.src
 msgctxt ""
@@ -649,7 +644,7 @@ msgctxt ""
 "7\n"
 "string.text"
 msgid "parameter mu from dS/S = mu dt + vol dW"
-msgstr ""
+msgstr "Parameeter µ valemist dS/S = µ dt + vol dW"
 
 #: pricing.src
 msgctxt ""
@@ -658,7 +653,7 @@ msgctxt ""
 "8\n"
 "string.text"
 msgid "T"
-msgstr ""
+msgstr "T"
 
 #: pricing.src
 msgctxt ""
@@ -712,7 +707,7 @@ msgctxt ""
 "14\n"
 "string.text"
 msgid "put/call"
-msgstr ""
+msgstr "müügi-/ostuoptsioon"
 
 #: pricing.src
 msgctxt ""
@@ -721,7 +716,7 @@ msgctxt ""
 "15\n"
 "string.text"
 msgid "optional (p)ut/(c)all indicator"
-msgstr ""
+msgstr "Valikuline müügi- (p) või ostuoptsiooni (c) tähis"
 
 #: pricing.src
 msgctxt ""
@@ -730,7 +725,7 @@ msgctxt ""
 "16\n"
 "string.text"
 msgid "strike"
-msgstr ""
+msgstr "realiseerimishind"
 
 #: pricing.src
 msgctxt ""
@@ -739,7 +734,7 @@ msgctxt ""
 "17\n"
 "string.text"
 msgid "optional strike level"
-msgstr ""
+msgstr "Valikuline täitmistase"
 
 #: pricing.src
 msgctxt ""
