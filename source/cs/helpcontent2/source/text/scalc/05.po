@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
 "POT-Creation-Date: 2013-11-20 13:02+0100\n"
-"PO-Revision-Date: 2013-02-27 21:48+0000\n"
+"PO-Revision-Date: 2014-03-16 15:33+0000\n"
 "Last-Translator: Stanislav <stanislav.horacek@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: cs\n"
@@ -12,9 +12,9 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: LibreOffice\n"
+"X-Generator: Pootle 2.5.1\n"
 "X-Accelerator-Marker: ~\n"
-"X-POOTLE-MTIME: 1362001710.0\n"
+"X-POOTLE-MTIME: 1394983984.000000\n"
 
 #: 02140000.xhp
 msgctxt ""
@@ -802,7 +802,7 @@ msgctxt ""
 "par_id8266853\n"
 "help.text"
 msgid "In older versions of the software, empty cells were forced to numeric 0 in some contexts and to empty string in others, except in direct comparison where =A1=0 and =A1=\"\" both resulted in TRUE if A1 was empty. Emptiness now is inherited until used, so both =VLOOKUP(...)=0 and =VLOOKUP(...)=\"\" give TRUE if the lookup resulted in an empty cell being returned."
-msgstr "Ve starších verzích softwaru prázdné buňky byly v některých případech změněny na 0 a v jiných případech na prázdné řetězce kromě případů, kdy při přímém porovnání =A1=0 a =A1=\"\" byl výsledek TRUE pokud buňka A1 byla prázdná. Nyní se prázdnost dědí dokud se nepoužije, že jak =VLOOKUP(...)=0 tak =VLOOKUP(...)=\"\" dávají TRUE pokud lookup navrací prázdnou buňku."
+msgstr "Ve starších verzích softwaru prázdné buňky byly v některých případech změněny na 0 a v jiných případech na prázdné řetězce kromě případů, kdy při přímém porovnání =A1=0 a =A1=\"\" byl výsledek PRAVDA, pokud buňka A1 byla prázdná. Nyní se prázdnost dědí, dokud se nepoužije, tudíž jak =VLOOKUP(...)=0, tak =VLOOKUP(...)=\"\" vrátí PRAVDA, je-li výsledkem vyhledávání prázdná buňka."
 
 #: empty_cells.xhp
 msgctxt ""
@@ -834,7 +834,7 @@ msgctxt ""
 "par_id4086428\n"
 "help.text"
 msgid "=B1=0 => TRUE"
-msgstr "=B1=0 => TRUE"
+msgstr "=B1=0 => PRAVDA"
 
 #: empty_cells.xhp
 msgctxt ""
@@ -842,7 +842,7 @@ msgctxt ""
 "par_id9024628\n"
 "help.text"
 msgid "=B1=\"\" => TRUE"
-msgstr "=B1=\"\" => TRUE"
+msgstr "=B1=\"\" => PRAVDA"
 
 #: empty_cells.xhp
 msgctxt ""
@@ -850,7 +850,7 @@ msgctxt ""
 "par_id3067110\n"
 "help.text"
 msgid "=C1=0 => TRUE"
-msgstr "=C1=0 => TRUE"
+msgstr "=C1=0 => PRAVDA"
 
 #: empty_cells.xhp
 msgctxt ""
@@ -858,7 +858,7 @@ msgctxt ""
 "par_id8841822\n"
 "help.text"
 msgid "=C1=\"\" => TRUE (previously was FALSE)"
-msgstr "=C1=\"\" => TRUE (dříve bylo FALSE)"
+msgstr "=C1=\"\" => PRAVDA (dříve bylo NEPRAVDA)"
 
 #: empty_cells.xhp
 msgctxt ""
@@ -866,7 +866,7 @@ msgctxt ""
 "par_id4077578\n"
 "help.text"
 msgid "=ISNUMBER(B1) => FALSE"
-msgstr "=ISNUMBER(B1) => FALSE"
+msgstr "=ISNUMBER(B1) => NEPRAVDA"
 
 #: empty_cells.xhp
 msgctxt ""
@@ -874,7 +874,7 @@ msgctxt ""
 "par_id9094515\n"
 "help.text"
 msgid "=ISNUMBER(C1) => FALSE (previously was TRUE)"
-msgstr "=ISNUMBER(C1) => FALSE (dříve bylo TRUE)"
+msgstr "=ISNUMBER(C1) => NEPRAVDA (dříve bylo PRAVDA)"
 
 #: empty_cells.xhp
 msgctxt ""
@@ -882,7 +882,7 @@ msgctxt ""
 "par_id396740\n"
 "help.text"
 msgid "=ISNUMBER(VLOOKUP(1;A1:C1;2)) => FALSE (B1)"
-msgstr "=ISNUMBER(VLOOKUP(1;A1:C1;2)) => FALSE (B1)"
+msgstr "=ISNUMBER(VLOOKUP(1;A1:C1;2)) => NEPRAVDA (B1)"
 
 #: empty_cells.xhp
 msgctxt ""
@@ -890,7 +890,7 @@ msgctxt ""
 "par_id3859675\n"
 "help.text"
 msgid "=ISNUMBER(VLOOKUP(1;A1:C1;3)) => FALSE (C1, previously was TRUE)"
-msgstr "=ISNUMBER(VLOOKUP(1;A1:C1;3)) => FALSE (C1, dříve bylo TRUE)"
+msgstr "=ISNUMBER(VLOOKUP(1;A1:C1;3)) => NEPRAVDA (C1, dříve bylo PRAVDA)"
 
 #: empty_cells.xhp
 msgctxt ""
@@ -898,7 +898,7 @@ msgctxt ""
 "par_id402233\n"
 "help.text"
 msgid "=ISTEXT(B1) => FALSE"
-msgstr "=ISTEXT(B1) => FALSE"
+msgstr "=ISTEXT(B1) => NEPRAVDA"
 
 #: empty_cells.xhp
 msgctxt ""
@@ -906,7 +906,7 @@ msgctxt ""
 "par_id1623889\n"
 "help.text"
 msgid "=ISTEXT(C1) => FALSE"
-msgstr "=ISTEXT(C1) => FALSE"
+msgstr "=ISTEXT(C1) => NEPRAVDA"
 
 #: empty_cells.xhp
 msgctxt ""
@@ -914,7 +914,7 @@ msgctxt ""
 "par_id7781914\n"
 "help.text"
 msgid "=ISTEXT(VLOOKUP(1;A1:C1;2)) => FALSE (B1, previously was TRUE)"
-msgstr "=ISTEXT(VLOOKUP(1;A1:C1;2)) => FALSE (B1, dříve bylo TRUE)"
+msgstr "=ISTEXT(VLOOKUP(1;A1:C1;2)) => NEPRAVDA (B1, dříve bylo PRAVDA)"
 
 #: empty_cells.xhp
 msgctxt ""
@@ -922,7 +922,7 @@ msgctxt ""
 "par_id300912\n"
 "help.text"
 msgid "=ISTEXT(VLOOKUP(1;A1:C1;3)) => FALSE (C1)"
-msgstr "=ISTEXT(VLOOKUP(1;A1:C1;3)) => FALSE (C1)"
+msgstr "=ISTEXT(VLOOKUP(1;A1:C1;3)) => NEPRAVDA (C1)"
 
 #: empty_cells.xhp
 msgctxt ""
@@ -930,7 +930,7 @@ msgctxt ""
 "par_id9534592\n"
 "help.text"
 msgid "=ISBLANK(B1) => TRUE"
-msgstr "=ISBLANK(B1) => TRUE"
+msgstr "=ISBLANK(B1) => PRAVDA"
 
 #: empty_cells.xhp
 msgctxt ""
@@ -938,7 +938,7 @@ msgctxt ""
 "par_id4969328\n"
 "help.text"
 msgid "=ISBLANK(C1) => FALSE"
-msgstr "=ISBLANK(C1) => FALSE"
+msgstr "=ISBLANK(C1) => NEPRAVDA"
 
 #: empty_cells.xhp
 msgctxt ""
@@ -946,7 +946,7 @@ msgctxt ""
 "par_id9635914\n"
 "help.text"
 msgid "=ISBLANK(VLOOKUP(1;A1:C1;2)) => TRUE (B1, previously was FALSE)"
-msgstr "=ISBLANK(VLOOKUP(1;A1:C1;2)) => TRUE (B1, dříve bylo FALSE)"
+msgstr "=ISBLANK(VLOOKUP(1;A1:C1;2)) => PRAVDA (B1, dříve bylo NEPRAVDA)"
 
 #: empty_cells.xhp
 msgctxt ""
@@ -954,7 +954,7 @@ msgctxt ""
 "par_id2476577\n"
 "help.text"
 msgid "=ISBLANK(VLOOKUP(1;A1:C1;3)) => FALSE (C1)"
-msgstr "=ISBLANK(VLOOKUP(1;A1:C1;3)) => FALSE (C1)"
+msgstr "=ISBLANK(VLOOKUP(1;A1:C1;3)) => NEPRAVDA (C1)"
 
 #: empty_cells.xhp
 msgctxt ""
@@ -962,7 +962,7 @@ msgctxt ""
 "par_id4217047\n"
 "help.text"
 msgid "Note that Microsoft Excel behaves different and always returns a number as the result of a reference to an empty cell or a formula cell with the result of an empty cell. For example:"
-msgstr "Poznamenejme, že Microsoft Excel vždy vrací číslo jako výsledek odkazu na prázdnou buňku nebo buňku se vzorcem je-li výsledkem prázdná buňka. Například:"
+msgstr "Poznamenejme, že Microsoft Excel vždy vrací číslo jako výsledek odkazu na prázdnou buňku nebo buňku se vzorcem, je-li výsledkem prázdná buňka. Například:"
 
 #: empty_cells.xhp
 msgctxt ""
@@ -986,7 +986,7 @@ msgctxt ""
 "par_id4524674\n"
 "help.text"
 msgid "=ISNUMBER(A1) => FALSE"
-msgstr "=ISNUMBER(A1) => FALSE"
+msgstr "=ISNUMBER(A1) => NEPRAVDA"
 
 #: empty_cells.xhp
 msgctxt ""
@@ -994,7 +994,7 @@ msgctxt ""
 "par_id4396801\n"
 "help.text"
 msgid "=ISTEXT(A1) => FALSE"
-msgstr "=ISTEXT(A1) => FALSE"
+msgstr "=ISTEXT(A1) => NEPRAVDA"
 
 #: empty_cells.xhp
 msgctxt ""
@@ -1002,7 +1002,7 @@ msgctxt ""
 "par_id5293740\n"
 "help.text"
 msgid "=A1=0 => TRUE"
-msgstr "=A1=0 => TRUE"
+msgstr "=A1=0 => PRAVDA"
 
 #: empty_cells.xhp
 msgctxt ""
@@ -1010,7 +1010,7 @@ msgctxt ""
 "par_id7623828\n"
 "help.text"
 msgid "=A1=\"\" => TRUE"
-msgstr "=A1=\"\" => TRUE"
+msgstr "=A1=\"\" => PRAVDA"
 
 #: empty_cells.xhp
 msgctxt ""
@@ -1018,7 +1018,7 @@ msgctxt ""
 "par_id2861720\n"
 "help.text"
 msgid "=ISNUMBER(B1) => FALSE (MS-Excel: TRUE)"
-msgstr "=ISNUMBER(B1) => FALSE (MS-Excel: TRUE)"
+msgstr "=ISNUMBER(B1) => NEPRAVDA (MS-Excel: PRAVDA)"
 
 #: empty_cells.xhp
 msgctxt ""
@@ -1026,7 +1026,7 @@ msgctxt ""
 "par_id9604480\n"
 "help.text"
 msgid "=ISTEXT(B1) => FALSE"
-msgstr "=ISTEXT(B1) => FALSE"
+msgstr "=ISTEXT(B1) => NEPRAVDA"
 
 #: empty_cells.xhp
 msgctxt ""
@@ -1034,7 +1034,7 @@ msgctxt ""
 "par_id2298959\n"
 "help.text"
 msgid "=B1=0 => TRUE"
-msgstr "=B1=0 => TRUE"
+msgstr "=B1=0 => PRAVDA"
 
 #: empty_cells.xhp
 msgctxt ""
@@ -1042,7 +1042,7 @@ msgctxt ""
 "par_id4653767\n"
 "help.text"
 msgid "=B1=\"\" => TRUE (MS-Excel: FALSE)"
-msgstr "=B1=\"\" => TRUE (MS-Excel: FALSE)"
+msgstr "=B1=\"\" => PRAVDA (MS-Excel: NEPRAVDA)"
 
 #: empty_cells.xhp
 msgctxt ""
@@ -1058,7 +1058,7 @@ msgctxt ""
 "par_id6746421\n"
 "help.text"
 msgid "=ISNUMBER(VLOOKUP(...)) => FALSE"
-msgstr "=ISNUMBER(VLOOKUP(...)) => FALSE"
+msgstr "=ISNUMBER(VLOOKUP(...)) => NEPRAVDA"
 
 #: empty_cells.xhp
 msgctxt ""
@@ -1066,7 +1066,7 @@ msgctxt ""
 "par_id4876247\n"
 "help.text"
 msgid "=ISTEXT(VLOOKUP(...)) => FALSE"
-msgstr "=ISTEXT(VLOOKUP(...)) => FALSE"
+msgstr "=ISTEXT(VLOOKUP(...)) => NEPRAVDA"
 
 #: empty_cells.xhp
 msgctxt ""
@@ -1074,7 +1074,7 @@ msgctxt ""
 "par_id7458723\n"
 "help.text"
 msgid "=ISNUMBER(C1) => FALSE (MS-Excel: TRUE)"
-msgstr "=ISNUMBER(C1) => FALSE (MS-Excel: TRUE)"
+msgstr "=ISNUMBER(C1) => NEPRAVDA (MS-Excel: PRAVDA)"
 
 #: empty_cells.xhp
 msgctxt ""
@@ -1082,4 +1082,4 @@ msgctxt ""
 "par_id2753379\n"
 "help.text"
 msgid "=ISTEXT(C1) => FALSE"
-msgstr "=ISTEXT(C1) => FALSE"
+msgstr "=ISTEXT(C1) => NEPRAVDA"
