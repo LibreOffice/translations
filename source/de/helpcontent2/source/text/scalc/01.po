@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
 "POT-Creation-Date: 2014-05-30 13:09+0200\n"
-"PO-Revision-Date: 2014-06-01 19:47+0000\n"
+"PO-Revision-Date: 2014-08-19 11:04+0000\n"
 "Last-Translator: Christian <kuehl.christian@googlemail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: de\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Pootle 2.5.1\n"
 "X-Accelerator-Marker: ~\n"
-"X-POOTLE-MTIME: 1401652020.000000\n"
+"X-POOTLE-MTIME: 1408446246.000000\n"
 
 #: 01120000.xhp
 msgctxt ""
@@ -21244,7 +21244,7 @@ msgctxt ""
 "par_id1027200802301348\n"
 "help.text"
 msgid "For interoperability the ADDRESS and INDIRECT functions support an optional parameter to specify whether the R1C1 address notation instead of the usual A1 notation should be used."
-msgstr "Für die Kompatibilität unterstützen die Funktionen ADRESSE und INDIREKT einen optionalen Parameter, der angibt, ob die R1C1-Notation anstatt der üblichen A1-Notation verwendet werden soll."
+msgstr "Für die Kompatibilität besitzen die Funktionen ADRESSE und INDIREKT nun einen optionalen Parameter, der angibt, ob die R1C1-Notation anstatt der üblichen A1-Notation verwendet werden soll."
 
 #: 04060109.xhp
 msgctxt ""
@@ -21276,7 +21276,7 @@ msgctxt ""
 "par_id1027200802301556\n"
 "help.text"
 msgid "In case of R1C1 notation, ADDRESS returns address strings using the exclamation mark '!' as the sheet name separator, and INDIRECT expects the exclamation mark as sheet name separator. Both functions still use the dot '.' sheet name separator with A1 notation."
-msgstr "Im Falle der R1C1-Notation liefert ADRESSE das Ausrufezeichen '!' als Trenner für den Tabellennamen und INDIREKT erwartet das Ausrufezeichen als Tabellennamen-Trenner. Beide Funktionen benutzen den Punkt '.' als Trenner im Falle der A1-Notation."
+msgstr "Im Falle der R1C1-Notation liefert ADRESSE das Ausrufezeichen '!' als Trenner für den Tabellennamen und INDIREKT erwartet das Ausrufezeichen als Trenner für Tabellennamen. Beide Funktionen benutzen den Punkt '.' als Trenner im Falle der A1-Notation."
 
 #: 04060109.xhp
 msgctxt ""
@@ -21284,7 +21284,7 @@ msgctxt ""
 "par_id1027200802301521\n"
 "help.text"
 msgid "When opening documents from ODF 1.0/1.1 format, the ADDRESS functions that show a sheet name as the fourth paramater will shift that sheet name to become the fifth parameter. A new fourth parameter with the value 1 will be inserted."
-msgstr "Wenn ein Dokument im ODF 1.0/1.1 Format geöffnet wird und die Funktion ADRESSE einen 4. Parameter als Tabellennamen besitzt, wird dieser als 5. Parameter verschoben. Ein neuer 4. Parameter mit dem Wert 1 wird eingefügt."
+msgstr "Wenn ein Dokument im ODF 1.0/1.1 Format geöffnet wird und die Funktion ADRESSE einen 4. Parameter als Tabellennamen besitzt, wird dieser an die Stelle des 5. Parameters verschoben. Ein neuer 4. Parameter mit dem Wert 1 wird eingefügt."
 
 #: 04060109.xhp
 msgctxt ""
@@ -21353,7 +21353,7 @@ msgctxt ""
 "9\n"
 "help.text"
 msgid "<emph>Abs</emph> determines the type of reference:"
-msgstr "<emph>Bezug</emph> bestimmt den Bezugstyp:"
+msgstr "<emph>Bezug</emph> (optional) bestimmt die Art des Bezuges:"
 
 #: 04060109.xhp
 msgctxt ""
@@ -21406,7 +21406,7 @@ msgctxt ""
 "14\n"
 "help.text"
 msgid "<emph>Sheet</emph> represents the name of the sheet. It must be placed in double quotes."
-msgstr "<emph>Tabelle</emph> stellt den Namen der Tabelle dar. Er muss in doppelten Anführungszeichen stehen."
+msgstr "<emph>Tabelle</emph> (optional) gibt den Namen der Tabelle an. Er muss in doppelten Anführungszeichen stehen."
 
 #: 04060109.xhp
 msgctxt ""
@@ -21424,7 +21424,7 @@ msgctxt ""
 "16\n"
 "help.text"
 msgid "<item type=\"input\">=ADDRESS(1;1;2;;\"Sheet2\")</item> returns the following: Sheet2.A$1"
-msgstr "<item type=\"input\">=ADRESSE(1;1;2;\"Tabelle2\")</item> gibt Folgendes zurück: Tabelle2.A$1"
+msgstr "Die Funktion <item type=\"input\">=ADRESSE(1;1;2;;\"Tabelle2\")</item> in A1 der Tabelle1 gibt Folgendes zurück: Tabelle2.A$1"
 
 #: 04060109.xhp
 msgctxt ""
@@ -21433,7 +21433,7 @@ msgctxt ""
 "17\n"
 "help.text"
 msgid "If the cell A1 in sheet 2 contains the value <item type=\"input\">-6</item>, you can refer indirectly to the referenced cell using a function in B2 by entering <item type=\"input\">=ABS(INDIRECT(B2))</item>. The result is the absolute value of the cell reference specified in B2, which in this case is 6."
-msgstr "Wenn die Zelle A1 in Tabelle 2 den Wert <item type=\"input\">-6</item> enthält, können Sie indirekt auf die referenzierte Zelle verweisen, indem Sie eine Funktion in B2 verwenden und <item type=\"input\">=ABS(INDIREKT(B2))</item> eingeben. Das Ergebnis ist der Betrag (absolute Wert) des in B2 angegebenen Zellbezugs, in diesem Falle 6."
+msgstr "Wenn die Zelle A1 in Tabelle2 den Wert <item type=\"input\">-6</item> enthält, können Sie indirekt auf die referenzierte Zelle verweisen, indem Sie eine Funktion in B1 der Tabelle1 verwenden und <item type=\"input\">=ABS(INDIREKT(A1))</item> eingeben. Das Ergebnis ist der Betrag (absolute Wert) des in A1 angegebenen Zellbezugs, in diesem Falle 6."
 
 #: 04060109.xhp
 msgctxt ""
