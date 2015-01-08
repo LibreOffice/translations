@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
 "POT-Creation-Date: 2014-11-18 11:23+0100\n"
-"PO-Revision-Date: 2014-12-13 15:19+0000\n"
+"PO-Revision-Date: 2015-01-01 20:46+0000\n"
 "Last-Translator: Stanislav <stanislav.horacek@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: cs\n"
@@ -12,9 +12,9 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Pootle 2.5.1\n"
+"X-Generator: LibreOffice\n"
 "X-Accelerator-Marker: ~\n"
-"X-POOTLE-MTIME: 1418483990.000000\n"
+"X-POOTLE-MTIME: 1420145189.000000\n"
 
 #: 00000002.xhp
 msgctxt ""
@@ -58,7 +58,7 @@ msgctxt ""
 "8\n"
 "help.text"
 msgid "When converting numbers, $[officename] Basic uses the locale settings of the system for determining the type of decimal and thousand separator."
-msgstr "Při konverzi čísel $[officename] Basic používá lokální nastavení systému pro zjištění aktuálního nastavení typu oddělovače desetinných míst a tisíců."
+msgstr "Při převodu čísel používá $[officename] Basic pro zjištění typu oddělovače desetinných míst a tisíců národní prostředí systému."
 
 #: 00000002.xhp
 msgctxt ""
@@ -67,7 +67,7 @@ msgctxt ""
 "9\n"
 "help.text"
 msgid "The behavior has an effect on both the implicit conversion ( 1 + \"2.3\" = 3.3 ) as well as the runtime function <link href=\"text/sbasic/shared/03102700.xhp\" name=\"IsNumeric\">IsNumeric</link>."
-msgstr "Toto chování má vliv nejenom na implicitní konverze ( např. 1 + \"2.3\" = 3.3 ) ale i na runtime funkci <link href=\"text/sbasic/shared/03102700.xhp\" name=\"IsNumeric\">IsNumeric</link>."
+msgstr "Toto chování má vliv nejenom na implicitní převod ( např. 1 + \"2.3\" = 3.3 ), ale i na runtime funkci <link href=\"text/sbasic/shared/03102700.xhp\" name=\"IsNumeric\">IsNumeric</link>."
 
 #: 00000002.xhp
 msgctxt ""
@@ -200,7 +200,7 @@ msgctxt ""
 "102\n"
 "help.text"
 msgid "You can set the locale used for controlling the formatting numbers, dates and currencies in $[officename] Basic in <emph><switchinline select=\"sys\"><caseinline select=\"MAC\">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline> - Language Settings - Languages</emph>. In Basic format codes, the decimal point (<emph>.</emph>) is always used as <emph>placeholder</emph> for the decimal separator defined in your locale and will be replaced by the corresponding character."
-msgstr "Národní nastavení použité pro formátování čísel, data a měny v jazyce $[officename] Basic můžete nastavit v <emph><switchinline select=\"sys\"><caseinline select=\"MAC\">%PRODUCTNAME - Předvolby</caseinline><defaultinline>Nástroje - Možnosti</defaultinline></switchinline> - Jazyková nastavení - Jazyky</emph>. Ve formátovacích kódech se jako <emph>zástupný znak</emph> pro desetinný oddělovač používá vždy tečka (<emph>.</emph>), která se při zobrazení nahradí odpovídajícím znakem podle národního nastavení."
+msgstr "Národní prostředí použité pro formátování čísel, dat a měny v jazyce $[officename] Basic můžete nastavit v <emph><switchinline select=\"sys\"><caseinline select=\"MAC\">%PRODUCTNAME - Předvolby</caseinline><defaultinline>Nástroje - Možnosti</defaultinline></switchinline> - Jazyková nastavení - Jazyky</emph>. Ve formátovacích kódech se jako <emph>zástupný znak</emph> pro desetinný oddělovač používá vždy tečka (<emph>.</emph>), která se při zobrazení nahradí odpovídajícím znakem podle národního prostředí."
 
 #: 00000003.xhp
 msgctxt ""
@@ -209,7 +209,7 @@ msgctxt ""
 "103\n"
 "help.text"
 msgid "The same applies to the locale settings for date, time and currency formats. The Basic format code will be interpreted and displayed according to your locale setting."
-msgstr "Totéž platí pro národní nastavení formátu data, času a měny. Formátovací kódy se interpretují a zobrazí podle aktuálního národního nastavení."
+msgstr "Totéž platí pro národní prostředí formátu data, času a měny. Formátovací kódy se interpretují a zobrazí podle aktuálního národního prostředí."
 
 #: 00000003.xhp
 msgctxt ""
@@ -1038,7 +1038,7 @@ msgctxt ""
 "par_id31469414\n"
 "help.text"
 msgid "<variable id=\"err294\">294 Invalid DDE link format</variable>"
-msgstr "<variable id=\"err294\">294 Neplatný formát DDE odkazu</variable>"
+msgstr "<variable id=\"err294\">294 Neplatný formát odkazu DDE</variable>"
 
 #: 00000003.xhp
 msgctxt ""
@@ -1214,7 +1214,7 @@ msgctxt ""
 "94\n"
 "help.text"
 msgid "<variable id=\"err447\">447 The current locale setting is not supported by the given object</variable>"
-msgstr "<variable id=\"err447\">447 Aktuální jazykové nastavení není podporováno daným objektem</variable>"
+msgstr "<variable id=\"err447\">447 Aktuální národní prostředí není daným objektem podporováno</variable>"
 
 #: 00000003.xhp
 msgctxt ""
@@ -10123,7 +10123,7 @@ msgctxt ""
 "par_id6618854\n"
 "help.text"
 msgid "Numbers with decimal delimiters are converted according to the locale settings."
-msgstr "Čísla s desetinným oddělovačem se převedou podle jazykového nastavení."
+msgstr "Čísla s desetinným oddělovačem se převedou podle národního prostředí."
 
 #: 03020205.xhp
 msgctxt ""
@@ -24351,7 +24351,7 @@ msgctxt ""
 "par_idN10545\n"
 "help.text"
 msgid "Converts a string expression or numeric expression to a currency expression. The locale settings are used for decimal separators and currency symbols."
-msgstr "Konvertuje řetězec nebo číslo na měnu. Pro zobrazení oddělovačů a symbolů měny bude použito systémové nastavení."
+msgstr "Převede řetězec nebo číslo na měnu. Pro zobrazení oddělovačů a symbolů měny bude použito nastavení národního prostředí."
 
 #: 03100050.xhp
 msgctxt ""
@@ -32418,7 +32418,7 @@ msgctxt ""
 "46\n"
 "help.text"
 msgid "' displays for example 6,328.20 in English locale, 6.328,20 in German locale."
-msgstr "' zobrazí 6,328.20 pro anglické místní nastavení a 6.328,20 pro německé"
+msgstr "' zobrazí 6,328.20 pro anglické a 6.328,20 pro německé národní prostředí"
 
 #: 03120302.xhp
 msgctxt ""
@@ -35076,7 +35076,7 @@ msgctxt ""
 "13\n"
 "help.text"
 msgid "MsgBox \"\" & lTick & \" Ticks\" ,0,\"The pause lasted\""
-msgstr "MsgBox \"\" & lTick & \" Ticks\" ,0,\"Konec přestávky\""
+msgstr "MsgBox \"\" & lTick & \" Ticks\" ,0,\"Přestávka trvala\""
 
 #: 03130700.xhp
 msgctxt ""
@@ -35164,7 +35164,7 @@ msgctxt ""
 "13\n"
 "help.text"
 msgid "MsgBox \"\" & lTick & \" Ticks\" ,0,\"The pause lasted\""
-msgstr "MsgBox \"\" & lTick & \" Ticks\" ,0,\"Konec přestávky\""
+msgstr "MsgBox \"\" & lTick & \" Ticks\" ,0,\"Přestávka trvala\""
 
 #: 03130800.xhp
 msgctxt ""
