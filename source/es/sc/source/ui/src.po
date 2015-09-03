@@ -3,9 +3,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2015-06-24 17:05+0200\n"
-"PO-Revision-Date: 2015-08-07 01:41+0000\n"
-"Last-Translator: Adolfo Jayme Barrientos <fito@libreoffice.org>\n"
+"POT-Creation-Date: 2015-08-25 12:33+0200\n"
+"PO-Revision-Date: 2015-08-25 21:37+0000\n"
+"Last-Translator: system user <>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Pootle 2.7\n"
 "X-Accelerator-Marker: ~\n"
-"X-POOTLE-MTIME: 1438911699.000000\n"
+"X-POOTLE-MTIME: 1440538629.000000\n"
 
 #: condformatdlg.src
 msgctxt ""
@@ -1449,7 +1449,7 @@ msgctxt ""
 "STR_UNDO_DETADDSUCC\n"
 "string.text"
 msgid "Trace Dependents"
-msgstr "Rastrear los dependientes"
+msgstr "Rastrear dependencias"
 
 #: globstr.src
 msgctxt ""
@@ -3581,7 +3581,7 @@ msgctxt ""
 "STR_ERR_AUTOFILTER\n"
 "string.text"
 msgid "AutoFilter not possible"
-msgstr "El AutoFiltro no es posible"
+msgstr "No se puede aplicar el filtro automático"
 
 #: globstr.src
 msgctxt ""
@@ -4920,10 +4920,11 @@ msgid "Name"
 msgstr "Nombre"
 
 #: globstr.src
+#, fuzzy
 msgctxt ""
 "globstr.src\n"
 "RID_GLOBSTR\n"
-"STR_HEADER_RANGE\n"
+"STR_HEADER_RANGE_OR_EXPR\n"
 "string.text"
 msgid "Range or formula expression"
 msgstr "Intervalo o expresión de fórmula"
@@ -4996,6 +4997,15 @@ msgctxt ""
 "string.text"
 msgid "This Document is referenced by another document and not yet saved. Closing it without saving will result in data loss."
 msgstr "Otro documento hace referencia a este documento que aún no se guardó. Si lo cierra sin guardar provocará una pérdida de datos."
+
+#: globstr.src
+msgctxt ""
+"globstr.src\n"
+"RID_GLOBSTR\n"
+"STR_HEADER_RANGE\n"
+"string.text"
+msgid "Range"
+msgstr "Área"
 
 #: globstr.src
 msgctxt ""
@@ -5690,28 +5700,29 @@ msgstr "P~egar"
 msgctxt ""
 "hdrcont.src\n"
 "RID_POPUP_ROWHEADER\n"
-"FID_ROW_HEIGHT\n"
+"SID_PASTE_SPECIAL\n"
 "menuitem.text"
-msgid "Row Hei~ght..."
-msgstr "~Altura de fila…"
+msgid "P~aste Special..."
+msgstr "P~egado especial…"
 
 #: hdrcont.src
+#, fuzzy
 msgctxt ""
 "hdrcont.src\n"
 "RID_POPUP_ROWHEADER\n"
-"FID_ROW_OPT_HEIGHT\n"
+"FID_INS_ROWS_BEFORE\n"
 "menuitem.text"
-msgid "Optimal ~Row Height..."
-msgstr "Altura óptima de fila…"
-
-#: hdrcont.src
-msgctxt ""
-"hdrcont.src\n"
-"RID_POPUP_ROWHEADER\n"
-"FID_INS_ROW\n"
-"menuitem.text"
-msgid "~Insert Rows Above"
+msgid "Insert Rows A~bove"
 msgstr "~Insertar filas arriba"
+
+#: hdrcont.src
+msgctxt ""
+"hdrcont.src\n"
+"RID_POPUP_ROWHEADER\n"
+"FID_INS_ROWS_AFTER\n"
+"menuitem.text"
+msgid "Insert Rows ~Below"
+msgstr ""
 
 #: hdrcont.src
 msgctxt ""
@@ -5719,8 +5730,8 @@ msgctxt ""
 "RID_POPUP_ROWHEADER\n"
 "SID_DEL_ROWS\n"
 "menuitem.text"
-msgid "~Delete Selected Rows"
-msgstr "~Eliminar las filas seleccionadas"
+msgid "~Delete Rows"
+msgstr ""
 
 #: hdrcont.src
 msgctxt ""
@@ -5728,8 +5739,27 @@ msgctxt ""
 "RID_POPUP_ROWHEADER\n"
 "SID_DELETE\n"
 "menuitem.text"
-msgid "De~lete Row Contents..."
-msgstr "E~liminar contenido de las filas…"
+msgid "Cl~ear Contents..."
+msgstr ""
+
+#: hdrcont.src
+msgctxt ""
+"hdrcont.src\n"
+"RID_POPUP_ROWHEADER\n"
+"FID_ROW_HEIGHT\n"
+"menuitem.text"
+msgid "Row Hei~ght..."
+msgstr "~Altura de fila…"
+
+#: hdrcont.src
+#, fuzzy
+msgctxt ""
+"hdrcont.src\n"
+"RID_POPUP_ROWHEADER\n"
+"FID_ROW_OPT_HEIGHT\n"
+"menuitem.text"
+msgid "~Optimal Row Height..."
+msgstr "Altura óptima de fila…"
 
 #: hdrcont.src
 msgctxt ""
@@ -5737,8 +5767,8 @@ msgctxt ""
 "RID_POPUP_ROWHEADER\n"
 "FID_ROW_HIDE\n"
 "menuitem.text"
-msgid "~Hide"
-msgstr "~Ocultar"
+msgid "~Hide Rows"
+msgstr ""
 
 #: hdrcont.src
 msgctxt ""
@@ -5746,44 +5776,37 @@ msgctxt ""
 "RID_POPUP_ROWHEADER\n"
 "FID_ROW_SHOW\n"
 "menuitem.text"
-msgid "~Show"
-msgstr "~Mostrar"
+msgid "~Show Rows"
+msgstr ""
 
 #: hdrcont.src
+#, fuzzy
 msgctxt ""
 "hdrcont.src\n"
-"RID_POPUP_ROWHEADER\n"
+"RID_POPUP_COLHEADER\n"
 "SID_PASTE_SPECIAL\n"
 "menuitem.text"
 msgid "P~aste Special..."
 msgstr "P~egado especial…"
 
 #: hdrcont.src
+#, fuzzy
 msgctxt ""
 "hdrcont.src\n"
 "RID_POPUP_COLHEADER\n"
-"FID_COL_WIDTH\n"
+"FID_INS_COLUMNS_BEFORE\n"
 "menuitem.text"
-msgid "Col~umn Width..."
-msgstr "~Anchura de columna…"
-
-#: hdrcont.src
-msgctxt ""
-"hdrcont.src\n"
-"RID_POPUP_COLHEADER\n"
-"FID_COL_OPT_WIDTH\n"
-"menuitem.text"
-msgid "O~ptimal Column Width..."
-msgstr "A~nchura de columna óptima…"
-
-#: hdrcont.src
-msgctxt ""
-"hdrcont.src\n"
-"RID_POPUP_COLHEADER\n"
-"FID_INS_COLUMN\n"
-"menuitem.text"
-msgid "~Insert Columns Left"
+msgid "Insert Columns ~Left"
 msgstr "~Insertar columnas a la izquierda"
+
+#: hdrcont.src
+msgctxt ""
+"hdrcont.src\n"
+"RID_POPUP_COLHEADER\n"
+"FID_INS_COLUMNS_AFTER\n"
+"menuitem.text"
+msgid "Insert Columns ~Right"
+msgstr ""
 
 #: hdrcont.src
 msgctxt ""
@@ -5791,8 +5814,8 @@ msgctxt ""
 "RID_POPUP_COLHEADER\n"
 "SID_DEL_COLS\n"
 "menuitem.text"
-msgid "~Delete Selected Columns"
-msgstr "~Eliminar las columnas seleccionadas"
+msgid "~Delete Columns"
+msgstr ""
 
 #: hdrcont.src
 msgctxt ""
@@ -5800,8 +5823,28 @@ msgctxt ""
 "RID_POPUP_COLHEADER\n"
 "SID_DELETE\n"
 "menuitem.text"
-msgid "D~elete Column Contents..."
-msgstr "E~liminar el contenido de las columnas…"
+msgid "Cl~ear Contents..."
+msgstr ""
+
+#: hdrcont.src
+#, fuzzy
+msgctxt ""
+"hdrcont.src\n"
+"RID_POPUP_COLHEADER\n"
+"FID_COL_WIDTH\n"
+"menuitem.text"
+msgid "Column ~Width..."
+msgstr "~Anchura de columna…"
+
+#: hdrcont.src
+#, fuzzy
+msgctxt ""
+"hdrcont.src\n"
+"RID_POPUP_COLHEADER\n"
+"FID_COL_OPT_WIDTH\n"
+"menuitem.text"
+msgid "~Optimal Column Width..."
+msgstr "A~nchura de columna óptima…"
 
 #: hdrcont.src
 msgctxt ""
@@ -5809,8 +5852,8 @@ msgctxt ""
 "RID_POPUP_COLHEADER\n"
 "FID_COL_HIDE\n"
 "menuitem.text"
-msgid "~Hide"
-msgstr "~Ocultar"
+msgid "~Hide Columns"
+msgstr ""
 
 #: hdrcont.src
 msgctxt ""
@@ -5818,17 +5861,8 @@ msgctxt ""
 "RID_POPUP_COLHEADER\n"
 "FID_COL_SHOW\n"
 "menuitem.text"
-msgid "~Show"
-msgstr "~Mostrar"
-
-#: hdrcont.src
-msgctxt ""
-"hdrcont.src\n"
-"RID_POPUP_COLHEADER\n"
-"SID_PASTE_SPECIAL\n"
-"menuitem.text"
-msgid "Paste ~Special..."
-msgstr "P~egado especial…"
+msgid "~Show Columns"
+msgstr ""
 
 #: popup.src
 msgctxt ""
@@ -5952,8 +5986,8 @@ msgctxt ""
 "RID_POPUP_CELLS\n"
 "SID_DELETE\n"
 "menuitem.text"
-msgid "Delete C~ontents..."
-msgstr "Eliminar c~ontenidos…"
+msgid "Cl~ear Contents..."
+msgstr ""
 
 #: popup.src
 msgctxt ""
@@ -6088,6 +6122,15 @@ msgctxt ""
 "menuitem.text"
 msgid "~Protect Sheet..."
 msgstr "~Proteger hoja…"
+
+#: popup.src
+msgctxt ""
+"popup.src\n"
+"RID_POPUP_TAB\n"
+"FID_TAB_TOGGLE_GRID\n"
+"menuitem.text"
+msgid "Sheet ~Gridlines"
+msgstr ""
 
 #: popup.src
 msgctxt ""
@@ -19969,12 +20012,13 @@ msgid "The selection number taken from the elements."
 msgstr "es un número entero que corresponde al número de objetos contenidos en cada permutación."
 
 #: scfuncs.src
+#, fuzzy
 msgctxt ""
 "scfuncs.src\n"
 "RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CONFIDENCE\n"
 "1\n"
 "string.text"
-msgid "Returns a (1 alpha) confidence interval for a normal distribution."
+msgid "Returns a (1-alpha) confidence interval for a normal distribution."
 msgstr "Devuelve el intervalo de confianza (1 alfa) para una distribución normal."
 
 #: scfuncs.src
@@ -20032,12 +20076,13 @@ msgid "The size of the population."
 msgstr "El tamaño de la población."
 
 #: scfuncs.src
+#, fuzzy
 msgctxt ""
 "scfuncs.src\n"
 "RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CONFIDENCE_N\n"
 "1\n"
 "string.text"
-msgid "Returns a (1 alpha) confidence interval for a normal distribution."
+msgid "Returns a (1-alpha) confidence interval for a normal distribution."
 msgstr "Devuelve el intervalo de confianza (1 alfa) para una distribución normal."
 
 #: scfuncs.src
@@ -20095,12 +20140,13 @@ msgid "The size of the population."
 msgstr "es el tamaño de la muestra."
 
 #: scfuncs.src
+#, fuzzy
 msgctxt ""
 "scfuncs.src\n"
 "RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CONFIDENCE_T\n"
 "1\n"
 "string.text"
-msgid "Returns a (1 alpha) confidence interval for a Student's t distribution."
+msgid "Returns a (1-alpha) confidence interval for a Student's t distribution."
 msgstr "Devuelve un intervalo de confianza (alfa 1) para una distribución t de Student."
 
 #: scfuncs.src
