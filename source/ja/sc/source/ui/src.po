@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2015-06-24 17:05+0200\n"
+"POT-Creation-Date: 2015-09-02 14:42+0200\n"
 "PO-Revision-Date: 2015-08-14 17:36+0000\n"
 "Last-Translator: system user <>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -4925,7 +4925,7 @@ msgstr "名前"
 msgctxt ""
 "globstr.src\n"
 "RID_GLOBSTR\n"
-"STR_HEADER_RANGE\n"
+"STR_HEADER_RANGE_OR_EXPR\n"
 "string.text"
 msgid "Range or formula expression"
 msgstr ""
@@ -4998,6 +4998,15 @@ msgctxt ""
 "string.text"
 msgid "This Document is referenced by another document and not yet saved. Closing it without saving will result in data loss."
 msgstr "このドキュメントは他のドキュメントから参照されていますが、まだ保存されていません。保存せずに閉じるとデータが失われます。"
+
+#: globstr.src
+msgctxt ""
+"globstr.src\n"
+"RID_GLOBSTR\n"
+"STR_HEADER_RANGE\n"
+"string.text"
+msgid "Range"
+msgstr "参照範囲"
 
 #: globstr.src
 msgctxt ""
@@ -7766,13 +7775,14 @@ msgid "Method used to form differences: Type = 0 denotes US method (NASD), Type 
 msgstr "算出方式。タイプ = 0 米国(NASD)方式､ タイプ = 1 ヨーロッパ方式。"
 
 #: scfuncs.src
+#, fuzzy
 msgctxt ""
 "scfuncs.src\n"
 "RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_NETWORKDAYS\n"
 "1\n"
 "string.text"
 msgid "Returns the number of workdays between two dates using arguments to indicate weekenddays and holidays."
-msgstr ""
+msgstr "引数で指定された週末および祝日を用いて、二つの日付の間の稼動日を返します。"
 
 #: scfuncs.src
 msgctxt ""
@@ -13086,13 +13096,14 @@ msgid "The number to whose multiple the value is rounded."
 msgstr "倍数の基準となる数値。"
 
 #: scfuncs.src
+#, fuzzy
 msgctxt ""
 "scfuncs.src\n"
 "RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_CEIL_PRECISE\n"
 "1\n"
 "string.text"
 msgid "Rounds a number up to the nearest multiple of significance, regardless of sign of significance."
-msgstr ""
+msgstr "指定された基準値の倍数のうち、最も近い値に数値を切り上げます。"
 
 #: scfuncs.src
 msgctxt ""
@@ -13997,13 +14008,14 @@ msgid "Linear_type"
 msgstr "線形"
 
 #: scfuncs.src
+#, fuzzy
 msgctxt ""
 "scfuncs.src\n"
 "RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_LINEST\n"
 "7\n"
 "string.text"
 msgid "If type = 0 the linears will be calculated through the zero point, or else moved linears."
-msgstr ""
+msgstr "定数 = 0 にすると値が0に設定され、そうでない場合は値が調整されます。"
 
 #: scfuncs.src
 msgctxt ""
@@ -14078,13 +14090,14 @@ msgid "Function_type"
 msgstr "計算方式"
 
 #: scfuncs.src
+#, fuzzy
 msgctxt ""
 "scfuncs.src\n"
 "RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_LOGEST\n"
 "7\n"
 "string.text"
 msgid "If type = 0 then the functions will be calculated in the form of y=m^x, or also functions y=b*m^x."
-msgstr ""
+msgstr "計算方式 = 0 の場合は Y＝m^x で、そうでない場合は Y＝b*m^x で計算されます。"
 
 #: scfuncs.src
 msgctxt ""
@@ -16463,13 +16476,14 @@ msgid "0 or FALSE calculates the probability density function. Any other value o
 msgstr "0 または FALSE の場合は、確率密度関数を計算します。ほかの値、またはTRUEの場合は、累積分布関数を計算します。"
 
 #: scfuncs.src
+#, fuzzy
 msgctxt ""
 "scfuncs.src\n"
 "RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CRIT_BINOM\n"
 "1\n"
 "string.text"
 msgid "Returns the smallest value for which the cumulative binomial distribution is greater than or equal to a criterion value."
-msgstr ""
+msgstr "二項分布の分布関数の値が基準値以上になる最小の値を返します。"
 
 #: scfuncs.src
 msgctxt ""
@@ -25980,57 +25994,3 @@ msgctxt ""
 "string.text"
 msgid "Collapse Formula Bar"
 msgstr "数式バーを折りたたむ"
-
-#: condformatdlg.src
-msgctxt ""
-"condformatdlg.src\n"
-"RID_COND_ENTRY.LB_ICONSET_TYPE\n"
-"3 Smilies\n"
-"stringlist.text"
-msgid "3 Smilies"
-msgstr "3つの顔文字"
-
-#: condformatdlg.src
-msgctxt ""
-"condformatdlg.src\n"
-"RID_COND_ENTRY.LB_ICONSET_TYPE\n"
-"3 Colored Smilies\n"
-"stringlist.text"
-msgid "3 Colored Smilies"
-msgstr "3つの色付き顔文字"
-
-#: scfuncs.src
-msgctxt ""
-"scfuncs.src\n"
-"RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DAY_OF_WEEK\n"
-"1\n"
-"string.text"
-msgid "Returns the day of the week for the date value as an integer (1-7)."
-msgstr "日付のシリアル値が何曜日にあたるかを数値(1～7)で返します。"
-
-#: scfuncs.src
-msgctxt ""
-"scfuncs.src\n"
-"RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_FLOOR\n"
-"7\n"
-"string.text"
-msgid "If given and not equal to zero then rounded down according to amount when a negative number and significance."
-msgstr "対象が負の数の時、ここに0以外の数値を指定すると、数値を挟む基準値の倍数のうち、大きい方の値を返します。"
-
-#: scfuncs.src
-msgctxt ""
-"scfuncs.src\n"
-"RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_FLOOR_MS\n"
-"1\n"
-"string.text"
-msgid "Rounds number down to the nearest multiple of significance, regardless of sign of significance."
-msgstr "指定された基準値の倍数のうち、最も近い値に数値を切り捨てます。"
-
-#: scfuncs.src
-msgctxt ""
-"scfuncs.src\n"
-"RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_ENCODEURL\n"
-"3\n"
-"string.text"
-msgid "A string to be URL encoded"
-msgstr ""
