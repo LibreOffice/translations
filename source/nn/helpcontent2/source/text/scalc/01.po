@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
 "POT-Creation-Date: 2014-11-26 19:57+0100\n"
-"PO-Revision-Date: 2015-07-14 20:45+0000\n"
+"PO-Revision-Date: 2015-11-08 15:26+0000\n"
 "Last-Translator: Kolbjørn Stuestøl <kolbjoern@stuestoel.no>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: nn\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Pootle 2.7\n"
 "X-Accelerator-Marker: ~\n"
-"X-POOTLE-MTIME: 1436906714.000000\n"
+"X-POOTLE-MTIME: 1446996372.000000\n"
 
 #: 01120000.xhp
 msgctxt ""
@@ -18071,7 +18071,7 @@ msgctxt ""
 "par_id6386913\n"
 "help.text"
 msgid "To count only negative numbers: <item type=\"input\">=COUNTIF(A1:A10;\"<0\")</item>"
-msgstr "For berre å telja negative tal: <item type=\"input\">=TAL.DERSOM(A1:A10;\"<0\")</item>"
+msgstr "For berre å telja negative tal: <item type=\"input\">=TAL.VISS(A1:A10;\"<0\")</item>"
 
 #: 04060107.xhp
 msgctxt ""
@@ -18692,7 +18692,7 @@ msgctxt ""
 "par_idN10D4B\n"
 "help.text"
 msgid "A conditional array calculation is an array or matrix formula that includes an IF() or CHOOSE() function. The condition argument in the formula is an area reference or a matrix result."
-msgstr "Ei betinga matriseutrekning er ei matrise eller ein matriseformel som inneheld ein DERSOM()- eller VEL()-funksjon. Vilkårsargumentet i formelen er ein områdereferanse eller eit matriseresultat."
+msgstr "Ei betinga matriseutrekning er ei matrise eller ein matriseformel som inneheld ein VISS()- eller VEL()-funksjon. Vilkårsargumentet i formelen er ein områdereferanse eller eit matriseresultat."
 
 #: 04060107.xhp
 msgctxt ""
@@ -18748,7 +18748,7 @@ msgctxt ""
 "par_idN10D86\n"
 "help.text"
 msgid "{=IF(A1:A3>0;\"yes\";\"no\")}"
-msgstr "{=DERSOM(A1:A3>0; \"Ja\"; \"Nei\")}"
+msgstr "{=VISS(A1:A3>0; \"Ja\"; \"Nei\")}"
 
 #: 04060107.xhp
 msgctxt ""
@@ -18780,7 +18780,7 @@ msgctxt ""
 "par_idN10DA1\n"
 "help.text"
 msgid "{=IF(A1:A3>0;\"yes\";\"no\")}"
-msgstr "{=DERSOM(A1:A3>0; \"Ja\"; \"Nei\")}"
+msgstr "{=VISS(A1:A3>0; \"Ja\"; \"Nei\")}"
 
 #: 04060107.xhp
 msgctxt ""
@@ -18812,7 +18812,7 @@ msgctxt ""
 "par_idN10DBC\n"
 "help.text"
 msgid "{=IF(A1:A3>0;\"yes\";\"no\")}"
-msgstr "{=DERSOM(A1:A3>0; \"Ja\"; \"Nei\")}"
+msgstr "{=VISS(A1:A3>0; \"Ja\"; \"Nei\")}"
 
 #: 04060107.xhp
 msgctxt ""
@@ -23548,7 +23548,7 @@ msgctxt ""
 "134\n"
 "help.text"
 msgid "<ahelp hid=\"HID_FUNC_VORLAGE\">Applies a style to the cell containing the formula.</ahelp> After a set amount of time, another style can be applied. This function always returns the value 0, allowing you to add it to another function without changing the value. Together with the CURRENT function you can apply a color to a cell regardless of the value. For example: =...+STYLE(IF(CURRENT()>3;\"red\";\"green\")) applies the style \"red\" to the cell if the value is greater than 3, otherwise the style \"green\" is applied. Both cell formats have to be defined beforehand."
-msgstr "<ahelp hid=\"HID_FUNC_VORLAGE\">Legg til ein stil til den cella som inneheld formelen.</ahelp> Etter eit bestemt tidsrom kan ein annan stil verta lagt til. Funksjonen returnerer alltid verdien 0 slik at du kan leggja han til ein annan funksjon utan å endra verdien i denne. Brukt saman med funksjonen GJELDANDE kan du også leggje til ein farge i ei celle uabhengig av celleverdien. For eksempel så vil =...+STIL(DERSOM(GJELDANDE()>3;\"raud\";\"grøn\")) leggja stilen «raud» til cella viss verdien er over 3, elles vil stilen «grøn» verta brukt. Begge celleformata må vera definerte på førehand. "
+msgstr "<ahelp hid=\"HID_FUNC_VORLAGE\">Legg til ein stil til den cella som inneheld formelen.</ahelp> Etter eit bestemt tidsrom kan ein annan stil verta lagt til. Funksjonen returnerer alltid verdien 0 slik at du kan leggja han til ein annan funksjon utan å endra verdien i denne. Brukt saman med funksjonen GJELDANDE kan du også leggje til ein farge i ei celle uabhengig av celleverdien. For eksempel så vil =...+STIL(VISS(GJELDANDE()>3;\"raud\";\"grøn\")) leggja stilen «raud» til cella viss verdien er over 3, elles vil stilen «grøn» verta brukt. Begge celleformata må vera definerte på førehand. "
 
 #: 04060109.xhp
 msgctxt ""
@@ -60246,7 +60246,7 @@ msgctxt ""
 "29\n"
 "help.text"
 msgid "If the <emph>Regular Expression</emph> check box is selected, you can use EQUAL (=) and NOT EQUAL (<>) also in comparisons. You can also use the following functions: DCOUNTA, DGET, MATCH, COUNTIF, SUMIF, LOOKUP, VLOOKUP and HLOOKUP."
-msgstr "Dersom det er kryssa av for å bruke <emph>Regulært uttrykk</emph>, kan du bruke likskapsteinet (=) og ulikskapsteiknet (<>) i samanlikningar. Du kan også bruke desse funksjonane: DTAL.PÅA, DHENT, SAMANLIKNA, TAL.DERSOM, SUMMER.VISS, SLÅ.OPP, FINN.RAD og FINN.KOLONNE."
+msgstr "Dersom det er kryssa av for å bruke <emph>Regulært uttrykk</emph>, kan du bruke likskapsteinet (=) og ulikskapsteiknet (<>) i samanlikningar. Du kan også bruke desse funksjonane: DTAL.PÅA, DHENT, SAMANLIKNA, TAL.VISS, SUMMER.VISS, SLÅ.OPP, FINN.RAD og FINN.KOLONNE."
 
 #: 12090104.xhp
 msgctxt ""
@@ -64327,7 +64327,7 @@ msgctxt ""
 "171\n"
 "help.text"
 msgid "To obtain a function indicating whether a day in A1 is a business day, use the IF and WEEKDAY functions as follows: <br/>IF(WEEKDAY(A1;2)<6;\"Business day\";\"Weekend\")"
-msgstr "Dersom du ønskjer å legge inn ein funksjon som viser om A1 er ein arbeidsdag, kan du bruke DERSOM og VEKEDAG slik i A1:<br/>DERSOM(VEKEDAG(A1;2<6;\"Arbeidsdag\";\"Helg\")"
+msgstr "Dersom du ønskjer å legge inn ein funksjon som viser om A1 er ein arbeidsdag, kan du bruke VISS og VEKEDAG slik i A1:<br/>VISS(VEKEDAG(A1;2<6;\"Arbeidsdag\";\"Helg\")"
 
 #: func_weeknum.xhp
 msgctxt ""
