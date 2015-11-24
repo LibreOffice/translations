@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2015-08-25 12:33+0200\n"
-"PO-Revision-Date: 2015-11-05 20:36+0000\n"
+"POT-Creation-Date: 2015-11-16 19:02+0100\n"
+"PO-Revision-Date: 2015-11-11 10:39+0000\n"
 "Last-Translator: Cédric Valmary <cvalmary@yahoo.fr>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: oc\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Generator: Pootle 2.7\n"
 "X-Accelerator-Marker: ~\n"
-"X-POOTLE-MTIME: 1446755777.000000\n"
+"X-POOTLE-MTIME: 1447238398.000000\n"
 
 #: condformatdlg.src
 msgctxt ""
@@ -5001,6 +5001,15 @@ msgstr "Aqueste document es referenciat per un autre document e pas encara enreg
 msgctxt ""
 "globstr.src\n"
 "RID_GLOBSTR\n"
+"STR_HEADER_RANGE\n"
+"string.text"
+msgid "Range"
+msgstr "Plaja"
+
+#: globstr.src
+msgctxt ""
+"globstr.src\n"
+"RID_GLOBSTR\n"
 "STR_HEADER_COND\n"
 "string.text"
 msgid "First Condition"
@@ -7840,8 +7849,8 @@ msgctxt ""
 "RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_NETWORKDAYS\n"
 "6\n"
 "string.text"
-msgid "array"
-msgstr "matritz"
+msgid "list of dates"
+msgstr ""
 
 #: scfuncs.src
 msgctxt ""
@@ -7853,13 +7862,14 @@ msgid "Optional set of one or more dates to be considered as holiday."
 msgstr ""
 
 #: scfuncs.src
+#, fuzzy
 msgctxt ""
 "scfuncs.src\n"
 "RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_NETWORKDAYS\n"
 "8\n"
 "string.text"
-msgid "list of numbers"
-msgstr "lista de nombres"
+msgid "array"
+msgstr "matritz"
 
 #: scfuncs.src
 msgctxt ""
@@ -8471,8 +8481,37 @@ msgctxt ""
 "RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_WEEK\n"
 "5\n"
 "string.text"
-msgid "Indicates the first day of the week (1 = Sunday, other values = Monday)."
-msgstr "Determina lo primièr jorn de la setmana (1 = Dimenge, autras valors = Diluns)."
+msgid "Indicates the first day of the week and when week 1 starts."
+msgstr ""
+
+#: scfuncs.src
+msgctxt ""
+"scfuncs.src\n"
+"RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ISOWEEKNUM\n"
+"1\n"
+"string.text"
+msgid "Calculates the ISO 8601 calendar week for the given date."
+msgstr ""
+
+#: scfuncs.src
+#, fuzzy
+msgctxt ""
+"scfuncs.src\n"
+"RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ISOWEEKNUM\n"
+"2\n"
+"string.text"
+msgid "Number"
+msgstr "Numèro_seria"
+
+#: scfuncs.src
+#, fuzzy
+msgctxt ""
+"scfuncs.src\n"
+"RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ISOWEEKNUM\n"
+"3\n"
+"string.text"
+msgid "The internal number of the date."
+msgstr "Lo numèro intèrne de la data."
 
 #: scfuncs.src
 msgctxt ""
@@ -10748,8 +10787,8 @@ msgctxt ""
 "RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_TYPE\n"
 "1\n"
 "string.text"
-msgid "Defines the data type of a value."
-msgstr "Definís lo tipe de donadas d'una valor."
+msgid "Returns the data type of a value (1 = number, 2 = text, 4 = Boolean value, 8 = formula, 16 = error value, 64 = array)."
+msgstr ""
 
 #: scfuncs.src
 msgctxt ""
@@ -11994,13 +12033,14 @@ msgid "Number"
 msgstr "Numèro_seria"
 
 #: scfuncs.src
+#, fuzzy
 msgctxt ""
 "scfuncs.src\n"
 "RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ARC_COT_HYP\n"
 "3\n"
 "string.text"
 msgid "A value smaller than -1 or greater than 1 for which the inverse hyperbolic cotangent is to be returned."
-msgstr ""
+msgstr "Una valor superiora o egala a 1 per la quala lo cosinus iperbolic invèrse deu èsser renviat."
 
 #: scfuncs.src
 msgctxt ""
@@ -12021,13 +12061,14 @@ msgid "Number"
 msgstr "Numèro_seria"
 
 #: scfuncs.src
+#, fuzzy
 msgctxt ""
 "scfuncs.src\n"
 "RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_ARC_TAN_HYP\n"
 "3\n"
 "string.text"
 msgid "A value between -1 and 1 for which the inverse hyperbolic tangent is to be returned."
-msgstr ""
+msgstr "Una valor entre -1 e 1 que l'arc cosinus ne deu èsser calculat."
 
 #: scfuncs.src
 msgctxt ""
@@ -13452,17 +13493,15 @@ msgid "Number"
 msgstr "Nombre"
 
 #: scfuncs.src
-#, fuzzy
 msgctxt ""
 "scfuncs.src\n"
 "RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_FLOOR_MATH\n"
 "3\n"
 "string.text"
 msgid "The number to be rounded down."
-msgstr "La valor d'arredondir en tendent cap a zèro."
+msgstr "La valor d'arredondir per valor inferiora."
 
 #: scfuncs.src
-#, fuzzy
 msgctxt ""
 "scfuncs.src\n"
 "RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_FLOOR_MATH\n"
@@ -13472,14 +13511,13 @@ msgid "Significance"
 msgstr "Precision"
 
 #: scfuncs.src
-#, fuzzy
 msgctxt ""
 "scfuncs.src\n"
 "RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_FLOOR_MATH\n"
 "5\n"
 "string.text"
 msgid "The number to whose multiple the value is to be rounded down."
-msgstr "Lo multiple al qual cal arredondir lo nombre."
+msgstr "Lo nombre al multiple del qual la valor deu èsser arredondida per valor inferiora."
 
 #: scfuncs.src
 msgctxt ""
@@ -13518,14 +13556,13 @@ msgid "Number"
 msgstr "Nombre"
 
 #: scfuncs.src
-#, fuzzy
 msgctxt ""
 "scfuncs.src\n"
 "RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_FLOOR_PRECISE\n"
 "3\n"
 "string.text"
 msgid "The number to be rounded down."
-msgstr "La valor d'arredondir en tendent cap a zèro."
+msgstr "La valor d'arredondir per valor inferiora."
 
 #: scfuncs.src
 msgctxt ""
@@ -14014,13 +14051,14 @@ msgid "Linear_type"
 msgstr "Tipe_de_drecha"
 
 #: scfuncs.src
+#, fuzzy
 msgctxt ""
 "scfuncs.src\n"
 "RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_LINEST\n"
 "7\n"
 "string.text"
 msgid "If type = 0 the linears will be calculated through the zero point, or else moved linears."
-msgstr ""
+msgstr "Calcula las drechas pel punt zèro se Tipe = 0 ; siquenon drechas decaladas."
 
 #: scfuncs.src
 msgctxt ""
@@ -14128,7 +14166,7 @@ msgctxt ""
 "1\n"
 "string.text"
 msgid "Calculates points along a regression line."
-msgstr ""
+msgstr "Calcula de punts sus la drecha de regression."
 
 #: scfuncs.src
 msgctxt ""
@@ -14329,13 +14367,14 @@ msgid "value "
 msgstr "Valor "
 
 #: scfuncs.src
+#, fuzzy
 msgctxt ""
 "scfuncs.src\n"
 "RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_COUNT_2\n"
 "3\n"
 "string.text"
 msgid "Value 1, value 2, ... are 1 to 30 arguments representing the values to be counted."
-msgstr ""
+msgstr "Valor 1, Valor 2, ... son de 1 a 30 arguments que representan los encaissaments o los descaissaments."
 
 #: scfuncs.src
 msgctxt ""
@@ -14410,22 +14449,24 @@ msgid "number "
 msgstr "nombre "
 
 #: scfuncs.src
+#, fuzzy
 msgctxt ""
 "scfuncs.src\n"
 "RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_MIN\n"
 "3\n"
 "string.text"
 msgid "Number 1, number 2, ... are 1 to 30 numerical arguments for which the smallest number is to be determined."
-msgstr ""
+msgstr "Nombre 1, nombre 2 ... son de 1 a 30 arguments demest los quals lo nombre lo mai grand deu èsser determinat."
 
 #: scfuncs.src
+#, fuzzy
 msgctxt ""
 "scfuncs.src\n"
 "RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_MIN_A\n"
 "1\n"
 "string.text"
 msgid "Returns the smallest value in a list of arguments. Text is evaluated as zero."
-msgstr ""
+msgstr "Renvia la mai granda valor d'una lista d'arguments. La valor 0 es atribuida al tèxte."
 
 #: scfuncs.src
 msgctxt ""
@@ -14437,13 +14478,14 @@ msgid "value "
 msgstr "Valor "
 
 #: scfuncs.src
+#, fuzzy
 msgctxt ""
 "scfuncs.src\n"
 "RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_MIN_A\n"
 "3\n"
 "string.text"
 msgid "Value 1; value 2;... are 1 to 30 arguments whose smallest number is to be determined."
-msgstr ""
+msgstr "Valor 1, valor 2, ... representan de 1 a 30 arguments que la valor maximala ne deu èsser determinada."
 
 #: scfuncs.src
 msgctxt ""
@@ -14464,13 +14506,14 @@ msgid "number "
 msgstr "nombre "
 
 #: scfuncs.src
+#, fuzzy
 msgctxt ""
 "scfuncs.src\n"
 "RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_VAR\n"
 "3\n"
 "string.text"
 msgid "Number 1, number 2, ... are 1 to 30 numerical arguments which portray a sample of a population."
-msgstr ""
+msgstr "Nombre 1, nombre 2, ... son de 1 a 30 arguments numerics que representan un escandalhatge."
 
 #: scfuncs.src
 msgctxt ""
@@ -14491,13 +14534,14 @@ msgid "number "
 msgstr "nombre "
 
 #: scfuncs.src
+#, fuzzy
 msgctxt ""
 "scfuncs.src\n"
 "RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_VAR_S\n"
 "3\n"
 "string.text"
 msgid "Number 1, number 2, ... are 1 to 30 numerical arguments which portray a sample of a population."
-msgstr ""
+msgstr "Nombre 1, nombre 2, ... son de 1 a 30 arguments numerics que representan un escandalhatge."
 
 #: scfuncs.src
 msgctxt ""
@@ -14545,13 +14589,14 @@ msgid "number "
 msgstr "nombre "
 
 #: scfuncs.src
+#, fuzzy
 msgctxt ""
 "scfuncs.src\n"
 "RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_VAR_P\n"
 "3\n"
 "string.text"
 msgid "Number 1, number 2, ... are 1 to 30 numerical arguments which represent a population."
-msgstr ""
+msgstr "Nombre 1, nombre 2, ... son de 1 a 30 arguments numerics que representan un escandalhatge."
 
 #: scfuncs.src
 msgctxt ""
@@ -14572,13 +14617,14 @@ msgid "number "
 msgstr "nombre "
 
 #: scfuncs.src
+#, fuzzy
 msgctxt ""
 "scfuncs.src\n"
 "RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_VAR_P_MS\n"
 "3\n"
 "string.text"
 msgid "Number 1, number 2, ... are 1 to 30 numerical arguments which represent a population."
-msgstr ""
+msgstr "Nombre 1, nombre 2, ... son de 1 a 30 arguments numerics que representan un escandalhatge."
 
 #: scfuncs.src
 msgctxt ""
@@ -14599,13 +14645,14 @@ msgid "value "
 msgstr "Valor "
 
 #: scfuncs.src
+#, fuzzy
 msgctxt ""
 "scfuncs.src\n"
 "RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_VAR_P_A\n"
 "3\n"
 "string.text"
 msgid "Value 1; value 2;... are 1 to 30 arguments representing a population."
-msgstr ""
+msgstr "Valor 1, Valor 2, ... son de 1 a 30 arguments que representan los encaissaments o los descaissaments."
 
 #: scfuncs.src
 msgctxt ""
@@ -14626,13 +14673,14 @@ msgid "number "
 msgstr "nombre "
 
 #: scfuncs.src
+#, fuzzy
 msgctxt ""
 "scfuncs.src\n"
 "RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_ST_DEV\n"
 "3\n"
 "string.text"
 msgid "Number 1, number 2, ... are 1 to 30 numerical arguments which portray a sample of a population."
-msgstr ""
+msgstr "Nombre 1, nombre 2, ... son de 1 a 30 arguments numerics que representan un escandalhatge."
 
 #: scfuncs.src
 msgctxt ""
@@ -14653,13 +14701,14 @@ msgid "number "
 msgstr "nombre "
 
 #: scfuncs.src
+#, fuzzy
 msgctxt ""
 "scfuncs.src\n"
 "RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_ST_DEV_S\n"
 "3\n"
 "string.text"
 msgid "Number 1, number 2, ... are 1 to 30 numerical arguments which portray a sample of a population."
-msgstr ""
+msgstr "Nombre 1, nombre 2, ... son de 1 a 30 arguments numerics que representan un escandalhatge."
 
 #: scfuncs.src
 msgctxt ""
@@ -14707,13 +14756,14 @@ msgid "number "
 msgstr "nombre "
 
 #: scfuncs.src
+#, fuzzy
 msgctxt ""
 "scfuncs.src\n"
 "RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_ST_DEV_P\n"
 "3\n"
 "string.text"
 msgid "Number 1, number 2, ... are 1 to 30 numerical arguments which portray a population."
-msgstr ""
+msgstr "Nombre 1, nombre 2, ... son de 1 a 30 arguments numerics que representan un escandalhatge."
 
 #: scfuncs.src
 msgctxt ""
@@ -14734,13 +14784,14 @@ msgid "number "
 msgstr "nombre "
 
 #: scfuncs.src
+#, fuzzy
 msgctxt ""
 "scfuncs.src\n"
 "RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_ST_DEV_P_MS\n"
 "3\n"
 "string.text"
 msgid "Number 1, number 2, ... are 1 to 30 numerical arguments which portray a population."
-msgstr ""
+msgstr "Nombre 1, nombre 2, ... son de 1 a 30 arguments numerics que representan un escandalhatge."
 
 #: scfuncs.src
 msgctxt ""
@@ -14761,13 +14812,14 @@ msgid "value "
 msgstr "valor "
 
 #: scfuncs.src
+#, fuzzy
 msgctxt ""
 "scfuncs.src\n"
 "RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_ST_DEV_P_A\n"
 "3\n"
 "string.text"
 msgid "Value 1; value 2;... are 1 to 30 arguments corresponding to a population."
-msgstr ""
+msgstr "Valor 1, Valor 2, ... son de 1 a 30 arguments que representan los encaissaments o los descaissaments."
 
 #: scfuncs.src
 msgctxt ""
@@ -14788,13 +14840,14 @@ msgid "number "
 msgstr "nombre "
 
 #: scfuncs.src
+#, fuzzy
 msgctxt ""
 "scfuncs.src\n"
 "RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_AVERAGE\n"
 "3\n"
 "string.text"
 msgid "Number 1, number 2;...are 1 to 30 numeric arguments representing a population sample."
-msgstr ""
+msgstr "Nombre 1, nombre 2, ... son de 1 a 30 arguments numerics que representan un escandalhatge."
 
 #: scfuncs.src
 msgctxt ""
@@ -14842,13 +14895,14 @@ msgid "number "
 msgstr "nombre "
 
 #: scfuncs.src
+#, fuzzy
 msgctxt ""
 "scfuncs.src\n"
 "RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_DEV_SQ\n"
 "3\n"
 "string.text"
 msgid "Number 1, number 2, ... are 1 to 30 numerical arguments which portray a sample."
-msgstr ""
+msgstr "Nombre 1, nombre 2, ... son de 1 a 30 arguments numerics que representan un escandalhatge."
 
 #: scfuncs.src
 msgctxt ""
@@ -14869,13 +14923,14 @@ msgid "number "
 msgstr "nombre "
 
 #: scfuncs.src
+#, fuzzy
 msgctxt ""
 "scfuncs.src\n"
 "RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_AVE_DEV\n"
 "3\n"
 "string.text"
 msgid "Number 1, number 2;...are 1 to 30 numerical arguments representing a sample."
-msgstr ""
+msgstr "Nombre 1, nombre 2, ... son de 1 a 30 arguments numerics que representan un escandalhatge."
 
 #: scfuncs.src
 msgctxt ""
@@ -14896,13 +14951,14 @@ msgid "number "
 msgstr "nombre "
 
 #: scfuncs.src
+#, fuzzy
 msgctxt ""
 "scfuncs.src\n"
 "RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_SKEW\n"
 "3\n"
 "string.text"
 msgid "Number 1, number 2, ... are 1 to 30 numerical arguments portraying a sample of the distribution."
-msgstr ""
+msgstr "Nombre 1, nombre 2, ... son de 1 a 30 arguments numerics que representan un escandalhatge de la distribucion."
 
 #: scfuncs.src
 msgctxt ""
@@ -14923,13 +14979,14 @@ msgid "number "
 msgstr "nombre "
 
 #: scfuncs.src
+#, fuzzy
 msgctxt ""
 "scfuncs.src\n"
 "RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_SKEWP\n"
 "3\n"
 "string.text"
 msgid "Number 1, number 2, ... are 1 to 30 numerical arguments portraying the population."
-msgstr ""
+msgstr "Nombre 1, nombre 2, ... son de 1 a 30 arguments numerics que representan un escandalhatge."
 
 #: scfuncs.src
 msgctxt ""
@@ -15058,13 +15115,14 @@ msgid "number "
 msgstr "nombre "
 
 #: scfuncs.src
+#, fuzzy
 msgctxt ""
 "scfuncs.src\n"
 "RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_MODAL_VALUE_MS\n"
 "3\n"
 "string.text"
 msgid "Number 1, number 2, ... are 1 to 30 numerical arguments which portray a sample."
-msgstr ""
+msgstr "Nombre 1, nombre 2, ... son de 1 a 30 arguments numerics que representan un escandalhatge."
 
 #: scfuncs.src
 msgctxt ""
@@ -15091,7 +15149,7 @@ msgctxt ""
 "3\n"
 "string.text"
 msgid "Number 1, number 2, ... are 1 to 254 numerical arguments which portray a sample."
-msgstr ""
+msgstr "Nombre 1, nombre 2, ... son d'1 a 254 arguments numerics que representan un escandalhatge."
 
 #: scfuncs.src
 msgctxt ""
@@ -16045,7 +16103,7 @@ msgctxt ""
 "7\n"
 "string.text"
 msgid "Lower limit for the number of trials."
-msgstr ""
+msgstr "Limit inferior del nombre de temptativas."
 
 #: scfuncs.src
 msgctxt ""
@@ -16063,7 +16121,7 @@ msgctxt ""
 "9\n"
 "string.text"
 msgid "Upper limit for the number of trials."
-msgstr ""
+msgstr "Limit superior del nombre de temptativas."
 
 #: scfuncs.src
 msgctxt ""
@@ -16072,7 +16130,7 @@ msgctxt ""
 "1\n"
 "string.text"
 msgid "Values of the distribution function for a standard normal distribution."
-msgstr ""
+msgstr "Valors de la foncion de distribucion per la distribucion normala estandarda."
 
 #: scfuncs.src
 msgctxt ""
@@ -16099,7 +16157,7 @@ msgctxt ""
 "1\n"
 "string.text"
 msgid "Returns the integral values of the standard normal cumulative distribution."
-msgstr ""
+msgstr "Renvia las valors de l'integrala de la distribucion normala estandarda."
 
 #: scfuncs.src
 msgctxt ""
@@ -16471,13 +16529,14 @@ msgid "Cumulative"
 msgstr "Cumulativa"
 
 #: scfuncs.src
+#, fuzzy
 msgctxt ""
 "scfuncs.src\n"
 "RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NEG_BINOM_DIST_MS\n"
 "9\n"
 "string.text"
 msgid "0 or FALSE calculates the probability density function. Any other value or TRUE calculates the cumulative distribution function."
-msgstr ""
+msgstr "0 ou FALS per la densitat de probabilitat, o tota autra valor o VERAI o omesa per la foncion de reparticion."
 
 #: scfuncs.src
 msgctxt ""
@@ -16660,13 +16719,14 @@ msgid "Cumulative"
 msgstr "Cumulativa"
 
 #: scfuncs.src
+#, fuzzy
 msgctxt ""
 "scfuncs.src\n"
 "RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_POISSON_DIST\n"
 "7\n"
 "string.text"
 msgid "0 or FALSE calculates the probability density function. Any other value or TRUE or omitted calculates the cumulative distribution function."
-msgstr ""
+msgstr "0 ou FALS per la densitat de probabilitat, o tota autra valor o VERAI o omesa per la foncion de reparticion."
 
 #: scfuncs.src
 msgctxt ""
@@ -16723,13 +16783,14 @@ msgid "Cumulative"
 msgstr "Cumulativa"
 
 #: scfuncs.src
+#, fuzzy
 msgctxt ""
 "scfuncs.src\n"
 "RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_POISSON_DIST_MS\n"
 "7\n"
 "string.text"
 msgid "0 or FALSE calculates the probability density function. Any other value or TRUE or omitted calculates the cumulative distribution function."
-msgstr ""
+msgstr "0 ou FALS per la densitat de probabilitat, o tota autra valor o VERAI o omesa per la foncion de reparticion."
 
 #: scfuncs.src
 msgctxt ""
@@ -16786,13 +16847,14 @@ msgid "STDEV"
 msgstr "ESCARTTIPE"
 
 #: scfuncs.src
+#, fuzzy
 msgctxt ""
 "scfuncs.src\n"
 "RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NORM_DIST\n"
 "7\n"
 "string.text"
 msgid "Standard deviation. The standard deviation of the normal distribution."
-msgstr ""
+msgstr "L'escart tipe de la distribucion normala."
 
 #: scfuncs.src
 msgctxt ""
@@ -16804,13 +16866,14 @@ msgid "C"
 msgstr "C"
 
 #: scfuncs.src
+#, fuzzy
 msgctxt ""
 "scfuncs.src\n"
 "RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NORM_DIST\n"
 "9\n"
 "string.text"
 msgid "0 or FALSE calculates the probability density function. Any other value or TRUE or omitted calculates the cumulative distribution function."
-msgstr ""
+msgstr "0 ou FALS per la densitat de probabilitat, o tota autra valor o VERAI o omesa per la foncion de reparticion."
 
 #: scfuncs.src
 msgctxt ""
@@ -16867,13 +16930,14 @@ msgid "STDEV"
 msgstr "ESCARTTIPE"
 
 #: scfuncs.src
+#, fuzzy
 msgctxt ""
 "scfuncs.src\n"
 "RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NORM_DIST_MS\n"
 "7\n"
 "string.text"
 msgid "Standard deviation. The standard deviation of the normal distribution."
-msgstr ""
+msgstr "L'escart tipe de la distribucion normala."
 
 #: scfuncs.src
 msgctxt ""
@@ -16885,13 +16949,14 @@ msgid "C"
 msgstr "C"
 
 #: scfuncs.src
+#, fuzzy
 msgctxt ""
 "scfuncs.src\n"
 "RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NORM_DIST_MS\n"
 "9\n"
 "string.text"
 msgid "0 or FALSE calculates the probability density function. Any other value or TRUE calculates the cumulative distribution function."
-msgstr ""
+msgstr "0 ou FALS per la densitat de probabilitat, o tota autra valor o VERAI o omesa per la foncion de reparticion."
 
 #: scfuncs.src
 msgctxt ""
@@ -16912,13 +16977,14 @@ msgid "number"
 msgstr "nombre"
 
 #: scfuncs.src
+#, fuzzy
 msgctxt ""
 "scfuncs.src\n"
 "RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_NORM_INV\n"
 "3\n"
 "string.text"
 msgid "The probability value for which the inverse normal distribution is to be calculated."
-msgstr ""
+msgstr "La valor de probabilitat per la quala volètz calcular la distribucion normala invèrsa."
 
 #: scfuncs.src
 msgctxt ""
@@ -16954,7 +17020,7 @@ msgctxt ""
 "7\n"
 "string.text"
 msgid "Standard deviation. The standard deviation of the normal distribution."
-msgstr ""
+msgstr "L'escart tipe de la distribucion normala."
 
 #: scfuncs.src
 msgctxt ""
@@ -16981,7 +17047,7 @@ msgctxt ""
 "3\n"
 "string.text"
 msgid "The probability value for which the inverse normal distribution is to be calculated."
-msgstr ""
+msgstr "La valor de probabilitat per la quala volètz calcular la distribucion normala invèrsa."
 
 #: scfuncs.src
 msgctxt ""
@@ -17017,7 +17083,7 @@ msgctxt ""
 "7\n"
 "string.text"
 msgid "Standard deviation. The standard deviation of the normal distribution."
-msgstr ""
+msgstr "L'escart tipe de la distribucion normala."
 
 #: scfuncs.src
 msgctxt ""
@@ -17026,7 +17092,7 @@ msgctxt ""
 "1\n"
 "string.text"
 msgid "The values of the standard normal cumulative distribution."
-msgstr ""
+msgstr "Valors de la distribucion normala estandarda."
 
 #: scfuncs.src
 msgctxt ""
@@ -17053,7 +17119,7 @@ msgctxt ""
 "1\n"
 "string.text"
 msgid "The values of the standard normal distribution."
-msgstr ""
+msgstr "Valors de la distribucion normala estandarda."
 
 #: scfuncs.src
 msgctxt ""
@@ -17083,13 +17149,14 @@ msgid "Cumulative"
 msgstr "Cumulativa"
 
 #: scfuncs.src
+#, fuzzy
 msgctxt ""
 "scfuncs.src\n"
 "RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_STD_NORM_DIST_MS\n"
 "5\n"
 "string.text"
 msgid "0 or FALSE calculates the probability density function. Any other value or TRUE calculates the cumulative distribution function."
-msgstr ""
+msgstr "0 ou FALS per la densitat de probabilitat, o tota autra valor o VERAI o omesa per la foncion de reparticion."
 
 #: scfuncs.src
 msgctxt ""
@@ -17218,13 +17285,14 @@ msgid "Cumulative"
 msgstr "Cumulativa"
 
 #: scfuncs.src
+#, fuzzy
 msgctxt ""
 "scfuncs.src\n"
 "RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_LOG_NORM_DIST\n"
 "9\n"
 "string.text"
 msgid "0 or FALSE calculates the probability density function. Any other value or TRUE or omitted calculates the cumulative distribution function."
-msgstr ""
+msgstr "0 ou FALS per la densitat de probabilitat, o tota autra valor o VERAI o omesa per la foncion de reparticion."
 
 #: scfuncs.src
 msgctxt ""
@@ -17299,13 +17367,14 @@ msgid "Cumulative"
 msgstr "Cumulativa"
 
 #: scfuncs.src
+#, fuzzy
 msgctxt ""
 "scfuncs.src\n"
 "RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_LOG_NORM_DIST_MS\n"
 "9\n"
 "string.text"
 msgid "0 or FALSE calculates the probability density function. Any other value or TRUE calculates the cumulative distribution function."
-msgstr ""
+msgstr "0 ou FALS per la densitat de probabilitat, o tota autra valor o VERAI o omesa per la foncion de reparticion."
 
 #: scfuncs.src
 msgctxt ""
@@ -17362,13 +17431,14 @@ msgid "STDEV"
 msgstr "ESCARTTIPE"
 
 #: scfuncs.src
+#, fuzzy
 msgctxt ""
 "scfuncs.src\n"
 "RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_LOG_INV\n"
 "7\n"
 "string.text"
 msgid "Standard deviation. The standard deviation of the log normal distribution."
-msgstr ""
+msgstr "L'escart tipe de la distribucion normala."
 
 #: scfuncs.src
 msgctxt ""
@@ -17389,13 +17459,14 @@ msgid "number"
 msgstr "nombre"
 
 #: scfuncs.src
+#, fuzzy
 msgctxt ""
 "scfuncs.src\n"
 "RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_LOG_INV_MS\n"
 "3\n"
 "string.text"
 msgid "The probability value for which the inverse log normal distribution is to be calculated."
-msgstr ""
+msgstr "La valor de probabilitat per la quala la distribucion lognormala invèrsa deu èsser calculada."
 
 #: scfuncs.src
 msgctxt ""
@@ -17425,13 +17496,14 @@ msgid "STDEV"
 msgstr "ESCARTTIPE"
 
 #: scfuncs.src
+#, fuzzy
 msgctxt ""
 "scfuncs.src\n"
 "RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_LOG_INV_MS\n"
 "7\n"
 "string.text"
 msgid "Standard deviation. The standard deviation of the log normal distribution."
-msgstr ""
+msgstr "L'escart tipe de la distribucion normala."
 
 #: scfuncs.src
 msgctxt ""
@@ -17494,7 +17566,7 @@ msgctxt ""
 "7\n"
 "string.text"
 msgid "Cumulated. C=0 calculates the density function, C=1 the distribution."
-msgstr ""
+msgstr "Cumulativa. C = 0 calcula la foncion de densitat, C = 1 la distribucion."
 
 #: scfuncs.src
 msgctxt ""
@@ -17557,7 +17629,7 @@ msgctxt ""
 "7\n"
 "string.text"
 msgid "Cumulated. C=0 calculates the density function, C=1 the distribution."
-msgstr ""
+msgstr "Cumulativa. C = 0 calcula la foncion de densitat, C = 1 la distribucion."
 
 #: scfuncs.src
 msgctxt ""
@@ -17632,13 +17704,14 @@ msgid "Cumulative"
 msgstr "Cumulativa"
 
 #: scfuncs.src
+#, fuzzy
 msgctxt ""
 "scfuncs.src\n"
 "RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_GAMMA_DIST\n"
 "9\n"
 "string.text"
 msgid "0 or FALSE calculates the probability density function. Any other value or TRUE or omitted calculates the cumulative distribution function."
-msgstr ""
+msgstr "0 ou FALS per la densitat de probabilitat, o tota autra valor o VERAI o omesa per la foncion de reparticion."
 
 #: scfuncs.src
 msgctxt ""
@@ -17713,13 +17786,14 @@ msgid "Cumulative"
 msgstr "Cumulativa"
 
 #: scfuncs.src
+#, fuzzy
 msgctxt ""
 "scfuncs.src\n"
 "RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_GAMMA_DIST_MS\n"
 "9\n"
 "string.text"
 msgid "0 or FALSE calculates the probability density function. Any other value or TRUE calculates the cumulative distribution function."
-msgstr ""
+msgstr "0 ou FALS per la densitat de probabilitat, o tota autra valor o VERAI o omesa per la foncion de reparticion."
 
 #: scfuncs.src
 msgctxt ""
@@ -17746,7 +17820,7 @@ msgctxt ""
 "3\n"
 "string.text"
 msgid "The probability value for which the inverse gamma distribution is to be calculated."
-msgstr ""
+msgstr "La valor de probabilitat per la quala volètz calcular la distribucion Gamma invèrsa."
 
 #: scfuncs.src
 msgctxt ""
@@ -17809,7 +17883,7 @@ msgctxt ""
 "3\n"
 "string.text"
 msgid "The probability value for which the inverse gamma distribution is to be calculated."
-msgstr ""
+msgstr "La valor de probabilitat per la quala volètz calcular la distribucion Gamma invèrsa."
 
 #: scfuncs.src
 msgctxt ""
@@ -17854,7 +17928,7 @@ msgctxt ""
 "1\n"
 "string.text"
 msgid "Returns the natural logarithm of the gamma function."
-msgstr ""
+msgstr "Renvia lo logaritme neperian de la foncion Gamma."
 
 #: scfuncs.src
 msgctxt ""
@@ -17875,13 +17949,14 @@ msgid "The value for which the natural logarithm of the gamma function is to be 
 msgstr ""
 
 #: scfuncs.src
+#, fuzzy
 msgctxt ""
 "scfuncs.src\n"
 "RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_GAMMA_LN_MS\n"
 "1\n"
 "string.text"
 msgid "Returns the natural logarithm of the gamma function."
-msgstr ""
+msgstr "Renvia lo logaritme neperian de la foncion Gamma."
 
 #: scfuncs.src
 msgctxt ""
@@ -18001,13 +18076,14 @@ msgid "Start"
 msgstr "Començament"
 
 #: scfuncs.src
+#, fuzzy
 msgctxt ""
 "scfuncs.src\n"
 "RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_BETA_DIST\n"
 "9\n"
 "string.text"
 msgid "The starting value for the value interval of the distribution."
-msgstr ""
+msgstr "La valor iniciala per l'interval de valors de la distribucion."
 
 #: scfuncs.src
 msgctxt ""
@@ -18025,7 +18101,7 @@ msgctxt ""
 "11\n"
 "string.text"
 msgid "The final value for the value interval of the distribution."
-msgstr ""
+msgstr "La valor finala per l'interval de valors de la distribucion."
 
 #: scfuncs.src
 msgctxt ""
@@ -18043,7 +18119,7 @@ msgctxt ""
 "13\n"
 "string.text"
 msgid "0 or FALSE for probability density function, any other value or TRUE or omitted for cumulative distribution function."
-msgstr ""
+msgstr "0 ou FALS per la densitat de probabilitat, o tota autra valor o VERAI o omesa per la foncion de reparticion."
 
 #: scfuncs.src
 msgctxt ""
@@ -18070,7 +18146,7 @@ msgctxt ""
 "3\n"
 "string.text"
 msgid "The probability value for which the inverse beta distribution is to be calculated."
-msgstr ""
+msgstr "La valor de probabilitat a la quala la distribucion bèta invèrsa deu èsser calculada."
 
 #: scfuncs.src
 msgctxt ""
@@ -18124,7 +18200,7 @@ msgctxt ""
 "9\n"
 "string.text"
 msgid "The starting value for the value interval of the distribution."
-msgstr ""
+msgstr "La valor iniciala per l'interval de valors de la distribucion."
 
 #: scfuncs.src
 msgctxt ""
@@ -18142,7 +18218,7 @@ msgctxt ""
 "11\n"
 "string.text"
 msgid "The final value for the value interval of the distribution."
-msgstr ""
+msgstr "La valor finala per l'interval de valors de la distribucion."
 
 #: scfuncs.src
 msgctxt ""
@@ -18223,7 +18299,7 @@ msgctxt ""
 "9\n"
 "string.text"
 msgid "0 or FALSE for probability density function, any other value or TRUE or omitted for cumulative distribution function."
-msgstr ""
+msgstr "0 ou FALS per la densitat de probabilitat, o tota autra valor o VERAI o omesa per la foncion de reparticion."
 
 #: scfuncs.src
 msgctxt ""
@@ -18241,7 +18317,7 @@ msgctxt ""
 "11\n"
 "string.text"
 msgid "The starting value for the value interval of the distribution."
-msgstr ""
+msgstr "La valor iniciala per l'interval de valors de la distribucion."
 
 #: scfuncs.src
 msgctxt ""
@@ -18259,7 +18335,7 @@ msgctxt ""
 "13\n"
 "string.text"
 msgid "The final value for the value interval of the distribution."
-msgstr ""
+msgstr "La valor finala per l'interval de valors de la distribucion."
 
 #: scfuncs.src
 msgctxt ""
@@ -18286,7 +18362,7 @@ msgctxt ""
 "3\n"
 "string.text"
 msgid "The probability value for which the inverse beta distribution is to be calculated."
-msgstr ""
+msgstr "La valor de probabilitat per la quala la distribucion bèta invèrsa deu èsser calculada."
 
 #: scfuncs.src
 msgctxt ""
@@ -18340,7 +18416,7 @@ msgctxt ""
 "9\n"
 "string.text"
 msgid "The starting value for the value interval of the distribution."
-msgstr ""
+msgstr "La valor iniciala per l'interval de valors de la distribucion."
 
 #: scfuncs.src
 msgctxt ""
@@ -18358,7 +18434,7 @@ msgctxt ""
 "11\n"
 "string.text"
 msgid "The final value for the value interval of the distribution."
-msgstr ""
+msgstr "La valor finala per l'interval de valors de la distribucion."
 
 #: scfuncs.src
 msgctxt ""
@@ -18439,7 +18515,7 @@ msgctxt ""
 "9\n"
 "string.text"
 msgid "Cumulated. C=0 calculates the density function, C=1 the distribution."
-msgstr ""
+msgstr "Cumulativa. C = 0 calcula la foncion de densitat, C = 1 la distribucion."
 
 #: scfuncs.src
 msgctxt ""
@@ -18511,7 +18587,7 @@ msgctxt ""
 "8\n"
 "string.text"
 msgid "C"
-msgstr ""
+msgstr "C"
 
 #: scfuncs.src
 msgctxt ""
@@ -18520,7 +18596,7 @@ msgctxt ""
 "9\n"
 "string.text"
 msgid "Cumulated. C=0 calculates the density function, C=1 the distribution."
-msgstr ""
+msgstr "Cumulativa. C = 0 calcula la foncion de densitat, C = 1 la distribucion."
 
 #: scfuncs.src
 msgctxt ""
@@ -18619,7 +18695,7 @@ msgctxt ""
 "2\n"
 "string.text"
 msgid "X"
-msgstr ""
+msgstr "X"
 
 #: scfuncs.src
 msgctxt ""
@@ -18700,7 +18776,7 @@ msgctxt ""
 "11\n"
 "string.text"
 msgid "Cumulated. TRUE calculates the cumulative distribution function, FALSE the probability mass function."
-msgstr ""
+msgstr "Cumulat. VERAI calcula la foncion de reparticion, FALS la foncion de massa de probabilitat."
 
 #: scfuncs.src
 msgctxt ""
@@ -18763,7 +18839,7 @@ msgctxt ""
 "7\n"
 "string.text"
 msgid "Mode = 1 calculates the one-tailed test, 2 = two-tailed distribution."
-msgstr ""
+msgstr "Mòde = 1 calcula lo tèst unilateral, 2 = calcula lo tèst bilateral."
 
 #: scfuncs.src
 msgctxt ""
@@ -18772,7 +18848,7 @@ msgctxt ""
 "1\n"
 "string.text"
 msgid "Returns the two-tailed t-distribution."
-msgstr ""
+msgstr "Renvia la distribucion t bilaterala."
 
 #: scfuncs.src
 msgctxt ""
@@ -18865,22 +18941,24 @@ msgid "cumulative"
 msgstr "cumulatiu"
 
 #: scfuncs.src
+#, fuzzy
 msgctxt ""
 "scfuncs.src\n"
 "RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_T_DIST_MS\n"
 "7\n"
 "string.text"
 msgid "True calculates the cumulative distribution function, false the probability density function."
-msgstr ""
+msgstr "Cumulat. VERAI calcula la foncion de reparticion, FALS la foncion de massa de probabilitat."
 
 #: scfuncs.src
+#, fuzzy
 msgctxt ""
 "scfuncs.src\n"
 "RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_T_DIST_RT\n"
 "1\n"
 "string.text"
 msgid "Returns the right-tailed t-distribution."
-msgstr ""
+msgstr "Renvia la distribucion t bilaterala."
 
 #: scfuncs.src
 msgctxt ""
@@ -18943,7 +19021,7 @@ msgctxt ""
 "3\n"
 "string.text"
 msgid "The probability value for which the inverse T distribution is to be calculated."
-msgstr ""
+msgstr "La valor de probabilitat per la quala la distribucion T invèrsa deu èsser calculada."
 
 #: scfuncs.src
 msgctxt ""
@@ -18988,7 +19066,7 @@ msgctxt ""
 "3\n"
 "string.text"
 msgid "The probability value for which the inverse T distribution is to be calculated."
-msgstr ""
+msgstr "La valor de probabilitat per la quala la distribucion T invèrsa deu èsser calculada."
 
 #: scfuncs.src
 msgctxt ""
@@ -19033,7 +19111,7 @@ msgctxt ""
 "3\n"
 "string.text"
 msgid "The probability value for which the inverse T distribution is to be calculated."
-msgstr ""
+msgstr "La valor de probabilitat per la quala la distribucion T invèrsa deu èsser calculada."
 
 #: scfuncs.src
 msgctxt ""
@@ -19096,7 +19174,7 @@ msgctxt ""
 "5\n"
 "string.text"
 msgid "The degrees of freedom in the numerator of the F distribution."
-msgstr ""
+msgstr "Los grases de libertat del numerador de la distribucion F."
 
 #: scfuncs.src
 msgctxt ""
@@ -19114,7 +19192,7 @@ msgctxt ""
 "7\n"
 "string.text"
 msgid "The degrees of freedom in the denominator of the F distribution."
-msgstr ""
+msgstr "Los grases de libertat del denominator de la distribucion F."
 
 #: scfuncs.src
 msgctxt ""
@@ -19153,13 +19231,14 @@ msgid "degrees_freedom_1"
 msgstr "grases_libertat 1"
 
 #: scfuncs.src
+#, fuzzy
 msgctxt ""
 "scfuncs.src\n"
 "RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_F_DIST_LT\n"
 "5\n"
 "string.text"
 msgid "The degrees of freedom in the numerator of the F distribution."
-msgstr ""
+msgstr "Los grases de libertat del numerador de la distribucion F."
 
 #: scfuncs.src
 msgctxt ""
@@ -19177,7 +19256,7 @@ msgctxt ""
 "7\n"
 "string.text"
 msgid "The degrees of freedom in the denominator of the F distribution."
-msgstr ""
+msgstr "Los grases de libertat del denominator de la distribucion F."
 
 #: scfuncs.src
 msgctxt ""
@@ -19234,13 +19313,14 @@ msgid "degrees_freedom_1"
 msgstr "grases_libertat 1"
 
 #: scfuncs.src
+#, fuzzy
 msgctxt ""
 "scfuncs.src\n"
 "RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_F_DIST_RT\n"
 "5\n"
 "string.text"
 msgid "The degrees of freedom in the numerator of the F distribution."
-msgstr ""
+msgstr "Los grases de libertat del numerador de la distribucion F."
 
 #: scfuncs.src
 msgctxt ""
@@ -19252,13 +19332,14 @@ msgid "degrees_freedom_2"
 msgstr "grases_libertat 2"
 
 #: scfuncs.src
+#, fuzzy
 msgctxt ""
 "scfuncs.src\n"
 "RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_F_DIST_RT\n"
 "7\n"
 "string.text"
 msgid "The degrees of freedom in the denominator of the F distribution."
-msgstr ""
+msgstr "Los grases de libertat del denominator de la distribucion F."
 
 #: scfuncs.src
 msgctxt ""
@@ -19279,13 +19360,14 @@ msgid "number"
 msgstr "nombre"
 
 #: scfuncs.src
+#, fuzzy
 msgctxt ""
 "scfuncs.src\n"
 "RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_F_INV\n"
 "3\n"
 "string.text"
 msgid "The probability value for which the inverse F distribution is to be calculated."
-msgstr ""
+msgstr "La valor de probabilitat per la quala la distribucion F invèrsa deu èsser calculada."
 
 #: scfuncs.src
 msgctxt ""
@@ -19303,7 +19385,7 @@ msgctxt ""
 "5\n"
 "string.text"
 msgid "The degrees of freedom in the numerator of the F distribution."
-msgstr ""
+msgstr "Los grases de libertat del numerador de la distribucion F."
 
 #: scfuncs.src
 msgctxt ""
@@ -19321,7 +19403,7 @@ msgctxt ""
 "7\n"
 "string.text"
 msgid "The degrees of freedom in the denominator of the F distribution."
-msgstr ""
+msgstr "Los grases de libertat del denominator de la distribucion F."
 
 #: scfuncs.src
 msgctxt ""
@@ -19348,7 +19430,7 @@ msgctxt ""
 "3\n"
 "string.text"
 msgid "The probability value for which the inverse F distribution is to be calculated."
-msgstr ""
+msgstr "La valor de probabilitat per la quala la distribucion F invèrsa deu èsser calculada."
 
 #: scfuncs.src
 msgctxt ""
@@ -19366,7 +19448,7 @@ msgctxt ""
 "5\n"
 "string.text"
 msgid "The degrees of freedom in the numerator of the F distribution."
-msgstr ""
+msgstr "Los grases de libertat del numerador de la distribucion F."
 
 #: scfuncs.src
 msgctxt ""
@@ -19384,7 +19466,7 @@ msgctxt ""
 "7\n"
 "string.text"
 msgid "The degrees of freedom in the denominator of the F distribution."
-msgstr ""
+msgstr "Los grases de libertat del denominator de la distribucion F."
 
 #: scfuncs.src
 msgctxt ""
@@ -19411,7 +19493,7 @@ msgctxt ""
 "3\n"
 "string.text"
 msgid "The probability value for which the inverse F distribution is to be calculated."
-msgstr ""
+msgstr "La valor de probabilitat per la quala la distribucion F invèrsa deu èsser calculada."
 
 #: scfuncs.src
 msgctxt ""
@@ -19429,7 +19511,7 @@ msgctxt ""
 "5\n"
 "string.text"
 msgid "The degrees of freedom in the numerator of the F distribution."
-msgstr ""
+msgstr "Los grases de libertat del numerador de la distribucion F."
 
 #: scfuncs.src
 msgctxt ""
@@ -19447,7 +19529,7 @@ msgctxt ""
 "7\n"
 "string.text"
 msgid "The degrees of freedom in the denominator of the F distribution."
-msgstr ""
+msgstr "Los grases de libertat del denominator de la distribucion F."
 
 #: scfuncs.src
 msgctxt ""
@@ -19594,13 +19676,14 @@ msgid "Cumulative"
 msgstr "Cumulativa"
 
 #: scfuncs.src
+#, fuzzy
 msgctxt ""
 "scfuncs.src\n"
 "RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CHISQ_DIST\n"
 "7\n"
 "string.text"
 msgid "0 or FALSE calculates the probability density function. Any other value or TRUE or omitted calculates the cumulative distribution function."
-msgstr ""
+msgstr "0 ou FALS per la densitat de probabilitat, o tota autra valor o VERAI o omesa per la foncion de reparticion."
 
 #: scfuncs.src
 msgctxt ""
@@ -19657,13 +19740,14 @@ msgid "Cumulative"
 msgstr "Cumulativa"
 
 #: scfuncs.src
+#, fuzzy
 msgctxt ""
 "scfuncs.src\n"
 "RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CHISQ_DIST_MS\n"
 "7\n"
 "string.text"
 msgid "0 or FALSE calculates the probability density function. Any other value or TRUE calculates the cumulative distribution function."
-msgstr ""
+msgstr "0 ou FALS per la densitat de probabilitat, o tota autra valor o VERAI o omesa per la foncion de reparticion."
 
 #: scfuncs.src
 msgctxt ""
@@ -19684,13 +19768,14 @@ msgid "number"
 msgstr "nombre"
 
 #: scfuncs.src
+#, fuzzy
 msgctxt ""
 "scfuncs.src\n"
 "RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CHI_INV\n"
 "3\n"
 "string.text"
 msgid "The probability value for which the inverse chi square distribution is to be calculated."
-msgstr ""
+msgstr "La valor de probabilitat a la quala la distribucion bèta invèrsa deu èsser calculada."
 
 #: scfuncs.src
 msgctxt ""
@@ -19729,13 +19814,14 @@ msgid "number"
 msgstr "nombre"
 
 #: scfuncs.src
+#, fuzzy
 msgctxt ""
 "scfuncs.src\n"
 "RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CHI_INV_MS\n"
 "3\n"
 "string.text"
 msgid "The probability value for which the inverse chi square distribution is to be calculated."
-msgstr ""
+msgstr "La valor de probabilitat a la quala la distribucion bèta invèrsa deu èsser calculada."
 
 #: scfuncs.src
 msgctxt ""
@@ -19774,13 +19860,14 @@ msgid "Probability"
 msgstr "Probabilitat"
 
 #: scfuncs.src
+#, fuzzy
 msgctxt ""
 "scfuncs.src\n"
 "RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CHISQ_INV\n"
 "3\n"
 "string.text"
 msgid "The probability value for which the inverse of the chi square distribution is to be calculated."
-msgstr ""
+msgstr "La valor de probabilitat a la quala la distribucion bèta invèrsa deu èsser calculada."
 
 #: scfuncs.src
 msgctxt ""
@@ -19819,13 +19906,14 @@ msgid "Probability"
 msgstr "Probabilitat"
 
 #: scfuncs.src
+#, fuzzy
 msgctxt ""
 "scfuncs.src\n"
 "RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CHISQ_INV_MS\n"
 "3\n"
 "string.text"
 msgid "The probability value for which the inverse of the chi square distribution is to be calculated."
-msgstr ""
+msgstr "La valor de probabilitat a la quala la distribucion bèta invèrsa deu èsser calculada."
 
 #: scfuncs.src
 msgctxt ""
@@ -22449,13 +22537,14 @@ msgid "number"
 msgstr "nombre"
 
 #: scfuncs.src
+#, fuzzy
 msgctxt ""
 "scfuncs.src\n"
 "RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CHAR\n"
 "3\n"
 "string.text"
 msgid "The code value for the character."
-msgstr ""
+msgstr "La valor encodada pel caractèr."
 
 #: scfuncs.src
 msgctxt ""
@@ -22566,13 +22655,14 @@ msgid "Looks for a string of text within another (case sensitive)"
 msgstr ""
 
 #: scfuncs.src
+#, fuzzy
 msgctxt ""
 "scfuncs.src\n"
 "RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_FIND\n"
 "2\n"
 "string.text"
 msgid "find_text"
-msgstr ""
+msgstr "tèxte_cercat"
 
 #: scfuncs.src
 msgctxt ""
@@ -23061,13 +23151,14 @@ msgid "The text in which the length is to be determined."
 msgstr ""
 
 #: scfuncs.src
+#, fuzzy
 msgctxt ""
 "scfuncs.src\n"
 "RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_LEFT\n"
 "1\n"
 "string.text"
 msgid "Returns the first character or characters of a text."
-msgstr ""
+msgstr "Renvia lo o los darrièrs caractèrs d'un tèxte, amb DBCS"
 
 #: scfuncs.src
 msgctxt ""
@@ -23106,13 +23197,14 @@ msgid "The number of characters for the start text."
 msgstr "Lo nombre de caractèrs que volètz extraire."
 
 #: scfuncs.src
+#, fuzzy
 msgctxt ""
 "scfuncs.src\n"
 "RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_RIGHT\n"
 "1\n"
 "string.text"
 msgid "Returns the last character or characters of a text."
-msgstr ""
+msgstr "Renvia lo o los darrièrs caractèrs d'un tèxte, amb DBCS"
 
 #: scfuncs.src
 msgctxt ""
@@ -24124,13 +24216,14 @@ msgid "The number of characters for the end text."
 msgstr "Lo nombre de caractèrs que volètz extraire."
 
 #: scfuncs.src
+#, fuzzy
 msgctxt ""
 "scfuncs.src\n"
 "RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_LEFTB\n"
 "1\n"
 "string.text"
 msgid "Returns the first character or characters of a text,with DBCS"
-msgstr ""
+msgstr "Renvia lo o los darrièrs caractèrs d'un tèxte, amb DBCS"
 
 #: scfuncs.src
 msgctxt ""
@@ -25995,215 +26088,3 @@ msgctxt ""
 "string.text"
 msgid "Collapse Formula Bar"
 msgstr "Redusir la barra Formula"
-
-msgctxt ""
-"hdrcont.src\n"
-"RID_POPUP_ROWHEADER\n"
-"SID_DEL_ROWS\n"
-"menuitem.text"
-msgid "~Delete Selected Rows"
-msgstr "~Suprimir las linhas seleccionadas"
-
-msgctxt ""
-"hdrcont.src\n"
-"RID_POPUP_ROWHEADER\n"
-"SID_DELETE\n"
-"menuitem.text"
-msgid "De~lete Row Contents..."
-msgstr "Su~primir lo contengut de las linhas..."
-
-msgctxt ""
-"hdrcont.src\n"
-"RID_POPUP_ROWHEADER\n"
-"FID_ROW_SHOW\n"
-"menuitem.text"
-msgid "~Show"
-msgstr "~Afichar"
-
-msgctxt ""
-"hdrcont.src\n"
-"RID_POPUP_COLHEADER\n"
-"SID_DEL_COLS\n"
-"menuitem.text"
-msgid "~Delete Selected Columns"
-msgstr "~Suprimir las colomnas seleccionadas"
-
-msgctxt ""
-"hdrcont.src\n"
-"RID_POPUP_COLHEADER\n"
-"SID_DELETE\n"
-"menuitem.text"
-msgid "D~elete Column Contents..."
-msgstr "Su~primir lo contengut de las colomnas..."
-
-msgctxt ""
-"hdrcont.src\n"
-"RID_POPUP_COLHEADER\n"
-"FID_COL_HIDE\n"
-"menuitem.text"
-msgid "~Hide"
-msgstr "~Amagar"
-
-msgctxt ""
-"hdrcont.src\n"
-"RID_POPUP_COLHEADER\n"
-"FID_COL_SHOW\n"
-"menuitem.text"
-msgid "~Show"
-msgstr "~Afichar"
-
-msgctxt ""
-"hdrcont.src\n"
-"RID_POPUP_COLHEADER\n"
-"SID_PASTE_SPECIAL\n"
-"menuitem.text"
-msgid "Paste ~Special..."
-msgstr "Empe~gament especial..."
-
-msgctxt ""
-"popup.src\n"
-"RID_POPUP_CELLS\n"
-"SID_DELETE\n"
-"menuitem.text"
-msgid "Delete C~ontents..."
-msgstr "Suprimir de c~ontengut..."
-
-msgctxt ""
-"scfuncs.src\n"
-"RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CONFIDENCE_N\n"
-"1\n"
-"string.text"
-msgid "Returns a (1 alpha) confidence interval for a normal distribution."
-msgstr "Renvia un interval de fisança (1 -alfa) per la distribucion normala."
-
-msgctxt ""
-"condformatdlg.src\n"
-"RID_COND_ENTRY.LB_ICONSET_TYPE\n"
-"3 Smilies\n"
-"stringlist.text"
-msgid "3 Smilies"
-msgstr "3 emoticònas"
-
-msgctxt ""
-"condformatdlg.src\n"
-"RID_COND_ENTRY.LB_ICONSET_TYPE\n"
-"3 Colored Smilies\n"
-"stringlist.text"
-msgid "3 Colored Smilies"
-msgstr "3 emoticònas coloradas"
-
-msgctxt ""
-"scfuncs.src\n"
-"RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_GET_DAY_OF_WEEK\n"
-"1\n"
-"string.text"
-msgid "Returns the day of the week for the date value as an integer (1-7)."
-msgstr "Renvia lo jorn de la setmana (comprés entre 1 e 7) que correspond a l'argument numèro_seria."
-
-#: globstr.src
-msgctxt ""
-"globstr.src\n"
-"RID_GLOBSTR\n"
-"STR_HEADER_RANGE\n"
-"string.text"
-msgid "Range or formula expression"
-msgstr ""
-
-#: hdrcont.src
-msgctxt ""
-"hdrcont.src\n"
-"RID_POPUP_ROWHEADER\n"
-"FID_ROW_OPT_HEIGHT\n"
-"menuitem.text"
-msgid "Optimal ~Row Height..."
-msgstr "~Nautor de linha optimala..."
-
-#: hdrcont.src
-msgctxt ""
-"hdrcont.src\n"
-"RID_POPUP_ROWHEADER\n"
-"FID_INS_ROW\n"
-"menuitem.text"
-msgid "~Insert Rows Above"
-msgstr "~Inserir de linhas en dessús"
-
-#: hdrcont.src
-msgctxt ""
-"hdrcont.src\n"
-"RID_POPUP_ROWHEADER\n"
-"FID_ROW_HIDE\n"
-"menuitem.text"
-msgid "~Hide"
-msgstr "~Amagar"
-
-#: hdrcont.src
-msgctxt ""
-"hdrcont.src\n"
-"RID_POPUP_COLHEADER\n"
-"FID_COL_WIDTH\n"
-"menuitem.text"
-msgid "Col~umn Width..."
-msgstr "Largor de la ~colomna..."
-
-#: hdrcont.src
-msgctxt ""
-"hdrcont.src\n"
-"RID_POPUP_COLHEADER\n"
-"FID_COL_OPT_WIDTH\n"
-"menuitem.text"
-msgid "O~ptimal Column Width..."
-msgstr "~Largor de colomna optimala..."
-
-#: hdrcont.src
-msgctxt ""
-"hdrcont.src\n"
-"RID_POPUP_COLHEADER\n"
-"FID_INS_COLUMN\n"
-"menuitem.text"
-msgid "~Insert Columns Left"
-msgstr "I~nserir de colomnas a esquèrra"
-
-#: scfuncs.src
-msgctxt ""
-"scfuncs.src\n"
-"RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_FLOOR\n"
-"7\n"
-"string.text"
-msgid "If given and not equal to zero then rounded down according to amount when a negative number and significance."
-msgstr ""
-
-#: scfuncs.src
-msgctxt ""
-"scfuncs.src\n"
-"RID_SC_FUNCTION_DESCRIPTIONS1.SC_OPCODE_FLOOR_MS\n"
-"1\n"
-"string.text"
-msgid "Rounds number down to the nearest multiple of significance, regardless of sign of significance."
-msgstr ""
-
-#: scfuncs.src
-msgctxt ""
-"scfuncs.src\n"
-"RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CONFIDENCE\n"
-"1\n"
-"string.text"
-msgid "Returns a (1 alpha) confidence interval for a normal distribution."
-msgstr "Renvia un interval de fisança (1 -alfa) per la distribucion normala."
-
-#: scfuncs.src
-msgctxt ""
-"scfuncs.src\n"
-"RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_CONFIDENCE_T\n"
-"1\n"
-"string.text"
-msgid "Returns a (1 alpha) confidence interval for a Student's t distribution."
-msgstr "Renvia un interval de fisança (1 -alfa) per una distribucion d'estudiants."
-
-#: scfuncs.src
-msgctxt ""
-"scfuncs.src\n"
-"RID_SC_FUNCTION_DESCRIPTIONS2.SC_OPCODE_ENCODEURL\n"
-"3\n"
-"string.text"
-msgid "A string to be URL encoded"
-msgstr ""
