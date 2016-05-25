@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2016-04-16 21:40+0200\n"
-"PO-Revision-Date: 2016-05-06 14:07+0000\n"
+"POT-Creation-Date: 2016-05-23 21:36+0200\n"
+"PO-Revision-Date: 2016-05-09 12:58+0000\n"
 "Last-Translator: Valter Mura <valtermura@gmail.com>\n"
 "Language-Team: Italian <l10n@it.libreoffice.org>\n"
 "Language: it\n"
@@ -13,8 +13,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Accelerator-Marker: ~\n"
-"X-Generator: Pootle 2.7\n"
-"X-POOTLE-MTIME: 1462543646.000000\n"
+"X-Generator: LibreOffice\n"
+"X-POOTLE-MTIME: 1462798701.000000\n"
 
 #: 00000002.xhp
 msgctxt ""
@@ -11367,7 +11367,6 @@ msgid "Parameters:"
 msgstr "Parametri:"
 
 #: 03020409.xhp
-#, fuzzy
 msgctxt ""
 "03020409.xhp\n"
 "par_id3151042\n"
@@ -15988,13 +15987,12 @@ msgid "On Error GoTo ... Resume Statement [Runtime]"
 msgstr "Istruzione On Error GoTo ... Resume [Runtime]"
 
 #: 03050500.xhp
-#, fuzzy
 msgctxt ""
 "03050500.xhp\n"
 "bm_id3146795\n"
 "help.text"
 msgid "<bookmark_value>Resume Next parameter</bookmark_value>  <bookmark_value>On Error GoTo ... Resume statement</bookmark_value>"
-msgstr "<bookmark_value>Resume Next;parametro</bookmark_value><bookmark_value>On Error GoTo ... Resume;istruzione</bookmark_value>"
+msgstr "<bookmark_value>Resume Next;parametro</bookmark_value>  <bookmark_value>On Error GoTo ... Resume;istruzione</bookmark_value>"
 
 #: 03050500.xhp
 msgctxt ""
@@ -18591,16 +18589,16 @@ msgctxt ""
 "03080301.xhp\n"
 "hd_id3150616\n"
 "help.text"
-msgid "<link href=\"text/sbasic/shared/03080301.xhp\" name=\"Randomize Statement [Runtime]\">Randomize Statement [Runtime]</link>"
-msgstr "<link href=\"text/sbasic/shared/03080301.xhp\" name=\"Istruzione Randomize [Runtime]\">Istruzione Randomize [Runtime]</link>"
+msgid "<variable id=\"heading_randomize\"><link href=\"text/sbasic/shared/03080301.xhp\" name=\"Randomize Statement [Runtime]\">Randomize Statement [Runtime]</link></variable>"
+msgstr ""
 
 #: 03080301.xhp
 msgctxt ""
 "03080301.xhp\n"
 "par_id3145090\n"
 "help.text"
-msgid "Initializes the random-number generator."
-msgstr "Inizializza il generatore di numeri casuali."
+msgid "Initializes the random-number generator used by the <emph>Rnd</emph> function."
+msgstr ""
 
 #: 03080301.xhp
 msgctxt ""
@@ -18631,8 +18629,24 @@ msgctxt ""
 "03080301.xhp\n"
 "par_id3149670\n"
 "help.text"
-msgid "<emph>Number:</emph> Any integer value that initializes the random-number generator."
-msgstr "<emph>Numero:</emph> valore intero che inizializza il generatore di numeri casuali."
+msgid "<emph>Number:</emph> Any integer value. Used as seed to initialize the random-number generator. Equal seeds result in equal random-number sequences by the <emph>Rnd</emph> function. If the parameter is omitted, the <emph>Randomize</emph> statement will be ignored."
+msgstr ""
+
+#: 03080301.xhp
+msgctxt ""
+"03080301.xhp\n"
+"par_id110520161656428611\n"
+"help.text"
+msgid "Unless a predictable sequence of numbers is desired, there is no need to use the <emph>Randomize</emph> statement, as the random-number generator will be initialized automatically at first use – it will be seeded using a system-provided random-number generator that produces uniformly-distributed, non-deterministic random numbers. If no such generator is available on the system, the system time will be used as seed."
+msgstr ""
+
+#: 03080301.xhp
+msgctxt ""
+"03080301.xhp\n"
+"par_id12052016194258344\n"
+"help.text"
+msgid "The <emph>Randomize</emph> statement affects BASIC's <emph>Rnd</emph> function only. Other random-number generators (for example the Calc's RAND() function, etc.) are not affected by it."
+msgstr ""
 
 #: 03080301.xhp
 msgctxt ""
@@ -18643,11 +18657,12 @@ msgid "Example:"
 msgstr "Esempio:"
 
 #: 03080301.xhp
+#, fuzzy
 msgctxt ""
 "03080301.xhp\n"
 "par_id3147288\n"
 "help.text"
-msgid "iVar = Int((10 * Rnd) ) ' Range from 0 To 9"
+msgid "iVar = Int(10 * Rnd) ' Range from 0 to 9"
 msgstr "iVar = Int((10 * Rnd) ) ' Valore numerico compreso tra 0 e 9"
 
 #: 03080301.xhp
@@ -18679,8 +18694,8 @@ msgctxt ""
 "03080302.xhp\n"
 "hd_id3148685\n"
 "help.text"
-msgid "<link href=\"text/sbasic/shared/03080302.xhp\" name=\"Rnd Function [Runtime]\">Rnd Function [Runtime]</link>"
-msgstr "<link href=\"text/sbasic/shared/03080302.xhp\" name=\"Funzione Rnd [Runtime]\">Funzione Rnd [Runtime]</link>"
+msgid "<variable id=\"heading_rnd\"><link href=\"text/sbasic/shared/03080302.xhp\" name=\"Rnd Function [Runtime]\">Rnd Function [Runtime]</link></variable>"
+msgstr ""
 
 #: 03080302.xhp
 msgctxt ""
@@ -18735,24 +18750,16 @@ msgctxt ""
 "03080302.xhp\n"
 "par_id3125864\n"
 "help.text"
-msgid "<emph>Expression:</emph> Any numeric expression."
-msgstr "<emph>Espressione:</emph> qualunque espressione numerica."
-
-#: 03080302.xhp
-msgctxt ""
-"03080302.xhp\n"
-"par_id3155306\n"
-"help.text"
-msgid "<emph>Omitted:</emph> Returns the next random number in the sequence."
-msgstr "<emph>Nessun valore:</emph> restituisce il numero casuale successivo nella sequenza."
+msgid "<emph>Expression:</emph> Has no effect, is ignored if provided."
+msgstr ""
 
 #: 03080302.xhp
 msgctxt ""
 "03080302.xhp\n"
 "par_id3147318\n"
 "help.text"
-msgid "The <emph>Rnd</emph> function only returns values ranging from 0 to 1. To generate random integers in a given range, use the formula in the following example:"
-msgstr "La funzione <emph>Rnd</emph> restituisce solo valori compresi tra 0 e 1. Per generare numeri interi casuali compresi in un intervallo prestabilito, usate la formula dell'esempio seguente:"
+msgid "The <emph>Rnd</emph> function returns decimal fractions ranging from 0 (included) to 1 (excluded) according to a uniform distribution. It uses the Mersenne Twister 19937 random-number generator. To generate random integers in a given range, use a formula like in the example below. A <emph>Randomize</emph> statement with a defined seed value can be used beforehand, if a predictable sequence of numbers is desired."
+msgstr ""
 
 #: 03080302.xhp
 msgctxt ""
@@ -19453,14 +19460,6 @@ msgstr "Sgn restituisce -1."
 #: 03080701.xhp
 msgctxt ""
 "03080701.xhp\n"
-"par_id3145271\n"
-"help.text"
-msgid "0"
-msgstr ""
-
-#: 03080701.xhp
-msgctxt ""
-"03080701.xhp\n"
 "par_id3146119\n"
 "help.text"
 msgid "Sgn returns 0."
@@ -19954,13 +19953,12 @@ msgid "Select...Case Statement [Runtime]"
 msgstr "Istruzione Select... Case [Runtime]"
 
 #: 03090102.xhp
-#, fuzzy
 msgctxt ""
 "03090102.xhp\n"
 "bm_id3149416\n"
 "help.text"
 msgid "<bookmark_value>Select...Case statement</bookmark_value>  <bookmark_value>Case statement</bookmark_value>"
-msgstr "<bookmark_value>Select...Case; istruzione</bookmark_value><bookmark_value>Case;istruzione</bookmark_value>"
+msgstr "<bookmark_value>Select...Case; istruzione</bookmark_value>  <bookmark_value>Case; istruzione</bookmark_value>"
 
 #: 03090102.xhp
 msgctxt ""
@@ -20172,13 +20170,12 @@ msgid "Do...Loop Statement [Runtime]"
 msgstr "Istruzione Do... Loop [Runtime]"
 
 #: 03090201.xhp
-#, fuzzy
 msgctxt ""
 "03090201.xhp\n"
 "bm_id3156116\n"
 "help.text"
 msgid "<bookmark_value>Do...Loop statement</bookmark_value>  <bookmark_value>While; Do loop</bookmark_value>  <bookmark_value>Until</bookmark_value>  <bookmark_value>loops</bookmark_value>"
-msgstr "<bookmark_value>Do...Loop;istruzione</bookmark_value><bookmark_value>While;ciclo Do</bookmark_value><bookmark_value>Until</bookmark_value><bookmark_value>Ciclo</bookmark_value>"
+msgstr "<bookmark_value>Do...Loop; istruzione</bookmark_value>  <bookmark_value>While; ciclo Do</bookmark_value>  <bookmark_value>Until</bookmark_value>  <bookmark_value>Ciclo</bookmark_value>"
 
 #: 03090201.xhp
 msgctxt ""
@@ -20525,7 +20522,6 @@ msgid "For...Next Statement [Runtime]"
 msgstr "Istruzione For...Next [Runtime]"
 
 #: 03090202.xhp
-#, fuzzy
 msgctxt ""
 "03090202.xhp\n"
 "bm_id3149205\n"
@@ -21106,7 +21102,6 @@ msgid "statement block"
 msgstr "blocco istruzioni"
 
 #: 03090301.xhp
-#, fuzzy
 msgctxt ""
 "03090301.xhp\n"
 "par_id3154140\n"
@@ -21429,13 +21424,12 @@ msgid "On...GoSub Statement; On...GoTo Statement [Runtime]"
 msgstr "Istruzione On...GoSub; Istruzione On...GoTo [Runtime]"
 
 #: 03090303.xhp
-#, fuzzy
 msgctxt ""
 "03090303.xhp\n"
 "bm_id3153897\n"
 "help.text"
 msgid "<bookmark_value>On...GoSub statement</bookmark_value>  <bookmark_value>On...GoTo statement</bookmark_value>"
-msgstr "<bookmark_value>On...GoSub; istruzione</bookmark_value><bookmark_value>On...GoTo; istruzione</bookmark_value>"
+msgstr "<bookmark_value>On...GoSub; istruzione</bookmark_value>  <bookmark_value>On...GoTo; istruzione</bookmark_value>"
 
 #: 03090303.xhp
 msgctxt ""
@@ -22329,13 +22323,12 @@ msgid "Rem Statement [Runtime]"
 msgstr "Istruzione Rem [Runtime]"
 
 #: 03090407.xhp
-#, fuzzy
 msgctxt ""
 "03090407.xhp\n"
 "bm_id3154347\n"
 "help.text"
 msgid "<bookmark_value>Rem statement</bookmark_value>  <bookmark_value>comments;Rem statement</bookmark_value>"
-msgstr "<bookmark_value>Rem;istruzione</bookmark_value><bookmark_value>Commento;istruzione Rem</bookmark_value>"
+msgstr "<bookmark_value>Rem;istruzione</bookmark_value>  <bookmark_value>Commento;istruzione Rem</bookmark_value>"
 
 #: 03090407.xhp
 msgctxt ""
@@ -22888,13 +22881,12 @@ msgid "Example:"
 msgstr "Esempio:"
 
 #: 03090412.xhp
-#, fuzzy
 msgctxt ""
 "03090412.xhp\n"
 "par_id3153158\n"
 "help.text"
 msgid "For siStep = 0 To 10 ' Fill array with test data"
-msgstr "For siPasso = 0 to 10 ' Popola la matrice con dati di prova"
+msgstr "For siStep = 0 to 10 ' Popola la matrice con dati di prova"
 
 #: 03090412.xhp
 msgctxt ""
@@ -23483,7 +23475,6 @@ msgid "Return value:"
 msgstr "Valore restituito:"
 
 #: 03100300.xhp
-#, fuzzy
 msgctxt ""
 "03100300.xhp\n"
 "par_id3159414\n"
@@ -24804,7 +24795,6 @@ msgid "<emph>Characterrange:</emph> Letters that specify the range of variables 
 msgstr "<emph>IntervalloCaratteri:</emph> lettere che specificano la serie di variabili per le quali si desidera impostare il tipo di dati predefinito."
 
 #: 03101300.xhp
-#, fuzzy
 msgctxt ""
 "03101300.xhp\n"
 "par_id3150869\n"
@@ -24917,7 +24907,6 @@ msgid "<emph>Characterrange:</emph> Letters that specify the range of variables 
 msgstr "<emph>IntervalloCaratteri:</emph> lettere che specificano la serie di variabili per le quali si desidera impostare il tipo di dati predefinito."
 
 #: 03101400.xhp
-#, fuzzy
 msgctxt ""
 "03101400.xhp\n"
 "par_id3150791\n"
@@ -25030,7 +25019,6 @@ msgid "<emph>Characterrange:</emph> Letters that specify the range of variables 
 msgstr "<emph>IntervalloCaratteri:</emph> lettere che specificano la serie di variabili per le quali si desidera impostare il tipo di dati predefinito."
 
 #: 03101500.xhp
-#, fuzzy
 msgctxt ""
 "03101500.xhp\n"
 "par_id3150398\n"
@@ -25143,7 +25131,6 @@ msgid "<emph>Characterrange:</emph> Letters that specify the range of variables 
 msgstr "<emph>IntervalloCaratteri:</emph> lettere che specificano la serie di variabili per le quali si desidera impostare il tipo di dati predefinito."
 
 #: 03101600.xhp
-#, fuzzy
 msgctxt ""
 "03101600.xhp\n"
 "par_id3150791\n"
@@ -25434,7 +25421,6 @@ msgid "<emph>Characterrange:</emph> Letters that specify the range of variables 
 msgstr "<emph>IntervalloCaratteri:</emph> lettere che specificano la serie di variabili per le quali si desidera impostare il tipo di dati predefinito."
 
 #: 03102000.xhp
-#, fuzzy
 msgctxt ""
 "03102000.xhp\n"
 "par_id3148552\n"
@@ -25499,13 +25485,12 @@ msgid "Dim Statement [Runtime]"
 msgstr "Istruzione Dim [Runtime]"
 
 #: 03102100.xhp
-#, fuzzy
 msgctxt ""
 "03102100.xhp\n"
 "bm_id3149812\n"
 "help.text"
 msgid "<bookmark_value>Dim statement</bookmark_value>  <bookmark_value>arrays; dimensioning</bookmark_value>  <bookmark_value>dimensioning arrays</bookmark_value>"
-msgstr "<bookmark_value>Dim;istruzione</bookmark_value><bookmark_value>Matrice;definire le dimensioni</bookmark_value><bookmark_value>Dimensione;matrice</bookmark_value>"
+msgstr "<bookmark_value>Dim;istruzione</bookmark_value>  <bookmark_value>Matrice; definire le dimensioni</bookmark_value>  <bookmark_value>Dimensione;matrice</bookmark_value>"
 
 #: 03102100.xhp
 msgctxt ""
@@ -26420,13 +26405,12 @@ msgid "IsNull Function [Runtime]"
 msgstr "Funzione IsNull [Runtime]"
 
 #: 03102600.xhp
-#, fuzzy
 msgctxt ""
 "03102600.xhp\n"
 "bm_id3155555\n"
 "help.text"
 msgid "<bookmark_value>IsNull function</bookmark_value>  <bookmark_value>Null value</bookmark_value>"
-msgstr "<bookmark_value>IsNull;funzione</bookmark_value><bookmark_value>Null, valore</bookmark_value>"
+msgstr "<bookmark_value>IsNull;funzione</bookmark_value>  <bookmark_value>Null, valore</bookmark_value>"
 
 #: 03102600.xhp
 msgctxt ""
@@ -27413,13 +27397,12 @@ msgid "TypeName Function; VarType Function[Runtime]"
 msgstr "Funzione TypeName; Funzione VarType [Runtime]"
 
 #: 03103600.xhp
-#, fuzzy
 msgctxt ""
 "03103600.xhp\n"
 "bm_id3143267\n"
 "help.text"
 msgid "<bookmark_value>TypeName function</bookmark_value>  <bookmark_value>VarType function</bookmark_value>"
-msgstr "<bookmark_value>TypeName;funzione</bookmark_value><bookmark_value>VarType;funzione</bookmark_value>"
+msgstr "<bookmark_value>TypeName;funzione</bookmark_value>  <bookmark_value>VarType;funzione</bookmark_value>"
 
 #: 03103600.xhp
 msgctxt ""
@@ -27520,14 +27503,6 @@ msgstr "Boolean"
 #: 03103600.xhp
 msgctxt ""
 "03103600.xhp\n"
-"par_id3153367\n"
-"help.text"
-msgid "11"
-msgstr "11"
-
-#: 03103600.xhp
-msgctxt ""
-"03103600.xhp\n"
 "par_id3148645\n"
 "help.text"
 msgid "Boolean variable"
@@ -27540,14 +27515,6 @@ msgctxt ""
 "help.text"
 msgid "Date"
 msgstr "Data"
-
-#: 03103600.xhp
-msgctxt ""
-"03103600.xhp\n"
-"par_id3153363\n"
-"help.text"
-msgid "7"
-msgstr ""
 
 #: 03103600.xhp
 msgctxt ""
@@ -27568,14 +27535,6 @@ msgstr "Double"
 #: 03103600.xhp
 msgctxt ""
 "03103600.xhp\n"
-"par_id3150486\n"
-"help.text"
-msgid "5"
-msgstr ""
-
-#: 03103600.xhp
-msgctxt ""
-"03103600.xhp\n"
 "par_id3148616\n"
 "help.text"
 msgid "Double floating point variable"
@@ -27588,14 +27547,6 @@ msgctxt ""
 "help.text"
 msgid "Integer"
 msgstr "Integer"
-
-#: 03103600.xhp
-msgctxt ""
-"03103600.xhp\n"
-"par_id3145647\n"
-"help.text"
-msgid "2"
-msgstr ""
 
 #: 03103600.xhp
 msgctxt ""
@@ -27616,14 +27567,6 @@ msgstr "Long"
 #: 03103600.xhp
 msgctxt ""
 "03103600.xhp\n"
-"par_id3154513\n"
-"help.text"
-msgid "3"
-msgstr ""
-
-#: 03103600.xhp
-msgctxt ""
-"03103600.xhp\n"
 "par_id3151318\n"
 "help.text"
 msgid "Long integer variable"
@@ -27636,14 +27579,6 @@ msgctxt ""
 "help.text"
 msgid "Object"
 msgstr "Object"
-
-#: 03103600.xhp
-msgctxt ""
-"03103600.xhp\n"
-"par_id3154482\n"
-"help.text"
-msgid "9"
-msgstr ""
 
 #: 03103600.xhp
 msgctxt ""
@@ -27664,14 +27599,6 @@ msgstr "Single"
 #: 03103600.xhp
 msgctxt ""
 "03103600.xhp\n"
-"par_id3149020\n"
-"help.text"
-msgid "4"
-msgstr ""
-
-#: 03103600.xhp
-msgctxt ""
-"03103600.xhp\n"
 "par_id3147341\n"
 "help.text"
 msgid "Single floating-point variable"
@@ -27684,14 +27611,6 @@ msgctxt ""
 "help.text"
 msgid "String"
 msgstr "String"
-
-#: 03103600.xhp
-msgctxt ""
-"03103600.xhp\n"
-"par_id3155960\n"
-"help.text"
-msgid "8"
-msgstr ""
 
 #: 03103600.xhp
 msgctxt ""
@@ -27712,14 +27631,6 @@ msgstr "Variant"
 #: 03103600.xhp
 msgctxt ""
 "03103600.xhp\n"
-"par_id3154021\n"
-"help.text"
-msgid "12"
-msgstr "12"
-
-#: 03103600.xhp
-msgctxt ""
-"03103600.xhp\n"
 "par_id3145789\n"
 "help.text"
 msgid "Variant variable (can contain all types specified by the definition)"
@@ -27736,14 +27647,6 @@ msgstr "Empty"
 #: 03103600.xhp
 msgctxt ""
 "03103600.xhp\n"
-"par_id3152584\n"
-"help.text"
-msgid "0"
-msgstr ""
-
-#: 03103600.xhp
-msgctxt ""
-"03103600.xhp\n"
 "par_id3151278\n"
 "help.text"
 msgid "Variable is not initialized"
@@ -27756,14 +27659,6 @@ msgctxt ""
 "help.text"
 msgid "Null"
 msgstr "Null"
-
-#: 03103600.xhp
-msgctxt ""
-"03103600.xhp\n"
-"par_id3166424\n"
-"help.text"
-msgid "1"
-msgstr ""
 
 #: 03103600.xhp
 msgctxt ""
@@ -27798,13 +27693,12 @@ msgid "Set Statement[Runtime]"
 msgstr "Istruzione Set [Runtime]"
 
 #: 03103700.xhp
-#, fuzzy
 msgctxt ""
 "03103700.xhp\n"
 "bm_id3154422\n"
 "help.text"
 msgid "<bookmark_value>Set statement</bookmark_value>  <bookmark_value>Nothing object</bookmark_value>"
-msgstr "<bookmark_value>Set;istruzione</bookmark_value><bookmark_value>Nothing; oggetto</bookmark_value>"
+msgstr "<bookmark_value>Set;istruzione</bookmark_value>  <bookmark_value>Nothing; oggetto</bookmark_value>"
 
 #: 03103700.xhp
 msgctxt ""
@@ -29178,7 +29072,6 @@ msgid "Comparison Operators [Runtime]"
 msgstr "Operatori di confronto [Runtime]"
 
 #: 03110100.xhp
-#, fuzzy
 msgctxt ""
 "03110100.xhp\n"
 "bm_id3150682\n"
@@ -30972,13 +30865,12 @@ msgid "Mid Function, Mid Statement [Runtime]"
 msgstr "Funzione Mid, Istruzione Mid [Runtime]"
 
 #: 03120306.xhp
-#, fuzzy
 msgctxt ""
 "03120306.xhp\n"
 "bm_id3143268\n"
 "help.text"
 msgid "<bookmark_value>Mid function</bookmark_value>  <bookmark_value>Mid statement</bookmark_value>"
-msgstr "<bookmark_value>Mid;funzione </bookmark_value><bookmark_value>Mid;istruzione</bookmark_value>"
+msgstr "<bookmark_value>Mid;funzione</bookmark_value>  <bookmark_value>Mid;istruzione</bookmark_value>"
 
 #: 03120306.xhp
 msgctxt ""
@@ -32744,26 +32636,10 @@ msgstr "Numero intero opzionale che specifica lo stile della finestra in cui il 
 #: 03130500.xhp
 msgctxt ""
 "03130500.xhp\n"
-"par_id3148663\n"
-"help.text"
-msgid "0"
-msgstr ""
-
-#: 03130500.xhp
-msgctxt ""
-"03130500.xhp\n"
 "par_id3153360\n"
 "help.text"
 msgid "The focus is on the hidden program window."
 msgstr "Il punto focale si trova nella finestra del programma nascosta."
-
-#: 03130500.xhp
-msgctxt ""
-"03130500.xhp\n"
-"par_id3154123\n"
-"help.text"
-msgid "1"
-msgstr ""
 
 #: 03130500.xhp
 msgctxt ""
@@ -32776,26 +32652,10 @@ msgstr "Il punto focale si trova nella finestra del programma a grandezza normal
 #: 03130500.xhp
 msgctxt ""
 "03130500.xhp\n"
-"par_id3156422\n"
-"help.text"
-msgid "2"
-msgstr ""
-
-#: 03130500.xhp
-msgctxt ""
-"03130500.xhp\n"
 "par_id3148451\n"
 "help.text"
 msgid "The focus is on the minimized program window."
 msgstr "Il punto focale si trova nella finestra del programma ridotta."
-
-#: 03130500.xhp
-msgctxt ""
-"03130500.xhp\n"
-"par_id3149561\n"
-"help.text"
-msgid "3"
-msgstr ""
 
 #: 03130500.xhp
 msgctxt ""
@@ -32808,14 +32668,6 @@ msgstr "Il punto focale si trova nella finestra del programma ingrandita."
 #: 03130500.xhp
 msgctxt ""
 "03130500.xhp\n"
-"par_id3149481\n"
-"help.text"
-msgid "4"
-msgstr ""
-
-#: 03130500.xhp
-msgctxt ""
-"03130500.xhp\n"
 "par_id3155854\n"
 "help.text"
 msgid "Standard size program window, without focus."
@@ -32824,26 +32676,10 @@ msgstr "Finestra del programma a grandezza standard, senza punto focale."
 #: 03130500.xhp
 msgctxt ""
 "03130500.xhp\n"
-"par_id3145271\n"
-"help.text"
-msgid "6"
-msgstr ""
-
-#: 03130500.xhp
-msgctxt ""
-"03130500.xhp\n"
 "par_id3152938\n"
 "help.text"
 msgid "Minimized program window, focus remains on the active window."
 msgstr "Finestra del programma ridotta, il punto focale rimane nella finestra attiva."
-
-#: 03130500.xhp
-msgctxt ""
-"03130500.xhp\n"
-"par_id3146119\n"
-"help.text"
-msgid "10"
-msgstr "10"
 
 #: 03130500.xhp
 msgctxt ""
@@ -33539,7 +33375,7 @@ msgctxt ""
 "par_idN1060F\n"
 "help.text"
 msgid "For a list of available services, go to: http://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star.html"
-msgstr ""
+msgstr "Per un elenco dei servizi disponibili, consultate: http://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star.html"
 
 #: 03131600.xhp
 msgctxt ""
@@ -34417,7 +34253,6 @@ msgid "ThisComponent Statement [Runtime]"
 msgstr "Istruzione ThisComponent [Runtime]"
 
 #: 03132200.xhp
-#, fuzzy
 msgctxt ""
 "03132200.xhp\n"
 "bm_id3155342\n"

@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2016-04-16 21:40+0200\n"
+"POT-Creation-Date: 2016-05-23 21:36+0200\n"
 "PO-Revision-Date: 2016-05-05 00:54+0000\n"
 "Last-Translator: Karl Morten Ramberg <karl.m.ramberg@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Accelerator-Marker: ~\n"
-"X-Generator: Pootle 2.7\n"
+"X-Generator: LibreOffice\n"
 "X-POOTLE-MTIME: 1462409657.000000\n"
 
 #: 00000002.xhp
@@ -2140,12 +2140,13 @@ msgid "Single variables can take positive or negative values ranging from 3.4028
 msgstr ""
 
 #: 01020100.xhp
+#, fuzzy
 msgctxt ""
 "01020100.xhp\n"
 "hd_id3155753\n"
 "help.text"
 msgid "Double Variables"
-msgstr ""
+msgstr "Bruk av Variabler"
 
 #: 01020100.xhp
 msgctxt ""
@@ -2790,13 +2791,14 @@ msgid "<link href=\"text/sbasic/shared/01020500.xhp\" name=\"Libraries, Modules 
 msgstr ""
 
 #: 01020500.xhp
+#, fuzzy
 msgctxt ""
 "01020500.xhp\n"
 "par_id3147427\n"
 "2\n"
 "help.text"
 msgid "The following describes the basic use of libraries, modules and dialogs in $[officename] Basic."
-msgstr ""
+msgstr "I dette avsnittet finner du grunnleggende informasjon om bruk av variabler i $[officename] Basic."
 
 #: 01020500.xhp
 msgctxt ""
@@ -7359,12 +7361,13 @@ msgid "<emph>Type</emph>: Any integer expression that specifies the dialog type 
 msgstr ""
 
 #: 03010102.xhp
+#, fuzzy
 msgctxt ""
 "03010102.xhp\n"
 "par_id3154319\n"
 "help.text"
 msgid "<emph>Values</emph>"
-msgstr ""
+msgstr "<emph>Fargeverdi</emph>"
 
 #: 03010102.xhp
 msgctxt ""
@@ -18831,7 +18834,7 @@ msgctxt ""
 "03080301.xhp\n"
 "hd_id3150616\n"
 "help.text"
-msgid "<link href=\"text/sbasic/shared/03080301.xhp\" name=\"Randomize Statement [Runtime]\">Randomize Statement [Runtime]</link>"
+msgid "<variable id=\"heading_randomize\"><link href=\"text/sbasic/shared/03080301.xhp\" name=\"Randomize Statement [Runtime]\">Randomize Statement [Runtime]</link></variable>"
 msgstr ""
 
 #: 03080301.xhp
@@ -18839,7 +18842,7 @@ msgctxt ""
 "03080301.xhp\n"
 "par_id3145090\n"
 "help.text"
-msgid "Initializes the random-number generator."
+msgid "Initializes the random-number generator used by the <emph>Rnd</emph> function."
 msgstr ""
 
 #: 03080301.xhp
@@ -18873,7 +18876,23 @@ msgctxt ""
 "03080301.xhp\n"
 "par_id3149670\n"
 "help.text"
-msgid "<emph>Number:</emph> Any integer value that initializes the random-number generator."
+msgid "<emph>Number:</emph> Any integer value. Used as seed to initialize the random-number generator. Equal seeds result in equal random-number sequences by the <emph>Rnd</emph> function. If the parameter is omitted, the <emph>Randomize</emph> statement will be ignored."
+msgstr ""
+
+#: 03080301.xhp
+msgctxt ""
+"03080301.xhp\n"
+"par_id110520161656428611\n"
+"help.text"
+msgid "Unless a predictable sequence of numbers is desired, there is no need to use the <emph>Randomize</emph> statement, as the random-number generator will be initialized automatically at first use – it will be seeded using a system-provided random-number generator that produces uniformly-distributed, non-deterministic random numbers. If no such generator is available on the system, the system time will be used as seed."
+msgstr ""
+
+#: 03080301.xhp
+msgctxt ""
+"03080301.xhp\n"
+"par_id12052016194258344\n"
+"help.text"
+msgid "The <emph>Randomize</emph> statement affects BASIC's <emph>Rnd</emph> function only. Other random-number generators (for example the Calc's RAND() function, etc.) are not affected by it."
 msgstr ""
 
 #: 03080301.xhp
@@ -18889,7 +18908,7 @@ msgctxt ""
 "03080301.xhp\n"
 "par_id3147288\n"
 "help.text"
-msgid "iVar = Int((10 * Rnd) ) ' Range from 0 To 9"
+msgid "iVar = Int(10 * Rnd) ' Range from 0 to 9"
 msgstr ""
 
 #: 03080301.xhp
@@ -18921,7 +18940,7 @@ msgctxt ""
 "03080302.xhp\n"
 "hd_id3148685\n"
 "help.text"
-msgid "<link href=\"text/sbasic/shared/03080302.xhp\" name=\"Rnd Function [Runtime]\">Rnd Function [Runtime]</link>"
+msgid "<variable id=\"heading_rnd\"><link href=\"text/sbasic/shared/03080302.xhp\" name=\"Rnd Function [Runtime]\">Rnd Function [Runtime]</link></variable>"
 msgstr ""
 
 #: 03080302.xhp
@@ -18980,15 +18999,7 @@ msgctxt ""
 "03080302.xhp\n"
 "par_id3125864\n"
 "help.text"
-msgid "<emph>Expression:</emph> Any numeric expression."
-msgstr ""
-
-#: 03080302.xhp
-msgctxt ""
-"03080302.xhp\n"
-"par_id3155306\n"
-"help.text"
-msgid "<emph>Omitted:</emph> Returns the next random number in the sequence."
+msgid "<emph>Expression:</emph> Has no effect, is ignored if provided."
 msgstr ""
 
 #: 03080302.xhp
@@ -18996,7 +19007,7 @@ msgctxt ""
 "03080302.xhp\n"
 "par_id3147318\n"
 "help.text"
-msgid "The <emph>Rnd</emph> function only returns values ranging from 0 to 1. To generate random integers in a given range, use the formula in the following example:"
+msgid "The <emph>Rnd</emph> function returns decimal fractions ranging from 0 (included) to 1 (excluded) according to a uniform distribution. It uses the Mersenne Twister 19937 random-number generator. To generate random integers in a given range, use a formula like in the example below. A <emph>Randomize</emph> statement with a defined seed value can be used beforehand, if a predictable sequence of numbers is desired."
 msgstr ""
 
 #: 03080302.xhp
@@ -19709,14 +19720,6 @@ msgctxt ""
 "par_id3155306\n"
 "help.text"
 msgid "Sgn returns -1."
-msgstr ""
-
-#: 03080701.xhp
-msgctxt ""
-"03080701.xhp\n"
-"par_id3145271\n"
-"help.text"
-msgid "0"
 msgstr ""
 
 #: 03080701.xhp
@@ -21602,13 +21605,14 @@ msgid "Label1"
 msgstr "Merkelapp"
 
 #: 03090302.xhp
+#, fuzzy
 msgctxt ""
 "03090302.xhp\n"
 "par_id3145786\n"
 "9\n"
 "help.text"
 msgid "<emph>Label2:</emph>"
-msgstr ""
+msgstr "<emph>Fargeverdi</emph>"
 
 #: 03090302.xhp
 msgctxt ""
@@ -21629,13 +21633,14 @@ msgid "Exit Sub"
 msgstr ""
 
 #: 03090302.xhp
+#, fuzzy
 msgctxt ""
 "03090302.xhp\n"
 "par_id3150010\n"
 "12\n"
 "help.text"
 msgid "<emph>Label1:</emph>"
-msgstr ""
+msgstr "<emph>Fargeverdi</emph>"
 
 #: 03090302.xhp
 msgctxt ""
@@ -27912,14 +27917,6 @@ msgstr ""
 #: 03103600.xhp
 msgctxt ""
 "03103600.xhp\n"
-"par_id3153367\n"
-"help.text"
-msgid "11"
-msgstr "11"
-
-#: 03103600.xhp
-msgctxt ""
-"03103600.xhp\n"
 "par_id3148645\n"
 "help.text"
 msgid "Boolean variable"
@@ -27932,14 +27929,6 @@ msgctxt ""
 "help.text"
 msgid "Date"
 msgstr "Dato"
-
-#: 03103600.xhp
-msgctxt ""
-"03103600.xhp\n"
-"par_id3153363\n"
-"help.text"
-msgid "7"
-msgstr ""
 
 #: 03103600.xhp
 msgctxt ""
@@ -27960,14 +27949,6 @@ msgstr "Dobbel"
 #: 03103600.xhp
 msgctxt ""
 "03103600.xhp\n"
-"par_id3150486\n"
-"help.text"
-msgid "5"
-msgstr ""
-
-#: 03103600.xhp
-msgctxt ""
-"03103600.xhp\n"
 "par_id3148616\n"
 "help.text"
 msgid "Double floating point variable"
@@ -27984,14 +27965,6 @@ msgstr "Heltall"
 #: 03103600.xhp
 msgctxt ""
 "03103600.xhp\n"
-"par_id3145647\n"
-"help.text"
-msgid "2"
-msgstr ""
-
-#: 03103600.xhp
-msgctxt ""
-"03103600.xhp\n"
 "par_id3154490\n"
 "help.text"
 msgid "Integer variable"
@@ -28003,14 +27976,6 @@ msgctxt ""
 "par_id3149960\n"
 "help.text"
 msgid "Long"
-msgstr ""
-
-#: 03103600.xhp
-msgctxt ""
-"03103600.xhp\n"
-"par_id3154513\n"
-"help.text"
-msgid "3"
 msgstr ""
 
 #: 03103600.xhp
@@ -28032,14 +27997,6 @@ msgstr "Objekt"
 #: 03103600.xhp
 msgctxt ""
 "03103600.xhp\n"
-"par_id3154482\n"
-"help.text"
-msgid "9"
-msgstr ""
-
-#: 03103600.xhp
-msgctxt ""
-"03103600.xhp\n"
 "par_id3150323\n"
 "help.text"
 msgid "Object variable"
@@ -28052,14 +28009,6 @@ msgctxt ""
 "help.text"
 msgid "Single"
 msgstr "Enkel"
-
-#: 03103600.xhp
-msgctxt ""
-"03103600.xhp\n"
-"par_id3149020\n"
-"help.text"
-msgid "4"
-msgstr ""
 
 #: 03103600.xhp
 msgctxt ""
@@ -28078,20 +28027,13 @@ msgid "String"
 msgstr "Streng"
 
 #: 03103600.xhp
-msgctxt ""
-"03103600.xhp\n"
-"par_id3155960\n"
-"help.text"
-msgid "8"
-msgstr ""
-
-#: 03103600.xhp
+#, fuzzy
 msgctxt ""
 "03103600.xhp\n"
 "par_id3146313\n"
 "help.text"
 msgid "String variable"
-msgstr ""
+msgstr "Bruk av Variabler"
 
 #: 03103600.xhp
 msgctxt ""
@@ -28100,14 +28042,6 @@ msgctxt ""
 "help.text"
 msgid "Variant"
 msgstr ""
-
-#: 03103600.xhp
-msgctxt ""
-"03103600.xhp\n"
-"par_id3154021\n"
-"help.text"
-msgid "12"
-msgstr "12"
 
 #: 03103600.xhp
 msgctxt ""
@@ -28128,14 +28062,6 @@ msgstr ""
 #: 03103600.xhp
 msgctxt ""
 "03103600.xhp\n"
-"par_id3152584\n"
-"help.text"
-msgid "0"
-msgstr ""
-
-#: 03103600.xhp
-msgctxt ""
-"03103600.xhp\n"
 "par_id3151278\n"
 "help.text"
 msgid "Variable is not initialized"
@@ -28148,14 +28074,6 @@ msgctxt ""
 "help.text"
 msgid "Null"
 msgstr "Null"
-
-#: 03103600.xhp
-msgctxt ""
-"03103600.xhp\n"
-"par_id3166424\n"
-"help.text"
-msgid "1"
-msgstr ""
 
 #: 03103600.xhp
 msgctxt ""
@@ -33234,25 +33152,9 @@ msgstr ""
 #: 03130500.xhp
 msgctxt ""
 "03130500.xhp\n"
-"par_id3148663\n"
-"help.text"
-msgid "0"
-msgstr ""
-
-#: 03130500.xhp
-msgctxt ""
-"03130500.xhp\n"
 "par_id3153360\n"
 "help.text"
 msgid "The focus is on the hidden program window."
-msgstr ""
-
-#: 03130500.xhp
-msgctxt ""
-"03130500.xhp\n"
-"par_id3154123\n"
-"help.text"
-msgid "1"
 msgstr ""
 
 #: 03130500.xhp
@@ -33266,25 +33168,9 @@ msgstr ""
 #: 03130500.xhp
 msgctxt ""
 "03130500.xhp\n"
-"par_id3156422\n"
-"help.text"
-msgid "2"
-msgstr ""
-
-#: 03130500.xhp
-msgctxt ""
-"03130500.xhp\n"
 "par_id3148451\n"
 "help.text"
 msgid "The focus is on the minimized program window."
-msgstr ""
-
-#: 03130500.xhp
-msgctxt ""
-"03130500.xhp\n"
-"par_id3149561\n"
-"help.text"
-msgid "3"
 msgstr ""
 
 #: 03130500.xhp
@@ -33298,25 +33184,9 @@ msgstr ""
 #: 03130500.xhp
 msgctxt ""
 "03130500.xhp\n"
-"par_id3149481\n"
-"help.text"
-msgid "4"
-msgstr ""
-
-#: 03130500.xhp
-msgctxt ""
-"03130500.xhp\n"
 "par_id3155854\n"
 "help.text"
 msgid "Standard size program window, without focus."
-msgstr ""
-
-#: 03130500.xhp
-msgctxt ""
-"03130500.xhp\n"
-"par_id3145271\n"
-"help.text"
-msgid "6"
 msgstr ""
 
 #: 03130500.xhp
@@ -33326,14 +33196,6 @@ msgctxt ""
 "help.text"
 msgid "Minimized program window, focus remains on the active window."
 msgstr ""
-
-#: 03130500.xhp
-msgctxt ""
-"03130500.xhp\n"
-"par_id3146119\n"
-"help.text"
-msgid "10"
-msgstr "10"
 
 #: 03130500.xhp
 msgctxt ""

@@ -3,9 +3,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2016-04-16 21:40+0200\n"
-"PO-Revision-Date: 2016-05-01 22:32+0000\n"
-"Last-Translator: Jørgen Madsen <jfma@mailme.dk>\n"
+"POT-Creation-Date: 2016-05-23 21:36+0200\n"
+"PO-Revision-Date: 2016-05-24 18:10+0000\n"
+"Last-Translator: Leif Lodahl <leiflodahl@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: da\n"
 "MIME-Version: 1.0\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Accelerator-Marker: ~\n"
 "X-Generator: Pootle 2.7\n"
-"X-POOTLE-MTIME: 1462141958.000000\n"
+"X-POOTLE-MTIME: 1464113458.000000\n"
 
 #: 00000002.xhp
 msgctxt ""
@@ -16024,7 +16024,7 @@ msgctxt ""
 "par_id3145173\n"
 "help.text"
 msgid "On {[Local] Error GoTo Labelname | GoTo 0 | Resume Next}"
-msgstr "On {Error GoTo Labelname | GoTo 0 | Resume Next}"
+msgstr "On {[Local] Error GoTo Labelname | GoTo 0 | Resume Next}"
 
 #: 03050500.xhp
 msgctxt ""
@@ -18589,16 +18589,16 @@ msgctxt ""
 "03080301.xhp\n"
 "hd_id3150616\n"
 "help.text"
-msgid "<link href=\"text/sbasic/shared/03080301.xhp\" name=\"Randomize Statement [Runtime]\">Randomize Statement [Runtime]</link>"
-msgstr "<link href=\"text/sbasic/shared/03080301.xhp\" name=\"Randomize-sætning [Runtime]\">Randomize-sætning [Runtime]</link>"
+msgid "<variable id=\"heading_randomize\"><link href=\"text/sbasic/shared/03080301.xhp\" name=\"Randomize Statement [Runtime]\">Randomize Statement [Runtime]</link></variable>"
+msgstr "<variable id=\"heading_randomize\"><link href=\"text/sbasic/shared/03080301.xhp\" name=\"Randomize Statement [Runtime]\">Randomize-sætning [kørselstid]</link></variable>"
 
 #: 03080301.xhp
 msgctxt ""
 "03080301.xhp\n"
 "par_id3145090\n"
 "help.text"
-msgid "Initializes the random-number generator."
-msgstr "Initialiserer tilfældighedsgeneratoren."
+msgid "Initializes the random-number generator used by the <emph>Rnd</emph> function."
+msgstr "Klargør tal-tilfældighedsgeneratoren, der bruges af funktionen <emph>Rnd</emph>."
 
 #: 03080301.xhp
 msgctxt ""
@@ -18629,8 +18629,24 @@ msgctxt ""
 "03080301.xhp\n"
 "par_id3149670\n"
 "help.text"
-msgid "<emph>Number:</emph> Any integer value that initializes the random-number generator."
-msgstr "<emph>Tal:</emph> Enhver heltalsværdi som initialiserer Any integer tilfældighedsgeneratoren."
+msgid "<emph>Number:</emph> Any integer value. Used as seed to initialize the random-number generator. Equal seeds result in equal random-number sequences by the <emph>Rnd</emph> function. If the parameter is omitted, the <emph>Randomize</emph> statement will be ignored."
+msgstr "<emph>Tal:</emph> Ethver heltalsværdi. Brugt som seedning til at klargøre tal-tilfældighedsgeneratoren. Ens seedninger medfører ens sekvenser af tilfældige tal fra funktionen <emph>Rnd</emph>. Hvis parameteren udelades, bliver <emph>Randomize</emph>.sætningen ignoreret."
+
+#: 03080301.xhp
+msgctxt ""
+"03080301.xhp\n"
+"par_id110520161656428611\n"
+"help.text"
+msgid "Unless a predictable sequence of numbers is desired, there is no need to use the <emph>Randomize</emph> statement, as the random-number generator will be initialized automatically at first use – it will be seeded using a system-provided random-number generator that produces uniformly-distributed, non-deterministic random numbers. If no such generator is available on the system, the system time will be used as seed."
+msgstr "Medmindre der ønskedes en forudsigelig række af tal, er der ikke brug for at bruge <emph>Randomize</emph>.sætningen, eftersom tilfældigheds talgeneratoren bliver automatisk klargjort ved første anvendelse. En indbygget tilfældighedsgenerator, som fremstiller ensartet fordelte, ikke.deterministiske, tilfældige tal. Hvis der ikke er en sådan generator tilgængelig på systemet, vil systemets tid blive brugt til seedning.                    "
+
+#: 03080301.xhp
+msgctxt ""
+"03080301.xhp\n"
+"par_id12052016194258344\n"
+"help.text"
+msgid "The <emph>Randomize</emph> statement affects BASIC's <emph>Rnd</emph> function only. Other random-number generators (for example the Calc's RAND() function, etc.) are not affected by it."
+msgstr "<emph>Randomize</emph>-sætningen berører udelukkende BASIC's funktion <emph>Rnd</emph>- Andre tal-tilfældighedsgenerator (for eksempel Calcs RAND()-funktion, osv.) er ikke påvirket af den."
 
 #: 03080301.xhp
 msgctxt ""
@@ -18645,7 +18661,7 @@ msgctxt ""
 "03080301.xhp\n"
 "par_id3147288\n"
 "help.text"
-msgid "iVar = Int((10 * Rnd) ) ' Range from 0 To 9"
+msgid "iVar = Int(10 * Rnd) ' Range from 0 to 9"
 msgstr "iVar = Int((10 * Rnd) ) REM Område fra 0 til 9"
 
 #: 03080301.xhp
@@ -18677,8 +18693,8 @@ msgctxt ""
 "03080302.xhp\n"
 "hd_id3148685\n"
 "help.text"
-msgid "<link href=\"text/sbasic/shared/03080302.xhp\" name=\"Rnd Function [Runtime]\">Rnd Function [Runtime]</link>"
-msgstr "<link href=\"text/sbasic/shared/03080302.xhp\" name=\"Rnd-funktion [Runtime]\">Rnd-funktion [Runtime]</link>"
+msgid "<variable id=\"heading_rnd\"><link href=\"text/sbasic/shared/03080302.xhp\" name=\"Rnd Function [Runtime]\">Rnd Function [Runtime]</link></variable>"
+msgstr "<variable id=\"heading_rnd\"><link href=\"text/sbasic/shared/03080302.xhp\" name=\"Rnd Function [Runtime]\">Rnd Funktion [Kørselstid]</link></variable>"
 
 #: 03080302.xhp
 msgctxt ""
@@ -18733,24 +18749,16 @@ msgctxt ""
 "03080302.xhp\n"
 "par_id3125864\n"
 "help.text"
-msgid "<emph>Expression:</emph> Any numeric expression."
-msgstr "<emph>Udtryk:</emph> Ethvert numerisk udtryk."
-
-#: 03080302.xhp
-msgctxt ""
-"03080302.xhp\n"
-"par_id3155306\n"
-"help.text"
-msgid "<emph>Omitted:</emph> Returns the next random number in the sequence."
-msgstr "<emph>Undladt:</emph> Returnerer det næste tilfældige tal i sekvensen."
+msgid "<emph>Expression:</emph> Has no effect, is ignored if provided."
+msgstr "<emph>Udtryk:</emph> Har igen virkning, ignoreres, hvis anført."
 
 #: 03080302.xhp
 msgctxt ""
 "03080302.xhp\n"
 "par_id3147318\n"
 "help.text"
-msgid "The <emph>Rnd</emph> function only returns values ranging from 0 to 1. To generate random integers in a given range, use the formula in the following example:"
-msgstr "Funktionen <emph>Rnd</emph> returnerer kun værdier fra 0 til 1. For at generere tilfældige heltal i et givent område, brug formlen i det følgende eksempel:"
+msgid "The <emph>Rnd</emph> function returns decimal fractions ranging from 0 (included) to 1 (excluded) according to a uniform distribution. It uses the Mersenne Twister 19937 random-number generator. To generate random integers in a given range, use a formula like in the example below. A <emph>Randomize</emph> statement with a defined seed value can be used beforehand, if a predictable sequence of numbers is desired."
+msgstr "<emph>Rnd</emph>-funktionen returnerer decimalbrøker mellem 0 (inklusive) til 1 (eksklusive) i en ensartet fordeling. Den bruger tilfældighedsgeneratoren Mersenne Twister 19937. For et generere tilfældige heltal bruger du en formel som i eksemplet nedenfor. En <emph>Randomize</emph>-sætning med en defineret seedningsværdi kan bruges på forhånd, hvis der ønskes en forudsigelig talrække."
 
 #: 03080302.xhp
 msgctxt ""
@@ -19447,14 +19455,6 @@ msgctxt ""
 "help.text"
 msgid "Sgn returns -1."
 msgstr "Sgn returnerer -1."
-
-#: 03080701.xhp
-msgctxt ""
-"03080701.xhp\n"
-"par_id3145271\n"
-"help.text"
-msgid "0"
-msgstr "0"
 
 #: 03080701.xhp
 msgctxt ""
@@ -26049,7 +26049,7 @@ msgctxt ""
 "hd_id3154346\n"
 "help.text"
 msgid "<link href=\"text/sbasic/shared/03102200.xhp\" name=\"IsArray Function [Runtime]\">IsArray Function [Runtime]</link>"
-msgstr "<link href=\"text/sbasic/shared/03102200.xhp\" name=\"IsArray-funktion [kørselstid]\">IsArray-funktion [kørselstid]</link>"
+msgstr "<link href=\"text/sbasic/shared/03102200.xhp\" name=\"IsArray-funktion [Runtime]\">IsArray-funktion [Runtime]</link>"
 
 #: 03102200.xhp
 msgctxt ""
@@ -26137,7 +26137,7 @@ msgctxt ""
 "hd_id3145090\n"
 "help.text"
 msgid "<link href=\"text/sbasic/shared/03102300.xhp\" name=\"IsDate Function [Runtime]\">IsDate Function [Runtime]</link>"
-msgstr "<link href=\"text/sbasic/shared/03102300.xhp\" name=\"IsDate-funktion [kørselstid]\">IsDate-funktion [kørselstid]</link>"
+msgstr "<link href=\"text/sbasic/shared/03102300.xhp\" name=\"IsDate-funktion [Runtime]\">IsDate-funktion [Runtime]</link>"
 
 #: 03102300.xhp
 msgctxt ""
@@ -26241,7 +26241,7 @@ msgctxt ""
 "hd_id3153394\n"
 "help.text"
 msgid "<link href=\"text/sbasic/shared/03102400.xhp\" name=\"IsEmpty Function [Runtime]\">IsEmpty Function [Runtime]</link>"
-msgstr "<link href=\"text/sbasic/shared/03102400.xhp\" name=\"IsEmpty-funktion [kørselstid]\">IsEmpty-funktion [kørselstid]</link>"
+msgstr "<link href=\"text/sbasic/shared/03102400.xhp\" name=\"IsEmpty-funktion [Runtime]\">IsEmpty-funktion [Runtime]</link>"
 
 #: 03102400.xhp
 msgctxt ""
@@ -26404,13 +26404,12 @@ msgid "IsNull Function [Runtime]"
 msgstr "IsNull-funktion [kørselstid]"
 
 #: 03102600.xhp
-#, fuzzy
 msgctxt ""
 "03102600.xhp\n"
 "bm_id3155555\n"
 "help.text"
 msgid "<bookmark_value>IsNull function</bookmark_value>  <bookmark_value>Null value</bookmark_value>"
-msgstr "<bookmark_value>IsNull-funktion</bookmark_value><bookmark_value>Nulværdi</bookmark_value>"
+msgstr "<bookmark_value>IsNull-funktion</bookmark_value> <bookmark_value>Nulværdi</bookmark_value>"
 
 #: 03102600.xhp
 msgctxt ""
@@ -26418,7 +26417,7 @@ msgctxt ""
 "hd_id3155555\n"
 "help.text"
 msgid "<link href=\"text/sbasic/shared/03102600.xhp\" name=\"IsNull Function [Runtime]\">IsNull Function [Runtime]</link>"
-msgstr "<link href=\"text/sbasic/shared/03102600.xhp\" name=\"IsNull-funktion [kørselstid]\">IsNull-funktion [kørselstid]</link>"
+msgstr "<link href=\"text/sbasic/shared/03102600.xhp\" name=\"IsNull-funktion [Runtime]\">IsNull-funktion [Runtime]</link>"
 
 #: 03102600.xhp
 msgctxt ""
@@ -26514,7 +26513,7 @@ msgctxt ""
 "hd_id3145136\n"
 "help.text"
 msgid "<link href=\"text/sbasic/shared/03102700.xhp\" name=\"IsNumeric Function [Runtime]\">IsNumeric Function [Runtime]</link>"
-msgstr "<link href=\"text/sbasic/shared/03102700.xhp\" name=\"IsNumeric-funktion [kørselstid]\">IsNumeric-funktion [kørselstid]</link>"
+msgstr "<link href=\"text/sbasic/shared/03102700.xhp\" name=\"IsNumeric-funktion [Runtime]\">IsNumeric-funktion [Runtime]</link>"
 
 #: 03102700.xhp
 msgctxt ""
@@ -26706,7 +26705,7 @@ msgctxt ""
 "hd_id3156027\n"
 "help.text"
 msgid "<link href=\"text/sbasic/shared/03102900.xhp\" name=\"LBound Function [Runtime]\">LBound Function [Runtime]</link>"
-msgstr "<link href=\"text/sbasic/shared/03102900.xhp\" name=\"LBound-funktion [kørselstid]\">LBound-funktion [kørselstid]</link>"
+msgstr "<link href=\"text/sbasic/shared/03102900.xhp\" name=\"LBound-funktion [Runtime]\">LBound-funktion [Runtime]</link>"
 
 #: 03102900.xhp
 msgctxt ""
@@ -26834,7 +26833,7 @@ msgctxt ""
 "hd_id3148538\n"
 "help.text"
 msgid "<link href=\"text/sbasic/shared/03103000.xhp\" name=\"UBound Function [Runtime]\">UBound Function [Runtime]</link>"
-msgstr "<link href=\"text/sbasic/shared/03103000.xhp\" name=\"UBound-funktion [kørselstid]\">UBound-funktion [kørselstid]</link>"
+msgstr "<link href=\"text/sbasic/shared/03103000.xhp\" name=\"UBound-funktion [Runtime]\">UBound-funktion [Runtime]</link>"
 
 #: 03103000.xhp
 msgctxt ""
@@ -27397,13 +27396,12 @@ msgid "TypeName Function; VarType Function[Runtime]"
 msgstr "TypeName-funktion; VarType-funktion [kørselstid]"
 
 #: 03103600.xhp
-#, fuzzy
 msgctxt ""
 "03103600.xhp\n"
 "bm_id3143267\n"
 "help.text"
 msgid "<bookmark_value>TypeName function</bookmark_value>  <bookmark_value>VarType function</bookmark_value>"
-msgstr "<bookmark_value>TypeName-funktion</bookmark_value><bookmark_value>VarType-funktion</bookmark_value>"
+msgstr "<bookmark_value>TypeName-funktion</bookmark_value> <bookmark_value>VarType-funktion</bookmark_value>"
 
 #: 03103600.xhp
 msgctxt ""
@@ -27411,7 +27409,7 @@ msgctxt ""
 "hd_id3143267\n"
 "help.text"
 msgid "<link href=\"text/sbasic/shared/03103600.xhp\" name=\"TypeName Function; VarType Function[Runtime]\">TypeName Function; VarType Function[Runtime]</link>"
-msgstr "<link href=\"text/sbasic/shared/03103600.xhp\" name=\"TypeName-funktion; VarType-funktion [kørselstid]\">TypeName-funktion; VarType-funktion [kørselstid]</link>"
+msgstr "<link href=\"text/sbasic/shared/03103600.xhp\" name=\"TypeName-funktion; VarType-funktion [Runtime]\">TypeName-funktion; VarType-funktion [kørselstid]</link>"
 
 #: 03103600.xhp
 msgctxt ""
@@ -27504,14 +27502,6 @@ msgstr "Boolean"
 #: 03103600.xhp
 msgctxt ""
 "03103600.xhp\n"
-"par_id3153367\n"
-"help.text"
-msgid "11"
-msgstr "11"
-
-#: 03103600.xhp
-msgctxt ""
-"03103600.xhp\n"
 "par_id3148645\n"
 "help.text"
 msgid "Boolean variable"
@@ -27524,14 +27514,6 @@ msgctxt ""
 "help.text"
 msgid "Date"
 msgstr "Dato"
-
-#: 03103600.xhp
-msgctxt ""
-"03103600.xhp\n"
-"par_id3153363\n"
-"help.text"
-msgid "7"
-msgstr ""
 
 #: 03103600.xhp
 msgctxt ""
@@ -27552,14 +27534,6 @@ msgstr "Double"
 #: 03103600.xhp
 msgctxt ""
 "03103600.xhp\n"
-"par_id3150486\n"
-"help.text"
-msgid "5"
-msgstr ""
-
-#: 03103600.xhp
-msgctxt ""
-"03103600.xhp\n"
 "par_id3148616\n"
 "help.text"
 msgid "Double floating point variable"
@@ -27572,14 +27546,6 @@ msgctxt ""
 "help.text"
 msgid "Integer"
 msgstr "Integer"
-
-#: 03103600.xhp
-msgctxt ""
-"03103600.xhp\n"
-"par_id3145647\n"
-"help.text"
-msgid "2"
-msgstr ""
 
 #: 03103600.xhp
 msgctxt ""
@@ -27600,14 +27566,6 @@ msgstr "Long"
 #: 03103600.xhp
 msgctxt ""
 "03103600.xhp\n"
-"par_id3154513\n"
-"help.text"
-msgid "3"
-msgstr ""
-
-#: 03103600.xhp
-msgctxt ""
-"03103600.xhp\n"
 "par_id3151318\n"
 "help.text"
 msgid "Long integer variable"
@@ -27620,14 +27578,6 @@ msgctxt ""
 "help.text"
 msgid "Object"
 msgstr "Object"
-
-#: 03103600.xhp
-msgctxt ""
-"03103600.xhp\n"
-"par_id3154482\n"
-"help.text"
-msgid "9"
-msgstr ""
 
 #: 03103600.xhp
 msgctxt ""
@@ -27648,14 +27598,6 @@ msgstr "Single"
 #: 03103600.xhp
 msgctxt ""
 "03103600.xhp\n"
-"par_id3149020\n"
-"help.text"
-msgid "4"
-msgstr ""
-
-#: 03103600.xhp
-msgctxt ""
-"03103600.xhp\n"
 "par_id3147341\n"
 "help.text"
 msgid "Single floating-point variable"
@@ -27668,14 +27610,6 @@ msgctxt ""
 "help.text"
 msgid "String"
 msgstr "String"
-
-#: 03103600.xhp
-msgctxt ""
-"03103600.xhp\n"
-"par_id3155960\n"
-"help.text"
-msgid "8"
-msgstr ""
 
 #: 03103600.xhp
 msgctxt ""
@@ -27696,14 +27630,6 @@ msgstr "Variant"
 #: 03103600.xhp
 msgctxt ""
 "03103600.xhp\n"
-"par_id3154021\n"
-"help.text"
-msgid "12"
-msgstr "12"
-
-#: 03103600.xhp
-msgctxt ""
-"03103600.xhp\n"
 "par_id3145789\n"
 "help.text"
 msgid "Variant variable (can contain all types specified by the definition)"
@@ -27720,14 +27646,6 @@ msgstr "Empty"
 #: 03103600.xhp
 msgctxt ""
 "03103600.xhp\n"
-"par_id3152584\n"
-"help.text"
-msgid "0"
-msgstr ""
-
-#: 03103600.xhp
-msgctxt ""
-"03103600.xhp\n"
 "par_id3151278\n"
 "help.text"
 msgid "Variable is not initialized"
@@ -27740,14 +27658,6 @@ msgctxt ""
 "help.text"
 msgid "Null"
 msgstr "Null"
-
-#: 03103600.xhp
-msgctxt ""
-"03103600.xhp\n"
-"par_id3166424\n"
-"help.text"
-msgid "1"
-msgstr ""
 
 #: 03103600.xhp
 msgctxt ""
@@ -27782,13 +27692,12 @@ msgid "Set Statement[Runtime]"
 msgstr "Set-sætning [kørselstid]"
 
 #: 03103700.xhp
-#, fuzzy
 msgctxt ""
 "03103700.xhp\n"
 "bm_id3154422\n"
 "help.text"
 msgid "<bookmark_value>Set statement</bookmark_value>  <bookmark_value>Nothing object</bookmark_value>"
-msgstr "<bookmark_value>Set-sætning</bookmark_value><bookmark_value>Nothing-objekt</bookmark_value>"
+msgstr "<bookmark_value>Set-sætning</bookmark_value>   <bookmark_value>Nothing-objekt</bookmark_value>"
 
 #: 03103700.xhp
 msgctxt ""
@@ -28806,7 +28715,7 @@ msgctxt ""
 "hd_id3146117\n"
 "help.text"
 msgid "<link href=\"text/sbasic/shared/03104500.xhp\" name=\"IsUnoStruct Function [Runtime]\">IsUnoStruct Function [Runtime]</link>"
-msgstr "<link href=\"text/sbasic/shared/03104500.xhp\" name=\"IsUnoStruct-funktion [kørselstid]\">IsUnoStruct-funktion [kørselstid]</link>"
+msgstr "<link href=\"text/sbasic/shared/03104500.xhp\" name=\"IsUnoStruct-funktion [Runtime]\">IsUnoStruct-funktion [Runtime]</link>"
 
 #: 03104500.xhp
 msgctxt ""
@@ -29162,13 +29071,12 @@ msgid "Comparison Operators [Runtime]"
 msgstr "Sammenligningsoperatorer [kørselstid]"
 
 #: 03110100.xhp
-#, fuzzy
 msgctxt ""
 "03110100.xhp\n"
 "bm_id3150682\n"
 "help.text"
 msgid "<bookmark_value>comparison operators;%PRODUCTNAME Basic</bookmark_value>  <bookmark_value>operators;comparisons</bookmark_value>"
-msgstr "<bookmark_value>sammenligne operatorer;%PRODUCTNAME Basic</bookmark_value><bookmark_value>operatorer;sammenligninger</bookmark_value>"
+msgstr "<bookmark_value>sammenligningsoperatorer;%PRODUCTNAME Basic</bookmark_value>   <bookmark_value>operatorer;sammenligninger</bookmark_value>"
 
 #: 03110100.xhp
 msgctxt ""
@@ -29176,7 +29084,7 @@ msgctxt ""
 "hd_id3150682\n"
 "help.text"
 msgid "<link href=\"text/sbasic/shared/03110100.xhp\" name=\"Comparison Operators [Runtime]\">Comparison Operators [Runtime]</link>"
-msgstr "<link href=\"text/sbasic/shared/03110100.xhp\" name=\"Sammenligningsoperatorer [kørselstid]\">Sammenligningsoperatorer [kørselstid]</link>"
+msgstr "<link href=\"text/sbasic/shared/03110100.xhp\" name=\"Comparison Operators [Runtime]\">Sammenligningsoperatorer [Runtime]</link>"
 
 #: 03110100.xhp
 msgctxt ""
@@ -29381,7 +29289,7 @@ msgctxt ""
 "hd_id3150499\n"
 "help.text"
 msgid "<link href=\"text/sbasic/shared/03120101.xhp\" name=\"Asc Function [Runtime]\">Asc Function [Runtime]</link>"
-msgstr "<link href=\"text/sbasic/shared/03120101.xhp\" name=\"Asc-funktion [kørselstid]\">Asc-funktion [kørselstid]</link>"
+msgstr "<link href=\"text/sbasic/shared/03120101.xhp\" name=\"Asc-funktion [Runtime]\">Asc-funktion [Runtime]</link>"
 
 #: 03120101.xhp
 msgctxt ""
@@ -29509,7 +29417,7 @@ msgctxt ""
 "hd_id3149205\n"
 "help.text"
 msgid "<link href=\"text/sbasic/shared/03120102.xhp\" name=\"Chr Function [Runtime]\">Chr Function [Runtime]</link>"
-msgstr "<link href=\"text/sbasic/shared/03120102.xhp\" name=\"Chr-funktion [kørselstid]\">Chr-funktion [kørselstid]</link>"
+msgstr "<link href=\"text/sbasic/shared/03120102.xhp\" name=\"Chr-funktion [Runtime]\">Chr-funktion [kørselstid]</link>"
 
 #: 03120102.xhp
 msgctxt ""
@@ -30956,13 +30864,12 @@ msgid "Mid Function, Mid Statement [Runtime]"
 msgstr "Mid-Funktion, Mid-sætning [kørselstid]"
 
 #: 03120306.xhp
-#, fuzzy
 msgctxt ""
 "03120306.xhp\n"
 "bm_id3143268\n"
 "help.text"
 msgid "<bookmark_value>Mid function</bookmark_value>  <bookmark_value>Mid statement</bookmark_value>"
-msgstr "<bookmark_value>Mid-funktion</bookmark_value><bookmark_value>Mid-sætning</bookmark_value>"
+msgstr "<bookmark_value>Mid-funktion</bookmark_value>   <bookmark_value>Mid-sætning</bookmark_value>"
 
 #: 03120306.xhp
 msgctxt ""
@@ -32728,26 +32635,10 @@ msgstr "Valgfrit heltalsudtryk, som angiver stilen af vinduet som programmet bli
 #: 03130500.xhp
 msgctxt ""
 "03130500.xhp\n"
-"par_id3148663\n"
-"help.text"
-msgid "0"
-msgstr ""
-
-#: 03130500.xhp
-msgctxt ""
-"03130500.xhp\n"
 "par_id3153360\n"
 "help.text"
 msgid "The focus is on the hidden program window."
 msgstr "Fokus er på det skjulte programvindue."
-
-#: 03130500.xhp
-msgctxt ""
-"03130500.xhp\n"
-"par_id3154123\n"
-"help.text"
-msgid "1"
-msgstr ""
 
 #: 03130500.xhp
 msgctxt ""
@@ -32760,26 +32651,10 @@ msgstr "Fokus er på programvinduet i standardstørrelse."
 #: 03130500.xhp
 msgctxt ""
 "03130500.xhp\n"
-"par_id3156422\n"
-"help.text"
-msgid "2"
-msgstr ""
-
-#: 03130500.xhp
-msgctxt ""
-"03130500.xhp\n"
 "par_id3148451\n"
 "help.text"
 msgid "The focus is on the minimized program window."
 msgstr "Fokus er på det minimerede programvindue."
-
-#: 03130500.xhp
-msgctxt ""
-"03130500.xhp\n"
-"par_id3149561\n"
-"help.text"
-msgid "3"
-msgstr ""
 
 #: 03130500.xhp
 msgctxt ""
@@ -32792,14 +32667,6 @@ msgstr "Fokus er på det maksimerede programvindue."
 #: 03130500.xhp
 msgctxt ""
 "03130500.xhp\n"
-"par_id3149481\n"
-"help.text"
-msgid "4"
-msgstr ""
-
-#: 03130500.xhp
-msgctxt ""
-"03130500.xhp\n"
 "par_id3155854\n"
 "help.text"
 msgid "Standard size program window, without focus."
@@ -32808,26 +32675,10 @@ msgstr "Standard størrelse programvindue, uden fokus."
 #: 03130500.xhp
 msgctxt ""
 "03130500.xhp\n"
-"par_id3145271\n"
-"help.text"
-msgid "6"
-msgstr ""
-
-#: 03130500.xhp
-msgctxt ""
-"03130500.xhp\n"
 "par_id3152938\n"
 "help.text"
 msgid "Minimized program window, focus remains on the active window."
 msgstr "Minimeret programvindue, fokus forbliver på det aktive vindue."
-
-#: 03130500.xhp
-msgctxt ""
-"03130500.xhp\n"
-"par_id3146119\n"
-"help.text"
-msgid "10"
-msgstr "10"
 
 #: 03130500.xhp
 msgctxt ""
@@ -33523,7 +33374,7 @@ msgctxt ""
 "par_idN1060F\n"
 "help.text"
 msgid "For a list of available services, go to: http://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star.html"
-msgstr ""
+msgstr "Se en liste over tilgængelige tjenester på http://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star.html"
 
 #: 03131600.xhp
 msgctxt ""
@@ -34401,13 +34252,12 @@ msgid "ThisComponent Statement [Runtime]"
 msgstr "ThisComponent-sætning [kørselstid]"
 
 #: 03132200.xhp
-#, fuzzy
 msgctxt ""
 "03132200.xhp\n"
 "bm_id3155342\n"
 "help.text"
 msgid "<bookmark_value>ThisComponent property</bookmark_value>  <bookmark_value>components;addressing</bookmark_value>"
-msgstr "<bookmark_value>ThisComponent-sætning</bookmark_value><bookmark_value>komponenter;adressere</bookmark_value>"
+msgstr "<bookmark_value>ThisComponent (egenskab)</bookmark_value>     <bookmark_value>komponenter;adressere</bookmark_value>"
 
 #: 03132200.xhp
 msgctxt ""
