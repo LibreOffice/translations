@@ -3,14 +3,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: LibreOffice 5.2\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2016-06-05 08:56+0200\n"
-"PO-Revision-Date: 2016-06-05 20:28+0200\n"
+"POT-Creation-Date: 2016-06-12 16:51+0200\n"
+"PO-Revision-Date: 2016-06-12 12:27+0200\n"
 "Last-Translator: Martin Srebotnjak <miles@filmsi.net>\n"
 "Language-Team: sl.libreoffice.org\n"
-"Language: sl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: sl\n"
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n%100==4 ? 2 : 3);\n"
 "X-Generator: Virtaal 0.7.1\n"
 "X-Accelerator-Marker: ~\n"
@@ -1573,7 +1573,6 @@ msgid "="
 msgstr "="
 
 #: 02010100.xhp
-#, fuzzy
 msgctxt ""
 "02010100.xhp\n"
 "par_id3153026\n"
@@ -2558,7 +2557,6 @@ msgid "=0 returns all records for which the Yes/No field has the status \"No\" o
 msgstr "=0 vrne vse zapise, za katere ima polje Da/Ne stanje »Da« ali »Ne« (ni izbora)."
 
 #: 02010100.xhp
-#, fuzzy
 msgctxt ""
 "02010100.xhp\n"
 "par_id3154179\n"
@@ -2605,7 +2603,7 @@ msgctxt ""
 "par_id191120151905346795\n"
 "help.text"
 msgid "Parameter queries allow the user to input values at run-time. These values are used within the criteria for selecting the records to be displayed. Each such value has a parameter name associated with it, which is used to prompt the user when the query is run."
-msgstr "Poizvedbe parametra uporabnikom omogočajo vnos vrednosti v času izvajanja. Te vrednosti se uporabljajo s pogoji za izbor zapisov, ki bodo prikazani. Vsaka takšna vrednost ima z njo povezano ime parametra, ki se uporablja za povpraševanje uporabnika, kdaj naj se poizvedba izvede."
+msgstr "Poizvedbe parametra uporabnikom omogočajo vnos vrednosti med izvajanjem. Te vrednosti se uporabljajo s pogoji za izbor zapisov, ki bodo prikazani. Vsaka takšna vrednost je povezana z imenom parametra, ki med izvedbo povpraševanja obvešča uporabnika, kdaj naj se poizvedba izvede."
 
 #: 02010100.xhp
 msgctxt ""
@@ -2622,25 +2620,23 @@ msgctxt ""
 "par_id191120151905518123\n"
 "help.text"
 msgid "In the simplest case, where the user enters a value which is matched for equality, the parameter name with its preceding colon is simply entered in the Criterion row. In <link href=\"text/shared/explorer/database/02010100.xhp#sqlmode\">SQL mode</link> this should be typed as <item type=\"input\">WHERE \"Field\" = :Parameter_name</item>"
-msgstr "Če vzamemo najenostavnejši primer, ko uporabnik vnese vrednost, za katero išče enakost, enostavno vnese ime parametra z njegovim prehajajočim dvopičjem v vrstico Pogoj. V <link href=\"text/shared/explorer/database/02010100.xhp#sqlmode\">načinu SQL</link> je slednje potrebno vnesti kot <item type=\"input\">WHERE \"Polje\" = :Ime_parametra</item>"
+msgstr "Enostaven primer: ko uporabnik vnese vrednost, za katero išče enakost, enostavno vnese ime parametra z njegovim prehajajočim dvopičjem v vrstico Pogoj. V <link href=\"text/shared/explorer/database/02010100.xhp#sqlmode\">načinu SQL</link> je slednje potrebno vnesti kot <item type=\"input\">WHERE \"Polje\" = :Ime_parametra</item>"
 
 #: 02010100.xhp
-#, fuzzy
 msgctxt ""
 "02010100.xhp\n"
 "par_id191120151905584287\n"
 "help.text"
 msgid "Parameter names may not contain any of the characters <item type=\"input\"><space>`!\"$%^*()+={}[]@'~#<>?/,</item>. They may not be the same as field names or SQL reserved words. They may be the same as aliases."
-msgstr "Imena parametrov ne smejo vsebovati znakov <item type=\"input\"><presledek>`!\"$%^*()+={}[]@'~#<>?/,</item>. Prav tako ne smejo biti enaka imenom polj ali rezerviranim besedam SQL. Lahko so enaka vzdevkom."
+msgstr "Imena parametrov ne smejo vsebovati znakov <item type=\"input\"><presledek>`!\"$%^*()+={}[]@'~#<>?/,</item>. Prav tako ne smejo biti enaka imenom polj ali rezerviranim besedam za SQL. Lahko so enaka vzdevkom."
 
 #: 02010100.xhp
-#, fuzzy
 msgctxt ""
 "02010100.xhp\n"
 "par_id191120151931441881\n"
 "help.text"
 msgid "A useful construction for selecting records based on parts of a text field's content is to add a hidden column with <item type=\"input\">\"LIKE '%' || :Part_of_field || '%'\"</item> as the criterion. This will select records with an exact match. If a case-insensitive test is wanted, one solution is to use <item type=\"input\">LOWER (Field_Name)</item> as the field and <item type=\"input\">LIKE LOWER ( '%' || :Part_of_field || '%' )</item> as the criterion. Note that the spaces in the criterion are important; if they are left out the SQL parser interprets the entire criterion as a string to be matched. In <link href=\"text/shared/explorer/database/02010100.xhp#sqlmode\">SQL mode</link> this should be typed as <item type=\"input\">LOWER ( \"Field_Name\" ) LIKE LOWER ( '%' || :Part_of_field || '%' )</item>."
-msgstr "Uporabna konstrukcija za izbiranje zapisov glede na dele besedila kot vsebine polj je dodajanje skritega stolpca z <item type=\"input\">\"LIKE '%' || :Del_polja || '%'\"</item> kot pogojem. Tako izberete zapise z natančnim ujemanjem. Če ne želite razlikovati med velikimi in malimi črkami, je možna rešitev <item type=\"input\">LOWER (Ime_polja)</item> kot polje in <item type=\"input\">LIKE LOWER ( '%' || :Del_polja || '%' )</item> kot pogoj. Upoštevajte, da so presledki v pogoju pomembni; če jih izpustite, razčlenjevalnik SQL interpretira celoten pogoj kot niz, katerega ujemanje iščete. V <link href=\"text/shared/explorer/database/02010100.xhp#sqlmode\">SQL-načinu</link> bi to zapisali tako: <item type=\"input\">LOWER ( \"Ime_polja\" ) LIKE LOWER ( '%' || :Del_polja || '%' )</item>."
+msgstr "Uporabna konstrukcija za izbiranje zapisov glede na podlagi delov besedila iz vsebine besedilnih polj je dodajanje skritega stolpca s pogojem <item type=\"input\">\"LIKE '%' || :Del_polja || '%'\"</item>. Tako izberete zapise z natančnim ujemanjem. Če ne želite razlikovati med velikimi in malimi črkami, je možna rešitev s poljem <item type=\"input\">LOWER (Ime_polja)</item> in pogojem <item type=\"input\">LIKE LOWER ( '%' || :Del_polja || '%' )</item>. Pazite na presledke v pogoju; če jih izpustite, bo razčlenjevalnik SQL interpretiral celoten pogoj kot iskani niz. V <link href=\"text/shared/explorer/database/02010100.xhp#sqlmode\">SQL-načinu</link> bi to zapisali tako: <item type=\"input\">LOWER ( \"Ime_polja\" ) LIKE LOWER ( '%' || :Del_polja || '%' )</item>."
 
 #: 02010100.xhp
 msgctxt ""
