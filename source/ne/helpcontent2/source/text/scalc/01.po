@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2016-05-23 22:09+0200\n"
-"PO-Revision-Date: 2016-05-02 13:02+0000\n"
+"POT-Creation-Date: 2016-07-04 16:53+0200\n"
+"PO-Revision-Date: 2016-05-24 19:45+0000\n"
 "Last-Translator: Anonymous Pootle User\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: ne\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Accelerator-Marker: ~\n"
 "X-Generator: LibreOffice\n"
-"X-POOTLE-MTIME: 1462194128.000000\n"
+"X-POOTLE-MTIME: 1464119100.000000\n"
 
 #: 01120000.xhp
 msgctxt ""
@@ -4507,12 +4507,13 @@ msgid "<item type=\"input\">DCOUNT</item>"
 msgstr "DCOUNT"
 
 #: 04060101.xhp
+#, fuzzy
 msgctxt ""
 "04060101.xhp\n"
 "par_id3149282\n"
 "83\n"
 "help.text"
-msgid "The formula in cell B16 is =DCOUNT(A1:E10;0;A13:E14)"
+msgid "The formula in cell B16 is =DCOUNT(A1:E10;D1;A13:E14)"
 msgstr "कक्ष B16 को सूत्र हो =DCOUNT(A1:E10;0;A13:E14)"
 
 #: 04060101.xhp
@@ -4543,14 +4544,13 @@ msgid "<emph>Database</emph> is the cell range defining the database."
 msgstr "<emph>डाटाबेस</emph> परिभाषित कक्ष दायरा डाटाबेस हो ।"
 
 #: 04060101.xhp
-#, fuzzy
 msgctxt ""
 "04060101.xhp\n"
 "par_id3151272\n"
 "86\n"
 "help.text"
-msgid "<emph>DatabaseField</emph> specifies the column where the function operates on after the search criteria of the first parameter is applied and the data rows are selected. It is not related to the search criteria itself. Use the number 0 to specify the whole data range. <variable id=\"quotes\">To reference a column by means of the column header name, place quotation marks around the header name.</variable>"
-msgstr "<emph>डाटाबेस फाँट</emph> स्तम्भ निर्देशित गर्दछ जहाँ पहिलो परामितिको खोजी दायरा पछाडि प्रकार्य सञ्चालनहरू लागू गरिन्छ र डेटा पङ्क्तिहरू चयन गरिन्छ । यो आफैमा खोजी दायरासँग सम्बन्धित हुँदैन । पुरै डेटा दायरा निर्दिष्ट गर्नलाई सङ्ख्या ० निर्दिष्ट गरिन्छ । स्तम्भ हेडर नामको अर्थद्वारा <variable id=\"quotes\"> स्तम्भ सन्दर्भमा हेडर नाम घेर्नलाई उद्धरण चिन्ह राखिन्छ । </variable>"
+msgid "<emph>DatabaseField</emph> specifies the column where the function operates on after the search criteria of the first parameter is applied and the data rows are selected. It is not related to the search criteria itself. <variable id=\"quotes\">For the DatabaseField parameter you can enter a reference to a header cell or a number to specify the column within the Database area, starting with 1. To reference a column by means of the literal column header name, place quotation marks around the header name.</variable>"
+msgstr ""
 
 #: 04060101.xhp
 msgctxt ""
@@ -4596,12 +4596,13 @@ msgid "DCOUNT"
 msgstr "DCOUNT"
 
 #: 04060101.xhp
+#, fuzzy
 msgctxt ""
 "04060101.xhp\n"
 "par_id3156133\n"
 "89\n"
 "help.text"
-msgid "<ahelp hid=\"HID_FUNC_DBANZAHL\">DCOUNT counts the number of rows (records) in a database that match the specified search criteria and contain numerical values.</ahelp>"
+msgid "<ahelp hid=\"HID_FUNC_DBANZAHL\">DCOUNT counts the number of rows (records) in a database that match the specified search criteria and contain numerical values in the DatabaseField column.</ahelp>"
 msgstr "<ahelp hid=\"HID_FUNC_DBANZAHL\">DCOUNTले डाटाबेसमा पङ्क्तिहरू (रेकर्डहरू)को सङ्ख्या गणना गर्दछ जुन निर्दिष्ट खोजी मापदण्ड मिलाउँदछ र सङ्ख्यात्मक मानहरू समाहित गराउँदछ ।</ahelp>"
 
 #: 04060101.xhp
@@ -4614,12 +4615,13 @@ msgid "Syntax"
 msgstr "वाक्य संरचना"
 
 #: 04060101.xhp
+#, fuzzy
 msgctxt ""
 "04060101.xhp\n"
 "par_id3153218\n"
 "91\n"
 "help.text"
-msgid "DCOUNT(Database; DatabaseField; SearchCriteria)"
+msgid "DCOUNT(Database; [DatabaseField]; SearchCriteria)"
 msgstr "DCOUNT(डाटाबेस; डाटाबेस फाँट; खोजी माप दण्ड)"
 
 #: 04060101.xhp
@@ -4628,8 +4630,8 @@ msgctxt ""
 "par_id3153273\n"
 "187\n"
 "help.text"
-msgid "For the DatabaseField parameter you can enter a cell to specify the column, or enter the number 0 for the entire database. The parameter cannot be empty. <embedvar href=\"text/scalc/01/04060101.xhp#quotes\"/>"
-msgstr "डाटाबेस फाँट परामिति का लागि तपाईँं स्तम्भ निर्दिष्ट गर्न कक्ष प्रविष्ट गराउन सक्नुहुन्छ  वा सम्पूर्ण डाटाबेसका लागि सङ्ख्या ० प्रविष्ट गराउनुहोस् । परामिति खाली हुन सक्दैन ।<embedvar href=\"text/scalc/01/04060101.xhp#quotes\"/>"
+msgid "If the DatabaseField argument is omitted, DCOUNT returns the count of all records that satisfy Criteria. <embedvar href=\"text/scalc/01/04060101.xhp#quotes\"/>"
+msgstr ""
 
 #: 04060101.xhp
 msgctxt ""
@@ -4641,21 +4643,23 @@ msgid "Example"
 msgstr "उदाहरण"
 
 #: 04060101.xhp
+#, fuzzy
 msgctxt ""
 "04060101.xhp\n"
 "par_id3153623\n"
 "93\n"
 "help.text"
-msgid "In the example above (scroll up, please), we want to know how many children have to travel more than 600 meters to school. The result is to be stored in cell B16. Set the cursor in cell B16. Enter the formula <item type=\"input\">=DCOUNT(A1:E10;0;A13:E14)</item> in B16. The <emph>Function Wizard</emph> helps you to input ranges."
+msgid "In the example above (scroll up, please), we want to know how many children have to travel more than 600 meters to school. The result is to be stored in cell B16. Set the cursor in cell B16. Enter the formula <item type=\"input\">=DCOUNT(A1:E10;D1;A13:E14)</item> in B16. The <emph>Function Wizard</emph> helps you to input ranges."
 msgstr "माथिको उदाहरणमा (कृपया माथि स्क्रोल गर्नुहोस्), हामी यो जान्न चाहन्छौ कि  कति केटाकेटिका लागि विद्यालयको यात्रा ६०० मिटर भन्दा टाढा छ । यो परिणाम कक्ष B16 क्रमबद्ध गर्न सकिन्छ । कक्ष B16मा कर्सर सेट गर्नुहोस् । B16मा =DCOUNT(A1:E10;0;A13:E14)सूत्र प्रविष्ट गर्नुहोस् । <emph>प्रकार्य विजार्ड</emph> ले दायराहरू आगतमा तपाईँंलाई  मद्दत गर्दछ ।"
 
 #: 04060101.xhp
+#, fuzzy
 msgctxt ""
 "04060101.xhp\n"
 "par_id3149142\n"
 "94\n"
 "help.text"
-msgid "<emph>Database</emph> is the range of data to be evaluated, including its headers: in this case A1:E10. <emph>DatabaseField</emph> specifies the column for the search criteria: in this case, the whole database. <emph>SearchCriteria</emph> is the range where you can enter the search parameters: in this case, A13:E14."
+msgid "<emph>Database</emph> is the range of data to be evaluated, including its headers: in this case A1:E10. <emph>DatabaseField</emph> specifies the column for the search criteria: in this case, the column with the numerical distance values. <emph>SearchCriteria</emph> is the range where you can enter the search parameters: in this case, A13:E14."
 msgstr "<emph>डाटाबेस</emph> मूल्याङ्कन गर्नुपर्ने डेटाको दायरा हो,यो केस  A1:E10मा यसको हेडरमा समावेश हुन्छ । यो केसमा डाटाबेस भरी <emph>डाटाबेस फाँट</emph> खोजी दायरा का लागि स्तम्भ निर्दिष्ट गर्दछ ।<emph>खोजी दायरा</emph> दायरा हो जहाँ तपाईँं खोजी परामितिहरू प्रविष्टि गर्न सक्नुहुन्छ: A13:E14 यो केस मा ।"
 
 #: 04060101.xhp
@@ -4703,13 +4707,23 @@ msgid "Syntax"
 msgstr "वाक्य संरचना"
 
 #: 04060101.xhp
+#, fuzzy
 msgctxt ""
 "04060101.xhp\n"
 "par_id3146893\n"
 "100\n"
 "help.text"
-msgid "DCOUNTA(Database; DatabaseField; SearchCriteria)"
+msgid "DCOUNTA(Database; [DatabaseField]; SearchCriteria)"
 msgstr "DCOUNTA(डाटाबेस;डाटाबेस फाँट; खोजी मापदण्ड)"
+
+#: 04060101.xhp
+msgctxt ""
+"04060101.xhp\n"
+"par_id3153274\n"
+"189\n"
+"help.text"
+msgid "If the DatabaseField argument is omitted, DCOUNTA returns the count of all records that satisfy Criteria. <embedvar href=\"text/scalc/01/04060101.xhp#quotes\"/>"
+msgstr ""
 
 #: 04060101.xhp
 msgctxt ""
@@ -5710,8 +5724,8 @@ msgctxt ""
 "par_id3150654\n"
 "185\n"
 "help.text"
-msgid "When entering dates, slashes or dashes used as date separators may be interpreted as arithmetic operators. Therefore, dates entered in this format are not always recognized as dates and result in erroneous calculations. To keep dates from being interpreted as parts of formulas, place them in quotation marks, for example, \"07/20/54\"."
-msgstr "जब मितिहरू प्रविष्टि गराइन्छ विभाजकको रूपमा प्रयोग गरिएका  स्ल्यासहरू वा ड्यासहरू अंकगणितीय सञ्चालन कर्ताको रूपमा व्याख्या गर्न सकिन्छ । त्यसकारण, यो ढाँचामा प्रविष्टि गरिएका मितिहरू प्रायजसो मितिको रूपमा सङठित हुँदैनन् र परिणाम परिणामगणनामा अशुद्धता हुन्छ । सूत्रहरूको एउटा खण्डको रूपमा व्याख्या गर्न सकिने मितिहरू राख्नलाई उद्धरण चिन्हहरूमा  तिनीहरू स्थानिकृत गर्नुहोस्, उदाहरणका लागि ,\"07/20/54\" ।"
+msgid "When entering dates as part of formulas, slashes or dashes used as date separators are interpreted as arithmetic operators. Therefore, dates entered in this format are not recognized as dates and result in erroneous calculations. To keep dates from being interpreted as parts of formulas use the DATE function, for example, DATE(1954;7;20), or place the date in quotation marks and use the ISO 8601 notation, for example, \"1954-07-20\". Avoid using locale dependent date formats such as \"07/20/54\", the calculation may produce errors if the document is loaded under different locale settings."
+msgstr ""
 
 #: 04060102.xhp
 msgctxt ""
@@ -9854,19 +9868,21 @@ msgid "<item type=\"input\">=N(123)</item> returns 123"
 msgstr "N(TRUE) ले १ फर्काउँदछ"
 
 #: 04060104.xhp
+#, fuzzy
 msgctxt ""
 "04060104.xhp\n"
 "par_id2337717\n"
 "help.text"
-msgid "<item type=\"input\">=N(TRUE)</item> returns 1"
+msgid "<item type=\"input\">=N(TRUE())</item> returns 1"
 msgstr "N(TRUE) ले १ फर्काउँदछ"
 
 #: 04060104.xhp
+#, fuzzy
 msgctxt ""
 "04060104.xhp\n"
 "par_id3153781\n"
 "help.text"
-msgid "<item type=\"input\">=N(FALSE)</item> returns 0"
+msgid "<item type=\"input\">=N(FALSE())</item> returns 0"
 msgstr "N(FALSE) ० फर्काउँदछ"
 
 #: 04060104.xhp
@@ -25811,12 +25827,13 @@ msgid "Syntax"
 msgstr "वाक्य संरचना"
 
 #: 04060111.xhp
+#, fuzzy
 msgctxt ""
 "04060111.xhp\n"
 "par_id3150205\n"
 "17\n"
 "help.text"
-msgid "ISLEAPYEAR(\"Date\")"
+msgid "ISLEAPYEAR(Date)"
 msgstr "ISLEAPYEAR(मिति)"
 
 #: 04060111.xhp
@@ -25825,8 +25842,8 @@ msgctxt ""
 "par_id3159239\n"
 "18\n"
 "help.text"
-msgid "<emph>Date</emph> specifies whether a given date falls within a leap year. The Date parameter must be a valid date according to the locale settings of %PRODUCTNAME."
-msgstr "मिति: दिएको मिति अधिक वर्ष भित्रमा उत्रिए निर्दिष्ट गर्दछ । मिति परामितिहरू %PRODUCTNAME को लोकेल सेटिङहरू अनुसारको वैध मिति बनाउन जरुरी हुन्छ ।"
+msgid "<emph>Date</emph> specifies whether a given date falls within a leap year. The Date parameter must be a valid date."
+msgstr ""
 
 #: 04060111.xhp
 msgctxt ""
@@ -25851,8 +25868,8 @@ msgctxt ""
 "04060111.xhp\n"
 "par_idN107E7\n"
 "help.text"
-msgid "You may also use =ISLEAPYEAR(\"1968-02-29\") or =ISLEAPYEAR(\"2/29/68\")."
-msgstr "तपाईँंले SLEAPYEAR(\"2/29/68\") पानि प्रयोग गर्न सक्नु हुन्छ I"
+msgid "You may also use =ISLEAPYEAR(DATE(1968;2;29)) or =ISLEAPYEAR(\"1968-02-29\") giving the date string in the ISO 8601 notation."
+msgstr ""
 
 #: 04060111.xhp
 msgctxt ""
@@ -62387,12 +62404,13 @@ msgid "<emph>Day</emph> is an integer indicating the day of the month."
 msgstr "<emph>दिन</emph>महिनाको दिन तोकिएको १ र ३१ बीचको सङ्ख्या हो ।"
 
 #: func_date.xhp
+#, fuzzy
 msgctxt ""
 "func_date.xhp\n"
 "par_id3156260\n"
 "10\n"
 "help.text"
-msgid "If the values for month and day are out of bounds, they are carried over to the next digit. If you enter <item type=\"input\">=DATE(00;12;31)</item> the result will be 12/31/00. If, on the other hand, you enter <item type=\"input\">=DATE(00;13;31)</item> the result will be 1/31/01."
+msgid "If the values for month and day are out of bounds, they are carried over to the next digit. If you enter <item type=\"input\">=DATE(00;12;31)</item> the result will be 2000-12-31. If, on the other hand, you enter <item type=\"input\">=DATE(00;13;31)</item> the result will be 2001-01-31."
 msgstr "यदि महिना र दिनका लागि मानहरू ठूलो भएको खण्डमा, तिनीहरू अर्को अंकबाट ल्याइन्छन । यदि तपाईँंले =DATE(00;12;31) प्रविष्टि गरेको खण्डमा परिणाम \"12/31/00.\" हुन्छ ।"
 
 #: func_date.xhp
@@ -67235,7 +67253,7 @@ msgctxt ""
 "par_id3149973\n"
 "229\n"
 "help.text"
-msgid "In which week number does 12/24/2001 fall?"
+msgid "In which week number does 2001-12-24 fall?"
 msgstr "१२.२४.२००१ले कुन हप्ता सङ्ख्या बुझाउँदछ ।"
 
 #: func_weeknumadd.xhp
@@ -69982,7 +70000,7 @@ msgctxt ""
 "statistics_regression.xhp\n"
 "par_id1701201620334364\n"
 "help.text"
-msgid "<emph>Linear Regression</emph>: find a strait line in the form of <item type=\"literal\">y = a.x + b</item>, where <item type=\"literal\">a</item> is the slope and <item type=\"literal\">b</item> is the intercept that best fits the data."
+msgid "<emph>Linear Regression</emph>: find a straight line in the form of <item type=\"literal\">y = a.x + b</item>, where <item type=\"literal\">a</item> is the slope and <item type=\"literal\">b</item> is the intercept that best fits the data."
 msgstr ""
 
 #: statistics_regression.xhp

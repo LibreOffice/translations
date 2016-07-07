@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2016-05-23 22:09+0200\n"
-"PO-Revision-Date: 2016-06-03 05:57+0000\n"
+"POT-Creation-Date: 2016-07-04 16:53+0200\n"
+"PO-Revision-Date: 2016-06-30 05:04+0000\n"
 "Last-Translator: kees538 <kees538@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: nl\n"
@@ -13,8 +13,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Accelerator-Marker: ~\n"
-"X-Generator: Pootle 2.7\n"
-"X-POOTLE-MTIME: 1464933440.000000\n"
+"X-Generator: LibreOffice\n"
+"X-POOTLE-MTIME: 1467263075.000000\n"
 
 #: 01120000.xhp
 msgctxt ""
@@ -4190,7 +4190,6 @@ msgid "Database Functions"
 msgstr "Databasefuncties"
 
 #: 04060101.xhp
-#, fuzzy
 msgctxt ""
 "04060101.xhp\n"
 "par_id3145173\n"
@@ -4379,14 +4378,13 @@ msgid "<item type=\"input\">Eva</item>"
 msgstr "<item type=\"input\">Eva</item>"
 
 #: 04060101.xhp
-#, fuzzy
 msgctxt ""
 "04060101.xhp\n"
 "par_id3145826\n"
 "46\n"
 "help.text"
 msgid "<item type=\"input\">Frank</item>"
-msgstr "<item type=\"input\">Groep</item>"
+msgstr "<item type=\"input\">Frank</item>"
 
 #: 04060101.xhp
 msgctxt ""
@@ -4470,12 +4468,13 @@ msgid "<item type=\"input\">DCOUNT</item>"
 msgstr "<item type=\"input\">DBAANTAL</item>"
 
 #: 04060101.xhp
+#, fuzzy
 msgctxt ""
 "04060101.xhp\n"
 "par_id3149282\n"
 "83\n"
 "help.text"
-msgid "The formula in cell B16 is =DCOUNT(A1:E10;0;A13:E14)"
+msgid "The formula in cell B16 is =DCOUNT(A1:E10;D1;A13:E14)"
 msgstr "De formule in cel B16 is =DBAANTAL(A1:E10;0;A13:E14)"
 
 #: 04060101.xhp
@@ -4506,14 +4505,13 @@ msgid "<emph>Database</emph> is the cell range defining the database."
 msgstr "<emph>Database</emph> is het celbereik dat de database definieert."
 
 #: 04060101.xhp
-#, fuzzy
 msgctxt ""
 "04060101.xhp\n"
 "par_id3151272\n"
 "86\n"
 "help.text"
-msgid "<emph>DatabaseField</emph> specifies the column where the function operates on after the search criteria of the first parameter is applied and the data rows are selected. It is not related to the search criteria itself. Use the number 0 to specify the whole data range. <variable id=\"quotes\">To reference a column by means of the column header name, place quotation marks around the header name.</variable>"
-msgstr "<emph>Databaseveld</emph> specificeert de kolom waar de functie op zal werken nadat de zoekcriteria van de eerste parameter zijn toegewezen en de gegevensrijen zijn geselecteerd. Het is niet aan de zoekcriteria zelf gerelateerd. Gebruik het getal 0 om het gehele gegevensbereik te specificeren. <variable id=\"quotes\">Plaats aanhalingstekens rondom de naam van de rijkop om naar een kolom te verwijzen met behulp van de naam van de rijkop. </variable>"
+msgid "<emph>DatabaseField</emph> specifies the column where the function operates on after the search criteria of the first parameter is applied and the data rows are selected. It is not related to the search criteria itself. <variable id=\"quotes\">For the DatabaseField parameter you can enter a reference to a header cell or a number to specify the column within the Database area, starting with 1. To reference a column by means of the literal column header name, place quotation marks around the header name.</variable>"
+msgstr ""
 
 #: 04060101.xhp
 msgctxt ""
@@ -4559,12 +4557,13 @@ msgid "DCOUNT"
 msgstr "DBAANTAL"
 
 #: 04060101.xhp
+#, fuzzy
 msgctxt ""
 "04060101.xhp\n"
 "par_id3156133\n"
 "89\n"
 "help.text"
-msgid "<ahelp hid=\"HID_FUNC_DBANZAHL\">DCOUNT counts the number of rows (records) in a database that match the specified search criteria and contain numerical values.</ahelp>"
+msgid "<ahelp hid=\"HID_FUNC_DBANZAHL\">DCOUNT counts the number of rows (records) in a database that match the specified search criteria and contain numerical values in the DatabaseField column.</ahelp>"
 msgstr "<ahelp hid=\"HID_FUNC_DBANZAHL\">DBAANTAL telt het aantal rijen (records) in een database die aan de opgegeven zoekcriteria voldoen en numerieke waarden bevatten.</ahelp>"
 
 #: 04060101.xhp
@@ -4577,12 +4576,13 @@ msgid "Syntax"
 msgstr "Syntaxis"
 
 #: 04060101.xhp
+#, fuzzy
 msgctxt ""
 "04060101.xhp\n"
 "par_id3153218\n"
 "91\n"
 "help.text"
-msgid "DCOUNT(Database; DatabaseField; SearchCriteria)"
+msgid "DCOUNT(Database; [DatabaseField]; SearchCriteria)"
 msgstr "DBAANTAL(Database; Databaseveld; Zoekcriteria)"
 
 #: 04060101.xhp
@@ -4591,8 +4591,8 @@ msgctxt ""
 "par_id3153273\n"
 "187\n"
 "help.text"
-msgid "For the DatabaseField parameter you can enter a cell to specify the column, or enter the number 0 for the entire database. The parameter cannot be empty. <embedvar href=\"text/scalc/01/04060101.xhp#quotes\"/>"
-msgstr "Voor de parameter van het Databaseveld kunt u een cel invoeren om de kolom te specificeren of het getal 0 voor de gehele database. De parameter mag niet leeg zijn. <embedvar href=\"text/scalc/01/04060101.xhp#quotes\"/>"
+msgid "If the DatabaseField argument is omitted, DCOUNT returns the count of all records that satisfy Criteria. <embedvar href=\"text/scalc/01/04060101.xhp#quotes\"/>"
+msgstr ""
 
 #: 04060101.xhp
 msgctxt ""
@@ -4604,21 +4604,23 @@ msgid "Example"
 msgstr "Voorbeeld"
 
 #: 04060101.xhp
+#, fuzzy
 msgctxt ""
 "04060101.xhp\n"
 "par_id3153623\n"
 "93\n"
 "help.text"
-msgid "In the example above (scroll up, please), we want to know how many children have to travel more than 600 meters to school. The result is to be stored in cell B16. Set the cursor in cell B16. Enter the formula <item type=\"input\">=DCOUNT(A1:E10;0;A13:E14)</item> in B16. The <emph>Function Wizard</emph> helps you to input ranges."
+msgid "In the example above (scroll up, please), we want to know how many children have to travel more than 600 meters to school. The result is to be stored in cell B16. Set the cursor in cell B16. Enter the formula <item type=\"input\">=DCOUNT(A1:E10;D1;A13:E14)</item> in B16. The <emph>Function Wizard</emph> helps you to input ranges."
 msgstr "In het bovenstaande voorbeeld (scroll naar boven) willen we weten hoeveel kinderen meer dan 600 meter naar school moeten afleggen. Het resultaat moet worden opgeslagen in cel B16. Zet de cursor in cel B16. Voer de formule <item type=\"input\">=DBAANTAL(A1:E10;0;A13:E14)</item> in B16 in. De <emph>Functie-assistent</emph> helpt u om bereiken in te voeren."
 
 #: 04060101.xhp
+#, fuzzy
 msgctxt ""
 "04060101.xhp\n"
 "par_id3149142\n"
 "94\n"
 "help.text"
-msgid "<emph>Database</emph> is the range of data to be evaluated, including its headers: in this case A1:E10. <emph>DatabaseField</emph> specifies the column for the search criteria: in this case, the whole database. <emph>SearchCriteria</emph> is the range where you can enter the search parameters: in this case, A13:E14."
+msgid "<emph>Database</emph> is the range of data to be evaluated, including its headers: in this case A1:E10. <emph>DatabaseField</emph> specifies the column for the search criteria: in this case, the column with the numerical distance values. <emph>SearchCriteria</emph> is the range where you can enter the search parameters: in this case, A13:E14."
 msgstr "<emph>Database</emph> is het bereik van de gegevens die moeten worden geëvalueerd, inclusief de rijkoppen: in dit geval A1:E10. <emph>Databaseveld</emph> specificeert de kolom voor de zoekcriteria: in dit geval de gehele database. <emph>Zoekcriteria</emph> is het bereik waar u de parameters voor het zoeken in kunt voeren: in dit geval A13:E14."
 
 #: 04060101.xhp
@@ -4666,13 +4668,23 @@ msgid "Syntax"
 msgstr "Syntaxis"
 
 #: 04060101.xhp
+#, fuzzy
 msgctxt ""
 "04060101.xhp\n"
 "par_id3146893\n"
 "100\n"
 "help.text"
-msgid "DCOUNTA(Database; DatabaseField; SearchCriteria)"
+msgid "DCOUNTA(Database; [DatabaseField]; SearchCriteria)"
 msgstr "DBAANTALC (Database; Databaseveld; Zoekcriteria)"
+
+#: 04060101.xhp
+msgctxt ""
+"04060101.xhp\n"
+"par_id3153274\n"
+"189\n"
+"help.text"
+msgid "If the DatabaseField argument is omitted, DCOUNTA returns the count of all records that satisfy Criteria. <embedvar href=\"text/scalc/01/04060101.xhp#quotes\"/>"
+msgstr ""
 
 #: 04060101.xhp
 msgctxt ""
@@ -5671,8 +5683,8 @@ msgctxt ""
 "par_id3150654\n"
 "185\n"
 "help.text"
-msgid "When entering dates, slashes or dashes used as date separators may be interpreted as arithmetic operators. Therefore, dates entered in this format are not always recognized as dates and result in erroneous calculations. To keep dates from being interpreted as parts of formulas, place them in quotation marks, for example, \"07/20/54\"."
-msgstr "Houdt er rekening mee dat wanneer u datums invoert, schuine streepjes (bijvoorbeeld 20/07/54) of liggende streepjes (bijvoorbeeld 20-07-54) geïnterpreteerd kunnen worden als rekenkundige operatoren. Datums die dus op deze manier worden ingevoerd, worden niet altijd herkend als datums, wat tot verkeerde berekeningen kan leiden. Teneinde te vermijden dat datums worden geïnterpreteerd als delen van een formule moet u ze tussen aanhalingstekens plaatsen, bijvoorbeeld \"20/07/54\"."
+msgid "When entering dates as part of formulas, slashes or dashes used as date separators are interpreted as arithmetic operators. Therefore, dates entered in this format are not recognized as dates and result in erroneous calculations. To keep dates from being interpreted as parts of formulas use the DATE function, for example, DATE(1954;7;20), or place the date in quotation marks and use the ISO 8601 notation, for example, \"1954-07-20\". Avoid using locale dependent date formats such as \"07/20/54\", the calculation may produce errors if the document is loaded under different locale settings."
+msgstr ""
 
 #: 04060102.xhp
 msgctxt ""
@@ -9782,19 +9794,21 @@ msgid "<item type=\"input\">=N(123)</item> returns 123"
 msgstr "<item type=\"input\">=N(123)</item> geeft 123 terug"
 
 #: 04060104.xhp
+#, fuzzy
 msgctxt ""
 "04060104.xhp\n"
 "par_id2337717\n"
 "help.text"
-msgid "<item type=\"input\">=N(TRUE)</item> returns 1"
+msgid "<item type=\"input\">=N(TRUE())</item> returns 1"
 msgstr "<item type=\"input\">=N(WAAR)</item> geeft 1 terug"
 
 #: 04060104.xhp
+#, fuzzy
 msgctxt ""
 "04060104.xhp\n"
 "par_id3153781\n"
 "help.text"
-msgid "<item type=\"input\">=N(FALSE)</item> returns 0"
+msgid "<item type=\"input\">=N(FALSE())</item> returns 0"
 msgstr "<item type=\"input\">=N(ONWAAR)</item> geeft 0 terug"
 
 #: 04060104.xhp
@@ -12060,13 +12074,12 @@ msgid "Examples"
 msgstr "Voorbeelden"
 
 #: 04060106.xhp
-#, fuzzy
 msgctxt ""
 "04060106.xhp\n"
 "par_id3147241\n"
 "help.text"
 msgid "<item type=\"input\">=COS(PI()*2)</item> returns 1, the cosine of 2*PI radians."
-msgstr "<item type=\"input\">=COS(PI()/2)</item> geeft 0 terug, de cosinus van PI/2 radialen."
+msgstr "<item type=\"input\">=COS(PI()*2)</item> geeft 1 terug, de cosinus van 2*PI radialen."
 
 #: 04060106.xhp
 msgctxt ""
@@ -21514,7 +21527,7 @@ msgctxt ""
 "par_id3153740\n"
 "help.text"
 msgid "If the width or height is included, the OFFSET function returns a range and thus must be entered as an <link href=\"text/scalc/01/04060107.xhp\">array formula</link>. If both the width and height are missing, a cell reference is returned."
-msgstr ""
+msgstr "De functie VERSCHUIVING geeft een bereik terug als de hoogte en breedte zijn inbegrepen en moeten dus als een <link href=\"text/scalc/01/04060107.xhp\">matrixformule</link> worden ingevoerd. Als zowel de hoogte als de breedte niet aanwezig zijn, wordt een celverwijzing teruggegeven."
 
 #: 04060109.xhp
 msgctxt ""
@@ -25668,12 +25681,13 @@ msgid "Syntax"
 msgstr "Syntaxis"
 
 #: 04060111.xhp
+#, fuzzy
 msgctxt ""
 "04060111.xhp\n"
 "par_id3150205\n"
 "17\n"
 "help.text"
-msgid "ISLEAPYEAR(\"Date\")"
+msgid "ISLEAPYEAR(Date)"
 msgstr "ISSCHRIKKELJAAR(\"Datum\")"
 
 #: 04060111.xhp
@@ -25682,8 +25696,8 @@ msgctxt ""
 "par_id3159239\n"
 "18\n"
 "help.text"
-msgid "<emph>Date</emph> specifies whether a given date falls within a leap year. The Date parameter must be a valid date according to the locale settings of %PRODUCTNAME."
-msgstr "<emph>Datum</emph> specificeert of een opgegeven datum in een schrikkeljaar valt. De parameter Datum moet een geldige datum zijn volgens de lokale instellingen van %PRODUCTNAME."
+msgid "<emph>Date</emph> specifies whether a given date falls within a leap year. The Date parameter must be a valid date."
+msgstr ""
 
 #: 04060111.xhp
 msgctxt ""
@@ -25708,8 +25722,8 @@ msgctxt ""
 "04060111.xhp\n"
 "par_idN107E7\n"
 "help.text"
-msgid "You may also use =ISLEAPYEAR(\"1968-02-29\") or =ISLEAPYEAR(\"2/29/68\")."
-msgstr "U kunt ook gebruiken =ISSCHRIKKELJAAR(\"29-02-1968\") of =ISSCHRIKKELJAAR(\"29/2/68\")."
+msgid "You may also use =ISLEAPYEAR(DATE(1968;2;29)) or =ISLEAPYEAR(\"1968-02-29\") giving the date string in the ISO 8601 notation."
+msgstr ""
 
 #: 04060111.xhp
 msgctxt ""
@@ -54560,7 +54574,7 @@ msgctxt ""
 "par_id3149263\n"
 "help.text"
 msgid "A split window has its own scrollbars in each partial section; by contrast, <link href=\"text/scalc/01/07090000.xhp\" name=\"fixed window sections\">fixed window sections</link> are not scrollable."
-msgstr "Een gesplitst venster heeft zijn eigen schuifbalken in elk deelgebied; in tegenstelling tot <link href=\"text/scalc/01/07090000.xhp\" name=\"gefixeerde venstersecties\">gefixeerde venstersecties</link> die niet verschuifbaar zijn."
+msgstr "Een gesplitst venster heeft zijn eigen schuifbalken in elk deelgebied; in tegenstelling tot <link href=\"text/scalc/01/07090000.xhp\" name=\"vastgezette venstersecties\">vastgezette venstersecties</link> die niet verschuifbaar zijn."
 
 #: 07090000.xhp
 msgctxt ""
@@ -54568,7 +54582,7 @@ msgctxt ""
 "tit\n"
 "help.text"
 msgid "Freeze Rows and Columns"
-msgstr "Rijen en kolommen fixeren"
+msgstr "Rijen en kolommen vastzetten"
 
 #: 07090000.xhp
 msgctxt ""
@@ -54576,7 +54590,7 @@ msgctxt ""
 "hd_id3150517\n"
 "help.text"
 msgid "<link href=\"text/scalc/01/07090000.xhp\" name=\"Freeze\">Freeze Rows and Columns</link>"
-msgstr "<link href=\"text/scalc/01/07090000.xhp\" name=\"Fixeren\">Fixeren</link>"
+msgstr "<link href=\"text/scalc/01/07090000.xhp\" name=\"Freeze\">Rijen en kolommen vastzetten</link>"
 
 #: 07090000.xhp
 msgctxt ""
@@ -59855,7 +59869,7 @@ msgctxt ""
 "par_id040320161859450\n"
 "help.text"
 msgid "The time line doesn't have to to be sorted, the functions will sort it for calculations. <br/>The time line values must have a consistent step between them. <br/>If a constant step can't be identified in the sorted time line, the functions will return the #NUM! error. <br/>If the ranges of the time line and historical values aren't of same size, the functions will return the #N/A error.<br/>If the time line contains less than 2 periods of data, the functions will return the #VALUE! Error."
-msgstr ""
+msgstr "De tijdlijn hoeft niet gesorteerd te worden, de functies worden voor de berekeningen gesorteerd. <br/>Er moeten wel logische stappen zijn tussen de waarden van de tijdlijn. <br/>Als geen constante stap in de gesorteerde tijdlijn gevonden wordt, zullen de functies de foutcode #NUM! teruggeven. <br/>Als de bereiken van de tijdlijn en de historische waarden niet dezelfde afmetingen hebben, geven de functies de foutcode #N/A terug.<br/>Als de tijdlijn minder dan 2 perioden met gegevens bevat, zullen de functies de foutcode #VALUE! teruggeven."
 
 #: exponsmooth_embd.xhp
 msgctxt ""
@@ -61738,12 +61752,13 @@ msgid "<emph>Day</emph> is an integer indicating the day of the month."
 msgstr "<emph>Dag</emph> is een geheel getal dat de dag van de maand aangeeft."
 
 #: func_date.xhp
+#, fuzzy
 msgctxt ""
 "func_date.xhp\n"
 "par_id3156260\n"
 "10\n"
 "help.text"
-msgid "If the values for month and day are out of bounds, they are carried over to the next digit. If you enter <item type=\"input\">=DATE(00;12;31)</item> the result will be 12/31/00. If, on the other hand, you enter <item type=\"input\">=DATE(00;13;31)</item> the result will be 1/31/01."
+msgid "If the values for month and day are out of bounds, they are carried over to the next digit. If you enter <item type=\"input\">=DATE(00;12;31)</item> the result will be 2000-12-31. If, on the other hand, you enter <item type=\"input\">=DATE(00;13;31)</item> the result will be 2001-01-31."
 msgstr "Als de waarden voor maand en dag buiten de grenzen liggen, worden zij overgedragen naar het volgende cijfer. Als u invoert <item type=\"input\">=DATUM(00;12;31)</item> zal het resultaat 31-12-00 zijn. Als u echter invoert <item type=\"input\">=DATUM(00;13;31)</item> zal het resultaat 31-01-01 zijn."
 
 #: func_date.xhp
@@ -63791,16 +63806,15 @@ msgctxt ""
 "par_id4581301219753\n"
 "help.text"
 msgid "<item type=\"input\">=IMCOS(\"4-3i\")</item><br/>                returns -6.58066304055116-7.58155274274654i."
-msgstr ""
+msgstr "<item type=\"input\">=IMCOS(\"4-3i\")</item><br/> geeft -6.58066304055116-7.58155274274654i."
 
 #: func_imcos.xhp
-#, fuzzy
 msgctxt ""
 "func_imcos.xhp\n"
 "par_id25412646522614\n"
 "help.text"
 msgid "<item type=\"input\">=IMCOS(2)</item><br/>returns -0.416146836547142 as a string. <embedvar href=\"text/scalc/01/ful_func.xhp#func_imag_zero\"/>"
-msgstr "<item type=\"input\">=IMTAN(2)</item><br/>geeft -2,18503986326152 als tekenreeks. <embedvar href=\"text/scalc/01/ful_func.xhp#func_imag_zero\"/>"
+msgstr "<item type=\"input\">=IMCOS(2)</item><br/>geeft -0.416146836547142 als tekenreeks. <embedvar href=\"text/scalc/01/ful_func.xhp#func_imag_zero\"/>"
 
 #: func_imcosh.xhp
 msgctxt ""
@@ -63835,13 +63849,12 @@ msgid "<ahelp hid=\".\"><variable id=\"imcosh_des\">Returns the hyperbolic cosin
 msgstr "<ahelp hid=\".\"><variable id=\"imcosh_des\">Geeft de cosinus hyperbolicus van een complex getal terug.</variable> De cosinus hyperbolicus van een complex getal kan uitgedrukt worden als:</ahelp>"
 
 #: func_imcosh.xhp
-#, fuzzy
 msgctxt ""
 "func_imcosh.xhp\n"
 "par_id16051131322110\n"
 "help.text"
 msgid "IMCOSH(Complex_number)"
-msgstr "C.COS(Complex-getal)"
+msgstr "IMCOSH(Complex getal)"
 
 #: func_imcosh.xhp
 msgctxt ""
@@ -63857,16 +63870,15 @@ msgctxt ""
 "par_id55891471962\n"
 "help.text"
 msgid "<item type=\"input\">=IMCOSH(\"4-3i\")</item><br/>returns -27.0349456030742-3.85115333481178i."
-msgstr ""
+msgstr "<item type=\"input\">=IMCOSH(\"4-3i\")</item><br/>geeft -27.0349456030742-3.85115333481178i."
 
 #: func_imcosh.xhp
-#, fuzzy
 msgctxt ""
 "func_imcosh.xhp\n"
 "par_id152561887112896\n"
 "help.text"
 msgid "<item type=\"input\">=IMCOSH(2)</item><br/>returns 3.76219569108363 as a string. <embedvar href=\"text/scalc/01/ful_func.xhp#func_imag_zero\"/>"
-msgstr "<item type=\"input\">=IMTAN(2)</item><br/>geeft -2,18503986326152 als tekenreeks. <embedvar href=\"text/scalc/01/ful_func.xhp#func_imag_zero\"/>"
+msgstr "<item type=\"input\">=IMCOSH(2)</item><br/>geeft 3.76219569108363 als tekenreeks. <embedvar href=\"text/scalc/01/ful_func.xhp#func_imag_zero\"/>"
 
 #: func_imcot.xhp
 msgctxt ""
@@ -63909,13 +63921,12 @@ msgid "<image id=\"img_id5988220084990\" src=\"res/helpimg/sc_func_imcot.png\"><
 msgstr "<image id=\"img_id5988220084990\" src=\"res/helpimg/sc_func_imcot.png\"><alt id=\"alt_id5988220084990\">cot(a+bi)=cos(a+bi)/sin(a+bi)</alt></image>"
 
 #: func_imcot.xhp
-#, fuzzy
 msgctxt ""
 "func_imcot.xhp\n"
 "par_id16051131322110\n"
 "help.text"
 msgid "IMCOT(Complex_number)"
-msgstr "C.COS(Complex-getal)"
+msgstr "IMCOT(Complex getal)"
 
 #: func_imcot.xhp
 msgctxt ""
@@ -63931,16 +63942,15 @@ msgctxt ""
 "par_id21183436423819\n"
 "help.text"
 msgid "<item type=\"input\">=IMCOT(\"4-3i\")</item><br/>returns 0.00490118239430447+0.999266927805902i."
-msgstr ""
+msgstr "<item type=\"input\">=IMCOT(\"4-3i\")</item><br/>geeft 0.00490118239430447+0.999266927805902i."
 
 #: func_imcot.xhp
-#, fuzzy
 msgctxt ""
 "func_imcot.xhp\n"
 "par_id18472284929530\n"
 "help.text"
 msgid "<item type=\"input\">=IMCOT(2)</item><br/>returns -0.457657554360286 as a string. <embedvar href=\"text/scalc/01/ful_func.xhp#func_imag_zero\"/>"
-msgstr "<item type=\"input\">=IMTAN(2)</item><br/>geeft -2,18503986326152 als tekenreeks. <embedvar href=\"text/scalc/01/ful_func.xhp#func_imag_zero\"/>"
+msgstr "<item type=\"input\">=IMCOT(2)</item><br/>geeft -0.457657554360286 als tekenreeks. <embedvar href=\"text/scalc/01/ful_func.xhp#func_imag_zero\"/>"
 
 #: func_imcsc.xhp
 msgctxt ""
@@ -63983,13 +63993,12 @@ msgid "<image id=\"img_id24404683532568\" src=\"res/helpimg/sc_func_imcsc.png\">
 msgstr "<image id=\"img_id24404683532568\" src=\"res/helpimg/sc_func_imcsc.png\"><alt id=\"alt_id148492012231637\">csc(a+bi)=1/sin(a+bi)</alt></image>"
 
 #: func_imcsc.xhp
-#, fuzzy
 msgctxt ""
 "func_imcsc.xhp\n"
 "par_id30461169611909\n"
 "help.text"
 msgid "IMCSC(Complex_number)"
-msgstr "C.COS(Complex-getal)"
+msgstr "IMCSC(Complex getal)"
 
 #: func_imcsc.xhp
 msgctxt ""
@@ -64005,16 +64014,15 @@ msgctxt ""
 "par_id25692477525537\n"
 "help.text"
 msgid "<item type=\"input\">=IMCSC(\"4-3i\")</item><br/>returns -0.0754898329158637-0.0648774713706355i."
-msgstr ""
+msgstr "<item type=\"input\">=IMCSC(\"4-3i\")</item><br/>geeft -0.0754898329158637-0.0648774713706355i."
 
 #: func_imcsc.xhp
-#, fuzzy
 msgctxt ""
 "func_imcsc.xhp\n"
 "par_id32572967420710\n"
 "help.text"
 msgid "<item type=\"input\">=IMCSC(2)</item><br/>returns 1.09975017029462 as a string. <embedvar href=\"text/scalc/01/ful_func.xhp#func_imag_zero\"/>"
-msgstr "<item type=\"input\">=IMTAN(2)</item><br/>geeft -2,18503986326152 als tekenreeks. <embedvar href=\"text/scalc/01/ful_func.xhp#func_imag_zero\"/>"
+msgstr "<item type=\"input\">=IMCSC(2)</item><br/>geeft 1.09975017029462 als tekenreeks. <embedvar href=\"text/scalc/01/ful_func.xhp#func_imag_zero\"/>"
 
 #: func_imcsch.xhp
 msgctxt ""
@@ -64057,13 +64065,12 @@ msgid "<image id=\"img_id23513691929169\" src=\"res/helpimg/sc_func_imcsch.png\"
 msgstr "<image id=\"img_id23513691929169\" src=\"res/helpimg/sc_func_imcsch.png\"><alt id=\"alt_id313882186926700\">csch(a+bi)=1/sinh(a+bi)</alt></image>"
 
 #: func_imcsch.xhp
-#, fuzzy
 msgctxt ""
 "func_imcsch.xhp\n"
 "par_id30461169611909\n"
 "help.text"
 msgid "IMCSCH(Complex_number)"
-msgstr "C.COS(Complex-getal)"
+msgstr "IMCSCH(Complex getal)"
 
 #: func_imcsch.xhp
 msgctxt ""
@@ -64079,16 +64086,15 @@ msgctxt ""
 "par_id16814232201137\n"
 "help.text"
 msgid "<item type=\"input\">=IMCSCH(\"4-3i\")</item><br/>returns -0.036275889628626+0.0051744731840194i."
-msgstr ""
+msgstr "<item type=\"input\">=IMCSCH(\"4-3i\")</item><br/>geeft -0.036275889628626+0.0051744731840194i."
 
 #: func_imcsch.xhp
-#, fuzzy
 msgctxt ""
 "func_imcsch.xhp\n"
 "par_id2395211576789\n"
 "help.text"
 msgid "<item type=\"input\">=IMCSCH(2)</item><br/>returns 0.275720564771783 as a string. <embedvar href=\"text/scalc/01/ful_func.xhp#func_imag_zero\"/>"
-msgstr "<item type=\"input\">=IMTAN(2)</item><br/>geeft -2,18503986326152 als tekenreeks. <embedvar href=\"text/scalc/01/ful_func.xhp#func_imag_zero\"/>"
+msgstr "<item type=\"input\">=IMCSCH(2)</item><br/>geeft 0.275720564771783 als tekenreeks. <embedvar href=\"text/scalc/01/ful_func.xhp#func_imag_zero\"/>"
 
 #: func_imsec.xhp
 msgctxt ""
@@ -64131,13 +64137,12 @@ msgid "<image id=\"img_id112671346811327\" src=\"res/helpimg/sc_func_imsec.png\"
 msgstr "<image id=\"img_id112671346811327\" src=\"res/helpimg/sc_func_imsec.png\"><alt id=\"alt_id303562937523579\">sec(a+bi)=1/cos(a+bi)</alt></image>"
 
 #: func_imsec.xhp
-#, fuzzy
 msgctxt ""
 "func_imsec.xhp\n"
 "par_id66061624115094\n"
 "help.text"
 msgid "IMSEC(Complex_number)"
-msgstr "C.SIN(ComplexGetal)"
+msgstr "IMSEC(Complex getal)"
 
 #: func_imsec.xhp
 msgctxt ""
@@ -64153,16 +64158,15 @@ msgctxt ""
 "par_id16814232201137\n"
 "help.text"
 msgid "<item type=\"input\">=IMSEC(\"4-3i\")</item><br/>returns -0.0652940278579471+0.0752249603027732i."
-msgstr ""
+msgstr "<item type=\"input\">=IMSEC(\"4-3i\")</item><br/>geeft -0.0652940278579471+0.0752249603027732i."
 
 #: func_imsec.xhp
-#, fuzzy
 msgctxt ""
 "func_imsec.xhp\n"
 "par_id2395211576789\n"
 "help.text"
 msgid "<item type=\"input\">=IMSEC(2)</item><br/>returns -2.40299796172238 as a string. <embedvar href=\"text/scalc/01/ful_func.xhp#func_imag_zero\"/>"
-msgstr "<item type=\"input\">=IMTAN(2)</item><br/>geeft -2,18503986326152 als tekenreeks. <embedvar href=\"text/scalc/01/ful_func.xhp#func_imag_zero\"/>"
+msgstr "<item type=\"input\">=IMSEC(2)</item><br/>geeft -2.40299796172238 als tekenreeks. <embedvar href=\"text/scalc/01/ful_func.xhp#func_imag_zero\"/>"
 
 #: func_imsech.xhp
 msgctxt ""
@@ -64205,13 +64209,12 @@ msgid "<image id=\"img_id8983315386682\" src=\"res/helpimg/sc_func_imsech.png\">
 msgstr "<image id=\"img_id8983315386682\" src=\"res/helpimg/sc_func_imsech.png\"><alt id=\"alt_id9157586510683\">sech(a+bi)=1/cosh(a+bi)</alt></image>"
 
 #: func_imsech.xhp
-#, fuzzy
 msgctxt ""
 "func_imsech.xhp\n"
 "par_id17253876723855\n"
 "help.text"
 msgid "IMSECH(Complex_number)"
-msgstr "C.SIN(ComplexGetal)"
+msgstr "IMSECH(Complex getal)"
 
 #: func_imsech.xhp
 msgctxt ""
@@ -64227,16 +64230,15 @@ msgctxt ""
 "par_id1906826088444\n"
 "help.text"
 msgid "<item type=\"input\">=IMSECH(\"4-3i\")</item><br/>returns -0.0362534969158689+0.00516434460775318i."
-msgstr ""
+msgstr "<item type=\"input\">=IMSECH(\"4-3i\")</item><br/>geeft -0.0362534969158689+0.00516434460775318i."
 
 #: func_imsech.xhp
-#, fuzzy
 msgctxt ""
 "func_imsech.xhp\n"
 "par_id247492030016627\n"
 "help.text"
 msgid "<item type=\"input\">=IMSECH(2)</item><br/>returns 0.26580222883408 as a string. <embedvar href=\"text/scalc/01/ful_func.xhp#func_imag_zero\"/>"
-msgstr "<item type=\"input\">=IMTAN(2)</item><br/>geeft -2,18503986326152 als tekenreeks. <embedvar href=\"text/scalc/01/ful_func.xhp#func_imag_zero\"/>"
+msgstr "<item type=\"input\">=IMSECH(2)</item><br/>geeft 0.26580222883408 als tekenreeks. <embedvar href=\"text/scalc/01/ful_func.xhp#func_imag_zero\"/>"
 
 #: func_imsin.xhp
 msgctxt ""
@@ -64300,16 +64302,15 @@ msgctxt ""
 "par_id5063188419467\n"
 "help.text"
 msgid "<item type=\"input\">=IMSIN(\"4-3i\")</item><br/>returns -7.61923172032141+6.548120040911i."
-msgstr ""
+msgstr "<item type=\"input\">=IMSIN(\"4-3i\")</item><br/>geeft -7.61923172032141+6.548120040911i."
 
 #: func_imsin.xhp
-#, fuzzy
 msgctxt ""
 "func_imsin.xhp\n"
 "par_id1527387141125\n"
 "help.text"
 msgid "<item type=\"input\">=IMSIN(2)</item><br/>returns 0.909297426825682 as a string. <embedvar href=\"text/scalc/01/ful_func.xhp#func_imag_zero\"/>"
-msgstr "<item type=\"input\">=IMTAN(2)</item><br/>geeft -2,18503986326152 als tekenreeks. <embedvar href=\"text/scalc/01/ful_func.xhp#func_imag_zero\"/>"
+msgstr "<item type=\"input\">=IMSIN(2)</item><br/>geeft 0.909297426825682 als tekenreeks. <embedvar href=\"text/scalc/01/ful_func.xhp#func_imag_zero\"/>"
 
 #: func_imsinh.xhp
 msgctxt ""
@@ -64373,16 +64374,15 @@ msgctxt ""
 "par_id5063188419467\n"
 "help.text"
 msgid "<item type=\"input\">=IMSINH(\"4-3i\")</item><br/>returns -27.0168132580039-3.85373803791938i."
-msgstr ""
+msgstr "<item type=\"input\">=IMSINH(\"4-3i\")</item><br/>geeft -27.0168132580039-3.85373803791938i."
 
 #: func_imsinh.xhp
-#, fuzzy
 msgctxt ""
 "func_imsinh.xhp\n"
 "par_id1527387141125\n"
 "help.text"
 msgid "<item type=\"input\">=IMSINH(2)</item><br/>returns 3.62686040784702 as a string. <embedvar href=\"text/scalc/01/ful_func.xhp#func_imag_zero\"/>"
-msgstr "<item type=\"input\">=IMTAN(2)</item><br/>geeft -2,18503986326152 als tekenreeks. <embedvar href=\"text/scalc/01/ful_func.xhp#func_imag_zero\"/>"
+msgstr "<item type=\"input\">=IMSINH(2)</item><br/>geeft 3.62686040784702 als tekenreeks. <embedvar href=\"text/scalc/01/ful_func.xhp#func_imag_zero\"/>"
 
 #: func_imsinh.xhp
 msgctxt ""
@@ -65129,16 +65129,15 @@ msgctxt ""
 "tit\n"
 "help.text"
 msgid "SKEWP function"
-msgstr ""
+msgstr "SCHEEFHEIDP-functie"
 
 #: func_skewp.xhp
-#, fuzzy
 msgctxt ""
 "func_skewp.xhp\n"
 "bm_id1102201617201921\n"
 "help.text"
 msgid "<bookmark_value>skewness;population</bookmark_value>  <bookmark_value>SKEWP function</bookmark_value>"
-msgstr "<bookmark_value>NORM.VERD-functie</bookmark_value><bookmark_value>dichtheidsfunctie</bookmark_value>"
+msgstr "<bookmark_value>scheefheid;populatie</bookmark_value> <bookmark_value>SCHEEFHEID-functie</bookmark_value>"
 
 #: func_skewp.xhp
 msgctxt ""
@@ -65154,16 +65153,15 @@ msgctxt ""
 "par_id1102201617001848\n"
 "help.text"
 msgid "<ahelp hid=\".\">Calculates the skewness of a distribution using the population of a random variable.</ahelp>"
-msgstr ""
+msgstr "<ahelp hid=\".\">Berekent de scheefheid van een verdeling door gebruik te maken van de populatie van een willekeurige variabele.</ahelp>"
 
 #: func_skewp.xhp
-#, fuzzy
 msgctxt ""
 "func_skewp.xhp\n"
 "par_id27421466710275\n"
 "help.text"
 msgid "SKEWP(Number1; Number2;..., Number30)"
-msgstr "SCHEEFHEID(Getal1; Getal2; ...Getal30)"
+msgstr "SCHEEFHEIDP(Getal1; Getal2; ..., Getal30)"
 
 #: func_skewp.xhp
 msgctxt ""
@@ -65179,7 +65177,7 @@ msgctxt ""
 "par_id242131304315587\n"
 "help.text"
 msgid "Calculates the skewness of a distribution using the population, i.e. the possible outcomes, of a random variable. The sequence shall contain three numbers at least."
-msgstr ""
+msgstr "Berekent de scheefheid van een verdeling door gebruik te maken van de populatie, d.w.z. de mogelijke uitkomsten van een willekeurige variabele. De reeks moet tenminste drie getallen bevatten."
 
 #: func_skewp.xhp
 msgctxt ""
@@ -65187,7 +65185,7 @@ msgctxt ""
 "par_id1102201617001888\n"
 "help.text"
 msgid "<item type=\"literal\">SKEWP(2;3;1;6;8;5)</item> returns 0.2828158928"
-msgstr ""
+msgstr "<item type=\"literal\">SCHEEFHEIDP(2;3;1;6;8;5)</item> geeft 0.2828158928"
 
 #: func_skewp.xhp
 msgctxt ""
@@ -65195,7 +65193,7 @@ msgctxt ""
 "par_id1102201618185378\n"
 "help.text"
 msgid "<item type=\"literal\">SKEWP(A1:A6)</item> returns 0.2828158928, when the range A1:A6 contains {2;3;1;6;8;5}"
-msgstr ""
+msgstr "<item type=\"literal\">SCHEEFHEIDP(A1:A6)</item> geeft 0.2828158928, wanneer het bereik A1:A6 {2;3;1;6;8;5} bevat."
 
 #: func_skewp.xhp
 msgctxt ""
@@ -65203,7 +65201,7 @@ msgctxt ""
 "par_id1102201618185326\n"
 "help.text"
 msgid "<item type=\"literal\">SKEWP(Number1;Number2)</item> returns zero always, if Number1 and Number2 results in two numbers."
-msgstr ""
+msgstr "<item type=\"literal\">SCHEEFHEIDP(Getal1;Getal2)</item> geeft altijd nul, als Getal1 en Getal2 resulteren in 2 getallen."
 
 #: func_skewp.xhp
 msgctxt ""
@@ -65211,7 +65209,7 @@ msgctxt ""
 "par_id1102201618188326\n"
 "help.text"
 msgid "<item type=\"literal\">SKEWP(Number1)</item> returns Err:502 (Invalid argument) if Number1 results in one number, because SKEWP cannot be calculated with one value."
-msgstr ""
+msgstr "<item type=\"literal\">SCHEEFHEIDP(Getal1)</item> geeft Fout:502 (Ongeldig argument) als Getal1 resulteert in één getal, omdat SCHEEFHEIDP niet berekend kan worden met één waarde."
 
 #: func_skewp.xhp
 msgctxt ""
@@ -65219,7 +65217,7 @@ msgctxt ""
 "par_id14337286612130\n"
 "help.text"
 msgid "<link href=\"text/scalc/01/04060185.xhp#skew\">SKEW</link>"
-msgstr ""
+msgstr "<link href=\"text/scalc/01/04060185.xhp#skew\">SCHEEFHEID</link>"
 
 #: func_sumifs.xhp
 msgctxt ""
@@ -65315,7 +65313,7 @@ msgctxt ""
 "par_id14734320631377\n"
 "help.text"
 msgid "<emph>Sum_Range</emph> and <emph>Criterion_range1, Criterion_range2...</emph> must have the same size or the function returns err:502 - Invalid argument."
-msgstr ""
+msgstr "<emph>Bereik som</emph> en<emph>criteria1 Bereik1, criteria2 bereik2...</emph> moeten hetzelfde formaat hebben anders geeft de functie fout:502 - Ongeldig argument."
 
 #: func_sumifs.xhp
 msgctxt ""
@@ -65331,7 +65329,7 @@ msgctxt ""
 "par_id175721789527973\n"
 "help.text"
 msgid "If a cell contains TRUE, it is treated as 1, if a cell contains FALSE – as 0 (zero)."
-msgstr ""
+msgstr "Als een cel WAAR bevat, wordt het behandeld als 1, als een cel ONWAAR bevat als 0."
 
 #: func_sumifs.xhp
 msgctxt ""
@@ -66508,12 +66506,13 @@ msgid "Example"
 msgstr "Voorbeeld"
 
 #: func_weeknumadd.xhp
+#, fuzzy
 msgctxt ""
 "func_weeknumadd.xhp\n"
 "par_id3149973\n"
 "229\n"
 "help.text"
-msgid "In which week number does 12/24/2001 fall?"
+msgid "In which week number does 2001-12-24 fall?"
 msgstr "In welk weeknummer valt 24-12-2001?"
 
 #: func_weeknumadd.xhp
@@ -66942,13 +66941,12 @@ msgid "Solver"
 msgstr "Oplosser"
 
 #: solver.xhp
-#, fuzzy
 msgctxt ""
 "solver.xhp\n"
 "bm_id7654652\n"
 "help.text"
 msgid "<bookmark_value>goal seeking;solver</bookmark_value>  <bookmark_value>what if operations;solver</bookmark_value>  <bookmark_value>back-solving</bookmark_value>  <bookmark_value>solver</bookmark_value>"
-msgstr "<bookmark_value>doel zoeken;oplosser</bookmark_value><bookmark_value>'wat-als'-bewerkingen;oplosser</bookmark_value><bookmark_value>terugrekenen oplosser</bookmark_value><bookmark_value>oplosser</bookmark_value>"
+msgstr "<bookmark_value>doel zoeken;oplosser</bookmark_value> <bookmark_value>wat-als bewerkingen;oplosser</bookmark_value> <bookmark_value>terugrekenen oplosser</bookmark_value> <bookmark_value>oplosser</bookmark_value>"
 
 #: solver.xhp
 msgctxt ""
@@ -66959,7 +66957,6 @@ msgid "<variable id=\"solver\"><link href=\"text/scalc/01/solver.xhp\">Solver</l
 msgstr "<variable id=\"solver\"><link href=\"text/scalc/01/solver.xhp\">Oplosser</link></variable>"
 
 #: solver.xhp
-#, fuzzy
 msgctxt ""
 "solver.xhp\n"
 "par_id9210486\n"
@@ -67152,13 +67149,12 @@ msgid "<ahelp hid=\".\" visibility=\"hidden\">Configure the current solver.</ahe
 msgstr "<ahelp hid=\".\" visibility=\"hidden\">Configureer de huidige oplosserfunctie.</ahelp>"
 
 #: solver_options.xhp
-#, fuzzy
 msgctxt ""
 "solver_options.xhp\n"
 "par_id6531266\n"
 "help.text"
 msgid "<ahelp hid=\".\" visibility=\"hidden\">If the current entry in the Settings listbox allows you to edit a value, you can click the Edit button. A dialog opens where you can change the value.</ahelp>"
-msgstr "<ahelp hid=\".\" visibility=\"hidden\">U kunt op de knop Bewerken klikken als het huidige item in de keuzelijst Instellingen kan worden bewerkt. Een dialoogvenster opent waar u de waarde kunt veranderen.</ahelp>"
+msgstr "<ahelp hid=\".\" visibility=\"hidden\">U kunt op de knop Bewerken klikken als het huidige item in de keuzelijst Instellingen kan worden bewerkt. Een dialoogvenster opent waarin u de waarde kunt veranderen.</ahelp>"
 
 #: solver_options.xhp
 msgctxt ""
@@ -69230,15 +69226,16 @@ msgctxt ""
 "par_id1001280\n"
 "help.text"
 msgid "Set the regression type. Three types are available:"
-msgstr ""
+msgstr "Stel het soort regressie in. Er zijn drie soorten beschikbaar:"
 
 #: statistics_regression.xhp
+#, fuzzy
 msgctxt ""
 "statistics_regression.xhp\n"
 "par_id1701201620334364\n"
 "help.text"
-msgid "<emph>Linear Regression</emph>: find a strait line in the form of <item type=\"literal\">y = a.x + b</item>, where <item type=\"literal\">a</item> is the slope and <item type=\"literal\">b</item> is the intercept that best fits the data."
-msgstr ""
+msgid "<emph>Linear Regression</emph>: find a straight line in the form of <item type=\"literal\">y = a.x + b</item>, where <item type=\"literal\">a</item> is the slope and <item type=\"literal\">b</item> is the intercept that best fits the data."
+msgstr "<emph>Lineare regressie</emph>: geeft een rechte lijn in het formulier van <item type=\"literal\">y = a.x + b</item>, waar<item type=\"literal\">a</item> de stijging is en <item type=\"literal\">b</item> het snijpunt is dat het beste past bij de gegevens."
 
 #: statistics_regression.xhp
 msgctxt ""
@@ -69246,7 +69243,7 @@ msgctxt ""
 "par_id1701201620340168\n"
 "help.text"
 msgid "<emph>Logarithmic regression</emph>: find a logarithmic curve in the form of <item type=\"literal\">y = a.ln(x) + b</item>, where <item type=\"literal\">a</item> is the slope, <item type=\"literal\">b</item> is the intercept and <item type=\"literal\">ln(x)</item> is the natural logarithm of <item type=\"literal\">x</item>, that best fits the data."
-msgstr ""
+msgstr "<emph>Logaritmische regressie</emph>: geeft een logarithmische kromming in het formulier van <item type=\"literal\">y = a.ln(x) + b</item>, waar<item type=\"literal\">a</item> de stijging is, <item type=\"literal\">b</item> het snijpunt is en <item type=\"literal\">ln(x)</item> is het gewone logaritme van <item type=\"literal\">x</item>, dat het beste past bij de gegevens."
 
 #: statistics_regression.xhp
 msgctxt ""
@@ -69254,7 +69251,7 @@ msgctxt ""
 "par_id1701201620340139\n"
 "help.text"
 msgid "<emph>Power regression</emph>: Find a power curve in the form of <item type=\"literal\">y = a.x^b</item>, where <item type=\"literal\">a</item> is the slope, <item type=\"literal\">b</item> is the intercept that best fits the data."
-msgstr ""
+msgstr "<emph>Machtregressie</emph>: Geeft een sterke kromming in het formulier van <item type=\"literal\">y = a.x^b</item>, waar<item type=\"literal\">a</item> de stijging is, <item type=\"literal\">b</item> het snijpunt is dat het beste past bij de gegevens."
 
 #: statistics_regression.xhp
 msgctxt ""
@@ -69262,7 +69259,7 @@ msgctxt ""
 "par_id1001310\n"
 "help.text"
 msgid "The results of the three types of <emph>regression analysis</emph> of the measurements in the table above are shown below."
-msgstr ""
+msgstr "De uitkomsten van de drie soorten <emph>regressie analyses</emph> van de inhoud van de tabel hierboven worden hieronder weergegeven."
 
 #: statistics_regression.xhp
 msgctxt ""
@@ -69342,7 +69339,7 @@ msgctxt ""
 "par_id14337286612130\n"
 "help.text"
 msgid "<link href=\"text/scalc/01/statistics.xhp#datasampling\">Sampling</link>, <link href=\"text/scalc/01/statistics.xhp#descriptivestatistics\">Descriptive Statistics</link>, <link href=\"text/scalc/01/statistics.xhp#anova\">Analysis of Variance (ANOVA)</link>, <link href=\"text/scalc/01/statistics.xhp#correlation\">Correlation</link>, <link href=\"text/scalc/01/statistics.xhp#covariance\">Covariance</link>, <link href=\"text/scalc/01/statistics.xhp#exponentialsmoothing\">Exponential Smoothing</link>, <link href=\"text/scalc/01/statistics.xhp#movingaverage\">Moving Average</link>, <link href=\"text/scalc/01/statistics.xhp#ttest\">t-test</link>, <link href=\"text/scalc/01/statistics.xhp#ftest\">F-test</link>, <link href=\"text/scalc/01/statistics.xhp#ztest\">Z-test</link>, <link href=\"text/scalc/01/statistics.xhp#chisqtest\">Chi-square test</link>."
-msgstr ""
+msgstr "<link href=\"text/scalc/01/statistics.xhp#datasampling\">Steekproefneming</link>, <link href=\"text/scalc/01/statistics.xhp#descriptivestatistics\">Beschrijvende statistieken</link>, <link href=\"text/scalc/01/statistics.xhp#anova\">Variatieanalyse (ANOVA)</link>, <link href=\"text/scalc/01/statistics.xhp#correlation\">Correlatie</link>, <link href=\"text/scalc/01/statistics.xhp#covariance\">Covariantie</link>, <link href=\"text/scalc/01/statistics.xhp#exponentialsmoothing\">Exponentiële afvlakking</link>, <link href=\"text/scalc/01/statistics.xhp#movingaverage\">Voortschrijdend gemiddelde</link>, <link href=\"text/scalc/01/statistics.xhp#ttest\">t-test</link>, <link href=\"text/scalc/01/statistics.xhp#ftest\">F-test</link>, <link href=\"text/scalc/01/statistics.xhp#ztest\">Z-test</link>, <link href=\"text/scalc/01/statistics.xhp#chisqtest\">Chi-square test</link>."
 
 #: text2columns.xhp
 msgctxt ""

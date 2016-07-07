@@ -3,9 +3,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2016-05-23 22:09+0200\n"
-"PO-Revision-Date: 2016-05-02 12:19+0000\n"
-"Last-Translator: Anonymous Pootle User\n"
+"POT-Creation-Date: 2016-07-04 16:53+0200\n"
+"PO-Revision-Date: 2016-05-24 13:12+0000\n"
+"Last-Translator: Gábor Kelemen <kelemeng@gnome.hu>\n"
 "Language-Team: Magyar <gnome-hu-list at gnome dot org>\n"
 "Language: hu\n"
 "MIME-Version: 1.0\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Accelerator-Marker: ~\n"
 "X-Generator: LibreOffice\n"
-"X-POOTLE-MTIME: 1462191571.000000\n"
+"X-POOTLE-MTIME: 1464095522.000000\n"
 
 #: 01120000.xhp
 msgctxt ""
@@ -4477,12 +4477,13 @@ msgid "<item type=\"input\">DCOUNT</item>"
 msgstr "<item type=\"input\">AB.DARAB</item>"
 
 #: 04060101.xhp
+#, fuzzy
 msgctxt ""
 "04060101.xhp\n"
 "par_id3149282\n"
 "83\n"
 "help.text"
-msgid "The formula in cell B16 is =DCOUNT(A1:E10;0;A13:E14)"
+msgid "The formula in cell B16 is =DCOUNT(A1:E10;D1;A13:E14)"
 msgstr "A B16 cellában levő képlet =AB.DARAB(A1:E10;0;A13:E14)"
 
 #: 04060101.xhp
@@ -4513,14 +4514,13 @@ msgid "<emph>Database</emph> is the cell range defining the database."
 msgstr "Az <emph>adatbázis</emph> az adatbázist meghatározó cellatartomány."
 
 #: 04060101.xhp
-#, fuzzy
 msgctxt ""
 "04060101.xhp\n"
 "par_id3151272\n"
 "86\n"
 "help.text"
-msgid "<emph>DatabaseField</emph> specifies the column where the function operates on after the search criteria of the first parameter is applied and the data rows are selected. It is not related to the search criteria itself. Use the number 0 to specify the whole data range. <variable id=\"quotes\">To reference a column by means of the column header name, place quotation marks around the header name.</variable>"
-msgstr "Az <emph>adatbázismező</emph> megadja azt az oszlopot, amelyben a függvény működik, miután az első paraméter keresési feltételét alkalmazta a program, és az adatsorok ki vannak választva. Nem kapcsolódik magához a keresési feltételhez. A 0 számmal megadhatja a teljes adattartományt. <variable id=\"quotes\">Ha egy oszlopra az oszlop fejlécének nevével akar hivatkozni, akkor tegye a fejléc nevét idézőjelek közé. </variable>"
+msgid "<emph>DatabaseField</emph> specifies the column where the function operates on after the search criteria of the first parameter is applied and the data rows are selected. It is not related to the search criteria itself. <variable id=\"quotes\">For the DatabaseField parameter you can enter a reference to a header cell or a number to specify the column within the Database area, starting with 1. To reference a column by means of the literal column header name, place quotation marks around the header name.</variable>"
+msgstr ""
 
 #: 04060101.xhp
 msgctxt ""
@@ -4566,12 +4566,13 @@ msgid "DCOUNT"
 msgstr "AB.DARAB"
 
 #: 04060101.xhp
+#, fuzzy
 msgctxt ""
 "04060101.xhp\n"
 "par_id3156133\n"
 "89\n"
 "help.text"
-msgid "<ahelp hid=\"HID_FUNC_DBANZAHL\">DCOUNT counts the number of rows (records) in a database that match the specified search criteria and contain numerical values.</ahelp>"
+msgid "<ahelp hid=\"HID_FUNC_DBANZAHL\">DCOUNT counts the number of rows (records) in a database that match the specified search criteria and contain numerical values in the DatabaseField column.</ahelp>"
 msgstr "<ahelp hid=\"HID_FUNC_DBANZAHL\">Az AB.DARAB függvény megszámlálja azokat a számokat tartalmazó sorokat (rekordokat) egy adatbázisban, amelyek megfelelnek a megadott keresési feltételnek.</ahelp>"
 
 #: 04060101.xhp
@@ -4584,12 +4585,13 @@ msgid "Syntax"
 msgstr "Szintaxis"
 
 #: 04060101.xhp
+#, fuzzy
 msgctxt ""
 "04060101.xhp\n"
 "par_id3153218\n"
 "91\n"
 "help.text"
-msgid "DCOUNT(Database; DatabaseField; SearchCriteria)"
+msgid "DCOUNT(Database; [DatabaseField]; SearchCriteria)"
 msgstr "AB.DARAB(adatbázis; adatbázismező; keresési_feltétel)"
 
 #: 04060101.xhp
@@ -4598,8 +4600,8 @@ msgctxt ""
 "par_id3153273\n"
 "187\n"
 "help.text"
-msgid "For the DatabaseField parameter you can enter a cell to specify the column, or enter the number 0 for the entire database. The parameter cannot be empty. <embedvar href=\"text/scalc/01/04060101.xhp#quotes\"/>"
-msgstr "Az adatbázismező paraméterbe az oszlopot meghatározó cellát írja be, vagy a 0 értéket a teljes adatbázis megadásához. Ez a paraméter nem lehet üres. <embedvar href=\"text/scalc/01/04060101.xhp#quotes\"/>"
+msgid "If the DatabaseField argument is omitted, DCOUNT returns the count of all records that satisfy Criteria. <embedvar href=\"text/scalc/01/04060101.xhp#quotes\"/>"
+msgstr ""
 
 #: 04060101.xhp
 msgctxt ""
@@ -4611,21 +4613,23 @@ msgid "Example"
 msgstr "Példa"
 
 #: 04060101.xhp
+#, fuzzy
 msgctxt ""
 "04060101.xhp\n"
 "par_id3153623\n"
 "93\n"
 "help.text"
-msgid "In the example above (scroll up, please), we want to know how many children have to travel more than 600 meters to school. The result is to be stored in cell B16. Set the cursor in cell B16. Enter the formula <item type=\"input\">=DCOUNT(A1:E10;0;A13:E14)</item> in B16. The <emph>Function Wizard</emph> helps you to input ranges."
+msgid "In the example above (scroll up, please), we want to know how many children have to travel more than 600 meters to school. The result is to be stored in cell B16. Set the cursor in cell B16. Enter the formula <item type=\"input\">=DCOUNT(A1:E10;D1;A13:E14)</item> in B16. The <emph>Function Wizard</emph> helps you to input ranges."
 msgstr "A fenti példából (görgessen fel) ki akarja deríteni, hogy hány gyereknek kell 600 méternél többet utaznia az iskolába. Az eredmény a B16-os cellában jelenjen meg. Mozgassa a kurzort a B16-os cellába. Írja be az <item type=\"input\">=AB.DARAB(A1:E10;0;A13:E14)</item> képletet a B16-os cellába. A <emph>Függvénytündér</emph> segítséget nyújt a tartományok bevitelében."
 
 #: 04060101.xhp
+#, fuzzy
 msgctxt ""
 "04060101.xhp\n"
 "par_id3149142\n"
 "94\n"
 "help.text"
-msgid "<emph>Database</emph> is the range of data to be evaluated, including its headers: in this case A1:E10. <emph>DatabaseField</emph> specifies the column for the search criteria: in this case, the whole database. <emph>SearchCriteria</emph> is the range where you can enter the search parameters: in this case, A13:E14."
+msgid "<emph>Database</emph> is the range of data to be evaluated, including its headers: in this case A1:E10. <emph>DatabaseField</emph> specifies the column for the search criteria: in this case, the column with the numerical distance values. <emph>SearchCriteria</emph> is the range where you can enter the search parameters: in this case, A13:E14."
 msgstr "Az <emph>adatbázis</emph> a kiértékelendő adattartomány, beleértve a fejléceket is: ebben az esetben A1:E10. Az <emph>adatbázismező</emph> megadja az oszlopot a keresési feltétel számára: ebben az esetben a teljes adatbázis. A <emph>keresési_feltétel</emph> az a tartomány, ahol keresési paramétereket adhat meg: ebben az esetben A13:E14."
 
 #: 04060101.xhp
@@ -4673,13 +4677,23 @@ msgid "Syntax"
 msgstr "Szintaxis"
 
 #: 04060101.xhp
+#, fuzzy
 msgctxt ""
 "04060101.xhp\n"
 "par_id3146893\n"
 "100\n"
 "help.text"
-msgid "DCOUNTA(Database; DatabaseField; SearchCriteria)"
+msgid "DCOUNTA(Database; [DatabaseField]; SearchCriteria)"
 msgstr "AB.DARAB2(adatbázis; adatbázismező; keresési_feltétel)"
+
+#: 04060101.xhp
+msgctxt ""
+"04060101.xhp\n"
+"par_id3153274\n"
+"189\n"
+"help.text"
+msgid "If the DatabaseField argument is omitted, DCOUNTA returns the count of all records that satisfy Criteria. <embedvar href=\"text/scalc/01/04060101.xhp#quotes\"/>"
+msgstr ""
 
 #: 04060101.xhp
 msgctxt ""
@@ -5680,8 +5694,8 @@ msgctxt ""
 "par_id3150654\n"
 "185\n"
 "help.text"
-msgid "When entering dates, slashes or dashes used as date separators may be interpreted as arithmetic operators. Therefore, dates entered in this format are not always recognized as dates and result in erroneous calculations. To keep dates from being interpreted as parts of formulas, place them in quotation marks, for example, \"07/20/54\"."
-msgstr "A dátumok megadása során a dátumelválasztóként használt törtjelek és kötőjelek aritmetikai operátorként is értelmezhetők. Ennek következtében az adott formátumban megadott dátumok nem mindig dátumként kerülnek felismerésre, ami hibás számításokat eredményez. Ha biztosítani kívánja, hogy a dátumok ne a képlet részeként kerüljenek értelmezésre, akkor a dátumokat idézőjelek között adja meg (például: \"54/07/20\")."
+msgid "When entering dates as part of formulas, slashes or dashes used as date separators are interpreted as arithmetic operators. Therefore, dates entered in this format are not recognized as dates and result in erroneous calculations. To keep dates from being interpreted as parts of formulas use the DATE function, for example, DATE(1954;7;20), or place the date in quotation marks and use the ISO 8601 notation, for example, \"1954-07-20\". Avoid using locale dependent date formats such as \"07/20/54\", the calculation may produce errors if the document is loaded under different locale settings."
+msgstr ""
 
 #: 04060102.xhp
 msgctxt ""
@@ -9818,19 +9832,21 @@ msgid "<item type=\"input\">=N(123)</item> returns 123"
 msgstr "Az <item type=\"input\">=N(123)</item> a 123 értéket adja vissza."
 
 #: 04060104.xhp
+#, fuzzy
 msgctxt ""
 "04060104.xhp\n"
 "par_id2337717\n"
 "help.text"
-msgid "<item type=\"input\">=N(TRUE)</item> returns 1"
+msgid "<item type=\"input\">=N(TRUE())</item> returns 1"
 msgstr "Az <item type=\"input\">=N(IGAZ)</item> az 1 értéket adja vissza."
 
 #: 04060104.xhp
+#, fuzzy
 msgctxt ""
 "04060104.xhp\n"
 "par_id3153781\n"
 "help.text"
-msgid "<item type=\"input\">=N(FALSE)</item> returns 0"
+msgid "<item type=\"input\">=N(FALSE())</item> returns 0"
 msgstr "Az <item type=\"input\">=N(HAMIS)</item> függvény a 0 értéket adja vissza."
 
 #: 04060104.xhp
@@ -25754,12 +25770,13 @@ msgid "Syntax"
 msgstr "Szintaxis"
 
 #: 04060111.xhp
+#, fuzzy
 msgctxt ""
 "04060111.xhp\n"
 "par_id3150205\n"
 "17\n"
 "help.text"
-msgid "ISLEAPYEAR(\"Date\")"
+msgid "ISLEAPYEAR(Date)"
 msgstr "ISLEAPYEAR(\"dátum\")"
 
 #: 04060111.xhp
@@ -25768,8 +25785,8 @@ msgctxt ""
 "par_id3159239\n"
 "18\n"
 "help.text"
-msgid "<emph>Date</emph> specifies whether a given date falls within a leap year. The Date parameter must be a valid date according to the locale settings of %PRODUCTNAME."
-msgstr "A függvény meghatározza, hogy a megadott <emph>dátum</emph> szökőévre esik-e. A dátum paraméternek a %PRODUCTNAME területi beállításai szerinti érvényes dátumnak kell lennie."
+msgid "<emph>Date</emph> specifies whether a given date falls within a leap year. The Date parameter must be a valid date."
+msgstr ""
 
 #: 04060111.xhp
 msgctxt ""
@@ -25794,8 +25811,8 @@ msgctxt ""
 "04060111.xhp\n"
 "par_idN107E7\n"
 "help.text"
-msgid "You may also use =ISLEAPYEAR(\"1968-02-29\") or =ISLEAPYEAR(\"2/29/68\")."
-msgstr "Használhatja az =ISLEAPYEAR(\"1968-02-29\") vagy az =ISLEAPYEAR(\"2/29/68\") képletet is."
+msgid "You may also use =ISLEAPYEAR(DATE(1968;2;29)) or =ISLEAPYEAR(\"1968-02-29\") giving the date string in the ISO 8601 notation."
+msgstr ""
 
 #: 04060111.xhp
 msgctxt ""
@@ -61912,12 +61929,13 @@ msgid "<emph>Day</emph> is an integer indicating the day of the month."
 msgstr "A <emph>nap</emph> a hónap napját jelölő egész szám."
 
 #: func_date.xhp
+#, fuzzy
 msgctxt ""
 "func_date.xhp\n"
 "par_id3156260\n"
 "10\n"
 "help.text"
-msgid "If the values for month and day are out of bounds, they are carried over to the next digit. If you enter <item type=\"input\">=DATE(00;12;31)</item> the result will be 12/31/00. If, on the other hand, you enter <item type=\"input\">=DATE(00;13;31)</item> the result will be 1/31/01."
+msgid "If the values for month and day are out of bounds, they are carried over to the next digit. If you enter <item type=\"input\">=DATE(00;12;31)</item> the result will be 2000-12-31. If, on the other hand, you enter <item type=\"input\">=DATE(00;13;31)</item> the result will be 2001-01-31."
 msgstr "Ha a hónapot, illetve napot jelölő értékek kívül esnek a tartományon, akkor azok átvitelre kerülnek a következő számjegyre. A <item type=\"input\">=DÁTUM(2000;12;31)</item> képlet a „2000-12-31” értéket adja vissza. Azonban a <item type=\"input\">=DÁTUM(2000;13;31)</item> képlet a „2001-01-31” értéket adja vissza."
 
 #: func_date.xhp
@@ -66773,7 +66791,7 @@ msgctxt ""
 "par_id3149973\n"
 "229\n"
 "help.text"
-msgid "In which week number does 12/24/2001 fall?"
+msgid "In which week number does 2001-12-24 fall?"
 msgstr "Melyik hétre esik 2001. december 24-e?"
 
 #: func_weeknumadd.xhp
@@ -69524,7 +69542,7 @@ msgctxt ""
 "statistics_regression.xhp\n"
 "par_id1701201620334364\n"
 "help.text"
-msgid "<emph>Linear Regression</emph>: find a strait line in the form of <item type=\"literal\">y = a.x + b</item>, where <item type=\"literal\">a</item> is the slope and <item type=\"literal\">b</item> is the intercept that best fits the data."
+msgid "<emph>Linear Regression</emph>: find a straight line in the form of <item type=\"literal\">y = a.x + b</item>, where <item type=\"literal\">a</item> is the slope and <item type=\"literal\">b</item> is the intercept that best fits the data."
 msgstr ""
 
 #: statistics_regression.xhp
