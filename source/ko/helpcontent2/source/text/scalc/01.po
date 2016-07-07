@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2016-05-23 22:09+0200\n"
-"PO-Revision-Date: 2016-05-02 12:42+0000\n"
+"POT-Creation-Date: 2016-07-04 16:53+0200\n"
+"PO-Revision-Date: 2016-05-24 16:36+0000\n"
 "Last-Translator: Anonymous Pootle User\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: ko\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Accelerator-Marker: ~\n"
 "X-Generator: LibreOffice\n"
-"X-POOTLE-MTIME: 1462192948.000000\n"
+"X-POOTLE-MTIME: 1464107815.000000\n"
 
 #: 01120000.xhp
 msgctxt ""
@@ -4510,12 +4510,13 @@ msgid "<item type=\"input\">DCOUNT</item>"
 msgstr "<item type=\"input\">DCOUNT</item>"
 
 #: 04060101.xhp
+#, fuzzy
 msgctxt ""
 "04060101.xhp\n"
 "par_id3149282\n"
 "83\n"
 "help.text"
-msgid "The formula in cell B16 is =DCOUNT(A1:E10;0;A13:E14)"
+msgid "The formula in cell B16 is =DCOUNT(A1:E10;D1;A13:E14)"
 msgstr "셀 B16의 수식은 =DCOUNT(A1:E10;0;A13:E14)입니다."
 
 #: 04060101.xhp
@@ -4546,14 +4547,13 @@ msgid "<emph>Database</emph> is the cell range defining the database."
 msgstr "<emph>데이터베이스</emph>는 데이터베이스를 정의하는 셀 영역입니다."
 
 #: 04060101.xhp
-#, fuzzy
 msgctxt ""
 "04060101.xhp\n"
 "par_id3151272\n"
 "86\n"
 "help.text"
-msgid "<emph>DatabaseField</emph> specifies the column where the function operates on after the search criteria of the first parameter is applied and the data rows are selected. It is not related to the search criteria itself. Use the number 0 to specify the whole data range. <variable id=\"quotes\">To reference a column by means of the column header name, place quotation marks around the header name.</variable>"
-msgstr "<emph>데이터필드</emph> 는 첫번째 매개 변수의 검색 조건이 적용되고 데이터 행이 선택된 이후에 함수가 적용될 열을 지정합니다. 이는 검색 조건과는 무관합니다. 전체 범위를 선택하려면 0을 입력하십시오. <variable id=\"quotes\">열의 헤더 이름으로 열을 참조하려면, 헤더 이름에 좌우에 인용부호를 붙이십시오.</variable>"
+msgid "<emph>DatabaseField</emph> specifies the column where the function operates on after the search criteria of the first parameter is applied and the data rows are selected. It is not related to the search criteria itself. <variable id=\"quotes\">For the DatabaseField parameter you can enter a reference to a header cell or a number to specify the column within the Database area, starting with 1. To reference a column by means of the literal column header name, place quotation marks around the header name.</variable>"
+msgstr ""
 
 #: 04060101.xhp
 msgctxt ""
@@ -4599,12 +4599,13 @@ msgid "DCOUNT"
 msgstr "DCOUNT"
 
 #: 04060101.xhp
+#, fuzzy
 msgctxt ""
 "04060101.xhp\n"
 "par_id3156133\n"
 "89\n"
 "help.text"
-msgid "<ahelp hid=\"HID_FUNC_DBANZAHL\">DCOUNT counts the number of rows (records) in a database that match the specified search criteria and contain numerical values.</ahelp>"
+msgid "<ahelp hid=\"HID_FUNC_DBANZAHL\">DCOUNT counts the number of rows (records) in a database that match the specified search criteria and contain numerical values in the DatabaseField column.</ahelp>"
 msgstr "<ahelp hid=\"HID_FUNC_DBANZAHL\">DCOUNT는 지정된 검색 기준과 일치하며 숫자 값을 포함하는 데이터베이스의 행(레코드) 수를 계산합니다.</ahelp>"
 
 #: 04060101.xhp
@@ -4617,12 +4618,13 @@ msgid "Syntax"
 msgstr "구문"
 
 #: 04060101.xhp
+#, fuzzy
 msgctxt ""
 "04060101.xhp\n"
 "par_id3153218\n"
 "91\n"
 "help.text"
-msgid "DCOUNT(Database; DatabaseField; SearchCriteria)"
+msgid "DCOUNT(Database; [DatabaseField]; SearchCriteria)"
 msgstr "DCOUNT(데이터베이스; 데이터베이스필드; 검색기준)"
 
 #: 04060101.xhp
@@ -4631,8 +4633,8 @@ msgctxt ""
 "par_id3153273\n"
 "187\n"
 "help.text"
-msgid "For the DatabaseField parameter you can enter a cell to specify the column, or enter the number 0 for the entire database. The parameter cannot be empty. <embedvar href=\"text/scalc/01/04060101.xhp#quotes\"/>"
-msgstr "데이터베이스필드 매개변수로 특정 열의 셀을 입력하거나 0을 입력해 데이터베이스 전체를 지정할 수 있습니다. 매개변수값은 비워둘 수 없습니다. <embedvar href=\"text/scalc/01/04060101.xhp#quotes\"/>"
+msgid "If the DatabaseField argument is omitted, DCOUNT returns the count of all records that satisfy Criteria. <embedvar href=\"text/scalc/01/04060101.xhp#quotes\"/>"
+msgstr ""
 
 #: 04060101.xhp
 msgctxt ""
@@ -4644,21 +4646,23 @@ msgid "Example"
 msgstr "예"
 
 #: 04060101.xhp
+#, fuzzy
 msgctxt ""
 "04060101.xhp\n"
 "par_id3153623\n"
 "93\n"
 "help.text"
-msgid "In the example above (scroll up, please), we want to know how many children have to travel more than 600 meters to school. The result is to be stored in cell B16. Set the cursor in cell B16. Enter the formula <item type=\"input\">=DCOUNT(A1:E10;0;A13:E14)</item> in B16. The <emph>Function Wizard</emph> helps you to input ranges."
+msgid "In the example above (scroll up, please), we want to know how many children have to travel more than 600 meters to school. The result is to be stored in cell B16. Set the cursor in cell B16. Enter the formula <item type=\"input\">=DCOUNT(A1:E10;D1;A13:E14)</item> in B16. The <emph>Function Wizard</emph> helps you to input ranges."
 msgstr "위의 예제는(위로 스크롤) 얼마나 많은 학생들이 학교에서 600미터 이상 떨어져 사는지를 알아보기 위한 것입니다. 결과는 B16 셀에 저장할 것이므로, B16 을 선택하고 다음 수식을 입력하십시오. <item type=\"input\">=DCOUNT(A1:E10;0;A13:E14)</item> <emph>함수 마법사</emph>를 이용하면 쉽게 범위를 입력할 수 있습니다."
 
 #: 04060101.xhp
+#, fuzzy
 msgctxt ""
 "04060101.xhp\n"
 "par_id3149142\n"
 "94\n"
 "help.text"
-msgid "<emph>Database</emph> is the range of data to be evaluated, including its headers: in this case A1:E10. <emph>DatabaseField</emph> specifies the column for the search criteria: in this case, the whole database. <emph>SearchCriteria</emph> is the range where you can enter the search parameters: in this case, A13:E14."
+msgid "<emph>Database</emph> is the range of data to be evaluated, including its headers: in this case A1:E10. <emph>DatabaseField</emph> specifies the column for the search criteria: in this case, the column with the numerical distance values. <emph>SearchCriteria</emph> is the range where you can enter the search parameters: in this case, A13:E14."
 msgstr "<emph>데이터베이스</emph> 는 헤더를 포함한 사용할 데이터의 범위입니다.(예제: A1:E10) <emph>데이터베이스필드</emph> 란에는 검색조건에 해당하는 열을 지정합니다.(예제: 데이터베이스 전체) <emph>검색조건</emph> 란에는 검색 매개변수를 범위로 입력합니다.(예제: A13:E14)"
 
 #: 04060101.xhp
@@ -4706,13 +4710,23 @@ msgid "Syntax"
 msgstr "구문"
 
 #: 04060101.xhp
+#, fuzzy
 msgctxt ""
 "04060101.xhp\n"
 "par_id3146893\n"
 "100\n"
 "help.text"
-msgid "DCOUNTA(Database; DatabaseField; SearchCriteria)"
+msgid "DCOUNTA(Database; [DatabaseField]; SearchCriteria)"
 msgstr "DCOUNTA(데이터베이스; 데이터베이스필드; 검색조건)"
+
+#: 04060101.xhp
+msgctxt ""
+"04060101.xhp\n"
+"par_id3153274\n"
+"189\n"
+"help.text"
+msgid "If the DatabaseField argument is omitted, DCOUNTA returns the count of all records that satisfy Criteria. <embedvar href=\"text/scalc/01/04060101.xhp#quotes\"/>"
+msgstr ""
 
 #: 04060101.xhp
 msgctxt ""
@@ -5713,8 +5727,8 @@ msgctxt ""
 "par_id3150654\n"
 "185\n"
 "help.text"
-msgid "When entering dates, slashes or dashes used as date separators may be interpreted as arithmetic operators. Therefore, dates entered in this format are not always recognized as dates and result in erroneous calculations. To keep dates from being interpreted as parts of formulas, place them in quotation marks, for example, \"07/20/54\"."
-msgstr "날짜를 입력할 때 날짜 구분 기호로 사용되는 슬래시나 대시는 산술 연산자로 해석될 수 있습니다. 따라서 이 서식으로 입력한 날짜는 항상 날짜로 인식되는 것은 아니며 결과적으로 계산이 잘못될 수 있습니다. 날짜를 수식의 일부로 해석되게 하려면 날짜를 따옴표로 묶어야 합니다(예: \"07/20/54\")."
+msgid "When entering dates as part of formulas, slashes or dashes used as date separators are interpreted as arithmetic operators. Therefore, dates entered in this format are not recognized as dates and result in erroneous calculations. To keep dates from being interpreted as parts of formulas use the DATE function, for example, DATE(1954;7;20), or place the date in quotation marks and use the ISO 8601 notation, for example, \"1954-07-20\". Avoid using locale dependent date formats such as \"07/20/54\", the calculation may produce errors if the document is loaded under different locale settings."
+msgstr ""
 
 #: 04060102.xhp
 msgctxt ""
@@ -9861,19 +9875,21 @@ msgid "<item type=\"input\">=N(123)</item> returns 123"
 msgstr "<item type=\"input\">=N(123)</item>은 123을 반환합니다."
 
 #: 04060104.xhp
+#, fuzzy
 msgctxt ""
 "04060104.xhp\n"
 "par_id2337717\n"
 "help.text"
-msgid "<item type=\"input\">=N(TRUE)</item> returns 1"
+msgid "<item type=\"input\">=N(TRUE())</item> returns 1"
 msgstr "<item type=\"input\">=N(TRUE)</item>는 1을 반환합니다."
 
 #: 04060104.xhp
+#, fuzzy
 msgctxt ""
 "04060104.xhp\n"
 "par_id3153781\n"
 "help.text"
-msgid "<item type=\"input\">=N(FALSE)</item> returns 0"
+msgid "<item type=\"input\">=N(FALSE())</item> returns 0"
 msgstr "<item type=\"input\">=N(FALSE)</item>는 0을 반환합니다."
 
 #: 04060104.xhp
@@ -25832,12 +25848,13 @@ msgid "Syntax"
 msgstr "구문"
 
 #: 04060111.xhp
+#, fuzzy
 msgctxt ""
 "04060111.xhp\n"
 "par_id3150205\n"
 "17\n"
 "help.text"
-msgid "ISLEAPYEAR(\"Date\")"
+msgid "ISLEAPYEAR(Date)"
 msgstr "ISLEAPYEAR(\"날짜\")"
 
 #: 04060111.xhp
@@ -25846,8 +25863,8 @@ msgctxt ""
 "par_id3159239\n"
 "18\n"
 "help.text"
-msgid "<emph>Date</emph> specifies whether a given date falls within a leap year. The Date parameter must be a valid date according to the locale settings of %PRODUCTNAME."
-msgstr "<emph>날짜</emph>는 특정 날짜가 윤년 안으로 들어가는지의 여부를 지정합니다. 날짜 변수는 %PRODUCTNAME의 로케일 설정에 맞는 날짜 형식이어야 합니다."
+msgid "<emph>Date</emph> specifies whether a given date falls within a leap year. The Date parameter must be a valid date."
+msgstr ""
 
 #: 04060111.xhp
 msgctxt ""
@@ -25872,8 +25889,8 @@ msgctxt ""
 "04060111.xhp\n"
 "par_idN107E7\n"
 "help.text"
-msgid "You may also use =ISLEAPYEAR(\"1968-02-29\") or =ISLEAPYEAR(\"2/29/68\")."
-msgstr "=ISLEAPYEAR(\"1968-02-29\") 나 =ISLEAPYEAR(\"2/29/68\") 를 사용하실 수도 있습니다."
+msgid "You may also use =ISLEAPYEAR(DATE(1968;2;29)) or =ISLEAPYEAR(\"1968-02-29\") giving the date string in the ISO 8601 notation."
+msgstr ""
 
 #: 04060111.xhp
 msgctxt ""
@@ -62403,12 +62420,13 @@ msgid "<emph>Day</emph> is an integer indicating the day of the month."
 msgstr "<emph>일</emph>은 일을 지정하는 1과 31 사이의 값입니다."
 
 #: func_date.xhp
+#, fuzzy
 msgctxt ""
 "func_date.xhp\n"
 "par_id3156260\n"
 "10\n"
 "help.text"
-msgid "If the values for month and day are out of bounds, they are carried over to the next digit. If you enter <item type=\"input\">=DATE(00;12;31)</item> the result will be 12/31/00. If, on the other hand, you enter <item type=\"input\">=DATE(00;13;31)</item> the result will be 1/31/01."
+msgid "If the values for month and day are out of bounds, they are carried over to the next digit. If you enter <item type=\"input\">=DATE(00;12;31)</item> the result will be 2000-12-31. If, on the other hand, you enter <item type=\"input\">=DATE(00;13;31)</item> the result will be 2001-01-31."
 msgstr "월과 일에 대한 값이 경계를 벗어나면 그 값은 다음 수로 넘어갑니다. <item type=\"input\">=DATE(00;12;31)</item>를 입력한 경우에 결과는 12/31/00이 됩니다. 반면 <item type=\"input\">=DATE(00;13;31)</item>을 입력하면 결과는 1/31/01이 됩니다."
 
 #: func_date.xhp
@@ -67251,7 +67269,7 @@ msgctxt ""
 "par_id3149973\n"
 "229\n"
 "help.text"
-msgid "In which week number does 12/24/2001 fall?"
+msgid "In which week number does 2001-12-24 fall?"
 msgstr "2001년 12월 24일은 몇 번째 주에 있습니까?"
 
 #: func_weeknumadd.xhp
@@ -70001,7 +70019,7 @@ msgctxt ""
 "statistics_regression.xhp\n"
 "par_id1701201620334364\n"
 "help.text"
-msgid "<emph>Linear Regression</emph>: find a strait line in the form of <item type=\"literal\">y = a.x + b</item>, where <item type=\"literal\">a</item> is the slope and <item type=\"literal\">b</item> is the intercept that best fits the data."
+msgid "<emph>Linear Regression</emph>: find a straight line in the form of <item type=\"literal\">y = a.x + b</item>, where <item type=\"literal\">a</item> is the slope and <item type=\"literal\">b</item> is the intercept that best fits the data."
 msgstr ""
 
 #: statistics_regression.xhp

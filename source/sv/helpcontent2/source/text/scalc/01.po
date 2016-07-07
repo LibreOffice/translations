@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2016-05-23 22:09+0200\n"
+"POT-Creation-Date: 2016-07-04 16:53+0200\n"
 "PO-Revision-Date: 2016-06-11 17:38+0000\n"
 "Last-Translator: Niklas Johansson <sleeping.pillow@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Accelerator-Marker: ~\n"
-"X-Generator: Pootle 2.7\n"
+"X-Generator: LibreOffice\n"
 "X-POOTLE-MTIME: 1465666696.000000\n"
 
 #: 01120000.xhp
@@ -4475,12 +4475,13 @@ msgid "<item type=\"input\">DCOUNT</item>"
 msgstr "<item type=\"input\">DANTAL</item>"
 
 #: 04060101.xhp
+#, fuzzy
 msgctxt ""
 "04060101.xhp\n"
 "par_id3149282\n"
 "83\n"
 "help.text"
-msgid "The formula in cell B16 is =DCOUNT(A1:E10;0;A13:E14)"
+msgid "The formula in cell B16 is =DCOUNT(A1:E10;D1;A13:E14)"
 msgstr "Formeln i cell B16 är =DANTAL (A1:E10;0;A13:E14)"
 
 #: 04060101.xhp
@@ -4511,14 +4512,13 @@ msgid "<emph>Database</emph> is the cell range defining the database."
 msgstr "<emph>databas</emph> är det cellområde som definierar databasen."
 
 #: 04060101.xhp
-#, fuzzy
 msgctxt ""
 "04060101.xhp\n"
 "par_id3151272\n"
 "86\n"
 "help.text"
-msgid "<emph>DatabaseField</emph> specifies the column where the function operates on after the search criteria of the first parameter is applied and the data rows are selected. It is not related to the search criteria itself. Use the number 0 to specify the whole data range. <variable id=\"quotes\">To reference a column by means of the column header name, place quotation marks around the header name.</variable>"
-msgstr "I <emph>Databasfält</emph> anges den kolumn som funktionen använder efter att sökkriterierna i den första parametern har angetts och dataraderna markerats. Detta är inte relaterat till själva sökkriterierna. Använd nummer 0 för att ange hela dataområdet. <variable id=\"quotes\">Om du vill hänvisa till en kolumn med hjälp av kolumnens rubriknamn sätter du ut citattecken runt rubriknamnet. </variable>"
+msgid "<emph>DatabaseField</emph> specifies the column where the function operates on after the search criteria of the first parameter is applied and the data rows are selected. It is not related to the search criteria itself. <variable id=\"quotes\">For the DatabaseField parameter you can enter a reference to a header cell or a number to specify the column within the Database area, starting with 1. To reference a column by means of the literal column header name, place quotation marks around the header name.</variable>"
+msgstr ""
 
 #: 04060101.xhp
 msgctxt ""
@@ -4564,12 +4564,13 @@ msgid "DCOUNT"
 msgstr "DANTAL"
 
 #: 04060101.xhp
+#, fuzzy
 msgctxt ""
 "04060101.xhp\n"
 "par_id3156133\n"
 "89\n"
 "help.text"
-msgid "<ahelp hid=\"HID_FUNC_DBANZAHL\">DCOUNT counts the number of rows (records) in a database that match the specified search criteria and contain numerical values.</ahelp>"
+msgid "<ahelp hid=\"HID_FUNC_DBANZAHL\">DCOUNT counts the number of rows (records) in a database that match the specified search criteria and contain numerical values in the DatabaseField column.</ahelp>"
 msgstr "<ahelp hid=\"HID_FUNC_DBANZAHL\">DANTAL räknar antalet rader (poster) i en databas som matchar angivna sökvillkor, och innehåller numeriska värden.</ahelp>"
 
 #: 04060101.xhp
@@ -4582,12 +4583,13 @@ msgid "Syntax"
 msgstr "Syntax"
 
 #: 04060101.xhp
+#, fuzzy
 msgctxt ""
 "04060101.xhp\n"
 "par_id3153218\n"
 "91\n"
 "help.text"
-msgid "DCOUNT(Database; DatabaseField; SearchCriteria)"
+msgid "DCOUNT(Database; [DatabaseField]; SearchCriteria)"
 msgstr "DANTAL (Databas; Databasfält; Sökkriterier)"
 
 #: 04060101.xhp
@@ -4596,8 +4598,8 @@ msgctxt ""
 "par_id3153273\n"
 "187\n"
 "help.text"
-msgid "For the DatabaseField parameter you can enter a cell to specify the column, or enter the number 0 for the entire database. The parameter cannot be empty. <embedvar href=\"text/scalc/01/04060101.xhp#quotes\"/>"
-msgstr "I parametern Databasfält kan du ange en cell för att specificera kolumnen eller så anger du nummer 0 för hela databasen. Parametern får inte vara tom. <embedvar href=\"text/scalc/01/04060101.xhp#quotes\"/>"
+msgid "If the DatabaseField argument is omitted, DCOUNT returns the count of all records that satisfy Criteria. <embedvar href=\"text/scalc/01/04060101.xhp#quotes\"/>"
+msgstr ""
 
 #: 04060101.xhp
 msgctxt ""
@@ -4609,21 +4611,23 @@ msgid "Example"
 msgstr "Exempel"
 
 #: 04060101.xhp
+#, fuzzy
 msgctxt ""
 "04060101.xhp\n"
 "par_id3153623\n"
 "93\n"
 "help.text"
-msgid "In the example above (scroll up, please), we want to know how many children have to travel more than 600 meters to school. The result is to be stored in cell B16. Set the cursor in cell B16. Enter the formula <item type=\"input\">=DCOUNT(A1:E10;0;A13:E14)</item> in B16. The <emph>Function Wizard</emph> helps you to input ranges."
+msgid "In the example above (scroll up, please), we want to know how many children have to travel more than 600 meters to school. The result is to be stored in cell B16. Set the cursor in cell B16. Enter the formula <item type=\"input\">=DCOUNT(A1:E10;D1;A13:E14)</item> in B16. The <emph>Function Wizard</emph> helps you to input ranges."
 msgstr "I exemplet ovan (bläddra uppåt) har vi tagit reda på hur många av barnen som bor mer än 600 meter från skolan. Resultatet sparas i cell B16. Placera markören i cell B16. Ange formeln <item type=\"input\">=DANTAL(A1:E10;0;A13:E14)</item> i B16. Med hjälp av <emph>Funktionsguiden</emph> matar du in områden."
 
 #: 04060101.xhp
+#, fuzzy
 msgctxt ""
 "04060101.xhp\n"
 "par_id3149142\n"
 "94\n"
 "help.text"
-msgid "<emph>Database</emph> is the range of data to be evaluated, including its headers: in this case A1:E10. <emph>DatabaseField</emph> specifies the column for the search criteria: in this case, the whole database. <emph>SearchCriteria</emph> is the range where you can enter the search parameters: in this case, A13:E14."
+msgid "<emph>Database</emph> is the range of data to be evaluated, including its headers: in this case A1:E10. <emph>DatabaseField</emph> specifies the column for the search criteria: in this case, the column with the numerical distance values. <emph>SearchCriteria</emph> is the range where you can enter the search parameters: in this case, A13:E14."
 msgstr "<emph>Databas</emph> är det dataområde som ska beräknas, inklusive rubrikerna, i det här fallet A1:E10. <emph>Databasfält</emph> anger kolumnen för sökriterierna, i det här fallet hela databasen. <emph>Sökkriterier</emph> är det område där du kan ange sökparametrarna, i det här fallet A13:E14."
 
 #: 04060101.xhp
@@ -4671,13 +4675,23 @@ msgid "Syntax"
 msgstr "Syntax"
 
 #: 04060101.xhp
+#, fuzzy
 msgctxt ""
 "04060101.xhp\n"
 "par_id3146893\n"
 "100\n"
 "help.text"
-msgid "DCOUNTA(Database; DatabaseField; SearchCriteria)"
+msgid "DCOUNTA(Database; [DatabaseField]; SearchCriteria)"
 msgstr "DANTALV (Databas; Databasfält; Sökkriterier)"
+
+#: 04060101.xhp
+msgctxt ""
+"04060101.xhp\n"
+"par_id3153274\n"
+"189\n"
+"help.text"
+msgid "If the DatabaseField argument is omitted, DCOUNTA returns the count of all records that satisfy Criteria. <embedvar href=\"text/scalc/01/04060101.xhp#quotes\"/>"
+msgstr ""
 
 #: 04060101.xhp
 msgctxt ""
@@ -5676,8 +5690,8 @@ msgctxt ""
 "par_id3150654\n"
 "185\n"
 "help.text"
-msgid "When entering dates, slashes or dashes used as date separators may be interpreted as arithmetic operators. Therefore, dates entered in this format are not always recognized as dates and result in erroneous calculations. To keep dates from being interpreted as parts of formulas, place them in quotation marks, for example, \"07/20/54\"."
-msgstr "När du anger datum kan snedstreck och bindestreck som används som datumavgränsare tolkas som aritmetiska operatorer. Det innebär att datum som anges i det här formatet inte alltid känns igen som datum, vilket kan resultera i felaktiga beräkningar. Du kan förhindra att datum tolkas som delar av formler genom att omge dem med citattecken, t.ex. \"54-07-20\"."
+msgid "When entering dates as part of formulas, slashes or dashes used as date separators are interpreted as arithmetic operators. Therefore, dates entered in this format are not recognized as dates and result in erroneous calculations. To keep dates from being interpreted as parts of formulas use the DATE function, for example, DATE(1954;7;20), or place the date in quotation marks and use the ISO 8601 notation, for example, \"1954-07-20\". Avoid using locale dependent date formats such as \"07/20/54\", the calculation may produce errors if the document is loaded under different locale settings."
+msgstr ""
 
 #: 04060102.xhp
 msgctxt ""
@@ -9812,19 +9826,21 @@ msgid "<item type=\"input\">=N(123)</item> returns 123"
 msgstr "<item type=\"input\">=N(123)</item> returnerar 123"
 
 #: 04060104.xhp
+#, fuzzy
 msgctxt ""
 "04060104.xhp\n"
 "par_id2337717\n"
 "help.text"
-msgid "<item type=\"input\">=N(TRUE)</item> returns 1"
+msgid "<item type=\"input\">=N(TRUE())</item> returns 1"
 msgstr "<item type=\"input\">=N(SANT)</item> returnerar 1"
 
 #: 04060104.xhp
+#, fuzzy
 msgctxt ""
 "04060104.xhp\n"
 "par_id3153781\n"
 "help.text"
-msgid "<item type=\"input\">=N(FALSE)</item> returns 0"
+msgid "<item type=\"input\">=N(FALSE())</item> returns 0"
 msgstr "<item type=\"input\">=N(FALSKT)</item> returnerar 0"
 
 #: 04060104.xhp
@@ -25777,12 +25793,13 @@ msgid "Syntax"
 msgstr "Syntax"
 
 #: 04060111.xhp
+#, fuzzy
 msgctxt ""
 "04060111.xhp\n"
 "par_id3150205\n"
 "17\n"
 "help.text"
-msgid "ISLEAPYEAR(\"Date\")"
+msgid "ISLEAPYEAR(Date)"
 msgstr "ÄRSKOTTÅR(\"Datum\")"
 
 #: 04060111.xhp
@@ -25791,8 +25808,8 @@ msgctxt ""
 "par_id3159239\n"
 "18\n"
 "help.text"
-msgid "<emph>Date</emph> specifies whether a given date falls within a leap year. The Date parameter must be a valid date according to the locale settings of %PRODUCTNAME."
-msgstr "<emph>Datum</emph> anger om ett visst datum ligger i ett skottår. Parametern Datum måste ha ett giltigt datum i enlighet med de lokala inställningarna för %PRODUCTNAME."
+msgid "<emph>Date</emph> specifies whether a given date falls within a leap year. The Date parameter must be a valid date."
+msgstr ""
 
 #: 04060111.xhp
 msgctxt ""
@@ -25817,8 +25834,8 @@ msgctxt ""
 "04060111.xhp\n"
 "par_idN107E7\n"
 "help.text"
-msgid "You may also use =ISLEAPYEAR(\"1968-02-29\") or =ISLEAPYEAR(\"2/29/68\")."
-msgstr "Du kan också använda =ÄRSKOTTÅR(\"1968-02-29\") ELLER =ÄRSKOTTÅR (\"2/29/68\")."
+msgid "You may also use =ISLEAPYEAR(DATE(1968;2;29)) or =ISLEAPYEAR(\"1968-02-29\") giving the date string in the ISO 8601 notation."
+msgstr ""
 
 #: 04060111.xhp
 msgctxt ""
@@ -62334,12 +62351,13 @@ msgid "<emph>Day</emph> is an integer indicating the day of the month."
 msgstr "<emph>Dag</emph> är ett heltal som anger en dag i månaden."
 
 #: func_date.xhp
+#, fuzzy
 msgctxt ""
 "func_date.xhp\n"
 "par_id3156260\n"
 "10\n"
 "help.text"
-msgid "If the values for month and day are out of bounds, they are carried over to the next digit. If you enter <item type=\"input\">=DATE(00;12;31)</item> the result will be 12/31/00. If, on the other hand, you enter <item type=\"input\">=DATE(00;13;31)</item> the result will be 1/31/01."
+msgid "If the values for month and day are out of bounds, they are carried over to the next digit. If you enter <item type=\"input\">=DATE(00;12;31)</item> the result will be 2000-12-31. If, on the other hand, you enter <item type=\"input\">=DATE(00;13;31)</item> the result will be 2001-01-31."
 msgstr "Om värdena för månad och dag ligger utanför det tillåtna intervallet förs de över till nästa siffra. Om du anger <item type=\"input\">=DATUM(00;12;31)</item> blir resultatet 12/31/00. Om du däremot anger <item type=\"input\">=DATUM(00;13;31)</item> blir resultatet 1/31/01."
 
 #: func_date.xhp
@@ -67182,7 +67200,7 @@ msgctxt ""
 "par_id3149973\n"
 "229\n"
 "help.text"
-msgid "In which week number does 12/24/2001 fall?"
+msgid "In which week number does 2001-12-24 fall?"
 msgstr "I vilken kalendervecka ligger 2001-12-24?"
 
 #: func_weeknumadd.xhp
@@ -68481,20 +68499,22 @@ msgid "Sum"
 msgstr ""
 
 #: statistics.xhp
+#, fuzzy
 msgctxt ""
 "statistics.xhp\n"
 "par_id1001380\n"
 "help.text"
 msgid "Mean"
-msgstr ""
+msgstr "Medelvärde"
 
 #: statistics.xhp
+#, fuzzy
 msgctxt ""
 "statistics.xhp\n"
 "par_id1001390\n"
 "help.text"
 msgid "Variance"
-msgstr ""
+msgstr "Varians"
 
 #: statistics.xhp
 msgctxt ""
@@ -68593,12 +68613,13 @@ msgid "Total"
 msgstr ""
 
 #: statistics.xhp
+#, fuzzy
 msgctxt ""
 "statistics.xhp\n"
 "bm_id1464278\n"
 "help.text"
 msgid "<bookmark_value>Analysis toolpack;correlation</bookmark_value><bookmark_value>correlation;Analysis toolpack</bookmark_value><bookmark_value>Data statistics;correlation</bookmark_value>"
-msgstr ""
+msgstr "<bookmark_value>Analysverktyg;sampling</bookmark_value><bookmark_value>Sampling;Analysverktyg</bookmark_value><bookmark_value>Datastatistik;sampling</bookmark_value>"
 
 #: statistics.xhp
 msgctxt ""
@@ -68617,12 +68638,13 @@ msgid "<ahelp hid=\"modules/scalc/ui/correlationdialog/CorrelationDialog\">Calcu
 msgstr ""
 
 #: statistics.xhp
+#, fuzzy
 msgctxt ""
 "statistics.xhp\n"
 "par_id1001750\n"
 "help.text"
 msgid "<variable id=\"corr01\">Choose <emph>Data - Statistics - Correlation</emph></variable>"
-msgstr ""
+msgstr "<variable id=\"sam01\">Meny <emph>Data - Statistik - Stickprov...</emph></variable>"
 
 #: statistics.xhp
 msgctxt ""
@@ -68721,12 +68743,13 @@ msgid "Column 3"
 msgstr "Kolumn"
 
 #: statistics.xhp
+#, fuzzy
 msgctxt ""
 "statistics.xhp\n"
 "bm_id2964278\n"
 "help.text"
 msgid "<bookmark_value>Analysis toolpack;covariance</bookmark_value><bookmark_value>covariance;Analysis toolpack</bookmark_value><bookmark_value>Data statistics;covariance</bookmark_value>"
-msgstr ""
+msgstr "<bookmark_value>Analysverktyg;sampling</bookmark_value><bookmark_value>Sampling;Analysverktyg</bookmark_value><bookmark_value>Datastatistik;sampling</bookmark_value>"
 
 #: statistics.xhp
 msgctxt ""
@@ -68745,12 +68768,13 @@ msgid "<ahelp hid=\"modules/scalc/ui/covariancedialog/CovarianceDialog\">Calcula
 msgstr ""
 
 #: statistics.xhp
+#, fuzzy
 msgctxt ""
 "statistics.xhp\n"
 "par_id1001950\n"
 "help.text"
 msgid "<variable id=\"cov01\">Choose <emph>Data - Statistics - Covariance</emph></variable>"
-msgstr ""
+msgstr "<variable id=\"sam01\">Meny <emph>Data - Statistik - Stickprov...</emph></variable>"
 
 #: statistics.xhp
 msgctxt ""
@@ -68833,12 +68857,13 @@ msgid "Column 3"
 msgstr "Kolumn 3"
 
 #: statistics.xhp
+#, fuzzy
 msgctxt ""
 "statistics.xhp\n"
 "bm_id03001\n"
 "help.text"
 msgid "<bookmark_value>Analysis toolpack;exponential smoothing</bookmark_value><bookmark_value>exponential smoothing;Analysis toolpack</bookmark_value><bookmark_value>Data statistics;exponential smoothing</bookmark_value>"
-msgstr ""
+msgstr "<bookmark_value>Analysverktyg;sampling</bookmark_value><bookmark_value>Sampling;Analysverktyg</bookmark_value><bookmark_value>Datastatistik;sampling</bookmark_value>"
 
 #: statistics.xhp
 msgctxt ""
@@ -68930,12 +68955,13 @@ msgid "Column 2"
 msgstr "Kolumn 2"
 
 #: statistics.xhp
+#, fuzzy
 msgctxt ""
 "statistics.xhp\n"
 "bm_id04001\n"
 "help.text"
 msgid "<bookmark_value>Analysis toolpack;moving average</bookmark_value><bookmark_value>moving average;Analysis toolpack</bookmark_value><bookmark_value>Data statistics;moving average</bookmark_value>"
-msgstr ""
+msgstr "<bookmark_value>Analysverktyg;sampling</bookmark_value><bookmark_value>Sampling;Analysverktyg</bookmark_value><bookmark_value>Datastatistik;sampling</bookmark_value>"
 
 #: statistics.xhp
 msgctxt ""
@@ -68954,12 +68980,13 @@ msgid "<ahelp hid=\"modules/scalc/ui/movingaveragedialog/MovingAverageDialog\">C
 msgstr ""
 
 #: statistics.xhp
+#, fuzzy
 msgctxt ""
 "statistics.xhp\n"
 "par_id1002510\n"
 "help.text"
 msgid "<variable id=\"sam01\">Choose <emph>Data - Statistics - Moving Average</emph></variable>"
-msgstr ""
+msgstr "<variable id=\"sam01\">Meny <emph>Data - Statistik - Stickprov...</emph></variable>"
 
 #: statistics.xhp
 msgctxt ""
@@ -69043,12 +69070,13 @@ msgid "#N/A"
 msgstr ""
 
 #: statistics.xhp
+#, fuzzy
 msgctxt ""
 "statistics.xhp\n"
 "bm_id05001\n"
 "help.text"
 msgid "<bookmark_value>Analysis toolpack;t-test</bookmark_value><bookmark_value>t-test;Analysis toolpack</bookmark_value><bookmark_value>Data statistics;t-test</bookmark_value>"
-msgstr ""
+msgstr "<bookmark_value>Analysverktyg;sampling</bookmark_value><bookmark_value>Sampling;Analysverktyg</bookmark_value><bookmark_value>Datastatistik;sampling</bookmark_value>"
 
 #: statistics.xhp
 msgctxt ""
@@ -69067,12 +69095,13 @@ msgid "<ahelp hid=\"modules/scalc/ui/ttestdialog/TTestDialog\">Calculates the t-
 msgstr ""
 
 #: statistics.xhp
+#, fuzzy
 msgctxt ""
 "statistics.xhp\n"
 "par_id1002830\n"
 "help.text"
 msgid "<variable id=\"sam01\">Choose <emph>Data - Statistics - t-test</emph></variable>"
-msgstr ""
+msgstr "<variable id=\"sam01\">Meny <emph>Data - Statistik - Stickprov...</emph></variable>"
 
 #: statistics.xhp
 msgctxt ""
@@ -69179,20 +69208,22 @@ msgid "Variable 2"
 msgstr ""
 
 #: statistics.xhp
+#, fuzzy
 msgctxt ""
 "statistics.xhp\n"
 "par_id1002970\n"
 "help.text"
 msgid "Mean"
-msgstr ""
+msgstr "Medelvärde"
 
 #: statistics.xhp
+#, fuzzy
 msgctxt ""
 "statistics.xhp\n"
 "par_id1003000\n"
 "help.text"
 msgid "Variance"
-msgstr ""
+msgstr "Varians"
 
 #: statistics.xhp
 msgctxt ""
@@ -69275,12 +69306,13 @@ msgid "t Critical two-tail"
 msgstr ""
 
 #: statistics.xhp
+#, fuzzy
 msgctxt ""
 "statistics.xhp\n"
 "bm_id05002\n"
 "help.text"
 msgid "<bookmark_value>Analysis toolpack;F-test</bookmark_value><bookmark_value>F-test;Analysis toolpack</bookmark_value><bookmark_value>Data statistics;F-test</bookmark_value>"
-msgstr ""
+msgstr "<bookmark_value>Analysverktyg;sampling</bookmark_value><bookmark_value>Sampling;Analysverktyg</bookmark_value><bookmark_value>Datastatistik;sampling</bookmark_value>"
 
 #: statistics.xhp
 msgctxt ""
@@ -69299,12 +69331,13 @@ msgid "<ahelp hid=\"modules/scalc/ui/ttestdialog/TTestDialog\">Calculates the F-
 msgstr ""
 
 #: statistics.xhp
+#, fuzzy
 msgctxt ""
 "statistics.xhp\n"
 "par_id1003250\n"
 "help.text"
 msgid "<variable id=\"sam02\">Choose <emph>Data - Statistics - F-test</emph></variable>"
-msgstr ""
+msgstr "<variable id=\"sam01\">Meny <emph>Data - Statistik - Stickprov...</emph></variable>"
 
 #: statistics.xhp
 msgctxt ""
@@ -69403,20 +69436,22 @@ msgid "Variable 2"
 msgstr ""
 
 #: statistics.xhp
+#, fuzzy
 msgctxt ""
 "statistics.xhp\n"
 "par_id1003370\n"
 "help.text"
 msgid "Mean"
-msgstr ""
+msgstr "Medelvärde"
 
 #: statistics.xhp
+#, fuzzy
 msgctxt ""
 "statistics.xhp\n"
 "par_id1003400\n"
 "help.text"
 msgid "Variance"
-msgstr ""
+msgstr "Varians"
 
 #: statistics.xhp
 msgctxt ""
@@ -69491,12 +69526,13 @@ msgid "F Critical two-tail"
 msgstr ""
 
 #: statistics.xhp
+#, fuzzy
 msgctxt ""
 "statistics.xhp\n"
 "bm_id05003\n"
 "help.text"
 msgid "<bookmark_value>Analysis toolpack;Z-test</bookmark_value><bookmark_value>Z-test;Analysis toolpack</bookmark_value><bookmark_value>Data statistics;Z-test</bookmark_value>"
-msgstr ""
+msgstr "<bookmark_value>Analysverktyg;sampling</bookmark_value><bookmark_value>Sampling;Analysverktyg</bookmark_value><bookmark_value>Datastatistik;sampling</bookmark_value>"
 
 #: statistics.xhp
 msgctxt ""
@@ -69515,12 +69551,13 @@ msgid "<ahelp hid=\"modules/scalc/ui/ztestdialog/ZTestDialog\">Calculates the z-
 msgstr ""
 
 #: statistics.xhp
+#, fuzzy
 msgctxt ""
 "statistics.xhp\n"
 "par_id1003650\n"
 "help.text"
 msgid "<variable id=\"sam02\">Choose <emph>Data - Statistics - Z-test</emph></variable>"
-msgstr ""
+msgstr "<variable id=\"sam01\">Meny <emph>Data - Statistik - Stickprov...</emph></variable>"
 
 #: statistics.xhp
 msgctxt ""
@@ -69627,12 +69664,13 @@ msgid "Known Variance"
 msgstr ""
 
 #: statistics.xhp
+#, fuzzy
 msgctxt ""
 "statistics.xhp\n"
 "par_id1003810\n"
 "help.text"
 msgid "Mean"
-msgstr ""
+msgstr "Medelvärde"
 
 #: statistics.xhp
 msgctxt ""
@@ -69715,12 +69753,13 @@ msgid "z Critical two-tail"
 msgstr ""
 
 #: statistics.xhp
+#, fuzzy
 msgctxt ""
 "statistics.xhp\n"
 "bm_id05004\n"
 "help.text"
 msgid "<bookmark_value>Analysis toolpack;Chi-square test</bookmark_value><bookmark_value>Chi-square test;Analysis toolpack</bookmark_value><bookmark_value>Data statistics;Chi-square test</bookmark_value>"
-msgstr ""
+msgstr "<bookmark_value>Analysverktyg;sampling</bookmark_value><bookmark_value>Sampling;Analysverktyg</bookmark_value><bookmark_value>Datastatistik;sampling</bookmark_value>"
 
 #: statistics.xhp
 msgctxt ""
@@ -69867,20 +69906,22 @@ msgid "<ahelp hid=\"modules/scalc/ui/regressiondialog/RegressionDialog\">Produce
 msgstr ""
 
 #: statistics_regression.xhp
+#, fuzzy
 msgctxt ""
 "statistics_regression.xhp\n"
 "bm_id2764278\n"
 "help.text"
 msgid "<bookmark_value>Analysis toolpack;regression analysis</bookmark_value>  <bookmark_value>regression analysis;Analysis toolpack</bookmark_value>  <bookmark_value>Data statistics;regression analysis</bookmark_value>"
-msgstr ""
+msgstr "<bookmark_value>Analysverktyg;sampling</bookmark_value><bookmark_value>Sampling;Analysverktyg</bookmark_value><bookmark_value>Datastatistik;sampling</bookmark_value>"
 
 #: statistics_regression.xhp
+#, fuzzy
 msgctxt ""
 "statistics_regression.xhp\n"
 "par_id1000040\n"
 "help.text"
 msgid "<variable id=\"sam01\">Menu <emph>Data - Statistics - Regression...</emph></variable>"
-msgstr ""
+msgstr "<variable id=\"sam01\">Meny <emph>Data - Statistik - Stickprov...</emph></variable>"
 
 #: statistics_regression.xhp
 msgctxt ""
@@ -69911,7 +69952,7 @@ msgctxt ""
 "statistics_regression.xhp\n"
 "par_id1701201620334364\n"
 "help.text"
-msgid "<emph>Linear Regression</emph>: find a strait line in the form of <item type=\"literal\">y = a.x + b</item>, where <item type=\"literal\">a</item> is the slope and <item type=\"literal\">b</item> is the intercept that best fits the data."
+msgid "<emph>Linear Regression</emph>: find a straight line in the form of <item type=\"literal\">y = a.x + b</item>, where <item type=\"literal\">a</item> is the slope and <item type=\"literal\">b</item> is the intercept that best fits the data."
 msgstr ""
 
 #: statistics_regression.xhp
@@ -69989,12 +70030,13 @@ msgid "R^2"
 msgstr ""
 
 #: statistics_regression.xhp
+#, fuzzy
 msgctxt ""
 "statistics_regression.xhp\n"
 "par_id1701201618090595\n"
 "help.text"
 msgid "Standard Error"
-msgstr ""
+msgstr "Standardfel"
 
 #: statistics_regression.xhp
 msgctxt ""

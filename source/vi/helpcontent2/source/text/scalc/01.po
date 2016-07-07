@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2016-05-23 22:09+0200\n"
-"PO-Revision-Date: 2016-05-02 14:17+0000\n"
+"POT-Creation-Date: 2016-07-04 16:53+0200\n"
+"PO-Revision-Date: 2016-05-25 04:19+0000\n"
 "Last-Translator: Anonymous Pootle User\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: vi\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Accelerator-Marker: ~\n"
 "X-Generator: LibreOffice\n"
-"X-POOTLE-MTIME: 1462198631.000000\n"
+"X-POOTLE-MTIME: 1464149951.000000\n"
 
 #: 01120000.xhp
 msgctxt ""
@@ -4509,12 +4509,13 @@ msgid "<item type=\"input\">DCOUNT</item>"
 msgstr "<item type=\"input\">DCOUNT</item>"
 
 #: 04060101.xhp
+#, fuzzy
 msgctxt ""
 "04060101.xhp\n"
 "par_id3149282\n"
 "83\n"
 "help.text"
-msgid "The formula in cell B16 is =DCOUNT(A1:E10;0;A13:E14)"
+msgid "The formula in cell B16 is =DCOUNT(A1:E10;D1;A13:E14)"
 msgstr "Công thức ở ô B16 là « =DCOUNT(A1:E10;0;A13:E14) »"
 
 #: 04060101.xhp
@@ -4545,14 +4546,13 @@ msgid "<emph>Database</emph> is the cell range defining the database."
 msgstr "<emph>Cơ sở dữ liệu</emph> là phạm vi ô được đặt làm cơ sở dữ liệu."
 
 #: 04060101.xhp
-#, fuzzy
 msgctxt ""
 "04060101.xhp\n"
 "par_id3151272\n"
 "86\n"
 "help.text"
-msgid "<emph>DatabaseField</emph> specifies the column where the function operates on after the search criteria of the first parameter is applied and the data rows are selected. It is not related to the search criteria itself. Use the number 0 to specify the whole data range. <variable id=\"quotes\">To reference a column by means of the column header name, place quotation marks around the header name.</variable>"
-msgstr "<emph>DatabaseField</emph> đặt cột trong đó hàm hoạt động sau khi tiêu chí tìm kiếm của tham số đầu tiên được áp dụng và đã chọn các hàng dữ liệu. Việc này không liên quan đến tiêu chí tìm kiếm. Dùng số 0 để chỉ toàn bộ phạm vi dữ liệu. <variable id=\"quotes\">Để tham chiếu một cột thông qua tên của phần đầu cột, hãy đặt dấu ngoặc kép xung quanh tên của phần đầu cột. </variable>"
+msgid "<emph>DatabaseField</emph> specifies the column where the function operates on after the search criteria of the first parameter is applied and the data rows are selected. It is not related to the search criteria itself. <variable id=\"quotes\">For the DatabaseField parameter you can enter a reference to a header cell or a number to specify the column within the Database area, starting with 1. To reference a column by means of the literal column header name, place quotation marks around the header name.</variable>"
+msgstr ""
 
 #: 04060101.xhp
 msgctxt ""
@@ -4598,12 +4598,13 @@ msgid "DCOUNT"
 msgstr "DCOUNT"
 
 #: 04060101.xhp
+#, fuzzy
 msgctxt ""
 "04060101.xhp\n"
 "par_id3156133\n"
 "89\n"
 "help.text"
-msgid "<ahelp hid=\"HID_FUNC_DBANZAHL\">DCOUNT counts the number of rows (records) in a database that match the specified search criteria and contain numerical values.</ahelp>"
+msgid "<ahelp hid=\"HID_FUNC_DBANZAHL\">DCOUNT counts the number of rows (records) in a database that match the specified search criteria and contain numerical values in the DatabaseField column.</ahelp>"
 msgstr "<ahelp hid=\"HID_FUNC_DBANZAHL\">DCOUNT đếm số dòng (hay số bản ghi) trong CSDL thoả mãn điều kiện tìm kiếm và chứa các giá trị số.</ahelp>"
 
 #: 04060101.xhp
@@ -4616,12 +4617,13 @@ msgid "Syntax"
 msgstr "Cú pháp"
 
 #: 04060101.xhp
+#, fuzzy
 msgctxt ""
 "04060101.xhp\n"
 "par_id3153218\n"
 "91\n"
 "help.text"
-msgid "DCOUNT(Database; DatabaseField; SearchCriteria)"
+msgid "DCOUNT(Database; [DatabaseField]; SearchCriteria)"
 msgstr "DCOUNT(Database; DatabaseField; SearchCriteria)"
 
 #: 04060101.xhp
@@ -4630,8 +4632,8 @@ msgctxt ""
 "par_id3153273\n"
 "187\n"
 "help.text"
-msgid "For the DatabaseField parameter you can enter a cell to specify the column, or enter the number 0 for the entire database. The parameter cannot be empty. <embedvar href=\"text/scalc/01/04060101.xhp#quotes\"/>"
-msgstr "Đối với tham số « DatabaseField », bạn có thể nhập một ô đã ghi rõ cột, hoặc nhập số 0 để đại diện toàn bộ cơ sở dữ liệu. Tham số không thể là rỗng. <embedvar href=\"text/scalc/01/04060101.xhp#quotes\"/>"
+msgid "If the DatabaseField argument is omitted, DCOUNT returns the count of all records that satisfy Criteria. <embedvar href=\"text/scalc/01/04060101.xhp#quotes\"/>"
+msgstr ""
 
 #: 04060101.xhp
 msgctxt ""
@@ -4643,21 +4645,23 @@ msgid "Example"
 msgstr "Ví dụ"
 
 #: 04060101.xhp
+#, fuzzy
 msgctxt ""
 "04060101.xhp\n"
 "par_id3153623\n"
 "93\n"
 "help.text"
-msgid "In the example above (scroll up, please), we want to know how many children have to travel more than 600 meters to school. The result is to be stored in cell B16. Set the cursor in cell B16. Enter the formula <item type=\"input\">=DCOUNT(A1:E10;0;A13:E14)</item> in B16. The <emph>Function Wizard</emph> helps you to input ranges."
+msgid "In the example above (scroll up, please), we want to know how many children have to travel more than 600 meters to school. The result is to be stored in cell B16. Set the cursor in cell B16. Enter the formula <item type=\"input\">=DCOUNT(A1:E10;D1;A13:E14)</item> in B16. The <emph>Function Wizard</emph> helps you to input ranges."
 msgstr "Trong thí dụ trên (xin hãy cuộn lên), muốn biết mấy đứa trẻ cần phải đi trường học xa hơn 600 mét. Kết quả sẽ được cất giữ trong ô B16. Đặt con trỏ vào ô B16. Nhập công thức <item type=\"input\">=DCOUNT(A1:E10;0;A13:E14)</item> vào ô B16. <emph>Trợ lý Hàm</emph> có thể giúp bạn nhập phạm vi dữ liệu."
 
 #: 04060101.xhp
+#, fuzzy
 msgctxt ""
 "04060101.xhp\n"
 "par_id3149142\n"
 "94\n"
 "help.text"
-msgid "<emph>Database</emph> is the range of data to be evaluated, including its headers: in this case A1:E10. <emph>DatabaseField</emph> specifies the column for the search criteria: in this case, the whole database. <emph>SearchCriteria</emph> is the range where you can enter the search parameters: in this case, A13:E14."
+msgid "<emph>Database</emph> is the range of data to be evaluated, including its headers: in this case A1:E10. <emph>DatabaseField</emph> specifies the column for the search criteria: in this case, the column with the numerical distance values. <emph>SearchCriteria</emph> is the range where you can enter the search parameters: in this case, A13:E14."
 msgstr "<emph>Database</emph> là phạm vi dữ liệu cần ước lượng, bao gồm các phần đầu: trong trường hợp này « A1:E10 ». <emph>DatabaseField</emph> ghi rõ cột cho các tiêu chuẩn tìm kiếm: trong trường hợp này, toàn bộ cơ sở dữ liệu. <emph>SearchCriteria</emph> là phạm vi vào đó bạn có thể nhập các tham số tìm kiếm: trong trường hợp này « A13:E14 »."
 
 #: 04060101.xhp
@@ -4705,13 +4709,23 @@ msgid "Syntax"
 msgstr "Cú pháp"
 
 #: 04060101.xhp
+#, fuzzy
 msgctxt ""
 "04060101.xhp\n"
 "par_id3146893\n"
 "100\n"
 "help.text"
-msgid "DCOUNTA(Database; DatabaseField; SearchCriteria)"
+msgid "DCOUNTA(Database; [DatabaseField]; SearchCriteria)"
 msgstr "DCOUNTA(Database; DatabaseField; SearchCriteria)"
+
+#: 04060101.xhp
+msgctxt ""
+"04060101.xhp\n"
+"par_id3153274\n"
+"189\n"
+"help.text"
+msgid "If the DatabaseField argument is omitted, DCOUNTA returns the count of all records that satisfy Criteria. <embedvar href=\"text/scalc/01/04060101.xhp#quotes\"/>"
+msgstr ""
 
 #: 04060101.xhp
 msgctxt ""
@@ -5710,8 +5724,8 @@ msgctxt ""
 "par_id3150654\n"
 "185\n"
 "help.text"
-msgid "When entering dates, slashes or dashes used as date separators may be interpreted as arithmetic operators. Therefore, dates entered in this format are not always recognized as dates and result in erroneous calculations. To keep dates from being interpreted as parts of formulas, place them in quotation marks, for example, \"07/20/54\"."
-msgstr "Khi nhập dữ liệu, các dấu xuyệc hoặc dấu gạch được dùng để phân cách ngày tháng có thể bị giải thích dưới dạng toán tử số học. Vì vậy, ngày tháng được nhập theo định dạng này không phải luôn luôn được nhận dạng là ngày tháng thì phép tính bị lỗi. Để tránh ngày tháng bị giải thích dưới dạng phần của công thức, bao gồm nó trong dấu nháy kép, ví dụ \"08/02/08\"."
+msgid "When entering dates as part of formulas, slashes or dashes used as date separators are interpreted as arithmetic operators. Therefore, dates entered in this format are not recognized as dates and result in erroneous calculations. To keep dates from being interpreted as parts of formulas use the DATE function, for example, DATE(1954;7;20), or place the date in quotation marks and use the ISO 8601 notation, for example, \"1954-07-20\". Avoid using locale dependent date formats such as \"07/20/54\", the calculation may produce errors if the document is loaded under different locale settings."
+msgstr ""
 
 #: 04060102.xhp
 msgctxt ""
@@ -9858,19 +9872,21 @@ msgid "<item type=\"input\">=N(123)</item> returns 123"
 msgstr "<item type=\"input\">=N(123)</item> trả về 123"
 
 #: 04060104.xhp
+#, fuzzy
 msgctxt ""
 "04060104.xhp\n"
 "par_id2337717\n"
 "help.text"
-msgid "<item type=\"input\">=N(TRUE)</item> returns 1"
+msgid "<item type=\"input\">=N(TRUE())</item> returns 1"
 msgstr "<item type=\"input\">=N(TRUE)</item> trả về 1"
 
 #: 04060104.xhp
+#, fuzzy
 msgctxt ""
 "04060104.xhp\n"
 "par_id3153781\n"
 "help.text"
-msgid "<item type=\"input\">=N(FALSE)</item> returns 0"
+msgid "<item type=\"input\">=N(FALSE())</item> returns 0"
 msgstr "<item type=\"input\">=N(FALSE)</item> trả về 0"
 
 #: 04060104.xhp
@@ -25829,12 +25845,13 @@ msgid "Syntax"
 msgstr "Cú pháp"
 
 #: 04060111.xhp
+#, fuzzy
 msgctxt ""
 "04060111.xhp\n"
 "par_id3150205\n"
 "17\n"
 "help.text"
-msgid "ISLEAPYEAR(\"Date\")"
+msgid "ISLEAPYEAR(Date)"
 msgstr "ISLEAPYEAR(\"Ngày\")"
 
 #: 04060111.xhp
@@ -25843,8 +25860,8 @@ msgctxt ""
 "par_id3159239\n"
 "18\n"
 "help.text"
-msgid "<emph>Date</emph> specifies whether a given date falls within a leap year. The Date parameter must be a valid date according to the locale settings of %PRODUCTNAME."
-msgstr "<emph>Ngày</emph> ghi rõ nếu một ngày tháng đã cho nằm bên trong một năm nhuận không. Tham số <emph>Ngày</emph> phải là một ngày tháng hợp lệ tùy theo thiết lập miền địa phương của %PRODUCTNAME."
+msgid "<emph>Date</emph> specifies whether a given date falls within a leap year. The Date parameter must be a valid date."
+msgstr ""
 
 #: 04060111.xhp
 msgctxt ""
@@ -25869,8 +25886,8 @@ msgctxt ""
 "04060111.xhp\n"
 "par_idN107E7\n"
 "help.text"
-msgid "You may also use =ISLEAPYEAR(\"1968-02-29\") or =ISLEAPYEAR(\"2/29/68\")."
-msgstr "Bạn cũng có thể sử dụng « =ISLEAPYEAR(\"1968-02-29\") » hay « =ISLEAPYEAR(\"2/29/68\") »."
+msgid "You may also use =ISLEAPYEAR(DATE(1968;2;29)) or =ISLEAPYEAR(\"1968-02-29\") giving the date string in the ISO 8601 notation."
+msgstr ""
 
 #: 04060111.xhp
 msgctxt ""
@@ -62397,12 +62414,13 @@ msgid "<emph>Day</emph> is an integer indicating the day of the month."
 msgstr "<emph>Ngày</emph> là một số nguyên ngụ ý ngày của tháng."
 
 #: func_date.xhp
+#, fuzzy
 msgctxt ""
 "func_date.xhp\n"
 "par_id3156260\n"
 "10\n"
 "help.text"
-msgid "If the values for month and day are out of bounds, they are carried over to the next digit. If you enter <item type=\"input\">=DATE(00;12;31)</item> the result will be 12/31/00. If, on the other hand, you enter <item type=\"input\">=DATE(00;13;31)</item> the result will be 1/31/01."
+msgid "If the values for month and day are out of bounds, they are carried over to the next digit. If you enter <item type=\"input\">=DATE(00;12;31)</item> the result will be 2000-12-31. If, on the other hand, you enter <item type=\"input\">=DATE(00;13;31)</item> the result will be 2001-01-31."
 msgstr "Giá trị cho tháng và ngày vượt quá giới hạn thì nó được mang lại tới chữ số kế tiếp. Nếu bạn nhập công thức <item type=\"input\">=DATE(00;12;31)</item>, kết quả là 12/31/00. Tuy nhiên, nếu bạn nhập công thức <item type=\"input\">=DATE(00;13;31)</item> kết quả là 1/31/01."
 
 #: func_date.xhp
@@ -67243,7 +67261,7 @@ msgctxt ""
 "par_id3149973\n"
 "229\n"
 "help.text"
-msgid "In which week number does 12/24/2001 fall?"
+msgid "In which week number does 2001-12-24 fall?"
 msgstr "Ngày 2001-24-12 nằm trong tuần số nào?"
 
 #: func_weeknumadd.xhp
@@ -69993,7 +70011,7 @@ msgctxt ""
 "statistics_regression.xhp\n"
 "par_id1701201620334364\n"
 "help.text"
-msgid "<emph>Linear Regression</emph>: find a strait line in the form of <item type=\"literal\">y = a.x + b</item>, where <item type=\"literal\">a</item> is the slope and <item type=\"literal\">b</item> is the intercept that best fits the data."
+msgid "<emph>Linear Regression</emph>: find a straight line in the form of <item type=\"literal\">y = a.x + b</item>, where <item type=\"literal\">a</item> is the slope and <item type=\"literal\">b</item> is the intercept that best fits the data."
 msgstr ""
 
 #: statistics_regression.xhp

@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2016-05-23 22:09+0200\n"
-"PO-Revision-Date: 2016-06-18 01:22+0000\n"
+"POT-Creation-Date: 2016-07-04 16:53+0200\n"
+"PO-Revision-Date: 2016-06-28 22:19+0000\n"
 "Last-Translator: Sérgio Marques <smarquespt@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: pt\n"
@@ -13,8 +13,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Accelerator-Marker: ~\n"
-"X-Generator: Pootle 2.7\n"
-"X-POOTLE-MTIME: 1466212929.000000\n"
+"X-Generator: LibreOffice\n"
+"X-POOTLE-MTIME: 1467152353.000000\n"
 
 #: 01120000.xhp
 msgctxt ""
@@ -4468,12 +4468,13 @@ msgid "<item type=\"input\">DCOUNT</item>"
 msgstr "<item type=\"input\">BDCONTAR</item>"
 
 #: 04060101.xhp
+#, fuzzy
 msgctxt ""
 "04060101.xhp\n"
 "par_id3149282\n"
 "83\n"
 "help.text"
-msgid "The formula in cell B16 is =DCOUNT(A1:E10;0;A13:E14)"
+msgid "The formula in cell B16 is =DCOUNT(A1:E10;D1;A13:E14)"
 msgstr "A fórmula da célula B16 é =BDCONTAR(A1:E10;0;A13:E14)"
 
 #: 04060101.xhp
@@ -4509,8 +4510,8 @@ msgctxt ""
 "par_id3151272\n"
 "86\n"
 "help.text"
-msgid "<emph>DatabaseField</emph> specifies the column where the function operates on after the search criteria of the first parameter is applied and the data rows are selected. It is not related to the search criteria itself. Use the number 0 to specify the whole data range. <variable id=\"quotes\">To reference a column by means of the column header name, place quotation marks around the header name.</variable>"
-msgstr "<emph>campo_da_base_dados</emph> especifica a coluna onde a função opera após os critérios de procura do primeiro parâmetro serem aplicados e as linhas de dados selecionadas. Não está relacionado com os critérios de procura. Utilize o número 0 para especificar um intervalo de dados. <variable id=\"quotes\">Para criar uma referência a uma coluna através do nome do cabeçalho, coloque aspas no nome do cabeçalho.</variable>"
+msgid "<emph>DatabaseField</emph> specifies the column where the function operates on after the search criteria of the first parameter is applied and the data rows are selected. It is not related to the search criteria itself. <variable id=\"quotes\">For the DatabaseField parameter you can enter a reference to a header cell or a number to specify the column within the Database area, starting with 1. To reference a column by means of the literal column header name, place quotation marks around the header name.</variable>"
+msgstr ""
 
 #: 04060101.xhp
 msgctxt ""
@@ -4556,12 +4557,13 @@ msgid "DCOUNT"
 msgstr "BDCONTAR"
 
 #: 04060101.xhp
+#, fuzzy
 msgctxt ""
 "04060101.xhp\n"
 "par_id3156133\n"
 "89\n"
 "help.text"
-msgid "<ahelp hid=\"HID_FUNC_DBANZAHL\">DCOUNT counts the number of rows (records) in a database that match the specified search criteria and contain numerical values.</ahelp>"
+msgid "<ahelp hid=\"HID_FUNC_DBANZAHL\">DCOUNT counts the number of rows (records) in a database that match the specified search criteria and contain numerical values in the DatabaseField column.</ahelp>"
 msgstr "<ahelp hid=\"HID_FUNC_DBANZAHL\">BDCONTAR conta o número de linhas (registos) de uma base de dados que correspondem aos critérios de procura especificados e contêm valores numéricos.</ahelp>"
 
 #: 04060101.xhp
@@ -4574,12 +4576,13 @@ msgid "Syntax"
 msgstr "Sintaxe"
 
 #: 04060101.xhp
+#, fuzzy
 msgctxt ""
 "04060101.xhp\n"
 "par_id3153218\n"
 "91\n"
 "help.text"
-msgid "DCOUNT(Database; DatabaseField; SearchCriteria)"
+msgid "DCOUNT(Database; [DatabaseField]; SearchCriteria)"
 msgstr "BDCONTAR(base_dados; campo_da_base_dados; critérios_procura)"
 
 #: 04060101.xhp
@@ -4588,8 +4591,8 @@ msgctxt ""
 "par_id3153273\n"
 "187\n"
 "help.text"
-msgid "For the DatabaseField parameter you can enter a cell to specify the column, or enter the number 0 for the entire database. The parameter cannot be empty. <embedvar href=\"text/scalc/01/04060101.xhp#quotes\"/>"
-msgstr "No parâmetro campo_da_base_dados pode introduzir uma célula para especificar a coluna ou introduzir o número 0 para a totalidade da base de dados. O parâmetro não pode estar vazio. <embedvar href=\"text/scalc/01/04060101.xhp#quotes\"/>"
+msgid "If the DatabaseField argument is omitted, DCOUNT returns the count of all records that satisfy Criteria. <embedvar href=\"text/scalc/01/04060101.xhp#quotes\"/>"
+msgstr ""
 
 #: 04060101.xhp
 msgctxt ""
@@ -4601,21 +4604,23 @@ msgid "Example"
 msgstr "Exemplo"
 
 #: 04060101.xhp
+#, fuzzy
 msgctxt ""
 "04060101.xhp\n"
 "par_id3153623\n"
 "93\n"
 "help.text"
-msgid "In the example above (scroll up, please), we want to know how many children have to travel more than 600 meters to school. The result is to be stored in cell B16. Set the cursor in cell B16. Enter the formula <item type=\"input\">=DCOUNT(A1:E10;0;A13:E14)</item> in B16. The <emph>Function Wizard</emph> helps you to input ranges."
+msgid "In the example above (scroll up, please), we want to know how many children have to travel more than 600 meters to school. The result is to be stored in cell B16. Set the cursor in cell B16. Enter the formula <item type=\"input\">=DCOUNT(A1:E10;D1;A13:E14)</item> in B16. The <emph>Function Wizard</emph> helps you to input ranges."
 msgstr "No exemplo acima (mova a página para cima) pretende-se averiguar quantas crianças têm de percorrer mais de 600 metros para chegar à escola. O resultado deve ser guardado na célula B16. Coloque o cursor na célula B16. Introduza a fórmula <item type=\"input\">=BDCONTAR(A1:E10;0;A13:E14)</item> em B16. O <emph>Assistente de funções</emph> ajuda-o a introduzir os intervalos."
 
 #: 04060101.xhp
+#, fuzzy
 msgctxt ""
 "04060101.xhp\n"
 "par_id3149142\n"
 "94\n"
 "help.text"
-msgid "<emph>Database</emph> is the range of data to be evaluated, including its headers: in this case A1:E10. <emph>DatabaseField</emph> specifies the column for the search criteria: in this case, the whole database. <emph>SearchCriteria</emph> is the range where you can enter the search parameters: in this case, A13:E14."
+msgid "<emph>Database</emph> is the range of data to be evaluated, including its headers: in this case A1:E10. <emph>DatabaseField</emph> specifies the column for the search criteria: in this case, the column with the numerical distance values. <emph>SearchCriteria</emph> is the range where you can enter the search parameters: in this case, A13:E14."
 msgstr "<emph>base_dados</emph> corresponde ao intervalo de dados a ser avaliado, incluindo os respetivos cabeçalhos: neste caso A1:E10. O <emph>campo_da_base_dados</emph> especifica a coluna para os critérios de procura. Neste caso, a totalidade da base de dados. Os <emph>critérios_procura</emph> são o intervalo onde pode introduzir os parâmetros de procura que, neste caso, é A13:E14."
 
 #: 04060101.xhp
@@ -4663,13 +4668,23 @@ msgid "Syntax"
 msgstr "Sintaxe"
 
 #: 04060101.xhp
+#, fuzzy
 msgctxt ""
 "04060101.xhp\n"
 "par_id3146893\n"
 "100\n"
 "help.text"
-msgid "DCOUNTA(Database; DatabaseField; SearchCriteria)"
+msgid "DCOUNTA(Database; [DatabaseField]; SearchCriteria)"
 msgstr "BDCONTAR.VAL(base_dados; campo_da_base_dados; critérios_procura)"
+
+#: 04060101.xhp
+msgctxt ""
+"04060101.xhp\n"
+"par_id3153274\n"
+"189\n"
+"help.text"
+msgid "If the DatabaseField argument is omitted, DCOUNTA returns the count of all records that satisfy Criteria. <embedvar href=\"text/scalc/01/04060101.xhp#quotes\"/>"
+msgstr ""
 
 #: 04060101.xhp
 msgctxt ""
@@ -5668,8 +5683,8 @@ msgctxt ""
 "par_id3150654\n"
 "185\n"
 "help.text"
-msgid "When entering dates, slashes or dashes used as date separators may be interpreted as arithmetic operators. Therefore, dates entered in this format are not always recognized as dates and result in erroneous calculations. To keep dates from being interpreted as parts of formulas, place them in quotation marks, for example, \"07/20/54\"."
-msgstr "As datas, barras ou traços utilizados como separadores de datas podem ser interpretados como operadores aritméticos. Desta forma, as datas inseridas neste formato nem sempre são reconhecidas como datas e originam cálculos errados. Para evitar que as datas sejam interpretadas como parte integrante de fórmulas, coloque-as entre, por exemplo \"2014/07/10\"."
+msgid "When entering dates as part of formulas, slashes or dashes used as date separators are interpreted as arithmetic operators. Therefore, dates entered in this format are not recognized as dates and result in erroneous calculations. To keep dates from being interpreted as parts of formulas use the DATE function, for example, DATE(1954;7;20), or place the date in quotation marks and use the ISO 8601 notation, for example, \"1954-07-20\". Avoid using locale dependent date formats such as \"07/20/54\", the calculation may produce errors if the document is loaded under different locale settings."
+msgstr ""
 
 #: 04060102.xhp
 msgctxt ""
@@ -9779,19 +9794,21 @@ msgid "<item type=\"input\">=N(123)</item> returns 123"
 msgstr "<item type=\"input\">=N(123)</item> devolve 123"
 
 #: 04060104.xhp
+#, fuzzy
 msgctxt ""
 "04060104.xhp\n"
 "par_id2337717\n"
 "help.text"
-msgid "<item type=\"input\">=N(TRUE)</item> returns 1"
+msgid "<item type=\"input\">=N(TRUE())</item> returns 1"
 msgstr "<item type=\"input\">=N(VERDADEIRO)</item> devolve 1"
 
 #: 04060104.xhp
+#, fuzzy
 msgctxt ""
 "04060104.xhp\n"
 "par_id3153781\n"
 "help.text"
-msgid "<item type=\"input\">=N(FALSE)</item> returns 0"
+msgid "<item type=\"input\">=N(FALSE())</item> returns 0"
 msgstr "<item type=\"input\">=N(FALSO)</item> devolve 0"
 
 #: 04060104.xhp
@@ -25664,12 +25681,13 @@ msgid "Syntax"
 msgstr "Sintaxe"
 
 #: 04060111.xhp
+#, fuzzy
 msgctxt ""
 "04060111.xhp\n"
 "par_id3150205\n"
 "17\n"
 "help.text"
-msgid "ISLEAPYEAR(\"Date\")"
+msgid "ISLEAPYEAR(Date)"
 msgstr "ANOBISSEXTO(\"data\")"
 
 #: 04060111.xhp
@@ -25678,8 +25696,8 @@ msgctxt ""
 "par_id3159239\n"
 "18\n"
 "help.text"
-msgid "<emph>Date</emph> specifies whether a given date falls within a leap year. The Date parameter must be a valid date according to the locale settings of %PRODUCTNAME."
-msgstr "<emph>data</emph> especifica se a data introduzida ocorre num ano bissexto. O parâmetro data terá de corresponder a uma data válida de acordo com as definições de configuração regional do %PRODUCTNAME."
+msgid "<emph>Date</emph> specifies whether a given date falls within a leap year. The Date parameter must be a valid date."
+msgstr ""
 
 #: 04060111.xhp
 msgctxt ""
@@ -25704,8 +25722,8 @@ msgctxt ""
 "04060111.xhp\n"
 "par_idN107E7\n"
 "help.text"
-msgid "You may also use =ISLEAPYEAR(\"1968-02-29\") or =ISLEAPYEAR(\"2/29/68\")."
-msgstr "Também pode utilizar =ANOBISSEXTO(\"1968-02-29\") ou =ANOBISSEXTO(\"2/29/68\")."
+msgid "You may also use =ISLEAPYEAR(DATE(1968;2;29)) or =ISLEAPYEAR(\"1968-02-29\") giving the date string in the ISO 8601 notation."
+msgstr ""
 
 #: 04060111.xhp
 msgctxt ""
@@ -61738,12 +61756,13 @@ msgid "<emph>Day</emph> is an integer indicating the day of the month."
 msgstr "<emph>dia</emph> é um número inteiro que indica o dia do mês."
 
 #: func_date.xhp
+#, fuzzy
 msgctxt ""
 "func_date.xhp\n"
 "par_id3156260\n"
 "10\n"
 "help.text"
-msgid "If the values for month and day are out of bounds, they are carried over to the next digit. If you enter <item type=\"input\">=DATE(00;12;31)</item> the result will be 12/31/00. If, on the other hand, you enter <item type=\"input\">=DATE(00;13;31)</item> the result will be 1/31/01."
+msgid "If the values for month and day are out of bounds, they are carried over to the next digit. If you enter <item type=\"input\">=DATE(00;12;31)</item> the result will be 2000-12-31. If, on the other hand, you enter <item type=\"input\">=DATE(00;13;31)</item> the result will be 2001-01-31."
 msgstr "Se os valores do mês e do dia estiverem fora dos limites, serão transferidos para o dígito seguinte. Se introduzir <item type=\"input\">=DATA(00;12;31)</item>, o resultado será 12/31/00. Se, pelo contrário, introduzir <item type=\"input\">=DATA(00;13;31)</item>, o resultado será 1/31/01."
 
 #: func_date.xhp
@@ -63035,13 +63054,12 @@ msgid "FORECAST.ETS.MULT"
 msgstr "FORECAST.ETS.MULT"
 
 #: func_forecastetsmult.xhp
-#, fuzzy
 msgctxt ""
 "func_forecastetsmult.xhp\n"
 "bm_id976559765597655\n"
 "help.text"
 msgid "<bookmark_value>FORECAST.ETS.MULT function</bookmark_value>"
-msgstr "<bookmark_value>função DOMINGO.PÁSCOA</bookmark_value>"
+msgstr "<bookmark_value>Função PREVISÃO.ETS.MULT</bookmark_value>"
 
 #: func_forecastetsmult.xhp
 msgctxt ""
@@ -63116,13 +63134,12 @@ msgid "Returns 120.747806144882, the multiplicative forecast for January 2014 ba
 msgstr ""
 
 #: func_forecastetsmult.xhp
-#, fuzzy
 msgctxt ""
 "func_forecastetsmult.xhp\n"
 "par_id0603201619261276\n"
 "help.text"
 msgid "See also:  <link href=\"text/scalc/01/func_forecastetsadd.xhp\">FORECAST.ETS.ADD</link>,  <link href=\"text/scalc/01/func_forecastetsstatadd.xhp\">FORECAST.ETS.STAT.ADD</link>,  <link href=\"text/scalc/01/func_forecastetsstatmult.xhp\">FORECAST.ETS.STAT.MULT</link>,  <link href=\"text/scalc/01/func_forecastetspiadd.xhp\">FORECAST.ETS.PI.ADD</link>,  <link href=\"text/scalc/01/func_forecastetspimult.xhp\">FORECAST.ETS.PI.MULT</link>,  <link href=\"text/scalc/01/func_forecastetsseason.xhp\">FORECAST.ETS.SEASONALITY</link>,  <link href=\"text/scalc/01/04060185.xhp#forecast\">FORECAST</link>,  <link href=\"text/scalc/01/04060185.xhp#forecastlinear\">FORECAST.LINEAR</link>"
-msgstr "Consulte também: <link href=\"text/scalc/01/func_forecastetsadd.xhp\">PREVISÃO.ETS.MULT</link>, <link href=\"text/scalc/01/func_forecastetsstatadd.xhp\">PREVISÃO.ETS.ESTATÍSTICA.ADD</link>, <link href=\"text/scalc/01/func_forecastetsstatmult.xhp\">PREVISÃO.ETS.ESTATÍSTICA.MULT</link>, <link href=\"text/scalc/01/func_forecastetspiadd.xhp\">PREVISÃO.ETS.CONFINT.ADD</link>, <link href=\"text/scalc/01/func_forecastetspimult.xhp\">PREVISÃO.ETS.CONFINT.MULT</link>, <link href=\"text/scalc/01/func_forecastetsseason.xhp\">PREVISÃO.ETS.SAZONALIDADE</link>, <link href=\"text/scalc/01/04060185.xhp#forecast\">PREVISÃO</link>, <link href=\"text/scalc/01/04060185.xhp#forecastlinear\">PREVISÃO.LINEAR</link>"
+msgstr "Consulte também: <link href=\"text/scalc/01/func_forecastetsadd.xhp\">PREVISÃO.ETS.ADD</link>, <link href=\"text/scalc/01/func_forecastetsstatadd.xhp\">PREVISÃO.ETS.ESTATÍSTICA.ADD</link>, <link href=\"text/scalc/01/func_forecastetsstatmult.xhp\">PREVISÃO.ETS.ESTATÍSTICA.MULT</link>, <link href=\"text/scalc/01/func_forecastetspiadd.xhp\">PREVISÃO.ETS.CONFINT.ADD</link>, <link href=\"text/scalc/01/func_forecastetspimult.xhp\">PREVISÃO.ETS.CONFINT.MULT</link>, <link href=\"text/scalc/01/func_forecastetsseason.xhp\">PREVISÃO.ETS.SAZONALIDADE</link>, <link href=\"text/scalc/01/04060185.xhp#forecast\">PREVISÃO</link>, <link href=\"text/scalc/01/04060185.xhp#forecastlinear\">PREVISÃO.LINEAR</link>"
 
 #: func_forecastetspiadd.xhp
 msgctxt ""
@@ -63133,13 +63150,12 @@ msgid "FORECAST.ETS.PI.ADD"
 msgstr "PREVISÃO.ETS.CONFINT.ADD"
 
 #: func_forecastetspiadd.xhp
-#, fuzzy
 msgctxt ""
 "func_forecastetspiadd.xhp\n"
 "bm_id976559765597655\n"
 "help.text"
 msgid "<bookmark_value>FORECAST.ETS.PI.ADD function</bookmark_value>"
-msgstr "<bookmark_value>função DOMINGO.PÁSCOA</bookmark_value>"
+msgstr "<bookmark_value>Função PREVISÃO.ETS.CONFINT.MULT</bookmark_value>"
 
 #: func_forecastetspiadd.xhp
 msgctxt ""
@@ -65129,7 +65145,7 @@ msgctxt ""
 "tit\n"
 "help.text"
 msgid "SKEWP function"
-msgstr ""
+msgstr "Função DISTORÇÃO.P"
 
 #: func_skewp.xhp
 msgctxt ""
@@ -65193,7 +65209,7 @@ msgctxt ""
 "par_id1102201618185378\n"
 "help.text"
 msgid "<item type=\"literal\">SKEWP(A1:A6)</item> returns 0.2828158928, when the range A1:A6 contains {2;3;1;6;8;5}"
-msgstr ""
+msgstr "<item type=\"literal\">DISTORÇÃO.P(A1:A6)</item> devolve 0,2828158928, se no intervalo A1:A6 estiverem os valores {2;3;1;6;8;5}"
 
 #: func_skewp.xhp
 msgctxt ""
@@ -65201,7 +65217,7 @@ msgctxt ""
 "par_id1102201618185326\n"
 "help.text"
 msgid "<item type=\"literal\">SKEWP(Number1;Number2)</item> returns zero always, if Number1 and Number2 results in two numbers."
-msgstr ""
+msgstr "<item type=\"literal\">DISTORÇÃO.P(número1;número2)</item> devolve sempre zero se número1 e número2 resultarem em dois números."
 
 #: func_skewp.xhp
 msgctxt ""
@@ -65209,7 +65225,7 @@ msgctxt ""
 "par_id1102201618188326\n"
 "help.text"
 msgid "<item type=\"literal\">SKEWP(Number1)</item> returns Err:502 (Invalid argument) if Number1 results in one number, because SKEWP cannot be calculated with one value."
-msgstr ""
+msgstr "<item type=\"literal\">DISTORÇÃO.P(número1)</item> devolve Err:502 (argumento inválido) se número1 resultar em um número, uma vez que DISTORÇÃO.P não pode ser calculada com apenas um só valor."
 
 #: func_skewp.xhp
 msgctxt ""
@@ -65217,7 +65233,7 @@ msgctxt ""
 "par_id14337286612130\n"
 "help.text"
 msgid "<link href=\"text/scalc/01/04060185.xhp#skew\">SKEW</link>"
-msgstr ""
+msgstr "<link href=\"text/scalc/01/04060185.xhp#skew\">DISTORÇÃO</link>"
 
 #: func_sumifs.xhp
 msgctxt ""
@@ -66506,12 +66522,13 @@ msgid "Example"
 msgstr "Exemplo"
 
 #: func_weeknumadd.xhp
+#, fuzzy
 msgctxt ""
 "func_weeknumadd.xhp\n"
 "par_id3149973\n"
 "229\n"
 "help.text"
-msgid "In which week number does 12/24/2001 fall?"
+msgid "In which week number does 2001-12-24 fall?"
 msgstr "A que número de semana corresponde 24/12/2001?"
 
 #: func_weeknumadd.xhp
@@ -67105,7 +67122,7 @@ msgctxt ""
 "par_id5323953\n"
 "help.text"
 msgid "The default solver engine supports only linear equations."
-msgstr "O sistema de resolução aceita apenas equações lineares."
+msgstr "O sistema de resolução só aceita equações lineares."
 
 #: solver_options.xhp
 msgctxt ""
@@ -69228,11 +69245,12 @@ msgid "Set the regression type. Three types are available:"
 msgstr "Define o tipo de regressão. Estão disponíveis três opções:"
 
 #: statistics_regression.xhp
+#, fuzzy
 msgctxt ""
 "statistics_regression.xhp\n"
 "par_id1701201620334364\n"
 "help.text"
-msgid "<emph>Linear Regression</emph>: find a strait line in the form of <item type=\"literal\">y = a.x + b</item>, where <item type=\"literal\">a</item> is the slope and <item type=\"literal\">b</item> is the intercept that best fits the data."
+msgid "<emph>Linear Regression</emph>: find a straight line in the form of <item type=\"literal\">y = a.x + b</item>, where <item type=\"literal\">a</item> is the slope and <item type=\"literal\">b</item> is the intercept that best fits the data."
 msgstr "<emph>Regressão linear:</emph> localiza uma linha reta na forma <item type=\"literal\">y = a.x +b</item>. em que <item type=\"literal\">a</item> é o declive e<item type=\"literal\">b</item> é a interseção que melhor se ajusta aos dados."
 
 #: statistics_regression.xhp

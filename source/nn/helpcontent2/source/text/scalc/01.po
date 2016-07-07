@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2016-05-23 22:09+0200\n"
-"PO-Revision-Date: 2016-06-20 16:11+0000\n"
+"POT-Creation-Date: 2016-07-04 16:53+0200\n"
+"PO-Revision-Date: 2016-07-02 09:28+0000\n"
 "Last-Translator: Kolbjørn Stuestøl <kolbjoern@stuestoel.no>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: nn\n"
@@ -13,8 +13,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Accelerator-Marker: ~\n"
-"X-Generator: Pootle 2.7\n"
-"X-POOTLE-MTIME: 1466439092.000000\n"
+"X-Generator: LibreOffice\n"
+"X-POOTLE-MTIME: 1467451705.000000\n"
 
 #: 01120000.xhp
 msgctxt ""
@@ -4468,12 +4468,13 @@ msgid "<item type=\"input\">DCOUNT</item>"
 msgstr "<item type=\"input\">DTAL.PÅ</item>"
 
 #: 04060101.xhp
+#, fuzzy
 msgctxt ""
 "04060101.xhp\n"
 "par_id3149282\n"
 "83\n"
 "help.text"
-msgid "The formula in cell B16 is =DCOUNT(A1:E10;0;A13:E14)"
+msgid "The formula in cell B16 is =DCOUNT(A1:E10;D1;A13:E14)"
 msgstr "Formelen i celle B16 er =DTAL.PÅ(A1:E10;0;A13:E14)"
 
 #: 04060101.xhp
@@ -4509,8 +4510,8 @@ msgctxt ""
 "par_id3151272\n"
 "86\n"
 "help.text"
-msgid "<emph>DatabaseField</emph> specifies the column where the function operates on after the search criteria of the first parameter is applied and the data rows are selected. It is not related to the search criteria itself. Use the number 0 to specify the whole data range. <variable id=\"quotes\">To reference a column by means of the column header name, place quotation marks around the header name.</variable>"
-msgstr "<emph>Databasefelt</emph> spesifiserer den kolonnen som funksjonen arbeider på etter at søkjekriteriet frå den første parameteren er oppgjeve og dataradene er markerte. Det er ikkje relatert til sjølve søkjekriteriet. Bruk talet 0 for å spesifisera heile dataområdet. <variable id=\"quotes\">For å referera til ein kolonne ved hjelp av kolonnenamnet, skriv du doble hermeteikn (\" \") rundt namnet.</variable>"
+msgid "<emph>DatabaseField</emph> specifies the column where the function operates on after the search criteria of the first parameter is applied and the data rows are selected. It is not related to the search criteria itself. <variable id=\"quotes\">For the DatabaseField parameter you can enter a reference to a header cell or a number to specify the column within the Database area, starting with 1. To reference a column by means of the literal column header name, place quotation marks around the header name.</variable>"
+msgstr ""
 
 #: 04060101.xhp
 msgctxt ""
@@ -4556,12 +4557,13 @@ msgid "DCOUNT"
 msgstr "DTAL.PÅ (DCOUNT på engelsk)"
 
 #: 04060101.xhp
+#, fuzzy
 msgctxt ""
 "04060101.xhp\n"
 "par_id3156133\n"
 "89\n"
 "help.text"
-msgid "<ahelp hid=\"HID_FUNC_DBANZAHL\">DCOUNT counts the number of rows (records) in a database that match the specified search criteria and contain numerical values.</ahelp>"
+msgid "<ahelp hid=\"HID_FUNC_DBANZAHL\">DCOUNT counts the number of rows (records) in a database that match the specified search criteria and contain numerical values in the DatabaseField column.</ahelp>"
 msgstr "<ahelp hid=\"HID_FUNC_DBANZAHL\">DTAL.PÅ tel kor mange rader (postar) i ein database som passar til dei valde søkjekriteria og som inneheld talverdiar.</ahelp>"
 
 #: 04060101.xhp
@@ -4574,12 +4576,13 @@ msgid "Syntax"
 msgstr "Syntaks"
 
 #: 04060101.xhp
+#, fuzzy
 msgctxt ""
 "04060101.xhp\n"
 "par_id3153218\n"
 "91\n"
 "help.text"
-msgid "DCOUNT(Database; DatabaseField; SearchCriteria)"
+msgid "DCOUNT(Database; [DatabaseField]; SearchCriteria)"
 msgstr "DTAL.PÅ(Database; Databasefelt; Søkjekriterium)"
 
 #: 04060101.xhp
@@ -4588,8 +4591,8 @@ msgctxt ""
 "par_id3153273\n"
 "187\n"
 "help.text"
-msgid "For the DatabaseField parameter you can enter a cell to specify the column, or enter the number 0 for the entire database. The parameter cannot be empty. <embedvar href=\"text/scalc/01/04060101.xhp#quotes\"/>"
-msgstr "Som parameter for databasefeltet kan du skriva inn ei celle for å spesifisera kolonnen eller skriva inn talet 0 for heile databasen. Parameteren må ikkje vera tom.<embedvar href=\"text/scalc/01/04060101.xhp#quotes\"/>"
+msgid "If the DatabaseField argument is omitted, DCOUNT returns the count of all records that satisfy Criteria. <embedvar href=\"text/scalc/01/04060101.xhp#quotes\"/>"
+msgstr ""
 
 #: 04060101.xhp
 msgctxt ""
@@ -4601,21 +4604,23 @@ msgid "Example"
 msgstr "Eksempel"
 
 #: 04060101.xhp
+#, fuzzy
 msgctxt ""
 "04060101.xhp\n"
 "par_id3153623\n"
 "93\n"
 "help.text"
-msgid "In the example above (scroll up, please), we want to know how many children have to travel more than 600 meters to school. The result is to be stored in cell B16. Set the cursor in cell B16. Enter the formula <item type=\"input\">=DCOUNT(A1:E10;0;A13:E14)</item> in B16. The <emph>Function Wizard</emph> helps you to input ranges."
+msgid "In the example above (scroll up, please), we want to know how many children have to travel more than 600 meters to school. The result is to be stored in cell B16. Set the cursor in cell B16. Enter the formula <item type=\"input\">=DCOUNT(A1:E10;D1;A13:E14)</item> in B16. The <emph>Function Wizard</emph> helps you to input ranges."
 msgstr "I eksempelet ovanfor ønskjer vi å vita kor mange born som har meir enn 600 meter til skolen. Resultatet vert vist i celle B16. Plassér peikaren i celle B16. Skriv inn formelen <item type=\"input\">=DTAL.PÅ(A1:E10;0;A13:E14)</item> i B16. <emph>Funksjonsvegvisaren</emph> kan hjelpa deg med å skriva inn celleområdet."
 
 #: 04060101.xhp
+#, fuzzy
 msgctxt ""
 "04060101.xhp\n"
 "par_id3149142\n"
 "94\n"
 "help.text"
-msgid "<emph>Database</emph> is the range of data to be evaluated, including its headers: in this case A1:E10. <emph>DatabaseField</emph> specifies the column for the search criteria: in this case, the whole database. <emph>SearchCriteria</emph> is the range where you can enter the search parameters: in this case, A13:E14."
+msgid "<emph>Database</emph> is the range of data to be evaluated, including its headers: in this case A1:E10. <emph>DatabaseField</emph> specifies the column for the search criteria: in this case, the column with the numerical distance values. <emph>SearchCriteria</emph> is the range where you can enter the search parameters: in this case, A13:E14."
 msgstr "<emph>Database</emph> er dataområdet det skal søkjast i, inklusive overskriftene. I dette tilfellet A1:E10. <emph>Databasefelt</emph> er kolonnen til søkjekriteria, i dette tilfellet heile databasen. <emph>Søkjekriteria</emph> er det området der du skriv inn søkjeparametra, i dette tilfellet A13:E14."
 
 #: 04060101.xhp
@@ -4663,13 +4668,23 @@ msgid "Syntax"
 msgstr "Syntaks"
 
 #: 04060101.xhp
+#, fuzzy
 msgctxt ""
 "04060101.xhp\n"
 "par_id3146893\n"
 "100\n"
 "help.text"
-msgid "DCOUNTA(Database; DatabaseField; SearchCriteria)"
+msgid "DCOUNTA(Database; [DatabaseField]; SearchCriteria)"
 msgstr "DTAL.PÅA(Database; Databasefelt; Søkjekriterium)"
+
+#: 04060101.xhp
+msgctxt ""
+"04060101.xhp\n"
+"par_id3153274\n"
+"189\n"
+"help.text"
+msgid "If the DatabaseField argument is omitted, DCOUNTA returns the count of all records that satisfy Criteria. <embedvar href=\"text/scalc/01/04060101.xhp#quotes\"/>"
+msgstr ""
 
 #: 04060101.xhp
 msgctxt ""
@@ -5668,8 +5683,8 @@ msgctxt ""
 "par_id3150654\n"
 "185\n"
 "help.text"
-msgid "When entering dates, slashes or dashes used as date separators may be interpreted as arithmetic operators. Therefore, dates entered in this format are not always recognized as dates and result in erroneous calculations. To keep dates from being interpreted as parts of formulas, place them in quotation marks, for example, \"07/20/54\"."
-msgstr "Når du skriv inn datoar med skråstrek eller bakoverstrek brukte som datoskiljeteikn, kan dette verta oppfatta som matematiske teikn og såleis føra til heilt feil utrekningar. Dette kan du unngå ved å skriva slike datoar inn i doble hermeteikn, for eksempel \"20/07/54\"."
+msgid "When entering dates as part of formulas, slashes or dashes used as date separators are interpreted as arithmetic operators. Therefore, dates entered in this format are not recognized as dates and result in erroneous calculations. To keep dates from being interpreted as parts of formulas use the DATE function, for example, DATE(1954;7;20), or place the date in quotation marks and use the ISO 8601 notation, for example, \"1954-07-20\". Avoid using locale dependent date formats such as \"07/20/54\", the calculation may produce errors if the document is loaded under different locale settings."
+msgstr ""
 
 #: 04060102.xhp
 msgctxt ""
@@ -8944,7 +8959,7 @@ msgctxt ""
 "par_id1912289\n"
 "help.text"
 msgid "<item type=\"input\">=ISEVEN(-2.1)</item> returns TRUE"
-msgstr "<item type=\"input\">ERPARTAL(-2,1)</item> returnerar SANN."
+msgstr "<item type=\"input\">ERPARTAL(-2,1)</item> returnerer SANN."
 
 #: 04060104.xhp
 msgctxt ""
@@ -9544,7 +9559,7 @@ msgctxt ""
 "par_id3155345\n"
 "help.text"
 msgid "<item type=\"input\">=ISODD(33)</item> returns TRUE"
-msgstr "<item type=\"input\">=ERODDETAL(33)</item> returnerar SANN."
+msgstr "<item type=\"input\">=ERODDETAL(33)</item> returnerer SANN."
 
 #: 04060104.xhp
 msgctxt ""
@@ -9560,7 +9575,7 @@ msgctxt ""
 "par_id5971251\n"
 "help.text"
 msgid "<item type=\"input\">=ISODD(3.999)</item> returns TRUE"
-msgstr "<item type=\"input\">=ERODDETAL(3,999)</item> returnerar SANN."
+msgstr "<item type=\"input\">=ERODDETAL(3,999)</item> returnerer SANN."
 
 #: 04060104.xhp
 msgctxt ""
@@ -9568,7 +9583,7 @@ msgctxt ""
 "par_id4136478\n"
 "help.text"
 msgid "<item type=\"input\">=ISODD(-3.1)</item> returns TRUE"
-msgstr "<item type=\"input\">=ERODDETAL(-3,1)</item> returnerar SANN"
+msgstr "<item type=\"input\">=ERODDETAL(-3,1)</item> returnerer SANN"
 
 #: 04060104.xhp
 msgctxt ""
@@ -9779,19 +9794,21 @@ msgid "<item type=\"input\">=N(123)</item> returns 123"
 msgstr "<item type=\"input\">=N(123)</item> returnerer 123"
 
 #: 04060104.xhp
+#, fuzzy
 msgctxt ""
 "04060104.xhp\n"
 "par_id2337717\n"
 "help.text"
-msgid "<item type=\"input\">=N(TRUE)</item> returns 1"
+msgid "<item type=\"input\">=N(TRUE())</item> returns 1"
 msgstr "<item type=\"input\">=N(SANN)</item> returnerer 1"
 
 #: 04060104.xhp
+#, fuzzy
 msgctxt ""
 "04060104.xhp\n"
 "par_id3153781\n"
 "help.text"
-msgid "<item type=\"input\">=N(FALSE)</item> returns 0"
+msgid "<item type=\"input\">=N(FALSE())</item> returns 0"
 msgstr "<item type=\"input\">=N(USANN)</item> returnerer 0"
 
 #: 04060104.xhp
@@ -11102,7 +11119,7 @@ msgctxt ""
 "par_id3155987\n"
 "help.text"
 msgid "<ahelp hid=\"HID_FUNC_XOR\">Returns true if an odd number of arguments evaluates to TRUE.</ahelp>"
-msgstr "<ahelp hid=\"HID_FUNC_XOR\">Returnerar SANN viss eit oddetal argument vert evaluerte til SANN.</ahelp>"
+msgstr "<ahelp hid=\"HID_FUNC_XOR\">Returnerer SANN viss eit oddetal argument vert evaluerte til SANN.</ahelp>"
 
 #: 04060105.xhp
 msgctxt ""
@@ -11110,7 +11127,7 @@ msgctxt ""
 "par_id3148772\n"
 "help.text"
 msgid "The arguments are either logical expressions themselves (TRUE, 1<5, 2+3=7, B8<10) that return logical values, or arrays (A1:C3) containing logical values."
-msgstr "Argumenta er anten sjølv logiske uttrykk (SANN, 1<5, 2+3=7, B8<10) som returnerar logiske verdiar, eller tabellar (A1:C3) som inneheld logiske verdiar."
+msgstr "Argumenta er anten sjølv logiske uttrykk (SANN, 1<5, 2+3=7, B8<10) som returnerer logiske verdiar eller tabellar (A1:C3) som inneheld logiske verdiar."
 
 #: 04060105.xhp
 msgctxt ""
@@ -11742,7 +11759,7 @@ msgctxt ""
 "par_id4808496\n"
 "help.text"
 msgid "<item type=\"input\">=ASINH(SINH(4))</item> returns 4."
-msgstr "<item type=\"input\">=ASINH(SINH(4))</item> returnerar 4."
+msgstr "<item type=\"input\">=ASINH(SINH(4))</item> returnerer 4."
 
 #: 04060106.xhp
 msgctxt ""
@@ -12030,7 +12047,7 @@ msgctxt ""
 "par_id3154213\n"
 "help.text"
 msgid "COS(Number)"
-msgstr "TIME(Tal)"
+msgstr "COS(Tal)"
 
 #: 04060106.xhp
 msgctxt ""
@@ -12150,7 +12167,7 @@ msgctxt ""
 "hd_id3152888\n"
 "help.text"
 msgid "COT"
-msgstr "COT"
+msgstr "COT (COT på engelsk)"
 
 #: 04060106.xhp
 msgctxt ""
@@ -12510,7 +12527,7 @@ msgctxt ""
 "hd_id3148698\n"
 "help.text"
 msgid "EXP"
-msgstr "EKSP"
+msgstr "EKSP (EXP på engelsk)"
 
 #: 04060106.xhp
 msgctxt ""
@@ -12638,7 +12655,7 @@ msgctxt ""
 "par_id3154476\n"
 "help.text"
 msgid "<item type=\"input\">=FACT(3)</item> returns 6."
-msgstr "<item type=\"input\">=FAKULTET(3)</item> returnerar 6."
+msgstr "<item type=\"input\">=FAKULTET(3)</item> returnerer 6."
 
 #: 04060106.xhp
 msgctxt ""
@@ -12718,7 +12735,7 @@ msgctxt ""
 "par_id3156267\n"
 "help.text"
 msgid "<item type=\"input\">=INT(5.7)</item> returns 5."
-msgstr "<item type=\"input\">=HEILTAL(5,7)</item> returnerar 5."
+msgstr "<item type=\"input\">=HEILTAL(5,7)</item> returnerer 5."
 
 #: 04060106.xhp
 msgctxt ""
@@ -12726,7 +12743,7 @@ msgctxt ""
 "par_id3147323\n"
 "help.text"
 msgid "<item type=\"input\">=INT(-1.3)</item> returns -2."
-msgstr "<item type=\"input\">=HEILTAL(-1,3)</item> returnerar -2."
+msgstr "<item type=\"input\">=HEILTAL(-1,3)</item> returnerer -2."
 
 #: 04060106.xhp
 msgctxt ""
@@ -12790,7 +12807,7 @@ msgctxt ""
 "par_id3154361\n"
 "help.text"
 msgid "<item type=\"input\">=EVEN(2.3)</item> returns 4."
-msgstr "<item type=\"input\">=AVRUND.TIL.PARTAL(2,3)</item> returnerar 4."
+msgstr "<item type=\"input\">=AVRUND.TIL.PARTAL(2,3)</item> returnerer 4."
 
 #: 04060106.xhp
 msgctxt ""
@@ -13374,7 +13391,7 @@ msgctxt ""
 "par_id3154974\n"
 "help.text"
 msgid "<ahelp hid=\"HID_FUNC_LN\">Returns the natural logarithm based on the constant e of a number.</ahelp> The constant e has a value of approximately 2.71828182845904."
-msgstr "<ahelp hid=\"HID_FUNC_LN\">Returnerar den naturlege logaritmen til eit tal basert på konstanten e.</ahelp> Verdien av e er tilnærma lik 2,71828182845904."
+msgstr "<ahelp hid=\"HID_FUNC_LN\">Returnerer den naturlege logaritmen til eit tal basert på konstanten e.</ahelp> Verdien av e er tilnærma lik 2,71828182845904."
 
 #: 04060106.xhp
 msgctxt ""
@@ -13414,7 +13431,7 @@ msgctxt ""
 "par_id3153866\n"
 "help.text"
 msgid "<item type=\"input\">=LN(3)</item> returns the natural logarithm of 3 (approximately 1.0986)."
-msgstr "<item type=\"input\">=LN(3)</item> returnerar den naturlege logaritme av 3 (ca. 1,0986)."
+msgstr "<item type=\"input\">=LN(3)</item> returnerer den naturlege logaritme av 3 (ca. 1,0986)."
 
 #: 04060106.xhp
 msgctxt ""
@@ -13494,7 +13511,7 @@ msgctxt ""
 "par_id3154429\n"
 "help.text"
 msgid "<item type=\"input\">=LOG(10;3)</item> returns the logarithm to base 3 of 10 (approximately 2.0959)."
-msgstr "<item type=\"input\">=LOG(10; 3)</item> returnerar tretalslogaritmen av 10 (ca. 2,0959)."
+msgstr "<item type=\"input\">=LOG(10; 3)</item> returnerer tretalslogaritmen av 10 (ca. 2,0959)."
 
 #: 04060106.xhp
 msgctxt ""
@@ -13502,7 +13519,7 @@ msgctxt ""
 "par_id5577562\n"
 "help.text"
 msgid "<item type=\"input\">=LOG(7^4;7)</item> returns 4."
-msgstr "<item type=\"input\">=LOG(7^4;7)</item> returnerar 4."
+msgstr "<item type=\"input\">=LOG(7^4;7)</item> returnerer 4."
 
 #: 04060106.xhp
 msgctxt ""
@@ -14174,7 +14191,7 @@ msgctxt ""
 "par_id3144494\n"
 "help.text"
 msgid "<item type=\"input\">=PRODUCT(2;3;4)</item> returns 24."
-msgstr "<item type=\"input\">=PRODUKT(2;3;4)</item> returnerar 24."
+msgstr "<item type=\"input\">=PRODUKT(2;3;4)</item> returnerer 24."
 
 #: 04060106.xhp
 msgctxt ""
@@ -14526,7 +14543,7 @@ msgctxt ""
 "par_id3145876\n"
 "help.text"
 msgid "<item type=\"input\">=ROUND(2.348;2)</item> returns 2.35"
-msgstr "<item type=\"input\">=AVRUND(2,348;2)</item> returnerar 2,35"
+msgstr "<item type=\"input\">=AVRUND(2,348;2)</item> returnerer 2,35"
 
 #: 04060106.xhp
 msgctxt ""
@@ -14542,7 +14559,7 @@ msgctxt ""
 "par_id1371501\n"
 "help.text"
 msgid "<item type=\"input\">=ROUND(2.348;0)</item> returns 2."
-msgstr "<item type=\"input\">=AVRUND(2,348;0)</item> returnerar 2."
+msgstr "<item type=\"input\">=AVRUND(2,348;0)</item> returnerer 2."
 
 #: 04060106.xhp
 msgctxt ""
@@ -14550,7 +14567,7 @@ msgctxt ""
 "par_id4661702\n"
 "help.text"
 msgid "<item type=\"input\">=ROUND(2.5)</item> returns 3."
-msgstr "<item type=\"input\">=AVRUND(2,5)</item> returnerar 3."
+msgstr "<item type=\"input\">=AVRUND(2,5)</item> returnerer 3."
 
 #: 04060106.xhp
 msgctxt ""
@@ -14558,7 +14575,7 @@ msgctxt ""
 "par_id7868892\n"
 "help.text"
 msgid "<item type=\"input\">=ROUND(987.65;-2)</item> returns 1000."
-msgstr "<item type=\"input\">=AVRUND(987,65;-2)</item> returnerar -1000."
+msgstr "<item type=\"input\">=AVRUND(987,65;-2)</item> returnerer 1000."
 
 #: 04060106.xhp
 msgctxt ""
@@ -14630,7 +14647,7 @@ msgctxt ""
 "par_id3163178\n"
 "help.text"
 msgid "<item type=\"input\">=ROUNDDOWN(1.234;2)</item> returns 1.23."
-msgstr "<item type=\"input\">=AVRUND.NED(1,234;2)</item> returnerar 1,23."
+msgstr "<item type=\"input\">=AVRUND.NED(1,234;2)</item> returnerer 1,23."
 
 #: 04060106.xhp
 msgctxt ""
@@ -14638,7 +14655,7 @@ msgctxt ""
 "par_id5833307\n"
 "help.text"
 msgid "<item type=\"input\">=ROUNDDOWN(45.67;0)</item> returns 45."
-msgstr "<item type=\"input\">=AVRUND.NED(45,67;0)</item> returnerar 45."
+msgstr "<item type=\"input\">=AVRUND.NED(45,67;0)</item> returnerer 45."
 
 #: 04060106.xhp
 msgctxt ""
@@ -14654,7 +14671,7 @@ msgctxt ""
 "par_id3729361\n"
 "help.text"
 msgid "<item type=\"input\">=ROUNDDOWN(987.65;-2)</item> returns 900."
-msgstr "<item type=\"input\">=AVRUND.NED(987,65;-2)</item> returnerar 900."
+msgstr "<item type=\"input\">=AVRUND.NED(987,65;-2)</item> returnerer 900."
 
 #: 04060106.xhp
 msgctxt ""
@@ -14726,7 +14743,7 @@ msgctxt ""
 "par_id3144786\n"
 "help.text"
 msgid "<item type=\"input\">=ROUNDUP(1.1111;2)</item> returns 1.12."
-msgstr "<item type=\"input\">=AVRUND.OPP(1,1111;2)</item> returnerar 1,12."
+msgstr "<item type=\"input\">=AVRUND.OPP(1,1111;2)</item> returnerer 1,12."
 
 #: 04060106.xhp
 msgctxt ""
@@ -14734,7 +14751,7 @@ msgctxt ""
 "par_id7700430\n"
 "help.text"
 msgid "<item type=\"input\">=ROUNDUP(1.2345;1)</item> returns 1.3."
-msgstr "<item type=\"input\">=AVRUND.OPP(1,2345;1)</item> returnerar 1,3."
+msgstr "<item type=\"input\">=AVRUND.OPP(1,2345;1)</item> returnerer 1,3."
 
 #: 04060106.xhp
 msgctxt ""
@@ -14742,7 +14759,7 @@ msgctxt ""
 "par_id1180455\n"
 "help.text"
 msgid "<item type=\"input\">=ROUNDUP(45.67;0)</item> returns 46."
-msgstr "<item type=\"input\">=AVRUND.OPP(45,67;0)</item> returnerar 46."
+msgstr "<item type=\"input\">=AVRUND.OPP(45,67;0)</item> returnerer 46."
 
 #: 04060106.xhp
 msgctxt ""
@@ -14750,7 +14767,7 @@ msgctxt ""
 "par_id3405560\n"
 "help.text"
 msgid "<item type=\"input\">=ROUNDUP(-45.67)</item> returns -46."
-msgstr "<item type=\"input\">=MINUT(8,999)</item> returnerar 58"
+msgstr "<item type=\"input\">=AVRUND.OPP(-45,67)</item> returnerer -46"
 
 #: 04060106.xhp
 msgctxt ""
@@ -14758,7 +14775,7 @@ msgctxt ""
 "par_id3409527\n"
 "help.text"
 msgid "<item type=\"input\">=ROUNDUP(987.65;-2)</item> returns 1000."
-msgstr "<item type=\"input\">=MINUT(8,999)</item> returnerar 58"
+msgstr "<item type=\"input\">=AVRUND.OPP(987,65;-2)</item> returnerer 1000."
 
 #: 04060106.xhp
 msgctxt ""
@@ -14830,7 +14847,7 @@ msgctxt ""
 "par_id6935513\n"
 "help.text"
 msgid "<item type=\"input\">=SEC(PI()/4)</item> returns approximately 1.4142135624, the inverse of the cosine of PI/4 radians."
-msgstr "<item type=\"input\">=SEKANT(PI()/4)</item> returnerar den tilnærma verdien 1.4142135624, som er inversen av cosinus av PI/4 radianar."
+msgstr "<item type=\"input\">=SEKANT(PI()/4)</item> returnerer den tilnærma verdien 1.4142135624, som er inversen av cosinus av PI/4 radianar."
 
 #: 04060106.xhp
 msgctxt ""
@@ -14942,7 +14959,7 @@ msgctxt ""
 "par_id3144937\n"
 "help.text"
 msgid "SIN(Number)"
-msgstr "MINUTT (tal)"
+msgstr "SIN (tal)"
 
 #: 04060106.xhp
 msgctxt ""
@@ -15022,7 +15039,7 @@ msgctxt ""
 "par_id3163457\n"
 "help.text"
 msgid "SINH(Number)"
-msgstr "MINUTT (tal)"
+msgstr "SINH(tal)"
 
 #: 04060106.xhp
 msgctxt ""
@@ -15398,7 +15415,7 @@ msgctxt ""
 "par_id3165494\n"
 "help.text"
 msgid "TANH(Number)"
-msgstr "MINUTT (tal)"
+msgstr "TANH(tal)"
 
 #: 04060106.xhp
 msgctxt ""
@@ -15902,7 +15919,7 @@ msgctxt ""
 "par_id3157237\n"
 "help.text"
 msgid "ODD(Number)"
-msgstr "TIME(Tal)"
+msgstr "AVRUND.TIL.ODDETAL(Tal)"
 
 #: 04060106.xhp
 msgctxt ""
@@ -16166,7 +16183,7 @@ msgctxt ""
 "par_id3164150\n"
 "help.text"
 msgid "SIGN(Number)"
-msgstr "MINUTT (tal)"
+msgstr "FORTEIKN(tal)"
 
 #: 04060106.xhp
 msgctxt ""
@@ -16190,7 +16207,7 @@ msgctxt ""
 "par_id3164197\n"
 "help.text"
 msgid "<item type=\"input\">=SIGN(3.4)</item> returns 1."
-msgstr "<item type=\"input\">=MINUT(8,999)</item> returnerar 58"
+msgstr "<item type=\"input\">=FORTEIKN(3,4)</item> returnerer 1"
 
 #: 04060106.xhp
 msgctxt ""
@@ -16198,7 +16215,7 @@ msgctxt ""
 "par_id3164212\n"
 "help.text"
 msgid "<item type=\"input\">=SIGN(-4.5)</item> returns -1."
-msgstr "<item type=\"input\">=MINUT(8,999)</item> returnerar 58"
+msgstr "<item type=\"input\">=FORTEIKN(-4,5)</item> returnerer -1"
 
 #: 04060106.xhp
 msgctxt ""
@@ -16862,7 +16879,7 @@ msgctxt ""
 "par_id3149102\n"
 "help.text"
 msgid "If you create an array formula using the <emph>Function Wizard</emph>, you must mark the <emph>Array</emph> check box each time so that the results are returned in an array. Otherwise, only the value in the upper-left cell of the array being calculated is returned."
-msgstr "Viss du har laga ein matriseformel ved å bruka <emph>funksjonsvegvisaren</emph>, må du merkja av i avkryssingsboksen <emph>Matrise</emph> kvar gong slik at verdiane vert returnerte i ein tabell. Elles vil berre verdien i den øvre, venstre cella i tabellen verta returnert."
+msgstr "Viss du har laga ein matriseformel ved å bruka <emph>funksjonsvegvisaren</emph>, må du merkja av i avkryssingsboksen <emph>Matrise</emph> kvar gong slik at verdiane vert returnerte i ein tabell. Elles vert berre verdien i den øvre, venstre cella i tabellen returnert."
 
 #: 04060107.xhp
 msgctxt ""
@@ -16870,7 +16887,7 @@ msgctxt ""
 "par_id3153392\n"
 "help.text"
 msgid "If you enter the array formula directly into the cell, you must use the key combination Shift+<switchinline select=\"sys\"><caseinline select=\"MAC\">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+Enter instead of the Enter key. Only then does the formula become an array formula."
-msgstr "Viss du skriv ein matriseformel direkte i cella, må du bruka tastekombinasjonen Shift + <switchinline select=\"sys\"><caseinline select=\"MAC\">Cmd</caseinline><defaultinline>Ctrl</defaultinline></switchinline> + Enter. Berre på den måten kan formelen verta ein matriseformel."
+msgstr "Viss du skriv ein matriseformel direkte i cella, må du bruka tastekombinasjonen Shift + <switchinline select=\"sys\"><caseinline select=\"MAC\">Cmd</caseinline><defaultinline>Ctrl</defaultinline></switchinline> + Enter i staden for Eter for å aktivera formelen. Berre på den måten kan formelen verta ein matriseformel."
 
 #: 04060107.xhp
 msgctxt ""
@@ -16910,7 +16927,7 @@ msgctxt ""
 "par_id936613\n"
 "help.text"
 msgid "The column separator (separating elements in one row) and the row separator are language and locale dependent. But in this help content, the ';' semicolon and '|' pipe symbol are used to indicate the column and row separators, respectively. For example, in the English locale, the ',' comma is used as the column separator, while the ';' semicolon is used as the row separator."
-msgstr "Kva skiljeteikn som vert brukte for å skilje elementa i ein kolonne eller ei rad er avhengig av språklege og lokale innstillingar. På desse hjelpsidene vil vi bruka semikolon (;) og «pipesymbolet» (|) som skiljeteikn i rader og kolonnar. For eksempel vert det i engelsk brukt komma (,) som skiljeteikn i kolonnar, medan semikolon (;) vert brukt som skiljeteikn i rader."
+msgstr "Kva skiljeteikn som vert brukte for å skilje elementa i ein kolonne eller ei rad er avhengig av språklege og lokale innstillingar. På desse hjelpsidene vert semikolon (;) og «pipesymbolet» (|) brukte som skiljeteikn i rader og kolonnar. (I for eksempel engelsk vert komma (,) brukt som skiljeteikn i kolonnar og semikolon (;) vert brukt som skiljeteikn i rader)."
 
 #: 04060107.xhp
 msgctxt ""
@@ -23035,7 +23052,7 @@ msgctxt ""
 "173\n"
 "help.text"
 msgid "<item type=\"input\">=CONCATENATE(\"Good \";\"Morning \";\"Mrs. \";\"Doe\")</item> returns: Good Morning Mrs. Doe."
-msgstr "<item type=\"input\">=KJEDA.SAMAN(\"God \";\"morgon \";\"fru \";\"Nordmann\")</item> returnerar: God morgon fru Nordmann."
+msgstr "<item type=\"input\">=KJEDA.SAMAN(\"God \";\"morgon \";\"fru \";\"Nordmann\")</item> returnerer: God morgon fru Nordmann."
 
 #: 04060110.xhp
 msgctxt ""
@@ -23364,7 +23381,7 @@ msgctxt ""
 "47\n"
 "help.text"
 msgid "FIND(\"FindText\"; \"Text\"; Position)"
-msgstr "FINN(\"FinnTekst\"; \"Tekst\"; Plasering)"
+msgstr "FINN(\"FinnTekst\"; \"Tekst\"; Plassering)"
 
 #: 04060110.xhp
 msgctxt ""
@@ -25664,12 +25681,13 @@ msgid "Syntax"
 msgstr "Syntaks"
 
 #: 04060111.xhp
+#, fuzzy
 msgctxt ""
 "04060111.xhp\n"
 "par_id3150205\n"
 "17\n"
 "help.text"
-msgid "ISLEAPYEAR(\"Date\")"
+msgid "ISLEAPYEAR(Date)"
 msgstr "ER.SKOTÅR(\"Dato\")"
 
 #: 04060111.xhp
@@ -25678,8 +25696,8 @@ msgctxt ""
 "par_id3159239\n"
 "18\n"
 "help.text"
-msgid "<emph>Date</emph> specifies whether a given date falls within a leap year. The Date parameter must be a valid date according to the locale settings of %PRODUCTNAME."
-msgstr "<emph>Dato</emph> viser om datoen fell i eit skotår. Datoen må vera ein gyldig dato ut frå dei lokale innstillingane i %PRODUCTNAME."
+msgid "<emph>Date</emph> specifies whether a given date falls within a leap year. The Date parameter must be a valid date."
+msgstr ""
 
 #: 04060111.xhp
 msgctxt ""
@@ -25704,8 +25722,8 @@ msgctxt ""
 "04060111.xhp\n"
 "par_idN107E7\n"
 "help.text"
-msgid "You may also use =ISLEAPYEAR(\"1968-02-29\") or =ISLEAPYEAR(\"2/29/68\")."
-msgstr "Du kan også bruka =ER.SKOTÅR(\"1968-02-29\") eller =ER.SKOTÅR(\"29/2/68\")."
+msgid "You may also use =ISLEAPYEAR(DATE(1968;2;29)) or =ISLEAPYEAR(\"1968-02-29\") giving the date string in the ISO 8601 notation."
+msgstr ""
 
 #: 04060111.xhp
 msgctxt ""
@@ -29715,7 +29733,7 @@ msgctxt ""
 "50\n"
 "help.text"
 msgid "<item type=\"input\">=IMABS(\"5+12j\")</item> returns 13."
-msgstr "<item type=\"input\">=IMABS(\"5+12j\")</item> returnerar 13."
+msgstr "<item type=\"input\">=IMABS(\"5+12j\")</item> returnerer 13."
 
 #: 04060116.xhp
 msgctxt ""
@@ -46135,7 +46153,7 @@ msgctxt ""
 "13\n"
 "help.text"
 msgid "<ahelp hid=\"HID_FUNC_SCHIEFE\">Returns the skewness of a distribution.</ahelp>"
-msgstr "<ahelp hid=\"HID_FUNC_SCHIEFE\">Returnerer skeivleiken i ei fordeling.</ahelp>"
+msgstr "<ahelp hid=\"HID_FUNC_SCHIEFE\">Returnerer skeivskapen i ei fordeling.</ahelp>"
 
 #: 04060185.xhp
 msgctxt ""
@@ -47493,7 +47511,7 @@ msgctxt ""
 "105\n"
 "help.text"
 msgid "<item type=\"input\">=TINV(0.1;6)</item> returns 1.94"
-msgstr "<item type=\"input\">=MINUT(8,9999)</item> returnerar 59"
+msgstr "<item type=\"input\">=TFORDELING.INVERS(0,1:6)</item> returnerer 1,94"
 
 #: 04060185.xhp
 msgctxt ""
@@ -61734,12 +61752,13 @@ msgid "<emph>Day</emph> is an integer indicating the day of the month."
 msgstr "<emph>Dag</emph> er eit heiltal som indikerer dagen i månaden."
 
 #: func_date.xhp
+#, fuzzy
 msgctxt ""
 "func_date.xhp\n"
 "par_id3156260\n"
 "10\n"
 "help.text"
-msgid "If the values for month and day are out of bounds, they are carried over to the next digit. If you enter <item type=\"input\">=DATE(00;12;31)</item> the result will be 12/31/00. If, on the other hand, you enter <item type=\"input\">=DATE(00;13;31)</item> the result will be 1/31/01."
+msgid "If the values for month and day are out of bounds, they are carried over to the next digit. If you enter <item type=\"input\">=DATE(00;12;31)</item> the result will be 2000-12-31. If, on the other hand, you enter <item type=\"input\">=DATE(00;13;31)</item> the result will be 2001-01-31."
 msgstr "Dersom verdiane for månad og dag er for store, vert dei førte over til neste siffer. Dersom du skriv inn <item type=\"input\">=DATO(2000;12;31)</item> vert resultatet 31.12.00. Skriv du i staden inn <item type=\"input\">=DATO(2000;13;31)</item> vert resultatet 31.1.01."
 
 #: func_date.xhp
@@ -64611,7 +64630,7 @@ msgctxt ""
 "72\n"
 "help.text"
 msgid "<item type=\"input\">=MINUTE(8.999)</item> returns 58"
-msgstr "<item type=\"input\">=MINUT(8,999)</item> returnerer 58"
+msgstr "<item type=\"input\">=MINUTT(8,999)</item> returnerer 58"
 
 #: func_minute.xhp
 msgctxt ""
@@ -64620,7 +64639,7 @@ msgctxt ""
 "73\n"
 "help.text"
 msgid "<item type=\"input\">=MINUTE(8.9999)</item> returns 59"
-msgstr "<item type=\"input\">=MINUT(8,9999)</item> returnerer 59"
+msgstr "<item type=\"input\">=MINUTT(8,9999)</item> returnerer 59"
 
 #: func_minute.xhp
 msgctxt ""
@@ -64629,7 +64648,7 @@ msgctxt ""
 "74\n"
 "help.text"
 msgid "<item type=\"input\">=MINUTE(NOW())</item> returns the current minute value."
-msgstr "<item type=\"input\">=MINUTE(NOW())</item> returnerer den gjeldande minuttverdien."
+msgstr "<item type=\"input\">=MINUTT(NO())</item> returnerer den noverande minuttverdien."
 
 #: func_month.xhp
 msgctxt ""
@@ -65111,7 +65130,7 @@ msgctxt ""
 "bm_id1102201617201921\n"
 "help.text"
 msgid "<bookmark_value>skewness;population</bookmark_value>  <bookmark_value>SKEWP function</bookmark_value>"
-msgstr "<bookmark_value>skeivheit; populasjon</bookmark_value><bookmark_value>SKEIVFORDELING.P-funksjonen</bookmark_value>"
+msgstr "<bookmark_value>skeivskap; populasjon</bookmark_value><bookmark_value>SKEIVFORDELING.P-funksjonen</bookmark_value>"
 
 #: func_skewp.xhp
 msgctxt ""
@@ -66480,12 +66499,13 @@ msgid "Example"
 msgstr "Eksempel"
 
 #: func_weeknumadd.xhp
+#, fuzzy
 msgctxt ""
 "func_weeknumadd.xhp\n"
 "par_id3149973\n"
 "229\n"
 "help.text"
-msgid "In which week number does 12/24/2001 fall?"
+msgid "In which week number does 2001-12-24 fall?"
 msgstr "I kva veke var 24. desember 2001?"
 
 #: func_weeknumadd.xhp
@@ -66653,7 +66673,7 @@ msgctxt ""
 "40\n"
 "help.text"
 msgid "YEAR(Number)"
-msgstr "TIME(Tal)"
+msgstr "ÅR(Tal)"
 
 #: func_year.xhp
 msgctxt ""
@@ -67599,7 +67619,7 @@ msgctxt ""
 "par_id1001000\n"
 "help.text"
 msgid "Skewness"
-msgstr "Kurtose"
+msgstr "Skeivskap"
 
 #: statistics.xhp
 msgctxt ""
@@ -69202,11 +69222,12 @@ msgid "Set the regression type. Three types are available:"
 msgstr "Set regresjonstype. Tre typar er tilgjengelege:"
 
 #: statistics_regression.xhp
+#, fuzzy
 msgctxt ""
 "statistics_regression.xhp\n"
 "par_id1701201620334364\n"
 "help.text"
-msgid "<emph>Linear Regression</emph>: find a strait line in the form of <item type=\"literal\">y = a.x + b</item>, where <item type=\"literal\">a</item> is the slope and <item type=\"literal\">b</item> is the intercept that best fits the data."
+msgid "<emph>Linear Regression</emph>: find a straight line in the form of <item type=\"literal\">y = a.x + b</item>, where <item type=\"literal\">a</item> is the slope and <item type=\"literal\">b</item> is the intercept that best fits the data."
 msgstr "<emph>Lineær regresjon</emph>: finn ei rett linje på forma <item type=\"literal\">y = a.x + b</item> der <item type=\"literal\">a</item> er stigninga og <item type=\"literal\">b</item> er skjeringspunktet som passar best til dataane. "
 
 #: statistics_regression.xhp
