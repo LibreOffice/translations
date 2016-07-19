@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
 "POT-Creation-Date: 2016-07-04 16:53+0200\n"
-"PO-Revision-Date: 2016-07-05 19:49+0000\n"
+"PO-Revision-Date: 2016-07-07 19:30+0000\n"
 "Last-Translator: Olivier Hallot <olivier.hallot@documentfoundation.org>\n"
 "Language-Team: Brazilian Portuguese <l10n@global.libreoffice.org>\n"
 "Language: pt_BR\n"
@@ -13,8 +13,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Accelerator-Marker: ~\n"
-"X-Generator: LibreOffice\n"
-"X-POOTLE-MTIME: 1467748146.000000\n"
+"X-Generator: Pootle 2.7\n"
+"X-POOTLE-MTIME: 1467919804.000000\n"
 
 #: 01120000.xhp
 msgctxt ""
@@ -4468,14 +4468,13 @@ msgid "<item type=\"input\">DCOUNT</item>"
 msgstr "<item type=\"input\">BDCONTAR</item>"
 
 #: 04060101.xhp
-#, fuzzy
 msgctxt ""
 "04060101.xhp\n"
 "par_id3149282\n"
 "83\n"
 "help.text"
 msgid "The formula in cell B16 is =DCOUNT(A1:E10;D1;A13:E14)"
-msgstr "A fórmula na célula B16 é =BDCONTAR(A1:E10;0;A13:E14)"
+msgstr "A fórmula na célula B16 é =BDCONTAR(A1:E10;D1;A13:E14)"
 
 #: 04060101.xhp
 msgctxt ""
@@ -4511,7 +4510,7 @@ msgctxt ""
 "86\n"
 "help.text"
 msgid "<emph>DatabaseField</emph> specifies the column where the function operates on after the search criteria of the first parameter is applied and the data rows are selected. It is not related to the search criteria itself. <variable id=\"quotes\">For the DatabaseField parameter you can enter a reference to a header cell or a number to specify the column within the Database area, starting with 1. To reference a column by means of the literal column header name, place quotation marks around the header name.</variable>"
-msgstr ""
+msgstr "<emph>CampoDoBancoDeDados</emph> especifica a coluna onde a função opera após o critério de pesquisa do primeiro parâmetro ser aplicado e as linhas de dados serem selecionadas. Não está relacionado ao critério de pesquisa em si. <variable id=\"quotes\">Para o parâmetro CampoDoBancoDeDados, insira uma referência a uma célula de cabeçalho ou um número para especificar a coluna dentro da área do banco de dados, começando com 1. Para referenciar uma coluna por meio de um nome literal de coluna, coloque sinais de interrogação em torno do nome do cabeçalho.</variable>"
 
 #: 04060101.xhp
 msgctxt ""
@@ -4557,14 +4556,13 @@ msgid "DCOUNT"
 msgstr "BDCONTAR"
 
 #: 04060101.xhp
-#, fuzzy
 msgctxt ""
 "04060101.xhp\n"
 "par_id3156133\n"
 "89\n"
 "help.text"
 msgid "<ahelp hid=\"HID_FUNC_DBANZAHL\">DCOUNT counts the number of rows (records) in a database that match the specified search criteria and contain numerical values in the DatabaseField column.</ahelp>"
-msgstr "<ahelp hid=\"HID_FUNC_DBANZAHL\">BDCONTAR conta o número de linhas (registros) em um banco de dados que correspondam aos critérios de pesquisa especificados e que contenham valores numéricos.</ahelp>"
+msgstr "<ahelp hid=\"HID_FUNC_DBANZAHL\">BDCONTAR conta o número de linhas (registros) em um banco de dados que correspondam aos critérios de pesquisa especificados e contenham valores numéricos na coluna CampoDoBancoDeDados.</ahelp>"
 
 #: 04060101.xhp
 msgctxt ""
@@ -4576,14 +4574,13 @@ msgid "Syntax"
 msgstr "Sintaxe"
 
 #: 04060101.xhp
-#, fuzzy
 msgctxt ""
 "04060101.xhp\n"
 "par_id3153218\n"
 "91\n"
 "help.text"
 msgid "DCOUNT(Database; [DatabaseField]; SearchCriteria)"
-msgstr "BDCONTAR(BancoDeDados; CampoDoBancoDeDados; CritérioDePesquisa)"
+msgstr "BDCONTAR(BancoDeDados; [CampoDoBancoDeDados]; CritérioDePesquisa)"
 
 #: 04060101.xhp
 msgctxt ""
@@ -4592,7 +4589,7 @@ msgctxt ""
 "187\n"
 "help.text"
 msgid "If the DatabaseField argument is omitted, DCOUNT returns the count of all records that satisfy Criteria. <embedvar href=\"text/scalc/01/04060101.xhp#quotes\"/>"
-msgstr ""
+msgstr "Se o argumento CampoDoBancoDeDados for omitido, BDCONTAR retorna a contagem de todos os registros que satisfazem o critério de pesquisa. <embedvar href=\"text/scalc/01/04060101.xhp#quotes\"/>"
 
 #: 04060101.xhp
 msgctxt ""
@@ -4604,24 +4601,22 @@ msgid "Example"
 msgstr "Exemplo"
 
 #: 04060101.xhp
-#, fuzzy
 msgctxt ""
 "04060101.xhp\n"
 "par_id3153623\n"
 "93\n"
 "help.text"
 msgid "In the example above (scroll up, please), we want to know how many children have to travel more than 600 meters to school. The result is to be stored in cell B16. Set the cursor in cell B16. Enter the formula <item type=\"input\">=DCOUNT(A1:E10;D1;A13:E14)</item> in B16. The <emph>Function Wizard</emph> helps you to input ranges."
-msgstr "No exemplo acima (role para cima), queremos saber quantas crianças devem viajar mais de 600 metros até a escola. O resultado será armazenado na célula B16. Coloque o cursor na célula B16. Digite a fórmula<item type=\"input\">=BDCONTAR(A1:E10;0;A13:E14)</item> em B16. O <emph>Assistente de função</emph> lhe ajuda a inserir os intervalos."
+msgstr "No exemplo acima (role para cima), queremos saber quantas crianças devem viajar mais de 600 metros até a escola. O resultado será armazenado na célula B16. Coloque o cursor na célula B16. Digite a fórmula<item type=\"input\">=BDCONTAR(A1:E10;D1;A13:E14)</item> em B16. O <emph>Assistente de função</emph> lhe ajuda a inserir os intervalos."
 
 #: 04060101.xhp
-#, fuzzy
 msgctxt ""
 "04060101.xhp\n"
 "par_id3149142\n"
 "94\n"
 "help.text"
 msgid "<emph>Database</emph> is the range of data to be evaluated, including its headers: in this case A1:E10. <emph>DatabaseField</emph> specifies the column for the search criteria: in this case, the column with the numerical distance values. <emph>SearchCriteria</emph> is the range where you can enter the search parameters: in this case, A13:E14."
-msgstr "<emph>BancoDeDados</emph> é o intervalo de dados a avaliar, incluindo seus cabeçalhos: neste caso A1:E10. <emph>CampoDoBancoDeDados</emph> especifica a coluna para o critério de pesquisa: neste caso, o banco e dados inteiro. <emph>CritérioDePesquisa</emph> é o intervalo de entrada dos parâmetros de busca: neste caso, A13:E14."
+msgstr "<emph>BancoDeDados</emph> é o intervalo de dados a avaliar, incluindo seus cabeçalhos: neste caso A1:E10. <emph>CampoDoBancoDeDados</emph> especifica a coluna para o critério de pesquisa: neste caso, a coluna com os valores numéricos de distância. <emph>CritérioDePesquisa</emph> é o intervalo de entrada dos parâmetros de busca: neste caso, A13:E14."
 
 #: 04060101.xhp
 msgctxt ""
@@ -4668,14 +4663,13 @@ msgid "Syntax"
 msgstr "Sintaxe"
 
 #: 04060101.xhp
-#, fuzzy
 msgctxt ""
 "04060101.xhp\n"
 "par_id3146893\n"
 "100\n"
 "help.text"
 msgid "DCOUNTA(Database; [DatabaseField]; SearchCriteria)"
-msgstr "BDCONTARA(BancoDeDados; CampoDoBancoDeDados; CritérioDePesquisa)"
+msgstr "BDCONTARA(BancoDeDados; [CampoDoBancoDeDados]; CritérioDePesquisa)"
 
 #: 04060101.xhp
 msgctxt ""
@@ -4684,7 +4678,7 @@ msgctxt ""
 "189\n"
 "help.text"
 msgid "If the DatabaseField argument is omitted, DCOUNTA returns the count of all records that satisfy Criteria. <embedvar href=\"text/scalc/01/04060101.xhp#quotes\"/>"
-msgstr ""
+msgstr "Se o argumento CampoDoBancoDeDados for omitido, BDCONTARA retorna a contagem de todos os registros que satisfazem os critérios. <embedvar href=\"text/scalc/01/04060101.xhp#quotes\"/>"
 
 #: 04060101.xhp
 msgctxt ""
@@ -5684,7 +5678,7 @@ msgctxt ""
 "185\n"
 "help.text"
 msgid "When entering dates as part of formulas, slashes or dashes used as date separators are interpreted as arithmetic operators. Therefore, dates entered in this format are not recognized as dates and result in erroneous calculations. To keep dates from being interpreted as parts of formulas use the DATE function, for example, DATE(1954;7;20), or place the date in quotation marks and use the ISO 8601 notation, for example, \"1954-07-20\". Avoid using locale dependent date formats such as \"07/20/54\", the calculation may produce errors if the document is loaded under different locale settings."
-msgstr ""
+msgstr "Ao inserir datas como parte de fórmulas, as barras e travessões usados como separadores de datas são interpretadas como operadores aritméticos. Portanto, datas inseridas neste formato não são consideradas como datas e resultam em cálculos errados. Para evitar que as datas sejam interpretadas como partes de fórmulas , utilize a função DATA, por exemplo DATA(1954;7;20), ou coloque a data entre aspas com a notação ISO 8601, por exemplo, \"1954-07-20\". Evite utilizar formatos regionais de datas como por exemplo \"07/20/54\", pois o cálculo pode produzir erros ao carregar o documento em sistemas com configuração regional diferente."
 
 #: 04060102.xhp
 msgctxt ""
@@ -9794,22 +9788,20 @@ msgid "<item type=\"input\">=N(123)</item> returns 123"
 msgstr "<item type=\"input\">=N(123)</item> retorna 123"
 
 #: 04060104.xhp
-#, fuzzy
 msgctxt ""
 "04060104.xhp\n"
 "par_id2337717\n"
 "help.text"
 msgid "<item type=\"input\">=N(TRUE())</item> returns 1"
-msgstr "<item type=\"input\">=N(VERDADEIRO)</item> retorna 1"
+msgstr "<item type=\"input\">=N(VERDADEIRO())</item> retorna 1"
 
 #: 04060104.xhp
-#, fuzzy
 msgctxt ""
 "04060104.xhp\n"
 "par_id3153781\n"
 "help.text"
 msgid "<item type=\"input\">=N(FALSE())</item> returns 0"
-msgstr "<item type=\"input\">=N(FALSO)</item> retorna 0"
+msgstr "<item type=\"input\">=N(FALSO())</item> retorna 0"
 
 #: 04060104.xhp
 msgctxt ""
@@ -25681,14 +25673,13 @@ msgid "Syntax"
 msgstr "Sintaxe"
 
 #: 04060111.xhp
-#, fuzzy
 msgctxt ""
 "04060111.xhp\n"
 "par_id3150205\n"
 "17\n"
 "help.text"
 msgid "ISLEAPYEAR(Date)"
-msgstr "ÉANOBISSEXTO(\"Data\")"
+msgstr "ÉANOBISSEXTO(Data)"
 
 #: 04060111.xhp
 msgctxt ""
@@ -25697,7 +25688,7 @@ msgctxt ""
 "18\n"
 "help.text"
 msgid "<emph>Date</emph> specifies whether a given date falls within a leap year. The Date parameter must be a valid date."
-msgstr ""
+msgstr "<emph>Data</emph> especifica se a data cai num ano bissexto. O parâmetro Data deve ser uma data válida."
 
 #: 04060111.xhp
 msgctxt ""
@@ -25723,7 +25714,7 @@ msgctxt ""
 "par_idN107E7\n"
 "help.text"
 msgid "You may also use =ISLEAPYEAR(DATE(1968;2;29)) or =ISLEAPYEAR(\"1968-02-29\") giving the date string in the ISO 8601 notation."
-msgstr ""
+msgstr "Utilize também =ÉANOBISSEXTO(DATA(1968;2;29)) ou ÉANOBISSEXTO(\"1968-02-29\") sendo que a cadeia de caracteres da data deve estar na notação ISO 8601."
 
 #: 04060111.xhp
 msgctxt ""
@@ -61752,14 +61743,13 @@ msgid "<emph>Day</emph> is an integer indicating the day of the month."
 msgstr "<emph>Dia</emph> é um número inteiro entre 1 e 31 que indica o dia do mês."
 
 #: func_date.xhp
-#, fuzzy
 msgctxt ""
 "func_date.xhp\n"
 "par_id3156260\n"
 "10\n"
 "help.text"
 msgid "If the values for month and day are out of bounds, they are carried over to the next digit. If you enter <item type=\"input\">=DATE(00;12;31)</item> the result will be 2000-12-31. If, on the other hand, you enter <item type=\"input\">=DATE(00;13;31)</item> the result will be 2001-01-31."
-msgstr "Se os valores para mês e Dia estiverem fora dos seus limites, eles serão carregados pra o próximo dígito. Se você inserir <item type=\"input\">=DATA(00;12;31)</item> o resultado será 31/12/00. Se, por outro lado, você inserir <item type=\"input\">=DATA(00;13;31)</item> o resultado será 31/1/01."
+msgstr "Se os valores para mês e Dia estiverem fora dos seus limites, eles serão carregados pra o próximo dígito. Se inserir <item type=\"input\">=DATA(00;12;31)</item> o resultado será 2001-12-31. Se, por outro lado, você inserir <item type=\"input\">=DATA(00;13;31)</item> o resultado será 2001-01-31."
 
 #: func_date.xhp
 msgctxt ""
@@ -66499,14 +66489,13 @@ msgid "Example"
 msgstr "Exemplo"
 
 #: func_weeknumadd.xhp
-#, fuzzy
 msgctxt ""
 "func_weeknumadd.xhp\n"
 "par_id3149973\n"
 "229\n"
 "help.text"
 msgid "In which week number does 2001-12-24 fall?"
-msgstr "Qual é o número da semana correspondente a 24/12/2001?"
+msgstr "Qual é o número da semana correspondente a 2001-12-24?"
 
 #: func_weeknumadd.xhp
 msgctxt ""
@@ -69222,7 +69211,6 @@ msgid "Set the regression type. Three types are available:"
 msgstr "Define o tipo de saída da regressão. Três tipos são possíveis:"
 
 #: statistics_regression.xhp
-#, fuzzy
 msgctxt ""
 "statistics_regression.xhp\n"
 "par_id1701201620334364\n"
