@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
 "POT-Creation-Date: 2016-05-23 21:37+0200\n"
-"PO-Revision-Date: 2016-08-23 13:51+0000\n"
+"PO-Revision-Date: 2016-08-31 15:19+0000\n"
 "Last-Translator: Gábor Kelemen <kelemeng@gnome.hu>\n"
 "Language-Team: Hungarian <timar@fsf.hu>\n"
 "Language: hu\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Accelerator-Marker: ~\n"
 "X-Generator: Pootle 2.7\n"
-"X-POOTLE-MTIME: 1471960280.000000\n"
+"X-POOTLE-MTIME: 1472656747.000000\n"
 
 #: 02000000.xhp
 msgctxt ""
@@ -2601,7 +2601,7 @@ msgctxt ""
 "par_id191120151905346795\n"
 "help.text"
 msgid "Parameter queries allow the user to input values at run-time. These values are used within the criteria for selecting the records to be displayed. Each such value has a parameter name associated with it, which is used to prompt the user when the query is run."
-msgstr ""
+msgstr "A paraméteres lekérdezések lehetővé teszik az értékek futásidejű megadását. Ezek az értékek a megjelenítendő rekordok kiválasztására szolgáló feltételeken belül kerülnek felhasználásra. Minden ilyen értékhez tartozik egy paraméternév, amely a felhasználó megkérdezésére kerül felhasználásra a lekérdezés futtatásakor."
 
 #: 02010100.xhp
 msgctxt ""
@@ -2609,7 +2609,7 @@ msgctxt ""
 "par_id191120151905439551\n"
 "help.text"
 msgid "Parameter names are preceded by a colon in both the Design and SQL views of a query. This can be used wherever a value can appear. If the same value is to appear more than once in the query, the same parameter name is used."
-msgstr ""
+msgstr "A paraméterneveket pontosvessző előzi meg a lekérdezés Tervező és SQL nézeteiben is. Ez mindenütt használható, ahol érték jelenhet meg. Ha ugyanannak az értéknek többször is meg kell jelennie a lekérdezésben, akkor ugyanaz a paraméternév kerül felhasználásra."
 
 #: 02010100.xhp
 msgctxt ""
@@ -2617,7 +2617,7 @@ msgctxt ""
 "par_id191120151905518123\n"
 "help.text"
 msgid "In the simplest case, where the user enters a value which is matched for equality, the parameter name with its preceding colon is simply entered in the Criterion row. In <link href=\"text/shared/explorer/database/02010100.xhp#sqlmode\">SQL mode</link> this should be typed as <item type=\"input\">WHERE \"Field\" = :Parameter_name</item>"
-msgstr ""
+msgstr "A legegyszerűbb esetben, amikor a felhasználó megad egy értéket, amelynek az egyenlősége vizsgálatra kerül, akkor a paraméternevet a megelőző pontosvesszővel együtt kell bevinni a Feltételek sorba. Az <link href=\"text/shared/explorer/database/02010100.xhp#sqlmode\">SQL módban</link> ezt így kell megadni: <item type=\"input\">WHERE \"mező\" = :paraméternév</item>"
 
 #: 02010100.xhp
 msgctxt ""
@@ -2625,7 +2625,7 @@ msgctxt ""
 "par_id191120151905584287\n"
 "help.text"
 msgid "Parameter names may not contain any of the characters <item type=\"input\"><space>`!\"$%^*()+={}[]@'~#<>?/,</item>. They may not be the same as field names or SQL reserved words. They may be the same as aliases."
-msgstr ""
+msgstr "A paraméternek nem tartalmazhatják a következő karaktereket: <item type=\"input\"><szóköz>`!\"$%^*()+={}[]@'~#<>?/,</item>. Nem lehetnek azonosak mezőnevekkel vagy SQL foglalt szavakkal. Azonosak lehetnek álnevekkel."
 
 #: 02010100.xhp
 msgctxt ""
@@ -2633,7 +2633,7 @@ msgctxt ""
 "par_id191120151931441881\n"
 "help.text"
 msgid "A useful construction for selecting records based on parts of a text field's content is to add a hidden column with <item type=\"input\">\"LIKE '%' || :Part_of_field || '%'\"</item> as the criterion. This will select records with an exact match. If a case-insensitive test is wanted, one solution is to use <item type=\"input\">LOWER (Field_Name)</item> as the field and <item type=\"input\">LIKE LOWER ( '%' || :Part_of_field || '%' )</item> as the criterion. Note that the spaces in the criterion are important; if they are left out the SQL parser interprets the entire criterion as a string to be matched. In <link href=\"text/shared/explorer/database/02010100.xhp#sqlmode\">SQL mode</link> this should be typed as <item type=\"input\">LOWER ( \"Field_Name\" ) LIKE LOWER ( '%' || :Part_of_field || '%' )</item>."
-msgstr ""
+msgstr "Hasznos módszer rekordok egy szövegmező tartalma alapján való kiválasztására egy rejtett oszlop hozzáadása a következő feltétellel: <item type=\"input\">\"LIKE '%' || :mező_része  || '%'\"</item>. Ez a pontosan illeszkedő rekordokat fogja kiválasztani. Ha kis- és nagybetűkre érzéketlen teszt szükséges, akkor megoldás lehet a <item type=\"input\">LOWER (mezőnév)</item> használata a mezőként és <item type=\"input\">LIKE LOWER ( '%' || :mező_része|| '%' )</item> használata feltételként. Vegye észre, hogy a szóközök a feltételben fontosak, ha kimaradnak, az SQL elemző a teljes feltételt az illesztendő karakterláncként értelmezi. <link href=\"text/shared/explorer/database/02010100.xhp#sqlmode\">SQL módban</link> ezt így kell beírni: <item type=\"input\">LOWER ( \"mezőnév\" ) LIKE LOWER ( '%' || :mező_része || '%' )</item>."
 
 #: 02010100.xhp
 msgctxt ""
@@ -2641,7 +2641,7 @@ msgctxt ""
 "par_id3150585\n"
 "help.text"
 msgid "Parameter queries may be used as the data source for <link href=\"text/shared/02/01170203.xhp\" name=\"subforms\">subforms</link>, to allow the user to restrict the displayed records."
-msgstr ""
+msgstr "A paraméteres lekérdezések használhatók adatforrásként <link href=\"text/shared/02/01170203.xhp\" name=\"subforms\">alűrlapokhoz</link>, hogy a felhasználó korlátozhassa a megjelenített rekordokat."
 
 #: 02010100.xhp
 msgctxt ""
@@ -2649,7 +2649,7 @@ msgctxt ""
 "hd_id3151035\n"
 "help.text"
 msgid "Parameter Input"
-msgstr "Paraméter bemenete"
+msgstr "Paraméter bevitele"
 
 #: 02010100.xhp
 msgctxt ""
@@ -2657,7 +2657,7 @@ msgctxt ""
 "par_id3153596\n"
 "help.text"
 msgid "<ahelp hid=\"HID_QRYDGN_ROW_FUNCTION\">The <emph>Parameter Input</emph> dialog asks the user to enter the parameter values. Enter a value for each query parameter and confirm by clicking <emph>OK</emph> or typing <emph>Enter</emph>.</ahelp>"
-msgstr ""
+msgstr "<ahelp hid=\"HID_QRYDGN_ROW_FUNCTION\">A <emph>Paraméter bevitele</emph> ablak megkéri a felhasználót a paraméterértékek bevitelére. Írjon be egy értéket minden lekérdezésparaméterhez és erősítse meg az <emph>OK</emph> gomb vagy az <emph>Enter</emph> megnyomásával.</ahelp>"
 
 #: 02010100.xhp
 msgctxt ""
@@ -2665,7 +2665,7 @@ msgctxt ""
 "par_id191120151924165870\n"
 "help.text"
 msgid "The values entered by the user may consist of any characters which are allowable for the SQL for the relevant criterion; this may depend on the underlying database system."
-msgstr ""
+msgstr "A felhasználó által bevitt értékek tetszőleges karakterekből állhatnak, amelyeket a vonatkozó feltételhez az SQL engedélyez, ez függhet a használt adatbázisrendszertől."
 
 #: 02010100.xhp
 msgctxt ""
@@ -2673,7 +2673,7 @@ msgctxt ""
 "par_id191120151939594217\n"
 "help.text"
 msgid "The user can use the SQL wild-card characters \"%\" (arbitrary string) or \"_\" (arbitrary single character) as part of the value to retrieve records with more complex criteria."
-msgstr ""
+msgstr "A felhasználó használhatja az „%” (tetszőleges karakterlánc) vagy „_” (tetszőleges karakter) SQL helyettesítő karaktereket az érték részeként rekordok lekérdezéséhez összetettebb feltételekkel."
 
 #: 02010100.xhp
 msgctxt ""
