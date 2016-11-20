@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: LibreOffice 5.3\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2016-10-19 10:39+0200\n"
-"PO-Revision-Date: 2016-10-20 16:17+0200\n"
+"POT-Creation-Date: 2016-11-17 13:44+0100\n"
+"PO-Revision-Date: 2016-11-17 17:59+0200\n"
 "Last-Translator: Martin Srebotnjak <miles@filmsi.net>\n"
 "Language-Team: sl.libreoffice.org\n"
 "Language: sl\n"
@@ -902,6 +902,15 @@ msgstr "_Spremeni"
 #: colorwindow.ui
 msgctxt ""
 "colorwindow.ui\n"
+"none_color_button\n"
+"label\n"
+"string.text"
+msgid "None"
+msgstr "Brez"
+
+#: colorwindow.ui
+msgctxt ""
+"colorwindow.ui\n"
 "label1\n"
 "label\n"
 "string.text"
@@ -1125,7 +1134,6 @@ msgid "Type:"
 msgstr "Vrsta:"
 
 #: compressgraphicdialog.ui
-#, fuzzy
 msgctxt ""
 "compressgraphicdialog.ui\n"
 "calculate\n"
@@ -1261,7 +1269,6 @@ msgstr ""
 "Hvala za pomoč pri izboljševanju %PRODUCTNAME."
 
 #: crashreportdlg.ui
-#, fuzzy
 msgctxt ""
 "crashreportdlg.ui\n"
 "check_safemode\n"
@@ -2888,14 +2895,13 @@ msgid "Ma_tch case"
 msgstr "Ra_zlikuj velike in male črke"
 
 #: findreplacedialog.ui
-#, fuzzy
 msgctxt ""
 "findreplacedialog.ui\n"
 "searchformatted\n"
 "label\n"
 "string.text"
 msgid "For_matted display"
-msgstr "Prikaži oblikovano"
+msgstr "Prikaži o_blikovano"
 
 #: findreplacedialog.ui
 msgctxt ""
@@ -3615,14 +3621,13 @@ msgid "_Footer on"
 msgstr "_Noga vključena"
 
 #: headfootformatpage.ui
-#, fuzzy
 msgctxt ""
 "headfootformatpage.ui\n"
 "checkSameLR\n"
 "label\n"
 "string.text"
 msgid "Same _content on left and right pages"
-msgstr "Enaka vsebina na levih in desnih straneh"
+msgstr "Enaka vse_bina na levih in desnih straneh"
 
 #: headfootformatpage.ui
 msgctxt ""
@@ -3976,7 +3981,6 @@ msgid "Playback:"
 msgstr "Predvajanje:"
 
 #: mediaplayback.ui
-#, fuzzy
 msgctxt ""
 "mediaplayback.ui\n"
 "label2\n"
@@ -4543,6 +4547,24 @@ msgctxt ""
 msgid "New Password"
 msgstr "Novo geslo"
 
+#: profileexporteddialog.ui
+msgctxt ""
+"profileexporteddialog.ui\n"
+"ProfileExportedDialog\n"
+"title\n"
+"string.text"
+msgid "Profile exported"
+msgstr "Profil izvožen"
+
+#: profileexporteddialog.ui
+msgctxt ""
+"profileexporteddialog.ui\n"
+"label\n"
+"label\n"
+"string.text"
+msgid "Your user profile has been exported as “libreoffice-profile.zip”."
+msgstr "Vaš uporabniški profil je izvožen kot »libreoffice-profile.zip«."
+
 #: querydeletecontourdialog.ui
 msgctxt ""
 "querydeletecontourdialog.ui\n"
@@ -5061,20 +5083,32 @@ msgid "_Make Changes and Restart"
 msgstr "_Opravi spremembe in ponovno zaženi"
 
 #: safemodedialog.ui
-#, fuzzy
 msgctxt ""
 "safemodedialog.ui\n"
 "label1\n"
 "label\n"
 "string.text"
 msgid ""
-"%PRODUCTNAME is now running in Safe Mode. You can make one or more of the following changes to return to a working state.\n"
+"%PRODUCTNAME is now running in Safe Mode wich temporarily disables your configuration and extensions.\n"
+"\n"
+"You can make one or more of the following changes to return to a working state.\n"
 "\n"
 "The offered possible changes get more radical from top to bottom, so it is recommended to try them thoroughly one after the other."
 msgstr ""
-"%PRODUCTNAME zdaj teče v varnem načinu. Opravite lahko več izmed spodnjih sprememb, da program povrnete v delujoče stanje.\n"
+"%PRODUCTNAME zdaj teče v varnem načinu, ki začasno onemogoči vaše prilagoditve in razširitve.\n"
 "\n"
-"Te spremembe so razvrščene od manj do najbolj radikalnih, zato priporočamo, da jih temeljito preizkusite po vrsti."
+"Opravite lahko več izmed spodnjih sprememb, da program povrnete v delujoče stanje.\n"
+"\n"
+"Ponujene možnosti sprememb so razvrščene od najmanj do najbolj radikalnih, zato priporočamo, da jih temeljito preizkusite po vrsti."
+
+#: safemodedialog.ui
+msgctxt ""
+"safemodedialog.ui\n"
+"radio_restore\n"
+"label\n"
+"string.text"
+msgid "Restore from backup"
+msgstr "Obnovi iz varnostne kopije"
 
 #: safemodedialog.ui
 msgctxt ""
@@ -5082,8 +5116,8 @@ msgctxt ""
 "check_profilesafe_config\n"
 "label\n"
 "string.text"
-msgid "Reset UserConfiguration to last known working state"
-msgstr "Ponastavi prilagoditev uporabnika na zadnje znano delujoče stanje"
+msgid "Restore user configuration to last known working state"
+msgstr "Obnovi prilagoditev uporabnika na zadnje znano delujoče stanje"
 
 #: safemodedialog.ui
 msgctxt ""
@@ -5091,8 +5125,17 @@ msgctxt ""
 "check_profilesafe_extensions\n"
 "label\n"
 "string.text"
-msgid "Reset State of installed Extensions to last known working state"
-msgstr "Ponastavi stanje nameščenih razširitev na zadnje znano stanje"
+msgid "Restore enabled/disabled state of installed user extensions to last known working state"
+msgstr "Obnovi stanje omogočenih/onemogočenih nameščenih razširitev na zadnje znano delujoče stanje"
+
+#: safemodedialog.ui
+msgctxt ""
+"safemodedialog.ui\n"
+"radio_configure\n"
+"label\n"
+"string.text"
+msgid "Configure"
+msgstr "Prilagodi"
 
 #: safemodedialog.ui
 msgctxt ""
@@ -5100,8 +5143,53 @@ msgctxt ""
 "check_disable_all_extensions\n"
 "label\n"
 "string.text"
-msgid "Disable all extensions"
-msgstr "Onemogoči vse razširitve"
+msgid "Disable all user extensions"
+msgstr "Onemogoči vse uporabnikove razširitve"
+
+#: safemodedialog.ui
+msgctxt ""
+"safemodedialog.ui\n"
+"check_disable_hw_acceleration\n"
+"label\n"
+"string.text"
+msgid "Disable hardware acceleration (OpenGL, OpenCL)"
+msgstr "Onemogoči pospeševanje strojne opreme (OpenGL, OpenCL)"
+
+#: safemodedialog.ui
+msgctxt ""
+"safemodedialog.ui\n"
+"radio_deinstall\n"
+"label\n"
+"string.text"
+msgid "Deinstall extensions"
+msgstr "Odstrani razširitve"
+
+#: safemodedialog.ui
+msgctxt ""
+"safemodedialog.ui\n"
+"check_deinstall_user_extensions\n"
+"label\n"
+"string.text"
+msgid "Deinstall all user extensions"
+msgstr "Odstrani vse razširitve samo za uporabnika"
+
+#: safemodedialog.ui
+msgctxt ""
+"safemodedialog.ui\n"
+"check_deinstall_all_extensions\n"
+"label\n"
+"string.text"
+msgid "Deinstall all extensions (including shared and bundled)"
+msgstr "Odstrani vse razširitve (vključno s skupnimi in vdelanimi)"
+
+#: safemodedialog.ui
+msgctxt ""
+"safemodedialog.ui\n"
+"radio_reset\n"
+"label\n"
+"string.text"
+msgid "Reset to factory settings"
+msgstr "Ponastavi na tovarniške nastavitve"
 
 #: safemodedialog.ui
 msgctxt ""
@@ -5109,8 +5197,8 @@ msgctxt ""
 "check_reset_customizations\n"
 "label\n"
 "string.text"
-msgid "Reset customizations (Settings and User Interface modifications)"
-msgstr "Ponastavi prilagoditve (nastavitve in spremembe uporabniškega vmesnika)"
+msgid "Reset settings and user interface modifications"
+msgstr "Ponastavi nastavitve in spremembe uporabniškega vmesnika"
 
 #: safemodedialog.ui
 msgctxt ""
@@ -5118,34 +5206,53 @@ msgctxt ""
 "check_reset_whole_userprofile\n"
 "label\n"
 "string.text"
-msgid "Reset the whole User Profile"
+msgid "Reset the whole user profile"
 msgstr "Ponastavi celoten uporabniški profil"
 
 #: safemodedialog.ui
-#, fuzzy
 msgctxt ""
 "safemodedialog.ui\n"
 "label3\n"
 "label\n"
 "string.text"
-msgid ""
-"If you experience problems that are not resolved by using the Safe Mode, visit the following link to get help or report a bug.\n"
-"\n"
-"You can also include the relevant parts of your User Profile. Beware that it might contain personal data."
-msgstr ""
-"Če naletite na težave, ki se v varnem načinu ne nehajo, obiščite naslednjo povezavo, da poiščete pomoč ali poročate o hrošču.\n"
-"\n"
-"V poročilo lahko vključite tudi merodajne dele svojega uporabniškega profila. Pri tem bodite pozorni, saj lahko vsebujejo tudi osebne podatke."
+msgid "If you experience problems that are not resolved by using the Safe Mode, visit the following link to get help or report a bug."
+msgstr "Če naletite na težave, ki se v varnem načinu ne nehajo, obiščite naslednjo povezavo, da poiščete pomoč ali poročate o hrošču."
 
 #: safemodedialog.ui
-#, fuzzy
 msgctxt ""
 "safemodedialog.ui\n"
 "linkbutton_bugs\n"
 "label\n"
 "string.text"
 msgid "Get Help"
-msgstr "Kako do pomoči"
+msgstr "Po pomoč"
+
+#: safemodedialog.ui
+msgctxt ""
+"safemodedialog.ui\n"
+"label4\n"
+"label\n"
+"string.text"
+msgid "You can also include the relevant parts of your User Profile. Beware that it might contain personal data."
+msgstr "V poročilo lahko vključite tudi merodajne dele svojega uporabniškega profila. Pri tem bodite pozorni, saj lahko vsebujejo tudi osebne podatke."
+
+#: safemodedialog.ui
+msgctxt ""
+"safemodedialog.ui\n"
+"btn_create_zip\n"
+"label\n"
+"string.text"
+msgid "Create zip archive from User Profile"
+msgstr "Ustvari arhiv zip iz uporabniškega profila"
+
+#: safemodedialog.ui
+msgctxt ""
+"safemodedialog.ui\n"
+"linkbutton_profile\n"
+"label\n"
+"string.text"
+msgid "Show User Profile"
+msgstr "Pokaži uporabniški profil"
 
 #: safemodedialog.ui
 msgctxt ""
