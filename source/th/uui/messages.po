@@ -280,6 +280,7 @@ msgid "%PRODUCTNAME cannot keep files from being overwritten when this transmiss
 msgstr "%PRODUCTNAME ไม่สามารถป้องกันไฟล์จากการถูกเขียนทับเมื่อใช้โปรโตคอลการส่งข้อมูลนี้ คุณต้องการทำต่ออยู่ดีหรือไม่?"
 
 #: ids.hrc:131
+#, fuzzy
 msgctxt "RID_UUI_ERRHDL"
 msgid ""
 "The file '$(ARG1)' is corrupt and therefore cannot be opened. %PRODUCTNAME can try to repair the file.\n"
@@ -291,6 +292,14 @@ msgid ""
 "\n"
 "Should %PRODUCTNAME repair the file?\n"
 msgstr ""
+"ไฟล์ '$(ARG1)' เสียหายเปิดไม่ได้ %PRODUCTNAME สามารถลองซ่อมไฟล์ดังกล่าว\n"
+"\n"
+"ความเสียหายอาจเป็นผลมาจากการจัดการเอกสารหรือจากความเสียหายทางโครงสร้างของเอกสารเนื่องจากการรับส่งข้อมูล\n"
+"\n"
+"ขอแนะนำว่าคุณอย่าเชื่อถือในเนื้อหาของเอกสารที่ซ่อมแซมแล้ว\n"
+"การทำงานของแมโครจะถูกปิดไว้สำหรับเอกสารนี้\n"
+"\n"
+"ต้องการให้ %PRODUCTNAME ซ่อมไฟล์หรือไม่?\n"
 
 #: ids.hrc:133
 msgctxt "RID_UUI_ERRHDL"
@@ -549,9 +558,10 @@ msgid "Document Could Not Be Locked"
 msgstr ""
 
 #: strings.hrc:46
+#, fuzzy
 msgctxt "STR_LOCKFAILED_MSG"
 msgid "The lock file could not be created for exclusive access by %PRODUCTNAME, due to missing permission to create a lock file on that file location or lack of free disk space."
-msgstr ""
+msgstr "%PRODUCTNAME ไม่สามารถล็อกไฟล์เพื่อใช้แต่เพียงผู้เดียว เนื่องจากไม่มีการอนุญาตให้สร้างการล็อกไฟล์ที่ตำแหน่งไฟล์นั้น"
 
 #: strings.hrc:47
 #, fuzzy
@@ -722,9 +732,10 @@ msgid "Enter the 6 digit PIN:"
 msgstr ""
 
 #: filterselect.ui:7
+#, fuzzy
 msgctxt "filterselect|FilterSelectDialog"
 msgid "Filter Selection"
-msgstr ""
+msgstr "การเลือกตัวกรอง"
 
 #: logindialog.ui:8
 msgctxt "logindialog|LoginDialog"
@@ -766,9 +777,10 @@ msgid "_Path:"
 msgstr "เ_ส้นทางที่เก็บไฟล์"
 
 #: logindialog.ui:222
+#, fuzzy
 msgctxt "logindialog|pathbtn"
 msgid "_Browse…"
-msgstr ""
+msgstr "เ_รียกดู"
 
 #: logindialog.ui:244
 #, fuzzy
@@ -815,34 +827,40 @@ msgid "Message from server:"
 msgstr "ข้อความจากเซิร์ฟเวอร์:"
 
 #: macrowarnmedium.ui:9
+#, fuzzy
 msgctxt "macrowarnmedium|MacroWarnMedium"
 msgid "%PRODUCTNAME - Security Warning"
-msgstr ""
+msgstr "%PRODUCTNAME - คำเตือนด้านความมั่นคง"
 
 #: macrowarnmedium.ui:25
+#, fuzzy
 msgctxt "macrowarnmedium|ok"
 msgid "_Enable Macros"
-msgstr ""
+msgstr "เปิดการทำงานของแมคโคร"
 
 #: macrowarnmedium.ui:39
+#, fuzzy
 msgctxt "macrowarnmedium|cancel"
 msgid "_Disable Macros"
-msgstr ""
+msgstr "ปิดการทำงานของแมคโคร"
 
 #: macrowarnmedium.ui:127
+#, fuzzy
 msgctxt "macrowarnmedium|descr1Label"
 msgid "The document contains document macros signed by:"
-msgstr ""
+msgstr "เอกสารมีแมโครเอกสารที่ลงนามโดย:"
 
 #: macrowarnmedium.ui:141
+#, fuzzy
 msgctxt "macrowarnmedium|descr1aLabel"
 msgid "The document contains document macros."
-msgstr ""
+msgstr "เอกสารมีแมโครเอกสาร:"
 
 #: macrowarnmedium.ui:168
+#, fuzzy
 msgctxt "macrowarnmedium|viewSignsButton"
 msgid "_View Signatures…"
-msgstr ""
+msgstr "ดูลายเซ็น..."
 
 #: macrowarnmedium.ui:196
 msgctxt "macrowarnmedium|descr2Label"
@@ -850,9 +868,10 @@ msgid "Macros may contain viruses. Disabling macros for a document is always saf
 msgstr "แมคโครอาจมีไวรัสได้ การปิดการทำงานของแมคโครสำหรับเอกสารหนึ่งๆ ย่อมปลอดภัยเสมอ แต่การปิดการทำงานของแมคโครอาจทำให้สูญเสียความสามารถการทำงานที่แมคโครเอกสารมีให้"
 
 #: macrowarnmedium.ui:208
+#, fuzzy
 msgctxt "macrowarnmedium|alwaysTrustCheckbutton"
 msgid "_Always trust macros from this source"
-msgstr ""
+msgstr "เชื่อถือแมโครจากแหล่งนี้เสมอ"
 
 #: masterpassworddlg.ui:8
 msgctxt "masterpassworddlg|MasterPasswordDialog"
@@ -895,19 +914,22 @@ msgid "Caution: If you forget the master password, you will be unable to access 
 msgstr "คำเตือน: ถ้าคุณลืมรหัสผ่านหลัก คุณจะไม่สามารถเข้าถึงสารสนเทศใดๆ ที่รหัสผ่านปกป้อง รหัสผ่านถือว่าอักษรตัวพิมพ์เล็กกับตัวพิมพ์ใหญ่ต่างกัน (case sensitive)"
 
 #: simplenameclash.ui:8
+#, fuzzy
 msgctxt "simplenameclash|SimpleNameClashDialog"
 msgid "File Exists"
-msgstr ""
+msgstr "ไฟล์มีอยู่แล้ว"
 
 #: simplenameclash.ui:37
+#, fuzzy
 msgctxt "simplenameclash|replace"
 msgid "Replace"
-msgstr ""
+msgstr "แทนที่"
 
 #: simplenameclash.ui:51
+#, fuzzy
 msgctxt "simplenameclash|rename"
 msgid "Rename"
-msgstr ""
+msgstr "เปลี่ยนชื่อ"
 
 #: sslwarndialog.ui:8
 msgctxt "sslwarndialog|SSLWarnDialog"

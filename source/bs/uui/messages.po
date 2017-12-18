@@ -280,6 +280,7 @@ msgid "%PRODUCTNAME cannot keep files from being overwritten when this transmiss
 msgstr "%PRODUCTNAME ne može sačuvati datoteke od pisanja preko njih kada se koristi ovaj protokol prijenosa. Želite li svejedno nastaviti?"
 
 #: ids.hrc:131
+#, fuzzy
 msgctxt "RID_UUI_ERRHDL"
 msgid ""
 "The file '$(ARG1)' is corrupt and therefore cannot be opened. %PRODUCTNAME can try to repair the file.\n"
@@ -291,6 +292,14 @@ msgid ""
 "\n"
 "Should %PRODUCTNAME repair the file?\n"
 msgstr ""
+"Datoteka '$(ARG1)' je neispravna i stoga ne može biti otvorena.  %PRODUCTNAME će pokušati da je popravi.\n"
+"\n"
+"Oštećenje može biti rezultat manipulacije nad dokumentom ili strukturalnog oštećenja dokumenta zbog prenosa podataka.\n"
+"\n"
+"Preporučujemo da ne vjerujete sadržaju popravljenog dokumenta.\n"
+"Izvršenje makroa je isključeno za ovaj dokument.\n"
+"\n"
+"Da li da %PRODUCTNAME popravi datoteku?\n"
 
 #: ids.hrc:133
 msgctxt "RID_UUI_ERRHDL"
@@ -463,9 +472,10 @@ msgid "Confirm password: "
 msgstr ""
 
 #: strings.hrc:29
+#, fuzzy
 msgctxt "STR_TITLE_CREATE_PASSWORD"
 msgid "Set Password"
-msgstr ""
+msgstr "Postavi šifre"
 
 #: strings.hrc:30
 #, fuzzy
@@ -551,9 +561,10 @@ msgid "Document Could Not Be Locked"
 msgstr ""
 
 #: strings.hrc:46
+#, fuzzy
 msgctxt "STR_LOCKFAILED_MSG"
 msgid "The lock file could not be created for exclusive access by %PRODUCTNAME, due to missing permission to create a lock file on that file location or lack of free disk space."
-msgstr ""
+msgstr "%PRODUCTNAME ne može zaključati datoteka za ekskluzivni pristup zbog toga što nema dozvolu za pravljenje datoteke ključa na datoj lokaciji."
 
 #: strings.hrc:47
 #, fuzzy
@@ -724,9 +735,10 @@ msgid "Enter the 6 digit PIN:"
 msgstr ""
 
 #: filterselect.ui:7
+#, fuzzy
 msgctxt "filterselect|FilterSelectDialog"
 msgid "Filter Selection"
-msgstr ""
+msgstr "Izbor filtera"
 
 #: logindialog.ui:8
 msgctxt "logindialog|LoginDialog"
@@ -745,29 +757,34 @@ msgid "_Remember password"
 msgstr "_Ponovo unesi lozinku:"
 
 #: logindialog.ui:127
+#, fuzzy
 msgctxt "logindialog|accountft"
 msgid "A_ccount:"
-msgstr ""
+msgstr "Nalog"
 
 #: logindialog.ui:141
+#, fuzzy
 msgctxt "logindialog|passwordft"
 msgid "Pass_word:"
-msgstr ""
+msgstr "_Lozinka:"
 
 #: logindialog.ui:180
+#, fuzzy
 msgctxt "logindialog|nameft"
 msgid "_User name:"
-msgstr ""
+msgstr "_Korisničko ime:"
 
 #: logindialog.ui:194
+#, fuzzy
 msgctxt "logindialog|pathft"
 msgid "_Path:"
-msgstr ""
+msgstr "~Staza:"
 
 #: logindialog.ui:222
+#, fuzzy
 msgctxt "logindialog|pathbtn"
 msgid "_Browse…"
-msgstr ""
+msgstr "Potraži"
 
 #: logindialog.ui:244
 msgctxt "logindialog|loginrealm"
@@ -803,44 +820,52 @@ msgid "Message from server:"
 msgstr ""
 
 #: macrowarnmedium.ui:9
+#, fuzzy
 msgctxt "macrowarnmedium|MacroWarnMedium"
 msgid "%PRODUCTNAME - Security Warning"
-msgstr ""
+msgstr "%PRODUCTNAME - Sigurnosno upozorenje"
 
 #: macrowarnmedium.ui:25
+#, fuzzy
 msgctxt "macrowarnmedium|ok"
 msgid "_Enable Macros"
-msgstr ""
+msgstr "Dozvoli makroe"
 
 #: macrowarnmedium.ui:39
+#, fuzzy
 msgctxt "macrowarnmedium|cancel"
 msgid "_Disable Macros"
-msgstr ""
+msgstr "Onemogući makroe"
 
 #: macrowarnmedium.ui:127
+#, fuzzy
 msgctxt "macrowarnmedium|descr1Label"
 msgid "The document contains document macros signed by:"
-msgstr ""
+msgstr "Dokument sadrži makroe potpisane od:"
 
 #: macrowarnmedium.ui:141
+#, fuzzy
 msgctxt "macrowarnmedium|descr1aLabel"
 msgid "The document contains document macros."
-msgstr ""
+msgstr "Dokument sadrži makroe."
 
 #: macrowarnmedium.ui:168
+#, fuzzy
 msgctxt "macrowarnmedium|viewSignsButton"
 msgid "_View Signatures…"
-msgstr ""
+msgstr "Pregledaj potpise..."
 
 #: macrowarnmedium.ui:196
+#, fuzzy
 msgctxt "macrowarnmedium|descr2Label"
 msgid "Macros may contain viruses. Disabling macros for a document is always safe. If you disable macros you may lose functionality provided by the document macros."
-msgstr ""
+msgstr "Makroi mogu sadržavati viruse. Isključivanje makroa je uvijek sigurno. Isključivanje makroa može dovesti do gubitka funkcionalnosti koje ti makroi obezbjeđuju."
 
 #: macrowarnmedium.ui:208
+#, fuzzy
 msgctxt "macrowarnmedium|alwaysTrustCheckbutton"
 msgid "_Always trust macros from this source"
-msgstr ""
+msgstr "Uvijek vjeruj makroima iz ovog izvora"
 
 #: masterpassworddlg.ui:8
 msgctxt "masterpassworddlg|MasterPasswordDialog"
@@ -853,9 +878,10 @@ msgid "_Enter password:"
 msgstr "_Unesi lozinku:"
 
 #: password.ui:8
+#, fuzzy
 msgctxt "password|PasswordDialog"
 msgid "Set Password"
-msgstr ""
+msgstr "Postavi šifre"
 
 #: setmasterpassworddlg.ui:8
 msgctxt "setmasterpassworddlg|SetMasterPasswordDialog"
@@ -883,29 +909,34 @@ msgid "Caution: If you forget the master password, you will be unable to access 
 msgstr "Oprez: Ako zaboravite glavnu lozinku, nećete biti u mogućnosti da pristupite bilo kojoj njom zaštićenoj informaciji. Šifre su osjetljive na mala i velika slova."
 
 #: simplenameclash.ui:8
+#, fuzzy
 msgctxt "simplenameclash|SimpleNameClashDialog"
 msgid "File Exists"
-msgstr ""
+msgstr "Datoteka postoji"
 
 #: simplenameclash.ui:37
+#, fuzzy
 msgctxt "simplenameclash|replace"
 msgid "Replace"
-msgstr ""
+msgstr "Zamijeni"
 
 #: simplenameclash.ui:51
+#, fuzzy
 msgctxt "simplenameclash|rename"
 msgid "Rename"
-msgstr ""
+msgstr "Preimenuj"
 
 #: sslwarndialog.ui:8
+#, fuzzy
 msgctxt "sslwarndialog|SSLWarnDialog"
 msgid "Security Warning: "
-msgstr ""
+msgstr "Sigurnosno upozorenje"
 
 #: sslwarndialog.ui:24
+#, fuzzy
 msgctxt "sslwarndialog|ok"
 msgid "Continue"
-msgstr ""
+msgstr "Nastavi"
 
 #: sslwarndialog.ui:38
 msgctxt "sslwarndialog|cancel"
@@ -913,9 +944,10 @@ msgid "Cancel Connection"
 msgstr ""
 
 #: sslwarndialog.ui:52
+#, fuzzy
 msgctxt "sslwarndialog|view"
 msgid "View Certificate"
-msgstr ""
+msgstr "Pogledaj certifikat..."
 
 #: unknownauthdialog.ui:8
 msgctxt "unknownauthdialog|UnknownAuthDialog"
