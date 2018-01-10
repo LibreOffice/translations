@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2017-12-06 15:58+0100\n"
-"PO-Revision-Date: 2017-12-20 07:59+0000\n"
+"POT-Creation-Date: 2018-01-10 11:50+0100\n"
+"PO-Revision-Date: 2018-01-04 12:11+0000\n"
 "Last-Translator: bormant <bormant@mail.ru>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: ru\n"
@@ -13,8 +13,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Accelerator-Marker: ~\n"
-"X-Generator: Pootle 2.8\n"
-"X-POOTLE-MTIME: 1513756757.000000\n"
+"X-Generator: LibreOffice\n"
+"X-POOTLE-MTIME: 1515067896.000000\n"
 
 #: compiler.hrc:27
 msgctxt "RID_FUNCTION_CATEGORIES"
@@ -390,17 +390,17 @@ msgstr "Исходный размер"
 #: globstr.hrc:96
 msgctxt "STR_UNDO_UPDATELINK"
 msgid "Update Link"
-msgstr "Обновить ссылку"
+msgstr "Обновить связь"
 
 #: globstr.hrc:97
 msgctxt "STR_UNDO_REMOVELINK"
 msgid "Unlink"
-msgstr "Убрать ссылку"
+msgstr "Разорвать связь"
 
 #: globstr.hrc:98
 msgctxt "STR_UNDO_INSERTAREALINK"
 msgid "Insert Link"
-msgstr "Вставить ссылку"
+msgstr "Вставить связь"
 
 #: globstr.hrc:99
 msgctxt "STR_UNDO_ENTERMATRIX"
@@ -1525,7 +1525,7 @@ msgstr "Статистика"
 #: globstr.hrc:325
 msgctxt "STR_LINKERROR"
 msgid "The link could not be updated."
-msgstr "Невозможно обновить ссылку."
+msgstr "Невозможно обновить связь."
 
 #: globstr.hrc:326
 msgctxt "STR_LINKERRORFILE"
@@ -1568,7 +1568,7 @@ msgid ""
 "This file contains links to other files.\n"
 "Should they be updated?"
 msgstr ""
-"Этот файл содержит ссылки на другие файлы.\n"
+"Этот файл содержит связи с другими файлами.\n"
 "Обновить их?"
 
 #: globstr.hrc:334
@@ -1806,7 +1806,7 @@ msgstr ""
 #: globstr.hrc:376
 msgctxt "STR_CLOSE_ERROR_LINK"
 msgid "The document can not be closed while a link is being updated."
-msgstr "Закрыть документ во время обновления ссылки невозможно."
+msgstr "Закрыть документ во время обновления связей невозможно."
 
 #: globstr.hrc:377
 msgctxt "STR_UNDO_RESIZEMATRIX"
@@ -4624,15 +4624,14 @@ msgid "Factor. The factor for the reduction of the depreciation. Factor = 2 deno
 msgstr "Коэффициент. Норма снижения балансовой стоимости. К = 2 означает двукратное снижение балансовой стоимости."
 
 #: scfuncs.hrc:627
-#, fuzzy
 msgctxt "SC_OPCODE_VBD"
 msgid "NoSwitch"
-msgstr "Переключатель"
+msgstr "БезПерехода"
 
 #: scfuncs.hrc:628
 msgctxt "SC_OPCODE_VBD"
 msgid "NoSwitch = 0 denotes switch to linear depreciation, NoSwitch = 1 do not switch."
-msgstr ""
+msgstr "БезПерехода=0 означает переход на линейную амортизацию, БезПерехода=1 - наоборот."
 
 #: scfuncs.hrc:634
 msgctxt "SC_OPCODE_EFFECT"
@@ -13985,12 +13984,12 @@ msgstr "Следующий DDE-источник не может быть обн�
 #: strings.hrc:114
 msgctxt "SCSTR_EXTDOC_NOT_LOADED"
 msgid "The following external file could not be loaded. Data linked from this file did not get updated."
-msgstr "Следующий внешний файл не был загружен. Ссылки из этого файла не были обновлены."
+msgstr "Следующий внешний файл не был загружен. Связанные данные из этого файла не обновлены."
 
 #: strings.hrc:115
 msgctxt "SCSTR_UPDATE_EXTDOCS"
 msgid "Updating external links."
-msgstr "Обновление внешних ссылок."
+msgstr "Обновление внешних связей."
 
 #: strings.hrc:116
 msgctxt "SCSTR_FORMULA_SYNTAX_CALC_A1"
@@ -16644,16 +16643,14 @@ msgid "Source Stream"
 msgstr "Исходный поток"
 
 #: dataproviderentry.ui:46
-#, fuzzy
 msgctxt "dataproviderentry|url"
 msgid "URL:"
 msgstr "Адрес:"
 
 #: dataproviderentry.ui:57
-#, fuzzy
 msgctxt "dataproviderentry|id"
 msgid "ID:"
-msgstr "ID:"
+msgstr "Код:"
 
 #: dataproviderentry.ui:68
 msgctxt "dataproviderentry|provider"
@@ -18353,7 +18350,7 @@ msgstr "Данные"
 #: notebookbar.ui:2756
 msgctxt "notebookbar|SpellOnline"
 msgid "Auto Spellcheck"
-msgstr "Автопроверка орфографии"
+msgstr "Автопроверка"
 
 #: notebookbar.ui:3041
 msgctxt "notebookbar|ReviewLabel"
@@ -19166,121 +19163,136 @@ msgid "Edit Contour"
 msgstr "Правка контура"
 
 #: optcalculatepage.ui:48
+msgctxt "optcalculatepage|threadingenabled"
+msgid "Enable multi-threaded calculation: Warning Experimental."
+msgstr ""
+
+#: optcalculatepage.ui:52
+msgctxt "optcalculatepage|threadingenabled|tooltip_text"
+msgid "Enable Experimental multi-threaded calculation of formula-groups, this may break your spreadsheet."
+msgstr ""
+
+#: optcalculatepage.ui:71
+msgctxt "optcalculatepage|label4"
+msgid "CPU threading settings"
+msgstr ""
+
+#: optcalculatepage.ui:107
 msgctxt "optcalculatepage|case"
 msgid "Case se_nsitive"
 msgstr "Учитывать регистр"
 
-#: optcalculatepage.ui:52
+#: optcalculatepage.ui:111
 msgctxt "optcalculatepage|case|tooltip_text"
 msgid "Disable case sensitivity for interoperability with Microsoft Excel"
 msgstr "Отключить регистрозависимость для совместимости с Microsoft Excel"
 
-#: optcalculatepage.ui:65
+#: optcalculatepage.ui:124
 msgctxt "optcalculatepage|calc"
 msgid "_Precision as shown"
 msgstr "Точность как на экране"
 
-#: optcalculatepage.ui:81
+#: optcalculatepage.ui:140
 msgctxt "optcalculatepage|match"
 msgid "Search criteria = and <> must apply to _whole cells"
 msgstr "Условия поиска = и <> должны распространяться на всю ячейку"
 
-#: optcalculatepage.ui:85
+#: optcalculatepage.ui:144
 msgctxt "optcalculatepage|match|tooltip_text"
 msgid "Enable this for interoperability with Microsoft Excel"
 msgstr "Включите для совместимости с Microsoft Excel"
 
-#: optcalculatepage.ui:98
+#: optcalculatepage.ui:157
 msgctxt "optcalculatepage|formulawildcards"
 msgid "Enable w_ildcards in formulas"
 msgstr "Разрешить подстановочные знаки в формулах"
 
-#: optcalculatepage.ui:102
+#: optcalculatepage.ui:161
 msgctxt "optcalculatepage|formulawildcards|tooltip_text"
 msgid "Enable wildcards for interoperability with Microsoft Excel"
 msgstr "Разрешить подстановочные знаки для совместимости с Microsoft Excel"
 
-#: optcalculatepage.ui:117
+#: optcalculatepage.ui:176
 msgctxt "optcalculatepage|formularegex"
 msgid "Enable r_egular expressions in formulas"
 msgstr "Разрешить регулярные выражения в формулах"
 
-#: optcalculatepage.ui:135
+#: optcalculatepage.ui:194
 msgctxt "optcalculatepage|formulaliteral"
 msgid "No wildcards or regular expressions in formulas"
 msgstr "Без подстановочных знаков и регулярных выражений в формулах"
 
-#: optcalculatepage.ui:153
+#: optcalculatepage.ui:212
 msgctxt "optcalculatepage|lookup"
 msgid "_Automatically find column and row labels"
 msgstr "_Автоматический поиск заголовков столбцов и строк"
 
-#: optcalculatepage.ui:169
+#: optcalculatepage.ui:228
 msgctxt "optcalculatepage|generalprec"
 msgid "_Limit decimals for general number format"
 msgstr "Ограничить кол-во знаков дробной части"
 
-#: optcalculatepage.ui:193
+#: optcalculatepage.ui:252
 msgctxt "optcalculatepage|precft"
 msgid "_Decimal places:"
 msgstr "_Дробная часть:"
 
-#: optcalculatepage.ui:230
+#: optcalculatepage.ui:289
 msgctxt "optcalculatepage|label1"
 msgid "General Calculations"
 msgstr "Общие вычисления"
 
-#: optcalculatepage.ui:264
+#: optcalculatepage.ui:323
 msgctxt "optcalculatepage|iterate"
 msgid "_Iterations"
 msgstr "Итерации"
 
-#: optcalculatepage.ui:284
+#: optcalculatepage.ui:343
 msgctxt "optcalculatepage|stepsft"
 msgid "_Steps:"
 msgstr "Шаги:"
 
-#: optcalculatepage.ui:299
+#: optcalculatepage.ui:358
 msgctxt "optcalculatepage|minchangeft"
 msgid "_Minimum change:"
 msgstr "Минимальное изменение:"
 
-#: optcalculatepage.ui:341
+#: optcalculatepage.ui:400
 msgctxt "optcalculatepage|label2"
 msgid "Iterative References"
 msgstr "Циклические ссылки"
 
-#: optcalculatepage.ui:372
+#: optcalculatepage.ui:431
 msgctxt "optcalculatepage|datestd"
 msgid "12/30/1899 (defa_ult)"
 msgstr "30.12.1899 (по умолчанию)"
 
-#: optcalculatepage.ui:376
+#: optcalculatepage.ui:435
 msgctxt "optcalculatepage|datestd|tooltip_text"
 msgid "Value 0 corresponds to 12/30/1899"
 msgstr "Значение 0 соответствует 30.12.1899"
 
-#: optcalculatepage.ui:390
+#: optcalculatepage.ui:449
 msgctxt "optcalculatepage|datesc10"
 msgid "01/01/1900 (Star_Calc 1.0)"
 msgstr "01.01.1900 (StarCalc 1.0)"
 
-#: optcalculatepage.ui:394
+#: optcalculatepage.ui:453
 msgctxt "optcalculatepage|datesc10|tooltip_text"
 msgid "Value 0 corresponds to 01/01/1900"
 msgstr "Значение 0 соответствует 01.01.1900"
 
-#: optcalculatepage.ui:407
+#: optcalculatepage.ui:466
 msgctxt "optcalculatepage|date1904"
 msgid "_01/01/1904"
 msgstr "01.01.1904"
 
-#: optcalculatepage.ui:411
+#: optcalculatepage.ui:470
 msgctxt "optcalculatepage|date1904|tooltip_text"
 msgid "0 corresponds to 01/01/1904"
 msgstr "Значение 0 соответствует 01.01.1904"
 
-#: optcalculatepage.ui:430
+#: optcalculatepage.ui:489
 msgctxt "optcalculatepage|label3"
 msgid "Date"
 msgstr "Дата"
@@ -20558,7 +20570,7 @@ msgstr "Метрики"
 #: scgeneralpage.ui:138
 msgctxt "scgeneralpage|label6"
 msgid "Update links when opening"
-msgstr "Обновлять ссылки при открытии"
+msgstr "Обновлять связи при открытии"
 
 #: scgeneralpage.ui:157
 msgctxt "scgeneralpage|alwaysrb"
@@ -22533,7 +22545,7 @@ msgstr "Разрывы страниц"
 #: tpviewpage.ui:438
 msgctxt "tpviewpage|guideline"
 msgid "Helplines _while moving"
-msgstr "Вспомогательные линии при перемещении"
+msgstr "Линии при перемещении"
 
 #: tpviewpage.ui:461
 msgctxt "tpviewpage|label1"
