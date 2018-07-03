@@ -4,14 +4,17 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
 "POT-Creation-Date: 2018-05-22 13:16+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2018-07-01 20:04+0000\n"
+"Last-Translator: Piotr Roszkowski <piotrekr1@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Accelerator-Marker: ~\n"
-"X-Generator: LibreOffice\n"
+"X-Generator: Pootle 2.8\n"
+"X-POOTLE-MTIME: 1530475454.000000\n"
 
 #: uui/inc/ids.hrc:27
 msgctxt "RID_UUI_ERRHDL"
@@ -55,6 +58,13 @@ msgid ""
 "\n"
 "Are you certain that this file is a legacy document created many years ago?"
 msgstr ""
+"Uwaga! \n"
+"\n"
+"Za chwilę załadujesz bardzo nietypowy plik ($(ARG2)) z adresu URL:\n"
+"\n"
+"$(ARG1)\n"
+"\n"
+"Czy jesteś pewien, że ten plik jest starszym dokumentem utworzonym wiele lat temu?"
 
 #: uui/inc/ids.hrc:39
 msgctxt "RID_UUI_ERRHDL"
@@ -292,7 +302,6 @@ msgid "%PRODUCTNAME cannot keep files from being overwritten when this transmiss
 msgstr "W przypadku użycia tego protokołu %PRODUCTNAME nie może zapewnić, iż pliki nie zostaną nadpisane. Czy na pewno kontynuować?"
 
 #: uui/inc/ids.hrc:133
-#, fuzzy
 msgctxt "RID_UUI_ERRHDL"
 msgid ""
 "The file '$(ARG1)' is corrupt and therefore cannot be opened. %PRODUCTNAME can try to repair the file.\n"
@@ -502,6 +511,9 @@ msgid ""
 "\n"
 "Open document read-only, or ignore own file locking and open the document for editing."
 msgstr ""
+"Plik dokumentu '$(ARG1)' w dniu $(ARG2) został przez Ciebie na innym systemie zablokowany przed edycją.\n"
+"\n"
+"Otwórz dokument w trybie tylko do odczytu lub zignoruj własne zablokowanie pliku i otwórz dokument w trybie do edycji."
 
 #: uui/inc/strings.hrc:35
 msgctxt "STR_ALREADYOPEN_READONLY_BTN"
@@ -520,6 +532,9 @@ msgid ""
 "\n"
 "Close document on other system and retry saving or ignore own file locking and save current document."
 msgstr ""
+"Plik dokumentu '$(ARG1)' w dniu $(ARG2) został przez Ciebie na innym systemie zablokowany przed edycją.\n"
+"\n"
+"Zamknij dokument na innym systemie i powtórz zapisywanie lub zignoruj własną blokadę pliku i zapisz bieżący dokument."
 
 #: uui/inc/strings.hrc:38
 msgctxt "STR_ALREADYOPEN_RETRY_SAVE_BTN"
@@ -552,10 +567,9 @@ msgid "Document Could Not Be Locked"
 msgstr "Nie można zablokować dokumentu"
 
 #: uui/inc/strings.hrc:46
-#, fuzzy
 msgctxt "STR_LOCKFAILED_MSG"
 msgid "The lock file could not be created for exclusive access by %PRODUCTNAME, due to missing permission to create a lock file on that file location or lack of free disk space."
-msgstr "Wybrany plik nie mógł zostać zablokowany do wyłącznego dostępu przez program %PRODUCTNAME ze względu na brak uprawnień do utworzenia pliku blokady w tej lokalizacji."
+msgstr "Wybrany plik nie mógł zostać zablokowany do wyłącznego dostępu przez program %PRODUCTNAME ze względu na brak uprawnień do utworzenia pliku blokady lub brak miejsca w tej lokalizacji."
 
 #: uui/inc/strings.hrc:47
 msgctxt "STR_LOCKFAILED_OPENREADONLY_BTN"
@@ -578,11 +592,18 @@ msgid ""
 "\n"
 "$(ARG3)"
 msgstr ""
+"Plik dokumentu '$(ARG1)' został zablokowany przed edycja przez:\n"
+"\n"
+"$(ARG2)\n"
+"\n"
+"Otwórz dokument w trybie tylko do odczytu lub otwórz kopię dokumentu w trybie do edycji.\n"
+"\n"
+"$(ARG3)"
 
 #: uui/inc/strings.hrc:51
 msgctxt "STR_OPENLOCKED_ALLOWIGNORE_MSG"
 msgid "You may also ignore the file locking and open the document for editing."
-msgstr ""
+msgstr "Możesz także zignorować blokowanie pliku i otworzyć dokument do edycji."
 
 #: uui/inc/strings.hrc:52
 msgctxt "STR_OPENLOCKED_OPENREADONLY_BTN"
@@ -611,6 +632,9 @@ msgid ""
 "\n"
 "Do you want to save anyway?"
 msgstr ""
+"Od czasu edycji w programie %PRODUCTNAME plik uległ zmianie. Zapisanie własnej wersji dokumentu spowoduje nadpisanie zmian wprowadzonych przez innych użytkowników.\n"
+"\n"
+"Czy mimo to chcesz zapisać plik?"
 
 #: uui/inc/strings.hrc:58
 msgctxt "STR_FILECHANGED_SAVEANYWAY_BTN"
@@ -631,6 +655,11 @@ msgid ""
 "\n"
 "Try again later to save document or save a copy of that document."
 msgstr ""
+"Plik dokumentu '$(ARG1)' został zablokowany przed edycją przez:\n"
+"\n"
+"$(ARG2)\n"
+"\n"
+"Aby zapisać dokument, spróbuj ponownie później lub zapisz kopię tego dokumentu."
 
 #: uui/inc/strings.hrc:62
 msgctxt "STR_OVERWRITE_IGNORELOCK_MSG"
@@ -641,6 +670,11 @@ msgid ""
 "\n"
 "You may try to ignore the file locking and overwrite the existing document."
 msgstr ""
+"Plik dokumentu '$(ARG1)' jest zablokowany do edycji przez:\n"
+"\n"
+"$(ARG2)\n"
+"\n"
+"Możesz spróbować zignorować blokowanie pliku i zastąpić istniejący dokument."
 
 #: uui/inc/strings.hrc:63
 msgctxt "STR_TRYLATER_RETRYSAVING_BTN"
@@ -703,12 +737,12 @@ msgstr "Potwierdzenie hasła jest niezgodne."
 #: uui/inc/strings.hrc:76
 msgctxt "STR_LOCKCORRUPT_TITLE"
 msgid "Lock file is corrupted"
-msgstr ""
+msgstr "Plik jest uszkodzony"
 
 #: uui/inc/strings.hrc:77
 msgctxt "STR_LOCKCORRUPT_MSG"
 msgid "The lock file is corrupted and probably empty. Opening the document read-only and closing it again removes the corrupted lock file."
-msgstr ""
+msgstr "Plik jest uszkodzony i prawdopodobnie pusty. Otwarcie dokumentu i zamknięcie go ponownie, usunie uszkodzony plik."
 
 #: uui/inc/strings.hrc:78
 msgctxt "STR_LOCKCORRUPT_OPENREADONLY_BTN"
@@ -813,6 +847,9 @@ msgid ""
 "\n"
 "Macros may contain viruses. Disabling macros for a document is always safe. If you disable macros you may lose functionality provided by the document macros."
 msgstr ""
+"Dokument zawiera makra.\n"
+"\n"
+"Makra mogą zawierać wirusy. Dokumenty z wyłączonymi makrami są bezpieczne. Dokument z wyłączonymi makrami może utracić część swojej użyteczności zapewnianej przez makra."
 
 #: uui/uiconfig/ui/macrowarnmedium.ui:28
 msgctxt "macrowarnmedium|cancel"
