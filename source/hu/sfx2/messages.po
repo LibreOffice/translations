@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2018-07-07 19:04+0200\n"
-"PO-Revision-Date: 2018-01-10 20:06+0000\n"
+"POT-Creation-Date: 2018-07-31 14:09+0200\n"
+"PO-Revision-Date: 2018-07-23 22:48+0000\n"
 "Last-Translator: Gábor Kelemen <kelemeng@gnome.hu>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: hu\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Accelerator-Marker: ~\n"
 "X-Generator: LibreOffice\n"
-"X-POOTLE-MTIME: 1515614778.000000\n"
+"X-POOTLE-MTIME: 1532386114.000000\n"
 
 #: include/sfx2/strings.hrc:25
 msgctxt "STR_TEMPLATE_FILTER"
@@ -1147,11 +1147,14 @@ msgid ""
 "\n"
 "Error code is $1"
 msgstr ""
+"Hiba történt az üzenet elküldése közben. Ezt okozhatja például hiányzó felhasználói fiók, vagy hibás beállítás.\n"
+"\n"
+"Hibakód: $1"
 
 #: include/sfx2/strings.hrc:239
 msgctxt "STR_ERROR_SEND_MAIL_HEADER"
 msgid "Error sending mail"
-msgstr ""
+msgstr "Hiba a levélküldés közben"
 
 #: include/sfx2/strings.hrc:240
 msgctxt "STR_QUERY_OPENASTEMPLATE"
@@ -1165,16 +1168,19 @@ msgid ""
 "\n"
 "You can also try to ignore the lock and open the file for editing."
 msgstr ""
+"A dokumentumot nem lehet szerkeszteni, mert egy másik munkamenetben zárolva van. Szeretné a dokumentum másolatát szerkeszteni?\n"
+"\n"
+"Megpróbálhatja figyelmen kívül hagyni a zárolást, és megnyitni a fájlt szerkesztésre."
 
 #: include/sfx2/strings.hrc:242
 msgctxt "STR_QUERY_OPENASTEMPLATE_OPENCOPY_BTN"
 msgid "Open ~Copy"
-msgstr ""
+msgstr "Másolat ~megnyitása"
 
 #: include/sfx2/strings.hrc:243
 msgctxt "STR_QUERY_OPENASTEMPLATE_OPEN_BTN"
 msgid "~Open"
-msgstr ""
+msgstr "Meg~nyitás"
 
 #: include/sfx2/strings.hrc:244
 msgctxt "STR_REPAIREDDOCUMENT"
@@ -1189,12 +1195,12 @@ msgstr "A dokumentum nincs lekérve a kiszolgálón."
 #: include/sfx2/strings.hrc:246
 msgctxt "STR_GET_INVOLVED_TEXT"
 msgid "Help us make %PRODUCTNAME even better!"
-msgstr ""
+msgstr "Segítsen még jobbá tenni a %PRODUCTNAME-t!"
 
 #: include/sfx2/strings.hrc:247
 msgctxt "STR_GET_INVOLVED_BUTTON"
 msgid "Get involved"
-msgstr ""
+msgstr "Közreműködés"
 
 #: include/sfx2/strings.hrc:248
 msgctxt "STR_READONLY_DOCUMENT"
@@ -1224,7 +1230,7 @@ msgstr "A dokumentum besorolási szintje alacsonyabb a vágólapénál."
 #: include/sfx2/strings.hrc:253
 msgctxt "STR_CLASSIFIED_INTELLECTUAL_PROPERTY"
 msgid "Level"
-msgstr ""
+msgstr "Szint"
 
 #: include/sfx2/strings.hrc:254
 msgctxt "STR_CLASSIFIED_NATIONAL_SECURITY"
@@ -1491,12 +1497,12 @@ msgstr "Összes törlése"
 #: include/sfx2/strings.hrc:313
 msgctxt "STR_PASSWORD_LEN"
 msgid "Password length"
-msgstr ""
+msgstr "Jelszóhossz"
 
 #: include/sfx2/strings.hrc:314
 msgctxt "STR_PASSWORD_WARNING"
 msgid "The password you have entered causes interoperability issues. Please enter a password that is shorter than 52 bytes, or longer than 55 bytes."
-msgstr ""
+msgstr "A megadott jelszó interoperabilitási problémákat okoz. Adjon meg egy 52 bájtnál rövidebb, vagy 55 bájtnál hosszabb jelszót."
 
 #: sfx2/inc/dinfdlg.hrc:27
 msgctxt "SFX_CB_PROPERTY_STRINGARRAY"
@@ -1808,7 +1814,7 @@ msgctxt "charmapcontrol|label2"
 msgid "Recent"
 msgstr "Legutóbbi"
 
-#: sfx2/uiconfig/ui/charmapcontrol.ui:469
+#: sfx2/uiconfig/ui/charmapcontrol.ui:468
 msgctxt "charmapcontrol|specialchardlg"
 msgid "More Characters…"
 msgstr "Több karakter…"
@@ -1816,12 +1822,12 @@ msgstr "Több karakter…"
 #: sfx2/uiconfig/ui/charviewmenu.ui:12
 msgctxt "charviewmenu|clearchar"
 msgid "Remove"
-msgstr ""
+msgstr "Eltávolítás"
 
 #: sfx2/uiconfig/ui/charviewmenu.ui:20
 msgctxt "charviewmenu|clearallchar"
 msgid "Clear All"
-msgstr ""
+msgstr "Összes törlése"
 
 #: sfx2/uiconfig/ui/checkin.ui:8
 msgctxt "checkin|CheckinDialog"
@@ -1908,15 +1914,40 @@ msgctxt "descriptioninfopage|label30"
 msgid "_Comments:"
 msgstr "_Megjegyzések:"
 
-#: sfx2/uiconfig/ui/documentfontspage.ui:25
+#: sfx2/uiconfig/ui/documentfontspage.ui:30
 msgctxt "documentfontspage|embedFonts"
 msgid "_Embed fonts in the document"
 msgstr "_Betűkészletek beágyazása a dokumentumba"
 
-#: sfx2/uiconfig/ui/documentfontspage.ui:40
+#: sfx2/uiconfig/ui/documentfontspage.ui:46
+msgctxt "documentfontspage|embedUsedFonts"
+msgid "_Only embed fonts that are used in documents"
+msgstr ""
+
+#: sfx2/uiconfig/ui/documentfontspage.ui:68
 msgctxt "documentfontspage|fontEmbeddingLabel"
-msgid "Font Embedding"
-msgstr "Betűkészlet-beágyazás"
+msgid "Font embedding"
+msgstr ""
+
+#: sfx2/uiconfig/ui/documentfontspage.ui:99
+msgctxt "documentfontspage|embedLatinScriptFonts"
+msgid "_Latin fonts"
+msgstr ""
+
+#: sfx2/uiconfig/ui/documentfontspage.ui:115
+msgctxt "documentfontspage|embedAsianScriptFonts"
+msgid "_Asian fonts"
+msgstr ""
+
+#: sfx2/uiconfig/ui/documentfontspage.ui:131
+msgctxt "documentfontspage|embedComplexScriptFonts"
+msgid "_Complex fonts"
+msgstr ""
+
+#: sfx2/uiconfig/ui/documentfontspage.ui:153
+msgctxt "documentfontspage|fontScriptFrameLabel"
+msgid "Font scripts to embed"
+msgstr ""
 
 #: sfx2/uiconfig/ui/documentinfopage.ui:18
 msgctxt "documentinfopage|label13"
@@ -2176,7 +2207,7 @@ msgstr "A %PRODUCTNAME súgó nincs telepítve"
 #: sfx2/uiconfig/ui/helpmanual.ui:12
 msgctxt "helpmanual|onlinehelpmanual"
 msgid "The %PRODUCTNAME built-in help for current UI language ($UILOCALE) is not installed on your computer."
-msgstr ""
+msgstr "A %PRODUCTNAME beépített felhasználói kézikönyve nincs telepítve az aktuális felületi nyelvhez ($UILOCALE) a számítógépen."
 
 #: sfx2/uiconfig/ui/helpmanual.ui:13
 msgctxt "helpmanual|onlinehelpmanual"
@@ -2191,7 +2222,7 @@ msgstr "Online súgó elolvasása"
 #: sfx2/uiconfig/ui/helpmanual.ui:60
 msgctxt "helpmanual|hidedialog"
 msgid "Do not show this dialog again"
-msgstr ""
+msgstr "Ne jelenjen meg újra ez a párbeszédablak"
 
 #: sfx2/uiconfig/ui/helpsearchpage.ui:22
 msgctxt "helpsearchpage|display"
@@ -2241,6 +2272,15 @@ msgid ""
 "\n"
 "This product was created by %OOOVENDOR, based on OpenOffice.org, which is Copyright 2000, 2011 Oracle and/or its affiliates. %OOOVENDOR acknowledges all community members, please see http://www.libreoffice.org/ for more details."
 msgstr ""
+"A %PRODUCTNAME a Mozilla Public License 2.0-ás verziója szerint lett közreadva. Az MPL licenc egy példánya megtalálható a következő weboldalon: http://mozilla.org/MPL/2.0/\n"
+"\n"
+"A harmadik féltől származó kódok szerzői jogára vonatkozó megjegyzések és a szoftver egyes részeire vonatkozó licencfeltételek a LICENSE.html fájlban találhatóak. A Licenc megjelenítése gomb betölti az angol nyelvű licencdokumentumot.\n"
+"\n"
+"Minden ebben említett védjegy és bejegyzett védjegy a megfelelő tulajdonos tulajdona.\n"
+"\n"
+"Copyright © 2000 - 2018 a LibreOffice hozzájárulói. Minden jog fenntartva.\n"
+"\n"
+"A terméket a %OOOVENDOR készítette az OpenOffice.org alapján, amelynek szerzői joga az Oracle-t és/vagy leányvállalatait illeti, © 2000, 2011. A %OOOVENDOR köszöni minden közösségi tag hozzájárulását. További információ: http://www.libreoffice.org/."
 
 #: sfx2/uiconfig/ui/linkeditdialog.ui:105
 msgctxt "linkeditdialog|label2"
