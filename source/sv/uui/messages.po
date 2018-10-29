@@ -4,14 +4,17 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
 "POT-Creation-Date: 2018-05-22 13:16+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"PO-Revision-Date: 2018-10-15 21:28+0000\n"
+"Last-Translator: Påvel Nicklasson <pavelnicklasson@bahnhof.se>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: sv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Accelerator-Marker: ~\n"
-"X-Generator: LibreOffice\n"
+"X-Generator: Pootle 2.8\n"
+"X-POOTLE-MTIME: 1539638921.000000\n"
 
 #: uui/inc/ids.hrc:27
 msgctxt "RID_UUI_ERRHDL"
@@ -55,6 +58,13 @@ msgid ""
 "\n"
 "Are you certain that this file is a legacy document created many years ago?"
 msgstr ""
+"Varning!\n"
+"\n"
+"Du håller på att läsa in en mycket ovanlig sorts fil ($(ARG2)) från URL:en:\n"
+"\n"
+"$(ARG1)\n"
+"\n"
+"Är du säker på att den när filen är ett äldre dokument som skapades för flera år sedan?"
 
 #: uui/inc/ids.hrc:39
 msgctxt "RID_UUI_ERRHDL"
@@ -292,7 +302,6 @@ msgid "%PRODUCTNAME cannot keep files from being overwritten when this transmiss
 msgstr "%PRODUCTNAME kan inte förhindra att filer skrivs över när det här överföringsprotokollet används. Vill du fortsätta i alla fall?"
 
 #: uui/inc/ids.hrc:133
-#, fuzzy
 msgctxt "RID_UUI_ERRHDL"
 msgid ""
 "The file '$(ARG1)' is corrupt and therefore cannot be opened. %PRODUCTNAME can try to repair the file.\n"
@@ -502,6 +511,9 @@ msgid ""
 "\n"
 "Open document read-only, or ignore own file locking and open the document for editing."
 msgstr ""
+"Dokumentfil '$(ARG1)' är låst för redigering av dig på ett annat system sedan $(ARG2)\n"
+"\n"
+"Öppna dokumentet skrivskyddat eller ignorera egen fillåsning och öppna dokumentet för redigering."
 
 #: uui/inc/strings.hrc:35
 msgctxt "STR_ALREADYOPEN_READONLY_BTN"
@@ -520,6 +532,9 @@ msgid ""
 "\n"
 "Close document on other system and retry saving or ignore own file locking and save current document."
 msgstr ""
+"Dokumentfil '$(ARG1)' är låst för redigering av dig på ett annat system sedan $(ARG2)\n"
+"\n"
+"Stäng dokumentet på ett annat system och försök att spara det igen eller ignorera egen fillåsning och spara aktuellt dokument."
 
 #: uui/inc/strings.hrc:38
 msgctxt "STR_ALREADYOPEN_RETRY_SAVE_BTN"
@@ -552,10 +567,9 @@ msgid "Document Could Not Be Locked"
 msgstr "Dokumentet kunde inte låsas"
 
 #: uui/inc/strings.hrc:46
-#, fuzzy
 msgctxt "STR_LOCKFAILED_MSG"
 msgid "The lock file could not be created for exclusive access by %PRODUCTNAME, due to missing permission to create a lock file on that file location or lack of free disk space."
-msgstr "Filen gick inte att låsa för exklusiv åtkomst av %PRODUCTNAME eftersom det saknas behörighet att skapa en låsfil på den filplatsen."
+msgstr "Det gick inte att skapa låsfilen med exklusiv åtkomst av %PRODUCTNAME eftersom det saknas behörighet att skapa en låsfil på den filplatsen eller brist på ledigt diskutrymme."
 
 #: uui/inc/strings.hrc:47
 msgctxt "STR_LOCKFAILED_OPENREADONLY_BTN"
@@ -578,11 +592,18 @@ msgid ""
 "\n"
 "$(ARG3)"
 msgstr ""
+"Dokumentfilen '$(ARG1)' har låsts för redigering av:\n"
+"\n"
+"$(ARG2)\n"
+"\n"
+"Öppna dokument i skrivskyddat läge eller öppna en kopia av dokumentet för redigering.\n"
+"\n"
+"$(ARG3)"
 
 #: uui/inc/strings.hrc:51
 msgctxt "STR_OPENLOCKED_ALLOWIGNORE_MSG"
 msgid "You may also ignore the file locking and open the document for editing."
-msgstr ""
+msgstr "Du kan också ignorera fillåset och öppna dokumentet för redigering."
 
 #: uui/inc/strings.hrc:52
 msgctxt "STR_OPENLOCKED_OPENREADONLY_BTN"
@@ -611,6 +632,9 @@ msgid ""
 "\n"
 "Do you want to save anyway?"
 msgstr ""
+"Filen har ändrats sedan den öppnades för redigering i %PRODUCTNAME. Om du sparar din dokumentversion kommer ändringar som andra gjort att skrivas över.\n"
+"\n"
+"Vill du spara ändå?"
 
 #: uui/inc/strings.hrc:58
 msgctxt "STR_FILECHANGED_SAVEANYWAY_BTN"
@@ -631,6 +655,11 @@ msgid ""
 "\n"
 "Try again later to save document or save a copy of that document."
 msgstr ""
+"Dokumentfilen '$(ARG1)' är låst för redigering av:\n"
+"\n"
+"$(ARG2)\n"
+"\n"
+"Försök att spara dokumentet igen senare eller spara en kopia av dokumentet."
 
 #: uui/inc/strings.hrc:62
 msgctxt "STR_OVERWRITE_IGNORELOCK_MSG"
@@ -641,6 +670,11 @@ msgid ""
 "\n"
 "You may try to ignore the file locking and overwrite the existing document."
 msgstr ""
+"Dokumentfilen '$(ARG1)' är låst för redigering av:\n"
+"\n"
+"$(ARG2)\n"
+"\n"
+"Du kan försöka ignorera fillåset och skriva över det befintliga dokumentet."
 
 #: uui/inc/strings.hrc:63
 msgctxt "STR_TRYLATER_RETRYSAVING_BTN"
@@ -703,12 +737,12 @@ msgstr "Lösenordsbekräftelsen matchar inte."
 #: uui/inc/strings.hrc:76
 msgctxt "STR_LOCKCORRUPT_TITLE"
 msgid "Lock file is corrupted"
-msgstr ""
+msgstr "Låsfilen är skadad"
 
 #: uui/inc/strings.hrc:77
 msgctxt "STR_LOCKCORRUPT_MSG"
 msgid "The lock file is corrupted and probably empty. Opening the document read-only and closing it again removes the corrupted lock file."
-msgstr ""
+msgstr "Den här låsfilen är skadad och troligen tom. Att öppna dokumentet i skrivskyddat läge och stänga det igen tar bort den skadade låsfilen."
 
 #: uui/inc/strings.hrc:78
 msgctxt "STR_LOCKCORRUPT_OPENREADONLY_BTN"
@@ -813,6 +847,9 @@ msgid ""
 "\n"
 "Macros may contain viruses. Disabling macros for a document is always safe. If you disable macros you may lose functionality provided by the document macros."
 msgstr ""
+"Dokumentet innehåller makron.\n"
+"\n"
+"Makron kan innehålla virus. Det är alltid säkrare att inaktivera makron. Om du inaktiverar makron kan du förlora funktioner som finns i makrona."
 
 #: uui/uiconfig/ui/macrowarnmedium.ui:28
 msgctxt "macrowarnmedium|cancel"
