@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2018-05-22 13:16+0200\n"
-"PO-Revision-Date: 2018-03-11 23:19+0000\n"
+"POT-Creation-Date: 2018-11-05 17:38+0100\n"
+"PO-Revision-Date: 2018-11-05 18:26+0000\n"
 "Last-Translator: Michael Bauer <fios@akerbeltz.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: gd\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Plural-Forms: nplurals=4; plural=(n==1 || n==11) ? 0 : (n==2 || n==12) ? 1 : (n > 2 && n < 20) ? 2 : 3;\n"
 "X-Accelerator-Marker: ~\n"
 "X-Generator: LibreOffice\n"
-"X-POOTLE-MTIME: 1520810372.000000\n"
+"X-POOTLE-MTIME: 1541442399.000000\n"
 
 #: uui/inc/ids.hrc:27
 msgctxt "RID_UUI_ERRHDL"
@@ -58,6 +58,13 @@ msgid ""
 "\n"
 "Are you certain that this file is a legacy document created many years ago?"
 msgstr ""
+"An aire!\n"
+"\n"
+"Tha thu an impis faidhle gu math annasach ($(ARG2)) a luchdadh on URL:\n"
+"\n"
+"$(ARG1)\n"
+"\n"
+"A bheil thu cinnteach gur e sgrìobhainn dhìleabach a tha seo a chaidh a chruthachadh bliadhnaichean air ais?"
 
 #: uui/inc/ids.hrc:39
 msgctxt "RID_UUI_ERRHDL"
@@ -504,6 +511,9 @@ msgid ""
 "\n"
 "Open document read-only, or ignore own file locking and open the document for editing."
 msgstr ""
+"Chaidh am faidhle “$(ARG1)” a ghlasadh ro dheasachadh leat-sa air siostam eile a-mach o $(ARG2)\n"
+"\n"
+"Fosgail an sgrìobhainn sa mhodh leughaidh a-mhàin no leig seachad a’ ghlas a chuir thu fhèin ann agus fosgail an sgrìobhainn a chum deasachaidh."
 
 #: uui/inc/strings.hrc:35
 msgctxt "STR_ALREADYOPEN_READONLY_BTN"
@@ -522,6 +532,9 @@ msgid ""
 "\n"
 "Close document on other system and retry saving or ignore own file locking and save current document."
 msgstr ""
+"Chaidh am faidhle “$(ARG1)” a ghlasadh ro dheasachadh leat-sa air siostam eile a-mach o $(ARG2)\n"
+"\n"
+"Dùin an sgrìobhainn air an t-siostam eile ’s feuch ris a shàbhaladh a-rithist no leig seachad a’ ghlas a chuir thu fhèin ann agus sàbhail an sgrìobhainn làithreach."
 
 #: uui/inc/strings.hrc:38
 msgctxt "STR_ALREADYOPEN_RETRY_SAVE_BTN"
@@ -590,7 +603,7 @@ msgstr ""
 #: uui/inc/strings.hrc:51
 msgctxt "STR_OPENLOCKED_ALLOWIGNORE_MSG"
 msgid "You may also ignore the file locking and open the document for editing."
-msgstr ""
+msgstr "’S urrainn dhut glas an fhaidhle a leigeil seachad is an sgrìobhainn fhosgladh a chum deasachaidh."
 
 #: uui/inc/strings.hrc:52
 msgctxt "STR_OPENLOCKED_OPENREADONLY_BTN"
@@ -619,6 +632,9 @@ msgid ""
 "\n"
 "Do you want to save anyway?"
 msgstr ""
+"Chaidh am faidhle atharrachadh on a chaidh fhosgladh ann an %PRODUCTNAME airson a dheasachadh. Ma shàbhaileas tu an tionndadh agad-sa dhen sgrìobhainn seo, thèid a shàbhaladh an àite nan atharraichean a rinn càch.\n"
+"\n"
+"A bheil thu airson a shàbhaladh co-dhiù?"
 
 #: uui/inc/strings.hrc:58
 msgctxt "STR_FILECHANGED_SAVEANYWAY_BTN"
@@ -639,6 +655,11 @@ msgid ""
 "\n"
 "Try again later to save document or save a copy of that document."
 msgstr ""
+"Chaidh glas deasachaidh a chur air an fhaidhle “$(ARG1)” le:\n"
+"\n"
+"$(ARG2)\n"
+"\n"
+"Feuch ris a shàbhaladh an ceann tamaill no sàbhail lethbhreac dhen sgrìobhainn."
 
 #: uui/inc/strings.hrc:62
 msgctxt "STR_OVERWRITE_IGNORELOCK_MSG"
@@ -649,6 +670,11 @@ msgid ""
 "\n"
 "You may try to ignore the file locking and overwrite the existing document."
 msgstr ""
+"Chaidh glas deasachaidh a chur air an fhaidhle “$(ARG1)” le:\n"
+"\n"
+"$(ARG2)\n"
+"\n"
+"Dh’fhaoidte gun urrainn dhut a’ ghlas a leigeil seachad is sgrìobhadh thairis air an sgrìobhainn làithreach."
 
 #: uui/inc/strings.hrc:63
 msgctxt "STR_TRYLATER_RETRYSAVING_BTN"
@@ -809,40 +835,43 @@ msgctxt "logindialog|errorft"
 msgid "Message from server:"
 msgstr "Teachdaireachd on fhrithealaiche:"
 
-#: uui/uiconfig/ui/macrowarnmedium.ui:8
+#: uui/uiconfig/ui/macrowarnmedium.ui:7
 msgctxt "macrowarnmedium|MacroWarnMedium"
 msgid "%PRODUCTNAME - Security Warning"
 msgstr "%PRODUCTNAME - Rabhadh tèarainteachd"
 
-#: uui/uiconfig/ui/macrowarnmedium.ui:14
+#: uui/uiconfig/ui/macrowarnmedium.ui:13
 msgctxt "macrowarnmedium|descr2Label"
 msgid ""
 "The document contains document macros.\n"
 "\n"
 "Macros may contain viruses. Disabling macros for a document is always safe. If you disable macros you may lose functionality provided by the document macros."
 msgstr ""
+"Tha macrothan sgrìobhainne san sgrìobhainn seo.\n"
+"\n"
+"Faodaidh bìorasan a bhith ann am macrothan. Tha e sàbhailte an-còmhnaidh na macrothan a chur à comas ann an sgrìobhainn. Ma chuireas tu na macrothan à comas, faodaidh gun caill thu gleusan a bheireadh na macrothan dhut."
 
-#: uui/uiconfig/ui/macrowarnmedium.ui:28
+#: uui/uiconfig/ui/macrowarnmedium.ui:27
 msgctxt "macrowarnmedium|cancel"
 msgid "_Disable Macros"
 msgstr "C_uir na macrothan à comas"
 
-#: uui/uiconfig/ui/macrowarnmedium.ui:44
+#: uui/uiconfig/ui/macrowarnmedium.ui:43
 msgctxt "macrowarnmedium|ok"
 msgid "_Enable Macros"
 msgstr "Cuir na _macrothan an comas"
 
-#: uui/uiconfig/ui/macrowarnmedium.ui:89
+#: uui/uiconfig/ui/macrowarnmedium.ui:88
 msgctxt "macrowarnmedium|descr1Label"
 msgid "The document contains document macros signed by:"
 msgstr "Tha macrothan san sgrìobhainn seo a tha air a shoidhneadh le:"
 
-#: uui/uiconfig/ui/macrowarnmedium.ui:98
+#: uui/uiconfig/ui/macrowarnmedium.ui:97
 msgctxt "macrowarnmedium|alwaysTrustCheckbutton"
 msgid "_Always trust macros from this source"
 msgstr "Cuir e_arbsa ann am macrothan leis an tùs seo an-còmhnaidh"
 
-#: uui/uiconfig/ui/macrowarnmedium.ui:129
+#: uui/uiconfig/ui/macrowarnmedium.ui:128
 msgctxt "macrowarnmedium|viewSignsButton"
 msgid "_View Signatures…"
 msgstr "Seall na s_oidhnidhean…"
@@ -892,12 +921,12 @@ msgctxt "simplenameclash|SimpleNameClashDialog"
 msgid "File Exists"
 msgstr "Tha am faidhle ann mu thràth"
 
-#: uui/uiconfig/ui/simplenameclash.ui:43
+#: uui/uiconfig/ui/simplenameclash.ui:42
 msgctxt "simplenameclash|replace"
 msgid "Replace"
 msgstr "Cuir 'na àite"
 
-#: uui/uiconfig/ui/simplenameclash.ui:57
+#: uui/uiconfig/ui/simplenameclash.ui:55
 msgctxt "simplenameclash|rename"
 msgid "Rename"
 msgstr "Thoir ainm ùr air"
