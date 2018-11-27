@@ -4,17 +4,17 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
 "POT-Creation-Date: 2018-07-19 11:55+0200\n"
-"PO-Revision-Date: 2018-09-16 04:58+0000\n"
+"PO-Revision-Date: 2018-11-04 08:17+0000\n"
 "Last-Translator: Jordan Maulana <jordanmaulana26@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: id\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Plural-Forms: nplurals=2; plural=n>1;\n"
 "X-Accelerator-Marker: ~\n"
 "X-Generator: Pootle 2.8\n"
-"X-POOTLE-MTIME: 1537073911.000000\n"
+"X-POOTLE-MTIME: 1541319452.000000\n"
 
 #: sc/inc/compiler.hrc:27
 msgctxt "RID_FUNCTION_CATEGORIES"
@@ -1867,7 +1867,7 @@ msgstr "Larik bersarang tidak didukung."
 #: sc/inc/globstr.hrc:389
 msgctxt "STR_ERR_LONG_BAD_ARRAY_CONTENT"
 msgid "Unsupported inline array content."
-msgstr ""
+msgstr "Konten barisan larik tidak didukung."
 
 #: sc/inc/globstr.hrc:390
 msgctxt "STR_UNDO_TEXTTOCOLUMNS"
@@ -2673,16 +2673,14 @@ msgid "The file contains data after row 8192 and therefore can not be read."
 msgstr "Berkas ini mengandung data setelah baris 8192 sehingga tak dapat dibaca."
 
 #: sc/inc/scerrors.hrc:54 sc/inc/scerrors.hrc:102
-#, fuzzy
 msgctxt "RID_ERRHDLSC"
 msgid "Format error discovered in the file in sub-document $(ARG1) at $(ARG2)(row,col)."
 msgstr "Kesalahan format ditemukan dalam berkas pada sub-dokumen $(ARG1) pada $(ARG2)(row,col)."
 
 #: sc/inc/scerrors.hrc:56
-#, fuzzy
 msgctxt "RID_ERRHDLSC"
 msgid "File format error found at $(ARG1)(row,col)."
-msgstr "Kesalahan format berkas ditemukan pada $(ARG1)(brs,kol)."
+msgstr "Kesalahan format berkas ditemukan pada $(ARG1)(row,col)."
 
 #. Export ----------------------------------------------------
 #: sc/inc/scerrors.hrc:60
@@ -2729,7 +2727,7 @@ msgstr "Data tidak dapat dimuat secara lengkap karena cacah baris maksimum per l
 #: sc/inc/scerrors.hrc:78
 msgctxt "RID_ERRHDLSC"
 msgid "The data could not be loaded completely because the maximum number of columns per sheet was exceeded."
-msgstr ""
+msgstr "Data tidak dapat dimuat sepenuhnya karena jumlah maksimum kolom tiap lembar telah terlampaui."
 
 #: sc/inc/scerrors.hrc:80
 msgctxt "RID_ERRHDLSC"
@@ -2738,26 +2736,29 @@ msgid ""
 "\n"
 "Please be warned that re-saving this document will permanently delete those sheets that have not been loaded!"
 msgstr ""
+"Tidak semua lembar telah dimuat karena jumlah maksimum lembar telah terlampaui.\n"
+"\n"
+"Harap diingat bahwa menyimpan ulang dokumen ini akan menghapus secara permanen lembar-lembar yang belum dimuat!"
 
 #: sc/inc/scerrors.hrc:82
 msgctxt "RID_ERRHDLSC"
 msgid "The data could not be loaded completely because the maximum number of characters per cell was exceeded."
-msgstr ""
+msgstr "Data tidak dapat dimuat sepenuhnya karena jumlah maksimum karakter per lembar telah terlampaui."
 
 #: sc/inc/scerrors.hrc:84
 msgctxt "RID_ERRHDLSC"
 msgid "Corresponding FM3-File could not be opened."
-msgstr ""
+msgstr "Berkas FM3 terkait tak dapat dibuka."
 
 #: sc/inc/scerrors.hrc:86
 msgctxt "RID_ERRHDLSC"
 msgid "Error in file structure of corresponding FM3-File."
-msgstr ""
+msgstr "Kesalahan pada struktur berkas FM3 terkait."
 
 #: sc/inc/scerrors.hrc:88
 msgctxt "RID_ERRHDLSC"
 msgid "Document too complex for automatic calculation. Press F9 to recalculate."
-msgstr ""
+msgstr "Dokumen terlalu kompleks untuk kalkulasi otomatis. Tekan F9 untuk kalkulasi ulang."
 
 #: sc/inc/scerrors.hrc:90
 msgctxt "RID_ERRHDLSC"
@@ -2765,6 +2766,8 @@ msgid ""
 "The document contains more rows than supported in the selected format.\n"
 "Additional rows were not saved."
 msgstr ""
+"Dokumen berisi lebih banyak baris dari yang didukung pada format yang dipilih.\n"
+"Baris tambahan tidak disimpan."
 
 #: sc/inc/scerrors.hrc:92
 msgctxt "RID_ERRHDLSC"
@@ -2772,6 +2775,8 @@ msgid ""
 "The document contains more columns than supported in the selected format.\n"
 "Additional columns were not saved."
 msgstr ""
+"Dokumen berisi lebih banyak kolom dari yang didukung pada format yang dipilih.\n"
+"Kolom tambahan tidak disimpan."
 
 #: sc/inc/scerrors.hrc:94
 msgctxt "RID_ERRHDLSC"
@@ -2779,6 +2784,8 @@ msgid ""
 "The document contains more sheets than supported in the selected format.\n"
 "Additional sheets were not saved."
 msgstr ""
+"Dokumen memuat lebih banyak lembaran dari yang didukung pada format yang dipilih.\n"
+"Lembar tambahan tidak disimpan."
 
 #: sc/inc/scerrors.hrc:96
 msgctxt "RID_ERRHDLSC"
@@ -2786,11 +2793,13 @@ msgid ""
 "The document contains information not recognized by this program version.\n"
 "Resaving the document will delete this information!"
 msgstr ""
+"Dokumen berisi informasi yang tidak dikenali oleh program versi ini.\n"
+"Menyimpan ulang dokumen akan menghapus informasi ini!"
 
 #: sc/inc/scerrors.hrc:98
 msgctxt "RID_ERRHDLSC"
 msgid "Not all cell contents could be saved in the specified format."
-msgstr ""
+msgstr "Tidak semua isi sel dapat disimpan dalam format yang dipilih."
 
 #: sc/inc/scerrors.hrc:100
 msgctxt "RID_ERRHDLSC"
@@ -2800,12 +2809,15 @@ msgid ""
 "\n"
 "$(ARG1)"
 msgstr ""
+"Karakter berikut tak dapat dikonversi ke jenis karakter yang dipilih\n"
+"dan ditulis sebagai &#1234; menggantikan:\n"
+"\n"
+"$(ARG1)"
 
 #: sc/inc/scerrors.hrc:104
-#, fuzzy
 msgctxt "RID_ERRHDLSC"
 msgid "Not all attributes could be read."
-msgstr "Tidak semua atribut bisa dibaca."
+msgstr "Tidak semua atribut dapat dibaca."
 
 #: sc/inc/scfuncs.hrc:37
 msgctxt "SC_OPCODE_DB_COUNT"
@@ -4182,10 +4194,9 @@ msgid "Type = 1 denotes due at the beginning of the period, = 0 at the end."
 msgstr "Jenis = 1 berarti jatuh tempo di awal periode, = 0 di akhir periode."
 
 #: sc/inc/scfuncs.hrc:520
-#, fuzzy
 msgctxt "SC_OPCODE_CUM_PRINC"
 msgid "Cumulative capital. Calculates the total amount of the repayment share in a period for an investment with constant interest rate."
-msgstr "Modal Kumulatif. Menghitung nilai total dari pengembalian dalam suatu periode untuk investasi dengan suku bunga tetap."
+msgstr "Tidak semua atribut bisa dibaca."
 
 #: sc/inc/scfuncs.hrc:521
 msgctxt "SC_OPCODE_CUM_PRINC"
@@ -4563,21 +4574,19 @@ msgid "Factor"
 msgstr "Faktor"
 
 #: sc/inc/scfuncs.hrc:626
-#, fuzzy
 msgctxt "SC_OPCODE_VBD"
 msgid "Factor. The factor for the reduction of the depreciation. Factor = 2 denotes double rate depreciation."
-msgstr "Faktor. Faktor pengurangan (depresiasi). F = 2 berarti depresiasi suku bungan berganda."
+msgstr "Faktor. Faktor untuk pengurangan (depresiasi). F = 2 menunjukkan depresiasi nilai ganda."
 
 #: sc/inc/scfuncs.hrc:627
-#, fuzzy
 msgctxt "SC_OPCODE_VBD"
 msgid "NoSwitch"
-msgstr "Ganti"
+msgstr "NoSwitch"
 
 #: sc/inc/scfuncs.hrc:628
 msgctxt "SC_OPCODE_VBD"
 msgid "NoSwitch = 0 denotes switch to linear depreciation, NoSwitch = 1 do not switch."
-msgstr ""
+msgstr "NoSwitch = 0 menunjukkan peralihan ke depresiasi linier, NoSwitch = 1 tidak beralih."
 
 #: sc/inc/scfuncs.hrc:634
 msgctxt "SC_OPCODE_EFFECT"
@@ -4590,7 +4599,6 @@ msgid "NOM"
 msgstr "NOM"
 
 #: sc/inc/scfuncs.hrc:636
-#, fuzzy
 msgctxt "SC_OPCODE_EFFECT"
 msgid "Nominal interest"
 msgstr "Suku Bunga Nominal"
@@ -4706,16 +4714,14 @@ msgid "Interest rate for investments (the negative values in the array)."
 msgstr "Suku bunga investasi (nilai negatif dalam larik)."
 
 #: sc/inc/scfuncs.hrc:679
-#, fuzzy
 msgctxt "SC_OPCODE_MIRR"
 msgid "Reinvest rate"
-msgstr "reinvest_rate"
+msgstr "Suku reinvestasi"
 
 #: sc/inc/scfuncs.hrc:680
-#, fuzzy
 msgctxt "SC_OPCODE_MIRR"
 msgid "Interest rate for reinvestments (the positive values in the array)."
-msgstr "Suku bunga investasi (nilai negatif dalam larik)."
+msgstr "Suku bunga investasi (nilai positif dalam larik)."
 
 #: sc/inc/scfuncs.hrc:686
 msgctxt "SC_OPCODE_ISPMT"
@@ -4803,7 +4809,6 @@ msgid "Interest. Calculates the interest rate which represents the rate of retur
 msgstr "Bunga. Menghitung suku bunga yang menyatakan tingkat pengembalian suatu investasi."
 
 #: sc/inc/scfuncs.hrc:713
-#, fuzzy
 msgctxt "SC_OPCODE_RRI"
 msgid "Periods"
 msgstr "Periode"
@@ -4979,10 +4984,9 @@ msgid "Reference"
 msgstr "Referensi"
 
 #: sc/inc/scfuncs.hrc:798
-#, fuzzy
 msgctxt "SC_OPCODE_IS_FORMULA"
 msgid "The cell to be tested."
-msgstr "Nilai yang akan diuji."
+msgstr "Sel yang akan diuji."
 
 #: sc/inc/scfuncs.hrc:804
 msgctxt "SC_OPCODE_FORMULA"
@@ -5040,10 +5044,9 @@ msgid "Determines information about address, formatting or contents of a cell."
 msgstr "Menentukan informasi tentang alamat, format dan isi sel."
 
 #: sc/inc/scfuncs.hrc:835
-#, fuzzy
 msgctxt "SC_OPCODE_CELL"
 msgid "Info type"
-msgstr "info_type"
+msgstr "Tipe info"
 
 #: sc/inc/scfuncs.hrc:836
 msgctxt "SC_OPCODE_CELL"
@@ -5061,10 +5064,9 @@ msgid "The position of the cell you want to examine."
 msgstr "Posisi sel yang akan diperiksa."
 
 #: sc/inc/scfuncs.hrc:844
-#, fuzzy
 msgctxt "SC_OPCODE_CURRENT"
 msgid "Calculates the current value of the formula at the present location."
-msgstr "Menghitung nilai sekarang dari rumus yang ada di posisi saat ini. "
+msgstr "Menghitung nilai sekarang dari rumus yang ada di posisi saat ini."
 
 #: sc/inc/scfuncs.hrc:850
 msgctxt "SC_OPCODE_FALSE"
@@ -5107,10 +5109,9 @@ msgid "Any value or expression which can be either TRUE or FALSE."
 msgstr "Bilangan atau ekspresi yang bisa bernilai TRUE atau FALSE."
 
 #: sc/inc/scfuncs.hrc:873
-#, fuzzy
 msgctxt "SC_OPCODE_IF"
 msgid "Then value"
-msgstr "Nilai_maka"
+msgstr "Nilai maka"
 
 #: sc/inc/scfuncs.hrc:874
 msgctxt "SC_OPCODE_IF"
@@ -5118,10 +5119,9 @@ msgid "The result of the function if the logical test returns a TRUE."
 msgstr "Hasil fungsi jika pengujian logikan mengembalikan nilai TRUE."
 
 #: sc/inc/scfuncs.hrc:875
-#, fuzzy
 msgctxt "SC_OPCODE_IF"
 msgid "Otherwise value"
-msgstr "Nilai_SelainItu"
+msgstr "Nilai lain"
 
 #: sc/inc/scfuncs.hrc:876
 msgctxt "SC_OPCODE_IF"
@@ -5219,10 +5219,9 @@ msgid "Logical value "
 msgstr "Nilai logikal "
 
 #: sc/inc/scfuncs.hrc:920
-#, fuzzy
 msgctxt "SC_OPCODE_AND"
 msgid "Logical value 1, logical value 2;...are conditions to be tested and each returns either TRUE or FALSE."
-msgstr "Nilai logikal 1, nilai logikal 2;... adalah kondisi 1 hingga 30 yang akan diuji yang masing-masing bisa bernilai TRUE atau FALSE."
+msgstr "Nilai logikal 1, nilai logikal 2;... adalah kondisi yang akan diuji dan masing-masing bisa bernilai BENAR atau SALAH."
 
 #: sc/inc/scfuncs.hrc:926
 msgctxt "SC_OPCODE_ABS"
@@ -5270,10 +5269,9 @@ msgid "Counts the blank cells in a specified range."
 msgstr "Mencacah sel kosong pada suatu jangkauan."
 
 #: sc/inc/scfuncs.hrc:945
-#, fuzzy
 msgctxt "SC_OPCODE_COUNT_EMPTY_CELLS"
 msgid "Range"
-msgstr "Jangkauan"
+msgstr "Rentang"
 
 #: sc/inc/scfuncs.hrc:946
 msgctxt "SC_OPCODE_COUNT_EMPTY_CELLS"
@@ -5296,10 +5294,9 @@ msgid "Number "
 msgstr "Bilangan "
 
 #: sc/inc/scfuncs.hrc:960
-#, fuzzy
 msgctxt "SC_OPCODE_SUM"
 msgid "Number 1, number 2, ... are arguments whose total is to be calculated."
-msgstr "Bilangan 1, bilangan 2, ... peubah 1 hingga 30 yang perkaliannya akan dihitung."
+msgstr "Bilangan 1, bilangan 2, ... adalah argumen yang akan dihitung jumlahnya."
 
 #: sc/inc/scfuncs.hrc:966
 msgctxt "SC_OPCODE_SUM_SQ"
@@ -5312,10 +5309,9 @@ msgid "Number "
 msgstr "Bilangan "
 
 #: sc/inc/scfuncs.hrc:968
-#, fuzzy
 msgctxt "SC_OPCODE_SUM_SQ"
 msgid "Number 1, number 2,... are arguments for which the sum of the squares is to be calculated."
-msgstr "Bilangan 1, bilangan 2, ... peubah 1 hingga 30 yang perkaliannya akan dihitung."
+msgstr "Bilangan 1, bilangan 2, ... adalah argumen yang akan dihitung jumlah kuadratnya."
 
 #: sc/inc/scfuncs.hrc:974
 msgctxt "SC_OPCODE_PRODUCT"
@@ -5328,10 +5324,9 @@ msgid "Number "
 msgstr "Bilangan "
 
 #: sc/inc/scfuncs.hrc:976
-#, fuzzy
 msgctxt "SC_OPCODE_PRODUCT"
 msgid "Number 1, number 2, ... are arguments to be multiplied and a result returned."
-msgstr "Bilangan 1, bilangan 2, ... peubah 1 hingga 30 yang perkaliannya akan dihitung."
+msgstr "Bilangan 1, bilangan 2, ... adalah argumen yang akan dikalikan dan dikembalikan hasilnya."
 
 #: sc/inc/scfuncs.hrc:982
 msgctxt "SC_OPCODE_SUM_IF"
@@ -5339,10 +5334,9 @@ msgid "Totals the arguments that meet the condition."
 msgstr "Menjumlah peubah yang memenuhi kondisi."
 
 #: sc/inc/scfuncs.hrc:983
-#, fuzzy
 msgctxt "SC_OPCODE_SUM_IF"
 msgid "Range"
-msgstr "Jangkauan"
+msgstr "Rentang"
 
 #: sc/inc/scfuncs.hrc:984
 msgctxt "SC_OPCODE_SUM_IF"
@@ -5360,10 +5354,9 @@ msgid "The criteria to be applied to the range."
 msgstr "Kriteria yang akan diterapkan ke jangkauan."
 
 #: sc/inc/scfuncs.hrc:987
-#, fuzzy
 msgctxt "SC_OPCODE_SUM_IF"
 msgid "Sum range"
-msgstr "Atur jangkauan"
+msgstr "Atur rentang"
 
 #: sc/inc/scfuncs.hrc:988
 msgctxt "SC_OPCODE_SUM_IF"
@@ -5376,10 +5369,9 @@ msgid "Averages the arguments that meet the conditions."
 msgstr "enghitung jumlah total dari peubah yang memenuhi kondisi."
 
 #: sc/inc/scfuncs.hrc:995
-#, fuzzy
 msgctxt "SC_OPCODE_AVERAGE_IF"
 msgid "Range"
-msgstr "Jangkauan"
+msgstr "Rentang"
 
 #: sc/inc/scfuncs.hrc:996
 msgctxt "SC_OPCODE_AVERAGE_IF"
@@ -5397,10 +5389,9 @@ msgid "The criteria to be applied to the range."
 msgstr "Kriteria yang akan diterapkan ke jangkauan."
 
 #: sc/inc/scfuncs.hrc:999
-#, fuzzy
 msgctxt "SC_OPCODE_AVERAGE_IF"
 msgid "Average range"
-msgstr "rata_rata_jangkauan"
+msgstr "Rata-rata rentang"
 
 #: sc/inc/scfuncs.hrc:1000
 msgctxt "SC_OPCODE_AVERAGE_IF"
@@ -5413,10 +5404,9 @@ msgid "Totals the values of cells in a range that meet multiple criteria in mult
 msgstr "Nilai total sel-sel dalam jangkauan yang memenuhi kriteria berganda dalam jangkauan berganda."
 
 #: sc/inc/scfuncs.hrc:1006
-#, fuzzy
 msgctxt "SC_OPCODE_SUM_IFS"
 msgid "Sum range"
-msgstr "Atur jangkauan"
+msgstr "Jumlahkan rentang"
 
 #: sc/inc/scfuncs.hrc:1007
 msgctxt "SC_OPCODE_SUM_IFS"
@@ -5424,10 +5414,9 @@ msgid "The range from which the values are to be totalled."
 msgstr "Jangkauan yang nilai-nilainya akan dijumlahkan"
 
 #: sc/inc/scfuncs.hrc:1008
-#, fuzzy
 msgctxt "SC_OPCODE_SUM_IFS"
 msgid "Range "
-msgstr "Jangkauan"
+msgstr "Rentang "
 
 #: sc/inc/scfuncs.hrc:1009
 msgctxt "SC_OPCODE_SUM_IFS"
@@ -5435,10 +5424,9 @@ msgid "Range 1, range 2,... are the ranges to be evaluated by the criteria given
 msgstr "Jangkauan 1, jangkauan 2, ... adalah jangkauan yang akan dievaluasi oleh kriteria yang diberikan."
 
 #: sc/inc/scfuncs.hrc:1010
-#, fuzzy
 msgctxt "SC_OPCODE_SUM_IFS"
 msgid "Criteria "
-msgstr "Kriteria"
+msgstr "Kriteria "
 
 #: sc/inc/scfuncs.hrc:1011
 msgctxt "SC_OPCODE_SUM_IFS"
@@ -5451,10 +5439,9 @@ msgid "Averages the value of the cells that meet multiple criteria in multiple r
 msgstr "Merata-ratakan nilai dari sel-sel yang memenuhi kriteria berganda dalam jangkauan berganda."
 
 #: sc/inc/scfuncs.hrc:1018
-#, fuzzy
 msgctxt "SC_OPCODE_AVERAGE_IFS"
 msgid "Average range"
-msgstr "rata_rata_jangkauan"
+msgstr "Rata-rata rentang"
 
 #: sc/inc/scfuncs.hrc:1019
 msgctxt "SC_OPCODE_AVERAGE_IFS"
@@ -5462,10 +5449,9 @@ msgid "The range from which the values are to be averaged."
 msgstr "Jangkauan yang nilai-nilainya akan dijumlahkan"
 
 #: sc/inc/scfuncs.hrc:1020
-#, fuzzy
 msgctxt "SC_OPCODE_AVERAGE_IFS"
 msgid "Range "
-msgstr "Jangkauan"
+msgstr "Rentang "
 
 #: sc/inc/scfuncs.hrc:1021
 msgctxt "SC_OPCODE_AVERAGE_IFS"
@@ -5473,10 +5459,9 @@ msgid "Range 1, range 2,... are the ranges to be evaluated by the criteria given
 msgstr "Jangkauan 1, jangkauan 2, ... adalah jangkauan yang akan dievaluasi oleh kriteria yang diberikan."
 
 #: sc/inc/scfuncs.hrc:1022
-#, fuzzy
 msgctxt "SC_OPCODE_AVERAGE_IFS"
 msgid "Criteria "
-msgstr "Kriteria"
+msgstr "Kriteria "
 
 #: sc/inc/scfuncs.hrc:1023
 msgctxt "SC_OPCODE_AVERAGE_IFS"
@@ -5489,10 +5474,9 @@ msgid "Counts the cells that meet multiple criteria in multiple ranges."
 msgstr "Hitung sel yang memenuhi kriteria berganda dalam jangkauan berganda."
 
 #: sc/inc/scfuncs.hrc:1030
-#, fuzzy
 msgctxt "SC_OPCODE_COUNT_IFS"
 msgid "Range "
-msgstr "Jangkauan"
+msgstr "Rentang "
 
 #: sc/inc/scfuncs.hrc:1031
 msgctxt "SC_OPCODE_COUNT_IFS"
@@ -5500,10 +5484,9 @@ msgid "Range 1, range 2,... are the ranges to be evaluated by the criteria given
 msgstr "Jangkauan 1, jangkauan 2, ... adalah jangkauan yang akan dievaluasi oleh kriteria yang diberikan."
 
 #: sc/inc/scfuncs.hrc:1032
-#, fuzzy
 msgctxt "SC_OPCODE_COUNT_IFS"
 msgid "Criteria "
-msgstr "Kriteria"
+msgstr "Kriteria "
 
 #: sc/inc/scfuncs.hrc:1033
 msgctxt "SC_OPCODE_COUNT_IFS"
@@ -5516,10 +5499,9 @@ msgid "Counts the arguments which meet the set conditions."
 msgstr "Mencacah banyaknya peubah yang memenuhi kondisi."
 
 #: sc/inc/scfuncs.hrc:1040
-#, fuzzy
 msgctxt "SC_OPCODE_COUNT_IF"
 msgid "Range"
-msgstr "Jangkauan"
+msgstr "Rentang"
 
 #: sc/inc/scfuncs.hrc:1041
 msgctxt "SC_OPCODE_COUNT_IF"
@@ -5542,7 +5524,6 @@ msgid "Returns the square root of a number."
 msgstr "Mengembalikan akar suatu bilangan."
 
 #: sc/inc/scfuncs.hrc:1050
-#, fuzzy
 msgctxt "SC_OPCODE_SQRT"
 msgid "Number"
 msgstr "Angka"
@@ -5593,10 +5574,9 @@ msgid "Calculates the number of combinations for elements without repetition."
 msgstr "Mengembalikan jumlah kombinasi elemen yang tidak mengandung perulangan."
 
 #: sc/inc/scfuncs.hrc:1080
-#, fuzzy
 msgctxt "SC_OPCODE_COMBIN"
 msgid "Number 1"
-msgstr "Bilangan "
+msgstr "Angka 1"
 
 #: sc/inc/scfuncs.hrc:1081
 msgctxt "SC_OPCODE_COMBIN"
@@ -5604,10 +5584,9 @@ msgid "The total number of elements."
 msgstr "Jumlah total elemen."
 
 #: sc/inc/scfuncs.hrc:1082
-#, fuzzy
 msgctxt "SC_OPCODE_COMBIN"
 msgid "Number 2"
-msgstr "Bilangan "
+msgstr "Angka 2"
 
 #: sc/inc/scfuncs.hrc:1083
 msgctxt "SC_OPCODE_COMBIN"
@@ -5620,10 +5599,9 @@ msgid "Calculates the number of combinations of elements including repetition."
 msgstr "Menghitung jumlah kombinasi elemen termasuk perulangannya."
 
 #: sc/inc/scfuncs.hrc:1090
-#, fuzzy
 msgctxt "SC_OPCODE_COMBIN_A"
 msgid "Number 1"
-msgstr "Bilangan "
+msgstr "Angka 1"
 
 #: sc/inc/scfuncs.hrc:1091
 msgctxt "SC_OPCODE_COMBIN_A"
@@ -5631,10 +5609,9 @@ msgid "The total number of elements."
 msgstr "Jumlah total elemen."
 
 #: sc/inc/scfuncs.hrc:1092
-#, fuzzy
 msgctxt "SC_OPCODE_COMBIN_A"
 msgid "Number 2"
-msgstr "Bilangan "
+msgstr "Angka 2"
 
 #: sc/inc/scfuncs.hrc:1093
 msgctxt "SC_OPCODE_COMBIN_A"
@@ -5782,7 +5759,6 @@ msgid "Returns the sine of a number."
 msgstr "Mengembalikan nilai sinus."
 
 #: sc/inc/scfuncs.hrc:1172
-#, fuzzy
 msgctxt "SC_OPCODE_SIN"
 msgid "Number"
 msgstr "Angka"
@@ -5813,7 +5789,6 @@ msgid "Returns the tangent of a number."
 msgstr "Nilai sudut dalam radian yang akan dihitung tangennya."
 
 #: sc/inc/scfuncs.hrc:1188
-#, fuzzy
 msgctxt "SC_OPCODE_TAN"
 msgid "Number"
 msgstr "Angka"
@@ -5844,7 +5819,6 @@ msgid "Returns the hyperbolic sine of a number."
 msgstr "Mengembalikan nilai hiperbolik sinus."
 
 #: sc/inc/scfuncs.hrc:1204
-#, fuzzy
 msgctxt "SC_OPCODE_SIN_HYP"
 msgid "Number"
 msgstr "Angka"
@@ -5875,7 +5849,6 @@ msgid "Returns the hyperbolic tangent of a number."
 msgstr "Mengembalikan nilai hiperbolik tangen."
 
 #: sc/inc/scfuncs.hrc:1220
-#, fuzzy
 msgctxt "SC_OPCODE_TAN_HYP"
 msgid "Number"
 msgstr "Angka"
@@ -5891,28 +5864,24 @@ msgid "Returns the arctangent for the specified coordinates."
 msgstr "Mengembalikan nilai arc tangen suatu koordinat."
 
 #: sc/inc/scfuncs.hrc:1228
-#, fuzzy
 msgctxt "SC_OPCODE_ARC_TAN_2"
 msgid "Number X"
-msgstr "Bilangan "
+msgstr "Bilangan X"
 
 #: sc/inc/scfuncs.hrc:1229
-#, fuzzy
 msgctxt "SC_OPCODE_ARC_TAN_2"
 msgid "The value for the X coordinate."
-msgstr "Nilai koordinat x."
+msgstr "Nilai untuk koordinat X."
 
 #: sc/inc/scfuncs.hrc:1230
-#, fuzzy
 msgctxt "SC_OPCODE_ARC_TAN_2"
 msgid "Number Y"
-msgstr "Bilangan "
+msgstr "Bilangan Y"
 
 #: sc/inc/scfuncs.hrc:1231
-#, fuzzy
 msgctxt "SC_OPCODE_ARC_TAN_2"
 msgid "The value for the Y coordinate."
-msgstr "Nilai koordinat x."
+msgstr "Nilai untuk koordinat Y."
 
 #: sc/inc/scfuncs.hrc:1237
 msgctxt "SC_OPCODE_COSECANT"
@@ -6145,10 +6114,9 @@ msgid "Function index. Is an index of the possible functions Total, Max, ..."
 msgstr "Indeks fungsi, yaitu indeks dari fungsi yang mungkin: Total, Max, ..."
 
 #: sc/inc/scfuncs.hrc:1348
-#, fuzzy
 msgctxt "SC_OPCODE_SUB_TOTAL"
 msgid "Range"
-msgstr "Jangkauan"
+msgstr "Rentang"
 
 #: sc/inc/scfuncs.hrc:1349
 msgctxt "SC_OPCODE_SUB_TOTAL"
@@ -6183,7 +6151,7 @@ msgstr "Indeks opsi. Adalah suatu indeks dari opsi abai yang mungkin."
 #: sc/inc/scfuncs.hrc:1360
 msgctxt "SC_OPCODE_AGGREGATE"
 msgid "Reference 1 or array"
-msgstr ""
+msgstr "Referensi 1 atau larik"
 
 #: sc/inc/scfuncs.hrc:1361
 msgctxt "SC_OPCODE_AGGREGATE"
@@ -6193,7 +6161,7 @@ msgstr "Sel dari suatu jangkauan yang akan diperhitungkan."
 #: sc/inc/scfuncs.hrc:1362
 msgctxt "SC_OPCODE_AGGREGATE"
 msgid "Reference 2..n or k "
-msgstr ""
+msgstr "Referensi 2..n atau k"
 
 #: sc/inc/scfuncs.hrc:1363
 msgctxt "SC_OPCODE_AGGREGATE"
@@ -6221,7 +6189,6 @@ msgid "Truncates the decimal places of a number."
 msgstr "Memotong jumlah desimal suatu bilangan."
 
 #: sc/inc/scfuncs.hrc:1378
-#, fuzzy
 msgctxt "SC_OPCODE_TRUNC"
 msgid "Number"
 msgstr "Angka"
@@ -6232,10 +6199,9 @@ msgid "The number to be truncated."
 msgstr "Bilangan yang akan dipotong desimalnya."
 
 #: sc/inc/scfuncs.hrc:1380
-#, fuzzy
 msgctxt "SC_OPCODE_TRUNC"
 msgid "Count"
-msgstr "Count"
+msgstr "Hitung"
 
 #: sc/inc/scfuncs.hrc:1381
 msgctxt "SC_OPCODE_TRUNC"
@@ -6248,7 +6214,6 @@ msgid "Rounds a number to a predefined accuracy."
 msgstr "Membulatkan bilangan hingga derajat ketelitian tertentu."
 
 #: sc/inc/scfuncs.hrc:1388
-#, fuzzy
 msgctxt "SC_OPCODE_ROUND"
 msgid "Number"
 msgstr "Angka"
@@ -6259,10 +6224,9 @@ msgid "The number to be rounded."
 msgstr "Bilangan yang akan dibulatkan."
 
 #: sc/inc/scfuncs.hrc:1390
-#, fuzzy
 msgctxt "SC_OPCODE_ROUND"
 msgid "Count"
-msgstr "Count"
+msgstr "Hitung"
 
 #: sc/inc/scfuncs.hrc:1391
 msgctxt "SC_OPCODE_ROUND"
@@ -6275,7 +6239,6 @@ msgid "Rounds a number up to the predefined accuracy."
 msgstr "Membulatkan bilangan hingga derajat ketelitian tertentu."
 
 #: sc/inc/scfuncs.hrc:1398
-#, fuzzy
 msgctxt "SC_OPCODE_ROUND_UP"
 msgid "Number"
 msgstr "Angka"
@@ -6286,10 +6249,9 @@ msgid "The number to be rounded up."
 msgstr "Bilangan yang akan dibulatkan."
 
 #: sc/inc/scfuncs.hrc:1400
-#, fuzzy
 msgctxt "SC_OPCODE_ROUND_UP"
 msgid "Count"
-msgstr "Count"
+msgstr "Hitung"
 
 #: sc/inc/scfuncs.hrc:1401
 msgctxt "SC_OPCODE_ROUND_UP"
@@ -6302,7 +6264,6 @@ msgid "Rounds a number down to a predefined accuracy."
 msgstr "Membulatkan bilangan ke bawah hingga derajat ketelitian tertentu."
 
 #: sc/inc/scfuncs.hrc:1408
-#, fuzzy
 msgctxt "SC_OPCODE_ROUND_DOWN"
 msgid "Number"
 msgstr "Angka"
@@ -6313,10 +6274,9 @@ msgid "The number to be rounded down."
 msgstr "Bilangan yang akan dibulatkan."
 
 #: sc/inc/scfuncs.hrc:1410
-#, fuzzy
 msgctxt "SC_OPCODE_ROUND_DOWN"
 msgid "Count"
-msgstr "Count"
+msgstr "Hitung"
 
 #: sc/inc/scfuncs.hrc:1411
 msgctxt "SC_OPCODE_ROUND_DOWN"
@@ -6677,10 +6637,9 @@ msgid "Array multiplication. Returns the product of two arrays."
 msgstr "Perkalian larik. Mengembalikan hasil kali dua larik."
 
 #: sc/inc/scfuncs.hrc:1556
-#, fuzzy
 msgctxt "SC_OPCODE_MAT_MULT"
 msgid "Array 1"
-msgstr "Larik "
+msgstr "Larik 1"
 
 #: sc/inc/scfuncs.hrc:1557
 msgctxt "SC_OPCODE_MAT_MULT"
@@ -6688,10 +6647,9 @@ msgid "The first array for the array product."
 msgstr "Larik pertama yang akan dikalikan."
 
 #: sc/inc/scfuncs.hrc:1558
-#, fuzzy
 msgctxt "SC_OPCODE_MAT_MULT"
 msgid "Array 2"
-msgstr "Larik "
+msgstr "Larik 2"
 
 #: sc/inc/scfuncs.hrc:1559
 msgctxt "SC_OPCODE_MAT_MULT"
@@ -6754,10 +6712,9 @@ msgid "Array "
 msgstr "Larik "
 
 #: sc/inc/scfuncs.hrc:1591
-#, fuzzy
 msgctxt "SC_OPCODE_SUM_PRODUCT"
 msgid "Array 1, array 2, ... are arrays whose arguments are to be multiplied."
-msgstr "Larik 1, larik 2,... hingga 30 larik yang isinya akan dihitung perkaliannya."
+msgstr "Larik 1, larik 2, ... adalah larik-larik yang argumennya akan dikalikan."
 
 #: sc/inc/scfuncs.hrc:1597
 msgctxt "SC_OPCODE_SUM_X2MY2"
@@ -6765,10 +6722,9 @@ msgid "Returns the sum of the difference of squares of two arrays."
 msgstr "Mengembalikan jumlah selisih kuadrat dua larik."
 
 #: sc/inc/scfuncs.hrc:1598
-#, fuzzy
 msgctxt "SC_OPCODE_SUM_X2MY2"
 msgid "Array X"
-msgstr "Larik "
+msgstr "Larik X"
 
 #: sc/inc/scfuncs.hrc:1599
 msgctxt "SC_OPCODE_SUM_X2MY2"
@@ -6776,10 +6732,9 @@ msgid "First array where the square of the arguments are totalled."
 msgstr "Larik pertama yang kuadrat isinya akan dijumlahkan."
 
 #: sc/inc/scfuncs.hrc:1600
-#, fuzzy
 msgctxt "SC_OPCODE_SUM_X2MY2"
 msgid "Array Y"
-msgstr "Larik "
+msgstr "Larik Y"
 
 #: sc/inc/scfuncs.hrc:1601
 msgctxt "SC_OPCODE_SUM_X2MY2"
@@ -6792,10 +6747,9 @@ msgid "Returns the total of the square sum of two arrays."
 msgstr "Mengembalikan total jumlah kuadrat dua larik."
 
 #: sc/inc/scfuncs.hrc:1608
-#, fuzzy
 msgctxt "SC_OPCODE_SUM_X2DY2"
 msgid "Array X"
-msgstr "Larik "
+msgstr "Larik X"
 
 #: sc/inc/scfuncs.hrc:1609
 msgctxt "SC_OPCODE_SUM_X2DY2"
@@ -6803,10 +6757,9 @@ msgid "First array where the square of the arguments are totalled."
 msgstr "Larik pertama yang kuadrat isinya akan dijumlahkan."
 
 #: sc/inc/scfuncs.hrc:1610
-#, fuzzy
 msgctxt "SC_OPCODE_SUM_X2DY2"
 msgid "Array Y"
-msgstr "Larik "
+msgstr "Larik Y"
 
 #: sc/inc/scfuncs.hrc:1611
 msgctxt "SC_OPCODE_SUM_X2DY2"
@@ -6819,10 +6772,9 @@ msgid "Returns the sum of squares of differences of two arrays."
 msgstr "Mengembalikan jumlah kuadrat selisih dua larik."
 
 #: sc/inc/scfuncs.hrc:1618
-#, fuzzy
 msgctxt "SC_OPCODE_SUM_XMY2"
 msgid "Array X"
-msgstr "Larik "
+msgstr "Larik X"
 
 #: sc/inc/scfuncs.hrc:1619
 msgctxt "SC_OPCODE_SUM_XMY2"
@@ -6830,10 +6782,9 @@ msgid "First array for forming argument differences."
 msgstr "Larik pertama untuk menentukan selisih isi."
 
 #: sc/inc/scfuncs.hrc:1620
-#, fuzzy
 msgctxt "SC_OPCODE_SUM_XMY2"
 msgid "Array Y"
-msgstr "Larik "
+msgstr "Larik Y"
 
 #: sc/inc/scfuncs.hrc:1621
 msgctxt "SC_OPCODE_SUM_XMY2"
@@ -6856,10 +6807,9 @@ msgid "The array of the data."
 msgstr "Larik yang berisi data."
 
 #: sc/inc/scfuncs.hrc:1630
-#, fuzzy
 msgctxt "SC_OPCODE_FREQUENCY"
 msgid "Classes"
-msgstr "kelas"
+msgstr "Kelas"
 
 #: sc/inc/scfuncs.hrc:1631
 msgctxt "SC_OPCODE_FREQUENCY"
@@ -6872,10 +6822,9 @@ msgid "Calculates parameters of the linear regression as an array."
 msgstr "Menghitung parameter regresi linier suatu larik."
 
 #: sc/inc/scfuncs.hrc:1638
-#, fuzzy
 msgctxt "SC_OPCODE_LINEST"
 msgid "Data Y"
-msgstr "Bilah Data"
+msgstr "Data Y"
 
 #: sc/inc/scfuncs.hrc:1639
 msgctxt "SC_OPCODE_LINEST"
@@ -6883,10 +6832,9 @@ msgid "The Y data array."
 msgstr "Larik data Y."
 
 #: sc/inc/scfuncs.hrc:1640
-#, fuzzy
 msgctxt "SC_OPCODE_LINEST"
 msgid "Data X"
-msgstr "Bilah Data"
+msgstr "Data X"
 
 #: sc/inc/scfuncs.hrc:1641
 msgctxt "SC_OPCODE_LINEST"
@@ -6894,10 +6842,9 @@ msgid "The X data array."
 msgstr "Larik data X."
 
 #: sc/inc/scfuncs.hrc:1642
-#, fuzzy
 msgctxt "SC_OPCODE_LINEST"
 msgid "Linear type"
-msgstr "Jenis_linier"
+msgstr "Tipe linier"
 
 #: sc/inc/scfuncs.hrc:1643
 msgctxt "SC_OPCODE_LINEST"
@@ -6905,7 +6852,6 @@ msgid "If type = 0 the linears will be calculated through the zero point, or els
 msgstr "Jika tipe = 0 linier akan dihitung melalui titik nol, selain itu adalah linier yang bergerak."
 
 #: sc/inc/scfuncs.hrc:1644
-#, fuzzy
 msgctxt "SC_OPCODE_LINEST"
 msgid "Stats"
 msgstr "Status"
@@ -6921,10 +6867,9 @@ msgid "Calculates the parameters of the exponential regression curve as an array
 msgstr "Menghitung parameter kurva regresi eksponensial sebagai sebuah larik."
 
 #: sc/inc/scfuncs.hrc:1652
-#, fuzzy
 msgctxt "SC_OPCODE_LOGEST"
 msgid "Data Y"
-msgstr "Bilah Data"
+msgstr "Data Y"
 
 #: sc/inc/scfuncs.hrc:1653
 msgctxt "SC_OPCODE_LOGEST"
@@ -6932,10 +6877,9 @@ msgid "The Y data array."
 msgstr "Larik data Y."
 
 #: sc/inc/scfuncs.hrc:1654
-#, fuzzy
 msgctxt "SC_OPCODE_LOGEST"
 msgid "Data X"
-msgstr "Bilah Data"
+msgstr "Data X"
 
 #: sc/inc/scfuncs.hrc:1655
 msgctxt "SC_OPCODE_LOGEST"
@@ -6943,10 +6887,9 @@ msgid "The X data array."
 msgstr "Larik data X."
 
 #: sc/inc/scfuncs.hrc:1656
-#, fuzzy
 msgctxt "SC_OPCODE_LOGEST"
 msgid "Function type"
-msgstr "Jenis_fungsi"
+msgstr "Tipe Fungsi"
 
 #: sc/inc/scfuncs.hrc:1657
 msgctxt "SC_OPCODE_LOGEST"
@@ -6954,7 +6897,6 @@ msgid "If type = 0 then the functions will be calculated in the form of y=m^x, o
 msgstr "Jika tipe = 0 maka fungsi akan dihitung dalam bentuk y=m^x, atau juga fungsi y=b*m^x."
 
 #: sc/inc/scfuncs.hrc:1658
-#, fuzzy
 msgctxt "SC_OPCODE_LOGEST"
 msgid "Stats"
 msgstr "Status"
@@ -6970,10 +6912,9 @@ msgid "Calculates points along a regression line."
 msgstr "Menghitung titik-titik sepanjang baris regresi."
 
 #: sc/inc/scfuncs.hrc:1666
-#, fuzzy
 msgctxt "SC_OPCODE_TREND"
 msgid "Data Y"
-msgstr "Bilah Data"
+msgstr "Data Y"
 
 #: sc/inc/scfuncs.hrc:1667
 msgctxt "SC_OPCODE_TREND"
@@ -6981,10 +6922,9 @@ msgid "The Y data array."
 msgstr "Larik data Y."
 
 #: sc/inc/scfuncs.hrc:1668
-#, fuzzy
 msgctxt "SC_OPCODE_TREND"
 msgid "Data X"
-msgstr "Bilah Data"
+msgstr "Data X"
 
 #: sc/inc/scfuncs.hrc:1669
 msgctxt "SC_OPCODE_TREND"
@@ -6992,10 +6932,9 @@ msgid "The X data array as the basis for the regression."
 msgstr "Larik data X sebagai basis regresi."
 
 #: sc/inc/scfuncs.hrc:1670
-#, fuzzy
 msgctxt "SC_OPCODE_TREND"
 msgid "New data X"
-msgstr "data_X baru"
+msgstr "Data X baru"
 
 #: sc/inc/scfuncs.hrc:1671
 msgctxt "SC_OPCODE_TREND"
@@ -7003,10 +6942,9 @@ msgid "The array of X data for recalculating the values."
 msgstr "Larik data X untuk menghitung ulang nilai."
 
 #: sc/inc/scfuncs.hrc:1672
-#, fuzzy
 msgctxt "SC_OPCODE_TREND"
 msgid "Linear type"
-msgstr "Jenis_linier"
+msgstr "Tipe linear"
 
 #: sc/inc/scfuncs.hrc:1673
 msgctxt "SC_OPCODE_TREND"
@@ -7019,10 +6957,9 @@ msgid "Calculates points on the exponential regression function."
 msgstr "Menghitung titik-titik pada fungsi regresi eksponensial."
 
 #: sc/inc/scfuncs.hrc:1680
-#, fuzzy
 msgctxt "SC_OPCODE_GROWTH"
 msgid "Data Y"
-msgstr "Bilah Data"
+msgstr "Data Y"
 
 #: sc/inc/scfuncs.hrc:1681
 msgctxt "SC_OPCODE_GROWTH"
@@ -7030,10 +6967,9 @@ msgid "The Y data array."
 msgstr "Larik data Y."
 
 #: sc/inc/scfuncs.hrc:1682
-#, fuzzy
 msgctxt "SC_OPCODE_GROWTH"
 msgid "Data X"
-msgstr "Bilah Data"
+msgstr "Data X"
 
 #: sc/inc/scfuncs.hrc:1683
 msgctxt "SC_OPCODE_GROWTH"
@@ -7041,10 +6977,9 @@ msgid "The X data array as the basis for the regression."
 msgstr "Larik data X sebagai basis regresi."
 
 #: sc/inc/scfuncs.hrc:1684
-#, fuzzy
 msgctxt "SC_OPCODE_GROWTH"
 msgid "New data X"
-msgstr "data_X baru"
+msgstr "Data X baru"
 
 #: sc/inc/scfuncs.hrc:1685
 msgctxt "SC_OPCODE_GROWTH"
@@ -7052,10 +6987,9 @@ msgid "The array of X data for recalculating the values."
 msgstr "Larik data X untuk menghitung ulang nilai."
 
 #: sc/inc/scfuncs.hrc:1686
-#, fuzzy
 msgctxt "SC_OPCODE_GROWTH"
 msgid "Function type"
-msgstr "Jenis_fungsi"
+msgstr "Tipe Fungsi"
 
 #: sc/inc/scfuncs.hrc:1687
 msgctxt "SC_OPCODE_GROWTH"
@@ -7068,16 +7002,14 @@ msgid "Counts how many numbers are in the list of arguments."
 msgstr "Mencacah banyaknya bilangan dalam senarai argumen."
 
 #: sc/inc/scfuncs.hrc:1694
-#, fuzzy
 msgctxt "SC_OPCODE_COUNT"
 msgid "Value "
-msgstr "Nilai 1"
+msgstr "Nilai "
 
 #: sc/inc/scfuncs.hrc:1695
-#, fuzzy
 msgctxt "SC_OPCODE_COUNT"
 msgid "Value 1, value 2, ... are arguments containing different data types but where only numbers are counted."
-msgstr "Nilai 1, nilai 2,... di antara 1 hingga 30 argumen mengandung jenis data yang berbeda, tapi hanya bilangan utuh yang dicacah."
+msgstr "Nilai 1, nilai 2,... adalah argumen yang berisi tipe data yang berbeda namun hanya bilangan saja yang dihitung."
 
 #: sc/inc/scfuncs.hrc:1701
 msgctxt "SC_OPCODE_COUNT_2"
@@ -7085,16 +7017,14 @@ msgid "Counts how many values are in the list of arguments."
 msgstr "Mencacah banyaknya nilai dalam senarai argumen."
 
 #: sc/inc/scfuncs.hrc:1702
-#, fuzzy
 msgctxt "SC_OPCODE_COUNT_2"
 msgid "Value "
-msgstr "Nilai 1"
+msgstr "Nilai "
 
 #: sc/inc/scfuncs.hrc:1703
-#, fuzzy
 msgctxt "SC_OPCODE_COUNT_2"
 msgid "Value 1, value 2, ... are arguments representing the values to be counted."
-msgstr "Nilai 1, nilai 2, ... adalah 1 - 30 argumen yang mewakili nilai yang akan dicacah."
+msgstr "Nilai 1, nilai 2, ... adalah argumen yang mewakili nilai yang akan dihitung."
 
 #: sc/inc/scfuncs.hrc:1709
 msgctxt "SC_OPCODE_MAX"
@@ -7107,10 +7037,9 @@ msgid "Number "
 msgstr "Bilangan "
 
 #: sc/inc/scfuncs.hrc:1711
-#, fuzzy
 msgctxt "SC_OPCODE_MAX"
 msgid "Number 1, number 2, ... are numerical arguments for which the largest number is to be determined."
-msgstr "Bilangan 1, bilangan 2, ... adalah 1 - 30 argumen numerik yang bilangan terbesarnya perlu ditentukan."
+msgstr "Bilangan 1, bilangan 2, ... adalah argumen numerik yang mana bilangan terbesarnya akan ditentukan."
 
 #: sc/inc/scfuncs.hrc:1717
 msgctxt "SC_OPCODE_MAX_A"
@@ -7118,16 +7047,14 @@ msgid "Returns the maximum value in a list of arguments. Text is evaluated as Ze
 msgstr "Mengembalikan nilai maksimum dalam senarai argumen. Teks diterjemahkan sama dengan nol."
 
 #: sc/inc/scfuncs.hrc:1718
-#, fuzzy
 msgctxt "SC_OPCODE_MAX_A"
 msgid "Value "
-msgstr "Nilai 1"
+msgstr "Nilai "
 
 #: sc/inc/scfuncs.hrc:1719
-#, fuzzy
 msgctxt "SC_OPCODE_MAX_A"
 msgid "Value 1, value 2,    are arguments whose largest value is to be determined."
-msgstr "Nilai 1, nilai 2, ... adalah 1 - 30 argumen yang nilai terbesarnya akan ditentukan."
+msgstr "Nilai 1, nilai 2,    adalah argumen yang mana bilangan terbesarnya akan ditentukan."
 
 #: sc/inc/scfuncs.hrc:1725
 msgctxt "SC_OPCODE_MIN"
@@ -7140,10 +7067,9 @@ msgid "Number "
 msgstr "Bilangan "
 
 #: sc/inc/scfuncs.hrc:1727
-#, fuzzy
 msgctxt "SC_OPCODE_MIN"
 msgid "Number 1, number 2, ... are numerical arguments for which the smallest number is to be determined."
-msgstr "Bilangan 1, bilangan 2, ... adalah 1-30 argumen numerik yang bilangan terkecilnya belum ditentukan."
+msgstr "Bilangan 1, bilangan 2, ... adalah argumen numerik yang mana bilangan terkecilnya akan ditentukan."
 
 #: sc/inc/scfuncs.hrc:1733
 msgctxt "SC_OPCODE_MIN_A"
@@ -7151,16 +7077,14 @@ msgid "Returns the smallest value in a list of arguments. Text is evaluated as z
 msgstr "Mengembalikan nilai terkecil dalam senarai variabel. Teks dianggap nol."
 
 #: sc/inc/scfuncs.hrc:1734
-#, fuzzy
 msgctxt "SC_OPCODE_MIN_A"
 msgid "Value "
-msgstr "Nilai 1"
+msgstr "Nilai "
 
 #: sc/inc/scfuncs.hrc:1735
-#, fuzzy
 msgctxt "SC_OPCODE_MIN_A"
 msgid "Value 1; value 2;... are arguments whose smallest number is to be determined."
-msgstr "Nilai 1; nilai 2;... adalah 1 hingga 30 variabel yang nilai terkecilny ingin dicari."
+msgstr "Nilai 1; nilai 2;... adalah argumen yang mana bilangan terkecilnya akan ditentukan."
 
 #: sc/inc/scfuncs.hrc:1741
 msgctxt "SC_OPCODE_VAR"
@@ -7173,10 +7097,9 @@ msgid "Number "
 msgstr "Bilangan "
 
 #: sc/inc/scfuncs.hrc:1743
-#, fuzzy
 msgctxt "SC_OPCODE_VAR"
 msgid "Number 1, number 2, ... are numerical arguments which portray a sample of a population."
-msgstr "Bilangan 1, bilangan 2, ... adalah 1 sampai 254 argumen numerik yang memotret suatu cuplikan."
+msgstr "Bilangan 1, bilangan 2, ... adalah argumen numerik yang menggambarkan sampel dari suatu populasi."
 
 #: sc/inc/scfuncs.hrc:1749
 msgctxt "SC_OPCODE_VAR_S"
@@ -7189,10 +7112,9 @@ msgid "Number "
 msgstr "Bilangan "
 
 #: sc/inc/scfuncs.hrc:1751
-#, fuzzy
 msgctxt "SC_OPCODE_VAR_S"
 msgid "Number 1, number 2, ... are numerical arguments which portray a sample of a population."
-msgstr "Bilangan 1, bilangan 2, ... adalah 1 sampai 254 argumen numerik yang memotret suatu cuplikan."
+msgstr "Bilangan 1, bilangan 2, ... adalah argumen numerik yang menggambarkan sampel dari suatu populasi."
 
 #: sc/inc/scfuncs.hrc:1757
 msgctxt "SC_OPCODE_VAR_A"
@@ -7200,16 +7122,14 @@ msgid "Returns the variance based on a sample. Text is evaluated as zero."
 msgstr "Mengembalikan varians berdasar suatu sampel. Teks dianggap nol."
 
 #: sc/inc/scfuncs.hrc:1758
-#, fuzzy
 msgctxt "SC_OPCODE_VAR_A"
 msgid "Value "
-msgstr "Nilai 1"
+msgstr "Nilai "
 
 #: sc/inc/scfuncs.hrc:1759
-#, fuzzy
 msgctxt "SC_OPCODE_VAR_A"
 msgid "Value 1; value 2; ... are arguments representing a sample taken from a basic total population."
-msgstr "Nilai 1; nilai 2;... adalah 1 hingga 30 variabel yang menyatakan suatu sampel dari populasi basis total."
+msgstr "Nilai 1; nilai 2; ... adalah argumen yang mewakili suatu sampel yang diambil dari populasi dasar total."
 
 #: sc/inc/scfuncs.hrc:1765
 msgctxt "SC_OPCODE_VAR_P"
@@ -7222,10 +7142,9 @@ msgid "Number "
 msgstr "Bilangan "
 
 #: sc/inc/scfuncs.hrc:1767
-#, fuzzy
 msgctxt "SC_OPCODE_VAR_P"
 msgid "Number 1, number 2, ... are numerical arguments which represent a population."
-msgstr "Bilangan 1, bilangan 2, ... adalah 1 sampai 254 argumen numerik yang memotret suatu cuplikan."
+msgstr "Bilangan 1, bilangan 2, ... adalah argumen numerik yang mewakili suatu populasi."
 
 #: sc/inc/scfuncs.hrc:1773
 msgctxt "SC_OPCODE_VAR_P_MS"
@@ -7238,10 +7157,9 @@ msgid "Number "
 msgstr "Bilangan "
 
 #: sc/inc/scfuncs.hrc:1775
-#, fuzzy
 msgctxt "SC_OPCODE_VAR_P_MS"
 msgid "Number 1, number 2, ... are numerical arguments which represent a population."
-msgstr "Bilangan 1, bilangan 2, ... adalah 1 sampai 254 argumen numerik yang memotret suatu cuplikan."
+msgstr "Bilangan 1, bilangan 2, ... adalah argumen numerik yang mewakili suatu populasi."
 
 #: sc/inc/scfuncs.hrc:1781
 msgctxt "SC_OPCODE_VAR_P_A"
@@ -7249,16 +7167,14 @@ msgid "Returns the variance based on the entire population. Text is evaluated as
 msgstr "Mengembalikan varians berdasarkan seluruh populasi. Teks dianggap nol."
 
 #: sc/inc/scfuncs.hrc:1782
-#, fuzzy
 msgctxt "SC_OPCODE_VAR_P_A"
 msgid "Value "
-msgstr "Nilai 1"
+msgstr "Nilai "
 
 #: sc/inc/scfuncs.hrc:1783
-#, fuzzy
 msgctxt "SC_OPCODE_VAR_P_A"
 msgid "Value 1; value 2;... are arguments representing a population."
-msgstr "Nilai 1; nilai 2;... adalah 1 hingga 30 variabel yang menyatakan populasi."
+msgstr "Nilai 1; nilai 2;... adalah argumen yang mewakili suatu populasi."
 
 #: sc/inc/scfuncs.hrc:1789
 msgctxt "SC_OPCODE_ST_DEV"
@@ -7271,10 +7187,9 @@ msgid "Number "
 msgstr "Bilangan "
 
 #: sc/inc/scfuncs.hrc:1791
-#, fuzzy
 msgctxt "SC_OPCODE_ST_DEV"
 msgid "Number 1, number 2, ... are numerical arguments which portray a sample of a population."
-msgstr "Bilangan 1, bilangan 2, ... adalah 1 sampai 254 argumen numerik yang memotret suatu cuplikan."
+msgstr "Bilangan 1, bilangan 2, ... adalah argumen numerik yang menggambarkan sampel dari suatu populasi."
 
 #: sc/inc/scfuncs.hrc:1797
 msgctxt "SC_OPCODE_ST_DEV_S"
@@ -7287,10 +7202,9 @@ msgid "Number "
 msgstr "Bilangan "
 
 #: sc/inc/scfuncs.hrc:1799
-#, fuzzy
 msgctxt "SC_OPCODE_ST_DEV_S"
 msgid "Number 1, number 2, ... are numerical arguments which portray a sample of a population."
-msgstr "Bilangan 1, bilangan 2, ... adalah 1 sampai 254 argumen numerik yang memotret suatu cuplikan."
+msgstr "Bilangan 1, bilangan 2, ... adalah argumen numerik yang menggambarkan sampel dari suatu populasi."
 
 #: sc/inc/scfuncs.hrc:1805
 msgctxt "SC_OPCODE_ST_DEV_A"
@@ -7298,16 +7212,14 @@ msgid "Returns the standard deviation based on a sample. Text is evaluated as ze
 msgstr "Mengembalikan deviasi standar berdasarkan suatu sampel. Teks dianggap nol."
 
 #: sc/inc/scfuncs.hrc:1806
-#, fuzzy
 msgctxt "SC_OPCODE_ST_DEV_A"
 msgid "Value "
-msgstr "Nilai 1"
+msgstr "Nilai "
 
 #: sc/inc/scfuncs.hrc:1807
-#, fuzzy
 msgctxt "SC_OPCODE_ST_DEV_A"
 msgid "Value 1; value 2; ... are arguments representing a sample taken from a basic total population."
-msgstr "Nilai 1; nilai 2;... adalah 1 hingga 30 variabel yang menyatakan suatu sampel dari populasi basis total."
+msgstr "Nilai 1; nilai 2; ... adalah argumen yang mewakili suatu sampel yang diambil dari populasi dasar total."
 
 #: sc/inc/scfuncs.hrc:1813
 msgctxt "SC_OPCODE_ST_DEV_P"
@@ -7320,10 +7232,9 @@ msgid "Number "
 msgstr "Bilangan "
 
 #: sc/inc/scfuncs.hrc:1815
-#, fuzzy
 msgctxt "SC_OPCODE_ST_DEV_P"
 msgid "Number 1, number 2, ... are numerical arguments which portray a population."
-msgstr "Bilangan 1, bilangan 2, ... adalah 1 sampai 254 argumen numerik yang memotret suatu cuplikan."
+msgstr "Bilangan 1, bilangan 2, ... adalah argumen numerik yang menggambarkan sampel dari suatu populasi."
 
 #: sc/inc/scfuncs.hrc:1821
 msgctxt "SC_OPCODE_ST_DEV_P_MS"
@@ -7336,10 +7247,9 @@ msgid "Number "
 msgstr "Bilangan "
 
 #: sc/inc/scfuncs.hrc:1823
-#, fuzzy
 msgctxt "SC_OPCODE_ST_DEV_P_MS"
 msgid "Number 1, number 2, ... are numerical arguments which portray a population."
-msgstr "Bilangan 1, bilangan 2, ... adalah 1 sampai 254 argumen numerik yang memotret suatu cuplikan."
+msgstr "Bilangan 1, bilangan 2, ... adalah argumen numerik yang menggambarkan sampel dari suatu populasi."
 
 #: sc/inc/scfuncs.hrc:1829
 msgctxt "SC_OPCODE_ST_DEV_P_A"
@@ -7347,16 +7257,14 @@ msgid "Returns the standard deviation based on the entire population. Text is ev
 msgstr "Mengembalikan deviasi standar berdasarkan keseluruhan populasi. Teks dianggap nol."
 
 #: sc/inc/scfuncs.hrc:1830
-#, fuzzy
 msgctxt "SC_OPCODE_ST_DEV_P_A"
 msgid "Value "
-msgstr "Nilai 1"
+msgstr "Nilai "
 
 #: sc/inc/scfuncs.hrc:1831
-#, fuzzy
 msgctxt "SC_OPCODE_ST_DEV_P_A"
 msgid "Value 1; value 2;... are arguments corresponding to a population."
-msgstr "Nilai 1; nilai 2;... adalah 1 hingga 30 variabel yang terkait suatu populasi."
+msgstr "Nilai 1; nilai 2;... adalah argumen yang terkait dengan populasi."
 
 #: sc/inc/scfuncs.hrc:1837
 msgctxt "SC_OPCODE_AVERAGE"
@@ -7369,10 +7277,9 @@ msgid "Number "
 msgstr "Bilangan "
 
 #: sc/inc/scfuncs.hrc:1839
-#, fuzzy
 msgctxt "SC_OPCODE_AVERAGE"
 msgid "Number 1, number 2;...are numeric arguments representing a population sample."
-msgstr "Bilangan 1, bilangan 2,... adalah 1 hingga 30 argumen yang menyatakan sampel populasi."
+msgstr "Bilangan 1, bilangan 2;...adalah argumen numerik yang mewakili sampel populasi."
 
 #: sc/inc/scfuncs.hrc:1845
 msgctxt "SC_OPCODE_AVERAGE_A"
@@ -7380,16 +7287,14 @@ msgid "Returns the average value for a sample. Text is evaluated as zero."
 msgstr "Mengembalikan rerata untuk sampel. Teks dihitung sama dengan nol."
 
 #: sc/inc/scfuncs.hrc:1846
-#, fuzzy
 msgctxt "SC_OPCODE_AVERAGE_A"
 msgid "Value "
-msgstr "Nilai 1"
+msgstr "Nilai "
 
 #: sc/inc/scfuncs.hrc:1847
-#, fuzzy
 msgctxt "SC_OPCODE_AVERAGE_A"
 msgid "Value 1; value 2; ... are arguments representing a sample taken from a basic total population."
-msgstr "Nilai 1; nilai 2;... adalah 1 hingga 30 variabel yang menyatakan suatu sampel dari populasi basis total."
+msgstr "Nilai 1; nilai 2; ... adalah argumen yang mewakili suatu sampel yang diambil dari populasi dasar total."
 
 #: sc/inc/scfuncs.hrc:1853
 msgctxt "SC_OPCODE_DEV_SQ"
@@ -7402,10 +7307,9 @@ msgid "Number "
 msgstr "Bilangan "
 
 #: sc/inc/scfuncs.hrc:1855
-#, fuzzy
 msgctxt "SC_OPCODE_DEV_SQ"
 msgid "Number 1, number 2, ... are numerical arguments which portray a sample."
-msgstr "Bilangan 1, bilangan 2, ... adalah 1 sampai 254 argumen numerik yang memotret suatu cuplikan."
+msgstr "Bilangan 1, bilangan 2, ... adalah argumen numerik yang menggambarkan suatu sampel."
 
 #: sc/inc/scfuncs.hrc:1861
 msgctxt "SC_OPCODE_AVE_DEV"
@@ -7418,10 +7322,9 @@ msgid "Number "
 msgstr "Bilangan "
 
 #: sc/inc/scfuncs.hrc:1863
-#, fuzzy
 msgctxt "SC_OPCODE_AVE_DEV"
 msgid "Number 1, number 2;...are numerical arguments representing a sample."
-msgstr "Bilangan 1, bilangan 2, ... adalah 1 sampai 254 argumen numerik yang memotret suatu cuplikan."
+msgstr "Bilangan 1, bilangan 2;...adalah argumen numerik yang mewakili sampel."
 
 #: sc/inc/scfuncs.hrc:1869
 msgctxt "SC_OPCODE_SKEW"
@@ -7434,10 +7337,9 @@ msgid "Number "
 msgstr "Bilangan "
 
 #: sc/inc/scfuncs.hrc:1871
-#, fuzzy
 msgctxt "SC_OPCODE_SKEW"
 msgid "Number 1, number 2, ... are numerical arguments portraying a sample of the distribution."
-msgstr "Bilangan 1, bilangan 2, ... 1..30 argumen numerik yang merupakan potret sampel distribusi.."
+msgstr "Bilangan 1, bilangan 2, ... adalah argumen numerik yang menggambarkan sampel distribusi."
 
 #: sc/inc/scfuncs.hrc:1877
 msgctxt "SC_OPCODE_SKEWP"
@@ -7450,10 +7352,9 @@ msgid "Number "
 msgstr "Bilangan "
 
 #: sc/inc/scfuncs.hrc:1879
-#, fuzzy
 msgctxt "SC_OPCODE_SKEWP"
 msgid "Number 1, number 2, ... are numerical arguments portraying the population."
-msgstr "Bilangan 1, bilangan 2, ... adalah 1 sampai 254 argumen numerik yang memotret suatu cuplikan."
+msgstr "Bilangan 1, bilangan 2, ... adalah argumen numerik yang menggambarkan populasi."
 
 #: sc/inc/scfuncs.hrc:1885
 msgctxt "SC_OPCODE_KURT"
@@ -7466,10 +7367,9 @@ msgid "Number "
 msgstr "Bilangan "
 
 #: sc/inc/scfuncs.hrc:1887
-#, fuzzy
 msgctxt "SC_OPCODE_KURT"
 msgid "Number 1, number 2, ... are numerical arguments, representing a sample of the distribution."
-msgstr "Bilangan 1, bilangan 2, ... 1..30 argumen numerik yang mewakili sampel distribusi."
+msgstr "Bilangan 1, bilangan 2, ... adalah argumen numerik, yang mewakili sampel distribusi."
 
 #: sc/inc/scfuncs.hrc:1893
 msgctxt "SC_OPCODE_GEO_MEAN"
@@ -7482,10 +7382,9 @@ msgid "Number "
 msgstr "Bilangan "
 
 #: sc/inc/scfuncs.hrc:1895
-#, fuzzy
 msgctxt "SC_OPCODE_GEO_MEAN"
 msgid "Number 1, number 2, ... are numerical arguments which portray a sample."
-msgstr "Bilangan 1, bilangan 2, ... adalah 1 sampai 254 argumen numerik yang memotret suatu cuplikan."
+msgstr "Bilangan 1, bilangan 2, ... adalah argumen numerik yang menggambarkan sampel."
 
 #: sc/inc/scfuncs.hrc:1901
 msgctxt "SC_OPCODE_HAR_MEAN"
@@ -7498,10 +7397,9 @@ msgid "Number "
 msgstr "Bilangan "
 
 #: sc/inc/scfuncs.hrc:1903
-#, fuzzy
 msgctxt "SC_OPCODE_HAR_MEAN"
 msgid "Number 1, number 2, ... are numerical arguments which portray a sample."
-msgstr "Bilangan 1, bilangan 2, ... adalah 1 sampai 254 argumen numerik yang memotret suatu cuplikan."
+msgstr "Bilangan 1, bilangan 2, ... adalah argumen numerik yang menggambarkan sampel."
 
 #: sc/inc/scfuncs.hrc:1909
 msgctxt "SC_OPCODE_MODAL_VALUE"
@@ -7514,10 +7412,9 @@ msgid "Number "
 msgstr "Bilangan "
 
 #: sc/inc/scfuncs.hrc:1911
-#, fuzzy
 msgctxt "SC_OPCODE_MODAL_VALUE"
 msgid "Number 1, number 2, ... are numerical arguments which portray a sample."
-msgstr "Bilangan 1, bilangan 2, ... adalah 1 sampai 254 argumen numerik yang memotret suatu cuplikan."
+msgstr "Bilangan 1, bilangan 2, ... adalah argumen numerik yang menggambarkan sampel."
 
 #: sc/inc/scfuncs.hrc:1917
 msgctxt "SC_OPCODE_MODAL_VALUE_MS"
@@ -7530,10 +7427,9 @@ msgid "Number "
 msgstr "Bilangan "
 
 #: sc/inc/scfuncs.hrc:1919
-#, fuzzy
 msgctxt "SC_OPCODE_MODAL_VALUE_MS"
 msgid "Number 1, number 2, ... are numerical arguments which portray a sample."
-msgstr "Bilangan 1, bilangan 2, ... adalah 1 sampai 254 argumen numerik yang memotret suatu cuplikan."
+msgstr "Bilangan 1, bilangan 2, ... adalah argumen numerik yang menggambarkan sampel."
 
 #: sc/inc/scfuncs.hrc:1925
 msgctxt "SC_OPCODE_MODAL_VALUE_MULTI"
@@ -7561,10 +7457,9 @@ msgid "Number "
 msgstr "Bilangan "
 
 #: sc/inc/scfuncs.hrc:1935
-#, fuzzy
 msgctxt "SC_OPCODE_MEDIAN"
 msgid "Number 1, number 2, ... are numerical arguments which portray a sample."
-msgstr "Bilangan 1, bilangan 2, ... adalah 1 sampai 254 argumen numerik yang memotret suatu cuplikan."
+msgstr "Bilangan 1, bilangan 2, ... adalah argumen numerik yang menggambarkan sampel."
 
 #: sc/inc/scfuncs.hrc:1941
 msgctxt "SC_OPCODE_PERCENTILE"
@@ -7732,10 +7627,9 @@ msgid "The array of the data in the sample."
 msgstr "Larik data dalam sampel."
 
 #: sc/inc/scfuncs.hrc:2004
-#, fuzzy
 msgctxt "SC_OPCODE_LARGE"
 msgid "Rank c"
-msgstr "Rank_c"
+msgstr "Pangkat c"
 
 #: sc/inc/scfuncs.hrc:2005
 msgctxt "SC_OPCODE_LARGE"
@@ -7758,10 +7652,9 @@ msgid "The array of the data in the sample."
 msgstr "Larik data dalam sampel."
 
 #: sc/inc/scfuncs.hrc:2014
-#, fuzzy
 msgctxt "SC_OPCODE_SMALL"
 msgid "Rank c"
-msgstr "Rank_c"
+msgstr "Pangkat c"
 
 #: sc/inc/scfuncs.hrc:2015
 msgctxt "SC_OPCODE_SMALL"
@@ -8054,10 +7947,9 @@ msgid "Returns the probability of a trial result using binomial distribution."
 msgstr "Mengembalikan probabilitas hasil uji menggunakan distribusi binomial."
 
 #: sc/inc/scfuncs.hrc:2118
-#, fuzzy
 msgctxt "SC_OPCODE_B"
 msgid "Trials"
-msgstr "uji"
+msgstr "Uji coba"
 
 #: sc/inc/scfuncs.hrc:2119
 msgctxt "SC_OPCODE_B"
@@ -8087,7 +7979,7 @@ msgstr "Batas bawah jumlah pengujian."
 #: sc/inc/scfuncs.hrc:2124
 msgctxt "SC_OPCODE_B"
 msgid "T 2"
-msgstr ""
+msgstr "T 2"
 
 #: sc/inc/scfuncs.hrc:2125
 msgctxt "SC_OPCODE_B"
@@ -8100,7 +7992,6 @@ msgid "Values of the distribution function for a standard normal distribution."
 msgstr "Nilai distribusi fungsi untuk distribusi normal standar."
 
 #: sc/inc/scfuncs.hrc:2132
-#, fuzzy
 msgctxt "SC_OPCODE_PHI"
 msgid "Number"
 msgstr "Angka"
@@ -8171,10 +8062,9 @@ msgid "The number of successes in a series of trials."
 msgstr "Banyaknya sukses pada sederet pengujian."
 
 #: sc/inc/scfuncs.hrc:2166
-#, fuzzy
 msgctxt "SC_OPCODE_BINOM_DIST"
 msgid "Trials"
-msgstr "uji"
+msgstr "Uji coba"
 
 #: sc/inc/scfuncs.hrc:2167
 msgctxt "SC_OPCODE_BINOM_DIST"
@@ -8217,10 +8107,9 @@ msgid "The number of successes in a series of trials."
 msgstr "Banyaknya sukses pada sederet pengujian."
 
 #: sc/inc/scfuncs.hrc:2180
-#, fuzzy
 msgctxt "SC_OPCODE_BINOM_DIST_MS"
 msgid "Trials"
-msgstr "uji"
+msgstr "Uji coba"
 
 #: sc/inc/scfuncs.hrc:2181
 msgctxt "SC_OPCODE_BINOM_DIST_MS"
@@ -8333,10 +8222,9 @@ msgid "Returns the smallest value for which the cumulative binomial distribution
 msgstr "Mengembalikan nilai terkecil dimana distribusi binomial kumulatif lebih dari atau sama dengan suatu nilai kriteria."
 
 #: sc/inc/scfuncs.hrc:2218
-#, fuzzy
 msgctxt "SC_OPCODE_CRIT_BINOM"
 msgid "Trials"
-msgstr "uji"
+msgstr "Uji coba"
 
 #: sc/inc/scfuncs.hrc:2219
 msgctxt "SC_OPCODE_CRIT_BINOM"
@@ -8369,10 +8257,9 @@ msgid "Returns the smallest value for which the cumulative binomial distribution
 msgstr "Mengembalikan nilai terkecil dimana distribusi binomial kumulatif lebih dari atau sama dengan suatu nilai kriteria."
 
 #: sc/inc/scfuncs.hrc:2230
-#, fuzzy
 msgctxt "SC_OPCODE_BINOM_INV"
 msgid "Trials"
-msgstr "uji"
+msgstr "Uji coba"
 
 #: sc/inc/scfuncs.hrc:2231
 msgctxt "SC_OPCODE_BINOM_INV"
@@ -8565,7 +8452,6 @@ msgid "Values of the inverse normal distribution."
 msgstr "Nilai invers distribusi normal."
 
 #: sc/inc/scfuncs.hrc:2294
-#, fuzzy
 msgctxt "SC_OPCODE_NORM_INV"
 msgid "Number"
 msgstr "Angka"
@@ -8601,7 +8487,6 @@ msgid "Values of the inverse normal distribution."
 msgstr "Nilai invers distribusi normal."
 
 #: sc/inc/scfuncs.hrc:2306
-#, fuzzy
 msgctxt "SC_OPCODE_NORM_INV_MS"
 msgid "Number"
 msgstr "Angka"
@@ -8677,7 +8562,6 @@ msgid "Values of the inverse standard normal distribution."
 msgstr "NIlai invers distribusi normal standar."
 
 #: sc/inc/scfuncs.hrc:2336
-#, fuzzy
 msgctxt "SC_OPCODE_S_NORM_INV"
 msgid "Number"
 msgstr "Angka"
@@ -8693,7 +8577,6 @@ msgid "Values of the inverse standard normal distribution."
 msgstr "NIlai invers distribusi normal standar."
 
 #: sc/inc/scfuncs.hrc:2344
-#, fuzzy
 msgctxt "SC_OPCODE_S_NORM_INV_MS"
 msgid "Number"
 msgstr "Angka"
@@ -8764,10 +8647,9 @@ msgid "The value for which the log normal distribution is to be calculated."
 msgstr "Bilangan yang akan dihitung distribusi normal log-nya."
 
 #: sc/inc/scfuncs.hrc:2368
-#, fuzzy
 msgctxt "SC_OPCODE_LOG_NORM_DIST_MS"
 msgid "Mean"
-msgstr "Mean"
+msgstr "Rerata"
 
 #: sc/inc/scfuncs.hrc:2369
 msgctxt "SC_OPCODE_LOG_NORM_DIST_MS"
@@ -8800,7 +8682,6 @@ msgid "Values of the inverse of the lognormal distribution."
 msgstr "Nilai invers distribusi log-normal."
 
 #: sc/inc/scfuncs.hrc:2380
-#, fuzzy
 msgctxt "SC_OPCODE_LOG_INV"
 msgid "Number"
 msgstr "Angka"
@@ -8836,7 +8717,6 @@ msgid "Values of the inverse of the lognormal distribution."
 msgstr "Nilai invers distribusi log-normal."
 
 #: sc/inc/scfuncs.hrc:2392
-#, fuzzy
 msgctxt "SC_OPCODE_LOG_INV_MS"
 msgid "Number"
 msgstr "Angka"
@@ -9147,7 +9027,6 @@ msgid "Values of the beta distribution."
 msgstr "Nilai distribusi beta."
 
 #: sc/inc/scfuncs.hrc:2506
-#, fuzzy
 msgctxt "SC_OPCODE_BETA_DIST"
 msgid "Number"
 msgstr "Angka"
@@ -9213,7 +9092,6 @@ msgid "Values of the inverse beta distribution."
 msgstr "Nilai invers distribusi beta."
 
 #: sc/inc/scfuncs.hrc:2524
-#, fuzzy
 msgctxt "SC_OPCODE_BETA_INV"
 msgid "Number"
 msgstr "Angka"
@@ -9269,7 +9147,6 @@ msgid "Values of the beta distribution."
 msgstr "Nilai distribusi beta."
 
 #: sc/inc/scfuncs.hrc:2540
-#, fuzzy
 msgctxt "SC_OPCODE_BETA_DIST_MS"
 msgid "Number"
 msgstr "Angka"
@@ -9335,7 +9212,6 @@ msgid "Values of the inverse beta distribution."
 msgstr "Nilai invers distribusi beta."
 
 #: sc/inc/scfuncs.hrc:2558
-#, fuzzy
 msgctxt "SC_OPCODE_BETA_INV_MS"
 msgid "Number"
 msgstr "Angka"
@@ -9491,10 +9367,9 @@ msgid "The number of successes in the sample."
 msgstr "Jumlah sukses dalam sampel."
 
 #: sc/inc/scfuncs.hrc:2604
-#, fuzzy
 msgctxt "SC_OPCODE_HYP_GEOM_DIST"
 msgid "N sample"
-msgstr "n_sample"
+msgstr "N sampel"
 
 #: sc/inc/scfuncs.hrc:2605
 msgctxt "SC_OPCODE_HYP_GEOM_DIST"
@@ -9502,10 +9377,9 @@ msgid "The size of the sample."
 msgstr "Ukuran sampel."
 
 #: sc/inc/scfuncs.hrc:2606
-#, fuzzy
 msgctxt "SC_OPCODE_HYP_GEOM_DIST"
 msgid "Successes"
-msgstr "sukses"
+msgstr "Keberhasilan"
 
 #: sc/inc/scfuncs.hrc:2607
 msgctxt "SC_OPCODE_HYP_GEOM_DIST"
@@ -9513,10 +9387,9 @@ msgid "The number of successes in the population."
 msgstr "Jumlah sukses dalam populasi."
 
 #: sc/inc/scfuncs.hrc:2608
-#, fuzzy
 msgctxt "SC_OPCODE_HYP_GEOM_DIST"
 msgid "N population"
-msgstr "n_populasi"
+msgstr "N populasi"
 
 #: sc/inc/scfuncs.hrc:2609
 msgctxt "SC_OPCODE_HYP_GEOM_DIST"
@@ -9549,10 +9422,9 @@ msgid "The number of successes in the sample."
 msgstr "Jumlah sukses dalam sampel."
 
 #: sc/inc/scfuncs.hrc:2620
-#, fuzzy
 msgctxt "SC_OPCODE_HYP_GEOM_DIST_MS"
 msgid "N sample"
-msgstr "n_sample"
+msgstr "N sampel"
 
 #: sc/inc/scfuncs.hrc:2621
 msgctxt "SC_OPCODE_HYP_GEOM_DIST_MS"
@@ -9560,10 +9432,9 @@ msgid "The size of the sample."
 msgstr "Ukuran sampel."
 
 #: sc/inc/scfuncs.hrc:2622
-#, fuzzy
 msgctxt "SC_OPCODE_HYP_GEOM_DIST_MS"
 msgid "Successes"
-msgstr "sukses"
+msgstr "Keberhasilan"
 
 #: sc/inc/scfuncs.hrc:2623
 msgctxt "SC_OPCODE_HYP_GEOM_DIST_MS"
@@ -9571,10 +9442,9 @@ msgid "The number of successes in the population."
 msgstr "Jumlah sukses dalam populasi."
 
 #: sc/inc/scfuncs.hrc:2624
-#, fuzzy
 msgctxt "SC_OPCODE_HYP_GEOM_DIST_MS"
 msgid "N population"
-msgstr "n_populasi"
+msgstr "N populasi"
 
 #: sc/inc/scfuncs.hrc:2625
 msgctxt "SC_OPCODE_HYP_GEOM_DIST_MS"
@@ -9607,10 +9477,9 @@ msgid "The value for which the T distribution is to be calculated."
 msgstr "Bilangan yang akan dihitung distribusi T-nya."
 
 #: sc/inc/scfuncs.hrc:2636
-#, fuzzy
 msgctxt "SC_OPCODE_T_DIST"
 msgid "Degrees freedom"
-msgstr "Derajat Kebebasan"
+msgstr "Derajat kebebasan"
 
 #: sc/inc/scfuncs.hrc:2637
 msgctxt "SC_OPCODE_T_DIST"
@@ -9618,7 +9487,6 @@ msgid "The degrees of freedom of the T distribution."
 msgstr "Derajat kebebasan distribusi T."
 
 #: sc/inc/scfuncs.hrc:2638
-#, fuzzy
 msgctxt "SC_OPCODE_T_DIST"
 msgid "Mode"
 msgstr "Modus"
@@ -9644,7 +9512,6 @@ msgid "The value for which the T distribution is to be calculated."
 msgstr "Bilangan yang akan dihitung distribusi T-nya."
 
 #: sc/inc/scfuncs.hrc:2648
-#, fuzzy
 msgctxt "SC_OPCODE_T_DIST_2T"
 msgid "Degrees freedom"
 msgstr "Derajat Kebebasan"
@@ -9670,7 +9537,6 @@ msgid "The value for which the T distribution is to be calculated."
 msgstr "Bilangan yang akan dihitung distribusi T-nya."
 
 #: sc/inc/scfuncs.hrc:2658
-#, fuzzy
 msgctxt "SC_OPCODE_T_DIST_MS"
 msgid "Degrees freedom"
 msgstr "Derajat Kebebasan"
@@ -9706,10 +9572,9 @@ msgid "The value for which the T distribution is to be calculated."
 msgstr "Bilangan yang akan dihitung distribusi T-nya."
 
 #: sc/inc/scfuncs.hrc:2670
-#, fuzzy
 msgctxt "SC_OPCODE_T_DIST_RT"
 msgid "Degrees freedom"
-msgstr "Derajat Kebebasan"
+msgstr "Derajat kebebasan"
 
 #: sc/inc/scfuncs.hrc:2671
 msgctxt "SC_OPCODE_T_DIST_RT"
@@ -9722,7 +9587,6 @@ msgid "Values of the inverse t-distribution."
 msgstr "Nilai invers distribusi T."
 
 #: sc/inc/scfuncs.hrc:2678
-#, fuzzy
 msgctxt "SC_OPCODE_T_INV"
 msgid "Number"
 msgstr "Angka"
@@ -9733,7 +9597,6 @@ msgid "The probability value for which the inverse T distribution is to be calcu
 msgstr "Nilai probabilitas yang akan dihitung invers distribusi T-nya"
 
 #: sc/inc/scfuncs.hrc:2680
-#, fuzzy
 msgctxt "SC_OPCODE_T_INV"
 msgid "Degrees freedom"
 msgstr "Derajat Kebebasan"
@@ -9749,7 +9612,6 @@ msgid "Values of the left-tailed inverse t-distribution."
 msgstr "Nilai dari distribusi-t ekor kiri."
 
 #: sc/inc/scfuncs.hrc:2688
-#, fuzzy
 msgctxt "SC_OPCODE_T_INV_MS"
 msgid "Number"
 msgstr "Angka"
@@ -9760,7 +9622,6 @@ msgid "The probability value for which the inverse T distribution is to be calcu
 msgstr "Nilai probabilitas yang akan dihitung invers distribusi T-nya"
 
 #: sc/inc/scfuncs.hrc:2690
-#, fuzzy
 msgctxt "SC_OPCODE_T_INV_MS"
 msgid "Degrees freedom"
 msgstr "Derajat Kebebasan"
@@ -9776,7 +9637,6 @@ msgid "Values of the two-tailed inverse t-distribution."
 msgstr "Nilai dari invers distribusi-t ekor ganda."
 
 #: sc/inc/scfuncs.hrc:2698
-#, fuzzy
 msgctxt "SC_OPCODE_T_INV_2T"
 msgid "Number"
 msgstr "Angka"
@@ -9787,7 +9647,6 @@ msgid "The probability value for which the inverse T distribution is to be calcu
 msgstr "Nilai probabilitas yang akan dihitung invers distribusi T-nya"
 
 #: sc/inc/scfuncs.hrc:2700
-#, fuzzy
 msgctxt "SC_OPCODE_T_INV_2T"
 msgid "Degrees freedom"
 msgstr "Derajat Kebebasan"
@@ -9813,10 +9672,9 @@ msgid "The value for which the F distribution is to be calculated."
 msgstr "Bilangan yang akan dihitung distribusi F-nya."
 
 #: sc/inc/scfuncs.hrc:2710
-#, fuzzy
 msgctxt "SC_OPCODE_F_DIST"
 msgid "Degrees freedom 1"
-msgstr "Derajat Kebebasan"
+msgstr "Derajat Kebebasan 1"
 
 #: sc/inc/scfuncs.hrc:2711
 msgctxt "SC_OPCODE_F_DIST"
@@ -9824,10 +9682,9 @@ msgid "The degrees of freedom in the numerator of the F distribution."
 msgstr "Derajat kebebasan pembilang distribusi F."
 
 #: sc/inc/scfuncs.hrc:2712
-#, fuzzy
 msgctxt "SC_OPCODE_F_DIST"
 msgid "Degrees freedom 2"
-msgstr "Derajat Kebebasan"
+msgstr "Derajat kebebasan 2"
 
 #: sc/inc/scfuncs.hrc:2713
 msgctxt "SC_OPCODE_F_DIST"
@@ -9850,10 +9707,9 @@ msgid "The value for which the F distribution is to be calculated."
 msgstr "Bilangan yang akan dihitung distribusi F-nya."
 
 #: sc/inc/scfuncs.hrc:2722
-#, fuzzy
 msgctxt "SC_OPCODE_F_DIST_LT"
 msgid "Degrees freedom 1"
-msgstr "Derajat Kebebasan"
+msgstr "Derajat kebebasan 1"
 
 #: sc/inc/scfuncs.hrc:2723
 msgctxt "SC_OPCODE_F_DIST_LT"
@@ -9861,10 +9717,9 @@ msgid "The degrees of freedom in the numerator of the F distribution."
 msgstr "Derajat kebebasan pembilang distribusi F."
 
 #: sc/inc/scfuncs.hrc:2724
-#, fuzzy
 msgctxt "SC_OPCODE_F_DIST_LT"
 msgid "Degrees freedom 2"
-msgstr "Derajat Kebebasan"
+msgstr "Derajat kebebasan 2"
 
 #: sc/inc/scfuncs.hrc:2725
 msgctxt "SC_OPCODE_F_DIST_LT"
@@ -9897,10 +9752,9 @@ msgid "The value for which the F distribution is to be calculated."
 msgstr "Bilangan yang akan dihitung distribusi F-nya."
 
 #: sc/inc/scfuncs.hrc:2736
-#, fuzzy
 msgctxt "SC_OPCODE_F_DIST_RT"
 msgid "Degrees freedom 1"
-msgstr "Derajat Kebebasan"
+msgstr "Derajat kebebasan 1"
 
 #: sc/inc/scfuncs.hrc:2737
 msgctxt "SC_OPCODE_F_DIST_RT"
@@ -9908,10 +9762,9 @@ msgid "The degrees of freedom in the numerator of the F distribution."
 msgstr "Derajat kebebasan pembilang distribusi F."
 
 #: sc/inc/scfuncs.hrc:2738
-#, fuzzy
 msgctxt "SC_OPCODE_F_DIST_RT"
 msgid "Degrees freedom 2"
-msgstr "Derajat Kebebasan"
+msgstr "Derajat kebebasan 2"
 
 #: sc/inc/scfuncs.hrc:2739
 msgctxt "SC_OPCODE_F_DIST_RT"
@@ -9924,7 +9777,6 @@ msgid "Values of the inverse F distribution."
 msgstr "Nilai invers distribusi F."
 
 #: sc/inc/scfuncs.hrc:2746
-#, fuzzy
 msgctxt "SC_OPCODE_F_INV"
 msgid "Number"
 msgstr "Angka"
@@ -9935,10 +9787,9 @@ msgid "The probability value for which the inverse F distribution is to be calcu
 msgstr "Nilai probabilitas yang akan dihitung invers distribusi F-nya."
 
 #: sc/inc/scfuncs.hrc:2748
-#, fuzzy
 msgctxt "SC_OPCODE_F_INV"
 msgid "Degrees freedom 1"
-msgstr "Derajat Kebebasan"
+msgstr "Derajat kebebasan 1"
 
 #: sc/inc/scfuncs.hrc:2749
 msgctxt "SC_OPCODE_F_INV"
@@ -9946,10 +9797,9 @@ msgid "The degrees of freedom in the numerator of the F distribution."
 msgstr "Derajat kebebasan pembilang distribusi F."
 
 #: sc/inc/scfuncs.hrc:2750
-#, fuzzy
 msgctxt "SC_OPCODE_F_INV"
 msgid "Degrees freedom 2"
-msgstr "Derajat Kebebasan"
+msgstr "Derajat kebebasan 2"
 
 #: sc/inc/scfuncs.hrc:2751
 msgctxt "SC_OPCODE_F_INV"
@@ -9962,7 +9812,6 @@ msgid "Values of the inverse left tail F distribution."
 msgstr "Nilai invers distribusi F ekor kiri."
 
 #: sc/inc/scfuncs.hrc:2758
-#, fuzzy
 msgctxt "SC_OPCODE_F_INV_LT"
 msgid "Number"
 msgstr "Angka"
@@ -9973,10 +9822,9 @@ msgid "The probability value for which the inverse F distribution is to be calcu
 msgstr "Nilai probabilitas yang akan dihitung invers distribusi F-nya."
 
 #: sc/inc/scfuncs.hrc:2760
-#, fuzzy
 msgctxt "SC_OPCODE_F_INV_LT"
 msgid "Degrees freedom 1"
-msgstr "Derajat Kebebasan"
+msgstr "Derajat kebebasan 1"
 
 #: sc/inc/scfuncs.hrc:2761
 msgctxt "SC_OPCODE_F_INV_LT"
@@ -9984,10 +9832,9 @@ msgid "The degrees of freedom in the numerator of the F distribution."
 msgstr "Derajat kebebasan pembilang distribusi F."
 
 #: sc/inc/scfuncs.hrc:2762
-#, fuzzy
 msgctxt "SC_OPCODE_F_INV_LT"
 msgid "Degrees freedom 2"
-msgstr "Derajat Kebebasan"
+msgstr "Derajat kebebasan 2"
 
 #: sc/inc/scfuncs.hrc:2763
 msgctxt "SC_OPCODE_F_INV_LT"
@@ -10000,7 +9847,6 @@ msgid "Values of the inverse right tail F distribution."
 msgstr "Nilai invers distribusi F ekor kanan."
 
 #: sc/inc/scfuncs.hrc:2770
-#, fuzzy
 msgctxt "SC_OPCODE_F_INV_RT"
 msgid "Number"
 msgstr "Angka"
@@ -10011,10 +9857,9 @@ msgid "The probability value for which the inverse F distribution is to be calcu
 msgstr "Nilai probabilitas yang akan dihitung invers distribusi F-nya."
 
 #: sc/inc/scfuncs.hrc:2772
-#, fuzzy
 msgctxt "SC_OPCODE_F_INV_RT"
 msgid "Degrees freedom 1"
-msgstr "Derajat Kebebasan"
+msgstr "Derajat kebebasan 1"
 
 #: sc/inc/scfuncs.hrc:2773
 msgctxt "SC_OPCODE_F_INV_RT"
@@ -10022,10 +9867,9 @@ msgid "The degrees of freedom in the numerator of the F distribution."
 msgstr "Derajat kebebasan pembilang distribusi F."
 
 #: sc/inc/scfuncs.hrc:2774
-#, fuzzy
 msgctxt "SC_OPCODE_F_INV_RT"
 msgid "Degrees freedom 2"
-msgstr "Derajat Kebebasan"
+msgstr "Derajat kebebasan 2"
 
 #: sc/inc/scfuncs.hrc:2775
 msgctxt "SC_OPCODE_F_INV_RT"
@@ -10048,10 +9892,9 @@ msgid "The value for which the chi square distribution is to be calculated."
 msgstr "Bilangan yang akan dihitung nilai distribusi chi-nya."
 
 #: sc/inc/scfuncs.hrc:2784
-#, fuzzy
 msgctxt "SC_OPCODE_CHI_DIST"
 msgid "Degrees freedom"
-msgstr "Derajat Kebebasan"
+msgstr "Derajat kebebasan"
 
 #: sc/inc/scfuncs.hrc:2785
 msgctxt "SC_OPCODE_CHI_DIST"
@@ -10074,10 +9917,9 @@ msgid "The value for which the chi square distribution is to be calculated."
 msgstr "Bilangan yang akan dihitung nilai distribusi chi-nya."
 
 #: sc/inc/scfuncs.hrc:2794
-#, fuzzy
 msgctxt "SC_OPCODE_CHI_DIST_MS"
 msgid "Degrees freedom"
-msgstr "Derajat Kebebasan"
+msgstr "Derajat kebebasan"
 
 #: sc/inc/scfuncs.hrc:2795
 msgctxt "SC_OPCODE_CHI_DIST_MS"
@@ -10160,7 +10002,6 @@ msgid "Values of the inverse of CHIDIST(x; DegreesOfFreedom)."
 msgstr "Nilai dari inverse CHIDIST(x; DerajatKebebasan)."
 
 #: sc/inc/scfuncs.hrc:2829
-#, fuzzy
 msgctxt "SC_OPCODE_CHI_INV"
 msgid "Number"
 msgstr "Angka"
@@ -10171,10 +10012,9 @@ msgid "The probability value for which the inverse chi square distribution is to
 msgstr "Nilai probabilitas yang akan dihitung invers distribusi chi-nya."
 
 #: sc/inc/scfuncs.hrc:2831
-#, fuzzy
 msgctxt "SC_OPCODE_CHI_INV"
 msgid "Degrees freedom"
-msgstr "Derajat Kebebasan"
+msgstr "Derajat kebebasan"
 
 #: sc/inc/scfuncs.hrc:2832
 msgctxt "SC_OPCODE_CHI_INV"
@@ -10187,7 +10027,6 @@ msgid "Values of the inverse of CHIDIST(x; DegreesOfFreedom)."
 msgstr "Nilai dari inverse CHIDIST(x; DerajatKebebasan)."
 
 #: sc/inc/scfuncs.hrc:2840
-#, fuzzy
 msgctxt "SC_OPCODE_CHI_INV_MS"
 msgid "Number"
 msgstr "Angka"
@@ -10198,10 +10037,9 @@ msgid "The probability value for which the inverse chi square distribution is to
 msgstr "Nilai probabilitas yang akan dihitung invers distribusi chi-nya."
 
 #: sc/inc/scfuncs.hrc:2842
-#, fuzzy
 msgctxt "SC_OPCODE_CHI_INV_MS"
 msgid "Degrees freedom"
-msgstr "Derajat Kebebasan"
+msgstr "Derajat kebebasan"
 
 #: sc/inc/scfuncs.hrc:2843
 msgctxt "SC_OPCODE_CHI_INV_MS"
@@ -10274,10 +10112,9 @@ msgid "The value to be standardized."
 msgstr "Nilai yang akan dibakukan."
 
 #: sc/inc/scfuncs.hrc:2875
-#, fuzzy
 msgctxt "SC_OPCODE_STANDARD"
 msgid "Mean"
-msgstr "Mean"
+msgstr "Rerata"
 
 #: sc/inc/scfuncs.hrc:2876
 msgctxt "SC_OPCODE_STANDARD"
@@ -10300,10 +10137,9 @@ msgid "Returns the number of permutations for a given number of elements without
 msgstr "Mengembalikan nilai jumlah permutasi untuk sejumlah elemen tanpa pengulangan."
 
 #: sc/inc/scfuncs.hrc:2885
-#, fuzzy
 msgctxt "SC_OPCODE_PERMUT"
 msgid "Count 1"
-msgstr "Cacah_1"
+msgstr "Hitung 1"
 
 #: sc/inc/scfuncs.hrc:2886
 msgctxt "SC_OPCODE_PERMUT"
@@ -10311,10 +10147,9 @@ msgid "The total number of elements."
 msgstr "Jumlah total elemen."
 
 #: sc/inc/scfuncs.hrc:2887
-#, fuzzy
 msgctxt "SC_OPCODE_PERMUT"
 msgid "Count 2"
-msgstr "Cacah_2"
+msgstr "Hitung 2"
 
 #: sc/inc/scfuncs.hrc:2888
 msgctxt "SC_OPCODE_PERMUT"
@@ -10327,10 +10162,9 @@ msgid "Returns the number of permutations for a given number of objects (repetit
 msgstr "Mengembalikan jumlah permutasi untuk sejumlah objek (boleh ada pengulangan)"
 
 #: sc/inc/scfuncs.hrc:2895
-#, fuzzy
 msgctxt "SC_OPCODE_PERMUTATION_A"
 msgid "Count 1"
-msgstr "Cacah_1"
+msgstr "Hitung 1"
 
 #: sc/inc/scfuncs.hrc:2896
 msgctxt "SC_OPCODE_PERMUTATION_A"
@@ -10338,10 +10172,9 @@ msgid "The total number of elements."
 msgstr "Jumlah total elemen."
 
 #: sc/inc/scfuncs.hrc:2897
-#, fuzzy
 msgctxt "SC_OPCODE_PERMUTATION_A"
 msgid "Count 2"
-msgstr "Cacah_2"
+msgstr "Hitung 2"
 
 #: sc/inc/scfuncs.hrc:2898
 msgctxt "SC_OPCODE_PERMUTATION_A"
@@ -10529,10 +10362,9 @@ msgid "Returns the chi square independence test."
 msgstr "Mengembalikan uji kebabasan chi kuadrat."
 
 #: sc/inc/scfuncs.hrc:2965
-#, fuzzy
 msgctxt "SC_OPCODE_CHI_TEST"
 msgid "Data B"
-msgstr "Bilah Data"
+msgstr "Data B"
 
 #: sc/inc/scfuncs.hrc:2966
 msgctxt "SC_OPCODE_CHI_TEST"
@@ -10540,10 +10372,9 @@ msgid "The observed data array."
 msgstr "Larik data yang diamati."
 
 #: sc/inc/scfuncs.hrc:2967
-#, fuzzy
 msgctxt "SC_OPCODE_CHI_TEST"
 msgid "Data E"
-msgstr "Bilah Data"
+msgstr "Data E"
 
 #: sc/inc/scfuncs.hrc:2968
 msgctxt "SC_OPCODE_CHI_TEST"
@@ -10556,10 +10387,9 @@ msgid "Returns the chi square independence test."
 msgstr "Mengembalikan uji kebabasan chi kuadrat."
 
 #: sc/inc/scfuncs.hrc:2975
-#, fuzzy
 msgctxt "SC_OPCODE_CHI_TEST_MS"
 msgid "Data B"
-msgstr "Bilah Data"
+msgstr "Data B"
 
 #: sc/inc/scfuncs.hrc:2976
 msgctxt "SC_OPCODE_CHI_TEST_MS"
@@ -10567,10 +10397,9 @@ msgid "The observed data array."
 msgstr "Larik data yang diamati."
 
 #: sc/inc/scfuncs.hrc:2977
-#, fuzzy
 msgctxt "SC_OPCODE_CHI_TEST_MS"
 msgid "Data E"
-msgstr "Bilah Data"
+msgstr "Data E"
 
 #: sc/inc/scfuncs.hrc:2978
 msgctxt "SC_OPCODE_CHI_TEST_MS"
@@ -10583,10 +10412,9 @@ msgid "Calculates the F test."
 msgstr "Menghitung uji F."
 
 #: sc/inc/scfuncs.hrc:2985
-#, fuzzy
 msgctxt "SC_OPCODE_F_TEST"
 msgid "Data 1"
-msgstr "Tanggal"
+msgstr "Data 1"
 
 #: sc/inc/scfuncs.hrc:2986
 msgctxt "SC_OPCODE_F_TEST"
@@ -10594,10 +10422,9 @@ msgid "The first record array."
 msgstr "Larik rekaman pertama."
 
 #: sc/inc/scfuncs.hrc:2987
-#, fuzzy
 msgctxt "SC_OPCODE_F_TEST"
 msgid "Data 2"
-msgstr "Tanggal"
+msgstr "Data 2"
 
 #: sc/inc/scfuncs.hrc:2988
 msgctxt "SC_OPCODE_F_TEST"
@@ -10610,10 +10437,9 @@ msgid "Calculates the F test."
 msgstr "Menghitung uji F."
 
 #: sc/inc/scfuncs.hrc:2995
-#, fuzzy
 msgctxt "SC_OPCODE_F_TEST_MS"
 msgid "Data 1"
-msgstr "Tanggal"
+msgstr "Data 1"
 
 #: sc/inc/scfuncs.hrc:2996
 msgctxt "SC_OPCODE_F_TEST_MS"
@@ -10621,10 +10447,9 @@ msgid "The first record array."
 msgstr "Larik rekaman pertama."
 
 #: sc/inc/scfuncs.hrc:2997
-#, fuzzy
 msgctxt "SC_OPCODE_F_TEST_MS"
 msgid "Data 2"
-msgstr "Tanggal"
+msgstr "Data 2"
 
 #: sc/inc/scfuncs.hrc:2998
 msgctxt "SC_OPCODE_F_TEST_MS"
@@ -10637,10 +10462,9 @@ msgid "Calculates the T test."
 msgstr "Menghitung uji T."
 
 #: sc/inc/scfuncs.hrc:3005
-#, fuzzy
 msgctxt "SC_OPCODE_T_TEST"
 msgid "Data 1"
-msgstr "Tanggal"
+msgstr "Data 1"
 
 #: sc/inc/scfuncs.hrc:3006
 msgctxt "SC_OPCODE_T_TEST"
@@ -10648,10 +10472,9 @@ msgid "The first record array."
 msgstr "Larik rekaman pertama."
 
 #: sc/inc/scfuncs.hrc:3007
-#, fuzzy
 msgctxt "SC_OPCODE_T_TEST"
 msgid "Data 2"
-msgstr "Tanggal"
+msgstr "Data 2"
 
 #: sc/inc/scfuncs.hrc:3008
 msgctxt "SC_OPCODE_T_TEST"
@@ -10659,7 +10482,6 @@ msgid "The second record array."
 msgstr "Larik rekaman kedua."
 
 #: sc/inc/scfuncs.hrc:3009
-#, fuzzy
 msgctxt "SC_OPCODE_T_TEST"
 msgid "Mode"
 msgstr "Modus"
@@ -10667,7 +10489,7 @@ msgstr "Modus"
 #: sc/inc/scfuncs.hrc:3010
 msgctxt "SC_OPCODE_T_TEST"
 msgid "Mode specifies the number of distribution tails to return. 1 = one-tailed, 2 = two-tailed distribution"
-msgstr ""
+msgstr "Mode menyatakan banyaknya ekor distribusi yang akan dikembalikan. 1 = distribusi ekor tunggal, 2 = distribusi ekor ganda"
 
 #: sc/inc/scfuncs.hrc:3011
 msgctxt "SC_OPCODE_T_TEST"
@@ -10685,10 +10507,9 @@ msgid "Calculates the T test."
 msgstr "Menghitung uji T."
 
 #: sc/inc/scfuncs.hrc:3019
-#, fuzzy
 msgctxt "SC_OPCODE_T_TEST_MS"
 msgid "Data 1"
-msgstr "Tanggal"
+msgstr "Data 1"
 
 #: sc/inc/scfuncs.hrc:3020
 msgctxt "SC_OPCODE_T_TEST_MS"
@@ -10696,10 +10517,9 @@ msgid "The first record array."
 msgstr "Larik rekaman pertama."
 
 #: sc/inc/scfuncs.hrc:3021
-#, fuzzy
 msgctxt "SC_OPCODE_T_TEST_MS"
 msgid "Data 2"
-msgstr "Tanggal"
+msgstr "Data 2"
 
 #: sc/inc/scfuncs.hrc:3022
 msgctxt "SC_OPCODE_T_TEST_MS"
@@ -10707,15 +10527,14 @@ msgid "The second record array."
 msgstr "Larik rekaman kedua."
 
 #: sc/inc/scfuncs.hrc:3023
-#, fuzzy
 msgctxt "SC_OPCODE_T_TEST_MS"
 msgid "Mode"
-msgstr "Modus"
+msgstr "Mode"
 
 #: sc/inc/scfuncs.hrc:3024
 msgctxt "SC_OPCODE_T_TEST_MS"
 msgid "Mode specifies the number of distribution tails to return. 1 = one-tailed, 2 = two-tailed distribution"
-msgstr ""
+msgstr "Mode menyatakan banyaknya ekor distribusi yang akan dikembalikan. 1 = distribusi ekor tunggal, 2 = distribusi ekor ganda"
 
 #: sc/inc/scfuncs.hrc:3025
 msgctxt "SC_OPCODE_T_TEST_MS"
@@ -10733,10 +10552,9 @@ msgid "Returns the square of the Pearson product moment correlation coefficient.
 msgstr "Mengembalikan kuadrat koefisien korelasi momen produk Pearson."
 
 #: sc/inc/scfuncs.hrc:3033
-#, fuzzy
 msgctxt "SC_OPCODE_RSQ"
 msgid "Data Y"
-msgstr "Bilah Data"
+msgstr "Data Y"
 
 #: sc/inc/scfuncs.hrc:3034
 msgctxt "SC_OPCODE_RSQ"
@@ -10744,10 +10562,9 @@ msgid "The Y data array."
 msgstr "Larik data Y."
 
 #: sc/inc/scfuncs.hrc:3035
-#, fuzzy
 msgctxt "SC_OPCODE_RSQ"
 msgid "Data X"
-msgstr "Bilah Data"
+msgstr "Data X"
 
 #: sc/inc/scfuncs.hrc:3036
 msgctxt "SC_OPCODE_RSQ"
@@ -10760,10 +10577,9 @@ msgid "Returns the intercept of the linear regression line and the Y axis."
 msgstr "Mengembalikan titik potong garis regresi linier dengan sumbu Y."
 
 #: sc/inc/scfuncs.hrc:3043
-#, fuzzy
 msgctxt "SC_OPCODE_INTERCEPT"
 msgid "Data Y"
-msgstr "Bilah Data"
+msgstr "Data Y"
 
 #: sc/inc/scfuncs.hrc:3044
 msgctxt "SC_OPCODE_INTERCEPT"
@@ -10771,10 +10587,9 @@ msgid "The Y data array."
 msgstr "Larik data Y."
 
 #: sc/inc/scfuncs.hrc:3045
-#, fuzzy
 msgctxt "SC_OPCODE_INTERCEPT"
 msgid "Data X"
-msgstr "Bilah Data"
+msgstr "Data X"
 
 #: sc/inc/scfuncs.hrc:3046
 msgctxt "SC_OPCODE_INTERCEPT"
@@ -10787,10 +10602,9 @@ msgid "Returns the slope of the linear regression line."
 msgstr "Mengembalikan kemiringan garis regresi linier."
 
 #: sc/inc/scfuncs.hrc:3053
-#, fuzzy
 msgctxt "SC_OPCODE_SLOPE"
 msgid "Data Y"
-msgstr "Bilah Data"
+msgstr "Data Y"
 
 #: sc/inc/scfuncs.hrc:3054
 msgctxt "SC_OPCODE_SLOPE"
@@ -10798,10 +10612,9 @@ msgid "The Y data array."
 msgstr "Larik data Y."
 
 #: sc/inc/scfuncs.hrc:3055
-#, fuzzy
 msgctxt "SC_OPCODE_SLOPE"
 msgid "Data X"
-msgstr "Bilah Data"
+msgstr "Data X"
 
 #: sc/inc/scfuncs.hrc:3056
 msgctxt "SC_OPCODE_SLOPE"
@@ -10814,10 +10627,9 @@ msgid "Returns the standard error of the linear regression."
 msgstr "Mengembalikan kesalahan baku regresi linier."
 
 #: sc/inc/scfuncs.hrc:3063
-#, fuzzy
 msgctxt "SC_OPCODE_STEYX"
 msgid "Data Y"
-msgstr "Bilah Data"
+msgstr "Data Y"
 
 #: sc/inc/scfuncs.hrc:3064
 msgctxt "SC_OPCODE_STEYX"
@@ -10825,10 +10637,9 @@ msgid "The Y data array."
 msgstr "Larik data Y."
 
 #: sc/inc/scfuncs.hrc:3065
-#, fuzzy
 msgctxt "SC_OPCODE_STEYX"
 msgid "Data X"
-msgstr "Bilah Data"
+msgstr "Data X"
 
 #: sc/inc/scfuncs.hrc:3066
 msgctxt "SC_OPCODE_STEYX"
@@ -10841,10 +10652,9 @@ msgid "Returns the Pearson product moment correlation coefficient."
 msgstr "Mengembalikan koefisien korelasi momen produk Pearson."
 
 #: sc/inc/scfuncs.hrc:3073
-#, fuzzy
 msgctxt "SC_OPCODE_PEARSON"
 msgid "Data 1"
-msgstr "Tanggal"
+msgstr "Data 1"
 
 #: sc/inc/scfuncs.hrc:3074
 msgctxt "SC_OPCODE_PEARSON"
@@ -10852,10 +10662,9 @@ msgid "The first record array."
 msgstr "Larik rekaman pertama."
 
 #: sc/inc/scfuncs.hrc:3075
-#, fuzzy
 msgctxt "SC_OPCODE_PEARSON"
 msgid "Data 2"
-msgstr "Tanggal"
+msgstr "Data 2"
 
 #: sc/inc/scfuncs.hrc:3076
 msgctxt "SC_OPCODE_PEARSON"
@@ -10868,10 +10677,9 @@ msgid "Returns the correlation coefficient."
 msgstr "Mengembalikan koefisien korelasi."
 
 #: sc/inc/scfuncs.hrc:3083
-#, fuzzy
 msgctxt "SC_OPCODE_CORREL"
 msgid "Data 1"
-msgstr "Tanggal"
+msgstr "Data 1"
 
 #: sc/inc/scfuncs.hrc:3084
 msgctxt "SC_OPCODE_CORREL"
@@ -10879,10 +10687,9 @@ msgid "The first record array."
 msgstr "Larik rekaman pertama."
 
 #: sc/inc/scfuncs.hrc:3085
-#, fuzzy
 msgctxt "SC_OPCODE_CORREL"
 msgid "Data 2"
-msgstr "Tanggal"
+msgstr "Data 2"
 
 #: sc/inc/scfuncs.hrc:3086
 msgctxt "SC_OPCODE_CORREL"
@@ -10895,10 +10702,9 @@ msgid "Calculates the population covariance."
 msgstr "Menghitung kovariansi populasi."
 
 #: sc/inc/scfuncs.hrc:3093
-#, fuzzy
 msgctxt "SC_OPCODE_COVAR"
 msgid "Data 1"
-msgstr "Tanggal"
+msgstr "Data 1"
 
 #: sc/inc/scfuncs.hrc:3094
 msgctxt "SC_OPCODE_COVAR"
@@ -10906,10 +10712,9 @@ msgid "The first record array."
 msgstr "Larik rekaman pertama."
 
 #: sc/inc/scfuncs.hrc:3095
-#, fuzzy
 msgctxt "SC_OPCODE_COVAR"
 msgid "Data 2"
-msgstr "Tanggal"
+msgstr "Data 2"
 
 #: sc/inc/scfuncs.hrc:3096
 msgctxt "SC_OPCODE_COVAR"
@@ -10922,10 +10727,9 @@ msgid "Calculates the population covariance."
 msgstr "Menghitung kovariansi populasi."
 
 #: sc/inc/scfuncs.hrc:3103
-#, fuzzy
 msgctxt "SC_OPCODE_COVARIANCE_P"
 msgid "Data 1"
-msgstr "Tanggal"
+msgstr "Data 1"
 
 #: sc/inc/scfuncs.hrc:3104
 msgctxt "SC_OPCODE_COVARIANCE_P"
@@ -10933,10 +10737,9 @@ msgid "The first record array."
 msgstr "Larik rekaman pertama."
 
 #: sc/inc/scfuncs.hrc:3105
-#, fuzzy
 msgctxt "SC_OPCODE_COVARIANCE_P"
 msgid "Data 2"
-msgstr "Tanggal"
+msgstr "Data 2"
 
 #: sc/inc/scfuncs.hrc:3106
 msgctxt "SC_OPCODE_COVARIANCE_P"
@@ -10949,10 +10752,9 @@ msgid "Calculates the sample covariance."
 msgstr "Menghitung kovariansi cuplikan."
 
 #: sc/inc/scfuncs.hrc:3113
-#, fuzzy
 msgctxt "SC_OPCODE_COVARIANCE_S"
 msgid "Data 1"
-msgstr "Tanggal"
+msgstr "Data 1"
 
 #: sc/inc/scfuncs.hrc:3114
 msgctxt "SC_OPCODE_COVARIANCE_S"
@@ -10960,10 +10762,9 @@ msgid "The first record array."
 msgstr "Larik rekaman pertama."
 
 #: sc/inc/scfuncs.hrc:3115
-#, fuzzy
 msgctxt "SC_OPCODE_COVARIANCE_S"
 msgid "Data 2"
-msgstr "Tanggal"
+msgstr "Data 2"
 
 #: sc/inc/scfuncs.hrc:3116
 msgctxt "SC_OPCODE_COVARIANCE_S"
@@ -10986,10 +10787,9 @@ msgid "The X value for which the Y value on the regression linear is to be calcu
 msgstr "Nilai X yang akan dicari nilai Y yang bersesuaian pada garis regresi."
 
 #: sc/inc/scfuncs.hrc:3125
-#, fuzzy
 msgctxt "SC_OPCODE_FORECAST"
 msgid "Data Y"
-msgstr "Bilah Data"
+msgstr "Data Y"
 
 #: sc/inc/scfuncs.hrc:3126
 msgctxt "SC_OPCODE_FORECAST"
@@ -10997,10 +10797,9 @@ msgid "The Y data array."
 msgstr "Larik data Y."
 
 #: sc/inc/scfuncs.hrc:3127
-#, fuzzy
 msgctxt "SC_OPCODE_FORECAST"
 msgid "Data X"
-msgstr "Bilah Data"
+msgstr "Data X"
 
 #: sc/inc/scfuncs.hrc:3128
 msgctxt "SC_OPCODE_FORECAST"
@@ -11033,10 +10832,9 @@ msgid "The data array from which you want to forecast."
 msgstr "Larik data sumber ramalan Anda."
 
 #: sc/inc/scfuncs.hrc:3139
-#, fuzzy
 msgctxt "SC_OPCODE_FORECAST_ETS_ADD"
 msgid "Timeline"
-msgstr "alurwaktu"
+msgstr "Linimasa"
 
 #: sc/inc/scfuncs.hrc:3140
 msgctxt "SC_OPCODE_FORECAST_ETS_ADD"
@@ -11044,10 +10842,9 @@ msgid "The date or numeric array; a consistent step between values is needed."
 msgstr "Larik bilangan atau tanggal; diperlukan suatu jarak konsisten antara nilai-nilai."
 
 #: sc/inc/scfuncs.hrc:3141
-#, fuzzy
 msgctxt "SC_OPCODE_FORECAST_ETS_ADD"
 msgid "Period length"
-msgstr "lama perioda"
+msgstr "Lama periode"
 
 #: sc/inc/scfuncs.hrc:3142
 msgctxt "SC_OPCODE_FORECAST_ETS_ADD"
@@ -11055,10 +10852,9 @@ msgid "Number of Samples in Period (default 1); length of the seasonal pattern."
 msgstr "Banyaknya Sampel dalam Perioda (baku 1), lamanya pola musiman."
 
 #: sc/inc/scfuncs.hrc:3143
-#, fuzzy
 msgctxt "SC_OPCODE_FORECAST_ETS_ADD"
 msgid "Data completion"
-msgstr "pelengkapan data"
+msgstr "Perlengkapan data"
 
 #: sc/inc/scfuncs.hrc:3144
 msgctxt "SC_OPCODE_FORECAST_ETS_ADD"
@@ -11066,10 +10862,9 @@ msgid "Data completion (default 1); 0 treats missing points as zero, 1 interpola
 msgstr "Pelengkapan data (baku 1); 0 memperlakukan titik-titik yang hilang sebagai nol, 1 menginterpolasi."
 
 #: sc/inc/scfuncs.hrc:3145
-#, fuzzy
 msgctxt "SC_OPCODE_FORECAST_ETS_ADD"
 msgid "Aggregation"
-msgstr "agregasi"
+msgstr "Agregasi"
 
 #: sc/inc/scfuncs.hrc:3146
 msgctxt "SC_OPCODE_FORECAST_ETS_ADD"
@@ -11102,10 +10897,9 @@ msgid "The data array from which you want to forecast."
 msgstr "Larik data sumber ramalan Anda."
 
 #: sc/inc/scfuncs.hrc:3157
-#, fuzzy
 msgctxt "SC_OPCODE_FORECAST_ETS_MUL"
 msgid "Timeline"
-msgstr "alurwaktu"
+msgstr "Linimasa"
 
 #: sc/inc/scfuncs.hrc:3158
 msgctxt "SC_OPCODE_FORECAST_ETS_MUL"
@@ -11113,10 +10907,9 @@ msgid "The date or numeric array; a consistent step between values is needed."
 msgstr "Larik bilangan atau tanggal; diperlukan suatu jarak konsisten antara nilai-nilai."
 
 #: sc/inc/scfuncs.hrc:3159
-#, fuzzy
 msgctxt "SC_OPCODE_FORECAST_ETS_MUL"
 msgid "Period length"
-msgstr "lama perioda"
+msgstr "Lama periode"
 
 #: sc/inc/scfuncs.hrc:3160
 msgctxt "SC_OPCODE_FORECAST_ETS_MUL"
@@ -11124,10 +10917,9 @@ msgid "Number of Samples in Period (default 1); length of the seasonal pattern."
 msgstr "Banyaknya Sampel dalam Perioda (baku 1), lamanya pola musiman."
 
 #: sc/inc/scfuncs.hrc:3161
-#, fuzzy
 msgctxt "SC_OPCODE_FORECAST_ETS_MUL"
 msgid "Data completion"
-msgstr "pelengkapan data"
+msgstr "Perlengkapan data"
 
 #: sc/inc/scfuncs.hrc:3162
 msgctxt "SC_OPCODE_FORECAST_ETS_MUL"
@@ -11135,10 +10927,9 @@ msgid "Data completion (default 1); 0 treats missing points as zero, 1 interpola
 msgstr "Pelengkapan data (baku 1); 0 memperlakukan titik-titik yang hilang sebagai nol, 1 menginterpolasi."
 
 #: sc/inc/scfuncs.hrc:3163
-#, fuzzy
 msgctxt "SC_OPCODE_FORECAST_ETS_MUL"
 msgid "Aggregation"
-msgstr "agregasi"
+msgstr "Agregasi"
 
 #: sc/inc/scfuncs.hrc:3164
 msgctxt "SC_OPCODE_FORECAST_ETS_MUL"
@@ -11171,10 +10962,9 @@ msgid "The data array from which you want to forecast."
 msgstr "Larik data sumber ramalan Anda."
 
 #: sc/inc/scfuncs.hrc:3175
-#, fuzzy
 msgctxt "SC_OPCODE_FORECAST_ETS_PIA"
 msgid "Timeline"
-msgstr "alurwaktu"
+msgstr "Linimasa"
 
 #: sc/inc/scfuncs.hrc:3176
 msgctxt "SC_OPCODE_FORECAST_ETS_PIA"
@@ -11182,10 +10972,9 @@ msgid "The date or numeric array; a consistent step between values is needed."
 msgstr "Larik bilangan atau tanggal; diperlukan suatu jarak konsisten antara nilai-nilai."
 
 #: sc/inc/scfuncs.hrc:3177
-#, fuzzy
 msgctxt "SC_OPCODE_FORECAST_ETS_PIA"
 msgid "Confidence level"
-msgstr "tingkat kepercayaan"
+msgstr "Tingkat kepercayaan"
 
 #: sc/inc/scfuncs.hrc:3178
 #, c-format
@@ -11194,10 +10983,9 @@ msgid "Confidence level (default 0.95); value 0 to 1 (exclusive) for 0 to 100% c
 msgstr "Tingkat kepercayaan (baku 0,95); nilai 0 sampai 1 (eksklusif) untuk interval prediksi yang dihitung 0 sampai 100%."
 
 #: sc/inc/scfuncs.hrc:3179
-#, fuzzy
 msgctxt "SC_OPCODE_FORECAST_ETS_PIA"
 msgid "Period length"
-msgstr "lama perioda"
+msgstr "Lama periode"
 
 #: sc/inc/scfuncs.hrc:3180
 msgctxt "SC_OPCODE_FORECAST_ETS_PIA"
@@ -11205,10 +10993,9 @@ msgid "Number of Samples in Period (default 1); length of the seasonal pattern."
 msgstr "Banyaknya Sampel dalam Perioda (baku 1), lamanya pola musiman."
 
 #: sc/inc/scfuncs.hrc:3181
-#, fuzzy
 msgctxt "SC_OPCODE_FORECAST_ETS_PIA"
 msgid "Data completion"
-msgstr "pelengkapan data"
+msgstr "Pelengkapan data"
 
 #: sc/inc/scfuncs.hrc:3182
 msgctxt "SC_OPCODE_FORECAST_ETS_PIA"
@@ -11216,10 +11003,9 @@ msgid "Data completion (default 1); 0 treats missing points as zero, 1 interpola
 msgstr "Pelengkapan data (baku 1); 0 memperlakukan titik-titik yang hilang sebagai nol, 1 menginterpolasi."
 
 #: sc/inc/scfuncs.hrc:3183
-#, fuzzy
 msgctxt "SC_OPCODE_FORECAST_ETS_PIA"
 msgid "Aggregation"
-msgstr "agregasi"
+msgstr "Agregasi"
 
 #: sc/inc/scfuncs.hrc:3184
 msgctxt "SC_OPCODE_FORECAST_ETS_PIA"
@@ -11252,10 +11038,9 @@ msgid "The data array from which you want to forecast."
 msgstr "Larik data sumber ramalan Anda."
 
 #: sc/inc/scfuncs.hrc:3195
-#, fuzzy
 msgctxt "SC_OPCODE_FORECAST_ETS_PIM"
 msgid "Timeline"
-msgstr "alurwaktu"
+msgstr "Linimasa"
 
 #: sc/inc/scfuncs.hrc:3196
 msgctxt "SC_OPCODE_FORECAST_ETS_PIM"
@@ -11263,10 +11048,9 @@ msgid "The date or numeric array; a consistent step between values is needed."
 msgstr "Larik bilangan atau tanggal; diperlukan suatu jarak konsisten antara nilai-nilai."
 
 #: sc/inc/scfuncs.hrc:3197
-#, fuzzy
 msgctxt "SC_OPCODE_FORECAST_ETS_PIM"
 msgid "Confidence level"
-msgstr "tingkat kepercayaan"
+msgstr "Tingkat kepercayaan"
 
 #: sc/inc/scfuncs.hrc:3198
 #, c-format
@@ -11275,10 +11059,9 @@ msgid "Confidence level (default 0.95); value 0 to 1 (exclusive) for 0 to 100% c
 msgstr "Tingkat kepercayaan (baku 0,95); nilai 0 sampai 1 (eksklusif) untuk interval prediksi yang dihitung 0 sampai 100%."
 
 #: sc/inc/scfuncs.hrc:3199
-#, fuzzy
 msgctxt "SC_OPCODE_FORECAST_ETS_PIM"
 msgid "Period length"
-msgstr "lama perioda"
+msgstr "Lama periode"
 
 #: sc/inc/scfuncs.hrc:3200
 msgctxt "SC_OPCODE_FORECAST_ETS_PIM"
@@ -11286,10 +11069,9 @@ msgid "Number of Samples in Period (default 1); length of the seasonal pattern."
 msgstr "Banyaknya Sampel dalam Perioda (baku 1), lamanya pola musiman."
 
 #: sc/inc/scfuncs.hrc:3201
-#, fuzzy
 msgctxt "SC_OPCODE_FORECAST_ETS_PIM"
 msgid "Data completion"
-msgstr "pelengkapan data"
+msgstr "Pelengkapan data"
 
 #: sc/inc/scfuncs.hrc:3202
 msgctxt "SC_OPCODE_FORECAST_ETS_PIM"
@@ -11297,10 +11079,9 @@ msgid "Data completion (default 1); 0 treats missing points as zero, 1 interpola
 msgstr "Pelengkapan data (baku 1); 0 memperlakukan titik-titik yang hilang sebagai nol, 1 menginterpolasi."
 
 #: sc/inc/scfuncs.hrc:3203
-#, fuzzy
 msgctxt "SC_OPCODE_FORECAST_ETS_PIM"
 msgid "Aggregation"
-msgstr "agregasi"
+msgstr "Agregasi"
 
 #: sc/inc/scfuncs.hrc:3204
 msgctxt "SC_OPCODE_FORECAST_ETS_PIM"
@@ -11323,10 +11104,9 @@ msgid "The data array from which you want to forecast."
 msgstr "Larik data sumber ramalan Anda."
 
 #: sc/inc/scfuncs.hrc:3213
-#, fuzzy
 msgctxt "SC_OPCODE_FORECAST_ETS_SEA"
 msgid "Timeline"
-msgstr "alurwaktu"
+msgstr "Linimasa"
 
 #: sc/inc/scfuncs.hrc:3214
 msgctxt "SC_OPCODE_FORECAST_ETS_SEA"
@@ -11334,10 +11114,9 @@ msgid "The date or numeric array; a consistent step between values is needed."
 msgstr "Larik bilangan atau tanggal; diperlukan suatu jarak konsisten antara nilai-nilai."
 
 #: sc/inc/scfuncs.hrc:3215
-#, fuzzy
 msgctxt "SC_OPCODE_FORECAST_ETS_SEA"
 msgid "Data completion"
-msgstr "pelengkapan data"
+msgstr "Pelengkapan data"
 
 #: sc/inc/scfuncs.hrc:3216
 msgctxt "SC_OPCODE_FORECAST_ETS_SEA"
@@ -11345,10 +11124,9 @@ msgid "Data completion (default 1); 0 treats missing points as zero, 1 interpola
 msgstr "Pelengkapan data (baku 1); 0 memperlakukan titik-titik yang hilang sebagai nol, 1 menginterpolasi."
 
 #: sc/inc/scfuncs.hrc:3217
-#, fuzzy
 msgctxt "SC_OPCODE_FORECAST_ETS_SEA"
 msgid "Aggregation"
-msgstr "agregasi"
+msgstr "Agregasi"
 
 #: sc/inc/scfuncs.hrc:3218
 msgctxt "SC_OPCODE_FORECAST_ETS_SEA"
@@ -11371,10 +11149,9 @@ msgid "The data array from which you want to forecast."
 msgstr "Larik data sumber ramalan Anda."
 
 #: sc/inc/scfuncs.hrc:3227
-#, fuzzy
 msgctxt "SC_OPCODE_FORECAST_ETS_STA"
 msgid "Timeline"
-msgstr "alurwaktu"
+msgstr "Linimasa"
 
 #: sc/inc/scfuncs.hrc:3228
 msgctxt "SC_OPCODE_FORECAST_ETS_STA"
@@ -11382,10 +11159,9 @@ msgid "The date or numeric array; a consistent step between values is needed."
 msgstr "Larik bilangan atau tanggal; diperlukan suatu jarak konsisten antara nilai-nilai."
 
 #: sc/inc/scfuncs.hrc:3229
-#, fuzzy
 msgctxt "SC_OPCODE_FORECAST_ETS_STA"
 msgid "Statistic type"
-msgstr "tipe statistik"
+msgstr "Tipe statistik"
 
 #: sc/inc/scfuncs.hrc:3230
 msgctxt "SC_OPCODE_FORECAST_ETS_STA"
@@ -11393,10 +11169,9 @@ msgid "Value (1-9) or array of values, indicating which statistic will be return
 msgstr "Nilai (1-9) atau larik nilai, mengindikasikan statistik mana yang akan dikembalikan bagi ramalan yang dihitung"
 
 #: sc/inc/scfuncs.hrc:3231
-#, fuzzy
 msgctxt "SC_OPCODE_FORECAST_ETS_STA"
 msgid "Period length"
-msgstr "lama perioda"
+msgstr "Lama periode"
 
 #: sc/inc/scfuncs.hrc:3232
 msgctxt "SC_OPCODE_FORECAST_ETS_STA"
@@ -11404,10 +11179,9 @@ msgid "Number of Samples in Period (default 1); length of the seasonal pattern."
 msgstr "Banyaknya Sampel dalam Perioda (baku 1), lamanya pola musiman."
 
 #: sc/inc/scfuncs.hrc:3233
-#, fuzzy
 msgctxt "SC_OPCODE_FORECAST_ETS_STA"
 msgid "Data completion"
-msgstr "pelengkapan data"
+msgstr "Pelengkapan data"
 
 #: sc/inc/scfuncs.hrc:3234
 msgctxt "SC_OPCODE_FORECAST_ETS_STA"
@@ -11415,10 +11189,9 @@ msgid "Data completion (default 1); 0 treats missing points as zero, 1 interpola
 msgstr "Pelengkapan data (baku 1); 0 memperlakukan titik-titik yang hilang sebagai nol, 1 menginterpolasi."
 
 #: sc/inc/scfuncs.hrc:3235
-#, fuzzy
 msgctxt "SC_OPCODE_FORECAST_ETS_STA"
 msgid "Aggregation"
-msgstr "agregasi"
+msgstr "Agregasi"
 
 #: sc/inc/scfuncs.hrc:3236
 msgctxt "SC_OPCODE_FORECAST_ETS_STA"
@@ -11441,10 +11214,9 @@ msgid "The data array from which you want to forecast."
 msgstr "Larik data sumber ramalan Anda."
 
 #: sc/inc/scfuncs.hrc:3245
-#, fuzzy
 msgctxt "SC_OPCODE_FORECAST_ETS_STM"
 msgid "Timeline"
-msgstr "alurwaktu"
+msgstr "Linimasa"
 
 #: sc/inc/scfuncs.hrc:3246
 msgctxt "SC_OPCODE_FORECAST_ETS_STM"
@@ -11452,10 +11224,9 @@ msgid "The date or numeric array; a consistent step between values is needed."
 msgstr "Larik bilangan atau tanggal; diperlukan suatu jarak konsisten antara nilai-nilai."
 
 #: sc/inc/scfuncs.hrc:3247
-#, fuzzy
 msgctxt "SC_OPCODE_FORECAST_ETS_STM"
 msgid "Statistic type"
-msgstr "tipe statistik"
+msgstr "Tipe statistik"
 
 #: sc/inc/scfuncs.hrc:3248
 msgctxt "SC_OPCODE_FORECAST_ETS_STM"
@@ -11463,22 +11234,19 @@ msgid "Value (1-9) or array of values, indicating which statistic will be return
 msgstr "Nilai (1-9) atau larik nilai, mengindikasikan statistik mana yang akan dikembalikan bagi ramalan yang dihitung"
 
 #: sc/inc/scfuncs.hrc:3249
-#, fuzzy
 msgctxt "SC_OPCODE_FORECAST_ETS_STM"
 msgid "Period length"
-msgstr "lama perioda"
+msgstr "Lama periode"
 
 #: sc/inc/scfuncs.hrc:3250
-#, fuzzy
 msgctxt "SC_OPCODE_FORECAST_ETS_STM"
 msgid "Number of samples in period (default 1); length of the seasonal pattern."
-msgstr "Banyaknya Sampel dalam Perioda (baku 1), lamanya pola musiman."
+msgstr "Banyaknya sampel dalam periode (baku 1), lama pola musiman."
 
 #: sc/inc/scfuncs.hrc:3251
-#, fuzzy
 msgctxt "SC_OPCODE_FORECAST_ETS_STM"
 msgid "Data completion"
-msgstr "pelengkapan data"
+msgstr "Pelengkapan data"
 
 #: sc/inc/scfuncs.hrc:3252
 msgctxt "SC_OPCODE_FORECAST_ETS_STM"
@@ -11486,10 +11254,9 @@ msgid "Data completion (default 1); 0 treats missing points as zero, 1 interpola
 msgstr "Pelengkapan data (baku 1); 0 memperlakukan titik-titik yang hilang sebagai nol, 1 menginterpolasi."
 
 #: sc/inc/scfuncs.hrc:3253
-#, fuzzy
 msgctxt "SC_OPCODE_FORECAST_ETS_STM"
 msgid "Aggregation"
-msgstr "agregasi"
+msgstr "Agregasi"
 
 #: sc/inc/scfuncs.hrc:3254
 msgctxt "SC_OPCODE_FORECAST_ETS_STM"
@@ -11512,10 +11279,9 @@ msgid "The X value for which the Y value on the regression linear is to be calcu
 msgstr "Nilai X yang akan dicari nilai Y yang bersesuaian pada garis regresi."
 
 #: sc/inc/scfuncs.hrc:3263
-#, fuzzy
 msgctxt "SC_OPCODE_FORECAST_LIN"
 msgid "Data Y"
-msgstr "Bilah Data"
+msgstr "Data Y"
 
 #: sc/inc/scfuncs.hrc:3264
 msgctxt "SC_OPCODE_FORECAST_LIN"
@@ -11523,10 +11289,9 @@ msgid "The Y data array."
 msgstr "Larik data Y."
 
 #: sc/inc/scfuncs.hrc:3265
-#, fuzzy
 msgctxt "SC_OPCODE_FORECAST_LIN"
 msgid "Data X"
-msgstr "Bilah Data"
+msgstr "Data X"
 
 #: sc/inc/scfuncs.hrc:3266
 msgctxt "SC_OPCODE_FORECAST_LIN"
@@ -11579,10 +11344,9 @@ msgid "The reference style: 0 or FALSE means R1C1 style, any other value or omit
 msgstr "Gaya referensi: 0 atau FALSE berarti gaya R1C1, nilai lain atau diabaikan berarti gaya A1."
 
 #: sc/inc/scfuncs.hrc:3281
-#, fuzzy
 msgctxt "SC_OPCODE_ADDRESS"
 msgid "Sheet"
-msgstr "Lembar"
+msgstr "Lembar kerja"
 
 #: sc/inc/scfuncs.hrc:3282
 msgctxt "SC_OPCODE_ADDRESS"
@@ -11620,10 +11384,9 @@ msgid "The index of the value (1..30) selected."
 msgstr "Indeks dari nilai (1..30) yang dipilih."
 
 #: sc/inc/scfuncs.hrc:3299
-#, fuzzy
 msgctxt "SC_OPCODE_CHOOSE"
 msgid "Value "
-msgstr "Nilai 1"
+msgstr "Nilai "
 
 #: sc/inc/scfuncs.hrc:3300
 msgctxt "SC_OPCODE_CHOOSE"
@@ -11756,10 +11519,9 @@ msgid "The row index in the array."
 msgstr "Indeks baris pada larik."
 
 #: sc/inc/scfuncs.hrc:3361
-#, fuzzy
 msgctxt "SC_OPCODE_H_LOOKUP"
 msgid "Sorted"
-msgstr "urut"
+msgstr "Terurut"
 
 #: sc/inc/scfuncs.hrc:3362
 msgctxt "SC_OPCODE_H_LOOKUP"
@@ -11847,10 +11609,9 @@ msgid "The column in the range."
 msgstr "Kolom dalam jangkauan."
 
 #: sc/inc/scfuncs.hrc:3389
-#, fuzzy
 msgctxt "SC_OPCODE_INDEX"
 msgid "Range"
-msgstr "Jangkauan"
+msgstr "Rentang"
 
 #: sc/inc/scfuncs.hrc:3390
 msgctxt "SC_OPCODE_INDEX"
@@ -11908,10 +11669,9 @@ msgid "The vector (row or column) in which to search."
 msgstr "Vektor (baris atau kolom) tempat pencarian."
 
 #: sc/inc/scfuncs.hrc:3411
-#, fuzzy
 msgctxt "SC_OPCODE_LOOKUP"
 msgid "Result vector"
-msgstr "vektor_hasil"
+msgstr "Vektor hasil"
 
 #: sc/inc/scfuncs.hrc:3412
 msgctxt "SC_OPCODE_LOOKUP"
@@ -11919,7 +11679,6 @@ msgid "The vector (row or range) from which the value is to be determined."
 msgstr "Vektor (baris atau kolom) asal nilai yang dicari."
 
 #: sc/inc/scfuncs.hrc:3418
-#, fuzzy
 msgctxt "SC_OPCODE_MATCH"
 msgid "Defines a position in an array after comparing values."
 msgstr "Menentukan posisi pada larik setelah membandingkan nilai."
@@ -11935,10 +11694,9 @@ msgid "The value to be used for comparison."
 msgstr "Nilai yang digunakan untuk pembadingan."
 
 #: sc/inc/scfuncs.hrc:3421
-#, fuzzy
 msgctxt "SC_OPCODE_MATCH"
 msgid "Lookup array"
-msgstr "larik_cari"
+msgstr "Cari larik"
 
 #: sc/inc/scfuncs.hrc:3422
 msgctxt "SC_OPCODE_MATCH"
@@ -11951,10 +11709,9 @@ msgid "Type"
 msgstr "Jenis"
 
 #: sc/inc/scfuncs.hrc:3424
-#, fuzzy
 msgctxt "SC_OPCODE_MATCH"
 msgid "Type can take the value 1, 0 or -1 and determines the criteria to be used for comparison purposes."
-msgstr "Jenis bisa bernilai 1, 0, -1. Jenis menentukan kriteria tujuan pencarian."
+msgstr "Tipe bisa bernilai 1, 0, -1 dan menentukan kriteria yang akan digunakan untuk tujuan perbandingan."
 
 #: sc/inc/scfuncs.hrc:3430
 msgctxt "SC_OPCODE_OFFSET"
@@ -12032,10 +11789,9 @@ msgid "Returns a number corresponding to one of the error values or #N/A if no e
 msgstr "Mengembalikan suatu angka yang berhubungan dngan satu dari nilai galat atau #N/A bila tidak ada galat"
 
 #: sc/inc/scfuncs.hrc:3455
-#, fuzzy
 msgctxt "SC_OPCODE_ERROR_TYPE_ODF"
 msgid "Expression"
-msgstr "Ekspresi1"
+msgstr "Ekspresi"
 
 #: sc/inc/scfuncs.hrc:3456
 msgctxt "SC_OPCODE_ERROR_TYPE_ODF"
@@ -12073,10 +11829,9 @@ msgid "Style 2"
 msgstr "Gaya 2"
 
 #: sc/inc/scfuncs.hrc:3468
-#, fuzzy
 msgctxt "SC_OPCODE_STYLE"
 msgid "The style to be applied after time expires."
-msgstr "Gaya yang dipakai setelah waktu berakhir."
+msgstr "Gaya yang akan diterapkan setelah waktu berakhir."
 
 #: sc/inc/scfuncs.hrc:3474
 msgctxt "SC_OPCODE_DDE"
@@ -12084,7 +11839,6 @@ msgid "Result of a DDE link."
 msgstr "Hasil taut DDE"
 
 #: sc/inc/scfuncs.hrc:3475
-#, fuzzy
 msgctxt "SC_OPCODE_DDE"
 msgid "Server"
 msgstr "Server"
@@ -12097,23 +11851,22 @@ msgstr "Nama aplikasi server."
 #: sc/inc/scfuncs.hrc:3477
 msgctxt "SC_OPCODE_DDE"
 msgid "Topic/file"
-msgstr ""
+msgstr "Topik/berkas"
 
 #: sc/inc/scfuncs.hrc:3478
 msgctxt "SC_OPCODE_DDE"
 msgid "The topic or name of the file."
-msgstr ""
+msgstr "Topik atau nama berkas."
 
 #: sc/inc/scfuncs.hrc:3479
 msgctxt "SC_OPCODE_DDE"
 msgid "Item/range"
-msgstr ""
+msgstr "Butir/rentang"
 
 #: sc/inc/scfuncs.hrc:3480
-#, fuzzy
 msgctxt "SC_OPCODE_DDE"
 msgid "The item or range from which data is to be taken."
-msgstr "Jangkauan tempat data diambil."
+msgstr "Butir atau rentang dari mana data akan diambil."
 
 #: sc/inc/scfuncs.hrc:3481
 msgctxt "SC_OPCODE_DDE"
@@ -12128,7 +11881,7 @@ msgstr "Menentukan cara mengonversi data ke bilangan."
 #: sc/inc/scfuncs.hrc:3488
 msgctxt "SC_OPCODE_HYPERLINK"
 msgid "Construct a Hyperlink."
-msgstr ""
+msgstr "Membangun Pranala."
 
 #: sc/inc/scfuncs.hrc:3489
 msgctxt "SC_OPCODE_HYPERLINK"
@@ -12138,7 +11891,7 @@ msgstr "URL"
 #: sc/inc/scfuncs.hrc:3490
 msgctxt "SC_OPCODE_HYPERLINK"
 msgid "The clickable URL."
-msgstr ""
+msgstr "URL yang dapat diklik."
 
 #: sc/inc/scfuncs.hrc:3491
 msgctxt "SC_OPCODE_HYPERLINK"
@@ -12148,7 +11901,7 @@ msgstr "Teks sel"
 #: sc/inc/scfuncs.hrc:3492
 msgctxt "SC_OPCODE_HYPERLINK"
 msgid "The cell text to be displayed."
-msgstr ""
+msgstr "Teks sel yang akan ditampilkan."
 
 #: sc/inc/scfuncs.hrc:3498
 msgctxt "SC_OPCODE_GET_PIVOT_DATA"
@@ -12156,7 +11909,6 @@ msgid "Extracts value(s) from a pivot table."
 msgstr "Mengekstrak nilai dari tabel pivot."
 
 #: sc/inc/scfuncs.hrc:3499
-#, fuzzy
 msgctxt "SC_OPCODE_GET_PIVOT_DATA"
 msgid "Data field"
 msgstr "Ruas Data"
@@ -12167,7 +11919,6 @@ msgid "The name of the pivot table field to extract."
 msgstr "Nama kolom tabel pilot data yang diekstrak."
 
 #: sc/inc/scfuncs.hrc:3501
-#, fuzzy
 msgctxt "SC_OPCODE_GET_PIVOT_DATA"
 msgid "Pivot table"
 msgstr "Tabel Pivot"
@@ -12178,7 +11929,6 @@ msgid "A reference to a cell or range in the pivot table."
 msgstr "Rujukan ke sel atau jangkauan pada tabel pivot."
 
 #: sc/inc/scfuncs.hrc:3503
-#, fuzzy
 msgctxt "SC_OPCODE_GET_PIVOT_DATA"
 msgid "Field name / item"
 msgstr "Item/Nama ruas."
@@ -12454,10 +12204,9 @@ msgid "Range 1, range 2,... are the ranges to be evaluated by the criteria given
 msgstr "Jangkauan 1, jangkauan 2, ... adalah jangkauan yang akan dievaluasi oleh kriteria yang diberikan."
 
 #: sc/inc/scfuncs.hrc:3622
-#, fuzzy
 msgctxt "SC_OPCODE_MINIFS_MS"
 msgid "Criteria "
-msgstr "Kriteria"
+msgstr "Kriteria "
 
 #: sc/inc/scfuncs.hrc:3623
 msgctxt "SC_OPCODE_MINIFS_MS"
@@ -12507,7 +12256,7 @@ msgstr "Tentukan apakah dua teks itu identik (sama)."
 #: sc/inc/scfuncs.hrc:3641
 msgctxt "SC_OPCODE_EXACT"
 msgid "Text 1"
-msgstr ""
+msgstr "Teks 1"
 
 #: sc/inc/scfuncs.hrc:3642
 msgctxt "SC_OPCODE_EXACT"
@@ -12517,7 +12266,7 @@ msgstr "Teks pertama yang akan dibandingkan."
 #: sc/inc/scfuncs.hrc:3643
 msgctxt "SC_OPCODE_EXACT"
 msgid "Text 2"
-msgstr ""
+msgstr "Teks 2"
 
 #: sc/inc/scfuncs.hrc:3644
 msgctxt "SC_OPCODE_EXACT"
@@ -13157,7 +12906,7 @@ msgstr "Kurs awal"
 #: sc/inc/scfuncs.hrc:3898
 msgctxt "SC_OPCODE_EUROCONVERT"
 msgid "ISO 4217 code of the currency from which is converted."
-msgstr ""
+msgstr "Kode ISO 4217 dari mata uang yang dikonversi."
 
 #: sc/inc/scfuncs.hrc:3899
 msgctxt "SC_OPCODE_EUROCONVERT"
@@ -13167,7 +12916,7 @@ msgstr "Kurs tujuan"
 #: sc/inc/scfuncs.hrc:3900
 msgctxt "SC_OPCODE_EUROCONVERT"
 msgid "ISO 4217 code of the currency into which is converted."
-msgstr ""
+msgstr "Kode ISO 4217 dari mata uang yang dikonversi."
 
 #: sc/inc/scfuncs.hrc:3901
 msgctxt "SC_OPCODE_EUROCONVERT"
@@ -13573,7 +13322,7 @@ msgstr "Mengembalikan pengurangan bilangan. Seperti a-b-c tapi tanpa mengelimina
 #: sc/inc/scfuncs.hrc:4054
 msgctxt "SC_OPCODE_RAWSUBTRACT"
 msgid "Minuend"
-msgstr ""
+msgstr "Minuend"
 
 #: sc/inc/scfuncs.hrc:4055
 msgctxt "SC_OPCODE_RAWSUBTRACT"
@@ -13583,12 +13332,12 @@ msgstr "Bilangan tempat asal argumen berikut dikurangkan."
 #: sc/inc/scfuncs.hrc:4056
 msgctxt "SC_OPCODE_RAWSUBTRACT"
 msgid "Subtrahend "
-msgstr ""
+msgstr "Subtrahend "
 
 #: sc/inc/scfuncs.hrc:4057
 msgctxt "SC_OPCODE_RAWSUBTRACT"
 msgid "Subtrahend 1, subtrahend 2, ... are numerical arguments subtracted from the minuend."
-msgstr ""
+msgstr "Subtrahend 1, subtrahend 2, ... adalah argumen numerik yang dikurangi dari minuend."
 
 #: sc/inc/scfuncs.hrc:4063
 msgctxt "SC_OPCODE_ROUNDSIG"
@@ -13663,7 +13412,7 @@ msgstr "Teks yang akan disisipkan."
 #: sc/inc/scfuncs.hrc:4086
 msgctxt "SC_OPCODE_FINDB"
 msgid "Looks for a string of text within another (case sensitive), using byte positions."
-msgstr ""
+msgstr "Mencari teks string dalam teks yang lain (besar kecil huruf diperhatikan), menggunakan posisi bita."
 
 #: sc/inc/scfuncs.hrc:4087
 msgctxt "SC_OPCODE_FINDB"
@@ -13698,7 +13447,7 @@ msgstr "Posisi teks di mana penelusuran berawal."
 #: sc/inc/scfuncs.hrc:4098
 msgctxt "SC_OPCODE_SEARCHB"
 msgid "Looks for a string of text within another (not case sensitive), using byte positions."
-msgstr ""
+msgstr "Mencari teks string dalam teks yang lain (besar kecil huruf diperhatikan), menggunakan posisi bita."
 
 #: sc/inc/scfuncs.hrc:4099
 msgctxt "SC_OPCODE_SEARCHB"
@@ -13769,7 +13518,7 @@ msgstr "Gaya Ubahan"
 #: sc/inc/strings.hrc:27
 msgctxt "SCSTR_LONG_SCDOC_NAME"
 msgid "%PRODUCTNAME Spreadsheet format (calc6)"
-msgstr ""
+msgstr "Format Lembar kerja %PRODUCTNAME (calc6)"
 
 #: sc/inc/strings.hrc:28
 msgctxt "SCSTR_LONG_SCDOC_NAME"
@@ -13881,7 +13630,7 @@ msgstr "Sisip Gambar"
 #: sc/inc/strings.hrc:51
 msgctxt "STR_QUERYROTATION"
 msgid "This image is rotated. Would you like to rotate it into standard orientation?"
-msgstr ""
+msgstr "Citra ini diputar. Apakah Anda ingin memutarnya ke orientasi standar?"
 
 #: sc/inc/strings.hrc:52
 msgctxt "SCSTR_TOTAL"
@@ -13891,7 +13640,7 @@ msgstr "%1 hasil ditemukan"
 #: sc/inc/strings.hrc:53
 msgctxt "SCSTR_SKIPPED"
 msgid "(only %1 are listed)"
-msgstr ""
+msgstr "(hanya %1 yang terdaftar)"
 
 #. Attribute
 #: sc/inc/strings.hrc:55
@@ -14946,12 +14695,12 @@ msgstr "F-test"
 #: sc/inc/strings.hrc:281
 msgctxt "STR_TTEST"
 msgid "Paired t-test"
-msgstr ""
+msgstr "Uji ~T Berpasangan"
 
 #: sc/inc/strings.hrc:282
 msgctxt "STR_TTEST_UNDO_NAME"
 msgid "Paired t-test"
-msgstr ""
+msgstr "Uji ~T Berpasangan"
 
 #: sc/inc/strings.hrc:283
 msgctxt "STR_ZTEST"
@@ -15177,23 +14926,23 @@ msgstr "z Kritis ekor dua"
 #: sc/inc/strings.hrc:332
 msgctxt "STR_ENABLE_CONTENT"
 msgid "Enable Content"
-msgstr ""
+msgstr "Aktifkan Konten"
 
 #. Insert image dialog
 #: sc/inc/strings.hrc:334
 msgctxt "STR_ANCHOR_TO_CELL"
 msgid "To cell"
-msgstr ""
+msgstr "Ke sel"
 
 #: sc/inc/strings.hrc:335
 msgctxt "STR_ANCHOR_TO_CELL_RESIZE"
 msgid "To cell (resize with cell)"
-msgstr ""
+msgstr "Ke sel (ubah ukuran dengan sel)"
 
 #: sc/inc/strings.hrc:336
 msgctxt "STR_ANCHOR_TO_PAGE"
 msgid "To page"
-msgstr ""
+msgstr "Ke halaman"
 
 #: sc/inc/units.hrc:27
 msgctxt "SCSTR_UNIT"
@@ -15539,17 +15288,17 @@ msgstr "Posisi"
 #: sc/uiconfig/scalc/ui/checkwarningdialog.ui:11
 msgctxt "checkwarningdialog|CheckWarningDialog"
 msgid "You are pasting data into cells that already contain data."
-msgstr ""
+msgstr "Anda menempelkan data ke dalam sel yang sudah berisi data."
 
 #: sc/uiconfig/scalc/ui/checkwarningdialog.ui:12
 msgctxt "checkwarningdialog|CheckWarningDialog"
 msgid "Do you really want to overwrite the existing data?"
-msgstr ""
+msgstr "Apakah Anda benar-benar ingin minindih data yang ada?"
 
 #: sc/uiconfig/scalc/ui/checkwarningdialog.ui:76
 msgctxt "checkwarningdialog|ask"
 msgid "Warn me about this in the future."
-msgstr ""
+msgstr "Peringatkan saya tentang hal ini di masa depan."
 
 #: sc/uiconfig/scalc/ui/chisquaretestdialog.ui:9
 msgctxt "chisquaretestdialog|ChiSquareTestDialog"
@@ -16874,12 +16623,12 @@ msgstr "Jangkauan basis data:"
 #: sc/uiconfig/scalc/ui/dataprovider.ui:199
 msgctxt "dataprovider|label_provider"
 msgid "Data Provider:"
-msgstr ""
+msgstr "Penyedia Data:"
 
 #: sc/uiconfig/scalc/ui/dataprovider.ui:234
 msgctxt "dataprovider|label_search"
 msgid "Search String:"
-msgstr ""
+msgstr "String Pencarian:"
 
 #: sc/uiconfig/scalc/ui/dataprovider.ui:268
 msgctxt "dataprovider|label"
@@ -16899,7 +16648,7 @@ msgstr "ID:"
 #: sc/uiconfig/scalc/ui/dataproviderentry.ui:68
 msgctxt "dataproviderentry|provider"
 msgid "Data Provider:"
-msgstr ""
+msgstr "Penyedia Data:"
 
 #: sc/uiconfig/scalc/ui/datastreams.ui:8
 msgctxt "datastreams|DataStreamDialog"
@@ -17129,12 +16878,12 @@ msgstr "Seleksi"
 #: sc/uiconfig/scalc/ui/deletecolumnentry.ui:21
 msgctxt "deletecolumnentry|name"
 msgid "Delete Columns Action"
-msgstr ""
+msgstr "Aksi Hapus Kolom"
 
 #: sc/uiconfig/scalc/ui/deletecolumnentry.ui:37
 msgctxt "deletecolumnentry|separator"
 msgid "Columns (List of ';' separated columns)"
-msgstr ""
+msgstr "Kolom (Daftar kolom terpisah oleh ';')"
 
 #: sc/uiconfig/scalc/ui/deletecontents.ui:8
 msgctxt "deletecontents|DeleteContentsDialog"
@@ -18054,7 +17803,7 @@ msgstr "Pembatas _ruas:"
 #: sc/uiconfig/scalc/ui/imoptdialog.ui:124
 msgctxt "imoptdialog|textft"
 msgid "Strin_g delimiter:"
-msgstr ""
+msgstr "Pembatas strin_g:"
 
 #: sc/uiconfig/scalc/ui/imoptdialog.ui:135
 msgctxt "imoptdialog|asshown"
@@ -18294,17 +18043,17 @@ msgstr "Pertahankan isi sel-sel tersembunyi"
 #: sc/uiconfig/scalc/ui/mergecolumnentry.ui:21
 msgctxt "mergecolumnentry|name"
 msgid "Merge Column Action"
-msgstr ""
+msgstr "Aksi Gabungkan Kolom"
 
 #: sc/uiconfig/scalc/ui/mergecolumnentry.ui:37
 msgctxt "mergecolumnentry|separator"
 msgid "Separator:"
-msgstr ""
+msgstr "Pemisah:"
 
 #: sc/uiconfig/scalc/ui/mergecolumnentry.ui:58
 msgctxt "mergecolumnentry|columns"
 msgid "Columns:"
-msgstr ""
+msgstr "Kolom:"
 
 #: sc/uiconfig/scalc/ui/movecopysheet.ui:16
 msgctxt "movecopysheet|MoveCopySheetDialog"
@@ -18544,22 +18293,22 @@ msgstr "Tak ada solusi yang ditemukan."
 #: sc/uiconfig/scalc/ui/notebookbar.ui:857
 msgctxt "notebookbar|Help"
 msgid "_Check for Updates..."
-msgstr ""
+msgstr "_Periksa Pembaruan..."
 
 #: sc/uiconfig/scalc/ui/notebookbar.ui:1678
 msgctxt "notebookbar|Tools"
 msgid "_Check for Updates..."
-msgstr ""
+msgstr "_Periksa Pembaruan..."
 
 #: sc/uiconfig/scalc/ui/notebookbar.ui:1952
 msgctxt "notebookbar|FileLabel"
 msgid "_File"
-msgstr ""
+msgstr "_Berkas"
 
 #: sc/uiconfig/scalc/ui/notebookbar.ui:1971
 msgctxt "notebookbar|HelpMenuButton"
 msgid "_Help"
-msgstr ""
+msgstr "Ba_ntuan"
 
 #: sc/uiconfig/scalc/ui/notebookbar.ui:2769
 msgctxt "notebookbar|FileLabel"
@@ -18585,7 +18334,7 @@ msgstr "Turunkan Indentasi"
 #: sc/uiconfig/scalc/ui/notebookbar.ui:4436
 msgctxt "notebookbar|HomeMenuButton"
 msgid "_Home"
-msgstr ""
+msgstr "_Beranda"
 
 #: sc/uiconfig/scalc/ui/notebookbar.ui:4544
 msgctxt "notebookbar|CalcLabel"
@@ -18595,12 +18344,12 @@ msgstr "Beranda"
 #: sc/uiconfig/scalc/ui/notebookbar.ui:4991
 msgctxt "notebookbar|FieldMenuButton"
 msgid "Fiel_d"
-msgstr ""
+msgstr "_Ruas"
 
 #: sc/uiconfig/scalc/ui/notebookbar.ui:5496
 msgctxt "notebookbar|InsertMenuButton"
 msgid "_Insert"
-msgstr ""
+msgstr "S_isip"
 
 #: sc/uiconfig/scalc/ui/notebookbar.ui:5581
 msgctxt "notebookbar|InsertLabel"
@@ -18610,22 +18359,22 @@ msgstr "Sisipkan"
 #: sc/uiconfig/scalc/ui/notebookbar.ui:5610
 msgctxt "notebookbar|reviewb"
 msgid "Pag_e"
-msgstr ""
+msgstr "H_alaman"
 
 #: sc/uiconfig/scalc/ui/notebookbar.ui:6335
 msgctxt "notebookbar|PageLayoutLabel"
 msgid "Layout"
-msgstr ""
+msgstr "Tata letak"
 
 #: sc/uiconfig/scalc/ui/notebookbar.ui:7236
 msgctxt "notebookbar|Statistics"
 msgid "_Statistics"
-msgstr ""
+msgstr "_Statistik"
 
 #: sc/uiconfig/scalc/ui/notebookbar.ui:7304
 msgctxt "notebookbar|DataMenuButton"
 msgid "_Data"
-msgstr ""
+msgstr "_Data"
 
 #: sc/uiconfig/scalc/ui/notebookbar.ui:7412
 msgctxt "notebookbar|DataLabel"
@@ -18635,7 +18384,7 @@ msgstr "Data"
 #: sc/uiconfig/scalc/ui/notebookbar.ui:8035
 msgctxt "notebookbar|ReviewMenuButton"
 msgid "_Review"
-msgstr ""
+msgstr "_Tinjau"
 
 #: sc/uiconfig/scalc/ui/notebookbar.ui:8120
 msgctxt "notebookbar|ReviewLabel"
@@ -18645,7 +18394,7 @@ msgstr "Tinjau"
 #: sc/uiconfig/scalc/ui/notebookbar.ui:8896
 msgctxt "notebookbar|ViewMenuButton"
 msgid "_View"
-msgstr ""
+msgstr "Ta_mpilan"
 
 #: sc/uiconfig/scalc/ui/notebookbar.ui:8981
 msgctxt "notebookbar|ViewLabel"
@@ -18655,7 +18404,7 @@ msgstr "Tilik"
 #: sc/uiconfig/scalc/ui/notebookbar.ui:9008
 msgctxt "notebookbar|GraphicMenuButton"
 msgid "_Graphic"
-msgstr ""
+msgstr "_Grafis"
 
 #: sc/uiconfig/scalc/ui/notebookbar.ui:9949
 msgctxt "notebookbar|ImageLabel"
@@ -18665,37 +18414,37 @@ msgstr "Citra"
 #: sc/uiconfig/scalc/ui/notebookbar.ui:11228
 msgctxt "notebookbar|DrawMenuButton"
 msgid "D_raw"
-msgstr ""
+msgstr "Gamba_r"
 
 #: sc/uiconfig/scalc/ui/notebookbar.ui:11340
 msgctxt "notebookbar|DrawLabel"
 msgid "Draw"
-msgstr ""
+msgstr "Gambar"
 
 #: sc/uiconfig/scalc/ui/notebookbar.ui:12116
 msgctxt "notebookbar|frame:MenuDraw"
 msgid "Object"
-msgstr ""
+msgstr "Objek"
 
 #: sc/uiconfig/scalc/ui/notebookbar.ui:12205
 msgctxt "notebookbar|FrameLabel"
 msgid "Object"
-msgstr ""
+msgstr "Objek"
 
 #: sc/uiconfig/scalc/ui/notebookbar.ui:12236
 msgctxt "notebookbar|ToolsMenuButton"
 msgid "_Tools"
-msgstr ""
+msgstr "Per_kakas"
 
 #: sc/uiconfig/scalc/ui/notebookbar.ui:13373
 msgctxt "notebookbar|DevLabel"
 msgid "Tools"
-msgstr ""
+msgstr "Perkakas"
 
 #: sc/uiconfig/scalc/ui/notebookbar_groupedbar_compact.ui:2945
 msgctxt "notebookbar_groupedbar_compact|Menu"
 msgid "_Check for Updates..."
-msgstr ""
+msgstr "_Periksa Pembaruan..."
 
 #: sc/uiconfig/scalc/ui/notebookbar_groupedbar_compact.ui:2977
 msgctxt "notebookbar_groupedbar_compact|defaultD"
@@ -18765,7 +18514,7 @@ msgstr "Catatan"
 #: sc/uiconfig/scalc/ui/notebookbar_groupedbar_compact.ui:3336
 msgctxt "notebookbar_groupedbar_compact|Tools"
 msgid "_Check for Updates..."
-msgstr ""
+msgstr "_Periksa Pembaruan..."
 
 #: sc/uiconfig/scalc/ui/notebookbar_groupedbar_compact.ui:3630
 msgctxt "notebookbar_groupedbar_compact|menub"
@@ -18788,10 +18537,9 @@ msgid "_Edit"
 msgstr "_Sunting"
 
 #: sc/uiconfig/scalc/ui/notebookbar_groupedbar_compact.ui:4088
-#, fuzzy
 msgctxt "notebookbar_groupedbar_compact|paragraphstyleb"
 msgid "St_yles"
-msgstr "Gaya"
+msgstr "Ga_ya"
 
 #: sc/uiconfig/scalc/ui/notebookbar_groupedbar_compact.ui:4245
 msgctxt "notebookbar_groupedbar_compact|formatb"
@@ -18809,16 +18557,14 @@ msgid "_Number"
 msgstr "_Angka"
 
 #: sc/uiconfig/scalc/ui/notebookbar_groupedbar_compact.ui:4625
-#, fuzzy
 msgctxt "notebookbar_groupedbar_compact|paragraphb"
 msgid "_Alignment"
-msgstr "Perataan"
+msgstr "Per_ataan"
 
 #: sc/uiconfig/scalc/ui/notebookbar_groupedbar_compact.ui:4788
-#, fuzzy
 msgctxt "notebookbar_groupedbar_compact|cellb"
 msgid "_Cells"
-msgstr "Sel"
+msgstr "_Sel"
 
 #: sc/uiconfig/scalc/ui/notebookbar_groupedbar_compact.ui:4931
 msgctxt "notebookbar_groupedbar_compact|insertb"
@@ -18906,10 +18652,9 @@ msgid "_Grid"
 msgstr "_Kisi"
 
 #: sc/uiconfig/scalc/ui/notebookbar_groupedbar_compact.ui:7458
-#, fuzzy
 msgctxt "notebookbar_groupedbar_compact|viewDrawb"
 msgid "Grou_p"
-msgstr "Kelompok"
+msgstr "Kelom_pok"
 
 #: sc/uiconfig/scalc/ui/notebookbar_groupedbar_compact.ui:7570
 msgctxt "notebookbar_groupedbar_compact|3Db"
@@ -18942,10 +18687,9 @@ msgid "_Styles"
 msgstr "_Gaya"
 
 #: sc/uiconfig/scalc/ui/notebookbar_groupedbar_compact.ui:8473
-#, fuzzy
 msgctxt "notebookbar_groupedbar_compact|formats"
 msgid "F_ormat"
-msgstr "Format"
+msgstr "F_ormat"
 
 #: sc/uiconfig/scalc/ui/notebookbar_groupedbar_compact.ui:8749
 msgctxt "notebookbar_groupedbar_compact|paragraphS"
@@ -18960,12 +18704,12 @@ msgstr "_Tampilan"
 #: sc/uiconfig/scalc/ui/notebookbar_groupedbar_full.ui:1950
 msgctxt "notebookbar_groupedbar_full|Help"
 msgid "_Check for Updates..."
-msgstr ""
+msgstr "_Periksa Pembaruan..."
 
 #: sc/uiconfig/scalc/ui/notebookbar_groupedbar_full.ui:2945
 msgctxt "notebookbar_groupedbar_full|Menu"
 msgid "_Check for Updates..."
-msgstr ""
+msgstr "_Periksa Pembaruan..."
 
 #: sc/uiconfig/scalc/ui/notebookbar_groupedbar_full.ui:2977
 msgctxt "notebookbar_groupedbar_full|defaultD"
@@ -18988,16 +18732,14 @@ msgid "Accent 3"
 msgstr "Aksen 3"
 
 #: sc/uiconfig/scalc/ui/notebookbar_groupedbar_full.ui:3021
-#, fuzzy
 msgctxt "notebookbar_groupedbar_full|Header1"
 msgid "Header 1"
-msgstr "Tajuk"
+msgstr "Tajuk 1"
 
 #: sc/uiconfig/scalc/ui/notebookbar_groupedbar_full.ui:3029
-#, fuzzy
 msgctxt "notebookbar_groupedbar_full|Header2"
 msgid "Header 2"
-msgstr "Tajuk"
+msgstr "Tajuk 2"
 
 #: sc/uiconfig/scalc/ui/notebookbar_groupedbar_full.ui:3043
 msgctxt "notebookbar_groupedbar_full|bad"
@@ -19037,7 +18779,7 @@ msgstr "Catatan"
 #: sc/uiconfig/scalc/ui/notebookbar_groupedbar_full.ui:3336
 msgctxt "notebookbar_groupedbar_full|Tools"
 msgid "_Check for Updates..."
-msgstr ""
+msgstr "_Periksa Pembaruan..."
 
 #: sc/uiconfig/scalc/ui/notebookbar_groupedbar_full.ui:3635
 msgctxt "notebookbar_groupedbar_full|menub"
@@ -19175,10 +18917,9 @@ msgid "_View"
 msgstr "_Tampilan"
 
 #: sc/uiconfig/scalc/ui/notebookbar_groupedbar_full.ui:9459
-#, fuzzy
 msgctxt "notebookbar_groupedbar_full|viewDrawb"
 msgid "Grou_p"
-msgstr "Kelompok"
+msgstr "Kelom_pok"
 
 #: sc/uiconfig/scalc/ui/notebookbar_groupedbar_full.ui:9609
 msgctxt "notebookbar_groupedbar_full|3Db"
@@ -19496,10 +19237,9 @@ msgid "After"
 msgstr "Setelah"
 
 #: sc/uiconfig/scalc/ui/notebookbar_groups.ui:2179
-#, fuzzy
 msgctxt "notebookbar_groups|wrapthrough"
 msgid "Through"
-msgstr "Lewat"
+msgstr "Melewati"
 
 #: sc/uiconfig/scalc/ui/notebookbar_groups.ui:2194
 msgctxt "notebookbar_groups|wrapcontour"
@@ -19514,17 +19254,17 @@ msgstr "Sunting Kontur"
 #: sc/uiconfig/scalc/ui/optcalculatepage.ui:48
 msgctxt "optcalculatepage|threadingenabled"
 msgid "Enable multi-threaded calculation"
-msgstr ""
+msgstr "Nyalakan kalkulasi banyak proses"
 
 #: sc/uiconfig/scalc/ui/optcalculatepage.ui:52
 msgctxt "optcalculatepage|threadingenabled|tooltip_text"
 msgid "Enable multi-threaded calculation of formula-groups"
-msgstr ""
+msgstr "Nyalakan kalkulasi banyak proses dari grup-rumus"
 
 #: sc/uiconfig/scalc/ui/optcalculatepage.ui:71
 msgctxt "optcalculatepage|label4"
 msgid "CPU threading settings"
-msgstr ""
+msgstr "Pengaturan proses CPU"
 
 #: sc/uiconfig/scalc/ui/optcalculatepage.ui:107
 msgctxt "optcalculatepage|case"
@@ -20134,7 +19874,7 @@ msgstr "Lewati sel _kosong"
 #: sc/uiconfig/scalc/ui/pastespecial.ui:479
 msgctxt "pastespecial|skip_empty"
 msgid "If enabled, blank cells in source will not override the target."
-msgstr ""
+msgstr "Jika aktif, sel kosong pada sumber tidak akan menimpa target."
 
 #: sc/uiconfig/scalc/ui/pastespecial.ui:492
 msgctxt "pastespecial|transpose"
@@ -20639,7 +20379,7 @@ msgstr "Opsi"
 #: sc/uiconfig/scalc/ui/recalcquerydialog.ui:30
 msgctxt "recalcquerydialog|ask"
 msgid "Always perform this without prompt in the future."
-msgstr ""
+msgstr "Selalu lakukan ini tanpa bertanya di masa mendatang."
 
 #: sc/uiconfig/scalc/ui/regressiondialog.ui:9
 msgctxt "regressiondialog|RegressionDialog"
@@ -20934,7 +20674,7 @@ msgstr "Mutakhirkan taut ketika membuka"
 #: sc/uiconfig/scalc/ui/scgeneralpage.ui:156
 msgctxt "scgeneralpage|alwaysrb"
 msgid "_Always (from trusted locations)"
-msgstr ""
+msgstr "Sel_alu (dari lokasi yang terpercaya)"
 
 #: sc/uiconfig/scalc/ui/scgeneralpage.ui:174
 msgctxt "scgeneralpage|requestrb"
@@ -21199,17 +20939,17 @@ msgstr "Pengguna Yang Sedang Mengakses Lembar Kerja Ini"
 #: sc/uiconfig/scalc/ui/sharedwarningdialog.ui:12
 msgctxt "sharedwarningdialog|SharedWarningDialog"
 msgid "The spreadsheet is in shared mode. This allows multiple users to access and edit the spreadsheet at the same time."
-msgstr ""
+msgstr "Spreadsheet ini dalam mode berbagi. Ini memungkinkan pengguna untuk mengakses dan menyunting lembar hitung pada waktu yang sama."
 
 #: sc/uiconfig/scalc/ui/sharedwarningdialog.ui:13
 msgctxt "sharedwarningdialog|SharedWarningDialog"
 msgid "Changes to formatting attributes like fonts, colors, and number formats will not be saved and some functionalities like editing charts and drawing objects are not available in shared mode. Turn off shared mode to get exclusive access needed for those changes and functionalities."
-msgstr ""
+msgstr "Perubahan pada attribut pemformatan seperti fon, warna, dan format angka tidak akan disimpan dan beberapa fungsionalitas seperti penyuntingan bagan dan objek gambar tidak tersedia pada mode berbagi. Nonaktifkan mode berbagi untuk memperoleh akses eksklusif yang diperlukan untuk perubahan dan fungsionalitas tersebut."
 
 #: sc/uiconfig/scalc/ui/sharedwarningdialog.ui:32
 msgctxt "sharedwarningdialog|ask"
 msgid "Do not show warning again."
-msgstr ""
+msgstr "Jangan tampilkan peringatan lagi."
 
 #: sc/uiconfig/scalc/ui/sheetprintpage.ui:63
 msgctxt "sheetprintpage|radioBTN_TOPDOWN"
@@ -21999,12 +21739,12 @@ msgstr "Fungsikan pengurutan alami"
 #: sc/uiconfig/scalc/ui/sortoptionspage.ui:91
 msgctxt "sortoptionspage|includenotes"
 msgid "Include boundary column(s) containing only comments"
-msgstr ""
+msgstr "Termasuk kolom pembatas yang memuat komentar saja"
 
 #: sc/uiconfig/scalc/ui/sortoptionspage.ui:106
 msgctxt "sortoptionspage|includeimages"
 msgid "Include boundary column(s) containing only images"
-msgstr ""
+msgstr "Termasuk kolom pembatas yang memuat citra saja"
 
 #: sc/uiconfig/scalc/ui/sortoptionspage.ui:121
 msgctxt "sortoptionspage|copyresult"
@@ -22089,7 +21829,7 @@ msgstr "Tips: Jangkauan pengurutan bisa dideteksi secara otomatis. Tempatkan kur
 #: sc/uiconfig/scalc/ui/splitcolumnentry.ui:21
 msgctxt "splitcolumnentry|name"
 msgid "Split Column Action"
-msgstr ""
+msgstr "Aksi Memisah Kolom"
 
 #: sc/uiconfig/scalc/ui/splitcolumnentry.ui:37
 msgctxt "splitcolumnentry|separator"
@@ -22099,7 +21839,7 @@ msgstr "Pemisah:"
 #: sc/uiconfig/scalc/ui/splitcolumnentry.ui:48
 msgctxt "splitcolumnentry|max_num_columns"
 msgid "Maximum Number of Columns"
-msgstr ""
+msgstr "Nilai Maksimum dari Kolom"
 
 #: sc/uiconfig/scalc/ui/standardfilterdialog.ui:9
 msgctxt "standardfilterdialog|StandardFilterDialog"
@@ -22719,7 +22459,7 @@ msgstr "Pem_batas gabungan"
 #: sc/uiconfig/scalc/ui/textimportcsv.ui:319
 msgctxt "textimportcsv|removespace"
 msgid "Tr_im spaces"
-msgstr ""
+msgstr "Pangkas spas_i"
 
 #: sc/uiconfig/scalc/ui/textimportcsv.ui:337
 msgctxt "textimportcsv|comma"
@@ -22749,7 +22489,7 @@ msgstr "Lainnya"
 #: sc/uiconfig/scalc/ui/textimportcsv.ui:444
 msgctxt "textimportcsv|texttextdelimiter"
 msgid "Strin_g delimiter:"
-msgstr ""
+msgstr "Pembatas strin_g:"
 
 #: sc/uiconfig/scalc/ui/textimportcsv.ui:494
 msgctxt "textimportcsv|separatoroptions"
@@ -22759,7 +22499,7 @@ msgstr "Opsi Pemisah"
 #: sc/uiconfig/scalc/ui/textimportcsv.ui:528
 msgctxt "textimportcsv|quotedfieldastext"
 msgid "F_ormat quoted field as text"
-msgstr ""
+msgstr "F_ormat bidang kutipan sebagai teks"
 
 #: sc/uiconfig/scalc/ui/textimportcsv.ui:544
 msgctxt "textimportcsv|detectspecialnumbers"
@@ -22769,12 +22509,12 @@ msgstr "Deteksi bila_ngan khusus"
 #: sc/uiconfig/scalc/ui/textimportcsv.ui:560
 msgctxt "textimportcsv|skipemptycells"
 msgid "S_kip empty cells"
-msgstr ""
+msgstr "Lewati sel _kosong"
 
 #: sc/uiconfig/scalc/ui/textimportcsv.ui:564
 msgctxt "textimportcsv|skipemptycells"
 msgid "If enabled, blank cells in source will not override the target."
-msgstr ""
+msgstr "Jika aktif, sel kosong pada sumber tidak akan menimpa target."
 
 #: sc/uiconfig/scalc/ui/textimportcsv.ui:583
 msgctxt "textimportcsv|label3"
