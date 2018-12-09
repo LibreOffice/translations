@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: LibreOffice 6.2\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2018-11-26 14:25+0100\n"
-"PO-Revision-Date: 2018-11-26 23:44+0200\n"
+"POT-Creation-Date: 2018-12-04 21:53+0100\n"
+"PO-Revision-Date: 2018-12-06 17:22+0200\n"
 "Last-Translator: Martin Srebotnjak <miles@filmsi.net>\n"
 "Language-Team: sl.libreoffice.org\n"
 "Language: sl\n"
@@ -55161,7 +55161,7 @@ msgctxt ""
 "func_regex.xhp\n"
 "par_id701542231253817\n"
 "help.text"
-msgid "REGEX( Text ; Expression [ ; [ Replacement ] [ ; Flags ] ] )"
+msgid "REGEX( Text ; Expression [ ; [ Replacement ] [ ; Flags|Occurrence ] ] )"
 msgstr "REGEX( besedilo ; izraz [ ; [ zamenjava ] [ ; zastavice ] ] )"
 
 #: func_regex.xhp
@@ -55179,7 +55179,7 @@ msgctxt ""
 "func_regex.xhp\n"
 "par_id211542232209275\n"
 "help.text"
-msgid "<emph>Expression</emph>: A text representing the regular expression, using <link href=\"https://userguide.icu-project.org/strings/regexp\" name=\"ICU REGEXP\">ICU regular expressions</link>. If there is no match, #N/A is returned."
+msgid "<emph>Expression</emph>: A text representing the regular expression, using <link href=\"http://userguide.icu-project.org/strings/regexp\" name=\"ICU REGEXP\">ICU regular expressions</link>. If there is no match and <emph>Replacement</emph> is not given, #N/A is returned."
 msgstr "<emph>Izraz</emph>: besedilo, ki predstavlja regularni izraz z uporabo <link href=\"https://userguide.icu-project.org/strings/regexp\" name=\"ICU REGEXP\">regularnih izrazov ICU </link>. Če ni zadetkov, vrne #N/A."
 
 #: func_regex.xhp
@@ -55204,27 +55204,50 @@ msgstr "<emph>Zastavice</emph>: neobvezno. »g« zamenja vse zadetke <emph>izraz
 #, fuzzy
 msgctxt ""
 "func_regex.xhp\n"
+"par_id421542232246841\n"
+"help.text"
+msgid "<emph>Occurrence</emph>: Optional. Number to indicate which match of <emph>Expression</emph> in <emph>Text</emph> is to be extracted or replaced. If there is no match and <emph>Replacement</emph> is not given, #N/A is returned. If there is no match and <emph>Replacement</emph> is given, <emph>Text</emph> is returned unmodified. If <emph>Occurrence</emph> is 0, <emph>Text</emph> is returned unmodified."
+msgstr "<emph>Pojavitev</emph>: neobvezno. Število, ki nakazuje, kateri zadetek <emph>izraza</emph> v <emph>besedilu</emph> naj bo izluščen oz. zamenjan. Če ni zadetkov in <emph>zamenjava</emph> ni podana, vrne vrednost #N/A. Če ni zadetkov in je podana <emph>zamenjava</emph>, se <emph>besedilo</emph> vrne nespremenjeno. Če  je <emph>pojavitev</emph> enaka 0, se <emph>besedilo</emph> vrne nespremenjeno."
+
+#: func_regex.xhp
+msgctxt ""
+"func_regex.xhp\n"
 "par_id371542291684176\n"
 "help.text"
 msgid "<item type=\"input\">=REGEX(\"123456ABCDEF\";\"[:digit:]\";\"Z\")</item>  returns \"Z23456ABCDEF\", where the first match of a digit is replaced by \"Z\"."
-msgstr "<item type=\"input\">=REGEX(\"123456ABCDEF\";\"[:digit:]\";\"Z\")</item>  vrne »Z23456ABCDEF«, kjer je prvi zadetek števke zamenjan z »Z«."
+msgstr "<item type=\"input\">=REGEX(\"123456ABCDEF\";\"[:digit:]\";\"Z\")</item>  vrne »Z23456ABCDEF«, kjer prvi zadetek števke zamenja »Z«."
 
 #: func_regex.xhp
-#, fuzzy
 msgctxt ""
 "func_regex.xhp\n"
 "par_id891542291697194\n"
 "help.text"
 msgid "<item type=\"input\">=REGEX(\"123456ABCDEF\";\"[:digit:]\";\"Z\";\"g\")</item>  returns \"ZZZZZZABCDEF\", where all digits were replaced by \"Z\"."
-msgstr "<item type=\"input\">=REGEX(\"123456ABCDEF\";\"[:digit:]\";\"Z\";\"g\")</item>  vrne »ZZZZZZABCDEF«, kjer so vse števke zamenjane z »Z«."
+msgstr "<item type=\"input\">=REGEX(\"123456ABCDEF\";\"[:digit:]\";\"Z\";\"g\")</item> vrne »ZZZZZZABCDEF«, kjer vse števke zamenja »Z«."
 
 #: func_regex.xhp
 msgctxt ""
 "func_regex.xhp\n"
 "par_id21542291705695\n"
 "help.text"
-msgid "<item type=\"input\">=REGEX(\"123456ABCDEF\";\"[1|2|6]\";\"\";\"g\")</item>  returns \"345ABCDEF\", where any occurrence of \"1\", \"2\" or \"6\" is replaced by the empty string, thus deleted."
-msgstr "<item type=\"input\">=REGEX(\"123456ABCDEF\";\"[1|2|6]\";\"\";\"g\")</item> vrne »345ABCDEF«. Vsako pojavitev  »1«, »2« in »6« zamenja prazen niz, torej so izbrisane."
+msgid "<item type=\"input\">=REGEX(\"123456ABCDEF\";\"[126]\";\"\";\"g\")</item>  returns \"345ABCDEF\", where any occurrence of \"1\", \"2\" or \"6\" is replaced by the empty string, thus deleted."
+msgstr "<item type=\"input\">=REGEX(\"123456ABCDEF\";\"[126]\";\"\";\"g\")</item> vrne »345ABCDEF«. Vsako pojavitev  »1«, »2« in »6« zamenja prazen niz, torej so izbrisane."
+
+#: func_regex.xhp
+msgctxt ""
+"func_regex.xhp\n"
+"par_id371542291684177\n"
+"help.text"
+msgid "<item type=\"input\">=REGEX(\"axbxcxd\";\".x\";;2)</item>  returns \"bx\", the second match of \".x\"."
+msgstr "<item type=\"input\">=REGEX(\"axbxcxd\";\".x\";;2)</item>  vrne »bx«, torej drugi zadetek za ».x«."
+
+#: func_regex.xhp
+msgctxt ""
+"func_regex.xhp\n"
+"par_id371542291684178\n"
+"help.text"
+msgid "<item type=\"input\">=REGEX(\"axbxcxd\";\"(.)x\";\"$1y\";2)</item>  returns \"axbycxd\", the second match of \"(.)x\" (i.e. \"bx\") replaced with the captured group of one character (i.e. \"b\") followed by \"y\"."
+msgstr "<item type=\"input\">=REGEX(\"axbxcxd\";\"(.)x\";\"$1y\";2)</item>  vrne \"axbycxd\", drugi zadetek \"(.)x\" (t.j. »bx«), zamenjan z zajeto skupino enega znaka (t.j. »b«), čemur sledi »y«."
 
 #: func_regex.xhp
 msgctxt ""
@@ -55239,8 +55262,8 @@ msgctxt ""
 "func_regex.xhp\n"
 "par_id431542233650614\n"
 "help.text"
-msgid "<link href=\"https://userguide.icu-project.org/strings/regexp\" name=\"ICU REGEXP\">ICU regular expressions</link>"
-msgstr "<link href=\"https://userguide.icu-project.org/strings/regexp\" name=\"Dokumentacija regularnih izrazov ICU\">Dokumentacija regularnih izrazov ICU</link> (v angl.)."
+msgid "<link href=\"http://userguide.icu-project.org/strings/regexp\" name=\"ICU REGEXP\">ICU regular expressions</link>"
+msgstr "<link href=\"http://userguide.icu-project.org/strings/regexp\" name=\"Dokumentacija regularnih izrazov ICU\">Dokumentacija regularnih izrazov ICU</link> (v angl.)"
 
 #: func_roundsig.xhp
 msgctxt ""
@@ -55903,8 +55926,8 @@ msgctxt ""
 "func_webservice.xhp\n"
 "hd_id3149012\n"
 "help.text"
-msgid "WEBSERVICE"
-msgstr "WEBSERVICE"
+msgid "<variable id=\"webservicefuncname\"><link href=\"text/scalc/01/func_webservice.xhp#webservice\" name=\"webservice\">WEBSERVICE</link></variable>"
+msgstr "<variable id=\"webservicefuncname\"><link href=\"text/scalc/01/func_webservice.xhp#webservice\" name=\"webservice\">WEBSERVICE</link></variable>"
 
 #: func_webservice.xhp
 msgctxt ""
@@ -55959,8 +55982,8 @@ msgctxt ""
 "func_webservice.xhp\n"
 "hd_id2949012\n"
 "help.text"
-msgid "FILTERXML"
-msgstr "FILTERXML"
+msgid "<variable id=\"filterxmlfuncname\"><link href=\"text/scalc/01/func_webservice.xhp#filterxml\" name=\"filterxml\">FILTERXML</link></variable>"
+msgstr "<variable id=\"filterxmlfuncname\"><link href=\"text/scalc/01/func_webservice.xhp#filterxml\" name=\"filterxml\">FILTERXML</link></variable>"
 
 #: func_webservice.xhp
 msgctxt ""
@@ -56023,8 +56046,8 @@ msgctxt ""
 "func_webservice.xhp\n"
 "hd_id671517132649769\n"
 "help.text"
-msgid "ENCODEURL function"
-msgstr "ENCODEURL"
+msgid "<variable id=\"encodeurlname\"><link href=\"text/scalc/01/func_webservice.xhp#encodeurl\" name=\"linkname\">ENCODEURL</link></variable>"
+msgstr "<variable id=\"encodeurlname\"><link href=\"text/scalc/01/func_webservice.xhp#encodeurl\" name=\"linkname\">ENCODEURL</link></variable>"
 
 #: func_webservice.xhp
 msgctxt ""
