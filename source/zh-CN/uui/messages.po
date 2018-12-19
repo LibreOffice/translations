@@ -4,8 +4,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
 "POT-Creation-Date: 2018-11-05 17:38+0100\n"
-"PO-Revision-Date: 2018-01-24 02:50+0000\n"
-"Last-Translator: 锁琨珑 <suokunlong@126.com>\n"
+"PO-Revision-Date: 2018-12-18 05:01+0000\n"
+"Last-Translator: Dian LI <xslidian@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
@@ -13,8 +13,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Accelerator-Marker: ~\n"
-"X-Generator: LibreOffice\n"
-"X-POOTLE-MTIME: 1516762248.000000\n"
+"X-Generator: Pootle 2.8\n"
+"X-POOTLE-MTIME: 1545109276.000000\n"
 
 #: uui/inc/ids.hrc:27
 msgctxt "RID_UUI_ERRHDL"
@@ -58,6 +58,13 @@ msgid ""
 "\n"
 "Are you certain that this file is a legacy document created many years ago?"
 msgstr ""
+"当心!\n"
+"\n"
+"您即将从下列 URL 加载非常罕见的文件 ($(ARG2)):\n"
+"\n"
+"$(ARG1)\n"
+"\n"
+"您确定此文件是多年前创建的遗留文档吗?"
 
 #: uui/inc/ids.hrc:39
 msgctxt "RID_UUI_ERRHDL"
@@ -470,12 +477,12 @@ msgstr "输入密码以修改文件：\n"
 #: uui/inc/strings.hrc:27
 msgctxt "STR_ENTER_SIMPLE_PASSWORD"
 msgid "Enter password: "
-msgstr "输入密码:"
+msgstr "输入密码: "
 
 #: uui/inc/strings.hrc:28
 msgctxt "STR_CONFIRM_SIMPLE_PASSWORD"
 msgid "Confirm password: "
-msgstr "确认密码:"
+msgstr "确认密码: "
 
 #: uui/inc/strings.hrc:29
 msgctxt "STR_TITLE_CREATE_PASSWORD"
@@ -504,6 +511,9 @@ msgid ""
 "\n"
 "Open document read-only, or ignore own file locking and open the document for editing."
 msgstr ""
+"文档“$(ARG1)”已于$(ARG2)被您在其他系统编辑时锁定\n"
+"\n"
+"以只读方式打开文档，或者忽略您自身对文件的锁定，并打开文档进行编辑。"
 
 #: uui/inc/strings.hrc:35
 msgctxt "STR_ALREADYOPEN_READONLY_BTN"
@@ -522,6 +532,9 @@ msgid ""
 "\n"
 "Close document on other system and retry saving or ignore own file locking and save current document."
 msgstr ""
+"文档「$(ARG1)」已被您自己在其他系统中编辑时锁定，开始于 $(ARG2)\n"
+"\n"
+"请在其他系统关闭文档，然后重新尝试保存，或者忽略自己的文件锁，强行保存当前文档。"
 
 #: uui/inc/strings.hrc:38
 msgctxt "STR_ALREADYOPEN_RETRY_SAVE_BTN"
@@ -579,11 +592,18 @@ msgid ""
 "\n"
 "$(ARG3)"
 msgstr ""
+"文档「$(ARG1)」已被该用户锁定编辑:\n"
+"\n"
+"$(ARG2)\n"
+"\n"
+"您可以以只读模式打开该文档，也可以打开该文档的副本来编辑。\n"
+"\n"
+"$(ARG3)"
 
 #: uui/inc/strings.hrc:51
 msgctxt "STR_OPENLOCKED_ALLOWIGNORE_MSG"
 msgid "You may also ignore the file locking and open the document for editing."
-msgstr ""
+msgstr "您也可以忽略文件锁，强行打开文件来编辑。"
 
 #: uui/inc/strings.hrc:52
 msgctxt "STR_OPENLOCKED_OPENREADONLY_BTN"
@@ -612,6 +632,9 @@ msgid ""
 "\n"
 "Do you want to save anyway?"
 msgstr ""
+"文件自从被 %PRODUCTNAME 打开编辑以来已发生变更。保存您的版本将覆盖其他人作出的变更。\n"
+"\n"
+"是否仍然保存?"
 
 #: uui/inc/strings.hrc:58
 msgctxt "STR_FILECHANGED_SAVEANYWAY_BTN"
@@ -632,6 +655,11 @@ msgid ""
 "\n"
 "Try again later to save document or save a copy of that document."
 msgstr ""
+"文档「$(ARG1)」已被该用户锁定编辑:\n"
+"\n"
+"$(ARG2)\n"
+"\n"
+"请稍后再尝试保存文件，或保存该文件的副本。"
 
 #: uui/inc/strings.hrc:62
 msgctxt "STR_OVERWRITE_IGNORELOCK_MSG"
@@ -642,6 +670,11 @@ msgid ""
 "\n"
 "You may try to ignore the file locking and overwrite the existing document."
 msgstr ""
+"文档「$(ARG1)」已被该用户锁定编辑:\n"
+"\n"
+"$(ARG2)\n"
+"\n"
+"您可以尝试忽略文件锁，并覆盖现有文档。"
 
 #: uui/inc/strings.hrc:63
 msgctxt "STR_TRYLATER_RETRYSAVING_BTN"
@@ -724,7 +757,7 @@ msgstr "验证码"
 #: uui/uiconfig/ui/authfallback.ui:113
 msgctxt "authfallback|label1"
 msgid "Enter the 6 digit PIN:"
-msgstr "输入 6 位 PIN 码："
+msgstr "输入 6 位 PIN 码:"
 
 #: uui/uiconfig/ui/filterselect.ui:16
 msgctxt "filterselect|FilterSelectDialog"
@@ -749,17 +782,17 @@ msgstr "记住密码(_R)"
 #: uui/uiconfig/ui/logindialog.ui:129
 msgctxt "logindialog|accountft"
 msgid "A_ccount:"
-msgstr "账号(_C)："
+msgstr "账号(_C):"
 
 #: uui/uiconfig/ui/logindialog.ui:143
 msgctxt "logindialog|passwordft"
 msgid "Pass_word:"
-msgstr "密码(_W)："
+msgstr "密码(_W):"
 
 #: uui/uiconfig/ui/logindialog.ui:182
 msgctxt "logindialog|nameft"
 msgid "_User name:"
-msgstr "用户名(_U)："
+msgstr "用户名(_U):"
 
 #: uui/uiconfig/ui/logindialog.ui:196
 msgctxt "logindialog|loginrealm"
@@ -800,7 +833,7 @@ msgstr ""
 #: uui/uiconfig/ui/logindialog.ui:252
 msgctxt "logindialog|errorft"
 msgid "Message from server:"
-msgstr "来自服务器的消息："
+msgstr "来自服务器的消息:"
 
 #: uui/uiconfig/ui/macrowarnmedium.ui:7
 msgctxt "macrowarnmedium|MacroWarnMedium"
@@ -814,6 +847,9 @@ msgid ""
 "\n"
 "Macros may contain viruses. Disabling macros for a document is always safe. If you disable macros you may lose functionality provided by the document macros."
 msgstr ""
+"该文档含有宏。\n"
+"\n"
+"宏可能会包含病毒。在一个文档中禁用宏永远是安全的。如果您禁用宏，则由该宏提供的相应功能将不可用。"
 
 #: uui/uiconfig/ui/macrowarnmedium.ui:27
 msgctxt "macrowarnmedium|cancel"
@@ -828,7 +864,7 @@ msgstr "启用宏(_E)"
 #: uui/uiconfig/ui/macrowarnmedium.ui:88
 msgctxt "macrowarnmedium|descr1Label"
 msgid "The document contains document macros signed by:"
-msgstr "此文档中包含由以下人员签署的宏："
+msgstr "此文档中包含由以下人员签署的宏:"
 
 #: uui/uiconfig/ui/macrowarnmedium.ui:97
 msgctxt "macrowarnmedium|alwaysTrustCheckbutton"
@@ -838,7 +874,7 @@ msgstr "总是信任来自该来源的宏(_A)"
 #: uui/uiconfig/ui/macrowarnmedium.ui:128
 msgctxt "macrowarnmedium|viewSignsButton"
 msgid "_View Signatures…"
-msgstr "查看签名(_V)..."
+msgstr "查看签名(_V)…"
 
 #: uui/uiconfig/ui/masterpassworddlg.ui:8
 msgctxt "masterpassworddlg|MasterPasswordDialog"
@@ -848,7 +884,7 @@ msgstr "输入主密码"
 #: uui/uiconfig/ui/masterpassworddlg.ui:90
 msgctxt "masterpassworddlg|label1"
 msgid "_Enter password:"
-msgstr "输入密码(_E)："
+msgstr "输入密码(_E):"
 
 #: uui/uiconfig/ui/password.ui:8
 msgctxt "password|PasswordDialog"
@@ -868,12 +904,12 @@ msgstr "网页连接的密码由一个主密码进行保护。在一个会话中
 #: uui/uiconfig/ui/setmasterpassworddlg.ui:105
 msgctxt "setmasterpassworddlg|label2"
 msgid "_Enter password:"
-msgstr "输入密码(_E)："
+msgstr "输入密码(_E):"
 
 #: uui/uiconfig/ui/setmasterpassworddlg.ui:133
 msgctxt "setmasterpassworddlg|label3"
 msgid "_Reenter password:"
-msgstr "再次输入密码(_R)："
+msgstr "再次输入密码(_R):"
 
 #: uui/uiconfig/ui/setmasterpassworddlg.ui:163
 msgctxt "setmasterpassworddlg|label4"
@@ -933,4 +969,4 @@ msgstr "不接受该证书，并且不连接到该网站"
 #: uui/uiconfig/ui/unknownauthdialog.ui:113
 msgctxt "unknownauthdialog|examine"
 msgid "Examine Certificate…"
-msgstr "检查证书..."
+msgstr "检查证书…"
