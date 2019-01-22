@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
 "POT-Creation-Date: 2018-11-05 17:38+0100\n"
-"PO-Revision-Date: 2017-12-15 00:30+0000\n"
+"PO-Revision-Date: 2019-01-20 22:15+0000\n"
 "Last-Translator: Mihkel Tõnnov <mihhkel@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: et\n"
@@ -13,8 +13,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Accelerator-Marker: ~\n"
-"X-Generator: LibreOffice\n"
-"X-POOTLE-MTIME: 1513297834.000000\n"
+"X-Generator: Pootle 2.8\n"
+"X-POOTLE-MTIME: 1548022555.000000\n"
 
 #: uui/inc/ids.hrc:27
 msgctxt "RID_UUI_ERRHDL"
@@ -58,6 +58,13 @@ msgid ""
 "\n"
 "Are you certain that this file is a legacy document created many years ago?"
 msgstr ""
+"Ettevaatust!\n"
+"\n"
+"Üritad laadida äärmiselt ebatavalist tüüpi faili ($(ARG2)) aadressilt:\n"
+"\n"
+"$(ARG1)\n"
+"\n"
+"Kas oled kindel, et see on vana, pärandvormingus dokument?"
 
 #: uui/inc/ids.hrc:39
 msgctxt "RID_UUI_ERRHDL"
@@ -504,11 +511,14 @@ msgid ""
 "\n"
 "Open document read-only, or ignore own file locking and open the document for editing."
 msgstr ""
+"Dokumendifaili '$(ARG1)' oled sa ise redigeerimiseks lukustatud teises süsteemis alates $(ARG2).\n"
+"\n"
+"Ava dokument kirjutuskaitstuna või eira oma lukustust ja ava dokument redigeerimiseks."
 
 #: uui/inc/strings.hrc:35
 msgctxt "STR_ALREADYOPEN_READONLY_BTN"
 msgid "Open ~Read-Only"
-msgstr "Avamine kirjutuskaitstult"
+msgstr "Ava kirjutuskaitstult"
 
 #: uui/inc/strings.hrc:36
 msgctxt "STR_ALREADYOPEN_OPEN_BTN"
@@ -522,6 +532,9 @@ msgid ""
 "\n"
 "Close document on other system and retry saving or ignore own file locking and save current document."
 msgstr ""
+"Dokumendifaili '$(ARG1)' oled sa ise redigeerimiseks lukustatud teises süsteemis alates $(ARG2).\n"
+"\n"
+"Sulge teises süsteemis dokument ja proovi uuesti salvestada või eira oma lukustust ja salvesta aktiivne dokument."
 
 #: uui/inc/strings.hrc:38
 msgctxt "STR_ALREADYOPEN_RETRY_SAVE_BTN"
@@ -531,7 +544,7 @@ msgstr "Proovi uuesti salvestada"
 #: uui/inc/strings.hrc:39
 msgctxt "STR_ALREADYOPEN_SAVE_BTN"
 msgid "~Save"
-msgstr "Salvesta"
+msgstr "Eira ja salvesta"
 
 #: uui/inc/strings.hrc:41
 msgctxt "RID_KEEP_PASSWORD"
@@ -561,7 +574,7 @@ msgstr "%PRODUCTNAME'il polnud võimalik faili ainukasutamiseks lukustada, kuna 
 #: uui/inc/strings.hrc:47
 msgctxt "STR_LOCKFAILED_OPENREADONLY_BTN"
 msgid "Open ~Read-Only"
-msgstr "Avamine kirjutuskaitstult"
+msgstr "Ava kirjutuskaitstult"
 
 #: uui/inc/strings.hrc:49
 msgctxt "STR_OPENLOCKED_TITLE"
@@ -579,26 +592,32 @@ msgid ""
 "\n"
 "$(ARG3)"
 msgstr ""
+"Dokumendifaili '$(ARG1)' on redigeerimiseks lukustanud\n"
+"$(ARG2).\n"
+"\n"
+"Ava dokument kirjutuskaitstuna või ava redigeerimiseks dokumendi koopia.\n"
+"\n"
+"$(ARG3)"
 
 #: uui/inc/strings.hrc:51
 msgctxt "STR_OPENLOCKED_ALLOWIGNORE_MSG"
 msgid "You may also ignore the file locking and open the document for editing."
-msgstr ""
+msgstr "Võid ka faililukustust eirata ja dokumendi redigeerimiseks avada."
 
 #: uui/inc/strings.hrc:52
 msgctxt "STR_OPENLOCKED_OPENREADONLY_BTN"
 msgid "Open ~Read-Only"
-msgstr "Avamine kirjutuskaitstult"
+msgstr "Ava kirjutuskaitstult"
 
 #: uui/inc/strings.hrc:53
 msgctxt "STR_OPENLOCKED_OPENCOPY_BTN"
 msgid "Open ~Copy"
-msgstr "Koopia avamine"
+msgstr "Ava koopia"
 
 #: uui/inc/strings.hrc:54
 msgctxt "STR_UNKNOWNUSER"
 msgid "Unknown User"
-msgstr "Tundmatu kasutaja"
+msgstr "tundmatu kasutaja"
 
 #: uui/inc/strings.hrc:56
 msgctxt "STR_FILECHANGED_TITLE"
@@ -612,6 +631,9 @@ msgid ""
 "\n"
 "Do you want to save anyway?"
 msgstr ""
+"Faili on muudetud pärast seda, kui see avati %PRODUCTNAME'is redigeerimiseks. Sinu dokumendiversiooni salvestamine kirjutab üle teiste tehtud muudatused.\n"
+"\n"
+"Kas soovid ikkagi salvestada?"
 
 #: uui/inc/strings.hrc:58
 msgctxt "STR_FILECHANGED_SAVEANYWAY_BTN"
@@ -632,6 +654,10 @@ msgid ""
 "\n"
 "Try again later to save document or save a copy of that document."
 msgstr ""
+"Dokumendifaili '$(ARG1)' on redigeerimiseks lukustanud\n"
+"$(ARG2).\n"
+"\n"
+"Proovi dokumenti salvestada hiljem või salvesta dokument uue nimega."
 
 #: uui/inc/strings.hrc:62
 msgctxt "STR_OVERWRITE_IGNORELOCK_MSG"
@@ -642,6 +668,10 @@ msgid ""
 "\n"
 "You may try to ignore the file locking and overwrite the existing document."
 msgstr ""
+"Dokumendifaili '$(ARG1)' on redigeerimiseks lukustanud\n"
+"$(ARG2).\n"
+"\n"
+"Võid proovida faililukustust eirata ja dokumendi üle kirjutada."
 
 #: uui/inc/strings.hrc:63
 msgctxt "STR_TRYLATER_RETRYSAVING_BTN"
@@ -810,6 +840,9 @@ msgid ""
 "\n"
 "Macros may contain viruses. Disabling macros for a document is always safe. If you disable macros you may lose functionality provided by the document macros."
 msgstr ""
+"See dokument sisaldab makrosid.\n"
+"\n"
+"Makrod võivad sisaldada viiruseid. Makrode keelamine on alati turvaline, kuid keelates makrod, võid kaotada ka dokumendi makrode abil pakutava funktsionaalsuse."
 
 #: uui/uiconfig/ui/macrowarnmedium.ui:27
 msgctxt "macrowarnmedium|cancel"
