@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
 "POT-Creation-Date: 2018-05-22 13:16+0200\n"
-"PO-Revision-Date: 2018-12-18 10:31+0000\n"
+"PO-Revision-Date: 2019-03-19 07:16+0000\n"
 "Last-Translator: Dian LI <xslidian@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: zh_CN\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Accelerator-Marker: ~\n"
 "X-Generator: Pootle 2.8\n"
-"X-POOTLE-MTIME: 1545129083.000000\n"
+"X-POOTLE-MTIME: 1552979808.000000\n"
 
 #: uui/inc/ids.hrc:27
 msgctxt "RID_UUI_ERRHDL"
@@ -58,12 +58,13 @@ msgid ""
 "\n"
 "Are you certain that this file is a legacy document created many years ago?"
 msgstr ""
-"您即将从URL：\n"
+"当心!\n"
 "\n"
-"$(ARG1) \n"
+"您即将从下列 URL 加载非常罕见的文件 ($(ARG2)):\n"
 "\n"
-"加载一种非常规的文档($(ARG2))\n"
-"您确定此文件是多年前创建的遗留文档吗？"
+"$(ARG1)\n"
+"\n"
+"您确定此文件是多年前创建的遗留文档吗?"
 
 #: uui/inc/ids.hrc:39
 msgctxt "RID_UUI_ERRHDL"
@@ -98,7 +99,7 @@ msgstr "无法写入 $(ARG1) 的数据。"
 #: uui/inc/ids.hrc:51
 msgctxt "RID_UUI_ERRHDL"
 msgid "Action impossible: $(ARG1) is the current directory."
-msgstr "无法执行操作：$(ARG1) 是当前目录。"
+msgstr "无法执行操作: $(ARG1) 是当前目录。"
 
 #: uui/inc/ids.hrc:53
 msgctxt "RID_UUI_ERRHDL"
@@ -108,7 +109,7 @@ msgstr "$(ARG1) 尚未准备就绪。"
 #: uui/inc/ids.hrc:55
 msgctxt "RID_UUI_ERRHDL"
 msgid "Action impossible: $(ARG1) and $(ARG2) are different devices (drives)."
-msgstr "无法执行操作：$(ARG1) 和 $(ARG2) 是不同的设备（驱动器）。"
+msgstr "无法执行操作: $(ARG1) 和 $(ARG2) 是不同的设备 (驱动器)。"
 
 #: uui/inc/ids.hrc:57
 msgctxt "RID_UUI_ERRHDL"
@@ -128,7 +129,7 @@ msgstr "$(ARG1) 包含无效字符。"
 #: uui/inc/ids.hrc:63
 msgctxt "RID_UUI_ERRHDL"
 msgid "The device (drive) $(ARG1) is invalid."
-msgstr "设备（驱动器）$(ARG1) 无效。"
+msgstr "设备 (驱动器) $(ARG1) 无效。"
 
 #: uui/inc/ids.hrc:65
 msgctxt "RID_UUI_ERRHDL"
@@ -425,7 +426,7 @@ msgstr ""
 #: uui/inc/ids.hrc:162
 msgctxt "STR_UUI_SSLWARN_EXPIRED_TITLE"
 msgid "Security Warning: Server Certificate Invalid"
-msgstr "安全警告：服务器证书无效"
+msgstr "安全警告: 服务器证书无效"
 
 #: uui/inc/ids.hrc:163
 msgctxt "STR_UUI_SSLWARN_DOMAINMISMATCH"
@@ -445,7 +446,7 @@ msgstr ""
 #: uui/inc/ids.hrc:164
 msgctxt "STR_UUI_SSLWARN_DOMAINMISMATCH_TITLE"
 msgid "Security Warning: Server Certificate Expired"
-msgstr "安全警告：服务器证书过期"
+msgstr "安全警告: 服务器证书过期"
 
 #: uui/inc/ids.hrc:165
 msgctxt "STR_UUI_SSLWARN_INVALID"
@@ -461,17 +462,17 @@ msgstr ""
 #: uui/inc/ids.hrc:166
 msgctxt "STR_UUI_SSLWARN_INVALID_TITLE"
 msgid "Security Warning: Domain Name Mismatch"
-msgstr "安全警告：域名不匹配"
+msgstr "安全警告: 域名不匹配"
 
 #: uui/inc/strings.hrc:25
 msgctxt "STR_ENTER_PASSWORD_TO_OPEN"
 msgid "Enter password to open file: \n"
-msgstr "输入密码以打开文件：\n"
+msgstr "输入密码以打开文件: \n"
 
 #: uui/inc/strings.hrc:26
 msgctxt "STR_ENTER_PASSWORD_TO_MODIFY"
 msgid "Enter password to modify file: \n"
-msgstr "输入密码以修改文件：\n"
+msgstr "输入密码以修改文件: \n"
 
 #: uui/inc/strings.hrc:27
 msgctxt "STR_ENTER_SIMPLE_PASSWORD"
@@ -510,7 +511,7 @@ msgid ""
 "\n"
 "Open document read-only, or ignore own file locking and open the document for editing."
 msgstr ""
-"文档“$(ARG1)”已于$(ARG2)被您在其他系统编辑时锁定\n"
+"文档「$(ARG1)」已于$(ARG2)被您在其他系统编辑时锁定\n"
 "\n"
 "以只读方式打开文档，或者忽略您自身对文件的锁定，并打开文档进行编辑。"
 
@@ -691,8 +692,8 @@ msgid ""
 "A file with the name \"%NAME\" already exists in the location \"%FOLDER\".\n"
 "Choose Replace to overwrite the existing file or provide a new name."
 msgstr ""
-"名为 \"%NAME\" 的文件在以下位置已经存在：\"%FOLDER\" .\n"
-"要覆盖原来的文件，请选择“覆盖”，否则请输入一个新的文件名。"
+"名为 \"%NAME\" 的文件在以下位置已经存在: \"%FOLDER\" .\n"
+"要覆盖原来的文件，请选择「覆盖」，否则请输入一个新的文件名。"
 
 #: uui/inc/strings.hrc:67
 msgctxt "STR_NAME_CLASH_RENAME_ONLY"
@@ -700,7 +701,7 @@ msgid ""
 "A file with the name \"%NAME\" already exists in the location \"%FOLDER\".\n"
 "Please enter a new name."
 msgstr ""
-"名为 \"%NAME\" 的文件在以下位置已经存在：\"%FOLDER\" .\n"
+"名为 \"%NAME\" 的文件在以下位置已经存在: \"%FOLDER\" .\n"
 "请输入一个新的文件名。"
 
 #: uui/inc/strings.hrc:68
@@ -756,7 +757,7 @@ msgstr "验证码"
 #: uui/uiconfig/ui/authfallback.ui:113
 msgctxt "authfallback|label1"
 msgid "Enter the 6 digit PIN:"
-msgstr "输入 6 位 PIN 码："
+msgstr "输入 6 位 PIN 码:"
 
 #: uui/uiconfig/ui/filterselect.ui:16
 msgctxt "filterselect|FilterSelectDialog"
@@ -781,17 +782,17 @@ msgstr "记住密码(_R)"
 #: uui/uiconfig/ui/logindialog.ui:129
 msgctxt "logindialog|accountft"
 msgid "A_ccount:"
-msgstr "账号(_C)："
+msgstr "账号(_C):"
 
 #: uui/uiconfig/ui/logindialog.ui:143
 msgctxt "logindialog|passwordft"
 msgid "Pass_word:"
-msgstr "密码(_W)："
+msgstr "密码(_W):"
 
 #: uui/uiconfig/ui/logindialog.ui:182
 msgctxt "logindialog|nameft"
 msgid "_User name:"
-msgstr "用户名(_U)："
+msgstr "用户名(_U):"
 
 #: uui/uiconfig/ui/logindialog.ui:196
 msgctxt "logindialog|loginrealm"
@@ -799,8 +800,8 @@ msgid ""
 "Enter user name and password for:\n"
 "“%2” on %1"
 msgstr ""
-"输入用户名和密码：\n"
-"“%2” 位于 %1"
+"输入用户名和密码: \n"
+"「%2」位于 %1"
 
 #: uui/uiconfig/ui/logindialog.ui:210
 msgctxt "logindialog|wrongloginrealm"
@@ -808,8 +809,8 @@ msgid ""
 "Wrong user name and password for:\n"
 "“%2” on %1"
 msgstr ""
-"用户名或密码错误：\n"
-"用户“%2” 位于 %1"
+"用户名或密码错误: \n"
+"用户「%2」位于 %1"
 
 #: uui/uiconfig/ui/logindialog.ui:224
 msgctxt "logindialog|wrongrequestinfo"
@@ -817,7 +818,7 @@ msgid ""
 "Wrong user name and password for:\n"
 "%1"
 msgstr ""
-"用户名或密码错误：\n"
+"用户名或密码错误: \n"
 "%1"
 
 #: uui/uiconfig/ui/logindialog.ui:238
@@ -826,13 +827,13 @@ msgid ""
 "Enter user name and password for:\n"
 "%1"
 msgstr ""
-"输入用户名和密码：\n"
+"输入用户名和密码: \n"
 "%1"
 
 #: uui/uiconfig/ui/logindialog.ui:252
 msgctxt "logindialog|errorft"
 msgid "Message from server:"
-msgstr "来自服务器的消息："
+msgstr "来自服务器的消息:"
 
 #: uui/uiconfig/ui/macrowarnmedium.ui:8
 msgctxt "macrowarnmedium|MacroWarnMedium"
@@ -863,7 +864,7 @@ msgstr "启用宏(_E)"
 #: uui/uiconfig/ui/macrowarnmedium.ui:89
 msgctxt "macrowarnmedium|descr1Label"
 msgid "The document contains document macros signed by:"
-msgstr "此文档中包含由以下人员签署的宏："
+msgstr "此文档中包含由以下人员签署的宏:"
 
 #: uui/uiconfig/ui/macrowarnmedium.ui:98
 msgctxt "macrowarnmedium|alwaysTrustCheckbutton"
@@ -883,7 +884,7 @@ msgstr "输入主密码"
 #: uui/uiconfig/ui/masterpassworddlg.ui:90
 msgctxt "masterpassworddlg|label1"
 msgid "_Enter password:"
-msgstr "输入密码(_E)："
+msgstr "输入密码(_E):"
 
 #: uui/uiconfig/ui/password.ui:8
 msgctxt "password|PasswordDialog"
@@ -903,17 +904,17 @@ msgstr "网页连接的密码由一个主密码进行保护。在一个会话中
 #: uui/uiconfig/ui/setmasterpassworddlg.ui:105
 msgctxt "setmasterpassworddlg|label2"
 msgid "_Enter password:"
-msgstr "输入密码(_E)："
+msgstr "输入密码(_E):"
 
 #: uui/uiconfig/ui/setmasterpassworddlg.ui:133
 msgctxt "setmasterpassworddlg|label3"
 msgid "_Reenter password:"
-msgstr "再次输入密码(_R)："
+msgstr "再次输入密码(_R):"
 
 #: uui/uiconfig/ui/setmasterpassworddlg.ui:163
 msgctxt "setmasterpassworddlg|label4"
 msgid "Caution: If you forget the master password, you will be unable to access any of the information protected by it. Passwords are case sensitive."
-msgstr "警告：如果您忘记了主密码，您将无法访问被保护的任何信息。密码是区分大小写的。"
+msgstr "警告: 如果您忘记了主密码，您将无法访问被保护的任何信息。密码是区分大小写的。"
 
 #: uui/uiconfig/ui/simplenameclash.ui:8
 msgctxt "simplenameclash|SimpleNameClashDialog"
@@ -933,7 +934,7 @@ msgstr "重命名"
 #: uui/uiconfig/ui/sslwarndialog.ui:8
 msgctxt "sslwarndialog|SSLWarnDialog"
 msgid "Security Warning: "
-msgstr "安全警告： "
+msgstr "安全警告: "
 
 #: uui/uiconfig/ui/sslwarndialog.ui:25
 msgctxt "sslwarndialog|ok"
