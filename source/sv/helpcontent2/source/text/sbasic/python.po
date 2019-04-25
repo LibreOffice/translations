@@ -1,0 +1,1953 @@
+#. extracted from helpcontent2/source/text/sbasic/python
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
+"POT-Creation-Date: 2019-04-24 18:25+0200\n"
+"PO-Revision-Date: 2019-02-04 10:31+0000\n"
+"Last-Translator: Robert <riedelkarlsson@gmail.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: sv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Accelerator-Marker: ~\n"
+"X-Generator: LibreOffice\n"
+"X-POOTLE-MTIME: 1549276270.000000\n"
+
+#: main0000.xhp
+msgctxt ""
+"main0000.xhp\n"
+"tit\n"
+"help.text"
+msgid "Python Scripts"
+msgstr "Python script"
+
+#: main0000.xhp
+msgctxt ""
+"main0000.xhp\n"
+"bm_id491543348147708\n"
+"help.text"
+msgid "<bookmark_value>macros;Python scripts</bookmark_value>        <bookmark_value>Python;macros</bookmark_value>        <bookmark_value>scripts;Python</bookmark_value>"
+msgstr ""
+
+#: main0000.xhp
+msgctxt ""
+"main0000.xhp\n"
+"hd_id3154232\n"
+"help.text"
+msgid "<variable id=\"pythonscriptshelp\"><link href=\"text/sbasic/python/main0000.xhp\" name=\"mainpython\">%PRODUCTNAME Python Scripts Help</link></variable>"
+msgstr ""
+
+#: main0000.xhp
+msgctxt ""
+"main0000.xhp\n"
+"par_id3153894\n"
+"help.text"
+msgid "%PRODUCTNAME provides an Application Programming Interface (API) that allows controlling the $[officename] components with different programming languages by using the $[officename] Software Development Kit (SDK). For more information about the $[officename] API and the Software Development Kit, visit <link href=\"https://api.libreoffice.org/\" name=\"api.libreoffice.org\">https://api.libreoffice.org</link>"
+msgstr ""
+
+#: main0000.xhp
+msgctxt ""
+"main0000.xhp\n"
+"par_id3147226\n"
+"help.text"
+msgid "This help section explains the most common Python script functions for %PRODUCTNAME. For more in-depth information please refer to the <link href=\"https://wiki.documentfoundation.org/Macros/Python_Design_Guide\" name=\"wiki.documentfoundation.org PYTHON Guide\">Designing & Developing Python Applications</link> on the Wiki."
+msgstr ""
+
+#: main0000.xhp
+msgctxt ""
+"main0000.xhp\n"
+"hd_id3146957\n"
+"help.text"
+msgid "Working with Python Scripts in %PRODUCTNAME"
+msgstr ""
+
+#: main0000.xhp
+msgctxt ""
+"main0000.xhp\n"
+"N0102\n"
+"help.text"
+msgid "You can execute Python scripts choosing <menuitem>Tools - Macros - Run Macro</menuitem>. Editing scripts can be done with your preferred text editor. Python scripts are present in various locations detailed hereafter. You can refer to Programming examples for macros illustrating how to run the Python interactive console from %PRODUCTNAME."
+msgstr ""
+
+#: python_dialogs.xhp
+msgctxt ""
+"python_dialogs.xhp\n"
+"tit\n"
+"help.text"
+msgid "Python: Opening a Dialog"
+msgstr ""
+
+#: python_dialogs.xhp
+msgctxt ""
+"python_dialogs.xhp\n"
+"N0334\n"
+"help.text"
+msgid "<bookmark_value>Python;dialogs</bookmark_value>        <bookmark_value>dialog box;Python</bookmark_value>        <bookmark_value>dialogs;Python</bookmark_value>"
+msgstr ""
+
+#: python_dialogs.xhp
+msgctxt ""
+"python_dialogs.xhp\n"
+"N0336\n"
+"help.text"
+msgid "<variable id=\"pythondialog\"><link href=\"text/sbasic/python/python_dialogs.xhp\" name=\"command_name\">Opening a Dialog in Python</link></variable>"
+msgstr ""
+
+#: python_dialogs.xhp
+msgctxt ""
+"python_dialogs.xhp\n"
+"N0337\n"
+"help.text"
+msgid "%PRODUCTNAME static dialogs are created with the <link href=\"text/sbasic/guide/create_dialog.xhp\" name=\"dialog editor\">Dialog editor</link> and are stored in varying places according to their personal (My Macros), shared (%PRODUCTNAME Macros) or document-embedded nature. In reverse, dynamic dialogs are constructed at runtime, from Basic or Python scripts, or using any other <link href=\"text/shared/guide/scripting.xhp\">%PRODUCTNAME supported language</link> for that matter. Opening static dialogs with Python is illustrated herewith. Exception handling and internationalization are omitted for clarity."
+msgstr ""
+
+#: python_dialogs.xhp
+msgctxt ""
+"python_dialogs.xhp\n"
+"N0338\n"
+"help.text"
+msgid "My Macros or %PRODUCTNAME Macros dialogs"
+msgstr ""
+
+#: python_dialogs.xhp
+msgctxt ""
+"python_dialogs.xhp\n"
+"N0339\n"
+"help.text"
+msgid "The examples below open <literal>Access2Base Trace</literal> console or the imported <literal>TutorialsDialog</literal> dialog with <menuitem>Tools – Macros – Run Macro...</menuitem> menu:"
+msgstr ""
+
+#: python_dialogs.xhp
+msgctxt ""
+"python_dialogs.xhp\n"
+"N0364\n"
+"help.text"
+msgid "Document embedded dialogs"
+msgstr ""
+
+#: python_dialogs.xhp
+msgctxt ""
+"python_dialogs.xhp\n"
+"N0365\n"
+"help.text"
+msgid "The example below opens a newly edited <literal>Dialog1</literal> dialog from a document with <menuitem>Tools – Macros – Run Macro...</menuitem> menu:"
+msgstr ""
+
+#: python_dialogs.xhp
+msgctxt ""
+"python_dialogs.xhp\n"
+"N0370\n"
+"help.text"
+msgid "\"\"\" Display a doc-based dialog \"\"\""
+msgstr ""
+
+#: python_dialogs.xhp
+msgctxt ""
+"python_dialogs.xhp\n"
+"N0381\n"
+"help.text"
+msgid "Refer to <literal>msgbox.py</literal> in <literal>{installation}/program/</literal> directory for Python dynamic dialog examples."
+msgstr ""
+
+#: python_examples.xhp
+msgctxt ""
+"python_examples.xhp\n"
+"tit\n"
+"help.text"
+msgid "Python examples"
+msgstr ""
+
+#: python_examples.xhp
+msgctxt ""
+"python_examples.xhp\n"
+"bm_id20191031405\n"
+"help.text"
+msgid "<bookmark_value>Python;examples</bookmark_value>            <bookmark_value>Python;shell</bookmark_value>            <bookmark_value>Python;platform</bookmark_value>            <bookmark_value>Python;session</bookmark_value>            <bookmark_value>Python;screen input/output</bookmark_value>"
+msgstr ""
+
+#: python_examples.xhp
+msgctxt ""
+"python_examples.xhp\n"
+"hd_id201901031407\n"
+"help.text"
+msgid "<variable id=\"pythonexamples2\"><link href=\"text/sbasic/python/python_examples.xhp\" name=\"python examples\">Python programming examples</link></variable>"
+msgstr ""
+
+#: python_ide.xhp
+msgctxt ""
+"python_ide.xhp\n"
+"tit\n"
+"help.text"
+msgid "IDE for Python"
+msgstr ""
+
+#: python_ide.xhp
+msgctxt ""
+"python_ide.xhp\n"
+"bm_id761543349138561\n"
+"help.text"
+msgid "<bookmark_value>APSO</bookmark_value>            <bookmark_value>Alternative Python Scripts Organizer</bookmark_value>            <bookmark_value>python;IDE - integrated development environment</bookmark_value>            <bookmark_value>python;editor</bookmark_value>"
+msgstr ""
+
+#: python_ide.xhp
+msgctxt ""
+"python_ide.xhp\n"
+"hd_id151543348965464\n"
+"help.text"
+msgid "<variable id=\"pythonideh1\"><link href=\"text/sbasic/python/python_ide.xhp\" name=\"Python IDE Setup\">Setting up an Integrated Development Environment (IDE) for Python</link></variable>"
+msgstr ""
+
+#: python_ide.xhp
+msgctxt ""
+"python_ide.xhp\n"
+"par_id541543348965465\n"
+"help.text"
+msgid "Writing Python macros requires extra configuration steps to set an IDE of choice."
+msgstr ""
+
+#: python_ide.xhp
+msgctxt ""
+"python_ide.xhp\n"
+"N0106\n"
+"help.text"
+msgid "Unlike Basic language macros development in %PRODUCTNAME, developing Python scripts for %PRODUCTNAME requires to configure an external Integrated Development Environment (IDE). Multiple IDEs are available that range from beginners to advanced Python coders. While using a Python IDE programmers benefit from numerous features such as syntax highlighting, code folding, class browsing, code completion, coding standard enforcement, test driven development, debugging, version control and many more. You can refer to <link href=\"https://wiki.documentfoundation.org/Macros/Python_Design_Guide\" name=\"Designing & Developing Python Applications\">Designing & Developing Python Applications</link> on the Wiki for more in-depth information about the setup of a bridge between your IDE and a running instance %PRODUCTNAME."
+msgstr ""
+
+#: python_ide.xhp
+msgctxt ""
+"python_ide.xhp\n"
+"hd_id761544698669786\n"
+"help.text"
+msgid "The APSO Extension"
+msgstr ""
+
+#: python_ide.xhp
+msgctxt ""
+"python_ide.xhp\n"
+"N0104\n"
+"help.text"
+msgid "The <link href=\"https://extensions.libreoffice.org/extensions/apso-alternative-script-organizer-for-python\" name=\"Alternative Python Script Organizer (APSO)\">Alternative Python Script Organizer (APSO)</link> extension eases the edition of Python scripts, in particular when embedded in a document. Using APSO you can configure your preferred source code editor, start the integrated Python shell and debug Python scripts. Extensions exist that help inspect arbitrary UNO objects, refer to <link href=\"https://wiki.documentfoundation.org/Macros/Python_Design_Guide\" name=\"eDesigning & Developing Python Applications\">Designing & Developing Python Applications</link> for additional details on such extensions."
+msgstr ""
+
+#: python_import.xhp
+msgctxt ""
+"python_import.xhp\n"
+"tit\n"
+"help.text"
+msgid "Python : Importing Modules"
+msgstr ""
+
+#: python_import.xhp
+msgctxt ""
+"python_import.xhp\n"
+"N0461\n"
+"help.text"
+msgid "<bookmark_value>Python;import</bookmark_value>        <bookmark_value>Python;Modules</bookmark_value>        <bookmark_value>Python;pythonpath</bookmark_value>        <bookmark_value>PythonLibraries</bookmark_value>"
+msgstr ""
+
+#: python_import.xhp
+msgctxt ""
+"python_import.xhp\n"
+"N0462\n"
+"help.text"
+msgid "<variable id=\"pythonimporth1\"><link href=\"text/sbasic/python/python_import.xhp\" name=\"python imports\">Importing Python Modules</link></variable>"
+msgstr ""
+
+#: python_import.xhp
+msgctxt ""
+"python_import.xhp\n"
+"N0463\n"
+"help.text"
+msgid "%PRODUCTNAME Python scripts come in three distinct flavors, they can be personal, shared or embedded in documents. They are stored in varying places described in <link href=\"text/sbasic/python/python_locations.xhp\">Python Scripts Organization and Location</link>. In order to import Python modules, their locations must be known from Python at run time."
+msgstr ""
+
+#: python_import.xhp
+msgctxt ""
+"python_import.xhp\n"
+"N0464\n"
+"help.text"
+msgid "This mechanism is illustrated for file system based modules and document based modules. Exception handling is omitted for clarity. The terms library or directory, scripts or modules are used interchangeably. A Python macro refers to a function inside a module."
+msgstr ""
+
+#: python_import.xhp
+msgctxt ""
+"python_import.xhp\n"
+"N0465\n"
+"help.text"
+msgid "Note that <literal><User Profile>/Scripts/python/pythonpath</literal> local directory is always explored when running a Python macro from <literal><User Profile>/Scripts/python</literal>."
+msgstr ""
+
+#: python_import.xhp
+msgctxt ""
+"python_import.xhp\n"
+"N0466\n"
+"help.text"
+msgid "File System module import"
+msgstr ""
+
+#: python_import.xhp
+msgctxt ""
+"python_import.xhp\n"
+"N0467\n"
+"help.text"
+msgid "User or Shared Modules"
+msgstr ""
+
+#: python_import.xhp
+msgctxt ""
+"python_import.xhp\n"
+"N0468\n"
+"help.text"
+msgid "Personal & shared Python scripts can be imported once their directories are included in Python run time path. Refer to <link href=\"text/sbasic/python/python_session.xhp\">Getting session information</link> page for more details regarding omitted Session Class."
+msgstr ""
+
+#: python_import.xhp
+msgctxt ""
+"python_import.xhp\n"
+"N0473\n"
+"help.text"
+msgid "user_lib = Session().UserPythonScripts  # User scripts location"
+msgstr ""
+
+#: python_import.xhp
+msgctxt ""
+"python_import.xhp\n"
+"N0475\n"
+"help.text"
+msgid "sys.path.insert(0, user_lib)  # Add to search path"
+msgstr ""
+
+#: python_import.xhp
+msgctxt ""
+"python_import.xhp\n"
+"N0476\n"
+"help.text"
+msgid "import screen_io as ui  # 'screen_io.py' module resides in user_lib directory"
+msgstr ""
+
+#: python_import.xhp
+msgctxt ""
+"python_import.xhp\n"
+"N0477\n"
+"help.text"
+msgid "# Your code follows here"
+msgstr ""
+
+#: python_import.xhp
+msgctxt ""
+"python_import.xhp\n"
+"N0478\n"
+"help.text"
+msgid "This Python example exposes a local XSCRIPTCONTEXT variable to an imported module:"
+msgstr ""
+
+#: python_import.xhp
+msgctxt ""
+"python_import.xhp\n"
+"N0483\n"
+"help.text"
+msgid "share_lib = Session.SharedPythonScripts()  # Shared scripts location"
+msgstr ""
+
+#: python_import.xhp
+msgctxt ""
+"python_import.xhp\n"
+"N0485\n"
+"help.text"
+msgid "sys.path.insert(0, share_lib)  # Add to search path"
+msgstr ""
+
+#: python_import.xhp
+msgctxt ""
+"python_import.xhp\n"
+"N0486\n"
+"help.text"
+msgid "from IDE_utils import ScriptContext  # 'IDE_utils.py' sits with shared Python scripts."
+msgstr ""
+
+#: python_import.xhp
+msgctxt ""
+"python_import.xhp\n"
+"N0488\n"
+"help.text"
+msgid "# Your code follows here"
+msgstr ""
+
+#: python_import.xhp
+msgctxt ""
+"python_import.xhp\n"
+"N0489\n"
+"help.text"
+msgid "Installation Modules for Applications"
+msgstr ""
+
+#: python_import.xhp
+msgctxt ""
+"python_import.xhp\n"
+"N0490\n"
+"help.text"
+msgid "Unlike personal and shared scripts, %PRODUCTNAME installation scripts can be imported any time. Next to <literal>uno</literal> & <literal>unohelper</literal> %PRODUCTNAME Python modules, other scripts present in <literal><installation_path>/program</literal> directory can be imported directly, such as the <literal>msgbox</literal> module."
+msgstr ""
+
+#: python_import.xhp
+msgctxt ""
+"python_import.xhp\n"
+"N0491\n"
+"help.text"
+msgid "With Python shell:"
+msgstr ""
+
+#: python_import.xhp
+msgctxt ""
+"python_import.xhp\n"
+"N0534\n"
+"help.text"
+msgid "Document Module Import"
+msgstr ""
+
+#: python_import.xhp
+msgctxt ""
+"python_import.xhp\n"
+"N0535\n"
+"help.text"
+msgid "Importing a Python document embedded module is illustrated below. Error handling is not detailed. Python run time path is updated when document has been opened and before closure. Refer to <link href=\"text/sbasic/shared/01040000.xhp\">Event-Driven Macros</link> to learn how to associate Python macros to document events."
+msgstr ""
+
+#: python_import.xhp
+msgctxt ""
+"python_import.xhp\n"
+"N0541\n"
+"help.text"
+msgid "\"\"\" Prepare Python modules import when doc. loaded \"\"\""
+msgstr ""
+
+#: python_import.xhp
+msgctxt ""
+"python_import.xhp\n"
+"N0542\n"
+"help.text"
+msgid "PythonLibraries.loadLibrary('lib/subdir')  # Add directory to search path"
+msgstr ""
+
+#: python_import.xhp
+msgctxt ""
+"python_import.xhp\n"
+"N0543\n"
+"help.text"
+msgid "PythonLibraries.loadLibrary('my_gui', 'screen_io')  # Add dir. & import screen_io"
+msgstr ""
+
+#: python_import.xhp
+msgctxt ""
+"python_import.xhp\n"
+"N0546\n"
+"help.text"
+msgid "\"\"\" Cleanup PYTHON_PATH when doc. Gets closed \"\"\""
+msgstr ""
+
+#: python_import.xhp
+msgctxt ""
+"python_import.xhp\n"
+"N0547\n"
+"help.text"
+msgid "PythonLibraries.unloadLibrary('my_gui')  # Python runtime path cleanup"
+msgstr ""
+
+#: python_import.xhp
+msgctxt ""
+"python_import.xhp\n"
+"N0548\n"
+"help.text"
+msgid "# Note: imported modules remain loaded in this example.."
+msgstr ""
+
+#: python_import.xhp
+msgctxt ""
+"python_import.xhp\n"
+"N0553\n"
+"help.text"
+msgid "\"\"\" Python library loader and module importer"
+msgstr ""
+
+#: python_import.xhp
+msgctxt ""
+"python_import.xhp\n"
+"N0555\n"
+"help.text"
+msgid "adapted from 'Bibliothèque de fonctions' by Hubert Lambert"
+msgstr ""
+
+#: python_import.xhp
+msgctxt ""
+"python_import.xhp\n"
+"N0556\n"
+"help.text"
+msgid "at https://forum.openoffice.org/fr/forum/viewtopic.php?p=286213 \"\"\""
+msgstr ""
+
+#: python_import.xhp
+msgctxt ""
+"python_import.xhp\n"
+"N0558\n"
+"help.text"
+msgid "\"\"\" Check run time module list \"\"\""
+msgstr ""
+
+#: python_import.xhp
+msgctxt ""
+"python_import.xhp\n"
+"N0561\n"
+"help.text"
+msgid "\"\"\" Check PYTHON_PATH content \"\"\""
+msgstr ""
+
+#: python_import.xhp
+msgctxt ""
+"python_import.xhp\n"
+"N0564\n"
+"help.text"
+msgid "\"\"\" add directory to PYTHON_PATH, import named module \"\"\""
+msgstr ""
+
+#: python_import.xhp
+msgctxt ""
+"python_import.xhp\n"
+"N0573\n"
+"help.text"
+msgid "\"\"\" remove directory from PYTHON_PATH \"\"\""
+msgstr ""
+
+#: python_import.xhp
+msgctxt ""
+"python_import.xhp\n"
+"N0580\n"
+"help.text"
+msgid "Refer to <link href=\"text/sbasic/python/python_listener.xhp\">Creating a Python Listener</link> for examples of event-driven macros."
+msgstr ""
+
+#: python_listener.xhp
+msgctxt ""
+"python_listener.xhp\n"
+"tit\n"
+"help.text"
+msgid "Python Listeners : Creating Event Listeners"
+msgstr ""
+
+#: python_listener.xhp
+msgctxt ""
+"python_listener.xhp\n"
+"N0385\n"
+"help.text"
+msgid "<bookmark_value>Python;Event Listener</bookmark_value>         <bookmark_value>Python;createUnoListener</bookmark_value>         <bookmark_value>Basic;Event Listener</bookmark_value>"
+msgstr ""
+
+#: python_listener.xhp
+msgctxt ""
+"python_listener.xhp\n"
+"N0386\n"
+"help.text"
+msgid "<variable id=\"pythonlistener\"><link href=\"text/sbasic/python/python_listener.xhp\" name=\"python listeners\">Creating Event Listeners</link></variable>"
+msgstr ""
+
+#: python_listener.xhp
+msgctxt ""
+"python_listener.xhp\n"
+"N0387\n"
+"help.text"
+msgid "Events raised by dialogs, documents, forms or graphical controls can be linked to macros, which is referred to as event-driven programming. The most common method to relate events to macros are the <literal>Events</literal> tab in <menuitem>Tools – Customize</menuitem> menu and the <link href=\"text/sbasic/guide/create_dialog.xhp\" name=\"Create dialog\">Dialog Editor</link> Control properties pane from <menuitem>Tools - Macros – Organise Dialogs...</menuitem> menu."
+msgstr ""
+
+#: python_listener.xhp
+msgctxt ""
+"python_listener.xhp\n"
+"N0388\n"
+"help.text"
+msgid "Graphical artifacts, keyboard inputs, mouse moves and other man/machine interactions can be controlled using UNO listeners that watch for the user’s behaviour. Listeners are dynamic program code alternatives to macro assignments. One may create as many UNO listeners as events to watch for. A single listener can also handle multiple user interface controls."
+msgstr ""
+
+#: python_listener.xhp
+msgctxt ""
+"python_listener.xhp\n"
+"N0389\n"
+"help.text"
+msgid "Creating an event listener"
+msgstr ""
+
+#: python_listener.xhp
+msgctxt ""
+"python_listener.xhp\n"
+"N0390\n"
+"help.text"
+msgid "Listeners get attached to controls held in dialogs, as well as to document or form events. Listeners are also used when creating runtime dialogs or when adding controls to a dialog on the fly."
+msgstr ""
+
+#: python_listener.xhp
+msgctxt ""
+"python_listener.xhp\n"
+"N0391\n"
+"help.text"
+msgid "This example creates a listener for <literal>Button1</literal> control of <literal>Dialog1</literal> dialog in <literal>Standard</literal> library."
+msgstr ""
+
+#: python_listener.xhp
+msgctxt ""
+"python_listener.xhp\n"
+"N0392\n"
+"help.text"
+msgid "With Python"
+msgstr ""
+
+#: python_listener.xhp
+msgctxt ""
+"python_listener.xhp\n"
+"N0405\n"
+"help.text"
+msgid "_MY_LABEL = 'Python listens..'"
+msgstr ""
+
+#: python_listener.xhp
+msgctxt ""
+"python_listener.xhp\n"
+"N0417\n"
+"help.text"
+msgid "MsgBox(\"The user acknowledged the dialog.\")"
+msgstr ""
+
+#: python_listener.xhp
+msgctxt ""
+"python_listener.xhp\n"
+"N0419\n"
+"help.text"
+msgid "MsgBox(\"The user canceled the dialog.\")"
+msgstr ""
+
+#: python_listener.xhp
+msgctxt ""
+"python_listener.xhp\n"
+"N0424\n"
+"help.text"
+msgid "\"\"\" Create a Dialog from its location \"\"\""
+msgstr ""
+
+#: python_listener.xhp
+msgctxt ""
+"python_listener.xhp\n"
+"N0437\n"
+"help.text"
+msgid "\"\"\" Listen to & count button clicks \"\"\""
+msgstr ""
+
+#: python_listener.xhp
+msgctxt ""
+"python_listener.xhp\n"
+"N0448\n"
+"help.text"
+msgid "def disposing(self, evt: EventObject):  # mandatory routine"
+msgstr ""
+
+#: python_listener.xhp
+msgctxt ""
+"python_listener.xhp\n"
+"N0457\n"
+"help.text"
+msgid "<emph>msgbox.py</emph> in <emph>{installation}/program/</emph> directory has some examples of button listeners."
+msgstr ""
+
+#: python_listener.xhp
+msgctxt ""
+"python_listener.xhp\n"
+"N0458\n"
+"help.text"
+msgid "With %PRODUCTNAME Basic"
+msgstr ""
+
+#: python_listener.xhp
+msgctxt ""
+"python_listener.xhp\n"
+"N0459d\n"
+"help.text"
+msgid "Const MY_LABEL = \"Basic listens..\""
+msgstr ""
+
+#: python_listener.xhp
+msgctxt ""
+"python_listener.xhp\n"
+"N0478\n"
+"help.text"
+msgid "Case rc.OK : MsgBox \"The user acknowledged the dialog.\",, \"Basic\""
+msgstr ""
+
+#: python_listener.xhp
+msgctxt ""
+"python_listener.xhp\n"
+"N0479\n"
+"help.text"
+msgid "Case rc.CANCEL : MsgBox \"The user canceled the dialog.\",, \"Basic\""
+msgstr ""
+
+#: python_listener.xhp
+msgctxt ""
+"python_listener.xhp\n"
+"N0486\n"
+"help.text"
+msgid "''' Listen to & count button clicks '''"
+msgstr ""
+
+#: python_listener.xhp
+msgctxt ""
+"python_listener.xhp\n"
+"N0496\n"
+"help.text"
+msgid "' your code goes here"
+msgstr ""
+
+#: python_listener.xhp
+msgctxt ""
+"python_listener.xhp\n"
+"N0498\n"
+"help.text"
+msgid "Other Event Listeners"
+msgstr ""
+
+#: python_listener.xhp
+msgctxt ""
+"python_listener.xhp\n"
+"N0499\n"
+"help.text"
+msgid "Listeners are usually coded along with <link href=\"text/sbasic/python/python_dialog.xhp\" name=\"dialog opening\">dialog opening</link>. Numerous listener approaches are possible such as event handlers for dialogs or event monitors for documents or forms."
+msgstr ""
+
+#: python_listener.xhp
+msgctxt ""
+"python_listener.xhp\n"
+"N0505\n"
+"help.text"
+msgid "<link href=\"text/sbasic/shared/03132000.xhp\" name=\"CreateUnoListener Function\">CreateUnoListener Function</link>"
+msgstr ""
+
+#: python_listener.xhp
+msgctxt ""
+"python_listener.xhp\n"
+"N0506\n"
+"help.text"
+msgid "<link href=\"text/swriter/01/05060700.xhp\" name=\"Events mapping to objects\">Events mapping to objects</link>"
+msgstr ""
+
+#: python_listener.xhp
+msgctxt ""
+"python_listener.xhp\n"
+"N0509\n"
+"help.text"
+msgid "See also <link href=\"text/sbasic/shared/01040000.xhp\" name=\"Document events\">Document events</link>, <link href=\"text/shared/02/01170202.xhp\" name=\"Form events\">Form events</link>."
+msgstr ""
+
+#: python_locations.xhp
+msgctxt ""
+"python_locations.xhp\n"
+"tit\n"
+"help.text"
+msgid "Python Scripts Organization"
+msgstr ""
+
+#: python_locations.xhp
+msgctxt ""
+"python_locations.xhp\n"
+"hd_id391543358231021\n"
+"help.text"
+msgid "<variable id=\"pythonlocations1\"><link href=\"text/sbasic/python/python_locations.xhp\" name=\"command_name\">Python Scripts Organization and Location</link></variable>"
+msgstr ""
+
+#: python_locations.xhp
+msgctxt ""
+"python_locations.xhp\n"
+"par_id771543358231022\n"
+"help.text"
+msgid "The Python script files are stored in the filesystem, in folders controlled by %PRODUCTNAME. The macros can be started at installation, user or file level."
+msgstr ""
+
+#: python_locations.xhp
+msgctxt ""
+"python_locations.xhp\n"
+"hd_id911544049584458\n"
+"help.text"
+msgid "Python Script Locations"
+msgstr ""
+
+#: python_locations.xhp
+msgctxt ""
+"python_locations.xhp\n"
+"par_id121551089455774\n"
+"help.text"
+msgid "Refer to <link href=\"text/sbasic/python/python_session.xhp\" name=\"Getting Session Information\">Getting Session Information</link> in order to get programmatic access to Python script locations."
+msgstr ""
+
+#: python_locations.xhp
+msgctxt ""
+"python_locations.xhp\n"
+"hd_id591544049572647\n"
+"help.text"
+msgid "%PRODUCTNAME Macros container"
+msgstr ""
+
+#: python_locations.xhp
+msgctxt ""
+"python_locations.xhp\n"
+"par_id261544049064421\n"
+"help.text"
+msgid "Existing macros in this location (container) were copied by the installation program and are available to every computer user, and any open document can access macros stored the container. You need administrative rights to store or edit macros here."
+msgstr ""
+
+#: python_locations.xhp
+msgctxt ""
+"python_locations.xhp\n"
+"par_id861544210028670\n"
+"help.text"
+msgid "The %PRODUCTNAME  Macros container location in the file system depends on the operating system:"
+msgstr ""
+
+#: python_locations.xhp
+msgctxt ""
+"python_locations.xhp\n"
+"par_id191544210072242\n"
+"help.text"
+msgid "For <emph>Windows</emph>: <literal>{Installation}\\share\\Scripts\\python</literal>."
+msgstr ""
+
+#: python_locations.xhp
+msgctxt ""
+"python_locations.xhp\n"
+"par_id61544210078654\n"
+"help.text"
+msgid "For <emph>Linux</emph> and <emph>macOS</emph>: <literal>{Installation}/share/Scripts/python</literal>."
+msgstr ""
+
+#: python_locations.xhp
+msgctxt ""
+"python_locations.xhp\n"
+"hd_id861544049692222\n"
+"help.text"
+msgid "My Macros"
+msgstr "Mina makron"
+
+#: python_locations.xhp
+msgctxt ""
+"python_locations.xhp\n"
+"par_id981544049055996\n"
+"help.text"
+msgid "This container is accessible only by the %PRODUCTNAME user. Any open document can access macros stored the container. Macros in this location are stored in the %PRODUCTNAME user profile."
+msgstr ""
+
+#: python_locations.xhp
+msgctxt ""
+"python_locations.xhp\n"
+"par_id341544210187846\n"
+"help.text"
+msgid "The My Macros container location is in the user space and depends on the operating system:"
+msgstr ""
+
+#: python_locations.xhp
+msgctxt ""
+"python_locations.xhp\n"
+"par_id381544210213190\n"
+"help.text"
+msgid "For <emph>Windows</emph>,<br/><literal>%APPDATA%\\LibreOffice\\4\\user\\Scripts\\python</literal>."
+msgstr ""
+
+#: python_locations.xhp
+msgctxt ""
+"python_locations.xhp\n"
+"par_id691544210219850\n"
+"help.text"
+msgid "For <emph>Linux</emph> and <emph>macOS</emph>,<br/><literal>$HOME/.config/libreoffice/4/user/Scripts/python</literal>."
+msgstr ""
+
+#: python_locations.xhp
+msgctxt ""
+"python_locations.xhp\n"
+"hd_id101544049707712\n"
+"help.text"
+msgid "Document macros"
+msgstr ""
+
+#: python_locations.xhp
+msgctxt ""
+"python_locations.xhp\n"
+"par_id31544049046497\n"
+"help.text"
+msgid "Document macros are embedded in the document and are accessible only when the document is open."
+msgstr ""
+
+#: python_locations.xhp
+msgctxt ""
+"python_locations.xhp\n"
+"hd_id171544049715310\n"
+"help.text"
+msgid "Libraries, Modules and Macros"
+msgstr "Bibliotek, Moduler och Makron"
+
+#: python_locations.xhp
+msgctxt ""
+"python_locations.xhp\n"
+"par_id181544209916707\n"
+"help.text"
+msgid "Like BASIC macros, Python macros can be organized in libraries, modules and macros."
+msgstr ""
+
+#: python_locations.xhp
+msgctxt ""
+"python_locations.xhp\n"
+"hd_id21544209865082\n"
+"help.text"
+msgid "Creating a Python Library"
+msgstr ""
+
+#: python_locations.xhp
+msgctxt ""
+"python_locations.xhp\n"
+"par_id191544209928221\n"
+"help.text"
+msgid "Libraries are folders in the container tree. To create a library, add a folder in the target container. The library name is the folder name."
+msgstr ""
+
+#: python_locations.xhp
+msgctxt ""
+"python_locations.xhp\n"
+"hd_id31544209872869\n"
+"help.text"
+msgid "Creating a Python Module."
+msgstr ""
+
+#: python_locations.xhp
+msgctxt ""
+"python_locations.xhp\n"
+"par_id161544209936743\n"
+"help.text"
+msgid "A module is a python file in the library or the container. Create a module adding a file in the container."
+msgstr ""
+
+#: python_locations.xhp
+msgctxt ""
+"python_locations.xhp\n"
+"hd_id151544209895574\n"
+"help.text"
+msgid "Python macros"
+msgstr ""
+
+#: python_locations.xhp
+msgctxt ""
+"python_locations.xhp\n"
+"par_id61544209944591\n"
+"help.text"
+msgid "A macro is a python object in the module."
+msgstr ""
+
+#: python_platform.xhp
+msgctxt ""
+"python_platform.xhp\n"
+"tit\n"
+"help.text"
+msgid "Python : Platform class"
+msgstr ""
+
+#: python_platform.xhp
+msgctxt ""
+"python_platform.xhp\n"
+"N0508\n"
+"help.text"
+msgid "<bookmark_value>Platform;isLinux</bookmark_value>        <bookmark_value>Platform;isMacOsX</bookmark_value>        <bookmark_value>Platform;isWindows</bookmark_value>        <bookmark_value>Platform;ComputerName</bookmark_value>        <bookmark_value>Platform;OSName</bookmark_value>"
+msgstr ""
+
+#: python_platform.xhp
+msgctxt ""
+"python_platform.xhp\n"
+"N0509\n"
+"help.text"
+msgid "<variable id=\"pythonplatform\"><link href=\"text/sbasic/python/python_platform.xhp\" name=\"platform01\">Identifying the operating system</link></variable>"
+msgstr ""
+
+#: python_platform.xhp
+msgctxt ""
+"python_platform.xhp\n"
+"N0510\n"
+"help.text"
+msgid "Identifying the operating system can be performed with Python or Basic language."
+msgstr ""
+
+#: python_platform.xhp
+msgctxt ""
+"python_platform.xhp\n"
+"N0511\n"
+"help.text"
+msgid "%PRODUCTNAME Basic lacks Mac OS X native recognition while ComputerName property is solely available for Windows. Basic calls to Python macros help overcome such limitations."
+msgstr ""
+
+#: python_platform.xhp
+msgctxt ""
+"python_platform.xhp\n"
+"N0512\n"
+"help.text"
+msgid "Using a Python class:"
+msgstr ""
+
+#: python_platform.xhp
+msgctxt ""
+"python_platform.xhp\n"
+"N0529\n"
+"help.text"
+msgid "Using a Basic classmodule:"
+msgstr ""
+
+#: python_platform.xhp
+msgctxt ""
+"python_platform.xhp\n"
+"N0564\n"
+"help.text"
+msgid "Examples:"
+msgstr ""
+
+#: python_platform.xhp
+msgctxt ""
+"python_platform.xhp\n"
+"N0565\n"
+"help.text"
+msgid "With Python"
+msgstr ""
+
+#: python_platform.xhp
+msgctxt ""
+"python_platform.xhp\n"
+"N0567\n"
+"help.text"
+msgid "<literal>>>> print(Platform().isMacOSX)  # object property</literal>"
+msgstr ""
+
+#: python_platform.xhp
+msgctxt ""
+"python_platform.xhp\n"
+"N0569\n"
+"help.text"
+msgid "<literal>>>> input(Platform().OSName)  # object property</literal>"
+msgstr ""
+
+#: python_platform.xhp
+msgctxt ""
+"python_platform.xhp\n"
+"N0571\n"
+"help.text"
+msgid "From <menuitem>Tools – Macros - Run Macro...</menuitem> menu."
+msgstr ""
+
+#: python_platform.xhp
+msgctxt ""
+"python_platform.xhp\n"
+"N0576\n"
+"help.text"
+msgid "With %PRODUCTNAME Basic"
+msgstr ""
+
+#: python_platform.xhp
+msgctxt ""
+"python_platform.xhp\n"
+"N0578\n"
+"help.text"
+msgid "Dim p As New Platform ' instance of Platform class"
+msgstr ""
+
+#: python_platform.xhp
+msgctxt ""
+"python_platform.xhp\n"
+"N0579\n"
+"help.text"
+msgid "MsgBox p.isLinux ' object property"
+msgstr ""
+
+#: python_platform.xhp
+msgctxt ""
+"python_platform.xhp\n"
+"N0580\n"
+"help.text"
+msgid "Print p.isWindows, p.OSName ' object properties"
+msgstr ""
+
+#: python_programming.xhp
+msgctxt ""
+"python_programming.xhp\n"
+"tit\n"
+"help.text"
+msgid "Python : Programming with Python"
+msgstr ""
+
+#: python_programming.xhp
+msgctxt ""
+"python_programming.xhp\n"
+"N0218\n"
+"help.text"
+msgid "<bookmark_value>Python;Programming</bookmark_value>        <bookmark_value>XSCRIPTCONTEXT;Python</bookmark_value>        <bookmark_value>uno.py</bookmark_value>"
+msgstr ""
+
+#: python_programming.xhp
+msgctxt ""
+"python_programming.xhp\n"
+"hd_id691546462755220\n"
+"help.text"
+msgid "<variable id=\"pythonprogrammingheading\"><link href=\"text/sbasic/python/python_programming.xhp\" name=\"python programming\">Programming with Python Scripts</link></variable>"
+msgstr ""
+
+#: python_programming.xhp
+msgctxt ""
+"python_programming.xhp\n"
+"N0220\n"
+"help.text"
+msgid "A Python macro is a function within a .py file, identified as a module. Unlike %PRODUCTNAME Basic and its dozen of <link href=\"text/sbasic/shared/uno_objects.xhp\" name=\"UNO objects functions or services\">UNO objects functions or services</link>, Python macros use the <literal>XSCRIPTCONTEXT</literal> UNO single object, shared with JavaScript and BeanShell. The <literal>g_exportedScripts</literal> global tuple explicitly lists selectable macros from a module. Python modules hold autonomous code logic, and are independent from one another."
+msgstr ""
+
+#: python_programming.xhp
+msgctxt ""
+"python_programming.xhp\n"
+"N0221\n"
+"help.text"
+msgid "XSCRIPTCONTEXT Global Variable"
+msgstr ""
+
+#: python_programming.xhp
+msgctxt ""
+"python_programming.xhp\n"
+"N0222\n"
+"help.text"
+msgid "Genuine Basic UNO facilities can be inferred from <literal>XSCRIPTCONTEXT</literal> global variable. Refer to %PRODUCTNAME API for a complete <link href=\"https://api.libreoffice.org/docs/idl/ref/interfacecom_1_1sun_1_1star_1_1script_1_1provider_1_1XScriptContext.html\" name=\"description of XSCRIPTCONTEXT\">description of XSCRIPTCONTEXT</link>. <literal>XSCRIPTCONTEXT</literal> methods summarize as:"
+msgstr ""
+
+#: python_programming.xhp
+msgctxt ""
+"python_programming.xhp\n"
+"N0224\n"
+"help.text"
+msgid "Methods"
+msgstr "Metoder"
+
+#: python_programming.xhp
+msgctxt ""
+"python_programming.xhp\n"
+"N0225\n"
+"help.text"
+msgid "Description"
+msgstr "Beskrivning"
+
+#: python_programming.xhp
+msgctxt ""
+"python_programming.xhp\n"
+"N0226\n"
+"help.text"
+msgid "Mapped in Basic as"
+msgstr ""
+
+#: python_programming.xhp
+msgctxt ""
+"python_programming.xhp\n"
+"N0228\n"
+"help.text"
+msgid "The document reference on which the script can operate."
+msgstr ""
+
+#: python_programming.xhp
+msgctxt ""
+"python_programming.xhp\n"
+"N0231\n"
+"help.text"
+msgid "The desktop reference on which the script can operate."
+msgstr ""
+
+#: python_programming.xhp
+msgctxt ""
+"python_programming.xhp\n"
+"N0234\n"
+"help.text"
+msgid "The component context which the script can use to create other uno components."
+msgstr ""
+
+#: python_programming.xhp
+msgctxt ""
+"python_programming.xhp\n"
+"N0237\n"
+"help.text"
+msgid "<emph>HelloWorld</emph> and <emph>Capitalise</emph> installation shared scripts illustrate UNO-related macros making use of <literal>XSCRIPTCONTEXT</literal> global variable."
+msgstr ""
+
+#: python_programming.xhp
+msgctxt ""
+"python_programming.xhp\n"
+"N0238\n"
+"help.text"
+msgid "Python standard output file is not available when running Python macros from <menuitem>Tools - Macros - Run Macro</menuitem> menu. Refer to <emph>Input/Output to Screen</emph> for more information."
+msgstr ""
+
+#: python_programming.xhp
+msgctxt ""
+"python_programming.xhp\n"
+"N0239\n"
+"help.text"
+msgid "Module import"
+msgstr ""
+
+#: python_programming.xhp
+msgctxt ""
+"python_programming.xhp\n"
+"N0240\n"
+"help.text"
+msgid "<literal>XSCRIPTCONTEXT</literal> is not provided to imported modules."
+msgstr ""
+
+#: python_programming.xhp
+msgctxt ""
+"python_programming.xhp\n"
+"N0241\n"
+"help.text"
+msgid "%PRODUCTNAME Basic libraries contain classes, routines and variables, Python modules contain classes, functions and variables. Common pieces of reusable Python or UNO features must be stored in <link href=\"text/sbasic/python/python_locations.xhp\" name=\"My macros\">My macros</link> within <literal><User Profile>/Scripts/python/pythonpath</literal>. Python libraries help organize modules in order to prevent module name collisions. Import <literal>uno.py</literal> inside shared modules."
+msgstr ""
+
+#: python_programming.xhp
+msgctxt ""
+"python_programming.xhp\n"
+"N0242\n"
+"help.text"
+msgid "Genuine BASIC UNO facilities can be inferred using <literal>uno.py</literal> module. Use <link href=\"text/sbasic/python/python_shell.xhp\" name=\"Python interactive shell\">Python interactive shell</link> to get a complete module description using <literal>dir()</literal> and <literal>help()</literal> Python commands."
+msgstr ""
+
+#: python_programming.xhp
+msgctxt ""
+"python_programming.xhp\n"
+"N0244\n"
+"help.text"
+msgid "Functions"
+msgstr "Funktioner"
+
+#: python_programming.xhp
+msgctxt ""
+"python_programming.xhp\n"
+"N0245\n"
+"help.text"
+msgid "Description"
+msgstr "Beskrivning"
+
+#: python_programming.xhp
+msgctxt ""
+"python_programming.xhp\n"
+"N0246\n"
+"help.text"
+msgid "Mapped in Basic as"
+msgstr ""
+
+#: python_programming.xhp
+msgctxt ""
+"python_programming.xhp\n"
+"N0248\n"
+"help.text"
+msgid "Returns an absolute file url from the given urls."
+msgstr ""
+
+#: python_programming.xhp
+msgctxt ""
+"python_programming.xhp\n"
+"N0251\n"
+"help.text"
+msgid "Creates a UNO struct or exception given by typeName."
+msgstr ""
+
+#: python_programming.xhp
+msgctxt ""
+"python_programming.xhp\n"
+"N0254\n"
+"help.text"
+msgid "Returns a system path."
+msgstr ""
+
+#: python_programming.xhp
+msgctxt ""
+"python_programming.xhp\n"
+"N0257\n"
+"help.text"
+msgid "Returns the class of a concrete UNO exception, struct, or interface."
+msgstr ""
+
+#: python_programming.xhp
+msgctxt ""
+"python_programming.xhp\n"
+"N0260\n"
+"help.text"
+msgid "Returns the UNO component context used to initialize the Python runtime."
+msgstr ""
+
+#: python_programming.xhp
+msgctxt ""
+"python_programming.xhp\n"
+"N0264\n"
+"help.text"
+msgid "Looks up the value of an IDL constant by giving its explicit name."
+msgstr ""
+
+#: python_programming.xhp
+msgctxt ""
+"python_programming.xhp\n"
+"N0265\n"
+"help.text"
+msgid "See API constant groups"
+msgstr ""
+
+#: python_programming.xhp
+msgctxt ""
+"python_programming.xhp\n"
+"N0267\n"
+"help.text"
+msgid "Returns True, when obj is a class of a UNO interface."
+msgstr ""
+
+#: python_programming.xhp
+msgctxt ""
+"python_programming.xhp\n"
+"N0270\n"
+"help.text"
+msgid "Returns a file URL for the given system path."
+msgstr ""
+
+#: python_programming.xhp
+msgctxt ""
+"python_programming.xhp\n"
+"N0272\n"
+"help.text"
+msgid "<emph>LibreLogo</emph> and <emph>TableSample</emph> installation shared scripts use <literal>uno.py</literal> module."
+msgstr ""
+
+#: python_programming.xhp
+msgctxt ""
+"python_programming.xhp\n"
+"N0273\n"
+"help.text"
+msgid "More Python-Basic samples"
+msgstr ""
+
+#: python_programming.xhp
+msgctxt ""
+"python_programming.xhp\n"
+"N0275\n"
+"help.text"
+msgid "Python UNO"
+msgstr ""
+
+#: python_programming.xhp
+msgctxt ""
+"python_programming.xhp\n"
+"N0276\n"
+"help.text"
+msgid "Basic UNO features"
+msgstr ""
+
+#: python_programming.xhp
+msgctxt ""
+"python_programming.xhp\n"
+"N0284\n"
+"help.text"
+msgid "See <link href=\"text/sbasic/python/python_dialogs.xhp\" name=\"Opening a Dialog\">Opening a Dialog</link>"
+msgstr ""
+
+#: python_programming.xhp
+msgctxt ""
+"python_programming.xhp\n"
+"N0286\n"
+"help.text"
+msgid "See <link href=\"text/sbasic/python/python_listener.xhp\" name=\"Creating a Listener\">Creating a Listener</link>"
+msgstr ""
+
+#: python_programming.xhp
+msgctxt ""
+"python_programming.xhp\n"
+"N0288\n"
+"help.text"
+msgid "See UNO data types"
+msgstr ""
+
+#: python_programming.xhp
+msgctxt ""
+"python_programming.xhp\n"
+"N0297\n"
+"help.text"
+msgid "Importing an embedded Module"
+msgstr ""
+
+#: python_programming.xhp
+msgctxt ""
+"python_programming.xhp\n"
+"N0298\n"
+"help.text"
+msgid "Similarly to %PRODUCTNAME Basic that supports browsing and dynamic loading of libraries, Python libraries can be explored and imported on demand. For more information on library containers, visit <link href=\"https://api.libreoffice.org/\" name=\"API Documentation site\">%PRODUCTNAME Application Programming Interface</link> (API) or download <link href=\"https://www.libreoffice.org/download/download/\" name=\"SDK download page\">%PRODUCTNAME Software Development Kit</link> (SDK)."
+msgstr ""
+
+#: python_programming.xhp
+msgctxt ""
+"python_programming.xhp\n"
+"N0299\n"
+"help.text"
+msgid "Importing a Python document embedded module is illustrated below, exception handling is not detailed:"
+msgstr ""
+
+#: python_programming.xhp
+msgctxt ""
+"python_programming.xhp\n"
+"N0303\n"
+"help.text"
+msgid "\"\"\" load library and import module"
+msgstr "\"\"\" ladda bibliotek och importera modul"
+
+#: python_programming.xhp
+msgctxt ""
+"python_programming.xhp\n"
+"N0305\n"
+"help.text"
+msgid "Adapted from 'Bibliothèque de fonctions' by Hubert Lambert"
+msgstr ""
+
+#: python_programming.xhp
+msgctxt ""
+"python_programming.xhp\n"
+"N0306\n"
+"help.text"
+msgid "at https://forum.openoffice.org/fr/forum/viewtopic.php?p=286213\"\"\""
+msgstr ""
+
+#: python_programming.xhp
+msgctxt ""
+"python_programming.xhp\n"
+"N0307\n"
+"help.text"
+msgid "doc = XSCRIPTCONTEXT.getDocument()  # current document"
+msgstr ""
+
+#: python_programming.xhp
+msgctxt ""
+"python_programming.xhp\n"
+"N0310\n"
+"help.text"
+msgid "if not url in sys.path:  # add path if necessary"
+msgstr ""
+
+#: python_programming.xhp
+msgctxt ""
+"python_programming.xhp\n"
+"N0311\n"
+"help.text"
+msgid "sys.path.insert(0, url)  # doclib takes precedence"
+msgstr ""
+
+#: python_programming.xhp
+msgctxt ""
+"python_programming.xhp\n"
+"N0312\n"
+"help.text"
+msgid "if module_name:  # import if requested"
+msgstr ""
+
+#: python_programming.xhp
+msgctxt ""
+"python_programming.xhp\n"
+"N0316\n"
+"help.text"
+msgid "ui = load_library(\"my_gui\",'screen_io')  # add <lib> path + import <module>"
+msgstr ""
+
+#: python_programming.xhp
+msgctxt ""
+"python_programming.xhp\n"
+"N0321\n"
+"help.text"
+msgid "<link href=\"text/sbasic/shared/uno_objects.xhp\" name=\"UNO objects page\">Basic UNO Objects, Functions and Services</link>"
+msgstr ""
+
+#: python_screen.xhp
+msgctxt ""
+"python_screen.xhp\n"
+"tit\n"
+"help.text"
+msgid "Python : Screen Input/Output"
+msgstr ""
+
+#: python_screen.xhp
+msgctxt ""
+"python_screen.xhp\n"
+"N0433\n"
+"help.text"
+msgid "<bookmark_value>Python;InputBox</bookmark_value>        <bookmark_value>Python;MsgBox</bookmark_value>        <bookmark_value>Python;Print</bookmark_value>"
+msgstr ""
+
+#: python_screen.xhp
+msgctxt ""
+"python_screen.xhp\n"
+"N0434\n"
+"help.text"
+msgid "<variable id=\"ioscreen\"><link href=\"text/sbasic/python/python_screen.xhp\" name=\"IO to screen\">Input/Output to Screen</link></variable>"
+msgstr ""
+
+#: python_screen.xhp
+msgctxt ""
+"python_screen.xhp\n"
+"N0435\n"
+"help.text"
+msgid "Python standard output file is not available when running Python macros from <menuitem>Tools – Macros - Run Macro</menuitem>... menu. Presenting the output of a module requires the Python interactive console. Features such as <literal>input()</literal>, <literal>print()</literal>, <literal>repr()</literal> and <literal>str()</literal> are available from the Python shell."
+msgstr ""
+
+#: python_screen.xhp
+msgctxt ""
+"python_screen.xhp\n"
+"N0436\n"
+"help.text"
+msgid "The <link href=\"https://extensions.libreoffice.org/extensions/apso-alternative-script-organizer-for-python\" name=\"apso\">Alternative Python Script Organizer</link> (APSO) extension offers a msgbox() function out of its <literal>apso_utils</literal> module."
+msgstr ""
+
+#: python_screen.xhp
+msgctxt ""
+"python_screen.xhp\n"
+"N0437\n"
+"help.text"
+msgid "%PRODUCTNAME Basic proposes <literal>InputBox()</literal>, <literal>Msgbox()</literal> and <literal>Print()</literal> screen I/O functions. Python alternatives exist relying either on %PRODUCTNAME API Abstract Windowing Toolkit, either on Python to Basic function calls. The latter proposes a syntax that is intentionally close to that of Basic, and uses a Python module next to a Basic module. The API Scripting Framework is used to perform Basic, BeanShell, JavaScript and Python inter-languages function calls."
+msgstr ""
+
+#: python_screen.xhp
+msgctxt ""
+"python_screen.xhp\n"
+"N0438\n"
+"help.text"
+msgid "Python syntax:"
+msgstr ""
+
+#: python_screen.xhp
+msgctxt ""
+"python_screen.xhp\n"
+"N0442\n"
+"help.text"
+msgid "Examples:"
+msgstr ""
+
+#: python_screen.xhp
+msgctxt ""
+"python_screen.xhp\n"
+"N0449\n"
+"help.text"
+msgid "Installation:"
+msgstr ""
+
+#: python_screen.xhp
+msgctxt ""
+"python_screen.xhp\n"
+"N0450\n"
+"help.text"
+msgid "Copy <literal>screen_io</literal> Python module in <link href=\"text/sbasic/python/python_locations.xhp\" name=\"User macros\">My macros</link> within <UserProfile>/Scripts/python/pythonpath,"
+msgstr ""
+
+#: python_screen.xhp
+msgctxt ""
+"python_screen.xhp\n"
+"N0451\n"
+"help.text"
+msgid "Copy <literal>uiScripts</literal> Basic module in <link href=\"text/sbasic/python/python_locations.xhp\" name=\"User macros\">My macros</link> Standard Basic library,"
+msgstr ""
+
+#: python_screen.xhp
+msgctxt ""
+"python_screen.xhp\n"
+"N0452\n"
+"help.text"
+msgid "Restart %PRODUCTNAME."
+msgstr ""
+
+#: python_screen.xhp
+msgctxt ""
+"python_screen.xhp\n"
+"N0453\n"
+"help.text"
+msgid "<literal>screen_io</literal> Python module"
+msgstr ""
+
+#: python_screen.xhp
+msgctxt ""
+"python_screen.xhp\n"
+"N0467\n"
+"help.text"
+msgid "\"\"\" Displays a dialog box containing a message and returns a value.\"\"\""
+msgstr ""
+
+#: python_screen.xhp
+msgctxt ""
+"python_screen.xhp\n"
+"N0473\n"
+"help.text"
+msgid "\"\"\" Displays a prompt in a dialog box at which the user can enter text.\"\"\""
+msgstr ""
+
+#: python_screen.xhp
+msgctxt ""
+"python_screen.xhp\n"
+"N0479\n"
+"help.text"
+msgid "\"\"\"Outputs the specified strings or numeric expressions in a dialog box.\"\"\""
+msgstr ""
+
+#: python_screen.xhp
+msgctxt ""
+"python_screen.xhp\n"
+"N0492\n"
+"help.text"
+msgid "<literal>uiScripts</literal> Basic module"
+msgstr ""
+
+#: python_screen.xhp
+msgctxt ""
+"python_screen.xhp\n"
+"N0505\n"
+"help.text"
+msgid "<link href=\"text/sbasic/python/python_2_basic.xhp\" name=\"Calling Basic macros from Python\">Calling Basic macros from Python</link>"
+msgstr ""
+
+#: python_session.xhp
+msgctxt ""
+"python_session.xhp\n"
+"tit\n"
+"help.text"
+msgid "Python_Session : Session class"
+msgstr ""
+
+#: python_session.xhp
+msgctxt ""
+"python_session.xhp\n"
+"N0339\n"
+"help.text"
+msgid "<bookmark_value>Session;ComputerName</bookmark_value>        <bookmark_value>Session;SharedScripts</bookmark_value>        <bookmark_value>Session;SharedPythonScripts</bookmark_value>        <bookmark_value>Session;UserProfile</bookmark_value>        <bookmark_value>Session;UserScripts</bookmark_value>        <bookmark_value>Session;UserPythonScripts</bookmark_value>"
+msgstr ""
+
+#: python_session.xhp
+msgctxt ""
+"python_session.xhp\n"
+"N0340\n"
+"help.text"
+msgid "<variable id=\"pythonsession\"><link href=\"text/sbasic/python/python_session.xhp\" name=\"session01\">Getting Session Information</link></variable>"
+msgstr ""
+
+#: python_session.xhp
+msgctxt ""
+"python_session.xhp\n"
+"N0341\n"
+"help.text"
+msgid "Computing %PRODUCTNAME user profile and shared modules system file paths can be performed with Python or with Basic languages. BeanShell, Java, JavaScript and Python scripts locations can be derived from this information."
+msgstr ""
+
+#: python_session.xhp
+msgctxt ""
+"python_session.xhp\n"
+"N0343\n"
+"help.text"
+msgid "Examples:"
+msgstr ""
+
+#: python_session.xhp
+msgctxt ""
+"python_session.xhp\n"
+"N0344\n"
+"help.text"
+msgid "With Python shell."
+msgstr ""
+
+#: python_session.xhp
+msgctxt ""
+"python_session.xhp\n"
+"N0346\n"
+"help.text"
+msgid "<literal>>>> print(Session.SharedPythonScripts())  # static method</literal>"
+msgstr ""
+
+#: python_session.xhp
+msgctxt ""
+"python_session.xhp\n"
+"N0347\n"
+"help.text"
+msgid "<literal>>>> print(Session().UserName)  # object property</literal>"
+msgstr ""
+
+#: python_session.xhp
+msgctxt ""
+"python_session.xhp\n"
+"N0348\n"
+"help.text"
+msgid "<literal>>>> input(Session().UserProfile)  # object property</literal>"
+msgstr ""
+
+#: python_session.xhp
+msgctxt ""
+"python_session.xhp\n"
+"N0349\n"
+"help.text"
+msgid "From <menuitem>Tools – Macros - Run Macro</menuitem>... menu."
+msgstr ""
+
+#: python_session.xhp
+msgctxt ""
+"python_session.xhp\n"
+"N0354\n"
+"help.text"
+msgid "ui.MsgBox(Session.Share(),title='Installation Share')  # static method"
+msgstr ""
+
+#: python_session.xhp
+msgctxt ""
+"python_session.xhp\n"
+"N0355\n"
+"help.text"
+msgid "ui.Print(Session.SharedPythonScripts())  # static method"
+msgstr ""
+
+#: python_session.xhp
+msgctxt ""
+"python_session.xhp\n"
+"N0356\n"
+"help.text"
+msgid "s = Session()  # instance creation"
+msgstr ""
+
+#: python_session.xhp
+msgctxt ""
+"python_session.xhp\n"
+"N0357\n"
+"help.text"
+msgid "ui.MsgBox(s.UserName,title='Hello')  # object property"
+msgstr ""
+
+#: python_session.xhp
+msgctxt ""
+"python_session.xhp\n"
+"N0358\n"
+"help.text"
+msgid "ui.Print(s.UserPythonScripts)  # object property"
+msgstr ""
+
+#: python_session.xhp
+msgctxt ""
+"python_session.xhp\n"
+"N0360\n"
+"help.text"
+msgid "g_exportedScripts = (demo_session,)  # public macros"
+msgstr ""
+
+#: python_session.xhp
+msgctxt ""
+"python_session.xhp\n"
+"N0361\n"
+"help.text"
+msgid "With %PRODUCTNAME Basic."
+msgstr ""
+
+#: python_session.xhp
+msgctxt ""
+"python_session.xhp\n"
+"N0364\n"
+"help.text"
+msgid "Print \"Shared scripts location:\", s.SharedScripts"
+msgstr ""
+
+#: python_session.xhp
+msgctxt ""
+"python_session.xhp\n"
+"N0365\n"
+"help.text"
+msgid "MsgBox s.UserName,,\"Hello\""
+msgstr ""
+
+#: python_session.xhp
+msgctxt ""
+"python_session.xhp\n"
+"N0368\n"
+"help.text"
+msgid "Using COM/OLE and Visual Basic Scripting language."
+msgstr ""
+
+#: python_session.xhp
+msgctxt ""
+"python_session.xhp\n"
+"N0369\n"
+"help.text"
+msgid "' The service manager is always the entry point"
+msgstr ""
+
+#: python_session.xhp
+msgctxt ""
+"python_session.xhp\n"
+"N0370\n"
+"help.text"
+msgid "' If there is no office running then an office is started up"
+msgstr ""
+
+#: python_session.xhp
+msgctxt ""
+"python_session.xhp\n"
+"N0372\n"
+"help.text"
+msgid "' PathSubstitution service exhibits information to infer"
+msgstr ""
+
+#: python_session.xhp
+msgctxt ""
+"python_session.xhp\n"
+"N0373\n"
+"help.text"
+msgid "' <UserProfile|Share>/Scripts/python locations from"
+msgstr ""
+
+#: python_session.xhp
+msgctxt ""
+"python_session.xhp\n"
+"N0381\n"
+"help.text"
+msgid "Python Session class:"
+msgstr ""
+
+#: python_session.xhp
+msgctxt ""
+"python_session.xhp\n"
+"N0401\n"
+"help.text"
+msgid "@property  # alternative to '$(username)' variable"
+msgstr ""
+
+#: python_session.xhp
+msgctxt ""
+"python_session.xhp\n"
+"N0342\n"
+"help.text"
+msgid "Unlike Basic, pathname normalization is performed with Python inside Session class."
+msgstr ""
+
+#: python_session.xhp
+msgctxt ""
+"python_session.xhp\n"
+"N0412\n"
+"help.text"
+msgid "%PRODUCTNAME Basic Session class:"
+msgstr ""
+
+#: python_session.xhp
+msgctxt ""
+"python_session.xhp\n"
+"N0417\n"
+"help.text"
+msgid "Private _ps As Object ' Private member"
+msgstr ""
+
+#: python_session.xhp
+msgctxt ""
+"python_session.xhp\n"
+"N0422\n"
+"help.text"
+msgid "End Sub ' Constructor"
+msgstr ""
+
+#: python_session.xhp
+msgctxt ""
+"python_session.xhp\n"
+"N0426\n"
+"help.text"
+msgid "End Sub ' Destructor"
+msgstr ""
+
+#: python_session.xhp
+msgctxt ""
+"python_session.xhp\n"
+"N0439\n"
+"help.text"
+msgid "Public Property Get UserName() As String ' User account name"
+msgstr ""
+
+#: python_session.xhp
+msgctxt ""
+"python_session.xhp\n"
+"N0443\n"
+"help.text"
+msgid "Public Property Get UserProfile() As String ' User profile system path"
+msgstr ""
+
+#: python_session.xhp
+msgctxt ""
+"python_session.xhp\n"
+"N0447\n"
+"help.text"
+msgid "Public Property Get UserScripts() As String ' User scripts system path"
+msgstr ""
+
+#: python_session.xhp
+msgctxt ""
+"python_session.xhp\n"
+"N0451\n"
+"help.text"
+msgid "Public Property Get UserPythonScripts() As String ' User Python scripts system path"
+msgstr ""
+
+#: python_shell.xhp
+msgctxt ""
+"python_shell.xhp\n"
+"tit\n"
+"help.text"
+msgid "Python Interactive Shell"
+msgstr ""
+
+#: python_shell.xhp
+msgctxt ""
+"python_shell.xhp\n"
+"N0117\n"
+"help.text"
+msgid "<bookmark_value>Python console</bookmark_value>        <bookmark_value>Python Interactive Shell</bookmark_value>"
+msgstr ""
+
+#: python_shell.xhp
+msgctxt ""
+"python_shell.xhp\n"
+"N0118\n"
+"help.text"
+msgid "<variable id=\"pythonshell1\"><link href=\"text/sbasic/python/python_shell.xhp\" name=\"python shell\">Running Python Interactive Console</link></variable>"
+msgstr ""
+
+#: python_shell.xhp
+msgctxt ""
+"python_shell.xhp\n"
+"N0119\n"
+"help.text"
+msgid "The Python interactive console, also known as Python interpreter or Python shell, provides programmers with a quick way to execute commands and try out and test code without creating a file. UNO objects introspection as well as %PRODUCTNAME Python modules documentation can be obtained from the terminal."
+msgstr ""
+
+#: python_shell.xhp
+msgctxt ""
+"python_shell.xhp\n"
+"N0121\n"
+"help.text"
+msgid "Using a Basic macro:"
+msgstr ""
+
+#: python_shell.xhp
+msgctxt ""
+"python_shell.xhp\n"
+"N0127\n"
+"help.text"
+msgid "Using a Python macro:"
+msgstr ""
+
+#: python_shell.xhp
+msgctxt ""
+"python_shell.xhp\n"
+"N0141\n"
+"help.text"
+msgid "Usage:"
+msgstr "Användning:"
+
+#: python_shell.xhp
+msgctxt ""
+"python_shell.xhp\n"
+"N0142\n"
+"help.text"
+msgid "<image src=\"media/helpimg/python/python_shell.png\" id=\"N0143\"><alt id=\"N0144\">Python Interactive Console</alt></image>"
+msgstr ""
