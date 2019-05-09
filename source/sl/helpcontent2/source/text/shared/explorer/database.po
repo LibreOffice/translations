@@ -1,10 +1,10 @@
 #. extracted from helpcontent2/source/text/shared/explorer/database
 msgid ""
 msgstr ""
-"Project-Id-Version: LibreOffice 6.2\n"
+"Project-Id-Version: LibreOffice 6.3\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2018-11-07 10:08+0100\n"
-"PO-Revision-Date: 2018-10-31 09:56+0200\n"
+"POT-Creation-Date: 2019-04-22 10:57+0200\n"
+"PO-Revision-Date: 2019-04-14 12:45+0200\n"
 "Last-Translator: Martin Srebotnjak <miles@filmsi.net>\n"
 "Language-Team: sl.libreoffice.org\n"
 "MIME-Version: 1.0\n"
@@ -1022,8 +1022,8 @@ msgctxt ""
 "02010100.xhp\n"
 "par_id3152889\n"
 "help.text"
-msgid "b) COUNT(column): Passing a field name as an argument counts only those records for fields in which the field name in question contains a value. Records with fields having Null values (i.e. fields containing no characters) will not be counted."
-msgstr "b) COUNT(stolpec): Če kot argument navedete ime polja, bodo prešteti samo zapisi tistih polj, v katerih podano ime polja vsebuje neko vrednost. Vrednosti null (npr. prazna polja) ne štejejo."
+msgid "b) COUNT(column): Passing a field name as an argument counts only the records in which the specified field contains a value. Records in which the field has a Null value (i.e. contains no textual or numeric value) will not be counted."
+msgstr "b) COUNT(stolpec): Če kot argument navedete ime polja, bodo prešteti samo zapisi tistih polj, v katerih podano ime polja vsebuje neko vrednost. Polja z vrednostjo Null (t.j. prazna polja, ki ne vsebujejo besedilne ali številske vrednosti) ne štejejo."
 
 #: 02010100.xhp
 msgctxt ""
@@ -1082,13 +1082,12 @@ msgid "Group"
 msgstr "Združi"
 
 #: 02010100.xhp
-#, fuzzy
 msgctxt ""
 "02010100.xhp\n"
 "par_id3149438\n"
 "help.text"
 msgid "Groups query data according to the selected field name. Functions are executed according to the specified groups. In SQL, this option corresponds to the GROUP BY clause. If a criterion is added, this entry appears in the SQL HAVING sub-clause."
-msgstr "Skupine vršijo poizvedbe podatkov glede na izbrano ime polja. Funkcije se izvajajo glede na določene skupine. V SQL ta možnost ustreza stavku GROUP BY. Če je dodan pogoj, se ta vnos pojavi v izjavi SQL kot HAVING."
+msgstr "Skupine vršijo poizvedbe podatkov glede na ime izbranega polja. Funkcije se izvajajo glede na izbrane skupine. V SQL ta možnost ustreza stavku GROUP BY. Če se doda pogoj, se ta vnos pojavi v izjavi SQL kot HAVING."
 
 #: 02010100.xhp
 msgctxt ""
@@ -1143,7 +1142,7 @@ msgctxt ""
 "02010100.xhp\n"
 "par_id3155098\n"
 "help.text"
-msgid "You can also assign aliases to function calls. If you not wish the query string to be displayed in the column header, enter a desired substitute name under <emph>Alias</emph>."
+msgid "You can also assign aliases to function calls. If you do not want to display the query string in the column header, enter a desired substitute name under <emph>Alias</emph>."
 msgstr "Vzdevke lahko dodelite tudi klicem funkcij. Če poizvedbe ne želite prikazati v glavi stolpca, vnesite želeno nadomestno ime pod <emph>Vzdevek</emph>."
 
 #: 02010100.xhp
@@ -1379,13 +1378,12 @@ msgid "Distinct Values"
 msgstr "Različne vrednosti"
 
 #: 02010100.xhp
-#, fuzzy
 msgctxt ""
 "02010100.xhp\n"
 "par_id3147500\n"
 "help.text"
 msgid "<ahelp hid=\"HID_QRYDGN_ROW_FUNCTION\">Retrieves only distinct values from the query.</ahelp> This applies to multiple records that might contain several repeating occurrences of data in the selected fields. If the <emph>Distinct Values</emph> command is active, you should only see one record in the query (DISTINCT). Otherwise, you will see all records corresponding to the query criteria (ALL)."
-msgstr "<ahelp hid=\"HID_QRYDGN_ROW_FUNCTION\">Uporablja samo različne vrednosti v poizvedbi.</ahelp> To velja za zapise, ki vsebujejo podatke, ki se pojavijo večkrat v izbranih poljih. Če je ukaz <emph>Različne vrednosti</emph> aktiviran, boste videli samo en zapis v poizvedbi (DISTINCT). Sicer boste videli vse zapise, ki ustrezajo pogojem poizvedbe (ALL)."
+msgstr "<ahelp hid=\"HID_QRYDGN_ROW_FUNCTION\">S poizvedbo prikliče samo različne vrednosti.</ahelp> To velja za zapise, ki vsebujejo podatke, ki se pojavijo večkrat v izbranih poljih. Če je ukaz <emph>Različne vrednosti</emph> aktiviran, poizvedba vrne samo en zapis (DISTINCT), v nasprotnem primeru vrne vse zapise, ki ustrezajo pogojem poizvedbe (ALL)."
 
 #: 02010100.xhp
 msgctxt ""
@@ -1492,13 +1490,12 @@ msgid "... the content of the field is identical to the indicated expression."
 msgstr "... je vsebina polja enaka označenemu izrazu."
 
 #: 02010100.xhp
-#, fuzzy
 msgctxt ""
 "02010100.xhp\n"
 "par_id3153120\n"
 "help.text"
 msgid "The operator = will not be displayed in the query fields. If you enter a value without any operator, the = operator is automatically assumed."
-msgstr "Operator = ne bo prikazan v poizvedbenih poljih. Če vnesete vrednost brez operatorja, bo operator = samodejno privzet."
+msgstr "Operator = ne bo prikazan v poizvedbenih poljih. Če vnesete vrednost brez operatorja, bo samodejno uporabljen operator =."
 
 #: 02010100.xhp
 msgctxt ""
@@ -1693,13 +1690,12 @@ msgid "is an element of"
 msgstr "je element"
 
 #: 02010100.xhp
-#, fuzzy
 msgctxt ""
 "02010100.xhp\n"
 "par_id3156130\n"
 "help.text"
-msgid "... the data field must contain the indicated search string in the order given. The position of the (*) placeholder indicates whether the searched for string (x) occurs before the placeholder (x*), after the placeholder (*x) or between the placeholders (*x*). Instead of the familiar file system (*) placeholder, you can also use the SQL (%) character as a placeholder in SQL queries in the $[officename] interface."
-msgstr "... podatkovno polje mora vsebovati označen iskalni niz v podanem zaporedju. Položaj ograde (*) označuje, ali se iskani izraz (x) pojavi na začetku (x*), na koncu (*x) ali znotraj vsebine polja (*x*). Kot ogrado lahko v SQL-poizvedbe vnesete znak SQL (%) v vmesniku $[officename]."
+msgid "... the data field contains the indicated expression. The (*) placeholder indicates whether the expression x occurs at the beginning of (x*), at the end of (*x) or inside the field content (*x*). You can enter as a placeholder in SQL queries either the SQL % character or the familiar (*) file system placeholder in the %PRODUCTNAME interface."
+msgstr "... podatkovno polje mora vsebovati označen iskalni niz v podanem zaporedju. Položaj ograde (*) označuje, ali se iskani izraz (x) pojavi na začetku (x*), na koncu (*x) ali znotraj vsebine polja (*x*). Namesto znane ograde datotečnega sistema (*) lahko v vmesniku %PRODUCTNAME kot ogrado v SQL-poizvedbe vnesete znak SQL (%)."
 
 #: 02010100.xhp
 msgctxt ""
@@ -2038,13 +2034,12 @@ msgid "Example: select * from mytable where years='1999-12-31'"
 msgstr "Primer: select * from mojatabela where leta='1999-12-31'"
 
 #: 02010100.xhp
-#, fuzzy
 msgctxt ""
 "02010100.xhp\n"
 "par_id3150510\n"
 "help.text"
 msgid "All date expressions (date literals) must be enclosed with single quotation marks. (Consult the reference for the particular database and connector you are using for more details.)"
-msgstr "Vsi datumski izrazi (z datumskimi nadomestnimi znaki) morajo biti v enojnih narekovajih (podrobnosti si oglejte v referenčnih virih za določeno zbirko podatkov in konektor, ki ju uporabljate)."
+msgstr "Vsi datumski izrazi (datumski nizi) morajo biti v enojnih narekovajih (podrobnosti si oglejte v referenčnih virih za določeno zbirko podatkov in konektor, ki ju uporabljate)."
 
 #: 02010100.xhp
 msgctxt ""
@@ -2295,13 +2290,12 @@ msgid "If you enter the SQL code manually, you can create SQL-specific queries t
 msgstr "Če ročno vnesete kodo SQL, lahko ustvarite poizvedbe, značilne za SQL, ki jih grafični vmesnik v <emph>Oblikovanju poizvedbe</emph> ne podpira. Te poizvedbe morajo biti izvedene v izvirnem načinu SQL."
 
 #: 02010100.xhp
-#, fuzzy
 msgctxt ""
 "02010100.xhp\n"
 "par_id3149632\n"
 "help.text"
-msgid "By clicking the <link href=\"text/shared/02/14030000.xhp\" name=\"Run SQL command directly\"><emph>Run SQL command directly</emph></link> icon in the SQL view, you can formulate a query that is not processed by $[officename]and sent directly to the database engine."
-msgstr "Ko kliknete ikono <link href=\"text/shared/02/14030000.xhp\" name=\"Neposredno izvedi ukaz SQL\"><emph>Neposredno zaženi/izvedi ukaz SQL</emph></link> v SQL-pogledu, lahko oblikujete poizvedbo, ki jo ne obdela $[officename]."
+msgid "By clicking the <link href=\"text/shared/02/14030000.xhp\" name=\"Run SQL command directly\"><emph>Run SQL command directly</emph></link> icon in the SQL view, you can formulate a query that is not processed by $[officename] and sent directly to the database engine."
+msgstr "Ko kliknete ikono <link href=\"text/shared/02/14030000.xhp\" name=\"Neposredno zaženi ukaz SQL\"><emph>Neposredno zaženi ukaz SQL</emph></link> v SQL-pogledu, lahko ustvarite poizvedbo, ki se ne obdela v $[officename], ampak se pošlje neposredno mehanizmu zbirke podatkov."
 
 #: 02010101.xhp
 msgctxt ""
@@ -9076,7 +9070,7 @@ msgctxt ""
 "menufilesave.xhp\n"
 "par_idN1054B\n"
 "help.text"
-msgid "In this dialog, you can specify the position and name of a form  that you save within a <link href=\"text/shared/explorer/database/dabadoc.xhp\">database file</link>. The dialog opens automatically when you save a form the first time."
+msgid "In this dialog, you can specify the position and name of a form that you save within a <link href=\"text/shared/explorer/database/dabadoc.xhp\">database file</link>. The dialog opens automatically when you save a form the first time."
 msgstr "V tem pogovornem oknu lahko določite mesto in ime obrazca, ki ga boste shranili v <link href=\"text/shared/explorer/database/dabadoc.xhp\">datoteko zbirke podatkov</link>. To pogovorno okno se odpre samodejno, ko prvič shranjujete obrazec."
 
 #: menufilesave.xhp
@@ -10696,13 +10690,12 @@ msgid "Click the Add Field icon on the toolbar."
 msgstr "V orodni vrstici kliknite gumb Dodaj polje."
 
 #: rep_insertfield.xhp
-#, fuzzy
 msgctxt ""
 "rep_insertfield.xhp\n"
 "par_id141540563922693\n"
 "help.text"
-msgid "Select the field in the Add Field dialog and click <emph>Insert</emph>. You can select multiples fields pressing the <switchinline select=\"sys\">                    <caseinline select=\"MAC\">Command</caseinline><defaultinline>Ctrl</defaultinline>                    </switchinline> key while clicking on the fields name or using the Shift key while pressing the mouse button. Click <emph>Insert</emph> in the toolbar to add the fields to the report."
-msgstr "Povlecite predmet v dokument, pri čemer držite pritisnjeni dvigalki in <switchinline select=\"sys\"><caseinline select=\"MAC\">tipki Cmd</caseinline><defaultinline>krmilki</defaultinline></switchinline>, ali pa z desnim klikom na miško odprite kontekstni meni in izberite <emph>Vstavi</emph> in <emph>Kopiraj</emph>."
+msgid "Select the field in the Add Field dialog and click <emph>Insert</emph>. You can select multiple fields pressing the <switchinline select=\"sys\"><caseinline select=\"MAC\">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline> key while clicking on the fields name or using the Shift key while pressing the mouse button. Click <emph>Insert</emph> in the toolbar to add the fields to the report."
+msgstr "V pogovornem oknu Dodaj polje izberite polje in kliknite <emph>Vstavi</emph>. Če želite izbrati več polj, med klikanjem polj držite <switchinline select=\"sys\"><caseinline select=\"MAC\">tipko Cmd</caseinline><defaultinline>krmilko</defaultinline></switchinline> ali držite dvigalko in povlecite z miško. Nato kliknite <emph>Vstavi</emph> v orodni vrstici, da dodate polja v poročilo."
 
 #: rep_insertfield.xhp
 msgctxt ""
@@ -10777,13 +10770,12 @@ msgid "<image src=\"media/icon-themes/cmd/lc_removefiltersort.svg\" id=\"img_id4
 msgstr "<image src=\"media/icon-themes/cmd/lc_removefiltersort.svg\" id=\"img_id41540564212907\" width=\"1.0cm\" height=\"1.0cm\"><alt id=\"alt_id421540564212908\">Ikona Razveljavi razvrščanje</alt></image>"
 
 #: rep_insertfield.xhp
-#, fuzzy
 msgctxt ""
 "rep_insertfield.xhp\n"
 "par_id401540533942665\n"
 "help.text"
 msgid "Restore original sorting"
-msgstr "Obnovi izvorno razvrščenost"
+msgstr "Obnovi izvirno razvrščenost"
 
 #: rep_main.xhp
 msgctxt ""
@@ -11754,13 +11746,12 @@ msgid "Select a table from the Contents list, then press Tab or click outside th
 msgstr "Izberite tabelo s seznama Vsebina, nato pritisnite tabulator ali kliknite izven vnosnega polja, da ga zapustite."
 
 #: rep_prop.xhp
-#, fuzzy
 msgctxt ""
 "rep_prop.xhp\n"
 "par_id3587145\n"
 "help.text"
 msgid "<ahelp hid=\".\">The <embedvar href=\"text/shared/explorer/database/rep_insertfield.xhp#addfields\" markup=\"ignore\"/>  window is shown automatically when you have selected a table in the Contents box and leave that box. You can also click the Add Field icon on the toolbar, or choose <item type=\"menuitem\">View - Add Field</item>.</ahelp>"
-msgstr "<ahelp hid=\".\">Okno Dodaj polje se prikaže samodejno, ko izberete tabelo v polju Vsebina in to polje zapustite. Kliknete lahko tudi ikono Dodaj polje v orodni vrstici ali izberete <item type=\"menuitem\">Pogled – Dodaj polje</item>.</ahelp>"
+msgstr "<ahelp hid=\".\">Okno <embedvar href=\"text/shared/explorer/database/rep_insertfield.xhp#addfields\" markup=\"ignore\"/> se prikaže samodejno, ko izberete tabelo v polju Vsebina in to polje zapustite. Kliknete lahko tudi ikono Dodaj polje v orodni vrstici ali izberete <item type=\"menuitem\">Pogled – Dodaj polje</item>.</ahelp>"
 
 #: rep_prop.xhp
 msgctxt ""

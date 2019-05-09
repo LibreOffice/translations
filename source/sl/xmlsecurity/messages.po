@@ -1,10 +1,10 @@
-#. extracted from xmlsecurity/uiconfig/ui
+#. extracted from xmlsecurity/inc
 msgid ""
 msgstr ""
-"Project-Id-Version: LibreOffice 6.1\n"
+"Project-Id-Version: LibreOffice 6.3\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2018-10-29 21:13+0100\n"
-"PO-Revision-Date: 2018-05-22 18:15+0200\n"
+"POT-Creation-Date: 2019-04-22 10:58+0200\n"
+"PO-Revision-Date: 2019-03-29 10:11+0200\n"
 "Last-Translator: Martin Srebotnjak <miles@filmsi.net>\n"
 "Language-Team: sl.libreoffice.org\n"
 "MIME-Version: 1.0\n"
@@ -17,7 +17,186 @@ msgstr ""
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Project-Style: openoffice\n"
 
-#: xmlsecurity/uiconfig/ui/certgeneral.ui:32
+#: xmlsecurity/inc/strings.hrc:25
+msgctxt "STR_CERTIFICATE_NOT_VALIDATED"
+msgid "The certificate could not be validated."
+msgstr "Potrdila ni mogoče overiti."
+
+#: xmlsecurity/inc/strings.hrc:26
+msgctxt "STR_VERSION"
+msgid "Version"
+msgstr "Različica"
+
+#: xmlsecurity/inc/strings.hrc:27
+msgctxt "STR_SERIALNUM"
+msgid "Serial Number"
+msgstr "Serijska številka"
+
+#: xmlsecurity/inc/strings.hrc:28
+msgctxt "STR_ISSUER"
+msgid "Issuer"
+msgstr "Izdajatelj"
+
+#: xmlsecurity/inc/strings.hrc:29
+msgctxt "STR_VALIDFROM"
+msgid "Valid From"
+msgstr "Veljavno od"
+
+#: xmlsecurity/inc/strings.hrc:30
+msgctxt "STR_VALIDTO"
+msgid "Valid to"
+msgstr "Veljavno do"
+
+#: xmlsecurity/inc/strings.hrc:31
+msgctxt "STR_SUBJECT"
+msgid "Subject"
+msgstr "Zadeva"
+
+#: xmlsecurity/inc/strings.hrc:32
+msgctxt "STR_SUBJECT_PUBKEY_ALGO"
+msgid "Subject Algorithm"
+msgstr "Algoritem zadeve"
+
+#: xmlsecurity/inc/strings.hrc:33
+msgctxt "STR_SUBJECT_PUBKEY_VAL"
+msgid "Public Key"
+msgstr "Javni ključ"
+
+#: xmlsecurity/inc/strings.hrc:34
+msgctxt "STR_SIGNATURE_ALGO"
+msgid "Signature Algorithm"
+msgstr "Algoritem podpisovanja"
+
+#: xmlsecurity/inc/strings.hrc:35
+msgctxt "STR_USE"
+msgid "Certificate Use"
+msgstr "Raba potrdila"
+
+#: xmlsecurity/inc/strings.hrc:36
+msgctxt "STR_THUMBPRINT_SHA1"
+msgid "Thumbprint SHA1"
+msgstr "Prstni odtis SHA1"
+
+#: xmlsecurity/inc/strings.hrc:37
+msgctxt "STR_THUMBPRINT_MD5"
+msgid "Thumbprint MD5"
+msgstr "Prstni odtis MD5"
+
+#: xmlsecurity/inc/strings.hrc:39
+msgctxt "STR_XMLSECDLG_OLD_ODF_FORMAT"
+msgid ""
+"This document contains signatures in ODF 1.1 (OpenOffice.org 2.x) format. Signing documents in %PRODUCTNAME %PRODUCTVERSION requires ODF 1.2 format version. Thus no signatures can be added or removed to this document.\n"
+"\n"
+"Save document in ODF 1.2 format and add all desired signatures again."
+msgstr ""
+"Dokument vsebuje podpise v zapisu ODF 1.1 (OpenOffice.org 2.x). Za podpisovanje dokumentov v %PRODUCTNAME %PRODUCTVERSION je potrebna različica zapisa ODF 1.2. Zato temu dokumentu ne morete dodati ali odstraniti podpisov.\n"
+"\n"
+"Shranite dokument v zapisu ODF 1.2 in znova dodajte vse želene podpise."
+
+#: xmlsecurity/inc/strings.hrc:43
+msgctxt "STR_XMLSECDLG_QUERY_REMOVEDOCSIGNBEFORESIGN"
+msgid ""
+"Adding or removing a macro signature will remove all document signatures.\n"
+"Do you really want to continue?"
+msgstr ""
+"Z dodajanjem ali odstranjevanjem podpisa makra boste odstranili vse podpise dokumenta.\n"
+"Resnično želite nadaljevati?"
+
+#: xmlsecurity/inc/strings.hrc:45
+msgctxt "STR_XMLSECDLG_QUERY_REALLYREMOVE"
+msgid ""
+"Document signature cannot be restored, once removed.\n"
+"Do you really want to remove selected signature?"
+msgstr ""
+"Podpisa dokumenta ni mogoče obnoviti, ko je enkrat odstranjen.\n"
+"Resnično želite odstraniti izbrani podpis?"
+
+#: xmlsecurity/inc/strings.hrc:48
+msgctxt "STR_XMLSECDLG_SIGNING_FAILED"
+msgid "An error occurred while adding the signature."
+msgstr "Pri dodajanju podpisa je prišlo do napake."
+
+#: xmlsecurity/inc/strings.hrc:49
+msgctxt "STR_XMLSECDLG_NO_CERT_MANAGER"
+msgid "Could not find any certificate manager."
+msgstr "Upravitelja potrdil ni mogoče najti."
+
+#: xmlsecurity/inc/strings.hrc:50
+msgctxt "STR_XMLSECDLG_NO_CERT_FOUND"
+msgid "Could not find the certificate."
+msgstr "Potrdila ni mogoče najti."
+
+#: xmlsecurity/inc/strings.hrc:52
+msgctxt "RID_XMLSECWB_NO_MOZILLA_PROFILE"
+msgid "Digital signatures functionality could not be used, because no Mozilla user profile was found. Please check the Mozilla installation."
+msgstr "Digitalnih potrdil ni mogoče uporabljati, saj program ni našel nobenega uporabniškega profila za Mozillo. Preverite namestitev Mozille."
+
+#: xmlsecurity/inc/strings.hrc:54
+msgctxt "selectcertificatedialog|STR_DIGITAL_SIGNATURE"
+msgid "Digital signature"
+msgstr "Digitalni podpis"
+
+#: xmlsecurity/inc/strings.hrc:55
+msgctxt "selectcertificatedialog|STR_NON_REPUDIATION"
+msgid "Non-repudiation"
+msgstr "Nezatajljivost"
+
+#: xmlsecurity/inc/strings.hrc:56
+msgctxt "selectcertificatedialog|STR_KEY_ENCIPHERMENT"
+msgid "Key encipherment"
+msgstr "Šifriranje ključa"
+
+#: xmlsecurity/inc/strings.hrc:57
+msgctxt "selectcertificatedialog|STR_DATA_ENCIPHERMENT"
+msgid "Data encipherment"
+msgstr "Šifriranje podatkov"
+
+#: xmlsecurity/inc/strings.hrc:58
+msgctxt "selectcertificatedialog|STR_KEY_AGREEMENT"
+msgid "Key Agreement"
+msgstr "Dogovor o ključu"
+
+#: xmlsecurity/inc/strings.hrc:59
+msgctxt "selectcertificatedialog|STR_KEY_CERT_SIGN"
+msgid "Certificate signature verification"
+msgstr "Preverjanje podpisa potrdila"
+
+#: xmlsecurity/inc/strings.hrc:60
+msgctxt "selectcertificatedialog|STR_CRL_SIGN"
+msgid "CRL signature verification"
+msgstr "Preverjanje podpisa CRL"
+
+#: xmlsecurity/inc/strings.hrc:61
+msgctxt "selectcertificatedialog|STR_ENCIPHER_ONLY"
+msgid "Only for encipherment"
+msgstr "Samo za šifriranje"
+
+#: xmlsecurity/inc/strings.hrc:62
+msgctxt "selectcertificatedialog|str_sign"
+msgid "Sign"
+msgstr "Podpiši"
+
+#: xmlsecurity/inc/strings.hrc:63
+msgctxt "selectcertificatedialog|str_selectsign"
+msgid "Select"
+msgstr "Izberi"
+
+#: xmlsecurity/inc/strings.hrc:64
+msgctxt "selectcertificatedialog|str_encrypt"
+msgid "Encrypt"
+msgstr "Šifriraj"
+
+#: xmlsecurity/uiconfig/ui/certdetails.ui:49
+msgctxt "certdetails|field"
+msgid "Field"
+msgstr "Polje"
+
+#: xmlsecurity/uiconfig/ui/certdetails.ui:62
+msgctxt "certdetails|value"
+msgid "Value"
+msgstr "Vrednost"
+
+#: xmlsecurity/uiconfig/ui/certgeneral.ui:33
 msgctxt "certgeneral|label1"
 msgid "Certificate Information"
 msgstr "Podatki o e-potrdilu"
@@ -42,7 +221,7 @@ msgctxt "certgeneral|valid_from"
 msgid "Valid from:"
 msgstr "Veljavno od:"
 
-#: xmlsecurity/uiconfig/ui/certgeneral.ui:187
+#: xmlsecurity/uiconfig/ui/certgeneral.ui:188
 msgctxt "certgeneral|privatekey"
 msgid "You have a private key that corresponds to this certificate."
 msgstr "Imate zasebni ključ, ki odgovarja temu potrdilu."
@@ -52,117 +231,117 @@ msgctxt "certgeneral|valid_to"
 msgid "Valid to:"
 msgstr "Veljavno do:"
 
-#: xmlsecurity/uiconfig/ui/certpage.ui:26
+#: xmlsecurity/uiconfig/ui/certpage.ui:32
 msgctxt "certpage|label1"
 msgid "Certification path"
 msgstr "Pot potrjevanja"
 
-#: xmlsecurity/uiconfig/ui/certpage.ui:39
+#: xmlsecurity/uiconfig/ui/certpage.ui:44
 msgctxt "certpage|viewcert"
 msgid "View Certificate..."
 msgstr "Pokaži potrdilo ..."
 
-#: xmlsecurity/uiconfig/ui/certpage.ui:90
+#: xmlsecurity/uiconfig/ui/certpage.ui:116
 msgctxt "certpage|label2"
 msgid "Certification status"
 msgstr "Stanje potrjevanja"
 
-#: xmlsecurity/uiconfig/ui/certpage.ui:127
+#: xmlsecurity/uiconfig/ui/certpage.ui:159
 msgctxt "certpage|certok"
 msgid "The certificate is OK."
 msgstr "Digitalno potrdilo je v redu."
 
-#: xmlsecurity/uiconfig/ui/certpage.ui:139
+#: xmlsecurity/uiconfig/ui/certpage.ui:171
 msgctxt "certpage|certnotok"
 msgid "The certificate could not be validated."
 msgstr "Potrdila ni mogoče overiti."
 
-#: xmlsecurity/uiconfig/ui/digitalsignaturesdialog.ui:9
+#: xmlsecurity/uiconfig/ui/digitalsignaturesdialog.ui:26
 msgctxt "digitalsignaturesdialog|DigitalSignaturesDialog"
 msgid "Digital Signatures"
 msgstr "Digitalni podpisi"
 
-#: xmlsecurity/uiconfig/ui/digitalsignaturesdialog.ui:70
+#: xmlsecurity/uiconfig/ui/digitalsignaturesdialog.ui:90
 msgctxt "digitalsignaturesdialog|dochint"
 msgid "The following have signed the document content: "
 msgstr "Vsebino dokumenta so podpisali:"
 
-#: xmlsecurity/uiconfig/ui/digitalsignaturesdialog.ui:102
-msgctxt "digitalsignaturesdialog|view"
-msgid "View Certificate..."
-msgstr "Pokaži potrdilo ..."
-
-#: xmlsecurity/uiconfig/ui/digitalsignaturesdialog.ui:115
-msgctxt "digitalsignaturesdialog|sign"
-msgid "Sign Document..."
-msgstr "Podpiši dokument ..."
-
-#: xmlsecurity/uiconfig/ui/digitalsignaturesdialog.ui:129
-msgctxt "digitalsignaturesdialog|remove"
-msgid "Remove"
-msgstr "Odstrani"
-
-#: xmlsecurity/uiconfig/ui/digitalsignaturesdialog.ui:142
-msgctxt "digitalsignaturesdialog|start_certmanager"
-msgid "Start Certificate Manager..."
-msgstr "Zaženi upravitelja potrdil ..."
-
-#: xmlsecurity/uiconfig/ui/digitalsignaturesdialog.ui:170
+#: xmlsecurity/uiconfig/ui/digitalsignaturesdialog.ui:135
 msgctxt "digitalsignaturesdialog|signed"
 msgid "Signed by "
 msgstr "Podpisani "
 
-#: xmlsecurity/uiconfig/ui/digitalsignaturesdialog.ui:182
+#: xmlsecurity/uiconfig/ui/digitalsignaturesdialog.ui:148
 msgctxt "digitalsignaturesdialog|issued"
 msgid "Digital ID issued by "
 msgstr "Digitalni ID izdal "
 
-#: xmlsecurity/uiconfig/ui/digitalsignaturesdialog.ui:194
+#: xmlsecurity/uiconfig/ui/digitalsignaturesdialog.ui:161
 msgctxt "digitalsignaturesdialog|date"
 msgid "Date"
 msgstr "Datum"
 
-#: xmlsecurity/uiconfig/ui/digitalsignaturesdialog.ui:205
+#: xmlsecurity/uiconfig/ui/digitalsignaturesdialog.ui:174
 msgctxt "digitalsignaturesdialog|description"
 msgid "Description"
 msgstr "Opis"
 
-#: xmlsecurity/uiconfig/ui/digitalsignaturesdialog.ui:216
+#: xmlsecurity/uiconfig/ui/digitalsignaturesdialog.ui:187
 msgctxt "digitalsignaturesdialog|type"
 msgid "Signature type"
 msgstr "Vrsta podpisa"
 
-#: xmlsecurity/uiconfig/ui/digitalsignaturesdialog.ui:233
+#: xmlsecurity/uiconfig/ui/digitalsignaturesdialog.ui:213
+msgctxt "digitalsignaturesdialog|view"
+msgid "View Certificate..."
+msgstr "Pokaži potrdilo ..."
+
+#: xmlsecurity/uiconfig/ui/digitalsignaturesdialog.ui:226
+msgctxt "digitalsignaturesdialog|sign"
+msgid "Sign Document..."
+msgstr "Podpiši dokument ..."
+
+#: xmlsecurity/uiconfig/ui/digitalsignaturesdialog.ui:240
+msgctxt "digitalsignaturesdialog|remove"
+msgid "Remove"
+msgstr "Odstrani"
+
+#: xmlsecurity/uiconfig/ui/digitalsignaturesdialog.ui:253
+msgctxt "digitalsignaturesdialog|start_certmanager"
+msgid "Start Certificate Manager..."
+msgstr "Zaženi upravitelja potrdil ..."
+
+#: xmlsecurity/uiconfig/ui/digitalsignaturesdialog.ui:339
 msgctxt "digitalsignaturesdialog|macrohint"
 msgid "The following have signed the document macro:"
 msgstr "Makro dokumenta so podpisali:"
 
-#: xmlsecurity/uiconfig/ui/digitalsignaturesdialog.ui:245
+#: xmlsecurity/uiconfig/ui/digitalsignaturesdialog.ui:351
 msgctxt "digitalsignaturesdialog|packagehint"
 msgid "The following have signed this package:"
 msgstr "Ta paket so podpisali:"
 
-#: xmlsecurity/uiconfig/ui/digitalsignaturesdialog.ui:263
+#: xmlsecurity/uiconfig/ui/digitalsignaturesdialog.ui:369
 msgctxt "digitalsignaturesdialog|validft"
 msgid "The signatures in this document are valid"
 msgstr "Podpisi v tem dokumentu so veljavni"
 
-#: xmlsecurity/uiconfig/ui/digitalsignaturesdialog.ui:287
+#: xmlsecurity/uiconfig/ui/digitalsignaturesdialog.ui:393
 msgctxt "digitalsignaturesdialog|invalidft"
 msgid "The signatures in this document are invalid"
 msgstr "Podpisi v tem dokumentu so neveljavni"
 
-#: xmlsecurity/uiconfig/ui/digitalsignaturesdialog.ui:300
+#: xmlsecurity/uiconfig/ui/digitalsignaturesdialog.ui:406
 msgctxt "digitalsignaturesdialog|oldsignatureft"
 msgid "Not all parts of the document are signed"
 msgstr "V tem dokumentu niso podpisani vsi njegovi deli"
 
-#: xmlsecurity/uiconfig/ui/digitalsignaturesdialog.ui:313
+#: xmlsecurity/uiconfig/ui/digitalsignaturesdialog.ui:419
 msgctxt "digitalsignaturesdialog|notvalidatedft"
 msgid "Certificate could not be validated"
 msgstr "Potrdila ni mogoče overiti"
 
-#: xmlsecurity/uiconfig/ui/digitalsignaturesdialog.ui:362
+#: xmlsecurity/uiconfig/ui/digitalsignaturesdialog.ui:468
 msgctxt "digitalsignaturesdialog|adescompliant"
 msgid "Use AdES-compliant signature when there is a choice"
 msgstr "Uporabi podpis, skladen z AdES, če je na voljo"
@@ -172,17 +351,17 @@ msgctxt "macrosecuritydialog|MacroSecurityDialog"
 msgid "Macro Security"
 msgstr "Varnost makrov"
 
-#: xmlsecurity/uiconfig/ui/macrosecuritydialog.ui:108
+#: xmlsecurity/uiconfig/ui/macrosecuritydialog.ui:137
 msgctxt "macrosecuritydialog|SecurityLevelPage"
 msgid "Security Level"
 msgstr "Varnostna raven"
 
-#: xmlsecurity/uiconfig/ui/macrosecuritydialog.ui:130
+#: xmlsecurity/uiconfig/ui/macrosecuritydialog.ui:183
 msgctxt "macrosecuritydialog|SecurityTrustPage"
 msgid "Trusted Sources"
 msgstr "Zaupanja vredni viri"
 
-#: xmlsecurity/uiconfig/ui/securitylevelpage.ui:14
+#: xmlsecurity/uiconfig/ui/securitylevelpage.ui:17
 msgctxt "securitylevelpage|low"
 msgid ""
 "_Low (not recommended).\n"
@@ -193,7 +372,7 @@ msgstr ""
 "Vsi makri se bodo zagnali brez potrditve.\n"
 "To nastavitev uporabite le, če popolnoma zaupate, da so vsi dokumenti, ki jih odprete, varni."
 
-#: xmlsecurity/uiconfig/ui/securitylevelpage.ui:32
+#: xmlsecurity/uiconfig/ui/securitylevelpage.ui:36
 msgctxt "securitylevelpage|med"
 msgid ""
 "_Medium.\n"
@@ -202,7 +381,7 @@ msgstr ""
 "_Srednja.\n"
 "Pred izvedbo makra iz vira, ki ni zaupanja vreden, je potrebna potrditev."
 
-#: xmlsecurity/uiconfig/ui/securitylevelpage.ui:49
+#: xmlsecurity/uiconfig/ui/securitylevelpage.ui:54
 msgctxt "securitylevelpage|high"
 msgid ""
 "H_igh.\n"
@@ -213,7 +392,7 @@ msgstr ""
 "Dovoljeno je le zaganjanje podpisanih makrov iz zaupanja vrednih virov.\n"
 "Nepodpisani makri so onemogočeni."
 
-#: xmlsecurity/uiconfig/ui/securitylevelpage.ui:68
+#: xmlsecurity/uiconfig/ui/securitylevelpage.ui:73
 msgctxt "securitylevelpage|vhigh"
 msgid ""
 "_Very high.\n"
@@ -224,147 +403,92 @@ msgstr ""
 "Dovoljen je samo zagon makrov iz zaupanja vrednih lokacij.\n"
 "Vsi ostali makri, podpisani ali ne, so onemogočeni."
 
-#: xmlsecurity/uiconfig/ui/securitytrustpage.ui:45
+#: xmlsecurity/uiconfig/ui/securitytrustpage.ui:67
 msgctxt "securitytrustpage|viewcert"
 msgid "_View..."
 msgstr "_Pokaži ..."
 
-#: xmlsecurity/uiconfig/ui/securitytrustpage.ui:88
+#: xmlsecurity/uiconfig/ui/securitytrustpage.ui:124
 msgctxt "securitytrustpage|to"
 msgid "Issued to"
 msgstr "Izdano za"
 
-#: xmlsecurity/uiconfig/ui/securitytrustpage.ui:102
+#: xmlsecurity/uiconfig/ui/securitytrustpage.ui:137
 msgctxt "securitytrustpage|by"
 msgid "Issued by"
 msgstr "Izdajatelj"
 
-#: xmlsecurity/uiconfig/ui/securitytrustpage.ui:116
+#: xmlsecurity/uiconfig/ui/securitytrustpage.ui:150
 msgctxt "securitytrustpage|date"
 msgid "Expiration date"
 msgstr "Veljaven do"
 
-#: xmlsecurity/uiconfig/ui/securitytrustpage.ui:174
+#: xmlsecurity/uiconfig/ui/securitytrustpage.ui:189
 msgctxt "securitytrustpage|label3"
 msgid "Trusted Certificates"
 msgstr "Zaupanja vredna potrdila"
 
-#: xmlsecurity/uiconfig/ui/securitytrustpage.ui:217
+#: xmlsecurity/uiconfig/ui/securitytrustpage.ui:231
 msgctxt "securitytrustpage|label8"
 msgid "Document macros are always executed if they have been opened from one of the following locations."
 msgstr "Makri dokumentov se bodo vedno zagnali, če bodo odprti z enega od naslednjih mest."
 
-#: xmlsecurity/uiconfig/ui/securitytrustpage.ui:236
+#: xmlsecurity/uiconfig/ui/securitytrustpage.ui:250
 msgctxt "securitytrustpage|addfile"
 msgid "A_dd..."
 msgstr "_Dodaj ..."
 
-#: xmlsecurity/uiconfig/ui/securitytrustpage.ui:323
+#: xmlsecurity/uiconfig/ui/securitytrustpage.ui:348
 msgctxt "securitytrustpage|label4"
 msgid "Trusted File Locations"
 msgstr "Zaupanja vredna mesta datotek"
 
-#: xmlsecurity/uiconfig/ui/selectcertificatedialog.ui:9
+#: xmlsecurity/uiconfig/ui/selectcertificatedialog.ui:24
 msgctxt "selectcertificatedialog|SelectCertificateDialog"
 msgid "Select Certificate"
 msgstr "Izberi potrdilo"
 
-#: xmlsecurity/uiconfig/ui/selectcertificatedialog.ui:92
-msgctxt "selectcertificatedialog|issuedto"
-msgid "Issued to"
-msgstr "Izdano za"
-
-#: xmlsecurity/uiconfig/ui/selectcertificatedialog.ui:103
-msgctxt "selectcertificatedialog|issuedby"
-msgid "Issued by"
-msgstr "Izdajatelj"
-
-#: xmlsecurity/uiconfig/ui/selectcertificatedialog.ui:114
-msgctxt "selectcertificatedialog|usage"
-msgid "Certificate usage"
-msgstr "Raba potrdila"
-
-#: xmlsecurity/uiconfig/ui/selectcertificatedialog.ui:125
-msgctxt "selectcertificatedialog|expiration"
-msgid "Expiration date"
-msgstr "Veljaven do"
-
-#: xmlsecurity/uiconfig/ui/selectcertificatedialog.ui:136
-msgctxt "selectcertificatedialog|type"
-msgid "Type"
-msgstr "Vrsta"
-
-#: xmlsecurity/uiconfig/ui/selectcertificatedialog.ui:148
-msgctxt "selectcertificatedialog|STR_DIGITAL_SIGNATURE"
-msgid "Digital signature"
-msgstr "Digitalni podpis"
-
-#: xmlsecurity/uiconfig/ui/selectcertificatedialog.ui:153
-msgctxt "selectcertificatedialog|STR_NON_REPUDIATION"
-msgid "Non-repudiation"
-msgstr "Nezatajljivost"
-
-#: xmlsecurity/uiconfig/ui/selectcertificatedialog.ui:158
-msgctxt "selectcertificatedialog|STR_KEY_ENCIPHERMENT"
-msgid "Key encipherment"
-msgstr "Šifriranje ključa"
-
-#: xmlsecurity/uiconfig/ui/selectcertificatedialog.ui:163
-msgctxt "selectcertificatedialog|STR_DATA_ENCIPHERMENT"
-msgid "Data encipherment"
-msgstr "Šifriranje podatkov"
-
-#: xmlsecurity/uiconfig/ui/selectcertificatedialog.ui:168
-msgctxt "selectcertificatedialog|STR_KEY_AGREEMENT"
-msgid "Key Agreement"
-msgstr "Dogovor o ključu"
-
-#: xmlsecurity/uiconfig/ui/selectcertificatedialog.ui:173
-msgctxt "selectcertificatedialog|STR_KEY_CERT_SIGN"
-msgid "Certificate signature verification"
-msgstr "Preverjanje podpisa potrdila"
-
-#: xmlsecurity/uiconfig/ui/selectcertificatedialog.ui:178
-msgctxt "selectcertificatedialog|STR_CRL_SIGN"
-msgid "CRL signature verification"
-msgstr "Preverjanje podpisa CRL"
-
-#: xmlsecurity/uiconfig/ui/selectcertificatedialog.ui:183
-msgctxt "selectcertificatedialog|STR_ENCIPHER_ONLY"
-msgid "Only for encipherment"
-msgstr "Samo za šifriranje"
-
-#: xmlsecurity/uiconfig/ui/selectcertificatedialog.ui:189
-msgctxt "selectcertificatedialog|str_sign"
-msgid "Sign"
-msgstr "Podpiši"
-
-#: xmlsecurity/uiconfig/ui/selectcertificatedialog.ui:194
-msgctxt "selectcertificatedialog|str_selectsign"
-msgid "Select"
-msgstr "Izberi"
-
-#: xmlsecurity/uiconfig/ui/selectcertificatedialog.ui:199
-msgctxt "selectcertificatedialog|str_encrypt"
-msgid "Encrypt"
-msgstr "Šifriraj"
-
-#: xmlsecurity/uiconfig/ui/selectcertificatedialog.ui:214
+#: xmlsecurity/uiconfig/ui/selectcertificatedialog.ui:104
 msgctxt "selectcertificatedialog|sign"
 msgid "Select the certificate you want to use for signing:"
 msgstr "Izberite digitalno potrdilo, ki ga želite uporabiti za podpisovanje:"
 
-#: xmlsecurity/uiconfig/ui/selectcertificatedialog.ui:227
+#: xmlsecurity/uiconfig/ui/selectcertificatedialog.ui:117
 msgctxt "selectcertificatedialog|encrypt"
 msgid "Select the certificate you want to use for encryption:"
 msgstr "Izberite digitalno potrdilo, ki ga želite uporabiti za šifriranje:"
 
-#: xmlsecurity/uiconfig/ui/selectcertificatedialog.ui:251
+#: xmlsecurity/uiconfig/ui/selectcertificatedialog.ui:149
+msgctxt "selectcertificatedialog|issuedto"
+msgid "Issued to"
+msgstr "Izdano za"
+
+#: xmlsecurity/uiconfig/ui/selectcertificatedialog.ui:162
+msgctxt "selectcertificatedialog|issuedby"
+msgid "Issued by"
+msgstr "Izdajatelj"
+
+#: xmlsecurity/uiconfig/ui/selectcertificatedialog.ui:175
+msgctxt "selectcertificatedialog|type"
+msgid "Type"
+msgstr "Vrsta"
+
+#: xmlsecurity/uiconfig/ui/selectcertificatedialog.ui:188
+msgctxt "selectcertificatedialog|expiration"
+msgid "Expiration date"
+msgstr "Veljaven do"
+
+#: xmlsecurity/uiconfig/ui/selectcertificatedialog.ui:201
+msgctxt "selectcertificatedialog|usage"
+msgid "Certificate usage"
+msgstr "Raba potrdila"
+
+#: xmlsecurity/uiconfig/ui/selectcertificatedialog.ui:220
 msgctxt "selectcertificatedialog|viewcert"
 msgid "View Certificate..."
 msgstr "Pokaži potrdilo ..."
 
-#: xmlsecurity/uiconfig/ui/selectcertificatedialog.ui:271
+#: xmlsecurity/uiconfig/ui/selectcertificatedialog.ui:240
 msgctxt "selectcertificatedialog|label2"
 msgid "Description:"
 msgstr "Opis:"
@@ -374,136 +498,17 @@ msgctxt "viewcertdialog|ViewCertDialog"
 msgid "View Certificate"
 msgstr "Pokaži potrdilo"
 
-#: xmlsecurity/uiconfig/ui/viewcertdialog.ui:80
+#: xmlsecurity/uiconfig/ui/viewcertdialog.ui:110
 msgctxt "viewcertdialog|general"
 msgid "General"
 msgstr "Splošno"
 
-#: xmlsecurity/uiconfig/ui/viewcertdialog.ui:102
+#: xmlsecurity/uiconfig/ui/viewcertdialog.ui:156
 msgctxt "viewcertdialog|details"
 msgid "Details"
 msgstr "Podrobnosti"
 
-#: xmlsecurity/uiconfig/ui/viewcertdialog.ui:125
+#: xmlsecurity/uiconfig/ui/viewcertdialog.ui:203
 msgctxt "viewcertdialog|path"
 msgid "Certification Path"
 msgstr "Pot potrjevanja"
-
-#: xmlsecurity/inc/strings.hrc:25
-msgctxt "STR_CERTIFICATE_NOT_VALIDATED"
-msgid "The certificate could not be validated."
-msgstr "Potrdila ni mogoče overiti."
-
-#: xmlsecurity/inc/strings.hrc:26
-msgctxt "STR_HEADERBAR"
-msgid "Field\tValue"
-msgstr "Polje\tVrednost"
-
-#: xmlsecurity/inc/strings.hrc:27
-msgctxt "STR_VERSION"
-msgid "Version"
-msgstr "Različica"
-
-#: xmlsecurity/inc/strings.hrc:28
-msgctxt "STR_SERIALNUM"
-msgid "Serial Number"
-msgstr "Serijska številka"
-
-#: xmlsecurity/inc/strings.hrc:29
-msgctxt "STR_ISSUER"
-msgid "Issuer"
-msgstr "Izdajatelj"
-
-#: xmlsecurity/inc/strings.hrc:30
-msgctxt "STR_VALIDFROM"
-msgid "Valid From"
-msgstr "Veljavno od"
-
-#: xmlsecurity/inc/strings.hrc:31
-msgctxt "STR_VALIDTO"
-msgid "Valid to"
-msgstr "Veljavno do"
-
-#: xmlsecurity/inc/strings.hrc:32
-msgctxt "STR_SUBJECT"
-msgid "Subject"
-msgstr "Zadeva"
-
-#: xmlsecurity/inc/strings.hrc:33
-msgctxt "STR_SUBJECT_PUBKEY_ALGO"
-msgid "Subject Algorithm"
-msgstr "Algoritem zadeve"
-
-#: xmlsecurity/inc/strings.hrc:34
-msgctxt "STR_SUBJECT_PUBKEY_VAL"
-msgid "Public Key"
-msgstr "Javni ključ"
-
-#: xmlsecurity/inc/strings.hrc:35
-msgctxt "STR_SIGNATURE_ALGO"
-msgid "Signature Algorithm"
-msgstr "Algoritem podpisovanja"
-
-#: xmlsecurity/inc/strings.hrc:36
-msgctxt "STR_USE"
-msgid "Certificate Use"
-msgstr "Raba potrdila"
-
-#: xmlsecurity/inc/strings.hrc:37
-msgctxt "STR_THUMBPRINT_SHA1"
-msgid "Thumbprint SHA1"
-msgstr "Prstni odtis SHA1"
-
-#: xmlsecurity/inc/strings.hrc:38
-msgctxt "STR_THUMBPRINT_MD5"
-msgid "Thumbprint MD5"
-msgstr "Prstni odtis MD5"
-
-#: xmlsecurity/inc/strings.hrc:40
-msgctxt "STR_XMLSECDLG_OLD_ODF_FORMAT"
-msgid ""
-"This document contains signatures in ODF 1.1 (OpenOffice.org 2.x) format. Signing documents in %PRODUCTNAME %PRODUCTVERSION requires ODF 1.2 format version. Thus no signatures can be added or removed to this document.\n"
-"\n"
-"Save document in ODF 1.2 format and add all desired signatures again."
-msgstr ""
-"Dokument vsebuje podpise v zapisu ODF 1.1 (OpenOffice.org 2.x). Za podpisovanje dokumentov v %PRODUCTNAME %PRODUCTVERSION je potrebna različica zapisa ODF 1.2. Zato temu dokumentu ne morete dodati ali odstraniti podpisov.\n"
-"\n"
-"Shranite dokument v zapisu ODF 1.2 in znova dodajte vse želene podpise."
-
-#: xmlsecurity/inc/strings.hrc:44
-msgctxt "STR_XMLSECDLG_QUERY_REMOVEDOCSIGNBEFORESIGN"
-msgid ""
-"Adding or removing a macro signature will remove all document signatures.\n"
-"Do you really want to continue?"
-msgstr ""
-"Z dodajanjem ali odstranjevanjem podpisa makra boste odstranili vse podpise dokumenta.\n"
-"Resnično želite nadaljevati?"
-
-#: xmlsecurity/inc/strings.hrc:46
-msgctxt "STR_XMLSECDLG_QUERY_REALLYREMOVE"
-msgid ""
-"Document signature cannot be restored, once removed.\n"
-"Do you really want to remove selected signature?"
-msgstr ""
-"Podpisa dokumenta ni mogoče obnoviti, ko je enkrat odstranjen.\n"
-"Resnično želite odstraniti izbrani podpis?"
-
-#: xmlsecurity/inc/strings.hrc:49
-msgctxt "STR_XMLSECDLG_SIGNING_FAILED"
-msgid "An error occurred while adding the signature."
-msgstr "Pri dodajanju podpisa je prišlo do napake."
-
-#: xmlsecurity/inc/strings.hrc:50
-msgctxt "STR_XMLSECDLG_NO_CERT_MANAGER"
-msgid "Could not find any certificate manager."
-msgstr "Upravitelja potrdil ni mogoče najti."
-
-#: xmlsecurity/inc/strings.hrc:51
-msgctxt "STR_XMLSECDLG_NO_CERT_FOUND"
-msgid "Could not find the certificate."
-msgstr "Potrdila ni mogoče najti."
-
-#: xmlsecurity/inc/strings.hrc:53
-msgctxt "RID_XMLSECWB_NO_MOZILLA_PROFILE"
-msgid "Digital signatures functionality could not be used, because no Mozilla user profile was found. Please check the Mozilla installation."
-msgstr "Digitalnih potrdil ni mogoče uporabljati, saj program ni našel nobenega uporabniškega profila za Mozillo. Preverite namestitev Mozille."
