@@ -3,9 +3,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2019-04-24 18:25+0200\n"
-"PO-Revision-Date: 2019-04-25 05:09+0000\n"
-"Last-Translator: Tulio Macedo <tuliomac@gmail.com>\n"
+"POT-Creation-Date: 2019-04-30 14:59+0200\n"
+"PO-Revision-Date: 2019-05-09 16:40+0000\n"
+"Last-Translator: Olivier Hallot <olivier.hallot@documentfoundation.org>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 "X-Accelerator-Marker: ~\n"
 "X-Generator: Pootle 2.8\n"
-"X-POOTLE-MTIME: 1556168958.000000\n"
+"X-POOTLE-MTIME: 1557420015.000000\n"
 
 #: main0000.xhp
 msgctxt ""
@@ -152,6 +152,518 @@ msgctxt ""
 msgid "Refer to <literal>msgbox.py</literal> in <literal>{installation}/program/</literal> directory for Python dynamic dialog examples."
 msgstr "Consulte <literal>msgbox.py</literal> no diretório <literal>{installation}/program/</literal> para exemplos de caixas de diálogo dinâmicas em Python."
 
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"tit\n"
+"help.text"
+msgid "Python : Monitoring Document Events"
+msgstr "Python: Monitorar eventos de documentos"
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"N0526\n"
+"help.text"
+msgid "<bookmark_value>Basic;Monitoring Document Events</bookmark_value>         <bookmark_value>Python;Monitoring Document Events</bookmark_value>         <!-- Advanced Basic Libraries -->         <bookmark_value>Access2Base;Console</bookmark_value>         <bookmark_value>Access2Base;Trace</bookmark_value>         <bookmark_value>Tools;Strings</bookmark_value>         <!-- Application Programming Interface -->         <bookmark_value>API;BasicLibraries</bookmark_value>         <bookmark_value>API;DocumentEvent</bookmark_value>         <bookmark_value>API;DocumentEventListener</bookmark_value>         <bookmark_value>API;EventObject</bookmark_value>         <bookmark_value>API;GlobalEventBroadcaster</bookmark_value>         <bookmark_value>API;MasterScriptProviderFactory</bookmark_value>         <bookmark_value>API;XDocumentEventBroadcaster</bookmark_value>         <bookmark_value>API;XDocumentEventListener</bookmark_value>         <bookmark_value>API;XScript</bookmark_value>"
+msgstr "<bookmark_value>Basic;monitorar eventos de documentos</bookmark_value>         <bookmark_value>Python;monitorar eventos de documentos</bookmark_value>         <!-- Advanced Basic Libraries -->         <bookmark_value>Access2Base;Console</bookmark_value>         <bookmark_value>Access2Base;Trace</bookmark_value>         <bookmark_value>Tools;Strings</bookmark_value>         <!-- Application Programming Interface -->         <bookmark_value>API;BasicLibraries</bookmark_value>         <bookmark_value>API;DocumentEvent</bookmark_value>         <bookmark_value>API;DocumentEventListener</bookmark_value>         <bookmark_value>API;EventObject</bookmark_value>         <bookmark_value>API;GlobalEventBroadcaster</bookmark_value>         <bookmark_value>API;MasterScriptProviderFactory</bookmark_value>         <bookmark_value>API;XDocumentEventBroadcaster</bookmark_value>         <bookmark_value>API;XDocumentEventListener</bookmark_value>         <bookmark_value>API;XScript</bookmark_value>"
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"N0527\n"
+"help.text"
+msgid "<variable id=\"pythonmonitor\"><link href=\"text/sbasic/python/python_document_events.xhp\" name=\"Monitoring Document Events\">Monitoring Document Events</link></variable>"
+msgstr "<variable id=\"pythonmonitor\"><link href=\"text/sbasic/python/python_document_events.xhp\" name=\"Monitoring Document Events\">Monitorar eventos de documentos</link></variable>"
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"N0528\n"
+"help.text"
+msgid "Next to <link href=\"text/sbasic/shared/01040000.xhp\" name=\"assigning macros to events\">assigning macros to events</link>, one can monitor events raised by %PRODUCTNAME documents. Application Programming Interface (API) broadcasters are responsible for calling event scripts. Unlike listeners that require to define all supported methods, even if unused, document monitors require only two methods next to hooked event scripts."
+msgstr "Além de <link href=\"text/sbasic/shared/01040000.xhp\" name=\"assigning macros to events\">atribuir macros a eventos</link>, você pode monitorar eventos ativados por documentos do %PRODUCTNAME. Os broadcasters da Application Programming Interface (API) são responsáveis pelas chamadas a macros de eventos. Diferente dos listeners que requerem a definição de todos os métodos suportados, mesmo que não utilizados, a monitoração de documentos requer somente dois métodos além dos scripts de eventos conectados."
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"N0529\n"
+"help.text"
+msgid "Listening to Document Events"
+msgstr "Ouvir eventos de documentos"
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"N0530\n"
+"help.text"
+msgid "Monitoring is illustrated herewith for Basic and Python languages using object-oriented programming. Assigning <literal>OnLoad</literal> script, to the <literal>Open Document</literal> event, suffices to initiate and terminate document event monitoring. <menuitem>Tools – Customise...</menuitem> menu <menuitem>Events</menuitem> tab is used to assign either scripts."
+msgstr "A monitoração é ilustrada abaixo para as linguagens Basic e Python utilizando programação orientada a objetos. Atribuir o script <literal>OnLoad</literal> ao evento <literal>OpenDocument</literal>, é o bastante para iniciar e terminar a monitoração de eventos do documento. Utilize a aba<menuitem>Eventos</menuitem> do menu <menuitem>Ferramentas - Personalizar</menuitem>, para atribuir ambos os scripts. "
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"N0531\n"
+"help.text"
+msgid "Intercepting events helps setting scripts pre- and post-conditions such as loading and unloading libraries or track script processing in the background. <literal>Access2Base Trace</literal> module usage is illustrating that second context."
+msgstr "Interceptar eventos ajuda a definir pré-condições e pós-condições tais como carregar e descarregar bibliotecas ou rastrear processamento de scripts no plano de fundo. O módulo <literal>Access2Base Trace</literal> ilustra o segundo contexto."
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"N0532\n"
+"help.text"
+msgid "With Python"
+msgstr "Com Python"
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"N0533\n"
+"help.text"
+msgid "Events monitoring starts from object instantiation and ultimately stops when Python releases the object. Raised events are reported using <literal>Access2Base</literal> console."
+msgstr "A monitoração de eventos começa da instanciação do objeto e termina quando o Python libera o objeto. Eventos levantados são reportados utilizando a console do <literal>Access2Base</literal>."
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"N0534\n"
+"help.text"
+msgid "<literal>OnLoad</literal> and <literal>OnUnload</literal> events can be used to respectively set and unset Python programs path. They are described as <literal>Open document</literal> and <literal>Document closed</literal>."
+msgstr "Os eventos <literal>OnLoad</literal> e <literal>OnUnload</literal> podem ser utilizados para definir e liberar caminhos dos programas python. Eles são descritos como <literal>Abrir documento</literal> e <literal>Documento fechado</literal>."
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"N0543\n"
+"help.text"
+msgid "class UiDocument(unohelper.Base, AdapterPattern):"
+msgstr "class UiDocument(unohelper.Base, AdapterPattern):"
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"N0544\n"
+"help.text"
+msgid "\"\"\" Monitor document events \"\"\""
+msgstr "\"\"\" Monitorar eventos de documento \"\"\""
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"N0546\n"
+"help.text"
+msgid "adapted from 'Python script to monitor OnSave event' at"
+msgstr "adaptado de 'Python script to monitor OnSave event' de "
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"N0550\n"
+"help.text"
+msgid "\"\"\" Document events monitor \"\"\""
+msgstr "\"\"\" Monitorar eventos de documento \"\"\""
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"N0551\n"
+"help.text"
+msgid "''' report using Access2Base.Trace console OR"
+msgstr "''' reportar utilizando a console Access2Base.Trace OU"
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"N0552\n"
+"help.text"
+msgid "report in 1st sheet, 1st column for Calc docs '''"
+msgstr "reportar na 1ª planilha, 1ª coluna para documentos do Calc '''"
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"N0558\n"
+"help.text"
+msgid "#self.row = 0  # uncomment for Calc documents only"
+msgstr "#self.row = 0  # descomente somente para documentos do Calc"
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"N0560\n"
+"help.text"
+msgid "self.listen()  # Start monitoring doc. events"
+msgstr "self.listen()  # Começe a monitorar eventos de documento"
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"N0569\n"
+"help.text"
+msgid "\"\"\" Output doc. events on 1st column of a Calc spreadsheet \"\"\""
+msgstr "\"\"\" Saída dos eventos de doc na 1ª coluna de uma planilha Calc \"\"\""
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"N0575\n"
+"help.text"
+msgid "def listen(self, *args):  # OnLoad/OnNew at the earliest"
+msgstr "def listen(self, *args):  # OnLoad/OnNew o mais cedo"
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"N0576\n"
+"help.text"
+msgid "\"\"\" Start doc. events monitoring \"\"\""
+msgstr "\"\"\" Começar monitoração de eventos de documento \"\"\""
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"N0578\n"
+"help.text"
+msgid "Console.log(\"INFO\", \"Document events are being logged\", True)"
+msgstr "Console.log(\"INFO\", \"Os eventos de documento estão sendo registrados\", True)"
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"N0580\n"
+"help.text"
+msgid "def sleep(self, *args):  # OnUnload at the latest (optional)"
+msgstr "def sleep(self, *args):  # OnUnload por último (opcional)"
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"N0581\n"
+"help.text"
+msgid "\"\"\" Stop doc. events monitoring \"\"\""
+msgstr "\"\"\" Encerrar monitoração de eventos de documento \"\"\""
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"N0583\n"
+"help.text"
+msgid "Console.log(\"INFO\", \"Document events have been logged\", True)"
+msgstr "Console.log(\"INFO\", \"Os eventos de documento foram registrados\", True)"
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"N0587\n"
+"help.text"
+msgid "\"\"\" Intercepts all doc. events \"\"\""
+msgstr "\"\"\" Interceptar todos os eventos de documento \"\"\""
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"N0588\n"
+"help.text"
+msgid "#self.setCell(event.Source, event.EventName) # only for Calc docs"
+msgstr "#self.setCell(event.Source, event.EventName) # somente para documentos do Calc"
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"N0595\n"
+"help.text"
+msgid "\"\"\" Release all activities \"\"\""
+msgstr "\"\"\" Liberar todas as atividades \"\"\""
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"N0601\n"
+"help.text"
+msgid "def OnLoad(*args):  # 'Open Document' event"
+msgstr "def OnLoad(*args):  # evento 'Abrir documento'"
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"N0604\n"
+"help.text"
+msgid "def OnUnload(*args):  # 'Document has been closed' event"
+msgstr "def OnUnload(*args):  # evento 'Documento foi fechado'"
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"N0605\n"
+"help.text"
+msgid "pass  # (optional) performed when disposed"
+msgstr "pass  # (opcional) executado quando dispensado"
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"N0613\n"
+"help.text"
+msgid "(Back/Fore)ground console to report/log program execution."
+msgstr "Console de foreground ou background para reportar ou registrar execução de programa."
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"N0617\n"
+"help.text"
+msgid "\"\"\" Print free item list to console \"\"\""
+msgstr "\"\"\" Console de foreground ou background para reportar ou registrar execução de programa. \"\"\""
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"N0622\n"
+"help.text"
+msgid "\"\"\" Append log message to console, optional user prompt \"\"\""
+msgstr "\"\"\" Anexa a mensagem de registro na console, prompt de usuário opcional \"\"\""
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"N0627\n"
+"help.text"
+msgid "\"\"\" Set log messages lower limit \"\"\""
+msgstr "\"\"\" Define limite inferior para mensagens de registro \"\"\""
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"N0632\n"
+"help.text"
+msgid "\"\"\" Display console content/dialog \"\"\""
+msgstr "\"\"\" Exibe o conteúdo ou diálogo da console \"\"\""
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"N0647\n"
+"help.text"
+msgid "Mind the misspelled <literal>documentEventOccured</literal> method that inherits a typo from %PRODUCTNAME Application Programming Interface (API)."
+msgstr "Note o erro no nome do método <literal>documentEventOccured</literal> que herda um erro da %PRODUCTNAME Application Programming Interface (API)."
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"N0648\n"
+"help.text"
+msgid "<literal>Start application</literal> and <literal>Close application</literal> events can respectively be used to set and to unset Python path for user scripts or %PRODUCTNAME scripts. In a similar fashion, document based Python libraries or modules can be loaded and released using <literal>Open document</literal> and <literal>Document closed</literal> events. Refer to <link href=\"text/sbasic/python/python_import.xhp\" name=\"Importing Python Modules\">Importing Python Modules</link> for more information."
+msgstr "Os eventos <literal>Inciar aplicação</literal> e <literal>Fechar aplicação</literal>podem ser respectivamente utilizados para definir e liberar o caminho Python para scripts de usuários no %PRODUCTNAME. De forma similar, bibliotecas e módulos Python em documentos podem ser carregados e liberados utilizando os eventos <literal>Abrir documento</literal> e <literal>Documento fechado</literal>. consulte <link href=\"text/sbasic/python/python_import.xhp\" name=\"Importing Python Modules\">Importar módulos Python</link> para mais informações"
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"N0649\n"
+"help.text"
+msgid "With %PRODUCTNAME Basic"
+msgstr "Com %PRODUCTNAME Basic"
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"N0650\n"
+"help.text"
+msgid "The <literal>Onload</literal> script is assigned to <literal>Open document</literal> event using <menuitem>Tools – Customise...</menuitem> menu <menuitem>Events</menuitem> tab. Events monitoring starts from the moment a <literal>ConsoleLogger</literal> object is instantiated and ultimately stops when Basic engine releases it. <literal>OnLoad</literal> event loads necessary Basic libraries, while caught events are reported using <literal>Access2Base.Trace</literal> module."
+msgstr "A macro <literal>Onload</literal> é atribuída ao evento <literal>Abrir documento</literal> utilizando a aba <menuitem>Eventos</menuitem> do menu <menuitem>Ferramentas - Personalizar</menuitem>. A monitoração de eventos inicia no momento que um objeto <literal>ConsoleLogger</literal> é instanciado e por último encerra quando o motor do Basic o libera. O evento <literal>OnLoad</literal> carrega as bibliotecas Basic necessárias, enquanto eventos capturados são reportados utilizando o módulo <literal>Access2Base.Trace</literal>."
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"N0651\n"
+"help.text"
+msgid "REM controller.Events module"
+msgstr "REM Módulo controller.Events"
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"N0653\n"
+"help.text"
+msgid "Private _obj As Object ' controller.ConsoleLogger instance"
+msgstr "Private _obj As Object ' instância do controller.ConsoleLogger"
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"N0655\n"
+"help.text"
+msgid "Sub OnLoad(evt As com.sun.star.document.DocumentEvent) ' >> Open Document <<"
+msgstr "Sub OnLoad(evt As com.sun.star.document.DocumentEvent) ' >> Abrir documento <<"
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"N0659\n"
+"help.text"
+msgid "REM controller.ConsoleLogger class module"
+msgstr "REM Módulo de classe controller.ConsoleLogger "
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"N0664\n"
+"help.text"
+msgid "' ADAPTER design pattern object to be instantiated in « Open Document » event"
+msgstr "' objeto de parão de design ADAPTER a ser instanciada no evento \"Abrir documento\""
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"N0668\n"
+"help.text"
+msgid "' CONSTRUCTOR/DESTRUCTOR"
+msgstr "' CONSTRUTOR/DESTRUTOR"
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"N0674\n"
+"help.text"
+msgid "' MEMBERS"
+msgstr "' MEMBROS"
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"N0679\n"
+"help.text"
+msgid "''' System-dependent filename '''"
+msgstr "''' nome de arquivo dependente do Sistema '''"
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"N0686\n"
+"help.text"
+msgid "' METHODS"
+msgstr "' MÉTODOS"
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"N0688\n"
+"help.text"
+msgid "''' Monitor document events '''"
+msgstr "''' Monitorar eventos de documento '''"
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"N0701\n"
+"help.text"
+msgid "''' Initialize document events logging '''"
+msgstr "''' Inicializar registros de eventos de documento '''"
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"N0706\n"
+"help.text"
+msgid "IIf(IsMissing(evt),\"\",evt.EventName & \"-\") & \"Document events are being logged\", _"
+msgstr "IIf(IsMissing(evt),\"\",evt.EventName & \"-\") & \"Eventos de documento estão sendo registrados\", _"
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"N0714\n"
+"help.text"
+msgid "''' Terminate document events logging '''"
+msgstr "''' Encerrar registro de eventos de documento '''"
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"N0717\n"
+"help.text"
+msgid "IIf(IsMissing(evt),\"\",evt.EventName & \"-\") & \"Document events have been logged\", _"
+msgstr "IIf(IsMissing(evt),\"\",evt.EventName & \"-\") & \"Eventos de documento foram registrados\", _"
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"N0723\n"
+"help.text"
+msgid "' Your code for handled events goes here"
+msgstr "' Seu código para tratar eventos segue aqui"
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"N0724\n"
+"help.text"
+msgid "Mind the misspelled <literal>_documentEventOccured</literal> method that inherits a typo from %PRODUCTNAME Application Programming Interface (API)."
+msgstr "Note o erro no nome do método <literal>documentEventOccured</literal> que herda um erro da %PRODUCTNAME Application Programming Interface (API)."
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"N0725\n"
+"help.text"
+msgid "Discovering Documents Events"
+msgstr "Descobrir eventos de documento"
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"N0726\n"
+"help.text"
+msgid "The broadcaster API object provides the list of events it is responsible for:"
+msgstr "O objeto API broadcaster fornece a lista de eventos dos quais é responsável:"
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"N0727\n"
+"help.text"
+msgid "With Python"
+msgstr "Com Python"
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"N0734\n"
+"help.text"
+msgid "\"\"\" Display document events \"\"\""
+msgstr "\"\"\" Exibe eventos de documento \"\"\""
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"N0736\n"
+"help.text"
+msgid "adapted from DisplayAvailableEvents() by A. Pitonyak"
+msgstr "adaptado de DisplayAvailableEvents() por A. Pitonyak"
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"N0747\n"
+"help.text"
+msgid "The <link href=\"https://extensions.libreoffice.org/extensions/apso-alternative-script-organizer-for-python\" name=\"Alternative Python Script Organizer\">Alternative Python Script Organizer (APSO)</link> extension is used to render events information on screen."
+msgstr "A extensão <link href=\"https://extensions.libreoffice.org/extensions/apso-alternative-script-organizer-for-python\" name=\"Alternative Python Script Organizer\">Alternative Python Script Organizer (APSO)</link> é utilizada para mostrar informações de eventos na tela."
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"N0748\n"
+"help.text"
+msgid "With %PRODUCTNAME Basic"
+msgstr "Com %PRODUCTNAME Basic"
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"N0750\n"
+"help.text"
+msgid "''' Display document events '''"
+msgstr "''' Exibe eventos de documento '''"
+
 #: python_examples.xhp
 msgctxt ""
 "python_examples.xhp\n"
@@ -198,7 +710,7 @@ msgctxt ""
 "hd_id151543348965464\n"
 "help.text"
 msgid "<variable id=\"pythonideh1\"><link href=\"text/sbasic/python/python_ide.xhp\" name=\"Python IDE Setup\">Setting up an Integrated Development Environment (IDE) for Python</link></variable>"
-msgstr "<variable id=\"pythonideh1\"><link href=\"text/sbasic/python/python_ide.xhp\" name=\"Python IDE Setup\">Configurando um Ambiente de Desenvolvimento Integrado (IDE) para Python</link></variable>"
+msgstr "<variable id=\"pythonideh1\"><link href=\"text/sbasic/python/python_ide.xhp\" name=\"Python IDE Setup\">Configurar um Ambiente de Desenvolvimento Integrado (IDE) para Python</link></variable>"
 
 #: python_ide.xhp
 msgctxt ""
@@ -214,7 +726,7 @@ msgctxt ""
 "N0106\n"
 "help.text"
 msgid "Unlike Basic language macros development in %PRODUCTNAME, developing Python scripts for %PRODUCTNAME requires to configure an external Integrated Development Environment (IDE). Multiple IDEs are available that range from beginners to advanced Python coders. While using a Python IDE programmers benefit from numerous features such as syntax highlighting, code folding, class browsing, code completion, coding standard enforcement, test driven development, debugging, version control and many more. You can refer to <link href=\"https://wiki.documentfoundation.org/Macros/Python_Design_Guide\" name=\"Designing & Developing Python Applications\">Designing & Developing Python Applications</link> on the Wiki for more in-depth information about the setup of a bridge between your IDE and a running instance %PRODUCTNAME."
-msgstr "Diferentemente do desenvolvimento de macros de linguagem Basic no %PRODUCTNAME, o desenvolvimento de scripts Python para o %PRODUCTNAME requer a configuração de um Ambiente de Desenvolvimento Integrado (IDE) externo. Vários IDEs estão disponíveis, desde iniciantes até programadores Python avançados. Ao usar um Python IDE, os programadores se beneficiam de vários recursos, como realce de sintaxe, dobra de código, navegação de classes, conclusão de código, aplicação de código padrão, desenvolvimento orientado a testes, depuração, controle de versão e muito mais. Você pode consultar o <link href=\"https://wiki.documentfoundation.org/Macros/Python_Design_Guide\" name=\"Designing & Developing Python Applications\">Designing & Developing Python Applications</link> no Wiki para obter informações mais detalhadas sobre a configuração de uma ponte entre o seu IDE e uma instância em execução do %PRODUCTNAME."
+msgstr "Diferente do desenvolvimento de macros de linguagem Basic no %PRODUCTNAME, o desenvolvimento de scripts Python para o %PRODUCTNAME requer a configuração de um Ambiente de Desenvolvimento Integrado (IDE) externo. Vários IDEs estão disponíveis, desde para iniciantes até para programadores Python avançados. Ao usar um Python IDE, os programadores se beneficiam de vários recursos, como realce de sintaxe, dobra de código, navegação de classes, conclusão de código, aplicação de código padrão, desenvolvimento orientado a testes, depuração, controle de versão e muito mais. Você pode consultar o <link href=\"https://wiki.documentfoundation.org/Macros/Python_Design_Guide\" name=\"Designing & Developing Python Applications\">Designing & Developing Python Applications</link> no Wiki para obter informações mais detalhadas sobre a configuração de uma ponte entre o seu IDE e uma instância em execução do %PRODUCTNAME."
 
 #: python_ide.xhp
 msgctxt ""
@@ -366,7 +878,7 @@ msgctxt ""
 "N0486\n"
 "help.text"
 msgid "from IDE_utils import ScriptContext  # 'IDE_utils.py' sits with shared Python scripts."
-msgstr ""
+msgstr "from IDE_utils import ScriptContext  # 'IDE_utils.py' localiza-se com Python scripts compartilhados."
 
 #: python_import.xhp
 msgctxt ""
@@ -390,7 +902,7 @@ msgctxt ""
 "N0490\n"
 "help.text"
 msgid "Unlike personal and shared scripts, %PRODUCTNAME installation scripts can be imported any time. Next to <literal>uno</literal> & <literal>unohelper</literal> %PRODUCTNAME Python modules, other scripts present in <literal><installation_path>/program</literal> directory can be imported directly, such as the <literal>msgbox</literal> module."
-msgstr ""
+msgstr "Diferente dos scripts pessoais e compartilhados, Os scripts instalados do %PRODUCTNAME podem ser importados a qualquer momento. Junto com os módulos <literal>uno</literal> e <literal>unohelper</literal> do %PRODUCTNAME, outros scripts presentes no diretório <literal><caminho_instalação>/program</literal> podem ser importados diretamente, tal como o módulo <literal>msgbox</literal>."
 
 #: python_import.xhp
 msgctxt ""
@@ -414,7 +926,7 @@ msgctxt ""
 "N0535\n"
 "help.text"
 msgid "Importing a Python document embedded module is illustrated below. Error handling is not detailed. Python run time path is updated when document has been opened and before closure. Refer to <link href=\"text/sbasic/shared/01040000.xhp\">Event-Driven Macros</link> to learn how to associate Python macros to document events."
-msgstr ""
+msgstr "Mostra-se abaixo como importar um documento com um módulo Python embutido. O tratamento de erros não é considerado. O caminho em tempo de execução do Python é atualizado quando o documento é aberto e antes do seu fechamento. Consulte <link href=\"text/sbasic/shared/01040000.xhp\">Macros acionadas por eventos</link> para saber como associar macros Python a eventos do documento."
 
 #: python_import.xhp
 msgctxt ""
@@ -422,7 +934,7 @@ msgctxt ""
 "N0541\n"
 "help.text"
 msgid "\"\"\" Prepare Python modules import when doc. loaded \"\"\""
-msgstr ""
+msgstr "\"\"\" Preparar importação de módulos Python quando o doc. for carregado \"\"\""
 
 #: python_import.xhp
 msgctxt ""
@@ -430,7 +942,7 @@ msgctxt ""
 "N0542\n"
 "help.text"
 msgid "PythonLibraries.loadLibrary('lib/subdir')  # Add directory to search path"
-msgstr ""
+msgstr "PythonLibraries.loadLibrary('lib/subdir')  # Adicionar diretório ao caminho de busca"
 
 #: python_import.xhp
 msgctxt ""
@@ -438,7 +950,7 @@ msgctxt ""
 "N0543\n"
 "help.text"
 msgid "PythonLibraries.loadLibrary('my_gui', 'screen_io')  # Add dir. & import screen_io"
-msgstr ""
+msgstr "PythonLibraries.loadLibrary('my_gui', 'screen_io')  # Adicionar dir. e importar screen_io"
 
 #: python_import.xhp
 msgctxt ""
@@ -446,7 +958,7 @@ msgctxt ""
 "N0546\n"
 "help.text"
 msgid "\"\"\" Cleanup PYTHON_PATH when doc. Gets closed \"\"\""
-msgstr ""
+msgstr "\"\"\" Limpar PYTHON_PATH quando doc. for fechado \"\"\""
 
 #: python_import.xhp
 msgctxt ""
@@ -454,7 +966,7 @@ msgctxt ""
 "N0547\n"
 "help.text"
 msgid "PythonLibraries.unloadLibrary('my_gui')  # Python runtime path cleanup"
-msgstr ""
+msgstr "PythonLibraries.unloadLibrary('my_gui')  # Limpeza do caminho do Python runtime"
 
 #: python_import.xhp
 msgctxt ""
@@ -470,7 +982,7 @@ msgctxt ""
 "N0553\n"
 "help.text"
 msgid "\"\"\" Python library loader and module importer"
-msgstr ""
+msgstr "\"\"\" Carregador da biblioteca Python e importador de módulos"
 
 #: python_import.xhp
 msgctxt ""
@@ -494,7 +1006,7 @@ msgctxt ""
 "N0558\n"
 "help.text"
 msgid "\"\"\" Check run time module list \"\"\""
-msgstr ""
+msgstr "\"\"\" Verificar lista de módulos de tempo de execução \"\"\""
 
 #: python_import.xhp
 msgctxt ""
@@ -502,7 +1014,7 @@ msgctxt ""
 "N0561\n"
 "help.text"
 msgid "\"\"\" Check PYTHON_PATH content \"\"\""
-msgstr ""
+msgstr "\"\"\" Verificar conteúdo de PYTHON_PATH \"\"\""
 
 #: python_import.xhp
 msgctxt ""
@@ -510,7 +1022,7 @@ msgctxt ""
 "N0564\n"
 "help.text"
 msgid "\"\"\" add directory to PYTHON_PATH, import named module \"\"\""
-msgstr ""
+msgstr "\"\"\" adiciona o diretório ao PYTHON_PATH, importa o módulo nomeado \"\"\""
 
 #: python_import.xhp
 msgctxt ""
@@ -518,7 +1030,7 @@ msgctxt ""
 "N0573\n"
 "help.text"
 msgid "\"\"\" remove directory from PYTHON_PATH \"\"\""
-msgstr ""
+msgstr "\"\"\" remove o diretório do PYTHON_PATH \"\"\""
 
 #: python_import.xhp
 msgctxt ""
@@ -526,7 +1038,7 @@ msgctxt ""
 "N0580\n"
 "help.text"
 msgid "Refer to <link href=\"text/sbasic/python/python_listener.xhp\">Creating a Python Listener</link> for examples of event-driven macros."
-msgstr ""
+msgstr "Consulte <link href=\"text/sbasic/python/python_listener.xhp\">Criar um listener em Python</link> para exemplos de macros acionadas por eventos."
 
 #: python_listener.xhp
 msgctxt ""
@@ -534,15 +1046,15 @@ msgctxt ""
 "tit\n"
 "help.text"
 msgid "Python Listeners : Creating Event Listeners"
-msgstr ""
+msgstr "Listeners Python : Criar listeners de eventos"
 
 #: python_listener.xhp
 msgctxt ""
 "python_listener.xhp\n"
 "N0385\n"
 "help.text"
-msgid "<bookmark_value>Python;Event Listener</bookmark_value>         <bookmark_value>Python;createUnoListener</bookmark_value>         <bookmark_value>Basic;Event Listener</bookmark_value>"
-msgstr ""
+msgid "<bookmark_value>Python;Event Listener</bookmark_value>         <bookmark_value>Python;createUnoListener</bookmark_value>         <bookmark_value>Basic;Event Listener</bookmark_value>         <!-- Application Programming Interface -->         <bookmark_value>API;ActionEvent</bookmark_value>         <bookmark_value>API;DialogProvider</bookmark_value>         <bookmark_value>API;EventObject</bookmark_value>         <bookmark_value>API;ExecutableDialogResults</bookmark_value>         <bookmark_value>API;XActionListener</bookmark_value>"
+msgstr "<bookmark_value>Python;listener de eventos</bookmark_value>         <bookmark_value>Python;createUnoListener</bookmark_value>         <bookmark_value>Basic;listener de eventos</bookmark_value>         <!-- Application Programming Interface -->         <bookmark_value>API;ActionEvent</bookmark_value>         <bookmark_value>API;DialogProvider</bookmark_value>         <bookmark_value>API;EventObject</bookmark_value>         <bookmark_value>API;ExecutableDialogResults</bookmark_value>         <bookmark_value>API;XActionListener</bookmark_value>"
 
 #: python_listener.xhp
 msgctxt ""
@@ -550,7 +1062,7 @@ msgctxt ""
 "N0386\n"
 "help.text"
 msgid "<variable id=\"pythonlistener\"><link href=\"text/sbasic/python/python_listener.xhp\" name=\"python listeners\">Creating Event Listeners</link></variable>"
-msgstr ""
+msgstr "<variable id=\"pythonlistener\"><link href=\"text/sbasic/python/python_listener.xhp\" name=\"python listeners\">Criar listeners de evento</link></variable>"
 
 #: python_listener.xhp
 msgctxt ""
@@ -558,7 +1070,7 @@ msgctxt ""
 "N0387\n"
 "help.text"
 msgid "Events raised by dialogs, documents, forms or graphical controls can be linked to macros, which is referred to as event-driven programming. The most common method to relate events to macros are the <literal>Events</literal> tab in <menuitem>Tools – Customize</menuitem> menu and the <link href=\"text/sbasic/guide/create_dialog.xhp\" name=\"Create dialog\">Dialog Editor</link> Control properties pane from <menuitem>Tools - Macros – Organise Dialogs...</menuitem> menu."
-msgstr ""
+msgstr "Evento ativados por caixas de diálogo, documentos, formulários ou controles gráficos podem ser vinculados a macros, assim chamados de programação acionada por eventos. O método mais comum de relacionar eventos a macros está na aba <literal>Eventos</literal> no menu <menuitem>Ferramentas - Opções - Personalizar</menuitem> e nas propriedades de controle do painel <link href=\"text/sbasic/guide/create_dialog.xhp\" name=\"Create dialog\">Editor de caixas de diálogo</link> do menu <menuitem>Ferramentas - Opções - Macros - Organizar caixas de diálogo</menuitem>."
 
 #: python_listener.xhp
 msgctxt ""
@@ -566,7 +1078,7 @@ msgctxt ""
 "N0388\n"
 "help.text"
 msgid "Graphical artifacts, keyboard inputs, mouse moves and other man/machine interactions can be controlled using UNO listeners that watch for the user’s behaviour. Listeners are dynamic program code alternatives to macro assignments. One may create as many UNO listeners as events to watch for. A single listener can also handle multiple user interface controls."
-msgstr ""
+msgstr "Elementos gráficos, entradas de teclado, movimentos do mouse e outras interações homem-máquina podem ser controladas utilizando listeners UNO que observam o comportamento do usuário. Os listeners são códigos de programa alternativos dinâmicos às atribuições de macros. Pode-se criar tantos listeners UNO quanto os eventos a observar. Um listener simples pode também tratar vários controles da interface do usuário."
 
 #: python_listener.xhp
 msgctxt ""
@@ -574,7 +1086,7 @@ msgctxt ""
 "N0389\n"
 "help.text"
 msgid "Creating an event listener"
-msgstr ""
+msgstr "Criar um listener de evento"
 
 #: python_listener.xhp
 msgctxt ""
@@ -582,7 +1094,7 @@ msgctxt ""
 "N0390\n"
 "help.text"
 msgid "Listeners get attached to controls held in dialogs, as well as to document or form events. Listeners are also used when creating runtime dialogs or when adding controls to a dialog on the fly."
-msgstr ""
+msgstr "Os listeners são anexados a controles contidos nas caixas de diálogo, bem como a eventos de documento ou de formulários. Listeners também podem ser utilizados ao criar caixas de diálogo em tempo de execução ou quando adicionar controles ao diálogo dinamicamente."
 
 #: python_listener.xhp
 msgctxt ""
@@ -590,7 +1102,7 @@ msgctxt ""
 "N0391\n"
 "help.text"
 msgid "This example creates a listener for <literal>Button1</literal> control of <literal>Dialog1</literal> dialog in <literal>Standard</literal> library."
-msgstr ""
+msgstr "Este exemplo cria um listener para o controle <literal>Button1</literal> da caixa de diálogo <literal>Dialog1</literal> na biblioteca <literal>Standard</literal>."
 
 #: python_listener.xhp
 msgctxt ""
@@ -606,7 +1118,7 @@ msgctxt ""
 "N0405\n"
 "help.text"
 msgid "_MY_LABEL = 'Python listens..'"
-msgstr ""
+msgstr "_MY_LABEL = 'Python ouve..'"
 
 #: python_listener.xhp
 msgctxt ""
@@ -614,7 +1126,7 @@ msgctxt ""
 "N0417\n"
 "help.text"
 msgid "MsgBox(\"The user acknowledged the dialog.\")"
-msgstr ""
+msgstr "MsgBox(\"O usuário reconheceu o diálogo.\")"
 
 #: python_listener.xhp
 msgctxt ""
@@ -622,7 +1134,7 @@ msgctxt ""
 "N0419\n"
 "help.text"
 msgid "MsgBox(\"The user canceled the dialog.\")"
-msgstr ""
+msgstr "MsgBox(\"O usuário cancelou o diálogo.\")"
 
 #: python_listener.xhp
 msgctxt ""
@@ -630,7 +1142,7 @@ msgctxt ""
 "N0424\n"
 "help.text"
 msgid "\"\"\" Create a Dialog from its location \"\"\""
-msgstr ""
+msgstr "\"\"\" Cria um dialogo de sua localidade \"\"\""
 
 #: python_listener.xhp
 msgctxt ""
@@ -638,7 +1150,7 @@ msgctxt ""
 "N0437\n"
 "help.text"
 msgid "\"\"\" Listen to & count button clicks \"\"\""
-msgstr ""
+msgstr "\"\"\" Escuta e conta os cliques de botão \"\"\""
 
 #: python_listener.xhp
 msgctxt ""
@@ -646,7 +1158,7 @@ msgctxt ""
 "N0448\n"
 "help.text"
 msgid "def disposing(self, evt: EventObject):  # mandatory routine"
-msgstr ""
+msgstr "def disposing(self, evt: EventObject):  # rotina obrigatória"
 
 #: python_listener.xhp
 msgctxt ""
@@ -654,7 +1166,7 @@ msgctxt ""
 "N0457\n"
 "help.text"
 msgid "<emph>msgbox.py</emph> in <emph>{installation}/program/</emph> directory has some examples of button listeners."
-msgstr ""
+msgstr "<emph>msgbox.py</emph> no diretório <emph>{installação}/program/</emph> tem alguns exemplos de listeners para botões."
 
 #: python_listener.xhp
 msgctxt ""
@@ -670,7 +1182,7 @@ msgctxt ""
 "N0459d\n"
 "help.text"
 msgid "Const MY_LABEL = \"Basic listens..\""
-msgstr ""
+msgstr "Const MY_LABEL = \"Basic escuta..\""
 
 #: python_listener.xhp
 msgctxt ""
@@ -678,7 +1190,7 @@ msgctxt ""
 "N0478\n"
 "help.text"
 msgid "Case rc.OK : MsgBox \"The user acknowledged the dialog.\",, \"Basic\""
-msgstr ""
+msgstr "Case rc.OK : MsgBox \"O usuário reconheceu o diálogo.\",, \"Basic\""
 
 #: python_listener.xhp
 msgctxt ""
@@ -686,7 +1198,7 @@ msgctxt ""
 "N0479\n"
 "help.text"
 msgid "Case rc.CANCEL : MsgBox \"The user canceled the dialog.\",, \"Basic\""
-msgstr ""
+msgstr "Case rc.CANCEL : MsgBox \"O usuário cancelou o diálogo.\",, \"Basic\""
 
 #: python_listener.xhp
 msgctxt ""
@@ -694,7 +1206,7 @@ msgctxt ""
 "N0486\n"
 "help.text"
 msgid "''' Listen to & count button clicks '''"
-msgstr ""
+msgstr "''' Escuta e conta os cliques de botão '''"
 
 #: python_listener.xhp
 msgctxt ""
@@ -702,7 +1214,7 @@ msgctxt ""
 "N0496\n"
 "help.text"
 msgid "' your code goes here"
-msgstr ""
+msgstr "' seu código vai aqui"
 
 #: python_listener.xhp
 msgctxt ""
@@ -710,15 +1222,15 @@ msgctxt ""
 "N0498\n"
 "help.text"
 msgid "Other Event Listeners"
-msgstr ""
+msgstr "Outros eventos de listeners"
 
 #: python_listener.xhp
 msgctxt ""
 "python_listener.xhp\n"
 "N0499\n"
 "help.text"
-msgid "Listeners are usually coded along with <link href=\"text/sbasic/python/python_dialog.xhp\" name=\"dialog opening\">dialog opening</link>. Numerous listener approaches are possible such as event handlers for dialogs or event monitors for documents or forms."
-msgstr ""
+msgid "Listeners are usually coded along with <link href=\"text/sbasic/python/python_dialogs.xhp\" name=\"dialog opening\">dialog opening</link>. Numerous listener approaches are possible such as event handlers for dialogs or event monitors for documents or forms."
+msgstr "Os listeners são normalmente codificados junto com a <link href=\"text/sbasic/python/python_dialogs.xhp\" name=\"dialog opening\">abertura de caixas de diálogo</link>. Há numerosas abordagens de listeners possíveis tais como tratadores de eventos para caixas de diálogo ou monitores de eventos para documentos e formulários."
 
 #: python_listener.xhp
 msgctxt ""
@@ -726,7 +1238,7 @@ msgctxt ""
 "N0505\n"
 "help.text"
 msgid "<link href=\"text/sbasic/shared/03132000.xhp\" name=\"CreateUnoListener Function\">CreateUnoListener Function</link>"
-msgstr ""
+msgstr "<link href=\"text/sbasic/shared/03132000.xhp\" name=\"CreateUnoListener Function\">Função CreateUnoListener</link>"
 
 #: python_listener.xhp
 msgctxt ""
@@ -734,7 +1246,7 @@ msgctxt ""
 "N0506\n"
 "help.text"
 msgid "<link href=\"text/swriter/01/05060700.xhp\" name=\"Events mapping to objects\">Events mapping to objects</link>"
-msgstr ""
+msgstr "<link href=\"text/swriter/01/05060700.xhp\" name=\"Events mapping to objects\">Eventos mapeando em objetos</link>"
 
 #: python_listener.xhp
 msgctxt ""
@@ -742,7 +1254,7 @@ msgctxt ""
 "N0509\n"
 "help.text"
 msgid "See also <link href=\"text/sbasic/shared/01040000.xhp\" name=\"Document events\">Document events</link>, <link href=\"text/shared/02/01170202.xhp\" name=\"Form events\">Form events</link>."
-msgstr ""
+msgstr "Veja também <link href=\"text/sbasic/shared/01040000.xhp\" name=\"Document events\">Eventos de documento</link>, <link href=\"text/shared/02/01170202.xhp\" name=\"Form events\">Eventos de formulário</link>."
 
 #: python_locations.xhp
 msgctxt ""
@@ -782,7 +1294,7 @@ msgctxt ""
 "par_id121551089455774\n"
 "help.text"
 msgid "Refer to <link href=\"text/sbasic/python/python_session.xhp\" name=\"Getting Session Information\">Getting Session Information</link> in order to get programmatic access to Python script locations."
-msgstr ""
+msgstr "Consulte <link href=\"text/sbasic/python/python_session.xhp\" name=\"Getting Session Information\">Obter informação da sessão</link> para ter acesso programável às localidades das macros Python."
 
 #: python_locations.xhp
 msgctxt ""
@@ -1102,7 +1614,7 @@ msgctxt ""
 "N0220\n"
 "help.text"
 msgid "A Python macro is a function within a .py file, identified as a module. Unlike %PRODUCTNAME Basic and its dozen of <link href=\"text/sbasic/shared/uno_objects.xhp\" name=\"UNO objects functions or services\">UNO objects functions or services</link>, Python macros use the <literal>XSCRIPTCONTEXT</literal> UNO single object, shared with JavaScript and BeanShell. The <literal>g_exportedScripts</literal> global tuple explicitly lists selectable macros from a module. Python modules hold autonomous code logic, and are independent from one another."
-msgstr ""
+msgstr "Uma macro Python é uma função dentro de um arquivo .py, identificada como um módulo. Ao contrário do %PRODUCTNAME Basic e sua dúzia de <link href=\"text/sbasic/shared/uno_objects.xhp\" name=\"UNO objects functions or services\">funções ou serviços de objetos UNO</link>, as macros Python usam o objeto único <literal>XSCRIPTCONTEXT</literal> UNO, compartilhado com JavaScript e BeanShell. A tupla global <literal>g_exportedScripts</literal> lista explicitamente as macros selecionáveis de um módulo. Os módulos Python possuem lógica de código autônomo e são independentes um do outro."
 
 #: python_programming.xhp
 msgctxt ""
@@ -1118,7 +1630,7 @@ msgctxt ""
 "N0222\n"
 "help.text"
 msgid "Genuine Basic UNO facilities can be inferred from <literal>XSCRIPTCONTEXT</literal> global variable. Refer to %PRODUCTNAME API for a complete <link href=\"https://api.libreoffice.org/docs/idl/ref/interfacecom_1_1sun_1_1star_1_1script_1_1provider_1_1XScriptContext.html\" name=\"description of XSCRIPTCONTEXT\">description of XSCRIPTCONTEXT</link>. <literal>XSCRIPTCONTEXT</literal> methods summarize as:"
-msgstr ""
+msgstr "As instalações UNO básicas genuínas podem ser inferidas da variável global <literal>XSCRIPTCONTEXT</literal>. Consulte a API do %PRODUCTNAME para obter uma descrição <link href=\"https://api.libreoffice.org/docs/idl/ref/interfacecom_1_1sun_1_1star_1_1script_1_1provider_1_1XScriptContext.html\" name=\"description of XSCRIPTCONTEXT\"> completa do XSCRIPTCONTEXT</link>. Os métodos <literal>XSCRIPTCONTEXT</literal> se resumem como:"
 
 #: python_programming.xhp
 msgctxt ""
@@ -1206,7 +1718,7 @@ msgctxt ""
 "N0241\n"
 "help.text"
 msgid "%PRODUCTNAME Basic libraries contain classes, routines and variables, Python modules contain classes, functions and variables. Common pieces of reusable Python or UNO features must be stored in <link href=\"text/sbasic/python/python_locations.xhp\" name=\"My macros\">My macros</link> within <literal><User Profile>/Scripts/python/pythonpath</literal>. Python libraries help organize modules in order to prevent module name collisions. Import <literal>uno.py</literal> inside shared modules."
-msgstr ""
+msgstr "As bibliotecas BASIC do %PRODUCTNAME contém classes, rotinas e variáveis. Os módulos Python contém classes, funções e variáveis. Os trechos comuns de recursos reutilizáveis Python e UNO devem ser armazenados no contêiner <link href=\"text/sbasic/python/python_locations.xhp\" name=\"My macros\">Minhas Macros<literal> em <User Profile>/Scripts/python/pythonpath</literal>. As bibliotecas Python ajudam a organizar os módulos para evitar colisão de nomes. Importe <literal>uno.py</literal> nos módulos compartilhados."
 
 #: python_programming.xhp
 msgctxt ""
@@ -1214,7 +1726,7 @@ msgctxt ""
 "N0242\n"
 "help.text"
 msgid "Genuine BASIC UNO facilities can be inferred using <literal>uno.py</literal> module. Use <link href=\"text/sbasic/python/python_shell.xhp\" name=\"Python interactive shell\">Python interactive shell</link> to get a complete module description using <literal>dir()</literal> and <literal>help()</literal> Python commands."
-msgstr ""
+msgstr "Os recursos genuínos do UNO BASIC podem ser inferidos utilizando o módulo <literal>uno.py</literal>. Utilize o <link href=\"text/sbasic/python/python_shell.xhp\" name=\"Python interactive shell\">interpretador interativo Python</link> para ter uma descrição completa do módulo utilizando os comandos Python <literal>dir()</literal> e <literal>help()</literal>."
 
 #: python_programming.xhp
 msgctxt ""
@@ -1350,7 +1862,7 @@ msgctxt ""
 "N0284\n"
 "help.text"
 msgid "See <link href=\"text/sbasic/python/python_dialogs.xhp\" name=\"Opening a Dialog\">Opening a Dialog</link>"
-msgstr ""
+msgstr "Veja <link href=\"text/sbasic/python/python_dialogs.xhp\" name=\"Opening a Dialog\">Abrir uma caixa de diálogo</link>"
 
 #: python_programming.xhp
 msgctxt ""
@@ -1358,7 +1870,7 @@ msgctxt ""
 "N0286\n"
 "help.text"
 msgid "See <link href=\"text/sbasic/python/python_listener.xhp\" name=\"Creating a Listener\">Creating a Listener</link>"
-msgstr ""
+msgstr "Veja <link href=\"text/sbasic/python/python_listener.xhp\" name=\"Creating a Listener\">Criar um listener</link>"
 
 #: python_programming.xhp
 msgctxt ""
@@ -1382,7 +1894,7 @@ msgctxt ""
 "N0298\n"
 "help.text"
 msgid "Similarly to %PRODUCTNAME Basic that supports browsing and dynamic loading of libraries, Python libraries can be explored and imported on demand. For more information on library containers, visit <link href=\"https://api.libreoffice.org/\" name=\"API Documentation site\">%PRODUCTNAME Application Programming Interface</link> (API) or download <link href=\"https://www.libreoffice.org/download/download/\" name=\"SDK download page\">%PRODUCTNAME Software Development Kit</link> (SDK)."
-msgstr ""
+msgstr "Da mesma forma que o %PRODUCTNAME Basic suporta a navegação e o carregamento dinâmico de bibliotecas, as bibliotecas do Python podem ser exploradas e importadas sob demanda. Para mais informações sobre contêineres de bibliotecas, visite a API <link href=\"https://api.libreoffice.org/\" name=\"API Documentation site\">(Interface de Programação de Aplicativo) do %PRODUCTNAME</link> ou faça o download do Software Development Kit<link href=\"https://www.libreoffice.org/download/download/\" name=\"SDK download page\"> (SDK) do %PRODUCTNAME</link>."
 
 #: python_programming.xhp
 msgctxt ""
@@ -1462,7 +1974,7 @@ msgctxt ""
 "N0321\n"
 "help.text"
 msgid "<link href=\"text/sbasic/shared/uno_objects.xhp\" name=\"UNO objects page\">Basic UNO Objects, Functions and Services</link>"
-msgstr ""
+msgstr "<link href=\"text/sbasic/shared/uno_objects.xhp\" name=\"UNO objects page\">Objetos, funções e serviços BASIC UNO</link>"
 
 #: python_screen.xhp
 msgctxt ""
@@ -1477,8 +1989,8 @@ msgctxt ""
 "python_screen.xhp\n"
 "N0433\n"
 "help.text"
-msgid "<bookmark_value>Python;InputBox</bookmark_value>        <bookmark_value>Python;MsgBox</bookmark_value>        <bookmark_value>Python;Print</bookmark_value>"
-msgstr "<bookmark_value>Python;InputBox</bookmark_value>        <bookmark_value>Python;MsgBox</bookmark_value>        <bookmark_value>Python;Print</bookmark_value>"
+msgid "<bookmark_value>Python;InputBox</bookmark_value>        <bookmark_value>Python;MsgBox</bookmark_value>        <bookmark_value>Python;Print</bookmark_value>        <bookmark_value>API;MasterScriptProvider</bookmark_value>        <bookmark_value>API;XScript</bookmark_value>"
+msgstr "<bookmark_value>Python;InputBox</bookmark_value>        <bookmark_value>Python;MsgBox</bookmark_value>        <bookmark_value>Python;imprimir</bookmark_value>        <bookmark_value>API;MasterScriptProvider</bookmark_value>        <bookmark_value>API;XScript</bookmark_value>"
 
 #: python_screen.xhp
 msgctxt ""
@@ -1510,7 +2022,7 @@ msgctxt ""
 "N0437\n"
 "help.text"
 msgid "%PRODUCTNAME Basic proposes <literal>InputBox()</literal>, <literal>Msgbox()</literal> and <literal>Print()</literal> screen I/O functions. Python alternatives exist relying either on %PRODUCTNAME API Abstract Windowing Toolkit, either on Python to Basic function calls. The latter proposes a syntax that is intentionally close to that of Basic, and uses a Python module next to a Basic module. The API Scripting Framework is used to perform Basic, BeanShell, JavaScript and Python inter-languages function calls."
-msgstr ""
+msgstr "O %PRODUCTNAME Basic oferece as funções de E/S <literal>InputBox()</literal>, <literal>Msgbox()</literal> e <literal>Print()</literal>. As alternativas Python existem a partir tanto do %PRODUCTNAME API Abstract Windowing Toolkit, quanto pelas chamadas para o BASIC do Python. Esta última oferece uma sintaxe intencionalmente similar ao BASIC, e utiliza um módulo Python junto com um módulo BASIC. Utiliza-se o API Scripting Framework para executar chamadas de função entre BASIC, BeanShell, JavaScript e Python."
 
 #: python_screen.xhp
 msgctxt ""
@@ -1542,7 +2054,7 @@ msgctxt ""
 "N0450\n"
 "help.text"
 msgid "Copy <literal>screen_io</literal> Python module in <link href=\"text/sbasic/python/python_locations.xhp\" name=\"User macros\">My macros</link> within <UserProfile>/Scripts/python/pythonpath,"
-msgstr ""
+msgstr "Copie o módulo <literal>screen_io</literal> para <link href=\"text/sbasic/python/python_locations.xhp\" name=\"User macros\">Minhas macros</link> dentro de <UserProfile>/Scripts/python/pythonpath,"
 
 #: python_screen.xhp
 msgctxt ""
@@ -1550,7 +2062,7 @@ msgctxt ""
 "N0451\n"
 "help.text"
 msgid "Copy <literal>uiScripts</literal> Basic module in <link href=\"text/sbasic/python/python_locations.xhp\" name=\"User macros\">My macros</link> Standard Basic library,"
-msgstr ""
+msgstr "Copie o módulo BASIC <literal>uiScripts</literal> para a biblioteca Standard Basic em <link href=\"text/sbasic/python/python_locations.xhp\" name=\"User macros\">Minhas macros</link>,"
 
 #: python_screen.xhp
 msgctxt ""
@@ -1574,7 +2086,7 @@ msgctxt ""
 "N0467\n"
 "help.text"
 msgid "\"\"\" Displays a dialog box containing a message and returns a value.\"\"\""
-msgstr ""
+msgstr "\"\"\" Exibe uma caixa de diálogo contendo uma mensagem e retorna um valor. \"\"\""
 
 #: python_screen.xhp
 msgctxt ""
@@ -1600,14 +2112,6 @@ msgctxt ""
 msgid "<literal>uiScripts</literal> Basic module"
 msgstr "Módulo Basic <literal>uiScripts</literal>"
 
-#: python_screen.xhp
-msgctxt ""
-"python_screen.xhp\n"
-"N0505\n"
-"help.text"
-msgid "<link href=\"text/sbasic/python/python_2_basic.xhp\" name=\"Calling Basic macros from Python\">Calling Basic macros from Python</link>"
-msgstr ""
-
 #: python_session.xhp
 msgctxt ""
 "python_session.xhp\n"
@@ -1621,8 +2125,8 @@ msgctxt ""
 "python_session.xhp\n"
 "N0339\n"
 "help.text"
-msgid "<bookmark_value>Session;ComputerName</bookmark_value>        <bookmark_value>Session;SharedScripts</bookmark_value>        <bookmark_value>Session;SharedPythonScripts</bookmark_value>        <bookmark_value>Session;UserProfile</bookmark_value>        <bookmark_value>Session;UserScripts</bookmark_value>        <bookmark_value>Session;UserPythonScripts</bookmark_value>"
-msgstr "<bookmark_value>Session;ComputerName</bookmark_value>        <bookmark_value>Session;SharedScripts</bookmark_value>        <bookmark_value>Session;SharedPythonScripts</bookmark_value>        <bookmark_value>Session;UserProfile</bookmark_value>        <bookmark_value>Session;UserScripts</bookmark_value>        <bookmark_value>Session;UserPythonScripts</bookmark_value>"
+msgid "<bookmark_value>Session;ComputerName</bookmark_value>        <bookmark_value>Session;SharedScripts</bookmark_value>        <bookmark_value>Session;SharedPythonScripts</bookmark_value>        <bookmark_value>Session;UserProfile</bookmark_value>        <bookmark_value>Session;UserScripts</bookmark_value>        <bookmark_value>Session;UserPythonScripts</bookmark_value>        <bookmark_value>API;PathSubstitution</bookmark_value>"
+msgstr "<bookmark_value>sessão;ComputerName</bookmark_value>        <bookmark_value>sessão;SharedScripts</bookmark_value>        <bookmark_value>sessão;SharedPythonScripts</bookmark_value>        <bookmark_value>sessão;UserProfile</bookmark_value>        <bookmark_value>sessão;UserScripts</bookmark_value>        <bookmark_value>sessão;UserPythonScripts</bookmark_value>        <bookmark_value>API;PathSubstitution</bookmark_value>"
 
 #: python_session.xhp
 msgctxt ""
@@ -1630,7 +2134,7 @@ msgctxt ""
 "N0340\n"
 "help.text"
 msgid "<variable id=\"pythonsession\"><link href=\"text/sbasic/python/python_session.xhp\" name=\"session01\">Getting Session Information</link></variable>"
-msgstr ""
+msgstr "<variable id=\"pythonsession\"><link href=\"text/sbasic/python/python_session.xhp\" name=\"session01\">Obter informação da sessão</link></variable>"
 
 #: python_session.xhp
 msgctxt ""
@@ -1638,7 +2142,7 @@ msgctxt ""
 "N0341\n"
 "help.text"
 msgid "Computing %PRODUCTNAME user profile and shared modules system file paths can be performed with Python or with Basic languages. BeanShell, Java, JavaScript and Python scripts locations can be derived from this information."
-msgstr ""
+msgstr "Para computar o perfil do usuário do %PRODUCTNAME e os caminhos do arquivo do sistema de módulos compartilhados, pode-se executar caminhos com Python e com a linguagem Basic. Locais de scripts BeanShell, Java, JavaScript e Python podem ser derivados dessas informações."
 
 #: python_session.xhp
 msgctxt ""
@@ -1662,7 +2166,7 @@ msgctxt ""
 "N0346\n"
 "help.text"
 msgid "<literal>>>> print(Session.SharedPythonScripts())  # static method</literal>"
-msgstr ""
+msgstr "<literal>>>> print(Session.SharedPythonScripts())  # método estático</literal>"
 
 #: python_session.xhp
 msgctxt ""
@@ -1694,7 +2198,7 @@ msgctxt ""
 "N0354\n"
 "help.text"
 msgid "ui.MsgBox(Session.Share(),title='Installation Share')  # static method"
-msgstr ""
+msgstr "ui.MsgBox(Session.Share(),title='Installation Share')  # método estático"
 
 #: python_session.xhp
 msgctxt ""
@@ -1702,7 +2206,7 @@ msgctxt ""
 "N0355\n"
 "help.text"
 msgid "ui.Print(Session.SharedPythonScripts())  # static method"
-msgstr ""
+msgstr "ui.Print(Session.SharedPythonScripts())  # método estático"
 
 #: python_session.xhp
 msgctxt ""
@@ -1918,7 +2422,7 @@ msgctxt ""
 "N0119\n"
 "help.text"
 msgid "The Python interactive console, also known as Python interpreter or Python shell, provides programmers with a quick way to execute commands and try out and test code without creating a file. UNO objects introspection as well as %PRODUCTNAME Python modules documentation can be obtained from the terminal."
-msgstr ""
+msgstr "O console interativo Python, também conhecido como interpretador Python ou shell Python, fornece aos programadores uma maneira rápida de executar comandos e testar o código sem criar um arquivo. A introspecção de objetos UNO e a documentação dos módulos Python do %PRODUCTNAME pode ser obtida no terminal."
 
 #: python_shell.xhp
 msgctxt ""

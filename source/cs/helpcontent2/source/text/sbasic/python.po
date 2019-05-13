@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2019-04-24 18:25+0200\n"
+"POT-Creation-Date: 2019-04-30 14:59+0200\n"
 "PO-Revision-Date: 2019-03-15 09:42+0000\n"
 "Last-Translator: pavelbo <pavel.borecki@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -150,6 +150,518 @@ msgctxt ""
 "N0381\n"
 "help.text"
 msgid "Refer to <literal>msgbox.py</literal> in <literal>{installation}/program/</literal> directory for Python dynamic dialog examples."
+msgstr ""
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"tit\n"
+"help.text"
+msgid "Python : Monitoring Document Events"
+msgstr ""
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"N0526\n"
+"help.text"
+msgid "<bookmark_value>Basic;Monitoring Document Events</bookmark_value>         <bookmark_value>Python;Monitoring Document Events</bookmark_value>         <!-- Advanced Basic Libraries -->         <bookmark_value>Access2Base;Console</bookmark_value>         <bookmark_value>Access2Base;Trace</bookmark_value>         <bookmark_value>Tools;Strings</bookmark_value>         <!-- Application Programming Interface -->         <bookmark_value>API;BasicLibraries</bookmark_value>         <bookmark_value>API;DocumentEvent</bookmark_value>         <bookmark_value>API;DocumentEventListener</bookmark_value>         <bookmark_value>API;EventObject</bookmark_value>         <bookmark_value>API;GlobalEventBroadcaster</bookmark_value>         <bookmark_value>API;MasterScriptProviderFactory</bookmark_value>         <bookmark_value>API;XDocumentEventBroadcaster</bookmark_value>         <bookmark_value>API;XDocumentEventListener</bookmark_value>         <bookmark_value>API;XScript</bookmark_value>"
+msgstr ""
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"N0527\n"
+"help.text"
+msgid "<variable id=\"pythonmonitor\"><link href=\"text/sbasic/python/python_document_events.xhp\" name=\"Monitoring Document Events\">Monitoring Document Events</link></variable>"
+msgstr ""
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"N0528\n"
+"help.text"
+msgid "Next to <link href=\"text/sbasic/shared/01040000.xhp\" name=\"assigning macros to events\">assigning macros to events</link>, one can monitor events raised by %PRODUCTNAME documents. Application Programming Interface (API) broadcasters are responsible for calling event scripts. Unlike listeners that require to define all supported methods, even if unused, document monitors require only two methods next to hooked event scripts."
+msgstr ""
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"N0529\n"
+"help.text"
+msgid "Listening to Document Events"
+msgstr ""
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"N0530\n"
+"help.text"
+msgid "Monitoring is illustrated herewith for Basic and Python languages using object-oriented programming. Assigning <literal>OnLoad</literal> script, to the <literal>Open Document</literal> event, suffices to initiate and terminate document event monitoring. <menuitem>Tools – Customise...</menuitem> menu <menuitem>Events</menuitem> tab is used to assign either scripts."
+msgstr ""
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"N0531\n"
+"help.text"
+msgid "Intercepting events helps setting scripts pre- and post-conditions such as loading and unloading libraries or track script processing in the background. <literal>Access2Base Trace</literal> module usage is illustrating that second context."
+msgstr ""
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"N0532\n"
+"help.text"
+msgid "With Python"
+msgstr ""
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"N0533\n"
+"help.text"
+msgid "Events monitoring starts from object instantiation and ultimately stops when Python releases the object. Raised events are reported using <literal>Access2Base</literal> console."
+msgstr ""
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"N0534\n"
+"help.text"
+msgid "<literal>OnLoad</literal> and <literal>OnUnload</literal> events can be used to respectively set and unset Python programs path. They are described as <literal>Open document</literal> and <literal>Document closed</literal>."
+msgstr ""
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"N0543\n"
+"help.text"
+msgid "class UiDocument(unohelper.Base, AdapterPattern):"
+msgstr ""
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"N0544\n"
+"help.text"
+msgid "\"\"\" Monitor document events \"\"\""
+msgstr ""
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"N0546\n"
+"help.text"
+msgid "adapted from 'Python script to monitor OnSave event' at"
+msgstr ""
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"N0550\n"
+"help.text"
+msgid "\"\"\" Document events monitor \"\"\""
+msgstr ""
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"N0551\n"
+"help.text"
+msgid "''' report using Access2Base.Trace console OR"
+msgstr ""
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"N0552\n"
+"help.text"
+msgid "report in 1st sheet, 1st column for Calc docs '''"
+msgstr ""
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"N0558\n"
+"help.text"
+msgid "#self.row = 0  # uncomment for Calc documents only"
+msgstr ""
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"N0560\n"
+"help.text"
+msgid "self.listen()  # Start monitoring doc. events"
+msgstr ""
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"N0569\n"
+"help.text"
+msgid "\"\"\" Output doc. events on 1st column of a Calc spreadsheet \"\"\""
+msgstr ""
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"N0575\n"
+"help.text"
+msgid "def listen(self, *args):  # OnLoad/OnNew at the earliest"
+msgstr ""
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"N0576\n"
+"help.text"
+msgid "\"\"\" Start doc. events monitoring \"\"\""
+msgstr ""
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"N0578\n"
+"help.text"
+msgid "Console.log(\"INFO\", \"Document events are being logged\", True)"
+msgstr ""
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"N0580\n"
+"help.text"
+msgid "def sleep(self, *args):  # OnUnload at the latest (optional)"
+msgstr ""
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"N0581\n"
+"help.text"
+msgid "\"\"\" Stop doc. events monitoring \"\"\""
+msgstr ""
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"N0583\n"
+"help.text"
+msgid "Console.log(\"INFO\", \"Document events have been logged\", True)"
+msgstr ""
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"N0587\n"
+"help.text"
+msgid "\"\"\" Intercepts all doc. events \"\"\""
+msgstr ""
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"N0588\n"
+"help.text"
+msgid "#self.setCell(event.Source, event.EventName) # only for Calc docs"
+msgstr ""
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"N0595\n"
+"help.text"
+msgid "\"\"\" Release all activities \"\"\""
+msgstr ""
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"N0601\n"
+"help.text"
+msgid "def OnLoad(*args):  # 'Open Document' event"
+msgstr ""
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"N0604\n"
+"help.text"
+msgid "def OnUnload(*args):  # 'Document has been closed' event"
+msgstr ""
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"N0605\n"
+"help.text"
+msgid "pass  # (optional) performed when disposed"
+msgstr ""
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"N0613\n"
+"help.text"
+msgid "(Back/Fore)ground console to report/log program execution."
+msgstr ""
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"N0617\n"
+"help.text"
+msgid "\"\"\" Print free item list to console \"\"\""
+msgstr ""
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"N0622\n"
+"help.text"
+msgid "\"\"\" Append log message to console, optional user prompt \"\"\""
+msgstr ""
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"N0627\n"
+"help.text"
+msgid "\"\"\" Set log messages lower limit \"\"\""
+msgstr ""
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"N0632\n"
+"help.text"
+msgid "\"\"\" Display console content/dialog \"\"\""
+msgstr ""
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"N0647\n"
+"help.text"
+msgid "Mind the misspelled <literal>documentEventOccured</literal> method that inherits a typo from %PRODUCTNAME Application Programming Interface (API)."
+msgstr ""
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"N0648\n"
+"help.text"
+msgid "<literal>Start application</literal> and <literal>Close application</literal> events can respectively be used to set and to unset Python path for user scripts or %PRODUCTNAME scripts. In a similar fashion, document based Python libraries or modules can be loaded and released using <literal>Open document</literal> and <literal>Document closed</literal> events. Refer to <link href=\"text/sbasic/python/python_import.xhp\" name=\"Importing Python Modules\">Importing Python Modules</link> for more information."
+msgstr ""
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"N0649\n"
+"help.text"
+msgid "With %PRODUCTNAME Basic"
+msgstr ""
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"N0650\n"
+"help.text"
+msgid "The <literal>Onload</literal> script is assigned to <literal>Open document</literal> event using <menuitem>Tools – Customise...</menuitem> menu <menuitem>Events</menuitem> tab. Events monitoring starts from the moment a <literal>ConsoleLogger</literal> object is instantiated and ultimately stops when Basic engine releases it. <literal>OnLoad</literal> event loads necessary Basic libraries, while caught events are reported using <literal>Access2Base.Trace</literal> module."
+msgstr ""
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"N0651\n"
+"help.text"
+msgid "REM controller.Events module"
+msgstr ""
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"N0653\n"
+"help.text"
+msgid "Private _obj As Object ' controller.ConsoleLogger instance"
+msgstr ""
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"N0655\n"
+"help.text"
+msgid "Sub OnLoad(evt As com.sun.star.document.DocumentEvent) ' >> Open Document <<"
+msgstr ""
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"N0659\n"
+"help.text"
+msgid "REM controller.ConsoleLogger class module"
+msgstr ""
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"N0664\n"
+"help.text"
+msgid "' ADAPTER design pattern object to be instantiated in « Open Document » event"
+msgstr ""
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"N0668\n"
+"help.text"
+msgid "' CONSTRUCTOR/DESTRUCTOR"
+msgstr ""
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"N0674\n"
+"help.text"
+msgid "' MEMBERS"
+msgstr ""
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"N0679\n"
+"help.text"
+msgid "''' System-dependent filename '''"
+msgstr ""
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"N0686\n"
+"help.text"
+msgid "' METHODS"
+msgstr ""
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"N0688\n"
+"help.text"
+msgid "''' Monitor document events '''"
+msgstr ""
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"N0701\n"
+"help.text"
+msgid "''' Initialize document events logging '''"
+msgstr ""
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"N0706\n"
+"help.text"
+msgid "IIf(IsMissing(evt),\"\",evt.EventName & \"-\") & \"Document events are being logged\", _"
+msgstr ""
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"N0714\n"
+"help.text"
+msgid "''' Terminate document events logging '''"
+msgstr ""
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"N0717\n"
+"help.text"
+msgid "IIf(IsMissing(evt),\"\",evt.EventName & \"-\") & \"Document events have been logged\", _"
+msgstr ""
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"N0723\n"
+"help.text"
+msgid "' Your code for handled events goes here"
+msgstr ""
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"N0724\n"
+"help.text"
+msgid "Mind the misspelled <literal>_documentEventOccured</literal> method that inherits a typo from %PRODUCTNAME Application Programming Interface (API)."
+msgstr ""
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"N0725\n"
+"help.text"
+msgid "Discovering Documents Events"
+msgstr ""
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"N0726\n"
+"help.text"
+msgid "The broadcaster API object provides the list of events it is responsible for:"
+msgstr ""
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"N0727\n"
+"help.text"
+msgid "With Python"
+msgstr ""
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"N0734\n"
+"help.text"
+msgid "\"\"\" Display document events \"\"\""
+msgstr ""
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"N0736\n"
+"help.text"
+msgid "adapted from DisplayAvailableEvents() by A. Pitonyak"
+msgstr ""
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"N0747\n"
+"help.text"
+msgid "The <link href=\"https://extensions.libreoffice.org/extensions/apso-alternative-script-organizer-for-python\" name=\"Alternative Python Script Organizer\">Alternative Python Script Organizer (APSO)</link> extension is used to render events information on screen."
+msgstr ""
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"N0748\n"
+"help.text"
+msgid "With %PRODUCTNAME Basic"
+msgstr ""
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"N0750\n"
+"help.text"
+msgid "''' Display document events '''"
 msgstr ""
 
 #: python_examples.xhp
@@ -541,7 +1053,7 @@ msgctxt ""
 "python_listener.xhp\n"
 "N0385\n"
 "help.text"
-msgid "<bookmark_value>Python;Event Listener</bookmark_value>         <bookmark_value>Python;createUnoListener</bookmark_value>         <bookmark_value>Basic;Event Listener</bookmark_value>"
+msgid "<bookmark_value>Python;Event Listener</bookmark_value>         <bookmark_value>Python;createUnoListener</bookmark_value>         <bookmark_value>Basic;Event Listener</bookmark_value>         <!-- Application Programming Interface -->         <bookmark_value>API;ActionEvent</bookmark_value>         <bookmark_value>API;DialogProvider</bookmark_value>         <bookmark_value>API;EventObject</bookmark_value>         <bookmark_value>API;ExecutableDialogResults</bookmark_value>         <bookmark_value>API;XActionListener</bookmark_value>"
 msgstr ""
 
 #: python_listener.xhp
@@ -717,7 +1229,7 @@ msgctxt ""
 "python_listener.xhp\n"
 "N0499\n"
 "help.text"
-msgid "Listeners are usually coded along with <link href=\"text/sbasic/python/python_dialog.xhp\" name=\"dialog opening\">dialog opening</link>. Numerous listener approaches are possible such as event handlers for dialogs or event monitors for documents or forms."
+msgid "Listeners are usually coded along with <link href=\"text/sbasic/python/python_dialogs.xhp\" name=\"dialog opening\">dialog opening</link>. Numerous listener approaches are possible such as event handlers for dialogs or event monitors for documents or forms."
 msgstr ""
 
 #: python_listener.xhp
@@ -1477,7 +1989,7 @@ msgctxt ""
 "python_screen.xhp\n"
 "N0433\n"
 "help.text"
-msgid "<bookmark_value>Python;InputBox</bookmark_value>        <bookmark_value>Python;MsgBox</bookmark_value>        <bookmark_value>Python;Print</bookmark_value>"
+msgid "<bookmark_value>Python;InputBox</bookmark_value>        <bookmark_value>Python;MsgBox</bookmark_value>        <bookmark_value>Python;Print</bookmark_value>        <bookmark_value>API;MasterScriptProvider</bookmark_value>        <bookmark_value>API;XScript</bookmark_value>"
 msgstr ""
 
 #: python_screen.xhp
@@ -1600,14 +2112,6 @@ msgctxt ""
 msgid "<literal>uiScripts</literal> Basic module"
 msgstr ""
 
-#: python_screen.xhp
-msgctxt ""
-"python_screen.xhp\n"
-"N0505\n"
-"help.text"
-msgid "<link href=\"text/sbasic/python/python_2_basic.xhp\" name=\"Calling Basic macros from Python\">Calling Basic macros from Python</link>"
-msgstr ""
-
 #: python_session.xhp
 msgctxt ""
 "python_session.xhp\n"
@@ -1621,7 +2125,7 @@ msgctxt ""
 "python_session.xhp\n"
 "N0339\n"
 "help.text"
-msgid "<bookmark_value>Session;ComputerName</bookmark_value>        <bookmark_value>Session;SharedScripts</bookmark_value>        <bookmark_value>Session;SharedPythonScripts</bookmark_value>        <bookmark_value>Session;UserProfile</bookmark_value>        <bookmark_value>Session;UserScripts</bookmark_value>        <bookmark_value>Session;UserPythonScripts</bookmark_value>"
+msgid "<bookmark_value>Session;ComputerName</bookmark_value>        <bookmark_value>Session;SharedScripts</bookmark_value>        <bookmark_value>Session;SharedPythonScripts</bookmark_value>        <bookmark_value>Session;UserProfile</bookmark_value>        <bookmark_value>Session;UserScripts</bookmark_value>        <bookmark_value>Session;UserPythonScripts</bookmark_value>        <bookmark_value>API;PathSubstitution</bookmark_value>"
 msgstr ""
 
 #: python_session.xhp
