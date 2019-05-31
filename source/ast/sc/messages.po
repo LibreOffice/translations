@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2019-05-12 17:47+0200\n"
+"POT-Creation-Date: 2019-05-31 14:54+0200\n"
 "PO-Revision-Date: 2018-11-12 11:34+0000\n"
 "Last-Translator: Anonymous Pootle User\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -15540,6 +15540,11 @@ msgctxt "sharedocumentdlg|exclusive"
 msgid "(exclusive access)"
 msgstr "(accesu esclusivu)"
 
+#: sc/inc/strings.hrc:373
+msgctxt "STR_NO_NAMED_RANGES_AVAILABLE"
+msgid "No named ranges available in the selected document"
+msgstr ""
+
 #: sc/inc/subtotals.hrc:27
 msgctxt "subtotalgrppage|liststore1"
 msgid "Sum"
@@ -16111,12 +16116,12 @@ msgstr "Fomatu condicional"
 
 #: sc/uiconfig/scalc/ui/condformatmanager.ui:136
 msgctxt "condformatmanager|STR_HEADER_RANGE"
-msgid "First Condition"
+msgid "Range"
 msgstr ""
 
 #: sc/uiconfig/scalc/ui/condformatmanager.ui:149
-msgctxt "condformatmanager|STR_HEADER_RANGE"
-msgid "Range"
+msgctxt "condformatmanager|STR_HEADER_FIRST_CONDITION"
+msgid "First Condition"
 msgstr ""
 
 #: sc/uiconfig/scalc/ui/condformatmanager.ui:175
@@ -17410,83 +17415,40 @@ msgctxt "dataform|DataFormDialog"
 msgid "Data Form"
 msgstr "Formulariu de datos"
 
-#: sc/uiconfig/scalc/ui/dataform.ui:25
-msgctxt "dataform|label"
-msgid "New Record"
-msgstr "Rexistru nuevu"
-
-#: sc/uiconfig/scalc/ui/dataform.ui:35
-msgctxt "dataform|new"
-msgid "_New"
-msgstr "_Nuevu"
-
-#: sc/uiconfig/scalc/ui/dataform.ui:51
-msgctxt "dataform|delete"
-msgid "_Delete"
-msgstr "_Desaniciar"
-
-#: sc/uiconfig/scalc/ui/dataform.ui:65
-msgctxt "dataform|restore"
-msgid "_Restore"
-msgstr "_Restaurar"
-
-#: sc/uiconfig/scalc/ui/dataform.ui:79
-msgctxt "dataform|prev"
-msgid "_Previous Record"
-msgstr "Rexistru _anterior"
-
-#: sc/uiconfig/scalc/ui/dataform.ui:94
-msgctxt "dataform|next"
-msgid "Ne_xt Record"
-msgstr "Rexistru _siguiente"
-
-#: sc/uiconfig/scalc/ui/dataform.ui:124
+#: sc/uiconfig/scalc/ui/dataform.ui:40
 msgctxt "dataform|close"
 msgid "_Close"
 msgstr "_Zarrar"
 
-#: sc/uiconfig/scalc/ui/dataprovider.ui:9
-msgctxt "dataprovider|DataStreamDialog"
-msgid "Live Data Streams"
-msgstr "Fluxos de datos en direuto"
+#: sc/uiconfig/scalc/ui/dataform.ui:167
+msgctxt "dataform|label"
+msgid "New Record"
+msgstr "Rexistru nuevu"
 
-#: sc/uiconfig/scalc/ui/dataprovider.ui:107
-msgctxt "dataprovider|label6"
-msgid "URL:"
-msgstr "URL:"
+#: sc/uiconfig/scalc/ui/dataform.ui:178
+msgctxt "dataform|new"
+msgid "_New"
+msgstr "_Nuevu"
 
-#: sc/uiconfig/scalc/ui/dataprovider.ui:122
-#, fuzzy
-msgctxt "dataprovider|url|tooltip_text"
-msgid "Enter the URL of the source document in the local file system or Internet here."
-msgstr "Escriba equí el URL del documentu fonte nel sistema de ficheros llocal o n'Internet."
+#: sc/uiconfig/scalc/ui/dataform.ui:194
+msgctxt "dataform|delete"
+msgid "_Delete"
+msgstr "_Desaniciar"
 
-#: sc/uiconfig/scalc/ui/dataprovider.ui:140
-msgctxt "dataprovider|browse"
-msgid "_Browse..."
-msgstr "_Restolar..."
+#: sc/uiconfig/scalc/ui/dataform.ui:208
+msgctxt "dataform|restore"
+msgid "_Restore"
+msgstr "_Restaurar"
 
-#: sc/uiconfig/scalc/ui/dataprovider.ui:167
-#, fuzzy
-msgctxt "dataprovider|label_db"
-msgid "Database Range:"
-msgstr "Rangos de la base de datos"
+#: sc/uiconfig/scalc/ui/dataform.ui:222
+msgctxt "dataform|prev"
+msgid "_Previous Record"
+msgstr "Rexistru _anterior"
 
-#: sc/uiconfig/scalc/ui/dataprovider.ui:203
-msgctxt "dataprovider|label_provider"
-msgid "Data Provider:"
-msgstr ""
-
-#: sc/uiconfig/scalc/ui/dataprovider.ui:240
-msgctxt "dataprovider|label_search"
-msgid "Search String:"
-msgstr ""
-
-#: sc/uiconfig/scalc/ui/dataprovider.ui:276
-#, fuzzy
-msgctxt "dataprovider|label"
-msgid "Source Stream"
-msgstr "Fluxu d'orixe"
+#: sc/uiconfig/scalc/ui/dataform.ui:237
+msgctxt "dataform|next"
+msgid "Ne_xt Record"
+msgstr "Rexistru _siguiente"
 
 #: sc/uiconfig/scalc/ui/dataproviderdlg.ui:36
 msgctxt "dataproviderdlg|db_name"
@@ -19256,34 +19218,39 @@ msgctxt "movingaveragedialog|output-range-label"
 msgid "Results to:"
 msgstr "Resultaos a"
 
-#: sc/uiconfig/scalc/ui/movingaveragedialog.ui:193
+#: sc/uiconfig/scalc/ui/movingaveragedialog.ui:187
+msgctxt "movingaveragedialog|trimrange-check"
+msgid "Trim input range to actual data content"
+msgstr ""
+
+#: sc/uiconfig/scalc/ui/movingaveragedialog.ui:211
 #, fuzzy
 msgctxt "movingaveragedialog|label3"
 msgid "Data"
 msgstr "Data"
 
-#: sc/uiconfig/scalc/ui/movingaveragedialog.ui:228
+#: sc/uiconfig/scalc/ui/movingaveragedialog.ui:246
 msgctxt "movingaveragedialog|groupedby-columns-radio"
 msgid "Columns"
 msgstr "Columnes"
 
-#: sc/uiconfig/scalc/ui/movingaveragedialog.ui:244
+#: sc/uiconfig/scalc/ui/movingaveragedialog.ui:262
 msgctxt "movingaveragedialog|groupedby-rows-radio"
 msgid "Rows"
 msgstr "Fileres"
 
-#: sc/uiconfig/scalc/ui/movingaveragedialog.ui:266
+#: sc/uiconfig/scalc/ui/movingaveragedialog.ui:284
 msgctxt "movingaveragedialog|label2"
 msgid "Grouped by"
 msgstr "Agrupaos por"
 
-#: sc/uiconfig/scalc/ui/movingaveragedialog.ui:303
+#: sc/uiconfig/scalc/ui/movingaveragedialog.ui:321
 #, fuzzy
 msgctxt "movingaveragedialog|interval-label"
 msgid "Interval:"
 msgstr "Intervalu"
 
-#: sc/uiconfig/scalc/ui/movingaveragedialog.ui:334
+#: sc/uiconfig/scalc/ui/movingaveragedialog.ui:352
 msgctxt "movingaveragedialog|label1"
 msgid "Parameters"
 msgstr "Parámetros"
@@ -19433,167 +19400,169 @@ msgctxt "CalcNotebookbar|HelpMenuButton"
 msgid "_Help"
 msgstr ""
 
-#: sc/uiconfig/scalc/ui/notebookbar.ui:2892
+#: sc/uiconfig/scalc/ui/notebookbar.ui:2975
 msgctxt "CalcNotebookbar|FileLabel"
 msgid "~File"
 msgstr ""
 
-#: sc/uiconfig/scalc/ui/notebookbar.ui:3354
+#: sc/uiconfig/scalc/ui/notebookbar.ui:3436
 msgctxt "CalcNotebookbar|bordertype|tooltip_text"
 msgid "Specify the borders of the selected cells."
 msgstr ""
 
-#: sc/uiconfig/scalc/ui/notebookbar.ui:3537
+#: sc/uiconfig/scalc/ui/notebookbar.ui:3619
 msgctxt "CalcNotebookbar|increaseindent1|tooltip_text"
 msgid "Increase Indent"
 msgstr ""
 
-#: sc/uiconfig/scalc/ui/notebookbar.ui:3552
+#: sc/uiconfig/scalc/ui/notebookbar.ui:3634
 msgctxt "CalcNotebookbar|decreaseindent1|tooltip_text"
 msgid "Decrease Indent"
 msgstr ""
 
-#: sc/uiconfig/scalc/ui/notebookbar.ui:4527
+#: sc/uiconfig/scalc/ui/notebookbar.ui:4609
 msgctxt "CalcNotebookbar|HomeMenuButton"
 msgid "_Home"
 msgstr ""
 
-#: sc/uiconfig/scalc/ui/notebookbar.ui:4636
+#: sc/uiconfig/scalc/ui/notebookbar.ui:4718
 msgctxt "CalcNotebookbar|CalcLabel"
 msgid "~Home"
 msgstr ""
 
-#: sc/uiconfig/scalc/ui/notebookbar.ui:5051
+#: sc/uiconfig/scalc/ui/notebookbar.ui:5277
 msgctxt "CalcNotebookbar|FieldMenuButton"
 msgid "Fiel_d"
 msgstr ""
 
-#: sc/uiconfig/scalc/ui/notebookbar.ui:5565
+#: sc/uiconfig/scalc/ui/notebookbar.ui:5798
 msgctxt "CalcNotebookbar|InsertMenuButton"
 msgid "_Insert"
 msgstr ""
 
-#: sc/uiconfig/scalc/ui/notebookbar.ui:5651
+#: sc/uiconfig/scalc/ui/notebookbar.ui:5906
 msgctxt "CalcNotebookbar|InsertLabel"
 msgid "~Insert"
 msgstr ""
 
-#: sc/uiconfig/scalc/ui/notebookbar.ui:5681
+#: sc/uiconfig/scalc/ui/notebookbar.ui:5936
 msgctxt "CalcNotebookbar|reviewb"
 msgid "_Layout"
 msgstr ""
 
-#: sc/uiconfig/scalc/ui/notebookbar.ui:6233
+#: sc/uiconfig/scalc/ui/notebookbar.ui:6410
+#: sc/uiconfig/scalc/ui/notebookbar.ui:6437
+#: sc/uiconfig/scalc/ui/notebookbar.ui:6876
 msgctxt "CalcNotebookbar|objectalign|tooltip_text"
 msgid "Object Align"
 msgstr ""
 
-#: sc/uiconfig/scalc/ui/notebookbar.ui:6435
+#: sc/uiconfig/scalc/ui/notebookbar.ui:7094
 msgctxt "CalcNotebookbar|PageLayoutLabel"
 msgid "~Layout"
 msgstr ""
 
-#: sc/uiconfig/scalc/ui/notebookbar.ui:7419
+#: sc/uiconfig/scalc/ui/notebookbar.ui:8077
 msgctxt "CalcNotebookbar|Statistics"
 msgid "_Statistics"
 msgstr ""
 
-#: sc/uiconfig/scalc/ui/notebookbar.ui:7470
+#: sc/uiconfig/scalc/ui/notebookbar.ui:8128
 msgctxt "CalcNotebookbar|DataMenuButton"
 msgid "_Data"
 msgstr ""
 
-#: sc/uiconfig/scalc/ui/notebookbar.ui:7579
+#: sc/uiconfig/scalc/ui/notebookbar.ui:8237
 msgctxt "CalcNotebookbar|DataLabel"
 msgid "~Data"
 msgstr ""
 
-#: sc/uiconfig/scalc/ui/notebookbar.ui:8244
+#: sc/uiconfig/scalc/ui/notebookbar.ui:9001
 msgctxt "CalcNotebookbar|ReviewMenuButton"
 msgid "_Review"
 msgstr ""
 
-#: sc/uiconfig/scalc/ui/notebookbar.ui:8330
+#: sc/uiconfig/scalc/ui/notebookbar.ui:9087
 msgctxt "CalcNotebookbar|ReviewLabel"
 msgid "~Review"
 msgstr ""
 
-#: sc/uiconfig/scalc/ui/notebookbar.ui:9121
+#: sc/uiconfig/scalc/ui/notebookbar.ui:9877
 msgctxt "CalcNotebookbar|ViewMenuButton"
 msgid "_View"
 msgstr ""
 
-#: sc/uiconfig/scalc/ui/notebookbar.ui:9207
+#: sc/uiconfig/scalc/ui/notebookbar.ui:9963
 msgctxt "CalcNotebookbar|ViewLabel"
 msgid "~View"
 msgstr ""
 
-#: sc/uiconfig/scalc/ui/notebookbar.ui:9235
+#: sc/uiconfig/scalc/ui/notebookbar.ui:9991
 msgctxt "CalcNotebookbar|GraphicMenuButton"
 msgid "Ima_ge"
 msgstr ""
 
-#: sc/uiconfig/scalc/ui/notebookbar.ui:10313
+#: sc/uiconfig/scalc/ui/notebookbar.ui:11068
 msgctxt "CalcNotebookbar|ImageLabel"
 msgid "Ima~ge"
 msgstr ""
 
-#: sc/uiconfig/scalc/ui/notebookbar.ui:11421
+#: sc/uiconfig/scalc/ui/notebookbar.ui:12175
 msgctxt "CalcNotebookbar|DrawMenuButton"
 msgid "_Draw"
 msgstr ""
 
-#: sc/uiconfig/scalc/ui/notebookbar.ui:11531
+#: sc/uiconfig/scalc/ui/notebookbar.ui:12285
 msgctxt "CalcNotebookbar|DrawLabel"
 msgid "~Draw"
 msgstr ""
 
-#: sc/uiconfig/scalc/ui/notebookbar.ui:12249
+#: sc/uiconfig/scalc/ui/notebookbar.ui:13002
 msgctxt "CalcNotebookbar|frame:MenuDraw"
 msgid "_Object"
 msgstr ""
 
-#: sc/uiconfig/scalc/ui/notebookbar.ui:12359
+#: sc/uiconfig/scalc/ui/notebookbar.ui:13112
 msgctxt "CalcNotebookbar|FrameLabel"
 msgid "~Object"
 msgstr ""
 
-#: sc/uiconfig/scalc/ui/notebookbar.ui:12868
+#: sc/uiconfig/scalc/ui/notebookbar.ui:13620
 msgctxt "CalcNotebookbar|MediaMenuButton"
 msgid "_Media"
 msgstr ""
 
-#: sc/uiconfig/scalc/ui/notebookbar.ui:12951
+#: sc/uiconfig/scalc/ui/notebookbar.ui:13703
 msgctxt "CalcNotebookbar|MediaLabel"
 msgid "~Media"
 msgstr ""
 
-#: sc/uiconfig/scalc/ui/notebookbar.ui:13349
+#: sc/uiconfig/scalc/ui/notebookbar.ui:14101
 msgctxt "CalcNotebookbar|PrintMenuButton"
 msgid "_Print"
 msgstr ""
 
-#: sc/uiconfig/scalc/ui/notebookbar.ui:13433
+#: sc/uiconfig/scalc/ui/notebookbar.ui:14185
 msgctxt "CalcNotebookbar|PrintLabel"
 msgid "~Print"
 msgstr ""
 
-#: sc/uiconfig/scalc/ui/notebookbar.ui:13464
+#: sc/uiconfig/scalc/ui/notebookbar.ui:14216
 msgctxt "CalcNotebookbar|FormMenuButton"
 msgid "Fo_rm"
 msgstr ""
 
-#: sc/uiconfig/scalc/ui/notebookbar.ui:14258
+#: sc/uiconfig/scalc/ui/notebookbar.ui:15009
 msgctxt "CalcNotebookbar|FormLabel"
 msgid "Fo~rm"
 msgstr ""
 
-#: sc/uiconfig/scalc/ui/notebookbar.ui:14289
+#: sc/uiconfig/scalc/ui/notebookbar.ui:15040
 msgctxt "CalcNotebookbar|ToolsMenuButton"
 msgid "_Tools"
 msgstr ""
 
-#: sc/uiconfig/scalc/ui/notebookbar.ui:15417
+#: sc/uiconfig/scalc/ui/notebookbar.ui:16334
 msgctxt "CalcNotebookbar|DevLabel"
 msgid "~Tools"
 msgstr ""
@@ -22234,17 +22203,27 @@ msgctxt "searchresults|SearchResultsDialog"
 msgid "Search Results"
 msgstr "Resultaos de la gueta"
 
-#: sc/uiconfig/scalc/ui/searchresults.ui:83
+#: sc/uiconfig/scalc/ui/searchresults.ui:36
+msgctxt "searchresults|ShowBox"
+msgid "_Show this dialog"
+msgstr ""
+
+#: sc/uiconfig/scalc/ui/searchresults.ui:40
+msgctxt "searchresults|ShowBox"
+msgid "Enable the dialog again at Tools > Options > Calc > View"
+msgstr ""
+
+#: sc/uiconfig/scalc/ui/searchresults.ui:102
 msgctxt "searchresults|sheet"
 msgid "Sheet"
 msgstr ""
 
-#: sc/uiconfig/scalc/ui/searchresults.ui:96
+#: sc/uiconfig/scalc/ui/searchresults.ui:115
 msgctxt "searchresults|cell"
 msgid "Cell"
 msgstr ""
 
-#: sc/uiconfig/scalc/ui/searchresults.ui:109
+#: sc/uiconfig/scalc/ui/searchresults.ui:128
 msgctxt "searchresults|content"
 msgid "Content"
 msgstr ""
@@ -24180,109 +24159,114 @@ msgctxt "tpviewpage|outline"
 msgid "_Outline symbols"
 msgstr "Símb_olos d'esquema"
 
-#: sc/uiconfig/scalc/ui/tpviewpage.ui:289
+#: sc/uiconfig/scalc/ui/tpviewpage.ui:283
+msgctxt "tpviewpage|summary"
+msgid "Summary o_n search"
+msgstr ""
+
+#: sc/uiconfig/scalc/ui/tpviewpage.ui:307
 msgctxt "tpviewpage|label5"
 msgid "Window"
 msgstr "Ventana"
 
-#: sc/uiconfig/scalc/ui/tpviewpage.ui:365
+#: sc/uiconfig/scalc/ui/tpviewpage.ui:383
 msgctxt "tpviewpage|grid_label"
 msgid "_Grid lines:"
 msgstr "_Llinies de cuadrícula:"
 
-#: sc/uiconfig/scalc/ui/tpviewpage.ui:382
+#: sc/uiconfig/scalc/ui/tpviewpage.ui:400
 msgctxt "tpviewpage|color_label"
 msgid "_Color:"
 msgstr "_Color:"
 
-#: sc/uiconfig/scalc/ui/tpviewpage.ui:399
+#: sc/uiconfig/scalc/ui/tpviewpage.ui:417
 msgctxt "tpviewpage|grid"
 msgid "Show"
 msgstr "Amosar"
 
-#: sc/uiconfig/scalc/ui/tpviewpage.ui:400
+#: sc/uiconfig/scalc/ui/tpviewpage.ui:418
 msgctxt "tpviewpage|grid"
 msgid "Show on colored cells"
 msgstr "Amosar nes caxelles de color"
 
-#: sc/uiconfig/scalc/ui/tpviewpage.ui:401
+#: sc/uiconfig/scalc/ui/tpviewpage.ui:419
 msgctxt "tpviewpage|grid"
 msgid "Hide"
 msgstr "Tapecer"
 
-#: sc/uiconfig/scalc/ui/tpviewpage.ui:421
+#: sc/uiconfig/scalc/ui/tpviewpage.ui:439
 msgctxt "tpviewpage|break"
 msgid "_Page breaks"
 msgstr "Saltos de _páxina"
 
-#: sc/uiconfig/scalc/ui/tpviewpage.ui:438
+#: sc/uiconfig/scalc/ui/tpviewpage.ui:456
 msgctxt "tpviewpage|guideline"
 msgid "Helplines _while moving"
 msgstr "Llinies d'a_yuda al mover"
 
-#: sc/uiconfig/scalc/ui/tpviewpage.ui:461
+#: sc/uiconfig/scalc/ui/tpviewpage.ui:479
 #, fuzzy
 msgctxt "tpviewpage|label1"
 msgid "Visual Aids"
 msgstr "Ayudes visuales"
 
-#: sc/uiconfig/scalc/ui/tpviewpage.ui:500
+#: sc/uiconfig/scalc/ui/tpviewpage.ui:518
 #, fuzzy
 msgctxt "tpviewpage|objgrf_label"
 msgid "Ob_jects/Images:"
 msgstr "O_xetos/Imaxe:"
 
-#: sc/uiconfig/scalc/ui/tpviewpage.ui:516
+#: sc/uiconfig/scalc/ui/tpviewpage.ui:534
 msgctxt "tpviewpage|diagram_label"
 msgid "Cha_rts:"
 msgstr "G_ráfiques:"
 
-#: sc/uiconfig/scalc/ui/tpviewpage.ui:532
+#: sc/uiconfig/scalc/ui/tpviewpage.ui:550
 msgctxt "tpviewpage|draw_label"
 msgid "_Drawing objects:"
 msgstr "Oxetos de _dibuxu:"
 
-#: sc/uiconfig/scalc/ui/tpviewpage.ui:548
+#: sc/uiconfig/scalc/ui/tpviewpage.ui:566
 msgctxt "tpviewpage|objgrf"
 msgid "Show"
 msgstr "Amosar"
 
-#: sc/uiconfig/scalc/ui/tpviewpage.ui:549
+#: sc/uiconfig/scalc/ui/tpviewpage.ui:567
 msgctxt "tpviewpage|objgrf"
 msgid "Hide"
 msgstr "Tapecer"
 
-#: sc/uiconfig/scalc/ui/tpviewpage.ui:564
+#: sc/uiconfig/scalc/ui/tpviewpage.ui:582
 msgctxt "tpviewpage|diagram"
 msgid "Show"
 msgstr "Amosar"
 
-#: sc/uiconfig/scalc/ui/tpviewpage.ui:565
+#: sc/uiconfig/scalc/ui/tpviewpage.ui:583
 msgctxt "tpviewpage|diagram"
 msgid "Hide"
 msgstr "Tapecer"
 
-#: sc/uiconfig/scalc/ui/tpviewpage.ui:580
+#: sc/uiconfig/scalc/ui/tpviewpage.ui:598
 msgctxt "tpviewpage|draw"
 msgid "Show"
 msgstr "Amosar"
-
-#: sc/uiconfig/scalc/ui/tpviewpage.ui:581
-msgctxt "tpviewpage|draw"
-msgid "Hide"
-msgstr "Tapecer"
 
 #: sc/uiconfig/scalc/ui/tpviewpage.ui:599
+msgctxt "tpviewpage|draw"
+msgid "Hide"
+msgstr "Tapecer"
+
+#: sc/uiconfig/scalc/ui/tpviewpage.ui:617
 msgctxt "tpviewpage|label2"
 msgid "Objects"
 msgstr "Oxetos"
 
-#: sc/uiconfig/scalc/ui/tpviewpage.ui:629
+#: sc/uiconfig/scalc/ui/tpviewpage.ui:647
 msgctxt "tpviewpage|synczoom"
 msgid "S_ynchronize sheets"
 msgstr "S_incronizar les fueyes"
 
-#: sc/uiconfig/scalc/ui/tpviewpage.ui:644
+#: sc/uiconfig/scalc/ui/tpviewpage.ui:662
 msgctxt "tpviewpage|label3"
 msgid "Zoom"
 msgstr "Ampliación"

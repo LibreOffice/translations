@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2019-05-12 17:47+0200\n"
-"PO-Revision-Date: 2019-05-02 19:01+0000\n"
+"POT-Creation-Date: 2019-05-31 14:54+0200\n"
+"PO-Revision-Date: 2019-05-29 10:45+0000\n"
 "Last-Translator: Dian LI <xslidian@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: zh_CN\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Accelerator-Marker: ~\n"
 "X-Generator: LibreOffice\n"
-"X-POOTLE-MTIME: 1556823684.000000\n"
+"X-POOTLE-MTIME: 1559126719.000000\n"
 
 #: sc/inc/compiler.hrc:27
 msgctxt "RID_FUNCTION_CATEGORIES"
@@ -13319,7 +13319,7 @@ msgstr "网页服务的URI链接地址"
 #: sc/inc/scfuncs.hrc:4046
 msgctxt "SC_OPCODE_ENCODEURL"
 msgid "Return a URL-encoded string."
-msgstr "返回一个编码后的URL字符串。"
+msgstr "返回按 URL 方式编码的字符串。"
 
 #: sc/inc/scfuncs.hrc:4047
 msgctxt "SC_OPCODE_ENCODEURL"
@@ -13329,7 +13329,7 @@ msgstr "文本"
 #: sc/inc/scfuncs.hrc:4048
 msgctxt "SC_OPCODE_ENCODEURL"
 msgid "A string to be URL-encoded"
-msgstr "将要被编码的字符串"
+msgstr "需要按 URL 方式编码的字符串"
 
 #: sc/inc/scfuncs.hrc:4053
 msgctxt "SC_OPCODE_ERF_MS"
@@ -13364,32 +13364,32 @@ msgstr "积分的下限"
 #: sc/inc/scfuncs.hrc:4067
 msgctxt "SC_OPCODE_RAWSUBTRACT"
 msgid "Returns the subtraction of numbers. Like a-b-c but without eliminating small roundoff errors."
-msgstr "对数字进行减法运算。类似a-b-c，但是不消除小的舍入错误。"
+msgstr "对数字进行减法运算。类似「a-b-c」，但不消除细微的舍入误差。"
 
 #: sc/inc/scfuncs.hrc:4068
 msgctxt "SC_OPCODE_RAWSUBTRACT"
 msgid "Minuend"
-msgstr "减去值"
+msgstr "被减数"
 
 #: sc/inc/scfuncs.hrc:4069
 msgctxt "SC_OPCODE_RAWSUBTRACT"
 msgid "Number from which following arguments are subtracted."
-msgstr "一个数字，后续参数中的数字将会从该数字中减去。"
+msgstr "数字，将从该数字中减去后续参数中的数字。"
 
 #: sc/inc/scfuncs.hrc:4070
 msgctxt "SC_OPCODE_RAWSUBTRACT"
 msgid "Subtrahend "
-msgstr "减去值 "
+msgstr "减数 "
 
 #: sc/inc/scfuncs.hrc:4071
 msgctxt "SC_OPCODE_RAWSUBTRACT"
 msgid "Subtrahend 1, subtrahend 2, ... are numerical arguments subtracted from the minuend."
-msgstr "Subtrahend 1, subtrahend 2, ... 为数字参数，这些数字将从minuend中减去。"
+msgstr "减数 1, 减数 2, ... 为数字参数，这些数字将从被减数中减去。"
 
 #: sc/inc/scfuncs.hrc:4077
 msgctxt "SC_OPCODE_ROUNDSIG"
 msgid "Rounds a number to predefined significant digits."
-msgstr "按照指定的有效位数对数字进行舍入。"
+msgstr "按预先定义的有效位数对数字进行舍入。"
 
 #: sc/inc/scfuncs.hrc:4078
 msgctxt "SC_OPCODE_ROUNDSIG"
@@ -13414,7 +13414,7 @@ msgstr "舍入之后的有效位数。"
 #: sc/inc/scfuncs.hrc:4086
 msgctxt "SC_OPCODE_REPLACEB"
 msgid "Replaces characters within a text string with a different text string, with DBCS."
-msgstr "用另一个字符串替换给定字符串中的字符。"
+msgstr "将字符串中的字符替换为其他字符串，尊重 DBCS。"
 
 #: sc/inc/scfuncs.hrc:4087
 msgctxt "SC_OPCODE_REPLACEB"
@@ -15213,6 +15213,11 @@ msgctxt "sharedocumentdlg|exclusive"
 msgid "(exclusive access)"
 msgstr "(独占访问权限)"
 
+#: sc/inc/strings.hrc:373
+msgctxt "STR_NO_NAMED_RANGES_AVAILABLE"
+msgid "No named ranges available in the selected document"
+msgstr "选中文档中没有可用的命名区域"
+
 #: sc/inc/subtotals.hrc:27
 msgctxt "subtotalgrppage|liststore1"
 msgid "Sum"
@@ -15766,13 +15771,13 @@ msgstr "管理条件格式"
 
 #: sc/uiconfig/scalc/ui/condformatmanager.ui:136
 msgctxt "condformatmanager|STR_HEADER_RANGE"
-msgid "First Condition"
-msgstr ""
+msgid "Range"
+msgstr "范围"
 
 #: sc/uiconfig/scalc/ui/condformatmanager.ui:149
-msgctxt "condformatmanager|STR_HEADER_RANGE"
-msgid "Range"
-msgstr ""
+msgctxt "condformatmanager|STR_HEADER_FIRST_CONDITION"
+msgid "First Condition"
+msgstr "第一条件"
 
 #: sc/uiconfig/scalc/ui/condformatmanager.ui:175
 msgctxt "condformatmanager|add"
@@ -16989,80 +16994,40 @@ msgctxt "dataform|DataFormDialog"
 msgid "Data Form"
 msgstr "数据表单"
 
-#: sc/uiconfig/scalc/ui/dataform.ui:25
-msgctxt "dataform|label"
-msgid "New Record"
-msgstr "新建记录"
-
-#: sc/uiconfig/scalc/ui/dataform.ui:35
-msgctxt "dataform|new"
-msgid "_New"
-msgstr "新建(_N)"
-
-#: sc/uiconfig/scalc/ui/dataform.ui:51
-msgctxt "dataform|delete"
-msgid "_Delete"
-msgstr "删除(_D)"
-
-#: sc/uiconfig/scalc/ui/dataform.ui:65
-msgctxt "dataform|restore"
-msgid "_Restore"
-msgstr "还原(_R)"
-
-#: sc/uiconfig/scalc/ui/dataform.ui:79
-msgctxt "dataform|prev"
-msgid "_Previous Record"
-msgstr "上一条记录(_P)"
-
-#: sc/uiconfig/scalc/ui/dataform.ui:94
-msgctxt "dataform|next"
-msgid "Ne_xt Record"
-msgstr "下一条记录(_X)"
-
-#: sc/uiconfig/scalc/ui/dataform.ui:124
+#: sc/uiconfig/scalc/ui/dataform.ui:40
 msgctxt "dataform|close"
 msgid "_Close"
 msgstr "关闭(_C)"
 
-#: sc/uiconfig/scalc/ui/dataprovider.ui:9
-msgctxt "dataprovider|DataStreamDialog"
-msgid "Live Data Streams"
-msgstr "实时数据流"
+#: sc/uiconfig/scalc/ui/dataform.ui:167
+msgctxt "dataform|label"
+msgid "New Record"
+msgstr "新建记录"
 
-#: sc/uiconfig/scalc/ui/dataprovider.ui:107
-msgctxt "dataprovider|label6"
-msgid "URL:"
-msgstr "URL:"
+#: sc/uiconfig/scalc/ui/dataform.ui:178
+msgctxt "dataform|new"
+msgid "_New"
+msgstr "新建(_N)"
 
-#: sc/uiconfig/scalc/ui/dataprovider.ui:122
-msgctxt "dataprovider|url|tooltip_text"
-msgid "Enter the URL of the source document in the local file system or Internet here."
-msgstr "在此输入本地文件系统或网络位置的源文件链接。"
+#: sc/uiconfig/scalc/ui/dataform.ui:194
+msgctxt "dataform|delete"
+msgid "_Delete"
+msgstr "删除(_D)"
 
-#: sc/uiconfig/scalc/ui/dataprovider.ui:140
-msgctxt "dataprovider|browse"
-msgid "_Browse..."
-msgstr "浏览(_B)..."
+#: sc/uiconfig/scalc/ui/dataform.ui:208
+msgctxt "dataform|restore"
+msgid "_Restore"
+msgstr "还原(_R)"
 
-#: sc/uiconfig/scalc/ui/dataprovider.ui:167
-msgctxt "dataprovider|label_db"
-msgid "Database Range:"
-msgstr "数据库范围:"
+#: sc/uiconfig/scalc/ui/dataform.ui:222
+msgctxt "dataform|prev"
+msgid "_Previous Record"
+msgstr "上一条记录(_P)"
 
-#: sc/uiconfig/scalc/ui/dataprovider.ui:203
-msgctxt "dataprovider|label_provider"
-msgid "Data Provider:"
-msgstr "数据提供者:"
-
-#: sc/uiconfig/scalc/ui/dataprovider.ui:240
-msgctxt "dataprovider|label_search"
-msgid "Search String:"
-msgstr "搜索字符串:"
-
-#: sc/uiconfig/scalc/ui/dataprovider.ui:276
-msgctxt "dataprovider|label"
-msgid "Source Stream"
-msgstr "串流来源"
+#: sc/uiconfig/scalc/ui/dataform.ui:237
+msgctxt "dataform|next"
+msgid "Ne_xt Record"
+msgstr "下一条记录(_X)"
 
 #: sc/uiconfig/scalc/ui/dataproviderdlg.ui:36
 msgctxt "dataproviderdlg|db_name"
@@ -18779,32 +18744,37 @@ msgctxt "movingaveragedialog|output-range-label"
 msgid "Results to:"
 msgstr "将结果输出到:"
 
-#: sc/uiconfig/scalc/ui/movingaveragedialog.ui:193
+#: sc/uiconfig/scalc/ui/movingaveragedialog.ui:187
+msgctxt "movingaveragedialog|trimrange-check"
+msgid "Trim input range to actual data content"
+msgstr "将输入范围缩小为实际数据内容范围"
+
+#: sc/uiconfig/scalc/ui/movingaveragedialog.ui:211
 msgctxt "movingaveragedialog|label3"
 msgid "Data"
 msgstr "数据"
 
-#: sc/uiconfig/scalc/ui/movingaveragedialog.ui:228
+#: sc/uiconfig/scalc/ui/movingaveragedialog.ui:246
 msgctxt "movingaveragedialog|groupedby-columns-radio"
 msgid "Columns"
 msgstr "列"
 
-#: sc/uiconfig/scalc/ui/movingaveragedialog.ui:244
+#: sc/uiconfig/scalc/ui/movingaveragedialog.ui:262
 msgctxt "movingaveragedialog|groupedby-rows-radio"
 msgid "Rows"
 msgstr "行"
 
-#: sc/uiconfig/scalc/ui/movingaveragedialog.ui:266
+#: sc/uiconfig/scalc/ui/movingaveragedialog.ui:284
 msgctxt "movingaveragedialog|label2"
 msgid "Grouped by"
 msgstr "分组依据"
 
-#: sc/uiconfig/scalc/ui/movingaveragedialog.ui:303
+#: sc/uiconfig/scalc/ui/movingaveragedialog.ui:321
 msgctxt "movingaveragedialog|interval-label"
 msgid "Interval:"
 msgstr "间隔:"
 
-#: sc/uiconfig/scalc/ui/movingaveragedialog.ui:334
+#: sc/uiconfig/scalc/ui/movingaveragedialog.ui:352
 msgctxt "movingaveragedialog|label1"
 msgid "Parameters"
 msgstr "参数"
@@ -18944,167 +18914,169 @@ msgctxt "CalcNotebookbar|HelpMenuButton"
 msgid "_Help"
 msgstr "帮助(_H)"
 
-#: sc/uiconfig/scalc/ui/notebookbar.ui:2892
+#: sc/uiconfig/scalc/ui/notebookbar.ui:2975
 msgctxt "CalcNotebookbar|FileLabel"
 msgid "~File"
 msgstr "文件(~F)"
 
-#: sc/uiconfig/scalc/ui/notebookbar.ui:3354
+#: sc/uiconfig/scalc/ui/notebookbar.ui:3436
 msgctxt "CalcNotebookbar|bordertype|tooltip_text"
 msgid "Specify the borders of the selected cells."
 msgstr "为所选单元格指定边框。"
 
-#: sc/uiconfig/scalc/ui/notebookbar.ui:3537
+#: sc/uiconfig/scalc/ui/notebookbar.ui:3619
 msgctxt "CalcNotebookbar|increaseindent1|tooltip_text"
 msgid "Increase Indent"
 msgstr "增大缩进"
 
-#: sc/uiconfig/scalc/ui/notebookbar.ui:3552
+#: sc/uiconfig/scalc/ui/notebookbar.ui:3634
 msgctxt "CalcNotebookbar|decreaseindent1|tooltip_text"
 msgid "Decrease Indent"
 msgstr "减少缩进"
 
-#: sc/uiconfig/scalc/ui/notebookbar.ui:4527
+#: sc/uiconfig/scalc/ui/notebookbar.ui:4609
 msgctxt "CalcNotebookbar|HomeMenuButton"
 msgid "_Home"
 msgstr "主页(_H)"
 
-#: sc/uiconfig/scalc/ui/notebookbar.ui:4636
+#: sc/uiconfig/scalc/ui/notebookbar.ui:4718
 msgctxt "CalcNotebookbar|CalcLabel"
 msgid "~Home"
 msgstr "主页(~H)"
 
-#: sc/uiconfig/scalc/ui/notebookbar.ui:5051
+#: sc/uiconfig/scalc/ui/notebookbar.ui:5277
 msgctxt "CalcNotebookbar|FieldMenuButton"
 msgid "Fiel_d"
 msgstr "字段(_D)"
 
-#: sc/uiconfig/scalc/ui/notebookbar.ui:5565
+#: sc/uiconfig/scalc/ui/notebookbar.ui:5798
 msgctxt "CalcNotebookbar|InsertMenuButton"
 msgid "_Insert"
 msgstr "插入(_I)"
 
-#: sc/uiconfig/scalc/ui/notebookbar.ui:5651
+#: sc/uiconfig/scalc/ui/notebookbar.ui:5906
 msgctxt "CalcNotebookbar|InsertLabel"
 msgid "~Insert"
 msgstr "插入(~I)"
 
-#: sc/uiconfig/scalc/ui/notebookbar.ui:5681
+#: sc/uiconfig/scalc/ui/notebookbar.ui:5936
 msgctxt "CalcNotebookbar|reviewb"
 msgid "_Layout"
 msgstr "布局(_L)"
 
-#: sc/uiconfig/scalc/ui/notebookbar.ui:6233
+#: sc/uiconfig/scalc/ui/notebookbar.ui:6410
+#: sc/uiconfig/scalc/ui/notebookbar.ui:6437
+#: sc/uiconfig/scalc/ui/notebookbar.ui:6876
 msgctxt "CalcNotebookbar|objectalign|tooltip_text"
 msgid "Object Align"
 msgstr "对象对齐"
 
-#: sc/uiconfig/scalc/ui/notebookbar.ui:6435
+#: sc/uiconfig/scalc/ui/notebookbar.ui:7094
 msgctxt "CalcNotebookbar|PageLayoutLabel"
 msgid "~Layout"
 msgstr "布局(~L)"
 
-#: sc/uiconfig/scalc/ui/notebookbar.ui:7419
+#: sc/uiconfig/scalc/ui/notebookbar.ui:8077
 msgctxt "CalcNotebookbar|Statistics"
 msgid "_Statistics"
 msgstr "统计(_S)"
 
-#: sc/uiconfig/scalc/ui/notebookbar.ui:7470
+#: sc/uiconfig/scalc/ui/notebookbar.ui:8128
 msgctxt "CalcNotebookbar|DataMenuButton"
 msgid "_Data"
 msgstr "数据(_D)"
 
-#: sc/uiconfig/scalc/ui/notebookbar.ui:7579
+#: sc/uiconfig/scalc/ui/notebookbar.ui:8237
 msgctxt "CalcNotebookbar|DataLabel"
 msgid "~Data"
 msgstr "数据(~D)"
 
-#: sc/uiconfig/scalc/ui/notebookbar.ui:8244
+#: sc/uiconfig/scalc/ui/notebookbar.ui:9001
 msgctxt "CalcNotebookbar|ReviewMenuButton"
 msgid "_Review"
 msgstr "审阅(_R)"
 
-#: sc/uiconfig/scalc/ui/notebookbar.ui:8330
+#: sc/uiconfig/scalc/ui/notebookbar.ui:9087
 msgctxt "CalcNotebookbar|ReviewLabel"
 msgid "~Review"
 msgstr "审阅(~R)"
 
-#: sc/uiconfig/scalc/ui/notebookbar.ui:9121
+#: sc/uiconfig/scalc/ui/notebookbar.ui:9877
 msgctxt "CalcNotebookbar|ViewMenuButton"
 msgid "_View"
 msgstr "视图(_V)"
 
-#: sc/uiconfig/scalc/ui/notebookbar.ui:9207
+#: sc/uiconfig/scalc/ui/notebookbar.ui:9963
 msgctxt "CalcNotebookbar|ViewLabel"
 msgid "~View"
 msgstr "视图(~V)"
 
-#: sc/uiconfig/scalc/ui/notebookbar.ui:9235
+#: sc/uiconfig/scalc/ui/notebookbar.ui:9991
 msgctxt "CalcNotebookbar|GraphicMenuButton"
 msgid "Ima_ge"
 msgstr "图像(_G)"
 
-#: sc/uiconfig/scalc/ui/notebookbar.ui:10313
+#: sc/uiconfig/scalc/ui/notebookbar.ui:11068
 msgctxt "CalcNotebookbar|ImageLabel"
 msgid "Ima~ge"
 msgstr "图像(~G)"
 
-#: sc/uiconfig/scalc/ui/notebookbar.ui:11421
+#: sc/uiconfig/scalc/ui/notebookbar.ui:12175
 msgctxt "CalcNotebookbar|DrawMenuButton"
 msgid "_Draw"
 msgstr "绘制(_D)"
 
-#: sc/uiconfig/scalc/ui/notebookbar.ui:11531
+#: sc/uiconfig/scalc/ui/notebookbar.ui:12285
 msgctxt "CalcNotebookbar|DrawLabel"
 msgid "~Draw"
 msgstr "绘制(~D)"
 
-#: sc/uiconfig/scalc/ui/notebookbar.ui:12249
+#: sc/uiconfig/scalc/ui/notebookbar.ui:13002
 msgctxt "CalcNotebookbar|frame:MenuDraw"
 msgid "_Object"
 msgstr "对象(_O)"
 
-#: sc/uiconfig/scalc/ui/notebookbar.ui:12359
+#: sc/uiconfig/scalc/ui/notebookbar.ui:13112
 msgctxt "CalcNotebookbar|FrameLabel"
 msgid "~Object"
 msgstr "对象(~O)"
 
-#: sc/uiconfig/scalc/ui/notebookbar.ui:12868
+#: sc/uiconfig/scalc/ui/notebookbar.ui:13620
 msgctxt "CalcNotebookbar|MediaMenuButton"
 msgid "_Media"
 msgstr "媒体(_M)"
 
-#: sc/uiconfig/scalc/ui/notebookbar.ui:12951
+#: sc/uiconfig/scalc/ui/notebookbar.ui:13703
 msgctxt "CalcNotebookbar|MediaLabel"
 msgid "~Media"
 msgstr "媒体(~M)"
 
-#: sc/uiconfig/scalc/ui/notebookbar.ui:13349
+#: sc/uiconfig/scalc/ui/notebookbar.ui:14101
 msgctxt "CalcNotebookbar|PrintMenuButton"
 msgid "_Print"
 msgstr "打印(_P)"
 
-#: sc/uiconfig/scalc/ui/notebookbar.ui:13433
+#: sc/uiconfig/scalc/ui/notebookbar.ui:14185
 msgctxt "CalcNotebookbar|PrintLabel"
 msgid "~Print"
 msgstr "打印(~P)"
 
-#: sc/uiconfig/scalc/ui/notebookbar.ui:13464
+#: sc/uiconfig/scalc/ui/notebookbar.ui:14216
 msgctxt "CalcNotebookbar|FormMenuButton"
 msgid "Fo_rm"
 msgstr "表单(_R)"
 
-#: sc/uiconfig/scalc/ui/notebookbar.ui:14258
+#: sc/uiconfig/scalc/ui/notebookbar.ui:15009
 msgctxt "CalcNotebookbar|FormLabel"
 msgid "Fo~rm"
 msgstr "表单(~R)"
 
-#: sc/uiconfig/scalc/ui/notebookbar.ui:14289
+#: sc/uiconfig/scalc/ui/notebookbar.ui:15040
 msgctxt "CalcNotebookbar|ToolsMenuButton"
 msgid "_Tools"
 msgstr "工具(_T)"
 
-#: sc/uiconfig/scalc/ui/notebookbar.ui:15417
+#: sc/uiconfig/scalc/ui/notebookbar.ui:16334
 msgctxt "CalcNotebookbar|DevLabel"
 msgid "~Tools"
 msgstr "工具(~T)"
@@ -21585,17 +21557,27 @@ msgctxt "searchresults|SearchResultsDialog"
 msgid "Search Results"
 msgstr "搜索结果"
 
-#: sc/uiconfig/scalc/ui/searchresults.ui:83
+#: sc/uiconfig/scalc/ui/searchresults.ui:36
+msgctxt "searchresults|ShowBox"
+msgid "_Show this dialog"
+msgstr "显示本对话框(_S)"
+
+#: sc/uiconfig/scalc/ui/searchresults.ui:40
+msgctxt "searchresults|ShowBox"
+msgid "Enable the dialog again at Tools > Options > Calc > View"
+msgstr "可在「工具 > 选项 > Calc > 视图」再次启用此对话框"
+
+#: sc/uiconfig/scalc/ui/searchresults.ui:102
 msgctxt "searchresults|sheet"
 msgid "Sheet"
 msgstr "工作表"
 
-#: sc/uiconfig/scalc/ui/searchresults.ui:96
+#: sc/uiconfig/scalc/ui/searchresults.ui:115
 msgctxt "searchresults|cell"
 msgid "Cell"
 msgstr "单元格"
 
-#: sc/uiconfig/scalc/ui/searchresults.ui:109
+#: sc/uiconfig/scalc/ui/searchresults.ui:128
 msgctxt "searchresults|content"
 msgid "Content"
 msgstr "内容"
@@ -23465,107 +23447,112 @@ msgctxt "tpviewpage|outline"
 msgid "_Outline symbols"
 msgstr "大纲符号(_O)"
 
-#: sc/uiconfig/scalc/ui/tpviewpage.ui:289
+#: sc/uiconfig/scalc/ui/tpviewpage.ui:283
+msgctxt "tpviewpage|summary"
+msgid "Summary o_n search"
+msgstr "搜索时显示概要(_N)"
+
+#: sc/uiconfig/scalc/ui/tpviewpage.ui:307
 msgctxt "tpviewpage|label5"
 msgid "Window"
 msgstr "窗口"
 
-#: sc/uiconfig/scalc/ui/tpviewpage.ui:365
+#: sc/uiconfig/scalc/ui/tpviewpage.ui:383
 msgctxt "tpviewpage|grid_label"
 msgid "_Grid lines:"
 msgstr "网格线(_G):"
 
-#: sc/uiconfig/scalc/ui/tpviewpage.ui:382
+#: sc/uiconfig/scalc/ui/tpviewpage.ui:400
 msgctxt "tpviewpage|color_label"
 msgid "_Color:"
 msgstr "颜色(_C):"
 
-#: sc/uiconfig/scalc/ui/tpviewpage.ui:399
+#: sc/uiconfig/scalc/ui/tpviewpage.ui:417
 msgctxt "tpviewpage|grid"
 msgid "Show"
 msgstr "显示"
 
-#: sc/uiconfig/scalc/ui/tpviewpage.ui:400
+#: sc/uiconfig/scalc/ui/tpviewpage.ui:418
 msgctxt "tpviewpage|grid"
 msgid "Show on colored cells"
 msgstr "为彩色单元格显示"
 
-#: sc/uiconfig/scalc/ui/tpviewpage.ui:401
+#: sc/uiconfig/scalc/ui/tpviewpage.ui:419
 msgctxt "tpviewpage|grid"
 msgid "Hide"
 msgstr "隐藏"
 
-#: sc/uiconfig/scalc/ui/tpviewpage.ui:421
+#: sc/uiconfig/scalc/ui/tpviewpage.ui:439
 msgctxt "tpviewpage|break"
 msgid "_Page breaks"
 msgstr "分页符(_P)"
 
-#: sc/uiconfig/scalc/ui/tpviewpage.ui:438
+#: sc/uiconfig/scalc/ui/tpviewpage.ui:456
 msgctxt "tpviewpage|guideline"
 msgid "Helplines _while moving"
 msgstr "移动时显示辅助线(_W)"
 
-#: sc/uiconfig/scalc/ui/tpviewpage.ui:461
+#: sc/uiconfig/scalc/ui/tpviewpage.ui:479
 msgctxt "tpviewpage|label1"
 msgid "Visual Aids"
 msgstr "视觉辅助"
 
-#: sc/uiconfig/scalc/ui/tpviewpage.ui:500
+#: sc/uiconfig/scalc/ui/tpviewpage.ui:518
 msgctxt "tpviewpage|objgrf_label"
 msgid "Ob_jects/Images:"
 msgstr "对象/图像 (_J):"
 
-#: sc/uiconfig/scalc/ui/tpviewpage.ui:516
+#: sc/uiconfig/scalc/ui/tpviewpage.ui:534
 msgctxt "tpviewpage|diagram_label"
 msgid "Cha_rts:"
 msgstr "图表(R):"
 
-#: sc/uiconfig/scalc/ui/tpviewpage.ui:532
+#: sc/uiconfig/scalc/ui/tpviewpage.ui:550
 msgctxt "tpviewpage|draw_label"
 msgid "_Drawing objects:"
 msgstr "绘图对象(_D):"
 
-#: sc/uiconfig/scalc/ui/tpviewpage.ui:548
+#: sc/uiconfig/scalc/ui/tpviewpage.ui:566
 msgctxt "tpviewpage|objgrf"
 msgid "Show"
 msgstr "显示"
 
-#: sc/uiconfig/scalc/ui/tpviewpage.ui:549
+#: sc/uiconfig/scalc/ui/tpviewpage.ui:567
 msgctxt "tpviewpage|objgrf"
 msgid "Hide"
 msgstr "隐藏"
 
-#: sc/uiconfig/scalc/ui/tpviewpage.ui:564
+#: sc/uiconfig/scalc/ui/tpviewpage.ui:582
 msgctxt "tpviewpage|diagram"
 msgid "Show"
 msgstr "显示"
 
-#: sc/uiconfig/scalc/ui/tpviewpage.ui:565
+#: sc/uiconfig/scalc/ui/tpviewpage.ui:583
 msgctxt "tpviewpage|diagram"
 msgid "Hide"
 msgstr "隐藏"
 
-#: sc/uiconfig/scalc/ui/tpviewpage.ui:580
+#: sc/uiconfig/scalc/ui/tpviewpage.ui:598
 msgctxt "tpviewpage|draw"
 msgid "Show"
 msgstr "显示"
-
-#: sc/uiconfig/scalc/ui/tpviewpage.ui:581
-msgctxt "tpviewpage|draw"
-msgid "Hide"
-msgstr "隐藏"
 
 #: sc/uiconfig/scalc/ui/tpviewpage.ui:599
+msgctxt "tpviewpage|draw"
+msgid "Hide"
+msgstr "隐藏"
+
+#: sc/uiconfig/scalc/ui/tpviewpage.ui:617
 msgctxt "tpviewpage|label2"
 msgid "Objects"
 msgstr "对象"
 
-#: sc/uiconfig/scalc/ui/tpviewpage.ui:629
+#: sc/uiconfig/scalc/ui/tpviewpage.ui:647
 msgctxt "tpviewpage|synczoom"
 msgid "S_ynchronize sheets"
 msgstr "同步工作表(_Y)"
 
-#: sc/uiconfig/scalc/ui/tpviewpage.ui:644
+#: sc/uiconfig/scalc/ui/tpviewpage.ui:662
 msgctxt "tpviewpage|label3"
 msgid "Zoom"
 msgstr "缩放"
@@ -23608,7 +23595,7 @@ msgstr "分组"
 #: sc/uiconfig/scalc/ui/ungroupdialog.ui:8
 msgctxt "ungroupdialog|UngroupDialog"
 msgid "Ungroup"
-msgstr "解除组合"
+msgstr "取消组合"
 
 #: sc/uiconfig/scalc/ui/ungroupdialog.ui:100
 msgctxt "ungroupdialog|rows"

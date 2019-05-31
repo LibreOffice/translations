@@ -3,9 +3,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2019-05-12 17:47+0200\n"
-"PO-Revision-Date: 2019-04-23 14:08+0000\n"
-"Last-Translator: Miloš Šrámek <msramek22@gmail.com>\n"
+"POT-Creation-Date: 2019-05-31 14:54+0200\n"
+"PO-Revision-Date: 2019-05-13 13:55+0000\n"
+"Last-Translator: aasami <aasami@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: sk\n"
 "MIME-Version: 1.0\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 "X-Accelerator-Marker: ~\n"
 "X-Generator: LibreOffice\n"
-"X-POOTLE-MTIME: 1556028493.000000\n"
+"X-POOTLE-MTIME: 1557755725.000000\n"
 
 #: sc/inc/compiler.hrc:27
 msgctxt "RID_FUNCTION_CATEGORIES"
@@ -14352,7 +14352,7 @@ msgstr "Zrušiť"
 #: sc/inc/strings.hrc:180
 msgctxt "SCSTR_QHELP_BTNSUM"
 msgid "Autosum"
-msgstr ""
+msgstr "Automatický súčet"
 
 #: sc/inc/strings.hrc:181
 msgctxt "SCSTR_QHELP_BTNEQUAL"
@@ -15221,6 +15221,11 @@ msgctxt "sharedocumentdlg|exclusive"
 msgid "(exclusive access)"
 msgstr "(exkluzívny prístup)"
 
+#: sc/inc/strings.hrc:373
+msgctxt "STR_NO_NAMED_RANGES_AVAILABLE"
+msgid "No named ranges available in the selected document"
+msgstr ""
+
 #: sc/inc/subtotals.hrc:27
 msgctxt "subtotalgrppage|liststore1"
 msgid "Sum"
@@ -15574,27 +15579,27 @@ msgstr "Formátovanie"
 #: sc/uiconfig/scalc/ui/autosum.ui:12
 msgctxt "autosum|sum"
 msgid "Sum"
-msgstr ""
+msgstr "Súčet"
 
 #: sc/uiconfig/scalc/ui/autosum.ui:20
 msgctxt "autosum|average"
 msgid "Average"
-msgstr ""
+msgstr "Priemer"
 
 #: sc/uiconfig/scalc/ui/autosum.ui:28
 msgctxt "autosum|min"
 msgid "Min"
-msgstr ""
+msgstr "Minimim"
 
 #: sc/uiconfig/scalc/ui/autosum.ui:36
 msgctxt "autosum|max"
 msgid "Max"
-msgstr ""
+msgstr "Maximum"
 
 #: sc/uiconfig/scalc/ui/autosum.ui:44
 msgctxt "autosum|count"
 msgid "Count"
-msgstr ""
+msgstr "Počet"
 
 #: sc/uiconfig/scalc/ui/cellprotectionpage.ui:35
 msgctxt "cellprotectionpage|checkProtected"
@@ -15774,12 +15779,12 @@ msgstr "Spravovať podmienené formátovanie"
 
 #: sc/uiconfig/scalc/ui/condformatmanager.ui:136
 msgctxt "condformatmanager|STR_HEADER_RANGE"
-msgid "First Condition"
-msgstr ""
+msgid "Range"
+msgstr "Oblasť"
 
 #: sc/uiconfig/scalc/ui/condformatmanager.ui:149
-msgctxt "condformatmanager|STR_HEADER_RANGE"
-msgid "Range"
+msgctxt "condformatmanager|STR_HEADER_FIRST_CONDITION"
+msgid "First Condition"
 msgstr ""
 
 #: sc/uiconfig/scalc/ui/condformatmanager.ui:175
@@ -16345,22 +16350,22 @@ msgstr "V tomto spoločne upravovanom zošite sa nachádzajú konfliktné zmeny.
 #: sc/uiconfig/scalc/ui/conflictsdialog.ui:147
 msgctxt "conflictsdialog|conflict"
 msgid "Conflict"
-msgstr ""
+msgstr "Konflikt"
 
 #: sc/uiconfig/scalc/ui/conflictsdialog.ui:161
 msgctxt "conflictsdialog|author"
 msgid "Author"
-msgstr ""
+msgstr "Autor"
 
 #: sc/uiconfig/scalc/ui/conflictsdialog.ui:175
 msgctxt "conflictsdialog|date"
 msgid "Date"
-msgstr ""
+msgstr "Dátum"
 
 #: sc/uiconfig/scalc/ui/conflictsdialog.ui:189
 msgctxt "conflictsdialog|changes-atkobject"
 msgid "Changes"
-msgstr ""
+msgstr "Zmeny"
 
 #: sc/uiconfig/scalc/ui/conflictsdialog.ui:207
 msgctxt "conflictsdialog|keepmine"
@@ -16997,80 +17002,40 @@ msgctxt "dataform|DataFormDialog"
 msgid "Data Form"
 msgstr "Formulár"
 
-#: sc/uiconfig/scalc/ui/dataform.ui:25
-msgctxt "dataform|label"
-msgid "New Record"
-msgstr "Nový záznam"
-
-#: sc/uiconfig/scalc/ui/dataform.ui:35
-msgctxt "dataform|new"
-msgid "_New"
-msgstr "_Nový"
-
-#: sc/uiconfig/scalc/ui/dataform.ui:51
-msgctxt "dataform|delete"
-msgid "_Delete"
-msgstr "_Odstrániť"
-
-#: sc/uiconfig/scalc/ui/dataform.ui:65
-msgctxt "dataform|restore"
-msgid "_Restore"
-msgstr "_Obnoviť"
-
-#: sc/uiconfig/scalc/ui/dataform.ui:79
-msgctxt "dataform|prev"
-msgid "_Previous Record"
-msgstr "_Predchádzajúci záznam"
-
-#: sc/uiconfig/scalc/ui/dataform.ui:94
-msgctxt "dataform|next"
-msgid "Ne_xt Record"
-msgstr "Ďalší _záznam"
-
-#: sc/uiconfig/scalc/ui/dataform.ui:124
+#: sc/uiconfig/scalc/ui/dataform.ui:40
 msgctxt "dataform|close"
 msgid "_Close"
 msgstr "_Zatvoriť"
 
-#: sc/uiconfig/scalc/ui/dataprovider.ui:9
-msgctxt "dataprovider|DataStreamDialog"
-msgid "Live Data Streams"
-msgstr "Živé prúdy údajov"
+#: sc/uiconfig/scalc/ui/dataform.ui:167
+msgctxt "dataform|label"
+msgid "New Record"
+msgstr "Nový záznam"
 
-#: sc/uiconfig/scalc/ui/dataprovider.ui:107
-msgctxt "dataprovider|label6"
-msgid "URL:"
-msgstr "URL:"
+#: sc/uiconfig/scalc/ui/dataform.ui:178
+msgctxt "dataform|new"
+msgid "_New"
+msgstr "_Nový"
 
-#: sc/uiconfig/scalc/ui/dataprovider.ui:122
-msgctxt "dataprovider|url|tooltip_text"
-msgid "Enter the URL of the source document in the local file system or Internet here."
-msgstr "Sem zadajte URL zdrojového dokumentu v lokálnom systéme alebo na internete."
+#: sc/uiconfig/scalc/ui/dataform.ui:194
+msgctxt "dataform|delete"
+msgid "_Delete"
+msgstr "_Odstrániť"
 
-#: sc/uiconfig/scalc/ui/dataprovider.ui:140
-msgctxt "dataprovider|browse"
-msgid "_Browse..."
-msgstr "_Prehľadávať..."
+#: sc/uiconfig/scalc/ui/dataform.ui:208
+msgctxt "dataform|restore"
+msgid "_Restore"
+msgstr "_Obnoviť"
 
-#: sc/uiconfig/scalc/ui/dataprovider.ui:167
-msgctxt "dataprovider|label_db"
-msgid "Database Range:"
-msgstr "Databázová oblasť:"
+#: sc/uiconfig/scalc/ui/dataform.ui:222
+msgctxt "dataform|prev"
+msgid "_Previous Record"
+msgstr "_Predchádzajúci záznam"
 
-#: sc/uiconfig/scalc/ui/dataprovider.ui:203
-msgctxt "dataprovider|label_provider"
-msgid "Data Provider:"
-msgstr "Zdroj dát:"
-
-#: sc/uiconfig/scalc/ui/dataprovider.ui:240
-msgctxt "dataprovider|label_search"
-msgid "Search String:"
-msgstr "Vyhľadávaný reťazec:"
-
-#: sc/uiconfig/scalc/ui/dataprovider.ui:276
-msgctxt "dataprovider|label"
-msgid "Source Stream"
-msgstr "Zdrojový prúd"
+#: sc/uiconfig/scalc/ui/dataform.ui:237
+msgctxt "dataform|next"
+msgid "Ne_xt Record"
+msgstr "Ďalší _záznam"
 
 #: sc/uiconfig/scalc/ui/dataproviderdlg.ui:36
 msgctxt "dataproviderdlg|db_name"
@@ -18600,17 +18565,17 @@ msgstr "Spravovať názvy"
 #: sc/uiconfig/scalc/ui/managenamesdialog.ui:127
 msgctxt "managenamesdialog|name"
 msgid "Name"
-msgstr ""
+msgstr "Názov"
 
 #: sc/uiconfig/scalc/ui/managenamesdialog.ui:140
 msgctxt "managenamesdialog|expression"
 msgid "Range or formula expression"
-msgstr ""
+msgstr "Oblasť alebo vzorec"
 
 #: sc/uiconfig/scalc/ui/managenamesdialog.ui:153
 msgctxt "managenamesdialog|scope"
 msgid "Scope"
-msgstr ""
+msgstr "Rozsah"
 
 #: sc/uiconfig/scalc/ui/managenamesdialog.ui:183
 msgctxt "managenamesdialog|info"
@@ -18787,32 +18752,37 @@ msgctxt "movingaveragedialog|output-range-label"
 msgid "Results to:"
 msgstr "Výsledky do:"
 
-#: sc/uiconfig/scalc/ui/movingaveragedialog.ui:193
+#: sc/uiconfig/scalc/ui/movingaveragedialog.ui:187
+msgctxt "movingaveragedialog|trimrange-check"
+msgid "Trim input range to actual data content"
+msgstr ""
+
+#: sc/uiconfig/scalc/ui/movingaveragedialog.ui:211
 msgctxt "movingaveragedialog|label3"
 msgid "Data"
 msgstr "Údaje"
 
-#: sc/uiconfig/scalc/ui/movingaveragedialog.ui:228
+#: sc/uiconfig/scalc/ui/movingaveragedialog.ui:246
 msgctxt "movingaveragedialog|groupedby-columns-radio"
 msgid "Columns"
 msgstr "Stĺpce"
 
-#: sc/uiconfig/scalc/ui/movingaveragedialog.ui:244
+#: sc/uiconfig/scalc/ui/movingaveragedialog.ui:262
 msgctxt "movingaveragedialog|groupedby-rows-radio"
 msgid "Rows"
 msgstr "Riadky"
 
-#: sc/uiconfig/scalc/ui/movingaveragedialog.ui:266
+#: sc/uiconfig/scalc/ui/movingaveragedialog.ui:284
 msgctxt "movingaveragedialog|label2"
 msgid "Grouped by"
 msgstr "Zoskupené podľa"
 
-#: sc/uiconfig/scalc/ui/movingaveragedialog.ui:303
+#: sc/uiconfig/scalc/ui/movingaveragedialog.ui:321
 msgctxt "movingaveragedialog|interval-label"
 msgid "Interval:"
 msgstr "Interval:"
 
-#: sc/uiconfig/scalc/ui/movingaveragedialog.ui:334
+#: sc/uiconfig/scalc/ui/movingaveragedialog.ui:352
 msgctxt "movingaveragedialog|label1"
 msgid "Parameters"
 msgstr "Parametre"
@@ -18952,167 +18922,169 @@ msgctxt "CalcNotebookbar|HelpMenuButton"
 msgid "_Help"
 msgstr "_Pomocník"
 
-#: sc/uiconfig/scalc/ui/notebookbar.ui:2892
+#: sc/uiconfig/scalc/ui/notebookbar.ui:2975
 msgctxt "CalcNotebookbar|FileLabel"
 msgid "~File"
 msgstr "~Súbor"
 
-#: sc/uiconfig/scalc/ui/notebookbar.ui:3354
+#: sc/uiconfig/scalc/ui/notebookbar.ui:3436
 msgctxt "CalcNotebookbar|bordertype|tooltip_text"
 msgid "Specify the borders of the selected cells."
 msgstr "Určiť orámovanie vybraných buniek."
 
-#: sc/uiconfig/scalc/ui/notebookbar.ui:3537
+#: sc/uiconfig/scalc/ui/notebookbar.ui:3619
 msgctxt "CalcNotebookbar|increaseindent1|tooltip_text"
 msgid "Increase Indent"
 msgstr "Zväčšiť odsadenie"
 
-#: sc/uiconfig/scalc/ui/notebookbar.ui:3552
+#: sc/uiconfig/scalc/ui/notebookbar.ui:3634
 msgctxt "CalcNotebookbar|decreaseindent1|tooltip_text"
 msgid "Decrease Indent"
 msgstr "Zmenšiť odsadenie"
 
-#: sc/uiconfig/scalc/ui/notebookbar.ui:4527
+#: sc/uiconfig/scalc/ui/notebookbar.ui:4609
 msgctxt "CalcNotebookbar|HomeMenuButton"
 msgid "_Home"
 msgstr "_Domov"
 
-#: sc/uiconfig/scalc/ui/notebookbar.ui:4636
+#: sc/uiconfig/scalc/ui/notebookbar.ui:4718
 msgctxt "CalcNotebookbar|CalcLabel"
 msgid "~Home"
 msgstr "~Domov"
 
-#: sc/uiconfig/scalc/ui/notebookbar.ui:5051
+#: sc/uiconfig/scalc/ui/notebookbar.ui:5277
 msgctxt "CalcNotebookbar|FieldMenuButton"
 msgid "Fiel_d"
 msgstr "_Pole"
 
-#: sc/uiconfig/scalc/ui/notebookbar.ui:5565
+#: sc/uiconfig/scalc/ui/notebookbar.ui:5798
 msgctxt "CalcNotebookbar|InsertMenuButton"
 msgid "_Insert"
 msgstr "_Vložiť"
 
-#: sc/uiconfig/scalc/ui/notebookbar.ui:5651
+#: sc/uiconfig/scalc/ui/notebookbar.ui:5906
 msgctxt "CalcNotebookbar|InsertLabel"
 msgid "~Insert"
 msgstr "Vlož~iť"
 
-#: sc/uiconfig/scalc/ui/notebookbar.ui:5681
+#: sc/uiconfig/scalc/ui/notebookbar.ui:5936
 msgctxt "CalcNotebookbar|reviewb"
 msgid "_Layout"
 msgstr "Roz~loženie"
 
-#: sc/uiconfig/scalc/ui/notebookbar.ui:6233
+#: sc/uiconfig/scalc/ui/notebookbar.ui:6410
+#: sc/uiconfig/scalc/ui/notebookbar.ui:6437
+#: sc/uiconfig/scalc/ui/notebookbar.ui:6876
 msgctxt "CalcNotebookbar|objectalign|tooltip_text"
 msgid "Object Align"
 msgstr "Zarovnanie objektu"
 
-#: sc/uiconfig/scalc/ui/notebookbar.ui:6435
+#: sc/uiconfig/scalc/ui/notebookbar.ui:7094
 msgctxt "CalcNotebookbar|PageLayoutLabel"
 msgid "~Layout"
 msgstr "Roz~loženie"
 
-#: sc/uiconfig/scalc/ui/notebookbar.ui:7419
+#: sc/uiconfig/scalc/ui/notebookbar.ui:8077
 msgctxt "CalcNotebookbar|Statistics"
 msgid "_Statistics"
 msgstr "Š_tatistika"
 
-#: sc/uiconfig/scalc/ui/notebookbar.ui:7470
+#: sc/uiconfig/scalc/ui/notebookbar.ui:8128
 msgctxt "CalcNotebookbar|DataMenuButton"
 msgid "_Data"
 msgstr "_Dáta"
 
-#: sc/uiconfig/scalc/ui/notebookbar.ui:7579
+#: sc/uiconfig/scalc/ui/notebookbar.ui:8237
 msgctxt "CalcNotebookbar|DataLabel"
 msgid "~Data"
 msgstr "~Dáta"
 
-#: sc/uiconfig/scalc/ui/notebookbar.ui:8244
+#: sc/uiconfig/scalc/ui/notebookbar.ui:9001
 msgctxt "CalcNotebookbar|ReviewMenuButton"
 msgid "_Review"
 msgstr "_Revízia"
 
-#: sc/uiconfig/scalc/ui/notebookbar.ui:8330
+#: sc/uiconfig/scalc/ui/notebookbar.ui:9087
 msgctxt "CalcNotebookbar|ReviewLabel"
 msgid "~Review"
 msgstr "_Revízia"
 
-#: sc/uiconfig/scalc/ui/notebookbar.ui:9121
+#: sc/uiconfig/scalc/ui/notebookbar.ui:9877
 msgctxt "CalcNotebookbar|ViewMenuButton"
 msgid "_View"
 msgstr "_Zobraziť"
 
-#: sc/uiconfig/scalc/ui/notebookbar.ui:9207
+#: sc/uiconfig/scalc/ui/notebookbar.ui:9963
 msgctxt "CalcNotebookbar|ViewLabel"
 msgid "~View"
 msgstr "~Zobraziť"
 
-#: sc/uiconfig/scalc/ui/notebookbar.ui:9235
+#: sc/uiconfig/scalc/ui/notebookbar.ui:9991
 msgctxt "CalcNotebookbar|GraphicMenuButton"
 msgid "Ima_ge"
 msgstr "O_brázok"
 
-#: sc/uiconfig/scalc/ui/notebookbar.ui:10313
+#: sc/uiconfig/scalc/ui/notebookbar.ui:11068
 msgctxt "CalcNotebookbar|ImageLabel"
 msgid "Ima~ge"
 msgstr "O~brázok"
 
-#: sc/uiconfig/scalc/ui/notebookbar.ui:11421
+#: sc/uiconfig/scalc/ui/notebookbar.ui:12175
 msgctxt "CalcNotebookbar|DrawMenuButton"
 msgid "_Draw"
 msgstr "_Kresba"
 
-#: sc/uiconfig/scalc/ui/notebookbar.ui:11531
+#: sc/uiconfig/scalc/ui/notebookbar.ui:12285
 msgctxt "CalcNotebookbar|DrawLabel"
 msgid "~Draw"
 msgstr "~Kresba"
 
-#: sc/uiconfig/scalc/ui/notebookbar.ui:12249
+#: sc/uiconfig/scalc/ui/notebookbar.ui:13002
 msgctxt "CalcNotebookbar|frame:MenuDraw"
 msgid "_Object"
 msgstr "_Objekt"
 
-#: sc/uiconfig/scalc/ui/notebookbar.ui:12359
+#: sc/uiconfig/scalc/ui/notebookbar.ui:13112
 msgctxt "CalcNotebookbar|FrameLabel"
 msgid "~Object"
 msgstr "~Objekt"
 
-#: sc/uiconfig/scalc/ui/notebookbar.ui:12868
+#: sc/uiconfig/scalc/ui/notebookbar.ui:13620
 msgctxt "CalcNotebookbar|MediaMenuButton"
 msgid "_Media"
 msgstr "_Multimédiá"
 
-#: sc/uiconfig/scalc/ui/notebookbar.ui:12951
+#: sc/uiconfig/scalc/ui/notebookbar.ui:13703
 msgctxt "CalcNotebookbar|MediaLabel"
 msgid "~Media"
 msgstr "~Médiá"
 
-#: sc/uiconfig/scalc/ui/notebookbar.ui:13349
+#: sc/uiconfig/scalc/ui/notebookbar.ui:14101
 msgctxt "CalcNotebookbar|PrintMenuButton"
 msgid "_Print"
 msgstr "_Tlačiť"
 
-#: sc/uiconfig/scalc/ui/notebookbar.ui:13433
+#: sc/uiconfig/scalc/ui/notebookbar.ui:14185
 msgctxt "CalcNotebookbar|PrintLabel"
 msgid "~Print"
 msgstr "~Tlačiť"
 
-#: sc/uiconfig/scalc/ui/notebookbar.ui:13464
+#: sc/uiconfig/scalc/ui/notebookbar.ui:14216
 msgctxt "CalcNotebookbar|FormMenuButton"
 msgid "Fo_rm"
 msgstr "Fo_rmulár"
 
-#: sc/uiconfig/scalc/ui/notebookbar.ui:14258
+#: sc/uiconfig/scalc/ui/notebookbar.ui:15009
 msgctxt "CalcNotebookbar|FormLabel"
 msgid "Fo~rm"
 msgstr "Fo~rmulár"
 
-#: sc/uiconfig/scalc/ui/notebookbar.ui:14289
+#: sc/uiconfig/scalc/ui/notebookbar.ui:15040
 msgctxt "CalcNotebookbar|ToolsMenuButton"
 msgid "_Tools"
 msgstr "_Nástroje"
 
-#: sc/uiconfig/scalc/ui/notebookbar.ui:15417
+#: sc/uiconfig/scalc/ui/notebookbar.ui:16334
 msgctxt "CalcNotebookbar|DevLabel"
 msgid "~Tools"
 msgstr "~Nástroje"
@@ -21593,17 +21565,27 @@ msgctxt "searchresults|SearchResultsDialog"
 msgid "Search Results"
 msgstr "Výsledky vyhľadávania"
 
-#: sc/uiconfig/scalc/ui/searchresults.ui:83
+#: sc/uiconfig/scalc/ui/searchresults.ui:36
+msgctxt "searchresults|ShowBox"
+msgid "_Show this dialog"
+msgstr ""
+
+#: sc/uiconfig/scalc/ui/searchresults.ui:40
+msgctxt "searchresults|ShowBox"
+msgid "Enable the dialog again at Tools > Options > Calc > View"
+msgstr ""
+
+#: sc/uiconfig/scalc/ui/searchresults.ui:102
 msgctxt "searchresults|sheet"
 msgid "Sheet"
 msgstr "Hárok"
 
-#: sc/uiconfig/scalc/ui/searchresults.ui:96
+#: sc/uiconfig/scalc/ui/searchresults.ui:115
 msgctxt "searchresults|cell"
 msgid "Cell"
 msgstr "Bunka"
 
-#: sc/uiconfig/scalc/ui/searchresults.ui:109
+#: sc/uiconfig/scalc/ui/searchresults.ui:128
 msgctxt "searchresults|content"
 msgid "Content"
 msgstr "Obsah"
@@ -23473,107 +23455,112 @@ msgctxt "tpviewpage|outline"
 msgid "_Outline symbols"
 msgstr "Symboly _osnovy"
 
-#: sc/uiconfig/scalc/ui/tpviewpage.ui:289
+#: sc/uiconfig/scalc/ui/tpviewpage.ui:283
+msgctxt "tpviewpage|summary"
+msgid "Summary o_n search"
+msgstr ""
+
+#: sc/uiconfig/scalc/ui/tpviewpage.ui:307
 msgctxt "tpviewpage|label5"
 msgid "Window"
 msgstr "Okno"
 
-#: sc/uiconfig/scalc/ui/tpviewpage.ui:365
+#: sc/uiconfig/scalc/ui/tpviewpage.ui:383
 msgctxt "tpviewpage|grid_label"
 msgid "_Grid lines:"
 msgstr "Č_iary mriežky"
 
-#: sc/uiconfig/scalc/ui/tpviewpage.ui:382
+#: sc/uiconfig/scalc/ui/tpviewpage.ui:400
 msgctxt "tpviewpage|color_label"
 msgid "_Color:"
 msgstr "_Farba:"
 
-#: sc/uiconfig/scalc/ui/tpviewpage.ui:399
+#: sc/uiconfig/scalc/ui/tpviewpage.ui:417
 msgctxt "tpviewpage|grid"
 msgid "Show"
 msgstr "Zobraziť"
 
-#: sc/uiconfig/scalc/ui/tpviewpage.ui:400
+#: sc/uiconfig/scalc/ui/tpviewpage.ui:418
 msgctxt "tpviewpage|grid"
 msgid "Show on colored cells"
 msgstr "Ukázať vo farebných bunkách"
 
-#: sc/uiconfig/scalc/ui/tpviewpage.ui:401
+#: sc/uiconfig/scalc/ui/tpviewpage.ui:419
 msgctxt "tpviewpage|grid"
 msgid "Hide"
 msgstr "Skryť"
 
-#: sc/uiconfig/scalc/ui/tpviewpage.ui:421
+#: sc/uiconfig/scalc/ui/tpviewpage.ui:439
 msgctxt "tpviewpage|break"
 msgid "_Page breaks"
 msgstr "_Zalomenia strany"
 
-#: sc/uiconfig/scalc/ui/tpviewpage.ui:438
+#: sc/uiconfig/scalc/ui/tpviewpage.ui:456
 msgctxt "tpviewpage|guideline"
 msgid "Helplines _while moving"
 msgstr "Vodiace _čiary pri presúvaní"
 
-#: sc/uiconfig/scalc/ui/tpviewpage.ui:461
+#: sc/uiconfig/scalc/ui/tpviewpage.ui:479
 msgctxt "tpviewpage|label1"
 msgid "Visual Aids"
 msgstr "Visual Aids"
 
-#: sc/uiconfig/scalc/ui/tpviewpage.ui:500
+#: sc/uiconfig/scalc/ui/tpviewpage.ui:518
 msgctxt "tpviewpage|objgrf_label"
 msgid "Ob_jects/Images:"
 msgstr "O_bjekty/obrázky:"
 
-#: sc/uiconfig/scalc/ui/tpviewpage.ui:516
+#: sc/uiconfig/scalc/ui/tpviewpage.ui:534
 msgctxt "tpviewpage|diagram_label"
 msgid "Cha_rts:"
 msgstr "G_rafy:"
 
-#: sc/uiconfig/scalc/ui/tpviewpage.ui:532
+#: sc/uiconfig/scalc/ui/tpviewpage.ui:550
 msgctxt "tpviewpage|draw_label"
 msgid "_Drawing objects:"
 msgstr "Objekty _kresby:"
 
-#: sc/uiconfig/scalc/ui/tpviewpage.ui:548
+#: sc/uiconfig/scalc/ui/tpviewpage.ui:566
 msgctxt "tpviewpage|objgrf"
 msgid "Show"
 msgstr "Zobraziť"
 
-#: sc/uiconfig/scalc/ui/tpviewpage.ui:549
+#: sc/uiconfig/scalc/ui/tpviewpage.ui:567
 msgctxt "tpviewpage|objgrf"
 msgid "Hide"
 msgstr "Skryť"
 
-#: sc/uiconfig/scalc/ui/tpviewpage.ui:564
+#: sc/uiconfig/scalc/ui/tpviewpage.ui:582
 msgctxt "tpviewpage|diagram"
 msgid "Show"
 msgstr "Zobraziť"
 
-#: sc/uiconfig/scalc/ui/tpviewpage.ui:565
+#: sc/uiconfig/scalc/ui/tpviewpage.ui:583
 msgctxt "tpviewpage|diagram"
 msgid "Hide"
 msgstr "Skryť"
 
-#: sc/uiconfig/scalc/ui/tpviewpage.ui:580
+#: sc/uiconfig/scalc/ui/tpviewpage.ui:598
 msgctxt "tpviewpage|draw"
 msgid "Show"
 msgstr "Zobraziť"
-
-#: sc/uiconfig/scalc/ui/tpviewpage.ui:581
-msgctxt "tpviewpage|draw"
-msgid "Hide"
-msgstr "Skryť"
 
 #: sc/uiconfig/scalc/ui/tpviewpage.ui:599
+msgctxt "tpviewpage|draw"
+msgid "Hide"
+msgstr "Skryť"
+
+#: sc/uiconfig/scalc/ui/tpviewpage.ui:617
 msgctxt "tpviewpage|label2"
 msgid "Objects"
 msgstr "Objekty"
 
-#: sc/uiconfig/scalc/ui/tpviewpage.ui:629
+#: sc/uiconfig/scalc/ui/tpviewpage.ui:647
 msgctxt "tpviewpage|synczoom"
 msgid "S_ynchronize sheets"
 msgstr "Synchronizovať hárky"
 
-#: sc/uiconfig/scalc/ui/tpviewpage.ui:644
+#: sc/uiconfig/scalc/ui/tpviewpage.ui:662
 msgctxt "tpviewpage|label3"
 msgid "Zoom"
 msgstr "Zväčšenie "
