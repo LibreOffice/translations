@@ -4,8 +4,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
 "POT-Creation-Date: 2018-09-03 13:23+0200\n"
-"PO-Revision-Date: 2018-09-14 07:04+0000\n"
-"Last-Translator: Mihovil Stanić <mihovil@miho.im>\n"
+"PO-Revision-Date: 2019-07-04 12:21+0000\n"
+"Last-Translator: Milo Ivir <mail@milotype.de>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: hr\n"
 "MIME-Version: 1.0\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 "X-Accelerator-Marker: ~\n"
 "X-Generator: Pootle 2.8\n"
-"X-POOTLE-MTIME: 1536908655.000000\n"
+"X-POOTLE-MTIME: 1562242865.000000\n"
 
 #. = the mozab driver's resource strings
 #: connectivity/inc/strings.hrc:26
@@ -35,7 +35,7 @@ msgstr "Upravljački program ne podržava funkciju 'COUNT'."
 #: connectivity/inc/strings.hrc:29
 msgctxt "STR_STMT_TYPE_NOT_SUPPORTED"
 msgid "This statement type not supported by this database driver."
-msgstr "Ovaj tip naredbe nije podržan ovim pogonskim programom baze podataka."
+msgstr "Ovaj pogonski program baze podataka ne podržava ovu vrstu naredbe."
 
 #: connectivity/inc/strings.hrc:30
 msgctxt "STR_UNSPECIFIED_ERROR"
@@ -45,12 +45,12 @@ msgstr "Dogodila se nepoznata greška."
 #: connectivity/inc/strings.hrc:31
 msgctxt "STR_ERROR_REFRESH_ROW"
 msgid "An error occurred while refreshing the current row."
-msgstr "Dogodila se greška tijekom obnavljanja trenutnog retka."
+msgstr "Dogodila se greška tijekom aktualiziranja trenutačnog retka."
 
 #: connectivity/inc/strings.hrc:32
 msgctxt "STR_ERROR_GET_ROW"
 msgid "An error occurred while getting the current row."
-msgstr "Dogodila se greška tijekom preuzimanja trenutnog retka."
+msgstr "Dogodila se greška tijekom preuzimanja trenutačnog retka."
 
 #: connectivity/inc/strings.hrc:33
 msgctxt "STR_QUERY_INVALID_IS_NULL_COLUMN"
@@ -76,7 +76,7 @@ msgstr "Ne postoji veza prema bazi podataka."
 #: connectivity/inc/strings.hrc:38
 msgctxt "STR_WRONG_PARAM_INDEX"
 msgid "You tried to set a parameter at position '$pos$' but there is/are only '$count$' parameter(s) allowed. One reason may be that the property \"ParameterNameSubstitution\" is not set to TRUE in the data source."
-msgstr "Pokušali ste postaviti parametar na poziciju '$pos$', ali dozvoljen/i je/su samo '$count$' parametar(i). Mogući razlog je da značajka \"ParameterNameSubstitution\" nije postavljena na TRUE u izvoru podataka."
+msgstr "Pokušali ste postaviti parametar na poziciju '$pos$', ali dozvoljen/i je/su samo '$count$' parametar(i). Mogući razlog je da značajka „ParameterNameSubstitution” nije postavljena na TRUE u izvoru podataka."
 
 #: connectivity/inc/strings.hrc:39
 msgctxt "STR_NO_INPUTSTREAM"
@@ -136,7 +136,7 @@ msgstr "Niz znakova '$string$' je dostigao najveću moguću duljinu od $maxlen$ 
 #: connectivity/inc/strings.hrc:50
 msgctxt "STR_CANNOT_CONVERT_STRING"
 msgid "The string '$string$' cannot be converted using the encoding '$charset$'."
-msgstr "Niz znakova '$string$' se nije mogao pretvoriti u kodnu stranicu '$charset$'."
+msgstr "Znakovni niz '$string$' se ne može pretvoriti pomoću '$charset$' kodiranja."
 
 #: connectivity/inc/strings.hrc:51
 msgctxt "STR_URI_SYNTAX_ERROR"
@@ -213,7 +213,7 @@ msgstr ""
 #: connectivity/inc/strings.hrc:65
 msgctxt "STR_TYPE_NOT_CONVERT"
 msgid "The type could not be converted."
-msgstr "Tip se ne može pretvoriti."
+msgstr "Vrsta se ne može pretvoriti."
 
 #: connectivity/inc/strings.hrc:66
 msgctxt "STR_INVALID_COLUMN_DESCRIPTOR_ERROR"
@@ -303,7 +303,7 @@ msgstr "Datoteka $filename$ se ne može izbrisati."
 #: connectivity/inc/strings.hrc:84
 msgctxt "STR_INVALID_COLUMN_TYPE"
 msgid "Invalid column type for column '$columnname$'."
-msgstr "Pogrešan tip stupca za stupac '$columnname$'."
+msgstr "Pogrešna vrsta stupca za stupac '$columnname$'."
 
 #: connectivity/inc/strings.hrc:85
 msgctxt "STR_INVALID_COLUMN_PRECISION"
@@ -313,7 +313,7 @@ msgstr "Pogrešna preciznost za stupac '$columnname$'."
 #: connectivity/inc/strings.hrc:86
 msgctxt "STR_INVALID_PRECISION_SCALE"
 msgid "Precision is less than scale for column '$columnname$'."
-msgstr "Preciznost je manja od razmjera za stupac '$columnname$'."
+msgstr "Preciznost je manja od broja decimalnih mjesta za stupac '$columnname$'."
 
 #: connectivity/inc/strings.hrc:87
 msgctxt "STR_INVALID_COLUMN_NAME_LENGTH"
@@ -332,7 +332,7 @@ msgid ""
 "\n"
 "The specified value \"$value$ is longer than the number of digits allowed."
 msgstr ""
-"Stupac '$columnname$' je bio određen kao decimalni tip najveće dužine $precision$ znakova (sa $scale$ decimalnih mjesta).\n"
+"Stupac '$columnname$' je bio određen kao „decimalna” vrsta, najveća dužina iznosi $precision$ znakova (sa $scale$ decimalnih mjesta).\n"
 "\n"
 "Specificirana vrijednost $value$ je veća od broja dozvoljenih znamenaka."
 
@@ -385,7 +385,7 @@ msgstr "Moguće je sortirati samo po stupcima tablice."
 #: connectivity/inc/strings.hrc:101
 msgctxt "STR_QUERY_COMPLEX_COUNT"
 msgid "The query can not be executed. It is too complex. Only \"COUNT(*)\" is supported."
-msgstr "Upit ne može biti izvršen. Prekompliciran je. Podržan je samo \"COUNT(*)\"."
+msgstr "Upit ne može biti izvršen. Prekompliciran je. Podržan je samo „COUNT(*)”."
 
 #: connectivity/inc/strings.hrc:102
 msgctxt "STR_QUERY_INVALID_BETWEEN"
@@ -465,12 +465,12 @@ msgstr "Putanja dodatne klase pogonskog programa je '$classpath$'."
 #: connectivity/inc/strings.hrc:117
 msgctxt "STR_UNKNOWN_PARA_TYPE"
 msgid "The type of parameter at position '$position$' is unknown."
-msgstr "Tip parametra na poziciji '$position$' je nepoznat."
+msgstr "Vrsta parametra na poziciji '$position$' je nepoznat."
 
 #: connectivity/inc/strings.hrc:118
 msgctxt "STR_UNKNOWN_COLUMN_TYPE"
 msgid "The type of column at position '$position$' is unknown."
-msgstr "Tip stupca na poziciji '$position$' je nepoznat."
+msgstr "Vrsta stupca na poziciji '$position$' je nepoznat."
 
 #. KAB
 #: connectivity/inc/strings.hrc:120
