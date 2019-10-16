@@ -1,10 +1,10 @@
 #. extracted from helpcontent2/source/text/scalc/04
 msgid ""
 msgstr ""
-"Project-Id-Version: LibreOffice 6.3\n"
+"Project-Id-Version: LibreOffice 6.4\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2019-04-22 10:57+0200\n"
-"PO-Revision-Date: 2019-04-12 22:28+0200\n"
+"POT-Creation-Date: 2019-10-13 19:37+0200\n"
+"PO-Revision-Date: 2019-10-13 12:27+0200\n"
 "Last-Translator: Martin Srebotnjak <miles@filmsi.net>\n"
 "Language-Team: sl.libreoffice.org\n"
 "MIME-Version: 1.0\n"
@@ -302,8 +302,8 @@ msgctxt ""
 "01020000.xhp\n"
 "par_id3154766\n"
 "help.text"
-msgid "Moves the cursor to the left edge of the current data range. If the column to the left of the cell that contains the cursor is empty, the cursor moves to the next column to the left that contains data."
-msgstr "Povzroči premik kazalca na levi rob trenutnega obsega podatkov. Če je stolpec levo od celice, ki vsebuje kazalec, prazen, potem se pomakne k prvemu stolpcu na levi, ki vsebuje podatke."
+msgid "Moves the cursor leftward to the start and end of cell blocks with data. If the cell to the left of the cursor is empty or the cell with cursor is empty, cursor moves leftward in row to the next cell with contents. If the row on the left of the cursor is empty, the cursor moves to then first cell in the row."
+msgstr "Pomakne kazalko levo na začetek in konec skupkov celic s podatki. Če je celica levo od celice, ki vsebuje kazalec, prazna, ali pa je celica s kazalko prazna, potem se pomakne levo na prvo naslednjo celico v vrstici, ki vsebuje podatke. Če je vrstica levo od kazalke prazna, se kazalka pomakne v prvo celico v vrstici."
 
 #: 01020000.xhp
 msgctxt ""
@@ -318,8 +318,8 @@ msgctxt ""
 "01020000.xhp\n"
 "par_id3155593\n"
 "help.text"
-msgid "Moves the cursor to the right edge of the current data range. If the column to the right of the cell that contains the cursor is empty, the cursor moves to the next column to the right that contains data."
-msgstr "Povzroči premik kazalca na desni rob trenutnega obsega podatkov. Če je stolpec desno od celice, ki vsebuje kazalec, prazen, potem se pomakne k prvemu stolpcu na desni, ki vsebuje podatke."
+msgid "Moves the cursor rightward to the start and end of cell blocks with contents. If the cell to the right of the cursor is empty or the cursor is in an empty cell, the cursor moves rightward to the next cell that contains data. If the row on the right of the cursor is empty, the cursor moves to the last cell in the row."
+msgstr "Pomakne kazalko desno na začetek in konec skupkov celic s podatki. Če je celica desno od celice, ki vsebuje kazalec, prazna, ali pa je celica s kazalko prazna, potem se pomakne desno na prvo naslednjo celico v vrstici, ki vsebuje podatke. Če je vrstica desno od kazalke prazna, se kazalka pomakne v zadnjo celico v vrstici."
 
 #: 01020000.xhp
 msgctxt ""
@@ -334,8 +334,8 @@ msgctxt ""
 "01020000.xhp\n"
 "par_id3153076\n"
 "help.text"
-msgid "Moves the cursor to the top edge of the current data range. If the row above the cell that contains the cursor is empty, the cursor moves up to the next row that contains data."
-msgstr "Povzroči premik kazalca na zgornji rob trenutnega obsega podatkov. Če je vrstica nad celico, ki vsebuje kazalec, prazna, potem se pomakne k prvi vrstici nad njo, ki vsebuje podatke."
+msgid "Moves the cursor upward to the start and end of cell blocks with data. If the cell above the cursor is empty or the cursor is in an empty cell, the cursor moves up to the end of next cell block with data. If the column above the cursor is empty, the cursor moves up to first cell in the column."
+msgstr "Premakne kazalko navzgor na začetek in konec skupka celic s podatki. Če je celica nad kazalko prazna ali pa je kazalka v prazni celici, potem se pomakne navzgor h koncu naslednjega skupka celic s podatki. Če je stolpec nad kazalko prazen, se kazalka pomakne v prvo celico v stolpcu."
 
 #: 01020000.xhp
 msgctxt ""
@@ -350,8 +350,8 @@ msgctxt ""
 "01020000.xhp\n"
 "par_id3149054\n"
 "help.text"
-msgid "Moves the cursor to the bottom edge of the current data range. If the row below the cell that contains the cursor is empty, the cursor moves down to the next row that contains data."
-msgstr "Povzroči premik kazalca na spodnji rob trenutnega obsega podatkov. Če je vrstica pod celico, ki vsebuje kazalec, prazna, potem se pomakne k prvi vrstici spodaj, ki vsebuje podatke."
+msgid "Moves the cursor downward to the start and end of cell blocks with data. If the cell below the cursor is empty or the cursor is in an empty cell, the cursor moves down to the next cell that contains data. If the column below the cursor is empty, the cursor moves down to last cell in the column."
+msgstr "Premakne kazalko navzdol na začetek in konec skupka celic s podatki. Če je celica pod kazalko prazna ali pa je kazalka v prazni celici, potem se pomakne navzdol k naslednji celici, ki vsebuje podatke. Če je stolpec pod kazalko prazen, se kazalka pomakne v zadnjo celico v stolpcu."
 
 #: 01020000.xhp
 msgctxt ""
@@ -362,11 +362,12 @@ msgid "<switchinline select=\"sys\"><caseinline select=\"MAC\">Command</caseinli
 msgstr "<switchinline select=\"sys\"><caseinline select=\"MAC\">Tipka Cmd</caseinline><defaultinline>Krmilka</defaultinline></switchinline>+dvigalka+smerna tipka"
 
 #: 01020000.xhp
+#, fuzzy
 msgctxt ""
 "01020000.xhp\n"
 "par_id3159258\n"
 "help.text"
-msgid "Selects all cells containing data from the current cell to the end of the continuous range of data cells, in the direction of the arrow pressed. If used to select rows and columns together, a rectangular cell range is selected."
+msgid "Selects all cells of the range created by the cursor movements using the Ctrl+Arrows key combinations. If used to select rows and columns together, a rectangular cell range is selected."
 msgstr "Izbere vse celice s podatki od trenutno izbrane celice do konca neprekinjenega območja celic s podatki v smeri pritisnjene puščice. Pri skupnem izbiranju vrstic in stolpcev izbere pravokoten obseg celic."
 
 #: 01020000.xhp
@@ -802,12 +803,13 @@ msgid "Shift+<switchinline select=\"sys\"><caseinline select=\"MAC\">Command</ca
 msgstr "Dvigalka+<switchinline select=\"sys\"><caseinline select=\"MAC\">tipka Cmd</caseinline><defaultinline>krmilka</defaultinline></switchinline>+F5"
 
 #: 01020000.xhp
+#, fuzzy
 msgctxt ""
 "01020000.xhp\n"
 "par_id3153551\n"
 "help.text"
-msgid "Moves the cursor from the <emph>Input line </emph>to the <emph>Sheet area</emph> box."
-msgstr "Premakne kazalec iz <emph>vnosne vrstice</emph> v polje <emph>Območje delovnega lista</emph>."
+msgid "Moves the cursor from the <emph>Input line</emph> to the <emph>Sheet area</emph> box. You can also use Shift+<switchinline select=\"sys\"><caseinline select=\"MAC\">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+T."
+msgstr "Pomakne kazalko iz <emph>vnosne vrstice</emph> v polje <emph>Območje delovnega lista</emph>. Uporabite lahko tudi kombinacijo tipk dvigalka+<switchinline select=\"sys\"><caseinline select=\"MAC\">tipka Cmd</caseinline><defaultinline>krmilka</defaultinline></switchinline>+T."
 
 #: 01020000.xhp
 msgctxt ""
