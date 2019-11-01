@@ -3,14 +3,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: LibreOffice 6.4\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2019-10-13 19:37+0200\n"
-"PO-Revision-Date: 2019-10-13 12:42+0200\n"
+"POT-Creation-Date: 2019-10-30 14:55+0100\n"
+"PO-Revision-Date: 2019-10-30 17:00+0200\n"
 "Last-Translator: Martin Srebotnjak <miles@filmsi.net>\n"
 "Language-Team: sl.libreoffice.org\n"
+"Language: sl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: sl\n"
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n%100==4 ? 2 : 3);\n"
 "X-Generator: Virtaal 0.7.1\n"
 "X-Accelerator-Marker: ~\n"
@@ -2150,8 +2150,8 @@ msgctxt ""
 "cellreferences.xhp\n"
 "par_id2078005\n"
 "help.text"
-msgid "Open a new, empty spreadsheet."
-msgstr "Odprite novo, prazno preglednico."
+msgid "Open a new, empty spreadsheet. By default, it has only a single sheet named Sheet1. Add a second sheet clicking on <emph>+</emph> button to the left of the sheet tab in the bottom (it will be named Sheet2 by default)."
+msgstr "Odprite novo, prazno preglednico. Privzeto vsebuje le en sam delovni list, poimenovan DelovniList1. Drugi delovni list dodate s klikom gumba <emph>+</emph> na levi strani zavihka delovnega lista na dnu okna (privzeto bo poimenovan DelovniList2)."
 
 #: cellreferences.xhp
 msgctxt ""
@@ -2184,6 +2184,22 @@ msgctxt ""
 "help.text"
 msgid "If you switch back to Sheet1, you will see the same content in cell A1 there. If the contents of Sheet2.A1 change, then the contents of Sheet1.A1 also change."
 msgstr "Če preklopite nazaj na DelovniList1, boste videli enako vsebino v celici A1 na tem listu. Če se vsebina DelovnegaLista2.A1 spremeni, potem se spremeni tudi vsebina DelovnegaLista1.A1."
+
+#: cellreferences.xhp
+msgctxt ""
+"cellreferences.xhp\n"
+"par_id3147338\n"
+"help.text"
+msgid "When referencing a sheet with name containing spaces, use single quotes around the name: <item type=\"literal\">='Sheet with spaces in name'.A1</item>"
+msgstr "Ko se sklicujete na delovni list z imenom, ki vsebuje presledke, okoli imena iporabite enojne narekovaje: <item type=\"literal\">='Delovni list s presledki v imenu'.A1</item>"
+
+#: cellreferences.xhp
+msgctxt ""
+"cellreferences.xhp\n"
+"par_id3147383\n"
+"help.text"
+msgid "The example uses Calc formula syntax. It is also possible to use Excel A1 ot R1C1 formula syntax; this is configured on <link href=\"text/shared/optionen/01060900.xhp\">Formula options page</link>."
+msgstr "V primeru je uporabljena skladnja formul programa Calc. Uporabite lahko tudi skladnjo formul Excel A1 ali R1C1; to nastavitev na <link href=\"text/shared/optionen/01060900.xhp\">strani možnosti formul</link>."
 
 #: cellreferences.xhp
 msgctxt ""
@@ -2246,8 +2262,8 @@ msgctxt ""
 "cellreferences.xhp\n"
 "par_id7099826\n"
 "help.text"
-msgid "If you drag the box in the lower right corner of the active cell to select a range of cells, $[officename] automatically inserts the corresponding references in the adjacent cells. As a result, the sheet name is preceded with a \"$\" sign to designate it as an absolute reference."
-msgstr "Če povlečete polje v kot desni spodnji kot aktivne celice, da bi izbrali obseg celic, $[officename] samodejno vstavi ustrezne sklice v sosednje celice. Zato je pred imenom delovnega lista znak »$«, ki ga označuje za absoluten sklic."
+msgid "If you drag the box in the lower right corner of the active cell to select a range of cells, $[officename] automatically inserts the corresponding references in the adjacent cells. As a result, the sheet name is preceded with a \"$\" sign to designate it as an <link href=\"text/scalc/guide/relativ_absolut_ref.xhp\">absolute reference</link>."
+msgstr "Če povlečete polje v kot desni spodnji kot aktivne celice, da bi izbrali obseg celic, $[officename] samodejno vstavi ustrezne sklice v sosednje celice. Zato je pred imenom delovnega lista znak »$«, ki ga označuje za <link href=\"text/scalc/guide/relativ_absolut_ref.xhp\">absoluten sklic</link>."
 
 #: cellreferences.xhp
 msgctxt ""
@@ -8074,7 +8090,6 @@ msgid "If only a time string is given, it may have an hours value of more than 2
 msgstr "Če je podan le časovni niz, ima lahko vrednost ur večjo od 24, medtem ko je lahko največja vrednost minut in sekund 59."
 
 #: numbers_text.xhp
-#, fuzzy
 msgctxt ""
 "numbers_text.xhp\n"
 "par_id761567607207916\n"
@@ -8123,25 +8138,22 @@ msgid "In A2 enter <literal>=A1+1</literal> (which correctly results in 101)."
 msgstr "V A2 vnesite <literal>=A1+1</literal> (kar pravilno znese 101)."
 
 #: numbers_text.xhp
-#, fuzzy
 msgctxt ""
 "numbers_text.xhp\n"
 "par_id891567607263849\n"
 "help.text"
 msgid "The formula <literal>=SUM(A1:A2)</literal>, returns 101 instead of 201 because the conversion does not occur in a range, only for single scalar values. Here, '1e2 is treated as string which has value 0 for the SUM function."
-msgstr "Formula <literal>=SUM(A1:A2)</literal> vrne 101 namesto 201, ker se pretvorba ne izvede v obsegu, ampak le za enojne skalarne vrednosti. Tukaj je '1e2 za funkcijo SUM obravnavan kot niz z vrednostjo 0."
+msgstr "Formula <literal>=SUM(A1:A2)</literal> vrne 101 namesto 201, ker se pretvorba ne izvede v obsegu, ampak le za enojne skalarne vrednosti. Tukaj funkcija SUM '1e2 obravnava kot niz z vrednostjo 0."
 
 #: numbers_text.xhp
-#, fuzzy
 msgctxt ""
 "numbers_text.xhp\n"
 "par_id611567607779380\n"
 "help.text"
 msgid "<literal>=SUM(\"1E2\";1)</literal> returns #VALUE! because SUM() and some others that iterate over number sequences explicitly check the argument type."
-msgstr "<literal>=SUM(\"1E2\";1)</literal> vrne #VALUE!, ker SUM() in nekatere druge, ki iterirajo prek številskih nizov, eksplicitno preverijo vrsto argumenta."
+msgstr "<literal>=SUM(\"1E2\";1)</literal> vrne napako #VALUE!, ker SUM() in nekatere druge funkcije, ki iterirajo prek številskih nizov, eksplicitno preverjajo vrsto argumenta."
 
 #: numbers_text.xhp
-#, fuzzy
 msgctxt ""
 "numbers_text.xhp\n"
 "hd_id871567772424915\n"
@@ -8150,13 +8162,12 @@ msgid "Changing the default text to number conversion settings"
 msgstr "Spreminjanje privzetih nastavitev pretvorbe besedila v števila"
 
 #: numbers_text.xhp
-#, fuzzy
 msgctxt ""
 "numbers_text.xhp\n"
 "par_id111567772433803\n"
 "help.text"
 msgid "The text to number conversion can be customized in the <embedvar href=\"text/shared/optionen/detailedcalculation.xhp#detailed_heading\" markup=\"ignore\"/> option."
-msgstr "Pretvorbo besedila v števila lahko prilagodite z možnostjo <embedvar href=\"text/shared/optionen/detailedcalculation.xhp#detailed_heading\" markup=\"ignore\"/>."
+msgstr "Pretvorbo besedila v števila lahko prilagodite z nastavitvijo <embedvar href=\"text/shared/optionen/detailedcalculation.xhp#detailed_heading\" markup=\"ignore\"/>."
 
 #: numbers_text.xhp
 msgctxt ""
