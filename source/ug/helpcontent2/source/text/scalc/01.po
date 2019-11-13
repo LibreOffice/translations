@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2019-11-08 20:19+0100\n"
+"POT-Creation-Date: 2019-11-13 13:46+0100\n"
 "PO-Revision-Date: 2018-11-12 14:10+0000\n"
 "Last-Translator: Anonymous Pootle User\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -14461,15 +14461,6 @@ msgctxt ""
 msgid "See COUNTIF() for some more syntax examples that can be used with SUMIF()."
 msgstr ""
 
-#. Z8TrQ
-#: 04060106.xhp
-msgctxt ""
-"04060106.xhp\n"
-"hd_id72921259523046\n"
-"help.text"
-msgid "<embedvar href=\"text/scalc/01/func_sumifs.xhp#sumifs_head\"/>"
-msgstr ""
-
 #. BHGzQ
 #: 04060106.xhp
 msgctxt ""
@@ -19051,13 +19042,13 @@ msgctxt ""
 msgid "<ahelp hid=\"HID_FUNC_SVERWEIS\">Vertical search with reference to adjacent cells to the right.</ahelp> This function checks if a specific value is contained in the first column of an array. The function then returns the value in the same row of the column named by <item type=\"literal\">Index</item>. If the <item type=\"literal\">Sorted</item> parameter is omitted or set to TRUE or one, it is assumed that the data is sorted in ascending order. In this case, if the exact <item type=\"literal\">SearchCriterion</item> is not found, the last value that is smaller than the criterion will be returned. If <item type=\"literal\">Sorted</item> is set to FALSE or zero, an exact match must be found, otherwise the error <emph>Error: Value Not Available</emph> will be the result. Thus with a value of zero the data does not need to be sorted in ascending order."
 msgstr ""
 
-#. zQ7nD
+#. qkLkD
 #: 04060109.xhp
 msgctxt ""
 "04060109.xhp\n"
 "par_id3150156\n"
 "help.text"
-msgid "=VLOOKUP(SearchCriterion; Array; Index; Sorted)"
+msgid "=VLOOKUP(SearchCriterion; Array; Index; SortedRangeLookup)"
 msgstr ""
 
 #. 7FsgG
@@ -19087,13 +19078,13 @@ msgctxt ""
 msgid "<emph>Index</emph> is the number of the column in the array that contains the value to be returned. The first column has the number 1."
 msgstr ""
 
-#. y3UFE
+#. QV6iE
 #: 04060109.xhp
 msgctxt ""
 "04060109.xhp\n"
 "par_id3151208\n"
 "help.text"
-msgid "<emph>Sorted</emph> is an optional parameter that indicates whether the first column in the array is sorted in ascending order. Enter the Boolean value FALSE or zero if the first column is not sorted in ascending order. Sorted columns can be searched much faster and the function always returns a value, even if the search value was not matched exactly, if it is greater than the lowest value of the sorted list. In unsorted lists, the search value must be matched exactly. Otherwise the function will return #N/A with message: <emph>Error: Value Not Available</emph>."
+msgid "<emph>SortedRangeLookup</emph> is an optional parameter that indicates whether the first column in the array contains range boundaries instead of plain values. In this mode, the lookup returns the value in the row with first column having value equal to or less than SearchCriterion. E.g., it could contain dates when some tax value had been changed, and so the values represent starting dates of a period when a specific tax value was effective. Thus, searching for a date that is absent in the first array column, but falls between some existing boundary dates, would give the lower of them, allowing to find out the data being effective to the searched date. Enter the Boolean value FALSE or zero if the first column is not a range boundary list. When this parameter is TRUE or not given, the first column in the array <emph>must be sorted in ascending order</emph>. Sorted columns can be searched much faster and the function always returns a value, even if the search value was not matched exactly, if it is greater than the lowest value of the sorted list. In unsorted lists, the search value must be matched exactly. Otherwise the function will return #N/A with message: <emph>Error: Value Not Available</emph>."
 msgstr ""
 
 #. fJQRf
@@ -19762,13 +19753,13 @@ msgctxt ""
 msgid "<ahelp hid=\"HID_FUNC_WVERWEIS\">Searches for a value and reference to the cells below the selected area.</ahelp> This function verifies if the first row of an array contains a certain value. The function returns then the value in a row of the array, named in the <emph>Index</emph>, in the same column."
 msgstr ""
 
-#. LjjvU
+#. yxeCS
 #: 04060109.xhp
 msgctxt ""
 "04060109.xhp\n"
 "par_id3146070\n"
 "help.text"
-msgid "HLOOKUP(SearchCriterion; Array; Index; Sorted)"
+msgid "HLOOKUP(SearchCriterion; Array; Index; SortedRangeLookup)"
 msgstr ""
 
 #. nhwwF
@@ -21346,13 +21337,13 @@ msgctxt ""
 msgid "<bookmark_value>LEFTB function</bookmark_value>"
 msgstr ""
 
-#. 43HxJ
+#. zjvg5
 #: 04060110.xhp
 msgctxt ""
 "04060110.xhp\n"
 "hd_id2947083\n"
 "help.text"
-msgid "LEFTB"
+msgid "<variable id=\"leftbvar\"><link href=\"text/scalc/01/04060110.xhp#leftb\" name=\"LEFTB\">LEFTB</link></variable>"
 msgstr ""
 
 #. f3mWg
@@ -21508,13 +21499,13 @@ msgctxt ""
 msgid "<bookmark_value>LENB function</bookmark_value>"
 msgstr ""
 
-#. tE3dg
+#. e5FBE
 #: 04060110.xhp
 msgctxt ""
 "04060110.xhp\n"
 "hd_id2956110\n"
 "help.text"
-msgid "LENB"
+msgid "<variable id=\"lenbvar\"><link href=\"text/scalc/01/04060110.xhp#lenb\" name=\"LENB\">LENB</link></variable>"
 msgstr ""
 
 #. Cwz9S
@@ -21724,13 +21715,13 @@ msgctxt ""
 msgid "<bookmark_value>MIDB function</bookmark_value>"
 msgstr ""
 
-#. wekeb
+#. BxEFF
 #: 04060110.xhp
 msgctxt ""
 "04060110.xhp\n"
 "hd_id2954589\n"
 "help.text"
-msgid "MIDB"
+msgid "<variable id=\"midbvar\"><link href=\"text/scalc/01/04060110.xhp#midb\" name=\"MIDB\">MIDB</link></variable>"
 msgstr ""
 
 #. Qe8mw
@@ -22165,13 +22156,13 @@ msgctxt ""
 msgid "<bookmark_value>RIGHTB function</bookmark_value>"
 msgstr ""
 
-#. qocbt
+#. YMkyY
 #: 04060110.xhp
 msgctxt ""
 "04060110.xhp\n"
 "hd_id2949805\n"
 "help.text"
-msgid "RIGHTB"
+msgid "<variable id=\"rightbvar\"><link href=\"text/scalc/01/04060110.xhp#rightb\" name=\"RIGHTB\">RIGHTB</link></variable>"
 msgstr ""
 
 #. gvrHM
@@ -33170,15 +33161,6 @@ msgctxt ""
 "par_id6386913\n"
 "help.text"
 msgid "To count only negative numbers: <item type=\"input\">=COUNTIF(A1:A10;\"<0\")</item>"
-msgstr ""
-
-#. jGBjw
-#: 04060181.xhp
-msgctxt ""
-"04060181.xhp\n"
-"hd_id224412044220134\n"
-"help.text"
-msgid "<embedvar href=\"text/scalc/01/func_countifs.xhp#countifs_head\"/>"
 msgstr ""
 
 #. GWdLd
@@ -55780,13 +55762,13 @@ msgctxt ""
 msgid "<emph>Average_Range</emph> – optional. It is a range of values for calculating the mean."
 msgstr ""
 
-#. brAso
+#. kCbPD
 #: func_averageif.xhp
 msgctxt ""
 "func_averageif.xhp\n"
 "par_id45123108916423\n"
 "help.text"
-msgid "Note that if the <emph>Average_Range</emph> is not specified, <emph>Range</emph> is used for both, the calculation of the mean and the search according to the condition. If the <emph>Average_Range</emph> is specified, the <emph>Range</emph> is used only for the condition test, while <emph>Average_Range</emph> is used for the mean calculation.<br/>The <emph>Criterion</emph> needs to be a string expression, in particular, the <emph>Criterion</emph> needs to be enclosed in quotation marks (\"Criterion\") with the exception of the names of functions, cell references and an operation of a string concatenation (&)."
+msgid "If the <emph>Average_Range</emph> is not specified, <emph>Range</emph> is used for both, the calculation of the mean and the search according to the condition. If  <emph>Average_Range</emph> is specified, the <emph>Range</emph> is used only for the condition test, while <emph>Average_Range</emph> is used for the average calculation."
 msgstr ""
 
 #. 8v8Zv
@@ -57785,6 +57767,87 @@ msgctxt ""
 "par_id312932390024933\n"
 "help.text"
 msgid "<link href=\"text/scalc/05/02140000.xhp\" name=\"Error codes\">Error codes</link>"
+msgstr ""
+
+#. sUgSM
+#: func_findb.xhp
+msgctxt ""
+"func_findb.xhp\n"
+"tit\n"
+"help.text"
+msgid "FINDB Function"
+msgstr ""
+
+#. EkUr2
+#: func_findb.xhp
+msgctxt ""
+"func_findb.xhp\n"
+"bm_id141573508995071\n"
+"help.text"
+msgid "<bookmark_value>FINDB Function</bookmark_value>            <bookmark_value>find text;FINDB Function</bookmark_value>"
+msgstr ""
+
+#. WmZAa
+#: func_findb.xhp
+msgctxt ""
+"func_findb.xhp\n"
+"hd_id771573508637966\n"
+"help.text"
+msgid "<variable id=\"findb\"><link href=\"text/scalc/01/func_findb.xhp\" name=\"findb\">FINDB</link></variable>"
+msgstr ""
+
+#. iW2EE
+#: func_findb.xhp
+msgctxt ""
+"func_findb.xhp\n"
+"par_id831573508637970\n"
+"help.text"
+msgid "<variable id=\"variable name\"><ahelp hid=\".\">Returns the starting position of a given text, using byte positions. FINDB is case sensitive.</ahelp></variable>"
+msgstr ""
+
+#. yA9fg
+#: func_findb.xhp
+msgctxt ""
+"func_findb.xhp\n"
+"par_id221573517641172\n"
+"help.text"
+msgid "FINDB( Find Text ; Text ; Position )"
+msgstr ""
+
+#. puQAw
+#: func_findb.xhp
+msgctxt ""
+"func_findb.xhp\n"
+"par_id241573517292388\n"
+"help.text"
+msgid "<emph>Find Text</emph>: The text or text expression to be found."
+msgstr ""
+
+#. YgyTW
+#: func_findb.xhp
+msgctxt ""
+"func_findb.xhp\n"
+"par_id991573517299918\n"
+"help.text"
+msgid "<emph>Text</emph>: the text in which the search is to be made."
+msgstr ""
+
+#. pfYPq
+#: func_findb.xhp
+msgctxt ""
+"func_findb.xhp\n"
+"par_id521573517305077\n"
+"help.text"
+msgid "<emph>Position</emph>: The position in the text where the search starts."
+msgstr ""
+
+#. VLM4H
+#: func_findb.xhp
+msgctxt ""
+"func_findb.xhp\n"
+"par_id481573517830373\n"
+"help.text"
+msgid "<input>=FINDB(\"ᄫᄬ\";\"ᄩᄔᄕᄜᄝᄞᄠgᄢᄣᄫᄬᄭᄮᄯᄲᄶ\";17)</input> returns 19."
 msgstr ""
 
 #. 2YcR7
@@ -60874,6 +60937,96 @@ msgctxt ""
 msgid "<link href=\"http://userguide.icu-project.org/strings/regexp\" name=\"ICU REGEXP\">ICU regular expressions</link>"
 msgstr ""
 
+#. B64FM
+#: func_replaceb.xhp
+msgctxt ""
+"func_replaceb.xhp\n"
+"tit\n"
+"help.text"
+msgid "REPLACEB Function"
+msgstr ""
+
+#. GfVed
+#: func_replaceb.xhp
+msgctxt ""
+"func_replaceb.xhp\n"
+"bm_id141573508995071\n"
+"help.text"
+msgid "<bookmark_value>REPLACEB Function</bookmark_value>            <bookmark_value>replace text;REPLACEB Function</bookmark_value>"
+msgstr ""
+
+#. 5MutE
+#: func_replaceb.xhp
+msgctxt ""
+"func_replaceb.xhp\n"
+"hd_id771573508637966\n"
+"help.text"
+msgid "<variable id=\"replaceb\"><link href=\"text/scalc/01/func_replaceb.xhp\" name=\"replaceb\">REPLACEB</link></variable>"
+msgstr ""
+
+#. djAL7
+#: func_replaceb.xhp
+msgctxt ""
+"func_replaceb.xhp\n"
+"par_id831573508637970\n"
+"help.text"
+msgid "<variable id=\"variable name\"><ahelp hid=\".\">Returns text where an old text is replaced with a new text, using byte positions.</ahelp></variable>"
+msgstr ""
+
+#. Fd4SC
+#: func_replaceb.xhp
+msgctxt ""
+"func_replaceb.xhp\n"
+"par_id701542231253817\n"
+"help.text"
+msgid "REPLACEB( Text ; Position ; Length ; NewText )"
+msgstr ""
+
+#. eY5FG
+#: func_replaceb.xhp
+msgctxt ""
+"func_replaceb.xhp\n"
+"par_id331573510857418\n"
+"help.text"
+msgid "<emph>Text</emph>: A text expression or reference to a cell containing a text expression in which the characters are to be replaced."
+msgstr ""
+
+#. bqPxd
+#: func_replaceb.xhp
+msgctxt ""
+"func_replaceb.xhp\n"
+"par_id431573510862075\n"
+"help.text"
+msgid "<emph>Position</emph>: the character position from which text is to be replaced."
+msgstr ""
+
+#. TtgNA
+#: func_replaceb.xhp
+msgctxt ""
+"func_replaceb.xhp\n"
+"par_id481573510866260\n"
+"help.text"
+msgid "<emph>Length</emph>: the number of characters to be replaced."
+msgstr ""
+
+#. UuACG
+#: func_replaceb.xhp
+msgctxt ""
+"func_replaceb.xhp\n"
+"par_id911573510871412\n"
+"help.text"
+msgid "<emph>NewText</emph>: the text to be inserted."
+msgstr ""
+
+#. QH3SH
+#: func_replaceb.xhp
+msgctxt ""
+"func_replaceb.xhp\n"
+"par_id431573515742206\n"
+"help.text"
+msgid "<input>=REPLACEB(\"ᄩᄔᄕᄜᄝᄞᄠᄢᄣᄫᄬᄭᄮᄯᄲᄶ\";4;1;\"ab\")</input> returns \"ᄩ abᄕᄜᄝᄞᄠᄢᄣᄫᄬᄭᄮᄯᄲᄶ\" ."
+msgstr ""
+
 #. E7heY
 #: func_roundsig.xhp
 msgctxt ""
@@ -60989,6 +61142,87 @@ msgctxt ""
 "par_id51519156941987\n"
 "help.text"
 msgid "See also <link href=\"text/scalc/01/04060106.xhp#Section21\" name=\"ROUND function\">ROUND</link>, <link href=\"text/scalc/01/04060106.xhp#Section7\" name=\"MROUND function\">MROUND</link>, <link href=\"text/scalc/01/04060106.xhp#Section19\" name=\"ROUNDUP function\">ROUNDUP</link>, <link href=\"text/scalc/01/04060106.xhp#Section20\" name=\"ROUNDDOWN function\">ROUNDDOWN</link>."
+msgstr ""
+
+#. hkbrZ
+#: func_searchb.xhp
+msgctxt ""
+"func_searchb.xhp\n"
+"tit\n"
+"help.text"
+msgid "SEARCHB Function"
+msgstr ""
+
+#. ennrh
+#: func_searchb.xhp
+msgctxt ""
+"func_searchb.xhp\n"
+"bm_id141573508995071\n"
+"help.text"
+msgid "<bookmark_value>SEARCHB Function</bookmark_value>            <bookmark_value>search text;SEARCHB Function</bookmark_value>"
+msgstr ""
+
+#. AXnND
+#: func_searchb.xhp
+msgctxt ""
+"func_searchb.xhp\n"
+"hd_id771573508637966\n"
+"help.text"
+msgid "<variable id=\"searchb\"><link href=\"text/scalc/01/func_searchb.xhp\" name=\"searchb\">SEARCHB</link></variable>"
+msgstr ""
+
+#. TySAy
+#: func_searchb.xhp
+msgctxt ""
+"func_searchb.xhp\n"
+"par_id831573508637970\n"
+"help.text"
+msgid "<variable id=\"variable name\"><ahelp hid=\".\">Returns the starting position of a given text, using byte positions (not case sensitive).</ahelp></variable>"
+msgstr ""
+
+#. jADhb
+#: func_searchb.xhp
+msgctxt ""
+"func_searchb.xhp\n"
+"par_id531573516878780\n"
+"help.text"
+msgid "SEARCHB( Find text ; Text ; Position)"
+msgstr ""
+
+#. 6Pmbf
+#: func_searchb.xhp
+msgctxt ""
+"func_searchb.xhp\n"
+"par_id241573517292388\n"
+"help.text"
+msgid "<emph>Find Text</emph>: The text or text expression to be found."
+msgstr ""
+
+#. ovdFE
+#: func_searchb.xhp
+msgctxt ""
+"func_searchb.xhp\n"
+"par_id991573517299918\n"
+"help.text"
+msgid "<emph>Text</emph>: the text in which the search is to be made."
+msgstr ""
+
+#. oDk8C
+#: func_searchb.xhp
+msgctxt ""
+"func_searchb.xhp\n"
+"par_id521573517305077\n"
+"help.text"
+msgid "<emph>Position</emph>: The position in the text where the search starts."
+msgstr ""
+
+#. 2E7js
+#: func_searchb.xhp
+msgctxt ""
+"func_searchb.xhp\n"
+"par_id561573517310749\n"
+"help.text"
+msgid "<input>=SEARCHB(\"ᄫᄬ\";\"ᄩᄔᄕᄜᄝᄞᄠgᄢᄣᄫᄬᄭᄮᄯᄲᄶ\";17)</input> returns 20."
 msgstr ""
 
 #. Mv5R9
