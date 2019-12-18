@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2019-11-13 13:47+0100\n"
+"POT-Creation-Date: 2019-12-17 23:05+0100\n"
 "PO-Revision-Date: 2018-10-21 19:53+0000\n"
 "Last-Translator: Anonymous Pootle User\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -931,21 +931,16 @@ msgctxt "RID_SVXSTR_GRFILTER_FILTERERROR"
 msgid "Image filter not found"
 msgstr "ఇమేజ్ ఫైల్ కనుగొనలేదు"
 
-#. GV8KL
+#. ejBgZ
 #: include/sfx2/strings.hrc:170
 msgctxt "RID_SVXSTR_END_REDLINING_WARNING"
 msgid ""
 "This action will exit the change recording mode.\n"
-"Any information about changes will be lost.\n"
+"No information about changes will be recorded from now on.\n"
 "\n"
 "Exit change recording mode?\n"
 "\n"
 msgstr ""
-"This action will exit the change recording mode.\n"
-"Any information about changes will be lost.\n"
-"\n"
-"Exit change recording mode?\n"
-"\n"
 
 #. E2CcY
 #: include/sfx2/strings.hrc:171
@@ -1264,12 +1259,12 @@ msgstr ""
 "పేరు పూరమే అప్రమేయ శైలిగా ఉన్నది.\n"
 "దయచేసి వేరే పేరును ఎంచుకొనుము."
 
-#. NsBFv
+#. NWDmA
 #: include/sfx2/strings.hrc:234
 msgctxt "STR_DELETE_STYLE_USED"
 msgid ""
 "One or more of the selected styles is in use in this document.\n"
-"If you delete these styles, text will revert to the parent style.\n"
+"If you will delete it, text or objects using these styles will revert to the parent style.\n"
 "Do you still wish to delete these styles?\n"
 msgstr ""
 
@@ -1947,6 +1942,12 @@ msgstr ""
 #: include/sfx2/strings.hrc:352
 msgctxt "STR_CLICKHYPERLINK"
 msgid "Click to open hyperlink: %{link}"
+msgstr ""
+
+#. eFJMp
+#: include/sfx2/strings.hrc:354
+msgctxt "STR_STYLEUSEDBY"
+msgid "(used by: %STYLELIST)"
 msgstr ""
 
 #. F5rSU
@@ -3292,171 +3293,187 @@ msgid "File"
 msgstr "ఫైల్"
 
 #. QAUXF
-#: sfx2/uiconfig/ui/optprintpage.ui:43
+#: sfx2/uiconfig/ui/optprintpage.ui:37
 msgctxt "optprintpage|printer"
 msgid "_Printer"
 msgstr "ముద్రణా యంత్రం(_P)"
 
 #. Eyv8g
-#: sfx2/uiconfig/ui/optprintpage.ui:59
+#: sfx2/uiconfig/ui/optprintpage.ui:53
 msgctxt "optprintpage|file"
 msgid "Print to _file"
 msgstr "ఫైల్ న కు ముద్రించు(_f)"
 
-#. Fgkij
-#: sfx2/uiconfig/ui/optprintpage.ui:77
+#. C8jvp
+#: sfx2/uiconfig/ui/optprintpage.ui:75
 msgctxt "optprintpage|label4"
-msgid "Settings for:"
-msgstr "దీని కొరకు అమరికలు:"
+msgid "Settings for"
+msgstr ""
 
-#. 5qQBR
-#: sfx2/uiconfig/ui/optprintpage.ui:106
-msgctxt "optprintpage|reducetrans"
-msgid "_Reduce transparency"
-msgstr "పారదర్శకతను తగ్గించు(_R)"
+#. 2T5Af
+#: sfx2/uiconfig/ui/optprintpage.ui:108
+msgctxt "optprintpage|papersize"
+msgid "P_aper size"
+msgstr "కాగిత పరిమాణం(_a)"
+
+#. stDFq
+#: sfx2/uiconfig/ui/optprintpage.ui:123
+msgctxt "optprintpage|paperorient"
+msgid "Pap_er orientation"
+msgstr "కాగిత తీరు(_e)"
+
+#. L6rtF
+#: sfx2/uiconfig/ui/optprintpage.ui:138
+msgctxt "optprintpage|trans"
+msgid "_Transparency"
+msgstr "పారదర్శకత(_T)"
+
+#. C5jZN
+#: sfx2/uiconfig/ui/optprintpage.ui:159
+msgctxt "optprintpage|label2"
+msgid "Warnings"
+msgstr ""
 
 #. PJFLE
-#: sfx2/uiconfig/ui/optprintpage.ui:121
+#: sfx2/uiconfig/ui/optprintpage.ui:190
 msgctxt "optprintpage|reducegrad"
 msgid "Reduce _gradient"
 msgstr "గ్రేడియంట్ తగ్గించు (_g)"
 
-#. wm7C7
-#: sfx2/uiconfig/ui/optprintpage.ui:136
-msgctxt "optprintpage|converttogray"
-msgid "Con_vert colors to grayscale"
-msgstr "రంగులను తెలుపు-నలుపుకు పరివర్తించు(_v)"
-
-#. B4C76
-#: sfx2/uiconfig/ui/optprintpage.ui:161
-msgctxt "optprintpage|reducetransauto"
-msgid "Auto_matically"
-msgstr "స్వయంచాలక(_m)"
-
-#. K7P4C
-#: sfx2/uiconfig/ui/optprintpage.ui:177
-msgctxt "optprintpage|reducetransnone"
-msgid "_No transparency"
-msgstr "పారదర్శకత లేదు(_N)"
-
 #. skDME
-#: sfx2/uiconfig/ui/optprintpage.ui:216
+#: sfx2/uiconfig/ui/optprintpage.ui:220
 #, fuzzy
 msgctxt "optprintpage|reducegradstripes"
 msgid "Gradient _stripes:"
 msgstr "ఏటవాలు ప్రమాణ స్ట్రైప్ లు(_s)"
 
 #. W8LE7
-#: sfx2/uiconfig/ui/optprintpage.ui:250
+#: sfx2/uiconfig/ui/optprintpage.ui:254
 msgctxt "optprintpage|reducegradcolor"
 msgid "Intermediate _color"
 msgstr "మాధ్యమిక రంగు(_c)"
 
-#. YXTXc
+#. myMLR
 #: sfx2/uiconfig/ui/optprintpage.ui:284
-msgctxt "optprintpage|reducebitmapoptimal"
-msgid "_High print quality"
-msgstr "ఎక్కువ నాణ్యత కలిగిన ముద్రణ(_H)"
+msgctxt "optprintpage|label1"
+msgid "Reduce Gradient"
+msgstr ""
 
 #. qF2KM
-#: sfx2/uiconfig/ui/optprintpage.ui:300
+#: sfx2/uiconfig/ui/optprintpage.ui:325
 msgctxt "optprintpage|reducebitmapnormal"
 msgid "N_ormal print quality"
 msgstr "సాధారణ నాణ్యత కలిగిన ముద్రణ(_o)"
 
 #. EZGK5
-#: sfx2/uiconfig/ui/optprintpage.ui:321
+#: sfx2/uiconfig/ui/optprintpage.ui:346
 #, fuzzy
 msgctxt "optprintpage|reducebitmapresol"
 msgid "Reso_lution:"
 msgstr "విభాజకత(_l)"
 
 #. 6ALtE
-#: sfx2/uiconfig/ui/optprintpage.ui:340
+#: sfx2/uiconfig/ui/optprintpage.ui:365
 msgctxt "optprintpage|reducebitmapdpi"
 msgid "72 DPI"
 msgstr "72 డిపిఐ"
 
 #. FgpJ3
-#: sfx2/uiconfig/ui/optprintpage.ui:341
+#: sfx2/uiconfig/ui/optprintpage.ui:366
 msgctxt "optprintpage|reducebitmapdpi"
 msgid "96 DPI"
 msgstr "96 డిపిఐ"
 
 #. d7BqR
-#: sfx2/uiconfig/ui/optprintpage.ui:342
+#: sfx2/uiconfig/ui/optprintpage.ui:367
 msgctxt "optprintpage|reducebitmapdpi"
 msgid "150 DPI (Fax)"
 msgstr "156 డిపిఐ (ఫాక్స్)"
 
 #. 46imh
-#: sfx2/uiconfig/ui/optprintpage.ui:343
+#: sfx2/uiconfig/ui/optprintpage.ui:368
 msgctxt "optprintpage|reducebitmapdpi"
 msgid "200 DPI (default)"
 msgstr "200 డిపిఐ(అప్రమేయము)"
 
 #. AsLSp
-#: sfx2/uiconfig/ui/optprintpage.ui:344
+#: sfx2/uiconfig/ui/optprintpage.ui:369
 msgctxt "optprintpage|reducebitmapdpi"
 msgid "300 DPI"
 msgstr "300 డిపిఐ"
 
 #. qZJg5
-#: sfx2/uiconfig/ui/optprintpage.ui:345
+#: sfx2/uiconfig/ui/optprintpage.ui:370
 msgctxt "optprintpage|reducebitmapdpi"
 msgid "600 DPI"
 msgstr "600 డిపిఐ"
 
-#. CrFLq
-#: sfx2/uiconfig/ui/optprintpage.ui:361
-msgctxt "optprintpage|reducebitmaptrans"
-msgid "Include transparent objects"
-msgstr "పారదర్శక ఆబ్జక్టులను చేర్చు"
+#. YXTXc
+#: sfx2/uiconfig/ui/optprintpage.ui:386
+msgctxt "optprintpage|reducebitmapoptimal"
+msgid "_High print quality"
+msgstr "ఎక్కువ నాణ్యత కలిగిన ముద్రణ(_H)"
 
 #. ySmQe
-#: sfx2/uiconfig/ui/optprintpage.ui:385
+#: sfx2/uiconfig/ui/optprintpage.ui:410
 msgctxt "optprintpage|reducebitmap"
 msgid "Reduce _bitmaps"
 msgstr "బిట్ మాపులను తగ్గించు(_b)"
 
+#. YxX2s
+#: sfx2/uiconfig/ui/optprintpage.ui:431
+msgctxt "optprintpage|label1"
+msgid "Reduce Bitmaps"
+msgstr ""
+
+#. B4C76
+#: sfx2/uiconfig/ui/optprintpage.ui:472
+msgctxt "optprintpage|reducetransauto"
+msgid "Auto_matically"
+msgstr "స్వయంచాలక(_m)"
+
+#. K7P4C
+#: sfx2/uiconfig/ui/optprintpage.ui:488
+msgctxt "optprintpage|reducetransnone"
+msgid "_No transparency"
+msgstr "పారదర్శకత లేదు(_N)"
+
+#. 5qQBR
+#: sfx2/uiconfig/ui/optprintpage.ui:512
+msgctxt "optprintpage|reducetrans"
+msgid "_Reduce transparency"
+msgstr "పారదర్శకతను తగ్గించు(_R)"
+
+#. B5Cpd
+#: sfx2/uiconfig/ui/optprintpage.ui:533
+msgctxt "optprintpage|label1"
+msgid "Reduce Transparency"
+msgstr ""
+
 #. GAFzh
-#: sfx2/uiconfig/ui/optprintpage.ui:400
+#: sfx2/uiconfig/ui/optprintpage.ui:564
 #, fuzzy
 msgctxt "optprintpage|pdf"
 msgid "_PDF as standard print job format"
 msgstr "ప్రామాణిక ముద్రణ జాబ్ ఫార్మాట్ వలె _PDF"
 
-#. ZzeAT
-#: sfx2/uiconfig/ui/optprintpage.ui:430
-#, fuzzy
-msgctxt "optprintpage|label1"
-msgid "Reduce Print Data"
-msgstr "ముద్రించు దత్తాంశమును తగ్గించు"
+#. wm7C7
+#: sfx2/uiconfig/ui/optprintpage.ui:579
+msgctxt "optprintpage|converttogray"
+msgid "Con_vert colors to grayscale"
+msgstr "రంగులను తెలుపు-నలుపుకు పరివర్తించు(_v)"
 
-#. 2T5Af
-#: sfx2/uiconfig/ui/optprintpage.ui:463
-msgctxt "optprintpage|papersize"
-msgid "P_aper size"
-msgstr "కాగిత పరిమాణం(_a)"
+#. CrFLq
+#: sfx2/uiconfig/ui/optprintpage.ui:594
+msgctxt "optprintpage|reducebitmaptrans"
+msgid "Include transparent objects"
+msgstr "పారదర్శక ఆబ్జక్టులను చేర్చు"
 
-#. stDFq
-#: sfx2/uiconfig/ui/optprintpage.ui:478
-msgctxt "optprintpage|paperorient"
-msgid "Pap_er orientation"
-msgstr "కాగిత తీరు(_e)"
-
-#. L6rtF
-#: sfx2/uiconfig/ui/optprintpage.ui:494
-msgctxt "optprintpage|trans"
-msgid "_Transparency"
-msgstr "పారదర్శకత(_T)"
-
-#. jVE55
-#: sfx2/uiconfig/ui/optprintpage.ui:515
-#, fuzzy
-msgctxt "optprintpage|label2"
-msgid "Printer Warnings"
-msgstr "ముద్రణా యంత్రపు హెచ్చరికలు"
+#. bWPko
+#: sfx2/uiconfig/ui/optprintpage.ui:615
+msgctxt "optprintpage|label4"
+msgid "Defaults"
+msgstr ""
 
 #. QrtGb
 #: sfx2/uiconfig/ui/password.ui:8
