@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2019-11-13 13:47+0100\n"
+"POT-Creation-Date: 2020-01-17 16:45+0100\n"
 "PO-Revision-Date: 2019-08-02 17:58+0000\n"
 "Last-Translator: Valter Mura <valtermura@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -931,21 +931,16 @@ msgctxt "RID_SVXSTR_GRFILTER_FILTERERROR"
 msgid "Image filter not found"
 msgstr "Filtro immagine non trovato"
 
-#. GV8KL
+#. ejBgZ
 #: include/sfx2/strings.hrc:170
 msgctxt "RID_SVXSTR_END_REDLINING_WARNING"
 msgid ""
 "This action will exit the change recording mode.\n"
-"Any information about changes will be lost.\n"
+"No information about changes will be recorded from now on.\n"
 "\n"
 "Exit change recording mode?\n"
 "\n"
 msgstr ""
-"Con questa operazione si termina la registrazione delle modifiche.\n"
-"L'informazione relativa alle modifiche andrà persa.\n"
-"\n"
-"Terminare la registrazione?\n"
-"\n"
 
 #. E2CcY
 #: include/sfx2/strings.hrc:171
@@ -1259,17 +1254,14 @@ msgstr ""
 "Il nome è già usato da uno stile predefinito.\n"
 "Scegli un altro nome."
 
-#. NsBFv
+#. NWDmA
 #: include/sfx2/strings.hrc:234
 msgctxt "STR_DELETE_STYLE_USED"
 msgid ""
 "One or more of the selected styles is in use in this document.\n"
-"If you delete these styles, text will revert to the parent style.\n"
+"If you will delete it, text or objects using these styles will revert to the parent style.\n"
 "Do you still wish to delete these styles?\n"
 msgstr ""
-"In questo documento è in uso uno degli stili selezionati, o più di uno.\n"
-"Se elimini questi stili il testo ritornerà allo stile genitore.\n"
-"Vuoi ancora eliminare questi stili?\n"
 
 #. kuD77
 #: include/sfx2/strings.hrc:235
@@ -1940,6 +1932,12 @@ msgctxt "STR_CLICKHYPERLINK"
 msgid "Click to open hyperlink: %{link}"
 msgstr ""
 
+#. eFJMp
+#: include/sfx2/strings.hrc:354
+msgctxt "STR_STYLEUSEDBY"
+msgid "(used by: %STYLELIST)"
+msgstr ""
+
 #. F5rSU
 #: sfx2/inc/dinfdlg.hrc:27
 msgctxt "SFX_CB_PROPERTY_STRINGARRAY"
@@ -2469,19 +2467,19 @@ msgid "Delete"
 msgstr "Elimina"
 
 #. WGFBK
-#: sfx2/uiconfig/ui/charmapcontrol.ui:27
+#: sfx2/uiconfig/ui/charmapcontrol.ui:20
 msgctxt "charmapcontrol|label1"
 msgid "Favorites"
 msgstr "Preferiti"
 
 #. HAe2e
-#: sfx2/uiconfig/ui/charmapcontrol.ui:248
+#: sfx2/uiconfig/ui/charmapcontrol.ui:258
 msgctxt "charmapcontrol|label2"
 msgid "Recent"
 msgstr "Recenti"
 
 #. BQwCQ
-#: sfx2/uiconfig/ui/charmapcontrol.ui:468
+#: sfx2/uiconfig/ui/charmapcontrol.ui:494
 msgctxt "charmapcontrol|specialchardlg"
 msgid "More Characters…"
 msgstr "Altri caratteri..."
@@ -2996,7 +2994,7 @@ msgctxt "licensedialog|show"
 msgid "_Show License"
 msgstr "_Mostra licenza"
 
-#. dPabj
+#. BUn8M
 #: sfx2/uiconfig/ui/licensedialog.ui:68
 msgctxt "licensedialog|label"
 msgid ""
@@ -3006,19 +3004,10 @@ msgid ""
 "\n"
 "All trademarks and registered trademarks mentioned herein are the property of their respective owners.\n"
 "\n"
-"Copyright © 2000–2019 LibreOffice contributors. All rights reserved.\n"
+"Copyright © 2000–2020 LibreOffice contributors. All rights reserved.\n"
 "\n"
 "This product was created by %OOOVENDOR, based on OpenOffice.org, which is Copyright 2000, 2011 Oracle and/or its affiliates. %OOOVENDOR acknowledges all community members, please see http://www.libreoffice.org/ for more details."
 msgstr ""
-"%PRODUCTNAME è reso disponibile nei termini della Mozilla Public License, versione 2.0. È possibile consultare una copia della MPL all'indirizzo http://mozilla.org/MPL/2.0/.\n"
-"\n"
-"I termini della licenza e gli avvisi di copyright sul codice aggiuntivo di terze parti applicabile a varie porzioni del software sono contenuti nel file LICENSE.html; per visualizzare gli esatti dettagli in inglese, premi il pulsante \"Mostra Licenza\".\n"
-"\n"
-"Tutti i marchi, registrati e non registrati, qui menzionati sono di proprietà dei loro rispettivi proprietari.\n"
-"\n"
-"Copyright © 2000, 2019 Contributori di LibreOffice. Tutti i diritti riservati.\n"
-"\n"
-"Questo prodotto è stato creato da %OOOVENDOR, e basato su OpenOffice.org, che è Copyright 2000, 2011 Oracle e/o loro affiliati. %OOOVENDOR ringrazia tutti i membri della comunità, consultate http://www.libreoffice.org/ per più dettagli."
 
 #. QuVoN
 #: sfx2/uiconfig/ui/linefragment.ui:55
@@ -3219,166 +3208,184 @@ msgid "File"
 msgstr "File"
 
 #. QAUXF
-#: sfx2/uiconfig/ui/optprintpage.ui:43
+#: sfx2/uiconfig/ui/optprintpage.ui:37
 msgctxt "optprintpage|printer"
 msgid "_Printer"
 msgstr "Stampante"
 
 #. Eyv8g
-#: sfx2/uiconfig/ui/optprintpage.ui:59
+#: sfx2/uiconfig/ui/optprintpage.ui:53
 msgctxt "optprintpage|file"
 msgid "Print to _file"
 msgstr "Stampa nel _file"
 
-#. Fgkij
-#: sfx2/uiconfig/ui/optprintpage.ui:77
+#. C8jvp
+#: sfx2/uiconfig/ui/optprintpage.ui:75
 msgctxt "optprintpage|label4"
-msgid "Settings for:"
-msgstr "Impostazioni per:"
-
-#. 5qQBR
-#: sfx2/uiconfig/ui/optprintpage.ui:106
-msgctxt "optprintpage|reducetrans"
-msgid "_Reduce transparency"
-msgstr "Riduci trasparenza"
-
-#. PJFLE
-#: sfx2/uiconfig/ui/optprintpage.ui:121
-msgctxt "optprintpage|reducegrad"
-msgid "Reduce _gradient"
-msgstr "Riduci _sfumatura"
-
-#. wm7C7
-#: sfx2/uiconfig/ui/optprintpage.ui:136
-msgctxt "optprintpage|converttogray"
-msgid "Con_vert colors to grayscale"
-msgstr "Con_verti i colori in sfumature di grigio"
-
-#. B4C76
-#: sfx2/uiconfig/ui/optprintpage.ui:161
-msgctxt "optprintpage|reducetransauto"
-msgid "Auto_matically"
-msgstr "Auto_matico"
-
-#. K7P4C
-#: sfx2/uiconfig/ui/optprintpage.ui:177
-msgctxt "optprintpage|reducetransnone"
-msgid "_No transparency"
-msgstr "Nessuna trasparenza"
-
-#. skDME
-#: sfx2/uiconfig/ui/optprintpage.ui:216
-msgctxt "optprintpage|reducegradstripes"
-msgid "Gradient _stripes:"
-msgstr "_Bande sfumate:"
-
-#. W8LE7
-#: sfx2/uiconfig/ui/optprintpage.ui:250
-msgctxt "optprintpage|reducegradcolor"
-msgid "Intermediate _color"
-msgstr "Colore intermedio"
-
-#. YXTXc
-#: sfx2/uiconfig/ui/optprintpage.ui:284
-msgctxt "optprintpage|reducebitmapoptimal"
-msgid "_High print quality"
-msgstr "Qualità _ottima"
-
-#. qF2KM
-#: sfx2/uiconfig/ui/optprintpage.ui:300
-msgctxt "optprintpage|reducebitmapnormal"
-msgid "N_ormal print quality"
-msgstr "Qualità _normale"
-
-#. EZGK5
-#: sfx2/uiconfig/ui/optprintpage.ui:321
-msgctxt "optprintpage|reducebitmapresol"
-msgid "Reso_lution:"
-msgstr "Riso_luzione:"
-
-#. 6ALtE
-#: sfx2/uiconfig/ui/optprintpage.ui:340
-msgctxt "optprintpage|reducebitmapdpi"
-msgid "72 DPI"
-msgstr "72 DPI"
-
-#. FgpJ3
-#: sfx2/uiconfig/ui/optprintpage.ui:341
-msgctxt "optprintpage|reducebitmapdpi"
-msgid "96 DPI"
-msgstr "96 DPI"
-
-#. d7BqR
-#: sfx2/uiconfig/ui/optprintpage.ui:342
-msgctxt "optprintpage|reducebitmapdpi"
-msgid "150 DPI (Fax)"
-msgstr "150 DPI (Fax)"
-
-#. 46imh
-#: sfx2/uiconfig/ui/optprintpage.ui:343
-msgctxt "optprintpage|reducebitmapdpi"
-msgid "200 DPI (default)"
-msgstr "200 DPI (predefinito)"
-
-#. AsLSp
-#: sfx2/uiconfig/ui/optprintpage.ui:344
-msgctxt "optprintpage|reducebitmapdpi"
-msgid "300 DPI"
-msgstr "300 DPI"
-
-#. qZJg5
-#: sfx2/uiconfig/ui/optprintpage.ui:345
-msgctxt "optprintpage|reducebitmapdpi"
-msgid "600 DPI"
-msgstr "600 DPI"
-
-#. CrFLq
-#: sfx2/uiconfig/ui/optprintpage.ui:361
-msgctxt "optprintpage|reducebitmaptrans"
-msgid "Include transparent objects"
-msgstr "Includi gli oggetti trasparenti"
-
-#. ySmQe
-#: sfx2/uiconfig/ui/optprintpage.ui:385
-msgctxt "optprintpage|reducebitmap"
-msgid "Reduce _bitmaps"
-msgstr "Riduci bitmap"
-
-#. GAFzh
-#: sfx2/uiconfig/ui/optprintpage.ui:400
-msgctxt "optprintpage|pdf"
-msgid "_PDF as standard print job format"
-msgstr "_PDF come formato di stampa standard"
-
-#. ZzeAT
-#: sfx2/uiconfig/ui/optprintpage.ui:430
-msgctxt "optprintpage|label1"
-msgid "Reduce Print Data"
-msgstr "Riduci i dati di stampa"
+msgid "Settings for"
+msgstr ""
 
 #. 2T5Af
-#: sfx2/uiconfig/ui/optprintpage.ui:463
+#: sfx2/uiconfig/ui/optprintpage.ui:108
 msgctxt "optprintpage|papersize"
 msgid "P_aper size"
 msgstr "_Dimensione carta"
 
 #. stDFq
-#: sfx2/uiconfig/ui/optprintpage.ui:478
+#: sfx2/uiconfig/ui/optprintpage.ui:123
 msgctxt "optprintpage|paperorient"
 msgid "Pap_er orientation"
 msgstr "_Orientazione carta"
 
 #. L6rtF
-#: sfx2/uiconfig/ui/optprintpage.ui:494
+#: sfx2/uiconfig/ui/optprintpage.ui:138
 msgctxt "optprintpage|trans"
 msgid "_Transparency"
 msgstr "_Trasparenza"
 
-#. jVE55
-#: sfx2/uiconfig/ui/optprintpage.ui:515
+#. C5jZN
+#: sfx2/uiconfig/ui/optprintpage.ui:159
 msgctxt "optprintpage|label2"
-msgid "Printer Warnings"
-msgstr "Avvertenze di stampa"
+msgid "Warnings"
+msgstr ""
+
+#. PJFLE
+#: sfx2/uiconfig/ui/optprintpage.ui:190
+msgctxt "optprintpage|reducegrad"
+msgid "Reduce _gradient"
+msgstr "Riduci _sfumatura"
+
+#. skDME
+#: sfx2/uiconfig/ui/optprintpage.ui:220
+msgctxt "optprintpage|reducegradstripes"
+msgid "Gradient _stripes:"
+msgstr "_Bande sfumate:"
+
+#. W8LE7
+#: sfx2/uiconfig/ui/optprintpage.ui:254
+msgctxt "optprintpage|reducegradcolor"
+msgid "Intermediate _color"
+msgstr "Colore intermedio"
+
+#. myMLR
+#: sfx2/uiconfig/ui/optprintpage.ui:284
+msgctxt "optprintpage|label1"
+msgid "Reduce Gradient"
+msgstr ""
+
+#. qF2KM
+#: sfx2/uiconfig/ui/optprintpage.ui:325
+msgctxt "optprintpage|reducebitmapnormal"
+msgid "N_ormal print quality"
+msgstr "Qualità _normale"
+
+#. EZGK5
+#: sfx2/uiconfig/ui/optprintpage.ui:346
+msgctxt "optprintpage|reducebitmapresol"
+msgid "Reso_lution:"
+msgstr "Riso_luzione:"
+
+#. 6ALtE
+#: sfx2/uiconfig/ui/optprintpage.ui:365
+msgctxt "optprintpage|reducebitmapdpi"
+msgid "72 DPI"
+msgstr "72 DPI"
+
+#. FgpJ3
+#: sfx2/uiconfig/ui/optprintpage.ui:366
+msgctxt "optprintpage|reducebitmapdpi"
+msgid "96 DPI"
+msgstr "96 DPI"
+
+#. d7BqR
+#: sfx2/uiconfig/ui/optprintpage.ui:367
+msgctxt "optprintpage|reducebitmapdpi"
+msgid "150 DPI (Fax)"
+msgstr "150 DPI (Fax)"
+
+#. 46imh
+#: sfx2/uiconfig/ui/optprintpage.ui:368
+msgctxt "optprintpage|reducebitmapdpi"
+msgid "200 DPI (default)"
+msgstr "200 DPI (predefinito)"
+
+#. AsLSp
+#: sfx2/uiconfig/ui/optprintpage.ui:369
+msgctxt "optprintpage|reducebitmapdpi"
+msgid "300 DPI"
+msgstr "300 DPI"
+
+#. qZJg5
+#: sfx2/uiconfig/ui/optprintpage.ui:370
+msgctxt "optprintpage|reducebitmapdpi"
+msgid "600 DPI"
+msgstr "600 DPI"
+
+#. YXTXc
+#: sfx2/uiconfig/ui/optprintpage.ui:386
+msgctxt "optprintpage|reducebitmapoptimal"
+msgid "_High print quality"
+msgstr "Qualità _ottima"
+
+#. ySmQe
+#: sfx2/uiconfig/ui/optprintpage.ui:410
+msgctxt "optprintpage|reducebitmap"
+msgid "Reduce _bitmaps"
+msgstr "Riduci bitmap"
+
+#. YxX2s
+#: sfx2/uiconfig/ui/optprintpage.ui:431
+msgctxt "optprintpage|label1"
+msgid "Reduce Bitmaps"
+msgstr ""
+
+#. B4C76
+#: sfx2/uiconfig/ui/optprintpage.ui:472
+msgctxt "optprintpage|reducetransauto"
+msgid "Auto_matically"
+msgstr "Auto_matico"
+
+#. K7P4C
+#: sfx2/uiconfig/ui/optprintpage.ui:488
+msgctxt "optprintpage|reducetransnone"
+msgid "_No transparency"
+msgstr "Nessuna trasparenza"
+
+#. 5qQBR
+#: sfx2/uiconfig/ui/optprintpage.ui:512
+msgctxt "optprintpage|reducetrans"
+msgid "_Reduce transparency"
+msgstr "Riduci trasparenza"
+
+#. B5Cpd
+#: sfx2/uiconfig/ui/optprintpage.ui:533
+msgctxt "optprintpage|label1"
+msgid "Reduce Transparency"
+msgstr ""
+
+#. GAFzh
+#: sfx2/uiconfig/ui/optprintpage.ui:564
+msgctxt "optprintpage|pdf"
+msgid "_PDF as standard print job format"
+msgstr "_PDF come formato di stampa standard"
+
+#. wm7C7
+#: sfx2/uiconfig/ui/optprintpage.ui:579
+msgctxt "optprintpage|converttogray"
+msgid "Con_vert colors to grayscale"
+msgstr "Con_verti i colori in sfumature di grigio"
+
+#. CrFLq
+#: sfx2/uiconfig/ui/optprintpage.ui:594
+msgctxt "optprintpage|reducebitmaptrans"
+msgid "Include transparent objects"
+msgstr "Includi gli oggetti trasparenti"
+
+#. bWPko
+#: sfx2/uiconfig/ui/optprintpage.ui:615
+msgctxt "optprintpage|label4"
+msgid "Defaults"
+msgstr ""
 
 #. QrtGb
 #: sfx2/uiconfig/ui/password.ui:8
@@ -3651,61 +3658,61 @@ msgid "_Writer Document"
 msgstr "Documento _Writer"
 
 #. Bvz5c
-#: sfx2/uiconfig/ui/startcenter.ui:284
+#: sfx2/uiconfig/ui/startcenter.ui:283
 msgctxt "startcenter|calc_all"
 msgid "_Calc Spreadsheet"
 msgstr "Foglio elettronico _Calc"
 
 #. RxGP6
-#: sfx2/uiconfig/ui/startcenter.ui:304
+#: sfx2/uiconfig/ui/startcenter.ui:302
 msgctxt "startcenter|impress_all"
 msgid "_Impress Presentation"
 msgstr "Presentazione _Impress"
 
 #. 7fE2M
-#: sfx2/uiconfig/ui/startcenter.ui:324
+#: sfx2/uiconfig/ui/startcenter.ui:321
 msgctxt "startcenter|draw_all"
 msgid "_Draw Drawing"
 msgstr "Disegno _Draw"
 
 #. 7wn8r
-#: sfx2/uiconfig/ui/startcenter.ui:344
+#: sfx2/uiconfig/ui/startcenter.ui:340
 msgctxt "startcenter|math_all"
 msgid "_Math Formula"
 msgstr "Formula _Math"
 
 #. nnwDC
-#: sfx2/uiconfig/ui/startcenter.ui:364
+#: sfx2/uiconfig/ui/startcenter.ui:359
 msgctxt "startcenter|database_all"
 msgid "_Base Database"
 msgstr "Database _Base"
 
 #. ZEDmn
-#: sfx2/uiconfig/ui/startcenter.ui:397
+#: sfx2/uiconfig/ui/startcenter.ui:391
 msgctxt "startcenter|althelplabel"
 msgid "He_lp"
 msgstr "_Aiuto"
 
 #. oqVes
-#: sfx2/uiconfig/ui/startcenter.ui:454
+#: sfx2/uiconfig/ui/startcenter.ui:447
 msgctxt "startcenter|extensions"
 msgid "E_xtensions"
 msgstr "E_stensioni"
 
 #. rDw4E
-#: sfx2/uiconfig/ui/startcenter.ui:482
+#: sfx2/uiconfig/ui/startcenter.ui:474
 msgctxt "startcenter|label1"
 msgid "Application"
 msgstr "Applicazione"
 
 #. UiDMp
-#: sfx2/uiconfig/ui/startcenter.ui:500
+#: sfx2/uiconfig/ui/startcenter.ui:492
 msgctxt "startcenter|all_recent_label"
 msgid "Recent Files List"
 msgstr "Elenco dei file recenti"
 
 #. kho2B
-#: sfx2/uiconfig/ui/startcenter.ui:513
+#: sfx2/uiconfig/ui/startcenter.ui:505
 msgctxt "startcenter|local_view_label"
 msgid "Templates List"
 msgstr "Elenco dei modelli"

@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2019-11-13 13:47+0100\n"
+"POT-Creation-Date: 2020-01-17 16:45+0100\n"
 "PO-Revision-Date: 2019-01-28 02:43+0000\n"
 "Last-Translator: a7talam <amanpreet.alam@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -919,21 +919,16 @@ msgctxt "RID_SVXSTR_GRFILTER_FILTERERROR"
 msgid "Image filter not found"
 msgstr ""
 
-#. GV8KL
+#. ejBgZ
 #: include/sfx2/strings.hrc:170
 msgctxt "RID_SVXSTR_END_REDLINING_WARNING"
 msgid ""
 "This action will exit the change recording mode.\n"
-"Any information about changes will be lost.\n"
+"No information about changes will be recorded from now on.\n"
 "\n"
 "Exit change recording mode?\n"
 "\n"
 msgstr ""
-"ਇਸ ਕਾਰਵਾਈ ਨਾਲ ਤਬਦੀਲੀ ਰਿਕਾਰਡ ਢੰਗ ਬੰਦ ਹੋ ਜਾਵੇਗਾ\n"
-"ਤਬਦੀਲੀਆਂ ਬਾਰੇ ਪ੍ਰਾਪਤ ਜਾਣਕਾਰੀ ਖਤਮ ਹੋ ਜਾਵੇਗੀ।\n"
-"\n"
-"ਰਿਕਾਰਡ ਢੰਗ ਬੰਦ ਕਰਨਾ ਹੈ?\n"
-"\n"
 
 #. E2CcY
 #: include/sfx2/strings.hrc:171
@@ -1251,12 +1246,12 @@ msgstr ""
 "ਨਾਂ ਪਹਿਲਾਂ ਹੀ ਡਿਫਾਲਟ ਸਟਾਈਲ ਵਾਂਗ ਮੌਜੂਦ ਹੈ।\n"
 "ਹੋਰ ਨਾਂ ਦਿਓ ਜੀ।"
 
-#. NsBFv
+#. NWDmA
 #: include/sfx2/strings.hrc:234
 msgctxt "STR_DELETE_STYLE_USED"
 msgid ""
 "One or more of the selected styles is in use in this document.\n"
-"If you delete these styles, text will revert to the parent style.\n"
+"If you will delete it, text or objects using these styles will revert to the parent style.\n"
 "Do you still wish to delete these styles?\n"
 msgstr ""
 
@@ -1933,6 +1928,12 @@ msgctxt "STR_CLICKHYPERLINK"
 msgid "Click to open hyperlink: %{link}"
 msgstr ""
 
+#. eFJMp
+#: include/sfx2/strings.hrc:354
+msgctxt "STR_STYLEUSEDBY"
+msgid "(used by: %STYLELIST)"
+msgstr ""
+
 #. F5rSU
 #: sfx2/inc/dinfdlg.hrc:27
 #, fuzzy
@@ -2491,20 +2492,20 @@ msgid "Delete"
 msgstr "ਹਟਾਓ"
 
 #. WGFBK
-#: sfx2/uiconfig/ui/charmapcontrol.ui:27
+#: sfx2/uiconfig/ui/charmapcontrol.ui:20
 #, fuzzy
 msgctxt "charmapcontrol|label1"
 msgid "Favorites"
 msgstr "ਮਨਪਸੰਦ(~F)"
 
 #. HAe2e
-#: sfx2/uiconfig/ui/charmapcontrol.ui:248
+#: sfx2/uiconfig/ui/charmapcontrol.ui:258
 msgctxt "charmapcontrol|label2"
 msgid "Recent"
 msgstr ""
 
 #. BQwCQ
-#: sfx2/uiconfig/ui/charmapcontrol.ui:468
+#: sfx2/uiconfig/ui/charmapcontrol.ui:494
 msgctxt "charmapcontrol|specialchardlg"
 msgid "More Characters…"
 msgstr ""
@@ -3047,7 +3048,7 @@ msgctxt "licensedialog|show"
 msgid "_Show License"
 msgstr "ਲਾਈਸੈਂਸ ਵੇਖਾਓ(_S)"
 
-#. dPabj
+#. BUn8M
 #: sfx2/uiconfig/ui/licensedialog.ui:68
 msgctxt "licensedialog|label"
 msgid ""
@@ -3057,7 +3058,7 @@ msgid ""
 "\n"
 "All trademarks and registered trademarks mentioned herein are the property of their respective owners.\n"
 "\n"
-"Copyright © 2000–2019 LibreOffice contributors. All rights reserved.\n"
+"Copyright © 2000–2020 LibreOffice contributors. All rights reserved.\n"
 "\n"
 "This product was created by %OOOVENDOR, based on OpenOffice.org, which is Copyright 2000, 2011 Oracle and/or its affiliates. %OOOVENDOR acknowledges all community members, please see http://www.libreoffice.org/ for more details."
 msgstr ""
@@ -3281,170 +3282,186 @@ msgid "File"
 msgstr "ਫਾਇਲ"
 
 #. QAUXF
-#: sfx2/uiconfig/ui/optprintpage.ui:43
+#: sfx2/uiconfig/ui/optprintpage.ui:37
 msgctxt "optprintpage|printer"
 msgid "_Printer"
 msgstr "ਪਰਿੰਟਰ(_P)"
 
 #. Eyv8g
-#: sfx2/uiconfig/ui/optprintpage.ui:59
+#: sfx2/uiconfig/ui/optprintpage.ui:53
 msgctxt "optprintpage|file"
 msgid "Print to _file"
 msgstr "ਫਾਇਲ ਉੱਤੇ ਛਾਪੋ(_F)"
 
-#. Fgkij
-#: sfx2/uiconfig/ui/optprintpage.ui:77
+#. C8jvp
+#: sfx2/uiconfig/ui/optprintpage.ui:75
 msgctxt "optprintpage|label4"
-msgid "Settings for:"
+msgid "Settings for"
 msgstr ""
 
-#. 5qQBR
-#: sfx2/uiconfig/ui/optprintpage.ui:106
-msgctxt "optprintpage|reducetrans"
-msgid "_Reduce transparency"
-msgstr "ਪਾਰਦਰਸ਼ਤਾ ਘਟਾਓ(_R)"
+#. 2T5Af
+#: sfx2/uiconfig/ui/optprintpage.ui:108
+msgctxt "optprintpage|papersize"
+msgid "P_aper size"
+msgstr "ਸਫ਼ਾ ਆਕਾਰ(_A)"
+
+#. stDFq
+#: sfx2/uiconfig/ui/optprintpage.ui:123
+msgctxt "optprintpage|paperorient"
+msgid "Pap_er orientation"
+msgstr "ਸਫ਼ਾ ਸਥਿਤੀ(_E)"
+
+#. L6rtF
+#: sfx2/uiconfig/ui/optprintpage.ui:138
+msgctxt "optprintpage|trans"
+msgid "_Transparency"
+msgstr "ਪਾਰਦਰਸ਼ਤਾ(_T)"
+
+#. C5jZN
+#: sfx2/uiconfig/ui/optprintpage.ui:159
+msgctxt "optprintpage|label2"
+msgid "Warnings"
+msgstr ""
 
 #. PJFLE
-#: sfx2/uiconfig/ui/optprintpage.ui:121
+#: sfx2/uiconfig/ui/optprintpage.ui:190
 msgctxt "optprintpage|reducegrad"
 msgid "Reduce _gradient"
 msgstr ""
 
-#. wm7C7
-#: sfx2/uiconfig/ui/optprintpage.ui:136
-msgctxt "optprintpage|converttogray"
-msgid "Con_vert colors to grayscale"
-msgstr "ਰੰਗਾਂ ਨੂੰ ਸਲੇਟੀ ਲਈ ਬਦਲੋ(_V)"
-
-#. B4C76
-#: sfx2/uiconfig/ui/optprintpage.ui:161
-msgctxt "optprintpage|reducetransauto"
-msgid "Auto_matically"
-msgstr "ਸਵੈ-ਚਾਲਿਤ(_m)"
-
-#. K7P4C
-#: sfx2/uiconfig/ui/optprintpage.ui:177
-msgctxt "optprintpage|reducetransnone"
-msgid "_No transparency"
-msgstr "ਕੋਈ ਪਾਰਦਰਸ਼ਤਾ ਨਹੀਂ(_n)"
-
 #. skDME
-#: sfx2/uiconfig/ui/optprintpage.ui:216
+#: sfx2/uiconfig/ui/optprintpage.ui:220
 #, fuzzy
 msgctxt "optprintpage|reducegradstripes"
 msgid "Gradient _stripes:"
 msgstr "ਢਾਲੂ ਪਗ਼(_s)"
 
 #. W8LE7
-#: sfx2/uiconfig/ui/optprintpage.ui:250
+#: sfx2/uiconfig/ui/optprintpage.ui:254
 msgctxt "optprintpage|reducegradcolor"
 msgid "Intermediate _color"
 msgstr "ਮੱਧ ਰੰਗ(_c)"
 
-#. YXTXc
+#. myMLR
 #: sfx2/uiconfig/ui/optprintpage.ui:284
-msgctxt "optprintpage|reducebitmapoptimal"
-msgid "_High print quality"
-msgstr "ਉੱਚ ਪੱਧਰ ਛਾਪਣ ਗੁਣਵੱਤਾ(_H)"
+msgctxt "optprintpage|label1"
+msgid "Reduce Gradient"
+msgstr ""
 
 #. qF2KM
-#: sfx2/uiconfig/ui/optprintpage.ui:300
+#: sfx2/uiconfig/ui/optprintpage.ui:325
 msgctxt "optprintpage|reducebitmapnormal"
 msgid "N_ormal print quality"
 msgstr "ਸਧਾਰਨ ਛਾਪਣ ਗੁਣਵੱਤਾ(_O)"
 
 #. EZGK5
-#: sfx2/uiconfig/ui/optprintpage.ui:321
+#: sfx2/uiconfig/ui/optprintpage.ui:346
 #, fuzzy
 msgctxt "optprintpage|reducebitmapresol"
 msgid "Reso_lution:"
 msgstr "ਰੈਜ਼ੋਲੇਸ਼ਨ(_L)"
 
 #. 6ALtE
-#: sfx2/uiconfig/ui/optprintpage.ui:340
+#: sfx2/uiconfig/ui/optprintpage.ui:365
 msgctxt "optprintpage|reducebitmapdpi"
 msgid "72 DPI"
 msgstr "72 DPI"
 
 #. FgpJ3
-#: sfx2/uiconfig/ui/optprintpage.ui:341
+#: sfx2/uiconfig/ui/optprintpage.ui:366
 msgctxt "optprintpage|reducebitmapdpi"
 msgid "96 DPI"
 msgstr "96 DPI"
 
 #. d7BqR
-#: sfx2/uiconfig/ui/optprintpage.ui:342
+#: sfx2/uiconfig/ui/optprintpage.ui:367
 msgctxt "optprintpage|reducebitmapdpi"
 msgid "150 DPI (Fax)"
 msgstr "150 DPI (ਫੈਕਸ)"
 
 #. 46imh
-#: sfx2/uiconfig/ui/optprintpage.ui:343
+#: sfx2/uiconfig/ui/optprintpage.ui:368
 msgctxt "optprintpage|reducebitmapdpi"
 msgid "200 DPI (default)"
 msgstr "200 DPI (ਡਿਫਾਲਟ)"
 
 #. AsLSp
-#: sfx2/uiconfig/ui/optprintpage.ui:344
+#: sfx2/uiconfig/ui/optprintpage.ui:369
 msgctxt "optprintpage|reducebitmapdpi"
 msgid "300 DPI"
 msgstr "300 DPI"
 
 #. qZJg5
-#: sfx2/uiconfig/ui/optprintpage.ui:345
+#: sfx2/uiconfig/ui/optprintpage.ui:370
 msgctxt "optprintpage|reducebitmapdpi"
 msgid "600 DPI"
 msgstr "600 DPI"
 
-#. CrFLq
-#: sfx2/uiconfig/ui/optprintpage.ui:361
-msgctxt "optprintpage|reducebitmaptrans"
-msgid "Include transparent objects"
-msgstr ""
+#. YXTXc
+#: sfx2/uiconfig/ui/optprintpage.ui:386
+msgctxt "optprintpage|reducebitmapoptimal"
+msgid "_High print quality"
+msgstr "ਉੱਚ ਪੱਧਰ ਛਾਪਣ ਗੁਣਵੱਤਾ(_H)"
 
 #. ySmQe
-#: sfx2/uiconfig/ui/optprintpage.ui:385
+#: sfx2/uiconfig/ui/optprintpage.ui:410
 msgctxt "optprintpage|reducebitmap"
 msgid "Reduce _bitmaps"
 msgstr "ਬਿੱਟਮੈਪ ਘਟਾਓ(_b)"
 
+#. YxX2s
+#: sfx2/uiconfig/ui/optprintpage.ui:431
+msgctxt "optprintpage|label1"
+msgid "Reduce Bitmaps"
+msgstr ""
+
+#. B4C76
+#: sfx2/uiconfig/ui/optprintpage.ui:472
+msgctxt "optprintpage|reducetransauto"
+msgid "Auto_matically"
+msgstr "ਸਵੈ-ਚਾਲਿਤ(_m)"
+
+#. K7P4C
+#: sfx2/uiconfig/ui/optprintpage.ui:488
+msgctxt "optprintpage|reducetransnone"
+msgid "_No transparency"
+msgstr "ਕੋਈ ਪਾਰਦਰਸ਼ਤਾ ਨਹੀਂ(_n)"
+
+#. 5qQBR
+#: sfx2/uiconfig/ui/optprintpage.ui:512
+msgctxt "optprintpage|reducetrans"
+msgid "_Reduce transparency"
+msgstr "ਪਾਰਦਰਸ਼ਤਾ ਘਟਾਓ(_R)"
+
+#. B5Cpd
+#: sfx2/uiconfig/ui/optprintpage.ui:533
+msgctxt "optprintpage|label1"
+msgid "Reduce Transparency"
+msgstr ""
+
 #. GAFzh
-#: sfx2/uiconfig/ui/optprintpage.ui:400
+#: sfx2/uiconfig/ui/optprintpage.ui:564
 msgctxt "optprintpage|pdf"
 msgid "_PDF as standard print job format"
 msgstr ""
 
-#. ZzeAT
-#: sfx2/uiconfig/ui/optprintpage.ui:430
-#, fuzzy
-msgctxt "optprintpage|label1"
-msgid "Reduce Print Data"
-msgstr "ਛਪਾਈ ਡਾਟਾ ਘਟਾਓ"
+#. wm7C7
+#: sfx2/uiconfig/ui/optprintpage.ui:579
+msgctxt "optprintpage|converttogray"
+msgid "Con_vert colors to grayscale"
+msgstr "ਰੰਗਾਂ ਨੂੰ ਸਲੇਟੀ ਲਈ ਬਦਲੋ(_V)"
 
-#. 2T5Af
-#: sfx2/uiconfig/ui/optprintpage.ui:463
-msgctxt "optprintpage|papersize"
-msgid "P_aper size"
-msgstr "ਸਫ਼ਾ ਆਕਾਰ(_A)"
+#. CrFLq
+#: sfx2/uiconfig/ui/optprintpage.ui:594
+msgctxt "optprintpage|reducebitmaptrans"
+msgid "Include transparent objects"
+msgstr ""
 
-#. stDFq
-#: sfx2/uiconfig/ui/optprintpage.ui:478
-msgctxt "optprintpage|paperorient"
-msgid "Pap_er orientation"
-msgstr "ਸਫ਼ਾ ਸਥਿਤੀ(_E)"
-
-#. L6rtF
-#: sfx2/uiconfig/ui/optprintpage.ui:494
-msgctxt "optprintpage|trans"
-msgid "_Transparency"
-msgstr "ਪਾਰਦਰਸ਼ਤਾ(_T)"
-
-#. jVE55
-#: sfx2/uiconfig/ui/optprintpage.ui:515
-#, fuzzy
-msgctxt "optprintpage|label2"
-msgid "Printer Warnings"
-msgstr "ਪ੍ਰਿੰਟਰ ਚੇਤਾਵਨੀ"
+#. bWPko
+#: sfx2/uiconfig/ui/optprintpage.ui:615
+msgctxt "optprintpage|label4"
+msgid "Defaults"
+msgstr ""
 
 #. QrtGb
 #: sfx2/uiconfig/ui/password.ui:8
@@ -3737,63 +3754,63 @@ msgid "_Writer Document"
 msgstr "ਮਾਸਟਰ ਡੌਕੂਮੈਂਟ"
 
 #. Bvz5c
-#: sfx2/uiconfig/ui/startcenter.ui:284
+#: sfx2/uiconfig/ui/startcenter.ui:283
 msgctxt "startcenter|calc_all"
 msgid "_Calc Spreadsheet"
 msgstr ""
 
 #. RxGP6
-#: sfx2/uiconfig/ui/startcenter.ui:304
+#: sfx2/uiconfig/ui/startcenter.ui:302
 msgctxt "startcenter|impress_all"
 msgid "_Impress Presentation"
 msgstr ""
 
 #. 7fE2M
-#: sfx2/uiconfig/ui/startcenter.ui:324
+#: sfx2/uiconfig/ui/startcenter.ui:321
 msgctxt "startcenter|draw_all"
 msgid "_Draw Drawing"
 msgstr ""
 
 #. 7wn8r
-#: sfx2/uiconfig/ui/startcenter.ui:344
+#: sfx2/uiconfig/ui/startcenter.ui:340
 msgctxt "startcenter|math_all"
 msgid "_Math Formula"
 msgstr ""
 
 #. nnwDC
-#: sfx2/uiconfig/ui/startcenter.ui:364
+#: sfx2/uiconfig/ui/startcenter.ui:359
 msgctxt "startcenter|database_all"
 msgid "_Base Database"
 msgstr ""
 
 #. ZEDmn
-#: sfx2/uiconfig/ui/startcenter.ui:397
+#: sfx2/uiconfig/ui/startcenter.ui:391
 #, fuzzy
 msgctxt "startcenter|althelplabel"
 msgid "He_lp"
 msgstr "ਮੱਦਦ"
 
 #. oqVes
-#: sfx2/uiconfig/ui/startcenter.ui:454
+#: sfx2/uiconfig/ui/startcenter.ui:447
 #, fuzzy
 msgctxt "startcenter|extensions"
 msgid "E_xtensions"
 msgstr "ਇਕਸਟੈਨਸ਼ਨ"
 
 #. rDw4E
-#: sfx2/uiconfig/ui/startcenter.ui:482
+#: sfx2/uiconfig/ui/startcenter.ui:474
 msgctxt "startcenter|label1"
 msgid "Application"
 msgstr "ਐਪਲੀਕੇਸ਼ਨ"
 
 #. UiDMp
-#: sfx2/uiconfig/ui/startcenter.ui:500
+#: sfx2/uiconfig/ui/startcenter.ui:492
 msgctxt "startcenter|all_recent_label"
 msgid "Recent Files List"
 msgstr ""
 
 #. kho2B
-#: sfx2/uiconfig/ui/startcenter.ui:513
+#: sfx2/uiconfig/ui/startcenter.ui:505
 msgctxt "startcenter|local_view_label"
 msgid "Templates List"
 msgstr ""

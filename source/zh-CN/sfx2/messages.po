@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2019-11-13 13:47+0100\n"
+"POT-Creation-Date: 2020-01-17 16:45+0100\n"
 "PO-Revision-Date: 2019-08-04 18:29+0000\n"
 "Last-Translator: Dian LI <xslidian@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -931,21 +931,16 @@ msgctxt "RID_SVXSTR_GRFILTER_FILTERERROR"
 msgid "Image filter not found"
 msgstr "图像筛选器未找到"
 
-#. GV8KL
+#. ejBgZ
 #: include/sfx2/strings.hrc:170
 msgctxt "RID_SVXSTR_END_REDLINING_WARNING"
 msgid ""
 "This action will exit the change recording mode.\n"
-"Any information about changes will be lost.\n"
+"No information about changes will be recorded from now on.\n"
 "\n"
 "Exit change recording mode?\n"
 "\n"
 msgstr ""
-"此操作会结束修订记录模式。\n"
-"有关更改的所有信息将会丢失。\n"
-"\n"
-"是否要结束修订记录模式？\n"
-"\n"
 
 #. E2CcY
 #: include/sfx2/strings.hrc:171
@@ -1259,17 +1254,14 @@ msgstr ""
 "这个名称是一个默认样式的名称。\n"
 "请使用其他名称。"
 
-#. NsBFv
+#. NWDmA
 #: include/sfx2/strings.hrc:234
 msgctxt "STR_DELETE_STYLE_USED"
 msgid ""
 "One or more of the selected styles is in use in this document.\n"
-"If you delete these styles, text will revert to the parent style.\n"
+"If you will delete it, text or objects using these styles will revert to the parent style.\n"
 "Do you still wish to delete these styles?\n"
 msgstr ""
-"该文档中的一个或多个已选择的样式正在使用。\n"
-"如果您删除这些样式，文本将会被恢复到其上级样式。\n"
-"您仍然要删除这些样式吗？\n"
 
 #. kuD77
 #: include/sfx2/strings.hrc:235
@@ -1940,6 +1932,12 @@ msgctxt "STR_CLICKHYPERLINK"
 msgid "Click to open hyperlink: %{link}"
 msgstr ""
 
+#. eFJMp
+#: include/sfx2/strings.hrc:354
+msgctxt "STR_STYLEUSEDBY"
+msgid "(used by: %STYLELIST)"
+msgstr ""
+
 #. F5rSU
 #: sfx2/inc/dinfdlg.hrc:27
 msgctxt "SFX_CB_PROPERTY_STRINGARRAY"
@@ -2469,19 +2467,19 @@ msgid "Delete"
 msgstr "删除"
 
 #. WGFBK
-#: sfx2/uiconfig/ui/charmapcontrol.ui:27
+#: sfx2/uiconfig/ui/charmapcontrol.ui:20
 msgctxt "charmapcontrol|label1"
 msgid "Favorites"
 msgstr "收藏"
 
 #. HAe2e
-#: sfx2/uiconfig/ui/charmapcontrol.ui:248
+#: sfx2/uiconfig/ui/charmapcontrol.ui:258
 msgctxt "charmapcontrol|label2"
 msgid "Recent"
 msgstr "最近"
 
 #. BQwCQ
-#: sfx2/uiconfig/ui/charmapcontrol.ui:468
+#: sfx2/uiconfig/ui/charmapcontrol.ui:494
 msgctxt "charmapcontrol|specialchardlg"
 msgid "More Characters…"
 msgstr "更多字符..."
@@ -2996,7 +2994,7 @@ msgctxt "licensedialog|show"
 msgid "_Show License"
 msgstr "显示许可证(_S)"
 
-#. dPabj
+#. BUn8M
 #: sfx2/uiconfig/ui/licensedialog.ui:68
 msgctxt "licensedialog|label"
 msgid ""
@@ -3006,19 +3004,10 @@ msgid ""
 "\n"
 "All trademarks and registered trademarks mentioned herein are the property of their respective owners.\n"
 "\n"
-"Copyright © 2000–2019 LibreOffice contributors. All rights reserved.\n"
+"Copyright © 2000–2020 LibreOffice contributors. All rights reserved.\n"
 "\n"
 "This product was created by %OOOVENDOR, based on OpenOffice.org, which is Copyright 2000, 2011 Oracle and/or its affiliates. %OOOVENDOR acknowledges all community members, please see http://www.libreoffice.org/ for more details."
 msgstr ""
-"%PRODUCTNAME 采用 Mozilla Public License v2.0 发布，MPL 许可协议的副本可以在 http://mozilla.org/MPL/2.0/ 找到。\n"
-"\n"
-"我们使用的第三方代码附加版权申明和许可协议可以在 LICENSE.html 文件中找到；选择「显示许可证」可以查看详细的英文表述。\n"
-"\n"
-"此项目提及的所有商标和注册商标均为各自商标所有人的财产。\n"
-"\n"
-"版权所有 © 2000–2019 LibreOffice 的贡献者。保留所有权利。\n"
-"\n"
-"本软件由 %OOOVENDOR 在 OpenOffice.org 基础上开发，版权所有 2000, 2011 Oracle 及其关联方。%OOOVENDOR 谨向所有社区成员致谢，详见 https://www.libreoffice.org/。"
 
 #. QuVoN
 #: sfx2/uiconfig/ui/linefragment.ui:55
@@ -3219,166 +3208,184 @@ msgid "File"
 msgstr "文件"
 
 #. QAUXF
-#: sfx2/uiconfig/ui/optprintpage.ui:43
+#: sfx2/uiconfig/ui/optprintpage.ui:37
 msgctxt "optprintpage|printer"
 msgid "_Printer"
 msgstr "打印机(_P)"
 
 #. Eyv8g
-#: sfx2/uiconfig/ui/optprintpage.ui:59
+#: sfx2/uiconfig/ui/optprintpage.ui:53
 msgctxt "optprintpage|file"
 msgid "Print to _file"
 msgstr "打印成文件(_F)"
 
-#. Fgkij
-#: sfx2/uiconfig/ui/optprintpage.ui:77
+#. C8jvp
+#: sfx2/uiconfig/ui/optprintpage.ui:75
 msgctxt "optprintpage|label4"
-msgid "Settings for:"
-msgstr "设置:"
-
-#. 5qQBR
-#: sfx2/uiconfig/ui/optprintpage.ui:106
-msgctxt "optprintpage|reducetrans"
-msgid "_Reduce transparency"
-msgstr "减少透明度(_R)"
-
-#. PJFLE
-#: sfx2/uiconfig/ui/optprintpage.ui:121
-msgctxt "optprintpage|reducegrad"
-msgid "Reduce _gradient"
-msgstr "降低渐变(_G)"
-
-#. wm7C7
-#: sfx2/uiconfig/ui/optprintpage.ui:136
-msgctxt "optprintpage|converttogray"
-msgid "Con_vert colors to grayscale"
-msgstr "彩色转换成灰度(_V)"
-
-#. B4C76
-#: sfx2/uiconfig/ui/optprintpage.ui:161
-msgctxt "optprintpage|reducetransauto"
-msgid "Auto_matically"
-msgstr "自动(_M)"
-
-#. K7P4C
-#: sfx2/uiconfig/ui/optprintpage.ui:177
-msgctxt "optprintpage|reducetransnone"
-msgid "_No transparency"
-msgstr "不透明(_N)"
-
-#. skDME
-#: sfx2/uiconfig/ui/optprintpage.ui:216
-msgctxt "optprintpage|reducegradstripes"
-msgid "Gradient _stripes:"
-msgstr "渐变条纹(_S):"
-
-#. W8LE7
-#: sfx2/uiconfig/ui/optprintpage.ui:250
-msgctxt "optprintpage|reducegradcolor"
-msgid "Intermediate _color"
-msgstr "中间色(_C)"
-
-#. YXTXc
-#: sfx2/uiconfig/ui/optprintpage.ui:284
-msgctxt "optprintpage|reducebitmapoptimal"
-msgid "_High print quality"
-msgstr "高质量打印(_H)"
-
-#. qF2KM
-#: sfx2/uiconfig/ui/optprintpage.ui:300
-msgctxt "optprintpage|reducebitmapnormal"
-msgid "N_ormal print quality"
-msgstr "普通质量打印(_O)"
-
-#. EZGK5
-#: sfx2/uiconfig/ui/optprintpage.ui:321
-msgctxt "optprintpage|reducebitmapresol"
-msgid "Reso_lution:"
-msgstr "分辨率(_L):"
-
-#. 6ALtE
-#: sfx2/uiconfig/ui/optprintpage.ui:340
-msgctxt "optprintpage|reducebitmapdpi"
-msgid "72 DPI"
-msgstr "72 DPI"
-
-#. FgpJ3
-#: sfx2/uiconfig/ui/optprintpage.ui:341
-msgctxt "optprintpage|reducebitmapdpi"
-msgid "96 DPI"
-msgstr "96 DPI"
-
-#. d7BqR
-#: sfx2/uiconfig/ui/optprintpage.ui:342
-msgctxt "optprintpage|reducebitmapdpi"
-msgid "150 DPI (Fax)"
-msgstr "150 DPI (传真)"
-
-#. 46imh
-#: sfx2/uiconfig/ui/optprintpage.ui:343
-msgctxt "optprintpage|reducebitmapdpi"
-msgid "200 DPI (default)"
-msgstr "200 DPI (默认)"
-
-#. AsLSp
-#: sfx2/uiconfig/ui/optprintpage.ui:344
-msgctxt "optprintpage|reducebitmapdpi"
-msgid "300 DPI"
-msgstr "300 DPI"
-
-#. qZJg5
-#: sfx2/uiconfig/ui/optprintpage.ui:345
-msgctxt "optprintpage|reducebitmapdpi"
-msgid "600 DPI"
-msgstr "600 DPI"
-
-#. CrFLq
-#: sfx2/uiconfig/ui/optprintpage.ui:361
-msgctxt "optprintpage|reducebitmaptrans"
-msgid "Include transparent objects"
-msgstr "包括透明对象"
-
-#. ySmQe
-#: sfx2/uiconfig/ui/optprintpage.ui:385
-msgctxt "optprintpage|reducebitmap"
-msgid "Reduce _bitmaps"
-msgstr "降低位图(_B)"
-
-#. GAFzh
-#: sfx2/uiconfig/ui/optprintpage.ui:400
-msgctxt "optprintpage|pdf"
-msgid "_PDF as standard print job format"
-msgstr "以 _PDF 作为标准打印作业格式"
-
-#. ZzeAT
-#: sfx2/uiconfig/ui/optprintpage.ui:430
-msgctxt "optprintpage|label1"
-msgid "Reduce Print Data"
-msgstr "减少打印数据"
+msgid "Settings for"
+msgstr ""
 
 #. 2T5Af
-#: sfx2/uiconfig/ui/optprintpage.ui:463
+#: sfx2/uiconfig/ui/optprintpage.ui:108
 msgctxt "optprintpage|papersize"
 msgid "P_aper size"
 msgstr "纸张大小(_A)"
 
 #. stDFq
-#: sfx2/uiconfig/ui/optprintpage.ui:478
+#: sfx2/uiconfig/ui/optprintpage.ui:123
 msgctxt "optprintpage|paperorient"
 msgid "Pap_er orientation"
 msgstr "纸张方向(_E)"
 
 #. L6rtF
-#: sfx2/uiconfig/ui/optprintpage.ui:494
+#: sfx2/uiconfig/ui/optprintpage.ui:138
 msgctxt "optprintpage|trans"
 msgid "_Transparency"
 msgstr "透明(_T)"
 
-#. jVE55
-#: sfx2/uiconfig/ui/optprintpage.ui:515
+#. C5jZN
+#: sfx2/uiconfig/ui/optprintpage.ui:159
 msgctxt "optprintpage|label2"
-msgid "Printer Warnings"
-msgstr "打印机的警告"
+msgid "Warnings"
+msgstr ""
+
+#. PJFLE
+#: sfx2/uiconfig/ui/optprintpage.ui:190
+msgctxt "optprintpage|reducegrad"
+msgid "Reduce _gradient"
+msgstr "降低渐变(_G)"
+
+#. skDME
+#: sfx2/uiconfig/ui/optprintpage.ui:220
+msgctxt "optprintpage|reducegradstripes"
+msgid "Gradient _stripes:"
+msgstr "渐变条纹(_S):"
+
+#. W8LE7
+#: sfx2/uiconfig/ui/optprintpage.ui:254
+msgctxt "optprintpage|reducegradcolor"
+msgid "Intermediate _color"
+msgstr "中间色(_C)"
+
+#. myMLR
+#: sfx2/uiconfig/ui/optprintpage.ui:284
+msgctxt "optprintpage|label1"
+msgid "Reduce Gradient"
+msgstr ""
+
+#. qF2KM
+#: sfx2/uiconfig/ui/optprintpage.ui:325
+msgctxt "optprintpage|reducebitmapnormal"
+msgid "N_ormal print quality"
+msgstr "普通质量打印(_O)"
+
+#. EZGK5
+#: sfx2/uiconfig/ui/optprintpage.ui:346
+msgctxt "optprintpage|reducebitmapresol"
+msgid "Reso_lution:"
+msgstr "分辨率(_L):"
+
+#. 6ALtE
+#: sfx2/uiconfig/ui/optprintpage.ui:365
+msgctxt "optprintpage|reducebitmapdpi"
+msgid "72 DPI"
+msgstr "72 DPI"
+
+#. FgpJ3
+#: sfx2/uiconfig/ui/optprintpage.ui:366
+msgctxt "optprintpage|reducebitmapdpi"
+msgid "96 DPI"
+msgstr "96 DPI"
+
+#. d7BqR
+#: sfx2/uiconfig/ui/optprintpage.ui:367
+msgctxt "optprintpage|reducebitmapdpi"
+msgid "150 DPI (Fax)"
+msgstr "150 DPI (传真)"
+
+#. 46imh
+#: sfx2/uiconfig/ui/optprintpage.ui:368
+msgctxt "optprintpage|reducebitmapdpi"
+msgid "200 DPI (default)"
+msgstr "200 DPI (默认)"
+
+#. AsLSp
+#: sfx2/uiconfig/ui/optprintpage.ui:369
+msgctxt "optprintpage|reducebitmapdpi"
+msgid "300 DPI"
+msgstr "300 DPI"
+
+#. qZJg5
+#: sfx2/uiconfig/ui/optprintpage.ui:370
+msgctxt "optprintpage|reducebitmapdpi"
+msgid "600 DPI"
+msgstr "600 DPI"
+
+#. YXTXc
+#: sfx2/uiconfig/ui/optprintpage.ui:386
+msgctxt "optprintpage|reducebitmapoptimal"
+msgid "_High print quality"
+msgstr "高质量打印(_H)"
+
+#. ySmQe
+#: sfx2/uiconfig/ui/optprintpage.ui:410
+msgctxt "optprintpage|reducebitmap"
+msgid "Reduce _bitmaps"
+msgstr "降低位图(_B)"
+
+#. YxX2s
+#: sfx2/uiconfig/ui/optprintpage.ui:431
+msgctxt "optprintpage|label1"
+msgid "Reduce Bitmaps"
+msgstr ""
+
+#. B4C76
+#: sfx2/uiconfig/ui/optprintpage.ui:472
+msgctxt "optprintpage|reducetransauto"
+msgid "Auto_matically"
+msgstr "自动(_M)"
+
+#. K7P4C
+#: sfx2/uiconfig/ui/optprintpage.ui:488
+msgctxt "optprintpage|reducetransnone"
+msgid "_No transparency"
+msgstr "不透明(_N)"
+
+#. 5qQBR
+#: sfx2/uiconfig/ui/optprintpage.ui:512
+msgctxt "optprintpage|reducetrans"
+msgid "_Reduce transparency"
+msgstr "减少透明度(_R)"
+
+#. B5Cpd
+#: sfx2/uiconfig/ui/optprintpage.ui:533
+msgctxt "optprintpage|label1"
+msgid "Reduce Transparency"
+msgstr ""
+
+#. GAFzh
+#: sfx2/uiconfig/ui/optprintpage.ui:564
+msgctxt "optprintpage|pdf"
+msgid "_PDF as standard print job format"
+msgstr "以 _PDF 作为标准打印作业格式"
+
+#. wm7C7
+#: sfx2/uiconfig/ui/optprintpage.ui:579
+msgctxt "optprintpage|converttogray"
+msgid "Con_vert colors to grayscale"
+msgstr "彩色转换成灰度(_V)"
+
+#. CrFLq
+#: sfx2/uiconfig/ui/optprintpage.ui:594
+msgctxt "optprintpage|reducebitmaptrans"
+msgid "Include transparent objects"
+msgstr "包括透明对象"
+
+#. bWPko
+#: sfx2/uiconfig/ui/optprintpage.ui:615
+msgctxt "optprintpage|label4"
+msgid "Defaults"
+msgstr ""
 
 #. QrtGb
 #: sfx2/uiconfig/ui/password.ui:8
@@ -3651,61 +3658,61 @@ msgid "_Writer Document"
 msgstr "_Writer 文本文档"
 
 #. Bvz5c
-#: sfx2/uiconfig/ui/startcenter.ui:284
+#: sfx2/uiconfig/ui/startcenter.ui:283
 msgctxt "startcenter|calc_all"
 msgid "_Calc Spreadsheet"
 msgstr "_Calc 电子表格"
 
 #. RxGP6
-#: sfx2/uiconfig/ui/startcenter.ui:304
+#: sfx2/uiconfig/ui/startcenter.ui:302
 msgctxt "startcenter|impress_all"
 msgid "_Impress Presentation"
 msgstr "_Impress 演示文稿"
 
 #. 7fE2M
-#: sfx2/uiconfig/ui/startcenter.ui:324
+#: sfx2/uiconfig/ui/startcenter.ui:321
 msgctxt "startcenter|draw_all"
 msgid "_Draw Drawing"
 msgstr "_Draw 绘图"
 
 #. 7wn8r
-#: sfx2/uiconfig/ui/startcenter.ui:344
+#: sfx2/uiconfig/ui/startcenter.ui:340
 msgctxt "startcenter|math_all"
 msgid "_Math Formula"
 msgstr "_Math 公式"
 
 #. nnwDC
-#: sfx2/uiconfig/ui/startcenter.ui:364
+#: sfx2/uiconfig/ui/startcenter.ui:359
 msgctxt "startcenter|database_all"
 msgid "_Base Database"
 msgstr "_Base 数据库"
 
 #. ZEDmn
-#: sfx2/uiconfig/ui/startcenter.ui:397
+#: sfx2/uiconfig/ui/startcenter.ui:391
 msgctxt "startcenter|althelplabel"
 msgid "He_lp"
 msgstr "帮助(_L)"
 
 #. oqVes
-#: sfx2/uiconfig/ui/startcenter.ui:454
+#: sfx2/uiconfig/ui/startcenter.ui:447
 msgctxt "startcenter|extensions"
 msgid "E_xtensions"
 msgstr "扩展(_X)"
 
 #. rDw4E
-#: sfx2/uiconfig/ui/startcenter.ui:482
+#: sfx2/uiconfig/ui/startcenter.ui:474
 msgctxt "startcenter|label1"
 msgid "Application"
 msgstr "应用程序"
 
 #. UiDMp
-#: sfx2/uiconfig/ui/startcenter.ui:500
+#: sfx2/uiconfig/ui/startcenter.ui:492
 msgctxt "startcenter|all_recent_label"
 msgid "Recent Files List"
 msgstr "最近的文件"
 
 #. kho2B
-#: sfx2/uiconfig/ui/startcenter.ui:513
+#: sfx2/uiconfig/ui/startcenter.ui:505
 msgctxt "startcenter|local_view_label"
 msgid "Templates List"
 msgstr "模板列表"

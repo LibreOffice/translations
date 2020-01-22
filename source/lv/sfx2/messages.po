@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2019-11-13 13:47+0100\n"
+"POT-Creation-Date: 2020-01-17 16:45+0100\n"
 "PO-Revision-Date: 2019-08-20 16:35+0000\n"
 "Last-Translator: Ingmārs Dīriņš <melhiors14@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -931,21 +931,16 @@ msgctxt "RID_SVXSTR_GRFILTER_FILTERERROR"
 msgid "Image filter not found"
 msgstr "Attēlu filtrs nav atrasts"
 
-#. GV8KL
+#. ejBgZ
 #: include/sfx2/strings.hrc:170
 msgctxt "RID_SVXSTR_END_REDLINING_WARNING"
 msgid ""
 "This action will exit the change recording mode.\n"
-"Any information about changes will be lost.\n"
+"No information about changes will be recorded from now on.\n"
 "\n"
 "Exit change recording mode?\n"
 "\n"
 msgstr ""
-"Šī darbība izies no izmaiņu ierakstīšanas režīma.\n"
-"Visa informācija par izmaiņām tiks zaudēta.\n"
-"\n"
-"Iziet no izmaiņu ierakstīšanas režīma?\n"
-"\n"
 
 #. E2CcY
 #: include/sfx2/strings.hrc:171
@@ -1259,17 +1254,14 @@ msgstr ""
 "Nosaukums jau pastāv kā noklusējuma stils.\n"
 "Lūdzu, izvēlieties citu nosaukumu."
 
-#. NsBFv
+#. NWDmA
 #: include/sfx2/strings.hrc:234
 msgctxt "STR_DELETE_STYLE_USED"
 msgid ""
 "One or more of the selected styles is in use in this document.\n"
-"If you delete these styles, text will revert to the parent style.\n"
+"If you will delete it, text or objects using these styles will revert to the parent style.\n"
 "Do you still wish to delete these styles?\n"
 msgstr ""
-"Viens vai vairāki izvēlētie stili šajā dokumentā tiek izmantoti.\n"
-"Ja šos stilus izdzēsīsiet, teksts izmantos vecāka stilu.\n"
-"Vai vēl aizvien vēlaties dzēst šos stilus?\n"
 
 #. kuD77
 #: include/sfx2/strings.hrc:235
@@ -1935,6 +1927,12 @@ msgctxt "STR_CLICKHYPERLINK"
 msgid "Click to open hyperlink: %{link}"
 msgstr ""
 
+#. eFJMp
+#: include/sfx2/strings.hrc:354
+msgctxt "STR_STYLEUSEDBY"
+msgid "(used by: %STYLELIST)"
+msgstr ""
+
 #. F5rSU
 #: sfx2/inc/dinfdlg.hrc:27
 msgctxt "SFX_CB_PROPERTY_STRINGARRAY"
@@ -2464,19 +2462,19 @@ msgid "Delete"
 msgstr "Dzēst"
 
 #. WGFBK
-#: sfx2/uiconfig/ui/charmapcontrol.ui:27
+#: sfx2/uiconfig/ui/charmapcontrol.ui:20
 msgctxt "charmapcontrol|label1"
 msgid "Favorites"
 msgstr "Izlase"
 
 #. HAe2e
-#: sfx2/uiconfig/ui/charmapcontrol.ui:248
+#: sfx2/uiconfig/ui/charmapcontrol.ui:258
 msgctxt "charmapcontrol|label2"
 msgid "Recent"
 msgstr "Nesenās"
 
 #. BQwCQ
-#: sfx2/uiconfig/ui/charmapcontrol.ui:468
+#: sfx2/uiconfig/ui/charmapcontrol.ui:494
 msgctxt "charmapcontrol|specialchardlg"
 msgid "More Characters…"
 msgstr "Vairāk rakstzīmju…"
@@ -2991,7 +2989,7 @@ msgctxt "licensedialog|show"
 msgid "_Show License"
 msgstr "_Rādīt licenci."
 
-#. dPabj
+#. BUn8M
 #: sfx2/uiconfig/ui/licensedialog.ui:68
 msgctxt "licensedialog|label"
 msgid ""
@@ -3001,19 +2999,10 @@ msgid ""
 "\n"
 "All trademarks and registered trademarks mentioned herein are the property of their respective owners.\n"
 "\n"
-"Copyright © 2000–2019 LibreOffice contributors. All rights reserved.\n"
+"Copyright © 2000–2020 LibreOffice contributors. All rights reserved.\n"
 "\n"
 "This product was created by %OOOVENDOR, based on OpenOffice.org, which is Copyright 2000, 2011 Oracle and/or its affiliates. %OOOVENDOR acknowledges all community members, please see http://www.libreoffice.org/ for more details."
 msgstr ""
-"%PRODUCTNAME ir pieejams ar Mozilla Public License, v. 2.0. MPL kopiju var iegūt vietnē http://mozilla.org/MPL/2.0/.\n"
-"\n"
-"Trešās puses koda papildu autortiesību paziņojumi un licenču nosacījumi, kas attiecas uz šīs programmatūras daļām, ir izklāstīti datnē LICENSE.html; izvēlieties 'Rādīt licenci', lai redzētu precīzu informāciju angļu valodā.\n"
-"\n"
-"Visas šeit minētās preču zīmes un reģistrētās preču zīmes pieder to attiecīgajiem īpašniekiem.\n"
-"\n"
-"Autortiesības © 2000–2019 LibreOffice veidotāji. Visas tiesības ir rezervētas.\n"
-"\n"
-"Šo produktu ir veidojis %OOOVENDOR, balstoties uz OpenOffice.org, kura autortiesības 2000, 2011 pieder Oracle un/vai tā partneriem. %OOOVENDOR atzīst visus kopienas dalībniekus, pilna informācija atrodama http://www.libreoffice.org/."
 
 #. QuVoN
 #: sfx2/uiconfig/ui/linefragment.ui:55
@@ -3214,166 +3203,184 @@ msgid "File"
 msgstr "Datne"
 
 #. QAUXF
-#: sfx2/uiconfig/ui/optprintpage.ui:43
+#: sfx2/uiconfig/ui/optprintpage.ui:37
 msgctxt "optprintpage|printer"
 msgid "_Printer"
 msgstr "_Printeris"
 
 #. Eyv8g
-#: sfx2/uiconfig/ui/optprintpage.ui:59
+#: sfx2/uiconfig/ui/optprintpage.ui:53
 msgctxt "optprintpage|file"
 msgid "Print to _file"
 msgstr "Drukāt _datnē"
 
-#. Fgkij
-#: sfx2/uiconfig/ui/optprintpage.ui:77
+#. C8jvp
+#: sfx2/uiconfig/ui/optprintpage.ui:75
 msgctxt "optprintpage|label4"
-msgid "Settings for:"
-msgstr "Iestatījumi:"
-
-#. 5qQBR
-#: sfx2/uiconfig/ui/optprintpage.ui:106
-msgctxt "optprintpage|reducetrans"
-msgid "_Reduce transparency"
-msgstr "Samazināt cau_rspīdīgumu"
-
-#. PJFLE
-#: sfx2/uiconfig/ui/optprintpage.ui:121
-msgctxt "optprintpage|reducegrad"
-msgid "Reduce _gradient"
-msgstr "Samazināt _krāsu pāreju"
-
-#. wm7C7
-#: sfx2/uiconfig/ui/optprintpage.ui:136
-msgctxt "optprintpage|converttogray"
-msgid "Con_vert colors to grayscale"
-msgstr "Pār_veidot krāsas uz pelēktoņiem"
-
-#. B4C76
-#: sfx2/uiconfig/ui/optprintpage.ui:161
-msgctxt "optprintpage|reducetransauto"
-msgid "Auto_matically"
-msgstr "Auto_mātiski"
-
-#. K7P4C
-#: sfx2/uiconfig/ui/optprintpage.ui:177
-msgctxt "optprintpage|reducetransnone"
-msgid "_No transparency"
-msgstr "_Nav caurspīdības"
-
-#. skDME
-#: sfx2/uiconfig/ui/optprintpage.ui:216
-msgctxt "optprintpage|reducegradstripes"
-msgid "Gradient _stripes:"
-msgstr "Krāsu pārejas _svītras:"
-
-#. W8LE7
-#: sfx2/uiconfig/ui/optprintpage.ui:250
-msgctxt "optprintpage|reducegradcolor"
-msgid "Intermediate _color"
-msgstr "Starp_krāsa"
-
-#. YXTXc
-#: sfx2/uiconfig/ui/optprintpage.ui:284
-msgctxt "optprintpage|reducebitmapoptimal"
-msgid "_High print quality"
-msgstr "_Augsta izdrukas kvalitāte"
-
-#. qF2KM
-#: sfx2/uiconfig/ui/optprintpage.ui:300
-msgctxt "optprintpage|reducebitmapnormal"
-msgid "N_ormal print quality"
-msgstr "_Parasta izdrukas kvalitāte"
-
-#. EZGK5
-#: sfx2/uiconfig/ui/optprintpage.ui:321
-msgctxt "optprintpage|reducebitmapresol"
-msgid "Reso_lution:"
-msgstr "_Izšķirtspēja:"
-
-#. 6ALtE
-#: sfx2/uiconfig/ui/optprintpage.ui:340
-msgctxt "optprintpage|reducebitmapdpi"
-msgid "72 DPI"
-msgstr "72 DPI"
-
-#. FgpJ3
-#: sfx2/uiconfig/ui/optprintpage.ui:341
-msgctxt "optprintpage|reducebitmapdpi"
-msgid "96 DPI"
-msgstr "96 DPI"
-
-#. d7BqR
-#: sfx2/uiconfig/ui/optprintpage.ui:342
-msgctxt "optprintpage|reducebitmapdpi"
-msgid "150 DPI (Fax)"
-msgstr "150 DPI (fakss)"
-
-#. 46imh
-#: sfx2/uiconfig/ui/optprintpage.ui:343
-msgctxt "optprintpage|reducebitmapdpi"
-msgid "200 DPI (default)"
-msgstr "200 DPI (noklusējuma)"
-
-#. AsLSp
-#: sfx2/uiconfig/ui/optprintpage.ui:344
-msgctxt "optprintpage|reducebitmapdpi"
-msgid "300 DPI"
-msgstr "300 DPI"
-
-#. qZJg5
-#: sfx2/uiconfig/ui/optprintpage.ui:345
-msgctxt "optprintpage|reducebitmapdpi"
-msgid "600 DPI"
-msgstr "600 DPI"
-
-#. CrFLq
-#: sfx2/uiconfig/ui/optprintpage.ui:361
-msgctxt "optprintpage|reducebitmaptrans"
-msgid "Include transparent objects"
-msgstr "Iekļaut caurspīdīgos objektus"
-
-#. ySmQe
-#: sfx2/uiconfig/ui/optprintpage.ui:385
-msgctxt "optprintpage|reducebitmap"
-msgid "Reduce _bitmaps"
-msgstr "Samazināt _bitkartes"
-
-#. GAFzh
-#: sfx2/uiconfig/ui/optprintpage.ui:400
-msgctxt "optprintpage|pdf"
-msgid "_PDF as standard print job format"
-msgstr "_PDF kā standarta drukāšanas darba formāts"
-
-#. ZzeAT
-#: sfx2/uiconfig/ui/optprintpage.ui:430
-msgctxt "optprintpage|label1"
-msgid "Reduce Print Data"
-msgstr "Samazināt izdrukas datus"
+msgid "Settings for"
+msgstr ""
 
 #. 2T5Af
-#: sfx2/uiconfig/ui/optprintpage.ui:463
+#: sfx2/uiconfig/ui/optprintpage.ui:108
 msgctxt "optprintpage|papersize"
 msgid "P_aper size"
 msgstr "L_apas izmērs"
 
 #. stDFq
-#: sfx2/uiconfig/ui/optprintpage.ui:478
+#: sfx2/uiconfig/ui/optprintpage.ui:123
 msgctxt "optprintpage|paperorient"
 msgid "Pap_er orientation"
 msgstr "Lapas ori_entācija"
 
 #. L6rtF
-#: sfx2/uiconfig/ui/optprintpage.ui:494
+#: sfx2/uiconfig/ui/optprintpage.ui:138
 msgctxt "optprintpage|trans"
 msgid "_Transparency"
 msgstr "_Caurspīdība"
 
-#. jVE55
-#: sfx2/uiconfig/ui/optprintpage.ui:515
+#. C5jZN
+#: sfx2/uiconfig/ui/optprintpage.ui:159
 msgctxt "optprintpage|label2"
-msgid "Printer Warnings"
-msgstr "Printera brīdinājumi"
+msgid "Warnings"
+msgstr ""
+
+#. PJFLE
+#: sfx2/uiconfig/ui/optprintpage.ui:190
+msgctxt "optprintpage|reducegrad"
+msgid "Reduce _gradient"
+msgstr "Samazināt _krāsu pāreju"
+
+#. skDME
+#: sfx2/uiconfig/ui/optprintpage.ui:220
+msgctxt "optprintpage|reducegradstripes"
+msgid "Gradient _stripes:"
+msgstr "Krāsu pārejas _svītras:"
+
+#. W8LE7
+#: sfx2/uiconfig/ui/optprintpage.ui:254
+msgctxt "optprintpage|reducegradcolor"
+msgid "Intermediate _color"
+msgstr "Starp_krāsa"
+
+#. myMLR
+#: sfx2/uiconfig/ui/optprintpage.ui:284
+msgctxt "optprintpage|label1"
+msgid "Reduce Gradient"
+msgstr ""
+
+#. qF2KM
+#: sfx2/uiconfig/ui/optprintpage.ui:325
+msgctxt "optprintpage|reducebitmapnormal"
+msgid "N_ormal print quality"
+msgstr "_Parasta izdrukas kvalitāte"
+
+#. EZGK5
+#: sfx2/uiconfig/ui/optprintpage.ui:346
+msgctxt "optprintpage|reducebitmapresol"
+msgid "Reso_lution:"
+msgstr "_Izšķirtspēja:"
+
+#. 6ALtE
+#: sfx2/uiconfig/ui/optprintpage.ui:365
+msgctxt "optprintpage|reducebitmapdpi"
+msgid "72 DPI"
+msgstr "72 DPI"
+
+#. FgpJ3
+#: sfx2/uiconfig/ui/optprintpage.ui:366
+msgctxt "optprintpage|reducebitmapdpi"
+msgid "96 DPI"
+msgstr "96 DPI"
+
+#. d7BqR
+#: sfx2/uiconfig/ui/optprintpage.ui:367
+msgctxt "optprintpage|reducebitmapdpi"
+msgid "150 DPI (Fax)"
+msgstr "150 DPI (fakss)"
+
+#. 46imh
+#: sfx2/uiconfig/ui/optprintpage.ui:368
+msgctxt "optprintpage|reducebitmapdpi"
+msgid "200 DPI (default)"
+msgstr "200 DPI (noklusējuma)"
+
+#. AsLSp
+#: sfx2/uiconfig/ui/optprintpage.ui:369
+msgctxt "optprintpage|reducebitmapdpi"
+msgid "300 DPI"
+msgstr "300 DPI"
+
+#. qZJg5
+#: sfx2/uiconfig/ui/optprintpage.ui:370
+msgctxt "optprintpage|reducebitmapdpi"
+msgid "600 DPI"
+msgstr "600 DPI"
+
+#. YXTXc
+#: sfx2/uiconfig/ui/optprintpage.ui:386
+msgctxt "optprintpage|reducebitmapoptimal"
+msgid "_High print quality"
+msgstr "_Augsta izdrukas kvalitāte"
+
+#. ySmQe
+#: sfx2/uiconfig/ui/optprintpage.ui:410
+msgctxt "optprintpage|reducebitmap"
+msgid "Reduce _bitmaps"
+msgstr "Samazināt _bitkartes"
+
+#. YxX2s
+#: sfx2/uiconfig/ui/optprintpage.ui:431
+msgctxt "optprintpage|label1"
+msgid "Reduce Bitmaps"
+msgstr ""
+
+#. B4C76
+#: sfx2/uiconfig/ui/optprintpage.ui:472
+msgctxt "optprintpage|reducetransauto"
+msgid "Auto_matically"
+msgstr "Auto_mātiski"
+
+#. K7P4C
+#: sfx2/uiconfig/ui/optprintpage.ui:488
+msgctxt "optprintpage|reducetransnone"
+msgid "_No transparency"
+msgstr "_Nav caurspīdības"
+
+#. 5qQBR
+#: sfx2/uiconfig/ui/optprintpage.ui:512
+msgctxt "optprintpage|reducetrans"
+msgid "_Reduce transparency"
+msgstr "Samazināt cau_rspīdīgumu"
+
+#. B5Cpd
+#: sfx2/uiconfig/ui/optprintpage.ui:533
+msgctxt "optprintpage|label1"
+msgid "Reduce Transparency"
+msgstr ""
+
+#. GAFzh
+#: sfx2/uiconfig/ui/optprintpage.ui:564
+msgctxt "optprintpage|pdf"
+msgid "_PDF as standard print job format"
+msgstr "_PDF kā standarta drukāšanas darba formāts"
+
+#. wm7C7
+#: sfx2/uiconfig/ui/optprintpage.ui:579
+msgctxt "optprintpage|converttogray"
+msgid "Con_vert colors to grayscale"
+msgstr "Pār_veidot krāsas uz pelēktoņiem"
+
+#. CrFLq
+#: sfx2/uiconfig/ui/optprintpage.ui:594
+msgctxt "optprintpage|reducebitmaptrans"
+msgid "Include transparent objects"
+msgstr "Iekļaut caurspīdīgos objektus"
+
+#. bWPko
+#: sfx2/uiconfig/ui/optprintpage.ui:615
+msgctxt "optprintpage|label4"
+msgid "Defaults"
+msgstr ""
 
 #. QrtGb
 #: sfx2/uiconfig/ui/password.ui:8
@@ -3646,61 +3653,61 @@ msgid "_Writer Document"
 msgstr "_Writer dokuments"
 
 #. Bvz5c
-#: sfx2/uiconfig/ui/startcenter.ui:284
+#: sfx2/uiconfig/ui/startcenter.ui:283
 msgctxt "startcenter|calc_all"
 msgid "_Calc Spreadsheet"
 msgstr "_Calc izklājlapa"
 
 #. RxGP6
-#: sfx2/uiconfig/ui/startcenter.ui:304
+#: sfx2/uiconfig/ui/startcenter.ui:302
 msgctxt "startcenter|impress_all"
 msgid "_Impress Presentation"
 msgstr "_Impress prezentācija"
 
 #. 7fE2M
-#: sfx2/uiconfig/ui/startcenter.ui:324
+#: sfx2/uiconfig/ui/startcenter.ui:321
 msgctxt "startcenter|draw_all"
 msgid "_Draw Drawing"
 msgstr "_Draw zīmējums"
 
 #. 7wn8r
-#: sfx2/uiconfig/ui/startcenter.ui:344
+#: sfx2/uiconfig/ui/startcenter.ui:340
 msgctxt "startcenter|math_all"
 msgid "_Math Formula"
 msgstr "_Math formula"
 
 #. nnwDC
-#: sfx2/uiconfig/ui/startcenter.ui:364
+#: sfx2/uiconfig/ui/startcenter.ui:359
 msgctxt "startcenter|database_all"
 msgid "_Base Database"
 msgstr "_Base datubāze"
 
 #. ZEDmn
-#: sfx2/uiconfig/ui/startcenter.ui:397
+#: sfx2/uiconfig/ui/startcenter.ui:391
 msgctxt "startcenter|althelplabel"
 msgid "He_lp"
 msgstr "Pa_līdzība"
 
 #. oqVes
-#: sfx2/uiconfig/ui/startcenter.ui:454
+#: sfx2/uiconfig/ui/startcenter.ui:447
 msgctxt "startcenter|extensions"
 msgid "E_xtensions"
 msgstr "P_aplašinājumi"
 
 #. rDw4E
-#: sfx2/uiconfig/ui/startcenter.ui:482
+#: sfx2/uiconfig/ui/startcenter.ui:474
 msgctxt "startcenter|label1"
 msgid "Application"
 msgstr "Lietotne"
 
 #. UiDMp
-#: sfx2/uiconfig/ui/startcenter.ui:500
+#: sfx2/uiconfig/ui/startcenter.ui:492
 msgctxt "startcenter|all_recent_label"
 msgid "Recent Files List"
 msgstr "Neseno datņu saraksts"
 
 #. kho2B
-#: sfx2/uiconfig/ui/startcenter.ui:513
+#: sfx2/uiconfig/ui/startcenter.ui:505
 msgctxt "startcenter|local_view_label"
 msgid "Templates List"
 msgstr "Veidņu saraksts"
