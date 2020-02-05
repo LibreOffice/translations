@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
 "POT-Creation-Date: 2019-12-24 17:12+0100\n"
-"PO-Revision-Date: 2019-12-24 16:14+0000\n"
+"PO-Revision-Date: 2020-01-24 16:12+0000\n"
 "Last-Translator: kuehl <kuehl@libreoffice.org>\n"
 "Language-Team: German <https://weblate.documentfoundation.org/projects/libo_help-6-4/textscalc01/de/>\n"
 "Language: de\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Accelerator-Marker: ~\n"
-"X-Generator: LibreOffice\n"
+"X-Generator: Weblate 3.9.1\n"
 "X-POOTLE-MTIME: 1565412342.000000\n"
 
 #. sZfWF
@@ -4370,7 +4370,7 @@ msgctxt ""
 "hd_id3156449\n"
 "help.text"
 msgid "<link href=\"text/scalc/01/04060111.xhp\" name=\"Add-in\">Add-in</link>"
-msgstr "<link href=\"text/scalc/01/04060111.xhp\" name=\"Add-in\">Add-in</link>"
+msgstr "<link href=\"text/scalc/01/04060111.xhp\" name=\"Plug-in\">Plug-in</link>"
 
 #. PRm2o
 #: 04060100.xhp
@@ -7079,7 +7079,7 @@ msgctxt ""
 "par_id3153373\n"
 "help.text"
 msgid "DURATION(\"Settlement\"; \"Maturity\"; Coupon; Yield; Frequency; Basis)"
-msgstr ""
+msgstr "LAUFZEIT(\"Abrechnung\"; \"Fälligkeit\"; Kupon; Rendite; Häufigkeit)"
 
 #. JeeVp
 #: 04060103.xhp
@@ -7106,7 +7106,7 @@ msgctxt ""
 "par_id3153096\n"
 "help.text"
 msgid "<emph>Coupon</emph> is the annual coupon interest rate (nominal rate of interest)"
-msgstr "<emph>Coupon</emph> ist der jährliche Kuponzinssatz (Nominalzinssatz)"
+msgstr "<emph>Kupon</emph> ist der jährliche Kuponzinssatz (Nominalzinssatz)"
 
 #. h8jQ8
 #: 04060103.xhp
@@ -7142,7 +7142,7 @@ msgctxt ""
 "par_id3154902\n"
 "help.text"
 msgid "<item type=\"input\">=DURATION(\"2001-01-01\";\"2006-01-01\";0.08;0.09;2;3)</item>"
-msgstr ""
+msgstr "<item type=\"input\">=LAUFZEIT(\"01.01.2001\";\"01.01.2006\";0,08;0,09;2;3)</item>"
 
 #. TjeEJ
 #: 04060103.xhp
@@ -14450,7 +14450,7 @@ msgctxt ""
 "par_id6670125\n"
 "help.text"
 msgid "<item type=\"input\">=SUMIF(A1:A10;\">0\";B1:B10)</item> - sums values from the range B1:B10 only if the corresponding values in the range A1:A10 are >0."
-msgstr ""
+msgstr "<item type=\"input\">=SUMMEWENN(A1:A10;\">0\";B1:10)</item> summiert nur Werte aus dem Bereich B1:B10, wenn die entsprechenden Werte im Bereich A1:A10 >0 sind."
 
 #. G5vdm
 #: 04060106.xhp
@@ -15134,7 +15134,7 @@ msgctxt ""
 "bm_id2957404\n"
 "help.text"
 msgid "<bookmark_value>FLOOR.PRECISE function</bookmark_value>  <bookmark_value>FLOOR.XCL function</bookmark_value>  <bookmark_value>rounding;down to nearest multiple of significance</bookmark_value>"
-msgstr ""
+msgstr "<bookmark_value>UNTERGRENZE.GENAU (Funktion)</bookmark_value><bookmark_value>UNTERGRENZE.EXCEL (Funktion)</bookmark_value><bookmark_value>Runden; auf das nächste Vielfache der Schrittweite abrunden</bookmark_value>"
 
 #. ticPN
 #: 04060106.xhp
@@ -15197,7 +15197,7 @@ msgctxt ""
 "bm_id3157404\n"
 "help.text"
 msgid "<bookmark_value>FLOOR function</bookmark_value>  <bookmark_value>FLOOR.MATH function</bookmark_value>  <bookmark_value>rounding;down to nearest multiple of significance</bookmark_value>"
-msgstr ""
+msgstr "<bookmark_value>UNTERGRENZE (Funktion)</bookmark_value><bookmark_value>UNTERGRENZE.MATHEMATIK (Funktion)</bookmark_value><bookmark_value>Runden; auf das nächste Vielfache der Schrittweite abrunden</bookmark_value>"
 
 #. BAZE3
 #: 04060106.xhp
@@ -19049,7 +19049,7 @@ msgctxt ""
 "par_id3150156\n"
 "help.text"
 msgid "=VLOOKUP(SearchCriterion; Array; Index; SortedRangeLookup)"
-msgstr ""
+msgstr "=SVERWEIS(Suchkriterium; Matrix; Index; Sortiert)"
 
 #. 7FsgG
 #: 04060109.xhp
@@ -19085,7 +19085,7 @@ msgctxt ""
 "par_id3151208\n"
 "help.text"
 msgid "<emph>SortedRangeLookup</emph> is an optional parameter that indicates whether the first column in the array contains range boundaries instead of plain values. In this mode, the lookup returns the value in the row with first column having value equal to or less than SearchCriterion. E.g., it could contain dates when some tax value had been changed, and so the values represent starting dates of a period when a specific tax value was effective. Thus, searching for a date that is absent in the first array column, but falls between some existing boundary dates, would give the lower of them, allowing to find out the data being effective to the searched date. Enter the Boolean value FALSE or zero if the first column is not a range boundary list. When this parameter is TRUE or not given, the first column in the array <emph>must be sorted in ascending order</emph>. Sorted columns can be searched much faster and the function always returns a value, even if the search value was not matched exactly, if it is greater than the lowest value of the sorted list. In unsorted lists, the search value must be matched exactly. Otherwise the function will return #N/A with message: <emph>Error: Value Not Available</emph>."
-msgstr ""
+msgstr "<emph>Sortiert</emph> ist ein optionaler Parameter, der anzeigt, ob die erste Spalte in der Matrix in aufsteigender Reihenfolge sortiert wird. In diesem Modus gibt die Suche den Wert in der Zeile mit der ersten Spalte zurück, deren Wert kleiner oder gleich Suckriterium ist. Zum Beispiel kann es Daten enthalten, an denen ein Steuerwert geändert wurde, und die Werte stellen daher Startdaten eines Zeitraums dar, in dem ein bestimmter Steuerwert wirksam war. Wenn Sie also nach einem Datum suchen, das in der ersten Matrixspalte fehlt, jedoch zwischen einigen vorhandenen Grenzdaten liegt, erhalten Sie das niedrigere Datum. Auf diese Weise können Sie feststellen, ob die Daten für das gesuchte Datum wirksam sind. Geben Sie den booleschen Wert FALSCH oder Null ein, wenn die erste Spalte nicht in aufsteigender Reihenfolge sortiert wird. Wenn dieser Parameter WAHR oder nicht angegeben ist, muss die erste Spalte der Matrik <emph>in aufsteigender Reihenfolge sortiert sein</emph>. Sortierte Spalten können viel schneller durchsucht werden, und die Funktion gibt immer einen Wert zurück, selbst dann, wenn für den Suchwert keine exakte Übereinstimmung gefunden wurde, wenn er zwischen dem niedrigsten und dem höchsten Wert der sortierten Liste liegt. In unsortierten Listen muss für den Suchwert eine exakte Übereinstimmung gefunden werden. Anderenfalls gibt die Funktion folgende Meldung zurück: <emph>Fehler: Wert nicht verfügbar</emph>."
 
 #. fJQRf
 #: 04060109.xhp
@@ -19760,7 +19760,7 @@ msgctxt ""
 "par_id3146070\n"
 "help.text"
 msgid "HLOOKUP(SearchCriterion; Array; Index; SortedRangeLookup)"
-msgstr ""
+msgstr "WVERWEIS(Suchkriterium; Matrix; Index; Sortiert)"
 
 #. nhwwF
 #: 04060109.xhp
@@ -21344,7 +21344,7 @@ msgctxt ""
 "hd_id2947083\n"
 "help.text"
 msgid "<variable id=\"leftbvar\"><link href=\"text/scalc/01/04060110.xhp#leftb\" name=\"LEFTB\">LEFTB</link></variable>"
-msgstr ""
+msgstr "<variable id=\"leftbvar\"><link href=\"text/scalc/01/04060110.xhp#leftb\" name=\"LINKSB\">LINKSB</link></variable>"
 
 #. f3mWg
 #: 04060110.xhp
@@ -21506,7 +21506,7 @@ msgctxt ""
 "hd_id2956110\n"
 "help.text"
 msgid "<variable id=\"lenbvar\"><link href=\"text/scalc/01/04060110.xhp#lenb\" name=\"LENB\">LENB</link></variable>"
-msgstr ""
+msgstr "<variable id=\"lenbvar\"><link href=\"text/scalc/01/04060110.xhp#lenb\" name=\"LÄNGEB\">LÄNGEB</link></variable>"
 
 #. Cwz9S
 #: 04060110.xhp
@@ -21722,7 +21722,7 @@ msgctxt ""
 "hd_id2954589\n"
 "help.text"
 msgid "<variable id=\"midbvar\"><link href=\"text/scalc/01/04060110.xhp#midb\" name=\"MIDB\">MIDB</link></variable>"
-msgstr ""
+msgstr "<variable id=\"midbvar\"><link href=\"text/scalc/01/04060110.xhp#midb\" name=\"TEILB\">TEILB</link></variable>"
 
 #. Qe8mw
 #: 04060110.xhp
@@ -22163,7 +22163,7 @@ msgctxt ""
 "hd_id2949805\n"
 "help.text"
 msgid "<variable id=\"rightbvar\"><link href=\"text/scalc/01/04060110.xhp#rightb\" name=\"RIGHTB\">RIGHTB</link></variable>"
-msgstr ""
+msgstr "<variable id=\"rightbvar\"><link href=\"text/scalc/01/04060110.xhp#rightb\" name=\"RECHTSB\">RECHTSB</link></variable>"
 
 #. gvrHM
 #: 04060110.xhp
@@ -22937,7 +22937,7 @@ msgctxt ""
 "tit\n"
 "help.text"
 msgid "Add-in Functions"
-msgstr "Kategorie Add-in"
+msgstr "Kategorie Plug-in"
 
 #. uRWxR
 #: 04060111.xhp
@@ -22946,7 +22946,7 @@ msgctxt ""
 "bm_id3150870\n"
 "help.text"
 msgid "<bookmark_value>add-ins; functions</bookmark_value><bookmark_value>functions; add-in functions</bookmark_value><bookmark_value>Function Wizard; add-ins</bookmark_value>"
-msgstr "<bookmark_value>Add-ins; Funktionen</bookmark_value><bookmark_value>Funktionen; Add-in-Funktionen</bookmark_value><bookmark_value>Funktions-Assistent; Add-ins</bookmark_value>"
+msgstr "<bookmark_value>Plug-ins; Funktionen</bookmark_value><bookmark_value>Funktionen; Plug-in-Funktionen</bookmark_value><bookmark_value>Funktions-Assistent; Plug-ins</bookmark_value>"
 
 #. igy2a
 #: 04060111.xhp
@@ -22955,7 +22955,7 @@ msgctxt ""
 "hd_id3150870\n"
 "help.text"
 msgid "<variable id=\"head_addin\"><link href=\"text/scalc/01/04060111.xhp\" name=\"Add-in Functions\">Add-in Functions</link></variable>"
-msgstr "<variable id=\"head_addin\"><link href=\"text/scalc/01/04060111.xhp\" name=\"Add-in Functions\">Add-in-Funktionen</link></variable>"
+msgstr "<variable id=\"head_addin\"><link href=\"text/scalc/01/04060111.xhp\" name=\"Plug-in Functions\">Plug-in-Funktionen</link></variable>"
 
 #. Qq6yz
 #: 04060111.xhp
@@ -22964,7 +22964,7 @@ msgctxt ""
 "par_id3147427\n"
 "help.text"
 msgid "<variable id=\"addintext\">The following describes and lists some of the available add-in functions.</variable>"
-msgstr "<variable id=\"addintext\">Im Folgenden werden einige der verfügbaren Add-in-Funktionen aufgeführt und erläutert.</variable>"
+msgstr "<variable id=\"addintext\">Im Folgenden werden einige der verfügbaren Plug-in-Funktionen aufgeführt und erläutert.</variable>"
 
 #. DbbqV
 #: 04060111.xhp
@@ -22973,7 +22973,7 @@ msgctxt ""
 "par_id3163713\n"
 "help.text"
 msgid "<link href=\"text/scalc/01/04060112.xhp#addinconcept\">Add-in concept</link>"
-msgstr "<link href=\"text/scalc/01/04060112.xhp#addinconcept\">Add-in-Konzept</link>"
+msgstr "<link href=\"text/scalc/01/04060112.xhp#addinconcept\">Plug-in-Konzept</link>"
 
 #. YD6wG
 #: 04060111.xhp
@@ -22982,7 +22982,7 @@ msgctxt ""
 "par_id3146120\n"
 "help.text"
 msgid "You will also find a <link href=\"text/scalc/01/04060112.xhp\">description of the $[officename] Calc add-in interface</link> in the Help. In addition, important functions and their parameters are described in the Help for the <switchinline select=\"sys\"><caseinline select=\"UNIX\">Shared Library</caseinline><defaultinline>$[officename] Calc add-in DLL</defaultinline></switchinline>."
-msgstr "In der Hilfe finden Sie auch eine <link href=\"text/scalc/01/04060112.xhp\">Beschreibung der $[officename] Calc-Add-in-Schnittstelle</link>. Darüber hinaus sind dort die für eine <switchinline select=\"sys\"><caseinline select=\"UNIX\">Shared Library</caseinline><defaultinline>$[officename] Calc-Add-in-DLL</defaultinline></switchinline> benötigten Funktionen und ihre Parameter beschrieben."
+msgstr "In der Hilfe finden Sie auch eine <link href=\"text/scalc/01/04060112.xhp\">Beschreibung der $[officename] Calc-Plug-in-Schnittstelle</link>. Darüber hinaus sind dort die für eine <switchinline select=\"sys\"><caseinline select=\"UNIX\">Shared Library</caseinline><defaultinline>$[officename] Calc-Plug-in-DLL</defaultinline></switchinline> benötigten Funktionen und ihre Parameter beschrieben."
 
 #. FqTdJ
 #: 04060111.xhp
@@ -22991,7 +22991,7 @@ msgctxt ""
 "hd_id3151075\n"
 "help.text"
 msgid "Add-ins supplied"
-msgstr "Die mitgelieferten Add-ins"
+msgstr "Die mitgelieferten Plug-ins"
 
 #. 5R8nv
 #: 04060111.xhp
@@ -23000,7 +23000,7 @@ msgctxt ""
 "par_id3156285\n"
 "help.text"
 msgid "$[officename] contains examples for the add-in interface of $[officename] Calc."
-msgstr "$[officename] enthält Beispiele für die Add-in-Schnittstelle von $[officename] Calc."
+msgstr "$[officename] enthält Beispiele für die Plug-in-Schnittstelle von $[officename] Calc."
 
 #. H5JWB
 #: 04060111.xhp
@@ -23495,7 +23495,7 @@ msgctxt ""
 "hd_id3157901\n"
 "help.text"
 msgid "Add-ins through %PRODUCTNAME API"
-msgstr "Add-ins über die %PRODUCTNAME API"
+msgstr "Plug-ins über die %PRODUCTNAME API"
 
 #. hJWzo
 #: 04060111.xhp
@@ -23504,7 +23504,7 @@ msgctxt ""
 "par_id3149351\n"
 "help.text"
 msgid "Add-ins can also be implemented through the %PRODUCTNAME <link href=\"https://api.libreoffice.org/\" name=\"api.libreoffice.org\">API</link>."
-msgstr "Add-ins lassen sich auch über die %PRODUCTNAME-<link href=\"https://api.libreoffice.org/\" name=\"api.libreoffice.org\">API</link> implementieren."
+msgstr "Plug-ins lassen sich auch über die %PRODUCTNAME-<link href=\"https://api.libreoffice.org/\" name=\"api.libreoffice.org\">API</link> implementieren."
 
 #. KziFV
 #: 04060112.xhp
@@ -23513,7 +23513,7 @@ msgctxt ""
 "tit\n"
 "help.text"
 msgid "Add-in for Programming in $[officename] Calc"
-msgstr "Add-in zu $[officename] Calc programmieren"
+msgstr "Plug-in zu $[officename] Calc programmieren"
 
 #. yCgrA
 #: 04060112.xhp
@@ -23522,7 +23522,7 @@ msgctxt ""
 "bm_id3151076\n"
 "help.text"
 msgid "<bookmark_value>programming; add-ins</bookmark_value><bookmark_value>shared libraries; programming</bookmark_value><bookmark_value>external DLL functions</bookmark_value><bookmark_value>functions; $[officename] Calc add-in DLL</bookmark_value><bookmark_value>add-ins; for programming</bookmark_value>"
-msgstr "<bookmark_value>Programmieren; Add-ins</bookmark_value><bookmark_value>Gemeinsame Bibliotheken; Programmierung</bookmark_value><bookmark_value>Externe DLL-Funktionen</bookmark_value><bookmark_value>Funktionen; $[officename] Calc Add-in-DLL</bookmark_value><bookmark_value>Add-ins; zum Programmieren</bookmark_value>"
+msgstr "<bookmark_value>Programmieren; Plug-ins</bookmark_value><bookmark_value>Gemeinsame Bibliotheken; Programmierung</bookmark_value><bookmark_value>Externe DLL-Funktionen</bookmark_value><bookmark_value>Funktionen; $[officename] Calc Plug-in-DLL</bookmark_value><bookmark_value>Plug-ins; zum Programmieren</bookmark_value>"
 
 #. x9hSr
 #: 04060112.xhp
@@ -23531,7 +23531,7 @@ msgctxt ""
 "hd_id3151076\n"
 "help.text"
 msgid "Add-in for Programming in $[officename] Calc"
-msgstr "Add-in zu $[officename] Calc programmieren"
+msgstr "Plug-in zu $[officename] Calc programmieren"
 
 #. 38Xcw
 #: 04060112.xhp
@@ -23540,7 +23540,7 @@ msgctxt ""
 "par_id3147001\n"
 "help.text"
 msgid "The method of extending Calc by Add-Ins that is described in the following is outdated. The interfaces are still valid and supported, to ensure compatibility with existing Add-Ins, but for programming new Add-Ins you should use the new <link href=\"text/shared/guide/integratinguno.xhp\" name=\"API functions\">API functions</link>."
-msgstr "Die im Folgenden beschriebene Methode, Calc durch Add-ins zu erweitern, ist veraltet. Die Schnittstellen sind jedoch noch gültig und werden weiterhin unterstützt, um die Kompatibilität zu existierenden Add-ins sicherzustellen, für die Programmierung neuer Add-ins sollten Sie jedoch die neuen <link href=\"text/shared/guide/integratinguno.xhp\" name=\"API Funktionen\">API Funktionen</link> nutzen."
+msgstr "Die im Folgenden beschriebene Methode, Calc durch Plug-ins zu erweitern, ist veraltet. Die Schnittstellen sind jedoch noch gültig und werden weiterhin unterstützt, um die Kompatibilität zu existierenden Plug-ins sicherzustellen, für die Programmierung neuer Plug-ins sollten Sie jedoch die neuen <link href=\"text/shared/guide/integratinguno.xhp\" name=\"API Funktionen\">API Funktionen</link> nutzen."
 
 #. aR3NC
 #: 04060112.xhp
@@ -23549,7 +23549,7 @@ msgctxt ""
 "par_id3150361\n"
 "help.text"
 msgid "$[officename] Calc can be expanded by Add-Ins, which are external programming modules providing additional functions for working with spreadsheets. These are listed in the <emph>Function Wizard</emph> in the <emph>Add-In</emph> category. If you would like to program an Add-In yourself, you can learn here which functions must be exported by the <switchinline select=\"sys\"><caseinline select=\"UNIX\">shared library</caseinline><defaultinline>external DLL</defaultinline></switchinline> so that the Add-In can be successfully attached."
-msgstr ""
+msgstr "$[officename] Calc kann um Plug-ins, externe Programmiermodule mit zusätzlichen Funktionen für die Arbeit mit Tabellendokumenten, erweitert werden. Diese Funktionen finden Sie im <emph>Funktions-Assistenten</emph> unter der Kategorie <emph>Plug-in</emph>. Wenn Sie selbst Plug-ins programmieren möchten, erfahren Sie hier, welche Funktionen für eine erfolgreiche Implementierung von Plug-ins aus der <switchinline select=\"sys\"><caseinline select=\"UNIX\">Shared Library (gemeinsamen Bibliothek)</caseinline><defaultinline>externen DLL</defaultinline></switchinline> exportiert werden müssen."
 
 #. qyzrA
 #: 04060112.xhp
@@ -23558,7 +23558,7 @@ msgctxt ""
 "par_id3149211\n"
 "help.text"
 msgid "$[officename] searches the Add-in folder defined in the configuration for a suitable <switchinline select=\"sys\"><caseinline select=\"UNIX\">shared library</caseinline><defaultinline>DLL</defaultinline></switchinline>. To be recognized by $[officename], the <switchinline select=\"sys\"><caseinline select=\"UNIX\">shared library</caseinline><defaultinline>DLL</defaultinline></switchinline> must have certain properties, as explained in the following. This information allows you to program your own Add-In for <emph>Function Wizard</emph> of $[officename] Calc."
-msgstr ""
+msgstr "$[officename] durchsucht den in der Konfiguration festgelegten Plug-in-Ordner nach einer passenden <switchinline select=\"sys\"><caseinline select=\"UNIX\"> shared library (gemeinsame Bibliothek) </caseinline><defaultinline>DLL</defaultinline></switchinline>. Um von $[officename] erkannt zu werden, muss die <switchinline select=\"sys\"><caseinline select=\"UNIX\">shared library</caseinline><defaultinline>DLL</defaultinline></switchinline> bestimmte Eigenschaften aufweisen, wie im Folgenden erklärt wird. Mit diesen Informationen können Sie Ihr eigenes Plug-in für den <emph>Funktions-Assistenten</emph> von $[officename] Calc programmieren."
 
 #. CAC5V
 #: 04060112.xhp
@@ -23567,7 +23567,7 @@ msgctxt ""
 "hd_id3146981\n"
 "help.text"
 msgid "The Add-In Concept"
-msgstr "Das Add-in-Konzept"
+msgstr "Das Plug-in-Konzept"
 
 #. qYPz8
 #: 04060112.xhp
@@ -23576,7 +23576,7 @@ msgctxt ""
 "par_id3156292\n"
 "help.text"
 msgid "Each Add-In library provides several functions. Some functions are used for administrative purposes. You can choose almost any name for your own functions. However, they must also follow certain rules regarding parameter passing. The exact naming and calling conventions vary for different platforms."
-msgstr "Jede Add-in-Bibliothek liefert bestimmte Funktionen. Einige Funktionen dienen zu Verwaltungszwecken. Sie können eigene Funktionen nahezu beliebig benennen. Es müssen jedoch auch bestimmte Regeln der Parameterübergabe befolgt werden. Für die verschiedenen Plattformen gelten leicht unterschiedliche Benennungs- und Aufrufkonventionen."
+msgstr "Jede Plug-in-Bibliothek liefert bestimmte Funktionen. Einige Funktionen dienen zu Verwaltungszwecken. Sie können eigene Funktionen nahezu beliebig benennen. Es müssen jedoch auch bestimmte Regeln der Parameterübergabe befolgt werden. Für die verschiedenen Plattformen gelten leicht unterschiedliche Benennungs- und Aufrufkonventionen."
 
 #. CYHXE
 #: 04060112.xhp
@@ -23585,7 +23585,7 @@ msgctxt ""
 "hd_id3152890\n"
 "help.text"
 msgid "Functions of <switchinline select=\"sys\"><caseinline select=\"UNIX\">Shared Library</caseinline><defaultinline>AddIn DLL</defaultinline></switchinline>"
-msgstr ""
+msgstr "Funktionen der <switchinline select=\"sys\"><caseinline select=\"UNIX\">Shared Library</caseinline><defaultinline>Plug-in-DLL</defaultinline></switchinline>"
 
 #. DPTDC
 #: 04060112.xhp
@@ -23639,7 +23639,7 @@ msgctxt ""
 "par_id3146776\n"
 "help.text"
 msgid "The maximum number of parameters in an Add-In function attached to $[officename] Calc is 16: one return value and a maximum of 15 function input parameters."
-msgstr "Eine in $[officename] Calc integrierte Add-in-Funktion kann maximal 16 Parameter umfassen: einen Ergebniswert und bis zu 15 Eingabeparameter."
+msgstr "Eine in $[officename] Calc integrierte Plug-in-Funktion kann maximal 16 Parameter umfassen: einen Ergebniswert und bis zu 15 Eingabeparameter."
 
 #. mbiCk
 #: 04060112.xhp
@@ -23774,7 +23774,7 @@ msgctxt ""
 "hd_id3156396\n"
 "help.text"
 msgid "<switchinline select=\"sys\"><caseinline select=\"UNIX\">Shared Library</caseinline><defaultinline>DLL</defaultinline></switchinline> functions"
-msgstr ""
+msgstr "Funktionen der <switchinline select=\"sys\"><caseinline select=\"UNIX\">Shared Library</caseinline><defaultinline>DLL</defaultinline></switchinline>"
 
 #. wVc9G
 #: 04060112.xhp
@@ -23783,7 +23783,7 @@ msgctxt ""
 "par_id3153019\n"
 "help.text"
 msgid "Following you will find a description of those functions, which are called at the <switchinline select=\"sys\"><caseinline select=\"UNIX\">Shared Library</caseinline><defaultinline>external DLL</defaultinline></switchinline>."
-msgstr ""
+msgstr "Im folgenden finden Sie eine Beschreibung der Funktionen, die an der <switchinline select=\"sys\"><caseinline select=\"UNIX\">Shared Library</caseinline><defaultinline>externen DLL</defaultinline></switchinline> aufgerufen werden."
 
 #. kDo37
 #: 04060112.xhp
@@ -23792,7 +23792,7 @@ msgctxt ""
 "par_id3150038\n"
 "help.text"
 msgid "For all <switchinline select=\"sys\"><caseinline select=\"UNIX\">Shared Library</caseinline><defaultinline>DLL</defaultinline></switchinline> functions, the following applies:"
-msgstr ""
+msgstr "Für alle Funktionen der <switchinline select=\"sys\"><caseinline select=\"UNIX\">Shared Library</caseinline><defaultinline>DLL</defaultinline></switchinline> gilt:"
 
 #. QZ7q4
 #: 04060112.xhp
@@ -23801,7 +23801,7 @@ msgctxt ""
 "par_id3147616\n"
 "help.text"
 msgid "<emph>Output</emph>: Resulting value"
-msgstr ""
+msgstr "<emph>Output</emph>: Ergebniswert"
 
 #. ErpXM
 #: 04060112.xhp
@@ -23810,7 +23810,7 @@ msgctxt ""
 "par_id3159119\n"
 "help.text"
 msgid "<emph>Input</emph>: Any number of types (double&, char*, double*, char**, Cell area), where the <link href=\"text/scalc/01/04060112.xhp\" name=\"Cell area\">Cell area</link> is an array of types double array, string array, or cell array."
-msgstr ""
+msgstr "<emph>Eingabe</emph>: Eine beliebige Anzahl von Typen (double&, char*, double*, char**, Zellbereich), wobei <link href=\"text/scalc/01/04060112.xhp\" name=\"Zellbereich\">Zellbereich</link> ein Array vom Typ Double Array, String Array oder Cell Array ist."
 
 #. Hs7Du
 #: 04060112.xhp
@@ -23846,7 +23846,7 @@ msgctxt ""
 "par_id3149893\n"
 "help.text"
 msgid "<emph>Output</emph>: Reference to a variable, which is supposed to contain the number of Add-In functions. For example: If the Add-In provides 5 functions for $[officename] Calc, then nCount=5."
-msgstr ""
+msgstr "<emph>Output</emph>: Bezug auf eine Variable, die die Anzahl der Plug-in-Funktionen enthalten soll. Stellt das Plug-in beispielsweise 5 Funktionen für $[officename] Calc zur Verfügung, so ist nCount=5."
 
 #. MMvZL
 #: 04060112.xhp
@@ -23855,7 +23855,7 @@ msgctxt ""
 "par_id3154841\n"
 "help.text"
 msgid "Determines all the important information about an Add-In function."
-msgstr "Ermittelt alle wichtigen Informationen über eine Add-in-Funktion."
+msgstr "Ermittelt alle wichtigen Informationen über eine Plug-in-Funktion."
 
 #. fqYgr
 #: 04060112.xhp
@@ -23882,7 +23882,7 @@ msgctxt ""
 "par_id3149949\n"
 "help.text"
 msgid "<emph>Input</emph>: Function number between 0 and nCount-1, inclusively."
-msgstr ""
+msgstr "<emph>Input</emph>: Funktionsnummer zwischen 0 und nCount-1 einschließlich."
 
 #. CSBYk
 #: 04060112.xhp
@@ -23891,7 +23891,7 @@ msgctxt ""
 "par_id3148579\n"
 "help.text"
 msgid "<emph>Output</emph>: Function name as seen by the programmer, as it is named in the <switchinline select=\"sys\"><caseinline select=\"UNIX\">Shared Library</caseinline><defaultinline>DLL</defaultinline></switchinline>. This name does not determine the name used in the <emph>Function Wizard</emph>."
-msgstr ""
+msgstr "<emph>Output</emph>: Der bei der Programmierung verwendete Funktionsname, der die Funktion in der <switchinline select=\"sys\"><caseinline select=\"UNIX\">Shared Library</caseinline><defaultinline>DLL</defaultinline></switchinline> darstellt. Dieser Name legt nicht den Namen fest, der im <emph>Funktions-Assistenten</emph> verwendet wird."
 
 #. 6yGps
 #: 04060112.xhp
@@ -23900,7 +23900,7 @@ msgctxt ""
 "par_id3150142\n"
 "help.text"
 msgid "<emph>Output</emph>: Number of parameters in AddIn function. This number must be greater than 0, because there is always a result value; the maximum value is 16."
-msgstr ""
+msgstr "<emph>Output</emph>: Anzahl der Parameter der Plug-in-Funktion. Diese Anzahl muss größer 0 sein, da es immer einen Ergebniswert gibt, der Maximalwert ist 16."
 
 #. TjFBR
 #: 04060112.xhp
@@ -23909,7 +23909,7 @@ msgctxt ""
 "par_id3148750\n"
 "help.text"
 msgid "<emph>Output</emph>: Pointer to an array of exactly 16 variables of type Paramtype. The first nParamCount entries are filled with the suitable type of parameter."
-msgstr ""
+msgstr "<emph>Output</emph>: Zeiger auf ein Array mit genau 16 Variablen vom Typ Paramtype. Die ersten nParamCount Einträge werden mit dem Typ des entsprechenen Parameters gefüllt."
 
 #. YNrEv
 #: 04060112.xhp
@@ -23918,7 +23918,7 @@ msgctxt ""
 "par_id3155261\n"
 "help.text"
 msgid "<emph>Output</emph>: Function name as seen by the user, as it appears in the <emph>Function Wizard</emph>. May contain umlauts."
-msgstr ""
+msgstr "<emph>Output</emph>: Der für den Benutzer sichtbare Funktionsname, wie er im <emph>Funktions-Assistenten</emph> erscheint. Umlaute sind hier zulässig."
 
 #. rcNLZ
 #: 04060112.xhp
@@ -23936,7 +23936,7 @@ msgctxt ""
 "par_id3153000\n"
 "help.text"
 msgid "Provides a brief description of the Add-In function and its parameters. As an option, this function can be used to show a function and parameter description in the <emph>Function Wizard</emph>."
-msgstr "Liefert eine kurze Beschreibung der Add-in-Funktion und ihrer Parameter. Diese Funktion kann optional eingesetzt werden, um im <emph>Funktions-Assistenten</emph> Beschreibungen der Funktionen und ihrer Parameter anzuzeigen."
+msgstr "Liefert eine kurze Beschreibung der Plug-in-Funktion und ihrer Parameter. Diese Funktion kann optional eingesetzt werden, um im <emph>Funktions-Assistenten</emph> Beschreibungen der Funktionen und ihrer Parameter anzuzeigen."
 
 #. WCRmw
 #: 04060112.xhp
@@ -23954,7 +23954,7 @@ msgctxt ""
 "par_id3153564\n"
 "help.text"
 msgid "<literal>void CALLTYPE GetParameterDescription(USHORT& nNo, USHORT& nParam, char* pName, char* pDesc)</literal>"
-msgstr ""
+msgstr "<literal>void CALLTYPE GetParameterDescription(USHORT& nNo, USHORT& nParam, char* pName, char* pDesc)</literal>"
 
 #. 99Z6E
 #: 04060112.xhp
@@ -23972,7 +23972,7 @@ msgctxt ""
 "par_id3149883\n"
 "help.text"
 msgid "<emph>Input</emph>: Number of the function in the library; between 0 and nCount-1."
-msgstr ""
+msgstr "<emph>Input</emph>: Nummer der Funktion innerhalb der Bibliothek zwischen 0 und nCount-1."
 
 #. QHn87
 #: 04060112.xhp
@@ -23981,7 +23981,7 @@ msgctxt ""
 "par_id3159139\n"
 "help.text"
 msgid "<emph>Input</emph>: Indicates, for which parameter the description is provided; parameters start at 1. If nParam is 0, the description itself is supposed to be provided in pDesc; in this case, pName does not have any meaning."
-msgstr ""
+msgstr "<emph>Input</emph>: Gibt an, für welchen Parameter die Beschreibung geliefert werden soll, Parameter beginnen bei 1. Ist nParam 0, soll die Beschreibung der Funktion an sich in pDesc geliefert werden, pName ist in diesem Fall bedeutungslos."
 
 #. Eq6cW
 #: 04060112.xhp
@@ -23990,7 +23990,7 @@ msgctxt ""
 "par_id3145245\n"
 "help.text"
 msgid "<emph>Output</emph>: Takes up the parameter name or type, for example, the word \"Number\" or \"String\" or \"Date\", and so on. Implemented in $[officename] Calc as char[256]."
-msgstr ""
+msgstr "<emph>Output</emph>: Nimmt den Namen oder die Art des Parameters auf, beispielsweise das Wort \"Zahl\" oder \"Zeichenkette\" oder \"Datum\" und so weiter. In $[officename] Calc implementiert als char[256]."
 
 #. yf6Eg
 #: 04060112.xhp
@@ -23999,7 +23999,7 @@ msgctxt ""
 "par_id3148389\n"
 "help.text"
 msgid "<emph>Output</emph>: Takes up the description of the parameter, for example, \"Value, at which the universe is to be calculated.\" Implemented in $[officename] Calc as char[256]."
-msgstr ""
+msgstr "<emph>Output</emph>: Nimmt die Beschreibung des Parameters auf, beispielsweise \"Wert, zu dem das Universum berechnet werden soll\". In $[officename] Calc implementiert als char[256]."
 
 #. 52p82
 #: 04060112.xhp
@@ -24053,7 +24053,7 @@ msgctxt ""
 "par_id3149388\n"
 "help.text"
 msgid "Offset"
-msgstr ""
+msgstr "Offset"
 
 #. zS5BL
 #: 04060112.xhp
@@ -24062,7 +24062,7 @@ msgctxt ""
 "par_id3154636\n"
 "help.text"
 msgid "Name"
-msgstr ""
+msgstr "Name"
 
 #. 3dyGm
 #: 04060112.xhp
@@ -24071,7 +24071,7 @@ msgctxt ""
 "par_id3153228\n"
 "help.text"
 msgid "Description"
-msgstr ""
+msgstr "Beschreibung"
 
 #. auDAv
 #: 04060112.xhp
@@ -24323,7 +24323,7 @@ msgctxt ""
 "par_id3149908\n"
 "help.text"
 msgid "Offset"
-msgstr ""
+msgstr "Offset"
 
 #. ehB7k
 #: 04060112.xhp
@@ -24332,7 +24332,7 @@ msgctxt ""
 "par_id3159165\n"
 "help.text"
 msgid "Name"
-msgstr ""
+msgstr "Name"
 
 #. iRPCq
 #: 04060112.xhp
@@ -24341,7 +24341,7 @@ msgctxt ""
 "par_id3159150\n"
 "help.text"
 msgid "Description"
-msgstr ""
+msgstr "Beschreibung"
 
 #. q4Dcs
 #: 04060112.xhp
@@ -24611,7 +24611,7 @@ msgctxt ""
 "par_id3154664\n"
 "help.text"
 msgid "Offset"
-msgstr ""
+msgstr "Offset"
 
 #. 6oQJ6
 #: 04060112.xhp
@@ -24620,7 +24620,7 @@ msgctxt ""
 "par_id3154566\n"
 "help.text"
 msgid "Name"
-msgstr ""
+msgstr "Name"
 
 #. D3xXV
 #: 04060112.xhp
@@ -24629,7 +24629,7 @@ msgctxt ""
 "par_id3146073\n"
 "help.text"
 msgid "Description"
-msgstr ""
+msgstr "Beschreibung"
 
 #. Zty8q
 #: 04060112.xhp
@@ -24935,7 +24935,7 @@ msgctxt ""
 "tit\n"
 "help.text"
 msgid "Add-in Functions, List of Analysis Functions Part One"
-msgstr "Add-in-Funktionen, Analysefunktionen Teil 1"
+msgstr "Plug-in-Funktionen, Analysefunktionen Teil 1"
 
 #. 5aqey
 #: 04060115.xhp
@@ -24944,7 +24944,7 @@ msgctxt ""
 "bm_id3152871\n"
 "help.text"
 msgid "<bookmark_value>add-ins; analysis functions</bookmark_value>  <bookmark_value>analysis functions</bookmark_value>"
-msgstr "<bookmark_value>Add-ins; Analysefunktionen</bookmark_value><bookmark_value>Analysefunktionen</bookmark_value>"
+msgstr "<bookmark_value>Plug-ins; Analysefunktionen</bookmark_value><bookmark_value>Analysefunktionen</bookmark_value>"
 
 #. tbHXD
 #: 04060115.xhp
@@ -24953,7 +24953,7 @@ msgctxt ""
 "hd_id3152871\n"
 "help.text"
 msgid "<variable id=\"head_addin_analysis_one\"><link href=\"text/scalc/01/04060115.xhp\" name=\"Add-in Functions, List of Analysis Functions Part One\">Add-in Functions, List of Analysis Functions Part One</link></variable>"
-msgstr "<variable id=\"head_addin_analysis_one\"><link href=\"text/scalc/01/04060115.xhp\" name=\"Add-in-Funktionen, Liste der Analysefunktionen Teil 1\">Add-in-Funktionen, Liste der Analysefunktionen Teil 1</link></variable>"
+msgstr "<variable id=\"head_addin_analysis_one\"><link href=\"text/scalc/01/04060115.xhp\" name=\"Plug-in-Funktionen, Liste der Analysefunktionen Teil 1\">Plug-in-Funktionen, Liste der Analysefunktionen Teil 1</link></variable>"
 
 #. fCaeG
 #: 04060115.xhp
@@ -26123,7 +26123,7 @@ msgctxt ""
 "tit\n"
 "help.text"
 msgid "Add-in Functions, List of Analysis Functions Part Two"
-msgstr "Kategorie Add-in, Liste der Analysis-Funktionen Teil 2"
+msgstr "Kategorie Plug-in, Liste der Analysis-Funktionen Teil 2"
 
 #. iQYW6
 #: 04060116.xhp
@@ -26141,7 +26141,7 @@ msgctxt ""
 "hd_id3154659\n"
 "help.text"
 msgid "<variable id=\"head_addin_analysis_two\"><link href=\"text/scalc/01/04060116.xhp\" name=\"Add-in Functions, List of Analysis Functions Part Two\">Add-in Functions, List of Analysis Functions Part Two</link></variable>"
-msgstr "<variable id=\"head_addin_analysis_two\"><link href=\"text/scalc/01/04060116.xhp\" name=\"Add-in-Funktionen, Liste der Analysefunktionen Teil 2\">Add-in-Funktionen, Liste der Analysefunktionen Teil 2</link></variable>"
+msgstr "<variable id=\"head_addin_analysis_two\"><link href=\"text/scalc/01/04060116.xhp\" name=\"Plug-in-Funktionen, Liste der Analysefunktionen Teil 2\">Plug-in-Funktionen, Liste der Analysefunktionen Teil 2</link></variable>"
 
 #. DBHCw
 #: 04060116.xhp
@@ -30884,7 +30884,7 @@ msgctxt ""
 "par_id3147273\n"
 "help.text"
 msgid "<input>=PRICE(\"1999-02-15\"; \"2007-11-15\"; 0.0575; 0.065; 100; 2; 0)</input>  returns 95.04287."
-msgstr ""
+msgstr "<input>=KURS(\"15.2.1999\"; \"15.11.2007\"; 0,0575; 0,065; 100; 2; 0)</input> ergibt 95,04287."
 
 #. sQGxa
 #: 04060119.xhp
@@ -30974,7 +30974,7 @@ msgctxt ""
 "par_id3151178\n"
 "help.text"
 msgid "<input>=PRICEDISC(\"1999-02-15\"; \"1999-03-01\"; 0.0525; 100; 2)</input>  returns 99.79583."
-msgstr ""
+msgstr "<input>=KURSDISAGIO(\"15.2.1999\"; \"1.3.1999\"; 0,0525; 100; 2)</input> ergibt 99,79583."
 
 #. hbGNH
 #: 04060119.xhp
@@ -31082,7 +31082,7 @@ msgctxt ""
 "par_id3158409\n"
 "help.text"
 msgid "<input>=PRICEMAT(\"1999-02-15\";\"1999-04-13\";\"1998-11-11\"; 0.061; 0.061;0)</input>  returns 99.98449888."
-msgstr ""
+msgstr "<input>=KURSFÄLLIG(\"15.2.1999\";\"13.4.1999\";\"11.11.1998\"; 0,061; 0,061;0)</input> ergibt 99,98449888."
 
 #. GAN7n
 #: 04060119.xhp
@@ -31091,7 +31091,7 @@ msgctxt ""
 "bm_id3148448\n"
 "help.text"
 msgid "<bookmark_value>calculating; durations</bookmark_value><bookmark_value>durations;calculating</bookmark_value><bookmark_value>PDURATION function</bookmark_value>"
-msgstr ""
+msgstr "<bookmark_value>Berechnen; Laufzeiten</bookmark_value><bookmark_value>Laufzeiten; berechnen</bookmark_value><bookmark_value>PDURATION (Funktion)</bookmark_value>"
 
 #. EjWXp
 #: 04060119.xhp
@@ -31100,7 +31100,7 @@ msgctxt ""
 "hd_id3148448\n"
 "help.text"
 msgid "PDURATION"
-msgstr ""
+msgstr "PDURATION"
 
 #. mQkqy
 #: 04060119.xhp
@@ -31118,7 +31118,7 @@ msgctxt ""
 "par_id3148933\n"
 "help.text"
 msgid "PDURATION(Rate; PV; FV)"
-msgstr ""
+msgstr "PDURATION(Zins; BW; ZW)"
 
 #. Rzxhq
 #: 04060119.xhp
@@ -31334,7 +31334,7 @@ msgctxt ""
 "par_id3145378\n"
 "help.text"
 msgid "<input>=MDURATION(\"2001-01-01\"; \"2006-01-01\"; 0.08; 0.09; 2; 3)</input> returns 4.02 years."
-msgstr ""
+msgstr "<input>=MDURATION(\"1.1.2001\"; \"1.1.2006\"; 0,08; 0,09; 2; 3)</input> ergibt 4,02 Jahre."
 
 #. BrDKP
 #: 04060119.xhp
@@ -31883,7 +31883,7 @@ msgctxt ""
 "par_id3154194\n"
 "help.text"
 msgid "<input>=YIELD(\"1999-02-15\"; \"2007-11-15\"; 0.0575 ;95.04287; 100; 2; 0)</input>  returns 0.065 or 6.50 per cent."
-msgstr ""
+msgstr "<input>=RENDITE(\"15.2.1999\"; \"15.11.2007\"; 0,0575 ;95,04287; 100; 2; 0)</input> ergibt 0,065 oder 6,50 Prozent."
 
 #. AeJmf
 #: 04060119.xhp
@@ -31973,7 +31973,7 @@ msgctxt ""
 "par_id3155187\n"
 "help.text"
 msgid "<input>=YIELDDISC(\"1999-02-15\"; \"1999-03-01\"; 99.795; 100; 2)</input> returns 0.052823 or 5.2823 per cent."
-msgstr ""
+msgstr "<input>=RENDITEDIS(\"15.2.1999\"; \"1.3.1999\"; 99,795; 100; 2)</input> ergibt 0,052823 oder 5,2823 Prozent."
 
 #. 5mbhE
 #: 04060119.xhp
@@ -32072,7 +32072,7 @@ msgctxt ""
 "par_id3155311\n"
 "help.text"
 msgid "<input>=YIELDMAT(\"1999-03-15\"; \"1999-11-03\"; \"1998-11-08\"; 0.0625; 100.0123; 0)</input>  returns 0.060954 or 6.0954 per cent."
-msgstr ""
+msgstr "<input>=RENDITEFÄLL(\"15.3.1999\"; \"3.11.1999\"; \"8.11.1998\"; 0,0625; 100,0123; 0)</input> ergibt 0,060954 oder 6,0954 Prozent."
 
 #. 2ZC4E
 #: 04060119.xhp
@@ -32261,7 +32261,7 @@ msgctxt ""
 "par_id3154382\n"
 "help.text"
 msgid "<input>=TBILLEQ(\"1999-03-31\";\"1999-06-01\"; 0.0914)</input>  returns 0.094151 or 9.4151 per cent."
-msgstr ""
+msgstr "<input>=TBILLÄQUIV(\"31.3.1999\";\"1.6.1999\"; 0,0914)</input> ergibt 0,094151 oder 9,4151 Prozent."
 
 #. zcFRa
 #: 04060119.xhp
@@ -32351,7 +32351,7 @@ msgctxt ""
 "par_id3154592\n"
 "help.text"
 msgid "<input>=TBILLPRICE(\"1999-03-31\";\"1999-06-01\"; 0.09)</input> returns 98.45."
-msgstr ""
+msgstr "<input>=TBILLKURS(\"31.3.1999\";\"1.6.1999\";0,09)</input> ergibt 98,45."
 
 #. yEHpt
 #: 04060119.xhp
@@ -32441,7 +32441,7 @@ msgctxt ""
 "par_id3148528\n"
 "help.text"
 msgid "<input>=TBILLYIELD(\"1999-03-31\";\"1999-06-01\"; 98.45)</input> returns 0.091417 or 9.1417 per cent."
-msgstr ""
+msgstr "<input>=TBILLRENDITE(\"31.3.1999\";\"1.6.1999\"; 98,45)</input> ergibt 0,091417 oder 9,1417 Prozent."
 
 #. NF5nu
 #: 04060119.xhp
@@ -33098,7 +33098,7 @@ msgctxt ""
 "par_id3165000\n"
 "help.text"
 msgid "<emph>Criteria</emph> indicates the criteria in the form of a number, an expression or a character string. These criteria determine which cells are counted."
-msgstr ""
+msgstr "<emph>Bedingungen</emph> legt die Bedingungen in Form einer Zahl, eines Ausdrucks oder einer Zeichenkette fest. Diese Bedingungen legen fest, welche Zellen gezählt werden."
 
 #. ZpDRv
 #: 04060181.xhp
@@ -37058,7 +37058,7 @@ msgctxt ""
 "par_id3156448\n"
 "help.text"
 msgid "<emph>RankC</emph> is the ranking of the value. If RankC is an array, the function becomes an <link href=\"text/scalc/01/04060107.xhp\" name=\"array function\">array function</link>."
-msgstr ""
+msgstr "<emph>RangC</emph> ist der Rang des Werts. Wenn RangC eine Matrix ist, wird die Funktion zu einer <link href=\"text/scalc/01/04060107.xhp\" name=\"Matrixfunktion\">Matrixfunktion</link>."
 
 #. 9gMJx
 #: 04060183.xhp
@@ -37067,7 +37067,7 @@ msgctxt ""
 "par_id3148702\n"
 "help.text"
 msgid "<input>=LARGE(A1:C50;2)</input> gives the second largest value in A1:C50."
-msgstr ""
+msgstr "<input>=KGRÖSSTE(A1:C50;2)</input> berechnet den zweitgrößten Wert in A1:C50."
 
 #. fdcAk
 #: 04060183.xhp
@@ -37076,7 +37076,7 @@ msgctxt ""
 "par_id3248702\n"
 "help.text"
 msgid "<input>=LARGE(A1:C50;B1:B5)</input> entered as an array function gives an array of the c-th largest value in A1:C50 with ranks defined in B1:B5."
-msgstr ""
+msgstr "<input>=KGRÖSSTE(A1:C50;B1:B5)</input> eingegeben als Matrixfunktion ergibt eine Matrix mit dem c-größten Wert in A1:C50, wobei die Ränge in B1:B5 definiert sind."
 
 #. p8pZc
 #: 04060183.xhp
@@ -37130,7 +37130,7 @@ msgctxt ""
 "par_id3155094\n"
 "help.text"
 msgid "<emph>RankC</emph> is the rank of the value. If RankC is an array, the function becomes an <link href=\"text/scalc/01/04060107.xhp\" name=\"array function\">array function</link>."
-msgstr ""
+msgstr "<emph>RangC</emph> ist der Rang des Werts. Wenn RangC eine Matrix ist, wird die Funktion zu einer <link href=\"text/scalc/01/04060107.xhp\" name=\"Matrix-Funktion\">Matrixfunktion</link>."
 
 #. 8BLf3
 #: 04060183.xhp
@@ -37139,7 +37139,7 @@ msgctxt ""
 "par_id3149897\n"
 "help.text"
 msgid "<input>=SMALL(A1:C50;2)</input> gives the second smallest value in A1:C50."
-msgstr ""
+msgstr "<input>=KKLEINSTE(A1:C50;2)</input> berechnet den zweit-kleinsten Wert in A1:C50."
 
 #. AuKCZ
 #: 04060183.xhp
@@ -37148,7 +37148,7 @@ msgctxt ""
 "par_id3249897\n"
 "help.text"
 msgid "<input>=SMALL(A1:C50;B1:B5)</input> entered as an array function gives an array of the c-th smallest value in A1:C50 with ranks defined in B1:B5."
-msgstr ""
+msgstr "<input>=KKLEINSTE(A1:C50;B1:B5)</input> als Matrixfunktion eingegeben ergibt eine Matrix der c-kleinsten Werte in A1:C50 mit Rängen, wie sie in B1:B5 definiert sind."
 
 #. KDBoE
 #: 04060183.xhp
@@ -44357,7 +44357,7 @@ msgctxt ""
 "par_id3150043\n"
 "help.text"
 msgid "<image id=\"img_id3159267\" src=\"sc/res/fx.png\" width=\"1cm\" height=\"1cm\"><alt id=\"alt_id3159267\">Icon Insert Function</alt></image>"
-msgstr ""
+msgstr "<image id=\"img_id3159267\" src=\"sc/res/fx.png\" width=\"1cm\" height=\"1cm\"><alt id=\"alt_id3159267\">Symbol für Funktion einfügen</alt></image>"
 
 #. 4Hfgb
 #: 04080000.xhp
@@ -46184,7 +46184,7 @@ msgctxt ""
 "par_id3150751\n"
 "help.text"
 msgid "<image id=\"img_id3153714\" src=\"sc/res/sf01.png\" width=\"1cm\" height=\"1cm\"><alt id=\"alt_id3153714\">Icon Cell Styles</alt></image>"
-msgstr ""
+msgstr "<image id=\"img_id3153714\" src=\"sc/res/sf01.png\" width=\"1cm\" height=\"1cm\"><alt id=\"alt_id3153714\">Symbol für Zellvorlagen</alt></image>"
 
 #. HKD2C
 #: 05100000.xhp
@@ -46220,7 +46220,7 @@ msgctxt ""
 "par_id3159100\n"
 "help.text"
 msgid "<image id=\"img_id3149814\" src=\"sw/res/sf04.png\" width=\"1cm\" height=\"1cm\"><alt id=\"alt_id3149814\">Icon Page Styles</alt></image>"
-msgstr ""
+msgstr "<image id=\"img_id3149814\" src=\"sw/res/sf04.png\" width=\"1cm\" height=\"1cm\"><alt id=\"alt_id3149814\">Symbol für Seitenvorlagen</alt></image>"
 
 #. BnFvb
 #: 05100000.xhp
@@ -46256,7 +46256,7 @@ msgctxt ""
 "par_id3155087\n"
 "help.text"
 msgid "<image id=\"img_id3153068\" src=\"cmd/sc_fillstyle.png\" width=\"1cm\" height=\"1cm\"><alt id=\"alt_id3153068\">Icon Fill Format Mode</alt></image>"
-msgstr ""
+msgstr "<image id=\"img_id3153068\" src=\"cmd/sc_fillstyle.png\" width=\"1cm\" height=\"1cm\"><alt id=\"alt_id3153068\">Symbol für Gießkannenmodus</alt></image>"
 
 #. TEEFF
 #: 05100000.xhp
@@ -46337,7 +46337,7 @@ msgctxt ""
 "par_id3150050\n"
 "help.text"
 msgid "<image id=\"img_id3154649\" src=\"cmd/sc_stylenewbyexample.png\" width=\"1cm\" height=\"1cm\"><alt id=\"alt_id3154649\">Icon New Style from Selection</alt></image>"
-msgstr ""
+msgstr "<image id=\"img_id3154649\" src=\"cmd/sc_stylenewbyexample.png\" width=\"1cm\" height=\"1cm\"><alt id=\"alt_id3154649\">Symbol für neue Vorlage aus Auswahl</alt></image>"
 
 #. aE4gp
 #: 05100000.xhp
@@ -46373,7 +46373,7 @@ msgctxt ""
 "par_id3145118\n"
 "help.text"
 msgid "<image id=\"img_id3155754\" src=\"cmd/sc_styleupdatebyexample.png\" width=\"1cm\" height=\"1cm\"><alt id=\"alt_id3155754\">Icon Update Style</alt></image>"
-msgstr ""
+msgstr "<image id=\"img_id3155754\" src=\"cmd/sc_styleupdatebyexample.png\" width=\"1cm\" height=\"1cm\"><alt id=\"alt_id3155754\">Symbol für Vorlage aktualisieren</alt></image>"
 
 #. AbPzG
 #: 05100000.xhp
@@ -48452,7 +48452,7 @@ msgctxt ""
 "par_id315475855\n"
 "help.text"
 msgid "Press Shift+<switchinline select=\"sys\"><caseinline select=\"MAC\">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+F9 to recalculate all formulas in the document, including Add-In functions. The hard recalculation correctly recalculates all formula cells."
-msgstr "Drücken Sie Umschalt+<switchinline select=\"sys\"><caseinline select=\"MAC\">Befehl</caseinline><defaultinline>Strg</defaultinline></switchinline>+F9, um alle Formeln im Dokument neu zu berechnen, einschließlich der Add-In-Funktionen. Die harte Neuberechnung berechnet alle Formelzellen korrekt neu."
+msgstr "Drücken Sie Umschalt+<switchinline select=\"sys\"><caseinline select=\"MAC\">Befehl</caseinline><defaultinline>Strg</defaultinline></switchinline>+F9, um alle Formeln im Dokument neu zu berechnen, einschließlich der Plug-In-Funktionen. Die harte Neuberechnung berechnet alle Formelzellen korrekt neu."
 
 #. qyZ6P
 #: 06080000.xhp
@@ -49127,7 +49127,7 @@ msgctxt ""
 "par_id3158212\n"
 "help.text"
 msgid "<ahelp hid=\".\"><variable id=\"sytext\">Sorts the selection from the highest to the lowest value, or from the lowest to the highest value. Number fields are sorted by size and text fields by the order of the characters. You can define the sort rules on Data - Sort - Options.</variable></ahelp> You define the default on <switchinline select=\"sys\"><caseinline select=\"MAC\">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline> - Language settings - Languages."
-msgstr ""
+msgstr "<ahelp hid=\".\"><variable id=\"sytext\">Sortiert die Auswahl vom größten zum kleinsten Wert oder vom kleinsten zum größten Wert. Zahlen werden nach der Größe und Textfelder nach der Buchstabenreihenfolge sortiert. Sie können die Sortierregeln unter »Daten – Sortieren… – Register: Optionen festlegen«.</variable></ahelp> Sie können die Standardwerte unter »<switchinline select=\"sys\"><caseinline select=\"MAC\">%PRODUCTNAME – Einstellungen</caseinline><defaultinline>Extras – Optionen…</defaultinline></switchinline> – Spracheinstellungen – Sprachen« ändern."
 
 #. cAFdw
 #: 12030100.xhp
@@ -50189,7 +50189,7 @@ msgctxt ""
 "par_id3155068\n"
 "help.text"
 msgid "<ahelp hid=\"modules/scalc/ui/subtotaloptionspage/ascending\">Sorts beginning with the lowest value. You can define the sort rules on Data - Sort - Options.</ahelp> You define the default on <switchinline select=\"sys\"><caseinline select=\"MAC\"><menuitem>%PRODUCTNAME - Preferences</menuitem></caseinline><defaultinline><menuitem>Tools - Options</menuitem></defaultinline></switchinline><menuitem> - Language settings - Languages</menuitem>."
-msgstr ""
+msgstr "<ahelp hid=\"modules/scalc/ui/subtotaloptionspage/ascending\">Die Sortierung beginnt mit dem kleinstem Wert. Sie können die Sortierregeln unter »Daten – Sortieren... – Register: Optionen« festlegen.</ahelp> Die allgemeinen Regeln legen Sie unter <switchinline select=\"sys\"><caseinline select=\"MAC\"><menuitem>%PRODUCTNAME – Einstellungen</menuitem></caseinline><defaultinline><menuitem>Extras – Optionen…</menuitem></defaultinline></switchinline><menuitem> – Spracheinstellungen – Sprachen</menuitem> fest."
 
 #. FFhB3
 #: 12050200.xhp
@@ -50207,7 +50207,7 @@ msgctxt ""
 "par_id3153766\n"
 "help.text"
 msgid "<ahelp hid=\"modules/scalc/ui/subtotaloptionspage/descending\">Sorts beginning with the highest value. You can define the sort rules on Data - Sort - Options.</ahelp> You define the default on <switchinline select=\"sys\"><caseinline select=\"MAC\"><menuitem>%PRODUCTNAME - Preferences</menuitem></caseinline><defaultinline><menuitem>Tools - Options</menuitem></defaultinline></switchinline><menuitem> - Language settings - Languages</menuitem>."
-msgstr ""
+msgstr "<ahelp hid=\"modules/scalc/ui/subtotaloptionspage/descending\">Die Sortierung beginnt mit dem größtem Wert. Sie können die Sortierregeln unter »Daten – Sortieren… – Register: Optionen« festlegen.</ahelp> Die allgemeinen Regeln legen Sie unter <switchinline select=\"sys\"><caseinline select=\"MAC\"><menuitem>%PRODUCTNAME – Einstellungen</menuitem></caseinline><defaultinline><menuitem>Extras – Optionen…</menuitem></defaultinline></switchinline><menuitem> – Spracheinstellungen – Sprachen</menuitem> fest."
 
 #. qjwrH
 #: 12060000.xhp
@@ -55769,7 +55769,7 @@ msgctxt ""
 "par_id45123108916423\n"
 "help.text"
 msgid "If the <emph>Average_Range</emph> is not specified, <emph>Range</emph> is used for both, the calculation of the mean and the search according to the condition. If  <emph>Average_Range</emph> is specified, the <emph>Range</emph> is used only for the condition test, while <emph>Average_Range</emph> is used for the average calculation."
-msgstr ""
+msgstr "Wenn <emph>Mittelwertbereich</emph> nicht angegeben ist, wird <emph>Bereich</emph> für beides, die Berechnung des Mittelwerts und die Prüfung der Bedingung, verwendet. Wenn <emph>Mittelwertbereich</emph> angegeben ist, wird <emph>Bereich</emph> nur für die Prüfung der Bedingung und <emph>Mittelwertbereich</emph> nur für die Berechnung des Mittelwerts verwendet."
 
 #. 8v8Zv
 #: func_averageif.xhp
@@ -57776,7 +57776,7 @@ msgctxt ""
 "tit\n"
 "help.text"
 msgid "FINDB Function"
-msgstr ""
+msgstr "Funktion FINDENB"
 
 #. EkUr2
 #: func_findb.xhp
@@ -57785,7 +57785,7 @@ msgctxt ""
 "bm_id141573508995071\n"
 "help.text"
 msgid "<bookmark_value>FINDB Function</bookmark_value>            <bookmark_value>find text;FINDB Function</bookmark_value>"
-msgstr ""
+msgstr "<bookmark_value>FINDENB (Funktion)</bookmark_value><bookmark_value>Text finden; FINDENB (Funktion)</bookmark_value>"
 
 #. WmZAa
 #: func_findb.xhp
@@ -57794,7 +57794,7 @@ msgctxt ""
 "hd_id771573508637966\n"
 "help.text"
 msgid "<variable id=\"findb\"><link href=\"text/scalc/01/func_findb.xhp\" name=\"findb\">FINDB</link></variable>"
-msgstr ""
+msgstr "<variable id=\"findb\"><link href=\"text/scalc/01/func_findb.xhp\" name=\"findb\">FINDENB</link></variable>"
 
 #. iW2EE
 #: func_findb.xhp
@@ -57803,7 +57803,7 @@ msgctxt ""
 "par_id831573508637970\n"
 "help.text"
 msgid "<variable id=\"variable name\"><ahelp hid=\".\">Returns the starting position of a given text, using byte positions. FINDB is case sensitive.</ahelp></variable>"
-msgstr ""
+msgstr "<variable id=\"variable name\"><ahelp hid=\".\">Gibt die Startposition eines bestimmten Textes mittels Byte-Positionen zurück. FINDENB unterscheidet zwischen Groß- und Kleinschreibung.</ahelp></variable>"
 
 #. yA9fg
 #: func_findb.xhp
@@ -57812,7 +57812,7 @@ msgctxt ""
 "par_id221573517641172\n"
 "help.text"
 msgid "FINDB( Find Text ; Text ; Position )"
-msgstr ""
+msgstr "FINDENB(Suchtext;Text;Position)"
 
 #. puQAw
 #: func_findb.xhp
@@ -57821,7 +57821,7 @@ msgctxt ""
 "par_id241573517292388\n"
 "help.text"
 msgid "<emph>Find Text</emph>: The text or text expression to be found."
-msgstr ""
+msgstr "<emph>Suchtext</emph>: Der zu suchende Text oder Textausdruck."
 
 #. YgyTW
 #: func_findb.xhp
@@ -57830,7 +57830,7 @@ msgctxt ""
 "par_id991573517299918\n"
 "help.text"
 msgid "<emph>Text</emph>: the text in which the search is to be made."
-msgstr ""
+msgstr "<emph>Text</emph>: Der Text, in dem gesucht werden soll."
 
 #. pfYPq
 #: func_findb.xhp
@@ -57839,7 +57839,7 @@ msgctxt ""
 "par_id521573517305077\n"
 "help.text"
 msgid "<emph>Position</emph>: The position in the text where the search starts."
-msgstr ""
+msgstr "<emph>Position</emph>: Die Position innerhalb des Textes, ab der gesucht werden soll."
 
 #. VLM4H
 #: func_findb.xhp
@@ -57848,7 +57848,7 @@ msgctxt ""
 "par_id481573517830373\n"
 "help.text"
 msgid "<input>=FINDB(\"ᄫᄬ\";\"ᄩᄔᄕᄜᄝᄞᄠgᄢᄣᄫᄬᄭᄮᄯᄲᄶ\";17)</input> returns 19."
-msgstr ""
+msgstr "<input>=FINDENB(\"ᄫᄬ\";\"ᄩᄔᄕᄜᄝᄞᄠgᄢᄣᄫᄬᄭᄮᄯᄲᄶ\";17)</input> ergibt 19."
 
 #. 2YcR7
 #: func_forecastetsadd.xhp
@@ -58082,7 +58082,7 @@ msgctxt ""
 "par_id0603201617141750\n"
 "help.text"
 msgid "<ahelp hid=\"HID_FUNC_FORECAST_ETS_PIA\">Calculates the prediction interval(s) for additive forecast based on the historical data using ETS or EDS algorithms.</ahelp> EDS is used when argument <emph>period_length</emph> is 0, otherwise ETS is used."
-msgstr ""
+msgstr "<ahelp hid=\"HID_FUNC_FORECAST_ETS_PIA\">Berechnet das/die Vorhersageintervall(e) für die additive Vorhersage basierend auf vergangenen Werten unter Verwendung der zweifachen oder dreifachen exponentiellen Glättung.</ahelp> Die zweifache exponentielle Glättung wird verwendet, wenn das Argument <emph>Periodenlänge</emph> 0 ist, ansonsten wird die dreifache exponentielle Glättung verwendet."
 
 #. ZnBVX
 #: func_forecastetspiadd.xhp
@@ -58586,7 +58586,7 @@ msgctxt ""
 "tit\n"
 "help.text"
 msgid "FOURIER function"
-msgstr ""
+msgstr "Funktion FOURIER"
 
 #. FmjN8
 #: func_fourier.xhp
@@ -58595,7 +58595,7 @@ msgctxt ""
 "bm_id581556228060864\n"
 "help.text"
 msgid "<bookmark_value>FOURIER function</bookmark_value>"
-msgstr ""
+msgstr "<bookmark_value>FOURIER (Funktion)</bookmark_value>"
 
 #. VQ5ra
 #: func_fourier.xhp
@@ -58604,7 +58604,7 @@ msgctxt ""
 "hd_id551556227727946\n"
 "help.text"
 msgid "<variable id=\"fourierfunct\"><link href=\"text/scalc/01/func_fourier.xhp\" name=\"fourierfunction\">FOURIER</link></variable>"
-msgstr ""
+msgstr "<variable id=\"fourierfunct\"><link href=\"text/scalc/01/func_fourier.xhp\" name=\"fourierfunction\">FOURIER</link></variable>"
 
 #. TNat4
 #: func_fourier.xhp
@@ -58613,7 +58613,7 @@ msgctxt ""
 "par_id121556227727948\n"
 "help.text"
 msgid "<variable id=\"textjoinfunction\"><ahelp hid=\".\">Computes the  Discrete Fourier Transform [DFT] of an input array of complex numbers using a couple of Fast Fourier Transform (FFT) algorithms.</ahelp></variable> The  function is an <link href=\"text/scalc/01/04060107.xhp\" name=\"array formula\">array formula</link>."
-msgstr ""
+msgstr "<variable id=\"textjoinfunction\"><ahelp hid=\".\">Berechnet die diskrete Fouriertransformation [DFT] einer Eingabematrix mit komplexen Zahlen unter Verwendung mehrerer FFT-Algorithmen (Fast Fourier Transform).</ahelp></variable> Die Funktion ist eine <link href=\"text/scalc/01/04060107.xhp\" name=\"array formula\">Matrixfunktion</link>."
 
 #. 467q3
 #: func_fourier.xhp
@@ -58622,7 +58622,7 @@ msgctxt ""
 "par_id541556228253979\n"
 "help.text"
 msgid "FOURIER(Array, GroupedByColumns, Inverse, Polar, MinimumMagnitude)"
-msgstr ""
+msgstr "FOURIER(Matrix; Nach Spalten gruppiert; Invertiert; Polarkoordinaten; Mindestgröße)"
 
 #. ELSK7
 #: func_fourier.xhp
@@ -58631,7 +58631,7 @@ msgctxt ""
 "par_id741556228390897\n"
 "help.text"
 msgid "<emph>Array</emph> is a 2 x N or N x 2 range representing an array of complex number to be transformed, where N is the length of the array. The array represents the real and imaginary parts of the data."
-msgstr ""
+msgstr "<emph>Matrix</emph>: Ist ein 2×N- oder N×2-Bereich, der eine Matrix mit einer zu transformierenden komplexen Zahl darstellt, wobei N die Länge der Matrix ist. Die Matrix repräsentiert den Real- und Imaginärteil der Daten."
 
 #. xTPa5
 #: func_fourier.xhp
@@ -58640,7 +58640,7 @@ msgctxt ""
 "par_id621556228397269\n"
 "help.text"
 msgid "<emph>GroupedByColumns</emph> is a logical (TRUE or FALSE, 1 or 0) argument. When TRUE the array is grouped by columns where the first column contains the real part of the complex number and the second columns contains the imaginary part of the complex number. When FALSE, the first row contains the real part of the complex number and the second row contains the imaginary part of the complex number. If there is only 1 column (row), the input sequence is treated as purely real."
-msgstr ""
+msgstr "<emph>Nach Spalten gruppiert</emph>: Ist ein logisches Argument (WAHR oder FALSCH, 1 oder 0). Bei Wahr wird die Matrix nach Spalten gruppiert, wobei die erste Spalte den Realteil der komplexen Zahl und die zweite Spalte den Imaginärteil der komplexen Zahl enthält. Bei FALSCH enthält die erste Zeile den Realteil der komplexen Zahl und die zweite Zeile den Imaginärteil der komplexen Zahl. Wenn nur eine Spalte (Zeile) vorhanden ist, wird die Eingabesequenz als rein reell behandelt."
 
 #. tbzAA
 #: func_fourier.xhp
@@ -58649,7 +58649,7 @@ msgctxt ""
 "par_id631556228516997\n"
 "help.text"
 msgid "<emph>Inverse</emph> is an optional logical (TRUE or FALSE, 1 or 0) argument. When TRUE, calculates the inverse Discrete Fourier Transform. The default value is FALSE."
-msgstr ""
+msgstr "<emph>Invertiert</emph>: Ist ein optionales logisches Argument (WAHR oder FALSCH, 1 oder 0). Wenn WAHR, wird die inverse diskrete Fourier-Transformation berechnet. Der Standardwert ist FALSCH."
 
 #. N6enC
 #: func_fourier.xhp
@@ -58658,7 +58658,7 @@ msgctxt ""
 "par_id811561732287508\n"
 "help.text"
 msgid "<emph>Polar</emph>: is an optional logical (TRUE or FALSE, 1 or 0) argument. Indicates whether the final output is in polar coordinates (magnitude, phase). This argument is optional and the default value is FALSE."
-msgstr ""
+msgstr "<emph>Polarkoordinaten</emph>: ist ein optionales logisches Argument (WAHR oder FALSCH, 1 oder 0). Gibt an, ob die endgültige Ausgabe in Polarkoordinaten (Größe, Phase) erfolgt. Dieses Argument ist optional und der Standardwert ist FALSCH."
 
 #. qBBZd
 #: func_fourier.xhp
@@ -58667,7 +58667,7 @@ msgctxt ""
 "par_id661561732521977\n"
 "help.text"
 msgid "<emph>MinimumMagnitude</emph>: used only if Polar=TRUE. All frequency components with magnitude less than <emph>MinimumMagnitude</emph> will be suppressed with a zero magnitude-phase entry. This is very useful when looking at the magnitude-phase spectrum of a signal because there is always some very tiny amount of rounding error when doing FFT algorithms and results in incorrect non-zero phase for non-existent frequencies. By providing a suitable value to this parameter, these non-existent frequency components can be suppressed. By default the value of <emph>MinimumMagnitude</emph> is 0.0, and no suppression is done by default."
-msgstr ""
+msgstr "<emph>Mindestgröße</emph>: Wird nur verwendet, wenn Polarkoordinaten=WAHR ist. Alle Frequenzkomponenten mit einer Größe unter <emph>Mindestgröße</emph> werden mit einem Null-Größe-Phase-Eintrag unterdrückt. Dies ist bei der Betrachtung des Betrag-Phasen-Spektrums eines Signals sehr nützlich, da bei FFT-Algorithmen immer ein sehr kleiner Rundungsfehler auftritt, der bei nicht vorhandenen Frequenzen zu einer falschen Phase ungleich Null führt. Durch Bereitstellung eines geeigneten Werts für diesen Parameter können diese nicht vorhandenen Frequenzkomponenten unterdrückt werden. Standardmäßig ist der Wert von <emph> Mindestgröße</emph> 0,0 und standardmäßig erfolgt keine Unterdrückung."
 
 #. P2z9v
 #: func_hour.xhp
@@ -60449,7 +60449,7 @@ msgctxt ""
 "bm_id3151254\n"
 "help.text"
 msgid "<bookmark_value>NETWORKDAYS function</bookmark_value>  <bookmark_value>NETWORKDAYS_EXCEL2003 function</bookmark_value>"
-msgstr ""
+msgstr "<bookmark_value>NETTOARBEITSTAGE (Funktion)</bookmark_value><bookmark_value>NETTOARBEITSTAGE_EXCEL2003 (Funktion)</bookmark_value>"
 
 #. HzF8v
 #: func_networkdays.xhp
@@ -60467,7 +60467,7 @@ msgctxt ""
 "par_id3153788\n"
 "help.text"
 msgid "<ahelp hid=\"HID_AAI_FUNC_NETWORKDAYS\">Returns the number of workdays between a <emph>start date</emph> and an <emph>end date</emph>. Holidays can be deducted.</ahelp>"
-msgstr ""
+msgstr "<ahelp hid=\"HID_AAI_FUNC_NETWORKDAYS\">Gibt die Anzahl von Arbeitstagen zwischen einem <emph>Anfangsdatum</emph> und einem <emph>Enddatum</emph> zurück. Freie Tage können abgezogen werden.</ahelp>"
 
 #. shbHi
 #: func_networkdays.xhp
@@ -60719,7 +60719,7 @@ msgctxt ""
 "tit\n"
 "help.text"
 msgid "Function OPT_BARRIER"
-msgstr ""
+msgstr "Funktion OPT_BARRIER"
 
 #. 4HRGX
 #: func_opt_barrier.xhp
@@ -60728,7 +60728,7 @@ msgctxt ""
 "bm_id511575065323638\n"
 "help.text"
 msgid "<bookmark_value>OPT_BARRIER function</bookmark_value>"
-msgstr ""
+msgstr "<bookmark_value>OPT_BARRIER (Funktion)</bookmark_value>"
 
 #. KrCYn
 #: func_opt_barrier.xhp
@@ -60737,7 +60737,7 @@ msgctxt ""
 "hd_id241575063871994\n"
 "help.text"
 msgid "<variable id=\"optbrarrierh1\"><link href=\"text/scalc/01/func_opt_barrier.xhp\" name=\"OPT_BARRIER\">OPT_BARRIER</link></variable>"
-msgstr ""
+msgstr "<variable id=\"optbrarrierh1\"><link href=\"text/scalc/01/func_opt_barrier.xhp\" name=\"OPT_BARRIER\">OPT_BARRIER</link></variable>"
 
 #. uFKBs
 #: func_opt_barrier.xhp
@@ -60746,7 +60746,7 @@ msgctxt ""
 "par_id121575063871995\n"
 "help.text"
 msgid "<variable id=\"variable name\"><ahelp hid=\".\">Returns the pricing for a barrier option, calculated using the Black-Scholes option pricing model.</ahelp></variable>"
-msgstr ""
+msgstr "<variable id=\"variable name\"><ahelp hid=\".\">Gibt die Preisgestaltung für eine Barrier-Option zurück, die mit dem Black-Scholes-Optionspreismodell berechnet wurde.</ahelp></variable>"
 
 #. FxbGq
 #: func_opt_barrier.xhp
@@ -60755,7 +60755,7 @@ msgctxt ""
 "par_id371575067051846\n"
 "help.text"
 msgid "OPT_BARRIER(Spot; Volatility; Rate; Foreign Rate; Maturity; Strike; LowerBarrier; UpperBarrier; Rebate; PutCall; InOut; BarrierMonitoring; Greek)"
-msgstr ""
+msgstr "OPT_BARRIER(Startwert; Volatilität; Zins; Ausländischer Zins; Laufzeit; Strike; Untere Barriere; Obere Barriere; Rabatt; Kauf/Verkauf; Knock-In/-Out; Barrier-Typ; Griechisch)"
 
 #. XEMff
 #: func_opt_barrier.xhp
@@ -60764,7 +60764,7 @@ msgctxt ""
 "par_id681575073426941\n"
 "help.text"
 msgid "<emph>Strike</emph> is the strike price of the option and should be non-negative."
-msgstr ""
+msgstr "<emph>Startwert</emph>: Ist der Startpreis der Option und sollte nicht negativ sein."
 
 #. 8tgWG
 #: func_opt_barrier.xhp
@@ -60773,7 +60773,7 @@ msgctxt ""
 "par_id671575073495724\n"
 "help.text"
 msgid "<emph>Rebate</emph> is the amount of money to be paid at maturity if the barrier is hit."
-msgstr ""
+msgstr "<emph>Rabatt</emph>: Ist der Geldbetrag, der beim Erreichen der Barriere bei Fälligkeit zu zahlen ist."
 
 #. uAzky
 #: func_opt_barrier.xhp
@@ -60782,7 +60782,7 @@ msgctxt ""
 "par_id691575073511191\n"
 "help.text"
 msgid "<variable id=\"optputcall\"><emph>Put or Call</emph> is a string that defines whether the option is a put (“p”) or a call (“c”).</variable>"
-msgstr ""
+msgstr "<variable id=\"optputcall\"><emph>Kauf/Verkauf</emph>: Ist eine Zeichenfolge, die definiert, ob es sich bei der Option um eine Kauf- („p“ – put) oder eine Verkaufsoption („c“ – call) handelt.</variable>"
 
 #. PdCJb
 #: func_opt_barrier.xhp
@@ -60791,7 +60791,7 @@ msgctxt ""
 "par_id651575073773761\n"
 "help.text"
 msgid "<input>=OPT_BARRIER(30;0.2;0.06;0;1;40;25;0;0;\"c\";\"o\";\"c\")</input> returns the value 0.4243."
-msgstr ""
+msgstr "<input>=OPT_BARRIER(30;0,2;0,06;0;1;40;25;0;0;\"c\";\"o\";\"c\")</input> ergibt den Wert 0,4243."
 
 #. ABVQH
 #: func_opt_barrier.xhp
@@ -60800,7 +60800,7 @@ msgctxt ""
 "par_id401575073777593\n"
 "help.text"
 msgid "<input>=OPT_BARRIER(50;0.4;0.05;0;0.5;65;0;80;0;\"p\";\"o\";\"c\";\"e\")</input> returns the value 10.1585."
-msgstr ""
+msgstr "<input>=OPT_BARRIER(50;0,4;0,05;0;0,5;65;0;80;0;\"p\";\"o\";\"c\";\"e\")</input> ergibt den Wert 10,1585."
 
 #. HWhRY
 #: func_opt_prob_hit.xhp
@@ -60809,7 +60809,7 @@ msgctxt ""
 "tit\n"
 "help.text"
 msgid "Function OPT_PROB_HIT"
-msgstr ""
+msgstr "Funktion OPT_PROB_HIT"
 
 #. 5Naq2
 #: func_opt_prob_hit.xhp
@@ -60818,7 +60818,7 @@ msgctxt ""
 "bm_id961575074485125\n"
 "help.text"
 msgid "<bookmark_value>OPT_PROB_HIT function</bookmark_value>"
-msgstr ""
+msgstr "<bookmark_value>OPT_PROB_HIT (Funktion)</bookmark_value>"
 
 #. jn8fF
 #: func_opt_prob_hit.xhp
@@ -60827,7 +60827,7 @@ msgctxt ""
 "hd_id71575063908363\n"
 "help.text"
 msgid "<variable id=\"optprobhith1\"><link href=\"text/scalc/01/func_opt_prob_hit.xhp\" name=\"OPT_PROB_HIT\">OPT_PROB_HIT</link></variable>"
-msgstr ""
+msgstr "<variable id=\"optprobhith1\"><link href=\"text/scalc/01/func_opt_prob_hit.xhp\" name=\"OPT_PROB_HIT\">OPT_PROB_HIT</link></variable>"
 
 #. fWecm
 #: func_opt_prob_hit.xhp
@@ -60836,7 +60836,7 @@ msgctxt ""
 "par_id591575063908364\n"
 "help.text"
 msgid "<variable id=\"variable name\"><ahelp hid=\".\">Returns the probability that an asset hits a predetermined barrier price, assuming that the stock price can be modeled as a process S that follows the stochastic differential equation</ahelp></variable>, as follows."
-msgstr ""
+msgstr "<variable id=\"variable name\"><ahelp hid=\".\">Gibt die Wahrscheinlichkeit zurück, mit der ein Vermögenswert einen vorgegebenen Barrierepreis erreicht, vorausgesetzt, der Aktienkurs kann als Prozess S modelliert werden, welcher der stochastischen Differentialgleichung folgt</ahelp></variable>, wie im folgenden dargestellt."
 
 #. PF9tf
 #: func_opt_prob_hit.xhp
@@ -60845,7 +60845,7 @@ msgctxt ""
 "par_id21575078735992\n"
 "help.text"
 msgid "<image src=\"media/helpimg/sc_func_opt01.svg\" id=\"img_id211575078735993\" width=\"4cm\" height=\"1cm\"><alt id=\"alt_id401575078735994\">OPT_PROB_HIT equation</alt></image>"
-msgstr ""
+msgstr "<image src=\"media/helpimg/sc_func_opt01.svg\" id=\"img_id211575078735993\" width=\"4cm\" height=\"1cm\"><alt id=\"alt_id401575078735994\">Gleichung der OPT_PROB_HIT</alt></image>"
 
 #. FnaCP
 #: func_opt_prob_hit.xhp
@@ -60854,7 +60854,7 @@ msgctxt ""
 "par_id821575074114118\n"
 "help.text"
 msgid "<literal>µ</literal> is the asset’s percentage drift, <literal>vol</literal> is the percentage volatility of the stock, and <literal>dW</literal> is a random sample drawn from a normal distribution with a zero mean. <literal>W</literal> is a Wiener process or Brownian motion."
-msgstr ""
+msgstr "<literal>µ</literal> ist die prozentuale Abweichung des Vermögenswerts, <literal>vol</literal> ist die prozentuale Volatilität der Aktie und <literal>dW</literal> ist eine Zufallsstichprobe aus einer Normalverteilung mit einem Mittelwert von Null. <literal>W</literal> ist ein Wienscher-Prozess oder eine Brownsche-Bewegung."
 
 #. 9NRxu
 #: func_opt_prob_hit.xhp
@@ -60863,7 +60863,7 @@ msgctxt ""
 "par_id211575074192954\n"
 "help.text"
 msgid "OPT_PROB_HIT(Spot; Volatility; Drift; Maturity; LowerBarrier; UpperBarrier)"
-msgstr ""
+msgstr "OPT_PROB_HIT(Startwert; Volatilität; Veränderung; Laufzeit; Untere Barriere; Obere Barriere)"
 
 #. XaA8K
 #: func_opt_prob_hit.xhp
@@ -60872,7 +60872,7 @@ msgctxt ""
 "par_id901575074339820\n"
 "help.text"
 msgid "<variable id=\"optdrift\"><emph>Drift</emph> is the annual stock price percentage drift rate (µ in the above formula). The value is expressed as a decimal (for example, enter 15% as 0.15).</variable>"
-msgstr ""
+msgstr "<variable id=\"optdrift\"><emph>Veränderung</emph>: ist die jährliche prozentuale Abweichung des Aktienkurses (µ in der obigen Formel). Der Wert wird als Dezimalzahl angegeben (geben Sie beispielsweise 15% als 0,15 ein).</variable>"
 
 #. 6yrWk
 #: func_opt_prob_hit.xhp
@@ -60881,7 +60881,7 @@ msgctxt ""
 "par_id681575073426941\n"
 "help.text"
 msgid "<variable id=\"optstrike\"><emph>Strike</emph> is the strike price of the option and should be non-negative.</variable>"
-msgstr ""
+msgstr "<variable id=\"optstrike\"><emph>Strike</emph>: Ist der Ausübungspreis der Option und sollte nicht negativ sein.</variable>"
 
 #. mHW3F
 #: func_opt_prob_hit.xhp
@@ -60890,7 +60890,7 @@ msgctxt ""
 "par_id971575074431070\n"
 "help.text"
 msgid "<input>=OPT_PROB_HIT(30;0.2;0.3;1;0;40)</input>  returns the value 0.6119."
-msgstr ""
+msgstr "<input>=OPT_PROB_HIT(30;0,2;0,3;1;0;40)</input> ergibt den Wert 0,6119."
 
 #. 3EshE
 #: func_opt_prob_hit.xhp
@@ -60899,7 +60899,7 @@ msgctxt ""
 "par_id171575074434932\n"
 "help.text"
 msgid "<input>=OPT_PROB_HIT(70;0.3;0.1;0.5;60;0)</input>  returns the value 0.4239."
-msgstr ""
+msgstr "<input>=OPT_PROB_HIT(70;0,3;0,1;0,5;60;0)</input> ergibt den Wert 0,4239."
 
 #. RFprF
 #: func_opt_prob_inmoney.xhp
@@ -60908,7 +60908,7 @@ msgctxt ""
 "tit\n"
 "help.text"
 msgid "Function OPT_PROB_INMONEY"
-msgstr ""
+msgstr "Funktion OPT_PROB_INMONEY"
 
 #. QQBrZ
 #: func_opt_prob_inmoney.xhp
@@ -60917,7 +60917,7 @@ msgctxt ""
 "bm_id961575065633373\n"
 "help.text"
 msgid "<bookmark_value>OPT_PROB_INMONEY function</bookmark_value>"
-msgstr ""
+msgstr "<bookmark_value>OPT_PROB_INMONEY (Funktion)</bookmark_value>"
 
 #. kMBbw
 #: func_opt_prob_inmoney.xhp
@@ -60926,7 +60926,7 @@ msgctxt ""
 "hd_id941575063929082\n"
 "help.text"
 msgid "<variable id=\"optprobinmoneyh1\"><link href=\"text/scalc/01/func_opt_prob_inmoney.xhp\" name=\"OPT_PROB_INMONEY\">OPT_PROB_INMONEY</link></variable>"
-msgstr ""
+msgstr "<variable id=\"optprobinmoneyh1\"><link href=\"text/scalc/01/func_opt_prob_inmoney.xhp\" name=\"OPT_PROB_INMONEY\">OPT_PROB_INMONEY</link></variable>"
 
 #. QDryb
 #: func_opt_prob_inmoney.xhp
@@ -60935,7 +60935,7 @@ msgctxt ""
 "par_id941575063929083\n"
 "help.text"
 msgid "<variable id=\"variable name\"><ahelp hid=\".\">Returns the probability that an asset will end up between two barrier levels at maturity, assuming that the stock price can be modeled as a process S that follows the stochastic differential equation</ahelp></variable>, as follows."
-msgstr ""
+msgstr "<variable id=\"variable name\"><ahelp hid=\".\">Gibt die Wahrscheinlichkeit zurück, dass ein Vermögenswert bei Fälligkeit zwischen zwei Barrier-Ebenen liegt, vorausgesetzt, der Aktienkurs kann als Prozess S modelliert werden, welcher der stochastischen Differentialgleichung folgt</ahelp></variable>, wie im folgenden dargestellt."
 
 #. HDuce
 #: func_opt_prob_inmoney.xhp
@@ -60944,7 +60944,7 @@ msgctxt ""
 "par_id21575078735992\n"
 "help.text"
 msgid "<image src=\"media/helpimg/sc_func_opt01.svg\" id=\"img_id211575078735993\" width=\"4cm\" height=\"1cm\"><alt id=\"alt_id401575078735994\">OPT_PROB_INMONEY equation</alt></image>"
-msgstr ""
+msgstr "<image src=\"media/helpimg/sc_func_opt01.svg\" id=\"img_id211575078735993\" width=\"4cm\" height=\"1cm\"><alt id=\"alt_id401575078735994\">Gleichung für OPT_PROB_INMONEY</alt></image>"
 
 #. 7ja6D
 #: func_opt_prob_inmoney.xhp
@@ -60953,7 +60953,7 @@ msgctxt ""
 "par_id941575074893788\n"
 "help.text"
 msgid "<literal>µ</literal> is the asset’s percentage drift, <literal>vol</literal> is the percentage volatility of the stock, and <literal>dW</literal> is a random sample drawn from a normal distribution with a zero mean. <literal>W</literal> is a Wiener process or Brownian motion."
-msgstr ""
+msgstr "<literal>µ</literal> ist die prozentuale Abweichung des Vermögenswerts, <literal>vol</literal> ist die prozentuale Volatilität der Aktie und <literal>dW</literal> ist eine Zufallsstichprobe aus einer Normalverteilung mit einem Mittelwert von Null. <literal>W</literal> ist ein Wienscher-Prozess oder eine Brownsche-Bewegung."
 
 #. pMCin
 #: func_opt_prob_inmoney.xhp
@@ -60962,7 +60962,7 @@ msgctxt ""
 "par_id241575075282150\n"
 "help.text"
 msgid "If the optional <emph>Strike</emph> and <emph>PutCall</emph> arguments are included, then"
-msgstr ""
+msgstr "Wenn die optionalen Argumente <emph>Strike</emph> und <emph>Kauf/Verkauf</emph> enthalten sind, dann"
 
 #. vxxYT
 #: func_opt_prob_inmoney.xhp
@@ -60971,7 +60971,7 @@ msgctxt ""
 "par_id931575075314553\n"
 "help.text"
 msgid "For a call option, the function returns the probability that the asset will end up between <emph>Strike</emph> and <emph>UpperBarrier</emph>."
-msgstr ""
+msgstr "gibt die Funktion bei einer Kauf-Option die Wahrscheinlichkeit zurück, mit welcher der Vermögenswert zwischen <emph>Strike</emph> und <emph>Obere Barriere</emph> landet."
 
 #. UrAPw
 #: func_opt_prob_inmoney.xhp
@@ -60980,7 +60980,7 @@ msgctxt ""
 "par_id531575075321659\n"
 "help.text"
 msgid "For a put option, the function returns the probability that the asset will end up between <emph>LowerBarrier</emph> and <emph>Strike</emph>."
-msgstr ""
+msgstr "gibt die Funktion bei einer Verkauf-Option die Wahrscheinlichkeit zurück, mit welcher der Vermögenswert zwischen <emph>Untere Barriere</emph> und <emph>Strike</emph> landet."
 
 #. 9VazP
 #: func_opt_prob_inmoney.xhp
@@ -60989,7 +60989,7 @@ msgctxt ""
 "par_id191575075304900\n"
 "help.text"
 msgid "The function ignores the possibility of knock-out before maturity."
-msgstr ""
+msgstr "Die Funktion ignoriert die Möglichkeit eines Knock-Outs vor Fälligkeit."
 
 #. XTh5Y
 #: func_opt_prob_inmoney.xhp
@@ -60998,7 +60998,7 @@ msgctxt ""
 "par_id761575075027094\n"
 "help.text"
 msgid "OPT_PROB_INMONEY(Spot; Volatility; Drift; Maturity; LowerBarrier; UpperBarrier; Strike; PutCall)"
-msgstr ""
+msgstr "OPT_PROB_INMONEY(Startwert; Volatilität; Veränderung; Laufzeit; Untere Barriere; Obere Barriere; Strike; Kauf/Verkauf)"
 
 #. mE6CG
 #: func_opt_prob_inmoney.xhp
@@ -61007,7 +61007,7 @@ msgctxt ""
 "par_id601575074993334\n"
 "help.text"
 msgid "<input>=OPT_PROB_INMONEY(30;0.2;0.1;1;0;50)</input> returns the value 0.9844."
-msgstr ""
+msgstr "<input>=OPT_PROB_INMONEY(30;0,2;0,1;1;0;50)</input> ergibt den Wert 0,9844."
 
 #. K7AED
 #: func_opt_prob_inmoney.xhp
@@ -61016,7 +61016,7 @@ msgctxt ""
 "par_id261575074997216\n"
 "help.text"
 msgid "<input>=OPT_PROB_INMONEY(70;0.3;0.15;1;60;0;80;\"p\")</input> returns the value 0.3440."
-msgstr ""
+msgstr "<input>=OPT_PROB_INMONEY(70;0,3;0,15;1;60;0;80;\"p\")</input> ergibt den Wert 0,3440."
 
 #. muQEH
 #: func_opt_touch.xhp
@@ -61025,7 +61025,7 @@ msgctxt ""
 "tit\n"
 "help.text"
 msgid "OPT_TOUCH"
-msgstr ""
+msgstr "Funktion OPT_TOUCH"
 
 #. r3Awi
 #: func_opt_touch.xhp
@@ -61034,7 +61034,7 @@ msgctxt ""
 "bm_id951575065400504\n"
 "help.text"
 msgid "<bookmark_value>OPT_TOUCH function</bookmark_value>"
-msgstr ""
+msgstr "<bookmark_value>OPT_TOUCH (Funktion)</bookmark_value>"
 
 #. DBPBG
 #: func_opt_touch.xhp
@@ -61043,7 +61043,7 @@ msgctxt ""
 "hd_id41575062825964\n"
 "help.text"
 msgid "<variable id=\"opttouchh1\"><link href=\"text/scalc/01/func_opt_touch.xhp\" name=\"function_opt_touch\">OPT_TOUCH</link></variable>"
-msgstr ""
+msgstr "<variable id=\"opttouchh1\"><link href=\"text/scalc/01/func_opt_touch.xhp\" name=\"function_opt_touch\">OPT_TOUCH</link></variable>"
 
 #. HwW6c
 #: func_opt_touch.xhp
@@ -61052,7 +61052,7 @@ msgctxt ""
 "par_id531575062825965\n"
 "help.text"
 msgid "<ahelp hid=\".\">Returns the pricing of a touch / no-touch option, calculated using the Black-Scholes option pricing model.</ahelp>"
-msgstr ""
+msgstr "<ahelp hid=\".\">Gibt den Preis einer Touch-/No-Touch-Option zurück, der unter Verwendung des Black-Scholes-Optionspreismodells berechnet wurde.</ahelp>"
 
 #. DE8qf
 #: func_opt_touch.xhp
@@ -61061,7 +61061,7 @@ msgctxt ""
 "par_id371575066515276\n"
 "help.text"
 msgid "For relevant background information, visit the <link href=\"https://en.wikipedia.org/wiki/Option_(finance)\" name=\"optionfinance\">Options (finance)</link> and <link href=\"https://en.wikipedia.org/wiki/Black–Scholes_model\" name=\"blackscholes\">Black-Scholes</link> model Wikipedia pages."
-msgstr ""
+msgstr "Für relevante Hintergrundinformationen besuchen Sie die Wikipedia-Seiten <link href=\"https://de.wikipedia.org/wiki/Option_(Wirtschaft)\" name=\"optionfinance\">Option (Wirtschaft)</link> und <link href=\"https://de.wikipedia.org/wiki/Black-Scholes-Modell\" name=\"blackscholes\">Black-Scholes-Modell</link>."
 
 #. 29Wsy
 #: func_opt_touch.xhp
@@ -61070,7 +61070,7 @@ msgctxt ""
 "par_id571575080642652\n"
 "help.text"
 msgid "Further information about touch / no-touch options may be found on many financial websites."
-msgstr ""
+msgstr "Weitere Informationen zu Touch-/No-Touch-Optionen finden Sie auf vielen Finanzwebsites."
 
 #. pyway
 #: func_opt_touch.xhp
@@ -61079,7 +61079,7 @@ msgctxt ""
 "par_id151575063296819\n"
 "help.text"
 msgid "OPT_TOUCH(Spot; Volatility; Rate; ForeignRate; Maturity; LowerBarrier; UpperBarrier; ForeignDomestic; InOut; BarrierMonitoring; Greek)"
-msgstr ""
+msgstr "OPT_TOUCH(Startwert; Volatilität; Zins; Ausländischer Zins; Laufzeit; Untere Barriere; Obere Barriere; Aus-/Inländisch; Knock-In/Out; Barriereart; Griechisch)"
 
 #. 6rD5u
 #: func_opt_touch.xhp
@@ -61088,7 +61088,7 @@ msgctxt ""
 "par_id321575066304659\n"
 "help.text"
 msgid "<variable id=\"optspot\"><emph>Spot</emph> is the price / value of the underlying asset and should be greater than 0.0.</variable>"
-msgstr ""
+msgstr "<variable id=\"optspot\"><emph>Startwert</emph>: Ist der Preis/Wert des Basiswerts und sollte größer als 0,0 sein.</variable>"
 
 #. CoALG
 #: func_opt_touch.xhp
@@ -61097,7 +61097,7 @@ msgctxt ""
 "par_id31575066315078\n"
 "help.text"
 msgid "<variable id=\"optvolat\"><emph>Volatility</emph> is the annual percentage volatility of the underlying asset expressed as a decimal (for example, enter 30% as 0.3). The value should be greater than 0.0.</variable>"
-msgstr ""
+msgstr "<variable id=\"optvolat\"><emph>Volatilität</emph>: Ist die jährliche prozentuale Volatilität des Basiswerts, ausgedrückt als Dezimalzahl (geben Sie beispielsweise 30% als 0,3 ein). Der Wert sollte größer als 0,0 sein.</variable>"
 
 #. iCEkw
 #: func_opt_touch.xhp
@@ -61106,7 +61106,7 @@ msgctxt ""
 "par_id681575066324254\n"
 "help.text"
 msgid "<variable id=\"optrate\"><emph>Rate</emph> is the continuously compounded interest rate. This is a percentage expressed as a decimal (for example, enter 40% as 0.4).</variable>"
-msgstr ""
+msgstr "<variable id=\"optrate\"><emph>Zins</emph>: Ist der kontinuierlich verzinsliche Zinssatz. Dies ist ein Prozentsatz, der als Dezimalzahl ausgedrückt wird (geben Sie beispielsweise 40% als 0,4 ein).</variable>"
 
 #. eoG8E
 #: func_opt_touch.xhp
@@ -61115,7 +61115,7 @@ msgctxt ""
 "par_id71575066333773\n"
 "help.text"
 msgid "<variable id=\"optfrate\"><emph>ForeignRate</emph> is the continuously compounded foreign interest rate. This is a percentage expressed as a decimal (for example, enter 50% as 0.5).</variable>"
-msgstr ""
+msgstr "<variable id=\"optfrate\"><emph>Ausländischer Zins</emph>: Ist der fortlaufend berechnete ausländische Zinssatz. Dies ist ein Prozentsatz, der als Dezimalzahl ausgedrückt wird (geben Sie beispielsweise 50% als 0,5 ein).</variable>"
 
 #. hzfJp
 #: func_opt_touch.xhp
@@ -61124,7 +61124,7 @@ msgctxt ""
 "par_id21575066338734\n"
 "help.text"
 msgid "<variable id=\"optmaturity\"><emph>Maturity</emph> is the time to maturity of the option, in years, and should be non-negative.</variable>"
-msgstr ""
+msgstr "<variable id=\"optmaturity\"><emph>Laufzeit</emph>: Ist die Restlaufzeit der Option in Jahren und sollte nicht negativ sein.</variable>"
 
 #. Gksbz
 #: func_opt_touch.xhp
@@ -61133,7 +61133,7 @@ msgctxt ""
 "par_id671575066343182\n"
 "help.text"
 msgid "<variable id=\"optlowbar\"><emph>LowerBarrier</emph> is the predetermined lower barrier price; set to zero for no lower barrier.</variable>"
-msgstr ""
+msgstr "<variable id=\"optlowbar\"><emph>Untere Barriere</emph>: Ist der vorgegebene Preis für die untere Barriere; Für keine untere Barriere geben Sie Null ein.</variable>"
 
 #. KDTDW
 #: func_opt_touch.xhp
@@ -61142,7 +61142,7 @@ msgctxt ""
 "par_id301575066347357\n"
 "help.text"
 msgid "<variable id=\"optupbar\"><emph>UpperBarrier</emph> is the predetermined upper barrier price; set to zero for no upper barrier.</variable>"
-msgstr ""
+msgstr "<variable id=\"optupbar\"><emph>Obere Barriere</emph>: Ist der vorgegebene Preis für die obere Barriere; Für keine obere Barriere geben Sie Null ein.</variable>"
 
 #. oVmg7
 #: func_opt_touch.xhp
@@ -61151,7 +61151,7 @@ msgctxt ""
 "par_id561575066355924\n"
 "help.text"
 msgid "<variable id=\"optdomestic\"><emph>ForeignDomestic</emph> is a string that defines whether the option pays domestic (“d”) or foreign (“f”) currency.</variable>"
-msgstr ""
+msgstr "<variable id=\"optdomestic\"><emph>Aus-/Inländisch</emph>: Ist eine Zeichenfolge, die festlegt, ob die Option inländische (\"d\" – domestic) oder ausländische (\"f\" – foreign) Währung zahlt.</variable>"
 
 #. zTRA2
 #: func_opt_touch.xhp
@@ -61160,7 +61160,7 @@ msgctxt ""
 "par_id251575066360596\n"
 "help.text"
 msgid "<variable id=\"optinout\"><emph>InOut</emph> is a string that defines whether the option is knock-in (“i”) or knock-out (“o”).</variable>"
-msgstr ""
+msgstr "<variable id=\"optinout\"><emph>Knock-In/Out</emph>: Eine Zeichenfolge, die festlegt, ob die Option eine Knock-In- (\"i\") oder Knock-Out-Option (\"o\") ist.</variable>"
 
 #. AsXAj
 #: func_opt_touch.xhp
@@ -61169,7 +61169,7 @@ msgctxt ""
 "par_id861575066366861\n"
 "help.text"
 msgid "<variable id=\"optbarmon\"><emph>BarrierMonitoring</emph> is a string that defines whether the barrier is monitored continuously (“c”) or only at the end / maturity (“e”).</variable>"
-msgstr ""
+msgstr "<variable id=\"optbarmon\"><emph>Barriereart</emph>: Ist eine Zeichenfolge, die festlegt, ob die Barriere kontinuierlich (\"c\" – continuously) oder nur am Ende / bei Fälligkeit (\"e\" – end) überwacht wird.</variable>"
 
 #. xyF8R
 #: func_opt_touch.xhp
@@ -61178,7 +61178,7 @@ msgctxt ""
 "par_id721575066374340\n"
 "help.text"
 msgid "<emph>Greek</emph> (optional) is a string argument. If omitted or set to “value”, “v”, “price”, or “p”, then the function simply returns the option price. If another valid string is entered, the function returns price sensitivities (Greeks) to one of the input parameters. The valid options in this case are as follows."
-msgstr ""
+msgstr "<emph>Griechisch</emph> (optional): ist ein Zeichenfolgen-Argument. Wenn weggelassen oder auf \"value\", \"v\", \"price\" oder \"p\" gesetzt wird, gibt die Funktion einfach den Optionspreis zurück. Wenn eine andere gültige Zeichenfolge eingegeben wird, gibt die Funktion Preissensitivitäten (Griechen) für einen der Eingabeparameter zurück. Die gültigen Optionen sind in diesem Fall wie folgt."
 
 #. NhW28
 #: func_opt_touch.xhp
@@ -61187,7 +61187,7 @@ msgctxt ""
 "par_id951575063536153\n"
 "help.text"
 msgid "“delta” or “d”."
-msgstr ""
+msgstr "„delta“ oder „d“."
 
 #. DVKPe
 #: func_opt_touch.xhp
@@ -61196,7 +61196,7 @@ msgctxt ""
 "par_id361575063554232\n"
 "help.text"
 msgid "“gamma” or “g”."
-msgstr ""
+msgstr "„gamma“ oder „g“."
 
 #. mY7eD
 #: func_opt_touch.xhp
@@ -61205,7 +61205,7 @@ msgctxt ""
 "par_id961575063563017\n"
 "help.text"
 msgid "“theta” or “t”."
-msgstr ""
+msgstr "„theta“ oder „t“."
 
 #. 7BNpN
 #: func_opt_touch.xhp
@@ -61214,7 +61214,7 @@ msgctxt ""
 "par_id971575063570632\n"
 "help.text"
 msgid "“vega” or “e”."
-msgstr ""
+msgstr "„vega“ oder „e“."
 
 #. F4AQk
 #: func_opt_touch.xhp
@@ -61223,7 +61223,7 @@ msgctxt ""
 "par_id631575063580705\n"
 "help.text"
 msgid "“volga” or “o”."
-msgstr ""
+msgstr "„volga“ oder „o“."
 
 #. DcBfK
 #: func_opt_touch.xhp
@@ -61232,7 +61232,7 @@ msgctxt ""
 "par_id981575063594505\n"
 "help.text"
 msgid "“vanna” or “a”."
-msgstr ""
+msgstr "„vanna“ oder „a“."
 
 #. vjCq4
 #: func_opt_touch.xhp
@@ -61241,7 +61241,7 @@ msgctxt ""
 "par_id191575063598656\n"
 "help.text"
 msgid "“rho” or “r”."
-msgstr ""
+msgstr "„rho“ oder „r“."
 
 #. NGCqj
 #: func_opt_touch.xhp
@@ -61250,7 +61250,7 @@ msgctxt ""
 "par_id751575063602288\n"
 "help.text"
 msgid "“rhof” or “f”."
-msgstr ""
+msgstr "„rhof“ oder „f“."
 
 #. U7QqM
 #: func_opt_touch.xhp
@@ -61259,7 +61259,7 @@ msgctxt ""
 "par_id181575063666675\n"
 "help.text"
 msgid "<input>=OPT_TOUCH(50;0.25;0.05;0;1;0;55;\"d\";\"i\";\"c\")</input>  returns the value 0.6876."
-msgstr ""
+msgstr "<input>=OPT_TOUCH(50;0,25;0,05;0;1;0;55;\"d\";\"i\";\"c\")</input> ergibt den Wert 0,6876."
 
 #. 8JFD4
 #: func_opt_touch.xhp
@@ -61268,7 +61268,7 @@ msgctxt ""
 "par_id811575063677250\n"
 "help.text"
 msgid "<input>=OPT_TOUCH(80;0.2;0.05;0;0.5;60;0;\"f\";\"o\";\"c\";\"r\")</input>  returns the value 15.5516."
-msgstr ""
+msgstr "<input>=OPT_TOUCH(80;0,2;0,05;0;0,5;60;0;\"f\";\"o\";\"c\";\"r\")</input> ergibt den Wert 15,5516."
 
 #. ychjG
 #: func_opt_touch.xhp
@@ -61277,7 +61277,7 @@ msgctxt ""
 "par_id121575125779535\n"
 "help.text"
 msgid "<link href=\"text/scalc/01/04060103.xhp\">Financial Functions Part One</link>"
-msgstr ""
+msgstr "<link href=\"text/scalc/01/04060103.xhp\">Finanzmathematische Funktionen Teil 1</link>"
 
 #. aX7LC
 #: func_opt_touch.xhp
@@ -61286,7 +61286,7 @@ msgctxt ""
 "par_id251575125873714\n"
 "help.text"
 msgid "<link href=\"text/scalc/01/04060119.xhp\">Financial Functions Part Two</link>"
-msgstr ""
+msgstr "<link href=\"text/scalc/01/04060119.xhp\">Finanzmathematische Funktionen Teil 2</link>"
 
 #. Q7SFh
 #: func_opt_touch.xhp
@@ -61295,7 +61295,7 @@ msgctxt ""
 "par_id191575125878595\n"
 "help.text"
 msgid "<link href=\"text/scalc/01/04060118.xhp\">Financial Functions Part Three</link>"
-msgstr ""
+msgstr "<link href=\"text/scalc/01/04060118.xhp\">Finanzmathematische Funktionen Teil 3</link>"
 
 #. zr5G3
 #: func_rawsubtract.xhp
@@ -61529,7 +61529,7 @@ msgctxt ""
 "tit\n"
 "help.text"
 msgid "REPLACEB Function"
-msgstr ""
+msgstr "Funktion ERSETZENB"
 
 #. GfVed
 #: func_replaceb.xhp
@@ -61538,7 +61538,7 @@ msgctxt ""
 "bm_id141573508995071\n"
 "help.text"
 msgid "<bookmark_value>REPLACEB Function</bookmark_value>            <bookmark_value>replace text;REPLACEB Function</bookmark_value>"
-msgstr ""
+msgstr "<bookmark_value>ERSETZENB (Funktion)</bookmark_value><bookmark_value>Text ersetzen; ERSETZENB (Funktion)</bookmark_value>"
 
 #. 5MutE
 #: func_replaceb.xhp
@@ -61547,7 +61547,7 @@ msgctxt ""
 "hd_id771573508637966\n"
 "help.text"
 msgid "<variable id=\"replaceb\"><link href=\"text/scalc/01/func_replaceb.xhp\" name=\"replaceb\">REPLACEB</link></variable>"
-msgstr ""
+msgstr "<variable id=\"replaceb\"><link href=\"text/scalc/01/func_replaceb.xhp\" name=\"replaceb\">ERSETZENB</link></variable>"
 
 #. djAL7
 #: func_replaceb.xhp
@@ -61556,7 +61556,7 @@ msgctxt ""
 "par_id831573508637970\n"
 "help.text"
 msgid "<variable id=\"variable name\"><ahelp hid=\".\">Returns text where an old text is replaced with a new text, using byte positions.</ahelp></variable>"
-msgstr ""
+msgstr "<variable id=\"variable name\"><ahelp hid=\".\">Gibt Text zurück, bei dem ein alter Text durch einen neuen Text ersetzt wird, wobei Byte-Positionen verwendet werden.</ahelp></variable>"
 
 #. Fd4SC
 #: func_replaceb.xhp
@@ -61565,7 +61565,7 @@ msgctxt ""
 "par_id701542231253817\n"
 "help.text"
 msgid "REPLACEB( Text ; Position ; Length ; NewText )"
-msgstr ""
+msgstr "ERSETZENB(Text; Position; Länge; Neuer Text)"
 
 #. eY5FG
 #: func_replaceb.xhp
@@ -61574,7 +61574,7 @@ msgctxt ""
 "par_id331573510857418\n"
 "help.text"
 msgid "<emph>Text</emph>: A text expression or reference to a cell containing a text expression in which the characters are to be replaced."
-msgstr ""
+msgstr "<emph>Text</emph>: Ein Textausdruck oder ein Verweis auf eine Zelle, die einen Textausdruck enthält, in dem die Zeichen ersetzt werden sollen."
 
 #. bqPxd
 #: func_replaceb.xhp
@@ -61583,7 +61583,7 @@ msgctxt ""
 "par_id431573510862075\n"
 "help.text"
 msgid "<emph>Position</emph>: the character position from which text is to be replaced."
-msgstr ""
+msgstr "<emph>Position</emph>: Die Zeichenposition, ab der Text ersetzt werden soll."
 
 #. TtgNA
 #: func_replaceb.xhp
@@ -61592,7 +61592,7 @@ msgctxt ""
 "par_id481573510866260\n"
 "help.text"
 msgid "<emph>Length</emph>: the number of characters to be replaced."
-msgstr ""
+msgstr "<emph>Länge</emph>: Die Anzahl der zu ersetzenden Zeichen."
 
 #. UuACG
 #: func_replaceb.xhp
@@ -61601,7 +61601,7 @@ msgctxt ""
 "par_id911573510871412\n"
 "help.text"
 msgid "<emph>NewText</emph>: the text to be inserted."
-msgstr ""
+msgstr "<emph>Neuer Text</emph>: Der einzufügende Text."
 
 #. QH3SH
 #: func_replaceb.xhp
@@ -61610,7 +61610,7 @@ msgctxt ""
 "par_id431573515742206\n"
 "help.text"
 msgid "<input>=REPLACEB(\"ᄩᄔᄕᄜᄝᄞᄠᄢᄣᄫᄬᄭᄮᄯᄲᄶ\";4;1;\"ab\")</input> returns \"ᄩ abᄕᄜᄝᄞᄠᄢᄣᄫᄬᄭᄮᄯᄲᄶ\" ."
-msgstr ""
+msgstr "<input>=ERSETZENB(\"ᄩᄔᄕᄜᄝᄞᄠᄢᄣᄫᄬᄭᄮᄯᄲᄶ\";4;1;\"ab\")</input> ergibt „ᄩ abᄕᄜᄝᄞᄠᄢᄣᄫᄬᄭᄮᄯᄲᄶ“."
 
 #. E7heY
 #: func_roundsig.xhp
@@ -61736,7 +61736,7 @@ msgctxt ""
 "tit\n"
 "help.text"
 msgid "SEARCHB Function"
-msgstr ""
+msgstr "Funktion SUCHENB"
 
 #. ennrh
 #: func_searchb.xhp
@@ -61745,7 +61745,7 @@ msgctxt ""
 "bm_id141573508995071\n"
 "help.text"
 msgid "<bookmark_value>SEARCHB Function</bookmark_value>            <bookmark_value>search text;SEARCHB Function</bookmark_value>"
-msgstr ""
+msgstr "<bookmark_value>SUCHENB (Funktion)</bookmark_value><bookmark_value>Text suchen; SUCHENB (Funktion)</bookmark_value>"
 
 #. AXnND
 #: func_searchb.xhp
@@ -61754,7 +61754,7 @@ msgctxt ""
 "hd_id771573508637966\n"
 "help.text"
 msgid "<variable id=\"searchb\"><link href=\"text/scalc/01/func_searchb.xhp\" name=\"searchb\">SEARCHB</link></variable>"
-msgstr ""
+msgstr "<variable id=\"searchb\"><link href=\"text/scalc/01/func_searchb.xhp\" name=\"searchb\">SUCHENB</link></variable>"
 
 #. TySAy
 #: func_searchb.xhp
@@ -61763,7 +61763,7 @@ msgctxt ""
 "par_id831573508637970\n"
 "help.text"
 msgid "<variable id=\"variable name\"><ahelp hid=\".\">Returns the starting position of a given text, using byte positions (not case sensitive).</ahelp></variable>"
-msgstr ""
+msgstr "<variable id=\"variable name\"><ahelp hid=\".\">Gibt die Startposition eines bestimmten Textes unter Verwendung von Byte-Positionen zurück (ohne Berücksichtigung der Groß- und Kleinschreibung).</ahelp></variable>"
 
 #. jADhb
 #: func_searchb.xhp
@@ -61772,7 +61772,7 @@ msgctxt ""
 "par_id531573516878780\n"
 "help.text"
 msgid "SEARCHB( Find text ; Text ; Position)"
-msgstr ""
+msgstr "SUCHENB(Suchtext; Text; Position)"
 
 #. 6Pmbf
 #: func_searchb.xhp
@@ -61781,7 +61781,7 @@ msgctxt ""
 "par_id241573517292388\n"
 "help.text"
 msgid "<emph>Find Text</emph>: The text or text expression to be found."
-msgstr ""
+msgstr "<emph>Suchtext</emph>: Der zu suchende Text oder Textausdruck."
 
 #. ovdFE
 #: func_searchb.xhp
@@ -61790,7 +61790,7 @@ msgctxt ""
 "par_id991573517299918\n"
 "help.text"
 msgid "<emph>Text</emph>: the text in which the search is to be made."
-msgstr ""
+msgstr "<emph>Text</emph>: Der Text, in welchem gesucht werden soll."
 
 #. oDk8C
 #: func_searchb.xhp
@@ -61799,7 +61799,7 @@ msgctxt ""
 "par_id521573517305077\n"
 "help.text"
 msgid "<emph>Position</emph>: The position in the text where the search starts."
-msgstr ""
+msgstr "<emph>Position</emph>: Die Position innerhalb des Textes, an der die Suche beginnen soll."
 
 #. 2E7js
 #: func_searchb.xhp
@@ -61808,7 +61808,7 @@ msgctxt ""
 "par_id561573517310749\n"
 "help.text"
 msgid "<input>=SEARCHB(\"ᄫᄬ\";\"ᄩᄔᄕᄜᄝᄞᄠgᄢᄣᄫᄬᄭᄮᄯᄲᄶ\";17)</input> returns 20."
-msgstr ""
+msgstr "<input>=SUCHENB(\"ᄫᄬ\";\"ᄩᄔᄕᄜᄝᄞᄠgᄢᄣᄫᄬᄭᄮᄯᄲᄶ\";17)</input> ergibt 20."
 
 #. Mv5R9
 #: func_second.xhp
@@ -62267,7 +62267,7 @@ msgctxt ""
 "par_id851556243961783\n"
 "help.text"
 msgid "<input>=SWITCH(MONTH(A3),1,\"January\",2,\"February\",3,\"March\",\"No match\")</input> returns \"January\" when A3 contains a date in January, \"February\" when A3 contains a date in February , etc..."
-msgstr ""
+msgstr "<input>=SCHALTER(MONAT(A3),1,\"Januar\",2,\"Februar\",3,\"März\",\"Kein Treffer\")</input> gibt \"Januar\" zurück, wenn A3 ein Datum im Januar enthält, \"Februar\", wenn A3 ein Datum im Februar enthält, und so weiter."
 
 #. vDLfw
 #: func_switch.xhp
@@ -63653,7 +63653,7 @@ msgctxt ""
 "par_id23102016234837285\n"
 "help.text"
 msgid "<ahelp hid=\".\">Returns the date calculated from a start date with a specific number of work days, before or after the start date. The calculation can include week-ends and holidays as non-working days.</ahelp>"
-msgstr ""
+msgstr "<ahelp hid=\".\">Gibt das Datum zurück, welches aus einem Startdatum mit einer bestimmten Anzahl von Arbeitstagen vor oder nach dem Startdatum berechnet wurde. Die Berechnung kann Wochenenden und Feiertage als arbeitsfreie Tage enthalten.</ahelp>"
 
 #. RRr3i
 #: func_workday.intl.xhp
@@ -63671,7 +63671,7 @@ msgctxt ""
 "par_id241020160008308885\n"
 "help.text"
 msgid "<emph>StartDate</emph>: is the date from when the calculation is carried out."
-msgstr ""
+msgstr "<emph>Anfangsdatum</emph>: Ist das Datum, ab dem die Berechnung ausgeführt wird."
 
 #. CVBCb
 #: func_workday.intl.xhp
@@ -64607,7 +64607,7 @@ msgctxt ""
 "par_id11561818344892\n"
 "help.text"
 msgid "<emph>Group By Columns</emph>"
-msgstr ""
+msgstr "<emph>Nach Spalten gruppieren</emph>"
 
 #. Ei5b9
 #: stat_data.xhp
@@ -64616,7 +64616,7 @@ msgctxt ""
 "par_id151561818353339\n"
 "help.text"
 msgid "TRUE"
-msgstr ""
+msgstr "WAHR"
 
 #. BSNLd
 #: stat_data.xhp
@@ -64625,7 +64625,7 @@ msgctxt ""
 "par_id141561818361892\n"
 "help.text"
 msgid "<emph>Polar</emph>"
-msgstr ""
+msgstr "<emph>Polar</emph>"
 
 #. 9DG5B
 #: stat_data.xhp
@@ -64634,7 +64634,7 @@ msgctxt ""
 "par_id361561818366868\n"
 "help.text"
 msgid "FALSE"
-msgstr ""
+msgstr "FALSCH"
 
 #. eztCR
 #: stat_data.xhp
@@ -64643,7 +64643,7 @@ msgctxt ""
 "par_id181561818387534\n"
 "help.text"
 msgid "<emph>Inverse</emph>"
-msgstr ""
+msgstr "<emph>Invers</emph>"
 
 #. dMpg5
 #: stat_data.xhp
@@ -64652,7 +64652,7 @@ msgctxt ""
 "par_id681561818391189\n"
 "help.text"
 msgid "FALSE"
-msgstr ""
+msgstr "FALSCH"
 
 #. 5mvKB
 #: stat_data.xhp
@@ -64661,7 +64661,7 @@ msgctxt ""
 "par_id201561827895671\n"
 "help.text"
 msgid "<emph>Formula</emph>"
-msgstr ""
+msgstr "<emph>Formel</emph>"
 
 #. W8iXh
 #: stat_data.xhp
@@ -64670,7 +64670,7 @@ msgctxt ""
 "par_id361561818379679\n"
 "help.text"
 msgid "{=FOURIER(B6:C40,B1,B2,B3,0)}"
-msgstr ""
+msgstr "{=FOURIER(B6:C40;B1;B2;B3;0)}"
 
 #. VDD3g
 #: stat_data.xhp
@@ -64679,7 +64679,7 @@ msgctxt ""
 "par_id711561818399814\n"
 "help.text"
 msgid "<emph>Source Array</emph>"
-msgstr ""
+msgstr "<emph>Vorherige Matrix</emph>"
 
 #. BjvDD
 #: stat_data.xhp
@@ -64688,7 +64688,7 @@ msgctxt ""
 "par_id551561818405550\n"
 "help.text"
 msgid "<emph>Transformed Array</emph>"
-msgstr ""
+msgstr "<emph>Transformierte Matrix</emph>"
 
 #. 6qfvf
 #: stat_data.xhp
@@ -64697,7 +64697,7 @@ msgctxt ""
 "par_id581561818425613\n"
 "help.text"
 msgid "<emph>Real</emph>"
-msgstr ""
+msgstr "<emph>Realteil</emph>"
 
 #. mr7CX
 #: stat_data.xhp
@@ -64706,7 +64706,7 @@ msgctxt ""
 "par_id251561818431620\n"
 "help.text"
 msgid "<emph>Imaginary</emph>"
-msgstr ""
+msgstr "<emph>Imaginärteil</emph>"
 
 #. AEKDc
 #: stat_data.xhp
@@ -64715,7 +64715,7 @@ msgctxt ""
 "par_id161561818436495\n"
 "help.text"
 msgid "<emph>Real</emph>"
-msgstr ""
+msgstr "<emph>Realteil</emph>"
 
 #. fTDsR
 #: stat_data.xhp
@@ -64724,7 +64724,7 @@ msgctxt ""
 "par_id471561818441429\n"
 "help.text"
 msgid "<emph>Imaginary</emph>"
-msgstr ""
+msgstr "<emph>Imaginärteil</emph>"
 
 #. rTRpz
 #: statistics.xhp
@@ -66767,7 +66767,7 @@ msgctxt ""
 "tit\n"
 "help.text"
 msgid "Fourier Analysis"
-msgstr ""
+msgstr "Fourier-Analyse"
 
 #. EV56D
 #: statistics_fourier.xhp
@@ -66776,7 +66776,7 @@ msgctxt ""
 "hd_id431561808831965\n"
 "help.text"
 msgid "<variable id=\"fourieranalysysh1\"><link href=\"text/scalc/01/statistics_fourier.xhp\" name=\"Fourier analysis\">Fourier Analysis</link></variable>"
-msgstr ""
+msgstr "<variable id=\"fourieranalysysh1\"><link href=\"text/scalc/01/statistics_fourier.xhp\" name=\"Fourier analysis\">Fourier-Analyse</link></variable>"
 
 #. EEBRe
 #: statistics_fourier.xhp
@@ -66785,7 +66785,7 @@ msgctxt ""
 "par_id1001240\n"
 "help.text"
 msgid "<ahelp hid=\"modules/scalc/ui/regressiondialog/RegressionDialog\">Produces the Fourier analysis of a data set by computing the  Discrete Fourier Transform (DFT) of an input array of complex numbers using a couple of Fast Fourier Transform (FFT) algorithms.</ahelp>"
-msgstr ""
+msgstr "<ahelp hid=\"modules/scalc/ui/regressiondialog/RegressionDialog\">Erzeugt die Fourier-Analyse eines Datensatzes durch Berechnung der diskreten Fourier-Transformation (DFT) einer Eingabematrix komplexer Zahlen unter Verwendung einiger schnellen Fourier-Transformation-Algorithmen (FFT – Fast Fourier Transform).</ahelp>"
 
 #. F2ncB
 #: statistics_fourier.xhp
@@ -66794,7 +66794,7 @@ msgctxt ""
 "bm_id2764278\n"
 "help.text"
 msgid "<bookmark_value>Analysis toolpack;Fourier analysis</bookmark_value><bookmark_value>Fourier analysis;Analysis toolpack</bookmark_value><bookmark_value>Data statistics;Fourier analysis</bookmark_value>"
-msgstr ""
+msgstr "<bookmark_value>Analysefunktionen; Fourier-Analyse</bookmark_value><bookmark_value>Fourier-Analyse; Analysefunktionen</bookmark_value><bookmark_value>Datenstatistiken; Fourier-Analyse</bookmark_value>"
 
 #. se49E
 #: statistics_fourier.xhp
@@ -66803,7 +66803,7 @@ msgctxt ""
 "par_id1000040\n"
 "help.text"
 msgid "<variable id=\"sam01\">Choose <emph>Data - Statistics - Fourier Analysis</emph></variable>"
-msgstr ""
+msgstr "<variable id=\"sam01\">Wählen Sie <emph>Daten – Statistiken – Fourier-Analyse…</emph></variable>"
 
 #. HpuG9
 #: statistics_fourier.xhp
@@ -66812,7 +66812,7 @@ msgctxt ""
 "par_id1001270\n"
 "help.text"
 msgid "For more information on Fourier analysis, refer to the <link href=\"https://en.wikipedia.org/wiki/Fourier_analysis\" name=\"English Wikipedia: Fourier analysis\">corresponding Wikipedia article</link>."
-msgstr ""
+msgstr "Weitere Informationen finden Sie in Wikipedia unter <link href=\"https://de.wikipedia.org/wiki/Fourier-Analysis\" name=\"Fourier-Analyse\">Fourier-Analyse</link>."
 
 #. VArYS
 #: statistics_fourier.xhp
@@ -66821,7 +66821,7 @@ msgctxt ""
 "par_id301561811172762\n"
 "help.text"
 msgid "<emph>Input range has label</emph>: Mark when the first row or column of the input array is actually a label and not part of the data analysis."
-msgstr ""
+msgstr "<emph>Eingabebereich hat Beschriftung</emph>: Aktivieren Sie dieses Markierfeld, wenn die erste Zeile oder Spalte der Eingabematrix tatsächlich eine Bezeichnung ist und nicht Teil der Datenanalyse."
 
 #. Gi5kk
 #: statistics_fourier.xhp
@@ -66830,7 +66830,7 @@ msgctxt ""
 "par_id741556228390897\n"
 "help.text"
 msgid "Input Range is a 2 x N or N x 2 range representing an array of complex number to be transformed, where N is the length of the array. The array represents the real and imaginary parts of the data."
-msgstr ""
+msgstr "Eingabebereich ist ein Bereich von 2 x N oder N x 2, der eine Matrix mit einer zu transformierenden komplexen Zahl darstellt, wobei N die Länge des Arrays ist. Die Matrix repräsentiert den Real- und Imaginärteil der Daten."
 
 #. GqXZr
 #: statistics_fourier.xhp
@@ -66839,7 +66839,7 @@ msgctxt ""
 "hd_id211561811324208\n"
 "help.text"
 msgid "Options:"
-msgstr ""
+msgstr "Optionen:"
 
 #. 68RRB
 #: statistics_fourier.xhp
@@ -66848,7 +66848,7 @@ msgctxt ""
 "par_id631556228516997\n"
 "help.text"
 msgid "<emph>Inverse</emph>: When checked, calculates the inverse Discrete Fourier Transform."
-msgstr ""
+msgstr "<emph>Invertiert</emph>: Wenn dieses Markierfeld aktiviert ist, wird die inverse diskrete Fourier-Transformation berechnet."
 
 #. MH9kg
 #: statistics_fourier.xhp
@@ -66857,7 +66857,7 @@ msgctxt ""
 "par_id811561732287508\n"
 "help.text"
 msgid "<emph>Polar</emph>: When checked, the results are in polar coordinates (magnitude, phase)."
-msgstr ""
+msgstr "<emph>Ausgabe in Polarkoordinaten</emph>: Wenn dieses Markierfeld aktiviert ist, sind die Ergebnisse in Polarkoordinaten (Größe, Phase)."
 
 #. peNbe
 #: statistics_fourier.xhp
@@ -66866,7 +66866,7 @@ msgctxt ""
 "par_id661561732521977\n"
 "help.text"
 msgid "<emph>Minimum magnitude for polar form output (in dB)</emph>: used only when output is in polar form. All frequency components with magnitude less than this value in decibels will be suppressed with a zero magnitude-phase entry. This is very useful when looking at the magnitude-phase spectrum of a signal because there is always some very tiny amount of rounding error when doing FFT algorithms and results in incorrect non-zero phase for non-existent frequencies. By providing a suitable value to this parameter, these non-existent frequency components can be suppressed."
-msgstr ""
+msgstr "<emph>Mindestgröße für die Ausgabe in Polarkoordinaten (in dB)</emph>: Wird nur verwendet, wenn die Ausgabe in Polarkoordinaten erfolgt. Alle Frequenzkomponenten mit einem Betrag, der unter diesem Wert in Dezibel liegt, werden mit einem Null-Betrag-Phasen-Eintrag unterdrückt. Dies ist sehr nützlich, wenn Sie das Amplituden-Phasen-Spektrum eines Signals betrachten, da bei FFT-Algorithmen immer ein sehr kleiner Rundungsfehler auftritt, der bei nicht vorhandenen Frequenzen zu einer falschen Phase ungleich Null führt. Durch Bereitstellung eines geeigneten Werts für diesen Parameter können diese nicht vorhandenen Frequenzkomponenten unterdrückt werden."
 
 #. 8pLcW
 #: statistics_fourier.xhp
@@ -66875,7 +66875,7 @@ msgctxt ""
 "par_id731561827207828\n"
 "help.text"
 msgid "The source data for this example is the same of the <link href=\"text/scalc/01/func_fourier.xhp\" name=\"Fourier function\">FOURIER function page</link>."
-msgstr ""
+msgstr "Die Quelldaten für dieses Beispiel entsprechen denen der <link href=\"text/scalc/01/func_fourier.xhp\" name=\"Fourier function\">Funktion FOURIER</link>."
 
 #. 4XJPB
 #: statistics_fourier.xhp
@@ -66884,7 +66884,7 @@ msgctxt ""
 "par_id290620191257279817\n"
 "help.text"
 msgid "Fourier Transform"
-msgstr ""
+msgstr "Fourier-Transformation"
 
 #. nfhVE
 #: statistics_fourier.xhp
@@ -66893,7 +66893,7 @@ msgctxt ""
 "par_id29062019125727379\n"
 "help.text"
 msgid "Fourier Transform"
-msgstr ""
+msgstr "Fourier-Transformation"
 
 #. G6aEG
 #: statistics_fourier.xhp
@@ -66902,7 +66902,7 @@ msgctxt ""
 "par_id290620191257276510\n"
 "help.text"
 msgid "<emph>Input data range : $B$6:$C$40</emph>"
-msgstr ""
+msgstr "<emph>Eingabebereich: $B$6:$c$40</emph>"
 
 #. 5L22z
 #: statistics_fourier.xhp
@@ -66911,7 +66911,7 @@ msgctxt ""
 "par_id290620191257273433\n"
 "help.text"
 msgid "<emph>Input data range : $B$6:$C$40</emph>"
-msgstr ""
+msgstr "<emph>Eingabebereich: $B$6:$C$40</emph>"
 
 #. Vyu9a
 #: statistics_fourier.xhp
@@ -66920,7 +66920,7 @@ msgctxt ""
 "par_id290620191257273688\n"
 "help.text"
 msgid "<emph>Real</emph>"
-msgstr ""
+msgstr "<emph>Realteil</emph>"
 
 #. qEshW
 #: statistics_fourier.xhp
@@ -66929,7 +66929,7 @@ msgctxt ""
 "par_id290620191257276202\n"
 "help.text"
 msgid "<emph>Imaginary</emph>"
-msgstr ""
+msgstr "<emph>Imaginärteil</emph>"
 
 #. fJ6BG
 #: statistics_fourier.xhp
@@ -66938,7 +66938,7 @@ msgctxt ""
 "par_id481561825547527\n"
 "help.text"
 msgid "<emph>Magnitude</emph>"
-msgstr ""
+msgstr "<emph>Größe</emph>"
 
 #. XcXJz
 #: statistics_fourier.xhp
@@ -66947,7 +66947,7 @@ msgctxt ""
 "par_id751561825556834\n"
 "help.text"
 msgid "<emph>Phase</emph>"
-msgstr ""
+msgstr "<emph>Phase</emph>"
 
 #. 7f8Bq
 #: statistics_fourier.xhp
@@ -66956,7 +66956,7 @@ msgctxt ""
 "par_id14337286612130\n"
 "help.text"
 msgid "<link href=\"text/scalc/01/statistics.xhp#datasampling\">Sampling</link>, <link href=\"text/scalc/01/statistics.xhp#descriptivestatistics\">Descriptive Statistics</link>, <link href=\"text/scalc/01/statistics.xhp#anova\">Analysis of Variance (ANOVA)</link>, <link href=\"text/scalc/01/statistics.xhp#correlation\">Correlation</link>, <link href=\"text/scalc/01/statistics.xhp#covariance\">Covariance</link>, <link href=\"text/scalc/01/statistics.xhp#exponentialsmoothing\">Exponential Smoothing</link>, <link href=\"text/scalc/01/statistics.xhp#movingaverage\">Moving Average</link>, <link href=\"text/scalc/01/statistics.xhp#ttest\">Paired t-test</link>, <link href=\"text/scalc/01/statistics.xhp#ftest\">F-test</link>, <link href=\"text/scalc/01/statistics.xhp#ztest\">Z-test</link>, <link href=\"text/scalc/01/statistics.xhp#chisqtest\">Chi-square test</link>."
-msgstr ""
+msgstr "<link href=\"text/scalc/01/statistics.xhp#datasampling\">Stichproben</link>, <link href=\"text/scalc/01/statistics.xhp#descriptivestatistics\">Beschreibende Statistik</link>, <link href=\"text/scalc/01/statistics.xhp#anova\">Varianzanalyse (ANOVA)</link>, <link href=\"text/scalc/01/statistics.xhp#correlation\">Korrelation</link>, <link href=\"text/scalc/01/statistics.xhp#covariance\">Kovarianz</link>, <link href=\"text/scalc/01/statistics.xhp#exponentialsmoothing\">Exponentielle Glättung</link>, <link href=\"text/scalc/01/statistics.xhp#movingaverage\">Gleitender Mittelwert</link>, <link href=\"text/scalc/01/statistics.xhp#ttest\">Abhängiger t-Test</link>, <link href=\"text/scalc/01/statistics.xhp#ftest\">F-Test</link>, <link href=\"text/scalc/01/statistics.xhp#ztest\">Gauß-Test</link>, <link href=\"text/scalc/01/statistics.xhp#chisqtest\">Chi-Quadrat-Test</link>."
 
 #. 7EZAg
 #: statistics_regression.xhp
@@ -66974,7 +66974,7 @@ msgctxt ""
 "hd_id1701201615033510\n"
 "help.text"
 msgid "<variable id=\"regressionanalysish1\"><link href=\"text/scalc/01/statistics_regression.xhp\" name=\"regression analysis\">Regression Analysis</link></variable>"
-msgstr ""
+msgstr "<variable id=\"regressionanalysish1\"><link href=\"text/scalc/01/statistics_regression.xhp\" name=\"regression analysis\">Regressions-Analyse</link></variable>"
 
 #. NFhSA
 #: statistics_regression.xhp
@@ -66992,7 +66992,7 @@ msgctxt ""
 "bm_id2764278\n"
 "help.text"
 msgid "<bookmark_value>Analysis toolpack;regression analysis</bookmark_value><bookmark_value>regression analysis;Analysis toolpack</bookmark_value><bookmark_value>Data statistics;regression analysis</bookmark_value>"
-msgstr ""
+msgstr "<bookmark_value>Analysefunktionen; Regressions-Analyse</bookmark_value><bookmark_value>Regressions-Analyse; Analysefunktionen</bookmark_value><bookmark_value>Datenstatistiken; Regressions-Analyse</bookmark_value>"
 
 #. nCe3o
 #: statistics_regression.xhp
