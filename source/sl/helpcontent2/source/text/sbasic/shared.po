@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: LibreOffice 7.0\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
 "POT-Creation-Date: 2020-04-13 15:28+0200\n"
-"PO-Revision-Date: 2020-04-16 12:10+0200\n"
+"PO-Revision-Date: 2020-04-16 19:48+0200\n"
 "Last-Translator: Martin Srebotnjak <miles@filmsi.net>\n"
 "Language-Team: sl.libreoffice.org\n"
 "Language: sl\n"
@@ -2565,7 +2565,6 @@ msgid "In this case, the original content of the parameter will not be modified 
 msgstr "V tem primeru se vrednost spremenljivke, ki je parameter, po opravljenem klicu ne bo spremenila, ne glede na to, kaj se z njo v <literal>Function</literal> dogaja; funkcija dobi na razpolago samo vrednost parametra, vendar ne sklica nanjo."
 
 #: 01020300.xhp
-#, fuzzy
 msgctxt ""
 "01020300.xhp\n"
 "hd_id161584366585035\n"
@@ -20460,31 +20459,28 @@ msgid "Variables:"
 msgstr "Spremenljivke:"
 
 #: 03090202.xhp
-#, fuzzy
 msgctxt ""
 "03090202.xhp\n"
 "par_id3150358\n"
 "help.text"
 msgid "<emph>counter:</emph> Loop <literal>counter</literal> initially assigned the value to the right of the equal sign (<literal>start</literal>). Only numeric variables are valid. The loop counter increases or decreases according to the variable <literal>step</literal> until <literal>end</literal> is passed."
-msgstr "<emph>Števec:</emph> Števec zanke ob začetku dobi vrednost, ki je navedena desno od enačaja (start). Veljavne so samo numerične spremenljivke. Števec zank se povečuje (ali zmanjšuje) v skladu s spremenljivko Step toliko časa, da je End mimo."
+msgstr "<emph>Števec:</emph> <literal>števec</literal> zanke ob začetku dobi vrednost, ki je navedena desno od enačaja (<literal>start</literal>). Veljavne so samo numerične spremenljivke. Števec zank se povečuje ali zmanjšuje v skladu s spremenljivko <literal>step</literal> toliko časa, da je <literal>end</literal> presežen."
 
 #: 03090202.xhp
-#, fuzzy
 msgctxt ""
 "03090202.xhp\n"
 "par_id3152455\n"
 "help.text"
 msgid "<emph>start:</emph> Numeric variable that defines the initial value at the beginning of the loop."
-msgstr "<emph>Start:</emph> Numerična spremenljivka, ki definira začetno vrednost ob začetku zanke."
+msgstr "<emph>start:</emph> Numerična spremenljivka, ki definira začetno vrednost ob začetku zanke."
 
 #: 03090202.xhp
-#, fuzzy
 msgctxt ""
 "03090202.xhp\n"
 "par_id3151043\n"
 "help.text"
 msgid "<emph>end:</emph> Numeric variable that defines the final value at the end of the loop."
-msgstr "<emph>End:</emph> Numerična spremenljivka, ki definira končno vrednost, ob koncu zanke."
+msgstr "<emph>end:</emph> Numerična spremenljivka, ki definira končno vrednost, ob koncu zanke."
 
 #: 03090202.xhp
 #, fuzzy
@@ -20493,7 +20489,7 @@ msgctxt ""
 "par_id3156281\n"
 "help.text"
 msgid "<emph>step:</emph> Sets the value by which to increase or decrease the loop counter. If <literal>step</literal> is not specified, the loop counter is incremented by 1. In this case, <literal>end</literal> must be greater than <literal>start</literal>. If you want to decrease <literal>counter</literal>, <literal>end</literal> must be less than <literal>start</literal>, and <literal>step</literal> must be assigned a negative value."
-msgstr "<emph>Korak:</emph> predstavlja vrednost, s katero se števec v zanki povečuje oziroma zmanjšuje. Če Korak ni definiran, se števec v zanki poveča za 1. V tem primeru mora biti Konec večji od Starta. Če želite Števec zmanjševati, mora Konec biti manjši od Starta in Korak mora imeti negativno vrednost."
+msgstr "<emph>step:</emph> predstavlja vrednost, s katero se števec v zanki povečuje oziroma zmanjšuje. Če korak (<literal>step</literal>) ni definiran, se števec v zanki poveča za 1. V tem primeru mora biti konec (<literal>end</literal>) večji od začetne vrednosti (<literal>start</literal>). Če želite števec (<literal>counter</literal>) zmanjševati, mora biti konec (<literal>end</literal>) manjši od začetka (<literal>start</literal>) in korak (<literal>step</literal>) mora imeti negativno vrednost."
 
 #: 03090202.xhp
 msgctxt ""
@@ -20510,7 +20506,7 @@ msgctxt ""
 "par_id3147287\n"
 "help.text"
 msgid "As the <literal>counter</literal> variable is decreased, %PRODUCTNAME Basic checks if the <literal>end</literal> value has been reached. As soon as the <literal>counter</literal> passes the <literal>end</literal> value, the loop automatically terminates."
-msgstr "Ko se števec zanke poveča, $[officename] Basic preveri, če končna vrednost ni bila dosežena. Takoj ko jo števec v zanki doseže, je zanke samodejno konec."
+msgstr "Ko se števec zanke poveča, %PRODUCTNAME Basic preveri, če končna vrednost (<literal>end</literal>) ni bila dosežena. Takoj ko jo števec (<literal>counter</literal>) v zanki doseže, je zanke samodejno konec."
 
 #: 03090202.xhp
 msgctxt ""
@@ -21339,12 +21335,13 @@ msgid "<link href=\"text/sbasic/shared/03090401.xhp\" name=\"Call Statement\">Ca
 msgstr "<link href=\"text/sbasic/shared/03090401.xhp\" name=\"Ukaz Call\">Ukaz Call</link>"
 
 #: 03090401.xhp
+#, fuzzy
 msgctxt ""
 "03090401.xhp\n"
 "par_id3153394\n"
 "help.text"
 msgid "Transfers the control of the program to a subroutine, a function, or a procedure of a <link href=\"text/sbasic/shared/03090403.xhp\" name=\"Dynamic Link Library\">Dynamic Link Library (DLL)</link>. The keyword, type and number of parameters is dependent on the routine that is being called."
-msgstr ""
+msgstr "Prenese nadzor programa na podprogram, funkcijo ali proceduro knjižnice <link href=\"text/sbasic/shared/03090403.xhp\" name=\"DLL (Dynamic Link Library)\">DLL (angl. Dynamic Link Library)</link>. Ključna beseda, vrsta in število parametrov je odvisno od klicane rutine."
 
 #: 03090401.xhp
 msgctxt ""
@@ -21387,12 +21384,13 @@ msgid "<emph>name:</emph> Name of the subroutine, the function, or the <link hre
 msgstr "<emph>Ime:</emph> ime podprograma, funkcije ali <link href=\"text/sbasic/shared/03090403.xhp\" name=\"Dynamic Link Library\">DLL</link>, ki jo/ga želite poklicati."
 
 #: 03090401.xhp
+#, fuzzy
 msgctxt ""
 "03090401.xhp\n"
 "par_id3148946\n"
 "help.text"
 msgid "<emph>param:</emph> Keyword parameter name to pass to the routine, followed by its <emph>value</emph>. The name must match the routine declaration. Keywords are optional and can be used in any order."
-msgstr ""
+msgstr "<emph>param:</emph> ime parametra kot ključna beseda, ki bo podana rutini, kateri sledi njena <emph>vrednost</emph>. Ime se mora ujemati z deklaracijo rutine. Ključne besede so neobvezne in jih lahko uporabite v poljubnem zaporedju."
 
 #: 03090401.xhp
 #, fuzzy
@@ -21404,20 +21402,22 @@ msgid "<emph>value:</emph> Positional parameter value. The type is dependent on 
 msgstr "<emph>Vrednost:</emph> vrednost položajnega parametra. Vrsta je odvisna od klicane rutine."
 
 #: 03090401.xhp
+#, fuzzy
 msgctxt ""
 "03090401.xhp\n"
 "par_id421586006407428\n"
 "help.text"
 msgid "When mixing positional and keyword parameters, make sure positional parameters are following the routine declaration order."
-msgstr ""
+msgstr "Pri mešanju položajnih parametrov in parametrov ključnih besed se prepričajte, da položajni parametri sledijo zaporedju v deklaraciji rutine."
 
 #: 03090401.xhp
+#, fuzzy
 msgctxt ""
 "03090401.xhp\n"
 "par_id3154216\n"
 "help.text"
 msgid "When a function is used as an expression, enclosing parameters with brackets becomes necessary. Using a <link href=\"text/sbasic/shared/03090403.xhp\" name=\"Declare Statement\">Declare statement</link> is compulsory prior to call a DLL."
-msgstr ""
+msgstr "Če se funkcija uporablja kot izraz, je potrebno zaobjemati parametre z oklepaji. Pred klicem DLL je nujna uporaba <link href=\"text/sbasic/shared/03090403.xhp\" name=\"Ukaz Declare\">ukaza Declare</link>."
 
 #: 03090401.xhp
 msgctxt ""
@@ -26760,7 +26760,7 @@ msgctxt ""
 "par_idN10623\n"
 "help.text"
 msgid "<emph>Nothing</emph> - Assign <emph>Nothing</emph> to a variable to remove a previous assignment."
-msgstr "<emph>Nothing</emph> – spremenljivki dodelite predmet <emph>Nothing</emph>, če želite odstraniti predhodno dodelitev."
+msgstr "<emph>Nothing</emph> – spremenljivki dodelite <emph>Nothing</emph>, če želite odstraniti predhodno dodelitev."
 
 #: 03103700.xhp
 msgctxt ""
@@ -26785,7 +26785,7 @@ msgctxt ""
 "par_id841586014507226\n"
 "help.text"
 msgid "Use <emph>New</emph> only to assign a <link href=\"text/sbasic/shared/classmodule\" name=\"ClassModule\">class module</link> instance to a variable."
-msgstr "Instance predmetov <link href=\"text/sbasic/shared/classmodule.xhp\" name=\"Razredni modul\">razrednih modulov</link>"
+msgstr "<emph>New</emph> uporabite le za dodelitev instance <link href=\"text/sbasic/shared/classmodule\" name=\"Razredni moduli\">razrednih modulov</link> spremenljivki."
 
 #: 03103800.xhp
 msgctxt ""
@@ -35428,28 +35428,31 @@ msgid "Properties"
 msgstr "Lastnosti"
 
 #: ErrVBA.xhp
+#, fuzzy
 msgctxt ""
 "ErrVBA.xhp\n"
 "N0020\n"
 "help.text"
 msgid "<emph>Description</emph> property gives the nature of the error. It details the various reasons that may cause the error. Ideally it provides the multiple course of actions that help solve the issue and prevent its reoccurrence. Its alias is Basic <link href=\"text/sbasic/shared/03050300.xhp\" name=\"Error function\">Error</link> function for %PRODUCTNAME predefined errors."
-msgstr ""
+msgstr "Lastnost <emph>Description</emph> podaja naravo napake. Podrobno oriše različne razloge, ki bi lahko povzročili napako. Idealno ponuja več možnih ukrepov, ki lahko pomagajo razrešiti težavo in preprečiti njeno ponovno pojavljanje. Njen ekvivalent v Basicu je funkcija <link href=\"text/sbasic/shared/03050300.xhp\" name=\"Funkcija Error\">Error</link> za vnaprej določene napake %PRODUCTNAME."
 
 #: ErrVBA.xhp
+#, fuzzy
 msgctxt ""
 "ErrVBA.xhp\n"
 "N0022\n"
 "help.text"
 msgid "This the error code associated with the error. <literal>Err</literal> object default property is <emph>Number</emph>. Its alias is %PRODUCTNAME Basic <link href=\"text/sbasic/shared/03050200.xhp\" name=\"Err\">Err</link> function."
-msgstr ""
+msgstr "To je koda napake, povezana z napako. Privzeta lastnost predmeta <literal>Err</literal> je <emph>Number</emph>. Njen ekvivalent v %PRODUCTNAME Basic je funkcija <link href=\"text/sbasic/shared/03050200.xhp\" name=\"Funkcija Err\">Err</link>."
 
 #: ErrVBA.xhp
+#, fuzzy
 msgctxt ""
 "ErrVBA.xhp\n"
 "N0024\n"
 "help.text"
 msgid "<emph>Source</emph> indicates the name of the routine that produces the error. <emph>Source</emph> is an option for user-defined errors."
-msgstr ""
+msgstr "<emph>Source</emph> nakazuje ime rutine, ki povzroča napako. <emph>Source</emph> je možnost za uporabniško določene napake."
 
 #: ErrVBA.xhp
 msgctxt ""
@@ -35466,15 +35469,16 @@ msgctxt ""
 "N0027\n"
 "help.text"
 msgid "Resets description, <link href=\"text/sbasic/shared/03050100.xhp\" name=\"error line\">Erl</link>, number and source properties of current error. Its alias is %PRODUCTNAME Basic <link href=\"text/sbasic/shared/03050500.xhp\" name=\"Resume statement\">Resume</link> statement."
-msgstr "Poglejte tudi: <link href=\"text/sbasic/shared/03020103.xhp\" name=\"Open\">Open</link>, <link href=\"text/sbasic/shared/03020305.xhp\" name=\"Seek\">Seek</link>."
+msgstr "Ponastavi lastnosti opis, <link href=\"text/sbasic/shared/03050100.xhp\" name=\"Vrstica napake\">Erl</link>, številka in vir za trenutno napako. Njen ekvivalent v %PRODUCTNAME Basic je ukaz <link href=\"text/sbasic/shared/03050500.xhp\" name=\"Ukaz Resume\">Resume</link>."
 
 #: ErrVBA.xhp
+#, fuzzy
 msgctxt ""
 "ErrVBA.xhp\n"
 "N0029\n"
 "help.text"
 msgid "Throws user-defined errors or predefined errors. Its alias is %PRODUCTNAME Basic <link href=\"text/sbasic/shared/03050200.xhp\" name=\"Error statement\">Error</link> statement."
-msgstr ""
+msgstr "Javi uporabniško določene napake ali vnaprej določene napake. Njen ekvivalent je ukaz %PRODUCTNAME Basic <link href=\"text/sbasic/shared/03050200.xhp\" name=\"Ukaz Error\">Error</link>."
 
 #: ErrVBA.xhp
 msgctxt ""
@@ -35494,44 +35498,49 @@ msgid "<emph>Number</emph> A user-defined or predefined error code to be raised.
 msgstr "<emph>Število</emph> je uporabniško določena ali vnaprej določena koda napake, ki bo javljena."
 
 #: ErrVBA.xhp
+#, fuzzy
 msgctxt ""
 "ErrVBA.xhp\n"
 "N0032\n"
 "help.text"
 msgid "Error code range 0-2000 is reserved for %PRODUCTNAME Basic. User-defined errors may start from higher values in order to prevent collision with %PRODUCTNAME Basic future developments."
-msgstr ""
+msgstr "Obseg kod napake 0-2000 je rezerviran za %PRODUCTNAME Basic. Uporabniško določene napake se lahko začnejo z višjimi vrednostmi, da se preprečijo spori z bodočim razvojem %PRODUCTNAME Basic."
 
 #: ErrVBA.xhp
+#, fuzzy
 msgctxt ""
 "ErrVBA.xhp\n"
 "N0033\n"
 "help.text"
 msgid "<emph>Source</emph> The name of the routine raising the error. A name in the form of \"myLibrary.myModule.myProc\" is recommended."
-msgstr ""
+msgstr "<emph>Vir</emph> je ime rutine, ki javlja napako. Priporočeno je ime v obliki »mojaKnjižnica.mojModul.mojaProc«."
 
 #: ErrVBA.xhp
+#, fuzzy
 msgctxt ""
 "ErrVBA.xhp\n"
 "N0034\n"
 "help.text"
 msgid "<emph>Description</emph> A description of the problem leading to stop the running process, accompanied with the various reasons that may cause it. A detailed list of the possible course of actions that may help solve the problem is recommended."
-msgstr ""
+msgstr "<emph>Opis</emph>: opis problema, ki pripelje do ustavitve tekočega procesa, ki ga spremljajo različni razlogi, ki bi lahko to povzročili. Priporočen je podroben seznam možnih dejanj, ki lahko pomagajo odpraviti težavo."
 
 #: ErrVBA.xhp
+#, fuzzy
 msgctxt ""
 "ErrVBA.xhp\n"
 "N0041\n"
 "help.text"
 msgid "Err.Raise 2020, Description:=\"This is an intented user-defined error …\""
-msgstr ""
+msgstr "Err.Raise 2020, Description:=\"To je načrtovana, uporabniško določena napaka ...\""
 
 #: ErrVBA.xhp
+#, fuzzy
 msgctxt ""
 "ErrVBA.xhp\n"
 "N0045\n"
 "help.text"
 msgid "errTitle = \"Error \"& Err &\" at line \"& Erl &\" in \"& Err.Source"
-msgstr ""
+msgstr "errTitle = \"Napaka \"& Err &\" v vrstici \"& Erl &\" v \"& Err.Source"
 
 #: ErrVBA.xhp
 #, fuzzy
@@ -35543,12 +35552,13 @@ msgid "Exception ClassModule"
 msgstr "Ukaz Option ClassModule"
 
 #: ErrVBA.xhp
+#, fuzzy
 msgctxt ""
 "ErrVBA.xhp\n"
 "N0049\n"
 "help.text"
 msgid "A short <link href=\"text/sbasic/shared/classmodule.xhp\" name=\"ClassModule option\">ClassModule</link>, that wraps VBA <literal>Err</literal> object, can distribute <literal>Err</literal> properties and methods for standard %PRODUCTNAME Basic modules."
-msgstr ""
+msgstr "Kratek <link href=\"text/sbasic/shared/classmodule.xhp\" name=\"Razredni modul option\">razredni modul</link>, ki zaobjame predmet VBA <literal>Err</literal>, lahko razširja lastnosti in metode <literal>Err</literal> za standardne module %PRODUCTNAME Basic."
 
 #: ErrVBA.xhp
 msgctxt ""
@@ -35576,20 +35586,22 @@ msgid "' your code goes here …"
 msgstr "' vaša koda sodi sem ..."
 
 #: ErrVBA.xhp
+#, fuzzy
 msgctxt ""
 "ErrVBA.xhp\n"
 "N0083\n"
 "help.text"
 msgid "errTitle = \"Error \"& Exc.Number &\" at line \"& Erl &\" in \"& Exc.Source"
-msgstr ""
+msgstr "errTitle = \"Napaka \"& Exc.Number &\" v vrstici \"& Erl &\" v \"& Exc.Source"
 
 #: ErrVBA.xhp
+#, fuzzy
 msgctxt ""
 "ErrVBA.xhp\n"
 "N0088\n"
 "help.text"
 msgid "The <link href=\"text/sbasic/shared/03050300.xhp\" name=\"Error statement\">Error</link> statement or an Exception-like class module can be used interchangeably, while the latter adds extra features."
-msgstr ""
+msgstr "Ukaz <link href=\"text/sbasic/shared/03050300.xhp\" name=\"Ukaz Error\">Error</link> ali razredni modul, podoben Exception, lahko uporabite izmenljivo, pri čemer slednji prinaša dodatne funkcionalnosti."
 
 #: GetPathSeparator.xhp
 msgctxt ""
@@ -35713,28 +35725,31 @@ msgid "<image src=\"media/helpimg/sbasic/Resume_statement.svg\" id=\"img_id41562
 msgstr "<image src=\"media/helpimg/sbasic/Resume_statement.svg\" id=\"img_id4156296484514\"><alt id=\"alt_id15152796484514\">Diagram ukaza Resume</alt></image>"
 
 #: Resume.xhp
+#, fuzzy
 msgctxt ""
 "Resume.xhp\n"
 "par_id481586090298901\n"
 "help.text"
 msgid "<emph>0: </emph>Resets error information and re-executes the instruction that caused the error. <emph>0</emph> is optional."
-msgstr ""
+msgstr "<emph>0:</emph> ponastavi podatke o napaki in ponovno izvede ukaz, ki je povzročil napako. <emph>0</emph> je neobvezna."
 
 #: Resume.xhp
+#, fuzzy
 msgctxt ""
 "Resume.xhp\n"
 "par_id331586090532804\n"
 "help.text"
 msgid "<emph>label: </emph>Resets error information and executes the instruction at the given label."
-msgstr ""
+msgstr "<emph>oznaka:</emph> ponastavi podatke o napaki in izvede ukaz na dani oznaki."
 
 #: Resume.xhp
+#, fuzzy
 msgctxt ""
 "Resume.xhp\n"
 "par_id331586090432804\n"
 "help.text"
 msgid "<emph>Next: </emph>Resets error information and executes the instruction following the one that caused the error."
-msgstr ""
+msgstr "<emph>Next:</emph> ponastavi podatke o napaki in izvede ukaz, ki sledi tistemu, ki je sprožil napako."
 
 #: Resume.xhp
 #, fuzzy
@@ -35771,12 +35786,13 @@ msgid "<literal>Error[$]</literal>: Error description."
 msgstr "<literal>Error[$]</literal>: opis napake."
 
 #: Resume.xhp
+#, fuzzy
 msgctxt ""
 "Resume.xhp\n"
 "par_id941586091561618\n"
 "help.text"
 msgid "Using <emph>Resume</emph> to reset error information prevents the propagation of the handled condition to calling routines."
-msgstr ""
+msgstr "Ob uporabi <emph>Resume</emph> za ponastavitev podatkov o napaki prepreči razširjanje obravnavanega pogoja klicnim rutinam."
 
 #: Resume.xhp
 msgctxt ""
@@ -35787,12 +35803,13 @@ msgid "Examples:"
 msgstr "Primeri:"
 
 #: Resume.xhp
+#, fuzzy
 msgctxt ""
 "Resume.xhp\n"
 "par_id961586248539108\n"
 "help.text"
 msgid "Typical error handling routines are: alerting the user, fixing the error, logging error information or re-throwing custom errors that provide explanations with resolution instructions. Use <literal>Resume label</literal> when requiring such mechanisms."
-msgstr ""
+msgstr "Tipični postopki obravnave napak so: opozarjanje uporabnika, odprava napake, beleženje podatkov o napaki ali ponovnim doseganjem napak po meri, ki ponujajo razlage z napotki za odpravo. Uporabite oznako <literal>Resume</literal>, ko je potreben tovrsten mehanizem."
 
 #: Resume.xhp
 msgctxt ""
@@ -35820,20 +35837,22 @@ msgid "' routine cleanup code goes here"
 msgstr "' vaša koda sodi sem"
 
 #: Resume.xhp
+#, fuzzy
 msgctxt ""
 "Resume.xhp\n"
 "par_id61586095819168\n"
 "help.text"
 msgid "Use <literal>Resume Next</literal>, for example, when reporting anomalies encountered for an iterating process that must not be interrupted. In which case multiple handling routines may be required."
-msgstr ""
+msgstr "Uporabite <literal>Resume Next</literal> ko npr. poročate o nepravilnostih, na katere naletite v iterativnem procesu, ki ga ne želite prekiniti. V tem primeru so morda potrebne različne rutine ravnanja."
 
 #: Resume.xhp
+#, fuzzy
 msgctxt ""
 "Resume.xhp\n"
 "par_id461586091018138\n"
 "help.text"
 msgid "Using <literal>Resume</literal> without parameters to re-execute the faulty instruction can fit certain situations. However that may cause a never ending loop."
-msgstr ""
+msgstr "Uporaba <literal>Resume</literal> brez parametrov za ponovno izvajanje okvarjenega ukaza je lahko ustrezna v določenih situacijah. Lahko pa povzroči tudi neskončno zanko."
 
 #: classmodule.xhp
 msgctxt ""
