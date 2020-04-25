@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: LibreOffice 7.0\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2020-04-13 15:29+0200\n"
-"PO-Revision-Date: 2020-04-16 18:41+0200\n"
+"POT-Creation-Date: 2020-04-22 19:47+0200\n"
+"PO-Revision-Date: 2020-04-24 22:33+0200\n"
 "Last-Translator: Martin Srebotnjak <miles@filmsi.net>\n"
 "Language-Team: sl.libreoffice.org\n"
 "Language: sl\n"
@@ -4210,22 +4210,20 @@ msgid "<emph>Database</emph> is the cell range defining the database. The first 
 msgstr "<emph>Zbirka podatkov</emph> je obseg celic, ki določa zbirko podatkov. Prva vrstica obsega vsebuje imena polj, naslednje vrstice so zapisi z ustreznimi vrednostmi polj."
 
 #: 04060101.xhp
-#, fuzzy
 msgctxt ""
 "04060101.xhp\n"
 "par_id3151272\n"
 "help.text"
 msgid "<emph>DatabaseField</emph> specifies the column where the function operates on after the search criteria of the first parameter is applied and the data rows are selected. It is not related to the search criteria itself. <variable id=\"quotes\">For the DatabaseField parameter you can enter a reference to a header cell or a number to specify the column within the Database area, starting with 1. To reference a column by means of the literal column header name (from the first row of <emph>Database</emph> range), place quotation marks around the header name.</variable>"
-msgstr "Potem ko se uveljavijo iskalni pogoji prvega parametra in so izbrane vrstice s podatki, <emph>polje_zbirke_podatkov</emph> določi, v katerem stolpcu bo funkcija operirala. Polje ni povezano s samimi iskalnimi pogoji. Ves obseg podatkov lahko določite s številom 0. <variable id=\"quotes\">Če hočete za sklicevanje na stolpec uporabiti ime glave stolpca, dajte ime glave v narekovaje.</variable>"
+msgstr "Potem ko se uveljavijo iskalni pogoji prvega parametra in so izbrane vrstice s podatki, <emph>polje_zbirke_podatkov</emph> določi, v katerem stolpcu bo funkcija operirala. Polje ni povezano s samimi iskalnimi pogoji. Ves obseg podatkov lahko določite s številom 0. <variable id=\"quotes\">Če hočete za sklicevanje na stolpec uporabiti ime glave stolpca (iz prve vrstice obsega <emph>Zbirka podatkov</emph>), dajte ime glave v narekovaje.</variable>"
 
 #: 04060101.xhp
-#, fuzzy
 msgctxt ""
 "04060101.xhp\n"
 "par_id3147083\n"
 "help.text"
 msgid "<emph>SearchCriteria</emph> is the cell range containing search criteria. Like <emph>Database</emph>, its first row is also field names, and following rows are conditions for related fields. If you write several criteria in one row they are connected by AND. If you write the criteria in different rows they are connected by OR. Empty cells in the search criteria range will be ignored."
-msgstr "<emph>Iskalni_pogoji</emph> pomenijo obseg celic, ki vsebuje pogoje iskanja. Če v isto vrstico vpišete več pogojev, bodo med seboj povezani z AND. Če pogoje vpišete v različne vrstice, bodo povezani z OR. Prazne celice v iskalnih pogojih ne bodo upoštevane."
+msgstr "<emph>Iskalni_pogoji</emph> predstavljajo obseg celic, ki vsebuje pogoje iskanja. Tako kot v <emph>zbirki podatkov</emph> so v prvi vrstici imena polj, naslednje vrstice pa vsebujejo pogoje za sorodna polja. Če v isto vrstico vpišete več pogojev, bodo med seboj povezani z AND. Če pogoje vpišete v različne vrstice, bodo povezani z OR. Prazne celice v iskalnih pogojih ne bodo upoštevane."
 
 #: 04060101.xhp
 msgctxt ""
@@ -4282,6 +4280,14 @@ msgctxt ""
 "help.text"
 msgid "If the DatabaseField argument is omitted, DCOUNT returns the count of all records that satisfy Criteria. <embedvar href=\"text/scalc/01/04060101.xhp#quotes\"/>"
 msgstr "Če je parameter polje_zbirke_podatkov izpuščen, DCOUNT vrne število vseh zapisov, ki ustrezajo iskalnim_pogojem. <embedvar href=\"text/scalc/01/04060101.xhp#quotes\"/>"
+
+#: 04060101.xhp
+msgctxt ""
+"04060101.xhp\n"
+"par_id301587321851330\n"
+"help.text"
+msgid "If you choose to omit the DatabaseField argument, your formula should be of the form =DCOUNT(Database; ; SearchCriteria)."
+msgstr "Če želite izpustiti argument polje_zbirke_podatkov, mora biti vaša formula v obliki =DCOUNT(zbirka_podatkov;;iskalni_pogoji)."
 
 #: 04060101.xhp
 msgctxt ""
@@ -4346,6 +4352,14 @@ msgctxt ""
 "help.text"
 msgid "If the DatabaseField argument is omitted, DCOUNTA returns the count of all records that satisfy Criteria. <embedvar href=\"text/scalc/01/04060101.xhp#quotes\"/>"
 msgstr "Če je parameter polje_zbirke_podatkov izpuščen, DCOUNTA vrne število vseh zapisov, ki ustrezajo iskalnim_pogojem. <embedvar href=\"text/scalc/01/04060101.xhp#quotes\"/>"
+
+#: 04060101.xhp
+msgctxt ""
+"04060101.xhp\n"
+"par_id31587322048553\n"
+"help.text"
+msgid "If you choose to omit the DatabaseField argument, your formula should be of the form =DCOUNTA(Database; ; SearchCriteria)."
+msgstr "Če želite izpustiti argument polje_zbirke_podatkov, mora biti vaša formula v obliki =DCOUNTA(zbirka_podatkov;;iskalni_pogoji)."
 
 #: 04060101.xhp
 msgctxt ""
@@ -10828,7 +10842,6 @@ msgid "LCM(<embedvar href=\"text/scalc/01/ful_func.xhp#integer255_1\" markup=\"k
 msgstr "LCM(<embedvar href=\"text/scalc/01/ful_func.xhp#integer255_1\" markup=\"keep\"/>)"
 
 #: 04060106.xhp
-#, fuzzy
 msgctxt ""
 "04060106.xhp\n"
 "par_id3154914\n"
@@ -11541,7 +11554,6 @@ msgid "SUMSQ"
 msgstr "SUMSQ"
 
 #: 04060106.xhp
-#, fuzzy
 msgctxt ""
 "04060106.xhp\n"
 "par_id3160368\n"
@@ -11558,7 +11570,6 @@ msgid "SUMSQ(<embedvar href=\"text/scalc/01/ful_func.xhp#number255_1\" markup=\"
 msgstr "SUMSQ(<embedvar href=\"text/scalc/01/ful_func.xhp#number255_1\" markup=\"keep\"/>)"
 
 #: 04060106.xhp
-#, fuzzy
 msgctxt ""
 "04060106.xhp\n"
 "par_id3160449\n"
@@ -12231,7 +12242,6 @@ msgid "<variable id=\"sum_head\"><link href=\"text/scalc/01/04060106.xhp#Section
 msgstr "<variable id=\"sum_head\"><link href=\"text/scalc/01/04060106.xhp#Section16\">SUM</link></variable>"
 
 #: 04060106.xhp
-#, fuzzy
 msgctxt ""
 "04060106.xhp\n"
 "par_id3163625\n"
@@ -29525,7 +29535,7 @@ msgctxt ""
 "par_id21585771564740\n"
 "help.text"
 msgid "CHISQINV(Probability; Degrees of Freedom)"
-msgstr "CHISQINV(verjetnost; stopnje svobode)"
+msgstr "CHISQINV(verjetnost; stopnje_svobode)"
 
 #: 04060181.xhp
 msgctxt ""
@@ -29541,7 +29551,7 @@ msgctxt ""
 "par_id0119200902475282\n"
 "help.text"
 msgid "<emph>Degrees Of Freedom</emph> is the degrees of freedom for the chi-square function."
-msgstr "<emph>Stopnje svobode</emph> je število stopenj svobode za funkcijo hi-kvadrat."
+msgstr "<emph>Stopnje_svobode</emph> je število stopenj svobode za funkcijo hi-kvadrat."
 
 #: 04060181.xhp
 msgctxt ""
@@ -32872,7 +32882,6 @@ msgid "KURT(<embedvar href=\"text/scalc/01/ful_func.xhp#number255_1\" markup=\"k
 msgstr "KURT(<embedvar href=\"text/scalc/01/ful_func.xhp#number255_1\" markup=\"keep\"/>)"
 
 #: 04060183.xhp
-#, fuzzy
 msgctxt ""
 "04060183.xhp\n"
 "par_id501585152669900\n"
@@ -34646,7 +34655,7 @@ msgctxt ""
 "par_id2748477\n"
 "help.text"
 msgid "<emph>Significance</emph> An optional argument that specifies the number of significant digits that the returned percentage value is rounded to. If omitted, a value of 3 is used."
-msgstr "<emph>Značilno_število</emph> je število, na katerega večkratnik želimo vrednost zaokrožiti navzgor. Če je izpuščeno, bo uporabljena vrednost 3."
+msgstr "<emph>Značilno_število</emph> je neobvezen argument, ki določa število značilnih števk, na katere želimo zaokrožiti vrnjeno odstotkovno vrednost. Če je izpuščeno, bo uporabljena vrednost 3."
 
 #: 04060184.xhp
 msgctxt ""
@@ -34718,7 +34727,7 @@ msgctxt ""
 "par_id2748475\n"
 "help.text"
 msgid "<emph>Significance</emph> An optional argument that specifies the number of significant digits that the returned percentage value is rounded to."
-msgstr "<emph>Značilno_število</emph> je število, na katerega večkratnik želimo vrednost zaokrožiti navzgor."
+msgstr "<emph>Značilno_število</emph> je neobvezen argument, ki določa število značilnih števk, na katere želimo zaokrožiti vrnjeno odstotkovno vrednost."
 
 #: 04060184.xhp
 msgctxt ""
@@ -34790,7 +34799,7 @@ msgctxt ""
 "par_id2648475\n"
 "help.text"
 msgid "<emph>Significance</emph> An optional argument that specifies the number of significant digits that the returned percentage value is rounded to."
-msgstr "<emph>Značilno_število</emph> je število, na katerega večkratnik želimo vrednost zaokrožiti navzgor."
+msgstr "<emph>Značilno_število</emph> je neobvezen argument, ki določa število značilnih števk, na katere želimo zaokrožiti vrnjeno odstotkovno vrednost."
 
 #: 04060184.xhp
 msgctxt ""
@@ -35289,7 +35298,6 @@ msgid "SKEW(<embedvar href=\"text/scalc/01/ful_func.xhp#number255_1\" markup=\"k
 msgstr "SKEW(<embedvar href=\"text/scalc/01/ful_func.xhp#number255_1\" markup=\"keep\"/>)"
 
 #: 04060185.xhp
-#, fuzzy
 msgctxt ""
 "04060185.xhp\n"
 "par_id171585151428396\n"
@@ -35466,7 +35474,6 @@ msgid "STDEV(<embedvar href=\"text/scalc/01/ful_func.xhp#number255_1\" markup=\"
 msgstr "STDEV(<embedvar href=\"text/scalc/01/ful_func.xhp#number255_1\" markup=\"keep\"/>)"
 
 #: 04060185.xhp
-#, fuzzy
 msgctxt ""
 "04060185.xhp\n"
 "par_id211585163957345\n"
@@ -35515,7 +35522,6 @@ msgid "STDEVA(<embedvar href=\"text/scalc/01/ful_func.xhp#number255_1\" markup=\
 msgstr "STDEVA(<embedvar href=\"text/scalc/01/ful_func.xhp#number255_1\" markup=\"keep\"/>)"
 
 #: 04060185.xhp
-#, fuzzy
 msgctxt ""
 "04060185.xhp\n"
 "par_id981585163977014\n"
@@ -35644,7 +35650,6 @@ msgid "STDEV.S(<embedvar href=\"text/scalc/01/ful_func.xhp#number255_1\" markup=
 msgstr "STDEV.S(<embedvar href=\"text/scalc/01/ful_func.xhp#number255_1\" markup=\"keep\"/>)"
 
 #: 04060185.xhp
-#, fuzzy
 msgctxt ""
 "04060185.xhp\n"
 "par_id671585163972431\n"
@@ -35693,7 +35698,6 @@ msgid "STDEVPA(<embedvar href=\"text/scalc/01/ful_func.xhp#number255_1\" markup=
 msgstr "STDEVPA(<embedvar href=\"text/scalc/01/ful_func.xhp#number255_1\" markup=\"keep\"/>)"
 
 #: 04060185.xhp
-#, fuzzy
 msgctxt ""
 "04060185.xhp\n"
 "par_id961585163990543\n"
@@ -36726,7 +36730,6 @@ msgid "VAR(<embedvar href=\"text/scalc/01/ful_func.xhp#number255_1\" markup=\"ke
 msgstr "VAR(<embedvar href=\"text/scalc/01/ful_func.xhp#number255_1\" markup=\"keep\"/>)"
 
 #: 04060185.xhp
-#, fuzzy
 msgctxt ""
 "04060185.xhp\n"
 "par_id721585215582420\n"
@@ -36775,7 +36778,6 @@ msgid "VAR.S(<embedvar href=\"text/scalc/01/ful_func.xhp#number255_1\" markup=\"
 msgstr "VAR.S(<embedvar href=\"text/scalc/01/ful_func.xhp#number255_1\" markup=\"keep\"/>)"
 
 #: 04060185.xhp
-#, fuzzy
 msgctxt ""
 "04060185.xhp\n"
 "par_id891585215590756\n"
@@ -36824,7 +36826,6 @@ msgid "VARA(<embedvar href=\"text/scalc/01/ful_func.xhp#number255_1\" markup=\"k
 msgstr "VARA(<embedvar href=\"text/scalc/01/ful_func.xhp#number255_1\" markup=\"keep\"/>)"
 
 #: 04060185.xhp
-#, fuzzy
 msgctxt ""
 "04060185.xhp\n"
 "par_id451585215586628\n"
@@ -47113,7 +47114,6 @@ msgid "This function is part of the Open Document Format for Office Applications
 msgstr "Ta funkcija je del standarda Open Document Format for Office Applications (OpenDocument) različice 1.2 (ISO/IEC 26300:2-2015)."
 
 #: calculate.xhp
-#, fuzzy
 msgctxt ""
 "calculate.xhp\n"
 "tit\n"
@@ -47122,7 +47122,6 @@ msgid "Calculate"
 msgstr "Izračunaj"
 
 #: calculate.xhp
-#, fuzzy
 msgctxt ""
 "calculate.xhp\n"
 "hd_id621584668179317\n"
@@ -47715,7 +47714,6 @@ msgid "<emph>Func_Range</emph> and <emph>Range1, Range2...</emph> must have the 
 msgstr "<emph>Obseg_funkcije</emph> in <emph>Obseg1, Obseg2, ...</emph> morajo biti enake velikosti, sicer funkcija vrne nap:502 – Neveljaven argument."
 
 #: ex_data_stat_func.xhp
-#, fuzzy
 msgctxt ""
 "ex_data_stat_func.xhp\n"
 "par_id101585468691583\n"
@@ -48292,7 +48290,6 @@ msgid "<emph>Number 1[; Number 2][; … ;[Number 255]]</emph> are numbers, refer
 msgstr "<emph>Število 1[; število 2][; … ;[število 255]]</emph> so numerične vrednosti ali sklici na celice oz. obsege celic s števili."
 
 #: ful_func.xhp
-#, fuzzy
 msgctxt ""
 "ful_func.xhp\n"
 "par_id291584447988879\n"
@@ -48301,7 +48298,6 @@ msgid "<variable id=\"logical255_1\">Logical 1[; Logical 2][; … ;[Logical 255]
 msgstr "<variable id=\"logical255_1\">logična vrednost 1[; logična vrednost 2][; ... ;[logična vrednost 255]]</variable>"
 
 #: ful_func.xhp
-#, fuzzy
 msgctxt ""
 "ful_func.xhp\n"
 "par_id931584395957010\n"
@@ -49330,11 +49326,10 @@ msgctxt ""
 "func_ceiling.xhp\n"
 "par_id3153422\n"
 "help.text"
-msgid "<ahelp hid=\"HID_FUNC_OBERGRENZE\">Rounds a number up to the nearest multiple of s significance value.</ahelp>"
+msgid "<ahelp hid=\"HID_FUNC_OBERGRENZE\">Rounds a number to the nearest multiple of a significance value.</ahelp>"
 msgstr "<ahelp hid=\"HID_FUNC_OBERGRENZE\">Število zaokroži navzgor na najbližji večkratnik značilnega števila.</ahelp>"
 
 #: func_ceiling.xhp
-#, fuzzy
 msgctxt ""
 "func_ceiling.xhp\n"
 "par_id601586207136514\n"
@@ -49347,8 +49342,8 @@ msgctxt ""
 "func_ceiling.xhp\n"
 "par_id3163792\n"
 "help.text"
-msgid "If the spreadsheet is exported to Microsoft Excel, the CEILING function is exported as the equivalent CEILING.MATH function that exists since Excel 2013. If you plan to use the spreadsheet with earlier Excel versions, use either CEILING.PRECISE that exists since Excel 2010, or CEILING.XCL that is exported as the CEILING function compatible with all Excel versions. Note that CEILING.XCL always rounds away from zero."
-msgstr "Če preglednico izvozite v zapisu Microsoft Excel, se funkcija CEILING izvozi kot enakovredna funkcija CEILING.MATH, ki obstaja od različice Excel 2013 naprej. Če nameravate uporabljati preglednico z zgodnejšimi različicami Excela, uporabite CEILING.PRECISE, ki obstaja od Excel 2010, ali CEILING.XCL, ki se izvozi kot funkcija CEILING, združljiva z vsemi različicami Excela. Upoštevajte, da CEILING.XCL vedno zaokroža na vrednost stran od nič."
+msgid "If the spreadsheet is exported to Microsoft Excel, the CEILING function is exported as the equivalent CEILING.MATH function that has existed since Excel 2013. If you plan to use the spreadsheet with earlier Excel versions, use either CEILING.PRECISE that has existed since Excel 2010, or CEILING.XCL that is exported as the CEILING function compatible with all Excel versions."
+msgstr "Če preglednico izvozite v zapisu Microsoft Excel, se funkcija FLOOR izvozi kot enakovredna funkcija FLOOR.MATH, ki obstaja od različice Excel 2013 naprej. Če nameravate uporabljati preglednico z zgodnejšimi različicami Excela, uporabite FLOOR.PRECISE, ki obstaja od Excel 2010, ali FLOOR.XCL, ki se izvozi kot funkcija FLOOR, združljiva z vsemi različicami Excela."
 
 #: func_ceiling.xhp
 msgctxt ""
@@ -49375,7 +49370,6 @@ msgid "<emph>Significance</emph> (optional) is the value, or a reference to a ce
 msgstr "<emph>Značilno_število</emph> (neobvezno) je vrednost ali sklic na celico, ki vsebuje vrednost, na katere večkratnik želimo <emph>število</emph> zaokrožiti. Privzeta vrednost je +1 oz. -1, odvisno od predznaka <emph>števila</emph>."
 
 #: func_ceiling.xhp
-#, fuzzy
 msgctxt ""
 "func_ceiling.xhp\n"
 "par_id3155020\n"
@@ -49448,7 +49442,6 @@ msgid "<ahelp hid=\"HID_FUNC_CEIL_MS\">Rounds a number up to the nearest multipl
 msgstr "<ahelp hid=\"HID_FUNC_CEIL_MS\">Število zaokroži navzgor na najbližji večkratnik značilnega števila.</ahelp>"
 
 #: func_ceiling.xhp
-#, fuzzy
 msgctxt ""
 "func_ceiling.xhp\n"
 "par_id151586642494759\n"
@@ -49478,15 +49471,7 @@ msgctxt ""
 "par_id2955000\n"
 "help.text"
 msgid "<emph>Significance</emph> (optional) is the value, or a reference to a cell containing the value, to whose multiple <emph>Number</emph> is to be rounded. It defaults to 1."
-msgstr "<emph>Značilno_število</emph> (neobvezno) je vrednost ali sklic na celico, ki vsebuje vrednost, na katere večkratnik želimo zaokrožiti <emph>število</emph>. Privzeta vrednost je 1."
-
-#: func_ceiling.xhp
-msgctxt ""
-"func_ceiling.xhp\n"
-"par_id461586211894475\n"
-"help.text"
-msgid "This function calculates identical results to the ISO.CEILING function"
-msgstr "Ta funkcija izračuna identičen rezultat kot funkcija ISO.CEILING."
+msgstr "<emph>Značilno_število</emph> (neobvezno) je vrednost ali sklic na celico, ki vsebuje vrednost, na katere večkratnik želimo <emph>število</emph> zaokrožiti. Privzeta vrednost je 1."
 
 #: func_ceiling.xhp
 msgctxt ""
@@ -49529,13 +49514,20 @@ msgid "<ahelp hid=\"HID_FUNC_CEIL_MATH\">Rounds a number to the nearest multiple
 msgstr "<ahelp hid=\"HID_FUNC_CEIL_MATH\">Število zaokroži na najbližji večkratnik značilnega števila.</ahelp>"
 
 #: func_ceiling.xhp
-#, fuzzy
 msgctxt ""
 "func_ceiling.xhp\n"
 "par_id911586642319078\n"
 "help.text"
 msgid "For a positive number the function rounds up (away from zero). For a negative number, the direction of rounding is determined by the value of a mode parameter. The sign of the significance value is ignored."
 msgstr "Pri pozitivnem številu funkcija zaokroži navzgor (stran od nič). Pri negativnem številu smer zaokrožanja določa vrednost parametra načina. Predznak značilnega števila je prezrt."
+
+#: func_ceiling.xhp
+msgctxt ""
+"func_ceiling.xhp\n"
+"par_id291516998575663\n"
+"help.text"
+msgid "This function exists for interoperability with Microsoft Excel 2013 or newer."
+msgstr "Ta funkcija je namenjena združljivosti z datotekami programa Microsoft Excel 2013 ali novejših."
 
 #: func_ceiling.xhp
 msgctxt ""
@@ -49551,24 +49543,15 @@ msgctxt ""
 "par_id491516997725772\n"
 "help.text"
 msgid "<emph>Significance</emph> (optional) is the value, or a reference to a cell containing the value, to whose multiple <emph>Number</emph> is to be rounded. It defaults to 1."
-msgstr "<emph>Značilno_število</emph> (neobvezno) je vrednost ali sklic na celico, ki vsebuje vrednost, na katere večkratnik želimo <emph>število</emph> zaokrožiti navzgor. Privzeta vrednost je 1."
+msgstr "<emph>Značilno_število</emph> (neobvezno) je vrednost ali sklic na celico, ki vsebuje vrednost, na katere večkratnik želimo <emph>število</emph> zaokrožiti. Privzeta vrednost je 1."
 
 #: func_ceiling.xhp
-#, fuzzy
 msgctxt ""
 "func_ceiling.xhp\n"
 "par_id451516997742909\n"
 "help.text"
 msgid "<emph>Mode</emph> (optional) is a number, or a reference to a cell containing a number. If <emph>Mode</emph> is given and not equal to zero, a negative <emph>Number</emph> is rounded down (away from zero). If <emph>Mode</emph> is equal to zero or is not given, a negative <emph>Number</emph> is rounded up (towards zero)."
 msgstr "<emph>Način</emph> (neobvezno) je število ali sklic na celico, ki vsebuje število. Če je vrednost <emph>načina</emph> podana in ni enaka nič, se negativno <emph>število</emph> zaokroži navzdol (stran od nič). Če je vrednost <emph>načina</emph> enaka nič ali ni podana, se negativno <emph>število</emph> zaokroži navzgor (proti nič)."
-
-#: func_ceiling.xhp
-msgctxt ""
-"func_ceiling.xhp\n"
-"par_id291516998575663\n"
-"help.text"
-msgid "This function exists for interoperability with Microsoft Excel 2013 or newer."
-msgstr "Ta funkcija je namenjena združljivosti z datotekami programa Microsoft Excel 2013 ali novejših."
 
 #: func_ceiling.xhp
 msgctxt ""
@@ -49635,7 +49618,6 @@ msgid "<ahelp hid=\"HID_FUNC_CEIL_MS\">Rounds a number to the nearest multiple o
 msgstr "<ahelp hid=\"HID_FUNC_CEIL_MS\">Število zaokroži na najbližji večkratnik značilnega števila.</ahelp>"
 
 #: func_ceiling.xhp
-#, fuzzy
 msgctxt ""
 "func_ceiling.xhp\n"
 "par_id361586213828675\n"
@@ -49644,7 +49626,6 @@ msgid "For a positive number and a positive significance value, the function rou
 msgstr "Pri pozitivnem številu in pozitivnem značilnem številu funkcija zaokroži navzgor (stran od nič). Pri negativnem številu in pozitivnem značilnem številu funkcija zaokroži navzgor (proti nič). Pri negativnem številu in negativnem značilnem številu funkcija zaokroži navzdol (stran od nič). Funkcija vrne napako, če je število pozitivno, značilno število pa negativno."
 
 #: func_ceiling.xhp
-#, fuzzy
 msgctxt ""
 "func_ceiling.xhp\n"
 "par_id881586213934118\n"
@@ -49717,7 +49698,6 @@ msgid "<ahelp hid=\"HID_FUNC_CEIL_ISO\">Rounds a number up to the nearest multip
 msgstr "<ahelp hid=\"HID_FUNC_CEIL_ISO\">Število zaokroži navzgor na najbližji večkratnik značilnega števila.</ahelp>"
 
 #: func_ceiling.xhp
-#, fuzzy
 msgctxt ""
 "func_ceiling.xhp\n"
 "par_id101586214229587\n"
@@ -49762,7 +49742,7 @@ msgctxt ""
 "func_ceiling.xhp\n"
 "par_id181586214438808\n"
 "help.text"
-msgid "<input>=ISO.CEILING(-45.67,2)</input> returns 44."
+msgid "<input>=ISO.CEILING(-45.67,2)</input> returns -44."
 msgstr "<input>=ISO.CEILING(-45,67,2)</input> vrne 44."
 
 #: func_color.xhp
@@ -51246,13 +51226,20 @@ msgid "<ahelp hid=\"HID_FUNC_UNTERGRENZE\">Rounds a number to the nearest multip
 msgstr "<ahelp hid=\"HID_FUNC_UNTERGRENZE\">Zaokroži število na najbližji večkratnik značilnega števila.</ahelp>"
 
 #: func_floor.xhp
-#, fuzzy
 msgctxt ""
 "func_floor.xhp\n"
 "par_id661586285977707\n"
 "help.text"
 msgid "For a positive number and a positive significance value, the function rounds down (towards zero). For a negative number and a negative significance value, the direction of rounding is determined by the value of a mode parameter. The function returns an error if the number and significance values have opposite signs."
 msgstr "Pri pozitivnem številu in pozitivnem značilnem številu funkcija zaokroži navzdoč (proti nič). Pri negativnem številu in negativnem značilnem številu smer zaokrožanja določa vrednost parametra načina. Funkcija vrne napako, če imata število in značilno število drugačna predznaka."
+
+#: func_floor.xhp
+msgctxt ""
+"func_floor.xhp\n"
+"par_id3163894\n"
+"help.text"
+msgid "If the spreadsheet is exported to Microsoft Excel, the FLOOR function is exported as the equivalent FLOOR.MATH function that has existed since Excel 2013. If you plan to use the spreadsheet with earlier Excel versions, use either FLOOR.PRECISE that has existed since Excel 2010, or FLOOR.XCL that is exported as the FLOOR function compatible with all Excel versions."
+msgstr "Če preglednico izvozite v zapisu Microsoft Excel, se funkcija FLOOR izvozi kot enakovredna funkcija FLOOR.MATH, ki obstaja od različice Excel 2013 naprej. Če nameravate uporabljati preglednico z zgodnejšimi različicami Excela, uporabite FLOOR.PRECISE, ki obstaja od Excel 2010, ali FLOOR.XCL, ki se izvozi kot funkcija FLOOR, združljiva z vsemi različicami Excela."
 
 #: func_floor.xhp
 msgctxt ""
@@ -51279,21 +51266,12 @@ msgid "<emph>Significance</emph> (optional) is the value, or a reference to a ce
 msgstr "<emph>Značilno_število</emph> (neobvezno) je vrednost ali sklic na celico, ki vsebuje vrednost, na katere večkratnik želimo <emph>število</emph> zaokrožiti. Privzeta vrednost je +1 oz. -1, odvisno od predznaka <emph>števila</emph>."
 
 #: func_floor.xhp
-#, fuzzy
 msgctxt ""
 "func_floor.xhp\n"
 "par_id3157517\n"
 "help.text"
 msgid "<emph>Mode</emph> (optional) is a number, or a reference to a cell containing a number. The function only uses <emph>Mode</emph> if both <emph>Number</emph> and <emph>Significance</emph> are negative. Then if <emph>Mode</emph> is given and not equal to zero, numbers are rounded up (towards zero); if <emph>Mode</emph> is equal to zero or not given, negative numbers are rounded down (away from zero)."
 msgstr "<emph>Način</emph> (neobvezno) je število ali sklic na celico, ki vsebuje število. Funkcija upošteva vrednost <emph>načina</emph> samo, če sta <emph>število</emph> in <emph>značilno_število</emph> negativna. V tem primeru se, če je vrednost <emph>načina</emph> podana in ni enaka nič, števila zaokrožijo navzgor (proti nič); če pa je vrednost <emph>načina</emph> enaka nič ali ni podana, se negativna števila zaokrožajo navzdol (stran od nič)."
-
-#: func_floor.xhp
-msgctxt ""
-"func_floor.xhp\n"
-"par_id3163894\n"
-"help.text"
-msgid "If the spreadsheet is exported to Microsoft Excel, the FLOOR function is exported as the equivalent FLOOR.MATH function that has existed since Excel 2013. If you plan to use the spreadsheet with earlier Excel versions, use either FLOOR.PRECISE that has existed since Excel 2010, or FLOOR.XCL that is exported as the FLOOR function compatible with all Excel versions."
-msgstr "Če preglednico izvozite v zapisu Microsoft Excel, se funkcija FLOOR izvozi kot enakovredna funkcija FLOOR.MATH, ki obstaja od različice Excel 2013 naprej. Če nameravate uporabljati preglednico z zgodnejšimi različicami Excela, uporabite FLOOR.PRECISE, ki obstaja od Excel 2010, ali FLOOR.XCL, ki se izvozi kot funkcija FLOOR, združljiva z vsemi različicami Excela."
 
 #: func_floor.xhp
 msgctxt ""
@@ -51360,7 +51338,6 @@ msgid "Rounds a number to the nearest multiple of a significance value."
 msgstr "Zaokroži število na najbližji večkratnik značilnega števila."
 
 #: func_floor.xhp
-#, fuzzy
 msgctxt ""
 "func_floor.xhp\n"
 "par_id311586287323417\n"
@@ -51393,7 +51370,6 @@ msgid "<emph>Significance</emph> (optional) is the value, or a reference to a ce
 msgstr "<emph>Značilno_število</emph> (neobvezno) je vrednost ali sklic na celico, ki vsebuje vrednost, na katere večkratnik želimo <emph>število</emph> zaokrožiti. Privzeta vrednost je 1."
 
 #: func_floor.xhp
-#, fuzzy
 msgctxt ""
 "func_floor.xhp\n"
 "par_id261586287494401\n"
@@ -51466,7 +51442,6 @@ msgid "<ahelp hid=\"HID_FUNC_FLOOR_MS\">Rounds a number down to the nearest mult
 msgstr "<ahelp hid=\"HID_FUNC_FLOOR_MS\">Zaokroži število navzdol na najbližji večkratnik značilnega števila.</ahelp>"
 
 #: func_floor.xhp
-#, fuzzy
 msgctxt ""
 "func_floor.xhp\n"
 "par_id261586641501175\n"
@@ -51531,7 +51506,6 @@ msgid "Rounds a number to the nearest multiple of a significance value."
 msgstr "Zaokroži število na najbližji večkratnik značilnega števila."
 
 #: func_floor.xhp
-#, fuzzy
 msgctxt ""
 "func_floor.xhp\n"
 "par_id401586291488768\n"
@@ -51540,7 +51514,6 @@ msgid "For a positive number and a positive significance value, the function rou
 msgstr "Pri pozitivnem številu in pozitivnem značilnem številu funkcija zaokroži navzdol (proti nič). Pri negativnem številu in pozitivnem značilnem številu funkcija zaokroži navzdol (stran od nič). Pri negativnem številu in negativnem značilnem številu funkcija zaokroži navzgor (proti nič). Funkcija vrne napako, če je število pozitivno, značilno število pa negativno."
 
 #: func_floor.xhp
-#, fuzzy
 msgctxt ""
 "func_floor.xhp\n"
 "par_id231586291503319\n"
@@ -54693,7 +54666,6 @@ msgid "<emph>Subtrahend 1[; Subtrahend 2][; ... ;[ Subtrahend 254]]</emph> are n
 msgstr "<emph>Odštevanec 1[; odštevanec 2][; ... ;[odštevanec 254]]</emph> so števila ali sklici na celice, ki vsebujejo števila."
 
 #: func_rawsubtract.xhp
-#, fuzzy
 msgctxt ""
 "func_rawsubtract.xhp\n"
 "par_2016112109235\n"
@@ -55214,7 +55186,6 @@ msgid "SKEWP(<embedvar href=\"text/scalc/01/ful_func.xhp#number255_1\" markup=\"
 msgstr "SKEWP(<embedvar href=\"text/scalc/01/ful_func.xhp#number255_1\" markup=\"keep\"/>)"
 
 #: func_skewp.xhp
-#, fuzzy
 msgctxt ""
 "func_skewp.xhp\n"
 "par_id242131304315587\n"
@@ -55463,7 +55434,6 @@ msgid "SWITCH(expression; value1; result1[; value2; result2][; ... ; [value127; 
 msgstr "SWITCH(izraz; vrednost1; rezultat1[; vrednost2; rezultat2][; ... ; [vrednost127; rezultat127][; privzeti_rezultat]])"
 
 #: func_switch.xhp
-#, fuzzy
 msgctxt ""
 "func_switch.xhp\n"
 "par_id111585520651521\n"
@@ -58728,7 +58698,6 @@ msgid "<emph>Phase</emph>"
 msgstr "<emph>Faza</emph>"
 
 #: statistics_movingavg.xhp
-#, fuzzy
 msgctxt ""
 "statistics_movingavg.xhp\n"
 "tit\n"
@@ -59129,7 +59098,6 @@ msgid "Sampling with a period of 2 will result in the following table:"
 msgstr "Vzorčenje s periodo 2 vrne rezultat v naslednji tabeli:"
 
 #: statistics_test_chisqr.xhp
-#, fuzzy
 msgctxt ""
 "statistics_test_chisqr.xhp\n"
 "tit\n"
@@ -59234,7 +59202,6 @@ msgid "Critical Value"
 msgstr "Kritična vrednost"
 
 #: statistics_test_f.xhp
-#, fuzzy
 msgctxt ""
 "statistics_test_f.xhp\n"
 "tit\n"
@@ -59459,7 +59426,6 @@ msgid "F Critical two-tail"
 msgstr "Dvorepi kritični F"
 
 #: statistics_test_t.xhp
-#, fuzzy
 msgctxt ""
 "statistics_test_t.xhp\n"
 "tit\n"
@@ -59700,7 +59666,6 @@ msgid "t Critical two-tail"
 msgstr "Dvorepi kritični t"
 
 #: statistics_test_z.xhp
-#, fuzzy
 msgctxt ""
 "statistics_test_z.xhp\n"
 "tit\n"
@@ -59797,7 +59762,6 @@ msgid "The following table shows the <emph>z-Test</emph> for the data series abo
 msgstr "Naslednja tabela prikazuje <emph>z-preizkus</emph> za zgornji niz:"
 
 #: statistics_test_z.xhp
-#, fuzzy
 msgctxt ""
 "statistics_test_z.xhp\n"
 "par_id1003710\n"
@@ -59870,7 +59834,6 @@ msgid "Observed Mean Difference"
 msgstr "Razlika stvarnih aritmetičnih sredin"
 
 #: statistics_test_z.xhp
-#, fuzzy
 msgctxt ""
 "statistics_test_z.xhp\n"
 "par_id1003890\n"
