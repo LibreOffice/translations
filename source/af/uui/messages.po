@@ -4,16 +4,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
 "POT-Creation-Date: 2020-02-10 17:55+0100\n"
-"PO-Revision-Date: 2019-06-19 18:40+0000\n"
-"Last-Translator: F Wolff <friedel@translate.org.za>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2020-05-15 19:39+0000\n"
+"Last-Translator: Paul Roos <iNetRoos@gmail.com>\n"
+"Language-Team: Afrikaans <https://weblate.documentfoundation.org/projects/libo_ui-master/uuimessages/af/>\n"
 "Language: af\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Accelerator-Marker: ~\n"
-"X-Generator: LibreOffice\n"
+"X-Generator: Weblate 3.10.3\n"
 "X-POOTLE-MTIME: 1560969657.000000\n"
 
 #. DLY8p
@@ -64,6 +64,13 @@ msgid ""
 "\n"
 "Are you certain that this file is a legacy document created many years ago?"
 msgstr ""
+"Waarskuwing!\n"
+"\n"
+"U probeer om 'n baie ongewone lêer ($(ARG2)),  te laai afkomstig van URL:\n"
+"\n"
+"$(ARG1)\n"
+"\n"
+"Is u seker dat hierdie lêer 'n ou dokument van jare gelede is?"
 
 #. v6bPE
 #: uui/inc/ids.hrc:45
@@ -349,7 +356,6 @@ msgstr "%PRODUCTNAME kan nie voorkom dat lêers oorgeskryf word terwyl hierdie v
 
 #. CUbSR
 #: uui/inc/ids.hrc:139
-#, fuzzy
 msgctxt "RID_UUI_ERRHDL"
 msgid ""
 "The file '$(ARG1)' is corrupt and therefore cannot be opened. %PRODUCTNAME can try to repair the file.\n"
@@ -361,9 +367,9 @@ msgid ""
 "\n"
 "Should %PRODUCTNAME repair the file?\n"
 msgstr ""
-"Die lêer '$(ARG1)' is korrup en kan daarom nie geopen word nie. %PRODUCTNAME kan die lêer probeer herstel.\n"
+"Die lêer '$(ARG1)' is korrup, daarom kan dit nie geopen word nie. %PRODUCTNAME kan die lêer probeer herstel.\n"
 "\n"
-"Die korrupsie kon voorkom omdat die dokument gemanipuleer is of vanweë strukturele skade vanweë dataoordrag.\n"
+"Die korrupsie kon die gevolg wees omdat die dokument gemanipuleer is of vanweë strukturele skade tydens data transmissie.\n"
 "\n"
 "Ons beveel aan dat u nie die inhoud van die herstelde dokument vertrou nie.\n"
 "Die makro's is vir hierdie dokument gedeaktiveer.\n"
@@ -422,19 +428,19 @@ msgstr "Die vorm bevat ongeldige data. Wil u steeds voortgaan?"
 #: uui/inc/ids.hrc:153
 msgctxt "RID_UUI_ERRHDL"
 msgid "The file $(ARG1) is locked by another user. Currently, another write access to this file cannot be granted."
-msgstr ""
+msgstr "Die lêer $(ARG1) is reeds gereserveer deur 'n ander gebruiker. Huidig, kan daar nie weer skryf toegang tot die lêer wees nie."
 
 #. k6aHT
 #: uui/inc/ids.hrc:155
 msgctxt "RID_UUI_ERRHDL"
 msgid "The file $(ARG1) is locked by yourself. Currently, another write access to this file cannot be granted."
-msgstr ""
+msgstr "Die lêer $(ARG1) is alreeds deur u gereserveer. Huidig, is 'n tweede skryftoegang nie moontlik nie."
 
 #. ZoUzb
 #: uui/inc/ids.hrc:157
 msgctxt "RID_UUI_ERRHDL"
 msgid "The file $(ARG1) is currently not locked by yourself."
-msgstr ""
+msgstr "Die lêer $(ARG1) is huidig nie gereserveer vir u gebruik nie."
 
 #. L9PCQ
 #: uui/inc/ids.hrc:159
@@ -443,6 +449,8 @@ msgid ""
 "The previously obtained lock for file $(ARG1) has expired.\n"
 "This can happen due to problems on the server managing the file lock. It cannot be guaranteed that write operations on this file will not overwrite changes done by other users!"
 msgstr ""
+"Die lêer $(ARG1) se reservering vir u gebruik, het verval.\n"
+"Dit kan gebeur as gevolg van probleme op die bediener wat die lêerslot reserveer. Dit kan nie gewaarborg word dat skryfbewerkings op hierdie lêer nie die veranderinge wat deur ander gebruikers aangebring is, sal oorskryf nie!"
 
 #. gZzEy
 #: uui/inc/ids.hrc:161
@@ -453,6 +461,10 @@ msgid ""
 "\n"
 " $(ARG1)."
 msgstr ""
+"Komponent kan nie gelaai word nie, moontlik agv. 'n onsuksesvolle installasie.\n"
+"Volledige foutboodskap: \n"
+"\n"
+" $(ARG1)."
 
 #. vHe5t
 #: uui/inc/ids.hrc:166
@@ -540,7 +552,7 @@ msgstr "Tik wagwoord in om lêer te redigeeer: \n"
 #: uui/inc/strings.hrc:27
 msgctxt "STR_ENTER_SIMPLE_PASSWORD"
 msgid "Enter password: "
-msgstr "Tik wagwoord in:"
+msgstr "Tik wagwoord in: "
 
 #. UTuR2
 #: uui/inc/strings.hrc:28
@@ -648,7 +660,7 @@ msgstr "Dokument kon nie gesluit word nie"
 #: uui/inc/strings.hrc:46
 msgctxt "STR_LOCKFAILED_MSG"
 msgid "The lock file could not be created for exclusive access by %PRODUCTNAME, due to missing permission to create a lock file on that file location or lack of free disk space."
-msgstr ""
+msgstr "Skepping van die sluitlêer (vir eksklusiewe toegang) deur % PRODUCTNAME faal, weens: of die ontbrekende magtiging om 'n sluitlêer in daardie lêerlokasie te kan skep, of onvoldoende vrye skyfspasie."
 
 #. CaBXF
 #: uui/inc/strings.hrc:47
@@ -672,6 +684,11 @@ msgid ""
 "\n"
 "Open document read-only or open a copy of the document for editing.$(ARG3)"
 msgstr ""
+"Dokument lêer '$(ARG1)' is gesluit vir redigering deur:\n"
+"\n"
+"$(ARG2)\n"
+"\n"
+"Maak die dokument oop vir lees-alleen of maak 'n kopie van die dokument oop vir redigering. $(ARG3)"
 
 #. VF7vT
 #: uui/inc/strings.hrc:51
@@ -680,6 +697,8 @@ msgid ""
 "\n"
 "You may also ignore the file locking and open the document for editing."
 msgstr ""
+"\n"
+"U kan ook die lêersluiting ignoreer en die dokument oopmaak vir redigering."
 
 #. tc7YZ
 #: uui/inc/strings.hrc:52
@@ -755,6 +774,11 @@ msgid ""
 "\n"
 "You may try to ignore the file locking and overwrite the existing document."
 msgstr ""
+"Dokumentlêer '$ (ARG1)' is gesluit vir redigering deur:\n"
+"\n"
+"$ (ARG2)\n"
+"\n"
+"U kan die lêer sluiting probeer ignoreer en daarna die bestaande dokument oorskryf."
 
 #. 8JFLZ
 #: uui/inc/strings.hrc:63
@@ -775,6 +799,8 @@ msgid ""
 "A file with the name \"%NAME\" already exists in the location \"%FOLDER\".\n"
 "Choose Replace to overwrite the existing file or provide a new name."
 msgstr ""
+"'n Lêer met die naam '% NAME ' bestaan alreeds in '% FOLDER '.\n"
+"Kies Vervang om die bestaande lêer te oorskryf of verskaf 'n nuwe lêernaam."
 
 #. 3bJvA
 #: uui/inc/strings.hrc:67
@@ -783,6 +809,8 @@ msgid ""
 "A file with the name \"%NAME\" already exists in the location \"%FOLDER\".\n"
 "Please enter a new name."
 msgstr ""
+"'n Lêer met die naam '% NAME ' bestaan alreeds in '% FOLDER '.\n"
+"Verskaf 'n nuwe lêernaam asseblief."
 
 #. Bapqc
 #: uui/inc/strings.hrc:68
@@ -830,7 +858,7 @@ msgstr "Slotlêer is beskadig"
 #: uui/inc/strings.hrc:77
 msgctxt "STR_LOCKCORRUPT_MSG"
 msgid "The lock file is corrupted and probably empty. Opening the document read-only and closing it again removes the corrupted lock file."
-msgstr ""
+msgstr "Die slotlêer is beskadig en waarskynlik leeg. Sou u die dokument leesalleen oopmaak en weer toemaak, word die beskadigde slotlêer verwyder."
 
 #. fKEYB
 #: uui/inc/strings.hrc:78
@@ -842,60 +870,55 @@ msgstr "Open ~leesalleen"
 #: uui/uiconfig/ui/authfallback.ui:8
 msgctxt "authfallback|AuthFallbackDlg"
 msgid "Authentication Code"
-msgstr ""
+msgstr "Verifikasiekode"
 
 #. oHHac
 #: uui/uiconfig/ui/authfallback.ui:113
 msgctxt "authfallback|label1"
 msgid "Enter the 6 digit PIN:"
-msgstr ""
+msgstr "U moet 'n 6 syfer PIN gee:"
 
 #. vkXiS
 #: uui/uiconfig/ui/filterselect.ui:16
-#, fuzzy
 msgctxt "filterselect|FilterSelectDialog"
 msgid "Filter Selection"
-msgstr "Filterseleksie"
+msgstr "Filter seleksie"
 
 #. 8o9Bq
 #: uui/uiconfig/ui/logindialog.ui:8
 msgctxt "logindialog|LoginDialog"
 msgid "Authentication Required"
-msgstr ""
+msgstr "Verifikasie is Nodig"
 
 #. SjxPP
 #: uui/uiconfig/ui/logindialog.ui:83
 msgctxt "logindialog|syscreds"
 msgid "_Use system credentials"
-msgstr ""
+msgstr "_Gebruik stelsel bona fides"
 
 #. J7CWF
 #: uui/uiconfig/ui/logindialog.ui:99
-#, fuzzy
 msgctxt "logindialog|remember"
 msgid "_Remember password"
-msgstr "Tik wagwoord in"
+msgstr "_Onthou die wagwoord"
 
 #. pryAC
 #: uui/uiconfig/ui/logindialog.ui:129
-#, fuzzy
 msgctxt "logindialog|accountft"
 msgid "A_ccount:"
 msgstr "Rekening"
 
 #. QccHg
 #: uui/uiconfig/ui/logindialog.ui:143
-#, fuzzy
 msgctxt "logindialog|passwordft"
 msgid "Pass_word:"
 msgstr "Wagwoord:"
 
 #. NF3CG
 #: uui/uiconfig/ui/logindialog.ui:182
-#, fuzzy
 msgctxt "logindialog|nameft"
 msgid "_User name:"
-msgstr "~Gebruikernaam:"
+msgstr "_Gebruikernaam:"
 
 #. mD36F
 #: uui/uiconfig/ui/logindialog.ui:196
@@ -904,6 +927,8 @@ msgid ""
 "Enter user name and password for:\n"
 "“%2” on %1"
 msgstr ""
+"Tik gebruikernaam en wagwoord in vir:\n"
+"“%2” op %1"
 
 #. kRDiF
 #: uui/uiconfig/ui/logindialog.ui:210
@@ -912,6 +937,8 @@ msgid ""
 "Wrong user name and password for:\n"
 "“%2” on %1"
 msgstr ""
+"Verkeerde gebruikersnaam en/of wagwoord vir:\n"
+"\"%2\" op \"%1\""
 
 #. ARsSU
 #: uui/uiconfig/ui/logindialog.ui:224
@@ -920,6 +947,8 @@ msgid ""
 "Wrong user name and password for:\n"
 "%1"
 msgstr ""
+"Verkeerde gebruikersnaam en/of wagwoord vir :\n"
+"%1"
 
 #. WJkga
 #: uui/uiconfig/ui/logindialog.ui:238
@@ -928,19 +957,20 @@ msgid ""
 "Enter user name and password for:\n"
 "%1"
 msgstr ""
+"Tik asb. gebruikersnaam en/of wagwoord vir :\n"
+"%1"
 
 #. FGAvy
 #: uui/uiconfig/ui/logindialog.ui:252
 msgctxt "logindialog|errorft"
 msgid "Message from server:"
-msgstr ""
+msgstr "Kennisgewing vanaf  bediener:"
 
 #. Q7Cb9
 #: uui/uiconfig/ui/macrowarnmedium.ui:7
-#, fuzzy
 msgctxt "macrowarnmedium|MacroWarnMedium"
 msgid "%PRODUCTNAME - Security Warning"
-msgstr "%PRODUCTNAME-sekuriteitswaarskuwing"
+msgstr "%PRODUCTNAME-Sekerheidswaarskuwing"
 
 #. xCZst
 #: uui/uiconfig/ui/macrowarnmedium.ui:13
@@ -950,51 +980,48 @@ msgid ""
 "\n"
 "Macros may contain viruses. Disabling macros for a document is always safe. If you disable macros you may lose functionality provided by the document macros."
 msgstr ""
+"Die dokument bevat makros.\n"
+"\n"
+"Makro's kan virusse bevat. Makro's vir 'n dokument deaktiveer is altyd veilig. As u makros deaktiveer, kan u funksionaliteit verloor wat deur die dokumentmakros voorsien word."
 
 #. svTn6
 #: uui/uiconfig/ui/macrowarnmedium.ui:27
-#, fuzzy
 msgctxt "macrowarnmedium|cancel"
 msgid "_Disable Macros"
 msgstr "Deaktiveer makro's"
 
 #. o4c9e
 #: uui/uiconfig/ui/macrowarnmedium.ui:43
-#, fuzzy
 msgctxt "macrowarnmedium|ok"
 msgid "_Enable Macros"
 msgstr "Aktiveer makro's"
 
 #. tYAFs
 #: uui/uiconfig/ui/macrowarnmedium.ui:88
-#, fuzzy
 msgctxt "macrowarnmedium|descr1Label"
 msgid "The document contains document macros signed by:"
 msgstr "Die dokument bevat dokumentmakro's wat onderteken is deur:"
 
 #. SBMFJ
 #: uui/uiconfig/ui/macrowarnmedium.ui:97
-#, fuzzy
 msgctxt "macrowarnmedium|alwaysTrustCheckbutton"
 msgid "_Always trust macros from this source"
-msgstr "Vertrou altyd makro's uit hierdie bron"
+msgstr "Vertrou altyd makro's vanuit hierdie bron"
 
 #. hWGP7
 #: uui/uiconfig/ui/macrowarnmedium.ui:128
-#, fuzzy
 msgctxt "macrowarnmedium|viewSignsButton"
 msgid "_View Signatures…"
-msgstr "Bekyk handtekeninge..."
+msgstr "Bekyk handtekeninge…"
 
 #. BABeG
 #: uui/uiconfig/ui/masterpassworddlg.ui:8
 msgctxt "masterpassworddlg|MasterPasswordDialog"
 msgid "Enter Master Password"
-msgstr ""
+msgstr "Enter Master-Wagwoord"
 
 #. REFvG
 #: uui/uiconfig/ui/masterpassworddlg.ui:90
-#, fuzzy
 msgctxt "masterpassworddlg|label1"
 msgid "_Enter password:"
 msgstr "Tik wagwoord in"
@@ -1003,7 +1030,7 @@ msgstr "Tik wagwoord in"
 #: uui/uiconfig/ui/password.ui:8
 msgctxt "password|PasswordDialog"
 msgid "Set Password"
-msgstr ""
+msgstr "Stel Wagwoord"
 
 #. ioiyr
 #: uui/uiconfig/ui/setmasterpassworddlg.ui:8
@@ -1057,7 +1084,7 @@ msgstr "Hernoem"
 #: uui/uiconfig/ui/sslwarndialog.ui:8
 msgctxt "sslwarndialog|SSLWarnDialog"
 msgid "Security Warning: "
-msgstr "Sekuriteitswaarskuwing:"
+msgstr "Sekuriteitswaarskuwing: "
 
 #. e7vJt
 #: uui/uiconfig/ui/sslwarndialog.ui:25
