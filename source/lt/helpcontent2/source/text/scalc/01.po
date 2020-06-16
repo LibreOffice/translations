@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2020-05-27 11:43+0200\n"
-"PO-Revision-Date: 2020-05-12 17:16+0000\n"
+"POT-Creation-Date: 2020-06-10 11:34+0200\n"
+"PO-Revision-Date: 2020-06-16 20:22+0000\n"
 "Last-Translator: eglejasu <egle.jasute@gmail.com>\n"
 "Language-Team: Lithuanian <https://weblate.documentfoundation.org/projects/libo_help-master/textscalc01/lt/>\n"
 "Language: lt\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n % 10 == 1 && (n % 100 < 11 || n % 100 > 19)) ? 0 : ((n % 10 >= 2 && n % 10 <= 9 && (n % 100 < 11 || n % 100 > 19)) ? 1 : 2);\n"
 "X-Accelerator-Marker: ~\n"
-"X-Generator: LibreOffice\n"
+"X-Generator: Weblate 3.10.3\n"
 "X-POOTLE-MTIME: 1564863514.000000\n"
 
 #. sZfWF
@@ -5830,14 +5830,14 @@ msgctxt ""
 msgid "<ahelp hid=\"HID_AAI_FUNC_AMORDEGRC\">Calculates the amount of depreciation for a settlement period as degressive amortization.</ahelp> Unlike AMORLINC, a depreciation coefficient that is independent of the depreciable life is used here."
 msgstr "<ahelp hid=\"HID_AAI_FUNC_AMORDEGRC\">Apskaičiuoja nuvertėjimą atsiskaitymo terminui mažėjant amortizacijai.</ahelp> Kitaip nei AMORLINC, nepriklausomas nuo nuvertėjimo gyvenimo čia yra naudojamas nuvertėjimo koeficientas."
 
-#. DEtMa
+#. G5ero
 #: 04060103.xhp
 msgctxt ""
 "04060103.xhp\n"
 "par_id3147427\n"
 "help.text"
-msgid "AMORDEGRC(Cost; DatePurchased; FirstPeriod; Salvage; Period; Rate[; Basis])"
-msgstr ""
+msgid "AMORDEGRC(Cost; DatePurchased; FirstPeriod; Salvage; Period; Rate [; Basis])"
+msgstr "AMORDEGRC(kaina; įsigijimo data; pirmais laikotarpis; likusi vertė; laikotarpis; norma [; naudojamas dienos nustatymo metodas])"
 
 #. bA2pT
 #: 04060103.xhp
@@ -5920,14 +5920,14 @@ msgctxt ""
 msgid "<ahelp hid=\"HID_AAI_FUNC_AMORLINC\">Calculates the amount of depreciation for a settlement period as linear amortization. If the capital asset is purchased during the settlement period, the proportional amount of depreciation is considered.</ahelp>"
 msgstr "<ahelp hid=\"HID_AAI_FUNC_AMORLINC\">Apskaičiuoja nuvertėjimo kiekį atsiskaitymo laikotarpiui kaip linijinę amortizaciją. Jei Kapitalinis turtas yra nupirktas atsiskaitymo laikotarpį, proporcinis nuvertėjimas yra aptariamas.</ahelp>"
 
-#. jD9JZ
+#. 4PnLu
 #: 04060103.xhp
 msgctxt ""
 "04060103.xhp\n"
 "par_id3147363\n"
 "help.text"
-msgid "AMORLINC(Cost; DatePurchased; FirstPeriod; Salvage; Period; Rate[; Basis])"
-msgstr ""
+msgid "AMORLINC(Cost; DatePurchased; FirstPeriod; Salvage; Period; Rate [; Basis])"
+msgstr "AMORLINC(Vertė; įsigijimo data; pirmasis laikotarpis; likusi vertė; laikotarpis; norma [; naudojamas dienos nustatymo metodas])"
 
 #. PsFjE
 #: 04060103.xhp
@@ -6019,14 +6019,14 @@ msgctxt ""
 msgid "<ahelp hid=\"HID_AAI_FUNC_ACCRINT\">Calculates the accrued interest of a security in the case of periodic payments.</ahelp>"
 msgstr "<ahelp hid=\"HID_AAI_FUNC_ACCRINT\">Apskaičiuojamos sukauptos vertybinių popierių palūkanos už periodinius mokėjimus.</ahelp>"
 
-#. yGdCf
+#. XHQ2B
 #: 04060103.xhp
 msgctxt ""
 "04060103.xhp\n"
 "par_id3159092\n"
 "help.text"
-msgid "ACCRINT(Issue; FirstInterest; Settlement; Rate; [Par]; Frequency[; Basis])"
-msgstr ""
+msgid "ACCRINT(Issue; FirstInterest; Settlement; Rate; [Par]; Frequency [; Basis])"
+msgstr "ACCRINT(išleidimas; pirmosios palūkanos; mokėjimas; norma; [vertė]; dažnis [; Naudojamas datos nustatymo metodas])"
 
 #. PKp6i
 #: 04060103.xhp
@@ -6064,14 +6064,23 @@ msgctxt ""
 msgid "<emph>Rate</emph> (required) is the annual nominal rate of interest (coupon interest rate)"
 msgstr "<emph>Norma</emph> (privalomas) yra metinė nominali palūkanų norma (atkarpos palūkanų norma)"
 
-#. E6ARG
+#. cAMCT
 #: 04060103.xhp
 msgctxt ""
 "04060103.xhp\n"
 "par_id3156445\n"
 "help.text"
-msgid "<emph>Par</emph> (optional) is the par value of the security."
-msgstr "<emph>Vertė</emph> (papildomas) yra nominalioji vertybinių popierių vertė."
+msgid "<emph>Par</emph> (optional) is the par value of the security. If omitted, a default value of 1000 is used."
+msgstr "<emph>Vertė</emph> (papildomas) saugumo parametras. Jei praleista, tai naudojama numatytoji reikšmė  1000."
+
+#. Ne2tH
+#: 04060103.xhp
+msgctxt ""
+"04060103.xhp\n"
+"par_id961591171682507\n"
+"help.text"
+msgid "We recommend that you always specify the value that you require for ACCRINT’s <emph>Par</emph> argument, rather than allowing Calc to apply an arbitrary default. This will make your formula easier to understand and easier to maintain."
+msgstr "Rekomenduojama visada nurodyti funkcijos ACCRINT parametro <emph>vertės</emph> reikšmę, net jei leidžiate skaičiuokliai taikyti sutartą numatytą reikšmę. Tai leis lengviau suprasti ir tvarkyti formulę."
 
 #. Vobjm
 #: 04060103.xhp
@@ -6127,14 +6136,14 @@ msgctxt ""
 msgid "<ahelp hid=\"HID_AAI_FUNC_ACCRINTM\">Calculates the accrued interest of a security in the case of one-off payment at the settlement date.</ahelp>"
 msgstr "<ahelp hid=\"HID_AAI_FUNC_ACCRINTM\">Apskaičiuoja vertybinių popierių vienkartinio mokėjimo iki atsiskaitymo dienos sukauptas palūkanas.</ahelp>"
 
-#. zFkiX
+#. rrfir
 #: 04060103.xhp
 msgctxt ""
 "04060103.xhp\n"
 "par_id3147074\n"
 "help.text"
-msgid "ACCRINTM(Issue; Settlement; Rate[; Par][; Basis])"
-msgstr ""
+msgid "ACCRINTM(Issue; Settlement; Rate [; Par [; Basis]])"
+msgstr "ACCRINTM(išleidimas; mokėjimas; norma [; vertė [; Naudojamas dienos nustatymo metodas]])"
 
 #. pTobQ
 #: 04060103.xhp
@@ -6217,14 +6226,14 @@ msgctxt ""
 msgid "<ahelp hid=\"HID_AAI_FUNC_RECEIVED\">Calculates the amount received that is paid for a fixed-interest security at a given point in time.</ahelp>"
 msgstr "<ahelp hid=\"HID_AAI_FUNC_RECEIVED\">Apskaičiuoja gautą sumą, kuri tam tikru momentu mokama už fiksuotą vertybinių popierių palūkanų vertę.</ahelp>"
 
-#. BiDCz
+#. D67BM
 #: 04060103.xhp
 msgctxt ""
 "04060103.xhp\n"
 "par_id3145362\n"
 "help.text"
-msgid "RECEIVED(Settlement; Maturity; Investment; Discount[; Basis])"
-msgstr "RECEIVED(mėkėjimas; terminas; investicija; nuolaida[; naudojamos dienos nustatymo metodas])"
+msgid "RECEIVED(Settlement; Maturity; Investment; Discount [; Basis])"
+msgstr "RECEIVED(mokėjimas; terminas; investicija; nuolaida [; Naudojamas dienos nustatymo metodas])"
 
 #. oHAVz
 #: 04060103.xhp
@@ -6334,14 +6343,14 @@ msgctxt ""
 msgid "Enter these values either as numbers, expressions or references. If, for example, interest is paid annually at 8%, but you want to use month as your period, enter 8%/12 under <emph>Rate</emph> and <item type=\"productname\">%PRODUCTNAME</item> Calc with automatically calculate the correct factor."
 msgstr "Įveskite šias reikšmes kaip skaičius, išraiškas arba nuorodas. Jei palūkanos yra mokamos 8% per metus, bet jūs norite mokėti kiekvieną mėnesį, prie <emph>Normos</emph> įveskite 8%/12 ir <item type=\"productname\">„%PRODUCTNAME“</item> Skaičiuoklė automatiškai apskaičiuos mėnesinį palūkanų mokesti."
 
-#. uiDaD
+#. 4cBxj
 #: 04060103.xhp
 msgctxt ""
 "04060103.xhp\n"
 "par_id3150395\n"
 "help.text"
-msgid "PV(Rate; NPer; Pmt[; FV][; Type])"
-msgstr ""
+msgid "PV(Rate; NPer; Pmt [; FV [; Type]])"
+msgstr "PV(norma; MOKL; MKS [; BR [; tipas]])"
 
 #. JrCA6
 #: 04060103.xhp
@@ -7009,14 +7018,14 @@ msgctxt ""
 msgid "<ahelp hid=\"HID_AAI_FUNC_DISC\">Calculates the allowance (discount) of a security as a percentage.</ahelp>"
 msgstr "<ahelp hid=\"HID_AAI_FUNC_DISC\">Apskaičiuoja vertybinių popierių nuolaidą procentais.</ahelp>"
 
-#. fBGBA
+#. nkAEs
 #: 04060103.xhp
 msgctxt ""
 "04060103.xhp\n"
 "par_id3149756\n"
 "help.text"
-msgid "DISC(Settlement; Maturity; Price; Redemption[; Basis])"
-msgstr "DISC(mokėjimas; terminas; kaina; išpirkimas[; naudojamas dienos nustatymo metodas])"
+msgid "DISC(Settlement; Maturity; Price; Redemption [; Basis])"
+msgstr "DISC(mokėjimas; terminas; kaina; išpirkimas [; Naudojamas dienos nustatymo metodas])"
 
 #. Uyj29
 #: 04060103.xhp
@@ -7099,14 +7108,14 @@ msgctxt ""
 msgid "<ahelp hid=\"HID_AAI_FUNC_DURATION\">Calculates the duration of a fixed interest security in years.</ahelp>"
 msgstr "<ahelp hid=\"HID_AAI_FUNC_DURATION\">Apskaičiuoja fiksuotų palūkanų vertybinių popierių laikotarpį metais.</ahelp>"
 
-#. 7ixum
+#. voaL4
 #: 04060103.xhp
 msgctxt ""
 "04060103.xhp\n"
 "par_id3153373\n"
 "help.text"
-msgid "DURATION(Settlement; Maturity; Coupon; Yield; Frequency[; Basis])"
-msgstr "DURATION(mokėjimas; terminas; kuponas; pajamos; dažnis[; naudojamas dienos nustatymo metodas])"
+msgid "DURATION(Settlement; Maturity; Coupon; Yield; Frequency [; Basis])"
+msgstr "DURATION(mokėjimas; terminas; kuponas; pajamos; dažnis [; Naudojamas dienos nustatymo metodas])"
 
 #. JeeVp
 #: 04060103.xhp
@@ -7360,14 +7369,14 @@ msgctxt ""
 msgid "Use this form of depreciation if you require a higher initial depreciation value as opposed to linear depreciation. The depreciation value gets less with each period and is usually used for assets whose value loss is higher shortly after purchase (for example, vehicles, computers). Please note that the book value will never reach zero under this calculation type."
 msgstr "Ši funkcija naudojama, kai pradžioje reikalinga didesnė nusidėvėjimo vertė, o ne naudojama linijinis nusidėvėjimas. Nusidėvėjimo vertė mažėja kiekvieną laikotarpį ir paprastai naudojama turtui, kurio vertė sumažėja iškart po įsigijimo (pvz., transporto priemonės, kompiuterio). Atkreipkite dėmesį, kad turto vertė niekada nepasieks nulio pagal šį skaičiavimo algoritmą."
 
-#. EV3DT
+#. veQBT
 #: 04060103.xhp
 msgctxt ""
 "04060103.xhp\n"
 "par_id3166452\n"
 "help.text"
-msgid "DDB(Cost; Salvage; Life; Period[; Factor])"
-msgstr ""
+msgid "DDB(Cost; Salvage; Life; Period [; Factor])"
+msgstr "DDB(vertė; likutinė vertė; naudijimo laikotarpis; laikotarpis [; koeficientas])"
 
 #. VKnDB
 #: 04060103.xhp
@@ -7468,14 +7477,14 @@ msgctxt ""
 msgid "This form of depreciation is used if you want to get a higher depreciation value at the beginning of the depreciation (as opposed to linear depreciation). The depreciation value is reduced with every depreciation period by the depreciation already deducted from the initial cost."
 msgstr "Šis nusidėvėjimo skaičiavimo metodas naudojamas, kai didesnis nusidėvėjimas skaičiuojamas laikotarpio pradžioje (priešingai nei tiesiniame nusidėvėjime). Nusidėvėjimo vertė kiekviename nusidėvėjimo laikotarpyje sumažinama nusidėvėjimo suma atimta iš pradinės vertės."
 
-#. EDXF8
+#. ExEAy
 #: 04060103.xhp
 msgctxt ""
 "04060103.xhp\n"
 "par_id3153349\n"
 "help.text"
-msgid "DB(Cost; Salvage; Life; Period[; Month])"
-msgstr ""
+msgid "DB(Cost; Salvage; Life; Period [; Month])"
+msgstr "DB(vertė; likutinė vertė; naudojimo laikotarpis; laikotarpis [; mėnuo])"
 
 #. caSta
 #: 04060103.xhp
@@ -7585,14 +7594,14 @@ msgctxt ""
 msgid "If the payments take place at irregular intervals, use the <link href=\"text/scalc/01/04060118.xhp#xirr\" name=\"XIRR\">XIRR</link> function."
 msgstr "Jei mokėjimai nereguliarūs, naudokite <link href=\"text/scalc/01/04060118.xhp#xirr\" name=\"XIRR\">XIRR</link> funkciją."
 
-#. zWTAW
+#. MXALn
 #: 04060103.xhp
 msgctxt ""
 "04060103.xhp\n"
 "par_id3155427\n"
 "help.text"
-msgid "IRR(Values[; Guess])"
-msgstr ""
+msgid "IRR(Values [; Guess])"
+msgstr "IRR(reikšmės [; prognozė])"
 
 #. o9R77
 #: 04060103.xhp
@@ -8341,14 +8350,14 @@ msgctxt ""
 msgid "<ahelp hid=\"HID_FUNC_IFERROR\">Returns the value if the cell does not contains an error value, or the alternative value if it does.</ahelp>"
 msgstr "<ahelp hid=\"HID_FUNC_IFERROR\">Grąžina langelio reikšmę, jei langelyje nėra klaidos arba alternatyvią reikšmę, jei langelyje yra klaida.</ahelp>"
 
-#. ZUEHF
+#. LREwJ
 #: 04060104.xhp
 msgctxt ""
 "04060104.xhp\n"
 "par_id31531551\n"
 "help.text"
-msgid "IFERROR(Value;Alternate_value)"
-msgstr "IFERROR(Reikšmė;Alternatyvi_reikšmė)"
+msgid "IFERROR(Value; Alternate_value)"
+msgstr "IFERROR(reikšmė; alternatyvi reikšmė)"
 
 #. wJRYc
 #: 04060104.xhp
@@ -8890,14 +8899,14 @@ msgctxt ""
 msgid "<ahelp hid=\"HID_FUNC_IFNA\">Returns the value if the cell does not contains the #N/A (value not available) error value, or the alternative value if it does.</ahelp>"
 msgstr "<ahelp hid=\"HID_FUNC_IFNA\">Grąžina reikšmę, jei langelyje nėra #N/A (reikšmė negalima) klaidos arba alternatyvią reikšmę, jei tokia nurodyta.</ahelp>"
 
-#. pykHc
+#. hQbWy
 #: 04060104.xhp
 msgctxt ""
 "04060104.xhp\n"
 "par_id31537481\n"
 "help.text"
-msgid "IFNA(Value;Alternate_value)"
-msgstr "IFNA(Reikšmė;Alternatyvi_reikšmė)"
+msgid "IFNA(Value; Alternate_value)"
+msgstr "IFNA(reikšmė; alternatyvi reikšmė)"
 
 #. 6oj7E
 #: 04060104.xhp
@@ -9448,14 +9457,14 @@ msgctxt ""
 msgid "<ahelp hid=\"HID_FUNC_ZELLE\">Returns information on address, formatting or contents of a cell.</ahelp>"
 msgstr "<ahelp hid=\"HID_FUNC_ZELLE\">Grąžina informaciją apie langelio koordinates, turinio formatavimą.</ahelp>"
 
-#. RWBPC
+#. Vwajg
 #: 04060104.xhp
 msgctxt ""
 "04060104.xhp\n"
 "par_id3147355\n"
 "help.text"
-msgid "CELL(\"InfoType\"[; Reference])"
-msgstr ""
+msgid "CELL(\"InfoType\" [; Reference])"
+msgstr "CELL(\"tipas\" [; nuoroda])"
 
 #. wjBKt
 #: 04060104.xhp
@@ -10195,14 +10204,14 @@ msgctxt ""
 msgid "<ahelp hid=\"HID_FUNC_WENN\">Specifies a logical test to be performed.</ahelp>"
 msgstr "<ahelp hid=\"HID_FUNC_WENN\">Nurodo koks loginis testas turi būti įvykdytas.</ahelp>"
 
-#. qT9mo
+#. ABZhn
 #: 04060105.xhp
 msgctxt ""
 "04060105.xhp\n"
 "par_id3154558\n"
 "help.text"
-msgid "IF(Test[; ThenValue][; OtherwiseValue])"
-msgstr ""
+msgid "IF(Test [; ThenValue [; OtherwiseValue]])"
+msgstr "IF(tekstas [; tai reikšmė [; kitu atveju reikšmė]])"
 
 #. JnjcT
 #: 04060105.xhp
@@ -11779,14 +11788,14 @@ msgctxt ""
 msgid "EXP"
 msgstr "EXP"
 
-#. KCAqu
+#. N7FBG
 #: 04060106.xhp
 msgctxt ""
 "04060106.xhp\n"
 "par_id3150592\n"
 "help.text"
-msgid "<ahelp hid=\"HID_FUNC_EXP\">Returns e raised to the power of a number.</ahelp> The constant e has a value of approximately 2.71828182845904."
-msgstr "<ahelp hid=\"HID_FUNC_EXP\">Grąžina e pakelto nurodytu laipsnio rodikliu reikšmę.</ahelp> Konstantos e reikšmė apytiksliai yra 2,71828182845904."
+msgid "<ahelp hid=\"HID_FUNC_EXP\">Returns <literal>e</literal> raised to the power of a number.</ahelp> The constant <literal>e</literal> has a value of approximately 2.71828182845904."
+msgstr "<ahelp hid=\"HID_FUNC_EXP\">Grąžina <literal>e</literal> pakelta tam tikru laipsnio rodikliu.</ahelp> Konstantos <literal>e</literal>  reikšmė lygy 2,71828182845904."
 
 #. KxMFL
 #: 04060106.xhp
@@ -11806,14 +11815,14 @@ msgctxt ""
 msgid "<emph>Number</emph> is the power to which e is to be raised."
 msgstr "<emph>Skaičius</emph> yra laipsnio rodiklis, kuriuo keliamas e."
 
-#. b8tDe
+#. LfQsb
 #: 04060106.xhp
 msgctxt ""
 "04060106.xhp\n"
 "par_id3156340\n"
 "help.text"
-msgid "<item type=\"input\">=EXP(1)</item> returns 2.71828182845904, the mathematical constant e to Calc's accuracy."
-msgstr "<item type=\"input\">=EXP(1)</item> grąžina 2,71828182845904 pagal skaičiuoklės tikslumą."
+msgid "<item type=\"input\">=EXP(1)</item> returns 2.71828182845904, the mathematical constant <literal>e</literal> to Calc's accuracy."
+msgstr "<item type=\"input\">=EXP(1)</item> grąžina 2.71828182845904, matematinės konstantos <literal>e</literal> reikšmę suapvalintą pagal skaičiuoklės parinktis."
 
 #. MSQJQ
 #: 04060106.xhp
@@ -12580,14 +12589,14 @@ msgctxt ""
 msgid "<ahelp hid=\"HID_FUNC_LOG\">Returns the logarithm of a number to the specified base.</ahelp>"
 msgstr "<ahelp hid=\"HID_FUNC_LOG\">Grąžina skaičiaus logaritmo nurodytu pagrindu reikšmę. </ahelp>"
 
-#. WE376
+#. ShWCR
 #: 04060106.xhp
 msgctxt ""
 "04060106.xhp\n"
 "par_id3144732\n"
 "help.text"
-msgid "LOG(Number; Base)"
-msgstr "LOG(skaičius; pagrindas)"
+msgid "LOG(Number[; Base])"
+msgstr "LOG(skaičius[; pagrindas])"
 
 #. Eiqiq
 #: 04060106.xhp
@@ -12877,14 +12886,14 @@ msgctxt ""
 msgid "<ahelp hid=\".\">Sums the first terms of a power series.</ahelp>"
 msgstr "<ahelp hid=\".\">Laipsnių sekos suma.</ahelp>"
 
-#. FhwbB
+#. PffuD
 #: 04060106.xhp
 msgctxt ""
 "04060106.xhp\n"
 "par_id3152708\n"
 "help.text"
-msgid "SERIESSUM(x;n;m;coefficients) = coefficient_1*x^n + coefficient_2*x^(n+m) + coefficient_3*x^(n+2m) +...+ coefficient_i*x^(n+(i-1)m)"
-msgstr "SERIESSUM(x;n;m;koeficientai) = koeficientas_1*x^n + koeficientas_2*x^(n+m) + koeficientas_3*x^(n+2m) +...+ koeficientas_i*x^(n+(i-1)m)"
+msgid "SERIESSUM(x;n;m;c) = c<sub>1</sub>x<sup>n</sup> + c<sub>2</sub>x<sup>n+m</sup> + c<sub>3</sub>x<sup>n+2m</sup> + ... + c<sub>i</sub>x<sup>n + (i-1)m</sup>."
+msgstr "SERIESSUM(x;n;m;c) = c<sub>1</sub>x<sup>n</sup> + c<sub>2</sub>x<sup>n+m</sup> + c<sub>3</sub>x<sup>n+2m</sup> + ... + c<sub>i</sub>x<sup>n + (i-1)m</sup>."
 
 #. BM5eM
 #: 04060106.xhp
@@ -13237,14 +13246,14 @@ msgctxt ""
 msgid "<ahelp hid=\"HID_FUNC_RUNDEN\">Rounds a number to a certain number of decimal places.</ahelp>"
 msgstr "<ahelp hid=\"HID_FUNC_RUNDEN\"> Skaičius suapvalinamas iki nurodytos dešimtųjų skilties.</ahelp>"
 
-#. qcUKc
+#. p64i9
 #: 04060106.xhp
 msgctxt ""
 "04060106.xhp\n"
 "par_id3158182\n"
 "help.text"
-msgid "ROUND(Number; Count)"
-msgstr "ROUND(skaičius; kiekis)"
+msgid "ROUND(Number[; Count])"
+msgstr "ROUND(skaičius[; kiekis])"
 
 #. yE5Jb
 #: 04060106.xhp
@@ -13336,14 +13345,14 @@ msgctxt ""
 msgid "<ahelp hid=\"HID_FUNC_ABRUNDEN\">Rounds a number down, toward zero, to a certain precision.</ahelp>"
 msgstr "<ahelp hid=\"HID_FUNC_ABRUNDEN\">Suapvalina duotą skaičių iki mažesnioji artimiausio skaičiaus (link nulio) su nurodytu skaitmenų skaičiumi po dešimtainio skirtuko.</ahelp>"
 
-#. mJpd7
+#. uqe8Y
 #: 04060106.xhp
 msgctxt ""
 "04060106.xhp\n"
 "par_id3146051\n"
 "help.text"
-msgid "ROUNDDOWN(Number; Count)"
-msgstr "ROUNDDOWN(skaičius; kiekis)"
+msgid "ROUNDDOWN(Number[; Count])"
+msgstr "ROUNDDOWN(skaičius[; kiekis])"
 
 #. EXn4P
 #: 04060106.xhp
@@ -13426,14 +13435,14 @@ msgctxt ""
 msgid "<ahelp hid=\"HID_FUNC_AUFRUNDEN\">Rounds a number up, away from zero, to a certain precision.</ahelp>"
 msgstr "<ahelp hid=\"HID_FUNC_AUFRUNDEN\">Suapvalina duotą skaičių iki didesniojo artimiausio skaičiaus (nuo nulio) su nurodytu skaitmenų skaičiumi po dešimtainio skirtuko.</ahelp>"
 
-#. yz63F
+#. smgCC
 #: 04060106.xhp
 msgctxt ""
 "04060106.xhp\n"
 "par_id3163328\n"
 "help.text"
-msgid "ROUNDUP(Number; Count)"
-msgstr "ROUNDUP(skaičius; kiekis)"
+msgid "ROUNDUP(Number[; Count])"
+msgstr "ROUNDUP(skaičius[; kiekis])"
 
 #. x59Ls
 #: 04060106.xhp
@@ -13903,14 +13912,14 @@ msgctxt ""
 msgid "<ahelp hid=\"HID_FUNC_SUMMEWENN\">Adds the cells specified by a given criteria.</ahelp> This function is used to browse a range when you search for a certain value."
 msgstr "<ahelp hid=\"HID_FUNC_SUMMEWENN\">Sudeda langelių turinius pagal nurodytus kriterijus.</ahelp> Ši funkcija naudojama langelių srities naršymui, kai ieškoma tam tikrų reikšmių."
 
-#. Uy4kZ
+#. PcPNo
 #: 04060106.xhp
 msgctxt ""
 "04060106.xhp\n"
 "par_id3152028\n"
 "help.text"
-msgid "SUMIF(Range; Criteria; SumRange)"
-msgstr "SUMIF(sritis; kriterijus; sumos sritis)"
+msgid "SUMIF(Range; Criteria[; SumRange])"
+msgstr "SUMIF(blokas; kriterijus[; sumos blokas])"
 
 #. rYzXG
 #: 04060106.xhp
@@ -14425,14 +14434,14 @@ msgctxt ""
 msgid "<ahelp hid=\"HID_FUNC_UMRECHNEN\">Converts between old European national currency and to and from Euros.</ahelp>"
 msgstr "<ahelp hid=\"HID_FUNC_UMRECHNEN\">Konvertuoja senąsias Europos valstybių valiutas į eurus ir iš eurų.</ahelp>"
 
-#. S3ToS
+#. qh8S5
 #: 04060106.xhp
 msgctxt ""
 "04060106.xhp\n"
 "par_id3143748\n"
 "help.text"
-msgid "EUROCONVERT(Value; \"From_currency\"; \"To_currency\", full_precision, triangulation_precision)"
-msgstr "EUROCONVERT(reikšmė; \"iš_valiuta\"; \"į_valiuta\", visas_tikslumas, trigubas_tikslumas)"
+msgid "EUROCONVERT(Value; \"From_currency\"; \"To_currency\"[; full_precision][; triangulation_precision])"
+msgstr "EUROCONVERT(reikšmė; \"iš valiutos\"; \"į valiutą\"[; visa trupmena][; trianguliacijinis tikslumas])"
 
 #. 4KJUc
 #: 04060106.xhp
@@ -14911,14 +14920,14 @@ msgctxt ""
 msgid "<item type=\"input\">=SQRTPI(2)</item> returns the squareroot of (2PI), approximately 2.506628."
 msgstr "<item type=\"input\">=SQRTPI(2)</item> grąžina kvadratinę šaknį iš 2PI, apytiksliai 2,506628."
 
-#. TvMZY
+#. en4Ae
 #: 04060106.xhp
 msgctxt ""
 "04060106.xhp\n"
 "bm_id3164669\n"
 "help.text"
-msgid "<bookmark_value>random numbers; between limits</bookmark_value>  <bookmark_value>RANDBETWEEN function</bookmark_value>"
-msgstr "<bookmark_value>atsitiktiniai skaičiai; iš intervalo</bookmark_value>  <bookmark_value>RANDBETWEEN funkcija</bookmark_value>"
+msgid "<bookmark_value>random numbers; between limits</bookmark_value><bookmark_value>RANDBETWEEN function</bookmark_value>"
+msgstr "<bookmark_value>atsitiktiniai skaičiai; tarp ribų</bookmark_value><bookmark_value>RANDBETWEEN funkcija</bookmark_value>"
 
 #. vqzRX
 #: 04060106.xhp
@@ -14983,14 +14992,77 @@ msgctxt ""
 msgid "<item type=\"input\">=RANDBETWEEN(20;30)</item> returns an integer of between 20 and 30."
 msgstr "<item type=\"input\">=RANDBETWEEN(20;30)</item> grąžina sveikąjį skaičių tarp 20 ir 30."
 
-#. CBgxC
+#. Dmk3R
+#: 04060106.xhp
+msgctxt ""
+"04060106.xhp\n"
+"bm_id461590241346526\n"
+"help.text"
+msgid "<bookmark_value>random numbers non-volatile; between limits</bookmark_value><bookmark_value>RANDBETWEEN.NV function</bookmark_value>"
+msgstr "<bookmark_value>atsitiktinis liekamasis skaičius; intervale</bookmark_value><bookmark_value>RANDBETWEEN.NV funkcija</bookmark_value>"
+
+#. cgHiZ
+#: 04060106.xhp
+msgctxt ""
+"04060106.xhp\n"
+"hd_id171590240366277\n"
+"help.text"
+msgid "RANDBETWEEN.NV"
+msgstr "RANDBETWEEN.NV"
+
+#. Akjyr
+#: 04060106.xhp
+msgctxt ""
+"04060106.xhp\n"
+"par_id391590240473510\n"
+"help.text"
+msgid "<ahelp hid=\"HID_FUNC_RANDBETWEEN_NV\">Returns an non-volatile integer random number in a specified range.</ahelp>"
+msgstr "<ahelp hid=\"HID_FUNC_RANDBETWEEN_NV\">Grąžina liekamąjį sveikąjį intervalo atsitiktinį skaičių.</ahelp>"
+
+#. GTDa4
+#: 04060106.xhp
+msgctxt ""
+"04060106.xhp\n"
+"par_id181590240522012\n"
+"help.text"
+msgid "RANDBETWEEN.NV(Bottom; Top)"
+msgstr "RANDBETWEEN.NV(apatinis; viršutinis)"
+
+#. q82vw
+#: 04060106.xhp
+msgctxt ""
+"04060106.xhp\n"
+"par_id91590242400917\n"
+"help.text"
+msgid "Returns an non-volatile integer random number between integers <emph>Bottom</emph> and <emph>Top</emph> (both inclusive). A non-volatile function is not recalculated at new input events or pressing <keycode>F9</keycode>. However, the function is recalculated when pressing <keycode>F9</keycode> with the cursor on the cell containing the function, when opening the file, and when <emph>Top</emph> or <emph>Bottom</emph> are recalculated."
+msgstr "Grąžina liekamąjį sveiką skaičių tarp sveikųjų skaičių nusakančių <emph>apatinį</emph> ir <emph>viršutinį</emph> rėžį (abu įskaitant). Liekamoji funkcija yra neperskaičiuojama įvedus naujas reikšmes ar paspaudus klavišą <keycode>F9</keycode>. Tačiau funkcija perskaičiuojama, kai žymekliui esant langelyje su ta funkcija  paspaudžiamas <keycode>F9</keycode>, ir , kai atvertame faile yra perskaičiuoti <emph>viršutinis</emph> ir <emph>apatinis</emph> rėžiai."
+
+#. AngvN
+#: 04060106.xhp
+msgctxt ""
+"04060106.xhp\n"
+"par_id151590240999839\n"
+"help.text"
+msgid "<input>=RANDBETWEEN.NV(20;30)</input> returns a non-volatile integer between 20 and 30."
+msgstr "<input>=RANDBETWEEN.NV(20;30)</input> grąžina liekamąjį skaičių tarp 20 ir 30."
+
+#. cAQDh
+#: 04060106.xhp
+msgctxt ""
+"04060106.xhp\n"
+"par_id1001590241005601\n"
+"help.text"
+msgid "<input>=RANDBETWEEN.NV(A1;30)</input> returns a non-volatile integer between the value of cell A1 and 30. The function is recalculated when the contents of cell A1 change."
+msgstr "<input>=RANDBETWEEN.NV(A1;30)</input> grąžina liekamąjį sveikąjį skaičių tarp reikšmės langelyje A1 ir 30. Funkcija perskaičiuojama, kai keičiasi A1 langelio reikšmė."
+
+#. odp65
 #: 04060106.xhp
 msgctxt ""
 "04060106.xhp\n"
 "bm_id3164800\n"
 "help.text"
-msgid "<bookmark_value>RAND function</bookmark_value>  <bookmark_value>random numbers;between 0 and 1</bookmark_value>"
-msgstr "<bookmark_value>RAND funkcija</bookmark_value>  <bookmark_value>atsitiktiniai skaičiai;tarp 0 ir 1</bookmark_value>"
+msgid "<bookmark_value>RAND function</bookmark_value><bookmark_value>random numbers;between 0 and 1</bookmark_value>"
+msgstr "<bookmark_value>RAND funkcija</bookmark_value><bookmark_value> apvalina skaičius;tarp 0 ir 1</bookmark_value>"
 
 #. tTc7D
 #: 04060106.xhp
@@ -15028,14 +15100,41 @@ msgctxt ""
 msgid "This function produces a new random number each time Calc recalculates. To force Calc to recalculate manually press F9."
 msgstr "Ši funkcija grąžina kitą atsitiktinį skaičių kas kart, kai skaičiuoklė perskaičiuoja. Jei norite perskaičiuoti rankiniu būdu, spustelėkite F9."
 
-#. Bb7HL
+#. HAWnR
 #: 04060106.xhp
 msgctxt ""
 "04060106.xhp\n"
 "par_id9312417\n"
 "help.text"
-msgid "To generate random numbers which never recalculate, copy cells each containing =RAND(), and use <item type=\"menuitem\">Edit - Paste Special</item> (with <item type=\"menuitem\">Paste All</item> and <item type=\"menuitem\">Formulas</item> not marked and <item type=\"menuitem\">Numbers</item> marked)."
-msgstr "Jei norite sugeneruoti atsitiktinį skaičių, kuris nebūtų perskaičiuojamas, nukopijuokite langelius, kuriuose yra funkcija RAND() ir pasirinkite <item type=\"menuitem\">Taisa → Įdėti kitaip</item>. Atšaukite žymimųjų langelių <item type=\"menuitem\"> Viską</item> ir <item type=\"menuitem\"> Formules</item> pažymėjimą ir pažymėkite žymimąjį langelį <item type=\"menuitem\">Skaičius</item>"
+msgid "To generate random numbers which never recalculate, either:"
+msgstr "Jei norite sugeneruoti atsitiktinį skaičių, kuris neperskaičiuojamas arba:"
+
+#. Ap4DT
+#: 04060106.xhp
+msgctxt ""
+"04060106.xhp\n"
+"par_id451590242105253\n"
+"help.text"
+msgid "Copy cells each containing =RAND(), and use <menuitem>Edit - Paste Special</menuitem> (with <emph>Paste All</emph> and <emph>Formulas</emph> not marked and <emph>Numbers</emph> marked)."
+msgstr "Nukopijuokite langelius, kuriuose yra funkcija =RAND() ir pasirinkite <menuitem>Taisa → Įdėti kitaip</menuitem> (su nepažymėtomis parinktimis <emph>Įdėti viską</emph> ir <emph> Formulės</emph> ir pažymėta parinktimi <emph>Skaičiai</emph>)."
+
+#. zEFCC
+#: 04060106.xhp
+msgctxt ""
+"04060106.xhp\n"
+"par_id801590242114296\n"
+"help.text"
+msgid "Use the Fill Cell command with random numbers (<menuitem>Sheet - Fill Cells - Fill Random Numbers</menuitem>)."
+msgstr "Pasirinkite komandą Užpildyti langelius, jei norite užpildyti sritį atsitiktiniais skaičiais <menuitem>Lakštas → Užpildyti langelius → Užpildyti atsitiktiniais skaičiais</menuitem>)."
+
+#. o9wUN
+#: 04060106.xhp
+msgctxt ""
+"04060106.xhp\n"
+"par_id41590242118383\n"
+"help.text"
+msgid "Use the RAND.NV() function for non-volatile random numbers."
+msgstr "Jei norite užpildyti atsitiktiniais liekamaisiais skaičiais, naudokite RAND.NV()."
 
 #. BLkte
 #: 04060106.xhp
@@ -15045,6 +15144,60 @@ msgctxt ""
 "help.text"
 msgid "<item type=\"input\">=RAND()</item> returns a random number between 0 and 1."
 msgstr "<item type=\"input\">=RAND()</item> grąžina atsitiktinį skaičių tarp 0 ir 1."
+
+#. CqVpJ
+#: 04060106.xhp
+msgctxt ""
+"04060106.xhp\n"
+"bm_id341590241488944\n"
+"help.text"
+msgid "<bookmark_value>random numbers non-volatile;between 0 and 1</bookmark_value><bookmark_value>RAND.NV function</bookmark_value>"
+msgstr "<bookmark_value>atsitiktiniai liekamieji skaičiai; tarp 0 ir 1</bookmark_value><bookmark_value>RAND.NV funkcija</bookmark_value>"
+
+#. q9iLd
+#: 04060106.xhp
+msgctxt ""
+"04060106.xhp\n"
+"hd_id71590238179170\n"
+"help.text"
+msgid "RAND.NV"
+msgstr "RAND.NV"
+
+#. Fc2hv
+#: 04060106.xhp
+msgctxt ""
+"04060106.xhp\n"
+"par_id101590238875834\n"
+"help.text"
+msgid "<ahelp hid=\"HID_FUNC_RAND_NV\">Returns a non-volatile random number between 0 and 1.</ahelp>"
+msgstr "<ahelp hid=\"HID_FUNC_RAND_NV\">Grąžina liekamąjį atsitiktinį skaičių tarp 0 ir 1.</ahelp>"
+
+#. dchBL
+#: 04060106.xhp
+msgctxt ""
+"04060106.xhp\n"
+"par_id391590238945182\n"
+"help.text"
+msgid "RAND.NV()"
+msgstr "RAND.NV()"
+
+#. QARNV
+#: 04060106.xhp
+msgctxt ""
+"04060106.xhp\n"
+"par_id271590239748534\n"
+"help.text"
+msgid "This function produces a non-volatile random number on input. A non-volatile function is not recalculated at new input events. The function does not recalculate when pressing <keycode>F9</keycode>, except when the cursor is on the cell containing the function. The function is recalculated when opening the file."
+msgstr "Funkcija sugeneruoja liekamąjį atsitiktinį skaičių. Liekamoji funkcija neperskaičiuojama, kai atliekamas pakeitimas. Funkcija neperskaičiuojama ir kai spustelėjamas klavišas <keycode>F9</keycode>, išskyrus, kai žymeklis yra langelyje su funkcija. Funkcija perskaičiuojama, kai atveriamas failas."
+
+#. sCwno
+#: 04060106.xhp
+msgctxt ""
+"04060106.xhp\n"
+"par_id191590241215013\n"
+"help.text"
+msgid "<input>=RAND.NV()</input> returns a non-volatile random number between 0 and 1."
+msgstr "<input>=RAND.NV()</input> grąžina liekamąjį atsitiktinį skaičių tarp 0 ir 1."
 
 #. Zsp2R
 #: 04060107.xhp
@@ -16180,14 +16333,14 @@ msgctxt ""
 msgid "<ahelp hid=\"HID_FUNC_RGP\">Returns a table of statistics for a straight line that best fits a data set.</ahelp>"
 msgstr "<ahelp hid=\"HID_FUNC_RGP\">Apskaičiuoja tiesinės regresijos parametrus kaip masyvą.</ahelp>"
 
-#. VTZV4
+#. 7YFEn
 #: 04060107.xhp
 msgctxt ""
 "04060107.xhp\n"
 "par_id3152839\n"
 "help.text"
-msgid "LINEST(data_Y; data_X; linearType; stats)"
-msgstr "LINEST(duomensy_Y; duomenys_X; tiesės tipas; stats)"
+msgid "LINEST(data_Y [; data_X [; linearType [; stats]]])"
+msgstr "LINEST(Y duomuo [; X duomuo [; tiesinis tipas [; statistika]]])"
 
 #. M2QFp
 #: 04060107.xhp
@@ -16648,14 +16801,14 @@ msgctxt ""
 msgid "<ahelp hid=\"HID_FUNC_RKP\">This function calculates the adjustment of the entered data as an exponential regression curve (y=b*m^x).</ahelp>"
 msgstr "<ahelp hid=\"HID_FUNC_RKP\">Apskaičiuoja eksponentinės regresijos kreivės parametrus ir pateikia juos masyvu.</ahelp>"
 
-#. VFJDG
+#. rdZCV
 #: 04060107.xhp
 msgctxt ""
 "04060107.xhp\n"
 "par_id3163123\n"
 "help.text"
-msgid "LOGEST(DataY; DataX; FunctionType; Stats)"
-msgstr "LOGEST(duomenys Y; duomenys X; funkcijos tipas; statistika)"
+msgid "LOGEST(DataY [; DataX [; FunctionType [; Stats]]])"
+msgstr "LOGEST(Y duomuo [; X duomuo [; funkcijos tipas [; statistika]]])"
 
 #. 8jgzC
 #: 04060107.xhp
@@ -16990,14 +17143,14 @@ msgctxt ""
 msgid "<ahelp hid=\"HID_FUNC_TREND\">Returns values along a linear trend.</ahelp>"
 msgstr "<ahelp hid=\"HID_FUNC_TREND\">Grąžina regresijos tiesės taškus.</ahelp>"
 
-#. nuyCr
+#. f8Ftr
 #: 04060107.xhp
 msgctxt ""
 "04060107.xhp\n"
 "par_id3166122\n"
 "help.text"
-msgid "TREND(DataY; DataX; NewDataX; LinearType)"
-msgstr "TREND(duomenys Y; duomenys X; nauji duomenys X; tiesinis tipas)"
+msgid "TREND(DataY [; DataX [; NewDataX [; LinearType]]])"
+msgstr "TREND(Y duomuo [; X duomuo [; Naujas X duomuo [; tiesinis tipas]]])"
 
 #. qeK4r
 #: 04060107.xhp
@@ -17071,14 +17224,14 @@ msgctxt ""
 msgid "<ahelp hid=\"HID_FUNC_VARIATION\">Calculates the points of an exponential trend in an array.</ahelp>"
 msgstr "<ahelp hid=\"HID_FUNC_VARIATION\"> Apskaičiuoja eksponentinės regresijos taškus.</ahelp>"
 
-#. kbYCk
+#. 8VMBq
 #: 04060107.xhp
 msgctxt ""
 "04060107.xhp\n"
 "par_id3166377\n"
 "help.text"
-msgid "GROWTH(DataY; DataX; NewDataX; FunctionType)"
-msgstr "GROWTH(duomenys Y; duomenys X; nauji duomenys X; funkcijos tipas)"
+msgid "GROWTH(DataY [; DataX [; NewDataX [; FunctionType]]])"
+msgstr "GROWTH(Y duomuo [; X duomuo [; Naujas X duomuo [; funkcijos tipas]]])"
 
 #. CA3qD
 #: 04060107.xhp
@@ -17341,14 +17494,14 @@ msgctxt ""
 msgid "The INDIRECT function is saved without conversion to ODF 1.0/1.1 format. If the second parameter was present, an older version of Calc will return an error for that function."
 msgstr "Funkcija INDIRECT įrašoma be perskaičiavimų, kai dokumentas įrašomas ODF 1.0/1.1 formatu. Jei antrasis argumentas bus nurodytas, tai senesnės skaičiuoklės versijos tiesiog rodys klaidą."
 
-#. UnrfB
+#. TgFFT
 #: 04060109.xhp
 msgctxt ""
 "04060109.xhp\n"
 "par_id3154707\n"
 "help.text"
-msgid "ADDRESS(Row; Column; Abs; A1; \"Sheet\")"
-msgstr "ADDRESS(eilutė; stulpelis; abs; A1; \"Lakštas\")"
+msgid "ADDRESS(Row; Column [; Abs [; A1 [; \"Sheet\"]]])"
+msgstr "ADDRESS(eilutė; stulpelis [; modulis [; A1 [; \"lakštas\"]]])"
 
 #. FyoLc
 #: 04060109.xhp
@@ -17557,14 +17710,14 @@ msgctxt ""
 msgid "<ahelp hid=\"HID_FUNC_DDE\">Returns the result of a DDE-based link.</ahelp> If the contents of the linked range or section changes, the returned value will also change. You must reload the spreadsheet or choose <emph>Edit - Links</emph> to see the updated links. Cross-platform links, for example from a <item type=\"productname\">%PRODUCTNAME</item> installation running on a Windows machine to a document created on a Linux machine, are not allowed."
 msgstr "<ahelp hid=\"HID_FUNC_DDE\">Grąžina dinaminės nuorodos (DDE) saito rezultatą. </ahelp> Jei susietų sričių turinys ar dalis keičiama, tai grąžinama reikšmė taip pat keičiasi. Jei norite atnaujinti peržiūrą, pasirinkite <emph>Taisa → Saitai</emph>. Negalima naudoti <item type=\"productname\">„%PRODUCTNAME“</item> veikiančio „Windows“ operacinėje sistemoje dokumentams sukurtiems „Linux“."
 
-#. RarPk
+#. JBRdm
 #: 04060109.xhp
 msgctxt ""
 "04060109.xhp\n"
 "par_id3148886\n"
 "help.text"
-msgid "DDE(\"Server\"; \"File\"; \"Range\"; Mode)"
-msgstr "DDE(\"serveris\"; \"failas\"; \"sritis\"; metodas)"
+msgid "DDE(\"Server\"; \"File\"; \"Range\" [; Mode])"
+msgstr "DDE(\"serveris\"; \"failas\"; \"blokas\" [; nurodo, kaip duomenys konvertuojami į skaičius])"
 
 #. qAN6x
 #: 04060109.xhp
@@ -17782,14 +17935,14 @@ msgctxt ""
 msgid "<ahelp hid=\"HID_FUNC_INDEX\">INDEX returns a sub range, specified by row and column number, or an optional range index. Depending on context, INDEX returns a reference or content.</ahelp>"
 msgstr "<ahelp hid=\"HID_FUNC_INDEX\">Funkcija INDEX grąžina sritį, aprašytą eilutės ir stulpelio numeriu arba papildomu srities indeksu. Priklausomai nuo konteksto INDEX grąžina nuorodą arba turinį.</ahelp>"
 
-#. GSBMC
+#. T659Y
 #: 04060109.xhp
 msgctxt ""
 "04060109.xhp\n"
 "par_id3149007\n"
 "help.text"
-msgid "INDEX(Reference; Row; Column; Range)"
-msgstr "INDEX(nuoroda; eilutė; stulpelis; sritis)"
+msgid "INDEX(Reference [; Row [; Column [; Range]]])"
+msgstr "INDEX(nuoroda [; eilutė [; stulpelis [; blokas]]])"
 
 #. Btvgz
 #: 04060109.xhp
@@ -17917,14 +18070,14 @@ msgctxt ""
 msgid "<ahelp hid=\"HID_FUNC_INDIREKT\">Returns the <emph>reference</emph> specified by a text string.</ahelp> This function can also be used to return the area of a corresponding string."
 msgstr "<ahelp hid=\"HID_FUNC_INDIREKT\">Grąžina<emph>nuorodą</emph> apibrėžtą teksto eilute.</ahelp> Ši funkcija taip pat gali naudojama atitinkamos eilutės srities nustatymui."
 
-#. CFFmo
+#. hDCWQ
 #: 04060109.xhp
 msgctxt ""
 "04060109.xhp\n"
 "par_id3149824\n"
 "help.text"
-msgid "INDIRECT(Ref; A1)"
-msgstr "INDIRECT(nuoroda; A1)"
+msgid "INDIRECT(Ref [; A1])"
+msgstr "INDIRECT(nuoroda [; A1])"
 
 #. cZG9F
 #: 04060109.xhp
@@ -17998,14 +18151,14 @@ msgctxt ""
 msgid "<ahelp hid=\"HID_FUNC_SPALTE\">Returns the column number of a cell reference.</ahelp> If the reference is a cell the column number of the cell is returned; if the parameter is a cell area, the corresponding column numbers are returned in a single-row <link href=\"text/scalc/01/04060107.xhp#wasmatrix\" name=\"array\">array</link> if the formula is entered <link href=\"text/scalc/01/04060107.xhp#somatrixformel\" name=\"as an array formula\">as an array formula</link>. If the COLUMN function with an area reference parameter is not used for an array formula, only the column number of the first cell within the area is determined."
 msgstr "<ahelp hid=\"HID_FUNC_SPALTE\">Grąžina nuorodos stulpelio numerį.</ahelp> Jei nuoroda yra tik langelio, tai funkcija grąžina jo stulpelio numerį; jei nuoroda yra langelių srities, tai funkcija grąžina atitinkamus tos srities stulpelių numerius atskira <link href=\"text/scalc/01/04060107.xhp#wasmatrix\" name=\"array\">masyvo </link>eilute (jei formulė buvo įvesta kaip <link href=\"text/scalc/01/04060107.xhp#somatrixformel\" name=\"as an array formula\">masyvo formulė</link>). Jei funkcija COLUMN su nuorodos parametru nebuvo įvesta kaip masyvo formulė, tai grąžinamas tik pirmojo nuorodos srities langelio stulpelio numeris."
 
-#. WjjYp
+#. poCRX
 #: 04060109.xhp
 msgctxt ""
 "04060109.xhp\n"
 "par_id3149447\n"
 "help.text"
-msgid "COLUMN(Reference)"
-msgstr "COLUMN(nuoroda)"
+msgid "COLUMN([Reference])"
+msgstr "COLUMN([nuoroda])"
 
 #. CAB6L
 #: 04060109.xhp
@@ -18178,14 +18331,14 @@ msgctxt ""
 msgid "<ahelp hid=\"HID_FUNC_SVERWEIS\">Vertical search with reference to adjacent cells to the right.</ahelp> This function checks if a specific value is contained in the first column of an array. The function then returns the value in the same row of the column named by <item type=\"literal\">Index</item>. If the <item type=\"literal\">Sorted</item> parameter is omitted or set to TRUE or one, it is assumed that the data is sorted in ascending order. In this case, if the exact <item type=\"literal\">SearchCriterion</item> is not found, the last value that is smaller than the criterion will be returned. If <item type=\"literal\">Sorted</item> is set to FALSE or zero, an exact match must be found, otherwise the error <emph>Error: Value Not Available</emph> will be the result. Thus with a value of zero the data does not need to be sorted in ascending order."
 msgstr "<ahelp hid=\"HID_FUNC_SVERWEIS\">Vertikalioji paieška su nuoroda į gretimus langelius dešinėn.</ahelp> Funkcija tikrina, ar pirmame masyvo stulpelyje yra nurodyta reikšmė. Funkcija grąžina reikšmę į tą pačią eilutę <item type=\"literal\">Indeksas</item>. Jei argumentas <item type=\"literal\">išrikiuotas</item> praleistas arba nurodytas TIESA arba 1, tai duomenys išrikiuoti didėjančiai. Tokiu atveju, jei <item type=\"literal\">paieškos kriterijus</item> netenkinamas, tai grąžinama paskutinė mažesnė už kriterijų reikšmė. Jei <item type=\"literal\">Išrikiuotas</item> yra nurodytas NETIESA arba 0, tai kriterijus turi būti tenkinamas. Priešingu atveju rodoma klaida <emph>Reikšmė negalima</emph>. Jei reikšmė yra 0, tai duomenys turi būti išrikiuoti didėjančiai."
 
-#. qkLkD
+#. 8FhyJ
 #: 04060109.xhp
 msgctxt ""
 "04060109.xhp\n"
 "par_id3150156\n"
 "help.text"
-msgid "=VLOOKUP(SearchCriterion; Array; Index; SortedRangeLookup)"
-msgstr "=VLOOKUP(paieškos kriterijus; masyvas; rodyklė; išrikiuotos srities peržiūra)"
+msgid "=VLOOKUP(SearchCriterion; Array; Index [; SortedRangeLookup])"
+msgstr "=VLOOKUP(paieškos kriterijus; masyvas; indeksas [; rikiavimo eilė])"
 
 #. 7FsgG
 #: 04060109.xhp
@@ -18286,14 +18439,14 @@ msgctxt ""
 msgid "<ahelp hid=\"HID_FUNC_TABELLE\">Returns the sheet number of a reference or a string representing a sheet name.</ahelp> If you do not enter any parameters, the result is the sheet number of the spreadsheet containing the formula."
 msgstr "<ahelp hid=\"HID_FUNC_TABELLE\">Grąžina nuorodos lakšto numerį arba eilutę nusakančią lakštą.</ahelp> Jei nenurodėte jokių parametrų, rezultatas bus lakšto, kuriame yra formulė, numeris."
 
-#. 4WMzx
+#. KRzAZ
 #: 04060109.xhp
 msgctxt ""
 "04060109.xhp\n"
 "par_id3153095\n"
 "help.text"
-msgid "SHEET(Reference)"
-msgstr "SHEET(nuoroda)"
+msgid "SHEET([Reference])"
+msgstr "SHEET([nuoroda])"
 
 #. 9yCD8
 #: 04060109.xhp
@@ -18340,14 +18493,14 @@ msgctxt ""
 msgid "<ahelp hid=\"HID_FUNC_TABELLEN\">Determines the number of sheets in a reference.</ahelp> If you do not enter any parameters, it returns the number of sheets in the current document."
 msgstr "<ahelp hid=\"HID_FUNC_TABELLEN\">Nustato, kiek lakštų yra nurodytoje srityje.</ahelp> Jei nenurodysite jokio parametro, tai grąžins lakštų, kurie yra dabartinėje darbo knygoje, skaičių."
 
-#. EfUeE
+#. j5Aps
 #: 04060109.xhp
 msgctxt ""
 "04060109.xhp\n"
 "par_id3150777\n"
 "help.text"
-msgid "SHEETS(Reference)"
-msgstr "SHEETS(nuoroda)"
+msgid "SHEETS([Reference])"
+msgstr "SHEETS([nuoroda])"
 
 #. 5B3KF
 #: 04060109.xhp
@@ -18394,14 +18547,14 @@ msgctxt ""
 msgid "<ahelp hid=\"HID_FUNC_VERGLEICH\">Returns the relative position of an item in an array that matches a specified value.</ahelp> The function returns the position of the value found in the lookup_array as a number."
 msgstr "<ahelp hid=\"HID_FUNC_VERGLEICH\">Grąžina santykinę elemento, kuris tenkina nurodytą reikšmę, masyve vietą.</ahelp> Funkcija grąžina reikšmės paieškoms masyve vietos numerį."
 
-#. Rg5W8
+#. FsB8G
 #: 04060109.xhp
 msgctxt ""
 "04060109.xhp\n"
 "par_id3159152\n"
 "help.text"
-msgid "MATCH(SearchCriterion; LookupArray; Type)"
-msgstr "MATCH(paieškos kriterijus; paieškos masyvas; tipas)"
+msgid "MATCH(SearchCriterion; LookupArray [; Type])"
+msgstr "MATCH(paižškos kriterijus; paieškos masyvas [; tipas])"
 
 #. BmVBr
 #: 04060109.xhp
@@ -18484,14 +18637,14 @@ msgctxt ""
 msgid "<ahelp hid=\"HID_FUNC_VERSCHIEBUNG\">Returns the value of a cell offset by a certain number of rows and columns from a given reference point.</ahelp>"
 msgstr "<ahelp hid=\"HID_FUNC_VERSCHIEBUNG\">Grąžina langelio reikšmę paslinktą per nurodytą eilučių ir stulpelių skaičių nuo nurodytos vietos.</ahelp>"
 
-#. CHJcg
+#. nED4F
 #: 04060109.xhp
 msgctxt ""
 "04060109.xhp\n"
 "par_id3159194\n"
 "help.text"
-msgid "OFFSET(Reference; Rows; Columns; Height; Width)"
-msgstr "OFFSET(nuoroda; eilutės; stulpeliai; aukštis; plotis)"
+msgid "OFFSET(Reference; Rows; Columns [; Height [; Width]])"
+msgstr "OFFSET(nuoroda; eilutės; stulpeliai [; aukštis [; plotis]])"
 
 #. 3Q5gL
 #: 04060109.xhp
@@ -18655,14 +18808,14 @@ msgctxt ""
 msgid "If LOOKUP cannot find the search criterion, it matches the largest value in the search vector that is less than or equal to the search criterion."
 msgstr "Jei funkcija LOOKUP neranda paieškos kriterijau atitikties, tai ji pateikia didžiausią paieškos vektoriaus reikšmę, kuri yra mažesnė arba lygi paieškos kriterijui."
 
-#. eqrFF
+#. 4nBA6
 #: 04060109.xhp
 msgctxt ""
 "04060109.xhp\n"
 "par_id3154104\n"
 "help.text"
-msgid "LOOKUP(SearchCriterion; SearchVector; ResultVector)"
-msgstr "LOOKUP(paieškos kriterijus; paieškos vektorius; rezultato vektorius)"
+msgid "LOOKUP(SearchCriterion; SearchVector [; ResultVector])"
+msgstr "LOOKUP(paieškos kriterijus; paieškos kryptis [; vektorius])"
 
 #. QdiFz
 #: 04060109.xhp
@@ -18727,14 +18880,14 @@ msgctxt ""
 msgid "<ahelp hid=\"HID_FUNC_VORLAGE\">Applies a style to the cell containing the formula.</ahelp> After a set amount of time, another style can be applied. This function always returns the value 0, allowing you to add it to another function without changing the value. Together with the CURRENT function you can apply a color to a cell depending on the value. For example: =...+STYLE(IF(CURRENT()>3;\"red\";\"green\")) applies the style \"red\" to the cell if the value is greater than 3, otherwise the style \"green\" is applied. Both cell formats, \"red\" and \"green\" have to be defined beforehand."
 msgstr "<ahelp hid=\"HID_FUNC_VORLAGE\">Pritaiko langeliui su formule stilių.</ahelp> Po kurio laiko gali būti pritaikytas kitas stilius. Ši funkcija visada grąžina 0, siūlydama įtraukti į kitą funkciją nepakeičiant reikšmės. kartus su funkcija CURRENT galite pritaikyti langeliui spalvą priklausomai nuo reikšmės. Pavyzdžiui:=...+STYLE(IF(CURRENT()>3;\"red\";\"green\")) pritaiko langeliui stilių \"red\", jei jo reikšmė didesnė už 3, ir \"green\", jei jo reikšmė mažesnė už 3. Abu stiliai turi būti nurodyti iš anksto."
 
-#. gNaP4
+#. gU3TE
 #: 04060109.xhp
 msgctxt ""
 "04060109.xhp\n"
 "par_id3149302\n"
 "help.text"
-msgid "STYLE(\"Style\"; Time; \"Style2\")"
-msgstr "STYLE(\"stilius 1\"; laikas; \"stilius 2\")"
+msgid "STYLE(\"Style\" [; Time [; \"Style2\"]])"
+msgstr "STYLE(\"stilius\" [; laikas [; \"2 stilius\"]])"
 
 #. Q8SMG
 #: 04060109.xhp
@@ -18826,32 +18979,32 @@ msgctxt ""
 msgid "<ahelp hid=\"HID_FUNC_WAHL\">Uses an index to return a value from a list of up to 30 values.</ahelp>"
 msgstr "<ahelp hid=\"HID_FUNC_WAHL\">Grąžinama iki 30 reikšmių naudodama indeksus.</ahelp>"
 
-#. g9AE7
+#. r7bDk
 #: 04060109.xhp
 msgctxt ""
 "04060109.xhp\n"
 "par_id3155425\n"
 "help.text"
-msgid "CHOOSE(Index; Value1; ...; Value30)"
-msgstr "CHOOSE(indeksas; reikšmė 1; ...; reikšmė 30)"
+msgid "CHOOSE(Index; Value1 [; Value2 [; ... [; Value254]]])"
+msgstr "CHOOSE(indeksas; 1 reikšmė [; 2 reikšmė [; ... [; 254 reikšmė]]])"
 
-#. CNK7e
+#. dt8SY
 #: 04060109.xhp
 msgctxt ""
 "04060109.xhp\n"
 "par_id3144755\n"
 "help.text"
-msgid "<emph>Index</emph> is a reference or number between 1 and 30 indicating which value is to be taken from the list."
-msgstr "<emph>Indeksas</emph> – nuoroda ar skaičius tarp 1 ir 30 nurodantis, kuri reikšmė iš sąrašo bus paimta."
+msgid "<emph>Index</emph> is a reference or number between 1 and 254 indicating which value is to be taken from the list."
+msgstr "<emph>Indeksas</emph> – pasirenkamų reikšmių skaičius nuo 1 iki 254."
 
-#. jnAAs
+#. nR3mX
 #: 04060109.xhp
 msgctxt ""
 "04060109.xhp\n"
 "par_id3149939\n"
 "help.text"
-msgid "<emph>Value1, Value2, ..., Value30</emph> is the list of values entered as a reference to a cell or as individual values."
-msgstr "<emph>Reikšmė 1, ...., reikšmė 30</emph> – reikšmių sąrašas pateiktas langelių srities nuoroda."
+msgid "<emph>Value1, Value2, ..., Value254</emph> is the list of values entered as a reference to a cell or as individual values."
+msgstr "<emph>1 reikšmė, 2 reikšmė, ...., 254 reikšmė</emph> – reikšmių seka, įvesta bloko nuoroda arba atskiromis reikšmėmis."
 
 #. s64Du
 #: 04060109.xhp
@@ -18889,14 +19042,14 @@ msgctxt ""
 msgid "<ahelp hid=\"HID_FUNC_WVERWEIS\">Searches for a value and reference to the cells below the selected area.</ahelp> This function verifies if the first row of an array contains a certain value. The function returns then the value in a row of the array, named in the <emph>Index</emph>, in the same column."
 msgstr "<ahelp hid=\"HID_FUNC_WVERWEIS\">Ieško langelių srities esančios žemiau reikšmės ir nuorodos.</ahelp> Funkcija patikrina, ar pirmoji masyvo eilutė turi atitinkamą reikšmę. Funkcija grąžina reikšmę masyvo eilutėje pavadintoje <emph>inksas</emph> tame pačiame stulpelyje."
 
-#. yxeCS
+#. y6is6
 #: 04060109.xhp
 msgctxt ""
 "04060109.xhp\n"
 "par_id3146070\n"
 "help.text"
-msgid "HLOOKUP(SearchCriterion; Array; Index; SortedRangeLookup)"
-msgstr "HLOOKUP(paieškos kriterijus; masyvas; rodyklė; išrikiuotos srities peržiūra)"
+msgid "HLOOKUP(SearchCriterion; Array; Index [; SortedRangeLookup])"
+msgstr "HLOOKUP(paieškos kriterijus; masyvas; indeksas [; rikiavimo tipas])"
 
 #. nhwwF
 #: 04060109.xhp
@@ -18934,14 +19087,14 @@ msgctxt ""
 msgid "<ahelp hid=\"HID_FUNC_ZEILE\">Returns the row number of a cell reference.</ahelp> If the reference is a cell, it returns the row number of the cell. If the reference is a cell range, it returns the corresponding row numbers in a one-column <link href=\"text/scalc/01/04060107.xhp#wasmatrix\" name=\"Array\">Array</link> if the formula is entered <link href=\"text/scalc/01/04060107.xhp#somatrixformel\" name=\"as an array formula\">as an array formula</link>. If the ROW function with a range reference is not used in an array formula, only the row number of the first range cell will be returned."
 msgstr "<ahelp hid=\"HID_FUNC_ZEILE\">Grąžina nuorodos eilutės numerį.</ahelp> Jei nuoroda yra tik langelio, tai funkcija grąžina jo eilutės numerį; jei nuoroda yra langelių srities, tai funkcija grąžina atitinkamus tos srities eilučių numerius atskirame <link href=\"text/scalc/01/04060107.xhp#wasmatrix\" name=\"array\">masyvo </link>stulpelyje (jei formulė buvo įvesta kaip <link href=\"text/scalc/01/04060107.xhp#somatrixformel\" name=\"as an array formula\">masyvo formulė</link>). Jei funkcija ROW su nuorodos parametru nebuvo įvesta kaip masyvo formulė, tai grąžinamas tik pirmosios nuorodos srities langelio eilutės numeris."
 
-#. 2F22B
+#. 97EEE
 #: 04060109.xhp
 msgctxt ""
 "04060109.xhp\n"
 "par_id3154916\n"
 "help.text"
-msgid "ROW(Reference)"
-msgstr "ROW(nuoroda)"
+msgid "ROW([Reference])"
+msgstr "ROW([nuoroda])"
 
 #. mSqrb
 #: 04060109.xhp
@@ -19132,14 +19285,14 @@ msgctxt ""
 msgid "To open a hyperlinked cell with the keyboard, select the cell, press F2 to enter the Edit mode, move the cursor in front of the hyperlink, press Shift+F10, and then choose <emph>Open Hyperlink</emph>."
 msgstr "Jei norite atverti saito langelį klaviatūra, tai pasirinkite langelį, paspauskite F2 ir pereisite į taisymo veikseną. Tuomet nuvilkite žymeklį į saito pradžią, paspauskite Lyg2 + F10 ir pasirinkite <emph>Atverti saitą</emph>."
 
-#. JDWzm
+#. BzM9o
 #: 04060109.xhp
 msgctxt ""
 "04060109.xhp\n"
 "par_idN1180E\n"
 "help.text"
-msgid "HYPERLINK(\"URL\") or HYPERLINK(\"URL\"; \"CellText\")"
-msgstr "HYPERLINK(\"URL\") arba HYPERLINK(\"URL\"; \"langelio tekstas\")"
+msgid "HYPERLINK(\"URL\" [; \"CellText\"])"
+msgstr "HYPERLINK(\"URL\" [; \"langelio tekstas\"])"
 
 #. UbAEY
 #: 04060109.xhp
@@ -19663,14 +19816,14 @@ msgctxt ""
 msgid "<ahelp hid=\"HID_FUNC_BASIS\">Converts a positive integer to a specified base into a text from the <link href=\"text/shared/00/00000005.xhp#zahlensystem\" name=\"numbering system\">numbering system</link>.</ahelp> The digits 0-9 and the letters A-Z are used."
 msgstr "<ahelp hid=\"HID_FUNC_BASIS\">Konvertuoja teigiamą kintamąjį į tam tikrą tekstą iš <link href=\"text/shared/00/00000005.xhp#zahlensystem\" name=\"numbering system\">skaitinės sistemos</link>.</ahelp> Naudojami skaičiai nuo 0-9 ir raidės A-Z."
 
-#. w9kd3
+#. 2cDvi
 #: 04060110.xhp
 msgctxt ""
 "04060110.xhp\n"
 "par_id3155743\n"
 "help.text"
-msgid "BASE(Number; Radix; [MinimumLength])"
-msgstr "BASE(skaičius; pagrindas; [minimalus ilgis])"
+msgid "BASE(Number; Radix [; MinimumLength])"
+msgstr "BASE(skaičius; intervalas [; minimalus ilgis])"
 
 #. iDR7A
 #: 04060110.xhp
@@ -20104,14 +20257,14 @@ msgctxt ""
 msgid "You set the currency format in your system settings."
 msgstr "Sistemos nustatymuose nurodykite valiutos formatą."
 
-#. hAiEu
+#. icFpC
 #: 04060110.xhp
 msgctxt ""
 "04060110.xhp\n"
 "par_id3154188\n"
 "help.text"
-msgid "DOLLAR(Value; Decimals)"
-msgstr "DOLLAR(reikšmė; dešimtainės skiltys)"
+msgid "DOLLAR(Value [; Decimals])"
+msgstr "DOLLAR(reikšmė [; dešimtainiai])"
 
 #. WA6bA
 #: 04060110.xhp
@@ -20239,14 +20392,14 @@ msgctxt ""
 msgid "<ahelp hid=\"HID_FUNC_FINDEN\">Returns the position of a string of text within another string.</ahelp>You can also define where to begin the search. The search term can be a number or any string of characters. The search is case-sensitive."
 msgstr "<ahelp hid=\"HID_FUNC_FINDEN\"> Grąžina tekstinės eilutės esančios kitoje eilutėje vietą.</ahelp> Galite nurodyti, nuo kurios vietos pradėti ieškoti. Ieškoma frazė gali būti skaičiai ar bet kokių ženklų eilutė. Paieška skiria didžiąsias ir mažąsias raides"
 
-#. zQDEB
+#. Kpkfu
 #: 04060110.xhp
 msgctxt ""
 "04060110.xhp\n"
 "par_id3083452\n"
 "help.text"
-msgid "FIND(\"FindText\"; \"Text\"; Position)"
-msgstr "FIND(\"paieškos tekstas\"; \"tekstas\"; vieta)"
+msgid "FIND(\"FindText\"; \"Text\" [; Position])"
+msgstr "FIND(\"rasti tekstą\"; \"tekstas\" [; vieta])"
 
 #. 3HU9t
 #: 04060110.xhp
@@ -20311,14 +20464,14 @@ msgctxt ""
 msgid "<ahelp hid=\"HID_FUNC_FEST\">Returns a number as text with a specified number of decimal places and optional thousands separators.</ahelp>"
 msgstr "<ahelp hid=\"HID_FUNC_FEST\">Grąžina skaičių tekstu su nurodytu skaitmenų skaičiumi po kablelio ir papildomai (jei reikia) nurodytu tūkstančių skirtuku.</ahelp>"
 
-#. UtELQ
+#. CEftz
 #: 04060110.xhp
 msgctxt ""
 "04060110.xhp\n"
 "par_id3147567\n"
 "help.text"
-msgid "FIXED(Number; Decimals; NoThousandsSeparators)"
-msgstr "FIXED(skaičius; dešimtainės skiltys; be tūkstančių skirtuko)"
+msgid "FIXED(Number; Decimals [; NoThousandsSeparators])"
+msgstr "FIXED(skaičius; dešimtainiai [; be tūkstančių skirtumo])"
 
 #. 5cYW8
 #: 04060110.xhp
@@ -20455,14 +20608,14 @@ msgctxt ""
 msgid "<ahelp hid=\"HID_FUNC_LINKS\">Returns the first character or characters of a text.</ahelp>"
 msgstr "<ahelp hid=\"HID_FUNC_LINKS\">Grąžina pirmą ženklą ar ženklus, ar tekstą.</ahelp>"
 
-#. wcSFE
+#. yAT6p
 #: 04060110.xhp
 msgctxt ""
 "04060110.xhp\n"
 "par_id3146786\n"
 "help.text"
-msgid "LEFT(\"Text\"; Number)"
-msgstr "LEFT(\"tekstas\"; skaičius)"
+msgid "LEFT(\"Text\" [; Number])"
+msgstr "LEFT(\"tekstas\" [; skaičius])"
 
 #. PGbwK
 #: 04060110.xhp
@@ -20518,14 +20671,14 @@ msgctxt ""
 msgid "<ahelp hid=\"HID_FUNC_LEFTB\">Returns the first characters of a DBCS text.</ahelp>"
 msgstr "<ahelp hid=\"HID_FUNC_LEFTB\">Grąžina pirmą DBCS teksto ženklą.</ahelp>"
 
-#. 2x4Vt
+#. ZcHDR
 #: 04060110.xhp
 msgctxt ""
 "04060110.xhp\n"
 "par_id2946786\n"
 "help.text"
-msgid "LEFTB(\"Text\"; Number_bytes)"
-msgstr "LEFTB(\"tekstas\"; baitai)"
+msgid "LEFTB(\"Text\" [; Number_bytes])"
+msgstr "LEFTB(\"tekstas\" [; baitų skaičius])"
 
 #. e6CdQ
 #: 04060110.xhp
@@ -21076,14 +21229,14 @@ msgctxt ""
 msgid "<emph>Text</emph> refers to the text to be converted."
 msgstr "<emph>Tekstas</emph> – konvertuojamo teksto nuoroda."
 
-#. CHBWP
+#. Nt5dD
 #: 04060110.xhp
 msgctxt ""
 "04060110.xhp\n"
 "par_id3155364\n"
 "help.text"
-msgid "<item type=\"input\">=PROPER(\"open office\")</item> returns Open Office."
-msgstr "<item type=\"input\">=PROPER(\"open office\")</item> grąžina „Open Office“."
+msgid "<item type=\"input\">=PROPER(\"the document foundation\")</item> returns The Document Foundation."
+msgstr "<item type=\"input\">=PROPER(\"dokumento paieška\")</item> grąžina frazę „Dokumento Paieška“."
 
 #. MeADa
 #: 04060110.xhp
@@ -21274,14 +21427,14 @@ msgctxt ""
 msgid "<ahelp hid=\"HID_FUNC_RECHTS\">Returns the last character or characters of a text.</ahelp>"
 msgstr "<ahelp hid=\"HID_FUNC_RECHTS\">Grąžina nurodytą skaičių teksto dešinės dalies paskutinių ženklų.</ahelp>"
 
-#. STrAH
+#. 3D3E9
 #: 04060110.xhp
 msgctxt ""
 "04060110.xhp\n"
 "par_id3154344\n"
 "help.text"
-msgid "RIGHT(\"Text\"; Number)"
-msgstr "RIGHT(\"tekstas\"; skaičius)"
+msgid "RIGHT(\"Text\" [; Number])"
+msgstr "RIGHT(\"tekstas\" [; skaičius])"
 
 #. dveYp
 #: 04060110.xhp
@@ -21337,14 +21490,14 @@ msgctxt ""
 msgid "<ahelp hid=\"HID_FUNC_RIGHTB\">Returns the last character or characters of a text with double bytes characters sets (DBCS).</ahelp>"
 msgstr "<ahelp hid=\"HID_FUNC_RIGHTB\">Grąžina nurodytą baitų skaičių DBCS ženklų eilutės dešinės dalies paskutinių ženklų.</ahelp>"
 
-#. B2AWW
+#. 9kB2q
 #: 04060110.xhp
 msgctxt ""
 "04060110.xhp\n"
 "par_id2954344\n"
 "help.text"
-msgid "RIGHTB(\"Text\"; Number_bytes)"
-msgstr "RIGHTB (\"tekstas\", baitai)"
+msgid "RIGHTB(\"Text\" [; Number_bytes])"
+msgstr "RIGHTB(\"tekstas\" [; baitų skaičius])"
 
 #. jvjXS
 #: 04060110.xhp
@@ -21436,14 +21589,14 @@ msgctxt ""
 msgid "<ahelp hid=\"HID_FUNC_ROEMISCH\">Converts a number into a Roman numeral. The value range must be between 0 and 3999, the modes can be integers from 0 to 4.</ahelp>"
 msgstr "<ahelp hid=\"HID_FUNC_ROEMISCH\">Konvertuoja skaičių į Romėniškus skaičius. Reikšmė turi būti tarp 0 ir 3999, metodas gali būti sveikasis skaičius nuo 0 iki 4.</ahelp>"
 
-#. 4bqzs
+#. RdCBS
 #: 04060110.xhp
 msgctxt ""
 "04060110.xhp\n"
 "par_id3150593\n"
 "help.text"
-msgid "ROMAN(Number; Mode)"
-msgstr "ROMAN(skaičius; metodas)"
+msgid "ROMAN(Number [; Mode])"
+msgstr "ROMAN(skaičius [; veiksena])"
 
 #. 4rcTC
 #: 04060110.xhp
@@ -21544,14 +21697,14 @@ msgctxt ""
 msgid "<ahelp hid=\"HID_FUNC_SUCHEN\">Returns the position of a text segment within a character string.</ahelp> You can set the start of the search as an option. The search text can be a number or any sequence of characters. The search is not case-sensitive. If the text is not found, returns error 519 (#VALUE)."
 msgstr "<ahelp hid=\"HID_FUNC_SUCHEN\">Grąžina nurodytos tekstinės eilutės vietą.</ahelp> Galite papildomai nurodyti paieškos pradžios vietą. Ieškomas tekstas gali būti skaitinė arba bet kokia ženklų seka. Funkcija nekreipia dėmesio į didžiąsias ir mažąsias raides. Jei teksto neranda, grąžina 519 klaidos pranešimą (#VALUE)."
 
-#. FN6o9
+#. GU5p2
 #: 04060110.xhp
 msgctxt ""
 "04060110.xhp\n"
 "par_id3154671\n"
 "help.text"
-msgid "SEARCH(\"FindText\"; \"Text\"; Position)"
-msgstr "SEARCH(\"ieškomas tekstas\"; \"tekstas\"; vieta)"
+msgid "SEARCH(\"FindText\"; \"Text\" [; Position])"
+msgstr "SEARCH(\"rasti tekstą\"; \"tekstas\" [; vieta])"
 
 #. yP57Q
 #: 04060110.xhp
@@ -21616,14 +21769,14 @@ msgctxt ""
 msgid "<ahelp hid=\"HID_FUNC_WECHSELN\">Substitutes new text for old text in a string.</ahelp>"
 msgstr "<ahelp hid=\"HID_FUNC_WECHSELN\">Pakeičia seną tekstą nauju.</ahelp>"
 
-#. L6DKo
+#. K2fp5
 #: 04060110.xhp
 msgctxt ""
 "04060110.xhp\n"
 "par_id3147582\n"
 "help.text"
-msgid "SUBSTITUTE(\"Text\"; \"SearchText\"; \"NewText\"; Occurrence)"
-msgstr "SUBSTITUTE(\"tekstas\"; \"ieškomas tekstas\"; \"naujas tekstas\"; tikslumas)"
+msgid "SUBSTITUTE(\"Text\"; \"SearchText\"; \"NewText\" [; Occurrence])"
+msgstr "SUBSTITUTE(\"tekstas\"; \"paieškos tekstas\"; \"naujas tekstas\" [; tikslumas])"
 
 #. tydqc
 #: 04060110.xhp
@@ -24505,14 +24658,14 @@ msgctxt ""
 msgid "<ahelp hid=\"HID_AAI_FUNC_BIN2HEX\">The result is the hexadecimal number for the binary number entered.</ahelp>"
 msgstr "<ahelp hid=\"HID_AAI_FUNC_BIN2HEX\">Pateikia dvejetainį skaičių konvertuotą į šešioliktainį.</ahelp>"
 
-#. k5VGV
+#. pLG3U
 #: 04060115.xhp
 msgctxt ""
 "04060115.xhp\n"
 "par_id3148753\n"
 "help.text"
-msgid "BIN2HEX(Number; Places)"
-msgstr "BIN2HEX(skaičius; vietos)"
+msgid "BIN2HEX(Number [; Places])"
+msgstr "BIN2HEX(skaičius [; vietos])"
 
 #. 9ugAE
 #: 04060115.xhp
@@ -24568,14 +24721,14 @@ msgctxt ""
 msgid "<ahelp hid=\"HID_AAI_FUNC_BIN2OCT\"> The result is the octal number for the binary number entered.</ahelp>"
 msgstr "<ahelp hid=\"HID_AAI_FUNC_BIN2OCT\">Pateikia dvejetainį skaičių konvertuotą į aštuntainės sistemos skaičių.</ahelp>"
 
-#. 2DBBD
+#. 8pRVA
 #: 04060115.xhp
 msgctxt ""
 "04060115.xhp\n"
 "par_id3154508\n"
 "help.text"
-msgid "BIN2OCT(Number; Places)"
-msgstr "BIN2OCT(skaičius; vietos)"
+msgid "BIN2OCT(Number [; Places])"
+msgstr "BIN2OCT(skaičius [; vietos])"
 
 #. kBSNf
 #: 04060115.xhp
@@ -24631,14 +24784,14 @@ msgctxt ""
 msgid "<ahelp hid=\"HID_AAI_FUNC_DELTA\">The result is TRUE (1) if both numbers, which are delivered as an argument, are equal, otherwise it is FALSE (0).</ahelp>"
 msgstr "<ahelp hid=\"HID_AAI_FUNC_DELTA\">Rezultatas yra Tiesa arba 1, kai abu nurodyti skaičiai yra lygūs. Kitais atvejais rezultatas yra Netiesa arba 0.</ahelp>"
 
-#. 73wCN
+#. 6s5yD
 #: 04060115.xhp
 msgctxt ""
 "04060115.xhp\n"
 "par_id3145247\n"
 "help.text"
-msgid "DELTA(Number1; Number2)"
-msgstr "DELTA(1 skaičius; 2 skaičius)"
+msgid "DELTA(Number1 [; Number2])"
+msgstr "DELTA(1 skaičius [; 2 skaičius])"
 
 #. PEgQC
 #: 04060115.xhp
@@ -24676,14 +24829,14 @@ msgctxt ""
 msgid "<ahelp hid=\"HID_AAI_FUNC_DEC2BIN\"> The result is the binary number for the decimal number entered between -512 and 511.</ahelp>"
 msgstr "<ahelp hid=\"HID_AAI_FUNC_DEC2BIN\">Rezultatas dešimtainės sistemos skaičius nuo -512 iki 511 konvertuotas į dvejetainę sistemą.</ahelp>"
 
-#. NUeb8
+#. tPFjB
 #: 04060115.xhp
 msgctxt ""
 "04060115.xhp\n"
 "par_id3150569\n"
 "help.text"
-msgid "DEC2BIN(Number; Places)"
-msgstr "DEC2BIN(skaičius; vietos)"
+msgid "DEC2BIN(Number [; Places])"
+msgstr "DEC2BIN(skaičius [; vietos])"
 
 #. Y9mGB
 #: 04060115.xhp
@@ -24739,14 +24892,14 @@ msgctxt ""
 msgid "<ahelp hid=\"HID_AAI_FUNC_DEC2HEX\">The result is the hexadecimal number for the decimal number entered.</ahelp>"
 msgstr "<ahelp hid=\"HID_AAI_FUNC_DEC2HEX\">Pateikia dešimtainį skaičių konvertuotą į šešioliktainės sistemos skaičių.</ahelp>"
 
-#. 4BMnA
+#. T8PpC
 #: 04060115.xhp
 msgctxt ""
 "04060115.xhp\n"
 "par_id3147535\n"
 "help.text"
-msgid "DEC2HEX(Number; Places)"
-msgstr "DEC2HEX(skaičius; vietos)"
+msgid "DEC2HEX(Number [; Places])"
+msgstr "DEC2HEX(skaičius [; vietos])"
 
 #. SQafk
 #: 04060115.xhp
@@ -24802,14 +24955,14 @@ msgctxt ""
 msgid "<ahelp hid=\"HID_AAI_FUNC_DEC2OCT\">The result is the octal number for the decimal number entered.</ahelp>"
 msgstr "<ahelp hid=\"HID_AAI_FUNC_DEC2OCT\">Pateikia dešimtainį skaičių konvertuotą į aštuntainės sistemos skaičių.</ahelp>"
 
-#. FPyVU
+#. 5ecSa
 #: 04060115.xhp
 msgctxt ""
 "04060115.xhp\n"
 "par_id3148427\n"
 "help.text"
-msgid "DEC2OCT(Number; Places)"
-msgstr "DEC2OCT(skaičius; vietos)"
+msgid "DEC2OCT(Number [; Places])"
+msgstr "DEC2OCT(skaičius [; vietos])"
 
 #. Fa6gd
 #: 04060115.xhp
@@ -24865,14 +25018,14 @@ msgctxt ""
 msgid "<ahelp hid=\"HID_AAI_FUNC_ERF\">Returns values of the Gaussian error integral.</ahelp>"
 msgstr "<ahelp hid=\"HID_AAI_FUNC_ERF\">Grąžina Gauso paklaidos integralo reikšmę.</ahelp>"
 
-#. nDWWi
+#. KmGKW
 #: 04060115.xhp
 msgctxt ""
 "04060115.xhp\n"
 "par_id3163824\n"
 "help.text"
-msgid "ERF(LowerLimit; UpperLimit)"
-msgstr "ERF(apatinis rėžis; viršutinis rėžis)"
+msgid "ERF(LowerLimit [; UpperLimit])"
+msgstr "ERF(apatinė riba [; viršutinė riba])"
 
 #. TyCGk
 #: 04060115.xhp
@@ -25090,14 +25243,14 @@ msgctxt ""
 msgid "<ahelp hid=\"HID_AAI_FUNC_GESTEP\">The result is 1 if <item type=\"literal\">Number</item> is greater than or equal to <item type=\"literal\">Step</item>.</ahelp>"
 msgstr "<ahelp hid=\"HID_AAI_FUNC_GESTEP\">rezultats yra 1, jei <item type=\"literal\">skaičius</item> didesnis arba lygus <item type=\"literal\">žingsniui</item>.</ahelp>"
 
-#. iE7iA
+#. cDDSb
 #: 04060115.xhp
 msgctxt ""
 "04060115.xhp\n"
 "par_id3145212\n"
 "help.text"
-msgid "GESTEP(Number; Step)"
-msgstr "GESTEP(skaičius; žingsnis)"
+msgid "GESTEP(Number [; Step])"
+msgstr "GESTEP(skaičius [; žingsnis])"
 
 #. QG8JU
 #: 04060115.xhp
@@ -25135,14 +25288,14 @@ msgctxt ""
 msgid "<ahelp hid=\"HID_AAI_FUNC_HEX2BIN\">The result is the binary number for the hexadecimal number entered.</ahelp>"
 msgstr "<ahelp hid=\"HID_AAI_FUNC_HEX2BIN\">Rezultatas yra šešioliktainės sistemos skaičius konvertuotas į dvejetainės sistemos skaičius.</ahelp>"
 
-#. UEfgv
+#. S4Zyx
 #: 04060115.xhp
 msgctxt ""
 "04060115.xhp\n"
 "par_id3155847\n"
 "help.text"
-msgid "HEX2BIN(Number; Places)"
-msgstr "HEX2BIN(skaičius; vietos)"
+msgid "HEX2BIN(Number [; Places])"
+msgstr "HEX2BIN(skaičius [; vietos])"
 
 #. YzMa9
 #: 04060115.xhp
@@ -25252,14 +25405,14 @@ msgctxt ""
 msgid "<ahelp hid=\"HID_AAI_FUNC_HEX2OCT\">The result is the octal number for the hexadecimal number entered.</ahelp>"
 msgstr "<ahelp hid=\"HID_AAI_FUNC_HEX2OCT\">Rezultatas yra konvertuotas šešioliktainis skaičius į aštuntainės sistemos skaičių.</ahelp>"
 
-#. 5ViJ3
+#. BoGKD
 #: 04060115.xhp
 msgctxt ""
 "04060115.xhp\n"
 "par_id3151170\n"
 "help.text"
-msgid "HEX2OCT(Number; Places)"
-msgstr "HEX2OCT(skaičius; vietos)"
+msgid "HEX2OCT(Number [; Places])"
+msgstr "HEX2OCT(skaičius [; vietos])"
 
 #. 2Uff5
 #: 04060115.xhp
@@ -26134,14 +26287,14 @@ msgctxt ""
 msgid "<ahelp hid=\"HID_AAI_FUNC_COMPLEX\">The result is a complex number which is returned from a real coefficient and an imaginary coefficient.</ahelp>"
 msgstr "<ahelp hid=\"HID_AAI_FUNC_COMPLEX\">Rezultatas yra sudarytas kompleksinis skaičius, kai duota realusis ir menamas koeficientai.</ahelp>"
 
-#. ayftD
+#. c2huU
 #: 04060116.xhp
 msgctxt ""
 "04060116.xhp\n"
 "par_id3155999\n"
 "help.text"
-msgid "COMPLEX(RealNum; INum; Suffix)"
-msgstr "COMPLEX(realusis koeficientas; menamasis koeficientas; menamasis vienetas)"
+msgid "COMPLEX(RealNum; INum [; Suffix])"
+msgstr "COMPLEX(realus skaičius; menamas skaičius [; priesaga])"
 
 #. FCxXC
 #: 04060116.xhp
@@ -26206,14 +26359,14 @@ msgctxt ""
 msgid "<ahelp hid=\"HID_AAI_FUNC_OCT2BIN\">The result is the binary number for the octal number entered.</ahelp>"
 msgstr "<ahelp hid=\"HID_AAI_FUNC_OCT2BIN\">Pateikia aštuntainį skaičių konvertuotą į dvejetainės sistemos skaičių.</ahelp>"
 
-#. KWCgD
+#. BTUGA
 #: 04060116.xhp
 msgctxt ""
 "04060116.xhp\n"
 "par_id3154303\n"
 "help.text"
-msgid "OCT2BIN(Number; Places)"
-msgstr "OCT2BIN(skaičius; vietos)"
+msgid "OCT2BIN(Number [; Places])"
+msgstr "OCT2BIN(skaičius [; vietos])"
 
 #. AbzaY
 #: 04060116.xhp
@@ -26323,14 +26476,14 @@ msgctxt ""
 msgid "<ahelp hid=\"HID_AAI_FUNC_OCT2HEX\"> The result is the hexadecimal number for the octal number entered.</ahelp>"
 msgstr "<ahelp hid=\"HID_AAI_FUNC_OCT2HEX\">Pateikia aštuntainį skaičių konvertuotą į šešioliktainės sistemos skaičių.</ahelp>"
 
-#. FJ4Jp
+#. dvEBj
 #: 04060116.xhp
 msgctxt ""
 "04060116.xhp\n"
 "par_id3150523\n"
 "help.text"
-msgid "OCT2HEX(Number; Places)"
-msgstr "OCT2HEX(skaičius; vietos)"
+msgid "OCT2HEX(Number [; Places])"
+msgstr "OCT2HEX(skaičius [; vietos])"
 
 #. XAYGj
 #: 04060116.xhp
@@ -27322,14 +27475,14 @@ msgctxt ""
 msgid "<ahelp hid=\"HID_AAI_FUNC_ODDFPRICE\">Calculates the price per 100 currency units par value of a security, if the first interest date falls irregularly.</ahelp>"
 msgstr "<ahelp hid=\"HID_AAI_FUNC_ODDFPRICE\">Apskaičiuoja kainą už 100 vienetų nominalios vertės vertybinių popierių su nereguliaria pirmųjų palūkanų mokėjimo data.</ahelp>"
 
-#. SD7Pr
+#. BvVwj
 #: 04060118.xhp
 msgctxt ""
 "04060118.xhp\n"
 "par_id3146098\n"
 "help.text"
-msgid "ODDFPRICE(Settlement; Maturity; Issue; FirstCoupon; Rate; Yield; Redemption; Frequency; Basis)"
-msgstr "ODDFPRICE(pirkimas; terminas; išleidimas; pirmosios palūkanos; norma; pajamos; išpirkimas; dažnis; metodas)"
+msgid "ODDFPRICE(Settlement; Maturity; Issue; FirstCoupon; Rate; Yield; Redemption; Frequency [; Basis])"
+msgstr "ODDFPRICE(mokėjimas; terminas; išleidimas; pirmas kuponas; norma; pajamos; išpirkimas; dažnis [; Naudojamas datos nustatymo metodas])"
 
 #. kHZM8
 #: 04060118.xhp
@@ -27430,14 +27583,14 @@ msgctxt ""
 msgid "<ahelp hid=\"HID_AAI_FUNC_ODDFYIELD\">Calculates the yield of a security if the first interest date falls irregularly.</ahelp>"
 msgstr "<ahelp hid=\"HID_AAI_FUNC_ODDFYIELD\">Apskaičiuoja pajamas už 100 vienetų nominalios vertės vertybinių popierių su nereguliaria pirmųjų palūkanų mokėjimo data.</ahelp>"
 
-#. GpJqj
+#. nGSvB
 #: 04060118.xhp
 msgctxt ""
 "04060118.xhp\n"
 "par_id3152982\n"
 "help.text"
-msgid "ODDFYIELD(Settlement; Maturity; Issue; FirstCoupon; Rate; Price; Redemption; Frequency; Basis)"
-msgstr "ODDFYIELD(pirkimas; terminas; išleidimas; pirmosios palūkanos; norma; pajamos; išpirkimas; dažnis; metodas)"
+msgid "ODDFYIELD(Settlement; Maturity; Issue; FirstCoupon; Rate; Price; Redemption; Frequency [; Basis])"
+msgstr "ODDFYIELD(mokėjimas; terminas; išleidimas; pirmas kuponas; norma; kaina; išpirkimas; dažnis [; Naudojamas dienos nustatymo metodas])"
 
 #. nJXTW
 #: 04060118.xhp
@@ -27538,14 +27691,14 @@ msgctxt ""
 msgid "<ahelp hid=\"HID_AAI_FUNC_ODDLPRICE\">Calculates the price per 100 currency units par value of a security, if the last interest date falls irregularly.</ahelp>"
 msgstr "<ahelp hid=\"HID_AAI_FUNC_ODDLPRICE\">Apskaičiuoja kainą už 100 vienetų nominalios vertės vertybinių popierių su nereguliaria paskutine palūkanų mokėjimo data.</ahelp>"
 
-#. XAt33
+#. ozTCG
 #: 04060118.xhp
 msgctxt ""
 "04060118.xhp\n"
 "par_id3155262\n"
 "help.text"
-msgid "ODDLPRICE(Settlement; Maturity; LastInterest; Rate; Yield; Redemption; Frequency; Basis)"
-msgstr "ODDLPRICE(pirkimas; terminas; paskutinės palūkanos; norma; pajamos; išpirkimas; dažnis; metodas)"
+msgid "ODDLPRICE(Settlement; Maturity; LastInterest; Rate; Yield; Redemption; Frequency [; Basis])"
+msgstr "ODDLPRICE(mokėjimas; terminas; paskutinis metodas; norma; pajamos; išpirkimas; dažnis [; naudojamas dienos nustatymo metodas])"
 
 #. iTfu4
 #: 04060118.xhp
@@ -27664,14 +27817,14 @@ msgctxt ""
 msgid "<ahelp hid=\"HID_AAI_FUNC_ODDLYIELD\">Calculates the yield of a security if the last interest date falls irregularly.</ahelp>"
 msgstr "<ahelp hid=\"HID_AAI_FUNC_ODDLYIELD\">Apskaičiuoja pajamas už 100 vienetų nominalios vertės vertybinių popierių su nereguliaria paskutinių palūkanų mokėjimo data.</ahelp>"
 
-#. gVBSg
+#. pwm9F
 #: 04060118.xhp
 msgctxt ""
 "04060118.xhp\n"
 "par_id3150018\n"
 "help.text"
-msgid "ODDLYIELD(Settlement; Maturity; LastInterest; Rate; Price; Redemption; Frequency; Basis)"
-msgstr "ODDLYIELD(pirkimas; terminas; paskutinės palūkanos; norma; pajamos; išpirkimas; dažnis; pagrindas)"
+msgid "ODDLYIELD(Settlement; Maturity; LastInterest; Rate; Price; Redemption; Frequency [; Basis])"
+msgstr "ODDLYIELD(mokėjimas; terminas; paskutinis kuponas; norma; kaina; išpirkimas; dažnis [; naudojamas dienos nustatymo metodas])"
 
 #. 4X7wa
 #: 04060118.xhp
@@ -27790,14 +27943,14 @@ msgctxt ""
 msgid "<ahelp hid=\"HID_FUNC_VDB\">Returns the depreciation of an asset for a specified or partial period using a variable declining balance method.</ahelp>"
 msgstr "<ahelp hid=\"HID_FUNC_VDB\">Gražiną nurodyto laikotarpio prekės nuvertėjimą naudojant kintančio mažėjimo metodą.</ahelp>"
 
-#. PiFjC
+#. DSd3v
 #: 04060118.xhp
 msgctxt ""
 "04060118.xhp\n"
 "par_id3149025\n"
 "help.text"
-msgid "VDB(Cost; Salvage; Life; S; End; Factor; NoSwitch)"
-msgstr "VDB (vertė; likutinė vertė; naudojimo laikotarpis; pradžia; pabaiga; faktorius; metodas)"
+msgid "VDB(Cost; Salvage; Life; S; End [; Factor [; NoSwitch]])"
+msgstr "VDB(vertė; likusi vertė; naudojimo laikotarpis; pradžia; pabaiga [; koeficientas [; metodas]])"
 
 #. zGhDb
 #: 04060118.xhp
@@ -27916,14 +28069,14 @@ msgctxt ""
 msgid "If the payments take place at regular intervals, use the <link href=\"text/scalc/01/04060103.xhp#irr\" name=\"IRR\">IRR</link> function."
 msgstr "Jei mokėjimai yra reguliarūs, tai naudokite <link href=\"text/scalc/01/04060103.xhp#irr\" name=\"IRR\">IRR</link> funkciją."
 
-#. qAG6C
+#. CVXB7
 #: 04060118.xhp
 msgctxt ""
 "04060118.xhp\n"
 "par_id3149826\n"
 "help.text"
-msgid "XIRR(Values; Dates; Guess)"
-msgstr "XIRR(reikšmės; datos; prognozės)"
+msgid "XIRR(Values; Dates [; Guess])"
+msgstr "XIRR(reikšmės; datos [; prognozė])"
 
 #. GoDCv
 #: 04060118.xhp
@@ -28339,14 +28492,14 @@ msgctxt ""
 msgid "<ahelp hid=\"HID_FUNC_ZINS\">Returns the constant interest rate per period of an annuity.</ahelp>"
 msgstr "<ahelp hid=\"HID_FUNC_ZINS\">Grąžina pastovių palūkanų normą per metinės rentos laikotarpį.</ahelp>"
 
-#. 6BqLB
+#. wEYqD
 #: 04060118.xhp
 msgctxt ""
 "04060118.xhp\n"
 "par_id3158423\n"
 "help.text"
-msgid "RATE(NPer; Pmt; PV; FV; Type; Guess)"
-msgstr "RATE(NPer; Pmt; PV; FV; tipas; prognozė)"
+msgid "RATE(NPer; Pmt; PV [ ; [ FV ] [ ; [ Type ] [ ; Guess ] ] ])"
+msgstr "RATE(MOKL; MKS; DS [ ; [ BR ] [ ; [ Tipas ] [ ; prognozė ] ] ])"
 
 #. kkBfr
 #: 04060118.xhp
@@ -28447,14 +28600,14 @@ msgctxt ""
 msgid "<ahelp hid=\"HID_AAI_FUNC_INTRATE\">Calculates the annual interest rate that results when a security (or other item) is purchased at an investment value and sold at a redemption value. No interest is paid.</ahelp>"
 msgstr "<ahelp hid=\"HID_AAI_FUNC_INTRATE\">Apskaičiuojama palūkanų norma, kuri gaunama kai vertybiniai popieriai (ar kiti objektai) yra įsigyjami investicijos verte ir parduodami išperkamąja verte. Nemokamos palūkanos.</ahelp>"
 
-#. 9sGBJ
+#. kFnJn
 #: 04060118.xhp
 msgctxt ""
 "04060118.xhp\n"
 "par_id3149800\n"
 "help.text"
-msgid "INTRATE(Settlement; Maturity; Investment; Redemption; Basis)"
-msgstr "INTRATE(pirkimas; terminas; investicija; išpirkimas; metodas)"
+msgid "INTRATE(Settlement; Maturity; Investment; Redemption [; Basis])"
+msgstr "INTRATE(mokėjimas; terminas; investicija; išpirkimas [; naudojamas datos nustatymo metodas])"
 
 #. 9szb8
 #: 04060118.xhp
@@ -28537,14 +28690,14 @@ msgctxt ""
 msgid "<ahelp hid=\"HID_AAI_FUNC_COUPNCD\">Returns the date of the first interest date after the settlement date. Format the result as a date.</ahelp>"
 msgstr "<ahelp hid=\"HID_AAI_FUNC_COUPNCD\">Grąžina pirmųjų palūkanų po įsigijimo datą. Rezultatas pateikiamas datos formatu.</ahelp>"
 
-#. HLdaB
+#. 6sEfy
 #: 04060118.xhp
 msgctxt ""
 "04060118.xhp\n"
 "par_id3150423\n"
 "help.text"
-msgid "COUPNCD(Settlement; Maturity; Frequency; Basis)"
-msgstr "COUPNCD(pardavimas; terminas; dažnis; metodas)"
+msgid "COUPNCD(Settlement; Maturity; Frequency [; Basis])"
+msgstr "COUPNCD(pirkimas; terminas; dažnis [; naudojamas datos nustatymo metodas ])"
 
 #. vGKDd
 #: 04060118.xhp
@@ -28618,14 +28771,14 @@ msgctxt ""
 msgid "<ahelp hid=\"HID_AAI_FUNC_COUPDAYS\">Returns the number of days in the current interest period in which the settlement date falls.</ahelp>"
 msgstr "<ahelp hid=\"HID_AAI_FUNC_COUPDAYS\">Grąžina esamų palūkanų laikotarpio, kuriame įsigyjami vertybiniai popieriai dienų skaičių.</ahelp>"
 
-#. pRREv
+#. ALYbR
 #: 04060118.xhp
 msgctxt ""
 "04060118.xhp\n"
 "par_id3149585\n"
 "help.text"
-msgid "COUPDAYS(Settlement; Maturity; Frequency; Basis)"
-msgstr "COUPNDAYS(pardavimas; terminas; dažnis; metodas)"
+msgid "COUPDAYS(Settlement; Maturity; Frequency [; Basis])"
+msgstr "COUPDAYS(pardavimas; terminas; dažnis [; naudojamas datos nustatymo metodas])"
 
 #. UuJui
 #: 04060118.xhp
@@ -28699,14 +28852,14 @@ msgctxt ""
 msgid "<ahelp hid=\"HID_AAI_FUNC_COUPDAYSNC\">Returns the number of days from the settlement date until the next interest date.</ahelp>"
 msgstr "<ahelp hid=\"HID_AAI_FUNC_COUPDAYSNC\">Grąžina dienų skaičių nuo įsigijimo iki sekančių palūkanų.</ahelp>"
 
-#. UkhnP
+#. 2AgvC
 #: 04060118.xhp
 msgctxt ""
 "04060118.xhp\n"
 "par_id3155121\n"
 "help.text"
-msgid "COUPDAYSNC(Settlement; Maturity; Frequency; Basis)"
-msgstr "COUPNDAYSNC(pardavimas; terminas; dažnis; metodas)"
+msgid "COUPDAYSNC(Settlement; Maturity; Frequency [; Basis])"
+msgstr "COUPDAYSNC(pardavimas; terminas; dažnis [; naudojamas datos nustatymo metodas])"
 
 #. ECNxY
 #: 04060118.xhp
@@ -28780,14 +28933,14 @@ msgctxt ""
 msgid "<ahelp hid=\"HID_AAI_FUNC_COUPDAYBS\">Returns the number of days from the first day of interest payment on a security until the settlement date.</ahelp>"
 msgstr "<ahelp hid=\"HID_AAI_FUNC_COUPDAYBS\">Grąžina dienų skaičių nuo pirmųjų palūkanų mokėjimo iki pardavimo datos.</ahelp>"
 
-#. tFuDc
+#. Zbdd9
 #: 04060118.xhp
 msgctxt ""
 "04060118.xhp\n"
 "par_id3159083\n"
 "help.text"
-msgid "COUPDAYBS(Settlement; Maturity; Frequency; Basis)"
-msgstr "COUPDAYBS(mokėjimas; terminas; dažnis; metodas)"
+msgid "COUPDAYBS(Settlement; Maturity; Frequency [; Basis])"
+msgstr "COUPDAYBS(pardavimas; terminas; dažnis [; naudojamas datos nustatymo metodas])"
 
 #. CH3ja
 #: 04060118.xhp
@@ -28861,14 +29014,14 @@ msgctxt ""
 msgid "<ahelp hid=\"HID_AAI_FUNC_COUPPCD\">Returns the date of the interest date prior to the settlement date. Format the result as a date.</ahelp>"
 msgstr "<ahelp hid=\"HID_AAI_FUNC_COUPPCD\">Grąžina palūkanų prieš įsigijimą datą. Rezultatas pateikiamas datos formatu.</ahelp>"
 
-#. FBDqt
+#. a3gA8
 #: 04060118.xhp
 msgctxt ""
 "04060118.xhp\n"
 "par_id3153790\n"
 "help.text"
-msgid "COUPPCD(Settlement; Maturity; Frequency; Basis)"
-msgstr "COUPPCD(pardavimas; terminas; dažnis; metodas)"
+msgid "COUPPCD(Settlement; Maturity; Frequency [; Basis])"
+msgstr "COUPPCD(pardavimas; terminas; dažnis [; naudojamas datos nustatymo metodas])"
 
 #. DCtJY
 #: 04060118.xhp
@@ -28942,14 +29095,14 @@ msgctxt ""
 msgid "<ahelp hid=\"HID_AAI_FUNC_COUPNUM\">Returns the number of coupons (interest payments) between the settlement date and the maturity date.</ahelp>"
 msgstr "<ahelp hid=\"HID_AAI_FUNC_COUPNUM\">Grąžina atkarpų skaičių (palūkanų mokėjimų) nuo įsigijimo iki termino pabaigos.</ahelp>"
 
-#. 4YreD
+#. TbHua
 #: 04060118.xhp
 msgctxt ""
 "04060118.xhp\n"
 "par_id3153200\n"
 "help.text"
-msgid "COUPNUM(Settlement; Maturity; Frequency; Basis)"
-msgstr "COUPNUM(pardavimas; terminas; dažnis; metodas)"
+msgid "COUPNUM(Settlement; Maturity; Frequency [; Basis])"
+msgstr "COUPNUM(pardavimas; terminas; dažnis [; naudojamas datos nustatymo metodas])"
 
 #. 7oq6X
 #: 04060118.xhp
@@ -29023,14 +29176,14 @@ msgctxt ""
 msgid "<ahelp hid=\"HID_FUNC_ZINSZ\">Calculates the periodic amortizement for an investment with regular payments and a constant interest rate.</ahelp>"
 msgstr "<ahelp hid=\"HID_FUNC_ZINSZ\">Apskaičiuoja periodinį investicijos nuvertėjimas su reguliariais mokėjimais ir pastovia palūkanų norma.</ahelp>"
 
-#. fWFAi
+#. DPv99
 #: 04060118.xhp
 msgctxt ""
 "04060118.xhp\n"
 "par_id3151283\n"
 "help.text"
-msgid "IPMT(Rate; Period; NPer; PV; FV; Type)"
-msgstr "IPMT(norma; laikotarpis; MokL; DS; BS; terminas)"
+msgid "IPMT(Rate; Period; NPer; PV [; FV [; Type]])"
+msgstr "IPMT(norma; laikotarpis; MOKL; DS [; BR [; tipas]])"
 
 #. WpENP
 #: 04060118.xhp
@@ -29131,14 +29284,14 @@ msgctxt ""
 msgid "<ahelp hid=\"HID_FUNC_ZW\">Returns the future value of an investment based on periodic, constant payments and a constant interest rate (Future Value).</ahelp>"
 msgstr "<ahelp hid=\"HID_FUNC_ZW\">Grąžina periodinių investicijų laukiamą vertę su pastoviomis įmokomis ir pastovia palūkanų norma.</ahelp>"
 
-#. SbUo7
+#. Gnz7u
 #: 04060118.xhp
 msgctxt ""
 "04060118.xhp\n"
 "par_id3145215\n"
 "help.text"
-msgid "FV(Rate; NPer; Pmt; PV; Type)"
-msgstr "FV(norma; MokL; MKS; DS; metodas)"
+msgid "FV(Rate; NPer; Pmt [ ; [ PV ] [ ; Type ] ])"
+msgstr "FV(norma; MOKL; MKS [ ; [ DS ] [ ; Tipas ] ])"
 
 #. Y9GP8
 #: 04060118.xhp
@@ -29302,14 +29455,14 @@ msgctxt ""
 msgid "<ahelp hid=\"HID_FUNC_ZZR\">Returns the number of periods for an investment based on periodic, constant payments and a constant interest rate.</ahelp>"
 msgstr "<ahelp hid=\"HID_FUNC_ZZR\">Grąžina investicijų su pastoviai periodiniais mokėjimais ir pastovia palūkanų norma laikotarpių skaičių.</ahelp>"
 
-#. EBZYF
+#. Fopz2
 #: 04060118.xhp
 msgctxt ""
 "04060118.xhp\n"
 "par_id3155934\n"
 "help.text"
-msgid "NPER(Rate; Pmt; PV; FV; Type)"
-msgstr "NPER(norma; mks; DS; BR; mstodas)"
+msgid "NPER(Rate; Pmt; PV [ ; [ FV ] [ ; Type ] ])"
+msgstr "NPER(norma; MKS; DS [ ; [ BR ] [ ; tipas ] ])"
 
 #. X44J9
 #: 04060118.xhp
@@ -29455,14 +29608,14 @@ msgctxt ""
 msgid "<ahelp hid=\"HID_FUNC_KAPZ\">Returns for a given period the payment on the principal for an investment that is based on periodic and constant payments and a constant interest rate.</ahelp>"
 msgstr "<ahelp hid=\"HID_FUNC_KAPZ\">Grąžina duoto laikotarpio indėlio su reguliariomis išmokomis ir pastovia palūkanų norma išmokos sumą.</ahelp>"
 
-#. B6Kor
+#. gxWF2
 #: 04060119.xhp
 msgctxt ""
 "04060119.xhp\n"
 "par_id3146878\n"
 "help.text"
-msgid "PPMT(Rate; Period; NPer; PV; FV; Type)"
-msgstr "PPMT(norma; laikotarpis; MokL; DS; BS; metodas)"
+msgid "PPMT(Rate; Period; NPer; PV [ ; FV [ ; Type ] ])"
+msgstr "PPMT(norma; laikotarpis; MOKL; DS [ ; BR [ ; tipas ] ])"
 
 #. t4fJk
 #: 04060119.xhp
@@ -30067,14 +30220,14 @@ msgctxt ""
 msgid "<ahelp hid=\"HID_AAI_FUNC_PRICE\">Calculates the market value of a fixed interest security with a par value of 100 currency units as a function of the forecast yield.</ahelp>"
 msgstr "<ahelp hid=\"HID_AAI_FUNC_PRICE\">Apskaičiuoja fiksuotų palūkanų 100 vienetų nominalios vertės vertybinių popierių rinkos kainos prognozuojamas pajamas.</ahelp>"
 
-#. M699C
+#. k7qtv
 #: 04060119.xhp
 msgctxt ""
 "04060119.xhp\n"
 "par_id3152804\n"
 "help.text"
-msgid "PRICE(Settlement; Maturity; Rate; Yield; Redemption; Frequency; Basis)"
-msgstr "PRICE(įsigijimas; terminas; norma; pajamos; išpirkimas; dažnis; metodas)"
+msgid "PRICE(Settlement; Maturity; Rate; Yield; Redemption; Frequency [; Basis])"
+msgstr "PRICE(pardavimas; terminas; norma; pajamos; išpirkimas; dažnis [; Naudojamas datos nustatymo metodas])"
 
 #. FUP24
 #: 04060119.xhp
@@ -30175,14 +30328,14 @@ msgctxt ""
 msgid "<ahelp hid=\"HID_AAI_FUNC_PRICEDISC\">Calculates the price per 100 currency units of par value of a non-interest- bearing security.</ahelp>"
 msgstr "<ahelp hid=\"HID_AAI_FUNC_PRICEDISC\">Apskaičiuoja kainą už 100 vienetų nominalios vertės beprocentinių vertybinių popierių.</ahelp>"
 
-#. RwdWe
+#. 6dK5H
 #: 04060119.xhp
 msgctxt ""
 "04060119.xhp\n"
 "par_id3146084\n"
 "help.text"
-msgid "PRICEDISC(Settlement; Maturity; Discount; Redemption; Basis)"
-msgstr "PRICEDISC(įsigijimas; terminas; nuolaida; išpirkimas; metodas)"
+msgid "PRICEDISC(Settlement; Maturity; Discount; Redemption [; Basis])"
+msgstr "PRICEDISC(pirkimas; terminas; nuolaida; išpirkimas [; Naudojamas datos nustatymo metodas])"
 
 #. WBvCG
 #: 04060119.xhp
@@ -30265,14 +30418,14 @@ msgctxt ""
 msgid "<ahelp hid=\"HID_AAI_FUNC_PRICEMAT\">Calculates the price per 100 currency units of par value of a security, that pays interest on the maturity date.</ahelp>"
 msgstr "<ahelp hid=\"HID_AAI_FUNC_PRICEMAT\">Apskaičiuoja kainą už 100 vienetų nominalios vertės vertybinių popierių, kai palūkanos mokamos galiojimo termino pabaigoje.</ahelp>"
 
-#. rYQMJ
+#. h6UDj
 #: 04060119.xhp
 msgctxt ""
 "04060119.xhp\n"
 "par_id3155393\n"
 "help.text"
-msgid "PRICEMAT(Settlement; Maturity; Issue; Rate; Yield; Basis)"
-msgstr "PRICEMAT(įsigijimas; terminas; išleidimas; norma; pajamos; metodas)"
+msgid "PRICEMAT(Settlement; Maturity; Issue; Rate; Yield [; Basis])"
+msgstr "PRICEMAT(mokėjimas; terminas; išleidimas; norma; pajamos [; Naudojamas datos nustatymo metodas])"
 
 #. tG4zg
 #: 04060119.xhp
@@ -30526,14 +30679,14 @@ msgctxt ""
 msgid "<ahelp hid=\"HID_AAI_FUNC_MDURATION\">Calculates the modified Macauley duration of a fixed interest security in years.</ahelp>"
 msgstr "<ahelp hid=\"HID_AAI_FUNC_MDURATION\">Apskaičiuoja fiksuotų palūkanų vertybinių popierių pakeista Macauley trukmė metais.</ahelp>"
 
-#. AUGt7
+#. tGit8
 #: 04060119.xhp
 msgctxt ""
 "04060119.xhp\n"
 "par_id3148987\n"
 "help.text"
-msgid "MDURATION(Settlement; Maturity; Coupon; Yield; Frequency; Basis)"
-msgstr "MDURATION(įsigijimas; terminas; atkarpa; pajamos; dažnis; metodas)"
+msgid "MDURATION(Settlement; Maturity; Coupon; Yield; Frequency [; Basis])"
+msgstr "MDURATION(mokėjimas; terminas; kuponas; pajamos; dažnis [; Naudojamas datos nustatymo metodas])"
 
 #. xTn69
 #: 04060119.xhp
@@ -31057,14 +31210,14 @@ msgctxt ""
 msgid "<ahelp hid=\"HID_AAI_FUNC_YIELD\">Calculates the yield of a security.</ahelp>"
 msgstr "<ahelp hid=\"HID_AAI_FUNC_YIELD\">Apskaičiuoja pajamas iš vertybinių popierių.</ahelp>"
 
-#. QYCYQ
+#. iZ8rB
 #: 04060119.xhp
 msgctxt ""
 "04060119.xhp\n"
 "par_id3149744\n"
 "help.text"
-msgid "YIELD(Settlement; Maturity; Rate; Price; Redemption; Frequency; Basis)"
-msgstr "YIELD(įsigijimas; terminas; norma; kaina; išpirkimas; dažnis; metodas)"
+msgid "YIELD(Settlement; Maturity; Rate; Price; Redemption; Frequency [; Basis])"
+msgstr "YIELD(mokėjimas; terminas; norma; kaina; išpirkimas; dažnis [; Naudojamas datos nustatymo metodas])"
 
 #. C68Mv
 #: 04060119.xhp
@@ -31165,14 +31318,14 @@ msgctxt ""
 msgid "<ahelp hid=\"HID_AAI_FUNC_YIELDDISC\">Calculates the annual yield of a non-interest-bearing security.</ahelp>"
 msgstr "<ahelp hid=\"HID_AAI_FUNC_YIELDDISC\">Apskaičiuojama beprocentinių vertybinių popierių metinės pajamos.</ahelp>"
 
-#. DhjQo
+#. z5sGa
 #: 04060119.xhp
 msgctxt ""
 "04060119.xhp\n"
 "par_id3159191\n"
 "help.text"
-msgid "YIELDDISC(Settlement; Maturity; Price; Redemption; Basis)"
-msgstr "YIELDDISC(įsigijimas; terminas; kaina; išpirkimas; metodas)"
+msgid "YIELDDISC(Settlement; Maturity; Price; Redemption [; Basis])"
+msgstr "YIELDDISC(mokėjimas; terminas; kaina; išpirkimas [; Naudojamas datos nustatymo metodas])"
 
 #. fFG4g
 #: 04060119.xhp
@@ -31255,14 +31408,14 @@ msgctxt ""
 msgid "<ahelp hid=\"HID_AAI_FUNC_YIELDMAT\">Calculates the annual yield of a security, the interest of which is paid on the date of maturity.</ahelp>"
 msgstr "<ahelp hid=\"HID_AAI_FUNC_YIELDMAT\">Apskaičiuojamos vertybinių popierių metinės pajamos, kai palūkanos mokamos galiojimo termino pabaigoje.</ahelp>"
 
-#. auKJi
+#. 63YEW
 #: 04060119.xhp
 msgctxt ""
 "04060119.xhp\n"
 "par_id3159113\n"
 "help.text"
-msgid "YIELDMAT(Settlement; Maturity; Issue; Rate; Price; Basis)"
-msgstr "YIELDMAT(įsigijimas; terminas; išleidimas; norma; kaina; metodas)"
+msgid "YIELDMAT(Settlement; Maturity; Issue; Rate; Price [; Basis])"
+msgstr "YIELDMAT(mokėjimas; terminas; išleidimas; norma; kaina [; Naudojamas datos nustatymo metodas])"
 
 #. db9jM
 #: 04060119.xhp
@@ -31354,14 +31507,14 @@ msgctxt ""
 msgid "<ahelp hid=\"HID_FUNC_RMZ\">Returns the periodic payment for an annuity with constant interest rates.</ahelp>"
 msgstr "<ahelp hid=\"HID_FUNC_RMZ\">Grąžina periodinius kasmetinės rentos mokėjimus su pastoviomis palūkanų normomis.</ahelp>"
 
-#. QNdx7
+#. 94VHK
 #: 04060119.xhp
 msgctxt ""
 "04060119.xhp\n"
 "par_id3147278\n"
 "help.text"
-msgid "PMT(Rate; NPer; PV; FV; Type)"
-msgstr "PMT(Norma; MOKL; DS; BR; Tipas)"
+msgid "PMT(Rate; NPer; PV [ ; [ FV ] [ ; Type ] ])"
+msgstr "PMT(norma; MOKL; DS [ ; [ BR ] [ ; tipas ] ])"
 
 #. fGg3G
 #: 04060119.xhp
@@ -32425,14 +32578,14 @@ msgctxt ""
 msgid "<ahelp hid=\"HID_FUNC_B\">Returns the probability of a sample with binomial distribution.</ahelp>"
 msgstr "<ahelp hid=\"HID_FUNC_B\">Apskaičiuoja binominio pasiskirstymo tikimybę.</ahelp>"
 
-#. K7JLA
+#. tYKH6
 #: 04060181.xhp
 msgctxt ""
 "04060181.xhp\n"
 "par_id3148392\n"
 "help.text"
-msgid "B(Trials; SP; T1; T2)"
-msgstr "B(bandymai; SP; T1; T2)"
+msgid "B(Trials; SP; T1 [; T2])"
+msgstr "B(bandymai; tikimybė; apatinė riba [; viršutinė riba])"
 
 #. 5gx3q
 #: 04060181.xhp
@@ -32578,14 +32731,14 @@ msgctxt ""
 msgid "<ahelp hid=\"HID_FUNC_BETAINV\">Returns the inverse of the cumulative beta probability density function.</ahelp>"
 msgstr "<ahelp hid=\"HID_FUNC_BETAINV\">Apskaičiuoja atvirkštinę beta skirstinio tikimybę.</ahelp>"
 
-#. GuWiC
+#. 9kR89
 #: 04060181.xhp
 msgctxt ""
 "04060181.xhp\n"
 "par_id3156300\n"
 "help.text"
-msgid "BETAINV(Number; Alpha; Beta; Start; End)"
-msgstr "BETAINV(skaičius; alfa; beta; pradžia; pabaiga)"
+msgid "BETAINV(Number; Alpha; Beta [; Start [; End]])"
+msgstr "BETAINV(skaičius; alfa; beta [; pradžia [; pabaiga]])"
 
 #. nrAdm
 #: 04060181.xhp
@@ -32668,14 +32821,14 @@ msgctxt ""
 msgid "<ahelp hid=\"HID_FUNC_BETAINV_MS\">Returns the inverse of the cumulative beta probability density function.</ahelp>"
 msgstr "<ahelp hid=\"HID_FUNC_BETAINV_MS\">Apskaičiuoja atvirkštinę beta skirstinio tikimybę.</ahelp>"
 
-#. vUjKp
+#. xtGcA
 #: 04060181.xhp
 msgctxt ""
 "04060181.xhp\n"
 "par_id2956300\n"
 "help.text"
-msgid "BETA.INV(Number; Alpha; Beta; Start; End)"
-msgstr "BETA.INV(skaičius; alfa; beta; pradžia; pabaiga)"
+msgid "BETA.INV(Number; Alpha; Beta [; Start [; End]])"
+msgstr "BETA.INV(skaičius; alfa; beta [; pradžia [; pabaiga]])"
 
 #. 2fKqs
 #: 04060181.xhp
@@ -32758,14 +32911,14 @@ msgctxt ""
 msgid "<ahelp hid=\"HID_FUNC_BETAVERT\">Returns the beta function.</ahelp>"
 msgstr "<ahelp hid=\"HID_FUNC_BETAVERT\">Grąžina beta funkciją.</ahelp>"
 
-#. hzgeo
+#. AKfrR
 #: 04060181.xhp
 msgctxt ""
 "04060181.xhp\n"
 "par_id3147571\n"
 "help.text"
-msgid "BETADIST(Number; Alpha; Beta; Start; End; Cumulative)"
-msgstr "BETADIST(skaičius; alfa; beta; pradžia; pabaiga; didėjanti)"
+msgid "BETADIST(Number; Alpha; Beta [; Start [; End [; Cumulative]]])"
+msgstr "BETADIST(skaičius; alfa; beta [; pradžia [; pabaiga [; sudėtinė]]])"
 
 #. jfrX3
 #: 04060181.xhp
@@ -32857,14 +33010,14 @@ msgctxt ""
 msgid "<ahelp hid=\"HID_FUNC_BETADIST_MS\">Returns the beta function.</ahelp>"
 msgstr "<ahelp hid=\"HID_FUNC_BETADIST_MS\">Grąžina beta funkciją.</ahelp>"
 
-#. vBbC8
+#. qpb3A
 #: 04060181.xhp
 msgctxt ""
 "04060181.xhp\n"
 "par_id2947571\n"
 "help.text"
-msgid "BETA.DIST(Number; Alpha; Beta; Cumulative; Start; End)"
-msgstr "BETA.DIST(skaičius; alfa; beta; didėjanti; pradžia; pabaiga)"
+msgid "BETA.DIST(Number; Alpha; Beta; Cumulative [; Start [; End]])"
+msgstr "BETA.DIST(skaičius; alfa; beta; sudėtinė [; pradžia [; pabaiga]])"
 
 #. VV9bt
 #: 04060181.xhp
@@ -34297,14 +34450,14 @@ msgctxt ""
 msgid "<ahelp hid=\".\">Returns the value of the probability density function or the cumulative distribution function for the chi-square distribution.</ahelp>"
 msgstr "<ahelp hid=\".\">Grąžina tikimybės tankio funkciją arba kumuliatyvinę paskirstymo funkciją chi kvadratiniam paskirstymui.</ahelp>"
 
-#. yG245
+#. 9t3Cb
 #: 04060181.xhp
 msgctxt ""
 "04060181.xhp\n"
 "par_id0119200902395679\n"
 "help.text"
-msgid "CHISQDIST(Number; Degrees Of Freedom; Cumulative)"
-msgstr "CHISQDIST(skaičius; laisvės laipsnis; didėjimas)"
+msgid "CHISQDIST(Number; Degrees Of Freedom [; Cumulative])"
+msgstr "CHISQDIST(skaičius; laisvės laipsnis [; sudėtinė])"
 
 #. nLEaF
 #: 04060181.xhp
@@ -35044,14 +35197,14 @@ msgctxt ""
 msgid "<ahelp hid=\"HID_FUNC_F_DIST_LT\">Calculates the values of the left tail of the F distribution.</ahelp>"
 msgstr "<ahelp hid=\"HID_FUNC_F_DIST_LT\">Apskaičiuoja  kairiojo tolydumo F skirstinio reikšmes.</ahelp>"
 
-#. CxzQP
+#. kNsgP
 #: 04060182.xhp
 msgctxt ""
 "04060182.xhp\n"
 "par_id2945826\n"
 "help.text"
-msgid "F.DIST(Number; DegreesFreedom1; DegreesFreedom2; Cumulative)"
-msgstr "F.DIST(skaičius; 1 laisvės laipsnis; 2 laisvės laipsnis; kumuliatyvumas)"
+msgid "F.DIST(Number; DegreesFreedom1; DegreesFreedom2 [; Cumulative])"
+msgstr "F.DIST(skaičius; 1 laisvės laipsnis; 2 laisvės laipsnis [; sudėtinė])"
 
 #. TeZSu
 #: 04060182.xhp
@@ -35521,14 +35674,14 @@ msgctxt ""
 msgid "The inverse function is GAMMAINV."
 msgstr "Atvirkštinė funkcijos GAMMAINV funkcija."
 
-#. 5bF6b
+#. ER624
 #: 04060182.xhp
 msgctxt ""
 "04060182.xhp\n"
 "par_id3155436\n"
 "help.text"
-msgid "GAMMADIST(Number; Alpha; Beta; C)"
-msgstr "GAMMADIST(skaičius; alfa; beta; C)"
+msgid "GAMMADIST(Number; Alpha; Beta [; C])"
+msgstr "GAMMADIST(skaičius; alfa; beta [; sudėtinė])"
 
 #. erGE4
 #: 04060182.xhp
@@ -35773,23 +35926,14 @@ msgctxt ""
 msgid "<ahelp hid=\"HID_FUNC_GEOMITTEL\">Returns the geometric mean of a sample.</ahelp>"
 msgstr "<ahelp hid=\"HID_FUNC_GEOMITTEL\">Grąžina aibės geometrinį vidurkį.</ahelp>"
 
-#. T8r4b
+#. YBnZG
 #: 04060182.xhp
 msgctxt ""
 "04060182.xhp\n"
 "par_id3153720\n"
 "help.text"
-msgid "GEOMEAN(Number1; Number2; ...; Number30)"
-msgstr "GEOMEAN(1 skaičius; 2 skaičius; ...; 30 skaičius)"
-
-#. UhYAQ
-#: 04060182.xhp
-msgctxt ""
-"04060182.xhp\n"
-"par_id3152585\n"
-"help.text"
-msgid "<emph>Number1, Number2, ..., Number30</emph> are numeric arguments or ranges that represent a random sample."
-msgstr "<emph>1 skaičius, 2 skaičius, ..., 30 skaičius</emph> – atsitiktinės aibės elementai, kurių skaičiuojamas geometrinis vidurkis."
+msgid "GEOMEAN(<embedvar href=\"text/scalc/01/ful_func.xhp#number255_1\" markup=\"keep\"/>)"
+msgstr "GEOMEAN(<embedvar href=\"text/scalc/01/ful_func.xhp#number255_1\" markup=\"keep\"/>)"
 
 #. EGwom
 #: 04060182.xhp
@@ -35890,14 +36034,14 @@ msgctxt ""
 msgid "<ahelp hid=\"HID_FUNC_GTEST\">Calculates the probability of observing a z-statistic greater than the one computed based on a sample.</ahelp>"
 msgstr "<ahelp hid=\"HID_FUNC_GTEST\">Apskaičiuoja z statistinio kriterijaus, didesnio už apskaičiuotąjį pagal imtį, tikimybę.</ahelp>"
 
-#. Wi4MG
+#. GeqDU
 #: 04060182.xhp
 msgctxt ""
 "04060182.xhp\n"
 "par_id3153274\n"
 "help.text"
-msgid "ZTEST(Data; mu; Sigma)"
-msgstr "ZTEST(duomenys; nv; Sigma)"
+msgid "ZTEST(Data; mu [; Sigma])"
+msgstr "ZTEST(duomenys; mi [; sigma])"
 
 #. RKyE7
 #: 04060182.xhp
@@ -35962,14 +36106,14 @@ msgctxt ""
 msgid "<ahelp hid=\"HID_FUNC_Z_TEST_MS\">Calculates the probability of observing a z-statistic greater than the one computed based on a sample.</ahelp>"
 msgstr "<ahelp hid=\"HID_FUNC_Z_TEST_MS\">Apskaičiuoja z statistinio kriterijaus, didesnio už apskaičiuotąjį pagal imtį, tikimybę.</ahelp>"
 
-#. efbeG
+#. Ug83K
 #: 04060182.xhp
 msgctxt ""
 "04060182.xhp\n"
 "par_id2953274\n"
 "help.text"
-msgid "Z.TEST(Data; mu; Sigma)"
-msgstr "Z.TEST(duomenys; nv; Sigma)"
+msgid "Z.TEST(Data; mu [; Sigma])"
+msgstr "Z.TEST(duomenys; mi [; sigma])"
 
 #. 2peSH
 #: 04060182.xhp
@@ -36034,23 +36178,14 @@ msgctxt ""
 msgid "<ahelp hid=\"HID_FUNC_HARMITTEL\">Returns the harmonic mean of a data set.</ahelp>"
 msgstr "<ahelp hid=\"HID_FUNC_HARMITTEL\">Grąžina harmoninį imties vidurkį.</ahelp>"
 
-#. xroLU
+#. EKBXf
 #: 04060182.xhp
 msgctxt ""
 "04060182.xhp\n"
 "par_id3149287\n"
 "help.text"
-msgid "HARMEAN(Number1; Number2; ...; Number30)"
-msgstr "HARMEAN(1 skaičius; 2 skaičius; ...; 30 skaičius)"
-
-#. gT7zX
-#: 04060182.xhp
-msgctxt ""
-"04060182.xhp\n"
-"par_id3154303\n"
-"help.text"
-msgid "<emph>Number1, Number2, ..., Number30</emph> are up to 30 values or ranges, that can be used to calculate the harmonic mean."
-msgstr "<emph>1 skaičius, 2 skaičius, ..., 30 skaičius</emph> – iki 30 reikšmių, kurių harmoninis vidurkis skaičiuojamas."
+msgid "HARMEAN(<embedvar href=\"text/scalc/01/ful_func.xhp#number255_1\" markup=\"keep\"/>)"
+msgstr "HARMEAN(<embedvar href=\"text/scalc/01/ful_func.xhp#number255_1\" markup=\"keep\"/>)"
 
 #. DMCH7
 #: 04060182.xhp
@@ -36088,14 +36223,14 @@ msgctxt ""
 msgid "<ahelp hid=\"HID_FUNC_HYPGEOMVERT\">Returns the hypergeometric distribution.</ahelp>"
 msgstr "<ahelp hid=\"HID_FUNC_HYPGEOMVERT\">Grąžina hipergeometrinį pasiskirstymą.</ahelp>"
 
-#. 5uQ3c
+#. BEUMD
 #: 04060182.xhp
 msgctxt ""
 "04060182.xhp\n"
 "par_id3155388\n"
 "help.text"
-msgid "HYPGEOMDIST(X; NSample; Successes; NPopulation[; Cumulative])"
-msgstr "HYPGEOMDIST(X; N imtis; sėkmė; n populiacija[; sudėtinė])"
+msgid "HYPGEOMDIST(X; NSample; Successes; NPopulation [; Cumulative])"
+msgstr "HYPGEOMDIST(palankių įvykių skaičius; imties dydis; palankūs įvykiai; populiacijos dydis [; sudėtinė])"
 
 #. ingyW
 #: 04060182.xhp
@@ -37033,14 +37168,14 @@ msgctxt ""
 msgid "<ahelp hid=\"HID_FUNC_LOGINV\">Returns the inverse of the lognormal distribution.</ahelp>"
 msgstr "<ahelp hid=\"HID_FUNC_LOGINV\">Grąžina atvirkštinį lognormalųjį pasiskirstymą.</ahelp>"
 
-#. D9Eg5
+#. kK6DB
 #: 04060183.xhp
 msgctxt ""
 "04060183.xhp\n"
 "par_id3153049\n"
 "help.text"
-msgid "LOGINV(Number; Mean; StDev)"
-msgstr "LOGINV(skaičius; vidurkis; standartinis nuokrypis)"
+msgid "LOGINV(Number [; Mean [; StDev]])"
+msgstr "LOGINV(skaičius [; vidurkis [; standartinis nuokrypis]])"
 
 #. uqfDA
 #: 04060183.xhp
@@ -37186,14 +37321,14 @@ msgctxt ""
 msgid "<ahelp hid=\"HID_FUNC_LOGNORMVERT\">Returns the values of a lognormal distribution.</ahelp>"
 msgstr "<ahelp hid=\"HID_FUNC_LOGNORMVERT\">Grąžina lognormaliojo skirstinio reikšmes.</ahelp>"
 
-#. FB6kb
+#. r4obV
 #: 04060183.xhp
 msgctxt ""
 "04060183.xhp\n"
 "par_id3150686\n"
 "help.text"
-msgid "LOGNORMDIST(Number; Mean; StDev; Cumulative)"
-msgstr "LOGNORMDIST(skaičius; vidurkis; standartinis nuokrypis; kumuliatyvumas)"
+msgid "LOGNORMDIST(Number [; Mean [; StDev [; Cumulative]]])"
+msgstr "LOGNORMDIST(skaičius [; vidurkis [; standartinis nuokrypis [; sudėtinė]]])"
 
 #. BiGC6
 #: 04060183.xhp
@@ -38275,14 +38410,14 @@ msgctxt ""
 msgid "<ahelp hid=\"HID_FUNC_NORMVERT\">Returns the density function or the normal cumulative distribution.</ahelp>"
 msgstr "<ahelp hid=\"HID_FUNC_NORMVERT\">Grąžina nuokrypio funkciją arba normalųjį kumuliatyvų pasiskirstymą.</ahelp>"
 
-#. vgosP
+#. Mogit
 #: 04060184.xhp
 msgctxt ""
 "04060184.xhp\n"
 "par_id3150613\n"
 "help.text"
-msgid "NORMDIST(Number; Mean; StDev; C)"
-msgstr "NORMDIST(skaičius; vidurkis; standartinis nuokrypis; C)"
+msgid "NORMDIST(Number; Mean; StDev [; C])"
+msgstr "NORMDIST(skaičius; vidurkis; standartinis nuokrypis [; sudėtinė])"
 
 #. CoXtp
 #: 04060184.xhp
@@ -38590,14 +38725,14 @@ msgctxt ""
 msgid "<ahelp hid=\"HID_FUNC_POISSON\">Returns the Poisson distribution.</ahelp>"
 msgstr "<ahelp hid=\"HID_FUNC_POISSON\">Grąžina Puasono skirstinį.</ahelp>"
 
-#. hdmir
+#. SH95D
 #: 04060184.xhp
 msgctxt ""
 "04060184.xhp\n"
 "par_id3146093\n"
 "help.text"
-msgid "POISSON(Number; Mean; C)"
-msgstr "POISSON(skaičius; vidurkis; C)"
+msgid "POISSON(Number; Mean [; C])"
+msgstr "POISSON(skaičius; vidurkis [; sudėtinė])"
 
 #. mZnNF
 #: 04060184.xhp
@@ -38662,14 +38797,14 @@ msgctxt ""
 msgid "<ahelp hid=\"HID_FUNC_POISSON_DIST_MS\">Returns the Poisson distribution.</ahelp>"
 msgstr "<ahelp hid=\"HID_FUNC_POISSON_DIST_MS\">Grąžina Puasono skirstinį.</ahelp>"
 
-#. MCzFk
+#. JHGHg
 #: 04060184.xhp
 msgctxt ""
 "04060184.xhp\n"
 "par_id2946093\n"
 "help.text"
-msgid "POISSON.DIST(Number; Mean; C)"
-msgstr "POISSON.DIST(skaičius; vidurkis; C)"
+msgid "POISSON.DIST(Number; Mean [; C])"
+msgstr "POISSON.DIST(skaičius; vidurkis [; sudėtinė])"
 
 #. jnjk7
 #: 04060184.xhp
@@ -38950,14 +39085,14 @@ msgctxt ""
 msgid "<ahelp hid=\"HID_FUNC_QUANTILSRANG\">Returns the percentage rank of a value in a sample.</ahelp>"
 msgstr "<ahelp hid=\"HID_FUNC_QUANTILSRANG\">Grąžina imties reikšmių procentinį rangą.</ahelp>"
 
-#. 43275
+#. AAjBU
 #: 04060184.xhp
 msgctxt ""
 "04060184.xhp\n"
 "par_id3147238\n"
 "help.text"
-msgid "PERCENTRANK(Data; Value; Significance)"
-msgstr "PERCENTRANK(duomuo; reikšmė; reikšmingumas)"
+msgid "PERCENTRANK(Data; Value [; Significance])"
+msgstr "PERCENTRANK(duomuo; reikšmė [; reikšmingumas])"
 
 #. hPEyS
 #: 04060184.xhp
@@ -39031,14 +39166,14 @@ msgctxt ""
 msgid "The difference between <item type=\"input\">PERCENTRANK.INC</item> and <item type=\"input\">PERCENTRANK.EXC</item> is that <item type=\"input\">PERCENTRANK.INC</item> calculates a value in the range 0 to 1 inclusive, whereas the <item type=\"input\">PERCENTRANK.EXC</item> function calculates a value in the range 0 to 1 exclusive."
 msgstr "Skirtumas tarp <item type=\"input\">PERCENTRANK.INC</item> ir <item type=\"input\">PERCENTRANK.EXC</item> yra tai, kad <item type=\"input\">PERCENTRANK.INC</item> skaičiuoja reikšmę intervale nuo 0 iki 1 imtinai, o funkcija <item type=\"input\">PERCENTRANK.EXC</item> skaičiuoja reikšmę intervala neįskaitant intervalo galų."
 
-#. 7KcdX
+#. FFw3f
 #: 04060184.xhp
 msgctxt ""
 "04060184.xhp\n"
 "par_id2847238\n"
 "help.text"
-msgid "PERCENTRANK.EXC(Data; Value; Significance)"
-msgstr "PERCENTRANK.EXC(duomuo; reikšmė; reikšmingumas)"
+msgid "PERCENTRANK.EXC(Data; Value [; Significance])"
+msgstr "PERCENTRANK.EXC(duomuo; reikšmė [; reikšmingumas])"
 
 #. paUED
 #: 04060184.xhp
@@ -39112,14 +39247,14 @@ msgctxt ""
 msgid "The difference between <item type=\"input\">PERCENTRANK.INC</item> and <item type=\"input\">PERCENTRANK.EXC</item> is that <item type=\"input\">PERCENTRANK.INC</item> calculates a value in the range 0 to 1 inclusive, whereas the <item type=\"input\">PERCENTRANK.EXC</item> function calculates a value in the range 0 to 1 exclusive."
 msgstr "Skirtumas tarp <item type=\"input\">PERCENTRANK.INC</item> ir <item type=\"input\">PERCENTRANK.EXC</item> yra tai, kad <item type=\"input\">PERCENTRANK.INC</item> skaičiuoja reikšmę intervale nuo 0 iki 1 imtinai, o funkcija <item type=\"input\">PERCENTRANK.EXC</item> skaičiuoja reikšmę intervala neįskaitant intervalo galų."
 
-#. GHbGk
+#. YfPDe
 #: 04060184.xhp
 msgctxt ""
 "04060184.xhp\n"
 "par_id2947238\n"
 "help.text"
-msgid "PERCENTRANK.INC(Data; Value; Significance)"
-msgstr "PERCENTRANK.INC(duomuo; reikšmė; reikšmingumas)"
+msgid "PERCENTRANK.INC(Data; Value [; Significance])"
+msgstr "PERCENTRANK.INC(duomuo; reikšmė [; reikšmingumas])"
 
 #. QmR4b
 #: 04060184.xhp
@@ -39409,14 +39544,14 @@ msgctxt ""
 msgid "<ahelp hid=\"HID_FUNC_RANG\">Returns the rank of a number in a sample.</ahelp>"
 msgstr "<ahelp hid=\"HID_FUNC_RANG\">Grąžina skaičiaus rangą imtyje.</ahelp>"
 
-#. EUgG4
+#. oVk4F
 #: 04060185.xhp
 msgctxt ""
 "04060185.xhp\n"
 "par_id3153250\n"
 "help.text"
-msgid "RANK(Value; Data; Type)"
-msgstr "RANK(reikšmė; duomuo; tipas)"
+msgid "RANK(Value; Data [; Type])"
+msgstr "RANK(reikšmė; duomuo [;tipas])"
 
 #. AzAQx
 #: 04060185.xhp
@@ -39508,14 +39643,14 @@ msgctxt ""
 msgid "The difference between <item type=\"input\">RANK.AVG</item> and <item type=\"input\">RANK.EQ</item> occurs when there are duplicates in the list of values. The <item type=\"input\">RANK.EQ</item> function returns the lower rank, whereas the <item type=\"input\">RANK.AVG</item> function returns the average rank."
 msgstr "Skirtumas tarp funkcijų <item type=\"input\">RANK.AVG</item> ir <item type=\"input\">RANK.EQ</item> atsiranda, kai srityje dubliuojasi reikšmės. Funkcija <item type=\"input\">RANK.EQ</item> grąžina mažesnį rangą, o <item type=\"input\">RANK.AVG</item> gražina vidurkį."
 
-#. aqAAg
+#. f8zpD
 #: 04060185.xhp
 msgctxt ""
 "04060185.xhp\n"
 "par_id2953250\n"
 "help.text"
-msgid "RANK.AVG(Value; Data; Type)"
-msgstr "RANK.AVG(reikšmė; duomuo; tipas)"
+msgid "RANK.AVG(Value; Data [; Type])"
+msgstr "RANK.AVG(reikšmė; duomuo[; tipas])"
 
 #. 9jn8F
 #: 04060185.xhp
@@ -39607,14 +39742,14 @@ msgctxt ""
 msgid "The difference between <item type=\"input\">RANK.AVG</item> and <item type=\"input\">RANK.EQ</item> occurs when there are duplicates in the list of values. The <item type=\"input\">RANK.EQ</item> function returns the lower rank, whereas the <item type=\"input\">RANK.AVG</item> function returns the average rank."
 msgstr "Skirtumas tarp funkcijų <item type=\"input\">RANK.AVG</item> ir <item type=\"input\">RANK.EQ</item> atsiranda, kai srityje dubliuojasi reikšmės. Funkcija <item type=\"input\">RANK.EQ</item> grąžina mažesnį rangą, o <item type=\"input\">RANK.AVG</item> gražina vidurkį."
 
-#. gTjX5
+#. bGAcu
 #: 04060185.xhp
 msgctxt ""
 "04060185.xhp\n"
 "par_id2853250\n"
 "help.text"
-msgid "RANK.EQ(Value; Data; Type)"
-msgstr "RANK.EQ(reikšmė; duomuo; tipas)"
+msgid "RANK.EQ(Value; Data [; Type])"
+msgstr "RANK.EQ(reikšmė; duomuo [; tipas])"
 
 #. mncnk
 #: 04060185.xhp
@@ -41749,14 +41884,14 @@ msgctxt ""
 msgid "<ahelp hid=\"HID_FUNC_WAHRSCHBEREICH\">Returns the probability that values in a range are between two limits.</ahelp> If there is no <item type=\"literal\">End</item> value, this function calculates the probability based on the principle that the Data values are equal to the value of <item type=\"literal\">Start</item>."
 msgstr "<ahelp hid=\"HID_FUNC_WAHRSCHBEREICH\">Grąžina tikimybę, kad reikšmė yra tarp nurodytų dviejų rėžių.</ahelp> Jei nenurodytas <item type=\"literal\">galinis rėžis</item>, tai funkcija apskaičiuoja tikimybę, kad duota reikšmės lygi <item type=\"literal\">pradiniam rėžiui</item>."
 
-#. Ffebs
+#. GhGG7
 #: 04060185.xhp
 msgctxt ""
 "04060185.xhp\n"
 "par_id3147330\n"
 "help.text"
-msgid "PROB(Data; Probability; Start; End)"
-msgstr "PROB(duomenys; tikimybė; pradžios rėžis; pabaigos rėžis)"
+msgid "PROB(Data; Probability; Start [; End])"
+msgstr "PROB(duomuo; tikimybė; pradžia [; pabaiga])"
 
 #. Reoxn
 #: 04060185.xhp
@@ -54250,131 +54385,131 @@ msgctxt ""
 msgid "The result is presented in the string format and has the character \"i\" or \"j\" as an imaginary unit."
 msgstr "Rezultatas pateikimas eilute ir ženklai „i“ arba „j“ reiškia menamus vienetus."
 
-#. 3yZht
+#. CT9jZ
 #: ful_func.xhp
 msgctxt ""
 "ful_func.xhp\n"
 "par_id71584446760037\n"
 "help.text"
-msgid "<variable id=\"string255_1\">String 1[; String 2][; … ;[String 255]]</variable>"
-msgstr "<variable id=\"string255_1\">1 eilutė[; 2 eilutė][; … ;[255 eilutė]]</variable>"
+msgid "<variable id=\"string255_1\">String 1 [; String 2 [; …  [; String 255]]]</variable>"
+msgstr "<variable id=\"string255_1\">1 eilutė [; 2 eilutė [; …  [; 255 eilutė]]]</variable>"
 
-#. aZAJy
+#. 2UTGE
 #: ful_func.xhp
 msgctxt ""
 "ful_func.xhp\n"
 "par_id631556228516997\n"
 "help.text"
-msgid "<emph>String 1[; String 2][; … ;[String 255]]</emph> are strings,  references to cells or to cell ranges of strings."
-msgstr "<emph>1 eilutė[; 2 eilutė][; … ;[266 eilutė]]</emph> – eilutės, langelių nuorodos ar eilučių langelių sritis."
+msgid "<emph>String 1, String 2, … , String 255</emph> are strings, references to cells or to cell ranges of strings."
+msgstr "<emph>1 eilutė, 2 eilutė, … , 255 eilutė</emph> – eilutės, langelių arba langelių blokų nuorodos."
 
-#. Gx7GF
+#. MFitb
 #: ful_func.xhp
 msgctxt ""
 "ful_func.xhp\n"
 "par_id401584447957914\n"
 "help.text"
-msgid "<variable id=\"integer255_1\">Integer 1[; Integer 2][; … ;[Integer 255]]</variable>"
-msgstr "<variable id=\"integer255_1\">1 sveikasis[; 2 sveikasis][; … ;[255 sveikasis]]</variable>"
+msgid "<variable id=\"integer255_1\">Integer 1 [; Integer 2 [; … [; Integer 255]]]</variable>"
+msgstr "<variable id=\"integer255_1\">1 sveikieji [; 2 sveikieji [; … [; 255 sveikieji]]]</variable>"
 
-#. sCxFS
+#. yUDDY
 #: ful_func.xhp
 msgctxt ""
 "ful_func.xhp\n"
 "par_id1001584395844941\n"
 "help.text"
-msgid "<emph>Integer 1[; Integer 2][; … ;[Integer 255]]</emph> are integers, references to cells or to cell ranges of integers."
-msgstr "<emph>1 sveikasis[; 2 sveikasis][; … ;[255 sveikasis]]</emph> – sveikieji skaičiai, nuorodas ar sveikųjų skaičių langelių sritis."
+msgid "<emph>Integer 1, Integer 2, … , Integer 255</emph> are integers, references to cells or to cell ranges of integers."
+msgstr "<emph>1 sveikieji, 2 sveikieji, … , 255 sveikieji</emph> – sveikieji, nuorodos į langelius arba langelių blokus."
 
-#. KJbXQ
+#. B6MF9
 #: ful_func.xhp
 msgctxt ""
 "ful_func.xhp\n"
 "par_id101584447971004\n"
 "help.text"
-msgid "<variable id=\"number254_1\">Number 1[; Number 2][; … ;[Number 254]]</variable>"
-msgstr "<variable id=\"number254_1\">1 skaičius[; 2 skaičius][; … ;[254 skaičius]]</variable>"
+msgid "<variable id=\"number254_1\">Number 1 [; Number 2 [; … [; Number 254]]]</variable>"
+msgstr "<variable id=\"number254_1\">1 skaičius [; 2 skaičius [; … [; 254 skaičius]]]</variable>"
 
-#. JPXDA
+#. b96Za
 #: ful_func.xhp
 msgctxt ""
 "ful_func.xhp\n"
 "par_id931584305947010\n"
 "help.text"
-msgid "<emph>Number 1[; Number 2][; … ;[Number 254]]</emph> are numbers, references to cells or to cell ranges of numbers."
-msgstr "<emph>1 skaičius[; 2 skaičius][; … ;[254 skaičius]]</emph> – skaičiai, langelių nuorodos arba skaičių langelių sritis."
+msgid "<emph>Number 1, Number 2, … , Number 254</emph> are numbers, references to cells or to cell ranges of numbers."
+msgstr "<emph>1 skaičius, 2 skaičius, … , 254 skaičius</emph> – skaičiai, nuorodos į langelius arba langelių blokus."
 
-#. y6bDp
+#. kEEQr
 #: ful_func.xhp
 msgctxt ""
 "ful_func.xhp\n"
 "par_id101584447970004\n"
 "help.text"
-msgid "<variable id=\"number255_1\">Number 1[; Number 2][; … ;[Number 255]]</variable>"
-msgstr "<variable id=\"number255_1\">1 skaičius[; 2 skaičius][; … ;[255 skaičius]]</variable>"
+msgid "<variable id=\"number255_1\">Number 1 [; Number 2 [; … [; Number 255]]]</variable>"
+msgstr "<variable id=\"number255_1\">1 skaičius [; 2 skaičius [; … [; 255 skaičius]]]</variable>"
 
-#. BXZo8
+#. QKcwi
 #: ful_func.xhp
 msgctxt ""
 "ful_func.xhp\n"
 "par_id931584395947010\n"
 "help.text"
-msgid "<emph>Number 1[; Number 2][; … ;[Number 255]]</emph> are numbers, references to cells or to cell ranges of numbers."
-msgstr "<emph>1 skaičius[; 2 skaičius][; … ;[255 skaičius]]</emph> – skaičiai, langelių nuorodos arba skaičių langelių sritis."
+msgid "<emph>Number 1, Number 2, … , Number 255</emph> are numbers, references to cells or to cell ranges of numbers."
+msgstr "<emph>1 skaičius, 2 skaičius, … , 255 skaičius</emph> – skaičiai, nuorodos į langelius arba langelių blokus."
 
-#. AWCP7
+#. RLXz8
 #: ful_func.xhp
 msgctxt ""
 "ful_func.xhp\n"
 "par_id291584447988879\n"
 "help.text"
-msgid "<variable id=\"logical255_1\">Logical 1[; Logical 2][; … ;[Logical 255]]</variable>"
-msgstr "<variable id=\"logical255_1\">1 loginė reikšmė[; 2 loginė reikšmė][; … ;[255 loginė reikšmė]]</variable>"
+msgid "<variable id=\"logical255_1\">Logical 1 [; Logical 2 [; … [; Logical 255]]]</variable>"
+msgstr "<variable id=\"logical255_1\">1 loginė reikšmė [; 2 loginė reikšmė [; … [; 255 loginė reikšmė]]]</variable>"
 
-#. CzEmY
+#. JTdAs
 #: ful_func.xhp
 msgctxt ""
 "ful_func.xhp\n"
 "par_id931584395957010\n"
 "help.text"
-msgid "<emph>Logical 1[; Logical 2][; … ;[Logical 255]]</emph> are boolean values, references to cells or to cell ranges of logical values."
-msgstr "<emph>1 loginė reikšmė[; 2 loginė reikšmė][; … ;[255 loginė reikšmė]]</emph> – loginės reikšmės, langelių nuorodas arba loginių reikšmių langelių sritis."
+msgid "<emph>Logical 1, Logical 2,  … , Logical 255</emph> are boolean values, references to cells or to cell ranges of logical values."
+msgstr "<emph>1 loginė reikšmė, 2 loginė reikšmė,  … , 255 loginė reikšmė</emph> – loginės reikšmės, nuorodos į langelius arba langelių blokus, kuriuose yra loginės reikšmės."
 
-#. cjCCW
+#. unnEF
 #: ful_func.xhp
 msgctxt ""
 "ful_func.xhp\n"
 "par_id91584448008632\n"
 "help.text"
-msgid "<variable id=\"complex255_1\">Complex 1[; Complex 2][; … ;[Complex 255]]</variable>"
-msgstr "<variable id=\"complex255_1\">1 kompleksinis skaičius[; 2 kompleksinis skaičius][; … ;[255 kompleksinis skaičius]]</variable>"
+msgid "<variable id=\"complex255_1\">Complex 1 [; Complex 2 [; … [; Complex 255]]]</variable>"
+msgstr "<variable id=\"complex255_1\">1 kompleksinis [;  2 kompleksinis [; … [; 255 kompleksinis]]]</variable>"
 
-#. AfffT
+#. NuCbV
 #: ful_func.xhp
 msgctxt ""
 "ful_func.xhp\n"
 "par_id931584335947010\n"
 "help.text"
-msgid "<emph>Complex 1[; Complex 2][; … ;[Complex 255]]</emph> are complex numbers, references to cells or to cell ranges of complex numbers. Complex numbers are entered in the form \"x+yi\" or \"x+yj\"."
-msgstr "<emph>1 kompleksinis skaičius[; 2 kompleksinis skaičius][; … ;[255 kompleksinis skaičius]]</emph> – kompleksiniai skaičiai, langelių nuorodos arba komplenksinių skaičių langelių sritis. Komplekciniai skaičiai įvedami pavidalu  „x+yi“ arba „x+yj“."
+msgid "<emph>Complex 1, Complex 2, … ,Complex 255</emph> are complex numbers, references to cells or to cell ranges of complex numbers. Complex numbers are entered in the form \"x+yi\" or \"x+yj\"."
+msgstr "<emph>1 kompleksinis, 2 kompleksinis, ..., 255 kompleksinis</emph> – kompleksiniai skaičiai, nuorodos į langelius arba langelių blokus, kuriuose yra kompleksiniai skaičiai. Kompleksiniai skaičiai pateikiami išraiškomis  „x+yi“ arba „x+yj“."
 
-#. SDfoG
+#. jWF7Y
 #: ful_func.xhp
 msgctxt ""
 "ful_func.xhp\n"
 "par_id61584448028298\n"
 "help.text"
-msgid "<variable id=\"reference255_1\">Reference 1[; Reference 2][; … ;[Reference 255]]</variable>"
-msgstr "<variable id=\"reference255_1\">1 nuoroda[; 2 nuoroda][; … ;[255 nuoroda]]</variable>"
+msgid "<variable id=\"reference255_1\">Reference 1 [; Reference 2 [; … [; Reference 255]]]</variable>"
+msgstr "<variable id=\"reference255_1\">1 nuoroda [; 2 nuoroda [; … [; 255 nuoroda]]]</variable>"
 
-#. NwpZa
+#. dxwtx
 #: ful_func.xhp
 msgctxt ""
 "ful_func.xhp\n"
 "par_id431584335947010\n"
 "help.text"
-msgid "<emph>Reference 1[; Reference 2][; … ;[Reference 255]]</emph> are references to cells."
-msgstr "<emph>1 nuoroda[; 2 nuoroda][; … ;[255 nuoroda]]</emph> – langelių nuorodos."
+msgid "<emph>Reference 1, Reference 2, … ,Reference 255</emph> are references to cells."
+msgstr "<emph>1 nuoroda, 2 nuoroda, … , 255 nuoroda</emph> arba nuorodos į langelius."
 
 #. 8DbP2
 #: func_aggregate.xhp
@@ -55510,14 +55645,14 @@ msgctxt ""
 msgid "If the spreadsheet is exported to Microsoft Excel, the CEILING function is exported as the equivalent CEILING.MATH function that has existed since Excel 2013. If you plan to use the spreadsheet with earlier Excel versions, use either CEILING.PRECISE that has existed since Excel 2010, or CEILING.XCL that is exported as the CEILING function compatible with all Excel versions."
 msgstr "Jei skaičiuoklės dokumentas yra eksportuojamas į MS Excel, funkcija CEILING eksportuojama į funkciją CEILING.MATH, kuri naudojama nuo Excel 2013 versijos. Jei galvojate naudoti skaičiuoklės dokumentą su ankstesne Excel versija, tai naudokite funkcija CEILING.PRECISE, kuri naudojama nuo Excel 2010 versijos arba CEILING.XCL, kuri eksportuojama kaip funkcija CEILING suderinama su Excel versijomis."
 
-#. mZwNV
+#. 3DwLL
 #: func_ceiling.xhp
 msgctxt ""
 "func_ceiling.xhp\n"
 "par_id3153454\n"
 "help.text"
-msgid "CEILING(Number[; Significance[; Mode]])"
-msgstr "CEILING(skaičius[; reikšmingumas[; metodas]])"
+msgid "CEILING(Number [; Significance [; Mode]])"
+msgstr "CEILING(skaičius [; reikšmingumas [; Metodas]])"
 
 #. XHjhc
 #: func_ceiling.xhp
@@ -55555,14 +55690,14 @@ msgctxt ""
 msgid "<input>=CEILING(3.45)</input> returns 4."
 msgstr "<input>=CEILING(3,45)</input> grąžina 4."
 
-#. ztdNi
+#. UTtFZ
 #: func_ceiling.xhp
 msgctxt ""
 "func_ceiling.xhp\n"
 "par_id921586208142416\n"
 "help.text"
-msgid "<input>=CEILING(3.45, 3)</input> returns 6."
-msgstr "<input>=CEILING(3,45, 3)</input> grąžina 6."
+msgid "<input>=CEILING(3.45; 3)</input> returns 6."
+msgstr "<input>=CEILING(3,45; 3)</input> grąžina 6."
 
 #. XGfA3
 #: func_ceiling.xhp
@@ -55573,23 +55708,23 @@ msgctxt ""
 msgid "<input>=CEILING(-1.234)</input> returns -1."
 msgstr "<input>=CEILING(-1,234)</input> grąžina -1."
 
-#. ss5WP
+#. ZWjxy
 #: func_ceiling.xhp
 msgctxt ""
 "func_ceiling.xhp\n"
 "par_id491586208152183\n"
 "help.text"
-msgid "<input>=CEILING(-45.67, -2, 0)</input> returns -44."
-msgstr "<input>=CEILING(-45,67, -2, 0)</input> grąžina -44."
+msgid "<input>=CEILING(-45.67; -2; 0)</input> returns -44."
+msgstr "<input>=CEILING(-45,67; -2; 0)</input> grąžina -44."
 
-#. FY9XN
+#. Auwyx
 #: func_ceiling.xhp
 msgctxt ""
 "func_ceiling.xhp\n"
 "par_id291586208158119\n"
 "help.text"
-msgid "<input>=CEILING(-45.67, -2, 1)</input> returns -46."
-msgstr "<input>=CEILING(-45,67, -2, 1)</input> grąžina -46."
+msgid "<input>=CEILING(-45.67; -2; 1)</input> returns -46."
+msgstr "<input>=CEILING(-45,67; -2; 1)</input> grąžina -46."
 
 #. rZ78k
 #: func_ceiling.xhp
@@ -55636,14 +55771,14 @@ msgctxt ""
 msgid "This function calculates identical results to the <link href=\"#Section312\" name=\"isoceiling\">ISO.CEILING</link> function."
 msgstr "Ši funkcija apskaičiuoja rezultatą, kaip ir funkcija <link href=\"#Section312\" name=\"isoceiling\">ISO.CEILING</link>."
 
-#. yYT7X
+#. BASfr
 #: func_ceiling.xhp
 msgctxt ""
 "func_ceiling.xhp\n"
 "par_id2953454\n"
 "help.text"
-msgid "CEILING.PRECISE(Number[; Significance])"
-msgstr "CEILING.PRECISE(skaičius[; reikšmingumas])"
+msgid "CEILING.PRECISE(Number [; Significance])"
+msgstr "CEILING.PRECISE(skaičius [; reikšmingumas])"
 
 #. FaYeD
 #: func_ceiling.xhp
@@ -55663,14 +55798,14 @@ msgctxt ""
 msgid "<input>=CEILING.PRECISE(3.45)</input> returns 4."
 msgstr "<input>=CEILING.PRECISE(3,45)</input> grąžina 4."
 
-#. kkosx
+#. KxeUC
 #: func_ceiling.xhp
 msgctxt ""
 "func_ceiling.xhp\n"
 "par_id651586213406243\n"
 "help.text"
-msgid "<input>=CEILING.PRECISE(-45.67,2)</input> returns -44."
-msgstr "<input>=CEILING.PRECISE(-45,67,2)</input> grąžina -44."
+msgid "<input>=CEILING.PRECISE(-45.67; 2)</input> returns -44."
+msgstr "<input>=CEILING.PRECISE(-45,67; 2)</input> grąžina -44."
 
 #. WV9bx
 #: func_ceiling.xhp
@@ -55717,14 +55852,14 @@ msgctxt ""
 msgid "This function exists for interoperability with Microsoft Excel 2013 or newer."
 msgstr "Ši funkcija suderinama su MS „Excel“ 2013 arba vėlesne versija."
 
-#. Km7yb
+#. pcXnS
 #: func_ceiling.xhp
 msgctxt ""
 "func_ceiling.xhp\n"
 "par_id841516997669932\n"
 "help.text"
-msgid "CEILING.MATH(Number[; Significance[; Mode]])"
-msgstr "CEILING.MATH(skaičius[; reikšmingumas[; metodas]])"
+msgid "CEILING.MATH(Number [; Significance [; Mode]])"
+msgstr "CEILING.MATH(skaičius [; reikšmingumas [; metodas]])"
 
 #. EAezJ
 #: func_ceiling.xhp
@@ -55753,14 +55888,14 @@ msgctxt ""
 msgid "<input>=CEILING.MATH(3.45)</input> returns 4."
 msgstr "<input>=CEILING.MATH(3,45)</input> grąžina 4."
 
-#. 6BkMe
+#. g5xAQ
 #: func_ceiling.xhp
 msgctxt ""
 "func_ceiling.xhp\n"
 "par_id481586208595809\n"
 "help.text"
-msgid "<input>=CEILING.MATH(3.45,-3)</input> returns 6."
-msgstr "<input>=CEILING.MATH(3,45,-3)</input> grąžina 6."
+msgid "<input>=CEILING.MATH(3.45; -3)</input> returns 6."
+msgstr "<input>=CEILING.MATH(3,45; -3)</input> grąžina 6."
 
 #. Eby7i
 #: func_ceiling.xhp
@@ -55771,23 +55906,23 @@ msgctxt ""
 msgid "<input>=CEILING.MATH(-1.234)</input> returns -1."
 msgstr "<input>=CEILING.MATH(-1,234)</input> grąžina -1."
 
-#. fH4Yt
+#. T4orc
 #: func_ceiling.xhp
 msgctxt ""
 "func_ceiling.xhp\n"
 "par_id151586208604536\n"
 "help.text"
-msgid "<input>=CEILING.MATH(-45.67,-2,0)</input> returns -44."
-msgstr "<input>=CEILING.MATH(-45,67,-2,0)</input> grąžina -44."
+msgid "<input>=CEILING.MATH(-45.67; -2; 0)</input> returns -44."
+msgstr "<input>=CEILING.MATH(-45,67; -2; 0)</input> grąžina -44."
 
-#. MGVBD
+#. opt6B
 #: func_ceiling.xhp
 msgctxt ""
 "func_ceiling.xhp\n"
 "par_id971586208611345\n"
 "help.text"
-msgid "<input>=CEILING.MATH(-45.67,+2, 1)</input> returns -46."
-msgstr "<input>=CEILING.MATH(-45,67,+2, 1)</input> grąžina -46."
+msgid "<input>=CEILING.MATH(-45.67; +2; 1)</input> returns -46."
+msgstr "<input>=CEILING.MATH(-45,67; +2; 1)</input> grąžinu -46."
 
 #. EzE9t
 #: func_ceiling.xhp
@@ -55861,23 +55996,23 @@ msgctxt ""
 msgid "<input>=CEILING.XCL(3.45,2)</input> returns 4."
 msgstr "<input>=CEILING.XCL(3,45,2)</input> grąžina 4."
 
-#. SZYUC
+#. nU46D
 #: func_ceiling.xhp
 msgctxt ""
 "func_ceiling.xhp\n"
 "par_id651586214132234\n"
 "help.text"
-msgid "<input>=CEILING.XCL(-45.67,2)</input> returns -44."
-msgstr "<input>=CEILING.XCL(-45,67,2)</input> grąžina -44."
+msgid "<input>=CEILING.XCL(-45.67; 2)</input> returns -44."
+msgstr "<input>=CEILING.XCL(-45,67; 2)</input> grąžina -44."
 
-#. pz8Go
+#. nbB96
 #: func_ceiling.xhp
 msgctxt ""
 "func_ceiling.xhp\n"
 "par_id811586214136666\n"
 "help.text"
-msgid "<input>=CEILING.XCL(-45.67,-2)</input> returns -46."
-msgstr "<input>=CEILING.XCL(-45,67,-2)</input> grąžina -46."
+msgid "<input>=CEILING.XCL(-45.67; -2)</input> returns -46."
+msgstr "<input>=CEILING.XCL(-45,67; -2)</input> grąžino -46."
 
 #. GMzhD
 #: func_ceiling.xhp
@@ -55924,14 +56059,14 @@ msgctxt ""
 msgid "This function calculates identical results to the <link href=\"#Section311\" name=\"ceilingprecise\">CEILING.PRECISE</link> function."
 msgstr "Funkcija pateikia tokį patį rezultatą, kaip ir <link href=\"#Section311\" name=\"ceilingprecise\">CEILING.PRECISE</link>."
 
-#. LZzHU
+#. GRocX
 #: func_ceiling.xhp
 msgctxt ""
 "func_ceiling.xhp\n"
 "par_id8953454\n"
 "help.text"
-msgid "ISO.CEILING(Number[; Significance])"
-msgstr "ISO.CEILING(skaičius[; reikšmingumas])"
+msgid "ISO.CEILING(Number [; Significance])"
+msgstr "ISO.CEILING(skaičius [; reikšmingumas])"
 
 #. hwhCW
 #: func_ceiling.xhp
@@ -55951,14 +56086,14 @@ msgctxt ""
 msgid "<input>=ISO.CEILING(3.45)</input> returns 4."
 msgstr "<input>=ISO.CEILING(3,45)</input> grąžina 4."
 
-#. xS2zM
+#. QHpJp
 #: func_ceiling.xhp
 msgctxt ""
 "func_ceiling.xhp\n"
 "par_id181586214438808\n"
 "help.text"
-msgid "<input>=ISO.CEILING(-45.67,2)</input> returns -44."
-msgstr "<input>=ISO.CEILING(-45.67,2)</input> grąžina -44."
+msgid "<input>=ISO.CEILING(-45.67; 2)</input> returns -44."
+msgstr "<input>=ISO.CEILING(-45.67; 2)</input> grąžina -44."
 
 #. GuEcB
 #: func_color.xhp
@@ -55996,14 +56131,14 @@ msgctxt ""
 msgid "<ahelp hid=\".\">Return a numeric value calculated by a combination of three colors (red, green and blue) and the alpha channel, in the RGBA color system.</ahelp> The result depends on the color system used by your computer."
 msgstr "<ahelp hid=\".\">Grąžina skaitinę reikšmę apskaičiuotą naudojant tris spalvas (raudoną, žalią ir mėlyną) ir alfa kanalą RGBA spalvų sistemoje.</ahelp> Rezultatas priklauso nuo kompiuteryje naudojamos spalvų sistemos."
 
-#. wRAHQ
+#. 3ubzF
 #: func_color.xhp
 msgctxt ""
 "func_color.xhp\n"
 "par_id27421466710275\n"
 "help.text"
-msgid "COLOR(Red; Green; Blue; Alpha)"
-msgstr "COLOR(raudona; žalia; mėlyna; alfa)"
+msgid "COLOR(Red; Green; Blue [; Alpha])"
+msgstr "COLOR(raudona; žalia; mėlyna [; alfa])"
 
 #. ASLWJ
 #: func_color.xhp
@@ -57535,14 +57670,14 @@ msgctxt ""
 msgid "<variable id=\"variable name\"><ahelp hid=\".\">Returns the starting position of a given text, using byte positions. FINDB is case sensitive.</ahelp></variable>"
 msgstr "<variable id=\"variable name\"><ahelp hid=\".\">Grąžina duoto teksto pradžią naudodama baito vietą. FINDB skiria didžiąsias ir mažąsias raides.</ahelp></variable>"
 
-#. yA9fg
+#. 4ztby
 #: func_findb.xhp
 msgctxt ""
 "func_findb.xhp\n"
 "par_id221573517641172\n"
 "help.text"
-msgid "FINDB( Find Text ; Text ; Position )"
-msgstr "FINDB(ieškomas tekstas ; tekstas; vieta)"
+msgid "FINDB(Find Text ; Text [; Position])"
+msgstr "FINDB(Rasti  tekstas ; tekstas [; vieta])"
 
 #. puQAw
 #: func_findb.xhp
@@ -58768,14 +58903,14 @@ msgctxt ""
 msgid "<variable id=\"textjoinfunction\"><ahelp hid=\".\">Computes the  Discrete Fourier Transform [DFT] of an input array of complex numbers using a couple of Fast Fourier Transform (FFT) algorithms.</ahelp></variable> The  function is an <link href=\"text/scalc/01/04060107.xhp\" name=\"array formula\">array formula</link>."
 msgstr "<variable id=\"textjoinfunction\"><ahelp hid=\".\">Apskaičiuoja įvestos kompleksinių skaičių masyvo diskretinę Furjė transformaciją [DFT]  naudodama keletą greitų Furjė transformacijos algoritmų.</ahelp></variable>Funkcija yra <link href=\"text/scalc/01/04060107.xhp\" name=\"array formula\">masyvo formulė</link>."
 
-#. 467q3
+#. xGHaG
 #: func_fourier.xhp
 msgctxt ""
 "func_fourier.xhp\n"
 "par_id541556228253979\n"
 "help.text"
-msgid "FOURIER(Array, GroupedByColumns, Inverse, Polar, MinimumMagnitude)"
-msgstr "FOURIER(masyvas, grupavimas pagal stulpelius, atvirkštinė, polinės, mažiausias spindulys)"
+msgid "FOURIER(Array; GroupedByColumns [; Inverse [; Polar [; MinimumMagnitude]]])"
+msgstr "FOURIER(masyvas; grupavimas pagal stulpelius [; atvirkštinis [; polinės [; mažiausias spindulys]]])"
 
 #. ELSK7
 #: func_fourier.xhp
@@ -60487,14 +60622,14 @@ msgctxt ""
 msgid "<ahelp hid=\".\">Returns the number of workdays between a start date and an end date. There are options to define weekend days and holidays. The optional weekend parameter (or a string) can be used to define the weekend days (or the non-working days in each week). Also, optionally, the user can define a holiday list. The weekend days and user-defined holidays are not counted as working days.</ahelp>"
 msgstr "<ahelp hid=\".\">Grąžina darbo dienų skaičių nuo nurodytos pradžios datos iki pabaigos datos. Papildomai galite apibrėžti savaitgalius ir atostogas. Papildomi savaitės parametrą (arba eilutę) galite naudoti nurodydami savaitgalio dienas (arba nedarbo dienas kiekvieną savaitę). Taip pat papildomai, galite nurodyti atostogų sąrašą. Savaitgalio dienos ir jūsų nurodytos atostogos neskaičiuojamos kaip darbo dienos.</ahelp>"
 
-#. GB88f
+#. 53kNC
 #: func_networkdays.intl.xhp
 msgctxt ""
 "func_networkdays.intl.xhp\n"
 "par_id231020162249539143\n"
 "help.text"
-msgid "NETWORKDAYS.INTL(StartDate; EndDate; Weekend; Holidays)"
-msgstr "NETWORKDAYS.INTL(pradžios data; pabaigos data; savaitgalis; atostogos)"
+msgid "NETWORKDAYS.INTL(StartDate; EndDate [; [ Weekend ] [; Holidays ] ])"
+msgstr "NETWORKDAYS.INTL(pradžios data; pabaigos data [; [ savaitgalis ] [; šventės ] ])"
 
 #. D8jig
 #: func_networkdays.intl.xhp
@@ -60613,14 +60748,14 @@ msgctxt ""
 msgid "<ahelp hid=\"HID_AAI_FUNC_NETWORKDAYS\">Returns the number of workdays between a <emph>start date</emph> and an <emph>end date</emph>. Holidays can be deducted.</ahelp>"
 msgstr "<ahelp hid=\"HID_AAI_FUNC_NETWORKDAYS\">Grąžina darbo dienų skaičių nuo <emph>pradinės datos</emph> iki nurodytos <emph>galutinės datos</emph>.  Šventės gali būti neįskaitytos.</ahelp>"
 
-#. shbHi
+#. AME9S
 #: func_networkdays.xhp
 msgctxt ""
 "func_networkdays.xhp\n"
 "par_id3145775\n"
 "help.text"
-msgid "NETWORKDAYS(StartDate; EndDate; Holidays; Workdays)"
-msgstr "NETWORKDAYS(pradžios data; pabaigos data; nedarbo dienos; darbo dienos)"
+msgid "NETWORKDAYS(StartDate; EndDate [; [ Holidays ] [; Workdays ] ])"
+msgstr "NETWORKDAYS(pradžios data; pabaigos data [; [ šventės ] [; darbo dienos ] ])"
 
 #. BEtbU
 #: func_networkdays.xhp
@@ -60802,14 +60937,14 @@ msgctxt ""
 msgid "Constraints: LEN(decimal_separator) = 1, decimal_separator shall not appear in group_separator"
 msgstr "Konstruoja: LEN(dešimtainis skirtukas) = 1, dešimtainis skirtukas nepasirodo skirtukų grupėje."
 
-#. xQzLz
+#. 2uppP
 #: func_numbervalue.xhp
 msgctxt ""
 "func_numbervalue.xhp\n"
 "par_id3149268\n"
 "help.text"
-msgid "NUMBERVALUE(\"Text\";decimal_separator;group_separator)"
-msgstr "NUMBERVALUE(“Tekstas“;dešimtainis skirtukas;grupės skirtukas)"
+msgid "NUMBERVALUE(\"Text\" [;decimal_separator [;group_separator]])"
+msgstr "NUMBERVALUE(\"tekstas\" [;dešimtainis skirtukas [;grupės skirtukas]])"
 
 #. ytM82
 #: func_numbervalue.xhp
@@ -60883,14 +61018,14 @@ msgctxt ""
 msgid "<variable id=\"variable name\"><ahelp hid=\".\">Returns the pricing for a barrier option, calculated using the Black-Scholes option pricing model.</ahelp></variable>"
 msgstr "<variable id=\"variable name\"><ahelp hid=\".\">Grąžina ribinę pasirinkimo kainą, kurią apskaičiuoja pagal Black-Scholes pasirinkimo kainos modelį.</ahelp></variable>"
 
-#. FxbGq
+#. 3ky3t
 #: func_opt_barrier.xhp
 msgctxt ""
 "func_opt_barrier.xhp\n"
 "par_id371575067051846\n"
 "help.text"
-msgid "OPT_BARRIER(Spot; Volatility; Rate; Foreign Rate; Maturity; Strike; LowerBarrier; UpperBarrier; Rebate; PutCall; InOut; BarrierMonitoring; Greek)"
-msgstr "OPT_BARRIER(vertė; pokytis; norma; užsienio norma; terminas; pokytis; apatinė riba; viršutinė riba; nuolaida; parduoti arba pirkti; įsigijimas arba išpirkimas; ribos stebėjimas; jautrumas)"
+msgid "OPT_BARRIER(Spot; Volatility; Rate; Foreign Rate; Maturity; Strike; LowerBarrier; UpperBarrier; Rebate; PutCall; InOut; BarrierMonitoring [; Greek])"
+msgstr "OPT_BARRIER(vertė; mokytis; norma; užsienio noram; terminas; pokytis; apatinė riba; viršutinė riba; nuolaida; parduoti arba pirkti; įsigijimas arba išpirkimas; Ribos stebėjimas [; Jautrumas])"
 
 #. XEMff
 #: func_opt_barrier.xhp
@@ -61126,14 +61261,14 @@ msgctxt ""
 msgid "The function ignores the possibility of knock-out before maturity."
 msgstr "Funkcija nepaiso „konck-out“ tikimybės prieš terminą."
 
-#. XTh5Y
+#. DHFtE
 #: func_opt_prob_inmoney.xhp
 msgctxt ""
 "func_opt_prob_inmoney.xhp\n"
 "par_id761575075027094\n"
 "help.text"
-msgid "OPT_PROB_INMONEY(Spot; Volatility; Drift; Maturity; LowerBarrier; UpperBarrier; Strike; PutCall)"
-msgstr "OPT_PROB_INMONEY(vertė; pokytis; slinkimas; terminas; apatinė riba; viršutinė riba; pokytis; parduodamas arba perkamas)"
+msgid "OPT_PROB_INMONEY(Spot; Volatility; Drift; Maturity; LowerBarrier; UpperBarrier [; Strike [; PutCall]])"
+msgstr "OPT_PROB_INMONEY(vertė; pokytis; slinkimas; terminas; apatinė riba; viršutinė riba [; kritimas [; parduoti arba pirkti]])"
 
 #. mE6CG
 #: func_opt_prob_inmoney.xhp
@@ -61207,14 +61342,14 @@ msgctxt ""
 msgid "Further information about touch / no-touch options may be found on many financial websites."
 msgstr "Daugiau informacijos apie „touch“ ir „no touch“ modelius galite rasti įvairiuose finansiniuose tinklalapiuose."
 
-#. pyway
+#. V3nnz
 #: func_opt_touch.xhp
 msgctxt ""
 "func_opt_touch.xhp\n"
 "par_id151575063296819\n"
 "help.text"
-msgid "OPT_TOUCH(Spot; Volatility; Rate; ForeignRate; Maturity; LowerBarrier; UpperBarrier; ForeignDomestic; InOut; BarrierMonitoring; Greek)"
-msgstr "OPT_TOUCH(vertė; pokytis; norma; užsienio norma; terminas; apatinė riba; viršutinė riba; vietinis arba užsienio; įsigijimas arba išpirkimas; ribos stebėjimas; jautrumas)"
+msgid "OPT_TOUCH(Spot; Volatility; Rate; ForeignRate; Maturity; LowerBarrier; UpperBarrier; ForeignDomestic; InOut; BarrierMonitoring [; Greek])"
+msgstr "OPT_TOUCH(vertė; mokytis; norma; užsienio norma; terminas; apatinė riba; viršutinė riba; užsienio arba vietinis; įsigijimas arba išpirkimas; Ribos stebėjimas [; Jautrumas])"
 
 #. 6rD5u
 #: func_opt_touch.xhp
@@ -61918,14 +62053,14 @@ msgctxt ""
 msgid "<variable id=\"variable name\"><ahelp hid=\".\">Returns the starting position of a given text, using byte positions (not case sensitive).</ahelp></variable>"
 msgstr "<variable id=\"variable name\"><ahelp hid=\".\">Grąžina duoto teksto pradžios vietą (neskiria didžiųjų ir mažųjų raidžių).</ahelp></variable>"
 
-#. jADhb
+#. zQHHs
 #: func_searchb.xhp
 msgctxt ""
 "func_searchb.xhp\n"
 "par_id531573516878780\n"
 "help.text"
-msgid "SEARCHB( Find text ; Text ; Position)"
-msgstr "SEARCHB( ieškomas tekstas; tekstas; vieta)"
+msgid "SEARCHB(Find Text; Text [; Position])"
+msgstr "SEARCHB(rasti tekstą; tekstas [; vieta])"
 
 #. 6Pmbf
 #: func_searchb.xhp
@@ -63061,14 +63196,14 @@ msgctxt ""
 msgid "<ahelp hid=\"HID_FUNC_WOCHENTAG\">Returns the day of the week for the given date value.</ahelp> The day is returned as an integer between 1 (Sunday) and 7 (Saturday) if no type or type=1 is specified. For other types, see the table below."
 msgstr "<ahelp hid=\"HID_FUNC_WOCHENTAG\">Grąžina duotos datos savaitės dieną.</ahelp> Diena grąžinama sveikuoju skaičiumo nuo 1 (Sekmadienis) iki 7 (Šeštadienis), jei tipas nenurodytas arba lygus 1. Grąžinamus rezultatus pagal kitus tipus žiūrėkite lentelėje."
 
-#. EDmeN
+#. SaqiJ
 #: func_weekday.xhp
 msgctxt ""
 "func_weekday.xhp\n"
 "par_id3149033\n"
 "help.text"
-msgid "WEEKDAY(Number[; Type])"
-msgstr ""
+msgid "WEEKDAY(Number [; Type])"
+msgstr "WEEKDAY(skaičius [; tipas])"
 
 #. mcF52
 #: func_weekday.xhp
@@ -63808,14 +63943,14 @@ msgctxt ""
 msgid "<ahelp hid=\".\">Returns the date calculated from a start date with a specific number of work days, before or after the start date. The calculation can include week-ends and holidays as non-working days.</ahelp>"
 msgstr "<ahelp hid=\".\">Apskaičiuoja, kokia bus  data prieš ar po pradžios datos pridėjus arba atėmus nurodytą darbo dienų skaičių. Gali būti įtraukiami savaitgaliai ir šventės kaip nedarbo dienos.</ahelp>"
 
-#. ZFLiY
+#. 9r2Ns
 #: func_workday.intl.xhp
 msgctxt ""
 "func_workday.intl.xhp\n"
 "par_id241020160008306838\n"
 "help.text"
-msgid "WORKDAY.INTL(StartDate; Days[; Weekend][; Holidays])"
-msgstr ""
+msgid "WORKDAY.INTL(StartDate; Days [; Weekend [; Holidays]])"
+msgstr "WORKDAY.INTL(pradžios data; dienos [; savaitgalis [; šventės]])"
 
 #. gJg5G
 #: func_workday.intl.xhp
@@ -63979,14 +64114,14 @@ msgctxt ""
 msgid "<ahelp hid=\"HID_AAI_FUNC_WORKDAY\"> The result is a date number that can be formatted as a date. You then see the date of a day that is a certain number of <emph>workdays</emph> away from the <emph>start date</emph>.</ahelp>"
 msgstr "<ahelp hid=\"HID_AAI_FUNC_WORKDAY\"> Rezultatas yra datos skaičius, kuris gali būti su pateikiamas datos formatu. Galite sužinoti dienos, kuri yra nutolusi nuo nurodytos dienos tam tikrą <emph>darbo dienų</emph> skaičių nuo <emph>pradžios datos</emph>, datą.</ahelp>"
 
-#. fo6sg
+#. NDtoU
 #: func_workday.xhp
 msgctxt ""
 "func_workday.xhp\n"
 "par_id3154844\n"
 "help.text"
-msgid "WORKDAY(StartDate; Days[; Holidays])"
-msgstr ""
+msgid "WORKDAY(StartDate; Days [; Holidays])"
+msgstr "WORKDAY(pradžios data; dienos [; šventės])"
 
 #. 35EG5
 #: func_workday.xhp
@@ -64168,14 +64303,14 @@ msgctxt ""
 msgid "<ahelp hid=\"HID_AAI_FUNC_YEARFRAC\">The result is the number of the years (including fractional part) between <emph>StartDate</emph> and <emph>EndDate</emph>.</ahelp>"
 msgstr "<ahelp hid=\"HID_AAI_FUNC_YEARFRAC\">Rezultatas yra metų skaičius tarp <emph>pradžios datos</emph> ir <emph>pabaigos datos</emph>.</ahelp>"
 
-#. AASCJ
+#. DBBsL
 #: func_yearfrac.xhp
 msgctxt ""
 "func_yearfrac.xhp\n"
 "par_id3155823\n"
 "help.text"
-msgid "YEARFRAC(StartDate; EndDate[; Basis])"
-msgstr ""
+msgid "YEARFRAC(StartDate; EndDate [; Basis])"
+msgstr "YEARFRAC(pradžios data; pabaigos data [; Naudojamas dienos nustatymo metodas])"
 
 #. JAA8u
 #: func_yearfrac.xhp
@@ -64346,7 +64481,7 @@ msgctxt ""
 "bm_id7654652\n"
 "help.text"
 msgid "<bookmark_value>goal seeking;solver</bookmark_value>  <bookmark_value>what if operations;solver</bookmark_value>  <bookmark_value>back-solving</bookmark_value>  <bookmark_value>solver</bookmark_value>  <bookmark_value>mathematical programming;solver for Calc</bookmark_value>  <bookmark_value>mathematical optimization;solver for Calc</bookmark_value>  <bookmark_value>operations research;solver for Calc</bookmark_value>"
-msgstr ""
+msgstr "<bookmark_value>tikslo siekimas;sprendiklis</bookmark_value>  <bookmark_value>operacija „jei“;sprendiklis</bookmark_value>  <bookmark_value>atvirkštinis sprendimas</bookmark_value>  <bookmark_value>sprendimo įtaisas</bookmark_value>  <bookmark_value>matematinis programavimas;skaičiuoklės sprendiklis</bookmark_value>  <bookmark_value>matematinis optimizavimas;skaičiuoklės sprendiklis</bookmark_value>  <bookmark_value>pasiektos operacijos;skaičiuoklės sprendiklis</bookmark_value>"
 
 #. cBvDd
 #: solver.xhp
@@ -64365,6 +64500,8 @@ msgctxt ""
 "help.text"
 msgid "<ahelp hid=\".\">Opens the Solver dialog. A solver allows you to solve mathematical problems with multiple unknown variables and a set of constraints on the variables by goal-seeking methods.</ahelp>"
 msgstr ""
+"<ahelp hid=\".\">Atveria sprendiklio dialogo langą. Sprendiklyje galite išspręsti matematines lygtis su keliais kintamaisiais ir \n"
+"kintamųjų apribojimų rinkiniu naudodami tikslo siekimo metodus.</ahelp>"
 
 #. wszcE
 #: solver.xhp
@@ -64373,7 +64510,7 @@ msgctxt ""
 "hd_id21589912365601\n"
 "help.text"
 msgid "Solver settings"
-msgstr ""
+msgstr "Sprendiklio nuostatos"
 
 #. 36mEY
 #: solver.xhp
@@ -64382,7 +64519,7 @@ msgctxt ""
 "par_id501589912905479\n"
 "help.text"
 msgid "The dialog settings are retained until you close the current document."
-msgstr ""
+msgstr "Dialogo lange nurodytos nuostatos saugomos, kol užveriate esamą dokumentą."
 
 #. GgVk7
 #: solver.xhp
@@ -64391,7 +64528,7 @@ msgctxt ""
 "hd_id121589913023217\n"
 "help.text"
 msgid "Target Cell"
-msgstr ""
+msgstr "Tikslo langelis"
 
 #. EsgHG
 #: solver.xhp
@@ -64400,7 +64537,7 @@ msgctxt ""
 "par_id8538773\n"
 "help.text"
 msgid "<ahelp hid=\".\">Enter or click the cell reference of the target cell. This field takes the address of the cell whose value is to be optimized.</ahelp>"
-msgstr ""
+msgstr "<ahelp hid=\".\">Įveskite tikslo langelio nuorodą arba spustelėkite patį langelį. Laukelyje įrašoma optimizuojamos reikšmės langelio nuoroda.</ahelp>"
 
 #. 9j2m7
 #: solver.xhp
@@ -64409,7 +64546,7 @@ msgctxt ""
 "hd_id441589913036601\n"
 "help.text"
 msgid "Optimize results to"
-msgstr ""
+msgstr "Optimizuoja rezultatus iki"
 
 #. U8Ttv
 #: solver.xhp
@@ -64418,7 +64555,7 @@ msgctxt ""
 "par_id7564012\n"
 "help.text"
 msgid "<ahelp hid=\".\"><emph>Maximum:</emph> Try to solve the equation for a maximum value of the target cell.</ahelp>"
-msgstr ""
+msgstr "<ahelp hid=\".\"><emph>Didžiausio:</emph> Pabandykite išspręsti lygtį su didžiausia tikslo langelio reikšme.</ahelp>"
 
 #. N5C2U
 #: solver.xhp
@@ -64427,7 +64564,7 @@ msgctxt ""
 "par_id1186254\n"
 "help.text"
 msgid "<ahelp hid=\".\"><emph>Minimum:</emph> Try to solve the equation for a minimum value of the target cell.</ahelp>"
-msgstr ""
+msgstr "<ahelp hid=\".\"><emph>Mažiausia:</emph> Pabandykite išspręsti lygtį su mažiausia tikslo langelio reikšme.</ahelp>"
 
 #. JAo82
 #: solver.xhp
@@ -64436,7 +64573,7 @@ msgctxt ""
 "par_id7432477\n"
 "help.text"
 msgid "<ahelp hid=\".\"><emph>Value of:</emph> Try to solve the equation to approach a given value of the target cell.</ahelp>"
-msgstr ""
+msgstr "<ahelp hid=\".\"><emph>Reikšmė:</emph> Pabandykite išspręsti lygtį su duota tikslo langelio reikšme.</ahelp>"
 
 #. 5BC94
 #: solver.xhp
@@ -64445,7 +64582,7 @@ msgctxt ""
 "par_id7141026\n"
 "help.text"
 msgid "<ahelp hid=\".\">Enter the value or a cell reference in the text field.</ahelp>"
-msgstr ""
+msgstr "<ahelp hid=\".\">Įveskite reikšmę arba langelio nuorodą į teksto lauką.</ahelp>"
 
 #. KMA6B
 #: solver.xhp
@@ -64454,7 +64591,7 @@ msgctxt ""
 "hd_id761589914010085\n"
 "help.text"
 msgid "By Changing Cells"
-msgstr ""
+msgstr "Keičiant langelius"
 
 #. VvrzV
 #: solver.xhp
@@ -64463,7 +64600,7 @@ msgctxt ""
 "par_id8531449\n"
 "help.text"
 msgid "<ahelp hid=\".\">Enter the cell range that can be changed.</ahelp> These are the variables of the equations."
-msgstr ""
+msgstr "<ahelp hid=\".\">Įveskite keičiamą langelių sritį.</ahelp> Tai yra lygčių kintamieji."
 
 #. if7S9
 #: solver.xhp
@@ -64472,7 +64609,7 @@ msgctxt ""
 "hd_id671589914927836\n"
 "help.text"
 msgid "Limiting Conditions"
-msgstr ""
+msgstr "Sąlygų apribojimas"
 
 #. QQCWC
 #: solver.xhp
@@ -64481,7 +64618,7 @@ msgctxt ""
 "par_id421589915278885\n"
 "help.text"
 msgid "Add the set of constraints for the mathematical problem. Each constraint is represented by a cell reference (a variable), an operator, and a value."
-msgstr ""
+msgstr "Matematiniam uždaviniui pridėkite apribojimus. Kiekvienas apribojimas atitinka langelio nuorodą (kintamąjį), operatorių ir reikšmę."
 
 #. YApta
 #: solver.xhp
@@ -64490,7 +64627,7 @@ msgctxt ""
 "par_id9183935\n"
 "help.text"
 msgid "<ahelp hid=\".\"><emph>Cell reference:</emph> Enter a cell reference of the variable.</ahelp>"
-msgstr ""
+msgstr "<ahelp hid=\".\"><emph>Langelio nuoroda:</emph> Įveskite kintamojo langelio nuorodą.</ahelp>"
 
 #. eyxy9
 #: solver.xhp
@@ -64499,7 +64636,7 @@ msgctxt ""
 "par_id1939451\n"
 "help.text"
 msgid "<ahelp hid=\".\">Click the Shrink button to shrink or restore the dialog. You can click or select cells in the sheet. You can enter a cell reference manually in the input box.</ahelp>"
-msgstr ""
+msgstr "<ahelp hid=\".\">Spustelėkite lango sumažinimo mygtuką, jei norite sumažinti arba grąžinti dialogo langą. Tuomet galite spustelėti arba tempdami pasirinkti langelius lakšte. Taip pat galite įvesti langelių nuorodas į įvesties lauką klaviatūra.</ahelp>"
 
 #. CWWbZ
 #: solver.xhp
@@ -64508,7 +64645,7 @@ msgctxt ""
 "par_id946684\n"
 "help.text"
 msgid "<ahelp hid=\".\"><emph>Operator:</emph> Select an operator from the list.</ahelp> Use Binary operator to restrict your variable to 0 or 1. Use the Integer operator to restrict your variable to take only integer values (no decimal part)."
-msgstr ""
+msgstr "<ahelp hid=\".\"><emph>Operatorius:</emph> Pasirinkite operatorių iš sąrašo.</ahelp> Naudokite dvimatį operatorių, jei norite, kad kintamieji būtų 0 arba 1. Naudokite sveikąjį operatorių, jei norite  naudoti tik sveikuosius kintamuosius (be dešimtainės dalies)."
 
 #. CtpNG
 #: solver.xhp
@@ -64517,7 +64654,7 @@ msgctxt ""
 "par_id9607226\n"
 "help.text"
 msgid "<ahelp hid=\".\"><emph>Value:</emph> Enter a value or a cell reference.</ahelp> This field is ignored when the operator is Binary or Integer."
-msgstr ""
+msgstr "<ahelp hid=\".\"><emph>Reikšmė:</emph> Įveskite reikšmę arba langelių nuorodą.</ahelp> Šio laukelio nepaisoma, jei naudojamas dvimatis arba sveikasis operatorius."
 
 #. GzohM
 #: solver.xhp
@@ -64526,7 +64663,7 @@ msgctxt ""
 "par_id9038972\n"
 "help.text"
 msgid "<ahelp hid=\".\"><emph>Remove button:</emph> Click to remove the row from the list. Any rows from below this row move up.</ahelp>"
-msgstr ""
+msgstr "<ahelp hid=\".\"><emph>Šalinimo mygtukas:</emph> Spustelėkite, jei norite pašalinti eilutę iš sąrašo. Visos likusios eilutės pakeliamos aukštyn.</ahelp>"
 
 #. H3FEH
 #: solver.xhp
@@ -64535,7 +64672,7 @@ msgctxt ""
 "par_id511589916338595\n"
 "help.text"
 msgid "You can set multiple conditions for a variable. For example, a variable in cell A1 that must be an integer less than 10. In that case, set two limiting conditions for A1."
-msgstr ""
+msgstr "Galite nustatyti daugia kintamojo sąlygų. Pavyzdžiui, kintamasis langelyje A1 gali būti sveikasis skaičių mažesnis už 10. Šiuo atveju, nustatykite dvi sąlygas langeliui A1."
 
 #. B4DtG
 #: solver.xhp
@@ -64544,7 +64681,7 @@ msgctxt ""
 "hd_id441589917031236\n"
 "help.text"
 msgid "Options"
-msgstr ""
+msgstr "Parinktys"
 
 #. AheHK
 #: solver.xhp
@@ -64553,7 +64690,7 @@ msgctxt ""
 "par_id2423780\n"
 "help.text"
 msgid "<ahelp hid=\".\">Opens the <link href=\"text/scalc/01/solver_options.xhp#solveroptionsh1\" name=\"solveroptions\">Solver Options</link> dialog.</ahelp>"
-msgstr ""
+msgstr "<ahelp hid=\".\">Atveria <link href=\"text/scalc/01/solver_options.xhp#solveroptionsh1\" name=\"solveroptions\">sprendiklio parinkčių</link>dialogo langą.</ahelp>"
 
 #. jDGPG
 #: solver.xhp
@@ -64562,7 +64699,7 @@ msgctxt ""
 "par_id221589917833431\n"
 "help.text"
 msgid "The <emph>Solver Options</emph> dialog let you select the different solver algorithms for either linear and non-linear problems and set their solving parameters."
-msgstr ""
+msgstr "<emph>Sprendiklio parinkčių</emph> dialogo lange galite pasirinkti skirtingus sprendimo algoritmus ir nustatyti sprendimo parametrus tiesinėms arba netiesinėms lygtims."
 
 #. 8YGDA
 #: solver.xhp
@@ -64571,7 +64708,7 @@ msgctxt ""
 "hd_id771589917064147\n"
 "help.text"
 msgid "Solve"
-msgstr ""
+msgstr "Spręsti"
 
 #. jFwTt
 #: solver.xhp
@@ -64580,7 +64717,7 @@ msgctxt ""
 "par_id2569658\n"
 "help.text"
 msgid "<ahelp hid=\".\">Click to solve the problem with the current settings. The dialog settings are retained until you close the current document.</ahelp>"
-msgstr ""
+msgstr "<ahelp hid=\".\">Spustelėkite, jei norite spręsti problema su esamomis nuostatomis. Dialogo lango nuostatos galioja, kol užveriate dokumentą.</ahelp>"
 
 #. VFnjv
 #: solver.xhp
@@ -64625,7 +64762,7 @@ msgctxt ""
 "hd_id0603200910430882\n"
 "help.text"
 msgid "Using Non-Linear solvers"
-msgstr ""
+msgstr "Ne tiesinių lygčių sprendiklis"
 
 #. UTzzV
 #: solver.xhp
@@ -64634,7 +64771,7 @@ msgctxt ""
 "par_id0603200910430845\n"
 "help.text"
 msgid "Regardless whether you use DEPS or SCO, you start by going to <menuitem>Tools - Solver</menuitem> and set the Cell to be optimized, the direction to go (minimization, maximization) and the cells to be modified to reach the goal. Then you go to the Options and specify the solver to be used and if necessary adjust the according <link href=\"text/scalc/01/solver_options.xhp\">parameters</link>."
-msgstr ""
+msgstr "Nepaisydami naudojamo DEPS arba SCO, galite pradėti pasirinkę <menuitem>Priemonės → Sprendiklis</menuitem> ir nustatę optimizuojamą langelį, vykdymo kryptį (mažinimas, didinimas) ir modifikuojamus langelius tikslui pasiekti. Tuomet pasirinkite Parinktis → Sprendiklį ir, jei būtina,  pritaikykite atitinkamus <link href=\"text/scalc/01/solver_options.xhp\">parametrus</link>."
 
 #. gJGz2
 #: solver.xhp
@@ -64643,7 +64780,7 @@ msgctxt ""
 "par_id0603200910430821\n"
 "help.text"
 msgid "There is also a list of constraints you can use to restrict the possible range of solutions or to penalize certain conditions. However, in case of the evolutionary solvers DEPS and SCO, these constraints are also used to specify bounds on the variables of the problem. Due to the random nature of the algorithms, it is <emph>highly recommended</emph> to do so and give upper (and in case \"Assume Non-Negative Variables\" is turned off also lower) bounds for all variables. They don't have to be near the actual solution (which is probably unknown) but should give a rough indication of the expected size (0 ≤ var ≤ 1 or maybe -1000000 ≤ var ≤ 1000000)."
-msgstr ""
+msgstr "Toliau pateikiamas apribojimų sąrašas, kuriuo naudodamiesi galite atmesti sprendinius arba pritaikyti tam tikras sąlygas. Tačiau, sprendimų DEPS ir SCO atveju šie apribojimai taip pat naudojami, kai norite apibrėžti problemos kintamųjų ribas. Atsižvelgiant į algoritmų atsitiktinumą, <emph>rekomenduojama</emph> nurodyti viršutines  (jei išjungta parinktis „priimti neneigiamus kintamuosius“, apatines) visų kintamųjų ribas. Jie neprivalo būti labai arti tikrojo sprendinio (kuris tikriausiai nežinomas), bet turėtų apytiksliai nurodyti numatomą reikšmę (0 ≤ kintamasis ≤ 1 arba galbūt -1000000 ≤ kintamasis ≤ 1000000)."
 
 #. GFZqJ
 #: solver.xhp
@@ -64652,7 +64789,7 @@ msgctxt ""
 "par_id0603200910430873\n"
 "help.text"
 msgid "Bounds are specified by selecting one or more variables (as range) on the left side and entering a numerical value (not a cell or a formula) on the right side. That way you can also choose one or more variables to be <emph>Integer</emph> or <emph>Binary</emph> only."
-msgstr ""
+msgstr "Ribas nustatysite, jei pasirinksite vieną ar kelis kintamuosius (kaip ribas) kairėje ir įvesite skaitines reikšmes (ne langelių nuorodas ar formules) dešinėje. Tokiu būdu galite pasirinkti vieną ar daugiau kintamųjų, kurie būtų tik <emph>Sveikieji</emph> arba tik <emph>Dvimačiai</emph>."
 
 #. ZUeCC
 #: solver.xhp
@@ -64661,7 +64798,7 @@ msgctxt ""
 "par_id271589981559367\n"
 "help.text"
 msgid "<link href=\"https://wiki.documentfoundation.org/\" name=\"wikipage\">Wiki page on solvers and theirs algorithms</link>"
-msgstr ""
+msgstr "<link href=\"https://wiki.documentfoundation.org/\" name=\"wikipage\">Viki stripsniuose rasite daugiau apie sprendiklius ir jų algoritmus</link>"
 
 #. akxrP
 #: solver_options.xhp
@@ -64670,7 +64807,7 @@ msgctxt ""
 "tit\n"
 "help.text"
 msgid "Solver Options"
-msgstr ""
+msgstr "Sprendiklo parinktys"
 
 #. UBnZK
 #: solver_options.xhp
@@ -64679,7 +64816,7 @@ msgctxt ""
 "bm_id291590166034871\n"
 "help.text"
 msgid "<bookmark_value>solver for Calc;options</bookmark_value>"
-msgstr ""
+msgstr "<bookmark_value>Skaičiuoklės sprendiklis;parinktys</bookmark_value>"
 
 #. vZkr3
 #: solver_options.xhp
@@ -64688,7 +64825,7 @@ msgctxt ""
 "hd_id2794274\n"
 "help.text"
 msgid "<variable id=\"solveroptionsh1\"><link href=\"text/scalc/01/solver_options.xhp\" name=\"Solver  Options\">Solver Options</link></variable>"
-msgstr ""
+msgstr "<variable id=\"solveroptionsh1\"><link href=\"text/scalc/01/solver_options.xhp\" name=\"Solver  Options\">Sprendiklio parinktys</link></variable>"
 
 #. LHgS8
 #: solver_options.xhp
@@ -64697,7 +64834,7 @@ msgctxt ""
 "par_id3163853\n"
 "help.text"
 msgid "Use the Options dialog to configure the solver engine."
-msgstr ""
+msgstr "Parinkčių dialogo lange galite konfigūruoti sprendiklio modulį."
 
 #. mFtPo
 #: solver_options.xhp
@@ -64715,7 +64852,7 @@ msgctxt ""
 "hd_id581589922716672\n"
 "help.text"
 msgid "Solver engine"
-msgstr ""
+msgstr "Sprendiklio modulis"
 
 #. A7MrG
 #: solver_options.xhp
@@ -64724,7 +64861,7 @@ msgctxt ""
 "par_id393993\n"
 "help.text"
 msgid "<ahelp hid=\".\">Select a solver engine. The listbox is disabled if only one solver engine is installed.</ahelp>"
-msgstr ""
+msgstr "<ahelp hid=\".\">Pasirinkite spredniklio modulį. Jei įdiegtas tik vienas sprendiklio modulis, sąrašas bus neaktyvus.</ahelp>"
 
 #. NMHJR
 #: solver_options.xhp
@@ -64733,7 +64870,7 @@ msgctxt ""
 "par_id221589959855748\n"
 "help.text"
 msgid "You can install more solver engines as extensions, if available. Open <menuitem>Tools - Extension Manager</menuitem> and browse to the Extensions web site to search for extensions."
-msgstr ""
+msgstr "Galite įdiegti daugiau sprediklio modulių kaip papildinius, jei jie prieinami. Atverkite <menuitem>Priemonės → Papildinio valdymas</menuitem> ir suraskite norimą papildinį papildinių tinklalapyje."
 
 #. QtDyE
 #: solver_options.xhp
@@ -64742,7 +64879,7 @@ msgctxt ""
 "hd_id711589922750833\n"
 "help.text"
 msgid "Settings"
-msgstr ""
+msgstr "Nuostatos"
 
 #. ncgjf
 #: solver_options.xhp
@@ -64751,7 +64888,7 @@ msgctxt ""
 "par_id130619\n"
 "help.text"
 msgid "Configure the current solver. In the Settings box, check all settings that you want to use for the current goal seeking operation. If the current option offers different values, the Edit button is enabled. Click <emph>Edit</emph> to open a dialog where you can change the value."
-msgstr ""
+msgstr "Sukonfigūruokite esamą sprendiklį. Nuostatų laukelyje, patikrinkite visas nuostatas, kurias norite naudoti esamiems veiksmams išspręsti. Jei esamos parinktys siūlo skirtingas reikšmes,  įjungtas Taisos mygtukas. Spustelėkite <emph>Taisa</emph> ir atverkite dialogo langą, kur galite pakeisti reikšmes."
 
 #. DPYew
 #: solver_options.xhp
@@ -64760,7 +64897,7 @@ msgctxt ""
 "hd_id481589922813764\n"
 "help.text"
 msgid "Edit"
-msgstr ""
+msgstr "Taisa"
 
 #. XZbDB
 #: solver_options.xhp
@@ -64769,7 +64906,7 @@ msgctxt ""
 "par_id6531266\n"
 "help.text"
 msgid "<ahelp hid=\".\">If the current entry in the Settings listbox allows you to edit a value, you can click the Edit button. A dialog opens where you can change the value.</ahelp>"
-msgstr ""
+msgstr "<ahelp hid=\".\">Jei esama įvestis Nuostatų sąraše leidžia taisyti reikšmę, tai galite spustelėti Taisos mygtuką. Atveriamas dialogo langas, kur galite pasirinkti reikšmę.</ahelp>"
 
 #. JzS8w
 #: solver_options.xhp
@@ -64778,7 +64915,7 @@ msgctxt ""
 "hd_id331589923158248\n"
 "help.text"
 msgid "Edit settings spin box"
-msgstr ""
+msgstr "Nuostatų taisymo suktukas"
 
 #. B4WMx
 #: solver_options.xhp
@@ -64787,7 +64924,7 @@ msgctxt ""
 "par_id3912778\n"
 "help.text"
 msgid "<ahelp hid=\".\">Enter or change the value of the selected setting.</ahelp>"
-msgstr ""
+msgstr "<ahelp hid=\".\">Įveskite arba pakeiskite pasirinktos nuostatos reikšmę.</ahelp>"
 
 #. cYCVf
 #: solver_options.xhp
@@ -64796,7 +64933,7 @@ msgctxt ""
 "par_id271589981559367\n"
 "help.text"
 msgid "<link href=\"https://wiki.documentfoundation.org/NLPSolver\" name=\"wikipage\">Wiki page on non-linear solvers and theirs algorithms</link>"
-msgstr ""
+msgstr "<link href=\"https://wiki.documentfoundation.org/NLPSolver\" name=\"wikipage\">Netiesinių lygčių sprendiklių ir jų algoritmų viki puslapis</link>"
 
 #. A843R
 #: solver_options_algo.xhp
@@ -64805,7 +64942,7 @@ msgctxt ""
 "tit\n"
 "help.text"
 msgid "Options"
-msgstr ""
+msgstr "Parinktys"
 
 #. U9kTW
 #: solver_options_algo.xhp
@@ -64814,7 +64951,7 @@ msgctxt ""
 "bm_id0503200917110375_scalc\n"
 "help.text"
 msgid "<bookmark_value>Solver for Nonlinear Problems;Options</bookmark_value>    <bookmark_value>solver for Calc; DEPS evolutionary algorithm</bookmark_value>    <bookmark_value>solver for Calc; SCO evolutionary algorithm</bookmark_value>    <bookmark_value>solver for Calc; linear solver</bookmark_value>    <bookmark_value>solver for Calc; CoinMP linear solver</bookmark_value>    <bookmark_value>solver for Calc; swarm non-linear solver</bookmark_value>"
-msgstr ""
+msgstr "<bookmark_value>Netiesinių lygčių sprendiklis;parinktys</bookmark_value>    <bookmark_value>skaičiuoklės sprendiklis;DEPS  algoritmas</bookmark_value>    <bookmark_value>skaičiuoklės spredniklis; SCO algrotimas</bookmark_value>    <bookmark_value>skaičiuoklės sprendiklis; tiesinis spredniklis</bookmark_value>    <bookmark_value>skaičiuoklės spredniklis; CoinMP tiesinis sprendiklis</bookmark_value>    <bookmark_value>skaičiuoklės sprendiklis; taškų telkinio netiesinis sprendiklis</bookmark_value>"
 
 #. atkqE
 #: solver_options_algo.xhp
@@ -64823,7 +64960,7 @@ msgctxt ""
 "hd_id0503200917103593\n"
 "help.text"
 msgid "<variable id=\"SolverAlgorithmsOptionsh1\"><link href=\"text/scalc/01/solver_options_algo.xhp#SolverAlgorithmsOptionsh1\" name=\"Solver Algorithms Options\">Solver Algorithms Options</link></variable>"
-msgstr ""
+msgstr "<variable id=\"SolverAlgorithmsOptionsh1\"><link href=\"text/scalc/01/solver_options_algo.xhp#SolverAlgorithmsOptionsh1\" name=\"Solver Algorithms Options\">Sprendiklio algoritmų parinktys</link></variable>"
 
 #. RjM8p
 #: solver_options_algo.xhp
@@ -64832,7 +64969,7 @@ msgctxt ""
 "par_id651589925044267\n"
 "help.text"
 msgid "<variable id=\"DEPSEvolutionaryalgorithmh2\"><link href=\"text/scalc/01/solver_options_algo.xhp#DEPSEvolutionaryalgorithmh2\" name=\"DEPS Evolutionary algorithm\">DEPS Evolutionary Algorithm</link></variable>"
-msgstr ""
+msgstr "<variable id=\"DEPSEvolutionaryalgorithmh2\"><link href=\"text/scalc/01/solver_options_algo.xhp#DEPSEvolutionaryalgorithmh2\" name=\"DEPS Evolutionary algorithm\">DEPS algoritmas</link></variable>"
 
 #. xBZfN
 #: solver_options_algo.xhp
@@ -64841,7 +64978,7 @@ msgctxt ""
 "par_id931590164412542\n"
 "help.text"
 msgid "DEPS consists of two independent algorithms: Differential Evolution and Particle Swarm Optimization. Both are especially suited for numerical problems, such as nonlinear optimization, and are complementary to each other in that they even out their others shortcomings."
-msgstr ""
+msgstr "DEPS algoritmą sudaro su atskiri algoritmai: diferencialinio vystymo ir taškų sankaupos optimizavimo. Jie abu taikomi skaitmeninėms problemoms, tokioms kaip  netiesinis optimizavimas, ir papildo vienas kitą."
 
 #. EFbzc
 #: solver_options_algo.xhp
@@ -64850,7 +64987,7 @@ msgctxt ""
 "par_id0603200910394232\n"
 "help.text"
 msgid "Agent Switch Rate"
-msgstr ""
+msgstr "Agentų perjungimo dažnis"
 
 #. E3ZoK
 #: solver_options_algo.xhp
@@ -64859,7 +64996,7 @@ msgctxt ""
 "par_id0603200910394248\n"
 "help.text"
 msgid "Specifies the probability for an individual to choose the Differential Evolution strategy."
-msgstr ""
+msgstr "Nurodo asmens diferencialinio vystymo strategijos pasirinkimo tikimybę."
 
 #. DbnUB
 #: solver_options_algo.xhp
@@ -64868,7 +65005,7 @@ msgctxt ""
 "par_id0603200910394277\n"
 "help.text"
 msgid "DE: Crossover Probability"
-msgstr ""
+msgstr "DE: persikirtimo tikimybė"
 
 #. phaC2
 #: solver_options_algo.xhp
@@ -64877,7 +65014,7 @@ msgctxt ""
 "par_id0603200910394280\n"
 "help.text"
 msgid "Defines the probability of the individual being combined with the globally best point. If crossover is not used, the point is assembled from the own memory of the individual."
-msgstr ""
+msgstr "Apibrėžia asmens  derinimo su geriausiu globaliu tašku tikimybę. Jei susikirtimas nenaudojamas, tai taškas yra suteltas iš asmeninės asmens atminties."
 
 #. G4GC9
 #: solver_options_algo.xhp
@@ -64886,7 +65023,7 @@ msgctxt ""
 "par_id0643200910394216\n"
 "help.text"
 msgid "DE: Scaling Factor"
-msgstr ""
+msgstr "DE: mastelio koeficientas"
 
 #. qKt78
 #: solver_options_algo.xhp
@@ -64895,7 +65032,7 @@ msgctxt ""
 "par_id360320091039424\n"
 "help.text"
 msgid "During crossover, the scaling factor decides about the “speed” of movement."
-msgstr ""
+msgstr "Sankirtos naudojimo metu, mastelio faktorius nusako veikimo greitį."
 
 #. HPPHg
 #: solver_options_algo.xhp
@@ -64904,7 +65041,7 @@ msgctxt ""
 "par_id0507200917103771\n"
 "help.text"
 msgid "Learning Cycles"
-msgstr ""
+msgstr "Mokymosi ciklai"
 
 #. ED86j
 #: solver_options_algo.xhp
@@ -64913,7 +65050,7 @@ msgctxt ""
 "par_id0503210917103720\n"
 "help.text"
 msgid "Defines the number of iterations, the algorithm should take. In each iteration, all individuals make a guess on the best solution and share their knowledge."
-msgstr ""
+msgstr "Apibrėžia algoritmo iteracijų skaičių. Kiekvienoje iteracijoje visi asmenys prognozuoja geriausią sprendimą ir dalijasi rezultatu."
 
 #. M5Ka8
 #: solver_options_algo.xhp
@@ -64922,7 +65059,7 @@ msgctxt ""
 "par_id3603200910394222\n"
 "help.text"
 msgid "PS: Cognitive Constant"
-msgstr ""
+msgstr "PS: kognityvinė kostanta"
 
 #. bVENc
 #: solver_options_algo.xhp
@@ -64931,7 +65068,7 @@ msgctxt ""
 "par_id3603200915394212\n"
 "help.text"
 msgid "Sets the importance of the own memory (in particular the best reached point so far)."
-msgstr ""
+msgstr "Nustato savos atminties svarbą (dažniausiai, greitai geriausią pasiektą tašką)."
 
 #. ujBHP
 #: solver_options_algo.xhp
@@ -64940,7 +65077,7 @@ msgctxt ""
 "par_id060324091037421\n"
 "help.text"
 msgid "PS: Constriction Coefficient"
-msgstr ""
+msgstr "PS: suvaržymo koeficientas"
 
 #. Z86BZ
 #: solver_options_algo.xhp
@@ -64949,7 +65086,7 @@ msgctxt ""
 "par_id0608200910394225\n"
 "help.text"
 msgid "Defines the speed at which the particles/individuals move towards each other."
-msgstr ""
+msgstr "Apibrėžia taškų ar asmenų judėjimo į vienas kitą greitį."
 
 #. nFnAu
 #: solver_options_algo.xhp
@@ -64958,7 +65095,7 @@ msgctxt ""
 "par_id060320091039425\n"
 "help.text"
 msgid "PS: Mutation Probability"
-msgstr ""
+msgstr "PS: kitimo tikimybė"
 
 #. fGiKi
 #: solver_options_algo.xhp
@@ -64967,7 +65104,7 @@ msgctxt ""
 "par_id0603200910394272\n"
 "help.text"
 msgid "Defines the probability, that instead of moving a component of the particle towards the best point, it randomly chooses a new value from the valid range for that variable."
-msgstr ""
+msgstr "Apibrėžia tikimybę, kad užuot pervedęs taško (įvykio) komponentą link geriausio taško, jis atsitiktinai pasirenka naują reikšmę iš kintamojo galiojančio diapazono."
 
 #. nn4Ms
 #: solver_options_algo.xhp
@@ -64976,7 +65113,7 @@ msgctxt ""
 "par_id0603200910394292\n"
 "help.text"
 msgid "PS: Social Constant"
-msgstr ""
+msgstr "PS: socialinė konstanta"
 
 #. nAD2Z
 #: solver_options_algo.xhp
@@ -64985,7 +65122,7 @@ msgctxt ""
 "par_id0603200910394284\n"
 "help.text"
 msgid "Sets the importance of the global best point between all particles/individuals."
-msgstr ""
+msgstr "Nustato geriausio taško iš visų taškų ar asmenų svarbą."
 
 #. GAGDE
 #: solver_options_algo.xhp
@@ -64994,7 +65131,7 @@ msgctxt ""
 "par_id0503200217103891\n"
 "help.text"
 msgid "<variable id=\"enhstatusheader\">Show Enhanced Solver Status</variable>"
-msgstr ""
+msgstr "<variable id=\"enhstatusheader\">Rodyti išplėstą sprendiklio būseną</variable>"
 
 #. na8Ee
 #: solver_options_algo.xhp
@@ -65003,7 +65140,7 @@ msgctxt ""
 "par_id0523200917103832\n"
 "help.text"
 msgid "<variable id=\"enhstatusdesc\">If <emph>enabled</emph>, an additional dialog is shown during the solving process which gives information about the current progress, the level of stagnation, the currently best known solution as well as the possibility, to stop or resume the solver.</variable>"
-msgstr ""
+msgstr "<variable id=\"enhstatusdesc\">Jei <emph>įjungta</emph>, sprendimo metu atveriamas papildomas dialogo langas, kuriame pateikiama vykstančio proceso informacija, sąstingio lygis, esamas geriausias žinomas sprendinys, kaip ir galimybė sustabdyti ar tęsti sprendimą.</variable>"
 
 #. 3LaZ7
 #: solver_options_algo.xhp
@@ -65012,7 +65149,7 @@ msgctxt ""
 "par_id0503200417103780\n"
 "help.text"
 msgid "<variable id=\"swarmheader\">Size of Swarm</variable>"
-msgstr ""
+msgstr "<variable id=\"swarmheader\">Sankaupos dydis</variable>"
 
 #. UhBid
 #: solver_options_algo.xhp
@@ -65021,7 +65158,7 @@ msgctxt ""
 "par_id0503100917103723\n"
 "help.text"
 msgid "<variable id=\"swarmdesc\">Defines the number of individuals to participate in the learning process. Each individual finds its own solutions and contributes to the overall knowledge.</variable>"
-msgstr ""
+msgstr "<variable id=\"swarmdesc\">Apibrėžia asmenų skaičių, kurie dalyvauja mokymosi procese. Kiekvienas asmuo suranda savo sprendinį ir prisideda prie visų bendrų žinių.</variable>"
 
 #. r62GH
 #: solver_options_algo.xhp
@@ -65030,7 +65167,7 @@ msgctxt ""
 "par_id0504200917103794\n"
 "help.text"
 msgid "<variable id=\"stagnationheader\">Stagnation Limit</variable>"
-msgstr ""
+msgstr "<variable id=\"stagnationheader\">Sąstingio riba</variable>"
 
 #. LDNEL
 #: solver_options_algo.xhp
@@ -65039,7 +65176,7 @@ msgctxt ""
 "par_id050320091710377\n"
 "help.text"
 msgid "<variable id=\"stagnationdesc\">If this number of individuals found solutions within a close range, the iteration is stopped and the best of these values is chosen as optimal.</variable>"
-msgstr ""
+msgstr "<variable id=\"stagnationdesc\">Jei šis asmenų skaičius suranda sprendinius uždaroje srityje, iteracijos sustabdomos ir geriausia rasta reikšmė pasirenkama kaip optimali.</variable>"
 
 #. vGYwe
 #: solver_options_algo.xhp
@@ -65048,7 +65185,7 @@ msgctxt ""
 "par_id0503200917103762\n"
 "help.text"
 msgid "<variable id=\"stagtolheader\">Stagnation Tolerance</variable>"
-msgstr ""
+msgstr "<variable id=\"stagtolheader\">Sąstingio toleravimas</variable>"
 
 #. wqeXY
 #: solver_options_algo.xhp
@@ -65057,7 +65194,7 @@ msgctxt ""
 "par_id0503200917103834\n"
 "help.text"
 msgid "<variable id=\"stagtoldesc\">Defines in what range solutions are considered “similar”.</variable>"
-msgstr ""
+msgstr "<variable id=\"stagtoldesc\">Apibrėžia, kokioje srityje  sprendiniai laikomi panašūs.</variable>"
 
 #. jKuiG
 #: solver_options_algo.xhp
@@ -65066,7 +65203,7 @@ msgctxt ""
 "par_id0503200917103740\n"
 "help.text"
 msgid "<variable id=\"acrheader\">Use ACR Comparator</variable>"
-msgstr ""
+msgstr "<variable id=\"acrheader\">Naudojamas ACR palyginimo blokas</variable>"
 
 #. D8e8D
 #: solver_options_algo.xhp
@@ -65075,7 +65212,7 @@ msgctxt ""
 "par_id0503200917103766\n"
 "help.text"
 msgid "If <emph>disabled</emph> (default), the BCH Comparator is used. It compares two individuals by first looking at their constraint violations and only if those are equal, it measures their current solution."
-msgstr ""
+msgstr "Jei <emph>išjungtas</emph> (numatyta), tai naudojamas BCH palyginimo blokas. Jis palygina dviejų asmenų sprendinius patikrinęs apribojimų pažeidimus ir jei jie yra lygūs, jis priima esamą sprendinį."
 
 #. 7LWoa
 #: solver_options_algo.xhp
@@ -65084,7 +65221,7 @@ msgctxt ""
 "par_id0503200917103744\n"
 "help.text"
 msgid "If <emph>enabled</emph>, the ACR Comparator is used. It compares two individuals dependent on the current iteration and measures their goodness with knowledge about the libraries worst known solutions (in regard to their constraint violations)."
-msgstr ""
+msgstr "Jei <emph>įjungta</emph>, naudojamas ACR palyginimo blokas. Jei palygina dviejų asmenų sprendinius esamoje iteracijoje ir matuoja jų atitikimą su žiniomis apie blogiausią sprendinį iš bibliotekos (atsižvelgia į jų apribojimų pažeidimus)."
 
 #. GZ7C2
 #: solver_options_algo.xhp
@@ -65093,7 +65230,7 @@ msgctxt ""
 "par_id0503200917103792\n"
 "help.text"
 msgid "Use Random Starting Point"
-msgstr ""
+msgstr "Naudojamas atsitiktinis pradžios taškas"
 
 #. EdJoF
 #: solver_options_algo.xhp
@@ -65102,7 +65239,7 @@ msgctxt ""
 "par_id0503200917103790\n"
 "help.text"
 msgid "If <emph>enabled</emph>, the library is simply filled up with randomly chosen points."
-msgstr ""
+msgstr "Jei<emph> įjungta</emph>, biblioteka užpildoma atsitiktinai parinktais taškais."
 
 #. oCPc4
 #: solver_options_algo.xhp
@@ -65111,7 +65248,7 @@ msgctxt ""
 "par_id0503200917103765\n"
 "help.text"
 msgid "If <emph>disabled</emph>, the currently present values (as given by the user) are inserted in the library as reference point."
-msgstr ""
+msgstr "Jei <emph>išjungta</emph>, pateiktos reikšmės (vartotojo) yra įterpiamos į biblioteką, kaip nuorodos."
 
 #. ctLqK
 #: solver_options_algo.xhp
@@ -65120,7 +65257,7 @@ msgctxt ""
 "par_id0503200917103732\n"
 "help.text"
 msgid "<variable id=\"variableguessheader\">Variable Bounds Guessing</variable>"
-msgstr ""
+msgstr "<variable id=\"variableguessheader\">Kintamojo ribos spėjimas</variable>"
 
 #. rc95a
 #: solver_options_algo.xhp
@@ -65129,7 +65266,7 @@ msgctxt ""
 "par_id050320091710378\n"
 "help.text"
 msgid "<variable id=\"variableguessdesc\">If enabled (default), the algorithm tries to find variable bounds by looking at the starting values.</variable>"
-msgstr ""
+msgstr "<variable id=\"variableguessdesc\">Jei įjungta (numatyta), algoritmas bando rasti kintamojo ribą ieškodamas pradžios taško.</variable>"
 
 #. JctSA
 #: solver_options_algo.xhp
@@ -65138,7 +65275,7 @@ msgctxt ""
 "par_id0503200917103794\n"
 "help.text"
 msgid "<variable id=\"variablethresheader\">Variable Bounds Threshold</variable>"
-msgstr ""
+msgstr "<variable id=\"variablethresheader\">Kintamojo ribų slenkstis</variable>"
 
 #. NNyfL
 #: solver_options_algo.xhp
@@ -65147,7 +65284,7 @@ msgctxt ""
 "par_id0503200917103710\n"
 "help.text"
 msgid "<variable id=\"variablethresdesc\">When guessing variable bounds, this threshold specifies, how the initial values are shifted to build the bounds. For an example how these values are calculated, please refer to the Manual in the Wiki.</variable>"
-msgstr ""
+msgstr "<variable id=\"variablethresdesc\">Kai spėjamos kintamojo ribos, slenkstis parodo, kaip pastumiama pradinė reikšmė prie ieškomos ribos.  Kaip šios reikšmės apskaičiuojamos, skaitykite viki straipsnyje.</variable>"
 
 #. UDXDh
 #: solver_options_algo.xhp
@@ -65156,7 +65293,7 @@ msgctxt ""
 "par_id391589925078747\n"
 "help.text"
 msgid "<variable id=\"SCOEvolutionaryAlgorithmh2\"><link href=\"text/scalc/01/solver_options_algo.xhp#SCOEvolutionaryAlgorithmh2\" name=\"SCO Evolutionary Algorithm\">SCO Evolutionary Algorithm</link></variable>"
-msgstr ""
+msgstr "<variable id=\"SCOEvolutionaryAlgorithmh2\"><link href=\"text/scalc/01/solver_options_algo.xhp#SCOEvolutionaryAlgorithmh2\" name=\"SCO Evolutionary Algorithm\">SCO vystymo algoritmas</link></variable>"
 
 #. tqkJh
 #: solver_options_algo.xhp
@@ -65165,7 +65302,7 @@ msgctxt ""
 "par_id681590165847694\n"
 "help.text"
 msgid "Social Cognitive Optimization takes into account the human behavior of learning and sharing information. Each individual has access to a common library with knowledge shared between all individuals."
-msgstr ""
+msgstr "Socialinis pažintinis optimizavimas (SCO) atsižvelgia į žmogiškąjį mokymosi ir informacijos dalijimosi elgesį. Kiekvienas asmuo turi priėjimą prie bendros bibliotekos."
 
 #. wovoy
 #: solver_options_algo.xhp
@@ -65174,7 +65311,7 @@ msgctxt ""
 "par_id0503200917103771\n"
 "help.text"
 msgid "Learning Cycles"
-msgstr ""
+msgstr "Mokymosi ciklai"
 
 #. wgKE5
 #: solver_options_algo.xhp
@@ -65183,7 +65320,7 @@ msgctxt ""
 "par_id0503200917103720\n"
 "help.text"
 msgid "Defines the number of iterations, the algorithm should take. In each iteration, all individuals make a guess on the best solution and share their knowledge."
-msgstr ""
+msgstr "Apibrėžia iteracijų skaičių, kurį turi atlikti algoritmas. Kiekvienoje iteracijoje visi asmenys daro geriausio sprendinio prognozes ir dalijasi su kitais."
 
 #. wrasx
 #: solver_options_algo.xhp
@@ -65192,7 +65329,7 @@ msgctxt ""
 "par_id0603200910401382\n"
 "help.text"
 msgid "Size of Library"
-msgstr ""
+msgstr "Bibliotekos dydis"
 
 #. 4PmLg
 #: solver_options_algo.xhp
@@ -65201,7 +65338,7 @@ msgctxt ""
 "par_id060320091040136\n"
 "help.text"
 msgid "Defines the amount of information to store in the public library. Each individual stores knowledge there and asks for information."
-msgstr ""
+msgstr "Apibrėžia saugomos informacijos viešoje bibliotekoje kiekį. Kiekvienas asmuo ten savo informaciją saugo ir iš ten gauna."
 
 #. EPiZn
 #: solver_options_algo.xhp
@@ -65210,7 +65347,7 @@ msgctxt ""
 "par_id741589980722689\n"
 "help.text"
 msgid "<embedvar href=\"text/scalc/01/solver_options_algo.xhp#variablethresheader\"/>"
-msgstr ""
+msgstr "<embedvar href=\"text/scalc/01/solver_options_algo.xhp#variablethresheader\"/>"
 
 #. Ltucz
 #: solver_options_algo.xhp
@@ -65219,7 +65356,7 @@ msgctxt ""
 "par_id901589980722691\n"
 "help.text"
 msgid "<embedvar href=\"text/scalc/01/solver_options_algo.xhp#variablethresdesc\"/>"
-msgstr ""
+msgstr "<embedvar href=\"text/scalc/01/solver_options_algo.xhp#variablethresdesc\"/>"
 
 #. 46h4u
 #: solver_options_algo.xhp
@@ -65228,7 +65365,7 @@ msgctxt ""
 "par_id671589925148891\n"
 "help.text"
 msgid "<variable id=\"LinearSolverh2\"><link href=\"text/scalc/01/solver_options_algo.xhp#LinearSolverh2\" name=\"%PRODUCTNAME Linear Solver\">%PRODUCTNAME Linear Solver and CoinMP Linear solver</link></variable>"
-msgstr ""
+msgstr "<variable id=\"LinearSolverh2\"><link href=\"text/scalc/01/solver_options_algo.xhp#LinearSolverh2\" name=\"%PRODUCTNAME Linear Solver\">„%PRODUCTNAME“ tiesinis sprendiklis ir CoinMP tiesinis sprendiklis</link></variable>"
 
 #. PNEaC
 #: solver_options_algo.xhp
@@ -65237,7 +65374,7 @@ msgctxt ""
 "par_id731589925837981\n"
 "help.text"
 msgid "<variable id=\"settingshead\">Setting</variable>"
-msgstr ""
+msgstr "<variable id=\"settingshead\">Nuostatos</variable>"
 
 #. DhVRA
 #: solver_options_algo.xhp
@@ -65246,7 +65383,7 @@ msgctxt ""
 "par_id611589925837982\n"
 "help.text"
 msgid "<variable id=\"descriptionhead\">Description</variable>"
-msgstr ""
+msgstr "<variable id=\"descriptionhead\">Aprašymas</variable>"
 
 #. MqHfE
 #: solver_options_algo.xhp
@@ -65255,7 +65392,7 @@ msgctxt ""
 "par_id511589925837984\n"
 "help.text"
 msgid "<variable id=\"integerhead\">Assume variables as integers</variable>"
-msgstr ""
+msgstr "<variable id=\"integerhead\">Priimti kintamuosius kaip sveikuosius</variable>"
 
 #. Javmc
 #: solver_options_algo.xhp
@@ -65264,7 +65401,7 @@ msgctxt ""
 "par_id11589925837985\n"
 "help.text"
 msgid "<variable id=\"integerdesc\">Mark to force variables to be integers only.</variable>"
-msgstr ""
+msgstr "<variable id=\"integerdesc\">Kintamieji gali būti tik sveikieji.</variable>"
 
 #. yie3u
 #: solver_options_algo.xhp
@@ -65273,7 +65410,7 @@ msgctxt ""
 "par_id221589961756407\n"
 "help.text"
 msgid "<variable id=\"noneghead\">Assume variables as non negative</variable>"
-msgstr ""
+msgstr "<variable id=\"noneghead\">Priimti kintamuosius kaip neneigiamus</variable>"
 
 #. ij2he
 #: solver_options_algo.xhp
@@ -65282,7 +65419,7 @@ msgctxt ""
 "par_id861589961756408\n"
 "help.text"
 msgid "<variable id=\"nonegdesc\">Mark to force variables to be positive only.</variable>"
-msgstr ""
+msgstr "<variable id=\"nonegdesc\">Kintamieji gali būti tik teigiami.</variable>"
 
 #. uEDEh
 #: solver_options_algo.xhp
@@ -65291,7 +65428,7 @@ msgctxt ""
 "par_id971589961907787\n"
 "help.text"
 msgid "Epsilon level"
-msgstr ""
+msgstr "Epsilon lygis"
 
 #. JSVtE
 #: solver_options_algo.xhp
@@ -65300,7 +65437,7 @@ msgctxt ""
 "par_id421589961907788\n"
 "help.text"
 msgid "Epsilon level. Valid values are in range 0 (very tight) to 3 (very loose). Epsilon is the tolerance for rounding values to zero."
-msgstr ""
+msgstr "Epsilon lygis. Galimos reikšmės tarp 0 (priverstinis) iki 3 (laisvas). Epsilon yra leidžiamas nuokrypis apvalinant iki 0."
 
 #. rtCLo
 #: solver_options_algo.xhp
@@ -65309,7 +65446,7 @@ msgctxt ""
 "par_id71589961998523\n"
 "help.text"
 msgid "Limit branch-and-bound depth"
-msgstr ""
+msgstr "Ribojamas šakų ir pririšimų gylis"
 
 #. yeTw2
 #: solver_options_algo.xhp
@@ -65318,7 +65455,7 @@ msgctxt ""
 "par_id331589961998525\n"
 "help.text"
 msgid "Specifies the maximum branch-and-bound depth. A positive value means that the depth is absolute. A negative value means a relative branch-and-bound depth limit."
-msgstr ""
+msgstr "Nurodo didžiausią šakų ir pririšimų gylį. Teigiama reikšmė reiškia, kad gylis yra absoliutus. Neigiama reikšmė reiškia, kad šakų ir pririšimų gylį."
 
 #. pnUYs
 #: solver_options_algo.xhp
@@ -65327,7 +65464,7 @@ msgctxt ""
 "par_id91589962070327\n"
 "help.text"
 msgid "<variable id=\"timelimithead\">Solver time limit</variable>"
-msgstr ""
+msgstr "<variable id=\"timelimithead\">Sprendiklio laiko riba</variable>"
 
 #. PPtR8
 #: solver_options_algo.xhp
@@ -65336,7 +65473,7 @@ msgctxt ""
 "par_id331589962070329\n"
 "help.text"
 msgid "<variable id=\"timelimitdesc\">Sets the maximum time for the algorithm to converge to a solution.</variable>"
-msgstr ""
+msgstr "<variable id=\"timelimitdesc\">Nustato didžiausią algoritmo artėjimo į sprendinį laiką.</variable>"
 
 #. 9WDm6
 #: solver_options_algo.xhp
@@ -65345,7 +65482,7 @@ msgctxt ""
 "par_id711589925192067\n"
 "help.text"
 msgid "<variable id=\"SwarmNonLinearSolverh2\"><link href=\"text/scalc/01/solver_options_algo.xhp#SwarmNonLinearSolverh2\" name=\"%PRODUCTNAME Swarm Non-Linear Solver (Experimental)\">%PRODUCTNAME Swarm Non-Linear Solver (Experimental)</link></variable>"
-msgstr ""
+msgstr "<variable id=\"SwarmNonLinearSolverh2\"><link href=\"text/scalc/01/solver_options_algo.xhp#SwarmNonLinearSolverh2\" name=\"%PRODUCTNAME Swarm Non-Linear Solver (Experimental)\">„%PRODUCTNAME“ sutelkia netiesini sprendiklį (eksperimentinis)</link></variable>"
 
 #. TFadK
 #: solver_options_algo.xhp
@@ -65354,7 +65491,7 @@ msgctxt ""
 "par_id971589963431459\n"
 "help.text"
 msgid "Swarm algorithm"
-msgstr ""
+msgstr "Telkinio algoritmas"
 
 #. cgpYF
 #: solver_options_algo.xhp
@@ -65363,7 +65500,7 @@ msgctxt ""
 "par_id71589963431460\n"
 "help.text"
 msgid "Set the swarm algorithm. 0 for differential evolution and 1 for particle swarm optimization. Default is 0."
-msgstr ""
+msgstr "Nustato sutelkimo algoritmą. 0 yra diferencialinis vystymas, o 1 praktinis sutelkimo optimizavimas.. Numatytas yra 0."
 
 #. ugAZb
 #: solver_options_algo.xhp
@@ -65372,7 +65509,7 @@ msgctxt ""
 "par_id271589981559367\n"
 "help.text"
 msgid "<link href=\"https://wiki.documentfoundation.org/NLPSolver\" name=\"wikipage\">Wiki page on non-linear solvers and theirs algorithms</link>"
-msgstr ""
+msgstr "<link href=\"https://wiki.documentfoundation.org/NLPSolver\" name=\"wikipage\">Viki puslapyje netiesiniai sprendikliai ir jų algoritmai</link>"
 
 #. D2nCR
 #: solver_options_algo.xhp
@@ -65381,7 +65518,7 @@ msgctxt ""
 "par_id211590163660314\n"
 "help.text"
 msgid "<link href=\"http://lpsolve.sourceforge.net/\">lp_solve reference guide in sourceforge.net</link>"
-msgstr ""
+msgstr "<link href=\"http://lpsolve.sourceforge.net/\">lp_sprendimo nuoroda į sourceforge.net</link>"
 
 #. Q6isn
 #: stat_data.xhp
