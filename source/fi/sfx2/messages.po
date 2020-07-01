@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2019-05-02 15:45+0200\n"
+"POT-Creation-Date: 2020-07-01 09:54+0200\n"
 "PO-Revision-Date: 2019-05-04 16:57+0000\n"
 "Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -873,62 +873,171 @@ msgctxt "STR_WELCOME_LINE2"
 msgid "Drop a document here or pick an app from the left side to create one."
 msgstr "Pudota asiakirja tänne tai luo uusi valitsemalla sovellus vasemmalta."
 
-#: include/sfx2/strings.hrc:186
+#. Translators: Target types in Auto-redaction dialog
+#: include/sfx2/strings.hrc:187
+msgctxt "STR_REDACTION_TARGET_TYPE_TEXT"
+msgid "Text"
+msgstr "Teksti"
+
+#: include/sfx2/strings.hrc:188
+msgctxt "STR_REDACTION_TARGET_TYPE_REGEX"
+msgid "Regex"
+msgstr ""
+
+#: include/sfx2/strings.hrc:189
+msgctxt "STR_REDACTION_TARGET_TYPE_PREDEF"
+msgid "Predefined"
+msgstr "Ennalta määritelty"
+
+#: include/sfx2/strings.hrc:190
+msgctxt "STR_REDACTION_TARGET_TYPE_UNKNOWN"
+msgid "Unknown"
+msgstr "Tuntematon"
+
+#. Translators: Column headers in Auto-redaction dialog's targets list
+#: include/sfx2/strings.hrc:193
+msgctxt "STR_REDACTION_TARGET_NAME"
+msgid "Target Name"
+msgstr "Kohteen nimi"
+
+#: include/sfx2/strings.hrc:194
+msgctxt "STR_REDACTION_TYPE"
+msgid "Type"
+msgstr "Tyyppi"
+
+#: include/sfx2/strings.hrc:195
+msgctxt "STR_REDACTION_CONTENT"
+msgid "Content"
+msgstr "Sisältö"
+
+#: include/sfx2/strings.hrc:196
+msgctxt "STR_REDACTION_CASE_SENSITIVE"
+msgid "Case Sensitive"
+msgstr ""
+
+#: include/sfx2/strings.hrc:197
+msgctxt "STR_REDACTION_WHOLE_WORDS"
+msgid "Whole Words"
+msgstr "Kokonaiset sanat"
+
+#. Translators: Values for the Case Sensitive and the Whole Words columns in Auto-redaction dialog
+#: include/sfx2/strings.hrc:200
+msgctxt "STR_REDACTION_YES"
+msgid "Yes"
+msgstr "Kyllä"
+
+#: include/sfx2/strings.hrc:201
+msgctxt "STR_REDACTION_NO"
+msgid "No"
+msgstr "Ei"
+
+#. Translators: Misc strings of the Auto Redaction dialog
+#: include/sfx2/strings.hrc:204
+msgctxt "STR_REDACTION_TARGET"
+msgid "Target"
+msgstr "Kohde"
+
+#: include/sfx2/strings.hrc:205
+msgctxt "STR_REDACTION_LOAD_TARGETS"
+msgid "Load Targets"
+msgstr ""
+
+#: include/sfx2/strings.hrc:206
+msgctxt "STR_REDACTION_SAVE_TARGETS"
+msgid "Save Targets"
+msgstr "Tallenna kohteet"
+
+#: include/sfx2/strings.hrc:207
+msgctxt "STR_REDACTION_FIELDS_REQUIRED"
+msgid "All fields are required"
+msgstr "Kaikki kentät ovat pakollisia"
+
+#: include/sfx2/strings.hrc:208
+msgctxt "STR_REDACTION_TARGET_NAME_CLASH"
+msgid "There is already a target with this name"
+msgstr "Samanniminen kohde on jo olemassa"
+
+#: include/sfx2/strings.hrc:209
+msgctxt "STR_REDACTION_MULTI_EDIT"
+msgid "You have selected multiple targets, but only one target can be edited at once."
+msgstr "Olet valinnut useita kohteita, mutta vain yhtä kohdetta voi muokata kerrallaan."
+
+#: include/sfx2/strings.hrc:210
+msgctxt "STR_REDACTION_MULTI_DELETE"
+msgid "Are you sure you would like to delete $(TARGETSCOUNT) targets at once?"
+msgstr "Haluatko varmasti poistaa $(TARGETSCOUNT) kohdetta kerralla?"
+
+#: include/sfx2/strings.hrc:211
+msgctxt "STR_REDACTION_JSON_FILE_FILTER"
+msgid "Target Set (*.json)"
+msgstr "Kohdejoukko (*.json)"
+
+#: include/sfx2/strings.hrc:212
+msgctxt "STR_REDACTION_EDIT_TARGET"
+msgid "Edit Target"
+msgstr "Muokkaa kohdetta"
+
+#: include/sfx2/strings.hrc:213
+msgctxt "STR_REDACTION_TARGET_ADD_ERROR"
+msgid "An error occurred while adding new target. Please report this incident."
+msgstr ""
+
+#: include/sfx2/strings.hrc:215
 msgctxt "STR_SFX_FILEDLG_ACTUALVERSION"
 msgid "Current version"
 msgstr "Nykyinen versio"
 
-#: include/sfx2/strings.hrc:187
+#: include/sfx2/strings.hrc:216
 msgctxt "STR_SFX_EXPLORERFILE_EXPORT"
 msgid "Export"
 msgstr "Vienti"
 
-#: include/sfx2/strings.hrc:188
+#: include/sfx2/strings.hrc:217
 msgctxt "STR_SFX_EXPLORERFILE_INSERT"
 msgid "Insert"
 msgstr "Lisää"
 
-#: include/sfx2/strings.hrc:189
+#: include/sfx2/strings.hrc:218
 msgctxt "STR_SFX_EXPLORERFILE_BUTTONINSERT"
 msgid "~Insert"
 msgstr "~Lisää"
 
-#: include/sfx2/strings.hrc:190
+#: include/sfx2/strings.hrc:219
 msgctxt "STR_SFX_IMPORT_ALL"
 msgid "<All formats>"
 msgstr "<Kaikki muodot>"
 
-#: include/sfx2/strings.hrc:191
+#: include/sfx2/strings.hrc:220
 msgctxt "STR_PB_SAVEACOPY"
 msgid "Save a Copy"
 msgstr "Tallenna kopio"
 
-#: include/sfx2/strings.hrc:192
+#: include/sfx2/strings.hrc:221
 msgctxt "STR_PB_COMPAREDOC"
 msgid "Compare to"
 msgstr "Vertaa tiedostoon"
 
-#: include/sfx2/strings.hrc:193
+#: include/sfx2/strings.hrc:222
 msgctxt "STR_PB_MERGEDOC"
 msgid "Merge with"
 msgstr "Yhdistä tiedostoon"
 
-#: include/sfx2/strings.hrc:195
+#: include/sfx2/strings.hrc:224
 msgctxt "STR_SFX_NEWOFFICEDOC"
 msgid "%PRODUCTNAME document"
 msgstr "%PRODUCTNAME-asiakirja"
 
-#: include/sfx2/strings.hrc:196
+#: include/sfx2/strings.hrc:225
 msgctxt "SFX_ST_DURATION_FORMAT"
 msgid " Y: %1 M: %2 D: %3 H: %4 M: %5 S: %6"
 msgstr " Y: %1 M: %2 D: %3 H: %4 M: %5 S: %6"
 
-#: include/sfx2/strings.hrc:197
+#: include/sfx2/strings.hrc:226
 msgctxt "STR_SFX_REMOVE_PROPERTY"
 msgid "Remove Property"
 msgstr "Poista ominaisuus"
 
-#: include/sfx2/strings.hrc:198
+#: include/sfx2/strings.hrc:227
 msgctxt "STR_SFX_QUERY_WRONG_TYPE"
 msgid ""
 "The value entered does not match the specified type.\n"
@@ -937,27 +1046,27 @@ msgstr ""
 "Annettu arvo ei ole oikeaa tyyppiä.\n"
 "Arvo tallennetaan tekstinä."
 
-#: include/sfx2/strings.hrc:200
+#: include/sfx2/strings.hrc:229
 msgctxt "STR_QUERY_OVERWRITE"
 msgid "Style already exists. Overwrite?"
 msgstr "Tyyli on jo olemassa. Korvataanko?"
 
-#: include/sfx2/strings.hrc:202
+#: include/sfx2/strings.hrc:231
 msgctxt "STR_RESET"
 msgid "~Reset"
 msgstr "P~alauta"
 
-#: include/sfx2/strings.hrc:203
+#: include/sfx2/strings.hrc:232
 msgctxt "STR_TABPAGE_INVALIDNAME"
 msgid "This name is already in use."
 msgstr "Nimi on jo käytössä."
 
-#: include/sfx2/strings.hrc:204
+#: include/sfx2/strings.hrc:233
 msgctxt "STR_TABPAGE_INVALIDSTYLE"
 msgid "This Style does not exist."
 msgstr "Tätä tyyliä ei ole olemassa."
 
-#: include/sfx2/strings.hrc:205
+#: include/sfx2/strings.hrc:234
 msgctxt "STR_TABPAGE_INVALIDPARENT"
 msgid ""
 "This Style cannot be used as a base Style,\n"
@@ -966,7 +1075,7 @@ msgstr ""
 "Tyyliä ei voi tallentaa perustyylinä.\n"
 "Tästä seuraisi rekursiivinen viite."
 
-#: include/sfx2/strings.hrc:206
+#: include/sfx2/strings.hrc:235
 msgctxt "STR_POOL_STYLE_NAME"
 msgid ""
 "Name already exists as a default Style.\n"
@@ -975,7 +1084,7 @@ msgstr ""
 "Nimi on jo määritetty oletustyylille.\n"
 "Valitse toinen nimi."
 
-#: include/sfx2/strings.hrc:207
+#: include/sfx2/strings.hrc:236
 msgctxt "STR_DELETE_STYLE_USED"
 msgid ""
 "One or more of the selected styles is in use in this document.\n"
@@ -986,87 +1095,87 @@ msgstr ""
 "Jos poistat nämä tyylit, ne korvataan tyylihierarkiassa lähimpänä olevalla tyylillä.\n"
 "Haluatko silti poistaa nämä tyylit?\n"
 
-#: include/sfx2/strings.hrc:208
+#: include/sfx2/strings.hrc:237
 msgctxt "STR_DELETE_STYLE"
 msgid "Styles in use: "
 msgstr "Käytössä olevat tyylit: "
 
-#: include/sfx2/strings.hrc:209
+#: include/sfx2/strings.hrc:238
 msgctxt "STR_SID_NAVIGATOR"
 msgid "Navigator"
 msgstr "Rakenneselain"
 
-#: include/sfx2/strings.hrc:210
+#: include/sfx2/strings.hrc:239
 msgctxt "STR_ERROR_WRONG_CONFIRM"
 msgid "Faulty password confirmation"
 msgstr "Salasanan vahvistus ei täsmää"
 
-#: include/sfx2/strings.hrc:211
+#: include/sfx2/strings.hrc:240
 msgctxt "STR_PDF_EXPORT_SEND"
 msgid "Send"
 msgstr "Lähetä"
 
-#: include/sfx2/strings.hrc:212
+#: include/sfx2/strings.hrc:241
 msgctxt "STR_FONT_TABPAGE"
 msgid "Font"
 msgstr "Fontti"
 
-#: include/sfx2/strings.hrc:213
+#: include/sfx2/strings.hrc:242
 msgctxt "STR_PREVIEW_CHECKBOX"
 msgid "Show previews"
 msgstr "Näytä esikatselut"
 
-#: include/sfx2/strings.hrc:215
+#: include/sfx2/strings.hrc:244
 msgctxt "STR_VIEWVERSIONCOMMENT"
 msgid "View Version Comment"
 msgstr "Näytä versiohuomautus"
 
-#: include/sfx2/strings.hrc:216
+#: include/sfx2/strings.hrc:245
 msgctxt "STR_NO_NAME_SET"
 msgid "(no name set)"
 msgstr "(nimeä ei ole asetettu)"
 
-#: include/sfx2/strings.hrc:218
+#: include/sfx2/strings.hrc:247
 msgctxt "STR_STYLE_ELEMTLIST"
 msgid "Style List"
 msgstr "Tyyliluettelo"
 
-#: include/sfx2/strings.hrc:219
+#: include/sfx2/strings.hrc:248
 msgctxt "STR_STYLE_FILTER_HIERARCHICAL"
 msgid "Hierarchical"
 msgstr "Hierarkkinen"
 
-#: include/sfx2/strings.hrc:220
+#: include/sfx2/strings.hrc:249
 msgctxt "STR_STYLE_FILL_FORMAT_MODE"
 msgid "Fill Format Mode"
 msgstr "Täyttömuotoilutila"
 
-#: include/sfx2/strings.hrc:221
+#: include/sfx2/strings.hrc:250
 msgctxt "STR_STYLE_NEW_STYLE_FROM_SELECTION"
 msgid "New Style from Selection"
 msgstr "Uusi tyyli valinnasta"
 
-#: include/sfx2/strings.hrc:222
+#: include/sfx2/strings.hrc:251
 msgctxt "STR_STYLE_UPDATE_STYLE"
 msgid "Update Style"
 msgstr "Päivitä tyyli"
 
-#: include/sfx2/strings.hrc:224
+#: include/sfx2/strings.hrc:253
 msgctxt "STR_MACRO_LOSS"
 msgid "Do you really want to cancel the recording? Any steps recorded up to this point will be lost."
 msgstr "Haluatko varmasti keskeyttää nauhoituksen? Kaikki tähän asti nauhoitetut toiminnot menetetään."
 
-#: include/sfx2/strings.hrc:225
+#: include/sfx2/strings.hrc:254
 msgctxt "STR_CANCEL_RECORDING"
 msgid "Cancel Recording"
 msgstr "Peruuta nauhoitus"
 
-#: include/sfx2/strings.hrc:227
+#: include/sfx2/strings.hrc:256
 msgctxt "RID_CNT_STR_WAITING"
 msgid "The templates are being initialized for first-time usage."
 msgstr "Malleja alustetaan ensimmäistä käyttökertaa varten."
 
-#: include/sfx2/strings.hrc:229
+#: include/sfx2/strings.hrc:258
 msgctxt "STR_NODEFPRINTER"
 msgid ""
 "No default printer found.\n"
@@ -1075,7 +1184,7 @@ msgstr ""
 "Oletustulostinta ei ole.\n"
 "Valitse tulostin ja yritä uudelleen."
 
-#: include/sfx2/strings.hrc:230
+#: include/sfx2/strings.hrc:259
 msgctxt "STR_NOSTARTPRINTER"
 msgid ""
 "Could not start printer.\n"
@@ -1084,17 +1193,17 @@ msgstr ""
 "Tulostinta ei voi käynnistää.\n"
 "Tarkista tulostimen määritykset."
 
-#: include/sfx2/strings.hrc:231
+#: include/sfx2/strings.hrc:260
 msgctxt "STR_ERROR_PRINTER_BUSY"
 msgid "Printer busy"
 msgstr "Tulostin käytössä"
 
-#: include/sfx2/strings.hrc:232
+#: include/sfx2/strings.hrc:261
 msgctxt "STR_READONLY"
 msgid " (read-only)"
 msgstr " (kirjoitussuojattu)"
 
-#: include/sfx2/strings.hrc:233
+#: include/sfx2/strings.hrc:262
 msgctxt "STR_PRINT_NEWORI"
 msgid ""
 "The page size and orientation have been modified.\n"
@@ -1105,7 +1214,7 @@ msgstr ""
 "Haluatko tallentaa uudet asetukset\n"
 "aktiiviseen asiakirjaan?"
 
-#: include/sfx2/strings.hrc:234
+#: include/sfx2/strings.hrc:263
 msgctxt "STR_PRINT_NEWSIZE"
 msgid ""
 "The page size has been modified.\n"
@@ -1116,7 +1225,7 @@ msgstr ""
 "Tallennetaanko uudet asetukset\n"
 "aktiiviseen asiakirjaan?"
 
-#: include/sfx2/strings.hrc:235
+#: include/sfx2/strings.hrc:264
 msgctxt "STR_PRINT_NEWORISIZE"
 msgid ""
 "The page size and orientation have been modified.\n"
@@ -1127,7 +1236,7 @@ msgstr ""
 "Haluatko tallentaa uudet asetukset\n"
 "aktiiviseen asiakirjaan?"
 
-#: include/sfx2/strings.hrc:236
+#: include/sfx2/strings.hrc:265
 msgctxt "STR_CANT_CLOSE"
 msgid ""
 "The document cannot be closed because a\n"
@@ -1136,7 +1245,7 @@ msgstr ""
 "Asiakirjaa ei voitu sulkea, koska\n"
 " tulostustyö on kesken."
 
-#: include/sfx2/strings.hrc:237
+#: include/sfx2/strings.hrc:266
 msgctxt "STR_ERROR_SEND_MAIL"
 msgid ""
 "An error occurred in sending the message. Possible errors could be a missing user account or a defective setup.\n"
@@ -1146,7 +1255,7 @@ msgstr ""
 "Tarkista %PRODUCTNAMEn tai sähköpostiohjelmasi asetukset."
 
 #. Error codes look like "MAPI_E_FAILURE" or "1234"
-#: include/sfx2/strings.hrc:239
+#: include/sfx2/strings.hrc:268
 msgctxt "STR_ERROR_SEND_MAIL_CODE"
 msgid ""
 "An error occurred in sending the message. Possible errors could be a missing user account or a defective setup.\n"
@@ -1157,370 +1266,376 @@ msgstr ""
 "\n"
 "Virhekoodi on $1"
 
-#: include/sfx2/strings.hrc:240
+#: include/sfx2/strings.hrc:269
 msgctxt "STR_ERROR_SEND_MAIL_HEADER"
 msgid "Error sending mail"
 msgstr "Virhe sähköpostia lähettäessä"
 
-#: include/sfx2/strings.hrc:241
+#: include/sfx2/strings.hrc:270
 msgctxt "STR_QUERY_OPENASTEMPLATE"
 msgid "This document cannot be edited, possibly due to missing access rights. Do you want to edit a copy of the document?"
 msgstr "Asiakirjaa ei voi avata muokattavaksi, käyttöoikeudet saattavat olla puutteelliset. Haluatko käyttää asiakirjaa uuden asiakirjan mallina?"
 
-#: include/sfx2/strings.hrc:242
-msgctxt "STR_QUERY_OPENASTEMPLATE_ALLOW_IGNORE"
+#: include/sfx2/strings.hrc:271
+msgctxt "STR_QUERY_OPENASTEMPLATE_LOCKED"
 msgid ""
-"This document cannot be edited, because it is locked in another session. Do you want to edit a copy of the document?\n"
-"\n"
-"You can also try to ignore the lock and open the file for editing."
+"This document cannot be edited, because it is locked in another session.%LOCKINFO\n"
+"Do you want to edit a copy of the document?"
 msgstr ""
+"Tätä asiakirjaa ei voi muokata, koska se on lukittu toisessa istunnossa. %LOCKINFO\n"
+"Haluatko muokata asiakirjan kopiota?"
 
-#: include/sfx2/strings.hrc:243
+#: include/sfx2/strings.hrc:272
+msgctxt "STR_QUERY_OPENASTEMPLATE_ALLOW_IGNORE"
+msgid "You can also try to ignore the lock and open the file for editing."
+msgstr "Voit myös yrittää sivuuttaa lukon ja avata tiedoston muokkaamista varten."
+
+#: include/sfx2/strings.hrc:273
 msgctxt "STR_QUERY_OPENASTEMPLATE_OPENCOPY_BTN"
 msgid "Open ~Copy"
 msgstr "Avaa ~kopio"
 
-#: include/sfx2/strings.hrc:244
+#: include/sfx2/strings.hrc:274
 msgctxt "STR_QUERY_OPENASTEMPLATE_OPEN_BTN"
 msgid "~Open"
 msgstr "~Avaa"
 
-#: include/sfx2/strings.hrc:245
+#: include/sfx2/strings.hrc:275
 msgctxt "STR_REPAIREDDOCUMENT"
 msgid " (repaired document)"
 msgstr " (korjattu asiakirja)"
 
-#: include/sfx2/strings.hrc:246
+#: include/sfx2/strings.hrc:276
 msgctxt "STR_NONCHECKEDOUT_DOCUMENT"
 msgid "This document is not checked out on the server."
 msgstr "Tämä asiakirja ei ole uloskuitattuna palvelimella."
 
-#: include/sfx2/strings.hrc:247
+#: include/sfx2/strings.hrc:277
 msgctxt "STR_GET_INVOLVED_TEXT"
 msgid "Help us make %PRODUCTNAME even better!"
 msgstr "Auta tekemään %PRODUCTNAMEsta aiempaa parempi!"
 
-#: include/sfx2/strings.hrc:248
+#: include/sfx2/strings.hrc:278
 msgctxt "STR_GET_INVOLVED_BUTTON"
 msgid "Get involved"
 msgstr "Tule mukaan"
 
-#: include/sfx2/strings.hrc:249
+#: include/sfx2/strings.hrc:279
 msgctxt "STR_GET_DONATE_TEXT"
 msgid "Your donations support our worldwide community."
 msgstr "Lahjoituksesi tukee maailmanlaajuista yhteisöämme."
 
-#: include/sfx2/strings.hrc:250
+#: include/sfx2/strings.hrc:280
 msgctxt "STR_GET_DONATE_BUTTON"
 msgid "Donate"
 msgstr "Lahjoita"
 
-#: include/sfx2/strings.hrc:251
+#: include/sfx2/strings.hrc:281
 msgctxt "STR_READONLY_DOCUMENT"
 msgid "This document is open in read-only mode."
 msgstr "Tämä asiakirja on avattu vain lukua varten."
 
-#: include/sfx2/strings.hrc:252
+#: include/sfx2/strings.hrc:282
 msgctxt "STR_READONLY_PDF"
 msgid "This PDF is open in read-only mode to allow signing the existing file."
 msgstr "Tämä PDF on avattu kirjoitussuojattuna allekirjoittamista varten."
 
-#: include/sfx2/strings.hrc:253
+#: include/sfx2/strings.hrc:283
 msgctxt "STR_CLASSIFIED_DOCUMENT"
 msgid "The classification label of this document is %1."
 msgstr "Tämän asiakirjan luokittelumerkintä on %1."
 
-#: include/sfx2/strings.hrc:254
+#: include/sfx2/strings.hrc:284
 msgctxt "STR_TARGET_DOC_NOT_CLASSIFIED"
 msgid "This document must be classified before the clipboard can be pasted."
 msgstr "Tämä asiakirja on luokiteltava ennen kuin leikepöydän sisältö voidaan liittää."
 
-#: include/sfx2/strings.hrc:255
+#: include/sfx2/strings.hrc:285
 msgctxt "STR_DOC_CLASSIFICATION_TOO_LOW"
 msgid "This document has a lower classification level than the clipboard."
 msgstr "Tämän asiakirjan luokittelutaso on alempi kuin leikepöydän sisällön."
 
-#: include/sfx2/strings.hrc:256
+#: include/sfx2/strings.hrc:286
 msgctxt "STR_CLASSIFIED_INTELLECTUAL_PROPERTY"
 msgid "Level"
-msgstr ""
+msgstr "Suojaustaso"
 
-#: include/sfx2/strings.hrc:257
+#: include/sfx2/strings.hrc:287
 msgctxt "STR_CLASSIFIED_NATIONAL_SECURITY"
 msgid "National Security:"
 msgstr "Kansallinen turvallisuus:"
 
-#: include/sfx2/strings.hrc:258
+#: include/sfx2/strings.hrc:288
 msgctxt "STR_CLASSIFIED_EXPORT_CONTROL"
 msgid "Export Control:"
 msgstr "Vientirajoitukset:"
 
-#: include/sfx2/strings.hrc:259
+#: include/sfx2/strings.hrc:289
 msgctxt "STR_CHECKOUT"
 msgid "Check Out"
 msgstr "Kuittaa ulos"
 
-#: include/sfx2/strings.hrc:260
+#: include/sfx2/strings.hrc:290
 msgctxt "STR_READONLY_EDIT"
 msgid "Edit Document"
 msgstr "Muokkaa asiakirjaa"
 
-#: include/sfx2/strings.hrc:261
+#: include/sfx2/strings.hrc:291
 msgctxt "STR_READONLY_SIGN"
 msgid "Sign Document"
 msgstr "Allekirjoita asiakirja"
 
-#: include/sfx2/strings.hrc:262
+#: include/sfx2/strings.hrc:292
 msgctxt "STR_SIGNATURE_BROKEN"
 msgid "This document has an invalid signature."
 msgstr "Asiakirjalla on viallinen allekirjoitus."
 
-#: include/sfx2/strings.hrc:263
+#: include/sfx2/strings.hrc:293
 msgctxt "STR_SIGNATURE_INVALID"
 msgid "The signature was valid, but the document has been modified"
 msgstr "Allekirjoitus oli kelvollinen, mutta asiakirjaa on muutettu"
 
-#: include/sfx2/strings.hrc:264
+#: include/sfx2/strings.hrc:294
 msgctxt "STR_SIGNATURE_NOTVALIDATED"
 msgid "The signature is OK, but the certificate could not be validated."
 msgstr "Allekirjoitus on kelvollinen, mutta varmennetta ei voitu tarkistaa."
 
-#: include/sfx2/strings.hrc:265
+#: include/sfx2/strings.hrc:295
 msgctxt "STR_SIGNATURE_PARTIAL_OK"
 msgid "The signature is OK, but the document is only partially signed."
 msgstr "Allekirjoitus on kelvollinen, mutta asiakirja on vain osittain allekirjoitettu."
 
-#: include/sfx2/strings.hrc:266
+#: include/sfx2/strings.hrc:296
 msgctxt "STR_SIGNATURE_NOTVALIDATED_PARTIAL_OK"
 msgid "The certificate could not be validated and the document is only partially signed."
-msgstr ""
+msgstr "Varmennetta ei voitu validoida ja asiakirja on vain osittain allekirjoitettu."
 
-#: include/sfx2/strings.hrc:267
+#: include/sfx2/strings.hrc:297
 msgctxt "STR_SIGNATURE_OK"
 msgid "This document is digitally signed and the signature is valid."
 msgstr "Tämä asiakirja on sähköisesti allekirjoitettu, ja allekirjoitus on kelvollinen."
 
-#: include/sfx2/strings.hrc:268
+#: include/sfx2/strings.hrc:298
 msgctxt "STR_SIGNATURE_SHOW"
 msgid "Show Signatures"
 msgstr "Näytä allekirjoitukset"
 
-#: include/sfx2/strings.hrc:270
+#: include/sfx2/strings.hrc:300
 msgctxt "STR_CLOSE_PANE"
 msgid "Close Pane"
 msgstr "Sulje paneeli"
 
-#: include/sfx2/strings.hrc:271
+#: include/sfx2/strings.hrc:301
 msgctxt "STR_SFX_DOCK"
 msgid "Dock"
 msgstr "Kiinnitä"
 
-#: include/sfx2/strings.hrc:272
+#: include/sfx2/strings.hrc:302
 msgctxt "STR_SFX_UNDOCK"
 msgid "Undock"
 msgstr "Irrota"
 
-#: include/sfx2/strings.hrc:274
+#: include/sfx2/strings.hrc:304
 msgctxt "SFX_STR_SIDEBAR_MORE_OPTIONS"
 msgid "More Options"
 msgstr "Lisää valintoja"
 
-#: include/sfx2/strings.hrc:275
+#: include/sfx2/strings.hrc:305
 msgctxt "SFX_STR_SIDEBAR_CLOSE_DECK"
 msgid "Close Sidebar Deck"
 msgstr "Sulje sivupalkki"
 
-#: include/sfx2/strings.hrc:276
+#: include/sfx2/strings.hrc:306
 msgctxt "SFX_STR_SIDEBAR_SETTINGS"
 msgid "Sidebar Settings"
 msgstr "Sivupalkin asetukset"
 
-#: include/sfx2/strings.hrc:277
+#: include/sfx2/strings.hrc:307
 msgctxt "SFX_STR_SIDEBAR_CUSTOMIZATION"
 msgid "Customization"
 msgstr "Mukautukset"
 
-#: include/sfx2/strings.hrc:278
+#: include/sfx2/strings.hrc:308
 msgctxt "SFX_STR_SIDEBAR_RESTORE"
 msgid "Restore Default"
 msgstr "Palauta oletus"
 
-#: include/sfx2/strings.hrc:279
+#: include/sfx2/strings.hrc:309
 msgctxt "SFX_STR_SIDEBAR_HIDE_SIDEBAR"
 msgid "Close Sidebar"
 msgstr "Sulje sivupalkki"
 
 #. Translators: default Impress template names
-#: include/sfx2/strings.hrc:282
+#: include/sfx2/strings.hrc:312
 msgctxt "STR_TEMPLATE_NAME1"
 msgid "Alizarin"
 msgstr "Alitsariini"
 
-#: include/sfx2/strings.hrc:283
+#: include/sfx2/strings.hrc:313
 msgctxt "STR_TEMPLATE_NAME2"
 msgid "Beehive"
 msgstr "Mehiläispesä"
 
-#: include/sfx2/strings.hrc:284
+#: include/sfx2/strings.hrc:314
 msgctxt "STR_TEMPLATE_NAME3"
 msgid "Blue Curve"
 msgstr "Sininen kaari"
 
-#: include/sfx2/strings.hrc:285
+#: include/sfx2/strings.hrc:315
 msgctxt "STR_TEMPLATE_NAME4"
 msgid "Blueprint Plans"
 msgstr "Suunnitelma"
 
-#: include/sfx2/strings.hrc:286
+#: include/sfx2/strings.hrc:316
 msgctxt "STR_TEMPLATE_NAME5"
 msgid "Bright Blue"
 msgstr "Kirkas sininen"
 
-#: include/sfx2/strings.hrc:287
+#: include/sfx2/strings.hrc:317
 msgctxt "STR_TEMPLATE_NAME6"
 msgid "Classy Red"
 msgstr "Hienostunut punainen"
 
-#: include/sfx2/strings.hrc:288
+#: include/sfx2/strings.hrc:318
 msgctxt "STR_TEMPLATE_NAME7"
 msgid "DNA"
 msgstr "DNA"
 
-#: include/sfx2/strings.hrc:289
+#: include/sfx2/strings.hrc:319
 msgctxt "STR_TEMPLATE_NAME8"
 msgid "Focus"
 msgstr "Fokus"
 
-#: include/sfx2/strings.hrc:290
+#: include/sfx2/strings.hrc:320
 msgctxt "STR_TEMPLATE_NAME9"
 msgid "Forestbird"
 msgstr "Metsälintu"
 
-#: include/sfx2/strings.hrc:291
+#: include/sfx2/strings.hrc:321
 msgctxt "STR_TEMPLATE_NAME10"
 msgid "Impress"
 msgstr "Vaikutelma"
 
-#: include/sfx2/strings.hrc:292
+#: include/sfx2/strings.hrc:322
 msgctxt "STR_TEMPLATE_NAME11"
 msgid "Inspiration"
 msgstr "Inspiraatio"
 
-#: include/sfx2/strings.hrc:293
+#: include/sfx2/strings.hrc:323
 msgctxt "STR_TEMPLATE_NAME12"
 msgid "Lights"
 msgstr "Valot"
 
-#: include/sfx2/strings.hrc:294
+#: include/sfx2/strings.hrc:324
 msgctxt "STR_TEMPLATE_NAME13"
 msgid "Lush Green"
 msgstr "Valkoinen ja vihreä"
 
-#: include/sfx2/strings.hrc:295
+#: include/sfx2/strings.hrc:325
 msgctxt "STR_TEMPLATE_NAME14"
 msgid "Metropolis"
 msgstr "Metropoli"
 
-#: include/sfx2/strings.hrc:296
+#: include/sfx2/strings.hrc:326
 msgctxt "STR_TEMPLATE_NAME15"
 msgid "Midnightblue"
 msgstr "Keskiyön sininen"
 
-#: include/sfx2/strings.hrc:297
+#: include/sfx2/strings.hrc:327
 msgctxt "STR_TEMPLATE_NAME16"
 msgid "Nature Illustration"
 msgstr "Luontokuvitus"
 
-#: include/sfx2/strings.hrc:298
+#: include/sfx2/strings.hrc:328
 msgctxt "STR_TEMPLATE_NAME17"
 msgid "Pencil"
 msgstr "Lyijykynä"
 
-#: include/sfx2/strings.hrc:299
+#: include/sfx2/strings.hrc:329
 msgctxt "STR_TEMPLATE_NAME18"
 msgid "Piano"
 msgstr "Piano"
 
-#: include/sfx2/strings.hrc:300
+#: include/sfx2/strings.hrc:330
 msgctxt "STR_TEMPLATE_NAME19"
 msgid "Portfolio"
 msgstr "Portfolio"
 
-#: include/sfx2/strings.hrc:301
+#: include/sfx2/strings.hrc:331
 msgctxt "STR_TEMPLATE_NAME20"
 msgid "Progress"
 msgstr "Edistys"
 
-#: include/sfx2/strings.hrc:302
+#: include/sfx2/strings.hrc:332
 msgctxt "STR_TEMPLATE_NAME21"
 msgid "Sunset"
 msgstr "Auringonlasku"
 
-#: include/sfx2/strings.hrc:303
+#: include/sfx2/strings.hrc:333
 msgctxt "STR_TEMPLATE_NAME22"
 msgid "Vintage"
 msgstr "Vuosikerta"
 
-#: include/sfx2/strings.hrc:304
+#: include/sfx2/strings.hrc:334
 msgctxt "STR_TEMPLATE_NAME23"
 msgid "Vivid"
 msgstr "Eloisa"
 
 #. Translators: default Writer template names
-#: include/sfx2/strings.hrc:306
+#: include/sfx2/strings.hrc:336
 msgctxt "STR_TEMPLATE_NAME24"
 msgid "CV"
 msgstr "CV"
 
-#: include/sfx2/strings.hrc:307
+#: include/sfx2/strings.hrc:337
 msgctxt "STR_TEMPLATE_NAME25"
 msgid "Resume"
 msgstr "Ansioluettelo"
 
-#: include/sfx2/strings.hrc:308
+#: include/sfx2/strings.hrc:338
 msgctxt "STR_TEMPLATE_NAME26"
 msgid "Default"
 msgstr "Oletus"
 
-#: include/sfx2/strings.hrc:309
+#: include/sfx2/strings.hrc:339
 msgctxt "STR_TEMPLATE_NAME27"
 msgid "Modern"
 msgstr "Moderni"
 
-#: include/sfx2/strings.hrc:310
+#: include/sfx2/strings.hrc:340
 msgctxt "STR_TEMPLATE_NAME28"
 msgid "Modern business letter sans-serif"
 msgstr "Moderni liikekirje groteski"
 
-#: include/sfx2/strings.hrc:311
+#: include/sfx2/strings.hrc:341
 msgctxt "STR_TEMPLATE_NAME29"
 msgid "Modern business letter serif"
 msgstr "Moderni liikekirje pääteviiva"
 
-#: include/sfx2/strings.hrc:312
+#: include/sfx2/strings.hrc:342
 msgctxt "STR_TEMPLATE_NAME30"
 msgid "Businesscard with logo"
 msgstr "Käyntikortti logolla"
 
-#: include/sfx2/strings.hrc:314
+#: include/sfx2/strings.hrc:344
 msgctxt "STR_CLEAR_CHAR"
 msgid "Remove"
 msgstr "Poista"
 
-#: include/sfx2/strings.hrc:315
+#: include/sfx2/strings.hrc:345
 msgctxt "STR_CLEAR_ALL_CHAR"
 msgid "Clear All"
 msgstr "Tyhjennä kaikki"
 
-#: include/sfx2/strings.hrc:317
+#: include/sfx2/strings.hrc:347
 msgctxt "STR_PASSWORD_LEN"
 msgid "Password length"
 msgstr "Salasanan pituus"
 
-#: include/sfx2/strings.hrc:318
+#: include/sfx2/strings.hrc:348
 msgctxt "STR_PASSWORD_WARNING"
 msgid "The password you have entered causes interoperability issues. Please enter a password that is shorter than 52 bytes, or longer than 55 bytes."
-msgstr ""
+msgstr "Antamasi salasana aiheuttaa yhteentoimivuusongelmia. Anna salasana, joka on lyhyempi kuin 52 tavua tai pidempi kuin 55 tavua."
 
 #: sfx2/inc/dinfdlg.hrc:27
 msgctxt "SFX_CB_PROPERTY_STRINGARRAY"
@@ -1762,6 +1877,86 @@ msgctxt "TEMPLATE_LONG_NAMES_ARY"
 msgid "Styles"
 msgstr "Tyylit"
 
+#: sfx2/uiconfig/ui/addtargetdialog.ui:8
+msgctxt "addtargetdialog|AddTargetDialog"
+msgid "Add Target"
+msgstr "Lisää kohde"
+
+#: sfx2/uiconfig/ui/addtargetdialog.ui:86
+msgctxt "addtargetdialog|label_name"
+msgid "Name:"
+msgstr "Nimi:"
+
+#: sfx2/uiconfig/ui/addtargetdialog.ui:117
+msgctxt "addtargetdialog|label_type"
+msgid "Type:"
+msgstr "Tyyppi:"
+
+#: sfx2/uiconfig/ui/addtargetdialog.ui:132
+msgctxt "addtargetdialog|label_content"
+msgid "Content:"
+msgstr "Sisältö:"
+
+#: sfx2/uiconfig/ui/addtargetdialog.ui:167
+msgctxt "addtargetdialog|type"
+msgid "Text"
+msgstr "Teksti"
+
+#: sfx2/uiconfig/ui/addtargetdialog.ui:168
+msgctxt "addtargetdialog|type"
+msgid "Regex"
+msgstr ""
+
+#: sfx2/uiconfig/ui/addtargetdialog.ui:169
+msgctxt "addtargetdialog|type"
+msgid "Predefined"
+msgstr "Ennalta määritelty"
+
+#: sfx2/uiconfig/ui/addtargetdialog.ui:184
+msgctxt "addtargetdialog|label_content_predef"
+msgid "Content:"
+msgstr "Sisältö:"
+
+#: sfx2/uiconfig/ui/addtargetdialog.ui:202
+msgctxt "addtargetdialog|content_predef"
+msgid "Credit card numbers"
+msgstr "Luottokortin numerot"
+
+#: sfx2/uiconfig/ui/addtargetdialog.ui:203
+msgctxt "addtargetdialog|content_predef"
+msgid "Email addresses"
+msgstr "Sähköpostiosoitteet"
+
+#: sfx2/uiconfig/ui/addtargetdialog.ui:204
+msgctxt "addtargetdialog|content_predef"
+msgid "IP addresses"
+msgstr "IP-osoitteet"
+
+#: sfx2/uiconfig/ui/addtargetdialog.ui:205
+msgctxt "addtargetdialog|content_predef"
+msgid "Dates (Numerical)"
+msgstr "Päivämäärät (numeeriset)"
+
+#: sfx2/uiconfig/ui/addtargetdialog.ui:206
+msgctxt "addtargetdialog|content_predef"
+msgid "National Insurance Number (UK)"
+msgstr ""
+
+#: sfx2/uiconfig/ui/addtargetdialog.ui:207
+msgctxt "addtargetdialog|content_predef"
+msgid "Social Security Number (US)"
+msgstr ""
+
+#: sfx2/uiconfig/ui/addtargetdialog.ui:231
+msgctxt "addtargetdialog|checkboxCaseSensitive"
+msgid "Case Sensitive"
+msgstr ""
+
+#: sfx2/uiconfig/ui/addtargetdialog.ui:247
+msgctxt "addtargetdialog|checkboxWholeWords"
+msgid "Whole Words Only"
+msgstr "Vain kokonaiset sanat"
+
 #: sfx2/uiconfig/ui/alienwarndialog.ui:7
 msgctxt "alienwarndialog|AlienWarnDialog"
 msgid "Confirm File Format"
@@ -1791,6 +1986,68 @@ msgstr "_Käytä %FORMATNAME-muotoa"
 msgctxt "alienwarndialog|ask"
 msgid "_Ask when not saving in ODF or default format"
 msgstr "Kysy tallennettaessa muuhun kuin ODF- tai oletusmuotoon"
+
+#: sfx2/uiconfig/ui/autoredactdialog.ui:24
+msgctxt "autoredactdialog|AutoRedactDialog"
+msgid "Automatic Redaction"
+msgstr "Automaattinen sanitointi"
+
+#: sfx2/uiconfig/ui/autoredactdialog.ui:120
+msgctxt "autoredactdialog|target"
+msgid "Target Name"
+msgstr "Kohteen nimi"
+
+#: sfx2/uiconfig/ui/autoredactdialog.ui:133
+msgctxt "autoredactdialog|description"
+msgid "Type"
+msgstr "Tyyppi"
+
+#: sfx2/uiconfig/ui/autoredactdialog.ui:146
+msgctxt "autoredactdialog|target"
+msgid "Content"
+msgstr "Sisältö"
+
+#: sfx2/uiconfig/ui/autoredactdialog.ui:159
+msgctxt "autoredactdialog|target"
+msgid "Case Sensitive"
+msgstr ""
+
+#: sfx2/uiconfig/ui/autoredactdialog.ui:172
+msgctxt "autoredactdialog|target"
+msgid "Whole Words"
+msgstr "Kokonaiset sanat"
+
+#: sfx2/uiconfig/ui/autoredactdialog.ui:200
+msgctxt "menuassignpage|contentslabel"
+msgid "_Redaction Targets"
+msgstr "Sanitointikohteet"
+
+#: sfx2/uiconfig/ui/autoredactdialog.ui:219
+msgctxt "autoredactdialog|btnLoadTargets"
+msgid "Load Targets"
+msgstr ""
+
+#: sfx2/uiconfig/ui/autoredactdialog.ui:234
+msgctxt "autoredactdialog|btnSaveTargets"
+msgid "Save Targets"
+msgstr "Tallenna kohteet"
+
+#: sfx2/uiconfig/ui/autoredactdialog.ui:270
+msgctxt "autoredactdialog|add"
+msgid "Add"
+msgstr ""
+
+#: sfx2/uiconfig/ui/autoredactdialog.ui:283
+#, fuzzy
+msgctxt "autoredactdialog|edit"
+msgid "Edit"
+msgstr "Muokkaa"
+
+#: sfx2/uiconfig/ui/autoredactdialog.ui:296
+#, fuzzy
+msgctxt "autoredactdialog|delete"
+msgid "Delete"
+msgstr "Poista"
 
 #: sfx2/uiconfig/ui/bookmarkdialog.ui:8
 msgctxt "bookmarkdialog|BookmarkDialog"
@@ -1950,22 +2207,22 @@ msgstr "Fonttien upotus"
 #: sfx2/uiconfig/ui/documentfontspage.ui:99
 msgctxt "documentfontspage|embedLatinScriptFonts"
 msgid "_Latin fonts"
-msgstr ""
+msgstr "_Latinalaiset fontit"
 
 #: sfx2/uiconfig/ui/documentfontspage.ui:115
 msgctxt "documentfontspage|embedAsianScriptFonts"
 msgid "_Asian fonts"
-msgstr ""
+msgstr "_Aasialaiset fontit"
 
 #: sfx2/uiconfig/ui/documentfontspage.ui:131
 msgctxt "documentfontspage|embedComplexScriptFonts"
 msgid "_Complex fonts"
-msgstr ""
+msgstr "_Kompleksiset fontit"
 
 #: sfx2/uiconfig/ui/documentfontspage.ui:153
 msgctxt "documentfontspage|fontScriptFrameLabel"
 msgid "Font scripts to embed"
-msgstr ""
+msgstr "Upotettavat merkistöt"
 
 #: sfx2/uiconfig/ui/documentinfopage.ui:18
 msgctxt "documentinfopage|label13"
@@ -2272,12 +2529,22 @@ msgctxt "licensedialog|LicenseDialog"
 msgid "Licensing and Legal information"
 msgstr "Oikeudelliset tiedot ja lisenssi"
 
-#: sfx2/uiconfig/ui/licensedialog.ui:25
+#: sfx2/uiconfig/ui/licensedialog.ui:28
 msgctxt "licensedialog|show"
 msgid "_Show License"
 msgstr "Näytä lisenssiteksti"
 
-#: sfx2/uiconfig/ui/licensedialog.ui:68
+#: sfx2/uiconfig/ui/licensedialog.ui:44
+msgctxt "licensedialog|eula"
+msgid "_EULA"
+msgstr ""
+
+#: sfx2/uiconfig/ui/licensedialog.ui:88
+msgctxt "licensedialog|label2"
+msgid "%PRODUCTNAME binary package is made available subject to the terms of the End User License and Subscription Agreement; choose EULA to see exact details in English."
+msgstr ""
+
+#: sfx2/uiconfig/ui/licensedialog.ui:106
 msgctxt "licensedialog|label"
 msgid ""
 "%PRODUCTNAME is made available subject to the terms of the Mozilla Public License, v. 2.0. A copy of the MPL can be obtained at http://mozilla.org/MPL/2.0/.\n"
@@ -2294,7 +2561,7 @@ msgstr ""
 #: sfx2/uiconfig/ui/linkeditdialog.ui:8
 msgctxt "linkeditdialog|title"
 msgid "Modify DDE Link"
-msgstr ""
+msgstr "Muokkaa DDE-linkkiä"
 
 #: sfx2/uiconfig/ui/linkeditdialog.ui:107
 msgctxt "linkeditdialog|label2"
@@ -2321,52 +2588,52 @@ msgctxt "loadtemplatedialog|LoadTemplateDialog"
 msgid "New"
 msgstr "Uusi"
 
-#: sfx2/uiconfig/ui/loadtemplatedialog.ui:39
+#: sfx2/uiconfig/ui/loadtemplatedialog.ui:40
 msgctxt "loadtemplatedialog|fromfile"
 msgid "From File..."
 msgstr "Tiedostosta..."
 
-#: sfx2/uiconfig/ui/loadtemplatedialog.ui:168
+#: sfx2/uiconfig/ui/loadtemplatedialog.ui:169
 msgctxt "loadtemplatedialog|label1"
 msgid "Categories"
 msgstr "Luokat"
 
-#: sfx2/uiconfig/ui/loadtemplatedialog.ui:235
+#: sfx2/uiconfig/ui/loadtemplatedialog.ui:236
 msgctxt "loadtemplatedialog|label2"
 msgid "Templates"
 msgstr "Mallit"
 
-#: sfx2/uiconfig/ui/loadtemplatedialog.ui:256
+#: sfx2/uiconfig/ui/loadtemplatedialog.ui:257
 msgctxt "loadtemplatedialog|text"
 msgid "Te_xt"
 msgstr "Teksti"
 
-#: sfx2/uiconfig/ui/loadtemplatedialog.ui:271
+#: sfx2/uiconfig/ui/loadtemplatedialog.ui:272
 msgctxt "loadtemplatedialog|frame"
 msgid "_Frame"
 msgstr "Kehys"
 
-#: sfx2/uiconfig/ui/loadtemplatedialog.ui:286
+#: sfx2/uiconfig/ui/loadtemplatedialog.ui:287
 msgctxt "loadtemplatedialog|pages"
 msgid "_Pages"
 msgstr "Sivut"
 
-#: sfx2/uiconfig/ui/loadtemplatedialog.ui:301
+#: sfx2/uiconfig/ui/loadtemplatedialog.ui:302
 msgctxt "loadtemplatedialog|numbering"
 msgid "N_umbering"
 msgstr "Numerointi"
 
-#: sfx2/uiconfig/ui/loadtemplatedialog.ui:316
+#: sfx2/uiconfig/ui/loadtemplatedialog.ui:317
 msgctxt "loadtemplatedialog|overwrite"
 msgid "_Overwrite"
 msgstr "Korvaa"
 
-#: sfx2/uiconfig/ui/loadtemplatedialog.ui:343
+#: sfx2/uiconfig/ui/loadtemplatedialog.ui:344
 msgctxt "loadtemplatedialog|alttitle"
 msgid "Load Styles"
 msgstr "Lataa tyylit"
 
-#: sfx2/uiconfig/ui/loadtemplatedialog.ui:379
+#: sfx2/uiconfig/ui/loadtemplatedialog.ui:380
 msgctxt "loadtemplatedialog|label3"
 msgid "Pre_view"
 msgstr "Esikatselu"

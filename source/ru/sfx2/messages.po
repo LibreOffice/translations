@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2019-05-02 15:45+0200\n"
+"POT-Creation-Date: 2020-07-01 09:54+0200\n"
 "PO-Revision-Date: 2019-01-30 22:06+0000\n"
 "Last-Translator: bormant <bormant@mail.ru>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -873,62 +873,171 @@ msgctxt "STR_WELCOME_LINE2"
 msgid "Drop a document here or pick an app from the left side to create one."
 msgstr "Перетащите документ сюда или выберите приложение слева."
 
-#: include/sfx2/strings.hrc:186
+#. Translators: Target types in Auto-redaction dialog
+#: include/sfx2/strings.hrc:187
+msgctxt "STR_REDACTION_TARGET_TYPE_TEXT"
+msgid "Text"
+msgstr "Текст"
+
+#: include/sfx2/strings.hrc:188
+msgctxt "STR_REDACTION_TARGET_TYPE_REGEX"
+msgid "Regex"
+msgstr ""
+
+#: include/sfx2/strings.hrc:189
+msgctxt "STR_REDACTION_TARGET_TYPE_PREDEF"
+msgid "Predefined"
+msgstr "Предопределено"
+
+#: include/sfx2/strings.hrc:190
+msgctxt "STR_REDACTION_TARGET_TYPE_UNKNOWN"
+msgid "Unknown"
+msgstr "Неизвестно"
+
+#. Translators: Column headers in Auto-redaction dialog's targets list
+#: include/sfx2/strings.hrc:193
+msgctxt "STR_REDACTION_TARGET_NAME"
+msgid "Target Name"
+msgstr "Имя цели"
+
+#: include/sfx2/strings.hrc:194
+msgctxt "STR_REDACTION_TYPE"
+msgid "Type"
+msgstr "Тип"
+
+#: include/sfx2/strings.hrc:195
+msgctxt "STR_REDACTION_CONTENT"
+msgid "Content"
+msgstr "Содержимое"
+
+#: include/sfx2/strings.hrc:196
+msgctxt "STR_REDACTION_CASE_SENSITIVE"
+msgid "Case Sensitive"
+msgstr "Учитывать регистр"
+
+#: include/sfx2/strings.hrc:197
+msgctxt "STR_REDACTION_WHOLE_WORDS"
+msgid "Whole Words"
+msgstr "Слова целиком"
+
+#. Translators: Values for the Case Sensitive and the Whole Words columns in Auto-redaction dialog
+#: include/sfx2/strings.hrc:200
+msgctxt "STR_REDACTION_YES"
+msgid "Yes"
+msgstr "Да"
+
+#: include/sfx2/strings.hrc:201
+msgctxt "STR_REDACTION_NO"
+msgid "No"
+msgstr "Нет"
+
+#. Translators: Misc strings of the Auto Redaction dialog
+#: include/sfx2/strings.hrc:204
+msgctxt "STR_REDACTION_TARGET"
+msgid "Target"
+msgstr "Цель"
+
+#: include/sfx2/strings.hrc:205
+msgctxt "STR_REDACTION_LOAD_TARGETS"
+msgid "Load Targets"
+msgstr "Загрузить цели"
+
+#: include/sfx2/strings.hrc:206
+msgctxt "STR_REDACTION_SAVE_TARGETS"
+msgid "Save Targets"
+msgstr "Сохранить цели"
+
+#: include/sfx2/strings.hrc:207
+msgctxt "STR_REDACTION_FIELDS_REQUIRED"
+msgid "All fields are required"
+msgstr "Все поля обязательны"
+
+#: include/sfx2/strings.hrc:208
+msgctxt "STR_REDACTION_TARGET_NAME_CLASH"
+msgid "There is already a target with this name"
+msgstr "Цель с таким именем уже есть"
+
+#: include/sfx2/strings.hrc:209
+msgctxt "STR_REDACTION_MULTI_EDIT"
+msgid "You have selected multiple targets, but only one target can be edited at once."
+msgstr "Выбрано несколько целей, но редактировать возможно только одну."
+
+#: include/sfx2/strings.hrc:210
+msgctxt "STR_REDACTION_MULTI_DELETE"
+msgid "Are you sure you would like to delete $(TARGETSCOUNT) targets at once?"
+msgstr "Действительно удалить несколько целей ($(TARGETSCOUNT))?"
+
+#: include/sfx2/strings.hrc:211
+msgctxt "STR_REDACTION_JSON_FILE_FILTER"
+msgid "Target Set (*.json)"
+msgstr "Набор целей (*.json)"
+
+#: include/sfx2/strings.hrc:212
+msgctxt "STR_REDACTION_EDIT_TARGET"
+msgid "Edit Target"
+msgstr "Изменить цель"
+
+#: include/sfx2/strings.hrc:213
+msgctxt "STR_REDACTION_TARGET_ADD_ERROR"
+msgid "An error occurred while adding new target. Please report this incident."
+msgstr "Сбой при добавлении новой цели. Пожалуйста, сообщите об этом."
+
+#: include/sfx2/strings.hrc:215
 msgctxt "STR_SFX_FILEDLG_ACTUALVERSION"
 msgid "Current version"
 msgstr "Текущая версия"
 
-#: include/sfx2/strings.hrc:187
+#: include/sfx2/strings.hrc:216
 msgctxt "STR_SFX_EXPLORERFILE_EXPORT"
 msgid "Export"
 msgstr "Экспорт"
 
-#: include/sfx2/strings.hrc:188
+#: include/sfx2/strings.hrc:217
 msgctxt "STR_SFX_EXPLORERFILE_INSERT"
 msgid "Insert"
 msgstr "Вставить"
 
-#: include/sfx2/strings.hrc:189
+#: include/sfx2/strings.hrc:218
 msgctxt "STR_SFX_EXPLORERFILE_BUTTONINSERT"
 msgid "~Insert"
 msgstr "Вставить"
 
-#: include/sfx2/strings.hrc:190
+#: include/sfx2/strings.hrc:219
 msgctxt "STR_SFX_IMPORT_ALL"
 msgid "<All formats>"
 msgstr "<Все форматы>"
 
-#: include/sfx2/strings.hrc:191
+#: include/sfx2/strings.hrc:220
 msgctxt "STR_PB_SAVEACOPY"
 msgid "Save a Copy"
 msgstr "Сохранить копию..."
 
-#: include/sfx2/strings.hrc:192
+#: include/sfx2/strings.hrc:221
 msgctxt "STR_PB_COMPAREDOC"
 msgid "Compare to"
 msgstr "Сравнить с"
 
-#: include/sfx2/strings.hrc:193
+#: include/sfx2/strings.hrc:222
 msgctxt "STR_PB_MERGEDOC"
 msgid "Merge with"
 msgstr "Объединить с"
 
-#: include/sfx2/strings.hrc:195
+#: include/sfx2/strings.hrc:224
 msgctxt "STR_SFX_NEWOFFICEDOC"
 msgid "%PRODUCTNAME document"
 msgstr "Документ %PRODUCTNAME"
 
-#: include/sfx2/strings.hrc:196
+#: include/sfx2/strings.hrc:225
 msgctxt "SFX_ST_DURATION_FORMAT"
 msgid " Y: %1 M: %2 D: %3 H: %4 M: %5 S: %6"
 msgstr " Г: %1 М: %2 Д: %3 Ч: %4 М: %5 С: %6"
 
-#: include/sfx2/strings.hrc:197
+#: include/sfx2/strings.hrc:226
 msgctxt "STR_SFX_REMOVE_PROPERTY"
 msgid "Remove Property"
 msgstr "Удалить свойство"
 
-#: include/sfx2/strings.hrc:198
+#: include/sfx2/strings.hrc:227
 msgctxt "STR_SFX_QUERY_WRONG_TYPE"
 msgid ""
 "The value entered does not match the specified type.\n"
@@ -937,27 +1046,27 @@ msgstr ""
 "Введённое значение не соответствует типу\n"
 "и будет сохранено как текст."
 
-#: include/sfx2/strings.hrc:200
+#: include/sfx2/strings.hrc:229
 msgctxt "STR_QUERY_OVERWRITE"
 msgid "Style already exists. Overwrite?"
 msgstr "Стиль уже существует. Переписать?"
 
-#: include/sfx2/strings.hrc:202
+#: include/sfx2/strings.hrc:231
 msgctxt "STR_RESET"
 msgid "~Reset"
 msgstr "~Восстановить"
 
-#: include/sfx2/strings.hrc:203
+#: include/sfx2/strings.hrc:232
 msgctxt "STR_TABPAGE_INVALIDNAME"
 msgid "This name is already in use."
 msgstr "Это имя уже используется."
 
-#: include/sfx2/strings.hrc:204
+#: include/sfx2/strings.hrc:233
 msgctxt "STR_TABPAGE_INVALIDSTYLE"
 msgid "This Style does not exist."
 msgstr "Стиль не существует."
 
-#: include/sfx2/strings.hrc:205
+#: include/sfx2/strings.hrc:234
 msgctxt "STR_TABPAGE_INVALIDPARENT"
 msgid ""
 "This Style cannot be used as a base Style,\n"
@@ -966,7 +1075,7 @@ msgstr ""
 "Невозможно взять этот стиль за основу, \n"
 "поскольку возникнет рекурсия."
 
-#: include/sfx2/strings.hrc:206
+#: include/sfx2/strings.hrc:235
 msgctxt "STR_POOL_STYLE_NAME"
 msgid ""
 "Name already exists as a default Style.\n"
@@ -975,7 +1084,7 @@ msgstr ""
 "Это имя уже присвоено встроенному стилю.\n"
 "Выберите другое имя."
 
-#: include/sfx2/strings.hrc:207
+#: include/sfx2/strings.hrc:236
 msgctxt "STR_DELETE_STYLE_USED"
 msgid ""
 "One or more of the selected styles is in use in this document.\n"
@@ -986,87 +1095,87 @@ msgstr ""
 "Если их удалить, текст возвратится к родительскому стилю.\n"
 "Удалить эти стили?\n"
 
-#: include/sfx2/strings.hrc:208
+#: include/sfx2/strings.hrc:237
 msgctxt "STR_DELETE_STYLE"
 msgid "Styles in use: "
 msgstr "Используемые стили:"
 
-#: include/sfx2/strings.hrc:209
+#: include/sfx2/strings.hrc:238
 msgctxt "STR_SID_NAVIGATOR"
 msgid "Navigator"
 msgstr "Навигатор"
 
-#: include/sfx2/strings.hrc:210
+#: include/sfx2/strings.hrc:239
 msgctxt "STR_ERROR_WRONG_CONFIRM"
 msgid "Faulty password confirmation"
 msgstr "Ошибка подтверждения пароля"
 
-#: include/sfx2/strings.hrc:211
+#: include/sfx2/strings.hrc:240
 msgctxt "STR_PDF_EXPORT_SEND"
 msgid "Send"
 msgstr "Отправить"
 
-#: include/sfx2/strings.hrc:212
+#: include/sfx2/strings.hrc:241
 msgctxt "STR_FONT_TABPAGE"
 msgid "Font"
 msgstr "Шрифт"
 
-#: include/sfx2/strings.hrc:213
+#: include/sfx2/strings.hrc:242
 msgctxt "STR_PREVIEW_CHECKBOX"
 msgid "Show previews"
 msgstr "Просмотр стилей"
 
-#: include/sfx2/strings.hrc:215
+#: include/sfx2/strings.hrc:244
 msgctxt "STR_VIEWVERSIONCOMMENT"
 msgid "View Version Comment"
 msgstr "Смотреть комментарий к версии"
 
-#: include/sfx2/strings.hrc:216
+#: include/sfx2/strings.hrc:245
 msgctxt "STR_NO_NAME_SET"
 msgid "(no name set)"
 msgstr "(имя не задано)"
 
-#: include/sfx2/strings.hrc:218
+#: include/sfx2/strings.hrc:247
 msgctxt "STR_STYLE_ELEMTLIST"
 msgid "Style List"
 msgstr "Список стилей"
 
-#: include/sfx2/strings.hrc:219
+#: include/sfx2/strings.hrc:248
 msgctxt "STR_STYLE_FILTER_HIERARCHICAL"
 msgid "Hierarchical"
 msgstr "По иерархии"
 
-#: include/sfx2/strings.hrc:220
+#: include/sfx2/strings.hrc:249
 msgctxt "STR_STYLE_FILL_FORMAT_MODE"
 msgid "Fill Format Mode"
 msgstr "Стилевая заливка"
 
-#: include/sfx2/strings.hrc:221
+#: include/sfx2/strings.hrc:250
 msgctxt "STR_STYLE_NEW_STYLE_FROM_SELECTION"
 msgid "New Style from Selection"
 msgstr "Создать стиль по выделению"
 
-#: include/sfx2/strings.hrc:222
+#: include/sfx2/strings.hrc:251
 msgctxt "STR_STYLE_UPDATE_STYLE"
 msgid "Update Style"
 msgstr "Обновить стиль"
 
-#: include/sfx2/strings.hrc:224
+#: include/sfx2/strings.hrc:253
 msgctxt "STR_MACRO_LOSS"
 msgid "Do you really want to cancel the recording? Any steps recorded up to this point will be lost."
 msgstr "Вы действительно хотите прервать запись? Все ранее записанные шаги будут утеряны."
 
-#: include/sfx2/strings.hrc:225
+#: include/sfx2/strings.hrc:254
 msgctxt "STR_CANCEL_RECORDING"
 msgid "Cancel Recording"
 msgstr "Отменить запись"
 
-#: include/sfx2/strings.hrc:227
+#: include/sfx2/strings.hrc:256
 msgctxt "RID_CNT_STR_WAITING"
 msgid "The templates are being initialized for first-time usage."
 msgstr "Перед первым использованием выполняется инициализация шаблонов."
 
-#: include/sfx2/strings.hrc:229
+#: include/sfx2/strings.hrc:258
 msgctxt "STR_NODEFPRINTER"
 msgid ""
 "No default printer found.\n"
@@ -1075,7 +1184,7 @@ msgstr ""
 "Не обнаружен принтер по умолчанию.\n"
 "Выберите принтер и попробуйте ещё раз."
 
-#: include/sfx2/strings.hrc:230
+#: include/sfx2/strings.hrc:259
 msgctxt "STR_NOSTARTPRINTER"
 msgid ""
 "Could not start printer.\n"
@@ -1084,17 +1193,17 @@ msgstr ""
 "Невозможно запустить принтер.\n"
 "Проверьте конфигурацию принтера."
 
-#: include/sfx2/strings.hrc:231
+#: include/sfx2/strings.hrc:260
 msgctxt "STR_ERROR_PRINTER_BUSY"
 msgid "Printer busy"
 msgstr "Принтер занят"
 
-#: include/sfx2/strings.hrc:232
+#: include/sfx2/strings.hrc:261
 msgctxt "STR_READONLY"
 msgid " (read-only)"
 msgstr " (только для чтения)"
 
-#: include/sfx2/strings.hrc:233
+#: include/sfx2/strings.hrc:262
 msgctxt "STR_PRINT_NEWORI"
 msgid ""
 "The page size and orientation have been modified.\n"
@@ -1105,7 +1214,7 @@ msgstr ""
 "Сохранить эти изменения\n"
 "в активном документе?"
 
-#: include/sfx2/strings.hrc:234
+#: include/sfx2/strings.hrc:263
 msgctxt "STR_PRINT_NEWSIZE"
 msgid ""
 "The page size has been modified.\n"
@@ -1116,7 +1225,7 @@ msgstr ""
 "Сохранить эти изменения\n"
 "в активном документе?"
 
-#: include/sfx2/strings.hrc:235
+#: include/sfx2/strings.hrc:264
 msgctxt "STR_PRINT_NEWORISIZE"
 msgid ""
 "The page size and orientation have been modified.\n"
@@ -1127,7 +1236,7 @@ msgstr ""
 "Сохранить эти изменения\n"
 "в активном документе?"
 
-#: include/sfx2/strings.hrc:236
+#: include/sfx2/strings.hrc:265
 msgctxt "STR_CANT_CLOSE"
 msgid ""
 "The document cannot be closed because a\n"
@@ -1136,7 +1245,7 @@ msgstr ""
 "Невозможно закрыть этот документ,\n"
 "поскольку выполняется задание печати."
 
-#: include/sfx2/strings.hrc:237
+#: include/sfx2/strings.hrc:266
 msgctxt "STR_ERROR_SEND_MAIL"
 msgid ""
 "An error occurred in sending the message. Possible errors could be a missing user account or a defective setup.\n"
@@ -1146,7 +1255,7 @@ msgstr ""
 "Проверьте настройки %PRODUCTNAME и программы электронной почты."
 
 #. Error codes look like "MAPI_E_FAILURE" or "1234"
-#: include/sfx2/strings.hrc:239
+#: include/sfx2/strings.hrc:268
 msgctxt "STR_ERROR_SEND_MAIL_CODE"
 msgid ""
 "An error occurred in sending the message. Possible errors could be a missing user account or a defective setup.\n"
@@ -1157,370 +1266,373 @@ msgstr ""
 "\n"
 "Код ошибки: $1"
 
-#: include/sfx2/strings.hrc:240
+#: include/sfx2/strings.hrc:269
 msgctxt "STR_ERROR_SEND_MAIL_HEADER"
 msgid "Error sending mail"
 msgstr "Ошибка отправки сообщения"
 
-#: include/sfx2/strings.hrc:241
+#: include/sfx2/strings.hrc:270
 msgctxt "STR_QUERY_OPENASTEMPLATE"
 msgid "This document cannot be edited, possibly due to missing access rights. Do you want to edit a copy of the document?"
 msgstr "Невозможно редактировать документ, вероятно, из-за отсутствия прав. Редактировать копию документа?"
 
-#: include/sfx2/strings.hrc:242
-msgctxt "STR_QUERY_OPENASTEMPLATE_ALLOW_IGNORE"
+#: include/sfx2/strings.hrc:271
+msgctxt "STR_QUERY_OPENASTEMPLATE_LOCKED"
 msgid ""
-"This document cannot be edited, because it is locked in another session. Do you want to edit a copy of the document?\n"
-"\n"
-"You can also try to ignore the lock and open the file for editing."
+"This document cannot be edited, because it is locked in another session.%LOCKINFO\n"
+"Do you want to edit a copy of the document?"
 msgstr ""
-"Невозможно редактировать документ, он заблокирован в другом сеансе. Редактировать копию документа?\n"
-"\n"
-"Можно попытаться открыть файл для редактирования, проигнорировав блокировку."
+"Невозможно редактировать этот документ, он заблокирован в другом сеансе. %LOCKINFO\n"
+"Редактировать копию документа?"
 
-#: include/sfx2/strings.hrc:243
+#: include/sfx2/strings.hrc:272
+msgctxt "STR_QUERY_OPENASTEMPLATE_ALLOW_IGNORE"
+msgid "You can also try to ignore the lock and open the file for editing."
+msgstr "Возможно игнорировать блокировку и открыть файл для редактирования."
+
+#: include/sfx2/strings.hrc:273
 msgctxt "STR_QUERY_OPENASTEMPLATE_OPENCOPY_BTN"
 msgid "Open ~Copy"
 msgstr "Открыть ~копию"
 
-#: include/sfx2/strings.hrc:244
+#: include/sfx2/strings.hrc:274
 msgctxt "STR_QUERY_OPENASTEMPLATE_OPEN_BTN"
 msgid "~Open"
 msgstr "~Открыть"
 
-#: include/sfx2/strings.hrc:245
+#: include/sfx2/strings.hrc:275
 msgctxt "STR_REPAIREDDOCUMENT"
 msgid " (repaired document)"
 msgstr " (документ восстановлен)"
 
-#: include/sfx2/strings.hrc:246
+#: include/sfx2/strings.hrc:276
 msgctxt "STR_NONCHECKEDOUT_DOCUMENT"
 msgid "This document is not checked out on the server."
 msgstr "Этот документ не заблокирован на сервере."
 
-#: include/sfx2/strings.hrc:247
+#: include/sfx2/strings.hrc:277
 msgctxt "STR_GET_INVOLVED_TEXT"
 msgid "Help us make %PRODUCTNAME even better!"
 msgstr "Помогите нам сделать %PRODUCTNAME еще лучше!"
 
-#: include/sfx2/strings.hrc:248
+#: include/sfx2/strings.hrc:278
 msgctxt "STR_GET_INVOLVED_BUTTON"
 msgid "Get involved"
 msgstr "Присоединяйтесь"
 
-#: include/sfx2/strings.hrc:249
+#: include/sfx2/strings.hrc:279
 msgctxt "STR_GET_DONATE_TEXT"
 msgid "Your donations support our worldwide community."
 msgstr "Ваши пожертвования поддерживают наше сообщество по всему миру."
 
-#: include/sfx2/strings.hrc:250
+#: include/sfx2/strings.hrc:280
 msgctxt "STR_GET_DONATE_BUTTON"
 msgid "Donate"
 msgstr "Сделать пожертвование"
 
-#: include/sfx2/strings.hrc:251
+#: include/sfx2/strings.hrc:281
 msgctxt "STR_READONLY_DOCUMENT"
 msgid "This document is open in read-only mode."
 msgstr "Этот документ открыт только для чтения."
 
-#: include/sfx2/strings.hrc:252
+#: include/sfx2/strings.hrc:282
 msgctxt "STR_READONLY_PDF"
 msgid "This PDF is open in read-only mode to allow signing the existing file."
 msgstr "Этот PDF открыт в режиме только для чтения для возможности его подписания."
 
-#: include/sfx2/strings.hrc:253
+#: include/sfx2/strings.hrc:283
 msgctxt "STR_CLASSIFIED_DOCUMENT"
 msgid "The classification label of this document is %1."
 msgstr "Метка классификации этого документа %1."
 
-#: include/sfx2/strings.hrc:254
+#: include/sfx2/strings.hrc:284
 msgctxt "STR_TARGET_DOC_NOT_CLASSIFIED"
 msgid "This document must be classified before the clipboard can be pasted."
 msgstr "Перед вставкой из буфера обмена документ должен быть классифицирован."
 
-#: include/sfx2/strings.hrc:255
+#: include/sfx2/strings.hrc:285
 msgctxt "STR_DOC_CLASSIFICATION_TOO_LOW"
 msgid "This document has a lower classification level than the clipboard."
 msgstr "Уровень классификации документа ниже, чем у буфера обмена."
 
-#: include/sfx2/strings.hrc:256
+#: include/sfx2/strings.hrc:286
 msgctxt "STR_CLASSIFIED_INTELLECTUAL_PROPERTY"
 msgid "Level"
 msgstr "Уровень"
 
-#: include/sfx2/strings.hrc:257
+#: include/sfx2/strings.hrc:287
 msgctxt "STR_CLASSIFIED_NATIONAL_SECURITY"
 msgid "National Security:"
 msgstr "Нацбезопасность:"
 
-#: include/sfx2/strings.hrc:258
+#: include/sfx2/strings.hrc:288
 msgctxt "STR_CLASSIFIED_EXPORT_CONTROL"
 msgid "Export Control:"
 msgstr "Экспортные ограничения:"
 
-#: include/sfx2/strings.hrc:259
+#: include/sfx2/strings.hrc:289
 msgctxt "STR_CHECKOUT"
 msgid "Check Out"
 msgstr "Блокировать"
 
-#: include/sfx2/strings.hrc:260
+#: include/sfx2/strings.hrc:290
 msgctxt "STR_READONLY_EDIT"
 msgid "Edit Document"
 msgstr "Редактировать документ"
 
-#: include/sfx2/strings.hrc:261
+#: include/sfx2/strings.hrc:291
 msgctxt "STR_READONLY_SIGN"
 msgid "Sign Document"
 msgstr "Подписать документ"
 
-#: include/sfx2/strings.hrc:262
+#: include/sfx2/strings.hrc:292
 msgctxt "STR_SIGNATURE_BROKEN"
 msgid "This document has an invalid signature."
 msgstr "Подпись документа недействительна."
 
-#: include/sfx2/strings.hrc:263
+#: include/sfx2/strings.hrc:293
 msgctxt "STR_SIGNATURE_INVALID"
 msgid "The signature was valid, but the document has been modified"
 msgstr "Подпись была верна, но документ изменён."
 
-#: include/sfx2/strings.hrc:264
+#: include/sfx2/strings.hrc:294
 msgctxt "STR_SIGNATURE_NOTVALIDATED"
 msgid "The signature is OK, but the certificate could not be validated."
 msgstr "Подпись верна, но невозможно проверить сертификат."
 
-#: include/sfx2/strings.hrc:265
+#: include/sfx2/strings.hrc:295
 msgctxt "STR_SIGNATURE_PARTIAL_OK"
 msgid "The signature is OK, but the document is only partially signed."
 msgstr "Подпись верна, но подписаны фрагменты документа."
 
-#: include/sfx2/strings.hrc:266
+#: include/sfx2/strings.hrc:296
 msgctxt "STR_SIGNATURE_NOTVALIDATED_PARTIAL_OK"
 msgid "The certificate could not be validated and the document is only partially signed."
 msgstr "Сертификат не может быть проверен, документ подписан только частично."
 
-#: include/sfx2/strings.hrc:267
+#: include/sfx2/strings.hrc:297
 msgctxt "STR_SIGNATURE_OK"
 msgid "This document is digitally signed and the signature is valid."
 msgstr "Документ подписан, цифровая подпись верна."
 
-#: include/sfx2/strings.hrc:268
+#: include/sfx2/strings.hrc:298
 msgctxt "STR_SIGNATURE_SHOW"
 msgid "Show Signatures"
 msgstr "Показать подписи"
 
-#: include/sfx2/strings.hrc:270
+#: include/sfx2/strings.hrc:300
 msgctxt "STR_CLOSE_PANE"
 msgid "Close Pane"
 msgstr "Закрыть панель"
 
-#: include/sfx2/strings.hrc:271
+#: include/sfx2/strings.hrc:301
 msgctxt "STR_SFX_DOCK"
 msgid "Dock"
 msgstr "Пристыковать"
 
-#: include/sfx2/strings.hrc:272
+#: include/sfx2/strings.hrc:302
 msgctxt "STR_SFX_UNDOCK"
 msgid "Undock"
 msgstr "Отстыковать"
 
-#: include/sfx2/strings.hrc:274
+#: include/sfx2/strings.hrc:304
 msgctxt "SFX_STR_SIDEBAR_MORE_OPTIONS"
 msgid "More Options"
 msgstr "Дополнительные параметры"
 
-#: include/sfx2/strings.hrc:275
+#: include/sfx2/strings.hrc:305
 msgctxt "SFX_STR_SIDEBAR_CLOSE_DECK"
 msgid "Close Sidebar Deck"
 msgstr "Закрыть боковую панель"
 
-#: include/sfx2/strings.hrc:276
+#: include/sfx2/strings.hrc:306
 msgctxt "SFX_STR_SIDEBAR_SETTINGS"
 msgid "Sidebar Settings"
 msgstr "Настройки боковой панели"
 
-#: include/sfx2/strings.hrc:277
+#: include/sfx2/strings.hrc:307
 msgctxt "SFX_STR_SIDEBAR_CUSTOMIZATION"
 msgid "Customization"
 msgstr "Настройка"
 
-#: include/sfx2/strings.hrc:278
+#: include/sfx2/strings.hrc:308
 msgctxt "SFX_STR_SIDEBAR_RESTORE"
 msgid "Restore Default"
 msgstr "Восстановить умолчания"
 
-#: include/sfx2/strings.hrc:279
+#: include/sfx2/strings.hrc:309
 msgctxt "SFX_STR_SIDEBAR_HIDE_SIDEBAR"
 msgid "Close Sidebar"
 msgstr "Закрыть боковую панель"
 
 #. Translators: default Impress template names
-#: include/sfx2/strings.hrc:282
+#: include/sfx2/strings.hrc:312
 msgctxt "STR_TEMPLATE_NAME1"
 msgid "Alizarin"
 msgstr "Ализарин"
 
-#: include/sfx2/strings.hrc:283
+#: include/sfx2/strings.hrc:313
 msgctxt "STR_TEMPLATE_NAME2"
 msgid "Beehive"
 msgstr "Улей"
 
-#: include/sfx2/strings.hrc:284
+#: include/sfx2/strings.hrc:314
 msgctxt "STR_TEMPLATE_NAME3"
 msgid "Blue Curve"
 msgstr "Синяя кривая"
 
-#: include/sfx2/strings.hrc:285
+#: include/sfx2/strings.hrc:315
 msgctxt "STR_TEMPLATE_NAME4"
 msgid "Blueprint Plans"
 msgstr "Чертёж"
 
-#: include/sfx2/strings.hrc:286
+#: include/sfx2/strings.hrc:316
 msgctxt "STR_TEMPLATE_NAME5"
 msgid "Bright Blue"
 msgstr "Ярко синий"
 
-#: include/sfx2/strings.hrc:287
+#: include/sfx2/strings.hrc:317
 msgctxt "STR_TEMPLATE_NAME6"
 msgid "Classy Red"
 msgstr "Классный красный"
 
-#: include/sfx2/strings.hrc:288
+#: include/sfx2/strings.hrc:318
 msgctxt "STR_TEMPLATE_NAME7"
 msgid "DNA"
 msgstr "ДНК"
 
-#: include/sfx2/strings.hrc:289
+#: include/sfx2/strings.hrc:319
 msgctxt "STR_TEMPLATE_NAME8"
 msgid "Focus"
 msgstr "Фокус"
 
-#: include/sfx2/strings.hrc:290
+#: include/sfx2/strings.hrc:320
 msgctxt "STR_TEMPLATE_NAME9"
 msgid "Forestbird"
 msgstr "Лесная птица"
 
-#: include/sfx2/strings.hrc:291
+#: include/sfx2/strings.hrc:321
 msgctxt "STR_TEMPLATE_NAME10"
 msgid "Impress"
 msgstr "Оттиск"
 
-#: include/sfx2/strings.hrc:292
+#: include/sfx2/strings.hrc:322
 msgctxt "STR_TEMPLATE_NAME11"
 msgid "Inspiration"
 msgstr "Вдохновение"
 
-#: include/sfx2/strings.hrc:293
+#: include/sfx2/strings.hrc:323
 msgctxt "STR_TEMPLATE_NAME12"
 msgid "Lights"
 msgstr "Огни"
 
-#: include/sfx2/strings.hrc:294
+#: include/sfx2/strings.hrc:324
 msgctxt "STR_TEMPLATE_NAME13"
 msgid "Lush Green"
 msgstr "Сочный зелёный"
 
-#: include/sfx2/strings.hrc:295
+#: include/sfx2/strings.hrc:325
 msgctxt "STR_TEMPLATE_NAME14"
 msgid "Metropolis"
 msgstr "Урбанистический"
 
-#: include/sfx2/strings.hrc:296
+#: include/sfx2/strings.hrc:326
 msgctxt "STR_TEMPLATE_NAME15"
 msgid "Midnightblue"
 msgstr "Полуночно-синий"
 
-#: include/sfx2/strings.hrc:297
+#: include/sfx2/strings.hrc:327
 msgctxt "STR_TEMPLATE_NAME16"
 msgid "Nature Illustration"
 msgstr "Природа"
 
-#: include/sfx2/strings.hrc:298
+#: include/sfx2/strings.hrc:328
 msgctxt "STR_TEMPLATE_NAME17"
 msgid "Pencil"
 msgstr "Карандаш"
 
-#: include/sfx2/strings.hrc:299
+#: include/sfx2/strings.hrc:329
 msgctxt "STR_TEMPLATE_NAME18"
 msgid "Piano"
 msgstr "Рояль"
 
-#: include/sfx2/strings.hrc:300
+#: include/sfx2/strings.hrc:330
 msgctxt "STR_TEMPLATE_NAME19"
 msgid "Portfolio"
 msgstr "Портфолио"
 
-#: include/sfx2/strings.hrc:301
+#: include/sfx2/strings.hrc:331
 msgctxt "STR_TEMPLATE_NAME20"
 msgid "Progress"
 msgstr "Прогресс"
 
-#: include/sfx2/strings.hrc:302
+#: include/sfx2/strings.hrc:332
 msgctxt "STR_TEMPLATE_NAME21"
 msgid "Sunset"
 msgstr "Закат"
 
-#: include/sfx2/strings.hrc:303
+#: include/sfx2/strings.hrc:333
 msgctxt "STR_TEMPLATE_NAME22"
 msgid "Vintage"
 msgstr "Старомодный"
 
-#: include/sfx2/strings.hrc:304
+#: include/sfx2/strings.hrc:334
 msgctxt "STR_TEMPLATE_NAME23"
 msgid "Vivid"
 msgstr "Простая графика"
 
 #. Translators: default Writer template names
-#: include/sfx2/strings.hrc:306
+#: include/sfx2/strings.hrc:336
 msgctxt "STR_TEMPLATE_NAME24"
 msgid "CV"
 msgstr "Резюме"
 
-#: include/sfx2/strings.hrc:307
+#: include/sfx2/strings.hrc:337
 msgctxt "STR_TEMPLATE_NAME25"
 msgid "Resume"
 msgstr "Заключение"
 
-#: include/sfx2/strings.hrc:308
+#: include/sfx2/strings.hrc:338
 msgctxt "STR_TEMPLATE_NAME26"
 msgid "Default"
 msgstr "Базовый"
 
-#: include/sfx2/strings.hrc:309
+#: include/sfx2/strings.hrc:339
 msgctxt "STR_TEMPLATE_NAME27"
 msgid "Modern"
 msgstr "Современный"
 
-#: include/sfx2/strings.hrc:310
+#: include/sfx2/strings.hrc:340
 msgctxt "STR_TEMPLATE_NAME28"
 msgid "Modern business letter sans-serif"
 msgstr "Современное деловое письмо, шрифт без засечек"
 
-#: include/sfx2/strings.hrc:311
+#: include/sfx2/strings.hrc:341
 msgctxt "STR_TEMPLATE_NAME29"
 msgid "Modern business letter serif"
 msgstr "Современное деловое письмо, шрифт с засечками"
 
-#: include/sfx2/strings.hrc:312
+#: include/sfx2/strings.hrc:342
 msgctxt "STR_TEMPLATE_NAME30"
 msgid "Businesscard with logo"
 msgstr "Визитные карточки с логотипом"
 
-#: include/sfx2/strings.hrc:314
+#: include/sfx2/strings.hrc:344
 msgctxt "STR_CLEAR_CHAR"
 msgid "Remove"
 msgstr "Убрать"
 
-#: include/sfx2/strings.hrc:315
+#: include/sfx2/strings.hrc:345
 msgctxt "STR_CLEAR_ALL_CHAR"
 msgid "Clear All"
 msgstr "Очистить всё"
 
-#: include/sfx2/strings.hrc:317
+#: include/sfx2/strings.hrc:347
 msgctxt "STR_PASSWORD_LEN"
 msgid "Password length"
 msgstr "Длина пароля"
 
-#: include/sfx2/strings.hrc:318
+#: include/sfx2/strings.hrc:348
 msgctxt "STR_PASSWORD_WARNING"
 msgid "The password you have entered causes interoperability issues. Please enter a password that is shorter than 52 bytes, or longer than 55 bytes."
 msgstr "Введенный пароль вызовет проблемы совместимости. Введите пароль, который короче 52 байт либо длиннее 55 байт."
@@ -1765,6 +1877,86 @@ msgctxt "TEMPLATE_LONG_NAMES_ARY"
 msgid "Styles"
 msgstr "Стили"
 
+#: sfx2/uiconfig/ui/addtargetdialog.ui:8
+msgctxt "addtargetdialog|AddTargetDialog"
+msgid "Add Target"
+msgstr "Добавить цель"
+
+#: sfx2/uiconfig/ui/addtargetdialog.ui:86
+msgctxt "addtargetdialog|label_name"
+msgid "Name:"
+msgstr "Имя:"
+
+#: sfx2/uiconfig/ui/addtargetdialog.ui:117
+msgctxt "addtargetdialog|label_type"
+msgid "Type:"
+msgstr "Тип:"
+
+#: sfx2/uiconfig/ui/addtargetdialog.ui:132
+msgctxt "addtargetdialog|label_content"
+msgid "Content:"
+msgstr "Содержимое:"
+
+#: sfx2/uiconfig/ui/addtargetdialog.ui:167
+msgctxt "addtargetdialog|type"
+msgid "Text"
+msgstr "Текст"
+
+#: sfx2/uiconfig/ui/addtargetdialog.ui:168
+msgctxt "addtargetdialog|type"
+msgid "Regex"
+msgstr ""
+
+#: sfx2/uiconfig/ui/addtargetdialog.ui:169
+msgctxt "addtargetdialog|type"
+msgid "Predefined"
+msgstr "Предопределено"
+
+#: sfx2/uiconfig/ui/addtargetdialog.ui:184
+msgctxt "addtargetdialog|label_content_predef"
+msgid "Content:"
+msgstr "Содержимое:"
+
+#: sfx2/uiconfig/ui/addtargetdialog.ui:202
+msgctxt "addtargetdialog|content_predef"
+msgid "Credit card numbers"
+msgstr "Номер кредитной карты"
+
+#: sfx2/uiconfig/ui/addtargetdialog.ui:203
+msgctxt "addtargetdialog|content_predef"
+msgid "Email addresses"
+msgstr "Электронная почта"
+
+#: sfx2/uiconfig/ui/addtargetdialog.ui:204
+msgctxt "addtargetdialog|content_predef"
+msgid "IP addresses"
+msgstr "Адрес IP"
+
+#: sfx2/uiconfig/ui/addtargetdialog.ui:205
+msgctxt "addtargetdialog|content_predef"
+msgid "Dates (Numerical)"
+msgstr "Даты (числовые)"
+
+#: sfx2/uiconfig/ui/addtargetdialog.ui:206
+msgctxt "addtargetdialog|content_predef"
+msgid "National Insurance Number (UK)"
+msgstr "National Insurance Number (UK)"
+
+#: sfx2/uiconfig/ui/addtargetdialog.ui:207
+msgctxt "addtargetdialog|content_predef"
+msgid "Social Security Number (US)"
+msgstr "Social Security Number (US)"
+
+#: sfx2/uiconfig/ui/addtargetdialog.ui:231
+msgctxt "addtargetdialog|checkboxCaseSensitive"
+msgid "Case Sensitive"
+msgstr "Учитывать регистр"
+
+#: sfx2/uiconfig/ui/addtargetdialog.ui:247
+msgctxt "addtargetdialog|checkboxWholeWords"
+msgid "Whole Words Only"
+msgstr "Слова целиком"
+
 #: sfx2/uiconfig/ui/alienwarndialog.ui:7
 msgctxt "alienwarndialog|AlienWarnDialog"
 msgid "Confirm File Format"
@@ -1794,6 +1986,68 @@ msgstr "Использовать формат %FORMATNAME"
 msgctxt "alienwarndialog|ask"
 msgid "_Ask when not saving in ODF or default format"
 msgstr "Спрашивать при сохранении в формате, отличном от ODF или по умолчанию"
+
+#: sfx2/uiconfig/ui/autoredactdialog.ui:24
+msgctxt "autoredactdialog|AutoRedactDialog"
+msgid "Automatic Redaction"
+msgstr "Авторедактура"
+
+#: sfx2/uiconfig/ui/autoredactdialog.ui:120
+msgctxt "autoredactdialog|target"
+msgid "Target Name"
+msgstr "Имя цели"
+
+#: sfx2/uiconfig/ui/autoredactdialog.ui:133
+msgctxt "autoredactdialog|description"
+msgid "Type"
+msgstr "Тип"
+
+#: sfx2/uiconfig/ui/autoredactdialog.ui:146
+msgctxt "autoredactdialog|target"
+msgid "Content"
+msgstr "Содержимое"
+
+#: sfx2/uiconfig/ui/autoredactdialog.ui:159
+msgctxt "autoredactdialog|target"
+msgid "Case Sensitive"
+msgstr "Учитывать регистр"
+
+#: sfx2/uiconfig/ui/autoredactdialog.ui:172
+msgctxt "autoredactdialog|target"
+msgid "Whole Words"
+msgstr "Слова целиком"
+
+#: sfx2/uiconfig/ui/autoredactdialog.ui:200
+msgctxt "menuassignpage|contentslabel"
+msgid "_Redaction Targets"
+msgstr "_Цели редактуры"
+
+#: sfx2/uiconfig/ui/autoredactdialog.ui:219
+msgctxt "autoredactdialog|btnLoadTargets"
+msgid "Load Targets"
+msgstr "Загрузить цели"
+
+#: sfx2/uiconfig/ui/autoredactdialog.ui:234
+msgctxt "autoredactdialog|btnSaveTargets"
+msgid "Save Targets"
+msgstr "Сохранить цели"
+
+#: sfx2/uiconfig/ui/autoredactdialog.ui:270
+msgctxt "autoredactdialog|add"
+msgid "Add"
+msgstr ""
+
+#: sfx2/uiconfig/ui/autoredactdialog.ui:283
+#, fuzzy
+msgctxt "autoredactdialog|edit"
+msgid "Edit"
+msgstr "Изменить"
+
+#: sfx2/uiconfig/ui/autoredactdialog.ui:296
+#, fuzzy
+msgctxt "autoredactdialog|delete"
+msgid "Delete"
+msgstr "Удалить"
 
 #: sfx2/uiconfig/ui/bookmarkdialog.ui:8
 msgctxt "bookmarkdialog|BookmarkDialog"
@@ -2275,12 +2529,22 @@ msgctxt "licensedialog|LicenseDialog"
 msgid "Licensing and Legal information"
 msgstr "Лицензирование и правовая информация"
 
-#: sfx2/uiconfig/ui/licensedialog.ui:25
+#: sfx2/uiconfig/ui/licensedialog.ui:28
 msgctxt "licensedialog|show"
 msgid "_Show License"
 msgstr "Показать лицензию"
 
-#: sfx2/uiconfig/ui/licensedialog.ui:68
+#: sfx2/uiconfig/ui/licensedialog.ui:44
+msgctxt "licensedialog|eula"
+msgid "_EULA"
+msgstr ""
+
+#: sfx2/uiconfig/ui/licensedialog.ui:88
+msgctxt "licensedialog|label2"
+msgid "%PRODUCTNAME binary package is made available subject to the terms of the End User License and Subscription Agreement; choose EULA to see exact details in English."
+msgstr ""
+
+#: sfx2/uiconfig/ui/licensedialog.ui:106
 msgctxt "licensedialog|label"
 msgid ""
 "%PRODUCTNAME is made available subject to the terms of the Mozilla Public License, v. 2.0. A copy of the MPL can be obtained at http://mozilla.org/MPL/2.0/.\n"
@@ -2333,52 +2597,52 @@ msgctxt "loadtemplatedialog|LoadTemplateDialog"
 msgid "New"
 msgstr "Создать"
 
-#: sfx2/uiconfig/ui/loadtemplatedialog.ui:39
+#: sfx2/uiconfig/ui/loadtemplatedialog.ui:40
 msgctxt "loadtemplatedialog|fromfile"
 msgid "From File..."
 msgstr "Из файла..."
 
-#: sfx2/uiconfig/ui/loadtemplatedialog.ui:168
+#: sfx2/uiconfig/ui/loadtemplatedialog.ui:169
 msgctxt "loadtemplatedialog|label1"
 msgid "Categories"
 msgstr "Категории"
 
-#: sfx2/uiconfig/ui/loadtemplatedialog.ui:235
+#: sfx2/uiconfig/ui/loadtemplatedialog.ui:236
 msgctxt "loadtemplatedialog|label2"
 msgid "Templates"
 msgstr "Шаблоны"
 
-#: sfx2/uiconfig/ui/loadtemplatedialog.ui:256
+#: sfx2/uiconfig/ui/loadtemplatedialog.ui:257
 msgctxt "loadtemplatedialog|text"
 msgid "Te_xt"
 msgstr "Текст"
 
-#: sfx2/uiconfig/ui/loadtemplatedialog.ui:271
+#: sfx2/uiconfig/ui/loadtemplatedialog.ui:272
 msgctxt "loadtemplatedialog|frame"
 msgid "_Frame"
 msgstr "Врезки"
 
-#: sfx2/uiconfig/ui/loadtemplatedialog.ui:286
+#: sfx2/uiconfig/ui/loadtemplatedialog.ui:287
 msgctxt "loadtemplatedialog|pages"
 msgid "_Pages"
 msgstr "Страницы"
 
-#: sfx2/uiconfig/ui/loadtemplatedialog.ui:301
+#: sfx2/uiconfig/ui/loadtemplatedialog.ui:302
 msgctxt "loadtemplatedialog|numbering"
 msgid "N_umbering"
 msgstr "Нумерация"
 
-#: sfx2/uiconfig/ui/loadtemplatedialog.ui:316
+#: sfx2/uiconfig/ui/loadtemplatedialog.ui:317
 msgctxt "loadtemplatedialog|overwrite"
 msgid "_Overwrite"
 msgstr "Перезаписать"
 
-#: sfx2/uiconfig/ui/loadtemplatedialog.ui:343
+#: sfx2/uiconfig/ui/loadtemplatedialog.ui:344
 msgctxt "loadtemplatedialog|alttitle"
 msgid "Load Styles"
 msgstr "Загрузить стили"
 
-#: sfx2/uiconfig/ui/loadtemplatedialog.ui:379
+#: sfx2/uiconfig/ui/loadtemplatedialog.ui:380
 msgctxt "loadtemplatedialog|label3"
 msgid "Pre_view"
 msgstr "Просмотр"

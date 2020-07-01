@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2019-05-02 15:45+0200\n"
+"POT-Creation-Date: 2020-07-01 09:54+0200\n"
 "PO-Revision-Date: 2019-03-19 15:13+0000\n"
 "Last-Translator: pan93412 <pan93412@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -873,62 +873,171 @@ msgctxt "STR_WELCOME_LINE2"
 msgid "Drop a document here or pick an app from the left side to create one."
 msgstr "將文件拖放到這裡，或於左側選取應用程式來製作新文件。"
 
-#: include/sfx2/strings.hrc:186
+#. Translators: Target types in Auto-redaction dialog
+#: include/sfx2/strings.hrc:187
+msgctxt "STR_REDACTION_TARGET_TYPE_TEXT"
+msgid "Text"
+msgstr "文字"
+
+#: include/sfx2/strings.hrc:188
+msgctxt "STR_REDACTION_TARGET_TYPE_REGEX"
+msgid "Regex"
+msgstr ""
+
+#: include/sfx2/strings.hrc:189
+msgctxt "STR_REDACTION_TARGET_TYPE_PREDEF"
+msgid "Predefined"
+msgstr "預先定義"
+
+#: include/sfx2/strings.hrc:190
+msgctxt "STR_REDACTION_TARGET_TYPE_UNKNOWN"
+msgid "Unknown"
+msgstr "未知"
+
+#. Translators: Column headers in Auto-redaction dialog's targets list
+#: include/sfx2/strings.hrc:193
+msgctxt "STR_REDACTION_TARGET_NAME"
+msgid "Target Name"
+msgstr "目標名稱"
+
+#: include/sfx2/strings.hrc:194
+msgctxt "STR_REDACTION_TYPE"
+msgid "Type"
+msgstr "類型"
+
+#: include/sfx2/strings.hrc:195
+msgctxt "STR_REDACTION_CONTENT"
+msgid "Content"
+msgstr "內容"
+
+#: include/sfx2/strings.hrc:196
+msgctxt "STR_REDACTION_CASE_SENSITIVE"
+msgid "Case Sensitive"
+msgstr "區分大小寫"
+
+#: include/sfx2/strings.hrc:197
+msgctxt "STR_REDACTION_WHOLE_WORDS"
+msgid "Whole Words"
+msgstr "整個字詞"
+
+#. Translators: Values for the Case Sensitive and the Whole Words columns in Auto-redaction dialog
+#: include/sfx2/strings.hrc:200
+msgctxt "STR_REDACTION_YES"
+msgid "Yes"
+msgstr "是"
+
+#: include/sfx2/strings.hrc:201
+msgctxt "STR_REDACTION_NO"
+msgid "No"
+msgstr "否"
+
+#. Translators: Misc strings of the Auto Redaction dialog
+#: include/sfx2/strings.hrc:204
+msgctxt "STR_REDACTION_TARGET"
+msgid "Target"
+msgstr "目標"
+
+#: include/sfx2/strings.hrc:205
+msgctxt "STR_REDACTION_LOAD_TARGETS"
+msgid "Load Targets"
+msgstr "載入目標"
+
+#: include/sfx2/strings.hrc:206
+msgctxt "STR_REDACTION_SAVE_TARGETS"
+msgid "Save Targets"
+msgstr "儲存目標"
+
+#: include/sfx2/strings.hrc:207
+msgctxt "STR_REDACTION_FIELDS_REQUIRED"
+msgid "All fields are required"
+msgstr "所有欄位皆必填"
+
+#: include/sfx2/strings.hrc:208
+msgctxt "STR_REDACTION_TARGET_NAME_CLASH"
+msgid "There is already a target with this name"
+msgstr "已經有與此名稱相同的目標"
+
+#: include/sfx2/strings.hrc:209
+msgctxt "STR_REDACTION_MULTI_EDIT"
+msgid "You have selected multiple targets, but only one target can be edited at once."
+msgstr "您已選取多個目標，但一次僅能編輯一個目標。"
+
+#: include/sfx2/strings.hrc:210
+msgctxt "STR_REDACTION_MULTI_DELETE"
+msgid "Are you sure you would like to delete $(TARGETSCOUNT) targets at once?"
+msgstr "您確定是否要一次刪除 $(TARGETSCOUNT) 個目標？"
+
+#: include/sfx2/strings.hrc:211
+msgctxt "STR_REDACTION_JSON_FILE_FILTER"
+msgid "Target Set (*.json)"
+msgstr "目標集 (*.json)"
+
+#: include/sfx2/strings.hrc:212
+msgctxt "STR_REDACTION_EDIT_TARGET"
+msgid "Edit Target"
+msgstr "編輯目標"
+
+#: include/sfx2/strings.hrc:213
+msgctxt "STR_REDACTION_TARGET_ADD_ERROR"
+msgid "An error occurred while adding new target. Please report this incident."
+msgstr "加入新目標時遭遇錯誤。請回報此意外狀況。"
+
+#: include/sfx2/strings.hrc:215
 msgctxt "STR_SFX_FILEDLG_ACTUALVERSION"
 msgid "Current version"
 msgstr "目前的版本"
 
-#: include/sfx2/strings.hrc:187
+#: include/sfx2/strings.hrc:216
 msgctxt "STR_SFX_EXPLORERFILE_EXPORT"
 msgid "Export"
 msgstr "匯出"
 
-#: include/sfx2/strings.hrc:188
+#: include/sfx2/strings.hrc:217
 msgctxt "STR_SFX_EXPLORERFILE_INSERT"
 msgid "Insert"
 msgstr "貼上"
 
-#: include/sfx2/strings.hrc:189
+#: include/sfx2/strings.hrc:218
 msgctxt "STR_SFX_EXPLORERFILE_BUTTONINSERT"
 msgid "~Insert"
 msgstr "貼上(~I)"
 
-#: include/sfx2/strings.hrc:190
+#: include/sfx2/strings.hrc:219
 msgctxt "STR_SFX_IMPORT_ALL"
 msgid "<All formats>"
 msgstr "<所有的格式>"
 
-#: include/sfx2/strings.hrc:191
+#: include/sfx2/strings.hrc:220
 msgctxt "STR_PB_SAVEACOPY"
 msgid "Save a Copy"
 msgstr "另存副本"
 
-#: include/sfx2/strings.hrc:192
+#: include/sfx2/strings.hrc:221
 msgctxt "STR_PB_COMPAREDOC"
 msgid "Compare to"
 msgstr "相較於"
 
-#: include/sfx2/strings.hrc:193
+#: include/sfx2/strings.hrc:222
 msgctxt "STR_PB_MERGEDOC"
 msgid "Merge with"
 msgstr "合併到"
 
-#: include/sfx2/strings.hrc:195
+#: include/sfx2/strings.hrc:224
 msgctxt "STR_SFX_NEWOFFICEDOC"
 msgid "%PRODUCTNAME document"
 msgstr "%PRODUCTNAME 文件"
 
-#: include/sfx2/strings.hrc:196
+#: include/sfx2/strings.hrc:225
 msgctxt "SFX_ST_DURATION_FORMAT"
 msgid " Y: %1 M: %2 D: %3 H: %4 M: %5 S: %6"
 msgstr " Y：%1 M：%2 D：%3 H：%4 M：%5 S：%6"
 
-#: include/sfx2/strings.hrc:197
+#: include/sfx2/strings.hrc:226
 msgctxt "STR_SFX_REMOVE_PROPERTY"
 msgid "Remove Property"
 msgstr "移除屬性"
 
-#: include/sfx2/strings.hrc:198
+#: include/sfx2/strings.hrc:227
 msgctxt "STR_SFX_QUERY_WRONG_TYPE"
 msgid ""
 "The value entered does not match the specified type.\n"
@@ -937,27 +1046,27 @@ msgstr ""
 "輸入的值與指定的類型不符。\n"
 "此值會儲存為文字。"
 
-#: include/sfx2/strings.hrc:200
+#: include/sfx2/strings.hrc:229
 msgctxt "STR_QUERY_OVERWRITE"
 msgid "Style already exists. Overwrite?"
 msgstr "樣式已存在。是否要覆蓋？"
 
-#: include/sfx2/strings.hrc:202
+#: include/sfx2/strings.hrc:231
 msgctxt "STR_RESET"
 msgid "~Reset"
 msgstr "重設(~R)"
 
-#: include/sfx2/strings.hrc:203
+#: include/sfx2/strings.hrc:232
 msgctxt "STR_TABPAGE_INVALIDNAME"
 msgid "This name is already in use."
 msgstr "此名稱現正被使用中。"
 
-#: include/sfx2/strings.hrc:204
+#: include/sfx2/strings.hrc:233
 msgctxt "STR_TABPAGE_INVALIDSTYLE"
 msgid "This Style does not exist."
 msgstr "不存在這個樣式。"
 
-#: include/sfx2/strings.hrc:205
+#: include/sfx2/strings.hrc:234
 msgctxt "STR_TABPAGE_INVALIDPARENT"
 msgid ""
 "This Style cannot be used as a base Style,\n"
@@ -966,7 +1075,7 @@ msgstr ""
 "此樣式無法作為基本樣式使用，\n"
 "因為此樣式會產生遞迴參照。"
 
-#: include/sfx2/strings.hrc:206
+#: include/sfx2/strings.hrc:235
 msgctxt "STR_POOL_STYLE_NAME"
 msgid ""
 "Name already exists as a default Style.\n"
@@ -975,7 +1084,7 @@ msgstr ""
 "該名稱已是預設樣式的名稱。\n"
 "請您改採其他名稱。"
 
-#: include/sfx2/strings.hrc:207
+#: include/sfx2/strings.hrc:236
 msgctxt "STR_DELETE_STYLE_USED"
 msgid ""
 "One or more of the selected styles is in use in this document.\n"
@@ -986,87 +1095,87 @@ msgstr ""
 "若您刪除這些樣式，文字將轉回上層樣式。\n"
 "您是否仍要刪除這些樣式？\n"
 
-#: include/sfx2/strings.hrc:208
+#: include/sfx2/strings.hrc:237
 msgctxt "STR_DELETE_STYLE"
 msgid "Styles in use: "
 msgstr "使用中的樣式："
 
-#: include/sfx2/strings.hrc:209
+#: include/sfx2/strings.hrc:238
 msgctxt "STR_SID_NAVIGATOR"
 msgid "Navigator"
 msgstr "助手"
 
-#: include/sfx2/strings.hrc:210
+#: include/sfx2/strings.hrc:239
 msgctxt "STR_ERROR_WRONG_CONFIRM"
 msgid "Faulty password confirmation"
 msgstr "失敗密碼確認"
 
-#: include/sfx2/strings.hrc:211
+#: include/sfx2/strings.hrc:240
 msgctxt "STR_PDF_EXPORT_SEND"
 msgid "Send"
 msgstr "傳送"
 
-#: include/sfx2/strings.hrc:212
+#: include/sfx2/strings.hrc:241
 msgctxt "STR_FONT_TABPAGE"
 msgid "Font"
 msgstr "字型"
 
-#: include/sfx2/strings.hrc:213
+#: include/sfx2/strings.hrc:242
 msgctxt "STR_PREVIEW_CHECKBOX"
 msgid "Show previews"
 msgstr "顯示預覽"
 
-#: include/sfx2/strings.hrc:215
+#: include/sfx2/strings.hrc:244
 msgctxt "STR_VIEWVERSIONCOMMENT"
 msgid "View Version Comment"
 msgstr "檢視版本評註"
 
-#: include/sfx2/strings.hrc:216
+#: include/sfx2/strings.hrc:245
 msgctxt "STR_NO_NAME_SET"
 msgid "(no name set)"
 msgstr "(未設定名稱)"
 
-#: include/sfx2/strings.hrc:218
+#: include/sfx2/strings.hrc:247
 msgctxt "STR_STYLE_ELEMTLIST"
 msgid "Style List"
 msgstr "樣式清單"
 
-#: include/sfx2/strings.hrc:219
+#: include/sfx2/strings.hrc:248
 msgctxt "STR_STYLE_FILTER_HIERARCHICAL"
 msgid "Hierarchical"
 msgstr "階層式"
 
-#: include/sfx2/strings.hrc:220
+#: include/sfx2/strings.hrc:249
 msgctxt "STR_STYLE_FILL_FORMAT_MODE"
 msgid "Fill Format Mode"
 msgstr "填入格式模式"
 
-#: include/sfx2/strings.hrc:221
+#: include/sfx2/strings.hrc:250
 msgctxt "STR_STYLE_NEW_STYLE_FROM_SELECTION"
 msgid "New Style from Selection"
 msgstr "依據選取內容新增樣式"
 
-#: include/sfx2/strings.hrc:222
+#: include/sfx2/strings.hrc:251
 msgctxt "STR_STYLE_UPDATE_STYLE"
 msgid "Update Style"
 msgstr "更新樣式"
 
-#: include/sfx2/strings.hrc:224
+#: include/sfx2/strings.hrc:253
 msgctxt "STR_MACRO_LOSS"
 msgid "Do you really want to cancel the recording? Any steps recorded up to this point will be lost."
 msgstr "真的要取消記錄？所有的目前的記錄內容就會流失。"
 
-#: include/sfx2/strings.hrc:225
+#: include/sfx2/strings.hrc:254
 msgctxt "STR_CANCEL_RECORDING"
 msgid "Cancel Recording"
 msgstr "取消記錄"
 
-#: include/sfx2/strings.hrc:227
+#: include/sfx2/strings.hrc:256
 msgctxt "RID_CNT_STR_WAITING"
 msgid "The templates are being initialized for first-time usage."
 msgstr "現在首次初始化需要使用的範本檔案。"
 
-#: include/sfx2/strings.hrc:229
+#: include/sfx2/strings.hrc:258
 msgctxt "STR_NODEFPRINTER"
 msgid ""
 "No default printer found.\n"
@@ -1075,7 +1184,7 @@ msgstr ""
 "找不到預設印表機。\n"
 "請選擇一臺印表機，然後再重試列印。"
 
-#: include/sfx2/strings.hrc:230
+#: include/sfx2/strings.hrc:259
 msgctxt "STR_NOSTARTPRINTER"
 msgid ""
 "Could not start printer.\n"
@@ -1084,17 +1193,17 @@ msgstr ""
 "無法啟動印表機。\n"
 "請檢查印表機的設置。"
 
-#: include/sfx2/strings.hrc:231
+#: include/sfx2/strings.hrc:260
 msgctxt "STR_ERROR_PRINTER_BUSY"
 msgid "Printer busy"
 msgstr "印表機忙碌中"
 
-#: include/sfx2/strings.hrc:232
+#: include/sfx2/strings.hrc:261
 msgctxt "STR_READONLY"
 msgid " (read-only)"
 msgstr " (唯讀)"
 
-#: include/sfx2/strings.hrc:233
+#: include/sfx2/strings.hrc:262
 msgctxt "STR_PRINT_NEWORI"
 msgid ""
 "The page size and orientation have been modified.\n"
@@ -1104,7 +1213,7 @@ msgstr ""
 "頁面大小和頁面方向已經被修改。\n"
 "是否將新設定儲存到使用中文件內？"
 
-#: include/sfx2/strings.hrc:234
+#: include/sfx2/strings.hrc:263
 msgctxt "STR_PRINT_NEWSIZE"
 msgid ""
 "The page size has been modified.\n"
@@ -1114,7 +1223,7 @@ msgstr ""
 "您已經修改了頁面大小。\n"
 "讓文件採用這個設定？"
 
-#: include/sfx2/strings.hrc:235
+#: include/sfx2/strings.hrc:264
 msgctxt "STR_PRINT_NEWORISIZE"
 msgid ""
 "The page size and orientation have been modified.\n"
@@ -1124,7 +1233,7 @@ msgstr ""
 "頁面大小和頁面方向已經被修改。\n"
 "是否將新設定存到使用中文件內？"
 
-#: include/sfx2/strings.hrc:236
+#: include/sfx2/strings.hrc:265
 msgctxt "STR_CANT_CLOSE"
 msgid ""
 "The document cannot be closed because a\n"
@@ -1133,7 +1242,7 @@ msgstr ""
 "該文件無法關閉，因為有\n"
 " 列印工作正在處理中。"
 
-#: include/sfx2/strings.hrc:237
+#: include/sfx2/strings.hrc:266
 msgctxt "STR_ERROR_SEND_MAIL"
 msgid ""
 "An error occurred in sending the message. Possible errors could be a missing user account or a defective setup.\n"
@@ -1143,7 +1252,7 @@ msgstr ""
 "請檢查 %PRODUCTNAME 設定，或是您的電子郵件程式設定。"
 
 #. Error codes look like "MAPI_E_FAILURE" or "1234"
-#: include/sfx2/strings.hrc:239
+#: include/sfx2/strings.hrc:268
 msgctxt "STR_ERROR_SEND_MAIL_CODE"
 msgid ""
 "An error occurred in sending the message. Possible errors could be a missing user account or a defective setup.\n"
@@ -1154,370 +1263,373 @@ msgstr ""
 "\n"
 "錯誤碼為 $1"
 
-#: include/sfx2/strings.hrc:240
+#: include/sfx2/strings.hrc:269
 msgctxt "STR_ERROR_SEND_MAIL_HEADER"
 msgid "Error sending mail"
 msgstr "寄發郵件時發生錯誤"
 
-#: include/sfx2/strings.hrc:241
+#: include/sfx2/strings.hrc:270
 msgctxt "STR_QUERY_OPENASTEMPLATE"
 msgid "This document cannot be edited, possibly due to missing access rights. Do you want to edit a copy of the document?"
 msgstr "無法編輯此文件，可能是因為不具存取權。您是否想要編輯該文件的副本？"
 
-#: include/sfx2/strings.hrc:242
-msgctxt "STR_QUERY_OPENASTEMPLATE_ALLOW_IGNORE"
+#: include/sfx2/strings.hrc:271
+msgctxt "STR_QUERY_OPENASTEMPLATE_LOCKED"
 msgid ""
-"This document cannot be edited, because it is locked in another session. Do you want to edit a copy of the document?\n"
-"\n"
-"You can also try to ignore the lock and open the file for editing."
+"This document cannot be edited, because it is locked in another session.%LOCKINFO\n"
+"Do you want to edit a copy of the document?"
 msgstr ""
-"此文件無法編輯，因為它已鎖定其他作業階段。您是否要編輯該文件的副本？\n"
-"\n"
-"您也可以忽略鎖定，嘗試開啟檔案作編輯。"
+"此文件無法編輯，因為它已被其他作業階段鎖定。%LOCKINFO\n"
+"您是否要編輯文件的副本？"
 
-#: include/sfx2/strings.hrc:243
+#: include/sfx2/strings.hrc:272
+msgctxt "STR_QUERY_OPENASTEMPLATE_ALLOW_IGNORE"
+msgid "You can also try to ignore the lock and open the file for editing."
+msgstr "您也可以嘗試忽略該鎖定並開啟檔案編輯看看。"
+
+#: include/sfx2/strings.hrc:273
 msgctxt "STR_QUERY_OPENASTEMPLATE_OPENCOPY_BTN"
 msgid "Open ~Copy"
 msgstr "開啟副本(~C)"
 
-#: include/sfx2/strings.hrc:244
+#: include/sfx2/strings.hrc:274
 msgctxt "STR_QUERY_OPENASTEMPLATE_OPEN_BTN"
 msgid "~Open"
 msgstr "開啟(~O)"
 
-#: include/sfx2/strings.hrc:245
+#: include/sfx2/strings.hrc:275
 msgctxt "STR_REPAIREDDOCUMENT"
 msgid " (repaired document)"
 msgstr " (已修復的文件)"
 
-#: include/sfx2/strings.hrc:246
+#: include/sfx2/strings.hrc:276
 msgctxt "STR_NONCHECKEDOUT_DOCUMENT"
 msgid "This document is not checked out on the server."
 msgstr "此文件尚未從伺服器中檢出。"
 
-#: include/sfx2/strings.hrc:247
+#: include/sfx2/strings.hrc:277
 msgctxt "STR_GET_INVOLVED_TEXT"
 msgid "Help us make %PRODUCTNAME even better!"
 msgstr "協助我們讓 %PRODUCTNAME 變得更好！"
 
-#: include/sfx2/strings.hrc:248
+#: include/sfx2/strings.hrc:278
 msgctxt "STR_GET_INVOLVED_BUTTON"
 msgid "Get involved"
 msgstr "參與"
 
-#: include/sfx2/strings.hrc:249
+#: include/sfx2/strings.hrc:279
 msgctxt "STR_GET_DONATE_TEXT"
 msgid "Your donations support our worldwide community."
 msgstr "您的捐款將是我們全球性社群的有力支柱。"
 
-#: include/sfx2/strings.hrc:250
+#: include/sfx2/strings.hrc:280
 msgctxt "STR_GET_DONATE_BUTTON"
 msgid "Donate"
 msgstr "捐款"
 
-#: include/sfx2/strings.hrc:251
+#: include/sfx2/strings.hrc:281
 msgctxt "STR_READONLY_DOCUMENT"
 msgid "This document is open in read-only mode."
 msgstr "此文件以唯讀模式開啟。"
 
-#: include/sfx2/strings.hrc:252
+#: include/sfx2/strings.hrc:282
 msgctxt "STR_READONLY_PDF"
 msgid "This PDF is open in read-only mode to allow signing the existing file."
 msgstr "此 PDF 正使用唯讀模式開啟以允許簽署既有檔案。"
 
-#: include/sfx2/strings.hrc:253
+#: include/sfx2/strings.hrc:283
 msgctxt "STR_CLASSIFIED_DOCUMENT"
 msgid "The classification label of this document is %1."
 msgstr "此文件的機密等級標籤為 %1。"
 
-#: include/sfx2/strings.hrc:254
+#: include/sfx2/strings.hrc:284
 msgctxt "STR_TARGET_DOC_NOT_CLASSIFIED"
 msgid "This document must be classified before the clipboard can be pasted."
 msgstr "送入剪貼簿之前，一定得先將此文件分類。"
 
-#: include/sfx2/strings.hrc:255
+#: include/sfx2/strings.hrc:285
 msgctxt "STR_DOC_CLASSIFICATION_TOO_LOW"
 msgid "This document has a lower classification level than the clipboard."
 msgstr "此文件的機密等級比剪貼簿低。"
 
-#: include/sfx2/strings.hrc:256
+#: include/sfx2/strings.hrc:286
 msgctxt "STR_CLASSIFIED_INTELLECTUAL_PROPERTY"
 msgid "Level"
 msgstr "等級"
 
-#: include/sfx2/strings.hrc:257
+#: include/sfx2/strings.hrc:287
 msgctxt "STR_CLASSIFIED_NATIONAL_SECURITY"
 msgid "National Security:"
 msgstr "國家安全："
 
-#: include/sfx2/strings.hrc:258
+#: include/sfx2/strings.hrc:288
 msgctxt "STR_CLASSIFIED_EXPORT_CONTROL"
 msgid "Export Control:"
 msgstr "出口管制："
 
-#: include/sfx2/strings.hrc:259
+#: include/sfx2/strings.hrc:289
 msgctxt "STR_CHECKOUT"
 msgid "Check Out"
 msgstr "檢出"
 
-#: include/sfx2/strings.hrc:260
+#: include/sfx2/strings.hrc:290
 msgctxt "STR_READONLY_EDIT"
 msgid "Edit Document"
 msgstr "編輯文件"
 
-#: include/sfx2/strings.hrc:261
+#: include/sfx2/strings.hrc:291
 msgctxt "STR_READONLY_SIGN"
 msgid "Sign Document"
 msgstr "簽署文件"
 
-#: include/sfx2/strings.hrc:262
+#: include/sfx2/strings.hrc:292
 msgctxt "STR_SIGNATURE_BROKEN"
 msgid "This document has an invalid signature."
 msgstr "此文件有簽章無效。"
 
-#: include/sfx2/strings.hrc:263
+#: include/sfx2/strings.hrc:293
 msgctxt "STR_SIGNATURE_INVALID"
 msgid "The signature was valid, but the document has been modified"
 msgstr "簽章有效，但文件已被修改"
 
-#: include/sfx2/strings.hrc:264
+#: include/sfx2/strings.hrc:294
 msgctxt "STR_SIGNATURE_NOTVALIDATED"
 msgid "The signature is OK, but the certificate could not be validated."
 msgstr "簽章沒有問題，但憑證無法通過驗證。"
 
-#: include/sfx2/strings.hrc:265
+#: include/sfx2/strings.hrc:295
 msgctxt "STR_SIGNATURE_PARTIAL_OK"
 msgid "The signature is OK, but the document is only partially signed."
 msgstr "簽章沒有問題，但文件僅部分有簽署。"
 
-#: include/sfx2/strings.hrc:266
+#: include/sfx2/strings.hrc:296
 msgctxt "STR_SIGNATURE_NOTVALIDATED_PARTIAL_OK"
 msgid "The certificate could not be validated and the document is only partially signed."
 msgstr "憑證無法通過驗證，文件僅有部分簽署。"
 
-#: include/sfx2/strings.hrc:267
+#: include/sfx2/strings.hrc:297
 msgctxt "STR_SIGNATURE_OK"
 msgid "This document is digitally signed and the signature is valid."
 msgstr "此文件已數位簽署，且簽章有效。"
 
-#: include/sfx2/strings.hrc:268
+#: include/sfx2/strings.hrc:298
 msgctxt "STR_SIGNATURE_SHOW"
 msgid "Show Signatures"
 msgstr "顯示簽章"
 
-#: include/sfx2/strings.hrc:270
+#: include/sfx2/strings.hrc:300
 msgctxt "STR_CLOSE_PANE"
 msgid "Close Pane"
 msgstr "關閉窗格"
 
-#: include/sfx2/strings.hrc:271
+#: include/sfx2/strings.hrc:301
 msgctxt "STR_SFX_DOCK"
 msgid "Dock"
 msgstr "停駐"
 
-#: include/sfx2/strings.hrc:272
+#: include/sfx2/strings.hrc:302
 msgctxt "STR_SFX_UNDOCK"
 msgid "Undock"
 msgstr "取消停駐"
 
-#: include/sfx2/strings.hrc:274
+#: include/sfx2/strings.hrc:304
 msgctxt "SFX_STR_SIDEBAR_MORE_OPTIONS"
 msgid "More Options"
 msgstr "更多選項"
 
-#: include/sfx2/strings.hrc:275
+#: include/sfx2/strings.hrc:305
 msgctxt "SFX_STR_SIDEBAR_CLOSE_DECK"
 msgid "Close Sidebar Deck"
 msgstr "關閉側邊欄面板"
 
-#: include/sfx2/strings.hrc:276
+#: include/sfx2/strings.hrc:306
 msgctxt "SFX_STR_SIDEBAR_SETTINGS"
 msgid "Sidebar Settings"
 msgstr "側邊欄設定值"
 
-#: include/sfx2/strings.hrc:277
+#: include/sfx2/strings.hrc:307
 msgctxt "SFX_STR_SIDEBAR_CUSTOMIZATION"
 msgid "Customization"
 msgstr "自訂"
 
-#: include/sfx2/strings.hrc:278
+#: include/sfx2/strings.hrc:308
 msgctxt "SFX_STR_SIDEBAR_RESTORE"
 msgid "Restore Default"
 msgstr "還原成預設"
 
-#: include/sfx2/strings.hrc:279
+#: include/sfx2/strings.hrc:309
 msgctxt "SFX_STR_SIDEBAR_HIDE_SIDEBAR"
 msgid "Close Sidebar"
 msgstr "關閉側邊欄"
 
 #. Translators: default Impress template names
-#: include/sfx2/strings.hrc:282
+#: include/sfx2/strings.hrc:312
 msgctxt "STR_TEMPLATE_NAME1"
 msgid "Alizarin"
 msgstr "茜素紅"
 
-#: include/sfx2/strings.hrc:283
+#: include/sfx2/strings.hrc:313
 msgctxt "STR_TEMPLATE_NAME2"
 msgid "Beehive"
 msgstr "蜂窩"
 
-#: include/sfx2/strings.hrc:284
+#: include/sfx2/strings.hrc:314
 msgctxt "STR_TEMPLATE_NAME3"
 msgid "Blue Curve"
 msgstr "藍色曲線"
 
-#: include/sfx2/strings.hrc:285
+#: include/sfx2/strings.hrc:315
 msgctxt "STR_TEMPLATE_NAME4"
 msgid "Blueprint Plans"
 msgstr "藍圖計劃"
 
-#: include/sfx2/strings.hrc:286
+#: include/sfx2/strings.hrc:316
 msgctxt "STR_TEMPLATE_NAME5"
 msgid "Bright Blue"
 msgstr "亮藍"
 
-#: include/sfx2/strings.hrc:287
+#: include/sfx2/strings.hrc:317
 msgctxt "STR_TEMPLATE_NAME6"
 msgid "Classy Red"
 msgstr "豪華紅"
 
-#: include/sfx2/strings.hrc:288
+#: include/sfx2/strings.hrc:318
 msgctxt "STR_TEMPLATE_NAME7"
 msgid "DNA"
 msgstr "DNA"
 
-#: include/sfx2/strings.hrc:289
+#: include/sfx2/strings.hrc:319
 msgctxt "STR_TEMPLATE_NAME8"
 msgid "Focus"
 msgstr "焦點"
 
-#: include/sfx2/strings.hrc:290
+#: include/sfx2/strings.hrc:320
 msgctxt "STR_TEMPLATE_NAME9"
 msgid "Forestbird"
 msgstr "森鳥"
 
-#: include/sfx2/strings.hrc:291
+#: include/sfx2/strings.hrc:321
 msgctxt "STR_TEMPLATE_NAME10"
 msgid "Impress"
 msgstr "印象"
 
-#: include/sfx2/strings.hrc:292
+#: include/sfx2/strings.hrc:322
 msgctxt "STR_TEMPLATE_NAME11"
 msgid "Inspiration"
 msgstr "靈感"
 
-#: include/sfx2/strings.hrc:293
+#: include/sfx2/strings.hrc:323
 msgctxt "STR_TEMPLATE_NAME12"
 msgid "Lights"
 msgstr "光照"
 
-#: include/sfx2/strings.hrc:294
+#: include/sfx2/strings.hrc:324
 msgctxt "STR_TEMPLATE_NAME13"
 msgid "Lush Green"
 msgstr "翠綠"
 
-#: include/sfx2/strings.hrc:295
+#: include/sfx2/strings.hrc:325
 msgctxt "STR_TEMPLATE_NAME14"
 msgid "Metropolis"
 msgstr "都會"
 
-#: include/sfx2/strings.hrc:296
+#: include/sfx2/strings.hrc:326
 msgctxt "STR_TEMPLATE_NAME15"
 msgid "Midnightblue"
 msgstr "暗夜藍"
 
-#: include/sfx2/strings.hrc:297
+#: include/sfx2/strings.hrc:327
 msgctxt "STR_TEMPLATE_NAME16"
 msgid "Nature Illustration"
 msgstr "自然插圖"
 
-#: include/sfx2/strings.hrc:298
+#: include/sfx2/strings.hrc:328
 msgctxt "STR_TEMPLATE_NAME17"
 msgid "Pencil"
 msgstr "鉛筆"
 
-#: include/sfx2/strings.hrc:299
+#: include/sfx2/strings.hrc:329
 msgctxt "STR_TEMPLATE_NAME18"
 msgid "Piano"
 msgstr "鋼琴"
 
-#: include/sfx2/strings.hrc:300
+#: include/sfx2/strings.hrc:330
 msgctxt "STR_TEMPLATE_NAME19"
 msgid "Portfolio"
 msgstr "公事包"
 
-#: include/sfx2/strings.hrc:301
+#: include/sfx2/strings.hrc:331
 msgctxt "STR_TEMPLATE_NAME20"
 msgid "Progress"
 msgstr "進展"
 
-#: include/sfx2/strings.hrc:302
+#: include/sfx2/strings.hrc:332
 msgctxt "STR_TEMPLATE_NAME21"
 msgid "Sunset"
 msgstr "日落"
 
-#: include/sfx2/strings.hrc:303
+#: include/sfx2/strings.hrc:333
 msgctxt "STR_TEMPLATE_NAME22"
 msgid "Vintage"
 msgstr "久釀"
 
-#: include/sfx2/strings.hrc:304
+#: include/sfx2/strings.hrc:334
 msgctxt "STR_TEMPLATE_NAME23"
 msgid "Vivid"
 msgstr "鮮明"
 
 #. Translators: default Writer template names
-#: include/sfx2/strings.hrc:306
+#: include/sfx2/strings.hrc:336
 msgctxt "STR_TEMPLATE_NAME24"
 msgid "CV"
 msgstr "CV"
 
-#: include/sfx2/strings.hrc:307
+#: include/sfx2/strings.hrc:337
 msgctxt "STR_TEMPLATE_NAME25"
 msgid "Resume"
 msgstr "履歷"
 
-#: include/sfx2/strings.hrc:308
+#: include/sfx2/strings.hrc:338
 msgctxt "STR_TEMPLATE_NAME26"
 msgid "Default"
 msgstr "預設"
 
-#: include/sfx2/strings.hrc:309
+#: include/sfx2/strings.hrc:339
 msgctxt "STR_TEMPLATE_NAME27"
 msgid "Modern"
 msgstr "現代"
 
-#: include/sfx2/strings.hrc:310
+#: include/sfx2/strings.hrc:340
 msgctxt "STR_TEMPLATE_NAME28"
 msgid "Modern business letter sans-serif"
 msgstr "現代商務書信無襯線字"
 
-#: include/sfx2/strings.hrc:311
+#: include/sfx2/strings.hrc:341
 msgctxt "STR_TEMPLATE_NAME29"
 msgid "Modern business letter serif"
 msgstr "現代商務書信有襯線字"
 
-#: include/sfx2/strings.hrc:312
+#: include/sfx2/strings.hrc:342
 msgctxt "STR_TEMPLATE_NAME30"
 msgid "Businesscard with logo"
 msgstr "名片含 Logo 標誌"
 
-#: include/sfx2/strings.hrc:314
+#: include/sfx2/strings.hrc:344
 msgctxt "STR_CLEAR_CHAR"
 msgid "Remove"
 msgstr "移除"
 
-#: include/sfx2/strings.hrc:315
+#: include/sfx2/strings.hrc:345
 msgctxt "STR_CLEAR_ALL_CHAR"
 msgid "Clear All"
 msgstr "全部清除"
 
-#: include/sfx2/strings.hrc:317
+#: include/sfx2/strings.hrc:347
 msgctxt "STR_PASSWORD_LEN"
 msgid "Password length"
 msgstr "密碼長度"
 
-#: include/sfx2/strings.hrc:318
+#: include/sfx2/strings.hrc:348
 msgctxt "STR_PASSWORD_WARNING"
 msgid "The password you have entered causes interoperability issues. Please enter a password that is shorter than 52 bytes, or longer than 55 bytes."
 msgstr "您輸入的密碼會導致互通性問題。請輸入短於 55 個位元組，或長於 52 個位元組的密碼。"
@@ -1762,6 +1874,86 @@ msgctxt "TEMPLATE_LONG_NAMES_ARY"
 msgid "Styles"
 msgstr "樣式"
 
+#: sfx2/uiconfig/ui/addtargetdialog.ui:8
+msgctxt "addtargetdialog|AddTargetDialog"
+msgid "Add Target"
+msgstr "加入目標"
+
+#: sfx2/uiconfig/ui/addtargetdialog.ui:86
+msgctxt "addtargetdialog|label_name"
+msgid "Name:"
+msgstr "名稱："
+
+#: sfx2/uiconfig/ui/addtargetdialog.ui:117
+msgctxt "addtargetdialog|label_type"
+msgid "Type:"
+msgstr "類型："
+
+#: sfx2/uiconfig/ui/addtargetdialog.ui:132
+msgctxt "addtargetdialog|label_content"
+msgid "Content:"
+msgstr "內容："
+
+#: sfx2/uiconfig/ui/addtargetdialog.ui:167
+msgctxt "addtargetdialog|type"
+msgid "Text"
+msgstr "文字"
+
+#: sfx2/uiconfig/ui/addtargetdialog.ui:168
+msgctxt "addtargetdialog|type"
+msgid "Regex"
+msgstr ""
+
+#: sfx2/uiconfig/ui/addtargetdialog.ui:169
+msgctxt "addtargetdialog|type"
+msgid "Predefined"
+msgstr "預先定義"
+
+#: sfx2/uiconfig/ui/addtargetdialog.ui:184
+msgctxt "addtargetdialog|label_content_predef"
+msgid "Content:"
+msgstr "內容："
+
+#: sfx2/uiconfig/ui/addtargetdialog.ui:202
+msgctxt "addtargetdialog|content_predef"
+msgid "Credit card numbers"
+msgstr "信用卡號碼"
+
+#: sfx2/uiconfig/ui/addtargetdialog.ui:203
+msgctxt "addtargetdialog|content_predef"
+msgid "Email addresses"
+msgstr "電子郵件位址"
+
+#: sfx2/uiconfig/ui/addtargetdialog.ui:204
+msgctxt "addtargetdialog|content_predef"
+msgid "IP addresses"
+msgstr "IP 位址"
+
+#: sfx2/uiconfig/ui/addtargetdialog.ui:205
+msgctxt "addtargetdialog|content_predef"
+msgid "Dates (Numerical)"
+msgstr "日期 (數字)"
+
+#: sfx2/uiconfig/ui/addtargetdialog.ui:206
+msgctxt "addtargetdialog|content_predef"
+msgid "National Insurance Number (UK)"
+msgstr "國家保險號碼 (英國)"
+
+#: sfx2/uiconfig/ui/addtargetdialog.ui:207
+msgctxt "addtargetdialog|content_predef"
+msgid "Social Security Number (US)"
+msgstr "社會安全號碼 (美國)"
+
+#: sfx2/uiconfig/ui/addtargetdialog.ui:231
+msgctxt "addtargetdialog|checkboxCaseSensitive"
+msgid "Case Sensitive"
+msgstr "區分大小寫"
+
+#: sfx2/uiconfig/ui/addtargetdialog.ui:247
+msgctxt "addtargetdialog|checkboxWholeWords"
+msgid "Whole Words Only"
+msgstr "比對整個字詞"
+
 #: sfx2/uiconfig/ui/alienwarndialog.ui:7
 msgctxt "alienwarndialog|AlienWarnDialog"
 msgid "Confirm File Format"
@@ -1791,6 +1983,68 @@ msgstr "使用 %FORMATNAME 格式(_U)"
 msgctxt "alienwarndialog|ask"
 msgid "_Ask when not saving in ODF or default format"
 msgstr "若未以 ODF 格式儲存則詢問(_A)"
+
+#: sfx2/uiconfig/ui/autoredactdialog.ui:24
+msgctxt "autoredactdialog|AutoRedactDialog"
+msgid "Automatic Redaction"
+msgstr "發布前自動編審"
+
+#: sfx2/uiconfig/ui/autoredactdialog.ui:120
+msgctxt "autoredactdialog|target"
+msgid "Target Name"
+msgstr "目標名稱"
+
+#: sfx2/uiconfig/ui/autoredactdialog.ui:133
+msgctxt "autoredactdialog|description"
+msgid "Type"
+msgstr "類型"
+
+#: sfx2/uiconfig/ui/autoredactdialog.ui:146
+msgctxt "autoredactdialog|target"
+msgid "Content"
+msgstr "內容"
+
+#: sfx2/uiconfig/ui/autoredactdialog.ui:159
+msgctxt "autoredactdialog|target"
+msgid "Case Sensitive"
+msgstr "區分大小寫"
+
+#: sfx2/uiconfig/ui/autoredactdialog.ui:172
+msgctxt "autoredactdialog|target"
+msgid "Whole Words"
+msgstr "整個字詞"
+
+#: sfx2/uiconfig/ui/autoredactdialog.ui:200
+msgctxt "menuassignpage|contentslabel"
+msgid "_Redaction Targets"
+msgstr "編審目標(_R)"
+
+#: sfx2/uiconfig/ui/autoredactdialog.ui:219
+msgctxt "autoredactdialog|btnLoadTargets"
+msgid "Load Targets"
+msgstr "載入目標"
+
+#: sfx2/uiconfig/ui/autoredactdialog.ui:234
+msgctxt "autoredactdialog|btnSaveTargets"
+msgid "Save Targets"
+msgstr "儲存目標"
+
+#: sfx2/uiconfig/ui/autoredactdialog.ui:270
+msgctxt "autoredactdialog|add"
+msgid "Add"
+msgstr ""
+
+#: sfx2/uiconfig/ui/autoredactdialog.ui:283
+#, fuzzy
+msgctxt "autoredactdialog|edit"
+msgid "Edit"
+msgstr "編輯"
+
+#: sfx2/uiconfig/ui/autoredactdialog.ui:296
+#, fuzzy
+msgctxt "autoredactdialog|delete"
+msgid "Delete"
+msgstr "刪除"
 
 #: sfx2/uiconfig/ui/bookmarkdialog.ui:8
 msgctxt "bookmarkdialog|BookmarkDialog"
@@ -2272,12 +2526,22 @@ msgctxt "licensedialog|LicenseDialog"
 msgid "Licensing and Legal information"
 msgstr "授權與法律資訊"
 
-#: sfx2/uiconfig/ui/licensedialog.ui:25
+#: sfx2/uiconfig/ui/licensedialog.ui:28
 msgctxt "licensedialog|show"
 msgid "_Show License"
 msgstr "顯示授權條款(_S)"
 
-#: sfx2/uiconfig/ui/licensedialog.ui:68
+#: sfx2/uiconfig/ui/licensedialog.ui:44
+msgctxt "licensedialog|eula"
+msgid "_EULA"
+msgstr ""
+
+#: sfx2/uiconfig/ui/licensedialog.ui:88
+msgctxt "licensedialog|label2"
+msgid "%PRODUCTNAME binary package is made available subject to the terms of the End User License and Subscription Agreement; choose EULA to see exact details in English."
+msgstr ""
+
+#: sfx2/uiconfig/ui/licensedialog.ui:106
 msgctxt "licensedialog|label"
 msgid ""
 "%PRODUCTNAME is made available subject to the terms of the Mozilla Public License, v. 2.0. A copy of the MPL can be obtained at http://mozilla.org/MPL/2.0/.\n"
@@ -2330,52 +2594,52 @@ msgctxt "loadtemplatedialog|LoadTemplateDialog"
 msgid "New"
 msgstr "新增"
 
-#: sfx2/uiconfig/ui/loadtemplatedialog.ui:39
+#: sfx2/uiconfig/ui/loadtemplatedialog.ui:40
 msgctxt "loadtemplatedialog|fromfile"
 msgid "From File..."
 msgstr "取自檔案..."
 
-#: sfx2/uiconfig/ui/loadtemplatedialog.ui:168
+#: sfx2/uiconfig/ui/loadtemplatedialog.ui:169
 msgctxt "loadtemplatedialog|label1"
 msgid "Categories"
 msgstr "類別"
 
-#: sfx2/uiconfig/ui/loadtemplatedialog.ui:235
+#: sfx2/uiconfig/ui/loadtemplatedialog.ui:236
 msgctxt "loadtemplatedialog|label2"
 msgid "Templates"
 msgstr "範本"
 
-#: sfx2/uiconfig/ui/loadtemplatedialog.ui:256
+#: sfx2/uiconfig/ui/loadtemplatedialog.ui:257
 msgctxt "loadtemplatedialog|text"
 msgid "Te_xt"
 msgstr "文字(_X)"
 
-#: sfx2/uiconfig/ui/loadtemplatedialog.ui:271
+#: sfx2/uiconfig/ui/loadtemplatedialog.ui:272
 msgctxt "loadtemplatedialog|frame"
 msgid "_Frame"
 msgstr "外框(_F)"
 
-#: sfx2/uiconfig/ui/loadtemplatedialog.ui:286
+#: sfx2/uiconfig/ui/loadtemplatedialog.ui:287
 msgctxt "loadtemplatedialog|pages"
 msgid "_Pages"
 msgstr "頁面(_P)"
 
-#: sfx2/uiconfig/ui/loadtemplatedialog.ui:301
+#: sfx2/uiconfig/ui/loadtemplatedialog.ui:302
 msgctxt "loadtemplatedialog|numbering"
 msgid "N_umbering"
 msgstr "編號(_U)"
 
-#: sfx2/uiconfig/ui/loadtemplatedialog.ui:316
+#: sfx2/uiconfig/ui/loadtemplatedialog.ui:317
 msgctxt "loadtemplatedialog|overwrite"
 msgid "_Overwrite"
 msgstr "覆蓋(_O)"
 
-#: sfx2/uiconfig/ui/loadtemplatedialog.ui:343
+#: sfx2/uiconfig/ui/loadtemplatedialog.ui:344
 msgctxt "loadtemplatedialog|alttitle"
 msgid "Load Styles"
 msgstr "載入樣式"
 
-#: sfx2/uiconfig/ui/loadtemplatedialog.ui:379
+#: sfx2/uiconfig/ui/loadtemplatedialog.ui:380
 msgctxt "loadtemplatedialog|label3"
 msgid "Pre_view"
 msgstr "預覽(_V)"
