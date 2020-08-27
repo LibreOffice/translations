@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2020-08-21 17:59+0200\n"
+"POT-Creation-Date: 2020-08-25 16:10+0200\n"
 "PO-Revision-Date: 2020-02-26 21:15+0000\n"
 "Last-Translator: Gábor Kelemen <kelemeng@gnome.hu>\n"
 "Language-Team: Hungarian <https://weblate.documentfoundation.org/projects/libo_ui-master/swmessages/hu/>\n"
@@ -9884,55 +9884,91 @@ msgid "ASCII Filter Options"
 msgstr "ASCII-szűrő beállításai"
 
 #. qa99e
-#: sw/uiconfig/swriter/ui/asciifilterdialog.ui:104
+#: sw/uiconfig/swriter/ui/asciifilterdialog.ui:101
 msgctxt "asciifilterdialog|label2"
 msgid "_Character set:"
 msgstr "_Karakterkészlet:"
 
 #. jU5eB
-#: sw/uiconfig/swriter/ui/asciifilterdialog.ui:118
+#: sw/uiconfig/swriter/ui/asciifilterdialog.ui:115
 msgctxt "asciifilterdialog|fontft"
 msgid "Default fonts:"
 msgstr "Alapértelmezett betűkészletek:"
 
 #. UauRo
-#: sw/uiconfig/swriter/ui/asciifilterdialog.ui:132
+#: sw/uiconfig/swriter/ui/asciifilterdialog.ui:129
 msgctxt "asciifilterdialog|languageft"
 msgid "Lan_guage:"
 msgstr "_Nyelv:"
 
 #. EH9oq
-#: sw/uiconfig/swriter/ui/asciifilterdialog.ui:146
+#: sw/uiconfig/swriter/ui/asciifilterdialog.ui:143
 msgctxt "asciifilterdialog|label5"
 msgid "_Paragraph break:"
 msgstr "_Bekezdéstörés:"
 
+#. rYJMs
+#: sw/uiconfig/swriter/ui/asciifilterdialog.ui:158
+msgctxt "asciifilterdialog|extended_tip|charset"
+msgid "Specifies the character set of the file for export or import."
+msgstr "Megadja egy fájl exportálásánál vagy importálásánál használt karakterkészletet."
+
+#. gabV8
+#: sw/uiconfig/swriter/ui/asciifilterdialog.ui:174
+msgctxt "asciifilterdialog|extended_tip|font"
+msgid "By setting a default font, you specify that the text should be displayed in a specific font. The default fonts can only be selected when importing."
+msgstr "Az alapértelmezett betűkészlet beállításával meghatározhatja, hogy a szöveg milyen betűkészlettel jelenjen meg. Az alapértelmezett betűkészletet csak importálás esetén lehet kiválasztani."
+
 #. Vd7Uv
-#: sw/uiconfig/swriter/ui/asciifilterdialog.ui:184
+#: sw/uiconfig/swriter/ui/asciifilterdialog.ui:191
 msgctxt "asciifilterdialog|crlf"
 msgid "_CR & LF"
 msgstr "_CR & LF"
 
-#. WuYz5
+#. ZEa5G
 #: sw/uiconfig/swriter/ui/asciifilterdialog.ui:201
+msgctxt "asciifilterdialog|extended_tip|crlf"
+msgid "Produces a \"Carriage Return\" and a \"Linefeed\". This option is the default."
+msgstr "Egy \"kocsivissza\" és egy \"soremelés\" jelet tesz a bekezdések végére. Ez az alapértelmezett beállítás."
+
+#. WuYz5
+#: sw/uiconfig/swriter/ui/asciifilterdialog.ui:213
 msgctxt "asciifilterdialog|cr"
 msgid "C_R"
 msgstr "C_R"
 
+#. nurFX
+#: sw/uiconfig/swriter/ui/asciifilterdialog.ui:224
+msgctxt "asciifilterdialog|extended_tip|cr"
+msgid "Produces a \"Carriage Return\" as the paragraph break."
+msgstr "Egy \"kocsivissza\" jelet tesz a bekezdések végére."
+
 #. 9ckGF
-#: sw/uiconfig/swriter/ui/asciifilterdialog.ui:219
+#: sw/uiconfig/swriter/ui/asciifilterdialog.ui:236
 msgctxt "asciifilterdialog|lf"
 msgid "_LF"
 msgstr "_LF"
 
+#. K5KDB
+#: sw/uiconfig/swriter/ui/asciifilterdialog.ui:247
+msgctxt "asciifilterdialog|extended_tip|lf"
+msgid "Produces a \"Linefeed\" as the paragraph break."
+msgstr "Egy \"soremelés\" jelet tesz a bekezdések végére."
+
+#. jWeWy
+#: sw/uiconfig/swriter/ui/asciifilterdialog.ui:277
+msgctxt "asciifilterdialog|extended_tip|language"
+msgid "Specifies the language of the text, if this has not already been defined. This setting is only available when importing."
+msgstr "Megadja a szöveg nyelvét, ha még nem lenne meghatározva. Ez a beállítás csak importálásnál használható."
+
 #. BMvpA
-#: sw/uiconfig/swriter/ui/asciifilterdialog.ui:261
+#: sw/uiconfig/swriter/ui/asciifilterdialog.ui:288
 msgctxt "asciifilterdialog|includebom"
 msgid "Include byte-order mark"
 msgstr "Bájtsorrend-jelölővel"
 
 #. B2ofV
-#: sw/uiconfig/swriter/ui/asciifilterdialog.ui:284
+#: sw/uiconfig/swriter/ui/asciifilterdialog.ui:311
 msgctxt "asciifilterdialog|label1"
 msgid "Properties"
 msgstr "Tulajdonságok"
@@ -10207,50 +10243,74 @@ msgctxt "autoformattable|AutoFormatTableDialog"
 msgid "AutoFormat"
 msgstr "Automatikus formázás"
 
+#. tCRU9
+#: sw/uiconfig/swriter/ui/autoformattable.ui:39
+msgctxt "autoformattable|extended_tip|cancel"
+msgid "Closes dialog and discards all changes."
+msgstr "Bezárja a párbeszédablakot, és eldobja a változásokat."
+
+#. V6Tpf
+#: sw/uiconfig/swriter/ui/autoformattable.ui:60
+msgctxt "autoformattable|extended_tip|ok"
+msgid "Saves all changes and closes dialog."
+msgstr "Minden változtatást elment, és bezárja az ablakot."
+
+#. NTY8D
+#: sw/uiconfig/swriter/ui/autoformattable.ui:133
+msgctxt "autoformattable|extended_tip|preview"
+msgid "Displays a preview of the current selection."
+msgstr ""
+
+#. DYbCK
+#: sw/uiconfig/swriter/ui/autoformattable.ui:217
+msgctxt "autoformattable|extended_tip|remove"
+msgid "Deletes the selected element or elements after confirmation."
+msgstr "Jóváhagyást követően törli a kijelölt elemet vagy elemeket."
+
 #. YNp3m
-#: sw/uiconfig/swriter/ui/autoformattable.ui:209
+#: sw/uiconfig/swriter/ui/autoformattable.ui:229
 msgctxt "autoformattable|rename"
 msgid "Rename"
 msgstr "Átnevezés"
 
 #. SEACv
-#: sw/uiconfig/swriter/ui/autoformattable.ui:234
+#: sw/uiconfig/swriter/ui/autoformattable.ui:254
 msgctxt "autoformattable|label1"
 msgid "Format"
 msgstr "Formátum"
 
 #. ZVWaV
-#: sw/uiconfig/swriter/ui/autoformattable.ui:267
+#: sw/uiconfig/swriter/ui/autoformattable.ui:287
 msgctxt "autoformattable|numformatcb"
 msgid "Number format"
 msgstr "Számformátum"
 
 #. 6jMct
-#: sw/uiconfig/swriter/ui/autoformattable.ui:282
+#: sw/uiconfig/swriter/ui/autoformattable.ui:302
 msgctxt "autoformattable|bordercb"
 msgid "Borders"
 msgstr "Szegélyek"
 
 #. FV6mC
-#: sw/uiconfig/swriter/ui/autoformattable.ui:297
+#: sw/uiconfig/swriter/ui/autoformattable.ui:317
 msgctxt "autoformattable|fontcb"
 msgid "Font"
 msgstr "Betűkészlet"
 
 #. BG3bD
-#: sw/uiconfig/swriter/ui/autoformattable.ui:312
+#: sw/uiconfig/swriter/ui/autoformattable.ui:332
 msgctxt "autoformattable|patterncb"
 msgid "Pattern"
 msgstr "Mintázat"
 
 #. iSuf5
-#: sw/uiconfig/swriter/ui/autoformattable.ui:327
+#: sw/uiconfig/swriter/ui/autoformattable.ui:347
 msgctxt "autoformattable|alignmentcb"
 msgid "Alignment"
 msgstr "Igazítás"
 
 #. pR75z
-#: sw/uiconfig/swriter/ui/autoformattable.ui:351
+#: sw/uiconfig/swriter/ui/autoformattable.ui:371
 msgctxt "autoformattable|label2"
 msgid "Formatting"
 msgstr "Formázás"
@@ -10723,6 +10783,12 @@ msgctxt "businessdatapage|label1"
 msgid "Business Data"
 msgstr "Céges adatok"
 
+#. rNSTC
+#: sw/uiconfig/swriter/ui/businessdatapage.ui:549
+msgctxt "businessdatapage|extended_tip|BusinessDataPage"
+msgid "Contains contact information for business cards that use a layout from a 'Business Card, Work' category. Business card layouts are selected on the Business Cards tab."
+msgstr "Kapcsolatinformációkat tartalmaz azon névjegyekhez, amelyek a „Névjegy, Munkahelyi” kategória egyik elrendezését használják. A névjegy-elrendezések a Névjegyek lapon választhatók ki."
+
 #. EtgDz
 #: sw/uiconfig/swriter/ui/cannotsavelabeldialog.ui:7
 msgctxt "cannotsavelabeldialog|CannotSaveLabelDialog"
@@ -10819,71 +10885,137 @@ msgctxt "cardmediumpage|address"
 msgid "Address"
 msgstr "Cím"
 
+#. t4NQo
+#: sw/uiconfig/swriter/ui/cardmediumpage.ui:72
+msgctxt "cardmediumpage|extended_tip|address"
+msgid "Creates a label with your return address. Text that is currently in the Label text box is overwritten."
+msgstr "Létrehoz egy címkét az Ön válaszcímével. A Címke szövege mezőben lévő szöveg felülírásra kerül."
+
 #. HH2Su
-#: sw/uiconfig/swriter/ui/cardmediumpage.ui:81
+#: sw/uiconfig/swriter/ui/cardmediumpage.ui:86
 msgctxt "cardmediumpage|label2"
 msgid "Label text:"
 msgstr "Címke szövege:"
 
+#. RczQE
+#: sw/uiconfig/swriter/ui/cardmediumpage.ui:117
+msgctxt "cardmediumpage|extended_tip|textview"
+msgid "Enter the text that you want to appear on the label. You can also insert a database field."
+msgstr "Adja meg a címke szövegét. Beszúrhat egy adatbázismezőt is."
+
 #. xjPBY
-#: sw/uiconfig/swriter/ui/cardmediumpage.ui:141
+#: sw/uiconfig/swriter/ui/cardmediumpage.ui:151
 msgctxt "cardmediumpage|label4"
 msgid "Database:"
 msgstr "Adatbázis:"
 
+#. 7shgK
+#: sw/uiconfig/swriter/ui/cardmediumpage.ui:168
+msgctxt "cardmediumpage|extended_tip|database"
+msgid "Select the database that you want to use as the data source for your label."
+msgstr ""
+
 #. G2Vhh
-#: sw/uiconfig/swriter/ui/cardmediumpage.ui:179
+#: sw/uiconfig/swriter/ui/cardmediumpage.ui:194
 msgctxt "cardmediumpage|label7"
 msgid "Table:"
 msgstr "Tábla:"
 
+#. MbB43
+#: sw/uiconfig/swriter/ui/cardmediumpage.ui:211
+msgctxt "cardmediumpage|extended_tip|table"
+msgid "Select the database table containing the field(s) that you want to use in your label."
+msgstr "Válassza ki azt az adatbázistáblát, amely a címkéhez felhasználandó mezőket tartalmazza."
+
 #. LB3gM
-#: sw/uiconfig/swriter/ui/cardmediumpage.ui:217
+#: sw/uiconfig/swriter/ui/cardmediumpage.ui:237
 msgctxt "cardmediumpage|label8"
 msgid "Database field:"
 msgstr "Adatbázismező:"
 
+#. sRwht
+#: sw/uiconfig/swriter/ui/cardmediumpage.ui:254
+msgctxt "cardmediumpage|extended_tip|field"
+msgid "Select the database field that you want, and then click the arrow to the left of this box to insert the field into the Label text box."
+msgstr ""
+
 #. VfLpb
-#: sw/uiconfig/swriter/ui/cardmediumpage.ui:255
+#: sw/uiconfig/swriter/ui/cardmediumpage.ui:280
 msgctxt "cardmediumpage|insert|tooltip_text"
 msgid "Insert"
 msgstr "Beszúrás"
 
+#. nF3rB
+#: sw/uiconfig/swriter/ui/cardmediumpage.ui:286
+msgctxt "cardmediumpage|extended_tip|insert"
+msgid "Select the database field that you want, and then click the arrow to the left of this box to insert the field into the Label text box."
+msgstr ""
+
 #. Y9YPN
-#: sw/uiconfig/swriter/ui/cardmediumpage.ui:273
+#: sw/uiconfig/swriter/ui/cardmediumpage.ui:303
 msgctxt "cardmediumpage|label6"
 msgid "Inscription"
 msgstr "Felirat"
 
 #. iFCWn
-#: sw/uiconfig/swriter/ui/cardmediumpage.ui:320
+#: sw/uiconfig/swriter/ui/cardmediumpage.ui:350
 msgctxt "cardmediumpage|continuous"
 msgid "_Continuous"
 msgstr "_Folyamatos"
 
+#. ZHCJD
+#: sw/uiconfig/swriter/ui/cardmediumpage.ui:360
+msgctxt "cardmediumpage|extended_tip|continuous"
+msgid "Prints labels on continuous paper."
+msgstr "Címkéket nyomtat folytonos papírra."
+
 #. iqG7v
-#: sw/uiconfig/swriter/ui/cardmediumpage.ui:336
+#: sw/uiconfig/swriter/ui/cardmediumpage.ui:371
 msgctxt "cardmediumpage|sheet"
 msgid "_Sheet"
 msgstr "_Munkalap"
 
 #. Z5Zyq
-#: sw/uiconfig/swriter/ui/cardmediumpage.ui:368
+#: sw/uiconfig/swriter/ui/cardmediumpage.ui:403
 msgctxt "cardmediumpage|label5"
 msgid "Brand:"
 msgstr "Márka:"
 
 #. BDZFL
-#: sw/uiconfig/swriter/ui/cardmediumpage.ui:382
+#: sw/uiconfig/swriter/ui/cardmediumpage.ui:417
 msgctxt "cardmediumpage|label3"
 msgid "_Type:"
 msgstr "_Típus:"
 
+#. h9Uch
+#: sw/uiconfig/swriter/ui/cardmediumpage.ui:435
+msgctxt "cardmediumpage|extended_tip|brand"
+msgid "Select the brand of paper that you want to use."
+msgstr "Válassza ki a használni kívánt papír márkáját."
+
+#. T3wp9
+#: sw/uiconfig/swriter/ui/cardmediumpage.ui:452
+msgctxt "cardmediumpage|extended_tip|type"
+msgid "Select the size format that you want to use. The available formats depend on the brand on what you selected in the Brand list. If you want to use a custom label format, select [User], and then click the Format tab to define the format."
+msgstr "Válassza ki a használni kívánt méretformátumot. A rendelkezésre álló formátumok a Márka listában kiválasztott márkától függenek. Ha egyéni címkeformátumot kíván használni, válassza az [Egyéni] lehetőséget, majd kattintson a Formátum fülre a formátum megadásához."
+
+#. DCFRk
+#: sw/uiconfig/swriter/ui/cardmediumpage.ui:480
+msgctxt "cardmediumpage|extended_tip|formatinfo"
+msgid "The paper type and the dimensions of the business card are displayed at the bottom of the Format area."
+msgstr ""
+
 #. 3zCCN
-#: sw/uiconfig/swriter/ui/cardmediumpage.ui:457
+#: sw/uiconfig/swriter/ui/cardmediumpage.ui:507
 msgctxt "cardmediumpage|label1"
 msgid "Format"
 msgstr "Formátum"
+
+#. WtDzB
+#: sw/uiconfig/swriter/ui/cardmediumpage.ui:522
+msgctxt "cardmediumpage|extended_tip|CardMediumPage"
+msgid "Specify the label text and choose the paper size for the label."
+msgstr "Adja meg a címke szövegét, és válassza ki a címkéhez tartozó papírméretet."
 
 #. J96RD
 #: sw/uiconfig/swriter/ui/ccdialog.ui:8
@@ -10993,35 +11125,89 @@ msgctxt "charurlpage|eventpb"
 msgid "Events..."
 msgstr "Események…"
 
+#. QKCzL
+#: sw/uiconfig/swriter/ui/charurlpage.ui:94
+msgctxt "charurlpage|extended_tip|eventpb"
+msgid "Specify an event that triggers when you click the hyperlink."
+msgstr "Adja meg a hiperhivatkozásra való kattintással kiváltandó eseményt."
+
+#. MhJbE
+#: sw/uiconfig/swriter/ui/charurlpage.ui:111
+msgctxt "charurlpage|extended_tip|urled"
+msgid "Enter a URL for the file that you want to open when you click the hyperlink."
+msgstr "Írja be annak a fájlnak az URL-címét, amelyet a hiperhivatkozásra kattintva meg akar nyitni."
+
+#. YGnoF
+#: sw/uiconfig/swriter/ui/charurlpage.ui:128
+msgctxt "charurlpage|extended_tip|nameed"
+msgid "Enter a name for the hyperlink."
+msgstr "Adjon meg egy nevet a hiperhivatkozás számára."
+
+#. grQbi
+#: sw/uiconfig/swriter/ui/charurlpage.ui:145
+msgctxt "charurlpage|extended_tip|texted"
+msgid "Enter the text that you want to display for the hyperlink."
+msgstr "Adja meg a hiperhivatkozás szövegét."
+
 #. BmLb8
-#: sw/uiconfig/swriter/ui/charurlpage.ui:136
+#: sw/uiconfig/swriter/ui/charurlpage.ui:156
 msgctxt "charurlpage|urlpb"
 msgid "Browse..."
 msgstr "Tallózás..."
 
+#. 4276D
+#: sw/uiconfig/swriter/ui/charurlpage.ui:163
+msgctxt "charurlpage|extended_tip|urlpb"
+msgid "Locate the file that you want to link to, and then click Open."
+msgstr "Keresse meg a fájlt, amire hivatkozni akar, majd kattintson a Megnyitás gombra."
+
+#. ha6rk
+#: sw/uiconfig/swriter/ui/charurlpage.ui:185
+msgctxt "charurlpage|extended_tip|targetfrmlb"
+msgid "Enter the name of the frame that you want the linked file to open in, or select a predefined frame from the list."
+msgstr "Írja be a keret nevét, amelyben szeretné, hogy megnyíljon a hivatkozott fájl, vagy válasszon ki egy előre meghatározott keretet a listából."
+
 #. CQvaG
-#: sw/uiconfig/swriter/ui/charurlpage.ui:187
+#: sw/uiconfig/swriter/ui/charurlpage.ui:217
 msgctxt "charurlpage|label32"
 msgid "Hyperlink"
 msgstr "Hiperhivatkozás"
 
 #. FCyhD
-#: sw/uiconfig/swriter/ui/charurlpage.ui:222
+#: sw/uiconfig/swriter/ui/charurlpage.ui:252
 msgctxt "charurlpage|label34"
 msgid "Visited links:"
 msgstr "Látogatott hivatkozások:"
 
 #. EvDaT
-#: sw/uiconfig/swriter/ui/charurlpage.ui:236
+#: sw/uiconfig/swriter/ui/charurlpage.ui:266
 msgctxt "charurlpage|label10"
 msgid "Unvisited links:"
 msgstr "Nem látogatott hivatkozások:"
 
+#. CqHA6
+#: sw/uiconfig/swriter/ui/charurlpage.ui:282
+msgctxt "charurlpage|extended_tip|visitedlb"
+msgid "Select a formatting style to use for visited links from the list. To add or modify a style in this list, close this dialog, and click the Styles icon on the Formatting toolbar."
+msgstr ""
+
+#. w7Cdu
+#: sw/uiconfig/swriter/ui/charurlpage.ui:297
+msgctxt "charurlpage|extended_tip|unvisitedlb"
+msgid "Select a formatting style to use for unvisited links from the list. To add or modify a style in this list, close this dialog, and click the Styles icon on the Formatting toolbar."
+msgstr ""
+
 #. 43fvG
-#: sw/uiconfig/swriter/ui/charurlpage.ui:274
+#: sw/uiconfig/swriter/ui/charurlpage.ui:314
 msgctxt "charurlpage|label33"
 msgid "Character Styles"
 msgstr "Karakterstílusok"
+
+#. bF2cC
+#: sw/uiconfig/swriter/ui/charurlpage.ui:329
+msgctxt "charurlpage|extended_tip|CharURLPage"
+msgid "Assigns a new hyperlink or edits the selected hyperlink."
+msgstr "Új hiperhivatkozást hoz létre, vagy szerkeszti a kiválasztott hiperhivatkozást."
 
 #. 3mgNE
 #: sw/uiconfig/swriter/ui/columndialog.ui:8
@@ -12858,7 +13044,7 @@ msgid "Synchronize"
 msgstr "Szinkronizálás"
 
 #. ooBrL
-#: sw/uiconfig/swriter/ui/floatingsync.ui:37
+#: sw/uiconfig/swriter/ui/floatingsync.ui:34
 msgctxt "floatingsync|sync"
 msgid "Synchronize Labels"
 msgstr "Címkék szinkronizálása"
@@ -14027,44 +14213,50 @@ msgctxt "inputwinmenu|max"
 msgid "Maximum"
 msgstr "Maximum"
 
+#. 3VBfQ
+#: sw/uiconfig/swriter/ui/inputwinmenu.ui:194
+msgctxt "inputwinmenu|product"
+msgid "Product"
+msgstr ""
+
 #. vEC7B
-#: sw/uiconfig/swriter/ui/inputwinmenu.ui:198
+#: sw/uiconfig/swriter/ui/inputwinmenu.ui:206
 msgctxt "inputwinmenu|functions"
 msgid "Functions"
 msgstr "Függvények"
 
 #. CGyzt
-#: sw/uiconfig/swriter/ui/inputwinmenu.ui:208
+#: sw/uiconfig/swriter/ui/inputwinmenu.ui:216
 msgctxt "inputwinmenu|sin"
 msgid "Sine"
 msgstr "Szinusz"
 
 #. EGGzK
-#: sw/uiconfig/swriter/ui/inputwinmenu.ui:216
+#: sw/uiconfig/swriter/ui/inputwinmenu.ui:224
 msgctxt "inputwinmenu|cos"
 msgid "Cosine"
 msgstr "Koszinusz"
 
 #. nbqKZ
-#: sw/uiconfig/swriter/ui/inputwinmenu.ui:224
+#: sw/uiconfig/swriter/ui/inputwinmenu.ui:232
 msgctxt "inputwinmenu|tag"
 msgid "Tangent"
 msgstr "Tangens"
 
 #. PUrKG
-#: sw/uiconfig/swriter/ui/inputwinmenu.ui:232
+#: sw/uiconfig/swriter/ui/inputwinmenu.ui:240
 msgctxt "inputwinmenu|asin"
 msgid "Arcsine"
 msgstr "Arkusz szinusz"
 
 #. 4VKJB
-#: sw/uiconfig/swriter/ui/inputwinmenu.ui:240
+#: sw/uiconfig/swriter/ui/inputwinmenu.ui:248
 msgctxt "inputwinmenu|acos"
 msgid "Arccosine"
 msgstr "Arkusz koszinusz"
 
 #. QB8fF
-#: sw/uiconfig/swriter/ui/inputwinmenu.ui:248
+#: sw/uiconfig/swriter/ui/inputwinmenu.ui:256
 msgctxt "inputwinmenu|atan"
 msgid "Arctangent"
 msgstr "Arkusz tangens"
@@ -14340,91 +14532,212 @@ msgid "Insert Database Columns"
 msgstr "Adatbázisoszlopok beszúrása"
 
 #. SLAeD
-#: sw/uiconfig/swriter/ui/insertdbcolumnsdialog.ui:144
+#: sw/uiconfig/swriter/ui/insertdbcolumnsdialog.ui:141
 msgctxt "insertdbcolumnsdialog|label1"
 msgid "Insert data as:"
 msgstr "Adat beillesztése másként:"
 
 #. fahdL
-#: sw/uiconfig/swriter/ui/insertdbcolumnsdialog.ui:162
+#: sw/uiconfig/swriter/ui/insertdbcolumnsdialog.ui:159
 msgctxt "insertdbcolumnsdialog|astable"
 msgid "T_able"
 msgstr "_Tábla"
 
+#. FpaRE
+#: sw/uiconfig/swriter/ui/insertdbcolumnsdialog.ui:169
+msgctxt "insertdbcolumnsdialog|extended_tip|astable"
+msgid "Inserts data selected from the data source browser into the document as a table."
+msgstr "Az adatforrás-böngészőből kiválasztott adatokat táblaként szúrja be a dokumentumba."
+
 #. 8JSFQ
-#: sw/uiconfig/swriter/ui/insertdbcolumnsdialog.ui:178
+#: sw/uiconfig/swriter/ui/insertdbcolumnsdialog.ui:180
 msgctxt "insertdbcolumnsdialog|asfields"
 msgid "_Fields"
 msgstr "Me_zők"
 
+#. o9vrZ
+#: sw/uiconfig/swriter/ui/insertdbcolumnsdialog.ui:190
+msgctxt "insertdbcolumnsdialog|extended_tip|asfields"
+msgid "Inserts data selected from the data source browser into the document as fields."
+msgstr "Az adatforrás-böngészőből kiválasztott adatokat mezőként szúrja be a dokumentumba."
+
 #. vzNne
-#: sw/uiconfig/swriter/ui/insertdbcolumnsdialog.ui:194
+#: sw/uiconfig/swriter/ui/insertdbcolumnsdialog.ui:201
 msgctxt "insertdbcolumnsdialog|astext"
 msgid "_Text"
 msgstr "_Szöveg"
 
+#. dYQPq
+#: sw/uiconfig/swriter/ui/insertdbcolumnsdialog.ui:211
+msgctxt "insertdbcolumnsdialog|extended_tip|astext"
+msgid "Inserts data selected from the data source browser into the document as text."
+msgstr "Az adatforrás-böngészőből kiválasztott adatokat szövegként szúrja be a dokumentumba."
+
 #. mbu6k
-#: sw/uiconfig/swriter/ui/insertdbcolumnsdialog.ui:246
+#: sw/uiconfig/swriter/ui/insertdbcolumnsdialog.ui:258
 msgctxt "insertdbcolumnsdialog|label4"
 msgid "Database _columns"
 msgstr "_Adatbázisoszlopok"
 
 #. q5Z9N
-#: sw/uiconfig/swriter/ui/insertdbcolumnsdialog.ui:260
+#: sw/uiconfig/swriter/ui/insertdbcolumnsdialog.ui:272
 msgctxt "insertdbcolumnsdialog|tablecolft"
 msgid "Tab_le column(s)"
 msgstr "_Táblázatoszlopok"
 
+#. GJeoX
+#: sw/uiconfig/swriter/ui/insertdbcolumnsdialog.ui:298
+msgctxt "insertdbcolumnsdialog|extended_tip|allright"
+msgid "Moves all listed database fields into the Table column(s) list box."
+msgstr "Minden felsorolt adatbázismezőt áthelyez a Táblázatoszlopok listába."
+
+#. 36dFc
+#: sw/uiconfig/swriter/ui/insertdbcolumnsdialog.ui:316
+#, fuzzy
+msgctxt "insertdbcolumnsdialog|extended_tip|oneright"
+msgid "Moves the selected database field into the Table column(s) list box."
+msgstr "A kijelölt adatbázismezőket áthelyezi a Táblázatoszlopok listába. "
+
+#. bGF2A
+#: sw/uiconfig/swriter/ui/insertdbcolumnsdialog.ui:334
+msgctxt "insertdbcolumnsdialog|extended_tip|toedit"
+msgid "Moves the fields that you selected in the Database columns list box into the selection field."
+msgstr "A kijelölt mezőket áthelyezi az Adatbázisoszlopok listamezőből a választó mezőbe."
+
+#. 2NBVw
+#: sw/uiconfig/swriter/ui/insertdbcolumnsdialog.ui:352
+msgctxt "insertdbcolumnsdialog|extended_tip|oneleft"
+msgid "Removes the selected database field from the Table column(s) list box"
+msgstr "A kijelölt adatbázismezőket eltávolítja a Táblázatoszlopok listamezőből."
+
+#. V2tM7
+#: sw/uiconfig/swriter/ui/insertdbcolumnsdialog.ui:371
+msgctxt "insertdbcolumnsdialog|extended_tip|allleft"
+msgid "Removes all database fields from the Table column(s) list box."
+msgstr "Minden adatbázismezőt eltávolít a Táblázatoszlopok listamezőből."
+
+#. BFk6U
+#: sw/uiconfig/swriter/ui/insertdbcolumnsdialog.ui:428
+msgctxt "insertdbcolumnsdialog|extended_tip|tablecols"
+msgid "Lists all database columns to be inserted into the document."
+msgstr "Felsorolja a dokumentumba beillesztendő adatbázisoszlopokat."
+
+#. BBDKG
+#: sw/uiconfig/swriter/ui/insertdbcolumnsdialog.ui:455
+msgctxt "insertdbcolumnsdialog|extended_tip|textview"
+msgid "Lists the database columns that you selected to be inserted into the document. You can also enter text here. This text will be also inserted into the document."
+msgstr "Felsorolja a dokumentumba beillesztendő adatbázisoszlopokat. Itt szöveget is beírhat. Ez a szöveg szintén megjelenik majd a dokumentumban."
+
+#. wFeTt
+#: sw/uiconfig/swriter/ui/insertdbcolumnsdialog.ui:513
+msgctxt "insertdbcolumnsdialog|extended_tip|tabledbcols"
+msgid "Specifies the database columns to be inserted into the text table."
+msgstr "Megadja, hogy mely adatbázisoszlopok kerüljenek a szöveges táblázatba."
+
+#. XmaQd
+#: sw/uiconfig/swriter/ui/insertdbcolumnsdialog.ui:558
+msgctxt "insertdbcolumnsdialog|extended_tip|tabletxtcols"
+msgid "Select the database columns that you want to insert it in the document."
+msgstr "Válassza ki a dokumentumba beillesztendő adatbázisoszlopot."
+
 #. DJStE
-#: sw/uiconfig/swriter/ui/insertdbcolumnsdialog.ui:570
+#: sw/uiconfig/swriter/ui/insertdbcolumnsdialog.ui:627
 msgctxt "insertdbcolumnsdialog|tableheading"
 msgid "Insert table heading"
 msgstr "Táblázatfejléc beszúrása"
 
+#. t6EBC
+#: sw/uiconfig/swriter/ui/insertdbcolumnsdialog.ui:636
+msgctxt "insertdbcolumnsdialog|extended_tip|tableheading"
+msgid "Specifies whether to insert a heading line for the columns in the text table."
+msgstr "Megadja, hogy a szöveges táblázat oszlopaihoz beszúrjon-e egy fejlécsort."
+
 #. wEgCa
-#: sw/uiconfig/swriter/ui/insertdbcolumnsdialog.ui:585
+#: sw/uiconfig/swriter/ui/insertdbcolumnsdialog.ui:647
 msgctxt "insertdbcolumnsdialog|columnname"
 msgid "Apply column _name"
 msgstr "Oszlop_név alkalmazása"
 
+#. CXxAf
+#: sw/uiconfig/swriter/ui/insertdbcolumnsdialog.ui:657
+msgctxt "insertdbcolumnsdialog|extended_tip|columnname"
+msgid "Uses the field names of the database table as headings for each of the text table columns."
+msgstr "Az adatbázistáblák mezőnevei lesznek az egyes szövegtáblázat-oszlopok fejlécsorai."
+
 #. Aeipk
-#: sw/uiconfig/swriter/ui/insertdbcolumnsdialog.ui:601
+#: sw/uiconfig/swriter/ui/insertdbcolumnsdialog.ui:668
 msgctxt "insertdbcolumnsdialog|rowonly"
 msgid "Create row only"
 msgstr "Csak sor létrehozása"
 
+#. CEFVA
+#: sw/uiconfig/swriter/ui/insertdbcolumnsdialog.ui:679
+msgctxt "insertdbcolumnsdialog|extended_tip|rowonly"
+msgid "Inserts an empty heading line into the text table."
+msgstr "Üres címsort szúr be a táblázatba."
+
 #. oJMmt
-#: sw/uiconfig/swriter/ui/insertdbcolumnsdialog.ui:618
+#: sw/uiconfig/swriter/ui/insertdbcolumnsdialog.ui:690
 msgctxt "insertdbcolumnsdialog|tableformat"
 msgid "Pr_operties..."
 msgstr "_Tulajdonságok..."
 
+#. s2Yfx
+#: sw/uiconfig/swriter/ui/insertdbcolumnsdialog.ui:697
+msgctxt "insertdbcolumnsdialog|extended_tip|tableformat"
+msgid "Opens the Table Format dialog, which enables you to define the table properties such as borders, background, and column width."
+msgstr "Megnyitja a Táblázatformátum párbeszédablakot, amelyen a táblázat tulajdonságait határozhatja meg, például szegélyeket, hátteret és oszlopszélességet."
+
 #. EyALm
-#: sw/uiconfig/swriter/ui/insertdbcolumnsdialog.ui:631
+#: sw/uiconfig/swriter/ui/insertdbcolumnsdialog.ui:708
 msgctxt "insertdbcolumnsdialog|autoformat"
 msgid "Aut_oFormat..."
 msgstr "_Automatikus formázás..."
 
+#. uc3tJ
+#: sw/uiconfig/swriter/ui/insertdbcolumnsdialog.ui:715
+msgctxt "insertdbcolumnsdialog|extended_tip|autoformat"
+msgid "Opens the AutoFormat dialog, in which you can select format styles that are immediately applied when inserting the table."
+msgstr "Megnyitja az Automatikus formázás párbeszédablakot, ahol kiválaszthatja azokat a formátumstílusokat, amelyeket a beszúrt táblázat tartalmazni fog."
+
 #. Ab7c7
-#: sw/uiconfig/swriter/ui/insertdbcolumnsdialog.ui:646
+#: sw/uiconfig/swriter/ui/insertdbcolumnsdialog.ui:728
 msgctxt "insertdbcolumnsdialog|parastylelabel"
 msgid "Paragraph _style:"
 msgstr "Bekezdés _stílusa:"
 
+#. mTErr
+#: sw/uiconfig/swriter/ui/insertdbcolumnsdialog.ui:748
+msgctxt "insertdbcolumnsdialog|extended_tip|parastyle"
+msgid "This is where you can select other Paragraph Styles to apply to the paragraph you want to insert into the document."
+msgstr "Itt választhat ki egy másik bekezdésstílust a dokumentumba beillesztendő bekezdésekhez."
+
 #. seYaw
-#: sw/uiconfig/swriter/ui/insertdbcolumnsdialog.ui:686
+#: sw/uiconfig/swriter/ui/insertdbcolumnsdialog.ui:773
 msgctxt "insertdbcolumnsdialog|fromdatabase"
 msgid "From _database"
 msgstr "_Adatbázisból"
 
+#. FWyqG
+#: sw/uiconfig/swriter/ui/insertdbcolumnsdialog.ui:783
+msgctxt "insertdbcolumnsdialog|extended_tip|fromdatabase"
+msgid "Accepts the database formats."
+msgstr "Elfogadja az adatbázis-formátumokat."
+
 #. sDwyx
-#: sw/uiconfig/swriter/ui/insertdbcolumnsdialog.ui:702
+#: sw/uiconfig/swriter/ui/insertdbcolumnsdialog.ui:794
 msgctxt "insertdbcolumnsdialog|userdefined"
 msgid "_User-defined"
 msgstr "_Egyéni"
 
+#. KRqrf
+#: sw/uiconfig/swriter/ui/insertdbcolumnsdialog.ui:807
+msgctxt "insertdbcolumnsdialog|extended_tip|userdefined"
+msgid "Specifies a format from the list, if the format information of certain data fields is not accepted."
+msgstr "Megadja a formátumot a listából, abban az esetben, ha egyes adatmezők formátumadatai nem elfogadottak."
+
 #. 7HFcY
-#: sw/uiconfig/swriter/ui/insertdbcolumnsdialog.ui:747
+#: sw/uiconfig/swriter/ui/insertdbcolumnsdialog.ui:844
 msgctxt "insertdbcolumnsdialog|label3"
 msgid "Format"
 msgstr "Formátum"
@@ -14585,62 +14898,80 @@ msgctxt "inserttable|ok"
 msgid "Insert"
 msgstr "Beszúrás"
 
+#. AzYkF
+#: sw/uiconfig/swriter/ui/inserttable.ui:61
+msgctxt "inserttable|extended_tip|ok"
+msgid "Saves all changes and closes dialog."
+msgstr "Minden változtatást elment, és bezárja az ablakot."
+
+#. M4Bgm
+#: sw/uiconfig/swriter/ui/inserttable.ui:80
+msgctxt "inserttable|extended_tip|cancel"
+msgid "Closes dialog and discards all changes."
+msgstr "Bezárja a párbeszédablakot, és eldobja a változásokat."
+
 #. nrFC2
-#: sw/uiconfig/swriter/ui/inserttable.ui:150
+#: sw/uiconfig/swriter/ui/inserttable.ui:160
 msgctxt "inserttable|label3"
 msgid "_Name:"
 msgstr "_Név:"
 
 #. ScZyw
-#: sw/uiconfig/swriter/ui/inserttable.ui:164
+#: sw/uiconfig/swriter/ui/inserttable.ui:174
 msgctxt "inserttable|3"
 msgid "_Columns:"
 msgstr "_Oszlopok:"
 
 #. f3nKw
-#: sw/uiconfig/swriter/ui/inserttable.ui:192
+#: sw/uiconfig/swriter/ui/inserttable.ui:202
 msgctxt "inserttable|4"
 msgid "_Rows:"
 msgstr "So_rok:"
 
 #. M2tGB
-#: sw/uiconfig/swriter/ui/inserttable.ui:224
+#: sw/uiconfig/swriter/ui/inserttable.ui:234
 msgctxt "inserttable|label1"
 msgid "General"
 msgstr "Általános"
 
 #. dYEPP
-#: sw/uiconfig/swriter/ui/inserttable.ui:262
+#: sw/uiconfig/swriter/ui/inserttable.ui:272
 msgctxt "inserttable|headercb"
 msgid "Hea_ding"
 msgstr "_Címsor"
 
 #. 7obXo
-#: sw/uiconfig/swriter/ui/inserttable.ui:277
+#: sw/uiconfig/swriter/ui/inserttable.ui:287
 msgctxt "inserttable|repeatcb"
 msgid "Repeat heading rows on new _pages"
 msgstr "Fejlécs_orok ismétlése új oldalakon"
 
 #. EkDeF
-#: sw/uiconfig/swriter/ui/inserttable.ui:295
+#: sw/uiconfig/swriter/ui/inserttable.ui:305
 msgctxt "inserttable|dontsplitcb"
 msgid "Don’t _split table over pages"
 msgstr "_Ne ossza fel a táblázatot több oldalra"
 
 #. kkA32
-#: sw/uiconfig/swriter/ui/inserttable.ui:332
+#: sw/uiconfig/swriter/ui/inserttable.ui:342
 msgctxt "inserttable|repeatheaderafter"
 msgid "Heading ro_ws:"
 msgstr "_Fejlécsorok:"
 
 #. D26kf
-#: sw/uiconfig/swriter/ui/inserttable.ui:355
+#: sw/uiconfig/swriter/ui/inserttable.ui:365
 msgctxt "inserttable|label2"
 msgid "Options"
 msgstr "Beállítások"
 
+#. GRq9m
+#: sw/uiconfig/swriter/ui/inserttable.ui:408
+msgctxt "inserttable|extended_tip|previewinstable"
+msgid "Displays a preview of the current selection."
+msgstr ""
+
 #. 9FGjK
-#: sw/uiconfig/swriter/ui/inserttable.ui:449
+#: sw/uiconfig/swriter/ui/inserttable.ui:464
 msgctxt "inserttable|lbTableStyle"
 msgid "Styles"
 msgstr "Stílusok"
@@ -14657,41 +14988,53 @@ msgctxt "labeldialog|ok"
 msgid "_New Document"
 msgstr "Ú_j dokumentum"
 
+#. HF8VF
+#: sw/uiconfig/swriter/ui/labeldialog.ui:34
+msgctxt "labeldialog|extended_tip|ok"
+msgid "Creates a new document for editing."
+msgstr "Új dokumentumot hoz létre szerkesztésre."
+
 #. EtFBT
-#: sw/uiconfig/swriter/ui/labeldialog.ui:135
+#: sw/uiconfig/swriter/ui/labeldialog.ui:140
 msgctxt "labeldialog|medium"
 msgid "Medium"
 msgstr "Közepes"
 
 #. hJSCq
-#: sw/uiconfig/swriter/ui/labeldialog.ui:181
+#: sw/uiconfig/swriter/ui/labeldialog.ui:186
 msgctxt "labeldialog|labels"
 msgid "Labels"
 msgstr "Címkék"
 
 #. G378Z
-#: sw/uiconfig/swriter/ui/labeldialog.ui:204
+#: sw/uiconfig/swriter/ui/labeldialog.ui:233
 msgctxt "labeldialog|private"
 msgid "Private"
 msgstr "Személyes"
 
 #. CAEMT
-#: sw/uiconfig/swriter/ui/labeldialog.ui:251
+#: sw/uiconfig/swriter/ui/labeldialog.ui:280
 msgctxt "labeldialog|business"
 msgid "Business"
 msgstr "Üzleti"
 
 #. a7BSb
-#: sw/uiconfig/swriter/ui/labeldialog.ui:298
+#: sw/uiconfig/swriter/ui/labeldialog.ui:327
 msgctxt "labeldialog|format"
 msgid "Format"
 msgstr "Formátum"
 
 #. cs8CW
-#: sw/uiconfig/swriter/ui/labeldialog.ui:345
+#: sw/uiconfig/swriter/ui/labeldialog.ui:374
 msgctxt "labeldialog|options"
 msgid "Options"
 msgstr "Beállítások"
+
+#. uB6wE
+#: sw/uiconfig/swriter/ui/labeldialog.ui:401
+msgctxt "labeldialog|extended_tip|LabelDialog"
+msgid "Allows you to create labels. Labels are created in a text document."
+msgstr ""
 
 #. ZNbvM
 #: sw/uiconfig/swriter/ui/labelformatpage.ui:35
@@ -14759,59 +15102,167 @@ msgctxt "labelformatpage|save"
 msgid "_Save..."
 msgstr "_Mentés..."
 
+#. DEEfq
+#: sw/uiconfig/swriter/ui/labelformatpage.ui:181
+msgctxt "labelformatpage|extended_tip|save"
+msgid "Saves the current label or business card format."
+msgstr "Menti az aktuális címke- vagy névjegy-formátumot."
+
+#. CSycD
+#: sw/uiconfig/swriter/ui/labelformatpage.ui:199
+msgctxt "labelformatpage|extended_tip|hori"
+msgid "Displays the distance between the left edges of adjacent labels or business cards. If you are defining a custom format, enter a value here."
+msgstr "A szomszédos címkék vagy névjegyek bal sarkai közötti távolságot mutatja meg. Ha egyéni formátumot készít, írja ide az értéket."
+
+#. wKgmD
+#: sw/uiconfig/swriter/ui/labelformatpage.ui:216
+msgctxt "labelformatpage|extended_tip|vert"
+msgid "Displays the distance between the upper edge of a label or a business card and the upper edge of the label or the business card directly below. If you are defining a custom format, enter a value here."
+msgstr "Megjeleníti a címke vagy névjegy felső szélének és az alatta levő címke vagy névjegy felső szélének távolságát. Ha egyéni formátumot készít, írja ide az értéket."
+
+#. iSpdv
+#: sw/uiconfig/swriter/ui/labelformatpage.ui:233
+msgctxt "labelformatpage|extended_tip|width"
+msgid "Displays the width for the label or the business card. If you are defining a custom format, enter a value here."
+msgstr "Megjeleníti a címke vagy névjegy szélességét. Ha egyedi formátumot szeretne meghatározni, írjon be egy értéket ide."
+
+#. WGJFY
+#: sw/uiconfig/swriter/ui/labelformatpage.ui:250
+msgctxt "labelformatpage|extended_tip|height"
+msgid "Displays the height for the label or business card. If you are defining a custom format, enter a value here."
+msgstr "A címke vagy névjegy magasságát jeleníti meg. Egyéni formátum megadásához adjon meg itt egy értéket."
+
+#. tGisE
+#: sw/uiconfig/swriter/ui/labelformatpage.ui:267
+msgctxt "labelformatpage|extended_tip|left"
+msgid "Displays the distance from the left edge of the page to the left edge of the first label or business card. If you are defining a custom format, enter a value here."
+msgstr "Megjeleníti az oldal bal széle és az első címke vagy névjegy bal széle közti távolságot. Egyéni formátum megadásához adjon meg itt egy értéket."
+
+#. aMAV5
+#: sw/uiconfig/swriter/ui/labelformatpage.ui:284
+msgctxt "labelformatpage|extended_tip|top"
+msgid "Displays distance from the top edge of the page to the top of the first label or business card. If you are defining a custom format, enter a value here."
+msgstr "Megjeleníti az oldal teteje és az első címke vagy névjegy teteje közti távolságot. Ha egyéni formátumot ad meg, írjon ide egy értéket."
+
+#. tzdCa
+#: sw/uiconfig/swriter/ui/labelformatpage.ui:301
+msgctxt "labelformatpage|extended_tip|cols"
+msgid "Enter the number of labels or business cards that you want to span the width of the page."
+msgstr "Adja meg mennyi címke vagy névjegy töltse ki a lapot széltében."
+
+#. CeSdu
+#: sw/uiconfig/swriter/ui/labelformatpage.ui:318
+msgctxt "labelformatpage|extended_tip|rows"
+msgid "Enter the number of labels or business cards that you want to span the height of the page."
+msgstr "Adja meg, mennyi címke vagy névjegy töltse ki a lapot hosszában."
+
+#. ecGH2
+#: sw/uiconfig/swriter/ui/labelformatpage.ui:402
+msgctxt "labelformatpage|extended_tip|type"
+msgid "Enter or select a label type."
+msgstr "Írja be vagy válassza ki a címke típusát."
+
+#. Uhwgr
+#: sw/uiconfig/swriter/ui/labelformatpage.ui:420
+msgctxt "labelformatpage|extended_tip|LabelFormatPage"
+msgid "Set paper formatting options."
+msgstr "Adja meg a papír formátumának beállításait."
+
 #. E9bCh
 #: sw/uiconfig/swriter/ui/labeloptionspage.ui:47
 msgctxt "labeloptionspage|entirepage"
 msgid "_Entire page"
 msgstr "_Teljes oldal"
 
+#. wrdGY
+#: sw/uiconfig/swriter/ui/labeloptionspage.ui:57
+msgctxt "labeloptionspage|extended_tip|entirepage"
+msgid "Creates a full page of labels or business cards."
+msgstr ""
+
 #. cDFub
-#: sw/uiconfig/swriter/ui/labeloptionspage.ui:64
+#: sw/uiconfig/swriter/ui/labeloptionspage.ui:69
 msgctxt "labeloptionspage|singlelabel"
 msgid "_Single label"
 msgstr "_Egyetlen címke"
 
+#. 5Jtrz
+#: sw/uiconfig/swriter/ui/labeloptionspage.ui:80
+msgctxt "labeloptionspage|extended_tip|singlelabel"
+msgid "Prints a single label or business card on a page."
+msgstr ""
+
 #. MfBnH
-#: sw/uiconfig/swriter/ui/labeloptionspage.ui:93
+#: sw/uiconfig/swriter/ui/labeloptionspage.ui:103
 msgctxt "labeloptionspage|label4"
 msgid "Colu_mn"
 msgstr "_Oszlop"
 
+#. rg2vY
+#: sw/uiconfig/swriter/ui/labeloptionspage.ui:121
+msgctxt "labeloptionspage|extended_tip|cols"
+msgid "Enter the number of labels or business cards that you want to have in a row on your page."
+msgstr "Adja meg, mennyi címke vagy névjegy legyen a lapon egy sorban."
+
 #. 9xfPc
-#: sw/uiconfig/swriter/ui/labeloptionspage.ui:130
+#: sw/uiconfig/swriter/ui/labeloptionspage.ui:145
 msgctxt "labeloptionspage|label5"
 msgid "Ro_w"
 msgstr "_Sor"
 
+#. Td3uW
+#: sw/uiconfig/swriter/ui/labeloptionspage.ui:163
+msgctxt "labeloptionspage|extended_tip|rows"
+msgid "Enter the number of rows of labels or business cards that you want to have on your page."
+msgstr "Adja meg, hány sornyi címke vagy névjegy legyen egy oldalon."
+
 #. dPmJF
-#: sw/uiconfig/swriter/ui/labeloptionspage.ui:166
+#: sw/uiconfig/swriter/ui/labeloptionspage.ui:186
 msgctxt "labeloptionspage|synchronize"
 msgid "Synchroni_ze contents"
 msgstr "Tartalom _egyeztetése"
 
+#. ZNG3x
+#: sw/uiconfig/swriter/ui/labeloptionspage.ui:195
+msgctxt "labeloptionspage|extended_tip|synchronize"
+msgid "Allows you to edit a single label or business card and updates the contents of the remaining labels or business cards on the page when you click the Synchronize Labels button."
+msgstr ""
+
 #. 97jZe
-#: sw/uiconfig/swriter/ui/labeloptionspage.ui:188
+#: sw/uiconfig/swriter/ui/labeloptionspage.ui:213
 msgctxt "labeloptionspage|label1"
 msgid "Distribute"
 msgstr "Elosztás"
 
 #. f57xo
-#: sw/uiconfig/swriter/ui/labeloptionspage.ui:223
+#: sw/uiconfig/swriter/ui/labeloptionspage.ui:248
 msgctxt "labeloptionspage|setup"
 msgid "Setup..."
 msgstr "Beállítás..."
 
+#. eBLwT
+#: sw/uiconfig/swriter/ui/labeloptionspage.ui:255
+msgctxt "labeloptionspage|extended_tip|setup"
+msgid "Opens the Printer Setup dialog."
+msgstr ""
+
 #. ePWUe
-#: sw/uiconfig/swriter/ui/labeloptionspage.ui:239
+#: sw/uiconfig/swriter/ui/labeloptionspage.ui:269
 msgctxt "labeloptionspage|printername"
 msgid "Printer Name"
 msgstr "Nyomtató neve"
 
 #. GoP4B
-#: sw/uiconfig/swriter/ui/labeloptionspage.ui:257
+#: sw/uiconfig/swriter/ui/labeloptionspage.ui:287
 msgctxt "labeloptionspage|label2"
 msgid "Printer"
 msgstr "Nyomtató"
+
+#. BxCVt
+#: sw/uiconfig/swriter/ui/labeloptionspage.ui:302
+msgctxt "labeloptionspage|extended_tip|LabelOptionsPage"
+msgid "Sets additional options for your labels or business cards, including text synchronization and printer settings."
+msgstr "További beállításokat ad meg a címkékhez és a névjegyekhez (például: tartalom egyeztetése, nyomtatási beállítások stb.)."
 
 #. PQHNf
 #: sw/uiconfig/swriter/ui/linenumbering.ui:27
@@ -16481,56 +16932,92 @@ msgctxt "navigatorpanel|edit|tooltip_text"
 msgid "Edit"
 msgstr "Szerkesztés"
 
+#. phQFB
+#: sw/uiconfig/swriter/ui/navigatorpanel.ui:684
+msgctxt "navigatorpanel|extended_tip|edit"
+msgid "Edit the contents of the component selected in the Navigator list. If the selection is a file, the file is opened for editing. If the selection is an index, the Index dialog is opened."
+msgstr ""
+
 #. svmCG
-#: sw/uiconfig/swriter/ui/navigatorpanel.ui:692
+#: sw/uiconfig/swriter/ui/navigatorpanel.ui:697
 msgctxt "navigatorpanel|update|tooltip_text"
 msgid "Update"
 msgstr "Frissítés"
 
+#. FEEGn
+#: sw/uiconfig/swriter/ui/navigatorpanel.ui:701
+msgctxt "navigatorpanel|extended_tip|update"
+msgid "Click and choose the contents that you want to update."
+msgstr "Kattintson, és válassza ki a frissíteni kívánt tartalmat."
+
 #. tu94A
-#: sw/uiconfig/swriter/ui/navigatorpanel.ui:704
+#: sw/uiconfig/swriter/ui/navigatorpanel.ui:714
 msgctxt "navigatorpanel|insert|tooltip_text"
 msgid "Insert"
 msgstr "Beszúrás"
 
+#. 9kmNw
+#: sw/uiconfig/swriter/ui/navigatorpanel.ui:718
+msgctxt "navigatorpanel|extended_tip|insert"
+msgid "Inserts a file, an index, or a new document into the master document."
+msgstr "Egy fájlt, jegyzéket vagy egy új dokumentumot szúr be a fődokumentumba."
+
 #. MvgHM
-#: sw/uiconfig/swriter/ui/navigatorpanel.ui:726
+#: sw/uiconfig/swriter/ui/navigatorpanel.ui:741
 msgctxt "navigatorpanel|save|tooltip_text"
 msgid "Save Contents as well"
 msgstr "Tartalom mentése is"
 
+#. KBDdA
+#: sw/uiconfig/swriter/ui/navigatorpanel.ui:745
+msgctxt "navigatorpanel|extended_tip|save"
+msgid "Saves a copy of the contents of the linked files in the master document. This ensures that the current contents are available when the linked files cannot be accessed."
+msgstr ""
+
 #. yEETn
-#: sw/uiconfig/swriter/ui/navigatorpanel.ui:748
+#: sw/uiconfig/swriter/ui/navigatorpanel.ui:768
 msgctxt "navigatorpanel|moveup|tooltip_text"
 msgid "Move Up"
 msgstr "Mozgatás felfelé"
 
+#. rEFCS
+#: sw/uiconfig/swriter/ui/navigatorpanel.ui:772
+msgctxt "navigatorpanel|extended_tip|moveup"
+msgid "Moves the selection up one position in the Navigator list."
+msgstr ""
+
 #. KN3mN
-#: sw/uiconfig/swriter/ui/navigatorpanel.ui:760
+#: sw/uiconfig/swriter/ui/navigatorpanel.ui:785
 msgctxt "navigatorpanel|movedown|tooltip_text"
 msgid "Move Down"
 msgstr "Mozgatás lefelé"
 
+#. Cs7D9
+#: sw/uiconfig/swriter/ui/navigatorpanel.ui:789
+msgctxt "navigatorpanel|extended_tip|movedown"
+msgid "Moves the selection down one position in the Navigator list."
+msgstr ""
+
 #. 3RwmV
-#: sw/uiconfig/swriter/ui/navigatorpanel.ui:858
+#: sw/uiconfig/swriter/ui/navigatorpanel.ui:888
 msgctxt "navigatorpanel|STR_UPDATE_SEL"
 msgid "Selection"
 msgstr ""
 
 #. v2iCL
-#: sw/uiconfig/swriter/ui/navigatorpanel.ui:866
+#: sw/uiconfig/swriter/ui/navigatorpanel.ui:896
 msgctxt "navigatorpanel|STR_UPDATE_INDEX"
 msgid "Indexes"
 msgstr ""
 
 #. fvFtM
-#: sw/uiconfig/swriter/ui/navigatorpanel.ui:874
+#: sw/uiconfig/swriter/ui/navigatorpanel.ui:904
 msgctxt "navigatorpanel|STR_UPDATE_SEL"
 msgid "Links"
 msgstr ""
 
 #. Njw6i
-#: sw/uiconfig/swriter/ui/navigatorpanel.ui:882
+#: sw/uiconfig/swriter/ui/navigatorpanel.ui:912
 msgctxt "navigatorpanel|STR_UPDATE_ALL"
 msgid "All"
 msgstr ""
@@ -19448,38 +19935,50 @@ msgctxt "outlinenumberingpage|label7"
 msgid "Separator"
 msgstr "Elválasztó"
 
+#. DC268
+#: sw/uiconfig/swriter/ui/outlinepositionpage.ui:93
+msgctxt "outlinepositionpage|extended_tip|levellb"
+msgid "Select the level(s) that you want to modify."
+msgstr ""
+
 #. aBYaM
-#: sw/uiconfig/swriter/ui/outlinepositionpage.ui:101
+#: sw/uiconfig/swriter/ui/outlinepositionpage.ui:106
 msgctxt "outlinepositionpage|1"
 msgid "Level"
 msgstr "Szint"
 
 #. uiBLi
-#: sw/uiconfig/swriter/ui/outlinepositionpage.ui:140
+#: sw/uiconfig/swriter/ui/outlinepositionpage.ui:145
 msgctxt "outlinepositionpage|numalign"
 msgid "Numbering alignment:"
 msgstr "Számozás igazítása:"
 
 #. 7C7M7
-#: sw/uiconfig/swriter/ui/outlinepositionpage.ui:156
+#: sw/uiconfig/swriter/ui/outlinepositionpage.ui:161
 msgctxt "outlinepositionpage|liststore1"
 msgid "Left"
 msgstr "Balra"
 
 #. W4eDj
-#: sw/uiconfig/swriter/ui/outlinepositionpage.ui:157
+#: sw/uiconfig/swriter/ui/outlinepositionpage.ui:162
 msgctxt "outlinepositionpage|liststore1"
 msgid "Centered"
 msgstr "Középre"
 
 #. gRaNm
-#: sw/uiconfig/swriter/ui/outlinepositionpage.ui:158
+#: sw/uiconfig/swriter/ui/outlinepositionpage.ui:163
 msgctxt "outlinepositionpage|liststore1"
 msgid "Right"
 msgstr "Jobbra"
 
+#. CPWPU
+#: sw/uiconfig/swriter/ui/outlinepositionpage.ui:167
+msgctxt "outlinepositionpage|extended_tip|numalignlb"
+msgid "Set the alignment of the numbering symbols. Select \"Left\" to align the numbering symbol to start directly at the \"Aligned at\" position. Select \"Right\" to align the symbol to end directly before the \"Aligned at\" position. Select \"Centered\" to center the symbol around the \"Aligned at\" position."
+msgstr "A számozásjelek igazításának beállítása. Ha a számozásjelet közvetlenül az „Igazítva” pozícióhoz kívánja igazítani, válassza a „Bal” beállítást. Ha a számozásjelet közvetlenül az „Igazítva” pozíció után kívánja igazítani, válassza a „Jobb” beállítást. Ha a jelet az „Igazítás” pozíció köré kívánja igazítani, válassza a „Középre igazított” beállítást."
+
 #. DCbYC
-#: sw/uiconfig/swriter/ui/outlinepositionpage.ui:170
+#: sw/uiconfig/swriter/ui/outlinepositionpage.ui:180
 msgctxt "outlinepositionpage|numdist"
 msgid ""
 "Minimum space between\n"
@@ -19489,91 +19988,127 @@ msgstr ""
 "közötti minimális térköz"
 
 #. JdjtA
-#: sw/uiconfig/swriter/ui/outlinepositionpage.ui:199
+#: sw/uiconfig/swriter/ui/outlinepositionpage.ui:209
 msgctxt "outlinepositionpage|numberingwidth"
 msgid "Width of numbering:"
 msgstr "A számozás szélessége:"
 
 #. aZwtj
-#: sw/uiconfig/swriter/ui/outlinepositionpage.ui:225
+#: sw/uiconfig/swriter/ui/outlinepositionpage.ui:235
 msgctxt "outlinepositionpage|relative"
 msgid "Relative"
 msgstr "Viszonylagos"
 
 #. jBvmB
-#: sw/uiconfig/swriter/ui/outlinepositionpage.ui:242
+#: sw/uiconfig/swriter/ui/outlinepositionpage.ui:252
 msgctxt "outlinepositionpage|indent"
 msgid "Indent:"
 msgstr "Behúzás:"
 
 #. GFsnA
-#: sw/uiconfig/swriter/ui/outlinepositionpage.ui:270
+#: sw/uiconfig/swriter/ui/outlinepositionpage.ui:280
 msgctxt "outlinepositionpage|indentat"
 msgid "Indent at:"
 msgstr "Behúzás:"
 
+#. VgG4o
+#: sw/uiconfig/swriter/ui/outlinepositionpage.ui:300
+msgctxt "outlinepositionpage|extended_tip|indentatmf"
+msgid "Enter the distance from the left page margin to the start of all lines in the numbered paragraph that follow the first line."
+msgstr "Írja be a távolságot a bal oldali margótól ahonnan a számozott bekezdés első sorát követő sorai indulnak."
+
 #. 6ZE4k
-#: sw/uiconfig/swriter/ui/outlinepositionpage.ui:298
+#: sw/uiconfig/swriter/ui/outlinepositionpage.ui:313
 msgctxt "outlinepositionpage|num2align"
 msgid "Numbering alignment:"
 msgstr "Számozás igazítása:"
 
+#. rhrGW
+#: sw/uiconfig/swriter/ui/outlinepositionpage.ui:330
+msgctxt "outlinepositionpage|extended_tip|num2alignlb"
+msgid "Set the alignment of the numbering symbols. Select \"Left\" to align the numbering symbol to start directly at the \"Aligned at\" position. Select \"Right\" to align the symbol to end directly before the \"Aligned at\" position. Select \"Centered\" to center the symbol around the \"Aligned at\" position."
+msgstr "A számozásjelek igazításának beállítása. Ha a számozásjelet közvetlenül az „Igazítva” pozícióhoz kívánja igazítani, válassza a „Bal” beállítást. Ha a számozásjelet közvetlenül az „Igazítva” pozíció után kívánja igazítani, válassza a „Jobb” beállítást. Ha a jelet az „Igazítás” pozíció köré kívánja igazítani, válassza a „Középre igazított” beállítást."
+
 #. wnCMF
-#: sw/uiconfig/swriter/ui/outlinepositionpage.ui:323
+#: sw/uiconfig/swriter/ui/outlinepositionpage.ui:343
 msgctxt "outlinepositionpage|alignedat"
 msgid "Aligned at:"
 msgstr "Igazítva:"
 
+#. kWMhW
+#: sw/uiconfig/swriter/ui/outlinepositionpage.ui:363
+msgctxt "outlinepositionpage|extended_tip|alignedatmf"
+msgid "Enter the distance from the left page margin at which the numbering symbol will be aligned."
+msgstr "Adja meg a bal oldali margótól azt a távolságot, amelyre a számozásszimbólum igazodjon."
+
 #. 3EGPa
-#: sw/uiconfig/swriter/ui/outlinepositionpage.ui:351
+#: sw/uiconfig/swriter/ui/outlinepositionpage.ui:376
 msgctxt "outlinepositionpage|at"
 msgid "Tab stop at:"
 msgstr "Tabulátor:"
 
+#. FVvCZ
+#: sw/uiconfig/swriter/ui/outlinepositionpage.ui:396
+msgctxt "outlinepositionpage|extended_tip|atmf"
+msgid "If you select a tab stop to follow the numbering, you can enter a non-negative value as the tab stop position."
+msgstr "Ha a számozást tabulátor követi, akkor nem negatív értéket adhat meg a tabulátorpozíció számára."
+
 #. AtJnm
-#: sw/uiconfig/swriter/ui/outlinepositionpage.ui:381
+#: sw/uiconfig/swriter/ui/outlinepositionpage.ui:411
 msgctxt "outlinepositionpage|liststore2"
 msgid "Tab stop"
 msgstr "Tabulátor"
 
 #. w6UaR
-#: sw/uiconfig/swriter/ui/outlinepositionpage.ui:382
+#: sw/uiconfig/swriter/ui/outlinepositionpage.ui:412
 msgctxt "outlinepositionpage|liststore2"
 msgid "Space"
 msgstr "Szóköz"
 
 #. E5DdF
-#: sw/uiconfig/swriter/ui/outlinepositionpage.ui:383
+#: sw/uiconfig/swriter/ui/outlinepositionpage.ui:413
 msgctxt "outlinepositionpage|liststore2"
 msgid "Nothing"
 msgstr "Semmi"
 
 #. p524j
-#: sw/uiconfig/swriter/ui/outlinepositionpage.ui:384
+#: sw/uiconfig/swriter/ui/outlinepositionpage.ui:414
 msgctxt "outlinepositionpage|liststore2"
 msgid "New Line"
 msgstr "Új sor"
 
+#. AacBT
+#: sw/uiconfig/swriter/ui/outlinepositionpage.ui:418
+msgctxt "outlinepositionpage|extended_tip|numfollowedbylb"
+msgid "Enter the distance from the left page margin at which the numbering symbol will be aligned."
+msgstr "Adja meg a bal oldali margótól azt a távolságot, amelyre a számozásszimbólum igazodjon."
+
 #. V2jvn
-#: sw/uiconfig/swriter/ui/outlinepositionpage.ui:396
+#: sw/uiconfig/swriter/ui/outlinepositionpage.ui:431
 msgctxt "outlinepositionpage|numfollowedby"
 msgid "Numbering followed by:"
 msgstr "Számozás után:"
 
 #. 2AXGD
-#: sw/uiconfig/swriter/ui/outlinepositionpage.ui:408
+#: sw/uiconfig/swriter/ui/outlinepositionpage.ui:443
 msgctxt "outlinepositionpage|standard"
 msgid "Default"
 msgstr "Alapértelmezett"
 
+#. 8fEFG
+#: sw/uiconfig/swriter/ui/outlinepositionpage.ui:453
+msgctxt "outlinepositionpage|extended_tip|standard"
+msgid "Resets the indent and the spacing values to the default values."
+msgstr "Visszaállítja a behúzásra és térközre vonatkozó beállításokat az alapértelmezett értékekre."
+
 #. bLuru
-#: sw/uiconfig/swriter/ui/outlinepositionpage.ui:436
+#: sw/uiconfig/swriter/ui/outlinepositionpage.ui:476
 msgctxt "outlinepositionpage|label10"
 msgid "Position and Spacing"
 msgstr "Pozíció és térköz"
 
 #. ogECa
-#: sw/uiconfig/swriter/ui/outlinepositionpage.ui:485
+#: sw/uiconfig/swriter/ui/outlinepositionpage.ui:525
 msgctxt "outlinepositionpage|label17"
 msgid "Preview"
 msgstr ""
@@ -19987,7 +20522,7 @@ msgid "Right"
 msgstr "Jobb"
 
 #. pCkgP
-#: sw/uiconfig/swriter/ui/pagestylespanel.ui:249
+#: sw/uiconfig/swriter/ui/pagestylespanel.ui:251
 msgctxt "pagestylespanel|customlabel"
 msgid "Custom"
 msgstr "Egyéni"
@@ -20814,6 +21349,12 @@ msgctxt "privateuserpage|label1"
 msgid "Private Data"
 msgstr "Személyes adatok"
 
+#. TYEJf
+#: sw/uiconfig/swriter/ui/privateuserpage.ui:597
+msgctxt "privateuserpage|extended_tip|PrivateUserPage"
+msgid "Contains personal contact information for business cards. Business card layouts are selected on the Business Cards tab."
+msgstr " Személyes kapcsolatinformációkat tartalmaz. A névjegy-elrendezések a Névjegyek lapon választhatók ki."
+
 #. re87U
 #: sw/uiconfig/swriter/ui/querycontinuebegindialog.ui:7
 msgctxt "querycontinuebegindialog|QueryContinueBeginDialog"
@@ -21155,22 +21696,40 @@ msgid "Save Label Format"
 msgstr "Címke formátumának mentése"
 
 #. PkJVz
-#: sw/uiconfig/swriter/ui/savelabeldialog.ui:102
+#: sw/uiconfig/swriter/ui/savelabeldialog.ui:99
 msgctxt "savelabeldialog|label2"
 msgid "Brand"
 msgstr "Márka"
 
 #. AwGvc
-#: sw/uiconfig/swriter/ui/savelabeldialog.ui:115
+#: sw/uiconfig/swriter/ui/savelabeldialog.ui:112
 msgctxt "savelabeldialog|label3"
 msgid "T_ype"
 msgstr "_Típus"
 
+#. KX58T
+#: sw/uiconfig/swriter/ui/savelabeldialog.ui:129
+msgctxt "savelabeldialog|extended_tip|type"
+msgid "Enter or select a label type."
+msgstr "Írja be vagy válassza ki a címke típusát."
+
+#. TZRxC
+#: sw/uiconfig/swriter/ui/savelabeldialog.ui:152
+msgctxt "savelabeldialog|extended_tip|brand"
+msgid "Enter or select the desired brand."
+msgstr "Adja meg vagy válassza ki a használni kívánt papír márkáját."
+
 #. vtbE3
-#: sw/uiconfig/swriter/ui/savelabeldialog.ui:162
+#: sw/uiconfig/swriter/ui/savelabeldialog.ui:169
 msgctxt "savelabeldialog|label1"
 msgid "Options"
 msgstr "Beállítások"
+
+#. SfeLM
+#: sw/uiconfig/swriter/ui/savelabeldialog.ui:194
+msgctxt "savelabeldialog|extended_tip|SaveLabelDialog"
+msgid "Enter or select the desired brand."
+msgstr "Adja meg vagy válassza ki a használni kívánt papír márkáját."
 
 #. J9Lnz
 #: sw/uiconfig/swriter/ui/savemonitordialog.ui:8
@@ -21903,6 +22462,12 @@ msgstr "Sorok száma:"
 msgctxt "statisticsinfopage|update"
 msgid "Update"
 msgstr "Frissítés"
+
+#. LVWDd
+#: sw/uiconfig/swriter/ui/statisticsinfopage.ui:255
+msgctxt "statisticsinfopage|extended_tip|StatisticsInfoPage"
+msgid "Displays statistics for the current file."
+msgstr ""
 
 #. M4Ub9
 #: sw/uiconfig/swriter/ui/stringinput.ui:73
@@ -22679,7 +23244,7 @@ msgid "Grid color:"
 msgstr "Rács színe:"
 
 #. SxFyQ
-#: sw/uiconfig/swriter/ui/textgridpage.ui:526
+#: sw/uiconfig/swriter/ui/textgridpage.ui:527
 msgctxt "textgridpage|labelFL_DISPLAY"
 msgid "Grid Display"
 msgstr "Rács megjelenése"
