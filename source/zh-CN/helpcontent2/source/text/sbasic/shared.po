@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2020-08-17 12:39+0200\n"
+"POT-Creation-Date: 2020-09-07 17:18+0200\n"
 "PO-Revision-Date: 2019-07-10 04:02+0000\n"
 "Last-Translator: Dian LI <xslidian@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -609,6 +609,15 @@ msgctxt ""
 "help.text"
 msgid "<variable id=\"functexample\">Example:</variable>"
 msgstr "<variable id=\"functexample\">示例: </variable>"
+
+#. TV2YL
+#: 00000003.xhp
+msgctxt ""
+"00000003.xhp\n"
+"par_id161599082457466\n"
+"help.text"
+msgid "<variable id=\"stringfunctions\"><link href=\"text/sbasic/shared/03120300.xhp\" name=\"string functions\">String functions</link></variable>"
+msgstr ""
 
 #. CGSvh
 #: 00000003.xhp
@@ -2419,14 +2428,23 @@ msgctxt ""
 msgid "String Variables"
 msgstr "字符串变量"
 
-#. ft56J
+#. zes9e
 #: 01020100.xhp
 msgctxt ""
 "01020100.xhp\n"
 "par_id3151393\n"
 "help.text"
-msgid "String variables can hold character strings with up to 65,535 characters. Each character is stored as the corresponding Unicode value. String variables are suitable for word processing within programs and for temporary storage of any non-printable character up to a maximum length of 64 Kbytes. The memory required for storing string variables depends on the number of characters in the variable. The type-declaration character is \"$\"."
-msgstr "字符串变量可以保留最长达 65,535 个字符的字符串。每个字符都存储为相应的 Unicode 值。字符串变量适合在程序内进行字处理，也可以用于临时存储最长达 64 KB 的不可打印字符。存储字符串变量所需的内存量取决于此变量中含有的字符数。其类型声明字符是「$」。"
+msgid "String variables can hold character strings with up to 2,147,483,648 characters. Each character is stored as the corresponding Unicode value. String variables are suitable for word processing within programs and for temporary storage of any non-printable character up to a maximum length of 2 Gbytes. The memory required for storing string variables depends on the number of characters in the variable. The type-declaration character is \"$\"."
+msgstr ""
+
+#. RBcLt
+#: 01020100.xhp
+msgctxt ""
+"01020100.xhp\n"
+"par_id381599081637549\n"
+"help.text"
+msgid "In BASIC String functions, the first character of the string has index 1."
+msgstr ""
 
 #. wDbuF
 #: 01020100.xhp
@@ -16549,86 +16567,41 @@ msgctxt ""
 msgid "The following functions and statements set or return the system date and time."
 msgstr "以下函数和语句用于设置或返回系统日期与时间。"
 
-#. YWfEf
+#. wJjQV
 #: 03030301.xhp
 msgctxt ""
 "03030301.xhp\n"
 "tit\n"
 "help.text"
-msgid "Date Statement"
-msgstr "Date 语句"
+msgid "Date Function"
+msgstr ""
 
-#. xpFBx
+#. HEEFx
 #: 03030301.xhp
 msgctxt ""
 "03030301.xhp\n"
 "bm_id3156027\n"
 "help.text"
-msgid "<bookmark_value>Date statement</bookmark_value>"
-msgstr "<bookmark_value>Date 语句</bookmark_value>"
+msgid "<bookmark_value>Date function</bookmark_value>"
+msgstr ""
 
-#. vDWSN
+#. u9AkG
 #: 03030301.xhp
 msgctxt ""
 "03030301.xhp\n"
 "hd_id3156027\n"
 "help.text"
-msgid "<link href=\"text/sbasic/shared/03030301.xhp\" name=\"Date Statement\">Date Statement</link>"
-msgstr "<link href=\"text/sbasic/shared/03030301.xhp\" name=\"Date Statement\">Date 语句</link>"
+msgid "<link href=\"text/sbasic/shared/03030301.xhp\" name=\"Date Function\">Date Function</link>"
+msgstr ""
 
-#. GMwEL
+#. AaA3G
 #: 03030301.xhp
 msgctxt ""
 "03030301.xhp\n"
 "par_id3147291\n"
 "help.text"
-msgid "Returns the current system date as a string, or resets the date. The date format depends on your local system settings."
-msgstr "以字符串形式返回当前的系统日期，或者重置系统日期。日期的格式取决于本地系统的设置。"
-
-#. CUY3q
-#: 03030301.xhp
-msgctxt ""
-"03030301.xhp\n"
-"hd_id3148686\n"
-"help.text"
-msgid "Syntax:"
-msgstr "语法:"
-
-#. QoCJW
-#: 03030301.xhp
-msgctxt ""
-"03030301.xhp\n"
-"par_id3146794\n"
-"help.text"
-msgid "Date ; Date = Text As String"
-msgstr "Date ; Date = Text As String"
-
-#. 8QFeW
-#: 03030301.xhp
-msgctxt ""
-"03030301.xhp\n"
-"hd_id3154347\n"
-"help.text"
-msgid "Parameters:"
-msgstr "参数:"
-
-#. 57eNx
-#: 03030301.xhp
-msgctxt ""
-"03030301.xhp\n"
-"par_id3145069\n"
-"help.text"
-msgid "<emph>Text:</emph> Only required in order to reset the system date. In this case, the string expression must correspond to the date format defined in your local settings."
-msgstr "「<emph>Text</emph>」: 仅在重置系统日期时需要。在这种情况下，字符串表达式必须符合本地设置中定义的日期格式。"
-
-#. waEYM
-#: 03030301.xhp
-msgctxt ""
-"03030301.xhp\n"
-"hd_id3150793\n"
-"help.text"
-msgid "Example:"
-msgstr "示例:"
+msgid "Returns the current system date as a string, or date variant."
+msgstr ""
 
 #. BUc3C
 #: 03030301.xhp
@@ -16639,32 +16612,32 @@ msgctxt ""
 msgid "MsgBox \"The date is \" & Date"
 msgstr "MsgBox \"日期为 \" & Date"
 
-#. CCirC
+#. W99bB
 #: 03030302.xhp
 msgctxt ""
 "03030302.xhp\n"
 "tit\n"
 "help.text"
-msgid "Time Statement"
-msgstr "Time 语句"
+msgid "Time Function"
+msgstr ""
 
-#. Ypbnk
+#. peCLU
 #: 03030302.xhp
 msgctxt ""
 "03030302.xhp\n"
 "bm_id3145090\n"
 "help.text"
-msgid "<bookmark_value>Time statement</bookmark_value>"
-msgstr "<bookmark_value>Time 语句</bookmark_value>"
+msgid "<bookmark_value>Time function</bookmark_value>"
+msgstr ""
 
-#. xLpG8
+#. tBoRS
 #: 03030302.xhp
 msgctxt ""
 "03030302.xhp\n"
 "hd_id3145090\n"
 "help.text"
-msgid "<link href=\"text/sbasic/shared/03030302.xhp\">Time Statement</link>"
-msgstr "<link href=\"text/sbasic/shared/03030302.xhp\">Time 语句</link>"
+msgid "<link href=\"text/sbasic/shared/03030302.xhp\" name=\"Time Function\">Time Function</link>"
+msgstr ""
 
 #. FHKSk
 #: 03030302.xhp
@@ -16674,42 +16647,6 @@ msgctxt ""
 "help.text"
 msgid "This function returns the current system time as a string in the format \"HH:MM:SS\"."
 msgstr "此函数以 \"HH:MM:SS\" 格式的字符串返回当前的系统时间。"
-
-#. G29nS
-#: 03030302.xhp
-msgctxt ""
-"03030302.xhp\n"
-"hd_id3154346\n"
-"help.text"
-msgid "Syntax:"
-msgstr "语法:"
-
-#. rG5UZ
-#: 03030302.xhp
-msgctxt ""
-"03030302.xhp\n"
-"hd_id3150792\n"
-"help.text"
-msgid "Parameters:"
-msgstr "参数:"
-
-#. 6LxaE
-#: 03030302.xhp
-msgctxt ""
-"03030302.xhp\n"
-"par_id3149656\n"
-"help.text"
-msgid "<emph>Text:</emph> Any string expression that specifies the new time in the format \"HH:MM:SS\"."
-msgstr "「<emph>Text</emph>」:以 \"HH:MM:SS\" 格式指定新时间的任意字符串表达式。"
-
-#. psu4B
-#: 03030302.xhp
-msgctxt ""
-"03030302.xhp\n"
-"hd_id3145173\n"
-"help.text"
-msgid "Example:"
-msgstr "示例:"
 
 #. Aguz5
 #: 03030302.xhp
@@ -22291,15 +22228,6 @@ msgctxt ""
 msgid "Returns one of two possible function results, depending on the logical value of the evaluated expression."
 msgstr "返回两个可能的函数结果之一，具体是哪一个结果取决于对表达式进行求值后得到的逻辑值。"
 
-#. DMbgx
-#: 03090103.xhp
-msgctxt ""
-"03090103.xhp\n"
-"hd_id3159413\n"
-"help.text"
-msgid "Syntax:"
-msgstr "语法:"
-
 #. dDDFQ
 #: 03090103.xhp
 msgctxt ""
@@ -22308,15 +22236,6 @@ msgctxt ""
 "help.text"
 msgid "IIf (Expression, ExpressionTrue, ExpressionFalse)"
 msgstr "IIf (Expression, ExpressionTrue, ExpressionFalse)"
-
-#. Jr9BS
-#: 03090103.xhp
-msgctxt ""
-"03090103.xhp\n"
-"hd_id3150541\n"
-"help.text"
-msgid "Parameters:"
-msgstr "参数:"
 
 #. TXHsN
 #: 03090103.xhp
@@ -22335,6 +22254,33 @@ msgctxt ""
 "help.text"
 msgid "<emph>ExpressionTrue, ExpressionFalse:</emph> Any expression, one of which will be returned as the function result, depending on the logical evaluation."
 msgstr "「<emph>ExpressionTrue、ExpressionFalse</emph>」: 任意表达式，其中的一个将作为函数结果返回，具体是哪一个取决于逻辑求值的结果。"
+
+#. iEQga
+#: 03090103.xhp
+msgctxt ""
+"03090103.xhp\n"
+"par_id541598638231139\n"
+"help.text"
+msgid "IIf evaluates both <literal>ExpressionTrue</literal> and <literal>ExpressionFalse</literal> even if it returns only one of them. If one of the expressions results in error, the function returns the error. For example, do not use IIF to bypass a possible division by zero result."
+msgstr ""
+
+#. vGAma
+#: 03090103.xhp
+msgctxt ""
+"03090103.xhp\n"
+"par_id1001598638460925\n"
+"help.text"
+msgid "REM Returns the maximum of 3 values"
+msgstr ""
+
+#. 9JAJ5
+#: 03090103.xhp
+msgctxt ""
+"03090103.xhp\n"
+"par_id161598638840133\n"
+"help.text"
+msgid "REM Bad usage of function IIf"
+msgstr ""
 
 #. dNxFE
 #: 03090103.xhp
@@ -31453,14 +31399,14 @@ msgctxt ""
 msgid "String"
 msgstr "字符串"
 
-#. gunCB
+#. nYDuW
 #: 03120201.xhp
 msgctxt ""
 "03120201.xhp\n"
 "par_id3143228\n"
 "help.text"
-msgid "<emph>n:</emph> Numeric expression that defines the number of spaces in the string. The maximum allowed value of <emph>n</emph> is 65535."
-msgstr "「<emph>n</emph>」: 数字表达式，定义字符串中空格的数量。允许的最大「<emph>n</emph>」数值为 65535。"
+msgid "<emph>n:</emph> Numeric expression that defines the number of spaces in the string. The maximum allowed value of <emph>n</emph> is 2,147,483,648."
+msgstr ""
 
 #. xfAcE
 #: 03120201.xhp
@@ -31507,15 +31453,6 @@ msgctxt ""
 msgid "Creates a string according to the specified character, or the first character of a string expression that is passed to the function."
 msgstr "根据指定的字符或传送给函数的字符串表达式的第一个字符创建一个字符串。"
 
-#. YEQWe
-#: 03120202.xhp
-msgctxt ""
-"03120202.xhp\n"
-"hd_id3149516\n"
-"help.text"
-msgid "Syntax:"
-msgstr "语法:"
-
 #. EVKUs
 #: 03120202.xhp
 msgctxt ""
@@ -31524,15 +31461,6 @@ msgctxt ""
 "help.text"
 msgid "String (n As Long, {expression As Integer | character As String})"
 msgstr "String (n As Integer, {expression As Integer | character As String})"
-
-#. Uaxak
-#: 03120202.xhp
-msgctxt ""
-"03120202.xhp\n"
-"hd_id3143270\n"
-"help.text"
-msgid "Return value:"
-msgstr "返回值:"
 
 #. GfqGg
 #: 03120202.xhp
@@ -31543,23 +31471,14 @@ msgctxt ""
 msgid "String"
 msgstr "字符串"
 
-#. 5gnCP
-#: 03120202.xhp
-msgctxt ""
-"03120202.xhp\n"
-"hd_id3154923\n"
-"help.text"
-msgid "Parameters:"
-msgstr "参数:"
-
-#. xvDy5
+#. FTqT4
 #: 03120202.xhp
 msgctxt ""
 "03120202.xhp\n"
 "par_id3154347\n"
 "help.text"
-msgid "<emph>n:</emph> Numeric expression that indicates the number of characters to return in the string. The maximum allowed value of n is 65535."
-msgstr "「<emph>n</emph>」: 数字表达式，用于指示返回字符串中的字符数。"
+msgid "<emph>n:</emph> Numeric expression that indicates the number of characters to return in the string. The maximum allowed value of n is 2,147,483,648."
+msgstr ""
 
 #. uARjD
 #: 03120202.xhp
@@ -31578,15 +31497,6 @@ msgctxt ""
 "help.text"
 msgid "<emph>Character:</emph> Any single character used to build the return string, or any string of which only the first character will be used."
 msgstr "「<emph>Character</emph>」: 建立返回字符串要用到的任意单个字符，或者是要用到第一个字符的任意字符串。"
-
-#. iApAt
-#: 03120202.xhp
-msgctxt ""
-"03120202.xhp\n"
-"hd_id3152920\n"
-"help.text"
-msgid "Example:"
-msgstr "示例:"
 
 #. avFC9
 #: 03120300.xhp
@@ -31660,15 +31570,6 @@ msgctxt ""
 msgid "Converts a number to a string, and then formats it according to the format that you specify."
 msgstr "将数字转换成字符串，然后根据指定的格式对其进行格式化。"
 
-#. ESujY
-#: 03120301.xhp
-msgctxt ""
-"03120301.xhp\n"
-"hd_id3145090\n"
-"help.text"
-msgid "Syntax:"
-msgstr "语法:"
-
 #. wp4Ae
 #: 03120301.xhp
 msgctxt ""
@@ -31678,15 +31579,6 @@ msgctxt ""
 msgid "Format (Number [, Format As String])"
 msgstr "Format (Number [, Format As String])"
 
-#. SrkYm
-#: 03120301.xhp
-msgctxt ""
-"03120301.xhp\n"
-"hd_id3149178\n"
-"help.text"
-msgid "Return value:"
-msgstr "返回值:"
-
 #. gddga
 #: 03120301.xhp
 msgctxt ""
@@ -31695,15 +31587,6 @@ msgctxt ""
 "help.text"
 msgid "String"
 msgstr "字符串"
-
-#. WGjGQ
-#: 03120301.xhp
-msgctxt ""
-"03120301.xhp\n"
-"hd_id3159176\n"
-"help.text"
-msgid "Parameters:"
-msgstr "参数:"
 
 #. 6Dyxg
 #: 03120301.xhp
@@ -31984,15 +31867,6 @@ msgctxt ""
 msgid "A format code can be divided into three sections that are separated by semicolons. The first part defines the format for positive values, the second part for negative values, and the third part for zero. If you only specify one format code, it applies to all numbers."
 msgstr "格式代码由三部组合成，各部分之间用分号分隔。三个部分依次定义正数、负数和零的格式。如果仅指定一种格式代码，则所有数字都将采用这种代码。"
 
-#. GXmDT
-#: 03120301.xhp
-msgctxt ""
-"03120301.xhp\n"
-"hd_id3149019\n"
-"help.text"
-msgid "Example:"
-msgstr "示例:"
-
 #. ZsNPC
 #: 03120301.xhp
 msgctxt ""
@@ -32146,15 +32020,6 @@ msgctxt ""
 msgid "Returns the number of leftmost characters that you specify of a string expression."
 msgstr "返回指定字符串表达式中的前若干个字符。"
 
-#. UF45c
-#: 03120303.xhp
-msgctxt ""
-"03120303.xhp\n"
-"hd_id3156153\n"
-"help.text"
-msgid "Syntax:"
-msgstr "语法:"
-
 #. H2Ftq
 #: 03120303.xhp
 msgctxt ""
@@ -32163,15 +32028,6 @@ msgctxt ""
 "help.text"
 msgid "Left (Text As String, n As Long)"
 msgstr "Left (Text As String, n As Integer)"
-
-#. 48Gmp
-#: 03120303.xhp
-msgctxt ""
-"03120303.xhp\n"
-"hd_id3153824\n"
-"help.text"
-msgid "Return value:"
-msgstr "返回值:"
 
 #. to74m
 #: 03120303.xhp
@@ -32182,15 +32038,6 @@ msgctxt ""
 msgid "String"
 msgstr "字符串"
 
-#. ZJXfA
-#: 03120303.xhp
-msgctxt ""
-"03120303.xhp\n"
-"hd_id3148946\n"
-"help.text"
-msgid "Parameters:"
-msgstr "参数:"
-
 #. hRWZH
 #: 03120303.xhp
 msgctxt ""
@@ -32200,14 +32047,14 @@ msgctxt ""
 msgid "<emph>Text:</emph> Any string expression that you want to return the leftmost characters from."
 msgstr "「<emph>Text</emph>」:要返回最左边字符的字符串表达式。"
 
-#. jVzCK
+#. BPXpD
 #: 03120303.xhp
 msgctxt ""
 "03120303.xhp\n"
 "par_id3149456\n"
 "help.text"
-msgid "<emph>n:</emph> Numeric expression that specifies the number of characters that you want to return. If <emph>n</emph> = 0, a zero-length string is returned. The maximum allowed value is 65535."
-msgstr "「<emph>n</emph>」: 指定要返回的字符数目的整数表达式。如果 <emph>n</emph> = 0，则返回一个零长度字符串。"
+msgid "<emph>n:</emph> Numeric expression that specifies the number of characters that you want to return. If <emph>n</emph> = 0, a zero-length string is returned. The maximum allowed value is 2,147,483,648."
+msgstr ""
 
 #. FPXvk
 #: 03120303.xhp
@@ -32217,15 +32064,6 @@ msgctxt ""
 "help.text"
 msgid "The following example converts a date in YYYY.MM.DD format to MM/DD/YYYY format."
 msgstr "以下示例将一个日期从 YYYY.MM.DD 格式转换为 MM/DD/YYYY 格式。"
-
-#. YQQDH
-#: 03120303.xhp
-msgctxt ""
-"03120303.xhp\n"
-"hd_id3125863\n"
-"help.text"
-msgid "Example:"
-msgstr "示例:"
 
 #. TJBfC
 #: 03120303.xhp
@@ -32272,15 +32110,6 @@ msgctxt ""
 msgid "Aligns a string to the left of a string variable, or copies a variable of a user-defined type to another variable of a different user-defined type."
 msgstr "将某个字符串变量中的字符串左对齐，或者将自定义类型的变量复制到其他自定义的类型变量。"
 
-#. wKtHD
-#: 03120304.xhp
-msgctxt ""
-"03120304.xhp\n"
-"hd_id3145317\n"
-"help.text"
-msgid "Syntax:"
-msgstr "语法:"
-
 #. tFaav
 #: 03120304.xhp
 msgctxt ""
@@ -32289,15 +32118,6 @@ msgctxt ""
 "help.text"
 msgid "LSet Var As String = Text or LSet Var1 = Var2"
 msgstr "LSet Var As String = Text or LSet Var1 = Var2"
-
-#. 2vzrB
-#: 03120304.xhp
-msgctxt ""
-"03120304.xhp\n"
-"hd_id3143271\n"
-"help.text"
-msgid "Parameters:"
-msgstr "参数:"
 
 #. M99uG
 #: 03120304.xhp
@@ -32343,15 +32163,6 @@ msgctxt ""
 "help.text"
 msgid "If the string is shorter than the string variable, <emph>LSet</emph> left-aligns the string within the string variable. Any remaining positions in the string variable are replaced by spaces. If the string is longer than the string variable, only the leftmost characters up to the length of the string variable are copied. With the <emph>LSet</emph> statement, you can also copy a user-defined type variable to another variable of the same type."
 msgstr "如果字符串变量的长度大于字符串的长度，「<emph>LSet</emph> 左对齐字符串变量中的字符串，字符串变量中剩余的位置用空格代替。如果字符串变量的长度小于字符串的长度，则仅复制字符串中前 n 个字符，n 由字符串变量的长度决定。<emph>LSet</emph>」语句还可用于将自定义类型的变量复制到相同类型的其他变量。"
-
-#. BQw4P
-#: 03120304.xhp
-msgctxt ""
-"03120304.xhp\n"
-"hd_id3156282\n"
-"help.text"
-msgid "Example:"
-msgstr "示例:"
 
 #. jJepi
 #: 03120304.xhp
@@ -32416,15 +32227,6 @@ msgctxt ""
 msgid "Removes all leading spaces at the start of a string expression."
 msgstr "删除字符串表达式起始部分的所有前置空格。"
 
-#. vG8YP
-#: 03120305.xhp
-msgctxt ""
-"03120305.xhp\n"
-"hd_id3154924\n"
-"help.text"
-msgid "Syntax:"
-msgstr "语法:"
-
 #. cepxM
 #: 03120305.xhp
 msgctxt ""
@@ -32434,15 +32236,6 @@ msgctxt ""
 msgid "LTrim (Text As String)"
 msgstr "LTrim (Text As String)"
 
-#. KzzDh
-#: 03120305.xhp
-msgctxt ""
-"03120305.xhp\n"
-"hd_id3156344\n"
-"help.text"
-msgid "Return value:"
-msgstr "返回值:"
-
 #. LyUCE
 #: 03120305.xhp
 msgctxt ""
@@ -32451,15 +32244,6 @@ msgctxt ""
 "help.text"
 msgid "String"
 msgstr "字符串"
-
-#. 8hNZD
-#: 03120305.xhp
-msgctxt ""
-"03120305.xhp\n"
-"hd_id3150543\n"
-"help.text"
-msgid "Parameters:"
-msgstr "参数:"
 
 #. x85WJ
 #: 03120305.xhp
@@ -32478,15 +32262,6 @@ msgctxt ""
 "help.text"
 msgid "Use this function to remove spaces at the beginning of a string expression."
 msgstr "此函数可用于删除字符串表达式起始部分的空格。"
-
-#. FExzu
-#: 03120305.xhp
-msgctxt ""
-"03120305.xhp\n"
-"hd_id3145419\n"
-"help.text"
-msgid "Example:"
-msgstr "示例:"
 
 #. Afrvq
 #: 03120306.xhp
@@ -32524,15 +32299,6 @@ msgctxt ""
 msgid "Returns the specified portion of a string expression (<emph>Mid function</emph>), or replaces the portion of a string expression with another string (<emph>Mid statement</emph>)."
 msgstr "返回字符串表达式的指定部分 (<emph>Mid 函数</emph>)，或将字符串表达式的指定部分替换成另一个字符串 (<emph>Mid 语句</emph>)。"
 
-#. ye7Tj
-#: 03120306.xhp
-msgctxt ""
-"03120306.xhp\n"
-"hd_id3154285\n"
-"help.text"
-msgid "Syntax:"
-msgstr "语法:"
-
 #. 32BvU
 #: 03120306.xhp
 msgctxt ""
@@ -32541,15 +32307,6 @@ msgctxt ""
 "help.text"
 msgid "Mid (Text As String, Start As Long [, Length As Long]) or Mid (Text As String, Start As Long , Length As Long, Text As String)"
 msgstr "Mid (Text As String, Start As Integer [, Length As Integer]) 或 Mid (Text As String, Start As Integer , Length As Integer, Text As String)"
-
-#. Bw3Yb
-#: 03120306.xhp
-msgctxt ""
-"03120306.xhp\n"
-"hd_id3145068\n"
-"help.text"
-msgid "Return value:"
-msgstr "返回值:"
 
 #. 5MG4F
 #: 03120306.xhp
@@ -32560,15 +32317,6 @@ msgctxt ""
 msgid "String (only by Function)"
 msgstr "字符串 (仅适用于函数)"
 
-#. rLmbA
-#: 03120306.xhp
-msgctxt ""
-"03120306.xhp\n"
-"hd_id3154347\n"
-"help.text"
-msgid "Parameters:"
-msgstr "参数:"
-
 #. hRXCE
 #: 03120306.xhp
 msgctxt ""
@@ -32578,23 +32326,23 @@ msgctxt ""
 msgid "<emph>Text:</emph> Any string expression that you want to modify."
 msgstr "「<emph>Text</emph>」:要修改的任意字符串表达式。"
 
-#. MkjPp
+#. DGPaB
 #: 03120306.xhp
 msgctxt ""
 "03120306.xhp\n"
 "par_id3150359\n"
 "help.text"
-msgid "<emph>Start: </emph>Numeric expression that indicates the character position within the string where the string portion that you want to replace or to return begins. The maximum allowed value is 65535."
-msgstr "「<emph>Start</emph>」: 数字表达式，表示要替换或返回的字符串部分在字符串中的起始字符位置。允许的最大值是 65535。"
+msgid "<emph>Start: </emph>Numeric expression that indicates the character position within the string where the string portion that you want to replace or to return begins. The minimum allowed value is 1. The maximum allowed value is 2,147,483,648."
+msgstr ""
 
-#. 49ArA
+#. dtyT5
 #: 03120306.xhp
 msgctxt ""
 "03120306.xhp\n"
 "par_id3148451\n"
 "help.text"
-msgid "<emph>Length:</emph> Numeric expression that returns the number of characters that you want to replace or return. The maximum allowed value is 65535."
-msgstr "「<emph>Length</emph>」:返回要替换或要返回的字符数目的数字表达式。允许的最大值是 65535。"
+msgid "<emph>Length:</emph> Numeric expression that returns the number of characters that you want to replace or return. The maximum allowed value is 2,147,483,648."
+msgstr ""
 
 #. Cw9Ts
 #: 03120306.xhp
@@ -32622,15 +32370,6 @@ msgctxt ""
 "help.text"
 msgid "<emph>Text:</emph> The string to replace the string expression (<emph>Mid statement</emph>)."
 msgstr "「<emph>Text:</emph> 用于替换字符串表达式的字符串 (<emph>Mid 语句</emph>」)。"
-
-#. jK3U3
-#: 03120306.xhp
-msgctxt ""
-"03120306.xhp\n"
-"hd_id3149560\n"
-"help.text"
-msgid "Example:"
-msgstr "示例:"
 
 #. NFDUA
 #: 03120306.xhp
@@ -32686,15 +32425,6 @@ msgctxt ""
 msgid "See also: <link href=\"text/sbasic/shared/03120303.xhp\" name=\"Left Function\">Left Function</link>."
 msgstr "请参阅: <link href=\"text/sbasic/shared/03120303.xhp\" name=\"Left 函数\">Left 函数</link>。"
 
-#. Xy4Fw
-#: 03120307.xhp
-msgctxt ""
-"03120307.xhp\n"
-"hd_id3145315\n"
-"help.text"
-msgid "Syntax:"
-msgstr "语法:"
-
 #. A3Rzn
 #: 03120307.xhp
 msgctxt ""
@@ -32703,15 +32433,6 @@ msgctxt ""
 "help.text"
 msgid "Right (Text As String, n As Long)"
 msgstr "Right (Text As String, n As Integer)"
-
-#. 8sZ7E
-#: 03120307.xhp
-msgctxt ""
-"03120307.xhp\n"
-"hd_id3145068\n"
-"help.text"
-msgid "Return value:"
-msgstr "返回值:"
 
 #. SKQUo
 #: 03120307.xhp
@@ -32722,15 +32443,6 @@ msgctxt ""
 msgid "String"
 msgstr "字符串"
 
-#. CyX7H
-#: 03120307.xhp
-msgctxt ""
-"03120307.xhp\n"
-"hd_id3146795\n"
-"help.text"
-msgid "Parameters:"
-msgstr "参数:"
-
 #. hErZb
 #: 03120307.xhp
 msgctxt ""
@@ -32740,14 +32452,14 @@ msgctxt ""
 msgid "<emph>Text:</emph> Any string expression that you want to return the rightmost characters of."
 msgstr "「<emph>Text</emph>」:要返回最右边字符的任意字符串表达式。"
 
-#. D8HQ5
+#. NwQkG
 #: 03120307.xhp
 msgctxt ""
 "03120307.xhp\n"
 "par_id3151211\n"
 "help.text"
-msgid "<emph>n:</emph> Numeric expression that defines the number of characters that you want to return. If <emph>n</emph> = 0, a zero-length string is returned. The maximum allowed value is 65535."
-msgstr "「<emph>n</emph>」: 定义要返回的字符数目的整数表达式。如果 <emph>n</emph> = 0，则返回一个零长度字符串。允许的最大值是 65535。"
+msgid "<emph>n:</emph> Numeric expression that defines the number of characters that you want to return. If <emph>n</emph> = 0, a zero-length string is returned. The maximum allowed value is 2,147,483,648."
+msgstr ""
 
 #. ezXrq
 #: 03120307.xhp
@@ -32757,15 +32469,6 @@ msgctxt ""
 "help.text"
 msgid "The following example converts a date in YYYY-MM-DD format to the US date format (MM/DD/YYYY)."
 msgstr "以下示例将 YYYY-MM-DD 的日期格式转换为 US 日期格式 (MM/DD/YYYY)。"
-
-#. wgEnG
-#: 03120307.xhp
-msgctxt ""
-"03120307.xhp\n"
-"hd_id3156212\n"
-"help.text"
-msgid "Example:"
-msgstr "示例:"
 
 #. ZbKt5
 #: 03120307.xhp
@@ -32812,15 +32515,6 @@ msgctxt ""
 msgid "Right-aligns a string within a string variable, or copies a user-defined variable type into another."
 msgstr "右对齐字符串变量中的字符串，或将自定义变量类型复制为其他变量。"
 
-#. aHsZH
-#: 03120308.xhp
-msgctxt ""
-"03120308.xhp\n"
-"hd_id3149234\n"
-"help.text"
-msgid "Syntax:"
-msgstr "语法:"
-
 #. uDqvq
 #: 03120308.xhp
 msgctxt ""
@@ -32829,15 +32523,6 @@ msgctxt ""
 "help.text"
 msgid "RSet Text As String = Text or RSet Variable1 = Variable2"
 msgstr "RSet Text As String = Text or RSet Variable1 = Variable2"
-
-#. tpDDD
-#: 03120308.xhp
-msgctxt ""
-"03120308.xhp\n"
-"hd_id3156024\n"
-"help.text"
-msgid "Parameters:"
-msgstr "参数:"
 
 #. YfmCj
 #: 03120308.xhp
@@ -32901,15 +32586,6 @@ msgctxt ""
 "help.text"
 msgid "The following example uses the <emph>RSet</emph> and <emph>LSet</emph> statements to modify the left and right alignment of a string."
 msgstr "以下示例使用「<emph>RSet</emph>」和「<emph>LSet</emph>」语句来修改字符串的左对齐和右对齐。"
-
-#. BdFxA
-#: 03120308.xhp
-msgctxt ""
-"03120308.xhp\n"
-"hd_id3154909\n"
-"help.text"
-msgid "Example:"
-msgstr "示例:"
 
 #. u4Dwb
 #: 03120308.xhp
@@ -32983,15 +32659,6 @@ msgctxt ""
 msgid "See also: <link href=\"text/sbasic/shared/03120305.xhp\" name=\"LTrim Function\">LTrim Function</link>"
 msgstr "请参阅: <link href=\"text/sbasic/shared/03120305.xhp\" name=\"LTrim 函数\">LTrim 函数</link>"
 
-#. z57JG
-#: 03120309.xhp
-msgctxt ""
-"03120309.xhp\n"
-"hd_id3154924\n"
-"help.text"
-msgid "Syntax:"
-msgstr "语法:"
-
 #. 3KFbV
 #: 03120309.xhp
 msgctxt ""
@@ -33000,15 +32667,6 @@ msgctxt ""
 "help.text"
 msgid "RTrim (Text As String)"
 msgstr "RTrim (Text As String)"
-
-#. qfPg6
-#: 03120309.xhp
-msgctxt ""
-"03120309.xhp\n"
-"hd_id3149457\n"
-"help.text"
-msgid "Return value:"
-msgstr "返回值:"
 
 #. awasf
 #: 03120309.xhp
@@ -33019,15 +32677,6 @@ msgctxt ""
 msgid "String"
 msgstr "字符串"
 
-#. p2Uwz
-#: 03120309.xhp
-msgctxt ""
-"03120309.xhp\n"
-"hd_id3148798\n"
-"help.text"
-msgid "Parameters:"
-msgstr "参数:"
-
 #. UW5Fx
 #: 03120309.xhp
 msgctxt ""
@@ -33036,15 +32685,6 @@ msgctxt ""
 "help.text"
 msgid "<emph>Text: </emph>Any string expression."
 msgstr "「<emph>Text</emph>」: 任意字符串表达式。"
-
-#. Tq2QX
-#: 03120309.xhp
-msgctxt ""
-"03120309.xhp\n"
-"hd_id3151041\n"
-"help.text"
-msgid "Example:"
-msgstr "示例:"
 
 #. qdGRW
 #: 03120310.xhp
@@ -33172,15 +32812,6 @@ msgctxt ""
 msgid "Removes all leading and trailing spaces from a string expression."
 msgstr "删除字符串表达式中所有的前置空格和后置空格。"
 
-#. xTgNw
-#: 03120311.xhp
-msgctxt ""
-"03120311.xhp\n"
-"hd_id3159157\n"
-"help.text"
-msgid "Syntax:"
-msgstr "语法:"
-
 #. EEu5H
 #: 03120311.xhp
 msgctxt ""
@@ -33189,15 +32820,6 @@ msgctxt ""
 "help.text"
 msgid "Trim( Text As String )"
 msgstr "Trim( Text As String )"
-
-#. ZUuwF
-#: 03120311.xhp
-msgctxt ""
-"03120311.xhp\n"
-"hd_id3155388\n"
-"help.text"
-msgid "Return value:"
-msgstr "返回值:"
 
 #. f9pGG
 #: 03120311.xhp
@@ -33208,15 +32830,6 @@ msgctxt ""
 msgid "String"
 msgstr "字符串"
 
-#. VwME3
-#: 03120311.xhp
-msgctxt ""
-"03120311.xhp\n"
-"hd_id3145609\n"
-"help.text"
-msgid "Parameters:"
-msgstr "参数:"
-
 #. kLdYS
 #: 03120311.xhp
 msgctxt ""
@@ -33225,15 +32838,6 @@ msgctxt ""
 "help.text"
 msgid "<emph>Text:</emph> Any string expression."
 msgstr "「<emph>Text</emph>」: 任意字符串表达式。"
-
-#. 3GonF
-#: 03120311.xhp
-msgctxt ""
-"03120311.xhp\n"
-"hd_id3148663\n"
-"help.text"
-msgid "Example:"
-msgstr "示例:"
 
 #. ZBDyG
 #: 03120312.xhp
@@ -33271,15 +32875,6 @@ msgctxt ""
 msgid "Converts a system file name to a file URL."
 msgstr "将系统文件名称转换成文件 URL。"
 
-#. 7EFtr
-#: 03120312.xhp
-msgctxt ""
-"03120312.xhp\n"
-"hd_id3150669\n"
-"help.text"
-msgid "Syntax:"
-msgstr "语法:"
-
 #. zU9U9
 #: 03120312.xhp
 msgctxt ""
@@ -33288,15 +32883,6 @@ msgctxt ""
 "help.text"
 msgid "ConvertToURL(filename)"
 msgstr "ConvertToURL(filename)"
-
-#. eq2Gx
-#: 03120312.xhp
-msgctxt ""
-"03120312.xhp\n"
-"hd_id3150984\n"
-"help.text"
-msgid "Return value:"
-msgstr "返回值:"
 
 #. V6WhB
 #: 03120312.xhp
@@ -33307,15 +32893,6 @@ msgctxt ""
 msgid "String"
 msgstr "字符串"
 
-#. m42nR
-#: 03120312.xhp
-msgctxt ""
-"03120312.xhp\n"
-"hd_id3148550\n"
-"help.text"
-msgid "Parameters:"
-msgstr "参数:"
-
 #. Dka3U
 #: 03120312.xhp
 msgctxt ""
@@ -33324,15 +32901,6 @@ msgctxt ""
 "help.text"
 msgid "<emph>Filename:</emph> A file name as string."
 msgstr "「<emph>filename</emph>」:以字符串形式表示的文件名。"
-
-#. iFPRX
-#: 03120312.xhp
-msgctxt ""
-"03120312.xhp\n"
-"hd_id3153361\n"
-"help.text"
-msgid "Example:"
-msgstr "示例:"
 
 #. AHBLc
 #: 03120312.xhp
@@ -33379,15 +32947,6 @@ msgctxt ""
 msgid "Converts a file URL to a system file name."
 msgstr "将文件 URL 转换成系统文件名称。"
 
-#. Gyuop
-#: 03120313.xhp
-msgctxt ""
-"03120313.xhp\n"
-"hd_id3143267\n"
-"help.text"
-msgid "Syntax:"
-msgstr "语法:"
-
 #. i96Ej
 #: 03120313.xhp
 msgctxt ""
@@ -33397,15 +32956,6 @@ msgctxt ""
 msgid "ConvertFromURL(filename)"
 msgstr "ConvertFromURL(filename)"
 
-#. wq6Jz
-#: 03120313.xhp
-msgctxt ""
-"03120313.xhp\n"
-"hd_id3159157\n"
-"help.text"
-msgid "Return value:"
-msgstr "返回值:"
-
 #. ESx7C
 #: 03120313.xhp
 msgctxt ""
@@ -33414,15 +32964,6 @@ msgctxt ""
 "help.text"
 msgid "String"
 msgstr "字符串"
-
-#. GmBuj
-#: 03120313.xhp
-msgctxt ""
-"03120313.xhp\n"
-"hd_id3143270\n"
-"help.text"
-msgid "Parameters:"
-msgstr "参数:"
 
 #. 8R25b
 #: 03120313.xhp
@@ -33469,15 +33010,6 @@ msgctxt ""
 msgid "Returns an array of substrings from a string expression."
 msgstr "从字符串表达式返回一个子字符串数组。"
 
-#. fqDbn
-#: 03120314.xhp
-msgctxt ""
-"03120314.xhp\n"
-"hd_id3149177\n"
-"help.text"
-msgid "Syntax:"
-msgstr "语法:"
-
 #. FGCEc
 #: 03120314.xhp
 msgctxt ""
@@ -33487,15 +33019,6 @@ msgctxt ""
 msgid "Split (Text As String, delimiter, number)"
 msgstr "Split (Text As String, delimiter, number)"
 
-#. XdWY5
-#: 03120314.xhp
-msgctxt ""
-"03120314.xhp\n"
-"hd_id3149763\n"
-"help.text"
-msgid "Return value:"
-msgstr "返回值:"
-
 #. BNdCD
 #: 03120314.xhp
 msgctxt ""
@@ -33504,15 +33027,6 @@ msgctxt ""
 "help.text"
 msgid "String"
 msgstr "字符串"
-
-#. G7w77
-#: 03120314.xhp
-msgctxt ""
-"03120314.xhp\n"
-"hd_id3145315\n"
-"help.text"
-msgid "Parameters:"
-msgstr "参数:"
 
 #. PRupM
 #: 03120314.xhp
@@ -33540,15 +33054,6 @@ msgctxt ""
 "help.text"
 msgid "<emph>number (optional):</emph> The number of substrings that you want to return."
 msgstr "「<emph>number (可选)</emph>」:要返回的子字符串数目。"
-
-#. XZAoD
-#: 03120314.xhp
-msgctxt ""
-"03120314.xhp\n"
-"hd_id3150398\n"
-"help.text"
-msgid "Example:"
-msgstr "示例:"
 
 #. 9qGtg
 #: 03120315.xhp
@@ -33586,15 +33091,6 @@ msgctxt ""
 msgid "Returns a string from a number of substrings in a string array."
 msgstr "将字符串数组中的多个子字符串组合成一个字符串。"
 
-#. Tavaa
-#: 03120315.xhp
-msgctxt ""
-"03120315.xhp\n"
-"hd_id3159414\n"
-"help.text"
-msgid "Syntax:"
-msgstr "语法:"
-
 #. FrGPB
 #: 03120315.xhp
 msgctxt ""
@@ -33604,15 +33100,6 @@ msgctxt ""
 msgid "Join (Text As String Array, delimiter)"
 msgstr "Join (Text As String Array, delimiter)"
 
-#. zKGLo
-#: 03120315.xhp
-msgctxt ""
-"03120315.xhp\n"
-"hd_id3150400\n"
-"help.text"
-msgid "Return value:"
-msgstr "返回值:"
-
 #. Sx96w
 #: 03120315.xhp
 msgctxt ""
@@ -33621,15 +33108,6 @@ msgctxt ""
 "help.text"
 msgid "String"
 msgstr "字符串"
-
-#. uMb7W
-#: 03120315.xhp
-msgctxt ""
-"03120315.xhp\n"
-"hd_id3148798\n"
-"help.text"
-msgid "Parameters:"
-msgstr "参数:"
 
 #. sEXB3
 #: 03120315.xhp
@@ -33648,15 +33126,6 @@ msgctxt ""
 "help.text"
 msgid "<emph>delimiter (optional):</emph> A string character that is used to separate the substrings in the resulting string. The default delimiter is the space character. If delimiter is a string of length zero \"\", the substrings are joined without separator."
 msgstr "「<emph>delimiter (可选)</emph>」: 用于分隔返回字符串中的子字符串的字符串字符。默认的分隔字符是空格。如果分隔字符是一个零长度字符串 \"\"，子串将紧密相接，相互间无分隔符。"
-
-#. rYFAB
-#: 03120315.xhp
-msgctxt ""
-"03120315.xhp\n"
-"hd_id3154218\n"
-"help.text"
-msgid "Example:"
-msgstr "示例:"
 
 #. u25ah
 #: 03120400.xhp
@@ -33775,14 +33244,14 @@ msgctxt ""
 msgid "Parameters:"
 msgstr "参数:"
 
-#. jDRQw
+#. KqLff
 #: 03120401.xhp
 msgctxt ""
 "03120401.xhp\n"
 "par_id3153126\n"
 "help.text"
-msgid "<emph>Start: </emph>A numeric expression that marks the position in a string where the search for the specified substring starts. If you omit this parameter, the search starts at the first character of the string. The maximum allowed value is 65535."
-msgstr "「<emph>Start</emph>」: 数字表达式，标记字符串中搜索指定子字符串的起始位置。如果省略此参数，搜索将从字符串的第一个字符开始。允许的最大值是 65535。"
+msgid "<emph>Start: </emph>A numeric expression that marks the position in a string where the search for the specified substring starts. If you omit this parameter, the search starts at the first character of the string. The minimum allowed value is 1. The maximum allowed value is 2,147,483,648."
+msgstr ""
 
 #. SnP3c
 #: 03120401.xhp
