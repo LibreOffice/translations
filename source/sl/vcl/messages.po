@@ -1,16 +1,16 @@
 #. extracted from vcl/inc
 msgid ""
 msgstr ""
-"Project-Id-Version: LibreOffice 7.0\n"
+"Project-Id-Version: LibreOffice 7.1\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2020-05-02 23:01+0200\n"
-"PO-Revision-Date: 2020-04-23 22:10+0200\n"
+"POT-Creation-Date: 2020-11-08 23:24+0100\n"
+"PO-Revision-Date: 2020-11-09 16:38+0200\n"
 "Last-Translator: Martin Srebotnjak <miles@filmsi.net>\n"
 "Language-Team: sl.libreoffice.org\n"
+"Language: sl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: sl\n"
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n%100==4 ? 2 : 3);\n"
 "X-Generator: Virtaal 0.7.1\n"
 "X-Accelerator-Marker: ~\n"
@@ -1009,6 +1009,11 @@ msgctxt "STR_WIZDLG_PREVIOUS"
 msgid "< Bac~k"
 msgstr "< Na~zaj"
 
+#: vcl/inc/strings.hrc:156
+msgctxt "STR_SEPARATOR"
+msgid "Separator"
+msgstr "Ločilo"
+
 #. To translators: This is the first entry of a sequence of measurement unit names
 #: vcl/inc/units.hrc:28
 msgctxt "SV_FUNIT_STRINGS"
@@ -1629,290 +1634,430 @@ msgctxt "errornoprinterdialog|ErrorNoPrinterDialog"
 msgid "Please choose a printer and try again."
 msgstr "Prosimo, izberite tiskalnik in poskusite znova."
 
-#: vcl/uiconfig/ui/moreoptionsdialog.ui:8
-msgctxt "moreoptionsdialog|moreprintingoptions"
-msgid "More Printing Options"
-msgstr "Dodatne možnosti tiskanja"
-
-#: vcl/uiconfig/ui/moreoptionsdialog.ui:71
-msgctxt "moreoptionsdialog|singlejobs"
-msgid "Create separate print jobs for collated output"
-msgstr "Ustvari ločena tiskalniška opravila pri zbiranju kopij"
-
 #: vcl/uiconfig/ui/printdialog.ui:64
 msgctxt "printdialog|PrintDialog"
 msgid "Print"
 msgstr "Natisni"
 
-#: vcl/uiconfig/ui/printdialog.ui:98
-msgctxt "printdialog|moreoptions"
-msgid "More Options..."
-msgstr "Dodatne možnosti ..."
-
-#: vcl/uiconfig/ui/printdialog.ui:113
+#: vcl/uiconfig/ui/printdialog.ui:95
 msgctxt "printdialog|print"
 msgid "_Print"
 msgstr "_Tiskanje"
 
-#: vcl/uiconfig/ui/printdialog.ui:171
+#: vcl/uiconfig/ui/printdialog.ui:154
 msgctxt "printdialog|printpreview"
 msgid "Print preview"
 msgstr "Predogled tiskanja"
 
-#: vcl/uiconfig/ui/printdialog.ui:201
+#: vcl/uiconfig/ui/printdialog.ui:158
+msgctxt "printdialog|extended_tip|preview"
+msgid "The preview shows how each sheet of paper will look. You can browse through all sheets of paper with the buttons below the preview."
+msgstr "Predogled prikaže, kako bo videti vsak list papirja. Po listih lahko brskate z gumbi pod prikazanim predogledom."
+
+#: vcl/uiconfig/ui/printdialog.ui:189
 msgctxt "printdialog|lastpage"
 msgid "Last page"
 msgstr "Zadnja stran"
 
-#: vcl/uiconfig/ui/printdialog.ui:216
+#: vcl/uiconfig/ui/printdialog.ui:204
 msgctxt "printdialog|forward"
 msgid "Next page"
 msgstr "Naslednja stran"
 
-#: vcl/uiconfig/ui/printdialog.ui:230
+#: vcl/uiconfig/ui/printdialog.ui:208
+msgctxt "printdialog|extended_tip|forward"
+msgid "Shows preview of the next page."
+msgstr "Pokaže predogled naslednje strani."
+
+#: vcl/uiconfig/ui/printdialog.ui:223
 msgctxt "printdialog|totalnumpages"
 msgid "/ %n"
 msgstr "/ %n"
 
-#: vcl/uiconfig/ui/printdialog.ui:258
+#: vcl/uiconfig/ui/printdialog.ui:240
+msgctxt "printdialog|extended_tip|pageedit"
+msgid "Enter the number of page to be shown in the preview."
+msgstr "Vnesite želeno število prikazanih strani v predogledu."
+
+#: vcl/uiconfig/ui/printdialog.ui:256
 msgctxt "printdialog|backward"
 msgid "Previous page"
 msgstr "Prejšnja stran"
 
-#: vcl/uiconfig/ui/printdialog.ui:273
+#: vcl/uiconfig/ui/printdialog.ui:260
+msgctxt "printdialog|extended_tip|backward"
+msgid "Shows preview of the previous page."
+msgstr "Pokaže predogled prejšnje strani."
+
+#: vcl/uiconfig/ui/printdialog.ui:276
 msgctxt "printdialog|firstpage"
 msgid "First page"
 msgstr "Prva stran"
 
-#: vcl/uiconfig/ui/printdialog.ui:298
+#: vcl/uiconfig/ui/printdialog.ui:301
 msgctxt "printdialog|previewbox"
 msgid "Pre_view"
 msgstr "Predo_gled"
 
-#: vcl/uiconfig/ui/printdialog.ui:399
+#: vcl/uiconfig/ui/printdialog.ui:311
+msgctxt "printdialog|extended_tip|previewbox"
+msgid "Turn on or off display of the print preview."
+msgstr "Vključite ali izključite prikaz predogleda tiskanja."
+
+#: vcl/uiconfig/ui/printdialog.ui:391
+msgctxt "printdialog|extended_tip|printersbox"
+msgid "The list box shows the installed printers. Click the printer to use for the current print job. Click the Properties button to change some of the printer properties."
+msgstr "Seznamsko polje prikaže nameščene tiskalnike. Kliknite tiskalnik, ki ga želite uporabiti za trenutno tiskalniško opravilo. Kliknite gumb Lastnosti, če želite spremeniti katero od lastnosti tiskalnika."
+
+#: vcl/uiconfig/ui/printdialog.ui:410
 msgctxt "printdialog|labelstatus"
 msgid "Status:"
 msgstr "Stanje:"
 
-#: vcl/uiconfig/ui/printdialog.ui:414
+#: vcl/uiconfig/ui/printdialog.ui:425
 msgctxt "printdialog|status"
 msgid "Default Printer"
 msgstr "Privzeti tiskalnik"
 
-#: vcl/uiconfig/ui/printdialog.ui:427
+#: vcl/uiconfig/ui/printdialog.ui:431
+msgctxt "printdialog|extended_tip|status"
+msgid "Shows the availability of the selected printer."
+msgstr "Pokaže dosegljivost izbranega tiskalnika."
+
+#: vcl/uiconfig/ui/printdialog.ui:443
 msgctxt "printdialog|setup"
 msgid "Properties..."
 msgstr "Lastnosti ..."
 
-#: vcl/uiconfig/ui/printdialog.ui:455
+#: vcl/uiconfig/ui/printdialog.ui:450
+msgctxt "printdialog|extended_tip|setup"
+msgid "Opens the Printer Properties dialog. The printer properties vary according to the printer that you select."
+msgstr "Odpre pogovorno okno Lastnosti tiskalnika. Lastnosti tiskalnika se razlikujejo glede na izbrani tiskalnik."
+
+#: vcl/uiconfig/ui/printdialog.ui:476
 msgctxt "printdialog|labelprinter"
 msgid "Printer"
 msgstr "Tiskalnik"
 
-#: vcl/uiconfig/ui/printdialog.ui:495
+#: vcl/uiconfig/ui/printdialog.ui:516
 msgctxt "printdialog|rbAllPages"
 msgid "_All pages"
 msgstr "_Vse strani"
 
-#: vcl/uiconfig/ui/printdialog.ui:513
+#: vcl/uiconfig/ui/printdialog.ui:527
+msgctxt "printdialog|extended_tip|rbAllPages"
+msgid "Prints the entire document."
+msgstr "Natisne celoten dokument."
+
+#: vcl/uiconfig/ui/printdialog.ui:539
 msgctxt "printdialog|rbPageRange"
 msgid "_Pages:"
 msgstr "_Stran(i):"
 
-#: vcl/uiconfig/ui/printdialog.ui:535
+#: vcl/uiconfig/ui/printdialog.ui:551
+msgctxt "printdialog|extended_tip|rbRangePages"
+msgid "Prints only the pages or slides that you specify in the Pages box."
+msgstr "Natisne le tiste strani ali prosojnice, ki jih navedete v polju Strani."
+
+#: vcl/uiconfig/ui/printdialog.ui:566
 msgctxt "printdialog|pagerange"
 msgid "e.g.: 1, 3-5, 7, 9"
 msgstr "npr.: 1, 3-5, 7, 9"
 
-#: vcl/uiconfig/ui/printdialog.ui:544
-msgctxt "printdialog|rmEvenPages"
-msgid "_Even pages"
-msgstr "_Sode strani"
+#: vcl/uiconfig/ui/printdialog.ui:569
+msgctxt "printdialog|extended_tip|pagerange"
+msgid "To print a range of pages, use a format like 3-6. To print single pages, use a format like 7;9;11. You can print a combination of page ranges and single pages, by using a format like 3-6;8;10;12."
+msgstr "Če želite natisniti obseg strani, uporabite obliko 3-6. Če želite natisniti posamezne strani, uporabite obliko 7;9;11. Če želite, lahko natisnete kombinacijo obsega strani in posameznih strani, tako da uporabite obliko 3-6;8;10;12."
 
-#: vcl/uiconfig/ui/printdialog.ui:563
-msgctxt "printdialog|rbOddPages"
-msgid "_Odd pages"
-msgstr "_Lihe strani"
-
-#: vcl/uiconfig/ui/printdialog.ui:582
+#: vcl/uiconfig/ui/printdialog.ui:580
 msgctxt "printdialog|rbRangeSelection"
 msgid "_Selection"
 msgstr "_Izbor"
 
+#: vcl/uiconfig/ui/printdialog.ui:600
+msgctxt "printdialog|includeevenodd"
+msgid "Include:"
+msgstr "Vključi:"
+
+#: vcl/uiconfig/ui/printdialog.ui:617
+msgctxt "printdialog|liststore3"
+msgid "Odd and Even Pages"
+msgstr "Lihe in sode strani"
+
 #: vcl/uiconfig/ui/printdialog.ui:618
+msgctxt "printdialog|liststore3"
+msgid "Odd Pages"
+msgstr "Lihe strani"
+
+#: vcl/uiconfig/ui/printdialog.ui:619
+msgctxt "printdialog|liststore3"
+msgid "Even Pages"
+msgstr "Sode strani"
+
+#: vcl/uiconfig/ui/printdialog.ui:648
 msgctxt "printdialog|fromwhich"
 msgid "_From which print:"
 msgstr "_Od tega natisni:"
 
-#: vcl/uiconfig/ui/printdialog.ui:642
+#: vcl/uiconfig/ui/printdialog.ui:673
 msgctxt "printdialog|labelpapersides"
 msgid "Paper _sides:"
 msgstr "P_lati papirja:"
 
-#: vcl/uiconfig/ui/printdialog.ui:657
+#: vcl/uiconfig/ui/printdialog.ui:689
 msgctxt "printdialog|liststore4"
 msgid "Print on one side (simplex)"
 msgstr "Natisni le na eni plati"
 
-#: vcl/uiconfig/ui/printdialog.ui:658
+#: vcl/uiconfig/ui/printdialog.ui:690
 msgctxt "printdialog|liststore4"
 msgid "Print on both sides (duplex long edge)"
 msgstr "Natisni na obeh plateh (dolgi rob)"
 
-#: vcl/uiconfig/ui/printdialog.ui:659
+#: vcl/uiconfig/ui/printdialog.ui:691
 msgctxt "printdialog|liststore4"
 msgid "Print on both sides (duplex short edge)"
 msgstr "Natisni na obeh plateh (kratki rob)"
 
-#: vcl/uiconfig/ui/printdialog.ui:672
+#: vcl/uiconfig/ui/printdialog.ui:695
+msgctxt "printdialog|extended_tip|sidesbox"
+msgid "If the printer is capable of duplex printing it's possible to choose between using only one side of the paper or both."
+msgstr "Če tiskalnik podpira dvostranski tisk, lahko izberete med enostranskim ali dvostranskim stikom na papir."
+
+#: vcl/uiconfig/ui/printdialog.ui:709
 msgctxt "printdialog|labelcopies"
 msgid "_Number of copies:"
 msgstr "Število _kopij:"
 
-#: vcl/uiconfig/ui/printdialog.ui:702
+#: vcl/uiconfig/ui/printdialog.ui:731
+msgctxt "printdialog|extended_tip|copycount"
+msgid "Enter the number of copies that you want to print."
+msgstr "Vnesite število kopij, ki jih želite natisniti."
+
+#: vcl/uiconfig/ui/printdialog.ui:745
 msgctxt "printdialog|cbPrintOrder"
 msgid "Order:"
 msgstr "Zaporedje:"
 
-#: vcl/uiconfig/ui/printdialog.ui:714
+#: vcl/uiconfig/ui/printdialog.ui:758
 msgctxt "printdialog|reverseorder"
 msgid "Print in _reverse order"
 msgstr "Tiskanje v _obratnem vrstnem redu"
 
-#: vcl/uiconfig/ui/printdialog.ui:735
+#: vcl/uiconfig/ui/printdialog.ui:767
+msgctxt "printdialog|extended_tip|reverseorder"
+msgid "Check to print pages in reverse order."
+msgstr "Potrdite, če želite tiskati strani v obratnem vrstnem redu."
+
+#: vcl/uiconfig/ui/printdialog.ui:784
 msgctxt "printdialog|collate"
 msgid "_Collate"
 msgstr "_Zbiranje kopij"
 
-#: vcl/uiconfig/ui/printdialog.ui:775
+#: vcl/uiconfig/ui/printdialog.ui:792
+msgctxt "printdialog|extended_tip|collate"
+msgid "Preserves the page order of the original document."
+msgstr "Ohrani zaporedje strani izvirnega dokumenta."
+
+#: vcl/uiconfig/ui/printdialog.ui:822
+msgctxt "printdialog|singlejobs"
+msgid "Create separate print jobs for collated output"
+msgstr "Ustvari ločena tiskalniška opravila pri zbiranju kopij"
+
+#: vcl/uiconfig/ui/printdialog.ui:830
+msgctxt "printdialog|extended_tip|collate"
+msgid "Check to not rely on the printer to create collated copies but create a print job for each copy instead."
+msgstr "Potrdite, če se pri ustvarjanju zbranih kopij ne želite zanesti na tiskalnik, temveč želite za vsako kopijo ustvariti ločeno tiskalniško opravilo."
+
+#: vcl/uiconfig/ui/printdialog.ui:851
 msgctxt "printdialog|rangeexpander"
-msgid "_more"
+msgid "_More"
 msgstr "_Dodatno"
 
-#: vcl/uiconfig/ui/printdialog.ui:793
+#: vcl/uiconfig/ui/printdialog.ui:869
 msgctxt "printdialog|label2"
 msgid "Range and Copies"
 msgstr "Obseg in kopije"
 
-#: vcl/uiconfig/ui/printdialog.ui:834
+#: vcl/uiconfig/ui/printdialog.ui:910
 msgctxt "printdialog|labelorientation"
 msgid "Orientation:"
 msgstr "Usmerjenost:"
 
-#: vcl/uiconfig/ui/printdialog.ui:848
+#: vcl/uiconfig/ui/printdialog.ui:925
 msgctxt "printdialog|labelsize"
 msgid "Paper size:"
 msgstr "Velikost papirja:"
 
-#: vcl/uiconfig/ui/printdialog.ui:864
+#: vcl/uiconfig/ui/printdialog.ui:942
 msgctxt "printdialog|liststore3"
 msgid "Automatic"
 msgstr "Samodejno"
 
-#: vcl/uiconfig/ui/printdialog.ui:865
+#: vcl/uiconfig/ui/printdialog.ui:943
 msgctxt "printdialog|liststore3"
 msgid "Portrait"
 msgstr "Pokončno"
 
-#: vcl/uiconfig/ui/printdialog.ui:866
+#: vcl/uiconfig/ui/printdialog.ui:944
 msgctxt "printdialog|liststore3"
 msgid "Landscape"
 msgstr "Ležeče"
 
-#: vcl/uiconfig/ui/printdialog.ui:909
+#: vcl/uiconfig/ui/printdialog.ui:948
+msgctxt "printdialog|extended_tip|pageorientationbox"
+msgid "Select the orientation of the paper."
+msgstr "Izberite postavitev papirja."
+
+#: vcl/uiconfig/ui/printdialog.ui:964
+msgctxt "printdialog|extended_tip|papersizebox"
+msgid "Set the paper size you would like to use. The preview will show how the document would look on a paper of the given size."
+msgstr "Določite velikost papirja, ki ga želite uporabiti. Predogled prikaže videz dokumenta na papirja dane velikosti."
+
+#: vcl/uiconfig/ui/printdialog.ui:998
 msgctxt "printdialog|pagespersheetbtn"
 msgid "Pages per sheet:"
 msgstr "Strani na list:"
 
-#: vcl/uiconfig/ui/printdialog.ui:957
+#: vcl/uiconfig/ui/printdialog.ui:1012
+msgctxt "printdialog|extended_tip|pagespersheetbtn"
+msgid "Print multiple pages per sheet of paper."
+msgstr "Natisnite več strani na en list papirja."
+
+#: vcl/uiconfig/ui/printdialog.ui:1053
 msgctxt "printdialog|liststore1"
 msgid "Custom"
 msgstr "Po meri"
 
-#: vcl/uiconfig/ui/printdialog.ui:973
+#: vcl/uiconfig/ui/printdialog.ui:1060
+msgctxt "printdialog|extended_tip|pagespersheetbox"
+msgid "Select how many pages to print per sheet of paper."
+msgstr "Izberite, koliko strani želite natisniti na posamezen list."
+
+#: vcl/uiconfig/ui/printdialog.ui:1073
 msgctxt "printdialog|pagespersheettxt"
 msgid "Pages:"
 msgstr "Stran(i):"
 
-#: vcl/uiconfig/ui/printdialog.ui:998
+#: vcl/uiconfig/ui/printdialog.ui:1092
+msgctxt "printdialog|extended_tip|pagerows"
+msgid "Select number of rows."
+msgstr "Izberite število vrstic."
+
+#: vcl/uiconfig/ui/printdialog.ui:1104
 msgctxt "printdialog|by"
 msgid "by"
 msgstr "od"
 
-#: vcl/uiconfig/ui/printdialog.ui:1024
+#: vcl/uiconfig/ui/printdialog.ui:1122
+msgctxt "printdialog|extended_tip|pagecols"
+msgid "Select number of columns."
+msgstr "Izberite število stolpcev."
+
+#: vcl/uiconfig/ui/printdialog.ui:1134
 msgctxt "printdialog|pagemargintxt1"
 msgid "Margin:"
 msgstr "Rob:"
 
-#: vcl/uiconfig/ui/printdialog.ui:1049
+#: vcl/uiconfig/ui/printdialog.ui:1152
+msgctxt "printdialog|extended_tip|pagemarginsb"
+msgid "Select margin between individual pages on each sheet of paper."
+msgstr "Izberite razmik med posameznimi stranmi na vsakem listu papirja."
+
+#: vcl/uiconfig/ui/printdialog.ui:1165
 msgctxt "printdialog|pagemargintxt2"
 msgid "between pages"
 msgstr "med stranmi"
 
-#: vcl/uiconfig/ui/printdialog.ui:1061
+#: vcl/uiconfig/ui/printdialog.ui:1176
 msgctxt "printdialog|sheetmargintxt1"
 msgid "Distance:"
 msgstr "Razdalja:"
 
-#: vcl/uiconfig/ui/printdialog.ui:1086
+#: vcl/uiconfig/ui/printdialog.ui:1194
+msgctxt "printdialog|extended_tip|sheetmarginsb"
+msgid "Select margin between the printed pages and paper edge."
+msgstr "Določite razdaljo med robom natisnjenih strani in robom papirja."
+
+#: vcl/uiconfig/ui/printdialog.ui:1207
 msgctxt "printdialog|sheetmargintxt2"
 msgid "to sheet border"
 msgstr "do roba lista"
 
-#: vcl/uiconfig/ui/printdialog.ui:1099
+#: vcl/uiconfig/ui/printdialog.ui:1220
 msgctxt "printdialog|labelorder"
 msgid "Order:"
 msgstr "Zaporedje:"
 
-#: vcl/uiconfig/ui/printdialog.ui:1114
+#: vcl/uiconfig/ui/printdialog.ui:1237
 msgctxt "printdialog|liststore2"
 msgid "Left to right, then down"
 msgstr "Z leve na desno, nato navzdol"
 
-#: vcl/uiconfig/ui/printdialog.ui:1115
+#: vcl/uiconfig/ui/printdialog.ui:1238
 msgctxt "printdialog|liststore2"
 msgid "Top to bottom, then right"
 msgstr "Od zgoraj navzdol, nato desno"
 
-#: vcl/uiconfig/ui/printdialog.ui:1116
+#: vcl/uiconfig/ui/printdialog.ui:1239
 msgctxt "printdialog|liststore2"
 msgid "Top to bottom, then left"
 msgstr "Od zgoraj navzdol, nato levo"
 
-#: vcl/uiconfig/ui/printdialog.ui:1117
+#: vcl/uiconfig/ui/printdialog.ui:1240
 msgctxt "printdialog|liststore2"
 msgid "Right to left, then down"
 msgstr "Z desne na levo, nato navzdol"
 
-#: vcl/uiconfig/ui/printdialog.ui:1128
+#: vcl/uiconfig/ui/printdialog.ui:1244
+msgctxt "printdialog|extended_tip|orderbox"
+msgid "Select order in which pages are to be printed."
+msgstr "Izberite vrstni red tiskanja strani."
+
+#: vcl/uiconfig/ui/printdialog.ui:1256
 msgctxt "printdialog|bordercb"
 msgid "Draw a border around each page"
 msgstr "Nariši rob okoli vsake strani"
 
-#: vcl/uiconfig/ui/printdialog.ui:1144
+#: vcl/uiconfig/ui/printdialog.ui:1265
+msgctxt "printdialog|extended_tip|bordercb"
+msgid "Check to draw a border around each page."
+msgstr "Potrdite, če želite narisati rob okoli vsake strani."
+
+#: vcl/uiconfig/ui/printdialog.ui:1277
 msgctxt "printdialog|brochure"
 msgid "Brochure"
 msgstr "Brošura"
 
-#: vcl/uiconfig/ui/printdialog.ui:1172
+#: vcl/uiconfig/ui/printdialog.ui:1305
 msgctxt "printdialog|collationpreview"
 msgid "Collation preview"
 msgstr "Predogled zbiranja kopij"
 
-#: vcl/uiconfig/ui/printdialog.ui:1205
+#: vcl/uiconfig/ui/printdialog.ui:1310
+msgctxt "printdialog|extended_tip|orderpreview"
+msgid "Change the arrangement of pages to be printed on every sheet of paper. The preview shows how every final sheet of paper will look."
+msgstr "Spremenite razporeditev strani, ki naj bodo natisnjene na vsakem listu papirja. Predogled prikazuje videz vsakega končnega lista."
+
+#: vcl/uiconfig/ui/printdialog.ui:1332
 msgctxt "printdialog|layoutexpander"
-msgid "m_ore"
+msgid "M_ore"
 msgstr "_Dodatno"
 
-#: vcl/uiconfig/ui/printdialog.ui:1223
+#: vcl/uiconfig/ui/printdialog.ui:1350
 msgctxt "printdialog|label3"
 msgid "Page Layout"
 msgstr "Postavitev strani"
 
-#: vcl/uiconfig/ui/printdialog.ui:1246
+#: vcl/uiconfig/ui/printdialog.ui:1373
 msgctxt "printdialog|generallabel"
 msgid "General"
 msgstr "Splošno"
+
+#: vcl/uiconfig/ui/printdialog.ui:1425
+msgctxt "printdialog|extended_tip|PrintDialog"
+msgid "Prints the current document, selection, or the pages that you specify. You can also set the print options for the current document."
+msgstr "Natisne trenutni dokument, izbor ali strani, ki jih določite. Za trenutni dokument lahko nastavite tudi možnosti tiskanja."
 
 #: vcl/uiconfig/ui/printerdevicepage.ui:34
 msgctxt "printerdevicepage|label7"

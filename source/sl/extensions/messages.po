@@ -1,16 +1,16 @@
 #. extracted from extensions/inc
 msgid ""
 msgstr ""
-"Project-Id-Version: LibreOffice 7.0\n"
+"Project-Id-Version: LibreOffice 7.1\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2020-03-10 10:47+0100\n"
-"PO-Revision-Date: 2020-02-27 10:22+0200\n"
+"POT-Creation-Date: 2020-11-08 23:23+0100\n"
+"PO-Revision-Date: 2020-11-09 15:49+0200\n"
 "Last-Translator: Martin Srebotnjak <miles@filmsi.net>\n"
 "Language-Team: sl.libreoffice.org\n"
+"Language: sl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: sl\n"
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n%100==4 ? 2 : 3);\n"
 "X-Generator: Virtaal 0.7.1\n"
 "X-Accelerator-Marker: ~\n"
@@ -1863,7 +1863,7 @@ msgstr "Kombinirano polje"
 #: extensions/inc/strings.hrc:274
 msgctxt "RID_STR_PROPTITLE_IMAGEBUTTON"
 msgid "Image Button"
-msgstr "Gumb z grafiko"
+msgstr "Gumb s sliko"
 
 #: extensions/inc/strings.hrc:275
 msgctxt "RID_STR_PROPTITLE_HIDDENCONTROL"
@@ -1878,7 +1878,7 @@ msgstr "Kontrolnik (neznana vrsta)"
 #: extensions/inc/strings.hrc:277
 msgctxt "RID_STR_PROPTITLE_IMAGECONTROL"
 msgid "Image Control"
-msgstr "Grafični kontrolnik"
+msgstr "Slikovni kontrolnik"
 
 #: extensions/inc/strings.hrc:278
 msgctxt "RID_STR_PROPTITLE_FILECONTROL"
@@ -2591,20 +2591,45 @@ msgctxt "datasourcepage|browse"
 msgid "Browse..."
 msgstr "Prebrskaj ..."
 
-#: extensions/uiconfig/sabpilot/ui/datasourcepage.ui:113
+#: extensions/uiconfig/sabpilot/ui/datasourcepage.ui:83
+msgctxt "datasourcepage|extended_tip|browse"
+msgid "Specifies the location using a file dialog."
+msgstr "Odpre pogovorno okno za določanje mesta datoteke."
+
+#: extensions/uiconfig/sabpilot/ui/datasourcepage.ui:106
+msgctxt "datasourcepage|extended_tip|location"
+msgid "Specifies the location of the database file."
+msgstr "Določa mesto datoteke zbirke podatkov."
+
+#: extensions/uiconfig/sabpilot/ui/datasourcepage.ui:123
 msgctxt "datasourcepage|available"
 msgid "Make this address book available to all modules in %PRODUCTNAME."
 msgstr "Adresar naj bo na voljo vsem modulom v %PRODUCTNAME."
 
-#: extensions/uiconfig/sabpilot/ui/datasourcepage.ui:148
+#: extensions/uiconfig/sabpilot/ui/datasourcepage.ui:132
+msgctxt "datasourcepage|extended_tip|available"
+msgid "Registers the newly created database file in %PRODUCTNAME. The database will then be listed in the Data sources pane (Ctrl+Shift+F4). If this check box is cleared, the database will be available only by opening the database file."
+msgstr "Registrira novo ustvarjeno datoteko zbirke podatkov v %PRODUCTNAME. Zbirka podatkov se bo nato prikazala v podoknu Viri podatkov (krmilka+dvigalka+F4, na sistemih macOS tipka Cmd+dvigalka+F4). Če počistite to potrditveno polje, bo zbirka podatkov na voljo le, če boste odprli datoteko zbirke podatkov."
+
+#: extensions/uiconfig/sabpilot/ui/datasourcepage.ui:163
 msgctxt "datasourcepage|nameft"
 msgid "Address book name"
 msgstr "Ime adresarja"
 
-#: extensions/uiconfig/sabpilot/ui/datasourcepage.ui:180
+#: extensions/uiconfig/sabpilot/ui/datasourcepage.ui:181
+msgctxt "datasourcepage|extended_tip|name"
+msgid "Specifies the data source name."
+msgstr "Določa ime vira podatkov."
+
+#: extensions/uiconfig/sabpilot/ui/datasourcepage.ui:200
 msgctxt "datasourcepage|warning"
 msgid "Another data source already has this name. As data sources have to have globally unique names, you need to choose another one."
 msgstr "Drug vir podatkov že uporablja to ime. Izberite drugo ime, ker morajo imeti viri podatkov edinstvena imena."
+
+#: extensions/uiconfig/sabpilot/ui/datasourcepage.ui:233
+msgctxt "datasourcepage|extended_tip|DataSourcePage"
+msgid "Specifies a location for the address book file and a name under which the data source will be listed in the data source explorer."
+msgstr "Določa mesto datoteke z adresarjem ter ime, s katerim bo vir podatkov prikazan v raziskovalcu po virih podatkov."
 
 #: extensions/uiconfig/sabpilot/ui/defaultfieldselectionpage.ui:18
 msgctxt "defaultfieldselectionpage|label1"
@@ -2626,7 +2651,7 @@ msgctxt "fieldassignpage|label2"
 msgid ""
 "To incorporate the address data in your templates, %PRODUCTNAME has to know which fields contain which data.\n"
 "\n"
-"For instance, you could have stored the e-mail addresses in a field named \"email\", or \"E-mail\" or \"EM\" - or something completely different.\n"
+"For instance, you could have stored the email addresses in a field named \"email\", or \"E-mail\" or \"EM\" - or something completely different.\n"
 "\n"
 "Click the button below to open another dialog where you can enter the settings for your data source."
 msgstr ""
@@ -2640,6 +2665,16 @@ msgstr ""
 msgctxt "fieldassignpage|assign"
 msgid "Field Assignment"
 msgstr "Dodelitev polja"
+
+#: extensions/uiconfig/sabpilot/ui/fieldassignpage.ui:45
+msgctxt "fieldassignpage|extended_tip|assign"
+msgid "Opens the Templates: Address Book Assignment dialog."
+msgstr "Odpre pogovorno okno Predloge: določitev adresarja."
+
+#: extensions/uiconfig/sabpilot/ui/fieldassignpage.ui:76
+msgctxt "fieldassignpage|extended_tip|FieldAssignPage"
+msgid "Opens a dialog that allows you to specify the field assignment."
+msgstr "Odpre pogovorno okno, v katerem določite dodelitev polj."
 
 #: extensions/uiconfig/sabpilot/ui/fieldlinkpage.ui:17
 msgctxt "fieldlinkpage|desc"
@@ -2708,7 +2743,7 @@ msgstr "Obstoječa polja"
 
 #: extensions/uiconfig/sabpilot/ui/gridfieldsselectionpage.ui:398
 msgctxt "gridfieldsselectionpage|label2"
-msgid "Table element"
+msgid "Table Element"
 msgstr "Element tabele"
 
 #: extensions/uiconfig/sabpilot/ui/groupradioselectionpage.ui:53
@@ -2753,7 +2788,7 @@ msgstr "Kako želite poi_menovati polja z možnostmi?"
 
 #: extensions/uiconfig/sabpilot/ui/groupradioselectionpage.ui:307
 msgctxt "groupradioselectionpage|label2"
-msgid "Table element"
+msgid "Table Element"
 msgstr "Element tabele"
 
 #: extensions/uiconfig/sabpilot/ui/invokeadminpage.ui:14
@@ -2772,7 +2807,12 @@ msgctxt "invokeadminpage|settings"
 msgid "Settings"
 msgstr "Nastavitve"
 
-#: extensions/uiconfig/sabpilot/ui/invokeadminpage.ui:50
+#: extensions/uiconfig/sabpilot/ui/invokeadminpage.ui:42
+msgctxt "invokeadminpage|extended_tip|settings"
+msgid "Calls a dialog in which you can enter additional settings."
+msgstr "Odpre pogovorno okno, v katerega vnesete dodatne nastavitve."
+
+#: extensions/uiconfig/sabpilot/ui/invokeadminpage.ui:55
 msgctxt "invokeadminpage|warning"
 msgid ""
 "The connection to the data source could not be established.\n"
@@ -2780,6 +2820,11 @@ msgid ""
 msgstr ""
 "Povezave z virom podatkov ni mogoče vzpostaviti.\n"
 "Preden nadaljujete, preverite nastavitve ali (na prejšnji strani) izberite drugo vrsto vira podatkov o naslovih."
+
+#: extensions/uiconfig/sabpilot/ui/invokeadminpage.ui:75
+msgctxt "invokeadminpage|extended_tip|InvokeAdminPage"
+msgid "Allows you to enter additional settings for LDAP address data and other external data sources."
+msgstr "Omogoča vnos dodatnih nastavitev za podatke adresarja LDAP in drugih zunanjih virov podatkov."
 
 #: extensions/uiconfig/sabpilot/ui/optiondbfieldpage.ui:41
 msgctxt "optiondbfieldpage|label1"
@@ -2830,6 +2875,16 @@ msgstr ""
 "Zunanji vir podatkov, ki ste ga izbrali, vsebuje več kot en adresar.\n"
 "Izberite tistega, s katerim želite v glavnem delati:"
 
+#: extensions/uiconfig/sabpilot/ui/selecttablepage.ui:76
+msgctxt "selecttablepage|extended_tip|table"
+msgid "Specifies the table that is to serve as the address book for the %PRODUCTNAME templates."
+msgstr "Določa tabelo, ki bo uporabljena kot adresar za predloge %PRODUCTNAME."
+
+#: extensions/uiconfig/sabpilot/ui/selecttablepage.ui:89
+msgctxt "selecttablepage|extended_tip|SelectTablePage"
+msgid "Specifies a table from the Seamonkey / Netscape address book source that is used as the address book in %PRODUCTNAME."
+msgstr "Določa tabelo iz adresarja Seamonkey / Netscape, ki bo uporabljena kot adresar v programu %PRODUCTNAME."
+
 #: extensions/uiconfig/sabpilot/ui/selecttypepage.ui:14
 msgctxt "selecttypepage|label2"
 msgid ""
@@ -2846,45 +2901,90 @@ msgctxt "selecttypepage|evolution"
 msgid "Evolution"
 msgstr "Evolution"
 
-#: extensions/uiconfig/sabpilot/ui/selecttypepage.ui:56
+#: extensions/uiconfig/sabpilot/ui/selecttypepage.ui:50
+msgctxt "selecttypepage|extended_tip|evolution"
+msgid "Select this option if you already use an address book in Evolution."
+msgstr "Izberite to možnost, če že uporabljate adresar v programu Evolution."
+
+#: extensions/uiconfig/sabpilot/ui/selecttypepage.ui:61
 msgctxt "selecttypepage|groupwise"
 msgid "Groupwise"
 msgstr "Groupwise"
 
-#: extensions/uiconfig/sabpilot/ui/selecttypepage.ui:72
+#: extensions/uiconfig/sabpilot/ui/selecttypepage.ui:71
+msgctxt "selecttypepage|extended_tip|groupwise"
+msgid "Select this option if you already use an address book in Groupwise."
+msgstr "Izberite to možnost, če že uporabljate adresar programa Groupwise."
+
+#: extensions/uiconfig/sabpilot/ui/selecttypepage.ui:82
 msgctxt "selecttypepage|evoldap"
 msgid "Evolution LDAP"
 msgstr "Evolution – LDAP"
 
-#: extensions/uiconfig/sabpilot/ui/selecttypepage.ui:88
+#: extensions/uiconfig/sabpilot/ui/selecttypepage.ui:92
+msgctxt "selecttypepage|extended_tip|evoldap"
+msgid "Select this option if you already use an address book in Evolution LDAP."
+msgstr "Izberite to možnost, če že uporabljate adresar v Evolution LDAP."
+
+#: extensions/uiconfig/sabpilot/ui/selecttypepage.ui:103
 msgctxt "selecttypepage|firefox"
 msgid "Firefox"
 msgstr "Firefox"
 
-#: extensions/uiconfig/sabpilot/ui/selecttypepage.ui:104
+#: extensions/uiconfig/sabpilot/ui/selecttypepage.ui:113
+msgctxt "selecttypepage|extended_tip|firefox"
+msgid "Select this option if you already use an address book in Firefox or Iceweasel."
+msgstr "To možnost izberite, če že uporabljate adresar v e-poštnem odjemalcu Firefox oz. Iceweasel."
+
+#: extensions/uiconfig/sabpilot/ui/selecttypepage.ui:124
 msgctxt "selecttypepage|thunderbird"
 msgid "Thunderbird"
 msgstr "Thunderbird"
 
-#: extensions/uiconfig/sabpilot/ui/selecttypepage.ui:120
+#: extensions/uiconfig/sabpilot/ui/selecttypepage.ui:134
+msgctxt "selecttypepage|extended_tip|thunderbird"
+msgid "Select this option if you already use an address book in Thunderbird or Icedove."
+msgstr "To možnost izberite, če že uporabljate adresar v e-poštnem odjemalcu Thunderbird oz. Icedove."
+
+#: extensions/uiconfig/sabpilot/ui/selecttypepage.ui:145
 msgctxt "selecttypepage|kde"
 msgid "KDE address book"
 msgstr "Adresar KDE"
 
-#: extensions/uiconfig/sabpilot/ui/selecttypepage.ui:136
+#: extensions/uiconfig/sabpilot/ui/selecttypepage.ui:155
+msgctxt "selecttypepage|extended_tip|kde"
+msgid "Select this option if you already use an address book in KDE Address book."
+msgstr "Izberite to možnost, če že uporabljate adresar KDE."
+
+#: extensions/uiconfig/sabpilot/ui/selecttypepage.ui:166
 msgctxt "selecttypepage|macosx"
 msgid "Mac OS X address book"
 msgstr "Adresar Mac OS X"
 
-#: extensions/uiconfig/sabpilot/ui/selecttypepage.ui:152
+#: extensions/uiconfig/sabpilot/ui/selecttypepage.ui:176
+msgctxt "selecttypepage|extended_tip|macosx"
+msgid "Select this option if you already use an address book in macOS Address book."
+msgstr "Izberite to možnost, če že uporabljate sistemski adresar macOS (Address book oz. Contacts)."
+
+#: extensions/uiconfig/sabpilot/ui/selecttypepage.ui:187
 msgctxt "selecttypepage|other"
 msgid "Other external data source"
 msgstr "Drug zunanji vir podatkov"
 
-#: extensions/uiconfig/sabpilot/ui/selecttypepage.ui:170
+#: extensions/uiconfig/sabpilot/ui/selecttypepage.ui:197
+msgctxt "selecttypepage|extended_tip|other"
+msgid "Select this option if you want to register another data source as address book in %PRODUCTNAME."
+msgstr "To možnost izberite, če želite v %PRODUCTNAME kot adresar registrirati drug vir podatkov."
+
+#: extensions/uiconfig/sabpilot/ui/selecttypepage.ui:210
 msgctxt "selecttypepage|label1"
 msgid "Select the type of your external address book:"
 msgstr "Izberite vrsto zunanjega adresarja:"
+
+#: extensions/uiconfig/sabpilot/ui/selecttypepage.ui:230
+msgctxt "selecttypepage|extended_tip|SelectTypePage"
+msgid "This wizard registers an existing address book as a data source in %PRODUCTNAME."
+msgstr "Ta čarovnik registrira obstoječi adresar kot vir podatkov v %PRODUCTNAME."
 
 #: extensions/uiconfig/sabpilot/ui/tableselectionpage.ui:60
 msgctxt "tableselectionpage|label3"
@@ -2932,6 +3032,16 @@ msgstr "Izberite vir podatkov"
 msgctxt "choosedatasourcedialog|label1"
 msgid "Entry"
 msgstr "Vnos"
+
+#: extensions/uiconfig/sbibliography/ui/combobox.ui:16
+msgctxt "combobox|TBC_FT_SOURCE"
+msgid "Table"
+msgstr "Tabela"
+
+#: extensions/uiconfig/sbibliography/ui/editbox.ui:14
+msgctxt "editbox|TBC_FT_QUERY"
+msgid "Search Key"
+msgstr "Iskani niz"
 
 #: extensions/uiconfig/sbibliography/ui/generalpage.ui:34
 msgctxt "generalpage|shortname"
@@ -3088,210 +3198,220 @@ msgctxt "generalpage|custom3"
 msgid "User-defined field _3"
 msgstr "Upor. določeno polje _3"
 
+#: extensions/uiconfig/sbibliography/ui/generalpage.ui:617
+msgctxt "generalpage|extended_tip|GeneralPage"
+msgid "Insert, delete, edit, and organize records in the bibliography database."
+msgstr "Vstavite, izbrišite, uredite in organizirajte zapise v bibliografski zbirki podatkov."
+
 #: extensions/uiconfig/sbibliography/ui/mappingdialog.ui:8
 msgctxt "mappingdialog|MappingDialog"
 msgid "Column Layout for Table “%1”"
 msgstr "Postavitev stolpcev za tabelo »%1«"
 
-#: extensions/uiconfig/sbibliography/ui/mappingdialog.ui:109
+#: extensions/uiconfig/sbibliography/ui/mappingdialog.ui:106
 msgctxt "mappingdialog|label2"
 msgid "_Short name"
 msgstr "_Kratko ime"
 
-#: extensions/uiconfig/sbibliography/ui/mappingdialog.ui:123
+#: extensions/uiconfig/sbibliography/ui/mappingdialog.ui:120
 msgctxt "mappingdialog|label3"
 msgid "_Author(s)"
 msgstr "Av_tor(ji)"
 
-#: extensions/uiconfig/sbibliography/ui/mappingdialog.ui:137
+#: extensions/uiconfig/sbibliography/ui/mappingdialog.ui:134
 msgctxt "mappingdialog|label4"
 msgid "_Publisher"
 msgstr "Iz_dajatelj"
 
-#: extensions/uiconfig/sbibliography/ui/mappingdialog.ui:151
+#: extensions/uiconfig/sbibliography/ui/mappingdialog.ui:148
 msgctxt "mappingdialog|label5"
 msgid "_Chapter"
 msgstr "Po_glavje"
 
-#: extensions/uiconfig/sbibliography/ui/mappingdialog.ui:165
+#: extensions/uiconfig/sbibliography/ui/mappingdialog.ui:162
 msgctxt "mappingdialog|label6"
 msgid "Editor"
 msgstr "Urednik"
 
-#: extensions/uiconfig/sbibliography/ui/mappingdialog.ui:225
+#: extensions/uiconfig/sbibliography/ui/mappingdialog.ui:222
 msgctxt "mappingdialog|label7"
 msgid "_Type"
 msgstr "_Vrsta"
 
-#: extensions/uiconfig/sbibliography/ui/mappingdialog.ui:239
+#: extensions/uiconfig/sbibliography/ui/mappingdialog.ui:236
 msgctxt "mappingdialog|label8"
 msgid "_Year"
 msgstr "_Leto"
 
-#: extensions/uiconfig/sbibliography/ui/mappingdialog.ui:253
+#: extensions/uiconfig/sbibliography/ui/mappingdialog.ui:250
 msgctxt "mappingdialog|label9"
 msgid "Tit_le"
 msgstr "Nas_lov"
 
-#: extensions/uiconfig/sbibliography/ui/mappingdialog.ui:303
+#: extensions/uiconfig/sbibliography/ui/mappingdialog.ui:300
 msgctxt "mappingdialog|label10"
 msgid "A_ddress"
 msgstr "_Naslov"
 
-#: extensions/uiconfig/sbibliography/ui/mappingdialog.ui:317
+#: extensions/uiconfig/sbibliography/ui/mappingdialog.ui:314
 msgctxt "mappingdialog|label11"
 msgid "_ISBN"
 msgstr "_ISBN"
 
-#: extensions/uiconfig/sbibliography/ui/mappingdialog.ui:331
+#: extensions/uiconfig/sbibliography/ui/mappingdialog.ui:328
 msgctxt "mappingdialog|label12"
 msgid "Pa_ge(s)"
 msgstr "_Stran(i)"
 
-#: extensions/uiconfig/sbibliography/ui/mappingdialog.ui:381
+#: extensions/uiconfig/sbibliography/ui/mappingdialog.ui:378
 msgctxt "mappingdialog|label13"
 msgid "Ed_ition"
 msgstr "Iz_daja"
 
-#: extensions/uiconfig/sbibliography/ui/mappingdialog.ui:407
+#: extensions/uiconfig/sbibliography/ui/mappingdialog.ui:404
 msgctxt "mappingdialog|label14"
 msgid "_Book title"
 msgstr "_Naslov knjige"
 
-#: extensions/uiconfig/sbibliography/ui/mappingdialog.ui:421
+#: extensions/uiconfig/sbibliography/ui/mappingdialog.ui:418
 msgctxt "mappingdialog|label15"
 msgid "Volume"
 msgstr "Zvezek/del"
 
-#: extensions/uiconfig/sbibliography/ui/mappingdialog.ui:433
+#: extensions/uiconfig/sbibliography/ui/mappingdialog.ui:430
 msgctxt "mappingdialog|label16"
 msgid "Publication t_ype"
 msgstr "Vrsta o_bjave"
 
-#: extensions/uiconfig/sbibliography/ui/mappingdialog.ui:483
+#: extensions/uiconfig/sbibliography/ui/mappingdialog.ui:480
 msgctxt "mappingdialog|label17"
 msgid "Organi_zation"
 msgstr "Organi_zacija"
 
-#: extensions/uiconfig/sbibliography/ui/mappingdialog.ui:497
+#: extensions/uiconfig/sbibliography/ui/mappingdialog.ui:494
 msgctxt "mappingdialog|label18"
 msgid "Instit_ution"
 msgstr "_Ustanova"
 
-#: extensions/uiconfig/sbibliography/ui/mappingdialog.ui:511
+#: extensions/uiconfig/sbibliography/ui/mappingdialog.ui:508
 msgctxt "mappingdialog|label19"
 msgid "Uni_versity"
 msgstr "Uni_verza"
 
-#: extensions/uiconfig/sbibliography/ui/mappingdialog.ui:561
+#: extensions/uiconfig/sbibliography/ui/mappingdialog.ui:558
 msgctxt "mappingdialog|label20"
 msgid "Type of re_port"
 msgstr "Vrsta _poročila"
 
-#: extensions/uiconfig/sbibliography/ui/mappingdialog.ui:575
+#: extensions/uiconfig/sbibliography/ui/mappingdialog.ui:572
 msgctxt "mappingdialog|label21"
 msgid "_Month"
 msgstr "_Mesec"
 
-#: extensions/uiconfig/sbibliography/ui/mappingdialog.ui:613
+#: extensions/uiconfig/sbibliography/ui/mappingdialog.ui:610
 msgctxt "mappingdialog|label22"
 msgid "_Journal"
 msgstr "_Revija"
 
-#: extensions/uiconfig/sbibliography/ui/mappingdialog.ui:627
+#: extensions/uiconfig/sbibliography/ui/mappingdialog.ui:624
 msgctxt "mappingdialog|label23"
 msgid "Numb_er"
 msgstr "_Številka"
 
-#: extensions/uiconfig/sbibliography/ui/mappingdialog.ui:641
+#: extensions/uiconfig/sbibliography/ui/mappingdialog.ui:638
 msgctxt "mappingdialog|label24"
 msgid "Se_ries"
 msgstr "_Zbirka"
 
-#: extensions/uiconfig/sbibliography/ui/mappingdialog.ui:691
+#: extensions/uiconfig/sbibliography/ui/mappingdialog.ui:688
 msgctxt "mappingdialog|label25"
 msgid "Ann_otation"
 msgstr "Pripomb_a"
 
-#: extensions/uiconfig/sbibliography/ui/mappingdialog.ui:705
+#: extensions/uiconfig/sbibliography/ui/mappingdialog.ui:702
 msgctxt "mappingdialog|label26"
 msgid "_Note"
 msgstr "_Opomba"
 
-#: extensions/uiconfig/sbibliography/ui/mappingdialog.ui:719
+#: extensions/uiconfig/sbibliography/ui/mappingdialog.ui:716
 msgctxt "mappingdialog|label27"
 msgid "URL"
 msgstr "URL"
 
-#: extensions/uiconfig/sbibliography/ui/mappingdialog.ui:767
+#: extensions/uiconfig/sbibliography/ui/mappingdialog.ui:764
 msgctxt "mappingdialog|label28"
 msgid "User-defined field _1"
 msgstr "Upor. določeno polje _1"
 
-#: extensions/uiconfig/sbibliography/ui/mappingdialog.ui:781
+#: extensions/uiconfig/sbibliography/ui/mappingdialog.ui:778
 msgctxt "mappingdialog|label29"
 msgid "User-defined field _2"
 msgstr "Upor. določeno polje _2"
 
-#: extensions/uiconfig/sbibliography/ui/mappingdialog.ui:795
+#: extensions/uiconfig/sbibliography/ui/mappingdialog.ui:792
 msgctxt "mappingdialog|label30"
 msgid "User-defined field _3"
 msgstr "Upor. določeno polje _3"
 
-#: extensions/uiconfig/sbibliography/ui/mappingdialog.ui:809
+#: extensions/uiconfig/sbibliography/ui/mappingdialog.ui:806
 msgctxt "mappingdialog|label31"
 msgid "User-defined field _4"
 msgstr "Upor. določeno polje _4"
 
-#: extensions/uiconfig/sbibliography/ui/mappingdialog.ui:823
+#: extensions/uiconfig/sbibliography/ui/mappingdialog.ui:820
 msgctxt "mappingdialog|label32"
 msgid "User-defined field _5"
 msgstr "Upor. določeno polje _5"
 
-#: extensions/uiconfig/sbibliography/ui/mappingdialog.ui:1035
+#: extensions/uiconfig/sbibliography/ui/mappingdialog.ui:1032
 msgctxt "mappingdialog|label1"
 msgid "Column Names"
 msgstr "Imena stolpcev"
+
+#: extensions/uiconfig/sbibliography/ui/mappingdialog.ui:1057
+msgctxt "mappingdialog|extended_tip|MappingDialog"
+msgid "Lets you map the column headings to data fields from a different data source. To define a different data source for your bibliography, click the Data Source button on the record's Object bar."
+msgstr "Omogoča, da povežete glave stolpcev s podatkovnimi polji iz drugega vira podatkov. Če želite določiti drug vir podatkov za vašo bibliografijo, kliknite gumb Vir podatkov v vrstici Predmet za zapis."
 
 #: extensions/uiconfig/sbibliography/ui/querydialog.ui:30
 msgctxt "querydialog|ask"
 msgid "Do not show this question again."
 msgstr "Tega vprašanja ne kaži več."
 
-#: extensions/uiconfig/sbibliography/ui/toolbar.ui:14
-msgctxt "toolbar|TBC_FT_SOURCE"
-msgid "Table"
-msgstr "Tabela"
-
-#: extensions/uiconfig/sbibliography/ui/toolbar.ui:39
+#: extensions/uiconfig/sbibliography/ui/toolbar.ui:26
 msgctxt "toolbar|TBC_BT_CHANGESOURCE"
 msgid "Data Source"
 msgstr "Vir podatkov"
 
-#: extensions/uiconfig/sbibliography/ui/toolbar.ui:62
-msgctxt "toolbar|TBC_FT_QUERY"
-msgid "Search Key"
-msgstr "Iskani niz"
-
-#: extensions/uiconfig/sbibliography/ui/toolbar.ui:97
+#: extensions/uiconfig/sbibliography/ui/toolbar.ui:71
 msgctxt "toolbar|TBC_BT_AUTOFILTER"
 msgid "AutoFilter"
 msgstr "Samodejni filter"
 
-#: extensions/uiconfig/sbibliography/ui/toolbar.ui:110
+#: extensions/uiconfig/sbibliography/ui/toolbar.ui:84
 msgctxt "toolbar|TBC_BT_FILTERCRIT"
 msgid "Standard Filter"
 msgstr "Standardni filter"
 
-#: extensions/uiconfig/sbibliography/ui/toolbar.ui:123
+#: extensions/uiconfig/sbibliography/ui/toolbar.ui:97
 msgctxt "toolbar|TBC_BT_REMOVEFILTER"
 msgid "Reset Filter"
 msgstr "Ponastavi filter"
 
-#: extensions/uiconfig/sbibliography/ui/toolbar.ui:136
+#: extensions/uiconfig/sbibliography/ui/toolbar.ui:110
 msgctxt "toolbar|TBC_BT_COL_ASSIGN"
 msgid "Column Arrangement"
 msgstr "Razporeditev stolpcev"
+
+#: extensions/uiconfig/sbibliography/ui/toolbar.ui:114
+msgctxt "toolbar|extended_tip|TBC_BT_COL_ASSIGN"
+msgid "Lets you map the column headings to data fields from a different data source. To define a different data source for your bibliography, click the Data Source button on the record's Object bar."
+msgstr "Omogoča, da povežete glave stolpcev s podatkovnimi polji iz drugega vira podatkov. Če želite določiti drug vir podatkov za vašo bibliografijo, kliknite gumb Vir podatkov v vrstici Predmet za zapis."
+
+#: extensions/uiconfig/sbibliography/ui/toolbar.ui:125
+msgctxt "toolbar|extended_tip|toolbar"
+msgid "Insert, delete, edit, and organize records in the bibliography database."
+msgstr "Vstavite, izbrišite, uredite in organizirajte zapise v bibliografski zbirki podatkov."
 
 #: extensions/uiconfig/scanner/ui/griddialog.ui:111
 msgctxt "griddialog|resetTypeCombobox"
@@ -3360,7 +3480,7 @@ msgstr "S_podaj:"
 
 #: extensions/uiconfig/scanner/ui/sanedialog.ui:275
 msgctxt "sanedialog|label1"
-msgid "Scan area"
+msgid "Scan Area"
 msgstr "Območje optičnega branja"
 
 #: extensions/uiconfig/scanner/ui/sanedialog.ui:334
@@ -3466,7 +3586,7 @@ msgstr "Izbor nalepke"
 #: extensions/uiconfig/spropctrlr/ui/labelselectiondialog.ui:102
 msgctxt "labelselectiondialog|label"
 msgid "These are control fields that can be used as label fields for the $controlclass$ $controlname$."
-msgstr "To so kontrolna polja, ki jih lahko uporabite kot nalepke za $control_class$ $control_name$."
+msgstr "To so kontrolna polja, ki jih lahko uporabite kot nalepke za $controlclass$ $controlname$."
 
 #: extensions/uiconfig/spropctrlr/ui/labelselectiondialog.ui:166
 msgctxt "labelselectiondialog|noassignment"
@@ -3483,22 +3603,27 @@ msgctxt "taborder|TabOrderDialog"
 msgid "Tab Order"
 msgstr "Zaporedje premikanja"
 
-#: extensions/uiconfig/spropctrlr/ui/taborder.ui:168
+#: extensions/uiconfig/spropctrlr/ui/taborder.ui:150
+msgctxt "taborder|extended_tip|CTRLtree"
+msgid "Lists all controls in the form. These controls can be selected with the tab key in the given order from top to bottom."
+msgstr "Tukaj so našteti vsi kontrolniki v obrazcu. Izberete jih lahko s tabulatorko v danem vrstnem redu od vrha navzdol."
+
+#: extensions/uiconfig/spropctrlr/ui/taborder.ui:170
 msgctxt "taborder|upB"
 msgid "_Move Up"
 msgstr "Premakni navz_gor"
 
-#: extensions/uiconfig/spropctrlr/ui/taborder.ui:182
+#: extensions/uiconfig/spropctrlr/ui/taborder.ui:184
 msgctxt "taborder|downB"
 msgid "Move _Down"
 msgstr "Premakni navz_dol"
 
-#: extensions/uiconfig/spropctrlr/ui/taborder.ui:196
+#: extensions/uiconfig/spropctrlr/ui/taborder.ui:198
 msgctxt "taborder|autoB"
 msgid "_Automatic Sort"
 msgstr "Sa_modejno razvrščanje"
 
-#: extensions/uiconfig/spropctrlr/ui/taborder.ui:222
+#: extensions/uiconfig/spropctrlr/ui/taborder.ui:224
 msgctxt "taborder|label2"
 msgid "Controls"
 msgstr "Kontrolniki"
