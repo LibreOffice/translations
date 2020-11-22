@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2020-11-16 13:43+0100\n"
-"PO-Revision-Date: 2020-11-11 20:35+0000\n"
+"POT-Creation-Date: 2020-11-20 15:34+0100\n"
+"PO-Revision-Date: 2020-11-22 11:56+0000\n"
 "Last-Translator: Ming Hua <plateauwolf@qq.com>\n"
 "Language-Team: Chinese (Simplified) <https://weblate.documentfoundation.org/projects/libo_ui-master/scmessages/zh_Hans/>\n"
 "Language: zh-CN\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Accelerator-Marker: ~\n"
-"X-Generator: LibreOffice\n"
+"X-Generator: Weblate 4.1.1\n"
 "X-POOTLE-MTIME: 1562731995.000000\n"
 
 #. kBovX
@@ -1467,7 +1467,7 @@ msgstr "导入 Dif"
 #: sc/inc/globstr.hrc:272
 msgctxt "STR_STYLENAME_STANDARD"
 msgid "Default"
-msgstr ""
+msgstr "默认"
 
 #. TG9pD
 #: sc/inc/globstr.hrc:273
@@ -14680,7 +14680,7 @@ msgstr "当测试结果为 TRUE 时函数的结果。"
 #: sc/inc/scfuncs.hrc:3606
 msgctxt "SC_OPCODE_SWITCH_MS"
 msgid "Compares expression against list of value/result pairs, and returns result for first value that matches the expression.  If expression does not match any value, a default result is returned, if it is placed as final item in parameter list without a value."
-msgstr ""
+msgstr "将表达式与一个「值／结果」列表中的值相比较，返回第一个与表达式匹配的值所对应的结果。如果表达式和所有值都不匹配，则可以返回一个默认结果。默认结果放在参数列表末尾，且没有相对应的值。"
 
 #. PneN8
 #: sc/inc/scfuncs.hrc:3607
@@ -14692,7 +14692,7 @@ msgstr "表达式"
 #: sc/inc/scfuncs.hrc:3608
 msgctxt "SC_OPCODE_SWITCH_MS"
 msgid "Value to be compared against value1…valueN (N ≤ 127)"
-msgstr ""
+msgstr "用于和「值1...值N (N ≤ 127)」参数相比较的值"
 
 #. 9wcvj
 #: sc/inc/scfuncs.hrc:3609
@@ -14704,7 +14704,7 @@ msgstr "值"
 #: sc/inc/scfuncs.hrc:3610
 msgctxt "SC_OPCODE_SWITCH_MS"
 msgid "Value to compare against expression. If no result is given, then value is returned as default result."
-msgstr ""
+msgstr "用于和表达式参数相比较的值。如果没有设定结果参数，则默认将此值参数当结果返回。"
 
 #. dsARv
 #: sc/inc/scfuncs.hrc:3611
@@ -14716,7 +14716,7 @@ msgstr "结果"
 #: sc/inc/scfuncs.hrc:3612
 msgctxt "SC_OPCODE_SWITCH_MS"
 msgid "Value to return when corresponding value argument matches expression."
-msgstr "对应的值参数匹配表达式时要返回的值。"
+msgstr "当对应的值参数与表达式参数匹配时，将此值作为函数结果返回。"
 
 #. m2wBA
 #: sc/inc/scfuncs.hrc:3617
@@ -22467,25 +22467,25 @@ msgstr ""
 #: sc/uiconfig/scalc/ui/filterdropdown.ui:123
 msgctxt "filterdropdown|STR_EDIT_SEARCH_ITEMS"
 msgid "Search items..."
-msgstr ""
+msgstr "搜索条目..."
 
 #. zKwWE
 #: sc/uiconfig/scalc/ui/filterdropdown.ui:157
 msgctxt "filterdropdown|STR_BTN_TOGGLE_ALL"
 msgid "All"
-msgstr ""
+msgstr "全部"
 
 #. JsSz6
 #: sc/uiconfig/scalc/ui/filterdropdown.ui:177
 msgctxt "filterdropdown|STR_BTN_SELECT_CURRENT"
 msgid "Show only the current item."
-msgstr ""
+msgstr "仅显示当前项。"
 
 #. vBQYB
 #: sc/uiconfig/scalc/ui/filterdropdown.ui:192
 msgctxt "filterdropdown|STR_BTN_UNSELECT_CURRENT"
 msgid "Hide only the current item."
-msgstr ""
+msgstr "仅隐藏当前项。"
 
 #. AfnFz
 #: sc/uiconfig/scalc/ui/floatingborderstyle.ui:34
@@ -25211,13 +25211,13 @@ msgstr "强调 3"
 #: sc/uiconfig/scalc/ui/notebookbar_groupedbar_full.ui:2653
 msgctxt "notebookbar_groupedbar_full|Header1"
 msgid "Heading 1"
-msgstr ""
+msgstr "标题 1"
 
 #. 6Ej4G
 #: sc/uiconfig/scalc/ui/notebookbar_groupedbar_full.ui:2661
 msgctxt "notebookbar_groupedbar_full|Header2"
 msgid "Heading 2"
-msgstr ""
+msgstr "标题 2"
 
 #. sqE94
 #: sc/uiconfig/scalc/ui/notebookbar_groupedbar_full.ui:2675
@@ -28622,38 +28622,44 @@ msgctxt "extended_tip|replwarncb"
 msgid "Specifies that, when you paste cells from the clipboard to a cell range that is not empty, a warning appears."
 msgstr "指定在将单元格从剪贴板粘贴到非空白的单元格区域时显示警告。"
 
-#. LFenu
+#. H477x
 #: sc/uiconfig/scalc/ui/scgeneralpage.ui:375
+msgctxt "scgeneralpage|enter_paste_mode_cb"
+msgid "Press Enter to paste and clear clipboard"
+msgstr "按 Enter 键粘贴剪贴板内容并清空剪贴板"
+
+#. LFenu
+#: sc/uiconfig/scalc/ui/scgeneralpage.ui:391
 msgctxt "scgeneralpage|textfmtcb"
 msgid "Use printer metrics for text formatting"
 msgstr "文字格式化时使用打印机参数"
 
 #. ECUd7
-#: sc/uiconfig/scalc/ui/scgeneralpage.ui:383
+#: sc/uiconfig/scalc/ui/scgeneralpage.ui:399
 msgctxt "extended_tip|textfmtcb"
 msgid "Specifies that printer metrics are applied for printing and also for formatting the display on the screen."
 msgstr "指定在打印以及格式化屏幕显示时应用打印机参数。"
 
 #. zW9SZ
-#: sc/uiconfig/scalc/ui/scgeneralpage.ui:395
+#: sc/uiconfig/scalc/ui/scgeneralpage.ui:411
 msgctxt "scgeneralpage|markhdrcb"
 msgid "Highlight sele_ction in column/row headers"
 msgstr "高亮显示当前已选中的行标签/列标签"
 
 #. payBv
-#: sc/uiconfig/scalc/ui/scgeneralpage.ui:404
+#: sc/uiconfig/scalc/ui/scgeneralpage.ui:420
 msgctxt "extended_tip|markhdrcb"
 msgid "Specifies whether to highlight column and row headers in the selected columns or rows."
 msgstr "指定是否在选中列和行中高亮显示列和行标题。"
 
 #. KGWyE
-#: sc/uiconfig/scalc/ui/scgeneralpage.ui:416
+#: sc/uiconfig/scalc/ui/scgeneralpage.ui:432
 msgctxt "scgeneralpage|sortrefupdatecb"
 msgid "Update references when sorting range of cells"
 msgstr "对单元格区域排序时更新单元格引用"
 
 #. M9G8o
-#: sc/uiconfig/scalc/ui/scgeneralpage.ui:437
+#: sc/uiconfig/scalc/ui/scgeneralpage.ui:453
 msgctxt "scgeneralpage|label3"
 msgid "Input Settings"
 msgstr "输入设置"
@@ -32251,7 +32257,7 @@ msgstr "错误警告"
 #: sc/uiconfig/scalc/ui/validationhelptabpage-mobile.ui:15
 msgctxt "validationhelptabpage-mobile|tsbhelp"
 msgid "_Show input help when cell is selected"
-msgstr ""
+msgstr "选中单元格时显示输入提示(_S)"
 
 #. ZJEXj
 #: sc/uiconfig/scalc/ui/validationhelptabpage-mobile.ui:56

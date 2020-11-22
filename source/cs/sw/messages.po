@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2020-11-16 13:43+0100\n"
-"PO-Revision-Date: 2020-11-10 19:35+0000\n"
+"POT-Creation-Date: 2020-11-20 15:34+0100\n"
+"PO-Revision-Date: 2020-11-22 11:56+0000\n"
 "Last-Translator: Stanislav Horáček <stanislav.horacek@gmail.com>\n"
 "Language-Team: Czech <https://weblate.documentfoundation.org/projects/libo_ui-master/swmessages/cs/>\n"
 "Language: cs\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 "X-Accelerator-Marker: ~\n"
-"X-Generator: LibreOffice\n"
+"X-Generator: Weblate 4.1.1\n"
 "X-POOTLE-MTIME: 1563223676.000000\n"
 
 #. v3oJv
@@ -98,13 +98,13 @@ msgstr "Tabulky nemohou obsahovat nadpisy."
 #: sw/inc/AccessibilityCheckStrings.hrc:29
 msgctxt "STR_HEADING_ORDER"
 msgid "Keep headings' levels ordered. Heading level %LEVEL_CURRENT% must not go after %LEVEL_PREV%."
-msgstr ""
+msgstr "Zachovejte správné řazení úrovní nadpisů. Úroveň %LEVEL_CURRENT% nemůže následovat po úrovni %LEVEL_PREV%."
 
 #. gkDzg
 #: sw/inc/AccessibilityCheckStrings.hrc:30
 msgctxt "STR_FONTWORKS"
 msgid "Avoid fontworks in your documents. Be sure you're using it in order to show a sample or another meaningless text."
-msgstr ""
+msgstr "Nepoužívejte v dokumentech písmomalbu. Případně se ujistěte, že se používá pouze pro zobrazení příkladu či jiného textu bez významu."
 
 #. UWv4T
 #: sw/inc/AccessibilityCheckStrings.hrc:32
@@ -614,13 +614,13 @@ msgstr "Číslované odstavce"
 #: sw/inc/inspectorproperties.hrc:31
 msgctxt "RID_CHAR_DIRECTFORMAT"
 msgid "Character Direct Formatting"
-msgstr ""
+msgstr "Přímé formátování znaku"
 
 #. fYAUc
 #: sw/inc/inspectorproperties.hrc:32
 msgctxt "RID_PARA_DIRECTFORMAT"
 msgid "Paragraph Direct Formatting"
-msgstr ""
+msgstr "Přímé formátování odstavce"
 
 #. YUbUQ
 #. Format names
@@ -5757,19 +5757,19 @@ msgstr "Vypnuto"
 #: sw/inc/strings.hrc:646
 msgctxt "STR_OUTLINE_CONTENT_TOGGLE_VISIBILITY"
 msgid "Click to toggle content visibility"
-msgstr ""
+msgstr "Kliknutím přepnete viditelnost osnovy"
 
 #. 44jEc
 #: sw/inc/strings.hrc:647
 msgctxt "STR_OUTLINE_CONTENT_TOGGLE_VISIBILITY_EXT"
 msgid "right-click to include sub levels"
-msgstr ""
+msgstr "Kliknutím pravým tlačítkem zahrnete úrovně"
 
 #. kDbnu
 #: sw/inc/strings.hrc:648
 msgctxt "STR_CLICK_OUTLINE_CONTENT_TOGGLE_VISIBILITY"
 msgid "Click to toggle content visibility"
-msgstr ""
+msgstr "Kliknutím přepnete viditelnost obsahu"
 
 #. rkD8H
 #: sw/inc/strings.hrc:649
@@ -17445,86 +17445,92 @@ msgctxt "inserttable|extended_tip|rowspin"
 msgid "Enter the number of rows that you want in the table."
 msgstr "Zadejte požadovaný počet řádků v tabulce."
 
+#. odHbY
+#: sw/uiconfig/swriter/ui/inserttable.ui:245
+msgctxt "inserttable|lbwarning"
+msgid "Warning : Large tables may adversely affect performance and compatibility"
+msgstr "Upozornění: Rozsáhlé tabulky mohou nepříznivě ovlivnit rychlost a kompatibilitu"
+
 #. M2tGB
-#: sw/uiconfig/swriter/ui/inserttable.ui:250
+#: sw/uiconfig/swriter/ui/inserttable.ui:261
 msgctxt "inserttable|label1"
 msgid "General"
 msgstr "Obecné"
 
 #. dYEPP
-#: sw/uiconfig/swriter/ui/inserttable.ui:289
+#: sw/uiconfig/swriter/ui/inserttable.ui:300
 msgctxt "inserttable|headercb"
 msgid "Hea_ding"
 msgstr "_Záhlaví"
 
 #. EZBnS
-#: sw/uiconfig/swriter/ui/inserttable.ui:298
+#: sw/uiconfig/swriter/ui/inserttable.ui:309
 msgctxt "inserttable|extended_tip|headercb"
 msgid "Includes a heading row in the table."
 msgstr "Vloží do tabulky záhlaví."
 
 #. 7obXo
-#: sw/uiconfig/swriter/ui/inserttable.ui:309
+#: sw/uiconfig/swriter/ui/inserttable.ui:320
 msgctxt "inserttable|repeatcb"
 msgid "Repeat heading rows on new _pages"
 msgstr "_Opakovat řádky záhlaví na nových stránkách"
 
 #. LdEem
-#: sw/uiconfig/swriter/ui/inserttable.ui:321
+#: sw/uiconfig/swriter/ui/inserttable.ui:332
 msgctxt "inserttable|extended_tip|repeatcb"
 msgid "Repeats the heading of the table at the top of subsequent page if the table spans more than one page."
 msgstr "Zopakuje záhlaví tabulky v horní části každé následující strany, jestliže tabulka přesahuje víc než jednu stranu."
 
 #. EkDeF
-#: sw/uiconfig/swriter/ui/inserttable.ui:332
+#: sw/uiconfig/swriter/ui/inserttable.ui:343
 msgctxt "inserttable|dontsplitcb"
 msgid "Don’t _split table over pages"
 msgstr "Nerozdělovat _tabulku přes stránky"
 
 #. rGaCK
-#: sw/uiconfig/swriter/ui/inserttable.ui:341
+#: sw/uiconfig/swriter/ui/inserttable.ui:352
 msgctxt "inserttable|extended_tip|dontsplitcb"
 msgid "Prevents the table from spanning more than one page."
 msgstr "Zabrání tabulce přesáhnout víc než jednu stranu."
 
 #. NveMH
-#: sw/uiconfig/swriter/ui/inserttable.ui:367
+#: sw/uiconfig/swriter/ui/inserttable.ui:378
 msgctxt "inserttable|extended_tip|repeatheaderspin"
 msgid "Select the number of rows that you want to use for the heading."
 msgstr "Vyberte požadovaný počet řádků pro záhlaví tabulky."
 
 #. kkA32
-#: sw/uiconfig/swriter/ui/inserttable.ui:380
+#: sw/uiconfig/swriter/ui/inserttable.ui:391
 msgctxt "inserttable|repeatheaderafter"
 msgid "Heading ro_ws:"
 msgstr "Řádky zá_hlaví:"
 
 #. D26kf
-#: sw/uiconfig/swriter/ui/inserttable.ui:403
+#: sw/uiconfig/swriter/ui/inserttable.ui:414
 msgctxt "inserttable|label2"
 msgid "Options"
 msgstr "Možnosti"
 
 #. GRq9m
-#: sw/uiconfig/swriter/ui/inserttable.ui:447
+#: sw/uiconfig/swriter/ui/inserttable.ui:458
 msgctxt "inserttable|extended_tip|previewinstable"
 msgid "Displays a preview of the current selection."
 msgstr "Zobrazí náhled aktuálního výběru."
 
 #. QDdwV
-#: sw/uiconfig/swriter/ui/inserttable.ui:489
+#: sw/uiconfig/swriter/ui/inserttable.ui:500
 msgctxt "inserttable|extended_tip|formatlbinstable"
 msgid "Select a predefined style for the new table."
 msgstr "Vyberte pro novou tabulku předdefinovaný styl."
 
 #. 9FGjK
-#: sw/uiconfig/swriter/ui/inserttable.ui:508
+#: sw/uiconfig/swriter/ui/inserttable.ui:519
 msgctxt "inserttable|lbTableStyle"
 msgid "Styles"
 msgstr "Styly"
 
 #. qHExF
-#: sw/uiconfig/swriter/ui/inserttable.ui:540
+#: sw/uiconfig/swriter/ui/inserttable.ui:551
 msgctxt "inserttable|extended_tip|InsertTableDialog"
 msgid "Inserts a table into the document. You can also click the arrow, drag to select the number of rows and columns to include in the table, and then click in the last cell."
 msgstr "Vloží do dokumentu tabulku. Můžete také klepnout na šipku, táhnutím určit rozměr tabulky a vložit ji klepnutím na poslední buňku."
@@ -20038,289 +20044,289 @@ msgid "Text"
 msgstr "Text"
 
 #. xuEPo
-#: sw/uiconfig/swriter/ui/navigatorpanel.ui:262
+#: sw/uiconfig/swriter/ui/navigatorpanel.ui:264
 msgctxt "navigatorpanel|contenttoggle|tooltip_text"
 msgid "Toggle Master View"
 msgstr "Přepnout hlavní pohled"
 
 #. bavit
-#: sw/uiconfig/swriter/ui/navigatorpanel.ui:266
+#: sw/uiconfig/swriter/ui/navigatorpanel.ui:268
 msgctxt "navigatorpanel|extended_tip|contenttoggle"
 msgid "Switches between master view and normal view if a master document is open."
 msgstr "Přepíná mezi hlavním pohledem a normálním pohledem, jestliže je otevřen hlavní dokument."
 
 #. aVJn7
-#: sw/uiconfig/swriter/ui/navigatorpanel.ui:339
+#: sw/uiconfig/swriter/ui/navigatorpanel.ui:374
 msgctxt "navigatorpanel|spinbutton|tooltip_text"
 msgid "Go to Page"
 msgstr "Přejít na stránku"
 
 #. avLGA
-#: sw/uiconfig/swriter/ui/navigatorpanel.ui:342
+#: sw/uiconfig/swriter/ui/navigatorpanel.ui:380
 msgctxt "navigatorpanel|extended_tip|spinbutton"
 msgid "Enter page number and press Enter. Use arrows to move to next page forward or backward."
 msgstr "Zadejte číslo stránky a stiskněte Enter. Pomocí šipek se přesunete na další nebo předchozí stránku."
 
 #. DgvFE
-#: sw/uiconfig/swriter/ui/navigatorpanel.ui:369
+#: sw/uiconfig/swriter/ui/navigatorpanel.ui:413
 msgctxt "navigatorpanel|root|tooltip_text"
 msgid "Content Navigation View"
 msgstr "Pohled na navigaci v obsahu"
 
 #. RCE5p
-#: sw/uiconfig/swriter/ui/navigatorpanel.ui:373
+#: sw/uiconfig/swriter/ui/navigatorpanel.ui:417
 msgctxt "navigatorpanel|extended_tip|root"
 msgid "Switches between the display of all categories in the Navigator and the selected category."
 msgstr "Přepíná mezi zobrazením vybrané kategorie a všech kategorií v Navigátoru."
 
 #. Ngjxu
-#: sw/uiconfig/swriter/ui/navigatorpanel.ui:396
+#: sw/uiconfig/swriter/ui/navigatorpanel.ui:440
 msgctxt "navigatorpanel|header|tooltip_text"
 msgid "Header"
 msgstr "Záhlaví"
 
 #. yZHED
-#: sw/uiconfig/swriter/ui/navigatorpanel.ui:400
+#: sw/uiconfig/swriter/ui/navigatorpanel.ui:444
 msgctxt "navigatorpanel|extended_tip|header"
 msgid "Moves the cursor to the header, or from the header to the document text area."
 msgstr "Přesune kurzor do záhlaví nebo ze záhlaví do dokumentu."
 
 #. dfTJU
-#: sw/uiconfig/swriter/ui/navigatorpanel.ui:413
+#: sw/uiconfig/swriter/ui/navigatorpanel.ui:457
 msgctxt "navigatorpanel|footer|tooltip_text"
 msgid "Footer"
 msgstr "Zápatí"
 
 #. 5BVYB
-#: sw/uiconfig/swriter/ui/navigatorpanel.ui:417
+#: sw/uiconfig/swriter/ui/navigatorpanel.ui:461
 msgctxt "navigatorpanel|extended_tip|footer"
 msgid "Moves the cursor to the footer, or from the footer to the document text area."
 msgstr "Přesune kurzor do zápatí nebo ze zápatí do dokumentu."
 
 #. EefnL
-#: sw/uiconfig/swriter/ui/navigatorpanel.ui:430
+#: sw/uiconfig/swriter/ui/navigatorpanel.ui:474
 msgctxt "navigatorpanel|anchor|tooltip_text"
 msgid "Anchor<->Text"
 msgstr "Ukotvení<->Text"
 
 #. vwcpF
-#: sw/uiconfig/swriter/ui/navigatorpanel.ui:434
+#: sw/uiconfig/swriter/ui/navigatorpanel.ui:478
 msgctxt "navigatorpanel|extended_tip|anchor"
 msgid "Jumps between the footnote text and the footnote anchor."
 msgstr "Přechází mezi textem poznámky pod čarou a jejím ukotvením v textu."
 
 #. GbEFs
-#: sw/uiconfig/swriter/ui/navigatorpanel.ui:447
+#: sw/uiconfig/swriter/ui/navigatorpanel.ui:491
 msgctxt "navigatorpanel|reminder|tooltip_text"
 msgid "Set Reminder"
 msgstr "Vložit připomínku"
 
 #. d2Bnv
-#: sw/uiconfig/swriter/ui/navigatorpanel.ui:451
+#: sw/uiconfig/swriter/ui/navigatorpanel.ui:495
 msgctxt "navigatorpanel|extended_tip|reminder"
 msgid "Click here to set a reminder at the current cursor position. You can define up to five reminders. To jump to a reminder, click the Navigation icon, in the Navigation window click the Reminder icon, and then click the Previous or Next button."
 msgstr "Klepněte sem, chcete-li na aktuální pozici nastavit připomínku, můžete jich nastavit až pět. Na připomínku přejdete klepnutím na ikonu Navigace a poté v okně Navigace klepněte na ikonu Připomínka a poté na tlačítko Předchozí nebo Další."
 
 #. PjUEP
-#: sw/uiconfig/swriter/ui/navigatorpanel.ui:474
+#: sw/uiconfig/swriter/ui/navigatorpanel.ui:518
 msgctxt "navigatorpanel|headings|tooltip_text"
 msgid "Heading Levels Shown"
 msgstr "Zobrazené úrovně nadpisu"
 
 #. dJcmy
-#: sw/uiconfig/swriter/ui/navigatorpanel.ui:478
+#: sw/uiconfig/swriter/ui/navigatorpanel.ui:522
 msgctxt "navigatorpanel|extended_tip|headings"
 msgid "Click this icon, and then choose the number of heading outline levels that you want to view in the Navigator window."
 msgstr "Klepněte na tuto ikonu a poté vyberte počet úrovní nadpisů, které chcete zobrazit v okně Navigátoru."
 
 #. sxyvw
-#: sw/uiconfig/swriter/ui/navigatorpanel.ui:503
+#: sw/uiconfig/swriter/ui/navigatorpanel.ui:547
 msgctxt "navigatorpanel|listbox|tooltip_text"
 msgid "List Box On/Off"
 msgstr "Seznam zap/vyp"
 
 #. y7YBB
-#: sw/uiconfig/swriter/ui/navigatorpanel.ui:507
+#: sw/uiconfig/swriter/ui/navigatorpanel.ui:551
 msgctxt "navigatorpanel|extended_tip|listbox"
 msgid "Shows or hides the Navigator list."
 msgstr "Zobrazí nebo skryje seznam v Navigátoru."
 
 #. ijAjg
-#: sw/uiconfig/swriter/ui/navigatorpanel.ui:530
+#: sw/uiconfig/swriter/ui/navigatorpanel.ui:574
 msgctxt "navigatorpanel|promote|tooltip_text"
 msgid "Promote Level"
 msgstr "O úroveň výše"
 
 #. dvQYH
-#: sw/uiconfig/swriter/ui/navigatorpanel.ui:534
+#: sw/uiconfig/swriter/ui/navigatorpanel.ui:578
 msgctxt "navigatorpanel|extended_tip|promote"
 msgid "Increases the outline level of the selected heading, and the headings that occur below the heading, by one. To only increase the outline level of the selected heading, hold down Ctrl, and then click this icon."
 msgstr "Zvýší úroveň osnovy vybraného nadpisu a jemu podřízených nadpisů o jednu. Chcete-li zvýšit úroveň osnovy pouze u vybraného nadpisu, podržte Ctrl a poté klepněte na tuto ikonu."
 
 #. A7vWQ
-#: sw/uiconfig/swriter/ui/navigatorpanel.ui:547
+#: sw/uiconfig/swriter/ui/navigatorpanel.ui:591
 msgctxt "navigatorpanel|demote|tooltip_text"
 msgid "Demote Level"
 msgstr "O úroveň níže"
 
 #. NHBAZ
-#: sw/uiconfig/swriter/ui/navigatorpanel.ui:551
+#: sw/uiconfig/swriter/ui/navigatorpanel.ui:595
 msgctxt "navigatorpanel|extended_tip|demote"
 msgid "Decreases the outline level of the selected heading, and the headings that occur below the heading, by one. To only decrease the outline level of the selected heading, hold down Ctrl, and then click this icon."
 msgstr "Sníží úroveň osnovy vybraného nadpisu a jemu podřízených nadpisů o jednu. Chcete-li snížit úroveň osnovy pouze u vybraného nadpisu, podržte Ctrl a poté klepněte na tuto ikonu."
 
 #. SndsZ
-#: sw/uiconfig/swriter/ui/navigatorpanel.ui:564
+#: sw/uiconfig/swriter/ui/navigatorpanel.ui:608
 msgctxt "navigatorpanel|chapterup|tooltip_text"
 msgid "Promote Chapter"
 msgstr "Kapitolu o úroveň výše"
 
 #. mwCBQ
-#: sw/uiconfig/swriter/ui/navigatorpanel.ui:568
+#: sw/uiconfig/swriter/ui/navigatorpanel.ui:612
 msgctxt "navigatorpanel|extended_tip|chapterup"
 msgid "Moves the selected heading, and the text below the heading, up one heading position in the Navigator and in the document. To move only the selected heading and not the text associated with the heading, hold down Ctrl, and then click this icon."
 msgstr "Přesune vybraný nadpis a odpovídající text v Navigátoru i v dokumentu o jednu pozici výše. Chcete-li přesunout pouze nadpis bez textu, podržte Ctrl a poté klepněte na tuto ikonu."
 
 #. MRuAa
-#: sw/uiconfig/swriter/ui/navigatorpanel.ui:581
+#: sw/uiconfig/swriter/ui/navigatorpanel.ui:625
 msgctxt "navigatorpanel|chapterdown|tooltip_text"
 msgid "Demote Chapter"
 msgstr "Kapitolu o úroveň níže"
 
 #. sGNbn
-#: sw/uiconfig/swriter/ui/navigatorpanel.ui:585
+#: sw/uiconfig/swriter/ui/navigatorpanel.ui:629
 msgctxt "navigatorpanel|extended_tip|chapterdown"
 msgid "Moves the selected heading, and the text below the heading, down one heading position in the Navigator and in the document. To move only the selected heading and not the text associated with the heading, hold down Ctrl, and then click this icon."
 msgstr "Přesune vybraný nadpis a odpovídající text v Navigátoru i v dokumentu o jednu pozici níže. Chcete-li přesunout pouze nadpis bez textu, podržte Ctrl a poté klepněte na tuto ikonu."
 
 #. mHVom
-#: sw/uiconfig/swriter/ui/navigatorpanel.ui:608
+#: sw/uiconfig/swriter/ui/navigatorpanel.ui:652
 msgctxt "navigatorpanel|dragmode|tooltip_text"
 msgid "Drag Mode"
 msgstr "Způsob přetáhnutí"
 
 #. 9cuar
-#: sw/uiconfig/swriter/ui/navigatorpanel.ui:612
+#: sw/uiconfig/swriter/ui/navigatorpanel.ui:656
 msgctxt "navigatorpanel|extended_tip|dragmode"
 msgid "Sets the drag and drop options for inserting items from the Navigator into a document, for example, as a hyperlink. Click this icon, and then choose the option that you want to use."
 msgstr "Nastavuje možnosti přetahování položek z Navigátoru do dokumentu, např. jako hypertextový odkaz. Klepněte na tuto ikonu a poté vyberte požadovanou možnost."
 
 #. 3rY8r
-#: sw/uiconfig/swriter/ui/navigatorpanel.ui:644
+#: sw/uiconfig/swriter/ui/navigatorpanel.ui:688
 msgctxt "navigatorpanel|documents|tooltip_text"
 msgid "Document"
 msgstr "Dokument"
 
 #. wavgT
-#: sw/uiconfig/swriter/ui/navigatorpanel.ui:647
+#: sw/uiconfig/swriter/ui/navigatorpanel.ui:691
 msgctxt "navigatorpanel|documents-atkobject"
 msgid "Active Window"
 msgstr "Aktivní okno"
 
 #. 3yk2y
-#: sw/uiconfig/swriter/ui/navigatorpanel.ui:732
+#: sw/uiconfig/swriter/ui/navigatorpanel.ui:776
 msgctxt "navigatorpanel|globaltoggle|tooltip_text"
 msgid "Toggle Master View"
 msgstr "Přepnout hlavní pohled"
 
 #. AoCVA
-#: sw/uiconfig/swriter/ui/navigatorpanel.ui:736
+#: sw/uiconfig/swriter/ui/navigatorpanel.ui:780
 msgctxt "navigatorpanel|extended_tip|globaltoggle"
 msgid "Switches between master view and normal view if a master document is open."
 msgstr "Přepíná mezi hlavním pohledem a normálním pohledem, jestliže je otevřen hlavní dokument."
 
 #. HS3W2
-#: sw/uiconfig/swriter/ui/navigatorpanel.ui:759
+#: sw/uiconfig/swriter/ui/navigatorpanel.ui:803
 msgctxt "navigatorpanel|edit|tooltip_text"
 msgid "Edit"
 msgstr "Upravit"
 
 #. phQFB
-#: sw/uiconfig/swriter/ui/navigatorpanel.ui:763
+#: sw/uiconfig/swriter/ui/navigatorpanel.ui:807
 msgctxt "navigatorpanel|extended_tip|edit"
 msgid "Edit the contents of the component selected in the Navigator list. If the selection is a file, the file is opened for editing. If the selection is an index, the Index dialog is opened."
 msgstr "Upraví obsah komponenty označené v Navigátoru. Je-li vybrán soubor, bude otevřen pro úpravy. Je-li vybrán rejstřík, otevře se dialogové okno Rejstřík. "
 
 #. svmCG
-#: sw/uiconfig/swriter/ui/navigatorpanel.ui:776
+#: sw/uiconfig/swriter/ui/navigatorpanel.ui:820
 msgctxt "navigatorpanel|update|tooltip_text"
 msgid "Update"
 msgstr "Aktualizovat"
 
 #. FEEGn
-#: sw/uiconfig/swriter/ui/navigatorpanel.ui:780
+#: sw/uiconfig/swriter/ui/navigatorpanel.ui:824
 msgctxt "navigatorpanel|extended_tip|update"
 msgid "Click and choose the contents that you want to update."
 msgstr "Klepněte a vyberte obsah, který chcete aktualizovat."
 
 #. tu94A
-#: sw/uiconfig/swriter/ui/navigatorpanel.ui:793
+#: sw/uiconfig/swriter/ui/navigatorpanel.ui:837
 msgctxt "navigatorpanel|insert|tooltip_text"
 msgid "Insert"
 msgstr "Vložit"
 
 #. 9kmNw
-#: sw/uiconfig/swriter/ui/navigatorpanel.ui:797
+#: sw/uiconfig/swriter/ui/navigatorpanel.ui:841
 msgctxt "navigatorpanel|extended_tip|insert"
 msgid "Inserts a file, an index, or a new document into the master document."
 msgstr "Vloží do hlavního dokumentu soubor, rejstřík nebo nový dokument."
 
 #. MvgHM
-#: sw/uiconfig/swriter/ui/navigatorpanel.ui:820
+#: sw/uiconfig/swriter/ui/navigatorpanel.ui:864
 msgctxt "navigatorpanel|save|tooltip_text"
 msgid "Save Contents as well"
 msgstr "Uložit také obsah"
 
 #. KBDdA
-#: sw/uiconfig/swriter/ui/navigatorpanel.ui:824
+#: sw/uiconfig/swriter/ui/navigatorpanel.ui:868
 msgctxt "navigatorpanel|extended_tip|save"
 msgid "Saves a copy of the contents of the linked files in the master document. This ensures that the current contents are available when the linked files cannot be accessed."
 msgstr "Uloží do hlavního dokumentu také obsah připojených souborů. To zaručuje, že je obsah k dispozici, i když nejsou připojené soubory přístupné."
 
 #. yEETn
-#: sw/uiconfig/swriter/ui/navigatorpanel.ui:847
+#: sw/uiconfig/swriter/ui/navigatorpanel.ui:891
 msgctxt "navigatorpanel|moveup|tooltip_text"
 msgid "Move Up"
 msgstr "Přesunout nahoru"
 
 #. rEFCS
-#: sw/uiconfig/swriter/ui/navigatorpanel.ui:851
+#: sw/uiconfig/swriter/ui/navigatorpanel.ui:895
 msgctxt "navigatorpanel|extended_tip|moveup"
 msgid "Moves the selection up one position in the Navigator list."
 msgstr "Posune výběr v Navigátoru o jednu pozici výše."
 
 #. KN3mN
-#: sw/uiconfig/swriter/ui/navigatorpanel.ui:864
+#: sw/uiconfig/swriter/ui/navigatorpanel.ui:908
 msgctxt "navigatorpanel|movedown|tooltip_text"
 msgid "Move Down"
 msgstr "Přesunout dolů"
 
 #. Cs7D9
-#: sw/uiconfig/swriter/ui/navigatorpanel.ui:868
+#: sw/uiconfig/swriter/ui/navigatorpanel.ui:912
 msgctxt "navigatorpanel|extended_tip|movedown"
 msgid "Moves the selection down one position in the Navigator list."
 msgstr "Posune výběr v Navigátoru o jednu pozici níže."
 
 #. 3RwmV
-#: sw/uiconfig/swriter/ui/navigatorpanel.ui:967
+#: sw/uiconfig/swriter/ui/navigatorpanel.ui:1004
 msgctxt "navigatorpanel|STR_UPDATE_SEL"
 msgid "Selection"
 msgstr "Výběr"
 
 #. v2iCL
-#: sw/uiconfig/swriter/ui/navigatorpanel.ui:975
+#: sw/uiconfig/swriter/ui/navigatorpanel.ui:1012
 msgctxt "navigatorpanel|STR_UPDATE_INDEX"
 msgid "Indexes"
 msgstr "Rejstříky"
 
 #. fvFtM
-#: sw/uiconfig/swriter/ui/navigatorpanel.ui:983
+#: sw/uiconfig/swriter/ui/navigatorpanel.ui:1020
 msgctxt "navigatorpanel|STR_UPDATE_SEL"
 msgid "Links"
 msgstr "Odkazy"
 
 #. Njw6i
-#: sw/uiconfig/swriter/ui/navigatorpanel.ui:991
+#: sw/uiconfig/swriter/ui/navigatorpanel.ui:1028
 msgctxt "navigatorpanel|STR_UPDATE_ALL"
 msgid "All"
 msgstr "Vše"
@@ -23690,7 +23696,7 @@ msgstr "Stejný obsah:"
 #: sw/uiconfig/swriter/ui/pagefooterpanel.ui:95
 msgctxt "pagefooterpanel|footertoggle"
 msgid "Margins:"
-msgstr ""
+msgstr "Okraje:"
 
 #. xepvQ
 #: sw/uiconfig/swriter/ui/pagefooterpanel.ui:107
@@ -23780,7 +23786,7 @@ msgstr "Stejný obsah:"
 #: sw/uiconfig/swriter/ui/pageheaderpanel.ui:95
 msgctxt "pageheaderpanel|headertoggle"
 msgid "Margins:"
-msgstr ""
+msgstr "Okraje:"
 
 #. PAGRJ
 #: sw/uiconfig/swriter/ui/pageheaderpanel.ui:107
