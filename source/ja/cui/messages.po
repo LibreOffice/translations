@@ -3,9 +3,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2020-11-16 13:42+0100\n"
-"PO-Revision-Date: 2020-09-24 16:35+0000\n"
-"Last-Translator: Souichirou Ishikawa <souichirho@gmail.com>\n"
+"POT-Creation-Date: 2020-12-08 13:07+0100\n"
+"PO-Revision-Date: 2020-12-08 12:11+0000\n"
+"Last-Translator: Jun NOGATA <nogajun@gmail.com>\n"
 "Language-Team: Japanese <https://weblate.documentfoundation.org/projects/libo_ui-master/cuimessages/ja/>\n"
 "Language: ja\n"
 "MIME-Version: 1.0\n"
@@ -2098,13 +2098,13 @@ msgstr ""
 #: cui/inc/tipoftheday.hrc:48
 msgctxt "RID_CUI_TIPOFTHEDAY"
 msgid "%PRODUCTNAME offers a variety of user interface options to make you feel at home"
-msgstr ""
+msgstr "%PRODUCTNAME には自分のなじみの場所になるような、さまざまなユーザーインターフェースが用意されています"
 
 #. m8rYd
 #: cui/inc/tipoftheday.hrc:49
 msgctxt "RID_CUI_TIPOFTHEDAY"
 msgid "Need to allow changes to parts of a read-only document in Writer? Insert frames or sections that can authorize changes."
-msgstr "読み取り専用Writerドキュメントの一部を変更可能にするには、枠またはセクションを挿入し、編集可能に設定してください。"
+msgstr "Writerで読み取り専用文書の一部に変更許可を与えたいですか？ その場合は、編集を許可した枠やセクションを挿入しましょう。"
 
 #. BDEBo
 #. local help missing
@@ -3492,7 +3492,7 @@ msgstr "詳細情報"
 #: cui/inc/tipoftheday.hrc:276
 msgctxt "STR_UNO_LINK"
 msgid "Run this action now..."
-msgstr ""
+msgstr "今すぐUIを変更する"
 
 #. P6JME
 #: cui/inc/tipoftheday.hrc:277
@@ -3529,43 +3529,43 @@ msgstr "⌥ Opt"
 #: cui/inc/toolbarmode.hrc:22
 msgctxt "RID_CUI_TOOLBARMODES"
 msgid "Standard user interface with menu, toolbar, and collapsed sidebar. Intended to user who are familiar with the classic interface."
-msgstr ""
+msgstr "メニューやツールバー、折りたためるサイドバーを備えた標準的なユーザーインターフェイスです。従来のインターフェースに慣れているユーザーを対象としています。"
 
 #. S5tR2
 #: cui/inc/toolbarmode.hrc:23
 msgctxt "RID_CUI_TOOLBARMODES"
 msgid "Standard user interface but with only one toolbar. Intended for use on small screens."
-msgstr ""
+msgstr "標準的なユーザーインターフェースですが、ツールバーは1行だけです。小さな画面での使用を想定しています。"
 
 #. wKg2Q
 #: cui/inc/toolbarmode.hrc:24
 msgctxt "RID_CUI_TOOLBARMODES"
 msgid "Standard user interface with expanded sidebar. Expert users who want to quickly change many different properties are advised to use this UI."
-msgstr ""
+msgstr "拡張されたサイドバーを備えた標準的なユーザーインターフェースです。多くの異なるプロパティを素早く変更したい熟練のユーザーは、このUIを使用することをお勧めします。"
 
 #. MEQAE
 #: cui/inc/toolbarmode.hrc:25
 msgctxt "RID_CUI_TOOLBARMODES"
 msgid "The Tabbed user interface is the most similar to the Ribbons used by Microsoft. It organize functions in tabs and makes the main menu obsolete."
-msgstr ""
+msgstr "タブ ユーザーUIは、Microsoftが使用しているリボンUIによく似ています。タブで機能を整理し、メインメニューは無効になります。"
 
 #. hXNUY
 #: cui/inc/toolbarmode.hrc:26
 msgctxt "RID_CUI_TOOLBARMODES"
 msgid "The Tabbed Compact variant aims to be familiar with Microsoft's interface having at the same time a short interface for small screen sizes."
-msgstr ""
+msgstr "タブUI派生のタブ コンパクトは、小さな画面サイズ向けの縦が短いインターフェースですが、Microsoftのインターフェースと同様の利用ができることを目的としています。"
 
 #. GFycb
 #: cui/inc/toolbarmode.hrc:27
 msgctxt "RID_CUI_TOOLBARMODES"
 msgid "The Groupedbar Compact variant provides access to functions in groups with most frequently used features in icons and less often used in a dropdown menu. The compact variant favors vertical size."
-msgstr ""
+msgstr "グループバーUI派生のグループバー コンパクトは、機能をグループ化して、よく使われる機能はアイコンから。あまり使われない機能はドロップダウンメニューからアクセスできるようになります。コンパクト派生型は画面の縦サイズが短いものに向いています。"
 
 #. Exopn
 #: cui/inc/toolbarmode.hrc:28
 msgctxt "RID_CUI_TOOLBARMODES"
 msgid "The Groupedbar interface provides access to functions in groups with most frequently used features in icons and less often used in a dropdown menu. The full variant favors functions and is slightly larger than other variants."
-msgstr ""
+msgstr "グループバーは、機能をグループ化して、よく使われる機能はアイコンから。あまり使われない機能はドロップダウンメニューからアクセスできるようになります。完全なタイプは機能を優先しているので他のUIよりも若干大きくなっています。"
 
 #. LNaMA
 #: cui/inc/toolbarmode.hrc:29
@@ -20899,73 +20899,85 @@ msgstr "リンク"
 #: cui/uiconfig/ui/toolbarmodedialog.ui:13
 msgctxt "ToolbarmodeDialog|Name"
 msgid "Select Your Preferred User Interface"
+msgstr "希望するユーザーインターフェースを選択します"
+
+#. rSnx7
+#: cui/uiconfig/ui/toolbarmodedialog.ui:30
+msgctxt "ToolbarmodeDialog|applyall"
+msgid "A_pply to All"
+msgstr ""
+
+#. kPZub
+#: cui/uiconfig/ui/toolbarmodedialog.ui:46
+msgctxt "ToolbarmodeDialog|applymodule"
+msgid "A_pply to %MODULE"
 msgstr ""
 
 #. odHug
 #: cui/uiconfig/ui/toolbarmodedialog.ui:111
 msgctxt "ToolbarmodeDialog|radiobutton1"
 msgid "Standard Toolbar"
-msgstr ""
-
-#. wTDDF
-#: cui/uiconfig/ui/toolbarmodedialog.ui:128
-msgctxt "ToolbarmodeDialog|radiobutton2"
-msgid "Single Toolbar"
-msgstr ""
-
-#. AMgFL
-#: cui/uiconfig/ui/toolbarmodedialog.ui:146
-msgctxt "ToolbarmodeDialog|radiobutton3"
-msgid "Sidebar"
-msgstr ""
+msgstr "標準ツールバー"
 
 #. WRYEa
-#: cui/uiconfig/ui/toolbarmodedialog.ui:164
+#: cui/uiconfig/ui/toolbarmodedialog.ui:128
 msgctxt "ToolbarmodeDialog|radiobutton4"
 msgid "Tabbed"
-msgstr ""
+msgstr "タブ"
 
 #. YvSd9
-#: cui/uiconfig/ui/toolbarmodedialog.ui:182
+#: cui/uiconfig/ui/toolbarmodedialog.ui:146
 msgctxt "ToolbarmodeDialog|radiobutton5"
 msgid "Tabbed Compact"
-msgstr ""
-
-#. jAJbo
-#: cui/uiconfig/ui/toolbarmodedialog.ui:200
-msgctxt "ToolbarmodeDialog|radiobutton6"
-msgid "Groupedbar Compact"
-msgstr ""
+msgstr "タブコンパクト"
 
 #. yT3UT
-#: cui/uiconfig/ui/toolbarmodedialog.ui:218
+#: cui/uiconfig/ui/toolbarmodedialog.ui:164
 msgctxt "ToolbarmodeDialog|radiobutton7"
 msgid "Groupedbar"
-msgstr ""
+msgstr "グループバー"
+
+#. jAJbo
+#: cui/uiconfig/ui/toolbarmodedialog.ui:182
+msgctxt "ToolbarmodeDialog|radiobutton6"
+msgid "Groupedbar Compact"
+msgstr "グループバーコンパクト"
 
 #. iSVgL
-#: cui/uiconfig/ui/toolbarmodedialog.ui:236
+#: cui/uiconfig/ui/toolbarmodedialog.ui:200
 msgctxt "ToolbarmodeDialog|radiobutton8"
 msgid "Contextual Single"
-msgstr ""
+msgstr "コンテキスト シングル"
 
 #. TrcWq
-#: cui/uiconfig/ui/toolbarmodedialog.ui:254
+#: cui/uiconfig/ui/toolbarmodedialog.ui:218
 msgctxt "ToolbarmodeDialog|radiobutton9"
 msgid "Contextual Groups"
-msgstr ""
+msgstr "コンテキスト グループ"
+
+#. wTDDF
+#: cui/uiconfig/ui/toolbarmodedialog.ui:236
+msgctxt "ToolbarmodeDialog|radiobutton2"
+msgid "Single Toolbar"
+msgstr "シングルツールバー"
+
+#. AMgFL
+#: cui/uiconfig/ui/toolbarmodedialog.ui:254
+msgctxt "ToolbarmodeDialog|radiobutton3"
+msgid "Sidebar"
+msgstr "サイドバー"
 
 #. kGdXR
 #: cui/uiconfig/ui/toolbarmodedialog.ui:278
 msgctxt "ToolbarmodeDialog|leftframe"
 msgid "UI variants"
-msgstr ""
+msgstr "UIの種類"
 
 #. H7m7J
 #: cui/uiconfig/ui/toolbarmodedialog.ui:366
 msgctxt "ToolbarmodeDialog|rightframe"
 msgid "Preview"
-msgstr ""
+msgstr "プレビュー"
 
 #. WChLB
 #: cui/uiconfig/ui/transparencytabpage.ui:78
