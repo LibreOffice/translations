@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2020-11-20 15:33+0100\n"
+"POT-Creation-Date: 2021-01-14 18:09+0100\n"
 "PO-Revision-Date: 2020-10-13 15:35+0000\n"
 "Last-Translator: Tuomas Hietala <tuomas.hietala@iki.fi>\n"
 "Language-Team: Finnish <https://weblate.documentfoundation.org/projects/libo_help-master/textscalc01/fi/>\n"
@@ -7999,13 +7999,13 @@ msgctxt ""
 msgid "The example returns 6. The formula is calculated from left to right as: 1 + 2 equals 3, giving the result to date when CURRENT() is encountered; CURRENT() therefore yields 3, which is added to the original 3 to give 6."
 msgstr ""
 
-#. 7oHuK
+#. 3LWfB
 #: 04060104.xhp
 msgctxt ""
 "04060104.xhp\n"
 "par_id5863826\n"
 "help.text"
-msgid "<item type=\"input\">=A2+B2+STYLE(IF(CURRENT()>10;”Red”;”Default”))</item>"
+msgid "<input>=A2+B2+STYLE(IF(CURRENT()>10;\"Red\";\"Default\"))</input>"
 msgstr ""
 
 #. fNamE
@@ -10204,13 +10204,13 @@ msgctxt ""
 msgid "<ahelp hid=\"HID_FUNC_WENN\">Specifies a logical test to be performed.</ahelp>"
 msgstr ""
 
-#. ABZhn
+#. 3CRyJ
 #: 04060105.xhp
 msgctxt ""
 "04060105.xhp\n"
 "par_id3154558\n"
 "help.text"
-msgid "IF(Test [; ThenValue [; OtherwiseValue]])"
+msgid "IF(Test [; [ThenValue] [; [OtherwiseValue]]])"
 msgstr ""
 
 #. JnjcT
@@ -10240,13 +10240,31 @@ msgctxt ""
 msgid "<emph>OtherwiseValue</emph> (optional) is the value that is returned if the logical test is FALSE."
 msgstr ""
 
-#. Z7Tgy
+#. oRABw
 #: 04060105.xhp
 msgctxt ""
 "04060105.xhp\n"
 "par_id3150867\n"
 "help.text"
-msgid "<item type=\"input\">=IF(A1>5;100;\"too small\")</item> If the value in A1 is higher than 5, the value 100 is entered in the current cell; otherwise, the text “too small” (without quotes) is entered."
+msgid "<input>=IF(A1>5;100;\"too small\")</input> If the value in <literal>A1</literal> is greater than <literal>5</literal>, the value <literal>100</literal> is returned; otherwise, the text <literal>too small</literal> is returned."
+msgstr ""
+
+#. jvk3H
+#: 04060105.xhp
+msgctxt ""
+"04060105.xhp\n"
+"par_id71607569817532\n"
+"help.text"
+msgid "<input>=IF(A1>5;;\"too small\")</input> If the value in <literal>A1</literal> is greater than <literal>5</literal>, the value <literal>0</literal> is returned because empty parameters are considered to be <literal>0</literal>; otherwise, the text <literal>too small</literal> is returned."
+msgstr ""
+
+#. Q6yTs
+#: 04060105.xhp
+msgctxt ""
+"04060105.xhp\n"
+"par_id11607570458867\n"
+"help.text"
+msgid "<input>=IF(A1>5;100;)</input> If the value in <literal>A1</literal> is less than <literal>5</literal>, the value <literal>0</literal> is returned because the empty <emph>OtherwiseValue</emph> is interpreted as <literal>0</literal>; otherwise <literal>100</literal> is returned."
 msgstr ""
 
 #. BKYkX
@@ -19510,13 +19528,13 @@ msgctxt ""
 msgid "If the source data contains entries that are hidden by settings of the pivot table, they are ignored. The order of the Field/Item pairs is not significant. Field and item names are not case-sensitive."
 msgstr ""
 
-#. Cpvct
+#. AJ8oP
 #: 04060109.xhp
 msgctxt ""
 "04060109.xhp\n"
 "par_id7928708\n"
 "help.text"
-msgid "If no constraint for a page field is given, the field's selected value is implicitly used. If a constraint for a page field is given, it must match the field's selected value, or an error is returned. Page fields are the fields at the top left of a pivot table, populated using the \"Page Fields\" area of the pivot table layout dialog. From each page field, an item (value) can be selected, which means only that item is included in the calculation."
+msgid "If no constraint for a filter is given, the field's selected value is implicitly used. If a constraint for a filter is given, it must match the field's selected value, or an error is returned. Filters are the fields at the top left of a pivot table, populated using the \"Filters\" area of the pivot table layout dialog. From each filter, an item (value) can be selected, which means only that item is included in the calculation."
 msgstr ""
 
 #. nARMD
@@ -46258,6 +46276,78 @@ msgctxt ""
 msgid "For a detailed explanation and examples, please visit <link href=\"https://wiki.documentfoundation.org/Faq/Calc/142\">How to apply a Color Scale Conditional Formatting page</link> in TDF Wiki."
 msgstr ""
 
+#. dACxH
+#: 05120000.xhp
+msgctxt ""
+"05120000.xhp\n"
+"par_id991609782427459\n"
+"help.text"
+msgid "Data Bar"
+msgstr ""
+
+#. xapwr
+#: 05120000.xhp
+msgctxt ""
+"05120000.xhp\n"
+"par_id41609780964157\n"
+"help.text"
+msgid "Data bar option will fill the cell with solid or gradient color corresponding to the numeric value in the cell. Default is blue for positive and red for negative."
+msgstr ""
+
+#. AKYoW
+#: 05120000.xhp
+msgctxt ""
+"05120000.xhp\n"
+"par_id931609781970981\n"
+"help.text"
+msgid "The calculation of the area of fill is based on Min - Max - Percentile - Value - Percent - Formula."
+msgstr ""
+
+#. smxFL
+#: 05120000.xhp
+msgctxt ""
+"05120000.xhp\n"
+"par_id981609782003841\n"
+"help.text"
+msgid "The choices Min and Max are sufficient to themselves as found in the range. Other options need to be specified by a value (Percentile, Value, Percentage) or a cell reference or formula (Formula)."
+msgstr ""
+
+#. qBVjM
+#: 05120000.xhp
+msgctxt ""
+"05120000.xhp\n"
+"par_id281609781729359\n"
+"help.text"
+msgid "<emph>More Options...</emph> opens a dialog to:"
+msgstr ""
+
+#. saDJA
+#: 05120000.xhp
+msgctxt ""
+"05120000.xhp\n"
+"par_id271609781812913\n"
+"help.text"
+msgid "change colors"
+msgstr ""
+
+#. uncF8
+#: 05120000.xhp
+msgctxt ""
+"05120000.xhp\n"
+"par_id921609781838551\n"
+"help.text"
+msgid "change position of vertical axis within the cell"
+msgstr ""
+
+#. wJNxE
+#: 05120000.xhp
+msgctxt ""
+"05120000.xhp\n"
+"par_id631609781859971\n"
+"help.text"
+msgid "the bar's minimum and maximum length in percentage"
+msgstr ""
+
 #. de4nk
 #: 05120000.xhp
 msgctxt ""
@@ -48490,13 +48580,13 @@ msgctxt ""
 msgid "<ahelp hid=\"modules/scalc/ui/sortoptionspage/SortOptionsPage\"> Sets additional sorting options.</ahelp>"
 msgstr ""
 
-#. cGgPE
+#. TFqUq
 #: 12030200.xhp
 msgctxt ""
 "12030200.xhp\n"
 "hd_id3146976\n"
 "help.text"
-msgid "Case Sensitivity"
+msgid "Case sensitive"
 msgstr ""
 
 #. cL8EG
@@ -48508,13 +48598,13 @@ msgctxt ""
 msgid "<ahelp hid=\"modules/scalc/ui/sortoptionspage/case\"> Sorts first by uppercase letters and then by lowercase letters. For Asian languages, special handling applies.</ahelp>"
 msgstr ""
 
-#. Bq75T
+#. QbcU3
 #: 12030200.xhp
 msgctxt ""
 "12030200.xhp\n"
 "par_idN10637\n"
 "help.text"
-msgid "Note for Asian languages: Check <emph>Case Sensitivity</emph> to apply multi-level collation. With multi-level collation, entries are first compared in their primitive forms with their cases and diacritics ignored. If they evaluate as the same, their diacritics are taken into account for the second-level comparison. If they still evaluate as the same, their cases, character widths, and Japanese Kana difference are considered for the third-level comparison."
+msgid "For Asian languages: Check <emph>Case Sensitive</emph> to apply multi-level collation. With multi-level collation, entries are first compared in their primitive forms with their cases and diacritics ignored. If they evaluate as the same, their diacritics are taken into account for the second-level comparison. If they still evaluate as the same, their cases, character widths, and Japanese Kana difference are considered for the third-level comparison."
 msgstr ""
 
 #. SFxVV
@@ -48749,24 +48839,6 @@ msgctxt ""
 "par_id3154370\n"
 "help.text"
 msgid "<ahelp hid=\"modules/scalc/ui/sortoptionspage/leftright\"> Sorts columns by the values in the active rows of the selected range.</ahelp>"
-msgstr ""
-
-#. 5BZDN
-#: 12030200.xhp
-msgctxt ""
-"12030200.xhp\n"
-"hd_id3156290\n"
-"help.text"
-msgid "Data area"
-msgstr ""
-
-#. bEAvz
-#: 12030200.xhp
-msgctxt ""
-"12030200.xhp\n"
-"par_id3156446\n"
-"help.text"
-msgid "Displays the cell range that you want to sort."
 msgstr ""
 
 #. a8dw2
@@ -50056,6 +50128,15 @@ msgctxt ""
 msgid "<ahelp hid=\"modules/scalc/ui/groupdialog/cols\">Groups the selected columns.</ahelp>"
 msgstr ""
 
+#. EnEBx
+#: 12080300.xhp
+msgctxt ""
+"12080300.xhp\n"
+"par_id171608652491036\n"
+"help.text"
+msgid "Grouping and ungrouping is not tracked. Group is greyed out when track changes is on."
+msgstr ""
+
 #. V4FGD
 #: 12080400.xhp
 msgctxt ""
@@ -50713,13 +50794,13 @@ msgctxt ""
 msgid "Layout"
 msgstr ""
 
-#. sfhdL
+#. DkMQE
 #: 12090102.xhp
 msgctxt ""
 "12090102.xhp\n"
 "par_id3150768\n"
 "help.text"
-msgid "<ahelp hid=\"modules/scalc/ui/pivottablelayoutdialog/listbox-fields\">To define the layout of a pivot table, drag and drop data field buttons onto the <emph>Page Fields, Row Fields, Column Fields, </emph>and<emph> Data Fields </emph>areas.</ahelp> You can also use drag and drop to rearrange the data fields on a pivot table."
+msgid "<ahelp hid=\"modules/scalc/ui/pivottablelayoutdialog/listbox-fields\">To define the layout of a pivot table, drag and drop data field buttons onto the <emph>Filters, Row Fields, Column Fields</emph> and <emph>Data Fields</emph> areas.</ahelp> You can also use drag and drop to rearrange the data fields on a pivot table."
 msgstr ""
 
 #. b5Zrk
@@ -51577,13 +51658,13 @@ msgctxt ""
 msgid "Options"
 msgstr ""
 
-#. DECPB
+#. 9SdDd
 #: 12090105.xhp
 msgctxt ""
 "12090105.xhp\n"
 "par_idN106F7\n"
 "help.text"
-msgid "<ahelp hid=\".\">Opens the <link href=\"text/scalc/01/12090106.xhp\">Data Field Options</link> dialog. The <emph>Options</emph> button is visible for column, row, or page fields only.</ahelp>"
+msgid "<ahelp hid=\".\">Opens the <link href=\"text/scalc/01/12090106.xhp\">Data Field Options</link> dialog. The <emph>Options</emph> button is visible for filters and column or row fields only.</ahelp>"
 msgstr ""
 
 #. pTDtv
@@ -52630,13 +52711,13 @@ msgctxt ""
 msgid "No limitation."
 msgstr ""
 
-#. 9s4E3
+#. GWkaF
 #: 12120100.xhp
 msgctxt ""
 "12120100.xhp\n"
 "par_id3147434\n"
 "help.text"
-msgid "Whole number"
+msgid "Whole numbers"
 msgstr ""
 
 #. dT2EE
@@ -52765,6 +52846,33 @@ msgctxt ""
 msgid "Entries whose length corresponds to the condition."
 msgstr ""
 
+#. zEYdt
+#: 12120100.xhp
+msgctxt ""
+"12120100.xhp\n"
+"par_id551607384650484\n"
+"help.text"
+msgid "Custom"
+msgstr ""
+
+#. Eejrc
+#: 12120100.xhp
+msgctxt ""
+"12120100.xhp\n"
+"par_id101607384677959\n"
+"help.text"
+msgid "Only allow values that result in the formula entered in the <emph>Formula</emph> box to return <literal>TRUE</literal>, when the formula is calculated with the entered value. The formula can be any expression that evaluates to a boolean value of <literal>TRUE</literal> or <literal>FALSE</literal>, or returns a numerical value, where a nonzero value is interpreted as <literal>TRUE</literal> and <literal>0</literal> is interpreted as <literal>FALSE</literal>."
+msgstr ""
+
+#. LhCDS
+#: 12120100.xhp
+msgctxt ""
+"12120100.xhp\n"
+"par_id461607565255803\n"
+"help.text"
+msgid "Formulas can use relative referencing. For example, if cells <literal>A1:A4</literal> were selected, the cursor is in cell <literal>A1</literal> and <input>ISODD(A1)</input> is entered into the <emph>Formula</emph> box, then only odd numbers could be entered into cells <literal>A1</literal> through <literal>A4</literal>."
+msgstr ""
+
 #. apG3s
 #: 12120100.xhp
 msgctxt ""
@@ -52792,13 +52900,13 @@ msgctxt ""
 msgid "Show selection list"
 msgstr ""
 
-#. GYAE5
+#. X4mFD
 #: 12120100.xhp
 msgctxt ""
 "12120100.xhp\n"
 "par_idN1070D\n"
 "help.text"
-msgid "<ahelp hid=\"modules/scalc/ui/validationcriteriapage/showlist\">Shows a list of all valid strings or values to select from. The list can also be opened by selecting the cell and pressing <switchinline select=\"sys\"><caseinline select=\"MAC\">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>+D.</ahelp>"
+msgid "<ahelp hid=\"modules/scalc/ui/validationcriteriapage/showlist\">Shows a list of all valid strings or values to select from. The list can also be opened by selecting the cell and pressing <switchinline select=\"sys\"><caseinline select=\"MAC\"><keycode>Command+D</keycode></caseinline><defaultinline><keycode>Ctrl+D</keycode></defaultinline></switchinline>.</ahelp>"
 msgstr ""
 
 #. AuAaR
@@ -52864,13 +52972,13 @@ msgctxt ""
 msgid "Data"
 msgstr ""
 
-#. FpavW
+#. MNWEt
 #: 12120100.xhp
 msgctxt ""
 "12120100.xhp\n"
 "par_id3144502\n"
 "help.text"
-msgid "<ahelp hid=\"modules/scalc/ui/validationcriteriapage/data\">Select the comparative operator that you want to use.</ahelp> The available operators depend on what you selected in the <emph>Allow </emph>box. If you select \"between\" or \"not between\", the <emph>Minimum</emph> and <emph>Maximum</emph> input boxes appear. Otherwise, only the <emph>Minimum</emph>, the <emph>Maximum, or the Value</emph> input boxes appear."
+msgid "<ahelp hid=\"modules/scalc/ui/validationcriteriapage/data\">Select the comparative operator that you want to use.</ahelp> The available operators depend on what you selected in the <emph>Allow </emph>box. If you select \"between\" or \"not between\", the <emph>Minimum</emph> and <emph>Maximum</emph> input boxes appear. Otherwise, only the <emph>Minimum</emph>, the <emph>Maximum</emph>, or the <emph>Value</emph> input boxes appear."
 msgstr ""
 
 #. DTzua
@@ -53753,6 +53861,339 @@ msgctxt ""
 "par_id240920171007419799\n"
 "help.text"
 msgid "Data Provider"
+msgstr ""
+
+#. BGquS
+#: databar_more_options.xhp
+msgctxt ""
+"databar_more_options.xhp\n"
+"Databar-Moreoptions\n"
+"help.text"
+msgid "Databar More Options"
+msgstr ""
+
+#. 6Mf5d
+#: databar_more_options.xhp
+msgctxt ""
+"databar_more_options.xhp\n"
+"bm_id651610566601713\n"
+"help.text"
+msgid "<bookmark_value>conditional formatting;data bar options</bookmark_value><bookmark_value>data bar formatting;data bar options</bookmark_value><bookmark_value>data bar options;conditional formatting</bookmark_value>"
+msgstr ""
+
+#. RYVeJ
+#: databar_more_options.xhp
+msgctxt ""
+"databar_more_options.xhp\n"
+"hd_id631610470827523\n"
+"help.text"
+msgid "<variable id=\"databaroptions\"><link href=\"/text/scalc/01/databar_more_options.xhp\" name=\"More Options for Databar\">Databar More Options</link></variable>"
+msgstr ""
+
+#. PDdJA
+#: databar_more_options.xhp
+msgctxt ""
+"databar_more_options.xhp\n"
+"hd_id531610472930609\n"
+"help.text"
+msgid "Entry Values"
+msgstr ""
+
+#. gUW4X
+#: databar_more_options.xhp
+msgctxt ""
+"databar_more_options.xhp\n"
+"hd_id661610569199542\n"
+"help.text"
+msgid "Minimum:"
+msgstr ""
+
+#. 86XUE
+#: databar_more_options.xhp
+msgctxt ""
+"databar_more_options.xhp\n"
+"par_id861610473146895\n"
+"help.text"
+msgid "Set the minimum value for which the databar does not start filling."
+msgstr ""
+
+#. FjNLX
+#: databar_more_options.xhp
+msgctxt ""
+"databar_more_options.xhp\n"
+"hd_id501610569361264\n"
+"help.text"
+msgid "Maximum:"
+msgstr ""
+
+#. 2pQe8
+#: databar_more_options.xhp
+msgctxt ""
+"databar_more_options.xhp\n"
+"par_id461610473163880\n"
+"help.text"
+msgid "Set the maximum value for which the databar gets completely filled."
+msgstr ""
+
+#. i9WL4
+#: databar_more_options.xhp
+msgctxt ""
+"databar_more_options.xhp\n"
+"par_id791610556114310\n"
+"help.text"
+msgid "The options for setting the minimum and maximum are:"
+msgstr ""
+
+#. gBHrw
+#: databar_more_options.xhp
+msgctxt ""
+"databar_more_options.xhp\n"
+"par_id621610556164264\n"
+"help.text"
+msgid "<emph>Automatic:</emph> Automatically sets the minimum and maximum value based on the values in the data set."
+msgstr ""
+
+#. ajaES
+#: databar_more_options.xhp
+msgctxt ""
+"databar_more_options.xhp\n"
+"par_id591610556220990\n"
+"help.text"
+msgid "<emph>Minimum:</emph> Automatically sets the minimum value in the data set as minimum."
+msgstr ""
+
+#. QRiYs
+#: databar_more_options.xhp
+msgctxt ""
+"databar_more_options.xhp\n"
+"par_id951610556245716\n"
+"help.text"
+msgid "<emph>Maximum:</emph> Automatically sets the maximum value in the data set for maximum."
+msgstr ""
+
+#. Rv45U
+#: databar_more_options.xhp
+msgctxt ""
+"databar_more_options.xhp\n"
+"par_id901610556259738\n"
+"help.text"
+msgid "<emph>Percentile:</emph> Set the minimum and maximum as percentile value."
+msgstr ""
+
+#. dPLJt
+#: databar_more_options.xhp
+msgctxt ""
+"databar_more_options.xhp\n"
+"par_id621610556295743\n"
+"help.text"
+msgid "<emph>Value:</emph> Set the minimum and maximum as a specific value."
+msgstr ""
+
+#. Xo6Dm
+#: databar_more_options.xhp
+msgctxt ""
+"databar_more_options.xhp\n"
+"par_id331610556326466\n"
+"help.text"
+msgid "<emph>Formula:</emph> Set the minimum and maximum as a formula."
+msgstr ""
+
+#. dtrcK
+#: databar_more_options.xhp
+msgctxt ""
+"databar_more_options.xhp\n"
+"hd_id551610558198954\n"
+"help.text"
+msgid "Bar Colors"
+msgstr ""
+
+#. brFRN
+#: databar_more_options.xhp
+msgctxt ""
+"databar_more_options.xhp\n"
+"hd_id391610569504555\n"
+"help.text"
+msgid "Positive:"
+msgstr ""
+
+#. AYuC9
+#: databar_more_options.xhp
+msgctxt ""
+"databar_more_options.xhp\n"
+"par_id611610558381528\n"
+"help.text"
+msgid "Set the color for positive values. It is set to blue be default."
+msgstr ""
+
+#. EHFuG
+#: databar_more_options.xhp
+msgctxt ""
+"databar_more_options.xhp\n"
+"hd_id161610569508370\n"
+"help.text"
+msgid "Negative:"
+msgstr ""
+
+#. DqVgR
+#: databar_more_options.xhp
+msgctxt ""
+"databar_more_options.xhp\n"
+"par_id451610558525398\n"
+"help.text"
+msgid "Set the color for negative values. It is set to red by default."
+msgstr ""
+
+#. Eci5i
+#: databar_more_options.xhp
+msgctxt ""
+"databar_more_options.xhp\n"
+"hd_id261610569510818\n"
+"help.text"
+msgid "Fill:"
+msgstr ""
+
+#. YCKEB
+#: databar_more_options.xhp
+msgctxt ""
+"databar_more_options.xhp\n"
+"par_id221610558585001\n"
+"help.text"
+msgid "Choose between color and gradient to fill with solid color or gradient."
+msgstr ""
+
+#. oQVLz
+#: databar_more_options.xhp
+msgctxt ""
+"databar_more_options.xhp\n"
+"hd_id711610558701623\n"
+"help.text"
+msgid "Axis"
+msgstr ""
+
+#. F9wz2
+#: databar_more_options.xhp
+msgctxt ""
+"databar_more_options.xhp\n"
+"hd_id731610569777368\n"
+"help.text"
+msgid "Position of vertical axis:"
+msgstr ""
+
+#. jrmur
+#: databar_more_options.xhp
+msgctxt ""
+"databar_more_options.xhp\n"
+"par_id901610558734975\n"
+"help.text"
+msgid "Set the position of vertical axis in the cell."
+msgstr ""
+
+#. GCTov
+#: databar_more_options.xhp
+msgctxt ""
+"databar_more_options.xhp\n"
+"par_id591610558837411\n"
+"help.text"
+msgid "<emph>Automatic:</emph> Set the axis automatically"
+msgstr ""
+
+#. VMCSd
+#: databar_more_options.xhp
+msgctxt ""
+"databar_more_options.xhp\n"
+"par_id991610558892435\n"
+"help.text"
+msgid "<emph>Middle:</emph> Set the vertical position to be in the middle of the cell."
+msgstr ""
+
+#. 6ketG
+#: databar_more_options.xhp
+msgctxt ""
+"databar_more_options.xhp\n"
+"par_id971610558965550\n"
+"help.text"
+msgid "<emph>None:</emph> Set the data bar to have no visible vertical axis"
+msgstr ""
+
+#. Up8nD
+#: databar_more_options.xhp
+msgctxt ""
+"databar_more_options.xhp\n"
+"hd_id591610569865757\n"
+"help.text"
+msgid "Color of vertical axis:"
+msgstr ""
+
+#. 2cZEy
+#: databar_more_options.xhp
+msgctxt ""
+"databar_more_options.xhp\n"
+"par_id601610560622213\n"
+"help.text"
+msgid "Choose the color of the vertical axis."
+msgstr ""
+
+#. CTJaw
+#: databar_more_options.xhp
+msgctxt ""
+"databar_more_options.xhp\n"
+"hd_id631610560675220\n"
+"help.text"
+msgid "Bar Lengths"
+msgstr ""
+
+#. MAbGC
+#: databar_more_options.xhp
+msgctxt ""
+"databar_more_options.xhp\n"
+"hd_id651610569932338\n"
+"help.text"
+msgid "Minimum bar length(%):"
+msgstr ""
+
+#. p6WQW
+#: databar_more_options.xhp
+msgctxt ""
+"databar_more_options.xhp\n"
+"par_id381610560706116\n"
+"help.text"
+msgid "Set the minimum length of the databar in percentage with respect to the cell length."
+msgstr ""
+
+#. QLNCu
+#: databar_more_options.xhp
+msgctxt ""
+"databar_more_options.xhp\n"
+"hd_id151610569983195\n"
+"help.text"
+msgid "Maximum bar length(%):"
+msgstr ""
+
+#. anEhg
+#: databar_more_options.xhp
+msgctxt ""
+"databar_more_options.xhp\n"
+"par_id511610560783506\n"
+"help.text"
+msgid "Set the maximum length of the databar in percentage with respect to the cell length."
+msgstr ""
+
+#. 5eqMJ
+#: databar_more_options.xhp
+msgctxt ""
+"databar_more_options.xhp\n"
+"hd_id821610560955981\n"
+"help.text"
+msgid "Display bar only"
+msgstr ""
+
+#. qxGGB
+#: databar_more_options.xhp
+msgctxt ""
+"databar_more_options.xhp\n"
+"par_id501610560981306\n"
+"help.text"
+msgid "Only databar is shown. Value becomes hidden."
 msgstr ""
 
 #. UiW5C
