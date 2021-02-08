@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2021-01-30 15:37+0100\n"
-"PO-Revision-Date: 2021-01-27 17:36+0000\n"
+"POT-Creation-Date: 2021-02-05 18:59+0100\n"
+"PO-Revision-Date: 2021-02-07 10:36+0000\n"
 "Last-Translator: Olivier Hallot <olivier.hallot@libreoffice.org>\n"
 "Language-Team: Portuguese (Brazil) <https://translations.documentfoundation.org/projects/libo_help-master/textscalc01/pt_BR/>\n"
 "Language: pt-BR\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
 "X-Accelerator-Marker: ~\n"
-"X-Generator: LibreOffice\n"
+"X-Generator: Weblate 4.4\n"
 "X-POOTLE-MTIME: 1559657369.000000\n"
 
 #. sZfWF
@@ -5893,6 +5893,24 @@ msgctxt ""
 msgid "<emph>Rate</emph> is the rate of depreciation."
 msgstr "<emph>Taxa</emph> é a taxa de depreciação."
 
+#. TzEBm
+#: 04060103.xhp
+msgctxt ""
+"04060103.xhp\n"
+"par_id421612299085248\n"
+"help.text"
+msgid "An asset was acquired on 2020-02-01 at a cost of 2000 currency units. The end date of the first settlement period was 2020-12-31. The salvage value of the asset at the end of its depreciable life will be 10 currency units. The rate of depreciation is 0.1 (10%) and the year is calculated using the US method (Basis 0). Assuming degressive depreciation, what is the amount of depreciation in the fourth depreciation period?"
+msgstr "Um ativo foi adquirido em 2020-02-01 a um custo de 2.000 unidades monetárias. A data de término do primeiro período de liquidação foi 2020-12-31. O valor residual do ativo no final de sua vida depreciável será de 10 unidades monetárias. A taxa de depreciação é de 0,1 (10%) e o ano é calculado usando o método dos EUA (Base 0). Assumindo a depreciação degressiva, qual é o valor da depreciação no quarto período de depreciação?"
+
+#. qyD4t
+#: 04060103.xhp
+msgctxt ""
+"04060103.xhp\n"
+"par_id901612299089478\n"
+"help.text"
+msgid "<input>=AMORDEGRC(2000; \"2020-02-01\"; \"2020-12-31\"; 10; 4; 0.1; 0)</input> returns a depreciation amount of 163 currency units."
+msgstr "<input>=AMORDEGRC(2000; \"2020-02-01\"; \"2020-12-31\"; 10; 4; 0,1; 0)</input> retorna um valor de depreciação de 163 unidades monetárias."
+
 #. UCPgp
 #: 04060103.xhp
 msgctxt ""
@@ -5982,6 +6000,24 @@ msgctxt ""
 "help.text"
 msgid "<emph>Rate</emph> is the rate of depreciation."
 msgstr "<emph>Taxa</emph> é a taxa de depreciação."
+
+#. vJKVs
+#: 04060103.xhp
+msgctxt ""
+"04060103.xhp\n"
+"par_id641612299092454\n"
+"help.text"
+msgid "An asset was acquired on 2020-02-01 at a cost of 2000 currency units. The end date of the first settlement period was 2020-12-31. The salvage value of the asset at the end of its depreciable life will be 10 currency units. The rate of depreciation is 0.1 (10%) and the year is calculated using the US method (Basis 0). Assuming linear depreciation, what is the amount of depreciation in the fourth depreciation period?"
+msgstr "Um ativo foi adquirido em 2020-02-01 a um custo de 2.000 unidades monetárias. A data de término do primeiro período de liquidação foi 2020-12-31. O valor residual do ativo no final de sua vida depreciável será de 10 unidades monetárias. A taxa de depreciação é de 0,1 (10%) e o ano é calculado usando o método dos EUA (Base 0). Assumindo a depreciação linear, qual é o valor da depreciação no quarto período de depreciação?"
+
+#. zcGNo
+#: 04060103.xhp
+msgctxt ""
+"04060103.xhp\n"
+"par_id391612299096511\n"
+"help.text"
+msgid "<input>=AMORLINC(2000; \"2020-02-01\"; \"2020-12-31\"; 10; 4; 0.1; 0)</input> returns a depreciation amount of 200 currency units."
+msgstr "<input>=AMORLINC(2000; \"2020-02-01\"; \"2020-12-31\"; 10; 4; 0,1; 0)</input> retorna um valor de depreciação de 200 unidades monetárias."
 
 #. DHKDL
 #: 04060103.xhp
@@ -6172,14 +6208,23 @@ msgctxt ""
 msgid "<emph>Rate</emph> (required) is the annual nominal rate of interest (coupon interest rate)."
 msgstr "<emph>Taxa</emph> (obrigatório) é a taxa de juros nominal anual (taxa de juros do cupom)."
 
-#. qAZtL
+#. GPEHn
 #: 04060103.xhp
 msgctxt ""
 "04060103.xhp\n"
 "par_id3159204\n"
 "help.text"
-msgid "<emph>Par</emph> (optional) is the par value of the security."
-msgstr "<emph>ValorNominal</emph> (opcional) é o valor nominal do título."
+msgid "<emph>Par</emph> (optional) is the par value of the security. If omitted, a default value of 1000 is used."
+msgstr "<emph>ValorNominal</emph> (opcional) é o valor nominal do título. Se omitido, usa-se o valor padrão é 1000."
+
+#. EJaKm
+#: 04060103.xhp
+msgctxt ""
+"04060103.xhp\n"
+"par_id481612296978513\n"
+"help.text"
+msgid "We recommend that you always specify the value that you require for ACCRINTM’s <emph>Par</emph> argument, rather than allowing Calc to apply an arbitrary default. This will make your formula easier to understand and easier to maintain."
+msgstr "Sempre recomenda-se especificar o valor desejado para o argumento <emph>ValorNominal</emph> de JUROSACUM, em vez de permitir ao Calc utilizar uma valor padrão arbitrário. Isso torna a fórmula mais fácil de entender e manter."
 
 #. nB5zK
 #: 04060103.xhp
@@ -7531,32 +7576,23 @@ msgctxt ""
 msgid "<emph>Month</emph> (optional) denotes the number of months for the first year of depreciation. If an entry is not defined, 12 is used as the default."
 msgstr "<emph>Mês</emph> (opcional) denota o número de meses do primeiro ano da depreciação. Se uma entrada não for definida, 12 é usado como padrão."
 
-#. YDw8X
+#. D2krK
 #: 04060103.xhp
 msgctxt ""
 "04060103.xhp\n"
 "par_id3156147\n"
 "help.text"
-msgid "A computer system with an initial cost of 25,000 currency units is to be depreciated over a three year period. The salvage value is to be 1,000 currency units. One period is 30 days."
-msgstr "Um sistema de computador com um custo inicial de 25.000 unidades monetárias deverá ser depreciado em um período de três anos. O valor residual deverá ser 1.000 unidades monetárias. Um período tem 30 dias."
+msgid "A computer system with an initial cost of 25,000 currency units is to be depreciated over a three-year period. The salvage value is to be 1,000 currency units. The first period of depreciation comprises 6 months. What is the fixed-declining balance depreciation of the computer system in the second period, which is a full year starting from the end of the first six-month period?"
+msgstr "Um sistema de computador com um custo inicial de 25.000 unidades monetárias deve ser depreciado ao longo de um período de três anos. O valor residual deve ser 1.000 unidades monetárias. O primeiro período de depreciação compreende 6 meses. Qual é a depreciação do saldo decrescente fixo do sistema de computador no segundo período, que é um ano inteiro começando do final do primeiro período de seis meses?"
 
-#. DpiBb
+#. 4CQGc
 #: 04060103.xhp
 msgctxt ""
 "04060103.xhp\n"
 "par_id3149513\n"
 "help.text"
-msgid "<item type=\"input\">=DB(25000;1000;36;1;6)</item> = 1,075.00 currency units"
-msgstr "<item type=\"input\">=BD(25000;1000;36;1;6)</item> = 1.075,00 unidades monetárias"
-
-#. 9hDAg
-#: 04060103.xhp
-msgctxt ""
-"04060103.xhp\n"
-"par_id3159242\n"
-"help.text"
-msgid "The fixed-declining depreciation of the computer system is 1,075.00 currency units."
-msgstr "A depreciação com declínio fixo do sistema de computador será 1.075,00 unidades monetárias."
+msgid "<input>=DB(25000; 1000; 3; 2; 6)</input> returns 11,037.95 currency units."
+msgstr "<input>=BD(25000; 1000; 3; 2; 6)</input> retorna 11.037,95 unidades monetárias."
 
 #. fWK6h
 #: 04060103.xhp
@@ -18457,14 +18493,14 @@ msgctxt ""
 msgid "SHEET"
 msgstr "PLANILHA"
 
-#. GkhfA
+#. BRXnw
 #: 04060109.xhp
 msgctxt ""
 "04060109.xhp\n"
 "par_id3150309\n"
 "help.text"
-msgid "<ahelp hid=\"HID_FUNC_TABELLE\">Returns the sheet number of a reference or a string representing a sheet name.</ahelp> If you do not enter any parameters, the result is the sheet number of the spreadsheet containing the formula."
-msgstr "<ahelp hid=\"HID_FUNC_TABELLE\">Retorna o número de planilha de uma referência ou uma cadeia de caracteres que representa um nome de planilha.</ahelp> Se você não inserir nenhum parâmetro, o resultado será o número da planilha que contém a fórmula."
+msgid "<ahelp hid=\"HID_FUNC_TABELLE\">Returns the sheet number of either a reference or a string representing a sheet name.</ahelp> If you do not enter any parameters, the result is the sheet number of the spreadsheet containing the formula."
+msgstr "<ahelp hid=\"HID_FUNC_TABELLE\">Retorna o número de planilha de uma referência ou um texto que representa um nome de planilha.</ahelp> Se não inserir nenhum parâmetro, o resultado será o número da planilha que contém a fórmula."
 
 #. KRzAZ
 #: 04060109.xhp
@@ -18484,14 +18520,23 @@ msgctxt ""
 msgid "<emph>Reference</emph> is optional and is the reference to a cell, an area, or a sheet name string."
 msgstr "<emph>Referência</emph> é opcional e é uma referência a uma célula, uma área ou um nome de planilha."
 
-#. SEDm6
+#. wbjCM
 #: 04060109.xhp
 msgctxt ""
 "04060109.xhp\n"
 "par_id3146988\n"
 "help.text"
-msgid "<item type=\"input\">=SHEET(Sheet2.A1)</item> returns 2 if Sheet2 is the second sheet in the spreadsheet document."
-msgstr "<item type=\"input\">=PLANILHA(Planilha2.A1)</item> retorna 2 se Planilha2 é a segunda planilha no documento."
+msgid "<input>=SHEET(Sheet2.A1)</input> returns 2 if Sheet2 is the second sheet in the spreadsheet document."
+msgstr "<input>=PLANILHA(Planilha2.A1)</input> retorna 2 se Planilha2 é a segunda planilha no documento."
+
+#. fEQws
+#: 04060109.xhp
+msgctxt ""
+"04060109.xhp\n"
+"par_id491612531793751\n"
+"help.text"
+msgid "<input>=SHEET(\"Sheet3\")</input> returns 3 if Sheet3 is the third sheet in the spreadsheet document."
+msgstr "<input>=PLANILHA(\"Planilha3\")</input> retorna 3 se Planilha3 é a terceira planilha no documento."
 
 #. 7ZBfD
 #: 04060109.xhp
@@ -19086,6 +19131,78 @@ msgctxt ""
 "help.text"
 msgid "For an explanation on the parameters, see: <link href=\"text/scalc/01/04060109.xhp#Section9\" name=\"VLOOKUP\">VLOOKUP</link> (columns and rows are exchanged)"
 msgstr "Para uma explicação dos parâmetros, veja: <link href=\"text/scalc/01/04060109.xhp#Section9\" name=\"VLOOKUP\">PROCV</link> (colunas e linhas são trocadas)"
+
+#. vwqHz
+#: 04060109.xhp
+msgctxt ""
+"04060109.xhp\n"
+"par_id141612447324913\n"
+"help.text"
+msgid "Suppose we have built a small database table occupying the cell range A1:DO4 and containing basic information about 118 chemical elements. The first column contains the row headings “Element”, “Symbol”, “Atomic Number”, and “Relative Atomic Mass”. Subsequent columns contain the relevant information for each of the elements, ordered left to right by atomic number. For example, cells B1:B4 contain “Hydrogen”, “H”, “1” and “1.008”, while cells DO1:DO4 contain “Oganesson”, “Og”, “118”, and “294”."
+msgstr "Tem-se uma pequena tabela de banco de dados ocupando o intervalo de células A1: DO4 e contendo informações básicas sobre 118 elementos químicos. A primeira coluna contém os cabeçalhos das linhas “Elemento”, “Símbolo”, “Número Atômico” e “Massa Atômica Relativa”. As colunas subsequentes contêm as informações relevantes para cada um dos elementos, ordenadas da esquerda para a direita pelo número atômico. Por exemplo, as células B1: B4 contêm “Hidrogênio”, “H”, “1” e “1.008”, enquanto as células DO1: DO4 contêm “Oganesson”, “Og”, “118” e “294”."
+
+#. BcKD5
+#: 04060109.xhp
+msgctxt ""
+"04060109.xhp\n"
+"par_id711612450364379\n"
+"help.text"
+msgid "Hydrogen"
+msgstr "Hidrogênio"
+
+#. ACHPj
+#: 04060109.xhp
+msgctxt ""
+"04060109.xhp\n"
+"par_id681612450364379\n"
+"help.text"
+msgid "Helium"
+msgstr "Hélio"
+
+#. 7YEmL
+#: 04060109.xhp
+msgctxt ""
+"04060109.xhp\n"
+"par_id531612453345232\n"
+"help.text"
+msgid "Lithium"
+msgstr "Lítio"
+
+#. Y3c6z
+#: 04060109.xhp
+msgctxt ""
+"04060109.xhp\n"
+"par_id571612453039430\n"
+"help.text"
+msgid "Oganesson"
+msgstr "Oganesson"
+
+#. Cb3HA
+#: 04060109.xhp
+msgctxt ""
+"04060109.xhp\n"
+"par_id51612447346319\n"
+"help.text"
+msgid "<input>=HLOOKUP(\"Lead\"; $A$1:$DO$4; 2; 0)</input> returns “Pb”, the symbol for lead."
+msgstr "<input>=PROCH(\"Chumbo\"; $A$1:$DO$4; 2; 0)</input> retorna “Pb”, o símbolo do chumbo."
+
+#. Fa8kD
+#: 04060109.xhp
+msgctxt ""
+"04060109.xhp\n"
+"par_id291612447349416\n"
+"help.text"
+msgid "<input>=HLOOKUP(\"Gold\"; $A$1:$DO$4; 3; 0)</input> returns 79, the atomic number for gold."
+msgstr "<input>=PROCH(\"Ouro\"; $A$1:$DO$4; 3; 0)</input> retorna 79, o número atômico do ouro."
+
+#. LbWuo
+#: 04060109.xhp
+msgctxt ""
+"04060109.xhp\n"
+"par_id971612447352912\n"
+"help.text"
+msgid "<input>=HLOOKUP(\"Carbon\"; $A$1:$DO$4; 4; 0)</input> returns 12.011, the relative atomic mass of carbon."
+msgstr "<input>=PROCH(\"Carbono\"; $A$1:$DO$4; 4; 0)</input> retorna 12,011, a massa atômica relativa do carbono."
 
 #. B4DL3
 #: 04060109.xhp
@@ -28141,203 +28258,41 @@ msgctxt ""
 msgid "<emph>Guess</emph> (optional) is a guess that can be input for the internal rate of return. The default is 10%."
 msgstr "<emph>Estimativa</emph> (opcional) é uma estimativa para dar entrada na taxa interna de retorno. O padrão é 10%."
 
-#. NSjGJ
+#. dZESY
 #: 04060118.xhp
 msgctxt ""
 "04060118.xhp\n"
 "par_id3149273\n"
 "help.text"
-msgid "Calculation of the internal rate of return for the following five payments:"
-msgstr "Cálculo da taxa interna de retorno para os cinco pagamentos a seguir:"
+msgid "Calculation of the internal rate of return for the following five payments (dates are in ISO 8601 format):"
+msgstr "Cálculo da taxa interna de retorno para os cinco pagamentos a seguir (datas no formato ISO 8601):"
 
-#. eke7W
-#: 04060118.xhp
-msgctxt ""
-"04060118.xhp\n"
-"par_id3155838\n"
-"help.text"
-msgid "A"
-msgstr "A"
-
-#. LSV7U
-#: 04060118.xhp
-msgctxt ""
-"04060118.xhp\n"
-"par_id3152934\n"
-"help.text"
-msgid "B"
-msgstr "B"
-
-#. BGtK9
-#: 04060118.xhp
-msgctxt ""
-"04060118.xhp\n"
-"par_id3154638\n"
-"help.text"
-msgid "C"
-msgstr "C"
-
-#. WYW4F
-#: 04060118.xhp
-msgctxt ""
-"04060118.xhp\n"
-"par_id3147083\n"
-"help.text"
-msgid "1"
-msgstr "1"
-
-#. SwaVn
-#: 04060118.xhp
-msgctxt ""
-"04060118.xhp\n"
-"par_id3151187\n"
-"help.text"
-msgid "2001-01-01"
-msgstr "01-01-2001"
-
-#. ChsyU
-#: 04060118.xhp
-msgctxt ""
-"04060118.xhp\n"
-"par_id3145212\n"
-"help.text"
-msgid "-<item type=\"input\">10000</item>"
-msgstr "-<item type=\"input\">10000</item>"
-
-#. rmGTa
+#. 6JTLA
 #: 04060118.xhp
 msgctxt ""
 "04060118.xhp\n"
 "par_id3146856\n"
 "help.text"
-msgid "<item type=\"input\">Received</item>"
-msgstr "<item type=\"input\">Recebido</item>"
+msgid "Received"
+msgstr "Recebido"
 
-#. gxjFB
-#: 04060118.xhp
-msgctxt ""
-"04060118.xhp\n"
-"par_id3153277\n"
-"help.text"
-msgid "2"
-msgstr "2"
-
-#. e3a6n
-#: 04060118.xhp
-msgctxt ""
-"04060118.xhp\n"
-"par_id3154052\n"
-"help.text"
-msgid "2001-01-02"
-msgstr "02-01-2001"
-
-#. BLL9e
-#: 04060118.xhp
-msgctxt ""
-"04060118.xhp\n"
-"par_id3151297\n"
-"help.text"
-msgid "<item type=\"input\">2000</item>"
-msgstr "<item type=\"input\">2000</item>"
-
-#. unr5K
+#. N2RNr
 #: 04060118.xhp
 msgctxt ""
 "04060118.xhp\n"
 "par_id3149985\n"
 "help.text"
-msgid "<item type=\"input\">Deposited</item>"
-msgstr "<item type=\"input\">Depositado </item>"
+msgid "Deposited"
+msgstr "Depositado"
 
-#. YCCCY
-#: 04060118.xhp
-msgctxt ""
-"04060118.xhp\n"
-"par_id3154744\n"
-"help.text"
-msgid "3"
-msgstr "3"
-
-#. uxnXF
-#: 04060118.xhp
-msgctxt ""
-"04060118.xhp\n"
-"par_id3153151\n"
-"help.text"
-msgid "2001-03-15"
-msgstr "15-03-2001"
-
-#. qzvoJ
-#: 04060118.xhp
-msgctxt ""
-"04060118.xhp\n"
-"par_id3145657\n"
-"help.text"
-msgid "2500"
-msgstr "2500"
-
-#. T6jHE
-#: 04060118.xhp
-msgctxt ""
-"04060118.xhp\n"
-"par_id3155101\n"
-"help.text"
-msgid "4"
-msgstr "4"
-
-#. 6qrWD
-#: 04060118.xhp
-msgctxt ""
-"04060118.xhp\n"
-"par_id3146894\n"
-"help.text"
-msgid "2001-05-12"
-msgstr "12-05-2001"
-
-#. cqxc3
-#: 04060118.xhp
-msgctxt ""
-"04060118.xhp\n"
-"par_id3143231\n"
-"help.text"
-msgid "5000"
-msgstr "5000"
-
-#. GkY8h
-#: 04060118.xhp
-msgctxt ""
-"04060118.xhp\n"
-"par_id3156012\n"
-"help.text"
-msgid "5"
-msgstr "5"
-
-#. X7PHP
-#: 04060118.xhp
-msgctxt ""
-"04060118.xhp\n"
-"par_id3149758\n"
-"help.text"
-msgid "2001-08-10"
-msgstr "10-08-2001"
-
-#. 5AWfe
-#: 04060118.xhp
-msgctxt ""
-"04060118.xhp\n"
-"par_id3147495\n"
-"help.text"
-msgid "1000"
-msgstr "1000"
-
-#. 6ArE8
+#. FLNWb
 #: 04060118.xhp
 msgctxt ""
 "04060118.xhp\n"
 "par_id3152793\n"
 "help.text"
-msgid "=XIRR(B1:B5; A1:A5; 0.1) returns 0.1828."
-msgstr "=XTIR(B1:B5; A1:A5; 0,1) retorna 0,1828."
+msgid "<input>=XIRR(B1:B5; A1:A5; 0.1)</input> returns 0.1828 or 18.28%."
+msgstr "<input>=XTIR(B1:B5; A1:A5; 0,1)</input> retorna 0,1828, ou 18,28%."
 
 #. HRiCT
 #: 04060118.xhp
@@ -35809,23 +35764,23 @@ msgctxt ""
 msgid "The inverse function is GAMMAINV or GAMMA.INV."
 msgstr "A função inversa é INVGAMA ou INV.GAMA."
 
-#. F2Nsp
+#. P8Kc2
 #: 04060182.xhp
 msgctxt ""
 "04060182.xhp\n"
 "par_id2406201422405814\n"
 "help.text"
-msgid "This function is identical to GAMMADIST and was introduced for interoperability with other office suites."
-msgstr "Esta função é idêntica à função DISTGAMA e foi introduzida para manter a interoperabilidade com outras suítes de escritório."
+msgid "This function is similar to GAMMADIST and was introduced for interoperability with other office suites."
+msgstr "Esta função é similar à função DISTGAMA e foi introduzida para manter a interoperabilidade com outras suítes de escritório."
 
-#. WGnD7
+#. Gk9Ch
 #: 04060182.xhp
 msgctxt ""
 "04060182.xhp\n"
 "par_id240620142238475\n"
 "help.text"
-msgid "GAMMA.DIST(Number; Alpha; Beta; C)"
-msgstr "DIST.GAMA(Número; Alfa; Beta; C)"
+msgid "GAMMA.DIST(Number; Alpha; Beta; Cumulative)"
+msgstr "DIST.GAMA(Número; Alfa; Beta; Acumulada)"
 
 #. kLcmS
 #: 04060182.xhp
@@ -35854,14 +35809,14 @@ msgctxt ""
 msgid "<emph>Beta</emph> is the parameter Beta of the Gamma distribution."
 msgstr "<emph>Beta</emph> é o parâmetro Beta da distribuição Gama."
 
-#. 4nR86
+#. a6oxX
 #: 04060182.xhp
 msgctxt ""
 "04060182.xhp\n"
 "par_id2406201422391058\n"
 "help.text"
-msgid "<emph>C</emph> (optional) = 0 or False calculates the density function <emph>C</emph> = 1 or True calculates the distribution."
-msgstr "<emph>C</emph> (opcional) = 0 ou Falso calcula a função densidade <emph>C</emph> = 1 ou Verdadeiro calcula a distribuição."
+msgid "<emph>Cumulative</emph> = 0 or False calculates the probability density function; <emph>Cumulative</emph> = 1, True, or any other value calculates the cumulative distribution function."
+msgstr "<emph>Acumulada</emph> = 0 ou FALSO calcula a função densidade de probabilidade. <emph>Acumulada</emph> =1, VERDADEIRO, ou utros valores calcula a função distribuição acumulada."
 
 #. Z7AS8
 #: 04060182.xhp
@@ -36313,13 +36268,13 @@ msgctxt ""
 msgid "<emph>NPopulation </emph>is the size of the total population."
 msgstr "<emph>NPopulação</emph> é o tamanho da população total."
 
-#. oDuYV
+#. MDMvu
 #: 04060182.xhp
 msgctxt ""
 "04060182.xhp\n"
 "par_id231585952506847\n"
 "help.text"
-msgid "<emph>Cumulative </emph> (optional) specifies whether to calculate the probability density function (FALSE or 0) or the cumulative distribution function (any other value). The cumulative distribution function is the default if no value is specified for this parameter."
+msgid "<emph>Cumulative </emph> (optional) specifies whether to calculate the probability mass function (FALSE or 0) or the cumulative distribution function (any other value). The probability mass function is the default if no value is specified for this parameter."
 msgstr "<emph>Acumulada</emph> (opcional) especifica se o cálculo é para a função densidade de probabilidade (FALSO ou 0) ou a função distribuição acumulada (qualquer outro valor). A função distribuição acumulada é o padrão caso nenhum valor seja especificado para este parâmetro."
 
 #. WUiB6
@@ -37222,32 +37177,32 @@ msgctxt ""
 msgid "LOGINV(Number [; Mean [; StDev]])"
 msgstr "INVLOG(Número [; Média [; DesvPad]])"
 
-#. uqfDA
+#. vDVWm
 #: 04060183.xhp
 msgctxt ""
 "04060183.xhp\n"
 "par_id3148390\n"
 "help.text"
-msgid "<emph>Number</emph> is the probability value for which the inverse standard logarithmic distribution is to be calculated."
-msgstr "<emph>Número</emph> é o valor da probabilidade para o qual será calculado o inverso da distribuição logarítmica padrão."
+msgid "<emph>Number</emph> (required) is the probability value for which the inverse standard logarithmic distribution is to be calculated."
+msgstr "<emph>Número</emph> (obrigatório) é o valor da probabilidade para o qual será calculado o inverso da distribuição logarítmica padrão."
 
-#. ZAEjF
+#. aJATB
 #: 04060183.xhp
 msgctxt ""
 "04060183.xhp\n"
 "par_id3149538\n"
 "help.text"
-msgid "<emph>Mean</emph> is the arithmetic mean of the standard logarithmic distribution."
-msgstr "<emph>Média</emph> é a média aritmética da distribuição logarítmica padrão."
+msgid "<emph>Mean</emph> (optional) is the arithmetic mean of the standard logarithmic distribution (defaults to 0 if omitted)."
+msgstr "<emph>Média</emph> (opcional) é a média artimética da distribuição logaritmica padrão (0 se omitida)."
 
-#. RTG5n
+#. PDJWU
 #: 04060183.xhp
 msgctxt ""
 "04060183.xhp\n"
 "par_id3145355\n"
 "help.text"
-msgid "<emph>StDev</emph> is the standard deviation of the standard logarithmic distribution."
-msgstr "<emph>DesvPad</emph> é o desvio padrão da distribuição logarítmica padrão."
+msgid "<emph>StDev</emph> (optional) is the standard deviation of the standard logarithmic distribution (defaults to 1 if omitted)."
+msgstr "<emph>DesvPad</emph> (opcional) é o desvio padrão da distribuição logarítmica padrão (1 se omitido)."
 
 #. Uh6oi
 #: 04060183.xhp
@@ -37294,14 +37249,14 @@ msgctxt ""
 msgid "This function is identical to LOGINV and was introduced for interoperability with other office suites."
 msgstr "Esta função é idêntica à função INVLOG e foi introduzida para manter a interoperabilidade com outras suítes de escritório."
 
-#. tLigG
+#. AivtF
 #: 04060183.xhp
 msgctxt ""
 "04060183.xhp\n"
 "par_id2901049\n"
 "help.text"
-msgid "LOGNORM.INV(Number; Mean; StDev)"
-msgstr "INV.LOGNORMAL(Número; Média; DesvPad)"
+msgid "LOGNORM.INV(Number [; Mean [; StDev]])"
+msgstr "INV.LOGNORMAL(Número [; Média [; DesvPad]])"
 
 #. p2y5k
 #: 04060183.xhp
@@ -37312,23 +37267,23 @@ msgctxt ""
 msgid "<emph>Number</emph> (required) is the probability value for which the inverse standard logarithmic distribution is to be calculated."
 msgstr "<emph>Número</emph> (obrigatório) é o valor da probabilidade para o qual será calculado o inverso da distribuição logarítmica padrão."
 
-#. sFACF
+#. ip7rm
 #: 04060183.xhp
 msgctxt ""
 "04060183.xhp\n"
 "par_id2901538\n"
 "help.text"
-msgid "<emph>Mean</emph> (required) is the arithmetic mean of the standard logarithmic distribution."
-msgstr "<emph>Média</emph> (obrigatório) é a média aritmética da distribuição logarítmica padrão."
+msgid "<emph>Mean</emph> (optional) is the arithmetic mean of the standard logarithmic distribution (defaults to 0 if omitted)."
+msgstr "<emph>Média</emph> (opcional) é a média artimética da distribuição logaritmica padrão (0 se omitida)."
 
-#. PZ4w5
+#. pPM9C
 #: 04060183.xhp
 msgctxt ""
 "04060183.xhp\n"
 "par_id2901355\n"
 "help.text"
-msgid "<emph>StDev</emph> (required) is the standard deviation of the standard logarithmic distribution."
-msgstr "<emph>DesvPad</emph> (obrigatório) é o desvio padrão da distribuição logarítmica padrão."
+msgid "<emph>StDev</emph> (optional) is the standard deviation of the standard logarithmic distribution (defaults to 1 if omitted)."
+msgstr "<emph>DesvPad</emph> (opcional) é o desvio padrão da distribuição logarítmica padrão (1 se omitido)."
 
 #. UYg6S
 #: 04060183.xhp
@@ -38842,14 +38797,14 @@ msgctxt ""
 msgid "<ahelp hid=\"HID_FUNC_POISSON_DIST_MS\">Returns the Poisson distribution.</ahelp>"
 msgstr "<ahelp hid=\"HID_FUNC_POISSON_DIST_MS\">Retorna a distribuição de Poisson.</ahelp>"
 
-#. JHGHg
+#. nVnxU
 #: 04060184.xhp
 msgctxt ""
 "04060184.xhp\n"
 "par_id2946093\n"
 "help.text"
-msgid "POISSON.DIST(Number; Mean [; C])"
-msgstr "DIST.POISSON(Número; Média [; C])"
+msgid "POISSON.DIST(Number; Mean ; Cumulative)"
+msgstr "DIST.POISSON(Número; Média; Acumulada)"
 
 #. jnjk7
 #: 04060184.xhp
@@ -38869,14 +38824,14 @@ msgctxt ""
 msgid "<emph>Mean</emph> represents the middle value of the Poisson distribution."
 msgstr "<emph>Média</emph> representa o valor do meio da distribuição de Poisson."
 
-#. fXReC
+#. MiQ2K
 #: 04060184.xhp
 msgctxt ""
 "04060184.xhp\n"
 "par_id2949200\n"
 "help.text"
-msgid "<emph>C</emph> (optional) = 0 or False calculates the density function; <emph>C</emph> = 1 or True calculates the distribution. When omitted, the default value True is inserted when you save the document, for best compatibility with other programs and older versions of %PRODUCTNAME."
-msgstr "<emph>C</emph> (opcional) = 0 ou Falso calcula a função densidade; <emph>C</emph> = 1 ou Verdadeiro calcula a distribuição. Se omitido, o valor padrão Verdadeiro será inserido ao salvar o documento, para melhor compatibilidade com outros programas e versões antigas do %PRODUCTNAME."
+msgid "<emph>Cumulative</emph> = 0 or False to calculate the probability mass function; <emph>Cumulative</emph> = 1, True, or any other non-zero value to calculate the cumulative distribution function."
+msgstr "<emph>Acumulada</emph> = 0 ou FALSO calcula a função densidade de probabilidade. <emph>Acumulada</emph> =1, VERDADEIRO, ou outros valores calcula a função distribuição acumulada."
 
 #. gXFJQ
 #: 04060184.xhp
@@ -45439,14 +45394,14 @@ msgctxt ""
 msgid "<bookmark_value>Stylist, see Styles window</bookmark_value><bookmark_value>Styles window</bookmark_value><bookmark_value>formats; Styles window</bookmark_value><bookmark_value>formatting; Styles window</bookmark_value><bookmark_value>paint can for applying styles</bookmark_value><bookmark_value>styles in spreadsheets</bookmark_value><bookmark_value>styles; in Calc</bookmark_value>"
 msgstr "<bookmark_value>Estilista, veja janela Estilos</bookmark_value><bookmark_value>janela Estilos</bookmark_value><bookmark_value>formatos; janela Estilos</bookmark_value><bookmark_value>formatação; janela Estilos</bookmark_value><bookmark_value>lata de tinta para aplicar estilos</bookmark_value><bookmark_value>estilos em planilhas</bookmark_value><bookmark_value>estilos; no Calc</bookmark_value>"
 
-#. WerNG
+#. eA3vo
 #: 05100000.xhp
 msgctxt ""
 "05100000.xhp\n"
 "hd_id3150447\n"
 "help.text"
-msgid "<link href=\"text/scalc/01/05100000.xhp\" name=\"Styles\">Styles in Calc</link>"
-msgstr "<link href=\"text/scalc/01/05100000.xhp\" name=\"Styles\">Estilos no Calc</link>"
+msgid "<link href=\"text/scalc/01/05100000.xhp\" name=\"Styles\">Styles</link>"
+msgstr "<link href=\"text/scalc/01/05100000.xhp\" name=\"Estilos\">Estilos</link>"
 
 #. bBG57
 #: 05100000.xhp
@@ -48020,16 +47975,16 @@ msgctxt ""
 "tit\n"
 "help.text"
 msgid "Freeze Rows and Columns"
-msgstr "Congelar linhas e colunas"
+msgstr "Fixar linhas e colunas"
 
-#. rBUcX
+#. nwRKF
 #: 07090000.xhp
 msgctxt ""
 "07090000.xhp\n"
 "hd_id3150517\n"
 "help.text"
-msgid "<link href=\"text/scalc/01/07090000.xhp\" name=\"Freeze\">Freeze Rows and Columns</link>"
-msgstr "<link href=\"text/scalc/01/07090000.xhp\" name=\"Freeze\">Congelar linhas e colunas</link>"
+msgid "<variable id=\"freezerowcolum\"><link href=\"text/scalc/01/07090000.xhp\" name=\"Freeze\">Freeze Rows and Columns</link></variable>"
+msgstr "<variable id=\"freezerowcolum\"><link href=\"text/scalc/01/07090000.xhp\" name=\"Freeze\">Fixar linhas e colunas</link></variable>"
 
 #. XjvVY
 #: 07090000.xhp
@@ -48039,6 +47994,42 @@ msgctxt ""
 "help.text"
 msgid "<ahelp hid=\".\">Divides the sheet at the top left corner of the active cell and the area to the top left is no longer scrollable.</ahelp>"
 msgstr "<ahelp hid=\".\">Divide a planilha no canto superior esquerdo da célula ativa. A área localizada na parte superior esquerda não será mais deslizável.</ahelp>"
+
+#. mBdCG
+#: 07090100.xhp
+msgctxt ""
+"07090100.xhp\n"
+"tit\n"
+"help.text"
+msgid "Freeze Cells"
+msgstr "Fixar células"
+
+#. U6FYG
+#: 07090100.xhp
+msgctxt ""
+"07090100.xhp\n"
+"bm_id821612315529410\n"
+"help.text"
+msgid "<bookmark_value>freezing;first row</bookmark_value>    <bookmark_value>freezing;first column</bookmark_value>    <bookmark_value>freezing;cells</bookmark_value>"
+msgstr "<bookmark_value>fixar;primeira linha</bookmark_value><bookmark_value>fixar;primeira coluna</bookmark_value>    <bookmark_value>fixar;células</bookmark_value>"
+
+#. tTzNC
+#: 07090100.xhp
+msgctxt ""
+"07090100.xhp\n"
+"hd_id961612313262512\n"
+"help.text"
+msgid "<variable id=\"freezecellsh1\"><link href=\"text/scalc/01/07090100.xhp\" name=\"Freeze Cells\">Freeze Cells</link></variable>"
+msgstr "<variable id=\"freezecellsh1\"><link href=\"text/scalc/01/07090100.xhp\" name=\"Freeze Cells\">Fixar células</link></variable>"
+
+#. sWGWB
+#: 07090100.xhp
+msgctxt ""
+"07090100.xhp\n"
+"par_id481612313262514\n"
+"help.text"
+msgid "Freezes the first column or the first row of the current spreadsheet."
+msgstr "Fixa a primeira linha ou primeira coluna da planilha atual."
 
 #. ozNTG
 #: 12010000.xhp
@@ -53951,7 +53942,7 @@ msgctxt ""
 "par_id861610473146895\n"
 "help.text"
 msgid "Set the minimum value for which the data bar does not start filling."
-msgstr ""
+msgstr "Define o valor mínimo para o qual a barra de dados não preenche."
 
 #. FjNLX
 #: databar_more_options.xhp
@@ -53969,7 +53960,7 @@ msgctxt ""
 "par_id461610473163880\n"
 "help.text"
 msgid "Set the maximum value for which the data bar gets completely filled."
-msgstr ""
+msgstr "Define o valor máximo para que a barra de dados esteja cheia."
 
 #. ePnFB
 #: databar_more_options.xhp
@@ -53978,7 +53969,7 @@ msgctxt ""
 "par_id791610556114310\n"
 "help.text"
 msgid "The options for setting the minimum and maximum values are:"
-msgstr ""
+msgstr "As opções de definição dos valores de máximo e mínimo são:"
 
 #. gBHrw
 #: databar_more_options.xhp
@@ -54095,7 +54086,7 @@ msgctxt ""
 "par_id221610558585001\n"
 "help.text"
 msgid "Choose between color and gradient for the fill."
-msgstr ""
+msgstr "Escolha entre uma cor sólida e um gradiente para o preenchimento."
 
 #. oQVLz
 #: databar_more_options.xhp
@@ -54185,7 +54176,7 @@ msgctxt ""
 "hd_id651610569932338\n"
 "help.text"
 msgid "Minimum bar length (%):"
-msgstr ""
+msgstr "Comprimento mínimo da barra (%):"
 
 #. 9HmjS
 #: databar_more_options.xhp
@@ -54194,7 +54185,7 @@ msgctxt ""
 "par_id381610560706116\n"
 "help.text"
 msgid "Set the minimum length of the data bar in percentage with respect to the cell length."
-msgstr ""
+msgstr "Define o comprimento mínimo da barra de dados em porcentagem da largura da célula."
 
 #. zvuC5
 #: databar_more_options.xhp
@@ -54203,7 +54194,7 @@ msgctxt ""
 "hd_id151610569983195\n"
 "help.text"
 msgid "Maximum bar length (%):"
-msgstr ""
+msgstr "Comprimento máximo da barra (%):"
 
 #. ZwUDq
 #: databar_more_options.xhp
@@ -54212,7 +54203,7 @@ msgctxt ""
 "par_id511610560783506\n"
 "help.text"
 msgid "Set the maximum length of the data bar in percentage with respect to the cell length."
-msgstr ""
+msgstr "Define o comprimento máximo da barra de dados em porcentagem da largura da célula."
 
 #. 5eqMJ
 #: databar_more_options.xhp
@@ -60946,32 +60937,32 @@ msgctxt ""
 msgid "<item type=\"input\">=MINIFS(C2:C6;B2:B6;\">\"&MIN(B2:B6);B2:B6;\"<\"&MAX(B2:B6))</item>"
 msgstr "<item type=\"input\">=MÍNIMOSES(C2:C6;B2:B6;\">\"&MÍNIMO(B2:B6);B2:B6;\"<\"&MÁXIMO(B2:B6))</item>"
 
-#. nUeRH
+#. Dp4Sx
 #: func_minifs.xhp
 msgctxt ""
 "func_minifs.xhp\n"
 "par_id27619246864839\n"
 "help.text"
-msgid "Calculates the minimum of values of the range C2:C6 that correspond to all values of the range B2:B6 except its minimum and minimum. Returns 65."
+msgid "Calculates the minimum of values of the range C2:C6 that correspond to all values of the range B2:B6 except its minimum and maximum. Returns 65."
 msgstr "Calcula o mínimo dos valores do intervalo C2:C6 que correspondem a todos os valores do intervalo B2:B6 exceto seu máximo e seu mínimo. Retorna 65."
 
-#. CnZcV
+#. 7S443
 #: func_minifs.xhp
 msgctxt ""
 "func_minifs.xhp\n"
 "par_id220502883332563\n"
 "help.text"
-msgid "<item type=\"input\">=MINIFS(C2:C6;A2:A6;\".*book\";B2:B6;\"<=\"&MAX(B2:B6))</item>"
-msgstr "<item type=\"input\">=MÍNIMOSES(C2:C6;A2:A6;\".*book\";B2:B6;\"<=\"&MÁXIMO(B2:B6))</item>"
+msgid "<item type=\"input\">=MINIFS(C2:C6;A2:A6;\".*book\";B2:B6;\">\"&MIN(B2:B6))</item>"
+msgstr "<item type=\"input\">=MÍNIMOSES(C2:C6;A2:A6;\".*book\";B2:B6;\">\"&MÍNIMO(B2:B6))</item>"
 
-#. sGnvo
+#. gNhzJ
 #: func_minifs.xhp
 msgctxt ""
 "func_minifs.xhp\n"
 "par_id15342189586295\n"
 "help.text"
-msgid "Calculates the minimum of values of the range C2:C6 that correspond to all cells of the A2:A6 range starting with \"pen\" and to all cells of the B2:B6 range except its minimum. Returns 180."
-msgstr "Calcula o mínimo dos valores do intervalo C2:C6 que corresponde a todas as células do intervalo A2:A6 iniciando com \"pen\" e para todas as células do intervalo B2:B6 exceto seu mínimo. Retorna 180."
+msgid "Calculates the minimum of values of the range C2:C6 that correspond to all cells of the A2:A6 range ending with \"book\" and to all cells of the B2:B6 range except its minimum. Returns 190."
+msgstr "Calcula o mínimo dos valores do intervalo C2:C6 que corresponde a todas as células do intervalo A2:A6 iniciando com \"book\" e para todas as células do intervalo B2:B6 exceto seu mínimo. Retorna 190."
 
 #. uz4wr
 #: func_minifs.xhp
@@ -62800,41 +62791,23 @@ msgctxt ""
 msgid "The parameters should specify at least three values."
 msgstr "Os parâmetros devem especificar pelo menos três valores."
 
-#. W8hYu
+#. Q2i35
 #: func_skewp.xhp
 msgctxt ""
 "func_skewp.xhp\n"
 "par_id1102201617001888\n"
 "help.text"
-msgid "<item type=\"literal\">SKEWP(2;3;1;6;8;5)</item> returns 0.2828158928"
-msgstr "<item type=\"literal\">DISTORCAOP(2;3;1;6;8;5)</item> retorna 0,2828158928"
+msgid "<input>SKEWP(2;3;1;6;8;5)</input> returns 0.2329985562"
+msgstr "<input>DISTORÇÃOP(2;3;1;6;8;5)</input> retorna 0,2329985562"
 
-#. 63DiS
+#. TAGzC
 #: func_skewp.xhp
 msgctxt ""
 "func_skewp.xhp\n"
 "par_id1102201618185378\n"
 "help.text"
-msgid "<item type=\"literal\">SKEWP(A1:A6)</item> returns 0.2828158928, when the range A1:A6 contains {2;3;1;6;8;5}"
-msgstr "<item type=\"literal\">DISTORCAOP(A1:A6)</item> retorna 0.2828158928, quando o intervalo A1:A6 contém {2;3;1;6;8;5}."
-
-#. Tdd33
-#: func_skewp.xhp
-msgctxt ""
-"func_skewp.xhp\n"
-"par_id1102201618185326\n"
-"help.text"
-msgid "<item type=\"literal\">SKEWP(Number1; Number2)</item> always returns zero, if Number1 and Number2 results in two numbers."
-msgstr "<item type=\"literal\">DISTORCAOP(Número1; Número2)</item> sempre retorna zero, se Número1 e Número2 resultarem em dois números."
-
-#. X6nGR
-#: func_skewp.xhp
-msgctxt ""
-"func_skewp.xhp\n"
-"par_id1102201618188326\n"
-"help.text"
-msgid "<item type=\"literal\">SKEWP(Number1)</item> returns Err:502 (Invalid argument) if Number1 results in one number, because SKEWP cannot be calculated with one value."
-msgstr "<item type=\"literal\">DISTORCAOP(Número1)</item> retorna Err:502 (Argumento inválido) se Número1 resultar em um só número, por que DISTORCAOP não pode ser calculada com um só valor."
+msgid "<input>SKEWP(A1:A6)</input> returns 0.2329985562, when the range A1:A6 contains {2;3;1;6;8;5}"
+msgstr "<input>DISTORÇÃOP(A1:A6)</input> retorna 0,2329985562, quando o intervalo A1:A6 contém {2;3;1;6;8;5}"
 
 #. 5iYyJ
 #: func_skewp.xhp

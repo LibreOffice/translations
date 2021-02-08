@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2021-01-30 15:37+0100\n"
+"POT-Creation-Date: 2021-02-05 18:59+0100\n"
 "PO-Revision-Date: 2021-01-05 07:36+0000\n"
 "Last-Translator: Stanislav Horáček <stanislav.horacek@gmail.com>\n"
 "Language-Team: Czech <https://translations.documentfoundation.org/projects/libo_help-master/textscalc01/cs/>\n"
@@ -5894,6 +5894,24 @@ msgctxt ""
 msgid "<emph>Rate</emph> is the rate of depreciation."
 msgstr "<emph>Sazba</emph>je odpisová sazba."
 
+#. TzEBm
+#: 04060103.xhp
+msgctxt ""
+"04060103.xhp\n"
+"par_id421612299085248\n"
+"help.text"
+msgid "An asset was acquired on 2020-02-01 at a cost of 2000 currency units. The end date of the first settlement period was 2020-12-31. The salvage value of the asset at the end of its depreciable life will be 10 currency units. The rate of depreciation is 0.1 (10%) and the year is calculated using the US method (Basis 0). Assuming degressive depreciation, what is the amount of depreciation in the fourth depreciation period?"
+msgstr ""
+
+#. qyD4t
+#: 04060103.xhp
+msgctxt ""
+"04060103.xhp\n"
+"par_id901612299089478\n"
+"help.text"
+msgid "<input>=AMORDEGRC(2000; \"2020-02-01\"; \"2020-12-31\"; 10; 4; 0.1; 0)</input> returns a depreciation amount of 163 currency units."
+msgstr ""
+
 #. UCPgp
 #: 04060103.xhp
 msgctxt ""
@@ -5983,6 +6001,24 @@ msgctxt ""
 "help.text"
 msgid "<emph>Rate</emph> is the rate of depreciation."
 msgstr "<emph>Sazba</emph>je odpisová sazba."
+
+#. vJKVs
+#: 04060103.xhp
+msgctxt ""
+"04060103.xhp\n"
+"par_id641612299092454\n"
+"help.text"
+msgid "An asset was acquired on 2020-02-01 at a cost of 2000 currency units. The end date of the first settlement period was 2020-12-31. The salvage value of the asset at the end of its depreciable life will be 10 currency units. The rate of depreciation is 0.1 (10%) and the year is calculated using the US method (Basis 0). Assuming linear depreciation, what is the amount of depreciation in the fourth depreciation period?"
+msgstr ""
+
+#. zcGNo
+#: 04060103.xhp
+msgctxt ""
+"04060103.xhp\n"
+"par_id391612299096511\n"
+"help.text"
+msgid "<input>=AMORLINC(2000; \"2020-02-01\"; \"2020-12-31\"; 10; 4; 0.1; 0)</input> returns a depreciation amount of 200 currency units."
+msgstr ""
 
 #. DHKDL
 #: 04060103.xhp
@@ -6173,14 +6209,23 @@ msgctxt ""
 msgid "<emph>Rate</emph> (required) is the annual nominal rate of interest (coupon interest rate)."
 msgstr "<emph>Sazba</emph> (vyžadováno) je roční nominální sazba úroku (sazba úroku kuponu)"
 
-#. qAZtL
+#. GPEHn
 #: 04060103.xhp
 msgctxt ""
 "04060103.xhp\n"
 "par_id3159204\n"
 "help.text"
-msgid "<emph>Par</emph> (optional) is the par value of the security."
-msgstr "<emph>Nominál</emph> (nepovinné) je nominální hodnota cenného papíru."
+msgid "<emph>Par</emph> (optional) is the par value of the security. If omitted, a default value of 1000 is used."
+msgstr ""
+
+#. EJaKm
+#: 04060103.xhp
+msgctxt ""
+"04060103.xhp\n"
+"par_id481612296978513\n"
+"help.text"
+msgid "We recommend that you always specify the value that you require for ACCRINTM’s <emph>Par</emph> argument, rather than allowing Calc to apply an arbitrary default. This will make your formula easier to understand and easier to maintain."
+msgstr ""
 
 #. nB5zK
 #: 04060103.xhp
@@ -7532,32 +7577,23 @@ msgctxt ""
 msgid "<emph>Month</emph> (optional) denotes the number of months for the first year of depreciation. If an entry is not defined, 12 is used as the default."
 msgstr "<emph>Měsíc</emph> (nepovinné) značí počet měsíců pro první rok odpisů. Není-li určen, použije se výchozí hodnota 12."
 
-#. YDw8X
+#. D2krK
 #: 04060103.xhp
 msgctxt ""
 "04060103.xhp\n"
 "par_id3156147\n"
 "help.text"
-msgid "A computer system with an initial cost of 25,000 currency units is to be depreciated over a three year period. The salvage value is to be 1,000 currency units. One period is 30 days."
-msgstr "Počítačový systém s pořizovací cenou 25 000 měnových jednotek má být odepisován po dobu tří let. Zůstatková hodnota má být 1 000 měnových jednotek. Jedno období trvá 30 dní."
+msgid "A computer system with an initial cost of 25,000 currency units is to be depreciated over a three-year period. The salvage value is to be 1,000 currency units. The first period of depreciation comprises 6 months. What is the fixed-declining balance depreciation of the computer system in the second period, which is a full year starting from the end of the first six-month period?"
+msgstr ""
 
-#. DpiBb
+#. 4CQGc
 #: 04060103.xhp
 msgctxt ""
 "04060103.xhp\n"
 "par_id3149513\n"
 "help.text"
-msgid "<item type=\"input\">=DB(25000;1000;36;1;6)</item> = 1,075.00 currency units"
-msgstr "<item type=\"input\">=DB(25000;1000;36;1;6)</item> = 1,075.00 měnových jednotek"
-
-#. 9hDAg
-#: 04060103.xhp
-msgctxt ""
-"04060103.xhp\n"
-"par_id3159242\n"
-"help.text"
-msgid "The fixed-declining depreciation of the computer system is 1,075.00 currency units."
-msgstr "Pevný degresivní odpis počítačového systému činí 1 075,00 měnových jednotek."
+msgid "<input>=DB(25000; 1000; 3; 2; 6)</input> returns 11,037.95 currency units."
+msgstr ""
 
 #. fWK6h
 #: 04060103.xhp
@@ -18458,14 +18494,14 @@ msgctxt ""
 msgid "SHEET"
 msgstr "SHEET"
 
-#. GkhfA
+#. BRXnw
 #: 04060109.xhp
 msgctxt ""
 "04060109.xhp\n"
 "par_id3150309\n"
 "help.text"
-msgid "<ahelp hid=\"HID_FUNC_TABELLE\">Returns the sheet number of a reference or a string representing a sheet name.</ahelp> If you do not enter any parameters, the result is the sheet number of the spreadsheet containing the formula."
-msgstr "<ahelp hid=\"HID_FUNC_TABELLE\">Vrátí číslo listu pro zadaný odkaz nebo název listu jako řetězec.</ahelp> Nezadáte-li žádný z parametrů, funkce vrátí číslo toho listu sešitu, který obsahuje vzorec."
+msgid "<ahelp hid=\"HID_FUNC_TABELLE\">Returns the sheet number of either a reference or a string representing a sheet name.</ahelp> If you do not enter any parameters, the result is the sheet number of the spreadsheet containing the formula."
+msgstr ""
 
 #. KRzAZ
 #: 04060109.xhp
@@ -18485,14 +18521,23 @@ msgctxt ""
 msgid "<emph>Reference</emph> is optional and is the reference to a cell, an area, or a sheet name string."
 msgstr "<emph>Odkaz</emph> je nepovinný parametr a může jít o odkaz na buňku, oblast nebo název listu."
 
-#. SEDm6
+#. wbjCM
 #: 04060109.xhp
 msgctxt ""
 "04060109.xhp\n"
 "par_id3146988\n"
 "help.text"
-msgid "<item type=\"input\">=SHEET(Sheet2.A1)</item> returns 2 if Sheet2 is the second sheet in the spreadsheet document."
-msgstr "<item type=\"input\">=SHEET(List2.A1)</item> vrátí 2 pokud je List2 druhým listem sešitu."
+msgid "<input>=SHEET(Sheet2.A1)</input> returns 2 if Sheet2 is the second sheet in the spreadsheet document."
+msgstr ""
+
+#. fEQws
+#: 04060109.xhp
+msgctxt ""
+"04060109.xhp\n"
+"par_id491612531793751\n"
+"help.text"
+msgid "<input>=SHEET(\"Sheet3\")</input> returns 3 if Sheet3 is the third sheet in the spreadsheet document."
+msgstr ""
 
 #. 7ZBfD
 #: 04060109.xhp
@@ -19087,6 +19132,78 @@ msgctxt ""
 "help.text"
 msgid "For an explanation on the parameters, see: <link href=\"text/scalc/01/04060109.xhp#Section9\" name=\"VLOOKUP\">VLOOKUP</link> (columns and rows are exchanged)"
 msgstr "Vysvětlení parametrů naleznete u funkce <link href=\"text/scalc/01/04060109.xhp#Section9\" name=\"VLOOKUP\">VLOOKUP</link> (v níž jsou oproti funkci HLOOKUP prohozeny sloupce a řádky)"
+
+#. vwqHz
+#: 04060109.xhp
+msgctxt ""
+"04060109.xhp\n"
+"par_id141612447324913\n"
+"help.text"
+msgid "Suppose we have built a small database table occupying the cell range A1:DO4 and containing basic information about 118 chemical elements. The first column contains the row headings “Element”, “Symbol”, “Atomic Number”, and “Relative Atomic Mass”. Subsequent columns contain the relevant information for each of the elements, ordered left to right by atomic number. For example, cells B1:B4 contain “Hydrogen”, “H”, “1” and “1.008”, while cells DO1:DO4 contain “Oganesson”, “Og”, “118”, and “294”."
+msgstr ""
+
+#. BcKD5
+#: 04060109.xhp
+msgctxt ""
+"04060109.xhp\n"
+"par_id711612450364379\n"
+"help.text"
+msgid "Hydrogen"
+msgstr ""
+
+#. ACHPj
+#: 04060109.xhp
+msgctxt ""
+"04060109.xhp\n"
+"par_id681612450364379\n"
+"help.text"
+msgid "Helium"
+msgstr ""
+
+#. 7YEmL
+#: 04060109.xhp
+msgctxt ""
+"04060109.xhp\n"
+"par_id531612453345232\n"
+"help.text"
+msgid "Lithium"
+msgstr ""
+
+#. Y3c6z
+#: 04060109.xhp
+msgctxt ""
+"04060109.xhp\n"
+"par_id571612453039430\n"
+"help.text"
+msgid "Oganesson"
+msgstr ""
+
+#. Cb3HA
+#: 04060109.xhp
+msgctxt ""
+"04060109.xhp\n"
+"par_id51612447346319\n"
+"help.text"
+msgid "<input>=HLOOKUP(\"Lead\"; $A$1:$DO$4; 2; 0)</input> returns “Pb”, the symbol for lead."
+msgstr ""
+
+#. Fa8kD
+#: 04060109.xhp
+msgctxt ""
+"04060109.xhp\n"
+"par_id291612447349416\n"
+"help.text"
+msgid "<input>=HLOOKUP(\"Gold\"; $A$1:$DO$4; 3; 0)</input> returns 79, the atomic number for gold."
+msgstr ""
+
+#. LbWuo
+#: 04060109.xhp
+msgctxt ""
+"04060109.xhp\n"
+"par_id971612447352912\n"
+"help.text"
+msgid "<input>=HLOOKUP(\"Carbon\"; $A$1:$DO$4; 4; 0)</input> returns 12.011, the relative atomic mass of carbon."
+msgstr ""
 
 #. B4DL3
 #: 04060109.xhp
@@ -28142,203 +28259,41 @@ msgctxt ""
 msgid "<emph>Guess</emph> (optional) is a guess that can be input for the internal rate of return. The default is 10%."
 msgstr "<emph>Odhad</emph> (volitelně) je odhad vnitřní sazby výnosu. Implicitně je 10%."
 
-#. NSjGJ
+#. dZESY
 #: 04060118.xhp
 msgctxt ""
 "04060118.xhp\n"
 "par_id3149273\n"
 "help.text"
-msgid "Calculation of the internal rate of return for the following five payments:"
-msgstr "Výpočet vnitřní sazby výnosu následujících pěti plateb:"
+msgid "Calculation of the internal rate of return for the following five payments (dates are in ISO 8601 format):"
+msgstr ""
 
-#. eke7W
-#: 04060118.xhp
-msgctxt ""
-"04060118.xhp\n"
-"par_id3155838\n"
-"help.text"
-msgid "A"
-msgstr "A"
-
-#. LSV7U
-#: 04060118.xhp
-msgctxt ""
-"04060118.xhp\n"
-"par_id3152934\n"
-"help.text"
-msgid "B"
-msgstr "B"
-
-#. BGtK9
-#: 04060118.xhp
-msgctxt ""
-"04060118.xhp\n"
-"par_id3154638\n"
-"help.text"
-msgid "C"
-msgstr "C"
-
-#. WYW4F
-#: 04060118.xhp
-msgctxt ""
-"04060118.xhp\n"
-"par_id3147083\n"
-"help.text"
-msgid "1"
-msgstr "1"
-
-#. SwaVn
-#: 04060118.xhp
-msgctxt ""
-"04060118.xhp\n"
-"par_id3151187\n"
-"help.text"
-msgid "2001-01-01"
-msgstr "2001-01-01"
-
-#. ChsyU
-#: 04060118.xhp
-msgctxt ""
-"04060118.xhp\n"
-"par_id3145212\n"
-"help.text"
-msgid "-<item type=\"input\">10000</item>"
-msgstr "-<item type=\"input\">10000</item>"
-
-#. rmGTa
+#. 6JTLA
 #: 04060118.xhp
 msgctxt ""
 "04060118.xhp\n"
 "par_id3146856\n"
 "help.text"
-msgid "<item type=\"input\">Received</item>"
-msgstr "<item type=\"input\">Přijato</item>"
+msgid "Received"
+msgstr ""
 
-#. gxjFB
-#: 04060118.xhp
-msgctxt ""
-"04060118.xhp\n"
-"par_id3153277\n"
-"help.text"
-msgid "2"
-msgstr "2"
-
-#. e3a6n
-#: 04060118.xhp
-msgctxt ""
-"04060118.xhp\n"
-"par_id3154052\n"
-"help.text"
-msgid "2001-01-02"
-msgstr "2001-01-02"
-
-#. BLL9e
-#: 04060118.xhp
-msgctxt ""
-"04060118.xhp\n"
-"par_id3151297\n"
-"help.text"
-msgid "<item type=\"input\">2000</item>"
-msgstr "<item type=\"input\">2000</item>"
-
-#. unr5K
+#. N2RNr
 #: 04060118.xhp
 msgctxt ""
 "04060118.xhp\n"
 "par_id3149985\n"
 "help.text"
-msgid "<item type=\"input\">Deposited</item>"
-msgstr "<item type=\"input\">výdej</item>"
+msgid "Deposited"
+msgstr ""
 
-#. YCCCY
-#: 04060118.xhp
-msgctxt ""
-"04060118.xhp\n"
-"par_id3154744\n"
-"help.text"
-msgid "3"
-msgstr "3"
-
-#. uxnXF
-#: 04060118.xhp
-msgctxt ""
-"04060118.xhp\n"
-"par_id3153151\n"
-"help.text"
-msgid "2001-03-15"
-msgstr "2001-03-15"
-
-#. qzvoJ
-#: 04060118.xhp
-msgctxt ""
-"04060118.xhp\n"
-"par_id3145657\n"
-"help.text"
-msgid "2500"
-msgstr "2500"
-
-#. T6jHE
-#: 04060118.xhp
-msgctxt ""
-"04060118.xhp\n"
-"par_id3155101\n"
-"help.text"
-msgid "4"
-msgstr "4"
-
-#. 6qrWD
-#: 04060118.xhp
-msgctxt ""
-"04060118.xhp\n"
-"par_id3146894\n"
-"help.text"
-msgid "2001-05-12"
-msgstr "2001-05-12"
-
-#. cqxc3
-#: 04060118.xhp
-msgctxt ""
-"04060118.xhp\n"
-"par_id3143231\n"
-"help.text"
-msgid "5000"
-msgstr "5000"
-
-#. GkY8h
-#: 04060118.xhp
-msgctxt ""
-"04060118.xhp\n"
-"par_id3156012\n"
-"help.text"
-msgid "5"
-msgstr "5"
-
-#. X7PHP
-#: 04060118.xhp
-msgctxt ""
-"04060118.xhp\n"
-"par_id3149758\n"
-"help.text"
-msgid "2001-08-10"
-msgstr "2001-08-10"
-
-#. 5AWfe
-#: 04060118.xhp
-msgctxt ""
-"04060118.xhp\n"
-"par_id3147495\n"
-"help.text"
-msgid "1000"
-msgstr "1000"
-
-#. 6ArE8
+#. FLNWb
 #: 04060118.xhp
 msgctxt ""
 "04060118.xhp\n"
 "par_id3152793\n"
 "help.text"
-msgid "=XIRR(B1:B5; A1:A5; 0.1) returns 0.1828."
-msgstr "=XIRR(B1:B5; A1:A5; 0.1) vrátí 0.1828."
+msgid "<input>=XIRR(B1:B5; A1:A5; 0.1)</input> returns 0.1828 or 18.28%."
+msgstr ""
 
 #. HRiCT
 #: 04060118.xhp
@@ -35810,23 +35765,23 @@ msgctxt ""
 msgid "The inverse function is GAMMAINV or GAMMA.INV."
 msgstr "Inverzní funkcí je GAMMAINV nebo GAMMA.INV."
 
-#. F2Nsp
+#. P8Kc2
 #: 04060182.xhp
 msgctxt ""
 "04060182.xhp\n"
 "par_id2406201422405814\n"
 "help.text"
-msgid "This function is identical to GAMMADIST and was introduced for interoperability with other office suites."
-msgstr "Tato funkce je totožná s GAMMADIST a byla zavedena kvůli interoperabilitě s jinými kancelářskými balíky."
+msgid "This function is similar to GAMMADIST and was introduced for interoperability with other office suites."
+msgstr ""
 
-#. WGnD7
+#. Gk9Ch
 #: 04060182.xhp
 msgctxt ""
 "04060182.xhp\n"
 "par_id240620142238475\n"
 "help.text"
-msgid "GAMMA.DIST(Number; Alpha; Beta; C)"
-msgstr "GAMMA.DIST(Číslo; Alfa; Beta; C)"
+msgid "GAMMA.DIST(Number; Alpha; Beta; Cumulative)"
+msgstr ""
 
 #. kLcmS
 #: 04060182.xhp
@@ -35855,14 +35810,14 @@ msgctxt ""
 msgid "<emph>Beta</emph> is the parameter Beta of the Gamma distribution."
 msgstr "<emph>Beta</emph>je parametr beta pro gama rozdělení."
 
-#. 4nR86
+#. a6oxX
 #: 04060182.xhp
 msgctxt ""
 "04060182.xhp\n"
 "par_id2406201422391058\n"
 "help.text"
-msgid "<emph>C</emph> (optional) = 0 or False calculates the density function <emph>C</emph> = 1 or True calculates the distribution."
-msgstr "Pro <emph>C</emph> (nepovinné) = 0 nebo Nepravda se spočítá hustota pravděpodobnosti, pro <emph>C</emph> = 1 nebo Pravda se spočítá distribuční funkce."
+msgid "<emph>Cumulative</emph> = 0 or False calculates the probability density function; <emph>Cumulative</emph> = 1, True, or any other value calculates the cumulative distribution function."
+msgstr ""
 
 #. Z7AS8
 #: 04060182.xhp
@@ -36314,14 +36269,14 @@ msgctxt ""
 msgid "<emph>NPopulation </emph>is the size of the total population."
 msgstr "<emph>NZákladníSoubor</emph> je velikost celého základního souboru."
 
-#. oDuYV
+#. MDMvu
 #: 04060182.xhp
 msgctxt ""
 "04060182.xhp\n"
 "par_id231585952506847\n"
 "help.text"
-msgid "<emph>Cumulative </emph> (optional) specifies whether to calculate the probability density function (FALSE or 0) or the cumulative distribution function (any other value). The cumulative distribution function is the default if no value is specified for this parameter."
-msgstr "<emph>Kumulativní</emph> (nepovinné) udává, zda se má vypočítat hustota pravděpodobnosti (NEPRAVDA nebo 0), nebo distribuční funkce (jiná hodnota). Pokud není hodnota tohoto parametru zadána, je výchozí distribuční funkce."
+msgid "<emph>Cumulative </emph> (optional) specifies whether to calculate the probability mass function (FALSE or 0) or the cumulative distribution function (any other value). The probability mass function is the default if no value is specified for this parameter."
+msgstr ""
 
 #. WUiB6
 #: 04060182.xhp
@@ -37223,32 +37178,32 @@ msgctxt ""
 msgid "LOGINV(Number [; Mean [; StDev]])"
 msgstr "LOGINV (Číslo [; StředníHodnota [; StDev]])"
 
-#. uqfDA
+#. vDVWm
 #: 04060183.xhp
 msgctxt ""
 "04060183.xhp\n"
 "par_id3148390\n"
 "help.text"
-msgid "<emph>Number</emph> is the probability value for which the inverse standard logarithmic distribution is to be calculated."
-msgstr "<emph>Číslo</emph> je hodnota pravděpodobnosti, pro kterou má být vypočítána inverzní distribuční funkce logaritmicko-normálního rozdělení."
+msgid "<emph>Number</emph> (required) is the probability value for which the inverse standard logarithmic distribution is to be calculated."
+msgstr ""
 
-#. ZAEjF
+#. aJATB
 #: 04060183.xhp
 msgctxt ""
 "04060183.xhp\n"
 "par_id3149538\n"
 "help.text"
-msgid "<emph>Mean</emph> is the arithmetic mean of the standard logarithmic distribution."
-msgstr "<emph>StředníHodnota</emph> je střední hodnota logaritmicko-normálního rozdělení."
+msgid "<emph>Mean</emph> (optional) is the arithmetic mean of the standard logarithmic distribution (defaults to 0 if omitted)."
+msgstr ""
 
-#. RTG5n
+#. PDJWU
 #: 04060183.xhp
 msgctxt ""
 "04060183.xhp\n"
 "par_id3145355\n"
 "help.text"
-msgid "<emph>StDev</emph> is the standard deviation of the standard logarithmic distribution."
-msgstr "<emph>StDev</emph> je směrodatná odchylka logaritmicko-normálního rozdělení."
+msgid "<emph>StDev</emph> (optional) is the standard deviation of the standard logarithmic distribution (defaults to 1 if omitted)."
+msgstr ""
 
 #. Uh6oi
 #: 04060183.xhp
@@ -37295,14 +37250,14 @@ msgctxt ""
 msgid "This function is identical to LOGINV and was introduced for interoperability with other office suites."
 msgstr "Tato funkce je totožná s LOGINV a byla zavedena kvůli interoperabilitě s jinými kancelářskými balíky."
 
-#. tLigG
+#. AivtF
 #: 04060183.xhp
 msgctxt ""
 "04060183.xhp\n"
 "par_id2901049\n"
 "help.text"
-msgid "LOGNORM.INV(Number; Mean; StDev)"
-msgstr "LOGNORM.INV(Číslo; StředníHodnota; StDev)"
+msgid "LOGNORM.INV(Number [; Mean [; StDev]])"
+msgstr ""
 
 #. p2y5k
 #: 04060183.xhp
@@ -37313,23 +37268,23 @@ msgctxt ""
 msgid "<emph>Number</emph> (required) is the probability value for which the inverse standard logarithmic distribution is to be calculated."
 msgstr "<emph>Číslo</emph> (vyžadováno) je hodnota pravděpodobnosti, pro kterou má být vypočítána inverzní distribuční funkce logaritmicko-normálního rozdělení."
 
-#. sFACF
+#. ip7rm
 #: 04060183.xhp
 msgctxt ""
 "04060183.xhp\n"
 "par_id2901538\n"
 "help.text"
-msgid "<emph>Mean</emph> (required) is the arithmetic mean of the standard logarithmic distribution."
-msgstr "<emph>StředníHodnota</emph> (vyžadováno) je střední hodnota logaritmicko-normálního rozdělení."
+msgid "<emph>Mean</emph> (optional) is the arithmetic mean of the standard logarithmic distribution (defaults to 0 if omitted)."
+msgstr ""
 
-#. PZ4w5
+#. pPM9C
 #: 04060183.xhp
 msgctxt ""
 "04060183.xhp\n"
 "par_id2901355\n"
 "help.text"
-msgid "<emph>StDev</emph> (required) is the standard deviation of the standard logarithmic distribution."
-msgstr "<emph>StDev</emph> (vyžadováno) je směrodatná odchylka logaritmicko-normálního rozdělení."
+msgid "<emph>StDev</emph> (optional) is the standard deviation of the standard logarithmic distribution (defaults to 1 if omitted)."
+msgstr ""
 
 #. UYg6S
 #: 04060183.xhp
@@ -38843,14 +38798,14 @@ msgctxt ""
 msgid "<ahelp hid=\"HID_FUNC_POISSON_DIST_MS\">Returns the Poisson distribution.</ahelp>"
 msgstr "<ahelp hid=\"HID_FUNC_POISSON_DIST_MS\">Vrátí Poissonovo rozdělení.</ahelp>"
 
-#. JHGHg
+#. nVnxU
 #: 04060184.xhp
 msgctxt ""
 "04060184.xhp\n"
 "par_id2946093\n"
 "help.text"
-msgid "POISSON.DIST(Number; Mean [; C])"
-msgstr "POISSON.DIST(Číslo; Střední hodnota [; C])"
+msgid "POISSON.DIST(Number; Mean ; Cumulative)"
+msgstr ""
 
 #. jnjk7
 #: 04060184.xhp
@@ -38870,14 +38825,14 @@ msgctxt ""
 msgid "<emph>Mean</emph> represents the middle value of the Poisson distribution."
 msgstr "<emph>Střední hodnota</emph> je střední hodnota Poissonova rozdělení."
 
-#. fXReC
+#. MiQ2K
 #: 04060184.xhp
 msgctxt ""
 "04060184.xhp\n"
 "par_id2949200\n"
 "help.text"
-msgid "<emph>C</emph> (optional) = 0 or False calculates the density function; <emph>C</emph> = 1 or True calculates the distribution. When omitted, the default value True is inserted when you save the document, for best compatibility with other programs and older versions of %PRODUCTNAME."
-msgstr "Pro <emph>C</emph> (nepovinné) = 0 nebo Nepravda se vypočítá hustota pravděpodobnosti; pro <emph>C</emph> = 1 nebo Pravda se vypočítá distribuční funkce. Pokud není zadáno, vloží se při ukládání dokumentu výchozí hodnota Pravda, aby byla zachována kompatibilita s jinými aplikacemi a se staršími verzemi %PRODUCTNAME."
+msgid "<emph>Cumulative</emph> = 0 or False to calculate the probability mass function; <emph>Cumulative</emph> = 1, True, or any other non-zero value to calculate the cumulative distribution function."
+msgstr ""
 
 #. gXFJQ
 #: 04060184.xhp
@@ -45440,14 +45395,14 @@ msgctxt ""
 msgid "<bookmark_value>Stylist, see Styles window</bookmark_value><bookmark_value>Styles window</bookmark_value><bookmark_value>formats; Styles window</bookmark_value><bookmark_value>formatting; Styles window</bookmark_value><bookmark_value>paint can for applying styles</bookmark_value><bookmark_value>styles in spreadsheets</bookmark_value><bookmark_value>styles; in Calc</bookmark_value>"
 msgstr "<bookmark_value>Stylista, viz okno Styly</bookmark_value><bookmark_value>okno Styly</bookmark_value><bookmark_value>formáty; okno Styly</bookmark_value><bookmark_value>formátování; okno Styly</bookmark_value><bookmark_value>režim vyplňování formátů</bookmark_value><bookmark_value>styly v sešitech</bookmark_value><bookmark_value>styly; v Calcu</bookmark_value>"
 
-#. WerNG
+#. eA3vo
 #: 05100000.xhp
 msgctxt ""
 "05100000.xhp\n"
 "hd_id3150447\n"
 "help.text"
-msgid "<link href=\"text/scalc/01/05100000.xhp\" name=\"Styles\">Styles in Calc</link>"
-msgstr "<link href=\"text/scalc/01/05100000.xhp\" name=\"Styly\">Styly v Calcu</link>"
+msgid "<link href=\"text/scalc/01/05100000.xhp\" name=\"Styles\">Styles</link>"
+msgstr "<link href=\"text/scalc/01/05100000.xhp\" name=\"Styles\">Styly</link>"
 
 #. bBG57
 #: 05100000.xhp
@@ -48023,14 +47978,14 @@ msgctxt ""
 msgid "Freeze Rows and Columns"
 msgstr "Ukotvit řádky a sloupce"
 
-#. rBUcX
+#. nwRKF
 #: 07090000.xhp
 msgctxt ""
 "07090000.xhp\n"
 "hd_id3150517\n"
 "help.text"
-msgid "<link href=\"text/scalc/01/07090000.xhp\" name=\"Freeze\">Freeze Rows and Columns</link>"
-msgstr "<link href=\"text/scalc/01/07090000.xhp\" name=\"Ukotvit řádky a sloupce\">Ukotvit řádky a sloupce</link>"
+msgid "<variable id=\"freezerowcolum\"><link href=\"text/scalc/01/07090000.xhp\" name=\"Freeze\">Freeze Rows and Columns</link></variable>"
+msgstr ""
 
 #. XjvVY
 #: 07090000.xhp
@@ -48040,6 +47995,42 @@ msgctxt ""
 "help.text"
 msgid "<ahelp hid=\".\">Divides the sheet at the top left corner of the active cell and the area to the top left is no longer scrollable.</ahelp>"
 msgstr "<ahelp hid=\".\">Rozdělí list v levém horním rohu aktivní buňky. Oblast vlevo nahoře již není možné posunovat.</ahelp>"
+
+#. mBdCG
+#: 07090100.xhp
+msgctxt ""
+"07090100.xhp\n"
+"tit\n"
+"help.text"
+msgid "Freeze Cells"
+msgstr ""
+
+#. U6FYG
+#: 07090100.xhp
+msgctxt ""
+"07090100.xhp\n"
+"bm_id821612315529410\n"
+"help.text"
+msgid "<bookmark_value>freezing;first row</bookmark_value>    <bookmark_value>freezing;first column</bookmark_value>    <bookmark_value>freezing;cells</bookmark_value>"
+msgstr ""
+
+#. tTzNC
+#: 07090100.xhp
+msgctxt ""
+"07090100.xhp\n"
+"hd_id961612313262512\n"
+"help.text"
+msgid "<variable id=\"freezecellsh1\"><link href=\"text/scalc/01/07090100.xhp\" name=\"Freeze Cells\">Freeze Cells</link></variable>"
+msgstr ""
+
+#. sWGWB
+#: 07090100.xhp
+msgctxt ""
+"07090100.xhp\n"
+"par_id481612313262514\n"
+"help.text"
+msgid "Freezes the first column or the first row of the current spreadsheet."
+msgstr ""
 
 #. ozNTG
 #: 12010000.xhp
@@ -60947,32 +60938,32 @@ msgctxt ""
 msgid "<item type=\"input\">=MINIFS(C2:C6;B2:B6;\">\"&MIN(B2:B6);B2:B6;\"<\"&MAX(B2:B6))</item>"
 msgstr "<item type=\"input\">=MINIFS(C2:C6;B2:B6;\">\"&MIN(B2:B6);B2:B6;\"<\"&MAX(B2:B6))</item>"
 
-#. nUeRH
+#. Dp4Sx
 #: func_minifs.xhp
 msgctxt ""
 "func_minifs.xhp\n"
 "par_id27619246864839\n"
 "help.text"
-msgid "Calculates the minimum of values of the range C2:C6 that correspond to all values of the range B2:B6 except its minimum and minimum. Returns 65."
-msgstr "Vypočítá minimum z hodnot v oblasti C2:C6, které odpovídají všem hodnotám v oblasti B2:B6 kromě minima a maxima. Vrátí 65."
+msgid "Calculates the minimum of values of the range C2:C6 that correspond to all values of the range B2:B6 except its minimum and maximum. Returns 65."
+msgstr ""
 
-#. CnZcV
+#. 7S443
 #: func_minifs.xhp
 msgctxt ""
 "func_minifs.xhp\n"
 "par_id220502883332563\n"
 "help.text"
-msgid "<item type=\"input\">=MINIFS(C2:C6;A2:A6;\".*book\";B2:B6;\"<=\"&MAX(B2:B6))</item>"
-msgstr "<item type=\"input\">=MINIFS(C2:C6;A2:A6;\".*známka\";B2:B6;\"<=\"&MAX(B2:B6))</item>"
+msgid "<item type=\"input\">=MINIFS(C2:C6;A2:A6;\".*book\";B2:B6;\">\"&MIN(B2:B6))</item>"
+msgstr ""
 
-#. sGnvo
+#. gNhzJ
 #: func_minifs.xhp
 msgctxt ""
 "func_minifs.xhp\n"
 "par_id15342189586295\n"
 "help.text"
-msgid "Calculates the minimum of values of the range C2:C6 that correspond to all cells of the A2:A6 range starting with \"pen\" and to all cells of the B2:B6 range except its minimum. Returns 180."
-msgstr "Vypočítá minimum z hodnot rozsahu C2:C6, které odpovídají všem buňkám rozsahu A2:A6 začínajícím \"známka\" a všem buňkám rozsahu B2:B6 s výjimkou minima. Vrací 180."
+msgid "Calculates the minimum of values of the range C2:C6 that correspond to all cells of the A2:A6 range ending with \"book\" and to all cells of the B2:B6 range except its minimum. Returns 190."
+msgstr ""
 
 #. uz4wr
 #: func_minifs.xhp
@@ -62801,41 +62792,23 @@ msgctxt ""
 msgid "The parameters should specify at least three values."
 msgstr "Parametry by měly být alespoň tři hodnoty."
 
-#. W8hYu
+#. Q2i35
 #: func_skewp.xhp
 msgctxt ""
 "func_skewp.xhp\n"
 "par_id1102201617001888\n"
 "help.text"
-msgid "<item type=\"literal\">SKEWP(2;3;1;6;8;5)</item> returns 0.2828158928"
-msgstr "<item type=\"literal\">SKEWP(2;3;1;6;8;5)</item> vrátí 0,2828158928"
+msgid "<input>SKEWP(2;3;1;6;8;5)</input> returns 0.2329985562"
+msgstr ""
 
-#. 63DiS
+#. TAGzC
 #: func_skewp.xhp
 msgctxt ""
 "func_skewp.xhp\n"
 "par_id1102201618185378\n"
 "help.text"
-msgid "<item type=\"literal\">SKEWP(A1:A6)</item> returns 0.2828158928, when the range A1:A6 contains {2;3;1;6;8;5}"
-msgstr "<item type=\"literal\">SKEWP(A1:A6)</item> vrátí 0,2828158928, kde oblast A1:A6 obsahuje {2;3;1;6;8;5}"
-
-#. Tdd33
-#: func_skewp.xhp
-msgctxt ""
-"func_skewp.xhp\n"
-"par_id1102201618185326\n"
-"help.text"
-msgid "<item type=\"literal\">SKEWP(Number1; Number2)</item> always returns zero, if Number1 and Number2 results in two numbers."
-msgstr "<item type=\"literal\">SKEWP(Číslo1; Číslo2)</item> vrátí vždy nulu, pokud hodnoty Číslo1 a Číslo2 představují dvě různá čísla."
-
-#. X6nGR
-#: func_skewp.xhp
-msgctxt ""
-"func_skewp.xhp\n"
-"par_id1102201618188326\n"
-"help.text"
-msgid "<item type=\"literal\">SKEWP(Number1)</item> returns Err:502 (Invalid argument) if Number1 results in one number, because SKEWP cannot be calculated with one value."
-msgstr "<item type=\"literal\">SKEWP(Číslo1)</item> vrátí chybu Chyba:502 (neplatný argument), pokud je Číslo1 představováno jedním číslem, protože funkci SKEWP nelze pro jedinou hodnotu vypočítat."
+msgid "<input>SKEWP(A1:A6)</input> returns 0.2329985562, when the range A1:A6 contains {2;3;1;6;8;5}"
+msgstr ""
 
 #. 5iYyJ
 #: func_skewp.xhp
