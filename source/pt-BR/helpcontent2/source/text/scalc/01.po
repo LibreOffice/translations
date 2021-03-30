@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2021-03-23 11:44+0100\n"
-"PO-Revision-Date: 2021-03-23 11:02+0000\n"
+"POT-Creation-Date: 2021-03-29 16:02+0200\n"
+"PO-Revision-Date: 2021-03-30 16:12+0000\n"
 "Last-Translator: Olivier Hallot <olivier.hallot@libreoffice.org>\n"
 "Language-Team: Portuguese (Brazil) <https://translations.documentfoundation.org/projects/libo_help-master/textscalc01/pt_BR/>\n"
 "Language: pt-BR\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
 "X-Accelerator-Marker: ~\n"
-"X-Generator: LibreOffice\n"
+"X-Generator: Weblate 4.4.2\n"
 "X-POOTLE-MTIME: 1559657369.000000\n"
 
 #. sZfWF
@@ -4399,13 +4399,13 @@ msgctxt ""
 msgid "Database Functions"
 msgstr "Funções de banco de dados"
 
-#. fFN63
+#. ASfzE
 #: 04060101.xhp
 msgctxt ""
 "04060101.xhp\n"
 "bm_id3148946\n"
 "help.text"
-msgid "<bookmark_value>Function Wizard; databases</bookmark_value>      <bookmark_value>functions; database functions</bookmark_value>      <bookmark_value>databases; functions in $[officename] Calc</bookmark_value>"
+msgid "<bookmark_value>Function Wizard; databases</bookmark_value>    <bookmark_value>functions; database functions</bookmark_value>    <bookmark_value>databases; functions in $[officename] Calc</bookmark_value>"
 msgstr "<bookmark_value>Assistente de funções; bancos de dados</bookmark_value><bookmark_value>funções; funções de bancos de dados</bookmark_value><bookmark_value>bancos de dados; funções no $[officename] Calc</bookmark_value>"
 
 #. BX97Y
@@ -4417,365 +4417,770 @@ msgctxt ""
 msgid "Database Functions"
 msgstr "Funções de banco de dados"
 
-#. qLyAL
+#. v9KEM
+#: 04060101.xhp
+msgctxt ""
+"04060101.xhp\n"
+"hd_id721616440441374\n"
+"help.text"
+msgid "Overview"
+msgstr "Visão geral"
+
+#. RGkxy
 #: 04060101.xhp
 msgctxt ""
 "04060101.xhp\n"
 "par_id3145173\n"
 "help.text"
-msgid "<variable id=\"datenbanktext\">This section deals with functions used with data organized as one row of data for one record.</variable>"
-msgstr "<variable id=\"datenbanktext\">Essa seção aborda as funções usadas com dados organizados na forma de uma linha de dados de um registro.</variable>"
+msgid "<variable id=\"datenbanktext\">The twelve functions in the Database category help you to analyze a simple database that occupies a rectangular spreadsheet area comprising columns and rows, with the data organized as one row for each record.</variable> The header cell of each column displays the name of the column and that name usually reflects the contents of each cell in that column."
+msgstr "<variable id=\"datenbanktext\"> As doze funções na categoria Banco de dados ajudam você a analisar um banco de dados simples que ocupa uma área retangular da planilha composta por colunas e linhas, com os dados organizados como uma linha para cada registro.</variable> A célula de cabeçalho de cada coluna exibe o nome da coluna e esse nome geralmente reflete o conteúdo de cada célula dessa coluna."
 
-#. yT4m3
+#. 8NQZ9
 #: 04060101.xhp
 msgctxt ""
 "04060101.xhp\n"
-"par_id3154016\n"
+"par_id631615842419413\n"
 "help.text"
-msgid "The Database category may be confused with a database integrated in $[officename]. However, there is no connection between a database in $[officename] and the Database category in $[officename] Calc."
-msgstr "A categoria Banco de dados pode ser confundida com um banco de dados integrado no $[officename]. Todavia, não há ligação entre um banco de dados no $[officename] e a categoria Banco de dados no $[officename] Calc."
+msgid "The functions in the Database category take three arguments as follows:"
+msgstr "As funções na categoria Banco de dados aceitam três argumentos, a seguir:"
 
-#. jEaEF
+#. pmE4Y
+#: 04060101.xhp
+msgctxt ""
+"04060101.xhp\n"
+"par_id761615842549780\n"
+"help.text"
+msgid "<emph>Database</emph>. The cell range of the database."
+msgstr "<emph>BancodeDados</emph>. O intervalo de células do banco de dados."
+
+#. nw3ya
+#: 04060101.xhp
+msgctxt ""
+"04060101.xhp\n"
+"par_id601615842657372\n"
+"help.text"
+msgid "<emph>DatabaseField</emph>. The column containing the data to be used in the function’s calculations."
+msgstr "<emph>CampoBancodeDados</emph>. A coluna contendo os dados a serem utilizados no cálculo das funções."
+
+#. D5P4G
+#: 04060101.xhp
+msgctxt ""
+"04060101.xhp\n"
+"par_id471615842721059\n"
+"help.text"
+msgid "<emph>SearchCriteria</emph>. The cell range of a separate area of the spreadsheet containing search criteria."
+msgstr "<emph>CritérioPesquisa</emph>. O intervalo de células de uma área separada da planilha contendo o critério de pesquisa."
+
+#. RT3mc
+#: 04060101.xhp
+msgctxt ""
+"04060101.xhp\n"
+"par_id101615842794525\n"
+"help.text"
+msgid "These arguments are described more fully below."
+msgstr "Estes argumentos são descritos em detalhe abaixo."
+
+#. ykxDt
+#: 04060101.xhp
+msgctxt ""
+"04060101.xhp\n"
+"par_id241615842810077\n"
+"help.text"
+msgid "All functions have the same outline concept of operation. The first logical step is to use the specified <emph>SearchCriteria</emph> to identify the subset of records in the <emph>Database</emph> that are to be used during subsequent calculations. The second step is to extract the data values and perform the calculations associated with the specific function (average, sum, product, and so on). The values processed are those in the <emph>DatabaseField</emph> column of the selected records."
+msgstr "Todas as funções têm o mesmo conceito básico de operação. A primeira etapa lógica é usar o <emph>CriterioPesquisa</emph> especificado para identificar o subconjunto de registros no <emph>BancodeDados </emph> que deve ser usado durante os cálculos subsequentes. A segunda etapa é extrair os valores dos dados e realizar os cálculos associados à função específica (média, soma, produto e assim por diante). Os valores processados são aqueles na coluna <emph>CampoBancodeDados</emph> dos registros selecionados."
+
+#. oErum
+#: 04060101.xhp
+msgctxt ""
+"04060101.xhp\n"
+"par_id981615978852310\n"
+"help.text"
+msgid "Calc treats dates and logical values (TRUE and FALSE) as numeric when calculating with these functions."
+msgstr ""
+
+#. qZFoo
+#: 04060101.xhp
+msgctxt ""
+"04060101.xhp\n"
+"hd_id911615888814785\n"
+"help.text"
+msgid "Database Function Arguments"
+msgstr ""
+
+#. XzUDg
+#: 04060101.xhp
+msgctxt ""
+"04060101.xhp\n"
+"par_id911615888833104\n"
+"help.text"
+msgid "The following argument definitions apply for all functions in the Database category:"
+msgstr ""
+
+#. EHkEz
+#: 04060101.xhp
+msgctxt ""
+"04060101.xhp\n"
+"par_id21615889071992\n"
+"help.text"
+msgid "<emph>Database argument</emph>"
+msgstr ""
+
+#. fxMgf
+#: 04060101.xhp
+msgctxt ""
+"04060101.xhp\n"
+"par_id31615889105463\n"
+"help.text"
+msgid "<emph>Database</emph> specifies the range of cells occupied by the database table. The first row of the range contains the field names, and subsequent rows are records with corresponding field values."
+msgstr ""
+
+#. zpzi9
+#: 04060101.xhp
+msgctxt ""
+"04060101.xhp\n"
+"par_id521615889152497\n"
+"help.text"
+msgid "One way of defining the range of cells is to enter the cell reference for the upper left-hand cell, followed by a colon (:), and then the lower right-hand cell reference. An example might be A1:E10."
+msgstr ""
+
+#. WD55p
+#: 04060101.xhp
+msgctxt ""
+"04060101.xhp\n"
+"par_id761615889163416\n"
+"help.text"
+msgid "The <emph>Database</emph> argument may also be specified by passing the name of a named range or database range. Using a meaningful name to define the cell range can enhance formula readability and document maintenance. If the name does not match the name of a defined range, Calc reports a #NAME? error."
+msgstr ""
+
+#. 7L4XM
+#: 04060101.xhp
+msgctxt ""
+"04060101.xhp\n"
+"par_id601615889176137\n"
+"help.text"
+msgid "Other errors that might be reported as a result of an invalid <emph>Database</emph> argument are #VALUE! and Err:504 (error in parameter list)."
+msgstr ""
+
+#. rsj3e
+#: 04060101.xhp
+msgctxt ""
+"04060101.xhp\n"
+"par_id201615889390777\n"
+"help.text"
+msgid "<emph>DatabaseField argument</emph>"
+msgstr ""
+
+#. 7Eorp
+#: 04060101.xhp
+msgctxt ""
+"04060101.xhp\n"
+"par_id431615889426480\n"
+"help.text"
+msgid "<emph>DatabaseField</emph> specifies the column which the function will use for its calculations after the search criteria have been applied and the data rows have been selected. It is not related to the search criteria."
+msgstr ""
+
+#. Z9Qfp
+#: 04060101.xhp
+msgctxt ""
+"04060101.xhp\n"
+"par_id661615889458032\n"
+"help.text"
+msgid "Specify the <emph>DatabaseField</emph> argument in any of the following ways:"
+msgstr ""
+
+#. RMwzE
+#: 04060101.xhp
+msgctxt ""
+"04060101.xhp\n"
+"par_id981615889517841\n"
+"help.text"
+msgid "By entering a reference to a header cell within the <emph>Database</emph> area. Alternatively, if the cell has been given a meaningful name as a named range or database range, enter that name. If the name does not match the name of a defined range, Calc reports a #NAME? error. If the name is valid but does not correspond to one cell only, Calc reports Err:504 (error in parameter list)."
+msgstr ""
+
+#. 6EGoq
+#: 04060101.xhp
+msgctxt ""
+"04060101.xhp\n"
+"par_id551615889661457\n"
+"help.text"
+msgid "By entering a number to specify the column within the <emph>Database</emph> area, starting with 1. For example, if a <emph>Database</emph> occupied the cell range D6:H123, then enter 3 to indicate the header cell at F6. Calc expects an integer value that lies between 1 and the number of columns defined within <emph>Database</emph> and ignores any digits after a decimal point. If the value is less than 1, Calc reports Err:504 (error in parameter list). If the value is greater than the number of columns in <emph>Database</emph>, Calc reports a #VALUE! error."
+msgstr ""
+
+#. qSkvo
+#: 04060101.xhp
+msgctxt ""
+"04060101.xhp\n"
+"par_id561615889738472\n"
+"help.text"
+msgid "By entering the literal column header name from the first row of the <emph>Database</emph> range, placing quotation marks around the header name. For example, “Distance to School”. If the string does not match one of the <emph>Database</emph> area’s column headings, Calc reports Err:504 (error in parameter list). You can also provide a reference to an arbitrary cell (not within the <emph>Database</emph> and <emph>SearchCriteria</emph> areas) that contains the required string."
+msgstr ""
+
+#. AUEy6
+#: 04060101.xhp
+msgctxt ""
+"04060101.xhp\n"
+"par_id181615889841279\n"
+"help.text"
+msgid "The <emph>DatabaseField</emph> argument is optional for the DCOUNT and DCOUNTA functions but it is required for the other ten Database functions."
+msgstr ""
+
+#. Af4va
+#: 04060101.xhp
+msgctxt ""
+"04060101.xhp\n"
+"par_id841615891322513\n"
+"help.text"
+msgid "<emph>SearchCriteria argument</emph>"
+msgstr ""
+
+#. 9eBBv
+#: 04060101.xhp
+msgctxt ""
+"04060101.xhp\n"
+"par_id351615891337585\n"
+"help.text"
+msgid "<emph>SearchCriteria</emph> specifies the range of cells containing search criteria. Like <emph>Database</emph>, its first row is also field names, and subsequent rows are conditions for related fields. The <emph>Database</emph> and <emph>SearchCriteria</emph> areas need not be adjacent, or even on the same sheet."
+msgstr ""
+
+#. iuFJF
+#: 04060101.xhp
+msgctxt ""
+"04060101.xhp\n"
+"par_id401615891342289\n"
+"help.text"
+msgid "One way of defining the range of cells is to enter the cell reference for the upper left-hand cell, followed by a colon (:), and then the lower right-hand cell reference. For example, A13:B14. The cell range may also be specified by passing the name of a defined named range or database range. If the name does not match the name of a defined range, Calc reports a #NAME? error."
+msgstr ""
+
+#. 2BE4W
+#: 04060101.xhp
+msgctxt ""
+"04060101.xhp\n"
+"par_id861615891345281\n"
+"help.text"
+msgid "Err:504 (error in parameter list) may also be reported as a result of an invalid <emph>SearchCriteria</emph> argument."
+msgstr ""
+
+#. D6TBP
+#: 04060101.xhp
+msgctxt ""
+"04060101.xhp\n"
+"par_id901615891349688\n"
+"help.text"
+msgid "The contents of the <emph>SearchCriteria</emph> area are described in more detail in the next section."
+msgstr ""
+
+#. vj96q
+#: 04060101.xhp
+msgctxt ""
+"04060101.xhp\n"
+"hd_id481615892281210\n"
+"help.text"
+msgid "Defining Search Criteria"
+msgstr ""
+
+#. zTQX5
+#: 04060101.xhp
+msgctxt ""
+"04060101.xhp\n"
+"par_id691615892329680\n"
+"help.text"
+msgid "The number of columns occupied by the <emph>SearchCriteria</emph> area need not be the same as the width of the <emph>Database</emph> area. All headings that appear in the first row of <emph>SearchCriteria</emph> must be identical to headings in the first row of <emph>Database</emph>. However, not all headings in <emph>Database</emph> need appear in the first row of <emph>SearchCriteria</emph>, while a heading in <emph>Database</emph> can appear multiple times in the first row of <emph>SearchCriteria</emph>."
+msgstr ""
+
+#. AeGHn
+#: 04060101.xhp
+msgctxt ""
+"04060101.xhp\n"
+"par_id541615892358897\n"
+"help.text"
+msgid "Search criteria are entered into the cells of the second and subsequent rows of the <emph>SearchCriteria</emph> area, below the row containing headings. Blank cells within the <emph>SearchCriteria</emph> area are ignored."
+msgstr ""
+
+#. MddCQ
+#: 04060101.xhp
+msgctxt ""
+"04060101.xhp\n"
+"par_id151615892882441\n"
+"help.text"
+msgid "Create criteria in the cells of the <emph>SearchCriteria</emph> area using the comparison operators <, <=, =, <>, >=, and >. = is assumed if a cell is not empty but does not start with a comparison operator."
+msgstr ""
+
+#. 4NDMd
+#: 04060101.xhp
+msgctxt ""
+"04060101.xhp\n"
+"par_id561615893059337\n"
+"help.text"
+msgid "If you write several criteria in one row, they are connected by AND. If you write several criteria in different rows, they are connected by OR."
+msgstr ""
+
+#. xymRZ
+#: 04060101.xhp
+msgctxt ""
+"04060101.xhp\n"
+"par_id401615893095178\n"
+"help.text"
+msgid "Criteria can be created using wildcards, providing that wildcards have been enabled via the <menuitem>Enable wildcards in formulas</menuitem> option on the <link href=\"text/shared/optionen/01060500.xhp\" name=\"Spreadsheet - Calculate\"><switchinline select=\"sys\"><caseinline select=\"MAC\"><menuitem>%PRODUCTNAME - Preferences</menuitem></caseinline><defaultinline><menuitem>Tools - Options</menuitem></defaultinline></switchinline><menuitem> - %PRODUCTNAME Calc - Calculate</menuitem></link> dialog. When interoperability with Microsoft Excel is important for your spreadsheet, this option should be enabled."
+msgstr ""
+
+#. darZG
+#: 04060101.xhp
+msgctxt ""
+"04060101.xhp\n"
+"par_id921615893158111\n"
+"help.text"
+msgid "Even more powerful criteria can be created using regular expressions, providing that regular expressions have been enabled via the <menuitem>Enable regular expressions in formulas</menuitem>  option on the <link href=\"text/shared/optionen/01060500.xhp\" name=\"Spreadsheet - Calculate\"><switchinline select=\"sys\"><caseinline select=\"MAC\"><menuitem>%PRODUCTNAME - Preferences</menuitem></caseinline><defaultinline><menuitem>Tools - Options</menuitem></defaultinline></switchinline><menuitem> - %PRODUCTNAME Calc - Calculate</menuitem></link> dialog."
+msgstr ""
+
+#. YkSzL
+#: 04060101.xhp
+msgctxt ""
+"04060101.xhp\n"
+"par_id881615893236930\n"
+"help.text"
+msgid "Another setting that affects how the search criteria are handled is the <menuitem>Search criteria = and <> must apply to whole cells</menuitem>  option on the <link href=\"text/shared/optionen/01060500.xhp\" name=\"Spreadsheet - Calculate\"><switchinline select=\"sys\"><caseinline select=\"MAC\"><menuitem>%PRODUCTNAME - Preferences</menuitem></caseinline><defaultinline><menuitem>Tools - Options</menuitem></defaultinline></switchinline><menuitem> - %PRODUCTNAME Calc - Calculate</menuitem></link> dialog. This option controls whether the search criteria you set for the Database functions must match the whole cell exactly. When interoperability with Microsoft Excel is important for your spreadsheet, this option should be enabled."
+msgstr ""
+
+#. 4sbmh
 #: 04060101.xhp
 msgctxt ""
 "04060101.xhp\n"
 "hd_id3150329\n"
 "help.text"
-msgid "Example Data:"
-msgstr "Dados de exemplo:"
+msgid "Examples of Database Function Use"
+msgstr ""
 
-#. CTcsw
+#. hyFuY
 #: 04060101.xhp
 msgctxt ""
 "04060101.xhp\n"
 "par_id3153713\n"
 "help.text"
-msgid "The following data will be used in some of the function description examples:"
-msgstr "Os dados a seguir serão usados em alguns exemplos de descrição das funções:"
+msgid "The following table provides an example database table that is utilized to demonstrate how to use the functions in the Database category. The cell range A1:E10 contains fictitious information about the guests invited to Joe's birthday party. The following information is given for each guest - name, school grade, age in years, distance to school in meters, and weight in kilograms."
+msgstr ""
 
-#. rxm7X
-#: 04060101.xhp
-msgctxt ""
-"04060101.xhp\n"
-"par_id3155766\n"
-"help.text"
-msgid "The range A1:E10 lists the children invited to Joe's birthday party. The following information is given for each entry: column A shows the name, B the grade, then age in years, distance to school in meters and weight in kilograms."
-msgstr "O intervalo A1:E10 lista as crianças convidadas para o aniversário do Joe. As seguintes informações são fornecidas em cada entrada: a coluna A mostra o nome, a coluna B mostra a série escolar e as demais colunas mostram a idade em anos, a distância até o colégio em metros e o peso em quilogramas."
-
-#. bD6uT
-#: 04060101.xhp
-msgctxt ""
-"04060101.xhp\n"
-"par_id3145232\n"
-"help.text"
-msgid "A"
-msgstr "A"
-
-#. H97m2
-#: 04060101.xhp
-msgctxt ""
-"04060101.xhp\n"
-"par_id3146316\n"
-"help.text"
-msgid "B"
-msgstr "B"
-
-#. AFfUx
-#: 04060101.xhp
-msgctxt ""
-"04060101.xhp\n"
-"par_id3150297\n"
-"help.text"
-msgid "C"
-msgstr "C"
-
-#. teF2d
-#: 04060101.xhp
-msgctxt ""
-"04060101.xhp\n"
-"par_id3150344\n"
-"help.text"
-msgid "D"
-msgstr "D"
-
-#. ZCffn
-#: 04060101.xhp
-msgctxt ""
-"04060101.xhp\n"
-"par_id3150785\n"
-"help.text"
-msgid "E"
-msgstr "E"
-
-#. vcyaR
-#: 04060101.xhp
-msgctxt ""
-"04060101.xhp\n"
-"par_id3150090\n"
-"help.text"
-msgid "1"
-msgstr "1"
-
-#. QMBdD
+#. Y2HFt
 #: 04060101.xhp
 msgctxt ""
 "04060101.xhp\n"
 "par_id3152992\n"
 "help.text"
-msgid "<item type=\"input\">Name</item>"
-msgstr "<item type=\"input\">Nome</item>"
+msgid "<emph>Name</emph>"
+msgstr ""
 
-#. QPBrB
+#. ChBDv
 #: 04060101.xhp
 msgctxt ""
 "04060101.xhp\n"
 "par_id3155532\n"
 "help.text"
-msgid "<item type=\"input\">Grade</item>"
-msgstr "<item type=\"input\">Série</item>"
+msgid "<emph>Grade</emph>"
+msgstr ""
 
-#. Pm46W
+#. mt5xM
 #: 04060101.xhp
 msgctxt ""
 "04060101.xhp\n"
 "par_id3156448\n"
 "help.text"
-msgid "<item type=\"input\">Age</item>"
-msgstr "<item type=\"input\">Idade</item>"
+msgid "<emph>Age</emph>"
+msgstr ""
 
-#. 78ZeE
+#. Svp8Q
 #: 04060101.xhp
 msgctxt ""
 "04060101.xhp\n"
 "par_id3154486\n"
 "help.text"
-msgid "<item type=\"input\">Distance to School</item>"
-msgstr "<item type=\"input\">Distância até a Escola</item>"
+msgid "<emph>Distance</emph>"
+msgstr ""
 
-#. dnu9K
+#. BShmH
 #: 04060101.xhp
 msgctxt ""
 "04060101.xhp\n"
 "par_id3152899\n"
 "help.text"
-msgid "<item type=\"input\">Weight</item>"
-msgstr "<item type=\"input\">Peso</item>"
+msgid "<emph>Weight</emph>"
+msgstr ""
 
-#. FnT35
+#. FUGeA
 #: 04060101.xhp
 msgctxt ""
 "04060101.xhp\n"
 "par_id3151240\n"
 "help.text"
-msgid "<item type=\"input\">Andy</item>"
-msgstr "<item type=\"input\">Andy</item>"
+msgid "Andy"
+msgstr ""
 
-#. cAc3y
+#. eQx2T
 #: 04060101.xhp
 msgctxt ""
 "04060101.xhp\n"
 "par_id3152870\n"
 "help.text"
-msgid "<item type=\"input\">Betty</item>"
-msgstr "<item type=\"input\">Betty</item>"
+msgid "Betty"
+msgstr ""
 
-#. AFNrM
+#. HKBAA
 #: 04060101.xhp
 msgctxt ""
 "04060101.xhp\n"
 "par_id3155596\n"
 "help.text"
-msgid "<item type=\"input\">Charles</item>"
-msgstr "<item type=\"input\">Charles</item>"
+msgid "Charles"
+msgstr ""
 
-#. JZYTT
+#. WCaYH
 #: 04060101.xhp
 msgctxt ""
 "04060101.xhp\n"
 "par_id3147296\n"
 "help.text"
-msgid "<item type=\"input\">Daniel</item>"
-msgstr "<item type=\"input\">Daniel</item>"
+msgid "Daniel"
+msgstr ""
 
-#. 3ADGE
+#. L3gMx
 #: 04060101.xhp
 msgctxt ""
 "04060101.xhp\n"
 "par_id3150456\n"
 "help.text"
-msgid "<item type=\"input\">Eva</item>"
-msgstr "<item type=\"input\">Eva</item>"
+msgid "Eva"
+msgstr ""
 
-#. EBQHZ
+#. bwR2v
 #: 04060101.xhp
 msgctxt ""
 "04060101.xhp\n"
 "par_id3145826\n"
 "help.text"
-msgid "<item type=\"input\">Frank</item>"
-msgstr "<item type=\"input\">Francisco</item>"
+msgid "Frank"
+msgstr ""
 
-#. LBimT
+#. TwrgJ
 #: 04060101.xhp
 msgctxt ""
 "04060101.xhp\n"
 "par_id3146137\n"
 "help.text"
-msgid "<item type=\"input\">Greta</item>"
-msgstr "<item type=\"input\">Greta</item>"
+msgid "Greta"
+msgstr ""
 
-#. o28cC
+#. TmomQ
 #: 04060101.xhp
 msgctxt ""
 "04060101.xhp\n"
 "par_id3153078\n"
 "help.text"
-msgid "<item type=\"input\">Harry</item>"
-msgstr "<item type=\"input\">Harry</item>"
+msgid "Harry"
+msgstr ""
 
-#. yyNPe
+#. qBHps
 #: 04060101.xhp
 msgctxt ""
 "04060101.xhp\n"
 "par_id3148761\n"
 "help.text"
-msgid "<item type=\"input\">Irene</item>"
-msgstr "<item type=\"input\">Irene</item>"
+msgid "Irene"
+msgstr ""
 
-#. 3QgTw
+#. UDuZW
 #: 04060101.xhp
 msgctxt ""
 "04060101.xhp\n"
-"par_id3153544\n"
+"par_id221616245476190\n"
 "help.text"
-msgid "<item type=\"input\">Name</item>"
-msgstr "<item type=\"input\">Nome</item>"
+msgid "The following six examples use the database table above, combined with different search criteria areas."
+msgstr ""
 
-#. rZnhU
+#. sPtvb
 #: 04060101.xhp
 msgctxt ""
 "04060101.xhp\n"
-"par_id3158414\n"
+"hd_id861616245631924\n"
 "help.text"
-msgid "<item type=\"input\">Grade</item>"
-msgstr "<item type=\"input\">Série</item>"
+msgid "Example 1"
+msgstr ""
 
-#. KKHzB
+#. cEWAG
 #: 04060101.xhp
 msgctxt ""
 "04060101.xhp\n"
-"par_id3152820\n"
+"par_id891616245640933\n"
 "help.text"
-msgid "<item type=\"input\">Age</item>"
-msgstr "<item type=\"input\">Idade</item>"
+msgid "<emph>Name</emph>"
+msgstr ""
 
-#. RAMzS
+#. AsoFd
 #: 04060101.xhp
 msgctxt ""
 "04060101.xhp\n"
-"par_id3154866\n"
+"par_id451616245640933\n"
 "help.text"
-msgid "<item type=\"input\">Distance to School</item>"
-msgstr "<item type=\"input\">Distância até a Escola</item>"
+msgid "<emph>Grade</emph>"
+msgstr ""
 
-#. eQCiE
+#. Dw3a2
 #: 04060101.xhp
 msgctxt ""
 "04060101.xhp\n"
-"par_id3150471\n"
+"par_id151616245818988\n"
 "help.text"
-msgid "<item type=\"input\">Weight</item>"
-msgstr "<item type=\"input\">Peso</item>"
+msgid "<emph>Age</emph>"
+msgstr ""
 
-#. vqwJP
+#. TdY66
 #: 04060101.xhp
 msgctxt ""
 "04060101.xhp\n"
-"par_id3163823\n"
+"par_id481616245878460\n"
 "help.text"
-msgid "<item type=\"input\">DCOUNT</item>"
-msgstr "<item type=\"input\">BDCONTAR</item>"
+msgid "<emph>Distance</emph>"
+msgstr ""
 
-#. bLCC5
+#. ggUUj
 #: 04060101.xhp
 msgctxt ""
 "04060101.xhp\n"
-"par_id3149282\n"
+"par_id741616245891772\n"
 "help.text"
-msgid "The formula in cell B16 is =DCOUNT(A1:E10;D1;A13:E14)"
-msgstr "A fórmula na célula B16 é =BDCONTAR(A1:E10;D1;A13:E14)"
+msgid "<emph>Weight</emph>"
+msgstr ""
 
-#. hk3qQ
+#. BdjTH
 #: 04060101.xhp
 msgctxt ""
 "04060101.xhp\n"
-"hd_id3150962\n"
+"par_id41616246075884\n"
 "help.text"
-msgid "Database Function Parameters:"
-msgstr "Parâmetros das funções de banco de dados:"
+msgid ">600"
+msgstr ""
 
-#. Ruyj7
+#. 4SkNQ
 #: 04060101.xhp
 msgctxt ""
 "04060101.xhp\n"
-"par_id3155837\n"
+"par_id451616246535763\n"
 "help.text"
-msgid "The following items are the parameter definitions for all database functions:"
-msgstr "Os itens a seguir são definições de parâmetros para todas as funções de banco de dados:"
+msgid "As in this simple example, it is sometimes desirable (but not essential) to place the search criteria area directly under the database table, with the columns of the two areas vertically aligned. Blank entries in the search criteria area are ignored. With the above example database table and this search criteria area, insert the formula <item type=\"input\">=DCOUNT(A1:E10;;A12:E14)</item> into an empty cell elsewhere in the sheet to count how many of Joe’s guests travel further than 600 meters to school. The value 5 is returned (counting Betty, Daniel, Eva, Harry, and Irene)."
+msgstr ""
 
-#. GJ7fw
+#. bBHFr
 #: 04060101.xhp
 msgctxt ""
 "04060101.xhp\n"
-"par_id3149453\n"
+"par_id731616246561901\n"
 "help.text"
-msgid "<emph>Database</emph> is the cell range defining the database. The first row of the range contains the field names, and following rows are records with corresponding field values."
-msgstr "<emph>Banco de dados</emph> é o intervalo de células que define o banco de dados. A primeira linha do intervalo contém o nome dos campos, e as seguintes são registros com valores de campo correspondentes."
+msgid "Note also that the formula <item type=\"input\">=DCOUNT(A1:E10;;D12:D13)</item> returns exactly the same value, demonstrating that it is only necessary for the search criteria area to contain relevant column headings."
+msgstr ""
 
-#. aZFWB
+#. VyrBb
 #: 04060101.xhp
 msgctxt ""
 "04060101.xhp\n"
-"par_id3151272\n"
+"hd_id191616246773750\n"
 "help.text"
-msgid "<emph>DatabaseField</emph> specifies the column where the function operates on after the search criteria of the first parameter is applied and the data rows are selected. It is not related to the search criteria itself. <variable id=\"quotes\">For the DatabaseField parameter you can enter a reference to a header cell or a number to specify the column within the Database area, starting with 1. To reference a column by means of the literal column header name (from the first row of <emph>Database</emph> range), place quotation marks around the header name.</variable>"
-msgstr "<emph>CampoDoBancoDeDados</emph> especifica a coluna onde a função opera após o critério de pesquisa do primeiro parâmetro ser aplicado e as linhas de dados serem selecionadas. Não está relacionado ao critério de pesquisa em si. <variable id=\"quotes\">Para o parâmetro CampoDoBancoDeDados, insira uma referência a uma célula de cabeçalho ou um número para especificar a coluna dentro da área do banco de dados, começando com 1. Para referenciar uma coluna por meio de um nome literal de coluna (da primeira linha do intervalo <emph>BancodeDados</emph>), coloque aspas em torno do nome do cabeçalho.</variable>"
+msgid "Example 2"
+msgstr ""
 
-#. UwQMN
+#. V4PCC
 #: 04060101.xhp
 msgctxt ""
 "04060101.xhp\n"
-"par_id3147083\n"
+"par_id71616246804093\n"
 "help.text"
-msgid "<emph>SearchCriteria</emph> is the cell range containing search criteria. Like <emph>Database</emph>, its first row is also field names, and following rows are conditions for related fields. If you write several criteria in one row they are connected by AND. If you write the criteria in different rows they are connected by OR. Empty cells in the search criteria range will be ignored."
-msgstr "<emph>CriterioPesquisa</emph> é o intervalo de células contendo o critério de pesquisa. Tal como <emph>BancodeDados</emph>, a primeira linha também é o nome dos campos, e as seguintes são condições relacionadas aos campos. Se escrever vários critérios numa linha, serão conectados por E lógico. Se escrever os critérios em várias linhas, eles serão conectados por OU lógico. Células vazias no intervalo do critério de pesquisa são ignoradas."
+msgid "<emph>Age</emph>"
+msgstr ""
 
-#. k58yy
+#. KjH3p
 #: 04060101.xhp
 msgctxt ""
 "04060101.xhp\n"
-"par_id3151188\n"
+"par_id41616250394431\n"
 "help.text"
-msgid "Choose <link href=\"text/shared/optionen/01060500.xhp\" name=\"Spreadsheet - Calculate\"><switchinline select=\"sys\"><caseinline select=\"MAC\"><menuitem>%PRODUCTNAME - Preferences</menuitem></caseinline><defaultinline><menuitem>Tools - Options</menuitem></defaultinline></switchinline><menuitem> - %PRODUCTNAME Calc - Calculate</menuitem></link> to define how $[officename] Calc acts when searching for identical entries."
-msgstr "Escolha  <link href=\"text/shared/optionen/01060500.xhp\" name=\"Spreadsheet - Calculate\"><switchinline select=\"sys\"><caseinline select=\"MAC\"><menuitem>%PRODUCTNAME - Preferências</menuitem></caseinline><defaultinline><menuitem>Ferramentas - Opções</menuitem></defaultinline></switchinline><menuitem> - %PRODUCTNAME Calc - Calcular</menuitem></link> para definir como o $[officename] Calc age quando pesquisar por entradas idênticas."
+msgid "<emph>Grade</emph>"
+msgstr ""
 
-#. GCPCd
+#. FsLvK
 #: 04060101.xhp
 msgctxt ""
 "04060101.xhp\n"
-"par_id3882869\n"
+"par_id71616250414319\n"
 "help.text"
-msgid "See also the Wiki page about <link href=\"https://wiki.documentfoundation.org/Documentation/How_Tos/Conditional_Counting_and_Summation\" name=\"wiki.documentfoundation.org Documentation/HowTo/Calc/Conditional Counting and Summation\">Conditional Counting and Summation</link>."
-msgstr "Veja também a página Wiki sobre <link href=\"https://wiki.documentfoundation.org/Documentation/How_Tos/Conditional_Counting_and_Summation\" name=\"wiki.documentfoundation.org Documentation/HowTo/Calc/Conditional Counting and Summation\"> Contagem condicional e Resumo</link>"
+msgid ">7"
+msgstr ""
 
-#. JFBkY
+#. hfPeb
+#: 04060101.xhp
+msgctxt ""
+"04060101.xhp\n"
+"par_id361616251794063\n"
+"help.text"
+msgid "In this example the search criteria area contains only two headings and these are not vertically aligned with the corresponding headings in the example database table. Since there are two conditions in the same row, these are connected by AND. With the above example database table and this search criteria area, insert the formula <item type=\"input\">=DCOUNT(A1:E10;;B12:C13)</item> into an empty cell elsewhere in the sheet to count how many of Joe’s guests are in grade 2 and greater than 7 years old. The value 2 is returned (counting Eva and Irene)."
+msgstr ""
+
+#. 6Tfyk
+#: 04060101.xhp
+msgctxt ""
+"04060101.xhp\n"
+"hd_id221616251986854\n"
+"help.text"
+msgid "Example 3"
+msgstr ""
+
+#. kAXbc
+#: 04060101.xhp
+msgctxt ""
+"04060101.xhp\n"
+"par_id141616251871487\n"
+"help.text"
+msgid "<emph>Age</emph>"
+msgstr ""
+
+#. CQA2G
+#: 04060101.xhp
+msgctxt ""
+"04060101.xhp\n"
+"par_id351616252313215\n"
+"help.text"
+msgid "In this example the search criteria area contains only one heading. Since there are two conditions in consecutive rows, these are connected by OR. With the above example database table and this search criteria area, insert the formula <item type=\"input\">=DCOUNT(A1:E10;;B12:B14)</item> into an empty cell elsewhere in the sheet to count how many of Joe’s guests are either 9 or 10 years old. The value 4 is returned (counting Andy, Betty, Charles, and Harry)."
+msgstr ""
+
+#. GFADM
+#: 04060101.xhp
+msgctxt ""
+"04060101.xhp\n"
+"hd_id71616252395407\n"
+"help.text"
+msgid "Example 4"
+msgstr ""
+
+#. kNw3F
+#: 04060101.xhp
+msgctxt ""
+"04060101.xhp\n"
+"par_id451616252413665\n"
+"help.text"
+msgid "<emph>Age</emph>"
+msgstr ""
+
+#. QPqDb
+#: 04060101.xhp
+msgctxt ""
+"04060101.xhp\n"
+"par_id431616252540783\n"
+"help.text"
+msgid "<emph>Age</emph>"
+msgstr ""
+
+#. 5zWEA
+#: 04060101.xhp
+msgctxt ""
+"04060101.xhp\n"
+"par_id411616252568693\n"
+"help.text"
+msgid ">=8"
+msgstr ""
+
+#. ceFqk
+#: 04060101.xhp
+msgctxt ""
+"04060101.xhp\n"
+"par_id441616252573495\n"
+"help.text"
+msgid "<=10"
+msgstr ""
+
+#. 6Dk9D
+#: 04060101.xhp
+msgctxt ""
+"04060101.xhp\n"
+"par_id991616252981928\n"
+"help.text"
+msgid "In this example the search criteria area contains two occurrences of the same heading. Since there are two conditions in the same row, these are connected by AND. With the above example database table and this search criteria area, insert the formula <item type=\"input\">=DCOUNT(A1:E10;;B12:C13)</item> into an empty cell elsewhere in the sheet to count how many of Joe’s guests are aged between 8 and 10 (inclusive). The value 6 is returned (counting Andy, Betty, Charles, Eva, Harry, and Irene)."
+msgstr ""
+
+#. vgeRe
+#: 04060101.xhp
+msgctxt ""
+"04060101.xhp\n"
+"hd_id561616253067881\n"
+"help.text"
+msgid "Example 5"
+msgstr ""
+
+#. yvXQo
+#: 04060101.xhp
+msgctxt ""
+"04060101.xhp\n"
+"par_id301616253073598\n"
+"help.text"
+msgid "<emph>Name</emph>"
+msgstr ""
+
+#. uDvpq
+#: 04060101.xhp
+msgctxt ""
+"04060101.xhp\n"
+"par_id251616253264022\n"
+"help.text"
+msgid "F*"
+msgstr ""
+
+#. qBB4C
+#: 04060101.xhp
+msgctxt ""
+"04060101.xhp\n"
+"par_id91616253394127\n"
+"help.text"
+msgid "This simple example shows the use of wildcards. For this example to work as intended, select to enable wildcards at <link href=\"text/shared/optionen/01060500.xhp\" name=\"Spreadsheet - Calculate\"><switchinline select=\"sys\"><caseinline select=\"MAC\"><menuitem>%PRODUCTNAME - Preferences</menuitem></caseinline><defaultinline><menuitem>Tools - Options</menuitem></defaultinline></switchinline><menuitem> - %PRODUCTNAME Calc - Calculate</menuitem></link>. With the above example database table and this search criteria area, insert the formula <item type=\"input\">=DCOUNT(A1:E10;;A12:A13)</item> into an empty cell elsewhere in the sheet to count how many of Joe’s guests have names that begin with the letter “F”. The value 1 is returned (counting Frank)."
+msgstr ""
+
+#. BAnVJ
+#: 04060101.xhp
+msgctxt ""
+"04060101.xhp\n"
+"hd_id121616253593255\n"
+"help.text"
+msgid "Example 6"
+msgstr ""
+
+#. 3RcET
+#: 04060101.xhp
+msgctxt ""
+"04060101.xhp\n"
+"par_id731616253599063\n"
+"help.text"
+msgid "<emph>Name</emph>"
+msgstr ""
+
+#. PJCE2
+#: 04060101.xhp
+msgctxt ""
+"04060101.xhp\n"
+"par_id761616253649791\n"
+"help.text"
+msgid "[ABC].*"
+msgstr ""
+
+#. NyqFV
+#: 04060101.xhp
+msgctxt ""
+"04060101.xhp\n"
+"par_id631616253692350\n"
+"help.text"
+msgid "This simple example shows the use of regular expressions. For this example to work as intended, select to enable regular expressions at <link href=\"text/shared/optionen/01060500.xhp\" name=\"Spreadsheet - Calculate\"><switchinline select=\"sys\"><caseinline select=\"MAC\"><menuitem>%PRODUCTNAME - Preferences</menuitem></caseinline><defaultinline><menuitem>Tools - Options</menuitem></defaultinline></switchinline><menuitem> - %PRODUCTNAME Calc - Calculate</menuitem></link>. With the above example database table and this search criteria area, insert the formula <item type=\"input\">=DCOUNT(A1:E10;;A12:A13)</item> into an empty cell elsewhere in the sheet to count how many of Joe’s guests have names that begin with the letters “A”, “B”, or “C”. The value 3 is returned (counting Andy, Betty, and Charles)."
+msgstr ""
+
+#. jLLao
 #: 04060101.xhp
 msgctxt ""
 "04060101.xhp\n"
 "bm_id3150882\n"
 "help.text"
-msgid "<bookmark_value>DCOUNT function</bookmark_value>         <bookmark_value>counting rows;with numeric values</bookmark_value>"
-msgstr "<bookmark_value>função BDCONTAR</bookmark_value><bookmark_value>contar linhas;com valores numéricos</bookmark_value>"
+msgid "<bookmark_value>DCOUNT function</bookmark_value>    <bookmark_value>counting rows;with numeric values</bookmark_value>"
+msgstr ""
 
 #. DLGGD
 #: 04060101.xhp
@@ -4786,14 +5191,14 @@ msgctxt ""
 msgid "DCOUNT"
 msgstr "BDCONTAR"
 
-#. HVBLr
+#. RAGuV
 #: 04060101.xhp
 msgctxt ""
 "04060101.xhp\n"
 "par_id3156133\n"
 "help.text"
-msgid "<ahelp hid=\"HID_FUNC_DBANZAHL\">DCOUNT counts the number of rows (records) in a database that match the specified search criteria and contain numerical values in the DatabaseField column.</ahelp>"
-msgstr "<ahelp hid=\"HID_FUNC_DBANZAHL\">BDCONTAR conta o número de linhas (registros) em um banco de dados que correspondam aos critérios de pesquisa especificados e contenham valores numéricos na coluna CampoDoBancoDeDados.</ahelp>"
+msgid "<ahelp hid=\"HID_FUNC_DBANZAHL\">DCOUNT counts the number of cells (fields) of the specified column that contain numeric values, for all rows (database records) that match the specified search criteria.</ahelp> However, if no column is specified, DCOUNT returns the count of all records that match the specified search criteria irrespective of their contents."
+msgstr ""
 
 #. EetM7
 #: 04060101.xhp
@@ -4804,59 +5209,41 @@ msgctxt ""
 msgid "DCOUNT(Database; [DatabaseField]; SearchCriteria)"
 msgstr "BDCONTAR ( BancoDeDados; [ CampoDoBancoDeDados ]; CritérioDePesquisa )"
 
-#. uSA7w
-#: 04060101.xhp
-msgctxt ""
-"04060101.xhp\n"
-"par_id3153273\n"
-"help.text"
-msgid "If the DatabaseField argument is omitted, DCOUNT returns the count of all records that satisfy Criteria. <embedvar href=\"text/scalc/01/04060101.xhp#quotes\"/>"
-msgstr "Se o argumento CampoDoBancoDeDados for omitido, BDCONTAR retorna a contagem de todos os registros que satisfazem o critério de pesquisa. <embedvar href=\"text/scalc/01/04060101.xhp#quotes\"/>"
-
-#. ckYe4
-#: 04060101.xhp
-msgctxt ""
-"04060101.xhp\n"
-"par_id301587321851330\n"
-"help.text"
-msgid "If you choose to omit the DatabaseField argument, your formula should be of the form =DCOUNT(Database; ; SearchCriteria)."
-msgstr "Se escolher omitir o argumento CampoDoBancoDeDados, sua fórmula deve estar na forma  =BDCONTAR(BancoDeDados; ; CriterioDePesquisa)."
-
-#. F7cy4
+#. KYvAJ
 #: 04060101.xhp
 msgctxt ""
 "04060101.xhp\n"
 "par_id3153623\n"
 "help.text"
-msgid "In the example above (scroll up, please), we want to know how many children have to travel more than 600 meters to school. The result is to be stored in cell B16. Set the cursor in cell B16. Enter the formula <item type=\"input\">=DCOUNT(A1:E10;D1;A13:E14)</item> in B16. The <emph>Function Wizard</emph> helps you to input ranges."
-msgstr "No exemplo acima (role para cima), queremos saber quantas crianças devem viajar mais de 600 metros até a escola. O resultado será armazenado na célula B16. Coloque o cursor na célula B16. Digite a fórmula<item type=\"input\">=BDCONTAR(A1:E10;D1;A13:E14)</item> em B16. O <emph>Assistente de função</emph> lhe ajuda a inserir os intervalos."
+msgid "The example database table giving information about the guests invited to Joe’s birthday party (described above) should occupy cells A1:E10. The content of cells A12:E12 should be identical to the header labels for the database table in cells A1:E1. Make sure that cells A13:E13 are blank, except for cell D13 which should contain \">600\" (this search criterion will match records in the database table that have a value greater than 600 in the Distance column)."
+msgstr ""
 
-#. D8qKE
+#. kVciZ
 #: 04060101.xhp
 msgctxt ""
 "04060101.xhp\n"
-"par_id3149142\n"
+"par_id441616368480646\n"
 "help.text"
-msgid "<emph>Database</emph> is the range of data to be evaluated, including its headers: in this case A1:E10. <emph>DatabaseField</emph> specifies the column for the search criteria: in this case, the column with the numerical distance values. <emph>SearchCriteria</emph> is the range where you can enter the search parameters: in this case, A13:E14."
-msgstr "<emph>BancoDeDados</emph> é o intervalo de dados a avaliar, incluindo seus cabeçalhos: neste caso A1:E10. <emph>CampoDoBancoDeDados</emph> especifica a coluna para o critério de pesquisa: neste caso, a coluna com os valores numéricos de distância. <emph>CritérioDePesquisa</emph> é o intervalo de entrada dos parâmetros de busca: neste caso, A13:E14."
+msgid "Insert the formula <input>=DCOUNT(A1:E10;; A12:E13)</input> into an empty cell elsewhere in the sheet to calculate how many of Joe’s party guests travel further than 600 meters to school. The value 5 is returned."
+msgstr ""
 
-#. 7rvXg
+#. UZFcp
 #: 04060101.xhp
 msgctxt ""
 "04060101.xhp\n"
-"par_id3145652\n"
+"par_id361616368488119\n"
 "help.text"
-msgid "To learn how many children in second grade are over 7 years of age, delete the entry >600 in cell D14 and enter <item type=\"input\">2</item> in cell B14 under Grade, and enter <item type=\"input\">>7</item> in cell C14 to the right. The result is 2. Two children are in second grade and over 7 years of age. As both criteria are in the same row, they are connected by AND."
-msgstr "Para conhecer quantas crianças do segundo ano tem mais de 7 anos, exclua a entrada >600 na célula D14 e entre <item type=\"input\">2</item>na célula B14 sob Grau, e entre <item type=\"input\">>7</item> na célula C14 a direita. O resultado é 2. Duas crianças estão no segundo ano e com mais de 7 anos de idade. Como ambos os critérios estão na mesma linha, eles estão conectados por um E lógico."
+msgid "The same result is obtained if you use the formula <input>=DCOUNT(A1:E10; \"Distance\"; A12:E13)</input>, because all entries in the Distance column are numeric. However, if you use the formula <input>=DCOUNT(A1:E10; \"Name\"; A12:E13)</input>, the value 0 is returned because all entries in the Name column are non-numeric."
+msgstr ""
 
-#. G2Eds
+#. m4a6A
 #: 04060101.xhp
 msgctxt ""
 "04060101.xhp\n"
 "bm_id3156123\n"
 "help.text"
-msgid "<bookmark_value>DCOUNTA function</bookmark_value>         <bookmark_value>records;counting in Calc databases</bookmark_value>         <bookmark_value>counting rows;with numeric or alphanumeric values</bookmark_value>"
-msgstr "<bookmark_value>função BDCONTARA</bookmark_value><bookmark_value>registros;contar no banco de dados do Calc</bookmark_value><bookmark_value>contar linhas;com valores numéricos ou alfanuméricos</bookmark_value>"
+msgid "<bookmark_value>DCOUNTA function</bookmark_value>    <bookmark_value>records;counting in Calc databases</bookmark_value>    <bookmark_value>counting rows;with numeric or alphanumeric values</bookmark_value>"
+msgstr ""
 
 #. aJdyL
 #: 04060101.xhp
@@ -4867,14 +5254,14 @@ msgctxt ""
 msgid "DCOUNTA"
 msgstr "BDCONTARA"
 
-#. AXuF5
+#. T7ebL
 #: 04060101.xhp
 msgctxt ""
 "04060101.xhp\n"
 "par_id3156110\n"
 "help.text"
-msgid "<ahelp hid=\"HID_FUNC_DBANZAHL2\">DCOUNTA counts the number of rows (records) in a database that match the specified search conditions, and contain numeric or alphanumeric values.</ahelp>"
-msgstr "<ahelp hid=\"HID_FUNC_DBANZAHL2\">BDCONTARA conta o número de linhas (registros) em um banco de dados que correspondam às condições de pesquisa especificadas e que contenham valores numéricos ou alfanuméricos.</ahelp>"
+msgid "<ahelp hid=\"HID_FUNC_DBANZAHL2\">DCOUNTA counts the number of cells (fields) of the specified column that are not blank, for all rows (database records) that match the specified search criteria.</ahelp> Blank cells of the specified column are not counted. However, if no column is specified, DCOUNTA returns the count of all records that match the specified search criteria irrespective of their contents."
+msgstr ""
 
 #. CxWGV
 #: 04060101.xhp
@@ -4885,41 +5272,41 @@ msgctxt ""
 msgid "DCOUNTA(Database; [DatabaseField]; SearchCriteria)"
 msgstr "BDCONTARA(Banco de Dados; [Campo do banco de dados]; Critérios de pesquisa)"
 
-#. EnTi8
-#: 04060101.xhp
-msgctxt ""
-"04060101.xhp\n"
-"par_id3153274\n"
-"help.text"
-msgid "If the DatabaseField argument is omitted, DCOUNTA returns the count of all records that satisfy Criteria. <embedvar href=\"text/scalc/01/04060101.xhp#quotes\"/>"
-msgstr "Se o argumento CampoDoBancoDeDados for omitido, BDCONTARA retorna a contagem de todos os registros que satisfazem os critérios. <embedvar href=\"text/scalc/01/04060101.xhp#quotes\"/>"
-
-#. ESpfH
-#: 04060101.xhp
-msgctxt ""
-"04060101.xhp\n"
-"par_id31587322048553\n"
-"help.text"
-msgid "If you choose to omit the DatabaseField argument, your formula should be of the form =DCOUNTA(Database; ; SearchCriteria)."
-msgstr "Se escolher omitir o argumento CampoDoBancoDeDados, sua fórmula deve estar na forma  =BDCONTARA(BancoDeDados; ; CriterioDePesquisa)."
-
-#. xX6ve
+#. dLvi2
 #: 04060101.xhp
 msgctxt ""
 "04060101.xhp\n"
 "par_id3153982\n"
 "help.text"
-msgid "In the example above (scroll up, please), you can search for the number of children whose name starts with an E or a subsequent letter. Edit the formula in B16 to read <item type=\"input\">=DCOUNTA(A1:E10;\"Name\";A13:E14)</item>. Delete the old search criteria and enter <item type=\"input\">>=E</item> under Name in field A14. The result is 5. If you now delete all number values for Greta in row 8, the result changes to 4. Row 8 is no longer included in the count because it does not contain any values. The name Greta is text, not a value. Note that the DatabaseField parameter must point to a column that can contain values."
-msgstr "No exemplo acima (role para cima), você pode pesquisar pelo número de crianças cujo nome começa com E ou uma letra subsequente. Edite a fórmula em B16 para <item type=\"input\">=BDCONTARA(A1:E10;\"Name\";A13:E14)</item>. Exclua o critério de pesquisa antigo e digite <item type=\"input\">>=E</item> em Nome no campo A14. O resultado é 5. Se remover todos os valores numéricos para Greta na linha 8, o resultado muda pra 4. A linha 8 não será mais incluída na contagem por que não possui mais valores. O nome Greta é um texto e não um valor. Note que o parâmetro CampoDoBancoDeDados deve apontar para uma coluna que contém valores."
+msgid "The example database table giving information about the guests invited to Joe’s birthday party (described above) should occupy cells A1:E10. The content of cells A12:E12 should be identical to the header labels for the database table in cells A1:E1. Make sure that cells A13:E13 are blank, except for cell D13 which should contain \">600\" (this search criterion will match records in the database table that have a value greater than 600 in the Distance column)."
+msgstr ""
 
-#. eBniZ
+#. SSD7D
+#: 04060101.xhp
+msgctxt ""
+"04060101.xhp\n"
+"par_id61616368616093\n"
+"help.text"
+msgid "Insert the formula <input>=DCOUNTA(A1:E10;; A12:E13)</input> into an empty cell elsewhere in the sheet to calculate how many of Joe’s party guests travel further than 600 meters to school. The value 5 is returned."
+msgstr ""
+
+#. WyEGc
+#: 04060101.xhp
+msgctxt ""
+"04060101.xhp\n"
+"par_id841616368623207\n"
+"help.text"
+msgid "The same result is obtained if you use the formula <input>=DCOUNTA(A1:E10; \"Distance\"; A12:E13)</input> or the formula <input>=DCOUNTA(A1:E10; \"Name\"; A12:E13)</input>. The latter case reflects that in contrast to DCOUNT, DCOUNTA counts both numeric and alphanumeric values in the column indicated by the <emph>DatabaseField</emph> argument."
+msgstr ""
+
+#. ZFJzE
 #: 04060101.xhp
 msgctxt ""
 "04060101.xhp\n"
 "bm_id3147256\n"
 "help.text"
-msgid "<bookmark_value>DGET function</bookmark_value>         <bookmark_value>cell contents;searching in Calc databases</bookmark_value>         <bookmark_value>searching;cell contents in Calc databases</bookmark_value>"
-msgstr "<bookmark_value>função BDEXTRAIR</bookmark_value><bookmark_value>conteúdo da célula; pesquisar em banco de dados do Calc</bookmark_value><bookmark_value>pesquisar;conteúdo da célula em banco de dados do Calc</bookmark_value>"
+msgid "<bookmark_value>DGET function</bookmark_value>    <bookmark_value>cell contents;searching in Calc databases</bookmark_value>    <bookmark_value>searching;cell contents in Calc databases</bookmark_value>"
+msgstr ""
 
 #. wj7ck
 #: 04060101.xhp
@@ -4930,14 +5317,23 @@ msgctxt ""
 msgid "DGET"
 msgstr "BDEXTRAIR"
 
-#. 33Sss
+#. WwRCV
 #: 04060101.xhp
 msgctxt ""
 "04060101.xhp\n"
 "par_id3152801\n"
 "help.text"
-msgid "<ahelp hid=\"HID_FUNC_DBAUSZUG\">DGET returns the contents of the referenced cell in a database which matches the specified search criteria.</ahelp> In case of an error, the function returns either #VALUE! for no row found, or Err502 for more than one cell found."
-msgstr "<ahelp hid=\"HID_FUNC_DBAUSZUG\">BDEXTRAIR retorna o conteúdo da célula referenciada em um banco de dados que corresponda aos critérios de pesquisa especificados.</ahelp> Em caso de erro, a função retorna #VALOR! quando nenhuma linha for encontrada ou Err502 quando mais de uma célula for encontrada."
+msgid "<ahelp hid=\"HID_FUNC_DBAUSZUG\">DGET returns the contents of the cell (field) of the specified column, for the single row (database record) that matches the specified search criteria.</ahelp>"
+msgstr ""
+
+#. GxBWY
+#: 04060101.xhp
+msgctxt ""
+"04060101.xhp\n"
+"par_id171616180137385\n"
+"help.text"
+msgid "Calc reports Err:502 (invalid argument) if multiple matches are found, or a #VALUE! error (wrong data type) if no matches are found. A #VALUE! error is also reported if a single match is found but the relevant cell is empty."
+msgstr ""
 
 #. oFi8J
 #: 04060101.xhp
@@ -4948,68 +5344,41 @@ msgctxt ""
 msgid "DGET(Database; DatabaseField; SearchCriteria)"
 msgstr "BDEXTRAIR(BancoDeDados; CampoDoBancoDeDados; CritérioDePesquisa)"
 
-#. weNSC
+#. G2EsJ
 #: 04060101.xhp
 msgctxt ""
 "04060101.xhp\n"
 "par_id3155388\n"
 "help.text"
-msgid "In the above example (scroll up, please), we want to determine what grade a child is in, whose name was entered in cell A14. The formula is entered in cell B16 and differs slightly from the earlier examples because only one column (one database field) can be entered for <emph>DatabaseField</emph>. Enter the following formula:"
-msgstr "No exemplo acima (role para cima), queremos determinar em qual série a criança está, cujo nome foi inserido na célula A14. A fórmula é digitada na célula B16 e difere ligeiramente daquelas dos exemplos anteriores porque somente uma coluna (um campo do banco de dados) pode ser inserida para <emph>CampoDoBancoDeDados</emph>. Digite a seguinte fórmula:"
+msgid "The example database table giving information about the guests invited to Joe’s birthday party (described above) should occupy cells A1:E10. The content of cells A12:E12 should be identical to the header labels for the database table in cells A1:E1. Make sure that cells A13:E13 are blank, except for cell C13 which should contain \"11\" (this search criterion will match records in the database table that have a value of 11 in the Age column)."
+msgstr ""
 
-#. jVr8U
+#. A942C
 #: 04060101.xhp
 msgctxt ""
 "04060101.xhp\n"
 "par_id3153096\n"
 "help.text"
-msgid "<item type=\"input\">=DGET(A1:E10;\"Grade\";A13:E14)</item>"
-msgstr "<item type=\"input\">=BDEXTRAIR(A1:E10;\"Série\";A13:E14)</item>"
+msgid "Insert the formula <input>=DGET(A1:E10; \"Name\"; A12:E13)</input> into an empty cell elsewhere in the sheet to find the name of Joe’s party guest who is age 11. The name Daniel is returned."
+msgstr ""
 
-#. nAfKt
+#. 6AKoj
 #: 04060101.xhp
 msgctxt ""
 "04060101.xhp\n"
 "par_id3150524\n"
 "help.text"
-msgid "Enter the name <item type=\"input\">Frank</item> in A14, and you see the result 2. Frank is in second grade. Enter <item type=\"input\">\"Age\"</item> instead of \"Grade\" and you will get Frank's age."
-msgstr "Digite o nome <item type=\"input\">Frank</item> em A14 e você verá o resultado 2. Frank está na segunda série. Digite <item type=\"input\">\"Idade\"</item> no lugar de \"Série\" e você verá a idade de Frank."
+msgid "If you change the value in cell C13 to “10”, then the formula <input>=DGET(A1:E10; \"Name\"; A12:E13)</input> returns an invalid argument error (Err:502). The reflects that multiple records match the specified criterion (both Betty and Charles are age 10)."
+msgstr ""
 
-#. pZx2V
-#: 04060101.xhp
-msgctxt ""
-"04060101.xhp\n"
-"par_id3148833\n"
-"help.text"
-msgid "Or enter the value <item type=\"input\">11</item> in cell C14 only, and delete the other entries in this row. Edit the formula in B16 as follows:"
-msgstr "Ou entre o valor <item type=\"input\">11</item> na célula C14 somente, e exclua as demais entradas nessa linha. Edite a fórmula em B16 como segue:"
-
-#. mG8tC
-#: 04060101.xhp
-msgctxt ""
-"04060101.xhp\n"
-"par_id3149912\n"
-"help.text"
-msgid "<item type=\"input\">=DGET(A1:E10;\"Name\";A13:E14)</item>"
-msgstr "<item type=\"input\">=BDEXTRAIR(A1:E10;\"Nome\";A13:E14)</item>"
-
-#. fRPeY
-#: 04060101.xhp
-msgctxt ""
-"04060101.xhp\n"
-"par_id3148813\n"
-"help.text"
-msgid "Instead of the grade, the name is queried. The answer appears at once: Daniel is the only child aged 11."
-msgstr "Em vez da série, o nome será consultado. A resposta será exibida imediatamente: Daniel é a única criança com 11 anos de idade."
-
-#. 8VqRF
+#. umeGw
 #: 04060101.xhp
 msgctxt ""
 "04060101.xhp\n"
 "bm_id3149766\n"
 "help.text"
-msgid "<bookmark_value>DMAX function</bookmark_value>         <bookmark_value>maximum values in Calc databases</bookmark_value>         <bookmark_value>searching;maximum values in columns</bookmark_value>"
-msgstr "<bookmark_value>função BDMÁX</bookmark_value><bookmark_value>valores máximos no banco de dados do Calc</bookmark_value><bookmark_value>pesquisar;valores máximos em colunas</bookmark_value>"
+msgid "<bookmark_value>DMAX function</bookmark_value>    <bookmark_value>maximum values in Calc databases</bookmark_value>    <bookmark_value>searching;maximum values in columns</bookmark_value>"
+msgstr ""
 
 #. MDBf2
 #: 04060101.xhp
@@ -5020,14 +5389,23 @@ msgctxt ""
 msgid "DMAX"
 msgstr "BDMÁX"
 
-#. VWvHG
+#. 9ek2J
 #: 04060101.xhp
 msgctxt ""
 "04060101.xhp\n"
 "par_id3154903\n"
 "help.text"
-msgid "<ahelp hid=\"HID_FUNC_DBMAX\">DMAX returns the maximum content of a cell (field) in a database (all records) that matches the specified search conditions.</ahelp>"
-msgstr "<ahelp hid=\"HID_FUNC_DBMAX\">BDMÁX retorna o maior valor de célula (campo) em um banco de dados (todos os registros) que corresponda às condições de pesquisa especificadas.</ahelp>"
+msgid "<ahelp hid=\"HID_FUNC_DBMAX\">DMAX calculates the maximum value across the cells (fields) of the specified column that contain numeric values, for all rows (database records) that match the specified search criteria.</ahelp> Blank cells or cells containing non-numeric characters are not included."
+msgstr ""
+
+#. pUGwd
+#: 04060101.xhp
+msgctxt ""
+"04060101.xhp\n"
+"par_id51616180409281\n"
+"help.text"
+msgid "Returns 0 if no matches are found, or if there are no non-zero numeric values in the cells of the specified column for the matching records."
+msgstr ""
 
 #. ho2GW
 #: 04060101.xhp
@@ -5038,41 +5416,32 @@ msgctxt ""
 msgid "DMAX(Database; DatabaseField; SearchCriteria)"
 msgstr "BDMÁX(BancoDeDados; CampoDoBancoDeDados; CritérioDePesquisa)"
 
-#. 7XFbM
+#. S57iG
 #: 04060101.xhp
 msgctxt ""
 "04060101.xhp\n"
 "par_id3148442\n"
 "help.text"
-msgid "To find out how much the heaviest child in each grade weighed in the above example (scroll up, please), enter the following formula in B16:"
-msgstr "Para descobrir o peso da criança mais pesada em cada série no exemplo acima (role para cima), insira a seguinte fórmula na célula B16:"
+msgid "The example database table giving information about the guests invited to Joe’s birthday party (described above) should occupy cells A1:E10. The content of cells A12:E12 should be identical to the header labels for the database table in cells A1:E1. Make sure that cells A13:E13 are blank, except for cell D13 which should contain \">0\" (this search criterion is intended to match all records in the database table)."
+msgstr ""
 
-#. dbBD3
+#. Mqocw
 #: 04060101.xhp
 msgctxt ""
 "04060101.xhp\n"
 "par_id3148804\n"
 "help.text"
-msgid "<item type=\"input\">=DMAX(A1:E10;\"Weight\";A13:E14)</item>"
-msgstr "<item type=\"input\">=BDMÁX(A1:E10;\"Peso\";A13:E14)</item>"
+msgid "Insert the formula <input>=DMAX(A1:E10; \"Distance\"; A12:E13)</input> into an empty cell elsewhere in the sheet to find the maximum distance in meters that any of Joe’s party guests travel to school. The value 1200 is returned."
+msgstr ""
 
-#. FyUsB
-#: 04060101.xhp
-msgctxt ""
-"04060101.xhp\n"
-"par_id3150510\n"
-"help.text"
-msgid "Under Grade, enter <item type=\"input\">1, 2, 3,</item> and so on, one after the other. After entering a grade number, the weight of the heaviest child in that grade appears."
-msgstr "Em Série, digite <item type=\"input\">1, 2, 3,</item> e assim sucessivamente. Depois de digitar um número de série, o peso do aluno mais pesado da série aparece."
-
-#. A9voG
+#. 5cyyS
 #: 04060101.xhp
 msgctxt ""
 "04060101.xhp\n"
 "bm_id3159141\n"
 "help.text"
-msgid "<bookmark_value>DMIN function</bookmark_value>         <bookmark_value>minimum values in Calc databases</bookmark_value>         <bookmark_value>searching;minimum values in columns</bookmark_value>"
-msgstr "<bookmark_value>função BDMÍN</bookmark_value><bookmark_value>valores mínimos no banco de dados do Calc</bookmark_value><bookmark_value>pesquisar;valores mínimos em colunas</bookmark_value>"
+msgid "<bookmark_value>DMIN function</bookmark_value>    <bookmark_value>minimum values in Calc databases</bookmark_value>    <bookmark_value>searching;minimum values in columns</bookmark_value>"
+msgstr ""
 
 #. iGV4a
 #: 04060101.xhp
@@ -5083,14 +5452,23 @@ msgctxt ""
 msgid "DMIN"
 msgstr "BDMÍN"
 
-#. YPGYd
+#. kv5Gb
 #: 04060101.xhp
 msgctxt ""
 "04060101.xhp\n"
 "par_id3154261\n"
 "help.text"
-msgid "<ahelp hid=\"HID_FUNC_DBMIN\">DMIN returns the minimum content of a cell (field) in a database that matches the specified search criteria.</ahelp>"
-msgstr "<ahelp hid=\"HID_FUNC_DBMIN\">BDMÍN retorna o conteúdo mínimo de uma célula (campo) em um banco de dados que corresponde aos critérios de pesquisa especificados.</ahelp>"
+msgid "<ahelp hid=\"HID_FUNC_DBMIN\">DMIN calculates the minimum value across the cells (fields) of the specified column that contain numeric values, for all rows (database records) that match the specified search criteria.</ahelp> Blank cells or cells containing non-numeric characters are not included."
+msgstr ""
+
+#. yYJTa
+#: 04060101.xhp
+msgctxt ""
+"04060101.xhp\n"
+"par_id901616180605426\n"
+"help.text"
+msgid "Returns 0 if no matches are found, or if there are no non-zero numeric values in the cells of the specified column for the matching records."
+msgstr ""
 
 #. QxBsV
 #: 04060101.xhp
@@ -5101,41 +5479,32 @@ msgctxt ""
 msgid "DMIN(Database; DatabaseField; SearchCriteria)"
 msgstr "BDMÍN(BancoDeDados; CampoDoBancoDeDados; CritérioDePesquisa)"
 
-#. eVzZu
+#. p4YQB
 #: 04060101.xhp
 msgctxt ""
 "04060101.xhp\n"
 "par_id3148925\n"
 "help.text"
-msgid "To find the shortest distance to school for the children in each grade in the above example (scroll up, please), enter the following formula in B16:"
-msgstr "Para descobrir a menor distância até a escola para as crianças de cada série no exemplo acima (role para cima), insira a seguinte fórmula na célula B16:"
+msgid "The example database table giving information about the guests invited to Joe’s birthday party (described above) should occupy cells A1:E10. The content of cells A12:E12 should be identical to the header labels for the database table in cells A1:E1. Make sure that cells A13:E13 are blank, except for cell D13 which should contain \">0\" (this search criterion is intended to match all records in the database table)."
+msgstr ""
 
-#. wvi9R
+#. LrfjC
 #: 04060101.xhp
 msgctxt ""
 "04060101.xhp\n"
 "par_id3149161\n"
 "help.text"
-msgid "<item type=\"input\">=DMIN(A1:E10;\"Distance to School\";A13:E14)</item>"
-msgstr "<item type=\"input\">=BDMÍN(A1:E10;\"Distância até a Escola\";A13:E14)</item>"
+msgid "Insert the formula <input>=DMIN(A1:E10; \"Distance\"; A12:E13)</input> into an empty cell elsewhere in the sheet to find the minimum distance in meters that any of Joe’s party guests travel to school. The value 150 is returned."
+msgstr ""
 
-#. Jtw7m
-#: 04060101.xhp
-msgctxt ""
-"04060101.xhp\n"
-"par_id3148917\n"
-"help.text"
-msgid "In row 14, under Grade, enter <item type=\"input\">1, 2, 3,</item> and so on, one after the other. The shortest distance to school for each grade appears."
-msgstr "Na linha 14, sob Série, entre <item type=\"input\">1, 2, 3,</item> e assim por diante, um após o outro. A menor distância da escola para cada série aparece."
-
-#. RCFqd
+#. WppQu
 #: 04060101.xhp
 msgctxt ""
 "04060101.xhp\n"
 "bm_id3154274\n"
 "help.text"
-msgid "<bookmark_value>DAVERAGE function</bookmark_value>         <bookmark_value>averages; in Calc databases</bookmark_value>         <bookmark_value>calculating;averages in Calc databases</bookmark_value>"
-msgstr "<bookmark_value>função BDMÉDIA</bookmark_value><bookmark_value>médias; no banco de dados do Calc</bookmark_value><bookmark_value>calcular;médias no banco de dados do Calc</bookmark_value>"
+msgid "<bookmark_value>DAVERAGE function</bookmark_value>    <bookmark_value>averages; in Calc databases</bookmark_value>    <bookmark_value>calculating;averages in Calc databases</bookmark_value>"
+msgstr ""
 
 #. dQciw
 #: 04060101.xhp
@@ -5146,14 +5515,23 @@ msgctxt ""
 msgid "DAVERAGE"
 msgstr "BDMÉDIA"
 
-#. bb43d
+#. Y7wdv
 #: 04060101.xhp
 msgctxt ""
 "04060101.xhp\n"
 "par_id3166453\n"
 "help.text"
-msgid "<ahelp hid=\"HID_FUNC_DBMITTELWERT\">DAVERAGE returns the average of the values of all cells (fields) in all rows (database records) that match the specified search criteria.</ahelp>"
-msgstr "<ahelp hid=\"HID_FUNC_DBMITTELWERT\">BDMÉDIA retorna a média dos valores de todas as células (campos) em todas as linhas (registros de banco de dados) que correspondam aos critérios de pesquisa especificados.</ahelp>"
+msgid "<ahelp hid=\"HID_FUNC_DBMITTELWERT\">DAVERAGE calculates the average of the numeric values in the cells (fields) of the specified column, for all rows (database records) that match the specified search criteria.</ahelp>  Non-numeric values in those cells are ignored."
+msgstr ""
+
+#. 87qxe
+#: 04060101.xhp
+msgctxt ""
+"04060101.xhp\n"
+"par_id31615978739452\n"
+"help.text"
+msgid "Returns a #DIV/0! error if no records match the specified search criteria, or if there are no numeric values in the cells of the specified column for the matching records."
+msgstr ""
 
 #. PPkBD
 #: 04060101.xhp
@@ -5164,41 +5542,32 @@ msgctxt ""
 msgid "DAVERAGE(Database; DatabaseField; SearchCriteria)"
 msgstr "BDMÉDIA(BancoDeDados; CampoDoBancoDeDados; CritérioDePesquisa)"
 
-#. x8oHK
+#. PcjTP
 #: 04060101.xhp
 msgctxt ""
 "04060101.xhp\n"
 "par_id3149104\n"
 "help.text"
-msgid "To find the average weight of all children of the same age in the above example (scroll up, please), enter the following formula in B16:"
-msgstr "Para descobrir o peso médio de todas as crianças da mesma idade no exemplo acima (role para cima), insira a seguinte fórmula na célula B16:"
+msgid "The example database table giving information about the guests invited to Joe’s birthday party (described above) should occupy cells A1:E10. The content of cells A12:E12 should be identical to the header labels for the database table in cells A1:E1. Make sure that cells A13:E13 are blank, except for cell D13 which should contain \">0\" (this search criterion is intended to match all records in the database table)."
+msgstr ""
 
-#. 4SN7D
+#. CjTGB
 #: 04060101.xhp
 msgctxt ""
 "04060101.xhp\n"
-"par_id3153688\n"
+"par_id201616368312277\n"
 "help.text"
-msgid "<item type=\"input\">=DAVERAGE(A1:E10;\"Weight\";A13:E14)</item>"
-msgstr "<item type=\"input\">=BDMÉDIA(A1:E10;\"Peso\";A13:E14)</item>"
+msgid "Insert the formula <input>=DAVERAGE(A1:E10; \"Distance\"; A12:E13)</input> into an empty cell elsewhere in the sheet to calculate the average distance in meters travelled to school by Joe’s party guests. The value 666.67 is returned."
+msgstr ""
 
-#. ETJh3
-#: 04060101.xhp
-msgctxt ""
-"04060101.xhp\n"
-"par_id3155587\n"
-"help.text"
-msgid "In row 14, under Age, enter <item type=\"input\">7, 8, 9,</item> and so on, one after the other. The average weight of all children of the same age appears."
-msgstr "Na linha 14, em Idade, digite <item type=\"input\">7, 8, 9,</item> sucessivamente. O peso médio de todas as crianças de mesma idade aparece."
-
-#. brDoK
+#. B6fYC
 #: 04060101.xhp
 msgctxt ""
 "04060101.xhp\n"
 "bm_id3159269\n"
 "help.text"
-msgid "<bookmark_value>DPRODUCT function</bookmark_value>         <bookmark_value>multiplying;cell contents in Calc databases</bookmark_value>"
-msgstr "<bookmark_value>função BDMULTIPL</bookmark_value><bookmark_value>multiplicar;conteúdo da célula no banco de dados do Calc</bookmark_value>"
+msgid "<bookmark_value>DPRODUCT function</bookmark_value>    <bookmark_value>multiplying;cell contents in Calc databases</bookmark_value>"
+msgstr ""
 
 #. gvW9Q
 #: 04060101.xhp
@@ -5209,14 +5578,23 @@ msgctxt ""
 msgid "DPRODUCT"
 msgstr "BDMULTIPL"
 
-#. V8GCj
+#. oJApo
 #: 04060101.xhp
 msgctxt ""
 "04060101.xhp\n"
 "par_id3152879\n"
 "help.text"
-msgid "<ahelp hid=\"HID_FUNC_DBPRODUKT\">DPRODUCT multiplies all cells of a data range where the cell contents match the search criteria.</ahelp>"
-msgstr "<ahelp hid=\"HID_FUNC_DBPRODUKT\">BDMULTIPL multiplica todas as células de um intervalo de dados cujo conteúdo corresponda aos critérios de pesquisa.</ahelp>"
+msgid "<ahelp hid=\"HID_FUNC_DBPRODUKT\">DPRODUCT calculates the product of all numeric values in the cells (fields) of the specified column, for all rows (database records) that match the specified search criteria.</ahelp> Blank cells or cells containing non-numeric characters are not included."
+msgstr ""
+
+#. oUsZD
+#: 04060101.xhp
+msgctxt ""
+"04060101.xhp\n"
+"par_id741616180868336\n"
+"help.text"
+msgid "Returns 0 if no matches are found, or if there are no numeric values in the cells of the specified column for the matching records."
+msgstr ""
 
 #. PgAsj
 #: 04060101.xhp
@@ -5227,23 +5605,32 @@ msgctxt ""
 msgid "DPRODUCT(Database; DatabaseField; SearchCriteria)"
 msgstr "BDMULTIPL(BancoDeDados; CampoDoBancoDeDados; CritérioDePesquisa)"
 
-#. jcTBE
+#. oGQtm
 #: 04060101.xhp
 msgctxt ""
 "04060101.xhp\n"
 "par_id3148986\n"
 "help.text"
-msgid "With the birthday party example above (scroll up, please), there is no meaningful application of this function."
-msgstr "Com o exemplo da festa de aniversário acima (role para cima), não há nenhuma aplicação importante dessa função."
+msgid "The example database table giving information about the guests invited to Joe’s birthday party (described above) should occupy cells A1:E10. The content of cells A12:E12 should be identical to the header labels for the database table in cells A1:E1. Make sure that cells A13:E13 are blank, except for cell C13 which should contain \">0\" (this search criterion is intended to match all records in the database table)."
+msgstr ""
 
-#. 3oyGS
+#. iaoUA
+#: 04060101.xhp
+msgctxt ""
+"04060101.xhp\n"
+"par_id91616368981807\n"
+"help.text"
+msgid "Insert the formula <input>=DPRODUCT(A1:E10; \"Age\"; A12:E13)</input> into an empty cell elsewhere in the sheet to calculate the product of the ages in years of Joe’s party guests. The value 279417600 is returned."
+msgstr ""
+
+#. QGMit
 #: 04060101.xhp
 msgctxt ""
 "04060101.xhp\n"
 "bm_id3148462\n"
 "help.text"
-msgid "<bookmark_value>DSTDEV function</bookmark_value>         <bookmark_value>standard deviations in databases;based on a sample</bookmark_value>"
-msgstr "<bookmark_value>função BDEST</bookmark_value><bookmark_value>desvio padrão em bancos de dados;baseado em uma amostra</bookmark_value>"
+msgid "<bookmark_value>DSTDEV function</bookmark_value>    <bookmark_value>standard deviations in databases;based on a sample</bookmark_value>"
+msgstr ""
 
 #. EvGNP
 #: 04060101.xhp
@@ -5254,14 +5641,32 @@ msgctxt ""
 msgid "DSTDEV"
 msgstr "BDEST"
 
-#. mcwAC
+#. 56CsG
 #: 04060101.xhp
 msgctxt ""
 "04060101.xhp\n"
 "par_id3154605\n"
 "help.text"
-msgid "<ahelp hid=\"HID_FUNC_DBSTDABW\">DSTDEV calculates the standard deviation of a population based on a sample, using the numbers in a database column that match the given conditions.</ahelp> The records are treated as a sample of data. That means that the children in the example represent a cross section of all children. Note that a representative result can not be obtained from a sample of less than one thousand."
-msgstr "<ahelp hid=\"HID_FUNC_DBSTDABW\">BDEST calcula o desvio padrão de uma população com base em uma amostra, utilizando os números de uma coluna de banco de dados que correspondam às condições especificadas.</ahelp> Os registros são tratados como uma amostra de dados. Isso significa que as crianças do exemplo representam uma parte de todas as crianças. Note que um resultado representativo não pode ser obtido de uma amostra com menos de mil registros."
+msgid "<ahelp hid=\"HID_FUNC_DBSTDABW\">DSTDEV calculates the sample standard deviation based on the numeric values in the cells (fields) of the specified column, for all rows (database records) that match the specified search criteria.</ahelp> Non-numeric values are ignored."
+msgstr ""
+
+#. RACag
+#: 04060101.xhp
+msgctxt ""
+"04060101.xhp\n"
+"par_id121616181037440\n"
+"help.text"
+msgid "Returns a #NUM! error if exactly one record matches the specified search criteria, or if there is only one numeric value in the cells of the specified column for the matching records."
+msgstr ""
+
+#. r6onB
+#: 04060101.xhp
+msgctxt ""
+"04060101.xhp\n"
+"par_id931616181041535\n"
+"help.text"
+msgid "Returns 0 if no matches are found, or if there are no numeric values in the cells of the specified column for the matching records."
+msgstr ""
 
 #. GgdKD
 #: 04060101.xhp
@@ -5272,41 +5677,32 @@ msgctxt ""
 msgid "DSTDEV(Database; DatabaseField; SearchCriteria)"
 msgstr "BDEST(BancoDeDados; CampoDoBancoDeDados; CritérioDePesquisa)"
 
-#. CwkrB
+#. q4kzs
 #: 04060101.xhp
 msgctxt ""
 "04060101.xhp\n"
 "par_id3149934\n"
 "help.text"
-msgid "To find the standard deviation of the weight for all children of the same age in the example (scroll up, please), enter the following formula in B16:"
-msgstr "Para descobrir o desvio padrão dos pesos de todas as crianças da mesma idade no exemplo (role para cima), insira a seguinte fórmula na célula B16:"
+msgid "The example database table giving information about the guests invited to Joe’s birthday party (described above) should occupy cells A1:E10. The content of cells A12:E12 should be identical to the header labels for the database table in cells A1:E1. Make sure that cells A13:D13 are blank and that cell E13 contains \">0\" (this search criterion is intended to match all records in the database table)."
+msgstr ""
 
-#. 2fFkp
+#. SXqfH
 #: 04060101.xhp
 msgctxt ""
 "04060101.xhp\n"
 "par_id3150630\n"
 "help.text"
-msgid "<item type=\"input\">=DSTDEV(A1:E10;\"Weight\";A13:E14)</item>"
-msgstr "<item type=\"input\">=BDEST(A1:E10;\"Peso\";A13:E14)</item>"
+msgid "Insert the formula <input>=DSTDEV(A1:E10; \"Weight\"; A12:E13)</input> into an empty cell elsewhere in the sheet to calculate the sample standard deviation of the weights in kg of Joe’s party guests. The value 5.5 is returned."
+msgstr ""
 
-#. cApCx
-#: 04060101.xhp
-msgctxt ""
-"04060101.xhp\n"
-"par_id3153536\n"
-"help.text"
-msgid "In row 14, under Age, enter <item type=\"input\">7, 8, 9,</item> and so on, one after the other. The result shown is the standard deviation of the weight of all children of this age."
-msgstr "Na linha 14, em Idade, digite <item type=\"input\">7, 8, 9,</item> sucessivamente. O resultado mostrado é o desvio padrão do peso de todas as crianças dessa idade."
-
-#. hkC4r
+#. A72yR
 #: 04060101.xhp
 msgctxt ""
 "04060101.xhp\n"
 "bm_id3150429\n"
 "help.text"
-msgid "<bookmark_value>DSTDEVP function</bookmark_value>         <bookmark_value>standard deviations in databases;based on populations</bookmark_value>"
-msgstr "<bookmark_value>função BDDESVPA</bookmark_value><bookmark_value>desvios padrão em bancos de dados;baseado em populações </bookmark_value>"
+msgid "<bookmark_value>DSTDEVP function</bookmark_value>    <bookmark_value>standard deviations in databases;based on populations</bookmark_value>"
+msgstr ""
 
 #. FpESx
 #: 04060101.xhp
@@ -5317,14 +5713,23 @@ msgctxt ""
 msgid "DSTDEVP"
 msgstr "BDDESVPA"
 
-#. DCq49
+#. Cfkn3
 #: 04060101.xhp
 msgctxt ""
 "04060101.xhp\n"
 "par_id3145598\n"
 "help.text"
-msgid "<ahelp hid=\"HID_FUNC_DBSTDABWN\">DSTDEVP calculates the standard deviation of a population based on all cells of a data range which match the search criteria.</ahelp> The records from the example are treated as the whole population."
-msgstr "<ahelp hid=\"HID_FUNC_DBSTDABWN\">BDDESVPA calcula o desvio padrão de uma população com base em todas as células de um intervalo de dados que corresponde aos critérios de pesquisa.</ahelp> Os registros do exemplo são tratados como a população inteira."
+msgid "<ahelp hid=\"HID_FUNC_DBSTDABWN\">DSTDEVP calculates the population standard deviation based on the numeric values in the cells (fields) of the specified column, for all rows (database records) that match the specified search criteria.</ahelp> Non-numeric values are ignored."
+msgstr ""
+
+#. TjThw
+#: 04060101.xhp
+msgctxt ""
+"04060101.xhp\n"
+"par_id541616181205698\n"
+"help.text"
+msgid "Returns a #NUM! error if no records match the specified search criteria, or if there are no numeric values in the cells of the specified column for the matching records."
+msgstr ""
 
 #. uGaWp
 #: 04060101.xhp
@@ -5335,41 +5740,32 @@ msgctxt ""
 msgid "DSTDEVP(Database; DatabaseField; SearchCriteria)"
 msgstr "BDDESVPA(BancoDeDados; CampoDoBancoDeDados; CritérioDePesquisa)"
 
-#. GAj3B
+#. jm7Bx
 #: 04060101.xhp
 msgctxt ""
 "04060101.xhp\n"
 "par_id3155431\n"
 "help.text"
-msgid "To find the standard deviation of the weight for all children of the same age at Joe's birthday party (scroll up, please), enter the following formula in B16:"
-msgstr "Para descobrir o desvio padrão do peso de todas as crianças da mesma idade na festa de aniversário do Joe (role para cima), insira a seguinte fórmula na célula B16:"
+msgid "The example database table giving information about the guests invited to Joe’s birthday party (described above) should occupy cells A1:E10. The content of cells A12:E12 should be identical to the header labels for the database table in cells A1:E1. Make sure that cells A13:D13 are blank and that cell E13 contains \">0\" (this search criterion is intended to match all records in the database table)."
+msgstr ""
 
-#. J4DhB
+#. 6eisL
 #: 04060101.xhp
 msgctxt ""
 "04060101.xhp\n"
 "par_id3148411\n"
 "help.text"
-msgid "<item type=\"input\">=DSTDEVP(A1:E10;\"Weight\";A13:E14)</item>"
-msgstr "<item type=\"input\">=BDDESVPA(A1:E10;\"Peso\";A13:E14)</item>"
+msgid "Insert the formula <input>=DSTDEVP(A1:E10; \"Weight\"; A12:E13)</input> into an empty cell elsewhere in the sheet to calculate the population standard deviation of the weights in kg of Joe’s party guests. The value 5.18545 is returned."
+msgstr ""
 
-#. gBZGK
-#: 04060101.xhp
-msgctxt ""
-"04060101.xhp\n"
-"par_id3143271\n"
-"help.text"
-msgid "In row 14, under Age, enter <item type=\"input\">7, 8, 9,</item> and so on, one after the other. The result is the standard deviation of the weight for all same-aged children whose weight was checked."
-msgstr "Na linha 14, sob Idade, entre <item type=\"input\">7,8,9</item> e assim por diante, um após o outro. O resultado é o desvio padrão do peso para todas as crianças de mesma idade, cujo peso foi conferido."
-
-#. fA3Lj
+#. gXoTJ
 #: 04060101.xhp
 msgctxt ""
 "04060101.xhp\n"
 "bm_id3154794\n"
 "help.text"
-msgid "<bookmark_value>DSUM function</bookmark_value>         <bookmark_value>calculating;sums in Calc databases</bookmark_value>         <bookmark_value>sums;cells in Calc databases</bookmark_value>"
-msgstr "<bookmark_value>função BDSOMA</bookmark_value><bookmark_value>calcular; somas no banco de dados do Calc</bookmark_value><bookmark_value>somas;células no banco de dados do Calc</bookmark_value>"
+msgid "<bookmark_value>DSUM function</bookmark_value>    <bookmark_value>calculating;sums in Calc databases</bookmark_value>    <bookmark_value>sums;cells in Calc databases</bookmark_value>"
+msgstr ""
 
 #. ybMg9
 #: 04060101.xhp
@@ -5380,14 +5776,23 @@ msgctxt ""
 msgid "DSUM"
 msgstr "BDSOMA"
 
-#. CBcVo
+#. pqV9N
 #: 04060101.xhp
 msgctxt ""
 "04060101.xhp\n"
 "par_id3149591\n"
 "help.text"
-msgid "<ahelp hid=\"HID_FUNC_DBSUMME\">DSUM returns the total of all cells in a database field in all rows (records) that match the specified search criteria.</ahelp>"
-msgstr "<ahelp hid=\"HID_FUNC_DBSUMME\">BDSOMA retorna o total de todas as células em todas as linhas (registros) de um campo do banco de dados que correspondam aos critérios de pesquisa especificados.</ahelp>"
+msgid "<ahelp hid=\"HID_FUNC_DBSUMME\">DSUM calculates the sum of all numeric values in the cells (fields) of the specified column, for all rows (database records) that match the specified search criteria.</ahelp> Blank cells or cells containing non-numeric characters are not included."
+msgstr ""
+
+#. PEAvG
+#: 04060101.xhp
+msgctxt ""
+"04060101.xhp\n"
+"par_id691616181332088\n"
+"help.text"
+msgid "Returns 0 if no matches are found, or if there are no numeric values in the cells of the specified column for the matching records."
+msgstr ""
 
 #. LD8jB
 #: 04060101.xhp
@@ -5398,41 +5803,32 @@ msgctxt ""
 msgid "DSUM(Database; DatabaseField; SearchCriteria)"
 msgstr "BDSOMA(BancoDeDados; CampoDoBancoDeDados; CritérioDePesquisa)"
 
-#. eqDCU
+#. G9FsG
 #: 04060101.xhp
 msgctxt ""
 "04060101.xhp\n"
 "par_id3152766\n"
 "help.text"
-msgid "To find the length of the combined distance to school of all children at Joe's birthday party (scroll up, please) who are in second grade, enter the following formula in B16:"
-msgstr "Para descobrir a soma das distâncias até a escola de todas as crianças da festa de aniversário do Joe (role para cima) que estão na segunda série, insira a seguinte fórmula na célula B16:"
+msgid "The example database table giving information about the guests invited to Joe’s birthday party (described above) should occupy cells A1:E10. The content of cells A12:E12 should be identical to the header labels for the database table in cells A1:E1. Make sure that cells A13:E13 are blank, except for cell D13 which should contain \">0\" (this search criterion is intended to match all records in the database table)."
+msgstr ""
 
-#. ErLuv
+#. riVB4
 #: 04060101.xhp
 msgctxt ""
 "04060101.xhp\n"
 "par_id3151312\n"
 "help.text"
-msgid "<item type=\"input\">=DSUM(A1:E10;\"Distance to School\";A13:E14)</item>"
-msgstr "<item type=\"input\">=BDSOMA(A1:E10;\"Distância até a Escola\";A13:E14)</item>"
+msgid "Insert the formula <input>=DSUM(A1:E10; \"Distance\"; A12:E13)</input> into an empty cell elsewhere in the sheet to find the total distance in meters that all of Joe’s party guests travel to school. The value 6000 is returned."
+msgstr ""
 
-#. z7LF6
-#: 04060101.xhp
-msgctxt ""
-"04060101.xhp\n"
-"par_id3150596\n"
-"help.text"
-msgid "Enter <item type=\"input\">2</item> in row 14 under Grade. The sum (1950) of the distances to school of all the children who are in second grade is displayed."
-msgstr "Digite <item type=\"input\">2</item> na linha 14 em Série. A soma (1950) das distâncias da escola para todos os alunos que estão na segunda série será exibida."
-
-#. ZFAu8
+#. fbsJf
 #: 04060101.xhp
 msgctxt ""
 "04060101.xhp\n"
 "bm_id3155614\n"
 "help.text"
-msgid "<bookmark_value>DVAR function</bookmark_value>         <bookmark_value>variances;based on samples</bookmark_value>"
-msgstr "<bookmark_value>função BDVAREST</bookmark_value><bookmark_value>variâncias;baseada em amostras</bookmark_value>"
+msgid "<bookmark_value>DVAR function</bookmark_value>    <bookmark_value>variances;based on samples</bookmark_value>"
+msgstr ""
 
 #. G6ZBW
 #: 04060101.xhp
@@ -5443,14 +5839,32 @@ msgctxt ""
 msgid "DVAR"
 msgstr "BDVAREST"
 
-#. qPBM4
+#. QN7LU
 #: 04060101.xhp
 msgctxt ""
 "04060101.xhp\n"
 "par_id3154418\n"
 "help.text"
-msgid "<ahelp hid=\"HID_FUNC_DBVARIANZ\">DVAR returns the variance of all cells of a database field in all records that match the specified search criteria.</ahelp> The records from the example are treated as a sample of data. A representative result cannot be obtained from a sample population of less than one thousand."
-msgstr "<ahelp hid=\"HID_FUNC_DBVARIANZ\">BDVAREST retorna a variância de todas as células de um banco de dados para todos os registros que correspondam aos critérios de pesquisa especificados.</ahelp> Os registros do exemplo são tratados como uma amostra de dados. Um resultado representativo não pode ser obtido de uma amostra de população com menos de mil registros."
+msgid "<ahelp hid=\"HID_FUNC_DBVARIANZ\">DVAR calculates the sample variance based on the numeric values in the cells (fields) of the specified column, for all rows (database records) that match the specified search criteria.</ahelp> Non-numeric values are ignored."
+msgstr ""
+
+#. yytCQ
+#: 04060101.xhp
+msgctxt ""
+"04060101.xhp\n"
+"par_id301616181465164\n"
+"help.text"
+msgid "Returns a #NUM! error if exactly one record matches the specified search criteria, or if there is only one numeric value in the cells of the specified column for the matching records."
+msgstr ""
+
+#. gW4LZ
+#: 04060101.xhp
+msgctxt ""
+"04060101.xhp\n"
+"par_id741616181469136\n"
+"help.text"
+msgid "Returns 0 if no matches are found, or if there are no numeric values in the cells of the specified column for the matching records."
+msgstr ""
 
 #. hLSuf
 #: 04060101.xhp
@@ -5461,41 +5875,32 @@ msgctxt ""
 msgid "DVAR(Database; DatabaseField; SearchCriteria)"
 msgstr "BDVAREST(BancoDeDados; CampoDoBancoDeDados; CritérioDePesquisa)"
 
-#. CKayC
+#. TyAAP
 #: 04060101.xhp
 msgctxt ""
 "04060101.xhp\n"
 "par_id3153701\n"
 "help.text"
-msgid "To find the variance of the weight of all children of the same age of the above example (scroll up, please), enter the following formula in B16:"
-msgstr "Para descobrir a variância do peso de todas as crianças da mesma idade no exemplo acima (role para cima), insira a seguinte fórmula na célula B16:"
+msgid "The example database table giving information about the guests invited to Joe’s birthday party (described above) should occupy cells A1:E10. The content of cells A12:E12 should be identical to the header labels for the database table in cells A1:E1. Make sure that cells A13:E13 are blank, except for cell D13 which should contain \">0\" (this search criterion is intended to match all records in the database table)."
+msgstr ""
 
-#. DWkzL
+#. bRDWF
 #: 04060101.xhp
 msgctxt ""
 "04060101.xhp\n"
 "par_id3153676\n"
 "help.text"
-msgid "<item type=\"input\">=DVAR(A1:E10;\"Weight\";A13:E14)</item>"
-msgstr "<item type=\"input\">=BDVAREST(A1:E10;\"Peso\";A13:E14)</item>"
+msgid "Insert the formula <input>=DVAR(A1:E10; \"Distance\"; A12:E13)</input> into an empty cell elsewhere in the sheet to find the sample variance of the distances in meters that Joe’s party guests travel to school. The value 193125 is returned."
+msgstr ""
 
-#. D6bmo
-#: 04060101.xhp
-msgctxt ""
-"04060101.xhp\n"
-"par_id3153798\n"
-"help.text"
-msgid "In row 14, under Age, enter <item type=\"input\">7, 8, 9,</item> and so on, one after the other. You will see as a result the variance of the weight values for all children of this age."
-msgstr "Na linha 14, em Idade, digite <item type=\"input\">7, 8, 9,</item> sucessivamente. Você verá como resultado a variância dos valores de peso de todas as crianças dessa idade."
-
-#. hEbwx
+#. sGiDz
 #: 04060101.xhp
 msgctxt ""
 "04060101.xhp\n"
 "bm_id3153880\n"
 "help.text"
-msgid "<bookmark_value>DVARP function</bookmark_value>         <bookmark_value>variances;based on populations</bookmark_value>"
-msgstr "<bookmark_value>função BDVARP</bookmark_value><bookmark_value>variâncias;baseada em populações</bookmark_value>"
+msgid "<bookmark_value>DVARP function</bookmark_value>    <bookmark_value>variances;based on populations</bookmark_value>"
+msgstr ""
 
 #. XpcPC
 #: 04060101.xhp
@@ -5506,14 +5911,23 @@ msgctxt ""
 msgid "DVARP"
 msgstr "BDVARP"
 
-#. f9qMk
+#. nfgrg
 #: 04060101.xhp
 msgctxt ""
 "04060101.xhp\n"
 "par_id3155119\n"
 "help.text"
-msgid "<ahelp hid=\"HID_FUNC_DBVARIANZEN\">DVARP calculates the variance of all cell values in a database field in all records that match the specified search criteria.</ahelp> The records are from the example are treated as an entire population."
-msgstr "<ahelp hid=\"HID_FUNC_DBVARIANZEN\">BDVARP calcula a variância de todos os valores das células em todos os registros de um banco de dados que correspondam aos critérios de pesquisa especificados.</ahelp> Os registros do exemplo são tratados como uma população inteira."
+msgid "<ahelp hid=\"HID_FUNC_DBVARIANZEN\">DVARP calculates the population variation based on the numeric values in the cells (fields) of the specified column, for all rows (database records) that match the specified search criteria.</ahelp> Non-numeric values are ignored."
+msgstr ""
+
+#. ERRmG
+#: 04060101.xhp
+msgctxt ""
+"04060101.xhp\n"
+"par_id301616181648263\n"
+"help.text"
+msgid "Returns a #NUM! error if no records match the specified search criteria, or if there are no numeric values in the cells of the specified column for the matching records."
+msgstr ""
 
 #. BygUf
 #: 04060101.xhp
@@ -5524,32 +5938,23 @@ msgctxt ""
 msgid "DVARP(Database; DatabaseField; SearchCriteria)"
 msgstr "BDVARP(BancoDeDados; CampoDoBancoDeDados; CritérioDePesquisa)"
 
-#. MvqGc
+#. STcMa
 #: 04060101.xhp
 msgctxt ""
 "04060101.xhp\n"
 "par_id3147099\n"
 "help.text"
-msgid "To find the variance of the weight for all children of the same age at Joe's birthday party (scroll up, please), enter the following formula in B16:"
-msgstr "Para descobrir a diferença de peso de todas as crianças da mesma idade na festa de aniversário do João (role para cima), insira a seguinte fórmula na célula B16:"
+msgid "The example database table giving information about the guests invited to Joe’s birthday party (described above) should occupy cells A1:E10. The content of cells A12:E12 should be identical to the header labels for the database table in cells A1:E1. Make sure that cells A13:E13 are blank, except for cell D13 which should contain \">0\" (this search criterion is intended to match all records in the database table)."
+msgstr ""
 
-#. zGf8r
+#. 8puR2
 #: 04060101.xhp
 msgctxt ""
 "04060101.xhp\n"
 "par_id3147322\n"
 "help.text"
-msgid "<item type=\"input\">=DVARP(A1:E10;\"Weight\";A13:E14)</item>"
-msgstr "<item type=\"input\">=BDVARP(A1:E10;\"Peso\";A13:E14)</item>"
-
-#. vAunu
-#: 04060101.xhp
-msgctxt ""
-"04060101.xhp\n"
-"par_id3146902\n"
-"help.text"
-msgid "In row 14, under Age, enter <item type=\"input\">7, 8, 9,</item> and so on, one after the other. The variance of the weight values for all children of this age attending Joe's birthday party appears."
-msgstr "Na linha 14, sob Idade, digite <item type=\"input\">7, 8, 9,</item> e assim por diante, um após outro. A diferença do valor do peso para todas as crianças dessa idade presentes à festa de aniversário do Joe aparece."
+msgid "Insert the formula <input>=DVARP(A1:E10; \"Distance\"; A12:E13)</input> into an empty cell elsewhere in the sheet to find the population variance of the distances in meters that Joe’s party guests travel to school. The value 171666.67 is returned."
+msgstr ""
 
 #. n99gx
 #: 04060102.xhp
@@ -5910,6 +6315,15 @@ msgctxt ""
 "help.text"
 msgid "<input>=AMORDEGRC(2000; \"2020-02-01\"; \"2020-12-31\"; 10; 4; 0.1; 0)</input> returns a depreciation amount of 163 currency units."
 msgstr "<input>=AMORDEGRC(2000; \"2020-02-01\"; \"2020-12-31\"; 10; 4; 0,1; 0)</input> retorna um valor de depreciação de 163 unidades monetárias."
+
+#. AvpDv
+#: 04060103.xhp
+msgctxt ""
+"04060103.xhp\n"
+"par_id851616615176815\n"
+"help.text"
+msgid "Beware that Basis 2 is not supported by Microsoft Excel. Hence, if you use Basis 2 and export your document to XLSX format, it will return an error when opened in Excel."
+msgstr ""
 
 #. UCPgp
 #: 04060103.xhp
@@ -13858,15 +14272,6 @@ msgctxt ""
 msgid "SUM(<embedvar href=\"text/scalc/01/ful_func.xhp#number255_1\" markup=\"keep\"/>)"
 msgstr "SOMA(<embedvar href=\"text/scalc/01/ful_func.xhp#number255_1\" markup=\"keep\"/>)"
 
-#. fsBfG
-#: 04060106.xhp
-msgctxt ""
-"04060106.xhp\n"
-"par_id151567608802604\n"
-"help.text"
-msgid "SUM ignores any text or empty cell within a range or array. If you suspect wrong results of the SUM function, look for text in the data ranges. Use the <link href=\"text/scalc/01/03080000.xhp\" name=\"value highlight\">value highlighting</link> feature to highlight the text contents in the range that may represent a number."
-msgstr "SOMA ignora qualquer texto ou célula vazia dentro de um intervalo ou matriz. Se suspeita de resultados errados na função SOMA, procure por texto nos intervalos de dados. Utilize a funcionalidade <link href=\"text/scalc/01/03080000.xhp\" name=\"value highlight\">destaque de valores</link> para assinalar conteúdo de texto no intervalo que possa representar um número."
-
 #. VRBzD
 #: 04060106.xhp
 msgctxt ""
@@ -19539,7 +19944,6 @@ msgstr "<input>=HIPERLINK(\"http://www.\";\"Clique \") & \"exemplo.org\"</input>
 
 #. DDEtK
 #: 04060109.xhp
-#, fuzzy
 msgctxt ""
 "04060109.xhp\n"
 "par_id8859523\n"
@@ -19549,13 +19953,12 @@ msgstr "<input>=HIPERLINK(\"#Planilha1.A1\";\"Vá para o início\")</input> exib
 
 #. CoMEq
 #: 04060109.xhp
-#, fuzzy
 msgctxt ""
 "04060109.xhp\n"
 "par_id2958769\n"
 "help.text"
 msgid "<input>=HYPERLINK(\"file:///C:/writer.odt#Specification\";\"Go to Writer bookmark\")</input> displays the text \"Go to Writer bookmark\", loads the specified text document and jumps to bookmark \"Specification\"."
-msgstr "<input>=HIPERLINK(\"file:///C:/writer.odt#Specification\";\"Ir para indicador do Writer\")</input> exibe o texto Ir para indicador do Writer, carrega o documento de texto especificado e vai até o indicador \"Especificacao\"."
+msgstr "<input>=HIPERLINK(\"file:///C:/writer.odt#Especificacao\";\"Ir para marca-página do Writer\")</input> exibe o texto \"Ir para marca-página do Writer\", carrega o documento de texto especificado e salta até o marca-página \"Especificacao\"."
 
 #. Ky2xV
 #: 04060109.xhp
@@ -45731,13 +46134,12 @@ msgstr "<ahelp hid=\"SFX2_HID_TEMPLATE_FMT\">Exibe a lista de estilos da categor
 
 #. YBufY
 #: 05100000.xhp
-#, fuzzy
 msgctxt ""
 "05100000.xhp\n"
 "par_idN109D1\n"
 "help.text"
 msgid "In the <link href=\"text/shared/00/00000005.xhp#contextmenu\" name=\"context menu\">context menu</link> you can choose commands to create a new style, delete a user-defined style, or change the selected style."
-msgstr "No <link href=\"text/shared/00/00000005.xhp#contextmenu\" name=\"context menu\">menu de contexto</link>, você pode escolher comandos para criar um novo estilo, excluir um estilo definido pelo usuário ou alterar o estilo selecionado."
+msgstr "No <link href=\"text/shared/00/00000005.xhp#contextmenu\" name=\"context menu\">menu de contexto</link>, você pode escolher comandos para criar um estilo, excluir um estilo definido pelo usuário ou alterar o estilo selecionado."
 
 #. zdEoY
 #: 05100000.xhp
@@ -53460,6 +53862,15 @@ msgctxt ""
 "help.text"
 msgid "Example"
 msgstr "Exemplo"
+
+#. STMGF
+#: common_func.xhp
+msgctxt ""
+"common_func.xhp\n"
+"par_id301616845402409\n"
+"help.text"
+msgid "This function ignores any text or empty cell within a data range. If you suspect wrong results from this function, look for text in the data ranges. To highlight text contents in a data range, use the <link href=\"text/scalc/01/03080000.xhp\" name=\"value highlight\">value highlighting</link> feature."
+msgstr ""
 
 #. GAPGX
 #: common_func_workdaysintl.xhp
@@ -63278,7 +63689,7 @@ msgctxt ""
 "par_id441556229012536\n"
 "help.text"
 msgid "<input>=TEXTJOIN(\" \"; 1; \"Here\"; \"comes\"; \"the\"; \"sun\")</input> returns \"Here comes the sun\" with space character as delimiter and empty strings are ignored."
-msgstr ""
+msgstr "<input>=UNITEXTO(\" \",1, \"Vovô\", \"viu\", \"a\", \"uva\")</input> retorna \"Vovô viu a uva\" com o caractere espaço de delimitador e os textos vazios são ignorados."
 
 #. 39FPP
 #: func_textjoin.xhp
@@ -63287,7 +63698,7 @@ msgctxt ""
 "par_id441556239012536\n"
 "help.text"
 msgid "if A1:B2 contains \"Here\", \"comes\", \"the\", \"sun\" respectively, <input>=TEXTJOIN(\"-\";1;A1:B2)</input> returns \"Here-comes-the-sun\" with dash character as delimiter and empty strings are ignored."
-msgstr ""
+msgstr "Se A1:B2 contém \"Vovô\", \"viu\", \"a\", \"uva\" respectivamente, <input>=UNIRTEXTO(\"-\",1,A1:B2)</input> retorna \"Vovô-viu-a-uva\" com hífen como delimitador e texto vazios são ignorados."
 
 #. AXCJg
 #: func_textjoin.xhp
