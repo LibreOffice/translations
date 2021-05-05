@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2021-04-27 17:02+0200\n"
-"PO-Revision-Date: 2021-04-22 09:37+0000\n"
+"POT-Creation-Date: 2021-05-05 17:15+0200\n"
+"PO-Revision-Date: 2021-05-03 02:37+0000\n"
 "Last-Translator: Asier Sarasua Garmendia <asiersar@yahoo.com>\n"
 "Language-Team: Basque <https://translations.documentfoundation.org/projects/libo_help-master/textsbasicshared/eu/>\n"
 "Language: eu\n"
@@ -2185,6 +2185,51 @@ msgctxt ""
 msgid "Once you have declared a variable as a certain type, you cannot declare the variable under the same name again as a different type!"
 msgstr "Aldagai mota deklaratutakoan, ezin duzu izen bera duen beste aldagai mota bat deklaratu!"
 
+#. V5Csc
+#: 01020100.xhp
+msgctxt ""
+"01020100.xhp\n"
+"par_id421619551219763\n"
+"help.text"
+msgid "When you declare multiple variables in a single line of code you need to specify the type of each variable. If the type of a variable is not explicitly specified, then Basic will assume that the variable is of the <emph>Variant</emph> type."
+msgstr ""
+
+#. FzKND
+#: 01020100.xhp
+msgctxt ""
+"01020100.xhp\n"
+"bas_id321619555442706\n"
+"help.text"
+msgid "' Both variables \"a\" and \"b\" are of the Integer type"
+msgstr ""
+
+#. NCE7F
+#: 01020100.xhp
+msgctxt ""
+"01020100.xhp\n"
+"bas_id451619555463988\n"
+"help.text"
+msgid "' Variable \"c\" is a Variant and \"d\" is an Integer"
+msgstr ""
+
+#. fsaNa
+#: 01020100.xhp
+msgctxt ""
+"01020100.xhp\n"
+"bas_id161619555482237\n"
+"help.text"
+msgid "' A variable can also be explicitly declared as a Variant"
+msgstr ""
+
+#. uQD9L
+#: 01020100.xhp
+msgctxt ""
+"01020100.xhp\n"
+"par_id521619551687371\n"
+"help.text"
+msgid "The <emph>Variant</emph> type is a special data type that can store any kind of value. To learn more, refer to the section <link href=\"text/sbasic/shared/01020100.xhp#VariantTypeH2\" name=\"Variant Type\">The Variant type</link> below."
+msgstr ""
+
 #. RENXG
 #: 01020100.xhp
 msgctxt ""
@@ -2535,6 +2580,114 @@ msgctxt ""
 "help.text"
 msgid "dob = #2010-09-28#"
 msgstr "dob = #2010-09-28#"
+
+#. pCPWV
+#: 01020100.xhp
+msgctxt ""
+"01020100.xhp\n"
+"bm_id601619552599885\n"
+"help.text"
+msgid "<bookmark_value>The Variant type</bookmark_value>  <bookmark_value>The Any type</bookmark_value>"
+msgstr ""
+
+#. mPKPe
+#: 01020100.xhp
+msgctxt ""
+"01020100.xhp\n"
+"VariantTypeH2\n"
+"help.text"
+msgid "The Variant type"
+msgstr ""
+
+#. gnP2t
+#: 01020100.xhp
+msgctxt ""
+"01020100.xhp\n"
+"par_id1001619552129323\n"
+"help.text"
+msgid "Variables declared as <emph>Variant</emph> can handle any data type. This means that the actual data type is defined during runtime as a value is assigned to the variable."
+msgstr ""
+
+#. kKQzr
+#: 01020100.xhp
+msgctxt ""
+"01020100.xhp\n"
+"par_id631619552417188\n"
+"help.text"
+msgid "There are three main ways to create a <emph>Variant</emph> variable, as shown below:"
+msgstr ""
+
+#. ZTswL
+#: 01020100.xhp
+msgctxt ""
+"01020100.xhp\n"
+"bas_id751619554900163\n"
+"help.text"
+msgid "Dim varA            ' The type is not specified, hence the variable is a Variant"
+msgstr ""
+
+#. 3mWEB
+#: 01020100.xhp
+msgctxt ""
+"01020100.xhp\n"
+"bas_id181619554965451\n"
+"help.text"
+msgid "Dim varB as Variant ' The variable is explicitly declared as a Variant"
+msgstr ""
+
+#. vEpTz
+#: 01020100.xhp
+msgctxt ""
+"01020100.xhp\n"
+"bas_id371619554853094\n"
+"help.text"
+msgid "varC = \"abc\"        ' Previously undeclared variables are treated as Variants"
+msgstr ""
+
+#. PDFED
+#: 01020100.xhp
+msgctxt ""
+"01020100.xhp\n"
+"par_id631619552417343\n"
+"help.text"
+msgid "The example below uses the <link href=\"text/sbasic/shared/03103600.xhp\" name=\"TypeName function\">TypeName function</link> to show how the type of a <emph>Variant</emph> variable changes upon assignment."
+msgstr ""
+
+#. smtqw
+#: 01020100.xhp
+msgctxt ""
+"01020100.xhp\n"
+"par_id141619553442668\n"
+"help.text"
+msgid "A <emph>Variant</emph> variable is initialized with the <link href=\"text/sbasic/shared/03040000.xhp#objectconstants\" name=\" object constants\">Empty</link> special data type. You can use the <link href=\"text/sbasic/shared/03102400.xhp\" name=\"IsEmpty function\">IsEmpty function</link> to test if a variable is an <emph>Empty Variant</emph>."
+msgstr ""
+
+#. aervF
+#: 01020100.xhp
+msgctxt ""
+"01020100.xhp\n"
+"par_id541619552755706\n"
+"help.text"
+msgid "You can also use the keyword <emph>Any</emph> to declare a variable as a <emph>Variant</emph>. However, <emph>Any</emph> is deprecated and is available for backward compatibility."
+msgstr ""
+
+#. 74VtP
+#: 01020100.xhp
+msgctxt ""
+"01020100.xhp\n"
+"par_id711619622934043\n"
+"help.text"
+msgid "Arguments with type <emph>Variant</emph> or <emph>Any</emph> passed in function calls are not checked for their types."
+msgstr ""
+
+#. qFpUB
+#: 01020100.xhp
+msgctxt ""
+"01020100.xhp\n"
+"bas_id141619552837486\n"
+"help.text"
+msgid "Dim myVar As Any ' Variable \"myVar\" is a Variant"
+msgstr ""
 
 #. kGGKi
 #: 01020100.xhp
@@ -7781,7 +7934,7 @@ msgctxt ""
 "par_id3148983\n"
 "help.text"
 msgid "This section describes the Runtime Functions of %PRODUCTNAME Basic."
-msgstr ""
+msgstr "Atal honek %PRODUCTNAME Basic lengoaiaren exekuzio-garaiko funtzioak deskribatzen ditu."
 
 #. YcBGc
 #: 03010000.xhp
@@ -7873,31 +8026,31 @@ msgctxt ""
 msgid "Displays a dialog box containing a message."
 msgstr "Mezu bat duen elkarrizketa-koadroa bistaratzen du."
 
-#. 6pAvx
+#. rXKix
 #: 03010101.xhp
 msgctxt ""
 "03010101.xhp\n"
 "par_id3148798\n"
 "help.text"
-msgid "<emph>Prompt</emph>: String expression displayed as a message in the dialog box. Line breaks can be inserted with Chr$(13)."
+msgid "<emph>prompt</emph>: String expression displayed as a message in the dialog box. Line breaks can be inserted with Chr$(13)."
 msgstr ""
 
-#. wNFv5
+#. oK5f6
 #: 03010101.xhp
 msgctxt ""
 "03010101.xhp\n"
 "par_id3150769\n"
 "help.text"
-msgid "<emph>Title</emph>: String expression displayed in the title bar of the dialog. If omitted, the title bar displays the name of the respective application."
+msgid "<emph>title</emph>: String expression displayed in the title bar of the dialog. If omitted, the title bar displays the name of the respective application."
 msgstr ""
 
-#. aC93y
+#. HPRQD
 #: 03010101.xhp
 msgctxt ""
 "03010101.xhp\n"
 "par_id3147228\n"
 "help.text"
-msgid "<emph>Buttons</emph>: Any integer expression that specifies the dialog type, as well as the number and type of buttons to display, and the icon type. <emph>Buttons</emph> represents a combination of bit patterns, that is, a combination of elements can be defined by adding their respective values:"
+msgid "<emph>buttons</emph>: Any integer expression that specifies the dialog type, as well as the number and type of buttons to display, and the icon type. <emph>Buttons</emph> represents a combination of bit patterns, that is, a combination of elements can be defined by adding their respective values:"
 msgstr ""
 
 #. xuEUm
@@ -8458,58 +8611,58 @@ msgctxt ""
 msgid "The <emph>InputBox</emph> statement is a convenient method of entering text through a dialog. Confirm the input by clicking OK or pressing Return. The input is returned as the function return value. If you close the dialog with Cancel, <emph>InputBox</emph> returns a zero-length string (\"\")."
 msgstr "<emph>InputBox</emph> instrukzioa testua elkarrizketa-bidez sartzeko metodo egokia da. Sarrera berresteko sakatu Ados edo Itzulera-tekla. Sarrera funtzioaren itzulera-balio gisa itzultzen da. Elkarrizketa-koadroa Utzi botoiaren bidez ixten baduzu, <emph>InputBox</emph> instrukzioak zero luzerako katea (\"\") itzultzen du."
 
-#. G7eXr
+#. fcMCj
 #: 03010201.xhp
 msgctxt ""
 "03010201.xhp\n"
 "par_id3153311\n"
 "help.text"
-msgid "<emph>Prompt</emph>: String expression displayed as the message in the dialog box."
+msgid "<emph>prompt</emph>: String expression displayed as the message in the dialog box."
 msgstr ""
 
-#. 66zGG
+#. kqAw6
 #: 03010201.xhp
 msgctxt ""
 "03010201.xhp\n"
 "par_id3145315\n"
 "help.text"
-msgid "<emph>Title</emph>: String expression displayed in the title bar of the dialog box."
-msgstr "<emph>Titulua</emph>: elkarrizketa-koadroko titulu-barran bistaratzen den kate-adierazpena."
+msgid "<emph>title</emph>: String expression displayed in the title bar of the dialog box."
+msgstr ""
 
-#. b7vFT
+#. 4qoJn
 #: 03010201.xhp
 msgctxt ""
 "03010201.xhp\n"
 "par_id3154307\n"
 "help.text"
-msgid "<emph>Default</emph>: String expression displayed in the text box as default if no other input is given."
-msgstr "<emph>Lehenetsia</emph>: testu-koadroan lehenetsi gisa bistaratzen den kate-adierazpena, beste sarrerarik ematen ez bada."
+msgid "<emph>default</emph>: String expression displayed in the text box as default if no other input is given."
+msgstr ""
 
-#. Cs49h
+#. w5QhP
 #: 03010201.xhp
 msgctxt ""
 "03010201.xhp\n"
 "par_id3147573\n"
 "help.text"
-msgid "<emph>xPosTwips</emph>: Integer expression that specifies the horizontal position of the dialog. The position is an absolute coordinate and does not refer to the window of the office application."
+msgid "<emph>xpostwips</emph>: Integer expression that specifies the horizontal position of the dialog. The position is an absolute coordinate and does not refer to the window of the office application."
 msgstr ""
 
-#. QyymW
+#. CannW
 #: 03010201.xhp
 msgctxt ""
 "03010201.xhp\n"
 "par_id3156024\n"
 "help.text"
-msgid "<emph>yPosTwips</emph>: Integer expression that specifies the vertical position of the dialog. The position is an absolute coordinate and does not refer to the window of the office application."
+msgid "<emph>ypostwips</emph>: Integer expression that specifies the vertical position of the dialog. The position is an absolute coordinate and does not refer to the window of the office application."
 msgstr ""
 
-#. 8pC7C
+#. m6iBC
 #: 03010201.xhp
 msgctxt ""
 "03010201.xhp\n"
 "par_id3153897\n"
 "help.text"
-msgid "If <emph>xPosTwips</emph> and <emph>yPosTwips</emph> are omitted, the dialog is centered on the screen. The position is specified in <link href=\"text/sbasic/shared/00000002.xhp#twips\" name=\"twips\">twips</link>."
+msgid "If <literal>xpostwips</literal> and <literal>yPosTwips</literal> are omitted, the dialog is centered on the screen. The position is specified in <link href=\"text/sbasic/shared/00000002.xhp#twips\" name=\"twips\">twips</link>."
 msgstr ""
 
 #. Mh8Z6
@@ -9331,32 +9484,32 @@ msgctxt ""
 msgid "Parameter:"
 msgstr "Parametroak:"
 
-#. pP9x5
+#. QM73e
 #: 03010305.xhp
 msgctxt ""
 "03010305.xhp\n"
 "par_id3152597\n"
 "help.text"
-msgid "<emph>Red</emph>: Any integer expression that represents the red component (0-255) of the composite color."
-msgstr "<emph>Gorria</emph>: kolore-konposatuaren osagai gorria (0-255) adierazten duen osoko adierazpena."
+msgid "<emph>red</emph>: Any integer expression that represents the red component (0-255) of the composite color."
+msgstr ""
 
-#. pbFvi
+#. H7yGv
 #: 03010305.xhp
 msgctxt ""
 "03010305.xhp\n"
 "par_id3146974\n"
 "help.text"
-msgid "<emph>Green</emph>: Any integer expression that represents the green component (0-255) of the composite color."
-msgstr "<emph>Berdea</emph>: kolore-konposatuaren osagai berdea (0-255) adierazten duen osoko adierazpena."
+msgid "<emph>green</emph>: Any integer expression that represents the green component (0-255) of the composite color."
+msgstr ""
 
-#. XG6FB
+#. t8P2M
 #: 03010305.xhp
 msgctxt ""
 "03010305.xhp\n"
 "par_id3151113\n"
 "help.text"
-msgid "<emph>Blue</emph>: Any integer expression that represents the blue component (0-255) of the composite color."
-msgstr "<emph>Urdina</emph>: kolore-konposatuaren osagai urdina (0-255) adierazten duen osoko adierazpena."
+msgid "<emph>blue</emph>: Any integer expression that represents the blue component (0-255) of the composite color."
+msgstr ""
 
 #. cFpDD
 #: 03010305.xhp
@@ -10328,7 +10481,7 @@ msgctxt ""
 "par_id3155132\n"
 "help.text"
 msgid "Put [#]fileNum, [recordNum|filePos], variable"
-msgstr ""
+msgstr "Put [#]fileNum, [recordNum|filePos], variable"
 
 #. bSFd2
 #: 03020204.xhp
@@ -10337,7 +10490,7 @@ msgctxt ""
 "par_id3146120\n"
 "help.text"
 msgid "<emph>fileNum</emph>: Any integer expression that defines the file that you want to write to."
-msgstr ""
+msgstr "<emph>fileNum</emph>: Idatzi nahi den fitxategia zehazten duen osoko adierazpen oro."
 
 #. AiZUD
 #: 03020204.xhp
@@ -10346,7 +10499,7 @@ msgctxt ""
 "par_id3155411\n"
 "help.text"
 msgid "<emph>recordNum, filePos</emph>: For relative files (random access files), the number of the record that you want to write."
-msgstr ""
+msgstr "<emph>recordNum, filePos</emph>: Fitxategi erlatiboen kasuan (ausazko atzipen-fitxategiak), idatzi nahi den erregistroaren zenbakia."
 
 #. dUyzK
 #: 03020204.xhp
@@ -10364,7 +10517,7 @@ msgctxt ""
 "par_id3153729\n"
 "help.text"
 msgid "<emph>variable</emph>: Name of the variable that you want to write to the file."
-msgstr ""
+msgstr "<emph>variable</emph>: Fitxategian idatziko den aldagaiaren izena."
 
 #. yyf95
 #: 03020204.xhp
@@ -10409,7 +10562,7 @@ msgctxt ""
 "hd_id3147229\n"
 "help.text"
 msgid "<variable id=\"Write_h1\"><link href=\"text/sbasic/shared/03020205.xhp\" name=\"Write# Statement\">Write# Statement</link></variable>"
-msgstr ""
+msgstr "<variable id=\"Write_h1\"><link href=\"text/sbasic/shared/03020205.xhp\" name=\"Write# Statement\">Write# instrukzioa</link></variable>"
 
 #. G4X6k
 #: 03020205.xhp
@@ -10418,7 +10571,7 @@ msgctxt ""
 "par_id3154685\n"
 "help.text"
 msgid "Writes data to a sequential text file with delimiting characters."
-msgstr ""
+msgstr "Datuak karaktere mugatzaileak dituen testu-fitxategi sekuentzial batean idazten ditu."
 
 #. fB8hV
 #: 03020205.xhp
@@ -10427,7 +10580,7 @@ msgctxt ""
 "par_id461596463969009\n"
 "help.text"
 msgid "Use <link href=\"text/sbasic/shared/03010103.xhp\">Print#</link> statement to print data to a sequential text file. Use <link href=\"text/sbasic/shared/03020201.xhp\">Put#</link> statement to write data  to a binary or a random file."
-msgstr ""
+msgstr "Erabili <link href=\"text/sbasic/shared/03010103.xhp\">Print#</link> instrukzioa datuak testu-fitxategi sekuentzial batean inprimatzeko. Erabili <link href=\"text/sbasic/shared/03020201.xhp\">Put#</link> instrukzioa fitxategi bitar batean edo ausazko fitxategi batean datuak idazteko."
 
 #. WxpRu
 #: 03020205.xhp
@@ -10436,7 +10589,7 @@ msgctxt ""
 "par_id971587473488701\n"
 "help.text"
 msgid "<image src=\"media/helpimg/sbasic/Write_statement.svg\" id=\"img_id4156296484514\"><alt id=\"alt_id15152796484514\">Write Statement diagram</alt></image>"
-msgstr ""
+msgstr "<image src=\"media/helpimg/sbasic/Write_statement.svg\" id=\"img_id4156296484514\"><alt id=\"alt_id15152796484514\">Write instrukzioaren diagrama</alt></image>"
 
 #. xEMDC
 #: 03020205.xhp
@@ -10445,7 +10598,7 @@ msgctxt ""
 "par_id3153728\n"
 "help.text"
 msgid "<emph>fileNum</emph>: Any numeric expression that contains the file number that was set by the Open statement for the respective file."
-msgstr ""
+msgstr "<emph>fileNum</emph>: Open instrukzioak dagokion fitxategiarentzat ezarritako fitxategi-zenbakia duen zenbakizko adierazpen oro."
 
 #. TwHF7
 #: 03020205.xhp
@@ -10454,7 +10607,7 @@ msgctxt ""
 "par_id3146120\n"
 "help.text"
 msgid "<emph>expression</emph> list: Variables or expressions that you want to enter in a file, separated by commas."
-msgstr ""
+msgstr "<emph>expression</emph> zerrenda: Fitxategian sartuko diren aldagaiak edo adierazpenak, komaz bereizita."
 
 #. RERPn
 #: 03020205.xhp
@@ -10877,7 +11030,7 @@ msgctxt ""
 "tit\n"
 "help.text"
 msgid "Seek# Statement"
-msgstr ""
+msgstr "Seek# instrukzioa"
 
 #. vLW2K
 #: 03020305.xhp
@@ -10895,7 +11048,7 @@ msgctxt ""
 "hd_id3159413\n"
 "help.text"
 msgid "<link href=\"text/sbasic/shared/03020305.xhp\" name=\"Seek# Statement\">Seek Statement</link>"
-msgstr ""
+msgstr "<link href=\"text/sbasic/shared/03020305.xhp\" name=\"Seek# Statement\">Seek instrukzioa</link>"
 
 #. RBPKW
 #: 03020305.xhp
@@ -10931,7 +11084,7 @@ msgctxt ""
 "par_id971587473488701\n"
 "help.text"
 msgid "<image src=\"media/helpimg/sbasic/Seek_statement.svg\" id=\"img_id4156296484514\"><alt id=\"alt_id15152796484514\">Seek Statement diagram</alt></image>"
-msgstr ""
+msgstr "<image src=\"media/helpimg/sbasic/Seek_statement.svg\" id=\"img_id4156296484514\"><alt id=\"alt_id15152796484514\">Seek instrukzioaren diagrama</alt></image>"
 
 #. PjcAp
 #: 03020305.xhp
@@ -10940,7 +11093,7 @@ msgctxt ""
 "par_id3145273\n"
 "help.text"
 msgid "Seek [#]filePos, {filePos|recordNum}"
-msgstr ""
+msgstr "Seek [#]filePos, {filePos|recordNum}"
 
 #. vwzuK
 #: 03020305.xhp
@@ -10949,7 +11102,7 @@ msgctxt ""
 "hd_id3153379\n"
 "help.text"
 msgid "Parameters:"
-msgstr ""
+msgstr "Parametroak:"
 
 #. x86KJ
 #: 03020305.xhp
@@ -10958,7 +11111,7 @@ msgctxt ""
 "par_id3153952\n"
 "help.text"
 msgid "<emph>fileNum</emph>: The data channel number used in the Open statement."
-msgstr ""
+msgstr "<emph>fileNum</emph>: Open instrukzioan erabilitako data-kanalaren zenbakia."
 
 #. FrYvd
 #: 03020305.xhp
@@ -10967,7 +11120,7 @@ msgctxt ""
 "par_id3145366\n"
 "help.text"
 msgid "<emph>filePos, recordNum</emph>: Position for the next writing or reading. Position can be a number between 1 and 2,147,483,647. According to the file type, the position indicates the number of the record (files in the Random mode) or the byte position (files in the Binary, Output, Append or Input mode). The first byte in a file is position 1, the second byte is position 2, and so on."
-msgstr ""
+msgstr "<emph>filePos, recordNum</emph>: Hurrengo idazketa edo irakurketaren kokagunea. Kokagune hori 1 eta 2,147,483,647 bitarteko zenbaki bat izan daiteke. Fitxategi motaren arabera, kokaguneak erregistroaren zenbakia (ausazko moduko fitxategiak) edo byte-kokalekua (bitarra, irteera, erantsi edo sarrera moduko fitxategiak) adierazten du. Fitxategiko lehen bytearen kokagunea 1 da, bigarren bytearena 2, eta horrela hurrenez hurren."
 
 #. 5LDFE
 #: 03020305.xhp
@@ -10976,7 +11129,7 @@ msgctxt ""
 "par_id491596468328575\n"
 "help.text"
 msgid "<link href=\"text/sbasic/shared/03020304.xhp\" name=\"Seek\">Seek</link> function"
-msgstr ""
+msgstr "<link href=\"text/sbasic/shared/03020304.xhp\" name=\"Seek\">Seek</link> funtzioa"
 
 #. Nwouh
 #: 03020400.xhp
@@ -10994,7 +11147,7 @@ msgctxt ""
 "hd_id3145136\n"
 "help.text"
 msgid "<link href=\"text/sbasic/shared/03020400.xhp\" name=\"Managing Files\">Managing Files</link>"
-msgstr "<link href=\"text/sbasic/shared/03020400.xhp\" name=\"Fitxategiak kudeatzea\">Fitxategiak kudeatzea</link>"
+msgstr "<link href=\"text/sbasic/shared/03020400.xhp\" name=\"Managing Files\">Fitxategiak kudeatzea</link>"
 
 #. E5FsL
 #: 03020400.xhp
@@ -11174,7 +11327,7 @@ msgctxt ""
 "hd_id3153126\n"
 "help.text"
 msgid "<variable id=\"CurDir_h1\"><link href=\"text/sbasic/shared/03020403.xhp\">CurDir Function</link></variable>"
-msgstr ""
+msgstr "<variable id=\"CurDir_h1\"><link href=\"text/sbasic/shared/03020403.xhp\">CurDir funtzioa</link></variable>"
 
 #. e8mAC
 #: 03020403.xhp
@@ -11183,7 +11336,7 @@ msgctxt ""
 "par_id3156343\n"
 "help.text"
 msgid "Returns a variant string that represents the current path <switchinline select=\"sys\"><caseinline select=\"WIN\">or that of the specified Windows drive</caseinline></switchinline>."
-msgstr ""
+msgstr "Uneko bide-izena <switchinline select=\"sys\"><caseinline select=\"WIN\">edo zehaztutako Windows unitatearena</caseinline></switchinline>  adierazten duen aldaera-katea itzultzen du."
 
 #. 3ABqD
 #: 03020403.xhp
@@ -11210,7 +11363,7 @@ msgctxt ""
 "par_id3153193\n"
 "help.text"
 msgid "<emph>Text:</emph> Any string expression that specifies an existing drive, for example \"C\" for the first partition of the first hard drive. This parameter is used solely under Windows."
-msgstr ""
+msgstr "<emph>Testua:</emph> Lehendik dagoen unitatea zehazten duen edozein kate-adierazpen, adibidez, \"C\" lehen disko gogorreko lehen partizioarentzat. Parametro hau Windowsen soilik erabiltzen da."
 
 #. f7Di8
 #: 03020403.xhp
@@ -11219,7 +11372,7 @@ msgctxt ""
 "par_id3155133\n"
 "help.text"
 msgid "If no drive is specified or if the drive is a zero-length string (\"\"), <literal>CurDir</literal> returns the path for the current drive. %PRODUCTNAME Basic reports an error if the syntax of the drive description is incorrect or if the drive does not exist."
-msgstr ""
+msgstr "Unitaterik zehazten ez bada edo unitatea zero karaktereko katea (\"\") baldin bada, <literal>CurDir</literal> funtzioak uneko unitatearen bide-izena itzuliko du. %PRODUCTNAME Basic-ek errorearen berri emango du unitate-deskribapenaren sintaxia ez bada zuzena edo unitatea lehendik ez badago."
 
 #. jsyuK
 #: 03020403.xhp
@@ -13075,68 +13228,32 @@ msgctxt ""
 msgid "Returns a date value from a date string. The date string is a complete date in a single numeric value. You can also use this serial number to determine the difference between two dates."
 msgstr "Data-balioa itzultzen du data-katetik. Data-katea zenbakizko balio bakarrean ematen den data osoa da. Serie-zenbaki hori bi dataren arteko diferentzia zehazteko ere erabil dezakezu."
 
-#. QJz7y
-#: 03030102.xhp
-msgctxt ""
-"03030102.xhp\n"
-"hd_id3148799\n"
-"help.text"
-msgid "Syntax:"
-msgstr "Sintaxia:"
-
-#. 3FsEa
+#. PxEGo
 #: 03030102.xhp
 msgctxt ""
 "03030102.xhp\n"
 "par_id3154910\n"
 "help.text"
-msgid "DateValue [(date)]"
-msgstr "DateValue [(data)]"
+msgid "DateValue(date)"
+msgstr ""
 
-#. B7CrF
-#: 03030102.xhp
-msgctxt ""
-"03030102.xhp\n"
-"hd_id3150870\n"
-"help.text"
-msgid "Return value:"
-msgstr "Itzulera-balioa:"
-
-#. 4G37B
-#: 03030102.xhp
-msgctxt ""
-"03030102.xhp\n"
-"par_id3153194\n"
-"help.text"
-msgid "Date"
-msgstr "Data"
-
-#. NHYd9
-#: 03030102.xhp
-msgctxt ""
-"03030102.xhp\n"
-"hd_id3153969\n"
-"help.text"
-msgid "Parameters:"
-msgstr "Parametroak:"
-
-#. ghsyA
+#. vxxyq
 #: 03030102.xhp
 msgctxt ""
 "03030102.xhp\n"
 "par_id3153770\n"
 "help.text"
-msgid "<emph>Date:</emph> String expression that contains the date that you want to calculate. In contrast to the DateSerial function that passes years, months and days as separate numeric values, the DateValue function requests the date string to be according to either one of the date acceptance patterns defined for your locale setting (see <switchinline select=\"sys\"><caseinline select=\"MAC\"><menuitem>%PRODUCTNAME - Preferences</menuitem></caseinline><defaultinline><menuitem>Tools - Options</menuitem></defaultinline></switchinline><menuitem> - Language Settings - Languages</menuitem>) or to ISO date format (momentarily, only the ISO format with hyphens, e.g. \"2012-12-31\" is accepted)."
-msgstr "<emph>Data:</emph> Kalkulatu nahi den data duen kate-adierazpena. DateSerial funtzioak urteak, hilabeteak eta egunak zenbakizko balio bereizi gisa pasatzen ditu, baina DateValue funtzioak, berriz, hizkuntza-ezarpenak eskatzen du katea definitutako data-ereduetako batean egotea (ikus <switchinline select=\"sys\"><caseinline select=\"MAC\"><menuitem>%PRODUCTNAME - Hobespenak</menuitem></caseinline><defaultinline><menuitem>Tresnak - Aukerak</menuitem></defaultinline></switchinline><menuitem> - Hizkuntza-ezarpenak - Hizkuntzak</menuitem>) edo ISO data-formatuan egotea (momentuz, marratxoak dituen ISO formatua soilik, adibidez '2012-12-31', onartzen da)."
+msgid "<emph>Date</emph>: String expression that contains the date that you want to calculate. In contrast to the DateSerial function that passes years, months and days as separate numeric values, the DateValue function requests the date string to be according to either one of the date acceptance patterns defined for your locale setting (see <switchinline select=\"sys\"><caseinline select=\"MAC\"><menuitem>%PRODUCTNAME - Preferences</menuitem></caseinline><defaultinline><menuitem>Tools - Options</menuitem></defaultinline></switchinline><menuitem> - Language Settings - Languages</menuitem>) or to ISO date format (momentarily, only the ISO format with hyphens, e.g. \"2012-12-31\" is accepted)."
+msgstr ""
 
-#. EWVzU
+#. KmwFZ
 #: 03030102.xhp
 msgctxt ""
 "03030102.xhp\n"
-"hd_id3153142\n"
+"par_id3153194\n"
 "help.text"
-msgid "Example:"
-msgstr "Adibidea:"
+msgid "The computed date."
+msgstr ""
 
 #. wDviP
 #: 03030103.xhp
@@ -14893,22 +15010,22 @@ msgctxt ""
 msgid "<emph>date1, date2</emph> - The two date values to be compared."
 msgstr ""
 
-#. yVo8Q
+#. e7hMm
 #: 03030120.xhp
 msgctxt ""
 "03030120.xhp\n"
 "par_idN1066A\n"
 "help.text"
-msgid "<emph>firstDayOfWeek</emph> - An optional parameter that specifies the starting day of a week."
+msgid "<emph>firstdayofweek</emph>: An optional parameter that specifies the starting day of a week."
 msgstr ""
 
-#. dDoRU
+#. wpCoP
 #: 03030120.xhp
 msgctxt ""
 "03030120.xhp\n"
 "par_idN1067A\n"
 "help.text"
-msgid "firstDayOfWeek value"
+msgid "firstdayofweek value"
 msgstr ""
 
 #. gmaR8
@@ -15064,22 +15181,22 @@ msgctxt ""
 msgid "Saturday"
 msgstr "Larunbata"
 
-#. BLhqf
+#. E5nqv
 #: 03030120.xhp
 msgctxt ""
 "03030120.xhp\n"
 "par_idN106EB\n"
 "help.text"
-msgid "<emph>firstWeekOfYear</emph> - An optional parameter that specifies the starting week of a year."
+msgid "<emph>firstweekofyear</emph>: An optional parameter that specifies the starting week of a year."
 msgstr ""
 
-#. KGncd
+#. e3gQd
 #: 03030120.xhp
 msgctxt ""
 "03030120.xhp\n"
 "par_idN106FB\n"
 "help.text"
-msgid "firstWeekOfYear value"
+msgid "firstweekofyear value"
 msgstr ""
 
 #. zAFFS
@@ -16414,14 +16531,14 @@ msgctxt ""
 msgid "<bookmark_value>Basic constants</bookmark_value>"
 msgstr "<bookmark_value>Basic konstanteak</bookmark_value>"
 
-#. NMCZ2
+#. ev3DS
 #: 03040000.xhp
 msgctxt ""
 "03040000.xhp\n"
 "hd_id051620171022255424\n"
 "help.text"
-msgid "<link href=\"text/sbasic/shared/03040000.xhp\">Basic Constants</link>"
-msgstr "<link href=\"text/sbasic/shared/03040000.xhp\">Basic konstanteak</link>"
+msgid "<variable id=\"basicconstantsh1\"><link href=\"text/sbasic/shared/03040000.xhp\">Basic Constants</link></variable>"
+msgstr ""
 
 #. K6sdH
 #: 03040000.xhp
@@ -26494,14 +26611,14 @@ msgctxt ""
 msgid "<bookmark_value>Dim statement</bookmark_value>  <bookmark_value>arrays; dimensioning</bookmark_value>  <bookmark_value>dimensioning arrays</bookmark_value>"
 msgstr "<bookmark_value>Dim instrukzioa</bookmark_value><bookmark_value>matrizeak;neurriak jartzea</bookmark_value><bookmark_value>matrizeei neurriak jartzea</bookmark_value>"
 
-#. 4Usmk
+#. HnQSe
 #: 03102100.xhp
 msgctxt ""
 "03102100.xhp\n"
 "hd_id3149812\n"
 "help.text"
-msgid "<link href=\"text/sbasic/shared/03102100.xhp\" name=\"Dim Statement\">Dim Statement</link>"
-msgstr "<link href=\"text/sbasic/shared/03102100.xhp\" name=\"Dim Statement\">Dim instrukzioa</link>"
+msgid "<variable id=\"Dimh1\"><link href=\"text/sbasic/shared/03102100.xhp\" name=\"Dim Statement\">Dim Statement</link></variable>"
+msgstr ""
 
 #. 9gRSS
 #: 03102100.xhp
@@ -30985,50 +31102,50 @@ msgctxt ""
 msgid "<link href=\"text/sbasic/shared/03120301.xhp\" name=\"Format Function\">Format Function</link>"
 msgstr "<link href=\"text/sbasic/shared/03120301.xhp\" name=\"Format Function\">Format funtzioa</link>"
 
-#. ZAitp
+#. AfW2N
 #: 03120301.xhp
 msgctxt ""
 "03120301.xhp\n"
 "par_id3156042\n"
 "help.text"
-msgid "Converts a number to a string, and then formats it according to the format that you specify."
-msgstr "Zenbakiak kate bihurtzen ditu, eta zuk zehaztutako formatuaren arabera ematen die formatua."
+msgid "Converts a numeric expression to a string, and then formats it according to the format that you specify."
+msgstr ""
 
-#. wp4Ae
+#. arnAa
 #: 03120301.xhp
 msgctxt ""
 "03120301.xhp\n"
 "par_id3153527\n"
 "help.text"
-msgid "Format (Number [, Format As String])"
-msgstr "Format (Zenbakia [, Formatua As String])"
+msgid "Format(expression [, format As String]) As String"
+msgstr ""
 
-#. gddga
-#: 03120301.xhp
-msgctxt ""
-"03120301.xhp\n"
-"par_id3148474\n"
-"help.text"
-msgid "String"
-msgstr "Katea"
-
-#. 6Dyxg
+#. v2BdG
 #: 03120301.xhp
 msgctxt ""
 "03120301.xhp\n"
 "par_id3149415\n"
 "help.text"
-msgid "<emph>Number:</emph> Numeric expression that you want to convert to a formatted string."
-msgstr "<emph>Zenbakia:</emph> formateatutako kate bihurtzea nahi duzun zenbakizko adierazpena."
+msgid "<emph>expression</emph>: Numeric expression that you want to convert to a formatted string."
+msgstr ""
 
-#. G3TNy
+#. p5nFg
 #: 03120301.xhp
 msgctxt ""
 "03120301.xhp\n"
 "par_id3147531\n"
 "help.text"
-msgid "<emph>Format:</emph> String that specifies the format code for the number. If <emph>Format</emph> is omitted, the Format function works like the <emph>Str</emph> function."
-msgstr "<emph>Formatua:</emph> zenbakiarentzako formatu-kodea zehazten duen katea. <emph>Formatua</emph> parametroa erabiltzen ez bada, Format funtzioa <emph>Str</emph> funtzioa bezala arituko da."
+msgid "<emph>format</emph>: String that specifies the format code for the number. If <literal>format</literal> is omitted, the Format function works like the %PRODUCTNAME Basic <literal>Str()</literal> function."
+msgstr ""
+
+#. Mh6xN
+#: 03120301.xhp
+msgctxt ""
+"03120301.xhp\n"
+"par_id3148474\n"
+"help.text"
+msgid "Text string."
+msgstr ""
 
 #. 8DmPW
 #: 03120301.xhp
@@ -31039,59 +31156,59 @@ msgctxt ""
 msgid "Formatting Codes"
 msgstr "Kodeei formatua ematea"
 
-#. j9pBf
+#. 4TDkj
 #: 03120301.xhp
 msgctxt ""
 "03120301.xhp\n"
 "par_id3147265\n"
 "help.text"
-msgid "The following list describes the codes that you can use for formatting a number:"
-msgstr "Ondorengo zerrendan zenbakiei formatua emateko erabil ditzakezun formatu-kodeak deskribatzen dira:"
+msgid "The following list describes the codes that you can use for formatting a numeric expression:"
+msgstr ""
 
-#. AA4AR
+#. LJGi5
 #: 03120301.xhp
 msgctxt ""
 "03120301.xhp\n"
 "par_id3153380\n"
 "help.text"
-msgid "<emph>0:</emph> If <emph>Number</emph> has a digit at the position of the 0 in the format code, the digit is displayed, otherwise a zero is displayed."
-msgstr "<emph>0:</emph> <emph>Zenbakia</emph> parametroak digitu bat badu 0ren kokagunean formatu-kodean, digitua bistaratu egingo da, bestela, zeroa bistaratuko da."
+msgid "<emph>0:</emph> If <literal>expression</literal> has a digit at the position of the 0 in the <literal>format</literal> code, the digit is displayed, otherwise a zero is displayed."
+msgstr ""
 
-#. 6hoDN
+#. MRyQ7
 #: 03120301.xhp
 msgctxt ""
 "03120301.xhp\n"
 "par_id3151210\n"
 "help.text"
-msgid "If <emph>Number</emph> has fewer digits than the number of zeros in the format code, (on either side of the decimal), leading or trailing zeros are displayed. If the number has more digits to the left of the decimal separator than the amount of zeros in the format code, the additional digits are displayed without formatting."
-msgstr "<emph>Zenbakia</emph> parametroak formatu-kodeko zero kopurua baino digitu gutxiago baditu (dezimalaren alde batean edo bestean), aurreko edo atzeko zeroak bistaratuko dira. Zenbakiak dezimalen bereizletik ezkerrerantz formatu-kodeko zero kopurua baino digitu gehiago baditu, gainerako digituak formaturik gabe bistaratuko dira."
+msgid "If <literal>expression</literal> has fewer digits than the number of zeros in the <literal>format</literal> code, (on either side of the decimal), leading or trailing zeros are displayed. If the <literal>expression</literal> has more digits to the left of the decimal separator than the amount of zeros in the <literal>format</literal> code, the additional digits are displayed without formatting."
+msgstr ""
 
-#. EDBbq
+#. bYkcA
 #: 03120301.xhp
 msgctxt ""
 "03120301.xhp\n"
 "par_id3151176\n"
 "help.text"
-msgid "Decimal places in the number are rounded according to the number of zeros that appear after the decimal separator in the <emph>Format </emph>code."
-msgstr "Zenbakiko dezimalak borobildu egiten dira <emph>Formatua</emph> kodeko dezimal-bereizlearen ondoren agertzen diren zero kopuruaren arabera."
+msgid "Decimal places in the <literal>expression</literal> are rounded according to the number of zeros that appear after the decimal separator in the <literal>format</literal> code."
+msgstr ""
 
-#. ucKaQ
+#. Cypxj
 #: 03120301.xhp
 msgctxt ""
 "03120301.xhp\n"
 "par_id3154123\n"
 "help.text"
-msgid "<emph>#:</emph> If <emph>Number</emph> contains a digit at the position of the # placeholder in the <emph>Format</emph> code, the digit is displayed, otherwise nothing is displayed at this position."
-msgstr "<emph>#:</emph> <emph>Zenbakia</emph> parametroak digitu bat baldin badu <emph>Format</emph> kodeko # leku-markan, digitua bistaratuko da, bestela, ez da ezer bistaratuko kokagune horretan."
+msgid "<emph>#:</emph> If <literal>expression</literal> contains a digit at the position of the # placeholder in the <literal>format</literal> code, the digit is displayed, otherwise nothing is displayed at this position."
+msgstr ""
 
-#. EKGPx
+#. Mst5g
 #: 03120301.xhp
 msgctxt ""
 "03120301.xhp\n"
 "par_id3148452\n"
 "help.text"
-msgid "This symbol works like the 0, except that leading or trailing zeroes are not displayed if there are more # characters in the format code than digits in the number. Only the relevant digits of the number are displayed."
-msgstr "Ikur horrek 0 bezala funtzionatzen du, baldin eta aurreko edo atzeko zeroak bistaratzen ez badira formatu-kodeko # karaktere kopurua zenbakiko digitu kopurua baino handiagoa bada. Zenbakiko digitu garrantzitsuak bakarrik bistaratuko dira."
+msgid "This symbol works like the 0, except that leading or trailing zeroes are not displayed if there are more # characters in the <literal>format</literal> code than digits in the <literal>expression</literal>. Only the relevant digits of the <literal>expression</literal> are displayed."
+msgstr ""
 
 #. Cnq7B
 #: 03120301.xhp
@@ -31102,32 +31219,32 @@ msgctxt ""
 msgid "<emph>.:</emph> The decimal placeholder determines the number of decimal places to the left and right of the decimal separator."
 msgstr "<emph>.:</emph> Dezimalaren leku-markak dezimalaren bereizletik ezkerretarako eta eskuinetarako dezimalen kopurua zehazten du."
 
-#. tWDUe
+#. ehB5x
 #: 03120301.xhp
 msgctxt ""
 "03120301.xhp\n"
 "par_id3159252\n"
 "help.text"
-msgid "If the format code contains only # placeholders to the left of this symbol, numbers less than 1 begin with a decimal separator. To always display a leading zero with fractional numbers, use 0 as a placeholder for the first digit to the left of the decimal separator."
-msgstr "Formatu-kodeak # leku-markak bakarrik baditu ikur horren ezkerretara, 1 baino txikiagoko zenbakiek dezimalen bereizle bat izango dute hasieran. Aurreko zeroa beti zenbaki zatikiarrekin bistaratzeko, erabili 0 leku-marka gisa dezimalen bereizlearen ezkerreko lehenengo digituan."
+msgid "If the <literal>format</literal> code contains only # placeholders to the left of this symbol, numbers less than 1 begin with a decimal separator. To always display a leading zero with fractional numbers, use 0 as a placeholder for the first digit to the left of the decimal separator."
+msgstr ""
 
-#. L7ry6
+#. yMgJz
 #: 03120301.xhp
 msgctxt ""
 "03120301.xhp\n"
 "par_id3153368\n"
 "help.text"
-msgid "<emph>%:</emph> Multiplies the number by 100 and inserts the percent sign (%) where the number appears in the format code."
-msgstr "<emph>%:</emph> Zenbakia bider 100 egiten du, eta ehunekoaren ikurra (%) sartzen du zenbakia formatu-kodean agertuko den kokagunean."
+msgid "<emph>%:</emph> Multiplies the <literal>expression</literal>by 100 and inserts the percent sign (%) where the <literal>expression</literal> appears in the <literal>format</literal> code."
+msgstr ""
 
-#. 5A2Kp
+#. prkKA
 #: 03120301.xhp
 msgctxt ""
 "03120301.xhp\n"
 "par_id3149481\n"
 "help.text"
-msgid "<emph>E- E+ e- e+ :</emph> If the format code contains at least one digit placeholder (0 or #) to the right of the symbol E-, E+, e-, or e+, the number is formatted in the scientific or exponential format. The letter E or e is inserted between the number and the exponent. The number of placeholders for digits to the right of the symbol determines the number of digits in the exponent."
-msgstr "<emph>E- E+ e- e+ :</emph> Formatu-kodeak gutxienez leku-markako digitu bat (0 edo #) badu E-, E+, e-, edo e+ ikurraren eskuinaldean, zenbakiari formatu zientifikoa edo esponentziala emango zaio. E edo e letra zenbakiaren eta esponentearen artean sartuko da. Ikurraren eskuinaldean digituko dauden leku-marken kopuruak esponenteko digitu kopurua zehazten du."
+msgid "<emph>E- E+ e- e+ :</emph> If the <literal>format</literal> code contains at least one digit placeholder (0 or #) to the right of the symbol E-, E+, e-, or e+, the <literal>expression</literal> is formatted in the scientific or exponential format. The letter E or e is inserted between the number and the exponent. The number of placeholders for digits to the right of the symbol determines the number of digits in the exponent."
+msgstr ""
 
 #. jhCb5
 #: 03120301.xhp
@@ -31138,14 +31255,14 @@ msgctxt ""
 msgid "If the exponent is negative, a minus sign is displayed directly before an exponent with E-, E+, e-, e+. If the exponent is positive, a plus sign is only displayed before exponents with E+ or e+."
 msgstr "Esponentea negatiboa bada, minus ikurra bistaratuko da berehala esponente baten aurrean honako ikurrekin: E-, E+, e-, e+. Esponentea positiboa bada, plus ikurra bakarrik bistaratuko da esponenteen aurrean E+ edo e+ ikurrarekin."
 
-#. shj6y
+#. WTvZT
 #: 03120301.xhp
 msgctxt ""
 "03120301.xhp\n"
 "par_id3148617\n"
 "help.text"
-msgid "The thousands delimiter is displayed if the format code contains the delimiter enclosed by digit placeholders (0 or #)."
-msgstr "Milakoen mugatzailea bistaratu egingo da, formatu-kodeak mugatzailea digitu leku-markez (0 edo #) inguratuta badu."
+msgid "The thousands delimiter is displayed if the <literal>format</literal> code contains the delimiter enclosed by digit placeholders (0 or #)."
+msgstr ""
 
 #. A8QmE
 #: 03120301.xhp
@@ -31156,14 +31273,14 @@ msgctxt ""
 msgid "The use of a period as a thousands and decimal separator is dependent on the regional setting. When you enter a number directly in Basic source code, always use a period as decimal delimiter. The actual character displayed as a decimal separator depends on the number format in your system settings."
 msgstr "Puntua milakoen eta dezimalen bereizle gisa erabiltzea eskualdeko ezarpenen arabera dago. Zenbaki bat zuzenean Basic iturburu-kodean sartzean, puntua erabili beti dezimal-bereizle gisa. Unean dezimalen bereizle gisa bistaratutako karakterea zure sistemako ezarpenen zenbaki-formatuaren arabera dago."
 
-#. 5EMgE
+#. sxDcc
 #: 03120301.xhp
 msgctxt ""
 "03120301.xhp\n"
 "par_id3152887\n"
 "help.text"
-msgid "<emph>- + $ ( ) space:</emph> A plus (+), minus (-), dollar ($), space, or brackets entered directly in the format code is displayed as a literal character."
-msgstr "<emph>- + $ ( ) zuriunea:</emph> Formatu-kodean zuzenean sartutako plusa (+), minusa (-), dolarra ($), zuriunea edo parentesiak karaktere gisa bistaratuko dira."
+msgid "<emph>- + $ ( ) space:</emph> A plus (+), minus (-), dollar ($), space, or brackets entered directly in the <literal>format</literal> code is displayed as a literal character."
+msgstr ""
 
 #. PyKZq
 #: 03120301.xhp
@@ -31174,23 +31291,23 @@ msgctxt ""
 msgid "To display characters other than the ones listed here, you must precede it by a backslash (\\), or enclose it in quotation marks (\" \")."
 msgstr "Hemen zerrendatzen ez diren karaktereak bistaratzeko, aurrean alderantzizko barra (\\) jarri behar diezu, edo komatxo artean (\" \") jarri behar dituzu."
 
-#. 2VEmR
+#. SqAeG
 #: 03120301.xhp
 msgctxt ""
 "03120301.xhp\n"
 "par_id3153139\n"
 "help.text"
-msgid "\\ : The backslash displays the next character in the format code."
-msgstr "\\ : Alderantzizko barrak hurrengo karakterea formatu-kodean bistaratzen du."
+msgid "<emph>\\ :</emph> The backslash displays the next character in the <literal>format</literal> code."
+msgstr ""
 
-#. UFfdk
+#. CBbYy
 #: 03120301.xhp
 msgctxt ""
 "03120301.xhp\n"
 "par_id3153366\n"
 "help.text"
-msgid "Characters in the format code that have a special meaning can only be displayed as literal characters if they are preceded by a backslash. The backslash itself is not displayed, unless you enter a double backslash (\\\\) in the format code."
-msgstr "Esanahi berezia duten formatu-kodeko karaktereak karaktere gisa bistaratzeko, alderantziko barra bat izan behar dute aurrean. Alderantzizko barra bera ez da bistaratzen, baldin eta formatu-kodean alderantzizko barra bikoitza (\\\\) ez baduzu sartzen."
+msgid "Characters in the <literal>format</literal> code that have a special meaning can only be displayed as literal characters if they are preceded by a backslash. The backslash itself is not displayed, unless you enter a double backslash (\\\\) in the format code."
+msgstr ""
 
 #. L4LbT
 #: 03120301.xhp
@@ -31201,23 +31318,23 @@ msgctxt ""
 msgid "Characters that must be preceded by a backslash in the format code in order to be displayed as literal characters are date- and time-formatting characters (a, c, d, h, m, n, p, q, s, t, w, y, /, :), numeric-formatting characters (#, 0, %, E, e, comma, period), and string-formatting characters (@, &, <, >, !)."
 msgstr "Karaktere gisa bistaratu ahal izateko formatu-kodean aurretik alderantzizko barra izan behar duten karaktereak hauek dira: data- eta denbora-formatuko karaktereak (a, c, d, h, m, n, p, q, s, t, w, y, /, :), zenbaki-formatuko karaktereak (#, 0, %, E, e, koma, puntua) eta kate-formatuko karaktereak (@, &, <, >, !)."
 
-#. NN8eT
+#. BCQqy
 #: 03120301.xhp
 msgctxt ""
 "03120301.xhp\n"
 "par_id3145749\n"
 "help.text"
-msgid "You can also use the following predefined number formats. Except for \"General Number\", all of the predefined format codes return the number as a decimal number with two decimal places."
-msgstr "Aurrez zehaztutako ondorengo zenbaki-formatuak ere erabil daitezke. \"General Number\" izan ezik, aurrez definitutako formatu-kode guztiek zenbakiak zenbaki dezimal gisa itzultzen dituzte bi dezimalekin."
+msgid "You can also use the following predefined number formats. Except for <literal>\"General Number\"</literal>, all of the predefined format codes return the number as a decimal number with two decimal places."
+msgstr ""
 
-#. fkPvC
+#. MDb3h
 #: 03120301.xhp
 msgctxt ""
 "03120301.xhp\n"
 "par_id3150113\n"
 "help.text"
-msgid "If you use predefined formats, the name of the format must be enclosed in quotation marks."
-msgstr "Aurrez definitutako formatuak erabiltzen badituzu, formatuaren izenak komatxo artean egon behar du."
+msgid "If you use predefined formats, the name of the <literal>format</literal> must be enclosed in quotation marks."
+msgstr ""
 
 #. GT9Rs
 #: 03120301.xhp
@@ -31282,14 +31399,14 @@ msgctxt ""
 msgid "<emph>Scientific:</emph> Displays numbers in scientific format (for example, 1.00E+03 for 1000)."
 msgstr "<emph>Scientific:</emph> Zenbakiak formatu zientifikoan bistaratzen ditu (adibidez, 1000 jarri ordez 1,00E+03 jartzen du)."
 
-#. cMtWm
+#. AAj9K
 #: 03120301.xhp
 msgctxt ""
 "03120301.xhp\n"
 "par_id3153707\n"
 "help.text"
-msgid "A format code can be divided into three sections that are separated by semicolons. The first part defines the format for positive values, the second part for negative values, and the third part for zero. If you only specify one format code, it applies to all numbers."
-msgstr "Formatu-kodea hiru sekziotan banatu daiteke, bereizteko puntu eta koma erabiliz. Lehenengo zatiak balio positiboen formatua definitzen du, bigarren zatiak balio negatiboena, eta hirugarren zatiak zeroa. Formatu-kode bakarra zehazten baduzu, zenbaki guztiei aplikatuko zaie."
+msgid "A <literal>format</literal> code can be divided into three sections that are separated by semicolons. The first part defines the format for positive values, the second part for negative values, and the third part for zero. If you only specify one <literal>format</literal> code, it applies to all numbers."
+msgstr ""
 
 #. ZsNPC
 #: 03120301.xhp

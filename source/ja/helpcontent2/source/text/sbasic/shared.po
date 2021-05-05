@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2021-04-27 17:02+0200\n"
+"POT-Creation-Date: 2021-05-05 17:15+0200\n"
 "PO-Revision-Date: 2021-04-20 19:37+0000\n"
 "Last-Translator: Jun NOGATA <nogajun@gmail.com>\n"
 "Language-Team: Japanese <https://translations.documentfoundation.org/projects/libo_help-master/textsbasicshared/ja/>\n"
@@ -2185,6 +2185,51 @@ msgctxt ""
 msgid "Once you have declared a variable as a certain type, you cannot declare the variable under the same name again as a different type!"
 msgstr "特定の変数型として宣言した変数名は、別の型で再宣言することはできません。"
 
+#. V5Csc
+#: 01020100.xhp
+msgctxt ""
+"01020100.xhp\n"
+"par_id421619551219763\n"
+"help.text"
+msgid "When you declare multiple variables in a single line of code you need to specify the type of each variable. If the type of a variable is not explicitly specified, then Basic will assume that the variable is of the <emph>Variant</emph> type."
+msgstr ""
+
+#. FzKND
+#: 01020100.xhp
+msgctxt ""
+"01020100.xhp\n"
+"bas_id321619555442706\n"
+"help.text"
+msgid "' Both variables \"a\" and \"b\" are of the Integer type"
+msgstr ""
+
+#. NCE7F
+#: 01020100.xhp
+msgctxt ""
+"01020100.xhp\n"
+"bas_id451619555463988\n"
+"help.text"
+msgid "' Variable \"c\" is a Variant and \"d\" is an Integer"
+msgstr ""
+
+#. fsaNa
+#: 01020100.xhp
+msgctxt ""
+"01020100.xhp\n"
+"bas_id161619555482237\n"
+"help.text"
+msgid "' A variable can also be explicitly declared as a Variant"
+msgstr ""
+
+#. uQD9L
+#: 01020100.xhp
+msgctxt ""
+"01020100.xhp\n"
+"par_id521619551687371\n"
+"help.text"
+msgid "The <emph>Variant</emph> type is a special data type that can store any kind of value. To learn more, refer to the section <link href=\"text/sbasic/shared/01020100.xhp#VariantTypeH2\" name=\"Variant Type\">The Variant type</link> below."
+msgstr ""
+
 #. RENXG
 #: 01020100.xhp
 msgctxt ""
@@ -2534,6 +2579,114 @@ msgctxt ""
 "bas_id616163714705267\n"
 "help.text"
 msgid "dob = #2010-09-28#"
+msgstr ""
+
+#. pCPWV
+#: 01020100.xhp
+msgctxt ""
+"01020100.xhp\n"
+"bm_id601619552599885\n"
+"help.text"
+msgid "<bookmark_value>The Variant type</bookmark_value>  <bookmark_value>The Any type</bookmark_value>"
+msgstr ""
+
+#. mPKPe
+#: 01020100.xhp
+msgctxt ""
+"01020100.xhp\n"
+"VariantTypeH2\n"
+"help.text"
+msgid "The Variant type"
+msgstr ""
+
+#. gnP2t
+#: 01020100.xhp
+msgctxt ""
+"01020100.xhp\n"
+"par_id1001619552129323\n"
+"help.text"
+msgid "Variables declared as <emph>Variant</emph> can handle any data type. This means that the actual data type is defined during runtime as a value is assigned to the variable."
+msgstr ""
+
+#. kKQzr
+#: 01020100.xhp
+msgctxt ""
+"01020100.xhp\n"
+"par_id631619552417188\n"
+"help.text"
+msgid "There are three main ways to create a <emph>Variant</emph> variable, as shown below:"
+msgstr ""
+
+#. ZTswL
+#: 01020100.xhp
+msgctxt ""
+"01020100.xhp\n"
+"bas_id751619554900163\n"
+"help.text"
+msgid "Dim varA            ' The type is not specified, hence the variable is a Variant"
+msgstr ""
+
+#. 3mWEB
+#: 01020100.xhp
+msgctxt ""
+"01020100.xhp\n"
+"bas_id181619554965451\n"
+"help.text"
+msgid "Dim varB as Variant ' The variable is explicitly declared as a Variant"
+msgstr ""
+
+#. vEpTz
+#: 01020100.xhp
+msgctxt ""
+"01020100.xhp\n"
+"bas_id371619554853094\n"
+"help.text"
+msgid "varC = \"abc\"        ' Previously undeclared variables are treated as Variants"
+msgstr ""
+
+#. PDFED
+#: 01020100.xhp
+msgctxt ""
+"01020100.xhp\n"
+"par_id631619552417343\n"
+"help.text"
+msgid "The example below uses the <link href=\"text/sbasic/shared/03103600.xhp\" name=\"TypeName function\">TypeName function</link> to show how the type of a <emph>Variant</emph> variable changes upon assignment."
+msgstr ""
+
+#. smtqw
+#: 01020100.xhp
+msgctxt ""
+"01020100.xhp\n"
+"par_id141619553442668\n"
+"help.text"
+msgid "A <emph>Variant</emph> variable is initialized with the <link href=\"text/sbasic/shared/03040000.xhp#objectconstants\" name=\" object constants\">Empty</link> special data type. You can use the <link href=\"text/sbasic/shared/03102400.xhp\" name=\"IsEmpty function\">IsEmpty function</link> to test if a variable is an <emph>Empty Variant</emph>."
+msgstr ""
+
+#. aervF
+#: 01020100.xhp
+msgctxt ""
+"01020100.xhp\n"
+"par_id541619552755706\n"
+"help.text"
+msgid "You can also use the keyword <emph>Any</emph> to declare a variable as a <emph>Variant</emph>. However, <emph>Any</emph> is deprecated and is available for backward compatibility."
+msgstr ""
+
+#. 74VtP
+#: 01020100.xhp
+msgctxt ""
+"01020100.xhp\n"
+"par_id711619622934043\n"
+"help.text"
+msgid "Arguments with type <emph>Variant</emph> or <emph>Any</emph> passed in function calls are not checked for their types."
+msgstr ""
+
+#. qFpUB
+#: 01020100.xhp
+msgctxt ""
+"01020100.xhp\n"
+"bas_id141619552837486\n"
+"help.text"
+msgid "Dim myVar As Any ' Variable \"myVar\" is a Variant"
 msgstr ""
 
 #. kGGKi
@@ -7873,31 +8026,31 @@ msgctxt ""
 msgid "Displays a dialog box containing a message."
 msgstr "メッセージ表示用のダイアログボックスを表示します。"
 
-#. 6pAvx
+#. rXKix
 #: 03010101.xhp
 msgctxt ""
 "03010101.xhp\n"
 "par_id3148798\n"
 "help.text"
-msgid "<emph>Prompt</emph>: String expression displayed as a message in the dialog box. Line breaks can be inserted with Chr$(13)."
+msgid "<emph>prompt</emph>: String expression displayed as a message in the dialog box. Line breaks can be inserted with Chr$(13)."
 msgstr ""
 
-#. wNFv5
+#. oK5f6
 #: 03010101.xhp
 msgctxt ""
 "03010101.xhp\n"
 "par_id3150769\n"
 "help.text"
-msgid "<emph>Title</emph>: String expression displayed in the title bar of the dialog. If omitted, the title bar displays the name of the respective application."
+msgid "<emph>title</emph>: String expression displayed in the title bar of the dialog. If omitted, the title bar displays the name of the respective application."
 msgstr ""
 
-#. aC93y
+#. HPRQD
 #: 03010101.xhp
 msgctxt ""
 "03010101.xhp\n"
 "par_id3147228\n"
 "help.text"
-msgid "<emph>Buttons</emph>: Any integer expression that specifies the dialog type, as well as the number and type of buttons to display, and the icon type. <emph>Buttons</emph> represents a combination of bit patterns, that is, a combination of elements can be defined by adding their respective values:"
+msgid "<emph>buttons</emph>: Any integer expression that specifies the dialog type, as well as the number and type of buttons to display, and the icon type. <emph>Buttons</emph> represents a combination of bit patterns, that is, a combination of elements can be defined by adding their respective values:"
 msgstr ""
 
 #. xuEUm
@@ -8458,58 +8611,58 @@ msgctxt ""
 msgid "The <emph>InputBox</emph> statement is a convenient method of entering text through a dialog. Confirm the input by clicking OK or pressing Return. The input is returned as the function return value. If you close the dialog with Cancel, <emph>InputBox</emph> returns a zero-length string (\"\")."
 msgstr "<emph>InputBox</emph> ステートメントを利用することで、ダイアログによるユーザー入力を簡単に実装できます。ユーザーの入力する値は、OK ボタンをクリックするか Return キーを押した段階で確定されます。こうして得られる入力値は、一種の関数の戻り値として返されます。また、Cancel ボタンをクリックしてダイアログを閉じると、<emph>InputBox</emph> は文字長ゼロの空白文字列 (\"\") を返します。"
 
-#. G7eXr
+#. fcMCj
 #: 03010201.xhp
 msgctxt ""
 "03010201.xhp\n"
 "par_id3153311\n"
 "help.text"
-msgid "<emph>Prompt</emph>: String expression displayed as the message in the dialog box."
+msgid "<emph>prompt</emph>: String expression displayed as the message in the dialog box."
 msgstr ""
 
-#. 66zGG
+#. kqAw6
 #: 03010201.xhp
 msgctxt ""
 "03010201.xhp\n"
 "par_id3145315\n"
 "help.text"
-msgid "<emph>Title</emph>: String expression displayed in the title bar of the dialog box."
-msgstr "<emph>Title</emph>:ダイアログボックスのタイトルバーに表示させる文字列。"
+msgid "<emph>title</emph>: String expression displayed in the title bar of the dialog box."
+msgstr ""
 
-#. b7vFT
+#. 4qoJn
 #: 03010201.xhp
 msgctxt ""
 "03010201.xhp\n"
 "par_id3154307\n"
 "help.text"
-msgid "<emph>Default</emph>: String expression displayed in the text box as default if no other input is given."
-msgstr "<emph>Default</emph>:ユーザーが何も入力しない場合のデフォルト値としてテキストボックスに表示させる文字列。"
+msgid "<emph>default</emph>: String expression displayed in the text box as default if no other input is given."
+msgstr ""
 
-#. Cs49h
+#. w5QhP
 #: 03010201.xhp
 msgctxt ""
 "03010201.xhp\n"
 "par_id3147573\n"
 "help.text"
-msgid "<emph>xPosTwips</emph>: Integer expression that specifies the horizontal position of the dialog. The position is an absolute coordinate and does not refer to the window of the office application."
+msgid "<emph>xpostwips</emph>: Integer expression that specifies the horizontal position of the dialog. The position is an absolute coordinate and does not refer to the window of the office application."
 msgstr ""
 
-#. QyymW
+#. CannW
 #: 03010201.xhp
 msgctxt ""
 "03010201.xhp\n"
 "par_id3156024\n"
 "help.text"
-msgid "<emph>yPosTwips</emph>: Integer expression that specifies the vertical position of the dialog. The position is an absolute coordinate and does not refer to the window of the office application."
+msgid "<emph>ypostwips</emph>: Integer expression that specifies the vertical position of the dialog. The position is an absolute coordinate and does not refer to the window of the office application."
 msgstr ""
 
-#. 8pC7C
+#. m6iBC
 #: 03010201.xhp
 msgctxt ""
 "03010201.xhp\n"
 "par_id3153897\n"
 "help.text"
-msgid "If <emph>xPosTwips</emph> and <emph>yPosTwips</emph> are omitted, the dialog is centered on the screen. The position is specified in <link href=\"text/sbasic/shared/00000002.xhp#twips\" name=\"twips\">twips</link>."
+msgid "If <literal>xpostwips</literal> and <literal>yPosTwips</literal> are omitted, the dialog is centered on the screen. The position is specified in <link href=\"text/sbasic/shared/00000002.xhp#twips\" name=\"twips\">twips</link>."
 msgstr ""
 
 #. Mh8Z6
@@ -9331,32 +9484,32 @@ msgctxt ""
 msgid "Parameter:"
 msgstr "パラメーター:"
 
-#. pP9x5
+#. QM73e
 #: 03010305.xhp
 msgctxt ""
 "03010305.xhp\n"
 "par_id3152597\n"
 "help.text"
-msgid "<emph>Red</emph>: Any integer expression that represents the red component (0-255) of the composite color."
-msgstr "<emph>Red</emph>:コンポジットカラーの、赤 (Red) コンポーネントを指定する整数表式 (0-255)。"
+msgid "<emph>red</emph>: Any integer expression that represents the red component (0-255) of the composite color."
+msgstr ""
 
-#. pbFvi
+#. H7yGv
 #: 03010305.xhp
 msgctxt ""
 "03010305.xhp\n"
 "par_id3146974\n"
 "help.text"
-msgid "<emph>Green</emph>: Any integer expression that represents the green component (0-255) of the composite color."
-msgstr "<emph>Green</emph>:コンポジットカラーの、緑 (Green) コンポーネントを指定する整数表式 (0-255)。"
+msgid "<emph>green</emph>: Any integer expression that represents the green component (0-255) of the composite color."
+msgstr ""
 
-#. XG6FB
+#. t8P2M
 #: 03010305.xhp
 msgctxt ""
 "03010305.xhp\n"
 "par_id3151113\n"
 "help.text"
-msgid "<emph>Blue</emph>: Any integer expression that represents the blue component (0-255) of the composite color."
-msgstr "<emph>Blue</emph>:コンポジットカラーの、青 (Blue) コンポーネントを指定する整数表式 (0-255)。"
+msgid "<emph>blue</emph>: Any integer expression that represents the blue component (0-255) of the composite color."
+msgstr ""
 
 #. cFpDD
 #: 03010305.xhp
@@ -13075,68 +13228,32 @@ msgctxt ""
 msgid "Returns a date value from a date string. The date string is a complete date in a single numeric value. You can also use this serial number to determine the difference between two dates."
 msgstr "日付文字列から日付の値を返します。日付文字列は 1 つの数値で表される完全な日付です。このシリアル値を使用して、2 つの日付の間の差を調べることもできます。"
 
-#. QJz7y
-#: 03030102.xhp
-msgctxt ""
-"03030102.xhp\n"
-"hd_id3148799\n"
-"help.text"
-msgid "Syntax:"
-msgstr "構文:"
-
-#. 3FsEa
+#. PxEGo
 #: 03030102.xhp
 msgctxt ""
 "03030102.xhp\n"
 "par_id3154910\n"
 "help.text"
-msgid "DateValue [(date)]"
-msgstr "DateValue [(date)]"
+msgid "DateValue(date)"
+msgstr ""
 
-#. B7CrF
-#: 03030102.xhp
-msgctxt ""
-"03030102.xhp\n"
-"hd_id3150870\n"
-"help.text"
-msgid "Return value:"
-msgstr "戻り値:"
-
-#. 4G37B
-#: 03030102.xhp
-msgctxt ""
-"03030102.xhp\n"
-"par_id3153194\n"
-"help.text"
-msgid "Date"
-msgstr "日付"
-
-#. NHYd9
-#: 03030102.xhp
-msgctxt ""
-"03030102.xhp\n"
-"hd_id3153969\n"
-"help.text"
-msgid "Parameters:"
-msgstr "パラメーター:"
-
-#. ghsyA
+#. vxxyq
 #: 03030102.xhp
 msgctxt ""
 "03030102.xhp\n"
 "par_id3153770\n"
 "help.text"
-msgid "<emph>Date:</emph> String expression that contains the date that you want to calculate. In contrast to the DateSerial function that passes years, months and days as separate numeric values, the DateValue function requests the date string to be according to either one of the date acceptance patterns defined for your locale setting (see <switchinline select=\"sys\"><caseinline select=\"MAC\"><menuitem>%PRODUCTNAME - Preferences</menuitem></caseinline><defaultinline><menuitem>Tools - Options</menuitem></defaultinline></switchinline><menuitem> - Language Settings - Languages</menuitem>) or to ISO date format (momentarily, only the ISO format with hyphens, e.g. \"2012-12-31\" is accepted)."
+msgid "<emph>Date</emph>: String expression that contains the date that you want to calculate. In contrast to the DateSerial function that passes years, months and days as separate numeric values, the DateValue function requests the date string to be according to either one of the date acceptance patterns defined for your locale setting (see <switchinline select=\"sys\"><caseinline select=\"MAC\"><menuitem>%PRODUCTNAME - Preferences</menuitem></caseinline><defaultinline><menuitem>Tools - Options</menuitem></defaultinline></switchinline><menuitem> - Language Settings - Languages</menuitem>) or to ISO date format (momentarily, only the ISO format with hyphens, e.g. \"2012-12-31\" is accepted)."
 msgstr ""
 
-#. EWVzU
+#. KmwFZ
 #: 03030102.xhp
 msgctxt ""
 "03030102.xhp\n"
-"hd_id3153142\n"
+"par_id3153194\n"
 "help.text"
-msgid "Example:"
-msgstr "例:"
+msgid "The computed date."
+msgstr ""
 
 #. wDviP
 #: 03030103.xhp
@@ -14893,22 +15010,22 @@ msgctxt ""
 msgid "<emph>date1, date2</emph> - The two date values to be compared."
 msgstr ""
 
-#. yVo8Q
+#. e7hMm
 #: 03030120.xhp
 msgctxt ""
 "03030120.xhp\n"
 "par_idN1066A\n"
 "help.text"
-msgid "<emph>firstDayOfWeek</emph> - An optional parameter that specifies the starting day of a week."
+msgid "<emph>firstdayofweek</emph>: An optional parameter that specifies the starting day of a week."
 msgstr ""
 
-#. dDoRU
+#. wpCoP
 #: 03030120.xhp
 msgctxt ""
 "03030120.xhp\n"
 "par_idN1067A\n"
 "help.text"
-msgid "firstDayOfWeek value"
+msgid "firstdayofweek value"
 msgstr ""
 
 #. gmaR8
@@ -15064,22 +15181,22 @@ msgctxt ""
 msgid "Saturday"
 msgstr "土曜日"
 
-#. BLhqf
+#. E5nqv
 #: 03030120.xhp
 msgctxt ""
 "03030120.xhp\n"
 "par_idN106EB\n"
 "help.text"
-msgid "<emph>firstWeekOfYear</emph> - An optional parameter that specifies the starting week of a year."
+msgid "<emph>firstweekofyear</emph>: An optional parameter that specifies the starting week of a year."
 msgstr ""
 
-#. KGncd
+#. e3gQd
 #: 03030120.xhp
 msgctxt ""
 "03030120.xhp\n"
 "par_idN106FB\n"
 "help.text"
-msgid "firstWeekOfYear value"
+msgid "firstweekofyear value"
 msgstr ""
 
 #. zAFFS
@@ -16414,13 +16531,13 @@ msgctxt ""
 msgid "<bookmark_value>Basic constants</bookmark_value>"
 msgstr ""
 
-#. NMCZ2
+#. ev3DS
 #: 03040000.xhp
 msgctxt ""
 "03040000.xhp\n"
 "hd_id051620171022255424\n"
 "help.text"
-msgid "<link href=\"text/sbasic/shared/03040000.xhp\">Basic Constants</link>"
+msgid "<variable id=\"basicconstantsh1\"><link href=\"text/sbasic/shared/03040000.xhp\">Basic Constants</link></variable>"
 msgstr ""
 
 #. K6sdH
@@ -26494,13 +26611,13 @@ msgctxt ""
 msgid "<bookmark_value>Dim statement</bookmark_value>  <bookmark_value>arrays; dimensioning</bookmark_value>  <bookmark_value>dimensioning arrays</bookmark_value>"
 msgstr "<bookmark_value>Dim   ステートメント</bookmark_value><bookmark_value>配列  次元</bookmark_value><bookmark_value>次元  配列</bookmark_value>"
 
-#. 4Usmk
+#. HnQSe
 #: 03102100.xhp
 msgctxt ""
 "03102100.xhp\n"
 "hd_id3149812\n"
 "help.text"
-msgid "<link href=\"text/sbasic/shared/03102100.xhp\" name=\"Dim Statement\">Dim Statement</link>"
+msgid "<variable id=\"Dimh1\"><link href=\"text/sbasic/shared/03102100.xhp\" name=\"Dim Statement\">Dim Statement</link></variable>"
 msgstr ""
 
 #. 9gRSS
@@ -30985,50 +31102,50 @@ msgctxt ""
 msgid "<link href=\"text/sbasic/shared/03120301.xhp\" name=\"Format Function\">Format Function</link>"
 msgstr ""
 
-#. ZAitp
+#. AfW2N
 #: 03120301.xhp
 msgctxt ""
 "03120301.xhp\n"
 "par_id3156042\n"
 "help.text"
-msgid "Converts a number to a string, and then formats it according to the format that you specify."
-msgstr "与えられた数値を文字列に変換してから、指定の書式にフォーマットします。"
+msgid "Converts a numeric expression to a string, and then formats it according to the format that you specify."
+msgstr ""
 
-#. wp4Ae
+#. arnAa
 #: 03120301.xhp
 msgctxt ""
 "03120301.xhp\n"
 "par_id3153527\n"
 "help.text"
-msgid "Format (Number [, Format As String])"
-msgstr "Format (Number [, Format As String])"
+msgid "Format(expression [, format As String]) As String"
+msgstr ""
 
-#. gddga
-#: 03120301.xhp
-msgctxt ""
-"03120301.xhp\n"
-"par_id3148474\n"
-"help.text"
-msgid "String"
-msgstr "文字列"
-
-#. 6Dyxg
+#. v2BdG
 #: 03120301.xhp
 msgctxt ""
 "03120301.xhp\n"
 "par_id3149415\n"
 "help.text"
-msgid "<emph>Number:</emph> Numeric expression that you want to convert to a formatted string."
-msgstr "<emph>Number:</emph> 書式設定された文字列にフォーマットさせる数値表式。"
+msgid "<emph>expression</emph>: Numeric expression that you want to convert to a formatted string."
+msgstr ""
 
-#. G3TNy
+#. p5nFg
 #: 03120301.xhp
 msgctxt ""
 "03120301.xhp\n"
 "par_id3147531\n"
 "help.text"
-msgid "<emph>Format:</emph> String that specifies the format code for the number. If <emph>Format</emph> is omitted, the Format function works like the <emph>Str</emph> function."
-msgstr "<emph>Format:</emph> 数値の書式コードを指定する文字列Format 関数でこの <emph>Format</emph> 指定を省略すると、得られる結果は <emph>Str</emph> 関数の場合と同様のものとなります。"
+msgid "<emph>format</emph>: String that specifies the format code for the number. If <literal>format</literal> is omitted, the Format function works like the %PRODUCTNAME Basic <literal>Str()</literal> function."
+msgstr ""
+
+#. Mh6xN
+#: 03120301.xhp
+msgctxt ""
+"03120301.xhp\n"
+"par_id3148474\n"
+"help.text"
+msgid "Text string."
+msgstr ""
 
 #. 8DmPW
 #: 03120301.xhp
@@ -31039,59 +31156,59 @@ msgctxt ""
 msgid "Formatting Codes"
 msgstr "書式コード"
 
-#. j9pBf
+#. 4TDkj
 #: 03120301.xhp
 msgctxt ""
 "03120301.xhp\n"
 "par_id3147265\n"
 "help.text"
-msgid "The following list describes the codes that you can use for formatting a number:"
-msgstr "下記の一覧は、数値を書式化する際のコードをまとめたものです。"
+msgid "The following list describes the codes that you can use for formatting a numeric expression:"
+msgstr ""
 
-#. AA4AR
+#. LJGi5
 #: 03120301.xhp
 msgctxt ""
 "03120301.xhp\n"
 "par_id3153380\n"
 "help.text"
-msgid "<emph>0:</emph> If <emph>Number</emph> has a digit at the position of the 0 in the format code, the digit is displayed, otherwise a zero is displayed."
-msgstr "<emph>0:</emph> 書式コード中の 0 は、<emph>Number</emph> の該当桁の数字を表示させるよう指定する記号で、該当桁に数値が無い場合は 0 を表示させます。"
+msgid "<emph>0:</emph> If <literal>expression</literal> has a digit at the position of the 0 in the <literal>format</literal> code, the digit is displayed, otherwise a zero is displayed."
+msgstr ""
 
-#. 6hoDN
+#. MRyQ7
 #: 03120301.xhp
 msgctxt ""
 "03120301.xhp\n"
 "par_id3151210\n"
 "help.text"
-msgid "If <emph>Number</emph> has fewer digits than the number of zeros in the format code, (on either side of the decimal), leading or trailing zeros are displayed. If the number has more digits to the left of the decimal separator than the amount of zeros in the format code, the additional digits are displayed without formatting."
-msgstr "書式コードに指定した0の桁数よりも <emph>Number</emph> の数値の桁が小さい場合 (整数部および小数部) は、先頭側および末尾側に 0 が追加表示されます。書式コード中の 0 の桁数よりも数値の整数部の桁が大きい場合は、不足分の桁が補われる形で、整数部がそのまま表示されます。"
+msgid "If <literal>expression</literal> has fewer digits than the number of zeros in the <literal>format</literal> code, (on either side of the decimal), leading or trailing zeros are displayed. If the <literal>expression</literal> has more digits to the left of the decimal separator than the amount of zeros in the <literal>format</literal> code, the additional digits are displayed without formatting."
+msgstr ""
 
-#. EDBbq
+#. bYkcA
 #: 03120301.xhp
 msgctxt ""
 "03120301.xhp\n"
 "par_id3151176\n"
 "help.text"
-msgid "Decimal places in the number are rounded according to the number of zeros that appear after the decimal separator in the <emph>Format </emph>code."
-msgstr "数値の小数部は、<emph>Format</emph> コードの小数部に指定する 0 の桁数に合わせて丸められます。"
+msgid "Decimal places in the <literal>expression</literal> are rounded according to the number of zeros that appear after the decimal separator in the <literal>format</literal> code."
+msgstr ""
 
-#. ucKaQ
+#. Cypxj
 #: 03120301.xhp
 msgctxt ""
 "03120301.xhp\n"
 "par_id3154123\n"
 "help.text"
-msgid "<emph>#:</emph> If <emph>Number</emph> contains a digit at the position of the # placeholder in the <emph>Format</emph> code, the digit is displayed, otherwise nothing is displayed at this position."
-msgstr "<emph>#:</emph> <emph>Format</emph> コード中の # プレースホルダーは、<emph>Number</emph> の該当桁の数字を表示させるよう指定する記号で、該当桁に数値が無い場合は何も表示させません。"
+msgid "<emph>#:</emph> If <literal>expression</literal> contains a digit at the position of the # placeholder in the <literal>format</literal> code, the digit is displayed, otherwise nothing is displayed at this position."
+msgstr ""
 
-#. EKGPx
+#. Mst5g
 #: 03120301.xhp
 msgctxt ""
 "03120301.xhp\n"
 "par_id3148452\n"
 "help.text"
-msgid "This symbol works like the 0, except that leading or trailing zeroes are not displayed if there are more # characters in the format code than digits in the number. Only the relevant digits of the number are displayed."
-msgstr "この書式コードは 0 と同様の機能を担っていますが、書式コード側の # の桁数より数値側の桁が小さくても、先頭側および末尾側に 0 が追加表示されない点が異なります。表示されるのは、数値側に実在する桁の数字だけです。"
+msgid "This symbol works like the 0, except that leading or trailing zeroes are not displayed if there are more # characters in the <literal>format</literal> code than digits in the <literal>expression</literal>. Only the relevant digits of the <literal>expression</literal> are displayed."
+msgstr ""
 
 #. Cnq7B
 #: 03120301.xhp
@@ -31102,32 +31219,32 @@ msgctxt ""
 msgid "<emph>.:</emph> The decimal placeholder determines the number of decimal places to the left and right of the decimal separator."
 msgstr "<emph>.:</emph> 小数点プレースホルダーは、小数点の位置を指定する記号で、この位置に応じて整数部および小数部の桁数も規定されます。"
 
-#. tWDUe
+#. ehB5x
 #: 03120301.xhp
 msgctxt ""
 "03120301.xhp\n"
 "par_id3159252\n"
 "help.text"
-msgid "If the format code contains only # placeholders to the left of this symbol, numbers less than 1 begin with a decimal separator. To always display a leading zero with fractional numbers, use 0 as a placeholder for the first digit to the left of the decimal separator."
-msgstr "この記号の左側を # プレースホルダーだけで埋めた書式コードを使用すると、1 よりも小さい数値は、先頭が小数点で始まる書式で表示されます。このような場合の整数部に 0 を表示させるのであれば、書式コードの 1 の位の桁のプレースホルダーとして0を指定します。"
+msgid "If the <literal>format</literal> code contains only # placeholders to the left of this symbol, numbers less than 1 begin with a decimal separator. To always display a leading zero with fractional numbers, use 0 as a placeholder for the first digit to the left of the decimal separator."
+msgstr ""
 
-#. L7ry6
+#. yMgJz
 #: 03120301.xhp
 msgctxt ""
 "03120301.xhp\n"
 "par_id3153368\n"
 "help.text"
-msgid "<emph>%:</emph> Multiplies the number by 100 and inserts the percent sign (%) where the number appears in the format code."
-msgstr "<emph>%:</emph> 数値を 100 倍して、書式コード中の該当箇所にパーセント記号 (%) を表示させます。"
+msgid "<emph>%:</emph> Multiplies the <literal>expression</literal>by 100 and inserts the percent sign (%) where the <literal>expression</literal> appears in the <literal>format</literal> code."
+msgstr ""
 
-#. 5A2Kp
+#. prkKA
 #: 03120301.xhp
 msgctxt ""
 "03120301.xhp\n"
 "par_id3149481\n"
 "help.text"
-msgid "<emph>E- E+ e- e+ :</emph> If the format code contains at least one digit placeholder (0 or #) to the right of the symbol E-, E+, e-, or e+, the number is formatted in the scientific or exponential format. The letter E or e is inserted between the number and the exponent. The number of placeholders for digits to the right of the symbol determines the number of digits in the exponent."
-msgstr "<emph>E- E+ e- e+ :</emph>書式コード中で、E-、E+、e-、e+ のいずれかの記号の右側に数値プレースホルダー (0 ないし #) が 1 つでもあれば、数値を指数形式 (科学書式) で表示させます。この場合得られる結果では、数値と指数部の間に E ないし e が表示されます。この記号の右側にくる数値プレースホルダーの数で、指数表示の桁数が決まります。"
+msgid "<emph>E- E+ e- e+ :</emph> If the <literal>format</literal> code contains at least one digit placeholder (0 or #) to the right of the symbol E-, E+, e-, or e+, the <literal>expression</literal> is formatted in the scientific or exponential format. The letter E or e is inserted between the number and the exponent. The number of placeholders for digits to the right of the symbol determines the number of digits in the exponent."
+msgstr ""
 
 #. jhCb5
 #: 03120301.xhp
@@ -31138,14 +31255,14 @@ msgctxt ""
 msgid "If the exponent is negative, a minus sign is displayed directly before an exponent with E-, E+, e-, e+. If the exponent is positive, a plus sign is only displayed before exponents with E+ or e+."
 msgstr "負の指数の場合は、E-、E+、e-、e+ による指数表示の直前にマイナス記号が表示されます。正の指数の場合は、E+ および e+ による指数表示にのみ、直前にプラス記号が表示されます。"
 
-#. shj6y
+#. WTvZT
 #: 03120301.xhp
 msgctxt ""
 "03120301.xhp\n"
 "par_id3148617\n"
 "help.text"
-msgid "The thousands delimiter is displayed if the format code contains the delimiter enclosed by digit placeholders (0 or #)."
-msgstr "千単位の桁区切りを示す記号を表示させるには、書式コード中の数値プレースホルダーの該当位置に区切り記号を指定しておく必要があります。"
+msgid "The thousands delimiter is displayed if the <literal>format</literal> code contains the delimiter enclosed by digit placeholders (0 or #)."
+msgstr ""
 
 #. A8QmE
 #: 03120301.xhp
@@ -31156,14 +31273,14 @@ msgctxt ""
 msgid "The use of a period as a thousands and decimal separator is dependent on the regional setting. When you enter a number directly in Basic source code, always use a period as decimal delimiter. The actual character displayed as a decimal separator depends on the number format in your system settings."
 msgstr "ピリオド記号が小数点と千単位の桁区切りのどちらに使われるかは、ロケール設定により決まります。  BASICのソースコード内で数値を直接記述するときは、常にピリオド記号を小数点の記号として使います。  小数点としてどの記号が実際に表示されるかは、システムの数値表式設定により決まります。"
 
-#. 5EMgE
+#. sxDcc
 #: 03120301.xhp
 msgctxt ""
 "03120301.xhp\n"
 "par_id3152887\n"
 "help.text"
-msgid "<emph>- + $ ( ) space:</emph> A plus (+), minus (-), dollar ($), space, or brackets entered directly in the format code is displayed as a literal character."
-msgstr "<emph>- + $ ( ) スペース記号 :</emph>書式コード中に、プラス記号 (+)、マイナス記号 (-)、ドル記号 ($)、スペース記号、かっこなどの記号を直接記入した場合は、そのままの記号として表示されます。"
+msgid "<emph>- + $ ( ) space:</emph> A plus (+), minus (-), dollar ($), space, or brackets entered directly in the <literal>format</literal> code is displayed as a literal character."
+msgstr ""
 
 #. PyKZq
 #: 03120301.xhp
@@ -31174,23 +31291,23 @@ msgctxt ""
 msgid "To display characters other than the ones listed here, you must precede it by a backslash (\\), or enclose it in quotation marks (\" \")."
 msgstr "ここで説明したプレースホルダなどの記号を、本来の記号そのものとして表記させるには、バックスラッシュ記号 (\\) を直前に付けるか、引用符 (\" \") で囲む必要があります。"
 
-#. 2VEmR
+#. SqAeG
 #: 03120301.xhp
 msgctxt ""
 "03120301.xhp\n"
 "par_id3153139\n"
 "help.text"
-msgid "\\ : The backslash displays the next character in the format code."
-msgstr "\\ : 書式コード中のバックスラッシュ記号は、次に続く記号をそのまま表示させます。"
+msgid "<emph>\\ :</emph> The backslash displays the next character in the <literal>format</literal> code."
+msgstr ""
 
-#. UFfdk
+#. CBbYy
 #: 03120301.xhp
 msgctxt ""
 "03120301.xhp\n"
 "par_id3153366\n"
 "help.text"
-msgid "Characters in the format code that have a special meaning can only be displayed as literal characters if they are preceded by a backslash. The backslash itself is not displayed, unless you enter a double backslash (\\\\) in the format code."
-msgstr "書式コード用に特定の機能を担っている文字の場合、本来の記号そのものとして表記させるには、バックスラッシュ記号を直前に付ける必要があります。同様に、バックスラッシュ記号そのものを表示させるには、書式コード中でバックスラッシュ記号を2つ続けて記入します (\\\\)。"
+msgid "Characters in the <literal>format</literal> code that have a special meaning can only be displayed as literal characters if they are preceded by a backslash. The backslash itself is not displayed, unless you enter a double backslash (\\\\) in the format code."
+msgstr ""
 
 #. L4LbT
 #: 03120301.xhp
@@ -31201,23 +31318,23 @@ msgctxt ""
 msgid "Characters that must be preceded by a backslash in the format code in order to be displayed as literal characters are date- and time-formatting characters (a, c, d, h, m, n, p, q, s, t, w, y, /, :), numeric-formatting characters (#, 0, %, E, e, comma, period), and string-formatting characters (@, &, <, >, !)."
 msgstr "バックスラッシュ記号を付けないと本来の記号として表示されない書式コード用文字には、日付および時刻の書式設定用文字 (a、c、d、h、m、n、p、q、s、t、w、y、/、:)、数値の書式設定用文字2(#、0、%、E、e、コンマ、ピリオド)、文字列の書式設定用文字 (@、&、<、>、!) が該当します。"
 
-#. NN8eT
+#. BCQqy
 #: 03120301.xhp
 msgctxt ""
 "03120301.xhp\n"
 "par_id3145749\n"
 "help.text"
-msgid "You can also use the following predefined number formats. Except for \"General Number\", all of the predefined format codes return the number as a decimal number with two decimal places."
-msgstr "数値の書式設定には、事前定義された下記の書式コードも使用できます。「General Number」を除くこれらの書式コードは、どれも有効数字 2 桁の数値を返します。"
+msgid "You can also use the following predefined number formats. Except for <literal>\"General Number\"</literal>, all of the predefined format codes return the number as a decimal number with two decimal places."
+msgstr ""
 
-#. fkPvC
+#. MDb3h
 #: 03120301.xhp
 msgctxt ""
 "03120301.xhp\n"
 "par_id3150113\n"
 "help.text"
-msgid "If you use predefined formats, the name of the format must be enclosed in quotation marks."
-msgstr "こうした事前定義された書式コードは、書式コード名を引用符で囲んで使用します。"
+msgid "If you use predefined formats, the name of the <literal>format</literal> must be enclosed in quotation marks."
+msgstr ""
 
 #. GT9Rs
 #: 03120301.xhp
@@ -31282,14 +31399,14 @@ msgctxt ""
 msgid "<emph>Scientific:</emph> Displays numbers in scientific format (for example, 1.00E+03 for 1000)."
 msgstr "<emph>科学: </emph> 数字を指数表現で表します (例；1000は1.00E+03 と表示されます )。"
 
-#. cMtWm
+#. AAj9K
 #: 03120301.xhp
 msgctxt ""
 "03120301.xhp\n"
 "par_id3153707\n"
 "help.text"
-msgid "A format code can be divided into three sections that are separated by semicolons. The first part defines the format for positive values, the second part for negative values, and the third part for zero. If you only specify one format code, it applies to all numbers."
-msgstr "書式コードには、セミコロンを区切り記号として、3つのセクションを指定できます。1 番目のセクションは正の値に対する書式指定、2 番目のセクションは負の値に対する書式指定、3 番目のセクションはゼロに対する書式指定です。書式コードを 1 つだけ指定した場合は、これらすべての数値に対して適用されます。"
+msgid "A <literal>format</literal> code can be divided into three sections that are separated by semicolons. The first part defines the format for positive values, the second part for negative values, and the third part for zero. If you only specify one <literal>format</literal> code, it applies to all numbers."
+msgstr ""
 
 #. ZsNPC
 #: 03120301.xhp

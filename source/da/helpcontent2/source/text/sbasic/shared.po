@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2021-04-27 17:02+0200\n"
-"PO-Revision-Date: 2021-04-26 10:37+0000\n"
+"POT-Creation-Date: 2021-05-05 17:15+0200\n"
+"PO-Revision-Date: 2021-05-03 02:37+0000\n"
 "Last-Translator: SteenRønnow <steen.roennow@mail.dk>\n"
 "Language-Team: Danish <https://translations.documentfoundation.org/projects/libo_help-master/textsbasicshared/da/>\n"
 "Language: da\n"
@@ -2185,6 +2185,51 @@ msgctxt ""
 msgid "Once you have declared a variable as a certain type, you cannot declare the variable under the same name again as a different type!"
 msgstr "Når man en gang har erklæret en variabel som en bestemt type, kan man ikke erklære variablen under det samme navn igen som en anden type!"
 
+#. V5Csc
+#: 01020100.xhp
+msgctxt ""
+"01020100.xhp\n"
+"par_id421619551219763\n"
+"help.text"
+msgid "When you declare multiple variables in a single line of code you need to specify the type of each variable. If the type of a variable is not explicitly specified, then Basic will assume that the variable is of the <emph>Variant</emph> type."
+msgstr ""
+
+#. FzKND
+#: 01020100.xhp
+msgctxt ""
+"01020100.xhp\n"
+"bas_id321619555442706\n"
+"help.text"
+msgid "' Both variables \"a\" and \"b\" are of the Integer type"
+msgstr ""
+
+#. NCE7F
+#: 01020100.xhp
+msgctxt ""
+"01020100.xhp\n"
+"bas_id451619555463988\n"
+"help.text"
+msgid "' Variable \"c\" is a Variant and \"d\" is an Integer"
+msgstr ""
+
+#. fsaNa
+#: 01020100.xhp
+msgctxt ""
+"01020100.xhp\n"
+"bas_id161619555482237\n"
+"help.text"
+msgid "' A variable can also be explicitly declared as a Variant"
+msgstr ""
+
+#. uQD9L
+#: 01020100.xhp
+msgctxt ""
+"01020100.xhp\n"
+"par_id521619551687371\n"
+"help.text"
+msgid "The <emph>Variant</emph> type is a special data type that can store any kind of value. To learn more, refer to the section <link href=\"text/sbasic/shared/01020100.xhp#VariantTypeH2\" name=\"Variant Type\">The Variant type</link> below."
+msgstr ""
+
 #. RENXG
 #: 01020100.xhp
 msgctxt ""
@@ -2535,6 +2580,114 @@ msgctxt ""
 "help.text"
 msgid "dob = #2010-09-28#"
 msgstr "fødselsdato = #2010-09-28#"
+
+#. pCPWV
+#: 01020100.xhp
+msgctxt ""
+"01020100.xhp\n"
+"bm_id601619552599885\n"
+"help.text"
+msgid "<bookmark_value>The Variant type</bookmark_value>  <bookmark_value>The Any type</bookmark_value>"
+msgstr ""
+
+#. mPKPe
+#: 01020100.xhp
+msgctxt ""
+"01020100.xhp\n"
+"VariantTypeH2\n"
+"help.text"
+msgid "The Variant type"
+msgstr ""
+
+#. gnP2t
+#: 01020100.xhp
+msgctxt ""
+"01020100.xhp\n"
+"par_id1001619552129323\n"
+"help.text"
+msgid "Variables declared as <emph>Variant</emph> can handle any data type. This means that the actual data type is defined during runtime as a value is assigned to the variable."
+msgstr ""
+
+#. kKQzr
+#: 01020100.xhp
+msgctxt ""
+"01020100.xhp\n"
+"par_id631619552417188\n"
+"help.text"
+msgid "There are three main ways to create a <emph>Variant</emph> variable, as shown below:"
+msgstr ""
+
+#. ZTswL
+#: 01020100.xhp
+msgctxt ""
+"01020100.xhp\n"
+"bas_id751619554900163\n"
+"help.text"
+msgid "Dim varA            ' The type is not specified, hence the variable is a Variant"
+msgstr ""
+
+#. 3mWEB
+#: 01020100.xhp
+msgctxt ""
+"01020100.xhp\n"
+"bas_id181619554965451\n"
+"help.text"
+msgid "Dim varB as Variant ' The variable is explicitly declared as a Variant"
+msgstr ""
+
+#. vEpTz
+#: 01020100.xhp
+msgctxt ""
+"01020100.xhp\n"
+"bas_id371619554853094\n"
+"help.text"
+msgid "varC = \"abc\"        ' Previously undeclared variables are treated as Variants"
+msgstr ""
+
+#. PDFED
+#: 01020100.xhp
+msgctxt ""
+"01020100.xhp\n"
+"par_id631619552417343\n"
+"help.text"
+msgid "The example below uses the <link href=\"text/sbasic/shared/03103600.xhp\" name=\"TypeName function\">TypeName function</link> to show how the type of a <emph>Variant</emph> variable changes upon assignment."
+msgstr ""
+
+#. smtqw
+#: 01020100.xhp
+msgctxt ""
+"01020100.xhp\n"
+"par_id141619553442668\n"
+"help.text"
+msgid "A <emph>Variant</emph> variable is initialized with the <link href=\"text/sbasic/shared/03040000.xhp#objectconstants\" name=\" object constants\">Empty</link> special data type. You can use the <link href=\"text/sbasic/shared/03102400.xhp\" name=\"IsEmpty function\">IsEmpty function</link> to test if a variable is an <emph>Empty Variant</emph>."
+msgstr ""
+
+#. aervF
+#: 01020100.xhp
+msgctxt ""
+"01020100.xhp\n"
+"par_id541619552755706\n"
+"help.text"
+msgid "You can also use the keyword <emph>Any</emph> to declare a variable as a <emph>Variant</emph>. However, <emph>Any</emph> is deprecated and is available for backward compatibility."
+msgstr ""
+
+#. 74VtP
+#: 01020100.xhp
+msgctxt ""
+"01020100.xhp\n"
+"par_id711619622934043\n"
+"help.text"
+msgid "Arguments with type <emph>Variant</emph> or <emph>Any</emph> passed in function calls are not checked for their types."
+msgstr ""
+
+#. qFpUB
+#: 01020100.xhp
+msgctxt ""
+"01020100.xhp\n"
+"bas_id141619552837486\n"
+"help.text"
+msgid "Dim myVar As Any ' Variable \"myVar\" is a Variant"
+msgstr ""
 
 #. kGGKi
 #: 01020100.xhp
@@ -7529,7 +7682,7 @@ msgctxt ""
 "hd_id3152892\n"
 "help.text"
 msgid "When losing focus"
-msgstr "Ved mistet fokus"
+msgstr "Når fokus mistes"
 
 #. kF9wq
 #: 01170103.xhp
@@ -7873,31 +8026,31 @@ msgctxt ""
 msgid "Displays a dialog box containing a message."
 msgstr "Viser en dialog indeholdende en besked."
 
-#. 6pAvx
+#. rXKix
 #: 03010101.xhp
 msgctxt ""
 "03010101.xhp\n"
 "par_id3148798\n"
 "help.text"
-msgid "<emph>Prompt</emph>: String expression displayed as a message in the dialog box. Line breaks can be inserted with Chr$(13)."
+msgid "<emph>prompt</emph>: String expression displayed as a message in the dialog box. Line breaks can be inserted with Chr$(13)."
 msgstr ""
 
-#. wNFv5
+#. oK5f6
 #: 03010101.xhp
 msgctxt ""
 "03010101.xhp\n"
 "par_id3150769\n"
 "help.text"
-msgid "<emph>Title</emph>: String expression displayed in the title bar of the dialog. If omitted, the title bar displays the name of the respective application."
+msgid "<emph>title</emph>: String expression displayed in the title bar of the dialog. If omitted, the title bar displays the name of the respective application."
 msgstr ""
 
-#. aC93y
+#. HPRQD
 #: 03010101.xhp
 msgctxt ""
 "03010101.xhp\n"
 "par_id3147228\n"
 "help.text"
-msgid "<emph>Buttons</emph>: Any integer expression that specifies the dialog type, as well as the number and type of buttons to display, and the icon type. <emph>Buttons</emph> represents a combination of bit patterns, that is, a combination of elements can be defined by adding their respective values:"
+msgid "<emph>buttons</emph>: Any integer expression that specifies the dialog type, as well as the number and type of buttons to display, and the icon type. <emph>Buttons</emph> represents a combination of bit patterns, that is, a combination of elements can be defined by adding their respective values:"
 msgstr ""
 
 #. xuEUm
@@ -8458,58 +8611,58 @@ msgctxt ""
 msgid "The <emph>InputBox</emph> statement is a convenient method of entering text through a dialog. Confirm the input by clicking OK or pressing Return. The input is returned as the function return value. If you close the dialog with Cancel, <emph>InputBox</emph> returns a zero-length string (\"\")."
 msgstr "<emph>InputBox</emph>erklæringen er en nem metode til at indtaste tekst ved hjælp af en dialog. Bekræft input ved at klikke på OK eller ved at trykke på Enter. Indtastningen returneres som funktionens returværdi. Hvis du lukker dialogen med Annuller, returnerer <emph>InputBox</emph> en tom streng (\"\")."
 
-#. G7eXr
+#. fcMCj
 #: 03010201.xhp
 msgctxt ""
 "03010201.xhp\n"
 "par_id3153311\n"
 "help.text"
-msgid "<emph>Prompt</emph>: String expression displayed as the message in the dialog box."
+msgid "<emph>prompt</emph>: String expression displayed as the message in the dialog box."
 msgstr ""
 
-#. 66zGG
+#. kqAw6
 #: 03010201.xhp
 msgctxt ""
 "03010201.xhp\n"
 "par_id3145315\n"
 "help.text"
-msgid "<emph>Title</emph>: String expression displayed in the title bar of the dialog box."
-msgstr "<emph>Title</emph>: Strengudtrykket vist i titellinjen af dialogen."
+msgid "<emph>title</emph>: String expression displayed in the title bar of the dialog box."
+msgstr ""
 
-#. b7vFT
+#. 4qoJn
 #: 03010201.xhp
 msgctxt ""
 "03010201.xhp\n"
 "par_id3154307\n"
 "help.text"
-msgid "<emph>Default</emph>: String expression displayed in the text box as default if no other input is given."
-msgstr "<emph>Default</emph>: Det viste strengudtryk i tekstfeltet som standard, hvis ingen anden indtastning er givet."
+msgid "<emph>default</emph>: String expression displayed in the text box as default if no other input is given."
+msgstr ""
 
-#. Cs49h
+#. w5QhP
 #: 03010201.xhp
 msgctxt ""
 "03010201.xhp\n"
 "par_id3147573\n"
 "help.text"
-msgid "<emph>xPosTwips</emph>: Integer expression that specifies the horizontal position of the dialog. The position is an absolute coordinate and does not refer to the window of the office application."
+msgid "<emph>xpostwips</emph>: Integer expression that specifies the horizontal position of the dialog. The position is an absolute coordinate and does not refer to the window of the office application."
 msgstr ""
 
-#. QyymW
+#. CannW
 #: 03010201.xhp
 msgctxt ""
 "03010201.xhp\n"
 "par_id3156024\n"
 "help.text"
-msgid "<emph>yPosTwips</emph>: Integer expression that specifies the vertical position of the dialog. The position is an absolute coordinate and does not refer to the window of the office application."
+msgid "<emph>ypostwips</emph>: Integer expression that specifies the vertical position of the dialog. The position is an absolute coordinate and does not refer to the window of the office application."
 msgstr ""
 
-#. 8pC7C
+#. m6iBC
 #: 03010201.xhp
 msgctxt ""
 "03010201.xhp\n"
 "par_id3153897\n"
 "help.text"
-msgid "If <emph>xPosTwips</emph> and <emph>yPosTwips</emph> are omitted, the dialog is centered on the screen. The position is specified in <link href=\"text/sbasic/shared/00000002.xhp#twips\" name=\"twips\">twips</link>."
+msgid "If <literal>xpostwips</literal> and <literal>yPosTwips</literal> are omitted, the dialog is centered on the screen. The position is specified in <link href=\"text/sbasic/shared/00000002.xhp#twips\" name=\"twips\">twips</link>."
 msgstr ""
 
 #. Mh8Z6
@@ -9333,32 +9486,32 @@ msgctxt ""
 msgid "Parameter:"
 msgstr "Parameter:"
 
-#. pP9x5
+#. QM73e
 #: 03010305.xhp
 msgctxt ""
 "03010305.xhp\n"
 "par_id3152597\n"
 "help.text"
-msgid "<emph>Red</emph>: Any integer expression that represents the red component (0-255) of the composite color."
-msgstr "<emph>Red</emph>: Ethvert heltalsudtryk, der repræsenterer den røde komponent (0-255) i den sammensatte farve."
+msgid "<emph>red</emph>: Any integer expression that represents the red component (0-255) of the composite color."
+msgstr ""
 
-#. pbFvi
+#. H7yGv
 #: 03010305.xhp
 msgctxt ""
 "03010305.xhp\n"
 "par_id3146974\n"
 "help.text"
-msgid "<emph>Green</emph>: Any integer expression that represents the green component (0-255) of the composite color."
-msgstr "<emph>Green</emph>: Ethvert heltalsudtryk, der repræsenterer den grønne komponent (0-255) i den sammensatte farve."
+msgid "<emph>green</emph>: Any integer expression that represents the green component (0-255) of the composite color."
+msgstr ""
 
-#. XG6FB
+#. t8P2M
 #: 03010305.xhp
 msgctxt ""
 "03010305.xhp\n"
 "par_id3151113\n"
 "help.text"
-msgid "<emph>Blue</emph>: Any integer expression that represents the blue component (0-255) of the composite color."
-msgstr "<emph>Blue</emph>: Ethvert heltalsudtryk, der repræsenterer den blå komponent (0-255) i den sammensatte farve."
+msgid "<emph>blue</emph>: Any integer expression that represents the blue component (0-255) of the composite color."
+msgstr ""
 
 #. cFpDD
 #: 03010305.xhp
@@ -13079,68 +13232,32 @@ msgctxt ""
 msgid "Returns a date value from a date string. The date string is a complete date in a single numeric value. You can also use this serial number to determine the difference between two dates."
 msgstr "Returnerer en datoværdi fra en datostreng. Datostrengen er en komplet dato i en enkelt numerisk værdi. Du kan også bruge dette løbende tal til at fastslå forskellen mellem to datoer."
 
-#. QJz7y
-#: 03030102.xhp
-msgctxt ""
-"03030102.xhp\n"
-"hd_id3148799\n"
-"help.text"
-msgid "Syntax:"
-msgstr "Syntaks:"
-
-#. 3FsEa
+#. PxEGo
 #: 03030102.xhp
 msgctxt ""
 "03030102.xhp\n"
 "par_id3154910\n"
 "help.text"
-msgid "DateValue [(date)]"
-msgstr "DateValue [(dato)]"
+msgid "DateValue(date)"
+msgstr ""
 
-#. B7CrF
-#: 03030102.xhp
-msgctxt ""
-"03030102.xhp\n"
-"hd_id3150870\n"
-"help.text"
-msgid "Return value:"
-msgstr "Returværdi:"
-
-#. 4G37B
-#: 03030102.xhp
-msgctxt ""
-"03030102.xhp\n"
-"par_id3153194\n"
-"help.text"
-msgid "Date"
-msgstr "Dato"
-
-#. NHYd9
-#: 03030102.xhp
-msgctxt ""
-"03030102.xhp\n"
-"hd_id3153969\n"
-"help.text"
-msgid "Parameters:"
-msgstr "Parametre:"
-
-#. ghsyA
+#. vxxyq
 #: 03030102.xhp
 msgctxt ""
 "03030102.xhp\n"
 "par_id3153770\n"
 "help.text"
-msgid "<emph>Date:</emph> String expression that contains the date that you want to calculate. In contrast to the DateSerial function that passes years, months and days as separate numeric values, the DateValue function requests the date string to be according to either one of the date acceptance patterns defined for your locale setting (see <switchinline select=\"sys\"><caseinline select=\"MAC\"><menuitem>%PRODUCTNAME - Preferences</menuitem></caseinline><defaultinline><menuitem>Tools - Options</menuitem></defaultinline></switchinline><menuitem> - Language Settings - Languages</menuitem>) or to ISO date format (momentarily, only the ISO format with hyphens, e.g. \"2012-12-31\" is accepted)."
-msgstr "<emph>Dato:</emph> Strengudtryk, som indeholder den dato, du vil beregne. I modsætning til funktionen DatoSerie, som angiver år, måneder og som separate numeriske værdier, kræver funktionen DatoVærdi at datostrengen er i overensstemmelse med enten et af de accepterede datomønstre, der er defineret for din lokale indstilling (se <switchinline select=\"sys\"><caseinline select=\"MAC\"><menuitem>%PRODUCTNAME -Indstillinger</menuitem></caseinline><defaultinline><menuitem>Funktioner ▸ Indstillinger</menuitem></defaultinline></switchinline><menuitem> ▸ Sprogindstillinger ▸ Sprog</menuitem> eller med ISO datoformat (for tiden accepteres udelukkende ISO datoformatet med bindestreger, som for eksempel \"2012-12-31\")."
+msgid "<emph>Date</emph>: String expression that contains the date that you want to calculate. In contrast to the DateSerial function that passes years, months and days as separate numeric values, the DateValue function requests the date string to be according to either one of the date acceptance patterns defined for your locale setting (see <switchinline select=\"sys\"><caseinline select=\"MAC\"><menuitem>%PRODUCTNAME - Preferences</menuitem></caseinline><defaultinline><menuitem>Tools - Options</menuitem></defaultinline></switchinline><menuitem> - Language Settings - Languages</menuitem>) or to ISO date format (momentarily, only the ISO format with hyphens, e.g. \"2012-12-31\" is accepted)."
+msgstr ""
 
-#. EWVzU
+#. KmwFZ
 #: 03030102.xhp
 msgctxt ""
 "03030102.xhp\n"
-"hd_id3153142\n"
+"par_id3153194\n"
 "help.text"
-msgid "Example:"
-msgstr "Eksempel:"
+msgid "The computed date."
+msgstr ""
 
 #. wDviP
 #: 03030103.xhp
@@ -14897,23 +15014,23 @@ msgctxt ""
 msgid "<emph>date1, date2</emph> - The two date values to be compared."
 msgstr "<emph>date1, date2</emph> - De to dato-værdier, der skal sammenlignes."
 
-#. yVo8Q
+#. e7hMm
 #: 03030120.xhp
 msgctxt ""
 "03030120.xhp\n"
 "par_idN1066A\n"
 "help.text"
-msgid "<emph>firstDayOfWeek</emph> - An optional parameter that specifies the starting day of a week."
-msgstr "<emph>firstDayOfWeek</emph> - En valgfri parameter, der angiver den første dag i ugen."
+msgid "<emph>firstdayofweek</emph>: An optional parameter that specifies the starting day of a week."
+msgstr ""
 
-#. dDoRU
+#. wpCoP
 #: 03030120.xhp
 msgctxt ""
 "03030120.xhp\n"
 "par_idN1067A\n"
 "help.text"
-msgid "firstDayOfWeek value"
-msgstr "værdien firstDayOfWeek (ugens første dag)"
+msgid "firstdayofweek value"
+msgstr ""
 
 #. gmaR8
 #: 03030120.xhp
@@ -15068,23 +15185,23 @@ msgctxt ""
 msgid "Saturday"
 msgstr "Lørdag"
 
-#. BLhqf
+#. E5nqv
 #: 03030120.xhp
 msgctxt ""
 "03030120.xhp\n"
 "par_idN106EB\n"
 "help.text"
-msgid "<emph>firstWeekOfYear</emph> - An optional parameter that specifies the starting week of a year."
-msgstr "<emph>firstWeekOfYear</emph> - En valgfri parameter, der angiver årets første uge."
+msgid "<emph>firstweekofyear</emph>: An optional parameter that specifies the starting week of a year."
+msgstr ""
 
-#. KGncd
+#. e3gQd
 #: 03030120.xhp
 msgctxt ""
 "03030120.xhp\n"
 "par_idN106FB\n"
 "help.text"
-msgid "firstWeekOfYear value"
-msgstr "værdien firstWeekOfYear value (årets første uge)"
+msgid "firstweekofyear value"
+msgstr ""
 
 #. zAFFS
 #: 03030120.xhp
@@ -16418,14 +16535,14 @@ msgctxt ""
 msgid "<bookmark_value>Basic constants</bookmark_value>"
 msgstr "<bookmark_value>Basic-konstanter</bookmark_value>"
 
-#. NMCZ2
+#. ev3DS
 #: 03040000.xhp
 msgctxt ""
 "03040000.xhp\n"
 "hd_id051620171022255424\n"
 "help.text"
-msgid "<link href=\"text/sbasic/shared/03040000.xhp\">Basic Constants</link>"
-msgstr "<link href=\"text/sbasic/shared/03040000.xhp\">Basic-konstanter</link>"
+msgid "<variable id=\"basicconstantsh1\"><link href=\"text/sbasic/shared/03040000.xhp\">Basic Constants</link></variable>"
+msgstr ""
 
 #. K6sdH
 #: 03040000.xhp
@@ -26498,14 +26615,14 @@ msgctxt ""
 msgid "<bookmark_value>Dim statement</bookmark_value>  <bookmark_value>arrays; dimensioning</bookmark_value>  <bookmark_value>dimensioning arrays</bookmark_value>"
 msgstr "<bookmark_value>Dim-sætning</bookmark_value><bookmark_value>arrays; dimensionere</bookmark_value><bookmark_value>dimensionere arrays</bookmark_value>"
 
-#. 4Usmk
+#. HnQSe
 #: 03102100.xhp
 msgctxt ""
 "03102100.xhp\n"
 "hd_id3149812\n"
 "help.text"
-msgid "<link href=\"text/sbasic/shared/03102100.xhp\" name=\"Dim Statement\">Dim Statement</link>"
-msgstr "<link href=\"text/sbasic/shared/03102100.xhp\" name=\"Dim Statement\">Dim-udtryk</link>"
+msgid "<variable id=\"Dimh1\"><link href=\"text/sbasic/shared/03102100.xhp\" name=\"Dim Statement\">Dim Statement</link></variable>"
+msgstr ""
 
 #. 9gRSS
 #: 03102100.xhp
@@ -30989,50 +31106,50 @@ msgctxt ""
 msgid "<link href=\"text/sbasic/shared/03120301.xhp\" name=\"Format Function\">Format Function</link>"
 msgstr "<link href=\"text/sbasic/shared/03120301.xhp\" name=\"Format Function\">Format-funktion</link>"
 
-#. ZAitp
+#. AfW2N
 #: 03120301.xhp
 msgctxt ""
 "03120301.xhp\n"
 "par_id3156042\n"
 "help.text"
-msgid "Converts a number to a string, and then formats it according to the format that you specify."
-msgstr "Konverterer et tal til en streng, og formater det derefter ifølge det format som du angiver."
+msgid "Converts a numeric expression to a string, and then formats it according to the format that you specify."
+msgstr ""
 
-#. wp4Ae
+#. arnAa
 #: 03120301.xhp
 msgctxt ""
 "03120301.xhp\n"
 "par_id3153527\n"
 "help.text"
-msgid "Format (Number [, Format As String])"
-msgstr "Format (Number [, Format As String])"
+msgid "Format(expression [, format As String]) As String"
+msgstr ""
 
-#. gddga
-#: 03120301.xhp
-msgctxt ""
-"03120301.xhp\n"
-"par_id3148474\n"
-"help.text"
-msgid "String"
-msgstr "String"
-
-#. 6Dyxg
+#. v2BdG
 #: 03120301.xhp
 msgctxt ""
 "03120301.xhp\n"
 "par_id3149415\n"
 "help.text"
-msgid "<emph>Number:</emph> Numeric expression that you want to convert to a formatted string."
-msgstr "<emph>Number:</emph> Numerisk udtryk som du vil konvertere til en formateret streng."
+msgid "<emph>expression</emph>: Numeric expression that you want to convert to a formatted string."
+msgstr ""
 
-#. G3TNy
+#. p5nFg
 #: 03120301.xhp
 msgctxt ""
 "03120301.xhp\n"
 "par_id3147531\n"
 "help.text"
-msgid "<emph>Format:</emph> String that specifies the format code for the number. If <emph>Format</emph> is omitted, the Format function works like the <emph>Str</emph> function."
-msgstr "<emph>Format:</emph> Streng som angiver formatkoden for tallet. Hvis <emph>Format</emph> er udeladt, vil Format-funktion virke som funktionen <emph>Str</emph>."
+msgid "<emph>format</emph>: String that specifies the format code for the number. If <literal>format</literal> is omitted, the Format function works like the %PRODUCTNAME Basic <literal>Str()</literal> function."
+msgstr ""
+
+#. Mh6xN
+#: 03120301.xhp
+msgctxt ""
+"03120301.xhp\n"
+"par_id3148474\n"
+"help.text"
+msgid "Text string."
+msgstr ""
 
 #. 8DmPW
 #: 03120301.xhp
@@ -31043,59 +31160,59 @@ msgctxt ""
 msgid "Formatting Codes"
 msgstr "Formateringskoder"
 
-#. j9pBf
+#. 4TDkj
 #: 03120301.xhp
 msgctxt ""
 "03120301.xhp\n"
 "par_id3147265\n"
 "help.text"
-msgid "The following list describes the codes that you can use for formatting a number:"
-msgstr "Den følgende liste beskriver de koder, som du kan bruge til at formatere et tal:"
+msgid "The following list describes the codes that you can use for formatting a numeric expression:"
+msgstr ""
 
-#. AA4AR
+#. LJGi5
 #: 03120301.xhp
 msgctxt ""
 "03120301.xhp\n"
 "par_id3153380\n"
 "help.text"
-msgid "<emph>0:</emph> If <emph>Number</emph> has a digit at the position of the 0 in the format code, the digit is displayed, otherwise a zero is displayed."
-msgstr "<emph>0:</emph> Hvis <emph>tallet</emph> har et ciffer ved placeringen af 0'et i formatkoden, vil cifferet blive vist, ellers vil et nul blive vist."
+msgid "<emph>0:</emph> If <literal>expression</literal> has a digit at the position of the 0 in the <literal>format</literal> code, the digit is displayed, otherwise a zero is displayed."
+msgstr ""
 
-#. 6hoDN
+#. MRyQ7
 #: 03120301.xhp
 msgctxt ""
 "03120301.xhp\n"
 "par_id3151210\n"
 "help.text"
-msgid "If <emph>Number</emph> has fewer digits than the number of zeros in the format code, (on either side of the decimal), leading or trailing zeros are displayed. If the number has more digits to the left of the decimal separator than the amount of zeros in the format code, the additional digits are displayed without formatting."
-msgstr "Hvis <emph>tallet</emph> har færre cifre end antal nuller i formatkoden (på en hvilken som helst side af decimalen), vises indledende eller efterfølgende nuller. Hvis tallet har flere cifre til venstre for kommaskilletegnet end mængden af nuller i formatkoden, vil de yderligere cifre vises uden formatering."
+msgid "If <literal>expression</literal> has fewer digits than the number of zeros in the <literal>format</literal> code, (on either side of the decimal), leading or trailing zeros are displayed. If the <literal>expression</literal> has more digits to the left of the decimal separator than the amount of zeros in the <literal>format</literal> code, the additional digits are displayed without formatting."
+msgstr ""
 
-#. EDBbq
+#. bYkcA
 #: 03120301.xhp
 msgctxt ""
 "03120301.xhp\n"
 "par_id3151176\n"
 "help.text"
-msgid "Decimal places in the number are rounded according to the number of zeros that appear after the decimal separator in the <emph>Format </emph>code."
-msgstr "Antal decimaler i tallet bliver afrundet ifølge antal nuller som optræder efter decimaltegnet i <emph>Format</emph> koden."
+msgid "Decimal places in the <literal>expression</literal> are rounded according to the number of zeros that appear after the decimal separator in the <literal>format</literal> code."
+msgstr ""
 
-#. ucKaQ
+#. Cypxj
 #: 03120301.xhp
 msgctxt ""
 "03120301.xhp\n"
 "par_id3154123\n"
 "help.text"
-msgid "<emph>#:</emph> If <emph>Number</emph> contains a digit at the position of the # placeholder in the <emph>Format</emph> code, the digit is displayed, otherwise nothing is displayed at this position."
-msgstr "<emph>#:</emph> Hvis <emph>tallet</emph> indeholder et ciffer ved #--pladsholderens placering i <emph>Format</emph>-koden, vil cifferet blive vist, ellers bliver ingenting vist på denne placering."
+msgid "<emph>#:</emph> If <literal>expression</literal> contains a digit at the position of the # placeholder in the <literal>format</literal> code, the digit is displayed, otherwise nothing is displayed at this position."
+msgstr ""
 
-#. EKGPx
+#. Mst5g
 #: 03120301.xhp
 msgctxt ""
 "03120301.xhp\n"
 "par_id3148452\n"
 "help.text"
-msgid "This symbol works like the 0, except that leading or trailing zeroes are not displayed if there are more # characters in the format code than digits in the number. Only the relevant digits of the number are displayed."
-msgstr "Dette symbol virker som 0'et, undtagen at indledende eller efterfølgende nuller ikke vises hvis der er flere # tegn i formatkoden end cifre i tallet. Kun de relevante cifre af tallet vises."
+msgid "This symbol works like the 0, except that leading or trailing zeroes are not displayed if there are more # characters in the <literal>format</literal> code than digits in the <literal>expression</literal>. Only the relevant digits of the <literal>expression</literal> are displayed."
+msgstr ""
 
 #. Cnq7B
 #: 03120301.xhp
@@ -31106,32 +31223,32 @@ msgctxt ""
 msgid "<emph>.:</emph> The decimal placeholder determines the number of decimal places to the left and right of the decimal separator."
 msgstr "<emph>.:</emph> Decimalpladsholderen bestemmer antal decimaler til venstre og højre for decimaltegnet."
 
-#. tWDUe
+#. ehB5x
 #: 03120301.xhp
 msgctxt ""
 "03120301.xhp\n"
 "par_id3159252\n"
 "help.text"
-msgid "If the format code contains only # placeholders to the left of this symbol, numbers less than 1 begin with a decimal separator. To always display a leading zero with fractional numbers, use 0 as a placeholder for the first digit to the left of the decimal separator."
-msgstr "Hvis formatkoden kun indeholder #-pladsholdere til venstre for dette symbol, begynder tal mindre end 1 med et decimaltegn. For altid at vise et foranstillet nul med brøktal, brug 0 som pladsholder for det første ciffer til venstre for kommategnet."
+msgid "If the <literal>format</literal> code contains only # placeholders to the left of this symbol, numbers less than 1 begin with a decimal separator. To always display a leading zero with fractional numbers, use 0 as a placeholder for the first digit to the left of the decimal separator."
+msgstr ""
 
-#. L7ry6
+#. yMgJz
 #: 03120301.xhp
 msgctxt ""
 "03120301.xhp\n"
 "par_id3153368\n"
 "help.text"
-msgid "<emph>%:</emph> Multiplies the number by 100 and inserts the percent sign (%) where the number appears in the format code."
-msgstr "<emph>%:</emph> Ganger tallet med 100 og indsætter procenttegnet (%) hvor tallet vises i formatkoden."
+msgid "<emph>%:</emph> Multiplies the <literal>expression</literal>by 100 and inserts the percent sign (%) where the <literal>expression</literal> appears in the <literal>format</literal> code."
+msgstr ""
 
-#. 5A2Kp
+#. prkKA
 #: 03120301.xhp
 msgctxt ""
 "03120301.xhp\n"
 "par_id3149481\n"
 "help.text"
-msgid "<emph>E- E+ e- e+ :</emph> If the format code contains at least one digit placeholder (0 or #) to the right of the symbol E-, E+, e-, or e+, the number is formatted in the scientific or exponential format. The letter E or e is inserted between the number and the exponent. The number of placeholders for digits to the right of the symbol determines the number of digits in the exponent."
-msgstr "<emph>E- E+ e- e+ :</emph> Hvis formateringskoden indeholder mindst én cifferpladsholder (0 eller #) til højre for symbolet E-, E+, e-, eller e+, vil tallet formateres med det videnskabelige eller eksponentielle format. Bogstavet E eller e bliver indsat mellem tallet og eksponenten. Antallet af pladsholdere for cifre til højre for symbolet bestemmer antal cifre i eksponenten."
+msgid "<emph>E- E+ e- e+ :</emph> If the <literal>format</literal> code contains at least one digit placeholder (0 or #) to the right of the symbol E-, E+, e-, or e+, the <literal>expression</literal> is formatted in the scientific or exponential format. The letter E or e is inserted between the number and the exponent. The number of placeholders for digits to the right of the symbol determines the number of digits in the exponent."
+msgstr ""
 
 #. jhCb5
 #: 03120301.xhp
@@ -31142,14 +31259,14 @@ msgctxt ""
 msgid "If the exponent is negative, a minus sign is displayed directly before an exponent with E-, E+, e-, e+. If the exponent is positive, a plus sign is only displayed before exponents with E+ or e+."
 msgstr "Hvis eksponenten er negativ, bliver et minustegn vist umiddelbart før en eksponent med E-, E+, e-, e+. Hvis eksponenten er positiv, bliver et plustegn kun vist før eksponenter med E+ eller e+."
 
-#. shj6y
+#. WTvZT
 #: 03120301.xhp
 msgctxt ""
 "03120301.xhp\n"
 "par_id3148617\n"
 "help.text"
-msgid "The thousands delimiter is displayed if the format code contains the delimiter enclosed by digit placeholders (0 or #)."
-msgstr "Tusindeskilletegnet bliver vist hvis formateringskoden indeholder skilletegnet omgivet af cifferpladsholdere (0 eller #)."
+msgid "The thousands delimiter is displayed if the <literal>format</literal> code contains the delimiter enclosed by digit placeholders (0 or #)."
+msgstr ""
 
 #. A8QmE
 #: 03120301.xhp
@@ -31160,14 +31277,14 @@ msgctxt ""
 msgid "The use of a period as a thousands and decimal separator is dependent on the regional setting. When you enter a number directly in Basic source code, always use a period as decimal delimiter. The actual character displayed as a decimal separator depends on the number format in your system settings."
 msgstr "Brug af et punktum som et tusinde- og decimaltegn afhænger af regionsindstillingen. Brug altid et punktum som decimaltegn, når du indtaster et tal direkte i Basic-kildekode. Det specifikke tegn, der bliver vist som decimaltegn, afhænger af talformatet i dine systemindstillinger."
 
-#. 5EMgE
+#. sxDcc
 #: 03120301.xhp
 msgctxt ""
 "03120301.xhp\n"
 "par_id3152887\n"
 "help.text"
-msgid "<emph>- + $ ( ) space:</emph> A plus (+), minus (-), dollar ($), space, or brackets entered directly in the format code is displayed as a literal character."
-msgstr "<emph>- + $ ( ) mellemrum:</emph> Et plus (+), minus (-), dollar ($), mellemrum eller parenteser indtastet direkte i formatkoden vises som et bogstaveligt tegn."
+msgid "<emph>- + $ ( ) space:</emph> A plus (+), minus (-), dollar ($), space, or brackets entered directly in the <literal>format</literal> code is displayed as a literal character."
+msgstr ""
 
 #. PyKZq
 #: 03120301.xhp
@@ -31178,23 +31295,23 @@ msgctxt ""
 msgid "To display characters other than the ones listed here, you must precede it by a backslash (\\), or enclose it in quotation marks (\" \")."
 msgstr "For at vise andre tegn end de der er opført her, skal du indlede det med en bagstreg (\\), eller omgive det med anførselstegn (\" \")."
 
-#. 2VEmR
+#. SqAeG
 #: 03120301.xhp
 msgctxt ""
 "03120301.xhp\n"
 "par_id3153139\n"
 "help.text"
-msgid "\\ : The backslash displays the next character in the format code."
-msgstr "\\ : Bagskråstregen viser det næste tegn i formatkoden."
+msgid "<emph>\\ :</emph> The backslash displays the next character in the <literal>format</literal> code."
+msgstr ""
 
-#. UFfdk
+#. CBbYy
 #: 03120301.xhp
 msgctxt ""
 "03120301.xhp\n"
 "par_id3153366\n"
 "help.text"
-msgid "Characters in the format code that have a special meaning can only be displayed as literal characters if they are preceded by a backslash. The backslash itself is not displayed, unless you enter a double backslash (\\\\) in the format code."
-msgstr "Tegn i formatkoden, som har en speciel betydning, kan kun blive vist som bogstavelige tegn, hvis de er indledt med en bagstreg. Denne bagstreg vises ikke, med mindre du indtaster en dobbelt bagstreg (\\\\) i formatkoden."
+msgid "Characters in the <literal>format</literal> code that have a special meaning can only be displayed as literal characters if they are preceded by a backslash. The backslash itself is not displayed, unless you enter a double backslash (\\\\) in the format code."
+msgstr ""
 
 #. L4LbT
 #: 03120301.xhp
@@ -31205,23 +31322,23 @@ msgctxt ""
 msgid "Characters that must be preceded by a backslash in the format code in order to be displayed as literal characters are date- and time-formatting characters (a, c, d, h, m, n, p, q, s, t, w, y, /, :), numeric-formatting characters (#, 0, %, E, e, comma, period), and string-formatting characters (@, &, <, >, !)."
 msgstr "De tegn, der skal have foranstillet en bagstreg i formatkoden for at blive vist som bogstavelige tegn, er: dato- og tidsformateringstegn (a, c, d, h, m, n, p, q, s, t, w, y, /, :), numeriske formateringstegn (#, 0, %, E, e, komma, punktum) og strengformateringstegn (@, &, <, >, !)."
 
-#. NN8eT
+#. BCQqy
 #: 03120301.xhp
 msgctxt ""
 "03120301.xhp\n"
 "par_id3145749\n"
 "help.text"
-msgid "You can also use the following predefined number formats. Except for \"General Number\", all of the predefined format codes return the number as a decimal number with two decimal places."
-msgstr "Du kan også bruge følgende foruddefinerede talformater. Med undtagelse af \"Generel værdi\" returnerer alle de foruddefinerede formatkoder tallet som et decimaltal med to decimaler."
+msgid "You can also use the following predefined number formats. Except for <literal>\"General Number\"</literal>, all of the predefined format codes return the number as a decimal number with two decimal places."
+msgstr ""
 
-#. fkPvC
+#. MDb3h
 #: 03120301.xhp
 msgctxt ""
 "03120301.xhp\n"
 "par_id3150113\n"
 "help.text"
-msgid "If you use predefined formats, the name of the format must be enclosed in quotation marks."
-msgstr "Hvis du bruger forud-definerede formater, skal navnet på formatet være omgivet af anførselstegn."
+msgid "If you use predefined formats, the name of the <literal>format</literal> must be enclosed in quotation marks."
+msgstr ""
 
 #. GT9Rs
 #: 03120301.xhp
@@ -31286,14 +31403,14 @@ msgctxt ""
 msgid "<emph>Scientific:</emph> Displays numbers in scientific format (for example, 1.00E+03 for 1000)."
 msgstr "<emph>Videnskabeligt:</emph> Viser tal i videnskabelige formater (for eksempel 1.00E+03 for 1000)."
 
-#. cMtWm
+#. AAj9K
 #: 03120301.xhp
 msgctxt ""
 "03120301.xhp\n"
 "par_id3153707\n"
 "help.text"
-msgid "A format code can be divided into three sections that are separated by semicolons. The first part defines the format for positive values, the second part for negative values, and the third part for zero. If you only specify one format code, it applies to all numbers."
-msgstr "En formatkode kan være opdelt i tre sektioner som er adskilte af semikoloner. Første del angiver formatet for positive værdier, den anden del for negative værdier, og den tredje del for nul. Hvis du kun angiver en formatkode, gælder det for alle tal."
+msgid "A <literal>format</literal> code can be divided into three sections that are separated by semicolons. The first part defines the format for positive values, the second part for negative values, and the third part for zero. If you only specify one <literal>format</literal> code, it applies to all numbers."
+msgstr ""
 
 #. ZsNPC
 #: 03120301.xhp
