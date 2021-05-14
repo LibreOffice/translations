@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2021-05-05 17:15+0200\n"
+"POT-Creation-Date: 2021-05-14 14:15+0200\n"
 "PO-Revision-Date: 2020-08-01 07:35+0000\n"
 "Last-Translator: Dimitris Spingos <dmtrs32@gmail.com>\n"
 "Language-Team: Greek <https://weblate.documentfoundation.org/projects/libo_help-master/textsbasicshared03/el/>\n"
@@ -6361,13 +6361,13 @@ msgctxt ""
 msgid "In modal mode, the box is displayed and the execution of the macro process is suspended until one of the OK or Cancel buttons is pressed. In the meantime, user actions executed on the box can trigger specific actions."
 msgstr ""
 
-#. QEaR3
+#. FFTSj
 #: sf_dialog.xhp
 msgctxt ""
 "sf_dialog.xhp\n"
 "par_id981598110463521\n"
 "help.text"
-msgid "In non-modal mode, the dialog box is \"floating\" on the user desktop and the execution of the macro process continues normally. Regardless of its status, the dialog closes when the macro that displayed it finishes running."
+msgid "In non-modal mode, the dialog box is \"floating\" on the user desktop and the execution of the macro process continues normally. A non-modal dialog closes when it is terminated with the <literal>Terminate()</literal> method or when the %PRODUCTNAME session ends. The window close button is inactive in non-modal dialogs."
 msgstr ""
 
 #. GrpyR
@@ -6397,13 +6397,13 @@ msgctxt ""
 msgid "Service invocation and usage"
 msgstr ""
 
-#. v8RcL
+#. S8GrJ
 #: sf_dialog.xhp
 msgctxt ""
 "sf_dialog.xhp\n"
 "par_id361598174756160\n"
 "help.text"
-msgid "The <literal>Dialog</literal> service is invoked through the <literal>CreateScriptService</literal> method. It requires three arguments to specify the dialog box to activate:"
+msgid "The <literal>Dialog</literal> service is invoked through the <literal>CreateScriptService</literal> method. It requires three positional arguments to specify the dialog box to activate:"
 msgstr ""
 
 #. Ntzqh
@@ -6433,6 +6433,15 @@ msgctxt ""
 msgid "<emph>DialogName</emph>: A case-sensitive string designating the dialog."
 msgstr ""
 
+#. r5vY5
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id761620142701399\n"
+"help.text"
+msgid "Below %PRODUCTNAME Basic and Python examples are displaying the <literal>dlgConsole</literal> dialog that belongs to <literal>ScriptForge</literal> shared library:"
+msgstr ""
+
 #. mqjFF
 #: sf_dialog.xhp
 msgctxt ""
@@ -6460,22 +6469,67 @@ msgctxt ""
 msgid "'... Process controls and do what is needed here"
 msgstr ""
 
-#. ovpiH
+#. VD35X
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id601619622310089\n"
+"help.text"
+msgid "Or using Python:"
+msgstr ""
+
+#. knENA
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"pyc_id41619622700314\n"
+"help.text"
+msgid "# ... controls initialization goes here..."
+msgstr ""
+
+#. 2PTBU
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"pyc_id661611699964814\n"
+"help.text"
+msgid "# Default mode is Modal"
+msgstr ""
+
+#. ABoA2
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"pyc_id681619619965191\n"
+"help.text"
+msgid "# ... Process controls and do what is needed here"
+msgstr ""
+
+#. eehkB
 #: sf_dialog.xhp
 msgctxt ""
 "sf_dialog.xhp\n"
 "par_id951598174966322\n"
 "help.text"
-msgid "Alternatively a <literal>Dialog</literal> instance can be retrieved via the <literal>SFDialogs.DialogEvent</literal> service, providing the dialog was initiated with the <literal>Dialog</literal> service. <literal>DialogEvent</literal> returns the <literal>SFDialogs.Dialog</literal> service instance that triggered the event."
+msgid "Alternatively a <literal>Dialog</literal> instance can be retrieved via the <literal>SFDialogs.DialogEvent</literal> service, providing that the dialog was initiated with the <literal>Dialog</literal> service. <literal>DialogEvent</literal> returns the <literal>SFDialogs.Dialog</literal> service instance that triggered the event."
 msgstr ""
 
-#. XxoaB
+#. QBG5g
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id741619625211462\n"
+"help.text"
+msgid "with Python:"
+msgstr ""
+
+#. n72Hv
 #: sf_dialog.xhp
 msgctxt ""
 "sf_dialog.xhp\n"
 "par_id251598176312571\n"
 "help.text"
-msgid "Note that in previous examples, the prefix <literal>\"SFDialogs.\"</literal> may be omitted."
+msgid "Note that in previous examples, the prefix <literal>\"SFDialogs.\"</literal> may be omitted when deemed appropriate."
 msgstr ""
 
 #. nXGkZ
@@ -6973,13 +7027,13 @@ msgctxt ""
 msgid "This method is called from a dialog or control event, or when a dialog is displayed in non-modal mode."
 msgstr ""
 
-#. eYDfG
+#. uoBhE
 #: sf_dialog.xhp
 msgctxt ""
 "sf_dialog.xhp\n"
-"bas_id841598179117184\n"
+"par_id811620109056270\n"
 "help.text"
-msgid "' Dialog stored in current document's standard library"
+msgid "Python and %PRODUCTNAME Basic examples both assume that the dialog is stored in current document's <literal>Standard</literal> library."
 msgstr ""
 
 #. 4qLn9
@@ -7000,13 +7054,13 @@ msgctxt ""
 msgid "the list of the controls contained in the dialog"
 msgstr ""
 
-#. 4EuYK
+#. hdSWz
 #: sf_dialog.xhp
 msgctxt ""
 "sf_dialog.xhp\n"
 "par_id81598185229301\n"
 "help.text"
-msgid "a dialog control class instance based on its name"
+msgid "a <literal>DialogControl</literal> class instance based on its name"
 msgstr ""
 
 #. AEAHd
@@ -7036,13 +7090,40 @@ msgctxt ""
 msgid "<literal>EndExecute()</literal> is usually contained in the processing of a macro triggered by a dialog or control event."
 msgstr ""
 
-#. BkuiE
+#. yukGC
 #: sf_dialog.xhp
 msgctxt ""
 "sf_dialog.xhp\n"
 "par_id451598185776957\n"
 "help.text"
-msgid "<emph>ReturnValue</emph> : The value passed to the running <literal>Execute()</literal> method."
+msgid "<emph>returnvalue</emph>: The value passed to the running <literal>Execute()</literal> method."
+msgstr ""
+
+#. ABome
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id411620110780170\n"
+"help.text"
+msgid "Using %PRODUCTNAME Basic:"
+msgstr ""
+
+#. EtAN6
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id11620110819754\n"
+"help.text"
+msgid "Using Python:"
+msgstr ""
+
+#. ML9Mz
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id81620201915101\n"
+"help.text"
+msgid "Above <link href=\"https://api.libreoffice.org/docs/idl/ref/structcom_1_1sun_1_1star_1_1lang_1_1EventObject.html\" name=\"com.sun.star.lang.EventObject\">com.sun.star.lang.EventObject</link> mentions are optional. Such annotations help identify %PRODUCTNAME Application Programming Interface (API)."
 msgstr ""
 
 #. FD9fr
@@ -7090,22 +7171,31 @@ msgctxt ""
 msgid "For non-modal dialog boxes the method always returns 0 and the execution of the macro continues."
 msgstr ""
 
-#. KmiEw
+#. Ej2iF
 #: sf_dialog.xhp
 msgctxt ""
 "sf_dialog.xhp\n"
 "par_id11598186461227\n"
 "help.text"
-msgid "<emph>Modal</emph> : <literal>False</literal> when non-modal dialog. Default = <literal>True</literal>."
+msgid "<emph>modal</emph>: <literal>False</literal> when non-modal dialog. Default = <literal>True</literal>."
 msgstr ""
 
-#. DxiPm
+#. fGatm
 #: sf_dialog.xhp
 msgctxt ""
 "sf_dialog.xhp\n"
-"bas_id211598187104866\n"
+"par_id231620110023843\n"
 "help.text"
-msgid "' Dialog stored in current document's standard library"
+msgid "In this Basic example <literal>myDialog</literal> dialog is stored in current document's <literal>Standard</literal> library."
+msgstr ""
+
+#. ouEVN
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id191620110162627\n"
+"help.text"
+msgid "This Python code displays <literal>DlgConvert</literal> modal dialog from <literal>Euro</literal> shared Basic library."
 msgstr ""
 
 #. ARCGg
@@ -7115,6 +7205,33 @@ msgctxt ""
 "par_id21598187953679\n"
 "help.text"
 msgid "Terminate the <literal>Dialog</literal> service for the current instance. Return <literal>True</literal> if the termination was successful."
+msgstr ""
+
+#. CgAYf
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id951620300687150\n"
+"help.text"
+msgid "Below Basic and Python examples open <literal>DlgConsole</literal> and <literal>dlgTrace</literal> non-modal dialogs. They are respectively stored in <literal>ScriptForge</literal> and <literal>Access2Base</literal> shared libraries. Dialog close buttons are disabled and explicit termination is performed at the end of a running process."
+msgstr ""
+
+#. W3W3Y
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id301620302137482\n"
+"help.text"
+msgid "In this example a button in <literal>DlgConsole</literal> is substituting inhibited window closing:"
+msgstr ""
+
+#. 7z7hg
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id811620112217958\n"
+"help.text"
+msgid "With Python:"
 msgstr ""
 
 #. BFfGX
