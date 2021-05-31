@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2021-05-14 14:15+0200\n"
+"POT-Creation-Date: 2021-05-31 15:15+0200\n"
 "PO-Revision-Date: 2020-07-09 16:35+0000\n"
 "Last-Translator: Adam Rak <kitynska@gmail.com>\n"
 "Language-Team: Polish <https://weblate.documentfoundation.org/projects/libo_help-master/textsbasicshared03/pl/>\n"
@@ -3499,22 +3499,22 @@ msgctxt ""
 msgid "<variable id=\"CalcService\"><link href=\"text/sbasic/shared/03/sf_calc.xhp\" name=\"Calc service\"><literal>SFDocuments</literal>.<literal>Calc</literal> service</link></variable>"
 msgstr ""
 
-#. DLwen
+#. DGXCA
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id381589189355849\n"
 "help.text"
-msgid "The <literal>SFDocuments</literal> library provides a number of methods and properties to facilitate the management and handling of LibreOffice Calc documents."
+msgid "The <literal>SFDocuments</literal> library provides a number of methods and properties to facilitate the management and handling of %PRODUCTNAME Calc documents."
 msgstr ""
 
-#. ts5ZW
+#. m4FFE
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id351591014177269\n"
 "help.text"
-msgid "Some methods are generic for all types of documents and are inherited from the <literal>SF_Document</literal> service, whereas other methods are specific for the <literal>SF_Calc</literal> module."
+msgid "Some methods are generic for all types of documents and are inherited from the <literal>Document</literal> service, whereas other methods are specific for the <literal>SF_Calc</literal> module."
 msgstr ""
 
 #. kTVJM
@@ -3562,15 +3562,6 @@ msgctxt ""
 msgid "Service invocation"
 msgstr ""
 
-#. DLSfC
-#: sf_calc.xhp
-msgctxt ""
-"sf_calc.xhp\n"
-"par_id141610734722352\n"
-"help.text"
-msgid "Before using the <literal>Calc</literal> service the <literal>ScriptForge</literal> library needs to be loaded using:"
-msgstr ""
-
 #. z3JcW
 #: sf_calc.xhp
 msgctxt ""
@@ -3580,31 +3571,49 @@ msgctxt ""
 msgid "The <literal>Calc</literal> service is closely related to the <literal>UI</literal> service of the <literal>ScriptForge</literal> library. Below are a few examples of how the <literal>Calc</literal> service can be invoked."
 msgstr ""
 
-#. zNhLz
+#. mKqEu
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
-"bas_id571589191739218\n"
+"par_id551621623999947\n"
 "help.text"
-msgid "'1) From the ScriptForge.UI service:"
+msgid "The code snippet below creates a <literal>Calc</literal> service instance that corresponds to the currently active Calc document."
 msgstr ""
 
-#. BhvuW
+#. gECrc
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
-"bas_id331589191766531\n"
+"par_id341621467500466\n"
 "help.text"
-msgid "'Or: Set oDoc = ui.OpenDocument(\"C:\\Me\\MyFile.ods\")"
+msgid "Another way to create an instance of the <literal>Calc</literal> service is using the <literal>UI</literal> service. In the following example, a new Calc document is created and <literal>oDoc</literal> is a <literal>Calc</literal> service instance:"
 msgstr ""
 
-#. GZXJG
+#. x6qdq
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
-"bas_id571589191774268\n"
+"par_id921621467621019\n"
 "help.text"
-msgid "'2) Directly if the document is already open"
+msgid "Or using the <literal>OpenDocument</literal> method from the <literal>UI</literal> service:"
+msgstr ""
+
+#. MDxMC
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id741621467697967\n"
+"help.text"
+msgid "It is also possible to instantiate the <literal>Calc</literal> service using the <literal>CreateScriptService</literal> method:"
+msgstr ""
+
+#. CKafD
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id271621467810774\n"
+"help.text"
+msgid "In the example above, \"MyFile.ods\" is the name of an open document window. If this argument is not provided, the active window is considered."
 msgstr ""
 
 #. gfpHw
@@ -3715,13 +3724,13 @@ msgctxt ""
 msgid "Either a string designating a set of contiguous cells located in a sheet of the current instance or an <literal>object</literal> produced by the <literal>.Range</literal> property."
 msgstr ""
 
-#. YTCe8
+#. 6CySa
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id691591020711395\n"
 "help.text"
-msgid "The shortcut \"~\" (tilde) represents the current selection or the first range if multiple ranges are selected."
+msgid "The shortcut \"~\" (tilde) represents the current selection or the first selected range if multiple ranges are selected."
 msgstr ""
 
 #. 7JEat
@@ -4327,13 +4336,13 @@ msgctxt ""
 msgid "If the argument <literal>SheetName</literal> is provided, the given sheet is activated and it becomes the currently selected sheet. If the argument is absent, then the document window is activated."
 msgstr ""
 
-#. GwCLE
+#. EhMzz
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id821591631203996\n"
 "help.text"
-msgid "<emph>SheetName</emph> : The name of the sheet to be activated in the document."
+msgid "<emph>sheetname</emph>: The name of the sheet to be activated in the document. The default value is an empty string, meaning that the document window will be activated without changing the active sheet."
 msgstr ""
 
 #. 2cgiA
@@ -4363,13 +4372,13 @@ msgctxt ""
 msgid "Clears all the contents and formats of the given range."
 msgstr ""
 
-#. rAvDo
+#. M5PqA
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id441592919577809\n"
 "help.text"
-msgid "<emph>Range</emph> : The range to be cleared, as a string."
+msgid "<emph>range</emph>: The range to be cleared, as a string."
 msgstr ""
 
 #. Wz6CH
@@ -4381,13 +4390,13 @@ msgctxt ""
 msgid "Clears the formats and styles in the given range."
 msgstr ""
 
-#. uCqaF
+#. 6Qxnv
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id611592919864268\n"
 "help.text"
-msgid "<emph>Range</emph> : The range whose formats and styles are to be cleared, as a string."
+msgid "<emph>range</emph>: The range whose formats and styles are to be cleared, as a string."
 msgstr ""
 
 #. sMwMp
@@ -4399,13 +4408,13 @@ msgctxt ""
 msgid "Clears the values and formulas in the given range."
 msgstr ""
 
-#. Cx3CM
+#. eEGn9
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id771592919928320\n"
 "help.text"
-msgid "<emph>Range</emph> : The range whose values and formulas are to be cleared, as a string."
+msgid "<emph>range</emph>: The range whose values and formulas are to be cleared, as a string."
 msgstr ""
 
 #. n6vJD
@@ -4417,31 +4426,31 @@ msgctxt ""
 msgid "Copies a specified sheet before an existing sheet or at the end of the list of sheets. The sheet to be copied may be contained inside any <emph>open</emph> Calc document. Returns <literal>True</literal> if successful."
 msgstr ""
 
-#. Di3Hd
+#. YqGL2
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id871591631693741\n"
 "help.text"
-msgid "<emph>SheetName</emph> : The name of the sheet to be copied as a string or its reference as an object."
+msgid "<emph>sheetname</emph>: The name of the sheet to be copied as a string or its reference as an object."
 msgstr ""
 
-#. azG6n
+#. 5cEGG
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id351591632126180\n"
 "help.text"
-msgid "<emph>NewName</emph> : The name of the sheet to insert. The name must not be in use in the document."
+msgid "<emph>newname</emph>: The name of the sheet to insert. The name must not be in use in the document."
 msgstr ""
 
-#. XDAoM
+#. 8sSno
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id211591632192379\n"
 "help.text"
-msgid "<emph>BeforeSheet</emph> : The name (string) or index (numeric, starting from 1) of the sheet before which to insert the copied sheet. This argument is optional and the default behavior is to add the copied sheet at the last position."
+msgid "<emph>beforesheet</emph>: The name (string) or index (numeric, starting from 1) of the sheet before which to insert the copied sheet. This argument is optional and the default behavior is to add the copied sheet at the last position."
 msgstr ""
 
 #. yuvEn
@@ -4498,40 +4507,40 @@ msgctxt ""
 msgid "If the file does not exist, an error is raised. If the file is not a valid Calc file, a blank sheet is inserted. If the source sheet does not exist in the input file, an error message is inserted at the top of the newly pasted sheet."
 msgstr ""
 
-#. BbR9B
+#. tCseT
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id471591714947181\n"
 "help.text"
-msgid "<emph>FileName</emph> : Identifies the file to open. It must follow the <literal>SF_FileSystem.FileNaming</literal> notation. The file must not be protected with a password."
+msgid "<emph>filename</emph>: Identifies the file to open. It must follow the <literal>SF_FileSystem.FileNaming</literal> notation. The file must not be protected with a password."
 msgstr ""
 
-#. FG6BQ
+#. gHjz6
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id9915917146142\n"
 "help.text"
-msgid "<emph>SheetName</emph> : The name of the sheet to be copied as a string."
+msgid "<emph>sheetname</emph>: The name of the sheet to be copied as a string."
 msgstr ""
 
-#. vNK3G
+#. PeZ4F
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id71591714614904\n"
 "help.text"
-msgid "<emph>NewName</emph> : The name of the copied sheet to be inserted in the document. The name must not be in use in the document."
+msgid "<emph>newname</emph>: The name of the copied sheet to be inserted in the document. The name must not be in use in the document."
 msgstr ""
 
-#. 4UmRW
+#. 2niVz
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id601591714614407\n"
 "help.text"
-msgid "<emph>BeforeSheet</emph> : The name (string) or index (numeric, starting from 1) of the sheet before which to insert the copied sheet. This argument is optional and the default behavior is to add the copied sheet at the last position."
+msgid "<emph>beforesheet</emph>: The name (string) or index (numeric, starting from 1) of the sheet before which to insert the copied sheet. This argument is optional and the default behavior is to add the copied sheet at the last position."
 msgstr ""
 
 #. iEHJy
@@ -4570,22 +4579,22 @@ msgctxt ""
 msgid "The source range may belong to another <emph>open</emph> document."
 msgstr ""
 
-#. 6BKth
+#. RBQG9
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id761592558768578\n"
 "help.text"
-msgid "<emph>SourceRange</emph> : The source range as a string when it belongs to the same document or as a reference when it belongs to another open Calc document."
+msgid "<emph>sourcerange</emph>: The source range as a string when it belongs to the same document or as a reference when it belongs to another open Calc document."
 msgstr ""
 
-#. vsAZV
+#. 3MUwk
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id711592558768466\n"
 "help.text"
-msgid "<emph>DestinationCell</emph> : The destination cell where the copied range of cells will be pasted, as a string. If a range is given, only its top-left cell is considered."
+msgid "<emph>destinationcell</emph>: The destination cell where the copied range of cells will be pasted, as a string. If a range is given, only its top-left cell is considered."
 msgstr ""
 
 #. FbkjF
@@ -4678,49 +4687,58 @@ msgctxt ""
 msgid "The source range may belong to another <emph>open</emph> document."
 msgstr ""
 
-#. Tv5So
+#. CEaED
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id841592903121145\n"
 "help.text"
-msgid "<emph>SourceRange</emph> : The source range as a string when it belongs to the same document or as a reference when it belongs to another open Calc document."
+msgid "<emph>sourcerange</emph>: The source range as a string when it belongs to the same document or as a reference when it belongs to another open Calc document."
 msgstr ""
 
-#. K5ANF
+#. v3d3d
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id5515929031211000\n"
 "help.text"
-msgid "<emph>DestinationRange</emph> : The destination of the copied range of cells, as a string."
+msgid "<emph>destinationrange</emph>: The destination of the copied range of cells, as a string."
 msgstr ""
 
-#. SzA83
+#. LsHF6
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id461592905128991\n"
 "help.text"
-msgid "Copy within the same document :"
+msgid "Copy within the same document:"
 msgstr ""
 
-#. GtG3C
+#. dNdmJ
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "bas_id601592904507182\n"
 "help.text"
-msgid "'Returned range: $SheetY.$C$5:$J$14"
+msgid "' Returns a range string: \"$SheetY.$C$5:$J$14\""
 msgstr ""
 
-#. RXkyV
+#. FBbwi
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id1001592905195364\n"
 "help.text"
-msgid "Copy from one file to another :"
+msgid "Copy from one file to another:"
+msgstr ""
+
+#. 2fvZe
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"pyc_id761621538667290\n"
+"help.text"
+msgid "doc.CopyToRange(\"SheetX.A1:F10\", \"SheetY.C5:J5\")"
 msgstr ""
 
 #. so8uw
@@ -4732,13 +4750,13 @@ msgctxt ""
 msgid "Apply the functions Average, Count, Max, Min and Sum, respectively, to all the cells containing numeric values on a given range."
 msgstr ""
 
-#. fPXvC
+#. F2UTC
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id741595777001537\n"
 "help.text"
-msgid "<emph>Range</emph> : The range to which the function will be applied, as a string."
+msgid "<emph>range</emph>: The range to which the function will be applied, as a string."
 msgstr ""
 
 #. ZhAYY
@@ -4768,22 +4786,22 @@ msgctxt ""
 msgid "Converts a column number ranging between 1 and 1024 into its corresponding letter (column 'A', 'B', ..., 'AMJ'). If the given column number is outside the allowed range, a zero-length string is returned."
 msgstr ""
 
-#. gUDC3
+#. EfsXe
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id83159163272628\n"
 "help.text"
-msgid "<emph>ColumnNumber</emph> : The column number as an integer value in the interval 1 ... 1024."
+msgid "<emph>columnnumber</emph>: The column number as an integer value in the interval 1 ... 1024."
 msgstr ""
 
-#. yDnhD
+#. 6yjtp
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
-"bas_id391611754462421\n"
+"par_id11621539831303\n"
 "help.text"
-msgid "'Shows a message box with the string \"C\""
+msgid "Displays a message box with the name of the third column, which by default is \"C\"."
 msgstr ""
 
 #. XNAhU
@@ -4804,13 +4822,13 @@ msgctxt ""
 msgid "Get the formula(s) stored in the given range of cells as a single string, a 1D or a 2D array of strings."
 msgstr ""
 
-#. RG8Gg
+#. KDFkQ
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id891593880142588\n"
 "help.text"
-msgid "<emph>Range</emph> : The range where to get the formulas from, as a string."
+msgid "<emph>range</emph>: The range where to get the formulas from, as a string."
 msgstr ""
 
 #. tBeSN
@@ -4831,22 +4849,22 @@ msgctxt ""
 msgid "Get the value(s) stored in the given range of cells as a single value, a 1D array or a 2D array. All values are either doubles or strings."
 msgstr ""
 
-#. gy45t
+#. XACNZ
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id91592231156434\n"
 "help.text"
-msgid "<emph>Range</emph> : The range where to get the values from, as a string."
+msgid "<emph>range</emph>: The range where to get the values from, as a string."
 msgstr ""
 
-#. t7Dxx
+#. ojRBo
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id991611756492772\n"
 "help.text"
-msgid "If a cell contains a date, the number corresponding to that date will be returned. To convert numeric values to dates, use the Basic <link href=\"text/sbasic/shared/03100300.xhp\" name=\"CDate function\"><literal>CDate</literal> builtin function</link>."
+msgid "If a cell contains a date, the number corresponding to that date will be returned. To convert numeric values to dates in Basic scripts, use the Basic <link href=\"text/sbasic/shared/03100300.xhp\" name=\"CDate Basic\"><literal>CDate</literal> builtin function</link>. In Python scripts, use the <link href=\"text/sbasic/shared/03/sf_basic.xhp#CDate\" name=\"CDate Python\"><literal>CDate</literal> function from the <literal>Basic</literal> service.</link>"
 msgstr ""
 
 #. YYMuH
@@ -4876,31 +4894,31 @@ msgctxt ""
 msgid "The method returns a string representing the modified range of cells."
 msgstr ""
 
-#. FYhhA
+#. GrquM
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id851593685490824\n"
 "help.text"
-msgid "<emph>FileName</emph> : Identifies the file to open. It must follow the <literal>SF_FileSystem.FileNaming</literal> notation."
+msgid "<emph>filename</emph>: Identifies the file to open. It must follow the <literal>SF_FileSystem.FileNaming</literal> notation."
 msgstr ""
 
-#. aTojh
+#. VdTtY
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id641593685490936\n"
 "help.text"
-msgid "<emph>DestinationCell</emph> : The destination cell to insert the imported data, as a string. If instead a range is given, only its top-left cell is considered."
+msgid "<emph>destinationcell</emph>: The destination cell to insert the imported data, as a string. If instead a range is given, only its top-left cell is considered."
 msgstr ""
 
-#. wrD7S
+#. BrTfu
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id641593685863838\n"
 "help.text"
-msgid "<emph>FilterOptions</emph> : The arguments for the CSV input filter. The default filter makes following assumptions:"
+msgid "<emph>filteroptions</emph>: The arguments for the CSV input filter. The default filter makes following assumptions:"
 msgstr ""
 
 #. Mb4c6
@@ -5011,49 +5029,49 @@ msgctxt ""
 msgid "The method returns <literal>True</literal> when the import was successful."
 msgstr ""
 
-#. HfEiJ
+#. rgoAd
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id311599568986784\n"
 "help.text"
-msgid "<emph>FileName</emph> : Identifies the file to open. It must follow the <literal>SF_FileSystem.FileNaming</literal> notation."
+msgid "<emph>filename</emph>: Identifies the file to open. It must follow the <literal>SF_FileSystem.FileNaming</literal> notation."
 msgstr ""
 
-#. Makpm
+#. j2J5e
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id711596555746281\n"
 "help.text"
-msgid "<emph>RegistrationName</emph> : The name to use to find the database in the databases register. This argument is ignored if a <literal>FileName</literal> is provided."
+msgid "<emph>registrationname</emph>: The name to use to find the database in the databases register. This argument is ignored if a <literal>filename</literal> is provided."
 msgstr ""
 
-#. iG9FB
+#. 2hSHw
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id211599568986329\n"
 "help.text"
-msgid "<emph>DestinationCell</emph> : The destination of the imported data, as a string. If a range is given, only its top-left cell is considered."
+msgid "<emph>destinationcell</emph>: The destination of the imported data, as a string. If a range is given, only its top-left cell is considered."
 msgstr ""
 
-#. T8KAC
+#. aMfVw
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id451599489278429\n"
 "help.text"
-msgid "<emph>SQLCommand</emph> : A table or query name (without surrounding quotes or square brackets) or a SELECT SQL statement in which table and field names may be surrounded by square brackets or quotes to improve its readability."
+msgid "<emph>sqlcommand</emph>: A table or query name (without surrounding quotes or square brackets) or a SELECT SQL statement in which table and field names may be surrounded by square brackets or quotes to improve its readability."
 msgstr ""
 
-#. GiN95
+#. wFpLr
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id271599489278141\n"
 "help.text"
-msgid "<emph>DirectSQL</emph> : When <literal>True</literal>, the SQL command is sent to the database engine without pre-analysis. Default is <literal>False</literal>. The argument is ignored for tables. For queries, the applied option is the one set when the query was defined."
+msgid "<emph>directsql</emph>: When <literal>True</literal>, the SQL command is sent to the database engine without pre-analysis. Default is <literal>False</literal>. The argument is ignored for tables. For queries, the applied option is the one set when the query was defined."
 msgstr ""
 
 #. toj8z
@@ -5065,22 +5083,22 @@ msgctxt ""
 msgid "Inserts a new empty sheet before an existing sheet or at the end of the list of sheets."
 msgstr ""
 
-#. iFgTP
+#. Xbm7k
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id941591698472748\n"
 "help.text"
-msgid "<emph>SheetName</emph> : The name of the new sheet."
+msgid "<emph>sheetname</emph>: The name of the new sheet."
 msgstr ""
 
-#. agryz
+#. XbXNM
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id84159169847269\n"
 "help.text"
-msgid "<emph>BeforeSheet</emph> : The name (string) or index (numeric, starting from 1) of the sheet before which to insert the new sheet."
+msgid "<emph>beforesheet</emph>: The name (string) or index (numeric, starting from 1) of the sheet before which to insert the new sheet. This argument is optional and the default behavior is to insert the sheet at the last position."
 msgstr ""
 
 #. UCmit
@@ -5101,22 +5119,22 @@ msgctxt ""
 msgid "Moves a specified source range to a destination range of cells. The method returns a string representing the modified range of cells. The dimension of the modified area is fully determined by the size of the source area."
 msgstr ""
 
-#. Eh8ar
+#. UqxZv
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id571592569476332\n"
 "help.text"
-msgid "<emph>Source</emph> : The source range of cells, as a string."
+msgid "<emph>source</emph>: The source range of cells, as a string."
 msgstr ""
 
-#. MSSig
+#. G6BSW
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id891592569476362\n"
 "help.text"
-msgid "<emph>Destination</emph> : The destination cell, as a string. If a range is given, its top-left cell is considered as the destination."
+msgid "<emph>destination</emph>: The destination cell, as a string. If a range is given, its top-left cell is considered as the destination."
 msgstr ""
 
 #. NorEd
@@ -5128,22 +5146,22 @@ msgctxt ""
 msgid "Moves an existing sheet and places it before a specified sheet or at the end of the list of sheets."
 msgstr ""
 
-#. s6bx7
+#. dgAxB
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id351591698903911\n"
 "help.text"
-msgid "<emph>SheetName</emph> : The name of the sheet to move. The sheet must exist or an exception is raised."
+msgid "<emph>sheetname</emph>: The name of the sheet to move. The sheet must exist or an exception is raised."
 msgstr ""
 
-#. kp595
+#. fevuS
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id9159169890334\n"
 "help.text"
-msgid "<emph>BeforeSheet</emph> : The name (string) or index (numeric, starting from 1) of the sheet before which the original sheet will be placed."
+msgid "<emph>beforesheet</emph>: The name (string) or index (numeric, starting from 1) of the sheet before which the original sheet will be placed. This argument is optional and the default behavior is to move the sheet to the last position."
 msgstr ""
 
 #. pd5t4
@@ -5173,67 +5191,67 @@ msgctxt ""
 msgid "This method has the same behavior as the homonymous Calc's <link href=\"text/scalc/01/04060109.xhp\" name=\"Offset function\">Offset function</link>."
 msgstr ""
 
-#. uiv8D
+#. G2oD2
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id901592233506293\n"
 "help.text"
-msgid "<emph>Reference</emph> : The range, as a string, that the method will use as reference to perform the offset operation."
+msgid "<emph>reference</emph>: The range, as a string, that the method will use as reference to perform the offset operation."
 msgstr ""
 
-#. YmkNz
+#. Ra7aW
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id781592234124856\n"
 "help.text"
-msgid "<emph>Rows</emph> : The number of rows by which the initial range is offset upwards (negative value) or downwards (positive value). Use 0 (default) to stay in the same row."
+msgid "<emph>rows</emph>: The number of rows by which the initial range is offset upwards (negative value) or downwards (positive value). Use 0 (default) to stay in the same row."
 msgstr ""
 
-#. fR6JC
+#. FvqjV
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id971592234138769\n"
 "help.text"
-msgid "<emph>Columns</emph> : The number of columns by which the initial range is offset to the left (negative value) or to the right (positive value). Use 0 (default) to stay in the same column."
+msgid "<emph>columns</emph>: The number of columns by which the initial range is offset to the left (negative value) or to the right (positive value). Use 0 (default) to stay in the same column."
 msgstr ""
 
-#. TKX46
+#. VzgGM
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id321592234150061\n"
 "help.text"
-msgid "<emph>Height</emph> : The vertical height for an area that starts at the new range position. Default = 0 (no vertical resizing)."
+msgid "<emph>height</emph>: The vertical height for an area that starts at the new range position. Omit this argument when no vertical resizing is needed."
 msgstr ""
 
-#. 8uqoL
+#. JxENN
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id271592234165247\n"
 "help.text"
-msgid "<emph>Width</emph> : The horizontal width for an area that starts at the new range position. Default = 0 (no horizontal resizing)."
+msgid "<emph>width</emph>: The horizontal width for an area that starts at the new range position. Omit this argument when no horizontal resizing is needed."
 msgstr ""
 
-#. hT42G
+#. t9QDN
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id871592234172652\n"
 "help.text"
-msgid "Arguments <literal>Rows</literal> and <literal>Columns</literal> must not lead to zero or negative start row or column."
+msgid "Arguments <literal>rows</literal> and <literal>columns</literal> must not lead to zero or negative start row or column."
 msgstr ""
 
-#. QcACo
+#. JAxEm
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id211592234180073\n"
 "help.text"
-msgid "Arguments <literal>Height</literal> and <literal>Width</literal> must not lead to zero or negative count of rows or columns."
+msgid "Arguments <literal>height</literal> and <literal>width</literal> must not lead to zero or negative count of rows or columns."
 msgstr ""
 
 #. BkCDz
@@ -5263,13 +5281,22 @@ msgctxt ""
 msgid "Removes an existing sheet from the document."
 msgstr ""
 
-#. 9Mvbg
+#. H3eHf
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id991621620588147\n"
+"help.text"
+msgid "<input>doc.RemoveSheet(sheetname: str): bool</input>"
+msgstr ""
+
+#. dVxiA
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id331591699085330\n"
 "help.text"
-msgid "<emph>SheetName</emph> : The name of the sheet to remove."
+msgid "<emph>sheetname</emph>: The name of the sheet to remove."
 msgstr ""
 
 #. GwKHr
@@ -5281,22 +5308,22 @@ msgctxt ""
 msgid "Renames the given sheet and returns <literal>True</literal> if successful."
 msgstr ""
 
-#. mAigC
+#. ofAiN
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id161591704316337\n"
 "help.text"
-msgid "<emph>SheetName</emph> : The name of the sheet to rename."
+msgid "<emph>sheetname</emph>: The name of the sheet to rename."
 msgstr ""
 
-#. s8sbi
+#. JHEDe
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id931591704316998\n"
 "help.text"
-msgid "<emph>NewName</emph> : the new name of the sheet. It must not exist yet."
+msgid "<emph>newname</emph>: the new name of the sheet. It must not exist yet."
 msgstr ""
 
 #. bwtAA
@@ -5308,13 +5335,13 @@ msgctxt ""
 msgid "This example renames the active sheet to \"SheetY\":"
 msgstr ""
 
-#. EfMAM
+#. qEM6N
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id191592745582983\n"
 "help.text"
-msgid "Stores the given value starting from a specified target cell. The updated area expands itself from the target cell or from the top-left corner of the given range to accommodate the size of the input <literal>Value</literal> argument. Vectors are always expanded vertically."
+msgid "Stores the given value starting from a specified target cell. The updated area expands itself from the target cell or from the top-left corner of the given range to accommodate the size of the input <literal>value</literal> argument. Vectors are always expanded vertically."
 msgstr ""
 
 #. tm6AR
@@ -5326,22 +5353,22 @@ msgctxt ""
 msgid "The method returns a string representing the modified area as a range of cells."
 msgstr ""
 
-#. 6bCom
+#. FAuKq
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id801592745582116\n"
 "help.text"
-msgid "<emph>TargetCell</emph> : The cell or a range as a string from where to start to store the given value."
+msgid "<emph>targetcell</emph>: The cell or a range as a string from where to start to store the given value."
 msgstr ""
 
-#. SWWie
+#. aK7EZ
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id321592745582192\n"
 "help.text"
-msgid "<emph>Value</emph> : A scalar, a vector or an array with the new values to be stored from the target cell or from the top-left corner of the range if <literal>TargetCell</literal> is a range. The new values must be strings, numeric values or dates. Other types will cause the corresponding cells to be emptied."
+msgid "<emph>value</emph>: A scalar, a vector or an array (in Python, one or two-dimensional lists and tuples) with the new values to be stored from the target cell or from the top-left corner of the range if <literal>targetcell</literal> is a range. The new values must be strings, numeric values or dates. Other types will cause the corresponding cells to be emptied."
 msgstr ""
 
 #. 7BCXQ
@@ -5398,49 +5425,49 @@ msgctxt ""
 msgid "The method returns a string representing the modified area as a range of cells."
 msgstr ""
 
-#. 9FVf6
+#. xYrHQ
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id361592231799255\n"
 "help.text"
-msgid "<emph>TargetRange</emph> : The range where to store the given value, as a string."
+msgid "<emph>targetrange</emph>: The range where to store the given value, as a string."
 msgstr ""
 
-#. gSTGX
+#. dydXF
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id461592232081985\n"
 "help.text"
-msgid "<emph>Value</emph> : A scalar, a vector or an array with the new values for each cell of the range. The new values must be strings, numeric values or dates. Other types will cause the corresponding cells to be emptied."
+msgid "<emph>value</emph>: A scalar, a vector or an array with the new values for each cell of the range. The new values must be strings, numeric values or dates. Other types will cause the corresponding cells to be emptied."
 msgstr ""
 
-#. J2xh8
+#. CgwVF
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id841592745785192\n"
 "help.text"
-msgid "The full range is updated and the remainder of the sheet is left unchanged. If the size of <literal>Value</literal> is smaller than the size of <literal>TargetRange</literal>, then the remaining cells will be emptied."
+msgid "The full range is updated and the remainder of the sheet is left unchanged. If the size of <literal>value</literal> is smaller than the size of <literal>targetrange</literal>, then the remaining cells will be emptied."
 msgstr ""
 
-#. 6eqih
+#. QFkLr
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id191611776838396\n"
 "help.text"
-msgid "If the size of <literal>Value</literal> is larger than the size of <literal>TargetRange</literal>, then <literal>Value</literal> is only partially copied until it fills the size of <literal>TargetRange</literal>."
+msgid "If the size of <literal>value</literal> is larger than the size of <literal>targetrange</literal>, then <literal>value</literal> is only partially copied until it fills the size of <literal>targetrange</literal>."
 msgstr ""
 
-#. nfsWb
+#. ykBk6
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id71611776941663\n"
 "help.text"
-msgid "Vectors are expanded vertically, except if the range has a height of exactly 1 row."
+msgid "Vectors are expanded vertically, except if <literal>targetrange</literal> has a height of exactly 1 row."
 msgstr ""
 
 #. FJCPf
@@ -5461,6 +5488,15 @@ msgctxt ""
 msgid "'Below the Value and TargetRange have the same size"
 msgstr ""
 
+#. 4LFnH
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id731621689592755\n"
+"help.text"
+msgid "If you want to fill a single row with values, you can use the <literal>Offset</literal> function. In the example below, consider that <literal>arrData</literal> is a one-dimensional array:"
+msgstr ""
+
 #. g8mER
 #: sf_calc.xhp
 msgctxt ""
@@ -5479,22 +5515,22 @@ msgctxt ""
 msgid "The method returns a string representing the modified area as a range of cells."
 msgstr ""
 
-#. L8GHj
+#. FtFpL
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id22159576768782\n"
 "help.text"
-msgid "<emph>TargetRange</emph> : The range to which the style will be applied, as a string."
+msgid "<emph>targetrange</emph>: The range to which the style will be applied, as a string."
 msgstr ""
 
-#. UxxXn
+#. aAGcy
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id181595767687247\n"
 "help.text"
-msgid "<emph>Style</emph> : The name of the cell style to apply."
+msgid "<emph>style</emph>: The name of the cell style to apply."
 msgstr ""
 
 #. DCAWV
@@ -5515,22 +5551,22 @@ msgctxt ""
 msgid "The method returns a string representing the modified area as a range of cells."
 msgstr ""
 
-#. CWJbm
+#. F5XDi
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id891593880376776\n"
 "help.text"
-msgid "<emph>TargetRange</emph> : The range to insert the formulas, as a string."
+msgid "<emph>targetrange</emph>: The range to insert the formulas, as a string."
 msgstr ""
 
-#. rRECW
+#. A2UQF
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id941593880376500\n"
 "help.text"
-msgid "<emph>Formula</emph> : A string, a vector or an array of strings with the new formulas for each cell in the target range."
+msgid "<emph>formula</emph>: A string, a vector or an array of strings with the new formulas for each cell in the target range."
 msgstr ""
 
 #. 746E8
@@ -5551,31 +5587,31 @@ msgctxt ""
 msgid "If the given formula is a string, the unique formula is pasted along the whole range with adjustment of the relative references."
 msgstr ""
 
-#. uqWBs
+#. zr47n
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id491593880857823\n"
 "help.text"
-msgid "If the size of <literal>Formula</literal> is smaller than the size of <literal>TargetRange</literal>, then the remaining cells are emptied."
+msgid "If the size of <literal>formula</literal> is smaller than the size of <literal>targetrange</literal>, then the remaining cells are emptied."
 msgstr ""
 
-#. oMpK4
+#. LwoGL
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id701611778103306\n"
 "help.text"
-msgid "If the size of <literal>Formula</literal> is larger than the size of <literal>TargetRange</literal>, then the formulas are only partially copied until it fills the size of <literal>TargetRange</literal>."
+msgid "If the size of <literal>formula</literal> is larger than the size of <literal>targetrange</literal>, then the formulas are only partially copied until it fills the size of <literal>targetrange</literal>."
 msgstr ""
 
-#. xGTCr
+#. GQC3N
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id761611777946581\n"
 "help.text"
-msgid "Vectors are always expanded vertically, except if the range has a height of exactly 1 row."
+msgid "Vectors are always expanded vertically, except if <literal>targetrange</literal> has a height of exactly 1 row."
 msgstr ""
 
 #. rNEEY
@@ -5605,67 +5641,67 @@ msgctxt ""
 msgid "Sorts the given range based on up to 3 columns/rows. The sorting order may vary by column/row. It returns a string representing the modified range of cells. The size of the modified area is fully determined by the size of the source area."
 msgstr ""
 
-#. V6NVn
+#. MVGBC
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id171595692394598\n"
 "help.text"
-msgid "<emph>Range</emph> : The range to be sorted, as a string."
+msgid "<emph>range</emph>: The range to be sorted, as a string."
 msgstr ""
 
-#. zppvu
+#. aenrK
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id171595692814163\n"
 "help.text"
-msgid "<emph>SortKeys</emph> : A scalar (if 1 column/row) or an array of column/row numbers starting from 1. The maximum number of keys is 3."
+msgid "<emph>sortkeys</emph>: A scalar (if 1 column/row) or an array of column/row numbers starting from 1. The maximum number of keys is 3."
 msgstr ""
 
-#. rmDya
+#. aQF93
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id421595692962095\n"
 "help.text"
-msgid "<emph>SortOrder</emph> : A scalar or an array of strings containing the values \"ASC\" (ascending), \"DESC\" (descending) or \"\" (which defaults to ascending). Each item is paired with the corresponding item in <literal>SortKeys</literal>. If the <literal>SortOrder</literal> array is shorter than <literal>SortKeys</literal>, the remaining keys are sorted in ascending order."
+msgid "<emph>sortorder</emph>: A scalar or an array of strings containing the values \"ASC\" (ascending), \"DESC\" (descending) or \"\" (which defaults to ascending). Each item is paired with the corresponding item in <literal>sortkeys</literal>. If the <literal>sortorder</literal> array is shorter than <literal>sortkeys</literal>, the remaining keys are sorted in ascending order."
 msgstr ""
 
-#. oPgRB
+#. GVpuf
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id361595692394604\n"
 "help.text"
-msgid "<emph>DestinationCell</emph> : The destination cell of the sorted range of cells, as a string. If a range is given, only its top-left cell is considered. By default the source Range is overwritten."
+msgid "<emph>destinationcell</emph>: The destination cell of the sorted range of cells, as a string. If a range is given, only its top-left cell is considered. By default the source Range is overwritten."
 msgstr ""
 
-#. JogWo
+#. QyaTf
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id441595693011034\n"
 "help.text"
-msgid "<emph>ContainsHeader</emph> : When <literal>True</literal>, the first row/column is not sorted."
+msgid "<emph>containsheader</emph>: When <literal>True</literal>, the first row/column is not sorted."
 msgstr ""
 
-#. Q7Bi2
+#. AbVtY
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id241595693169032\n"
 "help.text"
-msgid "<emph>CaseSensitive</emph> : Only for string comparisons. Default = <literal>False</literal>"
+msgid "<emph>casesensitive</emph>: Only for string comparisons. Default = <literal>False</literal>"
 msgstr ""
 
-#. g2ggy
+#. CL5Gm
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id1001595693326226\n"
 "help.text"
-msgid "<emph>SortColumns</emph> : When <literal>True</literal>, the columns are sorted from left to right. Default = <literal>False</literal> : rows are sorted from top to bottom."
+msgid "<emph>sortcolumns</emph>: When <literal>True</literal>, the columns are sorted from left to right. Default = <literal>False</literal> : rows are sorted from top to bottom."
 msgstr ""
 
 #. LvjpD
@@ -7306,13 +7342,22 @@ msgctxt ""
 msgid "Service invocation"
 msgstr ""
 
-#. jKixF
+#. EnxDs
 #: sf_dialogcontrol.xhp
 msgctxt ""
 "sf_dialogcontrol.xhp\n"
 "par_id361598174756160\n"
 "help.text"
-msgid "The <literal>DialogControl</literal><literal/> service is invoked from an existing <literal>Dialog</literal> service instance thru its <literal>Controls()</literal> method. The dialog must be initiated with the <literal>SFDialogs.Dialog</literal> service."
+msgid "The <literal>DialogControl</literal> service is invoked from an existing <literal>Dialog</literal> service instance through its <literal>Controls()</literal> method. The dialog must be initiated with the <literal>SFDialogs.Dialog</literal> service."
+msgstr ""
+
+#. RCFrE
+#: sf_dialogcontrol.xhp
+msgctxt ""
+"sf_dialogcontrol.xhp\n"
+"bas_id581598453210170\n"
+"help.text"
+msgid "myControl.Value = \"Dialog started at \" & Now()"
 msgstr ""
 
 #. WVG8J
@@ -7324,6 +7369,24 @@ msgctxt ""
 msgid "' ... process the controls actual values"
 msgstr ""
 
+#. gxhUu
+#: sf_dialogcontrol.xhp
+msgctxt ""
+"sf_dialogcontrol.xhp\n"
+"pyc_id861620225235002\n"
+"help.text"
+msgid "text.Value = \"Dialog started at \" + strftime(\"%a, %d %b %Y %H:%M:%S\", localtime())"
+msgstr ""
+
+#. nu3f3
+#: sf_dialogcontrol.xhp
+msgctxt ""
+"sf_dialogcontrol.xhp\n"
+"pyc_id841620225235377\n"
+"help.text"
+msgid "# ... process the controls actual values"
+msgstr ""
+
 #. 2PPv4
 #: sf_dialogcontrol.xhp
 msgctxt ""
@@ -7331,15 +7394,6 @@ msgctxt ""
 "par_id951598174966322\n"
 "help.text"
 msgid "Alternatively a control instance can be retrieved via the <literal>SFDialogs.DialogEvent</literal> service, providing the dialog was initiated with the <literal>Dialog</literal> service. <literal>DialogEvent</literal> returns the <literal>SFDialogs.DialogControl</literal> class instance that triggered the event."
-msgstr ""
-
-#. WKCuT
-#: sf_dialogcontrol.xhp
-msgctxt ""
-"sf_dialogcontrol.xhp\n"
-"bas_id801598175242937\n"
-"help.text"
-msgid "' oControl represents now the instance of the Control class having triggered the current event"
 msgstr ""
 
 #. 75WJy
@@ -8593,40 +8647,40 @@ msgctxt ""
 msgid "This method may be called before displaying the dialog box to build the initial tree. It may also be called from a dialog or control event - using the <literal>OnNodeExpanded</literal> event - to complete the tree dynamically."
 msgstr ""
 
-#. cK7HA
+#. T8xdA
 #: sf_dialogcontrol.xhp
 msgctxt ""
 "sf_dialogcontrol.xhp\n"
 "par_id761612711823834\n"
 "help.text"
-msgid "<emph>ParentNode</emph>: A node UNO object, of type <literal>com.sun.star.awt.tree.XMutableTreeNode</literal>."
+msgid "<emph>parentnode</emph>: A node UNO object, of type <literal>com.sun.star.awt.tree.XMutableTreeNode</literal>."
 msgstr ""
 
-#. g2Ubo
+#. qJ9ej
 #: sf_dialogcontrol.xhp
 msgctxt ""
 "sf_dialogcontrol.xhp\n"
 "par_id791612711823819\n"
 "help.text"
-msgid "<emph>DisplayValue</emph>: The text appearing in the tree control box."
+msgid "<emph>displayvalue</emph>: The text appearing in the tree control box."
 msgstr ""
 
-#. GV6Gp
+#. Pzz72
 #: sf_dialogcontrol.xhp
 msgctxt ""
 "sf_dialogcontrol.xhp\n"
 "par_id911612711823382\n"
 "help.text"
-msgid "<emph>DataValue</emph>: Any value associated with the new node. Default value is <literal>Empty</literal>."
+msgid "<emph>datavalue</emph>: Any value associated with the new node. <literal>datavalue</literal> may be a string, a number or a date. Omit the argument when not applicable."
 msgstr ""
 
-#. qbb2x
+#. 2pLPL
 #: sf_dialogcontrol.xhp
 msgctxt ""
 "sf_dialogcontrol.xhp\n"
-"bas_id401612711823779\n"
+"par_id901620317110685\n"
 "help.text"
-msgid "'Dialog stored in current document's standard library"
+msgid "%PRODUCTNAME Basic and Python examples pick up current document's <literal>myDialog</literal> dialog from <literal>Standard</literal> library."
 msgstr ""
 
 #. 8B3qP
@@ -8638,22 +8692,22 @@ msgctxt ""
 msgid "Return <literal>True</literal> when a subtree, subordinate to a parent node, could be inserted successfully in a tree control. If the parent node had already child nodes before calling this method, the child nodes are erased."
 msgstr ""
 
-#. UkE9k
+#. beond
 #: sf_dialogcontrol.xhp
 msgctxt ""
 "sf_dialogcontrol.xhp\n"
 "par_id781612713087722\n"
 "help.text"
-msgid "<emph>ParentNode</emph>: A node UNO object, of type <literal>com.sun.star.awt.tree.XMutableTreeNode</literal>."
+msgid "<emph>parentnode</emph>: A node UNO object, of type <literal>com.sun.star.awt.tree.XMutableTreeNode</literal>."
 msgstr ""
 
-#. 2FTD4
+#. QJ73V
 #: sf_dialogcontrol.xhp
 msgctxt ""
 "sf_dialogcontrol.xhp\n"
 "par_id36161271308759\n"
 "help.text"
-msgid "<emph>FlatTree</emph>: a two dimension array sorted on the columns containing the display values. Such an array can be issued by the <literal>GetRows</literal> method applied on the <literal>SFDatabases.Database</literal> service. When an array item containing the text to be displayed is <literal>Empty</literal> or <literal>Null</literal>, no new subnode is created and the remainder of the row is skipped."
+msgid "<emph>flattree</emph>: a two dimension array sorted on the columns containing the display values. Such an array can be issued by the <literal>GetRows</literal> method applied on the <literal>SFDatabases.Database</literal> service. When an array item containing the text to be displayed is <literal>Empty</literal> or <literal>Null</literal>, no new subnode is created and the remainder of the row is skipped."
 msgstr ""
 
 #. r5QNj
@@ -8665,13 +8719,13 @@ msgctxt ""
 msgid "Flat tree    >>>>    Resulting subtree"
 msgstr ""
 
-#. SQH7v
+#. MUi8U
 #: sf_dialogcontrol.xhp
 msgctxt ""
 "sf_dialogcontrol.xhp\n"
 "par_id51612713087915\n"
 "help.text"
-msgid "<emph>WithDataValue</emph>: When <literal>False</literal> default value is used, every column of <literal>FlatTree</literal> contains the text to be displayed in the tree control. When <literal>True</literal>, the texts to be displayed (<literal>DisplayValue</literal>) are in columns 0, 2, 4, ... while the data values (<literal>DataValue</literal>) are in columns 1, 3, 5, ..."
+msgid "<emph>withdatavalue</emph>: When <literal>False</literal> default value is used, every column of <literal>flattree</literal> contains the text to be displayed in the tree control. When <literal>True</literal>, the texts to be displayed (<literal>displayvalue</literal>) are in columns 0, 2, 4, ... while the data values (<literal>datavalue</literal>) are in columns 1, 3, 5, ..."
 msgstr ""
 
 #. fWnhZ
@@ -8692,31 +8746,22 @@ msgctxt ""
 msgid "This method may be called before displaying the dialog box to build the initial tree. It may also be called from a dialog or control event to complete the tree dynamically."
 msgstr ""
 
-#. QiXVA
+#. JXyjD
 #: sf_dialogcontrol.xhp
 msgctxt ""
 "sf_dialogcontrol.xhp\n"
-"par_id671612780723837\n"
+"par_id791612117823819\n"
 "help.text"
-msgid "<emph>DisplayValue</emph>: The text appearing in the tree control box."
+msgid "<emph>displayvalue</emph>: The text appearing in the tree control box."
 msgstr ""
 
-#. Cw3b9
-#: sf_dialogcontrol.xhp
-msgctxt ""
-"sf_dialogcontrol.xhp\n"
-"par_id31612780723267\n"
-"help.text"
-msgid "<emph>DataValue</emph>: Any value associated with the new node. Default value is <literal>Empty</literal>."
-msgstr ""
-
-#. Ynpwt
+#. XxGFd
 #: sf_dialogcontrol.xhp
 msgctxt ""
 "sf_dialogcontrol.xhp\n"
 "par_id171612781589503\n"
 "help.text"
-msgid "Traverses the tree and finds recursively, starting from the root, a node meeting some criteria. Either - 1 match is enough - having its display value matching <literal>DisplayValue</literal> pattern or having its data value equal to <literal>DataValue</literal>. The comparisons may be or not case-sensitive. The first matching occurrence is returned as a node UNO object of type <literal>com.sun.star.awt.tree.XMutableTreeNode</literal>. <embedvar href=\"text/sbasic/shared/03/sf_dialogcontrol.xhp#XMutableTreeNode\"/>"
+msgid "Traverses the tree and finds recursively, starting from the root, a node meeting some criteria. Either - 1 match is enough - having its display value matching <literal>displayvalue</literal> pattern or having its data value equal to <literal>datavalue</literal>. The comparisons may be or not case-sensitive. The first matching occurrence is returned as a node UNO object of type <literal>com.sun.star.awt.tree.XMutableTreeNode</literal>. <embedvar href=\"text/sbasic/shared/03/sf_dialogcontrol.xhp#XMutableTreeNode\"/>"
 msgstr ""
 
 #. 5Jxkj
@@ -8737,40 +8782,31 @@ msgctxt ""
 msgid "This method may be called before displaying the dialog box to build the initial tree. It may also be called from a dialog or control event."
 msgstr ""
 
-#. BSnCr
+#. Dd4Ti
 #: sf_dialogcontrol.xhp
 msgctxt ""
 "sf_dialogcontrol.xhp\n"
 "par_id541613670199211\n"
 "help.text"
-msgid "One argument out of <literal>DisplayValue</literal> or <literal>DataValue</literal> must be specified. If both present, one match is sufficient to select the node."
+msgid "One argument out of <literal>displayvalue</literal> or <literal>datavalue</literal> must be specified. If both present, one match is sufficient to select the node."
 msgstr ""
 
-#. fYkEn
+#. MF7PA
 #: sf_dialogcontrol.xhp
 msgctxt ""
 "sf_dialogcontrol.xhp\n"
 "par_id591612781589560\n"
 "help.text"
-msgid "<emph>DisplayValue</emph>: The pattern to be matched. See the <link href=\"text/sbasic/shared/03/sf_string.xhp#IsLike\" name=\"String service IsLike() method\"><literal>SF_String.IsLike()</literal></link> method. When equal to the zero-length string (default), this display value is not searched for."
+msgid "<emph>displayvalue</emph>: The pattern to be matched. Refer to <link href=\"text/sbasic/shared/03/sf_string.xhp#IsLike\" name=\"String service IsLike() method\"><literal>SF_String.IsLike()</literal></link> method for the list of possible wildcards. When equal to the zero-length string (default), this display value is not searched for."
 msgstr ""
 
-#. CF4o6
-#: sf_dialogcontrol.xhp
-msgctxt ""
-"sf_dialogcontrol.xhp\n"
-"par_id481612781589626\n"
-"help.text"
-msgid "<emph>DataValue</emph>: A string, a numeric value, a date. Use <literal>Empty</literal> default value when no value applies."
-msgstr ""
-
-#. g7uEG
+#. BE58W
 #: sf_dialogcontrol.xhp
 msgctxt ""
 "sf_dialogcontrol.xhp\n"
 "par_id141582384726168\n"
 "help.text"
-msgid "<emph>CaseSensitive</emph>: Default value is <literal>False</literal>"
+msgid "<emph>casesensitive</emph>: Default value is <literal>False</literal>"
 msgstr ""
 
 #. 3oU3L
@@ -10195,67 +10231,76 @@ msgctxt ""
 msgid "<variable id=\"ExceptionService\"><link href=\"text/sbasic/shared/03/sf_exception.xhp\" name=\"Exception service\"><literal>ScriptForge</literal>.<literal>Exception</literal> service</link></variable>"
 msgstr ""
 
-#. m5HoF
+#. 4X7Xk
 #: sf_exception.xhp
 msgctxt ""
 "sf_exception.xhp\n"
 "par_id181587139648008\n"
 "help.text"
-msgid "The <literal>Exception</literal> service is a collection of methods for Basic code debugging and error handling."
+msgid "The <literal>Exception</literal> service is a collection of methods to assist in code debugging in Basic and Python scripts and in error handling in Basic scripts."
 msgstr ""
 
-#. KiitV
+#. XeYa4
 #: sf_exception.xhp
 msgctxt ""
 "sf_exception.xhp\n"
 "par_id141587140927573\n"
 "help.text"
-msgid "In the advent of a run-time error, the <literal>Exception</literal> service properties and methods help identify the error context and permit to handle it."
+msgid "In <emph>Basic scripts</emph>, when a run-time error occurs, the methods and properties of the <literal>Exception</literal> service help identify the error context and allow to handle it."
 msgstr ""
 
-#. Kn3iF
+#. ENY3v
 #: sf_exception.xhp
 msgctxt ""
 "sf_exception.xhp\n"
-"par_id461587140965192\n"
+"par_id401621450898070\n"
 "help.text"
 msgid "The <literal>SF_Exception</literal> service is similar to the <link href=\"text/sbasic/shared/ErrVBA.xhp\" name=\"VBA Err object\">VBA <literal>Err</literal> object</link>."
 msgstr ""
 
-#. 6rquM
+#. vpB42
 #: sf_exception.xhp
 msgctxt ""
 "sf_exception.xhp\n"
-"par_id61587141015326\n"
+"par_id361621450908874\n"
 "help.text"
 msgid "The <literal>Number</literal> property identifies the error."
 msgstr ""
 
-#. 9Gh4S
+#. TnWpD
 #: sf_exception.xhp
 msgctxt ""
 "sf_exception.xhp\n"
-"par_id251608212974671\n"
+"par_id861621450910254\n"
 "help.text"
-msgid "Use <literal>Raise()</literal> method to interrupt processing, use <literal>RaiseWarning()</literal> method to trap an anomaly and continue processing."
+msgid "Use the <literal>Raise</literal> method to interrupt processing. The <literal>RaiseWarning</literal> method can be used to trap an anomaly without interrupting the macro execution."
 msgstr ""
 
-#. PddYS
+#. CpxKC
 #: sf_exception.xhp
 msgctxt ""
 "sf_exception.xhp\n"
 "par_id621587225732733\n"
 "help.text"
-msgid "Errors or warnings raised with the <literal>Exception</literal> service are stored in memory and can be retrieved using its <literal>Console()</literal> method."
+msgid "Errors and warnings raised with the <literal>Exception</literal> service are stored in memory and can be retrieved using the <literal>Console</literal> method."
 msgstr ""
 
-#. i8z6N
+#. CpBSQ
 #: sf_exception.xhp
 msgctxt ""
 "sf_exception.xhp\n"
 "par_id411587141146677\n"
 "help.text"
-msgid "The <literal>Exception</literal> service console stores events, variable values and information about errors. Use the console when Basic IDE is not accessible, for example in <link href=\"text/scalc/guide/userdefined_function.xhp\" name=\"Calc user-defined function\">Calc user defined functions (UDF)</link> or during events processing. Use <literal>DebugPrint()</literal> method to aggregate additional user data. Console entries can be dumped to a text file or visualized in a dialogue."
+msgid "The <literal>Exception</literal> service console stores events, variable values and information about errors. Use the console when the Basic IDE is not easily accessible, for example in <link href=\"text/scalc/guide/userdefined_function.xhp\" name=\"Calc user-defined function\">Calc user defined functions (UDF)</link> or during events processing."
+msgstr ""
+
+#. NrY9C
+#: sf_exception.xhp
+msgctxt ""
+"sf_exception.xhp\n"
+"par_id251621034725811\n"
+"help.text"
+msgid "Use the <literal>DebugPrint</literal> method to add any relevant information to the console. Console entries can be dumped to a text file or visualized in a dialog window."
 msgstr ""
 
 #. 9AW2i
@@ -10276,13 +10321,13 @@ msgctxt ""
 msgid "Report the error in the <literal>Exception</literal> console"
 msgstr ""
 
-#. SGmPy
+#. N9X2f
 #: sf_exception.xhp
 msgctxt ""
 "sf_exception.xhp\n"
 "par_id751587141235313\n"
 "help.text"
-msgid "Inform the user about the error using either a standard message either a customized message"
+msgid "Inform the user about the error using either a standard message or a custom message"
 msgstr ""
 
 #. C3NMD
@@ -10294,6 +10339,24 @@ msgctxt ""
 msgid "Optionally stop its execution"
 msgstr ""
 
+#. vFJRL
+#: sf_exception.xhp
+msgctxt ""
+"sf_exception.xhp\n"
+"par_id771621035263403\n"
+"help.text"
+msgid "In <emph>Python scripts</emph> the <literal>Exception</literal> service is mostly used for debugging purposes. Methods such as <literal>DebugPrint</literal>, <literal>Console</literal> and <literal>DebugDisplay</literal> are useful to quickly print messages, log data and open the console window from within a Python script."
+msgstr ""
+
+#. VAaLU
+#: sf_exception.xhp
+msgctxt ""
+"sf_exception.xhp\n"
+"par_id211621035276160\n"
+"help.text"
+msgid "Not all methods and properties are available for Python scripts since the Python language already has a comprehensive exception handling system."
+msgstr ""
+
 #. yQzKr
 #: sf_exception.xhp
 msgctxt ""
@@ -10301,15 +10364,6 @@ msgctxt ""
 "hd_id201586594659135\n"
 "help.text"
 msgid "Service invocation"
-msgstr ""
-
-#. 5YFk5
-#: sf_exception.xhp
-msgctxt ""
-"sf_exception.xhp\n"
-"par_id571586594672714\n"
-"help.text"
-msgid "To invoke the <literal>Exception</literal> service, first you need to load the <literal>ScriptForge</literal> library using:"
 msgstr ""
 
 #. T8o7G
@@ -10321,6 +10375,15 @@ msgctxt ""
 msgid "The following examples show three different approaches to call the method <literal>Raise</literal>. All other methods can be executed in a similar fashion."
 msgstr ""
 
+#. tGmaZ
+#: sf_exception.xhp
+msgctxt ""
+"sf_exception.xhp\n"
+"par_id901621036227048\n"
+"help.text"
+msgid "The code snippet below creates an instance of the <literal>Exception</literal> service, logs a message and displays the <literal>Console</literal> window."
+msgstr ""
+
 #. HABsh
 #: sf_exception.xhp
 msgctxt ""
@@ -10328,6 +10391,15 @@ msgctxt ""
 "hd_id651584978211886\n"
 "help.text"
 msgid "Properties"
+msgstr ""
+
+#. JDNi6
+#: sf_exception.xhp
+msgctxt ""
+"sf_exception.xhp\n"
+"par_id911621036526404\n"
+"help.text"
+msgid "The properties listed below are only available for <emph>Basic</emph> scripts."
 msgstr ""
 
 #. s3E9G
@@ -10339,13 +10411,13 @@ msgctxt ""
 msgid "Name"
 msgstr ""
 
-#. qEhnn
+#. b96rE
 #: sf_exception.xhp
 msgctxt ""
 "sf_exception.xhp\n"
 "par_id241584978211550\n"
 "help.text"
-msgid "ReadOnly"
+msgid "Readonly"
 msgstr ""
 
 #. TkMLa
@@ -10519,13 +10591,13 @@ msgctxt ""
 msgid "A modal console can only be closed by the user. A non-modal console can either be closed by the user or upon macro termination."
 msgstr ""
 
-#. 2DWxi
+#. HUgnb
 #: sf_exception.xhp
 msgctxt ""
 "sf_exception.xhp\n"
 "par_id511598718179819\n"
 "help.text"
-msgid "<emph>Modal</emph>: Determine if the console window is Modal (<literal>True</literal>) or Non-modal (<literal>False</literal>). Default value is <literal>True</literal>."
+msgid "<emph>modal</emph>: Determine if the console window is modal (<literal>True</literal>) or non-modal (<literal>False</literal>). Default value is <literal>True</literal>."
 msgstr ""
 
 #. xu6FA
@@ -10537,13 +10609,13 @@ msgctxt ""
 msgid "Clears the console keeping an optional number of recent messages. If the console is activated in non-modal mode, it is refreshed."
 msgstr ""
 
-#. jbkCo
+#. SE7ei
 #: sf_exception.xhp
 msgctxt ""
 "sf_exception.xhp\n"
 "par_id351587215098527\n"
 "help.text"
-msgid "<emph>Keep</emph>: The number of recent messages to be kept. Default value is 0."
+msgid "<emph>keep</emph>: The number of recent messages to be kept. Default value is 0."
 msgstr ""
 
 #. GLEVv
@@ -10564,13 +10636,40 @@ msgctxt ""
 msgid "Exports the contents of the console to a text file. If the file already exists and the console is not empty, it will be overwritten without warning. Returns <literal>True</literal> if successful."
 msgstr ""
 
-#. QMb9C
+#. HEXvU
 #: sf_exception.xhp
 msgctxt ""
 "sf_exception.xhp\n"
 "par_id851587218077862\n"
 "help.text"
-msgid "<emph>FileName</emph>: The name of the text file the console should be dumped into. The name is expressed according to the current <literal>FileNaming</literal> property of the <literal>SF_FileSystem</literal> service. <link href=\"text/sbasic/shared/00000002.xhp\" name=\"Url notation\">URL notation</link> and the native operating system's format are both admitted."
+msgid "<emph>filename</emph>: The name of the text file the console should be dumped into. The name is expressed according to the current <literal>FileNaming</literal> property of the <literal>SF_FileSystem</literal> service. By default, <link href=\"text/sbasic/shared/00000002.xhp\" name=\"Url notation\">URL notation</link> and the native operating system's format are both admitted."
+msgstr ""
+
+#. F3tVM
+#: sf_exception.xhp
+msgctxt ""
+"sf_exception.xhp\n"
+"par_id701621043185177\n"
+"help.text"
+msgid "Concatenates all the arguments into a single human-readable string and displays it in a <literal>MsgBox</literal> with an Information icon and an OK button."
+msgstr ""
+
+#. KaGM6
+#: sf_exception.xhp
+msgctxt ""
+"sf_exception.xhp\n"
+"par_id791621097689492\n"
+"help.text"
+msgid "The final string is also added to the Console."
+msgstr ""
+
+#. QhRgF
+#: sf_exception.xhp
+msgctxt ""
+"sf_exception.xhp\n"
+"par_id481587218636884\n"
+"help.text"
+msgid "<emph>arg0[, arg1, ...]</emph>: Any number of arguments of any type."
 msgstr ""
 
 #. 2qser
@@ -10582,13 +10681,67 @@ msgctxt ""
 msgid "Assembles all the given arguments into a single human-readable string and adds it as a new entry in the console."
 msgstr ""
 
-#. BmmDA
+#. mUSEP
 #: sf_exception.xhp
 msgctxt ""
 "sf_exception.xhp\n"
 "par_id481587218637988\n"
 "help.text"
-msgid "<emph>Arg0[, Arg1, ...]</emph>: Any number of arguments of any type."
+msgid "<emph>arg0[, arg1, ...]</emph>: Any number of arguments of any type."
+msgstr ""
+
+#. CUoch
+#: sf_exception.xhp
+msgctxt ""
+"sf_exception.xhp\n"
+"par_id111621426672183\n"
+"help.text"
+msgid "Opens an APSO Python shell as a non-modal window. The Python script keeps running after the shell is opened. The output from <literal>print</literal> statements inside the script are shown in the shell."
+msgstr ""
+
+#. f9ZzM
+#: sf_exception.xhp
+msgctxt ""
+"sf_exception.xhp\n"
+"par_id841621426922467\n"
+"help.text"
+msgid "Only a single instance of the APSO Python shell can be opened at any time. Hence, if a Python shell is already open, then calling this method will have no effect."
+msgstr ""
+
+#. KGi8B
+#: sf_exception.xhp
+msgctxt ""
+"sf_exception.xhp\n"
+"par_id391621449167833\n"
+"help.text"
+msgid "<emph>variables</emph>: a Python dictionary with variable names and values that will be passed on to the APSO Python shell. By default all local variables are passed using Python's builtin <literal>locals()</literal> function."
+msgstr ""
+
+#. zT7Gq
+#: sf_exception.xhp
+msgctxt ""
+"sf_exception.xhp\n"
+"par_id991621449657850\n"
+"help.text"
+msgid "The example below opens the APSO Python shell passing all global and local variables considering the context where the script is running."
+msgstr ""
+
+#. yUoFK
+#: sf_exception.xhp
+msgctxt ""
+"sf_exception.xhp\n"
+"par_id521621449800348\n"
+"help.text"
+msgid "When the APSO Python shell is open, any subsequent output printed by the script will be shown in the shell. Hence, the string printed in the example below will be displayed in the Python shell."
+msgstr ""
+
+#. 5xNCX
+#: sf_exception.xhp
+msgctxt ""
+"sf_exception.xhp\n"
+"pyc_id731621449899901\n"
+"help.text"
+msgid "print(\"Hello world!\")"
 msgstr ""
 
 #. aXDEK
@@ -10654,13 +10807,13 @@ msgctxt ""
 msgid "To raise an exception with the standard values:"
 msgstr ""
 
-#. ZneYd
+#. SABN3
 #: sf_exception.xhp
 msgctxt ""
 "sf_exception.xhp\n"
 "par_id751587222598238\n"
 "help.text"
-msgid "To raise an exception with an specific code:"
+msgid "To raise an exception with a specific code:"
 msgstr ""
 
 #. QXgCy
@@ -20428,13 +20581,13 @@ msgctxt ""
 msgid "<variable id=\"UIService\"><link href=\"text/sbasic/shared/03/sf_ui.xhp\" name=\"ScriptForge.UI service\"><literal>ScriptForge</literal>.<literal>UI</literal> service</link></variable>"
 msgstr ""
 
-#. ABBCn
+#. cAtxQ
 #: sf_ui.xhp
 msgctxt ""
 "sf_ui.xhp\n"
 "par_id31587913266153\n"
 "help.text"
-msgid "The UI (User Interface) service simplifies the identification and the manipulation of the different windows composing the whole LibreOffice application:"
+msgid "The UI (User Interface) service simplifies the identification and the manipulation of the different windows composing the whole %PRODUCTNAME application:"
 msgstr ""
 
 #. nTqj5
@@ -20491,11 +20644,11 @@ msgctxt ""
 msgid "Access to the underlying \"documents\""
 msgstr ""
 
-#. 3pR9U
+#. W5BL2
 #: sf_ui.xhp
 msgctxt ""
 "sf_ui.xhp\n"
-"par_id421587913266819\n"
+"par_id181620312953395\n"
 "help.text"
 msgid "The UI service is the starting point to open, create or access to the content of new or existing documents from a user script."
 msgstr ""
@@ -20698,6 +20851,177 @@ msgctxt ""
 msgid "The list of the currently open documents. Special windows are ignored. This list consists of a zero-based one dimensional array either of filenames (in SF_FileSystem.FileNaming notation) or of window titles for unsaved documents."
 msgstr ""
 
+#. BH9YJ
+#: sf_ui.xhp
+msgctxt ""
+"sf_ui.xhp\n"
+"hd_id511620762163390\n"
+"help.text"
+msgid "Constants"
+msgstr ""
+
+#. ziD2D
+#: sf_ui.xhp
+msgctxt ""
+"sf_ui.xhp\n"
+"par_id761620761856238\n"
+"help.text"
+msgid "Name"
+msgstr ""
+
+#. eBD6E
+#: sf_ui.xhp
+msgctxt ""
+"sf_ui.xhp\n"
+"par_id591620761856238\n"
+"help.text"
+msgid "Value"
+msgstr ""
+
+#. 2DU4R
+#: sf_ui.xhp
+msgctxt ""
+"sf_ui.xhp\n"
+"par_id711620761856238\n"
+"help.text"
+msgid "Description"
+msgstr ""
+
+#. TGMq5
+#: sf_ui.xhp
+msgctxt ""
+"sf_ui.xhp\n"
+"par_id511620761856238\n"
+"help.text"
+msgid "MACROEXECALWAYS"
+msgstr ""
+
+#. VFEvz
+#: sf_ui.xhp
+msgctxt ""
+"sf_ui.xhp\n"
+"par_id761620761856107\n"
+"help.text"
+msgid "2"
+msgstr ""
+
+#. adCUF
+#: sf_ui.xhp
+msgctxt ""
+"sf_ui.xhp\n"
+"par_id341620761856238\n"
+"help.text"
+msgid "Macros are always executed"
+msgstr ""
+
+#. o7zQn
+#: sf_ui.xhp
+msgctxt ""
+"sf_ui.xhp\n"
+"par_id661620761881513\n"
+"help.text"
+msgid "MACROEXECNEVER"
+msgstr ""
+
+#. kfQCf
+#: sf_ui.xhp
+msgctxt ""
+"sf_ui.xhp\n"
+"par_id661620761891082\n"
+"help.text"
+msgid "1"
+msgstr ""
+
+#. 7hEDg
+#: sf_ui.xhp
+msgctxt ""
+"sf_ui.xhp\n"
+"par_id101620761893011\n"
+"help.text"
+msgid "Macros are never executed"
+msgstr ""
+
+#. EABYh
+#: sf_ui.xhp
+msgctxt ""
+"sf_ui.xhp\n"
+"par_id311620761888379\n"
+"help.text"
+msgid "MACROEXECNORMAL"
+msgstr ""
+
+#. LpGCQ
+#: sf_ui.xhp
+msgctxt ""
+"sf_ui.xhp\n"
+"par_id951620761899067\n"
+"help.text"
+msgid "0"
+msgstr ""
+
+#. 6Jgt7
+#: sf_ui.xhp
+msgctxt ""
+"sf_ui.xhp\n"
+"par_id11620761899780\n"
+"help.text"
+msgid "Macro execution depends on user settings"
+msgstr ""
+
+#. BTUQ4
+#: sf_ui.xhp
+msgctxt ""
+"sf_ui.xhp\n"
+"par_id311620312548992\n"
+"help.text"
+msgid "The examples below show a <literal>MsgBox</literal> with the names of all currently open documents."
+msgstr ""
+
+#. DCM9L
+#: sf_ui.xhp
+msgctxt ""
+"sf_ui.xhp\n"
+"pyc_id21620312350189\n"
+"help.text"
+msgid "svcUI = CreateScriptService(\"UI\")"
+msgstr ""
+
+#. EBquG
+#: sf_ui.xhp
+msgctxt ""
+"sf_ui.xhp\n"
+"pyc_id631620312351013\n"
+"help.text"
+msgid "sBasic = CreateScriptService(\"Basic\")"
+msgstr ""
+
+#. 3XXYB
+#: sf_ui.xhp
+msgctxt ""
+"sf_ui.xhp\n"
+"pyc_id141620312351286\n"
+"help.text"
+msgid "openDocs = svcUI.Documents()"
+msgstr ""
+
+#. jZeEa
+#: sf_ui.xhp
+msgctxt ""
+"sf_ui.xhp\n"
+"pyc_id661620312351500\n"
+"help.text"
+msgid "strDocs = \"\\n\".join(openDocs)"
+msgstr ""
+
+#. 7hHpR
+#: sf_ui.xhp
+msgctxt ""
+"sf_ui.xhp\n"
+"pyc_id801620312351676\n"
+"help.text"
+msgid "sBasic.MsgBox(strDocs)"
+msgstr ""
+
 #. DfpBz
 #: sf_ui.xhp
 msgctxt ""
@@ -20707,11 +21031,11 @@ msgctxt ""
 msgid "List of Methods in the UI Service"
 msgstr ""
 
-#. dfsmh
+#. 4fc2p
 #: sf_ui.xhp
 msgctxt ""
 "sf_ui.xhp\n"
-"par_id811596553490262\n"
+"par_id431620322170443\n"
 "help.text"
 msgid "Note, as an exception, that the methods marked <emph>(*)</emph> are <emph>not applicable to Base documents</emph>."
 msgstr ""
@@ -20725,85 +21049,103 @@ msgctxt ""
 msgid "Make the specified window active. The method returns <literal>True</literal> if the given window is found and can be activated. There is no change in the actual user interface if no window matches the selection."
 msgstr ""
 
-#. fcE3q
+#. w9DR4
 #: sf_ui.xhp
 msgctxt ""
 "sf_ui.xhp\n"
 "par_id381587913266946\n"
 "help.text"
-msgid "<emph>WindowName</emph>: see the definitions above."
+msgid "<emph>windowname</emph>: see the definitions above."
 msgstr ""
 
-#. df2C7
+#. 5kwSb
 #: sf_ui.xhp
 msgctxt ""
 "sf_ui.xhp\n"
 "par_id13159655484952\n"
 "help.text"
-msgid "Create and store a new LibreOffice Base document embedding an empty database of the given type. The method returns a document object."
+msgid "Creates and stores a new %PRODUCTNAME Base document embedding an empty database of the given type. The method returns a <literal>Document</literal> service instance."
 msgstr ""
 
-#. BtPaW
+#. gqGpB
 #: sf_ui.xhp
 msgctxt ""
 "sf_ui.xhp\n"
 "par_id441596554849949\n"
 "help.text"
-msgid "<emph>FileName</emph> : Identifies the file to create. It must follow the SF_FileSystem.FileNaming notation. If the file already exists, it is overwritten without warning"
+msgid "<emph>filename</emph> : Identifies the file to create. It must follow the <literal>SF_FileSystem.FileNaming</literal> notation. If the file already exists, it is overwritten without warning"
 msgstr ""
 
-#. nePdj
+#. ncJxE
 #: sf_ui.xhp
 msgctxt ""
 "sf_ui.xhp\n"
 "par_id381596554849698\n"
 "help.text"
-msgid "<emph>EmbeddedDatabase</emph> : Either \"HSQLDB\" (default) or \"FIREBIRD\"."
+msgid "<emph>embeddeddatabase</emph> : Either \"HSQLDB\" (default) or \"FIREBIRD\"."
 msgstr ""
 
-#. iyE5E
+#. BWgpN
 #: sf_ui.xhp
 msgctxt ""
 "sf_ui.xhp\n"
 "par_id521596554849185\n"
 "help.text"
-msgid "<emph>RegistrationName</emph> : The name used to store the new database in the databases register. When = \"\" (default), no registration takes place. If the name already exists it is overwritten without warning."
+msgid "<emph>registrationname</emph> : The name used to store the new database in the databases register. When = \"\" (default), no registration takes place. If the name already exists it is overwritten without warning."
 msgstr ""
 
-#. A9gBj
+#. XkY2F
+#: sf_ui.xhp
+msgctxt ""
+"sf_ui.xhp\n"
+"pyc_id361620323808010\n"
+"help.text"
+msgid "myBase = svcUI.CreateBaseDocument(r\"C:\\Databases\\MyBaseFile.odb\", \"FIREBIRD\")"
+msgstr ""
+
+#. GtB5n
 #: sf_ui.xhp
 msgctxt ""
 "sf_ui.xhp\n"
 "par_id651588521753997\n"
 "help.text"
-msgid "Create a new LibreOffice document of a given type or based on a given template. The method returns a document object."
+msgid "Create a new %PRODUCTNAME document of a given type or based on a given template. The method returns a document object."
 msgstr ""
 
-#. CC8kd
+#. 2rUeD
 #: sf_ui.xhp
 msgctxt ""
 "sf_ui.xhp\n"
 "par_id51588521753302\n"
 "help.text"
-msgid "<emph>DocumentType</emph> : \"Calc\", \"Writer\", etc. If absent, the <literal>TemplateFile</literal> argument must be present."
+msgid "<emph>documenttype</emph> : \"Calc\", \"Writer\", etc. If absent, the <literal>TemplateFile</literal> argument must be present."
 msgstr ""
 
-#. 2DPGC
+#. BQ6UD
 #: sf_ui.xhp
 msgctxt ""
 "sf_ui.xhp\n"
 "par_id401588522663325\n"
 "help.text"
-msgid "<emph>TemplateFile</emph> : The full <literal>FileName</literal> of the template to build the new document on. If the file does not exist, the argument is ignored. The \"FileSystem\" service provides the <literal>TemplatesFolder</literal> and <literal>UserTemplatesFolder</literal> properties to help to build the argument."
+msgid "<emph>templatefile</emph> : The full <literal>FileName</literal> of the template to build the new document on. If the file does not exist, the argument is ignored. The <literal>FileSystem</literal> service provides the <literal>TemplatesFolder</literal> and <literal>UserTemplatesFolder</literal> properties to help to build the argument."
 msgstr ""
 
-#. JFB9W
+#. VeNQg
 #: sf_ui.xhp
 msgctxt ""
 "sf_ui.xhp\n"
 "par_id131588522824366\n"
 "help.text"
-msgid "<emph>Hidden</emph>: if <literal>True</literal>, open the new document in the background (default = False). To use with caution: activation or closure afterwards can only happen programmatically."
+msgid "<emph>hidden</emph>: if <literal>True</literal>, open the new document in the background (default = <literal>False</literal>). To use with caution: activation or closure afterwards can only happen programmatically."
+msgstr ""
+
+#. gWFt9
+#: sf_ui.xhp
+msgctxt ""
+"sf_ui.xhp\n"
+"par_id701620762417802\n"
+"help.text"
+msgid "In both examples below, the first call to <literal>CreateDocument</literal> method creates a blank Calc document, whereas the second creates a document from a template file."
 msgstr ""
 
 #. W3qxn
@@ -20815,13 +21157,22 @@ msgctxt ""
 msgid "Returns a document object referring to either the active window or the given window."
 msgstr ""
 
-#. hD23E
+#. hZmVw
 #: sf_ui.xhp
 msgctxt ""
 "sf_ui.xhp\n"
 "par_id851588520551368\n"
 "help.text"
-msgid "<emph>WindowName</emph>: see the definitions above."
+msgid "<emph>windowname</emph>: See the definitions <link href=\"text/sbasic/shared/03/sf_ui.xhp#WindowName\" name=\"WindowName section\">above</link>. If this argument is absent, the active window is used."
+msgstr ""
+
+#. AAjDB
+#: sf_ui.xhp
+msgctxt ""
+"sf_ui.xhp\n"
+"par_id521620330287071\n"
+"help.text"
+msgid "To access the name of the currently active window, refer to the <literal>ActiveWindow</literal> property."
 msgstr ""
 
 #. CYsyC
@@ -20833,13 +21184,13 @@ msgctxt ""
 msgid "Maximizes the active window or the given window."
 msgstr ""
 
-#. G2hSo
+#. hD4TC
 #: sf_ui.xhp
 msgctxt ""
 "sf_ui.xhp\n"
 "par_id951587986441954\n"
 "help.text"
-msgid "<emph>WindowName</emph>: see the definitions above. If the argument is absent, the active window is maximized."
+msgid "<emph>windowname</emph>: see the definitions <link href=\"text/sbasic/shared/03/sf_ui.xhp#WindowName\" name=\"WindowName section\">above</link>. If this argument is absent, the active window is maximized."
 msgstr ""
 
 #. vzDdG
@@ -20851,121 +21202,130 @@ msgctxt ""
 msgid "Minimizes the active window or the given window."
 msgstr ""
 
-#. snQ6b
+#. Enys5
 #: sf_ui.xhp
 msgctxt ""
 "sf_ui.xhp\n"
 "par_id751587986592626\n"
 "help.text"
-msgid "<emph>WindowName</emph>: see the definitions above. If the argument is absent, the active window is minimized."
+msgid "<emph>windowname</emph>: see the definitions <link href=\"text/sbasic/shared/03/sf_ui.xhp#WindowName\" name=\"WindowName section\">above</link>. If this argument is absent, the active window is minimized."
 msgstr ""
 
-#. tmxLS
+#. WHDDQ
 #: sf_ui.xhp
 msgctxt ""
 "sf_ui.xhp\n"
 "par_id691596555746539\n"
 "help.text"
-msgid "Open an existing LibreOffice Base document. The method returns a document object."
+msgid "Open an existing %PRODUCTNAME Base document. The method returns a document object."
 msgstr ""
 
-#. RERE5
+#. yGPbD
 #: sf_ui.xhp
 msgctxt ""
 "sf_ui.xhp\n"
 "par_id231596555746385\n"
 "help.text"
-msgid "<emph>FileName</emph> : Identifies the file to open. It must follow the SF_FileSystem.FileNaming notation. If the file already exists, it is overwritten without warning"
+msgid "<emph>filename</emph> : Identifies the file to open. It must follow the SF_FileSystem.FileNaming notation. If the file already exists, it is overwritten without warning"
 msgstr ""
 
-#. xE2FY
+#. DBB9u
 #: sf_ui.xhp
 msgctxt ""
 "sf_ui.xhp\n"
 "par_id711596555746281\n"
 "help.text"
-msgid "<emph>RegistrationName</emph> : The name to use to find the database in the databases register. It is ignored if <literal>FileName</literal> <> \"\"."
+msgid "<emph>registrationname</emph> : The name to use to find the database in the databases register. It is ignored if <literal>FileName</literal> <> \"\"."
 msgstr ""
 
-#. u4Erc
+#. TqAd2
 #: sf_ui.xhp
 msgctxt ""
 "sf_ui.xhp\n"
 "id721596556313545\n"
 "help.text"
-msgid "<emph>MacroExecution</emph>: 0 = behaviour is defined by the user configuration, 1 = macros are not executable, 2 = macros are executable."
+msgid "<emph>macroexecution</emph>: 0 = behaviour is defined by the user configuration, 1 = macros are not executable, 2 = macros are executable."
 msgstr ""
 
-#. szffG
+#. Dok5e
+#: sf_ui.xhp
+msgctxt ""
+"sf_ui.xhp\n"
+"par_id941620762989833\n"
+"help.text"
+msgid "To improve code readability you can use <link href=\"text/sbasic/shared/03/sf_ui.xhp#Constants\" name=\"CHANGE ME\">predefined constants</link> for the <literal>macroexecution</literal> argument, as in the examples above."
+msgstr ""
+
+#. LBgGQ
 #: sf_ui.xhp
 msgctxt ""
 "sf_ui.xhp\n"
 "par_id541588523635283\n"
 "help.text"
-msgid "Open an existing LibreOffice document with the given options. Returns a document object or one of its subclasses or <literal>Null</literal> if the opening failed, including when due to a user decision."
+msgid "Opens an existing %PRODUCTNAME document with the given options. Returns a document object or one of its subclasses. The method returns <literal>Nothing</literal> (in Basic) / <literal>None</literal> (in Python) if the opening failed, even when the failure is caused by a user decision."
 msgstr ""
 
-#. dZF95
+#. 8tjbg
 #: sf_ui.xhp
 msgctxt ""
 "sf_ui.xhp\n"
 "par_id481588523635890\n"
 "help.text"
-msgid "<emph>FileName</emph>: Identifies the file to open. It must follow the <literal>FileNaming</literal> notation of the <literal>FileSystem</literal> service."
+msgid "<emph>filename</emph>: Identifies the file to open. It must follow the <literal>FileNaming</literal> notation of the <literal>FileSystem</literal> service."
 msgstr ""
 
-#. NRyuH
+#. PWvQz
 #: sf_ui.xhp
 msgctxt ""
 "sf_ui.xhp\n"
 "par_id451588523635507\n"
 "help.text"
-msgid "<emph>Password</emph>: To use when the document is protected. If wrong or absent while the document is protected, the user will be prompted to enter a password."
+msgid "<emph>password</emph>: To use when the document is protected. If wrong or absent while the document is protected, the user will be prompted to enter a password."
 msgstr ""
 
-#. hZkGG
+#. 2jjFK
 #: sf_ui.xhp
 msgctxt ""
 "sf_ui.xhp\n"
 "par_id611588524329781\n"
 "help.text"
-msgid "<emph>ReadOnly</emph>: Default = <literal>False</literal>."
+msgid "<emph>readonly</emph>: Default = <literal>False</literal>."
 msgstr ""
 
-#. Hhywx
+#. BcyEp
 #: sf_ui.xhp
 msgctxt ""
 "sf_ui.xhp\n"
 "par_id641588523635497\n"
 "help.text"
-msgid "<emph>Hidden</emph>: if <literal>True</literal>, open the new document in the background (default = False). To use with caution: activation or closure afterwards can only happen programmatically."
+msgid "<emph>hidden</emph>: if <literal>True</literal>, open the new document in the background (default = <literal>False</literal>). To use with caution: activation or closure afterwards can only happen programmatically."
 msgstr ""
 
-#. VPmyv
+#. sbgeH
 #: sf_ui.xhp
 msgctxt ""
 "sf_ui.xhp\n"
 "par_id981588524474719\n"
 "help.text"
-msgid "<emph>MacroExecution</emph>: 0 = behaviour is defined by the user configuration, 1 = macros are not executable, 2 = macros are executable."
+msgid "<emph>macroexecution</emph>: 0 = behaviour is defined by the user configuration, 1 = macros are not executable, 2 = macros are executable."
 msgstr ""
 
-#. KBCtV
+#. AF7iF
 #: sf_ui.xhp
 msgctxt ""
 "sf_ui.xhp\n"
 "par_id611588524584693\n"
 "help.text"
-msgid "<emph>FilterName</emph>: The name of a filter that should be used for loading the document. If present, the filter must exist."
+msgid "<emph>filtername</emph>: The name of a filter that should be used for loading the document. If present, the filter must exist."
 msgstr ""
 
-#. 6rbcm
+#. MKueU
 #: sf_ui.xhp
 msgctxt ""
 "sf_ui.xhp\n"
 "par_id191588524634348\n"
 "help.text"
-msgid "<emph>FilterOptions</emph>: An optional string of options associated with the filter."
+msgid "<emph>filteroptions</emph>: An optional string of options associated with the filter."
 msgstr ""
 
 #. qMTrj
@@ -20977,31 +21337,49 @@ msgctxt ""
 msgid "Resizes and/or moves the active window. Absent and negative arguments are ignored. If the window is minimized or maximized, calling <literal>Resize</literal> without arguments restores it."
 msgstr ""
 
-#. SxjEP
+#. 6NUcv
 #: sf_ui.xhp
 msgctxt ""
 "sf_ui.xhp\n"
 "par_id441587986945696\n"
 "help.text"
-msgid "<emph>Left, Top</emph>: Distances of the top-left corner from top and left edges of the screen."
+msgid "<emph>left, top</emph>: Distances of the top-left corner from top and left edges of the screen, in pixels."
 msgstr ""
 
-#. ne7hx
+#. AdcjG
 #: sf_ui.xhp
 msgctxt ""
 "sf_ui.xhp\n"
 "par_id601587987453825\n"
 "help.text"
-msgid "<emph>Width, Height</emph>: New dimensions of the window."
+msgid "<emph>width, height</emph>: New dimensions of the window, in pixels."
 msgstr ""
 
-#. 4UBqz
+#. vDNVH
 #: sf_ui.xhp
 msgctxt ""
 "sf_ui.xhp\n"
-"bas_id801587987507028\n"
+"par_id801587987507028\n"
 "help.text"
-msgid "' Top and Height are left unchanged"
+msgid "In the following examples, the <literal>width</literal> and <literal>height</literal> of the window are changed while <literal>top</literal> and <literal>left</literal> are left unchanged."
+msgstr ""
+
+#. 7HuAE
+#: sf_ui.xhp
+msgctxt ""
+"sf_ui.xhp\n"
+"pyc_id971620331945744\n"
+"help.text"
+msgid "svcUI.Resize(width = 500, height = 500)"
+msgstr ""
+
+#. HP2Jb
+#: sf_ui.xhp
+msgctxt ""
+"sf_ui.xhp\n"
+"par_id21620332301809\n"
+"help.text"
+msgid "To resize a window that is not active, first activate it using the <literal>Activate</literal> method."
 msgstr ""
 
 #. NnBWM
@@ -21013,58 +21391,130 @@ msgctxt ""
 msgid "Display a text and a progressbar in the status bar of the active window. Any subsequent calls in the same macro run refer to the same status bar of the same window, even if the window is not visible anymore. A call without arguments resets the status bar to its normal state."
 msgstr ""
 
-#. dKTqd
+#. rDr2L
 #: sf_ui.xhp
 msgctxt ""
 "sf_ui.xhp\n"
 "par_id71587996421829\n"
 "help.text"
-msgid "<emph>Text</emph>: An optional text to be displayed in front of the progress bar."
+msgid "<emph>text</emph>: An optional text to be displayed in front of the progress bar."
 msgstr ""
 
-#. WuBNx
+#. hbCpG
 #: sf_ui.xhp
 msgctxt ""
 "sf_ui.xhp\n"
 "par_id881587996421777\n"
 "help.text"
-msgid "<emph>Percentage</emph>: an optional degree of progress between 0 and 100."
+msgid "<emph>percentage</emph>: an optional degree of progress between 0 and 100."
 msgstr ""
 
-#. DBbfU
+#. qbGdy
+#: sf_ui.xhp
+msgctxt ""
+"sf_ui.xhp\n"
+"bas_id651620332601083\n"
+"help.text"
+msgid "' Resets the statusbar"
+msgstr ""
+
+#. venZk
+#: sf_ui.xhp
+msgctxt ""
+"sf_ui.xhp\n"
+"pyc_id631620332653004\n"
+"help.text"
+msgid "from time import sleep"
+msgstr ""
+
+#. AQ57P
+#: sf_ui.xhp
+msgctxt ""
+"sf_ui.xhp\n"
+"pyc_id351620332422330\n"
+"help.text"
+msgid "for i in range(101):"
+msgstr ""
+
+#. uUDVJ
+#: sf_ui.xhp
+msgctxt ""
+"sf_ui.xhp\n"
+"bas_id261620332627647\n"
+"help.text"
+msgid "svcUI.SetStatusbar(\"Test:\", i)"
+msgstr ""
+
+#. qWafN
+#: sf_ui.xhp
+msgctxt ""
+"sf_ui.xhp\n"
+"pyc_id181620332715974\n"
+"help.text"
+msgid "sleep(0.05)"
+msgstr ""
+
+#. PgCrS
+#: sf_ui.xhp
+msgctxt ""
+"sf_ui.xhp\n"
+"pyc_id381620332733373\n"
+"help.text"
+msgid "svcUI.SetStatusbar()"
+msgstr ""
+
+#. oQfWc
 #: sf_ui.xhp
 msgctxt ""
 "sf_ui.xhp\n"
 "par_id571598864255776\n"
 "help.text"
-msgid "Display a non-modal dialog box. Specify its title, an explicatory text and a percentage of progress represented on a progressbar. The box will remain visible until a call to the method without argument, or until the end of the currently running macro."
+msgid "Displays a non-modal dialog box. Specify its title, an explicatory text and a percentage of progress to be represented on a progressbar. The dialog will remain visible until a call to the method without arguments or until the user manually closes the dialog."
 msgstr ""
 
-#. B27Bg
+#. drhV6
 #: sf_ui.xhp
 msgctxt ""
 "sf_ui.xhp\n"
 "par_id441598864535695\n"
 "help.text"
-msgid "<emph>Title</emph> : The title appearing on top of the dialog box. Default = \"ScriptForge\"."
+msgid "<emph>title</emph> : The title appearing on top of the dialog box. Default = \"ScriptForge\"."
 msgstr ""
 
-#. 6pZKs
+#. jvrZV
 #: sf_ui.xhp
 msgctxt ""
 "sf_ui.xhp\n"
 "par_id311598864255297\n"
 "help.text"
-msgid "<emph>Text</emph>: An optional text to be displayed above the progress bar."
+msgid "<emph>text</emph>: An optional text to be displayed above the progress bar."
 msgstr ""
 
-#. FV2pm
+#. Qj3N3
 #: sf_ui.xhp
 msgctxt ""
 "sf_ui.xhp\n"
 "par_id881598864255424\n"
 "help.text"
-msgid "<emph>Percentage</emph>: an optional degree of progress between 0 and 100."
+msgid "<emph>percentage</emph>: an optional degree of progress between 0 and 100."
+msgstr ""
+
+#. rVBX3
+#: sf_ui.xhp
+msgctxt ""
+"sf_ui.xhp\n"
+"bas_id651620333289753\n"
+"help.text"
+msgid "' Closes the Progress Bar window"
+msgstr ""
+
+#. u3gZ8
+#: sf_ui.xhp
+msgctxt ""
+"sf_ui.xhp\n"
+"pyc_id761620333269236\n"
+"help.text"
+msgid "# Closes the Progress Bar window"
 msgstr ""
 
 #. ZEG6t
@@ -21076,11 +21526,29 @@ msgctxt ""
 msgid "Returns <literal>True</literal> if the given window could be identified."
 msgstr ""
 
-#. aAKnF
+#. rkJbT
 #: sf_ui.xhp
 msgctxt ""
 "sf_ui.xhp\n"
 "par_id45158858711917\n"
 "help.text"
-msgid "<emph>WindowName</emph>: see the definitions above."
+msgid "<emph>windowname</emph>: see the definitions above."
+msgstr ""
+
+#. F7ntw
+#: sf_ui.xhp
+msgctxt ""
+"sf_ui.xhp\n"
+"pyc_id441620333481074\n"
+"help.text"
+msgid "if svcUI.WindowExists(r\"C:\\Document\\My file.odt\"):"
+msgstr ""
+
+#. nLT8F
+#: sf_ui.xhp
+msgctxt ""
+"sf_ui.xhp\n"
+"pyc_id801620333495532\n"
+"help.text"
+msgid "# ..."
 msgstr ""
