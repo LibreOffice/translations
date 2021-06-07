@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: LibreOffice 7.2\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2021-05-08 19:39+0200\n"
-"PO-Revision-Date: 2021-05-09 16:11+0200\n"
+"POT-Creation-Date: 2021-06-02 12:02+0200\n"
+"PO-Revision-Date: 2021-06-06 17:57+0200\n"
 "Last-Translator: Martin Srebotnjak <miles@filmsi.net>\n"
 "Language-Team: sl.libreoffice.org\n"
 "Language: sl\n"
@@ -2831,7 +2831,7 @@ msgctxt ""
 "par_id381618831451271\n"
 "help.text"
 msgid "The default component context is used, when instantiating services via <literal>XMultiServiceFactory</literal>. See the <literal>Professional UNO</literal> chapter in the Developer's Guide on <link href=\"https://api.libreoffice.org/\" name=\"API Developer's Guide\">api.libreoffice.org</link> for more information."
-msgstr "Privzeti kontekst komponente se uporabi, kadar storitve instanciirate prek <literal>XMultiServiceFactory</literal>. Podrobnosti si oglejte v poglavju <literal>Professional UNO</literal> v Vodniku za razvijalce (Developer's Guide) na <link href=\"https://api.libreoffice.org/\" name=\"Vodnik za razvijalce API\">api.libreoffice.org</link> (v angl.)."
+msgstr "Privzeti kontekst komponente se uporabi, kadar storitve instanciirate prek <literal>XMultiServiceFactory</literal>. Podrobnosti si oglejte v poglavju <literal>Professional UNO</literal> v vodniku za razvijalce (Developer's Guide) na <link href=\"https://api.libreoffice.org/\" name=\"Vodnik za razvijalce API\">api.libreoffice.org</link> (v angl.)."
 
 #: sf_basic.xhp
 msgctxt ""
@@ -3118,16 +3118,16 @@ msgctxt ""
 "sf_calc.xhp\n"
 "par_id381589189355849\n"
 "help.text"
-msgid "The <literal>SFDocuments</literal> library provides a number of methods and properties to facilitate the management and handling of LibreOffice Calc documents."
-msgstr "Knjižnica <literal>SFDocuments</literal> vsebuje metode in lastnosti, ki lajšajo upravljanje in ravnanje z dokumenti LibreOffice Calc."
+msgid "The <literal>SFDocuments</literal> library provides a number of methods and properties to facilitate the management and handling of %PRODUCTNAME Calc documents."
+msgstr "Knjižnica <literal>SFDocuments</literal> vsebuje metode in lastnosti, ki pomagajo pri upravljanju in ravnanju z dokumenti %PRODUCTNAME Calc."
 
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id351591014177269\n"
 "help.text"
-msgid "Some methods are generic for all types of documents and are inherited from the <literal>SF_Document</literal> service, whereas other methods are specific for the <literal>SF_Calc</literal> module."
-msgstr "Nekatere metode so generične za vse vrste dokumentov in se dedujejo iz storitve <literal>SF_Document</literal>, medtem ko so druge metode specifične za modul <literal>SF_Calc</literal>."
+msgid "Some methods are generic for all types of documents and are inherited from the <literal>Document</literal> service, whereas other methods are specific for the <literal>SF_Calc</literal> module."
+msgstr "Nekatere metode so generične za vse vrste dokumentov in se dedujejo iz storitve <literal>Document</literal>, medtem ko so druge metode specifične za modul <literal>SF_Calc</literal>."
 
 #: sf_calc.xhp
 msgctxt ""
@@ -3172,14 +3172,6 @@ msgstr "Priklic storitve"
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
-"par_id141610734722352\n"
-"help.text"
-msgid "Before using the <literal>Calc</literal> service the <literal>ScriptForge</literal> library needs to be loaded using:"
-msgstr "Pred uporabo storitve <literal>Calc</literal> je potrebno naložiti knjižnico <literal>ScriptForge</literal>:"
-
-#: sf_calc.xhp
-msgctxt ""
-"sf_calc.xhp\n"
 "par_id591589191059889\n"
 "help.text"
 msgid "The <literal>Calc</literal> service is closely related to the <literal>UI</literal> service of the <literal>ScriptForge</literal> library. Below are a few examples of how the <literal>Calc</literal> service can be invoked."
@@ -3188,26 +3180,42 @@ msgstr "Storitev <literal>Calc</literal> je tesno povezana s storitvijo <literal
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
-"bas_id571589191739218\n"
+"par_id551621623999947\n"
 "help.text"
-msgid "'1) From the ScriptForge.UI service:"
-msgstr "'1) Iz storitve ScriptForge.UI:"
+msgid "The code snippet below creates a <literal>Calc</literal> service instance that corresponds to the currently active Calc document."
+msgstr "Spodnji odlomek kode ustvari instanco storitve <literal>Calc</literal>, ki se nanaša na trenutno dejavni dokument Calc."
 
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
-"bas_id331589191766531\n"
+"par_id341621467500466\n"
 "help.text"
-msgid "'Or: Set oDoc = ui.OpenDocument(\"C:\\Me\\MyFile.ods\")"
-msgstr "'Ali: Set oDoc = ui.OpenDocument(\"C:\\Jaz\\MojaDatoteka.ods\")"
+msgid "Another way to create an instance of the <literal>Calc</literal> service is using the <literal>UI</literal> service. In the following example, a new Calc document is created and <literal>oDoc</literal> is a <literal>Calc</literal> service instance:"
+msgstr "Drugi način ustvarjanja instance storitve <literal>Calc</literal> je z uporabo storitve <literal>UI</literal>. Naslednji primer ustvari nov dokument programa Calc in <literal>oDoc</literal> je instanca storitve <literal>Calc</literal>:"
 
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
-"bas_id571589191774268\n"
+"par_id921621467621019\n"
 "help.text"
-msgid "'2) Directly if the document is already open"
-msgstr "'2) Neposredno, če je dokument že odprt"
+msgid "Or using the <literal>OpenDocument</literal> method from the <literal>UI</literal> service:"
+msgstr "Ali z uporabo metode <literal>OpenDocument</literal> iz storitve <literal>UI</literal>:"
+
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id741621467697967\n"
+"help.text"
+msgid "It is also possible to instantiate the <literal>Calc</literal> service using the <literal>CreateScriptService</literal> method:"
+msgstr "Storitev <literal>Calc</literal> lahko instanciirate tudi z metodo <literal>CreateScriptService</literal>:"
+
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id271621467810774\n"
+"help.text"
+msgid "In the example above, \"MyFile.ods\" is the name of an open document window. If this argument is not provided, the active window is considered."
+msgstr "V zgornjem primeru je »MyFile.ods« ime okna odprtega dokumenta. Če ta argument ni podan, je upoštevano dejavno okno."
 
 #: sf_calc.xhp
 msgctxt ""
@@ -3263,7 +3271,7 @@ msgctxt ""
 "par_id571591019367284\n"
 "help.text"
 msgid "Within a <emph>specific</emph> <literal>Calc</literal> <emph>instance</emph>, sheets and ranges are given as strings such as \"Sheet1\" and \"D2:F6\"."
-msgstr "V <emph>določeni instanci</emph> storitve <literal>Calc</literal> so delovni listi in obsegi podani kot \"Sheet1\" in \"D2:F6\"."
+msgstr "V <emph>določeni instanci</emph> storitve <literal>Calc</literal> so delovni listi in obsegi podani kot »Sheet1« in »D2:F6«."
 
 #: sf_calc.xhp
 msgctxt ""
@@ -3310,8 +3318,8 @@ msgctxt ""
 "sf_calc.xhp\n"
 "par_id691591020711395\n"
 "help.text"
-msgid "The shortcut \"~\" (tilde) represents the current selection or the first range if multiple ranges are selected."
-msgstr "Nadomestni znak \"~\" (tilda) predstavlja trenutni izbor ali prvi obseg, če je izbranih več obsegov."
+msgid "The shortcut \"~\" (tilde) represents the current selection or the first selected range if multiple ranges are selected."
+msgstr "Nadomestni znak \"~\" (tilda) predstavlja trenutni izbor ali prvi izbrani obseg, če je izbranih več obsegov."
 
 #: sf_calc.xhp
 msgctxt ""
@@ -3854,8 +3862,8 @@ msgctxt ""
 "sf_calc.xhp\n"
 "par_id821591631203996\n"
 "help.text"
-msgid "<emph>SheetName</emph> : The name of the sheet to be activated in the document."
-msgstr "<emph>SheetName</emph>: ime delovnega lista, ki bo aktiviran v dokumentu."
+msgid "<emph>sheetname</emph>: The name of the sheet to be activated in the document. The default value is an empty string, meaning that the document window will be activated without changing the active sheet."
+msgstr "<emph>sheetname</emph>: ime delovnega lista, ki ga želite v dokumentu narediti dejavnega. Privzeta vrednost je prazen niz, kar pomeni, da bo okno dokumenta aktivirano brez spremembe dejavnega delovnega lista."
 
 #: sf_calc.xhp
 msgctxt ""
@@ -3886,7 +3894,7 @@ msgctxt ""
 "sf_calc.xhp\n"
 "par_id441592919577809\n"
 "help.text"
-msgid "<emph>Range</emph> : The range to be cleared, as a string."
+msgid "<emph>range</emph>: The range to be cleared, as a string."
 msgstr "<emph>Range</emph>: obseg, ki bo počiščen, kot niz."
 
 #: sf_calc.xhp
@@ -3902,7 +3910,7 @@ msgctxt ""
 "sf_calc.xhp\n"
 "par_id611592919864268\n"
 "help.text"
-msgid "<emph>Range</emph> : The range whose formats and styles are to be cleared, as a string."
+msgid "<emph>range</emph>: The range whose formats and styles are to be cleared, as a string."
 msgstr "<emph>Range</emph>: obseg, katerega oblikovanje in slogi bodo počiščeni, kot niz."
 
 #: sf_calc.xhp
@@ -3918,7 +3926,7 @@ msgctxt ""
 "sf_calc.xhp\n"
 "par_id771592919928320\n"
 "help.text"
-msgid "<emph>Range</emph> : The range whose values and formulas are to be cleared, as a string."
+msgid "<emph>range</emph>: The range whose values and formulas are to be cleared, as a string."
 msgstr "<emph>Range</emph>: obseg, katerega vrednosti in formule bodo počiščeni, kot niz."
 
 #: sf_calc.xhp
@@ -3934,24 +3942,24 @@ msgctxt ""
 "sf_calc.xhp\n"
 "par_id871591631693741\n"
 "help.text"
-msgid "<emph>SheetName</emph> : The name of the sheet to be copied as a string or its reference as an object."
-msgstr "<emph>SheetName</emph>: ime delovnega lista, ki bo kopiran, kot niz ali sklic nanj kot predmet."
+msgid "<emph>sheetname</emph>: The name of the sheet to be copied as a string or its reference as an object."
+msgstr "<emph>Sheetname</emph>: ime delovnega lista, ki bo kopiran, kot niz ali sklic nanj kot predmet."
 
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id351591632126180\n"
 "help.text"
-msgid "<emph>NewName</emph> : The name of the sheet to insert. The name must not be in use in the document."
-msgstr "<emph>NewName</emph>: ime delovnega lista, ki bo vstavljen. Ime ne sme biti uporabljeno v dokumentu."
+msgid "<emph>newname</emph>: The name of the sheet to insert. The name must not be in use in the document."
+msgstr "<emph>Newname</emph>: ime delovnega lista, ki bo vstavljen. Ime ne sme biti uporabljeno v dokumentu."
 
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id211591632192379\n"
 "help.text"
-msgid "<emph>BeforeSheet</emph> : The name (string) or index (numeric, starting from 1) of the sheet before which to insert the copied sheet. This argument is optional and the default behavior is to add the copied sheet at the last position."
-msgstr "<emph>BeforeSheet</emph>: ime (niz) ali indeks (številski, od 1 naprej) delovnega lista, pred katerega bo vstavljen kopiran delovni list. Ta argument je neobvezen in privzeto dejanje je dodajanje kopiranje delovnega lista na končni položaj."
+msgid "<emph>beforesheet</emph>: The name (string) or index (numeric, starting from 1) of the sheet before which to insert the copied sheet. This argument is optional and the default behavior is to add the copied sheet at the last position."
+msgstr "<emph>Beforesheet</emph>: ime (niz) ali indeks (številski, od 1 naprej) delovnega lista, pred katerega bo vstavljen kopiran delovni list. Ta argument je neobvezen in privzeto dejanje je dodajanje kopiranje delovnega lista na končni položaj."
 
 #: sf_calc.xhp
 msgctxt ""
@@ -4006,32 +4014,32 @@ msgctxt ""
 "sf_calc.xhp\n"
 "par_id471591714947181\n"
 "help.text"
-msgid "<emph>FileName</emph> : Identifies the file to open. It must follow the <literal>SF_FileSystem.FileNaming</literal> notation. The file must not be protected with a password."
-msgstr "<emph>FileName</emph>: ime datoteke, ki jo želite odpreti. Slediti mora zapisu <literal>SF_FileSystem.FileNaming</literal>. Datoteka ne sme biti zaščitena z geslom."
+msgid "<emph>filename</emph>: Identifies the file to open. It must follow the <literal>SF_FileSystem.FileNaming</literal> notation. The file must not be protected with a password."
+msgstr "<emph>Filename</emph>: ime datoteke, ki jo želite odpreti. Slediti mora zapisu <literal>SF_FileSystem.FileNaming</literal>. Datoteka ne sme biti zaščitena z geslom."
 
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id9915917146142\n"
 "help.text"
-msgid "<emph>SheetName</emph> : The name of the sheet to be copied as a string."
-msgstr "<emph>SheetName</emph>: ime delovnega lista, ki bo kopiran, kot niz."
+msgid "<emph>sheetname</emph>: The name of the sheet to be copied as a string."
+msgstr "<emph>Sheetname</emph>: ime delovnega lista, ki bo kopiran, kot niz."
 
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id71591714614904\n"
 "help.text"
-msgid "<emph>NewName</emph> : The name of the copied sheet to be inserted in the document. The name must not be in use in the document."
-msgstr "<emph>NewName</emph>: ime kopiranega delovnega lista, ki bo vstavljen v dokument. Ime ne sme biti uporabljeno v dokumentu."
+msgid "<emph>newname</emph>: The name of the copied sheet to be inserted in the document. The name must not be in use in the document."
+msgstr "<emph>Newname</emph>: ime kopiranega delovnega lista, ki bo vstavljen v dokument. Ime ne sme biti uporabljeno v dokumentu."
 
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id601591714614407\n"
 "help.text"
-msgid "<emph>BeforeSheet</emph> : The name (string) or index (numeric, starting from 1) of the sheet before which to insert the copied sheet. This argument is optional and the default behavior is to add the copied sheet at the last position."
-msgstr "<emph>BeforeSheet</emph>: ime (niz) ali indeks (številski, od 1 naprej) delovnega lista, pred katerega bo vstavljen kopiran delovni list. Ta argument je neobvezen in privzeto dejanje je dodajanje kopiranje delovnega lista na končni položaj."
+msgid "<emph>beforesheet</emph>: The name (string) or index (numeric, starting from 1) of the sheet before which to insert the copied sheet. This argument is optional and the default behavior is to add the copied sheet at the last position."
+msgstr "<emph>Beforesheet</emph>: ime (niz) ali indeks (številski, od 1 naprej) delovnega lista, pred katerega bo vstavljen kopiran delovni list. Ta argument je neobvezen in privzeto dejanje je dodajanje kopiranje delovnega lista na končni položaj."
 
 #: sf_calc.xhp
 msgctxt ""
@@ -4070,16 +4078,16 @@ msgctxt ""
 "sf_calc.xhp\n"
 "par_id761592558768578\n"
 "help.text"
-msgid "<emph>SourceRange</emph> : The source range as a string when it belongs to the same document or as a reference when it belongs to another open Calc document."
-msgstr "<emph>SourceRange</emph>: izvorni obseg kot niz, ko izvira iz istega dokumenta, ali kot sklic, ko izvira iz drugega odprtega dokumenta Calc."
+msgid "<emph>sourcerange</emph>: The source range as a string when it belongs to the same document or as a reference when it belongs to another open Calc document."
+msgstr "<emph>sourcerange</emph>: izvorni obseg kot niz, ko izvira iz istega dokumenta, ali kot sklic, ko izvira iz drugega odprtega dokumenta Calc."
 
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id711592558768466\n"
 "help.text"
-msgid "<emph>DestinationCell</emph> : The destination cell where the copied range of cells will be pasted, as a string. If a range is given, only its top-left cell is considered."
-msgstr "<emph>DestinationCell</emph>: ciljna celica, kamor bo prilepljen kopirani obseg celic, podana kot niz. Če je podan obseg, se obravnava le njegova leva vrhnja celica."
+msgid "<emph>destinationcell</emph>: The destination cell where the copied range of cells will be pasted, as a string. If a range is given, only its top-left cell is considered."
+msgstr "<emph>Destinationcell</emph>: ciljna celica, kamor bo prilepljen kopirani obseg celic, podana kot niz. Če je podan obseg, se obravnava le njegova leva vrhnja celica."
 
 #: sf_calc.xhp
 msgctxt ""
@@ -4166,23 +4174,23 @@ msgctxt ""
 "sf_calc.xhp\n"
 "par_id841592903121145\n"
 "help.text"
-msgid "<emph>SourceRange</emph> : The source range as a string when it belongs to the same document or as a reference when it belongs to another open Calc document."
-msgstr "<emph>SourceRange</emph>: izvorni obseg kot niz, ko izvira iz istega dokumenta, ali kot sklic, ko izvira iz drugega odprtega dokumenta Calc."
+msgid "<emph>sourcerange</emph>: The source range as a string when it belongs to the same document or as a reference when it belongs to another open Calc document."
+msgstr "<emph>sourcerange</emph>: izvorni obseg kot niz, ko izvira iz istega dokumenta, ali kot sklic, ko izvira iz drugega odprtega dokumenta Calc."
 
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id5515929031211000\n"
 "help.text"
-msgid "<emph>DestinationRange</emph> : The destination of the copied range of cells, as a string."
-msgstr "<emph>DestinationRange</emph>: cilj kopiranega obsega celic, kot niz."
+msgid "<emph>destinationrange</emph>: The destination of the copied range of cells, as a string."
+msgstr "<emph>destinationrange</emph>: cilj kopiranega obsega celic, kot niz."
 
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id461592905128991\n"
 "help.text"
-msgid "Copy within the same document :"
+msgid "Copy within the same document:"
 msgstr "Kopiranje znotraj istega dokumenta:"
 
 #: sf_calc.xhp
@@ -4190,16 +4198,24 @@ msgctxt ""
 "sf_calc.xhp\n"
 "bas_id601592904507182\n"
 "help.text"
-msgid "'Returned range: $SheetY.$C$5:$J$14"
-msgstr "'Vrnjeni obseg: $SheetY.$C$5:$J$14"
+msgid "' Returns a range string: \"$SheetY.$C$5:$J$14\""
+msgstr "' Vrne niz obsega: \"$SheetY.$C$5:$J$14\""
 
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id1001592905195364\n"
 "help.text"
-msgid "Copy from one file to another :"
+msgid "Copy from one file to another:"
 msgstr "Kopiranje iz ene datoteke v drugo:"
+
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"pyc_id761621538667290\n"
+"help.text"
+msgid "doc.CopyToRange(\"SheetX.A1:F10\", \"SheetY.C5:J5\")"
+msgstr "doc.CopyToRange(\"SheetX.A1:F10\", \"SheetY.C5:J5\")"
 
 #: sf_calc.xhp
 msgctxt ""
@@ -4214,8 +4230,8 @@ msgctxt ""
 "sf_calc.xhp\n"
 "par_id741595777001537\n"
 "help.text"
-msgid "<emph>Range</emph> : The range to which the function will be applied, as a string."
-msgstr "<emph>Range</emph>: obseg, v katerem želimo uporabiti funkcijo, podan kot niz."
+msgid "<emph>range</emph>: The range to which the function will be applied, as a string."
+msgstr "<emph>range</emph>: obseg, v katerem želimo uporabiti funkcijo, podan kot niz."
 
 #: sf_calc.xhp
 msgctxt ""
@@ -4246,16 +4262,16 @@ msgctxt ""
 "sf_calc.xhp\n"
 "par_id83159163272628\n"
 "help.text"
-msgid "<emph>ColumnNumber</emph> : The column number as an integer value in the interval 1 ... 1024."
-msgstr "<emph>ColumnNumber</emph>: številka stolpca kot celoštevilska vrednost v intervalu 1 ... 1024."
+msgid "<emph>columnnumber</emph>: The column number as an integer value in the interval 1 ... 1024."
+msgstr "<emph>columnnumber</emph>: številka stolpca kot celoštevilska vrednost v intervalu 1 ... 1024."
 
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
-"bas_id391611754462421\n"
+"par_id11621539831303\n"
 "help.text"
-msgid "'Shows a message box with the string \"C\""
-msgstr "'Pokaže pogovorno okno z nizom \"C\""
+msgid "Displays a message box with the name of the third column, which by default is \"C\"."
+msgstr "Prikaže okno s sporočilom z imenom tretjega stolpca, ki je privzeto »C«."
 
 #: sf_calc.xhp
 msgctxt ""
@@ -4278,8 +4294,8 @@ msgctxt ""
 "sf_calc.xhp\n"
 "par_id891593880142588\n"
 "help.text"
-msgid "<emph>Range</emph> : The range where to get the formulas from, as a string."
-msgstr "<emph>Range</emph>: obseg, iz katerega izvirajo formule, podan kot niz."
+msgid "<emph>range</emph>: The range where to get the formulas from, as a string."
+msgstr "<emph>range</emph>: obseg, iz katerega izvirajo formule, podan kot niz."
 
 #: sf_calc.xhp
 msgctxt ""
@@ -4302,16 +4318,16 @@ msgctxt ""
 "sf_calc.xhp\n"
 "par_id91592231156434\n"
 "help.text"
-msgid "<emph>Range</emph> : The range where to get the values from, as a string."
-msgstr "<emph>Range</emph>: obseg, iz katerega izvirajo nizi, podan kot niz."
+msgid "<emph>range</emph>: The range where to get the values from, as a string."
+msgstr "<emph>range</emph>: obseg, iz katerega izvirajo nizi, podan kot niz."
 
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id991611756492772\n"
 "help.text"
-msgid "If a cell contains a date, the number corresponding to that date will be returned. To convert numeric values to dates, use the Basic <link href=\"text/sbasic/shared/03100300.xhp\" name=\"CDate function\"><literal>CDate</literal> builtin function</link>."
-msgstr "Če celica vsebuje datum, bo vrnjena številka, ki ustreza temu datumu. Za pretvorbo številskih vrednosti v datume uporabite vgrajeno funkcijo Basica <link href=\"text/sbasic/shared/03100300.xhp\" name=\"Funkcija CDate\"><literal>CDate</literal></link>."
+msgid "If a cell contains a date, the number corresponding to that date will be returned. To convert numeric values to dates in Basic scripts, use the Basic <link href=\"text/sbasic/shared/03100300.xhp\" name=\"CDate Basic\"><literal>CDate</literal> builtin function</link>. In Python scripts, use the <link href=\"text/sbasic/shared/03/sf_basic.xhp#CDate\" name=\"CDate Python\"><literal>CDate</literal> function from the <literal>Basic</literal> service.</link>"
+msgstr "Če celica vsebuje datum, bo vrnjena številka, ki ustreza temu datumu. Za pretvorbo številskih vrednosti v datume uporabite vgrajeno funkcijo Basica <link href=\"text/sbasic/shared/03100300.xhp\" name=\"Funkcija CDate\"><literal>CDate</literal></link>. V skriptih Python uporabite funkcijo <link href=\"text/sbasic/shared/03/sf_basic.xhp#CDate\" name=\"Funkcija CDate v Pythonu\"><literal>CDate</literal> iz storitve <literal>Basic</literal>.</link>"
 
 #: sf_calc.xhp
 msgctxt ""
@@ -4342,24 +4358,24 @@ msgctxt ""
 "sf_calc.xhp\n"
 "par_id851593685490824\n"
 "help.text"
-msgid "<emph>FileName</emph> : Identifies the file to open. It must follow the <literal>SF_FileSystem.FileNaming</literal> notation."
-msgstr "<emph>FileName</emph>: ime datoteke, ki jo želite odpreti. Slediti mora zapisu <literal>SF_FileSystem.FileNaming</literal>."
+msgid "<emph>filename</emph>: Identifies the file to open. It must follow the <literal>SF_FileSystem.FileNaming</literal> notation."
+msgstr "<emph>filename</emph>: ime datoteke, ki jo želite odpreti. Slediti mora zapisu <literal>SF_FileSystem.FileNaming</literal>."
 
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id641593685490936\n"
 "help.text"
-msgid "<emph>DestinationCell</emph> : The destination cell to insert the imported data, as a string. If instead a range is given, only its top-left cell is considered."
-msgstr "<emph>DestinationCell</emph>: ciljna celica za vstavljanje uvoženih podatkov, podana kot niz. Če je namesto tega podan obseg, se upošteva le leva vrhnja celica."
+msgid "<emph>destinationcell</emph>: The destination cell to insert the imported data, as a string. If instead a range is given, only its top-left cell is considered."
+msgstr "<emph>destinationcell</emph>: ciljna celica za vstavljanje uvoženih podatkov, podana kot niz. Če je namesto tega podan obseg, se upošteva le leva vrhnja celica."
 
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id641593685863838\n"
 "help.text"
-msgid "<emph>FilterOptions</emph> : The arguments for the CSV input filter. The default filter makes following assumptions:"
-msgstr "<emph>FilterOptions</emph>: argumenti za vhodni filter CSV. Privzeti filter uporabi naslednje predpostavke:"
+msgid "<emph>filteroptions</emph>: The arguments for the CSV input filter. The default filter makes following assumptions:"
+msgstr "<emph>filteroptions</emph>: argumenti za vhodni filter CSV. Privzeti filter uporabi naslednje predpostavke:"
 
 #: sf_calc.xhp
 msgctxt ""
@@ -4462,40 +4478,40 @@ msgctxt ""
 "sf_calc.xhp\n"
 "par_id311599568986784\n"
 "help.text"
-msgid "<emph>FileName</emph> : Identifies the file to open. It must follow the <literal>SF_FileSystem.FileNaming</literal> notation."
-msgstr "<emph>FileName</emph>: ime datoteke, ki jo želite odpreti. Slediti mora zapisu <literal>SF_FileSystem.FileNaming</literal>."
+msgid "<emph>filename</emph>: Identifies the file to open. It must follow the <literal>SF_FileSystem.FileNaming</literal> notation."
+msgstr "<emph>filename</emph>: ime datoteke, ki jo želite odpreti. Slediti mora zapisu <literal>SF_FileSystem.FileNaming</literal>."
 
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id711596555746281\n"
 "help.text"
-msgid "<emph>RegistrationName</emph> : The name to use to find the database in the databases register. This argument is ignored if a <literal>FileName</literal> is provided."
-msgstr "<emph>RegistrationName</emph>: ime za iskanje zbirke podatkov v registru zbirk podatkov. Ta argument je prezrt, če je podano ime datoteke <literal>FileName</literal>."
+msgid "<emph>registrationname</emph>: The name to use to find the database in the databases register. This argument is ignored if a <literal>filename</literal> is provided."
+msgstr "<emph>registrationname</emph>: ime za iskanje zbirke podatkov v registru zbirk podatkov. Ta argument je prezrt, če je podano ime datoteke <literal>filename</literal>."
 
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id211599568986329\n"
 "help.text"
-msgid "<emph>DestinationCell</emph> : The destination of the imported data, as a string. If a range is given, only its top-left cell is considered."
-msgstr "<emph>DestinationCell</emph>: ciljna celica uvoženih podatkov, podana kot niz. Če je podan obseg, se obravnava le njegova leva vrhnja celica."
+msgid "<emph>destinationcell</emph>: The destination of the imported data, as a string. If a range is given, only its top-left cell is considered."
+msgstr "<emph>destinationcell</emph>: ciljna celica uvoženih podatkov, podana kot niz. Če je podan obseg, se obravnava le njegova leva vrhnja celica."
 
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id451599489278429\n"
 "help.text"
-msgid "<emph>SQLCommand</emph> : A table or query name (without surrounding quotes or square brackets) or a SELECT SQL statement in which table and field names may be surrounded by square brackets or quotes to improve its readability."
-msgstr "<emph>SQLCommand</emph>: ime tabele ali poizvedbe (brez narekovajev ali oglatih oklepajev) ali izjava SQL SELECT, v kateri so imena tabel in polj lahko v oglatih oklepajih ali narekovajih, da izboljšate njeno berljivost."
+msgid "<emph>sqlcommand</emph>: A table or query name (without surrounding quotes or square brackets) or a SELECT SQL statement in which table and field names may be surrounded by square brackets or quotes to improve its readability."
+msgstr "<emph>sqlCommand</emph>: ime tabele ali poizvedbe (brez narekovajev ali oglatih oklepajev) ali izjava SQL SELECT, v kateri so imena tabel in polj lahko v oglatih oklepajih ali narekovajih, da izboljšate njeno berljivost."
 
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id271599489278141\n"
 "help.text"
-msgid "<emph>DirectSQL</emph> : When <literal>True</literal>, the SQL command is sent to the database engine without pre-analysis. Default is <literal>False</literal>. The argument is ignored for tables. For queries, the applied option is the one set when the query was defined."
-msgstr "<emph>DirectSQL</emph>: ko je <literal>True</literal>, pošlje ukaz SQL pogonu zbirke podatkov brez predhodne analize. Privzeta vrednost je <literal>False</literal>. Argument je pri tabelah prezrt. Za poizvedbe je uporabljena tista možnost, ki je veljala ob določitvi poizvedbe."
+msgid "<emph>directsql</emph>: When <literal>True</literal>, the SQL command is sent to the database engine without pre-analysis. Default is <literal>False</literal>. The argument is ignored for tables. For queries, the applied option is the one set when the query was defined."
+msgstr "<emph>directsql</emph>: ko je <literal>True</literal>, pošlje ukaz SQL pogonu zbirke podatkov brez predhodne analize. Privzeta vrednost je <literal>False</literal>. Argument je pri tabelah prezrt. Za poizvedbe je uporabljena tista možnost, ki je veljala ob določitvi poizvedbe."
 
 #: sf_calc.xhp
 msgctxt ""
@@ -4510,16 +4526,16 @@ msgctxt ""
 "sf_calc.xhp\n"
 "par_id941591698472748\n"
 "help.text"
-msgid "<emph>SheetName</emph> : The name of the new sheet."
-msgstr "<emph>SheetName</emph>: ime novega delovnega lista."
+msgid "<emph>sheetname</emph>: The name of the new sheet."
+msgstr "<emph>sheetname</emph>: ime novega delovnega lista."
 
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id84159169847269\n"
 "help.text"
-msgid "<emph>BeforeSheet</emph> : The name (string) or index (numeric, starting from 1) of the sheet before which to insert the new sheet."
-msgstr "<emph>BeforeSheet</emph>: ime (niz) ali indeks (številski, od 1 naprej) delovnega lista, pred katerega bo vstavljen novi delovni list."
+msgid "<emph>beforesheet</emph>: The name (string) or index (numeric, starting from 1) of the sheet before which to insert the new sheet. This argument is optional and the default behavior is to insert the sheet at the last position."
+msgstr "<emph>beforesheet</emph>: ime (niz) ali indeks (številski, od 1 naprej) delovnega lista, pred katerega bo vstavljen nov delovni list. Ta argument je neobvezen in privzeto dejanje je vstavljanje delovnega lista na zadnje mesto."
 
 #: sf_calc.xhp
 msgctxt ""
@@ -4542,16 +4558,16 @@ msgctxt ""
 "sf_calc.xhp\n"
 "par_id571592569476332\n"
 "help.text"
-msgid "<emph>Source</emph> : The source range of cells, as a string."
-msgstr "<emph>Source</emph>: izvorni obseg celic, podan kot niz."
+msgid "<emph>source</emph>: The source range of cells, as a string."
+msgstr "<emph>source</emph>: izvorni obseg celic, podan kot niz."
 
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id891592569476362\n"
 "help.text"
-msgid "<emph>Destination</emph> : The destination cell, as a string. If a range is given, its top-left cell is considered as the destination."
-msgstr "<emph>Destination</emph>: ciljna celica, podana kot niz. Če je podan obseg, se kot cilj upošteva njegova leva vrhnja celica."
+msgid "<emph>destination</emph>: The destination cell, as a string. If a range is given, its top-left cell is considered as the destination."
+msgstr "<emph>destination</emph>: ciljna celica, podana kot niz. Če je podan obseg, se kot cilj upošteva njegova leva vrhnja celica."
 
 #: sf_calc.xhp
 msgctxt ""
@@ -4566,16 +4582,16 @@ msgctxt ""
 "sf_calc.xhp\n"
 "par_id351591698903911\n"
 "help.text"
-msgid "<emph>SheetName</emph> : The name of the sheet to move. The sheet must exist or an exception is raised."
-msgstr "<emph>SheetName</emph>: ime delovnega lista, ki ga želite premakniti. Delovni list mora obstajati, sicer prikliče izjemo."
+msgid "<emph>sheetname</emph>: The name of the sheet to move. The sheet must exist or an exception is raised."
+msgstr "<emph>sheetname</emph>: ime delovnega lista, ki ga želite premakniti. Delovni list mora obstajati, sicer prikliče izjemo."
 
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id9159169890334\n"
 "help.text"
-msgid "<emph>BeforeSheet</emph> : The name (string) or index (numeric, starting from 1) of the sheet before which the original sheet will be placed."
-msgstr "<emph>BeforeSheet</emph>: ime (niz) ali indeks (številski, od 1 naprej) delovnega lista, pred katerega bo postavljen izvorni delovni list."
+msgid "<emph>beforesheet</emph>: The name (string) or index (numeric, starting from 1) of the sheet before which the original sheet will be placed. This argument is optional and the default behavior is to move the sheet to the last position."
+msgstr "<emph>beforesheet</emph>: ime (niz) ali indeks (številski, od 1 naprej) delovnega lista, pred katerega bo postavljen izvorni delovni list. Ta argument je neobvezen in privzeto dejanje je premik delovnega lista na zadnje mesto."
 
 #: sf_calc.xhp
 msgctxt ""
@@ -4606,56 +4622,56 @@ msgctxt ""
 "sf_calc.xhp\n"
 "par_id901592233506293\n"
 "help.text"
-msgid "<emph>Reference</emph> : The range, as a string, that the method will use as reference to perform the offset operation."
-msgstr "<emph>Reference</emph>: obseg, podan kot niz, ki ga bo metoda uporabila za sklic ob izvajanju operacije zamikanja."
+msgid "<emph>reference</emph>: The range, as a string, that the method will use as reference to perform the offset operation."
+msgstr "<emph>reference</emph>: obseg, podan kot niz, ki ga bo metoda uporabila za sklic ob izvajanju operacije zamikanja."
 
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id781592234124856\n"
 "help.text"
-msgid "<emph>Rows</emph> : The number of rows by which the initial range is offset upwards (negative value) or downwards (positive value). Use 0 (default) to stay in the same row."
-msgstr "<emph>Rows</emph>: število vrstic, za katere je začetni obseg zamaknjen navzgor (negativna vrednost) ali navzdol (pozitivna vrednost). Uporabite 0 (privzeta vrednost), da ostanete v isti vrstici."
+msgid "<emph>rows</emph>: The number of rows by which the initial range is offset upwards (negative value) or downwards (positive value). Use 0 (default) to stay in the same row."
+msgstr "<emph>rows</emph>: število vrstic, za katere je začetni obseg zamaknjen navzgor (negativna vrednost) ali navzdol (pozitivna vrednost). Uporabite 0 (privzeta vrednost), da ostanete v isti vrstici."
 
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id971592234138769\n"
 "help.text"
-msgid "<emph>Columns</emph> : The number of columns by which the initial range is offset to the left (negative value) or to the right (positive value). Use 0 (default) to stay in the same column."
-msgstr "<emph>Columns</emph>: število stolpcev, za katere je začetni obseg zamaknjen levo (negativna vrednost) ali desno (pozitivna vrednost). Uporabite 0 (privzeta vrednost), da ostanete v istem stolpcu."
+msgid "<emph>columns</emph>: The number of columns by which the initial range is offset to the left (negative value) or to the right (positive value). Use 0 (default) to stay in the same column."
+msgstr "<emph>columns</emph>: število stolpcev, za katere je začetni obseg zamaknjen levo (negativna vrednost) ali desno (pozitivna vrednost). Uporabite 0 (privzeta vrednost), da ostanete v istem stolpcu."
 
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id321592234150061\n"
 "help.text"
-msgid "<emph>Height</emph> : The vertical height for an area that starts at the new range position. Default = 0 (no vertical resizing)."
-msgstr "<emph>Height</emph>: navpična višina območja, ki se začne na novem položaju obsega. Privzeto = 0 (brez navpičnega spreminjanja velikosti)."
+msgid "<emph>height</emph>: The vertical height for an area that starts at the new range position. Omit this argument when no vertical resizing is needed."
+msgstr "<emph>height</emph>: navpična višina območja, ki se začne na položaju novega obsega. Ta argument izpustite, če navpično spreminjanje velikosti ni potrebno."
 
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id271592234165247\n"
 "help.text"
-msgid "<emph>Width</emph> : The horizontal width for an area that starts at the new range position. Default = 0 (no horizontal resizing)."
-msgstr "<emph>Width</emph>: vodoravna širina območja, ki se začne na novem položaju obsega. Privzeto = 0 (brez vodoravnega spreminjanja velikosti)."
+msgid "<emph>width</emph>: The horizontal width for an area that starts at the new range position. Omit this argument when no horizontal resizing is needed."
+msgstr "<emph>Width</emph>: vodoravna širina območja, ki se začne na položaju novega obsega. Ta argument izpustite, če vodoravno spreminjanje velikosti ni potrebno."
 
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id871592234172652\n"
 "help.text"
-msgid "Arguments <literal>Rows</literal> and <literal>Columns</literal> must not lead to zero or negative start row or column."
-msgstr "Argumenta <emph>Rows</emph> in <emph>Columns</emph> ne smeta voditi k ničelni ali negativni začetni vrstici ali začetnemu stolpcu."
+msgid "Arguments <literal>rows</literal> and <literal>columns</literal> must not lead to zero or negative start row or column."
+msgstr "Argumenta <literal>rows</literal> in <literal>columns</literal> ne smeta voditi k ničelni ali negativni začetni vrstici ali začetnemu stolpcu."
 
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id211592234180073\n"
 "help.text"
-msgid "Arguments <literal>Height</literal> and <literal>Width</literal> must not lead to zero or negative count of rows or columns."
-msgstr "Argumenta <emph>Height</emph> in <emph>Width</emph> ne smeta voditi k ničelni ali negativni začetni vrstici ali začetnemu stolpcu."
+msgid "Arguments <literal>height</literal> and <literal>width</literal> must not lead to zero or negative count of rows or columns."
+msgstr "Argumenta <literal>height</literal> in <literal>width</literal> ne smeta voditi k ničelni ali negativni začetni vrstici ali začetnemu stolpcu."
 
 #: sf_calc.xhp
 msgctxt ""
@@ -4684,10 +4700,18 @@ msgstr "Odstrani obstoječi delovni list iz dokumenta."
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
+"par_id991621620588147\n"
+"help.text"
+msgid "<input>doc.RemoveSheet(sheetname: str): bool</input>"
+msgstr "<input>doc.RemoveSheet(sheetname: str): bool</input>"
+
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
 "par_id331591699085330\n"
 "help.text"
-msgid "<emph>SheetName</emph> : The name of the sheet to remove."
-msgstr "<emph>SheetName</emph>: ime delovnega lista, ki ga želite odstraniti."
+msgid "<emph>sheetname</emph>: The name of the sheet to remove."
+msgstr "<emph>sheetname</emph>: ime delovnega lista, ki ga želite odstraniti."
 
 #: sf_calc.xhp
 msgctxt ""
@@ -4702,16 +4726,16 @@ msgctxt ""
 "sf_calc.xhp\n"
 "par_id161591704316337\n"
 "help.text"
-msgid "<emph>SheetName</emph> : The name of the sheet to rename."
-msgstr "<emph>SheetName</emph>: ime delovnega lista, ki ga želite preimenovati."
+msgid "<emph>sheetname</emph>: The name of the sheet to rename."
+msgstr "<emph>sheetname</emph>: ime delovnega lista, ki ga želite preimenovati."
 
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id931591704316998\n"
 "help.text"
-msgid "<emph>NewName</emph> : the new name of the sheet. It must not exist yet."
-msgstr "<emph>NewName</emph>: novo ime delovnega lista. Ne sme še obstajati."
+msgid "<emph>newname</emph>: the new name of the sheet. It must not exist yet."
+msgstr "<emph>newname</emph>: novo ime delovnega lista. Ne sme še obstajati."
 
 #: sf_calc.xhp
 msgctxt ""
@@ -4726,8 +4750,8 @@ msgctxt ""
 "sf_calc.xhp\n"
 "par_id191592745582983\n"
 "help.text"
-msgid "Stores the given value starting from a specified target cell. The updated area expands itself from the target cell or from the top-left corner of the given range to accommodate the size of the input <literal>Value</literal> argument. Vectors are always expanded vertically."
-msgstr "Shrani dano vrednost od navedene ciljne celice naprej. Posodobljeno področje se širi od ciljne celice ali od levega vrhnjega kota danega obsega naprej, da lahko zagotovi prostor velikosti vhodnega argumenta <literal>Value</literal>. Vektorji se vedno širijo navpično."
+msgid "Stores the given value starting from a specified target cell. The updated area expands itself from the target cell or from the top-left corner of the given range to accommodate the size of the input <literal>value</literal> argument. Vectors are always expanded vertically."
+msgstr "Shrani dano vrednost od navedene ciljne celice naprej. Posodobljeno področje se širi od ciljne celice ali od levega vrhnjega kota danega obsega naprej, da lahko zagotovi prostor velikosti vhodnega argumenta <literal>value</literal>. Vektorji se vedno širijo navpično."
 
 #: sf_calc.xhp
 msgctxt ""
@@ -4742,16 +4766,16 @@ msgctxt ""
 "sf_calc.xhp\n"
 "par_id801592745582116\n"
 "help.text"
-msgid "<emph>TargetCell</emph> : The cell or a range as a string from where to start to store the given value."
-msgstr "<emph>TargetCell</emph>: celica ali obseg kot niz, od koder naj se začne shranjevati dana vrednost."
+msgid "<emph>targetcell</emph>: The cell or a range as a string from where to start to store the given value."
+msgstr "<emph>targetcell</emph>: celica ali obseg kot niz, od koder naj se začne shranjevati dana vrednost."
 
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id321592745582192\n"
 "help.text"
-msgid "<emph>Value</emph> : A scalar, a vector or an array with the new values to be stored from the target cell or from the top-left corner of the range if <literal>TargetCell</literal> is a range. The new values must be strings, numeric values or dates. Other types will cause the corresponding cells to be emptied."
-msgstr "<emph>Value</emph>: skalar, vektor ali polje z novimi vrednostmi, ki bodo shranjene od ciljne celice oz. od levega vrhnjega kota obsega, če je ciljna celica <literal>TargetCell</literal> obseg. Nove vrednosti morajo biti nizi, številske vrednosti ali datumi. Druge vrste povzročijo, da se ustrezne celice izpraznijo."
+msgid "<emph>value</emph>: A scalar, a vector or an array (in Python, one or two-dimensional lists and tuples) with the new values to be stored from the target cell or from the top-left corner of the range if <literal>targetcell</literal> is a range. The new values must be strings, numeric values or dates. Other types will cause the corresponding cells to be emptied."
+msgstr "<emph>value</emph>: skalar, vektor ali polje (v Pythonu eno- ali dvodimenzionalni seznami in n-terice) z novimi vrednostmi, ki bodo shranjene od ciljne celice oz. od levega vrhnjega kota obsega, če je ciljna celica <literal>targetcell</literal> obseg. Nove vrednosti morajo biti nizi, številske vrednosti ali datumi. Druge vrste povzročijo, da se ustrezne celice izpraznijo."
 
 #: sf_calc.xhp
 msgctxt ""
@@ -4806,40 +4830,40 @@ msgctxt ""
 "sf_calc.xhp\n"
 "par_id361592231799255\n"
 "help.text"
-msgid "<emph>TargetRange</emph> : The range where to store the given value, as a string."
-msgstr "<emph>TargetRange</emph>: obseg, kjer naj bo shranjena dana vrednost, podan kot niz."
+msgid "<emph>targetrange</emph>: The range where to store the given value, as a string."
+msgstr "<emph>targetrange</emph>: obseg, kjer naj bo shranjena dana vrednost, podan kot niz."
 
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id461592232081985\n"
 "help.text"
-msgid "<emph>Value</emph> : A scalar, a vector or an array with the new values for each cell of the range. The new values must be strings, numeric values or dates. Other types will cause the corresponding cells to be emptied."
-msgstr "<emph>Value</emph>: skalar, vektor ali polje z novimi vrednostmi za vsako celico obsega. Nove vrednosti morajo biti nizi, številske vrednosti ali datumi. Druge vrste povzročijo, da se ustrezne celice izpraznijo."
+msgid "<emph>value</emph>: A scalar, a vector or an array with the new values for each cell of the range. The new values must be strings, numeric values or dates. Other types will cause the corresponding cells to be emptied."
+msgstr "<emph>value</emph>: skalar, vektor ali polje z novimi vrednostmi za vsako celico obsega. Nove vrednosti morajo biti nizi, številske vrednosti ali datumi. Druge vrste povzročijo, da se ustrezne celice izpraznijo."
 
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id841592745785192\n"
 "help.text"
-msgid "The full range is updated and the remainder of the sheet is left unchanged. If the size of <literal>Value</literal> is smaller than the size of <literal>TargetRange</literal>, then the remaining cells will be emptied."
-msgstr "Polni obseg se posodobi, preostanek delovnega lista pa ostane nespremenjen. Če je velikost <literal>Value</literal> manjša od velikosti ciljnega obsega <literal>TargetRange</literal>, bodo preostale celice izpraznjene."
+msgid "The full range is updated and the remainder of the sheet is left unchanged. If the size of <literal>value</literal> is smaller than the size of <literal>targetrange</literal>, then the remaining cells will be emptied."
+msgstr "Polni obseg se posodobi, preostanek delovnega lista pa ostane nespremenjen. Če je velikost <literal>value</literal> manjša od velikosti ciljnega obsega <literal>targetrange</literal>, bodo preostale celice izpraznjene."
 
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id191611776838396\n"
 "help.text"
-msgid "If the size of <literal>Value</literal> is larger than the size of <literal>TargetRange</literal>, then <literal>Value</literal> is only partially copied until it fills the size of <literal>TargetRange</literal>."
-msgstr "Če je velikost <literal>Value</literal> večja od velikosti ciljnega obsega <literal>TargetRange</literal>, se vrednosti <literal>Value</literal> le delno kopirajo, dokler se z njimi ne zapolni velikost <literal>TargetRange</literal>."
+msgid "If the size of <literal>value</literal> is larger than the size of <literal>targetrange</literal>, then <literal>value</literal> is only partially copied until it fills the size of <literal>targetrange</literal>."
+msgstr "Če je velikost <literal>value</literal> večja od velikosti ciljnega obsega <literal>targetrange</literal>, se vrednosti <literal>value</literal> le delno kopirajo, dokler se z njimi ne zapolni velikost <literal>targetrange</literal>."
 
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id71611776941663\n"
 "help.text"
-msgid "Vectors are expanded vertically, except if the range has a height of exactly 1 row."
-msgstr "Vektorji se širijo navpično, razen če ima obseg višino natanko 1 vrstice."
+msgid "Vectors are expanded vertically, except if <literal>targetrange</literal> has a height of exactly 1 row."
+msgstr "Vektorji se širijo navpično, razen če ima ciljni obseg <literal>targetrange</literal> višino natanko 1 vrstice."
 
 #: sf_calc.xhp
 msgctxt ""
@@ -4856,6 +4880,14 @@ msgctxt ""
 "help.text"
 msgid "'Below the Value and TargetRange have the same size"
 msgstr "' Spodaj imata Value in TargetRange enako velikost"
+
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id731621689592755\n"
+"help.text"
+msgid "If you want to fill a single row with values, you can use the <literal>Offset</literal> function. In the example below, consider that <literal>arrData</literal> is a one-dimensional array:"
+msgstr "Če želite zapolniti eno samo vrstico z vrednostmi, lahko uporabite funkcijo <literal>Offset</literal>. Pri spodnjem primeru upoštevajte, da je <literal>arrData</literal> enodimenzionalno polje:"
 
 #: sf_calc.xhp
 msgctxt ""
@@ -4878,16 +4910,16 @@ msgctxt ""
 "sf_calc.xhp\n"
 "par_id22159576768782\n"
 "help.text"
-msgid "<emph>TargetRange</emph> : The range to which the style will be applied, as a string."
-msgstr "<emph>TargetRange</emph>: obseg, na katerem bo uporabljen slog, podan kot niz."
+msgid "<emph>targetrange</emph>: The range to which the style will be applied, as a string."
+msgstr "<emph>targetrange</emph>: obseg, v katerem bo uporabljen slog, podan kot niz."
 
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id181595767687247\n"
 "help.text"
-msgid "<emph>Style</emph> : The name of the cell style to apply."
-msgstr "<emph>Style</emph>: ime sloga celice, ki bo uporabljen."
+msgid "<emph>style</emph>: The name of the cell style to apply."
+msgstr "<emph>style</emph>: ime sloga celice, ki bo uporabljen."
 
 #: sf_calc.xhp
 msgctxt ""
@@ -4910,16 +4942,16 @@ msgctxt ""
 "sf_calc.xhp\n"
 "par_id891593880376776\n"
 "help.text"
-msgid "<emph>TargetRange</emph> : The range to insert the formulas, as a string."
-msgstr "<emph>TargetRange</emph>: obseg, v katerega bodo vstavljene formule, podan kot niz."
+msgid "<emph>targetrange</emph>: The range to insert the formulas, as a string."
+msgstr "<emph>targetrange</emph>: obseg, v katerega bodo vstavljene formule, podan kot niz."
 
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id941593880376500\n"
 "help.text"
-msgid "<emph>Formula</emph> : A string, a vector or an array of strings with the new formulas for each cell in the target range."
-msgstr "<emph>Formula</emph>: niz, vektor ali polje nizov z novimi formulami za vsako celico v ciljnem obsegu."
+msgid "<emph>formula</emph>: A string, a vector or an array of strings with the new formulas for each cell in the target range."
+msgstr "<emph>formula</emph>: niz, vektor ali polje nizov z novimi formulami za vsako celico v ciljnem obsegu."
 
 #: sf_calc.xhp
 msgctxt ""
@@ -4942,24 +4974,24 @@ msgctxt ""
 "sf_calc.xhp\n"
 "par_id491593880857823\n"
 "help.text"
-msgid "If the size of <literal>Formula</literal> is smaller than the size of <literal>TargetRange</literal>, then the remaining cells are emptied."
-msgstr "Če je velikost formule <literal>Formula</literal> manjša od velikosti ciljnega obsega <literal>TargetRange</literal>, bodo preostale celice izpraznjene."
+msgid "If the size of <literal>formula</literal> is smaller than the size of <literal>targetrange</literal>, then the remaining cells are emptied."
+msgstr "Če je velikost formule <literal>formula</literal> manjša od velikosti ciljnega obsega <literal>targetrange</literal>, bodo preostale celice izpraznjene."
 
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id701611778103306\n"
 "help.text"
-msgid "If the size of <literal>Formula</literal> is larger than the size of <literal>TargetRange</literal>, then the formulas are only partially copied until it fills the size of <literal>TargetRange</literal>."
-msgstr "Če je velikost formule <literal>Formula</literal> večja od velikosti ciljnega obsega <literal>TargetRange</literal>, se formule le delno kopirajo, dokler se z njimi ne zapolni velikost <literal>TargetRange</literal>."
+msgid "If the size of <literal>formula</literal> is larger than the size of <literal>targetrange</literal>, then the formulas are only partially copied until it fills the size of <literal>targetrange</literal>."
+msgstr "Če je velikost formule <literal>formula</literal> večja od velikosti ciljnega obsega <literal>targetrange</literal>, se formule le delno kopirajo, dokler se z njimi ne zapolni velikost <literal>targetrange</literal>."
 
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id761611777946581\n"
 "help.text"
-msgid "Vectors are always expanded vertically, except if the range has a height of exactly 1 row."
-msgstr "Vektorji se vedno širijo navpično, razen če je obseg višine natanko 1 vrstice."
+msgid "Vectors are always expanded vertically, except if <literal>targetrange</literal> has a height of exactly 1 row."
+msgstr "Vektorji se vedno širijo navpično, razen če ima ciljni obseg <literal>targetrange</literal> višino natanko 1 vrstice."
 
 #: sf_calc.xhp
 msgctxt ""
@@ -4990,56 +5022,56 @@ msgctxt ""
 "sf_calc.xhp\n"
 "par_id171595692394598\n"
 "help.text"
-msgid "<emph>Range</emph> : The range to be sorted, as a string."
-msgstr "<emph>Range</emph>: obseg, ki naj bo razvrščen, podan kot niz."
+msgid "<emph>range</emph>: The range to be sorted, as a string."
+msgstr "<emph>range</emph>: obseg, ki naj bo razvrščen, podan kot niz."
 
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id171595692814163\n"
 "help.text"
-msgid "<emph>SortKeys</emph> : A scalar (if 1 column/row) or an array of column/row numbers starting from 1. The maximum number of keys is 3."
-msgstr "<emph>SortKeys</emph>: skalar (če predstavlja 1 stolpec/vrstico) ali polje številk stolpcev/vrstic s pričetkom z 1. Največje število ključev je 3."
+msgid "<emph>sortkeys</emph>: A scalar (if 1 column/row) or an array of column/row numbers starting from 1. The maximum number of keys is 3."
+msgstr "<emph>sortkeys</emph>: skalar (če predstavlja 1 stolpec/vrstico) ali polje številk stolpcev/vrstic s pričetkom z 1. Največje število ključev je 3."
 
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id421595692962095\n"
 "help.text"
-msgid "<emph>SortOrder</emph> : A scalar or an array of strings containing the values \"ASC\" (ascending), \"DESC\" (descending) or \"\" (which defaults to ascending). Each item is paired with the corresponding item in <literal>SortKeys</literal>. If the <literal>SortOrder</literal> array is shorter than <literal>SortKeys</literal>, the remaining keys are sorted in ascending order."
-msgstr "<emph>SortOrder</emph>: skalar ali polje nizov, ki vsebujejo vrednosti \"ASC\" (naraščajoče), \"DESC\" (padajoče) ali \"\" (sledi privzeti vrednosti, torej naraščajoče). Vsak element je v paru z ustreznim elementom v <literal>SortKeys</literal>. Če je polje <literal>SortOrder</literal> krajše od <literal>SortKeys</literal>, tso preostali ključi razvrščeni v naraščajočem vrstnem redu."
+msgid "<emph>sortorder</emph>: A scalar or an array of strings containing the values \"ASC\" (ascending), \"DESC\" (descending) or \"\" (which defaults to ascending). Each item is paired with the corresponding item in <literal>sortkeys</literal>. If the <literal>sortorder</literal> array is shorter than <literal>sortkeys</literal>, the remaining keys are sorted in ascending order."
+msgstr "<emph>sortorder</emph>: skalar ali polje nizov, ki vsebujejo vrednosti \"ASC\" (naraščajoče), \"DESC\" (padajoče) ali \"\" (sledi privzeti vrednosti, torej naraščajoče). Vsak element je v paru z ustreznim elementom v <literal>sortkeys</literal>. Če je polje <literal>sortorder</literal> krajše od <literal>sortkeys</literal>, so preostali ključi razvrščeni v naraščajočem vrstnem redu."
 
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id361595692394604\n"
 "help.text"
-msgid "<emph>DestinationCell</emph> : The destination cell of the sorted range of cells, as a string. If a range is given, only its top-left cell is considered. By default the source Range is overwritten."
-msgstr "<emph>DestinationCell</emph>: ciljna celica za razvrščeni obseg celic, kot niz. Če je podan obseg, se obravnava le njegova leva vrhnja celica. Privzeto prepiše vir Range."
+msgid "<emph>destinationcell</emph>: The destination cell of the sorted range of cells, as a string. If a range is given, only its top-left cell is considered. By default the source Range is overwritten."
+msgstr "<emph>destinationcell</emph>: ciljna celica za razvrščeni obseg celic, kot niz. Če je podan obseg, se obravnava le njegova leva vrhnja celica. Privzeto prepiše vir Range."
 
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id441595693011034\n"
 "help.text"
-msgid "<emph>ContainsHeader</emph> : When <literal>True</literal>, the first row/column is not sorted."
-msgstr "<emph>ContainsHeader</emph>: če je <literal>True</literal>, prva vrstica/stolpec ni razvrščen."
+msgid "<emph>containsheader</emph>: When <literal>True</literal>, the first row/column is not sorted."
+msgstr "<emph>containsheader</emph>: če je <literal>True</literal>, prva vrstica/stolpec ni razvrščen."
 
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id241595693169032\n"
 "help.text"
-msgid "<emph>CaseSensitive</emph> : Only for string comparisons. Default = <literal>False</literal>"
-msgstr "<emph>CaseSensitive</emph>: razločevanje med malimi in velikimi črkami, le za primerjavo nizov. Privzeta vrednost je <literal>False</literal>."
+msgid "<emph>casesensitive</emph>: Only for string comparisons. Default = <literal>False</literal>"
+msgstr "<emph>casesensitive</emph>: razločevanje med malimi in velikimi črkami, le za primerjavo nizov. Privzeta vrednost je <literal>False</literal>."
 
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id1001595693326226\n"
 "help.text"
-msgid "<emph>SortColumns</emph> : When <literal>True</literal>, the columns are sorted from left to right. Default = <literal>False</literal> : rows are sorted from top to bottom."
-msgstr "<emph>SortColumns</emph>: če je <literal>True</literal>, so stolpci razvrščeni od leve proti desni. Privzeto = <literal>False</literal>: vrstice so razvrščene od vrha navzdol."
+msgid "<emph>sortcolumns</emph>: When <literal>True</literal>, the columns are sorted from left to right. Default = <literal>False</literal> : rows are sorted from top to bottom."
+msgstr "<emph>sortcolumns</emph>: če je <literal>True</literal>, so stolpci razvrščeni od leve proti desni. Privzeto = <literal>False</literal>: vrstice so razvrščene od vrha navzdol."
 
 #: sf_calc.xhp
 msgctxt ""
@@ -6502,8 +6534,16 @@ msgctxt ""
 "sf_dialogcontrol.xhp\n"
 "par_id361598174756160\n"
 "help.text"
-msgid "The <literal>DialogControl</literal><literal/> service is invoked from an existing <literal>Dialog</literal> service instance thru its <literal>Controls()</literal> method. The dialog must be initiated with the <literal>SFDialogs.Dialog</literal> service."
-msgstr "Storitev <literal>DialogControl</literal><literal/> je priklicana iz obstoječe instance storitve <literal>Dialog</literal> prek njene metode <literal>Controls()</literal>. Pogovorno okno mora biti inicializirano s storitvijo <literal>SFDialogs.Dialog</literal>."
+msgid "The <literal>DialogControl</literal> service is invoked from an existing <literal>Dialog</literal> service instance through its <literal>Controls()</literal> method. The dialog must be initiated with the <literal>SFDialogs.Dialog</literal> service."
+msgstr "Storitev <literal>DialogControl</literal> prikličemo iz obstoječe instance storitve <literal>Dialog</literal> prek njene metode <literal>Controls()</literal>. Pogovorno okno mora biti inicializirano s storitvijo <literal>SFDialogs.Dialog</literal>."
+
+#: sf_dialogcontrol.xhp
+msgctxt ""
+"sf_dialogcontrol.xhp\n"
+"bas_id581598453210170\n"
+"help.text"
+msgid "myControl.Value = \"Dialog started at \" & Now()"
+msgstr "myControl.Value = \"Pogovorno okno zagnano: \" & Now()"
 
 #: sf_dialogcontrol.xhp
 msgctxt ""
@@ -6516,18 +6556,26 @@ msgstr "' ... obdelaj trenutne vrednosti kontrolnikov"
 #: sf_dialogcontrol.xhp
 msgctxt ""
 "sf_dialogcontrol.xhp\n"
-"par_id951598174966322\n"
+"pyc_id861620225235002\n"
 "help.text"
-msgid "Alternatively a control instance can be retrieved via the <literal>SFDialogs.DialogEvent</literal> service, providing the dialog was initiated with the <literal>Dialog</literal> service. <literal>DialogEvent</literal> returns the <literal>SFDialogs.DialogControl</literal> class instance that triggered the event."
-msgstr "Instanco kontrolnika lahko pridobite tudi prek storitve <literal>SFDialogs.DialogEvent</literal>, če je pogovorno okno nastalo s storitvijo <literal>Dialog</literal>. <literal>DialogEvent</literal> vrne instanco razreda <literal>SFDialogs.DialogControl</literal>, ki je sprožila dogodek."
+msgid "text.Value = \"Dialog started at \" + strftime(\"%a, %d %b %Y %H:%M:%S\", localtime())"
+msgstr "text.Value = \"Pogovorno okno zagnano: \" + strftime(\"%a, %d %b %Y %H:%M:%S\", localtime())"
 
 #: sf_dialogcontrol.xhp
 msgctxt ""
 "sf_dialogcontrol.xhp\n"
-"bas_id801598175242937\n"
+"pyc_id841620225235377\n"
 "help.text"
-msgid "' oControl represents now the instance of the Control class having triggered the current event"
-msgstr "' oControl predstavlja, kako je instanca razreda Control sprožila trenutni dogodek"
+msgid "# ... process the controls actual values"
+msgstr "# ... obdelaj trenutne vrednosti kontrolnikov"
+
+#: sf_dialogcontrol.xhp
+msgctxt ""
+"sf_dialogcontrol.xhp\n"
+"par_id951598174966322\n"
+"help.text"
+msgid "Alternatively a control instance can be retrieved via the <literal>SFDialogs.DialogEvent</literal> service, providing the dialog was initiated with the <literal>Dialog</literal> service. <literal>DialogEvent</literal> returns the <literal>SFDialogs.DialogControl</literal> class instance that triggered the event."
+msgstr "Instanco kontrolnika lahko pridobite tudi prek storitve <literal>SFDialogs.DialogEvent</literal>, če je pogovorno okno nastalo s storitvijo <literal>Dialog</literal>. <literal>DialogEvent</literal> vrne instanco razreda <literal>SFDialogs.DialogControl</literal>, ki je sprožila dogodek."
 
 #: sf_dialogcontrol.xhp
 msgctxt ""
@@ -6983,7 +7031,7 @@ msgctxt ""
 "par_id11159851676440\n"
 "help.text"
 msgid "Gives access to the text being displayed by the control."
-msgstr "Omogočiti dostop do besedila, ki ga prikaže kontrolnik."
+msgstr "Omogoča dostop do besedila, ki ga prikaže kontrolnik."
 
 #: sf_dialogcontrol.xhp
 msgctxt ""
@@ -7646,32 +7694,32 @@ msgctxt ""
 "sf_dialogcontrol.xhp\n"
 "par_id761612711823834\n"
 "help.text"
-msgid "<emph>ParentNode</emph>: A node UNO object, of type <literal>com.sun.star.awt.tree.XMutableTreeNode</literal>."
-msgstr "<emph>ParentNode</emph>: vozlišče predmeta UNO vrste <literal>com.sun.star.awt.tree.XMutableTreeNode</literal>."
+msgid "<emph>parentnode</emph>: A node UNO object, of type <literal>com.sun.star.awt.tree.XMutableTreeNode</literal>."
+msgstr "<emph>parentnode</emph>: predmet vozlišč UNO vrste <literal>com.sun.star.awt.tree.XMutableTreeNode</literal>."
 
 #: sf_dialogcontrol.xhp
 msgctxt ""
 "sf_dialogcontrol.xhp\n"
 "par_id791612711823819\n"
 "help.text"
-msgid "<emph>DisplayValue</emph>: The text appearing in the tree control box."
-msgstr "<emph>DisplayValue</emph>: besedilo, ki se pojavi v polju kontrolnika drevesa."
+msgid "<emph>displayvalue</emph>: The text appearing in the tree control box."
+msgstr "<emph>displayvalue</emph>: besedilo, ki se pojavi v polju kontrolnika drevesa."
 
 #: sf_dialogcontrol.xhp
 msgctxt ""
 "sf_dialogcontrol.xhp\n"
 "par_id911612711823382\n"
 "help.text"
-msgid "<emph>DataValue</emph>: Any value associated with the new node. Default value is <literal>Empty</literal>."
-msgstr "<emph>DataValue</emph>: poljubna vrednost, povezana z novim vozliščem. Privzeta vrednost je <literal>Empty</literal> (prazno)."
+msgid "<emph>datavalue</emph>: Any value associated with the new node. <literal>datavalue</literal> may be a string, a number or a date. Omit the argument when not applicable."
+msgstr "<emph>datavalue</emph>: poljubna vrednost, povezana z novim vozliščem. <literal>datavalue</literal> je lahko niz, število ali datum. Argument lahko izpustite, če ni relevanten."
 
 #: sf_dialogcontrol.xhp
 msgctxt ""
 "sf_dialogcontrol.xhp\n"
-"bas_id401612711823779\n"
+"par_id901620317110685\n"
 "help.text"
-msgid "'Dialog stored in current document's standard library"
-msgstr "'Pogovorno okno, shranjeno v standardni knjižnici trenutnega dokumenta"
+msgid "%PRODUCTNAME Basic and Python examples pick up current document's <literal>myDialog</literal> dialog from <literal>Standard</literal> library."
+msgstr "Primera %PRODUCTNAME Basic in Python prevzameta pogovorno okno trenutnega dokumenta <literal>myDialog</literal> iz knjižnice <literal>Standard</literal>."
 
 #: sf_dialogcontrol.xhp
 msgctxt ""
@@ -7686,16 +7734,16 @@ msgctxt ""
 "sf_dialogcontrol.xhp\n"
 "par_id781612713087722\n"
 "help.text"
-msgid "<emph>ParentNode</emph>: A node UNO object, of type <literal>com.sun.star.awt.tree.XMutableTreeNode</literal>."
-msgstr "<emph>ParentNode</emph>: vozlišče predmeta UNO vrste <literal>com.sun.star.awt.tree.XMutableTreeNode</literal>."
+msgid "<emph>parentnode</emph>: A node UNO object, of type <literal>com.sun.star.awt.tree.XMutableTreeNode</literal>."
+msgstr "<emph>parentnode</emph>: predmet vozlišč UNO vrste <literal>com.sun.star.awt.tree.XMutableTreeNode</literal>."
 
 #: sf_dialogcontrol.xhp
 msgctxt ""
 "sf_dialogcontrol.xhp\n"
 "par_id36161271308759\n"
 "help.text"
-msgid "<emph>FlatTree</emph>: a two dimension array sorted on the columns containing the display values. Such an array can be issued by the <literal>GetRows</literal> method applied on the <literal>SFDatabases.Database</literal> service. When an array item containing the text to be displayed is <literal>Empty</literal> or <literal>Null</literal>, no new subnode is created and the remainder of the row is skipped."
-msgstr "<emph>FlatTree</emph>: dvodimenzionalno polje, razvrščeno po stolpcih, ki vsebujejo prikazane vrednosti. Tako polje lahko izdela metoda <literal>GetRows</literal>, uporabljena na storitvi<literal>SFDatabases.Database</literal>. Če je element polja, ki vsebuje besedilo za izpis, enak <literal>Empty</literal> ali <literal>Null</literal>, novo vozlišče ni ustvarjeno in preostanek vrstice je preskočen."
+msgid "<emph>flattree</emph>: a two dimension array sorted on the columns containing the display values. Such an array can be issued by the <literal>GetRows</literal> method applied on the <literal>SFDatabases.Database</literal> service. When an array item containing the text to be displayed is <literal>Empty</literal> or <literal>Null</literal>, no new subnode is created and the remainder of the row is skipped."
+msgstr "<emph>flattree</emph>: dvodimenzionalno polje, razvrščeno po stolpcih, ki vsebujejo prikazane vrednosti. Tako polje lahko izdela metoda <literal>GetRows</literal>, uporabljena na storitvi<literal>SFDatabases.Database</literal>. Če je element polja, ki vsebuje besedilo za izpis, enak <literal>Empty</literal> ali <literal>Null</literal>, novo vozlišče ni ustvarjeno in preostanek vrstice je preskočen."
 
 #: sf_dialogcontrol.xhp
 msgctxt ""
@@ -7710,8 +7758,8 @@ msgctxt ""
 "sf_dialogcontrol.xhp\n"
 "par_id51612713087915\n"
 "help.text"
-msgid "<emph>WithDataValue</emph>: When <literal>False</literal> default value is used, every column of <literal>FlatTree</literal> contains the text to be displayed in the tree control. When <literal>True</literal>, the texts to be displayed (<literal>DisplayValue</literal>) are in columns 0, 2, 4, ... while the data values (<literal>DataValue</literal>) are in columns 1, 3, 5, ..."
-msgstr "<emph>WithDataValue</emph>: če je <literal>False</literal>, je uporabljena privzeta vrednost, vsak stolpec <literal>FlatTree</literal> vsebuje besedilo, ki bo prikazano v kontrolniku drevesa. Če je <literal>True</literal>, so besedila, ki bodo prikazana (<literal>DisplayValue</literal>), v stolpcih 0, 2, 4, ..., podatkovne vrednosti (<literal>DataValue</literal>) pa v stolpcih 1, 3, 5, ..."
+msgid "<emph>withdatavalue</emph>: When <literal>False</literal> default value is used, every column of <literal>flattree</literal> contains the text to be displayed in the tree control. When <literal>True</literal>, the texts to be displayed (<literal>displayvalue</literal>) are in columns 0, 2, 4, ... while the data values (<literal>datavalue</literal>) are in columns 1, 3, 5, ..."
+msgstr "<emph>withdatavalue</emph>: če je <literal>False</literal>, je uporabljena privzeta vrednost, vsak stolpec <literal>flattree</literal> vsebuje besedilo, ki bo prikazano v kontrolniku drevesa. Če je <literal>True</literal>, so besedila, ki bodo prikazana (<literal>displayvalue</literal>), v stolpcih 0, 2, 4, ..., podatkovne vrednosti (<literal>datavalue</literal>) pa v stolpcih 1, 3, 5, ..."
 
 #: sf_dialogcontrol.xhp
 msgctxt ""
@@ -7732,26 +7780,18 @@ msgstr "To metodo lahko pokličete pred prikazom pogovornega okna, da zgradite z
 #: sf_dialogcontrol.xhp
 msgctxt ""
 "sf_dialogcontrol.xhp\n"
-"par_id671612780723837\n"
+"par_id791612117823819\n"
 "help.text"
-msgid "<emph>DisplayValue</emph>: The text appearing in the tree control box."
-msgstr "<emph>DisplayValue</emph>: besedilo, ki se pojavi v polju kontrolnika drevesa."
-
-#: sf_dialogcontrol.xhp
-msgctxt ""
-"sf_dialogcontrol.xhp\n"
-"par_id31612780723267\n"
-"help.text"
-msgid "<emph>DataValue</emph>: Any value associated with the new node. Default value is <literal>Empty</literal>."
-msgstr "<emph>DataValue</emph>: poljubna vrednost, povezana z novim vozliščem. Privzeta vrednost je <literal>Empty</literal> (prazno)."
+msgid "<emph>displayvalue</emph>: The text appearing in the tree control box."
+msgstr "<emph>displayvalue</emph>: besedilo, ki se pojavi v polju kontrolnika drevesa."
 
 #: sf_dialogcontrol.xhp
 msgctxt ""
 "sf_dialogcontrol.xhp\n"
 "par_id171612781589503\n"
 "help.text"
-msgid "Traverses the tree and finds recursively, starting from the root, a node meeting some criteria. Either - 1 match is enough - having its display value matching <literal>DisplayValue</literal> pattern or having its data value equal to <literal>DataValue</literal>. The comparisons may be or not case-sensitive. The first matching occurrence is returned as a node UNO object of type <literal>com.sun.star.awt.tree.XMutableTreeNode</literal>. <embedvar href=\"text/sbasic/shared/03/sf_dialogcontrol.xhp#XMutableTreeNode\"/>"
-msgstr "Preči drevo in rekurzivno, z začetkom v korenu, najde vozlišče, ki ustreza pogojem. Lahko se - 1 zadetek zadostuje - prikazana vrednost ujema z vzorcem <literal>DisplayValue</literal> ali pa je njegova podatkovna vrednost enaka <literal>DataValue</literal>. Primerjava lahko razlikuje med velikimi in malimi črkami ali pa ne. Prvi zadetek je vrnjen kot predmet vozlišča UNO vrste <literal>com.sun.star.awt.tree.XMutableTreeNode</literal>. <embedvar href=\"text/sbasic/shared/03/sf_dialogcontrol.xhp#XMutableTreeNode\"/>"
+msgid "Traverses the tree and finds recursively, starting from the root, a node meeting some criteria. Either - 1 match is enough - having its display value matching <literal>displayvalue</literal> pattern or having its data value equal to <literal>datavalue</literal>. The comparisons may be or not case-sensitive. The first matching occurrence is returned as a node UNO object of type <literal>com.sun.star.awt.tree.XMutableTreeNode</literal>. <embedvar href=\"text/sbasic/shared/03/sf_dialogcontrol.xhp#XMutableTreeNode\"/>"
+msgstr "Preči drevo in rekurzivno, z začetkom v korenu, najde vozlišče, ki ustreza pogojem. Lahko se - 1 zadetek zadostuje - prikazana vrednost ujema z vzorcem <literal>displayvalue</literal> ali pa je njegova podatkovna vrednost enaka <literal>datavalue</literal>. Primerjava lahko razlikuje med velikimi in malimi črkami ali pa ne. Prvi zadetek je vrnjen kot predmet vozlišča UNO vrste <literal>com.sun.star.awt.tree.XMutableTreeNode</literal>. <embedvar href=\"text/sbasic/shared/03/sf_dialogcontrol.xhp#XMutableTreeNode\"/>"
 
 #: sf_dialogcontrol.xhp
 msgctxt ""
@@ -7774,32 +7814,24 @@ msgctxt ""
 "sf_dialogcontrol.xhp\n"
 "par_id541613670199211\n"
 "help.text"
-msgid "One argument out of <literal>DisplayValue</literal> or <literal>DataValue</literal> must be specified. If both present, one match is sufficient to select the node."
-msgstr "Določen mora biti eden izmed argumentov <literal>DisplayValue</literal> in <literal>DataValue</literal>. Če sta prisotna oba, je dovolj en zadetek, da bo vozlišče izbrano."
+msgid "One argument out of <literal>displayvalue</literal> or <literal>datavalue</literal> must be specified. If both present, one match is sufficient to select the node."
+msgstr "Določen mora biti eden izmed argumentov <literal>displayvalue</literal> in <literal>datavalue</literal>. Če sta prisotna oba, je dovolj en zadetek, da bo vozlišče izbrano."
 
 #: sf_dialogcontrol.xhp
 msgctxt ""
 "sf_dialogcontrol.xhp\n"
 "par_id591612781589560\n"
 "help.text"
-msgid "<emph>DisplayValue</emph>: The pattern to be matched. See the <link href=\"text/sbasic/shared/03/sf_string.xhp#IsLike\" name=\"String service IsLike() method\"><literal>SF_String.IsLike()</literal></link> method. When equal to the zero-length string (default), this display value is not searched for."
-msgstr "<emph>DisplayValue</emph>: vzorec, ki ga želimo najti. Glejte metodo <link href=\"text/sbasic/shared/03/sf_string.xhp#IsLike\" name=\"Metoda IsLike() storitve String\"><literal>SF_String.IsLike()</literal></link>. Če je enaka nizu ničelne dolžine (privzeto), te prikazane vrednosti ne išče."
-
-#: sf_dialogcontrol.xhp
-msgctxt ""
-"sf_dialogcontrol.xhp\n"
-"par_id481612781589626\n"
-"help.text"
-msgid "<emph>DataValue</emph>: A string, a numeric value, a date. Use <literal>Empty</literal> default value when no value applies."
-msgstr "<emph>DataValue</emph>: niz, številska vrednost, datum. Uporabi privzeto vrednost <literal>Empty</literal>, če ne velja nobena vrednost."
+msgid "<emph>displayvalue</emph>: The pattern to be matched. Refer to <link href=\"text/sbasic/shared/03/sf_string.xhp#IsLike\" name=\"String service IsLike() method\"><literal>SF_String.IsLike()</literal></link> method for the list of possible wildcards. When equal to the zero-length string (default), this display value is not searched for."
+msgstr "<emph>displayvalue</emph>: vzorec, ki ga želimo najti. Glejte metodo <link href=\"text/sbasic/shared/03/sf_string.xhp#IsLike\" name=\"Metoda IsLike() storitve String\"><literal>SF_String.IsLike()</literal></link>, kjer najdete seznam možnih nadomestnih znakov. Če je enak nizu ničelne dolžine (privzeto), te prikazane vrednosti ne išče."
 
 #: sf_dialogcontrol.xhp
 msgctxt ""
 "sf_dialogcontrol.xhp\n"
 "par_id141582384726168\n"
 "help.text"
-msgid "<emph>CaseSensitive</emph>: Default value is <literal>False</literal>"
-msgstr "<emph>CaseSensitive</emph>: privzeta vrednost je <literal>False</literal>"
+msgid "<emph>casesensitive</emph>: Default value is <literal>False</literal>"
+msgstr "<emph>casesensitive</emph>: privzeta vrednost je <literal>False</literal>."
 
 #: sf_dialogcontrol.xhp
 msgctxt ""
@@ -9070,21 +9102,21 @@ msgctxt ""
 "sf_exception.xhp\n"
 "par_id181587139648008\n"
 "help.text"
-msgid "The <literal>Exception</literal> service is a collection of methods for Basic code debugging and error handling."
-msgstr "Storitev <literal>Exception</literal> je nabor metod za razhroščevanje kode Basic in ravnanje ob napakah."
+msgid "The <literal>Exception</literal> service is a collection of methods to assist in code debugging in Basic and Python scripts and in error handling in Basic scripts."
+msgstr "Storitev <literal>Exception</literal> je nabor metod za razhroščevanje kode skriptov Basic in Python ter za ravnanje ob napakah v skriptih Basic."
 
 #: sf_exception.xhp
 msgctxt ""
 "sf_exception.xhp\n"
 "par_id141587140927573\n"
 "help.text"
-msgid "In the advent of a run-time error, the <literal>Exception</literal> service properties and methods help identify the error context and permit to handle it."
-msgstr "V primeru napake ob izvajanju lastnosti in metode storitve <literal>Exception</literal> pomagajo identificirati kontekst napake in omogočajo ravnanje z njo."
+msgid "In <emph>Basic scripts</emph>, when a run-time error occurs, the methods and properties of the <literal>Exception</literal> service help identify the error context and allow to handle it."
+msgstr "V primeru napake v <emph>skriptih Basic</emph> ob izvajanju lastnosti in metode storitve <literal>Exception</literal> pomagajo identificirati kontekst napake in omogočajo ravnanje z njo."
 
 #: sf_exception.xhp
 msgctxt ""
 "sf_exception.xhp\n"
-"par_id461587140965192\n"
+"par_id401621450898070\n"
 "help.text"
 msgid "The <literal>SF_Exception</literal> service is similar to the <link href=\"text/sbasic/shared/ErrVBA.xhp\" name=\"VBA Err object\">VBA <literal>Err</literal> object</link>."
 msgstr "Storitev <literal>SF_Exception</literal> je podobna <link href=\"text/sbasic/shared/ErrVBA.xhp\" name=\"Predmet VBA Err\">predmetu VBA <literal>Err</literal></link>."
@@ -9092,7 +9124,7 @@ msgstr "Storitev <literal>SF_Exception</literal> je podobna <link href=\"text/sb
 #: sf_exception.xhp
 msgctxt ""
 "sf_exception.xhp\n"
-"par_id61587141015326\n"
+"par_id361621450908874\n"
 "help.text"
 msgid "The <literal>Number</literal> property identifies the error."
 msgstr "Lastnost <literal>Number</literal> identificira napako."
@@ -9100,26 +9132,34 @@ msgstr "Lastnost <literal>Number</literal> identificira napako."
 #: sf_exception.xhp
 msgctxt ""
 "sf_exception.xhp\n"
-"par_id251608212974671\n"
+"par_id861621450910254\n"
 "help.text"
-msgid "Use <literal>Raise()</literal> method to interrupt processing, use <literal>RaiseWarning()</literal> method to trap an anomaly and continue processing."
-msgstr "Uporabite metodo <literal>Raise()</literal>, da prekinete obdelavo, uporabite metodo <literal>RaiseWarning()</literal>, da ujamete nepravilnost in nadaljujete z obdelavo."
+msgid "Use the <literal>Raise</literal> method to interrupt processing. The <literal>RaiseWarning</literal> method can be used to trap an anomaly without interrupting the macro execution."
+msgstr "Uporabite metodo <literal>Raise</literal>, da prekinete obdelavo. Uporabite metodo <literal>RaiseWarning</literal>, da ujamete nepravilnost, vendar ne prekinete izvajanja makra."
 
 #: sf_exception.xhp
 msgctxt ""
 "sf_exception.xhp\n"
 "par_id621587225732733\n"
 "help.text"
-msgid "Errors or warnings raised with the <literal>Exception</literal> service are stored in memory and can be retrieved using its <literal>Console()</literal> method."
-msgstr "Napake ali opozorila storitve <literal>Exception</literal> se hranijo v pomnilniku in jih lahko pridobite z njeno metodo <literal>Console()</literal>."
+msgid "Errors and warnings raised with the <literal>Exception</literal> service are stored in memory and can be retrieved using the <literal>Console</literal> method."
+msgstr "Napake in opozorila storitve <literal>Exception</literal> se hranijo v pomnilniku in jih lahko pridobite z metodo <literal>Console</literal>."
 
 #: sf_exception.xhp
 msgctxt ""
 "sf_exception.xhp\n"
 "par_id411587141146677\n"
 "help.text"
-msgid "The <literal>Exception</literal> service console stores events, variable values and information about errors. Use the console when Basic IDE is not accessible, for example in <link href=\"text/scalc/guide/userdefined_function.xhp\" name=\"Calc user-defined function\">Calc user defined functions (UDF)</link> or during events processing. Use <literal>DebugPrint()</literal> method to aggregate additional user data. Console entries can be dumped to a text file or visualized in a dialogue."
-msgstr "Konzola storitve <literal>Exception</literal> hrani dogodke, vrednosti spremenljivk in podatke o napakah. Uporabite konzolo, ko IDE Basic ni dosegljiv, npr. za <link href=\"text/scalc/guide/userdefined_function.xhp\" name=\"Uporabniško določena funkcija Calc\">uporabniško-določene funkcije Calc (UDF)</link> ali pri obdelavi dogodkov. Uporabi metodo <literal>DebugPrint()</literal> za nabor dodatnih uporabniških podatkov. Vnose konzole lahko izmečete v besedilno datoteko ali vizualizirate v pogovornem oknu."
+msgid "The <literal>Exception</literal> service console stores events, variable values and information about errors. Use the console when the Basic IDE is not easily accessible, for example in <link href=\"text/scalc/guide/userdefined_function.xhp\" name=\"Calc user-defined function\">Calc user defined functions (UDF)</link> or during events processing."
+msgstr "Konzola storitve <literal>Exception</literal> hrani dogodke, vrednosti spremenljivk in podatke o napakah. Uporabite konzolo, ko IDE Basic ni enostavno dosegljiv, npr. za <link href=\"text/scalc/guide/userdefined_function.xhp\" name=\"Uporabniško določena funkcija Calc\">uporabniško-določene funkcije Calc (UDF)</link> ali pri obdelavi dogodkov."
+
+#: sf_exception.xhp
+msgctxt ""
+"sf_exception.xhp\n"
+"par_id251621034725811\n"
+"help.text"
+msgid "Use the <literal>DebugPrint</literal> method to add any relevant information to the console. Console entries can be dumped to a text file or visualized in a dialog window."
+msgstr "Uporabite metodo <literal>DebugPrint</literal> za dodajanje vseh relevantnih podatkov v konzolo. Vnose iz konzole lahko izmečete v besedilno datoteko ali prikažete v pogovornem oknu."
 
 #: sf_exception.xhp
 msgctxt ""
@@ -9142,8 +9182,8 @@ msgctxt ""
 "sf_exception.xhp\n"
 "par_id751587141235313\n"
 "help.text"
-msgid "Inform the user about the error using either a standard message either a customized message"
-msgstr "obvesti uporabnika o napaki prek standardnega ali prilagojenega sporočila,"
+msgid "Inform the user about the error using either a standard message or a custom message"
+msgstr "obvesti uporabnika o napaki prek standardnega sporočila ali sporočila po meri,"
 
 #: sf_exception.xhp
 msgctxt ""
@@ -9156,18 +9196,26 @@ msgstr "po želji ustavi svoje izvajanje."
 #: sf_exception.xhp
 msgctxt ""
 "sf_exception.xhp\n"
-"hd_id201586594659135\n"
+"par_id771621035263403\n"
 "help.text"
-msgid "Service invocation"
-msgstr "Priklic storitve"
+msgid "In <emph>Python scripts</emph> the <literal>Exception</literal> service is mostly used for debugging purposes. Methods such as <literal>DebugPrint</literal>, <literal>Console</literal> and <literal>DebugDisplay</literal> are useful to quickly print messages, log data and open the console window from within a Python script."
+msgstr "V <emph>skriptih Python</emph> se storitev <literal>Exception</literal> večinoma uporablja za razhroščevanje. Metode, kot so <literal>DebugPrint</literal>, <literal>Console</literal> in <literal>DebugDisplay</literal>, so uporabne za hitro izpisovanje sporočil, beleženje podatkov in odpiranje okna konzole iz skripta Python."
 
 #: sf_exception.xhp
 msgctxt ""
 "sf_exception.xhp\n"
-"par_id571586594672714\n"
+"par_id211621035276160\n"
 "help.text"
-msgid "To invoke the <literal>Exception</literal> service, first you need to load the <literal>ScriptForge</literal> library using:"
-msgstr "Storitev <literal>Exception</literal> lahko prikličete šele po nalaganju knjižnice <literal>ScriptForge</literal> na naslednji način:"
+msgid "Not all methods and properties are available for Python scripts since the Python language already has a comprehensive exception handling system."
+msgstr "Za skripte Python vse metode in lastnosti niso na voljo, saj ima jezik Python zelo razdelan sistem obravnave izjem."
+
+#: sf_exception.xhp
+msgctxt ""
+"sf_exception.xhp\n"
+"hd_id201586594659135\n"
+"help.text"
+msgid "Service invocation"
+msgstr "Priklic storitve"
 
 #: sf_exception.xhp
 msgctxt ""
@@ -9180,10 +9228,26 @@ msgstr "Naslednji primeri prikazujejo tri različne pristope h klicu metode <lit
 #: sf_exception.xhp
 msgctxt ""
 "sf_exception.xhp\n"
+"par_id901621036227048\n"
+"help.text"
+msgid "The code snippet below creates an instance of the <literal>Exception</literal> service, logs a message and displays the <literal>Console</literal> window."
+msgstr "Spodnji odlomek kode ustvari instanco storitve <literal>Exception</literal>, zabeleži sporočilo in prikaže okno <literal>Console</literal>."
+
+#: sf_exception.xhp
+msgctxt ""
+"sf_exception.xhp\n"
 "hd_id651584978211886\n"
 "help.text"
 msgid "Properties"
 msgstr "Lastnosti"
+
+#: sf_exception.xhp
+msgctxt ""
+"sf_exception.xhp\n"
+"par_id911621036526404\n"
+"help.text"
+msgid "The properties listed below are only available for <emph>Basic</emph> scripts."
+msgstr "Spodaj naštete lastnosti so na voljo le za skripte <emph>Basic</emph>."
 
 #: sf_exception.xhp
 msgctxt ""
@@ -9198,7 +9262,7 @@ msgctxt ""
 "sf_exception.xhp\n"
 "par_id241584978211550\n"
 "help.text"
-msgid "ReadOnly"
+msgid "Readonly"
 msgstr "Samo za branje"
 
 #: sf_exception.xhp
@@ -9358,8 +9422,8 @@ msgctxt ""
 "sf_exception.xhp\n"
 "par_id511598718179819\n"
 "help.text"
-msgid "<emph>Modal</emph>: Determine if the console window is Modal (<literal>True</literal>) or Non-modal (<literal>False</literal>). Default value is <literal>True</literal>."
-msgstr "<emph>Modal</emph>: določa, ali je konzola modalna (<literal>True</literal>) ali ne (<literal>False</literal>). Privzeta vrednost je <literal>True</literal>."
+msgid "<emph>modal</emph>: Determine if the console window is modal (<literal>True</literal>) or non-modal (<literal>False</literal>). Default value is <literal>True</literal>."
+msgstr "<emph>modal</emph>: določa, ali je konzola modalna (<literal>True</literal>) ali ne (<literal>False</literal>). Privzeta vrednost je <literal>True</literal>."
 
 #: sf_exception.xhp
 msgctxt ""
@@ -9374,8 +9438,8 @@ msgctxt ""
 "sf_exception.xhp\n"
 "par_id351587215098527\n"
 "help.text"
-msgid "<emph>Keep</emph>: The number of recent messages to be kept. Default value is 0."
-msgstr "<emph>Keep</emph>: število nedavnih sporočil, ki jih želite ohraniti. Privzeta vrednost je 0."
+msgid "<emph>keep</emph>: The number of recent messages to be kept. Default value is 0."
+msgstr "<emph>keep</emph>: število nedavnih sporočil, ki jih želite ohraniti. Privzeta vrednost je 0."
 
 #: sf_exception.xhp
 msgctxt ""
@@ -9398,8 +9462,32 @@ msgctxt ""
 "sf_exception.xhp\n"
 "par_id851587218077862\n"
 "help.text"
-msgid "<emph>FileName</emph>: The name of the text file the console should be dumped into. The name is expressed according to the current <literal>FileNaming</literal> property of the <literal>SF_FileSystem</literal> service. <link href=\"text/sbasic/shared/00000002.xhp\" name=\"Url notation\">URL notation</link> and the native operating system's format are both admitted."
-msgstr "<emph>FileName</emph>: ime besedilne datoteke, v katere naj bo izmetana konzola. Ime je izraženo v skladu s trenutno lastnostjo <literal>FileNaming</literal> storitve <literal>SF_FileSystem</literal>. Dovoljeni sta <link href=\"text/sbasic/shared/00000002.xhp\" name=\"Notacija URL\">notacija URL</link> in domoroden zapis operacijskega sistema."
+msgid "<emph>filename</emph>: The name of the text file the console should be dumped into. The name is expressed according to the current <literal>FileNaming</literal> property of the <literal>SF_FileSystem</literal> service. By default, <link href=\"text/sbasic/shared/00000002.xhp\" name=\"Url notation\">URL notation</link> and the native operating system's format are both admitted."
+msgstr "<emph>filename</emph>: ime besedilne datoteke, v katere naj bo izmetana konzola. Ime je izraženo v skladu s trenutno lastnostjo <literal>FileNaming</literal> storitve <literal>SF_FileSystem</literal>. Privzeto sta dovoljeni <link href=\"text/sbasic/shared/00000002.xhp\" name=\"Notacija URL\">notacija URL</link> in domoroden zapis operacijskega sistema."
+
+#: sf_exception.xhp
+msgctxt ""
+"sf_exception.xhp\n"
+"par_id701621043185177\n"
+"help.text"
+msgid "Concatenates all the arguments into a single human-readable string and displays it in a <literal>MsgBox</literal> with an Information icon and an OK button."
+msgstr "Zbere vse podane argumente v en sam uporabniku prijazen niz ter ga prikaže v oknu <literal>MsgBox</literal> z ikono Informacija in gumbom V redu."
+
+#: sf_exception.xhp
+msgctxt ""
+"sf_exception.xhp\n"
+"par_id791621097689492\n"
+"help.text"
+msgid "The final string is also added to the Console."
+msgstr "Zadnji niz se prav tako doda v konzolo."
+
+#: sf_exception.xhp
+msgctxt ""
+"sf_exception.xhp\n"
+"par_id481587218636884\n"
+"help.text"
+msgid "<emph>arg0[, arg1, ...]</emph>: Any number of arguments of any type."
+msgstr "<emph>arg0[, arg1, ...]</emph>: poljubno število argumentov poljubne vrste."
 
 #: sf_exception.xhp
 msgctxt ""
@@ -9414,8 +9502,56 @@ msgctxt ""
 "sf_exception.xhp\n"
 "par_id481587218637988\n"
 "help.text"
-msgid "<emph>Arg0[, Arg1, ...]</emph>: Any number of arguments of any type."
-msgstr "<emph>Arg0[, Arg1, ...]</emph>: poljubno število argumentov poljubne vrste."
+msgid "<emph>arg0[, arg1, ...]</emph>: Any number of arguments of any type."
+msgstr "<emph>arg0[, arg1, ...]</emph>: poljubno število argumentov poljubne vrste."
+
+#: sf_exception.xhp
+msgctxt ""
+"sf_exception.xhp\n"
+"par_id111621426672183\n"
+"help.text"
+msgid "Opens an APSO Python shell as a non-modal window. The Python script keeps running after the shell is opened. The output from <literal>print</literal> statements inside the script are shown in the shell."
+msgstr "Odpre lupino Python APSO kot nemodalno okno. Po odprtju lupine teče skript Python naprej. Izhod ukazov <literal>print</literal> iz skripta je prikazan v lupini."
+
+#: sf_exception.xhp
+msgctxt ""
+"sf_exception.xhp\n"
+"par_id841621426922467\n"
+"help.text"
+msgid "Only a single instance of the APSO Python shell can be opened at any time. Hence, if a Python shell is already open, then calling this method will have no effect."
+msgstr "V danem trenutku je možno odpreti le eno instanco lupine Python APSO. Če je lupina Python že odprta, klic te metode nima učinka."
+
+#: sf_exception.xhp
+msgctxt ""
+"sf_exception.xhp\n"
+"par_id391621449167833\n"
+"help.text"
+msgid "<emph>variables</emph>: a Python dictionary with variable names and values that will be passed on to the APSO Python shell. By default all local variables are passed using Python's builtin <literal>locals()</literal> function."
+msgstr "<emph>variables</emph>: slovar Python z imeni in vrednostmi spremenljivk, ki bo podan naprej lupini Python APSO. Vse krajevne spremenljivke so privzeto podane naprej z vgrajeno funkcijo Python <literal>locals()</literal>."
+
+#: sf_exception.xhp
+msgctxt ""
+"sf_exception.xhp\n"
+"par_id991621449657850\n"
+"help.text"
+msgid "The example below opens the APSO Python shell passing all global and local variables considering the context where the script is running."
+msgstr "Spodnji primer lupine Python APSO poda naprej vse globalne in krajevne spremenljivke glede na kontekst, v katerem se skript izvaja."
+
+#: sf_exception.xhp
+msgctxt ""
+"sf_exception.xhp\n"
+"par_id521621449800348\n"
+"help.text"
+msgid "When the APSO Python shell is open, any subsequent output printed by the script will be shown in the shell. Hence, the string printed in the example below will be displayed in the Python shell."
+msgstr "Če je lupina Python APSO odprta, je vsak nadaljnji izhod, izpisan s skriptom, prikazan v lupini. Zato se niz, izpisan s spodnjim primerom, prikaže v lupini Python."
+
+#: sf_exception.xhp
+msgctxt ""
+"sf_exception.xhp\n"
+"pyc_id731621449899901\n"
+"help.text"
+msgid "print(\"Hello world!\")"
+msgstr "print(\"Žive naj vsi narodi!\")"
 
 #: sf_exception.xhp
 msgctxt ""
@@ -9478,7 +9614,7 @@ msgctxt ""
 "sf_exception.xhp\n"
 "par_id751587222598238\n"
 "help.text"
-msgid "To raise an exception with an specific code:"
+msgid "To raise an exception with a specific code:"
 msgstr "Če želite priklicati izjemo z določeno kodo:"
 
 #: sf_exception.xhp
@@ -18166,8 +18302,8 @@ msgctxt ""
 "sf_ui.xhp\n"
 "par_id31587913266153\n"
 "help.text"
-msgid "The UI (User Interface) service simplifies the identification and the manipulation of the different windows composing the whole LibreOffice application:"
-msgstr "Storitev UI (User Interface, angl. za uporabniški vmesnik) poenostavlja identifikacijo in ravnanje z različnimi okni, ki tvorijo celoten program LibreOffice:"
+msgid "The UI (User Interface) service simplifies the identification and the manipulation of the different windows composing the whole %PRODUCTNAME application:"
+msgstr "Storitev UI (User Interface, angl. za uporabniški vmesnik) poenostavlja identifikacijo in ravnanje z različnimi okni, ki tvorijo celoten program %PRODUCTNAME:"
 
 #: sf_ui.xhp
 msgctxt ""
@@ -18220,7 +18356,7 @@ msgstr "Dostop do osnovnih \"dokumentov\""
 #: sf_ui.xhp
 msgctxt ""
 "sf_ui.xhp\n"
-"par_id421587913266819\n"
+"par_id181620312953395\n"
 "help.text"
 msgid "The UI service is the starting point to open, create or access to the content of new or existing documents from a user script."
 msgstr "Storitev UI je začetna točka za odpiranje, ustvarjanje ali dostopanje do vsebine novih ali obstoječih dokumentov iz uporabniškega skripta."
@@ -18404,6 +18540,158 @@ msgstr "Seznam trenutno odprtih dokumentov. Posebna okna so prezrta. Ta seznam s
 #: sf_ui.xhp
 msgctxt ""
 "sf_ui.xhp\n"
+"hd_id511620762163390\n"
+"help.text"
+msgid "Constants"
+msgstr "Konstante"
+
+#: sf_ui.xhp
+msgctxt ""
+"sf_ui.xhp\n"
+"par_id761620761856238\n"
+"help.text"
+msgid "Name"
+msgstr "Ime"
+
+#: sf_ui.xhp
+msgctxt ""
+"sf_ui.xhp\n"
+"par_id591620761856238\n"
+"help.text"
+msgid "Value"
+msgstr "Vrednost"
+
+#: sf_ui.xhp
+msgctxt ""
+"sf_ui.xhp\n"
+"par_id711620761856238\n"
+"help.text"
+msgid "Description"
+msgstr "Opis"
+
+#: sf_ui.xhp
+msgctxt ""
+"sf_ui.xhp\n"
+"par_id511620761856238\n"
+"help.text"
+msgid "MACROEXECALWAYS"
+msgstr "MACROEXECALWAYS"
+
+#: sf_ui.xhp
+msgctxt ""
+"sf_ui.xhp\n"
+"par_id761620761856107\n"
+"help.text"
+msgid "2"
+msgstr "2"
+
+#: sf_ui.xhp
+msgctxt ""
+"sf_ui.xhp\n"
+"par_id341620761856238\n"
+"help.text"
+msgid "Macros are always executed"
+msgstr "Makri se vedno izvedejo"
+
+#: sf_ui.xhp
+msgctxt ""
+"sf_ui.xhp\n"
+"par_id661620761881513\n"
+"help.text"
+msgid "MACROEXECNEVER"
+msgstr "MACROEXECNEVER"
+
+#: sf_ui.xhp
+msgctxt ""
+"sf_ui.xhp\n"
+"par_id661620761891082\n"
+"help.text"
+msgid "1"
+msgstr "1"
+
+#: sf_ui.xhp
+msgctxt ""
+"sf_ui.xhp\n"
+"par_id101620761893011\n"
+"help.text"
+msgid "Macros are never executed"
+msgstr "Makri se nikoli ne izvedejo"
+
+#: sf_ui.xhp
+msgctxt ""
+"sf_ui.xhp\n"
+"par_id311620761888379\n"
+"help.text"
+msgid "MACROEXECNORMAL"
+msgstr "MACROEXECNORMAL"
+
+#: sf_ui.xhp
+msgctxt ""
+"sf_ui.xhp\n"
+"par_id951620761899067\n"
+"help.text"
+msgid "0"
+msgstr "0"
+
+#: sf_ui.xhp
+msgctxt ""
+"sf_ui.xhp\n"
+"par_id11620761899780\n"
+"help.text"
+msgid "Macro execution depends on user settings"
+msgstr "Izvajanje makrov je odvisno od uporabniških nastavitev"
+
+#: sf_ui.xhp
+msgctxt ""
+"sf_ui.xhp\n"
+"par_id311620312548992\n"
+"help.text"
+msgid "The examples below show a <literal>MsgBox</literal> with the names of all currently open documents."
+msgstr "Spodnji primer prikazuje <literal>MsgBox</literal> z imeni vseh trenutno odprtih dokumentov."
+
+#: sf_ui.xhp
+msgctxt ""
+"sf_ui.xhp\n"
+"pyc_id21620312350189\n"
+"help.text"
+msgid "svcUI = CreateScriptService(\"UI\")"
+msgstr "svcUI = CreateScriptService(\"UI\")"
+
+#: sf_ui.xhp
+msgctxt ""
+"sf_ui.xhp\n"
+"pyc_id631620312351013\n"
+"help.text"
+msgid "sBasic = CreateScriptService(\"Basic\")"
+msgstr "sBasic = CreateScriptService(\"Basic\")"
+
+#: sf_ui.xhp
+msgctxt ""
+"sf_ui.xhp\n"
+"pyc_id141620312351286\n"
+"help.text"
+msgid "openDocs = svcUI.Documents()"
+msgstr "openDocs = svcUI.Documents()"
+
+#: sf_ui.xhp
+msgctxt ""
+"sf_ui.xhp\n"
+"pyc_id661620312351500\n"
+"help.text"
+msgid "strDocs = \"\\n\".join(openDocs)"
+msgstr "strDocs = \"\\n\".join(openDocs)"
+
+#: sf_ui.xhp
+msgctxt ""
+"sf_ui.xhp\n"
+"pyc_id801620312351676\n"
+"help.text"
+msgid "sBasic.MsgBox(strDocs)"
+msgstr "sBasic.MsgBox(strDocs)"
+
+#: sf_ui.xhp
+msgctxt ""
+"sf_ui.xhp\n"
 "par_id881608131596153\n"
 "help.text"
 msgid "List of Methods in the UI Service"
@@ -18412,7 +18700,7 @@ msgstr "Seznam metod storitve UI"
 #: sf_ui.xhp
 msgctxt ""
 "sf_ui.xhp\n"
-"par_id811596553490262\n"
+"par_id431620322170443\n"
 "help.text"
 msgid "Note, as an exception, that the methods marked <emph>(*)</emph> are <emph>not applicable to Base documents</emph>."
 msgstr "Upoštevajte izjemo, da metod, označenih z <emph>(*)</emph>, <emph>ni mogoče uporabiti z dokumenti Base</emph>."
@@ -18430,72 +18718,88 @@ msgctxt ""
 "sf_ui.xhp\n"
 "par_id381587913266946\n"
 "help.text"
-msgid "<emph>WindowName</emph>: see the definitions above."
-msgstr "<emph>WindowName</emph>: glejte zgornje definicije."
+msgid "<emph>windowname</emph>: see the definitions above."
+msgstr "<emph>windowname</emph>: glejte zgornje definicije."
 
 #: sf_ui.xhp
 msgctxt ""
 "sf_ui.xhp\n"
 "par_id13159655484952\n"
 "help.text"
-msgid "Create and store a new LibreOffice Base document embedding an empty database of the given type. The method returns a document object."
-msgstr "Ustvari in shrani nov dokument LibreOffice Base, ki vdela prazno zbirko podatkov dane vrste. Metoda vrne predmet dokumenta."
+msgid "Creates and stores a new %PRODUCTNAME Base document embedding an empty database of the given type. The method returns a <literal>Document</literal> service instance."
+msgstr "Ustvari in shrani nov dokument %PRODUCTNAME Base, ki vdela prazno zbirko podatkov dane vrste. Metoda vrne instanco storitve <literal>Document</literal>."
 
 #: sf_ui.xhp
 msgctxt ""
 "sf_ui.xhp\n"
 "par_id441596554849949\n"
 "help.text"
-msgid "<emph>FileName</emph> : Identifies the file to create. It must follow the SF_FileSystem.FileNaming notation. If the file already exists, it is overwritten without warning"
-msgstr "<emph>FileName</emph>: ime datoteke, ki jo želite ustvariti. Slediti mora obliki zapisa SF_FileSystem.FileNaming. Če datoteka že obstaja, bo prepisana brez opozorila."
+msgid "<emph>filename</emph> : Identifies the file to create. It must follow the <literal>SF_FileSystem.FileNaming</literal> notation. If the file already exists, it is overwritten without warning"
+msgstr "<emph>filename</emph>: ime datoteke, ki jo želite ustvariti. Slediti mora obliki zapisa <literal>SF_FileSystem.FileNaming</literal>. Če datoteka že obstaja, bo prepisana brez opozorila."
 
 #: sf_ui.xhp
 msgctxt ""
 "sf_ui.xhp\n"
 "par_id381596554849698\n"
 "help.text"
-msgid "<emph>EmbeddedDatabase</emph> : Either \"HSQLDB\" (default) or \"FIREBIRD\"."
-msgstr "<emph>EmbeddedDatabase</emph>: možni vrsti vdelane zbirke podatkov sta \"HSQLDB\" (privzeto) in \"FIREBIRD\"."
+msgid "<emph>embeddeddatabase</emph> : Either \"HSQLDB\" (default) or \"FIREBIRD\"."
+msgstr "<emph>embeddeddatabase</emph>: možni vrsti vdelane zbirke podatkov sta \"HSQLDB\" (privzeto) in \"FIREBIRD\"."
 
 #: sf_ui.xhp
 msgctxt ""
 "sf_ui.xhp\n"
 "par_id521596554849185\n"
 "help.text"
-msgid "<emph>RegistrationName</emph> : The name used to store the new database in the databases register. When = \"\" (default), no registration takes place. If the name already exists it is overwritten without warning."
-msgstr "<emph>RegistrationName</emph>: ime, uporabljeno za hrambo nove zbirke podatkov v registru zbirk podatkov. Ko je enako \"\" (privzeta vrednost), ime ne bo registrirano. Če ime že obstaja, je brez opozorila prepisano."
+msgid "<emph>registrationname</emph> : The name used to store the new database in the databases register. When = \"\" (default), no registration takes place. If the name already exists it is overwritten without warning."
+msgstr "<emph>registrationname</emph>: ime, uporabljeno za hrambo nove zbirke podatkov v registru zbirk podatkov. Ko je enako \"\" (privzeta vrednost), ime ne bo registrirano. Če ime že obstaja, je brez opozorila prepisano."
+
+#: sf_ui.xhp
+msgctxt ""
+"sf_ui.xhp\n"
+"pyc_id361620323808010\n"
+"help.text"
+msgid "myBase = svcUI.CreateBaseDocument(r\"C:\\Databases\\MyBaseFile.odb\", \"FIREBIRD\")"
+msgstr "myBase = svcUI.CreateBaseDocument(r\"C:\\ZbirkePodatkov\\DatotekaMojaZbirkaPodatkov.odb\", \"FIREBIRD\")"
 
 #: sf_ui.xhp
 msgctxt ""
 "sf_ui.xhp\n"
 "par_id651588521753997\n"
 "help.text"
-msgid "Create a new LibreOffice document of a given type or based on a given template. The method returns a document object."
-msgstr "Ustvari nov dokument LibreOffice dane vrste ali na osnovi dane predloge. Metoda vrne predmet dokumenta."
+msgid "Create a new %PRODUCTNAME document of a given type or based on a given template. The method returns a document object."
+msgstr "Ustvari nov dokument %PRODUCTNAME dane vrste ali na osnovi dane predloge. Metoda vrne predmet dokumenta."
 
 #: sf_ui.xhp
 msgctxt ""
 "sf_ui.xhp\n"
 "par_id51588521753302\n"
 "help.text"
-msgid "<emph>DocumentType</emph> : \"Calc\", \"Writer\", etc. If absent, the <literal>TemplateFile</literal> argument must be present."
-msgstr "<emph>DocumentType</emph>: vrsta dokumenta, kot npr. \"Calc\", \"Writer\" itn. Če ni naveden, mora biti prisoten argument <literal>TemplateFile</literal>."
+msgid "<emph>documenttype</emph> : \"Calc\", \"Writer\", etc. If absent, the <literal>TemplateFile</literal> argument must be present."
+msgstr "<emph>documenttype</emph>: vrsta dokumenta, kot npr. \"Calc\", \"Writer\" itn. Če ni naveden, mora biti prisoten argument <literal>TemplateFile</literal>."
 
 #: sf_ui.xhp
 msgctxt ""
 "sf_ui.xhp\n"
 "par_id401588522663325\n"
 "help.text"
-msgid "<emph>TemplateFile</emph> : The full <literal>FileName</literal> of the template to build the new document on. If the file does not exist, the argument is ignored. The \"FileSystem\" service provides the <literal>TemplatesFolder</literal> and <literal>UserTemplatesFolder</literal> properties to help to build the argument."
-msgstr "<emph>TemplateFile</emph>: polno ime predloge <literal>FileName</literal>, na temelju katere bo izdelan dokument. Če datoteka ne obstaja, je argument prezrt. Storitev \"FileSystem\" zagotavlja lastnosti <literal>TemplatesFolder</literal> in <literal>UserTemplatesFolder</literal>, ki sta v pomoč pri izdelavi argumenta."
+msgid "<emph>templatefile</emph> : The full <literal>FileName</literal> of the template to build the new document on. If the file does not exist, the argument is ignored. The <literal>FileSystem</literal> service provides the <literal>TemplatesFolder</literal> and <literal>UserTemplatesFolder</literal> properties to help to build the argument."
+msgstr "<emph>templatefile</emph>: polno ime predloge <literal>FileName</literal>, na temelju katere bo izdelan dokument. Če datoteka ne obstaja, je argument prezrt. Storitev <literal>FileSystem</literal> zagotavlja lastnosti <literal>TemplatesFolder</literal> in <literal>UserTemplatesFolder</literal>, ki sta v pomoč pri izdelavi argumenta."
 
 #: sf_ui.xhp
 msgctxt ""
 "sf_ui.xhp\n"
 "par_id131588522824366\n"
 "help.text"
-msgid "<emph>Hidden</emph>: if <literal>True</literal>, open the new document in the background (default = False). To use with caution: activation or closure afterwards can only happen programmatically."
-msgstr "<emph>Hidden</emph>: če je <literal>True</literal>, odpre nov dokument v ozadju (privzeto = False). Pozor pri uporabi: kasnejša aktivacija in zapiranje se lahko izvedeta samo programsko."
+msgid "<emph>hidden</emph>: if <literal>True</literal>, open the new document in the background (default = <literal>False</literal>). To use with caution: activation or closure afterwards can only happen programmatically."
+msgstr "<emph>hidden</emph>: če je <literal>True</literal>, odpre nov dokument v ozadju (privzeto = <literal>False</literal>). Pozor pri uporabi: kasnejša aktivacija in zapiranje se lahko izvedeta samo programsko."
+
+#: sf_ui.xhp
+msgctxt ""
+"sf_ui.xhp\n"
+"par_id701620762417802\n"
+"help.text"
+msgid "In both examples below, the first call to <literal>CreateDocument</literal> method creates a blank Calc document, whereas the second creates a document from a template file."
+msgstr "V obeh spodnjih primerih prvi klic metode <literal>CreateDocument</literal> ustvari prazen dokument programa Calc, medtem ko drugi ustvari dokument iz datoteke predloge."
 
 #: sf_ui.xhp
 msgctxt ""
@@ -18510,8 +18814,16 @@ msgctxt ""
 "sf_ui.xhp\n"
 "par_id851588520551368\n"
 "help.text"
-msgid "<emph>WindowName</emph>: see the definitions above."
-msgstr "<emph>WindowName</emph>: glejte zgornje definicije."
+msgid "<emph>windowname</emph>: See the definitions <link href=\"text/sbasic/shared/03/sf_ui.xhp#WindowName\" name=\"WindowName section\">above</link>. If this argument is absent, the active window is used."
+msgstr "<emph>windowname</emph>: glejte <link href=\"text/sbasic/shared/03/sf_ui.xhp#WindowName\" name=\"Razdelek WindowName\">zgornje</link> definicije. Če argument ni podan, se uporabi trenutno dejavno okno."
+
+#: sf_ui.xhp
+msgctxt ""
+"sf_ui.xhp\n"
+"par_id521620330287071\n"
+"help.text"
+msgid "To access the name of the currently active window, refer to the <literal>ActiveWindow</literal> property."
+msgstr "Če želite dostopati do trenutno dejavnega okna, uporabite lastnost <literal>ActiveWindow</literal>."
 
 #: sf_ui.xhp
 msgctxt ""
@@ -18526,8 +18838,8 @@ msgctxt ""
 "sf_ui.xhp\n"
 "par_id951587986441954\n"
 "help.text"
-msgid "<emph>WindowName</emph>: see the definitions above. If the argument is absent, the active window is maximized."
-msgstr "<emph>WindowName</emph>: glejte zgornje definicije. Če argument ni podan, se poveča trenutno dejavno okno."
+msgid "<emph>windowname</emph>: see the definitions <link href=\"text/sbasic/shared/03/sf_ui.xhp#WindowName\" name=\"WindowName section\">above</link>. If this argument is absent, the active window is maximized."
+msgstr "<emph>windowname</emph>: glejte <link href=\"text/sbasic/shared/03/sf_ui.xhp#WindowName\" name=\"Razdelek WindowName\">zgornje</link> definicije. Če argument ni podan, se trenutno dejavno okno poveča."
 
 #: sf_ui.xhp
 msgctxt ""
@@ -18542,104 +18854,112 @@ msgctxt ""
 "sf_ui.xhp\n"
 "par_id751587986592626\n"
 "help.text"
-msgid "<emph>WindowName</emph>: see the definitions above. If the argument is absent, the active window is minimized."
-msgstr "<emph>WindowName</emph>: glejte zgornje definicije. Če argument ni podan, se pomanjša trenutno dejavno okno."
+msgid "<emph>windowname</emph>: see the definitions <link href=\"text/sbasic/shared/03/sf_ui.xhp#WindowName\" name=\"WindowName section\">above</link>. If this argument is absent, the active window is minimized."
+msgstr "<emph>windowname</emph>: glejte <link href=\"text/sbasic/shared/03/sf_ui.xhp#WindowName\" name=\"Razdelek WindowName\">zgornje</link> definicije. Če argument ni podan, se trenutno dejavno okno pomanjša."
 
 #: sf_ui.xhp
 msgctxt ""
 "sf_ui.xhp\n"
 "par_id691596555746539\n"
 "help.text"
-msgid "Open an existing LibreOffice Base document. The method returns a document object."
-msgstr "Odpre obstoječi dokument programa LibreOffice Base. Metoda vrne predmet dokumenta."
+msgid "Open an existing %PRODUCTNAME Base document. The method returns a document object."
+msgstr "Odpre obstoječi dokument programa %PRODUCTNAME Base. Metoda vrne predmet dokumenta."
 
 #: sf_ui.xhp
 msgctxt ""
 "sf_ui.xhp\n"
 "par_id231596555746385\n"
 "help.text"
-msgid "<emph>FileName</emph> : Identifies the file to open. It must follow the SF_FileSystem.FileNaming notation. If the file already exists, it is overwritten without warning"
-msgstr "<emph>FileName</emph>: ime datoteke, ki jo želite odpreti. Slediti mora obliki zapisa SF_FileSystem.FileNaming. Če datoteka že obstaja, bo prepisana brez opozorila."
+msgid "<emph>filename</emph> : Identifies the file to open. It must follow the SF_FileSystem.FileNaming notation. If the file already exists, it is overwritten without warning"
+msgstr "<emph>filename</emph>: ime datoteke, ki jo želite odpreti. Slediti mora obliki zapisa SF_FileSystem.FileNaming. Če datoteka že obstaja, bo prepisana brez opozorila."
 
 #: sf_ui.xhp
 msgctxt ""
 "sf_ui.xhp\n"
 "par_id711596555746281\n"
 "help.text"
-msgid "<emph>RegistrationName</emph> : The name to use to find the database in the databases register. It is ignored if <literal>FileName</literal> <> \"\"."
-msgstr "<emph>RegistrationName</emph>: ime za iskanje zbirke podatkov v registru zbirk podatkov. Prezrto, če je <literal>FileName</literal> <> \"\"."
+msgid "<emph>registrationname</emph> : The name to use to find the database in the databases register. It is ignored if <literal>FileName</literal> <> \"\"."
+msgstr "<emph>registrationname</emph>: ime za iskanje zbirke podatkov v registru zbirk podatkov. Prezrto, če je <literal>FileName</literal> <> \"\"."
 
 #: sf_ui.xhp
 msgctxt ""
 "sf_ui.xhp\n"
 "id721596556313545\n"
 "help.text"
-msgid "<emph>MacroExecution</emph>: 0 = behaviour is defined by the user configuration, 1 = macros are not executable, 2 = macros are executable."
-msgstr "<emph>MacroExecution</emph>: 0 = vedenje določa uporabniška prilagoditev, 1 = makrov ni možno izvajati, 2 = makre je možno izvajati."
+msgid "<emph>macroexecution</emph>: 0 = behaviour is defined by the user configuration, 1 = macros are not executable, 2 = macros are executable."
+msgstr "<emph>macroexecution</emph>: 0 = vedenje določa uporabniška prilagoditev, 1 = makrov ni možno izvajati, 2 = makre je možno izvajati."
+
+#: sf_ui.xhp
+msgctxt ""
+"sf_ui.xhp\n"
+"par_id941620762989833\n"
+"help.text"
+msgid "To improve code readability you can use <link href=\"text/sbasic/shared/03/sf_ui.xhp#Constants\" name=\"CHANGE ME\">predefined constants</link> for the <literal>macroexecution</literal> argument, as in the examples above."
+msgstr "Za izboljšanje berljivosti kode lahko uporabite <link href=\"text/sbasic/shared/03/sf_ui.xhp#Constants\" name=\"Vnaprej določene konstante\">vnaprej določene konstante</link> za argument <literal>macroexecution</literal>, kot je razvidno iz zgornjih primerov."
 
 #: sf_ui.xhp
 msgctxt ""
 "sf_ui.xhp\n"
 "par_id541588523635283\n"
 "help.text"
-msgid "Open an existing LibreOffice document with the given options. Returns a document object or one of its subclasses or <literal>Null</literal> if the opening failed, including when due to a user decision."
-msgstr "Odpre obstoječi dokument LibreOffice z danimi možnostmi. Vrne predmet dokumenta ali enega njegovih podrazredov ali <literal>Null</literal>, če odpiranje ni uspelo, tudi če je vzrok odločitev uporabnika."
+msgid "Opens an existing %PRODUCTNAME document with the given options. Returns a document object or one of its subclasses. The method returns <literal>Nothing</literal> (in Basic) / <literal>None</literal> (in Python) if the opening failed, even when the failure is caused by a user decision."
+msgstr "Odpre obstoječi dokument %PRODUCTNAME z danimi možnostmi. Vrne predmet dokumenta ali enega njegovih podrazredov. Metoda vrne <literal>Nothing</literal> (v Basicu) / <literal>None</literal> (v Pythonu), če odpiranje ni uspelo, tudi če je vzrok odločitev uporabnika."
 
 #: sf_ui.xhp
 msgctxt ""
 "sf_ui.xhp\n"
 "par_id481588523635890\n"
 "help.text"
-msgid "<emph>FileName</emph>: Identifies the file to open. It must follow the <literal>FileNaming</literal> notation of the <literal>FileSystem</literal> service."
-msgstr "<emph>FileName</emph>: ime datoteke, ki jo želite odpreti. Slediti mora pravilom zapisa <literal>FileNaming</literal> storitve <literal>FileSystem</literal>."
+msgid "<emph>filename</emph>: Identifies the file to open. It must follow the <literal>FileNaming</literal> notation of the <literal>FileSystem</literal> service."
+msgstr "<emph>filename</emph>: ime datoteke, ki jo želite odpreti. Slediti mora pravilom zapisa <literal>FileNaming</literal> storitve <literal>FileSystem</literal>."
 
 #: sf_ui.xhp
 msgctxt ""
 "sf_ui.xhp\n"
 "par_id451588523635507\n"
 "help.text"
-msgid "<emph>Password</emph>: To use when the document is protected. If wrong or absent while the document is protected, the user will be prompted to enter a password."
-msgstr "<emph>Password</emph>: geslo, potrebno za odpiranje, če je dokument zaščiten. Če je napačno ali ni prisotno, ko je dokument zaščiten, bo uporabnik povprašan za vnos gesla."
+msgid "<emph>password</emph>: To use when the document is protected. If wrong or absent while the document is protected, the user will be prompted to enter a password."
+msgstr "<emph>password</emph>: geslo, potrebno za odpiranje, če je dokument zaščiten. Če je napačno ali ni prisotno, ko je dokument zaščiten, bo uporabnik povprašan za vnos gesla."
 
 #: sf_ui.xhp
 msgctxt ""
 "sf_ui.xhp\n"
 "par_id611588524329781\n"
 "help.text"
-msgid "<emph>ReadOnly</emph>: Default = <literal>False</literal>."
-msgstr "<emph>ReadOnly</emph>: določa, ali je dokument namenjen samo branju, privzeto = <literal>False</literal>."
+msgid "<emph>readonly</emph>: Default = <literal>False</literal>."
+msgstr "<emph>readonly</emph>: določa, ali je dokument namenjen samo branju, privzeto = <literal>False</literal>."
 
 #: sf_ui.xhp
 msgctxt ""
 "sf_ui.xhp\n"
 "par_id641588523635497\n"
 "help.text"
-msgid "<emph>Hidden</emph>: if <literal>True</literal>, open the new document in the background (default = False). To use with caution: activation or closure afterwards can only happen programmatically."
-msgstr "<emph>Hidden</emph>: če je <literal>True</literal>, odpre nov dokument v ozadju (privzeto = False). Pozor pri uporabi: kasnejša aktivacija in zapiranje se lahko izvedeta samo programsko."
+msgid "<emph>hidden</emph>: if <literal>True</literal>, open the new document in the background (default = <literal>False</literal>). To use with caution: activation or closure afterwards can only happen programmatically."
+msgstr "<emph>hidden</emph>: če je <literal>True</literal>, odpre nov dokument v ozadju (privzeto = <literal>False</literal>). Pozor pri uporabi: kasnejša aktivacija in zapiranje se lahko izvedeta samo programsko."
 
 #: sf_ui.xhp
 msgctxt ""
 "sf_ui.xhp\n"
 "par_id981588524474719\n"
 "help.text"
-msgid "<emph>MacroExecution</emph>: 0 = behaviour is defined by the user configuration, 1 = macros are not executable, 2 = macros are executable."
-msgstr "<emph>MacroExecution</emph>: 0 = vedenje določa uporabniška prilagoditev, 1 = makrov ni možno izvajati, 2 = makre je možno izvajati."
+msgid "<emph>macroexecution</emph>: 0 = behaviour is defined by the user configuration, 1 = macros are not executable, 2 = macros are executable."
+msgstr "<emph>macroexecution</emph>: 0 = vedenje določa uporabniška prilagoditev, 1 = makrov ni možno izvajati, 2 = makre je možno izvajati."
 
 #: sf_ui.xhp
 msgctxt ""
 "sf_ui.xhp\n"
 "par_id611588524584693\n"
 "help.text"
-msgid "<emph>FilterName</emph>: The name of a filter that should be used for loading the document. If present, the filter must exist."
-msgstr "<emph>FilterName</emph>: ime filtra, ki naj bo uporabljen za nalaganje dokumenta. Če ta argument podate, mora filter obstajati."
+msgid "<emph>filtername</emph>: The name of a filter that should be used for loading the document. If present, the filter must exist."
+msgstr "<emph>filtername</emph>: ime filtra, ki naj bo uporabljen za nalaganje dokumenta. Če ta argument podate, mora filter obstajati."
 
 #: sf_ui.xhp
 msgctxt ""
 "sf_ui.xhp\n"
 "par_id191588524634348\n"
 "help.text"
-msgid "<emph>FilterOptions</emph>: An optional string of options associated with the filter."
-msgstr "<emph>FilterOptions</emph>: neobvezen niz možnosti, povezanih s filtrom."
+msgid "<emph>filteroptions</emph>: An optional string of options associated with the filter."
+msgstr "<emph>filteroptions</emph>: neobvezen niz možnosti, povezanih s filtrom."
 
 #: sf_ui.xhp
 msgctxt ""
@@ -18654,24 +18974,40 @@ msgctxt ""
 "sf_ui.xhp\n"
 "par_id441587986945696\n"
 "help.text"
-msgid "<emph>Left, Top</emph>: Distances of the top-left corner from top and left edges of the screen."
-msgstr "<emph>Left, Top</emph>: razdalje levega vrhnjega kota od levega in vrhnjega roba zaslona."
+msgid "<emph>left, top</emph>: Distances of the top-left corner from top and left edges of the screen, in pixels."
+msgstr "<emph>left, top</emph>: razdalje levega vrhnjega kota od levega in vrhnjega roba zaslona, v slikovnih točkah."
 
 #: sf_ui.xhp
 msgctxt ""
 "sf_ui.xhp\n"
 "par_id601587987453825\n"
 "help.text"
-msgid "<emph>Width, Height</emph>: New dimensions of the window."
-msgstr "<emph>Width, Height</emph>: nove mere okna."
+msgid "<emph>width, height</emph>: New dimensions of the window, in pixels."
+msgstr "<emph>width, height</emph>: nove mere okna, v slikovnih točkah."
 
 #: sf_ui.xhp
 msgctxt ""
 "sf_ui.xhp\n"
-"bas_id801587987507028\n"
+"par_id801587987507028\n"
 "help.text"
-msgid "' Top and Height are left unchanged"
-msgstr "' Top in Height ostaneta nespremenjena"
+msgid "In the following examples, the <literal>width</literal> and <literal>height</literal> of the window are changed while <literal>top</literal> and <literal>left</literal> are left unchanged."
+msgstr "V naslednjih primerih se <literal>width</literal> in <literal>height</literal> okna se spremenita, <literal>top</literal> in <literal>left</literal> pa ostaneta nespremenjena."
+
+#: sf_ui.xhp
+msgctxt ""
+"sf_ui.xhp\n"
+"pyc_id971620331945744\n"
+"help.text"
+msgid "svcUI.Resize(width = 500, height = 500)"
+msgstr "svcUI.Resize(width = 500, height = 500)"
+
+#: sf_ui.xhp
+msgctxt ""
+"sf_ui.xhp\n"
+"par_id21620332301809\n"
+"help.text"
+msgid "To resize a window that is not active, first activate it using the <literal>Activate</literal> method."
+msgstr "Če želite spremeniti mere okna, ki ni dejavno, ga najprej aktivirajte z metodo <literal>Activate</literal>."
 
 #: sf_ui.xhp
 msgctxt ""
@@ -18686,48 +19022,112 @@ msgctxt ""
 "sf_ui.xhp\n"
 "par_id71587996421829\n"
 "help.text"
-msgid "<emph>Text</emph>: An optional text to be displayed in front of the progress bar."
-msgstr "<emph>Text</emph>: neobvezno besedilo, prikazano pred vrstico napredka."
+msgid "<emph>text</emph>: An optional text to be displayed in front of the progress bar."
+msgstr "<emph>text</emph>: neobvezno besedilo, prikazano pred vrstico napredka."
 
 #: sf_ui.xhp
 msgctxt ""
 "sf_ui.xhp\n"
 "par_id881587996421777\n"
 "help.text"
-msgid "<emph>Percentage</emph>: an optional degree of progress between 0 and 100."
-msgstr "<emph>Percentage</emph>: neobvezna stopnja napredka med 0 in 100 (odstotek)."
+msgid "<emph>percentage</emph>: an optional degree of progress between 0 and 100."
+msgstr "<emph>percentage</emph>: neobvezna stopnja napredka med 0 in 100 (odstotek)."
+
+#: sf_ui.xhp
+msgctxt ""
+"sf_ui.xhp\n"
+"bas_id651620332601083\n"
+"help.text"
+msgid "' Resets the statusbar"
+msgstr "' Ponastavi vrstico stanja"
+
+#: sf_ui.xhp
+msgctxt ""
+"sf_ui.xhp\n"
+"pyc_id631620332653004\n"
+"help.text"
+msgid "from time import sleep"
+msgstr "from time import sleep"
+
+#: sf_ui.xhp
+msgctxt ""
+"sf_ui.xhp\n"
+"pyc_id351620332422330\n"
+"help.text"
+msgid "for i in range(101):"
+msgstr "for i in range(101):"
+
+#: sf_ui.xhp
+msgctxt ""
+"sf_ui.xhp\n"
+"bas_id261620332627647\n"
+"help.text"
+msgid "svcUI.SetStatusbar(\"Test:\", i)"
+msgstr "svcUI.SetStatusbar(\"Preizkus:\", i)"
+
+#: sf_ui.xhp
+msgctxt ""
+"sf_ui.xhp\n"
+"pyc_id181620332715974\n"
+"help.text"
+msgid "sleep(0.05)"
+msgstr "sleep(0.05)"
+
+#: sf_ui.xhp
+msgctxt ""
+"sf_ui.xhp\n"
+"pyc_id381620332733373\n"
+"help.text"
+msgid "svcUI.SetStatusbar()"
+msgstr "svcUI.SetStatusbar()"
 
 #: sf_ui.xhp
 msgctxt ""
 "sf_ui.xhp\n"
 "par_id571598864255776\n"
 "help.text"
-msgid "Display a non-modal dialog box. Specify its title, an explicatory text and a percentage of progress represented on a progressbar. The box will remain visible until a call to the method without argument, or until the end of the currently running macro."
-msgstr "Prikaže glavno, nepodrejeno oz. ne-modalno okno. Določa njegov naslov, razlagalno besedilo in odstotek napredka, predstavljen v stolpcu napredka. Okno ostane vidno do klica metode brez argumenta ali do konca izvajanja trenutnega makra."
+msgid "Displays a non-modal dialog box. Specify its title, an explicatory text and a percentage of progress to be represented on a progressbar. The dialog will remain visible until a call to the method without arguments or until the user manually closes the dialog."
+msgstr "Prikaže glavno, nepodrejeno oz. ne-modalno okno. Določa njegov naslov, razlagalno besedilo in odstotek napredka, predstavljen v vrstici napredka. Pogovorno okno ostane vidno do klica metode brez argumenta ali do uporabnikovega ročnega zaprtja pogovornega okna."
 
 #: sf_ui.xhp
 msgctxt ""
 "sf_ui.xhp\n"
 "par_id441598864535695\n"
 "help.text"
-msgid "<emph>Title</emph> : The title appearing on top of the dialog box. Default = \"ScriptForge\"."
-msgstr "<emph>Title</emph>: naslov, ki se pojavi na vrhu pogovornega okna. Privzeto = \"ScriptForge\"."
+msgid "<emph>title</emph> : The title appearing on top of the dialog box. Default = \"ScriptForge\"."
+msgstr "<emph>title</emph>: naslov, ki se pojavi na vrhu pogovornega okna. Privzeto = \"ScriptForge\"."
 
 #: sf_ui.xhp
 msgctxt ""
 "sf_ui.xhp\n"
 "par_id311598864255297\n"
 "help.text"
-msgid "<emph>Text</emph>: An optional text to be displayed above the progress bar."
-msgstr "<emph>Text</emph>: neobvezno besedilo, prikazano nad vrstico napredka."
+msgid "<emph>text</emph>: An optional text to be displayed above the progress bar."
+msgstr "<emph>text</emph>: neobvezno besedilo, prikazano nad vrstico napredka."
 
 #: sf_ui.xhp
 msgctxt ""
 "sf_ui.xhp\n"
 "par_id881598864255424\n"
 "help.text"
-msgid "<emph>Percentage</emph>: an optional degree of progress between 0 and 100."
-msgstr "<emph>Percentage</emph>: neobvezna stopnja napredka med 0 in 100 (odstotek)."
+msgid "<emph>percentage</emph>: an optional degree of progress between 0 and 100."
+msgstr "<emph>percentage</emph>: neobvezna stopnja napredka med 0 in 100 (odstotek)."
+
+#: sf_ui.xhp
+msgctxt ""
+"sf_ui.xhp\n"
+"bas_id651620333289753\n"
+"help.text"
+msgid "' Closes the Progress Bar window"
+msgstr "' Zapre okno vrstice napredka"
+
+#: sf_ui.xhp
+msgctxt ""
+"sf_ui.xhp\n"
+"pyc_id761620333269236\n"
+"help.text"
+msgid "# Closes the Progress Bar window"
+msgstr "# Zapre okno vrstice napredka"
 
 #: sf_ui.xhp
 msgctxt ""
@@ -18742,5 +19142,21 @@ msgctxt ""
 "sf_ui.xhp\n"
 "par_id45158858711917\n"
 "help.text"
-msgid "<emph>WindowName</emph>: see the definitions above."
-msgstr "<emph>WindowName</emph>: glejte zgornje definicije."
+msgid "<emph>windowname</emph>: see the definitions above."
+msgstr "<emph>windowname</emph>: glejte zgornje definicije."
+
+#: sf_ui.xhp
+msgctxt ""
+"sf_ui.xhp\n"
+"pyc_id441620333481074\n"
+"help.text"
+msgid "if svcUI.WindowExists(r\"C:\\Document\\My file.odt\"):"
+msgstr "if svcUI.WindowExists(r\"C:\\Dokument\\MojaDatoteka.odt\"):"
+
+#: sf_ui.xhp
+msgctxt ""
+"sf_ui.xhp\n"
+"pyc_id801620333495532\n"
+"help.text"
+msgid "# ..."
+msgstr "# ..."

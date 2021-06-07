@@ -3,14 +3,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: LibreOffice 7.2\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2021-05-03 13:24+0200\n"
-"PO-Revision-Date: 2021-04-22 21:55+0200\n"
+"POT-Creation-Date: 2021-06-02 12:02+0200\n"
+"PO-Revision-Date: 2021-06-06 15:05+0200\n"
 "Last-Translator: Martin Srebotnjak <miles@filmsi.net>\n"
 "Language-Team: sl.libreoffice.org\n"
+"Language: sl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: sl\n"
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n%100==4 ? 2 : 3);\n"
 "X-Generator: Virtaal 0.7.1\n"
 "X-Accelerator-Marker: ~\n"
@@ -1888,7 +1888,7 @@ msgstr "Osnovni izrek infinitezimalnega računa"
 #: starmath/inc/strings.hrc:328
 msgctxt "RID_EXAMPLE_CHAOS_HELP"
 msgid "Chaos equation"
-msgstr "Teorija kaosa"
+msgstr "Enačba s koeficientom Ljapunova (teorija kaosa)"
 
 #: starmath/inc/strings.hrc:329
 msgctxt "RID_EXAMPLE_EULER_IDENTITY_HELP"
@@ -2033,7 +2033,7 @@ msgstr "oranžno rdeča"
 #: starmath/inc/strings.hrc:358
 msgctxt "STR_LAVENDER"
 msgid "lavender"
-msgstr "Sivka"
+msgstr "sivkina"
 
 #: starmath/inc/strings.hrc:359
 msgctxt "STR_SNOW"
@@ -2043,7 +2043,7 @@ msgstr "sneg"
 #: starmath/inc/strings.hrc:360
 msgctxt "STR_SEAGREEN"
 msgid "seagreen"
-msgstr "zelena"
+msgstr "morsko zelena"
 
 #: starmath/inc/strings.hrc:361
 msgctxt "STR_INDIGO"
@@ -2640,37 +2640,72 @@ msgctxt "printeroptions|title"
 msgid "Title"
 msgstr "Naslov"
 
-#: starmath/uiconfig/smath/ui/printeroptions.ui:50
+#: starmath/uiconfig/smath/ui/printeroptions.ui:43
+msgctxt "printeroptions|extended_tip|title"
+msgid "Specifies whether you want the name of the document to be included in the printout."
+msgstr "Določa, ali želite, da je ime dokumenta vključeno v izpis."
+
+#: starmath/uiconfig/smath/ui/printeroptions.ui:55
 msgctxt "printeroptions|formulatext"
 msgid "Formula text"
 msgstr "Besedilo formule"
 
-#: starmath/uiconfig/smath/ui/printeroptions.ui:65
+#: starmath/uiconfig/smath/ui/printeroptions.ui:63
+msgctxt "printeroptions|extended_tip|formulatext"
+msgid "Specifies whether to include the contents of the Commands window at the bottom of the printout."
+msgstr "Določa, ali naj bo vsebina okna Ukazi vključena na dnu izpisa."
+
+#: starmath/uiconfig/smath/ui/printeroptions.ui:75
 msgctxt "printeroptions|borders"
 msgid "Borders"
 msgstr "Obrobe"
 
-#: starmath/uiconfig/smath/ui/printeroptions.ui:84
+#: starmath/uiconfig/smath/ui/printeroptions.ui:83
+msgctxt "printeroptions|extended_tip|borders"
+msgid "Applies a thin border to the formula area in the printout."
+msgstr "Pri izpisu območje formule tanko obrobi."
+
+#: starmath/uiconfig/smath/ui/printeroptions.ui:99
 msgctxt "printeroptions|label4"
 msgid "Contents"
 msgstr "Vsebina"
 
-#: starmath/uiconfig/smath/ui/printeroptions.ui:113
+#: starmath/uiconfig/smath/ui/printeroptions.ui:128
 msgctxt "printeroptions|originalsize"
 msgid "Original size"
 msgstr "Izvirna velikost"
 
-#: starmath/uiconfig/smath/ui/printeroptions.ui:129
+#: starmath/uiconfig/smath/ui/printeroptions.ui:137
+msgctxt "printeroptions|extended_tip|originalsize"
+msgid "Prints the formula without adjusting the current font size."
+msgstr "Natisne formulo brez prilagajanja trenutne velikosti pisave."
+
+#: starmath/uiconfig/smath/ui/printeroptions.ui:149
 msgctxt "printeroptions|fittopage"
 msgid "Fit to page"
 msgstr "Prilagodi strani"
 
-#: starmath/uiconfig/smath/ui/printeroptions.ui:150
+#: starmath/uiconfig/smath/ui/printeroptions.ui:158
+msgctxt "printeroptions|extended_tip|fittopage"
+msgid "Adjusts the formula to the page format used in the printout."
+msgstr "Formulo prilagodi obliki strani, uporabljeni pri izpisu."
+
+#: starmath/uiconfig/smath/ui/printeroptions.ui:175
 msgctxt "printeroptions|scaling"
 msgid "Scaling:"
 msgstr "Spreminjanje merila:"
 
-#: starmath/uiconfig/smath/ui/printeroptions.ui:190
+#: starmath/uiconfig/smath/ui/printeroptions.ui:184
+msgctxt "printeroptions|extended_tip|scaling"
+msgid "Reduces or enlarges the size of the printed formula by a specified factor."
+msgstr "Pomanjša ali poveča velikost natisnjene formule z navedenim faktorjem povečave."
+
+#: starmath/uiconfig/smath/ui/printeroptions.ui:202
+msgctxt "printeroptions|extended_tip|scalingspim"
+msgid "Enter the scale factor for scaling the formula."
+msgstr "Vnesite faktor povečave za spremembo merila formule."
+
+#: starmath/uiconfig/smath/ui/printeroptions.ui:225
 msgctxt "printeroptions|label5"
 msgid "Size"
 msgstr "Velikost"
@@ -2690,107 +2725,118 @@ msgctxt "savedefaultsdialog|SaveDefaultsDialog"
 msgid "These changes will apply for all new formulas."
 msgstr "Te spremembe bodo veljale za vse nove formule."
 
-#: starmath/uiconfig/smath/ui/smathsettings.ui:35
+#: starmath/uiconfig/smath/ui/smathsettings.ui:41
 msgctxt "smathsettings|title"
 msgid "_Title row"
 msgstr "_Naslovna vrstica"
 
-#: starmath/uiconfig/smath/ui/smathsettings.ui:43
+#: starmath/uiconfig/smath/ui/smathsettings.ui:49
 msgctxt "extended_tip|title"
 msgid "Specifies whether you want the name of the document to be included in the printout."
 msgstr "Določa, ali želite, da je ime dokumenta vključeno v izpis."
 
-#: starmath/uiconfig/smath/ui/smathsettings.ui:55
+#: starmath/uiconfig/smath/ui/smathsettings.ui:61
 msgctxt "smathsettings|text"
 msgid "_Formula text"
 msgstr "Besedilo _formule"
 
-#: starmath/uiconfig/smath/ui/smathsettings.ui:63
+#: starmath/uiconfig/smath/ui/smathsettings.ui:69
 msgctxt "extended_tip|text"
 msgid "Specifies whether to include the contents of the Commands window at the bottom of the printout."
 msgstr "Določa, ali naj bo vsebina okna Ukazi vključena na dnu izpisa."
 
-#: starmath/uiconfig/smath/ui/smathsettings.ui:75
+#: starmath/uiconfig/smath/ui/smathsettings.ui:81
 msgctxt "smathsettings|frame"
 msgid "B_order"
 msgstr "_Obroba"
 
-#: starmath/uiconfig/smath/ui/smathsettings.ui:83
+#: starmath/uiconfig/smath/ui/smathsettings.ui:89
 msgctxt "extended_tip|frame"
 msgid "Applies a thin border to the formula area in the printout."
 msgstr "Pri izpisu območje formule tanko obrobi."
 
-#: starmath/uiconfig/smath/ui/smathsettings.ui:99
+#: starmath/uiconfig/smath/ui/smathsettings.ui:105
 msgctxt "smathsettings|label4"
 msgid "Print Options"
 msgstr "Možnosti tiskanja"
 
-#: starmath/uiconfig/smath/ui/smathsettings.ui:129
+#: starmath/uiconfig/smath/ui/smathsettings.ui:135
 msgctxt "smathsettings|sizenormal"
 msgid "O_riginal size"
 msgstr "Velikost izvi_rnika"
 
-#: starmath/uiconfig/smath/ui/smathsettings.ui:138
+#: starmath/uiconfig/smath/ui/smathsettings.ui:144
 msgctxt "extended_tip|sizenormal"
 msgid "Prints the formula without adjusting the current font size."
 msgstr "Natisne formulo brez prilagajanja trenutne velikosti pisave."
 
-#: starmath/uiconfig/smath/ui/smathsettings.ui:150
+#: starmath/uiconfig/smath/ui/smathsettings.ui:156
 msgctxt "smathsettings|sizescaled"
 msgid "Fit to _page"
 msgstr "Prilagodi s_trani"
 
-#: starmath/uiconfig/smath/ui/smathsettings.ui:159
+#: starmath/uiconfig/smath/ui/smathsettings.ui:165
 msgctxt "extended_tip|sizescaled"
 msgid "Adjusts the formula to the page format used in the printout."
 msgstr "Formulo prilagodi obliki strani, uporabljeni pri izpisu."
 
-#: starmath/uiconfig/smath/ui/smathsettings.ui:176
+#: starmath/uiconfig/smath/ui/smathsettings.ui:182
 msgctxt "smathsettings|sizezoomed"
 msgid "_Scaling:"
-msgstr "_Spreminjanje merila:"
+msgstr "_Sprememba merila:"
 
-#: starmath/uiconfig/smath/ui/smathsettings.ui:199
+#: starmath/uiconfig/smath/ui/smathsettings.ui:205
 msgctxt "extended_tip|zoom"
 msgid "Reduces or enlarges the size of the printed formula by a specified enlargement factor."
 msgstr "Pomanjša ali poveča velikost natisnjene formule z navedenim faktorjem povečave."
 
-#: starmath/uiconfig/smath/ui/smathsettings.ui:222
+#: starmath/uiconfig/smath/ui/smathsettings.ui:228
 msgctxt "smathsettings|label5"
 msgid "Print Format"
 msgstr "Oblika tiskanja"
 
-#: starmath/uiconfig/smath/ui/smathsettings.ui:251
+#: starmath/uiconfig/smath/ui/smathsettings.ui:257
 msgctxt "smathsettings|norightspaces"
 msgid "Ig_nore ~~ and ' at the end of the line"
 msgstr "Pre_zri ~~ in ' na koncu vrstice"
 
-#: starmath/uiconfig/smath/ui/smathsettings.ui:259
+#: starmath/uiconfig/smath/ui/smathsettings.ui:265
 msgctxt "extended_tip|norightspaces"
 msgid "Specifies that these space wildcards will be removed if they are at the end of a line."
 msgstr "Določa, da bodo ti nadomestni znaki za presledek odstranjeni, če so na koncu vrstice."
 
-#: starmath/uiconfig/smath/ui/smathsettings.ui:271
+#: starmath/uiconfig/smath/ui/smathsettings.ui:277
 msgctxt "smathsettings|saveonlyusedsymbols"
 msgid "Embed only used symbols (smaller file size)"
 msgstr "Vdelaj le uporabljene simbole (manjša velikost datoteke)"
 
-#: starmath/uiconfig/smath/ui/smathsettings.ui:279
+#: starmath/uiconfig/smath/ui/smathsettings.ui:285
 msgctxt "extended_tip|saveonlyusedsymbols"
 msgid "Saves only those symbols with each formula that are used in that formula."
 msgstr "S formulo shrani samo tiste simbole, ki so v formuli uporabljeni."
 
-#: starmath/uiconfig/smath/ui/smathsettings.ui:291
+#: starmath/uiconfig/smath/ui/smathsettings.ui:297
 msgctxt "smathsettings|autoclosebrackets"
 msgid "Auto close brackets, parentheses and braces"
 msgstr "Samozaključi oklepaje in narekovaje"
 
-#: starmath/uiconfig/smath/ui/smathsettings.ui:310
+#: starmath/uiconfig/smath/ui/smathsettings.ui:321
+msgctxt "smathsettings|smzoom"
+msgid "Scaling code input window:"
+msgstr "Sprememba merila vnosnega okna kode:"
+
+#: starmath/uiconfig/smath/ui/smathsettings.ui:337
+#: starmath/uiconfig/smath/ui/smathsettings.ui:340
+msgctxt "extended_tip|smzoom"
+msgid "Reduces or enlarges the size of the formula code by a specified enlargement factor."
+msgstr "Pomanjša ali poveča velikost kode formule z navedenim faktorjem povečave."
+
+#: starmath/uiconfig/smath/ui/smathsettings.ui:363
 msgctxt "smathsettings|label1"
 msgid "Miscellaneous Options"
 msgstr "Razne možnosti"
 
-#: starmath/uiconfig/smath/ui/smathsettings.ui:325
+#: starmath/uiconfig/smath/ui/smathsettings.ui:378
 msgctxt "extended_tip|SmathSettings"
 msgid "Defines formula settings that will be valid for all documents."
 msgstr "Določa nastavitve za formule, ki veljajo za vse dokumente."
