@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: LibreOffice 7.2\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2021-06-02 12:02+0200\n"
-"PO-Revision-Date: 2021-06-06 17:57+0200\n"
+"POT-Creation-Date: 2021-06-11 13:43+0200\n"
+"PO-Revision-Date: 2021-06-12 09:19+0200\n"
 "Last-Translator: Martin Srebotnjak <miles@filmsi.net>\n"
 "Language-Team: sl.libreoffice.org\n"
 "Language: sl\n"
@@ -2063,7 +2063,7 @@ msgctxt ""
 "par_id281619033570656\n"
 "help.text"
 msgid "The <literal>Base</literal> service can also be instantiated while opening an existing Base file, as shown below:"
-msgstr "Storitev <literal>Base</literal> lahko instancirate z odpiranjem obstoječe datoteke programa Base, kot je prikazano spodaj:"
+msgstr "Instanco storitve <literal>Base</literal> lahko tvorite z odpiranjem obstoječe datoteke programa Base, kot je prikazano spodaj:"
 
 #: sf_base.xhp
 msgctxt ""
@@ -2071,7 +2071,15 @@ msgctxt ""
 "par_id331619033713781\n"
 "help.text"
 msgid "If a Base document is already open, it is possible to instantiate the <literal>Base</literal> service directly:"
-msgstr "Če je dokument programa Base že odprt, lahko storitev <literal>Base</literal> instancirate neposredno:"
+msgstr "Če je dokument programa Base že odprt, lahko instanco storitve <literal>Base</literal> tvorite neposredno:"
+
+#: sf_base.xhp
+msgctxt ""
+"sf_base.xhp\n"
+"par_id871623102536956\n"
+"help.text"
+msgid "The examples above can be translated to Python as follows:"
+msgstr "Zgornje primere lahko prevedemo v Python na sledeč način:"
 
 #: sf_base.xhp
 msgctxt ""
@@ -2104,6 +2112,46 @@ msgctxt ""
 "help.text"
 msgid "The code snippet below prints the names of all form documents in the current Base document."
 msgstr "Spodnji odlomek kode natisne imena vseh dokumentov obrazca v trenutnem dokumentu programa Base."
+
+#: sf_base.xhp
+msgctxt ""
+"sf_base.xhp\n"
+"pyc_id691623103639534\n"
+"help.text"
+msgid "bas = CreateScriptService(\"Basic\")"
+msgstr "bas = CreateScriptService(\"Basic\")"
+
+#: sf_base.xhp
+msgctxt ""
+"sf_base.xhp\n"
+"pyc_id101623103639206\n"
+"help.text"
+msgid "doc = CreateScriptService(\"Document\", bas.ThisDataBaseDocument)"
+msgstr "doc = CreateScriptService(\"Dokument\", bas.ThisDataBaseDocument)"
+
+#: sf_base.xhp
+msgctxt ""
+"sf_base.xhp\n"
+"pyc_id901623103639390\n"
+"help.text"
+msgid "myForms = oDoc.FormDocuments()"
+msgstr "mojiObrazci = oDoc.FormDocuments()"
+
+#: sf_base.xhp
+msgctxt ""
+"sf_base.xhp\n"
+"pyc_id791623103639701\n"
+"help.text"
+msgid "for formName in myForms:"
+msgstr "for imeObrazca in mojiObrazci:"
+
+#: sf_base.xhp
+msgctxt ""
+"sf_base.xhp\n"
+"pyc_id741623103639861\n"
+"help.text"
+msgid "bas.MsgBox(formName)"
+msgstr "bas.MsgBox(imeObrazca)"
 
 #: sf_base.xhp
 msgctxt ""
@@ -2142,16 +2190,16 @@ msgctxt ""
 "sf_base.xhp\n"
 "par_id861619037838260\n"
 "help.text"
-msgid "<emph>FormDocument:</emph> The name of a valid form document as a case-sensitive string."
-msgstr "<emph>FormDocument:</emph> ime veljavnega dokumenta obrazca, razlikuje med velikimi in malimi črkami."
+msgid "<emph>formdocument:</emph> The name of a valid form document as a case-sensitive string."
+msgstr "<emph>formdocument:</emph> ime veljavnega dokumenta obrazca, razlikuje med velikimi in malimi črkami."
 
 #: sf_base.xhp
 msgctxt ""
 "sf_base.xhp\n"
 "par_id281619037857187\n"
 "help.text"
-msgid "<emph>Form:</emph> The name or index number of the form stored in the form document. If this argument is absent, the method will return a list with the names of all forms available in the form document."
-msgstr "<emph>Form:</emph> ime ali številka indeksa obrazca, shranjenega v dokumentu obrazca. Če ta argument ni podan, metoda vrne seznam z imeni vseh obrazcev, ki so na voljo v dokumentu obrazca."
+msgid "<emph>form:</emph> The name or index number of the form stored in the form document. If this argument is absent, the method will return a list with the names of all forms available in the form document."
+msgstr "<emph>form:</emph> ime ali številka indeksa obrazca, shranjenega v dokumentu obrazca. Če ta argument ni podan, metoda vrne seznam z imeni vseh obrazcev, ki so na voljo v dokumentu obrazca."
 
 #: sf_base.xhp
 msgctxt ""
@@ -2164,18 +2212,10 @@ msgstr "Čeprav lahko uporabite številke indeksa za sklic na obrazce, je to pri
 #: sf_base.xhp
 msgctxt ""
 "sf_base.xhp\n"
-"bas_id231619200162092\n"
+"par_id21623104676805\n"
 "help.text"
-msgid "' Returns a list of all forms in the form document \"myFormDocument\""
-msgstr "' Vrne seznam vseh obrazcev v dokumentu obrazca »mojDokumentObrazca«"
-
-#: sf_base.xhp
-msgctxt ""
-"sf_base.xhp\n"
-"bas_id31619200259812\n"
-"help.text"
-msgid "' Returns an instance of the Form service representing the form \"myForm\""
-msgstr "' Vrne instanco storitve Form, ki predstavlja obrazec »myForm«"
+msgid "The first line of the example below returns a list of all forms in the form document \"myFormDocument\". The second line returns an instance of the Form service representing the form \"myForm\"."
+msgstr "Prva vrstica zgornjega primera vrne seznam vseh obrazcev v dokumentu obrazca »myFormDocument«. Druga vrstica vrne instanco storitve Form, ki predstavlja obrazec »mojObrazec«."
 
 #: sf_base.xhp
 msgctxt ""
@@ -2190,8 +2230,8 @@ msgctxt ""
 "sf_base.xhp\n"
 "par_id731619098073221\n"
 "help.text"
-msgid "<emph>User, Password:</emph> Optional login parameters as strings. The default value for both parameters is an empty string \"\"."
-msgstr "<emph>User, Password</emph>: neobvezna parametra prijave kot niza (uporabniško ime in geslo). Privzeta vrednost obeh parametrov je prazen niz »«."
+msgid "<emph>user, password:</emph> Optional login parameters as strings. The default value for both parameters is an empty string \"\"."
+msgstr "<emph>user, password</emph>: neobvezna parametra prijave kot niza (uporabniško ime in geslo). Privzeta vrednost obeh parametrov je prazen niz »«."
 
 #: sf_base.xhp
 msgctxt ""
@@ -2212,6 +2252,14 @@ msgstr "'   ... Izvedite poizvedbe, ukaze SQL ..."
 #: sf_base.xhp
 msgctxt ""
 "sf_base.xhp\n"
+"pyc_id351623104861223\n"
+"help.text"
+msgid "'   ... Run queries, SQL statements, ..."
+msgstr "'   ... Izvedite poizvedbe, ukaze SQL ..."
+
+#: sf_base.xhp
+msgctxt ""
+"sf_base.xhp\n"
 "par_id871619098478513\n"
 "help.text"
 msgid "Returns <literal>True</literal> if the specified <literal>FormDocument</literal> is  currently open."
@@ -2222,8 +2270,8 @@ msgctxt ""
 "sf_base.xhp\n"
 "par_id981619098545701\n"
 "help.text"
-msgid "<emph>FormDocument:</emph> The name of a FormDocument to be checked, as a case-sensitive string."
-msgstr "<emph>FormDocument:</emph> ime FormDocument, ki ga je potrebno preveriti, razlikuje med velikimi in malimi črkami."
+msgid "<emph>formdocument:</emph> The name of a <literal>FormDocument</literal> to be checked, as a case-sensitive string."
+msgstr "<emph>formdocument:</emph> ime <literal>formdocument</literal>, ki ga želite preveriti, razlikuje med velikimi in malimi črkami."
 
 #: sf_base.xhp
 msgctxt ""
@@ -2246,16 +2294,16 @@ msgctxt ""
 "sf_base.xhp\n"
 "par_id941619099797810\n"
 "help.text"
-msgid "<emph>FormDocument:</emph> The name of the <literal>FormDocument</literal> to be opened, as a case-sensitive string."
-msgstr "<emph>FormDocument:</emph> ime <literal>FormDocument</literal>, ki ga želite odpreti, razlikuje med velikimi in malimi črkami."
+msgid "<emph>formDocument:</emph> The name of the <literal>FormDocument</literal> to be opened, as a case-sensitive string."
+msgstr "<emph>formDocument:</emph> ime <literal>formDocument</literal>, ki ga želite odpreti, razlikuje med velikimi in malimi črkami."
 
 #: sf_base.xhp
 msgctxt ""
 "sf_base.xhp\n"
 "par_id981619099816849\n"
 "help.text"
-msgid "<emph>DesignMode:</emph> If this argument is <literal>True</literal> the <literal>FormDocument</literal> will be opened in design mode."
-msgstr "<emph>DesignMode:</emph> če ima ta argument vrednost <literal>True</literal>, bo <literal>FormDocument</literal> odprt v oblikovalnem načinu."
+msgid "<emph>designmode:</emph> If this argument is <literal>True</literal> the <literal>FormDocument</literal> will be opened in design mode."
+msgstr "<emph>designmode:</emph> če ima ta argument vrednost <literal>True</literal>, bo <literal>FormDocument</literal> odprt v oblikovalnem načinu."
 
 #: sf_base.xhp
 msgctxt ""
@@ -2550,8 +2598,8 @@ msgctxt ""
 "sf_basic.xhp\n"
 "par_id541619006255653\n"
 "help.text"
-msgid "<link href=\"text/sbasic/shared/stardesktop.xhp\" name=\"StarDesktop\"><literal>StarDesktop</literal></link> object represents LibreOfficeDev Start Center."
-msgstr "Predmet <link href=\"text/sbasic/shared/stardesktop.xhp\" name=\"StarDesktop\"><literal>StarDesktop</literal></link> predstavlja Začetno središče LibreOfficeDev."
+msgid "<link href=\"text/sbasic/shared/stardesktop.xhp\" name=\"StarDesktop\"><literal>StarDesktop</literal></link> object represents %PRODUCTNAME Start Center."
+msgstr "Predmet <link href=\"text/sbasic/shared/stardesktop.xhp\" name=\"StarDesktop\"><literal>StarDesktop</literal></link> predstavlja Začetno središče %PRODUCTNAME."
 
 #: sf_basic.xhp
 msgctxt ""
@@ -2560,6 +2608,70 @@ msgctxt ""
 "help.text"
 msgid "List of Methods in the Basic Service"
 msgstr "Seznam metod v storitvi Basic"
+
+#: sf_basic.xhp
+msgctxt ""
+"sf_basic.xhp\n"
+"par_id71621894830071\n"
+"help.text"
+msgid "Converts a numeric expression or a string to a <literal>datetime</literal>.<literal>datetime</literal> Python native object."
+msgstr "Pretvori numerični izraz ali niz v domorodni predmet Pythona <literal>datetime</literal>.<literal>datetime</literal>."
+
+#: sf_basic.xhp
+msgctxt ""
+"sf_basic.xhp\n"
+"par_id431621896441258\n"
+"help.text"
+msgid "This method exposes the Basic builtin function <link href=\"text/sbasic/shared/03100300.xhp\" name=\"CDate_Basic\">CDate</link> to Python scripts."
+msgstr "Ta metoda razkrije vgrajeno funkcijo Basic <link href=\"text/sbasic/shared/03100300.xhp\" name=\"CDate_Basic\">CDate</link> v skriptih Python."
+
+#: sf_basic.xhp
+msgctxt ""
+"sf_basic.xhp\n"
+"par_id401621896675880\n"
+"help.text"
+msgid "<emph>expression</emph>: a numeric expression or a string representing a date."
+msgstr "<emph>izraz</emph>: numeričen izraz ali niz, ki predstavlja datum."
+
+#: sf_basic.xhp
+msgctxt ""
+"sf_basic.xhp\n"
+"par_id481621950748686\n"
+"help.text"
+msgid "Converts a UNO date/time representation to a <literal>datetime.datetime</literal> Python native object."
+msgstr "Pretvori reprezentacijo datuma/časa UNO v domorodni predmet Pythona <literal>datetime.datetime</literal>."
+
+#: sf_basic.xhp
+msgctxt ""
+"sf_basic.xhp\n"
+"par_id41621950816227\n"
+"help.text"
+msgid "<emph>unodate</emph>: A UNO date/time object of one of the following types: <literal>com.sun.star.util.DateTime</literal>, <literal>com.sun.star.util.Date</literal> or <literal>com.sun.star.util.Time</literal>"
+msgstr "<emph>unodate</emph>: predmet datuma/časa UNO ene od naslednjih vrst: <literal>com.sun.star.util.DateTime</literal>, <literal>com.sun.star.util.Date</literal> ali <literal>com.sun.star.util.Time</literal>."
+
+#: sf_basic.xhp
+msgctxt ""
+"sf_basic.xhp\n"
+"par_id281621952224847\n"
+"help.text"
+msgid "The following example creates a <literal>com.sun.star.util.DateTime</literal> object and converts it to a <literal>datetime.datetime</literal> Python object."
+msgstr "Spodnji primer ustvari predmet <literal>com.sun.star.util.DateTime</literal> in ga pretvori v predmet Pythona <literal>datetime.datetime</literal>."
+
+#: sf_basic.xhp
+msgctxt ""
+"sf_basic.xhp\n"
+"par_id741621952469980\n"
+"help.text"
+msgid "Converts a date representation into a <literal>com.sun.star.util.DateTime</literal> object."
+msgstr "Pretvori reprezentacijo datuma v predmet <literal>com.sun.star.util.DateTime</literal>."
+
+#: sf_basic.xhp
+msgctxt ""
+"sf_basic.xhp\n"
+"par_id511621952524000\n"
+"help.text"
+msgid "<emph>date</emph>: A Python date/time object of one of the following types: <literal>datetime.datetime</literal>, <literal>datetime.date</literal>, <literal>datetime.time</literal>, <literal>float (time.time)</literal> or <literal>time.struct_time</literal>."
+msgstr "<emph>date</emph>: Pythonov predmet datuma/časa ene od naslednjih vrst: <literal>datetime.datetime</literal>, <literal>datetime.date</literal>, <literal>datetime.time</literal>, <literal>float (time.time)</literal> ali <literal>time.struct_time</literal>."
 
 #: sf_basic.xhp
 msgctxt ""
@@ -2615,7 +2727,7 @@ msgctxt ""
 "par_id651589200121138\n"
 "help.text"
 msgid "Instantiates a UNO service with the <literal>ProcessServiceManager</literal>."
-msgstr "Instanciira storitev UNO z upraviteljem procesnih storitev <literal>ProcessServiceManager</literal>."
+msgstr "Instanco storitve UNO tvori z upraviteljem procesnih storitev <literal>ProcessServiceManager</literal>."
 
 #: sf_basic.xhp
 msgctxt ""
@@ -2700,22 +2812,6 @@ msgstr "Število."
 #: sf_basic.xhp
 msgctxt ""
 "sf_basic.xhp\n"
-"pyc_id641618564383315\n"
-"help.text"
-msgid "diffDays = svc.DateDiff('d', date1, date2)"
-msgstr "razlDnevi = svc.DateDiff('d', datum1, datum2)"
-
-#: sf_basic.xhp
-msgctxt ""
-"sf_basic.xhp\n"
-"pyc_id151618564392035\n"
-"help.text"
-msgid "print(diffDays)"
-msgstr "print(razlDnevi)"
-
-#: sf_basic.xhp
-msgctxt ""
-"sf_basic.xhp\n"
 "par_id81589202925519\n"
 "help.text"
 msgid "The DatePart function returns a specified part of a date."
@@ -2764,26 +2860,10 @@ msgstr "Izračuna datumsko vrednost iz datumskega niza."
 #: sf_basic.xhp
 msgctxt ""
 "sf_basic.xhp\n"
-"hd_id151618673970234\n"
-"help.text"
-msgid "<embedvar href=\"text/sbasic/shared/00000003.xhp#functvalue\"/>"
-msgstr "<embedvar href=\"text/sbasic/shared/00000003.xhp#functvalue\"/>"
-
-#: sf_basic.xhp
-msgctxt ""
-"sf_basic.xhp\n"
 "par_id441618674018955\n"
 "help.text"
 msgid "The computed date."
 msgstr "Izračunani datum."
-
-#: sf_basic.xhp
-msgctxt ""
-"sf_basic.xhp\n"
-"pyc_id931618674563379\n"
-"help.text"
-msgid "print(dt)"
-msgstr "print(dt)"
 
 #: sf_basic.xhp
 msgctxt ""
@@ -2831,7 +2911,7 @@ msgctxt ""
 "par_id381618831451271\n"
 "help.text"
 msgid "The default component context is used, when instantiating services via <literal>XMultiServiceFactory</literal>. See the <literal>Professional UNO</literal> chapter in the Developer's Guide on <link href=\"https://api.libreoffice.org/\" name=\"API Developer's Guide\">api.libreoffice.org</link> for more information."
-msgstr "Privzeti kontekst komponente se uporabi, kadar storitve instanciirate prek <literal>XMultiServiceFactory</literal>. Podrobnosti si oglejte v poglavju <literal>Professional UNO</literal> v vodniku za razvijalce (Developer's Guide) na <link href=\"https://api.libreoffice.org/\" name=\"Vodnik za razvijalce API\">api.libreoffice.org</link> (v angl.)."
+msgstr "Privzeti kontekst komponente se uporabi, kadar tvorite instance storitve prek <literal>XMultiServiceFactory</literal>. Podrobnosti si oglejte v poglavju <literal>Professional UNO</literal> v vodniku za razvijalce (Developer's Guide) na <link href=\"https://api.libreoffice.org/\" name=\"Vodnik za razvijalce API\">api.libreoffice.org</link> (v angl.)."
 
 #: sf_basic.xhp
 msgctxt ""
@@ -2904,6 +2984,70 @@ msgctxt ""
 "help.text"
 msgid "svc.MsgBox(\"{} - {} = {}\".format(ticks_end, ticks_ini,ticks_end - ticks_ini))"
 msgstr "svc.MsgBox(\"{} - {} = {}\".format(tiki_kon, tiki_ini,tiki_kon - tiki_ini))"
+
+#: sf_basic.xhp
+msgctxt ""
+"sf_basic.xhp\n"
+"bm_id61618905161499\n"
+"help.text"
+msgid "<bookmark_value>Basic service;GlobalScope.BasicLibraries</bookmark_value>"
+msgstr "<bookmark_value>storitev Basic;GlobalScope.BasicLibraries</bookmark_value>"
+
+#: sf_basic.xhp
+msgctxt ""
+"sf_basic.xhp\n"
+"par_id741622396277528\n"
+"help.text"
+msgid "Returns the UNO object containing all shared Basic libraries and modules."
+msgstr "Vrne predmet UNO, ki vsebuje vse knjižnice in module Basic v skupni rabi."
+
+#: sf_basic.xhp
+msgctxt ""
+"sf_basic.xhp\n"
+"par_id911622396571584\n"
+"help.text"
+msgid "This method is the Python equivalent to <literal>GlobalScope</literal>.<literal>BasicLibraries</literal> in Basic scripts."
+msgstr "Ta metoda je Pythonov ekvivalent za <literal>GlobalScope</literal>.<literal>BasicLibraries</literal> v skriptih Basic."
+
+#: sf_basic.xhp
+msgctxt ""
+"sf_basic.xhp\n"
+"par_id281622398076950\n"
+"help.text"
+msgid "The following example loads the Gimmicks Basic library if it has not been loaded yet."
+msgstr "Naslednji primer naloži Gimmicks, knjižnico Basic, če še ni naložena."
+
+#: sf_basic.xhp
+msgctxt ""
+"sf_basic.xhp\n"
+"bm_id61618905163671\n"
+"help.text"
+msgid "<bookmark_value>Basic service;GlobalScope.DialogLibraries</bookmark_value>"
+msgstr "<bookmark_value>storitev Basic;GlobalScope.DialogLibraries</bookmark_value>"
+
+#: sf_basic.xhp
+msgctxt ""
+"sf_basic.xhp\n"
+"par_id381622397863419\n"
+"help.text"
+msgid "Returns the UNO object containing all shared dialog libraries."
+msgstr "Vrne predmet UNO, ki vsebuje vse knjižnice pogovornih oken v skupni rabi."
+
+#: sf_basic.xhp
+msgctxt ""
+"sf_basic.xhp\n"
+"par_id491622397863810\n"
+"help.text"
+msgid "This method is the Python equivalent to <literal>GlobalScope</literal>.<literal>DialogLibraries</literal> in Basic scripts."
+msgstr "Ta metoda je Pythonov ekvivalent za <literal>GlobalScope</literal>.<literal>DialogLibraries</literal> v skriptih Basic."
+
+#: sf_basic.xhp
+msgctxt ""
+"sf_basic.xhp\n"
+"par_id811622398234384\n"
+"help.text"
+msgid "The following example shows a message box with the names of all available dialog libraries."
+msgstr "Naslednji primer prikaže okno z imeni vseh knjižnic pogovornih oken, ki so na voljo."
 
 #: sf_basic.xhp
 msgctxt ""
@@ -2982,8 +3126,8 @@ msgctxt ""
 "sf_basic.xhp\n"
 "par_id191619084216660\n"
 "help.text"
-msgid "Returns the current system date and time as a date/time value."
-msgstr "Vrne trenutni sistemski datum in čas kot vrednost datuma/časa."
+msgid "Returns the current system date and time as a <literal>datetime</literal>.<literal>datetime</literal> Python native object."
+msgstr "Vrne trenutni sistemski datum in čas kot domorodni predmet Pythona <literal>datetime</literal>.<literal>datetime</literal>."
 
 #: sf_basic.xhp
 msgctxt ""
@@ -3020,6 +3164,62 @@ msgstr "celo število"
 #: sf_basic.xhp
 msgctxt ""
 "sf_basic.xhp\n"
+"bm_id81618907850447\n"
+"help.text"
+msgid "<bookmark_value>Basic service;ThisComponent</bookmark_value>"
+msgstr "<bookmark_value>storitev Basic;ThisComponent</bookmark_value>"
+
+#: sf_basic.xhp
+msgctxt ""
+"sf_basic.xhp\n"
+"par_id141622840830978\n"
+"help.text"
+msgid "If the current component refers to a %PRODUCTNAME document, this method returns the UNO object representing the document."
+msgstr "Če se trenutna komponenta nanaša na dokument %PRODUCTNAME, ta metoda vrne predmet UNO, ki predstavlja dokument."
+
+#: sf_basic.xhp
+msgctxt ""
+"sf_basic.xhp\n"
+"par_id961622841287976\n"
+"help.text"
+msgid "The method will return <literal>None</literal> when the current component does not correspond to a document."
+msgstr "Ta metoda vrne <literal>None</literal>, če trenutna komponenta ne ustreza dokumentu."
+
+#: sf_basic.xhp
+msgctxt ""
+"sf_basic.xhp\n"
+"bm_id81618907858201\n"
+"help.text"
+msgid "<bookmark_value>Basic service;ThisDatabaseDocument</bookmark_value>"
+msgstr "<bookmark_value>storitev Basic;ThisDatabaseDocument</bookmark_value>"
+
+#: sf_basic.xhp
+msgctxt ""
+"sf_basic.xhp\n"
+"par_id271622912644859\n"
+"help.text"
+msgid "If the script is being executed from a Base document or any of its subcomponents this method returns the main component of the Base instance."
+msgstr "Če se skript izvaja iz dokumenta programa Base ali ene od njegovih podkomponent, ta metoda vrne glavno komponento instance Base."
+
+#: sf_basic.xhp
+msgctxt ""
+"sf_basic.xhp\n"
+"par_id811622912819443\n"
+"help.text"
+msgid "This method returns <literal>None</literal> otherwise."
+msgstr "Metoda sicer vrne <literal>None</literal>."
+
+#: sf_basic.xhp
+msgctxt ""
+"sf_basic.xhp\n"
+"par_id201623153844931\n"
+"help.text"
+msgid "Visit the <link href=\"https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1sdb_1_1OfficeDatabaseDocument.html\" name=\"OfficeDatabaseDocument\">OfficeDatabaseDocument</link> API page to learn more about Base's main component structure."
+msgstr "Obiščite stran API <link href=\"https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1sdb_1_1OfficeDatabaseDocument.html\" name=\"API OfficeDatabaseDocument\">OfficeDatabaseDocument</link>, da izveste več o strukturi glavne komponente Base."
+
+#: sf_basic.xhp
+msgctxt ""
+"sf_basic.xhp\n"
 "bm_id81618907851793\n"
 "help.text"
 msgid "<bookmark_value>Basic service;Xray</bookmark_value>"
@@ -3044,58 +3244,10 @@ msgstr "<emph>obj</emph>: spremenljivka ali predmet UNO."
 #: sf_basic.xhp
 msgctxt ""
 "sf_basic.xhp\n"
-"par_id901618486941514\n"
-"help.text"
-msgid "<link href=\"text/sbasic/python/python_programming.xhp\" name=\"uno.fileUrlToSystemPath() method\">uno.fileUrlToSystemPath() method</link>"
-msgstr "<link href=\"text/sbasic/python/python_programming.xhp\" name=\"Metoda uno.fileUrlToSystemPath()\">Metoda uno.fileUrlToSystemPath()</link>"
-
-#: sf_basic.xhp
-msgctxt ""
-"sf_basic.xhp\n"
-"par_id901618496841514\n"
-"help.text"
-msgid "<link href=\"text/sbasic/python/python_programming.xhp\" name=\"uno.systemPathToFileUrl() method\">uno.systemPathToFileUrl() method</link>"
-msgstr "<link href=\"text/sbasic/python/python_programming.xhp\" name=\"Metoda uno.systemPathToFileUrl()\">Metoda uno.systemPathToFileUrl()</link>"
-
-#: sf_basic.xhp
-msgctxt ""
-"sf_basic.xhp\n"
 "par_id951618554355538\n"
 "help.text"
 msgid "<link href=\"https://wiki.documentfoundation.org/Macros/General/IO_to_Screen\" name=\"Input/Output to Screen with Python\">Input/Output to Screen with Python</link> on the wiki"
 msgstr "<link href=\"https://wiki.documentfoundation.org/Macros/General/IO_to_Screen\" name=\"Vhod/izhod na zaslonu s Pythonom\">Vhod/izhod na zaslonu s Pythonom</link> na wikiju (v angl.)."
-
-#: sf_basic.xhp
-msgctxt ""
-"sf_basic.xhp\n"
-"par_id610918486941514\n"
-"help.text"
-msgid "<link href=\"text/sbasic/python/python_programming.xhp\" name=\"XSCRIPTCONTEXT.getComponentContext() method\">XSCRIPTCONTEXT.getComponentContext() method</link>"
-msgstr "<link href=\"text/sbasic/python/python_programming.xhp\" name=\"Metoda XSCRIPTCONTEXT.getComponentContext()\">Metoda XSCRIPTCONTEXT.getComponentContext()</link>"
-
-#: sf_basic.xhp
-msgctxt ""
-"sf_basic.xhp\n"
-"par_id901618484961514\n"
-"help.text"
-msgid "<link href=\"text/sbasic/python/python_programming.xhp\" name=\"uno.getComponentContext() method\">uno.getComponentContext() method</link>"
-msgstr "<link href=\"text/sbasic/python/python_programming.xhp\" name=\"Metoda uno.getComponentContext()\">Metoda uno.getComponentContext()</link>"
-
-#: sf_basic.xhp
-msgctxt ""
-"sf_basic.xhp\n"
-"par_id901648186941514\n"
-"help.text"
-msgid "<link href=\"text/sbasic/python/python_platform.xhp\" name=\"platform.system() method\">platform.system() method</link>"
-msgstr "<link href=\"text/sbasic/python/python_platform.xhp\" name=\"Metoda platform.system()\">Metoda platform.system()</link>"
-
-#: sf_basic.xhp
-msgctxt ""
-"sf_basic.xhp\n"
-"par_id901816486941514\n"
-"help.text"
-msgid "<link href=\"text/sbasic/python/python_platform.xhp\" name=\"os.pathsep() method\">os.pathsep() method</link>"
-msgstr "<link href=\"text/sbasic/python/python_platform.xhp\" name=\"Metoda os.pathsep()\">Metoda os.pathsep()</link>"
 
 #: sf_calc.xhp
 msgctxt ""
@@ -3207,7 +3359,7 @@ msgctxt ""
 "par_id741621467697967\n"
 "help.text"
 msgid "It is also possible to instantiate the <literal>Calc</literal> service using the <literal>CreateScriptService</literal> method:"
-msgstr "Storitev <literal>Calc</literal> lahko instanciirate tudi z metodo <literal>CreateScriptService</literal>:"
+msgstr "Instanco storitve <literal>Calc</literal> lahko tvorite tudi z metodo <literal>CreateScriptService</literal>:"
 
 #: sf_calc.xhp
 msgctxt ""
@@ -4252,6 +4404,86 @@ msgstr "Vse te funkcije prezrejo celice v danem obsegu, ki vsebujejo besedilo. P
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
+"par_id501623063693649\n"
+"help.text"
+msgid "Depending on the parameters provided this method will return:"
+msgstr "Glede na podane parametre ta metoda vrne:"
+
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id611623063742045\n"
+"help.text"
+msgid "A zero-based Array (or a tuple in Python) with the names of all the forms contained in a given sheet (if the <literal>form</literal> argument is absent)"
+msgstr "Ničelno polje (par v Pythonu) z imeni vseh obrazcev, vsebovanih v danem delovnem listu (če ni podan argument <literal>form</literal>)."
+
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id641623063744536\n"
+"help.text"
+msgid "A <literal>SFDocuments.Form</literal> service instance representing the form specified as argument."
+msgstr "Instanca storitve <literal>SFDocuments.Form</literal>, ki predstavlja obrazec, naveden v argumentu."
+
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id441623090893210\n"
+"help.text"
+msgid "<emph>sheetname</emph>: The name of the sheet, as a string, from which the form will be retrieved."
+msgstr "<emph>sheetname</emph>: ime delovnega lista, iz katerega bo izveden obrazec, kot niz."
+
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id451623063459286\n"
+"help.text"
+msgid "<emph>form</emph>: The name or index corresponding to a form stored in the specified sheet. If this argument is absent, the method will return a list with the names of all forms available in the sheet."
+msgstr "<emph>form</emph>: ime ali indeks, ki ustreza obrazcu, shranjenem v navedeni preglednici. Če ta argument ni podan, metoda vrne seznam z imeni vseh obrazcev, ki so na voljo v preglednici."
+
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id251623063305557\n"
+"help.text"
+msgid "In the following examples, the first line gets the names of all forms stored in \"Sheet1\" and the second line retrieves the <literal>Form</literal> object of the form named \"Form_A\" which is stored in \"Sheet1\"."
+msgstr "V sledečih primerih prva vrstica pridobi imena vseh obrazcev, shranjenih na delovnem listu »DelovniList1«, druga pa predmet <literal>Form</literal> iz obrazca »Obrazec_A«, ki je shranjen v »DelovniList1«."
+
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"bas_id191623063399519\n"
+"help.text"
+msgid "Set FormNames = oDoc.Forms(\"Sheet1\")"
+msgstr "Set FormNames = oDoc.Forms(\"DelovniList1\")"
+
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"bas_id691623063399711\n"
+"help.text"
+msgid "Set FormA = oDoc.Forms(\"Sheet1\", \"Form_A\")"
+msgstr "Set FormA = oDoc.Forms(\"DelovniList1\", \"Obrazec_A\")"
+
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"pyc_id271623063215023\n"
+"help.text"
+msgid "form_names = doc.Forms(\"Sheet1\")"
+msgstr "form_names = doc.Forms(\"DelovniList1\")"
+
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"pyc_id961623063234990\n"
+"help.text"
+msgid "form_A = doc.Forms(\"Sheet1\", \"Form_A\")"
+msgstr "form_A = oDoc.Forms(\"DelovniList1\", \"Obrazec_A\")"
+
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
 "par_id401591632726431\n"
 "help.text"
 msgid "Converts a column number ranging between 1 and 1024 into its corresponding letter (column 'A', 'B', ..., 'AMJ'). If the given column number is outside the allowed range, a zero-length string is returned."
@@ -4702,7 +4934,7 @@ msgctxt ""
 "sf_calc.xhp\n"
 "par_id991621620588147\n"
 "help.text"
-msgid "<input>doc.RemoveSheet(sheetname: str): bool</input>"
+msgid "<input>svc.RemoveSheet(sheetname: str): bool</input>"
 msgstr "<input>doc.RemoveSheet(sheetname: str): bool</input>"
 
 #: sf_calc.xhp
@@ -8492,22 +8724,6 @@ msgstr "Priklic storitve"
 #: sf_document.xhp
 msgctxt ""
 "sf_document.xhp\n"
-"par_id141610734722352\n"
-"help.text"
-msgid "Before using the <literal>Document</literal> service the <literal>ScriptForge</literal> library needs to be loaded using:"
-msgstr "Pred uporabo storitve <literal>Document</literal> morate naložiti knjižnico <literal>ScriptForge</literal> na sledeč način:"
-
-#: sf_document.xhp
-msgctxt ""
-"sf_document.xhp\n"
-"par_id591589191059889\n"
-"help.text"
-msgid "The <literal>Document</literal> service is closely related to the <literal>UI</literal> and <literal>FileSystem</literal> services of the <literal>ScriptForge</literal> library."
-msgstr "Storitev <literal>Document</literal> je tesno povezana s storitvama <literal>UI</literal> in <literal>FileSystem</literal> knjižnice <literal>ScriptForge</literal>."
-
-#: sf_document.xhp
-msgctxt ""
-"sf_document.xhp\n"
 "par_id581611090387382\n"
 "help.text"
 msgid "Below are three variants of how the <literal>Document</literal> service can be invoked."
@@ -8516,42 +8732,42 @@ msgstr "Spodaj so trije načini, kako lahko prikličete storitev <literal>Docume
 #: sf_document.xhp
 msgctxt ""
 "sf_document.xhp\n"
-"bas_id571589191739218\n"
+"par_id181622816732197\n"
 "help.text"
-msgid "'1) From the ScriptForge.UI service:"
-msgstr "'1) Iz storitve ScriptForge.UI:"
+msgid "Using the <literal>getDocument</literal> method from the <literal>ScriptForge</literal>.<literal>UI</literal> service:"
+msgstr "Z uporabo metode <literal>getDocument</literal> iz storitve <literal>ScriptForge</literal>.<literal>UI</literal>:"
 
 #: sf_document.xhp
 msgctxt ""
 "sf_document.xhp\n"
-"bas_id331589191766183\n"
+"par_id181622818236233\n"
 "help.text"
-msgid "'Alternatively, using the CreateDocument or OpenDocument methods"
-msgstr "'Drug način je z uporabo metod CreateDocument ali OpenDocument"
+msgid "Alternatively you can use the methods <literal>CreateDocument</literal> and <literal>OpenDocument</literal> from the <literal>UI</literal> service."
+msgstr "Namesto tega lahko uporabite metodi <literal>CreateDocument</literal> in <literal>OpenDocument</literal> iz storitve <literal>UI</literal>."
 
 #: sf_document.xhp
 msgctxt ""
 "sf_document.xhp\n"
-"bas_id571589191774268\n"
+"par_id691622816765571\n"
 "help.text"
-msgid "'2) Directly if the document is already open"
-msgstr "'2) Neposredno, če je dokument že odprt"
+msgid "Directly if the document is already open."
+msgstr "Neposredno, če je dokument že odprt."
 
 #: sf_document.xhp
 msgctxt ""
 "sf_document.xhp\n"
-"bas_id471598109329789\n"
+"par_id821622816825012\n"
 "help.text"
-msgid "'3) From a macro triggered by a document event"
-msgstr "'3) Iz makra, ki ga proži dogodek dokumenta"
+msgid "From a macro triggered by a document event."
+msgstr "Iz makra, ki ga proži dogodek dokumenta."
 
 #: sf_document.xhp
 msgctxt ""
 "sf_document.xhp\n"
-"par_id71611090922315\n"
+"par_id831622816562430\n"
 "help.text"
-msgid "The use of the prefix \"<literal>SFDocuments.</literal>\" while calling the service is optional."
-msgstr "Uporaba predpone \"<literal>SFDocuments.</literal>\" pri klicu storitve je neobvezna."
+msgid "The <literal>Document</literal> service is closely related to the <literal>UI</literal> and <literal>FileSystem</literal> services."
+msgstr "Storitev <literal>Document</literal> je tesno povezana s storitvama <literal>UI</literal> in <literal>FileSystem</literal>."
 
 #: sf_document.xhp
 msgctxt ""
@@ -8560,6 +8776,38 @@ msgctxt ""
 "help.text"
 msgid "Except when the document was closed by program with the CloseDocument method (it is then superfluous), it is recommended to free resources after use:"
 msgstr "Če dokumenta ni zaprl program z metodo CloseDocument (sicer je ta napotek odveč), priporočamo, da po uporabi sprostite vire:"
+
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
+"pyc_id551622819064247\n"
+"help.text"
+msgid "def RunEvent(event)"
+msgstr "def RunEvent(event)"
+
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
+"pyc_id311622819064554\n"
+"help.text"
+msgid "doc = CreateScriptService(\"SFDocuments.DocumentEvent\", Event)"
+msgstr "doc = CreateScriptService(\"SFDocuments.DocumentEvent\", Event)"
+
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
+"pyc_id221622819064967\n"
+"help.text"
+msgid "# (...)"
+msgstr "# (...)"
+
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
+"par_id71611090922315\n"
+"help.text"
+msgid "The use of the prefix \"<literal>SFDocuments.</literal>\" while calling the service is optional."
+msgstr "Uporaba predpone \"<literal>SFDocuments.</literal>\" pri klicu storitve je neobvezna."
 
 #: sf_document.xhp
 msgctxt ""
@@ -8780,6 +9028,14 @@ msgstr "Spodnji primer izpiše vse lastnosti dokumenta. Upoštevajte, da je pred
 #: sf_document.xhp
 msgctxt ""
 "sf_document.xhp\n"
+"par_id571622826920742\n"
+"help.text"
+msgid "To access document properties in a Python script the user needs to directly access them using their names, as shown below:"
+msgstr "Če želite dostopati do lastnosti dokumenta v skriptu Python, morate neposredno dostopati z rabo njihovih imen, kot je prikazano spodaj:"
+
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
 "par_id651606319520519\n"
 "help.text"
 msgid "List of Methods in the Document Service"
@@ -8846,32 +9102,96 @@ msgctxt ""
 "sf_document.xhp\n"
 "par_id361589200121646\n"
 "help.text"
-msgid "<emph>SaveAsk</emph> : If <literal>True</literal> (default), the user is invited to confirm if the changes should be written on disk. This argument is ignored if the document was not modified."
-msgstr "<emph>SaveAsk</emph>: če je enako <literal>True</literal> (privzeto), povpraša uporabnika, da potrdi, ali naj se spremembe shranijo na disk. Ta argument je prezrt, če dokument ni bil spremenjen."
+msgid "<emph>saveask</emph> : If <literal>True</literal> (default), the user is invited to confirm if the changes should be written on disk. This argument is ignored if the document was not modified."
+msgstr "<emph>saveask</emph>: če je enako <literal>True</literal> (privzeto), povpraša uporabnika, da potrdi, ali naj se spremembe shranijo na disk. Ta argument je prezrt, če dokument ni bil spremenjen."
 
 #: sf_document.xhp
 msgctxt ""
 "sf_document.xhp\n"
-"par_id901599410483300\n"
+"bas_id751622827903730\n"
 "help.text"
-msgid "This method is applicable <emph>only for Base documents</emph>."
-msgstr "Ta metoda deluje <emph>le za dokumente Base</emph>."
+msgid "End If"
+msgstr "End If"
 
 #: sf_document.xhp
 msgctxt ""
 "sf_document.xhp\n"
-"par_id891599410524092\n"
+"par_id501623063693649\n"
 "help.text"
-msgid "It returns a <literal>SFDatabases.Database</literal> service instance giving access to the execution of SQL commands on the database defined and/or embedded in the actual Base document."
-msgstr "Vrne instanco storitev <literal>SFDatabases.Database</literal>, ki nudijo dostop do izvajanja ukazov SQL nad zbirko podatkov, ki je določena in/ali vdelana v dejanski dokument programa Base."
+msgid "Depending on the parameters provided this method will return:"
+msgstr "Glede na podane parametre ta metoda vrne:"
 
 #: sf_document.xhp
 msgctxt ""
 "sf_document.xhp\n"
-"par_id721599410266911\n"
+"par_id611623063742045\n"
 "help.text"
-msgid "<emph>User, Password</emph> : The login parameters. Both default to \"\"."
-msgstr "<emph>User, Password</emph>: parametra prijave (uporabniško ime in geslo). Privzeta vrednost obeh je \"\"."
+msgid "A zero-based Array (or a tuple in Python) with the names of all the forms contained in the document (if the <literal>form</literal> argument is absent)"
+msgstr "Ničelno polje (ali par v Pythonu) z imeni vseh obrazcev, vsebovanih v dokumentu obrazca (če ni podan argument <literal>form</literal>)."
+
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
+"par_id641623063744536\n"
+"help.text"
+msgid "A <literal>SFDocuments.Form</literal> service instance representing the form specified as argument."
+msgstr "Instanca storitve <literal>SFDocuments.Form</literal>, ki predstavlja obrazec, naveden v argumentu."
+
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
+"par_id821623076570573\n"
+"help.text"
+msgid "This method is applicable only for Writer documents. Calc and Base documents have their own <literal>Forms</literal> method in the <link href=\"text/sbasic/shared/03/sf_calc.xhp#Forms\" name=\"Calc_Forms\">Calc</link> and <link href=\"text/sbasic/shared/03/sf_base.xhp#Forms\" name=\"Base_Forms\">Base</link> services, respectively."
+msgstr "Ta metoda velja le za dokumente programa Writer. Dokumenti programov Calc in Base imajo lastno metodo <literal>Forms</literal> v svojih storitvah <link href=\"text/sbasic/shared/03/sf_calc.xhp#Forms\" name=\"Forms, Calc\">Calc</link> in <link href=\"text/sbasic/shared/03/sf_base.xhp#Forms\" name=\"Forms, Base\">Base</link>."
+
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
+"par_id451623063459286\n"
+"help.text"
+msgid "<emph>form</emph>: The name or index corresponding to a form stored in the document. If this argument is absent, the method will return a list with the names of all forms available in the document."
+msgstr "<emph>form:</emph> ime ali številka indeksa obrazca, shranjenega v dokumentu. Če ta argument ni podan, metoda vrne seznam z imeni vseh obrazcev, ki so na voljo v dokumentu."
+
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
+"par_id251623063305557\n"
+"help.text"
+msgid "In the following examples, the first line gets the names of all forms in the document and the second line retrieves the <literal>Form</literal> object of the form named \"Form_A\"."
+msgstr "V naslednjih primerih prva vrstica pridobi imena vseh obrazcev v dokumentu, druga pa predmet <literal>Form</literal> obrazca z imenom »Obrazec_A«."
+
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
+"bas_id191623063399519\n"
+"help.text"
+msgid "Set FormNames = oDoc.Forms()"
+msgstr "Set FormNames = oDoc.Forms()"
+
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
+"bas_id691623063399711\n"
+"help.text"
+msgid "Set FormA = oDoc.Forms(\"Form_A\")"
+msgstr "Set FormA = oDoc.Forms(\"Obrazec_A\")"
+
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
+"pyc_id271623063215023\n"
+"help.text"
+msgid "form_names = doc.Forms()"
+msgstr "form_names = doc.Forms()"
+
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
+"pyc_id961623063234990\n"
+"help.text"
+msgid "form_A = doc.Forms(\"Form_A\")"
+msgstr "form_A = doc.Forms(\"Obrazec_A\")"
 
 #: sf_document.xhp
 msgctxt ""
@@ -8902,16 +9222,16 @@ msgctxt ""
 "sf_document.xhp\n"
 "par_id401589202413575\n"
 "help.text"
-msgid "<emph>Command</emph> : Case-sensitive string containing the command in English. The command itself is not checked for correctness. If nothing happens after the command call, then the command is probably wrong."
-msgstr "<emph>Command</emph>: niz, ki vsebuje ukaz v angleškem jeziku (razlikuje med velikimi in malimi črkami). Sama pravilnost ukaza se ne preverja. Če se po klicu ukaza ne zgodi nič, je z ukazom oz. njegovim klicem najbrž nekaj narobe."
+msgid "<emph>command</emph>: Case-sensitive string containing the command in English. The command itself is not checked for correctness. If nothing happens after the command call, then the command is probably wrong."
+msgstr "<emph>command</emph>: niz, ki vsebuje ukaz v angleškem jeziku (razlikuje med velikimi in malimi črkami). Sama pravilnost ukaza se ne preverja. Če se po klicu ukaza ne zgodi nič, je z ukazom oz. njegovim klicem najbrž nekaj narobe."
 
 #: sf_document.xhp
 msgctxt ""
 "sf_document.xhp\n"
 "par_id721611153068137\n"
 "help.text"
-msgid "The following example runs the \"SelectData\" command in a Calc sheet named \"My_File.ods\", which will result in the selection of the data area based on the currently selected cell."
-msgstr "Naslednji primer izvede ukaz SelectData na delovnem listu preglednice programa Calc z imenom My_File.ods, ki vrne izbor območja podatkov glede na položaj trenutno izbrane celice."
+msgid "The following example runs the \"SelectData\" command in a Calc sheet named \"MyFile.ods\", which will result in the selection of the data area based on the currently selected cell."
+msgstr "Naslednji primer izvede ukaz SelectData na delovnem listu preglednice programa Calc z imenom MyFile.ods, ki vrne izbor območja podatkov glede na položaj trenutno izbrane celice."
 
 #: sf_document.xhp
 msgctxt ""
@@ -8982,40 +9302,40 @@ msgctxt ""
 "sf_document.xhp\n"
 "par_id331589203370950\n"
 "help.text"
-msgid "<emph>FileName</emph> : A string containing the file name to be used. It must follow the <literal>SF_FileSystem.FileNaming</literal> notation."
-msgstr "<emph>FileName</emph>: niz, ki vsebuje ime datoteke, ki ga želite uporabiti. Slediti mora zapisu <literal>SF_FileSystem.FileNaming</literal>."
+msgid "<emph>filename</emph>: A string containing the file name to be used. It must follow the <literal>SF_FileSystem.FileNaming</literal> notation."
+msgstr "<emph>filename</emph>: niz, ki vsebuje ime datoteke, ki ga želite uporabiti. Slediti mora zapisu <literal>SF_FileSystem.FileNaming</literal>."
 
 #: sf_document.xhp
 msgctxt ""
 "sf_document.xhp\n"
 "par_id631589204010142\n"
 "help.text"
-msgid "<emph>Overwrite</emph> : If <literal>True</literal>, the destination file may be overwritten (default = <literal>False</literal>)."
-msgstr "<emph>Overwrite</emph>: če je <literal>True</literal>, je ciljno datoteko možno prepisati (privzeto = <literal>False</literal>)."
+msgid "<emph>overwrite</emph>: If <literal>True</literal>, the destination file may be overwritten (default = <literal>False</literal>)."
+msgstr "<emph>overwrite</emph>: če je <literal>True</literal>, je ciljno datoteko možno prepisati (privzeto = <literal>False</literal>)."
 
 #: sf_document.xhp
 msgctxt ""
 "sf_document.xhp\n"
 "par_id811589204084107\n"
 "help.text"
-msgid "<emph>Password</emph> (*) : A non-space string to protect the document."
-msgstr "<emph>Password</emph> (*): niz brez presledkov za geslo, s katerim zaščitite dokument."
+msgid "<emph>password</emph> (*): A non-space string to protect the document."
+msgstr "<emph>password</emph> (*): niz brez presledkov za geslo, s katerim zaščitite dokument."
 
 #: sf_document.xhp
 msgctxt ""
 "sf_document.xhp\n"
 "par_id451589204163772\n"
 "help.text"
-msgid "<emph>FilterName</emph> (*) : The name of a filter that should be used for saving the document. If this argument is passed, then the filter must exist."
-msgstr "<emph>FilterName</emph> (*): ime filtra, ki naj bo uporabljen za shranjevanje dokumenta. Če ta argument podate, mora filter obstajati."
+msgid "<emph>filtername</emph> (*): The name of a filter that should be used for saving the document. If this argument is passed, then the filter must exist."
+msgstr "<emph>filtername</emph> (*): ime filtra, ki naj bo uporabljen za shranjevanje dokumenta. Če ta argument podate, mora filter obstajati."
 
 #: sf_document.xhp
 msgctxt ""
 "sf_document.xhp\n"
 "par_id981589204207800\n"
 "help.text"
-msgid "<emph>FilterOptions</emph> (*) : An optional string of options associated with the filter."
-msgstr "<emph>FilterOptions</emph> (*): neobvezen niz možnosti, povezanih s filtrom."
+msgid "<emph>filteroptions</emph> (*): An optional string of options associated with the filter."
+msgstr "<emph>filteroptions</emph> (*): neobvezen niz možnosti, povezanih s filtrom."
 
 #: sf_document.xhp
 msgctxt ""
@@ -9046,40 +9366,40 @@ msgctxt ""
 "sf_document.xhp\n"
 "par_id301589205147697\n"
 "help.text"
-msgid "<emph>FileName</emph> : A string containing the file name to be used. It must follow the <literal>SF_FileSystem.FileNaming</literal> notation."
-msgstr "<emph>FileName</emph>: niz, ki vsebuje ime datoteke, ki ga želite uporabiti. Slediti mora zapisu <literal>SF_FileSystem.FileNaming</literal>."
+msgid "<emph>filename</emph>: A string containing the file name to be used. It must follow the <literal>SF_FileSystem.FileNaming</literal> notation."
+msgstr "<emph>filename</emph>: niz, ki vsebuje ime datoteke, ki ga želite uporabiti. Slediti mora zapisu <literal>SF_FileSystem.FileNaming</literal>."
 
 #: sf_document.xhp
 msgctxt ""
 "sf_document.xhp\n"
 "par_id851589205147348\n"
 "help.text"
-msgid "<emph>Overwrite</emph> : If <literal>True</literal>, the destination file may be overwritten (default = <literal>False</literal>)."
-msgstr "<emph>Overwrite</emph>: če je <literal>True</literal>, je ciljno datoteko možno prepisati (privzeto = <literal>False</literal>)."
+msgid "<emph>overwrite</emph>: If <literal>True</literal>, the destination file may be overwritten (default = <literal>False</literal>)."
+msgstr "<emph>overwrite</emph>: če je <literal>True</literal>, je ciljno datoteko možno prepisati (privzeto = <literal>False</literal>)."
 
 #: sf_document.xhp
 msgctxt ""
 "sf_document.xhp\n"
 "par_id821589205147330\n"
 "help.text"
-msgid "<emph>Password</emph> (*) : A non-space string to protect the document."
-msgstr "<emph>Password</emph> (*): niz brez presledkov za geslo, s katerim zaščitite dokument."
+msgid "<emph>password</emph> (*): A non-space string to protect the document."
+msgstr "<emph>password</emph> (*): niz brez presledkov za geslo, s katerim zaščitite dokument."
 
 #: sf_document.xhp
 msgctxt ""
 "sf_document.xhp\n"
 "par_id67158920514729\n"
 "help.text"
-msgid "<emph>FilterName</emph> (*) : The name of a filter that should be used for saving the document. If this argument is passed, then the filter must exist."
-msgstr "<emph>FilterName</emph> (*): ime filtra, ki naj bo uporabljen za shranjevanje dokumenta. Če ta argument podate, mora filter obstajati."
+msgid "<emph>filtername</emph> (*): The name of a filter that should be used for saving the document. If this argument is passed, then the filter must exist."
+msgstr "<emph>filtername</emph> (*): ime filtra, ki naj bo uporabljen za shranjevanje dokumenta. Če ta argument podate, mora filter obstajati."
 
 #: sf_document.xhp
 msgctxt ""
 "sf_document.xhp\n"
 "par_id881589205147911\n"
 "help.text"
-msgid "<emph>FilterOptions</emph> (*) : An optional string of options associated with the filter."
-msgstr "<emph>FilterOptions</emph> (*): neobvezen niz možnosti, povezanih s filtrom."
+msgid "<emph>filteroptions</emph> (*): An optional string of options associated with the filter."
+msgstr "<emph>filteroptions</emph> (*): neobvezen niz možnosti, povezanih s filtrom."
 
 #: sf_exception.xhp
 msgctxt ""

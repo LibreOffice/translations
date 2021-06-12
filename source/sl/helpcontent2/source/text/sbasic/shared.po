@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: LibreOffice 7.2\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2021-06-02 12:01+0200\n"
-"PO-Revision-Date: 2021-06-06 17:52+0200\n"
+"POT-Creation-Date: 2021-06-11 13:43+0200\n"
+"PO-Revision-Date: 2021-06-12 09:21+0200\n"
 "Last-Translator: Martin Srebotnjak <miles@filmsi.net>\n"
 "Language-Team: sl.libreoffice.org\n"
 "Language: sl\n"
@@ -2391,7 +2391,7 @@ msgctxt ""
 "par_id711619622934043\n"
 "help.text"
 msgid "Arguments with type <emph>Variant</emph> or <emph>Any</emph> passed in function calls are not checked for their types."
-msgstr "Argumenti vrste <emph>Variant</emph> ali <emph>Any</emph>, ki so podani v klicih funkcij, niso preverjeni glede svoje vrste."
+msgstr "Preverjanje vrste za argumente vrste <emph>Variant</emph> ali <emph>Any</emph>, ki so podani v klicih funkcij, se ne izvaja."
 
 #: 01020100.xhp
 msgctxt ""
@@ -2702,8 +2702,8 @@ msgctxt ""
 "01020300.xhp\n"
 "par_id981584288549909\n"
 "help.text"
-msgid "Properties combine the syntax of procedures and functions. A property usually requires up to one parameter."
-msgstr "Lastnosti združujejo skladnjo procedur in funkcij. Lastnost običajno zahteva le en parameter."
+msgid "Properties combine the syntax of procedures and functions. A <literal>Property</literal> usually requires up to one parameter."
+msgstr "Lastnosti združujejo skladnjo procedur in funkcij. Lastnost oz. <literal>property</literal> običajno zahteva le en parameter."
 
 #: 01020300.xhp
 msgctxt ""
@@ -2734,8 +2734,8 @@ msgctxt ""
 "01020300.xhp\n"
 "par_idN107B3\n"
 "help.text"
-msgid "You can also use the fully qualified name to call a procedure, function or property:<br/> <literal>Library.Module.Macro()</literal> <br/> For example, to call the Autotext macro from the Gimmicks library, use the following command:<br/> <item type=\"literal\">Gimmicks.AutoText.Main()</item>"
-msgstr "Za klic procedure, funkcije in lastnosti lahko uporabljate tudi polno kvalificirano ime:<br/><literal>Knjižnica.Modul.Makro()</literal><br/>Če želite npr. uporabiti makro Samobesedilo iz knjižnice PredlogeZaPisma, vnesite naslednji ukaz:<br/><item type=\"literal\">PredlogeZaPisma.Samobesedilo.Main()</item>"
+msgid "You can also use the fully qualified name to call a procedure, function or property:<br/> <literal>[Call] Library.Module.Macro()</literal>, where <literal>Call</literal> is optional.<br/> For example, to call the Autotext macro from the Gimmicks library, use the following command:<br/> <literal>Gimmicks.AutoText.Main()</literal>"
+msgstr "Za klic procedure, funkcije in lastnosti lahko uporabljate tudi polno kvalificirano ime:<br/><literal>[Call] Knjižnica.Modul.Makro()</literal>, kjer je <literal>Call</literal> neobvezen.<br/> Če želite npr. uporabiti makro Samobesedilo iz knjižnice PredlogeZaPisma, vnesite naslednji ukaz:<br/> <literal>PredlogeZaPisma.Samobesedilo.Main()</literal>"
 
 #: 01020300.xhp
 msgctxt ""
@@ -2800,6 +2800,30 @@ msgctxt ""
 "help.text"
 msgid "' your code goes here"
 msgstr "' vaša koda sodi sem"
+
+#: 01020300.xhp
+msgctxt ""
+"01020300.xhp\n"
+"hd_id951622730099178\n"
+"help.text"
+msgid "Positional or Keyword Arguments"
+msgstr "Položajni argumenti ali argumenti ključnih besed"
+
+#: 01020300.xhp
+msgctxt ""
+"01020300.xhp\n"
+"par_id591622730131786\n"
+"help.text"
+msgid "When you call a function or a subroutine, you may pass its arguments by position or by name. Passing by position means just listing the arguments in the order in which the parameters are defined in the function or subroutine. Passing by name requires you to prefix the argument with the name of the corresponding parameter followed by a colon and an equal sign (<literal>:=</literal>). Keyword arguments may appear in any order. Refer to Basic Replace() function for such examples."
+msgstr "Ko kličete funkcijo ali podprogram, lahko podate argumente po položaju ali po imenu. Podajanje po položaju pomeni, da argumente podate v zaporedju, kot so določeni v funkciji ali podprogramu. Podajanje po imenu zahteva, da argumentu dodate predpono imena ustreznega parametra, sledita pa dvopičje in enačaj (<literal>:=</literal>). Argumenti ključnih besed se lahko pojavijo v poljubnem zaporedju. Glejte funkcijo Basic Replace(), kjer so navedeni takšni primeri."
+
+#: 01020300.xhp
+msgctxt ""
+"01020300.xhp\n"
+"par_id591622730284162\n"
+"help.text"
+msgid "When needing to pass less parameters, use keywords arguments. Passing values for fewer parameters by position requires to supply values for all parameters before them, optional or not. This ensures that the values are in the correct positions. If you pass the parameters by name - using keyword arguments - you may omit all other intermediate arguments."
+msgstr "Če želite podati manj parametrov, za argumente uporabite ključne besede. Podajanje vrednosti za manjše število parametrov glede na položaj zahteva podajanje vrednosti za vse parametre pred njimi, ne glede na to, ali so obvezni. To zagotavlja, da so vrednosti na pravih mestih. Če podate parametre po imenu – z argumenti ključnih besed – lahko izpustite vse druge vmesne argumente."
 
 #: 01020300.xhp
 msgctxt ""
@@ -4038,8 +4062,8 @@ msgctxt ""
 "01040000.xhp\n"
 "bm_id3154581\n"
 "help.text"
-msgid "<bookmark_value>deleting; macro assignments to events</bookmark_value>         <bookmark_value>macros; assigning to events</bookmark_value>         <bookmark_value>assigning macros to events</bookmark_value>         <bookmark_value>documents; events</bookmark_value>         <bookmark_value>events; assigning macros</bookmark_value>         <bookmark_value>API; XDocumentEventListener</bookmark_value>"
-msgstr "<bookmark_value>brisanje; dodeljevanje makrov dogodkom</bookmark_value><bookmark_value>makri; dodeljevanje dogodkom</bookmark_value><bookmark_value>dodeljevanje makrov dogodkom</bookmark_value><bookmark_value>dokumenti; dogodki</bookmark_value><bookmark_value>dogodki; dodeljevanje makrov</bookmark_value><bookmark_value>API; XDocumentEventListener</bookmark_value>"
+msgid "<bookmark_value>deleting; macro assignments to events</bookmark_value>         <bookmark_value>macros; assigning to events</bookmark_value>         <bookmark_value>assigning macros to events</bookmark_value>         <bookmark_value>documents; events</bookmark_value>         <bookmark_value>events; assigning macros</bookmark_value>         <bookmark_value>events; in documents</bookmark_value>         <bookmark_value>API; XDocumentEventListener</bookmark_value>"
+msgstr "<bookmark_value>brisanje; dodeljevanje makrov dogodkom</bookmark_value><bookmark_value>makri; dodeljevanje dogodkom</bookmark_value><bookmark_value>dodeljevanje makrov dogodkom</bookmark_value><bookmark_value>dokumenti; dogodki</bookmark_value><bookmark_value>dogodki; dodeljevanje makrov</bookmark_value><bookmark_value>dogodki; v dokumentih</bookmark_value><bookmark_value>API; XDocumentEventListener</bookmark_value>"
 
 #: 01040000.xhp
 msgctxt ""
@@ -7694,16 +7718,16 @@ msgctxt ""
 "03010201.xhp\n"
 "par_id3147573\n"
 "help.text"
-msgid "<emph>xpostwips</emph>: Integer expression that specifies the horizontal position of the dialog. The position is an absolute coordinate and does not refer to the window of the office application."
-msgstr "<emph>xPolTwipi</emph>: celoštevilski izraz, ki določa vodoravni položaj pogovornega okna. Položaj je absolutna koordinata in ni povezana s programom, v katerem teče."
+msgid "<emph>xpostwips</emph>: Integer expression that specifies the horizontal position of the dialog. The position is an absolute coordinate and does not refer to the window of %PRODUCTNAME."
+msgstr "<emph>xPolTwipi</emph>: celoštevilski izraz, ki določa vodoravni položaj pogovornega okna. Položaj je absolutna koordinata in se ne nanaša na okno %PRODUCTNAME."
 
 #: 03010201.xhp
 msgctxt ""
 "03010201.xhp\n"
 "par_id3156024\n"
 "help.text"
-msgid "<emph>ypostwips</emph>: Integer expression that specifies the vertical position of the dialog. The position is an absolute coordinate and does not refer to the window of the office application."
-msgstr "<emph>yPolTwipi</emph>: celoštevilski izraz, ki določa navpični položaj pogovornega okna. Položaj je absolutna koordinata in ni povezan s programom, v katerem teče."
+msgid "<emph>ypostwips</emph>: Integer expression that specifies the vertical position of the dialog. The position is an absolute coordinate and does not refer to the window of %PRODUCTNAME."
+msgstr "<emph>yPolTwipi</emph>: celoštevilski izraz, ki določa navpični položaj pogovornega okna. Položaj je absolutna koordinata in se ne nanaša na okno %PRODUCTNAME."
 
 #: 03010201.xhp
 msgctxt ""
@@ -22428,14 +22452,6 @@ msgstr "Spremeni poljuben niz ali numerični izraz v datum."
 #: 03100300.xhp
 msgctxt ""
 "03100300.xhp\n"
-"hd_id3148944\n"
-"help.text"
-msgid "Syntax:"
-msgstr "Skladnja:"
-
-#: 03100300.xhp
-msgctxt ""
-"03100300.xhp\n"
 "par_id3148947\n"
 "help.text"
 msgid "CDate (Expression)"
@@ -22460,14 +22476,6 @@ msgstr "Date"
 #: 03100300.xhp
 msgctxt ""
 "03100300.xhp\n"
-"hd_id3153525\n"
-"help.text"
-msgid "Parameters:"
-msgstr "Parametri:"
-
-#: 03100300.xhp
-msgctxt ""
-"03100300.xhp\n"
 "par_id3150359\n"
 "help.text"
 msgid "<emph>Expression:</emph> Any string or numeric expression that you want to convert."
@@ -22480,14 +22488,6 @@ msgctxt ""
 "help.text"
 msgid "When you convert a string expression, the date and time must be entered either in one of the date acceptance patterns defined for your locale setting (see <switchinline select=\"sys\"><caseinline select=\"MAC\"><menuitem>%PRODUCTNAME - Preferences</menuitem></caseinline><defaultinline><menuitem>Tools - Options</menuitem></defaultinline></switchinline><menuitem> - Language Settings - Languages</menuitem>) or in ISO date format (momentarily, only the ISO format with hyphens, e.g. \"2012-12-31\" is accepted). In numeric expressions, values to the left of the decimal represent the date, beginning from December 31, 1899. Values to the right of the decimal represent the time."
 msgstr "Kadar pretvorite niz, morajo biti datumi in časi zapisani v enem od definiranih vzorcev datuma za vašo krajevno nastavitev (glejte <switchinline select=\"sys\"><caseinline select=\"MAC\"><menuitem>%PRODUCTNAME – Nastavitve</menuitem></caseinline><defaultinline><menuitem>Orodja – Možnosti</menuitem></defaultinline></switchinline><menuitem> – Jezikovne nastavitve – Jeziki</menuitem>) ali v zapisu datuma po standardu ISO (trenutno je podprt le zapis ISO z vezaji, npr. »2012-12-31«). V numeričnih izrazih predstavljajo vrednosti levo od decimalne vejice datum od 31. decembra 1899 dalje. Vrednosti desno od decimalne vejice predstavljajo čas."
-
-#: 03100300.xhp
-msgctxt ""
-"03100300.xhp\n"
-"hd_id3156422\n"
-"help.text"
-msgid "Example:"
-msgstr "Primer:"
 
 #: 03100400.xhp
 msgctxt ""
@@ -31310,8 +31310,24 @@ msgctxt ""
 "03132200.xhp\n"
 "par_id3154923\n"
 "help.text"
-msgid "Addresses the active component whose properties can be read and set, and whose methods can be called. <literal>ThisComponent</literal> is used in Basic, where it represents the current document. Properties and methods available through <literal>ThisComponent</literal> depend on the document type."
-msgstr "Naslovi aktivno komponento, da je njene lastnosti mogoče prebrati in nastaviti. <literal>ThisComponent</literal> se uporablja iz dokumenta Basic, kjer predstavlja dokument, kateremu pripada Basic. Vrsta predmeta, do katerega dostopa <literal>ThisComponent</literal>, je odvisna od vrste dokumenta."
+msgid "<literal>ThisComponent</literal> represents the current document in Basic macros. It addresses the active component whose properties can be read and set, and whose methods can be called. Properties and methods available through <literal>ThisComponent</literal> depend on the document type."
+msgstr "<literal>ThisComponent</literal> predstavlja trenutni dokument v makrih Basic. Naslovi aktivno komponento, katere lastnosti je mogoče prebrati in nastaviti in katere metode je možno klicati. Lastnosti in metode, ki so na voljo prek <literal>ThisComponent</literal>, so odvisne od vrste dokumenta."
+
+#: 03132200.xhp
+msgctxt ""
+"03132200.xhp\n"
+"par_id241622797081182\n"
+"help.text"
+msgid "When the active window is a Base form, query, report, table or view, <literal>ThisComponent</literal> returns the current <literal>Form</literal> information."
+msgstr "ČE je dejavno okno obrazec, poizvedba, poročilo, tabela ali pogled programa Base, <literal>ThisComponent</literal> vrne trenutne podatke <literal>Form</literal>."
+
+#: 03132200.xhp
+msgctxt ""
+"03132200.xhp\n"
+"par_id871622796485123\n"
+"help.text"
+msgid "When active window is the Basic IDE, <literal>ThisComponent</literal> object returns the component owning the current script."
+msgstr "Če je dejavno okno Basic IDE, predmet <literal>ThisComponent</literal> vrne komponento, ki si lasti trenutni skript."
 
 #: 03132200.xhp
 msgctxt ""
@@ -31336,6 +31352,62 @@ msgctxt ""
 "help.text"
 msgid "' use the default name for Table of Contents and a 1"
 msgstr "' uporabimo privzeto ime za Kazalo in 1"
+
+#: 03132200.xhp
+msgctxt ""
+"03132200.xhp\n"
+"par_id101622646874083\n"
+"help.text"
+msgid "<link href=\"https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1text_1_1TextDocument.html\" name=\"TextDocument API service\">com.sun.star.text.TextDocument</link> API service"
+msgstr "Storitev API <link href=\"https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1text_1_1TextDocument.html\" name=\"Storitev API TextDocument\">com.sun.star.text.TextDocument</link>"
+
+#: 03132200.xhp
+msgctxt ""
+"03132200.xhp\n"
+"par_id102622646874083\n"
+"help.text"
+msgid "<link href=\"https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1sheet_1_1SpreadsheetDocument.html\" name=\"SpreadsheetDocument API service\">com.sun.star.sheet.SpreadsheetDocument</link> API service"
+msgstr "Storitev API <link href=\"https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1sheet_1_1SpreadsheetDocument.html\" name=\"Storitev API SpreadsheetDocument\">com.sun.star.sheet.SpreadsheetDocument</link>"
+
+#: 03132200.xhp
+msgctxt ""
+"03132200.xhp\n"
+"par_id103622646874083\n"
+"help.text"
+msgid "<link href=\"https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1presentation_1_1PresentationDocument.html\" name=\"PresentationDocument API service\">com.sun.star.presentation.PresentationDocument</link> API service"
+msgstr "Storitev API <link href=\"https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1presentation_1_1PresentationDocument.html\" name=\"Storitev API PresentationDocument\">com.sun.star.presentation.PresentationDocument</link>"
+
+#: 03132200.xhp
+msgctxt ""
+"03132200.xhp\n"
+"par_id104622646874083\n"
+"help.text"
+msgid "<link href=\"https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1drawing_1_1DrawingDocument.html\" name=\"DrawingDocument API service\">com.sun.star.drawing.DrawingDocument</link> API service"
+msgstr "Storitev API <link href=\"https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1drawing_1_1DrawingDocument.html\" name=\"Storitev API DrawingDocument\">com.sun.star.drawing.DrawingDocument</link>"
+
+#: 03132200.xhp
+msgctxt ""
+"03132200.xhp\n"
+"par_id105622646874083\n"
+"help.text"
+msgid "<link href=\"https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1formula_1_1FormulaProperties.html\" name=\"FormulaProperties API service\">com.sun.star.formula.FormulaProperties</link> API service"
+msgstr "Storitev API <link href=\"https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1formula_1_1FormulaProperties.html\" name=\"Storitev API FormulaProperties\">com.sun.star.formula.FormulaProperties</link>"
+
+#: 03132200.xhp
+msgctxt ""
+"03132200.xhp\n"
+"par_id106622646874083\n"
+"help.text"
+msgid "<link href=\"https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1sdb_1_1OfficeDatabaseDocument.html\" name=\"OfficeDatabaseDocument API service\">com.sun.star.sdb.OfficeDatabaseDocument</link> API service"
+msgstr "Storitev API <link href=\"https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1sdb_1_1OfficeDatabaseDocument.html\" name=\"Storitev API OfficeDatabaseDocument\">com.sun.star.sdb.OfficeDatabaseDocument</link>"
+
+#: 03132200.xhp
+msgctxt ""
+"03132200.xhp\n"
+"par_id581622646875379\n"
+"help.text"
+msgid "<link href=\"https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1document_1_1OfficeDocument.html\" name=\"OfficeDocument API service\">com.sun.star.document.OfficeDocument</link> API service"
+msgstr "Storitev API <link href=\"https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1document_1_1OfficeDocument.html\" name=\"Storitev API OfficeDocument\">com.sun.star.document.OfficeDocument</link>"
 
 #: 03132300.xhp
 msgctxt ""
@@ -36868,14 +36940,6 @@ msgstr "Zamenja en niz z drugim."
 #: replace.xhp
 msgctxt ""
 "replace.xhp\n"
-"par_id931552552227310\n"
-"help.text"
-msgid "Replace (Text As String, SearchStr As String, ReplStr As String [, Start As Long [, Count as Long [, Compare As Boolean]]]"
-msgstr "Replace (Besedilo As String, IskaniNiz As String, ZamenjavaNiz As String [, Začetek As Long [, Števec As Long [, Primerjava As Boolean]]]"
-
-#: replace.xhp
-msgctxt ""
-"replace.xhp\n"
 "par_id911552552252024\n"
 "help.text"
 msgid "String"
@@ -36886,56 +36950,56 @@ msgctxt ""
 "replace.xhp\n"
 "par_id721552552263062\n"
 "help.text"
-msgid "<emph>Text:</emph> Any string expression that you want to modify."
-msgstr "<emph>Besedilo:</emph> poljuben niz, ki ga želite spremeniti."
+msgid "<emph>Expression:</emph> Any string expression that you want to modify."
+msgstr "<emph>Izraz:</emph> poljuben niz, ki ga želite spremeniti."
 
 #: replace.xhp
 msgctxt ""
 "replace.xhp\n"
 "par_id901552552269836\n"
 "help.text"
-msgid "<emph>SearchStr:</emph> Any string expression that shall be searched for."
-msgstr "<emph>IskaniNiz:</emph> poljuben niz, ki ga želite poiskati."
+msgid "<emph>Find:</emph> Any string expression that shall be searched for."
+msgstr "<emph>Najdi:</emph> poljuben niz, ki ga želite poiskati."
 
 #: replace.xhp
 msgctxt ""
 "replace.xhp\n"
 "par_id791552552275383\n"
 "help.text"
-msgid "<emph>ReplStr:</emph> Any string expression that shall replace the found search string."
-msgstr "<emph>ZamenjavaNiz:</emph> poljuben niz, ki naj nadomesti najdeni niz."
+msgid "<emph>Replace:</emph> Any string expression that shall replace the found search string."
+msgstr "<emph>Zamenjaj:</emph> poljuben niz, ki naj nadomesti najdeni niz."
 
 #: replace.xhp
 msgctxt ""
 "replace.xhp\n"
 "par_id111552552283060\n"
 "help.text"
-msgid "<emph>Start:</emph> Numeric expression that indicates the character position where the search starts and also the start of the substring to be returned."
-msgstr "<emph>Začetek:</emph> numerični izraz, ki določa, pri katerem znaku niza naj se začne iskanje in tudi začetek podniza, ki bo vrnjen."
+msgid "<emph>Start:</emph> Optional numeric expression that indicates the character position where the search starts and also the start of the substring to be returned."
+msgstr "<emph>Začetek:</emph> neobvezen numerični izraz, ki določa, pri katerem znaku niza naj se začne iskanje, in tudi začetek podniza, ki bo vrnjen."
 
 #: replace.xhp
 msgctxt ""
 "replace.xhp\n"
 "par_id921552552289833\n"
 "help.text"
-msgid "<emph>Count:</emph> The maximal number of times the replace shall be performed."
-msgstr "<emph>Števec:</emph> največje število izvedenih zamenjav."
+msgid "<emph>Count:</emph> Optional maximum number of times the replace shall be performed. When set to -1, all possible replacements are performed."
+msgstr "<emph>Števec:</emph> največje število izvedenih zamenjav. ČE je nastavljen na -1, se izvedejo vse možne zamenjave."
 
 #: replace.xhp
 msgctxt ""
 "replace.xhp\n"
 "par_id891552552302894\n"
 "help.text"
-msgid "<emph>Compare:</emph> Optional boolean expression that defines the type of comparison. The value of this parameter can be TRUE or FALSE. The default value of TRUE specifies a text comparison that is not case-sensitive. The value of FALSE specifies a binary comparison that is case-sensitive. You can as well use 0 instead of FALSE or 1 instead of TRUE."
-msgstr "<emph>Primerjava:</emph> neobvezen numeričen izraz, ki določa vrsto primerjave. Vrednost parametra je lahko TRUE ali FALSE. Privzeta vrednost je TRUE in definira primerjavo besedila, ki ne razlikuje med velikimi in malimi črkami. Vrednot FALSE definira binarno primerjanje, ki loči med malimi in velikimi črkami. Namesto FALSE lahko uporabite tudi 0 oz. 1 namesto TRUE."
+msgid "<emph>Compare:</emph> Optional boolean expression that defines the type of comparison. The value of this parameter can be <literal>True</literal> or <literal>False</literal>. The default value of <literal>True</literal> specifies a text comparison that is not case-sensitive. The value of <literal>False</literal> specifies a binary comparison that is case-sensitive. You can as well use 0 instead of <literal>False</literal> or 1 instead of <literal>True</literal>."
+msgstr "<emph>Primerjava:</emph> neobvezen logični izraz, ki določa vrsto primerjave. Vrednost parametra je lahko <literal>True</literal> ali <literal>False</literal>. Privzeta vrednost je <literal>True</literal> in določa primerjavo besedila, ki ne razlikuje med velikimi in malimi črkami. Vrednot <literal>False</literal> definira binarno primerjanje, ki loči med malimi in velikimi črkami. Namesto <literal>False</literal> lahko uporabite tudi 0 oz. 1 namesto <literal>True</literal>."
 
 #: replace.xhp
 msgctxt ""
 "replace.xhp\n"
 "par_id991552552420717\n"
 "help.text"
-msgid "msgbox replace (\"aBbcnnbnn\", \"b\", \"$\", 1, 1, FALSE)'returns \"aB$cnnbnn\""
-msgstr "MsgBox Replace (\"aBbcnnbnn\", \"b\", \"$\", 1, 1, FALSE)'Vrne \"aB$cnnbnn\""
+msgid "MsgBox Replace (\"aBbcnnbnn\", \"b\", \"$\", 1, 1, False)  'returns \"aB$cnnbnn\""
+msgstr "MsgBox Replace (\"aBbcnnbnn\", \"b\", \"$\", 1, 1, False)   'Vrne \"aB$cnnbnn\""
 
 #: replace.xhp
 msgctxt ""
@@ -36950,16 +37014,16 @@ msgctxt ""
 "replace.xhp\n"
 "par_id571552552467647\n"
 "help.text"
-msgid "REM * only when lowercase (parameter 6), hence second occurrence of \"b\""
-msgstr "REM * le če je mali (parameter 6), zatorej je zamenjana le druga pojavitev \"b\""
+msgid "REM * only when lowercase (compare=False), hence second occurrence of \"b\""
+msgstr "REM * le če je zapisan z malimi znaki (compare=False), zatorej je zamenjana le druga pojavitev \"b\""
 
 #: replace.xhp
 msgctxt ""
 "replace.xhp\n"
 "par_id71552552474769\n"
 "help.text"
-msgid "REM * only first (respecting case) occurrence (parameter 5)"
-msgstr "REM * in sicer le njegova prva (izmed mali črk) pojavitev (parameter 5)"
+msgid "REM * only first (respecting case) occurrence (count=1)"
+msgstr "REM * in sicer le njegova prva (izmed mali črk) pojavitev (count=1)"
 
 #: replace.xhp
 msgctxt ""
@@ -36968,6 +37032,22 @@ msgctxt ""
 "help.text"
 msgid "REM returns D*FGHI because the search starts at position 4, which is also the start of the returned string."
 msgstr "REM vrne D*FGHI, ker se iskanje začne na mestu 4, ki je tudi začetek vrnjenega niza."
+
+#: replace.xhp
+msgctxt ""
+"replace.xhp\n"
+"bas_id491622734884707\n"
+"help.text"
+msgid "MsgBox Replace(\"aBbcnnbnn\", \"b\", \"$£\", compare:=False)  'returns \"aB$£cnn$£nn\""
+msgstr "MsgBox Replace(\"aBbcnnbnn\", \"b\", \"$£\", compare:=False)  'Vrne \"aB$£cnn$£nn\""
+
+#: replace.xhp
+msgctxt ""
+"replace.xhp\n"
+"bas_id341622734993202\n"
+"help.text"
+msgid "REM Replace all (count = -1) \"b\" with \"$£\" respecting casing (compare=False) starting from first letter (start=1)"
+msgstr "REM Zamenjaj vse (count = -1) \"b\" z \"$£\", upoštevajoč velike/male črke (compare=False) od prve črke naprej (start=1)"
 
 #: special_vba_func.xhp
 msgctxt ""
@@ -37094,7 +37174,7 @@ msgctxt ""
 "special_vba_func.xhp\n"
 "bm_id051920170358346963\n"
 "help.text"
-msgid "<bookmark_value>VBA Functions;Mathematical Functions</bookmark_value>  <bookmark_value>VBA Functions;formatting numbers</bookmark_value>  <bookmark_value>VBA Functions;partitioning numbers</bookmark_value>"
+msgid "<bookmark_value>VBA Functions;Mathematical Functions</bookmark_value><bookmark_value>VBA Functions;formatting numbers</bookmark_value><bookmark_value>VBA Functions;partitioning numbers</bookmark_value>"
 msgstr "<bookmark_value>funkcije VBA;matematične funkcije</bookmark_value><bookmark_value>funkcije VBA;oblikovanje števil</bookmark_value><bookmark_value>funkcije VBA;razdeljevanje števil</bookmark_value>"
 
 #: special_vba_func.xhp
@@ -37161,6 +37241,302 @@ msgctxt ""
 msgid "Example:"
 msgstr "Primer:"
 
+#: strconv.xhp
+msgctxt ""
+"strconv.xhp\n"
+"tit\n"
+"help.text"
+msgid "StrConv Function [VBA]"
+msgstr "Funkcija StrConv [VBA]"
+
+#: strconv.xhp
+msgctxt ""
+"strconv.xhp\n"
+"bm_id941622761814292\n"
+"help.text"
+msgid "<bookmark_value>StrConv function</bookmark_value>"
+msgstr "<bookmark_value>funkcija StrConv</bookmark_value>"
+
+#: strconv.xhp
+msgctxt ""
+"strconv.xhp\n"
+"hd_id791622761498015\n"
+"help.text"
+msgid "<link href=\"text/sbasic/shared/strconv.xhp\" name=\"StrConv Function\">StrConv Function</link>"
+msgstr "<link href=\"text/sbasic/shared/strconv.xhp\" name=\"Funkcija StrConv\">Funkcija StrConv</link>"
+
+#: strconv.xhp
+msgctxt ""
+"strconv.xhp\n"
+"par_id621622761498018\n"
+"help.text"
+msgid "<variable id=\"variable name\">Convert a string as specified by a conversion type.</variable>"
+msgstr "<variable id=\"variable name\">Pretvori niz, kot ga določa vrsta pretvorbe.</variable>"
+
+#: strconv.xhp
+msgctxt ""
+"strconv.xhp\n"
+"par_id771622762489917\n"
+"help.text"
+msgid "StrConv(Text, Conversion, [ LCID ])"
+msgstr "StrConv(Besedilo, Pretvorba, [ LCID ])"
+
+#: strconv.xhp
+msgctxt ""
+"strconv.xhp\n"
+"par_id421622762822934\n"
+"help.text"
+msgid "<emph>Text</emph>: Any valid string expression."
+msgstr "<emph>Besedilo:</emph> poljuben veljaven izraz vrste String (niz)."
+
+#: strconv.xhp
+msgctxt ""
+"strconv.xhp\n"
+"par_id671622762931475\n"
+"help.text"
+msgid "<emph>Conversion</emph>: The type of conversion to perform, as defined in the table below."
+msgstr "<emph>Pretvorba</emph>: vrsta pretvorbe, ki jo želite izvesti, kot je določeno v spodnji tabeli."
+
+#: strconv.xhp
+msgctxt ""
+"strconv.xhp\n"
+"par_id531622763145456\n"
+"help.text"
+msgid "Conversion"
+msgstr "Pretvorba"
+
+#: strconv.xhp
+msgctxt ""
+"strconv.xhp\n"
+"par_id131622763145457\n"
+"help.text"
+msgid "Value"
+msgstr "Vrednost"
+
+#: strconv.xhp
+msgctxt ""
+"strconv.xhp\n"
+"par_id411622763145457\n"
+"help.text"
+msgid "Description"
+msgstr "Opis"
+
+#: strconv.xhp
+msgctxt ""
+"strconv.xhp\n"
+"par_id421622763145458\n"
+"help.text"
+msgid "Converts <emph>Text</emph> characters to uppercase."
+msgstr "Pretvori znake <emph>besedila</emph> v velike črke."
+
+#: strconv.xhp
+msgctxt ""
+"strconv.xhp\n"
+"par_id251622763427976\n"
+"help.text"
+msgid "Converts <emph>Text</emph> characters lowercase."
+msgstr "Pretvori znake <emph>besedila</emph> v male črke."
+
+#: strconv.xhp
+msgctxt ""
+"strconv.xhp\n"
+"par_id531622764070154\n"
+"help.text"
+msgid "Converts the first letter of every word in <emph>Text</emph> to uppercase."
+msgstr "Pretvori prvo črko vsake besede <emph>besedilu</emph> v velike črke."
+
+#: strconv.xhp
+msgctxt ""
+"strconv.xhp\n"
+"par_id881622764192628\n"
+"help.text"
+msgid "Converts narrow (<link href=\"text/shared/00/00000005.xhp#halfwidth\" name=\"halfwidth\">half-width</link>) characters in <emph>Text</emph> to wide (<link href=\"text/shared/00/00000005.xhp#halfwidth\" name=\"halfwidth\">full-width</link>) characters."
+msgstr "Pretvori ozke znake (<link href=\"text/shared/00/00000005.xhp#halfwidth\" name=\"Znaki polovične širine\">znake polovične širine</link>) v <emph>besedilu</emph> v široke znake (<link href=\"text/shared/00/00000005.xhp#halfwidth\" name=\"Znaki polovične širine\">znake polne širine</link>)."
+
+#: strconv.xhp
+msgctxt ""
+"strconv.xhp\n"
+"par_id71622764459352\n"
+"help.text"
+msgid "Converts wide (<link href=\"text/shared/00/00000005.xhp#halfwidth\" name=\"halfwidth\">full-width</link>) characters in <emph>Text</emph> to narrow (<link href=\"text/shared/00/00000005.xhp#halfwidth\" name=\"halfwidth\">half-width</link>) characters."
+msgstr "Pretvori široke znake (<link href=\"text/shared/00/00000005.xhp#halfwidth\" name=\"Znaki polovične širine\">znake polne širine</link>) v <emph>besedilu</emph> v ozke znake (<link href=\"text/shared/00/00000005.xhp#halfwidth\" name=\"Znaki polovične širine\">znake polovične širine</link>)."
+
+#: strconv.xhp
+msgctxt ""
+"strconv.xhp\n"
+"par_id371622764565366\n"
+"help.text"
+msgid "Converts Hiragana characters in <emph>Text</emph> to Katakana characters."
+msgstr "Pretvori znake Hiragana v <emph>besedilu</emph> v znake Katakana."
+
+#: strconv.xhp
+msgctxt ""
+"strconv.xhp\n"
+"par_id911622764728794\n"
+"help.text"
+msgid "Converts Katakana characters in <emph>Text</emph> to Hiragana characters."
+msgstr "Pretvori znake Katakana v <emph>besedilu</emph> v znake Hiragana."
+
+#: strconv.xhp
+msgctxt ""
+"strconv.xhp\n"
+"par_id21622764841321\n"
+"help.text"
+msgid "Converts <emph>Text</emph> characters to Unicode characters using the default code page of the system."
+msgstr "Pretvori znake v <emph>besedilu</emph> v znake Unicode z uporabo privzete kodne strani sistema."
+
+#: strconv.xhp
+msgctxt ""
+"strconv.xhp\n"
+"par_id901622764984846\n"
+"help.text"
+msgid "vbFromUnicode"
+msgstr "vbFromUnicode"
+
+#: strconv.xhp
+msgctxt ""
+"strconv.xhp\n"
+"par_id281622764984846\n"
+"help.text"
+msgid "128"
+msgstr "128"
+
+#: strconv.xhp
+msgctxt ""
+"strconv.xhp\n"
+"par_id221622764991492\n"
+"help.text"
+msgid "Converts <emph>Text</emph> characters from Unicode to the default code page of the system."
+msgstr "Pretvori znake v <emph>besedilu</emph> iz Unicode v privzeto kodno stran sistema."
+
+#: strconv.xhp
+msgctxt ""
+"strconv.xhp\n"
+"par_id761622765118156\n"
+"help.text"
+msgid "<emph>LCID</emph> Optional. The Locale ID in decimal number. If this parameter is omitted, it assumes the system Locale ID. Refer to the file <link href=\"https://opengrok.libreoffice.org/xref/core/l10ntools/source/ulfconv/msi-encodinglist.txt\" name=\"LCID\">msi-encodinglist.txt</link> for the available LCID values."
+msgstr "<emph>LCID</emph> Neobvezno. ID krajevnih nastavitev v desetiški obliki. Če ta parameter izpustite, predvideva ID krajevnih nastavitev sistema. Za možne vrednosti LCID glejte datoteko <link href=\"https://opengrok.libreoffice.org/xref/core/l10ntools/source/ulfconv/msi-encodinglist.txt\" name=\"LCID\">msi-encodinglist.txt</link>."
+
+#: strconv.xhp
+msgctxt ""
+"strconv.xhp\n"
+"par_id311622770486052\n"
+"help.text"
+msgid "REM Converts narrow (single-byte) characters in string to wide"
+msgstr "REM Pretvori znake polovične širine (enojni bajt) v nizu v znake polne širine"
+
+#: strconv.xhp
+msgctxt ""
+"strconv.xhp\n"
+"par_id231622770493491\n"
+"help.text"
+msgid "REM Converts wide (double-byte) characters in string to narrow (single-byte) characters"
+msgstr "REM Pretvori znake polne širine (dvojni bajt) v nizu v znake polovične širine"
+
+#: strconv.xhp
+msgctxt ""
+"strconv.xhp\n"
+"par_id871622770498992\n"
+"help.text"
+msgid "REM Converts Hiragana characters in string to Katakana characters"
+msgstr "REM Pretvori znake Hiragana v nizu v znake Katakana"
+
+#: strconv.xhp
+msgctxt ""
+"strconv.xhp\n"
+"par_id351622770504087\n"
+"help.text"
+msgid "REM Converts Katakana characters in string to Hiragana characters"
+msgstr "REM Pretvori znake Katakana v nizu v znake Hiragana"
+
+#: thisdbdoc.xhp
+msgctxt ""
+"thisdbdoc.xhp\n"
+"tit\n"
+"help.text"
+msgid "ThisDatabaseDocument object"
+msgstr "Predmet ThisDatabaseDocument"
+
+#: thisdbdoc.xhp
+msgctxt ""
+"thisdbdoc.xhp\n"
+"N0089\n"
+"help.text"
+msgid "<bookmark_value>ThisDatabaseDocument</bookmark_value>            <bookmark_value>API; Database document</bookmark_value>"
+msgstr "<bookmark_value>ThisDatabaseDocument</bookmark_value><bookmark_value>API; dokument zbirke podatkov</bookmark_value>"
+
+#: thisdbdoc.xhp
+msgctxt ""
+"thisdbdoc.xhp\n"
+"hd_id401544551916353\n"
+"help.text"
+msgid "<link href=\"text/sbasic/shared/thisdbdoc.xhp\" name=\"ThisDatabaseDocument\">ThisDatabaseDocument object</link>"
+msgstr "<link href=\"text/sbasic/shared/thisdbdoc.xhp\" name=\"Predmet ThisDatabaseDocument\">Predmet ThisDatabaseDocument</link>"
+
+#: thisdbdoc.xhp
+msgctxt ""
+"thisdbdoc.xhp\n"
+"N0091\n"
+"help.text"
+msgid "<literal>ThisDatabaseDocument</literal> addresses the active <literal>Base</literal> document whose properties can be read and set, and whose methods can be called."
+msgstr "<literal>ThisDatabaseDocument</literal> naslavlja dejavni dokument vrste <literal>Base</literal>, katerega lastnosti je moč brati in določati ter katerega metode je možno klicati."
+
+#: thisdbdoc.xhp
+msgctxt ""
+"thisdbdoc.xhp\n"
+"par_id241622646033201\n"
+"help.text"
+msgid "<literal>ThisDatabaseDocument</literal> returns an object of type <link href=\"https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1sdb_1_1OfficeDatabaseDocument.html\" name=\"XOfficeDatabaseDocument interface\">com.sun.star.sdb.XOfficeDatabaseDocument</link>."
+msgstr "<literal>ThisDatabaseDocument</literal> vrne predmet <link href=\"https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1sdb_1_1OfficeDatabaseDocument.html\" name=\"Vmesnik XOfficeDatabaseDocument\">com.sun.star.sdb.XOfficeDatabaseDocument</link>."
+
+#: thisdbdoc.xhp
+msgctxt ""
+"thisdbdoc.xhp\n"
+"par_id241622797081182\n"
+"help.text"
+msgid "When the active window does not relate to a Base document, <literal>ThisDatabaseDocument</literal> returns <literal>Nothing</literal>."
+msgstr "Če se dejavno okno ne nanaša na dokument programa Base, <literal>ThisDatabaseDocument</literal> vrne <literal>Nothing</literal>."
+
+#: thisdbdoc.xhp
+msgctxt ""
+"thisdbdoc.xhp\n"
+"par_id871622796485123\n"
+"help.text"
+msgid "When the active window is the Basic IDE, <literal>ThisDatabaseDocument</literal> object returns the database owning the current script."
+msgstr "Če je dejavno okno Basic IDE, predmet <literal>ThisDatabaseDocument</literal> vrne zbirko podatkov, ki si lasti trenutni skript."
+
+#: thisdbdoc.xhp
+msgctxt ""
+"thisdbdoc.xhp\n"
+"par_id631622806529469\n"
+"help.text"
+msgid "Opening current database \"formName\" and maximizing it can be achieved as shown:"
+msgstr "Trenutno zbirko podatkov formName odprete in jo maksimizirate na naslednji način:"
+
+#: thisdbdoc.xhp
+msgctxt ""
+"thisdbdoc.xhp\n"
+"par_id251622800540402\n"
+"help.text"
+msgid "<link href=\"text/sbasic/shared/03132200.xhp\" name=\"ThisComponent object\">ThisComponent</link> object"
+msgstr "Predmet <link href=\"text/sbasic/shared/03132200.xhp\" name=\"Predmet ThisComponent\">ThisComponent</link>"
+
+#: thisdbdoc.xhp
+msgctxt ""
+"thisdbdoc.xhp\n"
+"par_id101622646874083\n"
+"help.text"
+msgid "<link href=\"https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1sdb_1_1OfficeDatabaseDocument.html\" name=\"OfficeDatabaseDocument API service\">com.sun.star.sdb.OfficeDatabaseDocument</link> API service"
+msgstr "Storitev API <link href=\"https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1sdb_1_1OfficeDatabaseDocument.html\" name=\"Storitev API OfficeDatabaseDocument\">com.sun.star.sdb.OfficeDatabaseDocument</link>"
+
+#: thisdbdoc.xhp
+msgctxt ""
+"thisdbdoc.xhp\n"
+"par_id581622646875379\n"
+"help.text"
+msgid "<link href=\"https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1document_1_1OfficeDocument.html\" name=\"OfficeDocument API service\">com.sun.star.document.OfficeDocument</link> API service"
+msgstr "Storitev API <link href=\"https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1document_1_1OfficeDocument.html\" name=\"Storitev API OfficeDocument\">com.sun.star.document.OfficeDocument</link>"
+
 #: uno_objects.xhp
 msgctxt ""
 "uno_objects.xhp\n"
@@ -37196,6 +37572,30 @@ msgstr "Funkcije, predmeti in storitve za UNO (angl. Unified Network Objects)."
 #: uno_objects.xhp
 msgctxt ""
 "uno_objects.xhp\n"
+"hd_id121622648046670\n"
+"help.text"
+msgid "%PRODUCTNAME Global Objects"
+msgstr "Globalni predmeti %PRODUCTNAME"
+
+#: uno_objects.xhp
+msgctxt ""
+"uno_objects.xhp\n"
+"hd_id121622648046680\n"
+"help.text"
+msgid "Active document Objects"
+msgstr "Predmeti dejavnega dokumenta"
+
+#: uno_objects.xhp
+msgctxt ""
+"uno_objects.xhp\n"
+"par_id481622648684689\n"
+"help.text"
+msgid "The following objects can be used from the active document."
+msgstr "Iz dejavnega dokumenta lahko uporabite naslednje predmete."
+
+#: uno_objects.xhp
+msgctxt ""
+"uno_objects.xhp\n"
 "hd_id91572461246639\n"
 "help.text"
 msgid "<link href=\"text/sbasic/shared/03131900.xhp#basicdialogs\" name=\"basicanddialog\">BasicLibraries Object</link>"
@@ -37208,6 +37608,22 @@ msgctxt ""
 "help.text"
 msgid "<link href=\"text/sbasic/shared/03131900.xhp#basicdialogs\" name=\"basicanddialog\">DialogLibraries Object</link>"
 msgstr "<link href=\"text/sbasic/shared/03131900.xhp#basicdialogs\" name=\"basicanddialog\">Predmet DialogLibraries</link>"
+
+#: uno_objects.xhp
+msgctxt ""
+"uno_objects.xhp\n"
+"hd_id151622648087678\n"
+"help.text"
+msgid "UNO Methods"
+msgstr "Metode UNO"
+
+#: uno_objects.xhp
+msgctxt ""
+"uno_objects.xhp\n"
+"par_id481622648684690\n"
+"help.text"
+msgid "Use the following methods to manage or query Unified Network Objects (UNO)."
+msgstr "Uporabie naslednje metode za ravnanje ali poizvedovanje po predmetih UNO (angl. Unified Network Objects)."
 
 #: uno_objects.xhp
 msgctxt ""
