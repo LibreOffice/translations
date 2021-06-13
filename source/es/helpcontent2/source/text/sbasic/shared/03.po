@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2021-05-31 15:15+0200\n"
-"PO-Revision-Date: 2021-05-31 13:28+0000\n"
+"POT-Creation-Date: 2021-06-11 23:56+0200\n"
+"PO-Revision-Date: 2021-06-13 09:10+0000\n"
 "Last-Translator: Adolfo Jayme Barrientos <fito@libreoffice.org>\n"
 "Language-Team: Spanish <https://translations.documentfoundation.org/projects/libo_help-master/textsbasicshared03/es/>\n"
 "Language: es\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Accelerator-Marker: ~\n"
-"X-Generator: LibreOffice\n"
+"X-Generator: Weblate 4.6.2\n"
 "X-POOTLE-MTIME: 1548211825.000000\n"
 
 #. ViEWM
@@ -133,14 +133,14 @@ msgctxt ""
 msgid "<variable id=\"ScriptForge_lib\"><link href=\"text/sbasic/shared/03/lib_ScriptForge.xhp\" name=\"ScriptForge library\">The <literal>ScriptForge</literal> Library</link></variable>"
 msgstr "<variable id=\"ScriptForge_lib\"><link href=\"text/sbasic/shared/03/lib_ScriptForge.xhp\" name=\"ScriptForge library\">La biblioteca <literal>ScriptForge</literal></link></variable>"
 
-#. nMjDG
+#. yE8bw
 #: lib_ScriptForge.xhp
 msgctxt ""
 "lib_ScriptForge.xhp\n"
 "bm_id491529070339774\n"
 "help.text"
-msgid "<bookmark_value>BASIC ScriptForge library</bookmark_value>"
-msgstr "<bookmark_value>biblioteca ScriptForge de Basic</bookmark_value>"
+msgid "<bookmark_value>BASIC ScriptForge library</bookmark_value>        <bookmark_value>Python scriptforge module</bookmark_value>"
+msgstr ""
 
 #. BtMUU
 #: lib_ScriptForge.xhp
@@ -150,6 +150,15 @@ msgctxt ""
 "help.text"
 msgid "ScriptForge libraries build up an extensible collection of macro scripting resources for %PRODUCTNAME to be invoked from Basic macros or Python scripts."
 msgstr "Las bibliotecas de ScriptForge constituyen una amplia colección de recursos de programación para %PRODUCTNAME que pueden invocarse desde macros escritas en BASIC o secuencias de órdenes escritas en Python."
+
+#. YwSXj
+#: lib_ScriptForge.xhp
+msgctxt ""
+"lib_ScriptForge.xhp\n"
+"par_id1001623412767893\n"
+"help.text"
+msgid "To learn more about how to create and execute Python scripts using the <literal>ScriptForge</literal> library, read the <embedvar href=\"text/sbasic/shared/03/sf_intro.xhp#title\"/> help page."
+msgstr ""
 
 #. wKZM6
 #: lib_ScriptForge.xhp
@@ -2329,6 +2338,15 @@ msgctxt ""
 msgid "If a Base document is already open, it is possible to instantiate the <literal>Base</literal> service directly:"
 msgstr ""
 
+#. DrqrF
+#: sf_base.xhp
+msgctxt ""
+"sf_base.xhp\n"
+"par_id871623102536956\n"
+"help.text"
+msgid "The examples above can be translated to Python as follows:"
+msgstr ""
+
 #. f8Esv
 #: sf_base.xhp
 msgctxt ""
@@ -2363,6 +2381,51 @@ msgctxt ""
 "par_id431619037334440\n"
 "help.text"
 msgid "The code snippet below prints the names of all form documents in the current Base document."
+msgstr ""
+
+#. jsh8d
+#: sf_base.xhp
+msgctxt ""
+"sf_base.xhp\n"
+"pyc_id691623103639534\n"
+"help.text"
+msgid "bas = CreateScriptService(\"Basic\")"
+msgstr ""
+
+#. Cw4jD
+#: sf_base.xhp
+msgctxt ""
+"sf_base.xhp\n"
+"pyc_id101623103639206\n"
+"help.text"
+msgid "doc = CreateScriptService(\"Document\", bas.ThisDataBaseDocument)"
+msgstr ""
+
+#. D446T
+#: sf_base.xhp
+msgctxt ""
+"sf_base.xhp\n"
+"pyc_id901623103639390\n"
+"help.text"
+msgid "myForms = oDoc.FormDocuments()"
+msgstr ""
+
+#. BCyAZ
+#: sf_base.xhp
+msgctxt ""
+"sf_base.xhp\n"
+"pyc_id791623103639701\n"
+"help.text"
+msgid "for formName in myForms:"
+msgstr ""
+
+#. pJKNZ
+#: sf_base.xhp
+msgctxt ""
+"sf_base.xhp\n"
+"pyc_id741623103639861\n"
+"help.text"
+msgid "bas.MsgBox(formName)"
 msgstr ""
 
 #. DQb6z
@@ -2401,22 +2464,22 @@ msgctxt ""
 msgid "A <literal>SFDocuments.Form</literal> object representing the form specified in the <literal>Form</literal> argument."
 msgstr ""
 
-#. mKXZE
+#. pEtwt
 #: sf_base.xhp
 msgctxt ""
 "sf_base.xhp\n"
 "par_id861619037838260\n"
 "help.text"
-msgid "<emph>FormDocument:</emph> The name of a valid form document as a case-sensitive string."
+msgid "<emph>formdocument:</emph> The name of a valid form document as a case-sensitive string."
 msgstr ""
 
-#. BtBVu
+#. L3csm
 #: sf_base.xhp
 msgctxt ""
 "sf_base.xhp\n"
 "par_id281619037857187\n"
 "help.text"
-msgid "<emph>Form:</emph> The name or index number of the form stored in the form document. If this argument is absent, the method will return a list with the names of all forms available in the form document."
+msgid "<emph>form:</emph> The name or index number of the form stored in the form document. If this argument is absent, the method will return a list with the names of all forms available in the form document."
 msgstr ""
 
 #. K4nQh
@@ -2428,22 +2491,13 @@ msgctxt ""
 msgid "Although it is possible to use index numbers to refer to forms, this is only recommended when there is just one form in the form document. If there are two or more forms, it is preferable to use the form name instead."
 msgstr ""
 
-#. vDKoa
+#. DoxrV
 #: sf_base.xhp
 msgctxt ""
 "sf_base.xhp\n"
-"bas_id231619200162092\n"
+"par_id21623104676805\n"
 "help.text"
-msgid "' Returns a list of all forms in the form document \"myFormDocument\""
-msgstr ""
-
-#. Hwr96
-#: sf_base.xhp
-msgctxt ""
-"sf_base.xhp\n"
-"bas_id31619200259812\n"
-"help.text"
-msgid "' Returns an instance of the Form service representing the form \"myForm\""
+msgid "The first line of the example below returns a list of all forms in the form document \"myFormDocument\". The second line returns an instance of the Form service representing the form \"myForm\"."
 msgstr ""
 
 #. 9jA9n
@@ -2455,13 +2509,13 @@ msgctxt ""
 msgid "Returns an instance of the <link href=\"text/sbasic/shared/03/sf_database.xhp\" name=\"Database service\"><literal>Database</literal> service</link> that allows the execution of SQL commands on the database defined and/or stored in the current Base document"
 msgstr ""
 
-#. FdXAK
+#. 9Bncy
 #: sf_base.xhp
 msgctxt ""
 "sf_base.xhp\n"
 "par_id731619098073221\n"
 "help.text"
-msgid "<emph>User, Password:</emph> Optional login parameters as strings. The default value for both parameters is an empty string \"\"."
+msgid "<emph>user, password:</emph> Optional login parameters as strings. The default value for both parameters is an empty string \"\"."
 msgstr ""
 
 #. UbzRD
@@ -2482,6 +2536,15 @@ msgctxt ""
 msgid "'   ... Run queries, SQL statements, ..."
 msgstr ""
 
+#. DA8ob
+#: sf_base.xhp
+msgctxt ""
+"sf_base.xhp\n"
+"pyc_id351623104861223\n"
+"help.text"
+msgid "'   ... Run queries, SQL statements, ..."
+msgstr ""
+
 #. mBphD
 #: sf_base.xhp
 msgctxt ""
@@ -2491,13 +2554,13 @@ msgctxt ""
 msgid "Returns <literal>True</literal> if the specified <literal>FormDocument</literal> is  currently open."
 msgstr ""
 
-#. 7nHnE
+#. njjFg
 #: sf_base.xhp
 msgctxt ""
 "sf_base.xhp\n"
 "par_id981619098545701\n"
 "help.text"
-msgid "<emph>FormDocument:</emph> The name of a FormDocument to be checked, as a case-sensitive string."
+msgid "<emph>formdocument:</emph> The name of a <literal>FormDocument</literal> to be checked, as a case-sensitive string."
 msgstr ""
 
 #. RS3kj
@@ -2518,22 +2581,22 @@ msgctxt ""
 msgid "If the form document is already open, it is activated without changing its mode. The method returns <literal>True</literal> if the form document could be opened."
 msgstr ""
 
-#. EizHx
+#. dUE6w
 #: sf_base.xhp
 msgctxt ""
 "sf_base.xhp\n"
 "par_id941619099797810\n"
 "help.text"
-msgid "<emph>FormDocument:</emph> The name of the <literal>FormDocument</literal> to be opened, as a case-sensitive string."
+msgid "<emph>formDocument:</emph> The name of the <literal>FormDocument</literal> to be opened, as a case-sensitive string."
 msgstr ""
 
-#. BNeps
+#. Coxpu
 #: sf_base.xhp
 msgctxt ""
 "sf_base.xhp\n"
 "par_id981619099816849\n"
 "help.text"
-msgid "<emph>DesignMode:</emph> If this argument is <literal>True</literal> the <literal>FormDocument</literal> will be opened in design mode."
+msgid "<emph>designmode:</emph> If this argument is <literal>True</literal> the <literal>FormDocument</literal> will be opened in design mode."
 msgstr ""
 
 #. B29ng
@@ -2860,13 +2923,13 @@ msgctxt ""
 msgid "UNO<br/>object"
 msgstr "Objeto<br/>de UNO"
 
-#. cLAgG
+#. AA95E
 #: sf_basic.xhp
 msgctxt ""
 "sf_basic.xhp\n"
 "par_id541619006255653\n"
 "help.text"
-msgid "<link href=\"text/sbasic/shared/stardesktop.xhp\" name=\"StarDesktop\"><literal>StarDesktop</literal></link> object represents LibreOfficeDev Start Center."
+msgid "<link href=\"text/sbasic/shared/stardesktop.xhp\" name=\"StarDesktop\"><literal>StarDesktop</literal></link> object represents %PRODUCTNAME Start Center."
 msgstr ""
 
 #. vXq8C
@@ -2877,6 +2940,78 @@ msgctxt ""
 "help.text"
 msgid "List of Methods in the Basic Service"
 msgstr "Lista de métodos en el servicio Basic"
+
+#. GvjSD
+#: sf_basic.xhp
+msgctxt ""
+"sf_basic.xhp\n"
+"par_id71621894830071\n"
+"help.text"
+msgid "Converts a numeric expression or a string to a <literal>datetime</literal>.<literal>datetime</literal> Python native object."
+msgstr ""
+
+#. SVk4F
+#: sf_basic.xhp
+msgctxt ""
+"sf_basic.xhp\n"
+"par_id431621896441258\n"
+"help.text"
+msgid "This method exposes the Basic builtin function <link href=\"text/sbasic/shared/03100300.xhp\" name=\"CDate_Basic\">CDate</link> to Python scripts."
+msgstr ""
+
+#. xvPTA
+#: sf_basic.xhp
+msgctxt ""
+"sf_basic.xhp\n"
+"par_id401621896675880\n"
+"help.text"
+msgid "<emph>expression</emph>: a numeric expression or a string representing a date."
+msgstr ""
+
+#. aBGSG
+#: sf_basic.xhp
+msgctxt ""
+"sf_basic.xhp\n"
+"par_id481621950748686\n"
+"help.text"
+msgid "Converts a UNO date/time representation to a <literal>datetime.datetime</literal> Python native object."
+msgstr ""
+
+#. qhCRh
+#: sf_basic.xhp
+msgctxt ""
+"sf_basic.xhp\n"
+"par_id41621950816227\n"
+"help.text"
+msgid "<emph>unodate</emph>: A UNO date/time object of one of the following types: <literal>com.sun.star.util.DateTime</literal>, <literal>com.sun.star.util.Date</literal> or <literal>com.sun.star.util.Time</literal>"
+msgstr ""
+
+#. GQ2hL
+#: sf_basic.xhp
+msgctxt ""
+"sf_basic.xhp\n"
+"par_id281621952224847\n"
+"help.text"
+msgid "The following example creates a <literal>com.sun.star.util.DateTime</literal> object and converts it to a <literal>datetime.datetime</literal> Python object."
+msgstr ""
+
+#. JXsJN
+#: sf_basic.xhp
+msgctxt ""
+"sf_basic.xhp\n"
+"par_id741621952469980\n"
+"help.text"
+msgid "Converts a date representation into a <literal>com.sun.star.util.DateTime</literal> object."
+msgstr ""
+
+#. 7LW9r
+#: sf_basic.xhp
+msgctxt ""
+"sf_basic.xhp\n"
+"par_id511621952524000\n"
+"help.text"
+msgid "<emph>date</emph>: A Python date/time object of one of the following types: <literal>datetime.datetime</literal>, <literal>datetime.date</literal>, <literal>datetime.time</literal>, <literal>float (time.time)</literal> or <literal>time.struct_time</literal>."
+msgstr ""
 
 #. vaMxs
 #: sf_basic.xhp
@@ -3031,24 +3166,6 @@ msgctxt ""
 msgid "A number."
 msgstr "Un número."
 
-#. BuEML
-#: sf_basic.xhp
-msgctxt ""
-"sf_basic.xhp\n"
-"pyc_id641618564383315\n"
-"help.text"
-msgid "diffDays = svc.DateDiff('d', date1, date2)"
-msgstr ""
-
-#. qePoV
-#: sf_basic.xhp
-msgctxt ""
-"sf_basic.xhp\n"
-"pyc_id151618564392035\n"
-"help.text"
-msgid "print(diffDays)"
-msgstr ""
-
 #. KPEWi
 #: sf_basic.xhp
 msgctxt ""
@@ -3103,15 +3220,6 @@ msgctxt ""
 msgid "Computes a date value from a date string."
 msgstr "Calcula un dato de fecha a partir de una cadena de fecha."
 
-#. QwSFJ
-#: sf_basic.xhp
-msgctxt ""
-"sf_basic.xhp\n"
-"hd_id151618673970234\n"
-"help.text"
-msgid "<embedvar href=\"text/sbasic/shared/00000003.xhp#functvalue\"/>"
-msgstr ""
-
 #. qTtuh
 #: sf_basic.xhp
 msgctxt ""
@@ -3120,15 +3228,6 @@ msgctxt ""
 "help.text"
 msgid "The computed date."
 msgstr "La fecha calculada."
-
-#. DGgj3
-#: sf_basic.xhp
-msgctxt ""
-"sf_basic.xhp\n"
-"pyc_id931618674563379\n"
-"help.text"
-msgid "print(dt)"
-msgstr ""
 
 #. GuCbF
 #: sf_basic.xhp
@@ -3265,6 +3364,78 @@ msgctxt ""
 msgid "svc.MsgBox(\"{} - {} = {}\".format(ticks_end, ticks_ini,ticks_end - ticks_ini))"
 msgstr ""
 
+#. t3ADN
+#: sf_basic.xhp
+msgctxt ""
+"sf_basic.xhp\n"
+"bm_id61618905161499\n"
+"help.text"
+msgid "<bookmark_value>Basic service;GlobalScope.BasicLibraries</bookmark_value>"
+msgstr ""
+
+#. KRHNc
+#: sf_basic.xhp
+msgctxt ""
+"sf_basic.xhp\n"
+"par_id741622396277528\n"
+"help.text"
+msgid "Returns the UNO object containing all shared Basic libraries and modules."
+msgstr ""
+
+#. MCrF8
+#: sf_basic.xhp
+msgctxt ""
+"sf_basic.xhp\n"
+"par_id911622396571584\n"
+"help.text"
+msgid "This method is the Python equivalent to <literal>GlobalScope</literal>.<literal>BasicLibraries</literal> in Basic scripts."
+msgstr ""
+
+#. DEARA
+#: sf_basic.xhp
+msgctxt ""
+"sf_basic.xhp\n"
+"par_id281622398076950\n"
+"help.text"
+msgid "The following example loads the Gimmicks Basic library if it has not been loaded yet."
+msgstr ""
+
+#. ZaDVN
+#: sf_basic.xhp
+msgctxt ""
+"sf_basic.xhp\n"
+"bm_id61618905163671\n"
+"help.text"
+msgid "<bookmark_value>Basic service;GlobalScope.DialogLibraries</bookmark_value>"
+msgstr ""
+
+#. jusQK
+#: sf_basic.xhp
+msgctxt ""
+"sf_basic.xhp\n"
+"par_id381622397863419\n"
+"help.text"
+msgid "Returns the UNO object containing all shared dialog libraries."
+msgstr ""
+
+#. QEFwP
+#: sf_basic.xhp
+msgctxt ""
+"sf_basic.xhp\n"
+"par_id491622397863810\n"
+"help.text"
+msgid "This method is the Python equivalent to <literal>GlobalScope</literal>.<literal>DialogLibraries</literal> in Basic scripts."
+msgstr ""
+
+#. 8ozVo
+#: sf_basic.xhp
+msgctxt ""
+"sf_basic.xhp\n"
+"par_id811622398234384\n"
+"help.text"
+msgid "The following example shows a message box with the names of all available dialog libraries."
+msgstr ""
+
 #. Vb2CW
 #: sf_basic.xhp
 msgctxt ""
@@ -3346,13 +3517,13 @@ msgctxt ""
 msgid "<bookmark_value>Basic service;Now</bookmark_value>"
 msgstr ""
 
-#. 2FAgQ
+#. f96nJ
 #: sf_basic.xhp
 msgctxt ""
 "sf_basic.xhp\n"
 "par_id191619084216660\n"
 "help.text"
-msgid "Returns the current system date and time as a date/time value."
+msgid "Returns the current system date and time as a <literal>datetime</literal>.<literal>datetime</literal> Python native object."
 msgstr ""
 
 #. qxE2n
@@ -3391,6 +3562,69 @@ msgctxt ""
 msgid "integer"
 msgstr "entero"
 
+#. SDu3C
+#: sf_basic.xhp
+msgctxt ""
+"sf_basic.xhp\n"
+"bm_id81618907850447\n"
+"help.text"
+msgid "<bookmark_value>Basic service;ThisComponent</bookmark_value>"
+msgstr ""
+
+#. 7wnpT
+#: sf_basic.xhp
+msgctxt ""
+"sf_basic.xhp\n"
+"par_id141622840830978\n"
+"help.text"
+msgid "If the current component refers to a %PRODUCTNAME document, this method returns the UNO object representing the document."
+msgstr ""
+
+#. 72GZE
+#: sf_basic.xhp
+msgctxt ""
+"sf_basic.xhp\n"
+"par_id961622841287976\n"
+"help.text"
+msgid "The method will return <literal>None</literal> when the current component does not correspond to a document."
+msgstr ""
+
+#. xbQ6U
+#: sf_basic.xhp
+msgctxt ""
+"sf_basic.xhp\n"
+"bm_id81618907858201\n"
+"help.text"
+msgid "<bookmark_value>Basic service;ThisDatabaseDocument</bookmark_value>"
+msgstr ""
+
+#. GXewr
+#: sf_basic.xhp
+msgctxt ""
+"sf_basic.xhp\n"
+"par_id271622912644859\n"
+"help.text"
+msgid "If the script is being executed from a Base document or any of its subcomponents this method returns the main component of the Base instance."
+msgstr ""
+
+#. 6MCpX
+#: sf_basic.xhp
+msgctxt ""
+"sf_basic.xhp\n"
+"par_id811622912819443\n"
+"help.text"
+msgid "This method returns <literal>None</literal> otherwise."
+msgstr ""
+
+#. q3CG8
+#: sf_basic.xhp
+msgctxt ""
+"sf_basic.xhp\n"
+"par_id201623153844931\n"
+"help.text"
+msgid "Visit the <link href=\"https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1sdb_1_1OfficeDatabaseDocument.html\" name=\"OfficeDatabaseDocument\">OfficeDatabaseDocument</link> API page to learn more about Base's main component structure."
+msgstr ""
+
 #. mAUuG
 #: sf_basic.xhp
 msgctxt ""
@@ -3418,24 +3652,6 @@ msgctxt ""
 msgid "<emph>obj</emph>: A variable or Uno object."
 msgstr ""
 
-#. erHE5
-#: sf_basic.xhp
-msgctxt ""
-"sf_basic.xhp\n"
-"par_id901618486941514\n"
-"help.text"
-msgid "<link href=\"text/sbasic/python/python_programming.xhp\" name=\"uno.fileUrlToSystemPath() method\">uno.fileUrlToSystemPath() method</link>"
-msgstr ""
-
-#. GFQ97
-#: sf_basic.xhp
-msgctxt ""
-"sf_basic.xhp\n"
-"par_id901618496841514\n"
-"help.text"
-msgid "<link href=\"text/sbasic/python/python_programming.xhp\" name=\"uno.systemPathToFileUrl() method\">uno.systemPathToFileUrl() method</link>"
-msgstr ""
-
 #. fMbAm
 #: sf_basic.xhp
 msgctxt ""
@@ -3443,42 +3659,6 @@ msgctxt ""
 "par_id951618554355538\n"
 "help.text"
 msgid "<link href=\"https://wiki.documentfoundation.org/Macros/General/IO_to_Screen\" name=\"Input/Output to Screen with Python\">Input/Output to Screen with Python</link> on the wiki"
-msgstr ""
-
-#. uruDr
-#: sf_basic.xhp
-msgctxt ""
-"sf_basic.xhp\n"
-"par_id610918486941514\n"
-"help.text"
-msgid "<link href=\"text/sbasic/python/python_programming.xhp\" name=\"XSCRIPTCONTEXT.getComponentContext() method\">XSCRIPTCONTEXT.getComponentContext() method</link>"
-msgstr ""
-
-#. UCnzE
-#: sf_basic.xhp
-msgctxt ""
-"sf_basic.xhp\n"
-"par_id901618484961514\n"
-"help.text"
-msgid "<link href=\"text/sbasic/python/python_programming.xhp\" name=\"uno.getComponentContext() method\">uno.getComponentContext() method</link>"
-msgstr ""
-
-#. 5GvY3
-#: sf_basic.xhp
-msgctxt ""
-"sf_basic.xhp\n"
-"par_id901648186941514\n"
-"help.text"
-msgid "<link href=\"text/sbasic/python/python_platform.xhp\" name=\"platform.system() method\">platform.system() method</link>"
-msgstr ""
-
-#. gsfQT
-#: sf_basic.xhp
-msgctxt ""
-"sf_basic.xhp\n"
-"par_id901816486941514\n"
-"help.text"
-msgid "<link href=\"text/sbasic/python/python_platform.xhp\" name=\"os.pathsep() method\">os.pathsep() method</link>"
 msgstr ""
 
 #. RYwFj
@@ -4777,6 +4957,96 @@ msgctxt ""
 msgid "Cells in the given range that contain text will be ignored by all of these functions. For example, the <literal>DCount</literal> method will not count cells with text, only numerical cells."
 msgstr ""
 
+#. BVKEy
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id501623063693649\n"
+"help.text"
+msgid "Depending on the parameters provided this method will return:"
+msgstr ""
+
+#. pBZm6
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id611623063742045\n"
+"help.text"
+msgid "A zero-based Array (or a tuple in Python) with the names of all the forms contained in a given sheet (if the <literal>form</literal> argument is absent)"
+msgstr ""
+
+#. FHWZs
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id641623063744536\n"
+"help.text"
+msgid "A <literal>SFDocuments.Form</literal> service instance representing the form specified as argument."
+msgstr ""
+
+#. YdQaD
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id441623090893210\n"
+"help.text"
+msgid "<emph>sheetname</emph>: The name of the sheet, as a string, from which the form will be retrieved."
+msgstr ""
+
+#. BV8GH
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id451623063459286\n"
+"help.text"
+msgid "<emph>form</emph>: The name or index corresponding to a form stored in the specified sheet. If this argument is absent, the method will return a list with the names of all forms available in the sheet."
+msgstr ""
+
+#. sFFyE
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id251623063305557\n"
+"help.text"
+msgid "In the following examples, the first line gets the names of all forms stored in \"Sheet1\" and the second line retrieves the <literal>Form</literal> object of the form named \"Form_A\" which is stored in \"Sheet1\"."
+msgstr ""
+
+#. G9yMh
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"bas_id191623063399519\n"
+"help.text"
+msgid "Set FormNames = oDoc.Forms(\"Sheet1\")"
+msgstr ""
+
+#. cFBZw
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"bas_id691623063399711\n"
+"help.text"
+msgid "Set FormA = oDoc.Forms(\"Sheet1\", \"Form_A\")"
+msgstr ""
+
+#. NY6Wb
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"pyc_id271623063215023\n"
+"help.text"
+msgid "form_names = doc.Forms(\"Sheet1\")"
+msgstr ""
+
+#. DQsCo
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"pyc_id961623063234990\n"
+"help.text"
+msgid "form_A = doc.Forms(\"Sheet1\", \"Form_A\")"
+msgstr ""
+
 #. y9kCE
 #: sf_calc.xhp
 msgctxt ""
@@ -5281,13 +5551,13 @@ msgctxt ""
 msgid "Removes an existing sheet from the document."
 msgstr ""
 
-#. H3eHf
+#. Gwe7Z
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id991621620588147\n"
 "help.text"
-msgid "<input>doc.RemoveSheet(sheetname: str): bool</input>"
+msgid "<input>svc.RemoveSheet(sheetname: str): bool</input>"
 msgstr ""
 
 #. dVxiA
@@ -9547,24 +9817,6 @@ msgctxt ""
 msgid "Service invocation"
 msgstr "Invocación del servicio"
 
-#. C9LQA
-#: sf_document.xhp
-msgctxt ""
-"sf_document.xhp\n"
-"par_id141610734722352\n"
-"help.text"
-msgid "Before using the <literal>Document</literal> service the <literal>ScriptForge</literal> library needs to be loaded using:"
-msgstr ""
-
-#. JFFek
-#: sf_document.xhp
-msgctxt ""
-"sf_document.xhp\n"
-"par_id591589191059889\n"
-"help.text"
-msgid "The <literal>Document</literal> service is closely related to the <literal>UI</literal> and <literal>FileSystem</literal> services of the <literal>ScriptForge</literal> library."
-msgstr ""
-
 #. X6BV3
 #: sf_document.xhp
 msgctxt ""
@@ -9574,50 +9826,50 @@ msgctxt ""
 msgid "Below are three variants of how the <literal>Document</literal> service can be invoked."
 msgstr ""
 
-#. HevYB
+#. o39cT
 #: sf_document.xhp
 msgctxt ""
 "sf_document.xhp\n"
-"bas_id571589191739218\n"
+"par_id181622816732197\n"
 "help.text"
-msgid "'1) From the ScriptForge.UI service:"
-msgstr "'1) Desde el servicio ScriptForge.UI:"
+msgid "Using the <literal>getDocument</literal> method from the <literal>ScriptForge</literal>.<literal>UI</literal> service:"
+msgstr ""
 
-#. 6TA5q
+#. 6AZF9
 #: sf_document.xhp
 msgctxt ""
 "sf_document.xhp\n"
-"bas_id331589191766183\n"
+"par_id181622818236233\n"
 "help.text"
-msgid "'Alternatively, using the CreateDocument or OpenDocument methods"
-msgstr "'Alternativamente, mediante los métodos CreateDocument u OpenDocument"
+msgid "Alternatively you can use the methods <literal>CreateDocument</literal> and <literal>OpenDocument</literal> from the <literal>UI</literal> service."
+msgstr ""
 
-#. rAPFN
+#. kv6B9
 #: sf_document.xhp
 msgctxt ""
 "sf_document.xhp\n"
-"bas_id571589191774268\n"
+"par_id691622816765571\n"
 "help.text"
-msgid "'2) Directly if the document is already open"
-msgstr "'2) Directamente si el documento ya se ha abierto"
+msgid "Directly if the document is already open."
+msgstr ""
 
-#. CWFJB
+#. yFDEW
 #: sf_document.xhp
 msgctxt ""
 "sf_document.xhp\n"
-"bas_id471598109329789\n"
+"par_id821622816825012\n"
 "help.text"
-msgid "'3) From a macro triggered by a document event"
-msgstr "'3) A partir de una macro desencadenada por un suceso del documento"
+msgid "From a macro triggered by a document event."
+msgstr ""
 
-#. LyvNw
+#. FxfW2
 #: sf_document.xhp
 msgctxt ""
 "sf_document.xhp\n"
-"par_id71611090922315\n"
+"par_id831622816562430\n"
 "help.text"
-msgid "The use of the prefix \"<literal>SFDocuments.</literal>\" while calling the service is optional."
-msgstr "El uso del prefijo «<literal>SFDocuments.</literal>» al llamar el servicio es facultativo."
+msgid "The <literal>Document</literal> service is closely related to the <literal>UI</literal> and <literal>FileSystem</literal> services."
+msgstr ""
 
 #. QF9FG
 #: sf_document.xhp
@@ -9627,6 +9879,42 @@ msgctxt ""
 "help.text"
 msgid "Except when the document was closed by program with the CloseDocument method (it is then superfluous), it is recommended to free resources after use:"
 msgstr ""
+
+#. 2odf5
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
+"pyc_id551622819064247\n"
+"help.text"
+msgid "def RunEvent(event)"
+msgstr ""
+
+#. oHQNa
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
+"pyc_id311622819064554\n"
+"help.text"
+msgid "doc = CreateScriptService(\"SFDocuments.DocumentEvent\", Event)"
+msgstr ""
+
+#. sHApS
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
+"pyc_id221622819064967\n"
+"help.text"
+msgid "# (...)"
+msgstr ""
+
+#. LyvNw
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
+"par_id71611090922315\n"
+"help.text"
+msgid "The use of the prefix \"<literal>SFDocuments.</literal>\" while calling the service is optional."
+msgstr "El uso del prefijo «<literal>SFDocuments.</literal>» al llamar el servicio es facultativo."
 
 #. z3oxC
 #: sf_document.xhp
@@ -9871,6 +10159,15 @@ msgctxt ""
 msgid "The example below prints all the properties of a document. Note that the <literal>oDoc</literal> object returned by the <literal>UI.OpenDocument</literal> method is a <literal>SFDocuments.Document</literal> object."
 msgstr ""
 
+#. eqL5J
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
+"par_id571622826920742\n"
+"help.text"
+msgid "To access document properties in a Python script the user needs to directly access them using their names, as shown below:"
+msgstr ""
+
 #. wmiy9
 #: sf_document.xhp
 msgctxt ""
@@ -9943,40 +10240,112 @@ msgctxt ""
 msgid "Returns <literal>True</literal> if the document was successfully closed."
 msgstr ""
 
-#. F2emZ
+#. Wt7L9
 #: sf_document.xhp
 msgctxt ""
 "sf_document.xhp\n"
 "par_id361589200121646\n"
 "help.text"
-msgid "<emph>SaveAsk</emph> : If <literal>True</literal> (default), the user is invited to confirm if the changes should be written on disk. This argument is ignored if the document was not modified."
+msgid "<emph>saveask</emph> : If <literal>True</literal> (default), the user is invited to confirm if the changes should be written on disk. This argument is ignored if the document was not modified."
 msgstr ""
 
-#. AxyoV
+#. STq4L
 #: sf_document.xhp
 msgctxt ""
 "sf_document.xhp\n"
-"par_id901599410483300\n"
+"bas_id751622827903730\n"
 "help.text"
-msgid "This method is applicable <emph>only for Base documents</emph>."
+msgid "End If"
 msgstr ""
 
-#. 47ud8
+#. vp56r
 #: sf_document.xhp
 msgctxt ""
 "sf_document.xhp\n"
-"par_id891599410524092\n"
+"par_id501623063693649\n"
 "help.text"
-msgid "It returns a <literal>SFDatabases.Database</literal> service instance giving access to the execution of SQL commands on the database defined and/or embedded in the actual Base document."
+msgid "Depending on the parameters provided this method will return:"
 msgstr ""
 
-#. cdu6C
+#. wrCnS
 #: sf_document.xhp
 msgctxt ""
 "sf_document.xhp\n"
-"par_id721599410266911\n"
+"par_id611623063742045\n"
 "help.text"
-msgid "<emph>User, Password</emph> : The login parameters. Both default to \"\"."
+msgid "A zero-based Array (or a tuple in Python) with the names of all the forms contained in the document (if the <literal>form</literal> argument is absent)"
+msgstr ""
+
+#. hgt6o
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
+"par_id641623063744536\n"
+"help.text"
+msgid "A <literal>SFDocuments.Form</literal> service instance representing the form specified as argument."
+msgstr ""
+
+#. 4WbGV
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
+"par_id821623076570573\n"
+"help.text"
+msgid "This method is applicable only for Writer documents. Calc and Base documents have their own <literal>Forms</literal> method in the <link href=\"text/sbasic/shared/03/sf_calc.xhp#Forms\" name=\"Calc_Forms\">Calc</link> and <link href=\"text/sbasic/shared/03/sf_base.xhp#Forms\" name=\"Base_Forms\">Base</link> services, respectively."
+msgstr ""
+
+#. fRBBF
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
+"par_id451623063459286\n"
+"help.text"
+msgid "<emph>form</emph>: The name or index corresponding to a form stored in the document. If this argument is absent, the method will return a list with the names of all forms available in the document."
+msgstr ""
+
+#. CELkA
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
+"par_id251623063305557\n"
+"help.text"
+msgid "In the following examples, the first line gets the names of all forms in the document and the second line retrieves the <literal>Form</literal> object of the form named \"Form_A\"."
+msgstr ""
+
+#. 8GoMk
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
+"bas_id191623063399519\n"
+"help.text"
+msgid "Set FormNames = oDoc.Forms()"
+msgstr ""
+
+#. uCcpo
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
+"bas_id691623063399711\n"
+"help.text"
+msgid "Set FormA = oDoc.Forms(\"Form_A\")"
+msgstr ""
+
+#. 9gHMA
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
+"pyc_id271623063215023\n"
+"help.text"
+msgid "form_names = doc.Forms()"
+msgstr ""
+
+#. H3946
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
+"pyc_id961623063234990\n"
+"help.text"
+msgid "form_A = doc.Forms(\"Form_A\")"
 msgstr ""
 
 #. Nmwv9
@@ -10006,22 +10375,22 @@ msgctxt ""
 msgid "The document itself does not need to be active to be able to run commands."
 msgstr ""
 
-#. qAb3U
+#. QSiFB
 #: sf_document.xhp
 msgctxt ""
 "sf_document.xhp\n"
 "par_id401589202413575\n"
 "help.text"
-msgid "<emph>Command</emph> : Case-sensitive string containing the command in English. The command itself is not checked for correctness. If nothing happens after the command call, then the command is probably wrong."
+msgid "<emph>command</emph>: Case-sensitive string containing the command in English. The command itself is not checked for correctness. If nothing happens after the command call, then the command is probably wrong."
 msgstr ""
 
-#. nZ8Yc
+#. wQF35
 #: sf_document.xhp
 msgctxt ""
 "sf_document.xhp\n"
 "par_id721611153068137\n"
 "help.text"
-msgid "The following example runs the \"SelectData\" command in a Calc sheet named \"My_File.ods\", which will result in the selection of the data area based on the currently selected cell."
+msgid "The following example runs the \"SelectData\" command in a Calc sheet named \"MyFile.ods\", which will result in the selection of the data area based on the currently selected cell."
 msgstr ""
 
 #. pbYAn
@@ -10096,49 +10465,49 @@ msgctxt ""
 msgid "The document itself does not need to be active to run this method."
 msgstr "El documento en sí no necesita estar activo para ejecutar este método."
 
-#. cNiiE
+#. 7tX6c
 #: sf_document.xhp
 msgctxt ""
 "sf_document.xhp\n"
 "par_id331589203370950\n"
 "help.text"
-msgid "<emph>FileName</emph> : A string containing the file name to be used. It must follow the <literal>SF_FileSystem.FileNaming</literal> notation."
+msgid "<emph>filename</emph>: A string containing the file name to be used. It must follow the <literal>SF_FileSystem.FileNaming</literal> notation."
 msgstr ""
 
-#. AKbDA
+#. niFkh
 #: sf_document.xhp
 msgctxt ""
 "sf_document.xhp\n"
 "par_id631589204010142\n"
 "help.text"
-msgid "<emph>Overwrite</emph> : If <literal>True</literal>, the destination file may be overwritten (default = <literal>False</literal>)."
+msgid "<emph>overwrite</emph>: If <literal>True</literal>, the destination file may be overwritten (default = <literal>False</literal>)."
 msgstr ""
 
-#. zkP8D
+#. snX8q
 #: sf_document.xhp
 msgctxt ""
 "sf_document.xhp\n"
 "par_id811589204084107\n"
 "help.text"
-msgid "<emph>Password</emph> (*) : A non-space string to protect the document."
-msgstr "<emph>Password</emph> (*): una cadena de caracteres distinta del espacio para proteger el documento."
+msgid "<emph>password</emph> (*): A non-space string to protect the document."
+msgstr ""
 
-#. ntVEA
+#. g3wDy
 #: sf_document.xhp
 msgctxt ""
 "sf_document.xhp\n"
 "par_id451589204163772\n"
 "help.text"
-msgid "<emph>FilterName</emph> (*) : The name of a filter that should be used for saving the document. If this argument is passed, then the filter must exist."
+msgid "<emph>filtername</emph> (*): The name of a filter that should be used for saving the document. If this argument is passed, then the filter must exist."
 msgstr ""
 
-#. N6WPC
+#. qZaAJ
 #: sf_document.xhp
 msgctxt ""
 "sf_document.xhp\n"
 "par_id981589204207800\n"
 "help.text"
-msgid "<emph>FilterOptions</emph> (*) : An optional string of options associated with the filter."
+msgid "<emph>filteroptions</emph> (*): An optional string of options associated with the filter."
 msgstr ""
 
 #. FJywB
@@ -10168,49 +10537,49 @@ msgctxt ""
 msgid "The document itself does not need to be active to run this method."
 msgstr "El documento en sí no necesita estar activo para ejecutar este método."
 
-#. CPc2g
+#. FAjhF
 #: sf_document.xhp
 msgctxt ""
 "sf_document.xhp\n"
 "par_id301589205147697\n"
 "help.text"
-msgid "<emph>FileName</emph> : A string containing the file name to be used. It must follow the <literal>SF_FileSystem.FileNaming</literal> notation."
+msgid "<emph>filename</emph>: A string containing the file name to be used. It must follow the <literal>SF_FileSystem.FileNaming</literal> notation."
 msgstr ""
 
-#. GEybm
+#. zr6Rx
 #: sf_document.xhp
 msgctxt ""
 "sf_document.xhp\n"
 "par_id851589205147348\n"
 "help.text"
-msgid "<emph>Overwrite</emph> : If <literal>True</literal>, the destination file may be overwritten (default = <literal>False</literal>)."
+msgid "<emph>overwrite</emph>: If <literal>True</literal>, the destination file may be overwritten (default = <literal>False</literal>)."
 msgstr ""
 
-#. PPc3f
+#. k2uRD
 #: sf_document.xhp
 msgctxt ""
 "sf_document.xhp\n"
 "par_id821589205147330\n"
 "help.text"
-msgid "<emph>Password</emph> (*) : A non-space string to protect the document."
-msgstr "<emph>Password</emph> (*): una cadena de caracteres distinta del espacio para proteger el documento."
+msgid "<emph>password</emph> (*): A non-space string to protect the document."
+msgstr ""
 
-#. RKCha
+#. eyrsV
 #: sf_document.xhp
 msgctxt ""
 "sf_document.xhp\n"
 "par_id67158920514729\n"
 "help.text"
-msgid "<emph>FilterName</emph> (*) : The name of a filter that should be used for saving the document. If this argument is passed, then the filter must exist."
+msgid "<emph>filtername</emph> (*): The name of a filter that should be used for saving the document. If this argument is passed, then the filter must exist."
 msgstr ""
 
-#. hXUjB
+#. vA4NU
 #: sf_document.xhp
 msgctxt ""
 "sf_document.xhp\n"
 "par_id881589205147911\n"
 "help.text"
-msgid "<emph>FilterOptions</emph> (*) : An optional string of options associated with the filter."
+msgid "<emph>filteroptions</emph> (*): An optional string of options associated with the filter."
 msgstr ""
 
 #. WCH7E
@@ -10742,7 +11111,7 @@ msgctxt ""
 "pyc_id731621449899901\n"
 "help.text"
 msgid "print(\"Hello world!\")"
-msgstr ""
+msgstr "print(\"¡Hola, mundo!\")"
 
 #. aXDEK
 #: sf_exception.xhp
@@ -12607,14 +12976,14 @@ msgctxt ""
 msgid "Definitions"
 msgstr "Definiciones"
 
-#. VEC49
+#. GYDbT
 #: sf_form.xhp
 msgctxt ""
 "sf_form.xhp\n"
 "par_id951618172906010\n"
 "help.text"
-msgid "Forms are usually created in Base documents, but they can be added to Writer and Calc documents as well. The way a <literal>FormDocument</literal> is handled depends on the %PRODUCTNAME component where it is stored."
-msgstr "Los formularios se suelen crear dentro de documentos de Base, pero es posible añadirlos también a documentos de Writer y de Calc. La manera en que se manipula el <literal>FormDocument</literal> depende del componente de %PRODUCTNAME en que se almacene."
+msgid "Forms are usually created in Base documents, but they can be added to Writer and Calc documents as well."
+msgstr ""
 
 #. nKUdb
 #: sf_form.xhp
@@ -12659,15 +13028,6 @@ msgctxt ""
 "par_id221618173444457\n"
 "help.text"
 msgid "A <literal>FormDocument</literal> can be seen as a set of forms that provide access to datasets such as database tables and queries from within %PRODUCTNAME documents. The names of forms and subforms inside a FormDocument can be accessed using the <link href=\"text/shared/02/01170600.xhp\" name=\"FormNavigator\">Form Navigator</link>."
-msgstr ""
-
-#. dKBXK
-#: sf_form.xhp
-msgctxt ""
-"sf_form.xhp\n"
-"par_id721618175731903\n"
-"help.text"
-msgid "In Calc documents, each sheet can contain a single <literal>FormDocument</literal>. A Writer document contains only one <literal>FormDocument</literal>, which is the document itself."
 msgstr ""
 
 #. AMFVt
@@ -12724,13 +13084,13 @@ msgctxt ""
 msgid "In Writer documents"
 msgstr "En documentos de Writer"
 
-#. Ju2Kj
+#. 8s4VD
 #: sf_form.xhp
 msgctxt ""
 "sf_form.xhp\n"
 "par_id51616767892693\n"
 "help.text"
-msgid "The code snippet below shows how to access the form named <literal>Form1</literal> that is inside the single <literal>FormDocument</literal> of a Writer file:"
+msgid "The code snippet below shows how to access the form named <literal>Form1</literal> that is inside a Writer file:"
 msgstr ""
 
 #. NFikt
@@ -12740,6 +13100,15 @@ msgctxt ""
 "par_id531618179517628\n"
 "help.text"
 msgid "Forms can be accessed by their names or by their indices, as shown below:"
+msgstr ""
+
+#. cYS6G
+#: sf_form.xhp
+msgctxt ""
+"sf_form.xhp\n"
+"pyc_id691622014677169\n"
+"help.text"
+msgid "my_form = doc.Forms(0)"
 msgstr ""
 
 #. 8PHy6
@@ -12760,13 +13129,22 @@ msgctxt ""
 msgid "In Calc documents"
 msgstr "En documentos de Calc"
 
-#. L3Wdt
+#. yCpnG
 #: sf_form.xhp
 msgctxt ""
 "sf_form.xhp\n"
 "par_id481618179851104\n"
 "help.text"
-msgid "Each sheet in a Calc file is a single <literal>FormDocument</literal>. Hence, the <literal>Forms</literal> method requires two arguments, the first indicating the sheet name and the second specifying the form name."
+msgid "A form in a Calc file must have a unique name inside its sheet. Hence, the <literal>Forms</literal> method requires two arguments, the first indicating the sheet name and the second specifying the form name."
+msgstr ""
+
+#. i9Um4
+#: sf_form.xhp
+msgctxt ""
+"sf_form.xhp\n"
+"par_id51622028165429\n"
+"help.text"
+msgid "This is achieved identically using Python:"
 msgstr ""
 
 #. 2fB94
@@ -12778,13 +13156,13 @@ msgctxt ""
 msgid "In Base documents"
 msgstr "En documentos de Base"
 
-#. Faenc
+#. J3Btp
 #: sf_form.xhp
 msgctxt ""
 "sf_form.xhp\n"
 "par_id711616768164987\n"
 "help.text"
-msgid "A <literal>FormDocument</literal> inside a Base document is accessed by its name. The following example opens the form document named <literal>thisFormDocument</literal> and access the form <literal>MainForm</literal>:"
+msgid "A <literal>FormDocument</literal> inside a Base document is accessed by its name. The following example opens the form document named <literal>thisFormDocument</literal> and accesses the form <literal>MainForm</literal>:"
 msgstr ""
 
 #. pbtEM
@@ -12805,13 +13183,13 @@ msgctxt ""
 msgid "' Or, alternatively, to access the form by its index ..."
 msgstr ""
 
-#. XXgZ3
+#. 2v2aG
 #: sf_form.xhp
 msgctxt ""
 "sf_form.xhp\n"
 "par_id991618249636036\n"
 "help.text"
-msgid "To perform any action on a form using the <literal>Form</literal> service, the <literal>FormDocument</literal> must have been opened either manually by the user or programmatically in a user script. The latter can be done in a variety of ways, such as by creating an instance of the <literal>Document</literal> service or by calling the methods <literal>OpenDocument</literal> (<literal>UI</literal> service) and <literal>OpenFormDocument</literal> (<literal>Document</literal> service)."
+msgid "To perform any action on a form using the <literal>Form</literal> service, the <literal>FormDocument</literal> must have been opened either manually by the user or programmatically in a user script. The latter can be done by calling the <literal>OpenFormDocument</literal> method of the <link href=\"text/sbasic/shared/03/sf_base.xhp\" name=\"ScriptForge Base Service\"><literal>Base</literal> service</link>."
 msgstr ""
 
 #. DDerZ
@@ -12821,6 +13199,78 @@ msgctxt ""
 "par_id11618180564274\n"
 "help.text"
 msgid "To access a given subform of a form use the <literal>SubForms</literal> method. Note that in the example below <literal>mySubForm</literal> is a new instance of the <literal>Form</literal> service."
+msgstr ""
+
+#. e7fcY
+#: sf_form.xhp
+msgctxt ""
+"sf_form.xhp\n"
+"par_id681622028653480\n"
+"help.text"
+msgid "Previous examples translate in Python as:"
+msgstr ""
+
+#. Af2SY
+#: sf_form.xhp
+msgctxt ""
+"sf_form.xhp\n"
+"pyc_id501622028742999\n"
+"help.text"
+msgid "db = CreateScriptService('SFDocuments.Document', XSCRIPTCONTEXT.getDocument())"
+msgstr ""
+
+#. ebc4K
+#: sf_form.xhp
+msgctxt ""
+"sf_form.xhp\n"
+"pyc_id811622808499801\n"
+"help.text"
+msgid "#  The statement below is necessary only if the form hasn't been opened yet"
+msgstr ""
+
+#. j3BCx
+#: sf_form.xhp
+msgctxt ""
+"sf_form.xhp\n"
+"pyc_id671622028743191\n"
+"help.text"
+msgid "form_doc = db.OpenFormDocument('thisFormDocument')"
+msgstr ""
+
+#. mSnqt
+#: sf_form.xhp
+msgctxt ""
+"sf_form.xhp\n"
+"pyc_id431622028743374\n"
+"help.text"
+msgid "form = form_doc.Forms('thisFormDocument', 'MainForm')"
+msgstr ""
+
+#. GdyX6
+#: sf_form.xhp
+msgctxt ""
+"sf_form.xhp\n"
+"pyc_id511622808538351\n"
+"help.text"
+msgid "#  Or, alternatively, to access the form by its index ..."
+msgstr ""
+
+#. Bb4K4
+#: sf_form.xhp
+msgctxt ""
+"sf_form.xhp\n"
+"pyc_id681622028743582\n"
+"help.text"
+msgid "form = form_doc.Forms('thisFormDocument', 0)"
+msgstr ""
+
+#. FTwWJ
+#: sf_form.xhp
+msgctxt ""
+"sf_form.xhp\n"
+"pyc_id611622028743782\n"
+"help.text"
+msgid "sub_form = form.SubForms('mySubForm')"
 msgstr ""
 
 #. QFFzk
@@ -12840,6 +13290,24 @@ msgctxt ""
 "help.text"
 msgid "To invoke the <literal>Form</literal> service when a form event takes place:"
 msgstr "Para invocar el servicio <literal>Form</literal> cuando acaece un suceso de formulario:"
+
+#. k2fKf
+#: sf_form.xhp
+msgctxt ""
+"sf_form.xhp\n"
+"par_id721623150543016\n"
+"help.text"
+msgid "It is recommended to free resources after use of the Form service."
+msgstr ""
+
+#. pF9UQ
+#: sf_form.xhp
+msgctxt ""
+"sf_form.xhp\n"
+"par_id221623150547406\n"
+"help.text"
+msgid "This operation is done implicitly when a form document is closed with the <literal>CloseFormDocument()</literal> method described below."
+msgstr ""
 
 #. GueeT
 #: sf_form.xhp
@@ -13552,22 +14020,13 @@ msgctxt ""
 msgid "'Activates the form"
 msgstr ""
 
-#. JxwJG
-#: sf_form.xhp
-msgctxt ""
-"sf_form.xhp\n"
-"par_id661618228523419\n"
-"help.text"
-msgid "To use the method Activate with other %PRODUCTNAME documents, read <link href=\"text/sbasic/shared/03/sf_form.xhp#ServiceInvocation\" name=\"FormServiceInvocation\">Service invocation</link> above."
-msgstr ""
-
-#. NQ629
+#. YHxMm
 #: sf_form.xhp
 msgctxt ""
 "sf_form.xhp\n"
 "par_id81618228720782\n"
 "help.text"
-msgid "<literal>ThisComponent</literal> is valid for Calc and Writer documents. For Base documents use <literal>ThisDataBaseDocument</literal>."
+msgid "<literal>ThisComponent</literal> applies to Calc and Writer documents. For Base documents use <literal>ThisDataBaseDocument</literal>."
 msgstr ""
 
 #. QznyJ
@@ -13597,13 +14056,13 @@ msgctxt ""
 msgid "The value returned by the <literal>Controls</literal> method depends on the arguments provided:"
 msgstr ""
 
-#. qQAnX
+#. YkyY2
 #: sf_form.xhp
 msgctxt ""
 "sf_form.xhp\n"
 "par_id421598179770993\n"
 "help.text"
-msgid "If the method is called <emph>without any arguments</emph>, then it returns the list of the controls contained in the form. Beware that the returned list does not contain any subform controls."
+msgid "If the method is called <emph>without arguments</emph>, then it returns the list of the controls contained in the form. Beware that the returned list does not contain any subform controls."
 msgstr ""
 
 #. SsiUX
@@ -13615,13 +14074,13 @@ msgctxt ""
 msgid "If the optional <literal>ControlName</literal> argument is provided, the method returns a <literal>FormControl</literal> class instance referring to the specified control."
 msgstr ""
 
-#. 7LRLD
+#. 7CFJU
 #: sf_form.xhp
 msgctxt ""
 "sf_form.xhp\n"
 "par_id1001584541257789\n"
 "help.text"
-msgid "<emph>ControlName</emph> : A valid control name as a case-sensitive string. If absent, the list of control names is returned as a zero-based array."
+msgid "<emph>controlname</emph> : A valid control name as a case-sensitive string. If absent, the list of control names is returned as a zero-based array."
 msgstr ""
 
 #. unh4B
@@ -13633,22 +14092,22 @@ msgctxt ""
 msgid "Return a <link href=\"text/sbasic/shared/03/sf_database.xhp\" name=\"DBService\"><literal>SFDatabases</literal>.<literal>Database</literal></link> instance giving access to the execution of SQL commands on the database the current form is connected to and/or that is stored in the current Base document."
 msgstr ""
 
-#. nXEAh
+#. fZRst
 #: sf_form.xhp
 msgctxt ""
 "sf_form.xhp\n"
 "par_id991616861417207\n"
 "help.text"
-msgid "Each form in a <literal>FormDocument</literal> has its own database connection, except in Base documents where they all share the same connection."
+msgid "Each form has its own database connection, except in Base documents where they all share the same connection."
 msgstr ""
 
-#. YeWdC
+#. wFSWb
 #: sf_form.xhp
 msgctxt ""
 "sf_form.xhp\n"
 "par_id701616861134906\n"
 "help.text"
-msgid "<emph>User, Password</emph> : The login parameters (Default = \"\")."
+msgid "<emph>user, password</emph>: The login optional parameters (Default = \"\")."
 msgstr ""
 
 #. 83Jju
@@ -13687,13 +14146,13 @@ msgctxt ""
 msgid "The form cursor is positioned on the next record. Returns <literal>True</literal> if successful."
 msgstr ""
 
-#. qRdTC
+#. a2gGn
 #: sf_form.xhp
 msgctxt ""
 "sf_form.xhp\n"
 "par_id271616863582607\n"
 "help.text"
-msgid "<emph>Offset</emph> : The number of records to go forward (Default = 1)."
+msgid "<emph>offset</emph>: The number of records to go forward (Default = 1)."
 msgstr ""
 
 #. e6huC
@@ -13705,13 +14164,13 @@ msgctxt ""
 msgid "The form cursor is positioned on the previous record. Returns <literal>True</literal> if successful."
 msgstr ""
 
-#. m47xh
+#. tAnVw
 #: sf_form.xhp
 msgctxt ""
 "sf_form.xhp\n"
 "par_id751616863794125\n"
 "help.text"
-msgid "<emph>Offset</emph> : The number of records to go backwards (Default = 1)."
+msgid "<emph>offset</emph>: The number of records to go backwards (Default = 1)."
 msgstr ""
 
 #. Kp4Wo
@@ -13721,6 +14180,15 @@ msgctxt ""
 "par_id811616864216529\n"
 "help.text"
 msgid "Reloads the current data from the database and refreshes the form. The cursor is positioned on the first record. Returns <literal>True</literal> if successful."
+msgstr ""
+
+#. Npc6x
+#: sf_form.xhp
+msgctxt ""
+"sf_form.xhp\n"
+"pyc_id401622550186725\n"
+"help.text"
+msgid "form.Requery()  # Python"
 msgstr ""
 
 #. 5gBGr
@@ -13741,22 +14209,22 @@ msgctxt ""
 msgid "If the method is called <emph>without any arguments</emph>, then it returns the list of subforms contained in the current form or subform instance."
 msgstr ""
 
-#. aVZ57
+#. AD3Q6
 #: sf_form.xhp
 msgctxt ""
 "sf_form.xhp\n"
 "par_id591616864510445\n"
 "help.text"
-msgid "If the optional <literal>Subform</literal> argument is provided, the method returns a new <literal>SFDocuments</literal>.<literal>Form</literal> instance based on the specified form/subform name or index."
+msgid "If the optional <literal>subform</literal> argument is provided, the method returns a new <literal>SFDocuments</literal>.<literal>Form</literal> instance based on the specified form/subform name or index."
 msgstr ""
 
-#. jhmRo
+#. NLwGt
 #: sf_form.xhp
 msgctxt ""
 "sf_form.xhp\n"
 "par_id341616864510747\n"
 "help.text"
-msgid "<emph>Subform</emph> : A subform stored in the current <literal>Form</literal> class instance given by its name or index."
+msgid "<emph>subform</emph> : A subform stored in the current <literal>Form</literal> class instance given by its name or index."
 msgstr ""
 
 #. 8Cxxs
@@ -13892,6 +14360,15 @@ msgctxt ""
 "par_id361598174756160\n"
 "help.text"
 msgid "The <literal>FormControl</literal> service is invoked from an existing <literal>Form</literal> service instance through its <literal>Controls</literal> method."
+msgstr ""
+
+#. 56bE7
+#: sf_formcontrol.xhp
+msgctxt ""
+"sf_formcontrol.xhp\n"
+"pyc_id721622556808773\n"
+"help.text"
+msgid "control.Value = 'Current Time = ' + strftime(\"%a, %d %b %Y %H:%M:%S\", localtime())"
 msgstr ""
 
 #. FaP92
@@ -15235,13 +15712,13 @@ msgctxt ""
 msgid "On the other hand, if a <literal>ControlName</literal> is provided, the method returns a <literal>FormControl</literal> class instance corresponding to the specified control."
 msgstr ""
 
-#. F8FfM
+#. eoLJG
 #: sf_formcontrol.xhp
 msgctxt ""
 "sf_formcontrol.xhp\n"
 "par_id1001584541257789\n"
 "help.text"
-msgid "<emph>ControlName</emph> : A valid control name as a case-sensitive string. If absent, the list of control names is returned as a zero-based array."
+msgid "<emph>controlname</emph>: A valid control name as a case-sensitive string. If absent, the list of control names is returned as a zero-based array."
 msgstr ""
 
 #. F4Sdy
@@ -15260,6 +15737,15 @@ msgctxt ""
 "par_id931618778110273\n"
 "help.text"
 msgid "' Returns a FormControl class instance corresponding to \"myCheckBox\""
+msgstr ""
+
+#. AGA7Z
+#: sf_formcontrol.xhp
+msgctxt ""
+"sf_formcontrol.xhp\n"
+"par_id391622559441530\n"
+"help.text"
+msgid "Using Python:"
 msgstr ""
 
 #. CprjV
@@ -15307,6 +15793,24 @@ msgctxt ""
 msgid "The first example reads the current value in a ComboBox containing city names and writes it to a FixedTest control in a Form:"
 msgstr ""
 
+#. B5QLA
+#: sf_formcontrol.xhp
+msgctxt ""
+"sf_formcontrol.xhp\n"
+"pyc_id991622562833004\n"
+"help.text"
+msgid "ui = CreateScriptService('ScriptForge.Basic')  # Basic-like methods"
+msgstr ""
+
+#. 8jneo
+#: sf_formcontrol.xhp
+msgctxt ""
+"sf_formcontrol.xhp\n"
+"pyc_id781622561048794\n"
+"help.text"
+msgid "lbl_city.Caption = \"Selected city: \" + combo_city.Value"
+msgstr ""
+
 #. kz9SK
 #: sf_formcontrol.xhp
 msgctxt ""
@@ -15314,6 +15818,573 @@ msgctxt ""
 "par_id251618776614814\n"
 "help.text"
 msgid "The following code snippet can be used to process RadioButton controls that share the same group name. In this example, suppose there are three radio buttons with names <literal>optA</literal>, <literal>optB</literal> and <literal>optC</literal> and we wish to display the caption of the selected control."
+msgstr ""
+
+#. hRhNC
+#: sf_formcontrol.xhp
+msgctxt ""
+"sf_formcontrol.xhp\n"
+"bas_id251618776933304\n"
+"help.text"
+msgid "MsgBox \"Selected option: \" & optControl.Caption"
+msgstr ""
+
+#. kxKPM
+#: sf_formcontrol.xhp
+msgctxt ""
+"sf_formcontrol.xhp\n"
+"pyc_id991622562822004\n"
+"help.text"
+msgid "ui = CreateScriptService('ScriptForge.Basic')  # Basic-like methods"
+msgstr ""
+
+#. QBAvs
+#: sf_formcontrol.xhp
+msgctxt ""
+"sf_formcontrol.xhp\n"
+"pyc_id441622562080419\n"
+"help.text"
+msgid "ui.MsgBox('Selected option: ' + control.Caption)"
+msgstr ""
+
+#. czP76
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"tit\n"
+"help.text"
+msgid "Creating Python Scripts with ScriptForge"
+msgstr ""
+
+#. 8BEWT
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"hd_id461623364876507\n"
+"help.text"
+msgid "<variable id=\"title\"><link href=\"text/sbasic/shared/03/sf_intro.xhp\" name=\"SF_Intro_Page\">Creating Python Scripts with <literal>ScriptForge</literal></link></variable>"
+msgstr ""
+
+#. 6JuA3
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"hd_id361623410405420\n"
+"help.text"
+msgid "Differences between Basic and Python"
+msgstr ""
+
+#. 3GzhB
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"par_id41623410443946\n"
+"help.text"
+msgid "The <link href=\"text/sbasic/shared/03/lib_ScriptForge.xhp\" name=\"SF_Lib\">ScriptForge library</link> is available both for Basic and Python. Most services, methods and properties work identically in both programming languages. However, due to differences in how each language works, <literal>ScriptForge</literal> users must be aware of some characteristics of the library when using Python:"
+msgstr ""
+
+#. HsKzK
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"par_id551623410718241\n"
+"help.text"
+msgid "<emph>Methods and Property names:</emph> In Python, all methods and properties can be used in lowercased, ProperCased or camelCased formats."
+msgstr ""
+
+#. Rg29x
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"par_id741623411104297\n"
+"help.text"
+msgid "<emph>Arguments:</emph> All keyword arguments passed on to methods are lowercased."
+msgstr ""
+
+#. C6VCu
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"par_id441623411216354\n"
+"help.text"
+msgid "<emph>Dates:</emph> All date objects are passed and returned as <literal>datetime.datetime</literal> native Python objects."
+msgstr ""
+
+#. FcX93
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"par_id891623411367669\n"
+"help.text"
+msgid "<emph>Arrays:</emph> One-dimensional arrays are passed and returned as tuples (which is an immutable object). Two-dimensional arrays are passed and returned as tuples of tuples."
+msgstr ""
+
+#. S6wwX
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"par_id981623411507442\n"
+"help.text"
+msgid "<emph>None:</emph> Python's <literal>None</literal> keyword is equivalent to Basic's <literal>Null</literal>, <literal>Empty</literal> or <literal>Nothing</literal>."
+msgstr ""
+
+#. 2G2uk
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"par_id21623411611447\n"
+"help.text"
+msgid "<emph>UNO objects:</emph> All UNO structures are exchanged between Basic and Python without any changes."
+msgstr ""
+
+#. WFDrN
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"par_id651623412069496\n"
+"help.text"
+msgid "<emph>Debugging:</emph> Whenever an error occurs in Python scripts that use <literal>ScriptForge</literal>, the error message provided by the Python execution stack displays the line of code that triggered the error. In Basic error messages do not display this information."
+msgstr ""
+
+#. ZzngK
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"par_id31623411828158\n"
+"help.text"
+msgid "Visit <embedvar href=\"text/sbasic/python/main0000.xhp#pythonscriptshelp\"/> for more information on Python scripting using %PRODUCTNAME."
+msgstr ""
+
+#. CZiTF
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"hd_id391623411150080\n"
+"help.text"
+msgid "Running Python scripts on %PRODUCTNAME"
+msgstr ""
+
+#. 2j29F
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"par_id411623364895100\n"
+"help.text"
+msgid "Depending on what you intend to achieve, you may choose one of the following approaches to running Python scripts in %PRODUCTNAME:"
+msgstr ""
+
+#. XHP4Z
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"par_id681623365274024\n"
+"help.text"
+msgid "<emph>Run Scripts inside the current %PRODUCTNAME process:</emph> Python scripts are executed from within the %PRODUCTNAME process by using the <menuitem>Tools - Macros - Run Macro</menuitem> menu or the APSO extension to call user scripts stored in the Python scripts folder. You can also use the APSO Python shell to interactively run Python scripts."
+msgstr ""
+
+#. pnXQT
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"par_id761623365278133\n"
+"help.text"
+msgid "<emph>Run Scripts separately from the %PRODUCTNAME process:</emph> Python scripts are executed from an external process that connects to an ongoing %PRODUCTNAME process using a socket."
+msgstr ""
+
+#. uyCPN
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"par_id631623365667011\n"
+"help.text"
+msgid "If you plan to run scripts from inside the %PRODUCTNAME process, it is recommended to install the <link href=\"https://extensions.libreoffice.org/en/extensions/show/apso-alternative-script-organizer-for-python\" name=\"APSO\">APSO (Alternative Script Organizer for Python) extension</link>. However, to develop Python scripts from outside %PRODUCTNAME, you can choose your preferred Python IDE."
+msgstr ""
+
+#. R4Rfk
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"hd_id431623365836802\n"
+"help.text"
+msgid "Running Scripts from inside the %PRODUCTNAME process"
+msgstr ""
+
+#. UFGaA
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"hd_id111623365861568\n"
+"help.text"
+msgid "Using the APSO extension"
+msgstr ""
+
+#. GAQwg
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"par_id681623365892513\n"
+"help.text"
+msgid "The easiest way to get started with Python scripting in %PRODUCTNAME is by installing the APSO extension. After installing it, open any %PRODUCTNAME component and go to <menuitem>Tools - Macros - Organize Python Scripts</menuitem>."
+msgstr ""
+
+#. iXiDt
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"par_id111623366334727\n"
+"help.text"
+msgid "In APSO's main window go to <menuitem>Menu - Python Shell</menuitem>."
+msgstr ""
+
+#. gbnEf
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"par_id931623366329927\n"
+"help.text"
+msgid "Alternativelly you can open APSO using the default shortcut <keycode>Alt + Shift + F11</keycode>."
+msgstr ""
+
+#. TKAXE
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"par_id661623366478092\n"
+"help.text"
+msgid "Now you can start typing Python commands and the shell will print the corresponding output after each line of code is executed."
+msgstr ""
+
+#. zGCxS
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"par_id581623366559478\n"
+"help.text"
+msgid "To start using the <literal>ScriptForge</literal> library, you need to import the <literal>CreateScriptService</literal> method, with which you will be able to access the services provided by the library. The example below uses the <literal>Basic</literal> service to display a message box."
+msgstr ""
+
+#. F7c8N
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"par_id701623366829587\n"
+"help.text"
+msgid "To run the example above, enter each line in the Python shell, one by one, pressing the Enter key after you type each line of code."
+msgstr ""
+
+#. tWENT
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"par_id471623366906045\n"
+"help.text"
+msgid "Now you can start executing Python commands using any of the ScriptForge services. For example, the code snippet bellow uses the <literal>UI</literal> service to create a blank writer document."
+msgstr ""
+
+#. N5A9E
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"hd_id961623367376768\n"
+"help.text"
+msgid "Creating Python script files"
+msgstr "Crear archivos de secuencia de órdenes de Python"
+
+#. xqmvY
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"par_id821623367433650\n"
+"help.text"
+msgid "You can create your own Python files and edit them with your preferred text editor. Later you can call them from within any %PRODUCTNAME component."
+msgstr ""
+
+#. arDpS
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"par_id51623367560321\n"
+"help.text"
+msgid "The first step is to locate where your user scripts are stored. For that, refer to <link href=\"text/sbasic/python/python_locations.xhp\" name=\"Python_Scripts_Path\">Python Scripts Organization and Location</link> help page."
+msgstr ""
+
+#. NdM4Y
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"par_id821623367773032\n"
+"help.text"
+msgid "Now you can create a text file inside your Python user scripts folder, for instance <emph>sf_test.py</emph>, and start typing your scripts."
+msgstr ""
+
+#. rFyBp
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"par_id271623367917630\n"
+"help.text"
+msgid "Next is a simple example that gets the numeric value from a Calc cell and increments it by 1. Simply type the following code into the <emph>sf_test.py</emph> file."
+msgstr ""
+
+#. EQxF2
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"par_id171623368511426\n"
+"help.text"
+msgid "This example creates the <literal>increment_cell</literal> function. Note that <literal>g_exportedScripts</literal> is a tuple that tells which functions will be displayed in %PRODUCTNAME as user scripts."
+msgstr ""
+
+#. UUnv4
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"par_id471623368615244\n"
+"help.text"
+msgid "To run this script from within a Calc document:"
+msgstr ""
+
+#. FynYm
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"par_id811623368677444\n"
+"help.text"
+msgid "Create or open a Calc file."
+msgstr ""
+
+#. qdWEL
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"par_id281623368679141\n"
+"help.text"
+msgid "Enter some numeric value into cell \"A1\" in the current sheet."
+msgstr ""
+
+#. bFQSh
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"par_id111623368679893\n"
+"help.text"
+msgid "Go to <menuitem>Tools - Macros - Run Macros</menuitem> ."
+msgstr "Diríjase a <menuitem>Herramientas ▸ Macros ▸ Ejecutar macros</menuitem>."
+
+#. xLTy8
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"par_id421623368680565\n"
+"help.text"
+msgid "Choose My Macros - sf_test in the library selector. Then choose the <literal>increment_cell</literal> function under the <menuitem>Macro Name</menuitem>  list."
+msgstr ""
+
+#. EaBEU
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"par_id131623368875763\n"
+"help.text"
+msgid "Click <keycode>Run</keycode>. Note that the value in cell \"A1\" was incremented by 1."
+msgstr ""
+
+#. 9FozC
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"par_id781623368934689\n"
+"help.text"
+msgid "You can also use APSO to run Python scripts in a similar manner:"
+msgstr ""
+
+#. Lyyxc
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"par_id501623369002537\n"
+"help.text"
+msgid "First open APSO by going to <menuitem>Tools - Macros - Organize Python Scripts</menuitem>."
+msgstr "Primeramente, abra APSO yendo a <menuitem>Herramientas ▸ Macros ▸ Organizar secuencias de Python</menuitem>."
+
+#. 2H4ta
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"par_id521623369004825\n"
+"help.text"
+msgid "In the macro list, navigate to <menuitem>My Macros - sf_test - increment_cell</menuitem> ."
+msgstr ""
+
+#. ZhSaL
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"par_id101623369005929\n"
+"help.text"
+msgid "Click <menuitem>Execute</menuitem> ."
+msgstr "Pulse en <menuitem>Ejecutar</menuitem>."
+
+#. ujB4e
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"hd_id531623369208159\n"
+"help.text"
+msgid "Running Scripts separately from the %PRODUCTNAME process"
+msgstr ""
+
+#. 9yG9z
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"hd_id261623370168228\n"
+"help.text"
+msgid "Determining the Installation Path"
+msgstr ""
+
+#. 2ijCM
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"par_id261623369722023\n"
+"help.text"
+msgid "The first step to run scripts from a separate process is to find the folder where %PRODUCTNAME is installed. There are several ways to do that, but <literal>ScriptForge</literal> provides a quick way to identify your installation path. For that, open APSO's Python shell and type:"
+msgstr ""
+
+#. UEwkB
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"par_id81623370150730\n"
+"help.text"
+msgid "The output from the code above is the base directory where %PRODUCTNAME is installed. Now you need to add the \"program\" subfolder to the resulting path. This is the base folder from which you will run Python scripts from a separate process."
+msgstr ""
+
+#. EvDcx
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"par_id451623370201479\n"
+"help.text"
+msgid "For example, suppose you get <emph>/usr/lib/libreoffice/</emph> as the result from running the Python code above. Then you need to consider <emph>/usr/lib/libreoffice/program</emph> as the path to run your Python scripts."
+msgstr ""
+
+#. 6EYGe
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"hd_id231623370501084\n"
+"help.text"
+msgid "Start %PRODUCTNAME with socket settings"
+msgstr ""
+
+#. F94mp
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"par_id721623369245475\n"
+"help.text"
+msgid "To run Python scripts from a separate process, you need to start %PRODUCTNAME with a few additional options that specify the hostname and port through which the external process will communicate with the %PRODUCTNAME component process."
+msgstr ""
+
+#. mfbEM
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"par_id221623369584132\n"
+"help.text"
+msgid "Open the your operating system's command prompt, navigate to the program folder of your %PRODUCTNAME installation directory and type:"
+msgstr ""
+
+#. 6hDm4
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"par_id981623370706743\n"
+"help.text"
+msgid "The command above will start %PRODUCTNAME with a communication channel open so that other processes can exchange messages with it."
+msgstr ""
+
+#. SB5LE
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"par_id621623370871360\n"
+"help.text"
+msgid "Note that the previous example opens %PRODUCTNAME start center. If you want to open a specific component, for instance Writer, you can add the --writer flag to the command, as follows."
+msgstr ""
+
+#. cVRuV
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"par_id431623373618951\n"
+"help.text"
+msgid "Take note of the <literal>host</literal> and <literal>port</literal> parameters, which in this example are <emph>localhost</emph> and <emph>2021</emph>, respectively."
+msgstr ""
+
+#. Z7z5C
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"hd_id861623370468356\n"
+"help.text"
+msgid "Running an External Python Shell"
+msgstr ""
+
+#. eBmVz
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"par_id621623371253647\n"
+"help.text"
+msgid "Start the Python shell from within the <emph>program</emph> folder inside your %PRODUCTNAME installation path. Follow the steps <link href=\"text/sbasic/shared/03/sf_intro.xhp#InstallPath\" name=\"Install_Path\">above</link> to learn how to find your installation path."
+msgstr ""
+
+#. 69F7S
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"par_id11623373098602\n"
+"help.text"
+msgid "<emph>On Linux / Mac OS:</emph>"
+msgstr ""
+
+#. PFWiq
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"par_id311623373151552\n"
+"help.text"
+msgid "<emph>On Windows:</emph>"
+msgstr ""
+
+#. HGBuK
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"par_id791623373520018\n"
+"help.text"
+msgid "This will open the Python shell and now you can start typing commands that will be executed by %PRODUCTNAME. But first you need to set up the socket connection."
+msgstr ""
+
+#. s54tE
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"par_id351623373686414\n"
+"help.text"
+msgid "The second line of code above defines the <literal>host</literal> and <literal>port</literal> settings so that the Python shell can communicate with an ongoing %PRODUCTNAME process opened with the same socket settings."
+msgstr ""
+
+#. RiXDx
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"par_id721623373769471\n"
+"help.text"
+msgid "Now you can run other Python commands and they will be able to communicate with the %PRODUCTNAME process. For example:"
 msgstr ""
 
 #. VCRTD
@@ -20858,7 +21929,7 @@ msgctxt ""
 "hd_id511620762163390\n"
 "help.text"
 msgid "Constants"
-msgstr ""
+msgstr "Constantes"
 
 #. ziD2D
 #: sf_ui.xhp
@@ -20867,7 +21938,7 @@ msgctxt ""
 "par_id761620761856238\n"
 "help.text"
 msgid "Name"
-msgstr ""
+msgstr "Nombre"
 
 #. eBD6E
 #: sf_ui.xhp
@@ -20876,7 +21947,7 @@ msgctxt ""
 "par_id591620761856238\n"
 "help.text"
 msgid "Value"
-msgstr ""
+msgstr "Valor"
 
 #. 2DU4R
 #: sf_ui.xhp
@@ -20885,7 +21956,7 @@ msgctxt ""
 "par_id711620761856238\n"
 "help.text"
 msgid "Description"
-msgstr ""
+msgstr "Descripción"
 
 #. TGMq5
 #: sf_ui.xhp
@@ -20912,7 +21983,7 @@ msgctxt ""
 "par_id341620761856238\n"
 "help.text"
 msgid "Macros are always executed"
-msgstr ""
+msgstr "Las macros se ejecutan siempre"
 
 #. o7zQn
 #: sf_ui.xhp
@@ -20939,7 +22010,7 @@ msgctxt ""
 "par_id101620761893011\n"
 "help.text"
 msgid "Macros are never executed"
-msgstr ""
+msgstr "Las macros no se ejecutan nunca"
 
 #. EABYh
 #: sf_ui.xhp
@@ -21506,7 +22577,7 @@ msgctxt ""
 "bas_id651620333289753\n"
 "help.text"
 msgid "' Closes the Progress Bar window"
-msgstr ""
+msgstr "' Cierra la ventana de la barra de progreso"
 
 #. u3gZ8
 #: sf_ui.xhp
@@ -21515,7 +22586,7 @@ msgctxt ""
 "pyc_id761620333269236\n"
 "help.text"
 msgid "# Closes the Progress Bar window"
-msgstr ""
+msgstr "# Cierra la ventana de la barra de progreso"
 
 #. ZEG6t
 #: sf_ui.xhp
