@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: LibreOffice 7.2\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2021-06-11 13:43+0200\n"
-"PO-Revision-Date: 2021-06-12 09:19+0200\n"
+"POT-Creation-Date: 2021-06-18 10:44+0200\n"
+"PO-Revision-Date: 2021-06-19 12:55+0200\n"
 "Last-Translator: Martin Srebotnjak <miles@filmsi.net>\n"
 "Language-Team: sl.libreoffice.org\n"
 "Language: sl\n"
@@ -126,8 +126,8 @@ msgctxt ""
 "lib_ScriptForge.xhp\n"
 "bm_id491529070339774\n"
 "help.text"
-msgid "<bookmark_value>BASIC ScriptForge library</bookmark_value>"
-msgstr "<bookmark_value>knjižnica BASIC ScriptForge</bookmark_value>"
+msgid "<bookmark_value>BASIC ScriptForge library</bookmark_value>        <bookmark_value>Python scriptforge module</bookmark_value>"
+msgstr "<bookmark_value>knjižnica BASIC ScriptForge</bookmark_value><bookmark_value>Python;modul scriptforge</bookmark_value>"
 
 #: lib_ScriptForge.xhp
 msgctxt ""
@@ -136,6 +136,14 @@ msgctxt ""
 "help.text"
 msgid "ScriptForge libraries build up an extensible collection of macro scripting resources for %PRODUCTNAME to be invoked from Basic macros or Python scripts."
 msgstr "Knjižnica ScriptForge je tvorijo razširljivo zbirko virov za skripte makrov za %PRODUCTNAME, ki jih prikličete iz makrov BASIC ali skriptov Python."
+
+#: lib_ScriptForge.xhp
+msgctxt ""
+"lib_ScriptForge.xhp\n"
+"par_id1001623412767893\n"
+"help.text"
+msgid "To learn more about how to create and execute Python scripts using the <literal>ScriptForge</literal> library, read the <embedvar href=\"text/sbasic/shared/03/sf_intro.xhp#title\"/> help page."
+msgstr "Če želite izvedeti več, kako ustvarjate in izvajate skripte Python s knjižnico <literal>ScriptForge</literal>, glejte stran pomoči <embedvar href=\"text/sbasic/shared/03/sf_intro.xhp#title\"/>."
 
 #: lib_ScriptForge.xhp
 msgctxt ""
@@ -11534,8 +11542,8 @@ msgctxt ""
 "sf_form.xhp\n"
 "par_id951618172906010\n"
 "help.text"
-msgid "Forms are usually created in Base documents, but they can be added to Writer and Calc documents as well. The way a <literal>FormDocument</literal> is handled depends on the %PRODUCTNAME component where it is stored."
-msgstr "Obrazci so običajno ustvarjeni v dokumentih Base, lahko pa jih tudi dodamo dokumentom programov Writer in Calc. Obravnava <literal>FormDocument</literal> je odvisna od komponente %PRODUCTNAME, v katere dokumentu je shranjen."
+msgid "Forms are usually created in Base documents, but they can be added to Writer and Calc documents as well."
+msgstr "Obrazci so običajno ustvarjeni v dokumentih Base, lahko pa jih tudi dodamo dokumentom programov Writer in Calc."
 
 #: sf_form.xhp
 msgctxt ""
@@ -11576,14 +11584,6 @@ msgctxt ""
 "help.text"
 msgid "A <literal>FormDocument</literal> can be seen as a set of forms that provide access to datasets such as database tables and queries from within %PRODUCTNAME documents. The names of forms and subforms inside a FormDocument can be accessed using the <link href=\"text/shared/02/01170600.xhp\" name=\"FormNavigator\">Form Navigator</link>."
 msgstr "<literal>FormDocument</literal> lahko razumemo kot množico obrazcev, ki ponujajo dostop do nabora podatkov, kot so tabele in poizvedbe zbirke podatkov v samih dokumentih %PRODUCTNAME. Do imen obrazcev in podobrazcev v dokumentu obrazca (FormDocument) lahko dostopate s <link href=\"text/shared/02/01170600.xhp\" name=\"Krmar po obrazcih\">Krmarjem po obrazcih</link>."
-
-#: sf_form.xhp
-msgctxt ""
-"sf_form.xhp\n"
-"par_id721618175731903\n"
-"help.text"
-msgid "In Calc documents, each sheet can contain a single <literal>FormDocument</literal>. A Writer document contains only one <literal>FormDocument</literal>, which is the document itself."
-msgstr "V dokumentih programa Calc lahko vsak delovni list vsebuje en sam <literal>FormDocument</literal>. Dokument programa Writer lahko vsebuje le en <literal>FormDocument</literal>, ki je ta dokument sam."
 
 #: sf_form.xhp
 msgctxt ""
@@ -11638,8 +11638,8 @@ msgctxt ""
 "sf_form.xhp\n"
 "par_id51616767892693\n"
 "help.text"
-msgid "The code snippet below shows how to access the form named <literal>Form1</literal> that is inside the single <literal>FormDocument</literal> of a Writer file:"
-msgstr "Spodnji odlomek kode prikazuje, kako dostopate do obrazca <literal>Form1</literal>, ki se nahaja v <literal>FormDocument</literal> datoteke programa Writer:"
+msgid "The code snippet below shows how to access the form named <literal>Form1</literal> that is inside a Writer file:"
+msgstr "Spodnji odlomek kode prikazuje, kako dostopate do obrazca <literal>Form1</literal>, ki se nahaja v datoteki programa Writer:"
 
 #: sf_form.xhp
 msgctxt ""
@@ -11648,6 +11648,14 @@ msgctxt ""
 "help.text"
 msgid "Forms can be accessed by their names or by their indices, as shown below:"
 msgstr "Do obrazcev lahko dostopate z njihovimi imeni ali z njihovimi indeksi, kar je prikazano spodaj:"
+
+#: sf_form.xhp
+msgctxt ""
+"sf_form.xhp\n"
+"pyc_id691622014677169\n"
+"help.text"
+msgid "my_form = doc.Forms(0)"
+msgstr "moj_obrazec = doc.Forms(0)"
 
 #: sf_form.xhp
 msgctxt ""
@@ -11670,8 +11678,16 @@ msgctxt ""
 "sf_form.xhp\n"
 "par_id481618179851104\n"
 "help.text"
-msgid "Each sheet in a Calc file is a single <literal>FormDocument</literal>. Hence, the <literal>Forms</literal> method requires two arguments, the first indicating the sheet name and the second specifying the form name."
-msgstr "Vsak delovni list v datoteki programa Calc je posamezen dokument <literal>FormDocument</literal>. Zato metoda <literal>Forms</literal> zahteva dva argumenta, prvi določa ime delovnega lista, drugi pa ime obrazca."
+msgid "A form in a Calc file must have a unique name inside its sheet. Hence, the <literal>Forms</literal> method requires two arguments, the first indicating the sheet name and the second specifying the form name."
+msgstr "Vsak obrazec v datoteki programa Calc mora imeti enkratno ime v okviru istega delovnega lista. Zato metoda <literal>Forms</literal> zahteva dva argumenta, prvi določa ime delovnega lista, drugi pa ime obrazca."
+
+#: sf_form.xhp
+msgctxt ""
+"sf_form.xhp\n"
+"par_id51622028165429\n"
+"help.text"
+msgid "This is achieved identically using Python:"
+msgstr "Isto dosežete v Pythonu na sledeč način:"
 
 #: sf_form.xhp
 msgctxt ""
@@ -11686,7 +11702,7 @@ msgctxt ""
 "sf_form.xhp\n"
 "par_id711616768164987\n"
 "help.text"
-msgid "A <literal>FormDocument</literal> inside a Base document is accessed by its name. The following example opens the form document named <literal>thisFormDocument</literal> and access the form <literal>MainForm</literal>:"
+msgid "A <literal>FormDocument</literal> inside a Base document is accessed by its name. The following example opens the form document named <literal>thisFormDocument</literal> and accesses the form <literal>MainForm</literal>:"
 msgstr "Do dokumenta <literal>FormDocument</literal> v dokumentu programa Base dostopate z njegovim imenom. Naslednji primer odpre dokument obrazca z imenom <literal>thisFormDocument</literal> in dostopa do obrazca <literal>MainForm</literal>:"
 
 #: sf_form.xhp
@@ -11710,8 +11726,8 @@ msgctxt ""
 "sf_form.xhp\n"
 "par_id991618249636036\n"
 "help.text"
-msgid "To perform any action on a form using the <literal>Form</literal> service, the <literal>FormDocument</literal> must have been opened either manually by the user or programmatically in a user script. The latter can be done in a variety of ways, such as by creating an instance of the <literal>Document</literal> service or by calling the methods <literal>OpenDocument</literal> (<literal>UI</literal> service) and <literal>OpenFormDocument</literal> (<literal>Document</literal> service)."
-msgstr "Če želite z obrazcem izvesti dejanje z uporabo storitve <literal>Form</literal>, morate odpreti <literal>FormDocument</literal> ročno kot uporabnik ali programsko z uporabniškim skriptom. Slednje lahko storite na več načinov, kot je izdelava instance storitve <literal>Document</literal> ali s klicem metod <literal>OpenDocument</literal> (storitev <literal>UI</literal>) in <literal>OpenFormDocument</literal> (storitev <literal>Document</literal>)."
+msgid "To perform any action on a form using the <literal>Form</literal> service, the <literal>FormDocument</literal> must have been opened either manually by the user or programmatically in a user script. The latter can be done by calling the <literal>OpenFormDocument</literal> method of the <link href=\"text/sbasic/shared/03/sf_base.xhp\" name=\"ScriptForge Base Service\"><literal>Base</literal> service</link>."
+msgstr "Če želite z obrazcem izvesti dejanje z uporabo storitve <literal>Form</literal>, morate odpreti <literal>FormDocument</literal> ročno kot uporabnik ali programsko z uporabniškim skriptom. Slednje lahko storite s klicem metode <literal>OpenFormDocument</literal> storitve <link href=\"text/sbasic/shared/03/sf_base.xhp\" name=\"Storitev ScriptForge Base\"><literal>Base</literal></link>."
 
 #: sf_form.xhp
 msgctxt ""
@@ -11720,6 +11736,70 @@ msgctxt ""
 "help.text"
 msgid "To access a given subform of a form use the <literal>SubForms</literal> method. Note that in the example below <literal>mySubForm</literal> is a new instance of the <literal>Form</literal> service."
 msgstr "Za dostop do danega podobrazca obrazca uporabite metodo <literal>SubForms</literal>. Upoštevajte, da je v spodnjem primeru <literal>mySubForm</literal> nova instanca storitve <literal>Form</literal>."
+
+#: sf_form.xhp
+msgctxt ""
+"sf_form.xhp\n"
+"par_id681622028653480\n"
+"help.text"
+msgid "Previous examples translate in Python as:"
+msgstr "Zgornje primere lahko prevedemo v Python na sledeč način:"
+
+#: sf_form.xhp
+msgctxt ""
+"sf_form.xhp\n"
+"pyc_id501622028742999\n"
+"help.text"
+msgid "db = CreateScriptService('SFDocuments.Document', XSCRIPTCONTEXT.getDocument())"
+msgstr "db = CreateScriptService('SFDocuments.Document', XSCRIPTCONTEXT.getDocument())"
+
+#: sf_form.xhp
+msgctxt ""
+"sf_form.xhp\n"
+"pyc_id811622808499801\n"
+"help.text"
+msgid "#  The statement below is necessary only if the form hasn't been opened yet"
+msgstr "#  Spodnji ukaz je potreben le, če obrazec še ni odprt"
+
+#: sf_form.xhp
+msgctxt ""
+"sf_form.xhp\n"
+"pyc_id671622028743191\n"
+"help.text"
+msgid "form_doc = db.OpenFormDocument('thisFormDocument')"
+msgstr "dokument_obrazci = db.OpenFormDocument('thisFormDocument')"
+
+#: sf_form.xhp
+msgctxt ""
+"sf_form.xhp\n"
+"pyc_id431622028743374\n"
+"help.text"
+msgid "form = form_doc.Forms('thisFormDocument', 'MainForm')"
+msgstr "obrazec = dokument_obrazci.Forms('thisFormDocument', 'GlavniObrazec')"
+
+#: sf_form.xhp
+msgctxt ""
+"sf_form.xhp\n"
+"pyc_id511622808538351\n"
+"help.text"
+msgid "#  Or, alternatively, to access the form by its index ..."
+msgstr "#  Ali če želite do obrazca dostopati z njegovim indeksom ..."
+
+#: sf_form.xhp
+msgctxt ""
+"sf_form.xhp\n"
+"pyc_id681622028743582\n"
+"help.text"
+msgid "form = form_doc.Forms('thisFormDocument', 0)"
+msgstr "obrazec = dokument_obrazci.Forms('thisFormDocument', 0)"
+
+#: sf_form.xhp
+msgctxt ""
+"sf_form.xhp\n"
+"pyc_id611622028743782\n"
+"help.text"
+msgid "sub_form = form.SubForms('mySubForm')"
+msgstr "pod_obrazec = obrazec.SubForms('mojPodobrazec')"
 
 #: sf_form.xhp
 msgctxt ""
@@ -11736,6 +11816,22 @@ msgctxt ""
 "help.text"
 msgid "To invoke the <literal>Form</literal> service when a form event takes place:"
 msgstr "Za priklic storitve <literal>Form</literal> ob dogodku obrazca:"
+
+#: sf_form.xhp
+msgctxt ""
+"sf_form.xhp\n"
+"par_id721623150543016\n"
+"help.text"
+msgid "It is recommended to free resources after use of the Form service."
+msgstr "Priporočamo, da po uporabi storitve Form sprostite vire."
+
+#: sf_form.xhp
+msgctxt ""
+"sf_form.xhp\n"
+"par_id221623150547406\n"
+"help.text"
+msgid "This operation is done implicitly when a form document is closed with the <literal>CloseFormDocument()</literal> method described below."
+msgstr "Ta operacija se izvrši implicitno, ko zaprete dokument obrazca z metodo <literal>CloseFormDocument()</literal>, ki je opisana v nadaljevanju."
 
 #: sf_form.xhp
 msgctxt ""
@@ -12372,18 +12468,10 @@ msgstr "'Aktivira obrazec"
 #: sf_form.xhp
 msgctxt ""
 "sf_form.xhp\n"
-"par_id661618228523419\n"
-"help.text"
-msgid "To use the method Activate with other %PRODUCTNAME documents, read <link href=\"text/sbasic/shared/03/sf_form.xhp#ServiceInvocation\" name=\"FormServiceInvocation\">Service invocation</link> above."
-msgstr "Če želite uporabiti metodo Activate z drugimi dokumenti %PRODUCTNAME, si zgodaj preberite <link href=\"text/sbasic/shared/03/sf_form.xhp#ServiceInvocation\" name=\"Priklic storitve Form\">Priklic storitve Form</link>."
-
-#: sf_form.xhp
-msgctxt ""
-"sf_form.xhp\n"
 "par_id81618228720782\n"
 "help.text"
-msgid "<literal>ThisComponent</literal> is valid for Calc and Writer documents. For Base documents use <literal>ThisDataBaseDocument</literal>."
-msgstr "<literal>ThisComponent</literal> je veljaven za dokumente Calc in Writer. Za dokumente Base uporabite <literal>ThisDataBaseDocument</literal>."
+msgid "<literal>ThisComponent</literal> applies to Calc and Writer documents. For Base documents use <literal>ThisDataBaseDocument</literal>."
+msgstr "<literal>ThisComponent</literal> se uporablja za dokumente Calc in Writer. Za dokumente Base uporabite <literal>ThisDataBaseDocument</literal>."
 
 #: sf_form.xhp
 msgctxt ""
@@ -12414,7 +12502,7 @@ msgctxt ""
 "sf_form.xhp\n"
 "par_id421598179770993\n"
 "help.text"
-msgid "If the method is called <emph>without any arguments</emph>, then it returns the list of the controls contained in the form. Beware that the returned list does not contain any subform controls."
+msgid "If the method is called <emph>without arguments</emph>, then it returns the list of the controls contained in the form. Beware that the returned list does not contain any subform controls."
 msgstr "Če metodo pokličete <emph>brez argumentov</emph>, vrne seznam kontrolnikov, vsebovanih v obrazcu. Pozor: vrnjeni seznam ne vsebuje kontrolnikov podobrazca."
 
 #: sf_form.xhp
@@ -12430,8 +12518,8 @@ msgctxt ""
 "sf_form.xhp\n"
 "par_id1001584541257789\n"
 "help.text"
-msgid "<emph>ControlName</emph> : A valid control name as a case-sensitive string. If absent, the list of control names is returned as a zero-based array."
-msgstr "<emph>ControlName</emph>: ime veljavnega kontrolnika kot niz, razlikuje med velikimi in malimi črkami. Če ni podano, vrne seznam imen kontrolnikov kot ničelno polje."
+msgid "<emph>controlname</emph> : A valid control name as a case-sensitive string. If absent, the list of control names is returned as a zero-based array."
+msgstr "<emph>controlname</emph>: ime veljavnega kontrolnika kot niz, razlikuje med velikimi in malimi črkami. Če ni podano, vrne seznam imen kontrolnikov kot ničelno polje."
 
 #: sf_form.xhp
 msgctxt ""
@@ -12446,16 +12534,16 @@ msgctxt ""
 "sf_form.xhp\n"
 "par_id991616861417207\n"
 "help.text"
-msgid "Each form in a <literal>FormDocument</literal> has its own database connection, except in Base documents where they all share the same connection."
-msgstr "Vsak obrazec v <literal>FormDocument</literal> ima svojo povezavo z zbirko podatkov, razen dokumentov programa Base, kjer si vsi delijo isto povezavo."
+msgid "Each form has its own database connection, except in Base documents where they all share the same connection."
+msgstr "Vsak obrazec ima svojo povezavo z zbirko podatkov, razen dokumentov programa Base, kjer si vsi delijo isto povezavo."
 
 #: sf_form.xhp
 msgctxt ""
 "sf_form.xhp\n"
 "par_id701616861134906\n"
 "help.text"
-msgid "<emph>User, Password</emph> : The login parameters (Default = \"\")."
-msgstr "<emph>User, Password</emph>: parametra prijave (uporabniško ime in geslo; privzeto = \"\")."
+msgid "<emph>user, password</emph>: The login optional parameters (Default = \"\")."
+msgstr "<emph>user, password</emph>: parametra prijave (uporabniško ime in geslo; privzeto = \"\")."
 
 #: sf_form.xhp
 msgctxt ""
@@ -12494,8 +12582,8 @@ msgctxt ""
 "sf_form.xhp\n"
 "par_id271616863582607\n"
 "help.text"
-msgid "<emph>Offset</emph> : The number of records to go forward (Default = 1)."
-msgstr "<emph>Offset</emph>: število zapisov, za kolikor se želite pomakniti naprej (privzeto = 1)."
+msgid "<emph>offset</emph>: The number of records to go forward (Default = 1)."
+msgstr "<emph>offset</emph>: število zapisov, za kolikor se želite pomakniti naprej (privzeto = 1)."
 
 #: sf_form.xhp
 msgctxt ""
@@ -12510,8 +12598,8 @@ msgctxt ""
 "sf_form.xhp\n"
 "par_id751616863794125\n"
 "help.text"
-msgid "<emph>Offset</emph> : The number of records to go backwards (Default = 1)."
-msgstr "<emph>Offset</emph>: število zapisov, za kolikor se želite pomakniti nazaj (privzeto = 1)."
+msgid "<emph>offset</emph>: The number of records to go backwards (Default = 1)."
+msgstr "<emph>offset</emph>: število zapisov, za kolikor se želite pomakniti nazaj (privzeto = 1)."
 
 #: sf_form.xhp
 msgctxt ""
@@ -12520,6 +12608,14 @@ msgctxt ""
 "help.text"
 msgid "Reloads the current data from the database and refreshes the form. The cursor is positioned on the first record. Returns <literal>True</literal> if successful."
 msgstr "Ponovno naloži trenutne podatke iz zbirke podatkov in osveži obrazec. Kazalka je postavljena v prvi zapis. Vrne <literal>True</literal>, če uspe."
+
+#: sf_form.xhp
+msgctxt ""
+"sf_form.xhp\n"
+"pyc_id401622550186725\n"
+"help.text"
+msgid "form.Requery()  # Python"
+msgstr "form.Requery()  # Python"
 
 #: sf_form.xhp
 msgctxt ""
@@ -12542,16 +12638,16 @@ msgctxt ""
 "sf_form.xhp\n"
 "par_id591616864510445\n"
 "help.text"
-msgid "If the optional <literal>Subform</literal> argument is provided, the method returns a new <literal>SFDocuments</literal>.<literal>Form</literal> instance based on the specified form/subform name or index."
-msgstr "Če je podan neobvezni argument <literal>Subform</literal>, metoda vrne novo instanco <literal>SFDocuments</literal>.<literal>Form</literal>, ki temelji na navedenem imeno ali indeksu obrazca/podobrazca."
+msgid "If the optional <literal>subform</literal> argument is provided, the method returns a new <literal>SFDocuments</literal>.<literal>Form</literal> instance based on the specified form/subform name or index."
+msgstr "Če je podan neobvezni argument <literal>subform</literal>, metoda vrne novo instanco <literal>SFDocuments</literal>.<literal>Form</literal>, ki temelji na navedenem imenu ali indeksu obrazca/podobrazca."
 
 #: sf_form.xhp
 msgctxt ""
 "sf_form.xhp\n"
 "par_id341616864510747\n"
 "help.text"
-msgid "<emph>Subform</emph> : A subform stored in the current <literal>Form</literal> class instance given by its name or index."
-msgstr "<emph>Subform</emph>: podobrazec, shranjen v trenutni instanci razreda <literal>Form</literal>, podan z imenom ali indeksom."
+msgid "<emph>subform</emph> : A subform stored in the current <literal>Form</literal> class instance given by its name or index."
+msgstr "<emph>subform</emph>: podobrazec, shranjen v trenutni instanci razreda <literal>Form</literal>, podan z imenom ali indeksom."
 
 #: sf_form.xhp
 msgctxt ""
@@ -12672,6 +12768,14 @@ msgctxt ""
 "help.text"
 msgid "The <literal>FormControl</literal> service is invoked from an existing <literal>Form</literal> service instance through its <literal>Controls</literal> method."
 msgstr "Storitev <literal>FormControl</literal> je priklicana iz obstoječe instance storitve <literal>Form</literal> prek njene metode <literal>Controls</literal>."
+
+#: sf_formcontrol.xhp
+msgctxt ""
+"sf_formcontrol.xhp\n"
+"pyc_id721622556808773\n"
+"help.text"
+msgid "control.Value = 'Current Time = ' + strftime(\"%a, %d %b %Y %H:%M:%S\", localtime())"
+msgstr "control.Value = 'Trenutni čas: ' + strftime(\"%a, %d %b %Y %H:%M:%S\", localtime())"
 
 #: sf_formcontrol.xhp
 msgctxt ""
@@ -13870,8 +13974,8 @@ msgctxt ""
 "sf_formcontrol.xhp\n"
 "par_id1001584541257789\n"
 "help.text"
-msgid "<emph>ControlName</emph> : A valid control name as a case-sensitive string. If absent, the list of control names is returned as a zero-based array."
-msgstr "<emph>ControlName</emph>: ime veljavnega kontrolnika kot niz, razlikuje med velikimi in malimi črkami. Če ni podano, vrne seznam imen kontrolnikov kot ničelno polje."
+msgid "<emph>controlname</emph>: A valid control name as a case-sensitive string. If absent, the list of control names is returned as a zero-based array."
+msgstr "<emph>controlNnme</emph>: ime veljavnega kontrolnika kot niz, razlikuje med velikimi in malimi črkami. Če ni podano, vrne seznam imen kontrolnikov kot ničelno polje."
 
 #: sf_formcontrol.xhp
 msgctxt ""
@@ -13888,6 +13992,14 @@ msgctxt ""
 "help.text"
 msgid "' Returns a FormControl class instance corresponding to \"myCheckBox\""
 msgstr "' Vrne instanco razreda FormControl, ki ustreza \"myCheckBox\""
+
+#: sf_formcontrol.xhp
+msgctxt ""
+"sf_formcontrol.xhp\n"
+"par_id391622559441530\n"
+"help.text"
+msgid "Using Python:"
+msgstr "Z uporabo Pythona:"
 
 #: sf_formcontrol.xhp
 msgctxt ""
@@ -13932,10 +14044,530 @@ msgstr "Prvi primer prebere trenutno vrednost v kombiniranem polju, ki vsebuje i
 #: sf_formcontrol.xhp
 msgctxt ""
 "sf_formcontrol.xhp\n"
+"pyc_id991622562833004\n"
+"help.text"
+msgid "ui = CreateScriptService('ScriptForge.Basic')  # Basic-like methods"
+msgstr "ui = CreateScriptService('ScriptForge.Basic')  # Metode kot v Basicu"
+
+#: sf_formcontrol.xhp
+msgctxt ""
+"sf_formcontrol.xhp\n"
+"pyc_id781622561048794\n"
+"help.text"
+msgid "lbl_city.Caption = \"Selected city: \" + combo_city.Value"
+msgstr "lbl_city.Caption = \"Izbrano mesto: \" + combo_city.Value"
+
+#: sf_formcontrol.xhp
+msgctxt ""
+"sf_formcontrol.xhp\n"
 "par_id251618776614814\n"
 "help.text"
 msgid "The following code snippet can be used to process RadioButton controls that share the same group name. In this example, suppose there are three radio buttons with names <literal>optA</literal>, <literal>optB</literal> and <literal>optC</literal> and we wish to display the caption of the selected control."
 msgstr "Naslednji odlomek kode lahko uporabite za obdelavo izbirnih gumbov (kontrolnikov RadioButton), ki imajo isto ime skupine. V tem primeru predvidevamo, da so trije izbirni gumbi z imeni <literal>optA</literal>, <literal>optB</literal> in <literal>optC</literal> ter da želimo prikazati napis izbranega kontrolnika."
+
+#: sf_formcontrol.xhp
+msgctxt ""
+"sf_formcontrol.xhp\n"
+"bas_id251618776933304\n"
+"help.text"
+msgid "MsgBox \"Selected option: \" & optControl.Caption"
+msgstr "MsgBox \"Izbrana možnost: \" & optControl.Caption"
+
+#: sf_formcontrol.xhp
+msgctxt ""
+"sf_formcontrol.xhp\n"
+"pyc_id991622562822004\n"
+"help.text"
+msgid "ui = CreateScriptService('ScriptForge.Basic')  # Basic-like methods"
+msgstr "ui = CreateScriptService('ScriptForge.Basic')  # Metode kot v Basicu"
+
+#: sf_formcontrol.xhp
+msgctxt ""
+"sf_formcontrol.xhp\n"
+"pyc_id441622562080419\n"
+"help.text"
+msgid "ui.MsgBox('Selected option: ' + control.Caption)"
+msgstr "ui.MsgBox('Izbrana možnost: ' + control.Caption)"
+
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"tit\n"
+"help.text"
+msgid "Creating Python Scripts with ScriptForge"
+msgstr "Izdelava skriptov Python s knjižnico ScriptForge"
+
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"hd_id461623364876507\n"
+"help.text"
+msgid "<variable id=\"title\"><link href=\"text/sbasic/shared/03/sf_intro.xhp\" name=\"SF_Intro_Page\">Creating Python Scripts with <literal>ScriptForge</literal></link></variable>"
+msgstr "<variable id=\"title\"><link href=\"text/sbasic/shared/03/sf_intro.xhp\" name=\"Izdelava skriptov Python s knjižnico ScriptForge\">Izdelava skriptov Python s knjižnico <literal>ScriptForge</literal></link></variable>"
+
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"hd_id361623410405420\n"
+"help.text"
+msgid "Differences between Basic and Python"
+msgstr "Razlike med Basicom in Pythonom"
+
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"par_id41623410443946\n"
+"help.text"
+msgid "The <link href=\"text/sbasic/shared/03/lib_ScriptForge.xhp\" name=\"SF_Lib\">ScriptForge library</link> is available both for Basic and Python. Most services, methods and properties work identically in both programming languages. However, due to differences in how each language works, <literal>ScriptForge</literal> users must be aware of some characteristics of the library when using Python:"
+msgstr "<link href=\"text/sbasic/shared/03/lib_ScriptForge.xhp\" name=\"Knjižnica ScriptForge\">Knjižnica ScriptForge</link> je na voljo za Basic in Python. Večina storitev, metod in lastnosti deluje enako v obeh programskih jezikih. Vendar se morajo uporabniki <literal>ScriptForge</literal> zaradi razlik v konceptu samih programskih jezikov zavedati nekaterih značilnosti knjižnice, ko uporabljajo Python:"
+
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"par_id551623410718241\n"
+"help.text"
+msgid "<emph>Methods and Property names:</emph> In Python, all methods and properties can be used in lowercased, ProperCased or camelCased formats."
+msgstr "<emph>Imena metod in lastnosti:</emph> v Pythonu se vse metode in lastnosti uporabljajo z malimi začetnicami oz. malimi začetnicami, z velikimi začetnicami vseh sestavnih besed ali z velikimi začetnicami preostalih sestavnih besed (npr. takolenekako, TakoleNekako, takoleNekako)."
+
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"par_id741623411104297\n"
+"help.text"
+msgid "<emph>Arguments:</emph> All keyword arguments passed on to methods are lowercased."
+msgstr "<emph>Argumenti:</emph> vsi parametri ključnih besed, ki so posredovani metodam, so zapisani z malimi črkami."
+
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"par_id441623411216354\n"
+"help.text"
+msgid "<emph>Dates:</emph> All date objects are passed and returned as <literal>datetime.datetime</literal> native Python objects."
+msgstr "<emph>Datumi:</emph> vsi datumski predmeti so podani in vrnjeni kot domorodni predmeti Pythona <literal>datetime.datetime</literal>."
+
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"par_id891623411367669\n"
+"help.text"
+msgid "<emph>Arrays:</emph> One-dimensional arrays are passed and returned as tuples (which is an immutable object). Two-dimensional arrays are passed and returned as tuples of tuples."
+msgstr "<emph>Polja:</emph> enodimenzionalna polja so podana in vrnjena kot n-terice (kar je nespremenljiv predmet). Dvodimenzionalna polja so podana in vrnjena kot n-terice n-teric."
+
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"par_id981623411507442\n"
+"help.text"
+msgid "<emph>None:</emph> Python's <literal>None</literal> keyword is equivalent to Basic's <literal>Null</literal>, <literal>Empty</literal> or <literal>Nothing</literal>."
+msgstr "<emph>None:</emph> ključna beseda <literal>None</literal> v Pythonu je ekvivalentna ključnim besedam v Basicu <literal>Null</literal>, <literal>Empty</literal> in <literal>Nothing</literal>."
+
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"par_id21623411611447\n"
+"help.text"
+msgid "<emph>UNO objects:</emph> All UNO structures are exchanged between Basic and Python without any changes."
+msgstr "<emph>Predmeti UNO:</emph> vse strukture UNO se med Basicom in Pythonom izmenjujejo brez sprememb."
+
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"par_id651623412069496\n"
+"help.text"
+msgid "<emph>Debugging:</emph> Whenever an error occurs in Python scripts that use <literal>ScriptForge</literal>, the error message provided by the Python execution stack displays the line of code that triggered the error. In Basic error messages do not display this information."
+msgstr "<emph>Razhroščevanje:</emph> ko se dogodi napaka v skriptih Python, ki uporabljajo knjižnico <literal>ScriptForge</literal>, se v sporočilu o napaki, ki ga poda izvajalni sklad Python, izpiše vrstica kode, ki je sprožila napako. V sporočilih o napaki Basica te informacije niso podane."
+
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"par_id31623411828158\n"
+"help.text"
+msgid "Visit <embedvar href=\"text/sbasic/python/main0000.xhp#pythonscriptshelp\"/> for more information on Python scripting using %PRODUCTNAME."
+msgstr "Obiščite <embedvar href=\"text/sbasic/python/main0000.xhp#pythonscriptshelp\"/>, da izveste več o pisanju skriptov Python z uporabo %PRODUCTNAME."
+
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"hd_id391623411150080\n"
+"help.text"
+msgid "Running Python scripts on %PRODUCTNAME"
+msgstr "Izvajanje skriptov Python v %PRODUCTNAME"
+
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"par_id411623364895100\n"
+"help.text"
+msgid "Depending on what you intend to achieve, you may choose one of the following approaches to running Python scripts in %PRODUCTNAME:"
+msgstr "Glede na to, kaj želite doseči, lahko izberete enega od naslednjih načinov izvajanja skriptov Python v %PRODUCTNAME:"
+
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"par_id681623365274024\n"
+"help.text"
+msgid "<emph>Run Scripts inside the current %PRODUCTNAME process:</emph> Python scripts are executed from within the %PRODUCTNAME process by using the <menuitem>Tools - Macros - Run Macro</menuitem> menu or the APSO extension to call user scripts stored in the Python scripts folder. You can also use the APSO Python shell to interactively run Python scripts."
+msgstr "<emph>izvajanje skriptov v okviru trenutnega procesa %PRODUCTNAME:</emph> skripti Python se izvajajo znotraj procesa %PRODUCTNAME z uporabo menija <menuitem>Orodja – Makri – Zaženi makro</menuitem> ali razširitve APSO, tako da kličete uporabniške skripte, shranjene v mapi skriptov Python. Uporabite lahko tudi lupino Python razširitve APSO, da skripte Python izvajate interaktivno."
+
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"par_id761623365278133\n"
+"help.text"
+msgid "<emph>Run Scripts separately from the %PRODUCTNAME process:</emph> Python scripts are executed from an external process that connects to an ongoing %PRODUCTNAME process using a socket."
+msgstr "<emph>izvajanje skriptov ločeno od procesa %PRODUCTNAME:</emph> skripti Python se izvajajo v zunanjem procesu, ki se poveže s tekočim procesom %PRODUCTNAME z uporabo vtičnice."
+
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"par_id631623365667011\n"
+"help.text"
+msgid "If you plan to run scripts from inside the %PRODUCTNAME process, it is recommended to install the <link href=\"https://extensions.libreoffice.org/en/extensions/show/apso-alternative-script-organizer-for-python\" name=\"APSO\">APSO (Alternative Script Organizer for Python) extension</link>. However, to develop Python scripts from outside %PRODUCTNAME, you can choose your preferred Python IDE."
+msgstr "Če nameravate izvajati skripte v okviru procesa %PRODUCTNAME, priporočamo namestitev <link href=\"https://extensions.libreoffice.org/en/extensions/show/apso-alternative-script-organizer-for-python\" name=\"Razširitev APSO (Alternative Python Script Organizer)\">razširitve APSO (Alternative Python Script Organizer)</link>. Za razvoj skriptov Python izven %PRODUCTNAME lahko izberete tudi svoje priljubljeno razvojno okolje IDE za Python."
+
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"hd_id431623365836802\n"
+"help.text"
+msgid "Running Scripts from inside the %PRODUCTNAME process"
+msgstr "Izvajanje skriptov v okviru procesa %PRODUCTNAME"
+
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"hd_id111623365861568\n"
+"help.text"
+msgid "Using the APSO extension"
+msgstr "Z uporabo razširitve APSO"
+
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"par_id681623365892513\n"
+"help.text"
+msgid "The easiest way to get started with Python scripting in %PRODUCTNAME is by installing the APSO extension. After installing it, open any %PRODUCTNAME component and go to <menuitem>Tools - Macros - Organize Python Scripts</menuitem>."
+msgstr "Najenostavnejši način za prve korake s skripti Python v %PRODUCTNAME je z namestitvijo razširitve APSO. Po njeni namestitvi odprite poljubno komponento paketa %PRODUCTNAME in izberite <menuitem>Orodja – Makri – Organiziraj skripte Python</menuitem>."
+
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"par_id111623366334727\n"
+"help.text"
+msgid "In APSO's main window go to <menuitem>Menu - Python Shell</menuitem>."
+msgstr "V osrednjem oknu APSO izberite <menuitem>Menu – Python Shell</menuitem>."
+
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"par_id931623366329927\n"
+"help.text"
+msgid "Alternatively you can open APSO using the default shortcut <keycode>Alt + Shift + F11</keycode>."
+msgstr "Namesto tega lahko odprete razširitev APSO s privzeto kombinacijo tipk <keycode>izmenjalka + dvigalka + F11</keycode>."
+
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"par_id661623366478092\n"
+"help.text"
+msgid "Now you can start typing Python commands and the shell will print the corresponding output after each line of code is executed."
+msgstr "Zdaj lahko pričnete s pisanjem ukazov Python in v lupini se izpiše ustrezen izhod po vsaki izvedeni vrstice kode."
+
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"par_id581623366559478\n"
+"help.text"
+msgid "To start using the <literal>ScriptForge</literal> library, you need to import the <literal>CreateScriptService</literal> method, with which you will be able to access the services provided by the library. The example below uses the <literal>Basic</literal> service to display a message box."
+msgstr "Za delo s knjižnico <literal>ScriptForge</literal> morate uvoziti metodo <literal>CreateScriptService</literal>, s katero boste lahko dostopali do storitev, ki jih ponuja knjižnica. Spodnji primer uporablja storitev <literal>Basic</literal>, s katero prikaže okno s sporočilom."
+
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"par_id701623366829587\n"
+"help.text"
+msgid "To run the example above, enter each line in the Python shell, one by one, pressing the Enter key after you type each line of code."
+msgstr "Za izvajanje zgornjega primera vnesite vsako vrstico posebej v lupino Python, tako da po vsaki vrstici kode pritisnete vnašalko."
+
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"par_id471623366906045\n"
+"help.text"
+msgid "Now you can start executing Python commands using any of the ScriptForge services. For example, the code snippet below uses the <literal>UI</literal> service to create a blank writer document."
+msgstr "Zdaj lahko pričnete izvajati ukaze Python z uporabo poljubne storitve ScriptForge. Primer: spodnji odlomek kode uporablja storitev <literal>UI</literal> za izdelavo praznega dokumenta programa Writer."
+
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"hd_id961623367376768\n"
+"help.text"
+msgid "Creating Python script files"
+msgstr "Ustvarjanje datotek skriptov Python"
+
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"par_id821623367433650\n"
+"help.text"
+msgid "You can create your own Python files and edit them with your preferred text editor. Later you can call them from within any %PRODUCTNAME component."
+msgstr "Ustvarite lahko lastne datoteke Python in jih urejate v svojem priljubljenem urejevalniku besedil. Kasneje jih lahko kličete iz poljubne komponente %PRODUCTNAME."
+
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"par_id51623367560321\n"
+"help.text"
+msgid "The first step is to locate where your user scripts are stored. For that, refer to <link href=\"text/sbasic/python/python_locations.xhp\" name=\"Python_Scripts_Path\">Python Scripts Organization and Location</link> help page."
+msgstr "Najprej morate poiskati mesto, kjer so shranjeni vaši uporabniški skripti. Glede tega si oglejte stran pomoči <link href=\"text/sbasic/python/python_locations.xhp\"\" name=\"Organizacija in mesto skriptov v Pythonu\">Organizacija in mesto skriptov v Pythonu</link>."
+
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"par_id821623367773032\n"
+"help.text"
+msgid "Now you can create a text file inside your Python user scripts folder, for instance <emph>sf_test.py</emph>, and start typing your scripts."
+msgstr "Zdaj lahko ustvarite besedilno datoteko v mapi svojih uporabniških skriptov Python, npr. <emph>sf_test.py</emph>, in pričnete s pisanjem svojih skriptov."
+
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"par_id271623367917630\n"
+"help.text"
+msgid "Next is a simple example that gets the numeric value from a Calc cell and increments it by 1. Simply type the following code into the <emph>sf_test.py</emph> file."
+msgstr "Sledi enostaven primer, ki pridobi številsko vrednost iz celice dokumenta Calc in jo poveča za 1. Preprosto vnesite sledečo kodo v datoteko <emph>sf_test.py</emph>."
+
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"par_id171623368511426\n"
+"help.text"
+msgid "This example creates the <literal>increment_cell</literal> function. Note that <literal>g_exportedScripts</literal> is a tuple that tells which functions will be displayed in %PRODUCTNAME as user scripts."
+msgstr "Ta primer ustvari funkcijo <literal>increment_cell</literal>. Upoštevajte, da je <literal>g_exportedScripts</literal> n-terica, ki določa, katere funkcije bodo v %PRODUCTNAME prikazane kot uporabniški skripti."
+
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"par_id471623368615244\n"
+"help.text"
+msgid "To run this script from within a Calc document:"
+msgstr "Ta skript izvedete v dokumentu Calc na sledeč način:"
+
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"par_id811623368677444\n"
+"help.text"
+msgid "Create or open a Calc file."
+msgstr "Ustvarite ali odprite datoteko programa Calc."
+
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"par_id281623368679141\n"
+"help.text"
+msgid "Enter some numeric value into cell \"A1\" in the current sheet."
+msgstr "Vnesite številsko vrednost v celico »A1« na trenutnem delovnem listu."
+
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"par_id111623368679893\n"
+"help.text"
+msgid "Go to <menuitem>Tools - Macros - Run Macros</menuitem> ."
+msgstr "Izberite <menuitem>Orodja – Makri – Zaženi makro</menuitem>."
+
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"par_id421623368680565\n"
+"help.text"
+msgid "Choose My Macros - sf_test in the library selector. Then choose the <literal>increment_cell</literal> function under the <menuitem>Macro Name</menuitem>  list."
+msgstr "V izbirniku knjižnic izberite Moji Makri – sf_test. Nato izberite funkcijo <literal>increment_cell</literal> v seznamu <menuitem>Ime makra</menuitem>."
+
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"par_id131623368875763\n"
+"help.text"
+msgid "Click <emph>Run</emph>. Note that the value in cell \"A1\" was incremented by 1."
+msgstr "Kliknite <emph>Zaženi</emph>. Upoštevajte, da je vrednost v celici »A1« povečana za 1."
+
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"par_id781623368934689\n"
+"help.text"
+msgid "You can also use APSO to run Python scripts in a similar manner:"
+msgstr "Na podoben način lahko za izvajanje skriptov Python uporabite tudi razširitev APSO:"
+
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"par_id501623369002537\n"
+"help.text"
+msgid "First open APSO by going to <menuitem>Tools - Macros - Organize Python Scripts</menuitem>."
+msgstr "Naprej odprite APSO z <menuitem>Orodja – Makri – Organiziraj skripte Python</menuitem>."
+
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"par_id521623369004825\n"
+"help.text"
+msgid "In the macro list, navigate to <menuitem>My Macros - sf_test - increment_cell</menuitem> ."
+msgstr "Na seznamu makrov krmarite do <menuitem>Moji makri – sf_test – increment_cell</menuitem>."
+
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"par_id101623369005929\n"
+"help.text"
+msgid "Click <menuitem>Execute</menuitem> ."
+msgstr "Kliknite <menuitem>Zaženi</menuitem>."
+
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"hd_id531623369208159\n"
+"help.text"
+msgid "Running Scripts separately from the %PRODUCTNAME process"
+msgstr "Od procesa %PRODUCTNAME ločeno izvajanje skriptov"
+
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"hd_id261623370168228\n"
+"help.text"
+msgid "Determining the Installation Path"
+msgstr "Ugotavljanje namestitvene poti"
+
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"par_id261623369722023\n"
+"help.text"
+msgid "The first step to run scripts from a separate process is to find the folder where %PRODUCTNAME is installed. There are several ways to do that, but <literal>ScriptForge</literal> provides a quick way to identify your installation path. For that, open APSO's Python shell and type:"
+msgstr "Prvi korak za izvajanje skriptov iz ločenega procesa je, da poiščete mapo, kjer je nameščen %PRODUCTNAME. Obstaja več načinov za to, vendar <literal>ScriptForge</literal> ponuja hiter način za identifikacijo vaše namestitvene poti. V ta namen odprite lupino Python razširitve APSO in vnesite:"
+
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"par_id81623370150730\n"
+"help.text"
+msgid "The output from the code above is the base directory where %PRODUCTNAME is installed. Now you need to add the \"program\" subfolder to the resulting path. This is the base folder from which you will run Python scripts from a separate process."
+msgstr "Rezultat zgornje kode je osnovna mapa, kjer je nameščen paket %PRODUCTNAME. Zdaj morate rezultatu dodati podmapo »program«. To je osnovna mapa, iz katere boste izvajali skripte Python v ločenem procesu."
+
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"par_id451623370201479\n"
+"help.text"
+msgid "For example, suppose you get <emph>/usr/lib/libreoffice/</emph> as the result from running the Python code above. Then you need to consider <emph>/usr/lib/libreoffice/program</emph> as the path to run your Python scripts."
+msgstr "Primer: recimo, da je rezultat zgornje kode Python <emph>/usr/lib/libreoffice/</emph>. Kot pot za izvajanje svojih skriptov Python morate tako uporabiti <emph>/usr/lib/libreoffice/program</emph>."
+
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"hd_id231623370501084\n"
+"help.text"
+msgid "Start %PRODUCTNAME with socket settings"
+msgstr "Zaženite %PRODUCTNAME z nastavitvami vtičnic"
+
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"par_id721623369245475\n"
+"help.text"
+msgid "To run Python scripts from a separate process, you need to start %PRODUCTNAME with a few additional options that specify the hostname and port through which the external process will communicate with the %PRODUCTNAME component process."
+msgstr "Če želite izvajati skripte Python iz ločenega procesa, morate zagnati %PRODUCTNAME z nekaj dodatnimi možnostmi, ki določajo ime gostitelja in vrata, skozi katera bo zunanji proces komuniciral s procesom komponente %PRODUCTNAME."
+
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"par_id221623369584132\n"
+"help.text"
+msgid "Open the your operating system's command prompt, navigate to the program folder of your %PRODUCTNAME installation directory and type:"
+msgstr "Odprite ukazno vrstico operacijskega sistema, krmarite do programske mape svoje namestitvene mape %PRODUCTNAME in vnesite:"
+
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"par_id981623370706743\n"
+"help.text"
+msgid "The command above will start %PRODUCTNAME with a communication channel open so that other processes can exchange messages with it."
+msgstr "Zgornji ukaz zažene %PRODUCTNAME z odprtim kanalom za komunikacijo, tako da lahko ostali procesi z njim izmenjujejo sporočila."
+
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"par_id621623370871360\n"
+"help.text"
+msgid "Note that the previous example opens %PRODUCTNAME start center. If you want to open a specific component, for instance Writer, you can add the --writer flag to the command, as follows."
+msgstr "Upoštevajte, da prejšnji primer odpre začetno središče %PRODUCTNAME. Če želite odpreti določeno komponento paketa, npr. program Writer, lahko ukazu dodate zastavico --writer, kot sledi."
+
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"par_id431623373618951\n"
+"help.text"
+msgid "Take note of the <literal>host</literal> and <literal>port</literal> parameters, which in this example are <emph>localhost</emph> and <emph>2021</emph>, respectively."
+msgstr "Zapomnite si vrednost parametrov <literal>host</literal> in <literal>port</literal>, ki sta v tem primeru <emph>localhost</emph> in <emph>2021</emph>."
+
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"hd_id861623370468356\n"
+"help.text"
+msgid "Running an External Python Shell"
+msgstr "Izvajanje zunanje lupine Python"
+
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"par_id621623371253647\n"
+"help.text"
+msgid "Start the Python shell from within the <emph>program</emph> folder inside your %PRODUCTNAME installation path. Follow the steps <link href=\"text/sbasic/shared/03/sf_intro.xhp#InstallPath\" name=\"Install_Path\">above</link> to learn how to find your installation path."
+msgstr "Zaženite lupino Python iz mape <emph>program</emph> znotraj svoje namestitvene poti %PRODUCTNAME. Sledite <link href=\"text/sbasic/shared/03/sf_intro.xhp#InstallPath\" name=\"Namestitvena pot\">zgornjim</link> korakom, da izveste, kako poiskati svojo namestitveno pot."
+
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"par_id11623373098602\n"
+"help.text"
+msgid "<emph>On Linux / Mac OS:</emph>"
+msgstr "<emph>Na sistemih GNU/Linux in macOS:</emph>"
+
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"par_id311623373151552\n"
+"help.text"
+msgid "<emph>On Windows:</emph>"
+msgstr "<emph>Na sistemih Windows:</emph>"
+
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"par_id791623373520018\n"
+"help.text"
+msgid "This will open the Python shell and now you can start typing commands that will be executed by %PRODUCTNAME. But first you need to set up the socket connection."
+msgstr "S tem odprete lupino Python in zdaj lahko začnete vnašati ukaze, ki se bodo izvajali v %PRODUCTNAME. Najprej pa morate nastaviti povezavo prek vtičnice."
+
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"par_id351623373686414\n"
+"help.text"
+msgid "The second line of code above defines the <literal>host</literal> and <literal>port</literal> settings so that the Python shell can communicate with an ongoing %PRODUCTNAME process opened with the same socket settings."
+msgstr "Druga vrstica zgornje kode določa nastavitvi <literal>host</literal> in <literal>port</literal>, tako da lahko lupina Python komunicira s tekočim procesom %PRODUCTNAME, ki je odprt z istimi nastavitvami vtičnice."
+
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"par_id721623373769471\n"
+"help.text"
+msgid "Now you can run other Python commands and they will be able to communicate with the %PRODUCTNAME process. For example:"
+msgstr "Zdaj lahko izvajate druge ukaze Python in ti bodo lahko komunicirali s procesom %PRODUCTNAME. Primer:"
 
 #: sf_l10n.xhp
 msgctxt ""
