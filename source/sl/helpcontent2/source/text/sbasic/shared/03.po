@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: LibreOffice 7.2\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2021-06-18 10:44+0200\n"
-"PO-Revision-Date: 2021-06-19 12:55+0200\n"
+"POT-Creation-Date: 2021-07-07 10:09+0200\n"
+"PO-Revision-Date: 2021-07-07 12:04+0200\n"
 "Last-Translator: Martin Srebotnjak <miles@filmsi.net>\n"
 "Language-Team: sl.libreoffice.org\n"
 "Language: sl\n"
@@ -143,7 +143,7 @@ msgctxt ""
 "par_id1001623412767893\n"
 "help.text"
 msgid "To learn more about how to create and execute Python scripts using the <literal>ScriptForge</literal> library, read the <embedvar href=\"text/sbasic/shared/03/sf_intro.xhp#title\"/> help page."
-msgstr "Če želite izvedeti več, kako ustvarjate in izvajate skripte Python s knjižnico <literal>ScriptForge</literal>, glejte stran pomoči <embedvar href=\"text/sbasic/shared/03/sf_intro.xhp#title\"/>."
+msgstr "Če želite izvedeti več o ustvarjanju in izvajanju skriptov Python s knjižnico <literal>ScriptForge</literal>, glejte stran pomoči <embedvar href=\"text/sbasic/shared/03/sf_intro.xhp#title\"/>."
 
 #: lib_ScriptForge.xhp
 msgctxt ""
@@ -2120,46 +2120,6 @@ msgctxt ""
 "help.text"
 msgid "The code snippet below prints the names of all form documents in the current Base document."
 msgstr "Spodnji odlomek kode natisne imena vseh dokumentov obrazca v trenutnem dokumentu programa Base."
-
-#: sf_base.xhp
-msgctxt ""
-"sf_base.xhp\n"
-"pyc_id691623103639534\n"
-"help.text"
-msgid "bas = CreateScriptService(\"Basic\")"
-msgstr "bas = CreateScriptService(\"Basic\")"
-
-#: sf_base.xhp
-msgctxt ""
-"sf_base.xhp\n"
-"pyc_id101623103639206\n"
-"help.text"
-msgid "doc = CreateScriptService(\"Document\", bas.ThisDataBaseDocument)"
-msgstr "doc = CreateScriptService(\"Dokument\", bas.ThisDataBaseDocument)"
-
-#: sf_base.xhp
-msgctxt ""
-"sf_base.xhp\n"
-"pyc_id901623103639390\n"
-"help.text"
-msgid "myForms = oDoc.FormDocuments()"
-msgstr "mojiObrazci = oDoc.FormDocuments()"
-
-#: sf_base.xhp
-msgctxt ""
-"sf_base.xhp\n"
-"pyc_id791623103639701\n"
-"help.text"
-msgid "for formName in myForms:"
-msgstr "for imeObrazca in mojiObrazci:"
-
-#: sf_base.xhp
-msgctxt ""
-"sf_base.xhp\n"
-"pyc_id741623103639861\n"
-"help.text"
-msgid "bas.MsgBox(formName)"
-msgstr "bas.MsgBox(imeObrazca)"
 
 #: sf_base.xhp
 msgctxt ""
@@ -11652,14 +11612,6 @@ msgstr "Do obrazcev lahko dostopate z njihovimi imeni ali z njihovimi indeksi, k
 #: sf_form.xhp
 msgctxt ""
 "sf_form.xhp\n"
-"pyc_id691622014677169\n"
-"help.text"
-msgid "my_form = doc.Forms(0)"
-msgstr "moj_obrazec = doc.Forms(0)"
-
-#: sf_form.xhp
-msgctxt ""
-"sf_form.xhp\n"
 "par_id181618250546617\n"
 "help.text"
 msgid "If you try to access a <literal>FormDocument</literal> that is currently opened in <emph>Design Mode</emph> an exception will be raised."
@@ -11748,14 +11700,6 @@ msgstr "Zgornje primere lahko prevedemo v Python na sledeč način:"
 #: sf_form.xhp
 msgctxt ""
 "sf_form.xhp\n"
-"pyc_id501622028742999\n"
-"help.text"
-msgid "db = CreateScriptService('SFDocuments.Document', XSCRIPTCONTEXT.getDocument())"
-msgstr "db = CreateScriptService('SFDocuments.Document', XSCRIPTCONTEXT.getDocument())"
-
-#: sf_form.xhp
-msgctxt ""
-"sf_form.xhp\n"
 "pyc_id811622808499801\n"
 "help.text"
 msgid "#  The statement below is necessary only if the form hasn't been opened yet"
@@ -11764,42 +11708,10 @@ msgstr "#  Spodnji ukaz je potreben le, če obrazec še ni odprt"
 #: sf_form.xhp
 msgctxt ""
 "sf_form.xhp\n"
-"pyc_id671622028743191\n"
-"help.text"
-msgid "form_doc = db.OpenFormDocument('thisFormDocument')"
-msgstr "dokument_obrazci = db.OpenFormDocument('thisFormDocument')"
-
-#: sf_form.xhp
-msgctxt ""
-"sf_form.xhp\n"
-"pyc_id431622028743374\n"
-"help.text"
-msgid "form = form_doc.Forms('thisFormDocument', 'MainForm')"
-msgstr "obrazec = dokument_obrazci.Forms('thisFormDocument', 'GlavniObrazec')"
-
-#: sf_form.xhp
-msgctxt ""
-"sf_form.xhp\n"
 "pyc_id511622808538351\n"
 "help.text"
 msgid "#  Or, alternatively, to access the form by its index ..."
 msgstr "#  Ali če želite do obrazca dostopati z njegovim indeksom ..."
-
-#: sf_form.xhp
-msgctxt ""
-"sf_form.xhp\n"
-"pyc_id681622028743582\n"
-"help.text"
-msgid "form = form_doc.Forms('thisFormDocument', 0)"
-msgstr "obrazec = dokument_obrazci.Forms('thisFormDocument', 0)"
-
-#: sf_form.xhp
-msgctxt ""
-"sf_form.xhp\n"
-"pyc_id611622028743782\n"
-"help.text"
-msgid "sub_form = form.SubForms('mySubForm')"
-msgstr "pod_obrazec = obrazec.SubForms('mojPodobrazec')"
 
 #: sf_form.xhp
 msgctxt ""
@@ -12612,14 +12524,6 @@ msgstr "Ponovno naloži trenutne podatke iz zbirke podatkov in osveži obrazec. 
 #: sf_form.xhp
 msgctxt ""
 "sf_form.xhp\n"
-"pyc_id401622550186725\n"
-"help.text"
-msgid "form.Requery()  # Python"
-msgstr "form.Requery()  # Python"
-
-#: sf_form.xhp
-msgctxt ""
-"sf_form.xhp\n"
 "par_id891616864510614\n"
 "help.text"
 msgid "The value returned by the <literal>Subforms</literal> method depends on the arguments provided:"
@@ -12646,7 +12550,7 @@ msgctxt ""
 "sf_form.xhp\n"
 "par_id341616864510747\n"
 "help.text"
-msgid "<emph>subform</emph> : A subform stored in the current <literal>Form</literal> class instance given by its name or index."
+msgid "<emph>subform</emph>: A subform stored in the current <literal>Form</literal> class instance given by its name or index."
 msgstr "<emph>subform</emph>: podobrazec, shranjen v trenutni instanci razreda <literal>Form</literal>, podan z imenom ali indeksom."
 
 #: sf_form.xhp
@@ -12654,8 +12558,8 @@ msgctxt ""
 "sf_form.xhp\n"
 "par_id211618230389251\n"
 "help.text"
-msgid "When this argument is absent, the method returns a list of available subforms as a zero-based array. If the form has a single subform, you can set <literal>Subform = 0</literal> to get access to it."
-msgstr "Če ta argument ni prisoten, metoda vrne seznam prisotnih podobrazcev kot ničelno polje. Če ima obrazec en sam podobrazec, lahko za dostop do njega določite <literal>Subform = 0</literal>."
+msgid "When this argument is absent, the method returns a list of available subforms as a zero-based array. If the form has a single subform, you can set <literal>subform = 0</literal> to get access to it."
+msgstr "Če ta argument ni prisoten, metoda vrne seznam prisotnih podobrazcev kot ničelno polje. Če ima obrazec en sam podobrazec, lahko za dostop do njega določite <literal>subform = 0</literal>."
 
 #: sf_formcontrol.xhp
 msgctxt ""
@@ -13951,23 +13855,23 @@ msgctxt ""
 "par_id161584541257982\n"
 "help.text"
 msgid "This method is applicable only to controls of the <literal>TableControl</literal> type. The returned value depends on the arguments provided."
-msgstr "Ta metoda deluje le za kontrolnike vrste <literal>TableControl</literal> type.. Vrnjena vrednost je odvisna od podanih argumentov."
+msgstr "Ta metoda deluje le za kontrolnike vrste <literal>TableControl</literal>. Vrnjena vrednost je odvisna od podanih argumentov."
 
 #: sf_formcontrol.xhp
 msgctxt ""
 "sf_formcontrol.xhp\n"
 "par_id701618777636827\n"
 "help.text"
-msgid "If the optional argument <literal>ControlName</literal> is absent, then a zero-based Array containing the names of all controls is returned."
-msgstr "Če neobvezni argument <literal>ControlName</literal> ni podan, vrne ničelno polje z imeni vseh kontrolnikov."
+msgid "If the optional argument <literal>controlname</literal> is absent, then a zero-based Array containing the names of all controls is returned."
+msgstr "Če neobvezni argument <literal>controlname</literal> ni podan, vrne ničelno polje z imeni vseh kontrolnikov."
 
 #: sf_formcontrol.xhp
 msgctxt ""
 "sf_formcontrol.xhp\n"
 "par_id851618777715892\n"
 "help.text"
-msgid "On the other hand, if a <literal>ControlName</literal> is provided, the method returns a <literal>FormControl</literal> class instance corresponding to the specified control."
-msgstr "Če pa je neobvezni argument <literal>ControlName</literal> podan, metoda vrne instanco razreda <literal>FormControl</literal>, ki ustreza navedenemu kontrolniku."
+msgid "On the other hand, if a <literal>controlname</literal> is provided, the method returns a <literal>FormControl</literal> class instance corresponding to the specified control."
+msgstr "Če pa je neobvezni argument <literal>controlname</literal> podan, metoda vrne instanco razreda <literal>FormControl</literal>, ki ustreza navedenemu kontrolniku."
 
 #: sf_formcontrol.xhp
 msgctxt ""
@@ -14294,7 +14198,7 @@ msgctxt ""
 "sf_intro.xhp\n"
 "par_id471623366906045\n"
 "help.text"
-msgid "Now you can start executing Python commands using any of the ScriptForge services. For example, the code snippet below uses the <literal>UI</literal> service to create a blank writer document."
+msgid "Now you can start executing Python commands using any of the ScriptForge services. For example, the code snippet below uses the <literal>UI</literal> service to create a blank Writer document."
 msgstr "Zdaj lahko pričnete izvajati ukaze Python z uporabo poljubne storitve ScriptForge. Primer: spodnji odlomek kode uporablja storitev <literal>UI</literal> za izdelavo praznega dokumenta programa Writer."
 
 #: sf_intro.xhp
@@ -14382,8 +14286,8 @@ msgctxt ""
 "sf_intro.xhp\n"
 "par_id421623368680565\n"
 "help.text"
-msgid "Choose My Macros - sf_test in the library selector. Then choose the <literal>increment_cell</literal> function under the <menuitem>Macro Name</menuitem>  list."
-msgstr "V izbirniku knjižnic izberite Moji Makri – sf_test. Nato izberite funkcijo <literal>increment_cell</literal> v seznamu <menuitem>Ime makra</menuitem>."
+msgid "Choose My Macros - sf_test in the library selector. Then choose the <literal>increment_cell</literal> function under the <menuitem>Macro Name</menuitem> list."
+msgstr "V izbirniku knjižnic izberite Moji Makri – sf_test. Nato izberite funkcijo <literal>increment_cell</literal> na seznamu <menuitem>Ime makra</menuitem>."
 
 #: sf_intro.xhp
 msgctxt ""
@@ -14414,7 +14318,7 @@ msgctxt ""
 "sf_intro.xhp\n"
 "par_id521623369004825\n"
 "help.text"
-msgid "In the macro list, navigate to <menuitem>My Macros - sf_test - increment_cell</menuitem> ."
+msgid "In the macro list, navigate to <menuitem>My Macros - sf_test - increment_cell</menuitem>."
 msgstr "Na seznamu makrov krmarite do <menuitem>Moji makri – sf_test – increment_cell</menuitem>."
 
 #: sf_intro.xhp
@@ -14422,7 +14326,7 @@ msgctxt ""
 "sf_intro.xhp\n"
 "par_id101623369005929\n"
 "help.text"
-msgid "Click <menuitem>Execute</menuitem> ."
+msgid "Click <menuitem>Execute</menuitem>."
 msgstr "Kliknite <menuitem>Zaženi</menuitem>."
 
 #: sf_intro.xhp
@@ -19524,22 +19428,6 @@ msgstr "Opis"
 #: sf_ui.xhp
 msgctxt ""
 "sf_ui.xhp\n"
-"par_id511620761856238\n"
-"help.text"
-msgid "MACROEXECALWAYS"
-msgstr "MACROEXECALWAYS"
-
-#: sf_ui.xhp
-msgctxt ""
-"sf_ui.xhp\n"
-"par_id761620761856107\n"
-"help.text"
-msgid "2"
-msgstr "2"
-
-#: sf_ui.xhp
-msgctxt ""
-"sf_ui.xhp\n"
 "par_id341620761856238\n"
 "help.text"
 msgid "Macros are always executed"
@@ -19548,42 +19436,10 @@ msgstr "Makri se vedno izvedejo"
 #: sf_ui.xhp
 msgctxt ""
 "sf_ui.xhp\n"
-"par_id661620761881513\n"
-"help.text"
-msgid "MACROEXECNEVER"
-msgstr "MACROEXECNEVER"
-
-#: sf_ui.xhp
-msgctxt ""
-"sf_ui.xhp\n"
-"par_id661620761891082\n"
-"help.text"
-msgid "1"
-msgstr "1"
-
-#: sf_ui.xhp
-msgctxt ""
-"sf_ui.xhp\n"
 "par_id101620761893011\n"
 "help.text"
 msgid "Macros are never executed"
 msgstr "Makri se nikoli ne izvedejo"
-
-#: sf_ui.xhp
-msgctxt ""
-"sf_ui.xhp\n"
-"par_id311620761888379\n"
-"help.text"
-msgid "MACROEXECNORMAL"
-msgstr "MACROEXECNORMAL"
-
-#: sf_ui.xhp
-msgctxt ""
-"sf_ui.xhp\n"
-"par_id951620761899067\n"
-"help.text"
-msgid "0"
-msgstr "0"
 
 #: sf_ui.xhp
 msgctxt ""
@@ -19600,46 +19456,6 @@ msgctxt ""
 "help.text"
 msgid "The examples below show a <literal>MsgBox</literal> with the names of all currently open documents."
 msgstr "Spodnji primer prikazuje <literal>MsgBox</literal> z imeni vseh trenutno odprtih dokumentov."
-
-#: sf_ui.xhp
-msgctxt ""
-"sf_ui.xhp\n"
-"pyc_id21620312350189\n"
-"help.text"
-msgid "svcUI = CreateScriptService(\"UI\")"
-msgstr "svcUI = CreateScriptService(\"UI\")"
-
-#: sf_ui.xhp
-msgctxt ""
-"sf_ui.xhp\n"
-"pyc_id631620312351013\n"
-"help.text"
-msgid "sBasic = CreateScriptService(\"Basic\")"
-msgstr "sBasic = CreateScriptService(\"Basic\")"
-
-#: sf_ui.xhp
-msgctxt ""
-"sf_ui.xhp\n"
-"pyc_id141620312351286\n"
-"help.text"
-msgid "openDocs = svcUI.Documents()"
-msgstr "openDocs = svcUI.Documents()"
-
-#: sf_ui.xhp
-msgctxt ""
-"sf_ui.xhp\n"
-"pyc_id661620312351500\n"
-"help.text"
-msgid "strDocs = \"\\n\".join(openDocs)"
-msgstr "strDocs = \"\\n\".join(openDocs)"
-
-#: sf_ui.xhp
-msgctxt ""
-"sf_ui.xhp\n"
-"pyc_id801620312351676\n"
-"help.text"
-msgid "sBasic.MsgBox(strDocs)"
-msgstr "sBasic.MsgBox(strDocs)"
 
 #: sf_ui.xhp
 msgctxt ""
@@ -19708,14 +19524,6 @@ msgstr "<emph>registrationname</emph>: ime, uporabljeno za hrambo nove zbirke po
 #: sf_ui.xhp
 msgctxt ""
 "sf_ui.xhp\n"
-"pyc_id361620323808010\n"
-"help.text"
-msgid "myBase = svcUI.CreateBaseDocument(r\"C:\\Databases\\MyBaseFile.odb\", \"FIREBIRD\")"
-msgstr "myBase = svcUI.CreateBaseDocument(r\"C:\\ZbirkePodatkov\\DatotekaMojaZbirkaPodatkov.odb\", \"FIREBIRD\")"
-
-#: sf_ui.xhp
-msgctxt ""
-"sf_ui.xhp\n"
 "par_id651588521753997\n"
 "help.text"
 msgid "Create a new %PRODUCTNAME document of a given type or based on a given template. The method returns a document object."
@@ -19726,8 +19534,8 @@ msgctxt ""
 "sf_ui.xhp\n"
 "par_id51588521753302\n"
 "help.text"
-msgid "<emph>documenttype</emph> : \"Calc\", \"Writer\", etc. If absent, the <literal>TemplateFile</literal> argument must be present."
-msgstr "<emph>documenttype</emph>: vrsta dokumenta, kot npr. \"Calc\", \"Writer\" itn. Če ni naveden, mora biti prisoten argument <literal>TemplateFile</literal>."
+msgid "<emph>documenttype</emph> : \"Calc\", \"Writer\", etc. If absent, the <literal>templatefile</literal> argument must be present."
+msgstr "<emph>documenttype</emph>: vrsta dokumenta, kot npr. \"Calc\", \"Writer\" itn. Če ni naveden, mora biti prisoten argument <literal>templatefile</literal>."
 
 #: sf_ui.xhp
 msgctxt ""
@@ -19822,15 +19630,15 @@ msgctxt ""
 "sf_ui.xhp\n"
 "par_id231596555746385\n"
 "help.text"
-msgid "<emph>filename</emph> : Identifies the file to open. It must follow the SF_FileSystem.FileNaming notation. If the file already exists, it is overwritten without warning"
-msgstr "<emph>filename</emph>: ime datoteke, ki jo želite odpreti. Slediti mora obliki zapisa SF_FileSystem.FileNaming. Če datoteka že obstaja, bo prepisana brez opozorila."
+msgid "<emph>filename</emph>: Identifies the file to open. It must follow the <literal>SF_FileSystem.FileNaming</literal> notation. If the file already exists, it is overwritten without warning"
+msgstr "<emph>filename</emph>: ime datoteke, ki jo želite odpreti. Slediti mora obliki zapisa <literal>SF_FileSystem.FileNaming</literal>. Če datoteka že obstaja, bo prepisana brez opozorila."
 
 #: sf_ui.xhp
 msgctxt ""
 "sf_ui.xhp\n"
 "par_id711596555746281\n"
 "help.text"
-msgid "<emph>registrationname</emph> : The name to use to find the database in the databases register. It is ignored if <literal>FileName</literal> <> \"\"."
+msgid "<emph>registrationname</emph>: The name to use to find the database in the databases register. It is ignored if <literal>FileName</literal> <> \"\"."
 msgstr "<emph>registrationname</emph>: ime za iskanje zbirke podatkov v registru zbirk podatkov. Prezrto, če je <literal>FileName</literal> <> \"\"."
 
 #: sf_ui.xhp
@@ -19948,14 +19756,6 @@ msgstr "V naslednjih primerih se <literal>width</literal> in <literal>height</li
 #: sf_ui.xhp
 msgctxt ""
 "sf_ui.xhp\n"
-"pyc_id971620331945744\n"
-"help.text"
-msgid "svcUI.Resize(width = 500, height = 500)"
-msgstr "svcUI.Resize(width = 500, height = 500)"
-
-#: sf_ui.xhp
-msgctxt ""
-"sf_ui.xhp\n"
 "par_id21620332301809\n"
 "help.text"
 msgid "To resize a window that is not active, first activate it using the <literal>Activate</literal> method."
@@ -19992,46 +19792,6 @@ msgctxt ""
 "help.text"
 msgid "' Resets the statusbar"
 msgstr "' Ponastavi vrstico stanja"
-
-#: sf_ui.xhp
-msgctxt ""
-"sf_ui.xhp\n"
-"pyc_id631620332653004\n"
-"help.text"
-msgid "from time import sleep"
-msgstr "from time import sleep"
-
-#: sf_ui.xhp
-msgctxt ""
-"sf_ui.xhp\n"
-"pyc_id351620332422330\n"
-"help.text"
-msgid "for i in range(101):"
-msgstr "for i in range(101):"
-
-#: sf_ui.xhp
-msgctxt ""
-"sf_ui.xhp\n"
-"bas_id261620332627647\n"
-"help.text"
-msgid "svcUI.SetStatusbar(\"Test:\", i)"
-msgstr "svcUI.SetStatusbar(\"Preizkus:\", i)"
-
-#: sf_ui.xhp
-msgctxt ""
-"sf_ui.xhp\n"
-"pyc_id181620332715974\n"
-"help.text"
-msgid "sleep(0.05)"
-msgstr "sleep(0.05)"
-
-#: sf_ui.xhp
-msgctxt ""
-"sf_ui.xhp\n"
-"pyc_id381620332733373\n"
-"help.text"
-msgid "svcUI.SetStatusbar()"
-msgstr "svcUI.SetStatusbar()"
 
 #: sf_ui.xhp
 msgctxt ""
@@ -20096,19 +19856,3 @@ msgctxt ""
 "help.text"
 msgid "<emph>windowname</emph>: see the definitions above."
 msgstr "<emph>windowname</emph>: glejte zgornje definicije."
-
-#: sf_ui.xhp
-msgctxt ""
-"sf_ui.xhp\n"
-"pyc_id441620333481074\n"
-"help.text"
-msgid "if svcUI.WindowExists(r\"C:\\Document\\My file.odt\"):"
-msgstr "if svcUI.WindowExists(r\"C:\\Dokument\\MojaDatoteka.odt\"):"
-
-#: sf_ui.xhp
-msgctxt ""
-"sf_ui.xhp\n"
-"pyc_id801620333495532\n"
-"help.text"
-msgid "# ..."
-msgstr "# ..."
