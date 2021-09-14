@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2021-06-24 12:51+0200\n"
+"POT-Creation-Date: 2021-09-14 12:00+0200\n"
 "PO-Revision-Date: 2019-07-19 13:23+0000\n"
 "Last-Translator: Milo Ivir <mail@milotype.de>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -115,13 +115,13 @@ msgctxt ""
 msgid "<link href=\"text/scalc/01/02110000.xhp\" name=\"Navigator\">Navigator</link>"
 msgstr ""
 
-#. CJKL2
+#. RJGLF
 #: 02110000.xhp
 msgctxt ""
 "02110000.xhp\n"
 "par_id3156422\n"
 "help.text"
-msgid "<ahelp hid=\".uno:Navigator\">Activates and deactivates the Navigator.</ahelp> The Navigator is a <link href=\"text/shared/00/00000005.xhp#andocken\" name=\"dockable window\">dockable window</link>."
+msgid "<ahelp hid=\".uno:Navigator\">Activates and deactivates the Navigator.</ahelp> The Navigator is a <link href=\"text/shared/00/00000005.xhp#docking\" name=\"dockable window\">dockable window</link>."
 msgstr ""
 
 #. tDkHa
@@ -20140,6 +20140,78 @@ msgctxt ""
 msgid "<variable id=\"texttext\">This section contains descriptions of the <emph>Text</emph> functions. </variable>"
 msgstr ""
 
+#. bF46G
+#: 04060110.xhp
+msgctxt ""
+"04060110.xhp\n"
+"bm_id331624453577057\n"
+"help.text"
+msgid "<bookmark_value>using double quotation marks in formulas</bookmark_value>  <bookmark_value>formulas; using double quotation marks</bookmark_value>"
+msgstr ""
+
+#. XXyWj
+#: 04060110.xhp
+msgctxt ""
+"04060110.xhp\n"
+"hd_id291624454173529\n"
+"help.text"
+msgid "Using double quotation marks in formulas"
+msgstr ""
+
+#. aGDFQ
+#: 04060110.xhp
+msgctxt ""
+"04060110.xhp\n"
+"par_id891624454058773\n"
+"help.text"
+msgid "To include a text string in a formula, place the text string between two double quotation marks (\") and Calc takes the characters in the string without attempting to interpret them. For example, the formula <input>=\"Hello world!\"</input> displays the text string <literal>Hello world!</literal> in the cell, with no surrounding double quotation marks."
+msgstr ""
+
+#. HCwEU
+#: 04060110.xhp
+msgctxt ""
+"04060110.xhp\n"
+"par_id461624454425320\n"
+"help.text"
+msgid "The more complex formula <input>=CONCATENATE(\"Life is really simple, \"; \"but we insist on making it complicated \"; \"(Confucius).\")</input> concatenates three individual strings in double quotation marks, outputting <literal>Life is really simple, but we insist on making it complicated (Confucius).</literal>"
+msgstr ""
+
+#. XBDt9
+#: 04060110.xhp
+msgctxt ""
+"04060110.xhp\n"
+"par_id711624454477483\n"
+"help.text"
+msgid "To place a literal double quotation mark within a string inside a formula, two methods can be used:"
+msgstr ""
+
+#. 8qFEv
+#: 04060110.xhp
+msgctxt ""
+"04060110.xhp\n"
+"par_id541624454496424\n"
+"help.text"
+msgid "You can \"escape\" the double quotation mark with an additional double quotation mark, and Calc treats the escaped double quotation mark as a literal value. For example, the formula <input>=\"My name is \"\"John Doe\"\".\"</input> outputs the string <literal>My name is \"John Doe\".</literal> Another simple example is the formula <input>=UNICODE(\"\"\"\")</input> which returns <literal>34</literal>, the decimal value of the Unicode quotation mark character (U+0022) — here the first and fourth double quotation marks indicate the beginning and end of the string, while the second double quotation mark escapes the third."
+msgstr ""
+
+#. MfLZn
+#: 04060110.xhp
+msgctxt ""
+"04060110.xhp\n"
+"par_id21624454513641\n"
+"help.text"
+msgid "You can use the CHAR function or the UNICHAR function to insert a double quotation mark. For example, the formula <input>=UNICHAR(34) & \"The Catcher in the Rye\" & UNICHAR(34) & \" is a famous book by J. D. Salinger.\"</input> displays the string <literal>\"The Catcher in the Rye\" is a famous book by J. D. Salinger.</literal>"
+msgstr ""
+
+#. cpK3Z
+#: 04060110.xhp
+msgctxt ""
+"04060110.xhp\n"
+"par_id401624454547945\n"
+"help.text"
+msgid "Beware that Calc's AutoCorrect function may modify double quotation marks. AutoCorrect should not change the double quotation marks within formula cells but may change those used in non-formula cells containing text. For example, if you copy a string that is surrounded by some other form of typographical double quotation marks, such as the left double quotation mark (U+201C) and the right double quotation mark (U+201D), and then paste into a formula cell, an error may result. Open the <emph>Double Quotes</emph> area of the <menuitem>Tools - AutoCorrect Options - Localized Options</menuitem> dialog to set the characters used to automatically correct the start and end typographical double quotation marks. Uncheck the <menuitem>Replace</menuitem> toggle button to disable the feature."
+msgstr ""
+
 #. Gmvo8
 #: 04060110.xhp
 msgctxt ""
@@ -20338,13 +20410,13 @@ msgctxt ""
 msgid "BASE"
 msgstr "BASE"
 
-#. QtLKF
+#. znNLx
 #: 04060110.xhp
 msgctxt ""
 "04060110.xhp\n"
 "par_id3153289\n"
 "help.text"
-msgid "<ahelp hid=\"HID_FUNC_BASIS\">Converts a positive integer to a specified base into a text from the <link href=\"text/shared/00/00000005.xhp#zahlensystem\" name=\"numbering system\">numbering system</link>.</ahelp> The digits 0-9 and the letters A-Z are used."
+msgid "<ahelp hid=\"HID_FUNC_BASIS\">Converts a positive integer to a specified base into a text from the <link href=\"text/shared/00/00000005.xhp#number_system\" name=\"numbering system\">numbering system</link>.</ahelp> The digits 0-9 and the letters A-Z are used."
 msgstr ""
 
 #. 2cDvi
@@ -20689,13 +20761,13 @@ msgctxt ""
 msgid "DECIMAL"
 msgstr "DECIMAL"
 
-#. CeS5L
+#. BcCUk
 #: 04060110.xhp
 msgctxt ""
 "04060110.xhp\n"
 "par_id3156361\n"
 "help.text"
-msgid "<ahelp hid=\"HID_FUNC_DEZIMAL\">Converts text with characters from a <link href=\"text/shared/00/00000005.xhp#zahlensystem\" name=\"number system\">number system</link> to a positive integer in the base radix given.</ahelp> The radix must be in the range 2 to 36. Spaces and tabs are ignored. The <emph>Text</emph> field is not case-sensitive."
+msgid "<ahelp hid=\"HID_FUNC_DEZIMAL\">Converts text with characters from a <link href=\"text/shared/00/00000005.xhp#number_system\" name=\"number system\">number system</link> to a positive integer in the base radix given.</ahelp> The radix must be in the range 2 to 36. Spaces and tabs are ignored. The <emph>Text</emph> field is not case-sensitive."
 msgstr ""
 
 #. 5yN72
@@ -21274,49 +21346,49 @@ msgctxt ""
 msgid "<emph>Number_bytes</emph> (optional) specifies the number of characters you want LEFTB to extract, based on bytes. If this parameter is not defined, one character is returned."
 msgstr ""
 
-#. TFXGD
+#. FFvts
 #: 04060110.xhp
 msgctxt ""
 "04060110.xhp\n"
 "par_id2949141\n"
 "help.text"
-msgid "<item type=\"input\">LEFTB(\"中国\";1)</item> returns \" \" (1 byte is only half a DBCS character and a space character is returned instead)."
+msgid "<item type=\"input\">=LEFTB(\"中国\";1)</item> returns \" \" (1 byte is only half a DBCS character and a space character is returned instead)."
 msgstr ""
 
-#. QwisG
+#. mQvUN
 #: 04060110.xhp
 msgctxt ""
 "04060110.xhp\n"
 "par_id2949151\n"
 "help.text"
-msgid "<item type=\"input\">LEFTB(\"中国\";2)</item> returns \"中\" (2 bytes constitute one complete DBCS character)."
+msgid "<item type=\"input\">=LEFTB(\"中国\";2)</item> returns \"中\" (2 bytes constitute one complete DBCS character)."
 msgstr ""
 
-#. SDFHG
+#. qAEZ3
 #: 04060110.xhp
 msgctxt ""
 "04060110.xhp\n"
 "par_id2949161\n"
 "help.text"
-msgid "<item type=\"input\">LEFTB(\"中国\";3)</item> returns \"中 \" (3 bytes constitute one DBCS character and a half; the last character returned is therefore a space character)."
+msgid "<item type=\"input\">=LEFTB(\"中国\";3)</item> returns \"中 \" (3 bytes constitute one DBCS character and a half; the last character returned is therefore a space character)."
 msgstr ""
 
-#. 26C2F
+#. s3UVQ
 #: 04060110.xhp
 msgctxt ""
 "04060110.xhp\n"
 "par_id2949171\n"
 "help.text"
-msgid "<item type=\"input\">LEFTB(\"中国\";4)</item> returns \"中国\" (4 bytes constitute two complete DBCS characters)."
+msgid "<item type=\"input\">=LEFTB(\"中国\";4)</item> returns \"中国\" (4 bytes constitute two complete DBCS characters)."
 msgstr ""
 
-#. 8AtC5
+#. FM3FS
 #: 04060110.xhp
 msgctxt ""
 "04060110.xhp\n"
 "par_id2949181\n"
 "help.text"
-msgid "<item type=\"input\">LEFTB(\"office\";3)</item> returns \"off\" (3 non-DBCS characters each consisting of 1 byte)."
+msgid "<item type=\"input\">=LEFTB(\"office\";3)</item> returns \"off\" (3 non-DBCS characters each consisting of 1 byte)."
 msgstr ""
 
 #. eEgeD
@@ -21661,103 +21733,103 @@ msgctxt ""
 msgid "<emph>Number_bytes</emph> specifies the number of characters MIDB will return from text, in bytes."
 msgstr ""
 
-#. YrAwV
+#. 5Nn2i
 #: 04060110.xhp
 msgctxt ""
 "04060110.xhp\n"
 "par_id2958417\n"
 "help.text"
-msgid "<item type=\"input\">MIDB(\"中国\";1;0)</item> returns \"\" (0 bytes is always an empty string)."
+msgid "<item type=\"input\">=MIDB(\"中国\";1;0)</item> returns \"\" (0 bytes is always an empty string)."
 msgstr ""
 
-#. vSWbG
+#. q6dWL
 #: 04060110.xhp
 msgctxt ""
 "04060110.xhp\n"
 "par_id2958427\n"
 "help.text"
-msgid "<item type=\"input\">MIDB(\"中国\";1;1)</item> returns \" \" (1 byte is only half a DBCS character and therefore the result is a space character)."
+msgid "<item type=\"input\">=MIDB(\"中国\";1;1)</item> returns \" \" (1 byte is only half a DBCS character and therefore the result is a space character)."
 msgstr ""
 
-#. TLFgD
+#. CfNES
 #: 04060110.xhp
 msgctxt ""
 "04060110.xhp\n"
 "par_id2958437\n"
 "help.text"
-msgid "<item type=\"input\">MIDB(\"中国\";1;2)</item> returns \"中\" (2 bytes constitute one complete DBCS character)."
+msgid "<item type=\"input\">=MIDB(\"中国\";1;2)</item> returns \"中\" (2 bytes constitute one complete DBCS character)."
 msgstr ""
 
-#. BPauw
+#. wBLqC
 #: 04060110.xhp
 msgctxt ""
 "04060110.xhp\n"
 "par_id2958447\n"
 "help.text"
-msgid "<item type=\"input\">MIDB(\"中国\";1;3)</item> returns \"中 \" (3 bytes constitute one and a half DBCS character; the last byte results in a space character)."
+msgid "<item type=\"input\">=MIDB(\"中国\";1;3)</item> returns \"中 \" (3 bytes constitute one and a half DBCS character; the last byte results in a space character)."
 msgstr ""
 
-#. PwTEe
+#. GedmG
 #: 04060110.xhp
 msgctxt ""
 "04060110.xhp\n"
 "par_id2958457\n"
 "help.text"
-msgid "<item type=\"input\">MIDB(\"中国\";1;4)</item> returns \"中国\" (4 bytes constitute two complete DBCS characters)."
+msgid "<item type=\"input\">=MIDB(\"中国\";1;4)</item> returns \"中国\" (4 bytes constitute two complete DBCS characters)."
 msgstr ""
 
-#. Yb4iF
+#. dAMAA
 #: 04060110.xhp
 msgctxt ""
 "04060110.xhp\n"
 "par_id2958467\n"
 "help.text"
-msgid "<item type=\"input\">MIDB(\"中国\";2;1)</item> returns \" \" (byte position 2 is not at the beginning of a character in a DBCS string; 1 space character is returned)."
+msgid "<item type=\"input\">=MIDB(\"中国\";2;1)</item> returns \" \" (byte position 2 is not at the beginning of a character in a DBCS string; 1 space character is returned)."
 msgstr ""
 
-#. DyXxB
+#. SXLij
 #: 04060110.xhp
 msgctxt ""
 "04060110.xhp\n"
 "par_id2958477\n"
 "help.text"
-msgid "<item type=\"input\">MIDB(\"中国\";2;2)</item> returns \" \" (byte position 2 points to the last half of the first character in the DBCS string; the 2 bytes asked for therefore constitutes the last half of the first character and the first half of the second character in the string; 2 space characters are therefore returned)."
+msgid "<item type=\"input\">=MIDB(\"中国\";2;2)</item> returns \" \" (byte position 2 points to the last half of the first character in the DBCS string; the 2 bytes asked for therefore constitutes the last half of the first character and the first half of the second character in the string; 2 space characters are therefore returned)."
 msgstr ""
 
-#. WA6xA
+#. cFw7V
 #: 04060110.xhp
 msgctxt ""
 "04060110.xhp\n"
 "par_id2958487\n"
 "help.text"
-msgid "<item type=\"input\">MIDB(\"中国\";2;3)</item> returns \" 国\" (byte position 2 is not at the beginning of a character in a DBCS string; a space character is returned for byte position 2)."
+msgid "<item type=\"input\">=MIDB(\"中国\";2;3)</item> returns \" 国\" (byte position 2 is not at the beginning of a character in a DBCS string; a space character is returned for byte position 2)."
 msgstr ""
 
-#. riZ7z
+#. drtpL
 #: 04060110.xhp
 msgctxt ""
 "04060110.xhp\n"
 "par_id2958497\n"
 "help.text"
-msgid "<item type=\"input\">MIDB(\"中国\";3;1)</item> returns \" \" (byte position 3 is at the beginning of a character in a DBCS string, but 1 byte is only half a DBCS character and a space character is therefore returned instead)."
+msgid "<item type=\"input\">=MIDB(\"中国\";3;1)</item> returns \" \" (byte position 3 is at the beginning of a character in a DBCS string, but 1 byte is only half a DBCS character and a space character is therefore returned instead)."
 msgstr ""
 
-#. KeBuT
+#. koipq
 #: 04060110.xhp
 msgctxt ""
 "04060110.xhp\n"
 "par_id2958507\n"
 "help.text"
-msgid "<item type=\"input\">MIDB(\"中国\";3;2)</item> returns \"国\" (byte position 3 is at the beginning of a character in a DBCS string, and 2 bytes constitute one DBCS character)."
+msgid "<item type=\"input\">=MIDB(\"中国\";3;2)</item> returns \"国\" (byte position 3 is at the beginning of a character in a DBCS string, and 2 bytes constitute one DBCS character)."
 msgstr ""
 
-#. CmwD5
+#. aQmsH
 #: 04060110.xhp
 msgctxt ""
 "04060110.xhp\n"
 "par_id2958517\n"
 "help.text"
-msgid "<item type=\"input\">MIDB(\"office\";2;3)</item> returns \"ffi\" (byte position 2 is at the beginning of a character in a non-DBCS string, and 3 bytes of a non-DBCS string constitute 3 characters)."
+msgid "<item type=\"input\">=MIDB(\"office\";2;3)</item> returns \"ffi\" (byte position 2 is at the beginning of a character in a non-DBCS string, and 3 bytes of a non-DBCS string constitute 3 characters)."
 msgstr ""
 
 #. k4kCo
@@ -21958,15 +22030,6 @@ msgctxt ""
 msgid "<emph>Number</emph> is the number of repetitions."
 msgstr ""
 
-#. x3LR5
-#: 04060110.xhp
-msgctxt ""
-"04060110.xhp\n"
-"par_id3149922\n"
-"help.text"
-msgid "The result can be a maximum of 255 characters."
-msgstr ""
-
 #. brnbx
 #: 04060110.xhp
 msgctxt ""
@@ -21974,6 +22037,15 @@ msgctxt ""
 "par_id3148626\n"
 "help.text"
 msgid "<item type=\"input\">=REPT(\"Good morning\";2)</item> returns Good morningGood morning."
+msgstr ""
+
+#. 9Dbjv
+#: 04060110.xhp
+msgctxt ""
+"04060110.xhp\n"
+"par_id381626381556310\n"
+"help.text"
+msgid "Refer to the <link href=\"https://wiki.documentfoundation.org/Documentation/Calc_Functions/REPT\" name=\"REPT_Wiki\">REPT</link> wiki page for more details about this function."
 msgstr ""
 
 #. mtFNA
@@ -22021,13 +22093,13 @@ msgctxt ""
 msgid "<emph>Text</emph> is the text of which the right part is to be determined."
 msgstr ""
 
-#. KRpFB
+#. tkbjJ
 #: 04060110.xhp
 msgctxt ""
 "04060110.xhp\n"
 "par_id3153350\n"
 "help.text"
-msgid "<emph>Number</emph> (optional) is the number of characters from the right part of the text."
+msgid "<emph>Number</emph> (optional) is the number of characters from the right part of the text. If this parameter is not defined, one character is returned."
 msgstr ""
 
 #. xNFMc
@@ -22084,13 +22156,13 @@ msgctxt ""
 msgid "<emph>Text</emph> is the text of which the right part is to be determined."
 msgstr ""
 
-#. Vciv6
+#. yUHYp
 #: 04060110.xhp
 msgctxt ""
 "04060110.xhp\n"
 "par_id2953350\n"
 "help.text"
-msgid "<emph>Number_bytes</emph> (optional) specifies the number of characters you want RIGHTB to extract, based on bytes."
+msgid "<emph>Number_bytes</emph> (optional) specifies the number of characters you want RIGHTB to extract, based on bytes. If this parameter is not defined, one byte is returned."
 msgstr ""
 
 #. KnAgN
@@ -22777,60 +22849,6 @@ msgctxt ""
 msgid "<item type=\"input\">=UPPER(\"Good Morning\")</item> returns GOOD MORNING."
 msgstr ""
 
-#. KWdkk
-#: 04060110.xhp
-msgctxt ""
-"04060110.xhp\n"
-"bm_id3150802\n"
-"help.text"
-msgid "<bookmark_value>VALUE function</bookmark_value>"
-msgstr ""
-
-#. QPiD6
-#: 04060110.xhp
-msgctxt ""
-"04060110.xhp\n"
-"hd_id3150802\n"
-"help.text"
-msgid "VALUE"
-msgstr "VALUE"
-
-#. yFFSn
-#: 04060110.xhp
-msgctxt ""
-"04060110.xhp\n"
-"par_id3152551\n"
-"help.text"
-msgid "<ahelp hid=\"HID_FUNC_WERT\">Converts a text string into a number.</ahelp>"
-msgstr ""
-
-#. fGm5h
-#: 04060110.xhp
-msgctxt ""
-"04060110.xhp\n"
-"par_id3153638\n"
-"help.text"
-msgid "VALUE(\"Text\")"
-msgstr ""
-
-#. iYHvi
-#: 04060110.xhp
-msgctxt ""
-"04060110.xhp\n"
-"par_id3153651\n"
-"help.text"
-msgid "<emph>Text</emph> is the text to be converted to a number."
-msgstr ""
-
-#. mDpCa
-#: 04060110.xhp
-msgctxt ""
-"04060110.xhp\n"
-"par_id3144733\n"
-"help.text"
-msgid "<item type=\"input\">=VALUE(\"4321\")</item> returns 4321."
-msgstr "<item type=\"input\">=LN(EXP(321))</item> vraća 321."
-
 #. E5UtK
 #: 04060111.xhp
 msgctxt ""
@@ -23162,6 +23180,24 @@ msgctxt ""
 "par_id3153249\n"
 "help.text"
 msgid "<emph>Text</emph> is the character string to be encrypted. ROT13(ROT13(Text)) decrypts the code."
+msgstr ""
+
+#. tN74B
+#: 04060111.xhp
+msgctxt ""
+"04060111.xhp\n"
+"par_id151626469224135\n"
+"help.text"
+msgid "<input>=ROT13(\"Gur Qbphzrag Sbhaqngvba jnf sbhaqrq va Frcgrzore 2010.\")</input> returns the string \"The Document Foundation was founded in September 2010.\". Notice how spaces, digits, and full stops are unaffected by ROT13."
+msgstr ""
+
+#. 4TMAT
+#: 04060111.xhp
+msgctxt ""
+"04060111.xhp\n"
+"par_id221626469509161\n"
+"help.text"
+msgid "Refer to the <link href=\"https://wiki.documentfoundation.org/Documentation/Calc_Functions/ROT13\" name=\"ROT13_Wiki\">ROT13</link> wiki page for more details about this function."
 msgstr ""
 
 #. CFJsA
@@ -38320,59 +38356,68 @@ msgctxt ""
 msgid "PHI"
 msgstr "PHI"
 
-#. BiQu7
+#. YyypL
 #: 04060184.xhp
 msgctxt ""
 "04060184.xhp\n"
 "par_id3150254\n"
 "help.text"
-msgid "<ahelp hid=\"HID_FUNC_PHI\">Returns the values of the distribution function for a standard normal distribution.</ahelp>"
+msgid "<ahelp hid=\"HID_FUNC_PHI\">Returns the value of the probability density function for a given value considering the standard normal distribution.</ahelp>"
 msgstr ""
 
-#. HEuJD
+#. oEGwC
 #: 04060184.xhp
 msgctxt ""
 "04060184.xhp\n"
-"par_id3149976\n"
+"par_id151629986285891\n"
 "help.text"
-msgid "PHI(Number)"
-msgstr "DAY(Broj)"
+msgid "<input>PHI(Number)</input>"
+msgstr ""
 
-#. vZds8
+#. 4JwEu
 #: 04060184.xhp
 msgctxt ""
 "04060184.xhp\n"
 "par_id3156108\n"
 "help.text"
-msgid "<emph>Number</emph> represents the value based on which the standard normal distribution is calculated."
+msgid "<emph>Number</emph> is the value for which the probability density function is calculated."
 msgstr ""
 
-#. jVwEp
+#. 92hiK
 #: 04060184.xhp
 msgctxt ""
 "04060184.xhp\n"
 "par_id3155849\n"
 "help.text"
-msgid "<item type=\"input\">=PHI(2.25) </item>= 0.03"
-msgstr "<item type=\"input\">=PHI(0)</item> = 0.4"
+msgid "<input>=PHI(2.25)</input> returns 0.0317."
+msgstr ""
 
-#. SsB5N
+#. NsLhE
 #: 04060184.xhp
 msgctxt ""
 "04060184.xhp\n"
 "par_id3143236\n"
 "help.text"
-msgid "<item type=\"input\">=PHI(-2.25)</item> = 0.03"
-msgstr "<item type=\"input\">=PHI(0)</item> = 0.4"
+msgid "<input>=PHI(-2.25)</input> also returns 0.0317 because the normal distribution is symmetrical."
+msgstr ""
 
-#. UnjEG
+#. NXho4
 #: 04060184.xhp
 msgctxt ""
 "04060184.xhp\n"
 "par_id3149286\n"
 "help.text"
-msgid "<item type=\"input\">=PHI(0)</item> = 0.4"
-msgstr "<item type=\"input\">=PHI(0)</item> = 0.4"
+msgid "<input>=PHI(0)</input> returns 0.3989."
+msgstr ""
+
+#. GMDrd
+#: 04060184.xhp
+msgctxt ""
+"04060184.xhp\n"
+"par_id611629985664328\n"
+"help.text"
+msgid "Calling <input>PHI(Number)</input> is equivalent to calling <input>NORMDIST(Number,0,1,FALSE())</input> or <input>NORM.S.DIST(Number;FALSE())</input>, hence using the standard normal distribution with mean equal to 0 and standard deviation equal to 1 with the <emph>Cumulative</emph> argument set to <emph>False.</emph>"
+msgstr ""
 
 #. vqBTN
 #: 04060184.xhp
@@ -41947,15 +41992,6 @@ msgctxt ""
 msgid "Addition"
 msgstr "Dodatak"
 
-#. vVWxJ
-#: 04060199.xhp
-msgctxt ""
-"04060199.xhp\n"
-"par_id3153247\n"
-"help.text"
-msgid "1+1"
-msgstr ""
-
 #. r74qM
 #: 04060199.xhp
 msgctxt ""
@@ -41973,15 +42009,6 @@ msgctxt ""
 "help.text"
 msgid "Subtraction"
 msgstr "Oduzimanje"
-
-#. tZXmq
-#: 04060199.xhp
-msgctxt ""
-"04060199.xhp\n"
-"par_id3153554\n"
-"help.text"
-msgid "2-1"
-msgstr ""
 
 #. zqeEq
 #: 04060199.xhp
@@ -42001,15 +42028,6 @@ msgctxt ""
 msgid "Negation"
 msgstr "Negacija"
 
-#. xRAoR
-#: 04060199.xhp
-msgctxt ""
-"04060199.xhp\n"
-"par_id3154712\n"
-"help.text"
-msgid "-5"
-msgstr ""
-
 #. uTzKJ
 #: 04060199.xhp
 msgctxt ""
@@ -42027,15 +42045,6 @@ msgctxt ""
 "help.text"
 msgid "Multiplication"
 msgstr "Množenje"
-
-#. p7EVk
-#: 04060199.xhp
-msgctxt ""
-"04060199.xhp\n"
-"par_id3149055\n"
-"help.text"
-msgid "2*2"
-msgstr ""
 
 #. LyrLq
 #: 04060199.xhp
@@ -42055,15 +42064,6 @@ msgctxt ""
 msgid "Division"
 msgstr "Dijeljenje"
 
-#. Mm2KC
-#: 04060199.xhp
-msgctxt ""
-"04060199.xhp\n"
-"par_id3153027\n"
-"help.text"
-msgid "9/3"
-msgstr ""
-
 #. St2pE
 #: 04060199.xhp
 msgctxt ""
@@ -42081,15 +42081,6 @@ msgctxt ""
 "help.text"
 msgid "Percent"
 msgstr "Postotak"
-
-#. 6tQYS
-#: 04060199.xhp
-msgctxt ""
-"04060199.xhp\n"
-"par_id3145632\n"
-"help.text"
-msgid "15%"
-msgstr ""
 
 #. KTLME
 #: 04060199.xhp
@@ -42109,13 +42100,13 @@ msgctxt ""
 msgid "Exponentiation"
 msgstr ""
 
-#. G8KSc
+#. QZRSe
 #: 04060199.xhp
 msgctxt ""
 "04060199.xhp\n"
-"par_id3157873\n"
+"par_id881623862728559\n"
 "help.text"
-msgid "3^2"
+msgid "Prefix \"-\" (negation) has a higher precedence than \"^\" (exponentiation). For example -3^2 equals 9, which is the square of a negative number."
 msgstr ""
 
 #. 77TDi
@@ -42181,15 +42172,6 @@ msgctxt ""
 msgid "Equal"
 msgstr "Jednako"
 
-#. uSFf9
-#: 04060199.xhp
-msgctxt ""
-"04060199.xhp\n"
-"par_id3154546\n"
-"help.text"
-msgid "A1=B1"
-msgstr ""
-
 #. Vg88D
 #: 04060199.xhp
 msgctxt ""
@@ -42207,15 +42189,6 @@ msgctxt ""
 "help.text"
 msgid "Greater than"
 msgstr "Veći od"
-
-#. Q4HZQ
-#: 04060199.xhp
-msgctxt ""
-"04060199.xhp\n"
-"par_id3145138\n"
-"help.text"
-msgid "A1>B1"
-msgstr ""
 
 #. jCt4x
 #: 04060199.xhp
@@ -42235,15 +42208,6 @@ msgctxt ""
 msgid "Less than"
 msgstr "Manje od"
 
-#. zHDAx
-#: 04060199.xhp
-msgctxt ""
-"04060199.xhp\n"
-"par_id3150901\n"
-"help.text"
-msgid "A1<B1"
-msgstr ""
-
 #. EBajC
 #: 04060199.xhp
 msgctxt ""
@@ -42261,15 +42225,6 @@ msgctxt ""
 "help.text"
 msgid "Greater than or equal to"
 msgstr "veće od ili jednako"
-
-#. iopG3
-#: 04060199.xhp
-msgctxt ""
-"04060199.xhp\n"
-"par_id3153111\n"
-"help.text"
-msgid "A1>=B1"
-msgstr ""
 
 #. wXVvo
 #: 04060199.xhp
@@ -42289,15 +42244,6 @@ msgctxt ""
 msgid "Less than or equal to"
 msgstr "manje od ili jednako"
 
-#. DjB2C
-#: 04060199.xhp
-msgctxt ""
-"04060199.xhp\n"
-"par_id3148760\n"
-"help.text"
-msgid "A1<=B1"
-msgstr ""
-
 #. 4XUDV
 #: 04060199.xhp
 msgctxt ""
@@ -42314,15 +42260,6 @@ msgctxt ""
 "par_id3150019\n"
 "help.text"
 msgid "Inequality"
-msgstr ""
-
-#. NEJpk
-#: 04060199.xhp
-msgctxt ""
-"04060199.xhp\n"
-"par_id3149878\n"
-"help.text"
-msgid "A1<>B1"
 msgstr ""
 
 #. aAdxC
@@ -42477,15 +42414,6 @@ msgctxt ""
 "help.text"
 msgid "Range"
 msgstr "Raspon"
-
-#. DCYDo
-#: 04060199.xhp
-msgctxt ""
-"04060199.xhp\n"
-"par_id3148432\n"
-"help.text"
-msgid "A1:C108"
-msgstr ""
 
 #. fWnpm
 #: 04060199.xhp
@@ -43279,13 +43207,13 @@ msgctxt ""
 msgid "<variable id=\"function_list_text\"><ahelp hid=\"HID_SC_FUNCTIONLIST\">Opens the Function List deck of the Sidebar, which displays all functions that can be inserted into your document.</ahelp></variable> The <emph>Function List</emph> deck is similar to the <emph>Functions</emph> tab page of the <link href=\"text/scalc/01/04060000.xhp\" name=\"Function Wizard\">Function Wizard</link>. The functions are inserted with placeholders to be replaced with your own values."
 msgstr ""
 
-#. UGvDB
+#. kJGdD
 #: 04080000.xhp
 msgctxt ""
 "04080000.xhp\n"
 "par_id3152576\n"
 "help.text"
-msgid "The <emph>Function List</emph> window is a resizable <link href=\"text/shared/00/00000005.xhp#andocken\" name=\"dockable window\">dockable window</link>. Use it to quickly enter functions in the spreadsheet. By double-clicking an entry in the functions list, the respective function is directly inserted with all parameters."
+msgid "The <emph>Function List</emph> window is a resizable <link href=\"text/shared/00/00000005.xhp#docking\" name=\"dockable window\">dockable window</link>. Use it to quickly enter functions in the spreadsheet. By double-clicking an entry in the functions list, the respective function is directly inserted with all parameters."
 msgstr ""
 
 #. tu2NZ
@@ -45088,13 +45016,13 @@ msgctxt ""
 msgid "Use the Styles deck of the Sidebar to assign styles to cells and pages. You can apply, update, and modify existing styles or create new styles."
 msgstr ""
 
-#. HL32W
+#. nTiyj
 #: 05100000.xhp
 msgctxt ""
 "05100000.xhp\n"
 "par_id3149665\n"
 "help.text"
-msgid "The Styles <link href=\"text/shared/00/00000005.xhp#andocken\" name=\"dockable window\">dockable window</link> can remain open while editing the document."
+msgid "The Styles <link href=\"text/shared/00/00000005.xhp#docking\" name=\"dockable window\">dockable window</link> can remain open while editing the document."
 msgstr ""
 
 #. cawKF
@@ -45484,6 +45412,15 @@ msgctxt ""
 msgid "<variable id=\"autoformattext\"><ahelp hid=\".\">Use this command to apply an AutoFormat to a selected sheet area or to define your own AutoFormats.</ahelp></variable>"
 msgstr ""
 
+#. 7SZiE
+#: 05110000.xhp
+msgctxt ""
+"05110000.xhp\n"
+"par_id181630332690300\n"
+"help.text"
+msgid "The AutoFormat command is available only if a cell range with at least 3 columns and 3 rows are selected. Otherwise this command will appear grayed out in the menu."
+msgstr ""
+
 #. Gid6Q
 #: 05110000.xhp
 msgctxt ""
@@ -45736,49 +45673,67 @@ msgctxt ""
 msgid "<bookmark_value>conditional formatting; conditions</bookmark_value>"
 msgstr ""
 
-#. FMGh8
+#. tYBMm
+#: 05120000.xhp
+msgctxt ""
+"05120000.xhp\n"
+"hd_id71624649758112\n"
+"help.text"
+msgid "Condition list"
+msgstr ""
+
+#. aX6Li
 #: 05120000.xhp
 msgctxt ""
 "05120000.xhp\n"
 "par_id3149413\n"
 "help.text"
-msgid "<ahelp hid=\".\" visibility=\"hidden\">List of the conditions defined for the cell range in order of evaluation.</ahelp>"
+msgid "List of the conditions defined for the cell range in order of evaluation. You can define as many conditions as you want."
 msgstr ""
 
-#. u9xFc
+#. YHZ6v
+#: 05120000.xhp
+msgctxt ""
+"05120000.xhp\n"
+"hd_id41624649786605\n"
+"help.text"
+msgid "Up"
+msgstr ""
+
+#. xSGWr
 #: 05120000.xhp
 msgctxt ""
 "05120000.xhp\n"
 "par_id3149414\n"
 "help.text"
-msgid "<ahelp hid=\".\" visibility=\"hidden\">Increase priority of the selected condition.</ahelp>"
+msgid "<ahelp hid=\".\">Increase priority of the selected condition.</ahelp>"
 msgstr ""
 
-#. jtCfF
+#. YWF6k
+#: 05120000.xhp
+msgctxt ""
+"05120000.xhp\n"
+"hd_id861624649792266\n"
+"help.text"
+msgid "Down"
+msgstr ""
+
+#. BAEJK
 #: 05120000.xhp
 msgctxt ""
 "05120000.xhp\n"
 "par_id3149415\n"
 "help.text"
-msgid "<ahelp hid=\".\" visibility=\"hidden\">Decrease priority of the selected condition.</ahelp>"
+msgid "<ahelp hid=\".\">Decrease priority of the selected condition.</ahelp>"
 msgstr ""
 
-#. kbqQx
+#. FZJa2
 #: 05120000.xhp
 msgctxt ""
 "05120000.xhp\n"
 "hd_id31531891\n"
 "help.text"
-msgid "Condition"
-msgstr "Uvjet"
-
-#. XUCvV
-#: 05120000.xhp
-msgctxt ""
-"05120000.xhp\n"
-"par_id31494131\n"
-"help.text"
-msgid "You can define as many conditions as you want."
+msgid "Condition list entry"
 msgstr ""
 
 #. YLwyA
@@ -49228,13 +49183,13 @@ msgctxt ""
 msgid "<ahelp hid=\"modules/scalc/ui/advancedfilterdialog/edfilterarea\">Select the named range, or enter the cell range that contains the filter criteria that you want to use.</ahelp>"
 msgstr ""
 
-#. DAGu3
+#. qhEo5
 #: 12040300.xhp
 msgctxt ""
 "12040300.xhp\n"
-"hd_id3153188\n"
+"hd_id331625165680452\n"
 "help.text"
-msgid "<link href=\"text/scalc/01/12040201.xhp\" name=\"More\">More</link>"
+msgid "Options"
 msgstr ""
 
 #. oYCwG
@@ -53359,6 +53314,78 @@ msgctxt ""
 msgid "Sample macro:"
 msgstr ""
 
+#. vkaMd
+#: 12120300.xhp
+msgctxt ""
+"12120300.xhp\n"
+"par_id521625929022780\n"
+"help.text"
+msgid "Below is a sample function that can be called when an error occurs. Note that the macro takes in two parameters that are passed on by %PRODUCTNAME when the function is called:"
+msgstr ""
+
+#. F9upo
+#: 12120300.xhp
+msgctxt ""
+"12120300.xhp\n"
+"par_id981625929097216\n"
+"help.text"
+msgid "<emph>CellValue</emph>: The value entered by the user, as a String."
+msgstr ""
+
+#. oSFqW
+#: 12120300.xhp
+msgctxt ""
+"12120300.xhp\n"
+"par_id421625929100152\n"
+"help.text"
+msgid "<emph>CellAddress</emph>: The address of the cell where the value was entered, as a String prefixed with the sheet name (e.g: \"Sheet1.A1\")."
+msgstr ""
+
+#. A52Nm
+#: 12120300.xhp
+msgctxt ""
+"12120300.xhp\n"
+"par_id101625929384030\n"
+"help.text"
+msgid "The function must return a Boolean value. If it returns <literal>True</literal>, the entered value is kept. If the function returns <literal>False</literal>, the entered value is erased and the previous value is restored."
+msgstr ""
+
+#. 4tzCz
+#: 12120300.xhp
+msgctxt ""
+"12120300.xhp\n"
+"par_id531545240216611\n"
+"help.text"
+msgid "msg = \"Invalid value: \" & \"'\" & CellValue & \"'\""
+msgstr ""
+
+#. Zfic8
+#: 12120300.xhp
+msgctxt ""
+"12120300.xhp\n"
+"bas_id971625928577365\n"
+"help.text"
+msgid "msg = msg & \" in cell: \" & \"'\" & CellAddress & \"'\""
+msgstr ""
+
+#. hiNR9
+#: 12120300.xhp
+msgctxt ""
+"12120300.xhp\n"
+"bas_id181625928577640\n"
+"help.text"
+msgid "msg = msg & Chr(10) & \"Accept anyway?\""
+msgstr ""
+
+#. EhFBn
+#: 12120300.xhp
+msgctxt ""
+"12120300.xhp\n"
+"bas_id941625928578118\n"
+"help.text"
+msgid "iAnswer = MsgBox (msg , MB_FLAGS, \"Error message\")"
+msgstr ""
+
 #. 4C6T2
 #: ODFF.xhp
 msgctxt ""
@@ -53456,6 +53483,15 @@ msgctxt ""
 "hd_id281171\n"
 "help.text"
 msgid "Example"
+msgstr ""
+
+#. 54Ga6
+#: common_func.xhp
+msgctxt ""
+"common_func.xhp\n"
+"hd_id281996\n"
+"help.text"
+msgid "Examples"
 msgstr ""
 
 #. STMGF
@@ -60190,13 +60226,13 @@ msgctxt ""
 msgid "<emph>Position</emph>: The position in the text where the search starts."
 msgstr ""
 
-#. VLM4H
+#. okEBS
 #: func_findb.xhp
 msgctxt ""
 "func_findb.xhp\n"
 "par_id481573517830373\n"
 "help.text"
-msgid "<input>=FINDB(\"ᄫᄬ\";\"ᄩᄔᄕᄜᄝᄞᄠgᄢᄣᄫᄬᄭᄮᄯᄲᄶ\";17)</input> returns 19."
+msgid "<input>=FINDB(\"ａ\"; \"LibreOffice Ｃａｌｃ\")</input> returns 15. The <emph>Find Text</emph> argument is a text string that comprises a full-width, double-byte \"a\" character, while the <emph>Text</emph> argument comprises 12 single-byte characters followed by four full-width, double-byte characters."
 msgstr ""
 
 #. aACGP
@@ -63394,76 +63430,130 @@ msgctxt ""
 msgid "<bookmark_value>NUMBERVALUE function</bookmark_value>"
 msgstr ""
 
-#. 6XDJp
+#. GomzJ
 #: func_numbervalue.xhp
 msgctxt ""
 "func_numbervalue.xhp\n"
 "hd_id3145621\n"
 "help.text"
-msgid "<variable id=\"datevalue\">        <link href=\"text/scalc/01/func_numbervalue.xhp\">NUMBERVALUE</link>      </variable>"
+msgid "<variable id=\"numbervalue_h1\"><link href=\"text/scalc/01/func_numbervalue.xhp\">NUMBERVALUE</link></variable>"
 msgstr ""
 
-#. 3WLvS
+#. Ywca6
 #: func_numbervalue.xhp
 msgctxt ""
 "func_numbervalue.xhp\n"
 "par_id3145087\n"
 "help.text"
-msgid "<ahelp hid=\"HID_FUNC_NUMBERVALUE\">Convert text to number, in a locale-independent way.</ahelp>"
+msgid "<ahelp hid=\"HID_FUNC_NUMBERVALUE\">Converts the string representation of a number into a locale-independent numeric value.</ahelp>"
 msgstr ""
 
-#. JUF4C
+#. xfP9G
 #: func_numbervalue.xhp
 msgctxt ""
 "func_numbervalue.xhp\n"
 "par_id3149281\n"
 "help.text"
-msgid "Constraints: LEN(decimal_separator) = 1, decimal_separator shall not appear in group_separator"
+msgid "The input text may be in a locale-dependent or other bespoke format."
 msgstr ""
 
-#. 2uppP
+#. vVK9p
 #: func_numbervalue.xhp
 msgctxt ""
 "func_numbervalue.xhp\n"
-"par_id3149268\n"
+"par_id381625600941159\n"
 "help.text"
-msgid "NUMBERVALUE(\"Text\" [;decimal_separator [;group_separator]])"
+msgid "The output number is formatted as a valid floating point value and shown using the current cell's number format."
 msgstr ""
 
-#. ytM82
+#. 2Ditv
+#: func_numbervalue.xhp
+msgctxt ""
+"func_numbervalue.xhp\n"
+"par_id351625601754290\n"
+"help.text"
+msgid "Refer to the <embedvar href=\"text/shared/01/05020300.xhp#NumbersLink\"/> help page to learn how to change the format of numbers in a cell."
+msgstr ""
+
+#. vEdwF
+#: func_numbervalue.xhp
+msgctxt ""
+"func_numbervalue.xhp\n"
+"par_id721625602228575\n"
+"help.text"
+msgid "NUMBERVALUE(Text[; Decimal Separator[; Group Separator]])"
+msgstr ""
+
+#. Y3A9n
 #: func_numbervalue.xhp
 msgctxt ""
 "func_numbervalue.xhp\n"
 "par_id3154819\n"
 "help.text"
-msgid "<emph>Text</emph> is a valid number expression and must be entered with quotation marks."
+msgid "<emph>Text</emph> is a string that contains the number to be converted."
 msgstr ""
 
-#. exDVp
+#. gwZ7A
 #: func_numbervalue.xhp
 msgctxt ""
 "func_numbervalue.xhp\n"
 "par_id3154820\n"
 "help.text"
-msgid "<emph>decimal_separator</emph> (optional) defines the character used as the decimal separator."
+msgid "<emph>Decimal Separator</emph> is a single character that specifies the decimal separator in <emph>Text</emph>. It can be omitted if <emph>Text</emph> does not include any decimal or group separators."
 msgstr ""
 
-#. PAA4R
+#. KJ6WA
 #: func_numbervalue.xhp
 msgctxt ""
 "func_numbervalue.xhp\n"
 "par_id3154821\n"
 "help.text"
-msgid "<emph>group_separator</emph> (optional) defines the character(s) used as the group separator."
+msgid "<emph>Group Separator</emph> is a string that specifies the character(s) used as the group separator in <emph>Text</emph>. It can be omitted if <emph>Text</emph> does not include any group separators. The <emph>Decimal Separator</emph> character should not be used in <emph>Group Separator</emph>."
 msgstr ""
 
-#. zmrjG
+#. yptHN
 #: func_numbervalue.xhp
 msgctxt ""
 "func_numbervalue.xhp\n"
 "par_id3155841\n"
 "help.text"
-msgid "<item type=\"input\">=NUMBERVALUE(\"123.456\";\".\";\",\")</item> yields 123.456"
+msgid "<input>=NUMBERVALUE(\"1.234.567,89\"; \",\"; \".\")</input> returns 1234567.89 (considering en-US locale). The function removes the two group separators and changes the decimal separator from a comma to a full stop."
+msgstr ""
+
+#. UNiLM
+#: func_numbervalue.xhp
+msgctxt ""
+"func_numbervalue.xhp\n"
+"par_id721625603302860\n"
+"help.text"
+msgid "<input>=NUMBERVALUE(\"123·4\"; \"·\")</input> returns 123.4 (considering en-US locale). The function changes the decimal separator from a \"·\" to a full stop. No group separator is used in the supplied number and so the <emph>Group Separator</emph> argument is omitted."
+msgstr ""
+
+#. iGGwj
+#: func_numbervalue.xhp
+msgctxt ""
+"func_numbervalue.xhp\n"
+"par_id491625603415715\n"
+"help.text"
+msgid "<input>=NUMBERVALUE(\"123e12\")</input> returns 1.23E+14 (considering en-US locale). No decimal or group separators are used in the supplied number and so the <emph>Decimal Separator</emph> and <emph>Group Separator</emph> arguments are omitted."
+msgstr ""
+
+#. vTYDd
+#: func_numbervalue.xhp
+msgctxt ""
+"func_numbervalue.xhp\n"
+"par_id801625603497421\n"
+"help.text"
+msgid "<input>=NUMBERVALUE(\"1#!234#!567\"; \".\"; \"#!\")</input> returns 1234567 (considering en-US locale). Note that in this case the group separator is specified as a two-character string."
+msgstr ""
+
+#. 4sMd6
+#: func_numbervalue.xhp
+msgctxt ""
+"func_numbervalue.xhp\n"
+"par_id451626100385699\n"
+"help.text"
+msgid "Refer to the <link href=\"https://wiki.documentfoundation.org/Documentation/Calc_Functions/NUMBERVALUE\" name=\"NUMBERVALUE_Wiki\">NUMBERVALUE</link> wiki page for more details about this function."
 msgstr ""
 
 #. EJhfD
@@ -64204,13 +64294,13 @@ msgctxt ""
 msgid "<emph>Text</emph>: A text or reference to a cell where the regular expression is to be applied."
 msgstr ""
 
-#. gdhZh
+#. aaDJc
 #: func_regex.xhp
 msgctxt ""
 "func_regex.xhp\n"
 "par_id211542232209275\n"
 "help.text"
-msgid "<emph>Expression</emph>: A text representing the regular expression, using <link href=\"http://userguide.icu-project.org/strings/regexp\" name=\"ICU REGEXP\">ICU regular expressions</link>. If there is no match and <emph>Replacement</emph> is not given, #N/A is returned."
+msgid "<emph>Expression</emph>: A text representing the regular expression, using <link href=\"https://unicode-org.github.io/icu/userguide/strings/regexp.html\" name=\"ICU REGEXP\">ICU regular expressions</link>. If there is no match and <emph>Replacement</emph> is not given, #N/A is returned."
 msgstr ""
 
 #. ZBTYi
@@ -64294,13 +64384,13 @@ msgctxt ""
 msgid "<link href=\"text/shared/01/02100001.xhp\" name=\"regex lists\">List of regular expressions</link>"
 msgstr ""
 
-#. U7Ffm
+#. 2AHRN
 #: func_regex.xhp
 msgctxt ""
 "func_regex.xhp\n"
 "par_id431542233650614\n"
 "help.text"
-msgid "<link href=\"http://userguide.icu-project.org/strings/regexp\" name=\"ICU REGEXP\">ICU regular expressions</link>"
+msgid "<link href=\"https://unicode-org.github.io/icu/userguide/strings/regexp.html\" name=\"ICU REGEXP\">ICU regular expressions</link>"
 msgstr ""
 
 #. B64FM
@@ -64348,31 +64438,31 @@ msgctxt ""
 msgid "REPLACEB( Text ; Position ; Length ; NewText )"
 msgstr ""
 
-#. eY5FG
+#. uBLSC
 #: func_replaceb.xhp
 msgctxt ""
 "func_replaceb.xhp\n"
 "par_id331573510857418\n"
 "help.text"
-msgid "<emph>Text</emph>: A text expression or reference to a cell containing a text expression in which the characters are to be replaced."
+msgid "<emph>Text</emph>: A text expression or reference to a cell containing a text expression in which the bytes are to be replaced."
 msgstr ""
 
-#. bqPxd
+#. 9a6mz
 #: func_replaceb.xhp
 msgctxt ""
 "func_replaceb.xhp\n"
 "par_id431573510862075\n"
 "help.text"
-msgid "<emph>Position</emph>: the character position from which text is to be replaced."
+msgid "<emph>Position</emph>: the byte position from which text is to be replaced."
 msgstr ""
 
-#. TtgNA
+#. AsHs8
 #: func_replaceb.xhp
 msgctxt ""
 "func_replaceb.xhp\n"
 "par_id481573510866260\n"
 "help.text"
-msgid "<emph>Length</emph>: the number of characters to be replaced."
+msgid "<emph>Length</emph>: the number of bytes to be replaced."
 msgstr ""
 
 #. UuACG
@@ -64391,6 +64481,15 @@ msgctxt ""
 "par_id431573515742206\n"
 "help.text"
 msgid "<input>=REPLACEB(\"ᄩᄔᄕᄜᄝᄞᄠᄢᄣᄫᄬᄭᄮᄯᄲᄶ\";4;1;\"ab\")</input> returns \"ᄩ abᄕᄜᄝᄞᄠᄢᄣᄫᄬᄭᄮᄯᄲᄶ\" ."
+msgstr ""
+
+#. zzieb
+#: func_replaceb.xhp
+msgctxt ""
+"func_replaceb.xhp\n"
+"par_id721626381053212\n"
+"help.text"
+msgid "Refer to the <link href=\"https://wiki.documentfoundation.org/Documentation/Calc_Functions/REPLACEB\" name=\"REPLACEB_Wiki\">REPLACEB</link> wiki page for more details about this function."
 msgstr ""
 
 #. E7heY
@@ -65417,6 +65516,132 @@ msgctxt ""
 "par_id3156106\n"
 "help.text"
 msgid "<item type=\"input\">TODAY()</item> returns the current computer system date."
+msgstr ""
+
+#. w86Dm
+#: func_value.xhp
+msgctxt ""
+"func_value.xhp\n"
+"tit\n"
+"help.text"
+msgid "VALUE Function"
+msgstr ""
+
+#. D5EDU
+#: func_value.xhp
+msgctxt ""
+"func_value.xhp\n"
+"bm_id831542233029549\n"
+"help.text"
+msgid "<bookmark_value>VALUE function</bookmark_value>      <bookmark_value>text functions;convert text to numeric value</bookmark_value>"
+msgstr ""
+
+#. pkYxF
+#: func_value.xhp
+msgctxt ""
+"func_value.xhp\n"
+"hd_id881628776094597\n"
+"help.text"
+msgid "<variable id=\"Value_h1\"><link href=\"text/scalc/01/func_value.xhp\" name=\"function VALUE\">VALUE</link></variable>"
+msgstr ""
+
+#. BZ7SU
+#: func_value.xhp
+msgctxt ""
+"func_value.xhp\n"
+"par_id541542230672101\n"
+"help.text"
+msgid "<variable id=\"func_value_desc\"><ahelp hid=\".\">Converts the string representation of a number to numeric form. If the supplied string is a valid date, time, or date-time, the corresponding date-time serial number is returned.</ahelp></variable>"
+msgstr ""
+
+#. KAY8o
+#: func_value.xhp
+msgctxt ""
+"func_value.xhp\n"
+"par_id701542231253817\n"
+"help.text"
+msgid "<input>VALUE(Text)</input>"
+msgstr ""
+
+#. QVErw
+#: func_value.xhp
+msgctxt ""
+"func_value.xhp\n"
+"par_id621542232197446\n"
+"help.text"
+msgid "<emph>Text</emph>: A string (in quotation marks), a number, or a reference to a cell containing one of those types, that contains the value to be converted."
+msgstr ""
+
+#. hMLPV
+#: func_value.xhp
+msgctxt ""
+"func_value.xhp\n"
+"par_id731628787003937\n"
+"help.text"
+msgid "If the <emph>Text</emph> argument is a string representing a date, time, currency or a numeric value with decimal and thousands separators, the string must comply with current locale settings."
+msgstr ""
+
+#. 3BCEU
+#: func_value.xhp
+msgctxt ""
+"func_value.xhp\n"
+"par_id451628776707264\n"
+"help.text"
+msgid "<input>=VALUE(\"1234\")</input> returns the numeric value 1234."
+msgstr ""
+
+#. zEuFg
+#: func_value.xhp
+msgctxt ""
+"func_value.xhp\n"
+"par_id101628778036375\n"
+"help.text"
+msgid "<input>=VALUE(\"+1,234.567\")</input> returns 1234.567 (considering en-US locale). Note that the \"+\" sign could have been omitted."
+msgstr ""
+
+#. Hhrax
+#: func_value.xhp
+msgctxt ""
+"func_value.xhp\n"
+"par_id991628779914913\n"
+"help.text"
+msgid "<input>=VALUE(\"$100\")</input> returns 100 (considering en-US locale). Note that the currency prefix must match the current locale settings."
+msgstr ""
+
+#. syxTJ
+#: func_value.xhp
+msgctxt ""
+"func_value.xhp\n"
+"par_id101628780114427\n"
+"help.text"
+msgid "<input>=VALUE(\"50%\")</input> returns 0.5. Note that the character \"%\" causes the numeric part to be divided by 100."
+msgstr ""
+
+#. xDJeH
+#: func_value.xhp
+msgctxt ""
+"func_value.xhp\n"
+"par_id731628780240876\n"
+"help.text"
+msgid "<input>=VALUE(\"07/30/2021\")</input> returns 44407 (considering en-US locale) which is the date-time sequence number corresponding to the specified date."
+msgstr ""
+
+#. Kkcm7
+#: func_value.xhp
+msgctxt ""
+"func_value.xhp\n"
+"par_id501628780340635\n"
+"help.text"
+msgid "<input>=VALUE(\"09:20:25\")</input> returns 0.389178240740741 which is the date-time sequence number corresponding to the specified time value."
+msgstr ""
+
+#. qxHgs
+#: func_value.xhp
+msgctxt ""
+"func_value.xhp\n"
+"par_id801628779804928\n"
+"help.text"
+msgid "Refer to the <link href=\"https://wiki.documentfoundation.org/Documentation/Calc_Functions/VALUE\" name=\"VALUE Wiki\">VALUE</link> wiki page for more details about this function."
 msgstr ""
 
 #. dQeP6
@@ -68938,31 +69163,31 @@ msgctxt ""
 msgid "The following table displays the results of the descriptive statistics of the sample data above."
 msgstr ""
 
-#. XC7CC
+#. BmGdK
 #: statistics_descriptive.xhp
 msgctxt ""
 "statistics_descriptive.xhp\n"
 "par_id1000690\n"
 "help.text"
-msgid "Column 1"
+msgid "Maths"
 msgstr ""
 
-#. HY2UN
+#. BYWoQ
 #: statistics_descriptive.xhp
 msgctxt ""
 "statistics_descriptive.xhp\n"
 "par_id1000700\n"
 "help.text"
-msgid "Column 2"
+msgid "Physics"
 msgstr ""
 
-#. qTDSp
+#. FeMDR
 #: statistics_descriptive.xhp
 msgctxt ""
 "statistics_descriptive.xhp\n"
 "par_id1000710\n"
 "help.text"
-msgid "Column 3"
+msgid "Biology"
 msgstr ""
 
 #. AjAbs
@@ -69532,13 +69757,13 @@ msgctxt ""
 msgid "Regression Analysis"
 msgstr ""
 
-#. wDYsU
+#. vJQLe
 #: statistics_regression.xhp
 msgctxt ""
 "statistics_regression.xhp\n"
 "bm_id2764278\n"
 "help.text"
-msgid "<bookmark_value>Analysis toolpack;regression analysis</bookmark_value><bookmark_value>regression analysis;Analysis toolpack</bookmark_value><bookmark_value>Data statistics;regression analysis</bookmark_value>"
+msgid "<bookmark_value>Analysis toolpack;regression analysis</bookmark_value><bookmark_value>regression analysis;Analysis toolpack</bookmark_value><bookmark_value>Data statistics;regression analysis</bookmark_value><bookmark_value>Confidence level;regression analysis</bookmark_value><bookmark_value>regression analysis;linear</bookmark_value><bookmark_value>regression analysis;power</bookmark_value><bookmark_value>regression analysis;logarithmic</bookmark_value>"
 msgstr ""
 
 #. UPKr7
@@ -69550,13 +69775,22 @@ msgctxt ""
 msgid "<variable id=\"regressionanalysish1\"><link href=\"text/scalc/01/statistics_regression.xhp\" name=\"regression analysis\">Regression Analysis</link></variable>"
 msgstr ""
 
-#. NFhSA
+#. A8gk9
 #: statistics_regression.xhp
 msgctxt ""
 "statistics_regression.xhp\n"
 "par_id1001240\n"
 "help.text"
-msgid "<ahelp hid=\"modules/scalc/ui/regressiondialog/RegressionDialog\">Produces the regression analysis of a data set</ahelp>"
+msgid "<ahelp hid=\"modules/scalc/ui/regressiondialog/RegressionDialog\">Performs linear, logarithmic, or power regression analysis of a data set comprising one dependent variable and multiple independent variables.</ahelp>"
+msgstr ""
+
+#. PDDGb
+#: statistics_regression.xhp
+msgctxt ""
+"statistics_regression.xhp\n"
+"par_id431629832333206\n"
+"help.text"
+msgid "For example, a crop yield (dependent variable) may be related to rainfall, temperature conditions, sunshine, humidity, soil quality and more, all of them independent variables."
 msgstr ""
 
 #. ENJtD
@@ -69577,13 +69811,94 @@ msgctxt ""
 msgid "For more information on regression analysis, refer to the <link href=\"https://en.wikipedia.org/wiki/Regression_analysis\" name=\"English Wikipedia: Regression analysis\">corresponding Wikipedia article</link>."
 msgstr ""
 
-#. rdATw
+#. G5y4R
+#: statistics_regression.xhp
+msgctxt ""
+"statistics_regression.xhp\n"
+"hd_id891629830986496\n"
+"help.text"
+msgid "Data"
+msgstr ""
+
+#. 9uRGh
+#: statistics_regression.xhp
+msgctxt ""
+"statistics_regression.xhp\n"
+"hd_id101629830993962\n"
+"help.text"
+msgid "Independent variable(s) (X) range:"
+msgstr ""
+
+#. XGD77
+#: statistics_regression.xhp
+msgctxt ""
+"statistics_regression.xhp\n"
+"par_id961629834099308\n"
+"help.text"
+msgid "Enter a single range that contains multiple independent variable observations (along columns or rows). All X variable observations need to be entered adjacent to each other in the same table."
+msgstr ""
+
+#. yCogF
+#: statistics_regression.xhp
+msgctxt ""
+"statistics_regression.xhp\n"
+"hd_id871629830998653\n"
+"help.text"
+msgid "Dependent variable (Y) range:"
+msgstr ""
+
+#. NiB9B
+#: statistics_regression.xhp
+msgctxt ""
+"statistics_regression.xhp\n"
+"par_id391629834089370\n"
+"help.text"
+msgid "Enter the range that contains the dependent variable whose regression is to be calculated."
+msgstr ""
+
+#. A8dZ8
+#: statistics_regression.xhp
+msgctxt ""
+"statistics_regression.xhp\n"
+"hd_id931629831003368\n"
+"help.text"
+msgid "Both X and Y ranges have labels"
+msgstr ""
+
+#. mSnba
+#: statistics_regression.xhp
+msgctxt ""
+"statistics_regression.xhp\n"
+"par_id261629834071776\n"
+"help.text"
+msgid "Check to use the first line (or column) of the data sets as variable names in the output range."
+msgstr ""
+
+#. 7TDwz
+#: statistics_regression.xhp
+msgctxt ""
+"statistics_regression.xhp\n"
+"hd_id11629831014811\n"
+"help.text"
+msgid "Results to:"
+msgstr ""
+
+#. CAKdU
+#: statistics_regression.xhp
+msgctxt ""
+"statistics_regression.xhp\n"
+"par_id441629834000533\n"
+"help.text"
+msgid "The reference of the top left cell of the range where the results will be displayed."
+msgstr ""
+
+#. ZMxv6
 #: statistics_regression.xhp
 msgctxt ""
 "statistics_regression.xhp\n"
 "hd_id1000070\n"
 "help.text"
-msgid "Output Regression Type"
+msgid "Output Regression Types"
 msgstr ""
 
 #. QMDBG
@@ -69595,121 +69910,94 @@ msgctxt ""
 msgid "Set the regression type. Three types are available:"
 msgstr ""
 
-#. 7Avaz
+#. vauNm
 #: statistics_regression.xhp
 msgctxt ""
 "statistics_regression.xhp\n"
 "par_id1701201620334364\n"
 "help.text"
-msgid "<emph>Linear Regression</emph>: find a straight line in the form of <item type=\"literal\">y = a.x + b</item>, where <item type=\"literal\">a</item> is the slope and <item type=\"literal\">b</item> is the intercept that best fits the data."
+msgid "<emph>Linear Regression</emph>: finds a linear function in the form of y = b + a<sub>1</sub>.[x<sub>1</sub>] + a<sub>2</sub>.[x<sub>2</sub>] + a<sub>3</sub>.[x<sub>3</sub>] ..., where a<sub>i</sub> is the i-th slope, [x<sub>i</sub>] is the i-th independent variable, and b is the intercept that best fits the data."
 msgstr ""
 
-#. B6dex
+#. cR7FM
 #: statistics_regression.xhp
 msgctxt ""
 "statistics_regression.xhp\n"
 "par_id1701201620340168\n"
 "help.text"
-msgid "<emph>Logarithmic regression</emph>: find a logarithmic curve in the form of <item type=\"literal\">y = a.ln(x) + b</item>, where <item type=\"literal\">a</item> is the slope, <item type=\"literal\">b</item> is the intercept and <item type=\"literal\">ln(x)</item> is the natural logarithm of <item type=\"literal\">x</item>, that best fits the data."
+msgid "<emph>Logarithmic regression</emph>: finds a logarithmic curve in the form of y = b + a<sub>1</sub>.ln[x<sub>1</sub>] + a<sub>2</sub>.ln[x<sub>2</sub>] + a<sub>3</sub>.ln[x<sub>3</sub>] ..., where a<sub>i</sub> is the i-th coefficient, b is the intercept and ln[x<sub>i</sub>] is the natural logarithm of the i-th independent variable, that best fits the data."
 msgstr ""
 
-#. txgoZ
+#. YfNEL
 #: statistics_regression.xhp
 msgctxt ""
 "statistics_regression.xhp\n"
 "par_id1701201620340139\n"
 "help.text"
-msgid "<emph>Power regression</emph>: Find a power curve in the form of <item type=\"literal\">y = a.x^b</item>, where <item type=\"literal\">a</item> is the coefficient, <item type=\"literal\">b</item> is the power that best fits the data."
+msgid "<emph>Power regression</emph>: finds a power curve in the form of y = exp( b + a<sub>1</sub>.ln[x<sub>1</sub>] + a<sub>2</sub>.ln[x<sub>2</sub>] + a<sub>3</sub>.ln[x<sub>3</sub>] ...), where a<sub>i</sub> is the i-th power, [x<sub>i</sub>] is the i-th independent variable, and b is intercept that best fits the data."
 msgstr ""
 
-#. EtPbr
+#. 3KkxA
 #: statistics_regression.xhp
 msgctxt ""
 "statistics_regression.xhp\n"
-"par_id1001310\n"
+"hd_id331629834218606\n"
 "help.text"
-msgid "The results of the three types of <emph>regression analysis</emph> of the measurements in the table above are shown below."
+msgid "Options"
 msgstr ""
 
-#. iJ7yf
+#. uBCr7
 #: statistics_regression.xhp
 msgctxt ""
 "statistics_regression.xhp\n"
-"par_id1701201618090526\n"
+"hd_id481629834269509\n"
 "help.text"
-msgid "Regression"
+msgid "Confidence level"
 msgstr ""
 
-#. cSAoU
+#. YjBMV
 #: statistics_regression.xhp
 msgctxt ""
 "statistics_regression.xhp\n"
-"par_id1701201618090542\n"
+"par_id971629835636129\n"
 "help.text"
-msgid "Regression Model"
+msgid "A numeric value between 0 and 1 (exclusive), default is 0.95. Calc uses this percentage to compute the corresponding confidence intervals for each of the estimates (namely the slopes and intercept)."
 msgstr ""
 
-#. YAGFi
+#. f2CEs
 #: statistics_regression.xhp
 msgctxt ""
 "statistics_regression.xhp\n"
-"par_id1701201618090596\n"
+"hd_id751629834274709\n"
 "help.text"
-msgid "Linear"
-msgstr "Linearni"
-
-#. 2zcqS
-#: statistics_regression.xhp
-msgctxt ""
-"statistics_regression.xhp\n"
-"par_id1701201618090586\n"
-"help.text"
-msgid "Logarithmic"
+msgid "Calculate residuals"
 msgstr ""
 
-#. QvaFq
+#. b4unQ
 #: statistics_regression.xhp
 msgctxt ""
 "statistics_regression.xhp\n"
-"par_id1701201618090555\n"
+"par_id401629835408653\n"
 "help.text"
-msgid "Power"
-msgstr "Eksponent"
-
-#. oHBnC
-#: statistics_regression.xhp
-msgctxt ""
-"statistics_regression.xhp\n"
-"par_id1701201618090553\n"
-"help.text"
-msgid "R^2"
+msgid "Select whether to opt in or out of computing the residuals, which may be beneficial in cases where you are interested only in the slopes and intercept estimates and their statistics. The residuals give information on how far the actual data points deviate from the predicted data points, based on the regression model."
 msgstr ""
 
-#. egmFM
+#. F99az
 #: statistics_regression.xhp
 msgctxt ""
 "statistics_regression.xhp\n"
-"par_id1701201618090595\n"
+"hd_id861629834279039\n"
 "help.text"
-msgid "Standard Error"
+msgid "Force intercept to be zero"
 msgstr ""
 
-#. woESA
+#. UYdQb
 #: statistics_regression.xhp
 msgctxt ""
 "statistics_regression.xhp\n"
-"par_id1701201618090563\n"
+"par_id121629837424848\n"
 "help.text"
-msgid "Slope"
-msgstr ""
-
-#. qfNCA
-#: statistics_regression.xhp
-msgctxt ""
-"statistics_regression.xhp\n"
-"par_id1701201618090642\n"
-"help.text"
-msgid "Intercept"
+msgid "Calculates the regression model using zero as the intercept, thus forcing the model to pass through the origin."
 msgstr ""
 
 #. u47eB

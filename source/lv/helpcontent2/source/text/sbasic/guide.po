@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2019-11-08 19:34+0100\n"
+"POT-Creation-Date: 2021-09-10 23:11+0200\n"
 "PO-Revision-Date: 2019-02-27 12:06+0000\n"
 "Last-Translator: Ingmārs Dīriņš <melhiors14@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -680,6 +680,393 @@ msgctxt ""
 "hd_id471559139063621\n"
 "help.text"
 msgid "<variable id=\"basicexamplestit\"><link href=\"text/sbasic/guide/basic_examples.xhp\" name=\"Basic Programming Examples\">Basic Programming Examples</link></variable>"
+msgstr ""
+
+#. GKzpN
+#: calc_borders.xhp
+msgctxt ""
+"calc_borders.xhp\n"
+"tit\n"
+"help.text"
+msgid "Formatting Borders in Calc with Macros"
+msgstr ""
+
+#. gDaEd
+#: calc_borders.xhp
+msgctxt ""
+"calc_borders.xhp\n"
+"hd_id461623364876507\n"
+"help.text"
+msgid "<variable id=\"title\"><link href=\"text/sbasic/guide/calc_borders.xhp\" name=\"Calc_Borders_h1\">Formatting Borders in Calc with Macros</link></variable>"
+msgstr ""
+
+#. JyRxe
+#: calc_borders.xhp
+msgctxt ""
+"calc_borders.xhp\n"
+"par_id461630536347127\n"
+"help.text"
+msgid "By using Basic or Python programming languages it is possible to write macros that apply formats to ranges of cells in Calc."
+msgstr ""
+
+#. 7FCuQ
+#: calc_borders.xhp
+msgctxt ""
+"calc_borders.xhp\n"
+"hd_id81630536486560\n"
+"help.text"
+msgid "Formatting Borders in Ranges of Cells"
+msgstr ""
+
+#. jZniv
+#: calc_borders.xhp
+msgctxt ""
+"calc_borders.xhp\n"
+"par_id871630536518700\n"
+"help.text"
+msgid "The code snippet below creates a <literal>Sub</literal> called <literal>FormatCellBorder</literal> that applies new border formats to a given range address in the current Calc sheet."
+msgstr ""
+
+#. Xzm6Q
+#: calc_borders.xhp
+msgctxt ""
+"calc_borders.xhp\n"
+"bas_id131630537785605\n"
+"help.text"
+msgid "' Creates the UNO struct that will store the new line format"
+msgstr ""
+
+#. qpADJ
+#: calc_borders.xhp
+msgctxt ""
+"calc_borders.xhp\n"
+"bas_id971630537786724\n"
+"help.text"
+msgid "' Gets the target cell"
+msgstr ""
+
+#. jXfEv
+#: calc_borders.xhp
+msgctxt ""
+"calc_borders.xhp\n"
+"bas_id791630537787373\n"
+"help.text"
+msgid "' Applies the new format to all borders"
+msgstr ""
+
+#. 3csnz
+#: calc_borders.xhp
+msgctxt ""
+"calc_borders.xhp\n"
+"par_id141630537941393\n"
+"help.text"
+msgid "The <literal>Sub</literal> described above takes in four arguments:"
+msgstr ""
+
+#. r5ThF
+#: calc_borders.xhp
+msgctxt ""
+"calc_borders.xhp\n"
+"par_id841630538209958\n"
+"help.text"
+msgid "<emph>cellAddress</emph> is a string such as denoting the range to be formatted in the format \"A1\"."
+msgstr ""
+
+#. dfuE6
+#: calc_borders.xhp
+msgctxt ""
+"calc_borders.xhp\n"
+"par_id821630538210271\n"
+"help.text"
+msgid "<emph>newStyle</emph> is an integer value that corresponds to the border line style (see <link href=\"text/sbasic/guide/calc_borders.xhp#LineStyles_h2\" name=\"LineStyles_link\">Line Styles</link> below)."
+msgstr ""
+
+#. gKaYD
+#: calc_borders.xhp
+msgctxt ""
+"calc_borders.xhp\n"
+"par_id191630538210607\n"
+"help.text"
+msgid "<emph>newWidth</emph> is an integer value that defines the line width."
+msgstr ""
+
+#. wVnmn
+#: calc_borders.xhp
+msgctxt ""
+"calc_borders.xhp\n"
+"par_id71630538211142\n"
+"help.text"
+msgid "<emph>newColor</emph> is an integer value corresponding to a color defined using the <link href=\"text/sbasic/shared/03010305.xhp\" name=\"RGB_link\">RGB</link> function."
+msgstr ""
+
+#. 3gYJs
+#: calc_borders.xhp
+msgctxt ""
+"calc_borders.xhp\n"
+"par_id201630538522838\n"
+"help.text"
+msgid "To call <literal>FormatCellBorder</literal> create a new macro and pass the desired arguments, as shown below:"
+msgstr ""
+
+#. XpcA7
+#: calc_borders.xhp
+msgctxt ""
+"calc_borders.xhp\n"
+"bas_id651630603779228\n"
+"help.text"
+msgid "' Gives access to the line style constants"
+msgstr ""
+
+#. 44Cm4
+#: calc_borders.xhp
+msgctxt ""
+"calc_borders.xhp\n"
+"bas_id321630538931144\n"
+"help.text"
+msgid "' Formats \"B5\" with solid blue borders"
+msgstr ""
+
+#. m5WA7
+#: calc_borders.xhp
+msgctxt ""
+"calc_borders.xhp\n"
+"bas_id91630538931686\n"
+"help.text"
+msgid "' Formats all borders in the range \"D2:F6\" with red dotted borders"
+msgstr ""
+
+#. yt8qz
+#: calc_borders.xhp
+msgctxt ""
+"calc_borders.xhp\n"
+"par_id31630540159114\n"
+"help.text"
+msgid "It is possible to implement the same functionality in Python:"
+msgstr ""
+
+#. FEQGU
+#: calc_borders.xhp
+msgctxt ""
+"calc_borders.xhp\n"
+"pyc_id411630540777672\n"
+"help.text"
+msgid "# Defines the new line format"
+msgstr ""
+
+#. cxBAF
+#: calc_borders.xhp
+msgctxt ""
+"calc_borders.xhp\n"
+"pyc_id361630540778786\n"
+"help.text"
+msgid "# Scriptforge service to access cell ranges"
+msgstr ""
+
+#. hUVfn
+#: calc_borders.xhp
+msgctxt ""
+"calc_borders.xhp\n"
+"par_id931630541661889\n"
+"help.text"
+msgid "The code snippet below implements a macro named <literal>myMacro</literal> that calls <literal>formatCellBorder</literal>:"
+msgstr ""
+
+#. zmvzf
+#: calc_borders.xhp
+msgctxt ""
+"calc_borders.xhp\n"
+"par_id261630541889040\n"
+"help.text"
+msgid "The Python code presented above uses the <link href=\"text/sbasic/shared/03/lib_ScriptForge.xhp\" name=\"SF_link\">ScriptForge library</link> that is available since %PRODUCTNAME 7.2."
+msgstr ""
+
+#. FfECT
+#: calc_borders.xhp
+msgctxt ""
+"calc_borders.xhp\n"
+"hd_id361630539136798\n"
+"help.text"
+msgid "Line Styles"
+msgstr ""
+
+#. Qt5gG
+#: calc_borders.xhp
+msgctxt ""
+"calc_borders.xhp\n"
+"par_id501630539147234\n"
+"help.text"
+msgid "Line styles are defined as integer constants. The table below lists the constants for the line styles available in <menuitem>Format - Cells - Borders</menuitem>:"
+msgstr ""
+
+#. X2WVp
+#: calc_borders.xhp
+msgctxt ""
+"calc_borders.xhp\n"
+"par_id651630604006712\n"
+"help.text"
+msgid "Constant name"
+msgstr ""
+
+#. JTgFF
+#: calc_borders.xhp
+msgctxt ""
+"calc_borders.xhp\n"
+"par_id501630539273987\n"
+"help.text"
+msgid "Integer value"
+msgstr ""
+
+#. GZPBL
+#: calc_borders.xhp
+msgctxt ""
+"calc_borders.xhp\n"
+"par_id191630539273987\n"
+"help.text"
+msgid "Line style name"
+msgstr ""
+
+#. cGhRo
+#: calc_borders.xhp
+msgctxt ""
+"calc_borders.xhp\n"
+"par_id691630539273987\n"
+"help.text"
+msgid "Solid"
+msgstr ""
+
+#. aFDHe
+#: calc_borders.xhp
+msgctxt ""
+"calc_borders.xhp\n"
+"par_id591630539325162\n"
+"help.text"
+msgid "Dotted"
+msgstr ""
+
+#. XJZxB
+#: calc_borders.xhp
+msgctxt ""
+"calc_borders.xhp\n"
+"par_id881630539433260\n"
+"help.text"
+msgid "Dashed"
+msgstr ""
+
+#. VeExq
+#: calc_borders.xhp
+msgctxt ""
+"calc_borders.xhp\n"
+"par_id111630539463634\n"
+"help.text"
+msgid "Fine dashed"
+msgstr ""
+
+#. n9ZFA
+#: calc_borders.xhp
+msgctxt ""
+"calc_borders.xhp\n"
+"par_id261630539471483\n"
+"help.text"
+msgid "Double thin"
+msgstr ""
+
+#. ydBcG
+#: calc_borders.xhp
+msgctxt ""
+"calc_borders.xhp\n"
+"par_id671630539478101\n"
+"help.text"
+msgid "Dash dot"
+msgstr ""
+
+#. a4wFd
+#: calc_borders.xhp
+msgctxt ""
+"calc_borders.xhp\n"
+"par_id701630539484498\n"
+"help.text"
+msgid "Dash dot dot"
+msgstr ""
+
+#. A9PVK
+#: calc_borders.xhp
+msgctxt ""
+"calc_borders.xhp\n"
+"par_id751630539680866\n"
+"help.text"
+msgid "Refer to the <link href=\"https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1table_1_1BorderLineStyle.html\" name=\"BorderLineStyle_link\">BorderLineStyle Constant Reference</link> in the LibreOffice API documentation to learn more about line style constants."
+msgstr ""
+
+#. aJTNw
+#: calc_borders.xhp
+msgctxt ""
+"calc_borders.xhp\n"
+"hd_id31630542361666\n"
+"help.text"
+msgid "Formatting Borders Using TableBorder2"
+msgstr ""
+
+#. yQYnF
+#: calc_borders.xhp
+msgctxt ""
+"calc_borders.xhp\n"
+"par_id11630542436346\n"
+"help.text"
+msgid "Range objects have a property named <literal>TableBorder2</literal> that can be used to format range borders as it is done in the <menuitem>Format - Cells - Borders</menuitem>  dialog in the <emph>Line Arrangement</emph> section."
+msgstr ""
+
+#. A25aA
+#: calc_borders.xhp
+msgctxt ""
+"calc_borders.xhp\n"
+"par_id641630542724480\n"
+"help.text"
+msgid "In addition to top, bottom, left and right borders, <literal>TableBorder2</literal> also defines vertical and horizontal borders. The macro below applies only the top and bottom borders to the range \"B2:E5\"."
+msgstr ""
+
+#. k7afV
+#: calc_borders.xhp
+msgctxt ""
+"calc_borders.xhp\n"
+"bas_id191630543332073\n"
+"help.text"
+msgid "' Defines the new line format"
+msgstr ""
+
+#. hSdDm
+#: calc_borders.xhp
+msgctxt ""
+"calc_borders.xhp\n"
+"bas_id281630543333061\n"
+"help.text"
+msgid "' Struct that stores the new TableBorder2 definition"
+msgstr ""
+
+#. SFrJL
+#: calc_borders.xhp
+msgctxt ""
+"calc_borders.xhp\n"
+"bas_id11630543334395\n"
+"help.text"
+msgid "' Applies the table format to the range \"B2:E5\""
+msgstr ""
+
+#. cSa4U
+#: calc_borders.xhp
+msgctxt ""
+"calc_borders.xhp\n"
+"par_id401630544066231\n"
+"help.text"
+msgid "The macro can be implemented in Python as follows:"
+msgstr ""
+
+#. aipfb
+#: calc_borders.xhp
+msgctxt ""
+"calc_borders.xhp\n"
+"par_id751630539680102\n"
+"help.text"
+msgid "Refer to the <link href=\"https://api.libreoffice.org/docs/idl/ref/structcom_1_1sun_1_1star_1_1table_1_1TableBorder2.html\" name=\"BorderLineStyle_link\">TableBorder2 Struct Reference</link> in the LibreOffice API documentation to learn more about its attributes."
 msgstr ""
 
 #. YLjtF
