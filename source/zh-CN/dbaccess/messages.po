@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2021-09-10 23:10+0200\n"
-"PO-Revision-Date: 2021-03-27 08:37+0000\n"
+"POT-Creation-Date: 2021-10-04 19:51+0200\n"
+"PO-Revision-Date: 2021-10-04 11:36+0000\n"
 "Last-Translator: Ming Hua <plateauwolf@qq.com>\n"
 "Language-Team: Chinese (Simplified) <https://translations.documentfoundation.org/projects/libo_ui-master/dbaccessmessages/zh_Hans/>\n"
 "Language: zh-CN\n"
@@ -3223,7 +3223,7 @@ msgstr "格式示例"
 #: dbaccess/uiconfig/ui/fielddescpage.ui:172
 msgctxt "fielddescpage|STR_BUTTON_FORMAT"
 msgid "_Format Field"
-msgstr ""
+msgstr "设置字段格式(_F)"
 
 #. Ff2B8
 #: dbaccess/uiconfig/ui/fielddescpage.ui:194
@@ -3394,43 +3394,85 @@ msgctxt "generalpagewizard|createDatabase"
 msgid "Create a n_ew database"
 msgstr "新建一个数据库(_E)"
 
+#. AxE5z
+#: dbaccess/uiconfig/ui/generalpagewizard.ui:71
+msgctxt "generalpagewizard|extended_tip|createDatabase"
+msgid "Select to create a new database."
+msgstr ""
+
 #. BRSfR
-#: dbaccess/uiconfig/ui/generalpagewizard.ui:85
+#: dbaccess/uiconfig/ui/generalpagewizard.ui:90
 msgctxt "generalpagewizard|embeddeddbLabel"
 msgid "_Embedded database:"
 msgstr "内嵌数据库(_E):"
 
 #. S2RBe
-#: dbaccess/uiconfig/ui/generalpagewizard.ui:115
+#: dbaccess/uiconfig/ui/generalpagewizard.ui:120
 msgctxt "generalpagewizard|openExistingDatabase"
 msgid "Open an existing database _file"
 msgstr "打开一个现有的数据库文件(_F)"
 
+#. qBi4U
+#: dbaccess/uiconfig/ui/generalpagewizard.ui:130
+msgctxt "generalpagewizard|extended_tip|openExistingDatabase"
+msgid "Select to open a database file from a list of recently used files or from a file selection dialog."
+msgstr ""
+
 #. dfae2
-#: dbaccess/uiconfig/ui/generalpagewizard.ui:139
+#: dbaccess/uiconfig/ui/generalpagewizard.ui:149
 msgctxt "generalpagewizard|docListLabel"
 msgid "_Recently used:"
 msgstr "最近使用的(_R):"
 
+#. bxkCC
+#: dbaccess/uiconfig/ui/generalpagewizard.ui:174
+msgctxt "generalpagewizard|extended_tip|docListBox"
+msgid "Select a database file to open from the list of recently used files. Click Finish to open the file immediately and to exit the wizard."
+msgstr ""
+
 #. dVAEy
-#: dbaccess/uiconfig/ui/generalpagewizard.ui:170
+#: dbaccess/uiconfig/ui/generalpagewizard.ui:185
 msgctxt "generalpagewizard|openDatabase"
 msgid "Open"
 msgstr "打开"
 
+#. 6A3Fu
+#: dbaccess/uiconfig/ui/generalpagewizard.ui:194
+msgctxt "generalpagewizard|extended_tip|openDatabase"
+msgid "Opens a file selection dialog where you can select a database file. Click Open or OK in the file selection dialog to open the file immediately and to exit the wizard."
+msgstr ""
+
 #. cKpTp
-#: dbaccess/uiconfig/ui/generalpagewizard.ui:185
+#: dbaccess/uiconfig/ui/generalpagewizard.ui:205
 msgctxt "generalpagewizard|connectDatabase"
 msgid "Connect to an e_xisting database"
 msgstr "连接到现有的数据库(_X)"
 
+#. 8uBqf
+#: dbaccess/uiconfig/ui/generalpagewizard.ui:215
+msgctxt "generalpagewizard|extended_tip|connectDatabase"
+msgid "Select to create a database document for an existing database connection."
+msgstr ""
+
+#. CYq28
+#: dbaccess/uiconfig/ui/generalpagewizard.ui:232
+msgctxt "generalpagewizard|extended_tip|datasourceType"
+msgid "Select the database type for the existing database connection."
+msgstr ""
+
 #. emqeD
-#: dbaccess/uiconfig/ui/generalpagewizard.ui:225
+#: dbaccess/uiconfig/ui/generalpagewizard.ui:255
 msgctxt "generalpagewizard|noembeddeddbLabel"
 msgid ""
 "It is not possible to create a new database, because neither HSQLDB, nor Firebird is\n"
 "available in this setup."
 msgstr "无法创建新的数据库，因为目前设置下 HSQLDB 和 Firebird 都不可用。"
+
+#. n2DxH
+#: dbaccess/uiconfig/ui/generalpagewizard.ui:265
+msgctxt "generalpagewizard|extended_tip|PageGeneral"
+msgid "The Database Wizard creates a database file that contains information about a database."
+msgstr ""
 
 #. DQvKi
 #: dbaccess/uiconfig/ui/generalspecialjdbcdetailspage.ui:39
@@ -4240,7 +4282,7 @@ msgstr "查询属性"
 #: dbaccess/uiconfig/ui/querypropertiesdialog.ui:87
 msgctxt "querypropertiesdialog|limit-label"
 msgid "Limit:"
-msgstr "限制:"
+msgstr "上限:"
 
 #. 2D6E2
 #: dbaccess/uiconfig/ui/querypropertiesdialog.ui:102
@@ -4276,7 +4318,7 @@ msgstr "非重复值:"
 #: dbaccess/uiconfig/ui/querypropertiesdialog.ui:175
 msgctxt "querypropertiesdialog|extended_tip|limitbox"
 msgid "Adds a Limit to set the maximum number of records to return."
-msgstr ""
+msgstr "为返回的最大记录数量添加一个上限。"
 
 #. GoEm9
 #: dbaccess/uiconfig/ui/querypropertiesdialog.ui:203
@@ -4614,131 +4656,239 @@ msgctxt "specialsettingspage|usesql92"
 msgid "Use SQL92 naming constraints"
 msgstr "使用 SQL92 命名限制"
 
+#. d8pYB
+#: dbaccess/uiconfig/ui/specialsettingspage.ui:32
+msgctxt "specialsettingspage|extended_tip|usesql92"
+msgid "Only allows characters that conform to the SQL92 naming convention in a name in a data source. All other characters are rejected. Each name must begin with a lowercase letter, an uppercase letter, or an underscore ( _ ). The remaining characters can be ASCII letters, numbers, and underscores."
+msgstr ""
+
 #. Gwn9n
-#: dbaccess/uiconfig/ui/specialsettingspage.ui:38
+#: dbaccess/uiconfig/ui/specialsettingspage.ui:43
 msgctxt "specialsettingspage|append"
 msgid "Append the table alias name on SELECT statements"
 msgstr "在 SELECT 语句中追加表格别名"
 
+#. tU88G
+#: dbaccess/uiconfig/ui/specialsettingspage.ui:51
+msgctxt "specialsettings|extended_tip|append"
+msgid "Appends the alias to the table name in SELECT statements."
+msgstr ""
+
 #. rim5j
-#: dbaccess/uiconfig/ui/specialsettingspage.ui:52
+#: dbaccess/uiconfig/ui/specialsettingspage.ui:62
 msgctxt "specialsettingspage|useas"
 msgid "Use keyword AS before table alias names"
 msgstr "在表格别名之前使用关键字 AS"
 
+#. GFzLp
+#: dbaccess/uiconfig/ui/specialsettingspage.ui:70
+msgctxt "specialsettingspage|extended_tip|useas"
+msgid "Some databases use the keyword \"AS\" between a name and its alias, while other databases use a whitespace. Enable this option to insert AS before the alias."
+msgstr ""
+
 #. JDTsA
-#: dbaccess/uiconfig/ui/specialsettingspage.ui:66
+#: dbaccess/uiconfig/ui/specialsettingspage.ui:81
 msgctxt "specialsettingspage|useoj"
 msgid "Use Outer Join syntax '{oj }'"
 msgstr "使用外连接语法 '{oj }'"
 
+#. EFF2V
+#: dbaccess/uiconfig/ui/specialsettingspage.ui:89
+msgctxt "specialsettingsoage|extended_tip|useoj"
+msgid "Use escape sequences for outer joins. The syntax for this escape sequence is {oj outer-join}"
+msgstr ""
+
 #. T8TKQ
-#: dbaccess/uiconfig/ui/specialsettingspage.ui:80
+#: dbaccess/uiconfig/ui/specialsettingspage.ui:100
 msgctxt "specialsettingspage|ignoreprivs"
 msgid "Ignore the privileges from the database driver"
 msgstr "忽略数据库驱动程序的权限"
 
+#. DEPCt
+#: dbaccess/uiconfig/ui/specialsettingspage.ui:108
+msgctxt "specialsettingspage|extended_tip|ignoreprivs"
+msgid "Ignores access privileges that are provided by the database driver."
+msgstr ""
+
 #. QK4W3
-#: dbaccess/uiconfig/ui/specialsettingspage.ui:94
+#: dbaccess/uiconfig/ui/specialsettingspage.ui:119
 msgctxt "specialsettingspage|replaceparams"
 msgid "Replace named parameters with '?'"
 msgstr "用 \"?\" 替换已命名的参数"
 
+#. DBRrE
+#: dbaccess/uiconfig/ui/specialsettingspage.ui:127
+msgctxt "specialsettingspage|extended_tip|replaceparams"
+msgid "Replaces named parameters in a data source with a question mark (?)."
+msgstr ""
+
 #. kfSki
-#: dbaccess/uiconfig/ui/specialsettingspage.ui:108
+#: dbaccess/uiconfig/ui/specialsettingspage.ui:138
 msgctxt "specialsettingspage|displayver"
 msgid "Display version columns (when available)"
 msgstr "显示版本列 (如果可用)"
 
+#. X4qSb
+#: dbaccess/uiconfig/ui/specialsettingspage.ui:146
+msgctxt "specialsettingspage|extended_tip|displayver"
+msgid "Displays the internal version number of the record in the database table."
+msgstr ""
+
 #. JqBdc
-#: dbaccess/uiconfig/ui/specialsettingspage.ui:122
+#: dbaccess/uiconfig/ui/specialsettingspage.ui:157
 msgctxt "specialsettingspage|usecatalogname"
 msgid "Use catalog name in SELECT statements"
 msgstr "在 SELECT 语句中使用编目名称"
 
+#. YG2AT
+#: dbaccess/uiconfig/ui/specialsettingspage.ui:165
+msgctxt "specialsettingspage|extended_tip|usecatalogname"
+msgid "Uses the current data source of the catalog. This option is useful when the ODBC data source is a database server. Do not select this option if the ODBC data source is a dBASE driver."
+msgstr ""
+
 #. yFGxG
-#: dbaccess/uiconfig/ui/specialsettingspage.ui:136
+#: dbaccess/uiconfig/ui/specialsettingspage.ui:176
 msgctxt "specialsettingspage|useschemaname"
 msgid "Use schema name in SELECT statements"
 msgstr "在 SELECT 语句中使用 schema 名称"
 
+#. PEM2R
+#: dbaccess/uiconfig/ui/specialsettingspage.ui:184
+msgctxt "specialsettingspage|extended_tip|useschemaname"
+msgid "Allows you to use the schema name in SELECT statements."
+msgstr ""
+
 #. gyC7J
-#: dbaccess/uiconfig/ui/specialsettingspage.ui:150
+#: dbaccess/uiconfig/ui/specialsettingspage.ui:195
 msgctxt "specialsettingspage|createindex"
 msgid "Create index with ASC or DESC statement"
 msgstr "使用 ASC 或 DESC 语句创建索引"
 
+#. 2hRPG
+#: dbaccess/uiconfig/ui/specialsettingspage.ui:203
+msgctxt "specialsettingspage|extended_tip|createindex"
+msgid "Creates an index with ASC or DESC statements."
+msgstr ""
+
 #. Xabxp
-#: dbaccess/uiconfig/ui/specialsettingspage.ui:164
+#: dbaccess/uiconfig/ui/specialsettingspage.ui:214
 msgctxt "specialsettingspage|eol"
 msgid "End text lines with CR+LF"
 msgstr "使用 CR+LF 结束文本行"
 
+#. vjCZB
+#: dbaccess/uiconfig/ui/specialsettingspage.ui:222
+msgctxt "specialsettingspage|extended_tip|eol"
+msgid "Select to use the CR + LF code pair to end every text line (preferred for DOS and Windows operating systems)."
+msgstr ""
+
 #. XFM7x
-#: dbaccess/uiconfig/ui/specialsettingspage.ui:178
+#: dbaccess/uiconfig/ui/specialsettingspage.ui:233
 msgctxt "specialsettingspage|ignorecurrency"
 msgid "Ignore currency field information"
 msgstr "忽略货币字段信息"
 
+#. yQkEn
+#: dbaccess/uiconfig/ui/specialsettingspage.ui:241
+msgctxt "specialsettingspage|extended_tip|ignorecurrency"
+msgid "Only for Oracle JDBC connections. When enabled it specifies that no column is treated as a currency field. The field type returned from the database driver is discarded."
+msgstr ""
+
 #. 2tRzG
-#: dbaccess/uiconfig/ui/specialsettingspage.ui:192
+#: dbaccess/uiconfig/ui/specialsettingspage.ui:252
 msgctxt "specialsettingspage|inputchecks"
 msgid "Form data input checks for required fields"
 msgstr "表格必填字段数据输入检查"
 
+#. NyABn
+#: dbaccess/uiconfig/ui/specialsettingspage.ui:260
+msgctxt "specialsettingspage|extended_tip|inputchecks"
+msgid "When you enter a new record or update an existing record in a form, and you leave a field empty which is bound to a database column which requires input, then you will see a message complaining about the empty field."
+msgstr ""
+
 #. jEgvf
-#: dbaccess/uiconfig/ui/specialsettingspage.ui:206
+#: dbaccess/uiconfig/ui/specialsettingspage.ui:271
 msgctxt "specialsettingspage|useodbcliterals"
 msgid "Use ODBC conformant date/time literals"
 msgstr "使用 ODBC 日期/时间统一格式"
 
+#. Lp8bE
+#: dbaccess/uiconfig/ui/specialsettingspage.ui:279
+msgctxt "specialsettingspage|extended_tip|useodbcliterals"
+msgid "Use date/time literals that conform to ODBC standard."
+msgstr ""
+
 #. GuCLC
-#: dbaccess/uiconfig/ui/specialsettingspage.ui:220
+#: dbaccess/uiconfig/ui/specialsettingspage.ui:290
 msgctxt "specialsettingspage|primarykeys"
 msgid "Supports primary keys"
 msgstr "支持主关键字"
 
+#. SARQc
+#: dbaccess/uiconfig/ui/specialsettingspage.ui:298
+msgctxt "specialsettingspage|extended_tip|primarykeys"
+msgid "Enable to overrule Base's heuristics used to detect whether the database supports primary keys."
+msgstr ""
+
 #. o7mns
-#: dbaccess/uiconfig/ui/specialsettingspage.ui:234
+#: dbaccess/uiconfig/ui/specialsettingspage.ui:309
 msgctxt "specialsettingspage|resulttype"
 msgid "Respect the result set type from the database driver"
 msgstr "尊重数据库驱动的结果集类型"
 
+#. xAeze
+#: dbaccess/uiconfig/ui/specialsettingspage.ui:317
+msgctxt "specialsettingspage|extended_tip|resulttype"
+msgid "Use the database driver different scroll capabilities of a result set."
+msgstr ""
+
 #. RQ7hP
-#: dbaccess/uiconfig/ui/specialsettingspage.ui:257
+#: dbaccess/uiconfig/ui/specialsettingspage.ui:337
 msgctxt "specialsettingspage|comparisonft"
 msgid "Comparison of Boolean values:"
 msgstr "布尔值比较:"
 
 #. MrrnQ
-#: dbaccess/uiconfig/ui/specialsettingspage.ui:272
+#: dbaccess/uiconfig/ui/specialsettingspage.ui:352
 msgctxt "specialsettingspage|comparison"
 msgid "Default"
 msgstr "默认"
 
 #. D7LWx
-#: dbaccess/uiconfig/ui/specialsettingspage.ui:273
+#: dbaccess/uiconfig/ui/specialsettingspage.ui:353
 msgctxt "specialsettingspage|comparison"
 msgid "SQL"
 msgstr "SQL"
 
 #. NzvwB
-#: dbaccess/uiconfig/ui/specialsettingspage.ui:274
+#: dbaccess/uiconfig/ui/specialsettingspage.ui:354
 msgctxt "specialsettingspage|comparison"
 msgid "Mixed"
 msgstr "混合"
 
 #. NhGDH
-#: dbaccess/uiconfig/ui/specialsettingspage.ui:275
+#: dbaccess/uiconfig/ui/specialsettingspage.ui:355
 msgctxt "specialsettingspage|comparison"
 msgid "MS Access"
 msgstr "MS Access"
 
+#. FxEbE
+#: dbaccess/uiconfig/ui/specialsettingspage.ui:359
+msgctxt "specialsettingspage|extended_tip|comparison"
+msgid "Select the type of Boolean comparison that you want to use."
+msgstr ""
+
 #. 3eorZ
-#: dbaccess/uiconfig/ui/specialsettingspage.ui:287
+#: dbaccess/uiconfig/ui/specialsettingspage.ui:372
 msgctxt "specialsettingspage|rowsft"
 msgid "Rows to scan column types:"
 msgstr "扫描列类型的行:"
+
+#. N2emg
+#: dbaccess/uiconfig/ui/specialsettingspage.ui:391
+msgctxt "specialsettingspage|extended_tip|rows"
+msgid "Select the number of rows to let the driver detect the data type."
+msgstr ""
 
 #. Y7PiJ
 #: dbaccess/uiconfig/ui/sqlexception.ui:18
@@ -4777,19 +4927,19 @@ msgid "_Paste"
 msgstr "粘贴(_P)"
 
 #. Ekmvg
-#: dbaccess/uiconfig/ui/tabledesignrowmenu.ui:35
+#: dbaccess/uiconfig/ui/tabledesignrowmenu.ui:36
 msgctxt "tabledesignrowmenu|delete"
 msgid "_Delete"
 msgstr "删除(_D)"
 
 #. PWZ9E
-#: dbaccess/uiconfig/ui/tabledesignrowmenu.ui:42
+#: dbaccess/uiconfig/ui/tabledesignrowmenu.ui:44
 msgctxt "tabledesignrowmenu|insert"
 msgid "Insert Rows"
 msgstr "插入行"
 
 #. 4XEhH
-#: dbaccess/uiconfig/ui/tabledesignrowmenu.ui:55
+#: dbaccess/uiconfig/ui/tabledesignrowmenu.ui:58
 msgctxt "tabledesignrowmenu|primarykey"
 msgid "Primary Key"
 msgstr "主关键字"

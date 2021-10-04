@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2021-09-20 13:02+0200\n"
+"POT-Creation-Date: 2021-10-04 19:51+0200\n"
 "PO-Revision-Date: 2021-04-24 07:37+0000\n"
 "Last-Translator: raal <raal@post.cz>\n"
 "Language-Team: Czech <https://translations.documentfoundation.org/projects/libo_help-master/textscalc01/cs/>\n"
@@ -14939,13 +14939,13 @@ msgctxt ""
 msgid "<ahelp hid=\".\">Converts to euros a currency value expressed in one of the legacy currencies of 19 member states of the European Union, and vice versa.</ahelp> The conversion uses the fixed exchange rates at which the legacy currencies entered the euro."
 msgstr ""
 
-#. 5TXaB
+#. ikuav
 #: 04060106.xhp
 msgctxt ""
 "04060106.xhp\n"
 "par_id581631900947319\n"
 "help.text"
-msgid "We recommend using the more flexible EUROCONVERT function for converting between these currencies."
+msgid "We recommend using the more flexible EUROCONVERT function for converting between these currencies. For converting between many different units of measure, use the CONVERT function."
 msgstr ""
 
 #. ETLYS
@@ -19061,14 +19061,14 @@ msgctxt ""
 msgid "If Type = 0, only exact matches are found. If the search criterion is found more than once, the function returns the index of the first matching value. Only if Type = 0 can you search for regular expressions (if enabled in calculation options) or wildcards (if enabled in calculation options)."
 msgstr "Je-li Typ=0, jsou nalezeny jen přesně odpovídající si hodnoty. Je-li nalezeno kritérium hledání více než jednou, funkce vrátí index první odpovídající hodnoty. Pouze tehdy, pokud je Typ = 0, můžete použít i regulární výrazy nebo zástupné znaky (podle toho, jsou-li povoleny v možnostech výpočtu)."
 
-#. kxGzq
+#. t3Ems
 #: 04060109.xhp
 msgctxt ""
 "04060109.xhp\n"
 "par_id3147528\n"
 "help.text"
-msgid "If Type = 1 or the third parameter is missing, the index of the last value that is smaller or equal to the search criterion is returned. This applies even when the search array is not sorted. For Type = -1, the first value that is larger or equal is returned."
-msgstr "Pokud se Typ=1 nebo třetí parametr chybí, je vrácen index poslední hodnoty, která je menší nebo rovna hledanému kritériu. Toto je použito pouze pokud prohledávané pole není seřazeno. Pro Typ=-1 je vrácena první hodnota, která větší nebo rovna."
+msgid "If Type = 1 or the third parameter is missing, the index of the last value that is smaller or equal to the search criterion is returned. For Type = -1, the first value that is larger or equal is returned."
+msgstr ""
 
 #. eFMjk
 #: 04060109.xhp
@@ -44198,50 +44198,149 @@ msgctxt ""
 msgid "Merge and Center Cells"
 msgstr "Sloučit buňky a zarovnat na střed"
 
-#. d7KhY
+#. yCXuu
+#: 05060000.xhp
+msgctxt ""
+"05060000.xhp\n"
+"bm_id501632012952361\n"
+"help.text"
+msgid "<bookmark_value>toggle merge and center cells</bookmark_value>"
+msgstr ""
+
+#. CQ5ZE
 #: 05060000.xhp
 msgctxt ""
 "05060000.xhp\n"
 "hd_id3149785\n"
 "help.text"
-msgid "<link href=\"text/scalc/01/05060000.xhp\" name=\"Merge and Center Cells\">Merge and Center Cells</link>"
-msgstr "<link href=\"text/scalc/01/05060000.xhp\" name=\"Sloučit buňky a zarovnat na střed\">Sloučit buňky a zarovnat na střed</link>"
+msgid "<variable id=\"togglemergecells\"><link href=\"text/scalc/01/05060000.xhp\" name=\"Merge and Center Cells\">Merge and Center Cells</link></variable>"
+msgstr ""
 
-#. DaWoE
+#. 8qb5f
 #: 05060000.xhp
 msgctxt ""
 "05060000.xhp\n"
 "par_id3151246\n"
 "help.text"
-msgid "<ahelp hid=\".\">Combines the selected cells into a single cell or splits merged cells. Aligns cell content centered.</ahelp>"
-msgstr "<ahelp hid=\".\">Sloučí buňky do jedné, nebo rozdělí již sloučené buňky. Zarovná obsah buňky na střed.</ahelp>"
+msgid "<ahelp hid=\".\">This is a toggleable control that joins all cells in a rectangular selection into a single cell, or returns merged cells to the original individual cells. When merging it will format the merged cell as center aligned.</ahelp>"
+msgstr ""
 
-#. XHEBx
+#. b63oA
+#: 05060000.xhp
+msgctxt ""
+"05060000.xhp\n"
+"par_id541633057818950\n"
+"help.text"
+msgid "The control is shown toggled-on whenever there are merged cells in the selection, indicating that clicking the control will unmerge those cells."
+msgstr ""
+
+#. MiEGm
+#: 05060000.xhp
+msgctxt ""
+"05060000.xhp\n"
+"par_id3153718\n"
+"help.text"
+msgid "Merging cells can lead to calculation errors in formulas in the table."
+msgstr "Sloučení buněk může způsobit chyby výpočtu ve vzorcích v tabulce."
+
+#. fBfnU
+#: 05060000.xhp
+msgctxt ""
+"05060000.xhp\n"
+"par_id441632808439621\n"
+"help.text"
+msgid "Do one of the following:"
+msgstr ""
+
+#. bnEwD
+#: 05060000.xhp
+msgctxt ""
+"05060000.xhp\n"
+"par_id691632803588118\n"
+"help.text"
+msgid "In the <emph>Formatting</emph> toolbar, click:"
+msgstr ""
+
+#. sq4wv
+#: 05060000.xhp
+msgctxt ""
+"05060000.xhp\n"
+"par_id521632804983642\n"
+"help.text"
+msgid "<image id=\"img_id811632804983642\" src=\"cmd/sc_togglemergecells.png\" width=\"0.2228in\" height=\"0.2228in\"><alt id=\"alt_id921632804983642\">Icon</alt>    </image>"
+msgstr ""
+
+#. 86yef
+#: 05060000.xhp
+msgctxt ""
+"05060000.xhp\n"
+"par_id491632804983642\n"
+"help.text"
+msgid "Merge and Center Cells"
+msgstr ""
+
+#. ZRQSQ
 #: 05060000.xhp
 msgctxt ""
 "05060000.xhp\n"
 "par_id3154020\n"
 "help.text"
-msgid "Choose <emph>Format - Merge Cells - Merge and Center Cells</emph>"
-msgstr "Zvolte <emph>Formát - Sloučit buňky - Sloučit buňky a zarovnat na střed</emph>"
+msgid "Or, choose <variable id=\"format_mergecells_menu\"><menuitem>Format - Merge and Unmerge Cells - </menuitem></variable><menuitem> Merge and Center Cells</menuitem>."
+msgstr ""
 
-#. rpUVk
-#: 05060000.xhp
-msgctxt ""
-"05060000.xhp\n"
-"par_id3148552\n"
-"help.text"
-msgid "The merged cell receives the name of the first cell of the original cell range. Merged cells cannot be merged a second time with other cells. The range must form a rectangle, multiple selection is not supported."
-msgstr "Sloučená buňka dostane název první buňky původní oblasti buněk. Sloučené buňky nelze dále slučovat s jinými buňkami. Oblast musí tvořit obdélník nebo čtverec. Funkce nepodporuje výběr několika oddělených oblastí."
-
-#. HQCwU
+#. 8zues
 #: 05060000.xhp
 msgctxt ""
 "05060000.xhp\n"
 "par_id3149665\n"
 "help.text"
-msgid "If the cells to be merged have any contents, a security dialog is shown."
-msgstr "Pokud spojované buňky mají nějaký obsah, zobrazí se varování."
+msgid "Cells cannot be merged again without first unmerging them."
+msgstr ""
+
+#. Dybs6
+#: 05060000.xhp
+msgctxt ""
+"05060000.xhp\n"
+"par_id581632979766784\n"
+"help.text"
+msgid "Merging a cell selection that partially includes merged cells is generally possible with <emph>Unmerge Cells</emph> followed by <emph>Merge Cells</emph>, without altering the initial selection. The result will be largely depend on previous choices when merging cells made with the <emph>Merge Cells Dialog</emph> options described below."
+msgstr ""
+
+#. wNBDD
+#: 05060000.xhp
+msgctxt ""
+"05060000.xhp\n"
+"par_id3148552\n"
+"help.text"
+msgid "Multiple selection is not supported, that is, the selection must be rectangular."
+msgstr ""
+
+#. XB4aH
+#: 05060000.xhp
+msgctxt ""
+"05060000.xhp\n"
+"par_id211632985508898\n"
+"help.text"
+msgid "The merged cell receives the name and content of the first cell of the selection."
+msgstr ""
+
+#. XRBDv
+#: 05060000.xhp
+msgctxt ""
+"05060000.xhp\n"
+"par_id271632985709781\n"
+"help.text"
+msgid "If more than one cell to be merged has content the <emph>Merge Cells</emph> dialog opens."
+msgstr ""
+
+#. QWjJw
+#: 05060000.xhp
+msgctxt ""
+"05060000.xhp\n"
+"par_id391632360383197\n"
+"help.text"
+msgid "Merge Cells Dialog Options"
+msgstr ""
 
 #. LBMEE
 #: 05060000.xhp
@@ -44279,15 +44378,6 @@ msgctxt ""
 msgid "<emph>Empty the contents of the hidden cells</emph>: <ahelp hid=\".\">The contents of the hidden cells are removed; the results of formulas referring to the hidden cells will be updated.</ahelp>"
 msgstr "<emph>Odstranit obsah skrytých buněk</emph>: <ahelp hid=\".\">Obsah skrytých buněk je odstraněn; výsledky vzorců odkazujících na skryté buňky budou aktualizovány.</ahelp>"
 
-#. MiEGm
-#: 05060000.xhp
-msgctxt ""
-"05060000.xhp\n"
-"par_id3153718\n"
-"help.text"
-msgid "Merging cells can lead to calculation errors in formulas in the table."
-msgstr "Sloučení buněk může způsobit chyby výpočtu ve vzorcích v tabulce."
-
 #. b8c8c
 #: 05070000.xhp
 msgctxt ""
@@ -44306,14 +44396,14 @@ msgctxt ""
 msgid "<bookmark_value>style;page</bookmark_value><bookmark_value>page;style</bookmark_value><bookmark_value>format;page</bookmark_value><bookmark_value>formatting;page</bookmark_value>"
 msgstr "<bookmark_value>styl;stránka</bookmark_value><bookmark_value>stránka;styl</bookmark_value><bookmark_value>formát;stránka</bookmark_value><bookmark_value>formátování;stránka</bookmark_value>"
 
-#. YjqDi
+#. Rpt6B
 #: 05070000.xhp
 msgctxt ""
 "05070000.xhp\n"
 "hd_id3157910\n"
 "help.text"
-msgid "Page Style"
-msgstr "Styl stránky"
+msgid "<link href=\"text/scalc/01/05070000.xhp\" name=\"Page Style\">Page Style</link>"
+msgstr ""
 
 #. 4vJrN
 #: 05070000.xhp
@@ -44585,23 +44675,23 @@ msgctxt ""
 msgid "First page number"
 msgstr "Číslo první stránky"
 
-#. zJPaa
+#. oAziQ
 #: 05070500.xhp
 msgctxt ""
 "05070500.xhp\n"
 "par_id3155378\n"
 "help.text"
-msgid "<ahelp hid=\"modules/scalc/ui/sheetprintpage/checkBTN_PAGENO\">Select this option if you want the first page to start with a number other than 1.</ahelp>"
-msgstr "<ahelp hid=\"modules/scalc/ui/sheetprintpage/checkBTN_PAGENO\">Zaškrtněte, pokud chcete aby první stránka začínala jiným číslem než 1.</ahelp>"
+msgid "<ahelp hid=\"modules/scalc/ui/sheetprintpage/checkBTN_PAGENO\">Select this option if you want this style to restart page numbering.</ahelp>"
+msgstr ""
 
-#. AG8hs
+#. gVwLk
 #: 05070500.xhp
 msgctxt ""
 "05070500.xhp\n"
 "par_id3145389\n"
 "help.text"
-msgid "<ahelp hid=\"modules/scalc/ui/sheetprintpage/spinED_PAGENO\">Enter the number of the first page.</ahelp>"
-msgstr "<ahelp hid=\"modules/scalc/ui/sheetprintpage/spinED_PAGENO\">Zadejte číslo první strany.</ahelp>"
+msgid "<ahelp hid=\"modules/scalc/ui/sheetprintpage/spinED_PAGENO\">Enter the number you want to restart at.</ahelp>"
+msgstr ""
 
 #. V6Y9R
 #: 05070500.xhp
@@ -44909,14 +44999,14 @@ msgctxt ""
 msgid "Edit Print Ranges"
 msgstr "Upravit oblasti tisku"
 
-#. QueLv
+#. JfwDe
 #: 05080300.xhp
 msgctxt ""
 "05080300.xhp\n"
 "par_id3159488\n"
 "help.text"
-msgid "<variable id=\"druckbereichetext\"><ahelp hid=\".uno:EditPrintArea\">Opens a dialog where you can specify the print range.</ahelp></variable> You can also set the rows or columns which are to be repeated in every page."
-msgstr "<variable id=\"druckbereichetext\"><ahelp hid=\".uno:EditPrintArea\">Otevře dialog, kde je možné určit oblast tisku.</ahelp></variable> Možné je také určit řádky nebo sloupce, které se mají opakovat na každé stránce."
+msgid "<variable id=\"printrangestext\"><ahelp hid=\".uno:EditPrintArea\">Opens a dialog where you can specify the print range.</ahelp></variable> You can also set the rows or columns which are to be repeated in every page."
+msgstr ""
 
 #. eja4j
 #: 05080300.xhp
@@ -45367,78 +45457,6 @@ msgctxt ""
 "help.text"
 msgid "<ahelp hid=\"SFX2_HID_TEMPLATE_FILTER\">Lists the available style groups.</ahelp>"
 msgstr "<ahelp hid=\"SFX2_HID_TEMPLATE_FILTER\">Vypíše dostupné skupiny stylů.</ahelp>"
-
-#. Gmpzb
-#: 05100100.xhp
-msgctxt ""
-"05100100.xhp\n"
-"tit\n"
-"help.text"
-msgid "Merge Cells"
-msgstr "Sloučit buňky"
-
-#. 4JtKL
-#: 05100100.xhp
-msgctxt ""
-"05100100.xhp\n"
-"hd_id3154765\n"
-"help.text"
-msgid "Merge Cells"
-msgstr "Sloučit buňky"
-
-#. BHmTE
-#: 05100100.xhp
-msgctxt ""
-"05100100.xhp\n"
-"par_id3147406\n"
-"help.text"
-msgid "<ahelp hid=\".\">Combines the contents of the selected cells into a single cell.</ahelp>"
-msgstr "<ahelp hid=\".\">Sloučí obsah vybraných buněk do jedné buňky.</ahelp>"
-
-#. AP2s7
-#: 05100100.xhp
-msgctxt ""
-"05100100.xhp\n"
-"par_id3154351\n"
-"help.text"
-msgid "Choose <emph>Format - Merge Cells - Merge Cells</emph>"
-msgstr "Zvolte <emph>Formát - Sloučit buňky - Sloučit buňky</emph>"
-
-#. pfYCj
-#: 05100200.xhp
-msgctxt ""
-"05100200.xhp\n"
-"tit\n"
-"help.text"
-msgid "Split Cells"
-msgstr "Rozdělit buňky"
-
-#. ZTsK9
-#: 05100200.xhp
-msgctxt ""
-"05100200.xhp\n"
-"hd_id3154654\n"
-"help.text"
-msgid "Split Cells"
-msgstr "Rozdělit buňky"
-
-#. omMdA
-#: 05100200.xhp
-msgctxt ""
-"05100200.xhp\n"
-"par_id3083451\n"
-"help.text"
-msgid "<ahelp hid=\".\">Splits previously merged cells.</ahelp>"
-msgstr "<ahelp hid=\".\">Rozdělí dříve sloučené buňky.</ahelp>"
-
-#. ic7Vk
-#: 05100200.xhp
-msgctxt ""
-"05100200.xhp\n"
-"par_id3154023\n"
-"help.text"
-msgid "Choose <emph>Format - Merge Cells - Split Cells</emph>"
-msgstr "Zvolte <emph>Fomát - Sloučit buňky - Rozdělit buňky</emph>"
 
 #. MiWuG
 #: 05110000.xhp
@@ -48689,23 +48707,23 @@ msgctxt ""
 msgid "<ahelp hid=\"modules/scalc/ui/sortoptionspage/leftright\"> Sorts columns by the values in the active rows of the selected range.</ahelp>"
 msgstr "<ahelp hid=\"modules/scalc/ui/sortoptionspage/leftright\">Seřadí sloupce podle hodnot v aktivních řádcích vybrané oblasti.</ahelp>"
 
-#. a8dw2
+#. MzEHk
 #: 12040000.xhp
 msgctxt ""
 "12040000.xhp\n"
 "tit\n"
 "help.text"
-msgid "Filter"
-msgstr "Filtr"
+msgid "More Filters"
+msgstr ""
 
-#. A3xBE
+#. EtYTd
 #: 12040000.xhp
 msgctxt ""
 "12040000.xhp\n"
 "hd_id3150767\n"
 "help.text"
-msgid "<link href=\"text/scalc/01/12040000.xhp\" name=\"Filter\">Filters</link>"
-msgstr "<link href=\"text/scalc/01/12040000.xhp\" name=\"Filtry\">Filtry</link>"
+msgid "<link href=\"text/scalc/01/12040000.xhp\" name=\"Filter\">More Filters</link>"
+msgstr ""
 
 #. PgpNB
 #: 12040000.xhp
@@ -48716,14 +48734,14 @@ msgctxt ""
 msgid "<ahelp hid=\".\">Shows commands to filter your data.</ahelp>"
 msgstr "<ahelp hid=\".\">Obsahuje příkazy pro filtrování dat.</ahelp>"
 
-#. ipXuZ
+#. nGCni
 #: 12040000.xhp
 msgctxt ""
 "12040000.xhp\n"
-"par_id3146119\n"
+"par_id911633127394220\n"
 "help.text"
-msgid "$[officename] automatically recognizes predefined database ranges."
-msgstr "$[officename] automaticky rozeznává přednastavené databázové oblasti."
+msgid "%PRODUCTNAME automatically recognizes predefined database ranges."
+msgstr ""
 
 #. 7khnq
 #: 12040000.xhp
@@ -67184,14 +67202,14 @@ msgctxt ""
 msgid "Live Data Stream"
 msgstr "Živé datové proudy"
 
-#. iithi
+#. GvEyi
 #: live_data_stream.xhp
 msgctxt ""
 "live_data_stream.xhp\n"
 "bm_id240920171018528200\n"
 "help.text"
-msgid "<bookmark_value>Data Stream;Live data stream</bookmark_value>"
-msgstr "<bookmark_value>Datový proud;Živý datový proud</bookmark_value>"
+msgid "<bookmark_value>Data Stream;Live data stream</bookmark_value>    <bookmark_value>Data Stream;Streams</bookmark_value>"
+msgstr ""
 
 #. bn3r4
 #: live_data_stream.xhp
@@ -67202,32 +67220,32 @@ msgctxt ""
 msgid "<link href=\"text/scalc/01/live_data_stream.xhp\">Live Data Stream</link>"
 msgstr "<link href=\"text/scalc/01/live_data_stream.xhp\">Živý datový proud</link>"
 
-#. mND9J
+#. mB9BH
 #: live_data_stream.xhp
 msgctxt ""
 "live_data_stream.xhp\n"
 "par_id240920171003293400\n"
 "help.text"
-msgid "<ahelp hid=\".\">Live data stream for spreadsheets</ahelp>"
-msgstr "<ahelp hid=\".\">Datový proud pro tabulky</ahelp>"
+msgid "<ahelp hid=\".\"><variable id=\"streams_desc\">Create live data streams for spreadsheets.</variable></ahelp>"
+msgstr ""
 
-#. DBAjA
+#. Zsu3z
 #: live_data_stream.xhp
 msgctxt ""
 "live_data_stream.xhp\n"
 "par_id240920171007389295\n"
 "help.text"
-msgid "Menu <item type=\"menuitem\">Data – Streams...</item>"
-msgstr "Menu <item type=\"menuitem\">Data – Proudy...</item>"
+msgid "Menu <menuitem>Data – Streams...</menuitem>"
+msgstr ""
 
-#. FYDzo
+#. JT47J
 #: live_data_stream.xhp
 msgctxt ""
 "live_data_stream.xhp\n"
-"par_id240920171007419799\n"
+"par_id921633126951835\n"
 "help.text"
-msgid "Data streams"
-msgstr "Datové proudy"
+msgid "This is an experimental feature and is disabled by default. To enable it, go to <menuitem>Tools - Options - Advanced</menuitem>  and check the option <emph>Enable experimental features (may be unstable)</emph>."
+msgstr ""
 
 #. k7H5Y
 #: solver.xhp
