@@ -1,16 +1,16 @@
 #. extracted from helpcontent2/source/text/sbasic/guide
 msgid ""
 msgstr ""
-"Project-Id-Version: LibreOffice 6.4\n"
+"Project-Id-Version: LibreOffice 7.3\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2019-11-11 21:27+0100\n"
-"PO-Revision-Date: 2019-11-07 22:36+0200\n"
+"POT-Creation-Date: 2021-10-15 12:35+0200\n"
+"PO-Revision-Date: 2021-10-18 21:57+0200\n"
 "Last-Translator: Martin Srebotnjak <miles@filmsi.net>\n"
 "Language-Team: sl.libreoffice.org\n"
+"Language: sl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: sl\n"
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n%100==4 ? 2 : 3);\n"
 "X-Generator: Virtaal 0.7.1\n"
 "X-Accelerator-Marker: ~\n"
@@ -609,6 +609,350 @@ msgctxt ""
 msgid "<variable id=\"basicexamplestit\"><link href=\"text/sbasic/guide/basic_examples.xhp\" name=\"Basic Programming Examples\">Basic Programming Examples</link></variable>"
 msgstr "<variable id=\"basicexamplestit\"><link href=\"text/sbasic/guide/basic_examples.xhp\"  name=\"Primeri programiranja v Basicu\">Primeri programiranja v Basicu</link></variable>"
 
+#: calc_borders.xhp
+msgctxt ""
+"calc_borders.xhp\n"
+"tit\n"
+"help.text"
+msgid "Formatting Borders in Calc with Macros"
+msgstr "Oblikovanje obrob v modulu Calc z makri"
+
+#: calc_borders.xhp
+msgctxt ""
+"calc_borders.xhp\n"
+"hd_id461623364876507\n"
+"help.text"
+msgid "<variable id=\"title\"><link href=\"text/sbasic/guide/calc_borders.xhp\" name=\"Calc_Borders_h1\">Formatting Borders in Calc with Macros</link></variable>"
+msgstr "<variable id=\"title\"><link href=\"text/sbasic/guide/calc_borders.xhp\" name=\"Oblikovanje obrob v modulu Calc z makri\">Oblikovanje obrob v modulu Calc z makri</link></variable>"
+
+#: calc_borders.xhp
+msgctxt ""
+"calc_borders.xhp\n"
+"par_id461630536347127\n"
+"help.text"
+msgid "By using Basic or Python programming languages it is possible to write macros that apply formats to ranges of cells in Calc."
+msgstr "Z uporabo programskih jezikov Basic in Python lahko napišemo makre, ki obsegom celic v modulu Calc določijo oblikovanje."
+
+#: calc_borders.xhp
+msgctxt ""
+"calc_borders.xhp\n"
+"hd_id81630536486560\n"
+"help.text"
+msgid "Formatting Borders in Ranges of Cells"
+msgstr "Oblikovanje obrob v obsegih celic"
+
+#: calc_borders.xhp
+msgctxt ""
+"calc_borders.xhp\n"
+"par_id871630536518700\n"
+"help.text"
+msgid "The code snippet below creates a <literal>Sub</literal> called <literal>FormatCellBorder</literal> that applies new border formats to a given range address in the current Calc sheet."
+msgstr "Spodnji odlomek kode ustvari podprogram <literal>Sub</literal> imenovano <literal>FormatCellBorder</literal>, ki uveljavi novo obliko obrob obsegu celic z danim naslovom na trenutno dejavnem delovnem listu v modulu Calc."
+
+#: calc_borders.xhp
+msgctxt ""
+"calc_borders.xhp\n"
+"bas_id131630537785605\n"
+"help.text"
+msgid "' Creates the UNO struct that will store the new line format"
+msgstr "' Ustvari strukturo UNO, ki bo hranila novo obliko črt"
+
+#: calc_borders.xhp
+msgctxt ""
+"calc_borders.xhp\n"
+"bas_id971630537786724\n"
+"help.text"
+msgid "' Gets the target cell"
+msgstr "' Pridobi ciljno celico"
+
+#: calc_borders.xhp
+msgctxt ""
+"calc_borders.xhp\n"
+"bas_id791630537787373\n"
+"help.text"
+msgid "' Applies the new format to all borders"
+msgstr "' Uveljavi novo oblikovanje na vseh obrobah"
+
+#: calc_borders.xhp
+msgctxt ""
+"calc_borders.xhp\n"
+"par_id141630537941393\n"
+"help.text"
+msgid "The <literal>Sub</literal> described above takes in four arguments:"
+msgstr "Zgoraj opisani <literal>Sub</literal> kličemo s štirimi argumenti:"
+
+#: calc_borders.xhp
+msgctxt ""
+"calc_borders.xhp\n"
+"par_id841630538209958\n"
+"help.text"
+msgid "<emph>cellAddress</emph> is a string denoting the range to be formatted in the format \"A1\"."
+msgstr "<emph>cellAddress</emph> je niz, ki označuje obseg, ki bo oblikovan v obliki \"A1\"."
+
+#: calc_borders.xhp
+msgctxt ""
+"calc_borders.xhp\n"
+"par_id821630538210271\n"
+"help.text"
+msgid "<emph>newStyle</emph> is an integer value that corresponds to the border line style (see <link href=\"text/sbasic/guide/calc_borders.xhp#LineStyles_h2\" name=\"LineStyles_link\">Line Styles</link> below)."
+msgstr "<emph>newStyle</emph> je celoštevilska vrednost, ki ustreza slogu črte obrobe (glejte <link href=\"text/sbasic/guide/calc_borders.xhp#LineStyles_h2\" name=\"Slogi črt\">Slogi črt</link> spodaj)."
+
+#: calc_borders.xhp
+msgctxt ""
+"calc_borders.xhp\n"
+"par_id191630538210607\n"
+"help.text"
+msgid "<emph>newWidth</emph> is an integer value that defines the line width."
+msgstr "<emph>newWidth</emph> je celoštevilska vrednosti, ki določa širino črte."
+
+#: calc_borders.xhp
+msgctxt ""
+"calc_borders.xhp\n"
+"par_id71630538211142\n"
+"help.text"
+msgid "<emph>newColor</emph> is an integer value corresponding to a color defined using the <link href=\"text/sbasic/shared/03010305.xhp\" name=\"RGB_link\">RGB</link> function."
+msgstr "<emph>newColor</emph> je celoštevilska vrednost, ki ustreza barvi, določeni s funkcijo <link href=\"text/sbasic/shared/03010305.xhp\" name=\"Funkcija RGB\">RGB</link>."
+
+#: calc_borders.xhp
+msgctxt ""
+"calc_borders.xhp\n"
+"par_id201630538522838\n"
+"help.text"
+msgid "To call <literal>FormatCellBorder</literal> create a new macro and pass the desired arguments, as shown below:"
+msgstr "Za klic <literal>FormatCellBorder</literal> ustvarite nov makro in podajte želene argumente, kot je prikazano spodaj:"
+
+#: calc_borders.xhp
+msgctxt ""
+"calc_borders.xhp\n"
+"bas_id651630603779228\n"
+"help.text"
+msgid "' Gives access to the line style constants"
+msgstr "' Omogoča dostop do konstant sloga črt"
+
+#: calc_borders.xhp
+msgctxt ""
+"calc_borders.xhp\n"
+"bas_id321630538931144\n"
+"help.text"
+msgid "' Formats \"B5\" with solid blue borders"
+msgstr "' Oblikuje \"B5\" s polno modro obrobo"
+
+#: calc_borders.xhp
+msgctxt ""
+"calc_borders.xhp\n"
+"bas_id91630538931686\n"
+"help.text"
+msgid "' Formats all borders in the range \"D2:F6\" with red dotted borders"
+msgstr "' Oblikuje vse obrobe obsega \"D2:F6\" kot rdečo pikasto obrobo"
+
+#: calc_borders.xhp
+msgctxt ""
+"calc_borders.xhp\n"
+"par_id31630540159114\n"
+"help.text"
+msgid "It is possible to implement the same functionality in Python:"
+msgstr "Isto funkcionalnost lahko implementiramo s Pythonom:"
+
+#: calc_borders.xhp
+msgctxt ""
+"calc_borders.xhp\n"
+"pyc_id411630540777672\n"
+"help.text"
+msgid "# Defines the new line format"
+msgstr "# Določa novo obliko črt"
+
+#: calc_borders.xhp
+msgctxt ""
+"calc_borders.xhp\n"
+"pyc_id361630540778786\n"
+"help.text"
+msgid "# Scriptforge service to access cell ranges"
+msgstr "# Storitev Scriptforge za dostop do obsegov celic"
+
+#: calc_borders.xhp
+msgctxt ""
+"calc_borders.xhp\n"
+"par_id931630541661889\n"
+"help.text"
+msgid "The code snippet below implements a macro named <literal>myMacro</literal> that calls <literal>formatCellBorder</literal>:"
+msgstr "Spodnji odlomek kode implementira makro, poimenovan <literal>myMacro</literal>, ki kliče <literal>formatCellBorder</literal>:"
+
+#: calc_borders.xhp
+msgctxt ""
+"calc_borders.xhp\n"
+"par_id261630541889040\n"
+"help.text"
+msgid "The Python code presented above uses the <link href=\"text/sbasic/shared/03/lib_ScriptForge.xhp\" name=\"SF_link\">ScriptForge library</link> that is available since %PRODUCTNAME 7.2."
+msgstr "Zgoraj prikazana koda Python uporablja <link href=\"text/sbasic/shared/03/lib_ScriptForge.xhp\" name=\"Knjižnica ScriptForge\">knjižnico ScriptForge</link>, ki je na voljo od %PRODUCTNAME 7.2 naprej."
+
+#: calc_borders.xhp
+msgctxt ""
+"calc_borders.xhp\n"
+"hd_id361630539136798\n"
+"help.text"
+msgid "Line Styles"
+msgstr "Slogi črt"
+
+#: calc_borders.xhp
+msgctxt ""
+"calc_borders.xhp\n"
+"par_id501630539147234\n"
+"help.text"
+msgid "Line styles are defined as integer constants. The table below lists the constants for the line styles available in <menuitem>Format - Cells - Borders</menuitem>:"
+msgstr "Slogi črt so definirani kot celoštevilske konstante. Spodnja tabela prikazuje konstante slogov črt, ki so na voljo v <menuitem>Oblika – Celice – Obrobe</menuitem>:"
+
+#: calc_borders.xhp
+msgctxt ""
+"calc_borders.xhp\n"
+"par_id651630604006712\n"
+"help.text"
+msgid "Constant name"
+msgstr "Ime konstante"
+
+#: calc_borders.xhp
+msgctxt ""
+"calc_borders.xhp\n"
+"par_id501630539273987\n"
+"help.text"
+msgid "Integer value"
+msgstr "Celoštevilska vrednost"
+
+#: calc_borders.xhp
+msgctxt ""
+"calc_borders.xhp\n"
+"par_id191630539273987\n"
+"help.text"
+msgid "Line style name"
+msgstr "Ime sloga črte"
+
+#: calc_borders.xhp
+msgctxt ""
+"calc_borders.xhp\n"
+"par_id691630539273987\n"
+"help.text"
+msgid "Solid"
+msgstr "Polno"
+
+#: calc_borders.xhp
+msgctxt ""
+"calc_borders.xhp\n"
+"par_id591630539325162\n"
+"help.text"
+msgid "Dotted"
+msgstr "Pikasto"
+
+#: calc_borders.xhp
+msgctxt ""
+"calc_borders.xhp\n"
+"par_id881630539433260\n"
+"help.text"
+msgid "Dashed"
+msgstr "Črtkano"
+
+#: calc_borders.xhp
+msgctxt ""
+"calc_borders.xhp\n"
+"par_id111630539463634\n"
+"help.text"
+msgid "Fine dashed"
+msgstr "Fino črtkano"
+
+#: calc_borders.xhp
+msgctxt ""
+"calc_borders.xhp\n"
+"par_id261630539471483\n"
+"help.text"
+msgid "Double thin"
+msgstr "Dvojna tanka"
+
+#: calc_borders.xhp
+msgctxt ""
+"calc_borders.xhp\n"
+"par_id671630539478101\n"
+"help.text"
+msgid "Dash dot"
+msgstr "Črta, pika"
+
+#: calc_borders.xhp
+msgctxt ""
+"calc_borders.xhp\n"
+"par_id701630539484498\n"
+"help.text"
+msgid "Dash dot dot"
+msgstr "Črta, pika, pika"
+
+#: calc_borders.xhp
+msgctxt ""
+"calc_borders.xhp\n"
+"par_id751630539680866\n"
+"help.text"
+msgid "Refer to the <link href=\"https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1table_1_1BorderLineStyle.html\" name=\"BorderLineStyle_link\">BorderLineStyle Constant Reference</link> in the LibreOffice API documentation to learn more about line style constants."
+msgstr "Glejte <link href=\"https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1table_1_1BorderLineStyle.html\" name=\"Konstante BorderLineStyle\">razlago konstant BorderLineStyle</link> (v angl.) v dokumentaciji API-ja LibreOffice, da izveste več o konstantah sloga črt."
+
+#: calc_borders.xhp
+msgctxt ""
+"calc_borders.xhp\n"
+"hd_id31630542361666\n"
+"help.text"
+msgid "Formatting Borders Using TableBorder2"
+msgstr "Oblikovanje obrob z makrom TableBorder2"
+
+#: calc_borders.xhp
+msgctxt ""
+"calc_borders.xhp\n"
+"par_id11630542436346\n"
+"help.text"
+msgid "Range objects have a property named <literal>TableBorder2</literal> that can be used to format range borders as it is done in the <menuitem>Format - Cells - Borders</menuitem> dialog in the <emph>Line Arrangement</emph> section."
+msgstr "Predmeti obsega imajo lastnost <literal>TableBorder2</literal>, ki jo lahko uporabimo za oblikovanje obrob obsega, kot je to v pogovornem oknu <menuitem>Oblika – Celice – Obrobe</menuitem> v razdelku <emph>Razporeditev črt</emph>."
+
+#: calc_borders.xhp
+msgctxt ""
+"calc_borders.xhp\n"
+"par_id641630542724480\n"
+"help.text"
+msgid "In addition to top, bottom, left and right borders, <literal>TableBorder2</literal> also defines vertical and horizontal borders. The macro below applies only the top and bottom borders to the range \"B2:E5\"."
+msgstr "Poleg zgornje, spodnje, leve in desne obrobe definira <literal>TableBorder2</literal> tudi navpične in vodoravne obrobe. Spodnji makro uveljavi le zgornje in spodnje obrobe v obsegu \"B2:E5\"."
+
+#: calc_borders.xhp
+msgctxt ""
+"calc_borders.xhp\n"
+"bas_id191630543332073\n"
+"help.text"
+msgid "' Defines the new line format"
+msgstr "' Določa novo obliko črt"
+
+#: calc_borders.xhp
+msgctxt ""
+"calc_borders.xhp\n"
+"bas_id281630543333061\n"
+"help.text"
+msgid "' Struct that stores the new TableBorder2 definition"
+msgstr "' Struktura, ki hrani novo definicijo TableBorder2"
+
+#: calc_borders.xhp
+msgctxt ""
+"calc_borders.xhp\n"
+"bas_id11630543334395\n"
+"help.text"
+msgid "' Applies the table format to the range \"B2:E5\""
+msgstr "' Uveljavi obliko tabele na obsegu celic \"B2:E5\""
+
+#: calc_borders.xhp
+msgctxt ""
+"calc_borders.xhp\n"
+"par_id401630544066231\n"
+"help.text"
+msgid "The macro can be implemented in Python as follows:"
+msgstr "Makro lahko implementiramo v Pythonu na sledeč način:"
+
+#: calc_borders.xhp
+msgctxt ""
+"calc_borders.xhp\n"
+"par_id751630539680102\n"
+"help.text"
+msgid "Refer to the <link href=\"https://api.libreoffice.org/docs/idl/ref/structcom_1_1sun_1_1star_1_1table_1_1TableBorder2.html\" name=\"BorderLineStyle_link\">TableBorder2 Struct Reference</link> in the LibreOffice API documentation to learn more about its attributes."
+msgstr "Glejte <link href=\"https://api.libreoffice.org/docs/idl/ref/structcom_1_1sun_1_1star_1_1table_1_1TableBorder2.html\" name=\"BorderLineStyle_link\">razlago strukture TableBorder2</link> (v angl.) v dokumentaciji API-ja LibreOffice, da izveste več o njenih atributih."
+
 #: control_properties.xhp
 msgctxt ""
 "control_properties.xhp\n"
@@ -768,6 +1112,310 @@ msgctxt ""
 "help.text"
 msgid "On the dialog, drag the button to the size you want."
 msgstr "V pogovorno okno povlecite gumb do velikosti, ki jo želite."
+
+#: read_write_values.xhp
+msgctxt ""
+"read_write_values.xhp\n"
+"tit\n"
+"help.text"
+msgid "Reading and Writing values to Ranges"
+msgstr "Branje in pisanje vrednosti v obsegih"
+
+#: read_write_values.xhp
+msgctxt ""
+"read_write_values.xhp\n"
+"hd_id461623364876507\n"
+"help.text"
+msgid "<variable id=\"title\"><link href=\"text/sbasic/guide/read_write_values.xhp\" name=\"ReadWriteValues_h1\">Reading and Writing values to Ranges</link></variable>"
+msgstr "<variable id=\"title\"><link href=\"text/sbasic/guide/read_write_values.xhp\" name=\"Branje in pisanje vrednosti v obsegih\">Branje in pisanje vrednosti v obsegih</link></variable>"
+
+#: read_write_values.xhp
+msgctxt ""
+"read_write_values.xhp\n"
+"par_id781633210592228\n"
+"help.text"
+msgid "Macros in %PRODUCTNAME Calc often need to read and write values from/to sheets. This help page describes the various approaches to accessing sheets and ranges to read or write their values."
+msgstr "Makri v %PRODUCTNAME Calc morajo pogosto brati in pisati vrednosti iz/v delovne liste. Ta stran pomoči opisuje različne pristope za dostop do delovnih listov in obsegov, da lahko beremo in zapisujemo njihove vrednosti."
+
+#: read_write_values.xhp
+msgctxt ""
+"read_write_values.xhp\n"
+"par_id191633214565965\n"
+"help.text"
+msgid "All examples presented in this page can be implemented both in Basic and Python."
+msgstr "Vse na tej strani predstavljene primere lahko implementirate v Basicu in Pythonu."
+
+#: read_write_values.xhp
+msgctxt ""
+"read_write_values.xhp\n"
+"hd_id331633213558740\n"
+"help.text"
+msgid "Accessing a Single Cell"
+msgstr "Dostopanje do posamezne celice"
+
+#: read_write_values.xhp
+msgctxt ""
+"read_write_values.xhp\n"
+"par_id731633213581386\n"
+"help.text"
+msgid "The example below enters the numeric value 123 into cell \"A1\" of the current sheet."
+msgstr "Spodnji primer vnese številsko vrednost 123 v celico »A1« na trenutnem delovnem listu."
+
+#: read_write_values.xhp
+msgctxt ""
+"read_write_values.xhp\n"
+"par_id131633213887433\n"
+"help.text"
+msgid "The same can be accomplished with Python:"
+msgstr "Isto lahko dosežemo v Pythonu:"
+
+#: read_write_values.xhp
+msgctxt ""
+"read_write_values.xhp\n"
+"par_id861633214219511\n"
+"help.text"
+msgid "Note that in the previous examples the cell is accessed using its range name \"A1\". It is also possible to access cells using indices as though the sheet were a matrix where columns and rows are indexed starting from zero."
+msgstr "Upoštevajte, da v prejšnjih primerih dostop do celice poteka z imenom obsega »A1«. Prav tako je do celic možno dostopati z uporabi indeksov, kot da je delovni list matrika, kjer so stolpci in vrstice indeksirani od nič naprej."
+
+#: read_write_values.xhp
+msgctxt ""
+"read_write_values.xhp\n"
+"par_id161633214461067\n"
+"help.text"
+msgid "This can be done using the <literal>getCellByPosition(colIndex, rowIndex)</literal> method, that takes in a column and a row index. The example below in Basic changes the text value in cell \"C1\" (column 2, row 0)."
+msgstr "To lahko opravimo z metodo <literal>getCellByPosition(colIndex, rowIndex)</literal>, ki vzame za argument indeks stolpca in vrstice. Spodnji primer v Basicu spremeni besedilno vrednost v celici »C1« (stolpec 2, vrstica 0)."
+
+#: read_write_values.xhp
+msgctxt ""
+"read_write_values.xhp\n"
+"par_id221633214713436\n"
+"help.text"
+msgid "This example can also be implemented in Python as follows:"
+msgstr "Ta primer lahko implementiramo tudi v Pythonu na sledeč način:"
+
+#: read_write_values.xhp
+msgctxt ""
+"read_write_values.xhp\n"
+"par_id101633215142970\n"
+"help.text"
+msgid "The main difference between Python and Basic scripts lies on how to get access to the sheet object by using the <literal>XSCRIPTCONTEXT</literal> context variable. After that, all methods and properties are identical in Basic and Python."
+msgstr "Glavna razlika med skripti Python in Basic je v načinu dostopa do predmeta delovnega lista z uporabo kontekstne spremenljivke <literal>XSCRIPTCONTEXT</literal>. Zatem so vse metode in lastnosti v Basicu in Pythonu identične."
+
+#: read_write_values.xhp
+msgctxt ""
+"read_write_values.xhp\n"
+"hd_id411633215666257\n"
+"help.text"
+msgid "Values, Strings and Formulas"
+msgstr "Vrednosti, nizi in formule"
+
+#: read_write_values.xhp
+msgctxt ""
+"read_write_values.xhp\n"
+"par_id861633215682610\n"
+"help.text"
+msgid "Calc cells can have three types of values: numeric, strings and formulas. Each type has its own set and get methods:"
+msgstr "Celice v preglednicah Calc imajo lahko tri vrste vrednosti: številske, nize in formule. Vsaka teh vrst ima lastni metodi set in get:"
+
+#: read_write_values.xhp
+msgctxt ""
+"read_write_values.xhp\n"
+"par_id191633215791905\n"
+"help.text"
+msgid "Type"
+msgstr "Vrsta"
+
+#: read_write_values.xhp
+msgctxt ""
+"read_write_values.xhp\n"
+"par_id181633215791905\n"
+"help.text"
+msgid "Numeric"
+msgstr "Številska"
+
+#: read_write_values.xhp
+msgctxt ""
+"read_write_values.xhp\n"
+"par_id961633215932180\n"
+"help.text"
+msgid "Text"
+msgstr "Besedilo"
+
+#: read_write_values.xhp
+msgctxt ""
+"read_write_values.xhp\n"
+"par_id651633215984116\n"
+"help.text"
+msgid "Formula"
+msgstr "Formula"
+
+#: read_write_values.xhp
+msgctxt ""
+"read_write_values.xhp\n"
+"par_id21633215845395\n"
+"help.text"
+msgid "Dates and currency values are considered as numeric values in Calc."
+msgstr "Datumske in valutne vrednosti v programu Calc štejejo za številske."
+
+#: read_write_values.xhp
+msgctxt ""
+"read_write_values.xhp\n"
+"par_id221633216111353\n"
+"help.text"
+msgid "The following example enters numeric values into cells \"A1\" and \"A2\" and inserts a formula in cell \"A3\" that returns the multiplication of these values."
+msgstr "Naslednji primer vnese številski vrednosti v celici »A1« in »A2« ter formulo v celico »A3«, ki vrne zmnožek prvih vrednosti."
+
+#: read_write_values.xhp
+msgctxt ""
+"read_write_values.xhp\n"
+"hd_id321633216630043\n"
+"help.text"
+msgid "Accessing Ranges in Different Sheets"
+msgstr "Dostopanje do obsegov na različnih delovnih listih"
+
+#: read_write_values.xhp
+msgctxt ""
+"read_write_values.xhp\n"
+"par_id371633216672570\n"
+"help.text"
+msgid "The previous examples used only the active sheet to perform operations. It is possible to access cell ranges in different sheets by their indices or names."
+msgstr "Prejšnji primeri so za izvajanje operacij uporabljali le dejavni delovni list. Do obsegov celic lahko dostopate tudi na različnih delovnih listih, tako da uporabite njihove indekse ali imena."
+
+#: read_write_values.xhp
+msgctxt ""
+"read_write_values.xhp\n"
+"par_id861633216843382\n"
+"help.text"
+msgid "The example below enters a numeric value into cell \"A1\" of the sheet named \"Sheet2\"."
+msgstr "Spodnji primer vnese številsko vrednost v celico »A1« na delovnem listu z imenom »Sheet2«."
+
+#: read_write_values.xhp
+msgctxt ""
+"read_write_values.xhp\n"
+"par_id611633217090743\n"
+"help.text"
+msgid "This example can also be implemented in Python as follows:"
+msgstr "Makro lahko implementiramo v tudi Pythonu na sledeč način:"
+
+#: read_write_values.xhp
+msgctxt ""
+"read_write_values.xhp\n"
+"par_id631633217279518\n"
+"help.text"
+msgid "Sheets can also be accessed using zero-based indices indicating which sheet considering the order they appear in the Calc file."
+msgstr "Do delovnih listov lahko dostopamo tudi z indeksi na osnovi nič, ki nakazujejo, za kateri delovni list po vrsti glede na zaporedje v datoteki Calc gre."
+
+#: read_write_values.xhp
+msgctxt ""
+"read_write_values.xhp\n"
+"par_id291633264880172\n"
+"help.text"
+msgid "In Basic, instead of using the <literal>getByName</literal> method, use <literal>Sheets(sheetIndex)</literal> as shown next:"
+msgstr "V Basicu namesto uporabe metode <literal>getByName</literal> uporabite <literal>Sheets(indeksDelovnegaLista)</literal>, kot je prikazano v nadaljevanju:"
+
+#: read_write_values.xhp
+msgctxt ""
+"read_write_values.xhp\n"
+"par_id891633265000047\n"
+"help.text"
+msgid "This can be done in a similar fashion in Python:"
+msgstr "To lahko opravimo na podoben način v Pythonu:"
+
+#: read_write_values.xhp
+msgctxt ""
+"read_write_values.xhp\n"
+"hd_id451633265241066\n"
+"help.text"
+msgid "Using the ScriptForge Library"
+msgstr "Z uporabo knjižnice ScriptForge"
+
+#: read_write_values.xhp
+msgctxt ""
+"read_write_values.xhp\n"
+"par_id731633265268585\n"
+"help.text"
+msgid "The Calc service of the ScriptForge library can be used to get and set cell values as follows:"
+msgstr "Storitev Calc knjižnice ScriptForge lahko uporabimo za pridobivanje (get) in določanje (set) vrednosti celic na sledeč način:"
+
+#: read_write_values.xhp
+msgctxt ""
+"read_write_values.xhp\n"
+"par_id551633265526538\n"
+"help.text"
+msgid "' Loads the ScriptForge library"
+msgstr "' Naloži knjižnico ScriptForge"
+
+#: read_write_values.xhp
+msgctxt ""
+"read_write_values.xhp\n"
+"par_id581633265527001\n"
+"help.text"
+msgid "' Gets access to the current Calc document"
+msgstr "' Pridobi dostop do trenutnega dokumenta Calc"
+
+#: read_write_values.xhp
+msgctxt ""
+"read_write_values.xhp\n"
+"par_id751633265527427\n"
+"help.text"
+msgid "' Sets the value of cells A1 and A2"
+msgstr "' Določi vrednost celic A1 in A2"
+
+#: read_write_values.xhp
+msgctxt ""
+"read_write_values.xhp\n"
+"par_id781633267324929\n"
+"help.text"
+msgid "The <literal>setValue</literal> method can be used to set both numeric and text values. To set a cell formula, use the <literal>setFormula</literal> method."
+msgstr "Metodo <literal>setValue</literal> lahko uporabimo za določitev tako številskih kot besedilnih vrednosti. Za določitev formule v celici uporabite metodo <literal>setFormula</literal>."
+
+#: read_write_values.xhp
+msgctxt ""
+"read_write_values.xhp\n"
+"par_id251633265634883\n"
+"help.text"
+msgid "With the Calc service, getting and setting cell values can be done with a single line of code. The example below gets the value from cell \"A1\" and shows it on a message box."
+msgstr "S storitvijo Calc je pridobivanje in določanje vrednosti celic možno opraviti z eno samo vrstico kode. Spodnji primer pridobi vrednosti iz celice »A1« in jo prikaže v oknu s sporočilom."
+
+#: read_write_values.xhp
+msgctxt ""
+"read_write_values.xhp\n"
+"par_id521633608223310\n"
+"help.text"
+msgid "The ScriptForge library also makes it simpler to access ranges in different sheets, as demonstrated in the example below:"
+msgstr "Knjižnica ScriptForge tudi olajša dostop do obsegov na različnih delovnih listih, kar demonstrira spodnji primer:"
+
+#: read_write_values.xhp
+msgctxt ""
+"read_write_values.xhp\n"
+"bas_id521633608366292\n"
+"help.text"
+msgid "' Gets cell \"A1\" from the sheet named \"Sheet1\""
+msgstr "' Pridobi celico \"A1\" iz delovnega lista z imenom \"Sheet1\""
+
+#: read_write_values.xhp
+msgctxt ""
+"read_write_values.xhp\n"
+"bas_id661633608366484\n"
+"help.text"
+msgid "' Gets cell \"B3\" from the sheet named \"Sheet2\""
+msgstr "' Pridobi celico \"B3\" iz delovnega lista z imenom \"Sheet2\""
+
+#: read_write_values.xhp
+msgctxt ""
+"read_write_values.xhp\n"
+"bas_id501633608516381\n"
+"help.text"
+msgid "' Places the result into cell \"A1\" of sheet \"Report\""
+msgstr "' Postavi rezultat v celico \"A1\" delovnega lista \"Report\""
+
+#: read_write_values.xhp
+msgctxt ""
+"read_write_values.xhp\n"
+"par_id431633266057163\n"
+"help.text"
+msgid "The examples above can also be implemented in Python as follows:"
+msgstr "Zgornje primere lahko implementiramo tudi v Pythonu na sledeč način:"
 
 #: sample_code.xhp
 msgctxt ""

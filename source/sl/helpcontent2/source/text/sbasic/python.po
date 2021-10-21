@@ -1,10 +1,10 @@
 #. extracted from helpcontent2/source/text/sbasic/python
 msgid ""
 msgstr ""
-"Project-Id-Version: LibreOffice 7.2\n"
+"Project-Id-Version: LibreOffice 7.3\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2021-06-11 13:43+0200\n"
-"PO-Revision-Date: 2021-06-12 09:12+0200\n"
+"POT-Creation-Date: 2021-10-15 12:35+0200\n"
+"PO-Revision-Date: 2021-10-18 22:08+0200\n"
 "Last-Translator: Martin Srebotnjak <miles@filmsi.net>\n"
 "Language-Team: sl.libreoffice.org\n"
 "Language: sl\n"
@@ -446,8 +446,8 @@ msgctxt ""
 "python_document_events.xhp\n"
 "tit\n"
 "help.text"
-msgid "Python : Monitoring Document Events"
-msgstr "Spremljanje dogodkov dokumenta v Pythonu"
+msgid "Monitoring Document Events"
+msgstr "Spremljanje dogodkov dokumenta"
 
 #: python_document_events.xhp
 msgctxt ""
@@ -462,8 +462,48 @@ msgctxt ""
 "python_document_events.xhp\n"
 "N0527\n"
 "help.text"
-msgid "<variable id=\"pythonmonitor\"><link href=\"text/sbasic/python/python_document_events.xhp\" name=\"Monitoring Document Events\">Monitoring Document Events</link></variable>"
-msgstr "<variable id=\"pythonmonitor\"><link href=\"text/sbasic/python/python_document_events.xhp\" name=\"Spremljanje dogodkov dokumenta\">Spremljanje dogodkov dokumenta</link></variable>"
+msgid "<variable id=\"pythonmonitor\"><link href=\"text/sbasic/python/python_document_events.xhp\" name=\"Monitoring Document Events\">Listening to Document Events</link></variable>"
+msgstr "<variable id=\"pythonmonitor\"><link href=\"text/sbasic/python/python_document_events.xhp\" name=\"Spremljanje dogodkov dokumenta\">Poslušanje dogodkov dokumenta</link></variable>"
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"par_id641630582314861\n"
+"help.text"
+msgid "Listening to document events can help in the following situations:"
+msgstr "Poslušanje dogodkov dokumenta je lahko v pomoč v sledečih situacijah:"
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"par_id431630582396327\n"
+"help.text"
+msgid "Identify a new document at opening time, as opposed to existing  ones, and perform a dedicated setup."
+msgstr "Identifikacija novega dokumenta ob njegovem odpiranju (za razliko od obstoječih) in opravljanje ciljnih namestitev."
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"par_id461630582396782\n"
+"help.text"
+msgid "Control the processing of document save, document copy, print or mailmerge requests."
+msgstr "Nadzor nad postopki shranjevanja in kopiranja dokumenta, tiskanja ali zahtevami po spajanju dokumentov."
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"par_id631630582394790\n"
+"help.text"
+msgid "Recalculate table of contents, indexes or table entries of a Writer document when document is going to be closed"
+msgstr "Preračunavanje kazala vsebine, kazal ali vnosov tabele v dokumentu programa Writer, ko se bo dokument zaprl."
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"par_id601630582398998\n"
+"help.text"
+msgid "Import math Python packages before opening a Calc document. Release these packages when the document closes."
+msgstr "Uvoz paketov Python math pred odpiranjem dokumenta programa Calc. Sprostitev teh paketov, ko se dokument zapre."
 
 #: python_document_events.xhp
 msgctxt ""
@@ -478,8 +518,8 @@ msgctxt ""
 "python_document_events.xhp\n"
 "N0529\n"
 "help.text"
-msgid "Listening to Document Events"
-msgstr "Poslušanje dogodkov dokumenta"
+msgid "Monitoring Document Events"
+msgstr "Spremljanje dogodkov dokumenta"
 
 #: python_document_events.xhp
 msgctxt ""
@@ -774,24 +814,24 @@ msgctxt ""
 "python_document_events.xhp\n"
 "N0650\n"
 "help.text"
-msgid "The <literal>Onload</literal> script is assigned to <emph>Open document</emph> event using <menuitem>Tools - Customize</menuitem> menu <menuitem>Events</menuitem> tab. Events monitoring starts from the moment a <literal>ConsoleLogger</literal> object is instantiated and ultimately stops when Basic engine releases it. <literal>OnLoad</literal> event loads necessary Basic libraries, while caught events are reported using <literal>Access2Base.Trace</literal> module."
-msgstr "Skript <literal>Onload</literal> je dodeljen dogodku <emph>Open document</emph> prek menijskega ukaza <menuitem>Orodja – Prilagodi</menuitem>, zavihka <menuitem>Dogodki</menuitem>. Spremljanje dogodkov se prične s trenutkom, ko je inicializiran predmet <literal>ConsoleLogger</literal>, in se povsem konča, ko ga pogon Basic sprosti. Dogodek <literal>OnLoad</literal> naloži potrebne knjižnice Basic, medtem ko o ujetih dogodkih poroča z uporabo modula <literal>Access2Base.Trace</literal>."
+msgid "Using <menuitem>Tools - Customize</menuitem> menu <menuitem>Events</menuitem> tab, the <menuitem>Open document</menuitem> event fires a <literal>ConsoleLogger</literal> initialisation. <literal>_documentEventOccured</literal> routine - set by <literal>ConsoleLogger</literal> - serves as a unique entry point to trap all document events."
+msgstr "Ob uporabi <menuitem>Orodja – Prilagodi</menuitem> in nato zavihka <menuitem>Dogodki</menuitem> dogodek <menuitem>Odpri dokument</menuitem> sproži inicializacijo <literal>ConsoleLogger</literal>. Podprogram <literal>_documentEventOccured</literal>, ki ga vzpostavi <literal>ConsoleLogger</literal>, služi kot značilna vstopna točka za lovljenje vseh dogodkov dokumenta."
 
 #: python_document_events.xhp
 msgctxt ""
 "python_document_events.xhp\n"
-"N0651\n"
+"hd_id421630510141729\n"
 "help.text"
-msgid "REM controller.Events module"
-msgstr "REM Modul controller.Events"
+msgid "controller.Events module"
+msgstr "Modul controller.Events"
 
 #: python_document_events.xhp
 msgctxt ""
 "python_document_events.xhp\n"
-"N0653\n"
+"bas_id431630567378062\n"
 "help.text"
-msgid "Private _obj As Object ' controller.ConsoleLogger instance"
-msgstr "Private _obj As Object ' instanca controller.ConsoleLogger"
+msgid "Global _obj As Object ' controller.ConsoleLogger instance"
+msgstr "Global _obj As Object ' instanca controller.ConsoleLogger"
 
 #: python_document_events.xhp
 msgctxt ""
@@ -799,15 +839,31 @@ msgctxt ""
 "N0655\n"
 "help.text"
 msgid "Sub OnLoad(evt As com.sun.star.document.DocumentEvent) ' >> Open Document <<"
-msgstr "\tSub OnLoad(evt As com.sun.star.document.DocumentEvent) ' >> Odpri dokument <<"
+msgstr "Sub OnLoad(evt As com.sun.star.document.DocumentEvent) ' >> Odpri dokument <<"
 
 #: python_document_events.xhp
 msgctxt ""
 "python_document_events.xhp\n"
-"N0659\n"
+"bas_id371630509596674\n"
 "help.text"
-msgid "REM controller.ConsoleLogger class module"
-msgstr "REM Modul razredov controller.ConsoleLogger"
+msgid "''' ConsoleLogger unique entry point '''"
+msgstr "''' Značilna vstopna točka ConsoleLogger '''"
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"hd_id721630511986813\n"
+"help.text"
+msgid "controller.ConsoleLogger class module"
+msgstr "Modul razredov controller.ConsoleLogger"
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"par_id901630509435225\n"
+"help.text"
+msgid "Events monitoring starts from the moment a <literal>ConsoleLogger</literal> object is instantiated and ultimately stops upon document closure. <literal>StartAdapter</literal> routine loads necessary Basic libraries, while caught events are reported using <literal>Access2Base.Trace</literal> module."
+msgstr "Spremljanje dogodkov se prične s trenutkom, ko je inicializiran predmet <literal>ConsoleLogger</literal>, in se povsem konča ob zaprtju dokumenta. Podprogram <literal>StartAdapter</literal> naloži potrebne knjižnice Basic, medtem ko o ujetih dogodkih poroča z uporabo modula <literal>Access2Base.Trace</literal>."
 
 #: python_document_events.xhp
 msgctxt ""
@@ -820,10 +876,10 @@ msgstr "' predmet vzorca oblikovanja ADAPTER, ki bo instanciiran v dogodku »Odp
 #: python_document_events.xhp
 msgctxt ""
 "python_document_events.xhp\n"
-"N0668\n"
+"N0666\n"
 "help.text"
-msgid "' CONSTRUCTOR/DESTRUCTOR"
-msgstr "' KONSTRUKTOR/DESTRUKTOR"
+msgid "Private Const UI_NOPROMPT = False ' Set it to True to visualise documents events"
+msgstr "Private Const UI_NOPROMPT = False ' Nastavite na True, da vizualizira dogodke dokumenta"
 
 #: python_document_events.xhp
 msgctxt ""
@@ -832,6 +888,22 @@ msgctxt ""
 "help.text"
 msgid "' MEMBERS"
 msgstr "' ČLANI"
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"bas_id131630510956418\n"
+"help.text"
+msgid "Private _txtMsg As String ' text message to log in console"
+msgstr "Private _txtMsg As String ' besedilo sporočila za beleženje v konzoli"
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"N0677\n"
+"help.text"
+msgid "' PROPERTIES"
+msgstr "' LASTNOSTI"
 
 #: python_document_events.xhp
 msgctxt ""
@@ -868,10 +940,10 @@ msgstr "''' Inicializiraj beleženje dogodkov dokumenta '''"
 #: python_document_events.xhp
 msgctxt ""
 "python_document_events.xhp\n"
-"N0706\n"
+"N0705\n"
 "help.text"
-msgid "IIf(IsMissing(evt),\"\",evt.EventName & \"-\") & \"Document events are being logged\", _"
-msgstr "IIf(IsMissing(evt),\"\",evt.EventName & \"-\") & \"Dogodki dokumenta se beležijo\", _"
+msgid "Access2Base.Trace.TraceLog(\"INFO\", _txtMsg & \"Document events are being logged\", UI_PROMPT)"
+msgstr "Access2Base.Trace.TraceLog(\"INFO\", _txtMsg & \"Dogodki dokumenta se beležijo\", UI_PROMPT)"
 
 #: python_document_events.xhp
 msgctxt ""
@@ -886,8 +958,24 @@ msgctxt ""
 "python_document_events.xhp\n"
 "N0717\n"
 "help.text"
-msgid "IIf(IsMissing(evt),\"\",evt.EventName & \"-\") & \"Document events have been logged\", _"
-msgstr "IIf(IsMissing(evt),\"\",evt.EventName & \"-\") & \"Dogodki dokumenta so zabeleženi\", _"
+msgid "Access2Base.Trace.TraceLog(\"INFO\", _txtMsg & \"Document events have been logged\", UI_PROMPT)"
+msgstr "Access2Base.Trace.TraceLog(\"INFO\", _txtMsg & \"Dogodki dokumenta so zabeleženi\", UI_PROMPT)"
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"N0719\n"
+"help.text"
+msgid "Access2Base.Trace.TraceConsole() ' Captured events dialog"
+msgstr "Access2Base.Trace.TraceConsole() ' Pogovorno okno zabeleženih dogodkov"
+
+#: python_document_events.xhp
+msgctxt ""
+"python_document_events.xhp\n"
+"N0722\n"
+"help.text"
+msgid "' EVENTS"
+msgstr "' DOGODKI"
 
 #: python_document_events.xhp
 msgctxt ""
@@ -3036,31 +3124,95 @@ msgstr "Interaktivna konzola Python, znana tudi kot tolmač Pythona ali lupina P
 #: python_shell.xhp
 msgctxt ""
 "python_shell.xhp\n"
+"par_id851633601202270\n"
+"help.text"
+msgid "From a full-featured %PRODUCTNAME installed package, use either Basic or Python:"
+msgstr "V polno nameščenem pisarniškem paketu %PRODUCTNAME uporabite Basic ali Python:"
+
+#: python_shell.xhp
+msgctxt ""
+"python_shell.xhp\n"
 "N0121\n"
 "help.text"
-msgid "Using a Basic macro:"
-msgstr "Uporaba makra Basic:"
+msgid "Using a Basic macro"
+msgstr "Uporaba makra v jeziku Basic"
 
 #: python_shell.xhp
 msgctxt ""
 "python_shell.xhp\n"
 "N0127\n"
 "help.text"
-msgid "Using a Python macro:"
-msgstr "Uporaba makra v jeziku Python:"
+msgid "Using a Python macro"
+msgstr "Uporaba makra v jeziku Python"
 
 #: python_shell.xhp
 msgctxt ""
 "python_shell.xhp\n"
 "N0141\n"
 "help.text"
-msgid "Usage:"
-msgstr "Raba:"
+msgid "Example output"
+msgstr "Primer izhoda"
 
 #: python_shell.xhp
 msgctxt ""
 "python_shell.xhp\n"
 "N0142\n"
 "help.text"
-msgid "<image src=\"media/helpimg/python/python_shell.png\" id=\"N0143\"><alt id=\"N0144\">Python Interactive Console</alt></image>"
-msgstr "<image src=\"media/helpimg/python/python_shell.png\" id=\"N0143\"><alt id=\"N0144\">Interaktivna konzola Python</alt></image>"
+msgid "<image src=\"media/helpimg/python/python_interactive_console.png\" id=\"N0143\"><alt id=\"N0143\">Python Interactive Console</alt></image>"
+msgstr "<image src=\"media/helpimg/python/python_interactive_console.png\" id=\"N0143\"><alt id=\"N0143\">Interaktivna konzola Python</alt></image>"
+
+#: python_shell.xhp
+msgctxt ""
+"python_shell.xhp\n"
+"hd_id381633446811095\n"
+"help.text"
+msgid "Using the Terminal"
+msgstr "Uporaba terminala"
+
+#: python_shell.xhp
+msgctxt ""
+"python_shell.xhp\n"
+"par_id801633601715910\n"
+"help.text"
+msgid "From a %PRODUCTNAME copy included in a GNU/Linux platform, use the terminal as shown:"
+msgstr "Iz kopije %PRODUCTNAME, vključene v platformi GNU/Linux, uporabite terminal, kot je prikazano spodaj:"
+
+#: python_shell.xhp
+msgctxt ""
+"python_shell.xhp\n"
+"par_id531633444780190\n"
+"help.text"
+msgid "<literal>whereis</literal> or <literal>type</literal> terminal commands help locate Python interactive console:"
+msgstr "Ukaza v terminalu <literal>whereis</literal> in <literal>type</literal> pomagata poiskati interaktivno konzolo Python:"
+
+#: python_shell.xhp
+msgctxt ""
+"python_shell.xhp\n"
+"hd_id311633513620803\n"
+"help.text"
+msgid "Alternative console"
+msgstr "Nadomestna konzola"
+
+#: python_shell.xhp
+msgctxt ""
+"python_shell.xhp\n"
+"par_id81632760673283\n"
+"help.text"
+msgid "Use <link href=\"https://extensions.libreoffice.org/extensions/apso-alternative-script-organizer-for-Python\" name=\"APSO extension\">APSO extension</link> console as an alternative:"
+msgstr "Uporabite konzolo <link href=\"https://extensions.libreoffice.org/extensions/apso-alternative-script-organizer-for-Python\" name=\"Razširitev APSO\">razširitve APSO</link> (Alternative Python Script Organizer) kot alternativo:"
+
+#: python_shell.xhp
+msgctxt ""
+"python_shell.xhp\n"
+"N0144\n"
+"help.text"
+msgid "<image src=\"media/helpimg/python/python_shell.png\" id=\"N0144\"><alt id=\"N0144\">APSO console</alt></image>"
+msgstr "<image src=\"media/helpimg/python/python_shell.png\" id=\"N0144\"><alt id=\"N0144\">Konzola APSO</alt></image>"
+
+#: python_shell.xhp
+msgctxt ""
+"python_shell.xhp\n"
+"par_id351633599611244\n"
+"help.text"
+msgid "<link href=\"text/sbasic/shared/03/sf_exception.html?#PythonShell\" name=\"PythonShell method\"><literal>PythonShell</literal></link> function in <link href=\"text/sbasic/shared/03/sf_exception.html\" name=\"ScriptForge.Exception service\"><literal>ScriptForge.Exception</literal></link> service"
+msgstr "Funkcija <link href=\"text/sbasic/shared/03/sf_exception.html?#PythonShell\" name=\"Metoda PythonShell\"><literal>PythonShell</literal></link> v storitvi <link href=\"text/sbasic/shared/03/sf_exception.html\" name=\"Storitev ScriptForge.Exception\"><literal>ScriptForge.Exception</literal></link>"

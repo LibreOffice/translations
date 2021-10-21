@@ -1,10 +1,10 @@
 #. extracted from helpcontent2/source/text/sbasic/shared
 msgid ""
 msgstr ""
-"Project-Id-Version: LibreOffice 7.2\n"
+"Project-Id-Version: LibreOffice 7.3\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2021-06-11 13:43+0200\n"
-"PO-Revision-Date: 2021-06-12 09:21+0200\n"
+"POT-Creation-Date: 2021-10-15 12:35+0200\n"
+"PO-Revision-Date: 2021-10-19 00:25+0200\n"
 "Last-Translator: Martin Srebotnjak <miles@filmsi.net>\n"
 "Language-Team: sl.libreoffice.org\n"
 "Language: sl\n"
@@ -582,8 +582,16 @@ msgctxt ""
 "00000003.xhp\n"
 "par_id81621427048241\n"
 "help.text"
-msgid "This method requires the installation of the <link href=\"https://extensions.libreoffice.org/en/extensions/show/apso-alternative-script-organizer-for-python\" name=\"APSO Link\">APSO (Alternative Script Organizer for Python)</link> extension. If it is not installed, an error will occur."
-msgstr "Ta metoda zahteva namestitev razširitve <link href=\"https://extensions.libreoffice.org/extensions/apso-alternative-script-organizer-for-python\" name=\"APSO (Alternative Python Script Organizer)\">APSO (Alternative Python Script Organizer)</link>. Če ni nameščena, javi napako."
+msgid "This method requires the installation of the <link href=\"https://extensions.libreoffice.org/en/extensions/show/apso-alternative-script-organizer-for-python\" name=\"APSO Link\">APSO (Alternative Script Organizer for Python)</link> extension. In turn APSO requires the presence of %PRODUCTNAME Python scripting framework. If APSO or Python are missing, an error occurs."
+msgstr "Ta metoda zahteva namestitev razširitve <link href=\"https://extensions.libreoffice.org/en/extensions/show/apso-alternative-script-organizer-for-python\" name=\"APSO (Alternative Python Script Organizer)\">APSO (Alternative Python Script Organizer)</link>. APSO zahteva prisotnost ogrodja za skriptanje %PRODUCTNAME Python. Če APSO ali Python ni nameščen, javi napako."
+
+#: 00000003.xhp
+msgctxt ""
+"00000003.xhp\n"
+"par_id21624295605301\n"
+"help.text"
+msgid "This service is fully supported in both Basic and Python languages. All examples are expressed using the Basic programming language and can be easily converted to Python."
+msgstr "Ta storitev je v celoti podprta v jezikih Basic in Python. Vsi primeri so zapisani v programskem jeziku Basic in jih lahko enostavno pretvorite v Python."
 
 #: 00000003.xhp
 msgctxt ""
@@ -14726,8 +14734,8 @@ msgctxt ""
 "03030303.xhp\n"
 "hd_id3149346\n"
 "help.text"
-msgid "<link href=\"text/sbasic/shared/03030303.xhp\" name=\"Timer Function\">Timer Function</link>"
-msgstr "<link href=\"text/sbasic/shared/03030303.xhp\" name=\"Funkcija Timer\">Funkcija Timer</link>"
+msgid "<variable id=\"Timer_H1\"><link href=\"text/sbasic/shared/03030303.xhp\" name=\"Timer Function\">Timer Function</link></variable>"
+msgstr "<variable id=\"Timer_H1\"><link href=\"text/sbasic/shared/03030303.xhp\" name=\"Funkcija Timer\">Funkcija Timer</link></variable>"
 
 #: 03030303.xhp
 msgctxt ""
@@ -14748,22 +14756,6 @@ msgstr "Definirati morate najprej spremenljivko, s katero boste funkcijo Timer p
 #: 03030303.xhp
 msgctxt ""
 "03030303.xhp\n"
-"hd_id3153768\n"
-"help.text"
-msgid "Syntax:"
-msgstr "Skladnja:"
-
-#: 03030303.xhp
-msgctxt ""
-"03030303.xhp\n"
-"hd_id3146975\n"
-"help.text"
-msgid "Return value:"
-msgstr "Vrnjena vrednost:"
-
-#: 03030303.xhp
-msgctxt ""
-"03030303.xhp\n"
 "par_id3146984\n"
 "help.text"
 msgid "Date"
@@ -14772,42 +14764,26 @@ msgstr "Date"
 #: 03030303.xhp
 msgctxt ""
 "03030303.xhp\n"
-"hd_id3156442\n"
-"help.text"
-msgid "Example:"
-msgstr "Primer:"
-
-#: 03030303.xhp
-msgctxt ""
-"03030303.xhp\n"
 "par_id3145748\n"
 "help.text"
-msgid "MsgBox lSec,0,\"Seconds since midnight\""
-msgstr "MsgBox lSec,0,\"sekund od polnoči\""
+msgid "MsgBox lSec, 0, \"Seconds since midnight\""
+msgstr "MsgBox lSec, 0, \"sekund od polnoči\""
 
 #: 03030303.xhp
 msgctxt ""
 "03030303.xhp\n"
 "par_id3156283\n"
 "help.text"
-msgid "MsgBox Right(\"00\" & lHour , 2) & \":\"& Right(\"00\" & lMin , 2) & \":\" & Right(\"00\" & lSec , 2) ,0,\"The time is\""
-msgstr "MsgBox Right(\"00\" & lHour , 2) & \":\"& Right(\"00\" & lMin , 2) & \":\" & Right(\"00\" & lSec , 2) ,0,\"Čas je\""
+msgid "MsgBox Right(\"00\" & lHour , 2) & \":\"& Right(\"00\" & lMin , 2) & \":\" & Right(\"00\" & lSec , 2), 0, \"The time is\""
+msgstr "MsgBox Right(\"00\" & lHour , 2) & \":\"& Right(\"00\" & lMin , 2) & \":\" & Right(\"00\" & lSec , 2), 0, \"Ura kaže\""
 
 #: 03030303.xhp
 msgctxt ""
 "03030303.xhp\n"
 "par_id491610993401822\n"
 "help.text"
-msgid "The <literal>Timer</literal> function measures time in seconds. To measure time in milliseconds use the <link href=\"text/sbasic/shared/03/sf_timer.xhp\" name=\"ScriptForge.Timer service\"><literal>Timer</literal> service</link>."
-msgstr "Funkcija <literal>Timer</literal> meri čas v sekundah. Če želite meriti čas v milisekundah, uporabite <link href=\"text/sbasic/shared/03/sf_timer.xhp\" name=\"ScriptForge.Timer service\">storitev <literal>Timer</literal></link>."
-
-#: 03030303.xhp
-msgctxt ""
-"03030303.xhp\n"
-"par_id531610970649205\n"
-"help.text"
-msgid "<embedvar href=\"text/sbasic/shared/03/sf_timer.xhp#TimerService\"/>"
-msgstr "<embedvar href=\"text/sbasic/shared/03/sf_timer.xhp#TimerService\"/>"
+msgid "The <literal>Timer</literal> function measures time in seconds. To measure time in milliseconds use the <embedvar href=\"text/sbasic/shared/03/sf_timer.xhp#TimerService\"/>."
+msgstr "Funkcija <literal>Timer</literal> meri čas v sekundah. Če želite meriti čas v milisekundah, uporabite <link href=\"text/sbasic/shared/03/sf_timer.xhp\" name=\"ScriptForge.Timer service\">storitev <literal>Timer</literal></link>.***"
 
 #: 03040000.xhp
 msgctxt ""
@@ -15136,6 +15112,38 @@ msgctxt ""
 "help.text"
 msgid "VT - Vertical tab"
 msgstr "VT – navpični tabulator (angl. vertical tab)"
+
+#: 03040000.xhp
+msgctxt ""
+"03040000.xhp\n"
+"bm_id391624288823741\n"
+"help.text"
+msgid "<bookmark_value>VBA Variable Type Named Constants</bookmark_value>"
+msgstr "<bookmark_value>konstante variabilne vrste VBA</bookmark_value>"
+
+#: 03040000.xhp
+msgctxt ""
+"03040000.xhp\n"
+"hd_id941624288567829\n"
+"help.text"
+msgid "VBA Variable Type Named Constants"
+msgstr "Konstante variabilne vrste VBA"
+
+#: 03040000.xhp
+msgctxt ""
+"03040000.xhp\n"
+"par_id31624288363725\n"
+"help.text"
+msgid "Named constant"
+msgstr "Poimenovana konstanta"
+
+#: 03040000.xhp
+msgctxt ""
+"03040000.xhp\n"
+"par_id951624288363725\n"
+"help.text"
+msgid "Decimal value"
+msgstr "Decimalna vrednost"
 
 #: 03050000.xhp
 msgctxt ""
@@ -21854,8 +21862,8 @@ msgctxt ""
 "03090413.xhp\n"
 "hd_id3153311\n"
 "help.text"
-msgid "<link href=\"text/sbasic/shared/03090413.xhp\" name=\"Type Statement\">Type Statement</link>"
-msgstr "<link href=\"text/sbasic/shared/03090413.xhp\" name=\"Ukaz Type\">Ukaz Type</link>"
+msgid "<variable id=\"Type_h1\"><link href=\"text/sbasic/shared/03090413.xhp\" name=\"Type Statement\">Type Statement</link></variable>"
+msgstr "<variable id=\"Type_h1\"><link href=\"text/sbasic/shared/03090413.xhp\" name=\"Ukaz Type\">Ukaz Type</link></variable>"
 
 #: 03090413.xhp
 msgctxt ""
@@ -24708,10 +24716,10 @@ msgstr "<bookmark_value>funkcija IsObject</bookmark_value>"
 #: 03102800.xhp
 msgctxt ""
 "03102800.xhp\n"
-"hd_id3149346\n"
+"hd_id51633474369322\n"
 "help.text"
-msgid "<link href=\"text/sbasic/shared/03102800.xhp\" name=\"IsObject Function\">IsObject Function</link>"
-msgstr "<link href=\"text/sbasic/shared/03102800.xhp\" name=\"Funkcija IsObject\">Funkcija IsObject</link>"
+msgid "<variable id=\"IsObject_h1\"><link href=\"text/sbasic/shared/03102800.xhp\" name=\"IsObject Function\">IsObject Function</link></variable>"
+msgstr "<variable id=\"IsObject_h1\"><link href=\"text/sbasic/shared/03102800.xhp\" name=\"Funkcija IsObject\">Funkcija IsObject</link></variable>"
 
 #: 03102800.xhp
 msgctxt ""
@@ -24724,58 +24732,10 @@ msgstr "Preizkusi, če je spremenljivka predmet in ne primitivna vrsta podatka, 
 #: 03102800.xhp
 msgctxt ""
 "03102800.xhp\n"
-"hd_id3149234\n"
-"help.text"
-msgid "Syntax:"
-msgstr "Skladnja:"
-
-#: 03102800.xhp
-msgctxt ""
-"03102800.xhp\n"
-"par_id3154285\n"
-"help.text"
-msgid "IsObject(var)"
-msgstr "IsObject(spr)"
-
-#: 03102800.xhp
-msgctxt ""
-"03102800.xhp\n"
-"hd_id3148685\n"
-"help.text"
-msgid "Return value:"
-msgstr "Vrnjena vrednost:"
-
-#: 03102800.xhp
-msgctxt ""
-"03102800.xhp\n"
-"par_id3156024\n"
-"help.text"
-msgid "Boolean"
-msgstr "Logična vrednost"
-
-#: 03102800.xhp
-msgctxt ""
-"03102800.xhp\n"
-"hd_id3148947\n"
-"help.text"
-msgid "Parameters:"
-msgstr "Parametri:"
-
-#: 03102800.xhp
-msgctxt ""
-"03102800.xhp\n"
-"par_id3148552\n"
-"help.text"
-msgid "<emph>var:</emph> Any variable that you want to test."
-msgstr "<emph>spr:</emph> poljubna spremenljivka, ki jo želite preizkusiti."
-
-#: 03102800.xhp
-msgctxt ""
-"03102800.xhp\n"
 "par_id891575896963115\n"
 "help.text"
-msgid "The following objects return <literal>True</literal>:"
-msgstr "Naslednji predmeti vrnejo <literal>True</literal>:"
+msgid "This function returns <literal>True</literal> for the following object types:"
+msgstr "Ta funkcija vrne <literal>True</literal> za naslednje vrste predmetov:"
 
 #: 03102800.xhp
 msgctxt ""
@@ -24824,6 +24784,22 @@ msgctxt ""
 "help.text"
 msgid "Data structures return <literal>True</literal> even when empty. Object defined variables return <literal>True</literal> even if uninitialized."
 msgstr "Podatkovne strukture vrnejo <literal>True</literal>, tudi če so prazne. Objektno definirane spremenljivke vrnejo <literal>True</literal>, tudi če niso inicializirane."
+
+#: 03102800.xhp
+msgctxt ""
+"03102800.xhp\n"
+"par_id3156024\n"
+"help.text"
+msgid "Boolean"
+msgstr "Logična vrednost"
+
+#: 03102800.xhp
+msgctxt ""
+"03102800.xhp\n"
+"par_id3148552\n"
+"help.text"
+msgid "<emph>var:</emph> The variable to be tested."
+msgstr "<emph>var:</emph> spremenljivka, ki bo preverjena."
 
 #: 03102800.xhp
 msgctxt ""
@@ -25478,8 +25454,8 @@ msgctxt ""
 "03103600.xhp\n"
 "bm_id3143267\n"
 "help.text"
-msgid "<bookmark_value>TypeName function</bookmark_value>  <bookmark_value>VarType function</bookmark_value>"
-msgstr "<bookmark_value>funkcija TypeName</bookmark_value><bookmark_value>funkcija VarType</bookmark_value>"
+msgid "<bookmark_value>TypeName function</bookmark_value><bookmark_value>VarType function</bookmark_value><bookmark_value>Basic Variable Type constants</bookmark_value>"
+msgstr "<bookmark_value>funkcija TypeName</bookmark_value><bookmark_value>funkcija VarType</bookmark_value><bookmark_value>konstante Variable Type v Basicu</bookmark_value>"
 
 #: 03103600.xhp
 msgctxt ""
@@ -25500,14 +25476,6 @@ msgstr "Vrne niz (TypeName) ali numerično vrednost (VarType), ki vsebuje inform
 #: 03103600.xhp
 msgctxt ""
 "03103600.xhp\n"
-"hd_id3153825\n"
-"help.text"
-msgid "Syntax:"
-msgstr "Skladnja:"
-
-#: 03103600.xhp
-msgctxt ""
-"03103600.xhp\n"
 "par_id3155341\n"
 "help.text"
 msgid "TypeName (Variable) / VarType (Variable)"
@@ -25516,26 +25484,10 @@ msgstr "TypeName (Spremenljivka) / VarType (Spremenljivka)"
 #: 03103600.xhp
 msgctxt ""
 "03103600.xhp\n"
-"hd_id3145610\n"
-"help.text"
-msgid "Return value:"
-msgstr "Vrnjena vrednost:"
-
-#: 03103600.xhp
-msgctxt ""
-"03103600.xhp\n"
 "par_id3148947\n"
 "help.text"
 msgid "String; Integer"
 msgstr "String; Integer"
-
-#: 03103600.xhp
-msgctxt ""
-"03103600.xhp\n"
-"hd_id3146795\n"
-"help.text"
-msgid "Parameters:"
-msgstr "Parametri:"
 
 #: 03103600.xhp
 msgctxt ""
@@ -25550,7 +25502,7 @@ msgctxt ""
 "03103600.xhp\n"
 "par_id3145171\n"
 "help.text"
-msgid "key word"
+msgid "keyword"
 msgstr "ključna beseda"
 
 #: 03103600.xhp
@@ -25684,14 +25636,6 @@ msgstr "Ni veljavnih podatkov"
 #: 03103600.xhp
 msgctxt ""
 "03103600.xhp\n"
-"hd_id3149338\n"
-"help.text"
-msgid "Example:"
-msgstr "Primer:"
-
-#: 03103600.xhp
-msgctxt ""
-"03103600.xhp\n"
 "par_id3148817\n"
 "help.text"
 msgid "TypeName(lVar) & \" \" & VarType(lVar),0,\"Some types In $[officename] Basic\""
@@ -25710,8 +25654,8 @@ msgctxt ""
 "03103700.xhp\n"
 "bm_id3154422\n"
 "help.text"
-msgid "<bookmark_value>Set statement</bookmark_value>  <bookmark_value>New keyword</bookmark_value>  <bookmark_value>Nothing object</bookmark_value>"
-msgstr "<bookmark_value>ukaz Set</bookmark_value><bookmark_value>ključna beseda New</bookmark_value><bookmark_value>predmet Nothing</bookmark_value>"
+msgid "<bookmark_value>Set statement</bookmark_value>  <bookmark_value>Nothing object</bookmark_value>"
+msgstr "<bookmark_value>ukaz Set</bookmark_value><bookmark_value>predmet Nothing</bookmark_value>"
 
 #: 03103700.xhp
 msgctxt ""
@@ -26484,18 +26428,26 @@ msgstr "<bookmark_value>funkcija EqualUnoObjects</bookmark_value>"
 #: 03104600.xhp
 msgctxt ""
 "03104600.xhp\n"
-"hd_id3149205\n"
+"hd_id791633472607429\n"
 "help.text"
-msgid "<link href=\"text/sbasic/shared/03104600.xhp\" name=\"EqualUnoObjects Function\">EqualUnoObjects Function</link>"
-msgstr "<link href=\"text/sbasic/shared/03104600.xhp\" name=\"Funkcija EqualUnoObjects\">Funkcija EqualUnoObjects</link>"
+msgid "<variable id=\"EqualUnoObjects_h1\"><link href=\"text/sbasic/shared/03104600.xhp\" name=\"EqualUnoObjects Function\">EqualUnoObjects Function</link></variable>"
+msgstr "<variable id=\"EqualUnoObjects_h1\"><link href=\"text/sbasic/shared/03104600.xhp\" name=\"Funkcija EqualUnoObjects\">Funkcija EqualUnoObjects</link></variable>"
 
 #: 03104600.xhp
 msgctxt ""
 "03104600.xhp\n"
 "par_id3145090\n"
 "help.text"
-msgid "Returns True if the two specified Basic Uno objects represent the same Uno object instance."
-msgstr "Vrne Res, če navedena Basic Uno predmeta predstavljata isto instanco predmeta Uno."
+msgid "Returns <emph>True</emph> if the two specified Basic variables represent the same Uno object instance."
+msgstr "Vrne <emph>True</emph>, če navedeni spremenljivki Basic predstavljata isto instanco predmeta UNO."
+
+#: 03104600.xhp
+msgctxt ""
+"03104600.xhp\n"
+"par_id61633530293311\n"
+"help.text"
+msgid "<emph>oObj1, oObj2:</emph> the variables to be tested."
+msgstr "<emph>oObj1, oObj2:</emph> spremenljivki, ki bosta preizkušeni."
 
 #: 03104600.xhp
 msgctxt ""
@@ -26508,18 +26460,18 @@ msgstr "Bool"
 #: 03104600.xhp
 msgctxt ""
 "03104600.xhp\n"
-"par_id3156024\n"
+"par_id771633473462939\n"
 "help.text"
-msgid "' Copy of objects -> same instance"
-msgstr "' Kopija predmetov -> ista instanca"
+msgid "The example below returns <emph>True</emph> because both <literal>oDoc</literal> and <literal>ThisComponent</literal> are references to the same object:"
+msgstr "Spodnji primer vrne <emph>True</emph>, saj sta tako <literal>oDoc</literal> kot <literal>ThisComponent</literal> sklica na isti predmet:"
 
 #: 03104600.xhp
 msgctxt ""
 "03104600.xhp\n"
-"par_id3153525\n"
+"par_id181633473874216\n"
 "help.text"
-msgid "' Copy of structs as value -> new instance"
-msgstr "' Kopiraj strukture kot vrednosti -> nova instanca"
+msgid "The example below returns <emph>False</emph> because the assignment creates a copy of the original object. Hence <literal>Struct1</literal> and <literal>Struct2</literal> refer to different object instances."
+msgstr "Spodnji primer vrne <emph>False</emph>, saj dodelitev ustvari kopijo izvirnega predmeta. Zato se <literal>Struct1</literal> in <literal>Struct2</literal> sklicujeta na različni instanci predmeta."
 
 #: 03104700.xhp
 msgctxt ""
@@ -27646,8 +27598,8 @@ msgctxt ""
 "03120202.xhp\n"
 "hd_id3147291\n"
 "help.text"
-msgid "<link href=\"text/sbasic/shared/03120202.xhp\" name=\"String Function\">String Function</link>"
-msgstr "<link href=\"text/sbasic/shared/03120202.xhp\" name=\"Funkcija String\">Funkcija String</link>"
+msgid "<variable id=\"String_h1\"><link href=\"text/sbasic/shared/03120202.xhp\" name=\"String Function\">String Function</link></variable>"
+msgstr "<variable id=\"String_h1\"><link href=\"text/sbasic/shared/03120202.xhp\" name=\"Funkcija String\">Funkcija String</link></variable>"
 
 #: 03120202.xhp
 msgctxt ""
@@ -29054,8 +29006,8 @@ msgctxt ""
 "03120314.xhp\n"
 "par_id3154285\n"
 "help.text"
-msgid "String"
-msgstr "String"
+msgid "With Option VBASupport 1: String, with Option VBASupport 0: Variant/String"
+msgstr "Z Option VBASupport 1: String, z Option VBASupport 0: Variant/String"
 
 #: 03120314.xhp
 msgctxt ""
@@ -29286,8 +29238,8 @@ msgctxt ""
 "03120401.xhp\n"
 "par_id3153361\n"
 "help.text"
-msgid "To avoid a run-time error, do not set the Compare parameter if the first return parameter is omitted."
-msgstr "Če se želite izogniti napakam med izvajanjem, ne uporabljajte parametra Primerjava, če ste prvi povratni parameter opustili."
+msgid "To avoid a run-time error, do not set the Compare parameter if the first optional parameter is omitted."
+msgstr "Če se želite izogniti napakam med izvajanjem, ne uporabljajte parametra Primerjava, če ste prvi neobvezni parameter izpustili."
 
 #: 03120401.xhp
 msgctxt ""
@@ -30582,8 +30534,8 @@ msgctxt ""
 "03131600.xhp\n"
 "bm_id3150682\n"
 "help.text"
-msgid "<bookmark_value>CreateUnoService function</bookmark_value><bookmark_value>API;FilePicker</bookmark_value><bookmark_value>API;FunctionAccess</bookmark_value>"
-msgstr "<bookmark_value>funkcija CreateUnoService</bookmark_value><bookmark_value>API;FilePicker</bookmark_value><bookmark_value>API;FunctionAccess</bookmark_value>"
+msgid "<bookmark_value>CreateUnoService function</bookmark_value>      <bookmark_value>API;FilePicker</bookmark_value>      <bookmark_value>API;SimpleFileAccess</bookmark_value>"
+msgstr "<bookmark_value>funkcija CreateUnoService</bookmark_value><bookmark_value>API;FilePicker</bookmark_value><bookmark_value>API;SimpleFileAccess</bookmark_value>"
 
 #: 03131600.xhp
 msgctxt ""
@@ -30598,56 +30550,40 @@ msgctxt ""
 "03131600.xhp\n"
 "par_id3152924\n"
 "help.text"
-msgid "Instantiates a Uno service with the ProcessServiceManager."
-msgstr "Instanciira storitev Uno z upraviteljem procesnih storitev (ProcessServiceManager)."
+msgid "Instantiates a Uno service with the <literal>ProcessServiceManager</literal>."
+msgstr "Instanco storitve UNO tvori z upraviteljem procesnih storitev <literal>ProcessServiceManager</literal>."
 
 #: 03131600.xhp
 msgctxt ""
 "03131600.xhp\n"
-"par_id3153346\n"
+"par_id511629989178074\n"
 "help.text"
-msgid "oService = CreateUnoService( Uno service name )"
-msgstr "oStoritev = CreateUnoService( ime storitve Uno )"
+msgid "<input>oService = CreateUnoService( UNO service name )</input>"
+msgstr "<input>oStoritev = CreateUnoService( ime storitve UNO )</input>"
 
 #: 03131600.xhp
 msgctxt ""
 "03131600.xhp\n"
-"par_idN1060F\n"
+"par_id921629989537850\n"
 "help.text"
-msgid "For a list of available services, go to: <link href=\"https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star.html\" name=\"api.libreoffice.org com::sun::star Module Reference\">https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star.html</link>"
-msgstr "Seznam storitev, ki so na razpolago, najdete tule (v angl. jeziku): <link href=\"https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star.html\" name=\"Sklici modula api.libreoffice.org com::sun::star\">https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star.html</link>"
-
-#: 03131600.xhp
-msgctxt ""
-"03131600.xhp\n"
-"bm_id731561653332192\n"
-"help.text"
-msgid "<bookmark_value>Calc functions;API Service</bookmark_value>"
-msgstr "<bookmark_value>funkcije Calc;storitev API</bookmark_value>"
+msgid "For a list of available services, visit the <link href=\"https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star.html\" name=\"UNO_Service_Names\">com::sun::star Module</link> reference page."
+msgstr "Seznam storitev, ki so na razpolago, najdete na strani <link href=\"https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star.html\" name=\"Imena storitev UNO\">com::sun::star Module</link> (v angl. jeziku)."
 
 #: 03131600.xhp
 msgctxt ""
 "03131600.xhp\n"
 "par_id891561653344669\n"
 "help.text"
-msgid "Calling Calc functions in Basic:"
-msgstr "Klicanje funkcij programa Calc v Basicu:"
+msgid "The example below creates the function <literal>FileExists</literal> that uses the service <literal>com.sun.star.ucb.SimpleFileAccess</literal> to test if a given path is an existing file."
+msgstr "Spodnji primer ustvari funkcijo <literal>FileExists</literal>, ki uporablja storitev <literal>com.sun.star.ucb.SimpleFileAccess</literal>, da preizkusi, če dana pot predstavlja obstoječo datoteko."
 
 #: 03131600.xhp
 msgctxt ""
 "03131600.xhp\n"
-"par_id741592351349391\n"
+"par_id351629989310797\n"
 "help.text"
-msgid "REM The code below does not work for add-in functions, which have a different calling procedure."
-msgstr "REM Spodnja koda ne deluje za funkcije dodatkov, za katere je potrebno uporabiti drugačen način klicanja."
-
-#: 03131600.xhp
-msgctxt ""
-"03131600.xhp\n"
-"par_id31561653863623\n"
-"help.text"
-msgid "REM Always use the function English name"
-msgstr "REM Vedno uporabite angleško ime funkcije"
+msgid "UNO services have an extensive online documentation in the <link href=\"https://api.libreoffice.org/\" name=\"API_Website\">api.libreoffice.org</link> website. Visit the <link href=\"https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1ucb_1_1SimpleFileAccess.html\" name=\"SimpleFileAccess_Page\">SimpleFileAccess Service</link> reference page to learn more about the methods provided by the service used in the example above."
+msgstr "Storitve UNO imajo obsežno spletno dokumentacijo na spletišču <link href=\"https://api.libreoffice.org/\" name=\"API_Website\">api.libreoffice.org</link>. Obiščite stran o <link href=\"https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1ucb_1_1SimpleFileAccess.html\" name=\"Storitev SimpleFileAccess\">storitvi SimpleFileAccess</link> (v angl.), da izveste več o metodah, ki jih nudi storitev, uporabljena v zgornjem primeru."
 
 #: 03131600.xhp
 msgctxt ""
@@ -30662,8 +30598,8 @@ msgctxt ""
 "03131600.xhp\n"
 "par_idN10625\n"
 "help.text"
-msgid "The following code uses a service to open a file open dialog:"
-msgstr "Naslednja koda uporablja storitev, da odpre pogovorno okno za odprtje datoteke:"
+msgid "The following code uses the service <literal>com.sun.star.ui.dialogs.FilePicker</literal> to show a file open dialog:"
+msgstr "Naslednja koda uporablja storitev <literal>com.sun.star.ui.dialogs.FilePicker</literal>, da odpre pogovorno okno za odprtje datoteke:"
 
 #: 03131600.xhp
 msgctxt ""
@@ -31518,8 +31454,8 @@ msgctxt ""
 "03132400.xhp\n"
 "par_idN10580\n"
 "help.text"
-msgid "<link href=\"text/sbasic/shared/03132400.xhp\">CreateObject Function</link>"
-msgstr "<link href=\"text/sbasic/shared/03132400.xhp\">Funkcija CreateObject</link>"
+msgid "<variable id=\"CreateObject_h1\"><link href=\"text/sbasic/shared/03132400.xhp\">CreateObject Function</link></variable>"
+msgstr "<variable id=\"CreateObject_h1\"><link href=\"text/sbasic/shared/03132400.xhp\" name=\"Funkcija CreateObject\">Funkcija CreateObject</link></variable>"
 
 #: 03132400.xhp
 msgctxt ""
@@ -31540,10 +31476,10 @@ msgstr "Ta metoda ustvarja instance tiste vrste, ki jo podate kot parameter."
 #: 03132400.xhp
 msgctxt ""
 "03132400.xhp\n"
-"par_idN105A6\n"
+"par_id191633632167310\n"
 "help.text"
-msgid "oObj = CreateObject( type )"
-msgstr "oPredmet = CreateObject( vrsta )"
+msgid "<emph>type:</emph> the type of the object to be created, as a string."
+msgstr "<emph>type:</emph> vrsta predmeta, ki bo ustvarjen, kot niz."
 
 #: 03132500.xhp
 msgctxt ""
@@ -33300,10 +33236,10 @@ msgstr "<bookmark_value>funkcija Input</bookmark_value>"
 #: 03160000.xhp
 msgctxt ""
 "03160000.xhp\n"
-"hd_id3150499\n"
+"hd_id141626276767913\n"
 "help.text"
-msgid "<link href=\"text/sbasic/shared/03160000.xhp\" name=\"Input Function [VBA]\">Input Function [VBA]</link>"
-msgstr "<link href=\"text/sbasic/shared/03160000.xhp\" name=\"Funkcija Input [VBA]\">Funkcija Input [VBA]</link>"
+msgid "<variable id=\"Input_h1\"><link href=\"text/sbasic/shared/03160000.xhp\" name=\"Input Function [VBA]\">Input Function [VBA]</link></variable>"
+msgstr "<variable id=\"Input_h1\"><link href=\"text/sbasic/shared/03160000.xhp\" name=\"Funkcija Input [VBA]\">Funkcija Input [VBA]</link></variable>"
 
 #: 03160000.xhp
 msgctxt ""
@@ -33337,14 +33273,6 @@ msgctxt ""
 msgid "<emph>FileNumber</emph>: Required. Any valid file number."
 msgstr "<emph>ŠtevilkaDatoteke</emph> (obvezno): veljavna številka datoteke."
 
-#: 03160000.xhp
-msgctxt ""
-"03160000.xhp\n"
-"par_id061420170153186192\n"
-"help.text"
-msgid "<link href=\"text/sbasic/shared/03020202.xhp\">Input# statement</link>"
-msgstr "<link href=\"text/sbasic/shared/03020202.xhp\">Ukaz Input#</link>"
-
 #: 03170000.xhp
 msgctxt ""
 "03170000.xhp\n"
@@ -33358,40 +33286,80 @@ msgctxt ""
 "03170000.xhp\n"
 "bm_id3150499\n"
 "help.text"
-msgid "<bookmark_value>Round function</bookmark_value>"
-msgstr "<bookmark_value>funkcija Round</bookmark_value>"
+msgid "<bookmark_value>Round function (VBA)</bookmark_value>"
+msgstr "<bookmark_value>funkcija Round (VBA)</bookmark_value>"
 
 #: 03170000.xhp
 msgctxt ""
 "03170000.xhp\n"
 "hd_id3150499\n"
 "help.text"
-msgid "<link href=\"text/sbasic/shared/03170000.xhp\" name=\"Round Function [VBA]\">Round Function [VBA]</link>"
-msgstr "<link href=\"text/sbasic/shared/03170000.xhp\" name=\"Funkcija Round [VBA]\">Funkcija Round [VBA]</link>"
+msgid "<variable id=\"Round_VBA_h1\"><link href=\"text/sbasic/shared/03170000.xhp\" name=\"Round Function [VBA]\">Round Function [VBA]</link></variable>"
+msgstr "<variable id=\"Round_VBA_h1\"><link href=\"text/sbasic/shared/03170000.xhp\" name=\"Funkcija Round [VBA]\">Funkcija Round [VBA]</link></variable>"
 
 #: 03170000.xhp
 msgctxt ""
 "03170000.xhp\n"
 "par_id3151384\n"
 "help.text"
-msgid "The Round function returns a number rounded to a specified number of digits."
-msgstr "Funkcija Round vrne število, zaokroženo na navedeno število decimalk."
+msgid "Rounds a numeric value to a specified number of decimal digits."
+msgstr "Zaokroži številsko vrednost na navedeno število decimalk."
+
+#: 03170000.xhp
+msgctxt ""
+"03170000.xhp\n"
+"par_id741634154499890\n"
+"help.text"
+msgid "This function implements the rounding rule known as \"round-to-even\". With this rule, whenever the difference between the number to be rounded and its nearest integer is equal to 0.5, the number is rounded to the nearest even number. See the examples <link href=\"text/sbasic/shared/03170000.xhp#round_example\" name=\"round_ex_link\">below</link> to learn more about this rule."
+msgstr "Ta funkcija implementira pravilo zaokrožanja, znano tudi kot »zaokroži-na-sodo«. S tem pravilom se, ko je razlika med številom za zaokroževanje in njemu najbližjim celim številom enaka 0,5, število zaokroži na najbližjo sodo število. Glejte primere <link href=\"text/sbasic/shared/03170000.xhp#round_example\" name=\"Zaokroži na sodo\">spodaj</link>, da izveste več o tem pravilu."
+
+#: 03170000.xhp
+msgctxt ""
+"03170000.xhp\n"
+"par_id691634217736290\n"
+"help.text"
+msgid "Beware that VBA's <literal>Round</literal> function works differently than %PRODUCTNAME Calc's <literal>Round</literal> function. In Calc, if the difference between the number to be rounded and the nearest integer is exactly 0.5, then the number is rounded up. Hence, in Calc the number 2.5 is rounded to 3 whereas using VBA's <literal>Round</literal> function the value 2.5 is rounded to 2 due to the \"round-to-even\" rule."
+msgstr "Bodite pozorni, saj funkcija VBA <literal>Round</literal> deluje drugače kot funkcija %PRODUCTNAME Calc <literal>Round</literal>. V programu Calc se, če je razlika med številom za zaokroževanjem in najbližjim celim številom natanko 0,5, število zaokroži navzgor. Tako se v Calcu število 2,5 zaokroži na 3, z uporabo funkcije VBA <literal>Round</literal> pa se ista vrednost zaokroži na 2 zaradi pravila »zaokroži-na-sodo«."
 
 #: 03170000.xhp
 msgctxt ""
 "03170000.xhp\n"
 "par_id240720170117391741\n"
 "help.text"
-msgid "<emph>expression</emph>: Required. The numeric expression to be rounded."
-msgstr "<emph>Izraz</emph> (obvezno): numeričen izraz, ki bo zaokrožen."
+msgid "<emph>expression</emph>: The numeric expression to be rounded."
+msgstr "<emph>expression</emph>: numeričen izraz, ki bo zaokrožen."
 
 #: 03170000.xhp
 msgctxt ""
 "03170000.xhp\n"
 "par_id240720170117395610\n"
 "help.text"
-msgid "<emph>numdecimalplaces</emph>: Optional. Specifies how many places to the right of the decimal are included in the rounding. Default is 0."
-msgstr "<emph>štdecimalnihmest</emph> (neobvezno): določa, koliko decimalnih mest je vključenih v zaokroževanje. Privzeta vrednost je 0."
+msgid "<emph>numdecimalplaces</emph>: Optional argument that specifies the number of decimal digits in the resulting rounded value. The default value is 0."
+msgstr "<emph>numdecimalplaces</emph> je neobvezen argument, ki določa število značilnih števk, na katere želimo zaokrožiti vrnjeno vrednost. Privzeta vrednost je 0."
+
+#: 03170000.xhp
+msgctxt ""
+"03170000.xhp\n"
+"par_id541634154843718\n"
+"help.text"
+msgid "The following examples illustrate the \"round-to-even\" rule:"
+msgstr "Naslednji primeri ilustrirajo pravilo »zaokroži-na-sodo«:"
+
+#: 03170000.xhp
+msgctxt ""
+"03170000.xhp\n"
+"bas_id651634154984931\n"
+"help.text"
+msgid "' Rounding to the nearest integer (decimalplaces = 0)"
+msgstr "' Zaokrožanje na najbližje celo število, brez decimalk (decimalplaces = 0)"
+
+#: 03170000.xhp
+msgctxt ""
+"03170000.xhp\n"
+"bas_id651634157812537\n"
+"help.text"
+msgid "' Rounding with 2 decimal digits (decimalplaces = 2)"
+msgstr "' Zaokrožanje z 2 decimalkama (decimalplaces = 2)"
 
 #: 03170000.xhp
 msgctxt ""
@@ -34558,32 +34526,32 @@ msgctxt ""
 "calc_functions.xhp\n"
 "tit\n"
 "help.text"
-msgid "Calling Calc Functions in Macros"
-msgstr "Klicanje funkcij programa Calc v makrih"
+msgid "Using Calc Functions in Macros"
+msgstr "Uporaba funkcij programa Calc v makrih"
 
 #: calc_functions.xhp
 msgctxt ""
 "calc_functions.xhp\n"
 "bm_id291592361063458\n"
 "help.text"
-msgid "<bookmark_value>calling Calc function;macros</bookmark_value>    <bookmark_value>macros;calling Calc function</bookmark_value>    <bookmark_value>createUNOservice function;calling Calc function</bookmark_value>    <bookmark_value>API;addin.Analysis</bookmark_value>"
-msgstr "<bookmark_value>funkcije Calc;klicanje v makrih</bookmark_value><bookmark_value>makri;klicanje funkcij Calc</bookmark_value><bookmark_value>funkcija CreateUnoService;klicanje funkcij programa Calc</bookmark_value><bookmark_value>API;addin.Analysis</bookmark_value>"
+msgid "<bookmark_value>calling Calc function;macros</bookmark_value>    <bookmark_value>setting Calc function;macros</bookmark_value>    <bookmark_value>macros;calling Calc function</bookmark_value>    <bookmark_value>macros;setting Calc function</bookmark_value>    <bookmark_value>createUNOservice function;calling Calc function</bookmark_value>    <bookmark_value>API;sheet.addin.Analysis</bookmark_value>    <bookmark_value>API;sheet.FunctionAccess</bookmark_value>"
+msgstr "<bookmark_value>funkcije Calc;klicanje v makrih</bookmark_value><bookmark_value>funkcije Calc;določanje v makrih</bookmark_value><bookmark_value>makri;klicanje funkcij Calc</bookmark_value><bookmark_value>makri;določanje funkcij Calc</bookmark_value><bookmark_value>funkcija CreateUnoService;klicanje funkcij programa Calc</bookmark_value><bookmark_value>API;sheet.addin.Analysis</bookmark_value><bookmark_value>API;sheet.FunctionAccess</bookmark_value>"
 
 #: calc_functions.xhp
 msgctxt ""
 "calc_functions.xhp\n"
 "hd_id91592352089011\n"
 "help.text"
-msgid "<variable id=\"CallingCalcFunctionsh1\"><link href=\"text/sbasic/shared/calc_functions.xhp\" name=\"Calling Calc Functions\">Calling Calc Functions</link></variable>"
-msgstr "<variable id=\"CallingCalcFunctionsh1\"><link href=\"text/sbasic/shared/calc_functions.xhp\" name=\"Klicanje funkcij programa Calc\">Klicanje funkcij programa Calc</link></variable>"
+msgid "<variable id=\"CallingCalcFunctionsh1\"><link href=\"text/sbasic/shared/calc_functions.xhp\" name=\"Calling Calc Functions\">Using Calc Functions in Macros</link></variable>"
+msgstr "<variable id=\"CallingCalcFunctionsh1\"><link href=\"text/sbasic/shared/calc_functions.xhp\" name=\"Raba funkcij programa Calc v makrih\">Raba funkcij programa Calc v makrih</link></variable>"
 
 #: calc_functions.xhp
 msgctxt ""
 "calc_functions.xhp\n"
 "par_id1001592359117987\n"
 "help.text"
-msgid "In addition to the native BASIC functions, you can call Calc functions in your macros and scripts."
-msgstr "Poleg lastnih funkcij BASIC lahko v svojih makrih in skriptih kličete funkcije programa Calc."
+msgid "In addition to the native BASIC functions, you can call Calc functions in your macros and scripts and set Calc functions in cell formulas."
+msgstr "Poleg domorodnih funkcij BASIC lahko v svojih makrih in skriptih kličete funkcije programa Calc in določite funkcije Calc v formulah celic."
 
 #: calc_functions.xhp
 msgctxt ""
@@ -34604,10 +34572,138 @@ msgstr "Uporabite funkcijo <literal>CreateUNOService</literal> za dostop do stor
 #: calc_functions.xhp
 msgctxt ""
 "calc_functions.xhp\n"
+"par_id751629987917982\n"
+"help.text"
+msgid "The example below creates a function named <literal>MyVlook</literal> that calls the <literal>VLOOKUP</literal> Calc function over a data array passed as argument and returns the value found by the function."
+msgstr "Spodnji primer kode ustvari funkcijo <literal>MyVlook</literal>, ki kliče funkcijo <literal>VLOOKUP</literal> modula Calc z podatkovno matriko, ki je podana kot argument, in vrne vrednost, ki jo funkcija najde."
+
+#: calc_functions.xhp
+msgctxt ""
+"calc_functions.xhp\n"
+"bas_id271629987890173\n"
+"help.text"
+msgid "' Always use the function name in English"
+msgstr "' Vedno uporabite angleško ime funkcije"
+
+#: calc_functions.xhp
+msgctxt ""
+"calc_functions.xhp\n"
+"par_id241629988142878\n"
+"help.text"
+msgid "The macro below presents an example of how the <literal>MyVlook</literal> function can be called. If first creates a 5-by-2 data array and then calls the function <literal>MyVlook</literal> and shows the returned value using <literal>MsgBox</literal>."
+msgstr "Spodnji makro predstavlja primer, kako lahko kličete funkcijo <literal>MyVlook</literal>. Najprej ustvari matriko 5x2, nato kliče funkcijo <literal>MyVlook</literal> in izpiše vrnjeno vrednost z uporabi ukaza <literal>MsgBox</literal>."
+
+#: calc_functions.xhp
+msgctxt ""
+"calc_functions.xhp\n"
+"bas_id331629988249519\n"
+"help.text"
+msgid "' Creates a 5 by 2 array and fills it with data"
+msgstr "' Ustvari matriko 5 x 2 in jo zapolni s podatki"
+
+#: calc_functions.xhp
+msgctxt ""
+"calc_functions.xhp\n"
+"bas_id641629988249903\n"
+"help.text"
+msgid "myData(1, 1) = 1 : myData(1, 2) = \"Strongly disagree\""
+msgstr "myData(1, 1) = 1 : myData(1, 2) = \"Močno nasprotujem\""
+
+#: calc_functions.xhp
+msgctxt ""
+"calc_functions.xhp\n"
+"bas_id201629988250130\n"
+"help.text"
+msgid "myData(2, 1) = 3 : myData(2, 2) = \"Disagree\""
+msgstr "myData(2, 1) = 3 : myData(2, 2) = \"Nasprotujem\""
+
+#: calc_functions.xhp
+msgctxt ""
+"calc_functions.xhp\n"
+"bas_id291629988250317\n"
+"help.text"
+msgid "myData(3, 1) = 5 : myData(3, 2) = \"Undecided\""
+msgstr "myData(3, 1) = 5 : myData(3, 2) = \"Neodločeno\""
+
+#: calc_functions.xhp
+msgctxt ""
+"calc_functions.xhp\n"
+"bas_id731629988250530\n"
+"help.text"
+msgid "myData(4, 1) = 7 : myData(4, 2) = \"Agree\""
+msgstr "myData(4, 1) = 7 : myData(4, 2) = \"Podpiram\""
+
+#: calc_functions.xhp
+msgctxt ""
+"calc_functions.xhp\n"
+"bas_id641629988250759\n"
+"help.text"
+msgid "myData(5, 1) = 9 : myData(5, 2) = \"Strongly agree\""
+msgstr "myData(5, 1) = 9 : myData(5, 2) = \"Močno podpiram\""
+
+#: calc_functions.xhp
+msgctxt ""
+"calc_functions.xhp\n"
+"bas_id521629988250997\n"
+"help.text"
+msgid "' Looks up the data array"
+msgstr "' Poišče podatkovno matriko"
+
+#: calc_functions.xhp
+msgctxt ""
+"calc_functions.xhp\n"
+"bas_id491629988324413\n"
+"help.text"
+msgid "' Shows the message \"Disagree\""
+msgstr "' Pokaže sporočilo \"Nasprotujem\""
+
+#: calc_functions.xhp
+msgctxt ""
+"calc_functions.xhp\n"
+"hd_id261632673377666\n"
+"help.text"
+msgid "Setting Cell Formulas Containing Internal Calc Functions"
+msgstr "Določanje formul v celicah z internimi funkcijami programa Calc"
+
+#: calc_functions.xhp
+msgctxt ""
+"calc_functions.xhp\n"
+"par_id41632673385259\n"
+"help.text"
+msgid "Use the formula text string to add a formula to a spreadsheet cell."
+msgstr "Uporabite formulo v besedilnem nizu, da dodate formulo v celico preglednice."
+
+#: calc_functions.xhp
+msgctxt ""
+"calc_functions.xhp\n"
+"par_id291632673370039\n"
+"help.text"
+msgid "All Calc functions must be expressed with their English names."
+msgstr "Vse funkcije programa Calc je potrebno izraziti z njihovimi angleškimi imeni."
+
+#: calc_functions.xhp
+msgctxt ""
+"calc_functions.xhp\n"
+"par_id101632673833258\n"
+"help.text"
+msgid "REM Add a formula to cell A1. Function name must be in English."
+msgstr "REM Dodaj formulo v celico A1. Ime funkcije mora biti v angleščini."
+
+#: calc_functions.xhp
+msgctxt ""
+"calc_functions.xhp\n"
+"par_id191632673837838\n"
+"help.text"
+msgid "REM Cell A1 displays the localized function name"
+msgstr "REM Celica A1 prikaže prevedeno ime funkcije, če prevod obstaja."
+
+#: calc_functions.xhp
+msgctxt ""
+"calc_functions.xhp\n"
 "hd_id561592352225441\n"
 "help.text"
 msgid "Calling Add-In Calc Functions in BASIC"
-msgstr "Klicanje funkcij dodatkov programa Calc v Basicu"
+msgstr "Klicanje funkcij dodatka programa Calc v Basicu"
 
 #: calc_functions.xhp
 msgctxt ""
@@ -34615,14 +34711,14 @@ msgctxt ""
 "par_id261592359338681\n"
 "help.text"
 msgid "The Calc Add-In functions are in service <literal>com.sun.star.sheet.addin.Analysis</literal>."
-msgstr "Funkcije dodatkov programa Calc se nahajajo v storitvi <literal>com.sun.star.sheet.addin.Analysis</literal>."
+msgstr "Funkcije dodatka programa Calc se nahajajo v storitvi <literal>com.sun.star.sheet.addin.Analysis</literal>."
 
 #: calc_functions.xhp
 msgctxt ""
 "calc_functions.xhp\n"
 "bas_id421592358343633\n"
 "help.text"
-msgid "REM Example calling Addin function SQRTPI"
+msgid "REM Example calling Add-in function SQRTPI"
 msgstr "REM Primer klicanja funkcije dodatka SQRTPI"
 
 #: calc_functions.xhp
@@ -34640,6 +34736,54 @@ msgctxt ""
 "help.text"
 msgid "MySQRTPI = oService.getSqrtPi(arg)"
 msgstr "MojSQRTPI = oStoritev.getSqrtPi(arg)"
+
+#: calc_functions.xhp
+msgctxt ""
+"calc_functions.xhp\n"
+"hd_id251632673972700\n"
+"help.text"
+msgid "Setting Cell Formulas with Add-In Functions"
+msgstr "Določanje formul v celicah s funkcijami dodatka"
+
+#: calc_functions.xhp
+msgctxt ""
+"calc_functions.xhp\n"
+"par_id431632674656090\n"
+"help.text"
+msgid "The Add-In function must be expressed by its UNO service name."
+msgstr "Funkcijo dodatka je potrebno izraziti z imenom njene storitve UNO."
+
+#: calc_functions.xhp
+msgctxt ""
+"calc_functions.xhp\n"
+"par_id101632623833258\n"
+"help.text"
+msgid "REM Add an Add-In formula to cell A1. Function name is the UNO service name."
+msgstr "REM Dodaj formulo dodatka v celico A1. Ime funkcije je ime storitve UNO."
+
+#: calc_functions.xhp
+msgctxt ""
+"calc_functions.xhp\n"
+"par_id191632673867838\n"
+"help.text"
+msgid "REM Cell A1 displays the localized function name"
+msgstr "REM Celica A1 prikaže prevedeno ime funkcije, če obstaja"
+
+#: calc_functions.xhp
+msgctxt ""
+"calc_functions.xhp\n"
+"hd_id661632676716180\n"
+"help.text"
+msgid "Add-In Functions UNO service Names"
+msgstr "Imena storitev UNO funkcij dodatka"
+
+#: calc_functions.xhp
+msgctxt ""
+"calc_functions.xhp\n"
+"par_id651629988674793\n"
+"help.text"
+msgid "The table below presents a list of all Calc Add-In functions and their respective UNO service names."
+msgstr "Spodnja tabela predstavlja seznam vseh funkcij dodatka Calc in imena njihovih ustreznih storitev UNO."
 
 #: calc_functions.xhp
 msgctxt ""
@@ -35577,6 +35721,334 @@ msgctxt ""
 msgid "BasicCodeStubs"
 msgstr "Koščki kode Basic"
 
+#: collection.xhp
+msgctxt ""
+"collection.xhp\n"
+"tit\n"
+"help.text"
+msgid "Collection Object"
+msgstr "Predmet Collection"
+
+#: collection.xhp
+msgctxt ""
+"collection.xhp\n"
+"bm_id3149205\n"
+"help.text"
+msgid "<bookmark_value>Collection Object</bookmark_value>      <bookmark_value>Collection;Count</bookmark_value>"
+msgstr "<bookmark_value>Collection</bookmark_value>      <bookmark_value>predmeti Collection;metoda Count</bookmark_value>"
+
+#: collection.xhp
+msgctxt ""
+"collection.xhp\n"
+"hd_id791633472607429\n"
+"help.text"
+msgid "<variable id=\"Collection_h1\"><link href=\"text/sbasic/shared/collection.xhp\" name=\"New_Operator\">Collection Object</link></variable>"
+msgstr "<variable id=\"Collection_h1\"><link href=\"text/sbasic/shared/collection.xhp\" name=\"Predmet Collection\">Predmet Collection</link></variable>"
+
+#: collection.xhp
+msgctxt ""
+"collection.xhp\n"
+"par_id581633961735332\n"
+"help.text"
+msgid "Collections can be used to store items of different types. Each item can be accessed by its index or by an optional key associated with it."
+msgstr "Predmete Collection (angl. zbirka) lahko uporabljamo za shranjevanje elementov različnih vrst. Do vsakega elementa lahko dostopamo z njegovim indeksom ali z neobveznim ključem, povezanim z njim."
+
+#: collection.xhp
+msgctxt ""
+"collection.xhp\n"
+"par_id131633961959816\n"
+"help.text"
+msgid "A <literal>Collection</literal> object has the following methods:"
+msgstr "Predmet <literal>Collection</literal> ima naslednje metode:"
+
+#: collection.xhp
+msgctxt ""
+"collection.xhp\n"
+"par_id331633962000259\n"
+"help.text"
+msgid "<emph>Add:</emph> inserts a new item into the collection. Optionally a string value can be defined as the key to the item."
+msgstr "<emph>Add:</emph> vstavi nov element v zbirko. Neobvezno lahko določite vrednost niza kot ključ za predmet."
+
+#: collection.xhp
+msgctxt ""
+"collection.xhp\n"
+"par_id181633962000767\n"
+"help.text"
+msgid "<emph>Count:</emph> returns the number of items in the collection."
+msgstr "<emph>Count:</emph> vrne število elementov v zbirki."
+
+#: collection.xhp
+msgctxt ""
+"collection.xhp\n"
+"par_id521633962001072\n"
+"help.text"
+msgid "<emph>Item:</emph> returns the item in the collection by passing its index or key."
+msgstr "<emph>Item:</emph> vrne element v zbirki s podajanjem njegovega indeksa ali ključa."
+
+#: collection.xhp
+msgctxt ""
+"collection.xhp\n"
+"par_id981633962001272\n"
+"help.text"
+msgid "<emph>Remove:</emph> removes the specified item from the collection by its index or key."
+msgstr "<emph>Remove:</emph> odstrani naveden element iz zbirke z njegovim indeksom ali ključem."
+
+#: collection.xhp
+msgctxt ""
+"collection.xhp\n"
+"par_id221633976539661\n"
+"help.text"
+msgid "Items in a Collection can be accessed either by their indices (as in a 1-based single-dimensional Array) or by their associated keys."
+msgstr "Elementi v predmetu Collection lahko dostopate po njegovih indeksih (kot v enodimenzionalnem polju na osnovi števila 1) ali prek z njimi povezanih ključev."
+
+#: collection.xhp
+msgctxt ""
+"collection.xhp\n"
+"par_id811634214809970\n"
+"help.text"
+msgid "The <link href=\"text/sbasic/shared/03/sf_dictionary.xhp\" name=\"SFDic_link\"><literal>ScriptForge Dictionary</literal></link> service extends the <literal>Collection</literal> object by providing supplemental features as key retrieval and replacement, as well as import/export to Array objects and JSON strings."
+msgstr "Storitev <link href=\"text/sbasic/shared/03/sf_dictionary.xhp\" name=\"Storitev Dictionary ScriptForge\"><literal>ScriptForge Dictionary</literal></link> razširja predmet <literal>Collection</literal> z zagotavljanjem dopolnilnih funkcij, kot so pridobivanje in zamenjava ključev ter uvoz in izvoz v predmete Array in nize JSON."
+
+#: collection.xhp
+msgctxt ""
+"collection.xhp\n"
+"hd_id51633962353863\n"
+"help.text"
+msgid "Creating a Collection"
+msgstr "Ustvarjanje predmeta Collection"
+
+#: collection.xhp
+msgctxt ""
+"collection.xhp\n"
+"par_id491633962366024\n"
+"help.text"
+msgid "To create a <literal>Collection</literal> use the <literal>New</literal> keyword. The following example creates a <literal>Collection</literal> object and populates it with three items:"
+msgstr "Predmet <literal>Collection</literal> ustvarite z uporabo ključne besede <literal>New</literal>. Naslednji primer ustvari predmet <literal>Collection</literal> in ga napolni s tremi elementi:"
+
+#: collection.xhp
+msgctxt ""
+"collection.xhp\n"
+"hd_id421633962742512\n"
+"help.text"
+msgid "Adding Items"
+msgstr "Dodajanje elementov"
+
+#: collection.xhp
+msgctxt ""
+"collection.xhp\n"
+"bm_id591633974561425\n"
+"help.text"
+msgid "<bookmark_value>Collection;Add</bookmark_value>"
+msgstr "<bookmark_value>predmeti Collection;metoda Add</bookmark_value>"
+
+#: collection.xhp
+msgctxt ""
+"collection.xhp\n"
+"par_id261633962766238\n"
+"help.text"
+msgid "The <literal>Add</literal> method can be used to add new items into the <literal>Collection</literal> object."
+msgstr "Metodo <literal>Add</literal> lahko uporabite za dodajanje novih elementov v predmet <literal>Collection</literal>."
+
+#: collection.xhp
+msgctxt ""
+"collection.xhp\n"
+"par_id501633974650241\n"
+"help.text"
+msgid "<emph>item:</emph> the item to be added to the <literal>Collection</literal>. May be of any type."
+msgstr "<emph>item:</emph> element, ki bo dodan v predmet <literal>Collection</literal>. Lahko je poljubne vrste."
+
+#: collection.xhp
+msgctxt ""
+"collection.xhp\n"
+"par_id181633974650705\n"
+"help.text"
+msgid "<emph>key:</emph> string value used as the unique key used to identify this value."
+msgstr "<emph>key</emph>: niz, uporabljen kot enkratni ključ, s katerim boste identificirali element."
+
+#: collection.xhp
+msgctxt ""
+"collection.xhp\n"
+"par_id391633974651050\n"
+"help.text"
+msgid "<emph>before, after:</emph> optional keyword argument that indicates where the new item will be placed in the <literal>Collection</literal>. Only one of the arguments <literal>before</literal> or <literal>after</literal> can be specified to determine the index or key before which (or after which) the new item is to be placed."
+msgstr "<emph>before, after:</emph> neobvezni argument ključnih besed, ki nakazuje, kam bo postavljen novi element v predmet <literal>Collection</literal>. Navedete lahko le enega od argumentov <literal>before</literal> (pred) in <literal>after</literal> (za), da določite indeks ali ključ, pred katerim (ali za katerim) po umeščen novi element."
+
+#: collection.xhp
+msgctxt ""
+"collection.xhp\n"
+"par_id211633962988398\n"
+"help.text"
+msgid "The example below adds two elements into a <literal>Collection</literal>. The first has a key associated with it, whereas the second does not."
+msgstr "Spodnji primer doda dva elementa v predmet <literal>Collection</literal>. Prvi ima z njim povezan ključ, drugi ne."
+
+#: collection.xhp
+msgctxt ""
+"collection.xhp\n"
+"par_id71633963110632\n"
+"help.text"
+msgid "The <literal>Add</literal> method also supports keyword arguments:"
+msgstr "Metoda <literal>Add</literal> podpira tudi argumente ključnih besed:"
+
+#: collection.xhp
+msgctxt ""
+"collection.xhp\n"
+"par_id941633963225913\n"
+"help.text"
+msgid "Keys must be unique in a <literal>Collection</literal> object. Comparison between keys is <emph>case-insensitive</emph>. Adding duplicated keys will result in a runtime error."
+msgstr "Ključi morajo biti enkratni v predmetu <literal>Collection</literal>. Primerjava med ključi <emph>ne razlikuje velikih in malih črk</emph>. Dodajanje podvojenih ključev povzroči napako pri izvajanju."
+
+#: collection.xhp
+msgctxt ""
+"collection.xhp\n"
+"par_id891633975568372\n"
+"help.text"
+msgid "The example below illustrates how to use the <literal>Before</literal> and <literal>After</literal> keyword arguments to determine the position of the item that is being added."
+msgstr "Spodnji primer ilustrira rabo argumentov ključnih besed <literal>Before</literal> in <literal>After</literal> za določitev položaja predmeta, ki bo dodan."
+
+#: collection.xhp
+msgctxt ""
+"collection.xhp\n"
+"par_id121633976325472\n"
+"help.text"
+msgid "Items in a <literal>Collection</literal> object are assigned an integer index value that starts at 1 and corresponds to the order in which they were added."
+msgstr "Elementom v predmetu <literal>Collection</literal> se dodeli celoštevilska vrednost indeksa, ki se začne z 1 in ustreza vrstnemu redu, po katerem so bili elementi dodatni."
+
+#: collection.xhp
+msgctxt ""
+"collection.xhp\n"
+"hd_id141633977141797\n"
+"help.text"
+msgid "Accessing Items"
+msgstr "Dostop do elementov"
+
+#: collection.xhp
+msgctxt ""
+"collection.xhp\n"
+"bm_id481633977601834\n"
+"help.text"
+msgid "<bookmark_value>Collection;Item</bookmark_value>"
+msgstr "<bookmark_value>predmeti Collection;metoda Item</bookmark_value>"
+
+#: collection.xhp
+msgctxt ""
+"collection.xhp\n"
+"par_id431633977156315\n"
+"help.text"
+msgid "Use the <literal>Item</literal> method to access a given item by its index or key."
+msgstr "Uporabite metodo <literal>Item</literal> za dostop do danega elementa z njegovim indeksom ali ključem."
+
+#: collection.xhp
+msgctxt ""
+"collection.xhp\n"
+"par_id261633976447187\n"
+"help.text"
+msgid "<emph>index:</emph> an integer value specifying the index of the item to be returned."
+msgstr "<emph>index:</emph> celoštevilska vrednost, ki določa indeks elementa, ki bo vrnjen."
+
+#: collection.xhp
+msgctxt ""
+"collection.xhp\n"
+"par_id51633976782487\n"
+"help.text"
+msgid "<emph>key:</emph> a string value specifying the key of the item to be returned."
+msgstr "<emph>key:</emph> vrednost niza, ki določa ključ za element, ki bo vrnjen."
+
+#: collection.xhp
+msgctxt ""
+"collection.xhp\n"
+"hd_id651633976030220\n"
+"help.text"
+msgid "Removing Items"
+msgstr "Odstranjevanje elementov"
+
+#: collection.xhp
+msgctxt ""
+"collection.xhp\n"
+"bm_id311633977567197\n"
+"help.text"
+msgid "<bookmark_value>Collection;Remove</bookmark_value>"
+msgstr "<bookmark_value>predmeti Collection;metoda Remove</bookmark_value>"
+
+#: collection.xhp
+msgctxt ""
+"collection.xhp\n"
+"par_id391633976125206\n"
+"help.text"
+msgid "Use the <literal>Remove</literal> method to delete items from a <literal>Collection</literal> object."
+msgstr "Uporabite metodo <literal>Remove</literal>, da izbrišete elemente iz predmeta <literal>Collection</literal>."
+
+#: collection.xhp
+msgctxt ""
+"collection.xhp\n"
+"par_id121633976268027\n"
+"help.text"
+msgid "Items can be removed either by their indices or key values."
+msgstr "Elemente lahko odstranite s sklicevanjem na njihove indekse ali vrednosti ključev."
+
+#: collection.xhp
+msgctxt ""
+"collection.xhp\n"
+"par_id261633976447289\n"
+"help.text"
+msgid "<emph>index:</emph> an integer value specifying the index of the item to be removed."
+msgstr "<emph>index:</emph> celoštevilska vrednosti, ki določa indeks predmeta, ki ga želite odstraniti."
+
+#: collection.xhp
+msgctxt ""
+"collection.xhp\n"
+"par_id51633976782455\n"
+"help.text"
+msgid "<emph>key:</emph> a string value specifying the key of the item to be removed."
+msgstr "<emph>key:</emph>: niz, ki določa ključ elementa, ki ga želite odstraniti."
+
+#: collection.xhp
+msgctxt ""
+"collection.xhp\n"
+"hd_id491633978085731\n"
+"help.text"
+msgid "Iterating Over all Items"
+msgstr "Iteracija po vseh elementih"
+
+#: collection.xhp
+msgctxt ""
+"collection.xhp\n"
+"par_id91633978099143\n"
+"help.text"
+msgid "It is possible to use a <literal>For Each ... Next</literal> statement to iterate over all items in a <literal>Collection</literal>."
+msgstr "Uporabite lahko zanko z ukazi <literal>For Each ... Next</literal> za iteracijo po vseh elementih predmeta <literal>Collection</literal>."
+
+#: collection.xhp
+msgctxt ""
+"collection.xhp\n"
+"hd_id191634215349347\n"
+"help.text"
+msgid "Clearing a Collection"
+msgstr "Praznjenje predmeta Collection"
+
+#: collection.xhp
+msgctxt ""
+"collection.xhp\n"
+"par_id891634215363485\n"
+"help.text"
+msgid "To remove all items from a <literal>Collection</literal> object call the <literal>Remove</literal> method for each item, as illustrated in the example below:"
+msgstr "Če želite odstraniti vse elemente iz predmeta <literal>Collection</literal>, pokličite metodo <literal>Remove</literal> za vsak element, kar ilustrira spodnji primer:"
+
+#: collection.xhp
+msgctxt ""
+"collection.xhp\n"
+"bas_id681634215646028\n"
+"help.text"
+msgid "' Create a sample Collection with two entries"
+msgstr "' Ustvari primer predmeta Collection z dvema vnosoma"
+
+#: collection.xhp
+msgctxt ""
+"collection.xhp\n"
+"bas_id391634215647196\n"
+"help.text"
+msgid "' Removes all items in the collection"
+msgstr "' Odstrani vse elemente iz predmeta Collection"
+
 #: compatibilitymode.xhp
 msgctxt ""
 "compatibilitymode.xhp\n"
@@ -35742,8 +36214,8 @@ msgctxt ""
 "compatible.xhp\n"
 "N0106\n"
 "help.text"
-msgid "<literal>Option Compatible</literal> turns on the VBA-compatible Basic compiler mode at the module level."
-msgstr "Ukaz <literal>Option Compatible</literal> vključi združljivostni način za VBA v prevajalniku Basic na ravni modulov."
+msgid "<literal>Option Compatible</literal> extends %PRODUCTNAME Basic compiler and runtime, allowing supplemental language constructs to Basic."
+msgstr "<literal>Option Compatible</literal> razširja prevajalnik in izvajalno okolje %PRODUCTNAME Basic, s čimer omogoča dodatne jezikovne konstrukte v Basicu."
 
 #: compatible.xhp
 msgctxt ""
@@ -36353,6 +36825,70 @@ msgctxt ""
 msgid "<image src=\"media/helpimg/sbasic/char_fragment.svg\" id=\"img_id4157296484514\"><alt id=\"alt_id15152796484516\">type declaration characters</alt></image>"
 msgstr "<image src=\"media/helpimg/sbasic/char_fragment.svg\" id=\"img_id4157296484514\"><alt id=\"alt_id15152796484516\">Znaki za deklaracije vrste</alt></image>"
 
+#: is_keyword.xhp
+msgctxt ""
+"is_keyword.xhp\n"
+"tit\n"
+"help.text"
+msgid "Is Operator"
+msgstr "Operator Is"
+
+#: is_keyword.xhp
+msgctxt ""
+"is_keyword.xhp\n"
+"bm_id3149205\n"
+"help.text"
+msgid "<bookmark_value>Is Operator</bookmark_value>"
+msgstr "<bookmark_value>operator Is</bookmark_value>"
+
+#: is_keyword.xhp
+msgctxt ""
+"is_keyword.xhp\n"
+"hd_id791633472607429\n"
+"help.text"
+msgid "<variable id=\"IsOperator_h1\"><link href=\"text/sbasic/shared/is_keyword.xhp\" name=\"Is_Operator\">Is Operator</link></variable>"
+msgstr "<variable id=\"IsOperator_h1\"><link href=\"text/sbasic/shared/is_keyword.xhp\" name=\"Operator Is\">Operator Is</link></variable>"
+
+#: is_keyword.xhp
+msgctxt ""
+"is_keyword.xhp\n"
+"par_id3145090\n"
+"help.text"
+msgid "Tests if two Basic variables refer to the same object instance."
+msgstr "Preizkusi, če se spremenljivki Basic sklicujeta na isto instanco predmeta."
+
+#: is_keyword.xhp
+msgctxt ""
+"is_keyword.xhp\n"
+"par_id441633531311929\n"
+"help.text"
+msgid "If <literal>oObj1</literal> and <literal>oObj2</literal> are references to the same object instance, the result will be <emph>True</emph>."
+msgstr "Če sta <literal>oObj1</literal> in <literal>oObj2</literal> sklica na isto instanco predmeta, vrne rezultat <emph>True</emph>."
+
+#: is_keyword.xhp
+msgctxt ""
+"is_keyword.xhp\n"
+"par_id771633473462939\n"
+"help.text"
+msgid "The example below first defines a new type <literal>Student</literal>. Calling <literal>TestObjects</literal> creates the object <literal>oStudent1</literal> as a new object of this type."
+msgstr "Spodnji primer najprej določi novo vrsto <literal>Student</literal>. S klicem <literal>TestObjects</literal> ustvari predmet <literal>oStudent1</literal> kot nov predmet te vrste."
+
+#: is_keyword.xhp
+msgctxt ""
+"is_keyword.xhp\n"
+"par_id841633532400710\n"
+"help.text"
+msgid "The assignment <literal>oStudent2 = oStudent1</literal> actually copies the reference to the same object. Hence the result of applying the <literal>Is</literal> operator is <emph>True</emph>."
+msgstr "Dodelitev <literal>oStudent2 = oStudent1</literal> dejansko kopira sklic na isti predmet. Zato je rezultat uporabe operatorja <literal>Is</literal> vrednost <emph>True</emph>."
+
+#: is_keyword.xhp
+msgctxt ""
+"is_keyword.xhp\n"
+"par_id181633473874216\n"
+"help.text"
+msgid "The example below returns <emph>False</emph> because <literal>oStudent1</literal> and <literal>oStudent2</literal> are references to two different object instances, each created with the <literal>New</literal> operator."
+msgstr "Spodnji primer vrne <emph>False</emph>, ker sta <literal>oStudent1</literal> in <literal>oStudent2</literal> sklica na dve različni instanci predmeta, vsaka posebej ustvarjena z operatorjem <literal>New</literal>."
+
 #: keys.xhp
 msgctxt ""
 "keys.xhp\n"
@@ -36624,6 +37160,78 @@ msgctxt ""
 "help.text"
 msgid "%PRODUCTNAME installs a set of Basic macro libraries that can be accessed from your Basic macros."
 msgstr "%PRODUCTNAME namesti nabor knjižnic z makri Basic, do katerih lahko dostopate iz svojih makrov Basic."
+
+#: new_keyword.xhp
+msgctxt ""
+"new_keyword.xhp\n"
+"tit\n"
+"help.text"
+msgid "New Operator"
+msgstr "Operator New"
+
+#: new_keyword.xhp
+msgctxt ""
+"new_keyword.xhp\n"
+"bm_id3149205\n"
+"help.text"
+msgid "<bookmark_value>New Operator</bookmark_value>"
+msgstr "<bookmark_value>operator New</bookmark_value>"
+
+#: new_keyword.xhp
+msgctxt ""
+"new_keyword.xhp\n"
+"hd_id791633472607429\n"
+"help.text"
+msgid "<variable id=\"NewOperator_h1\"><link href=\"text/sbasic/shared/new_keyword.xhp\" name=\"New_Operator\">New Operator</link></variable>"
+msgstr "<variable id=\"NewOperator_h1\"><link href=\"text/sbasic/shared/new_keyword.xhp\" name=\"Operator New\">Operator New</link></variable>"
+
+#: new_keyword.xhp
+msgctxt ""
+"new_keyword.xhp\n"
+"par_id3145090\n"
+"help.text"
+msgid "Use the <literal>New</literal> operator to instantiate objects of user-defined types, as well as Uno services, structs and enumerations."
+msgstr "Uporabite operator <literal>New</literal> za tvorbo instance predmetov uporabniško določenih vrst, kot tudi storitev, struktur in enumeracij UNO."
+
+#: new_keyword.xhp
+msgctxt ""
+"new_keyword.xhp\n"
+"par_id831633630704012\n"
+"help.text"
+msgid "The <literal>New</literal> operator can be used either during variable declaration or in an assignment operation."
+msgstr "Operator <literal>New</literal> lahko uporabimo pri deklaraciji spremenljivke ali pri operaciji dodelitve vrednosti."
+
+#: new_keyword.xhp
+msgctxt ""
+"new_keyword.xhp\n"
+"par_id621633630563936\n"
+"help.text"
+msgid "The following example uses the <literal>New</literal> operator to create an instance of the <literal>PropertyValue</literal> Uno struct."
+msgstr "Naslednji primer uporablja operator <literal>New</literal>, da tvori instanco strukture UNO <literal>PropertyValue</literal>."
+
+#: new_keyword.xhp
+msgctxt ""
+"new_keyword.xhp\n"
+"bas_id631633630856218\n"
+"help.text"
+msgid "' Instantiating the object during variable declaration"
+msgstr "' Tvorba instance predmeta ob deklaraciji spremenljivke"
+
+#: new_keyword.xhp
+msgctxt ""
+"new_keyword.xhp\n"
+"bas_id11633631135918\n"
+"help.text"
+msgid "' The same can be accomplished with an assignment"
+msgstr "' Isto lahko dosežemo z dodelitvijo"
+
+#: new_keyword.xhp
+msgctxt ""
+"new_keyword.xhp\n"
+"par_id971633631328827\n"
+"help.text"
+msgid "The example below creates a new type <literal>Student</literal> and instantiates an object of this type:"
+msgstr "Spodnji primer ustvari novo vrsto <literal>Student</literal> in tvori instanco tovrstnega predmeta:"
 
 #: partition.xhp
 msgctxt ""
@@ -37550,16 +38158,16 @@ msgctxt ""
 "uno_objects.xhp\n"
 "bm_id171544787218331\n"
 "help.text"
-msgid "<bookmark_value>programming;UNO objects</bookmark_value>        <bookmark_value>UNO objects</bookmark_value>        <bookmark_value>UNO functions</bookmark_value>"
-msgstr "<bookmark_value>programiranje;predmeti UNO</bookmark_value><bookmark_value>UNO-predmeti</bookmark_value><bookmark_value>UNO-funkcije</bookmark_value>"
+msgid "<bookmark_value>programming;UNO objects</bookmark_value>    <bookmark_value>UNO objects</bookmark_value>    <bookmark_value>UNO functions</bookmark_value>"
+msgstr "<bookmark_value>programiranje;predmeti UNO</bookmark_value><bookmark_value>UNO-predmeti</bookmark_value><bookmark_value>UNO-funkcije</bookmark_value><bookmark_value>predmeti;UNO</bookmark_value><bookmark_value>funkcije;UNO</bookmark_value>"
 
 #: uno_objects.xhp
 msgctxt ""
 "uno_objects.xhp\n"
 "hd_id3156027\n"
 "help.text"
-msgid "UNO Objects, Functions and Services"
-msgstr "Predmeti UNO, funkcije in storitve"
+msgid "<variable id=\"UnoObjects_h1\"><link href=\"text/sbasic/shared/uno_objects.xhp\" name=\"UnoObjects_help\">UNO Objects, Functions and Services</link></variable>"
+msgstr "<variable id=\"UnoObjects_h1\"><link href=\"text/sbasic/shared/uno_objects.xhp\" name=\"Stran predmetov UNO\">Predmeti, funkcije in storitve UNO Basic</link></variable>"
 
 #: uno_objects.xhp
 msgctxt ""
