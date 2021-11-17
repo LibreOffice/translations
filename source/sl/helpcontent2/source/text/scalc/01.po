@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: LibreOffice 7.3\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2021-10-22 21:11+0200\n"
-"PO-Revision-Date: 2021-10-26 02:41+0200\n"
+"POT-Creation-Date: 2021-11-16 16:12+0100\n"
+"PO-Revision-Date: 2021-11-16 19:21+0200\n"
 "Last-Translator: Martin Srebotnjak <miles@filmsi.net>\n"
 "Language-Team: sl.libreoffice.org\n"
 "Language: sl\n"
@@ -11438,8 +11438,8 @@ msgctxt ""
 "04060106.xhp\n"
 "par_id3148511\n"
 "help.text"
-msgid "TRUNC(Number; Count)"
-msgstr "TRUNC(število; števec)"
+msgid "TRUNC(Number[; Count])"
+msgstr "TRUNC(število[; števec])"
 
 #: 04060106.xhp
 msgctxt ""
@@ -11480,6 +11480,22 @@ msgctxt ""
 "help.text"
 msgid "<item type=\"input\">=TRUNC(-1.234999;3)</item> returns -1.234. All the 9s are lost."
 msgstr "<item type=\"input\">=TRUNC(-1,234999;3)</item> vrne -1,234. Vse 9-ke so odrezane."
+
+#: 04060106.xhp
+msgctxt ""
+"04060106.xhp\n"
+"par_id441635243969504\n"
+"help.text"
+msgid "<input>=TRUNC(-45.67)</input> returns -45. The default value for <emph>Count</emph> is 0."
+msgstr "<input>=TRUNC(-45.67)</input> vrne -45. Privzeta vrednost za <emph>števec</emph> je 0."
+
+#: 04060106.xhp
+msgctxt ""
+"04060106.xhp\n"
+"par_id151635245092041\n"
+"help.text"
+msgid "Refer to the <link href=\"https://wiki.documentfoundation.org/Documentation/Calc_Functions/TRUNC\" name=\"TRUNC_Wiki\">TRUNC</link> wiki page for more details about this function."
+msgstr "Za podrobnosti o tej funkciji glejte <link href=\"https://wiki.documentfoundation.org/Documentation/Calc_Functions/TRUNC\" name=\"Stran wiki o funkciji TRUNC\">stran wiki o funkciji TRUNC</link> (v angl.)."
 
 #: 04060106.xhp
 msgctxt ""
@@ -11880,6 +11896,22 @@ msgctxt ""
 "help.text"
 msgid "<emph>Coefficients</emph> is a series of coefficients. For each coefficient the series sum is extended by one section."
 msgstr "<emph>Koeficienti</emph> je niz koeficientov. Za vsak koeficient je niz vsote povečan za en razdelek."
+
+#: 04060106.xhp
+msgctxt ""
+"04060106.xhp\n"
+"par_id431635251540138\n"
+"help.text"
+msgid "<input>=SERIESSUM(A1; 0; 1; {1; 2; 3})</input> calculates the value of 1+2x+3x<sup>2</sup>, where x is the value in cell A1. If A1 contains 1, the formula returns 6; if A1 contains 2, the formula returns 17; if A1 contains 3, the formula returns 34; and so on."
+msgstr "<input>=SERIESSUM(A1; 0; 1; {1; 2; 3})</input> izračuna vrednost 1+2x+3x<sup>2</sup>, kjer je x vrednost v celici A1. Če A1 vsebuje 1, formula vrne 6; če A1 vsebuje 2, formula vrne 17; če A1 vsebuje 3, formula vrne 34 itn."
+
+#: 04060106.xhp
+msgctxt ""
+"04060106.xhp\n"
+"par_id881635251427220\n"
+"help.text"
+msgid "Refer to the <link href=\"https://wiki.documentfoundation.org/Documentation/Calc_Functions/SERIESSUM\" name=\"SERIESSUM_Wiki\">SERIESSUM</link> wiki page for more details about this function."
+msgstr "Za podrobnosti o tej funkciji glejte <link href=\"https://wiki.documentfoundation.org/Documentation/Calc_Functions/SERIESSUM\" name=\"Stran wiki o funkciji SERIESSUM\">stran wiki o funkciji SERIESSUM</link> (v angl.)."
 
 #: 04060106.xhp
 msgctxt ""
@@ -12612,110 +12644,6 @@ msgstr "<item type=\"input\">=SINH(0)</item> vrne 0, kar je hiperbolični sinus 
 #: 04060106.xhp
 msgctxt ""
 "04060106.xhp\n"
-"bm_id3163596\n"
-"help.text"
-msgid "<bookmark_value>SUM function</bookmark_value>  <bookmark_value>adding;numbers in cell ranges</bookmark_value>"
-msgstr "<bookmark_value>funkcija SUM</bookmark_value><bookmark_value>seštevanje;števila v obsegu celic</bookmark_value>"
-
-#: 04060106.xhp
-msgctxt ""
-"04060106.xhp\n"
-"hd_id3163596\n"
-"help.text"
-msgid "<variable id=\"sum_head\"><link href=\"text/scalc/01/04060106.xhp#Section16\">SUM</link></variable>"
-msgstr "<variable id=\"sum_head\"><link href=\"text/scalc/01/04060106.xhp#Section16\">SUM</link></variable>"
-
-#: 04060106.xhp
-msgctxt ""
-"04060106.xhp\n"
-"par_id3163625\n"
-"help.text"
-msgid "<ahelp hid=\"HID_FUNC_SUMME\">Adds a set of numbers.</ahelp>"
-msgstr "<ahelp hid=\"HID_FUNC_SUMME\">Sešteje nabor števil.</ahelp>"
-
-#: 04060106.xhp
-msgctxt ""
-"04060106.xhp\n"
-"par_id3163656\n"
-"help.text"
-msgid "SUM(<embedvar href=\"text/scalc/01/ful_func.xhp#number255_1\" markup=\"keep\"/>)"
-msgstr "SUM(<embedvar href=\"text/scalc/01/ful_func.xhp#number255_1\" markup=\"keep\"/>)"
-
-#: 04060106.xhp
-msgctxt ""
-"04060106.xhp\n"
-"par_id3163704\n"
-"help.text"
-msgid "If you enter the numbers <item type=\"input\">2</item>; <item type=\"input\">3 </item>and <item type=\"input\">4</item> in the Number 1; 2 and 3 text boxes, 9 will be returned as the result."
-msgstr "Če v besedilne okvire 1; 2 in 3 vnesete števila <item type=\"input\">2</item>; <item type=\"input\">3 </item>in <item type=\"input\">4</item>, je rezultat 9."
-
-#: 04060106.xhp
-msgctxt ""
-"04060106.xhp\n"
-"par_id3151740\n"
-"help.text"
-msgid "<item type=\"input\">=SUM(A1;A3;B5)</item> calculates the sum of the three cells. <item type=\"input\">=SUM (A1:E10)</item> calculates the sum of all cells in the A1 to E10 cell range."
-msgstr "<item type=\"input\">=SUM(A1;A3;B5)</item> izračuna vsoto treh celic. <item type=\"input\">=SUM (A1:E10)</item> izračuna vsoto vseh celic v obsegu celic od A1 do E10."
-
-#: 04060106.xhp
-msgctxt ""
-"04060106.xhp\n"
-"par_id3151756\n"
-"help.text"
-msgid "Conditions linked by AND can be used with the function SUM() in the following manner:"
-msgstr "Pogoji, med seboj povezani z AND, se lahko uporabijo s funkcijo SUM() na naslednji način:"
-
-#: 04060106.xhp
-msgctxt ""
-"04060106.xhp\n"
-"par_id3151774\n"
-"help.text"
-msgid "Example assumption: You have entered invoices into a table. Column A contains the date value of the invoice, column B the amounts. You want to find a formula that you can use to return the total of all amounts only for a specific month, e.g. only the amount for the period >=2008-01-01 to <2008-02-01. The range with the date values covers A1:A40, the range containing the amounts to be totaled is B1:B40. C1 contains the start date, 2008<item type=\"input\">-01-01</item>, of the invoices to be included and C2 the date, 2008<item type=\"input\">-02-01</item>, that is no longer included."
-msgstr "Primer predpostavke: V tabelo ste vnesli račune. Stolpec A vsebuje datum računa, stolpec B pa zneske. Želite formulo, s katero bi lahko izračunali skupni znesek za le določen mesec, npr. le za obdobje >=2008-01-01 do <2008-02-01. Datumi obsegajo vrednosti A1:A40, zneski pa B1:B40. C1 vsebuje začetni datum (2008<item type=\"input\">-01-01</item>) računov, ki smo jih upoštevali, C2, ki vsebuje datum 2008<item type=\"input\">-02-01</item>, pa ni več vključen."
-
-#: 04060106.xhp
-msgctxt ""
-"04060106.xhp\n"
-"par_id3151799\n"
-"help.text"
-msgid "Enter the following formula as an array formula:"
-msgstr "Vnesite naslednjo formulo kot matrično formulo:"
-
-#: 04060106.xhp
-msgctxt ""
-"04060106.xhp\n"
-"par_id3151813\n"
-"help.text"
-msgid "<item type=\"input\">=SUM((A1:A40>=C1)*(A1:A40<C2)*B1:B40)</item>"
-msgstr "<item type=\"input\">=SUM((A1:A40>=C1)*(A1:A40<C2)*B1:B40)</item>"
-
-#: 04060106.xhp
-msgctxt ""
-"04060106.xhp\n"
-"par_id3151828\n"
-"help.text"
-msgid "In order to enter this as an array formula, you must press the Shift<switchinline select=\"sys\"><caseinline select=\"MAC\">+Command</caseinline><defaultinline>+ Ctrl</defaultinline></switchinline>+ Enter keys instead of simply pressing the Enter key to close the formula. The formula will then be shown in the <emph>Formula</emph> bar enclosed in braces."
-msgstr "Če želite to formulo vnesti kot matrično, pritisnite tipke dvigalka<switchinline select=\"sys\"><caseinline select=\"MAC\">+Cmd</caseinline><defaultinline>+krmilka</defaultinline></switchinline>+vnašalka, namesto da bi pritisnili le vnašalko, s čimer bi zaprli formulo. Formula se bo v oklepajih prikazala v vrstici <emph>Formula</emph>."
-
-#: 04060106.xhp
-msgctxt ""
-"04060106.xhp\n"
-"par_id3151869\n"
-"help.text"
-msgid "{=SUM((A1:A40>=C1)*(A1:A40<C2)*B1:B40)}"
-msgstr "{=SUM((A1:A40>=C1)*(A1:A40<C2)*B1:B40)}"
-
-#: 04060106.xhp
-msgctxt ""
-"04060106.xhp\n"
-"par_id3151884\n"
-"help.text"
-msgid "The formula is based on the fact that the result of a comparison is 1 if the criterion is met and 0 if it is not met. The individual comparison results will be treated as an array and used in matrix multiplication, and at the end the individual values will be totaled to give the result matrix."
-msgstr "Formula temelji na dejstvu, da je rezultat primerjave 1, če je pogoj dosežen, in 0, če ni dosežen. Posamezen rezultat primerjave bo obravnavan kot polje in bo uporabljen v množenju matrike, na koncu bodo posamezne vrednosti seštete in podale rezultat – matriko."
-
-#: 04060106.xhp
-msgctxt ""
-"04060106.xhp\n"
 "bm_id3151957\n"
 "help.text"
 msgid "<bookmark_value>SUMIF function</bookmark_value>  <bookmark_value>adding;specified numbers</bookmark_value>"
@@ -13279,15 +13207,15 @@ msgctxt ""
 "par_id0908200902131122\n"
 "help.text"
 msgid "<ahelp hid=\".\">Converts to euros a currency value expressed in one of the legacy currencies of 19 member states of the European Union, and vice versa.</ahelp> The conversion uses the fixed exchange rates at which the legacy currencies entered the euro."
-msgstr "<ahelp hid=\".\">V evre pretvori vrednost iz ene od opuščenih valut članic monetarne unije Evropske unije in obratno.</ahelp> Pretvorba uporablja fiksen menjalni tečaj, določen ob prehodu na evro."
+msgstr "<ahelp hid=\".\">V evre pretvori vrednost iz ene od opuščenih valut devetnajstih članic monetarne unije Evropske unije in obratno.</ahelp> Pretvorba uporablja fiksen menjalni tečaj, določen ob prehodu na evro."
 
 #: 04060106.xhp
 msgctxt ""
 "04060106.xhp\n"
 "par_id581631900947319\n"
 "help.text"
-msgid "We recommend using the more flexible EUROCONVERT function for converting between these currencies. For converting between many different units of measure, use the CONVERT function."
-msgstr "Za pretvorbo met temi valutami priporočamo rabo bolj prilagodljive funkcije EUROCONVERT. Za pretvorbo med različnimi merskimi enotami pa uporabite funkcijo CONVERT."
+msgid "We recommend using the more flexible EUROCONVERT function for converting between these currencies. CONVERT_OOO is not a standardized function and is not portable."
+msgstr "Za pretvorbo met temi valutami priporočamo rabo bolj prilagodljive funkcije EUROCONVERT. Funkcija CONVERT_OOO ni standardizirana funkcija in tako ni prenosljiva v sorodno programje."
 
 #: 04060106.xhp
 msgctxt ""
@@ -13327,7 +13255,7 @@ msgctxt ""
 "par_id1001631901312606\n"
 "help.text"
 msgid "<emph>Text1</emph> and <emph>Text2</emph> must each take one of the following values: \"ATS\", \"BEF\", \"CYP\", \"DEM\", \"EEK\", \"ESP\", \"EUR\", \"FIM\", \"FRF\", \"GRD\", \"IEP\", \"ITL\", \"LTL\", \"LUF\", \"LVL\", \"MTL\", \"NLG\", \"PTE\", \"SIT\", and \"SKK\"."
-msgstr "<emph>Besedilo1</emph> in <emph>besedilo2</emph> morata imeti eno od naslednjih vrednosti: \"ATS\", \"BEF\", \"CYP\", \"DEM\", \"EEK\", \"ESP\", \"EUR\", \"FIM\", \"FRF\", \"GRD\", \"IEP\", \"ITL\", \"LTL\", \"LUF\", \"LVL\", \"MTL\", \"NLG\", \"PTE\", \"SIT\" in \"SKK\"."
+msgstr "<emph>Besedilo1</emph> in <emph>besedilo2</emph> morata imeti eno od naslednjih vrednosti: \"ATS\", \"BEF\", \"CYP\", \"DEM\", \"EEK\", \"ESP\", \"EUR\", \"FIM\", \"FRF\", \"GRD\", \"IEP\", \"ITL\", \"LTL\", \"LUF\", \"LVL\", \"MTL\", \"NLG\", \"PTE\", \"SIT\" oz. \"SKK\"."
 
 #: 04060106.xhp
 msgctxt ""
@@ -13335,7 +13263,7 @@ msgctxt ""
 "par_id111631901383901\n"
 "help.text"
 msgid "One, and only one, of <emph>Text1</emph> or <emph>Text2</emph> must be equal to \"EUR\"."
-msgstr "Natanko eden od parametrov, <emph>besedilo1</emph> ali <emph>besedilo2</emph> mora imeti vrednost \"EUR\"."
+msgstr "Natanko eden od parametrov <emph>besedilo1</emph> in <emph>besedilo2</emph> mora imeti vrednost \"EUR\"."
 
 #: 04060106.xhp
 msgctxt ""
@@ -16566,8 +16494,8 @@ msgctxt ""
 "04060109.xhp\n"
 "par_id3149711\n"
 "help.text"
-msgid "<ahelp hid=\"HID_FUNC_SPALTE\">Returns the column number of a cell reference.</ahelp> If the reference is a cell the column number of the cell is returned; if the parameter is a cell area, the corresponding column numbers are returned in a single-row <link href=\"text/scalc/01/04060107.xhp#wasmatrix\" name=\"array\">array</link> if the formula is entered <link href=\"text/scalc/01/04060107.xhp#somatrixformel\" name=\"as an array formula\">as an array formula</link>. If the COLUMN function with an area reference parameter is not used for an array formula, only the column number of the first cell within the area is determined."
-msgstr "<ahelp hid=\"HID_FUNC_SPALTE\">Vrne številko stolpca sklica.</ahelp> Če je sklic celica, vrne številko stolpca celice; če je vrednost območje celic, vrne ustrezne številke stolpcev v obliki enovrstične <link href=\"text/scalc/01/04060107.xhp#wasmatrix\" name=\"matrika\">matrike</link>, če je formula vnešena <link href=\"text/scalc/01/04060107.xhp#somatrixformel\" name=\"kot matrična formula\">kot matrična formula</link>. Če funkcije COLUMN s parametrom sklica na območje ne uporabljamo za matrično formulo, funkcija vrne le številko stolpca prve celice znotraj območja."
+msgid "<ahelp hid=\"HID_FUNC_SPALTE\">Returns the column number of a cell reference.</ahelp> If the reference is a cell the column number of the cell is returned; if the parameter is a cell area, the corresponding column numbers are returned in a single-row <link href=\"text/scalc/01/04060107.xhp#wasmatrix\" name=\"array\">array</link> if the formula is entered <link href=\"text/scalc/01/04060107.xhp#creating_array_formulas\" name=\"as an array formula\">as an array formula</link>. If the COLUMN function with an area reference parameter is not used for an array formula, only the column number of the first cell within the area is determined."
+msgstr "<ahelp hid=\"HID_FUNC_SPALTE\">Vrne številko stolpca sklica.</ahelp> Če je sklic celica, vrne številko stolpca celice; če je vrednost območje celic, vrne ustrezne številke stolpcev v obliki enovrstične <link href=\"text/scalc/01/04060107.xhp#wasmatrix\" name=\"matrika\">matrike</link>, če je formula vnesena <link href=\"text/scalc/01/04060107.xhp#creating_array_formulas\" name=\"kot matrična formula\">kot matrična formula</link>. Če funkcije COLUMN s parametrom sklica na območje ne uporabljamo za matrično formulo, funkcija vrne le številko stolpca prve celice znotraj območja."
 
 #: 04060109.xhp
 msgctxt ""
@@ -16975,7 +16903,7 @@ msgctxt ""
 "par_id3147528\n"
 "help.text"
 msgid "If Type = 1 or the third parameter is missing, the index of the last value that is smaller or equal to the search criterion is returned. For Type = -1, the first value that is larger or equal is returned."
-msgstr "Če vnesemo vrsta = 1 ali če tretji parameter izpustimo, funkcija vrne zadnjo vrednost, ki je manjša ali enaka iskalnemu pogoju. To velja tudi, če iskalna matrika ni razvrščena. Če je vrsta = -1, funkcija vrne prvo vrednost, ki je večja ali enaka."
+msgstr "Če vnesemo vrsta enaka 1 ali če tretji parameter izpustimo, funkcija vrne zadnjo vrednost, ki je manjša ali enaka iskalnemu pogoju. To velja tudi, če iskalna matrika ni razvrščena. Če je vrsta enaka -1, funkcija vrne prvo vrednost, ki je večja ali enaka."
 
 #: 04060109.xhp
 msgctxt ""
@@ -17502,8 +17430,8 @@ msgctxt ""
 "04060109.xhp\n"
 "par_id3154564\n"
 "help.text"
-msgid "<ahelp hid=\"HID_FUNC_ZEILE\">Returns the row number of a cell reference.</ahelp> If the reference is a cell, it returns the row number of the cell. If the reference is a cell range, it returns the corresponding row numbers in a one-column <link href=\"text/scalc/01/04060107.xhp#wasmatrix\" name=\"Array\">Array</link> if the formula is entered <link href=\"text/scalc/01/04060107.xhp#somatrixformel\" name=\"as an array formula\">as an array formula</link>. If the ROW function with a range reference is not used in an array formula, only the row number of the first range cell will be returned."
-msgstr "<ahelp hid=\"HID_FUNC_ZEILE\">Vrne številko vrstice sklica.</ahelp> Če je sklic celica, funkcija vrne številko vrstice, v kateri je celica. Če je sklic obseg celic, funkcija vrne ustrezne številke vrstic v enostolpični <link href=\"text/scalc/01/04060107.xhp#wasmatrix\" name=\"matrika\">matriki</link>, če formulo vnesemo kot <link href=\"text/scalc/01/04060107.xhp#somatrixformel\" name=\"matrična formula\">matrično formulo</link>. Če funkcije ROW s sklicem na obseg ne uporavimo kot matrično formulo, bo vrnila le številko vrstice prvega obsega celic."
+msgid "<ahelp hid=\"HID_FUNC_ZEILE\">Returns the row number of a cell reference.</ahelp> If the reference is a cell, it returns the row number of the cell. If the reference is a cell range, it returns the corresponding row numbers in a one-column <link href=\"text/scalc/01/04060107.xhp#wasmatrix\" name=\"Array\">Array</link> if the formula is entered <link href=\"text/scalc/01/04060107.xhp#creating_array_formulas\" name=\"as an array formula\">as an array formula</link>. If the ROW function with a range reference is not used in an array formula, only the row number of the first range cell will be returned."
+msgstr "<ahelp hid=\"HID_FUNC_ZEILE\">Vrne številko vrstice sklica.</ahelp> Če je sklic celica, funkcija vrne številko vrstice, v kateri je celica. Če je sklic obseg celic, funkcija vrne ustrezne številke vrstic v enostolpični <link href=\"text/scalc/01/04060107.xhp#wasmatrix\" name=\"matrika\">matriki</link>, če formulo vnesemo kot <link href=\"text/scalc/01/04060107.xhp#creating_array_formulas\" name=\"matrična formula\">matrično formulo</link>. Če funkcije ROW s sklicem na obseg ne uporabimo kot matrično formulo, bo vrnila le številko vrstice prvega obsega celic."
 
 #: 04060109.xhp
 msgctxt ""
@@ -20535,7 +20463,7 @@ msgctxt ""
 "par_id151626469224135\n"
 "help.text"
 msgid "<input>=ROT13(\"Gur Qbphzrag Sbhaqngvba jnf sbhaqrq va Frcgrzore 2010.\")</input> returns the string \"The Document Foundation was founded in September 2010.\". Notice how spaces, digits, and full stops are unaffected by ROT13."
-msgstr "<input>=ROT13(\"Gur Qbphzrag Sbhaqngvba jnf sbhaqrq va Frcgrzore 2010.\")</input> vrne niz »The Document Foundation was founded in September 2010.«. Vidite lahko, da funkcija ROT13 ne vpliva na presledke, števke in pike."
+msgstr "<input>=ROT13(\"Gur Qbphzrag Sbhaqngvba fb hfgnabivyv frcgrzoen 2010.\")</input> vrne niz »The Document Foundation so ustanovili septembra 2010.«. Vidite lahko, da funkcija ROT13 ne vpliva na presledke, števke in pike."
 
 #: 04060111.xhp
 msgctxt ""
@@ -34023,7 +33951,7 @@ msgctxt ""
 "par_id3150254\n"
 "help.text"
 msgid "<ahelp hid=\"HID_FUNC_PHI\">Returns the value of the probability density function for a given value considering the standard normal distribution.</ahelp>"
-msgstr "<ahelp hid=\"HID_FUNC_PHI\">Vrne vrednosti funkcije gostote porazdelitve za standardno normalno porazdelitev.</ahelp>"
+msgstr "<ahelp hid=\"HID_FUNC_PHI\">Vrne vrednost funkcije gostote porazdelitve za podano vrednost ob upoštevanju standardne normalne porazdelitve.</ahelp>"
 
 #: 04060184.xhp
 msgctxt ""
@@ -47343,7 +47271,7 @@ msgctxt ""
 "par_id981625929097216\n"
 "help.text"
 msgid "<emph>CellValue</emph>: The value entered by the user, as a String."
-msgstr "<emph>VrednostCelice</emph>: vrednost, ki jo vnese uporabnik, podana kot niz."
+msgstr "<emph>CellValue</emph> (angl. VrednostCelice): vrednost, ki jo vnese uporabnik, podana kot niz."
 
 #: 12120300.xhp
 msgctxt ""
@@ -47351,7 +47279,7 @@ msgctxt ""
 "par_id421625929100152\n"
 "help.text"
 msgid "<emph>CellAddress</emph>: The address of the cell where the value was entered, as a String prefixed with the sheet name (e.g: \"Sheet1.A1\")."
-msgstr "<emph>NaslovCelice</emph>: naslov celice, kjer je vnesena vrednost, podan kot niz s predpono imena delovnega lista (npr. »DelovniList1.A1«)."
+msgstr "<emph>CellAddress</emph> (angl. NaslovCelice): naslov celice, kjer je vnesena vrednost, podan kot niz s predpono imena delovnega lista (npr. »DelovniList1.A1«)."
 
 #: 12120300.xhp
 msgctxt ""
@@ -47367,7 +47295,7 @@ msgctxt ""
 "par_id531545240216611\n"
 "help.text"
 msgid "msg = \"Invalid value: \" & \"'\" & CellValue & \"'\""
-msgstr "msg = \"Neveljavna vrednost: \" & \"'\" & VrednostCelice & \"'\""
+msgstr "msg = \"Neveljavna vrednost: \" & \"'\" & CellValue & \"'\""
 
 #: 12120300.xhp
 msgctxt ""
@@ -47375,7 +47303,7 @@ msgctxt ""
 "bas_id971625928577365\n"
 "help.text"
 msgid "msg = msg & \" in cell: \" & \"'\" & CellAddress & \"'\""
-msgstr "msg = msg & \" v celici: \" & \"'\" & NaslovCelice & \"'\""
+msgstr "msg = msg & \" v celici: \" & \"'\" & CellAddress & \"'\""
 
 #: 12120300.xhp
 msgctxt ""
@@ -56463,7 +56391,7 @@ msgctxt ""
 "par_id3154820\n"
 "help.text"
 msgid "<emph>Decimal Separator</emph> is a single character that specifies the decimal separator in <emph>Text</emph>. It can be omitted if <emph>Text</emph> does not include any decimal or group separators."
-msgstr "<emph>Decimalno ločilo</emph> je enojni znak, ki določa descimalno ločilo v podanem <emph>Besedilu</emph>. Lahko ga izpustite, če <emph>Besedilo</emph> ne vključuje decimalnega ločila ali ločila skupin."
+msgstr "<emph>Decimalno ločilo</emph> je enojni znak, ki določa decimalno ločilo v podanem <emph>Besedilu</emph>. Lahko ga izpustite, če <emph>Besedilo</emph> ne vključuje decimalnega ločila ali ločila skupin."
 
 #: func_numbervalue.xhp
 msgctxt ""
@@ -57768,6 +57696,86 @@ msgctxt ""
 "help.text"
 msgid "<link href=\"text/scalc/01/04060185.xhp#skew\">SKEW</link>"
 msgstr "<link href=\"text/scalc/01/04060185.xhp#skew\">SKEW</link>"
+
+#: func_sum.xhp
+msgctxt ""
+"func_sum.xhp\n"
+"tit\n"
+"help.text"
+msgid "SUM Function"
+msgstr "Funkcija SUM"
+
+#: func_sum.xhp
+msgctxt ""
+"func_sum.xhp\n"
+"id431636401649762\n"
+"help.text"
+msgid "<bookmark_value>SUM function</bookmark_value>      <bookmark_value>adding;numbers in cell ranges</bookmark_value>"
+msgstr "<bookmark_value>funkcija SUM</bookmark_value><bookmark_value>seštevanje;števila v obsegu celic</bookmark_value>"
+
+#: func_sum.xhp
+msgctxt ""
+"func_sum.xhp\n"
+"hd_id121636398275790\n"
+"help.text"
+msgid "<variable id=\"sum_head\"><link href=\"text/scalc/01/func_sum.xhp\" name=\"function SUM\">SUM</link></variable>"
+msgstr "<variable id=\"sum_head\"><link href=\"text/scalc/01/func_sum.xhp\" name=\"Funkcija SUM\">SUM</link></variable>"
+
+#: func_sum.xhp
+msgctxt ""
+"func_sum.xhp\n"
+"par_id491636401806866\n"
+"help.text"
+msgid "<variable id=\"func_sum_desc\"><ahelp hid=\".\">Adds a set of numbers.</ahelp></variable>"
+msgstr "<variable id=\"func_sum_desc\"><ahelp hid=\".\">Sešteje več števil.</ahelp></variable>"
+
+#: func_sum.xhp
+msgctxt ""
+"func_sum.xhp\n"
+"par_id3163656\n"
+"help.text"
+msgid "SUM(<embedvar href=\"text/scalc/01/ful_func.xhp#number255_1\" markup=\"keep\"/>)"
+msgstr "SUM(<embedvar href=\"text/scalc/01/ful_func.xhp#number255_1\" markup=\"keep\"/>)"
+
+#: func_sum.xhp
+msgctxt ""
+"func_sum.xhp\n"
+"par_id3163704\n"
+"help.text"
+msgid "<input>=SUM(2;3;4)</input> returns 9."
+msgstr "<input>=SUM(2;3;4)</input> vrne 9."
+
+#: func_sum.xhp
+msgctxt ""
+"func_sum.xhp\n"
+"par_id3151740\n"
+"help.text"
+msgid "<item type=\"input\">=SUM(A1;A3;B5)</item> calculates the sum of the three cells."
+msgstr "<item type=\"input\">=SUM(A1;A3;B5)</item> izračuna vsoto treh navedenih celic."
+
+#: func_sum.xhp
+msgctxt ""
+"func_sum.xhp\n"
+"par_id931636109030406\n"
+"help.text"
+msgid "<item type=\"input\">=SUM(A1:E10)</item> calculates the sum of all cells in the A1 to E10 cell range."
+msgstr "<item type=\"input\">=SUM(A1:E10)</item> izračuna vsoto vseh celic v obsegu celic od A1 do E10."
+
+#: func_sum.xhp
+msgctxt ""
+"func_sum.xhp\n"
+"par_id3151756\n"
+"help.text"
+msgid "A formula such as <input>=SUM((A1:A40>=C1)*(A1:A40<C2)*B1:B40)</input> may be entered as an <link href=\"text/scalc/01/04060107.html#hd_id3148474\" name=\"ARRAY_FORMULA\">array formula</link> by pressing the Shift<switchinline select=\"sys\"><caseinline select=\"MAC\">+Command</caseinline><defaultinline>+Ctrl</defaultinline></switchinline>+Enter keys instead of simply pressing the Enter key to finish entering the formula. The formula will then be shown in the Formula bar enclosed in braces and operates by multiplying corresponding elements of the arrays together and returning their sum."
+msgstr "Če želite formulo, kakršna je <input>=SUM((A1:A40>=C1)*(A1:A40<C2)*B1:B40)</input>, vnesti kot <link href=\"text/scalc/01/04060107.html#hd_id3148474\" name=\"Matrična formula\">matrično formulo</link>, pritisnite kombinacijo tipk dvigalka<switchinline select=\"sys\"><caseinline select=\"MAC\">+Cmd</caseinline><defaultinline>+krmilka</defaultinline></switchinline>+vnašalka, namesto da bi pritisnili le vnašalko, s čimer bi zaključili vnos v formulo. Formula se bo v oklepajih prikazala v vrstici Formula in deluje z množenjem ustreznih elementov polj skupaj in vrne njihovo vsoto."
+
+#: func_sum.xhp
+msgctxt ""
+"func_sum.xhp\n"
+"par_id661636108218550\n"
+"help.text"
+msgid "Refer to the <link href=\"https://wiki.documentfoundation.org/Documentation/Calc_Functions/SUM\" name=\"SUM_Wiki\">SUM</link> wiki page for more details about this function."
+msgstr "Za podrobnosti o tej funkciji glejte <link href=\"https://wiki.documentfoundation.org/Documentation/Calc_Functions/SUM\" name=\"Stran wiki o funkciji SUM\">stran wiki o funkciji SUM</link> (v angl.)."
 
 #: func_sumifs.xhp
 msgctxt ""
@@ -59807,7 +59815,7 @@ msgctxt ""
 "bm_id240920171018528200\n"
 "help.text"
 msgid "<bookmark_value>Data Stream;Live data stream</bookmark_value>    <bookmark_value>Data Stream;Streams</bookmark_value>"
-msgstr "<bookmark_value>toki podatkov</bookmark_value><bookmark_value>podatki;toki</bookmark_value>"
+msgstr "<bookmark_value>toki podatkov;živi toki podatkov</bookmark_value><bookmark_value>podatki;toki podatkov</bookmark_value>"
 
 #: live_data_stream.xhp
 msgctxt ""
@@ -59838,8 +59846,8 @@ msgctxt ""
 "live_data_stream.xhp\n"
 "par_id921633126951835\n"
 "help.text"
-msgid "This is an experimental feature and is disabled by default. To enable it, go to <menuitem>Tools - Options - Advanced</menuitem>  and check the option <emph>Enable experimental features (may be unstable)</emph>."
-msgstr "To je poskusna funkcionalnost in je privzeto onemogočena. Če jo želite omogočiti, izberite <switchinline select=\"sys\"><caseinline select=\"MAC\"><menuitem>%PRODUCTNAME – Nastavitve</menuitem></caseinline><defaultinline><menuitem>Orodja – Možnosti</menuitem></defaultinline></switchinline><menuitem> – %PRODUCTNAME – Napredno</menuitem> in potrdite polje <emph>Omogoči poskusne funkcionalnosti (lahko je nestabilno)</emph>.***"
+msgid "This is an experimental feature and is disabled by default. To enable it, go to <switchinline select=\"sys\"><caseinline select=\"MAC\"><menuitem>%PRODUCTNAME - Preferences</menuitem></caseinline><defaultinline><menuitem>Tools - Options</menuitem></defaultinline></switchinline><menuitem> – %PRODUCTNAME – Advanced</menuitem> and check the option <emph>Enable experimental features (may be unstable)</emph>."
+msgstr "To je preskusna funkcionalnost in je privzeto onemogočena. Če jo želite kljub temu omogočiti, izberite <switchinline select=\"sys\"><caseinline select=\"MAC\"><menuitem>%PRODUCTNAME – Nastavitve</menuitem></caseinline><defaultinline><menuitem>Orodja – Možnosti</menuitem></defaultinline></switchinline><menuitem> – %PRODUCTNAME – Napredno</menuitem> in potrdite polje <emph>Omogoči poskusne funkcionalnosti (lahko je nestabilno)</emph>."
 
 #: solver.xhp
 msgctxt ""
@@ -62159,7 +62167,7 @@ msgctxt ""
 "par_id1001240\n"
 "help.text"
 msgid "<ahelp hid=\"modules/scalc/ui/regressiondialog/RegressionDialog\">Performs linear, logarithmic, or power regression analysis of a data set comprising one dependent variable and multiple independent variables.</ahelp>"
-msgstr "<ahelp hid=\"modules/scalc/ui/regressiondialog/RegressionDialog\">Izdela linearno, logaritemsko ali eksponentno regresijsko analizo množice podatkov, sestavljenih iz ene odvisne spremenljivke in več neodvisnih spremenljivk.</ahelp>"
+msgstr "<ahelp hid=\"modules/scalc/ui/regressiondialog/RegressionDialog\">Izvede linearno, logaritemsko ali eksponentno regresijsko analizo množice podatkov, sestavljenih iz ene odvisne spremenljivke in več neodvisnih spremenljivk.</ahelp>"
 
 #: statistics_regression.xhp
 msgctxt ""
