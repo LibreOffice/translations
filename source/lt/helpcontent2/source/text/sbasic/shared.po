@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2021-11-16 12:08+0100\n"
+"POT-Creation-Date: 2021-11-24 12:02+0100\n"
 "PO-Revision-Date: 2021-03-03 18:36+0000\n"
 "Last-Translator: Valentina Dagiene <valentina.dagiene@mif.vu.lt>\n"
 "Language-Team: Lithuanian <https://translations.documentfoundation.org/projects/libo_help-master/textsbasicshared/lt/>\n"
@@ -25486,23 +25486,59 @@ msgctxt ""
 msgid "Parameters:"
 msgstr "Parametrai:"
 
-#. eJRAh
+#. 94dPA
 #: 03100500.xhp
 msgctxt ""
 "03100500.xhp\n"
 "par_id3159414\n"
 "help.text"
-msgid "<emph>Expression:</emph> Any numeric expression that you want to convert. If the <emph>Expression</emph> exceeds the value range between -32768 and 32767, $[officename] Basic reports an overflow error. To convert a string expression, the number must be entered as normal text (\"123.5\") using the default number format of your operating system."
-msgstr "<emph>Reiškinys:</emph> Bet kuris skaitinis reiškinys, kurį norite konvertuoti. Jei <emph>reiškinys</emph> viršija reikšmių diapazoną nuo -32768 iki 32767, tai „$[officename] Basic“ praneša apie perpildymo klaidą. Norėdami konvertuoti eilutės reiškinį, skaičius turi būti įvestas grynuoju tekstu („123,5“) naudojant numatytąjį operacinės sistemos skaičių formatą."
+msgid "<emph>Expression:</emph> Any expression that you want to convert."
+msgstr ""
 
-#. Tq6qi
+#. tSQka
+#: 03100500.xhp
+msgctxt ""
+"03100500.xhp\n"
+"par_id3159415\n"
+"help.text"
+msgid "If the argument is a number, it is used as numeric value of the expression."
+msgstr ""
+
+#. RD4KV
+#: 03100500.xhp
+msgctxt ""
+"03100500.xhp\n"
+"par_id3159416\n"
+"help.text"
+msgid "If the argument is string, the function trims the leading whitespace; then it tries to recognize a number in following characters. These syntaxes are recognized: decimal numbers (with optional leading sign) using decimal and group separators of locale configured in $[officename] (group separators are accepted in any position), with optional exponential notation like \"-12e+1\" (where an optionally signed whole decimal number after e or E or d or D defines power of 10); octal numbers like \"&Onnn...\", where \"nnn...\" after \"&O\" or \"&o\" is sequence of characters up to the next non-alphanumeric character, and must be no longer than 11 digits from 0 to 7; hexadecimal numbers like \"&Hnnn...\", where \"nnn...\" after \"&H\" or \"&h\" is sequence of characters up to the next non-alphanumeric character, and must be no longer than 8 digits from 0 to 9, A to F, or a to f. The rest of the string is ignored. If the string is not recognized, e.g. when after trimming leading whitespace it doesn't start with plus, minus, a decimal digit, or \"&\", or when the sequence after \"&O\" is longer than 11 characters or contains an alphabetic character, the numeric value of expression is 0."
+msgstr ""
+
+#. ioj8X
+#: 03100500.xhp
+msgctxt ""
+"03100500.xhp\n"
+"par_id3159417\n"
+"help.text"
+msgid "If the argument is an error, the error number is used as numeric value of the expression."
+msgstr ""
+
+#. S3UH5
+#: 03100500.xhp
+msgctxt ""
+"03100500.xhp\n"
+"par_id3159418\n"
+"help.text"
+msgid "If the argument is a date, number of days since 1899-12-30 (serial date) is used as numeric value of the expression. Time is represented as fraction of a day."
+msgstr ""
+
+#. TA6XM
 #: 03100500.xhp
 msgctxt ""
 "03100500.xhp\n"
 "par_id3150358\n"
 "help.text"
-msgid "This function always rounds the fractional part of a number to the nearest integer."
-msgstr "Ši funkcija visada apvalina trupmeninę skaičiaus dalį iki artimiausio sveikojo skaičiaus."
+msgid "After calculating the numeric value of the expression, it is rounded to the nearest integer (if needed), and if the result is not between -32768 and 32767, $[officename] Basic reports an overflow error. Otherwise, the result is returned."
+msgstr ""
 
 #. GsgXV
 #: 03100600.xhp
@@ -30130,14 +30166,14 @@ msgctxt ""
 msgid "<bookmark_value>Asc function</bookmark_value>"
 msgstr "<bookmark_value>Asc funkcija</bookmark_value>"
 
-#. UG5Ac
+#. CiUxk
 #: 03120101.xhp
 msgctxt ""
 "03120101.xhp\n"
 "hd_id3150499\n"
 "help.text"
-msgid "<link href=\"text/sbasic/shared/03120101.xhp\" name=\"Asc Function\">Asc Function</link>"
-msgstr "<link href=\"text/sbasic/shared/03120101.xhp\" name=\"Asc Function\">Asc funkcija</link>"
+msgid "<variable id=\"Asc_h1\"><link href=\"text/sbasic/shared/03120101.xhp\" name=\"Asc Function\">Asc Function</link></variable>"
+msgstr ""
 
 #. 8jiwA
 #: 03120101.xhp
@@ -30148,59 +30184,32 @@ msgctxt ""
 msgid "Returns the ASCII (American Standard Code for Information Interchange) value of the first character in a string expression."
 msgstr "Grąžina pirmojo simbolio eilutės reiškinyje ASCII (Amerikos standartinis informacijos mainų kodas) reikšmę."
 
-#. BNWoG
-#: 03120101.xhp
-msgctxt ""
-"03120101.xhp\n"
-"hd_id3155555\n"
-"help.text"
-msgid "Syntax:"
-msgstr "Sintaksė:"
-
-#. giD6a
+#. xFKDc
 #: 03120101.xhp
 msgctxt ""
 "03120101.xhp\n"
 "par_id3143267\n"
 "help.text"
-msgid "Asc (Text As String)"
-msgstr "Asc (Tekstas eilute)"
+msgid "Asc(string) As Long"
+msgstr ""
 
-#. qe9hh
-#: 03120101.xhp
-msgctxt ""
-"03120101.xhp\n"
-"hd_id3147242\n"
-"help.text"
-msgid "Return value:"
-msgstr "Grąžinama reikšmė:"
-
-#. kmTWL
+#. s239Q
 #: 03120101.xhp
 msgctxt ""
 "03120101.xhp\n"
 "par_id3150669\n"
 "help.text"
-msgid "Integer"
-msgstr "Sveikasis skaičius"
+msgid "Long"
+msgstr ""
 
-#. ZSM8u
-#: 03120101.xhp
-msgctxt ""
-"03120101.xhp\n"
-"hd_id3148473\n"
-"help.text"
-msgid "Parameters:"
-msgstr "Parametrai:"
-
-#. nuuuC
+#. DZtGt
 #: 03120101.xhp
 msgctxt ""
 "03120101.xhp\n"
 "par_id3149415\n"
 "help.text"
-msgid "<emph>Text:</emph> Any valid string expression. Only the first character in the string is relevant."
-msgstr "<emph>Tekstas:</emph> Bet kuris tinkamas eilutės reikškinys. Aktualus yra tik pirmasis eilutės simbolis."
+msgid "<emph>string</emph>: Any valid string expression. Only the first character in the string is relevant."
+msgstr ""
 
 #. CF7UG
 #: 03120101.xhp
@@ -30211,15 +30220,6 @@ msgctxt ""
 msgid "Use the Asc function to replace keys with values. If the Asc function encounters a blank string, $[officename] Basic reports a run-time error. In addition to 7 bit ASCII characters (Codes 0-127), the ASCII function can also detect non-printable key codes in ASCII code. This function can also handle 16 bit unicode characters."
 msgstr "Norėdami pakeisti raktus reikšmėmis, naudokite funkciją „Asc“. Jei funkcija „Asc“ aptinka tuščią eilutę, tai „$[officename] Basic“ praneša apie vykdymo laiko klaidą. Be 7 bitų ASCII simbolių (kodai 0–127), ASCII funkcija taip pat gali aptikti nespausdinamus raktų kodus ASCII kode. Ši funkcija taip pat gali valdyti 16 bitų unikodo simbolius."
 
-#. d4CxC
-#: 03120101.xhp
-msgctxt ""
-"03120101.xhp\n"
-"hd_id3159413\n"
-"help.text"
-msgid "Example:"
-msgstr "Pavyzdys:"
-
 #. VF7kK
 #: 03120101.xhp
 msgctxt ""
@@ -30229,14 +30229,14 @@ msgctxt ""
 msgid "Print ASC(\"A\") ' returns 65"
 msgstr "Print ASC(\"A\") ' grąžina 65"
 
-#. imR9f
+#. mntEX
 #: 03120101.xhp
 msgctxt ""
 "03120101.xhp\n"
 "par_id3148797\n"
 "help.text"
-msgid "Print ASC(\"Z\") ' returns 90"
-msgstr "Print ASC(\"Z\") ' grąžina 90"
+msgid "Print ASC(string:=\"Z\") ' returns 90"
+msgstr ""
 
 #. raPFD
 #: 03120101.xhp
@@ -30246,15 +30246,6 @@ msgctxt ""
 "help.text"
 msgid "Print ASC(\"Las Vegas\") ' returns 76, since only the first character is taken into account"
 msgstr "Print ASC(\"Las Vegas\") ' grąžina 76, nes atsižvelgiama tik į pirmąjį simbolį"
-
-#. 9QUxr
-#: 03120101.xhp
-msgctxt ""
-"03120101.xhp\n"
-"par_idN1067B\n"
-"help.text"
-msgid "<link href=\"text/sbasic/shared/03120102.xhp\">CHR</link>"
-msgstr "<link href=\"text/sbasic/shared/03120102.xhp\">CHR</link>"
 
 #. QMLJb
 #: 03120102.xhp
@@ -30274,14 +30265,14 @@ msgctxt ""
 msgid "<bookmark_value>Chr function</bookmark_value>"
 msgstr "<bookmark_value>Chr funkcija</bookmark_value>"
 
-#. tDyPJ
+#. vBnDE
 #: 03120102.xhp
 msgctxt ""
 "03120102.xhp\n"
 "hd_id3149205\n"
 "help.text"
-msgid "<link href=\"text/sbasic/shared/03120102.xhp\" name=\"Chr Function\">Chr Function</link>"
-msgstr "<link href=\"text/sbasic/shared/03120102.xhp\" name=\"Chr Function\">Chr funkcija</link>"
+msgid "<variable id=\"Chr_h1\"><link href=\"text/sbasic/shared/03120102.xhp\" name=\"Chr Function\">Chr Function</link></variable>"
+msgstr ""
 
 #. UTy3n
 #: 03120102.xhp
@@ -30292,14 +30283,14 @@ msgctxt ""
 msgid "Returns the character that corresponds to the specified character code."
 msgstr "Grąžina simbolį, kuris atitinka nurodytą simbolio kodą."
 
-#. bf6Zk
+#. cR5b8
 #: 03120102.xhp
 msgctxt ""
 "03120102.xhp\n"
 "par_id3150669\n"
 "help.text"
-msgid "Chr(Expression As Integer)"
-msgstr "Chr(reiškinys sveikuoju skaičiumi)"
+msgid "Chr[$](expression As Integer) As String"
+msgstr ""
 
 #. HnFyY
 #: 03120102.xhp
@@ -30355,14 +30346,14 @@ msgctxt ""
 msgid "' This example inserts quotation marks (ASCII value 34) in a string."
 msgstr "' Šis pavyzdys įterpia kabutes (ASCII reikšmė 34) eilutėje."
 
-#. aCHvq
+#. PpQfe
 #: 03120102.xhp
 msgctxt ""
 "03120102.xhp\n"
 "par_id3151380\n"
 "help.text"
-msgid "MsgBox \"A \"+ Chr$(34)+\"short\" + Chr$(34)+\" trip.\""
-msgstr "MsgBox \"A \"+ Chr$(34)+\"trumpa\" + Chr$(34)+\" kelionė.\""
+msgid "MsgBox \"A \"+ Chr$(34)+\"short\" + Chr(34)+\" trip.\""
+msgstr ""
 
 #. iCsGw
 #: 03120102.xhp
@@ -30372,15 +30363,6 @@ msgctxt ""
 "help.text"
 msgid "' The printout appears in the dialog as: A \"short\" trip."
 msgstr "' Spausdinamas rezultatas pasirodo dialoge: „Trumpa“ kelionė."
-
-#. q8bRB
-#: 03120102.xhp
-msgctxt ""
-"03120102.xhp\n"
-"par_idN10668\n"
-"help.text"
-msgid "<link href=\"text/sbasic/shared/03120101.xhp\">ASC</link>"
-msgstr "<link href=\"text/sbasic/shared/03120101.xhp\">ASC</link>"
 
 #. bzZDz
 #: 03120103.xhp
@@ -30706,14 +30688,14 @@ msgctxt ""
 msgid "<bookmark_value>AscW function</bookmark_value>"
 msgstr "<bookmark_value>AscW funkcija</bookmark_value>"
 
-#. 4pFSg
+#. 8JuD6
 #: 03120111.xhp
 msgctxt ""
 "03120111.xhp\n"
 "hd_id3150499\n"
 "help.text"
-msgid "<link href=\"text/sbasic/shared/03120111.xhp\" name=\"AscW Function [VBA]\">AscW Function [VBA]</link>"
-msgstr "<link href=\"text/sbasic/shared/03120111.xhp\" name=\"AscW Function [VBA]\">AscW funkcija [VBA]</link>"
+msgid "<variable id=\"AscW_h1\"><link href=\"text/sbasic/shared/03120111.xhp\" name=\"AscW Function [VBA]\">AscW Function [VBA]</link></variable>"
+msgstr ""
 
 #. XujWF
 #: 03120111.xhp
@@ -30724,23 +30706,23 @@ msgctxt ""
 msgid "Returns the Unicode value of the first character in a string expression."
 msgstr "Grąžina pirmojo simbolio eilutės reiškinyje unikodo reikšmę."
 
-#. tyhN7
+#. re4di
 #: 03120111.xhp
 msgctxt ""
 "03120111.xhp\n"
 "par_id3150669\n"
 "help.text"
-msgid "Integer"
-msgstr "Sveikasis skaičius"
+msgid "Long"
+msgstr ""
 
-#. cLSGx
+#. sEFFg
 #: 03120111.xhp
 msgctxt ""
 "03120111.xhp\n"
 "par_id3149415\n"
 "help.text"
-msgid "<emph>Text:</emph> Any valid string expression. Only the first character in the string is relevant."
-msgstr "<emph>Tekstas:</emph> Bet kuris tinkamas eilutės reikškinys. Aktualus yra tik pirmasis eilutės simbolis."
+msgid "<emph>string</emph>: Any valid string expression. Only the first character in the string is relevant."
+msgstr ""
 
 #. PWbGW
 #: 03120111.xhp
@@ -30760,14 +30742,14 @@ msgctxt ""
 msgid "Print AscW(\"A\") ' returns 65"
 msgstr "Print AscW(\"A\") ' grąžina 65"
 
-#. cSPdQ
+#. jFJn8
 #: 03120111.xhp
 msgctxt ""
 "03120111.xhp\n"
 "par_id3148797\n"
 "help.text"
-msgid "Print AscW(\"Ω\") ' returns 937"
-msgstr "Print AscW(\"Ω\") ' grąžina 937"
+msgid "Print AscW(string:=\"Ω\") ' returns 937"
+msgstr ""
 
 #. KNmoP
 #: 03120111.xhp
@@ -30777,33 +30759,6 @@ msgctxt ""
 "help.text"
 msgid "Print AscW(\"Αθήνα\") ' returns 913, since only the first character (Alpha) is taken into account"
 msgstr "Print AscW(\"Αθήνα\") ' grąžina 913, kadangi tik pirmasis simbolis (Alfa) yra aktualus"
-
-#. Z2b5U
-#: 03120111.xhp
-msgctxt ""
-"03120111.xhp\n"
-"par_idN1067B\n"
-"help.text"
-msgid "<link href=\"text/sbasic/shared/03120102.xhp\">Chr</link>"
-msgstr "<link href=\"text/sbasic/shared/03120102.xhp\">Chr</link>"
-
-#. BbWXB
-#: 03120111.xhp
-msgctxt ""
-"03120111.xhp\n"
-"par_id051920171027053197\n"
-"help.text"
-msgid "<link href=\"text/sbasic/shared/03120112.xhp\">ChrW</link>"
-msgstr "<link href=\"text/sbasic/shared/03120112.xhp\">ChrW</link>"
-
-#. GkoG4
-#: 03120111.xhp
-msgctxt ""
-"03120111.xhp\n"
-"par_id051920171027051338\n"
-"help.text"
-msgid "<link href=\"text/sbasic/shared/03120101.xhp\">Asc</link>"
-msgstr "<link href=\"text/sbasic/shared/03120101.xhp\">Asc</link>"
 
 #. 9DDYF
 #: 03120112.xhp
@@ -30823,14 +30778,14 @@ msgctxt ""
 msgid "<bookmark_value>ChrW function</bookmark_value>"
 msgstr "<bookmark_value>ChrW funkcija</bookmark_value>"
 
-#. 4MJ6d
+#. C6uF5
 #: 03120112.xhp
 msgctxt ""
 "03120112.xhp\n"
 "hd_id3149205\n"
 "help.text"
-msgid "<link href=\"text/sbasic/shared/03120112.xhp\" name=\"ChrW Function\">ChrW Function [VBA]</link>"
-msgstr "<link href=\"text/sbasic/shared/03120112.xhp\" name=\"ChrW Function\">ChrW funkcija [VBA]</link>"
+msgid "<variable id=\"ChrW_h1\"><link href=\"text/sbasic/shared/03120112.xhp\" name=\"ChrW Function\">ChrW Function [VBA]</link></variable>"
+msgstr ""
 
 #. yFpZL
 #: 03120112.xhp
@@ -30841,14 +30796,14 @@ msgctxt ""
 msgid "Returns the Unicode character that corresponds to the specified character code."
 msgstr "Grąžina unikodo simbolį, kuris atitinka nurodytą simbolio kodą."
 
-#. UVM29
+#. X2EkR
 #: 03120112.xhp
 msgctxt ""
 "03120112.xhp\n"
 "par_id3150669\n"
 "help.text"
-msgid "ChrW(Expression As Integer)"
-msgstr "ChrW(reiškinys sveikuoju skaičiumi)"
+msgid "ChrW(Expression As Integer) As String"
+msgstr ""
 
 #. mA9x6
 #: 03120112.xhp
@@ -30894,33 +30849,6 @@ msgctxt ""
 "help.text"
 msgid "' The printout appears in the dialog as: From Α to Ω"
 msgstr "' Spausdinimo rezultatas dialogo lange rodomas taip: nuo Α iki Ω"
-
-#. hSMKc
-#: 03120112.xhp
-msgctxt ""
-"03120112.xhp\n"
-"par_id051920171010491586\n"
-"help.text"
-msgid "<link href=\"text/sbasic/shared/03120102.xhp\">Chr</link>"
-msgstr "<link href=\"text/sbasic/shared/03120102.xhp\">Chr</link>"
-
-#. JJUXA
-#: 03120112.xhp
-msgctxt ""
-"03120112.xhp\n"
-"par_idN10668\n"
-"help.text"
-msgid "<link href=\"text/sbasic/shared/03120101.xhp\">Asc</link>"
-msgstr "<link href=\"text/sbasic/shared/03120101.xhp\">Asc</link>"
-
-#. 2fMt4
-#: 03120112.xhp
-msgctxt ""
-"03120112.xhp\n"
-"par_id051920171009414669\n"
-"help.text"
-msgid "<link href=\"text/sbasic/shared/03120111.xhp\">AscW</link>"
-msgstr "<link href=\"text/sbasic/shared/03120111.xhp\">AscW</link>"
 
 #. E7Eoi
 #: 03120200.xhp

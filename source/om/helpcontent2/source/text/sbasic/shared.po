@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2021-11-16 12:08+0100\n"
+"POT-Creation-Date: 2021-11-24 12:02+0100\n"
 "PO-Revision-Date: 2018-10-21 20:29+0000\n"
 "Last-Translator: Anonymous Pootle User\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25485,23 +25485,59 @@ msgctxt ""
 msgid "Parameters:"
 msgstr "Ulaagaalee:"
 
-#. eJRAh
+#. 94dPA
 #: 03100500.xhp
 msgctxt ""
 "03100500.xhp\n"
 "par_id3159414\n"
 "help.text"
-msgid "<emph>Expression:</emph> Any numeric expression that you want to convert. If the <emph>Expression</emph> exceeds the value range between -32768 and 32767, $[officename] Basic reports an overflow error. To convert a string expression, the number must be entered as normal text (\"123.5\") using the default number format of your operating system."
-msgstr "<emph>Expression:</emph> himannoo lakkoofsa kamuu kan geeddaruu barbaaddu.Yoo <emph>Himannoo</emph> gatii gidduu -32768 fi 32767 caale,$[officename] Basic dogongara guutinsa darbaa gabaasa.Himannoo diraa geeddaruuf,lakkoofsi dirqama akka barruu baratamaa (\"123.5\") tti gala, dhangii lakkoofsa durtii sirna dalagaa kee fayyadamuun."
+msgid "<emph>Expression:</emph> Any expression that you want to convert."
+msgstr ""
 
-#. Tq6qi
+#. tSQka
+#: 03100500.xhp
+msgctxt ""
+"03100500.xhp\n"
+"par_id3159415\n"
+"help.text"
+msgid "If the argument is a number, it is used as numeric value of the expression."
+msgstr ""
+
+#. RD4KV
+#: 03100500.xhp
+msgctxt ""
+"03100500.xhp\n"
+"par_id3159416\n"
+"help.text"
+msgid "If the argument is string, the function trims the leading whitespace; then it tries to recognize a number in following characters. These syntaxes are recognized: decimal numbers (with optional leading sign) using decimal and group separators of locale configured in $[officename] (group separators are accepted in any position), with optional exponential notation like \"-12e+1\" (where an optionally signed whole decimal number after e or E or d or D defines power of 10); octal numbers like \"&Onnn...\", where \"nnn...\" after \"&O\" or \"&o\" is sequence of characters up to the next non-alphanumeric character, and must be no longer than 11 digits from 0 to 7; hexadecimal numbers like \"&Hnnn...\", where \"nnn...\" after \"&H\" or \"&h\" is sequence of characters up to the next non-alphanumeric character, and must be no longer than 8 digits from 0 to 9, A to F, or a to f. The rest of the string is ignored. If the string is not recognized, e.g. when after trimming leading whitespace it doesn't start with plus, minus, a decimal digit, or \"&\", or when the sequence after \"&O\" is longer than 11 characters or contains an alphabetic character, the numeric value of expression is 0."
+msgstr ""
+
+#. ioj8X
+#: 03100500.xhp
+msgctxt ""
+"03100500.xhp\n"
+"par_id3159417\n"
+"help.text"
+msgid "If the argument is an error, the error number is used as numeric value of the expression."
+msgstr ""
+
+#. S3UH5
+#: 03100500.xhp
+msgctxt ""
+"03100500.xhp\n"
+"par_id3159418\n"
+"help.text"
+msgid "If the argument is a date, number of days since 1899-12-30 (serial date) is used as numeric value of the expression. Time is represented as fraction of a day."
+msgstr ""
+
+#. TA6XM
 #: 03100500.xhp
 msgctxt ""
 "03100500.xhp\n"
 "par_id3150358\n"
 "help.text"
-msgid "This function always rounds the fractional part of a number to the nearest integer."
-msgstr "Faankishiiniin kun yeroo hunda qaama lakkoofsa entaa itergaa itti dhihaatutti siksa."
+msgid "After calculating the numeric value of the expression, it is rounded to the nearest integer (if needed), and if the result is not between -32768 and 32767, $[officename] Basic reports an overflow error. Otherwise, the result is returned."
+msgstr ""
 
 #. GsgXV
 #: 03100600.xhp
@@ -30129,13 +30165,13 @@ msgctxt ""
 msgid "<bookmark_value>Asc function</bookmark_value>"
 msgstr "<bookmark_value>Faankishinii Asc</bookmark_value>"
 
-#. UG5Ac
+#. CiUxk
 #: 03120101.xhp
 msgctxt ""
 "03120101.xhp\n"
 "hd_id3150499\n"
 "help.text"
-msgid "<link href=\"text/sbasic/shared/03120101.xhp\" name=\"Asc Function\">Asc Function</link>"
+msgid "<variable id=\"Asc_h1\"><link href=\"text/sbasic/shared/03120101.xhp\" name=\"Asc Function\">Asc Function</link></variable>"
 msgstr ""
 
 #. 8jiwA
@@ -30147,59 +30183,32 @@ msgctxt ""
 msgid "Returns the ASCII (American Standard Code for Information Interchange) value of the first character in a string expression."
 msgstr "Gatii ASCII (American Standard Code for Information Interchange) arfii jalqabaa himata diraa keessaa deebisa."
 
-#. BNWoG
-#: 03120101.xhp
-msgctxt ""
-"03120101.xhp\n"
-"hd_id3155555\n"
-"help.text"
-msgid "Syntax:"
-msgstr "caasimaa:"
-
-#. giD6a
+#. xFKDc
 #: 03120101.xhp
 msgctxt ""
 "03120101.xhp\n"
 "par_id3143267\n"
 "help.text"
-msgid "Asc (Text As String)"
-msgstr "Asc (Text As String)"
+msgid "Asc(string) As Long"
+msgstr ""
 
-#. qe9hh
-#: 03120101.xhp
-msgctxt ""
-"03120101.xhp\n"
-"hd_id3147242\n"
-"help.text"
-msgid "Return value:"
-msgstr "Gatii deebii:"
-
-#. kmTWL
+#. s239Q
 #: 03120101.xhp
 msgctxt ""
 "03120101.xhp\n"
 "par_id3150669\n"
 "help.text"
-msgid "Integer"
-msgstr "intergaa"
+msgid "Long"
+msgstr ""
 
-#. ZSM8u
-#: 03120101.xhp
-msgctxt ""
-"03120101.xhp\n"
-"hd_id3148473\n"
-"help.text"
-msgid "Parameters:"
-msgstr "Ulaagaalee:"
-
-#. nuuuC
+#. DZtGt
 #: 03120101.xhp
 msgctxt ""
 "03120101.xhp\n"
 "par_id3149415\n"
 "help.text"
-msgid "<emph>Text:</emph> Any valid string expression. Only the first character in the string is relevant."
-msgstr "<emph>Barruu:</emph>  Himata diraa eeyyamamaa kamiyyuu. Arfiin jalqabaa diraa qofti barbaachisaa dha."
+msgid "<emph>string</emph>: Any valid string expression. Only the first character in the string is relevant."
+msgstr ""
 
 #. CF7UG
 #: 03120101.xhp
@@ -30210,15 +30219,6 @@ msgctxt ""
 msgid "Use the Asc function to replace keys with values. If the Asc function encounters a blank string, $[officename] Basic reports a run-time error. In addition to 7 bit ASCII characters (Codes 0-127), the ASCII function can also detect non-printable key codes in ASCII code. This function can also handle 16 bit unicode characters."
 msgstr "Furtoowwan gatiidhaan bakka buusuuf Faankishinii Asc'tti fayyadami.Yoo faankishiniin Asc diraa duwwaadhaan walquunname, $[officename] Basic dogoggora sa'aa darbee gabaasa.Arfiilee ASCII laklamee 7 dabalatee,faankishiniin ASCII lakkaddawwan furtuu lakkadda ASCII keessaa kanneen maxxansamuu hin dandeenyes sakatta'uu ni danda'a. Faankishiniin kun arfiilee yuniikoodii laklamee 16's qabachuu ni danda'a."
 
-#. d4CxC
-#: 03120101.xhp
-msgctxt ""
-"03120101.xhp\n"
-"hd_id3159413\n"
-"help.text"
-msgid "Example:"
-msgstr "Fakkeenya:"
-
 #. VF7kK
 #: 03120101.xhp
 msgctxt ""
@@ -30228,14 +30228,14 @@ msgctxt ""
 msgid "Print ASC(\"A\") ' returns 65"
 msgstr "Print ASC(\"A\") REM 65 deebisa"
 
-#. imR9f
+#. mntEX
 #: 03120101.xhp
 msgctxt ""
 "03120101.xhp\n"
 "par_id3148797\n"
 "help.text"
-msgid "Print ASC(\"Z\") ' returns 90"
-msgstr "Print ASC(\"Z\") REM 90 deebisa"
+msgid "Print ASC(string:=\"Z\") ' returns 90"
+msgstr ""
 
 #. raPFD
 #: 03120101.xhp
@@ -30245,15 +30245,6 @@ msgctxt ""
 "help.text"
 msgid "Print ASC(\"Las Vegas\") ' returns 76, since only the first character is taken into account"
 msgstr "Print ASC(\"Las Vegas\") REM 76 deebisa, sababa arfiin jalqabaa qofti xiyyeeffannoo argateef"
-
-#. 9QUxr
-#: 03120101.xhp
-msgctxt ""
-"03120101.xhp\n"
-"par_idN1067B\n"
-"help.text"
-msgid "<link href=\"text/sbasic/shared/03120102.xhp\">CHR</link>"
-msgstr "<link href=\"text/sbasic/shared/03120102.xhp\">CHR</link>"
 
 #. QMLJb
 #: 03120102.xhp
@@ -30273,13 +30264,13 @@ msgctxt ""
 msgid "<bookmark_value>Chr function</bookmark_value>"
 msgstr "<bookmark_value>Faankishinii Chr</bookmark_value>"
 
-#. tDyPJ
+#. vBnDE
 #: 03120102.xhp
 msgctxt ""
 "03120102.xhp\n"
 "hd_id3149205\n"
 "help.text"
-msgid "<link href=\"text/sbasic/shared/03120102.xhp\" name=\"Chr Function\">Chr Function</link>"
+msgid "<variable id=\"Chr_h1\"><link href=\"text/sbasic/shared/03120102.xhp\" name=\"Chr Function\">Chr Function</link></variable>"
 msgstr ""
 
 #. UTy3n
@@ -30291,14 +30282,14 @@ msgctxt ""
 msgid "Returns the character that corresponds to the specified character code."
 msgstr "Arfii kan lakkadda arfii ibsameen walmadaalan deebisa."
 
-#. bf6Zk
+#. cR5b8
 #: 03120102.xhp
 msgctxt ""
 "03120102.xhp\n"
 "par_id3150669\n"
 "help.text"
-msgid "Chr(Expression As Integer)"
-msgstr "Chr(Expression As Integer)"
+msgid "Chr[$](expression As Integer) As String"
+msgstr ""
 
 #. HnFyY
 #: 03120102.xhp
@@ -30354,14 +30345,14 @@ msgctxt ""
 msgid "' This example inserts quotation marks (ASCII value 34) in a string."
 msgstr "REM Fakkeenyi kun mallattoolee waraabbii(gatii ASCII 34) diraa keessa galcha."
 
-#. aCHvq
+#. PpQfe
 #: 03120102.xhp
 msgctxt ""
 "03120102.xhp\n"
 "par_id3151380\n"
 "help.text"
-msgid "MsgBox \"A \"+ Chr$(34)+\"short\" + Chr$(34)+\" trip.\""
-msgstr "MsgBox \"A \"+ Chr$(34)+\"short\" + Chr$(34)+\" trip.\""
+msgid "MsgBox \"A \"+ Chr$(34)+\"short\" + Chr(34)+\" trip.\""
+msgstr ""
 
 #. iCsGw
 #: 03120102.xhp
@@ -30371,15 +30362,6 @@ msgctxt ""
 "help.text"
 msgid "' The printout appears in the dialog as: A \"short\" trip."
 msgstr "REM Qaaqa keessatti maxxansi isaa akka: karaa \"short\" fakkaata."
-
-#. q8bRB
-#: 03120102.xhp
-msgctxt ""
-"03120102.xhp\n"
-"par_idN10668\n"
-"help.text"
-msgid "<link href=\"text/sbasic/shared/03120101.xhp\">ASC</link>"
-msgstr "<link href=\"text/sbasic/shared/03120101.xhp\">ASC</link>"
 
 #. bzZDz
 #: 03120103.xhp
@@ -30705,13 +30687,13 @@ msgctxt ""
 msgid "<bookmark_value>AscW function</bookmark_value>"
 msgstr ""
 
-#. 4pFSg
+#. 8JuD6
 #: 03120111.xhp
 msgctxt ""
 "03120111.xhp\n"
 "hd_id3150499\n"
 "help.text"
-msgid "<link href=\"text/sbasic/shared/03120111.xhp\" name=\"AscW Function [VBA]\">AscW Function [VBA]</link>"
+msgid "<variable id=\"AscW_h1\"><link href=\"text/sbasic/shared/03120111.xhp\" name=\"AscW Function [VBA]\">AscW Function [VBA]</link></variable>"
 msgstr ""
 
 #. XujWF
@@ -30723,22 +30705,22 @@ msgctxt ""
 msgid "Returns the Unicode value of the first character in a string expression."
 msgstr ""
 
-#. tyhN7
+#. re4di
 #: 03120111.xhp
 msgctxt ""
 "03120111.xhp\n"
 "par_id3150669\n"
 "help.text"
-msgid "Integer"
+msgid "Long"
 msgstr ""
 
-#. cLSGx
+#. sEFFg
 #: 03120111.xhp
 msgctxt ""
 "03120111.xhp\n"
 "par_id3149415\n"
 "help.text"
-msgid "<emph>Text:</emph> Any valid string expression. Only the first character in the string is relevant."
+msgid "<emph>string</emph>: Any valid string expression. Only the first character in the string is relevant."
 msgstr ""
 
 #. PWbGW
@@ -30759,13 +30741,13 @@ msgctxt ""
 msgid "Print AscW(\"A\") ' returns 65"
 msgstr ""
 
-#. cSPdQ
+#. jFJn8
 #: 03120111.xhp
 msgctxt ""
 "03120111.xhp\n"
 "par_id3148797\n"
 "help.text"
-msgid "Print AscW(\"Ω\") ' returns 937"
+msgid "Print AscW(string:=\"Ω\") ' returns 937"
 msgstr ""
 
 #. KNmoP
@@ -30775,33 +30757,6 @@ msgctxt ""
 "par_id3163800\n"
 "help.text"
 msgid "Print AscW(\"Αθήνα\") ' returns 913, since only the first character (Alpha) is taken into account"
-msgstr ""
-
-#. Z2b5U
-#: 03120111.xhp
-msgctxt ""
-"03120111.xhp\n"
-"par_idN1067B\n"
-"help.text"
-msgid "<link href=\"text/sbasic/shared/03120102.xhp\">Chr</link>"
-msgstr ""
-
-#. BbWXB
-#: 03120111.xhp
-msgctxt ""
-"03120111.xhp\n"
-"par_id051920171027053197\n"
-"help.text"
-msgid "<link href=\"text/sbasic/shared/03120112.xhp\">ChrW</link>"
-msgstr ""
-
-#. GkoG4
-#: 03120111.xhp
-msgctxt ""
-"03120111.xhp\n"
-"par_id051920171027051338\n"
-"help.text"
-msgid "<link href=\"text/sbasic/shared/03120101.xhp\">Asc</link>"
 msgstr ""
 
 #. 9DDYF
@@ -30822,13 +30777,13 @@ msgctxt ""
 msgid "<bookmark_value>ChrW function</bookmark_value>"
 msgstr ""
 
-#. 4MJ6d
+#. C6uF5
 #: 03120112.xhp
 msgctxt ""
 "03120112.xhp\n"
 "hd_id3149205\n"
 "help.text"
-msgid "<link href=\"text/sbasic/shared/03120112.xhp\" name=\"ChrW Function\">ChrW Function [VBA]</link>"
+msgid "<variable id=\"ChrW_h1\"><link href=\"text/sbasic/shared/03120112.xhp\" name=\"ChrW Function\">ChrW Function [VBA]</link></variable>"
 msgstr ""
 
 #. yFpZL
@@ -30840,13 +30795,13 @@ msgctxt ""
 msgid "Returns the Unicode character that corresponds to the specified character code."
 msgstr ""
 
-#. UVM29
+#. X2EkR
 #: 03120112.xhp
 msgctxt ""
 "03120112.xhp\n"
 "par_id3150669\n"
 "help.text"
-msgid "ChrW(Expression As Integer)"
+msgid "ChrW(Expression As Integer) As String"
 msgstr ""
 
 #. mA9x6
@@ -30892,33 +30847,6 @@ msgctxt ""
 "par_id3145174\n"
 "help.text"
 msgid "' The printout appears in the dialog as: From Α to Ω"
-msgstr ""
-
-#. hSMKc
-#: 03120112.xhp
-msgctxt ""
-"03120112.xhp\n"
-"par_id051920171010491586\n"
-"help.text"
-msgid "<link href=\"text/sbasic/shared/03120102.xhp\">Chr</link>"
-msgstr ""
-
-#. JJUXA
-#: 03120112.xhp
-msgctxt ""
-"03120112.xhp\n"
-"par_idN10668\n"
-"help.text"
-msgid "<link href=\"text/sbasic/shared/03120101.xhp\">Asc</link>"
-msgstr ""
-
-#. 2fMt4
-#: 03120112.xhp
-msgctxt ""
-"03120112.xhp\n"
-"par_id051920171009414669\n"
-"help.text"
-msgid "<link href=\"text/sbasic/shared/03120111.xhp\">AscW</link>"
 msgstr ""
 
 #. E7Eoi
