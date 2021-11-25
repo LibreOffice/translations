@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: LibreOffice 7.3\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2021-11-16 16:12+0100\n"
-"PO-Revision-Date: 2021-11-16 22:24+0200\n"
+"POT-Creation-Date: 2021-11-24 16:04+0100\n"
+"PO-Revision-Date: 2021-11-24 21:15+0200\n"
 "Last-Translator: Martin Srebotnjak <miles@filmsi.net>\n"
 "Language-Team: sl.libreoffice.org\n"
 "Language: sl\n"
@@ -22662,16 +22662,48 @@ msgctxt ""
 "03100500.xhp\n"
 "par_id3159414\n"
 "help.text"
-msgid "<emph>Expression:</emph> Any numeric expression that you want to convert. If the <emph>Expression</emph> exceeds the value range between -32768 and 32767, $[officename] Basic reports an overflow error. To convert a string expression, the number must be entered as normal text (\"123.5\") using the default number format of your operating system."
-msgstr "<emph>Izraz:</emph> poljuben numerični izraz, ki ga želite pretvoriti. Če je <emph>izraz</emph> izven obsega med -32768 in 32767, bo javil $[officename] Basic preliv. Nizi, ki jih želite pretvoriti, morajo predstavljati število, napisano kot običajno besedilo (\"123,5\") v obliki, ki jo operacijski sistem privzema za števila."
+msgid "<emph>Expression:</emph> Any expression that you want to convert."
+msgstr "<emph>Izraz:</emph>Poljuben izraz, ki ga želite pretvoriti."
+
+#: 03100500.xhp
+msgctxt ""
+"03100500.xhp\n"
+"par_id3159415\n"
+"help.text"
+msgid "If the argument is a number, it is used as numeric value of the expression."
+msgstr "Če je podan argument število, se uporabi kot številska vrednost izraza."
+
+#: 03100500.xhp
+msgctxt ""
+"03100500.xhp\n"
+"par_id3159416\n"
+"help.text"
+msgid "If the argument is string, the function trims the leading whitespace; then it tries to recognize a number in following characters. These syntaxes are recognized: decimal numbers (with optional leading sign) using decimal and group separators of locale configured in $[officename] (group separators are accepted in any position), with optional exponential notation like \"-12e+1\" (where an optionally signed whole decimal number after e or E or d or D defines power of 10); octal numbers like \"&Onnn...\", where \"nnn...\" after \"&O\" or \"&o\" is sequence of characters up to the next non-alphanumeric character, and must be no longer than 11 digits from 0 to 7; hexadecimal numbers like \"&Hnnn...\", where \"nnn...\" after \"&H\" or \"&h\" is sequence of characters up to the next non-alphanumeric character, and must be no longer than 8 digits from 0 to 9, A to F, or a to f. The rest of the string is ignored. If the string is not recognized, e.g. when after trimming leading whitespace it doesn't start with plus, minus, a decimal digit, or \"&\", or when the sequence after \"&O\" is longer than 11 characters or contains an alphabetic character, the numeric value of expression is 0."
+msgstr "Če je podani argument niz, funkcija odreže vodilne presledke; nato poskusi prepoznati število v znakih, ki sledijo. Prepoznane so naslednje skladnje številskih zapisov: decimalna števila (z možnostjo predznaka) z uporabo ločil decimalk in skupin/tisočic, kot so določene s krajevnimi nastavitvami v $[officename] (ločila tisočic so dovoljena na poljubnem mestu), z možno eksponentno notacijo, kot je »-12e+1« (kjer neobvezno predznačeno celo desetiško število po e, E, d ali D določa potenco števila 10); osmiška števila, kot je »&Onnn...«, kjer je »nnn...« po »&O« ali »&o« zaporedje znakov do naslednjega ne-alfanumeričnega znaka in ki ne sme biti daljše od 11 števk med 0 in 7; šestnajstiška števila, kot je »&Hnnn...«, kjer je »nnn...« po »&H« ali »&h« zaporedje znakov do naslednjega ne-alfanumeričnega znaka in ki ne sme biti daljše od 8 števk med 0 in 9, A in F ali a in f. Preostanek niza je prezrt. Če niz ni prepoznan, t.j. če se po odrezu vodilnih presledkov ne začne z znakom plus, minus, desetiško števko ali znakom »&« oz. ko je niz po »&O« daljši od 11 znakov ali vsebuje črko abecede, je številska vrednost izraza 0."
+
+#: 03100500.xhp
+msgctxt ""
+"03100500.xhp\n"
+"par_id3159417\n"
+"help.text"
+msgid "If the argument is an error, the error number is used as numeric value of the expression."
+msgstr "Če je podan argument napaka, se številka napake uporabi kot številska vrednost izraza."
+
+#: 03100500.xhp
+msgctxt ""
+"03100500.xhp\n"
+"par_id3159418\n"
+"help.text"
+msgid "If the argument is a date, number of days since 1899-12-30 (serial date) is used as numeric value of the expression. Time is represented as fraction of a day."
+msgstr "Če je podani argument datum, se število dni od 30. 12. 1899 (serijski datum) uporabi kot številska vrednost izraza. Čas je predstavljen kot ulomek dneva."
 
 #: 03100500.xhp
 msgctxt ""
 "03100500.xhp\n"
 "par_id3150358\n"
 "help.text"
-msgid "This function always rounds the fractional part of a number to the nearest integer."
-msgstr "Ta funkcija necela števila vedno zaokroža na najbližje celo število."
+msgid "After calculating the numeric value of the expression, it is rounded to the nearest integer (if needed), and if the result is not between -32768 and 32767, $[officename] Basic reports an overflow error. Otherwise, the result is returned."
+msgstr "Po izračunu številske vrednosti izraza se rezultat zaokroži na najbližje celo število (če je potrebno) in če rezultat ni med -32768 in 32767, $[officename] Basic poroča o napaki prekoračitve. Sicer vrne rezultat."
 
 #: 03100600.xhp
 msgctxt ""
@@ -35767,7 +35799,7 @@ msgctxt ""
 "par_id391633974651050\n"
 "help.text"
 msgid "<emph>before, after:</emph> optional keyword argument that indicates where the new item will be placed in the <literal>Collection</literal>. Only one of the arguments <literal>before</literal> or <literal>after</literal> can be specified to determine the index or key before which (or after which) the new item is to be placed."
-msgstr "<emph>before, after:</emph> neobvezni argument ključnih besed, ki nakazuje, kam bo postavljen novi element v predmet <literal>Collection</literal>. Navedete lahko le enega od argumentov <literal>before</literal> (pred) in <literal>after</literal> (za), da določite indeks ali ključ, pred katerim (ali za katerim) po umeščen novi element."
+msgstr "<emph>before, after:</emph> neobvezni argument ključnih besed, ki nakazuje, kam bo postavljen novi element v predmetu <literal>Collection</literal>. Navedete lahko le enega od argumentov <literal>before</literal> (pred) in <literal>after</literal> (za), da določite indeks ali ključ, pred katerim (ali za katerim) bo umeščen novi element."
 
 #: collection.xhp
 msgctxt ""
