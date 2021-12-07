@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: LibreOffice 7.3\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2021-11-24 16:04+0100\n"
-"PO-Revision-Date: 2021-11-24 20:41+0200\n"
+"POT-Creation-Date: 2021-12-07 12:05+0100\n"
+"PO-Revision-Date: 2021-12-07 18:05+0200\n"
 "Last-Translator: Martin Srebotnjak <miles@filmsi.net>\n"
 "Language-Team: sl.libreoffice.org\n"
 "Language: sl\n"
@@ -4863,7 +4863,7 @@ msgctxt ""
 "bm_000pdfimport\n"
 "help.text"
 msgid "<bookmark_value>command line document conversion; filters for PDFIMPORT</bookmark_value>"
-msgstr "<bookmark_value>pretvorba dokumentov iz ukazne vrstice; filtri za IMPRESS</bookmark_value>"
+msgstr "<bookmark_value>pretvorba dokumentov iz ukazne vrstice; filtri za PDFIMPORT</bookmark_value>"
 
 #: convertfilters.xhp
 msgctxt ""
@@ -4943,7 +4943,7 @@ msgctxt ""
 "hd_000xsltfilter\n"
 "help.text"
 msgid "Filters for XSLTFILTER"
-msgstr "Filtri za XSLFILTER"
+msgstr "Filtri za XSLTFILTER"
 
 #: convertfilters.xhp
 msgctxt ""
@@ -5310,8 +5310,8 @@ msgctxt ""
 "csv_params.xhp\n"
 "bm_id181634740978601\n"
 "help.text"
-msgid "<bookmark_value>CSV;filter options</bookmark_value>        <bookmark_value>CSV;import options</bookmark_value>        <bookmark_value>CSV;export options</bookmark_value>        <bookmark_value>CSV;command line filter options</bookmark_value>"
-msgstr "<bookmark_value>CSV;možnosti filtra</bookmark_value><bookmark_value>CSV;možnosti vrste datotek</bookmark_value><bookmark_value>CSV;možnosti uvoza</bookmark_value><bookmark_value>CSV;možnosti izvoza</bookmark_value><bookmark_value>CSV;možnosti filtra v ukazni vrstici</bookmark_value>"
+msgid "<bookmark_value>CSV;filter options</bookmark_value>        <bookmark_value>CSV;separator specification line</bookmark_value>        <bookmark_value>CSV;import options</bookmark_value>        <bookmark_value>CSV;export options</bookmark_value>        <bookmark_value>CSV;command line filter options</bookmark_value>"
+msgstr "<bookmark_value>CSV;možnosti filtra</bookmark_value><bookmark_value>CSV;možnosti vrste datotek</bookmark_value><bookmark_value>CSV;vrstica določitve ločila</bookmark_value><bookmark_value>CSV;možnosti uvoza</bookmark_value><bookmark_value>CSV;možnosti izvoza</bookmark_value><bookmark_value>CSV;možnosti filtra v ukazni vrstici</bookmark_value>"
 
 #: csv_params.xhp
 msgctxt ""
@@ -5624,6 +5624,78 @@ msgctxt ""
 "help.text"
 msgid "String, either <literal>false</literal> or <literal>true</literal>. Default value: <literal>false</literal>. Determines whether formula expressions starting with a = equal sign character are to be evaluated as formulas or imported as textual data. If <literal>true</literal> evaluate formulas on input. If <literal>false</literal> formulas are input as text. If omitted (not present at all), the default value is <literal>true</literal> to keep the behaviour of old versions' options string that didn't have this token at all. If present and empty (or any other value than <literal>true</literal>) the default value is <literal>false</literal>."
 msgstr "Niz, lahko je <literal>false</literal> ali <literal>true</literal>. Privzeta vrednost je <literal>false</literal>. Določa, ali naj bodo izrazi formule, ki se začenjajo z enačajem (=), ovrednoteni kot formule ali uvoženi kot besedilni podatki. Če je <literal>true</literal>, se formule ob vnosu ovrednotijo. Če je <literal>false</literal>, se formule vnesejo kot besedilo. Če je izpuščeno (ni sploh podano), je privzeta vrednost <literal>true</literal>, da ohrani vedenje niza možnosti starejših izdaj, ki niso imele te nastavitve. Če je prisoten in prazen (ali pa ima poljubno drugo vrednost kot <literal>true</literal>), je privzeta vrednost <literal>false</literal>."
+
+#: csv_params.xhp
+msgctxt ""
+"csv_params.xhp\n"
+"hd_id591638374883162\n"
+"help.text"
+msgid "Special case of CSV files with separator defined in the first line"
+msgstr "Poseben primer datotek CSV z ločilom, določenim v prvi vrstici"
+
+#: csv_params.xhp
+msgctxt ""
+"csv_params.xhp\n"
+"par_id781638374952502\n"
+"help.text"
+msgid "CSV import and export support a <literal>sep=</literal> and <literal>\"sep=\"</literal> field separator setting. When reading a CSV document, the separator is taken from the initial <literal>sep=</literal> or <literal>\"sep=\"</literal> single field, if that is the only line content."
+msgstr "Uvoz in izvoz CSV podpira nastavitvi ločil polj <literal>sep=</literal> in <literal>\"sep=\"</literal>. Pri branju dokumenta CSV se ločilo povzame po začetnem enojnem polju <literal>sep=</literal> ali <literal>\"sep=\"</literal>, če je to edina vsebina vrstice."
+
+#: csv_params.xhp
+msgctxt ""
+"csv_params.xhp\n"
+"par_id561638377619263\n"
+"help.text"
+msgid "When reading a CSV file, the quoted form is preserved as (unquoted) cell content. You see <literal>sep=|</literal> when | is the separator in the first line. In the unquoted form, the separator is discarded because it is a real field separator in the context. You see <literal>sep=</literal> in the first line."
+msgstr "Pri branju datoteke CSV se citirana oblika ohrani kot vsebina celice (brez navednic). Vidite <literal>sep=|</literal> ko je | ločilo v prvi vrstici. V zapisu brez navednic je ločilo opuščeno, saj je realno ločilo polja v kontekstu. V prvi vrstici vidite <literal>sep=</literal>."
+
+#: csv_params.xhp
+msgctxt ""
+"csv_params.xhp\n"
+"par_id761638377626465\n"
+"help.text"
+msgid "When writing a CSV file, the existing single top left cell's content such as <literal>sep=|</literal> is adapted to the current separator with the quoted form of <literal>\"sep=|\"</literal> (if quotes / text delimiters aren't set empty and | is the separator) and always uses the ASCII \" double quote character."
+msgstr "Pri pisanju datoteke CSV se obstoječa vsebina vrhnje leve celice, kot je <literal>sep=|</literal>, prilagodi trenutnemu ločilu z obliko v navednicah <literal>\"sep=|\"</literal> (če narekovaji oz. ločila besedila niso določeni prazni in je | ločilo) ter vedno uporablja znak ASCII za dvojni narekovaj (\")."
+
+#: csv_params.xhp
+msgctxt ""
+"csv_params.xhp\n"
+"par_id61638377631743\n"
+"help.text"
+msgid "If the line containing the <literal>sep=|</literal> is not to be imported as data, remember to set the <emph>From row</emph> number in the dialog to 2. Note that this line will not be preserved when re-saving."
+msgstr "Če vrstice, ki vsebuje <literal>sep=|</literal>, ne želite uvoziti kot podatkov, ne pozabite v pogovornem oknu nastaviti številko <emph>Od vrstice</emph> na 2. Upoštevajte, da se ta vrstica ob ponovnem shranjevanju ne bo ohranila."
+
+#: csv_params.xhp
+msgctxt ""
+"csv_params.xhp\n"
+"par_id731638374814029\n"
+"help.text"
+msgid "\"LETTER\"|\"ANIMAL\""
+msgstr "\"ČRKA\"|\"ŽIVAL\""
+
+#: csv_params.xhp
+msgctxt ""
+"csv_params.xhp\n"
+"par_id801638374818291\n"
+"help.text"
+msgid "\"a\"|\"aardvark\""
+msgstr "\"a\"|\"antilopa\""
+
+#: csv_params.xhp
+msgctxt ""
+"csv_params.xhp\n"
+"par_id621638374822275\n"
+"help.text"
+msgid "\"b\"|\"bear\""
+msgstr "\"b\"|\"bober\""
+
+#: csv_params.xhp
+msgctxt ""
+"csv_params.xhp\n"
+"par_id851638374831208\n"
+"help.text"
+msgid "\"c\"|\"cow\""
+msgstr "\"c\"|\"cow\""
 
 #: csv_params.xhp
 msgctxt ""
@@ -19814,55 +19886,55 @@ msgctxt ""
 "qrcode.xhp\n"
 "tit\n"
 "help.text"
-msgid "QR Code"
-msgstr "Koda QR"
+msgid "QR and Barcode"
+msgstr "QR-koda in črtna koda"
 
 #: qrcode.xhp
 msgctxt ""
 "qrcode.xhp\n"
 "bm_id901566317201860\n"
 "help.text"
-msgid "<bookmark_value>QR Code</bookmark_value>"
-msgstr "<bookmark_value>koda QR</bookmark_value><bookmark_value>QR-koda</bookmark_value>"
+msgid "<bookmark_value>QR code;barcode</bookmark_value>"
+msgstr "<bookmark_value>koda QR</bookmark_value><bookmark_value>QR-koda</bookmark_value><bookmark_value>črtna koda</bookmark_value>"
 
 #: qrcode.xhp
 msgctxt ""
 "qrcode.xhp\n"
 "hd_id461566315781439\n"
 "help.text"
-msgid "<link href=\"text/shared/guide/qrcode.xhp\" name=\"QR Code\">QR Code</link>"
-msgstr "<link href=\"text/shared/guide/qrcode.xhp\" name=\"Koda QR\">Koda QR</link>"
+msgid "<link href=\"text/shared/guide/qrcode.xhp\" name=\"QR and Barcode\">QR and Barcode</link>"
+msgstr "<link href=\"text/shared/guide/qrcode.xhp\" name=\"Koda QR in črtna koda\">Koda QR in črtna koda</link>"
 
 #: qrcode.xhp
 msgctxt ""
 "qrcode.xhp\n"
 "par_id381566315781439\n"
 "help.text"
-msgid "Generate QR Code for any text or URL."
-msgstr "Izdelajte kodo QR za poljubno besedilo ali URL."
+msgid "Generate linear and matrix codes for any text or URL."
+msgstr "Izdelajte linearne ali matrične kode za poljubno besedilo ali URL."
 
 #: qrcode.xhp
 msgctxt ""
 "qrcode.xhp\n"
 "par_id411566316109551\n"
 "help.text"
-msgid "The QR Code Generation feature helps to create QR codes for any text or URL. The QR code is produced as an image or shape and has all the properties associated with an image."
-msgstr "Funkcija izdelave kode QR pomaga pri izdelavi kod QR za poljubno besedilo oz. URL. Koda QR je izdelano kot slika oz. lik in ima vse lastnosti slike."
+msgid "The QR and Barcode generation feature allows you to encode any text string or URL as a barcode or a QR code and insert it as a graphical object in a document for scanning."
+msgstr "Funkcija izdelave kode QR in črtne kode omogoča kodiranje poljubnega besedilnega niza ali naslova URL kot črne kode ali QR-kode ter njeno vstavljanje kot grafičnega predmeta v dokument za kasnejše optično branje."
 
 #: qrcode.xhp
 msgctxt ""
 "qrcode.xhp\n"
 "par_id761566316165430\n"
 "help.text"
-msgid "Choose <menuitem>Insert - Object - QR Code</menuitem>."
-msgstr "Izberite <menuitem>Vstavi – Predmet – Koda QR</menuitem>."
+msgid "Choose <menuitem>Insert - Object - QR and Barcode</menuitem>."
+msgstr "Izberite <menuitem>Vstavi – Predmet – Koda QR in črtna koda</menuitem>."
 
 #: qrcode.xhp
 msgctxt ""
 "qrcode.xhp\n"
 "hd_id611566316506278\n"
 "help.text"
-msgid "URL or Text"
+msgid "URL or text"
 msgstr "URL ali besedilo"
 
 #: qrcode.xhp
@@ -19870,8 +19942,8 @@ msgctxt ""
 "qrcode.xhp\n"
 "par_id251566316519649\n"
 "help.text"
-msgid "The text from which to generate the QR code."
-msgstr "Besedilo, iz katerega želite tvoriti kodo QR."
+msgid "The text from which to generate the code."
+msgstr "Besedilo, iz katerega želite izdelati kodo."
 
 #: qrcode.xhp
 msgctxt ""
@@ -19942,8 +20014,8 @@ msgctxt ""
 "qrcode.xhp\n"
 "par_id981566316947064\n"
 "help.text"
-msgid "The width of the margin surrounding the QR code."
-msgstr "Širina roba okoli kode QR."
+msgid "The width of the margin surrounding the code."
+msgstr "Širina roba okoli kode."
 
 #: qrcode.xhp
 msgctxt ""
@@ -19968,14 +20040,6 @@ msgctxt ""
 "help.text"
 msgid "<image src=\"media/helpimg/qrcode_example.svg\" id=\"img_id991566321218295\" width=\"4cm\" height=\"4cm\"><alt id=\"alt_id401566321218295\">QR code example</alt></image>"
 msgstr "<image src=\"media/helpimg/qrcode_example.svg\" id=\"img_id991566321218295\" width=\"4cm\" height=\"4cm\"><alt id=\"alt_id401566321218295\">Primer kode QR</alt></image>"
-
-#: qrcode.xhp
-msgctxt ""
-"qrcode.xhp\n"
-"par_id441566317415844\n"
-"help.text"
-msgid "QR code in the <link href=\"https://en.wikipedia.org/wiki/QR_code\" name=\"wikipedia\">Wikipedia</link>"
-msgstr "Koda QR v <link href=\"https://sl.wikipedia.org/wiki/Koda_QR\" name=\"Wikipedia\">Wikipediji</link>"
 
 #: redaction.xhp
 msgctxt ""
