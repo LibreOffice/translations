@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2021-11-24 12:02+0100\n"
-"PO-Revision-Date: 2021-11-25 18:40+0000\n"
+"POT-Creation-Date: 2021-12-20 13:21+0100\n"
+"PO-Revision-Date: 2021-12-21 11:51+0000\n"
 "Last-Translator: sophie <gautier.sophie@gmail.com>\n"
 "Language-Team: French <https://translations.documentfoundation.org/projects/libo_help-master/textsharedguide/fr/>\n"
 "Language: fr\n"
@@ -5966,14 +5966,14 @@ msgctxt ""
 msgid "CSV Filter parameters"
 msgstr "Paramètres de filtre CSV"
 
-#. cvtJM
+#. KyLbg
 #: csv_params.xhp
 msgctxt ""
 "csv_params.xhp\n"
 "bm_id181634740978601\n"
 "help.text"
-msgid "<bookmark_value>CSV;filter options</bookmark_value>        <bookmark_value>CSV;import options</bookmark_value>        <bookmark_value>CSV;export options</bookmark_value>        <bookmark_value>CSV;command line filter options</bookmark_value>"
-msgstr "<bookmark_value>CSV;options de filtre</bookmark_value><bookmark_value>CSV;options d'import</bookmark_value><bookmark_value>CSV;options d'export</bookmark_value><bookmark_value>CSV;options de filtre en ligne de commande</bookmark_value>"
+msgid "<bookmark_value>CSV;filter options</bookmark_value>        <bookmark_value>CSV;separator specification line</bookmark_value>        <bookmark_value>CSV;import options</bookmark_value>        <bookmark_value>CSV;export options</bookmark_value>        <bookmark_value>CSV;command line filter options</bookmark_value>"
+msgstr "<bookmark_value>CSV;options du filtre</bookmark_value><bookmark_value>CSV;ligne de spécification du séparateur</bookmark_value><bookmark_value>CSV;options d'import</bookmark_value><bookmark_value>CSV;options d'export</bookmark_value><bookmark_value>CSV;options de filtre en ligne de commande</bookmark_value>"
 
 #. szBoK
 #: csv_params.xhp
@@ -6325,6 +6325,87 @@ msgctxt ""
 "help.text"
 msgid "String, either <literal>false</literal> or <literal>true</literal>. Default value: <literal>false</literal>. Determines whether formula expressions starting with a = equal sign character are to be evaluated as formulas or imported as textual data. If <literal>true</literal> evaluate formulas on input. If <literal>false</literal> formulas are input as text. If omitted (not present at all), the default value is <literal>true</literal> to keep the behaviour of old versions' options string that didn't have this token at all. If present and empty (or any other value than <literal>true</literal>) the default value is <literal>false</literal>."
 msgstr "Chaîne, soit <literal>false</literal>, soit <literal>true</literal>. Valeur par défaut : <literal>false</literal>. Détermine si les expressions de formule commençant par un signe = égal doivent être évaluées en tant que formules ou importées en tant que données textuelles. Si <literal>true</literal> évalue les formules en entrée. Si les formules <literal>false</literal> sont saisies sous forme de texte. Si omis (pas du tout présent), la valeur par défaut est <literal>true</literal> pour conserver le comportement de la chaîne d'options des anciennes versions qui n'avait pas du tout ce jeton. S'il est présent et vide (ou toute autre valeur que <literal>true</literal>), la valeur par défaut est <literal>false</literal>."
+
+#. DAriB
+#: csv_params.xhp
+msgctxt ""
+"csv_params.xhp\n"
+"hd_id591638374883162\n"
+"help.text"
+msgid "Special case of CSV files with separator defined in the first line"
+msgstr "Cas particulier des fichiers CSV avec séparateur défini sur la première ligne"
+
+#. gpBdg
+#: csv_params.xhp
+msgctxt ""
+"csv_params.xhp\n"
+"par_id781638374952502\n"
+"help.text"
+msgid "CSV import and export support a <literal>sep=</literal> and <literal>\"sep=\"</literal> field separator setting. When reading a CSV document, the separator is taken from the initial <literal>sep=</literal> or <literal>\"sep=\"</literal> single field, if that is the only line content."
+msgstr "L'import et l'export CSV prennent en charge un paramètre de séparateur de champ <literal>sep=</literal> et <literal>\"sep=\"</literal> . Lors de la lecture d'un document CSV, le séparateur est extrait du champ unique <literal>sep=</literal> ou <literal>\"sep=\"</literal> initial, s'il s'agit du seul contenu de ligne."
+
+#. q8D8y
+#: csv_params.xhp
+msgctxt ""
+"csv_params.xhp\n"
+"par_id561638377619263\n"
+"help.text"
+msgid "When reading a CSV file, the quoted form is preserved as (unquoted) cell content. You see <literal>sep=|</literal> when | is the separator in the first line. In the unquoted form, the separator is discarded because it is a real field separator in the context. You see <literal>sep=</literal> in the first line."
+msgstr "Lors de la lecture d'un fichier CSV, la forme entre guillemets est conservée en tant que contenu de cellule (sans guillemets). Vous voyez <literal>sep=|</literal> quand | est le séparateur de la première ligne. Dans la forme sans guillemets, le séparateur est ignoré car il s'agit d'un véritable séparateur de champ dans le contexte. Vous voyez <literal>sep=</literal> dans la première ligne."
+
+#. j5dBK
+#: csv_params.xhp
+msgctxt ""
+"csv_params.xhp\n"
+"par_id761638377626465\n"
+"help.text"
+msgid "When writing a CSV file, the existing single top left cell's content such as <literal>sep=|</literal> is adapted to the current separator with the quoted form of <literal>\"sep=|\"</literal> (if quotes / text delimiters aren't set empty and | is the separator) and always uses the ASCII \" double quote character."
+msgstr "Lors de l'écriture d'un fichier CSV, le contenu de la cellule en haut à gauche existante, telle que <literal>sep=|</literal> est adapté au séparateur actuel avec la forme entre guillemets <literal>\"sep=\"\"</literal> (si les guillemets / délimiteurs de texte ne sont pas vides et | est le séparateur) et utilise toujours le caractère ASCII guillemet double  \"."
+
+#. uBq4B
+#: csv_params.xhp
+msgctxt ""
+"csv_params.xhp\n"
+"par_id61638377631743\n"
+"help.text"
+msgid "If the line containing the <literal>sep=|</literal> is not to be imported as data, remember to set the <emph>From row</emph> number in the dialog to 2. Note that this line will not be preserved when re-saving."
+msgstr "Si la ligne contenant le <literal>sep=|</literal> ne doit pas être importée en tant que données, n'oubliez pas de définir le nombre <emph>De la ligne</emph> dans la boîte de dialogue sur 2. Notez que cette ligne ne sera pas conservée lors du réenregistrement."
+
+#. oGd5z
+#: csv_params.xhp
+msgctxt ""
+"csv_params.xhp\n"
+"par_id731638374814029\n"
+"help.text"
+msgid "\"LETTER\"|\"ANIMAL\""
+msgstr "\"LETTRE\"|\"ANIMAL\""
+
+#. CsfKB
+#: csv_params.xhp
+msgctxt ""
+"csv_params.xhp\n"
+"par_id801638374818291\n"
+"help.text"
+msgid "\"a\"|\"aardvark\""
+msgstr "\"a\"|\"araignée\""
+
+#. t62e9
+#: csv_params.xhp
+msgctxt ""
+"csv_params.xhp\n"
+"par_id621638374822275\n"
+"help.text"
+msgid "\"b\"|\"bear\""
+msgstr "\"b\"|\"buffle\""
+
+#. G2aQG
+#: csv_params.xhp
+msgctxt ""
+"csv_params.xhp\n"
+"par_id851638374831208\n"
+"help.text"
+msgid "\"c\"|\"cow\""
+msgstr "\"c\"|\"canard\""
 
 #. EFwn3
 #: csv_params.xhp
@@ -8889,7 +8970,7 @@ msgctxt ""
 "hd_id951627860296699\n"
 "help.text"
 msgid "<variable id=\"DevTools_h1\"><link href=\"text/shared/guide/dev_tools.xhp\" name=\"DevTools_help\">Development Tools</link></variable>"
-msgstr ""
+msgstr "<variable id=\"DevTools_h1\"><link href=\"text/shared/guide/dev_tools.xhp\" name=\"DevTools_help\">Outils de développement</link></variable>"
 
 #. p3pqz
 #: dev_tools.xhp
@@ -8898,7 +8979,7 @@ msgctxt ""
 "par_id3155069\n"
 "help.text"
 msgid "<variable id=\"DevTools_intro\"><ahelp hid=\".uno:LoadToolBox\">Inspects objects in %PRODUCTNAME documents and shows supported UNO services, as well as available methods, properties and implemented interfaces. This feature also allows to explore the document structure using the Document Object Model (DOM).</ahelp></variable>"
-msgstr ""
+msgstr "<variable id=\"DevTools_intro\"><ahelp hid=\".uno:LoadToolBox\">Inspecte les objets dans les documents %PRODUCTNAME et affiche les services UNO pris en charge, ainsi que les méthodes, propriétés et interfaces implémentées disponibles. Cette fonctionnalité permet également d'explorer la structure du document à l'aide du modèle d'objet de document (DOM).</ahelp></variable>"
 
 #. st97j
 #: dev_tools.xhp
@@ -8907,7 +8988,7 @@ msgctxt ""
 "par_id961562795750725\n"
 "help.text"
 msgid "Choose <menuitem>Tools - Development Tools</menuitem>"
-msgstr ""
+msgstr "Choisissez <menuitem>Outils - Outils de développement</menuitem>"
 
 #. G6m74
 #: dev_tools.xhp
@@ -8916,7 +8997,7 @@ msgctxt ""
 "par_id241637079282587\n"
 "help.text"
 msgid "<image src=\"cmd/lc_developmenttoolsdockingwindow.svg\" id=\"img_id341637079282588\" width=\"1cm\" height=\"1cm\"><alt id=\"alt_id651637079282589\">Icon Development Tools</alt></image>"
-msgstr ""
+msgstr "<image src=\"cmd/lc_developmenttoolsdockingwindow.svg\" id=\"img_id341637079282588\" width=\"1cm\" height=\"1cm\"><alt id=\"alt_id651637079282589\">Icône Outils de développement</alt></image>"
 
 #. Adauw
 #: dev_tools.xhp
@@ -8925,7 +9006,7 @@ msgctxt ""
 "par_id991637079282590\n"
 "help.text"
 msgid "Development Tools"
-msgstr ""
+msgstr "Outils de développement"
 
 #. EcEEb
 #: dev_tools.xhp
@@ -8934,7 +9015,7 @@ msgctxt ""
 "par_id271627931218557\n"
 "help.text"
 msgid "The <emph>Development Tools</emph> are visible in all documents of %PRODUCTNAME Writer, Calc, Impress and Draw. The display is persistent and remain visible until deselected."
-msgstr ""
+msgstr "Les <emph>Outils de développement</emph> sont visibles dans tous les document %PRODUCTNAME Writer, Calc, Impress et Draw. L'affichage est persistant et reste visible jusqu'à sa dé-sélection."
 
 #. YrKDj
 #: dev_tools.xhp
@@ -8943,7 +9024,7 @@ msgctxt ""
 "par_id3152821\n"
 "help.text"
 msgid "When <emph>Development Tools</emph> is enabled, a dockable window is shown at the bottom of the screen. This window has two sections:"
-msgstr ""
+msgstr "Lorsque <emph>Outils de développement</emph> est activé, une fenêtre ancrable est affichée en bas de l'écran. Cette fenêtre a deux sections :"
 
 #. BbGGE
 #: dev_tools.xhp
@@ -8952,7 +9033,7 @@ msgctxt ""
 "par_id31627862228021\n"
 "help.text"
 msgid "<emph>Document Object Model tree view:</emph> Displays document portions according to the Document Object Model (DOM). Use this section to chose the object to inspect."
-msgstr ""
+msgstr "<emph>Arborescence du modèle d'objet de document :</emph> affiche les parties du document selon le modèle d'objet de document (DOM). Utilisez cette section pour choisir l'objet à inspecter."
 
 #. fJXDt
 #: dev_tools.xhp
@@ -8961,7 +9042,7 @@ msgctxt ""
 "par_id581627862228381\n"
 "help.text"
 msgid "<emph>Object inspection panel:</emph> Displays the available services, methods, properties and interfaces of the selected object."
-msgstr ""
+msgstr "<emph>Panneau d'inspection des objets :</emph> affiche les services, méthodes, propriétés et interfaces disponibles de l'objet sélectionné."
 
 #. fiPDo
 #: dev_tools.xhp
@@ -8970,7 +9051,7 @@ msgctxt ""
 "par_id91627862617231\n"
 "help.text"
 msgid "This feature is available since %PRODUCTNAME 7.2 for Writer, Calc, Impress and Draw."
-msgstr ""
+msgstr "Cette fonction est disponible depuis la version %PRODUCTNAME 7.2 pour Writer, Calc, Impress et Draw."
 
 #. 5J2jc
 #: dev_tools.xhp
@@ -8979,7 +9060,7 @@ msgctxt ""
 "hd_id791627911297568\n"
 "help.text"
 msgid "Document Model Tree View"
-msgstr ""
+msgstr "Arborescence du modèle de document"
 
 #. WCR6k
 #: dev_tools.xhp
@@ -8988,7 +9069,7 @@ msgctxt ""
 "par_id3153303\n"
 "help.text"
 msgid "The left side of the window contains a <emph>Current Selection</emph> toggle button, a <emph>Refresh</emph> button and a tree view that displays all objects in the document."
-msgstr ""
+msgstr "Le côté gauche de la fenêtre contient un bouton bascule <emph>Sélection active</emph>, un bouton <emph>Actualiser</emph> et une arborescence qui affiche tous les objets du document."
 
 #. DEPEn
 #: dev_tools.xhp
@@ -8997,7 +9078,7 @@ msgctxt ""
 "par_id891627912224207\n"
 "help.text"
 msgid "The behavior of the tree view depends on the status of the <emph>Current Selection</emph> toggle button:"
-msgstr ""
+msgstr "Le comportement de l'arborescence dépend de l'état du bouton bascule <emph>Sélection active</emph> :"
 
 #. CJUxG
 #: dev_tools.xhp
@@ -9006,7 +9087,7 @@ msgctxt ""
 "par_id811627912238786\n"
 "help.text"
 msgid "Click on <emph>Current Selection</emph> to display the properties of the object currently selected in the document. Hence, clicking any item in the tree view have no effect."
-msgstr ""
+msgstr "Cliquez sur <emph>Sélection active</emph> pour afficher les propriétés de l'objet actuellement sélectionné dans le document. Par conséquent, cliquer sur n'importe quel élément de l'arborescence n'a aucun effet."
 
 #. C3mpn
 #: dev_tools.xhp
@@ -9015,7 +9096,7 @@ msgctxt ""
 "par_id721627912239053\n"
 "help.text"
 msgid "Click on <emph>Current Selection</emph> again to display any item in the tree view and update the contents of the <emph>Object Inspection Panel</emph>."
-msgstr ""
+msgstr "Cliquez à nouveau sur <emph>Sélection active</emph> pour afficher n'importe quel élément dans l'arborescence et mettre à jour le contenu du <emph>Panneau d'inspection des objets</emph>."
 
 #. PmkTZ
 #: dev_tools.xhp
@@ -9024,7 +9105,7 @@ msgctxt ""
 "par_id931627912467594\n"
 "help.text"
 msgid "The types of objects displayed by the <emph>Document Model Tree View</emph> depend on the %PRODUCTNAME application being used:"
-msgstr ""
+msgstr "Les types d'objets affichés par la <emph>Vue de l'arborescence du modèle de document</emph> dépendent de l'application %PRODUCTNAME utilisée :"
 
 #. AMFhp
 #: dev_tools.xhp
@@ -9033,7 +9114,7 @@ msgctxt ""
 "par_id691627912559559\n"
 "help.text"
 msgid "%PRODUCTNAME application"
-msgstr ""
+msgstr "Application %PRODUCTNAME"
 
 #. 44vcy
 #: dev_tools.xhp
@@ -9042,7 +9123,7 @@ msgctxt ""
 "par_id771627912559559\n"
 "help.text"
 msgid "Supported objects"
-msgstr ""
+msgstr "Objets pris en charge"
 
 #. meXjs
 #: dev_tools.xhp
@@ -9051,7 +9132,7 @@ msgctxt ""
 "par_id941627912559559\n"
 "help.text"
 msgid "Paragraphs<br/>Text Portions in a Paragraph<br/>Shapes<br/>Tables<br/>Frames<br/>Graphic Objects<br/>Embedded Objects (OLE)<br/>Style Families and Styles"
-msgstr ""
+msgstr "Paragraphes<br/>Portions de texte dans un paragraphe<br/>Formes<br/>Tableaux<br/>Cadres<br/>Objets graphiques<br/>Objets incorporés (OLE)<br/>Familles de styles et styles"
 
 #. SHryG
 #: dev_tools.xhp
@@ -9060,7 +9141,7 @@ msgctxt ""
 "par_id601627912702265\n"
 "help.text"
 msgid "Sheets<br/>Shapes per sheet<br/>Charts per sheet<br/>Pivot tables per sheet<br/>Style Families and Styles"
-msgstr ""
+msgstr "Feuilles<br/>Formes par feuille<br/>Diagrammes par feuille<br/>Tableaux croisés dynamiques par feuille<br/>Familles de styles et styles"
 
 #. G7tq6
 #: dev_tools.xhp
@@ -9069,7 +9150,7 @@ msgctxt ""
 "par_id561627912902324\n"
 "help.text"
 msgid "Slides<br/>Shapes per slide<br/>Master slides<br/>Style Families and Styles"
-msgstr ""
+msgstr "Diapositives<br/>Formes par diapositive<br/>Diapositives maîtresses<br/>Familles de styles et styles"
 
 #. QBNop
 #: dev_tools.xhp
@@ -9078,7 +9159,7 @@ msgctxt ""
 "par_id561627912902123\n"
 "help.text"
 msgid "Pages<br/>Shapes per page<br/>Style Families and Styles"
-msgstr ""
+msgstr "Pages<br/>Formes par page<br/>Familles de styles et styles"
 
 #. SsmFY
 #: dev_tools.xhp
@@ -9087,7 +9168,7 @@ msgctxt ""
 "hd_id731627913346236\n"
 "help.text"
 msgid "Object Inspection Panel"
-msgstr ""
+msgstr "Panneau d'inspection d'objets"
 
 #. ULvie
 #: dev_tools.xhp
@@ -9096,7 +9177,7 @@ msgctxt ""
 "par_id571627913372273\n"
 "help.text"
 msgid "The right side of the window is the <emph>Object Inspection Panel</emph> that displays information about the object being inspected."
-msgstr ""
+msgstr "Le côté droit de la fenêtre est le <emph>Panneau d'inspection des objets</emph> qui affiche des informations sur l'objet inspecté."
 
 #. KJDUA
 #: dev_tools.xhp
@@ -9105,7 +9186,7 @@ msgctxt ""
 "par_id361627930602108\n"
 "help.text"
 msgid "<emph>Class Name</emph>: is the name of the object class."
-msgstr ""
+msgstr "<emph>Nom de la classe</emph> : est le nom de la classe d'objets."
 
 #. TbDBD
 #: dev_tools.xhp
@@ -9114,7 +9195,7 @@ msgctxt ""
 "par_id111627931046662\n"
 "help.text"
 msgid "Use the class name to search more information in the API documentation. For example, the top-level object in a Writer document is an instance of the class <emph>SwXTextDocument</emph>, which is documented at <link href=\"https://docs.libreoffice.org/sw/html/classSwXTextDocument.html\" name=\"SwXTextDocument_API\">SwXTextDocument Class Reference</link>."
-msgstr ""
+msgstr "Utilisez le nom de la classe pour rechercher des informations supplémentaires dans la documentation de l'API. Par exemple, l'objet de niveau supérieur dans un document Writer est une instance de la classe <emph>SwXTextDocument</emph>, qui est documentée sur <link href=\"https://docs.libreoffice.org/sw/html/classSwXTextDocument.html\" name=\"SwXTextDocument_API\">Référence de classe SwXTextDocument</link>."
 
 #. 7g3wB
 #: dev_tools.xhp
@@ -9123,7 +9204,7 @@ msgctxt ""
 "par_id371627930700568\n"
 "help.text"
 msgid "You can inspect the object further by using the four tabs available that display its <emph>Interfaces</emph>, <emph>Services</emph>, <emph>Properties</emph> and <emph>Methods</emph>."
-msgstr ""
+msgstr "Vous pouvez inspecter davantage l'objet en utilisant les quatre onglets disponibles qui affichent ses <emph>Interfaces</emph>, <emph>Services</emph>, <emph>Propriétés</emph> et <emph>Méthodes</emph> ."
 
 #. hd4cE
 #: dev_tools.xhp
@@ -9132,7 +9213,7 @@ msgctxt ""
 "par_id71627913884995\n"
 "help.text"
 msgid "The information about the object is organized in columns in each tab. The set of columns displayed depend on the selected tab."
-msgstr ""
+msgstr "Les informations sur l'objet sont organisées en colonnes dans chaque onglet. L'ensemble des colonnes affichées dépend de l'onglet sélectionné."
 
 #. RECVL
 #: dev_tools.xhp
@@ -9141,7 +9222,7 @@ msgctxt ""
 "hd_id511627914011995\n"
 "help.text"
 msgid "Interfaces tab"
-msgstr ""
+msgstr "Onglet Interfaces"
 
 #. FJcvE
 #: dev_tools.xhp
@@ -9150,7 +9231,7 @@ msgctxt ""
 "par_id321627914033147\n"
 "help.text"
 msgid "Contains a single column presenting the list of interfaces implemented by the object."
-msgstr ""
+msgstr "Contient une seule colonne présentant la liste des interfaces implémentées par l'objet."
 
 #. BF7qu
 #: dev_tools.xhp
@@ -9159,7 +9240,7 @@ msgctxt ""
 "hd_id21627913972266\n"
 "help.text"
 msgid "Services tab"
-msgstr ""
+msgstr "Onglet Services"
 
 #. HZPma
 #: dev_tools.xhp
@@ -9168,7 +9249,7 @@ msgctxt ""
 "par_id371627913989665\n"
 "help.text"
 msgid "Contains a single column presenting the list of services supported by the object."
-msgstr ""
+msgstr "Contient une seule colonne présentant la liste des services pris en charge par l'objet."
 
 #. NGnte
 #: dev_tools.xhp
@@ -9177,7 +9258,7 @@ msgctxt ""
 "hd_id901627914056156\n"
 "help.text"
 msgid "Properties tab"
-msgstr ""
+msgstr "Onglet Propriétés"
 
 #. 9kX9a
 #: dev_tools.xhp
@@ -9186,7 +9267,7 @@ msgctxt ""
 "par_id531627914066770\n"
 "help.text"
 msgid "Contains four columns that describe the properties of the object:"
-msgstr ""
+msgstr "Contient quatre colonnes qui décrivent les propriétés de l'objet :"
 
 #. eNhy9
 #: dev_tools.xhp
@@ -9195,7 +9276,7 @@ msgctxt ""
 "par_id461627914264898\n"
 "help.text"
 msgid "<emph>Property</emph>: Shows the names of the object properties."
-msgstr ""
+msgstr "<emph>Propriété</emph> : affiche les noms des propriétés de l'objet."
 
 #. hDfcB
 #: dev_tools.xhp
@@ -9204,7 +9285,7 @@ msgctxt ""
 "par_id491627914265327\n"
 "help.text"
 msgid "<emph>Value</emph>: Displays a textual representation of the current property value."
-msgstr ""
+msgstr "<emph>Valeur</emph> : affiche une représentation textuelle de la valeur de la propriété active."
 
 #. 7P4rv
 #: dev_tools.xhp
@@ -9213,7 +9294,7 @@ msgctxt ""
 "par_id981627914265672\n"
 "help.text"
 msgid "<emph>Type</emph>: Shows the property type."
-msgstr ""
+msgstr "<emph>Type</emph> : affiche le type de propriété."
 
 #. VxeGP
 #: dev_tools.xhp
@@ -9222,7 +9303,7 @@ msgctxt ""
 "par_id391627914265992\n"
 "help.text"
 msgid "<emph>Info</emph>: display relevant information about the property. For example, a read-only property displays \"read-only\" in this column."
-msgstr ""
+msgstr "<emph>Info</emph> : affichez les informations pertinentes sur la propriété. Par exemple, une propriété en lecture seule affiche \"lecture seule\" dans cette colonne."
 
 #. L6iHf
 #: dev_tools.xhp
@@ -9231,7 +9312,7 @@ msgctxt ""
 "par_id161627914138859\n"
 "help.text"
 msgid "The <emph>Properties</emph> tab also includes a text box on the bottom to display the full textual representation of the property value."
-msgstr ""
+msgstr "L'onglet <emph>Propriétés</emph> comprend également une zone de texte en bas pour afficher la représentation textuelle complète de la valeur de la propriété."
 
 #. ptFVa
 #: dev_tools.xhp
@@ -9240,7 +9321,7 @@ msgctxt ""
 "hd_id941627914764723\n"
 "help.text"
 msgid "Methods tab"
-msgstr ""
+msgstr "Onglet Méthodes"
 
 #. XBugD
 #: dev_tools.xhp
@@ -9249,7 +9330,7 @@ msgctxt ""
 "par_id671627914803456\n"
 "help.text"
 msgid "Contains four columns that describe the combined list of methods that can be called by the current object:"
-msgstr ""
+msgstr "Contient quatre colonnes qui décrivent la liste combinée des méthodes pouvant être appelées par l'objet actuel :"
 
 #. iFvEX
 #: dev_tools.xhp
@@ -9258,7 +9339,7 @@ msgctxt ""
 "par_id281627914839271\n"
 "help.text"
 msgid "<emph>Method</emph>: Shows the names of all methods of the object."
-msgstr ""
+msgstr "<emph>Méthode</emph> : affiche les noms de toutes les méthodes de l'objet."
 
 #. hFE8H
 #: dev_tools.xhp
@@ -9267,7 +9348,7 @@ msgctxt ""
 "par_id421627914839748\n"
 "help.text"
 msgid "<emph>Return type</emph>: Displays the return type of the object methods. Methods that do not return any value are marked as \"void\" in this column."
-msgstr ""
+msgstr "<emph>Type de retour</emph> : affiche le type de retour des méthodes de l'objet. Les méthodes qui ne renvoient aucune valeur sont marquées comme « void » dans cette colonne."
 
 #. NwGtg
 #: dev_tools.xhp
@@ -9276,7 +9357,7 @@ msgctxt ""
 "par_id891627914840174\n"
 "help.text"
 msgid "<emph>Parameters</emph>: Shows the list of parameters that are required by the method as well as their respective types."
-msgstr ""
+msgstr "<emph>Paramètres</emph> : affiche la liste des paramètres requis par la méthode ainsi que leurs types respectifs."
 
 #. KDTST
 #: dev_tools.xhp
@@ -9285,7 +9366,7 @@ msgctxt ""
 "par_id371627914840561\n"
 "help.text"
 msgid "<emph>Implementation class</emph>: Displays the name of the class where the method is implemented."
-msgstr ""
+msgstr "<emph>Classe d'implémentation</emph> : affiche le nom de la classe dans laquelle la méthode est implémentée."
 
 #. WNbRY
 #: digital_signatures.xhp
@@ -17412,7 +17493,7 @@ msgctxt ""
 "tit\n"
 "help.text"
 msgid "Lotus, dBase and Diff filter parameters"
-msgstr ""
+msgstr "Paramètres de filtre Lotus, dBase et Diff"
 
 #. vTZDY
 #: lotusdbasediff.xhp
@@ -17421,7 +17502,7 @@ msgctxt ""
 "bm_id561634741028649\n"
 "help.text"
 msgid "<bookmark_value>Lotus;command line filter options</bookmark_value><bookmark_value>dBase;command line filter options</bookmark_value><bookmark_value>Diff;command line filter options</bookmark_value>"
-msgstr ""
+msgstr "<bookmark_value>Lotus;options de filtre de ligne de commande</bookmark_value><bookmark_value>dBase;options de filtre de ligne de commande</bookmark_value><bookmark_value>Diff;options de filtre de ligne de commande</bookmark_value>"
 
 #. AMfh8
 #: lotusdbasediff.xhp
@@ -17430,7 +17511,7 @@ msgctxt ""
 "hd_id871634727961723\n"
 "help.text"
 msgid "<variable id=\"lotusbasediff_h1\"><link href=\"text/shared/guide/lotusdbasediff.xhp\" name=\"LotusdBaseDiff\">Lotus, dBase and Diff filter parameters</link></variable>"
-msgstr ""
+msgstr "<variable id=\"lotusbasediff_h1\"><link href=\"text/shared/guide/lotusdbasediff.xhp\" name=\"LotusdBaseDiff\">Paramètres de filtre Lotus, dBase et Diff</link></variable>"
 
 #. GaDJ8
 #: lotusdbasediff.xhp
@@ -17439,7 +17520,7 @@ msgctxt ""
 "par_id951634727961726\n"
 "help.text"
 msgid "The Lotus, dBase and Diff filters accept a string containing the numerical index of the used character set for single-byte characters, that is, 0 for the system character set. The numerical indexes assigned to the character sets are in the table below."
-msgstr ""
+msgstr "Les filtres Lotus, dBase et Diff acceptent une chaîne contenant l'index numérique du jeu de caractères utilisé pour les caractères à un octet, c'est-à-dire 0 pour le jeu de caractères système. Les index numériques attribués aux jeux de caractères sont dans le tableau ci-dessous."
 
 #. DC55B
 #: lotusdbasediff.xhp
@@ -17448,7 +17529,7 @@ msgctxt ""
 "par_id711634734305500\n"
 "help.text"
 msgid "To import file myLotus.wk3 with DOS/OS2-850/International (Western) character set."
-msgstr ""
+msgstr "Pour importer le fichier myLotus.wk3 avec le jeu de caractères DOS/OS2-850/International (Western)."
 
 #. 9K3yd
 #: lotusdbasediff.xhp
@@ -17457,7 +17538,7 @@ msgctxt ""
 "par_id271634732842048\n"
 "help.text"
 msgid "<literal>soffice --infilter=\"Lotus:4\" myLotus.wk3</literal>"
-msgstr ""
+msgstr "<literal>soffice --infilter=\"Lotus:4\" myLotus.wk3</literal>"
 
 #. vgUAD
 #: lotusdbasediff.xhp
@@ -17466,7 +17547,7 @@ msgctxt ""
 "par_id941634728189424\n"
 "help.text"
 msgid "Character set"
-msgstr ""
+msgstr "Jeu de caractères"
 
 #. tgBCT
 #: lotusdbasediff.xhp
@@ -17475,7 +17556,7 @@ msgctxt ""
 "par_id361634728189424\n"
 "help.text"
 msgid "Index"
-msgstr ""
+msgstr "Index"
 
 #. mwKC2
 #: lotusdbasediff.xhp
@@ -17484,7 +17565,7 @@ msgctxt ""
 "par_id3595418994\n"
 "help.text"
 msgid "Unknown"
-msgstr ""
+msgstr "Inconnu(e)"
 
 #. t4M3L
 #: lotusdbasediff.xhp
@@ -17493,7 +17574,7 @@ msgctxt ""
 "par_id6867528259\n"
 "help.text"
 msgid "Windows-1252/WinLatin 1 (Western)"
-msgstr ""
+msgstr "Windows-1252/WinLatin 1 (Western)"
 
 #. n8WbE
 #: lotusdbasediff.xhp
@@ -17502,7 +17583,7 @@ msgctxt ""
 "par_id8119642953\n"
 "help.text"
 msgid "Apple Macintosh (Western)"
-msgstr ""
+msgstr "Apple Macintosh (Western)"
 
 #. wYujo
 #: lotusdbasediff.xhp
@@ -17511,7 +17592,7 @@ msgctxt ""
 "par_id463985409\n"
 "help.text"
 msgid "DOS/OS2-437/US (Western)"
-msgstr ""
+msgstr "DOS/OS2-437/US (Western)"
 
 #. yK7oB
 #: lotusdbasediff.xhp
@@ -17520,7 +17601,7 @@ msgctxt ""
 "par_id7577032620\n"
 "help.text"
 msgid "DOS/OS2-850/International (Western)"
-msgstr ""
+msgstr "DOS/OS2-850/International (Western)"
 
 #. LDVc7
 #: lotusdbasediff.xhp
@@ -17529,7 +17610,7 @@ msgctxt ""
 "par_id8394619482\n"
 "help.text"
 msgid "DOS/OS2-860/Portuguese (Western)"
-msgstr ""
+msgstr "DOS/OS2-860/Portuguese (Western)"
 
 #. eyZPs
 #: lotusdbasediff.xhp
@@ -17538,7 +17619,7 @@ msgctxt ""
 "par_id8817860061\n"
 "help.text"
 msgid "DOS/OS2-861/Icelandic (Western)"
-msgstr ""
+msgstr "DOS/OS2-861/Icelandic (Western)"
 
 #. wMUyq
 #: lotusdbasediff.xhp
@@ -17547,7 +17628,7 @@ msgctxt ""
 "par_id4921442704\n"
 "help.text"
 msgid "DOS/OS2-863/Canadian-French (Western)"
-msgstr ""
+msgstr "DOS/OS2-863/Canadian-French (Western)"
 
 #. 8ZQ69
 #: lotusdbasediff.xhp
@@ -17556,7 +17637,7 @@ msgctxt ""
 "par_id7664791639\n"
 "help.text"
 msgid "DOS/OS2-865/Nordic (Western)"
-msgstr ""
+msgstr "DOS/OS2-865/Nordic (Western)"
 
 #. dVvsS
 #: lotusdbasediff.xhp
@@ -17565,7 +17646,7 @@ msgctxt ""
 "par_id2517707917\n"
 "help.text"
 msgid "System default"
-msgstr ""
+msgstr "Par défaut du système"
 
 #. uxJB9
 #: lotusdbasediff.xhp
@@ -17574,7 +17655,7 @@ msgctxt ""
 "par_id726768156\n"
 "help.text"
 msgid "Symbol"
-msgstr ""
+msgstr "Symbole"
 
 #. MsC3b
 #: lotusdbasediff.xhp
@@ -17583,7 +17664,7 @@ msgctxt ""
 "par_id9649275081\n"
 "help.text"
 msgid "ASCII/US (Western)"
-msgstr ""
+msgstr "ASCII/US (Western)"
 
 #. QMkdx
 #: lotusdbasediff.xhp
@@ -17592,7 +17673,7 @@ msgctxt ""
 "par_id7560998407\n"
 "help.text"
 msgid "ISO-8859-1 (Western)"
-msgstr ""
+msgstr "ISO-8859-1 (Western)"
 
 #. 5Coku
 #: lotusdbasediff.xhp
@@ -17601,7 +17682,7 @@ msgctxt ""
 "par_id7110791405\n"
 "help.text"
 msgid "ISO-8859-2 (Central European)"
-msgstr ""
+msgstr "ISO-8859-2 (Central European)"
 
 #. cnoiQ
 #: lotusdbasediff.xhp
@@ -17610,7 +17691,7 @@ msgctxt ""
 "par_id6569976233\n"
 "help.text"
 msgid "ISO-8859-3 (Latin 3)"
-msgstr ""
+msgstr "ISO-8859-3 (Latin 3)"
 
 #. NfYxS
 #: lotusdbasediff.xhp
@@ -17619,7 +17700,7 @@ msgctxt ""
 "par_id6885689002\n"
 "help.text"
 msgid "ISO-8859-4 (Baltic)"
-msgstr ""
+msgstr "ISO-8859-4 (Baltic)"
 
 #. FEpGp
 #: lotusdbasediff.xhp
@@ -17628,7 +17709,7 @@ msgctxt ""
 "par_id9664335036\n"
 "help.text"
 msgid "ISO-8859-5 (Cyrillic)"
-msgstr ""
+msgstr "ISO-8859-5 (Cyrillic)"
 
 #. jSnZ8
 #: lotusdbasediff.xhp
@@ -17637,7 +17718,7 @@ msgctxt ""
 "par_id8104755630\n"
 "help.text"
 msgid "ISO-8859-6 (Arabic)"
-msgstr ""
+msgstr "ISO-8859-6 (Arabic)"
 
 #. 3MTAK
 #: lotusdbasediff.xhp
@@ -17646,7 +17727,7 @@ msgctxt ""
 "par_id5395014781\n"
 "help.text"
 msgid "ISO-8859-7 (Greek)"
-msgstr ""
+msgstr "ISO-8859-7 (Greek)"
 
 #. w7DLg
 #: lotusdbasediff.xhp
@@ -17655,7 +17736,7 @@ msgctxt ""
 "par_id5354416572\n"
 "help.text"
 msgid "ISO-8859-8 (Hebrew)"
-msgstr ""
+msgstr "ISO-8859-8 (Hebrew)"
 
 #. nzT2W
 #: lotusdbasediff.xhp
@@ -17664,7 +17745,7 @@ msgctxt ""
 "par_id3982667842\n"
 "help.text"
 msgid "ISO-8859-9 (Turkish)"
-msgstr ""
+msgstr "ISO-8859-9 (Turkish)"
 
 #. GZMhu
 #: lotusdbasediff.xhp
@@ -17673,7 +17754,7 @@ msgctxt ""
 "par_id4764337087\n"
 "help.text"
 msgid "ISO-8859-14 (Western)"
-msgstr ""
+msgstr "ISO-8859-14 (Western)"
 
 #. htMTX
 #: lotusdbasediff.xhp
@@ -17682,7 +17763,7 @@ msgctxt ""
 "par_id5341317667\n"
 "help.text"
 msgid "ISO-8859-15/EURO (Western)"
-msgstr ""
+msgstr "ISO-8859-15/EURO (Western)"
 
 #. iCAjC
 #: lotusdbasediff.xhp
@@ -17691,7 +17772,7 @@ msgctxt ""
 "par_id8190805703\n"
 "help.text"
 msgid "DOS/OS2-737 (Greek)"
-msgstr ""
+msgstr "DOS/OS2-737 (Greek)"
 
 #. 9xBJb
 #: lotusdbasediff.xhp
@@ -17700,7 +17781,7 @@ msgctxt ""
 "par_id3299597784\n"
 "help.text"
 msgid "DOS/OS2-775 (Baltic)"
-msgstr ""
+msgstr "DOS/OS2-775 (Baltic)"
 
 #. 6hVhF
 #: lotusdbasediff.xhp
@@ -17709,7 +17790,7 @@ msgctxt ""
 "par_id7018988324\n"
 "help.text"
 msgid "DOS/OS2-852 (Central European)"
-msgstr ""
+msgstr "DOS/OS2-852 (Central European)"
 
 #. SX66i
 #: lotusdbasediff.xhp
@@ -17718,7 +17799,7 @@ msgctxt ""
 "par_id9277324375\n"
 "help.text"
 msgid "DOS/OS2-855 (Cyrillic)"
-msgstr ""
+msgstr "DOS/OS2-855 (Cyrillic)"
 
 #. agTyE
 #: lotusdbasediff.xhp
@@ -17727,7 +17808,7 @@ msgctxt ""
 "par_id138732955\n"
 "help.text"
 msgid "DOS/OS2-857 (Turkish)"
-msgstr ""
+msgstr "DOS/OS2-857 (Turkish)"
 
 #. K7Ngv
 #: lotusdbasediff.xhp
@@ -17736,7 +17817,7 @@ msgctxt ""
 "par_id6163462950\n"
 "help.text"
 msgid "DOS/OS2-862 (Hebrew)"
-msgstr ""
+msgstr "DOS/OS2-862 (Hebrew)"
 
 #. oBLqw
 #: lotusdbasediff.xhp
@@ -17745,7 +17826,7 @@ msgctxt ""
 "par_id957523556\n"
 "help.text"
 msgid "DOS/OS2-864 (Arabic)"
-msgstr ""
+msgstr "DOS/OS2-864 (Arabic)"
 
 #. wDrHu
 #: lotusdbasediff.xhp
@@ -17754,7 +17835,7 @@ msgctxt ""
 "par_id3620965595\n"
 "help.text"
 msgid "DOS/OS2-866/Russian (Cyrillic)"
-msgstr ""
+msgstr "DOS/OS2-866/Russian (Cyrillic)"
 
 #. KmHiA
 #: lotusdbasediff.xhp
@@ -17763,7 +17844,7 @@ msgctxt ""
 "par_id5590690561\n"
 "help.text"
 msgid "DOS/OS2-869/Modern (Greek)"
-msgstr ""
+msgstr "DOS/OS2-869/Modern (Greek)"
 
 #. HzHu5
 #: lotusdbasediff.xhp
@@ -17772,7 +17853,7 @@ msgctxt ""
 "par_id4413925285\n"
 "help.text"
 msgid "DOS/Windows-874 (Thai)"
-msgstr ""
+msgstr "DOS/Windows-874 (Thai)"
 
 #. ASun4
 #: lotusdbasediff.xhp
@@ -17781,7 +17862,7 @@ msgctxt ""
 "par_id8678281824\n"
 "help.text"
 msgid "Windows-1250/WinLatin 2 (Central European)"
-msgstr ""
+msgstr "Windows-1250/WinLatin 2 (Central European)"
 
 #. EBPgi
 #: lotusdbasediff.xhp
@@ -17790,7 +17871,7 @@ msgctxt ""
 "par_id7262965442\n"
 "help.text"
 msgid "Windows-1251 (Cyrillic)"
-msgstr ""
+msgstr "Windows-1251 (Cyrillic)"
 
 #. dSjzb
 #: lotusdbasediff.xhp
@@ -17799,7 +17880,7 @@ msgctxt ""
 "par_id349886227\n"
 "help.text"
 msgid "Windows-1253 (Greek)"
-msgstr ""
+msgstr "Windows-1253 (Greek)"
 
 #. JqWit
 #: lotusdbasediff.xhp
@@ -17808,7 +17889,7 @@ msgctxt ""
 "par_id9334140001\n"
 "help.text"
 msgid "Windows-1254 (Turkish)"
-msgstr ""
+msgstr "Windows-1254 (Turkish)"
 
 #. osHL5
 #: lotusdbasediff.xhp
@@ -17817,7 +17898,7 @@ msgctxt ""
 "par_id198637729\n"
 "help.text"
 msgid "Windows-1255 (Hebrew)"
-msgstr ""
+msgstr "Windows-1255 (Hebrew)"
 
 #. AGNDB
 #: lotusdbasediff.xhp
@@ -17826,7 +17907,7 @@ msgctxt ""
 "par_id1915253947\n"
 "help.text"
 msgid "Windows-1256 (Arabic)"
-msgstr ""
+msgstr "Windows-1256 (Arabic)"
 
 #. yLXBd
 #: lotusdbasediff.xhp
@@ -17835,7 +17916,7 @@ msgctxt ""
 "par_id3963233883\n"
 "help.text"
 msgid "Windows-1257 (Baltic)"
-msgstr ""
+msgstr "Windows-1257 (Baltic)"
 
 #. 4R3tM
 #: lotusdbasediff.xhp
@@ -17844,7 +17925,7 @@ msgctxt ""
 "par_id7531693853\n"
 "help.text"
 msgid "Windows-1258 (Vietnamese)"
-msgstr ""
+msgstr "Windows-1258 (Vietnamese)"
 
 #. XCFQC
 #: lotusdbasediff.xhp
@@ -17853,7 +17934,7 @@ msgctxt ""
 "par_id1467844465\n"
 "help.text"
 msgid "Apple Macintosh (Arabic)"
-msgstr ""
+msgstr "Apple Macintosh (Arabic)"
 
 #. BPTER
 #: lotusdbasediff.xhp
@@ -17862,7 +17943,7 @@ msgctxt ""
 "par_id6024654003\n"
 "help.text"
 msgid "Apple Macintosh (Central European)"
-msgstr ""
+msgstr "Apple Macintosh (Central European)"
 
 #. HD8gK
 #: lotusdbasediff.xhp
@@ -17871,7 +17952,7 @@ msgctxt ""
 "par_id5126976760\n"
 "help.text"
 msgid "Apple Macintosh/Croatian (Central European)"
-msgstr ""
+msgstr "Apple Macintosh/Croatian (Central European)"
 
 #. 8VBmx
 #: lotusdbasediff.xhp
@@ -17880,7 +17961,7 @@ msgctxt ""
 "par_id3792290000\n"
 "help.text"
 msgid "Apple Macintosh (Cyrillic)"
-msgstr ""
+msgstr "Apple Macintosh (Cyrillic)"
 
 #. YXyyc
 #: lotusdbasediff.xhp
@@ -17889,7 +17970,7 @@ msgctxt ""
 "par_id9965406690\n"
 "help.text"
 msgid "Not supported: Apple Macintosh (Devanagari)"
-msgstr ""
+msgstr "Non pris en charge : Apple Macintosh (Devanagari)"
 
 #. u4DPB
 #: lotusdbasediff.xhp
@@ -17898,7 +17979,7 @@ msgctxt ""
 "par_id8871119906\n"
 "help.text"
 msgid "Not supported: Apple Macintosh (Farsi)"
-msgstr ""
+msgstr "Non pris en charge : Apple Macintosh (Farsi)"
 
 #. 8BsMh
 #: lotusdbasediff.xhp
@@ -17907,7 +17988,7 @@ msgctxt ""
 "par_id4888972012\n"
 "help.text"
 msgid "Apple Macintosh (Greek)"
-msgstr ""
+msgstr "Apple Macintosh (Greek)"
 
 #. t5ZDC
 #: lotusdbasediff.xhp
@@ -17916,7 +17997,7 @@ msgctxt ""
 "par_id4238449987\n"
 "help.text"
 msgid "Not supported: Apple Macintosh (Gujarati)"
-msgstr ""
+msgstr "Non pris en charge : Apple Macintosh (Gujarati)"
 
 #. d9zo6
 #: lotusdbasediff.xhp
@@ -17925,7 +18006,7 @@ msgctxt ""
 "par_id7304430577\n"
 "help.text"
 msgid "Not supported: Apple Macintosh (Gurmukhi)"
-msgstr ""
+msgstr "Non pris en charge : Apple Macintosh (Gurmukhi)"
 
 #. EdkVx
 #: lotusdbasediff.xhp
@@ -17934,7 +18015,7 @@ msgctxt ""
 "par_id5620424688\n"
 "help.text"
 msgid "Apple Macintosh (Hebrew)"
-msgstr ""
+msgstr "Apple Macintosh (Hebrew)"
 
 #. UvmYZ
 #: lotusdbasediff.xhp
@@ -17943,7 +18024,7 @@ msgctxt ""
 "par_id9801830706\n"
 "help.text"
 msgid "Apple Macintosh/Icelandic (Western)"
-msgstr ""
+msgstr "Apple Macintosh/Icelandic (Western)"
 
 #. NUAXB
 #: lotusdbasediff.xhp
@@ -17952,7 +18033,7 @@ msgctxt ""
 "par_id1158047357\n"
 "help.text"
 msgid "Apple Macintosh/Romanian (Central European)"
-msgstr ""
+msgstr "Apple Macintosh/Romanian (Central European)"
 
 #. VjbPQ
 #: lotusdbasediff.xhp
@@ -17961,7 +18042,7 @@ msgctxt ""
 "par_id8229976184\n"
 "help.text"
 msgid "Apple Macintosh (Thai)"
-msgstr ""
+msgstr "Apple Macintosh (Thai)"
 
 #. fTrd4
 #: lotusdbasediff.xhp
@@ -17970,7 +18051,7 @@ msgctxt ""
 "par_id9198338282\n"
 "help.text"
 msgid "Apple Macintosh (Turkish)"
-msgstr ""
+msgstr "Apple Macintosh (Turkish)"
 
 #. k2DCo
 #: lotusdbasediff.xhp
@@ -17979,7 +18060,7 @@ msgctxt ""
 "par_id8309681854\n"
 "help.text"
 msgid "Apple Macintosh/Ukrainian (Cyrillic)"
-msgstr ""
+msgstr "Apple Macintosh/Ukrainian (Cyrillic)"
 
 #. LaGmk
 #: lotusdbasediff.xhp
@@ -17988,7 +18069,7 @@ msgctxt ""
 "par_id8838054309\n"
 "help.text"
 msgid "Apple Macintosh (Chinese Simplified)"
-msgstr ""
+msgstr "Apple Macintosh (Chinese Simplified)"
 
 #. SSjQu
 #: lotusdbasediff.xhp
@@ -17997,7 +18078,7 @@ msgctxt ""
 "par_id3756233214\n"
 "help.text"
 msgid "Apple Macintosh (Chinese Traditional)"
-msgstr ""
+msgstr "Apple Macintosh (Chinese Traditional)"
 
 #. QU5fA
 #: lotusdbasediff.xhp
@@ -18006,7 +18087,7 @@ msgctxt ""
 "par_id2879385879\n"
 "help.text"
 msgid "Apple Macintosh (Japanese)"
-msgstr ""
+msgstr "Apple Macintosh (Japanese)"
 
 #. jExUJ
 #: lotusdbasediff.xhp
@@ -18015,7 +18096,7 @@ msgctxt ""
 "par_id1036377524\n"
 "help.text"
 msgid "Apple Macintosh (Korean)"
-msgstr ""
+msgstr "Apple Macintosh (Korean)"
 
 #. 4YszB
 #: lotusdbasediff.xhp
@@ -18024,7 +18105,7 @@ msgctxt ""
 "par_id864841246\n"
 "help.text"
 msgid "Windows-932 (Japanese)"
-msgstr ""
+msgstr "Windows-932 (Japanese)"
 
 #. PFMie
 #: lotusdbasediff.xhp
@@ -18033,7 +18114,7 @@ msgctxt ""
 "par_id2673430188\n"
 "help.text"
 msgid "Windows-936 (Chinese Simplified)"
-msgstr ""
+msgstr "Windows-936 (Chinese Simplified)"
 
 #. CCkYn
 #: lotusdbasediff.xhp
@@ -18042,7 +18123,7 @@ msgctxt ""
 "par_id8091466179\n"
 "help.text"
 msgid "Windows-Wansung-949 (Korean)"
-msgstr ""
+msgstr "Windows-Wansung-949 (Korean)"
 
 #. vaegT
 #: lotusdbasediff.xhp
@@ -18051,7 +18132,7 @@ msgctxt ""
 "par_id39627464\n"
 "help.text"
 msgid "Windows-950 (Chinese Traditional)"
-msgstr ""
+msgstr "Windows-950 (Chinese Traditional)"
 
 #. 9TDCJ
 #: lotusdbasediff.xhp
@@ -18060,7 +18141,7 @@ msgctxt ""
 "par_id9816819191\n"
 "help.text"
 msgid "Shift-JIS (Japanese)"
-msgstr ""
+msgstr "Shift-JIS (Japanese)"
 
 #. pcnRD
 #: lotusdbasediff.xhp
@@ -18069,7 +18150,7 @@ msgctxt ""
 "par_id3206710481\n"
 "help.text"
 msgid "GB-2312 (Chinese Simplified)"
-msgstr ""
+msgstr "GB-2312 (Chinese Simplified)"
 
 #. ELQVE
 #: lotusdbasediff.xhp
@@ -18078,7 +18159,7 @@ msgctxt ""
 "par_id4470976171\n"
 "help.text"
 msgid "GBT-12345 (Chinese Traditional)"
-msgstr ""
+msgstr "GBT-12345 (Chinese Traditional)"
 
 #. iAUTD
 #: lotusdbasediff.xhp
@@ -18087,7 +18168,7 @@ msgctxt ""
 "par_id4932831786\n"
 "help.text"
 msgid "GBK/GB-2312-80 (Chinese Simplified)"
-msgstr ""
+msgstr "GBK/GB-2312-80 (Chinese Simplified)"
 
 #. pmCaK
 #: lotusdbasediff.xhp
@@ -18096,7 +18177,7 @@ msgctxt ""
 "par_id838501984\n"
 "help.text"
 msgid "BIG5 (Chinese Traditional)"
-msgstr ""
+msgstr "BIG5 (Chinese Traditional)"
 
 #. 9UAnC
 #: lotusdbasediff.xhp
@@ -18105,7 +18186,7 @@ msgctxt ""
 "par_id1029043733\n"
 "help.text"
 msgid "EUC-JP (Japanese)"
-msgstr ""
+msgstr "EUC-JP (Japanese)"
 
 #. YAg8h
 #: lotusdbasediff.xhp
@@ -18114,7 +18195,7 @@ msgctxt ""
 "par_id6012776196\n"
 "help.text"
 msgid "EUC-CN (Chinese Simplified)"
-msgstr ""
+msgstr "EUC-CN (Chinese Simplified)"
 
 #. EUiHu
 #: lotusdbasediff.xhp
@@ -18123,7 +18204,7 @@ msgctxt ""
 "par_id5452136920\n"
 "help.text"
 msgid "EUC-TW (Chinese Traditional)"
-msgstr ""
+msgstr "EUC-TW (Chinese Traditional)"
 
 #. kbAeV
 #: lotusdbasediff.xhp
@@ -18132,7 +18213,7 @@ msgctxt ""
 "par_id3435928309\n"
 "help.text"
 msgid "ISO-2022-JP (Japanese)"
-msgstr ""
+msgstr "ISO-2022-JP (Japanese)"
 
 #. Nk6pG
 #: lotusdbasediff.xhp
@@ -18141,7 +18222,7 @@ msgctxt ""
 "par_id2502757680\n"
 "help.text"
 msgid "ISO-2022-CN (Chinese Simplified)"
-msgstr ""
+msgstr "ISO-2022-CN (Chinese Simplified)"
 
 #. AggZE
 #: lotusdbasediff.xhp
@@ -18150,7 +18231,7 @@ msgctxt ""
 "par_id1644410169\n"
 "help.text"
 msgid "KOI8-R (Cyrillic)"
-msgstr ""
+msgstr "KOI8-R (Cyrillic)"
 
 #. D4igh
 #: lotusdbasediff.xhp
@@ -18159,7 +18240,7 @@ msgctxt ""
 "par_id5346160920\n"
 "help.text"
 msgid "Unicode (UTF-7)"
-msgstr ""
+msgstr "Unicode (UTF-7)"
 
 #. 4mFF3
 #: lotusdbasediff.xhp
@@ -18168,7 +18249,7 @@ msgctxt ""
 "par_id6945821257\n"
 "help.text"
 msgid "Unicode (UTF-8)"
-msgstr ""
+msgstr "Unicode (UTF-8)"
 
 #. EFYkJ
 #: lotusdbasediff.xhp
@@ -18177,7 +18258,7 @@ msgctxt ""
 "par_id360272883\n"
 "help.text"
 msgid "ISO-8859-10 (Central European)"
-msgstr ""
+msgstr "ISO-8859-10 (Central European)"
 
 #. DANdZ
 #: lotusdbasediff.xhp
@@ -18186,7 +18267,7 @@ msgctxt ""
 "par_id7595099556\n"
 "help.text"
 msgid "ISO-8859-13 (Central European)"
-msgstr ""
+msgstr "ISO-8859-13 (Central European)"
 
 #. JDPMV
 #: lotusdbasediff.xhp
@@ -18195,7 +18276,7 @@ msgctxt ""
 "par_id9690820995\n"
 "help.text"
 msgid "EUC-KR (Korean)"
-msgstr ""
+msgstr "EUC-KR (Korean)"
 
 #. cBnEq
 #: lotusdbasediff.xhp
@@ -18204,7 +18285,7 @@ msgctxt ""
 "par_id5313899602\n"
 "help.text"
 msgid "ISO-2022-KR (Korean)"
-msgstr ""
+msgstr "ISO-2022-KR (Korean)"
 
 #. EnC6J
 #: lotusdbasediff.xhp
@@ -18213,7 +18294,7 @@ msgctxt ""
 "par_id8105979305\n"
 "help.text"
 msgid "JIS 0201 (Japanese)"
-msgstr ""
+msgstr "JIS 0201 (Japanese)"
 
 #. JtyuF
 #: lotusdbasediff.xhp
@@ -18222,7 +18303,7 @@ msgctxt ""
 "par_id1229669587\n"
 "help.text"
 msgid "JIS 0208 (Japanese)"
-msgstr ""
+msgstr "JIS 0208 (Japanese)"
 
 #. ncHwS
 #: lotusdbasediff.xhp
@@ -18231,7 +18312,7 @@ msgctxt ""
 "par_id3628381032\n"
 "help.text"
 msgid "JIS 0212 (Japanese)"
-msgstr ""
+msgstr "JIS 0212 (Japanese)"
 
 #. sBZGC
 #: lotusdbasediff.xhp
@@ -18240,7 +18321,7 @@ msgctxt ""
 "par_id7686777017\n"
 "help.text"
 msgid "Windows-Johab-1361 (Korean)"
-msgstr ""
+msgstr "Windows-Johab-1361 (Korean)"
 
 #. wmAKk
 #: lotusdbasediff.xhp
@@ -18249,7 +18330,7 @@ msgctxt ""
 "par_id4764349313\n"
 "help.text"
 msgid "GB-18030 (Chinese Simplified)"
-msgstr ""
+msgstr "GB-18030 (Chinese Simplified)"
 
 #. fDAdA
 #: lotusdbasediff.xhp
@@ -18258,7 +18339,7 @@ msgctxt ""
 "par_id3047093405\n"
 "help.text"
 msgid "BIG5-HKSCS (Chinese Traditional)"
-msgstr ""
+msgstr "BIG5-HKSCS (Chinese Traditional)"
 
 #. f89n4
 #: lotusdbasediff.xhp
@@ -18267,7 +18348,7 @@ msgctxt ""
 "par_id472750950\n"
 "help.text"
 msgid "TIS 620 (Thai)"
-msgstr ""
+msgstr "TIS 620 (Thai)"
 
 #. sMGuE
 #: lotusdbasediff.xhp
@@ -18276,7 +18357,7 @@ msgctxt ""
 "par_id5498125014\n"
 "help.text"
 msgid "KOI8-U (Cyrillic)"
-msgstr ""
+msgstr "KOI8-U (Cyrillic)"
 
 #. TRHTM
 #: lotusdbasediff.xhp
@@ -18285,7 +18366,7 @@ msgctxt ""
 "par_id7311184156\n"
 "help.text"
 msgid "ISCII Devanagari (Indian)"
-msgstr ""
+msgstr "ISCII Devanagari (Indian)"
 
 #. DEuFQ
 #: lotusdbasediff.xhp
@@ -18294,7 +18375,7 @@ msgctxt ""
 "par_id6161848540\n"
 "help.text"
 msgid "Unicode (Java's modified UTF-8)"
-msgstr ""
+msgstr "Unicode (UTF-8 modifié de Java)"
 
 #. fiMu3
 #: lotusdbasediff.xhp
@@ -18303,7 +18384,7 @@ msgctxt ""
 "par_id3941935297\n"
 "help.text"
 msgid "Adobe Standard"
-msgstr ""
+msgstr "Standard Adobe"
 
 #. vbSBX
 #: lotusdbasediff.xhp
@@ -18312,7 +18393,7 @@ msgctxt ""
 "par_id9054912223\n"
 "help.text"
 msgid "Adobe Symbol"
-msgstr ""
+msgstr "Symbole Adobe"
 
 #. HuPBo
 #: lotusdbasediff.xhp
@@ -18321,7 +18402,7 @@ msgctxt ""
 "par_id317092561\n"
 "help.text"
 msgid "PT 154 (Windows Cyrillic Asian codepage  developed in ParaType)"
-msgstr ""
+msgstr "PT 154 (page de code asiatique cyrillique Windows développée en ParaType)"
 
 #. DJAEX
 #: lotusdbasediff.xhp
@@ -18330,7 +18411,7 @@ msgctxt ""
 "par_id3689682515\n"
 "help.text"
 msgid "Unicode UCS4"
-msgstr ""
+msgstr "Unicode UCS4"
 
 #. VoHsG
 #: lotusdbasediff.xhp
@@ -18339,7 +18420,7 @@ msgctxt ""
 "par_id7382215766\n"
 "help.text"
 msgid "Unicode UCS2"
-msgstr ""
+msgstr "Unicode UCS2"
 
 #. F8tDM
 #: macro_recording.xhp
@@ -18672,7 +18753,7 @@ msgctxt ""
 "par_idN10841\n"
 "help.text"
 msgid "<link href=\"text/sdatabase/tablewizard00.xhp\">Table Wizard</link>"
-msgstr ""
+msgstr "<link href=\"text/sdatabase/tablewizard00.xhp\">Assistant Table</link>"
 
 #. fLi53
 #: main.xhp
@@ -20805,7 +20886,7 @@ msgctxt ""
 "par_id291631706320606\n"
 "help.text"
 msgid "GPG signing only works for ODF documents."
-msgstr ""
+msgstr "La signature GPG ne fonctionne que pour les documents ODF."
 
 #. LrFLD
 #: openpgp.xhp
@@ -21219,7 +21300,7 @@ msgctxt ""
 "bm_id380260\n"
 "help.text"
 msgid "<bookmark_value>Format Paintbrush</bookmark_value>    <bookmark_value>clone formatting</bookmark_value>      <bookmark_value>formatting;copying</bookmark_value>      <bookmark_value>copying;formatting</bookmark_value>      <bookmark_value>Paintbrush</bookmark_value>"
-msgstr ""
+msgstr "<bookmark_value>Pinceau de formatage</bookmark_value><bookmark_value>Cloner le formatage</bookmark_value> <bookmark_value>Formatage;copie</bookmark_value><bookmark_value>Copie;formatage</bookmark_value><bookmark_value>Pinceau</bookmark_value>"
 
 #. 7BBrB
 #: paintbrush.xhp
@@ -21237,7 +21318,7 @@ msgctxt ""
 "par_idN10655\n"
 "help.text"
 msgid "Use the <emph>Clone Formatting</emph> tool to copy formatting from a text selection or from an object and apply the formatting to another text selection or object."
-msgstr ""
+msgstr "Vous pouvez utiliser l'outil <emph>Cloner le formatage</emph> pour copier le formatage d'une sélection de texte ou d'un objet et l'appliquer à une autre sélection de texte ou d'objet."
 
 #. F7Fcd
 #: paintbrush.xhp
@@ -21255,7 +21336,7 @@ msgctxt ""
 "par_idN10667\n"
 "help.text"
 msgid "On the <emph>Standard Bar</emph>, click the <emph>Clone Formatting</emph> icon. The mouse cursor will change to a paint bucket."
-msgstr ""
+msgstr "Dans la <emph>Barre Standard</emph>, cliquez sur l'icône <emph>Formatage du clone</emph>. Le curseur de la souris se transforme en pot de peinture."
 
 #. AZjCv
 #: paintbrush.xhp
@@ -21273,7 +21354,7 @@ msgctxt ""
 "par_id291629997756899\n"
 "help.text"
 msgid "If you want to apply the formatting to more than one selection, double-click the <emph>Clone Formatting</emph> icon <image id=\"img_id209967\" src=\"cmd/sc_formatpaintbrush.png\" width=\"0.1665in\" height=\"0.1665in\"><alt id=\"alt_id209967\">Icon</alt></image>. After you apply all the formatting, click the icon again."
-msgstr ""
+msgstr "Si vous souhaitez appliquer la mise en forme à plusieurs sélections, double-cliquez sur l'icône <emph>Cloner le formatage</emph> <image id=\"img_id209967\" src=\"cmd/sc_formatpaintbrush.png\" width=\"0.1665in\" height=\"0.1665in\"><alt id=\"alt_id209967\">Icône</alt></image>. Après avoir appliqué toute la mise en forme, cliquez à nouveau sur l'icône."
 
 #. 9ivCF
 #: paintbrush.xhp
@@ -21291,7 +21372,7 @@ msgctxt ""
 "par_id1001629997571404\n"
 "help.text"
 msgid "In Calc, the Clone Formatting tool only copies formatting applied using the <menuitem>Format - Cells</menuitem> dialog or other equivalent methods. Therefore, any formatting applied directly to characters by selecting text inside a cell and then going to the <menuitem>Format - Character</menuitem> dialog will not be copied using the Clone Formatting tool."
-msgstr ""
+msgstr "Dans Calc, l'outil Cloner le formatage copie uniquement le formatage appliqué à l'aide de la boîte de dialogue <menuitem>Format - Cellules</menuitem> ou d'autres méthodes équivalentes. Par conséquent, tout formatage appliqué directement aux caractères en sélectionnant du texte dans une cellule, puis en accédant à la boîte de dialogue <menuitem>Format - Caractère</menuitem> ne sera pas copié à l'aide de l'outil Cloner le formatage."
 
 #. pjGa2
 #: paintbrush.xhp
@@ -21489,7 +21570,7 @@ msgctxt ""
 "par_idN1070C\n"
 "help.text"
 msgid "Copies cell formatting specified using the <menuitem>Format - Cells</menuitem> dialog."
-msgstr ""
+msgstr "Copie la mise en forme des cellules spécifiée à l'aide de la boîte de dialogue <menuitem>Format - Cellules</menuitem>."
 
 #. LFKkc
 #: pasting.xhp
@@ -22038,7 +22119,7 @@ msgctxt ""
 "bm_id3150620\n"
 "help.text"
 msgid "<bookmark_value>protecting; contents</bookmark_value>    <bookmark_value>protected contents</bookmark_value>    <bookmark_value>contents protection</bookmark_value>    <bookmark_value>encryption of contents</bookmark_value>    <bookmark_value>passwords for protecting contents</bookmark_value>    <bookmark_value>security;protecting contents</bookmark_value>    <bookmark_value>form controls; protecting</bookmark_value>    <bookmark_value>draw objects;protecting</bookmark_value>    <bookmark_value>OLE objects;protecting</bookmark_value>    <bookmark_value>graphics;protecting</bookmark_value>    <bookmark_value>frames;protecting</bookmark_value>"
-msgstr ""
+msgstr "<bookmark_value>Protection;contenu</bookmark_value><bookmark_value>Contenu protégé</bookmark_value><bookmark_value>Protection du contenu</bookmark_value><bookmark_value>Chiffrage du contenu</bookmark_value><bookmark_value>Mots de passe pour la protection du contenu</bookmark_value><bookmark_value>Sécurité;protection du contenu</bookmark_value><bookmark_value>Contrôles de formulaire;protection</bookmark_value><bookmark_value>Objets de dessin;protection</bookmark_value><bookmark_value>Objets OLE;protection</bookmark_value><bookmark_value>Images;protection</bookmark_value><bookmark_value>Cadres;protection</bookmark_value>"
 
 #. gpCCS
 #: protection.xhp
@@ -22047,7 +22128,7 @@ msgctxt ""
 "hd_id3155364\n"
 "help.text"
 msgid "<variable id=\"protection\"><link href=\"text/shared/guide/protection.xhp\" name=\"Protecting Contents in %PRODUCTNAME\">Protecting Contents in <item type=\"productname\">%PRODUCTNAME</item></link></variable>"
-msgstr ""
+msgstr "<variable id=\"protection\"><link href=\"text/shared/guide/protection.xhp\" name=\"Protecting Contents in %PRODUCTNAME\">Protection du contenu dans <item type=\"productname\">%PRODUCTNAME</item></link></variable>"
 
 #. srHbB
 #: protection.xhp
@@ -22065,7 +22146,7 @@ msgctxt ""
 "hd_id3146957\n"
 "help.text"
 msgid "Protecting Documents With Passwords When Saving"
-msgstr ""
+msgstr "Protection des document avec un mot de passe lors de l'enregistrement"
 
 #. 74CYA
 #: protection.xhp
@@ -22119,7 +22200,7 @@ msgctxt ""
 "par_id761632164002322\n"
 "help.text"
 msgid "It is possible to use OpenPGP to define private and public keys to be used to encrypt %PRODUCTNAME documents. Read <link href=\"text/shared/guide/openpgp.xhp\" name=\"openpgp_link\">Encrypting Documents with OpenPGP</link> to learn more on how to set up OpenPGP encryption keys."
-msgstr ""
+msgstr "Il est possible d'utiliser OpenPGP pour définir les clés privées et publiques à utiliser pour crypter les documents %PRODUCTNAME. Lisez <link href=\"text/shared/guide/openpgp.xhp\" name=\"openpgp_link\">Crypter des documents avec OpenPGP</link> pour en savoir plus sur la configuration des clés de cryptage OpenPGP."
 
 #. HfUCF
 #: protection.xhp
@@ -22283,77 +22364,77 @@ msgctxt ""
 msgid "Choose <emph>Format - Object - Position and Size </emph>- <emph>Position and Size</emph> tab. Unmark the <emph>Position</emph> or <emph>Size</emph> check box."
 msgstr "Choisissez <emph>Format - Objet - Position et taille</emph> et cliquez sur l'onglet <emph>Position et taille</emph>. Désactivez la case à cocher <emph>Position</emph> ou <emph>Taille</emph>."
 
-#. CnLjj
+#. dwefM
 #: qrcode.xhp
 msgctxt ""
 "qrcode.xhp\n"
 "tit\n"
 "help.text"
-msgid "QR Code"
-msgstr "Code QR"
+msgid "QR and Barcode"
+msgstr "Code QR et code-barres"
 
-#. Yuk2B
+#. 3tty9
 #: qrcode.xhp
 msgctxt ""
 "qrcode.xhp\n"
 "bm_id901566317201860\n"
 "help.text"
-msgid "<bookmark_value>QR Code</bookmark_value>"
-msgstr "<bookmark_value>code QR</bookmark_value>"
+msgid "<bookmark_value>QR code;barcode</bookmark_value>"
+msgstr "<bookmark_value>Code QR;code-barre</bookmark_value>"
 
-#. FqKRN
+#. 82bgJ
 #: qrcode.xhp
 msgctxt ""
 "qrcode.xhp\n"
 "hd_id461566315781439\n"
 "help.text"
-msgid "<link href=\"text/shared/guide/qrcode.xhp\" name=\"QR Code\">QR Code</link>"
-msgstr "<link href=\"text/shared/guide/qrcode.xhp\" name=\"QR Code\">Code QR</link>"
+msgid "<link href=\"text/shared/guide/qrcode.xhp\" name=\"QR and Barcode\">QR and Barcode</link>"
+msgstr "<link href=\"text/shared/guide/qrcode.xhp\" name=\"QR and Barcode\">Code QR et code-barre</link>"
 
-#. YdWKF
+#. ztYka
 #: qrcode.xhp
 msgctxt ""
 "qrcode.xhp\n"
 "par_id381566315781439\n"
 "help.text"
-msgid "Generate QR Code for any text or URL."
-msgstr "Générer un code QR pour tout texte ou URL."
+msgid "Generate linear and matrix codes for any text or URL."
+msgstr "Générez des codes linéaires et matriciels pour tout texte ou URL."
 
-#. SzeNM
+#. UCs5m
 #: qrcode.xhp
 msgctxt ""
 "qrcode.xhp\n"
 "par_id411566316109551\n"
 "help.text"
-msgid "The QR Code Generation feature helps to create QR codes for any text or URL. The QR code is produced as an image or shape and has all the properties associated with an image."
-msgstr "La fonction Génération de codes QR aide à créer des codes QR pour n'importe quel texte ou URL. Le code QR est produit comme un image ou une forme et a toutes les propriétés associées à une image."
+msgid "The QR and Barcode generation feature allows you to encode any text string or URL as a barcode or a QR code and insert it as a graphical object in a document for scanning."
+msgstr "La fonction de génération de code QR et de codes-barres vous permet d'encoder n'importe quelle chaîne de texte ou URL en tant que code-barres ou code QR et de l'insérer en tant qu'objet graphique dans un document à numériser."
 
-#. JFjy3
+#. N32UF
 #: qrcode.xhp
 msgctxt ""
 "qrcode.xhp\n"
 "par_id761566316165430\n"
 "help.text"
-msgid "Choose <menuitem>Insert - Object - QR Code</menuitem>."
-msgstr "Choisissez <menuitem>Insertion - Objet - Code QR</menuitem>."
+msgid "Choose <menuitem>Insert - Object - QR and Barcode</menuitem>."
+msgstr "Choisissez <menuitem>Insertion - Objet - Code QR et code-barre</menuitem>."
 
-#. vF7bp
+#. UCeXG
 #: qrcode.xhp
 msgctxt ""
 "qrcode.xhp\n"
 "hd_id611566316506278\n"
 "help.text"
-msgid "URL or Text"
+msgid "URL or text"
 msgstr "URL ou texte"
 
-#. ikC8E
+#. q98jw
 #: qrcode.xhp
 msgctxt ""
 "qrcode.xhp\n"
 "par_id251566316519649\n"
 "help.text"
-msgid "The text from which to generate the QR code."
-msgstr "Le texte à partir duquel générer le code QR."
+msgid "The text from which to generate the code."
+msgstr "Le texte à partir duquel générer le code."
 
 #. 6mj5K
 #: qrcode.xhp
@@ -22427,14 +22508,14 @@ msgctxt ""
 msgid "Margin"
 msgstr "Marge"
 
-#. MUEWe
+#. PuMhx
 #: qrcode.xhp
 msgctxt ""
 "qrcode.xhp\n"
 "par_id981566316947064\n"
 "help.text"
-msgid "The width of the margin surrounding the QR code."
-msgstr "La largeur de la marge entourant le code QR."
+msgid "The width of the margin surrounding the code."
+msgstr "La largeur de la marge entourant le code."
 
 #. kZPNW
 #: qrcode.xhp
@@ -22463,15 +22544,6 @@ msgctxt ""
 msgid "<image src=\"media/helpimg/qrcode_example.svg\" id=\"img_id991566321218295\" width=\"4cm\" height=\"4cm\"><alt id=\"alt_id401566321218295\">QR code example</alt></image>"
 msgstr "<image src=\"media/helpimg/qrcode_example.svg\" id=\"img_id991566321218295\" width=\"4cm\" height=\"4cm\"><alt id=\"alt_id401566321218295\">Exemple de code QR</alt></image>"
 
-#. zkgFS
-#: qrcode.xhp
-msgctxt ""
-"qrcode.xhp\n"
-"par_id441566317415844\n"
-"help.text"
-msgid "QR code in the <link href=\"https://en.wikipedia.org/wiki/QR_code\" name=\"wikipedia\">Wikipedia</link>"
-msgstr "Code QR dans <link href=\"https://fr.wikipedia.org/wiki/Code_QR\" name=\"wikipedia\">Wikipedia</link>"
-
 #. FuBFK
 #: redaction.xhp
 msgctxt ""
@@ -22497,7 +22569,7 @@ msgctxt ""
 "hd_id171562795247717\n"
 "help.text"
 msgid "<variable id=\"redaction_h1\"><link href=\"text/shared/guide/redaction.xhp\" name=\"redaction_link\">Redacting Documents</link></variable>"
-msgstr ""
+msgstr "<variable id=\"redaction_h1\"><link href=\"text/shared/guide/redaction.xhp\" name=\"redaction_link\">Caviardage de document</link></variable>"
 
 #. AFwWF
 #: redaction.xhp
@@ -22506,7 +22578,7 @@ msgctxt ""
 "par_id471562795247717\n"
 "help.text"
 msgid "<variable id=\"redaction_desc\"><ahelp hid=\".\">Redacting documents blocks out words or portions of a document for authorized use or viewing.</ahelp></variable> Redaction protects sensitive information and helps enterprises and organizations to comply with regulations on confidentiality or privacy."
-msgstr ""
+msgstr "<variable id=\"redaction_desc\"><ahelp hid=\".\">Le caviardage de documents bloque des mots ou des parties d'un document pour une utilisation ou une visualisation autorisée.</ahelp></variable> Le caviardage protège les informations sensibles et aide les entreprises et les organisations à respecter les réglementations en matière de confidentialité ou de respect de la vie privée."
 
 #. QdoMp
 #: redaction.xhp
@@ -22767,7 +22839,7 @@ msgctxt ""
 "bm_id3150247\n"
 "help.text"
 msgid "<bookmark_value>changes; accepting or rejecting</bookmark_value>    <bookmark_value>review function;accepting or rejecting changes</bookmark_value>"
-msgstr ""
+msgstr "<bookmark_value>Modifications;acceptation ou rejet</bookmark_value><bookmark_value>Fonction de révision;acceptation ou rejet des modifications</bookmark_value>"
 
 #. FTaFc
 #: redlining_accept.xhp
@@ -22812,7 +22884,7 @@ msgctxt ""
 "par_id3147008\n"
 "help.text"
 msgid "If you have put multiple copies of the document in circulation, first merge these into one document (see <link href=\"text/shared/guide/redlining_docmerge.xhp\" name=\"redlining_docmerge_link\">Merging Versions</link>)."
-msgstr ""
+msgstr "Si vous avez mis plusieurs copies du document en circulation, commencez par les fusionner dans un seul document (consultez <link href=\"text/shared/guide/redlining_docmerge.xhp\" name=\"redlining_docmerge_link\">Fusionner des versions</link>)."
 
 #. Rk8jv
 #: redlining_accept.xhp
@@ -24621,7 +24693,7 @@ msgctxt ""
 "par_id3156152\n"
 "help.text"
 msgid "Search for <emph>Run</emph> in the Windows Start menu."
-msgstr ""
+msgstr "Recherchez <emph>Exécuter</emph> dans le menu de démarrage Windows."
 
 #. xf2BF
 #: start_parameters.xhp
@@ -24630,7 +24702,7 @@ msgctxt ""
 "par_id3152472\n"
 "help.text"
 msgid "Type the following text in the <emph>Open</emph> text field and click <emph>OK</emph>."
-msgstr ""
+msgstr "Saisissez le texte suivant dans la zone de texte <emph>Ouvrir</emph> puis cliquez sur <emph>OK</emph>."
 
 #. nMQWE
 #: start_parameters.xhp
@@ -24639,7 +24711,7 @@ msgctxt ""
 "par_id3147561\n"
 "help.text"
 msgid "{install}\\program\\soffice.exe {parameter}"
-msgstr ""
+msgstr "{install}\\program\\soffice.exe {parameter}"
 
 #. mmyAy
 #: start_parameters.xhp
@@ -24648,7 +24720,7 @@ msgctxt ""
 "par_id3153360\n"
 "help.text"
 msgid "Replace <emph>{install}</emph> with the path to your installation of %PRODUCTNAME software (for example, <emph>C:\\Program Files\\%PRODUCTNAME</emph>"
-msgstr ""
+msgstr "Remplacez  <emph>{install}</emph> par le chemin de votre installation de %PRODUCTNAME (par exemple <emph>C:\\Program Files\\%PRODUCTNAME</emph>)"
 
 #. x5jE9
 #: start_parameters.xhp
@@ -24657,7 +24729,7 @@ msgctxt ""
 "par_id3157152\n"
 "help.text"
 msgid "Open a shell under Linux, *BSD, or macOS platforms."
-msgstr ""
+msgstr "Sous les plateformes Linux, *BSD et macOS, ouvrez une console."
 
 #. LEs72
 #: start_parameters.xhp
@@ -24666,7 +24738,7 @@ msgctxt ""
 "par_id3147669\n"
 "help.text"
 msgid "Type the following line of text, then press <emph>Return</emph>:"
-msgstr ""
+msgstr "Saisissez la ligne de texte suivante puis appuyez sur <emph>Retour</emph> :"
 
 #. smkWS
 #: start_parameters.xhp
@@ -24675,7 +24747,7 @@ msgctxt ""
 "par_id3143561\n"
 "help.text"
 msgid "{install}/program/soffice {parameter}"
-msgstr ""
+msgstr "{install}/program/soffice {parameter}"
 
 #. BEAF7
 #: start_parameters.xhp
@@ -24684,7 +24756,7 @@ msgctxt ""
 "par_id3157360\n"
 "help.text"
 msgid "Replace <emph>{install}</emph> with the path to your installation of %PRODUCTNAME software (for example, <emph>/opt/%PRODUCTNAME</emph> in UNIX)"
-msgstr ""
+msgstr "Remplacez  <emph>{install}</emph> par le chemin de votre installation de %PRODUCTNAME (par exemple <emph>/opt/%PRODUCTNAME</emph> sous UNIX)"
 
 #. 4EMfS
 #: start_parameters.xhp
@@ -24918,7 +24990,7 @@ msgctxt ""
 "par_id3146786\n"
 "help.text"
 msgid "Sets the <emph>DISPLAY</emph> environment variable on UNIX-like platforms to the value <emph>{display}</emph>. This parameter is only supported by the start script for $[officename] software on UNIX-like platforms."
-msgstr ""
+msgstr "Définit la variable d'environnement <emph>DISPLAY</emph> sur les plateformes de type UNIX à la valeur <emph>{display}</emph>. Ce paramètre est seulement pris en charge par le script de démarrage du logiciel $[officename] sur les plateformes de type UNIX."
 
 #. 67rps
 #: start_parameters.xhp
@@ -25377,7 +25449,7 @@ msgctxt ""
 "par_id2016120401222926\n"
 "help.text"
 msgid "If --convert-to is used more than once, last value of OutputFileExtension[:OutputFilterName[:OutputFilterParams]] is effective. If --outdir is used more than once, only its last value is effective. For example:"
-msgstr ""
+msgstr "Si --convert-to est utilisé plus d'une seule fois, c'est la dernière valeur de OutputFileExtension[:OutputFilterName] qui est effective. Si --outdir est utilisé plus d'une fois, seule sa dernière valeur est effective. Par exemple :"
 
 #. ir37U
 #: start_parameters.xhp
@@ -25395,7 +25467,7 @@ msgctxt ""
 "par_id51634741869672\n"
 "help.text"
 msgid "The list of <link href=\"text/shared/guide/lotusdbasediff.xhp\" name=\"lotusparams\">filter options for Lotus, dBase and Diff files</link>."
-msgstr ""
+msgstr "La liste des <link href=\"text/shared/guide/lotusdbasediff.xhp\" name=\"lotusparams\">options de filtrage pour les fichiers Lotus, dBase et Diff</link>."
 
 #. goKPf
 #: start_parameters.xhp
@@ -25404,7 +25476,7 @@ msgctxt ""
 "par_id1001634741874640\n"
 "help.text"
 msgid "The list of <link href=\"text/shared/guide/csv_params.xhp\" name=\"csvparams\">filter options for CSV files</link>."
-msgstr ""
+msgstr "La liste des <link href=\"text/shared/guide/csv_params.xhp\" name=\"csvparams\">options de filtre pour les fichiers CSV</link>."
 
 #. EiUnD
 #: start_parameters.xhp
@@ -27006,7 +27078,7 @@ msgctxt ""
 "tit\n"
 "help.text"
 msgid "Tip of the day"
-msgstr ""
+msgstr "Astuce du jour"
 
 #. hEahE
 #: tipoftheday.xhp
@@ -27015,7 +27087,7 @@ msgctxt ""
 "bm_id961630844980165\n"
 "help.text"
 msgid "<bookmark_value>tip of the day</bookmark_value>"
-msgstr ""
+msgstr "<bookmark_value>Astuce du jour</bookmark_value>"
 
 #. Pmxkf
 #: tipoftheday.xhp
@@ -27024,7 +27096,7 @@ msgctxt ""
 "hd_id161630843025887\n"
 "help.text"
 msgid "<link href=\"text/shared/guide/tipoftheday.xhp\" name=\"tod\">Tip of the Day</link>"
-msgstr ""
+msgstr "<link href=\"text/shared/guide/tipoftheday.xhp\" name=\"tod\">Astuce du jour</link>"
 
 #. PtZCz
 #: tipoftheday.xhp
@@ -27033,7 +27105,7 @@ msgctxt ""
 "par_id731630843025888\n"
 "help.text"
 msgid "<variable id=\"variable name\"><ahelp hid=\"hid path or command\">The Tip of the Day dialog displays useful tips for the user.</ahelp></variable>"
-msgstr ""
+msgstr "<variable id=\"variable name\"><ahelp hid=\"hid path or command\">La boîte de dialogue Astuce du jour affiche des astuces utiles pour l'utilisateur.</ahelp></variable>"
 
 #. eGRcH
 #: tipoftheday.xhp
@@ -27042,7 +27114,7 @@ msgctxt ""
 "par_id721630843443217\n"
 "help.text"
 msgid "Choose <menuitem>Help - Show Tip of the day</menuitem>."
-msgstr ""
+msgstr "Choisissez <menuitem>Aide - Afficher l'astuce du jour</menuitem>."
 
 #. Mix66
 #: tipoftheday.xhp
@@ -27051,7 +27123,7 @@ msgctxt ""
 "par_id601630844290206\n"
 "help.text"
 msgid "The set of tips is collected from several %PRODUCTNAME community web pages, and is updated on each new release of the software."
-msgstr ""
+msgstr "L'ensemble des astuces est collecté à partir de plusieurs pages web de la communauté %PRODUCTNAME et est mis à jour à chaque nouvelle version du logiciel."
 
 #. cFRY5
 #: tipoftheday.xhp
@@ -27060,7 +27132,7 @@ msgctxt ""
 "par_id51630844860633\n"
 "help.text"
 msgid "The tip of the day is not specific to the current module."
-msgstr ""
+msgstr "L'astuce du jour n'est pas spécifique au module actif."
 
 #. XjuPZ
 #: tipoftheday.xhp
@@ -27069,7 +27141,7 @@ msgctxt ""
 "hd_id171630844295289\n"
 "help.text"
 msgid "Show tips on startup"
-msgstr ""
+msgstr "Afficher les astuces au démarrage"
 
 #. LqZHq
 #: tipoftheday.xhp
@@ -27078,7 +27150,7 @@ msgctxt ""
 "par_id711630844302059\n"
 "help.text"
 msgid "Displays a dialog with a random tip on %PRODUCTNAME startup."
-msgstr ""
+msgstr "Affiche une boîte de dialogue contenant une astuce aléatoire au démarrage de %PRODUCTNAME."
 
 #. PAxHM
 #: tipoftheday.xhp
@@ -27087,7 +27159,7 @@ msgctxt ""
 "hd_id81630844306451\n"
 "help.text"
 msgid "Next Tip"
-msgstr ""
+msgstr "Astuce suivante"
 
 #. nqjpy
 #: tipoftheday.xhp
@@ -27096,7 +27168,7 @@ msgctxt ""
 "par_id401630844318220\n"
 "help.text"
 msgid "Displays another tip of the day in the same dialog."
-msgstr ""
+msgstr "Affiche une autre astuce du jour dans la même boîte de dialogue."
 
 #. rSTiz
 #: tipoftheday.xhp
@@ -27105,7 +27177,7 @@ msgctxt ""
 "hd_id251630844323484\n"
 "help.text"
 msgid "OK"
-msgstr ""
+msgstr "OK"
 
 #. GoQru
 #: tipoftheday.xhp
@@ -27114,7 +27186,7 @@ msgctxt ""
 "par_id511630844327861\n"
 "help.text"
 msgid "Close the Tip of the Day dialog."
-msgstr ""
+msgstr "Ferme la boîte de dialogue Astuce du jour."
 
 #. C6Bb4
 #: undo_formatting.xhp

@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2021-11-24 12:02+0100\n"
+"POT-Creation-Date: 2021-12-20 13:21+0100\n"
 "PO-Revision-Date: 2018-12-09 17:46+0000\n"
 "Last-Translator: Samson B <sambelet@yahoo.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -5965,13 +5965,13 @@ msgctxt ""
 msgid "CSV Filter parameters"
 msgstr ""
 
-#. cvtJM
+#. KyLbg
 #: csv_params.xhp
 msgctxt ""
 "csv_params.xhp\n"
 "bm_id181634740978601\n"
 "help.text"
-msgid "<bookmark_value>CSV;filter options</bookmark_value>        <bookmark_value>CSV;import options</bookmark_value>        <bookmark_value>CSV;export options</bookmark_value>        <bookmark_value>CSV;command line filter options</bookmark_value>"
+msgid "<bookmark_value>CSV;filter options</bookmark_value>        <bookmark_value>CSV;separator specification line</bookmark_value>        <bookmark_value>CSV;import options</bookmark_value>        <bookmark_value>CSV;export options</bookmark_value>        <bookmark_value>CSV;command line filter options</bookmark_value>"
 msgstr ""
 
 #. szBoK
@@ -6323,6 +6323,87 @@ msgctxt ""
 "par_id701635293273893\n"
 "help.text"
 msgid "String, either <literal>false</literal> or <literal>true</literal>. Default value: <literal>false</literal>. Determines whether formula expressions starting with a = equal sign character are to be evaluated as formulas or imported as textual data. If <literal>true</literal> evaluate formulas on input. If <literal>false</literal> formulas are input as text. If omitted (not present at all), the default value is <literal>true</literal> to keep the behaviour of old versions' options string that didn't have this token at all. If present and empty (or any other value than <literal>true</literal>) the default value is <literal>false</literal>."
+msgstr ""
+
+#. DAriB
+#: csv_params.xhp
+msgctxt ""
+"csv_params.xhp\n"
+"hd_id591638374883162\n"
+"help.text"
+msgid "Special case of CSV files with separator defined in the first line"
+msgstr ""
+
+#. gpBdg
+#: csv_params.xhp
+msgctxt ""
+"csv_params.xhp\n"
+"par_id781638374952502\n"
+"help.text"
+msgid "CSV import and export support a <literal>sep=</literal> and <literal>\"sep=\"</literal> field separator setting. When reading a CSV document, the separator is taken from the initial <literal>sep=</literal> or <literal>\"sep=\"</literal> single field, if that is the only line content."
+msgstr ""
+
+#. q8D8y
+#: csv_params.xhp
+msgctxt ""
+"csv_params.xhp\n"
+"par_id561638377619263\n"
+"help.text"
+msgid "When reading a CSV file, the quoted form is preserved as (unquoted) cell content. You see <literal>sep=|</literal> when | is the separator in the first line. In the unquoted form, the separator is discarded because it is a real field separator in the context. You see <literal>sep=</literal> in the first line."
+msgstr ""
+
+#. j5dBK
+#: csv_params.xhp
+msgctxt ""
+"csv_params.xhp\n"
+"par_id761638377626465\n"
+"help.text"
+msgid "When writing a CSV file, the existing single top left cell's content such as <literal>sep=|</literal> is adapted to the current separator with the quoted form of <literal>\"sep=|\"</literal> (if quotes / text delimiters aren't set empty and | is the separator) and always uses the ASCII \" double quote character."
+msgstr ""
+
+#. uBq4B
+#: csv_params.xhp
+msgctxt ""
+"csv_params.xhp\n"
+"par_id61638377631743\n"
+"help.text"
+msgid "If the line containing the <literal>sep=|</literal> is not to be imported as data, remember to set the <emph>From row</emph> number in the dialog to 2. Note that this line will not be preserved when re-saving."
+msgstr ""
+
+#. oGd5z
+#: csv_params.xhp
+msgctxt ""
+"csv_params.xhp\n"
+"par_id731638374814029\n"
+"help.text"
+msgid "\"LETTER\"|\"ANIMAL\""
+msgstr ""
+
+#. CsfKB
+#: csv_params.xhp
+msgctxt ""
+"csv_params.xhp\n"
+"par_id801638374818291\n"
+"help.text"
+msgid "\"a\"|\"aardvark\""
+msgstr ""
+
+#. t62e9
+#: csv_params.xhp
+msgctxt ""
+"csv_params.xhp\n"
+"par_id621638374822275\n"
+"help.text"
+msgid "\"b\"|\"bear\""
+msgstr ""
+
+#. G2aQG
+#: csv_params.xhp
+msgctxt ""
+"csv_params.xhp\n"
+"par_id851638374831208\n"
+"help.text"
+msgid "\"c\"|\"cow\""
 msgstr ""
 
 #. EFwn3
@@ -22282,76 +22363,76 @@ msgctxt ""
 msgid "Choose <emph>Format - Object - Position and Size </emph>- <emph>Position and Size</emph> tab. Unmark the <emph>Position</emph> or <emph>Size</emph> check box."
 msgstr "ይምረጡ <emph> አቀራረብ - እቃ - ቦታ እና መጠን </emph>- <emph> ቦታ እና መጠን </emph> tab. ምልክቱን ያጥፉ ከ <emph> ቦታ </emph> ወይንም <emph> መጠን </emph> ምልክት ማድረጊያ ሳጥን ውስጥ"
 
-#. CnLjj
+#. dwefM
 #: qrcode.xhp
 msgctxt ""
 "qrcode.xhp\n"
 "tit\n"
 "help.text"
-msgid "QR Code"
+msgid "QR and Barcode"
 msgstr ""
 
-#. Yuk2B
+#. 3tty9
 #: qrcode.xhp
 msgctxt ""
 "qrcode.xhp\n"
 "bm_id901566317201860\n"
 "help.text"
-msgid "<bookmark_value>QR Code</bookmark_value>"
+msgid "<bookmark_value>QR code;barcode</bookmark_value>"
 msgstr ""
 
-#. FqKRN
+#. 82bgJ
 #: qrcode.xhp
 msgctxt ""
 "qrcode.xhp\n"
 "hd_id461566315781439\n"
 "help.text"
-msgid "<link href=\"text/shared/guide/qrcode.xhp\" name=\"QR Code\">QR Code</link>"
+msgid "<link href=\"text/shared/guide/qrcode.xhp\" name=\"QR and Barcode\">QR and Barcode</link>"
 msgstr ""
 
-#. YdWKF
+#. ztYka
 #: qrcode.xhp
 msgctxt ""
 "qrcode.xhp\n"
 "par_id381566315781439\n"
 "help.text"
-msgid "Generate QR Code for any text or URL."
+msgid "Generate linear and matrix codes for any text or URL."
 msgstr ""
 
-#. SzeNM
+#. UCs5m
 #: qrcode.xhp
 msgctxt ""
 "qrcode.xhp\n"
 "par_id411566316109551\n"
 "help.text"
-msgid "The QR Code Generation feature helps to create QR codes for any text or URL. The QR code is produced as an image or shape and has all the properties associated with an image."
+msgid "The QR and Barcode generation feature allows you to encode any text string or URL as a barcode or a QR code and insert it as a graphical object in a document for scanning."
 msgstr ""
 
-#. JFjy3
+#. N32UF
 #: qrcode.xhp
 msgctxt ""
 "qrcode.xhp\n"
 "par_id761566316165430\n"
 "help.text"
-msgid "Choose <menuitem>Insert - Object - QR Code</menuitem>."
+msgid "Choose <menuitem>Insert - Object - QR and Barcode</menuitem>."
 msgstr ""
 
-#. vF7bp
+#. UCeXG
 #: qrcode.xhp
 msgctxt ""
 "qrcode.xhp\n"
 "hd_id611566316506278\n"
 "help.text"
-msgid "URL or Text"
+msgid "URL or text"
 msgstr ""
 
-#. ikC8E
+#. q98jw
 #: qrcode.xhp
 msgctxt ""
 "qrcode.xhp\n"
 "par_id251566316519649\n"
 "help.text"
-msgid "The text from which to generate the QR code."
+msgid "The text from which to generate the code."
 msgstr ""
 
 #. 6mj5K
@@ -22426,13 +22507,13 @@ msgctxt ""
 msgid "Margin"
 msgstr ""
 
-#. MUEWe
+#. PuMhx
 #: qrcode.xhp
 msgctxt ""
 "qrcode.xhp\n"
 "par_id981566316947064\n"
 "help.text"
-msgid "The width of the margin surrounding the QR code."
+msgid "The width of the margin surrounding the code."
 msgstr ""
 
 #. kZPNW
@@ -22460,15 +22541,6 @@ msgctxt ""
 "par_id561566321218295\n"
 "help.text"
 msgid "<image src=\"media/helpimg/qrcode_example.svg\" id=\"img_id991566321218295\" width=\"4cm\" height=\"4cm\"><alt id=\"alt_id401566321218295\">QR code example</alt></image>"
-msgstr ""
-
-#. zkgFS
-#: qrcode.xhp
-msgctxt ""
-"qrcode.xhp\n"
-"par_id441566317415844\n"
-"help.text"
-msgid "QR code in the <link href=\"https://en.wikipedia.org/wiki/QR_code\" name=\"wikipedia\">Wikipedia</link>"
 msgstr ""
 
 #. FuBFK
