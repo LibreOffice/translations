@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
 "POT-Creation-Date: 2021-12-21 12:38+0100\n"
-"PO-Revision-Date: 2021-12-16 02:38+0000\n"
+"PO-Revision-Date: 2021-12-27 06:38+0000\n"
 "Last-Translator: 锁琨珑 <suokunlong@126.com>\n"
 "Language-Team: Chinese (Simplified) <https://translations.documentfoundation.org/projects/libo_ui-master/scmessages/zh_Hans/>\n"
 "Language: zh-CN\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Accelerator-Marker: ~\n"
-"X-Generator: LibreOffice\n"
+"X-Generator: Weblate 4.8.1\n"
 "X-POOTLE-MTIME: 1562731995.000000\n"
 
 #. kBovX
@@ -1244,7 +1244,7 @@ msgstr "错误: 被零除"
 #: sc/inc/globstr.hrc:219
 msgctxt "STR_LONG_ERR_NO_VALUE"
 msgid "Error: Wrong data type"
-msgstr "错误: 错误的数据类型"
+msgstr "错误: 没有返回值"
 
 #. kHwc6
 #. ERROR.TYPE( #REF! ) == 4
@@ -1285,7 +1285,7 @@ msgstr "#ADDIN?"
 #: sc/inc/globstr.hrc:230
 msgctxt "STR_LONG_ERR_NO_ADDIN"
 msgid "Error: Add-in not found"
-msgstr "错误: 没有找到AddIn"
+msgstr "错误: 没有找到附加项"
 
 #. jxTFr
 #: sc/inc/globstr.hrc:231
@@ -1315,7 +1315,7 @@ msgstr "错误: 无效的参数"
 #: sc/inc/globstr.hrc:235
 msgctxt "STR_LONG_ERR_ILL_PAR"
 msgid "Error in parameter list"
-msgstr "参数列表内有错误"
+msgstr "参数错误"
 
 #. iJfWD
 #: sc/inc/globstr.hrc:236
@@ -1345,7 +1345,7 @@ msgstr "错误: 缺少变量"
 #: sc/inc/globstr.hrc:240
 msgctxt "STR_LONG_ERR_CODE_OVF"
 msgid "Error: Formula overflow"
-msgstr "错误: 公式太长"
+msgstr "错误: 公式溢出"
 
 #. zRh8E
 #: sc/inc/globstr.hrc:241
@@ -5065,7 +5065,7 @@ msgstr "在定期支付和利率固定的情况下，计算一项贷款在指定
 #: sc/inc/scfuncs.hrc:484
 msgctxt "SC_OPCODE_IPMT"
 msgid "Rate"
-msgstr "Rate"
+msgstr "利率"
 
 #. Jz3cj
 #: sc/inc/scfuncs.hrc:485
@@ -5077,49 +5077,49 @@ msgstr "每个期间的利率。"
 #: sc/inc/scfuncs.hrc:486
 msgctxt "SC_OPCODE_IPMT"
 msgid "Period"
-msgstr "Period"
+msgstr "期数"
 
 #. 7k2BJ
 #: sc/inc/scfuncs.hrc:487
 msgctxt "SC_OPCODE_IPMT"
 msgid "Periods. The periods for which the compounded interest is to be calculated. P = 1 denotes for the first period, P = NPER for the last one."
-msgstr "周期数。要计算其利息金额的周期数。 P = 1 是第一个周期， P = NPER 是最后一个周期。"
+msgstr "期数。用于计算其复利利息金额的期数，必须在1到“付款总期数”之间。其中，“期数=1”表明计算第一期的利息，“期数=付款总期数”表明计算最后一期的利息。"
 
 #. 2JYMa
 #: sc/inc/scfuncs.hrc:488
 msgctxt "SC_OPCODE_IPMT"
 msgid "NPER"
-msgstr "NPER"
+msgstr "付款总期数"
 
 #. T6Dnp
 #: sc/inc/scfuncs.hrc:489
 msgctxt "SC_OPCODE_IPMT"
 msgid "Payment period. The total number of periods in which the annuity (pension) is paid."
-msgstr "总支付期数。支付年金的总周期数。"
+msgstr "付款期数。年金的付款总期数。"
 
 #. BwNPC
 #: sc/inc/scfuncs.hrc:490
 msgctxt "SC_OPCODE_IPMT"
 msgid "PV"
-msgstr "PV"
+msgstr "现值"
 
 #. z26Wm
 #: sc/inc/scfuncs.hrc:491
 msgctxt "SC_OPCODE_IPMT"
 msgid "Present value. The current value of a series of payments"
-msgstr "现值。一系列未来支付的当前值"
+msgstr "现值。一系列未来付款的当前价值。"
 
 #. YBHug
 #: sc/inc/scfuncs.hrc:492
 msgctxt "SC_OPCODE_IPMT"
 msgid "FV"
-msgstr "FV"
+msgstr "终值"
 
 #. esEXY
 #: sc/inc/scfuncs.hrc:493
 msgctxt "SC_OPCODE_IPMT"
 msgid "Future value. The value (end value) to be attained after the final payment."
-msgstr "未来值。完成最后一次支付后达到的最终值。"
+msgstr "终值。在最后一次付款后所能达到的最终价值。"
 
 #. eDepL
 #: sc/inc/scfuncs.hrc:494
@@ -5131,19 +5131,19 @@ msgstr "类型"
 #: sc/inc/scfuncs.hrc:495
 msgctxt "SC_OPCODE_IPMT"
 msgid "Type = 1 denotes due at the beginning of the period, = 0 at the end."
-msgstr "Type = 1 表示在期间开始时到期，Type = 0 表示在期间结束时到期。"
+msgstr "“类型=1”表示在每一期的期初付款，“类型=0”表示在每一期的期末付款。"
 
 #. Z65oQ
 #: sc/inc/scfuncs.hrc:501
 msgctxt "SC_OPCODE_PPMT"
 msgid "Repayment. Calculates the repayment amount for a period for an investment whereby the payments are at regular intervals and the interest rate constant."
-msgstr "本金支付额。在利率恒定且定期支付的条件下，计算一项投资或贷款在指定期限内的本金支付额。"
+msgstr "本金偿付额。基于固定利率及等额分期付款方式，返回某项投资在某一给定期间内的本金偿还额。"
 
 #. pNF3b
 #: sc/inc/scfuncs.hrc:502
 msgctxt "SC_OPCODE_PPMT"
 msgid "Rate"
-msgstr "Rate"
+msgstr "利率"
 
 #. ozXtG
 #: sc/inc/scfuncs.hrc:503
@@ -5155,49 +5155,49 @@ msgstr "每个期间的利率。"
 #: sc/inc/scfuncs.hrc:504
 msgctxt "SC_OPCODE_PPMT"
 msgid "Period"
-msgstr "Period"
+msgstr "期数"
 
 #. V2ZLc
 #: sc/inc/scfuncs.hrc:505
 msgctxt "SC_OPCODE_PPMT"
 msgid "Period. The period for which the repayments are to be calculated. Per = 1 denotes for the first period, P = NPER for the last"
-msgstr "周期数。计算分期付款的周期数。Per = 1 表示第一个周期， P = NPER 表示最后一个周期"
+msgstr "期数。用于计算其本金数额的期数，必须介于 1 到“总投资期”之间。其中，“期数=1”表示计算第一个投资期的本金偿付额，“期数=总投资期”表示计算最后一个投资期的本金偿付额。"
 
 #. dasVa
 #: sc/inc/scfuncs.hrc:506
 msgctxt "SC_OPCODE_PPMT"
 msgid "NPER"
-msgstr "NPER"
+msgstr "总投资期"
 
 #. Rhzii
 #: sc/inc/scfuncs.hrc:507
 msgctxt "SC_OPCODE_PPMT"
 msgid "The payment period. The total number of periods in which the annuity (pension) is paid."
-msgstr "总支付期数。支付年金的总周期数。"
+msgstr "总投资期。该项投资的付款总期数。"
 
 #. eKjez
 #: sc/inc/scfuncs.hrc:508
 msgctxt "SC_OPCODE_PPMT"
 msgid "PV"
-msgstr "PV"
+msgstr "现值"
 
 #. BKYVD
 #: sc/inc/scfuncs.hrc:509
 msgctxt "SC_OPCODE_PPMT"
 msgid "The present value. The present value or the amount the annuity is currently worth."
-msgstr "当前值。或当前年付价值量。"
+msgstr "现值。当前时间的价值，或者一笔年金的当前价值。"
 
 #. MgtBv
 #: sc/inc/scfuncs.hrc:510
 msgctxt "SC_OPCODE_PPMT"
 msgid "FV"
-msgstr "FV"
+msgstr "终值"
 
 #. PLTpz
 #: sc/inc/scfuncs.hrc:511
 msgctxt "SC_OPCODE_PPMT"
 msgid "Future value. The value (end value) attained after the last payment has been made."
-msgstr "未来值。或完成最后一次支付后达到的数值。"
+msgstr "终值。完成最后一笔付款后，该项投资所能达到的最终价值。"
 
 #. 7vmFL
 #: sc/inc/scfuncs.hrc:512
@@ -5209,19 +5209,19 @@ msgstr "类型"
 #: sc/inc/scfuncs.hrc:513
 msgctxt "SC_OPCODE_PPMT"
 msgid "Type = 1 denotes due at the beginning of the period, = 0 at the end."
-msgstr "Type = 1 表示在期间开始时到期，Type = 0 表示在期间结束时到期。"
+msgstr "用以指定各期的付款时间是在期初还是期末。“类型=1”表示在每一期的期初付款，“类型=0”表示在每一期的期末付款。"
 
 #. pgK5D
 #: sc/inc/scfuncs.hrc:519
 msgctxt "SC_OPCODE_CUM_PRINC"
 msgid "Cumulative capital. Calculates the total amount of the repayment share in a period for an investment with constant interest rate."
-msgstr "复利本金。计算给定的投资期间内在指定的利率下对应的每期本金投入额。"
+msgstr "累计本金偿还额。计算一笔固定利率投资在给定的“开始期间”到“结束期间”内累计偿还的本金数额。"
 
 #. yY5uB
 #: sc/inc/scfuncs.hrc:520
 msgctxt "SC_OPCODE_CUM_PRINC"
 msgid "Rate"
-msgstr "Rate"
+msgstr "利率"
 
 #. gEMGN
 #: sc/inc/scfuncs.hrc:521
@@ -5233,61 +5233,61 @@ msgstr "每个期间的利率。"
 #: sc/inc/scfuncs.hrc:522
 msgctxt "SC_OPCODE_CUM_PRINC"
 msgid "NPER"
-msgstr "NPER"
+msgstr "付款总期数"
 
 #. gUNCC
 #: sc/inc/scfuncs.hrc:523
 msgctxt "SC_OPCODE_CUM_PRINC"
 msgid "Payment period. The total number of periods in which the annuity (pension) is paid."
-msgstr "总支付期数。支付年金的总周期数。"
+msgstr "付款总期数。该项投资（比如年金）的总付款期数。"
 
 #. ALmpB
 #: sc/inc/scfuncs.hrc:524
 msgctxt "SC_OPCODE_CUM_PRINC"
 msgid "PV"
-msgstr "PV"
+msgstr "现值"
 
 #. SraT8
 #: sc/inc/scfuncs.hrc:525
 msgctxt "SC_OPCODE_CUM_PRINC"
 msgid "The present value. The present value or the amount the annuity is currently worth."
-msgstr "现值。当前时间的价值，或者一笔年金的当前价值。"
+msgstr "现值。这项投资当前时间的价值。"
 
 #. MBKJZ
 #: sc/inc/scfuncs.hrc:526
 msgctxt "SC_OPCODE_CUM_PRINC"
 msgid "S"
-msgstr "S"
+msgstr "开始期间"
 
 #. AsSot
 #: sc/inc/scfuncs.hrc:527
 msgctxt "SC_OPCODE_CUM_PRINC"
 msgid "The start period. The first period to be taken into account. S = 1 denotes the very first period."
-msgstr "开始期间。参与计算的第一个期间。 S = 1 代表最早的期间。"
+msgstr "开始期间。参与计算的第一个期间。“开始期间=1”表示从最早一个期间开始计算本金偿还额。"
 
 #. cyCEm
 #: sc/inc/scfuncs.hrc:528
 msgctxt "SC_OPCODE_CUM_PRINC"
 msgid "E"
-msgstr "E"
+msgstr "结束期间"
 
 #. 3AMAi
 #: sc/inc/scfuncs.hrc:529
 msgctxt "SC_OPCODE_CUM_PRINC"
 msgid "End period. The last period to be taken into account."
-msgstr "结束期间。参与计算的最后一个期间。"
+msgstr "结束期间。用于计算累计本金偿还额的最后一个期间。"
 
 #. G7UqU
 #: sc/inc/scfuncs.hrc:530
 msgctxt "SC_OPCODE_CUM_PRINC"
 msgid "Type"
-msgstr "Type"
+msgstr "类型"
 
 #. mA9uk
 #: sc/inc/scfuncs.hrc:531
 msgctxt "SC_OPCODE_CUM_PRINC"
 msgid "Type = 1 denotes due at the beginning of the period, = 0 at the end."
-msgstr "Type = 1 表示在期间开始时到期，Type = 0 表示在期间结束时到期。"
+msgstr "“类型=1”表示在每一期的期初付款，“类型=0”表示在每一期的期末付款。"
 
 #. xc89X
 #: sc/inc/scfuncs.hrc:537
@@ -9333,13 +9333,13 @@ msgstr "样本中的数据矩阵。"
 #: sc/inc/scfuncs.hrc:2003
 msgctxt "SC_OPCODE_LARGE"
 msgid "Rank c"
-msgstr "等级"
+msgstr "排名"
 
 #. wE8Uv
 #: sc/inc/scfuncs.hrc:2004
 msgctxt "SC_OPCODE_LARGE"
 msgid "The ranking of the value."
-msgstr "数值在数据组里的位置。"
+msgstr "目标值在数据集中的排名位置。"
 
 #. HCszB
 #: sc/inc/scfuncs.hrc:2010
@@ -9363,19 +9363,19 @@ msgstr "样本中的数据矩阵。"
 #: sc/inc/scfuncs.hrc:2013
 msgctxt "SC_OPCODE_SMALL"
 msgid "Rank c"
-msgstr "等级"
+msgstr "排名"
 
 #. Qd8EW
 #: sc/inc/scfuncs.hrc:2014
 msgctxt "SC_OPCODE_SMALL"
 msgid "The ranking of the value."
-msgstr "数值在数据组里的位置。"
+msgstr "目标值在数据集中的排名位置。"
 
 #. tfvUj
 #: sc/inc/scfuncs.hrc:2020
 msgctxt "SC_OPCODE_PERCENT_RANK"
 msgid "Returns the percentage rank of a value in a sample."
-msgstr "计算一个数值在数据集中的百分比排位。"
+msgstr "计算一个值在数据集中的百分比排名。"
 
 #. rLBSp
 #: sc/inc/scfuncs.hrc:2021
@@ -9399,7 +9399,7 @@ msgstr "值"
 #: sc/inc/scfuncs.hrc:2024
 msgctxt "SC_OPCODE_PERCENT_RANK"
 msgid "The value for which percentage ranking is to be determined."
-msgstr "要确定其百分比排位的数值。"
+msgstr "要确定其百分比排名的值。"
 
 #. gTAAs
 #: sc/inc/scfuncs.hrc:2025
@@ -9417,7 +9417,7 @@ msgstr "返回的百分比值的有效数字位数: 若忽略，则使用 3 位�
 #: sc/inc/scfuncs.hrc:2032
 msgctxt "SC_OPCODE_PERCENT_RANK_EXC"
 msgid "Returns the percentage rank (0..1, exclusive) of a value in a sample."
-msgstr "返回样本中数值的百分比排位(0-1之间，不含0和1)。"
+msgstr "返回某个值在样本中的百分比排名（在0-1之间，不含0和1）。"
 
 #. xnpWg
 #: sc/inc/scfuncs.hrc:2033
@@ -9441,7 +9441,7 @@ msgstr "值"
 #: sc/inc/scfuncs.hrc:2036
 msgctxt "SC_OPCODE_PERCENT_RANK_EXC"
 msgid "The value for which percentage ranking is to be determined."
-msgstr "要确定其百分比排位的数值。"
+msgstr "要确定其百分比排名的值。"
 
 #. FzDnP
 #: sc/inc/scfuncs.hrc:2037
@@ -9459,7 +9459,7 @@ msgstr "返回的百分比值的有效数字位数: 若忽略，则使用 3 位�
 #: sc/inc/scfuncs.hrc:2044
 msgctxt "SC_OPCODE_PERCENT_RANK_INC"
 msgid "Returns the percentage rank (0..1, inclusive) of a value in a sample."
-msgstr "返回样本中值的百分比排位(0-1之间，不包含0和1)。"
+msgstr "返回某个值在样本中的百分比排名（在0-1之间，不含0和1）。"
 
 #. XYEDP
 #: sc/inc/scfuncs.hrc:2045
@@ -9483,7 +9483,7 @@ msgstr "值"
 #: sc/inc/scfuncs.hrc:2048
 msgctxt "SC_OPCODE_PERCENT_RANK_INC"
 msgid "The value for which percentage ranking is to be determined."
-msgstr "要确定其百分比排位的数值。"
+msgstr "要确定其百分比排名的值。"
 
 #. zTXLN
 #: sc/inc/scfuncs.hrc:2049
@@ -9501,7 +9501,7 @@ msgstr "返回的百分比值的有效数字位数: 若忽略，则使用 3 位�
 #: sc/inc/scfuncs.hrc:2056
 msgctxt "SC_OPCODE_RANK"
 msgid "Returns the ranking of a value in a sample."
-msgstr "返回样本中值的排位。"
+msgstr "返回某个值在样本中的排名。"
 
 #. p2juz
 #: sc/inc/scfuncs.hrc:2057
@@ -9513,7 +9513,7 @@ msgstr "值"
 #: sc/inc/scfuncs.hrc:2058
 msgctxt "SC_OPCODE_RANK"
 msgid "The value for which the rank is to be determined."
-msgstr "需要确定其排位的值。"
+msgstr "需要确定其排名的值。"
 
 #. e3CY7
 #: sc/inc/scfuncs.hrc:2059
@@ -9543,7 +9543,7 @@ msgstr "排序顺序: 0 或省略表示降序排序，任何非 0 值表示升�
 #: sc/inc/scfuncs.hrc:2068
 msgctxt "SC_OPCODE_RANK_EQ"
 msgid "Returns the ranking of a value in a sample; if more than one value has the same rank, the top rank of that set of values is returned."
-msgstr "返回样本中值的排位；如果一个以上的值拥有相同的排位，则只返回该值集中排位最高的值。"
+msgstr "返回某个值在样本中的排名；如果一个以上的值具有相同的排名，则只返回该值集中排名最高的值的排名。"
 
 #. GuZrj
 #: sc/inc/scfuncs.hrc:2069
@@ -9555,7 +9555,7 @@ msgstr "值"
 #: sc/inc/scfuncs.hrc:2070
 msgctxt "SC_OPCODE_RANK_EQ"
 msgid "The value for which the rank is to be determined."
-msgstr "需要确定其排位的值。"
+msgstr "需要确定其排名的值。"
 
 #. UyjWf
 #: sc/inc/scfuncs.hrc:2071
@@ -9585,7 +9585,7 @@ msgstr "排序顺序: 0 或省略表示降序排序，任何非 0 值表示升�
 #: sc/inc/scfuncs.hrc:2080
 msgctxt "SC_OPCODE_RANK_AVG"
 msgid "Returns the ranking of a value in a sample; if more than one value has the same rank, the average rank is returned."
-msgstr "返回样本中值的排位；如果一个以上的值拥有相同的排位，则只返回该值集的平均排位。"
+msgstr "返回某个值在样本中的排名；如果一个以上的值具有相同的排名，则返回平均排名。"
 
 #. wYAYF
 #: sc/inc/scfuncs.hrc:2081
@@ -9597,7 +9597,7 @@ msgstr "值"
 #: sc/inc/scfuncs.hrc:2082
 msgctxt "SC_OPCODE_RANK_AVG"
 msgid "The value for which the rank is to be determined."
-msgstr "需要确定其排位的值。"
+msgstr "需要确定其排名的值。"
 
 #. FPuzE
 #: sc/inc/scfuncs.hrc:2083
