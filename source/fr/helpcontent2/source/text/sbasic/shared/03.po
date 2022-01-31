@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2021-12-20 13:20+0100\n"
-"PO-Revision-Date: 2022-01-21 18:38+0000\n"
+"POT-Creation-Date: 2022-01-31 18:19+0100\n"
+"PO-Revision-Date: 2022-01-29 07:39+0000\n"
 "Last-Translator: sophie <gautier.sophie@gmail.com>\n"
 "Language-Team: French <https://translations.documentfoundation.org/projects/libo_help-master/textsbasicshared03/fr/>\n"
 "Language: fr\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
 "X-Accelerator-Marker: ~\n"
-"X-Generator: Weblate 4.8.1\n"
+"X-Generator: LibreOffice\n"
 "X-POOTLE-MTIME: 1561879999.000000\n"
 
 #. ViEWM
@@ -1078,14 +1078,14 @@ msgctxt ""
 msgid "<variable id=\"ArrayService\"><link href=\"text/sbasic/shared/03/sf_array.xhp\" name=\"ScriptForge.Array Service\"><literal>ScriptForge</literal>.<literal>Array</literal> service</link></variable>"
 msgstr "<variable id=\"ArrayService\"><link href=\"text/sbasic/shared/03/sf_array.xhp\" name=\"ScriptForge.Array Service\"><literal>ScriptForge</literal>. Service <literal>Array</literal></link></variable>"
 
-#. SyLSL
+#. jMjFA
 #: sf_array.xhp
 msgctxt ""
 "sf_array.xhp\n"
 "par_id991582454416549\n"
 "help.text"
-msgid "Provides a collection of methods for manipulating and transforming arrays of one dimension (vectors) and arrays of two dimensions (matrices). This includes set operations, sorting, importing to and exporting from text files."
-msgstr "Fournit une collection de méthodes pour manipuler et transformer des matrices d'une dimension (vecteurs) et des matrices de deux dimensions (matrices). Cela inclut les opérations d'ensemble, le tri, l'import et l'export à partir de fichiers texte."
+msgid "Provides a collection of methods for manipulating and transforming arrays of one dimension (vectors) and arrays of two dimensions (matrices). This includes set operations, sorting, importing from and exporting to text files."
+msgstr ""
 
 #. WjgHr
 #: sf_array.xhp
@@ -1708,6 +1708,33 @@ msgctxt ""
 msgid "Consider the CSV file \"myFile.csv\" with the following contents:"
 msgstr "Considérez le fichier CSV \"myFile.csv\" avec le contenu suivant :"
 
+#. T6E8L
+#: sf_array.xhp
+msgctxt ""
+"sf_array.xhp\n"
+"par_id281626980354105\n"
+"help.text"
+msgid "<input>Name,DateOfBirth,Address,City</input>"
+msgstr ""
+
+#. FRZKB
+#: sf_array.xhp
+msgctxt ""
+"sf_array.xhp\n"
+"par_id301626980648833\n"
+"help.text"
+msgid "<input>Anna,2002/03/31,\"Rue de l'église, 21\",Toulouse</input>"
+msgstr ""
+
+#. g2r8f
+#: sf_array.xhp
+msgctxt ""
+"sf_array.xhp\n"
+"par_id881626980658900\n"
+"help.text"
+msgid "<input>Fred,1998/05/04,\"Rue Albert Einstein, 113A\",Carcassonne</input>"
+msgstr ""
+
 #. xNCNA
 #: sf_array.xhp
 msgctxt ""
@@ -1716,6 +1743,78 @@ msgctxt ""
 "help.text"
 msgid "The examples below in Basic and Python read the contents of the CSV file into an <literal>Array</literal> object."
 msgstr "Les exemples ci-dessous en Basic et Python lisent le contenu du fichier CSV dans un objet <literal>Array</literal>."
+
+#. F4yYB
+#: sf_array.xhp
+msgctxt ""
+"sf_array.xhp\n"
+"bas_id531585561482408\n"
+"help.text"
+msgid "arr = SF_Array.ImportFromCSVFile(\"C:\\Temp\\myFile.csv\", DateFormat := \"YYYY/MM/DD\")"
+msgstr ""
+
+#. wyEqv
+#: sf_array.xhp
+msgctxt ""
+"sf_array.xhp\n"
+"bas_id621585561482783\n"
+"help.text"
+msgid "MsgBox arr(0, 3) ' City"
+msgstr ""
+
+#. tDMNL
+#: sf_array.xhp
+msgctxt ""
+"sf_array.xhp\n"
+"bas_id21585564425349\n"
+"help.text"
+msgid "MsgBox arr(1, 2) ' Rue de l'église, 21"
+msgstr ""
+
+#. SBfVW
+#: sf_array.xhp
+msgctxt ""
+"sf_array.xhp\n"
+"bas_id831585564433851\n"
+"help.text"
+msgid "MsgBox arr(1, 3) ' Toulouse"
+msgstr ""
+
+#. DpxfS
+#: sf_array.xhp
+msgctxt ""
+"sf_array.xhp\n"
+"pyc_id511626979992999\n"
+"help.text"
+msgid "arr = svc.ImportFromCSVFile(r\"C:\\Temp\\myFile.csv\", dateformat = \"YYYY/MM/DD\")"
+msgstr ""
+
+#. asqiD
+#: sf_array.xhp
+msgctxt ""
+"sf_array.xhp\n"
+"pyc_id211626979993191\n"
+"help.text"
+msgid "bas.MsgBox(arr[0][3]) # City"
+msgstr ""
+
+#. 2gFXA
+#: sf_array.xhp
+msgctxt ""
+"sf_array.xhp\n"
+"pyc_id671626979993408\n"
+"help.text"
+msgid "bas.MsgBox(arr[1][2]) # Rue de l'église, 21"
+msgstr ""
+
+#. kYfmG
+#: sf_array.xhp
+msgctxt ""
+"sf_array.xhp\n"
+"pyc_id481626979993648\n"
+"help.text"
+msgid "bas.MsgBox(arr[1][3]) # Toulouse"
+msgstr ""
 
 #. xCx7D
 #: sf_array.xhp
@@ -2644,14 +2743,14 @@ msgctxt ""
 msgid "'   ... Run queries, SQL statements, ..."
 msgstr "'   ... requêtes Run, instruction SQL, ..."
 
-#. DA8ob
+#. eRmFK
 #: sf_base.xhp
 msgctxt ""
 "sf_base.xhp\n"
 "pyc_id351623104861223\n"
 "help.text"
-msgid "'   ... Run queries, SQL statements, ..."
-msgstr "'   ... requêtes Run, instruction SQL, ..."
+msgid "#   ... Run queries, SQL statements, ..."
+msgstr ""
 
 #. mBphD
 #: sf_base.xhp
@@ -4786,14 +4885,14 @@ msgctxt ""
 msgid "If only <literal>sheetname</literal> is specified, an zero-based array of strings containing the names of all charts is returned."
 msgstr "Si seul <literal>sheetname</literal> est spécifié, une matrice de chaînes de base zéro contenant les noms de tous les diagrammes est renvoyée."
 
-#. pGvVW
+#. CLbLn
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id371635438509045\n"
 "help.text"
-msgid "If a <literal>chartname</literal> is provided, than a single object corresponding to the desired chart is returned. The specified chart must exist."
-msgstr "Si un <literal>chartname</literal> est fourni, un seul objet correspondant au diagramme souhaité est renvoyé. Le diagramme spécifié doit exister."
+msgid "If a <literal>chartname</literal> is provided, then a single object corresponding to the desired chart is returned. The specified chart must exist."
+msgstr ""
 
 #. T2e3d
 #: sf_calc.xhp
@@ -5587,14 +5686,14 @@ msgctxt ""
 msgid "The language is English/US, which implies that the decimal separator is \".\" and the thousands separator is \",\"."
 msgstr "La langue est anglais/américain, ce qui implique que le séparateur décimal est \".\" et le séparateur des milliers est \",\"."
 
-#. TX82d
+#. tDYGo
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id531611757154931\n"
 "help.text"
-msgid "To learn more about the CSV Filter Options, refer to the <link href=\"https://wiki.openoffice.org/wiki/Documentation/DevGuide/Spreadsheets/Filter_Options#Filter_Options_for_the_CSV_Filter\" name=\"Filter Options\">Filter Options Wiki page</link>."
-msgstr "Pour en savoir plus sur les options de filtre CSV, reportez-vous à la <link href=\"https://wiki.openoffice.org/wiki/Documentation/DevGuide/Spreadsheets/Filter_Options#Filter_Options_for_the_CSV_Filter\" name=\"Filter Options\">page Wiki Options de filtre </link>."
+msgid "To learn more about the CSV Filter Options, refer to the <link href=\"text/shared/guide/csv_params.xhp\" name=\"CSV Filter Options\">CSV Filter Options help page</link>."
+msgstr ""
 
 #. vPPYx
 #: sf_calc.xhp
@@ -6460,14 +6559,14 @@ msgctxt ""
 msgid "Moves a given range of cells downwards by inserting empty rows. The current selection is not affected."
 msgstr "Déplace une plage donnée de cellules vers le bas en insérant des lignes vides. La sélection actuelle n'est pas affectée."
 
-#. VTxxB
+#. 5qm5w
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id801637929435655\n"
 "help.text"
-msgid "Depending on the value of the <literal>wholerows</literal> argument the inserted rows can either span the width of the specified range or span all columns in the row."
-msgstr "Selon la valeur de l'argument <literal>wholerows</literal>, les lignes insérées peuvent s'étendre sur la largeur de la plage spécifiée ou sur toutes les colonnes de la ligne."
+msgid "Depending on the value of the <literal>wholerow</literal> argument the inserted rows can either span the width of the specified range or span all columns in the row."
+msgstr ""
 
 #. uvH4j
 #: sf_calc.xhp
@@ -6559,14 +6658,14 @@ msgctxt ""
 msgid "Deletes the leftmost columns of a given range and moves to the left all cells to the right of the affected range. The current selection is not affected."
 msgstr "Supprime les colonnes les plus à gauche d'une plage donnée et déplace vers la gauche toutes les cellules à droite de la plage affectée. La sélection actuelle n'est pas affectée."
 
-#. iawBn
+#. EzzWo
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id801637929460261\n"
 "help.text"
-msgid "Depending on the value of the <literal>wholecolumns</literal> argument the deleted columns can either span the height of the specified range or span all rows in the column."
-msgstr "Selon la valeur de l'argument <literal>wholecolumns</literal>, les colonnes supprimées peuvent s'étendre sur la hauteur de la plage spécifiée ou sur toutes les lignes de la colonne."
+msgid "Depending on the value of the <literal>wholecolumn</literal> argument the deleted columns can either span the height of the specified range or span all rows in the column."
+msgstr ""
 
 #. BXEkG
 #: sf_calc.xhp
@@ -6640,14 +6739,14 @@ msgctxt ""
 msgid "Deletes the topmost rows of a given range and moves upwards all cells below the affected range. The current selection is not affected."
 msgstr "Supprime les premières lignes d'une plage donnée et déplace vers le haut toutes les cellules en dessous de la plage affectée. La sélection actuelle n'est pas affectée."
 
-#. kb5h3
+#. zkYo7
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id801637929435361\n"
 "help.text"
-msgid "Depending on the value of the <literal>wholerows</literal> argument the deleted rows can either span the width of the specified range or span all columns in the row."
-msgstr "Selon la valeur de l'argument <literal>wholerows</literal>, les lignes supprimées peuvent s'étendre sur la largeur de la plage spécifiée ou sur toutes les colonnes de la ligne."
+msgid "Depending on the value of the <literal>wholerow</literal> argument the deleted rows can either span the width of the specified range or span all columns in the row."
+msgstr ""
 
 #. s9Nfb
 #: sf_calc.xhp
@@ -6721,14 +6820,14 @@ msgctxt ""
 msgid "Moves a given range of cells to the right by inserting empty columns. The current selection is not affected."
 msgstr "Déplace une plage donnée de cellules vers la droite en insérant des colonnes vides. La sélection actuelle n'est pas affectée."
 
-#. RxvcF
+#. CDi3E
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id801637929335255\n"
 "help.text"
-msgid "Depending on the value of the <literal>wholecolumns</literal> argument the inserted columns can either span the height of the specified range or span all rows in the column."
-msgstr "Selon la valeur de l'argument <literal>wholecolumns</literal>, les colonnes insérées peuvent s'étendre sur la hauteur de la plage spécifiée ou sur toutes les lignes de la colonne."
+msgid "Depending on the value of the <literal>wholecolumn</literal> argument the inserted columns can either span the height of the specified range or span all rows in the column."
+msgstr ""
 
 #. Fh33o
 #: sf_calc.xhp
@@ -6883,23 +6982,23 @@ msgctxt ""
 msgid "'Sort range based on columns A (ascending) and C (descending)"
 msgstr "'Trier la plage en fonction des colonnes A (croissant) et C (décroissant)"
 
-#. rGNeZ
+#. HyPhE
 #: sf_chart.xhp
 msgctxt ""
 "sf_chart.xhp\n"
 "tit\n"
 "help.text"
-msgid "ScriptForge.Chart service"
-msgstr "Service ScriptForge.Chart"
+msgid "SFDocuments.Chart service"
+msgstr ""
 
-#. UFBLD
+#. bv49k
 #: sf_chart.xhp
 msgctxt ""
 "sf_chart.xhp\n"
 "bm_id681600788076499\n"
 "help.text"
-msgid "<variable id=\"ChartService\"><link href=\"text/sbasic/shared/03/sf_chart.xhp\" name=\"Chart service\"><literal>ScriptForge</literal>.<literal>Chart</literal> service</link></variable>"
-msgstr "Service <variable id=\"ChartService\"><link href=\"text/sbasic/shared/03/sf_chart.xhp\" name=\"Chart service\"><literal>ScriptForge</literal>.<literal>Chart</literal> </link></variable>"
+msgid "<variable id=\"ChartService\"><link href=\"text/sbasic/shared/03/sf_chart.xhp\" name=\"Chart service\"><literal>SFDocuments</literal>.<literal>Chart</literal> service</link></variable>"
+msgstr ""
 
 #. nPHDK
 #: sf_chart.xhp
@@ -9023,7 +9122,7 @@ msgctxt ""
 "par_id551598185953362\n"
 "help.text"
 msgid "<literal>EndExecute()</literal> is usually contained in the processing of a macro triggered by a dialog or control event."
-msgstr ""
+msgstr "<literal>EndExecute()</literal> est généralement contenu dans le traitement d'une macro déclenchée par une boîte de dialogue ou un événement de contrôle."
 
 #. yukGC
 #: sf_dialog.xhp
@@ -9032,7 +9131,7 @@ msgctxt ""
 "par_id451598185776957\n"
 "help.text"
 msgid "<emph>returnvalue</emph>: The value passed to the running <literal>Execute()</literal> method."
-msgstr ""
+msgstr "<emph>returnvalue</emph> : la valeur transmise à la méthode <literal>Execute()</literal> en cours d'exécution."
 
 #. ABome
 #: sf_dialog.xhp
@@ -9041,7 +9140,7 @@ msgctxt ""
 "par_id411620110780170\n"
 "help.text"
 msgid "Using %PRODUCTNAME Basic:"
-msgstr ""
+msgstr "En utilisant %PRODUCTNAME Basic :"
 
 #. EtAN6
 #: sf_dialog.xhp
@@ -9050,7 +9149,7 @@ msgctxt ""
 "par_id11620110819754\n"
 "help.text"
 msgid "Using Python:"
-msgstr ""
+msgstr "En utilisant Python :"
 
 #. ML9Mz
 #: sf_dialog.xhp
@@ -9059,7 +9158,7 @@ msgctxt ""
 "par_id81620201915101\n"
 "help.text"
 msgid "Above <link href=\"https://api.libreoffice.org/docs/idl/ref/structcom_1_1sun_1_1star_1_1lang_1_1EventObject.html\" name=\"com.sun.star.lang.EventObject\">com.sun.star.lang.EventObject</link> mentions are optional. Such annotations help identify %PRODUCTNAME Application Programming Interface (API)."
-msgstr ""
+msgstr "Les mentions ci-dessus <link href=\"https://api.libreoffice.org/docs/idl/ref/structcom_1_1sun_1_1star_1_1lang_1_1EventObject.html\" name=\"com.sun.star.lang.EventObject\">com.sun.star.lang.EventObject</link> sont facultatives. Ces annotations permettent d'identifier l'interface de programmation d'application (API) de %PRODUCTNAME."
 
 #. FD9fr
 #: sf_dialog.xhp
@@ -9068,7 +9167,7 @@ msgctxt ""
 "par_id29159818646178\n"
 "help.text"
 msgid "Display the dialog box and, when modal, wait for its termination by the user. The returned value is either:"
-msgstr ""
+msgstr "Afficher la boîte de dialogue et, lorsqu'elle est modale, attendre sa fermeture par l'utilisateur. La valeur renvoyée est soit :"
 
 #. PRCaG
 #: sf_dialog.xhp
@@ -9077,7 +9176,7 @@ msgctxt ""
 "par_id541598186676277\n"
 "help.text"
 msgid "0 : <literal>Cancel</literal> button pressed"
-msgstr ""
+msgstr "0 : bouton appuyé <literal>Cancel</literal>"
 
 #. eCGBY
 #: sf_dialog.xhp
@@ -9086,7 +9185,7 @@ msgctxt ""
 "par_id821598186716345\n"
 "help.text"
 msgid "1 : <literal>OK</literal> button pressed"
-msgstr ""
+msgstr "1 : bouton appuyé <literal>OK</literal>"
 
 #. MovhC
 #: sf_dialog.xhp
@@ -9095,7 +9194,7 @@ msgctxt ""
 "par_id951598186738346\n"
 "help.text"
 msgid "Otherwise the dialog stopped with an <literal>EndExecute()</literal> statement issued by a dialog or control event"
-msgstr ""
+msgstr "Sinon, la boîte de dialogue s'est arrêtée avec une instruction <literal>EndExecute()</literal> émise par une boîte de dialogue ou un événement de contrôle"
 
 #. eBFXT
 #: sf_dialog.xhp
@@ -9104,7 +9203,7 @@ msgctxt ""
 "par_id741598187335869\n"
 "help.text"
 msgid "For non-modal dialog boxes the method always returns 0 and the execution of the macro continues."
-msgstr ""
+msgstr "Pour les boîtes de dialogue non modales, la méthode renvoie toujours 0 et l'exécution de la macro se poursuit."
 
 #. Ej2iF
 #: sf_dialog.xhp
@@ -9113,7 +9212,7 @@ msgctxt ""
 "par_id11598186461227\n"
 "help.text"
 msgid "<emph>modal</emph>: <literal>False</literal> when non-modal dialog. Default = <literal>True</literal>."
-msgstr ""
+msgstr "<emph>modal</emph> : <literal>False</literal> en cas de dialogue non modal. Par défaut = <literal>True</literal>."
 
 #. fGatm
 #: sf_dialog.xhp
@@ -9122,7 +9221,7 @@ msgctxt ""
 "par_id231620110023843\n"
 "help.text"
 msgid "In this Basic example <literal>myDialog</literal> dialog is stored in current document's <literal>Standard</literal> library."
-msgstr ""
+msgstr "Dans cet exemple Basic, la boîte de dialogue <literal>myDialog</literal> est stockée dans la bibliothèque <literal>Standard</literal> du document actuel."
 
 #. ouEVN
 #: sf_dialog.xhp
@@ -9131,7 +9230,7 @@ msgctxt ""
 "par_id191620110162627\n"
 "help.text"
 msgid "This Python code displays <literal>DlgConvert</literal> modal dialog from <literal>Euro</literal> shared Basic library."
-msgstr ""
+msgstr "Ce code Python affiche la boîte de dialogue modale <literal>DlgConvert</literal> de la bibliothèque Basic partagée <literal>Euro</literal>."
 
 #. HU6Jv
 #: sf_dialog.xhp
@@ -9140,7 +9239,7 @@ msgctxt ""
 "par_id21598187900349\n"
 "help.text"
 msgid "Replaces all fixed text strings in a dialog by their translated versions based on a <literal>L10N</literal> service instance. This method translates the following strings:"
-msgstr ""
+msgstr "Remplace toutes les chaînes de texte fixes d'une boîte de dialogue par leurs versions traduites basées sur une instance de service <literal>L10N</literal>. Cette méthode traduit les chaînes suivantes :"
 
 #. JixXU
 #: sf_dialog.xhp
@@ -9149,7 +9248,7 @@ msgctxt ""
 "par_id641625855723650\n"
 "help.text"
 msgid "The method returns <literal>True</literal> if successful."
-msgstr ""
+msgstr "La méthode renvoie <literal>True</literal> en cas de succès."
 
 #. v5Zt5
 #: sf_dialog.xhp
@@ -9158,7 +9257,7 @@ msgctxt ""
 "par_id61637871260604\n"
 "help.text"
 msgid "To create a list of translatable strings in a dialog use the <link href=\"text/sbasic/shared/03/sf_l10n.xhp#AddTextsFromDialog\" name=\"AddTextsFromDialog\">AddTextsFromDialog</link> method from the L10N service."
-msgstr ""
+msgstr "Pour créer une liste de chaînes traduisibles dans une boîte de dialogue, utilisez la méthode <link href=\"text/sbasic/shared/03/sf_l10n.xhp#AddTextsFromDialog\" name=\"AddTextsFromDialog\">AddTextsFromDialog</link> du service L10N."
 
 #. ECNVg
 #: sf_dialog.xhp
@@ -9167,7 +9266,7 @@ msgctxt ""
 "par_id451598185776205\n"
 "help.text"
 msgid "<emph>l10n</emph>: A <literal>L10N</literal> service instance from which translated strings will be retrieved."
-msgstr ""
+msgstr "<emph>l10n</emph> : une instance de service <literal>L10N</literal> à partir de laquelle les chaînes traduites seront récupérées."
 
 #. MeJAT
 #: sf_dialog.xhp
@@ -9176,7 +9275,7 @@ msgctxt ""
 "par_id951620300689850\n"
 "help.text"
 msgid "The following example loads translated strings and applies them to the dialog \"MyDialog\"."
-msgstr ""
+msgstr "L'exemple suivant charge les chaînes traduites et les applique à la boîte de dialogue \"MyDialog\"."
 
 #. p3KMX
 #: sf_dialog.xhp
@@ -9185,7 +9284,7 @@ msgctxt ""
 "par_id901637872163895\n"
 "help.text"
 msgid "Read the <link href=\"text/sbasic/shared/03/sf_l10n.xhp\" name=\"L10N\">L10N service</link> help page to learn more about how PO and POT files are handled."
-msgstr ""
+msgstr "Lisez la page d'aide du <link href=\"text/sbasic/shared/03/sf_l10n.xhp\" name=\"L10N\">service L10N</link> pour en savoir plus sur la gestion des fichiers PO et POT."
 
 #. ARCGg
 #: sf_dialog.xhp
@@ -9194,7 +9293,7 @@ msgctxt ""
 "par_id21598187953679\n"
 "help.text"
 msgid "Terminate the <literal>Dialog</literal> service for the current instance. Return <literal>True</literal> if the termination was successful."
-msgstr ""
+msgstr "Arrêter le service <literal>Dialog</literal> pour l'instance actuelle. Renvoie <literal>True</literal> si l'arrêt a réussi."
 
 #. CgAYf
 #: sf_dialog.xhp
@@ -9203,7 +9302,7 @@ msgctxt ""
 "par_id951620300687150\n"
 "help.text"
 msgid "Below Basic and Python examples open <literal>DlgConsole</literal> and <literal>dlgTrace</literal> non-modal dialogs. They are respectively stored in <literal>ScriptForge</literal> and <literal>Access2Base</literal> shared libraries. Dialog close buttons are disabled and explicit termination is performed at the end of a running process."
-msgstr ""
+msgstr "Les exemples Basic et Python ci-dessous, ouvrent les boîtes de dialogue non modales <literal>DlgConsole</literal> et <literal>dlgTrace</literal>. Elles sont respectivement stockées dans les bibliothèques partagées <literal>ScriptForge</literal> et <literal>Access2Base</literal>. Les boutons de fermeture de boîte de dialogue sont désactivés et une terminaison explicite est effectuée à la fin d'un processus en cours d'exécution."
 
 #. W3W3Y
 #: sf_dialog.xhp
@@ -9212,7 +9311,7 @@ msgctxt ""
 "par_id301620302137482\n"
 "help.text"
 msgid "In this example a button in <literal>DlgConsole</literal> is substituting inhibited window closing:"
-msgstr ""
+msgstr "Dans cet exemple, un bouton dans <literal>DlgConsole</literal> remplace la fermeture de fenêtre inhibée :"
 
 #. 7z7hg
 #: sf_dialog.xhp
@@ -9221,7 +9320,7 @@ msgctxt ""
 "par_id811620112217958\n"
 "help.text"
 msgid "With Python:"
-msgstr ""
+msgstr "En Python :"
 
 #. BFfGX
 #: sf_dialogcontrol.xhp
@@ -9230,7 +9329,7 @@ msgctxt ""
 "tit\n"
 "help.text"
 msgid "SFDialogs.DialogControl service"
-msgstr ""
+msgstr "Service SFDialogs.DialogControl"
 
 #. UBz5i
 #: sf_dialogcontrol.xhp
@@ -9239,7 +9338,7 @@ msgctxt ""
 "bm_id781582391760253\n"
 "help.text"
 msgid "<variable id=\"ctrls_h1\"><link href=\"text/sbasic/shared/03/sf_dialogcontrol.xhp\" name=\"SFDialogs.DialogControl service\"><literal>SFDialogs</literal>.<literal>DialogControl</literal> service</link></variable>"
-msgstr ""
+msgstr "<variable id=\"ctrls_h1\"><link href=\"text/sbasic/shared/03/sf_dialogcontrol.xhp\" name=\"SFDialogs.DialogControl service\"><literal>SFDialogs</literal>. Service <literal>DialogControl</literal></link></variable>"
 
 #. tZzKc
 #: sf_dialogcontrol.xhp
@@ -9248,7 +9347,7 @@ msgctxt ""
 "par_id931583589764919\n"
 "help.text"
 msgid "The <literal>DialogControl</literal> service manages the controls belonging to a dialog defined with the Basic <link href=\"text/sbasic/guide/create_dialog.xhp\" name=\"Dialog Editor\">Dialog Editor</link>. Each instance of the current service represents a single control within a dialog box."
-msgstr ""
+msgstr "Le service <literal>DialogControl</literal> gère les contrôles appartenant à un dialogue défini avec le Basic <link href=\"text/sbasic/guide/create_dialog.xhp\" name=\"Dialog Editor\">Dialog Editor</link>. Chaque instance du service actuel représente un contrôle unique dans une boîte de dialogue."
 
 #. 7dDgL
 #: sf_dialogcontrol.xhp
@@ -9257,7 +9356,7 @@ msgctxt ""
 "par_id701598191157426\n"
 "help.text"
 msgid "The focus is set on getting and setting the values displayed by the controls of the dialog box. Formatting is accessible via the <literal>XControlModel</literal> and <literal>XControlView</literal> properties."
-msgstr ""
+msgstr "L'accent est mis sur l'obtention et la définition des valeurs affichées par les contrôles de la boîte de dialogue. La mise en forme est accessible via les propriétés <literal>XControlModel</literal> et <literal>XControlView</literal>."
 
 #. fFfwe
 #: sf_dialogcontrol.xhp
@@ -9266,7 +9365,7 @@ msgctxt ""
 "par_id981598191184526\n"
 "help.text"
 msgid "Note that the unique <literal>DialogControl.Value</literal> property content varies according to the control type."
-msgstr ""
+msgstr "Notez que le contenu unique de la propriété <literal>DialogControl.Value</literal> varie selon le type de contrôle."
 
 #. MBrzA
 #: sf_dialogcontrol.xhp
@@ -9275,7 +9374,7 @@ msgctxt ""
 "par_id991612698027551\n"
 "help.text"
 msgid "A special attention is given to controls of type tree control. It is easy to populate a tree, either branch by branch, or with a set of branches at once. Populating a tree control can be performed statically or dynamically."
-msgstr ""
+msgstr "Une attention particulière est portée aux contrôles de type contrôle en arborescence. Il est facile de peupler un arbre, soit branche par branche, soit avec un ensemble de branches à la fois. Le remplissage d'un contrôle d'arborescence peut être effectué de manière statique ou dynamique."
 
 #. 9LpGF
 #: sf_dialogcontrol.xhp
@@ -9284,7 +9383,7 @@ msgctxt ""
 "par_id891598188164936\n"
 "help.text"
 msgid "The <literal>SFDialogs.DialogControl</literal> service is closely related to the <link href=\"text/sbasic/shared/03/sf_dialog.xhp\" name=\"Dialog service\"><literal>SFDialogs.Dialog</literal></link> service."
-msgstr ""
+msgstr "Le service <literal>SFDialogs.DialogControl</literal> est étroitement lié au service <link href=\"text/sbasic/shared/03/sf_dialog.xhp\" name=\"Dialog service\"><literal>SFDialogs.Dialog</literal></link>."
 
 #. uGTGK
 #: sf_dialogcontrol.xhp
@@ -9293,7 +9392,7 @@ msgctxt ""
 "hd_id581582885621841\n"
 "help.text"
 msgid "Service invocation"
-msgstr ""
+msgstr "Invocation du service"
 
 #. EnxDs
 #: sf_dialogcontrol.xhp
@@ -9302,7 +9401,7 @@ msgctxt ""
 "par_id361598174756160\n"
 "help.text"
 msgid "The <literal>DialogControl</literal> service is invoked from an existing <literal>Dialog</literal> service instance through its <literal>Controls()</literal> method. The dialog must be initiated with the <literal>SFDialogs.Dialog</literal> service."
-msgstr ""
+msgstr "Le service <literal>DialogControl</literal> est appelé à partir d'une instance de service <literal>Dialog</literal> existante via sa méthode <literal>Controls()</literal>. La boîte de dialogue doit être initiée avec le service <literal>SFDialogs.Dialog</literal>."
 
 #. RCFrE
 #: sf_dialogcontrol.xhp
@@ -9311,7 +9410,7 @@ msgctxt ""
 "bas_id581598453210170\n"
 "help.text"
 msgid "myControl.Value = \"Dialog started at \" & Now()"
-msgstr ""
+msgstr "myControl.Value = \"Dialog started at \" & Now()"
 
 #. WVG8J
 #: sf_dialogcontrol.xhp
@@ -9320,7 +9419,7 @@ msgctxt ""
 "bas_id961598453222539\n"
 "help.text"
 msgid "' ... process the controls actual values"
-msgstr ""
+msgstr "' ... traiter les valeurs actives des contrôles"
 
 #. gxhUu
 #: sf_dialogcontrol.xhp
@@ -9329,7 +9428,7 @@ msgctxt ""
 "pyc_id861620225235002\n"
 "help.text"
 msgid "text.Value = \"Dialog started at \" + strftime(\"%a, %d %b %Y %H:%M:%S\", localtime())"
-msgstr ""
+msgstr "text.Value = \"Dialog started at \" + strftime(\"%a, %d %b %Y %H:%M:%S\", localtime())"
 
 #. nu3f3
 #: sf_dialogcontrol.xhp
@@ -9338,7 +9437,7 @@ msgctxt ""
 "pyc_id841620225235377\n"
 "help.text"
 msgid "# ... process the controls actual values"
-msgstr ""
+msgstr "# ... traiter les valeurs actives des contrôles"
 
 #. 2PPv4
 #: sf_dialogcontrol.xhp
@@ -9347,7 +9446,7 @@ msgctxt ""
 "par_id951598174966322\n"
 "help.text"
 msgid "Alternatively a control instance can be retrieved via the <literal>SFDialogs.DialogEvent</literal> service, providing the dialog was initiated with the <literal>Dialog</literal> service. <literal>DialogEvent</literal> returns the <literal>SFDialogs.DialogControl</literal> class instance that triggered the event."
-msgstr ""
+msgstr "Alternativement, une instance de contrôle peut être récupérée via le service <literal>SFDialogs.DialogEvent</literal>, à condition que la boîte de dialogue ait été initiée avec le service <literal>Dialog</literal>. <literal>DialogEvent</literal> renvoie l'instance de classe <literal>SFDialogs.DialogControl</literal> qui a déclenché l'événement."
 
 #. 75WJy
 #: sf_dialogcontrol.xhp
@@ -9356,7 +9455,7 @@ msgctxt ""
 "par_id251598176312571\n"
 "help.text"
 msgid "Note that in previous examples, the prefix <literal>\"SFDialogs.\"</literal> may be omitted."
-msgstr ""
+msgstr "Notez que dans les exemples précédents, le préfixe <literal>\"SFDialogs.\"</literal> peut être omis."
 
 #. F9uKj
 #: sf_dialogcontrol.xhp
@@ -9365,7 +9464,7 @@ msgctxt ""
 "hd_id71598455687512\n"
 "help.text"
 msgid "Control types"
-msgstr ""
+msgstr "Types de contrôle"
 
 #. jKJBV
 #: sf_dialogcontrol.xhp
@@ -9374,7 +9473,7 @@ msgctxt ""
 "par_id851598455863395\n"
 "help.text"
 msgid "The <literal>DialogControl</literal> service is available for these control types:"
-msgstr ""
+msgstr "Le service <literal>DialogControl</literal> est disponible pour ces types de contrôle :"
 
 #. 7xddb
 #: sf_dialogcontrol.xhp
@@ -9383,7 +9482,7 @@ msgctxt ""
 "hd_id651583668365757\n"
 "help.text"
 msgid "Properties"
-msgstr ""
+msgstr "Propriétés"
 
 #. 94RMV
 #: sf_dialogcontrol.xhp
@@ -9392,7 +9491,7 @@ msgctxt ""
 "par_id871583668386455\n"
 "help.text"
 msgid "Name"
-msgstr ""
+msgstr "Nom"
 
 #. eccsg
 #: sf_dialogcontrol.xhp
@@ -9401,7 +9500,7 @@ msgctxt ""
 "par_id491583668386455\n"
 "help.text"
 msgid "ReadOnly"
-msgstr ""
+msgstr "Lecture seule"
 
 #. KRYNv
 #: sf_dialogcontrol.xhp
@@ -9410,7 +9509,7 @@ msgctxt ""
 "par_id271583668474014\n"
 "help.text"
 msgid "Type"
-msgstr ""
+msgstr "Type de contenu"
 
 #. U9ZYU
 #: sf_dialogcontrol.xhp
@@ -9419,7 +9518,7 @@ msgctxt ""
 "par_id291598538799794\n"
 "help.text"
 msgid "Applicable to"
-msgstr ""
+msgstr "Applicable à"
 
 #. emDac
 #: sf_dialogcontrol.xhp
@@ -9428,7 +9527,7 @@ msgctxt ""
 "par_id401583668386455\n"
 "help.text"
 msgid "Description"
-msgstr ""
+msgstr "Description"
 
 #. xNGhR
 #: sf_dialogcontrol.xhp
@@ -9437,7 +9536,7 @@ msgctxt ""
 "par_id371583668519172\n"
 "help.text"
 msgid "No"
-msgstr ""
+msgstr "Non"
 
 #. aTyMC
 #: sf_dialogcontrol.xhp
@@ -9446,7 +9545,7 @@ msgctxt ""
 "par_id771583668386455\n"
 "help.text"
 msgid "Specifies if a command button has or not the behaviour of a Cancel button."
-msgstr ""
+msgstr "Spécifie si un bouton de commande a ou non le comportement d'un bouton Annuler."
 
 #. Gft3Z
 #: sf_dialogcontrol.xhp
@@ -9455,7 +9554,7 @@ msgctxt ""
 "par_id541583839708548\n"
 "help.text"
 msgid "No"
-msgstr ""
+msgstr "Non"
 
 #. UXoyn
 #: sf_dialogcontrol.xhp
@@ -9464,7 +9563,7 @@ msgctxt ""
 "par_id731583839708412\n"
 "help.text"
 msgid "Specifies the text associated with the control."
-msgstr ""
+msgstr "Spécifie le texte associé au contrôle."
 
 #. Uo2SP
 #: sf_dialogcontrol.xhp
@@ -9473,7 +9572,7 @@ msgctxt ""
 "par_id761584027709516\n"
 "help.text"
 msgid "Yes"
-msgstr ""
+msgstr "Oui"
 
 #. YKEAg
 #: sf_dialogcontrol.xhp
@@ -9482,7 +9581,7 @@ msgctxt ""
 "par_id261598539120502\n"
 "help.text"
 msgid "All"
-msgstr ""
+msgstr "Tous"
 
 #. c5GAw
 #: sf_dialogcontrol.xhp
@@ -9491,7 +9590,7 @@ msgctxt ""
 "par_id971584027709752\n"
 "help.text"
 msgid "One of the types listed above."
-msgstr ""
+msgstr "L'un des types énumérés ci-dessus."
 
 #. oMipU
 #: sf_dialogcontrol.xhp
@@ -9500,7 +9599,7 @@ msgctxt ""
 "par_id67161270548283\n"
 "help.text"
 msgid "No"
-msgstr ""
+msgstr "Non"
 
 #. 59ovD
 #: sf_dialogcontrol.xhp
@@ -9509,7 +9608,7 @@ msgctxt ""
 "par_id341612705482566\n"
 "help.text"
 msgid "UNO<br/>object"
-msgstr ""
+msgstr "Objet <br/>UNO"
 
 #. w2ZhT
 #: sf_dialogcontrol.xhp
@@ -9518,7 +9617,7 @@ msgctxt ""
 "par_id1001612705482919\n"
 "help.text"
 msgid "The currently upmost node selected in the tree control. Refer to <link href=\"https://api.libreoffice.org/docs/idl/ref/interfacecom_1_1sun_1_1star_1_1awt_1_1tree_1_1XMutableTreeNode.html\" name=\"awt.tree.XMutableTreeNode\">XmutableTreeNode</link> in Application Programming Interface (API) documentation for detailed information."
-msgstr ""
+msgstr "Le nœud actuellement le plus haut sélectionné dans l'arborescence. Reportez-vous à <link href=\"https://api.libreoffice.org/docs/idl/ref/interfacecom_1_1sun_1_1star_1_1awt_1_1tree_1_1XMutableTreeNode.html\" name=\"awt.tree.XMutableTreeNode\">XmutableTreeNode</link> dans la documentation de l'interface de programmation d'application (API) pour des informations détaillées."
 
 #. veivJ
 #: sf_dialogcontrol.xhp
@@ -9527,7 +9626,7 @@ msgctxt ""
 "par_id31583839767743\n"
 "help.text"
 msgid "No"
-msgstr ""
+msgstr "Non"
 
 #. y2irQ
 #: sf_dialogcontrol.xhp
@@ -10843,13 +10942,13 @@ msgctxt ""
 msgid "<emph>alignments</emph>: Defines the alignment in each column as a string in which each character can be \"L\" (Left), \"C\" (Center), \"R\" (Right) or \" \" (whitespace, default, meaning left for strings and right for numeric values). If the length of the string is shorter than the number of columns in the table, then the last character in the string is used to define the alignment of the remaining columns."
 msgstr ""
 
-#. FCNEg
+#. CK6RC
 #: sf_dialogcontrol.xhp
 msgctxt ""
 "sf_dialogcontrol.xhp\n"
 "par_id381638569172413\n"
 "help.text"
-msgid "The following example assumes that the dialog <literal>myDialog</literal> has a <literal>TableControl</literal> named <literal>Grid1</literal> with \"Show header row\" and \"Show column row\" properties set to \"Yes\"."
+msgid "The following example assumes that the dialog <literal>myDialog</literal> has a <literal>TableControl</literal> named <literal>Grid1</literal> with \"Show row header\" and \"Show column header\" properties set to \"Yes\"."
 msgstr ""
 
 #. N9Byz
@@ -10877,15 +10976,6 @@ msgctxt ""
 "bas_id781638651541028\n"
 "help.text"
 msgid "MsgBox \"Row \" & oTable.ListIndex & \" is selected.\""
-msgstr ""
-
-#. yyATt
-#: sf_dialogcontrol.xhp
-msgctxt ""
-"sf_dialogcontrol.xhp\n"
-"pyc_id111638569958471\n"
-"help.text"
-msgid "dlg = CreateScriptService(\"Dialog\", \"GlobalScope\", \"Standard\", \"myDialog\")"
 msgstr ""
 
 #. HNmmm
@@ -11347,13 +11437,13 @@ msgctxt ""
 msgid "Note in the example below that a Python dictionary needs to be passed as the second argument of the <literal>CreateScriptService</literal> method."
 msgstr ""
 
-#. wTUQt
+#. oZEpN
 #: sf_dictionary.xhp
 msgctxt ""
 "sf_dictionary.xhp\n"
 "par_id421610393306916\n"
 "help.text"
-msgid "Many services and methods in the UNO library take in parameters represented using the <literal>PropertyValue</literal> struct, which is part of the LibreOffice API."
+msgid "Many services and methods in the UNO library take in parameters represented using the <literal>PropertyValue</literal> struct, which is part of the %PRODUCTNAME API."
 msgstr ""
 
 #. 3afLF
@@ -11455,13 +11545,13 @@ msgctxt ""
 msgid "Inserts the contents of an array of <literal>PropertyValue</literal> objects into the current dictionary. <literal>PropertyValue</literal> Names are used as Keys in the dictionary, whereas Values contain the corresponding values. Returns <literal>True</literal> if successful."
 msgstr ""
 
-#. 95A5W
+#. BQybf
 #: sf_dictionary.xhp
 msgctxt ""
 "sf_dictionary.xhp\n"
 "par_id751588941968522\n"
 "help.text"
-msgid "<emph>propertyvalues</emph>: A zero-based 1-dimensional array containing <literal>com.sun.star.beans.PropertyValue</literal> objects. This parameter may also be a single <literal>propertyvalue</literal> object not contained in an Array."
+msgid "<emph>propertyvalues</emph>: A zero-based 1-dimensional array containing <literal>com.sun.star.beans.PropertyValue</literal> objects. This parameter may also be a single <literal>PropertyValue</literal> object not contained in an Array."
 msgstr ""
 
 #. g5bHm
@@ -11491,13 +11581,13 @@ msgctxt ""
 msgid "Retrieves an existing dictionary entry based on its key. Returns the value of the item if successful, otherwise returns <literal>Empty</literal>."
 msgstr ""
 
-#. CGLFi
+#. MV7Wq
 #: sf_dictionary.xhp
 msgctxt ""
 "sf_dictionary.xhp\n"
 "par_id551582890399669\n"
 "help.text"
-msgid "<emph>key</emph>: Not case-sensitive. Must exist in the dictionary, otherwise an <literal>UNKNOWNKEYERROR</literal> error is raised."
+msgid "<emph>key</emph>: Not case-sensitive. If it does not exist, <literal>Empty</literal> value is returned."
 msgstr ""
 
 #. rGqyT
@@ -12085,6 +12175,105 @@ msgctxt ""
 msgid "<emph>saveask</emph> : If <literal>True</literal> (default), the user is invited to confirm if the changes should be written on disk. This argument is ignored if the document was not modified."
 msgstr ""
 
+#. RhAbC
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
+"par_id651589200121080\n"
+"help.text"
+msgid "Creates a new menu entry in the menubar of a given document window."
+msgstr ""
+
+#. A7owo
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
+"par_id981611149616155\n"
+"help.text"
+msgid "This method returns an instance of the <link href=\"text/sbasic/shared/03/sf_menu.xhp\" name=\"Menu_link1\"><input>SFWidgets.Menu</input></link> service."
+msgstr ""
+
+#. GKeq5
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
+"par_id721643121487974\n"
+"help.text"
+msgid "The menu created is only available during the current %PRODUCTNAME session and is not saved neither in the document nor in the global application settings. Hence closing the document window will make the menu disappear. It will only reappear when the macro that creates the menu is executed again."
+msgstr ""
+
+#. szVYB
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
+"par_id361589200120316\n"
+"help.text"
+msgid "<emph>menuheader</emph>: The toplevel name of the new menu."
+msgstr ""
+
+#. iCSZE
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
+"par_id361589200129686\n"
+"help.text"
+msgid "<emph>before</emph>: The name (as a string) or position (as an integer starting at 1) of an existing menu before which the new menu will be placed. If no value is defined for this argument, the menu will be created at the last position in the menubar."
+msgstr ""
+
+#. LX4b9
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
+"par_id361589200122507\n"
+"help.text"
+msgid "<emph>submenuchar</emph>: The delimiter used to create menu trees when calling methods as <literal>AddItem</literal> from the <literal>Menu</literal> service. The default value is \">\"."
+msgstr ""
+
+#. FhwFZ
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
+"bas_id751622827903865\n"
+"help.text"
+msgid "Set oMenu = oDoc.CreateMenu(\"My Menu\")"
+msgstr ""
+
+#. iDefE
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
+"bas_id391643120224507\n"
+"help.text"
+msgid "' Add items to the menu"
+msgstr ""
+
+#. t4cXb
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
+"bas_id100164312025160\n"
+"help.text"
+msgid "' After creating the menu, the service instance can be disposed of"
+msgstr ""
+
+#. WuNHU
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
+"pyc_id221622827943208\n"
+"help.text"
+msgid "menu = doc.CreateMenu(\"My Menu\")"
+msgstr ""
+
+#. Jx4RF
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
+"par_id271643139068194\n"
+"help.text"
+msgid "Refer to the <link href=\"text/sbasic/shared/03/sf_menu.xhp\" name=\"Menu_link2\"><input>SFWidgets.Menu</input></link> help page to learn more about how to create/remove menus in %PRODUCTNAME document windows."
+msgstr ""
+
 #. CGKZA
 #: sf_document.xhp
 msgctxt ""
@@ -12209,6 +12398,60 @@ msgctxt ""
 "par_id141635436912146\n"
 "help.text"
 msgid "<emph>copies</emph>: The number of copies. Default is 1."
+msgstr ""
+
+#. VDMiZ
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
+"par_id651589200165470\n"
+"help.text"
+msgid "Removes a toplevel menu from the menubar of a given document window."
+msgstr ""
+
+#. wfDbr
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
+"par_id981611149610695\n"
+"help.text"
+msgid "Returns <literal>True</literal> if the specified menu could be removed. If the specified menu does not exist, the method returns <literal>False</literal>."
+msgstr ""
+
+#. eNVDJ
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
+"par_id571643121106014\n"
+"help.text"
+msgid "This method can be used to remove any menu entry from the document window, including default menus. However, none of these changes in the menubar are saved to the document or to the application settings. To restore the menubar to the default settings, simply close and reopen the document window."
+msgstr ""
+
+#. E6ahL
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
+"par_id361589200121156\n"
+"help.text"
+msgid "<emph>menuheader</emph>: The toplevel name of the menu to be removed."
+msgstr ""
+
+#. yRoDW
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
+"bas_id391643120223147\n"
+"help.text"
+msgid "oDoc.RemoveMenu(\"My Menu\")"
+msgstr ""
+
+#. BnmiF
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
+"pyc_id221622827946338\n"
+"help.text"
+msgid "doc.RemoveMenu(\"My Menu\")"
 msgstr ""
 
 #. Nmwv9
@@ -18925,6 +19168,681 @@ msgctxt ""
 msgid "Consider the following code is running on a %PRODUCTNAME installation with locale set to \"es-ES\". Additionally, there is a file \"es-ES.po\" inside the specified folder that translates the string passed to the <literal>GetText</literal> method:"
 msgstr ""
 
+#. yD78g
+#: sf_menu.xhp
+msgctxt ""
+"sf_menu.xhp\n"
+"tit\n"
+"help.text"
+msgid "SFWidgets.Menu service"
+msgstr ""
+
+#. F5KPb
+#: sf_menu.xhp
+msgctxt ""
+"sf_menu.xhp\n"
+"bm_id681600788076499\n"
+"help.text"
+msgid "<variable id=\"MenuService\"><link href=\"text/sbasic/shared/03/sf_menu.xhp\" name=\"Menu service\"><literal>SFWidgets</literal>.<literal>Menu</literal> service</link></variable>"
+msgstr ""
+
+#. FqGPg
+#: sf_menu.xhp
+msgctxt ""
+"sf_menu.xhp\n"
+"par_id181600788076612\n"
+"help.text"
+msgid "The <literal>Menu</literal> service can be used to create and remove menus from the menubar of a %PRODUCTNAME document window. Each menu entry can be associated with a script or with a UNO command. This service provides the following capabilities:"
+msgstr ""
+
+#. UYDdv
+#: sf_menu.xhp
+msgctxt ""
+"sf_menu.xhp\n"
+"par_id301600788076785\n"
+"help.text"
+msgid "Creation of menus with custom entries, checkboxes, radio buttons and separators."
+msgstr ""
+
+#. KB9XF
+#: sf_menu.xhp
+msgctxt ""
+"sf_menu.xhp\n"
+"par_id1001600788076848\n"
+"help.text"
+msgid "Decoration of menu items with icons and tooltips."
+msgstr ""
+
+#. JSwJW
+#: sf_menu.xhp
+msgctxt ""
+"sf_menu.xhp\n"
+"par_id581643133675012\n"
+"help.text"
+msgid "Menus created with this service are available only for a specified document window. They are not saved into the document or as application settings. Closing and opening the document will restore the default menubar settings."
+msgstr ""
+
+#. FEfWE
+#: sf_menu.xhp
+msgctxt ""
+"sf_menu.xhp\n"
+"par_id291643224925643\n"
+"help.text"
+msgid "When OLE objects such as Math formulas or Calc charts are edited from within a document, %PRODUCTNAME reconfigures the menubar according to the object. When this happens, the menus created with the <literal>Menu</literal> service are removed and are not be restored after editing the OLE object."
+msgstr ""
+
+#. GftK9
+#: sf_menu.xhp
+msgctxt ""
+"sf_menu.xhp\n"
+"hd_id281600788076359\n"
+"help.text"
+msgid "Service invocation"
+msgstr ""
+
+#. DzDmt
+#: sf_menu.xhp
+msgctxt ""
+"sf_menu.xhp\n"
+"par_id321614902851541\n"
+"help.text"
+msgid "The <literal>Menu</literal> service is instantiated by calling the <link href=\"text/sbasic/shared/03/sf_document.xhp#CreateMenu\" name=\"CreateMenu_link\"><literal>CreateMenu</literal></link> method from the <literal>Document</literal> service. The code snippet below creates a menu named <emph>My Menu</emph> in the current document window with two entries <emph>Item A</emph> and <emph>Item B</emph>."
+msgstr ""
+
+#. pf7FV
+#: sf_menu.xhp
+msgctxt ""
+"sf_menu.xhp\n"
+"bas_id261643134374056\n"
+"help.text"
+msgid "Set oMenu = oDoc.CreateMenu(\"My Menu\")"
+msgstr ""
+
+#. Hoh4Q
+#: sf_menu.xhp
+msgctxt ""
+"sf_menu.xhp\n"
+"bas_id431643134582213\n"
+"help.text"
+msgid ".AddItem(\"Item A\", Command := \"About\")"
+msgstr ""
+
+#. u52BY
+#: sf_menu.xhp
+msgctxt ""
+"sf_menu.xhp\n"
+"bas_id571643134582396\n"
+"help.text"
+msgid ".AddItem(\"Item B\", Script := \"vnd.sun.star.script:Standard.Module1.ItemB_Listener?language=Basic&location=application\")"
+msgstr ""
+
+#. nd5od
+#: sf_menu.xhp
+msgctxt ""
+"sf_menu.xhp\n"
+"par_id371643135157996\n"
+"help.text"
+msgid "After creating the menu, it is recommended to call the <literal>Dispose</literal> method to free the resources used by the <literal>Menu</literal> service instance."
+msgstr ""
+
+#. 2VDkD
+#: sf_menu.xhp
+msgctxt ""
+"sf_menu.xhp\n"
+"par_id341636718182262\n"
+"help.text"
+msgid "In the example above, <emph>Item A</emph> is associated with the UNO command <literal>.uno:About</literal> whereas <emph>Item B</emph> is associated with the script <literal>ItemB_Listener</literal> defined in <literal>Module1</literal> of the <literal>Standard</literal> library of the <literal>My Macros</literal> container."
+msgstr ""
+
+#. 9G7de
+#: sf_menu.xhp
+msgctxt ""
+"sf_menu.xhp\n"
+"par_id851635274721129\n"
+"help.text"
+msgid "The following example defines <literal>ItemB_Listener</literal> that will be called when <emph>Item B</emph> is clicked. This listener simply splits the argument string passed to the <literal>Sub</literal> and shows them in a message box."
+msgstr ""
+
+#. AFHBG
+#: sf_menu.xhp
+msgctxt ""
+"sf_menu.xhp\n"
+"bas_id716431354225603\n"
+"help.text"
+msgid "' Process the argument string passed to the listener"
+msgstr ""
+
+#. GzLwF
+#: sf_menu.xhp
+msgctxt ""
+"sf_menu.xhp\n"
+"bas_id901643135423012\n"
+"help.text"
+msgid "MsgBox \"Menu name: \"   & sArgs(0) & Chr(13) & _"
+msgstr ""
+
+#. qGB7L
+#: sf_menu.xhp
+msgctxt ""
+"sf_menu.xhp\n"
+"bas_id301643136028263\n"
+"help.text"
+msgid "\"Menu item: \"   & sArgs(1) & Chr(13) & _"
+msgstr ""
+
+#. wFTww
+#: sf_menu.xhp
+msgctxt ""
+"sf_menu.xhp\n"
+"bas_id181643136028557\n"
+"help.text"
+msgid "\"Item ID: \"     & sArgs(2) & Chr(13) & _"
+msgstr ""
+
+#. 9SGVd
+#: sf_menu.xhp
+msgctxt ""
+"sf_menu.xhp\n"
+"bas_id561643136028710\n"
+"help.text"
+msgid "\"Item status: \" & sArgs(3)"
+msgstr ""
+
+#. MQJ7M
+#: sf_menu.xhp
+msgctxt ""
+"sf_menu.xhp\n"
+"par_id531636493797707\n"
+"help.text"
+msgid "As shown in the example above, menu entries associated with a script receive a comma-separated string argument with the following values:"
+msgstr ""
+
+#. uprfo
+#: sf_menu.xhp
+msgctxt ""
+"sf_menu.xhp\n"
+"par_id921643136489994\n"
+"help.text"
+msgid "The toplevel name of the menu."
+msgstr ""
+
+#. 7Jxz9
+#: sf_menu.xhp
+msgctxt ""
+"sf_menu.xhp\n"
+"par_id611643136491059\n"
+"help.text"
+msgid "The string ID of the selected menu entry."
+msgstr ""
+
+#. hENoG
+#: sf_menu.xhp
+msgctxt ""
+"sf_menu.xhp\n"
+"par_id961643136491491\n"
+"help.text"
+msgid "The numeric ID of the selected menu entry."
+msgstr ""
+
+#. nYABy
+#: sf_menu.xhp
+msgctxt ""
+"sf_menu.xhp\n"
+"par_id381643136494580\n"
+"help.text"
+msgid "The current state of the menu item. This is useful for checkboxes and radio buttons. If the item is checked, the value \"1\" is returned, otherwise \"0\" is returned."
+msgstr ""
+
+#. HHjiV
+#: sf_menu.xhp
+msgctxt ""
+"sf_menu.xhp\n"
+"par_id131635275172617\n"
+"help.text"
+msgid "The examples above can be written in Python as follows:"
+msgstr ""
+
+#. ENT7Q
+#: sf_menu.xhp
+msgctxt ""
+"sf_menu.xhp\n"
+"pyc_id981636717957632\n"
+"help.text"
+msgid "msg = f\"Menu item: {s_args[0]}\\n\""
+msgstr ""
+
+#. 8MYNj
+#: sf_menu.xhp
+msgctxt ""
+"sf_menu.xhp\n"
+"pyc_id851636718008427\n"
+"help.text"
+msgid "msg += f\"Menu name: {s_args[1]}\\n\""
+msgstr ""
+
+#. EfEaE
+#: sf_menu.xhp
+msgctxt ""
+"sf_menu.xhp\n"
+"pyc_id331636727047102\n"
+"help.text"
+msgid "msg += f\"Item ID: {s_args[2]}\\n\""
+msgstr ""
+
+#. FPzcf
+#: sf_menu.xhp
+msgctxt ""
+"sf_menu.xhp\n"
+"pyc_id71643137333404\n"
+"help.text"
+msgid "msg += f\"Item status: {s_args[3]}\""
+msgstr ""
+
+#. XxChZ
+#: sf_menu.xhp
+msgctxt ""
+"sf_menu.xhp\n"
+"hd_id711600788076834\n"
+"help.text"
+msgid "Properties"
+msgstr ""
+
+#. 98USM
+#: sf_menu.xhp
+msgctxt ""
+"sf_menu.xhp\n"
+"par_id461600788076917\n"
+"help.text"
+msgid "Name"
+msgstr ""
+
+#. fT8mQ
+#: sf_menu.xhp
+msgctxt ""
+"sf_menu.xhp\n"
+"par_id221600788076591\n"
+"help.text"
+msgid "Readonly"
+msgstr ""
+
+#. DGBgA
+#: sf_menu.xhp
+msgctxt ""
+"sf_menu.xhp\n"
+"par_id761600788076328\n"
+"help.text"
+msgid "Type"
+msgstr ""
+
+#. 2EE9k
+#: sf_menu.xhp
+msgctxt ""
+"sf_menu.xhp\n"
+"par_id67160078807636\n"
+"help.text"
+msgid "Description"
+msgstr ""
+
+#. qnRDA
+#: sf_menu.xhp
+msgctxt ""
+"sf_menu.xhp\n"
+"par_id49160078807654\n"
+"help.text"
+msgid "No"
+msgstr ""
+
+#. LE27e
+#: sf_menu.xhp
+msgctxt ""
+"sf_menu.xhp\n"
+"par_id81600788076419\n"
+"help.text"
+msgid "Character used to define the access key of a menu item. The default character is \"~\"."
+msgstr ""
+
+#. GSJAG
+#: sf_menu.xhp
+msgctxt ""
+"sf_menu.xhp\n"
+"par_id311600788076756\n"
+"help.text"
+msgid "No"
+msgstr ""
+
+#. fb3iG
+#: sf_menu.xhp
+msgctxt ""
+"sf_menu.xhp\n"
+"par_id441600788076826\n"
+"help.text"
+msgid "Character or string that defines how menu items are nested. The default character is \">\"."
+msgstr ""
+
+#. bDCZ8
+#: sf_menu.xhp
+msgctxt ""
+"sf_menu.xhp\n"
+"hd_id181636719707892\n"
+"help.text"
+msgid "Menu and Submenus"
+msgstr ""
+
+#. YE5FL
+#: sf_menu.xhp
+msgctxt ""
+"sf_menu.xhp\n"
+"par_id741636719725402\n"
+"help.text"
+msgid "To create a menu with submenus, use the character defined in the <literal>SubmenuCharacter</literal> property while creating the menu entry to define where it will be placed. For instance, consider the following menu/submenu hierarchy."
+msgstr ""
+
+#. Y4ETY
+#: sf_menu.xhp
+msgctxt ""
+"sf_menu.xhp\n"
+"par_id211636720111489\n"
+"help.text"
+msgid "The code below uses the default submenu character \">\" to create the menu/submenu hierarchy defined above:"
+msgstr ""
+
+#. WkCis
+#: sf_menu.xhp
+msgctxt ""
+"sf_menu.xhp\n"
+"par_id121636721243578\n"
+"help.text"
+msgid "The string \"---\" is used to define line separators in menus or submenus."
+msgstr ""
+
+#. CYbLC
+#: sf_menu.xhp
+msgctxt ""
+"sf_menu.xhp\n"
+"hd_id501582887473754\n"
+"help.text"
+msgid "Methods"
+msgstr ""
+
+#. Lofgb
+#: sf_menu.xhp
+msgctxt ""
+"sf_menu.xhp\n"
+"par_id891611613601554\n"
+"help.text"
+msgid "List of Methods in the Menu Service"
+msgstr ""
+
+#. aDqJH
+#: sf_menu.xhp
+msgctxt ""
+"sf_menu.xhp\n"
+"par_id93158919969864\n"
+"help.text"
+msgid "Inserts a check box in the menu. Returns an integer value that identifies the inserted item."
+msgstr ""
+
+#. T8Fkq
+#: sf_menu.xhp
+msgctxt ""
+"sf_menu.xhp\n"
+"par_id821591631203996\n"
+"help.text"
+msgid "<emph>menuitem:</emph> Defines the text to be displayed in the menu. This argument also defines the hierarchy of the item inside the menu by using the submenu character."
+msgstr ""
+
+#. SkMmC
+#: sf_menu.xhp
+msgctxt ""
+"sf_menu.xhp\n"
+"par_id821591631203116\n"
+"help.text"
+msgid "<emph>name:</emph> String value used to identify the menu item. By default, the last component of the menu hierarchy is used."
+msgstr ""
+
+#. 7zhpM
+#: sf_menu.xhp
+msgctxt ""
+"sf_menu.xhp\n"
+"par_id821591631203133\n"
+"help.text"
+msgid "<emph>status:</emph> Defines whether the item is selected when the menu is created (Default = <literal>False</literal>)."
+msgstr ""
+
+#. JPboo
+#: sf_menu.xhp
+msgctxt ""
+"sf_menu.xhp\n"
+"par_id11636721653313\n"
+"help.text"
+msgid "<emph>icon:</emph> Path and name of the icon to be displayed without the leading path separator. The actual icon shown depends on the icon set being used."
+msgstr ""
+
+#. YzJwB
+#: sf_menu.xhp
+msgctxt ""
+"sf_menu.xhp\n"
+"par_id11636721653208\n"
+"help.text"
+msgid "<emph>tooltip:</emph> Text to be displayed as tooltip."
+msgstr ""
+
+#. 3WPXT
+#: sf_menu.xhp
+msgctxt ""
+"sf_menu.xhp\n"
+"par_id11636721653328\n"
+"help.text"
+msgid "<emph>command:</emph> The name of a UNO command without the <literal>.uno:</literal> prefix. If the command name does not exist, nothing happens."
+msgstr ""
+
+#. LaF26
+#: sf_menu.xhp
+msgctxt ""
+"sf_menu.xhp\n"
+"par_id11636721653107\n"
+"help.text"
+msgid "<emph>script:</emph> The URI for a Basic or Python script that will be executed when the item is clicked."
+msgstr ""
+
+#. PTXhK
+#: sf_menu.xhp
+msgctxt ""
+"sf_menu.xhp\n"
+"par_id31643198954204\n"
+"help.text"
+msgid "The arguments <literal>command</literal> and <literal>script</literal> are mutually exclusive, hence only one of them can be set for each menu item."
+msgstr ""
+
+#. 7fb2n
+#: sf_menu.xhp
+msgctxt ""
+"sf_menu.xhp\n"
+"par_id31643148484084\n"
+"help.text"
+msgid "Read <link href=\"https://wiki.openoffice.org/wiki/Documentation/DevGuide/Scripting/Scripting_Framework_URI_Specification\" name=\"URI_Notation\">Scripting Framework URI Specification</link> to learn more about the URI syntax used in the <literal>script</literal> argument."
+msgstr ""
+
+#. Aj8cF
+#: sf_menu.xhp
+msgctxt ""
+"sf_menu.xhp\n"
+"bas_id191643306748853\n"
+"help.text"
+msgid "' Menu entry associated with the .uno:Paste command"
+msgstr ""
+
+#. gQCkK
+#: sf_menu.xhp
+msgctxt ""
+"sf_menu.xhp\n"
+"bas_id271643147793320\n"
+"help.text"
+msgid "' Runs the Basic script Standard.Module1.MyListener stored in the document"
+msgstr ""
+
+#. zSD5u
+#: sf_menu.xhp
+msgctxt ""
+"sf_menu.xhp\n"
+"bas_id801643306742620\n"
+"help.text"
+msgid "' Runs the Python script MysListener located in file myScripts.py in the user scripts folder"
+msgstr ""
+
+#. uAbp9
+#: sf_menu.xhp
+msgctxt ""
+"sf_menu.xhp\n"
+"par_id93158919963364\n"
+"help.text"
+msgid "Inserts a label entry in the menu. Returns an integer value that identifies the inserted item."
+msgstr ""
+
+#. tCHcD
+#: sf_menu.xhp
+msgctxt ""
+"sf_menu.xhp\n"
+"par_id821591631203021\n"
+"help.text"
+msgid "<emph>menuitem:</emph> Defines the text to be displayed in the menu. This argument also defines the hierarchy of the item inside the menu by using the submenu character."
+msgstr ""
+
+#. yFQns
+#: sf_menu.xhp
+msgctxt ""
+"sf_menu.xhp\n"
+"par_id821591631203026\n"
+"help.text"
+msgid "<emph>name:</emph> String value to be returned when the item is clicked. By default, the last component of the menu hierarchy is used."
+msgstr ""
+
+#. DMEeJ
+#: sf_menu.xhp
+msgctxt ""
+"sf_menu.xhp\n"
+"par_id11636721652886\n"
+"help.text"
+msgid "<emph>icon:</emph> Path and name of the icon to be displayed without the leading path separator. The actual icon shown depends on the icon set being used."
+msgstr ""
+
+#. aZPNP
+#: sf_menu.xhp
+msgctxt ""
+"sf_menu.xhp\n"
+"par_id11636721653118\n"
+"help.text"
+msgid "<emph>tooltip:</emph> Text to be displayed as tooltip."
+msgstr ""
+
+#. 23fax
+#: sf_menu.xhp
+msgctxt ""
+"sf_menu.xhp\n"
+"par_id11636721653314\n"
+"help.text"
+msgid "<emph>command:</emph> The name of a UNO command without the <literal>.uno:</literal> prefix. If the command name does not exist, nothing happens."
+msgstr ""
+
+#. wysyV
+#: sf_menu.xhp
+msgctxt ""
+"sf_menu.xhp\n"
+"par_id11636721652057\n"
+"help.text"
+msgid "<emph>script:</emph> The URI for a Basic or Python script that will be executed when the item is clicked."
+msgstr ""
+
+#. QYzCL
+#: sf_menu.xhp
+msgctxt ""
+"sf_menu.xhp\n"
+"bas_id41158919969106\n"
+"help.text"
+msgid "oMenu.AddItem(\"Item A\", Tooltip := \"A descriptive message\")"
+msgstr ""
+
+#. dxYAv
+#: sf_menu.xhp
+msgctxt ""
+"sf_menu.xhp\n"
+"pyc_id321621534170554\n"
+"help.text"
+msgid "oMenu.AddItem(\"Item A\", tooltip = \"A descriptive message\")"
+msgstr ""
+
+#. qB7zU
+#: sf_menu.xhp
+msgctxt ""
+"sf_menu.xhp\n"
+"par_id93158919969399\n"
+"help.text"
+msgid "Inserts a radio button entry in the menu. Returns an integer value that identifies the inserted item."
+msgstr ""
+
+#. FTrvY
+#: sf_menu.xhp
+msgctxt ""
+"sf_menu.xhp\n"
+"par_id821591631203501\n"
+"help.text"
+msgid "<emph>menuitem:</emph> Defines the text to be displayed in the menu. This argument also defines the hierarchy of the item inside the menu by using the submenu character."
+msgstr ""
+
+#. syjtC
+#: sf_menu.xhp
+msgctxt ""
+"sf_menu.xhp\n"
+"par_id821591631228716\n"
+"help.text"
+msgid "<emph>name:</emph> String value to be returned when the item is clicked. By default, the last component of the menu hierarchy is used."
+msgstr ""
+
+#. 7WBgE
+#: sf_menu.xhp
+msgctxt ""
+"sf_menu.xhp\n"
+"par_id821591631203643\n"
+"help.text"
+msgid "<emph>status:</emph> Defines whether the item is selected when the menu is created (Default = <literal>False</literal>)."
+msgstr ""
+
+#. 4uxXA
+#: sf_menu.xhp
+msgctxt ""
+"sf_menu.xhp\n"
+"par_id11636721653228\n"
+"help.text"
+msgid "<emph>icon:</emph> Path and name of the icon to be displayed without the leading path separator. The actual icon shown depends on the icon set being used."
+msgstr ""
+
+#. ZfFDR
+#: sf_menu.xhp
+msgctxt ""
+"sf_menu.xhp\n"
+"par_id11636721653114\n"
+"help.text"
+msgid "<emph>tooltip:</emph> Text to be displayed as tooltip."
+msgstr ""
+
+#. Sx9Bm
+#: sf_menu.xhp
+msgctxt ""
+"sf_menu.xhp\n"
+"par_id11636721653447\n"
+"help.text"
+msgid "<emph>command:</emph> The name of a UNO command without the <literal>.uno:</literal> prefix. If the command name does not exist, nothing happens."
+msgstr ""
+
+#. AEnA6
+#: sf_menu.xhp
+msgctxt ""
+"sf_menu.xhp\n"
+"par_id11636721652598\n"
+"help.text"
+msgid "<emph>script:</emph> The URI for a Basic or Python script that will be executed when the item is clicked."
+msgstr ""
+
 #. yYNtX
 #: sf_methods.xhp
 msgctxt ""
@@ -19582,22 +20500,22 @@ msgctxt ""
 msgid "<link href=\"text/scalc/01/04060104.xhp#bm_id3691824\" name=\"Calc_Info\">Platform information with INFO(\"system\") Calc formula</link>"
 msgstr ""
 
-#. 3RZGR
+#. h6atN
 #: sf_popupmenu.xhp
 msgctxt ""
 "sf_popupmenu.xhp\n"
 "tit\n"
 "help.text"
-msgid "ScriptForge.PopupMenu service"
+msgid "SFWidgets.PopupMenu service"
 msgstr ""
 
-#. NWwqN
+#. QADne
 #: sf_popupmenu.xhp
 msgctxt ""
 "sf_popupmenu.xhp\n"
 "bm_id681600788076499\n"
 "help.text"
-msgid "<variable id=\"PopupMenuService\"><link href=\"text/sbasic/shared/03/sf_popupmenu.xhp\" name=\"PopupMenu service\"><literal>ScriptForge</literal>.<literal>PopupMenu</literal> service</link></variable>"
+msgid "<variable id=\"PopupMenuService\"><link href=\"text/sbasic/shared/03/sf_popupmenu.xhp\" name=\"PopupMenu service\"><literal>SFWidgets</literal>.<literal>PopupMenu</literal> service</link></variable>"
 msgstr ""
 
 #. DGbZ3
@@ -19789,24 +20707,6 @@ msgctxt ""
 msgid "Description"
 msgstr ""
 
-#. G2c6G
-#: sf_popupmenu.xhp
-msgctxt ""
-"sf_popupmenu.xhp\n"
-"par_id311600788076756\n"
-"help.text"
-msgid "No"
-msgstr ""
-
-#. bcd7a
-#: sf_popupmenu.xhp
-msgctxt ""
-"sf_popupmenu.xhp\n"
-"par_id441600788076826\n"
-"help.text"
-msgid "Character or string that defines how menu items are nested. The default character is \">\"."
-msgstr ""
-
 #. qnMK2
 #: sf_popupmenu.xhp
 msgctxt ""
@@ -19823,6 +20723,24 @@ msgctxt ""
 "par_id81600788076419\n"
 "help.text"
 msgid "Character used to define the access key of a menu item. The default character is \"~\"."
+msgstr ""
+
+#. G2c6G
+#: sf_popupmenu.xhp
+msgctxt ""
+"sf_popupmenu.xhp\n"
+"par_id311600788076756\n"
+"help.text"
+msgid "No"
+msgstr ""
+
+#. bcd7a
+#: sf_popupmenu.xhp
+msgctxt ""
+"sf_popupmenu.xhp\n"
+"par_id441600788076826\n"
+"help.text"
+msgid "Character or string that defines how menu items are nested. The default character is \">\"."
 msgstr ""
 
 #. drBFS
@@ -19870,13 +20788,13 @@ msgctxt ""
 msgid "Using icons"
 msgstr ""
 
-#. ddHxQ
+#. UKLV5
 #: sf_popupmenu.xhp
 msgctxt ""
 "sf_popupmenu.xhp\n"
 "par_id981636723485402\n"
 "help.text"
-msgid "Items in the popup menu can have icons, which are specified as arguments in the <literal>AddCheckBox</literal>, <literal>AddItem</literal> and <literal>AddRadioButton</literal> methods."
+msgid "Items in the menu can have icons, which are specified as arguments in the <literal>AddCheckBox</literal>, <literal>AddItem</literal> and <literal>AddRadioButton</literal> methods."
 msgstr ""
 
 #. TLDpD
@@ -20050,13 +20968,13 @@ msgctxt ""
 msgid "myPopup.AddItem(\"Item A\", Tooltip := \"A descriptive message\")"
 msgstr ""
 
-#. 4euLD
+#. VDLFK
 #: sf_popupmenu.xhp
 msgctxt ""
 "sf_popupmenu.xhp\n"
 "pyc_id321621534170554\n"
 "help.text"
-msgid "myPopup.AddItem(\"Item A\", tooltip = \"A descriptive message\")"
+msgid "my_popup.AddItem(\"Item A\", tooltip = \"A descriptive message\")"
 msgstr ""
 
 #. U2vBb
@@ -20122,13 +21040,13 @@ msgctxt ""
 msgid "Displays the popup menu and waits for a user action. Returns the item clicked by the user."
 msgstr ""
 
-#. GruyE
+#. qwwKx
 #: sf_popupmenu.xhp
 msgctxt ""
 "sf_popupmenu.xhp\n"
 "par_id101636726249788\n"
 "help.text"
-msgid "If the user clicks outside the popup menu ou presses the <keycode>Esc</keycode> key, then no item is selected. In such cases, the returned value depends on the <literal>returnid</literal> parameter. If <literal>returnid = True</literal> and no item is selected, then the value 0 (zero) is returned. Otherwise an empty string \"\" is returned."
+msgid "If the user clicks outside the popup menu or presses the <keycode>Esc</keycode> key, then no item is selected. In such cases, the returned value depends on the <literal>returnid</literal> parameter. If <literal>returnid = True</literal> and no item is selected, then the value 0 (zero) is returned. Otherwise an empty string \"\" is returned."
 msgstr ""
 
 #. EFriZ
@@ -21596,6 +22514,15 @@ msgctxt ""
 "par_id461584978880380\n"
 "help.text"
 msgid "You can use the properties above to identify or insert the corresponding characters inside strings. For example, the Linefeed can be replaced by <literal>SF_String.sfLF</literal>."
+msgstr ""
+
+#. DDXd3
+#: sf_string.xhp
+msgctxt ""
+"sf_string.xhp\n"
+"par_id891611613601554\n"
+"help.text"
+msgid "List of Methods in the String Service"
 msgstr ""
 
 #. TFfR3
@@ -25205,15 +26132,6 @@ msgctxt ""
 "par_id351591014177269\n"
 "help.text"
 msgid "Some methods are generic for all types of documents and are inherited from the <literal>SF_Document</literal> module, whereas other methods that are specific for Writer documents are defined in the <literal>SF_Writer</literal> module."
-msgstr ""
-
-#. ojZFF
-#: sf_writer.xhp
-msgctxt ""
-"sf_writer.xhp\n"
-"par_id591589189364267\n"
-"help.text"
-msgid "The <literal>SF_Writer</literal> module is focused on:"
 msgstr ""
 
 #. LTpqJ
