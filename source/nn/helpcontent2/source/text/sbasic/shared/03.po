@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2022-01-31 18:19+0100\n"
-"PO-Revision-Date: 2022-01-26 20:51+0000\n"
+"POT-Creation-Date: 2022-02-18 12:17+0100\n"
+"PO-Revision-Date: 2022-02-05 14:39+0000\n"
 "Last-Translator: Kolbjørn Stuestøl <kolbjoern@stuestoel.no>\n"
 "Language-Team: Norwegian Nynorsk <https://translations.documentfoundation.org/projects/libo_help-master/textsbasicshared03/nn/>\n"
 "Language: nn\n"
@@ -12460,23 +12460,14 @@ msgctxt ""
 msgid "doc.RemoveMenu(\"My Menu\")"
 msgstr ""
 
-#. Nmwv9
+#. Ab7PE
 #: sf_document.xhp
 msgctxt ""
 "sf_document.xhp\n"
 "par_id991589202413257\n"
 "help.text"
-msgid "Runs a command on a document. The command is executed without arguments."
-msgstr "Køyrer ein kommando på eit dokument. Kommandoen vert utført utan argument."
-
-#. MGb6t
-#: sf_document.xhp
-msgctxt ""
-"sf_document.xhp\n"
-"par_id921611152932311\n"
-"help.text"
-msgid "A few typical commands are: Save, SaveAs, ExportToPDF, SetDocumentProperties, Undo, Copy, Paste, etc."
-msgstr "Nokre få typiske kommandoar er Lagra, Lagra som, EksporterTilPDF, SetDokumenteigenskapar, Angra, Kopier, Sett inn og så vidare."
+msgid "Runs a UNO command on the document window associated with the service instance. A few typical commands are: Save, SaveAs, ExportToPDF, Undo, Copy, Paste, etc."
+msgstr ""
 
 #. qBhYc
 #: sf_document.xhp
@@ -12487,41 +12478,95 @@ msgctxt ""
 msgid "The document itself does not need to be active to be able to run commands."
 msgstr "Dokumentet treng ikkje vera aktivt for å kunna køyra kommandoar."
 
-#. QSiFB
+#. 9FuBU
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
+"par_id921611152932311\n"
+"help.text"
+msgid "Commands can be run with or without arguments. Arguments are not validated before running the command. If the command or its arguments are invalid, then nothing will happen."
+msgstr ""
+
+#. w62Bk
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
+"par_id31644182402479\n"
+"help.text"
+msgid "For a complete list of UNO commands that can be run in %PRODUCTNAME, refer to the Wiki page <link href=\"https://wiki.documentfoundation.org/Development/DispatchCommands\" name=\"Commands_Wiki\">Development/DispatchCommands</link>."
+msgstr ""
+
+#. HBVsV
 #: sf_document.xhp
 msgctxt ""
 "sf_document.xhp\n"
 "par_id401589202413575\n"
 "help.text"
-msgid "<emph>command</emph>: Case-sensitive string containing the command in English. The command itself is not checked for correctness. If nothing happens after the command call, then the command is probably wrong."
-msgstr "<emph>kommando</emph>: Streng, som skil mellom store og små bokstavar, med kommandoen på engelsk. Det vert ikkje kontrollert at strengen er korrekt. Viss det ikkje skjer noko etter oppkallet med kommandoen, er ham sannsynlegvis feil."
+msgid "<emph>command</emph>: Case-sensitive string containing the UNO command name. The inclusion of the prefix \".uno:\" in the command is optional. The command itself is not checked for correctness. If nothing happens after the command call, then the command is probably wrong."
+msgstr ""
 
-#. wQF35
+#. xi32t
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
+"par_id521644182774710\n"
+"help.text"
+msgid "<emph>args</emph>: For each argument to be passed to the command, specify a pair containing the argument name and value."
+msgstr ""
+
+#. MqEx7
 #: sf_document.xhp
 msgctxt ""
 "sf_document.xhp\n"
 "par_id721611153068137\n"
 "help.text"
-msgid "The following example runs the \"SelectData\" command in a Calc sheet named \"MyFile.ods\", which will result in the selection of the data area based on the currently selected cell."
-msgstr "Eksempelet nedanfor køyrer «SelectData»-kommandoen i eit Calc-ark kalla «MiFil.ods», som vil resultere i val av dataområdet basert på den merkte cella."
+msgid "The following example runs the <literal>SelectData</literal> command in a Calc file named \"MyFile.ods\", which will result in the selection of the data area based on the currently selected cell. Note that this command does not require any arguments."
+msgstr ""
 
-#. avaEg
+#. GGDgF
 #: sf_document.xhp
 msgctxt ""
 "sf_document.xhp\n"
-"par_id751611153375195\n"
+"par_id371644184276886\n"
 "help.text"
-msgid "The example above actually runs the UNO command <literal>.uno:SelectData</literal>. Hence, to use the <literal>RunCommand</literal> method it is necessary to remove the \".uno:\" substring."
+msgid "Below is an example that runs the UNO command <literal>ReplaceAll</literal> and passes values for its arguments <literal>SearchString</literal> and <literal>ReplaceString</literal>. Running this command will replace all occurrence of the string \"abc\" by \"ABC\" in the current sheet."
 msgstr ""
 
-#. JRHRS
+#. Z4Egf
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
+"bas_id631644184414955\n"
+"help.text"
+msgid "' Arguments passed to the command:"
+msgstr ""
+
+#. H5eQ9
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
+"par_id41644184549167\n"
+"help.text"
+msgid "Note that calling the command <literal>ReplaceAll</literal> without arguments will open the <menuitem>Find and Replace</menuitem> dialog."
+msgstr ""
+
+#. Cp7Wk
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
+"par_id811644243228448\n"
+"help.text"
+msgid "In Python it is also possible to call <literal>RunCommand</literal> using keyword arguments:"
+msgstr ""
+
+#. DEEhz
 #: sf_document.xhp
 msgctxt ""
 "sf_document.xhp\n"
 "par_id191611153511038\n"
 "help.text"
-msgid "Each LibreOffice component has its own set of commands available. One easy way to learn commands is going to <emph>Tools > Customize > Keyboard</emph>. When you position your mouse over a function in the <emph>Function</emph> list, a tooltip will appear with the corresponding UNO command."
-msgstr "Kvar LibreOffice-komponent har tilgang til sitt eige kommando-sett. Ein grei måte å læra kommandoane på, er å gå til <emph>Verktøy → Tilpass → Tastatur</emph>. Når du set musa over ein funksjon på lista <emph>Funksjon</emph>, vert det vist eit verktøytips saman med den tilsvarande UNO-kommandoen."
+msgid "Each %PRODUCTNAME component has its own set of commands available. One easy way to learn commands is going to <emph>Tools > Customize > Keyboard</emph>. When you position your mouse over a function in the <emph>Function</emph> list, a tooltip will appear with the corresponding UNO command."
+msgstr ""
 
 #. enSv9
 #: sf_document.xhp
@@ -14332,6 +14377,51 @@ msgctxt ""
 msgid "In the examples below only folders and their contents are deleted. Files in the parent folder \"C:\\Temp\" are not deleted."
 msgstr ""
 
+#. gSG9s
+#: sf_filesystem.xhp
+msgctxt ""
+"sf_filesystem.xhp\n"
+"par_id11584882015025\n"
+"help.text"
+msgid "Returns a string containing the folder where the specified extension package is installed."
+msgstr ""
+
+#. xuDgD
+#: sf_filesystem.xhp
+msgctxt ""
+"sf_filesystem.xhp\n"
+"par_id21612999775311\n"
+"help.text"
+msgid "The current value of the property <literal>SF_FileSystem.FileNaming</literal> is used to determine the notation of the returned string."
+msgstr ""
+
+#. jWSSt
+#: sf_filesystem.xhp
+msgctxt ""
+"sf_filesystem.xhp\n"
+"par_id891644442917193\n"
+"help.text"
+msgid "Use the property <link href=\"text/sbasic/shared/03/sf_platform.xhp#hd_id711600788076834\" name=\"Extensions_link\"><literal>Extensions</literal></link> from the <literal>Platform</literal> service to get string array with the IDs of all installed extensions."
+msgstr ""
+
+#. w9vDF
+#: sf_filesystem.xhp
+msgctxt ""
+"sf_filesystem.xhp\n"
+"par_id451584882542121\n"
+"help.text"
+msgid "<emph>extension</emph>: A string value with the ID of the extension. If the extension is not installed, an exception is raised."
+msgstr ""
+
+#. YhQmv
+#: sf_filesystem.xhp
+msgctxt ""
+"sf_filesystem.xhp\n"
+"par_id651626217313369\n"
+"help.text"
+msgid "The examples below in Basic and Python return the folder where the APSO extension is installed."
+msgstr ""
+
 #. ZbyLn
 #: sf_filesystem.xhp
 msgctxt ""
@@ -15392,7 +15482,7 @@ msgctxt ""
 "pyc_id511622808538351\n"
 "help.text"
 msgid "#  Or, alternatively, to access the form by its index ..."
-msgstr ""
+msgstr "#  eller alternativt for å få tilgang til skjemaet med indeksen for det …"
 
 #. QFFzk
 #: sf_form.xhp
@@ -15401,7 +15491,7 @@ msgctxt ""
 "hd_id211618180379064\n"
 "help.text"
 msgid "In Form events"
-msgstr ""
+msgstr "I skjemahendingar"
 
 #. WBzCD
 #: sf_form.xhp
@@ -15410,7 +15500,7 @@ msgctxt ""
 "par_id421616768529754\n"
 "help.text"
 msgid "To invoke the <literal>Form</literal> service when a form event takes place:"
-msgstr ""
+msgstr "For å kalla opp tenesta <literal>Form</literal> når ei hending finn stad:"
 
 #. k2fKf
 #: sf_form.xhp
@@ -15419,7 +15509,7 @@ msgctxt ""
 "par_id721623150543016\n"
 "help.text"
 msgid "It is recommended to free resources after use of the Form service."
-msgstr ""
+msgstr "Det vert tilrådd å frigjera resursar etter å ha brukt tenesta «Form»."
 
 #. pF9UQ
 #: sf_form.xhp
@@ -15428,7 +15518,7 @@ msgctxt ""
 "par_id221623150547406\n"
 "help.text"
 msgid "This operation is done implicitly when a form document is closed with the <literal>CloseFormDocument()</literal> method described below."
-msgstr ""
+msgstr "Denne handlinga vert utført utan vilkår når eit skjemadokument vert lukka med metoden <literal>CloseFormDocument()</literal> forklart nedanfor."
 
 #. GueeT
 #: sf_form.xhp
@@ -15437,7 +15527,7 @@ msgctxt ""
 "hd_id651583668365757\n"
 "help.text"
 msgid "Properties"
-msgstr ""
+msgstr "Eigenskapar"
 
 #. 9LaxS
 #: sf_form.xhp
@@ -15446,7 +15536,7 @@ msgctxt ""
 "par_id871583668386455\n"
 "help.text"
 msgid "Name"
-msgstr ""
+msgstr "Namn"
 
 #. SpGw6
 #: sf_form.xhp
@@ -15464,7 +15554,7 @@ msgctxt ""
 "par_id271583668474014\n"
 "help.text"
 msgid "Type"
-msgstr ""
+msgstr "Type"
 
 #. ekeZU
 #: sf_form.xhp
@@ -15482,7 +15572,7 @@ msgctxt ""
 "par_id371583668519172\n"
 "help.text"
 msgid "No"
-msgstr ""
+msgstr "Nei"
 
 #. jJ2dL
 #: sf_form.xhp
@@ -15491,7 +15581,7 @@ msgctxt ""
 "par_id771583668386455\n"
 "help.text"
 msgid "Specifies if the form allows to delete records."
-msgstr ""
+msgstr "Spesifiserer om skjemaet tillet at postar vert sletta."
 
 #. DBxgx
 #: sf_form.xhp
@@ -15500,7 +15590,7 @@ msgctxt ""
 "par_id541583839708548\n"
 "help.text"
 msgid "No"
-msgstr ""
+msgstr "Nei"
 
 #. j5J3C
 #: sf_form.xhp
@@ -15509,7 +15599,7 @@ msgctxt ""
 "par_id731583839708412\n"
 "help.text"
 msgid "Specifies if the form allows to add records."
-msgstr ""
+msgstr "Spesifiserer om skjemaet tillet at det vert lagt til postar."
 
 #. FCFEk
 #: sf_form.xhp
@@ -15518,7 +15608,7 @@ msgctxt ""
 "par_id761584027709516\n"
 "help.text"
 msgid "No"
-msgstr ""
+msgstr "Nei"
 
 #. 8qCAE
 #: sf_form.xhp
@@ -15527,7 +15617,7 @@ msgctxt ""
 "par_id971584027709752\n"
 "help.text"
 msgid "Specifies if the form allows to update records."
-msgstr ""
+msgstr "Spesifiserer om skjemaet tillet at postar vert oppdaterte."
 
 #. VxAL4
 #: sf_form.xhp
@@ -15536,7 +15626,7 @@ msgctxt ""
 "par_id31583839767743\n"
 "help.text"
 msgid "Yes"
-msgstr ""
+msgstr "Ja"
 
 #. CRA7v
 #: sf_form.xhp
@@ -15545,7 +15635,7 @@ msgctxt ""
 "par_id111583839767195\n"
 "help.text"
 msgid "Specifies the hierarchical name of the Base Form containing the actual form."
-msgstr ""
+msgstr "Spesifiserer det hierarkiske namnet på Base-formularet som inneheld det aktuelle skjemaet."
 
 #. FehA2
 #: sf_form.xhp
@@ -15554,7 +15644,7 @@ msgctxt ""
 "par_id771583839920487\n"
 "help.text"
 msgid "No"
-msgstr ""
+msgstr "Nei"
 
 #. V8tZX
 #: sf_form.xhp
@@ -15563,7 +15653,7 @@ msgctxt ""
 "par_id451583839920858\n"
 "help.text"
 msgid "Specifies uniquely the current record of the form's underlying table, query or SQL statement."
-msgstr ""
+msgstr "Spesifiserer eintydig den aktuelle posten i skjemaet sin underliggjande tabell, spørjing eller SQL-uttrykk."
 
 #. 3jDxi
 #: sf_form.xhp
@@ -15572,7 +15662,7 @@ msgctxt ""
 "par_id571588333908716\n"
 "help.text"
 msgid "No"
-msgstr ""
+msgstr "Nei"
 
 #. 7NUo8
 #: sf_form.xhp
@@ -15581,7 +15671,7 @@ msgctxt ""
 "par_id721588333908708\n"
 "help.text"
 msgid "Identifies the current record in the dataset being viewed on a form. If the row number is positive, the cursor moves to the given row number with respect to the beginning of the result set. Row count starts at 1. If the given row number is negative, the cursor moves to an absolute row position with respect to the end of the result set. Row -1 refers to the last row in the result set."
-msgstr ""
+msgstr "Identifiserer den gjeldande posten i datasettet som vert vist i eit skjema. Viss radnummeret er positivt,vert markøren flytt til det gjevne radnummeret i forhold til byrjinga av resultatsettet. Talet på rader byrjar på 1. Viss det gjevne radnummeret er negativt, vert markøren flytt til ei absolutt radplassering i forhold til slutten av resultatsettet. Rad -1 refererer til den siste rada i resultatsettet."
 
 #. FKDA7
 #: sf_form.xhp
@@ -15590,7 +15680,7 @@ msgctxt ""
 "par_id501583774433513\n"
 "help.text"
 msgid "No"
-msgstr ""
+msgstr "Nei"
 
 #. eAsdX
 #: sf_form.xhp
@@ -15599,7 +15689,7 @@ msgctxt ""
 "par_id151598177605296\n"
 "help.text"
 msgid "Specifies a subset of records to be displayed as a <literal>SQL</literal> <literal>WHERE</literal>-clause without the <literal>WHERE</literal> keyword."
-msgstr ""
+msgstr "Spesifiserer ei delmengd av postar som skal visast som ein <literal>SQL</literal> <literal>WHERE</literal>-setning utan nøkkelordet <literal>WHERE</literal>."
 
 #. uyje5
 #: sf_form.xhp
@@ -15608,7 +15698,7 @@ msgctxt ""
 "par_id271588334016191\n"
 "help.text"
 msgid "Yes"
-msgstr ""
+msgstr "Ja"
 
 #. FQDDW
 #: sf_form.xhp
@@ -15617,7 +15707,7 @@ msgctxt ""
 "par_id251588334016874\n"
 "help.text"
 msgid "Specifies how records in a child subform are linked to records in its parent form."
-msgstr ""
+msgstr "Set korleis postar i eit underliggjande skjema er lenkja til eit overliggjande skjema."
 
 #. DMwPW
 #: sf_form.xhp
@@ -15626,7 +15716,7 @@ msgctxt ""
 "par_id901616774153495\n"
 "help.text"
 msgid "Yes"
-msgstr ""
+msgstr "Ja"
 
 #. 2EiCA
 #: sf_form.xhp
@@ -15635,7 +15725,7 @@ msgctxt ""
 "par_id981616774153723\n"
 "help.text"
 msgid "Specifies how records in a child subform are linked to records in its parent form."
-msgstr ""
+msgstr "Set korleis postar i eit underliggjande skjema er lenkja til eit overliggjande skjema."
 
 #. ppCiD
 #: sf_form.xhp
@@ -15644,7 +15734,7 @@ msgctxt ""
 "par_id501616774304840\n"
 "help.text"
 msgid "Yes"
-msgstr ""
+msgstr "Ja"
 
 #. kPfzG
 #: sf_form.xhp
@@ -15653,7 +15743,7 @@ msgctxt ""
 "par_id461616774304497\n"
 "help.text"
 msgid "The name of the current form."
-msgstr ""
+msgstr "Namnet på det gjeldande skjemaet."
 
 #. vpBCA
 #: sf_form.xhp
@@ -15662,7 +15752,7 @@ msgctxt ""
 "par_id751616774384451\n"
 "help.text"
 msgid "No"
-msgstr ""
+msgstr "Nei"
 
 #. ppErx
 #: sf_form.xhp
@@ -15671,7 +15761,7 @@ msgctxt ""
 "par_id321616774384489\n"
 "help.text"
 msgid "Specifies in which order the records should be displayed as a <literal>SQL</literal> <literal>ORDER BY</literal> clause without the <literal>ORDER BY</literal> keywords."
-msgstr ""
+msgstr "Spesifiserer kva rekkjefølgje postar skal visast som ein <literal>SQL</literal> <literal>ORDER BY</literal>-setning utan nøkkelordet <literal>ORDER BY</literal>."
 
 #. AGC5s
 #: sf_form.xhp
@@ -15680,7 +15770,7 @@ msgctxt ""
 "par_id261616774918923\n"
 "help.text"
 msgid "Yes"
-msgstr ""
+msgstr "Ja"
 
 #. rjCpM
 #: sf_form.xhp
@@ -15689,7 +15779,7 @@ msgctxt ""
 "par_id171616774918881\n"
 "help.text"
 msgid "The parent of the current form. It can be either a <literal>SFDocuments</literal>.<literal>Form</literal> or a <literal>SFDocuments</literal>.<literal>Document</literal> object."
-msgstr ""
+msgstr "Opphavet til det gjeldande skjemaet. Det kan vera eit av objekta <literal>SFDocuments</literal>.<literal>Form</literal> eller <literal>SFDocuments</literal>.<literal>Document</literal>"
 
 #. rLS8r
 #: sf_form.xhp
@@ -15698,7 +15788,7 @@ msgctxt ""
 "par_id501616777650751\n"
 "help.text"
 msgid "No"
-msgstr ""
+msgstr "Nei"
 
 #. USDVC
 #: sf_form.xhp
@@ -15707,7 +15797,7 @@ msgctxt ""
 "par_id91616777650933\n"
 "help.text"
 msgid "Specifies the source of the data, as a table name, a query name or a SQL statement."
-msgstr ""
+msgstr "Gjev datakjelda som eit tabellnamn, eit spørjingsnamn eller eit SQL-yttrykk."
 
 #. rtCsj
 #: sf_form.xhp
@@ -15716,7 +15806,7 @@ msgctxt ""
 "par_id451598177924437\n"
 "help.text"
 msgid "Yes"
-msgstr ""
+msgstr "Ja"
 
 #. GxHLP
 #: sf_form.xhp
@@ -15725,7 +15815,7 @@ msgctxt ""
 "par_id94159817792441\n"
 "help.text"
 msgid "UNO<br/>object"
-msgstr ""
+msgstr "UNO<br/>objekt"
 
 #. VYFDs
 #: sf_form.xhp
@@ -19691,13 +19781,13 @@ msgctxt ""
 msgid "' Runs the Basic script Standard.Module1.MyListener stored in the document"
 msgstr ""
 
-#. zSD5u
+#. 5fxEG
 #: sf_menu.xhp
 msgctxt ""
 "sf_menu.xhp\n"
 "bas_id801643306742620\n"
 "help.text"
-msgid "' Runs the Python script MysListener located in file myScripts.py in the user scripts folder"
+msgid "' Runs the Python script MyListener located in file myScripts.py in the user scripts folder"
 msgstr ""
 
 #. uAbp9
@@ -20231,6 +20321,33 @@ msgctxt ""
 msgid "The name of the currently logged user."
 msgstr "Namnet på den gjeldande innlogga brukaren."
 
+#. rCN2h
+#: sf_platform.xhp
+msgctxt ""
+"sf_platform.xhp\n"
+"par_id561633021747014\n"
+"help.text"
+msgid "Yes"
+msgstr ""
+
+#. T2MVx
+#: sf_platform.xhp
+msgctxt ""
+"sf_platform.xhp\n"
+"par_id201633021748566\n"
+"help.text"
+msgid "String array"
+msgstr ""
+
+#. 5Fkqe
+#: sf_platform.xhp
+msgctxt ""
+"sf_platform.xhp\n"
+"par_id831633021749125\n"
+"help.text"
+msgid "Returns a zero-based array of strings containing the internal IDs of all installed extensions."
+msgstr ""
+
 #. 9aGdF
 #: sf_platform.xhp
 msgctxt ""
@@ -20258,6 +20375,24 @@ msgctxt ""
 msgid "Returns a zero-based array of strings containing the names of all available fonts."
 msgstr ""
 
+#. 86VFG
+#: sf_platform.xhp
+msgctxt ""
+"sf_platform.xhp\n"
+"par_id561633021748013\n"
+"help.text"
+msgid "Yes"
+msgstr ""
+
+#. 9qBZR
+#: sf_platform.xhp
+msgctxt ""
+"sf_platform.xhp\n"
+"par_id831633021749297\n"
+"help.text"
+msgid "Returns the locale used for numbers and dates as a string in the format \"la-CO\" (language-COUNTRY)."
+msgstr ""
+
 #. Av85C
 #: sf_platform.xhp
 msgctxt ""
@@ -20267,22 +20402,13 @@ msgctxt ""
 msgid "Yes"
 msgstr ""
 
-#. DANn2
+#. sYrDn
 #: sf_platform.xhp
 msgctxt ""
 "sf_platform.xhp\n"
 "par_id831633021749018\n"
 "help.text"
-msgid "Returns the operating system locale as a string in the format language-COUNTRY (la-CO)."
-msgstr ""
-
-#. RuAKC
-#: sf_platform.xhp
-msgctxt ""
-"sf_platform.xhp\n"
-"par_id831633021745548\n"
-"help.text"
-msgid "Examples: \"en-US\", \"pt-BR\", \"fr-BE\"."
+msgid "Returns the locale of the operating system as a string in the format \"la-CO\" (language-COUNTRY). This is equivalent to the <literal>SystemLocale</literal> property."
 msgstr ""
 
 #. Dt7J5
@@ -20303,6 +20429,24 @@ msgctxt ""
 msgid "The machine type. Examples are: '<literal>i386</literal>' or '<literal>x86_64</literal>'."
 msgstr "Maskintype. Eksempel er: «<literal>i386</literal>» eller «<literal>x86_64</literal>»."
 
+#. LbQr2
+#: sf_platform.xhp
+msgctxt ""
+"sf_platform.xhp\n"
+"par_id561633021706513\n"
+"help.text"
+msgid "Yes"
+msgstr ""
+
+#. ZZcSc
+#: sf_platform.xhp
+msgctxt ""
+"sf_platform.xhp\n"
+"par_id831633021741117\n"
+"help.text"
+msgid "Returns the locale of the user interface as a string in the format \"la-CO\" (language-COUNTRY)."
+msgstr ""
+
 #. tqwyD
 #: sf_platform.xhp
 msgctxt ""
@@ -20321,14 +20465,14 @@ msgctxt ""
 msgid "The actual %PRODUCTNAME version expressed as<br/>' <literal>%PRODUCTNAME w.x.y.z (The Document Foundation)</literal>'."
 msgstr "Den aktuelle %PRODUCTNAME-versjonen, uttrykt som <br/>« <literal>%PRODUCTNAME w.x.y.z (The Document Foundation)</literal>»."
 
-#. 4bpcJ
+#. 2q29b
 #: sf_platform.xhp
 msgctxt ""
 "sf_platform.xhp\n"
 "par_id621614902220807\n"
 "help.text"
-msgid "Example: '<literal>LibreOffice 7.1.1.2 (The Document Foundation, Debian and Ubuntu)</literal>'"
-msgstr "Eksempel: «<literal>LibreOffice 7.1.1.2 (The Document Foundation, Debian og Ubuntu)</literal>»"
+msgid "Example: '<literal>LibreOffice 7.4.1.2 (The Document Foundation, Debian and Ubuntu)</literal>'"
+msgstr ""
 
 #. 7WDer
 #: sf_platform.xhp
@@ -20490,6 +20634,24 @@ msgctxt ""
 "par_id661300789527994\n"
 "help.text"
 msgid "Returns the version of the Python interpreter being used as a string in the format \"Python major.minor.patchlevel\" (ex: \"Python 3.9.7\")."
+msgstr ""
+
+#. Ad9Cw
+#: sf_platform.xhp
+msgctxt ""
+"sf_platform.xhp\n"
+"par_id561633021708547\n"
+"help.text"
+msgid "Yes"
+msgstr ""
+
+#. Aue6E
+#: sf_platform.xhp
+msgctxt ""
+"sf_platform.xhp\n"
+"par_id831633021741336\n"
+"help.text"
+msgid "Returns the locale of the operating system as a string in the format \"la-CO\" (language-COUNTRY). This is equivalent to the <literal>Locale</literal> property."
 msgstr ""
 
 #. FJs9t
@@ -24650,6 +24812,24 @@ msgctxt ""
 msgid "'Opens the text file with the names to be read"
 msgstr "' Opnar tekstfila med dei namna som skal lesast"
 
+#. rDCSD
+#: sf_textstream.xhp
+msgctxt ""
+"sf_textstream.xhp\n"
+"bas_id711613595642109\n"
+"help.text"
+msgid "'Reads all the contents in the input file as a single string"
+msgstr ""
+
+#. 6w73J
+#: sf_textstream.xhp
+msgctxt ""
+"sf_textstream.xhp\n"
+"bas_id961613595643093\n"
+"help.text"
+msgid "'Splits the string into an array"
+msgstr ""
+
 #. 7Fq9E
 #: sf_textstream.xhp
 msgctxt ""
@@ -24893,6 +25073,15 @@ msgctxt ""
 msgid "The example below creates a <literal>Timer</literal> object named <literal>myTimer</literal> and starts it immediately."
 msgstr "Eksempelet nedanfor lagar eit <literal>Timer</literal>-objekt kalla <literal>myTimer</literal> og startar det straks."
 
+#. WMZog
+#: sf_timer.xhp
+msgctxt ""
+"sf_timer.xhp\n"
+"bas_id681582733781715\n"
+"help.text"
+msgid "'The timer starts immediately when the second argument = True, default = False"
+msgstr ""
+
 #. CnZqc
 #: sf_timer.xhp
 msgctxt ""
@@ -25036,6 +25225,15 @@ msgctxt ""
 "help.text"
 msgid "The actual time elapsed since start or between start and stop (including suspensions and running time)"
 msgstr "Den faktiske tida som har gått sidan start, eller mellom start og stopp (medrekna pausar og løpande tid)"
+
+#. a63gW
+#: sf_timer.xhp
+msgctxt ""
+"sf_timer.xhp\n"
+"par_id9158273378151\n"
+"help.text"
+msgid "Note that the <literal>TotalDuration</literal> property is equivalent to summing the <literal>Duration</literal> and <literal>SuspendDuration</literal> properties."
+msgstr ""
 
 #. Mav4g
 #: sf_timer.xhp
@@ -26000,6 +26198,105 @@ msgctxt ""
 "par_id21620332301809\n"
 "help.text"
 msgid "To resize a window that is not active, first activate it using the <literal>Activate</literal> method."
+msgstr ""
+
+#. mDaA5
+#: sf_ui.xhp
+msgctxt ""
+"sf_ui.xhp\n"
+"par_id991589202413257\n"
+"help.text"
+msgid "Runs a UNO command on the current window. A few typical commands are: Save, SaveAs, ExportToPDF, Undo, Copy, Paste, etc."
+msgstr ""
+
+#. x52HD
+#: sf_ui.xhp
+msgctxt ""
+"sf_ui.xhp\n"
+"par_id921611152932311\n"
+"help.text"
+msgid "Commands can be run with or without arguments. Arguments are not validated before running the command. If the command or its arguments are invalid, then nothing will happen."
+msgstr ""
+
+#. rhYJj
+#: sf_ui.xhp
+msgctxt ""
+"sf_ui.xhp\n"
+"par_id31644182402479\n"
+"help.text"
+msgid "For a complete list of UNO commands that can be run in %PRODUCTNAME, refer to the Wiki page <link href=\"https://wiki.documentfoundation.org/Development/DispatchCommands\" name=\"Commands_Wiki\">Development/DispatchCommands</link>."
+msgstr ""
+
+#. Fkf3T
+#: sf_ui.xhp
+msgctxt ""
+"sf_ui.xhp\n"
+"par_id401589202413575\n"
+"help.text"
+msgid "<emph>command</emph>: Case-sensitive string containing the UNO command name. The inclusion of the prefix \".uno:\" in the command is optional. The command itself is not checked for correctness. If nothing happens after the command call, then the command is probably wrong."
+msgstr ""
+
+#. cZgrF
+#: sf_ui.xhp
+msgctxt ""
+"sf_ui.xhp\n"
+"par_id521644182774710\n"
+"help.text"
+msgid "<emph>args</emph>: For each argument to be passed to the command, specify a pair containing the argument name and value."
+msgstr ""
+
+#. t3CjC
+#: sf_ui.xhp
+msgctxt ""
+"sf_ui.xhp\n"
+"par_id721611153068137\n"
+"help.text"
+msgid "The following example runs the <literal>.uno:About</literal> command in the current window."
+msgstr ""
+
+#. cFYc9
+#: sf_ui.xhp
+msgctxt ""
+"sf_ui.xhp\n"
+"par_id371644184276886\n"
+"help.text"
+msgid "Below is an example that runs the UNO command <literal>.uno:BasicIDEAppear</literal> and passes the arguments required to open the Basic IDE at a specific line of a module."
+msgstr ""
+
+#. fTXvL
+#: sf_ui.xhp
+msgctxt ""
+"sf_ui.xhp\n"
+"bas_id631644184414955\n"
+"help.text"
+msgid "' Arguments passed to the command:"
+msgstr ""
+
+#. cyWLC
+#: sf_ui.xhp
+msgctxt ""
+"sf_ui.xhp\n"
+"par_id41644184549167\n"
+"help.text"
+msgid "Note that calling the command <literal>BasicIDEAppear</literal> without arguments will simply open the <menuitem>Basic IDE</menuitem>."
+msgstr ""
+
+#. BKNap
+#: sf_ui.xhp
+msgctxt ""
+"sf_ui.xhp\n"
+"par_id311644243516674\n"
+"help.text"
+msgid "In Python it is also possible to call <literal>RunCommand</literal> using keyword arguments:"
+msgstr ""
+
+#. khKSW
+#: sf_ui.xhp
+msgctxt ""
+"sf_ui.xhp\n"
+"par_id191611153511038\n"
+"help.text"
+msgid "Each %PRODUCTNAME component has its own set of commands available. One easy way to learn commands is going to <emph>Tools > Customize > Keyboard</emph>. When you position your mouse over a function in the <emph>Function</emph> list, a tooltip will appear with the corresponding UNO command."
 msgstr ""
 
 #. NnBWM

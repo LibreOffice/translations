@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2022-01-31 18:19+0100\n"
-"PO-Revision-Date: 2022-01-18 12:38+0000\n"
+"POT-Creation-Date: 2022-02-18 12:17+0100\n"
+"PO-Revision-Date: 2022-02-18 11:44+0000\n"
 "Last-Translator: SteenRønnow <steen.roennow@mail.dk>\n"
 "Language-Team: Danish <https://translations.documentfoundation.org/projects/libo_help-master/textsbasicshared03/da/>\n"
 "Language: da\n"
@@ -1733,7 +1733,7 @@ msgctxt ""
 "par_id881626980658900\n"
 "help.text"
 msgid "<input>Fred,1998/05/04,\"Rue Albert Einstein, 113A\",Carcassonne</input>"
-msgstr ""
+msgstr "<input>Frede,04/05/1998,\"Albert Einsteins vej 113A\",Carcassonne</input>"
 
 #. xNCNA
 #: sf_array.xhp
@@ -12246,7 +12246,7 @@ msgctxt ""
 "par_id361589200129686\n"
 "help.text"
 msgid "<emph>before</emph>: The name (as a string) or position (as an integer starting at 1) of an existing menu before which the new menu will be placed. If no value is defined for this argument, the menu will be created at the last position in the menubar."
-msgstr ""
+msgstr "<emph>before</emph>: Navnet (som en streng) eller positionen (som et heltal startende med 1) på en eksisterende menu, som den nye menu placeres foran. Hvis der ikke er defineret nogen værdi for dette argument, oprettes menuen på den sidste plads på menulinjen."
 
 #. LX4b9
 #: sf_document.xhp
@@ -12264,7 +12264,7 @@ msgctxt ""
 "bas_id751622827903865\n"
 "help.text"
 msgid "Set oMenu = oDoc.CreateMenu(\"My Menu\")"
-msgstr ""
+msgstr "Set oMenu = oDoc.CreateMenu(\"Min Menu\")"
 
 #. iDefE
 #: sf_document.xhp
@@ -12482,23 +12482,14 @@ msgctxt ""
 msgid "doc.RemoveMenu(\"My Menu\")"
 msgstr ""
 
-#. Nmwv9
+#. Ab7PE
 #: sf_document.xhp
 msgctxt ""
 "sf_document.xhp\n"
 "par_id991589202413257\n"
 "help.text"
-msgid "Runs a command on a document. The command is executed without arguments."
-msgstr "Kører en kommando på et dokument. Kommandoen udføres uden argumenter."
-
-#. MGb6t
-#: sf_document.xhp
-msgctxt ""
-"sf_document.xhp\n"
-"par_id921611152932311\n"
-"help.text"
-msgid "A few typical commands are: Save, SaveAs, ExportToPDF, SetDocumentProperties, Undo, Copy, Paste, etc."
-msgstr "Nogle få typiske kommandoer er: Gem, GemSom, EksporterTilPDF, SætDokumentEgenskaber, Fortryd, Kopier, Indsæt og så videre."
+msgid "Runs a UNO command on the document window associated with the service instance. A few typical commands are: Save, SaveAs, ExportToPDF, Undo, Copy, Paste, etc."
+msgstr ""
 
 #. qBhYc
 #: sf_document.xhp
@@ -12509,41 +12500,95 @@ msgctxt ""
 msgid "The document itself does not need to be active to be able to run commands."
 msgstr "Dokumentet selv behøver ikke at være aktivt for at kunne køre kommandoer."
 
-#. QSiFB
+#. 9FuBU
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
+"par_id921611152932311\n"
+"help.text"
+msgid "Commands can be run with or without arguments. Arguments are not validated before running the command. If the command or its arguments are invalid, then nothing will happen."
+msgstr ""
+
+#. w62Bk
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
+"par_id31644182402479\n"
+"help.text"
+msgid "For a complete list of UNO commands that can be run in %PRODUCTNAME, refer to the Wiki page <link href=\"https://wiki.documentfoundation.org/Development/DispatchCommands\" name=\"Commands_Wiki\">Development/DispatchCommands</link>."
+msgstr ""
+
+#. HBVsV
 #: sf_document.xhp
 msgctxt ""
 "sf_document.xhp\n"
 "par_id401589202413575\n"
 "help.text"
-msgid "<emph>command</emph>: Case-sensitive string containing the command in English. The command itself is not checked for correctness. If nothing happens after the command call, then the command is probably wrong."
-msgstr "<emph>kommando</emph>: Streng med Stort-og-småt, der indeholder kommandoen på engelsk. Kommandoen selv tjekkes ikke for korrekthed. Hvis der ikke sker noget efter kommando-kaldet, er kommando sandsynligvis forkert."
+msgid "<emph>command</emph>: Case-sensitive string containing the UNO command name. The inclusion of the prefix \".uno:\" in the command is optional. The command itself is not checked for correctness. If nothing happens after the command call, then the command is probably wrong."
+msgstr ""
 
-#. wQF35
+#. xi32t
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
+"par_id521644182774710\n"
+"help.text"
+msgid "<emph>args</emph>: For each argument to be passed to the command, specify a pair containing the argument name and value."
+msgstr ""
+
+#. MqEx7
 #: sf_document.xhp
 msgctxt ""
 "sf_document.xhp\n"
 "par_id721611153068137\n"
 "help.text"
-msgid "The following example runs the \"SelectData\" command in a Calc sheet named \"MyFile.ods\", which will result in the selection of the data area based on the currently selected cell."
-msgstr "Det følgende eksempel kører kommandoen \"SelectData\" i et Calc-regneark ved navn \"MinFil.ods\", som resulterer i markering af databaseområdet, baseret på den aktuelt valgte celle."
+msgid "The following example runs the <literal>SelectData</literal> command in a Calc file named \"MyFile.ods\", which will result in the selection of the data area based on the currently selected cell. Note that this command does not require any arguments."
+msgstr ""
 
-#. avaEg
+#. GGDgF
 #: sf_document.xhp
 msgctxt ""
 "sf_document.xhp\n"
-"par_id751611153375195\n"
+"par_id371644184276886\n"
 "help.text"
-msgid "The example above actually runs the UNO command <literal>.uno:SelectData</literal>. Hence, to use the <literal>RunCommand</literal> method it is necessary to remove the \".uno:\" substring."
-msgstr "Eksemplet herover kører faktisk UNO-kommandoen <literal>.uno:SelectData</literal>. Derfor er det nødvendigt at bruge metoden <literal>RunCommand</literal> (kør_kommando) til at fjerne delstrengen \".uno:\"."
+msgid "Below is an example that runs the UNO command <literal>ReplaceAll</literal> and passes values for its arguments <literal>SearchString</literal> and <literal>ReplaceString</literal>. Running this command will replace all occurrence of the string \"abc\" by \"ABC\" in the current sheet."
+msgstr ""
 
-#. JRHRS
+#. Z4Egf
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
+"bas_id631644184414955\n"
+"help.text"
+msgid "' Arguments passed to the command:"
+msgstr ""
+
+#. H5eQ9
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
+"par_id41644184549167\n"
+"help.text"
+msgid "Note that calling the command <literal>ReplaceAll</literal> without arguments will open the <menuitem>Find and Replace</menuitem> dialog."
+msgstr ""
+
+#. Cp7Wk
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
+"par_id811644243228448\n"
+"help.text"
+msgid "In Python it is also possible to call <literal>RunCommand</literal> using keyword arguments:"
+msgstr ""
+
+#. DEEhz
 #: sf_document.xhp
 msgctxt ""
 "sf_document.xhp\n"
 "par_id191611153511038\n"
 "help.text"
-msgid "Each LibreOffice component has its own set of commands available. One easy way to learn commands is going to <emph>Tools > Customize > Keyboard</emph>. When you position your mouse over a function in the <emph>Function</emph> list, a tooltip will appear with the corresponding UNO command."
-msgstr "Hvert LibreOffice-program har afgang til sit eget kommando-sæt. En nem måde at lære kommandoerne på er at gå til <emph>Funktioner ▸ Tilpas ▸ Tastatur</emph>. Når du placerer musen over en funktion på listen <emph>Funktion</emph>, vises et værktøjstip sammen med den tilsvarende UNO-kommando."
+msgid "Each %PRODUCTNAME component has its own set of commands available. One easy way to learn commands is going to <emph>Tools > Customize > Keyboard</emph>. When you position your mouse over a function in the <emph>Function</emph> list, a tooltip will appear with the corresponding UNO command."
+msgstr ""
 
 #. enSv9
 #: sf_document.xhp
@@ -14353,6 +14398,51 @@ msgctxt ""
 "help.text"
 msgid "In the examples below only folders and their contents are deleted. Files in the parent folder \"C:\\Temp\" are not deleted."
 msgstr "I eksemplerne herunder slettes kun mapper og deres indhold. Filer i den overordnede mappe \"C:\\Temp\" slettes ikke."
+
+#. gSG9s
+#: sf_filesystem.xhp
+msgctxt ""
+"sf_filesystem.xhp\n"
+"par_id11584882015025\n"
+"help.text"
+msgid "Returns a string containing the folder where the specified extension package is installed."
+msgstr ""
+
+#. xuDgD
+#: sf_filesystem.xhp
+msgctxt ""
+"sf_filesystem.xhp\n"
+"par_id21612999775311\n"
+"help.text"
+msgid "The current value of the property <literal>SF_FileSystem.FileNaming</literal> is used to determine the notation of the returned string."
+msgstr ""
+
+#. jWSSt
+#: sf_filesystem.xhp
+msgctxt ""
+"sf_filesystem.xhp\n"
+"par_id891644442917193\n"
+"help.text"
+msgid "Use the property <link href=\"text/sbasic/shared/03/sf_platform.xhp#hd_id711600788076834\" name=\"Extensions_link\"><literal>Extensions</literal></link> from the <literal>Platform</literal> service to get string array with the IDs of all installed extensions."
+msgstr ""
+
+#. w9vDF
+#: sf_filesystem.xhp
+msgctxt ""
+"sf_filesystem.xhp\n"
+"par_id451584882542121\n"
+"help.text"
+msgid "<emph>extension</emph>: A string value with the ID of the extension. If the extension is not installed, an exception is raised."
+msgstr ""
+
+#. YhQmv
+#: sf_filesystem.xhp
+msgctxt ""
+"sf_filesystem.xhp\n"
+"par_id651626217313369\n"
+"help.text"
+msgid "The examples below in Basic and Python return the folder where the APSO extension is installed."
+msgstr ""
 
 #. ZbyLn
 #: sf_filesystem.xhp
@@ -19526,7 +19616,7 @@ msgctxt ""
 "par_id49160078807654\n"
 "help.text"
 msgid "No"
-msgstr ""
+msgstr "Nej"
 
 #. LE27e
 #: sf_menu.xhp
@@ -19544,7 +19634,7 @@ msgctxt ""
 "par_id311600788076756\n"
 "help.text"
 msgid "No"
-msgstr ""
+msgstr "Nej"
 
 #. fb3iG
 #: sf_menu.xhp
@@ -19625,7 +19715,7 @@ msgctxt ""
 "par_id821591631203996\n"
 "help.text"
 msgid "<emph>menuitem:</emph> Defines the text to be displayed in the menu. This argument also defines the hierarchy of the item inside the menu by using the submenu character."
-msgstr ""
+msgstr "<emph>menuitem (menuelement):</emph> Definerer teksten, der skal vises i menuen. Dette argument definerer også elementets plads i menuhierarkiet ved hjælp af undermenu-tegnet."
 
 #. SkMmC
 #: sf_menu.xhp
@@ -19643,7 +19733,7 @@ msgctxt ""
 "par_id821591631203133\n"
 "help.text"
 msgid "<emph>status:</emph> Defines whether the item is selected when the menu is created (Default = <literal>False</literal>)."
-msgstr ""
+msgstr "<emph>status:</emph> Definerer, om elementet er valgt, når menuen oprettes (Standard = <literal>False</literal> - falsk)."
 
 #. JPboo
 #: sf_menu.xhp
@@ -19652,7 +19742,7 @@ msgctxt ""
 "par_id11636721653313\n"
 "help.text"
 msgid "<emph>icon:</emph> Path and name of the icon to be displayed without the leading path separator. The actual icon shown depends on the icon set being used."
-msgstr ""
+msgstr "<emph>ikon:</emph> Sti til og navn på ikonet, der skal vises, uden det indledende stiskilletegn. Det faktisk viste ikon afhænger af det anvendte ikonsæt."
 
 #. YzJwB
 #: sf_menu.xhp
@@ -19661,7 +19751,7 @@ msgctxt ""
 "par_id11636721653208\n"
 "help.text"
 msgid "<emph>tooltip:</emph> Text to be displayed as tooltip."
-msgstr ""
+msgstr "<emph>værktøjstip:</emph> Tekst, der skal vises som værktøjstip."
 
 #. 3WPXT
 #: sf_menu.xhp
@@ -19670,7 +19760,7 @@ msgctxt ""
 "par_id11636721653328\n"
 "help.text"
 msgid "<emph>command:</emph> The name of a UNO command without the <literal>.uno:</literal> prefix. If the command name does not exist, nothing happens."
-msgstr ""
+msgstr "<emph>command (kommando):</emph> Navnet på en UNO-kommando uden forstavelsen <literal>.uno:</literal>. Hvis kommandoen ikke findes, sker der intet."
 
 #. LaF26
 #: sf_menu.xhp
@@ -19679,7 +19769,7 @@ msgctxt ""
 "par_id11636721653107\n"
 "help.text"
 msgid "<emph>script:</emph> The URI for a Basic or Python script that will be executed when the item is clicked."
-msgstr ""
+msgstr "<emph>script:</emph> URIen til et Basic eller Python-script, der bliver udført, når der klikkes på elementet."
 
 #. PTXhK
 #: sf_menu.xhp
@@ -19717,13 +19807,13 @@ msgctxt ""
 msgid "' Runs the Basic script Standard.Module1.MyListener stored in the document"
 msgstr ""
 
-#. zSD5u
+#. 5fxEG
 #: sf_menu.xhp
 msgctxt ""
 "sf_menu.xhp\n"
 "bas_id801643306742620\n"
 "help.text"
-msgid "' Runs the Python script MysListener located in file myScripts.py in the user scripts folder"
+msgid "' Runs the Python script MyListener located in file myScripts.py in the user scripts folder"
 msgstr ""
 
 #. uAbp9
@@ -19742,7 +19832,7 @@ msgctxt ""
 "par_id821591631203021\n"
 "help.text"
 msgid "<emph>menuitem:</emph> Defines the text to be displayed in the menu. This argument also defines the hierarchy of the item inside the menu by using the submenu character."
-msgstr ""
+msgstr "<emph>menuitem (menuelement):</emph> Definerer teksten, der skal vises i menuen. Dette argument definerer også elementets plads i menuhierarkiet ved hjælp af undermenu-tegnet."
 
 #. yFQns
 #: sf_menu.xhp
@@ -19751,7 +19841,7 @@ msgctxt ""
 "par_id821591631203026\n"
 "help.text"
 msgid "<emph>name:</emph> String value to be returned when the item is clicked. By default, the last component of the menu hierarchy is used."
-msgstr ""
+msgstr "<emph>navn:</emph> Strengværdi, der skal returneres, når der klikkes på elementet. Som standard bruges det sidste element i menuhierarkiet."
 
 #. DMEeJ
 #: sf_menu.xhp
@@ -19760,7 +19850,7 @@ msgctxt ""
 "par_id11636721652886\n"
 "help.text"
 msgid "<emph>icon:</emph> Path and name of the icon to be displayed without the leading path separator. The actual icon shown depends on the icon set being used."
-msgstr ""
+msgstr "<emph>ikon:</emph> Sti til og navn på ikonet, der skal vises, uden det indledende stiskilletegn. Det faktisk viste ikon afhænger af det anvendte ikonsæt."
 
 #. aZPNP
 #: sf_menu.xhp
@@ -19769,7 +19859,7 @@ msgctxt ""
 "par_id11636721653118\n"
 "help.text"
 msgid "<emph>tooltip:</emph> Text to be displayed as tooltip."
-msgstr ""
+msgstr "<emph>værktøjstip:</emph> Tekst, der skal vises som værktøjstip."
 
 #. 23fax
 #: sf_menu.xhp
@@ -19778,7 +19868,7 @@ msgctxt ""
 "par_id11636721653314\n"
 "help.text"
 msgid "<emph>command:</emph> The name of a UNO command without the <literal>.uno:</literal> prefix. If the command name does not exist, nothing happens."
-msgstr ""
+msgstr "<emph>command (kommando):</emph> Navnet på en UNO-kommando uden forstavelsen <literal>.uno:</literal>. Hvis kommandoen ikke findes, sker der intet."
 
 #. wysyV
 #: sf_menu.xhp
@@ -19787,7 +19877,7 @@ msgctxt ""
 "par_id11636721652057\n"
 "help.text"
 msgid "<emph>script:</emph> The URI for a Basic or Python script that will be executed when the item is clicked."
-msgstr ""
+msgstr "<emph>script:</emph> URIen til et Basic eller Python-script, der bliver udført, når der klikkes på elementet."
 
 #. QYzCL
 #: sf_menu.xhp
@@ -19823,7 +19913,7 @@ msgctxt ""
 "par_id821591631203501\n"
 "help.text"
 msgid "<emph>menuitem:</emph> Defines the text to be displayed in the menu. This argument also defines the hierarchy of the item inside the menu by using the submenu character."
-msgstr ""
+msgstr "<emph>menuitem (menuelement):</emph> Definerer teksten, der skal vises i menuen. Dette argument definerer også elementets plads i menuhierarkiet ved hjælp af undermenu-tegnet."
 
 #. syjtC
 #: sf_menu.xhp
@@ -19832,7 +19922,7 @@ msgctxt ""
 "par_id821591631228716\n"
 "help.text"
 msgid "<emph>name:</emph> String value to be returned when the item is clicked. By default, the last component of the menu hierarchy is used."
-msgstr ""
+msgstr "<emph>navn:</emph> Strengværdi, der skal returneres, når der klikkes på elementet. Som standard bruges det sidste element i menuhierarkiet."
 
 #. 7WBgE
 #: sf_menu.xhp
@@ -19841,7 +19931,7 @@ msgctxt ""
 "par_id821591631203643\n"
 "help.text"
 msgid "<emph>status:</emph> Defines whether the item is selected when the menu is created (Default = <literal>False</literal>)."
-msgstr ""
+msgstr "<emph>status:</emph> Definerer, om elementet er valgt, når menuen oprettes (Standard = <literal>False</literal> - falsk)."
 
 #. 4uxXA
 #: sf_menu.xhp
@@ -19850,7 +19940,7 @@ msgctxt ""
 "par_id11636721653228\n"
 "help.text"
 msgid "<emph>icon:</emph> Path and name of the icon to be displayed without the leading path separator. The actual icon shown depends on the icon set being used."
-msgstr ""
+msgstr "<emph>ikon:</emph> Sti til og navn på ikonet, der skal vises, uden det indledende stiskilletegn. Det faktisk viste ikon afhænger af det anvendte ikonsæt."
 
 #. ZfFDR
 #: sf_menu.xhp
@@ -19859,7 +19949,7 @@ msgctxt ""
 "par_id11636721653114\n"
 "help.text"
 msgid "<emph>tooltip:</emph> Text to be displayed as tooltip."
-msgstr ""
+msgstr "<emph>værktøjstip:</emph> Tekst, der skal vises som værktøjstip."
 
 #. Sx9Bm
 #: sf_menu.xhp
@@ -19868,7 +19958,7 @@ msgctxt ""
 "par_id11636721653447\n"
 "help.text"
 msgid "<emph>command:</emph> The name of a UNO command without the <literal>.uno:</literal> prefix. If the command name does not exist, nothing happens."
-msgstr ""
+msgstr "<emph>command (kommando):</emph> Navnet på en UNO-kommando uden forstavelsen <literal>.uno:</literal>. Hvis kommandoen ikke findes, sker der intet."
 
 #. AEnA6
 #: sf_menu.xhp
@@ -19877,7 +19967,7 @@ msgctxt ""
 "par_id11636721652598\n"
 "help.text"
 msgid "<emph>script:</emph> The URI for a Basic or Python script that will be executed when the item is clicked."
-msgstr ""
+msgstr "<emph>script:</emph> URIen til et Basic eller Python-script, der bliver udført, når der klikkes på elementet."
 
 #. yYNtX
 #: sf_methods.xhp
@@ -20257,6 +20347,33 @@ msgctxt ""
 msgid "The name of the currently logged user."
 msgstr "Navnet på den aktuelt loggede bruger."
 
+#. rCN2h
+#: sf_platform.xhp
+msgctxt ""
+"sf_platform.xhp\n"
+"par_id561633021747014\n"
+"help.text"
+msgid "Yes"
+msgstr ""
+
+#. T2MVx
+#: sf_platform.xhp
+msgctxt ""
+"sf_platform.xhp\n"
+"par_id201633021748566\n"
+"help.text"
+msgid "String array"
+msgstr ""
+
+#. 5Fkqe
+#: sf_platform.xhp
+msgctxt ""
+"sf_platform.xhp\n"
+"par_id831633021749125\n"
+"help.text"
+msgid "Returns a zero-based array of strings containing the internal IDs of all installed extensions."
+msgstr ""
+
 #. 9aGdF
 #: sf_platform.xhp
 msgctxt ""
@@ -20284,6 +20401,24 @@ msgctxt ""
 msgid "Returns a zero-based array of strings containing the names of all available fonts."
 msgstr "Returnerer en nul-baseret matrix af strenge, der indeholder navnene på alle tilgængelige fonte."
 
+#. 86VFG
+#: sf_platform.xhp
+msgctxt ""
+"sf_platform.xhp\n"
+"par_id561633021748013\n"
+"help.text"
+msgid "Yes"
+msgstr ""
+
+#. 9qBZR
+#: sf_platform.xhp
+msgctxt ""
+"sf_platform.xhp\n"
+"par_id831633021749297\n"
+"help.text"
+msgid "Returns the locale used for numbers and dates as a string in the format \"la-CO\" (language-COUNTRY)."
+msgstr ""
+
 #. Av85C
 #: sf_platform.xhp
 msgctxt ""
@@ -20293,23 +20428,14 @@ msgctxt ""
 msgid "Yes"
 msgstr "Yes"
 
-#. DANn2
+#. sYrDn
 #: sf_platform.xhp
 msgctxt ""
 "sf_platform.xhp\n"
 "par_id831633021749018\n"
 "help.text"
-msgid "Returns the operating system locale as a string in the format language-COUNTRY (la-CO)."
-msgstr "Returnerer operativsystemets lokalisering som en streng i formatet language-COUNTRY ( - sprog-LAND: (la-CO); for eksempel: da-DK)."
-
-#. RuAKC
-#: sf_platform.xhp
-msgctxt ""
-"sf_platform.xhp\n"
-"par_id831633021745548\n"
-"help.text"
-msgid "Examples: \"en-US\", \"pt-BR\", \"fr-BE\"."
-msgstr "Eksempler: \"en-US\", \"pt-BR\", \"fr-BE\", \"da-DK\"."
+msgid "Returns the locale of the operating system as a string in the format \"la-CO\" (language-COUNTRY). This is equivalent to the <literal>SystemLocale</literal> property."
+msgstr ""
 
 #. Dt7J5
 #: sf_platform.xhp
@@ -20329,6 +20455,24 @@ msgctxt ""
 msgid "The machine type. Examples are: '<literal>i386</literal>' or '<literal>x86_64</literal>'."
 msgstr "Maskintype. Eksempler er: '<literal>i386</literal>' eller '<literal>x86_64</literal>'."
 
+#. LbQr2
+#: sf_platform.xhp
+msgctxt ""
+"sf_platform.xhp\n"
+"par_id561633021706513\n"
+"help.text"
+msgid "Yes"
+msgstr ""
+
+#. ZZcSc
+#: sf_platform.xhp
+msgctxt ""
+"sf_platform.xhp\n"
+"par_id831633021741117\n"
+"help.text"
+msgid "Returns the locale of the user interface as a string in the format \"la-CO\" (language-COUNTRY)."
+msgstr ""
+
 #. tqwyD
 #: sf_platform.xhp
 msgctxt ""
@@ -20347,14 +20491,14 @@ msgctxt ""
 msgid "The actual %PRODUCTNAME version expressed as<br/>' <literal>%PRODUCTNAME w.x.y.z (The Document Foundation)</literal>'."
 msgstr "Den aktuelle %PRODUCTNAME version, udtrykt som <br/>' <literal>%PRODUCTNAME w.x.y.z (The Document Foundation)</literal>'."
 
-#. 4bpcJ
+#. 2q29b
 #: sf_platform.xhp
 msgctxt ""
 "sf_platform.xhp\n"
 "par_id621614902220807\n"
 "help.text"
-msgid "Example: '<literal>LibreOffice 7.1.1.2 (The Document Foundation, Debian and Ubuntu)</literal>'"
-msgstr "Eksempel: '<literal>LibreOffice 7.1.1.2 (The Document Foundation, Debian og Ubuntu)</literal>'"
+msgid "Example: '<literal>LibreOffice 7.4.1.2 (The Document Foundation, Debian and Ubuntu)</literal>'"
+msgstr ""
 
 #. 7WDer
 #: sf_platform.xhp
@@ -20517,6 +20661,24 @@ msgctxt ""
 "help.text"
 msgid "Returns the version of the Python interpreter being used as a string in the format \"Python major.minor.patchlevel\" (ex: \"Python 3.9.7\")."
 msgstr "Returnerer versionen på den Python-oversætter, der bruges, som en streng i formatet \"Python major.minor.patchlevel\" (fx: \"Python 3.9.7\")."
+
+#. Ad9Cw
+#: sf_platform.xhp
+msgctxt ""
+"sf_platform.xhp\n"
+"par_id561633021708547\n"
+"help.text"
+msgid "Yes"
+msgstr ""
+
+#. Aue6E
+#: sf_platform.xhp
+msgctxt ""
+"sf_platform.xhp\n"
+"par_id831633021741336\n"
+"help.text"
+msgid "Returns the locale of the operating system as a string in the format \"la-CO\" (language-COUNTRY). This is equivalent to the <literal>Locale</literal> property."
+msgstr ""
 
 #. FJs9t
 #: sf_platform.xhp
@@ -20912,7 +21074,7 @@ msgctxt ""
 "par_id821591631203996\n"
 "help.text"
 msgid "<emph>menuitem:</emph> Defines the text to be displayed in the menu. This argument also defines the hierarchy of the item inside the menu by using the submenu character."
-msgstr "<emph>menuelement:</emph> Definerer den tekst, der skal vises i menuen. Dette argument definerer også elementets hierarki i menuen ved hjælp af Undermenu-tegnet."
+msgstr "<emph>menuitem (menuelement):</emph> Definerer teksten, der skal vises i menuen. Dette argument definerer også elementets plads i menuhierarkiet ved hjælp af undermenu-tegnet."
 
 #. riy7p
 #: sf_popupmenu.xhp
@@ -20921,7 +21083,7 @@ msgctxt ""
 "par_id821591631203116\n"
 "help.text"
 msgid "<emph>name:</emph> String value to be returned when the item is clicked. By default, the last component of the menu hierarchy is used."
-msgstr "<emph>navn:</emph> Strengværdi, der skal returneres, når der klikkes på elementet. Som standard bruges den sidste komponent i menu-hierarkiet."
+msgstr "<emph>navn:</emph> Strengværdi, der skal returneres, når der klikkes på elementet. Som standard bruges det sidste element i menuhierarkiet."
 
 #. yxK8E
 #: sf_popupmenu.xhp
@@ -20930,7 +21092,7 @@ msgctxt ""
 "par_id821591631203133\n"
 "help.text"
 msgid "<emph>status:</emph> Defines whether the item is selected when the menu is created (Default = <literal>False</literal>)."
-msgstr "<emph>status:</emph> Definerer, om elementet er markeret, når menuen oprettes (Standard= <literal>False</literal> - falsk)."
+msgstr "<emph>status:</emph> Definerer, om elementet er valgt, når menuen oprettes (Standard = <literal>False</literal> - falsk)."
 
 #. Q4ZNV
 #: sf_popupmenu.xhp
@@ -20939,7 +21101,7 @@ msgctxt ""
 "par_id11636721653313\n"
 "help.text"
 msgid "<emph>icon:</emph> Path and name of the icon to be displayed without the leading path separator. The actual icon shown depends on the icon set being used."
-msgstr "<emph>ikon:</emph> Sti og navn på det ikon, der vises uden det indledende sti-skilletegn. Det faktiske ikon afhænger af det brugte ikonsæt."
+msgstr "<emph>ikon:</emph> Sti til og navn på ikonet, der skal vises, uden det indledende stiskilletegn. Det faktisk viste ikon afhænger af det anvendte ikonsæt."
 
 #. dkqgP
 #: sf_popupmenu.xhp
@@ -20966,7 +21128,7 @@ msgctxt ""
 "par_id821591631203021\n"
 "help.text"
 msgid "<emph>menuitem:</emph> Defines the text to be displayed in the menu. This argument also defines the hierarchy of the item inside the menu by using the submenu character."
-msgstr "<emph>menuelement:</emph> Definerer den tekst, der skal vises i menuen. Dette argument definerer også elementets hierarki i menuen ved at bruge undermenu-tegnet."
+msgstr "<emph>menuitem (menuelement):</emph> Definerer teksten, der skal vises i menuen. Dette argument definerer også elementets plads i menuhierarkiet ved hjælp af undermenu-tegnet."
 
 #. 8eE5y
 #: sf_popupmenu.xhp
@@ -20975,7 +21137,7 @@ msgctxt ""
 "par_id821591631203026\n"
 "help.text"
 msgid "<emph>name:</emph> String value to be returned when the item is clicked. By default, the last component of the menu hierarchy is used."
-msgstr "<emph>navn:</emph> Strengværdi, der skal returneres, når der klikkes på elementet. Som standard bruges det sidste komponent i menuhierarkiet."
+msgstr "<emph>navn:</emph> Strengværdi, der skal returneres, når der klikkes på elementet. Som standard bruges det sidste element i menuhierarkiet."
 
 #. F646F
 #: sf_popupmenu.xhp
@@ -21029,7 +21191,7 @@ msgctxt ""
 "par_id821591631203501\n"
 "help.text"
 msgid "<emph>menuitem:</emph> Defines the text to be displayed in the menu. This argument also defines the hierarchy of the item inside the menu by using the submenu character."
-msgstr "<emph>menuelement:</emph> Definerer den tekst, der skal vises i menuen. Dette argument defineret også elementets hierarki i menuen med undermenu-tegnet."
+msgstr "<emph>menuitem (menuelement):</emph> Definerer teksten, der skal vises i menuen. Dette argument definerer også elementets plads i menuhierarkiet ved hjælp af undermenu-tegnet."
 
 #. 2PuBE
 #: sf_popupmenu.xhp
@@ -21056,7 +21218,7 @@ msgctxt ""
 "par_id11636721653228\n"
 "help.text"
 msgid "<emph>icon:</emph> Path and name of the icon to be displayed without the leading path separator. The actual icon shown depends on the icon set being used."
-msgstr "<emph>ikon:</emph> Stil til og navn på ikonet, der skal vises, uden det indledende sti-skilletegn. Ikonet, der faktisk vises, afhænger af det anvendte ikonsæt."
+msgstr "<emph>ikon:</emph> Sti til og navn på ikonet, der skal vises, uden det indledende stiskilletegn. Det faktisk viste ikon afhænger af det anvendte ikonsæt."
 
 #. cRTRD
 #: sf_popupmenu.xhp
@@ -21065,7 +21227,7 @@ msgctxt ""
 "par_id11636721653114\n"
 "help.text"
 msgid "<emph>tooltip:</emph> Text to be displayed as tooltip."
-msgstr "<emph>værktøjstip:</emph> Teksten, der skal vises som værktøjstip."
+msgstr "<emph>værktøjstip:</emph> Tekst, der skal vises som værktøjstip."
 
 #. nQrD3
 #: sf_popupmenu.xhp
@@ -24676,6 +24838,24 @@ msgctxt ""
 msgid "'Opens the text file with the names to be read"
 msgstr "'Åbner tekstfilen med de navne, der skal læses"
 
+#. rDCSD
+#: sf_textstream.xhp
+msgctxt ""
+"sf_textstream.xhp\n"
+"bas_id711613595642109\n"
+"help.text"
+msgid "'Reads all the contents in the input file as a single string"
+msgstr ""
+
+#. 6w73J
+#: sf_textstream.xhp
+msgctxt ""
+"sf_textstream.xhp\n"
+"bas_id961613595643093\n"
+"help.text"
+msgid "'Splits the string into an array"
+msgstr ""
+
 #. 7Fq9E
 #: sf_textstream.xhp
 msgctxt ""
@@ -24919,6 +25099,15 @@ msgctxt ""
 msgid "The example below creates a <literal>Timer</literal> object named <literal>myTimer</literal> and starts it immediately."
 msgstr "Eksemplet herunder opretter et <literal>Timer</literal> (stopur)-objekt kaldet <literal>myTimer</literal> (mit stopur) og starter det øjeblikkeligt."
 
+#. WMZog
+#: sf_timer.xhp
+msgctxt ""
+"sf_timer.xhp\n"
+"bas_id681582733781715\n"
+"help.text"
+msgid "'The timer starts immediately when the second argument = True, default = False"
+msgstr ""
+
 #. CnZqc
 #: sf_timer.xhp
 msgctxt ""
@@ -25062,6 +25251,15 @@ msgctxt ""
 "help.text"
 msgid "The actual time elapsed since start or between start and stop (including suspensions and running time)"
 msgstr "Den faktiske tid, der er gået efter start eller mellem start og stop (medregnet pauser og løbende tid)"
+
+#. a63gW
+#: sf_timer.xhp
+msgctxt ""
+"sf_timer.xhp\n"
+"par_id9158273378151\n"
+"help.text"
+msgid "Note that the <literal>TotalDuration</literal> property is equivalent to summing the <literal>Duration</literal> and <literal>SuspendDuration</literal> properties."
+msgstr ""
 
 #. Mav4g
 #: sf_timer.xhp
@@ -26027,6 +26225,105 @@ msgctxt ""
 "help.text"
 msgid "To resize a window that is not active, first activate it using the <literal>Activate</literal> method."
 msgstr "For at ændre størrelse på et vindue, der ikke er aktivt, aktiverer du det først med metoden <literal>Activate</literal> (Aktiver)."
+
+#. mDaA5
+#: sf_ui.xhp
+msgctxt ""
+"sf_ui.xhp\n"
+"par_id991589202413257\n"
+"help.text"
+msgid "Runs a UNO command on the current window. A few typical commands are: Save, SaveAs, ExportToPDF, Undo, Copy, Paste, etc."
+msgstr ""
+
+#. x52HD
+#: sf_ui.xhp
+msgctxt ""
+"sf_ui.xhp\n"
+"par_id921611152932311\n"
+"help.text"
+msgid "Commands can be run with or without arguments. Arguments are not validated before running the command. If the command or its arguments are invalid, then nothing will happen."
+msgstr ""
+
+#. rhYJj
+#: sf_ui.xhp
+msgctxt ""
+"sf_ui.xhp\n"
+"par_id31644182402479\n"
+"help.text"
+msgid "For a complete list of UNO commands that can be run in %PRODUCTNAME, refer to the Wiki page <link href=\"https://wiki.documentfoundation.org/Development/DispatchCommands\" name=\"Commands_Wiki\">Development/DispatchCommands</link>."
+msgstr ""
+
+#. Fkf3T
+#: sf_ui.xhp
+msgctxt ""
+"sf_ui.xhp\n"
+"par_id401589202413575\n"
+"help.text"
+msgid "<emph>command</emph>: Case-sensitive string containing the UNO command name. The inclusion of the prefix \".uno:\" in the command is optional. The command itself is not checked for correctness. If nothing happens after the command call, then the command is probably wrong."
+msgstr ""
+
+#. cZgrF
+#: sf_ui.xhp
+msgctxt ""
+"sf_ui.xhp\n"
+"par_id521644182774710\n"
+"help.text"
+msgid "<emph>args</emph>: For each argument to be passed to the command, specify a pair containing the argument name and value."
+msgstr ""
+
+#. t3CjC
+#: sf_ui.xhp
+msgctxt ""
+"sf_ui.xhp\n"
+"par_id721611153068137\n"
+"help.text"
+msgid "The following example runs the <literal>.uno:About</literal> command in the current window."
+msgstr ""
+
+#. cFYc9
+#: sf_ui.xhp
+msgctxt ""
+"sf_ui.xhp\n"
+"par_id371644184276886\n"
+"help.text"
+msgid "Below is an example that runs the UNO command <literal>.uno:BasicIDEAppear</literal> and passes the arguments required to open the Basic IDE at a specific line of a module."
+msgstr ""
+
+#. fTXvL
+#: sf_ui.xhp
+msgctxt ""
+"sf_ui.xhp\n"
+"bas_id631644184414955\n"
+"help.text"
+msgid "' Arguments passed to the command:"
+msgstr ""
+
+#. cyWLC
+#: sf_ui.xhp
+msgctxt ""
+"sf_ui.xhp\n"
+"par_id41644184549167\n"
+"help.text"
+msgid "Note that calling the command <literal>BasicIDEAppear</literal> without arguments will simply open the <menuitem>Basic IDE</menuitem>."
+msgstr ""
+
+#. BKNap
+#: sf_ui.xhp
+msgctxt ""
+"sf_ui.xhp\n"
+"par_id311644243516674\n"
+"help.text"
+msgid "In Python it is also possible to call <literal>RunCommand</literal> using keyword arguments:"
+msgstr ""
+
+#. khKSW
+#: sf_ui.xhp
+msgctxt ""
+"sf_ui.xhp\n"
+"par_id191611153511038\n"
+"help.text"
+msgid "Each %PRODUCTNAME component has its own set of commands available. One easy way to learn commands is going to <emph>Tools > Customize > Keyboard</emph>. When you position your mouse over a function in the <emph>Function</emph> list, a tooltip will appear with the corresponding UNO command."
+msgstr ""
 
 #. NnBWM
 #: sf_ui.xhp
