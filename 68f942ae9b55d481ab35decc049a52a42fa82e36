@@ -16,6 +16,23 @@
       "message": "Change of tranalation strings should be done one Weblate, the translation platform. The changes made on weblate will automatically merged in source code.\n\nhttps://translations.documentfoundation.org/\n\nIn addition, The content in () is an indication of the short cut key on the UI and should not be removed. For instance, msgid \"Cop~y\" is translated as \"复制 (~Y)\"，the Y is correct, it is the short cut to navigate through the menu items rather than the key combination when no menu is activated.\n",
       "revId": "68f942ae9b55d481ab35decc049a52a42fa82e36",
       "serverId": "6622c302-437a-49ad-a91d-55ba7dcf1615"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9c9d517b_ec1872ea",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1002852
+      },
+      "writtenOn": "2022-04-24T09:08:13Z",
+      "side": 1,
+      "message": "These strings are not only used for tooltips.  They are also used in menu entries, like File \u003e Save, where the \"(~S)\" part is useful -- it tells the user to use \"Alt+S\" to access this menu entry.\n\nWhen such English string is used for tooltip, the underline used as visual cue of such shortcuts are removed.  However due to the extra characters in the Chinese translation, the \"(S)\" part remains as an useless and distracting artifact.  I\u0027ve reported [bug 133750](https://bugs.documentfoundation.org/show_bug.cgi?id\u003d133750) about this.\n\nTherefore I disagree the way this patch is taking to fix these artifacts.  It does not solve the root problem, but just papers it over.  It also hurts users that use keyboard shortcuts to access menus.",
+      "revId": "68f942ae9b55d481ab35decc049a52a42fa82e36",
+      "serverId": "6622c302-437a-49ad-a91d-55ba7dcf1615"
     }
   ]
 }
