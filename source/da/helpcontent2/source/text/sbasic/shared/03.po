@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2022-05-04 12:42+0200\n"
-"PO-Revision-Date: 2022-05-03 12:47+0000\n"
+"POT-Creation-Date: 2022-05-25 12:36+0200\n"
+"PO-Revision-Date: 2022-05-22 12:51+0000\n"
 "Last-Translator: SteenRønnow <steen.roennow@mail.dk>\n"
 "Language-Team: Danish <https://translations.documentfoundation.org/projects/libo_help-master/textsbasicshared03/da/>\n"
 "Language: da\n"
@@ -178,6 +178,15 @@ msgctxt ""
 msgid "ScriptForge libraries build up an extensible collection of macro scripting resources for %PRODUCTNAME to be invoked from Basic macros or Python scripts."
 msgstr "Bibliotekerne i ScriptForge opbygger en samling af makroscript-ressourcer, der kan udvides, til brug i %PRODUCTNAME, der skal kaldes fra Basic-makroer eller Python-scripts."
 
+#. fL8KK
+#: lib_ScriptForge.xhp
+msgctxt ""
+"lib_ScriptForge.xhp\n"
+"par_id901528999850603\n"
+"help.text"
+msgid "• Basic macros require to load <literal>ScriptForge</literal> library using the following statement:<br/><literal>GlobalScope.BasicLibraries.loadLibrary(\"ScriptForge\")</literal><br/><br/>• Python scripts require an import from <literal>scriptforge</literal> module:<br/><literal>from scriptforge import CreateScriptService</literal>"
+msgstr ""
+
 #. eotwE
 #: lib_ScriptForge.xhp
 msgctxt ""
@@ -203,7 +212,7 @@ msgctxt ""
 "par_id781606153472028\n"
 "help.text"
 msgid "The described modules and classes are invoked from user scripts as \"Services\". A generic constructor of those services has been designed for that purpose for each language."
-msgstr ""
+msgstr "De beskrevne moduler og klasser kaldes fra brugerscripts som \"Tjenester\". Der er designet en generisk konstruktor af disse tjenester til det formål for hvert enkelt sprog."
 
 #. xhj84
 #: lib_ScriptForge.xhp
@@ -212,7 +221,7 @@ msgctxt ""
 "par_id871637256506167\n"
 "help.text"
 msgid "The <literal>Dispose</literal> method is available in all services and should be called to free up resources after usage:"
-msgstr ""
+msgstr "Metoden <literal>Dispose</literal> (Bortskaf) er tilgængelig i alle tjenester og bør kaldes for at frigøre ressourcer efter brugen:"
 
 #. Depaw
 #: lib_ScriptForge.xhp
@@ -2528,7 +2537,7 @@ msgctxt ""
 "par_id141609955500101\n"
 "help.text"
 msgid "Before using the <literal>Base</literal> service the <literal>ScriptForge</literal> library needs to be loaded or imported:"
-msgstr ""
+msgstr "Før brug af tjenesten <literal>Base</literal> skal biblioteket <literal>ScriptForge</literal> være indlæst eller importeret:"
 
 #. vi6hS
 #: sf_base.xhp
@@ -2627,7 +2636,7 @@ msgctxt ""
 "par_id481619036833610\n"
 "help.text"
 msgid "Returns an array with the full names (path/name) of all form documents in the Base document as a zero-based Array of strings."
-msgstr ""
+msgstr "Returnerer en matrix med det fulde navn (sti/navn) på alle formulardokumenter i Base-dokumentet som en nul-baseret streng-matrix."
 
 #. sECnJ
 #: sf_base.xhp
@@ -3878,7 +3887,7 @@ msgctxt ""
 "par_id141609955500101\n"
 "help.text"
 msgid "Before using the <literal>Calc</literal> service the <literal>ScriptForge</literal> library needs to be loaded or imported:"
-msgstr ""
+msgstr "Før brug af tjenesten <literal>Calc</literal> skal biblioteket <literal>ScriptForge</literal> indlæst eller importeret:"
 
 #. z3JcW
 #: sf_calc.xhp
@@ -4625,7 +4634,7 @@ msgctxt ""
 "par_id661591025591188\n"
 "help.text"
 msgid "RangeName As String"
-msgstr ""
+msgstr "Områdenavn som streng"
 
 #. w7Gft
 #: sf_calc.xhp
@@ -4634,7 +4643,7 @@ msgctxt ""
 "par_id731591025591006\n"
 "help.text"
 msgid "Returns the sheet name of a given range address."
-msgstr ""
+msgstr "Returnerer arknavnet på en given områdeadresse."
 
 #. HLpEQ
 #: sf_calc.xhp
@@ -4924,7 +4933,7 @@ msgctxt ""
 "par_id371635438503202\n"
 "help.text"
 msgid "If only <literal>sheetname</literal> is specified, a zero-based array of strings containing the names of all charts is returned."
-msgstr ""
+msgstr "Hvis udelukkende <literal>sheetname</literal> (arknavnet) er angivet, returneres en nul-baseret matrix af strenge, der indeholder navnene på alle diagrammer."
 
 #. CLbLn
 #: sf_calc.xhp
@@ -5033,6 +5042,366 @@ msgctxt ""
 "help.text"
 msgid "<emph>range</emph>: The range whose values and formulas are to be cleared, as a string."
 msgstr "<emph>område</emph>: Det område, hvis værdier og formler skal ryddes, som en streng."
+
+#. JWFDb
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id841592919903025\n"
+"help.text"
+msgid "Deletes the columns of a specified range that match a filter expressed as a Calc formula. The filter is applied to each column to decide whether it will be deleted or not."
+msgstr ""
+
+#. 4JWnp
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id601652269911029\n"
+"help.text"
+msgid "The deleted column can be limited to the height of the specified range or span to the height of the entire sheet, thus deleting whole columns."
+msgstr ""
+
+#. VAVU3
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id701652271281106\n"
+"help.text"
+msgid "This method returns a string with the range address of the compacted range. If all columns are deleted, then an empty string is returned."
+msgstr ""
+
+#. j2GAb
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id191652271892064\n"
+"help.text"
+msgid "If a range of cells is selected, calling this method will not impact the selection."
+msgstr ""
+
+#. WsrKe
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id771592919922181\n"
+"help.text"
+msgid "<emph>range</emph>: The range from which columns will be deleted, as a string."
+msgstr ""
+
+#. Q9QBp
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id771592919932260\n"
+"help.text"
+msgid "<emph>wholecolumn</emph>: If this option is set to <literal>True</literal> the entire column will be deleted from the sheet. The default value is <literal>False</literal>, which means that the deleted column will be limited to the height of the specified <literal>range</literal>."
+msgstr ""
+
+#. M7qto
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id771592919915974\n"
+"help.text"
+msgid "<emph>filterformula</emph>: The filter to be applied to each column to determine whether or not it will be deleted. The filter is expressed as a Calc formula that should be applied to the first column. When the formula returns <emph>True</emph> for a column, that column will be deleted. The default filter deletes all empty columns."
+msgstr ""
+
+#. 8sYWa
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id361652271022647\n"
+"help.text"
+msgid "For example, suppose range <emph>A1:J200</emph> is selected (height = 200), so the default formula is <emph>=(COUNTBLANK(A1:A200)=200)</emph>. This means that if all 200 cells are empty in the first column (Column A), then the column is deleted. Note that the formula is expressed with respect to the first column only. Internally the <literal>CompactLeft</literal> method will generalize this formula for all the remaining columns."
+msgstr ""
+
+#. FDspT
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"bas_id941652271391005\n"
+"help.text"
+msgid "' Delete all empty columns in the range G1:L10 from Sheet1"
+msgstr ""
+
+#. huH9x
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"bas_id691652271390762\n"
+"help.text"
+msgid "newrange = oDoc.CompactLeft(\"Sheet1.G1:L10\")"
+msgstr ""
+
+#. 2BkcC
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"bas_id921652271392627\n"
+"help.text"
+msgid "' The example below is similar, but the entire column is deleted from the sheet"
+msgstr ""
+
+#. 6GoCu
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"bas_id941652271392873\n"
+"help.text"
+msgid "newrange = oDoc.CompactLeft(\"Sheet1.G1:L10\", WholeColumn := True)"
+msgstr ""
+
+#. KfQRA
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"bas_id751652271393226\n"
+"help.text"
+msgid "' Deletes all columns where the first row is marked with an \"X\""
+msgstr ""
+
+#. fLJ7y
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"bas_id761652271393514\n"
+"help.text"
+msgid "newrange = oDoc.CompactLeft(\"Sheet1.G1:L10\", FilterFormula := \"=(G1=\"\"X\"\")\")"
+msgstr ""
+
+#. UqpQB
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"bas_id241652271725676\n"
+"help.text"
+msgid "' Deletes all columns where the sum of values in the column is odd"
+msgstr ""
+
+#. 5rxDM
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"bas_id531652271726131\n"
+"help.text"
+msgid "newrange = oDoc.CompactLeft(\"Sheet1.G1:L10\", FilterFormula := \"=(MOD(SUM(G1:G10);2)=1)\")"
+msgstr ""
+
+#. i4ux6
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"pyc_id451621536612334\n"
+"help.text"
+msgid "newrange = myDoc.CompactLeft(\"Sheet1.G1:L10\")"
+msgstr ""
+
+#. j5kGd
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"pyc_id201652272121176\n"
+"help.text"
+msgid "newrange = myDoc.CompactLeft(\"Sheet1.G1:L10\", wholecolumn = True)"
+msgstr ""
+
+#. pBca4
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"pyc_id781652272122794\n"
+"help.text"
+msgid "newrange = myDoc.CompactLeft(\"Sheet1.G1:L10\", filterformula = '=(G1=\"X\")')"
+msgstr ""
+
+#. VGAj6
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"pyc_id731652272123209\n"
+"help.text"
+msgid "newrange = myDoc.CompactLeft(\"Sheet1.G1:L10\", filterformula = '=(MOD(SUM(G1:G10);2)=1)')"
+msgstr ""
+
+#. vqJ5B
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id841592919903699\n"
+"help.text"
+msgid "Deletes the rows of a specified range that match a filter expressed as a Calc formula. The filter is applied to each row to decide whether it will be deleted or not."
+msgstr ""
+
+#. RhiRD
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id601652269910091\n"
+"help.text"
+msgid "The deleted rows can be limited to the width of the specified range or span to the width of the entire sheet, thus deleting whole rows."
+msgstr ""
+
+#. Yw3WB
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id701652271283456\n"
+"help.text"
+msgid "This method returns a string with the range address of the compacted range. If all rows are deleted, then an empty string is returned."
+msgstr ""
+
+#. RtGtW
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id191652271893913\n"
+"help.text"
+msgid "If a range of cells is selected, calling this method will not impact the selection."
+msgstr ""
+
+#. X3Ekj
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id771592919922080\n"
+"help.text"
+msgid "<emph>range</emph>: The range from which rows will be deleted, as a string."
+msgstr ""
+
+#. sAtHM
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id771592919921160\n"
+"help.text"
+msgid "<emph>wholerow</emph>: If this option is set to <literal>True</literal> the entire row will be deleted from the sheet. The default value is <literal>False</literal>, which means that the deleted row will be limited to the width of the specified <literal>range</literal>."
+msgstr ""
+
+#. pKXWR
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id771592919926374\n"
+"help.text"
+msgid "<emph>filterformula</emph>: The filter to be applied to each row to determine whether or not it will be deleted. The filter is expressed as a Calc formula that should be applied to the first row. When the formula returns <emph>True</emph> for a row, that row will be deleted. The default filter deletes all empty rows."
+msgstr ""
+
+#. 2DsWD
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id361652271022681\n"
+"help.text"
+msgid "For example, suppose range <emph>A1:J200</emph> is selected (width = 10), so the default formula is <emph>=(COUNTBLANK(A1:J1)=10)</emph>. This means that if all 10 cells are empty in the first row (Row 1), then the row is deleted. Note that the formula is expressed with respect to the first row only. Internally the <literal>CompactUp</literal> method will generalize this formula for all the remaining rows."
+msgstr ""
+
+#. GuWzD
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"bas_id941652271391554\n"
+"help.text"
+msgid "' Delete all empty rows in the range G1:L10 from Sheet1"
+msgstr ""
+
+#. GBrKx
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"bas_id691652271390789\n"
+"help.text"
+msgid "newrange = oDoc.CompactUp(\"Sheet1.G1:L10\")"
+msgstr ""
+
+#. FV3Ev
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"bas_id921652271392567\n"
+"help.text"
+msgid "' The example below is similar, but the entire row is deleted from the sheet"
+msgstr ""
+
+#. Y5YVh
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"bas_id941652271392553\n"
+"help.text"
+msgid "newrange = oDoc.CompactUp(\"Sheet1.G1:L10\", WholeRow := True)"
+msgstr ""
+
+#. mFqmA
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"bas_id751652271393117\n"
+"help.text"
+msgid "' Deletes all rows where the first column is marked with an \"X\""
+msgstr ""
+
+#. gJQRm
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"bas_id761652271393034\n"
+"help.text"
+msgid "newrange = oDoc.CompactUp(\"Sheet1.G1:L10\", FilterFormula := \"=(G1=\"\"X\"\")\")"
+msgstr ""
+
+#. DoDfJ
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"bas_id241652271725065\n"
+"help.text"
+msgid "' Deletes all rows where the sum of values in the row is odd"
+msgstr ""
+
+#. zXErV
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"bas_id531652271726010\n"
+"help.text"
+msgid "newrange = oDoc.CompactUp(\"Sheet1.G1:L10\", FilterFormula := \"=(MOD(SUM(G1:L1);2)=1)\")"
+msgstr ""
+
+#. Mcwq5
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"pyc_id451621536612227\n"
+"help.text"
+msgid "newrange = myDoc.CompactUp(\"Sheet1.G1:L10\")"
+msgstr ""
+
+#. tXmJD
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"pyc_id201652272121288\n"
+"help.text"
+msgid "newrange = myDoc.CompactUp(\"Sheet1.G1:L10\", wholerow = True)"
+msgstr ""
+
+#. WZ3XF
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"pyc_id781652272122931\n"
+"help.text"
+msgid "newrange = myDoc.CompactUp(\"Sheet1.G1:L10\", filterformula = '=(G1=\"X\")')"
+msgstr ""
+
+#. 4DfG9
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"pyc_id731652272123109\n"
+"help.text"
+msgid "newrange = myDoc.CompactUp(\"Sheet1.G1:L10\", filterformula = '=(MOD(SUM(G1:L1);2)=1)')"
+msgstr ""
 
 #. n6vJD
 #: sf_calc.xhp
@@ -7148,7 +7517,7 @@ msgctxt ""
 "par_id141609955500101\n"
 "help.text"
 msgid "Before using the <literal>Chart</literal> service the <literal>ScriptForge</literal> library needs to be loaded or imported:"
-msgstr ""
+msgstr "Før brug af tjenesten <literal>Chart</literal> skal biblioteket <literal>ScriptForge</literal> være indlæst eller importeret:"
 
 #. LvW6m
 #: sf_chart.xhp
@@ -7850,7 +8219,7 @@ msgctxt ""
 "par_id141609955500101\n"
 "help.text"
 msgid "Before using the <literal>Database</literal> service the <literal>ScriptForge</literal> library needs to be loaded or imported:"
-msgstr ""
+msgstr "Før brug af tjenesten <literal>Database</literal> skal biblioteket <literal>ScriptForge</literal> være indlæst eller importeret:"
 
 #. Cr4oo
 #: sf_database.xhp
@@ -7994,7 +8363,7 @@ msgctxt ""
 "par_id361619188184750\n"
 "help.text"
 msgid "The <link href=\"text/sbasic/shared/03/sf_base.xhp#GetDatabase\" name=\"GetDatabase method\">GetDatabase</link> method used in the example above is part of ScriptForge's <literal>Base</literal> service."
-msgstr ""
+msgstr "Metoden <link href=\"text/sbasic/shared/03/sf_base.xhp#GetDatabase\" name=\"GetDatabase method\">GetDatabase</link> (Hent_database), der er brugt i eksemplet ovenfor er en del af ScriptForge's tjeneste <literal>Base</literal>."
 
 #. EF9Lc
 #: sf_database.xhp
@@ -8507,7 +8876,7 @@ msgctxt ""
 "par_id141609955500101\n"
 "help.text"
 msgid "Before using the <literal>Dialog</literal> service the <literal>ScriptForge</literal> library needs to be loaded or imported:"
-msgstr ""
+msgstr "Før brug af tjenesten <literal>Dialog</literal> skal biblioteket <literal>ScriptForge</literal> være indlæst eller importeret:"
 
 #. S8GrJ
 #: sf_dialog.xhp
@@ -9148,6 +9517,87 @@ msgctxt ""
 msgid "Python and %PRODUCTNAME Basic examples both assume that the dialog is stored in current document's <literal>Standard</literal> library."
 msgstr "Både Python- og  %PRODUCTNAME-Basic-eksempler antager, at dialogen er gemt i det aktuelle dokuments <literal>Standard</literal>-bibliotek."
 
+#. 7VrwE
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id391651225506119\n"
+"help.text"
+msgid "Centers the current dialog instance in the middle of a parent window. Without arguments, the method centers the dialog in the middle of the current window."
+msgstr ""
+
+#. xEJEH
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id391651552206119\n"
+"help.text"
+msgid "Returns <literal>True</literal> when successful."
+msgstr ""
+
+#. Woksx
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id1001585441257789\n"
+"help.text"
+msgid "<emph>Parent</emph>: An optional object that can be either …"
+msgstr ""
+
+#. DCeY9
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id412598177970993\n"
+"help.text"
+msgid "a ScriptForge dialog object"
+msgstr ""
+
+#. D5yN3
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id81591858229301\n"
+"help.text"
+msgid "a ScriptForge document (Calc, Base, ...) object"
+msgstr ""
+
+#. 8DDWf
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"bas_id12598185484092\n"
+"help.text"
+msgid "Set oDialog1 = CreateScriptService(\"DialogEvent\", oEvent) ' The dialog that caused the event"
+msgstr ""
+
+#. dx9rf
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"bas_id641598184589492\n"
+"help.text"
+msgid "Set oDialog2 = CreateScriptService(\"Dialog\", ...) ' Open a second dialog"
+msgstr ""
+
+#. kqFdv
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"pyc_id351619267575732\n"
+"help.text"
+msgid "dlg1 = CreateScriptService('DialogEvent.Dialog', event)  # The dialog having caused the event"
+msgstr ""
+
+#. fDQAG
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"pyc_id431619267576082\n"
+"help.text"
+msgid "dlg2 = CreateScriptService('Dialog', ...)  # Open a second dialog"
+msgstr ""
+
 #. 4qLn9
 #: sf_dialog.xhp
 msgctxt ""
@@ -9364,6 +9814,87 @@ msgctxt ""
 msgid "Read the <link href=\"text/sbasic/shared/03/sf_l10n.xhp\" name=\"L10N\">L10N service</link> help page to learn more about how PO and POT files are handled."
 msgstr "Læs hjælpesiden <link href=\"text/sbasic/shared/03/sf_l10n.xhp\" name=\"L10N\">tjenesten L10N</link> for at få mere at vide om, hvordan PO- og POT-filer håndteres."
 
+#. mA4Nm
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id21598187953697\n"
+"help.text"
+msgid "Moves the topleft corner of a dialog to new coordinates and/or modify its dimensions. All distances are expressed in 1/100 mm. Without arguments, the method resets the initial dimensions. Return <literal>True</literal> if the resize was successful."
+msgstr ""
+
+#. XRdLE
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id481651236673068\n"
+"help.text"
+msgid "<emph>Left</emph>: the horizontal distance from the top-left corner"
+msgstr ""
+
+#. FcTcU
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id721651236674379\n"
+"help.text"
+msgid "<emph>Top</emph>: the vertical distance from the top-left corner"
+msgstr ""
+
+#. uX7ps
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id991651236674995\n"
+"help.text"
+msgid "<emph>Width</emph>: the width of the rectangle containing the dialog"
+msgstr ""
+
+#. ApqA8
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id771651236675564\n"
+"help.text"
+msgid "<emph>Height</emph>: the height of the rectangle containing the dialog"
+msgstr ""
+
+#. H4CtP
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id211651236676180\n"
+"help.text"
+msgid "Negative or missing arguments are left unchanged"
+msgstr ""
+
+#. guvaM
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"bas_id791620301085031\n"
+"help.text"
+msgid "oDialog.Resize(1000, 2000, Height := 6000) ' Width is not changed"
+msgstr ""
+
+#. pEVvm
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id181620112217958\n"
+"help.text"
+msgid "With Python:"
+msgstr ""
+
+#. gBerj
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"pyc_id941620303073866\n"
+"help.text"
+msgid "oDialog.Resize(1000, 2000, Height = 6000)  # Width is not changed"
+msgstr ""
+
 #. ARCGg
 #: sf_dialog.xhp
 msgctxt ""
@@ -9479,7 +10010,7 @@ msgctxt ""
 "par_id141609955500101\n"
 "help.text"
 msgid "Before using the <literal>DialogControl</literal> service the <literal>ScriptForge</literal> library needs to be loaded or imported:"
-msgstr ""
+msgstr "Før brug af tjenesten <literal>DialogControl</literal> skal biblioteket <literal>ScriptForge</literal> være indlæst eller importeret:"
 
 #. EnxDs
 #: sf_dialogcontrol.xhp
@@ -11866,7 +12397,7 @@ msgctxt ""
 "par_id141609955500101\n"
 "help.text"
 msgid "Before using the <literal>Document</literal> service the <literal>ScriptForge</literal> library needs to be loaded or imported:"
-msgstr ""
+msgstr "Før brug af tjenesten <literal>Document</literal> skal biblioteket <literal>ScriptForge</literal> være indlæst eller importeret:"
 
 #. X6BV3
 #: sf_document.xhp
@@ -12662,7 +13193,7 @@ msgctxt ""
 "par_id191611153511038\n"
 "help.text"
 msgid "Each %PRODUCTNAME component has its own set of commands available. One easy way to learn commands is going to <emph>Tools - Customize - Keyboard</emph>. When you position your mouse over a function in the <emph>Function</emph> list, a tooltip will appear with the corresponding UNO command."
-msgstr ""
+msgstr "Hver %PRODUCTNAME-komponent har sit eget sæt af tilgængelige kommandoer. En nem måde at lære kommandoer på er at gå til <emph>Funktioner - Tilpas - Tastatur</emph>. Når du placerer musen over en funktion på listen <emph>Funktioner</emph>, vises et værktøjstip med den tilsvarende UNO-kommando."
 
 #. enSv9
 #: sf_document.xhp
@@ -15202,7 +15733,7 @@ msgctxt ""
 "pyc_id631626276402296\n"
 "help.text"
 msgid "aFolder = fs.PickFolder(r\"C:\\Documents\", \"Choose a folder or press Cancel\")"
-msgstr ""
+msgstr "aFolder = fs.PickFolder(r\"C:\\Documents\", \"Vælg en mappe eller tryk på Annuller\")"
 
 #. xdfBh
 #: sf_filesystem.xhp
@@ -15445,7 +15976,7 @@ msgctxt ""
 "par_id141609955500101\n"
 "help.text"
 msgid "Before using the <literal>Form</literal> service the <literal>ScriptForge</literal> library needs to be loaded or imported:"
-msgstr ""
+msgstr "Før brug af tjenesten <literal>Form</literal> skal biblioteket <literal>ScriptForge</literal> være indlæst eller importeret:"
 
 #. KfjEA
 #: sf_form.xhp
@@ -16671,7 +17202,7 @@ msgctxt ""
 "par_id141609955500101\n"
 "help.text"
 msgid "Before using the <literal>FormControl</literal> service the <literal>ScriptForge</literal> library needs to be loaded or imported:"
-msgstr ""
+msgstr "Før brug af tjenesten <literal>FormControl</literal> skal biblioteket <literal>ScriptForge</literal> være indlæst eller importeret:"
 
 #. BeDqF
 #: sf_formcontrol.xhp
@@ -18862,7 +19393,7 @@ msgctxt ""
 "par_id141609955500101\n"
 "help.text"
 msgid "Before using the <literal>L10N</literal> service the <literal>ScriptForge</literal> library needs to be loaded or imported:"
-msgstr ""
+msgstr "Før brug af tjenesten <literal>L10N</literal> skal biblioteket <literal>ScriptForge</literal> være indlæst eller importeret:"
 
 #. 9xE8t
 #: sf_l10n.xhp
@@ -18871,7 +19402,7 @@ msgctxt ""
 "par_id421614353247163\n"
 "help.text"
 msgid "There are several ways to invoke the <literal>L10N</literal> service using up to five optional arguments that specify the folder where PO files are stored, the locale and encoding to be used, as well as a fallback PO file and its encoding."
-msgstr ""
+msgstr "Der er flere måder at kalde tjenesten <literal>L10N</literal> på med op til fem friviliige argumenter, der angiver den mappe, hvor PO-filerne gemmes, den lokalisering og den indkodning, der skal bruges, såvel som en tilbagefalds PO-fil og dens indkodning."
 
 #. cCwBS
 #: sf_l10n.xhp
@@ -18898,7 +19429,7 @@ msgctxt ""
 "par_id591646219881864\n"
 "help.text"
 msgid "<emph>encoding</emph>: The character set to be used. The default encoding is \"UTF-8\"."
-msgstr ""
+msgstr "<emph>indkodning</emph>: Det tegnsæt, der skal bruges. Standardindkodningen er \"UTF-8\"."
 
 #. CXd3e
 #: sf_l10n.xhp
@@ -18907,7 +19438,7 @@ msgctxt ""
 "par_id281646219882464\n"
 "help.text"
 msgid "<emph>locale2</emph>: A string specifying the fallback locale to be used in case the PO file corresponding to the locale defined the <literal>locale</literal> parameter does not exist. This parameter is expressed in the form \"la-CO\" (language-COUNTRY) or \"la\" (language) only."
-msgstr ""
+msgstr "<emph>lokalisering2</emph>: En streng, der angiver den reserve-lokalisering, der skal bruges, hvis den PO-fil, der svarer til den definerede <literal>locale</literal> (lokalisering)s-parameter ikke eksisterer. Denne parameter udtrykkes på formen \"la-CO\" (language-COUNTRY = Sprog-LAND) eller \"la\" (language = sprog) alene."
 
 #. TaFFX
 #: sf_l10n.xhp
@@ -18916,7 +19447,7 @@ msgctxt ""
 "par_id881646219882951\n"
 "help.text"
 msgid "<emph>encoding2</emph>: The character set of the fallback PO file corresponding to the <literal>locale2</literal> argument. The default encoding is \"UTF-8\"."
-msgstr ""
+msgstr "<emph>indkodning2</emph>: Det tegnsæt, i reserve-PO-filen, der svarer til argumentet <literal>locale2</literal>. Standardindkodningen er \"UTF-8\"."
 
 #. wbSFz
 #: sf_l10n.xhp
@@ -18925,7 +19456,7 @@ msgctxt ""
 "par_id141613001281573\n"
 "help.text"
 msgid "To learn more about the names of character sets, visit <link href=\"https://www.iana.org/assignments/character-sets/character-sets.xhtml\" name=\"Character Sets\">IANA's Character Set</link> page. Beware that %PRODUCTNAME does not implement all existing character sets."
-msgstr ""
+msgstr "For at se mere om tegnsættenes navne besøger du sinden <link href=\"https://www.iana.org/assignments/character-sets/character-sets.xhtml\" name=\"Character Sets\">IANA's Character Set</link>. Bemærk, at %PRODUCTNAME ikke implementerer alle eksisterende tegnsæt."
 
 #. 3ApdD
 #: sf_l10n.xhp
@@ -18934,7 +19465,7 @@ msgctxt ""
 "par_id891614358528334\n"
 "help.text"
 msgid "The following example instantiates the <literal>L10N</literal> service without any optional arguments. This will only enable the <literal>AddText</literal> and <literal>ExportToPOTFile</literal> methods, which is useful for creating POT files."
-msgstr ""
+msgstr "Det følgemde eksempel instantierer tjenesten <literal>L10N</literal> uden nogen valgfrie argumenter. Dette aktiverer udelukkende metoderne <literal>AddText</literal> (Tilføj_tekst) og  <literal>ExportToPOTFile</literal> (Eksporter_ til_POT-fil), hvilket er nyttigt til oprettelse af POT-filer."
 
 #. rFfgF
 #: sf_l10n.xhp
@@ -18943,7 +19474,7 @@ msgctxt ""
 "par_id611614358672609\n"
 "help.text"
 msgid "The example below specifies the folder containing the PO files. Because the locale is not defined, the service instance will use the locale defined for the %PRODUCTNAME user interface, which is the same locale defined in the <literal>OfficeLocale</literal> property of the <link href=\"text/sbasic/shared/03/sf_platform.xhp\" name=\"OfficeLocale_link\">Platform</link> service."
-msgstr ""
+msgstr "Eksemplet herunder angiver den mappe, der  indeholder PO-filerne. Da lokalisationen ikke der defineret, benytter tjenesteeksemplaret den lokalisring, der er defineret til %PRODUCTNAME-brugerfladen, som er  den samme lokalisering, som er defineret i egenskaben <literal>OfficeLocale</literal> i tjenesten <link href=\"text/sbasic/shared/03/sf_platform.xhp\" name=\"OfficeLocale_link\">Platform</link> (platform)."
 
 #. FewYJ
 #: sf_l10n.xhp
@@ -18952,7 +19483,7 @@ msgctxt ""
 "par_id391625855630975\n"
 "help.text"
 msgid "The example above will result in an runtime error if the PO file corresponding to the <literal>OfficeLocale</literal> locale does not exist in the specified folder."
-msgstr ""
+msgstr "Eksemplet herover resulterer i en afviklingsfejl, hvis PO-filen, der svarer til lokaliseringen <literal>OfficeLocale</literal> ikke findes i den angivne mappe."
 
 #. gSzLN
 #: sf_l10n.xhp
@@ -18970,7 +19501,7 @@ msgctxt ""
 "par_id271646220649616\n"
 "help.text"
 msgid "To avoid errors, it is possible to specify a preferred and a fallback locale and encoding. The following example will first try to load the file \"fr-BE.po\" from the specified folder and if it does not exist, the file \"en-US.po\" will be loaded."
-msgstr ""
+msgstr "For at undgå fejl  er det muligt, at angive en foretrukket og en reserve-lokalisering og -indkodning. Det følgende eksempel forsøger først at at indlæse filen \"fr-BE.po\". fra den angivne mappe og, hvis den ikke eksister, indlæses filen \"en-US.po\"."
 
 #. UGFWB
 #: sf_l10n.xhp
@@ -19519,7 +20050,7 @@ msgctxt ""
 "par_id141609955500101\n"
 "help.text"
 msgid "Before using the <literal>Menu</literal> service the <literal>ScriptForge</literal> library needs to be loaded or imported:"
-msgstr ""
+msgstr "Før brug af tjenesten  <literal>Menu</literal>  skal biblioteket <literal>ScriptForge</literal> være indlæst eller importeret:"
 
 #. DzDmt
 #: sf_menu.xhp
@@ -19690,7 +20221,7 @@ msgctxt ""
 "pyc_id981636717957632\n"
 "help.text"
 msgid "msg = f\"Menu name: {s_args[0]}\\n\""
-msgstr ""
+msgstr "msg = f\"Menunavn: {s_args[0]}\\n\""
 
 #. GPKGe
 #: sf_menu.xhp
@@ -19699,7 +20230,7 @@ msgctxt ""
 "pyc_id851636718008427\n"
 "help.text"
 msgid "msg += f\"Menu item: {s_args[1]}\\n\""
-msgstr ""
+msgstr "msg += f\"menuelement: {s_args[1]}\\n\""
 
 #. EfEaE
 #: sf_menu.xhp
@@ -20383,7 +20914,7 @@ msgctxt ""
 "par_id141609955500101\n"
 "help.text"
 msgid "Before using the <literal>Platform</literal> service the <literal>ScriptForge</literal> library needs to be loaded or imported:"
-msgstr ""
+msgstr "Før brug af tjenesten <literal>Platform</literal>skal biblioteket <literal>ScriptForge</literal> være indlæst eller importeret:"
 
 #. mHGZk
 #: sf_platform.xhp
@@ -20923,7 +21454,7 @@ msgctxt ""
 "par_id141609955500101\n"
 "help.text"
 msgid "Before using the <literal>PopupMenu</literal> service the <literal>ScriptForge</literal> library needs to be loaded or imported:"
-msgstr ""
+msgstr "Før brug af tjenesten <literal>PopupMenu</literal> skal biblioteket <literal>ScriptForge</literal> være indlæst eller importeret:"
 
 #. aGukU
 #: sf_popupmenu.xhp
@@ -21715,7 +22246,7 @@ msgctxt ""
 "par_id141609955500101\n"
 "help.text"
 msgid "Before using the <literal>Session</literal> service the <literal>ScriptForge</literal> library needs to be loaded or imported:"
-msgstr ""
+msgstr "Før brug af tjenesten <literal>Session</literal> skal biblioteket <literal>ScriptForge</literal> være indlæst eller importeret:"
 
 #. 8BEnm
 #: sf_session.xhp
@@ -25882,7 +26413,7 @@ msgctxt ""
 "par_id841588521238711\n"
 "help.text"
 msgid "The methods <literal>CreateDocument</literal>, <literal>CreateBaseDocument</literal>, <literal>GetDocument</literal>,  <literal>OpenBaseDocument</literal> and <literal>OpenDocument</literal>, described below, generate document objects. When a window contains a document, an instance of the <literal>Document</literal> class represents that document. A counterexample the Basic IDE is not a document but is a window in our terminology. Additionally a document has a type: <literal>Calc</literal>, <literal>Impress</literal>, <literal>Writer</literal>, ..."
-msgstr ""
+msgstr "Metoderne <literal>CreateDocument</literal> (Opret_dokument), <literal>CreateBaseDocument</literal> (Opret_basedokument), <literal>GetDocument</literal> (Hent_dokument),  <literal>OpenBaseDocument</literal> (Åbn_basedokument) og <literal>OpenDocument</literal> (Åbn_dokument), beskrevet nedenfor, genererere dokumentobjekter. Når et vindue indeholder et dokument, repræsenterer en forekomst af klassen <literal>Document</literal> dette dokument. Et modeksempel: Basic IDEen er ikke et dokument men et vindue i vor terminologi. Derudover har et dokument en type: <literal>Calc</literal>, <literal>Impress</literal>, <literal>Writer</literal>, ..."
 
 #. CbJ8H
 #: sf_ui.xhp
@@ -25918,7 +26449,7 @@ msgctxt ""
 "par_id141609955500101\n"
 "help.text"
 msgid "Before using the <literal>UI</literal> service the <literal>ScriptForge</literal> library needs to be loaded or imported:"
-msgstr ""
+msgstr "Før brug af tjenesten <literal>UI</literal> skal biblioteket <literal>ScriptForge</literal> være indlæst eller importeret:"
 
 #. 2tFG6
 #: sf_ui.xhp
@@ -26278,7 +26809,7 @@ msgctxt ""
 "par_id231596555746385\n"
 "help.text"
 msgid "<emph>filename</emph>: Identifies the file to open. It must follow the <literal>SF_FileSystem.FileNaming</literal> notation."
-msgstr ""
+msgstr "<emph>filnavn</emph>: Identificerer filen, der skal åbnes. Det skal følge notationen <literal>SF_FileSystem.FileNaming</literal>."
 
 #. mtpoL
 #: sf_ui.xhp
@@ -26523,7 +27054,7 @@ msgctxt ""
 "par_id191611153511038\n"
 "help.text"
 msgid "Each %PRODUCTNAME component has its own set of commands available. One easy way to learn commands is going to <emph>Tools - Customize - Keyboard</emph>. When you position your mouse over a function in the <emph>Function</emph> list, a tooltip will appear with the corresponding UNO command."
-msgstr ""
+msgstr "Hver %PRODUCTNAME-komponent har sit eget sæt af tilgængelige kommandoer. En nem måde at lære kommandoer på er at gå til <emph>Funktioner - Tilpas - Tastatur</emph>. Når du placerer musen over en funktion på listen <emph>Funktion</emph>, vises et værtøjstip med den tilsvarende UNO-kommando."
 
 #. NnBWM
 #: sf_ui.xhp
@@ -26685,7 +27216,7 @@ msgctxt ""
 "par_id141609955500101\n"
 "help.text"
 msgid "Before using the <literal>Writer</literal> service the <literal>ScriptForge</literal> library needs to be loaded or imported:"
-msgstr ""
+msgstr "Før brug af funktionen <literal>Writer</literal> skal biblioteket <literal>ScriptForge</literal> være indlæst eller importeret:"
 
 #. 3LPrN
 #: sf_writer.xhp

@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2022-05-04 12:42+0200\n"
+"POT-Creation-Date: 2022-05-25 12:36+0200\n"
 "PO-Revision-Date: 2018-07-12 14:38+0000\n"
 "Last-Translator: Anonymous Pootle User\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -176,6 +176,15 @@ msgctxt ""
 "par_id681619700336879\n"
 "help.text"
 msgid "ScriptForge libraries build up an extensible collection of macro scripting resources for %PRODUCTNAME to be invoked from Basic macros or Python scripts."
+msgstr ""
+
+#. fL8KK
+#: lib_ScriptForge.xhp
+msgctxt ""
+"lib_ScriptForge.xhp\n"
+"par_id901528999850603\n"
+"help.text"
+msgid "• Basic macros require to load <literal>ScriptForge</literal> library using the following statement:<br/><literal>GlobalScope.BasicLibraries.loadLibrary(\"ScriptForge\")</literal><br/><br/>• Python scripts require an import from <literal>scriptforge</literal> module:<br/><literal>from scriptforge import CreateScriptService</literal>"
 msgstr ""
 
 #. eotwE
@@ -5020,6 +5029,366 @@ msgctxt ""
 msgid "<emph>range</emph>: The range whose values and formulas are to be cleared, as a string."
 msgstr ""
 
+#. JWFDb
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id841592919903025\n"
+"help.text"
+msgid "Deletes the columns of a specified range that match a filter expressed as a Calc formula. The filter is applied to each column to decide whether it will be deleted or not."
+msgstr ""
+
+#. 4JWnp
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id601652269911029\n"
+"help.text"
+msgid "The deleted column can be limited to the height of the specified range or span to the height of the entire sheet, thus deleting whole columns."
+msgstr ""
+
+#. VAVU3
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id701652271281106\n"
+"help.text"
+msgid "This method returns a string with the range address of the compacted range. If all columns are deleted, then an empty string is returned."
+msgstr ""
+
+#. j2GAb
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id191652271892064\n"
+"help.text"
+msgid "If a range of cells is selected, calling this method will not impact the selection."
+msgstr ""
+
+#. WsrKe
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id771592919922181\n"
+"help.text"
+msgid "<emph>range</emph>: The range from which columns will be deleted, as a string."
+msgstr ""
+
+#. Q9QBp
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id771592919932260\n"
+"help.text"
+msgid "<emph>wholecolumn</emph>: If this option is set to <literal>True</literal> the entire column will be deleted from the sheet. The default value is <literal>False</literal>, which means that the deleted column will be limited to the height of the specified <literal>range</literal>."
+msgstr ""
+
+#. M7qto
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id771592919915974\n"
+"help.text"
+msgid "<emph>filterformula</emph>: The filter to be applied to each column to determine whether or not it will be deleted. The filter is expressed as a Calc formula that should be applied to the first column. When the formula returns <emph>True</emph> for a column, that column will be deleted. The default filter deletes all empty columns."
+msgstr ""
+
+#. 8sYWa
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id361652271022647\n"
+"help.text"
+msgid "For example, suppose range <emph>A1:J200</emph> is selected (height = 200), so the default formula is <emph>=(COUNTBLANK(A1:A200)=200)</emph>. This means that if all 200 cells are empty in the first column (Column A), then the column is deleted. Note that the formula is expressed with respect to the first column only. Internally the <literal>CompactLeft</literal> method will generalize this formula for all the remaining columns."
+msgstr ""
+
+#. FDspT
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"bas_id941652271391005\n"
+"help.text"
+msgid "' Delete all empty columns in the range G1:L10 from Sheet1"
+msgstr ""
+
+#. huH9x
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"bas_id691652271390762\n"
+"help.text"
+msgid "newrange = oDoc.CompactLeft(\"Sheet1.G1:L10\")"
+msgstr ""
+
+#. 2BkcC
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"bas_id921652271392627\n"
+"help.text"
+msgid "' The example below is similar, but the entire column is deleted from the sheet"
+msgstr ""
+
+#. 6GoCu
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"bas_id941652271392873\n"
+"help.text"
+msgid "newrange = oDoc.CompactLeft(\"Sheet1.G1:L10\", WholeColumn := True)"
+msgstr ""
+
+#. KfQRA
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"bas_id751652271393226\n"
+"help.text"
+msgid "' Deletes all columns where the first row is marked with an \"X\""
+msgstr ""
+
+#. fLJ7y
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"bas_id761652271393514\n"
+"help.text"
+msgid "newrange = oDoc.CompactLeft(\"Sheet1.G1:L10\", FilterFormula := \"=(G1=\"\"X\"\")\")"
+msgstr ""
+
+#. UqpQB
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"bas_id241652271725676\n"
+"help.text"
+msgid "' Deletes all columns where the sum of values in the column is odd"
+msgstr ""
+
+#. 5rxDM
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"bas_id531652271726131\n"
+"help.text"
+msgid "newrange = oDoc.CompactLeft(\"Sheet1.G1:L10\", FilterFormula := \"=(MOD(SUM(G1:G10);2)=1)\")"
+msgstr ""
+
+#. i4ux6
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"pyc_id451621536612334\n"
+"help.text"
+msgid "newrange = myDoc.CompactLeft(\"Sheet1.G1:L10\")"
+msgstr ""
+
+#. j5kGd
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"pyc_id201652272121176\n"
+"help.text"
+msgid "newrange = myDoc.CompactLeft(\"Sheet1.G1:L10\", wholecolumn = True)"
+msgstr ""
+
+#. pBca4
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"pyc_id781652272122794\n"
+"help.text"
+msgid "newrange = myDoc.CompactLeft(\"Sheet1.G1:L10\", filterformula = '=(G1=\"X\")')"
+msgstr ""
+
+#. VGAj6
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"pyc_id731652272123209\n"
+"help.text"
+msgid "newrange = myDoc.CompactLeft(\"Sheet1.G1:L10\", filterformula = '=(MOD(SUM(G1:G10);2)=1)')"
+msgstr ""
+
+#. vqJ5B
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id841592919903699\n"
+"help.text"
+msgid "Deletes the rows of a specified range that match a filter expressed as a Calc formula. The filter is applied to each row to decide whether it will be deleted or not."
+msgstr ""
+
+#. RhiRD
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id601652269910091\n"
+"help.text"
+msgid "The deleted rows can be limited to the width of the specified range or span to the width of the entire sheet, thus deleting whole rows."
+msgstr ""
+
+#. Yw3WB
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id701652271283456\n"
+"help.text"
+msgid "This method returns a string with the range address of the compacted range. If all rows are deleted, then an empty string is returned."
+msgstr ""
+
+#. RtGtW
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id191652271893913\n"
+"help.text"
+msgid "If a range of cells is selected, calling this method will not impact the selection."
+msgstr ""
+
+#. X3Ekj
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id771592919922080\n"
+"help.text"
+msgid "<emph>range</emph>: The range from which rows will be deleted, as a string."
+msgstr ""
+
+#. sAtHM
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id771592919921160\n"
+"help.text"
+msgid "<emph>wholerow</emph>: If this option is set to <literal>True</literal> the entire row will be deleted from the sheet. The default value is <literal>False</literal>, which means that the deleted row will be limited to the width of the specified <literal>range</literal>."
+msgstr ""
+
+#. pKXWR
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id771592919926374\n"
+"help.text"
+msgid "<emph>filterformula</emph>: The filter to be applied to each row to determine whether or not it will be deleted. The filter is expressed as a Calc formula that should be applied to the first row. When the formula returns <emph>True</emph> for a row, that row will be deleted. The default filter deletes all empty rows."
+msgstr ""
+
+#. 2DsWD
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id361652271022681\n"
+"help.text"
+msgid "For example, suppose range <emph>A1:J200</emph> is selected (width = 10), so the default formula is <emph>=(COUNTBLANK(A1:J1)=10)</emph>. This means that if all 10 cells are empty in the first row (Row 1), then the row is deleted. Note that the formula is expressed with respect to the first row only. Internally the <literal>CompactUp</literal> method will generalize this formula for all the remaining rows."
+msgstr ""
+
+#. GuWzD
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"bas_id941652271391554\n"
+"help.text"
+msgid "' Delete all empty rows in the range G1:L10 from Sheet1"
+msgstr ""
+
+#. GBrKx
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"bas_id691652271390789\n"
+"help.text"
+msgid "newrange = oDoc.CompactUp(\"Sheet1.G1:L10\")"
+msgstr ""
+
+#. FV3Ev
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"bas_id921652271392567\n"
+"help.text"
+msgid "' The example below is similar, but the entire row is deleted from the sheet"
+msgstr ""
+
+#. Y5YVh
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"bas_id941652271392553\n"
+"help.text"
+msgid "newrange = oDoc.CompactUp(\"Sheet1.G1:L10\", WholeRow := True)"
+msgstr ""
+
+#. mFqmA
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"bas_id751652271393117\n"
+"help.text"
+msgid "' Deletes all rows where the first column is marked with an \"X\""
+msgstr ""
+
+#. gJQRm
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"bas_id761652271393034\n"
+"help.text"
+msgid "newrange = oDoc.CompactUp(\"Sheet1.G1:L10\", FilterFormula := \"=(G1=\"\"X\"\")\")"
+msgstr ""
+
+#. DoDfJ
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"bas_id241652271725065\n"
+"help.text"
+msgid "' Deletes all rows where the sum of values in the row is odd"
+msgstr ""
+
+#. zXErV
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"bas_id531652271726010\n"
+"help.text"
+msgid "newrange = oDoc.CompactUp(\"Sheet1.G1:L10\", FilterFormula := \"=(MOD(SUM(G1:L1);2)=1)\")"
+msgstr ""
+
+#. Mcwq5
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"pyc_id451621536612227\n"
+"help.text"
+msgid "newrange = myDoc.CompactUp(\"Sheet1.G1:L10\")"
+msgstr ""
+
+#. tXmJD
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"pyc_id201652272121288\n"
+"help.text"
+msgid "newrange = myDoc.CompactUp(\"Sheet1.G1:L10\", wholerow = True)"
+msgstr ""
+
+#. WZ3XF
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"pyc_id781652272122931\n"
+"help.text"
+msgid "newrange = myDoc.CompactUp(\"Sheet1.G1:L10\", filterformula = '=(G1=\"X\")')"
+msgstr ""
+
+#. 4DfG9
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"pyc_id731652272123109\n"
+"help.text"
+msgid "newrange = myDoc.CompactUp(\"Sheet1.G1:L10\", filterformula = '=(MOD(SUM(G1:L1);2)=1)')"
+msgstr ""
+
 #. n6vJD
 #: sf_calc.xhp
 msgctxt ""
@@ -9124,6 +9493,87 @@ msgctxt ""
 msgid "Python and %PRODUCTNAME Basic examples both assume that the dialog is stored in current document's <literal>Standard</literal> library."
 msgstr ""
 
+#. 7VrwE
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id391651225506119\n"
+"help.text"
+msgid "Centers the current dialog instance in the middle of a parent window. Without arguments, the method centers the dialog in the middle of the current window."
+msgstr ""
+
+#. xEJEH
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id391651552206119\n"
+"help.text"
+msgid "Returns <literal>True</literal> when successful."
+msgstr ""
+
+#. Woksx
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id1001585441257789\n"
+"help.text"
+msgid "<emph>Parent</emph>: An optional object that can be either …"
+msgstr ""
+
+#. DCeY9
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id412598177970993\n"
+"help.text"
+msgid "a ScriptForge dialog object"
+msgstr ""
+
+#. D5yN3
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id81591858229301\n"
+"help.text"
+msgid "a ScriptForge document (Calc, Base, ...) object"
+msgstr ""
+
+#. 8DDWf
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"bas_id12598185484092\n"
+"help.text"
+msgid "Set oDialog1 = CreateScriptService(\"DialogEvent\", oEvent) ' The dialog that caused the event"
+msgstr ""
+
+#. dx9rf
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"bas_id641598184589492\n"
+"help.text"
+msgid "Set oDialog2 = CreateScriptService(\"Dialog\", ...) ' Open a second dialog"
+msgstr ""
+
+#. kqFdv
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"pyc_id351619267575732\n"
+"help.text"
+msgid "dlg1 = CreateScriptService('DialogEvent.Dialog', event)  # The dialog having caused the event"
+msgstr ""
+
+#. fDQAG
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"pyc_id431619267576082\n"
+"help.text"
+msgid "dlg2 = CreateScriptService('Dialog', ...)  # Open a second dialog"
+msgstr ""
+
 #. 4qLn9
 #: sf_dialog.xhp
 msgctxt ""
@@ -9338,6 +9788,87 @@ msgctxt ""
 "par_id901637872163895\n"
 "help.text"
 msgid "Read the <link href=\"text/sbasic/shared/03/sf_l10n.xhp\" name=\"L10N\">L10N service</link> help page to learn more about how PO and POT files are handled."
+msgstr ""
+
+#. mA4Nm
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id21598187953697\n"
+"help.text"
+msgid "Moves the topleft corner of a dialog to new coordinates and/or modify its dimensions. All distances are expressed in 1/100 mm. Without arguments, the method resets the initial dimensions. Return <literal>True</literal> if the resize was successful."
+msgstr ""
+
+#. XRdLE
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id481651236673068\n"
+"help.text"
+msgid "<emph>Left</emph>: the horizontal distance from the top-left corner"
+msgstr ""
+
+#. FcTcU
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id721651236674379\n"
+"help.text"
+msgid "<emph>Top</emph>: the vertical distance from the top-left corner"
+msgstr ""
+
+#. uX7ps
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id991651236674995\n"
+"help.text"
+msgid "<emph>Width</emph>: the width of the rectangle containing the dialog"
+msgstr ""
+
+#. ApqA8
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id771651236675564\n"
+"help.text"
+msgid "<emph>Height</emph>: the height of the rectangle containing the dialog"
+msgstr ""
+
+#. H4CtP
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id211651236676180\n"
+"help.text"
+msgid "Negative or missing arguments are left unchanged"
+msgstr ""
+
+#. guvaM
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"bas_id791620301085031\n"
+"help.text"
+msgid "oDialog.Resize(1000, 2000, Height := 6000) ' Width is not changed"
+msgstr ""
+
+#. pEVvm
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id181620112217958\n"
+"help.text"
+msgid "With Python:"
+msgstr ""
+
+#. gBerj
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"pyc_id941620303073866\n"
+"help.text"
+msgid "oDialog.Resize(1000, 2000, Height = 6000)  # Width is not changed"
 msgstr ""
 
 #. ARCGg

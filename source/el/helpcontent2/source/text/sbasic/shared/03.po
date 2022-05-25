@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2022-05-04 12:42+0200\n"
-"PO-Revision-Date: 2022-05-12 09:11+0000\n"
+"POT-Creation-Date: 2022-05-25 12:36+0200\n"
+"PO-Revision-Date: 2022-05-25 10:44+0000\n"
 "Last-Translator: Dimitris Spingos <dmtrs32@gmail.com>\n"
 "Language-Team: Greek <https://translations.documentfoundation.org/projects/libo_help-master/textsbasicshared03/el/>\n"
 "Language: el\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Accelerator-Marker: ~\n"
-"X-Generator: Weblate 4.11.2\n"
+"X-Generator: LibreOffice\n"
 "X-POOTLE-MTIME: 1549442158.000000\n"
 
 #. ViEWM
@@ -177,6 +177,15 @@ msgctxt ""
 "help.text"
 msgid "ScriptForge libraries build up an extensible collection of macro scripting resources for %PRODUCTNAME to be invoked from Basic macros or Python scripts."
 msgstr "Οι βιβλιοθήκες ScriptForge δημιουργούν μια επεκτάσιμη συλλογή πόρων δέσμης ενεργειών μακροεντολών για το %PRODUCTNAME που θα κληθεί από μακροεντολές Basic ή σενάρια Python."
+
+#. fL8KK
+#: lib_ScriptForge.xhp
+msgctxt ""
+"lib_ScriptForge.xhp\n"
+"par_id901528999850603\n"
+"help.text"
+msgid "• Basic macros require to load <literal>ScriptForge</literal> library using the following statement:<br/><literal>GlobalScope.BasicLibraries.loadLibrary(\"ScriptForge\")</literal><br/><br/>• Python scripts require an import from <literal>scriptforge</literal> module:<br/><literal>from scriptforge import CreateScriptService</literal>"
+msgstr ""
 
 #. eotwE
 #: lib_ScriptForge.xhp
@@ -5020,6 +5029,366 @@ msgctxt ""
 msgid "<emph>range</emph>: The range whose values and formulas are to be cleared, as a string."
 msgstr "<emph>range</emph> (περιοχή): Η περιοχή της οποίας οι τιμές και οι τύποι πρέπει να διαγραφούν, ως συμβολοσειρά."
 
+#. JWFDb
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id841592919903025\n"
+"help.text"
+msgid "Deletes the columns of a specified range that match a filter expressed as a Calc formula. The filter is applied to each column to decide whether it will be deleted or not."
+msgstr ""
+
+#. 4JWnp
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id601652269911029\n"
+"help.text"
+msgid "The deleted column can be limited to the height of the specified range or span to the height of the entire sheet, thus deleting whole columns."
+msgstr ""
+
+#. VAVU3
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id701652271281106\n"
+"help.text"
+msgid "This method returns a string with the range address of the compacted range. If all columns are deleted, then an empty string is returned."
+msgstr ""
+
+#. j2GAb
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id191652271892064\n"
+"help.text"
+msgid "If a range of cells is selected, calling this method will not impact the selection."
+msgstr ""
+
+#. WsrKe
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id771592919922181\n"
+"help.text"
+msgid "<emph>range</emph>: The range from which columns will be deleted, as a string."
+msgstr ""
+
+#. Q9QBp
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id771592919932260\n"
+"help.text"
+msgid "<emph>wholecolumn</emph>: If this option is set to <literal>True</literal> the entire column will be deleted from the sheet. The default value is <literal>False</literal>, which means that the deleted column will be limited to the height of the specified <literal>range</literal>."
+msgstr ""
+
+#. M7qto
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id771592919915974\n"
+"help.text"
+msgid "<emph>filterformula</emph>: The filter to be applied to each column to determine whether or not it will be deleted. The filter is expressed as a Calc formula that should be applied to the first column. When the formula returns <emph>True</emph> for a column, that column will be deleted. The default filter deletes all empty columns."
+msgstr ""
+
+#. 8sYWa
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id361652271022647\n"
+"help.text"
+msgid "For example, suppose range <emph>A1:J200</emph> is selected (height = 200), so the default formula is <emph>=(COUNTBLANK(A1:A200)=200)</emph>. This means that if all 200 cells are empty in the first column (Column A), then the column is deleted. Note that the formula is expressed with respect to the first column only. Internally the <literal>CompactLeft</literal> method will generalize this formula for all the remaining columns."
+msgstr ""
+
+#. FDspT
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"bas_id941652271391005\n"
+"help.text"
+msgid "' Delete all empty columns in the range G1:L10 from Sheet1"
+msgstr ""
+
+#. huH9x
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"bas_id691652271390762\n"
+"help.text"
+msgid "newrange = oDoc.CompactLeft(\"Sheet1.G1:L10\")"
+msgstr ""
+
+#. 2BkcC
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"bas_id921652271392627\n"
+"help.text"
+msgid "' The example below is similar, but the entire column is deleted from the sheet"
+msgstr ""
+
+#. 6GoCu
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"bas_id941652271392873\n"
+"help.text"
+msgid "newrange = oDoc.CompactLeft(\"Sheet1.G1:L10\", WholeColumn := True)"
+msgstr ""
+
+#. KfQRA
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"bas_id751652271393226\n"
+"help.text"
+msgid "' Deletes all columns where the first row is marked with an \"X\""
+msgstr ""
+
+#. fLJ7y
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"bas_id761652271393514\n"
+"help.text"
+msgid "newrange = oDoc.CompactLeft(\"Sheet1.G1:L10\", FilterFormula := \"=(G1=\"\"X\"\")\")"
+msgstr ""
+
+#. UqpQB
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"bas_id241652271725676\n"
+"help.text"
+msgid "' Deletes all columns where the sum of values in the column is odd"
+msgstr ""
+
+#. 5rxDM
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"bas_id531652271726131\n"
+"help.text"
+msgid "newrange = oDoc.CompactLeft(\"Sheet1.G1:L10\", FilterFormula := \"=(MOD(SUM(G1:G10);2)=1)\")"
+msgstr ""
+
+#. i4ux6
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"pyc_id451621536612334\n"
+"help.text"
+msgid "newrange = myDoc.CompactLeft(\"Sheet1.G1:L10\")"
+msgstr ""
+
+#. j5kGd
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"pyc_id201652272121176\n"
+"help.text"
+msgid "newrange = myDoc.CompactLeft(\"Sheet1.G1:L10\", wholecolumn = True)"
+msgstr ""
+
+#. pBca4
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"pyc_id781652272122794\n"
+"help.text"
+msgid "newrange = myDoc.CompactLeft(\"Sheet1.G1:L10\", filterformula = '=(G1=\"X\")')"
+msgstr ""
+
+#. VGAj6
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"pyc_id731652272123209\n"
+"help.text"
+msgid "newrange = myDoc.CompactLeft(\"Sheet1.G1:L10\", filterformula = '=(MOD(SUM(G1:G10);2)=1)')"
+msgstr ""
+
+#. vqJ5B
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id841592919903699\n"
+"help.text"
+msgid "Deletes the rows of a specified range that match a filter expressed as a Calc formula. The filter is applied to each row to decide whether it will be deleted or not."
+msgstr ""
+
+#. RhiRD
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id601652269910091\n"
+"help.text"
+msgid "The deleted rows can be limited to the width of the specified range or span to the width of the entire sheet, thus deleting whole rows."
+msgstr ""
+
+#. Yw3WB
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id701652271283456\n"
+"help.text"
+msgid "This method returns a string with the range address of the compacted range. If all rows are deleted, then an empty string is returned."
+msgstr ""
+
+#. RtGtW
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id191652271893913\n"
+"help.text"
+msgid "If a range of cells is selected, calling this method will not impact the selection."
+msgstr ""
+
+#. X3Ekj
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id771592919922080\n"
+"help.text"
+msgid "<emph>range</emph>: The range from which rows will be deleted, as a string."
+msgstr ""
+
+#. sAtHM
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id771592919921160\n"
+"help.text"
+msgid "<emph>wholerow</emph>: If this option is set to <literal>True</literal> the entire row will be deleted from the sheet. The default value is <literal>False</literal>, which means that the deleted row will be limited to the width of the specified <literal>range</literal>."
+msgstr ""
+
+#. pKXWR
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id771592919926374\n"
+"help.text"
+msgid "<emph>filterformula</emph>: The filter to be applied to each row to determine whether or not it will be deleted. The filter is expressed as a Calc formula that should be applied to the first row. When the formula returns <emph>True</emph> for a row, that row will be deleted. The default filter deletes all empty rows."
+msgstr ""
+
+#. 2DsWD
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id361652271022681\n"
+"help.text"
+msgid "For example, suppose range <emph>A1:J200</emph> is selected (width = 10), so the default formula is <emph>=(COUNTBLANK(A1:J1)=10)</emph>. This means that if all 10 cells are empty in the first row (Row 1), then the row is deleted. Note that the formula is expressed with respect to the first row only. Internally the <literal>CompactUp</literal> method will generalize this formula for all the remaining rows."
+msgstr ""
+
+#. GuWzD
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"bas_id941652271391554\n"
+"help.text"
+msgid "' Delete all empty rows in the range G1:L10 from Sheet1"
+msgstr ""
+
+#. GBrKx
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"bas_id691652271390789\n"
+"help.text"
+msgid "newrange = oDoc.CompactUp(\"Sheet1.G1:L10\")"
+msgstr ""
+
+#. FV3Ev
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"bas_id921652271392567\n"
+"help.text"
+msgid "' The example below is similar, but the entire row is deleted from the sheet"
+msgstr ""
+
+#. Y5YVh
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"bas_id941652271392553\n"
+"help.text"
+msgid "newrange = oDoc.CompactUp(\"Sheet1.G1:L10\", WholeRow := True)"
+msgstr ""
+
+#. mFqmA
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"bas_id751652271393117\n"
+"help.text"
+msgid "' Deletes all rows where the first column is marked with an \"X\""
+msgstr ""
+
+#. gJQRm
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"bas_id761652271393034\n"
+"help.text"
+msgid "newrange = oDoc.CompactUp(\"Sheet1.G1:L10\", FilterFormula := \"=(G1=\"\"X\"\")\")"
+msgstr ""
+
+#. DoDfJ
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"bas_id241652271725065\n"
+"help.text"
+msgid "' Deletes all rows where the sum of values in the row is odd"
+msgstr ""
+
+#. zXErV
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"bas_id531652271726010\n"
+"help.text"
+msgid "newrange = oDoc.CompactUp(\"Sheet1.G1:L10\", FilterFormula := \"=(MOD(SUM(G1:L1);2)=1)\")"
+msgstr ""
+
+#. Mcwq5
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"pyc_id451621536612227\n"
+"help.text"
+msgid "newrange = myDoc.CompactUp(\"Sheet1.G1:L10\")"
+msgstr ""
+
+#. tXmJD
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"pyc_id201652272121288\n"
+"help.text"
+msgid "newrange = myDoc.CompactUp(\"Sheet1.G1:L10\", wholerow = True)"
+msgstr ""
+
+#. WZ3XF
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"pyc_id781652272122931\n"
+"help.text"
+msgid "newrange = myDoc.CompactUp(\"Sheet1.G1:L10\", filterformula = '=(G1=\"X\")')"
+msgstr ""
+
+#. 4DfG9
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"pyc_id731652272123109\n"
+"help.text"
+msgid "newrange = myDoc.CompactUp(\"Sheet1.G1:L10\", filterformula = '=(MOD(SUM(G1:L1);2)=1)')"
+msgstr ""
+
 #. n6vJD
 #: sf_calc.xhp
 msgctxt ""
@@ -9124,6 +9493,87 @@ msgctxt ""
 msgid "Python and %PRODUCTNAME Basic examples both assume that the dialog is stored in current document's <literal>Standard</literal> library."
 msgstr "Τα παραδείγματα Python και %PRODUCTNAME Basic υποθέτουν και τα δύο ότι το παράθυρο διαλόγου είναι αποθηκευμένο στη βιβλιοθήκη <literal>Standard</literal> (Τυπική)του τρέχοντος εγγράφου."
 
+#. 7VrwE
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id391651225506119\n"
+"help.text"
+msgid "Centers the current dialog instance in the middle of a parent window. Without arguments, the method centers the dialog in the middle of the current window."
+msgstr ""
+
+#. xEJEH
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id391651552206119\n"
+"help.text"
+msgid "Returns <literal>True</literal> when successful."
+msgstr ""
+
+#. Woksx
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id1001585441257789\n"
+"help.text"
+msgid "<emph>Parent</emph>: An optional object that can be either …"
+msgstr ""
+
+#. DCeY9
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id412598177970993\n"
+"help.text"
+msgid "a ScriptForge dialog object"
+msgstr ""
+
+#. D5yN3
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id81591858229301\n"
+"help.text"
+msgid "a ScriptForge document (Calc, Base, ...) object"
+msgstr ""
+
+#. 8DDWf
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"bas_id12598185484092\n"
+"help.text"
+msgid "Set oDialog1 = CreateScriptService(\"DialogEvent\", oEvent) ' The dialog that caused the event"
+msgstr ""
+
+#. dx9rf
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"bas_id641598184589492\n"
+"help.text"
+msgid "Set oDialog2 = CreateScriptService(\"Dialog\", ...) ' Open a second dialog"
+msgstr ""
+
+#. kqFdv
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"pyc_id351619267575732\n"
+"help.text"
+msgid "dlg1 = CreateScriptService('DialogEvent.Dialog', event)  # The dialog having caused the event"
+msgstr ""
+
+#. fDQAG
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"pyc_id431619267576082\n"
+"help.text"
+msgid "dlg2 = CreateScriptService('Dialog', ...)  # Open a second dialog"
+msgstr ""
+
 #. 4qLn9
 #: sf_dialog.xhp
 msgctxt ""
@@ -9339,6 +9789,87 @@ msgctxt ""
 "help.text"
 msgid "Read the <link href=\"text/sbasic/shared/03/sf_l10n.xhp\" name=\"L10N\">L10N service</link> help page to learn more about how PO and POT files are handled."
 msgstr "Ανατρέξτε στη σελίδα βοήθειας <link href=\"text/sbasic/shared/03/sf_l10n.xhp\" name=\"L10N\">Υπηρεσία L10N</link> για να μάθετε περισσότερα σχετικά με τον τρόπο χειρισμού των αρχείων PO και POT."
+
+#. mA4Nm
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id21598187953697\n"
+"help.text"
+msgid "Moves the topleft corner of a dialog to new coordinates and/or modify its dimensions. All distances are expressed in 1/100 mm. Without arguments, the method resets the initial dimensions. Return <literal>True</literal> if the resize was successful."
+msgstr ""
+
+#. XRdLE
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id481651236673068\n"
+"help.text"
+msgid "<emph>Left</emph>: the horizontal distance from the top-left corner"
+msgstr ""
+
+#. FcTcU
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id721651236674379\n"
+"help.text"
+msgid "<emph>Top</emph>: the vertical distance from the top-left corner"
+msgstr ""
+
+#. uX7ps
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id991651236674995\n"
+"help.text"
+msgid "<emph>Width</emph>: the width of the rectangle containing the dialog"
+msgstr ""
+
+#. ApqA8
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id771651236675564\n"
+"help.text"
+msgid "<emph>Height</emph>: the height of the rectangle containing the dialog"
+msgstr ""
+
+#. H4CtP
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id211651236676180\n"
+"help.text"
+msgid "Negative or missing arguments are left unchanged"
+msgstr ""
+
+#. guvaM
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"bas_id791620301085031\n"
+"help.text"
+msgid "oDialog.Resize(1000, 2000, Height := 6000) ' Width is not changed"
+msgstr ""
+
+#. pEVvm
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id181620112217958\n"
+"help.text"
+msgid "With Python:"
+msgstr ""
+
+#. gBerj
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"pyc_id941620303073866\n"
+"help.text"
+msgid "oDialog.Resize(1000, 2000, Height = 6000)  # Width is not changed"
+msgstr ""
 
 #. ARCGg
 #: sf_dialog.xhp
@@ -18671,7 +19202,7 @@ msgctxt ""
 "par_id721623373769471\n"
 "help.text"
 msgid "Now you can run other Python commands and they will be able to communicate with the %PRODUCTNAME process. For example:"
-msgstr ""
+msgstr "Τώρα μπορείτε να εκτελέσετε άλλες εντολές Python και θα μπορούν να επικοινωνούν με τη διαδικασία του %PRODUCTNAME. Για παράδειγμα:"
 
 #. VCRTD
 #: sf_l10n.xhp
@@ -18680,7 +19211,7 @@ msgctxt ""
 "tit\n"
 "help.text"
 msgid "ScriptForge.L10N service"
-msgstr ""
+msgstr "Υπηρεσία ScriptForge.L10N"
 
 #. q7BSh
 #: sf_l10n.xhp
@@ -18689,7 +19220,7 @@ msgctxt ""
 "hd_id521585843652750\n"
 "help.text"
 msgid "<variable id=\"L10NService\"><link href=\"text/sbasic/shared/03/sf_l10n.xhp\" name=\"L10N service\"><literal>ScriptForge</literal>.<literal>L10N</literal> service</link></variable>"
-msgstr ""
+msgstr "<variable id=\"L10NService\"><link href=\"text/sbasic/shared/03/sf_l10n.xhp\" name=\"L10N service\">Υπηρεσία <literal>ScriptForge</literal>.<literal>L10N</literal></link></variable>"
 
 #. FRAiJ
 #: sf_l10n.xhp
@@ -18698,7 +19229,7 @@ msgctxt ""
 "par_id411585843652556\n"
 "help.text"
 msgid "This service provides a number of methods related to the translation of strings with minimal impact on the program's source code. The methods provided by the <literal>L10N</literal> service can be used mainly to:"
-msgstr ""
+msgstr "Αυτή η υπηρεσία παρέχει έναν αριθμό μεθόδων που σχετίζονται με τη μετάφραση συμβολοσειρών με ελάχιστη επίδραση στον πηγαίο κώδικα του προγράμματος. Οι μέθοδοι που παρέχονται από την υπηρεσία <literal>L10N</literal> μπορούν να χρησιμοποιηθούν κυρίως για:"
 
 #. gw2rW
 #: sf_l10n.xhp
@@ -18707,7 +19238,7 @@ msgctxt ""
 "par_id601614351922212\n"
 "help.text"
 msgid "Create POT files that can be used as templates for translation of all strings in the program."
-msgstr ""
+msgstr "Δημιουργήστε αρχεία POT που μπορούν να χρησιμοποιηθούν ως πρότυπα για τη μετάφραση όλων των συμβολοσειρών του προγράμματος."
 
 #. sbVQL
 #: sf_l10n.xhp
@@ -18716,7 +19247,7 @@ msgctxt ""
 "par_id131614352196513\n"
 "help.text"
 msgid "Get translated strings at runtime for the language defined in the <literal>Locale</literal> property."
-msgstr ""
+msgstr "Λάβετε μεταφρασμένες συμβολοσειρές κατά το χρόνο εκτέλεσης για τη γλώσσα που ορίζεται στην ιδιότητα <literal>Locale</literal> (τοπικές ρυθμίσεις)."
 
 #. kCrgU
 #: sf_l10n.xhp
@@ -18725,7 +19256,7 @@ msgctxt ""
 "par_id971614966420419\n"
 "help.text"
 msgid "The acronym <literal>L10N</literal> stands for Localization and refers to a set of procedures for translating software to a specific country or region."
-msgstr ""
+msgstr "Το ακρωνύμιο <literal>L10N</literal> σημαίνει τοπικοποίηση και αναφέρεται σε ένα σύνολο διαδικασιών για τη μετάφραση λογισμικού σε μια συγκεκριμένη χώρα ή περιοχή."
 
 #. supr5
 #: sf_l10n.xhp
@@ -18734,7 +19265,7 @@ msgctxt ""
 "par_id291585843652438\n"
 "help.text"
 msgid "PO files have long been promoted in the free software community as a means to providing multilingual user interfaces. This is accomplished through the use of human-readable text files with a well defined structure that specifies, for any given language, the source language string and the localized string."
-msgstr ""
+msgstr "Τα αρχεία PO έχουν από καιρό προωθηθεί στην κοινότητα του ελεύθερου λογισμικού ως μέσο για την παροχή πολύγλωσσων διεπαφών χρήστη. Αυτό επιτυγχάνεται μέσω της χρήσης αρχείων κειμένου αναγνώσιμων από τον άνθρωπο με μια καλά καθορισμένη δομή που καθορίζει, για οποιαδήποτε δεδομένη γλώσσα, τη συμβολοσειρά της γλώσσας πηγής και την τοπική συμβολοσειρά."
 
 #. j6xsd
 #: sf_l10n.xhp
@@ -18743,7 +19274,7 @@ msgctxt ""
 "par_id181585843652814\n"
 "help.text"
 msgid "The main advantage of the PO format is dissociation of the programmer and the translator. PO files are independent text files, so the programmer can send POT template files to translators, who will then translate their contents and return the translated PO files for each supported language."
-msgstr ""
+msgstr "Το κύριο πλεονέκτημα της μορφής PO είναι ο διαχωρισμός του προγραμματιστή και του μεταφραστή. Τα αρχεία PO είναι ανεξάρτητα αρχεία κειμένου, επομένως ο προγραμματιστής μπορεί να στείλει αρχεία προτύπων POT στους μεταφραστές, οι οποίοι στη συνέχεια θα μεταφράσουν τα περιεχόμενά τους και θα επιστρέψουν τα μεταφρασμένα αρχεία PO για κάθε υποστηριζόμενη γλώσσα."
 
 #. iBQxR
 #: sf_l10n.xhp
@@ -18752,7 +19283,7 @@ msgctxt ""
 "par_id811614352321187\n"
 "help.text"
 msgid "The <literal>L10N</literal> service is based on the GNU implementation of PO (portable object) files. To learn more about this file format, visit <link href=\"https://www.gnu.org/software/gettext/manual/html_node/PO-Files.html\" name=\"GetText\">GNU gettext Utilities: PO Files</link>."
-msgstr ""
+msgstr "Η υπηρεσία <literal>L10N</literal> βασίζεται στην υλοποίηση GNU αρχείων PO (φορητό αντικείμενο). Για να μάθετε περισσότερα σχετικά με αυτήν τη μορφή αρχείου, επισκεφτείτε τα <link href=\"https://www.gnu.org/software/gettext/manual/html_node/PO-Files.html\" name=\"GetText\">GNU gettext Utilities: PO Files</link>."
 
 #. DGiG9
 #: sf_l10n.xhp
@@ -18761,7 +19292,7 @@ msgctxt ""
 "par_id91585843652832\n"
 "help.text"
 msgid "This service implements the methods listed below:"
-msgstr ""
+msgstr "Αυτή η υπηρεσία εφαρμόζει τις μεθόδους που αναφέρονται παρακάτω:"
 
 #. fBXDW
 #: sf_l10n.xhp
@@ -18770,7 +19301,7 @@ msgctxt ""
 "par_id1158584365237\n"
 "help.text"
 msgid "<emph>AddText</emph>: Used by the programmer to build a set of strings that will be translated later."
-msgstr ""
+msgstr "<emph>AddText</emph> (Προσθήκη κειμένου): Χρησιμοποιείται από τον προγραμματιστή για τη δημιουργία ενός συνόλου συμβολοσειρών που θα μεταφραστούν αργότερα."
 
 #. BtuQ3
 #: sf_l10n.xhp
@@ -18779,7 +19310,7 @@ msgctxt ""
 "par_id81637866601151\n"
 "help.text"
 msgid "<emph>AddTextsFromDialog</emph>: Extracts all strings from a <literal>Dialog</literal> service instance."
-msgstr ""
+msgstr "<emph>AddTextsFromDialog</emph>: Εξάγει όλες τις συμβολοσειρές από μια παρουσία υπηρεσίας <literal>Dialog</literal>."
 
 #. cm7fq
 #: sf_l10n.xhp
@@ -18788,7 +19319,7 @@ msgctxt ""
 "par_id681585843652331\n"
 "help.text"
 msgid "<emph>ExportToPOTFile</emph>: Exports the strings added by the <literal>AddText</literal> method to a POT file."
-msgstr ""
+msgstr "<emph>ExportToPOTFile</emph>: Εξάγει τις συμβολοσειρές που προστέθηκαν με τη μέθοδο <literal>AddText</literal> σε ένα αρχείο POT."
 
 #. Z7dU5
 #: sf_l10n.xhp
@@ -18797,7 +19328,7 @@ msgctxt ""
 "par_id531585843652697\n"
 "help.text"
 msgid "<emph>GetText</emph>: Gets the translated strings at runtime."
-msgstr ""
+msgstr "<emph>GetText</emph>: Λαμβάνει τις μεταφρασμένες συμβολοσειρές κατά το χρόνο εκτέλεσης."
 
 #. D4Fyf
 #: sf_l10n.xhp
@@ -18806,7 +19337,7 @@ msgctxt ""
 "par_id361614361362393\n"
 "help.text"
 msgid "Note that the first two methods are used to build a set of translatable strings and export them to a POT file. However, it is not mandatory to create POT files using these methods. Since they are text files, the programmer could have created them using any text editor."
-msgstr ""
+msgstr "Σημειώστε ότι οι δύο πρώτες μέθοδοι χρησιμοποιούνται για τη δημιουργία ενός συνόλου μεταφράσιμων συμβολοσειρών και την εξαγωγή τους σε ένα αρχείο POT. Ωστόσο, δεν είναι υποχρεωτικό να δημιουργείτε αρχεία POT χρησιμοποιώντας αυτές τις μεθόδους. Δεδομένου ότι είναι αρχεία κειμένου, ο προγραμματιστής θα μπορούσε να τα έχει δημιουργήσει χρησιμοποιώντας οποιοδήποτε πρόγραμμα επεξεργασίας κειμένου."
 
 #. Rn7FL
 #: sf_l10n.xhp
@@ -18815,7 +19346,7 @@ msgctxt ""
 "hd_id351585843652312\n"
 "help.text"
 msgid "Service invocation"
-msgstr ""
+msgstr "Κλήση υπηρεσίας"
 
 #. 2WXAQ
 #: sf_l10n.xhp
@@ -18824,7 +19355,7 @@ msgctxt ""
 "par_id141609955500101\n"
 "help.text"
 msgid "Before using the <literal>L10N</literal> service the <literal>ScriptForge</literal> library needs to be loaded or imported:"
-msgstr ""
+msgstr "Πριν χρησιμοποιήσετε την υπηρεσία <literal>L10N</literal> πρέπει να φορτωθεί ή να εισαχθεί η βιβλιοθήκη <literal>ScriptForge</literal>:"
 
 #. 9xE8t
 #: sf_l10n.xhp
@@ -18833,7 +19364,7 @@ msgctxt ""
 "par_id421614353247163\n"
 "help.text"
 msgid "There are several ways to invoke the <literal>L10N</literal> service using up to five optional arguments that specify the folder where PO files are stored, the locale and encoding to be used, as well as a fallback PO file and its encoding."
-msgstr ""
+msgstr "Υπάρχουν διάφοροι τρόποι για να καλέσετε την υπηρεσία <literal>L10N</literal> χρησιμοποιώντας έως και πέντε προαιρετικά ορίσματα που καθορίζουν τον φάκελο όπου αποθηκεύονται τα αρχεία PO, τις τοπικές ρυθμίσεις και την κωδικοποίηση που θα χρησιμοποιηθούν, καθώς και ένα εναλλακτικό αρχείο PO και την κωδικοποίησή του ."
 
 #. cCwBS
 #: sf_l10n.xhp
@@ -18842,7 +19373,7 @@ msgctxt ""
 "par_id331585843652877\n"
 "help.text"
 msgid "<emph>foldername</emph>: The folder containing the PO files. It must be expressed in the <literal>FileSystem.FileNaming</literal> notation."
-msgstr ""
+msgstr "<emph>foldername</emph> (όνομα φακέλου): Ο φάκελος που περιέχει τα αρχεία PO. Πρέπει να εκφράζεται με τη σημειογραφία <literal>FileSystem.FileNaming</literal>."
 
 #. oQD4m
 #: sf_l10n.xhp
@@ -18851,7 +19382,7 @@ msgctxt ""
 "par_id581585843652789\n"
 "help.text"
 msgid "<emph>locale</emph>: A string in the form \"la-CO\" (language-COUNTRY) or in the form \"la\" (language) only."
-msgstr ""
+msgstr "<emph>locale</emph>: Μια συμβολοσειρά με τη μορφή \"la-CO\" (γλώσσα-ΧΩΡΑ) ή με τη μορφή \"la\" (γλώσσα) μόνο."
 
 #. gswGR
 #: sf_l10n.xhp
@@ -18860,7 +19391,7 @@ msgctxt ""
 "par_id591646219881864\n"
 "help.text"
 msgid "<emph>encoding</emph>: The character set to be used. The default encoding is \"UTF-8\"."
-msgstr ""
+msgstr "<emph>encoding</emph> (κωδικοποίηση): Το σύνολο των χαρακτήρων που θα χρησιμοποιηθεί. Η προεπιλεγμένη κωδικοποίηση είναι \"UTF-8\"."
 
 #. CXd3e
 #: sf_l10n.xhp
@@ -18869,7 +19400,7 @@ msgctxt ""
 "par_id281646219882464\n"
 "help.text"
 msgid "<emph>locale2</emph>: A string specifying the fallback locale to be used in case the PO file corresponding to the locale defined the <literal>locale</literal> parameter does not exist. This parameter is expressed in the form \"la-CO\" (language-COUNTRY) or \"la\" (language) only."
-msgstr ""
+msgstr "<emph>locale2</emph>: Μια συμβολοσειρά που καθορίζει την εναλλακτική τοπική ρύθμιση που θα χρησιμοποιηθεί σε περίπτωση που το αρχείο PO που αντιστοιχεί στην τοπική ρύθμιση που ορίζει την παράμετρο <literal>locale</literal> δεν υπάρχει. Αυτή η παράμετρος εκφράζεται μόνο με τη μορφή \"la-CO\" (γλώσσα-ΧΩΡΑ) ή \"la\" (γλώσσα)."
 
 #. TaFFX
 #: sf_l10n.xhp
@@ -18878,7 +19409,7 @@ msgctxt ""
 "par_id881646219882951\n"
 "help.text"
 msgid "<emph>encoding2</emph>: The character set of the fallback PO file corresponding to the <literal>locale2</literal> argument. The default encoding is \"UTF-8\"."
-msgstr ""
+msgstr "<emph>encoding2</emph>: Το σύνολο χαρακτήρων του εναλλακτικού αρχείου PO που αντιστοιχεί στο όρισμα <literal>locale2</literal>. Η προεπιλεγμένη κωδικοποίηση είναι \"UTF-8\"."
 
 #. wbSFz
 #: sf_l10n.xhp
@@ -18887,7 +19418,7 @@ msgctxt ""
 "par_id141613001281573\n"
 "help.text"
 msgid "To learn more about the names of character sets, visit <link href=\"https://www.iana.org/assignments/character-sets/character-sets.xhtml\" name=\"Character Sets\">IANA's Character Set</link> page. Beware that %PRODUCTNAME does not implement all existing character sets."
-msgstr ""
+msgstr "Για να μάθετε περισσότερα σχετικά με τα ονόματα των συνόλων χαρακτήρων, επισκεφτείτε τη σελίδα <link href=\"https://www.iana.org/assignments/character-sets/character-sets.xhtml\" name=\"Character Sets\">Σύνολο χαρακτήρων IANA</link>. Προσέξτε ότι το %PRODUCTNAME δεν υλοποιεί όλα τα υφιστάμενα σύνολα χαρακτήρων."
 
 #. 3ApdD
 #: sf_l10n.xhp
@@ -18896,7 +19427,7 @@ msgctxt ""
 "par_id891614358528334\n"
 "help.text"
 msgid "The following example instantiates the <literal>L10N</literal> service without any optional arguments. This will only enable the <literal>AddText</literal> and <literal>ExportToPOTFile</literal> methods, which is useful for creating POT files."
-msgstr ""
+msgstr "Το ακόλουθο παράδειγμα δημιουργεί την υπηρεσία <literal>L10N</literal> χωρίς προαιρετικά ορίσματα. Αυτό θα ενεργοποιήσει μόνο τις μεθόδους <literal>AddText</literal> και <literal>ExportToPOTFile</literal>, οι οποίες είναι χρήσιμες για τη δημιουργία αρχείων POT."
 
 #. rFfgF
 #: sf_l10n.xhp
@@ -18905,7 +19436,7 @@ msgctxt ""
 "par_id611614358672609\n"
 "help.text"
 msgid "The example below specifies the folder containing the PO files. Because the locale is not defined, the service instance will use the locale defined for the %PRODUCTNAME user interface, which is the same locale defined in the <literal>OfficeLocale</literal> property of the <link href=\"text/sbasic/shared/03/sf_platform.xhp\" name=\"OfficeLocale_link\">Platform</link> service."
-msgstr ""
+msgstr "Το παρακάτω παράδειγμα καθορίζει τον φάκελο που περιέχει τα αρχεία PO. Επειδή η τοπική ρύθμιση δεν έχει οριστεί, η παρουσία της υπηρεσίας θα χρησιμοποιήσει την τοπική ρύθμιση που έχει οριστεί για τη διεπαφή χρήστη στο %PRODUCTNAME, η οποία είναι η ίδια τοπική ρύθμιση που ορίζεται στην ιδιότητα <literal>OfficeLocale</literal> της υπηρεσίας <link href=\"text/sbasic/shared/03/sf_platform.xhp\" name=\"OfficeLocale_link\">Πλατφόρμα</link>."
 
 #. FewYJ
 #: sf_l10n.xhp
@@ -18914,7 +19445,7 @@ msgctxt ""
 "par_id391625855630975\n"
 "help.text"
 msgid "The example above will result in an runtime error if the PO file corresponding to the <literal>OfficeLocale</literal> locale does not exist in the specified folder."
-msgstr ""
+msgstr "Το παραπάνω παράδειγμα θα οδηγήσει σε σφάλμα χρόνου εκτέλεσης εάν το αρχείο PO που αντιστοιχεί στην τοπική ρύθμιση <literal>OfficeLocale</literal> δεν υπάρχει στον καθορισμένο φάκελο."
 
 #. gSzLN
 #: sf_l10n.xhp
@@ -18923,7 +19454,7 @@ msgctxt ""
 "par_id321614358809763\n"
 "help.text"
 msgid "In the example below, the locale is explicitly defined to be Belgian French (\"fr-BE\"), hence the service will load the file \"fr-BE.po\" from the folder \"C:\\myPOFiles\". If the file does not exist, an error will occur."
-msgstr ""
+msgstr "Στο παρακάτω παράδειγμα, η τοπική ρύθμιση ορίζεται ρητά ότι είναι Βελγικά Γαλλικά (\"fr-BE\"), επομένως η υπηρεσία θα φορτώσει το αρχείο \"fr-BE.po\" από το φάκελο \"C:\\myPOFiles\". Εάν το αρχείο δεν υπάρχει, θα προκύψει σφάλμα."
 
 #. WpYLF
 #: sf_l10n.xhp
@@ -18932,7 +19463,7 @@ msgctxt ""
 "par_id271646220649616\n"
 "help.text"
 msgid "To avoid errors, it is possible to specify a preferred and a fallback locale and encoding. The following example will first try to load the file \"fr-BE.po\" from the specified folder and if it does not exist, the file \"en-US.po\" will be loaded."
-msgstr ""
+msgstr "Για την αποφυγή σφαλμάτων, είναι δυνατό να ορίσετε μια προτιμώμενη και μια εναλλακτική τοπική ρύθμιση και κωδικοποίηση. Το παρακάτω παράδειγμα θα προσπαθήσει πρώτα να φορτώσει το αρχείο \"fr-BE.po\" από τον καθορισμένο φάκελο και εάν δεν υπάρχει, θα φορτωθεί το αρχείο \"en-US.po\"."
 
 #. UGFWB
 #: sf_l10n.xhp
@@ -18941,7 +19472,7 @@ msgctxt ""
 "par_id411585843652496\n"
 "help.text"
 msgid "PO files must be named in the form \"la-CO.po\" or \"la.po\", where \"la\" refers to the language and \"CO\" is the country. Some examples are: \"en-US.po\", \"fr-BE.po\" or \"fr.po\"."
-msgstr ""
+msgstr "Τα αρχεία PO πρέπει να ονομάζονται με τη μορφή \"la-CO.po\" ή \"la.po\", όπου το \"la\" αναφέρεται στη γλώσσα και το \"CO\" είναι η χώρα. Μερικά παραδείγματα είναι: \"en-US.po\", \"fr-BE.po\" ή \"fr.po\"."
 
 #. zQhHX
 #: sf_l10n.xhp
@@ -18950,7 +19481,7 @@ msgctxt ""
 "par_id171585843652545\n"
 "help.text"
 msgid "It is recommended to free resources after use:"
-msgstr ""
+msgstr "Συνιστάται η απελευθέρωση πόρων μετά τη χρήση:"
 
 #. CmhnJ
 #: sf_l10n.xhp
@@ -18959,7 +19490,7 @@ msgctxt ""
 "par_id281625854773330\n"
 "help.text"
 msgid "The examples above can be translated to Python as follows:"
-msgstr ""
+msgstr "Τα παραπάνω παραδείγματα μπορούν να μεταφραστούν σε Python ως εξής:"
 
 #. Z5Pb3
 #: sf_l10n.xhp
@@ -18968,7 +19499,7 @@ msgctxt ""
 "par_id301614358956087\n"
 "help.text"
 msgid "Several instances of the <literal>L10N</literal> service may coexist. However, each instance must use a separate directory for its PO files."
-msgstr ""
+msgstr "Μπορεί να συνυπάρχουν πολλές περιπτώσεις της υπηρεσίας <literal>L10N</literal>. Ωστόσο, κάθε παρουσία πρέπει να χρησιμοποιεί ξεχωριστό κατάλογο για τα αρχεία PO του."
 
 #. 6mcLb
 #: sf_l10n.xhp
@@ -18977,7 +19508,7 @@ msgctxt ""
 "hd_id561585843652465\n"
 "help.text"
 msgid "Properties"
-msgstr ""
+msgstr "Ιδιότητες"
 
 #. mJaFd
 #: sf_l10n.xhp
@@ -18986,7 +19517,7 @@ msgctxt ""
 "par_id181585843652958\n"
 "help.text"
 msgid "Name"
-msgstr ""
+msgstr "Όνομα"
 
 #. FFbDK
 #: sf_l10n.xhp
@@ -18995,7 +19526,7 @@ msgctxt ""
 "par_id741585843652162\n"
 "help.text"
 msgid "Readonly"
-msgstr ""
+msgstr "Μόνο για ανάγνωση"
 
 #. X3tJK
 #: sf_l10n.xhp
@@ -19004,7 +19535,7 @@ msgctxt ""
 "par_id291585843652823\n"
 "help.text"
 msgid "Type"
-msgstr ""
+msgstr "Τύπος"
 
 #. 8ECBX
 #: sf_l10n.xhp
@@ -19013,7 +19544,7 @@ msgctxt ""
 "par_id351585843652638\n"
 "help.text"
 msgid "Description"
-msgstr ""
+msgstr "Περιγραφή"
 
 #. j3wEj
 #: sf_l10n.xhp
@@ -19022,7 +19553,7 @@ msgctxt ""
 "par_id451585843652928\n"
 "help.text"
 msgid "Yes"
-msgstr ""
+msgstr "Ναι"
 
 #. uED9S
 #: sf_l10n.xhp
@@ -19031,7 +19562,7 @@ msgctxt ""
 "par_id751585843652642\n"
 "help.text"
 msgid "The folder containing the PO files (see the <link href=\"text/sbasic/shared/03/sf_filesystem.xhp#bm_id901612991354326\" name=\"FileNaming property\"><literal>FileSystem.FileNaming</literal></link> property to learn about the notation used)."
-msgstr ""
+msgstr "Ο φάκελος που περιέχει τα αρχεία PO (δείτε την ιδιότητα <link href=\"text/sbasic/shared/03/sf_filesystem.xhp#bm_id901612991354326\" name=\"FileNaming property\"><literal>FileSystem.FileNaming</literal></link> για να μάθετε για τη σημειογραφία που χρησιμοποιείται)."
 
 #. Zsp7p
 #: sf_l10n.xhp
@@ -19040,7 +19571,7 @@ msgctxt ""
 "par_id96158584365279\n"
 "help.text"
 msgid "Yes"
-msgstr ""
+msgstr "Ναι"
 
 #. vdfiw
 #: sf_l10n.xhp
@@ -19049,7 +19580,7 @@ msgctxt ""
 "par_id331585843652912\n"
 "help.text"
 msgid "A zero-based array listing all the base names (without the \".po\" extension) of the PO-files found in the specified <literal>Folder</literal>."
-msgstr ""
+msgstr "Ένας πίνακας μηδενικής βάσης που παραθέτει όλα τα ονόματα βάσης (χωρίς την επέκταση \".po\") των PO-αρχείων που βρίσκονται στον καθορισμένο <literal>Folder</literal> (φάκελο)."
 
 #. NWxhu
 #: sf_l10n.xhp
@@ -19058,7 +19589,7 @@ msgctxt ""
 "par_id961585843652589\n"
 "help.text"
 msgid "Yes"
-msgstr ""
+msgstr "Ναι"
 
 #. LSNA3
 #: sf_l10n.xhp
@@ -19067,7 +19598,7 @@ msgctxt ""
 "par_id561585843652947\n"
 "help.text"
 msgid "The currently active language-COUNTRY combination. This property will be initially empty if the service was instantiated without any of the optional arguments."
-msgstr ""
+msgstr "Ο επί του παρόντος ενεργός συνδυασμός γλώσσας-ΧΩΡΑ. Αυτή η ιδιότητα θα είναι αρχικά κενή εάν η υπηρεσία δημιουργήθηκε χωρίς κανένα από τα προαιρετικά ορίσματα."
 
 #. 5cs7h
 #: sf_l10n.xhp
@@ -19076,7 +19607,7 @@ msgctxt ""
 "par_id231614360519973\n"
 "help.text"
 msgid "List of Methods in the L10N Service"
-msgstr ""
+msgstr "Κατάλογος μεθόδων στην υπηρεσία L10N"
 
 #. Q24j9
 #: sf_l10n.xhp
@@ -19085,7 +19616,7 @@ msgctxt ""
 "par_id1001585843652271\n"
 "help.text"
 msgid "Adds a new entry in the list of localizable strings. It must not exist yet."
-msgstr ""
+msgstr "Προσθέτει μια νέα καταχώρηση στον κατάλογο τοπικών συμβολοσειρών. Δεν πρέπει να υπάρχει ακόμα."
 
 #. 5Fs5v
 #: sf_l10n.xhp
@@ -19094,7 +19625,7 @@ msgctxt ""
 "par_id641625855725050\n"
 "help.text"
 msgid "The method returns <literal>True</literal> if successful."
-msgstr ""
+msgstr "Η μέθοδος επιστρέφει <literal>True</literal> εάν είναι επιτυχής."
 
 #. gyUYQ
 #: sf_l10n.xhp
@@ -19103,7 +19634,7 @@ msgctxt ""
 "par_id391585843652753\n"
 "help.text"
 msgid "<emph>context</emph>: The key to retrieve the translated string with the <literal>GetText</literal> method. This parameter has a default value of \"\"."
-msgstr ""
+msgstr "<emph>context</emph>: Το κλειδί για την ανάκτηση της μεταφρασμένης συμβολοσειράς με τη μέθοδο <literal>GetText</literal>. Αυτή η παράμετρος έχει μια προεπιλεγμένη τιμή \"\"."
 
 #. YVUWx
 #: sf_l10n.xhp
@@ -19112,7 +19643,7 @@ msgctxt ""
 "par_id581585844419114\n"
 "help.text"
 msgid "<emph>msgid</emph>: The untranslated string, which is the text appearing in the program code. It must not be empty. The <literal>msgid</literal> becomes the key to retrieve the translated string via <literal>GetText</literal> method when <literal>context</literal> is empty."
-msgstr ""
+msgstr "<emph>msgid</emph>: Η αμετάφραστη συμβολοσειρά, η οποία είναι το κείμενο που εμφανίζεται στον κώδικα του προγράμματος. Δεν πρέπει να είναι άδειο. Το <literal>msgid</literal> γίνεται το κλειδί για την ανάκτηση της μεταφρασμένης συμβολοσειράς μέσω της μεθόδου <literal>GetText</literal>, όταν το <literal>context</literal> είναι κενό."
 
 #. 7FDE9
 #: sf_l10n.xhp
@@ -19121,7 +19652,7 @@ msgctxt ""
 "par_id311614361926844\n"
 "help.text"
 msgid "The <literal>msgid</literal> string may contain any number of placeholders (%1 %2 %3 ...) for dynamically modifying the string at runtime."
-msgstr ""
+msgstr "Η συμβολοσειρά <literal>msgid</literal> μπορεί να περιέχει οποιονδήποτε αριθμό δεσμευτικών θέσης (%1 %2 %3 ...) για δυναμική τροποποίηση της συμβολοσειράς κατά το χρόνο εκτέλεσης."
 
 #. ioGmP
 #: sf_l10n.xhp
@@ -19130,7 +19661,7 @@ msgctxt ""
 "par_id541585844475331\n"
 "help.text"
 msgid "<emph>comment</emph>: Optional comment to be added alongside the string to help translators."
-msgstr ""
+msgstr "<emph>comment</emph> (σχόλιο): Προαιρετικό σχόλιο που θα προστεθεί δίπλα στη συμβολοσειρά για να βοηθηθούν οι μεταφραστές."
 
 #. TAyPG
 #: sf_l10n.xhp
@@ -19139,7 +19670,7 @@ msgctxt ""
 "par_id461614364298440\n"
 "help.text"
 msgid "The example below creates a set of strings in English:"
-msgstr ""
+msgstr "Το παρακάτω παράδειγμα δημιουργεί ένα σύνολο συμβολοσειρών στα Αγγλικά:"
 
 #. rWt7U
 #: sf_l10n.xhp
@@ -19148,7 +19679,7 @@ msgctxt ""
 "par_id1001585843659821\n"
 "help.text"
 msgid "Automatically extracts strings from a dialog and adds them to the list of localizable text strings. The following strings are extracted:"
-msgstr ""
+msgstr "Εξάγει αυτόματα συμβολοσειρές από ένα παράθυρο διαλόγου και τις προσθέτει στον κατάλογο των τοπικών συμβολοσειρών κειμένου. Εξάγονται οι ακόλουθες συμβολοσειρές:"
 
 #. bS7ZL
 #: sf_l10n.xhp
@@ -19157,7 +19688,7 @@ msgctxt ""
 "par_id621637863440015\n"
 "help.text"
 msgid "The title of the dialog."
-msgstr ""
+msgstr "Ο τίτλος του διαλόγου."
 
 #. EBFAC
 #: sf_l10n.xhp
@@ -19166,7 +19697,7 @@ msgctxt ""
 "par_id61637863440399\n"
 "help.text"
 msgid "The caption of the following control types: Button, CheckBox, FixedLine, FixedText, GroupBox and RadioButton."
-msgstr ""
+msgstr "Η λεζάντα των ακόλουθων τύπων ελέγχου: Button (πλήκτρο), CheckBox (πλαίσιο ελέγχου), FixedLine (σταθερή γραμμή), FixedText (σταθερό κείμενο), GroupBox (πλαίσιο ομάδας)και RadioButton (πλήκτρο επιλογής)."
 
 #. uCL85
 #: sf_l10n.xhp
@@ -19175,7 +19706,7 @@ msgctxt ""
 "par_id251637863440626\n"
 "help.text"
 msgid "Static strings in ListBoxes and ComboBoxes."
-msgstr ""
+msgstr "Στατικές συμβολοσειρές σε πλαίσια καταλόγου και σύνθετα πλαίσια."
 
 #. HWkAU
 #: sf_l10n.xhp
@@ -19184,7 +19715,7 @@ msgctxt ""
 "par_id811637863596791\n"
 "help.text"
 msgid "The tooltip or help text displayed when the mouse hovers over the control."
-msgstr ""
+msgstr "Η συμβουλή οθόνης ή το κείμενο βοήθειας που εμφανίζεται όταν το ποντίκι τοποθετείται πάνω από το στοιχείο ελέγχου."
 
 #. gKbEN
 #: sf_l10n.xhp
@@ -19193,7 +19724,7 @@ msgctxt ""
 "par_id641625855723650\n"
 "help.text"
 msgid "The method returns <literal>True</literal> if successful."
-msgstr ""
+msgstr "Η μέθοδος επιστρέφει <literal>True</literal> εάν είναι επιτυχής."
 
 #. Kcowa
 #: sf_l10n.xhp
@@ -19202,7 +19733,7 @@ msgctxt ""
 "par_id731637863894577\n"
 "help.text"
 msgid "The dialog from which strings will be extracted must not be open when the method is called."
-msgstr ""
+msgstr "Το παράθυρο διαλόγου από το οποίο θα εξαχθούν οι συμβολοσειρές δεν πρέπει να είναι ανοιχτό όταν καλείται η μέθοδος."
 
 #. 75EGY
 #: sf_l10n.xhp
@@ -19211,7 +19742,7 @@ msgctxt ""
 "par_id911637864050221\n"
 "help.text"
 msgid "When a <literal>L10N</literal> service instance is created from an existing PO file, use the <link href=\"text/sbasic/shared/03/sf_dialog.xhp#GetTextsFromL10N\" name=\"GetTextsFromL10N\">GetTextsFromL10N</link> method from the <literal>Dialog</literal> service to automatically load all translated strings into the dialog."
-msgstr ""
+msgstr "Όταν δημιουργείται μια παρουσία υπηρεσίας <literal>L10N</literal> από ένα υπάρχον αρχείο PO, χρησιμοποιήστε τη μέθοδο <link href=\"text/sbasic/shared/03/sf_dialog.xhp#GetTextsFromL10N\" name=\"GetTextsFromL10N\">GetTextsFromL10N</link> από την υπηρεσία <literal>Dialog</literal> για αυτόματη φόρτωση όλων των μεταφρασμένων συμβολοσειρών στο παράθυρο διαλόγου."
 
 #. ejhbN
 #: sf_l10n.xhp
@@ -19220,7 +19751,7 @@ msgctxt ""
 "par_id391585843652113\n"
 "help.text"
 msgid "<emph>dialog</emph>: a Dialog service instance corresponding to the dialog from which strings will be extracted."
-msgstr ""
+msgstr "<emph>dialog</emph> (διάλογος): μια παρουσία υπηρεσίας διαλόγου που αντιστοιχεί στο παράθυρο διαλόγου από το οποίο θα εξαχθούν οι συμβολοσειρές."
 
 #. QzWzG
 #: sf_l10n.xhp
@@ -19229,7 +19760,7 @@ msgctxt ""
 "par_id461614364298983\n"
 "help.text"
 msgid "The following example extracts all strings from the dialog \"MyDialog\" stored in the \"Standard\" library and exports them to a POT file:"
-msgstr ""
+msgstr "Το ακόλουθο παράδειγμα εξάγει όλες τις συμβολοσειρές από το παράθυρο διαλόγου \"MyDialog\" που είναι αποθηκευμένο στη βιβλιοθήκη \"Standard\" και τις εξάγει σε ένα αρχείο POT:"
 
 #. DqFBf
 #: sf_l10n.xhp
@@ -19238,7 +19769,7 @@ msgctxt ""
 "par_id281586102707242\n"
 "help.text"
 msgid "Exports a set of untranslated strings as a POT file."
-msgstr ""
+msgstr "Εξάγει ένα σύνολο αμετάφραστων συμβολοσειρών ως αρχείο POT."
 
 #. NABBq
 #: sf_l10n.xhp
@@ -19247,7 +19778,7 @@ msgctxt ""
 "par_id711586102939257\n"
 "help.text"
 msgid "To build a set of strings you can use either a succession of <literal>AddText</literal> method calls, or by a successful invocation of the <literal>L10N</literal> service with the <literal>foldername</literal> argument present. It is also possible to use a combination of both techniques."
-msgstr ""
+msgstr "Για να δημιουργήσετε ένα σύνολο συμβολοσειρών, μπορείτε να χρησιμοποιήσετε είτε μια διαδοχή κλήσεων μεθόδου <literal>AddText</literal>, είτε με μια επιτυχημένη κλήση της υπηρεσίας <literal>L10N</literal> με το όρισμα <literal>foldername</literal> (όνομα φακέλου) παρόν. Είναι επίσης δυνατό να χρησιμοποιηθεί ένας συνδυασμός και των δύο τεχνικών."
 
 #. Pb4VF
 #: sf_l10n.xhp
@@ -19256,7 +19787,7 @@ msgctxt ""
 "par_id641625855725141\n"
 "help.text"
 msgid "The method returns <literal>True</literal> if successful."
-msgstr ""
+msgstr "Η μέθοδος επιστρέφει <literal>True</literal> εάν είναι επιτυχής."
 
 #. BsmCX
 #: sf_l10n.xhp
@@ -19265,7 +19796,7 @@ msgctxt ""
 "par_id31586102707537\n"
 "help.text"
 msgid "<emph>filename</emph>: The output file in <literal>FileSystem.FileNaming</literal> notation."
-msgstr ""
+msgstr "<emph>filename</emph> (όνομα αρχείου): Το αρχείο εξόδου στη σημειογραφία <literal>FileSystem.FileNaming</literal>."
 
 #. jQV77
 #: sf_l10n.xhp
@@ -19274,7 +19805,7 @@ msgctxt ""
 "par_id851586102707579\n"
 "help.text"
 msgid "<emph>header</emph>: Comments that will be added on top of the generated POT file."
-msgstr ""
+msgstr "<emph>header</emph> (κεφαλίδα): Σχόλια που θα προστεθούν επιπλέον του POT που δημιουργήθηκε."
 
 #. YhYbQ
 #: sf_l10n.xhp
@@ -19283,7 +19814,7 @@ msgctxt ""
 "par_id111614364686973\n"
 "help.text"
 msgid "Do not include any leading \"#\" characters. If you want the header to be broken into multiple lines, insert escape sequences (\\n) where relevant. A standard header will be added alongside the text specified in the <literal>header</literal> argument."
-msgstr ""
+msgstr "Μην συμπεριλάβετε κανέναν \"#\" χαρακτήρα στην αρχή. Εάν θέλετε η κεφαλίδα να σπάσει σε πολλές γραμμές, εισαγάγετε τις ακολουθίες διαφυγής (\\n) όπου χρειάζεται. Μια τυπική κεφαλίδα θα προστεθεί δίπλα στο κείμενο που καθορίζεται στο όρισμα <literal>header</literal>."
 
 #. E2Loj
 #: sf_l10n.xhp
@@ -19292,7 +19823,7 @@ msgctxt ""
 "par_id5158610270728\n"
 "help.text"
 msgid "<emph>encoding</emph>: The character set to be used (Default = \"UTF-8\")."
-msgstr ""
+msgstr "<emph>encoding</emph> (κωδικοποίηση): Το σύνολο χαρακτήρων που θα χρησιμοποιηθεί (Προεπιλογή = \"UTF-8\")."
 
 #. uDu7z
 #: sf_l10n.xhp
@@ -19301,7 +19832,7 @@ msgctxt ""
 "par_id581614364494235\n"
 "help.text"
 msgid "The generated file should successfully pass the <literal>msgfmt --check</literal> GNU command."
-msgstr ""
+msgstr "Το αρχείο που δημιουργήθηκε θα πρέπει να περάσει με επιτυχία την εντολή GNU <literal>msgfmt --check</literal>."
 
 #. 32fPj
 #: sf_l10n.xhp
@@ -19310,7 +19841,7 @@ msgctxt ""
 "par_id891586165768715\n"
 "help.text"
 msgid "Gets the translated string corresponding to the given <literal>msgid</literal> argument."
-msgstr ""
+msgstr "Λαμβάνει τη μεταφρασμένη συμβολοσειρά που αντιστοιχεί στο δεδομένο όρισμα <literal>msgid</literal>."
 
 #. NzGZC
 #: sf_l10n.xhp
@@ -19319,7 +19850,7 @@ msgctxt ""
 "par_id291614365296959\n"
 "help.text"
 msgid "A list of arguments may be specified to replace the placeholders (%1, %2, ...) in the string."
-msgstr ""
+msgstr "Μπορεί να καθοριστεί ένας κατάλογος ορισμάτων για να αντικαταστήσει τα δεσμευτικά θέσης (%1, %2, ...) στη συμβολοσειρά."
 
 #. 9DBFa
 #: sf_l10n.xhp
@@ -19328,7 +19859,7 @@ msgctxt ""
 "par_id231586166181909\n"
 "help.text"
 msgid "If no translated string is found, the method returns the untranslated string after replacing the placeholders with the specified arguments."
-msgstr ""
+msgstr "Εάν δεν βρεθεί μεταφρασμένη συμβολοσειρά, η μέθοδος επιστρέφει τη αμετάφραστη συμβολοσειρά αφού αντικαταστήσει τα δεσμευτικά θέσης με τα καθορισμένα ορίσματα."
 
 #. bAcmJ
 #: sf_l10n.xhp
@@ -19337,7 +19868,7 @@ msgctxt ""
 "par_id871586352505927\n"
 "help.text"
 msgid "This method can be called either by the full name <literal>GetText</literal> or by the shortcut <literal>_</literal> (a single underscore):"
-msgstr ""
+msgstr "Αυτή η μέθοδος μπορεί να καλείται είτε με το πλήρες όνομα <literal>GetText</literal>, είτε με τη συντόμευση <literal>_</literal> (μία μόνο υπογράμμιση):"
 
 #. mvB66
 #: sf_l10n.xhp
@@ -19346,7 +19877,7 @@ msgctxt ""
 "par_id421614967136502\n"
 "help.text"
 msgid "In the ScriptForge library, all methods starting with the \"_\" character are reserved for internal use only. However, the shortcut <literal>_</literal> used for <literal>GetText</literal> is the only exception to this rule, hence it can be safely used in Basic and Python scripts."
-msgstr ""
+msgstr "Στη βιβλιοθήκη ScriptForge, όλες οι μέθοδοι που ξεκινούν με τον χαρακτήρα \"_\" δεσμεύονται μόνο για εσωτερική χρήση. Ωστόσο, η συντόμευση <literal>_</literal> που χρησιμοποιείται για το <literal>GetText</literal> είναι η μόνη εξαίρεση σε αυτόν τον κανόνα, επομένως μπορεί να χρησιμοποιηθεί με ασφάλεια σε σενάρια Basic και Python."
 
 #. 2ZVAQ
 #: sf_l10n.xhp
@@ -19355,7 +19886,7 @@ msgctxt ""
 "par_id51586165768525\n"
 "help.text"
 msgid "<emph>msgid</emph>: The untranslated string, which is the text appearing in the program code. It must not be empty. It may contain any number of placeholders (%1 %2 %3 ...) that can be used to dynamically insert text at runtime."
-msgstr ""
+msgstr "<emph>msgid</emph>: Η αμετάφραστη συμβολοσειρά, η οποία είναι το κείμενο που εμφανίζεται στον κώδικα του προγράμματος. Δεν πρέπει να είναι άδειο. Μπορεί να περιέχει οποιονδήποτε αριθμό δεσμευτικών θέσης (%1 %2 %3 ...) που μπορούν να χρησιμοποιηθούν για δυναμική εισαγωγή κειμένου κατά το χρόνο εκτέλεσης."
 
 #. dALxK
 #: sf_l10n.xhp
@@ -19364,7 +19895,7 @@ msgctxt ""
 "par_id11614365537450\n"
 "help.text"
 msgid "Besides using a single <literal>msgid</literal> string, this method also accepts the following formats:"
-msgstr ""
+msgstr "Εκτός από τη χρήση μιας μόνο συμβολοσειράς <literal>msgid</literal>, αυτή η μέθοδος δέχεται επίσης τις ακόλουθες μορφές:"
 
 #. Q7Bbm
 #: sf_l10n.xhp
@@ -19373,7 +19904,7 @@ msgctxt ""
 "par_id961614365557277\n"
 "help.text"
 msgid "The <literal>context</literal> string with which the method will retrieve the <literal>msgid</literal> in the PO file, or;"
-msgstr ""
+msgstr "Η συμβολοσειρά <literal>context</literal> με την οποία η μέθοδος θα ανακτήσει το <literal>msgid</literal> στο αρχείο PO, ή,"
 
 #. rTDrq
 #: sf_l10n.xhp
@@ -19382,7 +19913,7 @@ msgctxt ""
 "par_id981614365589866\n"
 "help.text"
 msgid "A combination <literal>context|msgid</literal>, instructing the method to retrieve the <literal>msgid</literal> using specified <literal>context</literal> value. The second part of the argument is used to improve code readability."
-msgstr ""
+msgstr "Ένας συνδυασμός <literal>context|msgid</literal>, που δίνει οδηγίες στη μέθοδο να ανακτήσει το <literal>msgid</literal> χρησιμοποιώντας την καθορισμένη τιμή <literal>context</literal>. Το δεύτερο μέρος του ορίσματος χρησιμοποιείται για τη βελτίωση της αναγνωσιμότητας του κώδικα."
 
 #. dW6RE
 #: sf_l10n.xhp
@@ -19391,7 +19922,7 @@ msgctxt ""
 "par_id571586165768106\n"
 "help.text"
 msgid "<emph>args</emph>: Values to be inserted into the placeholders. Any variable type is allowed, however only strings, numbers and dates will be considered."
-msgstr ""
+msgstr "<emph>args</emph>: Τιμές που θα εισαχθούν στα δεσμευτικά θέσης. Επιτρέπεται οποιοσδήποτε τύπος μεταβλητής, ωστόσο θα ληφθούν υπόψη μόνο συμβολοσειρές, αριθμοί και ημερομηνίες."
 
 #. cCZDK
 #: sf_l10n.xhp
@@ -19400,7 +19931,7 @@ msgctxt ""
 "par_id701614365961454\n"
 "help.text"
 msgid "Consider the following code is running on a %PRODUCTNAME installation with locale set to \"es-ES\". Additionally, there is a file \"es-ES.po\" inside the specified folder that translates the string passed to the <literal>GetText</literal> method:"
-msgstr ""
+msgstr "Σκεφτείτε ότι ο ακόλουθος κώδικας εκτελείται σε μια εγκατάσταση του %PRODUCTNAME με την τοπική ρύθμιση σε \"es-ES\". Επιπλέον, υπάρχει ένα αρχείο \"es-ES.po\" μέσα στον καθορισμένο φάκελο που μεταφράζει τη συμβολοσειρά που μεταβιβάστηκε στη μέθοδο <literal>GetText</literal>:"
 
 #. yD78g
 #: sf_menu.xhp
@@ -19409,7 +19940,7 @@ msgctxt ""
 "tit\n"
 "help.text"
 msgid "SFWidgets.Menu service"
-msgstr ""
+msgstr "Υπηρεσία SFWidgets.Menu"
 
 #. F5KPb
 #: sf_menu.xhp
@@ -19418,7 +19949,7 @@ msgctxt ""
 "bm_id681600788076499\n"
 "help.text"
 msgid "<variable id=\"MenuService\"><link href=\"text/sbasic/shared/03/sf_menu.xhp\" name=\"Menu service\"><literal>SFWidgets</literal>.<literal>Menu</literal> service</link></variable>"
-msgstr ""
+msgstr "<variable id=\"MenuService\"><link href=\"text/sbasic/shared/03/sf_menu.xhp\" name=\"Menu service\">Υπηρεσία <literal>SFWidgets</literal>.<literal>Menu</literal></link></variable>"
 
 #. FqGPg
 #: sf_menu.xhp
@@ -19427,7 +19958,7 @@ msgctxt ""
 "par_id181600788076612\n"
 "help.text"
 msgid "The <literal>Menu</literal> service can be used to create and remove menus from the menubar of a %PRODUCTNAME document window. Each menu entry can be associated with a script or with a UNO command. This service provides the following capabilities:"
-msgstr ""
+msgstr "Η υπηρεσία <literal>Μενού</literal> μπορεί να χρησιμοποιηθεί για τη δημιουργία και την αφαίρεση μενού από τη γραμμή μενού ενός παραθύρου εγγράφου του %PRODUCTNAME. Κάθε καταχώρηση μενού μπορεί να συσχετιστεί με ένα σενάριο ή με μια εντολή UNO. Αυτή η υπηρεσία παρέχει τις ακόλουθες δυνατότητες:"
 
 #. UYDdv
 #: sf_menu.xhp
@@ -19436,7 +19967,7 @@ msgctxt ""
 "par_id301600788076785\n"
 "help.text"
 msgid "Creation of menus with custom entries, checkboxes, radio buttons and separators."
-msgstr ""
+msgstr "Δημιουργία μενού με προσαρμοσμένες καταχωρήσεις, πλαίσια ελέγχου, κουμπιά επιλογής και διαχωριστικά."
 
 #. KB9XF
 #: sf_menu.xhp
@@ -19445,7 +19976,7 @@ msgctxt ""
 "par_id1001600788076848\n"
 "help.text"
 msgid "Decoration of menu items with icons and tooltips."
-msgstr ""
+msgstr "Διακόσμηση στοιχείων μενού με εικονίδια και συμβουλές οθόνης."
 
 #. JSwJW
 #: sf_menu.xhp
@@ -19454,7 +19985,7 @@ msgctxt ""
 "par_id581643133675012\n"
 "help.text"
 msgid "Menus created with this service are available only for a specified document window. They are not saved into the document or as application settings. Closing and opening the document will restore the default menubar settings."
-msgstr ""
+msgstr "Τα μενού που δημιουργούνται με αυτήν την υπηρεσία είναι διαθέσιμα μόνο για ένα καθορισμένο παράθυρο εγγράφου. Δεν αποθηκεύονται στο έγγραφο ή ως ρυθμίσεις εφαρμογής. Το κλείσιμο και το άνοιγμα του εγγράφου θα επαναφέρει τις προεπιλεγμένες ρυθμίσεις της γραμμής μενού."
 
 #. FEfWE
 #: sf_menu.xhp
@@ -19463,7 +19994,7 @@ msgctxt ""
 "par_id291643224925643\n"
 "help.text"
 msgid "When OLE objects such as Math formulas or Calc charts are edited from within a document, %PRODUCTNAME reconfigures the menubar according to the object. When this happens, the menus created with the <literal>Menu</literal> service are removed and are not be restored after editing the OLE object."
-msgstr ""
+msgstr "Όταν τα αντικείμενα OLE, όπως μαθηματικοί τύποι ή γραφήματα Calc επεξεργάζονται μέσα από ένα έγγραφο, το %PRODUCTNAME διαμορφώνει εκ νέου τη γραμμή μενού σύμφωνα με το αντικείμενο. Όταν συμβεί αυτό, τα μενού που δημιουργούνται με την υπηρεσία <literal>Menu</literal> καταργούνται και δεν επαναφέρονται μετά την επεξεργασία του αντικειμένου OLE."
 
 #. GftK9
 #: sf_menu.xhp
@@ -19472,7 +20003,7 @@ msgctxt ""
 "hd_id281600788076359\n"
 "help.text"
 msgid "Service invocation"
-msgstr ""
+msgstr "Κλήση υπηρεσίας"
 
 #. o7QCg
 #: sf_menu.xhp
@@ -19481,7 +20012,7 @@ msgctxt ""
 "par_id141609955500101\n"
 "help.text"
 msgid "Before using the <literal>Menu</literal> service the <literal>ScriptForge</literal> library needs to be loaded or imported:"
-msgstr ""
+msgstr "Πριν χρησιμοποιήσετε την υπηρεσία <literal>Menu</literal>, πρέπει να φορτωθεί ή να εισαχθεί η βιβλιοθήκη <literal>ScriptForge</literal>:"
 
 #. DzDmt
 #: sf_menu.xhp
@@ -19490,7 +20021,7 @@ msgctxt ""
 "par_id321614902851541\n"
 "help.text"
 msgid "The <literal>Menu</literal> service is instantiated by calling the <link href=\"text/sbasic/shared/03/sf_document.xhp#CreateMenu\" name=\"CreateMenu_link\"><literal>CreateMenu</literal></link> method from the <literal>Document</literal> service. The code snippet below creates a menu named <emph>My Menu</emph> in the current document window with two entries <emph>Item A</emph> and <emph>Item B</emph>."
-msgstr ""
+msgstr "Η υπηρεσία <literal>Μενού</literal> δημιουργείται με την κλήση της μεθόδου <link href=\"text/sbasic/shared/03/sf_document.xhp#CreateMenu\" name=\"CreateMenu_link\"><literal>CreateMenu</literal></link> από την υπηρεσία <literal>Document</literal>. Το παρακάτω απόσπασμα κώδικα δημιουργεί ένα μενού με το όνομα <emph>My Menu</emph> στο τρέχον παράθυρο του εγγράφου με δύο καταχωρήσεις <emph>Item A</emph> (Στοιχείο A) και <emph>Item B</emph> (Στοιχείο Β) ."
 
 #. pf7FV
 #: sf_menu.xhp
@@ -19499,7 +20030,7 @@ msgctxt ""
 "bas_id261643134374056\n"
 "help.text"
 msgid "Set oMenu = oDoc.CreateMenu(\"My Menu\")"
-msgstr ""
+msgstr "Set oMenu = oDoc.CreateMenu(\"My Menu\")"
 
 #. Hoh4Q
 #: sf_menu.xhp
@@ -19508,7 +20039,7 @@ msgctxt ""
 "bas_id431643134582213\n"
 "help.text"
 msgid ".AddItem(\"Item A\", Command := \"About\")"
-msgstr ""
+msgstr ".AddItem(\"Item A\", Command := \"About\")"
 
 #. u52BY
 #: sf_menu.xhp
@@ -19517,7 +20048,7 @@ msgctxt ""
 "bas_id571643134582396\n"
 "help.text"
 msgid ".AddItem(\"Item B\", Script := \"vnd.sun.star.script:Standard.Module1.ItemB_Listener?language=Basic&location=application\")"
-msgstr ""
+msgstr ".AddItem(\"Item B\", Script := \"vnd.sun.star.script:Standard.Module1.ItemB_Listener?language=Basic&location=application\")"
 
 #. nd5od
 #: sf_menu.xhp
@@ -19526,7 +20057,7 @@ msgctxt ""
 "par_id371643135157996\n"
 "help.text"
 msgid "After creating the menu, it is recommended to call the <literal>Dispose</literal> method to free the resources used by the <literal>Menu</literal> service instance."
-msgstr ""
+msgstr "Μετά τη δημιουργία του μενού, συνιστάται να καλέσετε τη μέθοδο <literal>Dispose</literal> (Απόρριψη) για να ελευθερώσετε τους πόρους που χρησιμοποιούνται από την παρουσία της υπηρεσίας <literal>Menu</literal>."
 
 #. 2VDkD
 #: sf_menu.xhp
@@ -19535,7 +20066,7 @@ msgctxt ""
 "par_id341636718182262\n"
 "help.text"
 msgid "In the example above, <emph>Item A</emph> is associated with the UNO command <literal>.uno:About</literal> whereas <emph>Item B</emph> is associated with the script <literal>ItemB_Listener</literal> defined in <literal>Module1</literal> of the <literal>Standard</literal> library of the <literal>My Macros</literal> container."
-msgstr ""
+msgstr "Στο παραπάνω παράδειγμα, το <emph>Item A</emph> (Στοιχείο A) σχετίζεται με την εντολή UNO <literal>.uno:About</literal>, ενώ το <emph>Item B</emph> (Στοιχείο B) σχετίζεται με το σενάριο <literal>ItemB_Listener </literal> που ορίστηκε στο <literal>Module1</literal> της βιβλιοθήκης <literal>Standard</literal> του περιέκτη <literal>My Macros</literal> (Οι μακροεντολές μου)."
 
 #. 9G7de
 #: sf_menu.xhp
@@ -19544,7 +20075,7 @@ msgctxt ""
 "par_id851635274721129\n"
 "help.text"
 msgid "The following example defines <literal>ItemB_Listener</literal> that will be called when <emph>Item B</emph> is clicked. This listener simply splits the argument string passed to the <literal>Sub</literal> and shows them in a message box."
-msgstr ""
+msgstr "Το παρακάτω παράδειγμα ορίζει το <literal>ItemB_Listener</literal> που θα καλείται όταν πατάτε στο <emph>Item B</emph>. Αυτός ο ακροατής απλώς χωρίζει τη συμβολοσειρά ορισμάτων που μεταβιβάστηκε στο <literal>Sub</literal> και τα εμφανίζει σε ένα πλαίσιο μηνύματος."
 
 #. AFHBG
 #: sf_menu.xhp
@@ -19553,7 +20084,7 @@ msgctxt ""
 "bas_id716431354225603\n"
 "help.text"
 msgid "' Process the argument string passed to the listener"
-msgstr ""
+msgstr "' Επεξεργασία της συμβολοσειράς ορισμάτων που μεταβιβάστηκε στον ακροατή"
 
 #. GzLwF
 #: sf_menu.xhp
@@ -19562,7 +20093,7 @@ msgctxt ""
 "bas_id901643135423012\n"
 "help.text"
 msgid "MsgBox \"Menu name: \"   & sArgs(0) & Chr(13) & _"
-msgstr ""
+msgstr "MsgBox \"Όνομα μενού: \"   & sArgs(0) & Chr(13) & _"
 
 #. qGB7L
 #: sf_menu.xhp
@@ -19571,7 +20102,7 @@ msgctxt ""
 "bas_id301643136028263\n"
 "help.text"
 msgid "\"Menu item: \"   & sArgs(1) & Chr(13) & _"
-msgstr ""
+msgstr "\"Στοιχείο μενού: \"   & sArgs(1) & Chr(13) & _"
 
 #. wFTww
 #: sf_menu.xhp
@@ -19580,7 +20111,7 @@ msgctxt ""
 "bas_id181643136028557\n"
 "help.text"
 msgid "\"Item ID: \"     & sArgs(2) & Chr(13) & _"
-msgstr ""
+msgstr "\"Αναγνωριστικό στοιχείου: \"     & sArgs(2) & Chr(13) & _"
 
 #. 9SGVd
 #: sf_menu.xhp
@@ -19589,7 +20120,7 @@ msgctxt ""
 "bas_id561643136028710\n"
 "help.text"
 msgid "\"Item status: \" & sArgs(3)"
-msgstr ""
+msgstr "\"Κατάσταση στοιχείου: \" & sArgs(3)"
 
 #. MQJ7M
 #: sf_menu.xhp
@@ -19598,7 +20129,7 @@ msgctxt ""
 "par_id531636493797707\n"
 "help.text"
 msgid "As shown in the example above, menu entries associated with a script receive a comma-separated string argument with the following values:"
-msgstr ""
+msgstr "Όπως φαίνεται στο παραπάνω παράδειγμα, οι καταχωρήσεις μενού που σχετίζονται με ένα σενάριο λαμβάνουν ένα όρισμα συμβολοσειράς διαχωρισμένο με κόμμα με τις ακόλουθες τιμές:"
 
 #. uprfo
 #: sf_menu.xhp
@@ -19607,7 +20138,7 @@ msgctxt ""
 "par_id921643136489994\n"
 "help.text"
 msgid "The toplevel name of the menu."
-msgstr ""
+msgstr "Το όνομα ανωτάτου επιπέδου του μενού."
 
 #. 7Jxz9
 #: sf_menu.xhp
@@ -19616,7 +20147,7 @@ msgctxt ""
 "par_id611643136491059\n"
 "help.text"
 msgid "The string ID of the selected menu entry."
-msgstr ""
+msgstr "Το αναγνωριστικό συμβολοσειράς της επιλεγμένης καταχώρισης μενού."
 
 #. hENoG
 #: sf_menu.xhp
@@ -19625,7 +20156,7 @@ msgctxt ""
 "par_id961643136491491\n"
 "help.text"
 msgid "The numeric ID of the selected menu entry."
-msgstr ""
+msgstr "Το αριθμητικό αναγνωριστικό της επιλεγμένης καταχώρισης μενού."
 
 #. nYABy
 #: sf_menu.xhp
@@ -19634,7 +20165,7 @@ msgctxt ""
 "par_id381643136494580\n"
 "help.text"
 msgid "The current state of the menu item. This is useful for checkboxes and radio buttons. If the item is checked, the value \"1\" is returned, otherwise \"0\" is returned."
-msgstr ""
+msgstr "Η τρέχουσα κατάσταση του στοιχείου μενού. Αυτό είναι χρήσιμο για πλαίσια ελέγχου και κουμπιά επιλογής. Εάν το στοιχείο είναι επιλεγμένο, επιστρέφεται η τιμή \"1\", διαφορετικά επιστρέφεται το \"0\"."
 
 #. HHjiV
 #: sf_menu.xhp
@@ -19643,7 +20174,7 @@ msgctxt ""
 "par_id131635275172617\n"
 "help.text"
 msgid "The examples above can be written in Python as follows:"
-msgstr ""
+msgstr "Τα παραπάνω παραδείγματα μπορούν να γραφτούν στην Python ως εξής:"
 
 #. 6LQF4
 #: sf_menu.xhp
@@ -19652,7 +20183,7 @@ msgctxt ""
 "pyc_id981636717957632\n"
 "help.text"
 msgid "msg = f\"Menu name: {s_args[0]}\\n\""
-msgstr ""
+msgstr "msg = f\"Όνομα του μενού: {s_args[0]}\\n\""
 
 #. GPKGe
 #: sf_menu.xhp
@@ -19661,7 +20192,7 @@ msgctxt ""
 "pyc_id851636718008427\n"
 "help.text"
 msgid "msg += f\"Menu item: {s_args[1]}\\n\""
-msgstr ""
+msgstr "msg += f\"Στοιχείο του μενού: {s_args[1]}\\n\""
 
 #. EfEaE
 #: sf_menu.xhp
@@ -19670,7 +20201,7 @@ msgctxt ""
 "pyc_id331636727047102\n"
 "help.text"
 msgid "msg += f\"Item ID: {s_args[2]}\\n\""
-msgstr ""
+msgstr "msg += f\"Αναγνωριστικό του μενού: {s_args[2]}\\n\""
 
 #. FPzcf
 #: sf_menu.xhp
@@ -19679,7 +20210,7 @@ msgctxt ""
 "pyc_id71643137333404\n"
 "help.text"
 msgid "msg += f\"Item status: {s_args[3]}\""
-msgstr ""
+msgstr "msg += f\"Κατάσταση του στοιχείου: {s_args[3]}\""
 
 #. XxChZ
 #: sf_menu.xhp
@@ -19688,7 +20219,7 @@ msgctxt ""
 "hd_id711600788076834\n"
 "help.text"
 msgid "Properties"
-msgstr ""
+msgstr "Ιδιότητες"
 
 #. 98USM
 #: sf_menu.xhp
@@ -19697,7 +20228,7 @@ msgctxt ""
 "par_id461600788076917\n"
 "help.text"
 msgid "Name"
-msgstr ""
+msgstr "Όνομα"
 
 #. fT8mQ
 #: sf_menu.xhp
@@ -19706,7 +20237,7 @@ msgctxt ""
 "par_id221600788076591\n"
 "help.text"
 msgid "Readonly"
-msgstr ""
+msgstr "Μόνο για ανάγνωση"
 
 #. DGBgA
 #: sf_menu.xhp
@@ -19715,7 +20246,7 @@ msgctxt ""
 "par_id761600788076328\n"
 "help.text"
 msgid "Type"
-msgstr ""
+msgstr "Τύπος"
 
 #. 2EE9k
 #: sf_menu.xhp
@@ -19724,7 +20255,7 @@ msgctxt ""
 "par_id67160078807636\n"
 "help.text"
 msgid "Description"
-msgstr ""
+msgstr "Περιγραφή"
 
 #. qnRDA
 #: sf_menu.xhp
@@ -19733,7 +20264,7 @@ msgctxt ""
 "par_id49160078807654\n"
 "help.text"
 msgid "No"
-msgstr ""
+msgstr "Όχι"
 
 #. LE27e
 #: sf_menu.xhp
@@ -19742,7 +20273,7 @@ msgctxt ""
 "par_id81600788076419\n"
 "help.text"
 msgid "Character used to define the access key of a menu item. The default character is \"~\"."
-msgstr ""
+msgstr "Ο χαρακτήρας που χρησιμοποιείται για τον καθορισμό του κλειδιού πρόσβασης ενός στοιχείου μενού. Ο προεπιλεγμένος χαρακτήρας είναι \"~\"."
 
 #. GSJAG
 #: sf_menu.xhp
@@ -19751,7 +20282,7 @@ msgctxt ""
 "par_id311600788076756\n"
 "help.text"
 msgid "No"
-msgstr ""
+msgstr "Όχι"
 
 #. fb3iG
 #: sf_menu.xhp
@@ -19760,7 +20291,7 @@ msgctxt ""
 "par_id441600788076826\n"
 "help.text"
 msgid "Character or string that defines how menu items are nested. The default character is \">\"."
-msgstr ""
+msgstr "Ο χαρακτήρας ή η συμβολοσειρά που καθορίζει τον τρόπο ένθεσης των στοιχείων μενού. Ο προεπιλεγμένος χαρακτήρας είναι \">\"."
 
 #. bDCZ8
 #: sf_menu.xhp
@@ -19769,7 +20300,7 @@ msgctxt ""
 "hd_id181636719707892\n"
 "help.text"
 msgid "Menu and Submenus"
-msgstr ""
+msgstr "Μενού και υπομενού"
 
 #. YE5FL
 #: sf_menu.xhp
@@ -19778,7 +20309,7 @@ msgctxt ""
 "par_id741636719725402\n"
 "help.text"
 msgid "To create a menu with submenus, use the character defined in the <literal>SubmenuCharacter</literal> property while creating the menu entry to define where it will be placed. For instance, consider the following menu/submenu hierarchy."
-msgstr ""
+msgstr "Για να δημιουργήσετε ένα μενού με υπομενού, χρησιμοποιήστε τον χαρακτήρα που ορίστηκε στην ιδιότητα <literal>SubmenuCharacter</literal>, ενώ δημιουργείτε την καταχώρηση μενού για να ορίσετε πού θα τοποθετηθεί. Για παράδειγμα, εξετάστε την ακόλουθη ιεραρχία μενού/υπομενού."
 
 #. Y4ETY
 #: sf_menu.xhp
@@ -19787,7 +20318,7 @@ msgctxt ""
 "par_id211636720111489\n"
 "help.text"
 msgid "The code below uses the default submenu character \">\" to create the menu/submenu hierarchy defined above:"
-msgstr ""
+msgstr "Ο παρακάτω κώδικας χρησιμοποιεί τον προεπιλεγμένο χαρακτήρα υπομενού \">\" για να δημιουργήσει την ιεραρχία μενού/υπομενού που ορίζεται παραπάνω:"
 
 #. WkCis
 #: sf_menu.xhp
@@ -19796,7 +20327,7 @@ msgctxt ""
 "par_id121636721243578\n"
 "help.text"
 msgid "The string \"---\" is used to define line separators in menus or submenus."
-msgstr ""
+msgstr "Η συμβολοσειρά \"---\" χρησιμοποιείται για τον ορισμό διαχωριστικών γραμμών σε μενού ή υπομενού."
 
 #. CYbLC
 #: sf_menu.xhp
@@ -19805,7 +20336,7 @@ msgctxt ""
 "hd_id501582887473754\n"
 "help.text"
 msgid "Methods"
-msgstr ""
+msgstr "Μέθοδοι"
 
 #. Lofgb
 #: sf_menu.xhp
@@ -19814,7 +20345,7 @@ msgctxt ""
 "par_id891611613601554\n"
 "help.text"
 msgid "List of Methods in the Menu Service"
-msgstr ""
+msgstr "Κατάλογος μεθόδων στην υπηρεσία μενού"
 
 #. aDqJH
 #: sf_menu.xhp
@@ -19823,7 +20354,7 @@ msgctxt ""
 "par_id93158919969864\n"
 "help.text"
 msgid "Inserts a check box in the menu. Returns an integer value that identifies the inserted item."
-msgstr ""
+msgstr "Εισάγει ένα πλαίσιο ελέγχου στο μενού. Επιστρέφει μια ακέραιη τιμή που προσδιορίζει το στοιχείο που έχει εισαχθεί."
 
 #. T8Fkq
 #: sf_menu.xhp
@@ -19832,7 +20363,7 @@ msgctxt ""
 "par_id821591631203996\n"
 "help.text"
 msgid "<emph>menuitem:</emph> Defines the text to be displayed in the menu. This argument also defines the hierarchy of the item inside the menu by using the submenu character."
-msgstr ""
+msgstr "<emph>menuitem:</emph> (στοιχείο μενού:) Καθορίζει το κείμενο που θα εμφανίζεται στο μενού. Αυτό το όρισμα ορίζει επίσης την ιεραρχία του στοιχείου μέσα στο μενού χρησιμοποιώντας τον χαρακτήρα του υπομενού."
 
 #. SkMmC
 #: sf_menu.xhp
@@ -19841,7 +20372,7 @@ msgctxt ""
 "par_id821591631203116\n"
 "help.text"
 msgid "<emph>name:</emph> String value used to identify the menu item. By default, the last component of the menu hierarchy is used."
-msgstr ""
+msgstr "<emph>name:</emph> (όνομα:) Η τιμή της συμβολοσειράς που χρησιμοποιείται για τον προσδιορισμό του στοιχείου μενού. Από προεπιλογή, χρησιμοποιείται το τελευταίο στοιχείο της ιεραρχίας του μενού."
 
 #. 7zhpM
 #: sf_menu.xhp
@@ -19850,7 +20381,7 @@ msgctxt ""
 "par_id821591631203133\n"
 "help.text"
 msgid "<emph>status:</emph> Defines whether the item is selected when the menu is created (Default = <literal>False</literal>)."
-msgstr ""
+msgstr "<emph>status:</emph> (κατάσταση:) Καθορίζει εάν το στοιχείο επιλέγεται κατά τη δημιουργία του μενού (Προεπιλογή = <literal>False</literal>)."
 
 #. JPboo
 #: sf_menu.xhp
@@ -19859,7 +20390,7 @@ msgctxt ""
 "par_id11636721653313\n"
 "help.text"
 msgid "<emph>icon:</emph> Path and name of the icon to be displayed without the leading path separator. The actual icon shown depends on the icon set being used."
-msgstr ""
+msgstr "<emph>icon:</emph> (εικονίδιο:) Η διαδρομή και το όνομα του εικονιδίου που θα εμφανιστεί χωρίς το αρχικό διαχωριστικό της διαδρομής. Το πραγματικό εικονίδιο που εμφανίζεται εξαρτάται από το χρησιμοποιούμενο σύνολο των εικονιδίων."
 
 #. YzJwB
 #: sf_menu.xhp
@@ -19868,7 +20399,7 @@ msgctxt ""
 "par_id11636721653208\n"
 "help.text"
 msgid "<emph>tooltip:</emph> Text to be displayed as tooltip."
-msgstr ""
+msgstr "<emph>tooltip:</emph> Το κείμενο που θα εμφανίζεται ως επεξήγηση εργαλείου."
 
 #. 3WPXT
 #: sf_menu.xhp
@@ -19877,7 +20408,7 @@ msgctxt ""
 "par_id11636721653328\n"
 "help.text"
 msgid "<emph>command:</emph> The name of a UNO command without the <literal>.uno:</literal> prefix. If the command name does not exist, nothing happens."
-msgstr ""
+msgstr "<emph>command:</emph> (εντολή:) Το όνομα μιας εντολής UNO χωρίς το πρόθεμα <literal>.uno:</literal>. Εάν το όνομα της εντολής δεν υπάρχει, δεν συμβαίνει τίποτα."
 
 #. LaF26
 #: sf_menu.xhp
@@ -19886,7 +20417,7 @@ msgctxt ""
 "par_id11636721653107\n"
 "help.text"
 msgid "<emph>script:</emph> The URI for a Basic or Python script that will be executed when the item is clicked."
-msgstr ""
+msgstr "<emph>script:</emph> Το URI για ένα σενάριο Basic ή Python που θα εκτελεστεί όταν πατηθεί το στοιχείο."
 
 #. PTXhK
 #: sf_menu.xhp
@@ -19895,7 +20426,7 @@ msgctxt ""
 "par_id31643198954204\n"
 "help.text"
 msgid "The arguments <literal>command</literal> and <literal>script</literal> are mutually exclusive, hence only one of them can be set for each menu item."
-msgstr ""
+msgstr "Τα ορίσματα <literal>command</literal> και <literal>script</literal> είναι αμοιβαία αποκλειόμενα, επομένως μόνο ένα από αυτά μπορεί να οριστεί για κάθε στοιχείο μενού."
 
 #. 7fb2n
 #: sf_menu.xhp
@@ -19904,7 +20435,7 @@ msgctxt ""
 "par_id31643148484084\n"
 "help.text"
 msgid "Read <link href=\"https://wiki.openoffice.org/wiki/Documentation/DevGuide/Scripting/Scripting_Framework_URI_Specification\" name=\"URI_Notation\">Scripting Framework URI Specification</link> to learn more about the URI syntax used in the <literal>script</literal> argument."
-msgstr ""
+msgstr "Διαβάστε το <link href=\"https://wiki.openoffice.org/wiki/Documentation/DevGuide/Scripting/Scripting_Framework_URI_Specification\" name=\"URI_Notation\">Προδιαγραφές URI του πλαισίου δέσμης ενεργειών</link> για να μάθετε περισσότερα σχετικά με τη σύνταξη URI που χρησιμοποιείται στο όρισμα <literal>script</literal>."
 
 #. Aj8cF
 #: sf_menu.xhp
@@ -19913,7 +20444,7 @@ msgctxt ""
 "bas_id191643306748853\n"
 "help.text"
 msgid "' Menu entry associated with the .uno:Paste command"
-msgstr ""
+msgstr "' Καταχώρηση μενού που σχετίζεται με την εντολή .uno:Paste"
 
 #. gQCkK
 #: sf_menu.xhp
@@ -19922,7 +20453,7 @@ msgctxt ""
 "bas_id271643147793320\n"
 "help.text"
 msgid "' Runs the Basic script Standard.Module1.MyListener stored in the document"
-msgstr ""
+msgstr "Εκτελεί το σενάριο της Basic Standard.Module1.MyListener που είναι αποθηκευμένο στο έγγραφο"
 
 #. 5fxEG
 #: sf_menu.xhp
@@ -19931,7 +20462,7 @@ msgctxt ""
 "bas_id801643306742620\n"
 "help.text"
 msgid "' Runs the Python script MyListener located in file myScripts.py in the user scripts folder"
-msgstr ""
+msgstr "' Εκτελεί το σενάριο της Python MyListener που βρίσκεται στο αρχείο myScripts.py στον φάκελο scripts του χρήστη"
 
 #. uAbp9
 #: sf_menu.xhp
@@ -19940,7 +20471,7 @@ msgctxt ""
 "par_id93158919963364\n"
 "help.text"
 msgid "Inserts a label entry in the menu. Returns an integer value that identifies the inserted item."
-msgstr ""
+msgstr "Εισάγει μια καταχώρηση ετικέτας στο μενού. Επιστρέφει μια ακέραια τιμή που προσδιορίζει το εισαγόμενο στοιχείο."
 
 #. tCHcD
 #: sf_menu.xhp
@@ -19949,7 +20480,7 @@ msgctxt ""
 "par_id821591631203021\n"
 "help.text"
 msgid "<emph>menuitem:</emph> Defines the text to be displayed in the menu. This argument also defines the hierarchy of the item inside the menu by using the submenu character."
-msgstr ""
+msgstr "<emph>menuitem:</emph> (στοιχείο μενού:) Καθορίζει το κείμενο που θα εμφανίζεται στο μενού. Αυτό το όρισμα ορίζει επίσης την ιεραρχία του στοιχείου μέσα στο μενού χρησιμοποιώντας τον χαρακτήρα του υπομενού."
 
 #. yFQns
 #: sf_menu.xhp
@@ -19958,7 +20489,7 @@ msgctxt ""
 "par_id821591631203026\n"
 "help.text"
 msgid "<emph>name:</emph> String value to be returned when the item is clicked. By default, the last component of the menu hierarchy is used."
-msgstr ""
+msgstr "<emph>name:</emph> (όνομα:) Τιμή συμβολοσειράς που θα επιστραφεί όταν πατηθεί το στοιχείο. Από προεπιλογή, χρησιμοποιείται το τελευταίο στοιχείο της ιεραρχίας του μενού."
 
 #. DMEeJ
 #: sf_menu.xhp
@@ -19967,7 +20498,7 @@ msgctxt ""
 "par_id11636721652886\n"
 "help.text"
 msgid "<emph>icon:</emph> Path and name of the icon to be displayed without the leading path separator. The actual icon shown depends on the icon set being used."
-msgstr ""
+msgstr "<emph>icon:</emph> (εικονίδιο:) Η διαδρομή και το όνομα του εικονιδίου που θα εμφανιστεί χωρίς το αρχικό διαχωριστικό της διαδρομής. Το πραγματικό εικονίδιο που εμφανίζεται εξαρτάται από το χρησιμοποιούμενο σύνολο των εικονιδίων."
 
 #. aZPNP
 #: sf_menu.xhp
@@ -19976,7 +20507,7 @@ msgctxt ""
 "par_id11636721653118\n"
 "help.text"
 msgid "<emph>tooltip:</emph> Text to be displayed as tooltip."
-msgstr ""
+msgstr "<emph>tooltip:</emph> Το κείμενο που θα εμφανίζεται ως επεξήγηση εργαλείου."
 
 #. 23fax
 #: sf_menu.xhp
@@ -19985,7 +20516,7 @@ msgctxt ""
 "par_id11636721653314\n"
 "help.text"
 msgid "<emph>command:</emph> The name of a UNO command without the <literal>.uno:</literal> prefix. If the command name does not exist, nothing happens."
-msgstr ""
+msgstr "<emph>command:</emph> (εντολή:) Το όνομα μιας εντολής UNO χωρίς το πρόθεμα <literal>.uno:</literal>. Εάν το όνομα της εντολής δεν υπάρχει, δεν συμβαίνει τίποτα."
 
 #. wysyV
 #: sf_menu.xhp
@@ -19994,7 +20525,7 @@ msgctxt ""
 "par_id11636721652057\n"
 "help.text"
 msgid "<emph>script:</emph> The URI for a Basic or Python script that will be executed when the item is clicked."
-msgstr ""
+msgstr "<emph>script:</emph> Το URI για ένα σενάριο Basic ή Python που θα εκτελεστεί όταν πατηθεί το στοιχείο."
 
 #. QYzCL
 #: sf_menu.xhp
@@ -20003,7 +20534,7 @@ msgctxt ""
 "bas_id41158919969106\n"
 "help.text"
 msgid "oMenu.AddItem(\"Item A\", Tooltip := \"A descriptive message\")"
-msgstr ""
+msgstr "oMenu.AddItem(\"Στοιχείο A\", Tooltip := \"Ένα περιγραφικό μήνυμα\")"
 
 #. dxYAv
 #: sf_menu.xhp
@@ -20012,7 +20543,7 @@ msgctxt ""
 "pyc_id321621534170554\n"
 "help.text"
 msgid "oMenu.AddItem(\"Item A\", tooltip = \"A descriptive message\")"
-msgstr ""
+msgstr "oMenu.AddItem (\"Στοιχείο Α\", tooltip = \"Περιγραφικό μήνυμα\")"
 
 #. qB7zU
 #: sf_menu.xhp
@@ -20021,7 +20552,7 @@ msgctxt ""
 "par_id93158919969399\n"
 "help.text"
 msgid "Inserts a radio button entry in the menu. Returns an integer value that identifies the inserted item."
-msgstr ""
+msgstr "Εισάγει μια καταχώρηση κουμπιού επιλογής στο μενού. Επιστρέφει μια ακέραια τιμή που προσδιορίζει το στοιχείο που έχει εισαχθεί."
 
 #. FTrvY
 #: sf_menu.xhp
@@ -20030,7 +20561,7 @@ msgctxt ""
 "par_id821591631203501\n"
 "help.text"
 msgid "<emph>menuitem:</emph> Defines the text to be displayed in the menu. This argument also defines the hierarchy of the item inside the menu by using the submenu character."
-msgstr ""
+msgstr "<emph>menuitem:</emph> (στοιχείο μενού:) Καθορίζει το κείμενο που θα εμφανίζεται στο μενού. Αυτό το όρισμα ορίζει επίσης την ιεραρχία του στοιχείου μέσα στο μενού χρησιμοποιώντας τον χαρακτήρα του υπομενού."
 
 #. syjtC
 #: sf_menu.xhp
@@ -20039,7 +20570,7 @@ msgctxt ""
 "par_id821591631228716\n"
 "help.text"
 msgid "<emph>name:</emph> String value to be returned when the item is clicked. By default, the last component of the menu hierarchy is used."
-msgstr ""
+msgstr "<emph>name:</emph> (όνομα:) Τιμή συμβολοσειράς που θα επιστραφεί όταν πατηθεί το στοιχείο. Από προεπιλογή, χρησιμοποιείται το τελευταίο στοιχείο της ιεραρχίας του μενού."
 
 #. 7WBgE
 #: sf_menu.xhp
@@ -20048,7 +20579,7 @@ msgctxt ""
 "par_id821591631203643\n"
 "help.text"
 msgid "<emph>status:</emph> Defines whether the item is selected when the menu is created (Default = <literal>False</literal>)."
-msgstr ""
+msgstr "<emph>status:</emph> (κατάσταση:) Καθορίζει εάν το στοιχείο επιλέγεται κατά τη δημιουργία του μενού (Προεπιλογή = <literal>False</literal>)."
 
 #. 4uxXA
 #: sf_menu.xhp
@@ -20057,7 +20588,7 @@ msgctxt ""
 "par_id11636721653228\n"
 "help.text"
 msgid "<emph>icon:</emph> Path and name of the icon to be displayed without the leading path separator. The actual icon shown depends on the icon set being used."
-msgstr ""
+msgstr "<emph>icon:</emph> (εικονίδιο:) Η διαδρομή και το όνομα του εικονιδίου που θα εμφανιστεί χωρίς το αρχικό διαχωριστικό της διαδρομής. Το πραγματικό εικονίδιο που εμφανίζεται εξαρτάται από το χρησιμοποιούμενο σύνολο των εικονιδίων."
 
 #. ZfFDR
 #: sf_menu.xhp
@@ -20066,7 +20597,7 @@ msgctxt ""
 "par_id11636721653114\n"
 "help.text"
 msgid "<emph>tooltip:</emph> Text to be displayed as tooltip."
-msgstr ""
+msgstr "<emph>tooltip:</emph> Το κείμενο που θα εμφανίζεται ως επεξήγηση εργαλείου."
 
 #. Sx9Bm
 #: sf_menu.xhp
@@ -20075,7 +20606,7 @@ msgctxt ""
 "par_id11636721653447\n"
 "help.text"
 msgid "<emph>command:</emph> The name of a UNO command without the <literal>.uno:</literal> prefix. If the command name does not exist, nothing happens."
-msgstr ""
+msgstr "<emph>command:</emph> (εντολή:) Το όνομα μιας εντολής UNO χωρίς το πρόθεμα <literal>.uno:</literal>. Εάν το όνομα της εντολής δεν υπάρχει, δεν συμβαίνει τίποτα."
 
 #. AEnA6
 #: sf_menu.xhp
@@ -20084,7 +20615,7 @@ msgctxt ""
 "par_id11636721652598\n"
 "help.text"
 msgid "<emph>script:</emph> The URI for a Basic or Python script that will be executed when the item is clicked."
-msgstr ""
+msgstr "<emph>script:</emph> Το URI για ένα σενάριο Basic ή Python που θα εκτελεστεί όταν πατηθεί το στοιχείο."
 
 #. yYNtX
 #: sf_methods.xhp
@@ -20093,7 +20624,7 @@ msgctxt ""
 "tit\n"
 "help.text"
 msgid "ScriptForge Method Signatures"
-msgstr ""
+msgstr "Υπογραφές μεθόδου ScriptForge"
 
 #. ycA6s
 #: sf_methods.xhp
@@ -20102,7 +20633,7 @@ msgctxt ""
 "hd_id31529004750471\n"
 "help.text"
 msgid "<variable id=\"SF_Signatures\"><link href=\"text/sbasic/shared/03/sf_methods.xhp\" name=\"ScriptForge Method Signatures\"><literal>ScriptForge</literal> Method Signatures</link></variable>"
-msgstr ""
+msgstr "<variable id=\"SF_Signatures\"><link href=\"text/sbasic/shared/03/sf_methods.xhp\" name=\"ScriptForge Method Signatures\">Υπογραφές μεθόδου του <literal>ScriptForge</literal></link></variable>"
 
 #. gEAos
 #: sf_methods.xhp
@@ -20111,7 +20642,7 @@ msgctxt ""
 "bm_id491529070339774\n"
 "help.text"
 msgid "<bookmark_value>ScriptForge; Method signatures</bookmark_value>"
-msgstr ""
+msgstr "<bookmark_value>ScriptForge; Υπογραφές μεθόδου</bookmark_value>"
 
 #. Xq2N5
 #: sf_methods.xhp
@@ -20120,7 +20651,7 @@ msgctxt ""
 "par_id681619700336879\n"
 "help.text"
 msgid "ScriptForge libraries aggregate macro scripting resources for %PRODUCTNAME to be invoked from Basic macros or Python scripts. Its modules and classes are invoked from user scripts as \"Services\" that expose properties, methods and events."
-msgstr ""
+msgstr "Οι βιβλιοθήκες ScriptForge συγκεντρώνουν πόρους σεναρίων μακροεντολών για το %PRODUCTNAME που θα κληθούν από μακροεντολές Basic ή σενάρια Python. Οι ενότητες και οι κλάσεις του καλούνται από σενάρια χρήστη ως \"Υπηρεσίες\" που εκθέτουν ιδιότητες, μεθόδους και συμβάντα."
 
 #. paARG
 #: sf_methods.xhp
@@ -20129,7 +20660,7 @@ msgctxt ""
 "par_id681623415196030\n"
 "help.text"
 msgid "Whenever service methods are proposed solely for %PRODUCTNAME Basic, their syntax presentation matches that of Basic subroutines, functions or properties."
-msgstr ""
+msgstr "Κάθε φορά που προτείνονται μέθοδοι υπηρεσίας αποκλειστικά για το %PRODUCTNAME Basic, η παρουσίαση της σύνταξης τους ταιριάζει με εκείνη των βασικών υπορουτινών, συναρτήσεων ή ιδιοτήτων."
 
 #. 4dWnv
 #: sf_methods.xhp
@@ -20138,7 +20669,7 @@ msgctxt ""
 "par_id401623415235965\n"
 "help.text"
 msgid "Whenever service methods are proposed for Python and Basic, or solely for Python, their syntax and arguments use a specific textual layout."
-msgstr ""
+msgstr "Κάθε φορά που προτείνονται μέθοδοι υπηρεσίας για Python και Basic, ή αποκλειστικά για Python, η σύνταξη και τα ορίσματά τους χρησιμοποιούν μια συγκεκριμένη διάταξη κειμένου."
 
 #. McY36
 #: sf_methods.xhp
@@ -20147,7 +20678,7 @@ msgctxt ""
 "hd_id1001623415980365\n"
 "help.text"
 msgid "Basic only service method"
-msgstr ""
+msgstr "Μέθοδος υπηρεσίας μόνο για Basic"
 
 #. tCvuL
 #: sf_methods.xhp
@@ -20156,7 +20687,7 @@ msgctxt ""
 "par_id791623418737799\n"
 "help.text"
 msgid "Typographical characters such as brackets, ellipsis or curly braces denote optional, repetitive or compulsory arguments:"
-msgstr ""
+msgstr "Τυπογραφικοί χαρακτήρες όπως αγκύλες, έλλειψη ή άγκιστρα υποδηλώνουν προαιρετικά, επαναλαμβανόμενα ή υποχρεωτικά ορίσματα:"
 
 #. FkDFy
 #: sf_methods.xhp
@@ -20165,7 +20696,7 @@ msgctxt ""
 "hd_id711623416000470\n"
 "help.text"
 msgid "Python or Basic service methods"
-msgstr ""
+msgstr "Μέθοδοι υπηρεσίας Python ή Basic"
 
 #. 8C6EM
 #: sf_methods.xhp
@@ -20174,7 +20705,7 @@ msgctxt ""
 "par_id221623415475781\n"
 "help.text"
 msgid "The following typographical rules are mixing the UML notation, the API documentation layout and the UNO object inspector user interface:"
-msgstr ""
+msgstr "Οι ακόλουθοι τυπογραφικοί κανόνες συνδυάζουν τη σημειογραφία UML, τη διάταξη τεκμηρίωσης API και τη διεπαφή χρήστη του επιθεωρητή αντικειμένων UNO:"
 
 #. aSSDq
 #: sf_methods.xhp
@@ -20183,7 +20714,7 @@ msgctxt ""
 "par_id661623417427142\n"
 "help.text"
 msgid "Optional parameters are indicated with either opt, '=' accompanying a default value, or '[ ]' brackets."
-msgstr ""
+msgstr "Οι προαιρετικές παράμετροι υποδεικνύονται είτε με opt, '=' που συνοδεύουν μια προεπιλεγμένη τιμή, ή αγκύλες '[ ]'."
 
 #. 534sD
 #: sf_methods.xhp
@@ -20192,7 +20723,7 @@ msgctxt ""
 "par_id351623417430814\n"
 "help.text"
 msgid "arguments are lowercased, in order to comply with Python PEP 8 while Basic is case-agnostic."
-msgstr ""
+msgstr "τα ορίσματα είναι πεζά, προκειμένου να συμμορφωθούν με το Python PEP 8, ενώ στη Basic είναι χωρίς διάκριση πεζών/κεφαλαίων."
 
 #. kFDAg
 #: sf_methods.xhp
@@ -20201,7 +20732,7 @@ msgctxt ""
 "par_id781623417432494\n"
 "help.text"
 msgid "Collections arguments or API sequences are denoted using UML multiplicity. That applies also to return values."
-msgstr ""
+msgstr "Τα ορίσματα συλλογών ή οι ακολουθίες API υποδηλώνονται χρησιμοποιώντας πολλαπλότητα UML. Αυτό ισχύει και για τις επιστρεφόμενες τιμές."
 
 #. bmVjq
 #: sf_methods.xhp
@@ -20210,7 +20741,7 @@ msgctxt ""
 "par_id741623417433319\n"
 "help.text"
 msgid "Basic data types and Python annotations are syntactically transposed as:"
-msgstr ""
+msgstr "Οι τύποι δεδομένων της Basic και οι σχολιασμοί της Python μεταφέρονται συντακτικά ως:"
 
 #. GGeNU
 #: sf_methods.xhp
@@ -20219,7 +20750,7 @@ msgctxt ""
 "par_id441613838858931\n"
 "help.text"
 msgid "Syntax"
-msgstr ""
+msgstr "Σύνταξη"
 
 #. ENqPg
 #: sf_methods.xhp
@@ -20228,7 +20759,7 @@ msgctxt ""
 "par_id851613847558931\n"
 "help.text"
 msgid "Boolean"
-msgstr ""
+msgstr "Τιμή Μπουλ"
 
 #. vWABe
 #: sf_methods.xhp
@@ -20237,7 +20768,7 @@ msgctxt ""
 "par_id931623419595424\n"
 "help.text"
 msgid "UNO Object"
-msgstr ""
+msgstr "Αντικείμενο UNO"
 
 #. 2q5Bk
 #: sf_methods.xhp
@@ -20246,7 +20777,7 @@ msgctxt ""
 "par_id951623419595631\n"
 "help.text"
 msgid "User Defined<br/>Type (UDT)"
-msgstr ""
+msgstr "Τύπος χρήστη<br/> (UDT)"
 
 #. h4Tu4
 #: sf_methods.xhp
@@ -20255,7 +20786,7 @@ msgctxt ""
 "par_id451623419793734\n"
 "help.text"
 msgid "<literal>ScriptForge</literal><br/>service"
-msgstr ""
+msgstr "Υπηρεσία <literal>ScriptForge</literal><br/>"
 
 #. Ah5Gj
 #: sf_platform.xhp
@@ -20264,7 +20795,7 @@ msgctxt ""
 "tit\n"
 "help.text"
 msgid "ScriptForge.Platform service"
-msgstr ""
+msgstr "Υπηρεσία ScriptForge.Platform"
 
 #. PCkEG
 #: sf_platform.xhp
@@ -20273,7 +20804,7 @@ msgctxt ""
 "bm_id681600788076499\n"
 "help.text"
 msgid "<variable id=\"PlatformService\"><link href=\"text/sbasic/shared/03/sf_platform.xhp\" name=\"Platform service\"><literal>ScriptForge</literal>.<literal>Platform</literal> service</link></variable>"
-msgstr ""
+msgstr "<variable id=\"PlatformService\"><link href=\"text/sbasic/shared/03/sf_platform.xhp\" name=\"Platform service\">Υπηρεσία<literal>ScriptForge</literal>.<literal>Platform</literal></link></variable>"
 
 #. 7D6Dx
 #: sf_platform.xhp
@@ -20282,7 +20813,7 @@ msgctxt ""
 "par_id181600788076612\n"
 "help.text"
 msgid "The <literal>Platform</literal> service provides a collection of properties about the current execution environment and context, such as:"
-msgstr ""
+msgstr "Η υπηρεσία <literal>Platform</literal> παρέχει μια συλλογή ιδιοτήτων σχετικά με το τρέχον περιβάλλον εκτέλεσης και το περιεχόμενο, όπως:"
 
 #. FDJFB
 #: sf_platform.xhp
@@ -20291,7 +20822,7 @@ msgctxt ""
 "par_id301600788076785\n"
 "help.text"
 msgid "The hardware platform (architecture, CPU count, machine type, etc)"
-msgstr ""
+msgstr "Το σύστημα υλικού (αρχιτεκτονική, αριθμός CPU, τύπος μηχανής, κ.λπ.)"
 
 #. i9FbJ
 #: sf_platform.xhp
@@ -20300,7 +20831,7 @@ msgctxt ""
 "par_id1001600788076848\n"
 "help.text"
 msgid "Operating system information (OS type, release, version, etc)"
-msgstr ""
+msgstr "Πληροφορίες λειτουργικού συστήματος (τύπος λειτουργικού συστήματος, έκδοση, κ.λπ.)"
 
 #. 6sN8Q
 #: sf_platform.xhp
@@ -20309,7 +20840,7 @@ msgctxt ""
 "par_id67160078807676\n"
 "help.text"
 msgid "The %PRODUCTNAME version"
-msgstr ""
+msgstr "Η έκδοση του %PRODUCTNAME"
 
 #. BrEr7
 #: sf_platform.xhp
@@ -20318,7 +20849,7 @@ msgctxt ""
 "par_id671600788076855\n"
 "help.text"
 msgid "The current user name"
-msgstr ""
+msgstr "Το τρέχον όνομα χρήστη"
 
 #. ZvBqs
 #: sf_platform.xhp
@@ -20327,7 +20858,7 @@ msgctxt ""
 "par_id951614903258253\n"
 "help.text"
 msgid "All properties of the <literal>Platform</literal> service are read-only."
-msgstr ""
+msgstr "Όλες οι ιδιότητες της υπηρεσίας <literal>Platform</literal> είναι μόνο για ανάγνωση."
 
 #. iK4Gv
 #: sf_platform.xhp
@@ -20336,7 +20867,7 @@ msgctxt ""
 "hd_id281600788076359\n"
 "help.text"
 msgid "Service invocation"
-msgstr ""
+msgstr "Κλήση υπηρεσίας"
 
 #. dogmo
 #: sf_platform.xhp
@@ -20345,7 +20876,7 @@ msgctxt ""
 "par_id141609955500101\n"
 "help.text"
 msgid "Before using the <literal>Platform</literal> service the <literal>ScriptForge</literal> library needs to be loaded or imported:"
-msgstr ""
+msgstr "Πριν χρησιμοποιήσετε την υπηρεσία <literal>Platform</literal>, πρέπει να φορτωθεί ή να εισαχθεί η βιβλιοθήκη <literal>ScriptForge</literal>:"
 
 #. mHGZk
 #: sf_platform.xhp
@@ -20354,7 +20885,7 @@ msgctxt ""
 "par_id321614902851541\n"
 "help.text"
 msgid "The examples below in Basic and Python instantiate the <literal>Platform</literal> service and access the <literal>Architecture</literal> property."
-msgstr ""
+msgstr "Τα παρακάτω παραδείγματα σε Basic και Python δημιουργούν την υπηρεσία <literal>Platform</literal> και προσπελάζουν την ιδιότητα <literal>Architecture</literal>."
 
 #. KC5eN
 #: sf_platform.xhp
@@ -20363,7 +20894,7 @@ msgctxt ""
 "hd_id711600788076834\n"
 "help.text"
 msgid "Properties"
-msgstr ""
+msgstr "Ιδιότητες"
 
 #. VXJ8a
 #: sf_platform.xhp
@@ -20372,7 +20903,7 @@ msgctxt ""
 "par_id461600788076917\n"
 "help.text"
 msgid "Name"
-msgstr ""
+msgstr "Όνομα"
 
 #. JN68D
 #: sf_platform.xhp
@@ -20381,7 +20912,7 @@ msgctxt ""
 "par_id221600788076591\n"
 "help.text"
 msgid "Readonly"
-msgstr ""
+msgstr "Μόνο για ανάγνωση"
 
 #. ZndAt
 #: sf_platform.xhp
@@ -20390,7 +20921,7 @@ msgctxt ""
 "par_id761600788076328\n"
 "help.text"
 msgid "Type"
-msgstr ""
+msgstr "Τύπος"
 
 #. dAoKA
 #: sf_platform.xhp
@@ -20399,7 +20930,7 @@ msgctxt ""
 "par_id67160078807636\n"
 "help.text"
 msgid "Description"
-msgstr ""
+msgstr "Περιγραφή"
 
 #. XdLGG
 #: sf_platform.xhp
@@ -20408,7 +20939,7 @@ msgctxt ""
 "par_id311600788076756\n"
 "help.text"
 msgid "Yes"
-msgstr ""
+msgstr "Ναι"
 
 #. EEWuL
 #: sf_platform.xhp
@@ -20417,7 +20948,7 @@ msgctxt ""
 "par_id441600788076826\n"
 "help.text"
 msgid "The hardware bit architecture. Example: '<literal>32bit</literal>' or '<literal>64bit</literal>'"
-msgstr ""
+msgstr "Η αρχιτεκτονική δυαδικών (bit) του υλικού. Παράδειγμα: \"<literal>32bit</literal>\", ή \"<literal>64bit</literal>\""
 
 #. 8EZ8A
 #: sf_platform.xhp
@@ -20426,7 +20957,7 @@ msgctxt ""
 "par_id49160078807654\n"
 "help.text"
 msgid "Yes"
-msgstr ""
+msgstr "Ναι"
 
 #. iG4iH
 #: sf_platform.xhp
@@ -20435,7 +20966,7 @@ msgctxt ""
 "par_id81600788076419\n"
 "help.text"
 msgid "The computer's network name."
-msgstr ""
+msgstr "Το όνομα δικτύου του υπολογιστή."
 
 #. hvAeY
 #: sf_platform.xhp
@@ -20444,7 +20975,7 @@ msgctxt ""
 "par_id711600788076534\n"
 "help.text"
 msgid "Yes"
-msgstr ""
+msgstr "Ναι"
 
 #. v3N6U
 #: sf_platform.xhp
@@ -20453,7 +20984,7 @@ msgctxt ""
 "par_id541600788076645\n"
 "help.text"
 msgid "The number of central processing units."
-msgstr ""
+msgstr "Ο αριθμός των κεντρικών μονάδων επεξεργασίας."
 
 #. 89Lo8
 #: sf_platform.xhp
@@ -20462,7 +20993,7 @@ msgctxt ""
 "par_id891600788076190\n"
 "help.text"
 msgid "Yes"
-msgstr ""
+msgstr "Ναι"
 
 #. rmGRV
 #: sf_platform.xhp
@@ -20471,7 +21002,7 @@ msgctxt ""
 "par_id91600788076674\n"
 "help.text"
 msgid "The name of the currently logged user."
-msgstr ""
+msgstr "Το όνομα του τρέχοντος συνδεδεμένου χρήστη."
 
 #. rCN2h
 #: sf_platform.xhp
@@ -20480,7 +21011,7 @@ msgctxt ""
 "par_id561633021747014\n"
 "help.text"
 msgid "Yes"
-msgstr ""
+msgstr "Ναι"
 
 #. T2MVx
 #: sf_platform.xhp
@@ -20489,7 +21020,7 @@ msgctxt ""
 "par_id201633021748566\n"
 "help.text"
 msgid "String array"
-msgstr ""
+msgstr "Πίνακας συμβολοσειρών"
 
 #. 5Fkqe
 #: sf_platform.xhp
@@ -20498,7 +21029,7 @@ msgctxt ""
 "par_id831633021749125\n"
 "help.text"
 msgid "Returns a zero-based array of strings containing the internal IDs of all installed extensions."
-msgstr ""
+msgstr "Επιστρέφει έναν πίνακα συμβολοσειρών που βασίζεται στο μηδέν που περιέχει τα εσωτερικά αναγνωριστικά όλων των εγκατεστημένων επεκτάσεων."
 
 #. 9aGdF
 #: sf_platform.xhp
@@ -20507,7 +21038,7 @@ msgctxt ""
 "par_id561633021747903\n"
 "help.text"
 msgid "Yes"
-msgstr ""
+msgstr "Ναι"
 
 #. yuuvA
 #: sf_platform.xhp
@@ -20516,7 +21047,7 @@ msgctxt ""
 "par_id201633021748455\n"
 "help.text"
 msgid "String array"
-msgstr ""
+msgstr "Πίνακας συμβολοσειρών"
 
 #. BvYt3
 #: sf_platform.xhp
@@ -20525,7 +21056,7 @@ msgctxt ""
 "par_id831633021749007\n"
 "help.text"
 msgid "Returns a zero-based array of strings containing the names of all available fonts."
-msgstr ""
+msgstr "Επιστρέφει έναν πίνακα συμβολοσειρών με βάση το μηδέν που περιέχει τα ονόματα όλων των διαθέσιμων γραμματοσειρών."
 
 #. 86VFG
 #: sf_platform.xhp
@@ -20534,7 +21065,7 @@ msgctxt ""
 "par_id561633021748013\n"
 "help.text"
 msgid "Yes"
-msgstr ""
+msgstr "Ναι"
 
 #. 9qBZR
 #: sf_platform.xhp
@@ -20543,7 +21074,7 @@ msgctxt ""
 "par_id831633021749297\n"
 "help.text"
 msgid "Returns the locale used for numbers and dates as a string in the format \"la-CO\" (language-COUNTRY)."
-msgstr ""
+msgstr "Επιστρέφει την τοπική ρύθμιση που χρησιμοποιείται για αριθμούς και ημερομηνίες ως συμβολοσειρά στη μορφή \"la-CO\" (γλώσσα-ΧΩΡΑ)."
 
 #. Av85C
 #: sf_platform.xhp
@@ -20552,7 +21083,7 @@ msgctxt ""
 "par_id561633021743188\n"
 "help.text"
 msgid "Yes"
-msgstr ""
+msgstr "Ναι"
 
 #. sYrDn
 #: sf_platform.xhp
@@ -20561,7 +21092,7 @@ msgctxt ""
 "par_id831633021749018\n"
 "help.text"
 msgid "Returns the locale of the operating system as a string in the format \"la-CO\" (language-COUNTRY). This is equivalent to the <literal>SystemLocale</literal> property."
-msgstr ""
+msgstr "Επιστρέφει τις τοπικές ρυθμίσεις του λειτουργικού συστήματος ως συμβολοσειρά στη μορφή \"la-CO\" (γλώσσα-ΧΩΡΑ). Αυτό είναι ισοδύναμο με την ιδιότητα <literal>SystemLocale</literal>."
 
 #. Dt7J5
 #: sf_platform.xhp
@@ -20570,7 +21101,7 @@ msgctxt ""
 "par_id391600788076253\n"
 "help.text"
 msgid "Yes"
-msgstr ""
+msgstr "Ναι"
 
 #. LA6EN
 #: sf_platform.xhp
@@ -20579,7 +21110,7 @@ msgctxt ""
 "par_id21600788076541\n"
 "help.text"
 msgid "The machine type. Examples are: '<literal>i386</literal>' or '<literal>x86_64</literal>'."
-msgstr ""
+msgstr "Ο τύπος του μηχανήματος. Παραδείγματα είναι: '<literal>i386</literal>', ή '<literal>x86_64</literal>'."
 
 #. LbQr2
 #: sf_platform.xhp
@@ -20588,7 +21119,7 @@ msgctxt ""
 "par_id561633021706513\n"
 "help.text"
 msgid "Yes"
-msgstr ""
+msgstr "Ναι"
 
 #. ZZcSc
 #: sf_platform.xhp
@@ -20597,7 +21128,7 @@ msgctxt ""
 "par_id831633021741117\n"
 "help.text"
 msgid "Returns the locale of the user interface as a string in the format \"la-CO\" (language-COUNTRY)."
-msgstr ""
+msgstr "Επιστρέφει τις τοπικές ρυθμίσεις της διεπαφής χρήστη ως συμβολοσειρά στη μορφή \"la-CO\" (γλώσσα-ΧΩΡΑ)."
 
 #. tqwyD
 #: sf_platform.xhp
@@ -20606,7 +21137,7 @@ msgctxt ""
 "par_id211600788076138\n"
 "help.text"
 msgid "Yes"
-msgstr ""
+msgstr "Ναι"
 
 #. WLRju
 #: sf_platform.xhp
@@ -20615,7 +21146,7 @@ msgctxt ""
 "par_id521600788076371\n"
 "help.text"
 msgid "The actual %PRODUCTNAME version expressed as<br/>' <literal>%PRODUCTNAME w.x.y.z (The Document Foundation)</literal>'."
-msgstr ""
+msgstr "Η ενεργή έκδοση του %PRODUCTNAME εκφράζεται ως<br/>' <literal>%PRODUCTNAME w.x.y.z (The Document Foundation)</literal>'."
 
 #. 2q29b
 #: sf_platform.xhp
@@ -20624,7 +21155,7 @@ msgctxt ""
 "par_id621614902220807\n"
 "help.text"
 msgid "Example: '<literal>LibreOffice 7.4.1.2 (The Document Foundation, Debian and Ubuntu)</literal>'"
-msgstr ""
+msgstr "Παράδειγμα: \"<literal>LibreOffice 7.4.1.2 (The Document Foundation, Debian και Ubuntu)</literal>\""
 
 #. 7WDer
 #: sf_platform.xhp
@@ -20633,7 +21164,7 @@ msgctxt ""
 "par_id21600788076758\n"
 "help.text"
 msgid "Yes"
-msgstr ""
+msgstr "Ναι"
 
 #. NUSby
 #: sf_platform.xhp
@@ -20642,7 +21173,7 @@ msgctxt ""
 "par_id781600788076694\n"
 "help.text"
 msgid "The operating system type. Example: '<literal>Darwin</literal>, <literal>Linux</literal>' or '<literal>Windows</literal>'."
-msgstr ""
+msgstr "Ο τύπος του λειτουργικού συστήματος. Παράδειγμα: \"<literal>Darwin</literal>, <literal>Linux</literal>\", ή \"<literal>Windows</literal>\"."
 
 #. cLiaw
 #: sf_platform.xhp
@@ -20651,7 +21182,7 @@ msgctxt ""
 "par_id261600788076841\n"
 "help.text"
 msgid "Yes"
-msgstr ""
+msgstr "Ναι"
 
 #. nepQ6
 #: sf_platform.xhp
@@ -20660,7 +21191,7 @@ msgctxt ""
 "par_id11600788076757\n"
 "help.text"
 msgid "A single string identifying the underlying platform with as much useful and human-readable information as possible."
-msgstr ""
+msgstr "Μια μοναδική συμβολοσειρά που προσδιορίζει την υποκείμενη πλατφόρμα με όσο το δυνατόν περισσότερες χρήσιμες και αναγνώσιμες από τον άνθρωπο πληροφορίες."
 
 #. EH36m
 #: sf_platform.xhp
@@ -20669,7 +21200,7 @@ msgctxt ""
 "par_id501614902381381\n"
 "help.text"
 msgid "Example: '<literal>Linux-5.8.0-44-generic-x86_64-with-glibc2.32</literal>'"
-msgstr ""
+msgstr "Παράδειγμα: \"<literal>Linux-5.8.0-44-generic-x86_64-with-glibc2.32</literal>\""
 
 #. hbyth
 #: sf_platform.xhp
@@ -20678,7 +21209,7 @@ msgctxt ""
 "par_id531600789141795\n"
 "help.text"
 msgid "Yes"
-msgstr ""
+msgstr "Ναι"
 
 #. 4iEvV
 #: sf_platform.xhp
@@ -20687,7 +21218,7 @@ msgctxt ""
 "par_id301600789141619\n"
 "help.text"
 msgid "The operating system's release. Example: '<literal>5.8.0-44-generic</literal>'"
-msgstr ""
+msgstr "Έκδοση του λειτουργικού συστήματος. Παράδειγμα: '<literal>5.8.0-44-generic</literal>'"
 
 #. 2fBtD
 #: sf_platform.xhp
@@ -20696,7 +21227,7 @@ msgctxt ""
 "par_id541600789286532\n"
 "help.text"
 msgid "Yes"
-msgstr ""
+msgstr "Ναι"
 
 #. iukPq
 #: sf_platform.xhp
@@ -20705,7 +21236,7 @@ msgctxt ""
 "par_id701600789286280\n"
 "help.text"
 msgid "The operating system's build or version."
-msgstr ""
+msgstr "Η δόμηση ή η έκδοση του λειτουργικού συστήματος."
 
 #. DWQNA
 #: sf_platform.xhp
@@ -20714,7 +21245,7 @@ msgctxt ""
 "par_id351614902520555\n"
 "help.text"
 msgid "Example: '<literal>#50-Ubuntu SMP Tue Feb 9 06:29:41 UTC 2021</literal>'"
-msgstr ""
+msgstr "Παράδειγμα: '<literal>#50-Ubuntu SMP Tue Feb 9 06:29:41 UTC 2021</literal>'"
 
 #. E8DzK
 #: sf_platform.xhp
@@ -20723,7 +21254,7 @@ msgctxt ""
 "par_id941608709527698\n"
 "help.text"
 msgid "Yes"
-msgstr ""
+msgstr "Ναι"
 
 #. ArFcn
 #: sf_platform.xhp
@@ -20732,7 +21263,7 @@ msgctxt ""
 "par_id661300789527859\n"
 "help.text"
 msgid "The list of available printers as a zero-based array."
-msgstr ""
+msgstr "Ο κατάλογος των διαθέσιμων εκτυπωτών ως πίνακας μηδενικής βάσης."
 
 #. nN5EG
 #: sf_platform.xhp
@@ -20741,7 +21272,7 @@ msgctxt ""
 "par_id111614952098396\n"
 "help.text"
 msgid "The default printer is put in the first position of the list (index = 0)."
-msgstr ""
+msgstr "Ο προεπιλεγμένος εκτυπωτής εισάγεται στην πρώτη θέση του καταλόγου (ευρετήριο = 0)."
 
 #. fCdYi
 #: sf_platform.xhp
@@ -20750,7 +21281,7 @@ msgctxt ""
 "par_id941600789527698\n"
 "help.text"
 msgid "Yes"
-msgstr ""
+msgstr "Ναι"
 
 #. wkthE
 #: sf_platform.xhp
@@ -20759,7 +21290,7 @@ msgctxt ""
 "par_id631600789527859\n"
 "help.text"
 msgid "The real processor name. Example: '<literal>amdk6</literal>'."
-msgstr ""
+msgstr "Το πραγματικό όνομα του επεξεργαστή. Παράδειγμα: '<literal>amdk6</literal>'."
 
 #. MYY9M
 #: sf_platform.xhp
@@ -20768,7 +21299,7 @@ msgctxt ""
 "par_id111614902598396\n"
 "help.text"
 msgid "This property may return the same value as the <literal>Machine</literal> property."
-msgstr ""
+msgstr "Αυτή η ιδιότητα μπορεί να επιστρέψει την ίδια τιμή με την ιδιότητα <literal>Machine</literal>."
 
 #. yWwgE
 #: sf_platform.xhp
@@ -20777,7 +21308,7 @@ msgctxt ""
 "par_id941608709527036\n"
 "help.text"
 msgid "Yes"
-msgstr ""
+msgstr "Ναι"
 
 #. Rw373
 #: sf_platform.xhp
@@ -20786,7 +21317,7 @@ msgctxt ""
 "par_id661300789527994\n"
 "help.text"
 msgid "Returns the version of the Python interpreter being used as a string in the format \"Python major.minor.patchlevel\" (ex: \"Python 3.9.7\")."
-msgstr ""
+msgstr "Επιστρέφει την έκδοση του διερμηνέα Python που χρησιμοποιείται ως συμβολοσειρά στη μορφή \"Python major.minor.patchlevel\" (π.χ. \"Python 3.9.7\")."
 
 #. Ad9Cw
 #: sf_platform.xhp
@@ -20795,7 +21326,7 @@ msgctxt ""
 "par_id561633021708547\n"
 "help.text"
 msgid "Yes"
-msgstr ""
+msgstr "Ναι"
 
 #. Aue6E
 #: sf_platform.xhp
@@ -20804,7 +21335,7 @@ msgctxt ""
 "par_id831633021741336\n"
 "help.text"
 msgid "Returns the locale of the operating system as a string in the format \"la-CO\" (language-COUNTRY). This is equivalent to the <literal>Locale</literal> property."
-msgstr ""
+msgstr "Επιστρέφει τις τοπικές ρυθμίσεις του λειτουργικού συστήματος ως συμβολοσειρά στη μορφή \"la-CO\" (γλώσσα-ΧΩΡΑ). Αυτό ισοδυναμεί με την ιδιότητα <literal>Locale</literal> (Τοπικές ρυθμίσεις)."
 
 #. FJs9t
 #: sf_platform.xhp
@@ -20813,7 +21344,7 @@ msgctxt ""
 "par_id311633022159446\n"
 "help.text"
 msgid "The following examples in Basic and Python illustrate how to use the <literal>Fonts</literal> property to write the names of all available fonts to the current Calc sheet starting at cell \"A1\":"
-msgstr ""
+msgstr "Τα ακόλουθα παραδείγματα σε Basic και Python επεξηγούν πώς να χρησιμοποιήσετε την ιδιότητα <literal>Fonts</literal> για να γράψετε τα ονόματα όλων των διαθέσιμων γραμματοσειρών στο τρέχον φύλλο Calc ξεκινώντας από το κελί \"A1\":"
 
 #. 3yeMr
 #: sf_platform.xhp
@@ -20822,7 +21353,7 @@ msgctxt ""
 "par_id301613065794148\n"
 "help.text"
 msgid "<link href=\"text/scalc/01/04060104.xhp#bm_id3691824\" name=\"Calc_Info\">Platform information with INFO(\"system\") Calc formula</link>"
-msgstr ""
+msgstr "<link href=\"text/scalc/01/04060104.xhp#bm_id3691824\" name=\"Calc_Info\">Πληροφορίες πλατφόρμας με τύπο υπολογισμού INFO(\"system\")</link>"
 
 #. h6atN
 #: sf_popupmenu.xhp
@@ -20831,7 +21362,7 @@ msgctxt ""
 "tit\n"
 "help.text"
 msgid "SFWidgets.PopupMenu service"
-msgstr ""
+msgstr "Υπηρεσία SFWidgets.PopupMenu"
 
 #. QADne
 #: sf_popupmenu.xhp
@@ -20840,7 +21371,7 @@ msgctxt ""
 "bm_id681600788076499\n"
 "help.text"
 msgid "<variable id=\"PopupMenuService\"><link href=\"text/sbasic/shared/03/sf_popupmenu.xhp\" name=\"PopupMenu service\"><literal>SFWidgets</literal>.<literal>PopupMenu</literal> service</link></variable>"
-msgstr ""
+msgstr "<variable id=\"PopupMenuService\"><link href=\"text/sbasic/shared/03/sf_popupmenu.xhp\" name=\"PopupMenu service\">Υπηρεσία<literal>SFWidgets</literal>.<literal>PopupMenu</literal></link></variable>"
 
 #. DGbZ3
 #: sf_popupmenu.xhp
@@ -20849,7 +21380,7 @@ msgctxt ""
 "par_id181600788076612\n"
 "help.text"
 msgid "The <literal>PopupMenu</literal> service can be used to create popup menus that can be associated with events or executed by scripts. This service provides the following capabilities:"
-msgstr ""
+msgstr "Η υπηρεσία <literal>PopupMenu</literal> μπορεί να χρησιμοποιηθεί για τη δημιουργία αναδυόμενων μενού που μπορούν να συσχετιστούν με συμβάντα ή να εκτελεστούν από σενάρια. Αυτή η υπηρεσία παρέχει τις ακόλουθες δυνατότητες:"
 
 #. fGtNp
 #: sf_popupmenu.xhp
@@ -20858,7 +21389,7 @@ msgctxt ""
 "par_id301600788076785\n"
 "help.text"
 msgid "Creation of popup menus with custom entries, checkboxes and radio buttons."
-msgstr ""
+msgstr "Δημιουργία αναδυόμενων μενού με προσαρμοσμένες καταχωρήσεις, πλαίσια ελέγχου και κουμπιά επιλογής."
 
 #. QvyBB
 #: sf_popupmenu.xhp
@@ -20867,7 +21398,7 @@ msgctxt ""
 "par_id1001600788076848\n"
 "help.text"
 msgid "Decoration of menu items with icons and tooltips."
-msgstr ""
+msgstr "Διακόσμηση στοιχείων μενού με εικονίδια και συμβουλές οθόνης."
 
 #. GA9DY
 #: sf_popupmenu.xhp
@@ -20876,7 +21407,7 @@ msgctxt ""
 "hd_id281600788076359\n"
 "help.text"
 msgid "Service invocation"
-msgstr ""
+msgstr "Κλήση υπηρεσίας"
 
 #. wHrLq
 #: sf_popupmenu.xhp
@@ -20885,7 +21416,7 @@ msgctxt ""
 "par_id141609955500101\n"
 "help.text"
 msgid "Before using the <literal>PopupMenu</literal> service the <literal>ScriptForge</literal> library needs to be loaded or imported:"
-msgstr ""
+msgstr "Πριν χρησιμοποιήσετε την υπηρεσία <literal>PopupMenu</literal>, πρέπει να φορτωθεί ή να εισαχθεί η βιβλιοθήκη <literal>ScriptForge</literal>:"
 
 #. aGukU
 #: sf_popupmenu.xhp
@@ -20894,7 +21425,7 @@ msgctxt ""
 "par_id321614902851541\n"
 "help.text"
 msgid "The <literal>PopupMenu</literal> service can be instantiated in multiple ways. The example below creates a popup menu without associating it with a mouse or application event."
-msgstr ""
+msgstr "Η υπηρεσία <literal>PopupMenu</literal> μπορεί να δημιουργηθεί με πολλούς τρόπους. Το παρακάτω παράδειγμα δημιουργεί ένα αναδυόμενο μενού χωρίς να το συσχετίζει με ένα συμβάν ποντικιού ή εφαρμογής."
 
 #. zEX7M
 #: sf_popupmenu.xhp
@@ -20903,7 +21434,7 @@ msgctxt ""
 "bas_id841636717357955\n"
 "help.text"
 msgid "MsgBox(\"Selected item ID: \" & vResponse)"
-msgstr ""
+msgstr "MsgBox(\"Επιλεγμένο αναγνωριστικό στοιχείου:\" & vResponse)"
 
 #. XcbWz
 #: sf_popupmenu.xhp
@@ -20912,7 +21443,7 @@ msgctxt ""
 "par_id341636718182262\n"
 "help.text"
 msgid "Running the <literal>Sub</literal> defined above will create a popup menu with two entries in the position X=300 and Y=300 on the screen."
-msgstr ""
+msgstr "Η εκτέλεση του <literal>Sub</literal> που ορίζεται παραπάνω θα δημιουργήσει ένα αναδυόμενο μενού με δύο καταχωρήσεις στη θέση X=300 και Y=300 στην οθόνη."
 
 #. AySnz
 #: sf_popupmenu.xhp
@@ -20921,7 +21452,7 @@ msgctxt ""
 "par_id711636493696169\n"
 "help.text"
 msgid "The prefix <literal>SFWidgets</literal> can be suppressed while invoking the <literal>PopupMenu</literal> service."
-msgstr ""
+msgstr "Το πρόθεμα <literal>SFWidgets</literal> μπορεί να καταργηθεί κατά την κλήση της υπηρεσίας <literal>PopupMenu</literal>."
 
 #. HnBew
 #: sf_popupmenu.xhp
@@ -20930,7 +21461,7 @@ msgctxt ""
 "par_id851635274721129\n"
 "help.text"
 msgid "The following example defines a <literal>Sub</literal> that can be associated with a mouse event:"
-msgstr ""
+msgstr "Το ακόλουθο παράδειγμα ορίζει ένα <literal>Sub</literal> που μπορεί να συσχετιστεί με ένα συμβάν του ποντικιού:"
 
 #. iZdDG
 #: sf_popupmenu.xhp
@@ -20939,7 +21470,7 @@ msgctxt ""
 "bas_id721636488722999\n"
 "help.text"
 msgid "' Populate popupmenu with items"
-msgstr ""
+msgstr "' Συμπλήρωση του αναδυόμενου μενού με στοιχεία"
 
 #. Czn9U
 #: sf_popupmenu.xhp
@@ -20948,7 +21479,7 @@ msgctxt ""
 "bas_id311636488724795\n"
 "help.text"
 msgid "' Do something based on vResponse"
-msgstr ""
+msgstr "' Εκτελέστε κάτι με βάση το vResponse"
 
 #. ChBWz
 #: sf_popupmenu.xhp
@@ -20957,7 +21488,7 @@ msgctxt ""
 "par_id991636718278125\n"
 "help.text"
 msgid "Use the <literal>Dispose</literal> method to free resources after executing the popup menu."
-msgstr ""
+msgstr "Χρησιμοποιήστε τη μέθοδο <literal>Dispose</literal> (Απόρριψη) για να ελευθερώσετε πόρους μετά την εκτέλεση του αναδυόμενου μενού."
 
 #. K8FAQ
 #: sf_popupmenu.xhp
@@ -20966,7 +21497,7 @@ msgctxt ""
 "par_id531636493797707\n"
 "help.text"
 msgid "It is also possible to associate a popup menu with events triggered by %PRODUCTNAME applications, form and dialog controls. Events such as \"Mouse button pressed\" and \"Mouse button released\" are commonly associated with popup menus."
-msgstr ""
+msgstr "Είναι επίσης δυνατός ο συσχετισμός ενός αναδυόμενου μενού με συμβάντα που ενεργοποιούνται από τις εφαρμογές του %PRODUCTNAME, στοιχεία ελέγχου φορμών και διαλόγου. Συμβάντα όπως \"Πατήθηκε το κουμπί του ποντικιού\" και \"Το πλήκτρο του ποντικιού απελευθερώθηκε\" συνήθως συσχετίζονται με αναδυόμενα μενού."
 
 #. L5Dhq
 #: sf_popupmenu.xhp
@@ -20975,7 +21506,7 @@ msgctxt ""
 "par_id131635275172617\n"
 "help.text"
 msgid "The examples above can be written in Python as follows:"
-msgstr ""
+msgstr "Τα παραπάνω παραδείγματα μπορούν να γραφτούν στην Python ως εξής:"
 
 #. 6esys
 #: sf_popupmenu.xhp
@@ -20984,7 +21515,7 @@ msgctxt ""
 "pyc_id916367179574588\n"
 "help.text"
 msgid "# Populate popupmenu with items"
-msgstr ""
+msgstr "# Συμπλήρωση του αναδυόμενου μενού με στοιχεία"
 
 #. Nj85P
 #: sf_popupmenu.xhp
@@ -20993,7 +21524,7 @@ msgctxt ""
 "pyc_id851636718008427\n"
 "help.text"
 msgid "# Do something based on response"
-msgstr ""
+msgstr "# Εκτελέστε κάτι με βάση την απόκριση"
 
 #. Bkw3n
 #: sf_popupmenu.xhp
@@ -21002,7 +21533,7 @@ msgctxt ""
 "hd_id711600788076834\n"
 "help.text"
 msgid "Properties"
-msgstr ""
+msgstr "Ιδιότητες"
 
 #. 7remQ
 #: sf_popupmenu.xhp
@@ -21011,7 +21542,7 @@ msgctxt ""
 "par_id461600788076917\n"
 "help.text"
 msgid "Name"
-msgstr ""
+msgstr "Όνομα"
 
 #. zWaD9
 #: sf_popupmenu.xhp
@@ -21020,7 +21551,7 @@ msgctxt ""
 "par_id221600788076591\n"
 "help.text"
 msgid "Readonly"
-msgstr ""
+msgstr "Μόνο για ανάγνωση"
 
 #. 3bRwD
 #: sf_popupmenu.xhp
@@ -21029,7 +21560,7 @@ msgctxt ""
 "par_id761600788076328\n"
 "help.text"
 msgid "Type"
-msgstr ""
+msgstr "Τύπος"
 
 #. yAUC9
 #: sf_popupmenu.xhp
@@ -21038,7 +21569,7 @@ msgctxt ""
 "par_id67160078807636\n"
 "help.text"
 msgid "Description"
-msgstr ""
+msgstr "Περιγραφή"
 
 #. qnMK2
 #: sf_popupmenu.xhp
@@ -21047,7 +21578,7 @@ msgctxt ""
 "par_id49160078807654\n"
 "help.text"
 msgid "No"
-msgstr ""
+msgstr "Όχι"
 
 #. zYGVp
 #: sf_popupmenu.xhp
@@ -21056,7 +21587,7 @@ msgctxt ""
 "par_id81600788076419\n"
 "help.text"
 msgid "Character used to define the access key of a menu item. The default character is \"~\"."
-msgstr ""
+msgstr "Ο χαρακτήρας που χρησιμοποιείται για τον καθορισμό του κλειδιού πρόσβασης ενός στοιχείου μενού. Ο προεπιλεγμένος χαρακτήρας είναι \"~\"."
 
 #. G2c6G
 #: sf_popupmenu.xhp
@@ -21065,7 +21596,7 @@ msgctxt ""
 "par_id311600788076756\n"
 "help.text"
 msgid "No"
-msgstr ""
+msgstr "Όχι"
 
 #. bcd7a
 #: sf_popupmenu.xhp
@@ -21074,7 +21605,7 @@ msgctxt ""
 "par_id441600788076826\n"
 "help.text"
 msgid "Character or string that defines how menu items are nested. The default character is \">\"."
-msgstr ""
+msgstr "Ο χαρακτήρας ή η συμβολοσειρά που καθορίζει τον τρόπο ένθεσης των στοιχείων μενού. Ο προεπιλεγμένος χαρακτήρας είναι \">\"."
 
 #. drBFS
 #: sf_popupmenu.xhp
@@ -21083,7 +21614,7 @@ msgctxt ""
 "hd_id181636719707892\n"
 "help.text"
 msgid "Menu and Submenus"
-msgstr ""
+msgstr "Μενού και υπομενού"
 
 #. XGwV6
 #: sf_popupmenu.xhp
@@ -21092,7 +21623,7 @@ msgctxt ""
 "par_id741636719725402\n"
 "help.text"
 msgid "To create a popup menu with submenus, use the character defined in the <literal>SubmenuCharacter</literal> property while creating the menu entry to define where it will be placed. For instance, consider the following menu/submenu hierarchy."
-msgstr ""
+msgstr "Για να δημιουργήσετε ένα αναδυόμενο μενού με υπομενού, χρησιμοποιήστε τον χαρακτήρα που ορίζεται στην ιδιότητα <literal>SubmenuCharacter</literal>, ενώ δημιουργείτε την καταχώρηση μενού για να ορίσετε πού θα τοποθετηθεί. Για παράδειγμα, εξετάστε την ακόλουθη ιεραρχία μενού/υπομενού."
 
 #. D3b2e
 #: sf_popupmenu.xhp
@@ -21101,7 +21632,7 @@ msgctxt ""
 "par_id211636720111489\n"
 "help.text"
 msgid "The code below uses the default submenu character \">\" to create the menu/submenu hierarchy defined above:"
-msgstr ""
+msgstr "Ο παρακάτω κώδικας χρησιμοποιεί τον προεπιλεγμένο χαρακτήρα υπομενού \">\" για να δημιουργήσει την ιεραρχία μενού/υπομενού που ορίζεται παραπάνω:"
 
 #. MvF78
 #: sf_popupmenu.xhp
@@ -21110,7 +21641,7 @@ msgctxt ""
 "par_id121636721243578\n"
 "help.text"
 msgid "The string \"---\" is used to define line separators in menus or submenus.."
-msgstr ""
+msgstr "Η συμβολοσειρά \"---\" χρησιμοποιείται για τον ορισμό διαχωριστικών γραμμών σε μενού ή υπομενού.."
 
 #. nA7BW
 #: sf_popupmenu.xhp
@@ -21119,7 +21650,7 @@ msgctxt ""
 "hd_id211636723438558\n"
 "help.text"
 msgid "Using icons"
-msgstr ""
+msgstr "Χρήση εικονιδίων"
 
 #. UKLV5
 #: sf_popupmenu.xhp
@@ -21128,7 +21659,7 @@ msgctxt ""
 "par_id981636723485402\n"
 "help.text"
 msgid "Items in the menu can have icons, which are specified as arguments in the <literal>AddCheckBox</literal>, <literal>AddItem</literal> and <literal>AddRadioButton</literal> methods."
-msgstr ""
+msgstr "Τα στοιχεία στο μενού μπορούν να έχουν εικονίδια, τα οποία καθορίζονται ως ορίσματα στις μεθόδους <literal>AddCheckBox</literal>, <literal>AddItem</literal> και <literal>AddRadioButton</literal>."
 
 #. TLDpD
 #: sf_popupmenu.xhp
@@ -21137,7 +21668,7 @@ msgctxt ""
 "par_id881636724112434\n"
 "help.text"
 msgid "All icons available in %PRODUCTNAME can be used by specifying their path relative to the folder where icon files are located in the installation folder. Icons are located in the following folder:"
-msgstr ""
+msgstr "Όλα τα εικονίδια που είναι διαθέσιμα στο %PRODUCTNAME μπορούν να χρησιμοποιηθούν καθορίζοντας τη διαδρομή τους σε σχέση με το φάκελο όπου βρίσκονται τα αρχεία εικονιδίων στο φάκελο εγκατάστασης. Τα εικονίδια βρίσκονται στον ακόλουθο φάκελο:"
 
 #. n2owj
 #: sf_popupmenu.xhp
@@ -21146,7 +21677,7 @@ msgctxt ""
 "par_id941636724808906\n"
 "help.text"
 msgid "Use the <literal>InstallFolder</literal> property of the <literal>FileSystem</literal> service to determine where %PRODUCTNAME is installed in your system."
-msgstr ""
+msgstr "Χρησιμοποιήστε την ιδιότητα <literal>InstallFolder</literal> της υπηρεσίας <literal>FileSystem</literal> για να προσδιορίσετε πού είναι εγκατεστημένο το %PRODUCTNAME στο σύστημά σας."
 
 #. xbEsC
 #: sf_popupmenu.xhp
@@ -21155,7 +21686,7 @@ msgctxt ""
 "par_id201636724575911\n"
 "help.text"
 msgid "This folder contains a series of ZIP files containing the image files of each available icon set. The images inside these ZIP files are organized into folders. To use an icon, specify the icon file with the path to its location inside the ZIP file."
-msgstr ""
+msgstr "Αυτός ο φάκελος περιέχει μια σειρά από αρχεία ZIP που περιέχουν τα αρχεία εικόνας κάθε διαθέσιμου συνόλου εικονιδίων. Οι εικόνες μέσα σε αυτά τα αρχεία ZIP είναι οργανωμένες σε φακέλους. Για να χρησιμοποιήσετε ένα εικονίδιο, καθορίστε το αρχείο εικονιδίου με τη διαδρομή προς τη θέση του μέσα στο αρχείο ZIP."
 
 #. 5yvv9
 #: sf_popupmenu.xhp
@@ -21164,7 +21695,7 @@ msgctxt ""
 "par_id641636724972071\n"
 "help.text"
 msgid "The example below uses the icon \"sc_newdoc.svg\" that is located inside the \"cmd\" folder. The forward slash \"/\" character is used as the path separator regardless of the operating system."
-msgstr ""
+msgstr "Το παρακάτω παράδειγμα χρησιμοποιεί το εικονίδιο \"sc_newdoc.svg\" που βρίσκεται μέσα στο φάκελο \"cmd\". Ο χαρακτήρας \"/\" χρησιμοποιείται ως διαχωριστικό διαδρομής ανεξάρτητα από το λειτουργικό σύστημα."
 
 #. 2QW4m
 #: sf_popupmenu.xhp
@@ -21173,7 +21704,7 @@ msgctxt ""
 "par_id691636725233961\n"
 "help.text"
 msgid "All icon sets have the same internal structure. The actual icon displayed depends on the icon set currently in use."
-msgstr ""
+msgstr "Όλα τα σύνολα εικονιδίων έχουν την ίδια εσωτερική δομή. Το ενεργό εικονίδιο που εμφανίζεται εξαρτάται από το σύνολο εικονιδίων που χρησιμοποιείται."
 
 #. v6wRS
 #: sf_popupmenu.xhp
@@ -21182,7 +21713,7 @@ msgctxt ""
 "hd_id501582887473754\n"
 "help.text"
 msgid "Methods"
-msgstr ""
+msgstr "Μέθοδοι"
 
 #. CWGtf
 #: sf_popupmenu.xhp
@@ -21191,7 +21722,7 @@ msgctxt ""
 "par_id891611613601554\n"
 "help.text"
 msgid "List of Methods in the PopupMenu Service"
-msgstr ""
+msgstr "Κατάλογος μεθόδων στην υπηρεσία PopupMenu"
 
 #. RAcsN
 #: sf_popupmenu.xhp
@@ -21200,7 +21731,7 @@ msgctxt ""
 "par_id93158919969864\n"
 "help.text"
 msgid "Inserts a check box in the popup menu. Returns an integer value that identifies the inserted item."
-msgstr ""
+msgstr "Εισάγει ένα πλαίσιο ελέγχου στο αναδυόμενο μενού. Επιστρέφει μια ακέραια τιμή που προσδιορίζει το στοιχείο που έχει εισαχθεί."
 
 #. ZZrDA
 #: sf_popupmenu.xhp
@@ -21209,7 +21740,7 @@ msgctxt ""
 "par_id821591631203996\n"
 "help.text"
 msgid "<emph>menuitem:</emph> Defines the text to be displayed in the menu. This argument also defines the hierarchy of the item inside the menu by using the submenu character."
-msgstr ""
+msgstr "<emph>menuitem:</emph> (στοιχείο μενού:) Καθορίζει το κείμενο που θα εμφανίζεται στο μενού. Αυτό το όρισμα ορίζει επίσης την ιεραρχία του στοιχείου μέσα στο μενού χρησιμοποιώντας τον χαρακτήρα του υπομενού."
 
 #. riy7p
 #: sf_popupmenu.xhp
@@ -21218,7 +21749,7 @@ msgctxt ""
 "par_id821591631203116\n"
 "help.text"
 msgid "<emph>name:</emph> String value to be returned when the item is clicked. By default, the last component of the menu hierarchy is used."
-msgstr ""
+msgstr "<emph>name:</emph> (όνομα:) Τιμή συμβολοσειράς που θα επιστραφεί όταν πατηθεί το στοιχείο. Από προεπιλογή, χρησιμοποιείται το τελευταίο στοιχείο της ιεραρχίας του μενού."
 
 #. yxK8E
 #: sf_popupmenu.xhp
@@ -21227,7 +21758,7 @@ msgctxt ""
 "par_id821591631203133\n"
 "help.text"
 msgid "<emph>status:</emph> Defines whether the item is selected when the menu is created (Default = <literal>False</literal>)."
-msgstr ""
+msgstr "<emph>status:</emph> (κατάσταση:) Καθορίζει εάν το στοιχείο επιλέγεται κατά τη δημιουργία του μενού (Προεπιλογή = <literal>False</literal>)."
 
 #. Q4ZNV
 #: sf_popupmenu.xhp
@@ -21236,7 +21767,7 @@ msgctxt ""
 "par_id11636721653313\n"
 "help.text"
 msgid "<emph>icon:</emph> Path and name of the icon to be displayed without the leading path separator. The actual icon shown depends on the icon set being used."
-msgstr ""
+msgstr "<emph>icon:</emph> (εικονίδιο:) Η διαδρομή και το όνομα του εικονιδίου που θα εμφανιστεί χωρίς το αρχικό διαχωριστικό της διαδρομής. Το πραγματικό εικονίδιο που εμφανίζεται εξαρτάται από το χρησιμοποιούμενο σύνολο των εικονιδίων."
 
 #. dkqgP
 #: sf_popupmenu.xhp
@@ -21245,7 +21776,7 @@ msgctxt ""
 "par_id11636721653208\n"
 "help.text"
 msgid "<emph>tooltip:</emph> Text to be displayed as tooltip."
-msgstr ""
+msgstr "<emph>tooltip:</emph> Το κείμενο που θα εμφανίζεται ως επεξήγηση εργαλείου."
 
 #. NEE76
 #: sf_popupmenu.xhp
@@ -21254,7 +21785,7 @@ msgctxt ""
 "par_id93158919963364\n"
 "help.text"
 msgid "Inserts a menu entry in the popup menu. Returns an integer value that identifies the inserted item."
-msgstr ""
+msgstr "Εισάγει μια καταχώρηση μενού στο αναδυόμενο μενού. Επιστρέφει μια ακέραια τιμή που προσδιορίζει το στοιχείο που έχει εισαχθεί."
 
 #. vdtEn
 #: sf_popupmenu.xhp
@@ -21263,7 +21794,7 @@ msgctxt ""
 "par_id821591631203021\n"
 "help.text"
 msgid "<emph>menuitem:</emph> Defines the text to be displayed in the menu. This argument also defines the hierarchy of the item inside the menu by using the submenu character."
-msgstr ""
+msgstr "<emph>menuitem:</emph> (στοιχείο μενού:) Καθορίζει το κείμενο που θα εμφανίζεται στο μενού. Αυτό το όρισμα ορίζει επίσης την ιεραρχία του στοιχείου μέσα στο μενού χρησιμοποιώντας τον χαρακτήρα του υπομενού."
 
 #. 8eE5y
 #: sf_popupmenu.xhp
@@ -21272,7 +21803,7 @@ msgctxt ""
 "par_id821591631203026\n"
 "help.text"
 msgid "<emph>name:</emph> String value to be returned when the item is clicked. By default, the last component of the menu hierarchy is used."
-msgstr ""
+msgstr "<emph>name:</emph> (όνομα:) Τιμή συμβολοσειράς που θα επιστραφεί όταν πατηθεί το στοιχείο. Από προεπιλογή, χρησιμοποιείται το τελευταίο στοιχείο της ιεραρχίας του μενού."
 
 #. F646F
 #: sf_popupmenu.xhp
@@ -21281,7 +21812,7 @@ msgctxt ""
 "par_id11636721652886\n"
 "help.text"
 msgid "<emph>icon:</emph> Path and name of the icon to be displayed without the leading path separator. The actual icon shown depends on the icon set being used."
-msgstr ""
+msgstr "<emph>icon:</emph> (εικονίδιο:) Η διαδρομή και το όνομα του εικονιδίου που θα εμφανιστεί χωρίς το αρχικό διαχωριστικό της διαδρομής. Το πραγματικό εικονίδιο που εμφανίζεται εξαρτάται από το χρησιμοποιούμενο σύνολο των εικονιδίων."
 
 #. XFkGB
 #: sf_popupmenu.xhp
@@ -21290,7 +21821,7 @@ msgctxt ""
 "par_id11636721653118\n"
 "help.text"
 msgid "<emph>tooltip:</emph> Text to be displayed as tooltip."
-msgstr ""
+msgstr "<emph>tooltip:</emph> Το κείμενο που θα εμφανίζεται ως επεξήγηση εργαλείου."
 
 #. dJTZs
 #: sf_popupmenu.xhp
@@ -21299,7 +21830,7 @@ msgctxt ""
 "bas_id41158919969106\n"
 "help.text"
 msgid "myPopup.AddItem(\"Item A\", Tooltip := \"A descriptive message\")"
-msgstr ""
+msgstr "myPopup.AddItem(\"Στοιχείο A\", Tooltip := \"Ένα περιγραφικό μήνυμα\")"
 
 #. VDLFK
 #: sf_popupmenu.xhp
@@ -21308,7 +21839,7 @@ msgctxt ""
 "pyc_id321621534170554\n"
 "help.text"
 msgid "my_popup.AddItem(\"Item A\", tooltip = \"A descriptive message\")"
-msgstr ""
+msgstr "my_popup.AddItem(\"Στοιχείο A\", tooltip = \"Ένα περιγραφικό μήνυμα\")"
 
 #. U2vBb
 #: sf_popupmenu.xhp
@@ -21317,7 +21848,7 @@ msgctxt ""
 "par_id93158919969399\n"
 "help.text"
 msgid "Inserts a radio button entry in the popup menu. Returns an integer value that identifies the inserted item."
-msgstr ""
+msgstr "Εισάγει μια καταχώρηση πλήκτρου επιλογής στο αναδυόμενο μενού. Επιστρέφει μια ακέραια τιμή που προσδιορίζει το στοιχείο που έχει εισαχθεί."
 
 #. 92F32
 #: sf_popupmenu.xhp
@@ -21326,7 +21857,7 @@ msgctxt ""
 "par_id821591631203501\n"
 "help.text"
 msgid "<emph>menuitem:</emph> Defines the text to be displayed in the menu. This argument also defines the hierarchy of the item inside the menu by using the submenu character."
-msgstr ""
+msgstr "<emph>menuitem:</emph> (στοιχείο μενού:) Καθορίζει το κείμενο που θα εμφανίζεται στο μενού. Αυτό το όρισμα ορίζει επίσης την ιεραρχία του στοιχείου μέσα στο μενού χρησιμοποιώντας τον χαρακτήρα του υπομενού."
 
 #. 2PuBE
 #: sf_popupmenu.xhp
@@ -21335,7 +21866,7 @@ msgctxt ""
 "par_id821591631228716\n"
 "help.text"
 msgid "<emph>name:</emph> String value to be returned when the item is clicked. By default, the last component of the menu hierarchy is used."
-msgstr ""
+msgstr "<emph>name:</emph> (όνομα:) Τιμή συμβολοσειράς που θα επιστραφεί όταν πατηθεί το στοιχείο. Από προεπιλογή, χρησιμοποιείται το τελευταίο στοιχείο της ιεραρχίας του μενού."
 
 #. yLvRM
 #: sf_popupmenu.xhp
@@ -21344,7 +21875,7 @@ msgctxt ""
 "par_id821591631203643\n"
 "help.text"
 msgid "<emph>status:</emph> Defines whether the item is selected when the menu is created (Default = <literal>False</literal>)."
-msgstr ""
+msgstr "<emph>status:</emph> (κατάσταση:) Καθορίζει εάν το στοιχείο επιλέγεται κατά τη δημιουργία του μενού (Προεπιλογή = <literal>False</literal>)."
 
 #. 6XiD7
 #: sf_popupmenu.xhp
@@ -21353,7 +21884,7 @@ msgctxt ""
 "par_id11636721653228\n"
 "help.text"
 msgid "<emph>icon:</emph> Path and name of the icon to be displayed without the leading path separator. The actual icon shown depends on the icon set being used."
-msgstr ""
+msgstr "<emph>icon:</emph> (εικονίδιο:) Η διαδρομή και το όνομα του εικονιδίου που θα εμφανιστεί χωρίς το αρχικό διαχωριστικό της διαδρομής. Το πραγματικό εικονίδιο που εμφανίζεται εξαρτάται από το χρησιμοποιούμενο σύνολο των εικονιδίων."
 
 #. cRTRD
 #: sf_popupmenu.xhp
@@ -21362,7 +21893,7 @@ msgctxt ""
 "par_id11636721653114\n"
 "help.text"
 msgid "<emph>tooltip:</emph> Text to be displayed as tooltip."
-msgstr ""
+msgstr "<emph>tooltip:</emph> Το κείμενο που θα εμφανίζεται ως επεξήγηση εργαλείου."
 
 #. nQrD3
 #: sf_popupmenu.xhp
@@ -21371,7 +21902,7 @@ msgctxt ""
 "par_id93158919963279\n"
 "help.text"
 msgid "Displays the popup menu and waits for a user action. Returns the item clicked by the user."
-msgstr ""
+msgstr "Εμφανίζει το αναδυόμενο μενού και περιμένει μια ενέργεια του χρήστη. Επιστρέφει το στοιχείο που πάτησε ο χρήστης."
 
 #. qwwKx
 #: sf_popupmenu.xhp
@@ -21380,7 +21911,7 @@ msgctxt ""
 "par_id101636726249788\n"
 "help.text"
 msgid "If the user clicks outside the popup menu or presses the <keycode>Esc</keycode> key, then no item is selected. In such cases, the returned value depends on the <literal>returnid</literal> parameter. If <literal>returnid = True</literal> and no item is selected, then the value 0 (zero) is returned. Otherwise an empty string \"\" is returned."
-msgstr ""
+msgstr "Εάν ο χρήστης πατήσει έξω από το αναδυόμενο μενού ή πατήσει το πλήκτρο <keycode>Esc</keycode>, τότε δεν επιλέγεται κανένα στοιχείο. Σε τέτοιες περιπτώσεις, η επιστρεφόμενη τιμή εξαρτάται από την παράμετρο <literal>returnid</literal>. Αν <literal>returnid = True</literal> και δεν έχει επιλεγεί κανένα στοιχείο, τότε επιστρέφεται η τιμή 0 (μηδέν). Διαφορετικά, επιστρέφεται μια κενή συμβολοσειρά \"\"."
 
 #. EFriZ
 #: sf_popupmenu.xhp
@@ -21389,7 +21920,7 @@ msgctxt ""
 "par_id821591631202088\n"
 "help.text"
 msgid "<emph>returnid:</emph> If <literal>True</literal> the selected item ID is returned. If <literal>False</literal> the method returns the item's name (Default = <literal>True</literal>)."
-msgstr ""
+msgstr "<emph>returnid:</emph> Εάν <literal>True</literal> επιστρέφεται το επιλεγμένο αναγνωριστικό στοιχείου. Εάν <literal>False</literal> η μέθοδος επιστρέφει το όνομα του στοιχείου (Προεπιλογή = <literal>True</literal>)."
 
 #. y4PWP
 #: sf_popupmenu.xhp
@@ -21398,7 +21929,7 @@ msgctxt ""
 "par_id51636726671698\n"
 "help.text"
 msgid "In the examples below, a popup menu is created and the item's name is returned because the <literal>returnid</literal> argument is set to <literal>False</literal>."
-msgstr ""
+msgstr "Στα παρακάτω παραδείγματα, δημιουργείται ένα αναδυόμενο μενού και το όνομα του στοιχείου επιστρέφεται επειδή το όρισμα <literal>returnid</literal> έχει οριστεί σε <literal>False</literal>."
 
 #. GpvmN
 #: sf_services.xhp
@@ -21407,7 +21938,7 @@ msgctxt ""
 "tit\n"
 "help.text"
 msgid "ScriptForge.Services service"
-msgstr ""
+msgstr "Υπηρεσία ScriptForge.Services"
 
 #. bFtkf
 #: sf_services.xhp
@@ -21416,7 +21947,7 @@ msgctxt ""
 "hd_id471582710868716\n"
 "help.text"
 msgid "<variable id=\"ScriptForgeServices\"><link href=\"text/sbasic/shared/03/sf_services.xhp\" name=\"Services service\"><literal>ScriptForge</literal>.<literal>Services</literal> service</link></variable>"
-msgstr ""
+msgstr "<variable id=\"ScriptForgeServices\"><link href=\"text/sbasic/shared/03/sf_services.xhp\" name=\"Services service\">Υπηρεσία <literal>ScriptForge</literal>.<literal>Services</literal></link></variable>"
 
 #. SDbDJ
 #: sf_services.xhp
@@ -21425,7 +21956,7 @@ msgctxt ""
 "par_id241627513489594\n"
 "help.text"
 msgid "The main purpose of the <literal>Services</literal> module is to provide access to the <literal>CreateScriptService</literal> method, which can be called in user scripts to instantiate services that are implemented using the ScriptForge framework."
-msgstr ""
+msgstr "Ο κύριος σκοπός της ενότητας <literal>Services</literal> (Υπηρεσίες) είναι να παρέχει πρόσβαση στη μέθοδο <literal>CreateScriptService</literal>, η οποία μπορεί να κληθεί σε σενάρια χρήστη για να δημιουργήσει υπηρεσίες που υλοποιούνται χρησιμοποιώντας το πλαίσιο ScriptForge."
 
 #. 7B2KJ
 #: sf_services.xhp

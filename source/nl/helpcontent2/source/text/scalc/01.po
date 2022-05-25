@@ -4,8 +4,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
 "POT-Creation-Date: 2022-04-11 15:28+0200\n"
-"PO-Revision-Date: 2022-05-10 09:33+0000\n"
-"Last-Translator: HanV <han.velthuis@home.nl>\n"
+"PO-Revision-Date: 2022-05-22 12:50+0000\n"
+"Last-Translator: kees538 <kees538@gmail.com>\n"
 "Language-Team: Dutch <https://translations.documentfoundation.org/projects/libo_help-master/textscalc01/nl/>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Accelerator-Marker: ~\n"
-"X-Generator: Weblate 4.11.2\n"
+"X-Generator: LibreOffice\n"
 "X-POOTLE-MTIME: 1565421340.000000\n"
 
 #. sZfWF
@@ -18079,7 +18079,7 @@ msgctxt ""
 "par_id3153081\n"
 "help.text"
 msgid "<item type=\"input\">=DDE(\"soffice\";\"c:\\office\\document\\motto.odt\";\"Today's motto\")</item> returns a motto in the cell containing this formula. First, you must enter a line in the motto.odt document containing the motto text and define it as the first line of a section named <item type=\"literal\">Today's Motto</item> (in <item type=\"productname\">%PRODUCTNAME</item> Writer under <emph>Insert - Section</emph>). If the motto is modified (and saved) in the <item type=\"productname\">%PRODUCTNAME</item> Writer document, the motto is updated in all <item type=\"productname\">%PRODUCTNAME</item> Calc cells in which this DDE link is defined."
-msgstr "<item type=\"input\">=DDE(\"soffice\";\"c:\\office\\document\\motto.odt\";\"Motto van vandaag\")</item> geeft een motto terug in de cel die deze formule bevat. Eerst moet u een regel invoeren in het document motto.odt dat de tekst van het motto bevat en het definiëren als de eerste regel van een sectie genaamd <item type=\"literal\">Motto van vandaag</item> (in <item type=\"productname\">%PRODUCTNAME</item> Writer onder <emph>Invoegen - Sectie</emph>). Als het motto is aangepast (en opgeslagen) in het <item type=\"productname\">%PRODUCTNAME</item> Writerdocument wordt het motto bijgewerkt in alle cellen van <item type=\"productname\">%PRODUCTNAME</item> Calc waarin deze DDE-koppeling is gedefinieerd."
+msgstr "<item type=\"input\">=DDE(\"soffice\";\"c:\\office\\document\\motto.odt\";\"Motto van vandaag\")</item> geeft een motto terug in de cel die deze formule bevat. Eerst moet u een regel invoeren in het document motto.odt dat de tekst van het motto bevat en het definiëren als de eerste regel van een sectie genaamd <item type=\"literal\">Motto van vandaag</item> (in <item type=\"productname\">%PRODUCTNAME</item> Writer onder <emph>Invoegen - Sectie</emph>). Als het motto is aangepast (en opgeslagen) in het <item type=\"productname\">%PRODUCTNAME</item> Writer-document wordt het motto bijgewerkt in alle cellen van <item type=\"productname\">%PRODUCTNAME</item> Calc waarin deze DDE-koppeling is gedefinieerd."
 
 #. DmwaH
 #: 04060109.xhp
@@ -20032,7 +20032,7 @@ msgctxt ""
 "par_id21624454513641\n"
 "help.text"
 msgid "You can use the CHAR function or the UNICHAR function to insert a double quotation mark. For example, the formula <input>=UNICHAR(34) & \"The Catcher in the Rye\" & UNICHAR(34) & \" is a famous book by J. D. Salinger.\"</input> displays the string <literal>\"The Catcher in the Rye\" is a famous book by J. D. Salinger.</literal>"
-msgstr "U kunt de CHAR-functie of de UNICHAR-functie gebruiken om een dubbel aanhalingsteken in te voegen. Bijvoorbeeld, de formule <input>=UNICHAR(34) & \"The Catcher in the Rye\" & UNICHAR(34) & \" is een beroemd boek van JD Salinger.\"</input> geeft de string <literal>\"The Catcher\" weer in the Rye\" is een beroemd boek van JD Salinger.</literal>"
+msgstr "U kunt de functies CHAR of UNITEKEN gebruiken om een dubbel aanhalingsteken in te voegen. Bijvoorbeeld, de formule <input>=UNITEKEN(34) & \"The Catcher in the Rye\" & UNITEKEN(34) & \" is een beroemd boek van JD Salinger.\"</input> geeft de string <literal>\"The Catcher\" weer in the Rye\" is een beroemd boek van JD Salinger.</literal>"
 
 #. cpK3Z
 #: 04060110.xhp
@@ -20329,7 +20329,7 @@ msgctxt ""
 "par_id581621538151600\n"
 "help.text"
 msgid "<input>=LEN(CLEAN(CHAR(7) & \"LibreOffice Calc\" & CHAR(8)))</input> returns 16, showing that the CLEAN function removes the non-printable Unicode U+0007 (\"BEL\") and U+0008 (\"BS\") characters at the beginning and end of the string argument. CLEAN does not remove spaces."
-msgstr "<input>=LEN(CLEAN(CHAR(7) & \"LibreOffice Calc\" & CHAR(8)))</input> geeft 16 terug, wat aantoont dat de CLEAN-functie de niet-afdrukbare Unicode U+0007 (\"BEL\") verwijdert en U+0008 (\"BS\") tekens aan het begin en einde van het stringargument. CLEAN verwijdert geen spaties."
+msgstr "<input>=LENGTE(WISSEN.CONTROL(CHAR(7) & \"LibreOffice Calc\" & CHAR(8)))</input> geeft 16 terug, wat aantoont dat de WISSEN.CONTROL-functie de niet-afdrukbare Unicode U+0007 (\"BEL\") verwijdert en U+0008 (\"BS\") tekens aan het begin en einde van de invoer. WISSEN.CONTROL verwijdert geen spaties."
 
 #. zdGBJ
 #: 04060110.xhp
@@ -20572,7 +20572,7 @@ msgctxt ""
 "par_id3151280\n"
 "help.text"
 msgid "You set the currency format in your system settings."
-msgstr "U kunt de valuta=opmaak in uw systeeminstellingen opgeven."
+msgstr "U kunt de valuta-opmaak in uw systeeminstellingen opgeven."
 
 #. icFpC
 #: 04060110.xhp
@@ -20716,7 +20716,7 @@ msgctxt ""
 "par_id3083452\n"
 "help.text"
 msgid "FIND(\"FindText\"; \"Text\" [; Position])"
-msgstr "VINDEN(\"Tekst zoeken\"; \"Tekst\" [; Positie])"
+msgstr "VINDEN(ZoekTekst;Tekst[; Positie])"
 
 #. 3HU9t
 #: 04060110.xhp
@@ -20788,7 +20788,7 @@ msgctxt ""
 "par_id3147567\n"
 "help.text"
 msgid "FIXED(Number; [Decimals = 2 [; NoThousandsSeparators = FALSE]])"
-msgstr "VAST(Getal; [Decimalen = 2 [; Geen scheidingsteken voor duizendtallen = ONWAAR]])"
+msgstr "VAST(Getal; [Decimalen = 2 [; GeenScheidingstekenDuizendtallen = ONWAAR]])"
 
 #. Lu9oq
 #: 04060110.xhp
@@ -20815,7 +20815,7 @@ msgctxt ""
 "par_id3150877\n"
 "help.text"
 msgid "<emph>NoThousandsSeparators</emph> (optional) determines whether the thousands separator is used.  If it is <literal>TRUE</literal> or non-zero, then group separators are omitted from the resulting string. If the parameter is equal to 0 or if it is missing altogether, the thousands separators of your <link href=\"text/shared/optionen/01140000.xhp\" name=\"current locale setting\">current locale setting</link> are displayed."
-msgstr "<emph>Geen scheidingsteken voor decimalen</emph> (optioneel) bepaalt of het scheidingsteken voor duizendtallen wordt gebruikt.  Als het <literal>WAAR</literal> is of niet nul, dan worden groepsscheidingstekens weggelaten uit de resulterende tekenreeks. Als de parameter gelijk is aan 0 of helemaal ontbreekt, worden de scheidingstekens voor duizendtallen van uw <link href=\"text/shared/optionen/01140000.xhp\" name=\"current locale setting\">huidige lokale instellingen</link> weergegeven."
+msgstr "<emph> GeenScheidingstekenDuizendtallen</emph> (optioneel) bepaalt of het scheidingsteken voor duizendtallen wordt gebruikt.  Als het <literal>WAAR</literal> is of niet nul, dan worden groepsscheidingstekens weggelaten uit de resulterende tekenreeks. Als de parameter gelijk is aan 0 of helemaal ontbreekt, worden de scheidingstekens voor duizendtallen van uw <link href=\"text/shared/optionen/01140000.xhp\" name=\"current locale setting\">huidige lokale instellingen</link> weergegeven."
 
 #. nDs7Q
 #: 04060110.xhp
@@ -21103,7 +21103,7 @@ msgctxt ""
 "bm_id2956110\n"
 "help.text"
 msgid "<bookmark_value>LENB function</bookmark_value>"
-msgstr "<bookmark_value>LENGTE-functie</bookmark_value>"
+msgstr "<bookmark_value>LENGTEB-functie</bookmark_value>"
 
 #. e5FBE
 #: 04060110.xhp
@@ -21130,7 +21130,7 @@ msgctxt ""
 "par_id2954063\n"
 "help.text"
 msgid "LENB(\"Text\")"
-msgstr "LENB(\"Tekst\")"
+msgstr "LENGTEB(\"Tekst\")"
 
 #. 9Hv5K
 #: 04060110.xhp
@@ -21148,7 +21148,7 @@ msgctxt ""
 "par_id2956018\n"
 "help.text"
 msgid "<item type=\"input\">LENB(\"中\")</item> returns 2 (1 DBCS character consisting of 2 bytes)."
-msgstr "<item type=\"input\">LENB(\"中\")</item> geeft 2 terug (1 DBCS-teken van 2 bytes)."
+msgstr "<item type=\"input\">LENGTEB(\"中\")</item> geeft 2 terug (1 DBCS-teken van 2 bytes)."
 
 #. BgQBW
 #: 04060110.xhp
@@ -21157,7 +21157,7 @@ msgctxt ""
 "par_id2956028\n"
 "help.text"
 msgid "<item type=\"input\">LENB(\"中国\")</item> returns 4 (2 DBCS characters each consisting of 2 bytes)."
-msgstr "<item type=\"input\">LENB(\"中国\")</item> geeft 4 terug (2 DBCS-tekens van elk 2 bytes)."
+msgstr "<item type=\"input\">LENGTEB(\"中国\")</item> geeft 4 terug (2 DBCS-tekens van elk 2 bytes)."
 
 #. SJoqC
 #: 04060110.xhp
@@ -21166,7 +21166,7 @@ msgctxt ""
 "par_id2956038\n"
 "help.text"
 msgid "<item type=\"input\">LENB(\"office\")</item> returns 6 (6 non-DBCS characters each consisting of 1 byte)."
-msgstr "<item type=\"input\">LENB(\"Kantoor\")</item>Geeft 6 terug (6 niet-DBCS tekens van elk 1 byte)."
+msgstr "<item type=\"input\">LENGTEB(\"Kantoor\")</item>Geeft 6 terug (6 niet-DBCS tekens van elk 1 byte)."
 
 #. ZoXsU
 #: 04060110.xhp
@@ -21175,7 +21175,7 @@ msgctxt ""
 "par_id2956008\n"
 "help.text"
 msgid "<item type=\"input\">=LENB(\"Good Afternoon\")</item> returns 14."
-msgstr "<item type=\"input\">=LENGTE(\"Goedemiddag\")</item> geeft 11 terug."
+msgstr "<item type=\"input\">=LENGTEB(\"Goedemiddag\")</item> geeft 11 terug."
 
 #. ismJk
 #: 04060110.xhp
@@ -21184,7 +21184,7 @@ msgctxt ""
 "par_id2954300\n"
 "help.text"
 msgid "<item type=\"input\">=LENB(12345.67)</item> returns 8."
-msgstr "<item type=\"input\">=LENGTE(12345,67)</item> geeft 8 terug."
+msgstr "<item type=\"input\">=LENGTEB(12345,67)</item> geeft 8 terug."
 
 #. MuFpD
 #: 04060110.xhp
@@ -21942,7 +21942,7 @@ msgctxt ""
 "hd_id3154830\n"
 "help.text"
 msgid "SUBSTITUTE"
-msgstr "SUBSTITUEREN"
+msgstr "VERVANGING"
 
 #. VFS8u
 #: 04060110.xhp
@@ -21960,7 +21960,7 @@ msgctxt ""
 "par_id3147582\n"
 "help.text"
 msgid "SUBSTITUTE(\"Text\"; \"SearchText\"; \"NewText\" [; Occurrence])"
-msgstr "VERVANGING(\"Tekst\"; \"Tekst zoeken\"; \"Nieuwe tekst\" [; Optreden])"
+msgstr "VERVANGING(Tekst; ZoekTekst; NieuweTekst [;AantalKeren])"
 
 #. tydqc
 #: 04060110.xhp
@@ -22005,7 +22005,7 @@ msgctxt ""
 "par_id3150412\n"
 "help.text"
 msgid "<item type=\"input\">=SUBSTITUTE(\"123123123\";\"3\";\"abc\")</item> returns 12abc12abc12abc."
-msgstr "<item type=\"input\">=SUBSTITUEREN(\"123123123\";\"3\";\"abc\")</item> geeft 12abc12abc12abc terug."
+msgstr "<item type=\"input\">=VERVANGING(\"123123123\";\"3\";\"abc\")</item> geeft 12abc12abc12abc terug."
 
 #. MLoez
 #: 04060110.xhp
@@ -22014,7 +22014,7 @@ msgctxt ""
 "par_id3154915\n"
 "help.text"
 msgid "<item type=\"input\">=SUBSTITUTE(\"123123123\";\"3\";\"abc\";2)</item> returns 12312abc123."
-msgstr "<item type=\"input\">=SUBSTITUEREN(\"123123123\";\"3\";\"abc\";2)</item> geeft 12312abc123 terug."
+msgstr "<item type=\"input\">=VERVANGING(\"123123123\";\"3\";\"abc\";2)</item> geeft 12312abc123 terug."
 
 #. Bjdnv
 #: 04060110.xhp
@@ -22221,7 +22221,7 @@ msgctxt ""
 "par_id3156074\n"
 "help.text"
 msgid "<item type=\"input\">=TRIM(\" hello      world \")</item> returns hello world without leading and trailing spaces and with single space between words."
-msgstr "<item type=\"input\">=TRIM(\" hallo      wereld \")</item> geeft hallo wereld terug zonder voorafgaande of volgende spaties en met een enkele spatie tussen de woorden."
+msgstr "<item type=\"input\">=BIJSNIJDEN(\" hallo      wereld \")</item> geeft hallo wereld terug zonder voorafgaande of volgende spaties en met een enkele spatie tussen de woorden."
 
 #. G7Zmx
 #: 04060110.xhp
@@ -22257,7 +22257,7 @@ msgctxt ""
 "par_id0907200904123753\n"
 "help.text"
 msgid "<item type=\"literal\">UNICHAR(number)</item>"
-msgstr "<item type=\"literal\">UNICHAR(getal)</item>"
+msgstr "<item type=\"literal\">UNITEKEN(getal)</item>"
 
 #. Bv7so
 #: 04060110.xhp
@@ -22284,7 +22284,7 @@ msgctxt ""
 "bm_id0907200904033543\n"
 "help.text"
 msgid "<bookmark_value>UNICODE function</bookmark_value>"
-msgstr "<bookmark_value>UNI.CODE-functie</bookmark_value>"
+msgstr "<bookmark_value>UNICODE-functie</bookmark_value>"
 
 #. pcCdJ
 #: 04060110.xhp
@@ -22293,7 +22293,7 @@ msgctxt ""
 "hd_id0907200904022588\n"
 "help.text"
 msgid "UNICODE"
-msgstr "UNI.CODE"
+msgstr "UNICODE"
 
 #. RHZRt
 #: 04060110.xhp
@@ -22320,7 +22320,7 @@ msgctxt ""
 "par_id0907200904123919\n"
 "help.text"
 msgid "=UNICODE(\"©\") returns the Unicode number 169 for the Copyright character."
-msgstr "=UNI.CODE(\"©\") geeft het Unicode-getal 169 terug voor het teken Copyright."
+msgstr "=UNICODE(\"©\") geeft het Unicode-getal 169 terug voor het teken Copyright."
 
 #. 3w2a5
 #: 04060110.xhp
@@ -22329,7 +22329,7 @@ msgctxt ""
 "par_id050220170755393174\n"
 "help.text"
 msgid "See also the UNICHAR() function."
-msgstr "Zie ook de functie UNICHAR()."
+msgstr "Zie ook de functie UNITEKEN()."
 
 #. 3CD8p
 #: 04060110.xhp
@@ -59814,7 +59814,7 @@ msgctxt ""
 "par_id221573517641172\n"
 "help.text"
 msgid "FINDB(Find Text ; Text [; Position])"
-msgstr "VINDENB(Tekst zoeken ; Tekst [; Positie])"
+msgstr "VINDENB(ZoekTekst ; Tekst [; Positie])"
 
 #. puQAw
 #: func_findb.xhp
