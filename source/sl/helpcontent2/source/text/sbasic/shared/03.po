@@ -3,14 +3,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: LibreOffice 7.4\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2022-05-03 11:40+0200\n"
-"PO-Revision-Date: 2022-05-04 23:39+0200\n"
+"POT-Creation-Date: 2022-05-30 20:18+0200\n"
+"PO-Revision-Date: 2022-05-09 19:22+0200\n"
 "Last-Translator: Martin Srebotnjak <miles@filmsi.net>\n"
 "Language-Team: sl.libreoffice.org\n"
-"Language: sl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: sl\n"
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n%100==4 ? 2 : 3);\n"
 "X-Generator: Virtaal 0.7.1\n"
 "X-Accelerator-Marker: ~\n"
@@ -160,6 +160,14 @@ msgctxt ""
 "help.text"
 msgid "ScriptForge libraries build up an extensible collection of macro scripting resources for %PRODUCTNAME to be invoked from Basic macros or Python scripts."
 msgstr "Knjižnica ScriptForge je tvorijo razširljivo zbirko virov za skripte makrov za %PRODUCTNAME, ki jih prikličete iz makrov BASIC ali skriptov Python."
+
+#: lib_ScriptForge.xhp
+msgctxt ""
+"lib_ScriptForge.xhp\n"
+"par_id901528999850603\n"
+"help.text"
+msgid "• Basic macros require to load <literal>ScriptForge</literal> library using the following statement:<br/><literal>GlobalScope.BasicLibraries.loadLibrary(\"ScriptForge\")</literal><br/><br/>• Python scripts require an import from <literal>scriptforge</literal> module:<br/><literal>from scriptforge import CreateScriptService</literal>"
+msgstr "• Za makre Basic mora biti naložena knjižnica <literal>ScriptForge</literal> z naslednjim ukazom:<br/><literal>GlobalScope.BasicLibraries.loadLibrary(\"ScriptForge\")</literal><br/><br/>• Za skripte Python mora biti opravljen uvoz iz modula <literal>scriptforge</literal>:<br/><literal>from scriptforge import CreateScriptService</literal>"
 
 #: lib_ScriptForge.xhp
 msgctxt ""
@@ -1631,7 +1639,7 @@ msgctxt ""
 "par_id311582562787187\n"
 "help.text"
 msgid "<emph>casesensitive</emph>: Only for string comparisons (Default = <literal>False</literal>)."
-msgstr "<emph>casesensitive</emph>: razločevanje med malimi in velikimi črkami, le za primerjavo nizov. Privzeta vrednost je <literal>False</literal>."
+msgstr "<emph>casesensitive</emph>: razločevanje med malimi in velikimi črkami, le za primerjavo nizov (privzeta vrednost je <literal>False</literal>)."
 
 #: sf_array.xhp
 msgctxt ""
@@ -1711,7 +1719,7 @@ msgctxt ""
 "par_id701582627970037\n"
 "help.text"
 msgid "<emph>casesensitive</emph>: Only for string comparisons (Default = <literal>False</literal>)."
-msgstr "<emph>casesensitive</emph>: razločevanje med malimi in velikimi črkami, le za primerjavo nizov. Privzeta vrednost je <literal>False</literal>."
+msgstr "<emph>casesensitive</emph>: razločevanje med malimi in velikimi črkami, le za primerjavo nizov (privzeta vrednost je <literal>False</literal>)."
 
 #: sf_array.xhp
 msgctxt ""
@@ -4468,6 +4476,326 @@ msgstr "<emph>Range</emph>: obseg, katerega vrednosti in formule bodo počišče
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
+"par_id841592919903025\n"
+"help.text"
+msgid "Deletes the columns of a specified range that match a filter expressed as a Calc formula. The filter is applied to each column to decide whether it will be deleted or not."
+msgstr "Izbriše stolpce navedenega obsega, ki se ujemajo s filtrom, izraženem v obliki formule programa Calc. Filter se uveljavi na vsakem stolpcu, tako da odloča, ali bo izbrisan ali ne."
+
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id601652269911029\n"
+"help.text"
+msgid "The deleted column can be limited to the height of the specified range or span to the height of the entire sheet, thus deleting whole columns."
+msgstr "Izbrisani stolpec je možno omejiti na višino navedenega obsega ali raztegniti na višino celotnega delovnega lista, s čimer izbrišete celotne stolpce."
+
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id701652271281106\n"
+"help.text"
+msgid "This method returns a string with the range address of the compacted range. If all columns are deleted, then an empty string is returned."
+msgstr "Ta metoda vrne niz, ki predstavlja naslov obsega strnjenega obsega. Če so izbrisani vsi stolpci, potem vrne prazen niz."
+
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id191652271892064\n"
+"help.text"
+msgid "If a range of cells is selected, calling this method will not impact the selection."
+msgstr "Če je izbran obseg celic, klic te metode ne bo vplival na izbor."
+
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id771592919922181\n"
+"help.text"
+msgid "<emph>range</emph>: The range from which columns will be deleted, as a string."
+msgstr "<emph>range</emph>: obseg, v katerem bodo stolpci izbrisani, podan kot niz."
+
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id771592919932260\n"
+"help.text"
+msgid "<emph>wholecolumn</emph>: If this option is set to <literal>True</literal> the entire column will be deleted from the sheet. The default value is <literal>False</literal>, which means that the deleted column will be limited to the height of the specified <literal>range</literal>."
+msgstr "<emph>wholecolumn</emph>: če ima vrednost <literal>False</literal>, bo z delovnega lista izbrisan celoten stolpec. Privzeta vrednost je  <literal>False</literal>, kar pomeni, da bo izbrisani stolpec po višini omejen na navedeni obseg <literal>range</literal>."
+
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id771592919915974\n"
+"help.text"
+msgid "<emph>filterformula</emph>: The filter to be applied to each column to determine whether or not it will be deleted. The filter is expressed as a Calc formula that should be applied to the first column. When the formula returns <emph>True</emph> for a column, that column will be deleted. The default filter deletes all empty columns."
+msgstr "<emph>filterformula</emph>: na vsakem stolpcu uveljavljeni filter za določanje, ali naj bo stolpec izbrisan. Filter je izražen v obliki formule programa Calc, ki jo je potrebno uveljaviti na prvem stolpcu. Če formula za stolpec vrne <emph>True</emph>, bo tisti stolpec izbrisan. Privzeti filter izbriše vse prazne stolpce."
+
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id361652271022647\n"
+"help.text"
+msgid "For example, suppose range <emph>A1:J200</emph> is selected (height = 200), so the default formula is <emph>=(COUNTBLANK(A1:A200)=200)</emph>. This means that if all 200 cells are empty in the first column (Column A), then the column is deleted. Note that the formula is expressed with respect to the first column only. Internally the <literal>CompactLeft</literal> method will generalize this formula for all the remaining columns."
+msgstr "Primer: recimo, da je izbran obseg <emph>A1:J200</emph> (višina = 200), tako se privzeta formula glasi <emph>=(COUNTBLANK(A1:A200)=200)</emph>. To pomeni, da če je vseh 200 celic v prvem stolpcu praznih (Stolpec A), bo stolpec izbrisan. Upoštevajte, da je formula izražena zgolj s sklicevanjem na prvi stolpec. Metoda <literal>CompactLeft</literal> interno posploši to formulo za vse preostale stolpce."
+
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"bas_id941652271391005\n"
+"help.text"
+msgid "' Delete all empty columns in the range G1:L10 from Sheet1"
+msgstr "' Izbriše vse prazne stolpce v obsegu G1:L10 z delovnega lista DelovniList1"
+
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"bas_id691652271390762\n"
+"help.text"
+msgid "newrange = oDoc.CompactLeft(\"Sheet1.G1:L10\")"
+msgstr "novobseg = oDoc.CompactLeft(\"DelovniList1.G1:L10\")"
+
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"bas_id921652271392627\n"
+"help.text"
+msgid "' The example below is similar, but the entire column is deleted from the sheet"
+msgstr "' Spodnji primer je podoben, vendar izbriše celoten stolpec z delovnega lista"
+
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"bas_id941652271392873\n"
+"help.text"
+msgid "newrange = oDoc.CompactLeft(\"Sheet1.G1:L10\", WholeColumn := True)"
+msgstr "novobseg = oDoc.CompactLeft(\"DelovniList1.G1:L10\", WholeColumn := True)"
+
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"bas_id751652271393226\n"
+"help.text"
+msgid "' Deletes all columns where the first row is marked with an \"X\""
+msgstr "' Izbriše vse stolpce, kjer je prva vrstica označena z »X«"
+
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"bas_id761652271393514\n"
+"help.text"
+msgid "newrange = oDoc.CompactLeft(\"Sheet1.G1:L10\", FilterFormula := \"=(G1=\"\"X\"\")\")"
+msgstr "novobseg = oDoc.CompactLeft(\"DelovniList1.G1:L10\", FilterFormula := \"=(G1=\"\"X\"\")\")"
+
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"bas_id241652271725676\n"
+"help.text"
+msgid "' Deletes all columns where the sum of values in the column is odd"
+msgstr "' Izbriše vse stolpce, v katerih je vsota vrednosti stolpca liha"
+
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"bas_id531652271726131\n"
+"help.text"
+msgid "newrange = oDoc.CompactLeft(\"Sheet1.G1:L10\", FilterFormula := \"=(MOD(SUM(G1:G10);2)=1)\")"
+msgstr "novobseg = oDoc.CompactLeft(\"DelovniList1.G1:L10\", FilterFormula := \"=(MOD(SUM(G1:G10);2)=1)\")"
+
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"pyc_id451621536612334\n"
+"help.text"
+msgid "newrange = myDoc.CompactLeft(\"Sheet1.G1:L10\")"
+msgstr "novobseg = myDoc.CompactLeft(\"DelovniList1.G1:L10\")"
+
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"pyc_id201652272121176\n"
+"help.text"
+msgid "newrange = myDoc.CompactLeft(\"Sheet1.G1:L10\", wholecolumn = True)"
+msgstr "novobseg = myDoc.CompactLeft(\"DelovniList1.G1:L10\", wholecolumn = True)"
+
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"pyc_id781652272122794\n"
+"help.text"
+msgid "newrange = myDoc.CompactLeft(\"Sheet1.G1:L10\", filterformula = '=(G1=\"X\")')"
+msgstr "novobseg = myDoc.CompactLeft(\"DelovniList1.G1:L10\", filterformula = '=(G1=\"X\")')"
+
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"pyc_id731652272123209\n"
+"help.text"
+msgid "newrange = myDoc.CompactLeft(\"Sheet1.G1:L10\", filterformula = '=(MOD(SUM(G1:G10);2)=1)')"
+msgstr "novobseg = myDoc.CompactLeft(\"DelovniList1.G1:L10\", filterformula = '=(MOD(SUM(G1:G10);2)=1)')"
+
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id841592919903699\n"
+"help.text"
+msgid "Deletes the rows of a specified range that match a filter expressed as a Calc formula. The filter is applied to each row to decide whether it will be deleted or not."
+msgstr "Izbriše vrstice navedenega obsega, ki se ujemajo s filtrom, izraženem v obliki formule programa Calc. Filter se uveljavi na vsaki vrstici, tako da odloča, ali bo izbrisana ali ne."
+
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id601652269910091\n"
+"help.text"
+msgid "The deleted rows can be limited to the width of the specified range or span to the width of the entire sheet, thus deleting whole rows."
+msgstr "Izbrisani stolpec je možno omejiti na širino navedenega obsega ali raztegniti na širino celotnega delovnega lista, s čimer izbrišete celotne vrstice."
+
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id701652271283456\n"
+"help.text"
+msgid "This method returns a string with the range address of the compacted range. If all rows are deleted, then an empty string is returned."
+msgstr "Ta metoda vrne niz, ki predstavlja naslov obsega strnjenega obsega. Če so izbrisane vse vrstice, potem vrne prazen niz."
+
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id191652271893913\n"
+"help.text"
+msgid "If a range of cells is selected, calling this method will not impact the selection."
+msgstr "Če je izbran obseg celic, klic te metode ne bo vplival na izbor."
+
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id771592919922080\n"
+"help.text"
+msgid "<emph>range</emph>: The range from which rows will be deleted, as a string."
+msgstr "<emph>range</emph>: obseg, v katerem bodo vrstice izbrisane, podan kot niz."
+
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id771592919921160\n"
+"help.text"
+msgid "<emph>wholerow</emph>: If this option is set to <literal>True</literal> the entire row will be deleted from the sheet. The default value is <literal>False</literal>, which means that the deleted row will be limited to the width of the specified <literal>range</literal>."
+msgstr "<emph>wholerow</emph>: če ima vrednost <literal>False</literal>, bo z delovnega lista izbrisana celotna vrstica. Privzeta vrednost je  <literal>False</literal>, kar pomeni, da bo izbrisana vrstica po širini omejena na navedeni obseg <literal>range</literal>."
+
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id771592919926374\n"
+"help.text"
+msgid "<emph>filterformula</emph>: The filter to be applied to each row to determine whether or not it will be deleted. The filter is expressed as a Calc formula that should be applied to the first row. When the formula returns <emph>True</emph> for a row, that row will be deleted. The default filter deletes all empty rows."
+msgstr "<emph>filterformula</emph>: na vsaki vrstici uveljavljen filter za določanje, ali naj bo vrstica izbrisana. Filter je izražen v obliki formule programa Calc, ki jo je potrebno uveljaviti na prvi vrstici. Če formula za vrstico vrne <emph>True</emph>, bo tista vrstica izbrisana. Privzeti filter izbriše vse prazne vrstice."
+
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id361652271022681\n"
+"help.text"
+msgid "For example, suppose range <emph>A1:J200</emph> is selected (width = 10), so the default formula is <emph>=(COUNTBLANK(A1:J1)=10)</emph>. This means that if all 10 cells are empty in the first row (Row 1), then the row is deleted. Note that the formula is expressed with respect to the first row only. Internally the <literal>CompactUp</literal> method will generalize this formula for all the remaining rows."
+msgstr "Primer: recimo, da je izbran obseg <emph>A1:J200</emph> (širina = 10), tako se privzeta formula glasi <emph>=(COUNTBLANK(A1:J1)=10)</emph>. To pomeni, da če je vseh 10 celic v prvi vrstici praznih (Vrstica 1), bo vrstica izbrisana. Upoštevajte, da je formula izražena zgolj s sklicevanjem na prvo vrstico. Metoda <literal>CompactUp</literal> interno posploši to formulo za vse preostale vrstice."
+
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"bas_id941652271391554\n"
+"help.text"
+msgid "' Delete all empty rows in the range G1:L10 from Sheet1"
+msgstr "' Izbriše vse prazne vrstice v obsegu G1:L10 z DelovnegaLista1"
+
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"bas_id691652271390789\n"
+"help.text"
+msgid "newrange = oDoc.CompactUp(\"Sheet1.G1:L10\")"
+msgstr "novobseg = oDoc.CompactUp(\"DelovniList1.G1:L10\")"
+
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"bas_id921652271392567\n"
+"help.text"
+msgid "' The example below is similar, but the entire row is deleted from the sheet"
+msgstr "' Spodnji primer je podoben, vendar izbriše celotno vrstico z delovnega lista"
+
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"bas_id941652271392553\n"
+"help.text"
+msgid "newrange = oDoc.CompactUp(\"Sheet1.G1:L10\", WholeRow := True)"
+msgstr "novobseg = oDoc.CompactUp(\"DelovniList1.G1:L10\", WholeRow := True)"
+
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"bas_id751652271393117\n"
+"help.text"
+msgid "' Deletes all rows where the first column is marked with an \"X\""
+msgstr "' Izbriše vse vrstice, kjer je prvi stolpec označen z »X«"
+
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"bas_id761652271393034\n"
+"help.text"
+msgid "newrange = oDoc.CompactUp(\"Sheet1.G1:L10\", FilterFormula := \"=(G1=\"\"X\"\")\")"
+msgstr "novobseg = oDoc.CompactUp(\"DelovniList1.G1:L10\", FilterFormula := \"=(G1=\"\"X\"\")\")"
+
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"bas_id241652271725065\n"
+"help.text"
+msgid "' Deletes all rows where the sum of values in the row is odd"
+msgstr "' Izbriše vse vrstice, v katerih je vsota vrednosti vrstice liha"
+
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"bas_id531652271726010\n"
+"help.text"
+msgid "newrange = oDoc.CompactUp(\"Sheet1.G1:L10\", FilterFormula := \"=(MOD(SUM(G1:L1);2)=1)\")"
+msgstr "novobseg = oDoc.CompactUp(\"DelovniList1.G1:L10\", FilterFormula := \"=(MOD(SUM(G1:L1);2)=1)\")"
+
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"pyc_id451621536612227\n"
+"help.text"
+msgid "newrange = myDoc.CompactUp(\"Sheet1.G1:L10\")"
+msgstr "novobseg = myDoc.CompactUp(\"DelovniList1.G1:L10\")"
+
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"pyc_id201652272121288\n"
+"help.text"
+msgid "newrange = myDoc.CompactUp(\"Sheet1.G1:L10\", wholerow = True)"
+msgstr "novobseg = myDoc.CompactUp(\"DelovniList1.G1:L10\", wholerow = True)"
+
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"pyc_id781652272122931\n"
+"help.text"
+msgid "newrange = myDoc.CompactUp(\"Sheet1.G1:L10\", filterformula = '=(G1=\"X\")')"
+msgstr "novobseg = myDoc.CompactUp(\"DelovniList1.G1:L10\", filterformula = '=(G1=\"X\")')"
+
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"pyc_id731652272123109\n"
+"help.text"
+msgid "newrange = myDoc.CompactUp(\"Sheet1.G1:L10\", filterformula = '=(MOD(SUM(G1:L1);2)=1)')"
+msgstr "novobseg = myDoc.CompactUp(\"DelovniList1.G1:L10\", filterformula = '=(MOD(SUM(G1:L1);2)=1)')"
+
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
 "par_id591591631693816\n"
 "help.text"
 msgid "Copies a specified sheet before an existing sheet or at the end of the list of sheets. The sheet to be copied may be contained inside any <emph>open</emph> Calc document. Returns <literal>True</literal> if successful."
@@ -6215,7 +6543,7 @@ msgctxt ""
 "par_id241595693169032\n"
 "help.text"
 msgid "<emph>casesensitive</emph>: Only for string comparisons. Default = <literal>False</literal>"
-msgstr "<emph>casesensitive</emph>: razločevanje med malimi in velikimi črkami, le za primerjavo nizov. Privzeta vrednost je <literal>False</literal>."
+msgstr "<emph>casesensitive</emph>: razločevanje med malimi in velikimi črkami, le za primerjavo nizov (privzeta vrednost je <literal>False</literal>)."
 
 #: sf_calc.xhp
 msgctxt ""
@@ -7086,8 +7414,8 @@ msgctxt ""
 "sf_database.xhp\n"
 "par_id361619188184750\n"
 "help.text"
-msgid "The <link href=\"text/sbasic/shared/03/sf_database.xhp#GetDatabase\" name=\"GetDatabase method\">GetDatabase</link> method used in the example above is part of ScriptForge's <literal>Base</literal> service."
-msgstr "V zgornjem primeru uporabljena metoda <link href=\"text/sbasic/shared/03/sf_database.xhp#GetDatabase\" name=\"Metoda GetDatabase\">GetDatabase</link> je del storitve ScriptForge <literal>Base</literal>."
+msgid "The <link href=\"text/sbasic/shared/03/sf_base.xhp#GetDatabase\" name=\"GetDatabase method\">GetDatabase</link> method used in the example above is part of ScriptForge's <literal>Base</literal> service."
+msgstr "V zgornjem primeru uporabljena metoda <link href=\"text/sbasic/shared/03/sf_base.xhp#GetDatabase\" name=\"Metoda GetDatabase\">GetDatabase</link> je del storitve ScriptForge <literal>Base</literal>."
 
 #: sf_database.xhp
 msgctxt ""
@@ -8015,7 +8343,7 @@ msgctxt ""
 "par_id151612629836151\n"
 "help.text"
 msgid "Mouse inside"
-msgstr "Miška znotraj"
+msgstr "Miškin kazalec znotraj"
 
 #: sf_dialog.xhp
 msgctxt ""
@@ -8031,7 +8359,7 @@ msgctxt ""
 "par_id361612629836624\n"
 "help.text"
 msgid "Mouse outside"
-msgstr "Miška zunaj"
+msgstr "Miškin kazalec zunaj"
 
 #: sf_dialog.xhp
 msgctxt ""
@@ -8112,6 +8440,78 @@ msgctxt ""
 "help.text"
 msgid "Python and %PRODUCTNAME Basic examples both assume that the dialog is stored in current document's <literal>Standard</literal> library."
 msgstr "Primeri v Pythonu in %PRODUCTNAME Basicu predvidevajo, da je pogovorno okno shranjeno v knjižnici <literal>Standardno</literal> trenutnega dokumenta."
+
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id391651225506119\n"
+"help.text"
+msgid "Centers the current dialog instance in the middle of a parent window. Without arguments, the method centers the dialog in the middle of the current window."
+msgstr "Osredini instanco trenutnega pogovornega okna na sredo nadrejenega okna. Metoda brez argumentov osredini pogovorno okno na sredo trenutnega okna."
+
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id391651552206119\n"
+"help.text"
+msgid "Returns <literal>True</literal> when successful."
+msgstr "Vrne <literal>True</literal>, če uspe."
+
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id1001585441257789\n"
+"help.text"
+msgid "<emph>Parent</emph>: An optional object that can be either …"
+msgstr "<emph>Parent</emph>: neobvezni predmet, ki je lahko ..."
+
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id412598177970993\n"
+"help.text"
+msgid "a ScriptForge dialog object"
+msgstr "predmet pogovornega okna ScriptForge,"
+
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id81591858229301\n"
+"help.text"
+msgid "a ScriptForge document (Calc, Base, ...) object"
+msgstr "predmet dokumenta ScriptForge (Calc, Base, ...)."
+
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"bas_id12598185484092\n"
+"help.text"
+msgid "Set oDialog1 = CreateScriptService(\"DialogEvent\", oEvent) ' The dialog that caused the event"
+msgstr "Set oDialog1 = CreateScriptService(\"DialogEvent\", oEvent) ' Pogovorno okno, ki je povzročilo dogodek"
+
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"bas_id641598184589492\n"
+"help.text"
+msgid "Set oDialog2 = CreateScriptService(\"Dialog\", ...) ' Open a second dialog"
+msgstr "Set oDialog2 = CreateScriptService(\"Dialog\", ...) ' Odpre drugo pogovorno okno"
+
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"pyc_id351619267575732\n"
+"help.text"
+msgid "dlg1 = CreateScriptService('DialogEvent.Dialog', event)  # The dialog having caused the event"
+msgstr "dlg1 = CreateScriptService('DialogEvent.Dialog', event)  # Pogovorno okno, ki je povzročilo dogodek"
+
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"pyc_id431619267576082\n"
+"help.text"
+msgid "dlg2 = CreateScriptService('Dialog', ...)  # Open a second dialog"
+msgstr "dlg2 = CreateScriptService('Dialog', ...)  # Odpre drugo pogovorno okno"
 
 #: sf_dialog.xhp
 msgctxt ""
@@ -8304,6 +8704,78 @@ msgctxt ""
 "help.text"
 msgid "Read the <link href=\"text/sbasic/shared/03/sf_l10n.xhp\" name=\"L10N\">L10N service</link> help page to learn more about how PO and POT files are handled."
 msgstr "Preverite stran pomoči <link href=\"text/sbasic/shared/03/sf_l10n.xhp\" name=\"Storitev L10N\">storitve L10N</link>, da izveste več o ravnanju z datotekami PO in POT."
+
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id21598187953697\n"
+"help.text"
+msgid "Moves the topleft corner of a dialog to new coordinates and/or modify its dimensions. All distances are expressed in 1/100 mm. Without arguments, the method resets the initial dimensions. Return <literal>True</literal> if the resize was successful."
+msgstr "Premakne levi vrhnji kot pogovornega okna na nove koordinate in/ali spremeni njegove mere. Vse razdalje so izražene v 1/100 mm. Metoda brez argumentov ponastavi začetne mere. Vrne <literal>True</literal>, če je sprememba velikosti uspela."
+
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id481651236673068\n"
+"help.text"
+msgid "<emph>Left</emph>: the horizontal distance from the top-left corner"
+msgstr "<emph>Left</emph>: vodoravna razdalja do levega zgornjega kota."
+
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id721651236674379\n"
+"help.text"
+msgid "<emph>Top</emph>: the vertical distance from the top-left corner"
+msgstr "<emph>Top</emph>: navpična razdalja do levega zgornjega kota."
+
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id991651236674995\n"
+"help.text"
+msgid "<emph>Width</emph>: the width of the rectangle containing the dialog"
+msgstr "<emph>Width</emph>: širina pravokotnika, ki vsebuje pogovorno okno."
+
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id771651236675564\n"
+"help.text"
+msgid "<emph>Height</emph>: the height of the rectangle containing the dialog"
+msgstr "<emph>Height</emph>: višina pravokotnika, ki vsebuje pogovorno okno."
+
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id211651236676180\n"
+"help.text"
+msgid "Negative or missing arguments are left unchanged"
+msgstr "Negativni ali manjkajoči argumenti ostanejo nespremenjeni"
+
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"bas_id791620301085031\n"
+"help.text"
+msgid "oDialog.Resize(1000, 2000, Height := 6000) ' Width is not changed"
+msgstr "oDialog.Resize(1000, 2000, Height := 6000) ' Širina je nespremenjen"
+
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id181620112217958\n"
+"help.text"
+msgid "With Python:"
+msgstr "S Pythonom:"
+
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"pyc_id941620303073866\n"
+"help.text"
+msgid "oDialog.Resize(1000, 2000, Height = 6000)  # Width is not changed"
+msgstr "oDialog.Resize(1000, 2000, Height = 6000) # Širina je nespremenjen"
 
 #: sf_dialog.xhp
 msgctxt ""
@@ -9431,7 +9903,7 @@ msgctxt ""
 "par_id151612629836151\n"
 "help.text"
 msgid "Mouse inside"
-msgstr "Miška znotraj"
+msgstr "Miškin kazalec znotraj"
 
 #: sf_dialogcontrol.xhp
 msgctxt ""
@@ -9447,7 +9919,7 @@ msgctxt ""
 "par_id361612629836624\n"
 "help.text"
 msgid "Mouse outside"
-msgstr "Miška zunaj"
+msgstr "Miškin kazalec zunaj"
 
 #: sf_dialogcontrol.xhp
 msgctxt ""
@@ -11231,7 +11703,7 @@ msgctxt ""
 "par_id191611153511038\n"
 "help.text"
 msgid "Each %PRODUCTNAME component has its own set of commands available. One easy way to learn commands is going to <emph>Tools - Customize - Keyboard</emph>. When you position your mouse over a function in the <emph>Function</emph> list, a tooltip will appear with the corresponding UNO command."
-msgstr "Vsak program paketa %PRODUCTNAME ima na voljo lasten nabor ukazov. Enostaven način spoznavanja takšnih ukazov je priklic okna <emph>Orodja > Prilagodi > Tipkovnica</emph>. Ko postavite miško nad funkcijo na seznamu <emph>Funkcija</emph>, se pojavi namig z ustreznim ukazom UNO."
+msgstr "Vsak program paketa %PRODUCTNAME ima na voljo lasten nabor ukazov. Enostaven način spoznavanja takšnih ukazov je priklic okna <emph>Orodja – Prilagodi – Tipkovnica</emph>. Ko postavite miško nad funkcijo na seznamu <emph>Funkcija</emph>, se pojavi namig z ustreznim ukazom UNO."
 
 #: sf_document.xhp
 msgctxt ""
@@ -13486,8 +13958,8 @@ msgctxt ""
 "sf_filesystem.xhp\n"
 "pyc_id631626276402296\n"
 "help.text"
-msgid "aFolder = fso.PickFolder(r\"C:\\Documents\", \"Choose a folder or press Cancel\")"
-msgstr "aFolder = fso.PickFolder(r\"C:\\Documents\", \"Izberite mapo ali pritisnite Prekliči\")"
+msgid "aFolder = fs.PickFolder(r\"C:\\Documents\", \"Choose a folder or press Cancel\")"
+msgstr "aFolder = fs.PickFolder(r\"C:\\Documents\", \"Izberite mapo ali pritisnite Prekliči\")"
 
 #: sf_filesystem.xhp
 msgctxt ""
@@ -14239,7 +14711,7 @@ msgctxt ""
 "par_id161612629836775\n"
 "help.text"
 msgid "Before record action"
-msgstr "Pred zapisom"
+msgstr "Pred zapisovanjem"
 
 #: sf_form.xhp
 msgctxt ""
@@ -14383,7 +14855,7 @@ msgctxt ""
 "par_id351616778529352\n"
 "help.text"
 msgid "After record action"
-msgstr "Po zapisu"
+msgstr "Po zapisovanju"
 
 #: sf_form.xhp
 msgctxt ""
@@ -15879,7 +16351,7 @@ msgctxt ""
 "par_id721612629836752\n"
 "help.text"
 msgid "Mouse moved"
-msgstr "Miškin kazalec premaknjen"
+msgstr "Miška premaknjena"
 
 #: sf_formcontrol.xhp
 msgctxt ""
@@ -22974,8 +23446,8 @@ msgctxt ""
 "sf_ui.xhp\n"
 "par_id841588521238711\n"
 "help.text"
-msgid "The methods <literal>CreateDocument</literal>, <literal>CreateBaseDocument</literal>, <literal>GetDocument</literal> and <literal>OpenDocument</literal>, described below, generate document objects. When a window contains a document, an instance of the <literal>Document</literal> class represents that document. A counterexample the Basic IDE is not a document but is a window in our terminology. Additionally a document has a type: <literal>Calc</literal>, <literal>Impress</literal>, <literal>Writer</literal>, ..."
-msgstr "Metode <literal>CreateDocument</literal>, <literal>CreateBaseDocument</literal>, <literal>GetDocument</literal> in <literal>OpenDocument</literal>, opisane v nadaljevanju, tvorijo predmete dokumenta. Če okno vsebuje dokument, instanca razreda <literal>Document</literal> predstavlja ta dokument. Nasprotno je v terminologiji Basic IDE, v okviru katere to ni dokument, temveč okno. Poleg tega je dokument določene vrste: <literal>Calc</literal>, <literal>Impress</literal>, <literal>Writer</literal>, ..."
+msgid "The methods <literal>CreateDocument</literal>, <literal>CreateBaseDocument</literal>, <literal>GetDocument</literal>,  <literal>OpenBaseDocument</literal> and <literal>OpenDocument</literal>, described below, generate document objects. When a window contains a document, an instance of the <literal>Document</literal> class represents that document. A counterexample the Basic IDE is not a document but is a window in our terminology. Additionally a document has a type: <literal>Calc</literal>, <literal>Impress</literal>, <literal>Writer</literal>, ..."
+msgstr "Metode <literal>CreateDocument</literal>, <literal>CreateBaseDocument</literal>, <literal>GetDocument</literal>,  <literal>OpenBaseDocument</literal> in <literal>OpenDocument</literal>, opisane v nadaljevanju, tvorijo predmete dokumenta. Če okno vsebuje dokument, instanca razreda <literal>Document</literal> predstavlja ta dokument. Nasprotno je v terminologiji Basic IDE, v okviru katere to ni dokument, temveč okno. Poleg tega je dokument določene vrste: <literal>Calc</literal>, <literal>Impress</literal>, <literal>Writer</literal>, ..."
 
 #: sf_ui.xhp
 msgctxt ""
@@ -23326,8 +23798,8 @@ msgctxt ""
 "sf_ui.xhp\n"
 "par_id231596555746385\n"
 "help.text"
-msgid "<emph>filename</emph>: Identifies the file to open. It must follow the <literal>SF_FileSystem.FileNaming</literal> notation. If the file already exists, it is overwritten without warning"
-msgstr "<emph>filename</emph>: ime datoteke, ki jo želite odpreti. Slediti mora obliki zapisa <literal>SF_FileSystem.FileNaming</literal>. Če datoteka že obstaja, bo prepisana brez opozorila."
+msgid "<emph>filename</emph>: Identifies the file to open. It must follow the <literal>SF_FileSystem.FileNaming</literal> notation."
+msgstr "<emph>filename</emph>: ime datoteke, ki jo želite odpreti. Slediti mora zapisu <literal>SF_FileSystem.FileNaming</literal>."
 
 #: sf_ui.xhp
 msgctxt ""
