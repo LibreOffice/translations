@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: LibreOffice 7.4\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2022-06-07 09:30+0200\n"
-"PO-Revision-Date: 2022-06-07 11:07+0200\n"
+"POT-Creation-Date: 2022-06-13 09:51+0200\n"
+"PO-Revision-Date: 2022-06-15 18:07+0200\n"
 "Last-Translator: Martin Srebotnjak <miles@filmsi.net>\n"
 "Language-Team: sl.libreoffice.org\n"
 "Language: sl\n"
@@ -1460,7 +1460,7 @@ msgstr "Odstavek: najkrajša dolžina besed za deljenje"
 #: sw/inc/inspectorproperties.hrc:211
 msgctxt "RID_ATTRIBUTE_NAMES_MAP"
 msgid "Para Hyphenation Zone"
-msgstr "Odstavek: območje deljenja besed"
+msgstr "Odstavek: pas deljenja besed"
 
 #: sw/inc/inspectorproperties.hrc:212
 msgctxt "RID_ATTRIBUTE_NAMES_MAP"
@@ -10522,12 +10522,12 @@ msgstr "Vsebina je besedilo ograde"
 #: sw/uiconfig/swriter/ui/contentcontroldlg.ui:137
 msgctxt "contentcontroldlg|checkboxcheckedlabel"
 msgid "Checked character:"
-msgstr "Potrjeni znak:"
+msgstr "Znak za potrjeno:"
 
 #: sw/uiconfig/swriter/ui/contentcontroldlg.ui:150
 msgctxt "contentcontroldlg|checkboxuncheckedlabel"
 msgid "Unchecked character:"
-msgstr "Nepotrjeni znak:"
+msgstr "Znak za nepotrjeno:"
 
 #: sw/uiconfig/swriter/ui/contentcontroldlg.ui:161
 msgctxt "contentcontroldlg|btncheckboxchecked"
@@ -10587,7 +10587,7 @@ msgstr "Premakni navzdol"
 #: sw/uiconfig/swriter/ui/contentcontroldlg.ui:453
 msgctxt "contentcontroldlg|lbldate"
 msgid "Date Format:"
-msgstr "Oblika datuma:"
+msgstr "Oblika zapisa datuma:"
 
 #: sw/uiconfig/swriter/ui/contentcontrollistitemdlg.ui:8
 msgctxt "contentcontrollistitemdlg|ContentControlListItemDialog"
@@ -11821,7 +11821,7 @@ msgstr "Nastavi ..."
 
 #: sw/uiconfig/swriter/ui/envprinterpage.ui:467
 msgctxt "envprinterpage|extended_tip|setup"
-msgid "Opens the Print Setup dialog where you can define additional printer settings, such as paper format and orientation."
+msgid "Opens the Printer Setup dialog where you can define additional printer settings, such as paper format and orientation."
 msgstr "Odpre pogovorno okno Nastavitve tiskalnika, kjer lahko določite dodatne nastavitve tiskalnika, kot sta oblika papirja in usmerjenost."
 
 #: sw/uiconfig/swriter/ui/envprinterpage.ui:481
@@ -13243,167 +13243,177 @@ msgctxt "frmaddpage|altname_label|tooltip_text"
 msgid "Give a short description for users who do not see this object."
 msgstr "Podajte kratek opis za uporabnike, ki tega predmeta ne vidijo."
 
-#: sw/uiconfig/swriter/ui/frmaddpage.ui:112
-msgctxt "frmaddpage|prev"
-msgid "<None>"
-msgstr "<Brez>"
-
-#: sw/uiconfig/swriter/ui/frmaddpage.ui:116
-msgctxt "frmaddpage|extended_tip|prev"
-msgid "Displays the frame that comes before the current frame in a linked sequence. To add or change the previous link, select a frame from the list. If you are linking frames, the current frame and the target frame must be empty."
-msgstr "Prikaže okvir, ki je pred trenutnim okvirom v povezanem zaporedju. Če želite dodati ali spremeniti prejšnjo povezavo, iz seznama izberite okvir. Če povezujete okvire, morata biti trenutni in ciljni okvir prazna."
-
-#: sw/uiconfig/swriter/ui/frmaddpage.ui:131
-msgctxt "frmaddpage|next"
-msgid "<None>"
-msgstr "<Brez>"
-
-#: sw/uiconfig/swriter/ui/frmaddpage.ui:135
-msgctxt "frmaddpage|extended_tip|next"
-msgid "Displays the frame that comes after the current frame in a linked sequence. To add or change the next link, select a frame from the list. If you are linking frames, the target frame must be empty."
-msgstr "Prikaže okvir, ki sledi za trenutnim okvirom v povezanem zaporedju. Če želite dodati ali spremeniti naslednjo povezavo, iz seznama izberite okvir. Če povezujete okvire, mora biti ciljni okvir prazen."
-
-#: sw/uiconfig/swriter/ui/frmaddpage.ui:148
-msgctxt "frmaddpage|prev_label"
-msgid "_Previous link:"
-msgstr "_Prejšnja povezava:"
-
-#: sw/uiconfig/swriter/ui/frmaddpage.ui:149
-msgctxt "frmaddpage|prev_label"
-msgid "Link this frame prior to current frame."
-msgstr "Poveži ta okvir pred trenutni okvir."
-
-#: sw/uiconfig/swriter/ui/frmaddpage.ui:163
-msgctxt "frmaddpage|next_label"
-msgid "_Next link:"
-msgstr "_Naslednja povezava:"
-
-#: sw/uiconfig/swriter/ui/frmaddpage.ui:164
-msgctxt "frmaddpage|next_label"
-msgid "Link this frame after the current frame."
-msgstr "Poveži ta okvir za trenutni okvir."
-
-#: sw/uiconfig/swriter/ui/frmaddpage.ui:178
+#: sw/uiconfig/swriter/ui/frmaddpage.ui:110
 msgctxt "frmaddpage|description_label"
 msgid "_Description:"
 msgstr "_Opis:"
 
-#: sw/uiconfig/swriter/ui/frmaddpage.ui:179
+#: sw/uiconfig/swriter/ui/frmaddpage.ui:111
 msgctxt "frmaddpage|description_label"
 msgid "Give a longer explanation of the content if it is too complex to be described briefly in “Text Alternative.”"
 msgstr "Podajte daljši opis vsebine, če je preveč kompleksna, da bi jo na kratko opisali v polju Nadomestno besedilo."
 
-#: sw/uiconfig/swriter/ui/frmaddpage.ui:206
+#: sw/uiconfig/swriter/ui/frmaddpage.ui:138
 msgctxt "frmaddpage|extended_tip|description"
 msgid "Enter a longer description of the object, especially if the object is too complex or contains too much detail to be described adequately with the short “Text Alternative.” This text is available for use by assistive technologies. For images, this text is exported with an appropriate tag to HTML and PDF format."
 msgstr "Vnesite daljši opis predmeta, še posebej če je predmet preveč kompleksen ali vsebuje preveč podrobnosti, da bi ga lahko ustrezno opisali s kratkim nadomestnim besedilom. To besedilo je na voljo pomožnim tehnologijam. Pri slikah se to besedilo izvozi z ustrezno značko v zapis HTML oz. PDF."
 
-#: sw/uiconfig/swriter/ui/frmaddpage.ui:223
+#: sw/uiconfig/swriter/ui/frmaddpage.ui:155
 msgctxt "frmaddpage|label1"
 msgid "Accessibility"
 msgstr "Dostopnost"
 
-#: sw/uiconfig/swriter/ui/frmaddpage.ui:252
+#: sw/uiconfig/swriter/ui/frmaddpage.ui:184
 msgctxt "frmaddpage|protectcontent"
 msgid "_Contents"
 msgstr "_Vsebina"
 
-#: sw/uiconfig/swriter/ui/frmaddpage.ui:260
+#: sw/uiconfig/swriter/ui/frmaddpage.ui:192
 msgctxt "frmaddpage|extended_tip|protectcontent"
 msgid "Prevents changes to the contents of the selected item."
 msgstr "Prepreči, da bi se za izbrani predmet vsebina spreminjala."
 
-#: sw/uiconfig/swriter/ui/frmaddpage.ui:271
+#: sw/uiconfig/swriter/ui/frmaddpage.ui:203
 msgctxt "frmaddpage|protectframe"
 msgid "P_osition"
 msgstr "P_oložaj"
 
-#: sw/uiconfig/swriter/ui/frmaddpage.ui:279
+#: sw/uiconfig/swriter/ui/frmaddpage.ui:211
 msgctxt "frmaddpage|extended_tip|protectframe"
 msgid "Locks the position of the selected item in the current document."
 msgstr "V trenutnem dokumentu zaklene položaj izbranega predmeta."
 
-#: sw/uiconfig/swriter/ui/frmaddpage.ui:290
+#: sw/uiconfig/swriter/ui/frmaddpage.ui:222
 msgctxt "frmaddpage|protectsize"
 msgid "_Size"
 msgstr "Veliko_st"
 
-#: sw/uiconfig/swriter/ui/frmaddpage.ui:298
+#: sw/uiconfig/swriter/ui/frmaddpage.ui:230
 msgctxt "frmaddpage|extended_tip|protectsize"
 msgid "Locks the size of the selected item."
 msgstr "Zaklene velikost izbranega predmeta."
 
-#: sw/uiconfig/swriter/ui/frmaddpage.ui:313
+#: sw/uiconfig/swriter/ui/frmaddpage.ui:245
 msgctxt "frmaddpage|label8"
 msgid "Protect"
 msgstr "Zaščiti"
 
-#: sw/uiconfig/swriter/ui/frmaddpage.ui:343
+#: sw/uiconfig/swriter/ui/frmaddpage.ui:275
 msgctxt "frmaddpage|label2"
 msgid "_Vertical alignment:"
 msgstr "_Navpična poravnava:"
 
-#: sw/uiconfig/swriter/ui/frmaddpage.ui:356
+#: sw/uiconfig/swriter/ui/frmaddpage.ui:288
 msgctxt "frmaddpage|liststore"
 msgid "Top"
 msgstr "Zgoraj"
 
-#: sw/uiconfig/swriter/ui/frmaddpage.ui:357
+#: sw/uiconfig/swriter/ui/frmaddpage.ui:289
 msgctxt "frmaddpage|liststore"
 msgid "Centered"
 msgstr "Na sredini"
 
-#: sw/uiconfig/swriter/ui/frmaddpage.ui:358
+#: sw/uiconfig/swriter/ui/frmaddpage.ui:290
 msgctxt "frmaddpage|liststore"
 msgid "Bottom"
 msgstr "Spodaj"
 
-#: sw/uiconfig/swriter/ui/frmaddpage.ui:362
+#: sw/uiconfig/swriter/ui/frmaddpage.ui:294
 msgctxt "frmaddpage|extended_tip|vertalign"
 msgid "Specifies the vertical alignment of the frame's content. Mainly it means text content, but it also affects tables and other objects anchored to the text area (anchored as character, to character or to paragraph), for example frames, graphics or drawings."
 msgstr "Določa navpično poravnavo vsebine okvira. Velja pretežno za besedilno vsebino, vpliva pa tudi na tabele in druge predmete, sidrane na območje besedila (sidrane kot znak, na znak ali na odstavek), npr. okvire, slike ali risbe."
 
-#: sw/uiconfig/swriter/ui/frmaddpage.ui:377
+#: sw/uiconfig/swriter/ui/frmaddpage.ui:309
 msgctxt "frmaddpage|label7"
 msgid "Content Alignment"
 msgstr "Poravnava vsebine"
 
-#: sw/uiconfig/swriter/ui/frmaddpage.ui:408
+#: sw/uiconfig/swriter/ui/frmaddpage.ui:340
 msgctxt "frmaddpage|editinreadonly"
 msgid "_Editable in read-only document"
 msgstr "Za _urejanje v dokumentu, ki je samo za branje"
 
-#: sw/uiconfig/swriter/ui/frmaddpage.ui:416
+#: sw/uiconfig/swriter/ui/frmaddpage.ui:348
 msgctxt "frmaddpage|extended_tip|editinreadonly"
 msgid "Allows you to edit the contents of a frame in a document that is read-only (write-protected)."
 msgstr "Omogoča urejanje vsebine okvira v dokumentu, ki je samo za branje (zaščiten pred pisanjem)."
 
-#: sw/uiconfig/swriter/ui/frmaddpage.ui:428
+#: sw/uiconfig/swriter/ui/frmaddpage.ui:360
 msgctxt "frmaddpage|printframe"
 msgid "Prin_t"
 msgstr "Na_tisni"
 
-#: sw/uiconfig/swriter/ui/frmaddpage.ui:436
+#: sw/uiconfig/swriter/ui/frmaddpage.ui:368
 msgctxt "frmaddpage|extended_tip|printframe"
 msgid "Includes the selected item when you print the document."
 msgstr "Ko tiskate dokument, vključi izbrani predmet."
 
-#: sw/uiconfig/swriter/ui/frmaddpage.ui:453
+#: sw/uiconfig/swriter/ui/frmaddpage.ui:385
 msgctxt "frmaddpage|extended_tip|textflow"
 msgid "Specifies the preferred text flow direction in a frame. To use the default text flow settings for the page, select Use superordinate object settings from the list."
 msgstr "Določi želeno smer poteka besedila v okviru. Za uporabo privzetih nastavitev poteka besedila na strani s seznama izberite Uporabi nastavitve nadrejenega predmeta."
 
-#: sw/uiconfig/swriter/ui/frmaddpage.ui:466
+#: sw/uiconfig/swriter/ui/frmaddpage.ui:398
 msgctxt "frmaddpage|textflow_label"
 msgid "_Text direction:"
 msgstr "Smer _besedila:"
 
-#: sw/uiconfig/swriter/ui/frmaddpage.ui:482
+#: sw/uiconfig/swriter/ui/frmaddpage.ui:414
 msgctxt "frmaddpage|label3"
 msgid "Properties"
 msgstr "Lastnosti"
 
-#: sw/uiconfig/swriter/ui/frmaddpage.ui:497
+#: sw/uiconfig/swriter/ui/frmaddpage.ui:448
+msgctxt "frmaddpage|prev_label"
+msgid "Link this frame prior to current frame."
+msgstr "Poveži ta okvir pred trenutni okvir."
+
+#: sw/uiconfig/swriter/ui/frmaddpage.ui:449
+msgctxt "frmaddpage|prev_label"
+msgid "_Previous link:"
+msgstr "_Prejšnja povezava:"
+
+#: sw/uiconfig/swriter/ui/frmaddpage.ui:465
+msgctxt "frmaddpage|prev"
+msgid "<None>"
+msgstr "<Brez>"
+
+#: sw/uiconfig/swriter/ui/frmaddpage.ui:469
+msgctxt "frmaddpage|extended_tip|prev"
+msgid "Displays the frame that comes before the current frame in a linked sequence. To add or change the previous link, select a frame from the list. If you are linking frames, the current frame and the target frame must be empty."
+msgstr "Prikaže okvir, ki je pred trenutnim okvirom v povezanem zaporedju. Če želite dodati ali spremeniti prejšnjo povezavo, iz seznama izberite okvir. Če povezujete okvire, morata biti trenutni in ciljni okvir prazna."
+
+#: sw/uiconfig/swriter/ui/frmaddpage.ui:482
+msgctxt "frmaddpage|next_label"
+msgid "Link this frame after the current frame."
+msgstr "Poveži ta okvir za trenutni okvir."
+
+#: sw/uiconfig/swriter/ui/frmaddpage.ui:483
+msgctxt "frmaddpage|next_label"
+msgid "_Next link:"
+msgstr "_Naslednja povezava:"
+
+#: sw/uiconfig/swriter/ui/frmaddpage.ui:499
+msgctxt "frmaddpage|next"
+msgid "<None>"
+msgstr "<Brez>"
+
+#: sw/uiconfig/swriter/ui/frmaddpage.ui:503
+msgctxt "frmaddpage|extended_tip|next"
+msgid "Displays the frame that comes after the current frame in a linked sequence. To add or change the next link, select a frame from the list. If you are linking frames, the target frame must be empty."
+msgstr "Prikaže okvir, ki sledi za trenutnim okvirom v povezanem zaporedju. Če želite dodati ali spremeniti naslednjo povezavo, iz seznama izberite okvir. Če povezujete okvire, mora biti ciljni okvir prazen."
+
+#: sw/uiconfig/swriter/ui/frmaddpage.ui:518
+msgctxt "frmaddpage|labelSequence"
+msgid "Sequence"
+msgstr "Zaporedje"
+
+#: sw/uiconfig/swriter/ui/frmaddpage.ui:519
+msgctxt "frmaddpage|labelSequence"
+msgid "Specify the sequence for linked frames."
+msgstr "Določite zaporedje za povezane okvire."
+
+#: sw/uiconfig/swriter/ui/frmaddpage.ui:534
 msgctxt "frmaddpage|extended_tip|FrameAddPage"
 msgid "Specifies properties for the selected object, graphic or frame."
 msgstr "Za izbrani predmet, grafiko ali okvir določi lastnosti."
@@ -15113,37 +15123,32 @@ msgctxt "labeldialog|extended_tip|ok"
 msgid "Creates a new document for editing."
 msgstr "Ustvari nov dokument za urejanje."
 
-#: sw/uiconfig/swriter/ui/labeldialog.ui:141
-msgctxt "labeldialog|medium"
-msgid "Medium"
-msgstr "Medij"
-
-#: sw/uiconfig/swriter/ui/labeldialog.ui:188
+#: sw/uiconfig/swriter/ui/labeldialog.ui:144
 msgctxt "labeldialog|labels"
 msgid "Labels"
 msgstr "Nalepke"
 
-#: sw/uiconfig/swriter/ui/labeldialog.ui:236
+#: sw/uiconfig/swriter/ui/labeldialog.ui:192
 msgctxt "labeldialog|private"
 msgid "Private"
 msgstr "Zasebno"
 
-#: sw/uiconfig/swriter/ui/labeldialog.ui:284
+#: sw/uiconfig/swriter/ui/labeldialog.ui:240
 msgctxt "labeldialog|business"
 msgid "Business"
 msgstr "Poslovno"
 
-#: sw/uiconfig/swriter/ui/labeldialog.ui:332
+#: sw/uiconfig/swriter/ui/labeldialog.ui:288
 msgctxt "labeldialog|format"
 msgid "Format"
 msgstr "Oblika"
 
-#: sw/uiconfig/swriter/ui/labeldialog.ui:380
+#: sw/uiconfig/swriter/ui/labeldialog.ui:336
 msgctxt "labeldialog|options"
 msgid "Options"
 msgstr "Možnosti"
 
-#: sw/uiconfig/swriter/ui/labeldialog.ui:407
+#: sw/uiconfig/swriter/ui/labeldialog.ui:363
 msgctxt "labeldialog|extended_tip|LabelDialog"
 msgid "Allows you to create labels. Labels are created in a text document."
 msgstr "Omogoča izdelavo nalepk. Nalepke so ustvarjene v dokumentu z besedilom."
@@ -18779,42 +18784,42 @@ msgctxt "objectdialog|ObjectDialog"
 msgid "OLE Object"
 msgstr "Predmet OLE"
 
-#: sw/uiconfig/swriter/ui/objectdialog.ui:109
+#: sw/uiconfig/swriter/ui/objectdialog.ui:110
 msgctxt "objectdialog|type"
 msgid "Position and Size"
 msgstr "Položaj in velikost"
 
-#: sw/uiconfig/swriter/ui/objectdialog.ui:132
+#: sw/uiconfig/swriter/ui/objectdialog.ui:133
 msgctxt "objectdialog|options"
 msgid "Options"
 msgstr "Možnosti"
 
-#: sw/uiconfig/swriter/ui/objectdialog.ui:156
+#: sw/uiconfig/swriter/ui/objectdialog.ui:157
 msgctxt "objectdialog|wrap"
 msgid "Wrap"
 msgstr "Oblivanje"
 
-#: sw/uiconfig/swriter/ui/objectdialog.ui:180
+#: sw/uiconfig/swriter/ui/objectdialog.ui:181
 msgctxt "objectdialog|hyperlink"
 msgid "Hyperlink"
 msgstr "Hiperpovezava"
 
-#: sw/uiconfig/swriter/ui/objectdialog.ui:204
+#: sw/uiconfig/swriter/ui/objectdialog.ui:205
 msgctxt "objectdialog|borders"
 msgid "Borders"
 msgstr "Obrobe"
 
-#: sw/uiconfig/swriter/ui/objectdialog.ui:228
+#: sw/uiconfig/swriter/ui/objectdialog.ui:229
 msgctxt "objectdialog|area"
 msgid "Area"
 msgstr "Področje"
 
-#: sw/uiconfig/swriter/ui/objectdialog.ui:252
+#: sw/uiconfig/swriter/ui/objectdialog.ui:253
 msgctxt "objectdialog|transparence"
 msgid "Transparency"
 msgstr "Prosojnost"
 
-#: sw/uiconfig/swriter/ui/objectdialog.ui:276
+#: sw/uiconfig/swriter/ui/objectdialog.ui:277
 msgctxt "objectdialog|macro"
 msgid "Macro"
 msgstr "Makro"
