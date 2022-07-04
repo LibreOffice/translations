@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2022-06-10 13:58+0200\n"
-"PO-Revision-Date: 2022-06-15 20:40+0000\n"
+"POT-Creation-Date: 2022-07-04 18:04+0200\n"
+"PO-Revision-Date: 2022-07-01 16:24+0000\n"
 "Last-Translator: Kolbjørn Stuestøl <kolbjoern@stuestoel.no>\n"
 "Language-Team: Norwegian Nynorsk <https://translations.documentfoundation.org/projects/libo_help-master/textsbasicshared03/nn/>\n"
 "Language: nn\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Accelerator-Marker: ~\n"
-"X-Generator: Weblate 4.12.2\n"
+"X-Generator: LibreOffice\n"
 "X-POOTLE-MTIME: 1565450081.000000\n"
 
 #. ViEWM
@@ -4057,14 +4057,50 @@ msgctxt ""
 msgid "The shortcut \"*\" represents all used cells."
 msgstr "Snarvegen «*» (stjerne) representerer alle brukte celler."
 
-#. gNtqP
+#. C6fBT
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id641591021597701\n"
 "help.text"
-msgid "The sheet name is optional in a range (default = the active sheet). Surrounding single quotes and $ signs are allowed but ignored."
-msgstr "Arknamnet er valfritt i eit område (standard = det aktive arket). Omkringliggjande enkelt sitatteikn og $-teikn er tillatne, men vert ignorerte."
+msgid "The sheet name is optional when defining a range. If no sheet name is provided, then the active sheet is used. Surrounding single quotes and $ signs are allowed but ignored."
+msgstr ""
+
+#. ebNR5
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id231655754032310\n"
+"help.text"
+msgid "When specifying a <literal>SheetName</literal> as a string, the use of single quotes to enclose the sheet name are required if the name contains blank spaces \" \" or periods \".\"."
+msgstr ""
+
+#. BsAKT
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id931655906591984\n"
+"help.text"
+msgid "The examples below illustrate in which cases the use of single quotes is mandatory:"
+msgstr ""
+
+#. DGacM
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"bas_id971655754336388\n"
+"help.text"
+msgid "' The use of single quotes is optional"
+msgstr ""
+
+#. yWFhF
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"bas_id711655754337420\n"
+"help.text"
+msgid "' The use of single quotes is required"
+msgstr ""
 
 #. GVF9g
 #: sf_calc.xhp
@@ -4084,14 +4120,14 @@ msgctxt ""
 msgid "Examples of valid ranges"
 msgstr "Eksempel på gyldige område"
 
-#. BABCv
+#. yADDC
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id481591024294524\n"
 "help.text"
-msgid "1) '$SheetX'.D2<br/>2) $D$2"
-msgstr "1) '$ArkX'.D2<br/>2) $D$2"
+msgid "1) $'SheetX'.D2<br/>2) $D$2"
+msgstr ""
 
 #. pMZEe
 #: sf_calc.xhp
@@ -4102,14 +4138,14 @@ msgctxt ""
 msgid "A single cell"
 msgstr "Ei enkelt celle"
 
-#. MuiK2
+#. AcGDY
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id21591024294492\n"
 "help.text"
-msgid "1) '$SheetX'.D2:F6<br/>2) D2:D10"
-msgstr "1) '$ArkX'.D2:F6<br/>2) D2:D10"
+msgid "1) $'SheetX'.D2:F6<br/>2) D2:D10"
+msgstr ""
 
 #. P7Ete
 #: sf_calc.xhp
@@ -4120,14 +4156,14 @@ msgctxt ""
 msgid "Single range with multiple cells"
 msgstr "Enkelt område med fleire celler"
 
-#. xj6ob
+#. vXrSu
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id161592230749179\n"
 "help.text"
-msgid "'$SheetX'.*"
-msgstr "'$ArkX'.*"
+msgid "$'SheetX'.*"
+msgstr ""
 
 #. eQu5j
 #: sf_calc.xhp
@@ -4138,14 +4174,14 @@ msgctxt ""
 msgid "All used cells in the given sheet"
 msgstr "Alle brukte celler i det gjevne arket"
 
-#. UErNm
+#. C6egy
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id641591024294318\n"
 "help.text"
-msgid "1) '$SheetX'.A:A (column A)<br/>2) 3:5 (rows 3 to 5)"
-msgstr "1) '$ArkX'.A:A kolonne A)<br/>2) 3:5 (radene 3 til 5)"
+msgid "1) $'SheetX'.A:A (column A)<br/>2) 3:5 (rows 3 to 5)"
+msgstr ""
 
 #. qpGBr
 #: sf_calc.xhp
@@ -6101,6 +6137,87 @@ msgctxt ""
 "help.text"
 msgid "Cells in the given range that contain text will be ignored by all of these functions. For example, the <literal>DCount</literal> method will not count cells with text, only numerical cells."
 msgstr "I det gjevne området vert celler som inneheld tekst ignorerte av alle funksjonane. For eksempel vil metoden <literal>DCount</literal> ikkje telja celler med tekst, berre celler med tal."
+
+#. S6JvC
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id501623063693113\n"
+"help.text"
+msgid "Exports the specified range as an image or PDF file."
+msgstr ""
+
+#. eKaCo
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id401655654738754\n"
+"help.text"
+msgid "This method returns <literal>True</literal> if the destination file was successfully saved."
+msgstr ""
+
+#. p6Hg5
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id871655655302952\n"
+"help.text"
+msgid "Hidden rows or columns in the specified range are not exported to the destination file."
+msgstr ""
+
+#. DpqDV
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id441623090896470\n"
+"help.text"
+msgid "<emph>range</emph>: A sheet name or a cell range to be exported, as a string."
+msgstr ""
+
+#. v5QXP
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id451623063452651\n"
+"help.text"
+msgid "<emph>filename</emph>: The name of the file to be saved. It must follow the <literal>SF_FileSystem.FileNaming</literal> notation."
+msgstr ""
+
+#. 3nTsB
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id441623090895310\n"
+"help.text"
+msgid "<emph>imagetype</emph>: Identifies the destination file type. Possible values are \"jpeg\", \"pdf\" (default) and \"png\"."
+msgstr ""
+
+#. Wx3ea
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id441623090896317\n"
+"help.text"
+msgid "<emph>overwrite</emph>: When set to <literal>True</literal>, the destination file may be overwritten (Default = <literal>False</literal>)."
+msgstr ""
+
+#. twaNW
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"bas_id561655655121456\n"
+"help.text"
+msgid "' Exports the entire sheet as a PDF file"
+msgstr ""
+
+#. RRxag
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"bas_id991655655060661\n"
+"help.text"
+msgid "' Exports the range as a PNG file and overwrites the destination file if it exists"
+msgstr ""
 
 #. BVKEy
 #: sf_calc.xhp
@@ -12585,14 +12702,14 @@ msgctxt ""
 msgid "<variable id=\"DocumentService\"><link href=\"text/sbasic/shared/03/sf_document.xhp\" name=\"Exception service\"><literal>SFDocuments</literal>.<literal>Document</literal> service</link></variable>"
 msgstr "<variable id=\"DocumentService\"><link href=\"text/sbasic/shared/03/sf_document.xhp\" name=\"Exception service\">Tenesta <literal>SFDocuments</literal>.<literal>Document</literal></link></variable>"
 
-#. FoEeH
+#. VTWbF
 #: sf_document.xhp
 msgctxt ""
 "sf_document.xhp\n"
 "par_id381589189355849\n"
 "help.text"
-msgid "The <literal>SFDocuments</literal> library provides methods and properties to facilitate the management and manipulation of LibreOffice documents."
-msgstr "Biblioteket <literal>SFDocuments</literal> gjev metodar og eigenskapar for å letta handsaming og manipulering av LibreOffice-dokument."
+msgid "The <literal>SFDocuments</literal> library provides methods and properties to facilitate the management and manipulation of %PRODUCTNAME documents."
+msgstr ""
 
 #. urZhL
 #: sf_document.xhp
@@ -12630,14 +12747,14 @@ msgctxt ""
 msgid "The properties, methods or arguments marked with <emph>(*)</emph> are <emph>NOT applicable to Base documents</emph>."
 msgstr "Dei eigenskapane, metodane eller argumenta som er merkte med <emph>(*)</emph> kan <emph>IKKJE brukast på database-dokument</emph>."
 
-#. HPr8i
+#. rh5iz
 #: sf_document.xhp
 msgctxt ""
 "sf_document.xhp\n"
 "par_id241589189701274\n"
 "help.text"
-msgid "Methods and properties that are specific to certain LibreOffice components are stored in separate services, such as <literal>SFDocuments.SF_Calc</literal> and <literal>SFDocuments.SF_Base</literal>."
-msgstr "Metodar og eigenskapar som er spesifikke for LibreOffice-komponentar vert lagra i åtskilde tenester, som for eksempel <literal>SFDocuments.SF_Calc</literal> og <literal>SFDocuments.SF_Base</literal>."
+msgid "Methods and properties that are specific to certain %PRODUCTNAME components are stored in separate services, such as <literal>SFDocuments.SF_Calc</literal> and <literal>SFDocuments.SF_Base</literal>."
+msgstr ""
 
 #. Fdi8i
 #: sf_document.xhp
@@ -12854,6 +12971,42 @@ msgctxt ""
 "help.text"
 msgid "String value with the document type (\"Base\", \"Calc\", \"Writer\", etc)"
 msgstr "Strengverdi med dokumenttypen («Base», «Calc», «Writer» og så vidare)"
+
+#. UcEJi
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
+"par_id201589194571699\n"
+"help.text"
+msgid "Yes"
+msgstr ""
+
+#. EZzPF
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
+"par_id941589194571327\n"
+"help.text"
+msgid "Returns a list with the export filter names applicable to the current document as a zero-based array of strings. Filters used for both import/export are also returned."
+msgstr ""
+
+#. 7vqDq
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
+"par_id201589194571067\n"
+"help.text"
+msgid "Yes"
+msgstr ""
+
+#. UmCHS
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
+"par_id941589194571922\n"
+"help.text"
+msgid "Returns a list with the import filter names applicable to the current document as a zero-based array of strings. Filters used for both import/export are also returned."
+msgstr ""
 
 #. Yo8T4
 #: sf_document.xhp
@@ -14896,7 +15049,7 @@ msgctxt ""
 "par_id481601118910755\n"
 "help.text"
 msgid "<emph>filename1, filename2</emph>: The files to compare."
-msgstr ""
+msgstr "<emph>filename1, filename2</emph>: Filene som skal samanliknast."
 
 #. aKfwh
 #: sf_filesystem.xhp
@@ -14905,7 +15058,7 @@ msgctxt ""
 "par_id111601118910848\n"
 "help.text"
 msgid "<emph>comparecontents</emph>: When <literal>True</literal>, the contents of the files are compared (default = <literal>False</literal>)."
-msgstr ""
+msgstr "<emph>comparecontents</emph>: Når <literal>Sann</literal>, vert innhaldet av filene samanlikna (standard = <literal>Usann</literal>)."
 
 #. EZNG5
 #: sf_filesystem.xhp
@@ -14923,7 +15076,7 @@ msgctxt ""
 "par_id401612998805699\n"
 "help.text"
 msgid "An error will also occur if the <literal>source</literal> parameter uses wildcard characters and does not match any files."
-msgstr ""
+msgstr "Det oppstår ein feil viss parameteren <literal>source</literal> brukar jokerteikn og det ikkje er samsvar med noko fil."
 
 #. AZCsn
 #: sf_filesystem.xhp
@@ -14941,7 +15094,7 @@ msgctxt ""
 "par_id1001584541257789\n"
 "help.text"
 msgid "<emph>source</emph>: It can be a <literal>FileName</literal> or a <literal>NamePattern</literal> indicating one or more files to be copied."
-msgstr ""
+msgstr "<emph>source</emph>: Det kan vera eit <literal>FileName</literal> eller eit <literal>NamePattern</literal> som peikar på éi eller fleire filer som skal kopierast."
 
 #. ycEpt
 #: sf_filesystem.xhp
@@ -14950,7 +15103,7 @@ msgctxt ""
 "par_id111584542310166\n"
 "help.text"
 msgid "<emph>destination</emph>: It can be either a <literal>FileName</literal> specifying where the single <literal>source</literal> file is to be copied, or a <literal>FolderName</literal> into which the multiple files from <literal>source</literal> are to be copied."
-msgstr ""
+msgstr "<emph>destination</emph>: Kan vera anten eit <literal>FileName</literal> som spesifiserer kvar den enkle <literal>source</literal>-fila skal kopierast til, eller eit <literal>FolderName</literal> som fleire filer frå <literal>source</literal> skal kopierast til."
 
 #. frwD2
 #: sf_filesystem.xhp
@@ -14959,7 +15112,7 @@ msgctxt ""
 "par_id491612999134752\n"
 "help.text"
 msgid "If <literal>destination</literal> does not exist, it is created."
-msgstr ""
+msgstr "Viss <literal>destination</literal> ikkje finst, vert det laga."
 
 #. z3Tok
 #: sf_filesystem.xhp
@@ -14968,7 +15121,7 @@ msgctxt ""
 "par_id591612999166788\n"
 "help.text"
 msgid "Wildcard characters are not allowed in <literal>destination</literal>."
-msgstr ""
+msgstr "Det er ikkje tillate å bruka jokerteikn i <literal>destination</literal>."
 
 #. zFyVX
 #: sf_filesystem.xhp
@@ -14977,7 +15130,7 @@ msgctxt ""
 "par_id251584542431558\n"
 "help.text"
 msgid "<emph>overwrite</emph>: If <literal>True</literal> (default), files may be overwritten. The method will fail if <literal>destination</literal> is readonly, regardless of the value specified in <literal>overwrite</literal>."
-msgstr ""
+msgstr "<emph>overwrite</emph>: Viss <literal>Sann</literal> (standard), kan filene overskrivast. Metoden vil ikkje lukkast viss <literal>destination</literal> er skriveverna, same kva verdi som er sett i <literal>overwrite</literal>."
 
 #. uRMe8
 #: sf_filesystem.xhp
@@ -14986,7 +15139,7 @@ msgctxt ""
 "par_id691626216252568\n"
 "help.text"
 msgid "In the examples below the first line copies a single file whereas the second line copies multiple files using wildcards."
-msgstr ""
+msgstr "I eksempla nedanfor kopierer den første linja ei enkelt fil, medan den anden linja kopierer fleire filer med jokerteikn."
 
 #. GevfF
 #: sf_filesystem.xhp
@@ -14995,7 +15148,7 @@ msgctxt ""
 "par_id411626216328023\n"
 "help.text"
 msgid "Beware that subfolders and their contents are not copied when wildcards are used in the <emph>source</emph> argument."
-msgstr ""
+msgstr "Ver merksam på at undermapper og innhaldet i dei ikkje vert kopiert når det er brukt jokerteikn i argumentet <emph>source</emph>."
 
 #. TdGi7
 #: sf_filesystem.xhp
@@ -15013,7 +15166,7 @@ msgctxt ""
 "par_id21612999775377\n"
 "help.text"
 msgid "An error will also occur if the <literal>source</literal> parameter uses wildcard characters and does not match any folders."
-msgstr ""
+msgstr "Det oppstår ein feil viss parameteren <literal>source</literal> brukar jokerteikn og det ikkje er samsvar med noko mappe."
 
 #. m3Hzh
 #: sf_filesystem.xhp
@@ -15031,7 +15184,7 @@ msgctxt ""
 "par_id851584544734202\n"
 "help.text"
 msgid "<emph>source</emph>: It can be a <literal>FolderName</literal> or a <literal>NamePattern</literal> indicating one or more folders to be copied."
-msgstr ""
+msgstr "<emph>source</emph>: Kan vera eit <literal>FolderName</literal> eller <literal>NamePattern</literal> som peikar på éi eller fleire mapper som skal kopierast."
 
 #. msqGq
 #: sf_filesystem.xhp
@@ -15040,7 +15193,7 @@ msgctxt ""
 "par_id321584544734273\n"
 "help.text"
 msgid "<emph>destination</emph>: Specifies the <literal>FolderName</literal> into which the single or multiple folders defined in <literal>source</literal> are to be copied."
-msgstr ""
+msgstr "<emph>destination</emph>: Spesifiserer det <literal>FolderName</literal> som éi eller fleire mapper, definert i <literal>source</literal>, skal kopierast til."
 
 #. iLKYc
 #: sf_filesystem.xhp
@@ -15049,7 +15202,7 @@ msgctxt ""
 "par_id491612999134762\n"
 "help.text"
 msgid "If <literal>destination</literal> does not exist, it is created."
-msgstr ""
+msgstr "Viss <literal>destination</literal> ikkje finst, vert det laga."
 
 #. TvYDS
 #: sf_filesystem.xhp
@@ -15058,7 +15211,7 @@ msgctxt ""
 "par_id591612999166740\n"
 "help.text"
 msgid "Wildcard characters are not allowed in <literal>destination</literal>."
-msgstr ""
+msgstr "Det er ikkje tillate å bruka jokerteikn i <literal>destination</literal>."
 
 #. 3A2C2
 #: sf_filesystem.xhp
@@ -15067,7 +15220,7 @@ msgctxt ""
 "par_id251584542431525\n"
 "help.text"
 msgid "<emph>overwrite</emph>: If <literal>True</literal> (default), files may be overwritten. The method will fail if <literal>destination</literal> is readonly, regardless of the value specified in <literal>overwrite</literal>."
-msgstr ""
+msgstr "<emph>overwrite</emph>: Viss <literal>Sann</literal> (standard), kan filene overskrivast. Metoden vil ikkje lukkast viss <literal>destination</literal> er skriveverna, same kva verdi som er sett i <literal>overwrite</literal>."
 
 #. 7CxBB
 #: sf_filesystem.xhp
@@ -15076,7 +15229,7 @@ msgctxt ""
 "par_id751626216627481\n"
 "help.text"
 msgid "In the examples below all files, folders and subfolders are copied."
-msgstr ""
+msgstr "I eksempla nedanfor vert alle filer, mapper og undermapper kopierte."
 
 #. fNBgH
 #: sf_filesystem.xhp
@@ -15103,7 +15256,7 @@ msgctxt ""
 "par_id491584540675469\n"
 "help.text"
 msgid "<emph>foldername</emph>: A string representing the folder to be created. If the folder already exists, an exception will be raised."
-msgstr ""
+msgstr "<emph>foldername</emph>: Ein streng som representerer mappa som skal lagast. Viss mappa finst frå før, vert det sett opp eit unnatak."
 
 #. 2zcfH
 #: sf_filesystem.xhp
@@ -15112,7 +15265,7 @@ msgctxt ""
 "par_id731585322689518\n"
 "help.text"
 msgid "Creates a specified file and returns a <literal>TextStream</literal> service instance that can be used to write to the file."
-msgstr ""
+msgstr "Lagar ei spesifisert fil og returnerer tenesta <literal>TextStream</literal> som kan brukast for å skriva til fila."
 
 #. YMZDA
 #: sf_filesystem.xhp
@@ -15130,7 +15283,7 @@ msgctxt ""
 "par_id901585322689715\n"
 "help.text"
 msgid "<emph>filename</emph>: The name of the file to be created."
-msgstr ""
+msgstr "<emph>filename</emph>: Namnet på fila som skal lagast."
 
 #. gEJA4
 #: sf_filesystem.xhp
@@ -15139,7 +15292,7 @@ msgctxt ""
 "par_id501585322689209\n"
 "help.text"
 msgid "<emph>overwrite</emph>: Boolean value that determines if <literal>filename</literal> can be overwritten (default = <literal>True</literal>)."
-msgstr ""
+msgstr "<emph>overwrite</emph>: Boolsk verdi som bestemmer om <literal>filename</literal> kan overskrivast (standard = <literal>Sann</literal>)."
 
 #. CkbhC
 #: sf_filesystem.xhp
@@ -15148,7 +15301,7 @@ msgctxt ""
 "par_id551585322689192\n"
 "help.text"
 msgid "<emph>encoding</emph>: The character set to be used. The default encoding is \"UTF-8\"."
-msgstr ""
+msgstr "<emph>encoding</emph>: Teiknsettet som skal brukast. Standard = «UTF-8»."
 
 #. eoE92
 #: sf_filesystem.xhp
@@ -15175,7 +15328,7 @@ msgctxt ""
 "par_id21612999775356\n"
 "help.text"
 msgid "An error will also occur if the <literal>filename</literal> parameter uses wildcard characters and does not match any files."
-msgstr ""
+msgstr "Det oppstår også ein feil viss parameteren <literal>filename</literal> brukar jokerteikn og det ikkje er samsvar med filene."
 
 #. TWJRd
 #: sf_filesystem.xhp
@@ -15202,7 +15355,7 @@ msgctxt ""
 "par_id441584882040860\n"
 "help.text"
 msgid "<emph>filename</emph>: It can be a <literal>FileName</literal> or a <literal>NamePattern</literal> indicating one or more files to be deleted."
-msgstr ""
+msgstr "<emph>filename</emph>: Det kan vera eit <literal>FileName</literal> eller eit <literal>NamePattern</literal> som indikerer éi eller fleire filer som skal slettast."
 
 #. FnaSi
 #: sf_filesystem.xhp
@@ -15211,7 +15364,7 @@ msgctxt ""
 "par_id851626217167909\n"
 "help.text"
 msgid "In the examples below only files are deleted, subfolders are not deleted."
-msgstr ""
+msgstr "I eksempla nedanfor vert berre filer sletta. Undermapper vert ikkje sletta."
 
 #. c9ZCd
 #: sf_filesystem.xhp
@@ -15229,7 +15382,7 @@ msgctxt ""
 "par_id21612999775346\n"
 "help.text"
 msgid "An error will also occur if the <literal>foldername</literal> parameter uses wildcard characters and does not match any folders."
-msgstr ""
+msgstr "Det oppstår også ein feil viss parameteren <literal>foldername</literal> brukar jokerteikn og det ikkje er samsvar med filene."
 
 #. GsqDD
 #: sf_filesystem.xhp
@@ -15256,7 +15409,7 @@ msgctxt ""
 "par_id451584882542247\n"
 "help.text"
 msgid "<emph>foldername</emph>: It can be a <literal>FolderName</literal> or a <literal>NamePattern</literal> indicating one or more folders to be deleted."
-msgstr ""
+msgstr "<emph>foldername</emph>: Det kan vera eit <literal>FolderName</literal> eller <literal>NamePattern</literal> som indikerer éi eller fleire mapper som skal slettast."
 
 #. cCnG9
 #: sf_filesystem.xhp
@@ -15265,7 +15418,7 @@ msgctxt ""
 "par_id651626217314709\n"
 "help.text"
 msgid "In the examples below only folders and their contents are deleted. Files in the parent folder \"C:\\Temp\" are not deleted."
-msgstr ""
+msgstr "I eksempla nedanfor vert berre mapper og innhaldet i dei sletta. Filer i i den overordna mappa «C:\\Temp» vert ikkje sletta."
 
 #. gSG9s
 #: sf_filesystem.xhp
@@ -15328,7 +15481,7 @@ msgctxt ""
 "par_id91613003122613\n"
 "help.text"
 msgid "If the <literal>filename</literal> parameter is actually an existing folder name, the method returns <literal>False</literal>."
-msgstr ""
+msgstr "Viss parameteren <literal>filename</literal> er eit mappenamn som finst frå før, returnerer metoden <literal>Usann</literal>."
 
 #. fr2Ei
 #: sf_filesystem.xhp
@@ -15337,7 +15490,7 @@ msgctxt ""
 "par_id361583764426547\n"
 "help.text"
 msgid "<emph>filename</emph>: A string representing the file to be tested."
-msgstr ""
+msgstr "<emph>filename</emph>: Ein streng som representerer fila som skal testast."
 
 #. ChDCL
 #: sf_filesystem.xhp
@@ -15355,7 +15508,7 @@ msgctxt ""
 "par_id641613003790120\n"
 "help.text"
 msgid "If the argument <literal>foldername</literal> specifies a folder that does not exist, an exception is raised."
-msgstr ""
+msgstr "Viss argumentet <literal>foldername</literal> spesifiserer ei mappe som ikkje finst, vert det sett eit unnatak."
 
 #. nFaPD
 #: sf_filesystem.xhp
@@ -15373,7 +15526,7 @@ msgctxt ""
 "par_id731583944543140\n"
 "help.text"
 msgid "<emph>foldername</emph>: A string representing a folder. The folder must exist. This argument must not designate a file."
-msgstr ""
+msgstr "<emph>foldername</emph>: Ein streng som representerer ei mappe. Mappa må finnast. Dette argument må ikkje visa til ei fil."
 
 #. EM5cJ
 #: sf_filesystem.xhp
@@ -15382,7 +15535,7 @@ msgctxt ""
 "par_id591585648450060\n"
 "help.text"
 msgid "<emph>filter</emph>: A string containing wildcards (\"?\" and \"*\") that will be applied to the resulting list of files (default = \"\")."
-msgstr ""
+msgstr "<emph>filter</emph>: Ein streng som inneheld jokerteikn («?» og «*») som vert brukt i den resulterande lista over filer  (standard = \"\")."
 
 #. zG7ec
 #: sf_filesystem.xhp
@@ -15391,7 +15544,7 @@ msgctxt ""
 "par_id51583765642590\n"
 "help.text"
 msgid "Returns <literal>True</literal> if the specified <literal>FolderName</literal> is valid and exists, otherwise the method returns <literal>False</literal>."
-msgstr ""
+msgstr "Returnerer <literal>Sann</literal> viss det spesifiserte <literal>foldername</literal> er gyldig og fila finst, elles returnerer metoden <literal>Usann</literal>."
 
 #. 9xtCG
 #: sf_filesystem.xhp
@@ -15400,7 +15553,7 @@ msgctxt ""
 "par_id151613004111990\n"
 "help.text"
 msgid "If the <literal>foldername</literal> parameter is actually an existing file name, the method returns <literal>False</literal>."
-msgstr ""
+msgstr "Viss parameteren <literal>foldername</literal> faktisk er eit filnamn, returnerer metoden <literal>Usann</literal>."
 
 #. qrf4A
 #: sf_filesystem.xhp
@@ -15409,7 +15562,7 @@ msgctxt ""
 "par_id1001583765642211\n"
 "help.text"
 msgid "<emph>foldername</emph>: A string representing the folder to be tested."
-msgstr ""
+msgstr "<emph>foldername</emph>: Ein streng som representerer mappa som skal testast."
 
 #. eAFVs
 #: sf_filesystem.xhp
@@ -15418,7 +15571,7 @@ msgctxt ""
 "par_id521584110618989\n"
 "help.text"
 msgid "Returns the <literal>BaseName</literal> (equal to the last component) of a folder or file name, without its extension."
-msgstr ""
+msgstr "Returnerer filnamnet eller mappenamnet <literal>BaseName</literal> (same som den siste komponenten) utan filutvidinga."
 
 #. YnBXv
 #: sf_filesystem.xhp
@@ -15427,7 +15580,7 @@ msgctxt ""
 "par_id731613004316790\n"
 "help.text"
 msgid "The method does not check if the specified file or folder exists."
-msgstr ""
+msgstr "Metoden kontrollerer ikkje om den spesifiserte fila eller mappa finst frå før."
 
 #. 3FPjB
 #: sf_filesystem.xhp
@@ -15436,7 +15589,7 @@ msgctxt ""
 "par_id691584110618308\n"
 "help.text"
 msgid "<emph>filename</emph>: A string representing the file name and its path."
-msgstr ""
+msgstr "<emph>filename</emph>: Ein streng som representerer filnamnet med stien."
 
 #. jwFaP
 #: sf_filesystem.xhp
@@ -15445,7 +15598,7 @@ msgctxt ""
 "par_id1001626271201609\n"
 "help.text"
 msgid "In the examples below, the first <literal>GetBaseName</literal> method call corresponds to a folder, so the function returns the last component of the path. The second call receives a file name as input, so the name of the file is returned without its extension."
-msgstr ""
+msgstr "I eksempla nedanfor kallar den første metoden <literal>GetBaseName</literal> opp ei mappe, slik at funksjonen returnerer den siste komponenten i stien. Det andre oppkallet mottek eit filnamn som inndata, slik at namnet på fila vert returnert utan filetternamnet."
 
 #. A56XC
 #: sf_filesystem.xhp
@@ -15454,7 +15607,7 @@ msgctxt ""
 "par_id831584032680866\n"
 "help.text"
 msgid "Returns the extension part of a file or folder name without the dot \".\" character."
-msgstr ""
+msgstr "Returnerer filtypen for ei fil eller ei mappe utan teiknet punktum «.»."
 
 #. pdCJv
 #: sf_filesystem.xhp
@@ -15463,7 +15616,7 @@ msgctxt ""
 "par_id941613060736524\n"
 "help.text"
 msgid "The method does not check for the existence of the specified file or folder."
-msgstr ""
+msgstr "Metoden kontrollerer ikkje om den spesifiserte fila eller mappa finst frå før."
 
 #. Aqvwt
 #: sf_filesystem.xhp
@@ -15472,7 +15625,7 @@ msgctxt ""
 "par_id561613060896361\n"
 "help.text"
 msgid "If this method is applied to a folder name or to a file without an extension, then an empty string is returned."
-msgstr ""
+msgstr "Viss denne metoden vert brukt på eit mappenamn eller ei fil utan filetternam, vert det returnert ein tom streng."
 
 #. NzK5z
 #: sf_filesystem.xhp
@@ -15481,7 +15634,7 @@ msgctxt ""
 "par_id821584032680311\n"
 "help.text"
 msgid "<emph>filename</emph>: A string representing the file name and its path."
-msgstr ""
+msgstr "<emph>filename</emph>: Ein streng som representerer filnamnet med stien."
 
 #. Am6Bu
 #: sf_filesystem.xhp
@@ -15490,7 +15643,7 @@ msgctxt ""
 "par_id48160068505010\n"
 "help.text"
 msgid "The builtin <literal>FileLen</literal> Basic function returns the number of bytes contained in a file as a <literal>Long</literal> value, i.e. up to 2GB."
-msgstr ""
+msgstr "Den innebygde Basic-funksjonen <literal>FileLen</literal> returnerer talet på byte i ei fil som ein <literal>Long</literal>-verdi, det vil seia opp til 2GB."
 
 #. 2FHpa
 #: sf_filesystem.xhp
@@ -15499,7 +15652,7 @@ msgctxt ""
 "par_id571613061005426\n"
 "help.text"
 msgid "The <literal>GetFileLen</literal> method can handle files with much larger sizes by returning a <literal>Currency</literal> value."
-msgstr ""
+msgstr "Metoden <literal>GetFileLen</literal> kan handsama mykje større filer ved å returnera verdien <literal>Currency</literal>."
 
 #. PK2Fo
 #: sf_filesystem.xhp
@@ -15508,7 +15661,7 @@ msgctxt ""
 "par_id161600685050367\n"
 "help.text"
 msgid "<emph>filename</emph>: A string representing an existing file."
-msgstr ""
+msgstr "<emph>filename</emph>: Ein streng som representerer ei fil som finst frå før."
 
 #. o2GGJ
 #: sf_filesystem.xhp
@@ -15517,7 +15670,7 @@ msgctxt ""
 "par_id191584811478936\n"
 "help.text"
 msgid "Returns the last modified date of a given file."
-msgstr ""
+msgstr "Returnerer datoen ei gjeve fil sist vart endra."
 
 #. VMB4i
 #: sf_filesystem.xhp
@@ -15526,7 +15679,7 @@ msgctxt ""
 "par_id25158481147822\n"
 "help.text"
 msgid "<emph>filename</emph>: A string representing an existing file."
-msgstr ""
+msgstr "<emph>filename</emph>: Ein streng som representerer ei fil som finst frå før."
 
 #. VEZR6
 #: sf_filesystem.xhp
@@ -15535,7 +15688,7 @@ msgctxt ""
 "par_id711584032366587\n"
 "help.text"
 msgid "Returns the last component of a file or folder name in native operating system format."
-msgstr ""
+msgstr "Returnerer den siste komponenten i eit fil- eller mappenamn i formatet brukt av operativsystemet."
 
 #. 4vAvz
 #: sf_filesystem.xhp
@@ -15544,7 +15697,7 @@ msgctxt ""
 "par_id541613061300811\n"
 "help.text"
 msgid "The method does not check if the specified file or folder exists."
-msgstr ""
+msgstr "Metoden kontrollerer ikkje om den spesifiserte fila eller mappa finst frå før."
 
 #. iajZD
 #: sf_filesystem.xhp
@@ -15553,7 +15706,7 @@ msgctxt ""
 "par_id671584032366193\n"
 "help.text"
 msgid "<emph>filename</emph>: A string representing the file name and its path."
-msgstr ""
+msgstr "<emph>filename</emph>: Ein streng som representerer filnamnet med stien."
 
 #. ffxFe
 #: sf_filesystem.xhp
@@ -15562,7 +15715,7 @@ msgctxt ""
 "par_id871584113432747\n"
 "help.text"
 msgid "Returns a string containing the name of the parent folder of a specified file or folder name."
-msgstr ""
+msgstr "Returnerer ein streng som inneheld namnet på den overordna mappa for den gjevne fila eller mappa."
 
 #. 2eBgA
 #: sf_filesystem.xhp
@@ -15571,7 +15724,7 @@ msgctxt ""
 "par_id611613061603039\n"
 "help.text"
 msgid "The method does not check if the specified file or folder exists."
-msgstr ""
+msgstr "Metoden kontrollerer ikkje om den spesifiserte fila eller mappa finst frå før."
 
 #. YUAQ3
 #: sf_filesystem.xhp
@@ -15580,7 +15733,7 @@ msgctxt ""
 "par_id471584113432231\n"
 "help.text"
 msgid "<emph>filename</emph>: A string with the file or folder name to be analyzed."
-msgstr ""
+msgstr "<emph>filname</emph>: Ein streng med det fil- eller mappenamnet som skal analyserast."
 
 #. Uc93M
 #: sf_filesystem.xhp
@@ -15589,7 +15742,7 @@ msgctxt ""
 "par_id82158385117289\n"
 "help.text"
 msgid "Returns a randomly generated temporary file name that is useful for performing operations that require a temporary file."
-msgstr ""
+msgstr "Returnerer eit tilfeldig generert mellombels filnamn som kan vera nyttig for å utføra operasjonar som krev ei mellombels fil"
 
 #. FS3qq
 #: sf_filesystem.xhp
@@ -15598,7 +15751,7 @@ msgctxt ""
 "par_id391613061770924\n"
 "help.text"
 msgid "The returned file name does not have any suffix. The folder part of the returned string is the system's temporary folder."
-msgstr ""
+msgstr "Det returnerte filnamnet har ingen filtype. Mappedelen av den returnerte strengen er den mellombels mappa til systemet."
 
 #. W7gF7
 #: sf_filesystem.xhp
@@ -15607,7 +15760,7 @@ msgctxt ""
 "par_id971613061774934\n"
 "help.text"
 msgid "The method does not create the temporary file."
-msgstr ""
+msgstr "Metoden lagar ikkje den mellombels fila."
 
 #. ch2AJ
 #: sf_filesystem.xhp
@@ -15616,7 +15769,7 @@ msgctxt ""
 "par_id58160104251423\n"
 "help.text"
 msgid "Hash functions are used by some cryptographic algorithms, in digital signatures, message authentication codes, fraud detection, fingerprints, checksums (message integrity check), hash tables, password storage and much more."
-msgstr ""
+msgstr "Hash-funksjonar vert brukte av nokre kryptografiske algoritmar, i digitale signaturar, meldings-godkjenningskodar, svindeloppdaging, fingeravtrykk, kontrollsummar (kontroll av meldingsintegritet), hash-tabellar, lagring av passord og meir."
 
 #. qxDnP
 #: sf_filesystem.xhp
@@ -15625,7 +15778,7 @@ msgctxt ""
 "par_id301601042791356\n"
 "help.text"
 msgid "The <literal>HashFile</literal> method returns the result of a hash function, applied on a given file and using a specified algorithm. The returned value is a string of lower-case hexadecimal digits."
-msgstr ""
+msgstr "Metoden <literal>HashFile</literal> returnerer resultatet av ein hash-funksjon som er brukt på ei gjeven fil og med ein gjeven algoritme. Den returnerte verdien er ein streng av heksadesimale siffer skrive med små bokstavar."
 
 #. eAW33
 #: sf_filesystem.xhp
@@ -15634,7 +15787,7 @@ msgctxt ""
 "par_id861601043268484\n"
 "help.text"
 msgid "The hash algorithms supported are: <literal>MD5</literal>, <literal>SHA1</literal>, <literal>SHA224</literal>, <literal>SHA256</literal>, <literal>SHA384</literal> and <literal>SHA512</literal>."
-msgstr ""
+msgstr "Dei støtta hash-algoritmene er: <literal>MD5</literal>, <literal>SHA1</literal>, <literal>SHA224</literal>, <literal>SHA256</literal>, <literal>SHA384</literal> og <literal>SHA512</literal>."
 
 #. s5ZiA
 #: sf_filesystem.xhp
@@ -15643,7 +15796,7 @@ msgctxt ""
 "par_id28160104251451\n"
 "help.text"
 msgid "<emph>filename</emph>: A string representing an existing file."
-msgstr ""
+msgstr "<emph>filename</emph>: Ein streng som representerer ei fil som finst frå før."
 
 #. Eomhm
 #: sf_filesystem.xhp
@@ -15652,7 +15805,7 @@ msgctxt ""
 "par_id71601042959846\n"
 "help.text"
 msgid "<emph>algorithm</emph>: One of the supported algorithms."
-msgstr ""
+msgstr "<emph>algoritme</emph>: Ein av dei støtta algoritmane."
 
 #. HzFs2
 #: sf_filesystem.xhp
@@ -15661,7 +15814,7 @@ msgctxt ""
 "par_id51584791330688\n"
 "help.text"
 msgid "Moves one or more files from one location to another. Returns <literal>True</literal> if at least one file has been moved or <literal>False</literal> if an error occurred."
-msgstr ""
+msgstr "Flyttar éi eller fleire filer frå éin stad til ein annan. Returnerer <literal>Sann</literal> viss minst éi fil er flytt, eller <literal>Usann</literal> viss det oppstod ein feil."
 
 #. RFrNE
 #: sf_filesystem.xhp
@@ -15670,7 +15823,7 @@ msgctxt ""
 "par_id631613062890648\n"
 "help.text"
 msgid "An error will also occur if the <literal>source</literal> parameter uses wildcard characters and does not match any files."
-msgstr ""
+msgstr "Det oppstår ein feil viss parameteren <literal>source</literal> brukar jokerteikn og det ikkje er samsvar med noko fil."
 
 #. ETmEP
 #: sf_filesystem.xhp
@@ -15679,7 +15832,7 @@ msgctxt ""
 "par_id241613062902777\n"
 "help.text"
 msgid "The method stops immediately after it encounters an error. The method does not roll back nor does it undo changes made before the error occurred."
-msgstr ""
+msgstr "Metoden stoppar straks når det oppstår ein feil. Metoden rullar ikkje tilbake, og angrar heller ikkje endringar som vart gjort før feilen oppstod."
 
 #. DbC6F
 #: sf_filesystem.xhp
@@ -15688,7 +15841,7 @@ msgctxt ""
 "par_id721584791330406\n"
 "help.text"
 msgid "<emph>source</emph>: It can be a <literal>FileName</literal> or <literal>NamePattern</literal> to designate one or more files to be moved."
-msgstr ""
+msgstr "<emph>source</emph>: Kan vera eit <literal>FileName</literal> eller eit <literal>NamePattern</literal> som peikar på éi eller fleire mapper som skal flyttast."
 
 #. BHa7Y
 #: sf_filesystem.xhp
@@ -15697,7 +15850,7 @@ msgctxt ""
 "par_id291584791330181\n"
 "help.text"
 msgid "<emph>destination</emph>: If <literal>source</literal> is a <literal>FileName</literal> then this parameter indicates the new path and file name of the moved file."
-msgstr ""
+msgstr "<emph>destination</emph>: Viss <literal>source</literal> er eit <literal>FileName</literal> så peikar denne parameteren på den nye stien og filnamnet til den fila som er flytt."
 
 #. ZzA3Y
 #: sf_filesystem.xhp
@@ -15706,7 +15859,7 @@ msgctxt ""
 "par_id31613063334246\n"
 "help.text"
 msgid "If the move operation involves multiple files, then <literal>destination</literal> must be a folder name. If it does not exist, it is created."
-msgstr ""
+msgstr "Viss flytteoperasjonen gjeld fleire filer, må <literal>destination</literal> vera eit mappenamn. Viss mappa ikkje finst, vert ho laga."
 
 #. 39oR8
 #: sf_filesystem.xhp
@@ -15715,7 +15868,7 @@ msgctxt ""
 "par_id391613063494599\n"
 "help.text"
 msgid "If <literal>source</literal> and <literal>destination</literal> have the same parent folder, the method will rename the <literal>source</literal>."
-msgstr ""
+msgstr "Viss <literal>source</literal> og <literal>destination</literal> har den same overordna mappa, vil metoden gje nytt namn til <literal>source</literal>."
 
 #. 7bzK4
 #: sf_filesystem.xhp
@@ -15724,7 +15877,7 @@ msgctxt ""
 "par_id941613063476533\n"
 "help.text"
 msgid "Wildcard characters are not allowed in <literal>destination</literal>."
-msgstr ""
+msgstr "Det er ikkje tillate å bruka jokerteikn i <literal>destination</literal>."
 
 #. Bysqd
 #: sf_filesystem.xhp
@@ -15733,7 +15886,7 @@ msgctxt ""
 "par_id91626272612758\n"
 "help.text"
 msgid "In the following examples only files are moved, subfolders are not."
-msgstr ""
+msgstr "I eksempla nedanfor vert berre filene flytta, ikkje undermappene."
 
 #. iYBMe
 #: sf_filesystem.xhp
@@ -15751,7 +15904,7 @@ msgctxt ""
 "par_id411613072570664\n"
 "help.text"
 msgid "An error will also occur if the <literal>source</literal> parameter uses wildcard characters and does not match any folders."
-msgstr ""
+msgstr "Det oppstår ein feil viss parameteren <literal>source</literal> brukar jokerteikn og det ikkje er samsvar med noko mappe."
 
 #. F2DaD
 #: sf_filesystem.xhp
@@ -15769,7 +15922,7 @@ msgctxt ""
 "par_id541584791330777\n"
 "help.text"
 msgid "<emph>source</emph>: It can be a <literal>FolderName</literal> or <literal>NamePattern</literal> to designate one or more folders to be moved."
-msgstr ""
+msgstr "<emph>source</emph>: Kan vera eit <literal>FolderName</literal> eller <literal>NamePattern</literal> som spesifiserer éi eller fleire mapper som skal flyttast."
 
 #. 4Ampu
 #: sf_filesystem.xhp
@@ -15778,7 +15931,7 @@ msgctxt ""
 "par_id551584791330279\n"
 "help.text"
 msgid "<emph>destination</emph>: If the move operation involves a single folder, then <literal>destination</literal> is the name and path of the moved folder and it must not exist."
-msgstr ""
+msgstr "<emph>destination</emph>: Viss flyttinga involverer éi enkelt mappe, er <literal>destination</literal> namnet og stien til den flytte mappa, som ikkje må finnast frå før."
 
 #. dD7SB
 #: sf_filesystem.xhp
@@ -15787,7 +15940,7 @@ msgctxt ""
 "par_id11613072890641\n"
 "help.text"
 msgid "If multiple folders are being moved, then <literal>destination</literal> designates where the folders in <literal>source</literal> will be moved into. If <literal>destination</literal> does not exist, it is created."
-msgstr ""
+msgstr "Viss fleire mapper vert flytte, bestemmer <literal>destination</literal> kvar mappene i <literal>source</literal> skal flyttast til. Viss <literal>destination</literal> ikkje finst frå før, vert det laga."
 
 #. A69QS
 #: sf_filesystem.xhp
@@ -15796,7 +15949,7 @@ msgctxt ""
 "par_id301613072928159\n"
 "help.text"
 msgid "Wildcard characters are not allowed in <literal>destination</literal>."
-msgstr ""
+msgstr "Det er ikkje tillate å bruka jokerteikn i <literal>destination</literal>."
 
 #. JNTia
 #: sf_filesystem.xhp
@@ -15823,7 +15976,7 @@ msgctxt ""
 "par_id951613073135036\n"
 "help.text"
 msgid "The method returns a <literal>Null</literal> object (in Basic) or <literal>None</literal> (in Python) if an error occurred."
-msgstr ""
+msgstr "Denne metoden returnerer eit <literal>Null</literal>-objekt (i Basic) eller <literal>None</literal> (i Python) viss det kjem opp ein feil."
 
 #. mxuwo
 #: sf_filesystem.xhp
@@ -15832,7 +15985,7 @@ msgctxt ""
 "par_id551585320922678\n"
 "help.text"
 msgid "<emph>filename</emph>: Identifies the file to open."
-msgstr ""
+msgstr "<emph>filename</emph>: Identifiserer fila som skal opnast."
 
 #. tsRLR
 #: sf_filesystem.xhp
@@ -15841,7 +15994,7 @@ msgctxt ""
 "par_id671585320922388\n"
 "help.text"
 msgid "<emph>iomode</emph>: Indicates the input/output mode. It can be one of three constants: <literal>svc.ForReading</literal> (default), <literal>svc.ForWriting</literal>, or <literal>svc.ForAppending</literal>."
-msgstr ""
+msgstr "<emph>iomode</emph>: Indikerer input/output modus. Det kan vera éin av dei tre konstantane: <literal>svc.ForReading</literal> (standard), <literal>svc.ForWriting</literal> eller <literal>svc.ForAppending</literal>."
 
 #. z27vT
 #: sf_filesystem.xhp
@@ -15850,7 +16003,7 @@ msgctxt ""
 "par_id21585321398586\n"
 "help.text"
 msgid "<emph>create</emph>: Boolean value that indicates whether a new file can be created if the specified <literal>filename</literal> doesn't exist:"
-msgstr ""
+msgstr "<emph>create</emph>: Boolsk verdi som indikerer om ei ny fil kan lagast viss det gjevne  <literal>filename</literal> ikkje finst frå før:"
 
 #. VDFAi
 #: sf_filesystem.xhp
@@ -15877,7 +16030,7 @@ msgctxt ""
 "par_id771585321576210\n"
 "help.text"
 msgid "<emph>encoding</emph>: The character set to be used. The default encoding is \"UTF-8\"."
-msgstr ""
+msgstr "<emph>encoding</emph>: Teiknsettet som skal brukast. Standard = «UTF-8»."
 
 #. FuYwe
 #: sf_filesystem.xhp
@@ -15904,7 +16057,7 @@ msgctxt ""
 "par_id481583670342502\n"
 "help.text"
 msgid "<emph>defaultfile</emph>: This argument is a string composed of a folder and file name:"
-msgstr ""
+msgstr "<emph>defaultfile</emph>: Dette argumentet er ein streng som er sett saman av eit mappe- og eit filnamn:"
 
 #. fyVCs
 #: sf_filesystem.xhp
@@ -15931,7 +16084,7 @@ msgctxt ""
 "par_id981583670342502\n"
 "help.text"
 msgid "<emph>mode</emph>: A string value that can be either \"OPEN\" (for input files) or \"SAVE\" (for output files). The default value is \"OPEN\"."
-msgstr ""
+msgstr "<emph>mode</emph>: Ein strengverdi som kan vera anten \"OPEN\" (for inndata-filer) eller \"SAVE\" (for utdata-filer). Standardverdien er \"OPEN\"."
 
 #. uvwDP
 #: sf_filesystem.xhp
@@ -15940,7 +16093,7 @@ msgctxt ""
 "par_id31583670342502\n"
 "help.text"
 msgid "<emph>filter</emph>: The extension of the files displayed when the dialog is opened (default = no filter)."
-msgstr ""
+msgstr "<emph>filter</emph>: Namneutvidinga på dei filene som vert viste når dialogvindauget er ope (standard=ikkje filter)."
 
 #. niaGR
 #: sf_filesystem.xhp
@@ -15949,7 +16102,7 @@ msgctxt ""
 "par_id881626276134300\n"
 "help.text"
 msgid "The examples below open a file picker with the \"txt\" filter applied."
-msgstr ""
+msgstr "Eksempla nedanfor opnar ein filveljar med \"txt\"-filteret slått på."
 
 #. HkwaR
 #: sf_filesystem.xhp
@@ -15967,7 +16120,7 @@ msgctxt ""
 "par_id951583671701872\n"
 "help.text"
 msgid "<emph>defaultfolder</emph>: A string containing the folder name that will be displayed when the dialog is opened (default = the last selected folder)."
-msgstr ""
+msgstr "<emph>defaultfolder</emph>: Ein streng som inneheld det mappenamnet som vert vist når dialogvindauget vert opna (standard = sen sist valde mappa)."
 
 #. ymABK
 #: sf_filesystem.xhp
@@ -15976,7 +16129,7 @@ msgctxt ""
 "par_id821583671701764\n"
 "help.text"
 msgid "<emph>freetext</emph>: Text to display in the dialog (default = \"\")."
-msgstr ""
+msgstr "<emph>freetext</emph>: Teksten som skal visast i dialogvindauget (standard = \"\")."
 
 #. 4FFby
 #: sf_filesystem.xhp
@@ -15985,7 +16138,7 @@ msgctxt ""
 "bas_id921583671701610\n"
 "help.text"
 msgid "aFolder = FSO.PickFolder(\"C:\\Documents\", \"Choose a folder or press Cancel\")"
-msgstr ""
+msgstr "aFolder = FSO.PickFolder(\"C:\\Documents\", \"Vel ei mappe eller trykk på Avbryt\")"
 
 #. nW8Rx
 #: sf_filesystem.xhp
@@ -16003,7 +16156,7 @@ msgctxt ""
 "par_id431584016761996\n"
 "help.text"
 msgid "Returns a zero-based array of strings corresponding to the folders stored in a given <literal>foldername</literal>."
-msgstr ""
+msgstr "Returnerer ei null-basert matrise av strengar som svarar til dei mappene som er lagra i eit gjeve <literal>foldername</literal>."
 
 #. LVNZq
 #: sf_filesystem.xhp
@@ -16012,7 +16165,7 @@ msgctxt ""
 "par_id431613075267241\n"
 "help.text"
 msgid "The list may be filtered with wildcards."
-msgstr ""
+msgstr "Lista kan vera filtrert med jokerteikn."
 
 #. 7pDiA
 #: sf_filesystem.xhp
@@ -16021,7 +16174,7 @@ msgctxt ""
 "par_id701584016761945\n"
 "help.text"
 msgid "<emph>foldername</emph>: A string representing a folder. The folder must exist. <literal>foldername</literal> must not designate a file."
-msgstr ""
+msgstr "<emph>foldername</emph>: Ein streng som representerer ei mappe. Mappa må finnast. <literal>foldername</literal> må ikkje visa til ei fil."
 
 #. Xmg8b
 #: sf_filesystem.xhp
@@ -16030,7 +16183,7 @@ msgctxt ""
 "par_id471585648674921\n"
 "help.text"
 msgid "<emph>filter</emph>: A string containing wildcards (\"?\" and \"*\") that will be applied to the resulting list of folders (default = \"\")."
-msgstr ""
+msgstr "<emph>filter</emph>: Ein streng som inneheld jokerteikn («?» og «*») som vert brukt i den resulterande lista over mapper (standard = \"\")."
 
 #. XQG8t
 #: sf_form.xhp
@@ -16039,7 +16192,7 @@ msgctxt ""
 "tit\n"
 "help.text"
 msgid "SFDocuments.Form service"
-msgstr ""
+msgstr "Tenesta SFDocuments.Form"
 
 #. kanuY
 #: sf_form.xhp
@@ -16048,7 +16201,7 @@ msgctxt ""
 "bm_id781582391760253\n"
 "help.text"
 msgid "<variable id=\"FormService\"><link href=\"text/sbasic/shared/03/sf_form.xhp\" name=\"SFDocuments.Form\"><literal>SFDocuments</literal>.<literal>Form</literal> service</link></variable>"
-msgstr ""
+msgstr "<variable id=\"FormService\"><link href=\"text/sbasic/shared/03/sf_form.xhp\" name=\"SFDocuments.Form\">Tenesta <literal>SFDocuments</literal>. <literal>Form</literal></link></variable>"
 
 #. LDpRB
 #: sf_form.xhp
@@ -16057,7 +16210,7 @@ msgctxt ""
 "par_id931583589764919\n"
 "help.text"
 msgid "The <literal>Form</literal> service provides methods and properties to manage forms in %PRODUCTNAME documents. This service supports forms in Base, Calc and Writer documents and allows to:"
-msgstr ""
+msgstr "Tenesta <literal>Form</literal> har metodar og eigenskapar for å administrera skjema i %PRODUCTNAME-dokument. Denne tenesta har støtte for skjema i Base-, Calc- og Writer-dokument og tillet:"
 
 #. U3zGB
 #: sf_form.xhp
@@ -16066,7 +16219,7 @@ msgctxt ""
 "par_id381618172063851\n"
 "help.text"
 msgid "Open and activate forms."
-msgstr ""
+msgstr "Opna og aktiver skjema."
 
 #. SC6Yb
 #: sf_form.xhp
@@ -16075,7 +16228,7 @@ msgctxt ""
 "par_id261618172129782\n"
 "help.text"
 msgid "Navigate through records shown by the form."
-msgstr ""
+msgstr "Naviger gjennom postane som vert viste i skjemaet."
 
 #. krQfB
 #: sf_form.xhp
@@ -16084,7 +16237,7 @@ msgctxt ""
 "par_id281618172141607\n"
 "help.text"
 msgid "Get access to the controls inside the form."
-msgstr ""
+msgstr "Få tilgang til kontrollelementa i skjemaet."
 
 #. itKdZ
 #: sf_form.xhp
@@ -16093,7 +16246,7 @@ msgctxt ""
 "par_id371618172155483\n"
 "help.text"
 msgid "Get access to subforms of a parent form."
-msgstr ""
+msgstr "Få tilgang til underskjema til eit overordna skjema."
 
 #. QcJ24
 #: sf_form.xhp
@@ -16102,7 +16255,7 @@ msgctxt ""
 "par_id351616768789190\n"
 "help.text"
 msgid "The <literal>SFDocuments</literal>.<literal>Form</literal> service is available from %PRODUCTNAME 7.2 onwards."
-msgstr ""
+msgstr "Tenesta <literal>SFDocuments</literal>.<literal>Form</literal> er tilgjengeleg frå %PRODUCTNAME 7.2 og seinare."
 
 #. Ga5NU
 #: sf_form.xhp
@@ -16111,7 +16264,7 @@ msgctxt ""
 "par_id451616765867881\n"
 "help.text"
 msgid "Forms are usually used in %PRODUCTNAME documents to create user interfaces connected to relational databases. Hence, the <literal>Form</literal> service provides quick access to the linked database through the <link href=\"text/sbasic/shared/03/sf_database.xhp\" name=\"SFDatabases.Database\"><literal>SFDatabases</literal>.<literal>Database</literal> service</link>."
-msgstr ""
+msgstr "Skjema vert til vanleg brukte i %PRODUCTNAME-dokument for å laga brukargrensesnitt kopla til relasjonsdatabasar. Difor gjev tenesta <literal>Form</literal> rask tilgang til den tilkopla databasen gjennom tenesta <link href='text/sbasic/shared/03/sf_database.xhp' name='SFDatabases.Database'><literal>SFDatabases </literal>.<literal>Database</literal></link>."
 
 #. rGB5M
 #: sf_form.xhp
@@ -16120,7 +16273,7 @@ msgctxt ""
 "par_id891598188164936\n"
 "help.text"
 msgid "The <literal>SFDocuments</literal>.<literal>Form</literal> service is closely related to the <link href=\"text/sbasic/shared/03/sf_formcontrol.xhp\" name=\"SFDocuments.FormControl\"><literal>SFDocuments</literal>.<literal>FormControl</literal> service.</link>"
-msgstr ""
+msgstr "Tenesta <literal>SFDocuments</literal>.<literal>Form</literal> er nært knytt til tenesta <link href='text/sbasic/shared/03/sf_formcontrol.xhp' name='SFDocuments.FormControl'> <literal>SFDocuments</literal>.<literal>FormControl</literal></link>."
 
 #. 3HUmh
 #: sf_form.xhp
@@ -16129,7 +16282,7 @@ msgctxt ""
 "hd_id161616766330804\n"
 "help.text"
 msgid "Definitions"
-msgstr ""
+msgstr "Definisjonar"
 
 #. GYDbT
 #: sf_form.xhp
@@ -16138,7 +16291,7 @@ msgctxt ""
 "par_id951618172906010\n"
 "help.text"
 msgid "Forms are usually created in Base documents, but they can be added to Writer and Calc documents as well."
-msgstr ""
+msgstr "Skjema vert til vanleg laga i Base-dokument, men de kan også leggjast til i Writer- og Calc-dokument."
 
 #. nKUdb
 #: sf_form.xhp
@@ -16147,7 +16300,7 @@ msgctxt ""
 "par_id671618173380680\n"
 "help.text"
 msgid "In Base, each form you create using the <menuitem>Insert - Form</menuitem>  functionality or through the <link href=\"text/shared/autopi/01090000.xhp\" name=\"FormWizard\">Form Wizard</link> is actually a <literal>FormDocument</literal> that can be handled with the <literal>Form</literal> service. Base documents can contain an unlimited number of form documents."
-msgstr ""
+msgstr "I Base er kvart skjema som er laga med funksjonen <menuitem>Set inn → Skjema…</menuitem> eller med <link href='text/shared/autopi/01090000.xhp' name='FormWizard'>skjemavegvisaren</link> eit <literal>FormDocument</literal> som kan handsamast ved hjelp av tenesta <literal>Form</literal>. Det er inga grense for kor mange skjemadokument grunndokumenta kan innehalda."
 
 #. kegBD
 #: sf_form.xhp
@@ -16156,7 +16309,7 @@ msgctxt ""
 "par_id841618177362626\n"
 "help.text"
 msgid "Below is an example showing the hierarchy of all the elements involved in accessing forms and subforms in a Base document. Suppose you have a Base file named <literal>Employees.odb</literal> and inside it you created a form document to add new employees to the database. The form document contains a main form named <literal>EmployeeData</literal> that gives access to a table. There is also a subform <literal>WorksAtPlant</literal> that allows you to associate the new employee to one of the plants of the company."
-msgstr ""
+msgstr "Nedanfor er eit eksempel som viser hierarkiet til alle elementa som er involverte i tilgang til skjema og underskjema i eit basisdokument. Gå ut frå at du har ei basisfil med namnet <literal>Employees.odb</literal> der du har laga eit skjemadokument for å leggja til nye tilsette i databasen. Skjemadokumentet inneheld eit hovudskjema kalla <literal>EmployeeData</literal> som gir tilgang til ein tabell. Det finst også eit underskjema <literal>WorksAtPlant</literal> som du kan bruka til å kopla den nye medarbeidaren til ei av avdelingane i selskapet."
 
 #. izkiB
 #: sf_form.xhp
@@ -16165,7 +16318,7 @@ msgctxt ""
 "bas_id151618176848874\n"
 "help.text"
 msgid "Employees.odb (Base document)"
-msgstr ""
+msgstr "Employees.odb (Tilsette) (Base-dokument)"
 
 #. cz2fJ
 #: sf_form.xhp
@@ -16174,7 +16327,7 @@ msgctxt ""
 "bas_id941618176869485\n"
 "help.text"
 msgid "|-- EmployeeData (Main Form)"
-msgstr ""
+msgstr "|-- EmployeeData (TilsetteData) (Hovudskjema)"
 
 #. k8nxK
 #: sf_form.xhp
@@ -16291,7 +16444,7 @@ msgctxt ""
 "par_id481618179851104\n"
 "help.text"
 msgid "A form in a Calc file must have a unique name inside its sheet. Hence, the <literal>Forms</literal> method requires two arguments, the first indicating the sheet name and the second specifying the form name."
-msgstr ""
+msgstr "Eit skjema i ei Calc-fil må ha eit unikt namn i tabellen. Difor krev metoden <literal>Forms</literal> to argument, det første som viser tabellnamnet og det andre som viser skjemanamnet."
 
 #. i9Um4
 #: sf_form.xhp
@@ -16300,7 +16453,7 @@ msgctxt ""
 "par_id51622028165429\n"
 "help.text"
 msgid "This is achieved identically using Python:"
-msgstr ""
+msgstr "Dette oppnår du på same måte med Python:"
 
 #. 2fB94
 #: sf_form.xhp
@@ -16309,7 +16462,7 @@ msgctxt ""
 "hd_id201618180055756\n"
 "help.text"
 msgid "In Base documents"
-msgstr ""
+msgstr "I Base-dokument"
 
 #. J3Btp
 #: sf_form.xhp
@@ -16318,7 +16471,7 @@ msgctxt ""
 "par_id711616768164987\n"
 "help.text"
 msgid "A <literal>FormDocument</literal> inside a Base document is accessed by its name. The following example opens the form document named <literal>thisFormDocument</literal> and accesses the form <literal>MainForm</literal>:"
-msgstr ""
+msgstr "Eit <literal>FormDocument</literal> i eit Base-dokument vert opna med namnet. Eksempelet nedanfor opnar skjemadokumentet kalla <literal>thisFormDocument</literal> og får tilgang til skjemaet <literal>MainForm</literal>"
 
 #. pbtEM
 #: sf_form.xhp
@@ -16327,7 +16480,7 @@ msgctxt ""
 "bas_id271598171225874\n"
 "help.text"
 msgid "' The statement below is necessary only if the form hasn't been opened yet"
-msgstr ""
+msgstr "' Uttrykket nedanfor er nødvendig berre viss skjemaet ikkje er opna."
 
 #. EDADK
 #: sf_form.xhp
@@ -16336,7 +16489,7 @@ msgctxt ""
 "bas_id51616768358888\n"
 "help.text"
 msgid "' Or, alternatively, to access the form by its index ..."
-msgstr ""
+msgstr "' Eller alternativt for å få tilgang til skjemaet med indeksen for det …"
 
 #. 2v2aG
 #: sf_form.xhp
@@ -16345,7 +16498,7 @@ msgctxt ""
 "par_id991618249636036\n"
 "help.text"
 msgid "To perform any action on a form using the <literal>Form</literal> service, the <literal>FormDocument</literal> must have been opened either manually by the user or programmatically in a user script. The latter can be done by calling the <literal>OpenFormDocument</literal> method of the <link href=\"text/sbasic/shared/03/sf_base.xhp\" name=\"ScriptForge Base Service\"><literal>Base</literal> service</link>."
-msgstr ""
+msgstr "For å utføra ei handling på eit skjema ved å bruka tenesta <literal>Form</literal>, må <literal>FormDocument</literal> vera opna anten manuelt av brukaren eller av programmet i eit brukarskript. Det siste kan ein gjera ved å kalla opp metoden <literal>OpenFormDocument</literal> i tenesta <link href='text/sbasic/shared/03/sf_base.xhp' name='ScriptForge Base Service'><literal>Base</literal></link>."
 
 #. DDerZ
 #: sf_form.xhp
@@ -16354,7 +16507,7 @@ msgctxt ""
 "par_id11618180564274\n"
 "help.text"
 msgid "To access a given subform of a form use the <literal>SubForms</literal> method. Note that in the example below <literal>mySubForm</literal> is a new instance of the <literal>Form</literal> service."
-msgstr ""
+msgstr "For å få tilgang til eit gjeve underskjema brukar du metoden <literal>SubForms</literal>. Merk at i eksempelet nedanfor er <literal>mySubForm</literal> ein ny førekomst av tenesta <literal>Form</literal>."
 
 #. e7fcY
 #: sf_form.xhp
@@ -16363,7 +16516,7 @@ msgctxt ""
 "par_id681622028653480\n"
 "help.text"
 msgid "Previous examples translate in Python as:"
-msgstr ""
+msgstr "Dei tidlegare eksempla vert omsette i Python som:"
 
 #. ebc4K
 #: sf_form.xhp
@@ -16372,7 +16525,7 @@ msgctxt ""
 "pyc_id811622808499801\n"
 "help.text"
 msgid "#  The statement below is necessary only if the form hasn't been opened yet"
-msgstr ""
+msgstr "# Uttrykket nedanfor er nødvendig berre viss skjemaet ikkje er opna."
 
 #. GdyX6
 #: sf_form.xhp
@@ -16723,7 +16876,7 @@ msgctxt ""
 "par_id191598177924897\n"
 "help.text"
 msgid "The UNO object representing interactions with the form. Refer to <link href=\"https://api.libreoffice.org/docs/idl/ref/interfacecom_1_1sun_1_1star_1_1form_1_1XForm.html\" name=\"XForm interface\">XForm</link> and <link href=\"https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1form_1_1component_1_1DataForm.html\" name=\"DataForm service\">DataForm</link> in the API documentation for detailed information."
-msgstr ""
+msgstr "UNO-objektet som representerer samhandlingar med skjemaet. Du finn detaljert informasjon i API-dokumentasjonen <link href=\"https://api.libreoffice.org/docs/idl/ref/interfacecom_1_1sun_1_1star_1_1form_1_1XForm.html\" name=\"XForm interface\">XForm</link> og <link href=\"https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1form_1_1component_1_1DataForm.html\" name=\"DataForm service\">DataFoirm</link>."
 
 #. cwE3k
 #: sf_form.xhp
@@ -16732,7 +16885,7 @@ msgctxt ""
 "hd_id421612628828054\n"
 "help.text"
 msgid "Event properties"
-msgstr ""
+msgstr "Hendingseigenskapar"
 
 #. eTuoa
 #: sf_form.xhp
@@ -16741,7 +16894,7 @@ msgctxt ""
 "par_id41612629140856\n"
 "help.text"
 msgid "The properties below return or set URI strings that define the script triggered by the event."
-msgstr ""
+msgstr "Eigenskapane nedanfor returnerer eller set URI-strengar som definerer eit skript som vert opna av hendinga."
 
 #. fdses
 #: sf_form.xhp
@@ -16750,7 +16903,7 @@ msgctxt ""
 "par_id961612628879819\n"
 "help.text"
 msgid "Name"
-msgstr ""
+msgstr "Namn"
 
 #. DsQGQ
 #: sf_form.xhp
@@ -16777,7 +16930,7 @@ msgctxt ""
 "par_id111612629836630\n"
 "help.text"
 msgid "No"
-msgstr ""
+msgstr "Nei"
 
 #. GAgms
 #: sf_form.xhp
@@ -16786,7 +16939,7 @@ msgctxt ""
 "par_id1001612629836902\n"
 "help.text"
 msgid "Before record change"
-msgstr ""
+msgstr "Før endring av post"
 
 #. Mr9ns
 #: sf_form.xhp
@@ -16795,7 +16948,7 @@ msgctxt ""
 "par_id291612629836294\n"
 "help.text"
 msgid "No"
-msgstr ""
+msgstr "Nei"
 
 #. DwhZn
 #: sf_form.xhp
@@ -16804,7 +16957,7 @@ msgctxt ""
 "par_id62161262983683\n"
 "help.text"
 msgid "Fill parameters"
-msgstr ""
+msgstr "Fyllparameterar"
 
 #. DrMbU
 #: sf_form.xhp
@@ -16813,7 +16966,7 @@ msgctxt ""
 "par_id81612629836634\n"
 "help.text"
 msgid "No"
-msgstr ""
+msgstr "Nei"
 
 #. eAJAN
 #: sf_form.xhp
@@ -16822,7 +16975,7 @@ msgctxt ""
 "par_id881612629836744\n"
 "help.text"
 msgid "Prior to reset"
-msgstr ""
+msgstr "Før nullstilling"
 
 #. Y9d6z
 #: sf_form.xhp
@@ -16831,7 +16984,7 @@ msgctxt ""
 "par_id591612629836830\n"
 "help.text"
 msgid "No"
-msgstr ""
+msgstr "Nei"
 
 #. LKxEu
 #: sf_form.xhp
@@ -16840,7 +16993,7 @@ msgctxt ""
 "par_id161612629836775\n"
 "help.text"
 msgid "Before record action"
-msgstr ""
+msgstr "Før posthandlinga"
 
 #. Zyx2S
 #: sf_form.xhp
@@ -16849,7 +17002,7 @@ msgctxt ""
 "par_id891612629836630\n"
 "help.text"
 msgid "No"
-msgstr ""
+msgstr "Nei"
 
 #. 2HBeC
 #: sf_form.xhp
@@ -16858,7 +17011,7 @@ msgctxt ""
 "par_id461612629836679\n"
 "help.text"
 msgid "Before submitting"
-msgstr ""
+msgstr "Før sendinga"
 
 #. 2fJrZ
 #: sf_form.xhp
@@ -16867,7 +17020,7 @@ msgctxt ""
 "par_id131612629836291\n"
 "help.text"
 msgid "No"
-msgstr ""
+msgstr "Nei"
 
 #. BX4AH
 #: sf_form.xhp
@@ -16876,7 +17029,7 @@ msgctxt ""
 "par_id151612629836151\n"
 "help.text"
 msgid "Confirm deletion"
-msgstr ""
+msgstr "Stadfest sletting"
 
 #. W9izF
 #: sf_form.xhp
@@ -16885,7 +17038,7 @@ msgctxt ""
 "par_id211612629836725\n"
 "help.text"
 msgid "No"
-msgstr ""
+msgstr "Nei"
 
 #. pDvPB
 #: sf_form.xhp
@@ -16894,7 +17047,7 @@ msgctxt ""
 "par_id361612629836624\n"
 "help.text"
 msgid "After record change"
-msgstr ""
+msgstr "Etter endring av post"
 
 #. WprGG
 #: sf_form.xhp
@@ -16903,7 +17056,7 @@ msgctxt ""
 "par_id311612629836481\n"
 "help.text"
 msgid "No"
-msgstr ""
+msgstr "Nei"
 
 #. Xn2CS
 #: sf_form.xhp
@@ -16912,7 +17065,7 @@ msgctxt ""
 "par_id721612629836752\n"
 "help.text"
 msgid "Error occurred"
-msgstr ""
+msgstr "Det oppstod ein feil"
 
 #. B3zCy
 #: sf_form.xhp
@@ -16921,7 +17074,7 @@ msgctxt ""
 "par_id981612629836116\n"
 "help.text"
 msgid "No"
-msgstr ""
+msgstr "Nei"
 
 #. L3Ac6
 #: sf_form.xhp
@@ -16930,7 +17083,7 @@ msgctxt ""
 "par_id381612629836635\n"
 "help.text"
 msgid "When loading"
-msgstr ""
+msgstr "Ved lasting"
 
 #. 9Z9vv
 #: sf_form.xhp
@@ -16939,7 +17092,7 @@ msgctxt ""
 "par_id711612629836704\n"
 "help.text"
 msgid "No"
-msgstr ""
+msgstr "Nei"
 
 #. XL4Js
 #: sf_form.xhp
@@ -16948,7 +17101,7 @@ msgctxt ""
 "par_id35161262983642\n"
 "help.text"
 msgid "When reloading"
-msgstr ""
+msgstr "Ved lasting på nytt"
 
 #. P6DEi
 #: sf_form.xhp
@@ -16957,7 +17110,7 @@ msgctxt ""
 "par_id44161677878329\n"
 "help.text"
 msgid "No"
-msgstr ""
+msgstr "Nei"
 
 #. ywCsh
 #: sf_form.xhp
@@ -16966,7 +17119,7 @@ msgctxt ""
 "par_id661616778783899\n"
 "help.text"
 msgid "Before reloading"
-msgstr ""
+msgstr "Før lasting på nytt"
 
 #. eGnRj
 #: sf_form.xhp
@@ -16975,7 +17128,7 @@ msgctxt ""
 "par_id651616778529764\n"
 "help.text"
 msgid "No"
-msgstr ""
+msgstr "Nei"
 
 #. E6JUH
 #: sf_form.xhp
@@ -16984,7 +17137,7 @@ msgctxt ""
 "par_id311616778529570\n"
 "help.text"
 msgid "After resetting"
-msgstr ""
+msgstr "Etter tilbakestilling"
 
 #. VDAk5
 #: sf_form.xhp
@@ -16993,7 +17146,7 @@ msgctxt ""
 "par_id601616778529481\n"
 "help.text"
 msgid "No"
-msgstr ""
+msgstr "Nei"
 
 #. 99FfH
 #: sf_form.xhp
@@ -17002,7 +17155,7 @@ msgctxt ""
 "par_id351616778529352\n"
 "help.text"
 msgid "After record action"
-msgstr ""
+msgstr "Etter posthandling"
 
 #. CxndA
 #: sf_form.xhp
@@ -17011,7 +17164,7 @@ msgctxt ""
 "par_id711616778529292\n"
 "help.text"
 msgid "No"
-msgstr ""
+msgstr "Nei"
 
 #. DTDCq
 #: sf_form.xhp
@@ -17020,7 +17173,7 @@ msgctxt ""
 "par_id981616778529250\n"
 "help.text"
 msgid "When unloading"
-msgstr ""
+msgstr "Ved utlasting"
 
 #. iWroa
 #: sf_form.xhp
@@ -17029,7 +17182,7 @@ msgctxt ""
 "par_id521616778529932\n"
 "help.text"
 msgid "No"
-msgstr ""
+msgstr "Nei"
 
 #. pVPR9
 #: sf_form.xhp
@@ -17038,7 +17191,7 @@ msgctxt ""
 "par_id511616778529291\n"
 "help.text"
 msgid "Before unloading"
-msgstr ""
+msgstr "Før utlasting"
 
 #. EoCKE
 #: sf_form.xhp
@@ -17056,7 +17209,7 @@ msgctxt ""
 "par_id921606472825856\n"
 "help.text"
 msgid "List of methods in the Form service"
-msgstr ""
+msgstr "Liste over metodar i tenesta Form"
 
 #. KwDij
 #: sf_form.xhp
@@ -17065,7 +17218,7 @@ msgctxt ""
 "par_id871583933076448\n"
 "help.text"
 msgid "Sets the focus on the current <literal>Form</literal> instance. Returns <literal>True</literal> if focusing was successful."
-msgstr ""
+msgstr "Set fokus på det gjeldande førekomsten av <literal>Form</literal>. Returner <literal>Sann</literal> viss fokuseringa lukkast."
 
 #. 9qj5F
 #: sf_form.xhp
@@ -17074,7 +17227,7 @@ msgctxt ""
 "par_id81616858956290\n"
 "help.text"
 msgid "The behavior of the <literal>Activate</literal> method depends on the type of document where the form is located:"
-msgstr ""
+msgstr "Verkemåten til metoden <literal>Activate</literal> er avhengig av kva type dokument skjemaet er i:"
 
 #. YVgyr
 #: sf_form.xhp
@@ -17083,7 +17236,7 @@ msgctxt ""
 "par_id761616858967361\n"
 "help.text"
 msgid "<emph>In Writer documents:</emph> Sets the focus on that document."
-msgstr ""
+msgstr "<emph>I Writer-dokument</emph>: Set fokus på dokumentet."
 
 #. HKFTw
 #: sf_form.xhp
@@ -17092,7 +17245,7 @@ msgctxt ""
 "par_id931616859010103\n"
 "help.text"
 msgid "<emph>In Calc documents:</emph> Sets the focus on the sheet to which the form belongs."
-msgstr ""
+msgstr "<emph>I Calc-dokument</emph>: Set fokus på det arket som skjemaet er i."
 
 #. 6jx5G
 #: sf_form.xhp
@@ -17101,7 +17254,7 @@ msgctxt ""
 "par_id41616859019478\n"
 "help.text"
 msgid "<emph>In Base documents:</emph> Sets the focus on the <literal>FormDocument</literal> the <literal>Form</literal> refers to."
-msgstr ""
+msgstr "<emph>I Base-dokument</emph>: Set fokus på det <literal>FormDocument</literal> <literal>Form</literal> visar til."
 
 #. J5C7y
 #: sf_form.xhp
@@ -17119,7 +17272,7 @@ msgctxt ""
 "bas_id21618228468066\n"
 "help.text"
 msgid "'Gets hold of the form that will be activated"
-msgstr ""
+msgstr "' Mottek skjemaet som vert aktivert"
 
 #. M2Wks
 #: sf_form.xhp
@@ -17128,7 +17281,7 @@ msgctxt ""
 "bas_id201618228487565\n"
 "help.text"
 msgid "'Activates the form"
-msgstr ""
+msgstr "' Aktivere skjemaet"
 
 #. YHxMm
 #: sf_form.xhp
@@ -17146,7 +17299,7 @@ msgctxt ""
 "par_id501616860541195\n"
 "help.text"
 msgid "Closes the form document containing the actual <literal>Form</literal> instance. The <literal>Form</literal> instance is disposed."
-msgstr ""
+msgstr "Lukker det skjemadokumentet som inneheld den aktuelle førekomsten av <literal>Form</literal>. Førekomsten av <literal>Form</literal> vert sletta."
 
 #. CcCpD
 #: sf_form.xhp
@@ -17155,7 +17308,7 @@ msgctxt ""
 "par_id611618229004669\n"
 "help.text"
 msgid "This method only closes form documents located in Base documents. If the form is stored in a Writer or Calc document, calling <literal>CloseFormDocument</literal> will have no effect."
-msgstr ""
+msgstr "Denne metoden lukkar berre skjemadokument i Base-dokument. Viss skjemaet er lagra i eit Writer- eller Calc-dokument, er oppkall av <literal>CloseFormDocument</literal> utan verknad."
 
 #. a8CxQ
 #: sf_form.xhp
@@ -17164,7 +17317,7 @@ msgctxt ""
 "par_id161584541257982\n"
 "help.text"
 msgid "The value returned by the <literal>Controls</literal> method depends on the arguments provided:"
-msgstr ""
+msgstr "Verdien som vert returnert av metoden <literal>Controls</literal> er avhengig av dei gjevne argumenta:"
 
 #. YkyY2
 #: sf_form.xhp
@@ -17173,7 +17326,7 @@ msgctxt ""
 "par_id421598179770993\n"
 "help.text"
 msgid "If the method is called <emph>without arguments</emph>, then it returns the list of the controls contained in the form. Beware that the returned list does not contain any subform controls."
-msgstr ""
+msgstr "Viss metoden vert kalla opp <emph>utan argument</emph>, vil lista returnera lista over kontrollelemen som finst i skjemaet. Merk at lista ikkje inneheld kontrollelement for underskjema."
 
 #. SsiUX
 #: sf_form.xhp
@@ -17182,7 +17335,7 @@ msgctxt ""
 "par_id81598185229301\n"
 "help.text"
 msgid "If the optional <literal>ControlName</literal> argument is provided, the method returns a <literal>FormControl</literal> class instance referring to the specified control."
-msgstr ""
+msgstr "Viss det valfrie argumentet <literal>ControlName</literal> er gjeve, returnerer metoden ein klasse-førekomst av <literal>FormControl</literal> som visar til det gjevne kontrollelementet."
 
 #. 7CFJU
 #: sf_form.xhp
@@ -17191,7 +17344,7 @@ msgctxt ""
 "par_id1001584541257789\n"
 "help.text"
 msgid "<emph>controlname</emph> : A valid control name as a case-sensitive string. If absent, the list of control names is returned as a zero-based array."
-msgstr ""
+msgstr "<emph>controlname</emph>: Eit gyldig kontrollnamn som ein streng (som skil mellom små og store bokstavar). Viss denne manglar vert lista over kontrollnamn returnert som ei nullbasert matrise."
 
 #. unh4B
 #: sf_form.xhp
@@ -17200,7 +17353,7 @@ msgctxt ""
 "par_id291616861407907\n"
 "help.text"
 msgid "Return a <link href=\"text/sbasic/shared/03/sf_database.xhp\" name=\"DBService\"><literal>SFDatabases</literal>.<literal>Database</literal></link> instance giving access to the execution of SQL commands on the database the current form is connected to and/or that is stored in the current Base document."
-msgstr ""
+msgstr "Returnerer ein førekomst av <link href=\"text/sbasic/shared/03/sf_database.xhp\" name=\"DBService\"><literal>SFDatabases</literal>.<literal>Database</literal></link> som gjev tilgang til å utføra SQL-kommandoar på den databasen det gjeldande skjemaet er knytt til og/eller lagra i."
 
 #. fZRst
 #: sf_form.xhp
@@ -17209,7 +17362,7 @@ msgctxt ""
 "par_id991616861417207\n"
 "help.text"
 msgid "Each form has its own database connection, except in Base documents where they all share the same connection."
-msgstr ""
+msgstr "Kvart skjema har si eiga databasetilkopling, bortsett frå i Base-dokument der alle deler same tilkoplinga."
 
 #. wFSWb
 #: sf_form.xhp
@@ -17218,7 +17371,7 @@ msgctxt ""
 "par_id701616861134906\n"
 "help.text"
 msgid "<emph>user, password</emph>: The login optional parameters (Default = \"\")."
-msgstr ""
+msgstr "<emph>user, password</emph>: Dei valfrie parameterane for pålogging (Standard = \"\")."
 
 #. 83Jju
 #: sf_form.xhp
@@ -17227,7 +17380,7 @@ msgctxt ""
 "par_id771616861842867\n"
 "help.text"
 msgid "The form cursor is positioned on the first record. Returns <literal>True</literal> if successful."
-msgstr ""
+msgstr "Skjemamarkøren er plassert på den første posten. Returnerer <literal>Sann</literal> viss det lukkast."
 
 #. rapRE
 #: sf_form.xhp
@@ -17236,7 +17389,7 @@ msgctxt ""
 "par_id331616863143187\n"
 "help.text"
 msgid "The form cursor is positioned on the last record. Returns <literal>True</literal> if successful."
-msgstr ""
+msgstr "Skjemamarkøren er plassert på den siste posten. Returnerer <literal>Sann</literal> viss det lukkast."
 
 #. HZELb
 #: sf_form.xhp
@@ -17245,7 +17398,7 @@ msgctxt ""
 "par_id361616863143954\n"
 "help.text"
 msgid "The form cursor is positioned on the new record area. Returns <literal>True</literal> if successful."
-msgstr ""
+msgstr "Skjemamarkøren er plassert på området for ny post. Returnerer <literal>Sann</literal> viss det lukkast."
 
 #. 2QwcR
 #: sf_form.xhp
@@ -17254,7 +17407,7 @@ msgctxt ""
 "par_id541616863143461\n"
 "help.text"
 msgid "The form cursor is positioned on the next record. Returns <literal>True</literal> if successful."
-msgstr ""
+msgstr "Skjemamarkøren er plassert på den neste posten. Returnerer <literal>Sann</literal> viss det lukkast."
 
 #. a2gGn
 #: sf_form.xhp
@@ -17263,7 +17416,7 @@ msgctxt ""
 "par_id271616863582607\n"
 "help.text"
 msgid "<emph>offset</emph>: The number of records to go forward (Default = 1)."
-msgstr ""
+msgstr "<emph>offset</emph>: Talet på postar som du skal gå framover (standard = 1)."
 
 #. e6huC
 #: sf_form.xhp
@@ -17272,7 +17425,7 @@ msgctxt ""
 "par_id616168637945\n"
 "help.text"
 msgid "The form cursor is positioned on the previous record. Returns <literal>True</literal> if successful."
-msgstr ""
+msgstr "Skjemamarkøren er plassert på den førre posten. Returnerer <literal>Sann</literal> viss det lukkast."
 
 #. tAnVw
 #: sf_form.xhp
@@ -17281,7 +17434,7 @@ msgctxt ""
 "par_id751616863794125\n"
 "help.text"
 msgid "<emph>offset</emph>: The number of records to go backwards (Default = 1)."
-msgstr ""
+msgstr "<emph>offset</emph>: Talet på postar som du skal gå bakover (standard = 1)."
 
 #. Kp4Wo
 #: sf_form.xhp
@@ -17290,7 +17443,7 @@ msgctxt ""
 "par_id811616864216529\n"
 "help.text"
 msgid "Reloads the current data from the database and refreshes the form. The cursor is positioned on the first record. Returns <literal>True</literal> if successful."
-msgstr ""
+msgstr "Lastar inn gjeldande data frå databasen på nytt og oppdaterer skjemaet. Markøren er plassert på den første posten. Returnerer <literal>Sann</literal> viss det lukkast."
 
 #. 5gBGr
 #: sf_form.xhp
@@ -17299,7 +17452,7 @@ msgctxt ""
 "par_id891616864510614\n"
 "help.text"
 msgid "The value returned by the <literal>Subforms</literal> method depends on the arguments provided:"
-msgstr ""
+msgstr "Verdien som vert returnert av metoden <literal>Subforms</literal> avhenger av dei gjevne argumenta:"
 
 #. 4yG2j
 #: sf_form.xhp
@@ -17308,7 +17461,7 @@ msgctxt ""
 "par_id951616864510585\n"
 "help.text"
 msgid "If the method is called <emph>without any arguments</emph>, then it returns the list of subforms contained in the current form or subform instance."
-msgstr ""
+msgstr "Viss metoden som er kalla <emph>utan argument</emph> vert kalla opp, returnerer han lista over underskjema i det gjeldande skjemaet eller i eit underskjema."
 
 #. AD3Q6
 #: sf_form.xhp
@@ -17317,7 +17470,7 @@ msgctxt ""
 "par_id591616864510445\n"
 "help.text"
 msgid "If the optional <literal>subform</literal> argument is provided, the method returns a new <literal>SFDocuments</literal>.<literal>Form</literal> instance based on the specified form/subform name or index."
-msgstr ""
+msgstr "Viss det valfrie argumentet <literal>subform</literal> er oppgjeve, returnerer metoden eit nyt eksemplar av <literal>SFDocuments</literal>.<literal>Form</literal> basert på namnet på eller indeksen til det spesifiserte skjemaet/underskjemaet."
 
 #. GCRsS
 #: sf_form.xhp
@@ -17326,7 +17479,7 @@ msgctxt ""
 "par_id341616864510747\n"
 "help.text"
 msgid "<emph>subform</emph>: A subform stored in the current <literal>Form</literal> class instance given by its name or index."
-msgstr ""
+msgstr "<emph>subform</emph>: Eit underskjema lagra i den gjeldande klasseførekomsten <literal>Form</literal> gjeve ved namnet eller indeksen."
 
 #. uKm6R
 #: sf_form.xhp
@@ -17335,7 +17488,7 @@ msgctxt ""
 "par_id211618230389251\n"
 "help.text"
 msgid "When this argument is absent, the method returns a list of available subforms as a zero-based array. If the form has a single subform, you can set <literal>subform = 0</literal> to get access to it."
-msgstr ""
+msgstr "Når dette argumentet manglar, returnerer metoden ei liste over tilgjengelege underskjema som ei null-basert matrise. Viss skjemaet har eitt enkelt underskjema, kan du setja <literal>subform = 0</literal> for å få tilgang til det."
 
 #. CfGgB
 #: sf_formcontrol.xhp
@@ -17344,7 +17497,7 @@ msgctxt ""
 "tit\n"
 "help.text"
 msgid "SFDocuments.FormControl service"
-msgstr ""
+msgstr "Tenesta SFDocuments.FormControl"
 
 #. vND8Z
 #: sf_formcontrol.xhp
@@ -17353,7 +17506,7 @@ msgctxt ""
 "bm_id781582391760253\n"
 "help.text"
 msgid "<variable id=\"FormControlService\"><link href=\"text/sbasic/shared/03/sf_formcontrol.xhp\" name=\"SFDocuments.FormControl service\"><literal>SFDocuments</literal>.<literal>FormControl</literal> service</link></variable>"
-msgstr ""
+msgstr "<variable id=\"FormControlService\"><link href=\"text/sbasic/shared/03/sf_formcontrol.xhp\" name=\"SFDocuments.FormControl service\"> Teenesta <literal>SFDocuments</literal>.<literal>FormControl</literal></link></variable>"
 
 #. XFkrG
 #: sf_formcontrol.xhp
@@ -17362,7 +17515,7 @@ msgctxt ""
 "par_id931583589764919\n"
 "help.text"
 msgid "The <literal>FormControl</literal> service provides access to the controls that belong to a form, a subform or a table control of a <literal>FormDocument</literal>. Each instance of the <literal>FormControl</literal> service refers to a single control in the form. This service allows users to:"
-msgstr ""
+msgstr "Tenesta <literal>FormControl</literal> gjev tilgang til kontrollane knytte til eit skjema, underskjema eller ein tabellkontroll for eit <literal>FormDocument</literal>. Kvar førekomst av <literal>FormControl</literal>-tenesta refererer til eitt enkelt kontrollelement i skjemaet. Denne tenesta tillet brukarane å:"
 
 #. irNFC
 #: sf_formcontrol.xhp
@@ -17371,7 +17524,7 @@ msgctxt ""
 "par_id451618771561326\n"
 "help.text"
 msgid "Get and set the properties of the control represented by the <literal>FormControl</literal> instance."
-msgstr ""
+msgstr "Finn og set eigenskapane for kontrollelementet representert av førekomsten <literal>FormControl</literal>."
 
 #. S5aH9
 #: sf_formcontrol.xhp
@@ -17380,7 +17533,7 @@ msgctxt ""
 "par_id601618771565183\n"
 "help.text"
 msgid "Access the current value displayed by the control."
-msgstr ""
+msgstr "Få tilgang til den gjeldande verdien vist av kontrollelementet."
 
 #. P5xzV
 #: sf_formcontrol.xhp
@@ -17389,7 +17542,7 @@ msgctxt ""
 "par_id981618771567951\n"
 "help.text"
 msgid "Set the focus on the desired control."
-msgstr ""
+msgstr "Set fokus på det ønskte kontrollelementet."
 
 #. LUDRM
 #: sf_formcontrol.xhp
@@ -17398,7 +17551,7 @@ msgctxt ""
 "par_id301616939922857\n"
 "help.text"
 msgid "To use the <literal>FormControl</literal> service in a particular form, subform or table control, all controls must have unique names."
-msgstr ""
+msgstr "For å bruka tenesta <literal>FormControl</literal> i eit bestemt skjema, underskjema eller ein bestemt tabellkontrol, må alle kontrollane ha eintydige namn."
 
 #. JMFEb
 #: sf_formcontrol.xhp
@@ -17407,7 +17560,7 @@ msgctxt ""
 "par_id541618771629112\n"
 "help.text"
 msgid "Radio buttons that share the same group name must also have unique control names."
-msgstr ""
+msgstr "Radioknappar som høyrer til same gruppa, må også ha eintydige kontrollnamn."
 
 #. mAwyv
 #: sf_formcontrol.xhp
@@ -17416,7 +17569,7 @@ msgctxt ""
 "par_id51618771641273\n"
 "help.text"
 msgid "The main purpose of the <literal>FormControl</literal> service is setting and getting the properties and values displayed by the controls in a form."
-msgstr ""
+msgstr "Hovudføremålet med tenesta <literal>FormControl</literal> er å setja og henta eigenskapar og verdiar viste av kontrollelement i eit skjema."
 
 #. K2Bgc
 #: sf_formcontrol.xhp
@@ -17426,6 +17579,8 @@ msgctxt ""
 "help.text"
 msgid "All controls have a <literal>Value</literal> property. However, its contents will vary according to the control type. For more information, read <link href=\"text/sbasic/shared/03/sf_formcontrol.xhp#hd_id81598540704978\" name=\"Value property\">The <literal>Value</literal> Property</link> below."
 msgstr ""
+"Alle kontrollelement har eigenskapen <literal>Value</literal>. Innhaldet vil variera etter kva type kontrollelementet er. Du finn meir om dette nedanfor under \n"
+"<link href=\"text/sbasic/shared/03/sf_formcontrol.xhp#hd_id81598540704978\" name=\"Value property\">eigenskapen <literal>Value</literal></link> ."
 
 #. kF29h
 #: sf_formcontrol.xhp
@@ -17434,7 +17589,7 @@ msgctxt ""
 "par_id881618771651907\n"
 "help.text"
 msgid "It is also possible to format the controls via the <literal>XControlModel</literal> and <literal>XControlView</literal> properties."
-msgstr ""
+msgstr "Det er også mogleg å formatera kontrollelementa gjennom eigenskapane <literal>XControlModel</literal> og <literal>XControlView</literal>."
 
 #. WEST9
 #: sf_formcontrol.xhp
@@ -17443,7 +17598,7 @@ msgctxt ""
 "par_id891598188164936\n"
 "help.text"
 msgid "The <literal>SFDocuments.FormControl</literal> service is closely related to the <link href=\"text/sbasic/shared/03/sf_form.xhp\" name=\"Form service\"><literal>SFDocuments.Form</literal></link> service."
-msgstr ""
+msgstr "Tenesta <literal>SFDialogs.FormControl</literal> er i nær slekt med tenesta <link href=\"text/sbasic/shared/03/sf_form.xhp\" name=\"Form service\"><literal>SFDocuments.Form</literal></link>."
 
 #. rUEuw
 #: sf_formcontrol.xhp
@@ -17470,7 +17625,7 @@ msgctxt ""
 "par_id361598174756160\n"
 "help.text"
 msgid "The <literal>FormControl</literal> service is invoked from an existing <literal>Form</literal> service instance through its <literal>Controls</literal> method."
-msgstr ""
+msgstr "Tenesta <literal>FormControl</literal> vert kalla opp frå ein eksisterande tenesteførekomst av <literal>Form</literal> gjennom metoden <literal>Controls</literal>."
 
 #. 56bE7
 #: sf_formcontrol.xhp
@@ -17479,7 +17634,7 @@ msgctxt ""
 "pyc_id721622556808773\n"
 "help.text"
 msgid "control.Value = 'Current Time = ' + strftime(\"%a, %d %b %Y %H:%M:%S\", localtime())"
-msgstr ""
+msgstr "control.Value = 'Current Time = ' + strftime(\"%a, %d %b %Y %H:%M:%S\", localtime())"
 
 #. FaP92
 #: sf_formcontrol.xhp
@@ -17488,7 +17643,7 @@ msgctxt ""
 "par_id781618772761258\n"
 "help.text"
 msgid "To learn more about how to open a <literal>FormDocument</literal> and get access to its forms, refer to the <link href=\"text/sbasic/shared/03/sf_form.xhp\" name=\"Form service\">SFDocuments.Form</link> service help page."
-msgstr ""
+msgstr "Viss du vil læra meir om korleis opna eit <literal>FormDocument</literal> og få tilgang til skjemaa der, kan du sjå i hjelpsida for tenesta <link href=\"text/sbasic/shared/03/sf_form.xhp\" name=\"Form service\">SFDocuments.Form</link>."
 
 #. qeXCN
 #: sf_formcontrol.xhp
@@ -17497,7 +17652,7 @@ msgctxt ""
 "par_id951598174966322\n"
 "help.text"
 msgid "Alternatively a <literal>FormControl</literal> instance can be retrieved via the <literal>SFDocuments.FormEvent</literal> service, which returns the <literal>SFDocuments.FormControl</literal> class instance that triggered the event."
-msgstr ""
+msgstr "Alternativt kan ein førekomst av <literal>FormControl</literal> hentast gjennom tenesta <literal>SFDocuments.FormEvent</literal> som returnerer klassehendinga <literal>SFDocuments.FormControl</literal> som utløyste hendinga."
 
 #. bSfxy
 #: sf_formcontrol.xhp
@@ -17506,7 +17661,7 @@ msgctxt ""
 "bas_id801598175242937\n"
 "help.text"
 msgid "' oControl now represents the instance of the FormControl class that triggered the current event"
-msgstr ""
+msgstr "' oControl representerer no førekomsten av klassen FormControl, som utløyste den gjeldande hendinga"
 
 #. EgCtB
 #: sf_formcontrol.xhp
@@ -17515,7 +17670,7 @@ msgctxt ""
 "par_id251598176312571\n"
 "help.text"
 msgid "Note that in previous examples, the prefix <literal>\"SFDocuments.\"</literal> may be omitted."
-msgstr ""
+msgstr "Merk at i dei tidlegare eksempla kan prefikset <literal>\"SFDocuments.\"</literal> sløyfast."
 
 #. 7gE8Y
 #: sf_formcontrol.xhp
@@ -17524,7 +17679,7 @@ msgctxt ""
 "par_id951618773412097\n"
 "help.text"
 msgid "The <literal>FormEvent</literal> service is used exclusively to create instances of the <literal>SFDocuments.Form</literal> and <literal>SFDocuments.FormControl</literal> services when a form or control event takes place."
-msgstr ""
+msgstr "Tenesta <literal>FormEvent</literal> vert brukt berre til å laga førekomstar av tenestene <literal>SFDocuments.Form</literal> og <literal>SFDocuments.FormControl</literal> når når det dukkar opp ei skjema- eller kontrollhending."
 
 #. AppFj
 #: sf_formcontrol.xhp
@@ -17533,7 +17688,7 @@ msgctxt ""
 "hd_id71598455687512\n"
 "help.text"
 msgid "Control types"
-msgstr ""
+msgstr "Kontrollelementtypar"
 
 #. ezcW8
 #: sf_formcontrol.xhp
@@ -17542,7 +17697,7 @@ msgctxt ""
 "par_id851598455863395\n"
 "help.text"
 msgid "The <literal>FormControl</literal> service is available for the following control types:"
-msgstr ""
+msgstr "Tenesta <literal>FormControl</literal> er tilgjengeleg for desse kontrollelementtypane:"
 
 #. BESBv
 #: sf_formcontrol.xhp
@@ -17551,7 +17706,7 @@ msgctxt ""
 "hd_id651583668365757\n"
 "help.text"
 msgid "Properties"
-msgstr ""
+msgstr "Eigenskapar"
 
 #. VrBfK
 #: sf_formcontrol.xhp
@@ -17560,7 +17715,7 @@ msgctxt ""
 "par_id871583668386455\n"
 "help.text"
 msgid "Name"
-msgstr ""
+msgstr "Namn"
 
 #. hDr9G
 #: sf_formcontrol.xhp
@@ -17578,7 +17733,7 @@ msgctxt ""
 "par_id271583668474014\n"
 "help.text"
 msgid "Type"
-msgstr ""
+msgstr "Type"
 
 #. dXwGN
 #: sf_formcontrol.xhp
@@ -17587,7 +17742,7 @@ msgctxt ""
 "par_id291598538799794\n"
 "help.text"
 msgid "Applicable to"
-msgstr ""
+msgstr "Gjeld for"
 
 #. bEQWc
 #: sf_formcontrol.xhp
@@ -17605,7 +17760,7 @@ msgctxt ""
 "par_id371583668519172\n"
 "help.text"
 msgid "No"
-msgstr ""
+msgstr "Nei"
 
 #. PszFp
 #: sf_formcontrol.xhp
@@ -17614,7 +17769,7 @@ msgctxt ""
 "par_id771583668386455\n"
 "help.text"
 msgid "Specifies the action triggered when the button is clicked. Accepted values are: <literal>none</literal>, <literal>submitForm</literal>, <literal>resetForm</literal>, <literal>refreshForm</literal>, <literal>moveToFirst</literal>, <literal>moveToLast</literal>, <literal>moveToNext</literal>, <literal>moveToPrev</literal>, <literal>saveRecord</literal>, <literal>moveToNew</literal>, <literal>deleteRecord</literal>, <literal>undoRecord</literal>."
-msgstr ""
+msgstr "Spesifiserer handlinga som vert utløyst når det vert trykt på knappen. Godkjente verdiar er: <literal>none</literal>, <literal>submitForm</literal>, <literal>resetForm</literal>, <literal>refreshForm</literal>, <literal>moveToFirst</literal>, <literal>moveToLast</literal>, <literal>moveToNext</literal>, <literal>moveToPrev</literal>, <literal>saveRecord</literal>, <literal>moveToNew</literal>, <literal>deleteRecord</literal>, <literal>undoRecord</literal>."
 
 #. fmzNT
 #: sf_formcontrol.xhp
@@ -17623,7 +17778,7 @@ msgctxt ""
 "par_id541583839708548\n"
 "help.text"
 msgid "No"
-msgstr ""
+msgstr "Nei"
 
 #. 62Bud
 #: sf_formcontrol.xhp
@@ -17632,7 +17787,7 @@ msgctxt ""
 "par_id731583839708412\n"
 "help.text"
 msgid "Specifies the text displayed by the control."
-msgstr ""
+msgstr "Spesifiserer teksten som vert vist av kontrollelementet."
 
 #. nFFDY
 #: sf_formcontrol.xhp
@@ -17641,7 +17796,7 @@ msgctxt ""
 "par_id411616942306677\n"
 "help.text"
 msgid "Yes"
-msgstr ""
+msgstr "Ja"
 
 #. 8H6BR
 #: sf_formcontrol.xhp
@@ -17650,7 +17805,7 @@ msgctxt ""
 "par_id461616942306745\n"
 "help.text"
 msgid "Specifies the rowset field mapped onto the current control."
-msgstr ""
+msgstr "Spesifiserer «rowset»-feltet knytt til den gjeldande kontrollen."
 
 #. AJUH6
 #: sf_formcontrol.xhp
@@ -17659,7 +17814,7 @@ msgctxt ""
 "par_id761584027709516\n"
 "help.text"
 msgid "Yes"
-msgstr ""
+msgstr "Ja"
 
 #. Enqxp
 #: sf_formcontrol.xhp
@@ -17668,7 +17823,7 @@ msgctxt ""
 "par_id261598539120502\n"
 "help.text"
 msgid "All"
-msgstr ""
+msgstr "Alt"
 
 #. FsCJK
 #: sf_formcontrol.xhp
@@ -17677,7 +17832,7 @@ msgctxt ""
 "par_id971584027709752\n"
 "help.text"
 msgid "One of the control types listed above."
-msgstr ""
+msgstr "Ein av kontrollelementtypane lista opp ovanfor."
 
 #. DH84k
 #: sf_formcontrol.xhp
@@ -17686,7 +17841,7 @@ msgctxt ""
 "par_id31583839767743\n"
 "help.text"
 msgid "No"
-msgstr ""
+msgstr "Nei"
 
 #. pRrwC
 #: sf_formcontrol.xhp
@@ -17695,7 +17850,7 @@ msgctxt ""
 "par_id111583839767195\n"
 "help.text"
 msgid "Specifies whether a command button is the default OK button."
-msgstr ""
+msgstr "Spesifiserer om ein av kommandoknappane er standardknappen «OK»."
 
 #. 2dP2A
 #: sf_formcontrol.xhp
@@ -17704,7 +17859,7 @@ msgctxt ""
 "par_id241616942739459\n"
 "help.text"
 msgid "No"
-msgstr ""
+msgstr "Nei"
 
 #. Sukx9
 #: sf_formcontrol.xhp
@@ -21328,6 +21483,33 @@ msgctxt ""
 msgid "Returns a zero-based array of strings containing the internal IDs of all installed extensions."
 msgstr ""
 
+#. HE2VZ
+#: sf_platform.xhp
+msgctxt ""
+"sf_platform.xhp\n"
+"par_id561633021747209\n"
+"help.text"
+msgid "Yes"
+msgstr ""
+
+#. MgENM
+#: sf_platform.xhp
+msgctxt ""
+"sf_platform.xhp\n"
+"par_id201633021748322\n"
+"help.text"
+msgid "String array"
+msgstr ""
+
+#. bhBD2
+#: sf_platform.xhp
+msgctxt ""
+"sf_platform.xhp\n"
+"par_id831633021749118\n"
+"help.text"
+msgid "Returns a zero-based unsorted array of strings containing the available document import and export filter names."
+msgstr ""
+
 #. 9aGdF
 #: sf_platform.xhp
 msgctxt ""
@@ -22226,6 +22408,1158 @@ msgctxt ""
 "par_id51636726671698\n"
 "help.text"
 msgid "In the examples below, a popup menu is created and the item's name is returned because the <literal>returnid</literal> argument is set to <literal>False</literal>."
+msgstr ""
+
+#. b8bDr
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"tit\n"
+"help.text"
+msgid "ScriptForge.Region service"
+msgstr ""
+
+#. SYtNX
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"bm_id681600788076499\n"
+"help.text"
+msgid "<variable id=\"RegionService\"><link href=\"text/sbasic/shared/03/sf_region.xhp\" name=\"Region service\"><literal>ScriptForge</literal>.<literal>Region</literal> service</link></variable>"
+msgstr ""
+
+#. w3WgP
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id181600788076612\n"
+"help.text"
+msgid "The <literal>Region</literal> service provides a collection of properties and methods to handle locale and region-related aspects of programming, such as:"
+msgstr ""
+
+#. TEk7a
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id301600788076785\n"
+"help.text"
+msgid "Accessing locale and region-dependent settings such as number formatting, currency and timezones."
+msgstr ""
+
+#. 2f7KC
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id1001600788076848\n"
+"help.text"
+msgid "Converting timezones and calculate Daylight Saving Time (DST) offsets."
+msgstr ""
+
+#. tqznj
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id67160078807676\n"
+"help.text"
+msgid "Transforming numbers into text in any supported language."
+msgstr ""
+
+#. 9nRv7
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"hd_id851656012844548\n"
+"help.text"
+msgid "Definitions"
+msgstr ""
+
+#. sGNu7
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"hd_id421656012886648\n"
+"help.text"
+msgid "Locale or Region"
+msgstr ""
+
+#. FiW7z
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id191656012908838\n"
+"help.text"
+msgid "A string combining a language and a country in the format \"la-CO\". The language part is expressed with 2 or 3 lowercase characters followed by a dash and 2 uppercase characters representing the country."
+msgstr ""
+
+#. GQEGW
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id431656013368415\n"
+"help.text"
+msgid "For instance, \"en-US\" corresponds to the English language in the United States; \"fr-BE\" corresponds to the French language in Belgium, and so forth."
+msgstr ""
+
+#. CQYAX
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id981656013623018\n"
+"help.text"
+msgid "On some situations the full locale is not required and only the language or country may be specified."
+msgstr ""
+
+#. 4qFTD
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id261656013132204\n"
+"help.text"
+msgid "Most properties and methods accept a locale as argument. If no locale is specified, then the user-interface locale is used, which is defined in the <link href=\"text/sbasic/shared/03/sf_platform.xhp#bm_id111614901524769\" name=\"OfficeLocale_link\"><literal>OfficeLocale</literal></link> property of the <literal>Platform</literal> service."
+msgstr ""
+
+#. 6ToTC
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"hd_id51656013825718\n"
+"help.text"
+msgid "Timezone"
+msgstr ""
+
+#. pV5MS
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id541656013854150\n"
+"help.text"
+msgid "A string in the format \"Region/City\" such as \"Europe/Berlin\", or a timezone ID such as \"UTC\" or \"GMT-8:00\". Refer to the wiki page <link href=\"https://wikipedia.org/wiki/List_of_tz_database_time_zones\" name=\"TimeZones_List\">List of tz database and timezones</link> for a list of possible timezone names and IDs."
+msgstr ""
+
+#. exa3B
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id981656078937577\n"
+"help.text"
+msgid "Providing an invalid timezone string to any of the methods in the <literal>Region</literal> service will not result in a runtime error. Instead, methods as <literal>UTCDateTime</literal> and <literal>UTCNow</literal> will return the current operating system date and time."
+msgstr ""
+
+#. 7GTLU
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id611656014040098\n"
+"help.text"
+msgid "The time offset between the timezone and the Greenwich Meridian Time (GMT) is expressed in minutes."
+msgstr ""
+
+#. ottwV
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id121656014053670\n"
+"help.text"
+msgid "The Daylight Saving Time (DST) is an additional offset."
+msgstr ""
+
+#. yXHrp
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id591656014140929\n"
+"help.text"
+msgid "The timezone and DST offsets may be positive or negative."
+msgstr ""
+
+#. EyNvN
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"hd_id281600788076359\n"
+"help.text"
+msgid "Service invocation"
+msgstr ""
+
+#. F9Wnj
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id141609955500101\n"
+"help.text"
+msgid "Before using the <literal>Region</literal> service the <literal>ScriptForge</literal> library needs to be loaded or imported:"
+msgstr ""
+
+#. 7AXFZ
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id321614902851541\n"
+"help.text"
+msgid "The examples below in Basic and Python instantiate the <literal>Region</literal> service and access the <literal>Country</literal> property."
+msgstr ""
+
+#. 69CF7
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"bas_id791600788431935\n"
+"help.text"
+msgid "MsgBox oRegion.Country(\"en-US\") ' United States"
+msgstr ""
+
+#. FDNKL
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"hd_id711600788076834\n"
+"help.text"
+msgid "Properties"
+msgstr ""
+
+#. VEB3D
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id601656018689690\n"
+"help.text"
+msgid "All properties listed below accept a <literal>locale</literal> argument, provided as a string. Some properties require this argument to be in the format \"la-CO\", whereas others may receive \"la\" or \"CO\" as input."
+msgstr ""
+
+#. vzB4T
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id461600788076917\n"
+"help.text"
+msgid "Name"
+msgstr ""
+
+#. ay9iH
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id221600788076591\n"
+"help.text"
+msgid "Readonly"
+msgstr ""
+
+#. rBUEm
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id761600788076328\n"
+"help.text"
+msgid "Type"
+msgstr ""
+
+#. FpD5h
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id131656330679679\n"
+"help.text"
+msgid "Locale"
+msgstr ""
+
+#. FxnFK
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id67160078807636\n"
+"help.text"
+msgid "Description"
+msgstr ""
+
+#. 4Ss2G
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id311600788076756\n"
+"help.text"
+msgid "Yes"
+msgstr ""
+
+#. ExbtG
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id441600788076826\n"
+"help.text"
+msgid "Returns the country name in English corresponding to a given region."
+msgstr ""
+
+#. FN4XC
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id49160078807654\n"
+"help.text"
+msgid "Yes"
+msgstr ""
+
+#. vpDwN
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id81600788076419\n"
+"help.text"
+msgid "Returns the ISO 4217 currency code of the specified region."
+msgstr ""
+
+#. Aqcuy
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id711600788076534\n"
+"help.text"
+msgid "Yes"
+msgstr ""
+
+#. 6cgk7
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id911600788076842\n"
+"help.text"
+msgid "String array"
+msgstr ""
+
+#. Jhkc3
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id541600788076645\n"
+"help.text"
+msgid "Returns a zero-based array of strings containing the date acceptance patterns for the specified region."
+msgstr ""
+
+#. T4sUQ
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id891600788076190\n"
+"help.text"
+msgid "Yes"
+msgstr ""
+
+#. vAJYH
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id91600788076674\n"
+"help.text"
+msgid "Returns the date separator used in the given region."
+msgstr ""
+
+#. QKyGp
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id561633021747014\n"
+"help.text"
+msgid "Yes"
+msgstr ""
+
+#. jSVY8
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id201633021748566\n"
+"help.text"
+msgid "String array"
+msgstr ""
+
+#. CnTuU
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id831633021745014\n"
+"help.text"
+msgid "Returns a zero-based array of strings containing the list of abbreviated weekday names in the specified language."
+msgstr ""
+
+#. jRUnx
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id561633021747209\n"
+"help.text"
+msgid "Yes"
+msgstr ""
+
+#. CGeKU
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id201633021748322\n"
+"help.text"
+msgid "String array"
+msgstr ""
+
+#. tjGhP
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id831633021748865\n"
+"help.text"
+msgid "Returns a zero-based array of strings containing the list of weekday names in the specified language."
+msgstr ""
+
+#. gVevH
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id561633021747903\n"
+"help.text"
+msgid "Yes"
+msgstr ""
+
+#. hL4sb
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id201633021748455\n"
+"help.text"
+msgid "String array"
+msgstr ""
+
+#. GHdGz
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id831633021747711\n"
+"help.text"
+msgid "Returns a zero-based array of strings containing the list of the initials of weekday names in the specified language."
+msgstr ""
+
+#. TFzKG
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id561633021748013\n"
+"help.text"
+msgid "Yes"
+msgstr ""
+
+#. CWLzi
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id831633021749297\n"
+"help.text"
+msgid "Returns the decimal separator used in numbers in the specified region."
+msgstr ""
+
+#. pqWDC
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id561633021743188\n"
+"help.text"
+msgid "Yes"
+msgstr ""
+
+#. droDW
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id831633021749018\n"
+"help.text"
+msgid "Returns the name of the language, in English, of the specified region."
+msgstr ""
+
+#. ojXGP
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id391600788076253\n"
+"help.text"
+msgid "Yes"
+msgstr ""
+
+#. a4SKv
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id21600788076541\n"
+"help.text"
+msgid "Returns the list separator used in the specified region."
+msgstr ""
+
+#. vUwhJ
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id561633021706513\n"
+"help.text"
+msgid "Yes"
+msgstr ""
+
+#. 79WHE
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id201633021746335\n"
+"help.text"
+msgid "String array"
+msgstr ""
+
+#. Dz2X6
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id831633021741117\n"
+"help.text"
+msgid "Returns a zero-based array of strings containing the list of abbreviated month names in the specified language."
+msgstr ""
+
+#. NvQaB
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id211600788076138\n"
+"help.text"
+msgid "Yes"
+msgstr ""
+
+#. ZMsz8
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id221600788076518\n"
+"help.text"
+msgid "String array"
+msgstr ""
+
+#. EbAXk
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id521600788076371\n"
+"help.text"
+msgid "Returns a zero-based array of strings containing the list of month names in the specified language."
+msgstr ""
+
+#. GeqFt
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id21600788076758\n"
+"help.text"
+msgid "Yes"
+msgstr ""
+
+#. wGD4y
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id871600788076196\n"
+"help.text"
+msgid "String array"
+msgstr ""
+
+#. RisPb
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id781600788076694\n"
+"help.text"
+msgid "Returns a zero-based array of strings containing the list of the initials of month names in the specified language."
+msgstr ""
+
+#. DBDyW
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id261600788076841\n"
+"help.text"
+msgid "Yes"
+msgstr ""
+
+#. fLZD2
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id116007880767507\n"
+"help.text"
+msgid "Returns the thousands separator used in numbers in the specified region."
+msgstr ""
+
+#. AUNfp
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id531600789141795\n"
+"help.text"
+msgid "Yes"
+msgstr ""
+
+#. MjrCr
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id301600789141619\n"
+"help.text"
+msgid "Returns the separator used to format times in the specified region."
+msgstr ""
+
+#. Bog4G
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id651606319520519\n"
+"help.text"
+msgid "List of Methods in the Region Service"
+msgstr ""
+
+#. szpDY
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id71621894830071\n"
+"help.text"
+msgid "Computes the additional Daylight Saving Time (DST) offset, in minutes, that is applicable to a given region and timezone."
+msgstr ""
+
+#. CbDHo
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id401621896675880\n"
+"help.text"
+msgid "<emph>localdatetime</emph>: the local date and time expressed as a date."
+msgstr ""
+
+#. cA2tD
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id401621896675125\n"
+"help.text"
+msgid "<emph>timezone</emph>: the timezone for which the offset will be calculated."
+msgstr ""
+
+#. w5gKK
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id401621896675963\n"
+"help.text"
+msgid "<emph>locale</emph>: the locale specifying the country for which the offset will be calculated, given either in \"la-CO\" or \"CO\" formats. The default value is the locale defined in the <link href=\"text/sbasic/shared/03/sf_platform.xhp#bm_id111614901524769\" name=\"OfficeLocale_link\"><literal>OfficeLocale</literal></link> property of the <literal>Platform</literal> service."
+msgstr ""
+
+#. cBF4y
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"bas_id531656022497519\n"
+"help.text"
+msgid "' Calculates the offset applicable in the \"America/Los_Angeles\" timezone"
+msgstr ""
+
+#. XYu4u
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"bas_id801656022498143\n"
+"help.text"
+msgid "offset = oRegion.DSTOffset(aDateTime, \"America/Los_Angeles\", \"US\") ' 60 (minutes)"
+msgstr ""
+
+#. CfiFK
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"bas_id831656022498543\n"
+"help.text"
+msgid "offset = oRegion.DSTOffset(aDateTime, \"America/Los_Angeles\", \"US\") ' 0 (minutes)"
+msgstr ""
+
+#. 4CkKJ
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"pyc_id871621898933281\n"
+"help.text"
+msgid "offset = oRegion.DSTOffset(aDateTime, \"America/Los_Angeles\", \"US\") ' 60 (minutes)"
+msgstr ""
+
+#. nkcRi
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"pyc_id871621898934141\n"
+"help.text"
+msgid "offset = oRegion.DSTOffset(aDateTime, \"America/Los_Angeles\", \"US\") ' 0 (minutes)"
+msgstr ""
+
+#. BbUgj
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id71621894832058\n"
+"help.text"
+msgid "Computes the local date and time from a UTC date and time."
+msgstr ""
+
+#. v4YSt
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id401621896674716\n"
+"help.text"
+msgid "<emph>utcdatetime</emph>: the UTC date and time, expressed using a date object."
+msgstr ""
+
+#. i63on
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id401621896675449\n"
+"help.text"
+msgid "<emph>timezone</emph>: the timezone for which the local time will be calculated."
+msgstr ""
+
+#. YWDWQ
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id401621896675193\n"
+"help.text"
+msgid "<emph>locale</emph>: the locale specifying the country for which the local time will be calculated, given either in \"la-CO\" or \"CO\" formats. The default value is the locale defined in the <link href=\"text/sbasic/shared/03/sf_platform.xhp#bm_id111614901524769\" name=\"OfficeLocale_link\"><literal>OfficeLocale</literal></link> property of the <literal>Platform</literal> service."
+msgstr ""
+
+#. 8UTFQ
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"bas_id201656022497017\n"
+"help.text"
+msgid "' June 6th, 2022 at 10:30:45 (used here as UTC time)"
+msgstr ""
+
+#. Hcjqt
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"bas_id531656022497121\n"
+"help.text"
+msgid "' Calculates local time in Sao Paulo, Brazil"
+msgstr ""
+
+#. yhKtd
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"bas_id601656022498318\n"
+"help.text"
+msgid "' June 6th, 2022 at 07:30:45"
+msgstr ""
+
+#. YJv72
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id71621894832089\n"
+"help.text"
+msgid "Converts numbers and monetary values into written text for any of the currently supported languages."
+msgstr ""
+
+#. qu8dt
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id971656026551328\n"
+"help.text"
+msgid "For a list of all supported languages visit the <link href=\"https://api.libreoffice.org/docs/idl/ref/interfacecom_1_1sun_1_1star_1_1linguistic2_1_1XNumberText.html\" name=\"XNumberText\">XNumberText Interface</link> API reference."
+msgstr ""
+
+#. xTUD6
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id401621896675306\n"
+"help.text"
+msgid "<emph>number</emph>: the number to be converted into written text. It can be provided either as a numeric type or as a string. When a string is provided, it can be preceded by a prefix informing how the numbers should be written. It is also possible to include ISO 4217 currency codes. See examples below for more information."
+msgstr ""
+
+#. eppdr
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id401621896675412\n"
+"help.text"
+msgid "<emph>locale</emph>: the locale defining the language into which the number will be converted to, given either in \"la-CO\" or \"la\" formats. The default value is the locale defined in the <link href=\"text/sbasic/shared/03/sf_platform.xhp#bm_id111614901524769\" name=\"OfficeLocale_link\"><literal>OfficeLocale</literal></link> property of the <literal>Platform</literal> service."
+msgstr ""
+
+#. QeBpA
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"bas_id301656027173020\n"
+"help.text"
+msgid "' Returns \"one hundred five\""
+msgstr ""
+
+#. 7xovc
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"bas_id531656022496631\n"
+"help.text"
+msgid "numText = oRegion.Number2Text(105, \"en-US\")"
+msgstr ""
+
+#. UGGvv
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"bas_id771656027217144\n"
+"help.text"
+msgid "' Returns: \"two point four two\""
+msgstr ""
+
+#. Xr7no
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"bas_id201656022493367\n"
+"help.text"
+msgid "numText = oRegion.Number2Text(2.42, \"en-US\")"
+msgstr ""
+
+#. 7hYbk
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"bas_id281656027262234\n"
+"help.text"
+msgid "' Returns: \"twenty-five euro and ten cents\" Notice the \"EUR\" currency symbol"
+msgstr ""
+
+#. DBPc8
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"bas_id201656022497171\n"
+"help.text"
+msgid "numText = oRegion.Number2Text(\"EUR 25.10\", \"en-US\")"
+msgstr ""
+
+#. pd3Fm
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"bas_id981656027330132\n"
+"help.text"
+msgid "' Returns: \"fifteenth\"; Notice the \"ordinal\" prefix"
+msgstr ""
+
+#. ggt2A
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"bas_id841656027330394\n"
+"help.text"
+msgid "numText = oRegion.Number2Text(\"ordinal 15\", \"en-US\")"
+msgstr ""
+
+#. YQCCF
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"pyc_id401656027481473\n"
+"help.text"
+msgid "numText = oRegion.Number2Text(105, \"en-US\")"
+msgstr ""
+
+#. FTGnF
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"pyc_id781656027481769\n"
+"help.text"
+msgid "numText = oRegion.Number2Text(2.42, \"en-US\")"
+msgstr ""
+
+#. RCDq5
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"pyc_id951656027482096\n"
+"help.text"
+msgid "numText = oRegion.Number2Text(\"EUR 25.10\", \"en-US\")"
+msgstr ""
+
+#. vtGFv
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"pyc_id231656027482425\n"
+"help.text"
+msgid "numText = oRegion.Number2Text(\"ordinal 15\", \"en-US\")"
+msgstr ""
+
+#. CHCJt
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id801656027524051\n"
+"help.text"
+msgid "To get a list of all supported prefixes in a given language, call <literal>Number2Text</literal> with the special \"help\" argument, as shown in the example below:"
+msgstr ""
+
+#. ZqfNT
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"bas_id181656027807107\n"
+"help.text"
+msgid "' Considering the \"en-US\" locale the message box will show the following text"
+msgstr ""
+
+#. hRef2
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"bas_id216560277123601\n"
+"help.text"
+msgid "' one, two, three"
+msgstr ""
+
+#. YMJ5N
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"bas_id361656027712711\n"
+"help.text"
+msgid "' ordinal: first, second, third"
+msgstr ""
+
+#. vhTrp
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"bas_id891656027712920\n"
+"help.text"
+msgid "' ordinal-number: 1st, 2nd, 3rd"
+msgstr ""
+
+#. YGCiN
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"bas_id611656027713104\n"
+"help.text"
+msgid "' year: nineteen ninety-nine, two thousand, two thousand one"
+msgstr ""
+
+#. vEMTZ
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"bas_id861656027713288\n"
+"help.text"
+msgid "' currency (for example, USD): two U.S. dollars and fifty cents"
+msgstr ""
+
+#. xYrSL
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"bas_id841656027713503\n"
+"help.text"
+msgid "' money USD: two and 50/100 U.S. dollars"
+msgstr ""
+
+#. RBkxp
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id781656027840633\n"
+"help.text"
+msgid "The first line in the message box does not have a prefix, which means that it is the standard format. The subsequent lines include the prefix and some examples of numbers using its format."
+msgstr ""
+
+#. WPApK
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id781656028528520\n"
+"help.text"
+msgid "Each language has its own set of supported prefixes."
+msgstr ""
+
+#. dShiA
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id71621894832117\n"
+"help.text"
+msgid "Returns the offset between GMT and the given timezone and locale, in minutes."
+msgstr ""
+
+#. xCAjE
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id401621896675018\n"
+"help.text"
+msgid "<emph>timezone</emph>: the timezone for which the offset to the GMT will be calculated."
+msgstr ""
+
+#. egZXu
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id401621896675691\n"
+"help.text"
+msgid "<emph>locale</emph>: the locale specifying the country for which the offset will be calculated, given either in \"la-CO\" or \"CO\" formats. The default value is the locale defined in the <link href=\"text/sbasic/shared/03/sf_platform.xhp#bm_id111614901524769\" name=\"OfficeLocale_link\"><literal>OfficeLocale</literal></link> property of the <literal>Platform</literal> service."
+msgstr ""
+
+#. JiFjE
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id71621894864217\n"
+"help.text"
+msgid "Returns the UTC date and time considering a given local date and time in a timezone."
+msgstr ""
+
+#. AK3nQ
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id401621896674748\n"
+"help.text"
+msgid "<emph>localdatetime</emph>: the local date and time in a specific timezone expressed as a date."
+msgstr ""
+
+#. hpxBF
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id401621896675739\n"
+"help.text"
+msgid "<emph>timezone</emph>: the timezone for which the <literal>localdatetime</literal> argument was given."
+msgstr ""
+
+#. aEuir
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id401621896675550\n"
+"help.text"
+msgid "<emph>locale</emph>: the locale specifying the country for which the <literal>localdatetime</literal> argument was given, expressed either in \"la-CO\" or \"CO\" formats. The default value is the locale defined in the <link href=\"text/sbasic/shared/03/sf_platform.xhp#bm_id111614901524769\" name=\"OfficeLocale_link\"><literal>OfficeLocale</literal></link> property of the <literal>Platform</literal> service."
+msgstr ""
+
+#. y3NSm
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"bas_id861656077547861\n"
+"help.text"
+msgid "' Date/Time in Berlin, June 23, 2022 at 14:30:00"
+msgstr ""
+
+#. HjSnk
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"bas_id731656077523173\n"
+"help.text"
+msgid "' The UTC date/time is June 23, 2022 at 12:30:00"
+msgstr ""
+
+#. RpFvL
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"pyc_id361656077667354\n"
+"help.text"
+msgid "import datetime"
+msgstr ""
+
+#. hgcCJ
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"pyc_id901656077667666\n"
+"help.text"
+msgid "localDT = datetime.datetime(2022, 6, 23, 14, 30, 0)"
+msgstr ""
+
+#. A7GXw
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"pyc_id521656077682826\n"
+"help.text"
+msgid "utcTime = oRegion.UTCDateTime(localDT, \"Europe/Berlin\", \"DE\")"
+msgstr ""
+
+#. tZoWt
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id71621894835287\n"
+"help.text"
+msgid "Returns the current UTC date and time, given a timezone and locale."
+msgstr ""
+
+#. zzSQA
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id491656078254442\n"
+"help.text"
+msgid "This method uses the current date and time of your operating system to calculate the UTC time."
+msgstr ""
+
+#. XxBE8
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id401621896673318\n"
+"help.text"
+msgid "<emph>timezone</emph>: the timezone for which the current UTC time will be calculated."
+msgstr ""
+
+#. FDJ5e
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id401621896674831\n"
+"help.text"
+msgid "<emph>locale</emph>: the locale specifying the country for which the current UTC time will be calculated, given either in \"la-CO\" or \"CO\" formats. The default value is the locale defined in the <link href=\"text/sbasic/shared/03/sf_platform.xhp#bm_id111614901524769\" name=\"OfficeLocale_link\"><literal>OfficeLocale</literal></link> property of the <literal>Platform</literal> service."
+msgstr ""
+
+#. FWSJp
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"bas_id861656078128374\n"
+"help.text"
+msgid "' Suppose the operating system time is June 23rd, 2022 at 10:42:00"
+msgstr ""
+
+#. CWY76
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"bas_id691656078180784\n"
+"help.text"
+msgid "' If the computer is in Europe/Berlin, then UTC time is June 23rd, 2022 at 08:42:00"
+msgstr ""
+
+#. NPVe5
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"pyc_id821656078645252\n"
+"help.text"
+msgid "utcTime = oRegion.UTCNow(\"Europe/Berlin\", \"DE\")"
 msgstr ""
 
 #. GpvmN
@@ -26793,6 +28127,78 @@ msgctxt ""
 msgid "The list of the currently open documents. Special windows are ignored. This list consists of a zero-based one dimensional array either of filenames (in SF_FileSystem.FileNaming notation) or of window titles for unsaved documents."
 msgstr ""
 
+#. 5oGpF
+#: sf_ui.xhp
+msgctxt ""
+"sf_ui.xhp\n"
+"par_id651587913266945\n"
+"help.text"
+msgid "Yes"
+msgstr ""
+
+#. 2RdP5
+#: sf_ui.xhp
+msgctxt ""
+"sf_ui.xhp\n"
+"par_id351587913266211\n"
+"help.text"
+msgid "Returns the height of the active window in pixels."
+msgstr ""
+
+#. AM4nR
+#: sf_ui.xhp
+msgctxt ""
+"sf_ui.xhp\n"
+"par_id651587913266645\n"
+"help.text"
+msgid "Yes"
+msgstr ""
+
+#. MmDG7
+#: sf_ui.xhp
+msgctxt ""
+"sf_ui.xhp\n"
+"par_id351587913266036\n"
+"help.text"
+msgid "Returns the width of the active window in pixels."
+msgstr ""
+
+#. uZMBs
+#: sf_ui.xhp
+msgctxt ""
+"sf_ui.xhp\n"
+"par_id651587913266312\n"
+"help.text"
+msgid "Yes"
+msgstr ""
+
+#. 9AKCg
+#: sf_ui.xhp
+msgctxt ""
+"sf_ui.xhp\n"
+"par_id351587913266296\n"
+"help.text"
+msgid "Returns the X coordinate of the active window, which is the distance to the left edge of the screen in pixels."
+msgstr ""
+
+#. aBiGF
+#: sf_ui.xhp
+msgctxt ""
+"sf_ui.xhp\n"
+"par_id651587913266670\n"
+"help.text"
+msgid "Yes"
+msgstr ""
+
+#. 3DBVb
+#: sf_ui.xhp
+msgctxt ""
+"sf_ui.xhp\n"
+"par_id351587913266216\n"
+"help.text"
+msgid "Returns the Y coordinate of the active window, which is the distance to the top edge of the screen in pixels. This value does not consider window decorations added by your operating system, so even when the window is maximized this value may not be zero."
+msgstr ""
+
 #. BH9YJ
 #: sf_ui.xhp
 msgctxt ""
@@ -27421,6 +28827,1491 @@ msgctxt ""
 "par_id45158858711917\n"
 "help.text"
 msgid "<emph>windowname</emph>: see the definitions above."
+msgstr ""
+
+#. BuQiK
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"tit\n"
+"help.text"
+msgid "SFUnitTests.UnitTest service"
+msgstr ""
+
+#. iVee6
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"bm_id681600788076499\n"
+"help.text"
+msgid "<variable id=\"UnitTestService\"><link href=\"text/sbasic/shared/03/sf_unittest.xhp\" name=\"UnitTest service\"><literal>SFUnitTests</literal>.<literal>UnitTest</literal> service</link></variable>"
+msgstr ""
+
+#. iRNwD
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id181600788076612\n"
+"help.text"
+msgid "The <literal>UnitTest</literal> service provides a framework for automating unit tests using the Basic language, including the ability to:"
+msgstr ""
+
+#. wkD9p
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id301600788076785\n"
+"help.text"
+msgid "Aggregate test cases into test suites and unit tests."
+msgstr ""
+
+#. Dgg9t
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id1001600788076848\n"
+"help.text"
+msgid "Share setup and shutdown code among test cases."
+msgstr ""
+
+#. 768q7
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id67160078807676\n"
+"help.text"
+msgid "Report test results using the <literal>Console</literal>."
+msgstr ""
+
+#. UEt5G
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id411656351918942\n"
+"help.text"
+msgid "Both the unit tests and the code to be tested must be written in Basic. The code being tested may call functions written in other languages."
+msgstr ""
+
+#. CCgbB
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id601656621416963\n"
+"help.text"
+msgid "The <literal>UnitTest</literal> service is not available for Python scripts."
+msgstr ""
+
+#. PBJpL
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"hd_id491656351958796\n"
+"help.text"
+msgid "Definitions"
+msgstr ""
+
+#. kTZBz
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"hd_id31656351967453\n"
+"help.text"
+msgid "Test Case"
+msgstr ""
+
+#. 2SE2W
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id571656351977812\n"
+"help.text"
+msgid "A test case is the individual unit of testing. It checks for a specific response to a particular set of inputs."
+msgstr ""
+
+#. XiXCu
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id391656352078166\n"
+"help.text"
+msgid "In the <literal>UnitTest</literal> service, a test case is represented by a single Basic <literal>Sub</literal> whose name starts with a common prefix (the default is \"Test_\")."
+msgstr ""
+
+#. 2g5tx
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id701656352338645\n"
+"help.text"
+msgid "The test case fails if one of the <literal>AssertX</literal> methods returns <literal>False</literal>."
+msgstr ""
+
+#. 6yQXs
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"hd_id431656352497598\n"
+"help.text"
+msgid "Test Suite"
+msgstr ""
+
+#. Jk79j
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id771656352513789\n"
+"help.text"
+msgid "A test suite is a collection of test cases that should be executed together."
+msgstr ""
+
+#. cFV9D
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id941656352597973\n"
+"help.text"
+msgid "All test cases of a test suite are stored in a single Basic module."
+msgstr ""
+
+#. UEVyk
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id51656352696989\n"
+"help.text"
+msgid "A test suite may implement the <literal>SetUp</literal> and <literal>TearDown</literal> methods to prepare for test cases in its module."
+msgstr ""
+
+#. nEFMy
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"hd_id351656352884283\n"
+"help.text"
+msgid "Unit Test"
+msgstr ""
+
+#. xieZW
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id461656352894003\n"
+"help.text"
+msgid "A full unit test consists of a set of test suites in the same Basic library."
+msgstr ""
+
+#. 6XiCa
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"hd_id991656353328287\n"
+"help.text"
+msgid "Service invocation"
+msgstr ""
+
+#. FVzhB
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id141609955500101\n"
+"help.text"
+msgid "Before using the <literal>UnitTest</literal> service the <literal>ScriptForge</literal> library needs to be loaded or imported:"
+msgstr ""
+
+#. GHXzG
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"hd_id941656357981021\n"
+"help.text"
+msgid "Simple mode"
+msgstr ""
+
+#. C5qBi
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id381656357996613\n"
+"help.text"
+msgid "Invoke the service in <emph>simple mode</emph> to call <literal>AssertX</literal> functions without having to build the full hierarchy of test suites and test cases."
+msgstr ""
+
+#. DRzjW
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id331656358092318\n"
+"help.text"
+msgid "In simple mode, the service is invoked inside the test case, as shown in the example below:"
+msgstr ""
+
+#. RuMFA
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"bas_id501656358186053\n"
+"help.text"
+msgid "' A few dummy tests"
+msgstr ""
+
+#. 2Firz
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"bas_id981656421186233\n"
+"help.text"
+msgid "MsgBox(\"All tests passed\")"
+msgstr ""
+
+#. nMFgq
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"bas_id971656421186872\n"
+"help.text"
+msgid "myTest.ReportError(\"A test failed\")"
+msgstr ""
+
+#. ki4xc
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id321656421319505\n"
+"help.text"
+msgid "In this example, if any of the <literal>AssertEqual</literal> calls fail, the interpreter will go to the <literal>CatchError</literal> label and report the error by calling the <literal>ReportError</literal> method."
+msgstr ""
+
+#. AMsHe
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"hd_id341656353807950\n"
+"help.text"
+msgid "Full mode"
+msgstr ""
+
+#. Cev96
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id881656353390116\n"
+"help.text"
+msgid "When invoked in <emph>full mode</emph>, the service creation is external to the test code and all tests are organized into test cases and test suites inside a single library."
+msgstr ""
+
+#. kRFxC
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id41656354017140\n"
+"help.text"
+msgid "The following example creates a <literal>UnitTest</literal> instance whose tests are located inside the current document (<literal>ThisComponent</literal>) in the \"Tests\" library."
+msgstr ""
+
+#. 3pPFr
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"hd_id731656421609300\n"
+"help.text"
+msgid "A minimalist example in full mode"
+msgstr ""
+
+#. ktFcg
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id721656421629357\n"
+"help.text"
+msgid "Consider that a ODS file has a module named \"MathUtils\" in its \"Standard\" library with the following code:"
+msgstr ""
+
+#. ZijqG
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"bas_id821656421926586\n"
+"help.text"
+msgid "' Code in module Standard.MathUtils"
+msgstr ""
+
+#. N8ifA
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id871656422027581\n"
+"help.text"
+msgid "To create a full test suite, consider that a new library named \"Tests\" is created in the file with a single module \"AllTests\" containing the code below:"
+msgstr ""
+
+#. TdD5n
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"bas_id731656422341011\n"
+"help.text"
+msgid "' Code in module Tests.AllTests"
+msgstr ""
+
+#. TeQGD
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"bas_id671656422476689\n"
+"help.text"
+msgid "' Preparation code ran prior to the first test case"
+msgstr ""
+
+#. 5YeqU
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"bas_id621656422479007\n"
+"help.text"
+msgid "' Optional cleanup code called after the last test case"
+msgstr ""
+
+#. ANk96
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"bas_id141656422684085\n"
+"help.text"
+msgid "test.AssertEqual(Sum(1, 1), 2, \"Sum two positive integers\")"
+msgstr ""
+
+#. vZeA5
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"bas_id491656422684324\n"
+"help.text"
+msgid "test.AssertEqual(Sum(-10, 20), 10, \"Sum of negative and positive integers\")"
+msgstr ""
+
+#. xAf6Z
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"bas_id201656422684556\n"
+"help.text"
+msgid "test.AssertEqual(Sum(1.5, 1), 2.5, \"Sum of float and integer values\")"
+msgstr ""
+
+#. Lp9XE
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"bas_id716356422685228\n"
+"help.text"
+msgid "test.ReportError(\"Sum method is broken\")"
+msgstr ""
+
+#. u2CVn
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"bas_id416564228330400\n"
+"help.text"
+msgid "test.AssertEqual(Multiply(2, 2), 4, \"Multiply two positive integers\")"
+msgstr ""
+
+#. BhroA
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"bas_id231656422833240\n"
+"help.text"
+msgid "test.AssertEqual(Multiply(-4, 2), -8, \"Multiply negative and positive integers\")"
+msgstr ""
+
+#. whh5d
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"bas_id931656422833480\n"
+"help.text"
+msgid "test.AssertEqual(Multiply(1.5, 3), 4.5, \"Multiply of float and integer values\")"
+msgstr ""
+
+#. ixjF2
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"bas_id151656422834184\n"
+"help.text"
+msgid "test.ReportError(\"Multiply method is broken\")"
+msgstr ""
+
+#. y6q9H
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id681656423030706\n"
+"help.text"
+msgid "The test suite above consists of two test cases <literal>Test_Sum</literal> and <literal>Test_Multiply</literal>. To run all tests simply run the <literal>Main</literal> method from the \"AllTests\" module."
+msgstr ""
+
+#. CFFEG
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id681656423146183\n"
+"help.text"
+msgid "The <link href=\"text/sbasic/shared/03/sf_exception.xhp#Console\" name=\"Console\"><literal>Console</literal></link> from the <literal>Exception</literal> service is used as the default output to print test results. After running the example above, the following output will be displayed in the console:"
+msgstr ""
+
+#. SX4Hy
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id161656423510879\n"
+"help.text"
+msgid "If any of the <literal>AssertEqual</literal> methods fails during these tests, an error message is added to the console."
+msgstr ""
+
+#. SKsNp
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"hd_id711600788076834\n"
+"help.text"
+msgid "Properties"
+msgstr ""
+
+#. dUKA3
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id461600788076917\n"
+"help.text"
+msgid "Name"
+msgstr ""
+
+#. 4CFLw
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id221600788076591\n"
+"help.text"
+msgid "Readonly"
+msgstr ""
+
+#. hmcQA
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id761600788076328\n"
+"help.text"
+msgid "Type"
+msgstr ""
+
+#. qr48K
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id67160078807636\n"
+"help.text"
+msgid "Description"
+msgstr ""
+
+#. BLCXX
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id311600788076756\n"
+"help.text"
+msgid "No"
+msgstr ""
+
+#. LwYBg
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id441600788076826\n"
+"help.text"
+msgid "When set to <literal>True</literal> (default) the console shows the standard message appended to the message provided by the tester. When <literal>False</literal>, only the message defined by the tester is used."
+msgstr ""
+
+#. m6reQ
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id49160078807654\n"
+"help.text"
+msgid "Yes"
+msgstr ""
+
+#. diGQ4
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id81600788076419\n"
+"help.text"
+msgid "Value returned by <literal>RunTest</literal> after the unit test is finished. Next is a list of possible values:"
+msgstr ""
+
+#. RqYbB
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id141656425588260\n"
+"help.text"
+msgid "0 - Test finished without errors or test not started<br/>        1 - An assertion within a test case returned <literal>False</literal><br/>        2 - A <literal>SkipTest</literal> was issued by the <literal>Setup</literal> method or by one of the test cases.<br/>        3 - Abnormal end of test"
+msgstr ""
+
+#. sa2t9
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id711600788076534\n"
+"help.text"
+msgid "No"
+msgstr ""
+
+#. WG8MM
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id541600788076645\n"
+"help.text"
+msgid "When set to <literal>True</literal>, all assertions are reported in the console (failing or not). When <literal>False</literal> (default), only failing assertions are reported."
+msgstr ""
+
+#. kbkBT
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id891600788076190\n"
+"help.text"
+msgid "No"
+msgstr ""
+
+#. H5D7L
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id91600788076674\n"
+"help.text"
+msgid "Defines what is done when an assertion fails. Next is a list of possible values:"
+msgstr ""
+
+#. EQBpN
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id671656425606077\n"
+"help.text"
+msgid "0 - Ignore the failure and continue running the test<br/>        1 - The <literal>TearDown</literal> method in the module is executed in the current test suite and the next suite is started (default in full mode).<br/>        2 - Stop immediately (default in simple mode)"
+msgstr ""
+
+#. oxRCB
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id651606319520519\n"
+"help.text"
+msgid "List of Methods in the UnitTest Service"
+msgstr ""
+
+#. d4CFS
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"hd_id201656428230690\n"
+"help.text"
+msgid "Arguments of the AssertX methods"
+msgstr ""
+
+#. ArRiA
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id591656428251124\n"
+"help.text"
+msgid "All assertions test one or two expressions, referred in the remainder of this help page as <emph>A</emph> and <emph>B</emph>. They are always the first one or two arguments in the <literal>AssertX</literal> method."
+msgstr ""
+
+#. Nanrc
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id231656428367462\n"
+"help.text"
+msgid "All <literal>AssertX</literal> methods accept a <literal>message</literal> argument specifying a custom message to be reported in the console regarding the assertion. By default an empty string is used. This argument is always in the last position of the assertion."
+msgstr ""
+
+#. d7AFB
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id91656451227291\n"
+"help.text"
+msgid "Some <literal>AssertX</literal> methods also accept additional arguments, as described by their syntaxes below."
+msgstr ""
+
+#. xbDmc
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id71621894833351\n"
+"help.text"
+msgid "Returns <literal>True</literal> when <emph>A</emph> and <emph>B</emph> are numerical values and are considered to be close to each other, given a relative tolerance."
+msgstr ""
+
+#. STVnD
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id241656426318310\n"
+"help.text"
+msgid "This assertion returns <literal>True</literal> if the two conditions below are met:"
+msgstr ""
+
+#. zBAge
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id861656426361793\n"
+"help.text"
+msgid "A and B can be converted to the <literal>Double</literal> type."
+msgstr ""
+
+#. 48tqj
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id851656426362072\n"
+"help.text"
+msgid "The absolute difference between A and B divided by the largest absolute value of A or B is <emph>lower</emph> than the value specified in <literal>tolerance</literal>."
+msgstr ""
+
+#. Z7Aap
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id71621894830182\n"
+"help.text"
+msgid "Returns <literal>True</literal> when <emph>A</emph> and <emph>B</emph> are considered to be equal."
+msgstr ""
+
+#. 5EHVv
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id241656426317440\n"
+"help.text"
+msgid "When A and B are scalars, <literal>True</literal> is returned if:"
+msgstr ""
+
+#. EACHw
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id861656426361808\n"
+"help.text"
+msgid "Both expressions have the same <literal>VarType</literal> or are both numeric."
+msgstr ""
+
+#. rEEuD
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id851656426362362\n"
+"help.text"
+msgid "Booleans and numeric values are compared with the = operator."
+msgstr ""
+
+#. VFGGv
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id201656427500186\n"
+"help.text"
+msgid "Strings are compared with the builtin <literal>StrComp</literal> function. The comparison is case-sensitive."
+msgstr ""
+
+#. D8kiC
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id861656427531067\n"
+"help.text"
+msgid "Dates and times are compared up to the second."
+msgstr ""
+
+#. nGv5Z
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id361656427557940\n"
+"help.text"
+msgid "<literal>Null</literal>, <literal>Empty</literal> and <literal>Nothing</literal> are not equal, but <literal>AssertEqual(Nothing, Nothing)</literal> returns <literal>True</literal>."
+msgstr ""
+
+#. 7ZYdu
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id31656427624016\n"
+"help.text"
+msgid "UNO objects are compared with the builtin <literal>EqualUnoObjects</literal> method."
+msgstr ""
+
+#. Ec6PU
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id301656427695507\n"
+"help.text"
+msgid "Note that Basic objects are never equal."
+msgstr ""
+
+#. WpMkU
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id691656427837518\n"
+"help.text"
+msgid "When A and B are arrays, <literal>True</literal> is returned if:"
+msgstr ""
+
+#. A5kTv
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id831656427894608\n"
+"help.text"
+msgid "Both arrays have the same number of dimensions (up to 2 dimensions) and their lower and upper bounds are identical for all dimensions."
+msgstr ""
+
+#. sABNY
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id851656427895040\n"
+"help.text"
+msgid "All items in both arrays are equal, one by one."
+msgstr ""
+
+#. eAjBU
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id571656427895400\n"
+"help.text"
+msgid "Two empty arrays are considered to be equal."
+msgstr ""
+
+#. PxfTp
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id71621894830071\n"
+"help.text"
+msgid "Returns <literal>True</literal> when the type of A is <literal>Boolean</literal> and its value is <literal>False</literal>."
+msgstr ""
+
+#. C3NgG
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id71621894830337\n"
+"help.text"
+msgid "Returns <literal>True</literal> when A is greater than B."
+msgstr ""
+
+#. bT3CG
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id991656428670110\n"
+"help.text"
+msgid "The comparison between A and B assumes the following:"
+msgstr ""
+
+#. Uunox
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id591656428689390\n"
+"help.text"
+msgid "Eligible data types are <literal>String</literal>, <literal>Date</literal> or numeric."
+msgstr ""
+
+#. F7Cyz
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id516564286489629\n"
+"help.text"
+msgid "Both expressions must have the same <literal>VarType</literal> or both must be numeric."
+msgstr ""
+
+#. LfUrX
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id211656428689774\n"
+"help.text"
+msgid "String comparisons are case-sensitive."
+msgstr ""
+
+#. HtcFS
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id71621894838548\n"
+"help.text"
+msgid "Returns <literal>True</literal> when A is greater than or equal to B."
+msgstr ""
+
+#. gwLLH
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id991656428670202\n"
+"help.text"
+msgid "The comparison between A and B assumes the following:"
+msgstr ""
+
+#. 8KqmD
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id591656428689207\n"
+"help.text"
+msgid "Eligible data types are <literal>String</literal>, <literal>Date</literal> or numeric."
+msgstr ""
+
+#. oDfjA
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id516564286455529\n"
+"help.text"
+msgid "Both expressions must have the same <literal>VarType</literal> or both must be numeric."
+msgstr ""
+
+#. DWEby
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id211656428663284\n"
+"help.text"
+msgid "String comparisons are case-sensitive."
+msgstr ""
+
+#. BcYoQ
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id71621894831448\n"
+"help.text"
+msgid "Returns <literal>True</literal> when A is found in B."
+msgstr ""
+
+#. UqzzY
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id991656428677632\n"
+"help.text"
+msgid "This assertion assumes the following:"
+msgstr ""
+
+#. gKnpk
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id591656428688858\n"
+"help.text"
+msgid "Expression B may be a 1D array, a ScriptForge <literal>Dictionary</literal> object or a string."
+msgstr ""
+
+#. WSuUE
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id516564286454219\n"
+"help.text"
+msgid "When expression B is a 1D array, expression A may be a date or a numeric value."
+msgstr ""
+
+#. B6JVZ
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id51656678140228\n"
+"help.text"
+msgid "When expression B is a ScriptForge <literal>Dictionary</literal> object, then string A is searched for among the keys in B."
+msgstr ""
+
+#. vvgdS
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id211656428663299\n"
+"help.text"
+msgid "String comparisons are case-sensitive."
+msgstr ""
+
+#. pCSa8
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id71621894831399\n"
+"help.text"
+msgid "Returns <literal>True</literal> when A is an instance of a specified object type, specified as a string containing the type name."
+msgstr ""
+
+#. P4Q7u
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id991656428676302\n"
+"help.text"
+msgid "Expression A may be one of the following:"
+msgstr ""
+
+#. Kd3yd
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id591656428676428\n"
+"help.text"
+msgid "A ScriptForge object. In this case, the <literal>objecttype</literal> argument is a string such as \"DICTIONARY\", \"calc\", \"Dialog\", etc."
+msgstr ""
+
+#. pAE9x
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id516564286456619\n"
+"help.text"
+msgid "A UNO object. In this case, the <literal>objecttype</literal> argument must be a string identical to the value returned by the <literal>SF_Session.UnoObjectType()</literal> method."
+msgstr ""
+
+#. TAtM4
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id211656428680559\n"
+"help.text"
+msgid "An Array. In this case, the <literal>objecttype</literal> argument is expected to be \"array\"."
+msgstr ""
+
+#. dvkQB
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id891656439858783\n"
+"help.text"
+msgid "Any other variable (neither an <literal>Object</literal> nor an <literal>Array</literal>). In this case, <literal>objecttype</literal> is a string matching the value returned by the builtin <literal>TypeName</literal> function."
+msgstr ""
+
+#. cNXhg
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id71621894830197\n"
+"help.text"
+msgid "Returns <literal>True</literal> when A is an object that has the <literal>Nothing</literal> value."
+msgstr ""
+
+#. DAqbe
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id71621894863251\n"
+"help.text"
+msgid "Returns <literal>True</literal> when A has the <literal>Null</literal> value."
+msgstr ""
+
+#. oQpZL
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id71621894838018\n"
+"help.text"
+msgid "Returns <literal>True</literal> when A is less than B."
+msgstr ""
+
+#. DGdwP
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id991656428672332\n"
+"help.text"
+msgid "The comparison between A and B assumes the following:"
+msgstr ""
+
+#. AmmHx
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id591656428689311\n"
+"help.text"
+msgid "Eligible data types are <literal>String</literal>, <literal>Date</literal> or numeric."
+msgstr ""
+
+#. Y6GRH
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id516564286265809\n"
+"help.text"
+msgid "Both expressions must have the same <literal>VarType</literal> or both must be numeric."
+msgstr ""
+
+#. SNBHr
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id211656428660996\n"
+"help.text"
+msgid "String comparisons are case-sensitive."
+msgstr ""
+
+#. wAvBZ
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id71621894208818\n"
+"help.text"
+msgid "Returns <literal>True</literal> when A is less than or equal to B."
+msgstr ""
+
+#. kvCHD
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id991656428606322\n"
+"help.text"
+msgid "The comparison between A and B assumes the following:"
+msgstr ""
+
+#. jD42E
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id591656428682251\n"
+"help.text"
+msgid "Eligible data types are <literal>String</literal>, <literal>Date</literal> or numeric."
+msgstr ""
+
+#. UMG2p
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id516564286265711\n"
+"help.text"
+msgid "Both expressions must have the same <literal>VarType</literal> or both must be numeric."
+msgstr ""
+
+#. tcjQC
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id211656428660176\n"
+"help.text"
+msgid "String comparisons are case-sensitive."
+msgstr ""
+
+#. Zg5MZ
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id71621894862651\n"
+"help.text"
+msgid "Returns <literal>True</literal> if string A matches a given pattern containing wildcards."
+msgstr ""
+
+#. GD2Hu
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id51656446203238\n"
+"help.text"
+msgid "The following wildcards are accepted:"
+msgstr ""
+
+#. CjJSF
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id661656446233484\n"
+"help.text"
+msgid "? - Represents any single character."
+msgstr ""
+
+#. dozgH
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id681656446233831\n"
+"help.text"
+msgid "* - Represents zero, one, or multiple characters."
+msgstr ""
+
+#. fsu2Z
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id71621894832641\n"
+"help.text"
+msgid "Returns <literal>True</literal> when <emph>A</emph> and <emph>B</emph> are numerical values and are <emph>not</emph> considered to be close to each other, given a relative tolerance."
+msgstr ""
+
+#. 3CNkz
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id241656426317970\n"
+"help.text"
+msgid "This assertion returns <literal>True</literal> if the two conditions below are met:"
+msgstr ""
+
+#. NtkrB
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id861656426361686\n"
+"help.text"
+msgid "A and B can be converted to the <literal>Double</literal> type."
+msgstr ""
+
+#. 4L9bJ
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id851656426332052\n"
+"help.text"
+msgid "The absolute difference between A and B divided by the largest absolute value of A or B is <emph>greater</emph> than the value specified in <literal>tolerance</literal>."
+msgstr ""
+
+#. KVBYJ
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id71621894862842\n"
+"help.text"
+msgid "Returns <literal>True</literal> when <emph>A</emph> and <emph>B</emph> are <emph>not</emph> considered to be equal."
+msgstr ""
+
+#. f8xcB
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id581656446598206\n"
+"help.text"
+msgid "This method works both for scalars and arrays. Read the instructions in <link href=\"text/sbasic/shared/03/sf_unittest.xhp#AssertEqual\" name=\"AssertEqual\"><literal>AssertEqual</literal></link> for more information on what equality means in this assertion."
+msgstr ""
+
+#. ENDBA
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id71621894832638\n"
+"help.text"
+msgid "Returns <literal>True</literal> when A (a string) is <emph>not</emph> found in B."
+msgstr ""
+
+#. KNFSF
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id271656446302516\n"
+"help.text"
+msgid "Read the instructions in <link href=\"text/sbasic/shared/03/sf_unittest.xhp#AssertIn\" name=\"AssertIn\"><literal>AssertIn</literal></link> for more information on the assumptions of this method."
+msgstr ""
+
+#. BCzDu
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id71621894831403\n"
+"help.text"
+msgid "Returns <literal>True</literal> when A is <emph>not</emph> an instance of a specified object type."
+msgstr ""
+
+#. 2FDwf
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id271656446949396\n"
+"help.text"
+msgid "Read the instructions in <link href=\"text/sbasic/shared/03/sf_unittest.xhp#AssertIsInstance\" name=\"AssertIsInstance\"><literal>AssertIsInstance</literal></link> for more information on the assumptions of this method."
+msgstr ""
+
+#. TRtFA
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id71621894863961\n"
+"help.text"
+msgid "Returns <literal>True</literal> if string A <emph>does not</emph> match a given pattern containing wildcards."
+msgstr ""
+
+#. aRFUp
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id271656446258396\n"
+"help.text"
+msgid "Read the instructions in <link href=\"text/sbasic/shared/03/sf_unittest.xhp#AssertLike\" name=\"AssertLike\"><literal>AssertLike</literal></link> for more information on the assumptions of this method."
+msgstr ""
+
+#. C9GJn
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id71621894420261\n"
+"help.text"
+msgid "Returns <literal>True</literal> except when A is an object that has the <literal>Nothing</literal> value."
+msgstr ""
+
+#. tdWWt
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id71621894876551\n"
+"help.text"
+msgid "Returns <literal>True</literal> except when A has the <literal>Null</literal> value."
+msgstr ""
+
+#. piNCq
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id71621894860331\n"
+"help.text"
+msgid "Returns <literal>True</literal> when A is <emph>not</emph> a string or <emph>does not</emph> match the given regular expression."
+msgstr ""
+
+#. 24iRs
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id931656448163772\n"
+"help.text"
+msgid "The comparison is case-sensitive."
+msgstr ""
+
+#. LBAZt
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id71621894836031\n"
+"help.text"
+msgid "Returns <literal>True</literal> when string A matches the given regular expression."
+msgstr ""
+
+#. YDnGG
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id931656448163625\n"
+"help.text"
+msgid "The comparison is case-sensitive."
+msgstr ""
+
+#. B2c4q
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id71621894063449\n"
+"help.text"
+msgid "Returns <literal>True</literal> when expression A is a <literal>Boolean</literal> and its value is <literal>True</literal>."
+msgstr ""
+
+#. CsZXs
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id71621894086431\n"
+"help.text"
+msgid "Forces a test case to fail."
+msgstr ""
+
+#. aMzvc
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id751656448550854\n"
+"help.text"
+msgid "A message can be provided to be reported in the console."
+msgstr ""
+
+#. 6ZD5u
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id71621894063631\n"
+"help.text"
+msgid "Writes the specified <literal>message</literal> in the console."
+msgstr ""
+
+#. HmfG2
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id751656448510894\n"
+"help.text"
+msgid "A message can be provided to be reported in the console."
+msgstr ""
+
+#. b2AUv
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id71621894199311\n"
+"help.text"
+msgid "Displays a message box with a message and the current property values of the <literal>Exception</literal> service."
+msgstr ""
+
+#. by77W
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id851656622819891\n"
+"help.text"
+msgid "This method is commonly used in the exception handling section of the <literal>Sub</literal> containing the test case, which is reached when an assertion fails or when the <literal>Fail</literal> method is called."
+msgstr ""
+
+#. ozRN8
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id291656448892783\n"
+"help.text"
+msgid "Depending on the value of the property <literal>WhenAssertionFails</literal>, the test execution may continue or be interrupted."
+msgstr ""
+
+#. q42xs
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id551656448951538\n"
+"help.text"
+msgid "When writing test cases it is recommended to include a call to the <literal>ReportError</literal> method in the exception handling section of the <literal>Sub</literal>."
+msgstr ""
+
+#. pze6V
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id711656449128572\n"
+"help.text"
+msgid "If the property <literal>LongMessage</literal> is equal to <literal>True</literal>, the specified <literal>message</literal> is followed by the standard error message description. Otherwise only the <literal>message</literal> is displayed."
+msgstr ""
+
+#. AtCyJ
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id71621894063361\n"
+"help.text"
+msgid "Executes the complete test suite implemented in the specified module. Each test case is run independently from each other."
+msgstr ""
+
+#. AqkBH
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id201656449688023\n"
+"help.text"
+msgid "Running a test suite consists of:"
+msgstr ""
+
+#. YqC5U
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id751656449718279\n"
+"help.text"
+msgid "Executing the optional <literal>Setup</literal> method present in the module."
+msgstr ""
+
+#. Kmshw
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id611656449718505\n"
+"help.text"
+msgid "Executing once each test case, in no specific order."
+msgstr ""
+
+#. dpWzo
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id461656449718687\n"
+"help.text"
+msgid "Executing the optional <literal>TearDown</literal> method present in the module."
+msgstr ""
+
+#. rFf8d
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id751656448521144\n"
+"help.text"
+msgid "The argument <literal>testcasepattern</literal> specifies a pattern composed of \"?\" and \"*\" wildcards to select which test cases will be run. The comparison is not case-sensitive."
+msgstr ""
+
+#. T3faF
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id81656448858455\n"
+"help.text"
+msgid "If a <literal>message</literal> is provided, it is written to the console when the test starts."
+msgstr ""
+
+#. TDXg5
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id71621894064311\n"
+"help.text"
+msgid "Interrupts the running test suite without calling the <literal>TearDown</literal> method."
+msgstr ""
+
+#. A6W9G
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id781656450313544\n"
+"help.text"
+msgid "Skipping a test is usually meaningful during the <literal>Setup</literal> method when not all conditions to run the test are met."
+msgstr ""
+
+#. wzZy2
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id531656450405799\n"
+"help.text"
+msgid "It is up to the <literal>Setup</literal> method to exit the <literal>Sub</literal> shortly after the <literal>SkipTest</literal> call."
+msgstr ""
+
+#. KEaV4
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id581656450504005\n"
+"help.text"
+msgid "If <literal>SkipTest</literal> is called from within a test case, the execution of the test suite is interrupted and the remaining test cases are not run. Keep in mind that the order in which test cases are run is arbitrary within a test suite."
+msgstr ""
+
+#. BFyev
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id81656449618455\n"
+"help.text"
+msgid "If a <literal>message</literal> is provided, it is written to the console."
 msgstr ""
 
 #. NyP5B

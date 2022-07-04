@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2022-06-10 13:58+0200\n"
+"POT-Creation-Date: 2022-07-04 18:04+0200\n"
 "PO-Revision-Date: 2018-07-12 14:35+0000\n"
 "Last-Translator: Anonymous Pootle User\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -4057,13 +4057,49 @@ msgctxt ""
 msgid "The shortcut \"*\" represents all used cells."
 msgstr ""
 
-#. gNtqP
+#. C6fBT
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id641591021597701\n"
 "help.text"
-msgid "The sheet name is optional in a range (default = the active sheet). Surrounding single quotes and $ signs are allowed but ignored."
+msgid "The sheet name is optional when defining a range. If no sheet name is provided, then the active sheet is used. Surrounding single quotes and $ signs are allowed but ignored."
+msgstr ""
+
+#. ebNR5
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id231655754032310\n"
+"help.text"
+msgid "When specifying a <literal>SheetName</literal> as a string, the use of single quotes to enclose the sheet name are required if the name contains blank spaces \" \" or periods \".\"."
+msgstr ""
+
+#. BsAKT
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id931655906591984\n"
+"help.text"
+msgid "The examples below illustrate in which cases the use of single quotes is mandatory:"
+msgstr ""
+
+#. DGacM
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"bas_id971655754336388\n"
+"help.text"
+msgid "' The use of single quotes is optional"
+msgstr ""
+
+#. yWFhF
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"bas_id711655754337420\n"
+"help.text"
+msgid "' The use of single quotes is required"
 msgstr ""
 
 #. GVF9g
@@ -4084,13 +4120,13 @@ msgctxt ""
 msgid "Examples of valid ranges"
 msgstr ""
 
-#. BABCv
+#. yADDC
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id481591024294524\n"
 "help.text"
-msgid "1) '$SheetX'.D2<br/>2) $D$2"
+msgid "1) $'SheetX'.D2<br/>2) $D$2"
 msgstr ""
 
 #. pMZEe
@@ -4102,13 +4138,13 @@ msgctxt ""
 msgid "A single cell"
 msgstr ""
 
-#. MuiK2
+#. AcGDY
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id21591024294492\n"
 "help.text"
-msgid "1) '$SheetX'.D2:F6<br/>2) D2:D10"
+msgid "1) $'SheetX'.D2:F6<br/>2) D2:D10"
 msgstr ""
 
 #. P7Ete
@@ -4120,13 +4156,13 @@ msgctxt ""
 msgid "Single range with multiple cells"
 msgstr ""
 
-#. xj6ob
+#. vXrSu
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id161592230749179\n"
 "help.text"
-msgid "'$SheetX'.*"
+msgid "$'SheetX'.*"
 msgstr ""
 
 #. eQu5j
@@ -4138,13 +4174,13 @@ msgctxt ""
 msgid "All used cells in the given sheet"
 msgstr ""
 
-#. UErNm
+#. C6egy
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id641591024294318\n"
 "help.text"
-msgid "1) '$SheetX'.A:A (column A)<br/>2) 3:5 (rows 3 to 5)"
+msgid "1) $'SheetX'.A:A (column A)<br/>2) 3:5 (rows 3 to 5)"
 msgstr ""
 
 #. qpGBr
@@ -6098,6 +6134,87 @@ msgctxt ""
 "par_id31611752782288\n"
 "help.text"
 msgid "Cells in the given range that contain text will be ignored by all of these functions. For example, the <literal>DCount</literal> method will not count cells with text, only numerical cells."
+msgstr ""
+
+#. S6JvC
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id501623063693113\n"
+"help.text"
+msgid "Exports the specified range as an image or PDF file."
+msgstr ""
+
+#. eKaCo
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id401655654738754\n"
+"help.text"
+msgid "This method returns <literal>True</literal> if the destination file was successfully saved."
+msgstr ""
+
+#. p6Hg5
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id871655655302952\n"
+"help.text"
+msgid "Hidden rows or columns in the specified range are not exported to the destination file."
+msgstr ""
+
+#. DpqDV
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id441623090896470\n"
+"help.text"
+msgid "<emph>range</emph>: A sheet name or a cell range to be exported, as a string."
+msgstr ""
+
+#. v5QXP
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id451623063452651\n"
+"help.text"
+msgid "<emph>filename</emph>: The name of the file to be saved. It must follow the <literal>SF_FileSystem.FileNaming</literal> notation."
+msgstr ""
+
+#. 3nTsB
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id441623090895310\n"
+"help.text"
+msgid "<emph>imagetype</emph>: Identifies the destination file type. Possible values are \"jpeg\", \"pdf\" (default) and \"png\"."
+msgstr ""
+
+#. Wx3ea
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id441623090896317\n"
+"help.text"
+msgid "<emph>overwrite</emph>: When set to <literal>True</literal>, the destination file may be overwritten (Default = <literal>False</literal>)."
+msgstr ""
+
+#. twaNW
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"bas_id561655655121456\n"
+"help.text"
+msgid "' Exports the entire sheet as a PDF file"
+msgstr ""
+
+#. RRxag
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"bas_id991655655060661\n"
+"help.text"
+msgid "' Exports the range as a PNG file and overwrites the destination file if it exists"
 msgstr ""
 
 #. BVKEy
@@ -12580,13 +12697,13 @@ msgctxt ""
 msgid "<variable id=\"DocumentService\"><link href=\"text/sbasic/shared/03/sf_document.xhp\" name=\"Exception service\"><literal>SFDocuments</literal>.<literal>Document</literal> service</link></variable>"
 msgstr ""
 
-#. FoEeH
+#. VTWbF
 #: sf_document.xhp
 msgctxt ""
 "sf_document.xhp\n"
 "par_id381589189355849\n"
 "help.text"
-msgid "The <literal>SFDocuments</literal> library provides methods and properties to facilitate the management and manipulation of LibreOffice documents."
+msgid "The <literal>SFDocuments</literal> library provides methods and properties to facilitate the management and manipulation of %PRODUCTNAME documents."
 msgstr ""
 
 #. urZhL
@@ -12625,13 +12742,13 @@ msgctxt ""
 msgid "The properties, methods or arguments marked with <emph>(*)</emph> are <emph>NOT applicable to Base documents</emph>."
 msgstr ""
 
-#. HPr8i
+#. rh5iz
 #: sf_document.xhp
 msgctxt ""
 "sf_document.xhp\n"
 "par_id241589189701274\n"
 "help.text"
-msgid "Methods and properties that are specific to certain LibreOffice components are stored in separate services, such as <literal>SFDocuments.SF_Calc</literal> and <literal>SFDocuments.SF_Base</literal>."
+msgid "Methods and properties that are specific to certain %PRODUCTNAME components are stored in separate services, such as <literal>SFDocuments.SF_Calc</literal> and <literal>SFDocuments.SF_Base</literal>."
 msgstr ""
 
 #. Fdi8i
@@ -12848,6 +12965,42 @@ msgctxt ""
 "par_id941589194571801\n"
 "help.text"
 msgid "String value with the document type (\"Base\", \"Calc\", \"Writer\", etc)"
+msgstr ""
+
+#. UcEJi
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
+"par_id201589194571699\n"
+"help.text"
+msgid "Yes"
+msgstr ""
+
+#. EZzPF
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
+"par_id941589194571327\n"
+"help.text"
+msgid "Returns a list with the export filter names applicable to the current document as a zero-based array of strings. Filters used for both import/export are also returned."
+msgstr ""
+
+#. 7vqDq
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
+"par_id201589194571067\n"
+"help.text"
+msgid "Yes"
+msgstr ""
+
+#. UmCHS
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
+"par_id941589194571922\n"
+"help.text"
+msgid "Returns a list with the import filter names applicable to the current document as a zero-based array of strings. Filters used for both import/export are also returned."
 msgstr ""
 
 #. Yo8T4
@@ -21319,6 +21472,33 @@ msgctxt ""
 msgid "Returns a zero-based array of strings containing the internal IDs of all installed extensions."
 msgstr ""
 
+#. HE2VZ
+#: sf_platform.xhp
+msgctxt ""
+"sf_platform.xhp\n"
+"par_id561633021747209\n"
+"help.text"
+msgid "Yes"
+msgstr ""
+
+#. MgENM
+#: sf_platform.xhp
+msgctxt ""
+"sf_platform.xhp\n"
+"par_id201633021748322\n"
+"help.text"
+msgid "String array"
+msgstr ""
+
+#. bhBD2
+#: sf_platform.xhp
+msgctxt ""
+"sf_platform.xhp\n"
+"par_id831633021749118\n"
+"help.text"
+msgid "Returns a zero-based unsorted array of strings containing the available document import and export filter names."
+msgstr ""
+
 #. 9aGdF
 #: sf_platform.xhp
 msgctxt ""
@@ -22217,6 +22397,1158 @@ msgctxt ""
 "par_id51636726671698\n"
 "help.text"
 msgid "In the examples below, a popup menu is created and the item's name is returned because the <literal>returnid</literal> argument is set to <literal>False</literal>."
+msgstr ""
+
+#. b8bDr
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"tit\n"
+"help.text"
+msgid "ScriptForge.Region service"
+msgstr ""
+
+#. SYtNX
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"bm_id681600788076499\n"
+"help.text"
+msgid "<variable id=\"RegionService\"><link href=\"text/sbasic/shared/03/sf_region.xhp\" name=\"Region service\"><literal>ScriptForge</literal>.<literal>Region</literal> service</link></variable>"
+msgstr ""
+
+#. w3WgP
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id181600788076612\n"
+"help.text"
+msgid "The <literal>Region</literal> service provides a collection of properties and methods to handle locale and region-related aspects of programming, such as:"
+msgstr ""
+
+#. TEk7a
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id301600788076785\n"
+"help.text"
+msgid "Accessing locale and region-dependent settings such as number formatting, currency and timezones."
+msgstr ""
+
+#. 2f7KC
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id1001600788076848\n"
+"help.text"
+msgid "Converting timezones and calculate Daylight Saving Time (DST) offsets."
+msgstr ""
+
+#. tqznj
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id67160078807676\n"
+"help.text"
+msgid "Transforming numbers into text in any supported language."
+msgstr ""
+
+#. 9nRv7
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"hd_id851656012844548\n"
+"help.text"
+msgid "Definitions"
+msgstr ""
+
+#. sGNu7
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"hd_id421656012886648\n"
+"help.text"
+msgid "Locale or Region"
+msgstr ""
+
+#. FiW7z
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id191656012908838\n"
+"help.text"
+msgid "A string combining a language and a country in the format \"la-CO\". The language part is expressed with 2 or 3 lowercase characters followed by a dash and 2 uppercase characters representing the country."
+msgstr ""
+
+#. GQEGW
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id431656013368415\n"
+"help.text"
+msgid "For instance, \"en-US\" corresponds to the English language in the United States; \"fr-BE\" corresponds to the French language in Belgium, and so forth."
+msgstr ""
+
+#. CQYAX
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id981656013623018\n"
+"help.text"
+msgid "On some situations the full locale is not required and only the language or country may be specified."
+msgstr ""
+
+#. 4qFTD
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id261656013132204\n"
+"help.text"
+msgid "Most properties and methods accept a locale as argument. If no locale is specified, then the user-interface locale is used, which is defined in the <link href=\"text/sbasic/shared/03/sf_platform.xhp#bm_id111614901524769\" name=\"OfficeLocale_link\"><literal>OfficeLocale</literal></link> property of the <literal>Platform</literal> service."
+msgstr ""
+
+#. 6ToTC
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"hd_id51656013825718\n"
+"help.text"
+msgid "Timezone"
+msgstr ""
+
+#. pV5MS
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id541656013854150\n"
+"help.text"
+msgid "A string in the format \"Region/City\" such as \"Europe/Berlin\", or a timezone ID such as \"UTC\" or \"GMT-8:00\". Refer to the wiki page <link href=\"https://wikipedia.org/wiki/List_of_tz_database_time_zones\" name=\"TimeZones_List\">List of tz database and timezones</link> for a list of possible timezone names and IDs."
+msgstr ""
+
+#. exa3B
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id981656078937577\n"
+"help.text"
+msgid "Providing an invalid timezone string to any of the methods in the <literal>Region</literal> service will not result in a runtime error. Instead, methods as <literal>UTCDateTime</literal> and <literal>UTCNow</literal> will return the current operating system date and time."
+msgstr ""
+
+#. 7GTLU
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id611656014040098\n"
+"help.text"
+msgid "The time offset between the timezone and the Greenwich Meridian Time (GMT) is expressed in minutes."
+msgstr ""
+
+#. ottwV
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id121656014053670\n"
+"help.text"
+msgid "The Daylight Saving Time (DST) is an additional offset."
+msgstr ""
+
+#. yXHrp
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id591656014140929\n"
+"help.text"
+msgid "The timezone and DST offsets may be positive or negative."
+msgstr ""
+
+#. EyNvN
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"hd_id281600788076359\n"
+"help.text"
+msgid "Service invocation"
+msgstr ""
+
+#. F9Wnj
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id141609955500101\n"
+"help.text"
+msgid "Before using the <literal>Region</literal> service the <literal>ScriptForge</literal> library needs to be loaded or imported:"
+msgstr ""
+
+#. 7AXFZ
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id321614902851541\n"
+"help.text"
+msgid "The examples below in Basic and Python instantiate the <literal>Region</literal> service and access the <literal>Country</literal> property."
+msgstr ""
+
+#. 69CF7
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"bas_id791600788431935\n"
+"help.text"
+msgid "MsgBox oRegion.Country(\"en-US\") ' United States"
+msgstr ""
+
+#. FDNKL
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"hd_id711600788076834\n"
+"help.text"
+msgid "Properties"
+msgstr ""
+
+#. VEB3D
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id601656018689690\n"
+"help.text"
+msgid "All properties listed below accept a <literal>locale</literal> argument, provided as a string. Some properties require this argument to be in the format \"la-CO\", whereas others may receive \"la\" or \"CO\" as input."
+msgstr ""
+
+#. vzB4T
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id461600788076917\n"
+"help.text"
+msgid "Name"
+msgstr ""
+
+#. ay9iH
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id221600788076591\n"
+"help.text"
+msgid "Readonly"
+msgstr ""
+
+#. rBUEm
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id761600788076328\n"
+"help.text"
+msgid "Type"
+msgstr ""
+
+#. FpD5h
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id131656330679679\n"
+"help.text"
+msgid "Locale"
+msgstr ""
+
+#. FxnFK
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id67160078807636\n"
+"help.text"
+msgid "Description"
+msgstr ""
+
+#. 4Ss2G
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id311600788076756\n"
+"help.text"
+msgid "Yes"
+msgstr ""
+
+#. ExbtG
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id441600788076826\n"
+"help.text"
+msgid "Returns the country name in English corresponding to a given region."
+msgstr ""
+
+#. FN4XC
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id49160078807654\n"
+"help.text"
+msgid "Yes"
+msgstr ""
+
+#. vpDwN
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id81600788076419\n"
+"help.text"
+msgid "Returns the ISO 4217 currency code of the specified region."
+msgstr ""
+
+#. Aqcuy
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id711600788076534\n"
+"help.text"
+msgid "Yes"
+msgstr ""
+
+#. 6cgk7
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id911600788076842\n"
+"help.text"
+msgid "String array"
+msgstr ""
+
+#. Jhkc3
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id541600788076645\n"
+"help.text"
+msgid "Returns a zero-based array of strings containing the date acceptance patterns for the specified region."
+msgstr ""
+
+#. T4sUQ
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id891600788076190\n"
+"help.text"
+msgid "Yes"
+msgstr ""
+
+#. vAJYH
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id91600788076674\n"
+"help.text"
+msgid "Returns the date separator used in the given region."
+msgstr ""
+
+#. QKyGp
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id561633021747014\n"
+"help.text"
+msgid "Yes"
+msgstr ""
+
+#. jSVY8
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id201633021748566\n"
+"help.text"
+msgid "String array"
+msgstr ""
+
+#. CnTuU
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id831633021745014\n"
+"help.text"
+msgid "Returns a zero-based array of strings containing the list of abbreviated weekday names in the specified language."
+msgstr ""
+
+#. jRUnx
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id561633021747209\n"
+"help.text"
+msgid "Yes"
+msgstr ""
+
+#. CGeKU
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id201633021748322\n"
+"help.text"
+msgid "String array"
+msgstr ""
+
+#. tjGhP
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id831633021748865\n"
+"help.text"
+msgid "Returns a zero-based array of strings containing the list of weekday names in the specified language."
+msgstr ""
+
+#. gVevH
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id561633021747903\n"
+"help.text"
+msgid "Yes"
+msgstr ""
+
+#. hL4sb
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id201633021748455\n"
+"help.text"
+msgid "String array"
+msgstr ""
+
+#. GHdGz
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id831633021747711\n"
+"help.text"
+msgid "Returns a zero-based array of strings containing the list of the initials of weekday names in the specified language."
+msgstr ""
+
+#. TFzKG
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id561633021748013\n"
+"help.text"
+msgid "Yes"
+msgstr ""
+
+#. CWLzi
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id831633021749297\n"
+"help.text"
+msgid "Returns the decimal separator used in numbers in the specified region."
+msgstr ""
+
+#. pqWDC
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id561633021743188\n"
+"help.text"
+msgid "Yes"
+msgstr ""
+
+#. droDW
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id831633021749018\n"
+"help.text"
+msgid "Returns the name of the language, in English, of the specified region."
+msgstr ""
+
+#. ojXGP
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id391600788076253\n"
+"help.text"
+msgid "Yes"
+msgstr ""
+
+#. a4SKv
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id21600788076541\n"
+"help.text"
+msgid "Returns the list separator used in the specified region."
+msgstr ""
+
+#. vUwhJ
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id561633021706513\n"
+"help.text"
+msgid "Yes"
+msgstr ""
+
+#. 79WHE
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id201633021746335\n"
+"help.text"
+msgid "String array"
+msgstr ""
+
+#. Dz2X6
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id831633021741117\n"
+"help.text"
+msgid "Returns a zero-based array of strings containing the list of abbreviated month names in the specified language."
+msgstr ""
+
+#. NvQaB
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id211600788076138\n"
+"help.text"
+msgid "Yes"
+msgstr ""
+
+#. ZMsz8
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id221600788076518\n"
+"help.text"
+msgid "String array"
+msgstr ""
+
+#. EbAXk
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id521600788076371\n"
+"help.text"
+msgid "Returns a zero-based array of strings containing the list of month names in the specified language."
+msgstr ""
+
+#. GeqFt
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id21600788076758\n"
+"help.text"
+msgid "Yes"
+msgstr ""
+
+#. wGD4y
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id871600788076196\n"
+"help.text"
+msgid "String array"
+msgstr ""
+
+#. RisPb
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id781600788076694\n"
+"help.text"
+msgid "Returns a zero-based array of strings containing the list of the initials of month names in the specified language."
+msgstr ""
+
+#. DBDyW
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id261600788076841\n"
+"help.text"
+msgid "Yes"
+msgstr ""
+
+#. fLZD2
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id116007880767507\n"
+"help.text"
+msgid "Returns the thousands separator used in numbers in the specified region."
+msgstr ""
+
+#. AUNfp
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id531600789141795\n"
+"help.text"
+msgid "Yes"
+msgstr ""
+
+#. MjrCr
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id301600789141619\n"
+"help.text"
+msgid "Returns the separator used to format times in the specified region."
+msgstr ""
+
+#. Bog4G
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id651606319520519\n"
+"help.text"
+msgid "List of Methods in the Region Service"
+msgstr ""
+
+#. szpDY
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id71621894830071\n"
+"help.text"
+msgid "Computes the additional Daylight Saving Time (DST) offset, in minutes, that is applicable to a given region and timezone."
+msgstr ""
+
+#. CbDHo
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id401621896675880\n"
+"help.text"
+msgid "<emph>localdatetime</emph>: the local date and time expressed as a date."
+msgstr ""
+
+#. cA2tD
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id401621896675125\n"
+"help.text"
+msgid "<emph>timezone</emph>: the timezone for which the offset will be calculated."
+msgstr ""
+
+#. w5gKK
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id401621896675963\n"
+"help.text"
+msgid "<emph>locale</emph>: the locale specifying the country for which the offset will be calculated, given either in \"la-CO\" or \"CO\" formats. The default value is the locale defined in the <link href=\"text/sbasic/shared/03/sf_platform.xhp#bm_id111614901524769\" name=\"OfficeLocale_link\"><literal>OfficeLocale</literal></link> property of the <literal>Platform</literal> service."
+msgstr ""
+
+#. cBF4y
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"bas_id531656022497519\n"
+"help.text"
+msgid "' Calculates the offset applicable in the \"America/Los_Angeles\" timezone"
+msgstr ""
+
+#. XYu4u
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"bas_id801656022498143\n"
+"help.text"
+msgid "offset = oRegion.DSTOffset(aDateTime, \"America/Los_Angeles\", \"US\") ' 60 (minutes)"
+msgstr ""
+
+#. CfiFK
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"bas_id831656022498543\n"
+"help.text"
+msgid "offset = oRegion.DSTOffset(aDateTime, \"America/Los_Angeles\", \"US\") ' 0 (minutes)"
+msgstr ""
+
+#. 4CkKJ
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"pyc_id871621898933281\n"
+"help.text"
+msgid "offset = oRegion.DSTOffset(aDateTime, \"America/Los_Angeles\", \"US\") ' 60 (minutes)"
+msgstr ""
+
+#. nkcRi
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"pyc_id871621898934141\n"
+"help.text"
+msgid "offset = oRegion.DSTOffset(aDateTime, \"America/Los_Angeles\", \"US\") ' 0 (minutes)"
+msgstr ""
+
+#. BbUgj
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id71621894832058\n"
+"help.text"
+msgid "Computes the local date and time from a UTC date and time."
+msgstr ""
+
+#. v4YSt
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id401621896674716\n"
+"help.text"
+msgid "<emph>utcdatetime</emph>: the UTC date and time, expressed using a date object."
+msgstr ""
+
+#. i63on
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id401621896675449\n"
+"help.text"
+msgid "<emph>timezone</emph>: the timezone for which the local time will be calculated."
+msgstr ""
+
+#. YWDWQ
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id401621896675193\n"
+"help.text"
+msgid "<emph>locale</emph>: the locale specifying the country for which the local time will be calculated, given either in \"la-CO\" or \"CO\" formats. The default value is the locale defined in the <link href=\"text/sbasic/shared/03/sf_platform.xhp#bm_id111614901524769\" name=\"OfficeLocale_link\"><literal>OfficeLocale</literal></link> property of the <literal>Platform</literal> service."
+msgstr ""
+
+#. 8UTFQ
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"bas_id201656022497017\n"
+"help.text"
+msgid "' June 6th, 2022 at 10:30:45 (used here as UTC time)"
+msgstr ""
+
+#. Hcjqt
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"bas_id531656022497121\n"
+"help.text"
+msgid "' Calculates local time in Sao Paulo, Brazil"
+msgstr ""
+
+#. yhKtd
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"bas_id601656022498318\n"
+"help.text"
+msgid "' June 6th, 2022 at 07:30:45"
+msgstr ""
+
+#. YJv72
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id71621894832089\n"
+"help.text"
+msgid "Converts numbers and monetary values into written text for any of the currently supported languages."
+msgstr ""
+
+#. qu8dt
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id971656026551328\n"
+"help.text"
+msgid "For a list of all supported languages visit the <link href=\"https://api.libreoffice.org/docs/idl/ref/interfacecom_1_1sun_1_1star_1_1linguistic2_1_1XNumberText.html\" name=\"XNumberText\">XNumberText Interface</link> API reference."
+msgstr ""
+
+#. xTUD6
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id401621896675306\n"
+"help.text"
+msgid "<emph>number</emph>: the number to be converted into written text. It can be provided either as a numeric type or as a string. When a string is provided, it can be preceded by a prefix informing how the numbers should be written. It is also possible to include ISO 4217 currency codes. See examples below for more information."
+msgstr ""
+
+#. eppdr
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id401621896675412\n"
+"help.text"
+msgid "<emph>locale</emph>: the locale defining the language into which the number will be converted to, given either in \"la-CO\" or \"la\" formats. The default value is the locale defined in the <link href=\"text/sbasic/shared/03/sf_platform.xhp#bm_id111614901524769\" name=\"OfficeLocale_link\"><literal>OfficeLocale</literal></link> property of the <literal>Platform</literal> service."
+msgstr ""
+
+#. QeBpA
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"bas_id301656027173020\n"
+"help.text"
+msgid "' Returns \"one hundred five\""
+msgstr ""
+
+#. 7xovc
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"bas_id531656022496631\n"
+"help.text"
+msgid "numText = oRegion.Number2Text(105, \"en-US\")"
+msgstr ""
+
+#. UGGvv
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"bas_id771656027217144\n"
+"help.text"
+msgid "' Returns: \"two point four two\""
+msgstr ""
+
+#. Xr7no
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"bas_id201656022493367\n"
+"help.text"
+msgid "numText = oRegion.Number2Text(2.42, \"en-US\")"
+msgstr ""
+
+#. 7hYbk
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"bas_id281656027262234\n"
+"help.text"
+msgid "' Returns: \"twenty-five euro and ten cents\" Notice the \"EUR\" currency symbol"
+msgstr ""
+
+#. DBPc8
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"bas_id201656022497171\n"
+"help.text"
+msgid "numText = oRegion.Number2Text(\"EUR 25.10\", \"en-US\")"
+msgstr ""
+
+#. pd3Fm
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"bas_id981656027330132\n"
+"help.text"
+msgid "' Returns: \"fifteenth\"; Notice the \"ordinal\" prefix"
+msgstr ""
+
+#. ggt2A
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"bas_id841656027330394\n"
+"help.text"
+msgid "numText = oRegion.Number2Text(\"ordinal 15\", \"en-US\")"
+msgstr ""
+
+#. YQCCF
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"pyc_id401656027481473\n"
+"help.text"
+msgid "numText = oRegion.Number2Text(105, \"en-US\")"
+msgstr ""
+
+#. FTGnF
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"pyc_id781656027481769\n"
+"help.text"
+msgid "numText = oRegion.Number2Text(2.42, \"en-US\")"
+msgstr ""
+
+#. RCDq5
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"pyc_id951656027482096\n"
+"help.text"
+msgid "numText = oRegion.Number2Text(\"EUR 25.10\", \"en-US\")"
+msgstr ""
+
+#. vtGFv
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"pyc_id231656027482425\n"
+"help.text"
+msgid "numText = oRegion.Number2Text(\"ordinal 15\", \"en-US\")"
+msgstr ""
+
+#. CHCJt
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id801656027524051\n"
+"help.text"
+msgid "To get a list of all supported prefixes in a given language, call <literal>Number2Text</literal> with the special \"help\" argument, as shown in the example below:"
+msgstr ""
+
+#. ZqfNT
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"bas_id181656027807107\n"
+"help.text"
+msgid "' Considering the \"en-US\" locale the message box will show the following text"
+msgstr ""
+
+#. hRef2
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"bas_id216560277123601\n"
+"help.text"
+msgid "' one, two, three"
+msgstr ""
+
+#. YMJ5N
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"bas_id361656027712711\n"
+"help.text"
+msgid "' ordinal: first, second, third"
+msgstr ""
+
+#. vhTrp
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"bas_id891656027712920\n"
+"help.text"
+msgid "' ordinal-number: 1st, 2nd, 3rd"
+msgstr ""
+
+#. YGCiN
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"bas_id611656027713104\n"
+"help.text"
+msgid "' year: nineteen ninety-nine, two thousand, two thousand one"
+msgstr ""
+
+#. vEMTZ
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"bas_id861656027713288\n"
+"help.text"
+msgid "' currency (for example, USD): two U.S. dollars and fifty cents"
+msgstr ""
+
+#. xYrSL
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"bas_id841656027713503\n"
+"help.text"
+msgid "' money USD: two and 50/100 U.S. dollars"
+msgstr ""
+
+#. RBkxp
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id781656027840633\n"
+"help.text"
+msgid "The first line in the message box does not have a prefix, which means that it is the standard format. The subsequent lines include the prefix and some examples of numbers using its format."
+msgstr ""
+
+#. WPApK
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id781656028528520\n"
+"help.text"
+msgid "Each language has its own set of supported prefixes."
+msgstr ""
+
+#. dShiA
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id71621894832117\n"
+"help.text"
+msgid "Returns the offset between GMT and the given timezone and locale, in minutes."
+msgstr ""
+
+#. xCAjE
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id401621896675018\n"
+"help.text"
+msgid "<emph>timezone</emph>: the timezone for which the offset to the GMT will be calculated."
+msgstr ""
+
+#. egZXu
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id401621896675691\n"
+"help.text"
+msgid "<emph>locale</emph>: the locale specifying the country for which the offset will be calculated, given either in \"la-CO\" or \"CO\" formats. The default value is the locale defined in the <link href=\"text/sbasic/shared/03/sf_platform.xhp#bm_id111614901524769\" name=\"OfficeLocale_link\"><literal>OfficeLocale</literal></link> property of the <literal>Platform</literal> service."
+msgstr ""
+
+#. JiFjE
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id71621894864217\n"
+"help.text"
+msgid "Returns the UTC date and time considering a given local date and time in a timezone."
+msgstr ""
+
+#. AK3nQ
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id401621896674748\n"
+"help.text"
+msgid "<emph>localdatetime</emph>: the local date and time in a specific timezone expressed as a date."
+msgstr ""
+
+#. hpxBF
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id401621896675739\n"
+"help.text"
+msgid "<emph>timezone</emph>: the timezone for which the <literal>localdatetime</literal> argument was given."
+msgstr ""
+
+#. aEuir
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id401621896675550\n"
+"help.text"
+msgid "<emph>locale</emph>: the locale specifying the country for which the <literal>localdatetime</literal> argument was given, expressed either in \"la-CO\" or \"CO\" formats. The default value is the locale defined in the <link href=\"text/sbasic/shared/03/sf_platform.xhp#bm_id111614901524769\" name=\"OfficeLocale_link\"><literal>OfficeLocale</literal></link> property of the <literal>Platform</literal> service."
+msgstr ""
+
+#. y3NSm
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"bas_id861656077547861\n"
+"help.text"
+msgid "' Date/Time in Berlin, June 23, 2022 at 14:30:00"
+msgstr ""
+
+#. HjSnk
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"bas_id731656077523173\n"
+"help.text"
+msgid "' The UTC date/time is June 23, 2022 at 12:30:00"
+msgstr ""
+
+#. RpFvL
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"pyc_id361656077667354\n"
+"help.text"
+msgid "import datetime"
+msgstr ""
+
+#. hgcCJ
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"pyc_id901656077667666\n"
+"help.text"
+msgid "localDT = datetime.datetime(2022, 6, 23, 14, 30, 0)"
+msgstr ""
+
+#. A7GXw
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"pyc_id521656077682826\n"
+"help.text"
+msgid "utcTime = oRegion.UTCDateTime(localDT, \"Europe/Berlin\", \"DE\")"
+msgstr ""
+
+#. tZoWt
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id71621894835287\n"
+"help.text"
+msgid "Returns the current UTC date and time, given a timezone and locale."
+msgstr ""
+
+#. zzSQA
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id491656078254442\n"
+"help.text"
+msgid "This method uses the current date and time of your operating system to calculate the UTC time."
+msgstr ""
+
+#. XxBE8
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id401621896673318\n"
+"help.text"
+msgid "<emph>timezone</emph>: the timezone for which the current UTC time will be calculated."
+msgstr ""
+
+#. FDJ5e
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id401621896674831\n"
+"help.text"
+msgid "<emph>locale</emph>: the locale specifying the country for which the current UTC time will be calculated, given either in \"la-CO\" or \"CO\" formats. The default value is the locale defined in the <link href=\"text/sbasic/shared/03/sf_platform.xhp#bm_id111614901524769\" name=\"OfficeLocale_link\"><literal>OfficeLocale</literal></link> property of the <literal>Platform</literal> service."
+msgstr ""
+
+#. FWSJp
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"bas_id861656078128374\n"
+"help.text"
+msgid "' Suppose the operating system time is June 23rd, 2022 at 10:42:00"
+msgstr ""
+
+#. CWY76
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"bas_id691656078180784\n"
+"help.text"
+msgid "' If the computer is in Europe/Berlin, then UTC time is June 23rd, 2022 at 08:42:00"
+msgstr ""
+
+#. NPVe5
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"pyc_id821656078645252\n"
+"help.text"
+msgid "utcTime = oRegion.UTCNow(\"Europe/Berlin\", \"DE\")"
 msgstr ""
 
 #. GpvmN
@@ -26782,6 +28114,78 @@ msgctxt ""
 msgid "The list of the currently open documents. Special windows are ignored. This list consists of a zero-based one dimensional array either of filenames (in SF_FileSystem.FileNaming notation) or of window titles for unsaved documents."
 msgstr ""
 
+#. 5oGpF
+#: sf_ui.xhp
+msgctxt ""
+"sf_ui.xhp\n"
+"par_id651587913266945\n"
+"help.text"
+msgid "Yes"
+msgstr ""
+
+#. 2RdP5
+#: sf_ui.xhp
+msgctxt ""
+"sf_ui.xhp\n"
+"par_id351587913266211\n"
+"help.text"
+msgid "Returns the height of the active window in pixels."
+msgstr ""
+
+#. AM4nR
+#: sf_ui.xhp
+msgctxt ""
+"sf_ui.xhp\n"
+"par_id651587913266645\n"
+"help.text"
+msgid "Yes"
+msgstr ""
+
+#. MmDG7
+#: sf_ui.xhp
+msgctxt ""
+"sf_ui.xhp\n"
+"par_id351587913266036\n"
+"help.text"
+msgid "Returns the width of the active window in pixels."
+msgstr ""
+
+#. uZMBs
+#: sf_ui.xhp
+msgctxt ""
+"sf_ui.xhp\n"
+"par_id651587913266312\n"
+"help.text"
+msgid "Yes"
+msgstr ""
+
+#. 9AKCg
+#: sf_ui.xhp
+msgctxt ""
+"sf_ui.xhp\n"
+"par_id351587913266296\n"
+"help.text"
+msgid "Returns the X coordinate of the active window, which is the distance to the left edge of the screen in pixels."
+msgstr ""
+
+#. aBiGF
+#: sf_ui.xhp
+msgctxt ""
+"sf_ui.xhp\n"
+"par_id651587913266670\n"
+"help.text"
+msgid "Yes"
+msgstr ""
+
+#. 3DBVb
+#: sf_ui.xhp
+msgctxt ""
+"sf_ui.xhp\n"
+"par_id351587913266216\n"
+"help.text"
+msgid "Returns the Y coordinate of the active window, which is the distance to the top edge of the screen in pixels. This value does not consider window decorations added by your operating system, so even when the window is maximized this value may not be zero."
+msgstr ""
+
 #. BH9YJ
 #: sf_ui.xhp
 msgctxt ""
@@ -27410,6 +28814,1491 @@ msgctxt ""
 "par_id45158858711917\n"
 "help.text"
 msgid "<emph>windowname</emph>: see the definitions above."
+msgstr ""
+
+#. BuQiK
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"tit\n"
+"help.text"
+msgid "SFUnitTests.UnitTest service"
+msgstr ""
+
+#. iVee6
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"bm_id681600788076499\n"
+"help.text"
+msgid "<variable id=\"UnitTestService\"><link href=\"text/sbasic/shared/03/sf_unittest.xhp\" name=\"UnitTest service\"><literal>SFUnitTests</literal>.<literal>UnitTest</literal> service</link></variable>"
+msgstr ""
+
+#. iRNwD
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id181600788076612\n"
+"help.text"
+msgid "The <literal>UnitTest</literal> service provides a framework for automating unit tests using the Basic language, including the ability to:"
+msgstr ""
+
+#. wkD9p
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id301600788076785\n"
+"help.text"
+msgid "Aggregate test cases into test suites and unit tests."
+msgstr ""
+
+#. Dgg9t
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id1001600788076848\n"
+"help.text"
+msgid "Share setup and shutdown code among test cases."
+msgstr ""
+
+#. 768q7
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id67160078807676\n"
+"help.text"
+msgid "Report test results using the <literal>Console</literal>."
+msgstr ""
+
+#. UEt5G
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id411656351918942\n"
+"help.text"
+msgid "Both the unit tests and the code to be tested must be written in Basic. The code being tested may call functions written in other languages."
+msgstr ""
+
+#. CCgbB
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id601656621416963\n"
+"help.text"
+msgid "The <literal>UnitTest</literal> service is not available for Python scripts."
+msgstr ""
+
+#. PBJpL
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"hd_id491656351958796\n"
+"help.text"
+msgid "Definitions"
+msgstr ""
+
+#. kTZBz
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"hd_id31656351967453\n"
+"help.text"
+msgid "Test Case"
+msgstr ""
+
+#. 2SE2W
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id571656351977812\n"
+"help.text"
+msgid "A test case is the individual unit of testing. It checks for a specific response to a particular set of inputs."
+msgstr ""
+
+#. XiXCu
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id391656352078166\n"
+"help.text"
+msgid "In the <literal>UnitTest</literal> service, a test case is represented by a single Basic <literal>Sub</literal> whose name starts with a common prefix (the default is \"Test_\")."
+msgstr ""
+
+#. 2g5tx
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id701656352338645\n"
+"help.text"
+msgid "The test case fails if one of the <literal>AssertX</literal> methods returns <literal>False</literal>."
+msgstr ""
+
+#. 6yQXs
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"hd_id431656352497598\n"
+"help.text"
+msgid "Test Suite"
+msgstr ""
+
+#. Jk79j
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id771656352513789\n"
+"help.text"
+msgid "A test suite is a collection of test cases that should be executed together."
+msgstr ""
+
+#. cFV9D
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id941656352597973\n"
+"help.text"
+msgid "All test cases of a test suite are stored in a single Basic module."
+msgstr ""
+
+#. UEVyk
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id51656352696989\n"
+"help.text"
+msgid "A test suite may implement the <literal>SetUp</literal> and <literal>TearDown</literal> methods to prepare for test cases in its module."
+msgstr ""
+
+#. nEFMy
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"hd_id351656352884283\n"
+"help.text"
+msgid "Unit Test"
+msgstr ""
+
+#. xieZW
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id461656352894003\n"
+"help.text"
+msgid "A full unit test consists of a set of test suites in the same Basic library."
+msgstr ""
+
+#. 6XiCa
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"hd_id991656353328287\n"
+"help.text"
+msgid "Service invocation"
+msgstr ""
+
+#. FVzhB
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id141609955500101\n"
+"help.text"
+msgid "Before using the <literal>UnitTest</literal> service the <literal>ScriptForge</literal> library needs to be loaded or imported:"
+msgstr ""
+
+#. GHXzG
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"hd_id941656357981021\n"
+"help.text"
+msgid "Simple mode"
+msgstr ""
+
+#. C5qBi
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id381656357996613\n"
+"help.text"
+msgid "Invoke the service in <emph>simple mode</emph> to call <literal>AssertX</literal> functions without having to build the full hierarchy of test suites and test cases."
+msgstr ""
+
+#. DRzjW
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id331656358092318\n"
+"help.text"
+msgid "In simple mode, the service is invoked inside the test case, as shown in the example below:"
+msgstr ""
+
+#. RuMFA
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"bas_id501656358186053\n"
+"help.text"
+msgid "' A few dummy tests"
+msgstr ""
+
+#. 2Firz
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"bas_id981656421186233\n"
+"help.text"
+msgid "MsgBox(\"All tests passed\")"
+msgstr ""
+
+#. nMFgq
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"bas_id971656421186872\n"
+"help.text"
+msgid "myTest.ReportError(\"A test failed\")"
+msgstr ""
+
+#. ki4xc
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id321656421319505\n"
+"help.text"
+msgid "In this example, if any of the <literal>AssertEqual</literal> calls fail, the interpreter will go to the <literal>CatchError</literal> label and report the error by calling the <literal>ReportError</literal> method."
+msgstr ""
+
+#. AMsHe
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"hd_id341656353807950\n"
+"help.text"
+msgid "Full mode"
+msgstr ""
+
+#. Cev96
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id881656353390116\n"
+"help.text"
+msgid "When invoked in <emph>full mode</emph>, the service creation is external to the test code and all tests are organized into test cases and test suites inside a single library."
+msgstr ""
+
+#. kRFxC
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id41656354017140\n"
+"help.text"
+msgid "The following example creates a <literal>UnitTest</literal> instance whose tests are located inside the current document (<literal>ThisComponent</literal>) in the \"Tests\" library."
+msgstr ""
+
+#. 3pPFr
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"hd_id731656421609300\n"
+"help.text"
+msgid "A minimalist example in full mode"
+msgstr ""
+
+#. ktFcg
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id721656421629357\n"
+"help.text"
+msgid "Consider that a ODS file has a module named \"MathUtils\" in its \"Standard\" library with the following code:"
+msgstr ""
+
+#. ZijqG
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"bas_id821656421926586\n"
+"help.text"
+msgid "' Code in module Standard.MathUtils"
+msgstr ""
+
+#. N8ifA
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id871656422027581\n"
+"help.text"
+msgid "To create a full test suite, consider that a new library named \"Tests\" is created in the file with a single module \"AllTests\" containing the code below:"
+msgstr ""
+
+#. TdD5n
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"bas_id731656422341011\n"
+"help.text"
+msgid "' Code in module Tests.AllTests"
+msgstr ""
+
+#. TeQGD
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"bas_id671656422476689\n"
+"help.text"
+msgid "' Preparation code ran prior to the first test case"
+msgstr ""
+
+#. 5YeqU
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"bas_id621656422479007\n"
+"help.text"
+msgid "' Optional cleanup code called after the last test case"
+msgstr ""
+
+#. ANk96
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"bas_id141656422684085\n"
+"help.text"
+msgid "test.AssertEqual(Sum(1, 1), 2, \"Sum two positive integers\")"
+msgstr ""
+
+#. vZeA5
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"bas_id491656422684324\n"
+"help.text"
+msgid "test.AssertEqual(Sum(-10, 20), 10, \"Sum of negative and positive integers\")"
+msgstr ""
+
+#. xAf6Z
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"bas_id201656422684556\n"
+"help.text"
+msgid "test.AssertEqual(Sum(1.5, 1), 2.5, \"Sum of float and integer values\")"
+msgstr ""
+
+#. Lp9XE
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"bas_id716356422685228\n"
+"help.text"
+msgid "test.ReportError(\"Sum method is broken\")"
+msgstr ""
+
+#. u2CVn
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"bas_id416564228330400\n"
+"help.text"
+msgid "test.AssertEqual(Multiply(2, 2), 4, \"Multiply two positive integers\")"
+msgstr ""
+
+#. BhroA
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"bas_id231656422833240\n"
+"help.text"
+msgid "test.AssertEqual(Multiply(-4, 2), -8, \"Multiply negative and positive integers\")"
+msgstr ""
+
+#. whh5d
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"bas_id931656422833480\n"
+"help.text"
+msgid "test.AssertEqual(Multiply(1.5, 3), 4.5, \"Multiply of float and integer values\")"
+msgstr ""
+
+#. ixjF2
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"bas_id151656422834184\n"
+"help.text"
+msgid "test.ReportError(\"Multiply method is broken\")"
+msgstr ""
+
+#. y6q9H
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id681656423030706\n"
+"help.text"
+msgid "The test suite above consists of two test cases <literal>Test_Sum</literal> and <literal>Test_Multiply</literal>. To run all tests simply run the <literal>Main</literal> method from the \"AllTests\" module."
+msgstr ""
+
+#. CFFEG
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id681656423146183\n"
+"help.text"
+msgid "The <link href=\"text/sbasic/shared/03/sf_exception.xhp#Console\" name=\"Console\"><literal>Console</literal></link> from the <literal>Exception</literal> service is used as the default output to print test results. After running the example above, the following output will be displayed in the console:"
+msgstr ""
+
+#. SX4Hy
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id161656423510879\n"
+"help.text"
+msgid "If any of the <literal>AssertEqual</literal> methods fails during these tests, an error message is added to the console."
+msgstr ""
+
+#. SKsNp
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"hd_id711600788076834\n"
+"help.text"
+msgid "Properties"
+msgstr ""
+
+#. dUKA3
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id461600788076917\n"
+"help.text"
+msgid "Name"
+msgstr ""
+
+#. 4CFLw
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id221600788076591\n"
+"help.text"
+msgid "Readonly"
+msgstr ""
+
+#. hmcQA
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id761600788076328\n"
+"help.text"
+msgid "Type"
+msgstr ""
+
+#. qr48K
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id67160078807636\n"
+"help.text"
+msgid "Description"
+msgstr ""
+
+#. BLCXX
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id311600788076756\n"
+"help.text"
+msgid "No"
+msgstr ""
+
+#. LwYBg
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id441600788076826\n"
+"help.text"
+msgid "When set to <literal>True</literal> (default) the console shows the standard message appended to the message provided by the tester. When <literal>False</literal>, only the message defined by the tester is used."
+msgstr ""
+
+#. m6reQ
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id49160078807654\n"
+"help.text"
+msgid "Yes"
+msgstr ""
+
+#. diGQ4
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id81600788076419\n"
+"help.text"
+msgid "Value returned by <literal>RunTest</literal> after the unit test is finished. Next is a list of possible values:"
+msgstr ""
+
+#. RqYbB
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id141656425588260\n"
+"help.text"
+msgid "0 - Test finished without errors or test not started<br/>        1 - An assertion within a test case returned <literal>False</literal><br/>        2 - A <literal>SkipTest</literal> was issued by the <literal>Setup</literal> method or by one of the test cases.<br/>        3 - Abnormal end of test"
+msgstr ""
+
+#. sa2t9
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id711600788076534\n"
+"help.text"
+msgid "No"
+msgstr ""
+
+#. WG8MM
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id541600788076645\n"
+"help.text"
+msgid "When set to <literal>True</literal>, all assertions are reported in the console (failing or not). When <literal>False</literal> (default), only failing assertions are reported."
+msgstr ""
+
+#. kbkBT
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id891600788076190\n"
+"help.text"
+msgid "No"
+msgstr ""
+
+#. H5D7L
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id91600788076674\n"
+"help.text"
+msgid "Defines what is done when an assertion fails. Next is a list of possible values:"
+msgstr ""
+
+#. EQBpN
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id671656425606077\n"
+"help.text"
+msgid "0 - Ignore the failure and continue running the test<br/>        1 - The <literal>TearDown</literal> method in the module is executed in the current test suite and the next suite is started (default in full mode).<br/>        2 - Stop immediately (default in simple mode)"
+msgstr ""
+
+#. oxRCB
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id651606319520519\n"
+"help.text"
+msgid "List of Methods in the UnitTest Service"
+msgstr ""
+
+#. d4CFS
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"hd_id201656428230690\n"
+"help.text"
+msgid "Arguments of the AssertX methods"
+msgstr ""
+
+#. ArRiA
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id591656428251124\n"
+"help.text"
+msgid "All assertions test one or two expressions, referred in the remainder of this help page as <emph>A</emph> and <emph>B</emph>. They are always the first one or two arguments in the <literal>AssertX</literal> method."
+msgstr ""
+
+#. Nanrc
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id231656428367462\n"
+"help.text"
+msgid "All <literal>AssertX</literal> methods accept a <literal>message</literal> argument specifying a custom message to be reported in the console regarding the assertion. By default an empty string is used. This argument is always in the last position of the assertion."
+msgstr ""
+
+#. d7AFB
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id91656451227291\n"
+"help.text"
+msgid "Some <literal>AssertX</literal> methods also accept additional arguments, as described by their syntaxes below."
+msgstr ""
+
+#. xbDmc
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id71621894833351\n"
+"help.text"
+msgid "Returns <literal>True</literal> when <emph>A</emph> and <emph>B</emph> are numerical values and are considered to be close to each other, given a relative tolerance."
+msgstr ""
+
+#. STVnD
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id241656426318310\n"
+"help.text"
+msgid "This assertion returns <literal>True</literal> if the two conditions below are met:"
+msgstr ""
+
+#. zBAge
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id861656426361793\n"
+"help.text"
+msgid "A and B can be converted to the <literal>Double</literal> type."
+msgstr ""
+
+#. 48tqj
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id851656426362072\n"
+"help.text"
+msgid "The absolute difference between A and B divided by the largest absolute value of A or B is <emph>lower</emph> than the value specified in <literal>tolerance</literal>."
+msgstr ""
+
+#. Z7Aap
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id71621894830182\n"
+"help.text"
+msgid "Returns <literal>True</literal> when <emph>A</emph> and <emph>B</emph> are considered to be equal."
+msgstr ""
+
+#. 5EHVv
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id241656426317440\n"
+"help.text"
+msgid "When A and B are scalars, <literal>True</literal> is returned if:"
+msgstr ""
+
+#. EACHw
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id861656426361808\n"
+"help.text"
+msgid "Both expressions have the same <literal>VarType</literal> or are both numeric."
+msgstr ""
+
+#. rEEuD
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id851656426362362\n"
+"help.text"
+msgid "Booleans and numeric values are compared with the = operator."
+msgstr ""
+
+#. VFGGv
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id201656427500186\n"
+"help.text"
+msgid "Strings are compared with the builtin <literal>StrComp</literal> function. The comparison is case-sensitive."
+msgstr ""
+
+#. D8kiC
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id861656427531067\n"
+"help.text"
+msgid "Dates and times are compared up to the second."
+msgstr ""
+
+#. nGv5Z
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id361656427557940\n"
+"help.text"
+msgid "<literal>Null</literal>, <literal>Empty</literal> and <literal>Nothing</literal> are not equal, but <literal>AssertEqual(Nothing, Nothing)</literal> returns <literal>True</literal>."
+msgstr ""
+
+#. 7ZYdu
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id31656427624016\n"
+"help.text"
+msgid "UNO objects are compared with the builtin <literal>EqualUnoObjects</literal> method."
+msgstr ""
+
+#. Ec6PU
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id301656427695507\n"
+"help.text"
+msgid "Note that Basic objects are never equal."
+msgstr ""
+
+#. WpMkU
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id691656427837518\n"
+"help.text"
+msgid "When A and B are arrays, <literal>True</literal> is returned if:"
+msgstr ""
+
+#. A5kTv
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id831656427894608\n"
+"help.text"
+msgid "Both arrays have the same number of dimensions (up to 2 dimensions) and their lower and upper bounds are identical for all dimensions."
+msgstr ""
+
+#. sABNY
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id851656427895040\n"
+"help.text"
+msgid "All items in both arrays are equal, one by one."
+msgstr ""
+
+#. eAjBU
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id571656427895400\n"
+"help.text"
+msgid "Two empty arrays are considered to be equal."
+msgstr ""
+
+#. PxfTp
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id71621894830071\n"
+"help.text"
+msgid "Returns <literal>True</literal> when the type of A is <literal>Boolean</literal> and its value is <literal>False</literal>."
+msgstr ""
+
+#. C3NgG
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id71621894830337\n"
+"help.text"
+msgid "Returns <literal>True</literal> when A is greater than B."
+msgstr ""
+
+#. bT3CG
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id991656428670110\n"
+"help.text"
+msgid "The comparison between A and B assumes the following:"
+msgstr ""
+
+#. Uunox
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id591656428689390\n"
+"help.text"
+msgid "Eligible data types are <literal>String</literal>, <literal>Date</literal> or numeric."
+msgstr ""
+
+#. F7Cyz
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id516564286489629\n"
+"help.text"
+msgid "Both expressions must have the same <literal>VarType</literal> or both must be numeric."
+msgstr ""
+
+#. LfUrX
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id211656428689774\n"
+"help.text"
+msgid "String comparisons are case-sensitive."
+msgstr ""
+
+#. HtcFS
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id71621894838548\n"
+"help.text"
+msgid "Returns <literal>True</literal> when A is greater than or equal to B."
+msgstr ""
+
+#. gwLLH
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id991656428670202\n"
+"help.text"
+msgid "The comparison between A and B assumes the following:"
+msgstr ""
+
+#. 8KqmD
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id591656428689207\n"
+"help.text"
+msgid "Eligible data types are <literal>String</literal>, <literal>Date</literal> or numeric."
+msgstr ""
+
+#. oDfjA
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id516564286455529\n"
+"help.text"
+msgid "Both expressions must have the same <literal>VarType</literal> or both must be numeric."
+msgstr ""
+
+#. DWEby
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id211656428663284\n"
+"help.text"
+msgid "String comparisons are case-sensitive."
+msgstr ""
+
+#. BcYoQ
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id71621894831448\n"
+"help.text"
+msgid "Returns <literal>True</literal> when A is found in B."
+msgstr ""
+
+#. UqzzY
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id991656428677632\n"
+"help.text"
+msgid "This assertion assumes the following:"
+msgstr ""
+
+#. gKnpk
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id591656428688858\n"
+"help.text"
+msgid "Expression B may be a 1D array, a ScriptForge <literal>Dictionary</literal> object or a string."
+msgstr ""
+
+#. WSuUE
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id516564286454219\n"
+"help.text"
+msgid "When expression B is a 1D array, expression A may be a date or a numeric value."
+msgstr ""
+
+#. B6JVZ
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id51656678140228\n"
+"help.text"
+msgid "When expression B is a ScriptForge <literal>Dictionary</literal> object, then string A is searched for among the keys in B."
+msgstr ""
+
+#. vvgdS
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id211656428663299\n"
+"help.text"
+msgid "String comparisons are case-sensitive."
+msgstr ""
+
+#. pCSa8
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id71621894831399\n"
+"help.text"
+msgid "Returns <literal>True</literal> when A is an instance of a specified object type, specified as a string containing the type name."
+msgstr ""
+
+#. P4Q7u
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id991656428676302\n"
+"help.text"
+msgid "Expression A may be one of the following:"
+msgstr ""
+
+#. Kd3yd
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id591656428676428\n"
+"help.text"
+msgid "A ScriptForge object. In this case, the <literal>objecttype</literal> argument is a string such as \"DICTIONARY\", \"calc\", \"Dialog\", etc."
+msgstr ""
+
+#. pAE9x
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id516564286456619\n"
+"help.text"
+msgid "A UNO object. In this case, the <literal>objecttype</literal> argument must be a string identical to the value returned by the <literal>SF_Session.UnoObjectType()</literal> method."
+msgstr ""
+
+#. TAtM4
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id211656428680559\n"
+"help.text"
+msgid "An Array. In this case, the <literal>objecttype</literal> argument is expected to be \"array\"."
+msgstr ""
+
+#. dvkQB
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id891656439858783\n"
+"help.text"
+msgid "Any other variable (neither an <literal>Object</literal> nor an <literal>Array</literal>). In this case, <literal>objecttype</literal> is a string matching the value returned by the builtin <literal>TypeName</literal> function."
+msgstr ""
+
+#. cNXhg
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id71621894830197\n"
+"help.text"
+msgid "Returns <literal>True</literal> when A is an object that has the <literal>Nothing</literal> value."
+msgstr ""
+
+#. DAqbe
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id71621894863251\n"
+"help.text"
+msgid "Returns <literal>True</literal> when A has the <literal>Null</literal> value."
+msgstr ""
+
+#. oQpZL
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id71621894838018\n"
+"help.text"
+msgid "Returns <literal>True</literal> when A is less than B."
+msgstr ""
+
+#. DGdwP
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id991656428672332\n"
+"help.text"
+msgid "The comparison between A and B assumes the following:"
+msgstr ""
+
+#. AmmHx
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id591656428689311\n"
+"help.text"
+msgid "Eligible data types are <literal>String</literal>, <literal>Date</literal> or numeric."
+msgstr ""
+
+#. Y6GRH
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id516564286265809\n"
+"help.text"
+msgid "Both expressions must have the same <literal>VarType</literal> or both must be numeric."
+msgstr ""
+
+#. SNBHr
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id211656428660996\n"
+"help.text"
+msgid "String comparisons are case-sensitive."
+msgstr ""
+
+#. wAvBZ
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id71621894208818\n"
+"help.text"
+msgid "Returns <literal>True</literal> when A is less than or equal to B."
+msgstr ""
+
+#. kvCHD
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id991656428606322\n"
+"help.text"
+msgid "The comparison between A and B assumes the following:"
+msgstr ""
+
+#. jD42E
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id591656428682251\n"
+"help.text"
+msgid "Eligible data types are <literal>String</literal>, <literal>Date</literal> or numeric."
+msgstr ""
+
+#. UMG2p
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id516564286265711\n"
+"help.text"
+msgid "Both expressions must have the same <literal>VarType</literal> or both must be numeric."
+msgstr ""
+
+#. tcjQC
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id211656428660176\n"
+"help.text"
+msgid "String comparisons are case-sensitive."
+msgstr ""
+
+#. Zg5MZ
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id71621894862651\n"
+"help.text"
+msgid "Returns <literal>True</literal> if string A matches a given pattern containing wildcards."
+msgstr ""
+
+#. GD2Hu
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id51656446203238\n"
+"help.text"
+msgid "The following wildcards are accepted:"
+msgstr ""
+
+#. CjJSF
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id661656446233484\n"
+"help.text"
+msgid "? - Represents any single character."
+msgstr ""
+
+#. dozgH
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id681656446233831\n"
+"help.text"
+msgid "* - Represents zero, one, or multiple characters."
+msgstr ""
+
+#. fsu2Z
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id71621894832641\n"
+"help.text"
+msgid "Returns <literal>True</literal> when <emph>A</emph> and <emph>B</emph> are numerical values and are <emph>not</emph> considered to be close to each other, given a relative tolerance."
+msgstr ""
+
+#. 3CNkz
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id241656426317970\n"
+"help.text"
+msgid "This assertion returns <literal>True</literal> if the two conditions below are met:"
+msgstr ""
+
+#. NtkrB
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id861656426361686\n"
+"help.text"
+msgid "A and B can be converted to the <literal>Double</literal> type."
+msgstr ""
+
+#. 4L9bJ
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id851656426332052\n"
+"help.text"
+msgid "The absolute difference between A and B divided by the largest absolute value of A or B is <emph>greater</emph> than the value specified in <literal>tolerance</literal>."
+msgstr ""
+
+#. KVBYJ
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id71621894862842\n"
+"help.text"
+msgid "Returns <literal>True</literal> when <emph>A</emph> and <emph>B</emph> are <emph>not</emph> considered to be equal."
+msgstr ""
+
+#. f8xcB
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id581656446598206\n"
+"help.text"
+msgid "This method works both for scalars and arrays. Read the instructions in <link href=\"text/sbasic/shared/03/sf_unittest.xhp#AssertEqual\" name=\"AssertEqual\"><literal>AssertEqual</literal></link> for more information on what equality means in this assertion."
+msgstr ""
+
+#. ENDBA
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id71621894832638\n"
+"help.text"
+msgid "Returns <literal>True</literal> when A (a string) is <emph>not</emph> found in B."
+msgstr ""
+
+#. KNFSF
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id271656446302516\n"
+"help.text"
+msgid "Read the instructions in <link href=\"text/sbasic/shared/03/sf_unittest.xhp#AssertIn\" name=\"AssertIn\"><literal>AssertIn</literal></link> for more information on the assumptions of this method."
+msgstr ""
+
+#. BCzDu
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id71621894831403\n"
+"help.text"
+msgid "Returns <literal>True</literal> when A is <emph>not</emph> an instance of a specified object type."
+msgstr ""
+
+#. 2FDwf
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id271656446949396\n"
+"help.text"
+msgid "Read the instructions in <link href=\"text/sbasic/shared/03/sf_unittest.xhp#AssertIsInstance\" name=\"AssertIsInstance\"><literal>AssertIsInstance</literal></link> for more information on the assumptions of this method."
+msgstr ""
+
+#. TRtFA
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id71621894863961\n"
+"help.text"
+msgid "Returns <literal>True</literal> if string A <emph>does not</emph> match a given pattern containing wildcards."
+msgstr ""
+
+#. aRFUp
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id271656446258396\n"
+"help.text"
+msgid "Read the instructions in <link href=\"text/sbasic/shared/03/sf_unittest.xhp#AssertLike\" name=\"AssertLike\"><literal>AssertLike</literal></link> for more information on the assumptions of this method."
+msgstr ""
+
+#. C9GJn
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id71621894420261\n"
+"help.text"
+msgid "Returns <literal>True</literal> except when A is an object that has the <literal>Nothing</literal> value."
+msgstr ""
+
+#. tdWWt
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id71621894876551\n"
+"help.text"
+msgid "Returns <literal>True</literal> except when A has the <literal>Null</literal> value."
+msgstr ""
+
+#. piNCq
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id71621894860331\n"
+"help.text"
+msgid "Returns <literal>True</literal> when A is <emph>not</emph> a string or <emph>does not</emph> match the given regular expression."
+msgstr ""
+
+#. 24iRs
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id931656448163772\n"
+"help.text"
+msgid "The comparison is case-sensitive."
+msgstr ""
+
+#. LBAZt
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id71621894836031\n"
+"help.text"
+msgid "Returns <literal>True</literal> when string A matches the given regular expression."
+msgstr ""
+
+#. YDnGG
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id931656448163625\n"
+"help.text"
+msgid "The comparison is case-sensitive."
+msgstr ""
+
+#. B2c4q
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id71621894063449\n"
+"help.text"
+msgid "Returns <literal>True</literal> when expression A is a <literal>Boolean</literal> and its value is <literal>True</literal>."
+msgstr ""
+
+#. CsZXs
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id71621894086431\n"
+"help.text"
+msgid "Forces a test case to fail."
+msgstr ""
+
+#. aMzvc
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id751656448550854\n"
+"help.text"
+msgid "A message can be provided to be reported in the console."
+msgstr ""
+
+#. 6ZD5u
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id71621894063631\n"
+"help.text"
+msgid "Writes the specified <literal>message</literal> in the console."
+msgstr ""
+
+#. HmfG2
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id751656448510894\n"
+"help.text"
+msgid "A message can be provided to be reported in the console."
+msgstr ""
+
+#. b2AUv
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id71621894199311\n"
+"help.text"
+msgid "Displays a message box with a message and the current property values of the <literal>Exception</literal> service."
+msgstr ""
+
+#. by77W
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id851656622819891\n"
+"help.text"
+msgid "This method is commonly used in the exception handling section of the <literal>Sub</literal> containing the test case, which is reached when an assertion fails or when the <literal>Fail</literal> method is called."
+msgstr ""
+
+#. ozRN8
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id291656448892783\n"
+"help.text"
+msgid "Depending on the value of the property <literal>WhenAssertionFails</literal>, the test execution may continue or be interrupted."
+msgstr ""
+
+#. q42xs
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id551656448951538\n"
+"help.text"
+msgid "When writing test cases it is recommended to include a call to the <literal>ReportError</literal> method in the exception handling section of the <literal>Sub</literal>."
+msgstr ""
+
+#. pze6V
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id711656449128572\n"
+"help.text"
+msgid "If the property <literal>LongMessage</literal> is equal to <literal>True</literal>, the specified <literal>message</literal> is followed by the standard error message description. Otherwise only the <literal>message</literal> is displayed."
+msgstr ""
+
+#. AtCyJ
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id71621894063361\n"
+"help.text"
+msgid "Executes the complete test suite implemented in the specified module. Each test case is run independently from each other."
+msgstr ""
+
+#. AqkBH
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id201656449688023\n"
+"help.text"
+msgid "Running a test suite consists of:"
+msgstr ""
+
+#. YqC5U
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id751656449718279\n"
+"help.text"
+msgid "Executing the optional <literal>Setup</literal> method present in the module."
+msgstr ""
+
+#. Kmshw
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id611656449718505\n"
+"help.text"
+msgid "Executing once each test case, in no specific order."
+msgstr ""
+
+#. dpWzo
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id461656449718687\n"
+"help.text"
+msgid "Executing the optional <literal>TearDown</literal> method present in the module."
+msgstr ""
+
+#. rFf8d
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id751656448521144\n"
+"help.text"
+msgid "The argument <literal>testcasepattern</literal> specifies a pattern composed of \"?\" and \"*\" wildcards to select which test cases will be run. The comparison is not case-sensitive."
+msgstr ""
+
+#. T3faF
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id81656448858455\n"
+"help.text"
+msgid "If a <literal>message</literal> is provided, it is written to the console when the test starts."
+msgstr ""
+
+#. TDXg5
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id71621894064311\n"
+"help.text"
+msgid "Interrupts the running test suite without calling the <literal>TearDown</literal> method."
+msgstr ""
+
+#. A6W9G
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id781656450313544\n"
+"help.text"
+msgid "Skipping a test is usually meaningful during the <literal>Setup</literal> method when not all conditions to run the test are met."
+msgstr ""
+
+#. wzZy2
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id531656450405799\n"
+"help.text"
+msgid "It is up to the <literal>Setup</literal> method to exit the <literal>Sub</literal> shortly after the <literal>SkipTest</literal> call."
+msgstr ""
+
+#. KEaV4
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id581656450504005\n"
+"help.text"
+msgid "If <literal>SkipTest</literal> is called from within a test case, the execution of the test suite is interrupted and the remaining test cases are not run. Keep in mind that the order in which test cases are run is arbitrary within a test suite."
+msgstr ""
+
+#. BFyev
+#: sf_unittest.xhp
+msgctxt ""
+"sf_unittest.xhp\n"
+"par_id81656449618455\n"
+"help.text"
+msgid "If a <literal>message</literal> is provided, it is written to the console."
 msgstr ""
 
 #. NyP5B
