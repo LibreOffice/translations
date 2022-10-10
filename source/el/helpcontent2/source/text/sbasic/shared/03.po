@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2022-07-04 18:04+0200\n"
-"PO-Revision-Date: 2022-08-03 22:48+0000\n"
+"POT-Creation-Date: 2022-10-10 13:35+0200\n"
+"PO-Revision-Date: 2022-10-09 04:13+0000\n"
 "Last-Translator: Dimitris Spingos <dmtrs32@gmail.com>\n"
 "Language-Team: Greek <https://translations.documentfoundation.org/projects/libo_help-master/textsbasicshared03/el/>\n"
 "Language: el\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Accelerator-Marker: ~\n"
-"X-Generator: Weblate 4.12.2\n"
+"X-Generator: LibreOffice\n"
 "X-POOTLE-MTIME: 1549442158.000000\n"
 
 #. ViEWM
@@ -3913,14 +3913,14 @@ msgctxt ""
 msgid "Or using the <literal>OpenDocument</literal> method from the <literal>UI</literal> service:"
 msgstr "Ή χρησιμοποιώντας τη μέθοδο <literal>OpenDocument</literal> από την υπηρεσία <literal>UI</literal>:"
 
-#. MDxMC
+#. LA2sA
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id741621467697967\n"
 "help.text"
-msgid "It is also possible to instantiate the <literal>Calc</literal> service using the <literal>CreateScriptService</literal> method:"
-msgstr "Είναι επίσης δυνατό να δημιουργήσετε την υπηρεσία <literal>Calc</literal> χρησιμοποιώντας τη μέθοδο <literal>CreateScriptService</literal>:"
+msgid "It is also possible to instantiate the <literal>Calc</literal> service specifying a window name for the <literal>CreateScriptService</literal> method:"
+msgstr ""
 
 #. CKafD
 #: sf_calc.xhp
@@ -3930,6 +3930,15 @@ msgctxt ""
 "help.text"
 msgid "In the example above, \"MyFile.ods\" is the name of an open document window. If this argument is not provided, the active window is considered."
 msgstr "Στο παραπάνω παράδειγμα, το \"MyFile.ods\" είναι το όνομα ενός ανοιχτού παραθύρου εγγράφου. Εάν αυτό το όρισμα δεν παρέχεται, εξετάζεται το ενεργό παράθυρο."
+
+#. ucEa2
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id551658777771853\n"
+"help.text"
+msgid "It is also possible to invoke the <literal>Calc</literal> service using the document referenced by <literal>ThisComponent</literal>. This is specially useful when running a macro from within the Basic IDE."
+msgstr ""
 
 #. gfpHw
 #: sf_calc.xhp
@@ -5137,6 +5146,15 @@ msgctxt ""
 msgid "For example, suppose range <emph>A1:J200</emph> is selected (height = 200), so the default formula is <emph>=(COUNTBLANK(A1:A200)=200)</emph>. This means that if all 200 cells are empty in the first column (Column A), then the column is deleted. Note that the formula is expressed with respect to the first column only. Internally the <literal>CompactLeft</literal> method will generalize this formula for all the remaining columns."
 msgstr "Για παράδειγμα, ας υποθέσουμε ότι έχει επιλεγεί η περιοχή <emph>A1:J200</emph> (ύψος = 200), επομένως ο προεπιλεγμένος τύπος είναι <emph>=(COUNTBLANK(A1:A200)=200)</emph>. Αυτό σημαίνει ότι εάν και τα 200 κελιά είναι κενά στην πρώτη στήλη (Στήλη Α), τότε η στήλη διαγράφεται. Σημειώστε ότι ο τύπος εκφράζεται μόνο σε σχέση με την πρώτη στήλη. Εσωτερικά, η μέθοδος <literal>CompactLeft</literal> θα γενικεύσει αυτόν τον τύπο για όλες τις υπόλοιπες στήλες."
 
+#. viKpg
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id431657568414625\n"
+"help.text"
+msgid "Calc functions used in the <literal>filterformula</literal> argument must be expressed using their English names. Visit the Wiki page <link href=\"https://wiki.documentfoundation.org/Documentation/Calc_Functions/List_of_Functions\" name=\"CalcFunctions\">List of Calc Functions</link> for a complete list of Calc functions in English."
+msgstr ""
+
 #. FDspT
 #: sf_calc.xhp
 msgctxt ""
@@ -5316,6 +5334,15 @@ msgctxt ""
 "help.text"
 msgid "For example, suppose range <emph>A1:J200</emph> is selected (width = 10), so the default formula is <emph>=(COUNTBLANK(A1:J1)=10)</emph>. This means that if all 10 cells are empty in the first row (Row 1), then the row is deleted. Note that the formula is expressed with respect to the first row only. Internally the <literal>CompactUp</literal> method will generalize this formula for all the remaining rows."
 msgstr "Για παράδειγμα, ας υποθέσουμε ότι έχει επιλεγεί η περιοχή <emph>A1:J200</emph> (πλάτος = 10), οπότε ο προεπιλεγμένος τύπος είναι <emph>=(COUNTBLANK(A1:J1)=10)</emph>. Αυτό σημαίνει ότι εάν και τα 10 κελιά είναι κενά στην πρώτη σειρά (Σειρά 1), τότε η σειρά διαγράφεται. Σημειώστε ότι ο τύπος εκφράζεται μόνο σε σχέση με την πρώτη σειρά. Εσωτερικά, η μέθοδος <literal>CompactUp</literal> θα γενικεύσει αυτόν τον τύπο για όλες τις υπόλοιπες σειρές."
+
+#. VCrie
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id431657568414714\n"
+"help.text"
+msgid "The Calc functions used in the formula specified in the <literal>filterformula</literal> argument must be expressed using their English names. Visit the Wiki page <link href=\"https://wiki.documentfoundation.org/Documentation/Calc_Functions/List_of_Functions\" name=\"CalcFunctions\">List of Calc Functions</link> for a complete list of Calc functions in English."
+msgstr ""
 
 #. GuWzD
 #: sf_calc.xhp
@@ -6316,6 +6343,15 @@ msgctxt ""
 msgid "Get the formula(s) stored in the given range of cells as a single string, a 1D or a 2D array of strings."
 msgstr "Λάβετε τους τύπους που είναι αποθηκευμένοι στη δεδομένη περιοχή κελιών ως μια μονή συμβολοσειρά, μια 1Δ ή μια 2Δ σειρά συμβολοσειρών."
 
+#. ojiDi
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id291658146319931\n"
+"help.text"
+msgid "The names of Calc functions used in the returned formulas are expressed in English. Visit the Wiki page <link href=\"https://wiki.documentfoundation.org/Documentation/Calc_Functions/List_of_Functions\" name=\"CalcFunctions\">List of Calc Functions</link> for a complete list of Calc functions in English."
+msgstr ""
+
 #. KDFkQ
 #: sf_calc.xhp
 msgctxt ""
@@ -7126,96 +7162,6 @@ msgctxt ""
 msgid "To dump the full contents of an array in a sheet, use <emph>SetArray</emph>. To dump the contents of an array only within the boundaries of the targeted range of cells, use <emph>SetValue</emph>."
 msgstr "Για να απορρίψετε τα πλήρη περιεχόμενα ενός πίνακα σε ένα φύλλο, χρησιμοποιήστε το <emph>SetArray</emph>. Για να απορρίψετε τα περιεχόμενα ενός πίνακα μόνο εντός των ορίων της περιοχής προορισμού κελιών, χρησιμοποιήστε το <emph>SetValue</emph>."
 
-#. ecovS
-#: sf_calc.xhp
-msgctxt ""
-"sf_calc.xhp\n"
-"par_id601592231799489\n"
-"help.text"
-msgid "Stores the given value in the specified range. The size of the modified area is equal to the size of the target range."
-msgstr "Αποθηκεύει τη δεδομένη τιμή στην καθορισμένη περιοχή. Το μέγεθος της τροποποιημένης περιοχής είναι ίσο με το μέγεθος του περιοχής προορισμού."
-
-#. PeoKo
-#: sf_calc.xhp
-msgctxt ""
-"sf_calc.xhp\n"
-"par_id1001592233389953\n"
-"help.text"
-msgid "The method returns a string representing the modified area as a range of cells."
-msgstr "Η μέθοδος επιστρέφει μια συμβολοσειρά που αντιπροσωπεύει την τροποποιημένη περιοχή ως περιοχή κελιών."
-
-#. xYrHQ
-#: sf_calc.xhp
-msgctxt ""
-"sf_calc.xhp\n"
-"par_id361592231799255\n"
-"help.text"
-msgid "<emph>targetrange</emph>: The range where to store the given value, as a string."
-msgstr "<emph>targettrange</emph> (περιοχή προορισμού): Η περιοχή όπου αποθηκεύεται η δεδομένη τιμή, ως συμβολοσειρά."
-
-#. dydXF
-#: sf_calc.xhp
-msgctxt ""
-"sf_calc.xhp\n"
-"par_id461592232081985\n"
-"help.text"
-msgid "<emph>value</emph>: A scalar, a vector or an array with the new values for each cell of the range. The new values must be strings, numeric values or dates. Other types will cause the corresponding cells to be emptied."
-msgstr "<emph>value</emph> (τιμή): Μια βαθμωτή, ένα διάνυσμα ή ένας πίνακας με τις νέες τιμές για κάθε κελί της περιοχής. Οι νέες τιμές πρέπει να είναι συμβολοσειρές, αριθμητικές τιμές ή ημερομηνίες. Άλλοι τύποι θα προκαλέσουν το άδειασμα των αντίστοιχων κελιών."
-
-#. CgwVF
-#: sf_calc.xhp
-msgctxt ""
-"sf_calc.xhp\n"
-"par_id841592745785192\n"
-"help.text"
-msgid "The full range is updated and the remainder of the sheet is left unchanged. If the size of <literal>value</literal> is smaller than the size of <literal>targetrange</literal>, then the remaining cells will be emptied."
-msgstr "Η πλήρης περιοχή ενημερώνεται και το υπόλοιπο φύλλο παραμένει αμετάβλητο. Εάν το μέγεθος του <literal>value</literal> (τιμής) είναι μικρότερο από το μέγεθος του <literal>targettrange</literal>, τότε τα υπόλοιπα κελιά θα αδειάσουν."
-
-#. QFkLr
-#: sf_calc.xhp
-msgctxt ""
-"sf_calc.xhp\n"
-"par_id191611776838396\n"
-"help.text"
-msgid "If the size of <literal>value</literal> is larger than the size of <literal>targetrange</literal>, then <literal>value</literal> is only partially copied until it fills the size of <literal>targetrange</literal>."
-msgstr "Εάν το μέγεθος του <literal>value</literal> είναι μεγαλύτερο από το μέγεθος του <literal>targettrange</literal>, τότε η <literal>value</literal> αντιγράφεται μόνο εν μέρει μέχρι να συμπληρώσει το μέγεθος του <literal>targettrange </literal>."
-
-#. ykBk6
-#: sf_calc.xhp
-msgctxt ""
-"sf_calc.xhp\n"
-"par_id71611776941663\n"
-"help.text"
-msgid "Vectors are expanded vertically, except if <literal>targetrange</literal> has a height of exactly 1 row."
-msgstr "Τα διανύσματα επεκτείνονται κατακόρυφα, εκτός εάν το <literal>targettrange</literal> έχει ύψος ακριβώς 1 σειρά."
-
-#. FJCPf
-#: sf_calc.xhp
-msgctxt ""
-"sf_calc.xhp\n"
-"bas_id541592232948567\n"
-"help.text"
-msgid "'Below the Value array is smaller than the TargetRange (remaining cells are emptied)"
-msgstr "' Πιο κάτω ο πίνακας Value είναι μικρότερος από το TargetRange (τα υπόλοιπα κελιά αδειάζονται)"
-
-#. vuu9B
-#: sf_calc.xhp
-msgctxt ""
-"sf_calc.xhp\n"
-"bas_id541592232948825\n"
-"help.text"
-msgid "'Below the Value and TargetRange have the same size"
-msgstr "' Κάτω από την Value και το TargetRange έχουν το ίδιο μέγεθος"
-
-#. 4LFnH
-#: sf_calc.xhp
-msgctxt ""
-"sf_calc.xhp\n"
-"par_id731621689592755\n"
-"help.text"
-msgid "If you want to fill a single row with values, you can use the <literal>Offset</literal> function. In the example below, consider that <literal>arrData</literal> is a one-dimensional array:"
-msgstr "Εάν θέλετε να γεμίσετε μια μεμονωμένη σειρά με τιμές, μπορείτε να χρησιμοποιήσετε τη συνάρτηση <literal>Offset</literal>. Στο παρακάτω παράδειγμα, θεωρήστε ότι το <literal>arrData</literal> είναι ένας μονοδιάστατος πίνακας:"
-
 #. g8mER
 #: sf_calc.xhp
 msgctxt ""
@@ -7333,6 +7279,15 @@ msgctxt ""
 msgid "Vectors are always expanded vertically, except if <literal>targetrange</literal> has a height of exactly 1 row."
 msgstr "Τα διανύσματα επεκτείνονται πάντα κατακόρυφα, εκτός εάν το <literal>targettrange</literal> έχει ύψος ακριβώς 1 σειρά."
 
+#. XbQTz
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id431657568413185\n"
+"help.text"
+msgid "Calc functions used in the <literal>formula</literal> argument must be expressed using their English names. Visit the Wiki page <link href=\"https://wiki.documentfoundation.org/Documentation/Calc_Functions/List_of_Functions\" name=\"CalcFunctions\">List of Calc Functions</link> for a complete list of Calc functions in English."
+msgstr ""
+
 #. rNEEY
 #: sf_calc.xhp
 msgctxt ""
@@ -7350,6 +7305,96 @@ msgctxt ""
 "help.text"
 msgid "'D2 contains the formula \"=H2\""
 msgstr "' Το D2 περιέχει τον τύπο \"=H2\""
+
+#. ecovS
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id601592231799489\n"
+"help.text"
+msgid "Stores the given value in the specified range. The size of the modified area is equal to the size of the target range."
+msgstr "Αποθηκεύει τη δεδομένη τιμή στην καθορισμένη περιοχή. Το μέγεθος της τροποποιημένης περιοχής είναι ίσο με το μέγεθος του περιοχής προορισμού."
+
+#. PeoKo
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id1001592233389953\n"
+"help.text"
+msgid "The method returns a string representing the modified area as a range of cells."
+msgstr "Η μέθοδος επιστρέφει μια συμβολοσειρά που αντιπροσωπεύει την τροποποιημένη περιοχή ως περιοχή κελιών."
+
+#. xYrHQ
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id361592231799255\n"
+"help.text"
+msgid "<emph>targetrange</emph>: The range where to store the given value, as a string."
+msgstr "<emph>targettrange</emph> (περιοχή προορισμού): Η περιοχή όπου αποθηκεύεται η δεδομένη τιμή, ως συμβολοσειρά."
+
+#. dydXF
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id461592232081985\n"
+"help.text"
+msgid "<emph>value</emph>: A scalar, a vector or an array with the new values for each cell of the range. The new values must be strings, numeric values or dates. Other types will cause the corresponding cells to be emptied."
+msgstr "<emph>value</emph> (τιμή): Μια βαθμωτή, ένα διάνυσμα ή ένας πίνακας με τις νέες τιμές για κάθε κελί της περιοχής. Οι νέες τιμές πρέπει να είναι συμβολοσειρές, αριθμητικές τιμές ή ημερομηνίες. Άλλοι τύποι θα προκαλέσουν το άδειασμα των αντίστοιχων κελιών."
+
+#. CgwVF
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id841592745785192\n"
+"help.text"
+msgid "The full range is updated and the remainder of the sheet is left unchanged. If the size of <literal>value</literal> is smaller than the size of <literal>targetrange</literal>, then the remaining cells will be emptied."
+msgstr "Η πλήρης περιοχή ενημερώνεται και το υπόλοιπο φύλλο παραμένει αμετάβλητο. Εάν το μέγεθος του <literal>value</literal> (τιμής) είναι μικρότερο από το μέγεθος του <literal>targettrange</literal>, τότε τα υπόλοιπα κελιά θα αδειάσουν."
+
+#. QFkLr
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id191611776838396\n"
+"help.text"
+msgid "If the size of <literal>value</literal> is larger than the size of <literal>targetrange</literal>, then <literal>value</literal> is only partially copied until it fills the size of <literal>targetrange</literal>."
+msgstr "Εάν το μέγεθος του <literal>value</literal> είναι μεγαλύτερο από το μέγεθος του <literal>targettrange</literal>, τότε η <literal>value</literal> αντιγράφεται μόνο εν μέρει μέχρι να συμπληρώσει το μέγεθος του <literal>targettrange </literal>."
+
+#. ykBk6
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id71611776941663\n"
+"help.text"
+msgid "Vectors are expanded vertically, except if <literal>targetrange</literal> has a height of exactly 1 row."
+msgstr "Τα διανύσματα επεκτείνονται κατακόρυφα, εκτός εάν το <literal>targettrange</literal> έχει ύψος ακριβώς 1 σειρά."
+
+#. FJCPf
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"bas_id541592232948567\n"
+"help.text"
+msgid "'Below the Value array is smaller than the TargetRange (remaining cells are emptied)"
+msgstr "' Πιο κάτω ο πίνακας Value είναι μικρότερος από το TargetRange (τα υπόλοιπα κελιά αδειάζονται)"
+
+#. vuu9B
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"bas_id541592232948825\n"
+"help.text"
+msgid "'Below the Value and TargetRange have the same size"
+msgstr "' Κάτω από την Value και το TargetRange έχουν το ίδιο μέγεθος"
+
+#. 4LFnH
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id731621689592755\n"
+"help.text"
+msgid "If you want to fill a single row with values, you can use the <literal>Offset</literal> function. In the example below, consider that <literal>arrData</literal> is a one-dimensional array:"
+msgstr "Εάν θέλετε να γεμίσετε μια μεμονωμένη σειρά με τιμές, μπορείτε να χρησιμοποιήσετε τη συνάρτηση <literal>Offset</literal>. Στο παρακάτω παράδειγμα, θεωρήστε ότι το <literal>arrData</literal> είναι ένας μονοδιάστατος πίνακας:"
 
 #. gF7Gb
 #: sf_calc.xhp
@@ -12517,14 +12562,14 @@ msgctxt ""
 msgid "<emph>inputstr</emph>: The string to import."
 msgstr "<emph>inputstr</emph>: Η συμβολοσειρά προς εισαγωγή."
 
-#. GDAGm
+#. eCfBF
 #: sf_dictionary.xhp
 msgctxt ""
 "sf_dictionary.xhp\n"
 "par_id201601391980268\n"
 "help.text"
-msgid "<emph>overwrite</emph>: When <literal>True</literal>, entries with same name may exist in the dictionary and their values are overwritten. When <literal>False</literal> (default), repeated keys will raise an error. Beware that dictionary keys are not case-sensitive while names are case-sensitive in JSON strings."
-msgstr "<emph>overwrite</emph> (αντικατάσταση): Όταν είναι <literal>True</literal>, καταχωρήσεις με το ίδιο όνομα ενδέχεται να υπάρχουν στο λεξικό και οι τιμές τους αντικαθίστανται. Όταν είναι <literal>False</literal> (προεπιλογή), τα επαναλαμβανόμενα κλειδιά θα προκαλέσουν σφάλμα. Προσέξτε ότι τα κλειδιά λεξικού δεν κάνουν διάκριση πεζών-κεφαλαίων, ενώ τα ονόματα έχουν διάκριση πεζών-κεφαλαίων στις συμβολοσειρές JSON."
+msgid "<emph>overwrite</emph>: When <literal>True</literal>, entries with same name may exist in the dictionary and their values are overwritten. When <literal>False</literal> (default), repeated keys will raise an error. Be aware that dictionary keys are not case-sensitive while names are case-sensitive in JSON strings."
+msgstr ""
 
 #. aBFC5
 #: sf_dictionary.xhp
@@ -12805,14 +12850,23 @@ msgctxt ""
 msgid "Alternatively you can use the methods <literal>CreateDocument</literal> and <literal>OpenDocument</literal> from the <literal>UI</literal> service."
 msgstr "Εναλλακτικά, μπορείτε να χρησιμοποιήσετε τις μεθόδους <literal>CreateDocument</literal> και <literal>OpenDocument</literal> από την υπηρεσία <literal>UI</literal>."
 
-#. kv6B9
+#. uwA2W
 #: sf_document.xhp
 msgctxt ""
 "sf_document.xhp\n"
 "par_id691622816765571\n"
 "help.text"
-msgid "Directly if the document is already open."
-msgstr "Απευθείας εάν το έγγραφο είναι ήδη ανοιχτό."
+msgid "Using a window name if the document is already open."
+msgstr ""
+
+#. yRfyT
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
+"par_id551658777771853\n"
+"help.text"
+msgid "Using the document referenced by <literal>ThisComponent</literal>. This is specially useful when running a macro from within the Basic IDE."
+msgstr ""
 
 #. yFDEW
 #: sf_document.xhp
@@ -12983,7 +13037,7 @@ msgctxt ""
 "par_id941589194571327\n"
 "help.text"
 msgid "Returns a list with the export filter names applicable to the current document as a zero-based array of strings. Filters used for both import/export are also returned."
-msgstr ""
+msgstr "Επιστρέφει έναν κατάλογο με τα ονόματα φίλτρων εξαγωγής που ισχύουν για το τρέχον έγγραφο ως πίνακας συμβολοσειρών με βάση το μηδέν. Επιστρέφονται επίσης τα φίλτρα που χρησιμοποιούνται για εισαγωγή/εξαγωγή."
 
 #. 7vqDq
 #: sf_document.xhp
@@ -12992,7 +13046,7 @@ msgctxt ""
 "par_id201589194571067\n"
 "help.text"
 msgid "Yes"
-msgstr ""
+msgstr "Ναι"
 
 #. UmCHS
 #: sf_document.xhp
@@ -13001,7 +13055,7 @@ msgctxt ""
 "par_id941589194571922\n"
 "help.text"
 msgid "Returns a list with the import filter names applicable to the current document as a zero-based array of strings. Filters used for both import/export are also returned."
-msgstr ""
+msgstr "Επιστρέφει έναν κατάλογο με τα ονόματα φίλτρων εισαγωγής που ισχύουν για το τρέχον έγγραφο ως πίνακας συμβολοσειρών με βάση το μηδέν. Επιστρέφονται επίσης τα φίλτρα που χρησιμοποιούνται για εισαγωγή/εξαγωγή."
 
 #. Yo8T4
 #: sf_document.xhp
@@ -14299,14 +14353,14 @@ msgctxt ""
 msgid "<emph>arg0[, arg1, ...]</emph>: Any number of arguments of any type."
 msgstr "<emph>arg0[, arg1, ...]</emph>: Οποιοσδήποτε αριθμός ορισμάτων οποιουδήποτε τύπου."
 
-#. ZxYFC
+#. sCSES
 #: sf_exception.xhp
 msgctxt ""
 "sf_exception.xhp\n"
 "par_id111621624672183\n"
 "help.text"
-msgid "Displays the list of arguments in a readable form in the Python shell (APSO) console. Arguments are separated by a TAB character (simulated by spaces)."
-msgstr "Εμφανίζει τον κατάλογο των ορισμάτων σε αναγνώσιμη μορφή στην κονσόλα του κελύφους της Python (APSO). Τα ορίσματα διαχωρίζονται με έναν χαρακτήρα TAB (προσομοιωμένο με κενά)."
+msgid "Displays the list of arguments in a readable form in the platform console. Arguments are separated by a TAB character (simulated by spaces)."
+msgstr ""
 
 #. ujSFu
 #: sf_exception.xhp
@@ -14317,6 +14371,15 @@ msgctxt ""
 msgid "The same string is added to the ScriptForge debug console."
 msgstr "Η ίδια συμβολοσειρά προστίθεται στην κονσόλα αποσφαλμάτωσης ScriptForge."
 
+#. yreJF
+#: sf_exception.xhp
+msgctxt ""
+"sf_exception.xhp\n"
+"par_id551655563148866\n"
+"help.text"
+msgid "If <link href=\"https://extensions.libreoffice.org/en/extensions/show/apso-alternative-script-organizer-for-python\" name=\"APSO Python shell\">Python shell (APSO)</link> is active, <literal>PythonPrint</literal> content is written to APSO console in place of the platform console."
+msgstr ""
+
 #. ixNfF
 #: sf_exception.xhp
 msgctxt ""
@@ -14326,14 +14389,14 @@ msgctxt ""
 msgid "<emph>arg0[, arg1, ...]</emph>: Any number of arguments of any type. The maximum length of each individual argument is 1024 characters."
 msgstr "<emph>arg0[, arg1, ...]</emph>: Οποιοσδήποτε αριθμός ορισμάτων οποιουδήποτε τύπου. Το μέγιστο μήκος κάθε μεμονωμένου ορίσματος είναι 1024 χαρακτήρες."
 
-#. f5WaM
+#. U88JC
 #: sf_exception.xhp
 msgctxt ""
 "sf_exception.xhp\n"
 "par_id261123015276160\n"
 "help.text"
-msgid "In python use simply the builtin print() statement."
-msgstr "Στην python χρησιμοποιήστε απλώς την ενσωματωμένη δήλωση print()."
+msgid "In Python use a <literal>print</literal> statement to print to the APSO console or use the <literal>DebugPrint</literal> method to print to ScriptForge's console."
+msgstr ""
 
 #. CUoch
 #: sf_exception.xhp
@@ -15136,14 +15199,14 @@ msgctxt ""
 msgid "In the examples below the first line copies a single file whereas the second line copies multiple files using wildcards."
 msgstr "Στα παρακάτω παραδείγματα, η πρώτη γραμμή αντιγράφει ένα μόνο αρχείο, ενώ η δεύτερη γραμμή αντιγράφει πολλά αρχεία χρησιμοποιώντας χαρακτήρες υποκατάστασης."
 
-#. GevfF
+#. 7xndg
 #: sf_filesystem.xhp
 msgctxt ""
 "sf_filesystem.xhp\n"
 "par_id411626216328023\n"
 "help.text"
-msgid "Beware that subfolders and their contents are not copied when wildcards are used in the <emph>source</emph> argument."
-msgstr "Προσέξτε ότι οι υποφάκελοι και τα περιεχόμενά τους δεν αντιγράφονται όταν χρησιμοποιούνται χαρακτήρες υποκατάστασης στο όρισμα <emph>source</emph>."
+msgid "Be aware that subfolders and their contents are not copied when wildcards are used in the <emph>source</emph> argument."
+msgstr ""
 
 #. TdGi7
 #: sf_filesystem.xhp
@@ -15298,14 +15361,14 @@ msgctxt ""
 msgid "<emph>encoding</emph>: The character set to be used. The default encoding is \"UTF-8\"."
 msgstr "<emph>encoding</emph> (κωδικοποίηση): Το σύνολο των χαρακτήρων που θα χρησιμοποιηθεί. Η προεπιλεγμένη κωδικοποίηση είναι \"UTF-8\"."
 
-#. eoE92
+#. Pas6f
 #: sf_filesystem.xhp
 msgctxt ""
 "sf_filesystem.xhp\n"
 "par_id141613001281573\n"
 "help.text"
-msgid "To learn more about the names of character sets, visit <link href=\"https://www.iana.org/assignments/character-sets/character-sets.xhtml\" name=\"Character Sets\">IANA's Character Set</link> page. Beware that %PRODUCTNAME does not implement all existing character sets."
-msgstr "Για να μάθετε περισσότερα σχετικά με τα ονόματα των συνόλων χαρακτήρων, επισκεφτείτε τη σελίδα <link href=\"https://www.iana.org/assignments/character-sets/character-sets.xhtml\" name=\"Character Sets\">Σύνολο χαρακτήρων IANA</link>. Προσέξτε ότι το %PRODUCTNAME δεν υλοποιεί όλα τα υφιστάμενα σύνολα χαρακτήρων."
+msgid "To learn more about the names of character sets, visit <link href=\"https://www.iana.org/assignments/character-sets/character-sets.xhtml\" name=\"Character Sets\">IANA's Character Set</link> page. Be aware that %PRODUCTNAME does not implement all existing character sets."
+msgstr ""
 
 #. DVGxr
 #: sf_filesystem.xhp
@@ -15424,14 +15487,14 @@ msgctxt ""
 msgid "Returns a string containing the folder where the specified extension package is installed."
 msgstr "Επιστρέφει μια συμβολοσειρά που περιέχει το φάκελο, όπου είναι εγκατεστημένο το καθορισμένο πακέτο επέκτασης."
 
-#. xuDgD
+#. pJWi2
 #: sf_filesystem.xhp
 msgctxt ""
 "sf_filesystem.xhp\n"
-"par_id21612999775311\n"
+"par_id711658780480236\n"
 "help.text"
 msgid "The current value of the property <literal>SF_FileSystem.FileNaming</literal> is used to determine the notation of the returned string."
-msgstr "Η τρέχουσα τιμή της ιδιότητας <literal>SF_FileSystem.FileNaming</literal> χρησιμοποιείται για τον προσδιορισμό του συμβολισμού της συμβολοσειράς που επιστρέφεται."
+msgstr ""
 
 #. jWSSt
 #: sf_filesystem.xhp
@@ -15945,6 +16008,51 @@ msgctxt ""
 "help.text"
 msgid "Wildcard characters are not allowed in <literal>destination</literal>."
 msgstr "Οι χαρακτήρες υποκατάστασης δεν επιτρέπονται στον <literal>destination</literal> (προορισμό)."
+
+#. DqpaF
+#: sf_filesystem.xhp
+msgctxt ""
+"sf_filesystem.xhp\n"
+"par_id871583670342051\n"
+"help.text"
+msgid "Returns a string containing the normalized path name by collapsing redundant separators and up-level references."
+msgstr ""
+
+#. heCzw
+#: sf_filesystem.xhp
+msgctxt ""
+"sf_filesystem.xhp\n"
+"par_id541658780038027\n"
+"help.text"
+msgid "For instance, the path names <literal>A//B</literal>, <literal>A/B/</literal>, <literal>A/./B</literal> and <literal>A/foo/../B</literal> are all normalized to <literal>A/B</literal>."
+msgstr ""
+
+#. A6mAb
+#: sf_filesystem.xhp
+msgctxt ""
+"sf_filesystem.xhp\n"
+"par_id881613074436118\n"
+"help.text"
+msgid "On Windows, forward slashes \"/\" are converted to backward slashes \"\\\"."
+msgstr ""
+
+#. 56xkN
+#: sf_filesystem.xhp
+msgctxt ""
+"sf_filesystem.xhp\n"
+"par_id381658780455018\n"
+"help.text"
+msgid "The current value of the property <literal>SF_FileSystem.FileNaming</literal> is used to determine the notation of the <literal>filename</literal> argument as well as the format of the returned string."
+msgstr ""
+
+#. G9ARW
+#: sf_filesystem.xhp
+msgctxt ""
+"sf_filesystem.xhp\n"
+"par_id481583670340107\n"
+"help.text"
+msgid "<emph>filename</emph>: a string representing a valid path name. The file or directory represented by this argument may not exist."
+msgstr ""
 
 #. JNTia
 #: sf_filesystem.xhp
@@ -17314,14 +17422,14 @@ msgctxt ""
 msgid "The value returned by the <literal>Controls</literal> method depends on the arguments provided:"
 msgstr "Η τιμή που επιστρέφεται από τη μέθοδο <literal>Controls</literal> εξαρτάται από τα ορίσματα που παρέχονται:"
 
-#. YkyY2
+#. VXWwg
 #: sf_form.xhp
 msgctxt ""
 "sf_form.xhp\n"
 "par_id421598179770993\n"
 "help.text"
-msgid "If the method is called <emph>without arguments</emph>, then it returns the list of the controls contained in the form. Beware that the returned list does not contain any subform controls."
-msgstr "Εάν η μέθοδος καλείται <emph>without arguments</emph> (χωρίς ορίσματα), τότε επιστρέφει τον κατάλογο των στοιχείων ελέγχου που περιέχονται στη φόρμα. Προσέξτε ότι ο κατάλογος που επιστρέφεται δεν περιέχει στοιχεία ελέγχου υποφόρμας."
+msgid "If the method is called <emph>without arguments</emph>, then it returns the list of the controls contained in the form. Be aware that the returned list does not contain any subform controls."
+msgstr ""
 
 #. SsiUX
 #: sf_form.xhp
@@ -19852,14 +19960,14 @@ msgctxt ""
 msgid "<emph>encoding2</emph>: The character set of the fallback PO file corresponding to the <literal>locale2</literal> argument. The default encoding is \"UTF-8\"."
 msgstr "<emph>encoding2</emph>: Το σύνολο χαρακτήρων του εναλλακτικού αρχείου PO που αντιστοιχεί στο όρισμα <literal>locale2</literal>. Η προεπιλεγμένη κωδικοποίηση είναι \"UTF-8\"."
 
-#. wbSFz
+#. M2NBE
 #: sf_l10n.xhp
 msgctxt ""
 "sf_l10n.xhp\n"
 "par_id141613001281573\n"
 "help.text"
-msgid "To learn more about the names of character sets, visit <link href=\"https://www.iana.org/assignments/character-sets/character-sets.xhtml\" name=\"Character Sets\">IANA's Character Set</link> page. Beware that %PRODUCTNAME does not implement all existing character sets."
-msgstr "Για να μάθετε περισσότερα σχετικά με τα ονόματα των συνόλων χαρακτήρων, επισκεφτείτε τη σελίδα <link href=\"https://www.iana.org/assignments/character-sets/character-sets.xhtml\" name=\"Character Sets\">Σύνολο χαρακτήρων IANA</link>. Προσέξτε ότι το %PRODUCTNAME δεν υλοποιεί όλα τα υφιστάμενα σύνολα χαρακτήρων."
+msgid "To learn more about the names of character sets, visit <link href=\"https://www.iana.org/assignments/character-sets/character-sets.xhtml\" name=\"Character Sets\">IANA's Character Set</link> page. Be aware that %PRODUCTNAME does not implement all existing character sets."
+msgstr ""
 
 #. 3ApdD
 #: sf_l10n.xhp
@@ -21479,7 +21587,7 @@ msgctxt ""
 "par_id561633021747209\n"
 "help.text"
 msgid "Yes"
-msgstr ""
+msgstr "Ναι"
 
 #. MgENM
 #: sf_platform.xhp
@@ -21488,7 +21596,7 @@ msgctxt ""
 "par_id201633021748322\n"
 "help.text"
 msgid "String array"
-msgstr ""
+msgstr "Πίνακας συμβολοσειρών"
 
 #. bhBD2
 #: sf_platform.xhp
@@ -21497,7 +21605,7 @@ msgctxt ""
 "par_id831633021749118\n"
 "help.text"
 msgid "Returns a zero-based unsorted array of strings containing the available document import and export filter names."
-msgstr ""
+msgstr "Επιστρέφει έναν αταξινόμητο πίνακα συμβολοσειρών με βάση το μηδέν που περιέχει τα διαθέσιμα ονόματα φίλτρων εισαγωγής και εξαγωγής εγγράφων."
 
 #. 9aGdF
 #: sf_platform.xhp
@@ -22406,7 +22514,7 @@ msgctxt ""
 "tit\n"
 "help.text"
 msgid "ScriptForge.Region service"
-msgstr ""
+msgstr "ScriptForge.Region service"
 
 #. SYtNX
 #: sf_region.xhp
@@ -22415,7 +22523,7 @@ msgctxt ""
 "bm_id681600788076499\n"
 "help.text"
 msgid "<variable id=\"RegionService\"><link href=\"text/sbasic/shared/03/sf_region.xhp\" name=\"Region service\"><literal>ScriptForge</literal>.<literal>Region</literal> service</link></variable>"
-msgstr ""
+msgstr "<variable id=\"RegionService\"><link href=\"text/sbasic/shared/03/sf_region.xhp\" name=\"Region service\">Υπηρεσία <literal>ScriptForge</literal>.<literal>Region</literal></link></variable>"
 
 #. w3WgP
 #: sf_region.xhp
@@ -22424,7 +22532,7 @@ msgctxt ""
 "par_id181600788076612\n"
 "help.text"
 msgid "The <literal>Region</literal> service provides a collection of properties and methods to handle locale and region-related aspects of programming, such as:"
-msgstr ""
+msgstr "Η υπηρεσία <literal>Region</literal> (Περιοχή) παρέχει μια συλλογή ιδιοτήτων και μεθόδων για τον χειρισμό πτυχών προγραμματισμού που σχετίζονται με τις τοπικές ρυθμίσεις και την περιοχή, όπως:"
 
 #. TEk7a
 #: sf_region.xhp
@@ -22433,7 +22541,7 @@ msgctxt ""
 "par_id301600788076785\n"
 "help.text"
 msgid "Accessing locale and region-dependent settings such as number formatting, currency and timezones."
-msgstr ""
+msgstr "Πρόσβαση σε τοπικές ρυθμίσεις και ρυθμίσεις που εξαρτώνται από την περιοχή, όπως η μορφοποίηση αριθμών, το νόμισμα και οι ζώνες χρόνου."
 
 #. 2f7KC
 #: sf_region.xhp
@@ -22442,7 +22550,7 @@ msgctxt ""
 "par_id1001600788076848\n"
 "help.text"
 msgid "Converting timezones and calculate Daylight Saving Time (DST) offsets."
-msgstr ""
+msgstr "Μετατροπή ζωνών χρόνου και υπολογισμός αλλαγών θερινής ώρας (DST)."
 
 #. tqznj
 #: sf_region.xhp
@@ -22451,7 +22559,7 @@ msgctxt ""
 "par_id67160078807676\n"
 "help.text"
 msgid "Transforming numbers into text in any supported language."
-msgstr ""
+msgstr "Μετατροπή αριθμών σε κείμενο σε οποιαδήποτε υποστηριζόμενη γλώσσα."
 
 #. 9nRv7
 #: sf_region.xhp
@@ -22460,7 +22568,7 @@ msgctxt ""
 "hd_id851656012844548\n"
 "help.text"
 msgid "Definitions"
-msgstr ""
+msgstr "Ορισμοί"
 
 #. sGNu7
 #: sf_region.xhp
@@ -22469,7 +22577,7 @@ msgctxt ""
 "hd_id421656012886648\n"
 "help.text"
 msgid "Locale or Region"
-msgstr ""
+msgstr "Τοπικές ρυθμίσεις ή περιοχή"
 
 #. FiW7z
 #: sf_region.xhp
@@ -22478,7 +22586,7 @@ msgctxt ""
 "par_id191656012908838\n"
 "help.text"
 msgid "A string combining a language and a country in the format \"la-CO\". The language part is expressed with 2 or 3 lowercase characters followed by a dash and 2 uppercase characters representing the country."
-msgstr ""
+msgstr "Μια συμβολοσειρά που συνδυάζει μια γλώσσα και μια χώρα στη μορφή \"la-CO\". Το τμήμα της γλώσσας εκφράζεται με 2 ή 3 πεζούς χαρακτήρες ακολουθούμενους από μια παύλα και 2 κεφαλαίους χαρακτήρες που αντιπροσωπεύουν τη χώρα."
 
 #. GQEGW
 #: sf_region.xhp
@@ -22487,7 +22595,7 @@ msgctxt ""
 "par_id431656013368415\n"
 "help.text"
 msgid "For instance, \"en-US\" corresponds to the English language in the United States; \"fr-BE\" corresponds to the French language in Belgium, and so forth."
-msgstr ""
+msgstr "Για παράδειγμα, το \"en-US\" αντιστοιχεί στην αγγλική γλώσσα στις Ηνωμένες Πολιτείες. Το \"fr-BE\" αντιστοιχεί στη γαλλική γλώσσα στο Βέλγιο, και ούτω καθεξής."
 
 #. CQYAX
 #: sf_region.xhp
@@ -22496,7 +22604,7 @@ msgctxt ""
 "par_id981656013623018\n"
 "help.text"
 msgid "On some situations the full locale is not required and only the language or country may be specified."
-msgstr ""
+msgstr "Σε ορισμένες περιπτώσεις δεν απαιτείται η πλήρης τοπική ρύθμιση και μπορεί να καθοριστεί μόνο η γλώσσα ή η χώρα."
 
 #. 4qFTD
 #: sf_region.xhp
@@ -22505,7 +22613,7 @@ msgctxt ""
 "par_id261656013132204\n"
 "help.text"
 msgid "Most properties and methods accept a locale as argument. If no locale is specified, then the user-interface locale is used, which is defined in the <link href=\"text/sbasic/shared/03/sf_platform.xhp#bm_id111614901524769\" name=\"OfficeLocale_link\"><literal>OfficeLocale</literal></link> property of the <literal>Platform</literal> service."
-msgstr ""
+msgstr "Οι περισσότερες ιδιότητες και μέθοδοι δέχονται μια τοπική ρύθμιση ως όρισμα. Εάν δεν έχει καθοριστεί τοπική ρύθμιση, τότε χρησιμοποιείται η τοπική ρύθμιση διεπαφής χρήστη, η οποία ορίζεται στην ιδιότητα <link href=\"text/sbasic/shared/03/sf_platform.xhp#bm_id111614901524769\" name=\"OfficeLocale_link\"><literal>OfficeLocale</literal></link>της υπηρεσίας <literal>Platform</literal>."
 
 #. 6ToTC
 #: sf_region.xhp
@@ -22514,7 +22622,7 @@ msgctxt ""
 "hd_id51656013825718\n"
 "help.text"
 msgid "Timezone"
-msgstr ""
+msgstr "Ζώνη χρόνου"
 
 #. pV5MS
 #: sf_region.xhp
@@ -22523,7 +22631,7 @@ msgctxt ""
 "par_id541656013854150\n"
 "help.text"
 msgid "A string in the format \"Region/City\" such as \"Europe/Berlin\", or a timezone ID such as \"UTC\" or \"GMT-8:00\". Refer to the wiki page <link href=\"https://wikipedia.org/wiki/List_of_tz_database_time_zones\" name=\"TimeZones_List\">List of tz database and timezones</link> for a list of possible timezone names and IDs."
-msgstr ""
+msgstr "Μια συμβολοσειρά με τη μορφή \"Περιοχή/Πόλη\", όπως \"Ευρώπη/Βερολίνο\", ή ένα αναγνωριστικό ζώνης χρόνου, όπως \"UTC\" ή \"GMT-8:00\". Ανατρέξτε στη σελίδα wiki <link href=\"https://wikipedia.org/wiki/List_of_tz_database_time_zones\" name=\"TimeZones_List\">Κατάλογος της βάσης δεδομένων tz και ζώνες χρόνου</link> για έναν κατάλογο με πιθανά ονόματα και αναγνωριστικά ζωνών χρόνου."
 
 #. exa3B
 #: sf_region.xhp
@@ -22532,7 +22640,7 @@ msgctxt ""
 "par_id981656078937577\n"
 "help.text"
 msgid "Providing an invalid timezone string to any of the methods in the <literal>Region</literal> service will not result in a runtime error. Instead, methods as <literal>UTCDateTime</literal> and <literal>UTCNow</literal> will return the current operating system date and time."
-msgstr ""
+msgstr "Η παροχή μιας άκυρης συμβολοσειράς ζώνης χρόνου σε οποιαδήποτε από τις μεθόδους στην υπηρεσία <literal>Region</literal> (Περιοχή) δεν θα οδηγήσει σε σφάλμα χρόνου εκτέλεσης. Αντίθετα, μέθοδοι όπως <literal>UTCDateTime</literal> και <literal>UTCNow</literal> θα επιστρέψουν την τρέχουσα ημερομηνία και χρόνο του λειτουργικού συστήματος."
 
 #. 7GTLU
 #: sf_region.xhp
@@ -22541,7 +22649,7 @@ msgctxt ""
 "par_id611656014040098\n"
 "help.text"
 msgid "The time offset between the timezone and the Greenwich Meridian Time (GMT) is expressed in minutes."
-msgstr ""
+msgstr "Η μετατόπιση χρόνου μεταξύ της ζώνης χρόνου και του χρόνου μεσημβρινού του Γκρίνουιτς (GMT) εκφράζεται σε λεπτά."
 
 #. ottwV
 #: sf_region.xhp
@@ -22550,7 +22658,7 @@ msgctxt ""
 "par_id121656014053670\n"
 "help.text"
 msgid "The Daylight Saving Time (DST) is an additional offset."
-msgstr ""
+msgstr "Η θερινή ώρα (DST) είναι μια επιπλέον αλλαγή."
 
 #. yXHrp
 #: sf_region.xhp
@@ -22559,7 +22667,7 @@ msgctxt ""
 "par_id591656014140929\n"
 "help.text"
 msgid "The timezone and DST offsets may be positive or negative."
-msgstr ""
+msgstr "Οι αλλαγές ζώνης χρόνου και θερινής ώρας μπορεί να είναι θετικές ή αρνητικές."
 
 #. EyNvN
 #: sf_region.xhp
@@ -22568,7 +22676,7 @@ msgctxt ""
 "hd_id281600788076359\n"
 "help.text"
 msgid "Service invocation"
-msgstr ""
+msgstr "Κλήση υπηρεσίας"
 
 #. F9Wnj
 #: sf_region.xhp
@@ -22577,7 +22685,7 @@ msgctxt ""
 "par_id141609955500101\n"
 "help.text"
 msgid "Before using the <literal>Region</literal> service the <literal>ScriptForge</literal> library needs to be loaded or imported:"
-msgstr ""
+msgstr "Πριν χρησιμοποιήσετε την υπηρεσία <literal>Region</literal>, πρέπει να φορτωθεί ή να εισαχθεί η βιβλιοθήκη <literal>ScriptForge</literal>:"
 
 #. 7AXFZ
 #: sf_region.xhp
@@ -22586,7 +22694,7 @@ msgctxt ""
 "par_id321614902851541\n"
 "help.text"
 msgid "The examples below in Basic and Python instantiate the <literal>Region</literal> service and access the <literal>Country</literal> property."
-msgstr ""
+msgstr "Τα παρακάτω παραδείγματα σε Basic και Python δημιουργούν την υπηρεσία <literal>Region</literal> και έχουν πρόσβαση στην ιδιότητα <literal>Country</literal>."
 
 #. 69CF7
 #: sf_region.xhp
@@ -22595,7 +22703,7 @@ msgctxt ""
 "bas_id791600788431935\n"
 "help.text"
 msgid "MsgBox oRegion.Country(\"en-US\") ' United States"
-msgstr ""
+msgstr "MsgBox oRegion.Country(\"en-US\") ' Ηνωμένες Πολιτείες"
 
 #. FDNKL
 #: sf_region.xhp
@@ -22604,7 +22712,7 @@ msgctxt ""
 "hd_id711600788076834\n"
 "help.text"
 msgid "Properties"
-msgstr ""
+msgstr "Ιδιότητες"
 
 #. VEB3D
 #: sf_region.xhp
@@ -22613,7 +22721,7 @@ msgctxt ""
 "par_id601656018689690\n"
 "help.text"
 msgid "All properties listed below accept a <literal>locale</literal> argument, provided as a string. Some properties require this argument to be in the format \"la-CO\", whereas others may receive \"la\" or \"CO\" as input."
-msgstr ""
+msgstr "Όλες οι ιδιότητες που αναφέρονται παρακάτω αποδέχονται ένα όρισμα <literal>locale</literal>, το οποίο παρέχεται ως συμβολοσειρά. Ορισμένες ιδιότητες απαιτούν αυτό το όρισμα να έχει τη μορφή \"la-CO\", ενώ άλλες μπορεί να λαμβάνουν \"la\" ή \"CO\" ως είσοδο."
 
 #. vzB4T
 #: sf_region.xhp
@@ -22622,7 +22730,7 @@ msgctxt ""
 "par_id461600788076917\n"
 "help.text"
 msgid "Name"
-msgstr ""
+msgstr "Όνομα"
 
 #. ay9iH
 #: sf_region.xhp
@@ -22631,7 +22739,7 @@ msgctxt ""
 "par_id221600788076591\n"
 "help.text"
 msgid "Readonly"
-msgstr ""
+msgstr "Μόνο για ανάγνωση"
 
 #. rBUEm
 #: sf_region.xhp
@@ -22640,7 +22748,7 @@ msgctxt ""
 "par_id761600788076328\n"
 "help.text"
 msgid "Type"
-msgstr ""
+msgstr "Τύπος"
 
 #. FpD5h
 #: sf_region.xhp
@@ -22649,7 +22757,7 @@ msgctxt ""
 "par_id131656330679679\n"
 "help.text"
 msgid "Locale"
-msgstr ""
+msgstr "Τοπική ρύθμιση"
 
 #. FxnFK
 #: sf_region.xhp
@@ -22658,7 +22766,7 @@ msgctxt ""
 "par_id67160078807636\n"
 "help.text"
 msgid "Description"
-msgstr ""
+msgstr "Περιγραφή"
 
 #. 4Ss2G
 #: sf_region.xhp
@@ -22667,7 +22775,7 @@ msgctxt ""
 "par_id311600788076756\n"
 "help.text"
 msgid "Yes"
-msgstr ""
+msgstr "Ναι"
 
 #. ExbtG
 #: sf_region.xhp
@@ -22676,7 +22784,7 @@ msgctxt ""
 "par_id441600788076826\n"
 "help.text"
 msgid "Returns the country name in English corresponding to a given region."
-msgstr ""
+msgstr "Επιστρέφει το όνομα της χώρας στα αγγλικά που αντιστοιχεί σε μια δεδομένη περιοχή."
 
 #. FN4XC
 #: sf_region.xhp
@@ -22685,7 +22793,7 @@ msgctxt ""
 "par_id49160078807654\n"
 "help.text"
 msgid "Yes"
-msgstr ""
+msgstr "Ναι"
 
 #. vpDwN
 #: sf_region.xhp
@@ -22694,7 +22802,7 @@ msgctxt ""
 "par_id81600788076419\n"
 "help.text"
 msgid "Returns the ISO 4217 currency code of the specified region."
-msgstr ""
+msgstr "Επιστρέφει τον κωδικό νομίσματος ISO 4217 της καθορισμένης περιοχής."
 
 #. Aqcuy
 #: sf_region.xhp
@@ -22703,7 +22811,7 @@ msgctxt ""
 "par_id711600788076534\n"
 "help.text"
 msgid "Yes"
-msgstr ""
+msgstr "Ναι"
 
 #. 6cgk7
 #: sf_region.xhp
@@ -22712,7 +22820,7 @@ msgctxt ""
 "par_id911600788076842\n"
 "help.text"
 msgid "String array"
-msgstr ""
+msgstr "Πίνακας συμβολοσειρών"
 
 #. Jhkc3
 #: sf_region.xhp
@@ -22721,7 +22829,7 @@ msgctxt ""
 "par_id541600788076645\n"
 "help.text"
 msgid "Returns a zero-based array of strings containing the date acceptance patterns for the specified region."
-msgstr ""
+msgstr "Επιστρέφει έναν πίνακα συμβολοσειρών με βάση το μηδέν που περιέχει τα μοτίβα αποδοχής ημερομηνίας για την καθορισμένη περιοχή."
 
 #. T4sUQ
 #: sf_region.xhp
@@ -22730,7 +22838,7 @@ msgctxt ""
 "par_id891600788076190\n"
 "help.text"
 msgid "Yes"
-msgstr ""
+msgstr "Ναι"
 
 #. vAJYH
 #: sf_region.xhp
@@ -22739,7 +22847,7 @@ msgctxt ""
 "par_id91600788076674\n"
 "help.text"
 msgid "Returns the date separator used in the given region."
-msgstr ""
+msgstr "Επιστρέφει το διαχωριστικό ημερομηνιών που χρησιμοποιείται στη δεδομένη περιοχή."
 
 #. QKyGp
 #: sf_region.xhp
@@ -22748,7 +22856,7 @@ msgctxt ""
 "par_id561633021747014\n"
 "help.text"
 msgid "Yes"
-msgstr ""
+msgstr "Ναι"
 
 #. jSVY8
 #: sf_region.xhp
@@ -22757,7 +22865,7 @@ msgctxt ""
 "par_id201633021748566\n"
 "help.text"
 msgid "String array"
-msgstr ""
+msgstr "Πίνακας συμβολοσειρών"
 
 #. CnTuU
 #: sf_region.xhp
@@ -22766,7 +22874,7 @@ msgctxt ""
 "par_id831633021745014\n"
 "help.text"
 msgid "Returns a zero-based array of strings containing the list of abbreviated weekday names in the specified language."
-msgstr ""
+msgstr "Επιστρέφει έναν πίνακα συμβολοσειρών με βάση το μηδέν που περιέχει τον κατάλογο των συντομευμένων ονομάτων καθημερινών ημερών στην καθορισμένη γλώσσα."
 
 #. jRUnx
 #: sf_region.xhp
@@ -22775,7 +22883,7 @@ msgctxt ""
 "par_id561633021747209\n"
 "help.text"
 msgid "Yes"
-msgstr ""
+msgstr "Ναι"
 
 #. CGeKU
 #: sf_region.xhp
@@ -22784,7 +22892,7 @@ msgctxt ""
 "par_id201633021748322\n"
 "help.text"
 msgid "String array"
-msgstr ""
+msgstr "Πίνακας συμβολοσειρών"
 
 #. tjGhP
 #: sf_region.xhp
@@ -23290,76 +23398,13 @@ msgctxt ""
 msgid "numText = oRegion.Number2Text(\"ordinal 15\", \"en-US\")"
 msgstr ""
 
-#. CHCJt
+#. 3T93o
 #: sf_region.xhp
 msgctxt ""
 "sf_region.xhp\n"
 "par_id801656027524051\n"
 "help.text"
-msgid "To get a list of all supported prefixes in a given language, call <literal>Number2Text</literal> with the special \"help\" argument, as shown in the example below:"
-msgstr ""
-
-#. ZqfNT
-#: sf_region.xhp
-msgctxt ""
-"sf_region.xhp\n"
-"bas_id181656027807107\n"
-"help.text"
-msgid "' Considering the \"en-US\" locale the message box will show the following text"
-msgstr ""
-
-#. hRef2
-#: sf_region.xhp
-msgctxt ""
-"sf_region.xhp\n"
-"bas_id216560277123601\n"
-"help.text"
-msgid "' one, two, three"
-msgstr ""
-
-#. YMJ5N
-#: sf_region.xhp
-msgctxt ""
-"sf_region.xhp\n"
-"bas_id361656027712711\n"
-"help.text"
-msgid "' ordinal: first, second, third"
-msgstr ""
-
-#. vhTrp
-#: sf_region.xhp
-msgctxt ""
-"sf_region.xhp\n"
-"bas_id891656027712920\n"
-"help.text"
-msgid "' ordinal-number: 1st, 2nd, 3rd"
-msgstr ""
-
-#. YGCiN
-#: sf_region.xhp
-msgctxt ""
-"sf_region.xhp\n"
-"bas_id611656027713104\n"
-"help.text"
-msgid "' year: nineteen ninety-nine, two thousand, two thousand one"
-msgstr ""
-
-#. vEMTZ
-#: sf_region.xhp
-msgctxt ""
-"sf_region.xhp\n"
-"bas_id861656027713288\n"
-"help.text"
-msgid "' currency (for example, USD): two U.S. dollars and fifty cents"
-msgstr ""
-
-#. xYrSL
-#: sf_region.xhp
-msgctxt ""
-"sf_region.xhp\n"
-"bas_id841656027713503\n"
-"help.text"
-msgid "' money USD: two and 50/100 U.S. dollars"
+msgid "To get a list of all supported prefixes in a given language, call <literal>Number2Text</literal> with the special \"help\" argument. In the example below, assume your locale is set to \"en-US\", then the list of available prefixes for \"en-US\" will be shown by <literal>MsgBox</literal>:"
 msgstr ""
 
 #. RBkxp
@@ -23371,13 +23416,22 @@ msgctxt ""
 msgid "The first line in the message box does not have a prefix, which means that it is the standard format. The subsequent lines include the prefix and some examples of numbers using its format."
 msgstr ""
 
-#. WPApK
+#. WYDkd
 #: sf_region.xhp
 msgctxt ""
 "sf_region.xhp\n"
 "par_id781656028528520\n"
 "help.text"
-msgid "Each language has its own set of supported prefixes."
+msgid "Each language has its own set of supported prefixes. The number of available prefixes may vary from language to language."
+msgstr ""
+
+#. gcMPN
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id531663849363398\n"
+"help.text"
+msgid "To get the list of prefixes for a specific language or locale, it can be specified as the second argument in <literal>Number2Text</literal>. The example below shows the available prefixes available for the \"pt-BR\" locale:"
 msgstr ""
 
 #. dShiA
@@ -23459,33 +23513,6 @@ msgctxt ""
 "bas_id731656077523173\n"
 "help.text"
 msgid "' The UTC date/time is June 23, 2022 at 12:30:00"
-msgstr ""
-
-#. RpFvL
-#: sf_region.xhp
-msgctxt ""
-"sf_region.xhp\n"
-"pyc_id361656077667354\n"
-"help.text"
-msgid "import datetime"
-msgstr ""
-
-#. hgcCJ
-#: sf_region.xhp
-msgctxt ""
-"sf_region.xhp\n"
-"pyc_id901656077667666\n"
-"help.text"
-msgid "localDT = datetime.datetime(2022, 6, 23, 14, 30, 0)"
-msgstr ""
-
-#. A7GXw
-#: sf_region.xhp
-msgctxt ""
-"sf_region.xhp\n"
-"pyc_id521656077682826\n"
-"help.text"
-msgid "utcTime = oRegion.UTCDateTime(localDT, \"Europe/Berlin\", \"DE\")"
 msgstr ""
 
 #. tZoWt
@@ -23749,14 +23776,14 @@ msgctxt ""
 msgid "The following example instantiates the <literal>Basic</literal> service and calls the <literal>MsgBox</literal> method, which is equivalent to the <literal>MsgBox</literal> function available in Basic:"
 msgstr "Το παρακάτω παράδειγμα δημιουργεί την υπηρεσία <literal>Basic</literal> και καλεί τη μέθοδο <literal>MsgBox</literal>, η οποία είναι ισοδύναμη με τη συνάρτηση <literal>MsgBox</literal> που είναι διαθέσιμη στη Basic:"
 
-#. zVgQm
+#. TFMGE
 #: sf_services.xhp
 msgctxt ""
 "sf_services.xhp\n"
 "par_id581627645023307\n"
 "help.text"
-msgid "Beware that the <literal>Basic</literal> service has to be instantiated in Python scripts using the <literal>CreateScriptService</literal> method."
-msgstr "Προσέξτε ότι η υπηρεσία <literal>Basic</literal> πρέπει να δημιουργηθεί σε σενάρια Python χρησιμοποιώντας τη μέθοδο <literal>CreateScriptService</literal>."
+msgid "Be aware that the <literal>Basic</literal> service has to be instantiated in Python scripts using the <literal>CreateScriptService</literal> method."
+msgstr ""
 
 #. LCVem
 #: sf_session.xhp
@@ -23893,14 +23920,14 @@ msgctxt ""
 msgid "in any shared library"
 msgstr "σε οποιαδήποτε κοινόχρηστη βιβλιοθήκη"
 
-#. E7meg
+#. 2GN3X
 #: sf_session.xhp
 msgctxt ""
 "sf_session.xhp\n"
 "par_id391582814720487\n"
 "help.text"
-msgid "in My Macros"
-msgstr "στις μακροεντολές μου"
+msgid "in <emph>My Macros</emph>"
+msgstr ""
 
 #. MiuWT
 #: sf_session.xhp
@@ -23911,14 +23938,14 @@ msgctxt ""
 msgid "in an extension installed for the current user"
 msgstr "σε μια επέκταση που έχει εγκατασταθεί για τον τρέχοντα χρήστη"
 
-#. SAMnM
+#. MfbpF
 #: sf_session.xhp
 msgctxt ""
 "sf_session.xhp\n"
 "par_id21582814720997\n"
 "help.text"
-msgid "in %PRODUCTNAME macros"
-msgstr "στις μακροεντολές του %PRODUCTNAME"
+msgid "in <emph>Application Macros</emph>"
+msgstr ""
 
 #. LnKrt
 #: sf_session.xhp
@@ -27043,14 +27070,14 @@ msgctxt ""
 msgid "Sets or returns the current delimiter to be inserted between two successive written lines. The default value is the native line delimiter in the current operating system."
 msgstr "Ορίζει ή επιστρέφει τον τρέχοντα οριοθέτη που θα εισαχθεί μεταξύ δύο διαδοχικών γραπτών γραμμών. Η προεπιλεγμένη τιμή είναι ο εγγενής διαχωριστής γραμμής στο τρέχον λειτουργικό σύστημα."
 
-#. dCeHZ
+#. EuWCP
 #: sf_textstream.xhp
 msgctxt ""
 "sf_textstream.xhp\n"
 "par_id141613001281573\n"
 "help.text"
-msgid "To learn more about the names of character sets, visit <link href=\"https://www.iana.org/assignments/character-sets/character-sets.xhtml\" name=\"Character Sets\">IANA's Character Set</link> page. Beware that %PRODUCTNAME does not implement all existing character sets."
-msgstr "Για να μάθετε περισσότερα σχετικά με τα ονόματα των συνόλων χαρακτήρων, επισκεφτείτε τη σελίδα <link href=\"https://www.iana.org/assignments/character-sets/character-sets.xhtml\" name=\"Character Sets\">Σύνολο χαρακτήρων IANA</link>. Προσέξτε ότι το %PRODUCTNAME δεν υλοποιεί όλα τα υφιστάμενα σύνολα χαρακτήρων."
+msgid "To learn more about the names of character sets, visit <link href=\"https://www.iana.org/assignments/character-sets/character-sets.xhtml\" name=\"Character Sets\">IANA's Character Set</link> page. Be aware that %PRODUCTNAME does not implement all existing character sets."
+msgstr ""
 
 #. hKJkD
 #: sf_textstream.xhp
@@ -27754,14 +27781,14 @@ msgctxt ""
 msgid "If you call the <literal>Terminate</literal> method, subsequent calls for the <literal>Continue</literal> method will not resume time measurement. Similarly, after a Timer has been terminated, calling the <literal>Start</literal> method will restart it as if it were a clean new Timer."
 msgstr "Εάν καλέσετε τη μέθοδο <literal>Terminate</literal> (Τερματισμός), οι επόμενες κλήσεις για τη μέθοδο <literal>Continue</literal> (Συνέχεια) δεν θα συνεχίσουν τη μέτρηση του χρόνου. Ομοίως, μετά τον τερματισμό ενός χρονομέτρου, η κλήση της μεθόδου <literal>Start</literal> (Έναρξη) θα τον επανεκκινήσει σαν να ήταν ένα καθαρό νέο χρονόμετρο."
 
-#. DSYKj
+#. AqGfb
 #: sf_timer.xhp
 msgctxt ""
 "sf_timer.xhp\n"
 "par_id391626872019832\n"
 "help.text"
-msgid "Beware that the <literal>Wait</literal> function in Basic takes in a duration argument in milliseconds whereas the <literal>sleep</literal> function in Python uses seconds in its argument."
-msgstr "Προσέξτε ότι η συνάρτηση <literal>Wait</literal> (Αναμονή) στη Basic λαμβάνει ένα όρισμα διάρκειας σε χιλιοστά του δευτερολέπτου, ενώ η συνάρτηση <literal>sleep</literal> στην Python χρησιμοποιεί δευτερόλεπτα στο όρισμά της."
+msgid "Be aware that the <literal>Wait</literal> function in BASIC takes in a duration argument in milliseconds whereas the <literal>sleep</literal> function in Python uses seconds in its argument."
+msgstr ""
 
 #. bHEyr
 #: sf_timer.xhp

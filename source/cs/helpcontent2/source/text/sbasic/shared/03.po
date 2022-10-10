@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2022-07-04 18:04+0200\n"
+"POT-Creation-Date: 2022-10-10 13:35+0200\n"
 "PO-Revision-Date: 2022-07-15 17:19+0000\n"
 "Last-Translator: Stanislav Horáček <stanislav.horacek@gmail.com>\n"
 "Language-Team: Czech <https://translations.documentfoundation.org/projects/libo_help-master/textsbasicshared03/cs/>\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 "X-Accelerator-Marker: ~\n"
-"X-Generator: Weblate 4.12.2\n"
+"X-Generator: LibreOffice\n"
 "X-POOTLE-MTIME: 1564160910.000000\n"
 
 #. ViEWM
@@ -3913,14 +3913,14 @@ msgctxt ""
 msgid "Or using the <literal>OpenDocument</literal> method from the <literal>UI</literal> service:"
 msgstr "Nebo pomocí metody <literal>OpenDocument</literal> ze služby <literal>UI</literal>:"
 
-#. MDxMC
+#. LA2sA
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id741621467697967\n"
 "help.text"
-msgid "It is also possible to instantiate the <literal>Calc</literal> service using the <literal>CreateScriptService</literal> method:"
-msgstr "Instanci služby <literal>Calc</literal> je také možné vytvořit pomocí metody <literal>CreateScriptService</literal>:"
+msgid "It is also possible to instantiate the <literal>Calc</literal> service specifying a window name for the <literal>CreateScriptService</literal> method:"
+msgstr ""
 
 #. CKafD
 #: sf_calc.xhp
@@ -3930,6 +3930,15 @@ msgctxt ""
 "help.text"
 msgid "In the example above, \"MyFile.ods\" is the name of an open document window. If this argument is not provided, the active window is considered."
 msgstr "V příkladu výše je \"MyFile.ods\" název otevřeného dokumentu. Není-li tento argument uveden, použije se aktivní okno."
+
+#. ucEa2
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id551658777771853\n"
+"help.text"
+msgid "It is also possible to invoke the <literal>Calc</literal> service using the document referenced by <literal>ThisComponent</literal>. This is specially useful when running a macro from within the Basic IDE."
+msgstr ""
 
 #. gfpHw
 #: sf_calc.xhp
@@ -5137,6 +5146,15 @@ msgctxt ""
 msgid "For example, suppose range <emph>A1:J200</emph> is selected (height = 200), so the default formula is <emph>=(COUNTBLANK(A1:A200)=200)</emph>. This means that if all 200 cells are empty in the first column (Column A), then the column is deleted. Note that the formula is expressed with respect to the first column only. Internally the <literal>CompactLeft</literal> method will generalize this formula for all the remaining columns."
 msgstr "Předpokládejme například, že je vybrána oblast <emph>A1:J200</emph> (výška = 200), a výchozí vzorec je tedy <emph>=(COUNTBLANK(A1:A200)=200)</emph>. To znamená, že pokud je všech 200 buněk prvního sloupce (sloupec A) prázdných, tento sloupec se smaže. Mějte na paměti, že vzorec je vyjádřen pouze vzhledem k prvnímu sloupci. Vnitřně metoda <literal>CompactLeft</literal> tento vzorec pro všechny zbývající sloupce zobecní."
 
+#. viKpg
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id431657568414625\n"
+"help.text"
+msgid "Calc functions used in the <literal>filterformula</literal> argument must be expressed using their English names. Visit the Wiki page <link href=\"https://wiki.documentfoundation.org/Documentation/Calc_Functions/List_of_Functions\" name=\"CalcFunctions\">List of Calc Functions</link> for a complete list of Calc functions in English."
+msgstr ""
+
 #. FDspT
 #: sf_calc.xhp
 msgctxt ""
@@ -5316,6 +5334,15 @@ msgctxt ""
 "help.text"
 msgid "For example, suppose range <emph>A1:J200</emph> is selected (width = 10), so the default formula is <emph>=(COUNTBLANK(A1:J1)=10)</emph>. This means that if all 10 cells are empty in the first row (Row 1), then the row is deleted. Note that the formula is expressed with respect to the first row only. Internally the <literal>CompactUp</literal> method will generalize this formula for all the remaining rows."
 msgstr "Předpokládejme například, že je vybrána oblast <emph>A1:J200</emph> (šířka = 10), a výchozí vzorec je tedy <emph>=(COUNTBLANK(A1:J1)=10)</emph>. To znamená, že pokud je všech 10 buněk prvního řádku (řádek 1) prázdných, tento řádek se smaže. Mějte na paměti, že vzorec je vyjádřen pouze vzhledem k prvnímu řádku. Vnitřně metoda <literal>CompactUp</literal> tento vzorec pro všechny zbývající řádky zobecní."
+
+#. VCrie
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id431657568414714\n"
+"help.text"
+msgid "The Calc functions used in the formula specified in the <literal>filterformula</literal> argument must be expressed using their English names. Visit the Wiki page <link href=\"https://wiki.documentfoundation.org/Documentation/Calc_Functions/List_of_Functions\" name=\"CalcFunctions\">List of Calc Functions</link> for a complete list of Calc functions in English."
+msgstr ""
 
 #. GuWzD
 #: sf_calc.xhp
@@ -6316,6 +6343,15 @@ msgctxt ""
 msgid "Get the formula(s) stored in the given range of cells as a single string, a 1D or a 2D array of strings."
 msgstr "Získá vzorec či vzorce uložené v zadané oblasti buněk, a to jako jeden řetězec, nebo jako jednorozměrné či dvourozměrné pole řetězců."
 
+#. ojiDi
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id291658146319931\n"
+"help.text"
+msgid "The names of Calc functions used in the returned formulas are expressed in English. Visit the Wiki page <link href=\"https://wiki.documentfoundation.org/Documentation/Calc_Functions/List_of_Functions\" name=\"CalcFunctions\">List of Calc Functions</link> for a complete list of Calc functions in English."
+msgstr ""
+
 #. KDFkQ
 #: sf_calc.xhp
 msgctxt ""
@@ -7126,96 +7162,6 @@ msgctxt ""
 msgid "To dump the full contents of an array in a sheet, use <emph>SetArray</emph>. To dump the contents of an array only within the boundaries of the targeted range of cells, use <emph>SetValue</emph>."
 msgstr "Metodu <emph>SetArray</emph> použijte, chcete-li na list uložit úplný obsah pole. Chcete-li uložit obsah pole omezený hranicemi cílové oblasti buněk, použijte metodu <emph>SetValue</emph>."
 
-#. ecovS
-#: sf_calc.xhp
-msgctxt ""
-"sf_calc.xhp\n"
-"par_id601592231799489\n"
-"help.text"
-msgid "Stores the given value in the specified range. The size of the modified area is equal to the size of the target range."
-msgstr "Uloží zadanou hodnotu do určené oblasti. Velikost upravené oblasti je rovna velikosti cílové oblasti."
-
-#. PeoKo
-#: sf_calc.xhp
-msgctxt ""
-"sf_calc.xhp\n"
-"par_id1001592233389953\n"
-"help.text"
-msgid "The method returns a string representing the modified area as a range of cells."
-msgstr "Metoda vrátí řetězec představující upravenou oblast buněk."
-
-#. xYrHQ
-#: sf_calc.xhp
-msgctxt ""
-"sf_calc.xhp\n"
-"par_id361592231799255\n"
-"help.text"
-msgid "<emph>targetrange</emph>: The range where to store the given value, as a string."
-msgstr "<emph>targetrange</emph>: Oblast, kam se má uložit zadaná hodnota, jako řetězec."
-
-#. dydXF
-#: sf_calc.xhp
-msgctxt ""
-"sf_calc.xhp\n"
-"par_id461592232081985\n"
-"help.text"
-msgid "<emph>value</emph>: A scalar, a vector or an array with the new values for each cell of the range. The new values must be strings, numeric values or dates. Other types will cause the corresponding cells to be emptied."
-msgstr "<emph>value</emph>: Skalár, vektor nebo pole s novými hodnotami pro buňky oblasti. Nové hodnoty musí být řetězce, číselné hodnoty nebo data. Při použití jiných typů budou odpovídající buňky prázdné."
-
-#. CgwVF
-#: sf_calc.xhp
-msgctxt ""
-"sf_calc.xhp\n"
-"par_id841592745785192\n"
-"help.text"
-msgid "The full range is updated and the remainder of the sheet is left unchanged. If the size of <literal>value</literal> is smaller than the size of <literal>targetrange</literal>, then the remaining cells will be emptied."
-msgstr "Aktualizuje se celá oblast a zbytek listu zůstane beze změny. Je-li velikost hodnoty <literal>value</literal> menší než velikost oblasti <literal>targetrange</literal>, budou přebývající buňky prázdné."
-
-#. QFkLr
-#: sf_calc.xhp
-msgctxt ""
-"sf_calc.xhp\n"
-"par_id191611776838396\n"
-"help.text"
-msgid "If the size of <literal>value</literal> is larger than the size of <literal>targetrange</literal>, then <literal>value</literal> is only partially copied until it fills the size of <literal>targetrange</literal>."
-msgstr "Pokud je velikost hodnoty <literal>value</literal> větší než velikost oblasti <literal>targetrange</literal>, zkopíruje se <literal>value</literal> pouze částečně, dokud nevyplní velikost <literal>targetrange</literal>."
-
-#. ykBk6
-#: sf_calc.xhp
-msgctxt ""
-"sf_calc.xhp\n"
-"par_id71611776941663\n"
-"help.text"
-msgid "Vectors are expanded vertically, except if <literal>targetrange</literal> has a height of exactly 1 row."
-msgstr "Vektory oblast rozšíří ve svislém směru s výjimkou případu, kdy má oblast <literal>targetrange</literal> výšku 1 řádek."
-
-#. FJCPf
-#: sf_calc.xhp
-msgctxt ""
-"sf_calc.xhp\n"
-"bas_id541592232948567\n"
-"help.text"
-msgid "'Below the Value array is smaller than the TargetRange (remaining cells are emptied)"
-msgstr "' Pole Value je menší než oblast TargetRange (přebývající buňky jsou prázdné)"
-
-#. vuu9B
-#: sf_calc.xhp
-msgctxt ""
-"sf_calc.xhp\n"
-"bas_id541592232948825\n"
-"help.text"
-msgid "'Below the Value and TargetRange have the same size"
-msgstr "' Value a TargetRange mají stejnou velikost"
-
-#. 4LFnH
-#: sf_calc.xhp
-msgctxt ""
-"sf_calc.xhp\n"
-"par_id731621689592755\n"
-"help.text"
-msgid "If you want to fill a single row with values, you can use the <literal>Offset</literal> function. In the example below, consider that <literal>arrData</literal> is a one-dimensional array:"
-msgstr "Chcete-li vyplnit jeden řádek hodnotami, můžete použít funkci <literal>Offset</literal>. V následujícím příkladu se předpokládá, že je proměnná <literal>arrData</literal> jednorozměrným polem:"
-
 #. g8mER
 #: sf_calc.xhp
 msgctxt ""
@@ -7333,6 +7279,15 @@ msgctxt ""
 msgid "Vectors are always expanded vertically, except if <literal>targetrange</literal> has a height of exactly 1 row."
 msgstr "Vektory oblast vždy rozšíří ve svislém směru s výjimkou případu, kdy má oblast <literal>targetrange</literal> výšku 1 řádek."
 
+#. XbQTz
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id431657568413185\n"
+"help.text"
+msgid "Calc functions used in the <literal>formula</literal> argument must be expressed using their English names. Visit the Wiki page <link href=\"https://wiki.documentfoundation.org/Documentation/Calc_Functions/List_of_Functions\" name=\"CalcFunctions\">List of Calc Functions</link> for a complete list of Calc functions in English."
+msgstr ""
+
 #. rNEEY
 #: sf_calc.xhp
 msgctxt ""
@@ -7350,6 +7305,96 @@ msgctxt ""
 "help.text"
 msgid "'D2 contains the formula \"=H2\""
 msgstr "' D2 obsahuje vzorec \"=H2\""
+
+#. ecovS
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id601592231799489\n"
+"help.text"
+msgid "Stores the given value in the specified range. The size of the modified area is equal to the size of the target range."
+msgstr "Uloží zadanou hodnotu do určené oblasti. Velikost upravené oblasti je rovna velikosti cílové oblasti."
+
+#. PeoKo
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id1001592233389953\n"
+"help.text"
+msgid "The method returns a string representing the modified area as a range of cells."
+msgstr "Metoda vrátí řetězec představující upravenou oblast buněk."
+
+#. xYrHQ
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id361592231799255\n"
+"help.text"
+msgid "<emph>targetrange</emph>: The range where to store the given value, as a string."
+msgstr "<emph>targetrange</emph>: Oblast, kam se má uložit zadaná hodnota, jako řetězec."
+
+#. dydXF
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id461592232081985\n"
+"help.text"
+msgid "<emph>value</emph>: A scalar, a vector or an array with the new values for each cell of the range. The new values must be strings, numeric values or dates. Other types will cause the corresponding cells to be emptied."
+msgstr "<emph>value</emph>: Skalár, vektor nebo pole s novými hodnotami pro buňky oblasti. Nové hodnoty musí být řetězce, číselné hodnoty nebo data. Při použití jiných typů budou odpovídající buňky prázdné."
+
+#. CgwVF
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id841592745785192\n"
+"help.text"
+msgid "The full range is updated and the remainder of the sheet is left unchanged. If the size of <literal>value</literal> is smaller than the size of <literal>targetrange</literal>, then the remaining cells will be emptied."
+msgstr "Aktualizuje se celá oblast a zbytek listu zůstane beze změny. Je-li velikost hodnoty <literal>value</literal> menší než velikost oblasti <literal>targetrange</literal>, budou přebývající buňky prázdné."
+
+#. QFkLr
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id191611776838396\n"
+"help.text"
+msgid "If the size of <literal>value</literal> is larger than the size of <literal>targetrange</literal>, then <literal>value</literal> is only partially copied until it fills the size of <literal>targetrange</literal>."
+msgstr "Pokud je velikost hodnoty <literal>value</literal> větší než velikost oblasti <literal>targetrange</literal>, zkopíruje se <literal>value</literal> pouze částečně, dokud nevyplní velikost <literal>targetrange</literal>."
+
+#. ykBk6
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id71611776941663\n"
+"help.text"
+msgid "Vectors are expanded vertically, except if <literal>targetrange</literal> has a height of exactly 1 row."
+msgstr "Vektory oblast rozšíří ve svislém směru s výjimkou případu, kdy má oblast <literal>targetrange</literal> výšku 1 řádek."
+
+#. FJCPf
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"bas_id541592232948567\n"
+"help.text"
+msgid "'Below the Value array is smaller than the TargetRange (remaining cells are emptied)"
+msgstr "' Pole Value je menší než oblast TargetRange (přebývající buňky jsou prázdné)"
+
+#. vuu9B
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"bas_id541592232948825\n"
+"help.text"
+msgid "'Below the Value and TargetRange have the same size"
+msgstr "' Value a TargetRange mají stejnou velikost"
+
+#. 4LFnH
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id731621689592755\n"
+"help.text"
+msgid "If you want to fill a single row with values, you can use the <literal>Offset</literal> function. In the example below, consider that <literal>arrData</literal> is a one-dimensional array:"
+msgstr "Chcete-li vyplnit jeden řádek hodnotami, můžete použít funkci <literal>Offset</literal>. V následujícím příkladu se předpokládá, že je proměnná <literal>arrData</literal> jednorozměrným polem:"
 
 #. gF7Gb
 #: sf_calc.xhp
@@ -12517,14 +12562,14 @@ msgctxt ""
 msgid "<emph>inputstr</emph>: The string to import."
 msgstr "<emph>inputstr</emph>: Řetězec, který se má naimportovat."
 
-#. GDAGm
+#. eCfBF
 #: sf_dictionary.xhp
 msgctxt ""
 "sf_dictionary.xhp\n"
 "par_id201601391980268\n"
 "help.text"
-msgid "<emph>overwrite</emph>: When <literal>True</literal>, entries with same name may exist in the dictionary and their values are overwritten. When <literal>False</literal> (default), repeated keys will raise an error. Beware that dictionary keys are not case-sensitive while names are case-sensitive in JSON strings."
-msgstr "<emph>overwrite</emph>: Je-li <literal>True</literal>, je povoleno, aby položky téhož názvu již ve slovníku existovaly, a jejich hodnoty jsou při importu přepsány. Je-li <literal>False</literal> (výchozí), opakovaný klíč způsobí chybu. Mějte na paměti, že u klíčů slovníku se velikost písmen nerozlišuje, zatímco u řetězců formátu JSON ano."
+msgid "<emph>overwrite</emph>: When <literal>True</literal>, entries with same name may exist in the dictionary and their values are overwritten. When <literal>False</literal> (default), repeated keys will raise an error. Be aware that dictionary keys are not case-sensitive while names are case-sensitive in JSON strings."
+msgstr ""
 
 #. aBFC5
 #: sf_dictionary.xhp
@@ -12805,14 +12850,23 @@ msgctxt ""
 msgid "Alternatively you can use the methods <literal>CreateDocument</literal> and <literal>OpenDocument</literal> from the <literal>UI</literal> service."
 msgstr "Můžete také použít metody <literal>CreateDocument</literal> a <literal>OpenDocument</literal> ze služby <literal>UI</literal>."
 
-#. kv6B9
+#. uwA2W
 #: sf_document.xhp
 msgctxt ""
 "sf_document.xhp\n"
 "par_id691622816765571\n"
 "help.text"
-msgid "Directly if the document is already open."
-msgstr "Nebo přímo, pokud je dokument již otevřen."
+msgid "Using a window name if the document is already open."
+msgstr ""
+
+#. yRfyT
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
+"par_id551658777771853\n"
+"help.text"
+msgid "Using the document referenced by <literal>ThisComponent</literal>. This is specially useful when running a macro from within the Basic IDE."
+msgstr ""
 
 #. yFDEW
 #: sf_document.xhp
@@ -14299,14 +14353,14 @@ msgctxt ""
 msgid "<emph>arg0[, arg1, ...]</emph>: Any number of arguments of any type."
 msgstr "<emph>arg0[, arg1, ...]</emph>: Jakýkoliv počet argumentů libovolného typu."
 
-#. ZxYFC
+#. sCSES
 #: sf_exception.xhp
 msgctxt ""
 "sf_exception.xhp\n"
 "par_id111621624672183\n"
 "help.text"
-msgid "Displays the list of arguments in a readable form in the Python shell (APSO) console. Arguments are separated by a TAB character (simulated by spaces)."
-msgstr "Zobrazí seznam argumentů v čitelné podobě v konzoli shellu Pythonu (APSO). Argumenty jsou odděleny znakem tabulátor (napodobeným mezerami)."
+msgid "Displays the list of arguments in a readable form in the platform console. Arguments are separated by a TAB character (simulated by spaces)."
+msgstr ""
 
 #. ujSFu
 #: sf_exception.xhp
@@ -14317,6 +14371,15 @@ msgctxt ""
 msgid "The same string is added to the ScriptForge debug console."
 msgstr "Stejný řetězec se přidá do ladicí konzole knihovny ScriptForge."
 
+#. yreJF
+#: sf_exception.xhp
+msgctxt ""
+"sf_exception.xhp\n"
+"par_id551655563148866\n"
+"help.text"
+msgid "If <link href=\"https://extensions.libreoffice.org/en/extensions/show/apso-alternative-script-organizer-for-python\" name=\"APSO Python shell\">Python shell (APSO)</link> is active, <literal>PythonPrint</literal> content is written to APSO console in place of the platform console."
+msgstr ""
+
 #. ixNfF
 #: sf_exception.xhp
 msgctxt ""
@@ -14326,14 +14389,14 @@ msgctxt ""
 msgid "<emph>arg0[, arg1, ...]</emph>: Any number of arguments of any type. The maximum length of each individual argument is 1024 characters."
 msgstr "<emph>arg0[, arg1, ...]</emph>: Jakýkoliv počet argumentů libovolného typu. Maximální délka jednotlivých argumentů činí 1024 znaků."
 
-#. f5WaM
+#. U88JC
 #: sf_exception.xhp
 msgctxt ""
 "sf_exception.xhp\n"
 "par_id261123015276160\n"
 "help.text"
-msgid "In python use simply the builtin print() statement."
-msgstr "V Pythonu lze jednoduše použít vestavěný příkaz print()."
+msgid "In Python use a <literal>print</literal> statement to print to the APSO console or use the <literal>DebugPrint</literal> method to print to ScriptForge's console."
+msgstr ""
 
 #. CUoch
 #: sf_exception.xhp
@@ -15136,14 +15199,14 @@ msgctxt ""
 msgid "In the examples below the first line copies a single file whereas the second line copies multiple files using wildcards."
 msgstr "V níže uvedených příkladech se na prvním řádku zkopíruje jediný soubor, na druhém pomocí zástupných znaků více souborů."
 
-#. GevfF
+#. 7xndg
 #: sf_filesystem.xhp
 msgctxt ""
 "sf_filesystem.xhp\n"
 "par_id411626216328023\n"
 "help.text"
-msgid "Beware that subfolders and their contents are not copied when wildcards are used in the <emph>source</emph> argument."
-msgstr "Mějte na paměti, že při použití zástupných znaků v argumentu <emph>source</emph> se nezkopírují podsložky a jejich obsah."
+msgid "Be aware that subfolders and their contents are not copied when wildcards are used in the <emph>source</emph> argument."
+msgstr ""
 
 #. TdGi7
 #: sf_filesystem.xhp
@@ -15298,14 +15361,14 @@ msgctxt ""
 msgid "<emph>encoding</emph>: The character set to be used. The default encoding is \"UTF-8\"."
 msgstr "<emph>encoding</emph>: Znaková sada, která se má použít. Výchozím kódováním je \"UTF-8\"."
 
-#. eoE92
+#. Pas6f
 #: sf_filesystem.xhp
 msgctxt ""
 "sf_filesystem.xhp\n"
 "par_id141613001281573\n"
 "help.text"
-msgid "To learn more about the names of character sets, visit <link href=\"https://www.iana.org/assignments/character-sets/character-sets.xhtml\" name=\"Character Sets\">IANA's Character Set</link> page. Beware that %PRODUCTNAME does not implement all existing character sets."
-msgstr "Podrobnosti o názvech znakových sad naleznete na stránce <link href=\"https://www.iana.org/assignments/character-sets/character-sets.xhtml\" name=\"Znakové sady\">znakových sad IANA</link>. Mějte na paměti, že v %PRODUCTNAME nemusí být všechny znakové sady implementovány."
+msgid "To learn more about the names of character sets, visit <link href=\"https://www.iana.org/assignments/character-sets/character-sets.xhtml\" name=\"Character Sets\">IANA's Character Set</link> page. Be aware that %PRODUCTNAME does not implement all existing character sets."
+msgstr ""
 
 #. DVGxr
 #: sf_filesystem.xhp
@@ -15424,14 +15487,14 @@ msgctxt ""
 msgid "Returns a string containing the folder where the specified extension package is installed."
 msgstr "Vrátí řetězec obsahující složku, v níž je nainstalován zadaný balík s rozšířením."
 
-#. xuDgD
+#. pJWi2
 #: sf_filesystem.xhp
 msgctxt ""
 "sf_filesystem.xhp\n"
-"par_id21612999775311\n"
+"par_id711658780480236\n"
 "help.text"
 msgid "The current value of the property <literal>SF_FileSystem.FileNaming</literal> is used to determine the notation of the returned string."
-msgstr "U vráceného řetězce je použit zápis podle aktuální hodnoty vlastnosti <literal>SF_FileSystem.FileNaming</literal>."
+msgstr ""
 
 #. jWSSt
 #: sf_filesystem.xhp
@@ -15945,6 +16008,51 @@ msgctxt ""
 "help.text"
 msgid "Wildcard characters are not allowed in <literal>destination</literal>."
 msgstr "V argumentu <literal>destination</literal> nejsou povoleny zástupné znaky."
+
+#. DqpaF
+#: sf_filesystem.xhp
+msgctxt ""
+"sf_filesystem.xhp\n"
+"par_id871583670342051\n"
+"help.text"
+msgid "Returns a string containing the normalized path name by collapsing redundant separators and up-level references."
+msgstr ""
+
+#. heCzw
+#: sf_filesystem.xhp
+msgctxt ""
+"sf_filesystem.xhp\n"
+"par_id541658780038027\n"
+"help.text"
+msgid "For instance, the path names <literal>A//B</literal>, <literal>A/B/</literal>, <literal>A/./B</literal> and <literal>A/foo/../B</literal> are all normalized to <literal>A/B</literal>."
+msgstr ""
+
+#. A6mAb
+#: sf_filesystem.xhp
+msgctxt ""
+"sf_filesystem.xhp\n"
+"par_id881613074436118\n"
+"help.text"
+msgid "On Windows, forward slashes \"/\" are converted to backward slashes \"\\\"."
+msgstr ""
+
+#. 56xkN
+#: sf_filesystem.xhp
+msgctxt ""
+"sf_filesystem.xhp\n"
+"par_id381658780455018\n"
+"help.text"
+msgid "The current value of the property <literal>SF_FileSystem.FileNaming</literal> is used to determine the notation of the <literal>filename</literal> argument as well as the format of the returned string."
+msgstr ""
+
+#. G9ARW
+#: sf_filesystem.xhp
+msgctxt ""
+"sf_filesystem.xhp\n"
+"par_id481583670340107\n"
+"help.text"
+msgid "<emph>filename</emph>: a string representing a valid path name. The file or directory represented by this argument may not exist."
+msgstr ""
 
 #. JNTia
 #: sf_filesystem.xhp
@@ -17314,14 +17422,14 @@ msgctxt ""
 msgid "The value returned by the <literal>Controls</literal> method depends on the arguments provided:"
 msgstr "Hodnota vrácená metodou <literal>Controls</literal> závisí na zadaných argumentech:"
 
-#. YkyY2
+#. VXWwg
 #: sf_form.xhp
 msgctxt ""
 "sf_form.xhp\n"
 "par_id421598179770993\n"
 "help.text"
-msgid "If the method is called <emph>without arguments</emph>, then it returns the list of the controls contained in the form. Beware that the returned list does not contain any subform controls."
-msgstr "Je-li metoda zavolána <emph>bez argumentů</emph>, vrátí seznam ovládacích prvků, které formulář obsahuje. Mějte na paměti, že vrácený seznam nezahrnuje ovládací prvky z podformulářů."
+msgid "If the method is called <emph>without arguments</emph>, then it returns the list of the controls contained in the form. Be aware that the returned list does not contain any subform controls."
+msgstr ""
 
 #. SsiUX
 #: sf_form.xhp
@@ -19852,14 +19960,14 @@ msgctxt ""
 msgid "<emph>encoding2</emph>: The character set of the fallback PO file corresponding to the <literal>locale2</literal> argument. The default encoding is \"UTF-8\"."
 msgstr "<emph>encoding2</emph>: Znaková sada záložního souboru PO odpovídající argumentu <literal>locale2</literal>. Výchozí znakovou sadou je \"UTF-8\"."
 
-#. wbSFz
+#. M2NBE
 #: sf_l10n.xhp
 msgctxt ""
 "sf_l10n.xhp\n"
 "par_id141613001281573\n"
 "help.text"
-msgid "To learn more about the names of character sets, visit <link href=\"https://www.iana.org/assignments/character-sets/character-sets.xhtml\" name=\"Character Sets\">IANA's Character Set</link> page. Beware that %PRODUCTNAME does not implement all existing character sets."
-msgstr "Podrobnosti o názvech znakových sad naleznete na stránce <link href=\"https://www.iana.org/assignments/character-sets/character-sets.xhtml\" name=\"Znakové sady\">znakových sad IANA</link>. Mějte na paměti, že v %PRODUCTNAME nemusí být všechny znakové sady implementovány."
+msgid "To learn more about the names of character sets, visit <link href=\"https://www.iana.org/assignments/character-sets/character-sets.xhtml\" name=\"Character Sets\">IANA's Character Set</link> page. Be aware that %PRODUCTNAME does not implement all existing character sets."
+msgstr ""
 
 #. 3ApdD
 #: sf_l10n.xhp
@@ -23292,77 +23400,14 @@ msgctxt ""
 msgid "numText = oRegion.Number2Text(\"ordinal 15\", \"en-US\")"
 msgstr "numText = oRegion.Number2Text(\"ordinal 15\", \"cs-CZ\")"
 
-#. CHCJt
+#. 3T93o
 #: sf_region.xhp
 msgctxt ""
 "sf_region.xhp\n"
 "par_id801656027524051\n"
 "help.text"
-msgid "To get a list of all supported prefixes in a given language, call <literal>Number2Text</literal> with the special \"help\" argument, as shown in the example below:"
-msgstr "Seznam všech podporovaných předpon pro daný jazyk získáte zavoláním <literal>Number2Text</literal> se speciálním argumentem \"help\", jak ukazuje následující příklad:"
-
-#. ZqfNT
-#: sf_region.xhp
-msgctxt ""
-"sf_region.xhp\n"
-"bas_id181656027807107\n"
-"help.text"
-msgid "' Considering the \"en-US\" locale the message box will show the following text"
-msgstr "' V národním prostředí \"cs-CZ\" se v dialogu zobrazí následující text"
-
-#. hRef2
-#: sf_region.xhp
-msgctxt ""
-"sf_region.xhp\n"
-"bas_id216560277123601\n"
-"help.text"
-msgid "' one, two, three"
-msgstr "' jedno, dvě, tři"
-
-#. YMJ5N
-#: sf_region.xhp
-msgctxt ""
-"sf_region.xhp\n"
-"bas_id361656027712711\n"
-"help.text"
-msgid "' ordinal: first, second, third"
-msgstr "' cardinal-neuter: jedno, dvě, tři"
-
-#. vhTrp
-#: sf_region.xhp
-msgctxt ""
-"sf_region.xhp\n"
-"bas_id891656027712920\n"
-"help.text"
-msgid "' ordinal-number: 1st, 2nd, 3rd"
-msgstr "' cardinal-feminine: jedna, dvě, tři"
-
-#. YGCiN
-#: sf_region.xhp
-msgctxt ""
-"sf_region.xhp\n"
-"bas_id611656027713104\n"
-"help.text"
-msgid "' year: nineteen ninety-nine, two thousand, two thousand one"
-msgstr "' cardinal-masculine: jeden, dva, tři"
-
-#. vEMTZ
-#: sf_region.xhp
-msgctxt ""
-"sf_region.xhp\n"
-"bas_id861656027713288\n"
-"help.text"
-msgid "' currency (for example, USD): two U.S. dollars and fifty cents"
-msgstr "' ordinal: první, dvě, třetí (chyba v převodu pro číslovku \"dva\")"
-
-#. xYrSL
-#: sf_region.xhp
-msgctxt ""
-"sf_region.xhp\n"
-"bas_id841656027713503\n"
-"help.text"
-msgid "' money USD: two and 50/100 U.S. dollars"
-msgstr "' ordinal-number: 1., 2., 3."
+msgid "To get a list of all supported prefixes in a given language, call <literal>Number2Text</literal> with the special \"help\" argument. In the example below, assume your locale is set to \"en-US\", then the list of available prefixes for \"en-US\" will be shown by <literal>MsgBox</literal>:"
+msgstr ""
 
 #. RBkxp
 #: sf_region.xhp
@@ -23373,14 +23418,23 @@ msgctxt ""
 msgid "The first line in the message box does not have a prefix, which means that it is the standard format. The subsequent lines include the prefix and some examples of numbers using its format."
 msgstr "První řádek v dialogu je bez předpony a značí standardní formát. Na následujících řádcích jsou uvedeny předpony a několik příkladů odpovídajících číslovek."
 
-#. WPApK
+#. WYDkd
 #: sf_region.xhp
 msgctxt ""
 "sf_region.xhp\n"
 "par_id781656028528520\n"
 "help.text"
-msgid "Each language has its own set of supported prefixes."
-msgstr "Každý jazyk má vlastní sadu podporovaných předpon."
+msgid "Each language has its own set of supported prefixes. The number of available prefixes may vary from language to language."
+msgstr ""
+
+#. gcMPN
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id531663849363398\n"
+"help.text"
+msgid "To get the list of prefixes for a specific language or locale, it can be specified as the second argument in <literal>Number2Text</literal>. The example below shows the available prefixes available for the \"pt-BR\" locale:"
+msgstr ""
 
 #. dShiA
 #: sf_region.xhp
@@ -23462,33 +23516,6 @@ msgctxt ""
 "help.text"
 msgid "' The UTC date/time is June 23, 2022 at 12:30:00"
 msgstr "' Datum a čas v UTC je 23. června 2022 12:30:00"
-
-#. RpFvL
-#: sf_region.xhp
-msgctxt ""
-"sf_region.xhp\n"
-"pyc_id361656077667354\n"
-"help.text"
-msgid "import datetime"
-msgstr "import datetime"
-
-#. hgcCJ
-#: sf_region.xhp
-msgctxt ""
-"sf_region.xhp\n"
-"pyc_id901656077667666\n"
-"help.text"
-msgid "localDT = datetime.datetime(2022, 6, 23, 14, 30, 0)"
-msgstr "localDT = datetime.datetime(2022, 6, 23, 14, 30, 0)"
-
-#. A7GXw
-#: sf_region.xhp
-msgctxt ""
-"sf_region.xhp\n"
-"pyc_id521656077682826\n"
-"help.text"
-msgid "utcTime = oRegion.UTCDateTime(localDT, \"Europe/Berlin\", \"DE\")"
-msgstr "utcTime = oRegion.UTCDateTime(localDT, \"Europe/Prague\", \"CZ\")"
 
 #. tZoWt
 #: sf_region.xhp
@@ -23751,14 +23778,14 @@ msgctxt ""
 msgid "The following example instantiates the <literal>Basic</literal> service and calls the <literal>MsgBox</literal> method, which is equivalent to the <literal>MsgBox</literal> function available in Basic:"
 msgstr "V následujícím příkladu je vytvořena instance služby <literal>Basic</literal> a zavolána metoda <literal>MsgBox</literal>, odpovídající funkci <literal>MsgBox</literal> dostupné v Basicu."
 
-#. zVgQm
+#. TFMGE
 #: sf_services.xhp
 msgctxt ""
 "sf_services.xhp\n"
 "par_id581627645023307\n"
 "help.text"
-msgid "Beware that the <literal>Basic</literal> service has to be instantiated in Python scripts using the <literal>CreateScriptService</literal> method."
-msgstr "Mějte na paměti, že ve skriptech Pythonu musí být vytvořena instance služby <literal>Basic</literal>, a to metodou <literal>CreateScriptService</literal>."
+msgid "Be aware that the <literal>Basic</literal> service has to be instantiated in Python scripts using the <literal>CreateScriptService</literal> method."
+msgstr ""
 
 #. LCVem
 #: sf_session.xhp
@@ -23895,14 +23922,14 @@ msgctxt ""
 msgid "in any shared library"
 msgstr "v jakékoliv sdílené knihovně"
 
-#. E7meg
+#. 2GN3X
 #: sf_session.xhp
 msgctxt ""
 "sf_session.xhp\n"
 "par_id391582814720487\n"
 "help.text"
-msgid "in My Macros"
-msgstr "ve skupině Moje makra"
+msgid "in <emph>My Macros</emph>"
+msgstr ""
 
 #. MiuWT
 #: sf_session.xhp
@@ -23913,14 +23940,14 @@ msgctxt ""
 msgid "in an extension installed for the current user"
 msgstr "v rozšíření nainstalovaném pro aktuálního uživatele"
 
-#. SAMnM
+#. MfbpF
 #: sf_session.xhp
 msgctxt ""
 "sf_session.xhp\n"
 "par_id21582814720997\n"
 "help.text"
-msgid "in %PRODUCTNAME macros"
-msgstr "v makrech %PRODUCTNAME"
+msgid "in <emph>Application Macros</emph>"
+msgstr ""
 
 #. LnKrt
 #: sf_session.xhp
@@ -27045,14 +27072,14 @@ msgctxt ""
 msgid "Sets or returns the current delimiter to be inserted between two successive written lines. The default value is the native line delimiter in the current operating system."
 msgstr "Nastaví nebo vrátí aktuální oddělovač vkládaný mezi dva následující zapisované řádky. Výchozí hodnotou je nativní oddělovač řádků z aktuálního operačního systému."
 
-#. dCeHZ
+#. EuWCP
 #: sf_textstream.xhp
 msgctxt ""
 "sf_textstream.xhp\n"
 "par_id141613001281573\n"
 "help.text"
-msgid "To learn more about the names of character sets, visit <link href=\"https://www.iana.org/assignments/character-sets/character-sets.xhtml\" name=\"Character Sets\">IANA's Character Set</link> page. Beware that %PRODUCTNAME does not implement all existing character sets."
-msgstr "Podrobnosti o názvech znakových sad naleznete na stránce <link href=\"https://www.iana.org/assignments/character-sets/character-sets.xhtml\" name=\"Znakové sady\">znakových sad IANA</link>. Mějte na paměti, že v %PRODUCTNAME nemusí být všechny znakové sady implementovány."
+msgid "To learn more about the names of character sets, visit <link href=\"https://www.iana.org/assignments/character-sets/character-sets.xhtml\" name=\"Character Sets\">IANA's Character Set</link> page. Be aware that %PRODUCTNAME does not implement all existing character sets."
+msgstr ""
 
 #. hKJkD
 #: sf_textstream.xhp
@@ -27756,14 +27783,14 @@ msgctxt ""
 msgid "If you call the <literal>Terminate</literal> method, subsequent calls for the <literal>Continue</literal> method will not resume time measurement. Similarly, after a Timer has been terminated, calling the <literal>Start</literal> method will restart it as if it were a clean new Timer."
 msgstr "Zavoláte-li metodu <literal>Terminate</literal>, následná volání metody <literal>Continue</literal> měření času neobnoví. Poté co je měření ukončeno, jej volání metody <literal>Start</literal> restartuje stejně, jako by se jednalo o nové, čisté měření."
 
-#. DSYKj
+#. AqGfb
 #: sf_timer.xhp
 msgctxt ""
 "sf_timer.xhp\n"
 "par_id391626872019832\n"
 "help.text"
-msgid "Beware that the <literal>Wait</literal> function in Basic takes in a duration argument in milliseconds whereas the <literal>sleep</literal> function in Python uses seconds in its argument."
-msgstr "Mějte na paměti, že funkce Basicu <literal>Wait</literal> přijímá v argumentu dobu trvání v milisekundách, zatímco funkce Pythonu <literal>sleep</literal> používá v argumentu sekundy."
+msgid "Be aware that the <literal>Wait</literal> function in BASIC takes in a duration argument in milliseconds whereas the <literal>sleep</literal> function in Python uses seconds in its argument."
+msgstr ""
 
 #. bHEyr
 #: sf_timer.xhp

@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2022-07-04 18:04+0200\n"
+"POT-Creation-Date: 2022-10-10 13:35+0200\n"
 "PO-Revision-Date: 2020-07-09 16:35+0000\n"
 "Last-Translator: Adam Rak <kitynska@gmail.com>\n"
 "Language-Team: Polish <https://weblate.documentfoundation.org/projects/libo_help-master/textsbasicshared03/pl/>\n"
@@ -3913,13 +3913,13 @@ msgctxt ""
 msgid "Or using the <literal>OpenDocument</literal> method from the <literal>UI</literal> service:"
 msgstr ""
 
-#. MDxMC
+#. LA2sA
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id741621467697967\n"
 "help.text"
-msgid "It is also possible to instantiate the <literal>Calc</literal> service using the <literal>CreateScriptService</literal> method:"
+msgid "It is also possible to instantiate the <literal>Calc</literal> service specifying a window name for the <literal>CreateScriptService</literal> method:"
 msgstr ""
 
 #. CKafD
@@ -3929,6 +3929,15 @@ msgctxt ""
 "par_id271621467810774\n"
 "help.text"
 msgid "In the example above, \"MyFile.ods\" is the name of an open document window. If this argument is not provided, the active window is considered."
+msgstr ""
+
+#. ucEa2
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id551658777771853\n"
+"help.text"
+msgid "It is also possible to invoke the <literal>Calc</literal> service using the document referenced by <literal>ThisComponent</literal>. This is specially useful when running a macro from within the Basic IDE."
 msgstr ""
 
 #. gfpHw
@@ -5137,6 +5146,15 @@ msgctxt ""
 msgid "For example, suppose range <emph>A1:J200</emph> is selected (height = 200), so the default formula is <emph>=(COUNTBLANK(A1:A200)=200)</emph>. This means that if all 200 cells are empty in the first column (Column A), then the column is deleted. Note that the formula is expressed with respect to the first column only. Internally the <literal>CompactLeft</literal> method will generalize this formula for all the remaining columns."
 msgstr ""
 
+#. viKpg
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id431657568414625\n"
+"help.text"
+msgid "Calc functions used in the <literal>filterformula</literal> argument must be expressed using their English names. Visit the Wiki page <link href=\"https://wiki.documentfoundation.org/Documentation/Calc_Functions/List_of_Functions\" name=\"CalcFunctions\">List of Calc Functions</link> for a complete list of Calc functions in English."
+msgstr ""
+
 #. FDspT
 #: sf_calc.xhp
 msgctxt ""
@@ -5315,6 +5333,15 @@ msgctxt ""
 "par_id361652271022681\n"
 "help.text"
 msgid "For example, suppose range <emph>A1:J200</emph> is selected (width = 10), so the default formula is <emph>=(COUNTBLANK(A1:J1)=10)</emph>. This means that if all 10 cells are empty in the first row (Row 1), then the row is deleted. Note that the formula is expressed with respect to the first row only. Internally the <literal>CompactUp</literal> method will generalize this formula for all the remaining rows."
+msgstr ""
+
+#. VCrie
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id431657568414714\n"
+"help.text"
+msgid "The Calc functions used in the formula specified in the <literal>filterformula</literal> argument must be expressed using their English names. Visit the Wiki page <link href=\"https://wiki.documentfoundation.org/Documentation/Calc_Functions/List_of_Functions\" name=\"CalcFunctions\">List of Calc Functions</link> for a complete list of Calc functions in English."
 msgstr ""
 
 #. GuWzD
@@ -6316,6 +6343,15 @@ msgctxt ""
 msgid "Get the formula(s) stored in the given range of cells as a single string, a 1D or a 2D array of strings."
 msgstr ""
 
+#. ojiDi
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id291658146319931\n"
+"help.text"
+msgid "The names of Calc functions used in the returned formulas are expressed in English. Visit the Wiki page <link href=\"https://wiki.documentfoundation.org/Documentation/Calc_Functions/List_of_Functions\" name=\"CalcFunctions\">List of Calc Functions</link> for a complete list of Calc functions in English."
+msgstr ""
+
 #. KDFkQ
 #: sf_calc.xhp
 msgctxt ""
@@ -7126,96 +7162,6 @@ msgctxt ""
 msgid "To dump the full contents of an array in a sheet, use <emph>SetArray</emph>. To dump the contents of an array only within the boundaries of the targeted range of cells, use <emph>SetValue</emph>."
 msgstr ""
 
-#. ecovS
-#: sf_calc.xhp
-msgctxt ""
-"sf_calc.xhp\n"
-"par_id601592231799489\n"
-"help.text"
-msgid "Stores the given value in the specified range. The size of the modified area is equal to the size of the target range."
-msgstr ""
-
-#. PeoKo
-#: sf_calc.xhp
-msgctxt ""
-"sf_calc.xhp\n"
-"par_id1001592233389953\n"
-"help.text"
-msgid "The method returns a string representing the modified area as a range of cells."
-msgstr ""
-
-#. xYrHQ
-#: sf_calc.xhp
-msgctxt ""
-"sf_calc.xhp\n"
-"par_id361592231799255\n"
-"help.text"
-msgid "<emph>targetrange</emph>: The range where to store the given value, as a string."
-msgstr ""
-
-#. dydXF
-#: sf_calc.xhp
-msgctxt ""
-"sf_calc.xhp\n"
-"par_id461592232081985\n"
-"help.text"
-msgid "<emph>value</emph>: A scalar, a vector or an array with the new values for each cell of the range. The new values must be strings, numeric values or dates. Other types will cause the corresponding cells to be emptied."
-msgstr ""
-
-#. CgwVF
-#: sf_calc.xhp
-msgctxt ""
-"sf_calc.xhp\n"
-"par_id841592745785192\n"
-"help.text"
-msgid "The full range is updated and the remainder of the sheet is left unchanged. If the size of <literal>value</literal> is smaller than the size of <literal>targetrange</literal>, then the remaining cells will be emptied."
-msgstr ""
-
-#. QFkLr
-#: sf_calc.xhp
-msgctxt ""
-"sf_calc.xhp\n"
-"par_id191611776838396\n"
-"help.text"
-msgid "If the size of <literal>value</literal> is larger than the size of <literal>targetrange</literal>, then <literal>value</literal> is only partially copied until it fills the size of <literal>targetrange</literal>."
-msgstr ""
-
-#. ykBk6
-#: sf_calc.xhp
-msgctxt ""
-"sf_calc.xhp\n"
-"par_id71611776941663\n"
-"help.text"
-msgid "Vectors are expanded vertically, except if <literal>targetrange</literal> has a height of exactly 1 row."
-msgstr ""
-
-#. FJCPf
-#: sf_calc.xhp
-msgctxt ""
-"sf_calc.xhp\n"
-"bas_id541592232948567\n"
-"help.text"
-msgid "'Below the Value array is smaller than the TargetRange (remaining cells are emptied)"
-msgstr ""
-
-#. vuu9B
-#: sf_calc.xhp
-msgctxt ""
-"sf_calc.xhp\n"
-"bas_id541592232948825\n"
-"help.text"
-msgid "'Below the Value and TargetRange have the same size"
-msgstr ""
-
-#. 4LFnH
-#: sf_calc.xhp
-msgctxt ""
-"sf_calc.xhp\n"
-"par_id731621689592755\n"
-"help.text"
-msgid "If you want to fill a single row with values, you can use the <literal>Offset</literal> function. In the example below, consider that <literal>arrData</literal> is a one-dimensional array:"
-msgstr ""
-
 #. g8mER
 #: sf_calc.xhp
 msgctxt ""
@@ -7333,6 +7279,15 @@ msgctxt ""
 msgid "Vectors are always expanded vertically, except if <literal>targetrange</literal> has a height of exactly 1 row."
 msgstr ""
 
+#. XbQTz
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id431657568413185\n"
+"help.text"
+msgid "Calc functions used in the <literal>formula</literal> argument must be expressed using their English names. Visit the Wiki page <link href=\"https://wiki.documentfoundation.org/Documentation/Calc_Functions/List_of_Functions\" name=\"CalcFunctions\">List of Calc Functions</link> for a complete list of Calc functions in English."
+msgstr ""
+
 #. rNEEY
 #: sf_calc.xhp
 msgctxt ""
@@ -7349,6 +7304,96 @@ msgctxt ""
 "bas_id961593881331390\n"
 "help.text"
 msgid "'D2 contains the formula \"=H2\""
+msgstr ""
+
+#. ecovS
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id601592231799489\n"
+"help.text"
+msgid "Stores the given value in the specified range. The size of the modified area is equal to the size of the target range."
+msgstr ""
+
+#. PeoKo
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id1001592233389953\n"
+"help.text"
+msgid "The method returns a string representing the modified area as a range of cells."
+msgstr ""
+
+#. xYrHQ
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id361592231799255\n"
+"help.text"
+msgid "<emph>targetrange</emph>: The range where to store the given value, as a string."
+msgstr ""
+
+#. dydXF
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id461592232081985\n"
+"help.text"
+msgid "<emph>value</emph>: A scalar, a vector or an array with the new values for each cell of the range. The new values must be strings, numeric values or dates. Other types will cause the corresponding cells to be emptied."
+msgstr ""
+
+#. CgwVF
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id841592745785192\n"
+"help.text"
+msgid "The full range is updated and the remainder of the sheet is left unchanged. If the size of <literal>value</literal> is smaller than the size of <literal>targetrange</literal>, then the remaining cells will be emptied."
+msgstr ""
+
+#. QFkLr
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id191611776838396\n"
+"help.text"
+msgid "If the size of <literal>value</literal> is larger than the size of <literal>targetrange</literal>, then <literal>value</literal> is only partially copied until it fills the size of <literal>targetrange</literal>."
+msgstr ""
+
+#. ykBk6
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id71611776941663\n"
+"help.text"
+msgid "Vectors are expanded vertically, except if <literal>targetrange</literal> has a height of exactly 1 row."
+msgstr ""
+
+#. FJCPf
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"bas_id541592232948567\n"
+"help.text"
+msgid "'Below the Value array is smaller than the TargetRange (remaining cells are emptied)"
+msgstr ""
+
+#. vuu9B
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"bas_id541592232948825\n"
+"help.text"
+msgid "'Below the Value and TargetRange have the same size"
+msgstr ""
+
+#. 4LFnH
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id731621689592755\n"
+"help.text"
+msgid "If you want to fill a single row with values, you can use the <literal>Offset</literal> function. In the example below, consider that <literal>arrData</literal> is a one-dimensional array:"
 msgstr ""
 
 #. gF7Gb
@@ -12517,13 +12562,13 @@ msgctxt ""
 msgid "<emph>inputstr</emph>: The string to import."
 msgstr ""
 
-#. GDAGm
+#. eCfBF
 #: sf_dictionary.xhp
 msgctxt ""
 "sf_dictionary.xhp\n"
 "par_id201601391980268\n"
 "help.text"
-msgid "<emph>overwrite</emph>: When <literal>True</literal>, entries with same name may exist in the dictionary and their values are overwritten. When <literal>False</literal> (default), repeated keys will raise an error. Beware that dictionary keys are not case-sensitive while names are case-sensitive in JSON strings."
+msgid "<emph>overwrite</emph>: When <literal>True</literal>, entries with same name may exist in the dictionary and their values are overwritten. When <literal>False</literal> (default), repeated keys will raise an error. Be aware that dictionary keys are not case-sensitive while names are case-sensitive in JSON strings."
 msgstr ""
 
 #. aBFC5
@@ -12805,13 +12850,22 @@ msgctxt ""
 msgid "Alternatively you can use the methods <literal>CreateDocument</literal> and <literal>OpenDocument</literal> from the <literal>UI</literal> service."
 msgstr ""
 
-#. kv6B9
+#. uwA2W
 #: sf_document.xhp
 msgctxt ""
 "sf_document.xhp\n"
 "par_id691622816765571\n"
 "help.text"
-msgid "Directly if the document is already open."
+msgid "Using a window name if the document is already open."
+msgstr ""
+
+#. yRfyT
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
+"par_id551658777771853\n"
+"help.text"
+msgid "Using the document referenced by <literal>ThisComponent</literal>. This is specially useful when running a macro from within the Basic IDE."
 msgstr ""
 
 #. yFDEW
@@ -14299,13 +14353,13 @@ msgctxt ""
 msgid "<emph>arg0[, arg1, ...]</emph>: Any number of arguments of any type."
 msgstr ""
 
-#. ZxYFC
+#. sCSES
 #: sf_exception.xhp
 msgctxt ""
 "sf_exception.xhp\n"
 "par_id111621624672183\n"
 "help.text"
-msgid "Displays the list of arguments in a readable form in the Python shell (APSO) console. Arguments are separated by a TAB character (simulated by spaces)."
+msgid "Displays the list of arguments in a readable form in the platform console. Arguments are separated by a TAB character (simulated by spaces)."
 msgstr ""
 
 #. ujSFu
@@ -14317,6 +14371,15 @@ msgctxt ""
 msgid "The same string is added to the ScriptForge debug console."
 msgstr ""
 
+#. yreJF
+#: sf_exception.xhp
+msgctxt ""
+"sf_exception.xhp\n"
+"par_id551655563148866\n"
+"help.text"
+msgid "If <link href=\"https://extensions.libreoffice.org/en/extensions/show/apso-alternative-script-organizer-for-python\" name=\"APSO Python shell\">Python shell (APSO)</link> is active, <literal>PythonPrint</literal> content is written to APSO console in place of the platform console."
+msgstr ""
+
 #. ixNfF
 #: sf_exception.xhp
 msgctxt ""
@@ -14326,13 +14389,13 @@ msgctxt ""
 msgid "<emph>arg0[, arg1, ...]</emph>: Any number of arguments of any type. The maximum length of each individual argument is 1024 characters."
 msgstr ""
 
-#. f5WaM
+#. U88JC
 #: sf_exception.xhp
 msgctxt ""
 "sf_exception.xhp\n"
 "par_id261123015276160\n"
 "help.text"
-msgid "In python use simply the builtin print() statement."
+msgid "In Python use a <literal>print</literal> statement to print to the APSO console or use the <literal>DebugPrint</literal> method to print to ScriptForge's console."
 msgstr ""
 
 #. CUoch
@@ -15136,13 +15199,13 @@ msgctxt ""
 msgid "In the examples below the first line copies a single file whereas the second line copies multiple files using wildcards."
 msgstr ""
 
-#. GevfF
+#. 7xndg
 #: sf_filesystem.xhp
 msgctxt ""
 "sf_filesystem.xhp\n"
 "par_id411626216328023\n"
 "help.text"
-msgid "Beware that subfolders and their contents are not copied when wildcards are used in the <emph>source</emph> argument."
+msgid "Be aware that subfolders and their contents are not copied when wildcards are used in the <emph>source</emph> argument."
 msgstr ""
 
 #. TdGi7
@@ -15298,13 +15361,13 @@ msgctxt ""
 msgid "<emph>encoding</emph>: The character set to be used. The default encoding is \"UTF-8\"."
 msgstr ""
 
-#. eoE92
+#. Pas6f
 #: sf_filesystem.xhp
 msgctxt ""
 "sf_filesystem.xhp\n"
 "par_id141613001281573\n"
 "help.text"
-msgid "To learn more about the names of character sets, visit <link href=\"https://www.iana.org/assignments/character-sets/character-sets.xhtml\" name=\"Character Sets\">IANA's Character Set</link> page. Beware that %PRODUCTNAME does not implement all existing character sets."
+msgid "To learn more about the names of character sets, visit <link href=\"https://www.iana.org/assignments/character-sets/character-sets.xhtml\" name=\"Character Sets\">IANA's Character Set</link> page. Be aware that %PRODUCTNAME does not implement all existing character sets."
 msgstr ""
 
 #. DVGxr
@@ -15424,11 +15487,11 @@ msgctxt ""
 msgid "Returns a string containing the folder where the specified extension package is installed."
 msgstr ""
 
-#. xuDgD
+#. pJWi2
 #: sf_filesystem.xhp
 msgctxt ""
 "sf_filesystem.xhp\n"
-"par_id21612999775311\n"
+"par_id711658780480236\n"
 "help.text"
 msgid "The current value of the property <literal>SF_FileSystem.FileNaming</literal> is used to determine the notation of the returned string."
 msgstr ""
@@ -15944,6 +16007,51 @@ msgctxt ""
 "par_id301613072928159\n"
 "help.text"
 msgid "Wildcard characters are not allowed in <literal>destination</literal>."
+msgstr ""
+
+#. DqpaF
+#: sf_filesystem.xhp
+msgctxt ""
+"sf_filesystem.xhp\n"
+"par_id871583670342051\n"
+"help.text"
+msgid "Returns a string containing the normalized path name by collapsing redundant separators and up-level references."
+msgstr ""
+
+#. heCzw
+#: sf_filesystem.xhp
+msgctxt ""
+"sf_filesystem.xhp\n"
+"par_id541658780038027\n"
+"help.text"
+msgid "For instance, the path names <literal>A//B</literal>, <literal>A/B/</literal>, <literal>A/./B</literal> and <literal>A/foo/../B</literal> are all normalized to <literal>A/B</literal>."
+msgstr ""
+
+#. A6mAb
+#: sf_filesystem.xhp
+msgctxt ""
+"sf_filesystem.xhp\n"
+"par_id881613074436118\n"
+"help.text"
+msgid "On Windows, forward slashes \"/\" are converted to backward slashes \"\\\"."
+msgstr ""
+
+#. 56xkN
+#: sf_filesystem.xhp
+msgctxt ""
+"sf_filesystem.xhp\n"
+"par_id381658780455018\n"
+"help.text"
+msgid "The current value of the property <literal>SF_FileSystem.FileNaming</literal> is used to determine the notation of the <literal>filename</literal> argument as well as the format of the returned string."
+msgstr ""
+
+#. G9ARW
+#: sf_filesystem.xhp
+msgctxt ""
+"sf_filesystem.xhp\n"
+"par_id481583670340107\n"
+"help.text"
+msgid "<emph>filename</emph>: a string representing a valid path name. The file or directory represented by this argument may not exist."
 msgstr ""
 
 #. JNTia
@@ -17314,13 +17422,13 @@ msgctxt ""
 msgid "The value returned by the <literal>Controls</literal> method depends on the arguments provided:"
 msgstr ""
 
-#. YkyY2
+#. VXWwg
 #: sf_form.xhp
 msgctxt ""
 "sf_form.xhp\n"
 "par_id421598179770993\n"
 "help.text"
-msgid "If the method is called <emph>without arguments</emph>, then it returns the list of the controls contained in the form. Beware that the returned list does not contain any subform controls."
+msgid "If the method is called <emph>without arguments</emph>, then it returns the list of the controls contained in the form. Be aware that the returned list does not contain any subform controls."
 msgstr ""
 
 #. SsiUX
@@ -19852,13 +19960,13 @@ msgctxt ""
 msgid "<emph>encoding2</emph>: The character set of the fallback PO file corresponding to the <literal>locale2</literal> argument. The default encoding is \"UTF-8\"."
 msgstr ""
 
-#. wbSFz
+#. M2NBE
 #: sf_l10n.xhp
 msgctxt ""
 "sf_l10n.xhp\n"
 "par_id141613001281573\n"
 "help.text"
-msgid "To learn more about the names of character sets, visit <link href=\"https://www.iana.org/assignments/character-sets/character-sets.xhtml\" name=\"Character Sets\">IANA's Character Set</link> page. Beware that %PRODUCTNAME does not implement all existing character sets."
+msgid "To learn more about the names of character sets, visit <link href=\"https://www.iana.org/assignments/character-sets/character-sets.xhtml\" name=\"Character Sets\">IANA's Character Set</link> page. Be aware that %PRODUCTNAME does not implement all existing character sets."
 msgstr ""
 
 #. 3ApdD
@@ -23290,76 +23398,13 @@ msgctxt ""
 msgid "numText = oRegion.Number2Text(\"ordinal 15\", \"en-US\")"
 msgstr ""
 
-#. CHCJt
+#. 3T93o
 #: sf_region.xhp
 msgctxt ""
 "sf_region.xhp\n"
 "par_id801656027524051\n"
 "help.text"
-msgid "To get a list of all supported prefixes in a given language, call <literal>Number2Text</literal> with the special \"help\" argument, as shown in the example below:"
-msgstr ""
-
-#. ZqfNT
-#: sf_region.xhp
-msgctxt ""
-"sf_region.xhp\n"
-"bas_id181656027807107\n"
-"help.text"
-msgid "' Considering the \"en-US\" locale the message box will show the following text"
-msgstr ""
-
-#. hRef2
-#: sf_region.xhp
-msgctxt ""
-"sf_region.xhp\n"
-"bas_id216560277123601\n"
-"help.text"
-msgid "' one, two, three"
-msgstr ""
-
-#. YMJ5N
-#: sf_region.xhp
-msgctxt ""
-"sf_region.xhp\n"
-"bas_id361656027712711\n"
-"help.text"
-msgid "' ordinal: first, second, third"
-msgstr ""
-
-#. vhTrp
-#: sf_region.xhp
-msgctxt ""
-"sf_region.xhp\n"
-"bas_id891656027712920\n"
-"help.text"
-msgid "' ordinal-number: 1st, 2nd, 3rd"
-msgstr ""
-
-#. YGCiN
-#: sf_region.xhp
-msgctxt ""
-"sf_region.xhp\n"
-"bas_id611656027713104\n"
-"help.text"
-msgid "' year: nineteen ninety-nine, two thousand, two thousand one"
-msgstr ""
-
-#. vEMTZ
-#: sf_region.xhp
-msgctxt ""
-"sf_region.xhp\n"
-"bas_id861656027713288\n"
-"help.text"
-msgid "' currency (for example, USD): two U.S. dollars and fifty cents"
-msgstr ""
-
-#. xYrSL
-#: sf_region.xhp
-msgctxt ""
-"sf_region.xhp\n"
-"bas_id841656027713503\n"
-"help.text"
-msgid "' money USD: two and 50/100 U.S. dollars"
+msgid "To get a list of all supported prefixes in a given language, call <literal>Number2Text</literal> with the special \"help\" argument. In the example below, assume your locale is set to \"en-US\", then the list of available prefixes for \"en-US\" will be shown by <literal>MsgBox</literal>:"
 msgstr ""
 
 #. RBkxp
@@ -23371,13 +23416,22 @@ msgctxt ""
 msgid "The first line in the message box does not have a prefix, which means that it is the standard format. The subsequent lines include the prefix and some examples of numbers using its format."
 msgstr ""
 
-#. WPApK
+#. WYDkd
 #: sf_region.xhp
 msgctxt ""
 "sf_region.xhp\n"
 "par_id781656028528520\n"
 "help.text"
-msgid "Each language has its own set of supported prefixes."
+msgid "Each language has its own set of supported prefixes. The number of available prefixes may vary from language to language."
+msgstr ""
+
+#. gcMPN
+#: sf_region.xhp
+msgctxt ""
+"sf_region.xhp\n"
+"par_id531663849363398\n"
+"help.text"
+msgid "To get the list of prefixes for a specific language or locale, it can be specified as the second argument in <literal>Number2Text</literal>. The example below shows the available prefixes available for the \"pt-BR\" locale:"
 msgstr ""
 
 #. dShiA
@@ -23459,33 +23513,6 @@ msgctxt ""
 "bas_id731656077523173\n"
 "help.text"
 msgid "' The UTC date/time is June 23, 2022 at 12:30:00"
-msgstr ""
-
-#. RpFvL
-#: sf_region.xhp
-msgctxt ""
-"sf_region.xhp\n"
-"pyc_id361656077667354\n"
-"help.text"
-msgid "import datetime"
-msgstr ""
-
-#. hgcCJ
-#: sf_region.xhp
-msgctxt ""
-"sf_region.xhp\n"
-"pyc_id901656077667666\n"
-"help.text"
-msgid "localDT = datetime.datetime(2022, 6, 23, 14, 30, 0)"
-msgstr ""
-
-#. A7GXw
-#: sf_region.xhp
-msgctxt ""
-"sf_region.xhp\n"
-"pyc_id521656077682826\n"
-"help.text"
-msgid "utcTime = oRegion.UTCDateTime(localDT, \"Europe/Berlin\", \"DE\")"
 msgstr ""
 
 #. tZoWt
@@ -23749,13 +23776,13 @@ msgctxt ""
 msgid "The following example instantiates the <literal>Basic</literal> service and calls the <literal>MsgBox</literal> method, which is equivalent to the <literal>MsgBox</literal> function available in Basic:"
 msgstr ""
 
-#. zVgQm
+#. TFMGE
 #: sf_services.xhp
 msgctxt ""
 "sf_services.xhp\n"
 "par_id581627645023307\n"
 "help.text"
-msgid "Beware that the <literal>Basic</literal> service has to be instantiated in Python scripts using the <literal>CreateScriptService</literal> method."
+msgid "Be aware that the <literal>Basic</literal> service has to be instantiated in Python scripts using the <literal>CreateScriptService</literal> method."
 msgstr ""
 
 #. LCVem
@@ -23893,13 +23920,13 @@ msgctxt ""
 msgid "in any shared library"
 msgstr ""
 
-#. E7meg
+#. 2GN3X
 #: sf_session.xhp
 msgctxt ""
 "sf_session.xhp\n"
 "par_id391582814720487\n"
 "help.text"
-msgid "in My Macros"
+msgid "in <emph>My Macros</emph>"
 msgstr ""
 
 #. MiuWT
@@ -23911,13 +23938,13 @@ msgctxt ""
 msgid "in an extension installed for the current user"
 msgstr ""
 
-#. SAMnM
+#. MfbpF
 #: sf_session.xhp
 msgctxt ""
 "sf_session.xhp\n"
 "par_id21582814720997\n"
 "help.text"
-msgid "in %PRODUCTNAME macros"
+msgid "in <emph>Application Macros</emph>"
 msgstr ""
 
 #. LnKrt
@@ -27043,13 +27070,13 @@ msgctxt ""
 msgid "Sets or returns the current delimiter to be inserted between two successive written lines. The default value is the native line delimiter in the current operating system."
 msgstr ""
 
-#. dCeHZ
+#. EuWCP
 #: sf_textstream.xhp
 msgctxt ""
 "sf_textstream.xhp\n"
 "par_id141613001281573\n"
 "help.text"
-msgid "To learn more about the names of character sets, visit <link href=\"https://www.iana.org/assignments/character-sets/character-sets.xhtml\" name=\"Character Sets\">IANA's Character Set</link> page. Beware that %PRODUCTNAME does not implement all existing character sets."
+msgid "To learn more about the names of character sets, visit <link href=\"https://www.iana.org/assignments/character-sets/character-sets.xhtml\" name=\"Character Sets\">IANA's Character Set</link> page. Be aware that %PRODUCTNAME does not implement all existing character sets."
 msgstr ""
 
 #. hKJkD
@@ -27754,13 +27781,13 @@ msgctxt ""
 msgid "If you call the <literal>Terminate</literal> method, subsequent calls for the <literal>Continue</literal> method will not resume time measurement. Similarly, after a Timer has been terminated, calling the <literal>Start</literal> method will restart it as if it were a clean new Timer."
 msgstr ""
 
-#. DSYKj
+#. AqGfb
 #: sf_timer.xhp
 msgctxt ""
 "sf_timer.xhp\n"
 "par_id391626872019832\n"
 "help.text"
-msgid "Beware that the <literal>Wait</literal> function in Basic takes in a duration argument in milliseconds whereas the <literal>sleep</literal> function in Python uses seconds in its argument."
+msgid "Be aware that the <literal>Wait</literal> function in BASIC takes in a duration argument in milliseconds whereas the <literal>sleep</literal> function in Python uses seconds in its argument."
 msgstr ""
 
 #. bHEyr
