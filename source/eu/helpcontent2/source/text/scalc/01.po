@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2022-10-22 14:13+0200\n"
-"PO-Revision-Date: 2022-10-22 12:14+0000\n"
+"POT-Creation-Date: 2022-11-14 14:36+0100\n"
+"PO-Revision-Date: 2022-11-14 13:34+0000\n"
 "Last-Translator: Asier Sarasua Garmendia <asiersar@yahoo.com>\n"
 "Language-Team: Basque <https://translations.documentfoundation.org/projects/libo_help-master/textscalc01/eu/>\n"
 "Language: eu\n"
@@ -2068,14 +2068,14 @@ msgctxt ""
 msgid "Enable rounding"
 msgstr "Gaitu biribiltzea"
 
-#. Ap7Uc
+#. mfd5V
 #: 02140700.xhp
 msgctxt ""
 "02140700.xhp\n"
 "par_id2308201415431822157\n"
 "help.text"
-msgid "<ahelp hid=\".\">Truncate the number to a given number of <emph>Decimal Places</emph>.</ahelp>"
-msgstr "<ahelp hid=\".\">Trunkatu zenbakia <emph>Dezimalak</emph> balioa erabiliz.</ahelp>"
+msgid "<ahelp hid=\".\">Round the number to a given number of <emph>Decimal Places</emph>.</ahelp>"
+msgstr ""
 
 #. Wj97D
 #: 02140700.xhp
@@ -10562,7 +10562,7 @@ msgctxt ""
 "par_id3149946\n"
 "help.text"
 msgid "<item type=\"input\">=AND(FALSE();TRUE())</item> returns FALSE."
-msgstr ""
+msgstr "<item type=\"input\">=AND(FALSE();TRUE())</item> funtzioak FALSE itzultzen du."
 
 #. XXJC8
 #: 04060105.xhp
@@ -10832,7 +10832,7 @@ msgctxt ""
 "par_id3158412\n"
 "help.text"
 msgid "<item type=\"input\">=OR(FALSE();TRUE())</item> returns TRUE."
-msgstr ""
+msgstr "<item type=\"input\">=OR(FALSE();TRUE())</item> funtzioak TRUE itzultzen du."
 
 #. B2UcY
 #: 04060105.xhp
@@ -10958,7 +10958,7 @@ msgctxt ""
 "par_id3083286\n"
 "help.text"
 msgid "<item type=\"input\">=XOR(TRUE();TRUE())</item> returns FALSE"
-msgstr ""
+msgstr "<item type=\"input\">=XOR(TRUE();TRUE())</item> funtzioak FALSE itzultzen du."
 
 #. sACsD
 #: 04060105.xhp
@@ -10967,7 +10967,7 @@ msgctxt ""
 "par_id3083445\n"
 "help.text"
 msgid "<item type=\"input\">=XOR(TRUE();TRUE();TRUE())</item> returns TRUE"
-msgstr ""
+msgstr "<item type=\"input\">=XOR(TRUE();TRUE();TRUE())</item> funtzioak TRUE itzultzen du."
 
 #. Uhsea
 #: 04060105.xhp
@@ -10976,7 +10976,7 @@ msgctxt ""
 "par_id3154315\n"
 "help.text"
 msgid "<item type=\"input\">=XOR(FALSE();TRUE())</item> returns TRUE"
-msgstr ""
+msgstr "<item type=\"input\">=XOR(FALSE();TRUE())</item> funtzioak TRUE itzultzen du."
 
 #. 3Ed6j
 #: 04060106.xhp
@@ -14146,14 +14146,14 @@ msgctxt ""
 msgid "<emph>SumRange</emph> is the range from which values are summed. If this parameter has not been indicated, the values found in the Range are summed."
 msgstr "<emph>BatuketaBarrutia</emph>: batuko diren balioen barrutia. Parametro hau ez bada adierazi, 'Barrutia' parametroan aurkitutako balioak batuko dira."
 
-#. Bb7M5
+#. iGKyo
 #: 04060106.xhp
 msgctxt ""
 "04060106.xhp\n"
 "par_id8347422\n"
 "help.text"
-msgid "SUMIF supports the reference concatenation operator (~) only in the Criterion parameter, and only if the optional SumRange parameter is not given."
-msgstr "SUMIF funtzioak 'Irizpideak' parametroan soilik onartzen du erreferentziak kateatzeko eragilea (~), eta 'BatuketaBarrutia' aukerako parametroa ematen ez bada bakarrik."
+msgid "SUMIF supports the reference concatenation operator (~) only in the Range parameter, and only if the optional SumRange parameter is not given."
+msgstr ""
 
 #. uazzL
 #: 04060106.xhp
@@ -15604,14 +15604,77 @@ msgctxt ""
 msgid "Using Array Formulas in $[officename] Calc"
 msgstr "$[officename] Calc-en matrize-formulak erabiltzea"
 
-#. zMZBQ
+#. NJc9B
+#: 04060107.xhp
+msgctxt ""
+"04060107.xhp\n"
+"hd_id651668200191409\n"
+"help.text"
+msgid "Implicit intersection of array formulas"
+msgstr ""
+
+#. M2BM4
 #: 04060107.xhp
 msgctxt ""
 "04060107.xhp\n"
 "par_id3152876\n"
 "help.text"
-msgid "You can also create a \"normal\" formula in which the reference range, such as parameters, indicate an array formula. The result is obtained from the intersection of the reference range and the rows or columns in which the formula is found. If there is no intersection or if the range at the intersection covers several rows or columns, a #VALUE! error message appears. The following example illustrates this concept:"
-msgstr "Formula \"normal\" bat ere sor dezakezu, formula horretako erreferentzia-barrutiaren bidez (parametroen bidez, adibidez) matrize-formula bat adieraziz. Erreferentzia-barrutia eta errenkada edo zutabeen arteko ebakidura oinarri hartuta kalkulatuko da emaitza. Ebakidurarik ez badago edo intersekzioaren barrutiak errenkada edo zutabe guztiak hartzen baditu, #BALIOA! errore-mezua agertuko da. Hori ondorengo adibidean erakusten da:"
+msgid "You can also create a \"normal\" formula in which the reference range, such as parameters, indicate an array formula. This formula is also known as \"implicit intersection\" of array formula. The result is obtained from the intersection of the reference range and the rows or columns in which the formula is found. If there is no intersection or if the range at the intersection covers several rows or columns, a #VALUE! error message appears. The following example illustrates this concept:"
+msgstr ""
+
+#. Et4mZ
+#: 04060107.xhp
+msgctxt ""
+"04060107.xhp\n"
+"par_id631668200233375\n"
+"help.text"
+msgid "In the table above, place the array formula in D1:"
+msgstr ""
+
+#. Fb5iF
+#: 04060107.xhp
+msgctxt ""
+"04060107.xhp\n"
+"par_id641668200266239\n"
+"help.text"
+msgid "Cells D1, D2, D3 have values 107, 195, 105 respectively."
+msgstr ""
+
+#. EpsqN
+#: 04060107.xhp
+msgctxt ""
+"04060107.xhp\n"
+"par_id231668200272420\n"
+"help.text"
+msgid "Insert the formula below in E2, do not enter as array formula."
+msgstr ""
+
+#. PhpAa
+#: 04060107.xhp
+msgctxt ""
+"04060107.xhp\n"
+"par_id681668200283910\n"
+"help.text"
+msgid "Cells E1 and E3 are empty, Cell E2 has value 195. This is the implicit intersection of array formulas."
+msgstr ""
+
+#. KdBwt
+#: 04060107.xhp
+msgctxt ""
+"04060107.xhp\n"
+"par_id161668200288651\n"
+"help.text"
+msgid "Insert formula below in E4, as in E2."
+msgstr ""
+
+#. G8xZf
+#: 04060107.xhp
+msgctxt ""
+"04060107.xhp\n"
+"par_id711668200299613\n"
+"help.text"
+msgid "Cell E4 display #VALUE!. Row 4 is out of the range A1:A3 of the formula."
+msgstr ""
 
 #. EcJu6
 #: 04060107.xhp
@@ -44053,14 +44116,14 @@ msgctxt ""
 msgid "<ahelp hid=\"modules/scalc/ui/sheetprintpage/spinED_SCALEALL\">Enter a scaling factor. Factors less than 100 reduce the pages, higher factors enlarge the pages.</ahelp>"
 msgstr "<ahelp hid=\"modules/scalc/ui/sheetprintpage/spinED_SCALEALL\">Sartu eskala-faktorea. 100 baino txikiagoak diren faktoreek txikiagotu egiten dute orrialdea; faktore handiagoek, aldiz, handiagotu.</ahelp>"
 
-#. vBP8E
+#. SeHBp
 #: 05070500.xhp
 msgctxt ""
 "05070500.xhp\n"
 "par_idN109B2\n"
 "help.text"
-msgid "Fit print range(s) to width/height"
-msgstr "Doitu inprimatze-tarteak zabalerari/altuerari"
+msgid "Shrink print range(s) to width/height"
+msgstr ""
 
 #. MzoXE
 #: 05070500.xhp
@@ -44134,14 +44197,14 @@ msgctxt ""
 msgid "<ahelp hid=\"modules/scalc/ui/sheetprintpage/spinED_SCALEPAGEHEIGHT\">Enter the maximum number of pages to be printed vertically stacked.</ahelp>"
 msgstr "<ahelp hid=\"modules/scalc/ui/sheetprintpage/spinED_SCALEPAGEHEIGHT\">Sar ezazu bertikalean pilatuta inprimatzeko gehieneko orrialde kopurua.</ahelp>"
 
-#. RmjkY
+#. GxXAE
 #: 05070500.xhp
 msgctxt ""
 "05070500.xhp\n"
 "hd_id3148868\n"
 "help.text"
-msgid "Fit print range(s) on number of pages"
-msgstr "Doitu inprimatze-tarteak orrialde-zenbakietan"
+msgid "Shrink print range(s) to number of pages"
+msgstr ""
 
 #. 7VYWo
 #: 05070500.xhp
@@ -44996,7 +45059,7 @@ msgctxt ""
 "hd_id51665407876959\n"
 "help.text"
 msgid "<variable id=\"ConditionalFormattingh1\"><link href=\"text/scalc/01/05120000.xhp\" name=\"Conditional Formatting\">Conditional Formatting</link></variable>"
-msgstr ""
+msgstr "<variable id=\"ConditionalFormattingh1\"><link href=\"text/scalc/01/05120000.xhp\" name=\"Conditional Formatting\">Baldintzapeko formatua</link></variable>"
 
 #. qb52L
 #: 05120000.xhp
@@ -45041,7 +45104,7 @@ msgctxt ""
 "hd_id961662926287139\n"
 "help.text"
 msgid "Cell range"
-msgstr ""
+msgstr "Gelaxka-barrutia"
 
 #. Gv4oU
 #: 05120000.xhp
@@ -45050,7 +45113,7 @@ msgctxt ""
 "hd_id431662926282555\n"
 "help.text"
 msgid "Range"
-msgstr ""
+msgstr "Barrutia"
 
 #. BoUXF
 #: 05120000.xhp
@@ -45131,7 +45194,7 @@ msgctxt ""
 "hd_id71662926011736\n"
 "help.text"
 msgid "Add"
-msgstr ""
+msgstr "Gehitu"
 
 #. NiRqU
 #: 05120000.xhp
@@ -45140,7 +45203,7 @@ msgctxt ""
 "par_id721662926016039\n"
 "help.text"
 msgid "Adds the condition to the condition list."
-msgstr ""
+msgstr "Baldintza gehitzen dio baldintzen zerrendari."
 
 #. EXu3U
 #: 05120000.xhp
@@ -45149,7 +45212,7 @@ msgctxt ""
 "hd_id401662926020291\n"
 "help.text"
 msgid "Delete"
-msgstr ""
+msgstr "Ezabatu"
 
 #. njCNL
 #: 05120000.xhp
@@ -45158,7 +45221,7 @@ msgctxt ""
 "par_id301662926026944\n"
 "help.text"
 msgid "Deletes the condition from the condition list."
-msgstr ""
+msgstr "Baldintza baldintzen zerrendatik ezabatzen du."
 
 #. ZSEod
 #: 05120000.xhp
@@ -45167,7 +45230,7 @@ msgctxt ""
 "hd_id31531891\n"
 "help.text"
 msgid "Condition list entries"
-msgstr ""
+msgstr "Baldintzen zerrendako sarrerak"
 
 #. udAbc
 #: 05120000.xhp
@@ -45185,7 +45248,7 @@ msgctxt ""
 "hd_id431662938949798\n"
 "help.text"
 msgid "Apply Style"
-msgstr ""
+msgstr "Aplikatu estiloa"
 
 #. 8WfD4
 #: 05120000.xhp
@@ -45230,7 +45293,7 @@ msgctxt ""
 "hd_id951665406076405\n"
 "help.text"
 msgid "Conditions for Text and Numbers"
-msgstr ""
+msgstr "Baldintzak testuetarako eta zenbakietarako"
 
 #. fkuaH
 #: 05120100.xhp
@@ -45293,7 +45356,7 @@ msgctxt ""
 "par_id151662920861587\n"
 "help.text"
 msgid "begins with"
-msgstr ""
+msgstr "honela hasten da"
 
 #. SrP9B
 #: 05120100.xhp
@@ -45311,7 +45374,7 @@ msgctxt ""
 "par_id361662922600585\n"
 "help.text"
 msgid "ends with"
-msgstr ""
+msgstr "honela amaitzen da"
 
 #. Ag7VY
 #: 05120100.xhp
@@ -45329,7 +45392,7 @@ msgctxt ""
 "par_id151662922939292\n"
 "help.text"
 msgid "contains"
-msgstr ""
+msgstr "dauka"
 
 #. b4MWb
 #: 05120100.xhp
@@ -45383,7 +45446,7 @@ msgctxt ""
 "par_id991665406132471\n"
 "help.text"
 msgid "Condition"
-msgstr ""
+msgstr "Baldintza"
 
 #. EeCxc
 #: 05120100.xhp
@@ -45392,7 +45455,7 @@ msgctxt ""
 "par_id191665406132471\n"
 "help.text"
 msgid "Description"
-msgstr ""
+msgstr "Deskribapena"
 
 #. ziYCE
 #: 05120100.xhp
@@ -45473,7 +45536,7 @@ msgctxt ""
 "par_id81662914901503\n"
 "help.text"
 msgid "is between"
-msgstr ""
+msgstr "bitarte honetan dago"
 
 #. ZmHDH
 #: 05120100.xhp
@@ -45509,7 +45572,7 @@ msgctxt ""
 "par_id731662915275926\n"
 "help.text"
 msgid "is duplicate"
-msgstr ""
+msgstr "bikoiztua da"
 
 #. 4DKbK
 #: 05120100.xhp
@@ -45527,7 +45590,7 @@ msgctxt ""
 "par_id381662915857686\n"
 "help.text"
 msgid "is not duplicate"
-msgstr ""
+msgstr "ez da bikoiztua"
 
 #. ZBUgm
 #: 05120100.xhp
@@ -45536,7 +45599,7 @@ msgctxt ""
 "par_id341662915857687\n"
 "help.text"
 msgid "The cell contents is unique in the range."
-msgstr ""
+msgstr "Gelaxkaren edukiak bakarrak dira barrutian."
 
 #. c8Bkp
 #: 05120100.xhp
@@ -45635,7 +45698,7 @@ msgctxt ""
 "par_id701665407334603\n"
 "help.text"
 msgid "<variable id=\"seenotebelow\">See note below.</variable>"
-msgstr ""
+msgstr "<variable id=\"seenotebelow\">Ikus beheko oharra.</variable>"
 
 #. AAKPP
 #: 05120100.xhp
@@ -45707,7 +45770,7 @@ msgctxt ""
 "par_id451665406273943\n"
 "help.text"
 msgid "Condition"
-msgstr ""
+msgstr "Baldintza"
 
 #. 3BdfG
 #: 05120100.xhp
@@ -45716,7 +45779,7 @@ msgctxt ""
 "par_id71665406273943\n"
 "help.text"
 msgid "Description"
-msgstr ""
+msgstr "Deskribapena"
 
 #. vFFDn
 #: 05120100.xhp
@@ -45725,7 +45788,7 @@ msgctxt ""
 "par_id451662919849856\n"
 "help.text"
 msgid "is error"
-msgstr ""
+msgstr "errorea da"
 
 #. Fz7Fr
 #: 05120100.xhp
@@ -45977,7 +46040,7 @@ msgctxt ""
 "hd_id541663598275609\n"
 "help.text"
 msgid "Conditions"
-msgstr ""
+msgstr "Baldintzak"
 
 #. zip59
 #: 05120400.xhp
@@ -46040,7 +46103,7 @@ msgctxt ""
 "par_id991609782427459\n"
 "help.text"
 msgid "<link href=\"text/scalc/01/05120400.xhp#databar\" name=\"Data Bar\">Data Bar</link>"
-msgstr ""
+msgstr "<link href=\"text/scalc/01/05120400.xhp#databar\" name=\"Data Bar\">Datu-barra</link>"
 
 #. ZEyNr
 #: 05120400.xhp
@@ -46058,7 +46121,7 @@ msgctxt ""
 "hd_id631663449553346\n"
 "help.text"
 msgid "Conditions"
-msgstr ""
+msgstr "Baldintzak"
 
 #. CENjM
 #: 05120400.xhp
@@ -46094,7 +46157,7 @@ msgctxt ""
 "par_id281609781729359\n"
 "help.text"
 msgid "More Options"
-msgstr ""
+msgstr "Aukera gehiago"
 
 #. wB7B5
 #: 05120400.xhp
@@ -46112,7 +46175,7 @@ msgctxt ""
 "hd_id221663453502042\n"
 "help.text"
 msgid "Entry values"
-msgstr ""
+msgstr "Sarrerako balioak"
 
 #. j4CZx
 #: 05120400.xhp
@@ -46121,7 +46184,7 @@ msgctxt ""
 "par_id891663453681870\n"
 "help.text"
 msgid "Same as the conditions above."
-msgstr ""
+msgstr "Goiko baldintza berak."
 
 #. qYC9D
 #: 05120400.xhp
@@ -46130,7 +46193,7 @@ msgctxt ""
 "hd_id511663453530293\n"
 "help.text"
 msgid "Bar Colors"
-msgstr ""
+msgstr "Barra-koloreak"
 
 #. 3WvU9
 #: 05120400.xhp
@@ -46139,7 +46202,7 @@ msgctxt ""
 "par_id371663453564807\n"
 "help.text"
 msgid "Choose the color for positive and negative values."
-msgstr ""
+msgstr "Hautatu balio positibo eta negatiboetarako kolorea."
 
 #. F7ADR
 #: 05120400.xhp
@@ -46148,7 +46211,7 @@ msgctxt ""
 "hd_id891663453607961\n"
 "help.text"
 msgid "Fill"
-msgstr ""
+msgstr "Betegarria"
 
 #. NK7yv
 #: 05120400.xhp
@@ -46175,7 +46238,7 @@ msgctxt ""
 "hd_id701663453750779\n"
 "help.text"
 msgid "Axis"
-msgstr ""
+msgstr "Ardatza"
 
 #. SCFQf
 #: 05120400.xhp

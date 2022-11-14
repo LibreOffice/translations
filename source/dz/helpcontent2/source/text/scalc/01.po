@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2022-10-22 14:13+0200\n"
+"POT-Creation-Date: 2022-11-14 14:36+0100\n"
 "PO-Revision-Date: 2018-11-12 13:28+0000\n"
 "Last-Translator: Anonymous Pootle User\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -2068,13 +2068,13 @@ msgctxt ""
 msgid "Enable rounding"
 msgstr ""
 
-#. Ap7Uc
+#. mfd5V
 #: 02140700.xhp
 msgctxt ""
 "02140700.xhp\n"
 "par_id2308201415431822157\n"
 "help.text"
-msgid "<ahelp hid=\".\">Truncate the number to a given number of <emph>Decimal Places</emph>.</ahelp>"
+msgid "<ahelp hid=\".\">Round the number to a given number of <emph>Decimal Places</emph>.</ahelp>"
 msgstr ""
 
 #. Wj97D
@@ -14146,13 +14146,13 @@ msgctxt ""
 msgid "<emph>SumRange</emph> is the range from which values are summed. If this parameter has not been indicated, the values found in the Range are summed."
 msgstr "<emph>Sum_range</emph> ཟེར་མི་དེ་ གནས་གོང་ཚུ་བསྡོམས་ཡོད་པའི་ཁྱབ་ཚད་ཨིན། ཚད་བཟུང་དེ་ བརྡ་སྟོན་ཏེ་མེད་པ་ཅིན་ ཁྱབ་ཚད་ནང་ལུ་ཡོད་པའི་ <emph> གནས་གོང་ཚུ་ </emph> བསྡོམས་ཡོདཔ་ཨིན།"
 
-#. Bb7M5
+#. iGKyo
 #: 04060106.xhp
 msgctxt ""
 "04060106.xhp\n"
 "par_id8347422\n"
 "help.text"
-msgid "SUMIF supports the reference concatenation operator (~) only in the Criterion parameter, and only if the optional SumRange parameter is not given."
+msgid "SUMIF supports the reference concatenation operator (~) only in the Range parameter, and only if the optional SumRange parameter is not given."
 msgstr ""
 
 #. uazzL
@@ -15604,14 +15604,77 @@ msgctxt ""
 msgid "Using Array Formulas in $[officename] Calc"
 msgstr "$[officename] ཀེལ་སི་ ནང་ཨེ་རེ་མན་ངག་ཚུ་ལག་ལེན་འཐབ་དོ།"
 
-#. zMZBQ
+#. NJc9B
+#: 04060107.xhp
+msgctxt ""
+"04060107.xhp\n"
+"hd_id651668200191409\n"
+"help.text"
+msgid "Implicit intersection of array formulas"
+msgstr ""
+
+#. M2BM4
 #: 04060107.xhp
 msgctxt ""
 "04060107.xhp\n"
 "par_id3152876\n"
 "help.text"
-msgid "You can also create a \"normal\" formula in which the reference range, such as parameters, indicate an array formula. The result is obtained from the intersection of the reference range and the rows or columns in which the formula is found. If there is no intersection or if the range at the intersection covers several rows or columns, a #VALUE! error message appears. The following example illustrates this concept:"
-msgstr "གཞི་བསྟུན་ཁྱབ་ཚད་ དེ་ཡང་ ཚད་བཟུང་ཚུ་ཨེ་རེ་མན་ངག་བརྡ་སྟོན་འབད་སའི་ \"normal\" མན་ངག་ཡང་གསར་བསྐྲུན་འབད་བཏུབ་ཨིན། གྲུབ་འབྲས་དེ་ མན་ངག་ཐོབ་ཚུགས་པའི་ གཞི་བསྟུན་ཁྱབ་ཚད་དང་ གྲལ་ཐིག་ཚུ་ཡང་ན་ ཀེར་ཐིག་ཚུའི་ སྣོལ་འཇོག་སྣོལ་མཚམས་ལས་ཐོབ་ཡོདཔ་ཨིན། དེ་ཁར་ལུ་ གཞི་བསྟུན་ཁྱབ་ཚད་མེདཔ་དང་ ཡང་ན་ སྣོལ་འཇོག་སྣོལ་མཚམས་གུ་ལུ་ཁྱབ་ཚད་ཀྱིས་ གྲལ་ཐིག་དང་ ཀེར་ཐིག་ཚུ་ལེ་ཤ་ཁྱབ་པ་ཅིན་ #VALUE! འཕྲིན་དོན་འཛོལ་བ་གཅིག་འབྱུངམ་ཨིན། འོག་ལུ་ཡོད་པའི་དཔེར་བརྗོད་ཚུ་གིས་ འ་ནི་ བསམ་གཞི་དེ་རྒྱས་བཤད་བརྐྱབ་ཨིན།:"
+msgid "You can also create a \"normal\" formula in which the reference range, such as parameters, indicate an array formula. This formula is also known as \"implicit intersection\" of array formula. The result is obtained from the intersection of the reference range and the rows or columns in which the formula is found. If there is no intersection or if the range at the intersection covers several rows or columns, a #VALUE! error message appears. The following example illustrates this concept:"
+msgstr ""
+
+#. Et4mZ
+#: 04060107.xhp
+msgctxt ""
+"04060107.xhp\n"
+"par_id631668200233375\n"
+"help.text"
+msgid "In the table above, place the array formula in D1:"
+msgstr ""
+
+#. Fb5iF
+#: 04060107.xhp
+msgctxt ""
+"04060107.xhp\n"
+"par_id641668200266239\n"
+"help.text"
+msgid "Cells D1, D2, D3 have values 107, 195, 105 respectively."
+msgstr ""
+
+#. EpsqN
+#: 04060107.xhp
+msgctxt ""
+"04060107.xhp\n"
+"par_id231668200272420\n"
+"help.text"
+msgid "Insert the formula below in E2, do not enter as array formula."
+msgstr ""
+
+#. PhpAa
+#: 04060107.xhp
+msgctxt ""
+"04060107.xhp\n"
+"par_id681668200283910\n"
+"help.text"
+msgid "Cells E1 and E3 are empty, Cell E2 has value 195. This is the implicit intersection of array formulas."
+msgstr ""
+
+#. KdBwt
+#: 04060107.xhp
+msgctxt ""
+"04060107.xhp\n"
+"par_id161668200288651\n"
+"help.text"
+msgid "Insert formula below in E4, as in E2."
+msgstr ""
+
+#. G8xZf
+#: 04060107.xhp
+msgctxt ""
+"04060107.xhp\n"
+"par_id711668200299613\n"
+"help.text"
+msgid "Cell E4 display #VALUE!. Row 4 is out of the range A1:A3 of the formula."
+msgstr ""
 
 #. EcJu6
 #: 04060107.xhp
@@ -44053,14 +44116,14 @@ msgctxt ""
 msgid "<ahelp hid=\"modules/scalc/ui/sheetprintpage/spinED_SCALEALL\">Enter a scaling factor. Factors less than 100 reduce the pages, higher factors enlarge the pages.</ahelp>"
 msgstr ""
 
-#. vBP8E
+#. SeHBp
 #: 05070500.xhp
 msgctxt ""
 "05070500.xhp\n"
 "par_idN109B2\n"
 "help.text"
-msgid "Fit print range(s) to width/height"
-msgstr "རྒྱ་ཚད་/མཐོ་ཚད་ལུ་དཔར་བསྐྲུན་ཁྱབ་ཚད་ཚུ་ཚུད་སྒྲིག་འབདཝ་ཨིན།"
+msgid "Shrink print range(s) to width/height"
+msgstr ""
 
 #. MzoXE
 #: 05070500.xhp
@@ -44134,14 +44197,14 @@ msgctxt ""
 msgid "<ahelp hid=\"modules/scalc/ui/sheetprintpage/spinED_SCALEPAGEHEIGHT\">Enter the maximum number of pages to be printed vertically stacked.</ahelp>"
 msgstr "<ahelp hid=\"modules/scalc/ui/sheetprintpage/spinED_SCALEPAGEHEIGHT\"> བརྩེགས་ཕུང་ཀེར་ཕྲང་སྦེ་དཔར་བསྐྲུན་འབད་ནི་ཨིན་པའི་ཤོག་ལེབ་ཚུའི་ གྱངས་ཁ་མང་མཐའ་བཙུགས། </ahelp>"
 
-#. RmjkY
+#. GxXAE
 #: 05070500.xhp
 msgctxt ""
 "05070500.xhp\n"
 "hd_id3148868\n"
 "help.text"
-msgid "Fit print range(s) on number of pages"
-msgstr "ཤོག་ལེབ་ཚུའི་ཨང་གུ་ལུ་དཔར་བསྐྲུན་ཁྱབ་ཚད་ཚུ་ཚུད་སྒྲིག་འབདཝ་ཨིན།"
+msgid "Shrink print range(s) to number of pages"
+msgstr ""
 
 #. 7VYWo
 #: 05070500.xhp
