@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: LibreOffice 7.5\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2022-11-03 11:25+0100\n"
-"PO-Revision-Date: 2022-11-05 12:10+0200\n"
+"POT-Creation-Date: 2022-11-19 09:53+0100\n"
+"PO-Revision-Date: 2022-11-19 18:47+0200\n"
 "Last-Translator: Martin Srebotnjak <miles@filmsi.net>\n"
 "Language-Team: sl.libreoffice.org\n"
 "Language: sl\n"
@@ -7174,8 +7174,8 @@ msgctxt ""
 "03010101.xhp\n"
 "hd_id3154927\n"
 "help.text"
-msgid "<link href=\"text/sbasic/shared/03010101.xhp\">MsgBox Statement</link>"
-msgstr "<link href=\"text/sbasic/shared/03010101.xhp\">Ukaz MsgBox</link>"
+msgid "<variable id=\"msgbox_h1\"><link href=\"text/sbasic/shared/03010101.xhp\">MsgBox Statement</link></variable>"
+msgstr "<variable id=\"msgbox_h1\"><link href=\"text/sbasic/shared/03010101.xhp\" name=\"Ukaz MsgBox\">Ukaz MsgBox</link></variable>"
 
 #: 03010101.xhp
 msgctxt ""
@@ -14718,8 +14718,8 @@ msgctxt ""
 "03040000.xhp\n"
 "hd_id611634911996367\n"
 "help.text"
-msgid "VarType Named Constants"
-msgstr "Poimenovane konstante VarType"
+msgid "Data Type Named Constants"
+msgstr "Poimenovane konstante vrste podatkov / DataType"
 
 #: 03040000.xhp
 msgctxt ""
@@ -22286,8 +22286,8 @@ msgctxt ""
 "03100700.xhp\n"
 "hd_id3146958\n"
 "help.text"
-msgid "<link href=\"text/sbasic/shared/03100700.xhp\" name=\"Const Statement\">Const Statement</link>"
-msgstr "<link href=\"text/sbasic/shared/03100700.xhp\" name=\"Ukaz Const\">Ukaz Const</link>"
+msgid "<variable id=\"const_h1\"><link href=\"text/sbasic/shared/03100700.xhp\" name=\"Const Statement\">Const Statement</link></variable>"
+msgstr "<variable id=\"const_h1\"><link href=\"text/sbasic/shared/03100700.xhp\" name=\"Ukaz Const\">Ukaz Const</link></variable>"
 
 #: 03100700.xhp
 msgctxt ""
@@ -24814,40 +24814,72 @@ msgctxt ""
 "03103600.xhp\n"
 "par_id3159157\n"
 "help.text"
-msgid "Returns a string (TypeName) or a numeric value (VarType) that contains information for a variable."
-msgstr "Vrne niz (TypeName) ali numerično vrednost (VarType), ki vsebuje informacijo o spremenljivki."
+msgid "Returns text or a numeric value that contain type information for a variable."
+msgstr "Vrne besedilni niz ali numerično vrednost, ki vsebuje informacijo o vrsti spremenljivke."
 
 #: 03103600.xhp
 msgctxt ""
 "03103600.xhp\n"
 "par_id3155341\n"
 "help.text"
-msgid "TypeName (Variable) / VarType (Variable)"
-msgstr "TypeName (Spremenljivka) / VarType (Spremenljivka)"
+msgid "TypeName (Varname As Variant) As String"
+msgstr "TypeName (imespremenljivke As Variant) As String"
+
+#: 03103600.xhp
+msgctxt ""
+"03103600.xhp\n"
+"par_id3155342\n"
+"help.text"
+msgid "VarType (Varname As Variant) As Integer"
+msgstr "VarType (imespremenljivke As Variant) As Integer"
+
+#: 03103600.xhp
+msgctxt ""
+"03103600.xhp\n"
+"par_id591667555032629\n"
+"help.text"
+msgid "Text for <literal>TypeName</literal> suffixed with '()' for arrays."
+msgstr "Besedilo za <literal>TypeName</literal>, s pripono »()« za polja."
+
+#: 03103600.xhp
+msgctxt ""
+"03103600.xhp\n"
+"par_id371667555034757\n"
+"help.text"
+msgid "Integer for <literal>VarType</literal>. <literal>8192</literal> is added to the returned value for arrays."
+msgstr "Celo število za <literal>VarType</literal>. Vrnjeni vrednosti za polja se prišteje <literal>8192</literal>."
 
 #: 03103600.xhp
 msgctxt ""
 "03103600.xhp\n"
 "par_id3148664\n"
 "help.text"
-msgid "<emph>Variable:</emph> The variable that you want to determine the type of. You can use the following values:"
-msgstr "<emph>Spremenljivka:</emph> Spremenljivka, ki ji želite določiti vrsto Izbirate lahko med naslednjimi vrednostmi:"
+msgid "<emph>Varname</emph>: The variable name that you want to determine the type of."
+msgstr "<emph>Imespremenljivke:</emph> ime spremenljivke, za katero želite ugotoviti vrsto."
+
+#: 03103600.xhp
+msgctxt ""
+"03103600.xhp\n"
+"par_id461667489910930\n"
+"help.text"
+msgid "The following values are returned:"
+msgstr "Vrnjene so lahko naslednje vrednosti:"
 
 #: 03103600.xhp
 msgctxt ""
 "03103600.xhp\n"
 "par_id3145171\n"
 "help.text"
-msgid "Keyword"
-msgstr "Ključna beseda"
+msgid "TypeName<br/>values"
+msgstr "Vrednosti<br/>TypeName"
 
 #: 03103600.xhp
 msgctxt ""
 "03103600.xhp\n"
 "par_id051620170608269696\n"
 "help.text"
-msgid "Named constant"
-msgstr "Poimenovana konstanta"
+msgid "Named<br/>constant"
+msgstr "Poimenovana<br/>konstanta"
 
 #: 03103600.xhp
 msgctxt ""
@@ -24860,98 +24892,114 @@ msgstr "Vrsta spremenljivke"
 #: 03103600.xhp
 msgctxt ""
 "03103600.xhp\n"
+"par_id501667566908366\n"
+"help.text"
+msgid "<literal>Array</literal> of variables"
+msgstr "Spremenljivka vrste <literal>Array</literal> (polje spremenljivk)"
+
+#: 03103600.xhp
+msgctxt ""
+"03103600.xhp\n"
 "par_id3148645\n"
 "help.text"
-msgid "Boolean variable"
-msgstr "Spremenljivka vrste Boolean"
+msgid "<literal>Boolean</literal> variable"
+msgstr "Spremenljivka vrste <literal>Boolean</literal>"
 
 #: 03103600.xhp
 msgctxt ""
 "03103600.xhp\n"
 "par_id3158645\n"
 "help.text"
-msgid "Byte variable"
-msgstr "Spremenljivka vrste Byte"
+msgid "<literal>Byte</literal> variable"
+msgstr "Spremenljivka vrste <literal>Byte</literal>"
 
 #: 03103600.xhp
 msgctxt ""
 "03103600.xhp\n"
 "par_id3155411\n"
 "help.text"
-msgid "Date variable"
-msgstr "Spremenljivka vrste Date"
+msgid "<literal>Date</literal> variable"
+msgstr "Spremenljivka vrste <literal>Date</literal> (datum/čas)"
 
 #: 03103600.xhp
 msgctxt ""
 "03103600.xhp\n"
 "par_id051620170608331416\n"
 "help.text"
-msgid "Currency variable"
-msgstr "Spremenljivka vrste Currency"
+msgid "<literal>Currency</literal> variable"
+msgstr "Spremenljivka vrste <literal>Currency</literal> (valuta)"
 
 #: 03103600.xhp
 msgctxt ""
 "03103600.xhp\n"
 "par_id3148616\n"
 "help.text"
-msgid "Double floating point variable"
-msgstr "Spremenljivka vrste Double"
+msgid "Double-precision floating-point variable"
+msgstr "Spremenljivka vrste <literal>Double</literal> (plavajoča vejica z dvojno natančnostjo)"
+
+#: 03103600.xhp
+msgctxt ""
+"03103600.xhp\n"
+"par_id501666576908366\n"
+"help.text"
+msgid "Error type variable"
+msgstr "Spremenljivka vrste <literal>Error</literal> (napaka)"
 
 #: 03103600.xhp
 msgctxt ""
 "03103600.xhp\n"
 "par_id3154490\n"
 "help.text"
-msgid "Integer variable"
-msgstr "Spremenljivka celoštevilske vrste"
+msgid "<literal>Integer</literal> variable"
+msgstr "Spremenljivka vrste <literal>Integer</literal> (celo število)"
 
 #: 03103600.xhp
 msgctxt ""
 "03103600.xhp\n"
 "par_id3151318\n"
 "help.text"
-msgid "Long integer variable"
-msgstr "Spremenljivka vrste Long Integer"
+msgid "<literal>Long</literal> integer variable"
+msgstr "Spremenljivka vrste <literal>Long</literal> (dolgo celo število)"
 
 #: 03103600.xhp
 msgctxt ""
 "03103600.xhp\n"
 "par_id3150323\n"
 "help.text"
-msgid "Object variable"
-msgstr "Spremenljivka vrste Object"
+msgid "<literal>Object</literal> variable"
+msgstr "Spremenljivka vrste <literal>Object</literal> (predmet)"
 
 #: 03103600.xhp
 msgctxt ""
 "03103600.xhp\n"
 "par_id3147341\n"
 "help.text"
-msgid "Single floating-point variable"
-msgstr "Spremenljivka vrste Single"
+msgid "Single-precision floating-point variable"
+msgstr "Spremenljivka vrste <literal>Float</literal> (plavajoča vejica z enojno natančnostjo)"
 
 #: 03103600.xhp
 msgctxt ""
 "03103600.xhp\n"
 "par_id3146313\n"
 "help.text"
-msgid "String variable"
-msgstr "Spremenljivka vrste String (niz)"
+msgid "<literal>String</literal> variable"
+msgstr "Spremenljivka vrste <literal>String</literal> (besedilni niz)"
 
 #: 03103600.xhp
 msgctxt ""
 "03103600.xhp\n"
 "par_id3145789\n"
 "help.text"
-msgid "Variant variable (can contain all types specified by the definition)"
-msgstr "Spremenljivka vrste Variant (vsebuje vse vrste, navedene v definiciji)."
+msgid "<literal>Variant</literal> variable (can contain all types specified by the definition)"
+msgstr "Spremenljivka vrste <literal>Variant</literal> (vsebuje vse vrste, navedene v definiciji)."
 
 #: 03103600.xhp
 msgctxt ""
 "03103600.xhp\n"
 "par_id3151278\n"
 "help.text"
-msgid "Variable is not initialized"
-msgstr "Spremenljivka ni inicializirana"
+msgid "Uninitialized <literal>Variant</literal> variable"
+msgstr "Neinicializirana spremenljivka vrste <literal>Variant</literal>,"
 
 #: 03103600.xhp
 msgctxt ""
@@ -24966,8 +25014,16 @@ msgctxt ""
 "03103600.xhp\n"
 "par_id3148817\n"
 "help.text"
-msgid "TypeName(lVar) & \" \" & VarType(lVar),0,\"Some types In $[officename] Basic\""
-msgstr "TypeName(lVar) & \" \" & VarType(lVar),0,\"Nekatere vrste v $[officename] Basic\""
+msgid ",, \"Data types in $[officename] Basic\""
+msgstr ".. »Vrste podatkov v $[officename] Basic«"
+
+#: 03103600.xhp
+msgctxt ""
+"03103600.xhp\n"
+"bas_id191667571153141\n"
+"help.text"
+msgid ",,\"Array of Variant values\""
+msgstr ".. »Polje vrednosti spremenljivk Variant«"
 
 #: 03103700.xhp
 msgctxt ""
@@ -25310,8 +25366,8 @@ msgctxt ""
 "03104000.xhp\n"
 "par_id3150398\n"
 "help.text"
-msgid "If the IsMissing function is called by the ArgumentName, then True is returned."
-msgstr "Če kličete funkcijo IsMissing function z ImeArgumenta, ki pri klicu manjka, vrne funkcija vrednost Res."
+msgid "IsMissing returns True if no value has been passed for the ArgumentName; otherwise, it returns False."
+msgstr "Funkcija IsMissing vrne True, če ni bila za ImeArgumenta podana nobena vrednost, sicer vrne False."
 
 #: 03104000.xhp
 msgctxt ""
@@ -33270,8 +33326,8 @@ msgctxt ""
 "CreateUnoSvcWithArgs.xhp\n"
 "par_id301666950633646\n"
 "help.text"
-msgid "UNO services that can be used with <literal>CreateUnoServiceWithArguments</literal> function are identifiable with method names that follow a <literal>createWith..</literal> pattern."
-msgstr "Storitve UNO, ki jih je mogoče uporabiti s funkcijo <literal>CreateUnoServiceWithArguments</literal>, je mogoče identificirati z imeni metod, ki sledijo vzorcu <literal>createWith..</literal>."
+msgid "UNO services that can be used with <literal>CreateUnoServiceWithArguments</literal> function are identifiable with method names that follow a <literal>createInstanceWith..</literal> or <literal>createWith..</literal> naming pattern."
+msgstr "Storitve UNO, ki jih je mogoče uporabiti s funkcijo <literal>CreateUnoServiceWithArguments</literal>, je mogoče identificirati z imeni metod, ki sledijo vzorcu <literal>createInstanceWith..</literal> ali <literal>createWith..</literal>."
 
 #: CreateUnoSvcWithArgs.xhp
 msgctxt ""
@@ -35928,6 +35984,70 @@ msgctxt ""
 "help.text"
 msgid "here: Print 1, : there: Print 2 REM explanatory text here"
 msgstr "tukaj: Print 1, : tja: Print 2 REM sem sodi besedilo razlage"
+
+#: doEvents.xhp
+msgctxt ""
+"doEvents.xhp\n"
+"tit\n"
+"help.text"
+msgid "DoEvents Function"
+msgstr "Funkcija DoEvents"
+
+#: doEvents.xhp
+msgctxt ""
+"doEvents.xhp\n"
+"N0089\n"
+"help.text"
+msgid "<bookmark_value>DoEvents function</bookmark_value>"
+msgstr "<bookmark_value>funkcija DoEvents</bookmark_value>"
+
+#: doEvents.xhp
+msgctxt ""
+"doEvents.xhp\n"
+"hd_id401544551916353\n"
+"help.text"
+msgid "<link href=\"text/sbasic/shared/doEvents.xhp\" name=\"DoEvents\">DoEvents Function</link>"
+msgstr "<link href=\"text/sbasic/shared/doEvents.xhp\" name=\"Funkcija DoEvents\">Funkcija DoEvents</link>"
+
+#: doEvents.xhp
+msgctxt ""
+"doEvents.xhp\n"
+"N0091\n"
+"help.text"
+msgid "Transfers control to the operating system during macro execution, so that it can process the events in waiting."
+msgstr "Med izvajanjem makra prenese nadzor na operacijski sistem, tako da lahko obdeluje čakajoče dogodke."
+
+#: doEvents.xhp
+msgctxt ""
+"doEvents.xhp\n"
+"par_id511668006240908\n"
+"help.text"
+msgid "<literal>DoEvents</literal> provides compatibility with VBA. It always returns 0. Using it in %PRODUCTNAME is not necessary."
+msgstr "<literal>DoEvents</literal> zagotavlja združljivost z VBA. Vedno vrne 0. Uporaba v %PRODUCTNAME ni obvezna."
+
+#: doEvents.xhp
+msgctxt ""
+"doEvents.xhp\n"
+"par_id481668421225965\n"
+"help.text"
+msgid "Both examples set a progressive counter on the first cell of a newly opened Calc document."
+msgstr "Oba primera nastavita naraščajoči števec na prvo celico novo odprtega dokumenta v programu Calc."
+
+#: doEvents.xhp
+msgctxt ""
+"doEvents.xhp\n"
+"bas_id441668008156303\n"
+"help.text"
+msgid "sheet = ThisComponent.Sheets.getByIndex(0) ' sheet 1"
+msgstr "sheet = ThisComponent.Sheets.getByIndex(0) ' delovni list 1"
+
+#: doEvents.xhp
+msgctxt ""
+"doEvents.xhp\n"
+"bas_id316680008156501\n"
+"help.text"
+msgid "cell = sheet.getCellByPosition(0,0) ' cell A1"
+msgstr "cell = sheet.getCellByPosition(0,0) ' celica A1"
 
 #: enum.xhp
 msgctxt ""

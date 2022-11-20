@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: LibreOffice 7.5\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2022-11-03 11:25+0100\n"
-"PO-Revision-Date: 2022-11-05 12:20+0200\n"
+"POT-Creation-Date: 2022-11-19 09:53+0100\n"
+"PO-Revision-Date: 2022-11-19 15:14+0200\n"
 "Last-Translator: Martin Srebotnjak <miles@filmsi.net>\n"
 "Language-Team: sl.libreoffice.org\n"
 "Language: sl\n"
@@ -1846,8 +1846,8 @@ msgctxt ""
 "02140700.xhp\n"
 "par_id2308201415431822157\n"
 "help.text"
-msgid "<ahelp hid=\".\">Truncate the number to a given number of <emph>Decimal Places</emph>.</ahelp>"
-msgstr "<ahelp hid=\".\">Okrajša število na podano število <emph>decimalnih mest</emph>.</ahelp>"
+msgid "<ahelp hid=\".\">Round the number to a given number of <emph>Decimal Places</emph>.</ahelp>"
+msgstr "<ahelp hid=\".\">Zaokroži število na podano število <emph>decimalnih mest</emph>.</ahelp>"
 
 #: 02140700.xhp
 msgctxt ""
@@ -12582,7 +12582,7 @@ msgctxt ""
 "04060106.xhp\n"
 "par_id8347422\n"
 "help.text"
-msgid "SUMIF supports the reference concatenation operator (~) only in the Criterion parameter, and only if the optional SumRange parameter is not given."
+msgid "SUMIF supports the reference concatenation operator (~) only in the Range parameter, and only if the optional SumRange parameter is not given."
 msgstr "SUMIF podpira operatorja konkatenacije sklicev (~) le kot parameter pogoj, pa še to le, če ni podan neobvezni parameter obseg_vsote."
 
 #: 04060106.xhp
@@ -13876,10 +13876,66 @@ msgstr "Uporabljanje matričnih formul v $[officename] Calc"
 #: 04060107.xhp
 msgctxt ""
 "04060107.xhp\n"
+"hd_id651668200191409\n"
+"help.text"
+msgid "Implicit intersection of array formulas"
+msgstr "Implicitni presek matričnih formul"
+
+#: 04060107.xhp
+msgctxt ""
+"04060107.xhp\n"
 "par_id3152876\n"
 "help.text"
-msgid "You can also create a \"normal\" formula in which the reference range, such as parameters, indicate an array formula. The result is obtained from the intersection of the reference range and the rows or columns in which the formula is found. If there is no intersection or if the range at the intersection covers several rows or columns, a #VALUE! error message appears. The following example illustrates this concept:"
-msgstr "Ustvarite lahko tudi »navadno« formulo, v kateri obseg sklica, kot so npr. parametri, označujejo matrično formulo. Rezultat dobite iz preseka obsega sklica in vrstic ali stolpcev, v katerih se nahaja formula. Če ni preseka ali pa če obseg pri preseku pokriva več vrstic ali stolpcev, program javi napako #VALUE!. To je nazorno prikazano v naslednjem primeru:"
+msgid "You can also create a \"normal\" formula in which the reference range, such as parameters, indicate an array formula. This formula is also known as \"implicit intersection\" of array formula. The result is obtained from the intersection of the reference range and the rows or columns in which the formula is found. If there is no intersection or if the range at the intersection covers several rows or columns, a #VALUE! error message appears. The following example illustrates this concept:"
+msgstr "Ustvarite lahko tudi »navadno« formulo, v kateri obseg sklica, kot so npr. parametri, označuje matrično formulo. Takšno formulo poimenujemo tudi »implicitni presek« matričnih formul. Rezultat dobite iz preseka obsega sklica in vrstic ali stolpcev, v katerih se nahaja formula. Če ni preseka ali pa če obseg pri preseku pokriva več vrstic ali stolpcev, program javi napako #VALUE!. To je nazorno prikazano v naslednjem primeru:"
+
+#: 04060107.xhp
+msgctxt ""
+"04060107.xhp\n"
+"par_id631668200233375\n"
+"help.text"
+msgid "In the table above, place the array formula in D1:"
+msgstr "V zgodnji tabeli postavite matrično formulo v D1:"
+
+#: 04060107.xhp
+msgctxt ""
+"04060107.xhp\n"
+"par_id641668200266239\n"
+"help.text"
+msgid "Cells D1, D2, D3 have values 107, 195, 105 respectively."
+msgstr "Celice D1, D2, D3 imajo vrednosti 107, 195, 105."
+
+#: 04060107.xhp
+msgctxt ""
+"04060107.xhp\n"
+"par_id231668200272420\n"
+"help.text"
+msgid "Insert the formula below in E2, do not enter as array formula."
+msgstr "Spodnjo formulo vstavite v E2, ne vnesite je kot matrične formule."
+
+#: 04060107.xhp
+msgctxt ""
+"04060107.xhp\n"
+"par_id681668200283910\n"
+"help.text"
+msgid "Cells E1 and E3 are empty, Cell E2 has value 195. This is the implicit intersection of array formulas."
+msgstr "Celici E1 in E3 sta prazni, celica E2 pa ima vrednost 195. To je implicitni presek matričnih formul."
+
+#: 04060107.xhp
+msgctxt ""
+"04060107.xhp\n"
+"par_id161668200288651\n"
+"help.text"
+msgid "Insert formula below in E4, as in E2."
+msgstr "Spodnjo formulo vstavite v E4 in v E2."
+
+#: 04060107.xhp
+msgctxt ""
+"04060107.xhp\n"
+"par_id711668200299613\n"
+"help.text"
+msgid "Cell E4 display #VALUE!. Row 4 is out of the range A1:A3 of the formula."
+msgstr "Celica E4 prikaže #VALUE!. Vrstica 4 je izven obsega formule A1:A3."
 
 #: 04060107.xhp
 msgctxt ""
