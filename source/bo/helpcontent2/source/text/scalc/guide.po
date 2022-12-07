@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2022-11-22 14:43+0100\n"
+"POT-Creation-Date: 2022-12-07 19:22+0100\n"
 "PO-Revision-Date: 2018-11-14 11:52+0000\n"
 "Last-Translator: Anonymous Pootle User\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,14 +34,14 @@ msgctxt ""
 msgid "<bookmark_value>automatic addressing in tables</bookmark_value>  <bookmark_value>natural language addressing</bookmark_value>  <bookmark_value>formulas; using row/column labels</bookmark_value>  <bookmark_value>text in cells; as addressing</bookmark_value>  <bookmark_value>addressing; automatic</bookmark_value>  <bookmark_value>name recognition on/off</bookmark_value>  <bookmark_value>row headers;using in formulas</bookmark_value>  <bookmark_value>column headers;using in formulas</bookmark_value>  <bookmark_value>columns; finding labels automatically</bookmark_value>  <bookmark_value>rows; finding labels automatically</bookmark_value>  <bookmark_value>recognizing; column and row labels</bookmark_value>"
 msgstr "<bookmark_value>རེའུ་མིག་ནང་གནས་ས་འཚོལ།</bookmark_value><bookmark_value>རང་འགུལ་སྐད་བརྡའི་གནས་ས་འཚོལ།</bookmark_value><bookmark_value>སྤྱི་འགྲོས།  མིང་ལ་གཞིགས་ནས་གནས་ས་འཚོལ།</bookmark_value><bookmark_value>མིང་། འཚོལ་བ་ལ་སྤྱོད་པ་</bookmark_value><bookmark_value>གནས་ས་འཚོལ།  རང་འགུལ།</bookmark_value>"
 
-#. qAvAQ
+#. Jmw9V
 #: address_auto.xhp
 msgctxt ""
 "address_auto.xhp\n"
 "hd_id3148797\n"
 "help.text"
-msgid "<variable id=\"address_auto\"><link href=\"text/scalc/guide/address_auto.xhp\" name=\"Recognizing Names as Addressing\">Recognizing Names as Addressing</link></variable>"
-msgstr "<variable id=\"address_auto\"><link href=\"text/scalc/guide/address_auto.xhp\" name=\"གནས་ས་འཚོལ་བའི་སྐབས་མིང་ཤན་འབྱེད་བྱེད།\">གནས་འཚོལ་བའི་སྐབས་མིང་ཤན་འབྱེད་བྱེད།</link></variable>"
+msgid "<variable id=\"address_auto\"><link href=\"text/scalc/guide/address_auto.xhp\">Recognizing Names as Addressing</link></variable>"
+msgstr "<variable id=\"address_auto\"><link href=\"text/scalc/guide/address_auto.xhp\">གནས་འཚོལ་བའི་སྐབས་མིང་ཤན་འབྱེད་བྱེད།</link></variable>"
 
 #. GgEvz
 #: address_auto.xhp
@@ -70,22 +70,31 @@ msgctxt ""
 msgid "In the example spreadsheet, you can use the string <item type=\"literal\">'Column One'</item> in a formula to refer to the cell range <item type=\"literal\">B3</item> to <item type=\"literal\">B5</item>, or <item type=\"literal\">'Column Two'</item> for the cell range <item type=\"literal\">C2</item> to <item type=\"literal\">C5</item>. You can also use <item type=\"literal\">'Row One'</item> for the cell range <item type=\"literal\">B3</item> to <item type=\"literal\">D3</item>, or <item type=\"literal\">'Row Two'</item> for the cell range <item type=\"literal\">B4</item> to <item type=\"literal\">D4</item>. The result of a formula that uses a cell name, for example, <item type=\"literal\">SUM('Column One')</item>, is 600."
 msgstr "དཔེ་གཞིའི་གློག་རྡུལ་རེའུ་མིག་ནང་སྤྱི་འགྲོས་ནང་ཡིག་རྟགས་ཕྲེང་སྤྱད་ནས་ <item type=\"literal\">'Column One'</item> དྲ་མིག་ཁྱབ་ཁོངས་མཚོན་ <item type=\"literal\">B3</item> ནས་ <item type=\"literal\">B5</item>"
 
-#. VBpuo
+#. xYcEr
 #: address_auto.xhp
 msgctxt ""
 "address_auto.xhp\n"
 "par_id3155443\n"
 "help.text"
-msgid "This function is active by default. To turn this function off, choose <switchinline select=\"sys\"><caseinline select=\"MAC\"><emph>%PRODUCTNAME - Preferences</emph></caseinline><defaultinline><emph>Tools - Options</emph></defaultinline></switchinline><emph> - %PRODUCTNAME Calc - Calculate</emph> and clear the <emph>Automatically find column and row labels</emph> check box."
+msgid "Automatically finding labels is a legacy feature and deactivated by default as it can produce nondeterministic behavior depending on actual document content. To turn this function on, choose <switchinline select=\"sys\"><caseinline select=\"MAC\"><emph>%PRODUCTNAME - Preferences</emph></caseinline><defaultinline><emph>Tools - Options</emph></defaultinline></switchinline><emph> - %PRODUCTNAME Calc - Calculate</emph> and mark the <emph>Automatically find column and row labels</emph> check box."
 msgstr ""
 
-#. ADRpB
+#. Q9Nee
+#: address_auto.xhp
+msgctxt ""
+"address_auto.xhp\n"
+"par_id3155444\n"
+"help.text"
+msgid "Using defined labels instead is always possible and behaves similar but in a defined way."
+msgstr ""
+
+#. ZuesG
 #: address_auto.xhp
 msgctxt ""
 "address_auto.xhp\n"
 "par_id3149210\n"
 "help.text"
-msgid "If you want a name to be automatically recognized by Calc, the name must start with a letter and be composed of alphanumeric characters. If you enter the name in the formula yourself, enclose the name in single quotation marks ('). If a single quotation mark appears in a name, you must enter a backslash in front of the quotation mark, for example, <item type=\"literal\">'Harry\\'s Bar'</item>."
+msgid "If you enter a label name in the formula yourself, enclose the name in single quotation marks ('). If a single quotation mark appears in a name, you must double it, for example, <item type=\"literal\">'Harry''s Bar'</item>."
 msgstr ""
 
 #. EXFye
@@ -106,13 +115,13 @@ msgctxt ""
 msgid "<bookmark_value>deactivating; automatic changes</bookmark_value>  <bookmark_value>tables; deactivating automatic changes in</bookmark_value>  <bookmark_value>AutoInput function on/off</bookmark_value>  <bookmark_value>text in cells;AutoInput function</bookmark_value>  <bookmark_value>cells; AutoInput function of text</bookmark_value>  <bookmark_value>input support in spreadsheets</bookmark_value>  <bookmark_value>changing; input in cells</bookmark_value>  <bookmark_value>AutoCorrect function;cell contents</bookmark_value>  <bookmark_value>cell input;AutoInput function</bookmark_value>  <bookmark_value>lowercase letters;AutoInput function (in cells)</bookmark_value>  <bookmark_value>capital letters;AutoInput function (in cells)</bookmark_value>  <bookmark_value>date formats;avoiding conversion to</bookmark_value>  <bookmark_value>number completion on/off</bookmark_value>  <bookmark_value>text completion on/off</bookmark_value>  <bookmark_value>word completion on/off</bookmark_value>"
 msgstr ""
 
-#. xyLjr
+#. GMvpd
 #: auto_off.xhp
 msgctxt ""
 "auto_off.xhp\n"
 "hd_id3149456\n"
 "help.text"
-msgid "<variable id=\"auto_off\"><link href=\"text/scalc/guide/auto_off.xhp\" name=\"Deactivating Automatic Changes\">Deactivating Automatic Changes</link> </variable>"
+msgid "<variable id=\"auto_off\"><link href=\"text/scalc/guide/auto_off.xhp\">Deactivating Automatic Changes</link> </variable>"
 msgstr ""
 
 #. 4h6m4
@@ -151,13 +160,13 @@ msgctxt ""
 msgid "When making an entry in a cell, $[officename] Calc automatically suggests matching input found in the same column. This function is known as <emph>AutoInput</emph>."
 msgstr "དྲ་མིག་ནང་གཞི་གྲངས་ནང་འཇུག་བྱ་སྐབས་ $[officename] གློག་རྡུལ་རེའུ་མིག་གིས་རང་འགུལ་གྱིས་དྲ་མིག་དེ་གནས་སའི་སྟར་ནང་ད་ཡོད་ཀྱི་ནང་འཇུག་གཞི་གྲངས་བསྐྱར་ཟློས་སུ་མངོན།  ང་ཚོས་བྱེད་ནུས་དེ་ལ་<emph>རང་འགུལ་ནང་འཇུག་</emph>ཞེས་འབོད།"
 
-#. QXemT
+#. rPWCd
 #: auto_off.xhp
 msgctxt ""
 "auto_off.xhp\n"
 "par_id3153878\n"
 "help.text"
-msgid "To turn the AutoInput on and off, set or remove the check mark in front of <link href=\"text/scalc/01/06130000.xhp\" name=\"Tools - AutoInput\"><emph>Tools - AutoInput</emph></link>."
+msgid "To turn the AutoInput on and off, set or remove the check mark in front of <link href=\"text/scalc/01/06130000.xhp\"><emph>Tools - AutoInput</emph></link>."
 msgstr ""
 
 #. 8G5gv
@@ -241,23 +250,23 @@ msgctxt ""
 msgid "Choose <item type=\"menuitem\">Tools - AutoCorrect - AutoCorrect Options</item>. Go to the <item type=\"menuitem\">Replace</item> tab. Select the word pair and click <item type=\"menuitem\">Delete</item>."
 msgstr ""
 
-#. mkLPr
+#. HzAWS
 #: auto_off.xhp
 msgctxt ""
 "auto_off.xhp\n"
 "par_id3152992\n"
 "help.text"
-msgid "<link href=\"text/scalc/01/06130000.xhp\" name=\"Tools - AutoInput\">Tools - AutoInput</link>"
+msgid "<link href=\"text/scalc/01/06130000.xhp\">Tools - AutoInput</link>"
 msgstr ""
 
-#. h5BG2
+#. v9BGX
 #: auto_off.xhp
 msgctxt ""
 "auto_off.xhp\n"
 "par_id3154368\n"
 "help.text"
-msgid "<link href=\"text/shared/01/06040000.xhp\" name=\"Tools - AutoCorrect\">Tools - AutoCorrect - AutoCorrect Options</link>"
-msgstr "<link href=\"text/shared/01/06040000.xhp\" name=\"རང་འགུལ་དག་བཅོས་འདེམས་གཞི།\">རང་འགུལ་དག་བཅོས་འདེམས་གཞི།</link>"
+msgid "<link href=\"text/shared/01/06040000.xhp\">Tools - AutoCorrect - AutoCorrect Options</link>"
+msgstr "<link href=\"text/shared/01/06040000.xhp\">རང་འགུལ་དག་བཅོས་འདེམས་གཞི།</link>"
 
 #. tdzBC
 #: autofilter.xhp
@@ -277,14 +286,14 @@ msgctxt ""
 msgid "<bookmark_value>filters, see also AutoFilter function</bookmark_value>      <bookmark_value>AutoFilter function;applying</bookmark_value>      <bookmark_value>sheets; filter values</bookmark_value>      <bookmark_value>numbers; filter sheets</bookmark_value>      <bookmark_value>columns; AutoFilter function</bookmark_value>      <bookmark_value>drop-down menus in sheet columns</bookmark_value>      <bookmark_value>database ranges; AutoFilter function</bookmark_value>"
 msgstr "<bookmark_value>རང་འགུལ་འཚག་འདེམས་བྱེད་ནུས།  བེད་སྤྱོད།</bookmark_value><bookmark_value>ལས་ཁྲ།  འཚག་འདེམས་ཐང་།</bookmark_value><bookmark_value>ཁ་གྲངས།  འཚག་འདེམས་ལས་ཁྲ།</bookmark_value><bookmark_value>སྟར།  རང་འགུལ་འཚག་འདེམས་བྱེད་ནུས།</bookmark_value><bookmark_value>མར་འཐེན་ཚལ་ཐོ།  ལས་ཀའི་རེའུ་འགོད་ནང་།</bookmark_value><bookmark_value>གཞི་གྲངས་མཛོད་ཁྱབ་ཁོངས།  རང་འགུལ་འཚག་འདེམས་བྱེད་ནུས།</bookmark_value>"
 
-#. WoBQt
+#. ukKtB
 #: autofilter.xhp
 msgctxt ""
 "autofilter.xhp\n"
 "hd_id3156423\n"
 "help.text"
-msgid "<variable id=\"autofilter\"><link href=\"text/scalc/guide/autofilter.xhp\" name=\"Applying AutoFilter\">Applying AutoFilter</link></variable>"
-msgstr "<variable id=\"autofilter\"><link href=\"text/scalc/guide/autofilter.xhp\" name=\"བེད་སྤྱོད་རང་འགུལ་འཚག་འདེམས།\">བེད་སྤྱོད་རང་འགུལ་འཚག་འདེམས།་</link></variable>"
+msgid "<variable id=\"autofilter\"><link href=\"text/scalc/guide/autofilter.xhp\">Applying AutoFilter</link></variable>"
+msgstr "<variable id=\"autofilter\"><link href=\"text/scalc/guide/autofilter.xhp\">བེད་སྤྱོད་རང་འགུལ་འཚག་འདེམས།་</link></variable>"
 
 #. 7FoJn
 #: autofilter.xhp
@@ -367,32 +376,32 @@ msgctxt ""
 msgid "To assign different AutoFilters to different sheets, you must first define a database range on each sheet."
 msgstr ""
 
-#. 8ViYy
+#. tBXAy
 #: autofilter.xhp
 msgctxt ""
 "autofilter.xhp\n"
 "par_id3159236\n"
 "help.text"
-msgid "The arithmetic functions also take account of the cells that are not visible due to an applied filter. For example, a sum of an entire column will also total the values in the filtered cells. Apply the <link href=\"text/scalc/01/04060106.xhp\" name=\"SUBTOTAL\">SUBTOTAL</link> function if only the cells visible after the application of a filter are to be taken into account."
-msgstr "རྩིས་རྒྱག་རྟེན་གྲངས་ཀྱིས་ད་དུང་འཚག་འདེམས་ཆས་སྤྱད་པའི་རྐྱེན་གྱིས་མཐོང་མི་ཐུབ་པའི་དྲ་མིག་རྩིས་རྒྱག་བྱེད།  དཔེར་ན་  སྟར་ཞིག་གིས་སྤྱི་བསྡོམས་རྩིས་རྒྱག་སྐབས་བདམས་པའི་དྲ་མིག་ནང་གི་ཐང་ཡང་རྩིས་རྒྱག་ཁོངས་སུ་བརྩིས་ཡོད།  གལ་ཏེ་འཚག་འདེམས་བྱས་རྗེས་ཀྱི་མཐོང་རུང་བའི་དྲ་མིག་ཁོ་ན་རྩིས་རྒྱག་བྱས་ན་<link href=\"text/scalc/01/04060106.xhp\" name=\"གྲངས་རིག་བརྟེན་གྲངས།\">གྲངས་རིག་བརྟེན་གྲངས།</link>བེད་སྤྱོད་བྱ་རོགས།"
+msgid "The arithmetic functions also take account of the cells that are not visible due to an applied filter. For example, a sum of an entire column will also total the values in the filtered cells. Apply the <link href=\"text/scalc/01/04060106.xhp\">SUBTOTAL</link> function if only the cells visible after the application of a filter are to be taken into account."
+msgstr "རྩིས་རྒྱག་རྟེན་གྲངས་ཀྱིས་ད་དུང་འཚག་འདེམས་ཆས་སྤྱད་པའི་རྐྱེན་གྱིས་མཐོང་མི་ཐུབ་པའི་དྲ་མིག་རྩིས་རྒྱག་བྱེད།  དཔེར་ན་  སྟར་ཞིག་གིས་སྤྱི་བསྡོམས་རྩིས་རྒྱག་སྐབས་བདམས་པའི་དྲ་མིག་ནང་གི་ཐང་ཡང་རྩིས་རྒྱག་ཁོངས་སུ་བརྩིས་ཡོད།  གལ་ཏེ་འཚག་འདེམས་བྱས་རྗེས་ཀྱི་མཐོང་རུང་བའི་དྲ་མིག་ཁོ་ན་རྩིས་རྒྱག་བྱས་ན་<link href=\"text/scalc/01/04060106.xhp\">གྲངས་རིག་བརྟེན་གྲངས།</link>བེད་སྤྱོད་བྱ་རོགས།"
 
-#. nj46T
+#. KZJNX
 #: autofilter.xhp
 msgctxt ""
 "autofilter.xhp\n"
 "par_id3152985\n"
 "help.text"
-msgid "<link href=\"text/scalc/01/12040100.xhp\" name=\"Data - Filter - AutoFilter\">Data - Filter - AutoFilter</link>"
-msgstr "<link href=\"text/scalc/01/12040100.xhp\" name=\"རངའགུལ་འཚག་འདེམས།\">རངའགུལ་འཚག་འདེམས།</link>"
+msgid "<link href=\"text/scalc/01/12040100.xhp\">Data - Filter - AutoFilter</link>"
+msgstr "<link href=\"text/scalc/01/12040100.xhp\">རངའགུལ་འཚག་འདེམས།</link>"
 
-#. UwaWC
+#. 2Dn9i
 #: autofilter.xhp
 msgctxt ""
 "autofilter.xhp\n"
 "par_id3154484\n"
 "help.text"
-msgid "<link href=\"text/scalc/01/04060106.xhp\" name=\"SUBTOTAL\">SUBTOTAL</link>"
-msgstr "<link href=\"text/scalc/01/04060106.xhp\" name=\"གྲངས་རིག་རྟེན་གྲངས།\">གྲངས་རིག་རྟེན་གྲངས།</link>"
+msgid "<link href=\"text/scalc/01/04060106.xhp\">SUBTOTAL</link>"
+msgstr "<link href=\"text/scalc/01/04060106.xhp\">གྲངས་རིག་རྟེན་གྲངས།</link>"
 
 #. XAtNE
 #: autoformat.xhp
@@ -412,14 +421,14 @@ msgctxt ""
 msgid "<bookmark_value>tables; AutoFormat</bookmark_value>    <bookmark_value>AutoFormat cell ranges</bookmark_value>    <bookmark_value>formats; automatically formatting spreadsheets</bookmark_value>    <bookmark_value>sheets;AutoFormat</bookmark_value>"
 msgstr ""
 
-#. EiEMB
+#. PYXFN
 #: autoformat.xhp
 msgctxt ""
 "autoformat.xhp\n"
 "hd_id3155132\n"
 "help.text"
-msgid "<variable id=\"autoformat\"><link href=\"text/scalc/guide/autoformat.xhp\" name=\"Using AutoFormat for Tables\">Applying Automatic Formatting to a Selected Cell Range</link></variable>"
-msgstr "<variable id=\"autoformat\"><link href=\"text/scalc/guide/autoformat.xhp\" name=\"ལས་ཁྲའམ་བདམས་པའི་དྲ་མིག་ས་ཁོངས་ལ་རང་འགུལ་འདྲ་སྤྱོད་རྣམས་གཞག་བེད་སྤྱོད་བྱེད།\">ལས་ཁྲའམ་བདམས་པའི་དྲ་མིག་ས་ཁོངས་སུ་རང་འགུལ་འདྲ་སྤྱོད་རྣམས་གཞག་བེད་སྤྱོད་བྱེད། </link></variable>"
+msgid "<variable id=\"autoformat\"><link href=\"text/scalc/guide/autoformat.xhp\">Applying Automatic Formatting to a Selected Cell Range</link></variable>"
+msgstr "<variable id=\"autoformat\"><link href=\"text/scalc/guide/autoformat.xhp\">ལས་ཁྲའམ་བདམས་པའི་དྲ་མིག་ས་ཁོངས་སུ་རང་འགུལ་འདྲ་སྤྱོད་རྣམས་གཞག་བེད་སྤྱོད་བྱེད། </link></variable>"
 
 #. 7xexA
 #: autoformat.xhp
@@ -565,13 +574,13 @@ msgctxt ""
 msgid "The new AutoFormat styles created using the steps above can be applied to any %PRODUCTNAME Calc file. Hence they are not limited to the file where the style was created."
 msgstr ""
 
-#. hpPvo
+#. gKDHt
 #: autoformat.xhp
 msgctxt ""
 "autoformat.xhp\n"
 "par_id3159203\n"
 "help.text"
-msgid "<link href=\"text/scalc/01/05110000.xhp\" name=\"Format - AutoFormat\">Format - AutoFormat Styles</link>"
+msgid "<link href=\"text/scalc/01/05110000.xhp\">Format - AutoFormat Styles</link>"
 msgstr ""
 
 #. ZSCL9
@@ -592,13 +601,13 @@ msgctxt ""
 msgid "<bookmark_value>spreadsheets; backgrounds</bookmark_value><bookmark_value>backgrounds;cell ranges</bookmark_value><bookmark_value>tables; backgrounds</bookmark_value><bookmark_value>cells; backgrounds</bookmark_value><bookmark_value>rows, see also cells</bookmark_value><bookmark_value>columns, see also cells</bookmark_value>"
 msgstr ""
 
-#. tMFWU
+#. 4sJss
 #: background.xhp
 msgctxt ""
 "background.xhp\n"
 "hd_id3149346\n"
 "help.text"
-msgid "<variable id=\"background\"><link href=\"text/scalc/guide/background.xhp\" name=\"Defining Background Colors or Background Graphics\">Defining Background Colors or Background Graphics</link>            </variable>"
+msgid "<variable id=\"background\"><link href=\"text/scalc/guide/background.xhp\">Defining Background Colors or Background Graphics</link>            </variable>"
 msgstr ""
 
 #. gwwiM
@@ -673,13 +682,13 @@ msgctxt ""
 msgid "Select the graphic and click <emph>Open</emph>."
 msgstr ""
 
-#. 2BGVn
+#. 4oCgd
 #: background.xhp
 msgctxt ""
 "background.xhp\n"
 "par_id3153575\n"
 "help.text"
-msgid "The graphic is inserted anchored to the current cell. You can move and scale the graphic as you want. In your context menu you can use the <menuitem>Arrange - To Background</menuitem> command to place this in the background. To select a graphic that has been placed in the background, use the <link href=\"text/scalc/01/02110000.xhp\" name=\"Navigator\">Navigator</link>."
+msgid "The graphic is inserted anchored to the current cell. You can move and scale the graphic as you want. In your context menu you can use the <menuitem>Arrange - To Background</menuitem> command to place this in the background. To select a graphic that has been placed in the background, use the <link href=\"text/scalc/01/02110000.xhp\">Navigator</link>."
 msgstr ""
 
 #. vTxFX
@@ -691,13 +700,13 @@ msgctxt ""
 msgid "<link href=\"text/shared/guide/background.xhp\">Watermarks</link>"
 msgstr ""
 
-#. R8Ctk
+#. yWAyq
 #: background.xhp
 msgctxt ""
 "background.xhp\n"
 "par_id3156180\n"
 "help.text"
-msgid "<link href=\"text/shared/01/05210100.xhp\" name=\"Background tab page\"><emph>Background</emph> tab page</link>"
+msgid "<link href=\"text/shared/01/05210100.xhp\"><emph>Background</emph> tab page</link>"
 msgstr ""
 
 #. owozX
@@ -1294,14 +1303,14 @@ msgctxt ""
 msgid "<bookmark_value>dates; in cells</bookmark_value>  <bookmark_value>times; in cells</bookmark_value>  <bookmark_value>cells;date and time formats</bookmark_value>  <bookmark_value>current date and time values</bookmark_value>"
 msgstr "<bookmark_value>ཚེས་གྲངས།  དྲ་མིག་ནང་།</bookmark_value><bookmark_value>ཚེས་གྲངས།  དྲ་མིག་ནང་།</bookmark_value><bookmark_value>དྲ་མིག  ཚེས་གྲང་དང་དུས་ཚོད་རྣམ་གཞག</bookmark_value>"
 
-#. DKYwy
+#. P5PrP
 #: calc_date.xhp
 msgctxt ""
 "calc_date.xhp\n"
 "hd_id3146120\n"
 "help.text"
-msgid "<variable id=\"calc_date\"><link href=\"text/scalc/guide/calc_date.xhp\" name=\"Calculating With Dates and Times\">Calculating With Dates and Times</link></variable>"
-msgstr "<variable id=\"calc_date\"><link href=\"text/scalc/guide/calc_date.xhp\" name=\"ཚེས་གྲངས་དང་དུས་ཚོད་སྤྱད་ནས་རྩིས་རྒྱག་བྱེད།\">ཚེས་གྲངས་དང་དུས་ཚོད་སྤྱད་ནས་རྩིས་རྒྱག་བྱེད།</link></variable>"
+msgid "<variable id=\"calc_date\"><link href=\"text/scalc/guide/calc_date.xhp\">Calculating With Dates and Times</link></variable>"
+msgstr "<variable id=\"calc_date\"><link href=\"text/scalc/guide/calc_date.xhp\">ཚེས་གྲངས་དང་དུས་ཚོད་སྤྱད་ནས་རྩིས་རྒྱག་བྱེད།</link></variable>"
 
 #. ZBgGk
 #: calc_date.xhp
@@ -1402,14 +1411,14 @@ msgctxt ""
 msgid "<bookmark_value>series; calculating</bookmark_value>      <bookmark_value>calculating; series</bookmark_value>      <bookmark_value>linear series</bookmark_value>      <bookmark_value>growth series</bookmark_value>      <bookmark_value>date series</bookmark_value>      <bookmark_value>powers of 2 calculations</bookmark_value>      <bookmark_value>cells; filling automatically</bookmark_value>      <bookmark_value>automatic cell filling</bookmark_value>      <bookmark_value>AutoFill function</bookmark_value>      <bookmark_value>filling;cells, automatically</bookmark_value>"
 msgstr "<bookmark_value>རིམ་སྟར།  རྩིས་རྒྱག</bookmark_value><bookmark_value>རྩིས་རྒྱག   རིམ་སྟར།</bookmark_value><bookmark_value>ཐིག་གཤིས་རིམ་སྟར།</bookmark_value><bookmark_value>སྡུར་མཚུངས་རིམ་སྟར།</bookmark_value><bookmark_value>ཐེངས་2 རང་སྒྱུར།   རྩིས་རྒྱག་རེའུ་འགོད།</bookmark_value><bookmark_value>དྲ་མིག   རང་འགུལ་སྐོང་གསབ།</bookmark_value><bookmark_value>རང་འགུལ་སྐོང་གསབ།  དྲ་མིག</bookmark_value><bookmark_value>སྐོང་གསབ།  དྲ་མིག་ རང་འགུལ།</bookmark_value>"
 
-#. RxPrT
+#. VGhrd
 #: calc_series.xhp
 msgctxt ""
 "calc_series.xhp\n"
 "hd_id3150769\n"
 "help.text"
-msgid "<variable id=\"calc_series\"><link href=\"text/scalc/guide/calc_series.xhp\" name=\"Automatically Calculating Series\">Automatically Filling in Data Based on Adjacent Cells</link></variable>"
-msgstr "<variable id=\"calc_series\"><link href=\"text/scalc/guide/calc_series.xhp\" name=\"རང་འགུལ་རྩིས་རྒྱག་རིམ་སྟར།\">རང་འགུལ་རྩིས་རྒྱག་རིམ་སྟར།</link></variable>"
+msgid "<variable id=\"calc_series\"><link href=\"text/scalc/guide/calc_series.xhp\">Automatically Filling in Data Based on Adjacent Cells</link></variable>"
+msgstr "<variable id=\"calc_series\"><link href=\"text/scalc/guide/calc_series.xhp\">རང་འགུལ་རྩིས་རྒྱག་རིམ་སྟར།</link></variable>"
 
 #. C6vL5
 #: calc_series.xhp
@@ -1573,14 +1582,14 @@ msgctxt ""
 msgid "If you select a <emph>date</emph> series, the increment that you enter is added to the time unit that you specify."
 msgstr "གལ་ཏེ་<emph>ཚེས་གྲངས་</emph>རིམ་སྟར་འདེམས་ན་ ཁྱེད་ཀྱིས་ནང་འཇུག་བྱས་པའི་འཕར་ཚད་དེ་གཏན་འཁེལ་བྱས་པའི་དུས་ཚོད་འཇལ་བྱེད་ནང་སྣོན་པར་བྱེད།"
 
-#. NqenD
+#. ZNvtX
 #: calc_series.xhp
 msgctxt ""
 "calc_series.xhp\n"
 "par_id3159173\n"
 "help.text"
-msgid "<link href=\"text/shared/optionen/01060400.xhp\" name=\"Sort lists\">Sort lists</link>"
-msgstr "<link href=\"text/shared/optionen/01060400.xhp\" name=\"རིམ་སྒྲིག་ཤོག་ཚན།\">རིམ་སྒྲིག་ཤོག་ཚན།</link>"
+msgid "<link href=\"text/shared/optionen/01060400.xhp\">Sort lists</link>"
+msgstr "<link href=\"text/shared/optionen/01060400.xhp\">རིམ་སྒྲིག་ཤོག་ཚན།</link>"
 
 #. a8RRo
 #: calc_timevalues.xhp
@@ -1600,14 +1609,14 @@ msgctxt ""
 msgid "<bookmark_value>calculating;time differences</bookmark_value><bookmark_value>time differences</bookmark_value>"
 msgstr "<bookmark_value>རྩིས་རྒྱག  དུས་ཁྱད།</bookmark_value>"
 
-#. ovkGS
+#. kx4UD
 #: calc_timevalues.xhp
 msgctxt ""
 "calc_timevalues.xhp\n"
 "hd_id3150769\n"
 "help.text"
-msgid "<variable id=\"calc_timevalues\"><link href=\"text/scalc/guide/calc_timevalues.xhp\" name=\"Calculating Time Differences\">Calculating Time Differences</link></variable>"
-msgstr "<variable id=\"calc_timevalues\"><link href=\"text/scalc/guide/calc_timevalues.xhp\" name=\"དུས་ཁྱད་རྩིས་རྒྱག\">དུས་ཁྱད་རྩིས་རྒྱག</link></variable>"
+msgid "<variable id=\"calc_timevalues\"><link href=\"text/scalc/guide/calc_timevalues.xhp\">Calculating Time Differences</link></variable>"
+msgstr "<variable id=\"calc_timevalues\"><link href=\"text/scalc/guide/calc_timevalues.xhp\">དུས་ཁྱད་རྩིས་རྒྱག</link></variable>"
 
 #. Cv4BS
 #: calc_timevalues.xhp
@@ -1663,14 +1672,14 @@ msgctxt ""
 msgid "<bookmark_value>spreadsheets; calculating</bookmark_value><bookmark_value>calculating; spreadsheets</bookmark_value><bookmark_value>formulas; calculating</bookmark_value>"
 msgstr "<bookmark_value>ལས་ཁྲ།  རྩིས་རྒྱག</bookmark_value><bookmark_value>རྩིས་རྒྱག  ལས་ཁྲ།</bookmark_value><bookmark_value>སྤྱི་འགྲོས།  ལས་ཁྲ།</bookmark_value>"
 
-#. pkjAM
+#. mv4KH
 #: calculate.xhp
 msgctxt ""
 "calculate.xhp\n"
 "hd_id3150791\n"
 "help.text"
-msgid "<variable id=\"calculate\"><link href=\"text/scalc/guide/calculate.xhp\" name=\"Calculating in Spreadsheets\">Calculating in Spreadsheets</link></variable>"
-msgstr "<variable id=\"calculate\"><link href=\"text/scalc/guide/calculate.xhp\" name=\"ལས་ཁྲའི་ནང་རྩིས་རྒྱག་བྱེད།\">ལས་ཁྲའི་ནང་རྩིས་རྒྱག་བྱེད།</link></variable>"
+msgid "<variable id=\"calculate\"><link href=\"text/scalc/guide/calculate.xhp\">Calculating in Spreadsheets</link></variable>"
+msgstr "<variable id=\"calculate\"><link href=\"text/scalc/guide/calculate.xhp\">ལས་ཁྲའི་ནང་རྩིས་རྒྱག་བྱེད།</link></variable>"
 
 #. VKHds
 #: calculate.xhp
@@ -1933,14 +1942,14 @@ msgctxt ""
 msgid "<bookmark_value>protecting;cells and sheets</bookmark_value>      <bookmark_value>cells; protecting</bookmark_value>      <bookmark_value>cell protection; enabling</bookmark_value>      <bookmark_value>sheets; protecting</bookmark_value>      <bookmark_value>documents; protecting</bookmark_value>      <bookmark_value>cells; hiding for printing</bookmark_value>      <bookmark_value>changing; sheet protection</bookmark_value>      <bookmark_value>hiding;formulas</bookmark_value>      <bookmark_value>formulas;hiding</bookmark_value>"
 msgstr "<bookmark_value>སྲུང་སྐྱོབ།  དྲ་མིག་དང་ལས་ཁྲ།</bookmark_value><bookmark_value>དྲ་མིག   སྲུང་སྐྱོབ།</bookmark_value><bookmark_value>དྲ་མིག་སྲུང་སྐྱོབ།  སྒུལ་སྤྱོད།</bookmark_value><bookmark_value>ལས་ཁྲ།   སྲུང་སྐྱོབ། </bookmark_value><bookmark_value>ཡིག་ཚགས།   སྲུང་སྐྱོབ།</bookmark_value><bookmark_value>དྲ་མིག  གཏག་པར་སྐབས་གབ་པ།</bookmark_value><bookmark_value>བཟོ་བཅོས།  ལས་ཁྲ་སྲུང་སྐྱོབ།</bookmark_value><bookmark_value>བཟོ་བཅོས།  ཡིག་ཚགས་སྲུང་སྐྱོབ།</bookmark_value>"
 
-#. DDnnF
+#. WAuVd
 #: cell_protect.xhp
 msgctxt ""
 "cell_protect.xhp\n"
 "hd_id3146119\n"
 "help.text"
-msgid "<variable id=\"cell_protect\"><link href=\"text/scalc/guide/cell_protect.xhp\" name=\"Protecting Cells from Changes\">Protecting Cells from Changes</link></variable>"
-msgstr "<variable id=\"cell_protect\"><link href=\"text/scalc/guide/cell_protect.xhp\" name=\"དྲ་མིག་བཟོ་བཅོས་མི་བྱེད་པ་ལ་སྲུང་སྐྱོབ་བྱེད།\">དྲ་མིག་བཟོ་བཅོས་མི་བྱེད་པ་ལ་སྲུང་སྐྱོབ་བྱེད།</link></variable>"
+msgid "<variable id=\"cell_protect\"><link href=\"text/scalc/guide/cell_protect.xhp\">Protecting Cells from Changes</link></variable>"
+msgstr "<variable id=\"cell_protect\"><link href=\"text/scalc/guide/cell_protect.xhp\">དྲ་མིག་བཟོ་བཅོས་མི་བྱེད་པ་ལ་སྲུང་སྐྱོབ་བྱེད།</link></variable>"
 
 #. YzGFz
 #: cell_protect.xhp
@@ -2059,13 +2068,13 @@ msgctxt ""
 msgid "Apply the protection options."
 msgstr "སྲུང་སྐྱོབ་འདེམས་གཞི་བེད་སྤྱོད་བྱེད།"
 
-#. yCZeB
+#. 6BoLD
 #: cell_protect.xhp
 msgctxt ""
 "cell_protect.xhp\n"
 "par_idN106C0\n"
 "help.text"
-msgid "To protect the cells from being changed, viewed or printed according to your settings in the <emph>Format - Cells</emph> dialog, choose <link href=\"text/scalc/01/06060100.xhp\" name=\"Tools protect sheet\"><menuitem>Tools - Protect Sheet</menuitem></link>."
+msgid "To protect the cells from being changed, viewed or printed according to your settings in the <emph>Format - Cells</emph> dialog, choose <link href=\"text/scalc/01/06060100.xhp\"><menuitem>Tools - Protect Sheet</menuitem></link>."
 msgstr ""
 
 #. doYSo
@@ -2122,14 +2131,14 @@ msgctxt ""
 msgid "<bookmark_value>cell protection; unprotecting</bookmark_value>      <bookmark_value>protecting; unprotecting cells</bookmark_value>      <bookmark_value>unprotecting cells</bookmark_value>"
 msgstr "<bookmark_value>དྲ་མིག་སྲུང་སྐྱོབ།   སྲུང་སྐྱོབ་རྩིས་མེད།</bookmark_value><bookmark_value>སྲུང་སྐྱོབ།   དྲ་མིག་སྲུང་སྐྱོབ་རྩིས་མེད།</bookmark_value><bookmark_value>དྲ་མིག་སྲུང་སྐྱོབ་རྩིས་མེད།</bookmark_value>"
 
-#. K8ukF
+#. RfFFV
 #: cell_unprotect.xhp
 msgctxt ""
 "cell_unprotect.xhp\n"
 "hd_id3153252\n"
 "help.text"
-msgid "<variable id=\"cell_unprotect\"><link href=\"text/scalc/guide/cell_unprotect.xhp\" name=\"Unprotecting Cells\">Unprotecting Cells</link> </variable>"
-msgstr "<variable id=\"cell_unprotect\"><link href=\"text/scalc/guide/cell_unprotect.xhp\" name=\"དྲ་མིག་སྲུང་སྐྱོབ་རྩིས་མེད།\">དྲ་མིག་སྲུང་སྐྱོབ་རྩིས་མེད།</link></variable>"
+msgid "<variable id=\"cell_unprotect\"><link href=\"text/scalc/guide/cell_unprotect.xhp\">Unprotecting Cells</link> </variable>"
+msgstr "<variable id=\"cell_unprotect\"><link href=\"text/scalc/guide/cell_unprotect.xhp\">དྲ་མིག་སྲུང་སྐྱོབ་རྩིས་མེད།</link></variable>"
 
 #. gK5Qh
 #: cell_unprotect.xhp
@@ -2185,14 +2194,14 @@ msgctxt ""
 msgid "<bookmark_value>cells; copying/deleting/formatting/moving</bookmark_value>      <bookmark_value>rows;visible and invisible</bookmark_value>      <bookmark_value>copying; visible cells only</bookmark_value>      <bookmark_value>formatting;visible cells only</bookmark_value>      <bookmark_value>moving;visible cells only</bookmark_value>      <bookmark_value>deleting;visible cells only</bookmark_value>      <bookmark_value>invisible cells</bookmark_value>      <bookmark_value>filters;copying visible cells only</bookmark_value>      <bookmark_value>hidden cells</bookmark_value>"
 msgstr "<bookmark_value>དྲ་མིག  འདྲ་ཕབ།</bookmark_value><bookmark_value>འདྲ་ཕབ།  དྲ་མིག</bookmark_value><bookmark_value>དྲ་མིག་མཐོང་རུང་།  འདྲ་ཕབ།</bookmark_value><bookmark_value>མངོན་པའི་དྲ་མིག་འདྲ་ཕབ་བྱེད།</bookmark_value><bookmark_value>འཚག་ཆས།   མཐོང་རུང་གི་དྲ་མིག་ཁོ་ན་འདྲ་ཕབ་བྱེད། </bookmark_value><bookmark_value>རང་འགུལ་འཚག་འདེམས་བྱེད་ནུས། མཐོང་རུང་གི་དྲ་མིག་ཁོ་ན་འདྲ་ཕབ་བྱེད།</bookmark_value><bookmark_value>གབ་པའི་དྲ་མིག</bookmark_value><bookmark_value>འདྲ་ཕབ་མ་བྱས་པ་གཏག་པར་བྱེད།  མཐོང་རུང་གི་དྲ་མིག་འབའ་ཞིག་འདྲ་ཕབ་བྱེད།</bookmark_value>"
 
-#. jdYeD
+#. hWZTv
 #: cellcopy.xhp
 msgctxt ""
 "cellcopy.xhp\n"
 "hd_id3150440\n"
 "help.text"
-msgid "<variable id=\"cellcopy\"><link href=\"text/scalc/guide/cellcopy.xhp\" name=\"Only Copy Visible Cells\">Only Copy Visible Cells</link></variable>"
-msgstr "<variable id=\"cellcopy\"><link href=\"text/scalc/guide/cellcopy.xhp\" name=\"མཐོང་རུང་གི་དྲ་མིག་ཁོ་ན་འདྲ་ཕབ་བྱེད།\">མཐོང་རུང་གི་དྲ་མིག་ཁོ་ན་འདྲ་ཕབ་བྱེད།</link></variable>"
+msgid "<variable id=\"cellcopy\"><link href=\"text/scalc/guide/cellcopy.xhp\">Only Copy Visible Cells</link></variable>"
+msgstr "<variable id=\"cellcopy\"><link href=\"text/scalc/guide/cellcopy.xhp\">མཐོང་རུང་གི་དྲ་མིག་ཁོ་ན་འདྲ་ཕབ་བྱེད།</link></variable>"
 
 #. eAskd
 #: cellcopy.xhp
@@ -2257,14 +2266,14 @@ msgctxt ""
 msgid "Only the visible cells of the selection are copied, deleted, moved, or formatted."
 msgstr "བདམས་པའི་ཁྱབ་ཁོངས་ནང་གི་མཐོང་རུང་དྲ་མིག་འདྲ་ཕབ་དང་ སུབ་པ་  སྤོ་སྒུལ་ཡང་ན་རྣམ་གཞག་ཅན་དུ་བསྒྱུར་བ་ཙམ་མོ།"
 
-#. 2mDPY
+#. E9sMe
 #: cellcopy.xhp
 msgctxt ""
 "cellcopy.xhp\n"
 "par_id3166427\n"
 "help.text"
-msgid "Cells were hidden using the <emph>Hide</emph> command in the context menu of the row or column headers, or through an <link href=\"text/scalc/01/12080000.xhp\" name=\"outline\">outline</link>."
-msgstr "ཕྲེང་ངམ་སྟར་ཁ་བྱང་དང་གཡས་མཐེབ་ཚལ་ཐོའི་ནང་གི་<emph>གབ་པ།</emph>བཀའ་ཚིག་བེད་སྤྱོད་དོ་<link href=\"text/scalc/01/12080000.xhp\" name=\"རྩ་འཛིན།\">རྩ་འཛིན།</link>བརྒྱུད་ནས་ལག་འགུལ་གྱིས་དྲ་མིག་གབ་པ།"
+msgid "Cells were hidden using the <emph>Hide</emph> command in the context menu of the row or column headers, or through an <link href=\"text/scalc/01/12080000.xhp\">outline</link>."
+msgstr "ཕྲེང་ངམ་སྟར་ཁ་བྱང་དང་གཡས་མཐེབ་ཚལ་ཐོའི་ནང་གི་<emph>གབ་པ།</emph>བཀའ་ཚིག་བེད་སྤྱོད་དོ་<link href=\"text/scalc/01/12080000.xhp\">རྩ་འཛིན།</link>བརྒྱུད་ནས་ལག་འགུལ་གྱིས་དྲ་མིག་གབ་པ།"
 
 #. hCVpN
 #: cellcopy.xhp
@@ -2302,14 +2311,14 @@ msgctxt ""
 msgid "<bookmark_value>drag and drop; referencing cells</bookmark_value>      <bookmark_value>cells; referencing by drag and drop </bookmark_value>      <bookmark_value>references;inserting by drag and drop</bookmark_value>      <bookmark_value>inserting;references, by drag and drop</bookmark_value>"
 msgstr "<bookmark_value>འདྲུད་སྐྱེལ།  དྲ་མིག་འདྲེན་སྤྱོད།</bookmark_value><bookmark_value>དྲ་མིག   འདྲུད་སྐྱེལ་བརྒྱུད་ནས་འདྲེན་སྤྱོད་བྱེད་པ།</bookmark_value>"
 
-#. sr78D
+#. pKiKK
 #: cellreference_dragdrop.xhp
 msgctxt ""
 "cellreference_dragdrop.xhp\n"
 "hd_id3154686\n"
 "help.text"
-msgid "<variable id=\"cellreference_dragdrop\"><link href=\"text/scalc/guide/cellreference_dragdrop.xhp\" name=\"Referencing Cells by Drag-and-Drop\">Referencing Cells by Drag-and-Drop</link></variable>"
-msgstr "<variable id=\"cellreference_dragdrop\"><link href=\"text/scalc/guide/cellreference_dragdrop.xhp\" name=\"འདྲུད་སྐྱེལ་བརྒྱུད་ནས་དྲ་མིག་འདྲེན་སྤྱོད་བྱེད།\">འདྲུད་སྐྱེལ་བརྒྱུད་ནས་དྲ་མིག་འདྲེན་སྤྱོད་བྱེད།</link></variable>"
+msgid "<variable id=\"cellreference_dragdrop\"><link href=\"text/scalc/guide/cellreference_dragdrop.xhp\">Referencing Cells by Drag-and-Drop</link></variable>"
+msgstr "<variable id=\"cellreference_dragdrop\"><link href=\"text/scalc/guide/cellreference_dragdrop.xhp\">འདྲུད་སྐྱེལ་བརྒྱུད་ནས་དྲ་མིག་འདྲེན་སྤྱོད་བྱེད།</link></variable>"
 
 #. ANUwC
 #: cellreference_dragdrop.xhp
@@ -2347,14 +2356,14 @@ msgctxt ""
 msgid "Open the sheet in which you want to insert something."
 msgstr "དེའི་ནང་ནང་དོན་བསྒར་འཛུད་བྱ་དགོས་པའི་ལས་ཁྲ་ཁ་ཕྱེ་བ།"
 
-#. G9pdw
+#. cFo33
 #: cellreference_dragdrop.xhp
 msgctxt ""
 "cellreference_dragdrop.xhp\n"
 "par_id3154732\n"
 "help.text"
-msgid "Open the <link href=\"text/scalc/01/02110000.xhp\" name=\"Navigator\">Navigator</link>. In the lower box of the Navigator select the source file."
-msgstr "<link href=\"text/scalc/01/02110000.xhp\" name=\"ལག་རོགས།\">ལག་རོགས།</link>ཁ་ཕྱེ་བ་དང་  \"ལག་རོགས།\"མཐིལ་ངོས་ཀྱི་སྒྲོམ་ནང་ཁུངས་ཡིག་ཆ་འདེམས་དགོས།"
+msgid "Open the <link href=\"text/scalc/01/02110000.xhp\">Navigator</link>. In the lower box of the Navigator select the source file."
+msgstr "<link href=\"text/scalc/01/02110000.xhp\">ལག་རོགས།</link>ཁ་ཕྱེ་བ་དང་  \"ལག་རོགས།\"མཐིལ་ངོས་ཀྱི་སྒྲོམ་ནང་ཁུངས་ཡིག་ཆ་འདེམས་དགོས།"
 
 #. 36bq3
 #: cellreference_dragdrop.xhp
@@ -2410,14 +2419,14 @@ msgctxt ""
 msgid "<bookmark_value>sheet references</bookmark_value>      <bookmark_value>references; to cells in other sheets/documents</bookmark_value>      <bookmark_value>cells; operating in another document</bookmark_value>      <bookmark_value>documents;references</bookmark_value>"
 msgstr ""
 
-#. CEHES
+#. a5WVc
 #: cellreferences.xhp
 msgctxt ""
 "cellreferences.xhp\n"
 "hd_id3147436\n"
 "help.text"
-msgid "<variable id=\"cellreferences\"><link href=\"text/scalc/guide/cellreferences.xhp\" name=\"Referencing Other Sheets\">Referencing Other Sheets</link></variable>"
-msgstr "<variable id=\"cellreferences\"><link href=\"text/scalc/guide/cellreferences.xhp\" name=\"ཡིག་ཚགས་གཞན་དག་གི་དྲ་མིག་འདྲེན་སྤྱོད།\">ཡིག་ཚགས་གཞན་དག་གི་དྲ་མིག་འདྲེན་སྤྱོད།</link></variable>"
+msgid "<variable id=\"cellreferences\"><link href=\"text/scalc/guide/cellreferences.xhp\">Referencing Other Sheets</link></variable>"
+msgstr "<variable id=\"cellreferences\"><link href=\"text/scalc/guide/cellreferences.xhp\">ཡིག་ཚགས་གཞན་དག་གི་དྲ་མིག་འདྲེན་སྤྱོད།</link></variable>"
 
 #. S3C6m
 #: cellreferences.xhp
@@ -2581,13 +2590,13 @@ msgctxt ""
 msgid "If you drag the box in the lower right corner of the active cell to select a range of cells, $[officename] automatically inserts the corresponding references in the adjacent cells. As a result, the sheet name is preceded with a \"$\" sign to designate it as an <link href=\"text/scalc/guide/relativ_absolut_ref.xhp\">absolute reference</link>."
 msgstr ""
 
-#. hrgGP
+#. hmeJR
 #: cellreferences.xhp
 msgctxt ""
 "cellreferences.xhp\n"
 "par_id674459\n"
 "help.text"
-msgid "If you examine the name of the other document in this formula, you will notice that it is written as a <link href=\"text/shared/00/00000002.xhp#url\" name=\"URL\">URL</link>. This means that you can also enter a URL from the Internet."
+msgid "If you examine the name of the other document in this formula, you will notice that it is written as a <link href=\"text/shared/00/00000002.xhp#url\">URL</link>. This means that you can also enter a URL from the Internet."
 msgstr ""
 
 #. ABuMQ
@@ -2608,14 +2617,14 @@ msgctxt ""
 msgid "<bookmark_value>HTML; in sheet cells</bookmark_value><bookmark_value>references; URL in cells</bookmark_value><bookmark_value>cells; Internet references</bookmark_value><bookmark_value>URL; in Calc</bookmark_value>"
 msgstr "<bookmark_value>ལས་ཁྲ་འདྲེན་སྤྱོད། ལས་ཁྲ་གཞན་དག</bookmark_value><bookmark_value>HTML; ལས་ཁྲ་རེའུ་མིག་ནང་།</bookmark_value><bookmark_value>འདྲེན་སྤྱོད། དྲ་མིག་ནང་། URL</bookmark_value><bookmark_value>དྲ་མིག Internet འདྲེན་སྤྱོད།</bookmark_value><bookmark_value>URL; ལས་ཁྲའི་ནང་།</bookmark_value>"
 
-#. uWXco
+#. M5F2f
 #: cellreferences_url.xhp
 msgctxt ""
 "cellreferences_url.xhp\n"
 "hd_id3150441\n"
 "help.text"
-msgid "<variable id=\"cellreferences_url\"><link href=\"text/scalc/guide/cellreferences_url.xhp\" name=\"Referencing URLs\">Referencing URLs</link></variable>"
-msgstr "<variable id=\"cellreferences_url\"><link href=\"text/scalc/guide/cellreferences_url.xhp\" name=\"ལས་ཁྲ་གཞན་དག་དང་ URLའདྲེན་སྤྱོད་བྱེད།\">ལས་ཁྲ་གཞན་དག་དང་ URLའདྲེན་སྤྱོད་བྱེད།</link></variable>"
+msgid "<variable id=\"cellreferences_url\"><link href=\"text/scalc/guide/cellreferences_url.xhp\">Referencing URLs</link></variable>"
+msgstr "<variable id=\"cellreferences_url\"><link href=\"text/scalc/guide/cellreferences_url.xhp\">ལས་ཁྲ་གཞན་དག་དང་ URLའདྲེན་སྤྱོད་བྱེད།</link></variable>"
 
 #. VHDGU
 #: cellreferences_url.xhp
@@ -2635,13 +2644,13 @@ msgctxt ""
 msgid "In a $[officename] Calc document, position the cursor in the cell into which you want to insert the external data."
 msgstr "འོད་རྟགས་དེ་$[officename] ལས་ཁྲའི་ནང་ཕྱི་རོལ་བསྒར་འཛུད་གཞི་གྲངས་སྤྲོད་པའི་དྲ་མིག་ས་ཁོངས་ཀྱི་འགོ་འཛུགས་གནས་སར་འཇོག་དགོས།"
 
-#. 5JKBf
+#. CcnFw
 #: cellreferences_url.xhp
 msgctxt ""
 "cellreferences_url.xhp\n"
 "par_id3145384\n"
 "help.text"
-msgid "Choose <item type=\"menuitem\">Sheet - External Links</item>. The <link href=\"text/scalc/01/04090000.xhp\" name=\"External Data\"><item type=\"menuitem\">External Data</item></link> dialog appears."
+msgid "Choose <item type=\"menuitem\">Sheet - External Links</item>. The <link href=\"text/scalc/01/04090000.xhp\"><item type=\"menuitem\">External Data</item></link> dialog appears."
 msgstr ""
 
 #. EQzxX
@@ -2689,13 +2698,13 @@ msgctxt ""
 msgid "Save your spreadsheet. When you open it again later, $[officename] Calc will update the linked cells following an inquiry."
 msgstr "ལས་དེབ་འདི་ཉར་ཚགས་བྱེད།  རྗེས་སུ་ལས་དེབ་དེ་ཁ་ཕྱེ་བའི་སྐབས་$[officename] གློག་རྡུལ་རེའུ་མིག་བྱ་རིམ་གྱིས་བརྩད་འདྲི་ངོས་བཟུང་བྱས་རྗེས་དབྱིན་ཐ་དྲ་བའི་ནང་ནས་ནང་དོན་གསར་ཤོས་ལེན་པར་བྱས་ཏེ་ཐག་སྦྲེལ་དྲ་མིག་གི་ནང་དོན་གསར་བཅོས་བྱེད།"
 
-#. qJWx2
+#. tapEk
 #: cellreferences_url.xhp
 msgctxt ""
 "cellreferences_url.xhp\n"
 "par_id3159204\n"
 "help.text"
-msgid "Under <switchinline select=\"sys\"><caseinline select=\"MAC\">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline> - <link href=\"text/shared/optionen/01040900.xhp\" name=\"Spreadsheet - General\"><item type=\"menuitem\">%PRODUCTNAME Calc - General</item></link> you can choose to have the update, when opened, automatically carried out either always, upon request or never. The update can be started manually in the dialog under <item type=\"menuitem\">Edit - Links</item>."
+msgid "Under <switchinline select=\"sys\"><caseinline select=\"MAC\">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline> - <link href=\"text/shared/optionen/01040900.xhp\"><item type=\"menuitem\">%PRODUCTNAME Calc - General</item></link> you can choose to have the update, when opened, automatically carried out either always, upon request or never. The update can be started manually in the dialog under <item type=\"menuitem\">Edit - Links</item>."
 msgstr ""
 
 #. 4DFzJ
@@ -2716,14 +2725,14 @@ msgctxt ""
 msgid "<bookmark_value>formats; assigning by formulas</bookmark_value>  <bookmark_value>cell formats; assigning by formulas</bookmark_value>  <bookmark_value>STYLE function example</bookmark_value>  <bookmark_value>cell styles;assigning by formulas</bookmark_value>  <bookmark_value>formulas;assigning cell formats</bookmark_value>"
 msgstr "<bookmark_value>རྣམ་གཞག  སྤྱི་འགྲོས་ཀྱི་གཏན་འཁེལ་བྱེད།</bookmark_value><bookmark_value>དྲ་མིག་རྣམ་གཞག  སྤྱི་འགྲོས་ཀྱི་གཏན་འཁེལ་བྱེད།</bookmark_value><bookmark_value>STYLE རྟེན་གྲངས་དཔེ་གཞི།</bookmark_value>"
 
-#. USRGE
+#. x3HG2
 #: cellstyle_by_formula.xhp
 msgctxt ""
 "cellstyle_by_formula.xhp\n"
 "hd_id3145673\n"
 "help.text"
-msgid "<variable id=\"cellstyle_by_formula\"><link href=\"text/scalc/guide/cellstyle_by_formula.xhp\" name=\"Assigning Formats by Formula\">Assigning Formats by Formula</link></variable>"
-msgstr "<variable id=\"cellstyle_by_formula\"><link href=\"text/scalc/guide/cellstyle_by_formula.xhp\" name=\"སྤྱི་འགྲོས་ལ་གཞིགས་ནས་གཏན་འཁེལ་བྱས་པའི་རྣམ་གཞག\">སྤྱི་འགྲོས་ལ་གཞིགས་ནས་གཏན་འཁེལ་བྱས་པའི་རྣམ་གཞག</link></variable>"
+msgid "<variable id=\"cellstyle_by_formula\"><link href=\"text/scalc/guide/cellstyle_by_formula.xhp\">Assigning Formats by Formula</link></variable>"
+msgstr "<variable id=\"cellstyle_by_formula\"><link href=\"text/scalc/guide/cellstyle_by_formula.xhp\">སྤྱི་འགྲོས་ལ་གཞིགས་ནས་གཏན་འཁེལ་བྱས་པའི་རྣམ་གཞག</link></variable>"
 
 #. EzSnh
 #: cellstyle_by_formula.xhp
@@ -2797,14 +2806,14 @@ msgctxt ""
 msgid "The \"&\" symbol designates the current contents of the <emph>Find</emph> field. The line must begin with an equal sign, since it is a formula. It is assumed that the cell styles \"Red\" and \"Green\" already exist."
 msgstr ""
 
-#. 4AgNk
+#. iF62Y
 #: cellstyle_by_formula.xhp
 msgctxt ""
 "cellstyle_by_formula.xhp\n"
 "par_id3149262\n"
 "help.text"
-msgid "Mark the fields <link href=\"text/shared/01/02100000.xhp\" name=\"Regular expressions\"><emph>Regular expressions</emph></link> and <emph>Current selection only</emph>. Click <emph>Find All</emph>."
-msgstr "<link href=\"text/shared/01/02100000.xhp\" name=\"ཚད་མཐུན་མཚོན་པའི་ཚུལ།\"><emph>ཚད་མཐུན་མཚོན་པའི་ཚུལ།</emph></link>དང་<emph>མིག་སྔའི་བདམས་པའི་ས་ཁོངས་འབའ་ཞིག་ལ་གནས།</emph>ཡིག་དུམ་བདམས་པ།  <emph>ཡོངས་རྫོགས་བཤེར་འཚོལ།</emph>ལ་རྐྱང་རྡེབ་བྱ།"
+msgid "Mark the fields <link href=\"text/shared/01/02100000.xhp\"><emph>Regular expressions</emph></link> and <emph>Current selection only</emph>. Click <emph>Find All</emph>."
+msgstr "<link href=\"text/shared/01/02100000.xhp\"><emph>ཚད་མཐུན་མཚོན་པའི་ཚུལ།</emph></link>དང་<emph>མིག་སྔའི་བདམས་པའི་ས་ཁོངས་འབའ་ཞིག་ལ་གནས།</emph>ཡིག་དུམ་བདམས་པ།  <emph>ཡོངས་རྫོགས་བཤེར་འཚོལ།</emph>ལ་རྐྱང་རྡེབ་བྱ།"
 
 #. A3CBV
 #: cellstyle_by_formula.xhp
@@ -2842,14 +2851,14 @@ msgctxt ""
 msgid "<bookmark_value>conditional formatting; cells</bookmark_value>      <bookmark_value>cells; conditional formatting</bookmark_value>      <bookmark_value>formatting; conditional formatting</bookmark_value>      <bookmark_value>styles;conditional styles</bookmark_value>      <bookmark_value>cell formats; conditional</bookmark_value>      <bookmark_value>random numbers;examples</bookmark_value>      <bookmark_value>cell styles; copying</bookmark_value>      <bookmark_value>copying; cell styles</bookmark_value>      <bookmark_value>tables; copying cell styles</bookmark_value>"
 msgstr "<bookmark_value>ཆ་རྐྱེན་རྣམ་གཞག  དྲ་མིག</bookmark_value><bookmark_value> དྲ་མིག  ཆ་རྐྱེན་རྣམ་གཞག</bookmark_value><bookmark_value>རྣམ་གཞག ཆ་རྐྱེན་རྣམ་གཞག</bookmark_value><bookmark_value>བཟོ་ལྟ།  ཆ་རྐྱེན་ཡོད་པའི་བཟོ་ལྟ།</bookmark_value><bookmark_value>རྣམ་གཞག ཆ་རྐྱེན་ཡོད་པ།</bookmark_value><bookmark_value>དྲ་མིག་རྣམ་གཞག ཆ་རྐྱེན་ཡོད་པ།</bookmark_value><bookmark_value>སྐབས་བསྟུན་གྲངས། སྐྱེ་གྲུབ།</bookmark_value><bookmark_value> དྲ་མིག་བཟོ་ལྟ། འདྲ་ཕབ།</bookmark_value><bookmark_value>འདྲ་ཕབ།  དྲ་མིག་བཟོ་ལྟ།</bookmark_value><bookmark_value>འདྲ་ཕབ། དྲ་མིག་བཟོ་ལྟ་འདྲ་ཕབ། </bookmark_value>"
 
-#. 4jA2B
+#. WX8sY
 #: cellstyle_conditional.xhp
 msgctxt ""
 "cellstyle_conditional.xhp\n"
 "hd_id3149263\n"
 "help.text"
-msgid "<variable id=\"cellstyle_conditional\"><link href=\"text/scalc/guide/cellstyle_conditional.xhp\" name=\"Applying Conditional Formatting\">Applying Conditional Formatting</link></variable>"
-msgstr "<variable id=\"cellstyle_conditional\"><link href=\"text/scalc/guide/cellstyle_conditional.xhp\" name=\"ཉེར་སྤྱོད་ཆ་རྐྱེན་རྣམ་གཞག\">ཉེར་སྤྱོད་ཆ་རྐྱེན་རྣམ་གཞག</link></variable>"
+msgid "<variable id=\"cellstyle_conditional\"><link href=\"text/scalc/guide/cellstyle_conditional.xhp\">Applying Conditional Formatting</link></variable>"
+msgstr "<variable id=\"cellstyle_conditional\"><link href=\"text/scalc/guide/cellstyle_conditional.xhp\">ཉེར་སྤྱོད་ཆ་རྐྱེན་རྣམ་གཞག</link></variable>"
 
 #. 3Feon
 #: cellstyle_conditional.xhp
@@ -2905,14 +2914,14 @@ msgctxt ""
 msgid "Choose <emph>Format - Conditional - Condition</emph>."
 msgstr ""
 
-#. nFqJG
+#. AnNxD
 #: cellstyle_conditional.xhp
 msgctxt ""
 "cellstyle_conditional.xhp\n"
 "par_id3146969\n"
 "help.text"
-msgid "Enter the condition(s) into the dialog box. The dialog is described in detail in <link href=\"text/scalc/01/05120000.xhp\" name=\"$[officename] Help\">$[officename] Help</link>, and an example is provided below:"
-msgstr "གླེང་སྒྲོམ་ནང་ཆ་རྐྱེན་ནང་འཇུག་བྱ།  གླེང་སྒྲོམ་དེ་ <link href=\"text/scalc/01/05120000.xhp\" name=\"$[officename] རོགས་རམ།\">$[officename] རོགས་རམ།</link>ནང་ཞིབ་པར་གསལ་བཤད་བྱས་ཡོད་  གཤམ་གསལ་ནི་དཔེ་གཞི་ཞིག་ཡིན།"
+msgid "Enter the condition(s) into the dialog box. The dialog is described in detail in <link href=\"text/scalc/01/05120000.xhp\">$[officename] Help</link>, and an example is provided below:"
+msgstr "གླེང་སྒྲོམ་ནང་ཆ་རྐྱེན་ནང་འཇུག་བྱ།  གླེང་སྒྲོམ་དེ་ <link href=\"text/scalc/01/05120000.xhp\">$[officename] རོགས་རམ།</link>ནང་ཞིབ་པར་གསལ་བཤད་བྱས་ཡོད་  གཤམ་གསལ་ནི་དཔེ་གཞི་ཞིག་ཡིན།"
 
 #. xDZ66
 #: cellstyle_conditional.xhp
@@ -3058,13 +3067,13 @@ msgctxt ""
 msgid "Set the cursor in a blank cell, for example, J14, and choose <emph>Insert - Function</emph>."
 msgstr "དྲ་མིག་སྟོང་པ་ཞིག་(དཔེར་ན་ J14)ནང་འོད་རྟགས་གནས་ངེས་བྱ་  དེ་རྗེས་<emph>བསྒར་འཛུད་ - རྟེན་གྲངས་</emph>འདེམས་དགོས།"
 
-#. DGtFG
+#. xCigs
 #: cellstyle_conditional.xhp
 msgctxt ""
 "cellstyle_conditional.xhp\n"
 "par_id3156016\n"
 "help.text"
-msgid "Select the AVERAGE function. Use the mouse to select all your random numbers. If you cannot see the entire range, because the Function Wizard is obscuring it, you can temporarily shrink the dialog using the <link href=\"text/shared/00/00000001.xhp#shrink_maximize\" name=\"Shrink or Maximize\"><item type=\"menuitem\">Shrink</item></link> icon."
+msgid "Select the AVERAGE function. Use the mouse to select all your random numbers. If you cannot see the entire range, because the Function Wizard is obscuring it, you can temporarily shrink the dialog using the <link href=\"text/shared/00/00000001.xhp#shrink_maximize\"><item type=\"menuitem\">Shrink</item></link> icon."
 msgstr ""
 
 #. YEqsh
@@ -3184,13 +3193,13 @@ msgctxt ""
 msgid "In the <emph>Paste</emph> area, check only the <emph>Formats</emph> box. All other boxes must be unchecked. Click <emph>OK</emph>. Or you can click the <emph>Formats only</emph> button instead."
 msgstr ""
 
-#. YMDKA
+#. rcKCW
 #: cellstyle_conditional.xhp
 msgctxt ""
 "cellstyle_conditional.xhp\n"
 "par_id3159123\n"
 "help.text"
-msgid "<link href=\"text/scalc/01/05120000.xhp\" name=\"Format - Conditional formatting\">Format - Conditional - Condition</link>"
+msgid "<link href=\"text/scalc/01/05120000.xhp\">Format - Conditional - Condition</link>"
 msgstr ""
 
 #. HFoKB
@@ -3211,14 +3220,14 @@ msgctxt ""
 msgid "<bookmark_value>negative numbers</bookmark_value>      <bookmark_value>numbers; highlighting negative numbers</bookmark_value>      <bookmark_value>highlighting;negative numbers</bookmark_value>      <bookmark_value>colors;negative numbers</bookmark_value>      <bookmark_value>number formats;colors for negative numbers</bookmark_value>"
 msgstr "<bookmark_value>མོ་གྲངས་; འབུར་དུ་མངོན་པ་</bookmark_value><bookmark_value>གྲངས་ཀ།   འབུར་དུ་མངོན་པའི་་མོ་གྲངས།</bookmark_value><bookmark_value>འབུར་དུ་མངོན་པ།  མོ་གྲངས།</bookmark_value>"
 
-#. XwR9x
+#. eGjJD
 #: cellstyle_minusvalue.xhp
 msgctxt ""
 "cellstyle_minusvalue.xhp\n"
 "hd_id3147434\n"
 "help.text"
-msgid "<variable id=\"cellstyle_minusvalue\"><link href=\"text/scalc/guide/cellstyle_minusvalue.xhp\" name=\"Highlighting Negative Numbers\">Highlighting Negative Numbers</link></variable>"
-msgstr "<variable id=\"cellstyle_minusvalue\"><link href=\"text/scalc/guide/cellstyle_minusvalue.xhp\" name=\"འབུར་དུ་མངོན་པའི་མོ་གྲངས།\">འབུར་དུ་མངོན་པའི་མོ་གྲངས།</link></variable>"
+msgid "<variable id=\"cellstyle_minusvalue\"><link href=\"text/scalc/guide/cellstyle_minusvalue.xhp\">Highlighting Negative Numbers</link></variable>"
+msgstr "<variable id=\"cellstyle_minusvalue\"><link href=\"text/scalc/guide/cellstyle_minusvalue.xhp\">འབུར་དུ་མངོན་པའི་མོ་གྲངས།</link></variable>"
 
 #. YGxpk
 #: cellstyle_minusvalue.xhp
@@ -3274,13 +3283,13 @@ msgctxt ""
 msgid "<bookmark_value>anchor;image</bookmark_value><bookmark_value>image anchor;in Calc</bookmark_value><bookmark_value>image anchor in Calc;changing</bookmark_value>"
 msgstr ""
 
-#. t3pgZ
+#. x5Kg7
 #: change_image_anchor.xhp
 msgctxt ""
 "change_image_anchor.xhp\n"
 "par_id851607971999527\n"
 "help.text"
-msgid "<variable id=\"anchor_image\"><link href=\"text/scalc/guide/change_image_anchor.xhp\" name=\"Changing Anchor of Image\">Changing the Anchor of an Image</link>  </variable>"
+msgid "<variable id=\"anchor_image\"><link href=\"text/scalc/guide/change_image_anchor.xhp\">Changing the Anchor of an Image</link>  </variable>"
 msgstr ""
 
 #. BoMUp
@@ -3373,14 +3382,14 @@ msgctxt ""
 msgid "<bookmark_value>consolidating data</bookmark_value>      <bookmark_value>ranges; combining</bookmark_value>      <bookmark_value>combining;cell ranges</bookmark_value>      <bookmark_value>tables; combining</bookmark_value>      <bookmark_value>data; merging cell ranges</bookmark_value>      <bookmark_value>merging;data ranges</bookmark_value>"
 msgstr "<bookmark_value>ཐང་། ཟླ་སྒྲིལ།</bookmark_value><bookmark_value>གཞི་གྲངས།  ཟླ་སྒྲིལ།</bookmark_value><bookmark_value>གཞི་གྲངས་ཟླ་སྒྲིལ།</bookmark_value><bookmark_value>ཁྱབ་ཁོངས།  ཚོ་སྒྲིག</bookmark_value><bookmark_value> དྲ་མིག་ཁྱབ་ཁོངས་ཚོ་སྒྲིག</bookmark_value><bookmark_value>རེའུ་མིག  ཚོ་སྒྲིག</bookmark_value><bookmark_value>གཞི་གྲངས།  ཟླ་སྒྲིལ་ཁྱབ་ཁོངས།</bookmark_value><bookmark_value>ཁྱབ་ཁོངས།  གཞི་གྲངས་ཟླ་སྒྲིལ།</bookmark_value>"
 
-#. aUBxc
+#. 6ZGGL
 #: consolidate.xhp
 msgctxt ""
 "consolidate.xhp\n"
 "hd_id3150791\n"
 "help.text"
-msgid "<variable id=\"consolidate\"><link href=\"text/scalc/guide/consolidate.xhp\" name=\"Consolidating Data\">Consolidating Data</link></variable>"
-msgstr "<variable id=\"consolidate\"><link href=\"text/scalc/guide/consolidate.xhp\" name=\"རྩིས་རྒྱག་གཞི་གྲངས་ཟླ་སྒྲིལ།\">རྩིས་རྒྱག་གཞི་གྲངས་ཟླ་སྒྲིལ།</link></variable>"
+msgid "<variable id=\"consolidate\"><link href=\"text/scalc/guide/consolidate.xhp\">Consolidating Data</link></variable>"
+msgstr "<variable id=\"consolidate\"><link href=\"text/scalc/guide/consolidate.xhp\">རྩིས་རྒྱག་གཞི་གྲངས་ཟླ་སྒྲིལ།</link></variable>"
 
 #. dcJqU
 #: consolidate.xhp
@@ -3562,14 +3571,14 @@ msgctxt ""
 msgid "The data from the consolidation ranges and target range will be saved when you save the document. If you later open a document in which consolidation has been defined, this data will again be available."
 msgstr "རྩིས་རྒྱག་ས་ཁོངས་དང་དམིགས་འབེན་ས་ཁོངས་ཟླ་སྒྲིལ་བའི་གཞི་གྲངས་ནི་ཉེར་སྡེར་བྱ་སྐབས་དུས་མཉམ་དུ་ཉར་ཚགས་བྱེད།  གལ་ཏེ་ཁྱེད་ཀྱི་རྗེས་སུ་ཡང་བསྐྱར་དེའི་ནང་ཟླ་སྒྲིལ་རྩིས་རྒྱག་མཚན་འཇོག་བྱས་པའི་ཡིག་ཚགས་ཁ་ཕྱེ་ན་གཞི་གྲངས་དེ་དག་བེད་སྤྱོད་ལ་མཁོ་སྤྲོད་བྱེད།"
 
-#. GGFhA
+#. BzNqC
 #: consolidate.xhp
 msgctxt ""
 "consolidate.xhp\n"
 "par_id3153039\n"
 "help.text"
-msgid "<link href=\"text/scalc/01/12070000.xhp\" name=\"Data - Consolidate\">Data - Consolidate</link>"
-msgstr "<link href=\"text/scalc/01/12070000.xhp\" name=\"རྩིས་རྒྱག་ཟླ་སྒྲིལ།\">རྩིས་རྒྱག་ཟླ་སྒྲིལ།</link>"
+msgid "<link href=\"text/scalc/01/12070000.xhp\">Data - Consolidate</link>"
+msgstr "<link href=\"text/scalc/01/12070000.xhp\">རྩིས་རྒྱག་ཟླ་སྒྲིལ།</link>"
 
 #. UNSjU
 #: csv_files.xhp
@@ -3832,32 +3841,32 @@ msgctxt ""
 msgid "Click <item type=\"menuitem\">Save</item>."
 msgstr "<item type=\"menuitem\">གཞི་གྲངས་ - རིམ་སྒྲིག་</item>འདེམས་པ།"
 
-#. U6QRD
+#. hDd2A
 #: csv_files.xhp
 msgctxt ""
 "csv_files.xhp\n"
 "par_id3153487\n"
 "help.text"
-msgid "<switchinline select=\"sys\"><caseinline select=\"MAC\">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline> - <link href=\"text/shared/optionen/01060100.xhp\" name=\"Spreadsheet - View\">%PRODUCTNAME Calc - View</link>"
+msgid "<switchinline select=\"sys\"><caseinline select=\"MAC\">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline> - <link href=\"text/shared/optionen/01060100.xhp\">%PRODUCTNAME Calc - View</link>"
 msgstr ""
 
-#. W3bT3
+#. Dir44
 #: csv_files.xhp
 msgctxt ""
 "csv_files.xhp\n"
 "par_id3153008\n"
 "help.text"
-msgid "<link href=\"text/shared/00/00000207.xhp\" name=\"Export text files\">Export text files</link>"
-msgstr "<link href=\"text/shared/00/00000207.xhp\" name=\"ཡིག་དེབ་འདྲེན་བཏོན།\">ཡིག་དེབ་འདྲེན་བཏོན།</link>"
+msgid "<link href=\"text/shared/00/00000207.xhp\">Export text files</link>"
+msgstr "<link href=\"text/shared/00/00000207.xhp\">ཡིག་དེབ་འདྲེན་བཏོན།</link>"
 
-#. jADCM
+#. GANDZ
 #: csv_files.xhp
 msgctxt ""
 "csv_files.xhp\n"
 "par_id3155595\n"
 "help.text"
-msgid "<link href=\"text/shared/00/00000208.xhp\" name=\"Import text files\">Import text files</link>"
-msgstr "<link href=\"text/shared/00/00000208.xhp\" name=\"ཡིག་དེབ་འདྲེན་འཇུག\">ཡིག་དེབ་འདྲེན་འཇུག</link>"
+msgid "<link href=\"text/shared/00/00000208.xhp\">Import text files</link>"
+msgstr "<link href=\"text/shared/00/00000208.xhp\">ཡིག་དེབ་འདྲེན་འཇུག</link>"
 
 #. ounFQ
 #: csv_formula.xhp
@@ -3877,14 +3886,14 @@ msgctxt ""
 msgid "<bookmark_value>csv files;formulas</bookmark_value>      <bookmark_value>formulas; importing/exporting as csv files</bookmark_value>      <bookmark_value>exporting;formulas as csv files</bookmark_value>      <bookmark_value>importing;csv files with formulas</bookmark_value>"
 msgstr "<bookmark_value>csv ཡིག་ཆ།  གློག་རྡུལ་རེའུ་མིག</bookmark_value><bookmark_value>སྤྱི་འགྲོས།  གཞན་ཉར་ csv ཡིག་ཆ།</bookmark_value><bookmark_value>འདྲེན་བཏོན།  རེའུ་མིག་ཡིག་དེབ་ལ་བརྩིས་ནས།</bookmark_value><bookmark_value>འདྲེན་འཇུག  རེའུ་མིག་ཡིག་དེབ་ལ་བརྩིས་ནས།</bookmark_value><bookmark_value>རེའུ་མིག  ཡིག་དེབ་ལ་འདྲེན་བཏོན་བྱེད།</bookmark_value><bookmark_value>རེའུ་མིག  ཡིག་དེབ་ལ་འདྲེན་འཇུག་བྱེད།</bookmark_value><bookmark_value>ཡིག་དེབ།  གློག་རྡུལ་རེའུ་མིག་ལ་འདྲེན་འཇུག་བྱས།</bookmark_value>"
 
-#. DfYsZ
+#. HJThG
 #: csv_formula.xhp
 msgctxt ""
 "csv_formula.xhp\n"
 "hd_id3153726\n"
 "help.text"
-msgid "<variable id=\"csv_formula\"><link href=\"text/scalc/guide/csv_formula.xhp\" name=\"Importing and Exporting Text Files\">Importing and Exporting CSV Text Files with Formulas</link></variable>"
-msgstr "<variable id=\"csv_formula\"><link href=\"text/scalc/guide/csv_formula.xhp\" name=\"ཡིག་དེབ་ཡིག་ཆ་འདྲེན་འཇུག་དང་འདྲེན་བཏོན།\">ཡིག་དེབ་ཡིག་ཆ་འདྲེན་འཇུག་དང་འདྲེན་བཏོན།</link></variable>"
+msgid "<variable id=\"csv_formula\"><link href=\"text/scalc/guide/csv_formula.xhp\">Importing and Exporting CSV Text Files with Formulas</link></variable>"
+msgstr "<variable id=\"csv_formula\"><link href=\"text/scalc/guide/csv_formula.xhp\">ཡིག་དེབ་ཡིག་ཆ་འདྲེན་འཇུག་དང་འདྲེན་བཏོན།</link></variable>"
 
 #. 7kmDr
 #: csv_formula.xhp
@@ -4039,32 +4048,32 @@ msgctxt ""
 msgid "If necessary, after you have saved, clear the <emph>Formulas</emph> check box to see the calculated results in the table again."
 msgstr "ཁྱེད་ཀྱིས་ཉར་ཚགས་བྱས་རྗེས་བསྐྱར་དུ་བདམས་པའི་<emph>སྤྱི་འགྲོས་</emph>བསྐྱར་འདེམས་སྒྲོམ་རྩིས་མེད་བྱ་ཐུབ་  དེ་ལྟར་ཡང་བསྐྱར་ལས་ཁྲའི་ནང་རྩིས་རྒྱག་འབྲས་བུ་མཐོང་ཐུབ་པ་ཆག་ཐུབ།"
 
-#. D9voD
+#. LejdP
 #: csv_formula.xhp
 msgctxt ""
 "csv_formula.xhp\n"
 "par_id3153487\n"
 "help.text"
-msgid "<switchinline select=\"sys\"><caseinline select=\"MAC\">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline> - <link href=\"text/shared/optionen/01060100.xhp\" name=\"Spreadsheet - View\">%PRODUCTNAME Calc - View</link>"
+msgid "<switchinline select=\"sys\"><caseinline select=\"MAC\">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline> - <link href=\"text/shared/optionen/01060100.xhp\">%PRODUCTNAME Calc - View</link>"
 msgstr ""
 
-#. iGg7e
+#. GgLZh
 #: csv_formula.xhp
 msgctxt ""
 "csv_formula.xhp\n"
 "par_id3153008\n"
 "help.text"
-msgid "<link href=\"text/shared/00/00000207.xhp\" name=\"Export text files\">Export text files</link>"
-msgstr "<link href=\"text/shared/00/00000207.xhp\" name=\"ཡིག་དེབ་འདྲེན་བཏོན།\">ཡིག་དེབ་འདྲེན་བཏོན།</link>"
+msgid "<link href=\"text/shared/00/00000207.xhp\">Export text files</link>"
+msgstr "<link href=\"text/shared/00/00000207.xhp\">ཡིག་དེབ་འདྲེན་བཏོན།</link>"
 
-#. X5Eoo
+#. DHxaC
 #: csv_formula.xhp
 msgctxt ""
 "csv_formula.xhp\n"
 "par_id3155595\n"
 "help.text"
-msgid "<link href=\"text/shared/00/00000208.xhp\" name=\"Import text files\">Import text files</link>"
-msgstr "<link href=\"text/shared/00/00000208.xhp\" name=\"ཡིག་དེབ་འདྲེན་འཇུག\">ཡིག་དེབ་འདྲེན་འཇུག</link>"
+msgid "<link href=\"text/shared/00/00000208.xhp\">Import text files</link>"
+msgstr "<link href=\"text/shared/00/00000208.xhp\">ཡིག་དེབ་འདྲེན་འཇུག</link>"
 
 #. s2isa
 #: currency_format.xhp
@@ -4084,14 +4093,14 @@ msgctxt ""
 msgid "<bookmark_value>currency formats; spreadsheets</bookmark_value><bookmark_value>cells; currency formats</bookmark_value><bookmark_value>international currency formats</bookmark_value><bookmark_value>formats; currency formats in cells</bookmark_value><bookmark_value>currencies; default currencies</bookmark_value><bookmark_value>defaults;currency formats</bookmark_value><bookmark_value>changing;currency formats</bookmark_value>"
 msgstr "<bookmark_value>དངུལ་ལོར་རྣམ་གཞག གློག་རྡུལ་རེའུ་མིག</bookmark_value><bookmark_value>དྲ་མིག དངུལ་ལོར་རྣམ་གཞག</bookmark_value><bookmark_value>རྒྱལ་སྤྱིའི་དངུལ་ལོར་རྣམ་གཞག</bookmark_value><bookmark_value>རྣམ་གཞག  དྲ་མིག་མང་གི་དངུལ་ལོར་རྣམ་གཞག</bookmark_value><bookmark_value>དངུལ་ལོར།  ཁས་ལེན་དངུལ་ལོར།</bookmark_value><bookmark_value>ཁས་ལེན་དངུལ་ལོར།  ས་ཁོངས་བཀོད་སྒྲིག</bookmark_value>"
 
-#. GUpzE
+#. Dwibg
 #: currency_format.xhp
 msgctxt ""
 "currency_format.xhp\n"
 "hd_id3156329\n"
 "help.text"
-msgid "<variable id=\"currency_format\"><link href=\"text/scalc/guide/currency_format.xhp\" name=\"Cells in Currency Format\">Cells in Currency Format</link></variable>"
-msgstr "<variable id=\"currency_format\"><link href=\"text/scalc/guide/currency_format.xhp\" name=\"དངུལ་ལོར་རྣམ་གཞག་གྱི་དྲ་མིག་སྤྱོད་པ།\">དངུལ་ལོར་རྣམ་གཞག་གྱི་དྲ་མིག་སྤྱོད་པ།</link></variable>"
+msgid "<variable id=\"currency_format\"><link href=\"text/scalc/guide/currency_format.xhp\">Cells in Currency Format</link></variable>"
+msgstr "<variable id=\"currency_format\"><link href=\"text/scalc/guide/currency_format.xhp\">དངུལ་ལོར་རྣམ་གཞག་གྱི་དྲ་མིག་སྤྱོད་པ།</link></variable>"
 
 #. Tq9vD
 #: currency_format.xhp
@@ -4147,14 +4156,14 @@ msgctxt ""
 msgid "If, under <item type=\"menuitem\">Language</item>, you convert the cells to \"English (US)\", the English-language locale setting is also transferred and the default currency format is now \"$ 1,234.00\"."
 msgstr "གལ་ཏེ་<emph>སྐད་བརྡ་</emph>འོག་དྲ་མིག་དེ་\"དབྱིན་ཡིག་ (ཨ་རི་)\"ལ་བརྗེ་བསྒྱུར་བྱས་  དབྱིན་ཡིག་སྐད་བརྡའི་འཁོར་ཡུག་ཀྱང་དེར་བསྟུན་ནས་བརྗེ་བསྒྱུར་བྱེད་  ཁས་ལེན་གྱི་དངུལ་ལོར་རྣམ་གཞག་\"$ 1,234.00\"ལ་འགྱུར།"
 
-#. CzbsK
+#. sHgcT
 #: currency_format.xhp
 msgctxt ""
 "currency_format.xhp\n"
 "par_id3154255\n"
 "help.text"
-msgid "<link href=\"text/shared/01/05020300.xhp\" name=\"Format - Cells - Numbers\">Format - Cells - Numbers</link>"
-msgstr "<link href=\"text/shared/01/05020300.xhp\" name=\"རྣམ་གཞག་ -  དྲ་མིག་ - གྲངས་ཀ་\">རྣམ་གཞག་ -  དྲ་མིག་ - གྲངས་ཀ་</link>"
+msgid "<link href=\"text/shared/01/05020300.xhp\">Format - Cells - Numbers</link>"
+msgstr "<link href=\"text/shared/01/05020300.xhp\">རྣམ་གཞག་ -  དྲ་མིག་ - གྲངས་ཀ་</link>"
 
 #. QoTwd
 #: database_define.xhp
@@ -4174,14 +4183,14 @@ msgctxt ""
 msgid "<bookmark_value>tables; database ranges</bookmark_value>      <bookmark_value>database ranges; defining</bookmark_value>      <bookmark_value>ranges; defining database ranges</bookmark_value>      <bookmark_value>defining;database ranges</bookmark_value>"
 msgstr "<bookmark_value>རེའུ་མིག   གཞི་གྲངས་མཛོད་ས་ཁོངས།</bookmark_value><bookmark_value>གཞི་གྲངས་མཛོད་ས་ཁོངས།  མཚན་འཇོག</bookmark_value><bookmark_value>ས་ཁོངས།  གཞི་གྲངས་མཛོད་ས་ཁོངས་མཚན་འཇོག</bookmark_value><bookmark_value>མཚན་འཇོག གཞི་གྲངས་མཛོད་ས་ཁོངས།</bookmark_value>"
 
-#. bCxRx
+#. otSAA
 #: database_define.xhp
 msgctxt ""
 "database_define.xhp\n"
 "hd_id3154758\n"
 "help.text"
-msgid "<variable id=\"database_define\"><link href=\"text/scalc/guide/database_define.xhp\" name=\"Defining Database Ranges\">Defining a Database Range</link></variable>"
-msgstr "<variable id=\"database_define\"><link href=\"text/scalc/guide/database_define.xhp\" name=\"གཞི་གྲངས་མཛོད་ས་ཁོངས་མཚན་འཇོག\">གཞི་གྲངས་མཛོད་ས་ཁོངས་མཚན་འཇོག</link></variable>"
+msgid "<variable id=\"database_define\"><link href=\"text/scalc/guide/database_define.xhp\">Defining a Database Range</link></variable>"
+msgstr "<variable id=\"database_define\"><link href=\"text/scalc/guide/database_define.xhp\">གཞི་གྲངས་མཛོད་ས་ཁོངས་མཚན་འཇོག</link></variable>"
 
 #. 4BdV5
 #: database_define.xhp
@@ -4282,14 +4291,14 @@ msgctxt ""
 msgid "<bookmark_value>cell ranges;applying/removing filters</bookmark_value>      <bookmark_value>filtering;cell ranges/database ranges</bookmark_value>      <bookmark_value>database ranges;applying/removing filters</bookmark_value>      <bookmark_value>removing;cell range filters</bookmark_value>"
 msgstr "<bookmark_value>གཞི་གྲངས་མཛོད་ས་ཁོངས།  འཚག་འདེམས།</bookmark_value><bookmark_value>འཚག་འདེམས།  གཞི་གྲངས་མཛོད་ས་ཁོངས།</bookmark_value><bookmark_value>གཞི་གྲངས་མཛོད་ས་ཁོངས།  འཚག་འདེམས་ཆས་སུབ་པ།</bookmark_value>"
 
-#. geiwR
+#. 6eTRN
 #: database_filter.xhp
 msgctxt ""
 "database_filter.xhp\n"
 "hd_id3153541\n"
 "help.text"
-msgid "<variable id=\"database_filter\"><link href=\"text/scalc/guide/database_filter.xhp\" name=\"Filtering Cell Ranges\">Filtering Cell Ranges</link></variable>"
-msgstr "<variable id=\"database_filter\"><link href=\"text/scalc/guide/database_filter.xhp\" name=\"གཞི་གྲངས་མཛོད་ས་ཁོངས་འཚག་འདེམས།\">གཞི་གྲངས་མཛོད་ས་ཁོངས་འཚག་འདེམས།</link></variable>"
+msgid "<variable id=\"database_filter\"><link href=\"text/scalc/guide/database_filter.xhp\">Filtering Cell Ranges</link></variable>"
+msgstr "<variable id=\"database_filter\"><link href=\"text/scalc/guide/database_filter.xhp\">གཞི་གྲངས་མཛོད་ས་ཁོངས་འཚག་འདེམས།</link></variable>"
 
 #. 4znQt
 #: database_filter.xhp
@@ -4453,13 +4462,13 @@ msgctxt ""
 msgid "Choose <item type=\"menuitem\">Data - Filter - Reset Filter</item>."
 msgstr "<item type=\"menuitem\">གཞི་གྲངས་ - འཚག་འདེམས་ཆས་ - རང་འགུལ་འཚག་འདེམས་ཆས་</item>འདེམས་པ།"
 
-#. EFnz4
+#. oFj8U
 #: database_filter.xhp
 msgctxt ""
 "database_filter.xhp\n"
 "par_id4525284\n"
 "help.text"
-msgid "<link href=\"https://wiki.documentfoundation.org/Documentation/How_Tos/Defining_a_Data_Range\" name=\"wiki.documentfoundation.org Defining a Data Range\">Wiki page about defining a data range</link>"
+msgid "<link href=\"https://wiki.documentfoundation.org/Documentation/How_Tos/Defining_a_Data_Range\">Wiki page about defining a data range</link>"
 msgstr ""
 
 #. ueLu8
@@ -4480,14 +4489,14 @@ msgctxt ""
 msgid "<bookmark_value>database ranges; sorting</bookmark_value>      <bookmark_value>sorting; database ranges</bookmark_value>      <bookmark_value>data;sorting in databases</bookmark_value>"
 msgstr "<bookmark_value>གཞི་གྲངས་མཛོད་ས་ཁོངས།  རིམ་སྒྲིག</bookmark_value><bookmark_value>རིམ་སྒྲིག  གཞི་གྲངས་མཛོད་ས་ཁོངས།</bookmark_value>"
 
-#. P89iU
+#. bfmu3
 #: database_sort.xhp
 msgctxt ""
 "database_sort.xhp\n"
 "hd_id3150767\n"
 "help.text"
-msgid "<variable id=\"database_sort\"><link href=\"text/scalc/guide/database_sort.xhp\" name=\"Sorting Database Ranges\">Sorting Data</link></variable>"
-msgstr "<variable id=\"database_sort\"><link href=\"text/scalc/guide/database_sort.xhp\" name=\"གཞི་གྲངས་མཛོད་ས་ཁོངས་རིམ་སྒྲིག་བྱེད།\">གཞི་གྲངས་མཛོད་ས་ཁོངས་རིམ་སྒྲིག་བྱེད།</link></variable>"
+msgid "<variable id=\"database_sort\"><link href=\"text/scalc/guide/database_sort.xhp\">Sorting Data</link></variable>"
+msgstr "<variable id=\"database_sort\"><link href=\"text/scalc/guide/database_sort.xhp\">གཞི་གྲངས་མཛོད་ས་ཁོངས་རིམ་སྒྲིག་བྱེད།</link></variable>"
 
 #. vddXD
 #: database_sort.xhp
@@ -4543,13 +4552,13 @@ msgctxt ""
 msgid "Click <emph>OK</emph>."
 msgstr "<emph>\"གཏན་འཁེལ།\"</emph>ལ་རྐྱང་རྡེབ་བྱ།"
 
-#. yFuM4
+#. biDGg
 #: database_sort.xhp
 msgctxt ""
 "database_sort.xhp\n"
 "par_id1846980\n"
 "help.text"
-msgid "<link href=\"https://wiki.documentfoundation.org/Documentation/How_Tos/Defining_a_Data_Range\" name=\"wiki.documentfoundation.org: Defining a Data Range\">Wiki page about defining a data range</link>"
+msgid "<link href=\"https://wiki.documentfoundation.org/Documentation/How_Tos/Defining_a_Data_Range\">Wiki page about defining a data range</link>"
 msgstr ""
 
 #. zsSK8
@@ -4570,14 +4579,14 @@ msgctxt ""
 msgid "<bookmark_value>pivot table function; introduction</bookmark_value><bookmark_value>DataPilot, see pivot table function</bookmark_value>"
 msgstr "<bookmark_value>གཞི་གྲངས་སྒྲིབ་མེད་རེའུ་མིག་བྱེད་ནུས།  ངོ་སྤྲོད།</bookmark_value><bookmark_value>སྒྲིབ་མེད་རེའུ་མིག  \"གཞི་གྲངས་སྒྲིབ་མེད་རེའུ་མིག་བྱེད་ནུས་ཆ་ཤས།\"</bookmark_value>"
 
-#. tAv25
+#. NNbkr
 #: datapilot.xhp
 msgctxt ""
 "datapilot.xhp\n"
 "hd_id3150448\n"
 "help.text"
-msgid "<variable id=\"datapilot\"><link href=\"text/scalc/guide/datapilot.xhp\" name=\"Pivot Table\">Pivot Table</link></variable>"
-msgstr "<variable id=\"datapilot\"><link href=\"text/scalc/guide/datapilot.xhp\" name=\"གཞི་གྲངས་སྒྲིབ་མེད་རེའུ་མིག\">གཞི་གྲངས་སྒྲིབ་མེད་རེའུ་མིག</link></variable>"
+msgid "<variable id=\"datapilot\"><link href=\"text/scalc/guide/datapilot.xhp\">Pivot Table</link></variable>"
+msgstr "<variable id=\"datapilot\"><link href=\"text/scalc/guide/datapilot.xhp\">གཞི་གྲངས་སྒྲིབ་མེད་རེའུ་མིག</link></variable>"
 
 #. X3qFY
 #: datapilot.xhp
@@ -4588,14 +4597,14 @@ msgctxt ""
 msgid "The <emph>pivot table</emph> (formerly known as <emph>DataPilot</emph>) allows you to combine, compare, and analyze large amounts of data. You can view different summaries of the source data, you can display the details of areas of interest, and you can create reports."
 msgstr "<emph>གཞི་གྲངས་སྒྲིབ་མེད་རེའུ་མིག</emph>(ཡང་ན་<emph>ལག་རོགས་རེའུ་མིག</emph>ཡང་ཟེར་)ཕན་འབོར་ཆེ་བའི་གཞི་གྲངས་ཚོ་སྒྲིག་དང་སྡུར་བ་དབྱེ་ཞིབ་བཅས་བྱ་ཐུབ།  ཁྱེད་ཀྱིས་མི་འདྲ་བའི་ཁུངས་གཞི་གྲངས་གནད་བསྡུས་ལྟ་ཞིབ་བྱས་ཆོག་  ད་དུང་དགའ་བ་ལྡན་པའི་ས་ཁོངས་ཀྱི་ཞིབ་ཕྲའི་དཔྱད་གཞི་མངོན་ཐུབ་པ་དང་སྦྲགས་སྙན་ཞུ་གསར་འཛུགས་བྱ་ཐུབ།"
 
-#. EP4s6
+#. pUGwe
 #: datapilot.xhp
 msgctxt ""
 "datapilot.xhp\n"
 "par_id3145069\n"
 "help.text"
-msgid "A table that has been created as a <link href=\"text/scalc/01/12090000.xhp\" name=\"pivot table\">pivot table</link> is an interactive table. Data can be arranged, rearranged or summarized according to different points of view."
-msgstr "<link href=\"text/scalc/01/12090000.xhp\" name=\"གཞི་གྲངས་སྒྲིབ་མེད་རེའུ་མིག\">གཞི་གྲངས་སྒྲིབ་མེད་རེའུ་མིག</link>སྤྱད་དེ་བཙུགས་པའི་ལས་ཁྲ་ནི་སྤེལ་རེས་རྣམ་པའི་ལས་ཁྲ་ཡིན།   མི་འདྲ་བའི་མཐོང་ཟུར་ལ་གཞིགས་ནས་གཞི་གྲངས་ལ་སྟར་བཀོད་དང་བསྐྱར་དུ་ཉར་བཀོད་དམ་ཕྱོགས་བསྡུས་བྱས་ཆོག"
+msgid "A table that has been created as a <link href=\"text/scalc/01/12090000.xhp\">pivot table</link> is an interactive table. Data can be arranged, rearranged or summarized according to different points of view."
+msgstr "<link href=\"text/scalc/01/12090000.xhp\">གཞི་གྲངས་སྒྲིབ་མེད་རེའུ་མིག</link>སྤྱད་དེ་བཙུགས་པའི་ལས་ཁྲ་ནི་སྤེལ་རེས་རྣམ་པའི་ལས་ཁྲ་ཡིན།   མི་འདྲ་བའི་མཐོང་ཟུར་ལ་གཞིགས་ནས་གཞི་གྲངས་ལ་སྟར་བཀོད་དང་བསྐྱར་དུ་ཉར་བཀོད་དམ་ཕྱོགས་བསྡུས་བྱས་ཆོག"
 
 #. cGChV
 #: datapilot_createtable.xhp
@@ -4615,14 +4624,14 @@ msgctxt ""
 msgid "<bookmark_value>pivot tables</bookmark_value>      <bookmark_value>pivot table function; calling up and applying</bookmark_value>"
 msgstr "<bookmark_value>གཞི་གྲངས་སྒྲིབ་མེད་རེའུ་མིག</bookmark_value><bookmark_value>གཞི་གྲངས་སྒྲིབ་མེད་རེའུ་མིག་རྟེན་གྲངས།  ཁོལ་སྤྱོད་དང་ཉེར་སྤྱོད།</bookmark_value>"
 
-#. c5AAy
+#. HgqHr
 #: datapilot_createtable.xhp
 msgctxt ""
 "datapilot_createtable.xhp\n"
 "hd_id3148491\n"
 "help.text"
-msgid "<variable id=\"datapilot_createtable\"><link href=\"text/scalc/guide/datapilot_createtable.xhp\" name=\"Creating Pivot Tables\">Creating Pivot Tables</link></variable>"
-msgstr "<variable id=\"datapilot_createtable\"><link href=\"text/scalc/guide/datapilot_createtable.xhp\" name=\"གཞི་གྲངས་སྒྲིབ་མེད་རེའུ་མིག་ལས་ཁྲ་གསར་འཛུགས།\">གཞི་གྲངས་སྒྲིབ་མེད་རེའུ་མིག་ལས་ཁྲ་གསར་འཛུགས།</link></variable>"
+msgid "<variable id=\"datapilot_createtable\"><link href=\"text/scalc/guide/datapilot_createtable.xhp\">Creating Pivot Tables</link></variable>"
+msgstr "<variable id=\"datapilot_createtable\"><link href=\"text/scalc/guide/datapilot_createtable.xhp\">གཞི་གྲངས་སྒྲིབ་མེད་རེའུ་མིག་ལས་ཁྲ་གསར་འཛུགས།</link></variable>"
 
 #. qrneD
 #: datapilot_createtable.xhp
@@ -4669,14 +4678,14 @@ msgctxt ""
 msgid "If the button is dropped in the <emph>Data Fields</emph> area it will be given a caption that also shows the formula that will be used to calculate the data."
 msgstr "གལ་ཏེ་གནོན་མཐེབ་<emph>གཞི་གྲངས་ཡིག་དུམ།</emph>ས་ཁོངས་ནང་འདྲུད་སྐྱེལ་བྱས་རྗེས་དེ་ལ་ཁ་བྱང་ཞིག་ཐོན་ཐུབ་  གཞི་གྲངས་ས་ཁོངས་ནང་གཞི་གྲངས་རྩིས་རྒྱག་ལ་སྤྱད་པའི་སྤྱི་འགྲོས་མངོན་པར་སྤྱོད།"
 
-#. 8rEXv
+#. VnALH
 #: datapilot_createtable.xhp
 msgctxt ""
 "datapilot_createtable.xhp\n"
 "par_id3146974\n"
 "help.text"
-msgid "By double-clicking on one of the fields in the <emph>Data Fields</emph> area you can call up the <link href=\"text/scalc/01/12090105.xhp\" name=\"Data Field\"><emph>Data Field</emph></link> dialog."
-msgstr "<emph>གཞི་གྲངས་ཡིག་དུམ་</emph>ས་ཁོངས་ནང་གི་ཡིག་དུམ་ཞིག་ལ་ཆ་རྡེབ་བྱ་ དེས་ན་<link href=\"text/scalc/01/12090105.xhp\" name=\"གཞི་གྲངས་ཡིག་དུམ།\"><emph>གཞི་གྲངས་ཡིག་དུམ།</emph></link> གླེང་སྒྲོམ་མངོན་པར་འགྱུར།"
+msgid "By double-clicking on one of the fields in the <emph>Data Fields</emph> area you can call up the <link href=\"text/scalc/01/12090105.xhp\"><emph>Data Field</emph></link> dialog."
+msgstr "<emph>གཞི་གྲངས་ཡིག་དུམ་</emph>ས་ཁོངས་ནང་གི་ཡིག་དུམ་ཞིག་ལ་ཆ་རྡེབ་བྱ་ དེས་ན་<link href=\"text/scalc/01/12090105.xhp\"><emph>གཞི་གྲངས་ཡིག་དུམ།</emph></link> གླེང་སྒྲོམ་མངོན་པར་འགྱུར།"
 
 #. PAuDC
 #: datapilot_createtable.xhp
@@ -4705,13 +4714,13 @@ msgctxt ""
 msgid "Remove a button by dragging it back to the area of the other buttons at the right of the dialog."
 msgstr "ཁྱེད་ཀྱིས་ཡང་ན་ཡིག་དུམ་གནོན་མཐེབ་གཅིག་བསྐྱར་དུ་སྔར་གྱི་གནས་སར་འཇོག་ཐུབ་  ཐབས་ཤེས་ནི་ཙིག་རྟགས་སྤྱད་ནས་དེ་ས་ཁོངསགཅིག་ནས་གནས་ས་གཞན་དག་ལ་སྤོ་བ་དེ་ཡིན།"
 
-#. Hm6YC
+#. RVAdg
 #: datapilot_createtable.xhp
 msgctxt ""
 "datapilot_createtable.xhp\n"
 "par_id3147338\n"
 "help.text"
-msgid "To open the <link href=\"text/scalc/01/12090105.xhp\" name=\"Data Field\"><emph>Data Field</emph></link> dialog, double-click one of the buttons in the <emph>Row Fields</emph> or <emph>Column Fields</emph> area. Use the dialog to select if and to what extent <item type=\"productname\">%PRODUCTNAME</item> calculates display subtotals."
+msgid "To open the <link href=\"text/scalc/01/12090105.xhp\"><emph>Data Field</emph></link> dialog, double-click one of the buttons in the <emph>Row Fields</emph> or <emph>Column Fields</emph> area. Use the dialog to select if and to what extent <item type=\"productname\">%PRODUCTNAME</item> calculates display subtotals."
 msgstr ""
 
 #. iXULx
@@ -4741,14 +4750,14 @@ msgctxt ""
 msgid "<bookmark_value>pivot table function; deleting tables</bookmark_value>      <bookmark_value>deleting;pivot tables</bookmark_value>"
 msgstr "<bookmark_value>གཞི་གྲངས་སྒྲིབ་མེད་རེའུ་མིག་བྱེད་ནུས།  རེའུ་མིག་སུབ་པ།</bookmark_value>"
 
-#. CWysA
+#. aCv9D
 #: datapilot_deletetable.xhp
 msgctxt ""
 "datapilot_deletetable.xhp\n"
 "hd_id3153726\n"
 "help.text"
-msgid "<variable id=\"datapilot_deletetable\"><link href=\"text/scalc/guide/datapilot_deletetable.xhp\" name=\"Deleting Pivot Tables\">Deleting Pivot Tables</link></variable>"
-msgstr "<variable id=\"datapilot_deletetable\"><link href=\"text/scalc/guide/datapilot_deletetable.xhp\" name=\"གཞི་གྲངས་སྒྲིབ་མེད་རེའུ་མིག་ལས་ཁྲ་སུབ་པ།\">གཞི་གྲངས་སྒྲིབ་མེད་རེའུ་མིག་ལས་ཁྲ་སུབ་པ།</link></variable>"
+msgid "<variable id=\"datapilot_deletetable\"><link href=\"text/scalc/guide/datapilot_deletetable.xhp\">Deleting Pivot Tables</link></variable>"
+msgstr "<variable id=\"datapilot_deletetable\"><link href=\"text/scalc/guide/datapilot_deletetable.xhp\">གཞི་གྲངས་སྒྲིབ་མེད་རེའུ་མིག་ལས་ཁྲ་སུབ་པ།</link></variable>"
 
 #. yvJds
 #: datapilot_deletetable.xhp
@@ -4786,14 +4795,14 @@ msgctxt ""
 msgid "<bookmark_value>pivot table function; editing tables</bookmark_value><bookmark_value>editing;pivot tables</bookmark_value>"
 msgstr "<bookmark_value>གཞི་གྲངས་སྒྲིབ་མེད་རེའུ་མིག་བྱེད་ནུས།  རེའུ་མིག་རྩོམ་སྒྲིག</bookmark_value><bookmark_value>རྩོམ་སྒྲིག གཞི་གྲངས་སྒྲིབ་མེད་རེའུ་མིག</bookmark_value>"
 
-#. SRQYX
+#. z8AYi
 #: datapilot_edittable.xhp
 msgctxt ""
 "datapilot_edittable.xhp\n"
 "hd_id3148663\n"
 "help.text"
-msgid "<variable id=\"datapilot_edittable\"><link href=\"text/scalc/guide/datapilot_edittable.xhp\" name=\"Editing Pivot Tables\">Editing Pivot Tables</link></variable>"
-msgstr "<variable id=\"datapilot_edittable\"><link href=\"text/scalc/guide/datapilot_edittable.xhp\" name=\"གཞི་གྲངས་སྒྲིབ་མེད་རེའུ་མིག་ལས་ཁྲ་རྩོམ་སྒྲིག\">གཞི་གྲངས་སྒྲིབ་མེད་རེའུ་མིག་ལས་ཁྲ་རྩོམ་སྒྲིག</link></variable>"
+msgid "<variable id=\"datapilot_edittable\"><link href=\"text/scalc/guide/datapilot_edittable.xhp\">Editing Pivot Tables</link></variable>"
+msgstr "<variable id=\"datapilot_edittable\"><link href=\"text/scalc/guide/datapilot_edittable.xhp\">གཞི་གྲངས་སྒྲིབ་མེད་རེའུ་མིག་ལས་ཁྲ་རྩོམ་སྒྲིག</link></variable>"
 
 #. jDNdq
 #: datapilot_edittable.xhp
@@ -4876,14 +4885,14 @@ msgctxt ""
 msgid "<bookmark_value>pivot table function; filtering tables</bookmark_value><bookmark_value>filtering;pivot tables</bookmark_value>"
 msgstr "<bookmark_value>གཞི་གྲངས་ཡིག་ཆའི་ལས་རོགས་བྱེད་ནུས། འཚག་འདེམས་རེའུ་མིག</bookmark_value><bookmark_value>འཚག་འདེམས།  གཞི་གྲངས་ཡིག་ཆའི་ལས་རོགས་རེའུ་མིག</bookmark_value>"
 
-#. B6RwS
+#. zNm6v
 #: datapilot_filtertable.xhp
 msgctxt ""
 "datapilot_filtertable.xhp\n"
 "hd_id3150792\n"
 "help.text"
-msgid "<variable id=\"datapilot_filtertable\"><link href=\"text/scalc/guide/datapilot_filtertable.xhp\" name=\"Filtering Pivot Tables\">Filtering Pivot Tables</link></variable>"
-msgstr "<variable id=\"datapilot_filtertable\"><link href=\"text/scalc/guide/datapilot_filtertable.xhp\" name=\"གཞི་གྲངས་སྒྲིབ་མེད་རེའུ་མིག་ལས་ཁྲ་འཚག་འདེམས།\">གཞི་གྲངས་སྒྲིབ་མེད་རེའུ་མིག་ལས་ཁྲ་འཚག་འདེམས།</link></variable>"
+msgid "<variable id=\"datapilot_filtertable\"><link href=\"text/scalc/guide/datapilot_filtertable.xhp\">Filtering Pivot Tables</link></variable>"
+msgstr "<variable id=\"datapilot_filtertable\"><link href=\"text/scalc/guide/datapilot_filtertable.xhp\">གཞི་གྲངས་སྒྲིབ་མེད་རེའུ་མིག་ལས་ཁྲ་འཚག་འདེམས།</link></variable>"
 
 #. ADCtg
 #: datapilot_filtertable.xhp
@@ -4894,13 +4903,13 @@ msgctxt ""
 msgid "You can use filters to remove unwanted data from a pivot table."
 msgstr "འཚག་འདེམས་ཆས་སྤྱད་ནས་མི་དགོས་པའི་གཞི་གྲངས་དེ་གཞི་གྲངས་སྒྲིབ་མེད་རེའུ་མིག་ནང་ནས་སུབ་ཐུབ།"
 
-#. GgnjB
+#. Dr4qw
 #: datapilot_filtertable.xhp
 msgctxt ""
 "datapilot_filtertable.xhp\n"
 "par_id3150441\n"
 "help.text"
-msgid "Click the <emph>Filter</emph> button in the sheet to call up the dialog for the filter conditions. Alternatively, call up the context menu of the pivot table and select the <emph>Filter</emph> command. The <link href=\"text/scalc/01/12090103.xhp\" name=\"Filter\"><emph>Filter</emph></link> dialog appears. Here you can filter the pivot table."
+msgid "Click the <emph>Filter</emph> button in the sheet to call up the dialog for the filter conditions. Alternatively, call up the context menu of the pivot table and select the <emph>Filter</emph> command. The <link href=\"text/scalc/01/12090103.xhp\"><emph>Filter</emph></link> dialog appears. Here you can filter the pivot table."
 msgstr ""
 
 #. TUAcu
@@ -5011,13 +5020,13 @@ msgctxt ""
 msgid "<bookmark_value>formatting;pivot tables</bookmark_value>"
 msgstr ""
 
-#. GN6EJ
+#. rsh3f
 #: datapilot_formatting.xhp
 msgctxt ""
 "datapilot_formatting.xhp\n"
 "hd_id341656099297638\n"
 "help.text"
-msgid "<variable id=\"h1\"><link href=\"text/scalc/guide/datapilot_formatting.xhp\" name=\"Formatting Pivot Tables\">Formatting Pivot Tables</link></variable>"
+msgid "<variable id=\"h1\"><link href=\"text/scalc/guide/datapilot_formatting.xhp\">Formatting Pivot Tables</link></variable>"
 msgstr ""
 
 #. aA7AD
@@ -5227,14 +5236,14 @@ msgctxt ""
 msgid "<bookmark_value>pivot table function; preventing data overwriting</bookmark_value><bookmark_value>output ranges of pivot tables</bookmark_value>"
 msgstr "<bookmark_value>གཞི་གྲངས་སྒྲིབ་མེད་རེའུ་མིག་བྱེད་ནུས།  གཞི་གྲངས་བཀབ་པ་གཡོལ་བ།</bookmark_value><bookmark_value>གཞི་གྲངས་སྒྲིབ་མེད་རེའུ་མིག་གི་ལས་ཁྲའི་ས་ཁོངས་ཕྱིར་བཏོན།</bookmark_value>"
 
-#. xFzFx
+#. xeirD
 #: datapilot_tipps.xhp
 msgctxt ""
 "datapilot_tipps.xhp\n"
 "hd_id3148663\n"
 "help.text"
-msgid "<variable id=\"datapilot_tipps\"><link href=\"text/scalc/guide/datapilot_tipps.xhp\" name=\"Selecting Pivot Table Output Ranges\">Selecting Pivot Table Output Ranges</link></variable>"
-msgstr "<variable id=\"datapilot_tipps\"><link href=\"text/scalc/guide/datapilot_tipps.xhp\" name=\" གཞི་གྲངས་སྒྲིབ་མེད་རེའུ་མིག་ལས་ཁྲའི་ཕྱིར་བཏོན་ས་ཁོངས་འདེམས་པ།\">གཞི་གྲངས་སྒྲིབ་མེད་རེའུ་མིག་ལས་ཁྲའི་ཕྱིར་བཏོན་ས་ཁོངས་འདེམས་པ།</link></variable>"
+msgid "<variable id=\"datapilot_tipps\"><link href=\"text/scalc/guide/datapilot_tipps.xhp\">Selecting Pivot Table Output Ranges</link></variable>"
+msgstr "<variable id=\"datapilot_tipps\"><link href=\"text/scalc/guide/datapilot_tipps.xhp\">གཞི་གྲངས་སྒྲིབ་མེད་རེའུ་མིག་ལས་ཁྲའི་ཕྱིར་བཏོན་ས་ཁོངས་འདེམས་པ།</link></variable>"
 
 #. kikhM
 #: datapilot_tipps.xhp
@@ -5290,14 +5299,14 @@ msgctxt ""
 msgid "<bookmark_value>pivot table import</bookmark_value><bookmark_value>pivot table function; refreshing tables</bookmark_value><bookmark_value>recalculating;pivot tables</bookmark_value><bookmark_value>updating;pivot tables</bookmark_value>"
 msgstr "<bookmark_value>Pivot རེའུ་མིག་འདྲེན་འཇུག</bookmark_value><bookmark_value>གཞི་གྲངས་སྒྲིབ་མེད་རེའུ་མིག་བྱེད་ནུས།  རེའུ་མིག་གསར་སྐྱེད།</bookmark_value>"
 
-#. BxZL2
+#. SVyQU
 #: datapilot_updatetable.xhp
 msgctxt ""
 "datapilot_updatetable.xhp\n"
 "hd_id3150792\n"
 "help.text"
-msgid "<variable id=\"datapilot_updatetable\"><link href=\"text/scalc/guide/datapilot_updatetable.xhp\" name=\"Updating Pivot Tables\">Updating Pivot Tables</link></variable>"
-msgstr "<variable id=\"datapilot_updatetable\"><link href=\"text/scalc/guide/datapilot_updatetable.xhp\" name=\"གཞི་གྲངས་སྒྲིབ་མེད་རེའུ་མིག་ལས་ཁྲ་གསར་སྐྱེད།\">གཞི་གྲངས་སྒྲིབ་མེད་རེའུ་མིག་ལས་ཁྲ་གསར་སྐྱེད།</link></variable>"
+msgid "<variable id=\"datapilot_updatetable\"><link href=\"text/scalc/guide/datapilot_updatetable.xhp\">Updating Pivot Tables</link></variable>"
+msgstr "<variable id=\"datapilot_updatetable\"><link href=\"text/scalc/guide/datapilot_updatetable.xhp\">གཞི་གྲངས་སྒྲིབ་མེད་རེའུ་མིག་ལས་ཁྲ་གསར་སྐྱེད།</link></variable>"
 
 #. gaKCU
 #: datapilot_updatetable.xhp
@@ -5578,14 +5587,14 @@ msgctxt ""
 msgid "<bookmark_value>theme selection for sheets</bookmark_value><bookmark_value>layout;spreadsheets</bookmark_value><bookmark_value>cell styles; selecting</bookmark_value><bookmark_value>selecting;formatting themes</bookmark_value><bookmark_value>sheets;formatting themes</bookmark_value><bookmark_value>formats;themes for sheets</bookmark_value><bookmark_value>formatting;themes for sheets</bookmark_value>"
 msgstr "<bookmark_value>ལས་ཁྲའི་གཙོ་དོན་འདེམས་པ།</bookmark_value><bookmark_value>གློག་རྡུལ་རེའུ་མིག་གི་པར་དབྱིབས།</bookmark_value><bookmark_value>དྲ་མིག་བཟོ་ལྟ།  འདེམས་པ།</bookmark_value>"
 
-#. kBFhA
+#. dt6vR
 #: design.xhp
 msgctxt ""
 "design.xhp\n"
 "hd_id3150791\n"
 "help.text"
-msgid "<variable id=\"design\"><link href=\"text/scalc/guide/design.xhp\" name=\"Selecting Themes for Sheets\">Selecting Themes for Sheets</link> </variable>"
-msgstr "<variable id=\"design\"><link href=\"text/scalc/guide/design.xhp\" name=\"ལས་ཁྲའི་གཙོ་དོན་འདེམས་པ།\">ལས་ཁྲའི་གཙོ་དོན་འདེམས་པ།</link></variable>"
+msgid "<variable id=\"design\"><link href=\"text/scalc/guide/design.xhp\">Selecting Themes for Sheets</link> </variable>"
+msgstr "<variable id=\"design\"><link href=\"text/scalc/guide/design.xhp\">ལས་ཁྲའི་གཙོ་དོན་འདེམས་པ།</link></variable>"
 
 #. axrVR
 #: design.xhp
@@ -5677,14 +5686,14 @@ msgctxt ""
 msgid "As soon as you select another theme in the <emph>Theme Selection</emph> dialog, some of the properties of the custom style will be applied to the current spreadsheet. The modifications will be immediately visible in your spreadsheet."
 msgstr "སྐབས་ཤིག་ཁྱེད་ཀྱིས་<emph>གཙོ་དོན་འདེམས་པ།</emph>གླེང་སྒྲོམ་ནང་ཉམས་འགྱུར་གཞན་ཞིག་འདེམས་པ་ན་སྤྱོད་པོའི་བཟོ་ལྟའི་ནང་གི་གཏོགས་གཤིས་ཆ་ཤས་མིག་སྔའི་ལས་ཁྲའི་ཡིག་ཚགས་ནང་སྤྱོད་པར་འགྱུར།  ཁྱེད་ཀྱིས་དེ་མར་ལས་ཁྲའི་ཡིག་ཚགས་ནང་བཟོ་བཅོས་བྱས་པ་མཐོང་ཐུབ།"
 
-#. CG6ba
+#. CRzqY
 #: design.xhp
 msgctxt ""
 "design.xhp\n"
 "par_id3146979\n"
 "help.text"
-msgid "<link href=\"text/scalc/02/06080000.xhp\" name=\"Theme selection\">Theme selection</link>"
-msgstr "<link href=\"text/scalc/02/06080000.xhp\" name=\"གཙོ་དོན་འདེམས་པ།\">གཙོ་དོན་འདེམས་པ།</link>"
+msgid "<link href=\"text/scalc/02/06080000.xhp\">Theme selection</link>"
+msgstr "<link href=\"text/scalc/02/06080000.xhp\">གཙོ་དོན་འདེམས་པ།</link>"
 
 #. t5ETg
 #: edit_multitables.xhp
@@ -5704,13 +5713,13 @@ msgctxt ""
 msgid "<bookmark_value>copying;values, to multiple sheets</bookmark_value><bookmark_value>pasting;values in multiple sheets</bookmark_value><bookmark_value>data;inserting in multiple sheets</bookmark_value><bookmark_value>sheets; simultaneous multiple filling</bookmark_value>"
 msgstr ""
 
-#. TTfnY
+#. 4PAZG
 #: edit_multitables.xhp
 msgctxt ""
 "edit_multitables.xhp\n"
 "hd_id3149456\n"
 "help.text"
-msgid "<variable id=\"edit_multitables\"><link href=\"text/scalc/guide/edit_multitables.xhp\" name=\"Copying to Multiple Sheets\">Copying to Multiple Sheets</link></variable>"
+msgid "<variable id=\"edit_multitables\"><link href=\"text/scalc/guide/edit_multitables.xhp\">Copying to Multiple Sheets</link></variable>"
 msgstr ""
 
 #. 4sMCm
@@ -5767,14 +5776,14 @@ msgctxt ""
 msgid "<bookmark_value>filters; applying/removing</bookmark_value>      <bookmark_value>rows;removing/redisplaying with filters</bookmark_value>      <bookmark_value>removing;filters</bookmark_value>"
 msgstr "<bookmark_value>འཚག་འདེམས་ཆས།  ཉེར་སྤྱོད།</bookmark_value><bookmark_value>མཐོ་རིམ་འཚག་འདེམས་ཆས།</bookmark_value><bookmark_value>ཕྲེང་། འཚག་འདེམས་ཆས་སྤྱད་ནས་སུབ་པ།</bookmark_value>"
 
-#. gcyYi
+#. WH2qG
 #: filters.xhp
 msgctxt ""
 "filters.xhp\n"
 "hd_id3153896\n"
 "help.text"
-msgid "<variable id=\"filters\"><link href=\"text/scalc/guide/filters.xhp\" name=\"Applying Filters\">Applying Filters</link></variable>"
-msgstr "<variable id=\"filters\"><link href=\"text/scalc/guide/filters.xhp\" name=\"ཉེར་སྤྱོད་འཚག་འདེམས།\">ཉེར་སྤྱོད་འཚག་འདེམས།</link></variable>"
+msgid "<variable id=\"filters\"><link href=\"text/scalc/guide/filters.xhp\">Applying Filters</link></variable>"
+msgstr "<variable id=\"filters\"><link href=\"text/scalc/guide/filters.xhp\">ཉེར་སྤྱོད་འཚག་འདེམས།</link></variable>"
 
 #. d4Uux
 #: filters.xhp
@@ -6091,14 +6100,14 @@ msgctxt ""
 msgid "<bookmark_value>text in cells; formatting</bookmark_value><bookmark_value>spreadsheets;formatting</bookmark_value><bookmark_value>backgrounds;cells and pages</bookmark_value><bookmark_value>borders;cells and pages</bookmark_value><bookmark_value>formatting;spreadsheets</bookmark_value><bookmark_value>numbers; formatting options for selected cells</bookmark_value><bookmark_value>cells; number formats</bookmark_value><bookmark_value>currencies;formats</bookmark_value>"
 msgstr "<bookmark_value>ལས་ཁྲ། རང་འགུལ་འདྲ་སྤྱོད་རྣམ་གཞག་བྱེད་ནུས།</bookmark_value><bookmark_value>རང་འགུལ་འདྲ་སྤྱོད་རྣམ་གཞག་བྱེད་ནུས། ལས་ཁྲ།</bookmark_value><bookmark_value>དྲ་མིག་ནང་གི་ཡིག་དེབ།  རྣམ་གཞག་ཅན།</bookmark_value><bookmark_value>གློག་རྡུལ་རེའུ་མིག  རྣམ་གཞག་ཅན།</bookmark_value>"
 
-#. Aairv
+#. eurEF
 #: format_table.xhp
 msgctxt ""
 "format_table.xhp\n"
 "hd_id3154125\n"
 "help.text"
-msgid "<variable id=\"format_table\"><link href=\"text/scalc/guide/format_table.xhp\" name=\"Designing Spreadsheets\">Formatting Spreadsheets</link></variable>"
-msgstr "<variable id=\"format_table\"><link href=\"text/scalc/guide/format_table.xhp\" name=\"གློག་རྡུལ་དྲ་མིག་བཀོད་སྒྲིག\">རྣམ་གཞག་ཅན་གྱི་གློག་རྡུལ་དྲ་མིག</link></variable>"
+msgid "<variable id=\"format_table\"><link href=\"text/scalc/guide/format_table.xhp\">Formatting Spreadsheets</link></variable>"
+msgstr "<variable id=\"format_table\"><link href=\"text/scalc/guide/format_table.xhp\">རྣམ་གཞག་ཅན་གྱི་གློག་རྡུལ་དྲ་མིག</link></variable>"
 
 #. WMnGx
 #: format_table.xhp
@@ -6181,13 +6190,13 @@ msgctxt ""
 msgid "To apply formatting attributes to an entire sheet, choose <emph>Format - Page Style</emph>. You can define headers and footers, for example, to appear on each printed page."
 msgstr ""
 
-#. pCwt2
+#. VGmPH
 #: format_table.xhp
 msgctxt ""
 "format_table.xhp\n"
 "par_id3145389\n"
 "help.text"
-msgid "An image that you have loaded with <item type=\"menuitem\">Format - Page Style - Background</item> is only visible in print or in the print preview. To display a background image on screen as well, insert the graphic image by choosing <item type=\"menuitem\">Insert - Image - From File</item> and arrange the image behind the cells by choosing <item type=\"menuitem\">Format - Arrange - To Background</item>. Use the <link href=\"text/scalc/01/02110000.xhp\" name=\"Navigator\">Navigator</link> to select the background image."
+msgid "An image that you have loaded with <item type=\"menuitem\">Format - Page Style - Background</item> is only visible in print or in the print preview. To display a background image on screen as well, insert the graphic image by choosing <item type=\"menuitem\">Insert - Image - From File</item> and arrange the image behind the cells by choosing <item type=\"menuitem\">Format - Arrange - To Background</item>. Use the <link href=\"text/scalc/01/02110000.xhp\">Navigator</link> to select the background image."
 msgstr ""
 
 #. vvAFw
@@ -6226,14 +6235,14 @@ msgctxt ""
 msgid "<bookmark_value>numbers;formatting decimals</bookmark_value>      <bookmark_value>formats; numbers in tables</bookmark_value>      <bookmark_value>tables; number formats</bookmark_value>      <bookmark_value>defaults; number formats in spreadsheets</bookmark_value>      <bookmark_value>decimal places;formatting numbers</bookmark_value>      <bookmark_value>formatting;numbers with decimals</bookmark_value>      <bookmark_value>formatting;adding/deleting decimal places</bookmark_value>      <bookmark_value>number formats; adding/deleting decimal places in cells</bookmark_value>      <bookmark_value>deleting; decimal places</bookmark_value>      <bookmark_value>decimal places; adding/deleting</bookmark_value>"
 msgstr "<bookmark_value>གྲངས་ཀ   རེའུ་མིག་ནང་གི་རྣམ་གཞག</bookmark_value><bookmark_value>རྣམ་གཞག  རེའུ་མིག་ནང་གི་གྲངས་ཀ།</bookmark_value><bookmark_value>རེའུ་མིག  གྲངས་ཀའི་རྣམ་གཞག</bookmark_value><bookmark_value>ཁས་ལེན་རྣམ་གཞག   རེའུ་མིག་ནང་གི་གྲངས་ཀ།</bookmark_value><bookmark_value>གྲངས་ཀའི་རྣམ་གཞག  དྲ་མིག་ནང་།</bookmark_value>"
 
-#. Qe83k
+#. Fcg2i
 #: format_value.xhp
 msgctxt ""
 "format_value.xhp\n"
 "hd_id3145367\n"
 "help.text"
-msgid "<variable id=\"format_value\"><link href=\"text/scalc/guide/format_value.xhp\" name=\"Formatting Numbers With Decimals\">Formatting Numbers With Decimals</link></variable>"
-msgstr "<variable id=\"format_value\"><link href=\"text/scalc/guide/format_value.xhp\" name=\"སིལ་གྲངས་ལྡན་པའི་གྲངས་ཀ་རྣམ་གཞག་ཅན་དུ་བསྒྱུར།\">སིལ་གྲངས་ལྡན་པའི་གྲངས་ཀ་རྣམ་གཞག་ཅན་དུ་བསྒྱུར།</link></variable>"
+msgid "<variable id=\"format_value\"><link href=\"text/scalc/guide/format_value.xhp\">Formatting Numbers With Decimals</link></variable>"
+msgstr "<variable id=\"format_value\"><link href=\"text/scalc/guide/format_value.xhp\">སིལ་གྲངས་ལྡན་པའི་གྲངས་ཀ་རྣམ་གཞག་ཅན་དུ་བསྒྱུར།</link></variable>"
 
 #. MBqzn
 #: format_value.xhp
@@ -6307,14 +6316,14 @@ msgctxt ""
 msgid "<bookmark_value>numbers;user-defined formatting</bookmark_value>      <bookmark_value>formatting; user-defined numbers</bookmark_value>      <bookmark_value>number formats; millions</bookmark_value>      <bookmark_value>format codes; user-defined number formats</bookmark_value>"
 msgstr "<bookmark_value>གྲངས་ཀ།  རེའུ་མིག་ནང་གི་སྤྱོད་པོའི་མཚན་འཇོག་རྣམ་གཞག</bookmark_value><bookmark_value>རྣམ་གཞག  སྤྱོད་པོའི་མཚན་འཇོག་གི་གྲངས་ཀ།</bookmark_value><bookmark_value>གྲངས་ཀའི་རྣམ་གཞག  ཁྲི་བརྒྱ</bookmark_value>"
 
-#. VbsDd
+#. ATTjD
 #: format_value_userdef.xhp
 msgctxt ""
 "format_value_userdef.xhp\n"
 "hd_id3143268\n"
 "help.text"
-msgid "<variable id=\"format_value_userdef\"><link href=\"text/scalc/guide/format_value_userdef.xhp\" name=\"User-defined Number Formats\">User-defined Number Formats</link></variable>"
-msgstr "<variable id=\"format_value_userdef\"><link href=\"text/scalc/guide/format_value_userdef.xhp\" name=\"སྤྱོད་པོས་མཚན་འཇོག་བྱས་པའི་གྲངས་ཀའི་རྣམ་གཞག\">སྤྱོད་པོས་མཚན་འཇོག་བྱས་པའི་གྲངས་ཀའི་རྣམ་གཞག</link></variable>"
+msgid "<variable id=\"format_value_userdef\"><link href=\"text/scalc/guide/format_value_userdef.xhp\">User-defined Number Formats</link></variable>"
+msgstr "<variable id=\"format_value_userdef\"><link href=\"text/scalc/guide/format_value_userdef.xhp\">སྤྱོད་པོས་མཚན་འཇོག་བྱས་པའི་གྲངས་ཀའི་རྣམ་གཞག</link></variable>"
 
 #. AGNss
 #: format_value_userdef.xhp
@@ -6559,14 +6568,14 @@ msgctxt ""
 msgid "<bookmark_value>formulas; copying and pasting</bookmark_value><bookmark_value>copying; formulas</bookmark_value><bookmark_value>pasting;formulas</bookmark_value>"
 msgstr "<bookmark_value>སྤྱི་འགྲོས།  འདྲ་ཕབ།</bookmark_value><bookmark_value>འདྲ་ཕབ།  སྤྱི་འགྲོས།</bookmark_value>"
 
-#. Qtkdo
+#. LVG2x
 #: formula_copy.xhp
 msgctxt ""
 "formula_copy.xhp\n"
 "hd_id3151113\n"
 "help.text"
-msgid "<variable id=\"formula_copy\"><link href=\"text/scalc/guide/formula_copy.xhp\" name=\"Copying Formulas\">Copying Formulas</link></variable>"
-msgstr "<variable id=\"formula_copy\"><link href=\"text/scalc/guide/formula_copy.xhp\" name=\"འདྲ་ཕབ་སྤྱི་འགྲོས།\">འདྲ་ཕབ་སྤྱི་འགྲོས།</link></variable>"
+msgid "<variable id=\"formula_copy\"><link href=\"text/scalc/guide/formula_copy.xhp\">Copying Formulas</link></variable>"
+msgstr "<variable id=\"formula_copy\"><link href=\"text/scalc/guide/formula_copy.xhp\">འདྲ་ཕབ་སྤྱི་འགྲོས།</link></variable>"
 
 #. 3ZujS
 #: formula_copy.xhp
@@ -6685,14 +6694,14 @@ msgctxt ""
 msgid "<bookmark_value>formula bar; input line</bookmark_value><bookmark_value>input line in formula bar</bookmark_value><bookmark_value>formulas; inputting</bookmark_value><bookmark_value>inserting;formulas</bookmark_value>"
 msgstr "<bookmark_value>སྤྱི་འགྲོས་ཚང་། ནང་འཇུག་ཕྲེང་།</bookmark_value><bookmark_value>སྤྱི་འགྲོས་ཚང་ནང་གི་ནང་འཇུག་ཕྲེང་།</bookmark_value><bookmark_value>སྤྱི་འགྲོས།  ནང་འཇུག</bookmark_value>"
 
-#. rP8CF
+#. pfDFF
 #: formula_enter.xhp
 msgctxt ""
 "formula_enter.xhp\n"
 "hd_id3150868\n"
 "help.text"
-msgid "<variable id=\"formula_enter\"><link href=\"text/scalc/guide/formula_enter.xhp\" name=\"Entering Formulas\">Entering Formulas</link></variable>"
-msgstr "<variable id=\"formula_enter\"><link href=\"text/scalc/guide/formula_enter.xhp\" name=\"སྤྱི་འགྲོས་རྩོམ་སྒྲིག་ཚང་ནང་སྤྱི་འགྲོས་ནང་འཇུག་བྱེད་པ།\">སྤྱི་འགྲོས་རྩོམ་སྒྲིག་ཚང་ནང་སྤྱི་འགྲོས་ནང་འཇུག་བྱེད་པ།</link></variable>"
+msgid "<variable id=\"formula_enter\"><link href=\"text/scalc/guide/formula_enter.xhp\">Entering Formulas</link></variable>"
+msgstr "<variable id=\"formula_enter\"><link href=\"text/scalc/guide/formula_enter.xhp\">སྤྱི་འགྲོས་རྩོམ་སྒྲིག་ཚང་ནང་སྤྱི་འགྲོས་ནང་འཇུག་བྱེད་པ།</link></variable>"
 
 #. H3w2m
 #: formula_enter.xhp
@@ -6775,13 +6784,13 @@ msgctxt ""
 msgid "You see the result <item type=\"literal\">42</item> in the cell. The cell contains the formula <item type=\"literal\">=+50-8</item>."
 msgstr ""
 
-#. KGDF3
+#. H7Gc5
 #: formula_enter.xhp
 msgctxt ""
 "formula_enter.xhp\n"
 "par_id3155764\n"
 "help.text"
-msgid "If you are editing a formula with references, the references and the associated cells will be highlighted with the same color. You can now resize the reference border using the mouse, and the reference in the formula displayed in the input line also changes. <emph>Show references in color</emph> can be deactivated under <switchinline select=\"sys\"><caseinline select=\"MAC\">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline> - <link href=\"text/shared/optionen/01060300.xhp\" name=\"Spreadsheet - View\">%PRODUCTNAME Calc - View</link>."
+msgid "If you are editing a formula with references, the references and the associated cells will be highlighted with the same color. You can now resize the reference border using the mouse, and the reference in the formula displayed in the input line also changes. <emph>Show references in color</emph> can be deactivated under <switchinline select=\"sys\"><caseinline select=\"MAC\">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline> - <link href=\"text/shared/optionen/01060300.xhp\">%PRODUCTNAME Calc - View</link>."
 msgstr ""
 
 #. G2WDH
@@ -6793,23 +6802,23 @@ msgctxt ""
 msgid "<variable id=\"tip\">If you would like to view the calculation of individual elements of a formula, select the respective elements and press F9. For example, in the formula =SUM(A1:B12)*SUM(C1:D12) select the section SUM(C1:D12) and press F9 to view the subtotal for this area. </variable>"
 msgstr "<variable id=\"tip\">གལ་ཏེ་ཁྱེད་ཀྱིས་རྟགས་དཔྱད་ཀྱི་དམིགས་ཡུལ་ལ་དགོངས་ནས་གསར་འཛུགས་སྤྱི་འགྲོས་ནང་རྩིས་རྒྱག་གི་བརྒྱུད་རིམ་རྣམ་གྲངས་ཁག་གཟིགས་ཐུབ་རྒྱུའི་རེ་བ་མཛད་ན་རྣམ་གྲངས་ཁག་ལ་རྟགས་བཀོད་པ་སྦྲགས་ F9གནོན་རོགས།  དཔེར་ན་  སྤྱི་འགྲོས་ =SUM(A1:B12)*SUM(C1:D12) ནང་ཁྱེད་ཀྱི་ SUM(C1:D12) ཆ་ཤས་ལ་རྟགས་བཀོད་པ་དང་སྦྲགས་ F9མནན་པས་ཁྱེད་ནས་དྲན་གཏོང་རོགས་རམ་ནང་རྣམ་གྲངས་རྐྱང་པའི་རྩིས་རྒྱག་འབྲས་བུ་མཐོང་ཐུབ། </variable>"
 
-#. 3zBJH
+#. UNkCH
 #: formula_enter.xhp
 msgctxt ""
 "formula_enter.xhp\n"
 "par_id3150304\n"
 "help.text"
-msgid "If an error occurs when creating the formula, an <link href=\"text/scalc/05/02140000.xhp\" name=\"error message\">error message</link> appears in the active cell."
-msgstr "གལ་སྲིད་ཁྱེད་ཀྱིས་སྤྱི་འགྲོས་གསར་འཛུགས་ཀྱི་བརྒྱུད་རིམ་ནང་ནོར་འཁྲུལ་ཐོན་ན་སྤྱོད་བཞིན་པའི་དྲ་མིག་ནང་དེ་མཚུངས་ཀྱི་<link href=\"text/scalc/05/02140000.xhp\" name=\"ནོར་འཁྲུལ་ཆ་འཕྲིན།\">ནོར་འཁྲུལ་ཆ་འཕྲིན།</link>"
+msgid "If an error occurs when creating the formula, an <link href=\"text/scalc/05/02140000.xhp\">error message</link> appears in the active cell."
+msgstr "གལ་སྲིད་ཁྱེད་ཀྱིས་སྤྱི་འགྲོས་གསར་འཛུགས་ཀྱི་བརྒྱུད་རིམ་ནང་ནོར་འཁྲུལ་ཐོན་ན་སྤྱོད་བཞིན་པའི་དྲ་མིག་ནང་དེ་མཚུངས་ཀྱི་<link href=\"text/scalc/05/02140000.xhp\">ནོར་འཁྲུལ་ཆ་འཕྲིན།</link>"
 
-#. GXy6w
+#. TMv6c
 #: formula_enter.xhp
 msgctxt ""
 "formula_enter.xhp\n"
 "par_id3152993\n"
 "help.text"
-msgid "<link href=\"text/scalc/main0206.xhp\" name=\"Formula bar\">Formula bar</link>"
-msgstr "<link href=\"text/scalc/main0206.xhp\" name=\"སྤྱི་འགྲོས་རྩོམ་སྒྲིག་ཚང་།\">སྤྱི་འགྲོས་རྩོམ་སྒྲིག་ཚང་།</link>"
+msgid "<link href=\"text/scalc/main0206.xhp\">Formula bar</link>"
+msgstr "<link href=\"text/scalc/main0206.xhp\">སྤྱི་འགྲོས་རྩོམ་སྒྲིག་ཚང་།</link>"
 
 #. a5yvD
 #: formula_value.xhp
@@ -6829,14 +6838,14 @@ msgctxt ""
 msgid "<bookmark_value>formulas; displaying in cells</bookmark_value><bookmark_value>values; displaying in tables</bookmark_value><bookmark_value>tables; displaying formulas/values</bookmark_value><bookmark_value>results display vs. formulas display</bookmark_value><bookmark_value>displaying; formulas instead of results</bookmark_value>"
 msgstr "<bookmark_value>སྤྱི་འགྲོས།   དྲ་མིག་ནང་།</bookmark_value><bookmark_value>གྲངས་ཐང་མངོན།  རེའུ་མིག་ནང་།</bookmark_value><bookmark_value>རེའུ་མིག་མངོན།  སྤྱི་འགྲོས་/གྲངས་ཐང་མངོན།</bookmark_value>"
 
-#. CAjGG
+#. mHXkN
 #: formula_value.xhp
 msgctxt ""
 "formula_value.xhp\n"
 "hd_id3153195\n"
 "help.text"
-msgid "<variable id=\"formula_value\"><link href=\"text/scalc/guide/formula_value.xhp\" name=\"Displaying Formulas or Values\">Displaying Formulas or Values</link></variable>"
-msgstr "<variable id=\"formula_value\"><link href=\"text/scalc/guide/formula_value.xhp\" name=\"སྤྱི་འགྲོས་སམ་གྲངས་ཐང་མངོན་པ།\">སྤྱི་འགྲོས་སམ་གྲངས་ཐང་མངོན་པ།</link></variable>"
+msgid "<variable id=\"formula_value\"><link href=\"text/scalc/guide/formula_value.xhp\">Displaying Formulas or Values</link></variable>"
+msgstr "<variable id=\"formula_value\"><link href=\"text/scalc/guide/formula_value.xhp\">སྤྱི་འགྲོས་སམ་གྲངས་ཐང་མངོན་པ།</link></variable>"
 
 #. MeZFx
 #: formula_value.xhp
@@ -6874,13 +6883,13 @@ msgctxt ""
 msgid "If you want to view the calculation results instead of the formula, do not mark the Formulas box."
 msgstr "གལ་སྲིད་རྩིས་རྒྱག་འབྲས་བུར་ལྟ་འདོད་པ་ལས་སྤྱི་འགྲོས་མིན་ན་  \"སྤྱི་གྲོས།\"བསྐྱར་འདེམས་སྒྲོམ་འདེམས་མི་དགོས།"
 
-#. iDByM
+#. a6ria
 #: formula_value.xhp
 msgctxt ""
 "formula_value.xhp\n"
 "par_id3153157\n"
 "help.text"
-msgid "<switchinline select=\"sys\"><caseinline select=\"MAC\">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline> - <link href=\"text/shared/optionen/01060100.xhp\" name=\"Spreadsheet - View\">%PRODUCTNAME Calc - View</link>"
+msgid "<switchinline select=\"sys\"><caseinline select=\"MAC\">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline> - <link href=\"text/shared/optionen/01060100.xhp\">%PRODUCTNAME Calc - View</link>"
 msgstr ""
 
 #. xBkFL
@@ -6901,14 +6910,14 @@ msgctxt ""
 msgid "<bookmark_value>formulas;calculating with</bookmark_value><bookmark_value>calculating; with formulas</bookmark_value><bookmark_value>examples;formula calculation</bookmark_value>"
 msgstr "<bookmark_value>སྤྱི་འགྲོས།  དྲ་མིག་ནང་།</bookmark_value><bookmark_value>ཙིས་རྒྱག་པ།  སྤྱི་འགྲོས་བརྒྱུད།</bookmark_value><bookmark_value>འདྲེན་སྤྱོད།  གློག་རྡུལ་རེའུ་མིག་སྤྱི་འགྲོས་ནང་།</bookmark_value>"
 
-#. EQdXT
+#. snrES
 #: formulas.xhp
 msgctxt ""
 "formulas.xhp\n"
 "hd_id3155411\n"
 "help.text"
-msgid "<variable id=\"formulas\"><link href=\"text/scalc/guide/formulas.xhp\" name=\"Calculating With Formulas\">Calculating With Formulas</link></variable>"
-msgstr "<variable id=\"formulas\"><link href=\"text/scalc/guide/formulas.xhp\" name=\"སྤྱི་འགྲོས་བརྒྱུད་རྩིས་རྒྱག་པ།\">སྤྱི་འགྲོས་བརྒྱུད་རྩིས་རྒྱག་པ།</link></variable>"
+msgid "<variable id=\"formulas\"><link href=\"text/scalc/guide/formulas.xhp\">Calculating With Formulas</link></variable>"
+msgstr "<variable id=\"formulas\"><link href=\"text/scalc/guide/formulas.xhp\">སྤྱི་འགྲོས་བརྒྱུད་རྩིས་རྒྱག་པ།</link></variable>"
 
 #. iVVxK
 #: formulas.xhp
@@ -7081,23 +7090,23 @@ msgctxt ""
 msgid "It is also possible to nest functions in formulas, as shown in the example. You can also nest functions within functions. The Function Wizard assists you with nested functions."
 msgstr "ད་དུང་སྤྱི་འགྲོས་ནང་རྟེན་གྲངས་འཇུག་ཆོག་པ་དཔེར་ན་གོང་ལྟར་རོ།  དེ་མིན་ ད་དུང་རྟེན་གྲངས་ནང་རྟེན་གྲངས་འཇུག་ཆོག   \"རྟེན་གྲངས་སྣེ་སྟོནཔས།\"ཁྱེད་ལ་རྟེན་གྲངས་འཇུག་ཐབས་ཀྱི་རོགས་རམ་བྱེད།"
 
-#. CQoDo
+#. SEqap
 #: formulas.xhp
 msgctxt ""
 "formulas.xhp\n"
 "par_id3150213\n"
 "help.text"
-msgid "<link href=\"text/scalc/01/04060100.xhp\" name=\"Functions list\">Functions list</link>"
-msgstr "<link href=\"text/scalc/01/04060100.xhp\" name=\"རྟེན་གྲངས་རེའུ་འགོད།\">རྟེན་གྲངས་རེའུ་འགོད།</link>"
+msgid "<link href=\"text/scalc/01/04060100.xhp\">Functions list</link>"
+msgstr "<link href=\"text/scalc/01/04060100.xhp\">རྟེན་གྲངས་རེའུ་འགོད།</link>"
 
-#. nFipB
+#. iENLX
 #: formulas.xhp
 msgctxt ""
 "formulas.xhp\n"
 "par_id3152869\n"
 "help.text"
-msgid "<link href=\"text/scalc/01/04060000.xhp\" name=\"AutoPilot: Functions\">Function Wizard</link>"
-msgstr "<link href=\"text/scalc/01/04060000.xhp\" name=\"རང་འགུལ་ཡིག་ཆའི་ལས་རོགས་ རྟེན་གྲངས།\">རྟེན་གྲངས་སྣེ་སྟོན་པ།</link>"
+msgid "<link href=\"text/scalc/01/04060000.xhp\">Function Wizard</link>"
+msgstr "<link href=\"text/scalc/01/04060000.xhp\">རྟེན་གྲངས་སྣེ་སྟོན་པ།</link>"
 
 #. 6XzRE
 #: fraction_enter.xhp
@@ -7117,14 +7126,14 @@ msgctxt ""
 msgid "<bookmark_value>fractions; entering</bookmark_value><bookmark_value>numbers; entering fractions </bookmark_value><bookmark_value>inserting;fractions</bookmark_value>"
 msgstr "<bookmark_value>གྲངས་ཆ།  ནང་འཇུག</bookmark_value><bookmark_value>གྲངས་ཀ།  གྲངས་ཆ་ནང་འཇུག</bookmark_value>"
 
-#. ry5Y2
+#. 8YdA3
 #: fraction_enter.xhp
 msgctxt ""
 "fraction_enter.xhp\n"
 "hd_id3155411\n"
 "help.text"
-msgid "<variable id=\"fraction_enter\"><link href=\"text/scalc/guide/fraction_enter.xhp\" name=\"Entering Fractions \">Entering Fractions </link></variable>"
-msgstr "<variable id=\"fraction_enter\"><link href=\"text/scalc/guide/fraction_enter.xhp\" name=\"གྲངས་ཆ་ནང་འཇུག\">གྲངས་ཆ་ནང་འཇུག</link></variable>"
+msgid "<variable id=\"fraction_enter\"><link href=\"text/scalc/guide/fraction_enter.xhp\">Entering Fractions </link></variable>"
+msgstr "<variable id=\"fraction_enter\"><link href=\"text/scalc/guide/fraction_enter.xhp\">གྲངས་ཆ་ནང་འཇུག</link></variable>"
 
 #. NEuqx
 #: fraction_enter.xhp
@@ -7180,14 +7189,14 @@ msgctxt ""
 msgid "<bookmark_value>goal seeking;example</bookmark_value><bookmark_value>equations in goal seek</bookmark_value><bookmark_value>calculating;variables in equations</bookmark_value><bookmark_value>variables;calculating equations</bookmark_value><bookmark_value>examples;goal seek</bookmark_value>"
 msgstr "<bookmark_value>འགྱུར་ཚད་རྐྱང་པ་འགྲོལ་བ།</bookmark_value><bookmark_value>འགྱུར་ཚད་རྐྱང་པ་འགྲོལ་བའི་མཉམ་བྱའི་ཚུལ།  འགྱུར་ཚད་རྐྱང་པ་འགྲོལ་བ།</bookmark_value>"
 
-#. QJcX6
+#. 2jF9G
 #: goalseek.xhp
 msgctxt ""
 "goalseek.xhp\n"
 "hd_id3145068\n"
 "help.text"
-msgid "<variable id=\"goalseek\"><link href=\"text/scalc/guide/goalseek.xhp\" name=\"Applying Goal Seek\">Applying Goal Seek</link></variable>"
-msgstr "<variable id=\"goalseek\"><link href=\"text/scalc/guide/goalseek.xhp\" name=\"ཉེར་སྤྱོད་འགྱུར་ཚད་རྐྱང་པ་འགྲོལ་བ།\">ཉེར་སྤྱོད་འགྱུར་ཚད་རྐྱང་པ་འགྲོལ་བ།</link></variable>"
+msgid "<variable id=\"goalseek\"><link href=\"text/scalc/guide/goalseek.xhp\">Applying Goal Seek</link></variable>"
+msgstr "<variable id=\"goalseek\"><link href=\"text/scalc/guide/goalseek.xhp\">ཉེར་སྤྱོད་འགྱུར་ཚད་རྐྱང་པ་འགྲོལ་བ།</link></variable>"
 
 #. yeBWn
 #: goalseek.xhp
@@ -7288,14 +7297,14 @@ msgctxt ""
 msgid "A dialog appears informing you that the Goal Seek was successful. Click <emph>Yes</emph> to enter the result in the cell with the variable value."
 msgstr "ད་ལྟ་གླེང་སྒྲོམ་ཞིག་མཐོང་བར་འགྱུར་  དེས་ཁྱེད་ལ་\"འགྱུར་ཚད་རྐྱང་པ་འགྲོལ་བ།\"ལེགས་གྲུབ་བྱུང་བའི་བརྡ་སྐྱེལ་བར་བྱེད།<emph>ཡིན་</emph>ལ་རྐྱང་རྡེབ་བྱས་ནས་འགྱུར་ཚད་ཐང་གི་འབྲས་བུ་དྲ་མིག་ནང་འཇུག་བྱེད།"
 
-#. iMULv
+#. 6hzpw
 #: goalseek.xhp
 msgctxt ""
 "goalseek.xhp\n"
 "par_id3149409\n"
 "help.text"
-msgid "<link href=\"text/scalc/01/06040000.xhp\" name=\"Goal Seek\">Goal Seek</link>"
-msgstr "<link href=\"text/scalc/01/06040000.xhp\" name=\"འགྱུར་ཚད་རྐྱང་པ་འགྲོལ་བ།\">འགྱུར་ཚད་རྐྱང་པ་འགྲོལ་བ།</link>"
+msgid "<link href=\"text/scalc/01/06040000.xhp\">Goal Seek</link>"
+msgstr "<link href=\"text/scalc/01/06040000.xhp\">འགྱུར་ཚད་རྐྱང་པ་འགྲོལ་བ།</link>"
 
 #. UhcpV
 #: html_doc.xhp
@@ -7315,14 +7324,14 @@ msgctxt ""
 msgid "<bookmark_value>HTML; sheets</bookmark_value><bookmark_value>sheets; HTML</bookmark_value><bookmark_value>saving; sheets in HTML</bookmark_value><bookmark_value>opening; sheets in HTML</bookmark_value>"
 msgstr "<bookmark_value>HTML; ལས་ཀའི་རེའུ་མིག</bookmark_value><bookmark_value>ལས་ཀའི་རེའུ་མིག  HTML</bookmark_value><bookmark_value>ཉར་ཚགས་བྱེད།  ལས་ཀའི་རེའུ་མིག་ཉིད་ HTML རྣམ་གཞག་གི་ཐོག་ནས།</bookmark_value><bookmark_value>ཁ་ཕྱེ་དགོས།  ལས་ཀའི་རེའུ་མིག་ HTML རྣམ་གཞག་ཏུ་བརྩི།</bookmark_value>"
 
-#. aPFgV
+#. KAWf3
 #: html_doc.xhp
 msgctxt ""
 "html_doc.xhp\n"
 "hd_id3150542\n"
 "help.text"
-msgid "<variable id=\"html_doc\"><link href=\"text/scalc/guide/html_doc.xhp\" name=\"Saving and Opening Sheets in HTML\">Saving and Opening Sheets in HTML</link></variable>"
-msgstr "<variable id=\"html_doc\"><link href=\"text/scalc/guide/html_doc.xhp\" name=\"ལས་ཀའི་རེའུ་མིག་ HTML རྣམ་གཞག་གི་ཐོག་ནས་ཉར་ཚགས་དང་ཁ་ཕྱེ་བ།\">ལས་ཀའི་རེའུ་མིག་ HTML རྣམ་གཞག་གི་ཐོག་ནས་ཉར་ཚགས་དང་ཁ་ཕྱེ་བ།</link></variable>"
+msgid "<variable id=\"html_doc\"><link href=\"text/scalc/guide/html_doc.xhp\">Saving and Opening Sheets in HTML</link></variable>"
+msgstr "<variable id=\"html_doc\"><link href=\"text/scalc/guide/html_doc.xhp\">ལས་ཀའི་རེའུ་མིག་ HTML རྣམ་གཞག་གི་ཐོག་ནས་ཉར་ཚགས་དང་ཁ་ཕྱེ་བ།</link></variable>"
 
 #. qFyZS
 #: html_doc.xhp
@@ -7414,23 +7423,23 @@ msgctxt ""
 msgid "All <item type=\"productname\">%PRODUCTNAME</item> Calc options are now available to you. However, not all options that <item type=\"productname\">%PRODUCTNAME</item> Calc offers for editing can be saved in HTML format."
 msgstr "ད་ལྟ་  <item type=\"productname\">%PRODUCTNAME</item> གློག་རྡུལ་རེའུ་མིག་གི་འདེམས་གཞི་ཐམས་བཅད་སྤྱད་ཆོག   འོན་ཀྱང་$[officename] གློག་རྡུལ་རེའུ་མིག་གིས་མཁོ་འདོན་བྱས་པའི་རྩོམ་སྒྲིག་འདེམས་གཞི་ཡོད་ཚད་ HTML རྣམ་གཞག་ལ་ཉར་ཚགས་ཐུབ་པ་ནི་ཡིན།"
 
-#. EVA3w
+#. jZZG4
 #: html_doc.xhp
 msgctxt ""
 "html_doc.xhp\n"
 "par_id3150370\n"
 "help.text"
-msgid "<link href=\"text/shared/01/01020000.xhp\" name=\"File - Open\">File - Open</link>"
-msgstr "<link href=\"text/shared/01/01020000.xhp\" name=\"ཡིག་ཆ་ - ཁ་ཕྱེ་བ་\">[ཡིག་ཆ།] - [ཁ་ཕྱེ་བ།...]</link>"
+msgid "<link href=\"text/shared/01/01020000.xhp\">File - Open</link>"
+msgstr "<link href=\"text/shared/01/01020000.xhp\">[ཡིག་ཆ།] - [ཁ་ཕྱེ་བ།...]</link>"
 
-#. ApBCr
+#. kdzh5
 #: html_doc.xhp
 msgctxt ""
 "html_doc.xhp\n"
 "par_id3150199\n"
 "help.text"
-msgid "<link href=\"text/shared/01/01070000.xhp\" name=\"File - Save As\">File - Save As</link>"
-msgstr "<link href=\"text/shared/01/01070000.xhp\" name=\"ཡིག་ཆ་ - གཞན་ཉར་\">[ཡིག་ཆ།] - [གཞན་ཉར།...]</link>"
+msgid "<link href=\"text/shared/01/01070000.xhp\">File - Save As</link>"
+msgstr "<link href=\"text/shared/01/01070000.xhp\">[ཡིག་ཆ།] - [གཞན་ཉར།...]</link>"
 
 #. 66Qu3
 #: integer_leading_zero.xhp
@@ -7450,14 +7459,14 @@ msgctxt ""
 msgid "<bookmark_value>zero values; entering leading zeros</bookmark_value>  <bookmark_value>numbers; with leading zeros</bookmark_value>  <bookmark_value>leading zeros</bookmark_value>  <bookmark_value>integers with leading zeros</bookmark_value>  <bookmark_value>cells; changing text/number formats</bookmark_value>  <bookmark_value>formats; changing text/number</bookmark_value>  <bookmark_value>text in cells; changing to numbers</bookmark_value>  <bookmark_value>converting;text with leading zeros, into numbers</bookmark_value>"
 msgstr "<bookmark_value>ཀླད་ཀོར་ཐང་།  སྔོན་འཇོག་ཀླད་ཀོར་གྲངས་ནང་འཇུག</bookmark_value><bookmark_value>གྲངས་ཀ།  སྔོན་འཇོག་ཀླད་ཀོར་འཁྱེར་བའི།</bookmark_value><bookmark_value>སྔོན་འཇོག་ཀླད་ཀོར།</bookmark_value><bookmark_value>སྔོན་འཇོག་ཀླད་ཀོར་འཁྱེར་བའི་ཧྲིལ་གྲངས་</bookmark_value><bookmark_value>གྲངས་ཀ་; ཡིག་དེབ་/གྲངས་ཀའི་རྣམ་གཞག་དག་བཅོས་</bookmark_value><bookmark_value>དྲ་མིག་; ཡིག་དེབ་/གྲངས་ཀའི་རྣམ་གཞག་དག་བཅོས་</bookmark_value><bookmark_value>རྣམ་གཞག་; ཡིག་དེབ་/གྲངས་ཀ་དག་བཅོས་</bookmark_value><bookmark_value>དྲ་མིག་ནང་གི་ཡིག་དེབ་; གྲངས་ཀར་དག་བཅོས་བྱེད་པ་</bookmark_value>"
 
-#. WJnMv
+#. KD3G4
 #: integer_leading_zero.xhp
 msgctxt ""
 "integer_leading_zero.xhp\n"
 "hd_id3147560\n"
 "help.text"
-msgid "<variable id=\"integer_leading_zero\"><link href=\"text/scalc/guide/integer_leading_zero.xhp\" name=\"Entering a Number with Leading Zeros\">Entering a Number with Leading Zeros</link></variable>"
-msgstr "<variable id=\"integer_leading_zero\"><link href=\"text/scalc/guide/integer_leading_zero.xhp\" name=\"སྔོན་འཇོག་ཀླད་ཀོར་ཡོད་པའི་གྲངས་ནང་འཇུག་བྱེད་པ།\">སྔོན་འཇོག་ཀླད་ཀོར་ཡོད་པའི་གྲངས་ནང་འཇུག་བྱེད་པ།</link></variable>"
+msgid "<variable id=\"integer_leading_zero\"><link href=\"text/scalc/guide/integer_leading_zero.xhp\">Entering a Number with Leading Zeros</link></variable>"
+msgstr "<variable id=\"integer_leading_zero\"><link href=\"text/scalc/guide/integer_leading_zero.xhp\">སྔོན་འཇོག་ཀླད་ཀོར་ཡོད་པའི་གྲངས་ནང་འཇུག་བྱེད་པ།</link></variable>"
 
 #. ZFk6Q
 #: integer_leading_zero.xhp
@@ -7576,14 +7585,14 @@ msgctxt ""
 msgid "<bookmark_value>accessibility; %PRODUCTNAME Calc shortcuts</bookmark_value><bookmark_value>shortcut keys;%PRODUCTNAME Calc accessibility</bookmark_value>"
 msgstr "<bookmark_value>གཞོགས་གདེགས་བྱེད་ནུས། %PRODUCTNAME གློག་རྡུལ་རེའུ་མིག</bookmark_value>"
 
-#. 5D3u4
+#. apy4f
 #: keyboard.xhp
 msgctxt ""
 "keyboard.xhp\n"
 "hd_id3145120\n"
 "help.text"
-msgid "<variable id=\"keyboard\"><link href=\"text/scalc/guide/keyboard.xhp\" name=\"Shortcut Keys (%PRODUCTNAME Calc Accessibility)\">Shortcut Keys (<item type=\"productname\">%PRODUCTNAME</item> Calc Accessibility)</link></variable>"
-msgstr "<variable id=\"keyboard\"><link href=\"text/scalc/guide/keyboard.xhp\" name=\"མྱུར་བདེའི་མཐེབ་(%PRODUCTNAME གློག་རྡུལ་རེའུ་མིག་གཞོགས་གདེགས་བྱེད་ནུས་)\">མྱུར་བདེའི་མཐེབ་(<item type=\"productname\">%PRODUCTNAME</item> གློག་རྡུལ་རེའུ་མིག་གི་གཞོགས་གདེགས་བྱེད་ནུས་)</link></variable>"
+msgid "<variable id=\"keyboard\"><link href=\"text/scalc/guide/keyboard.xhp\">Shortcut Keys (<item type=\"productname\">%PRODUCTNAME</item> Calc Accessibility)</link></variable>"
+msgstr "<variable id=\"keyboard\"><link href=\"text/scalc/guide/keyboard.xhp\">མྱུར་བདེའི་མཐེབ་(<item type=\"productname\">%PRODUCTNAME</item> གློག་རྡུལ་རེའུ་མིག་གི་གཞོགས་གདེགས་བྱེད་ནུས་)</link></variable>"
 
 #. P7WD8
 #: keyboard.xhp
@@ -7639,14 +7648,14 @@ msgctxt ""
 msgid "Controlling the Outline"
 msgstr "ཚོད་འཛིན་རྩ་འཛིན།"
 
-#. rBMm4
+#. CCpxA
 #: keyboard.xhp
 msgctxt ""
 "keyboard.xhp\n"
 "par_id3146120\n"
 "help.text"
-msgid "You can use the keyboard in <link href=\"text/scalc/01/12080000.xhp\" name=\"Outline\">Outline</link>:"
-msgstr "<link href=\"text/scalc/01/12080000.xhp\" name=\"རྩ་འཛིན།\">རྩ་འཛིན།</link>ནང་མཐེབ་གཞོང་སྤྱད་ཆོག་པ་སྟེ།"
+msgid "You can use the keyboard in <link href=\"text/scalc/01/12080000.xhp\">Outline</link>:"
+msgstr "<link href=\"text/scalc/01/12080000.xhp\">རྩ་འཛིན།</link>ནང་མཐེབ་གཞོང་སྤྱད་ཆོག་པ་སྟེ།"
 
 #. L9VfN
 #: keyboard.xhp
@@ -7783,14 +7792,14 @@ msgctxt ""
 msgid "<bookmark_value>tables; freezing</bookmark_value>  <bookmark_value>title rows; freezing during table split</bookmark_value>  <bookmark_value>rows; freezing</bookmark_value>  <bookmark_value>columns; freezing</bookmark_value>  <bookmark_value>freezing rows or columns</bookmark_value>  <bookmark_value>headers; freezing during table split</bookmark_value>  <bookmark_value>scrolling prevention in tables</bookmark_value>  <bookmark_value>windows; splitting</bookmark_value>  <bookmark_value>tables; splitting windows</bookmark_value>"
 msgstr "<bookmark_value>བསྡོམས་བཅད། རེའུ་མིག</bookmark_value><bookmark_value>རེའུ་མིག བསྡོམས་བཅད།</bookmark_value><bookmark_value>ཁ་བྱང་ཕྲེང་།  རེའུ་མིག་འཕྲལ་བ་¶བསྡོམས་བཅད།</bookmark_value><bookmark_value>ཕྲེང་། བསྡོམས་བཅད།</bookmark_value><bookmark_value>སྟར།  བསྡོམས་བཅད།</bookmark_value><bookmark_value>བསྡོམས་བཅད། ཕྲེང་ངམ་སྟར།</bookmark_value><bookmark_value>ཁ་བྱང་། རེའུ་མིག་འཕྲལ་བའི་སྐབས་བསྡོམས་བཅད།</bookmark_value><bookmark_value>རེའུ་མིག་ནང་འདྲིལ་འགུལ་མི་ཆོག་པ།</bookmark_value><bookmark_value>སྒེའུ་ཁུང་། འཕྲལ་བ།</bookmark_value><bookmark_value>རེའུ་མིག  སྒེའུ་ཁུང་འཕྲལ་བ།</bookmark_value>"
 
-#. 2WVYD
+#. R5isM
 #: line_fix.xhp
 msgctxt ""
 "line_fix.xhp\n"
 "hd_id3154684\n"
 "help.text"
-msgid "<variable id=\"line_fix\"><link href=\"text/scalc/guide/line_fix.xhp\" name=\"Freezing Rows or Columns as Headers\">Freezing Rows or Columns as Headers</link> </variable>"
-msgstr "<variable id=\"line_fix\"><link href=\"text/scalc/guide/line_fix.xhp\" name=\"ཕྲེང་ངམ་སྟར་པ་ཉིད་ཁ་བྱང་ལ་བརྩིས་ནས་རྒྱས་བཅད་པ།\">ཕྲེང་ངམ་སྟར་པ་ཉིད་ཁ་བྱང་ལ་བརྩིས་ནས་རྒྱས་བཅད་པ།</link></variable>"
+msgid "<variable id=\"line_fix\"><link href=\"text/scalc/guide/line_fix.xhp\">Freezing Rows or Columns as Headers</link> </variable>"
+msgstr "<variable id=\"line_fix\"><link href=\"text/scalc/guide/line_fix.xhp\">ཕྲེང་ངམ་སྟར་པ་ཉིད་ཁ་བྱང་ལ་བརྩིས་ནས་རྒྱས་བཅད་པ།</link></variable>"
 
 #. rQbwQ
 #: line_fix.xhp
@@ -7855,32 +7864,32 @@ msgctxt ""
 msgid "If you want to print a certain row on all pages of a document, choose <item type=\"menuitem\">Format - Print ranges - Edit</item>."
 msgstr "གལ་སྲིད་ཁྱེད་ནས་ཡིག་ཕྲེང་གང་ཞིག་ཡིག་ཚགས་ཀྱི་གཏག་པར་ཤོག་ངོས་ཡོད་ཚད་ཐོག་ཐོན་རྒྱུའི་ཐུགས་རེ་མཛད་ན་<emph>[ཡིག་ཆ།] - [གཏག་པར་ས་ཁོངས།] - [རྩོམ་སྒྲིག...]འདེམས་པར་མཛོད།</emph>"
 
-#. Z29B7
+#. wn5VL
 #: line_fix.xhp
 msgctxt ""
 "line_fix.xhp\n"
 "par_id3147004\n"
 "help.text"
-msgid "<link href=\"text/scalc/01/07090000.xhp\" name=\"View - Freeze Cells - Freeze Rows and Columns\">View - Freeze Rows and Columns</link>"
+msgid "<link href=\"text/scalc/01/07090000.xhp\">View - Freeze Rows and Columns</link>"
 msgstr ""
 
-#. RbKLt
+#. mJABn
 #: line_fix.xhp
 msgctxt ""
 "line_fix.xhp\n"
 "par_id3150088\n"
 "help.text"
-msgid "<link href=\"text/scalc/01/07080000.xhp\" name=\"View - Split\">View - Split Window</link>"
-msgstr "<link href=\"text/scalc/01/07080000.xhp\" name=\"སྒེའུ་ཁུང་འཕྲལ་བ།\">སྒེའུ་ཁུང་འཕྲལ་བ།</link>"
+msgid "<link href=\"text/scalc/01/07080000.xhp\">View - Split Window</link>"
+msgstr "<link href=\"text/scalc/01/07080000.xhp\">སྒེའུ་ཁུང་འཕྲལ་བ།</link>"
 
-#. uaqGG
+#. rLJGy
 #: line_fix.xhp
 msgctxt ""
 "line_fix.xhp\n"
 "par_id3150304\n"
 "help.text"
-msgid "<link href=\"text/scalc/01/05080300.xhp\" name=\"Format - Print ranges - Edit\">Format - Print ranges - Edit</link>"
-msgstr "<link href=\"text/scalc/01/05080300.xhp\" name=\"གཏག་པར་ས་ཁོངས་རྩོམ་སྒྲིག་བྱེད་པ།\">གཏག་པར་ས་ཁོངས་རྩོམ་སྒྲིག་བྱེད་པ།</link>"
+msgid "<link href=\"text/scalc/01/05080300.xhp\">Format - Print ranges - Edit</link>"
+msgstr "<link href=\"text/scalc/01/05080300.xhp\">གཏག་པར་ས་ཁོངས་རྩོམ་སྒྲིག་བྱེད་པ།</link>"
 
 #. JGxbG
 #: main.xhp
@@ -7900,14 +7909,14 @@ msgctxt ""
 msgid "<bookmark_value>HowTos for Calc</bookmark_value><bookmark_value>instructions; $[officename] Calc</bookmark_value>"
 msgstr "<bookmark_value>$[officename] གློག་རྡུལ་རེའུ་མིག  གསལ་བཤད།</bookmark_value><bookmark_value>གསལ་བཤད། $[officename] གློག་རྡུལ་རེའུ་མིག</bookmark_value>"
 
-#. CDGGu
+#. Hjpmb
 #: main.xhp
 msgctxt ""
 "main.xhp\n"
 "hd_id3150770\n"
 "help.text"
-msgid "<variable id=\"main\"><link href=\"text/scalc/guide/main.xhp\" name=\"Instructions for Using $[officename] Calc\">Instructions for Using $[officename] Calc</link></variable>"
-msgstr "<variable id=\"main\"><link href=\"text/scalc/guide/main.xhp\" name=\"$[officename] གློག་རྡུལ་རེའུ་མིག་བེད་སྤྱོད་གསལ་བཤད།\">$[officename] གློག་རྡུལ་རེའུ་མིག་བེད་སྤྱོད་གསལ་བཤད།</link></variable>"
+msgid "<variable id=\"main\"><link href=\"text/scalc/guide/main.xhp\">Instructions for Using $[officename] Calc</link></variable>"
+msgstr "<variable id=\"main\"><link href=\"text/scalc/guide/main.xhp\">$[officename] གློག་རྡུལ་རེའུ་མིག་བེད་སྤྱོད་གསལ་བཤད།</link></variable>"
 
 #. izTXs
 #: main.xhp
@@ -7999,14 +8008,14 @@ msgctxt ""
 msgid "<bookmark_value>cells; selecting</bookmark_value>      <bookmark_value>marking cells</bookmark_value>      <bookmark_value>selecting;cells</bookmark_value>      <bookmark_value>multiple cells selection</bookmark_value>      <bookmark_value>selection modes in spreadsheets</bookmark_value>      <bookmark_value>tables; selecting ranges</bookmark_value>"
 msgstr "<bookmark_value>དྲ་མིག འདེམས་པ། </bookmark_value><bookmark_value>བྲིས་རྟགས་དྲ་མིག</bookmark_value><bookmark_value>འདེམས་པ།  དྲ་མིག</bookmark_value><bookmark_value>དྲ་མིག་མང་པོ་འདེམས་པ།</bookmark_value><bookmark_value> རེའུ་མིག་ནང་མ་ཚུལ་འདེམས་པ།</bookmark_value><bookmark_value>རེའུ་མིག  ས་ཁོངས་འདེམས་པ།</bookmark_value>"
 
-#. agB5T
+#. mGHxj
 #: mark_cells.xhp
 msgctxt ""
 "mark_cells.xhp\n"
 "hd_id3153361\n"
 "help.text"
-msgid "<variable id=\"mark_cells\"><link href=\"text/scalc/guide/mark_cells.xhp\" name=\"Selecting Multiple Cells\">Selecting Multiple Cells</link></variable>"
-msgstr "<variable id=\"mark_cells\"><link href=\"text/scalc/guide/mark_cells.xhp\" name=\"དྲ་མིག་མང་པོ་འདེམས་པ།\">དྲ་མིག་མང་པོ་འདེམས་པ།</link></variable>"
+msgid "<variable id=\"mark_cells\"><link href=\"text/scalc/guide/mark_cells.xhp\">Selecting Multiple Cells</link></variable>"
+msgstr "<variable id=\"mark_cells\"><link href=\"text/scalc/guide/mark_cells.xhp\">དྲ་མིག་མང་པོ་འདེམས་པ།</link></variable>"
 
 #. DnPDm
 #: mark_cells.xhp
@@ -8188,14 +8197,14 @@ msgctxt ""
 msgid "A mouse click in a cell adds it to the already marked cells. A mouse click in a marked cell unmarks it. Alternatively, <switchinline select=\"sys\"><caseinline select=\"MAC\">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>-click the cells."
 msgstr ""
 
-#. 2tZHj
+#. BBU2x
 #: mark_cells.xhp
 msgctxt ""
 "mark_cells.xhp\n"
 "par_id3154487\n"
 "help.text"
-msgid "<link href=\"text/scalc/main0208.xhp\" name=\"Status bar\">Status bar</link>"
-msgstr "<link href=\"text/scalc/main0208.xhp\" name=\"གནས་སྟངས་ཚང་།\">གནས་སྟངས་ཚང་།</link>"
+msgid "<link href=\"text/scalc/main0208.xhp\">Status bar</link>"
+msgstr "<link href=\"text/scalc/main0208.xhp\">གནས་སྟངས་ཚང་།</link>"
 
 #. AU6FR
 #: matrixformula.xhp
@@ -8215,14 +8224,14 @@ msgctxt ""
 msgid "<bookmark_value>matrices; entering matrix formulas</bookmark_value><bookmark_value>formulas; matrix formulas</bookmark_value><bookmark_value>inserting;matrix formulas</bookmark_value>"
 msgstr "<bookmark_value>ལིང་ཚེ། ལིང་ཚེའི་སྤྱི་འགྲོས་ནང་འཇུག</bookmark_value><bookmark_value>སྤྱི་འགྲོས།  ལིང་ཚེའི་སྤྱི་འགྲོས།</bookmark_value>"
 
-#. vzNxD
+#. vKCkN
 #: matrixformula.xhp
 msgctxt ""
 "matrixformula.xhp\n"
 "hd_id3153969\n"
 "help.text"
-msgid "<variable id=\"matrixformula\"><link href=\"text/scalc/guide/matrixformula.xhp\" name=\"Entering Matrix Formulas\">Entering Matrix Formulas</link></variable>"
-msgstr "<variable id=\"matrixformula\"><link href=\"text/scalc/guide/matrixformula.xhp\" name=\"ལིང་ཚེའི་སྤྱི་འགྲོས་ནང་འཇུག\">ལིང་ཚེའི་སྤྱི་འགྲོས་ནང་འཇུག</link></variable>"
+msgid "<variable id=\"matrixformula\"><link href=\"text/scalc/guide/matrixformula.xhp\">Entering Matrix Formulas</link></variable>"
+msgstr "<variable id=\"matrixformula\"><link href=\"text/scalc/guide/matrixformula.xhp\">ལིང་ཚེའི་སྤྱི་འགྲོས་ནང་འཇུག</link></variable>"
 
 #. uo5ny
 #: matrixformula.xhp
@@ -8575,14 +8584,14 @@ msgctxt ""
 msgid "<bookmark_value>sheets; showing multiple</bookmark_value><bookmark_value>sheet tabs;using</bookmark_value><bookmark_value>views;multiple sheets</bookmark_value>"
 msgstr "<bookmark_value>ལས་ཁྲ། </bookmark_value><bookmark_value>ལས་ཁྲའི་ཤོག་བྱང་མང་པོ་མངོན་པ།</bookmark_value><bookmark_value>མཐོང་རིས་སྤྱོད་པ།  ལས་ཁྲ་མང་པོ།</bookmark_value>"
 
-#. kGEYq
+#. WcDqZ
 #: multi_tables.xhp
 msgctxt ""
 "multi_tables.xhp\n"
 "hd_id3150769\n"
 "help.text"
-msgid "<variable id=\"multi_tables\"><link href=\"text/scalc/guide/multi_tables.xhp\" name=\"Navigating Through Sheet Tabs\">Navigating Through Sheet Tabs</link> </variable>"
-msgstr "<variable id=\"multi_tables\"><link href=\"text/scalc/guide/multi_tables.xhp\" name=\"ལས་ཁྲའི་ཤོག་བྱང་མིག་བཤར།\">ལས་ཁྲའི་ཤོག་བྱང་མིག་བཤར།</link></variable>"
+msgid "<variable id=\"multi_tables\"><link href=\"text/scalc/guide/multi_tables.xhp\">Navigating Through Sheet Tabs</link> </variable>"
+msgstr "<variable id=\"multi_tables\"><link href=\"text/scalc/guide/multi_tables.xhp\">ལས་ཁྲའི་ཤོག་བྱང་མིག་བཤར།</link></variable>"
 
 #. Fpcz8
 #: multi_tables.xhp
@@ -8638,14 +8647,14 @@ msgctxt ""
 msgid "<bookmark_value>multiple operations</bookmark_value><bookmark_value>what if operations;two variables</bookmark_value><bookmark_value>tables; multiple operations in</bookmark_value><bookmark_value>data tables; multiple operations in</bookmark_value><bookmark_value>cross-classified tables</bookmark_value>"
 msgstr "<bookmark_value>ཟློས་མང་བཀོལ་སྤྱོད།</bookmark_value><bookmark_value>what if བཀོལ་སྤྱོད།</bookmark_value><bookmark_value>རེའུ་མིག  ཟློས་མང་བཀོལ་སྤྱོད།</bookmark_value><bookmark_value>གཞི་གྲངས་རེའུ་མིག ཟློས་མང་བཀོལ་སྤྱོད།</bookmark_value><bookmark_value>སྣོལ་ནས་རེའུ་མིག་གི་རིགས་དབྱེ།</bookmark_value>"
 
-#. aDj8d
+#. XKeKS
 #: multioperation.xhp
 msgctxt ""
 "multioperation.xhp\n"
 "hd_id3147559\n"
 "help.text"
-msgid "<variable id=\"multioperation\"><link href=\"text/scalc/guide/multioperation.xhp\" name=\"Applying Multiple Operations\">Applying Multiple Operations</link></variable>"
-msgstr "<variable id=\"multioperation\"><link href=\"text/scalc/guide/multioperation.xhp\" name=\"ཟློས་མང་རྩིས་རྒྱག་ཉེར་སྤྱོད།\">ཟློས་མང་རྩིས་རྒྱག་ཉེར་སྤྱོད།</link></variable>"
+msgid "<variable id=\"multioperation\"><link href=\"text/scalc/guide/multioperation.xhp\">Applying Multiple Operations</link></variable>"
+msgstr "<variable id=\"multioperation\"><link href=\"text/scalc/guide/multioperation.xhp\">ཟློས་མང་རྩིས་རྒྱག་ཉེར་སྤྱོད།</link></variable>"
 
 #. mX8Gh
 #: multioperation.xhp
@@ -8944,14 +8953,14 @@ msgctxt ""
 msgid "Close the dialog with OK. You see the profits for the different selling prices in the range E2:H11."
 msgstr "གཏན་འཁེལ་གནོན་མཐེབ་རྐྱང་རྡེབ་ཀྱིས་གླེང་སྒྲོམ་ཁ་བརྒྱབ།   ཁྱེད་ཀྱིས་ས་ཁོངས་ E2:H11 ནང་ཁེ་བཟང་ཐང་མཐོང་ཐུབ།  སྐབས་འགར་ངེས་པར་དུ་སྔོན་ལ་མཐེབ་(F9)གནོན་ནས་ལས་ཁྲ་གསར་བཅོས་དགོས།"
 
-#. RDzCg
+#. fgJoa
 #: multioperation.xhp
 msgctxt ""
 "multioperation.xhp\n"
 "par_id3155104\n"
 "help.text"
-msgid "<link href=\"text/scalc/01/12060000.xhp\" name=\"Multiple operations\">Multiple operations</link>"
-msgstr "<link href=\"text/scalc/01/12060000.xhp\" name=\"ཟློས་མང་རྩིས་རྒྱག\">ཟློས་མང་རྩིས་རྒྱག</link>"
+msgid "<link href=\"text/scalc/01/12060000.xhp\">Multiple operations</link>"
+msgstr "<link href=\"text/scalc/01/12060000.xhp\">ཟློས་མང་རྩིས་རྒྱག</link>"
 
 #. fdSJp
 #: multitables.xhp
@@ -8971,14 +8980,14 @@ msgctxt ""
 msgid "<bookmark_value>sheets; inserting</bookmark_value>      <bookmark_value>inserting; sheets</bookmark_value>      <bookmark_value>sheets; selecting multiple</bookmark_value>      <bookmark_value>appending sheets</bookmark_value>      <bookmark_value>selecting;multiple sheets</bookmark_value>      <bookmark_value>multiple sheets</bookmark_value>      <bookmark_value>calculating;multiple sheets</bookmark_value>"
 msgstr "<bookmark_value>ལས་ཁྲ།  བསྒར་འཛུད།</bookmark_value><bookmark_value>བསྒར་འཛུད།  ལས་ཁྲ།</bookmark_value><bookmark_value>ལས་ཁྲ་མང་པོ་འདེམས་པ།</bookmark_value><bookmark_value>ལས་ཁྲ།  ཆབས་ཅིག་གསབ་སྐོང་མང་པོ་བྱེད་པ།</bookmark_value><bookmark_value>ལས་ཁྲ་འདེད་སྣོན།</bookmark_value>"
 
-#. kAW58
+#. EaKEB
 #: multitables.xhp
 msgctxt ""
 "multitables.xhp\n"
 "hd_id3154759\n"
 "help.text"
-msgid "<variable id=\"multitables\"><link href=\"text/scalc/guide/multitables.xhp\" name=\"Applying Multiple Sheets\">Applying Multiple Sheets</link></variable>"
-msgstr "<variable id=\"multitables\"><link href=\"text/scalc/guide/multitables.xhp\" name=\"ལས་ཁྲ་མང་པོ་ཉེར་སྤྱོད།\">ལས་ཁྲ་མང་པོ་ཉེར་སྤྱོད།</link></variable>"
+msgid "<variable id=\"multitables\"><link href=\"text/scalc/guide/multitables.xhp\">Applying Multiple Sheets</link></variable>"
+msgstr "<variable id=\"multitables\"><link href=\"text/scalc/guide/multitables.xhp\">ལས་ཁྲ་མང་པོ་ཉེར་སྤྱོད།</link></variable>"
 
 #. VB2mS
 #: multitables.xhp
@@ -9115,23 +9124,23 @@ msgctxt ""
 msgid "<bookmark_value>comments; on cells</bookmark_value>      <bookmark_value>cells;comments</bookmark_value>      <bookmark_value>remarks on cells</bookmark_value>      <bookmark_value>formatting;comments on cells</bookmark_value>      <bookmark_value>viewing;comments on cells</bookmark_value>      <bookmark_value>displaying; comments</bookmark_value>"
 msgstr ""
 
-#. YBYVe
+#. GBkCp
 #: note_insert.xhp
 msgctxt ""
 "note_insert.xhp\n"
 "hd_id3153968\n"
 "help.text"
-msgid "<variable id=\"note_insert\"><link href=\"text/scalc/guide/note_insert.xhp\" name=\"Inserting and Editing Comments\">Inserting and Editing Comments</link></variable>"
-msgstr "<variable id=\"note_insert\"><link href=\"text/scalc/guide/note_insert.xhp\" name=\"ཟུར་མཆན་བསྒར་འཛུད་དང་རྩོམ་སྒྲིག\">ཟུར་མཆན་བསྒར་འཛུད་དང་རྩོམ་སྒྲིག</link></variable>"
+msgid "<variable id=\"note_insert\"><link href=\"text/scalc/guide/note_insert.xhp\">Inserting and Editing Comments</link></variable>"
+msgstr "<variable id=\"note_insert\"><link href=\"text/scalc/guide/note_insert.xhp\">ཟུར་མཆན་བསྒར་འཛུད་དང་རྩོམ་སྒྲིག</link></variable>"
 
-#. ppiA9
+#. LT56i
 #: note_insert.xhp
 msgctxt ""
 "note_insert.xhp\n"
 "par_id3150440\n"
 "help.text"
-msgid "You can assign a comment to each cell by choosing <link href=\"text/shared/01/04050000.xhp\" name=\"Insert - Comment\"><emph>Insert - Comment</emph></link>. The comment is indicated by a small red square, the comment indicator, in the cell."
-msgstr "ཁྱེད་ཀྱིས་ཚལ་ཐོའི་བཀའ་ཚིག་<link href=\"text/shared/01/04050000.xhp\" name=\"བསྒར་འཛུད་ - ཟུར་མཆན་\">བསྒར་འཛུད་ - ཟུར་མཆན་</link>ལ་བརྟེན་ནས་དྲ་མིག་སོ་སོའི་ནང་ཟུར་མཆན་བསྒར་འཛུད་ཆོག  ཟུར་མཆན་ལྡན་པའི་དྲ་མིག་ནི་དྲ་མིག་གཡས་སྟེང་ཟུར་གྱི་དམར་པོའི་གྲུ་བཞི་ཆུང་ཆུང་(ཟུར་མཆན་རྟགས་འགོད་)གྱིས་མཚོན།"
+msgid "You can assign a comment to each cell by choosing <link href=\"text/shared/01/04050000.xhp\"><emph>Insert - Comment</emph></link>. The comment is indicated by a small red square, the comment indicator, in the cell."
+msgstr "ཁྱེད་ཀྱིས་ཚལ་ཐོའི་བཀའ་ཚིག་<link href=\"text/shared/01/04050000.xhp\">བསྒར་འཛུད་ - ཟུར་མཆན་</link>ལ་བརྟེན་ནས་དྲ་མིག་སོ་སོའི་ནང་ཟུར་མཆན་བསྒར་འཛུད་ཆོག  ཟུར་མཆན་ལྡན་པའི་དྲ་མིག་ནི་དྲ་མིག་གཡས་སྟེང་ཟུར་གྱི་དམར་པོའི་གྲུ་བཞི་ཆུང་ཆུང་(ཟུར་མཆན་རྟགས་འགོད་)གྱིས་མཚོན།"
 
 #. ZGJBc
 #: note_insert.xhp
@@ -9196,14 +9205,14 @@ msgctxt ""
 msgid "To display a help tip for a selected cell, use <emph>Data - Validity - Input Help</emph>."
 msgstr "བདམས་ཟིན་དྲ་མིག་གི་རོགས་རམ་དྲན་སྟོན་མངོན་དགོས་ན་<emph>[གཞི་གྲངས།] - [ནུས་ལྡན་རང་བཞིན།...] - \"རོགས་རམ་ནང་འཇུག\"</emph>སྤྱོད་རོགས།"
 
-#. yGtBB
+#. pF67W
 #: note_insert.xhp
 msgctxt ""
 "note_insert.xhp\n"
 "par_id3153707\n"
 "help.text"
-msgid "<link href=\"text/shared/01/04050000.xhp\" name=\"Insert - Comment\">Insert - Comment</link>"
-msgstr "<link href=\"text/shared/01/04050000.xhp\" name=\"ཟུར་མཆན།\">ཟུར་མཆན།</link>"
+msgid "<link href=\"text/shared/01/04050000.xhp\">Insert - Comment</link>"
+msgstr "<link href=\"text/shared/01/04050000.xhp\">ཟུར་མཆན།</link>"
 
 #. 97G62
 #: numbers_text.xhp
@@ -9223,13 +9232,13 @@ msgctxt ""
 msgid "<bookmark_value>formats; text as numbers</bookmark_value>    <bookmark_value>time format conversion</bookmark_value>    <bookmark_value>date formats;conversion</bookmark_value>    <bookmark_value>converting;text, into numbers</bookmark_value>"
 msgstr ""
 
-#. pqhdm
+#. AAaGt
 #: numbers_text.xhp
 msgctxt ""
 "numbers_text.xhp\n"
 "hd_id0908200901265171\n"
 "help.text"
-msgid "<variable id=\"numbers_text\"><link href=\"text/scalc/guide/numbers_text.xhp\" name=\"Converting Text to Numbers\">Converting Text to Numbers</link></variable>"
+msgid "<variable id=\"numbers_text\"><link href=\"text/scalc/guide/numbers_text.xhp\">Converting Text to Numbers</link></variable>"
 msgstr ""
 
 #. rpHje
@@ -9448,23 +9457,23 @@ msgctxt ""
 msgid "Changing the default text to number conversion settings"
 msgstr ""
 
-#. p9t4t
+#. 9NL9J
 #: numbers_text.xhp
 msgctxt ""
 "numbers_text.xhp\n"
 "par_id111567772433803\n"
 "help.text"
-msgid "The text to number conversion can be customized in the <link href=\"text/shared/optionen/detailedcalculation.xhp\" name=\"detailed_link\">Detailed Calculation Settings</link> option."
+msgid "The text to number conversion can be customized in the <link href=\"text/shared/optionen/detailedcalculation.xhp\">Detailed Calculation Settings</link> option."
 msgstr ""
 
-#. WE8wt
+#. igDCX
 #: numbers_text.xhp
 msgctxt ""
 "numbers_text.xhp\n"
 "par_id0908200901265544\n"
 "help.text"
-msgid "<link href=\"text/shared/01/05020300.xhp\" name=\"Format - Cells - Numbers\">Format - Cells - Numbers</link>"
-msgstr "<link href=\"text/shared/01/05020300.xhp\" name=\"རྣམ་གཞག་ -  དྲ་མིག་ - གྲངས་ཀ་\">རྣམ་གཞག་ -  དྲ་མིག་ - གྲངས་ཀ་</link>"
+msgid "<link href=\"text/shared/01/05020300.xhp\">Format - Cells - Numbers</link>"
+msgstr "<link href=\"text/shared/01/05020300.xhp\">རྣམ་གཞག་ -  དྲ་མིག་ - གྲངས་ཀ་</link>"
 
 #. 42xFw
 #: pivotchart.xhp
@@ -9484,22 +9493,22 @@ msgctxt ""
 msgid "<bookmark_value>chart;pivot chart</bookmark_value>        <bookmark_value>pivot table;pivot chart</bookmark_value>"
 msgstr ""
 
-#. AEE5J
+#. vGNqs
 #: pivotchart.xhp
 msgctxt ""
 "pivotchart.xhp\n"
 "hd_id141525139671420\n"
 "help.text"
-msgid "<variable id=\"pivotchart\"><link href=\"text/scalc/guide/pivotchart.xhp\" name=\"Pivot Chart\">Pivot Chart</link></variable>"
+msgid "<variable id=\"pivotchart\"><link href=\"text/scalc/guide/pivotchart.xhp\">Pivot Chart</link></variable>"
 msgstr ""
 
-#. 7LinF
+#. 9ZWLh
 #: pivotchart.xhp
 msgctxt ""
 "pivotchart.xhp\n"
 "par_id291525139878423\n"
 "help.text"
-msgid "A pivot chart is a chart with data range and data series of a <link href=\"text/scalc/guide/datapilot.xhp\" name=\"Pivot Table\">pivot table</link>."
+msgid "A pivot chart is a chart with data range and data series of a <link href=\"text/scalc/guide/datapilot.xhp\">pivot table</link>."
 msgstr ""
 
 #. VMZRC
@@ -9520,13 +9529,13 @@ msgctxt ""
 msgid "Pivot charts track the changes in the data issued from a pivot table and adjust the data series and data range accordingly."
 msgstr ""
 
-#. mZV4m
+#. jvYUC
 #: pivotchart.xhp
 msgctxt ""
 "pivotchart.xhp\n"
 "par_id191525177790601\n"
 "help.text"
-msgid "<link href=\"https://tomazvajngerl.blogspot.com/2017/03/pivot-charts-in-libreoffice-part-1.html\" name=\"Tomaž Vajngerl blog\">Technical details on %PRODUCTNAME pivot chart implementation</link>."
+msgid "<link href=\"https://tomazvajngerl.blogspot.com/2017/03/pivot-charts-in-libreoffice-part-1.html\">Technical details on %PRODUCTNAME pivot chart implementation</link>."
 msgstr ""
 
 #. D4FkY
@@ -9547,13 +9556,13 @@ msgctxt ""
 msgid "<bookmark_value>pivot chart;creating</bookmark_value>"
 msgstr ""
 
-#. LGXm7
+#. yyM9q
 #: pivotchart_create.xhp
 msgctxt ""
 "pivotchart_create.xhp\n"
 "hd_id441525141699185\n"
 "help.text"
-msgid "<variable id=\"pivotchartcreate\"><link href=\"text/scalc/guide/pivotchart_create.xhp\" name=\"pivot chart create\">Creating Pivot Charts</link></variable>"
+msgid "<variable id=\"pivotchartcreate\"><link href=\"text/scalc/guide/pivotchart_create.xhp\">Creating Pivot Charts</link></variable>"
 msgstr ""
 
 #. UuRST
@@ -9592,13 +9601,13 @@ msgctxt ""
 msgid "%PRODUCTNAME Calc automatically detects the pivot table and opens the pivot chart wizard."
 msgstr ""
 
-#. q3cHS
+#. 4WYiS
 #: pivotchart_create.xhp
 msgctxt ""
 "pivotchart_create.xhp\n"
 "par_id861525140391601\n"
 "help.text"
-msgid "Select the <link href=\"text/schart/01/wiz_chart_type.xhp\" name=\"Chart type\">Chart type</link> for the data in the chart wizard."
+msgid "Select the <link href=\"text/schart/01/wiz_chart_type.xhp\">Chart type</link> for the data in the chart wizard."
 msgstr ""
 
 #. DkotR
@@ -9610,13 +9619,13 @@ msgctxt ""
 msgid "The data range and the data series pages of the chart wizard are not enabled. They are controlled by the pivot table."
 msgstr ""
 
-#. 6tkMF
+#. c3MzL
 #: pivotchart_create.xhp
 msgctxt ""
 "pivotchart_create.xhp\n"
 "par_id511525140411625\n"
 "help.text"
-msgid "Select the <link href=\"text/schart/01/wiz_chart_elements.xhp\" name=\"Chart elements\">Chart Elements</link> of the pivot chart in the wizard."
+msgid "Select the <link href=\"text/schart/01/wiz_chart_elements.xhp\">Chart Elements</link> of the pivot chart in the wizard."
 msgstr ""
 
 #. DiBBF
@@ -9637,13 +9646,13 @@ msgctxt ""
 msgid "Deleting Pivot Charts"
 msgstr ""
 
-#. BEj4o
+#. 4gxme
 #: pivotchart_delete.xhp
 msgctxt ""
 "pivotchart_delete.xhp\n"
 "hd_id231525147891984\n"
 "help.text"
-msgid "<variable id=\"pivotchartdelete\"><link href=\"text/scalc/guide/pivotchart_delete.xhp\" name=\"Deleting a Pivot Chart\">Deleting a Pivot Chart</link></variable>"
+msgid "<variable id=\"pivotchartdelete\"><link href=\"text/scalc/guide/pivotchart_delete.xhp\">Deleting a Pivot Chart</link></variable>"
 msgstr ""
 
 #. GRQDA
@@ -9700,13 +9709,13 @@ msgctxt ""
 msgid "<bookmark_value>pivot chart;editing</bookmark_value>"
 msgstr ""
 
-#. fEdDB
+#. tCuUT
 #: pivotchart_edit.xhp
 msgctxt ""
 "pivotchart_edit.xhp\n"
 "hd_id271525144002806\n"
 "help.text"
-msgid "<variable id=\"pivotchartedit\"><link href=\"text/scalc/guide/pivotchart_edit.xhp\" name=\"Pivot Chart Editing\">Editing Pivot Charts</link></variable>"
+msgid "<variable id=\"pivotchartedit\"><link href=\"text/scalc/guide/pivotchart_edit.xhp\">Editing Pivot Charts</link></variable>"
 msgstr ""
 
 #. tyqEE
@@ -9736,22 +9745,22 @@ msgctxt ""
 msgid "Filtering Pivot Charts"
 msgstr ""
 
-#. 83phF
+#. BQj5B
 #: pivotchart_filter.xhp
 msgctxt ""
 "pivotchart_filter.xhp\n"
 "hd_id401525165755583\n"
 "help.text"
-msgid "<variable id=\"pivotchartfilter\"><link href=\"text/scalc/guide/pivotchart_filter.xhp\" name=\"Filtering Pivot Charts\">Filtering Pivot Charts</link></variable>"
+msgid "<variable id=\"pivotchartfilter\"><link href=\"text/scalc/guide/pivotchart_filter.xhp\">Filtering Pivot Charts</link></variable>"
 msgstr ""
 
-#. rByFE
+#. AkGAs
 #: pivotchart_filter.xhp
 msgctxt ""
 "pivotchart_filter.xhp\n"
 "par_id781525166702239\n"
 "help.text"
-msgid "Filters are used to remove unwanted data from the pivot chart. You can use filters in the pivot chart or in the corresponding <link href=\"text/scalc/guide/datapilot_filtertable.xhp\" name=\"Pivot table filtering\">pivot table</link>, since the resulting chart is exactly the same."
+msgid "Filters are used to remove unwanted data from the pivot chart. You can use filters in the pivot chart or in the corresponding <link href=\"text/scalc/guide/datapilot_filtertable.xhp\">pivot table</link>, since the resulting chart is exactly the same."
 msgstr ""
 
 #. n2tCy
@@ -9817,13 +9826,13 @@ msgctxt ""
 msgid "<bookmark_value>pivot chart;update</bookmark_value>"
 msgstr ""
 
-#. uViPN
+#. XvU7B
 #: pivotchart_update.xhp
 msgctxt ""
 "pivotchart_update.xhp\n"
 "hd_id281525146417678\n"
 "help.text"
-msgid "<variable id=\"pivotchartupdate\"><link href=\"text/scalc/guide/pivotchart_update.xhp\" name=\"Pivot Chart Update\">Updating Pivot Charts</link></variable>"
+msgid "<variable id=\"pivotchartupdate\"><link href=\"text/scalc/guide/pivotchart_update.xhp\">Updating Pivot Charts</link></variable>"
 msgstr ""
 
 #. JmbEt
@@ -9871,14 +9880,14 @@ msgctxt ""
 msgid "<bookmark_value>printing;sheet details</bookmark_value><bookmark_value>sheets; printing details</bookmark_value><bookmark_value>grids; printing sheet grids</bookmark_value><bookmark_value>formulas; printing, instead of results</bookmark_value><bookmark_value>comments; printing</bookmark_value><bookmark_value>charts;printing</bookmark_value><bookmark_value>sheet grids; printing</bookmark_value><bookmark_value>cells; printing grids</bookmark_value><bookmark_value>borders; printing cells</bookmark_value><bookmark_value>zero values; printing</bookmark_value><bookmark_value>null values; printing</bookmark_value><bookmark_value>draw objects;printing</bookmark_value>"
 msgstr "<bookmark_value>གཏག་པར། ལས་ཁྲའི་ཞིབ་ཕྲའི་ཆ་འཕྲིན།</bookmark_value><bookmark_value>ལས་ཁྲ། ཞིབ་ཕྲའི་ཆ་འཕྲིན་གཏག་པར།</bookmark_value><bookmark_value>དྲ་མིག ལས་ཁྲའི་དྲ་མིག་གཏག་པར།</bookmark_value><bookmark_value>སྤྱི་འགྲོས། གཏག་པར།</bookmark_value><bookmark_value>ཟུར་མཆན། གཏག་པར།</bookmark_value><bookmark_value>ལས་ཁྲའི་དྲ་མིག  གཏག་པར།</bookmark_value>"
 
-#. cqFyW
+#. ikmor
 #: print_details.xhp
 msgctxt ""
 "print_details.xhp\n"
 "hd_id3154346\n"
 "help.text"
-msgid "<variable id=\"print_details\"><link href=\"text/scalc/guide/print_details.xhp\" name=\"Printing Sheet Details\">Printing Sheet Details</link></variable>"
-msgstr "<variable id=\"print_details\"><link href=\"text/scalc/guide/print_details.xhp\" name=\"གཏག་པར་ལས་ཁྲའི་ཞིབ་ཕྲའི་ཆ་འཕྲིན།\">གཏག་པར་ལས་ཁྲའི་ཞིབ་ཕྲའི་ཆ་འཕྲིན།</link></variable>"
+msgid "<variable id=\"print_details\"><link href=\"text/scalc/guide/print_details.xhp\">Printing Sheet Details</link></variable>"
+msgstr "<variable id=\"print_details\"><link href=\"text/scalc/guide/print_details.xhp\">གཏག་པར་ལས་ཁྲའི་ཞིབ་ཕྲའི་ཆ་འཕྲིན།</link></variable>"
 
 #. hGEFc
 #: print_details.xhp
@@ -10006,14 +10015,14 @@ msgctxt ""
 msgid "Print the document."
 msgstr "ཡིག་ཚགས་གཏག་པར།"
 
-#. jKV72
+#. TSBnz
 #: print_details.xhp
 msgctxt ""
 "print_details.xhp\n"
 "par_id3150345\n"
 "help.text"
-msgid "<link href=\"text/scalc/01/03100000.xhp\" name=\"View - Page Break\">View - Page Break</link>"
-msgstr "<link href=\"text/scalc/01/03100000.xhp\" name=\"མཐོང་རིས་ - ཤོག་ལྷེའི་སྔོན་ལྟ་\">མཐོང་རིས་ - ཤོག་ལྷེའི་སྔོན་ལྟ་</link>"
+msgid "<link href=\"text/scalc/01/03100000.xhp\">View - Page Break</link>"
+msgstr "<link href=\"text/scalc/01/03100000.xhp\">མཐོང་རིས་ - ཤོག་ལྷེའི་སྔོན་ལྟ་</link>"
 
 #. AgAiH
 #: print_exact.xhp
@@ -10033,14 +10042,14 @@ msgctxt ""
 msgid "<bookmark_value>printing; sheet counts</bookmark_value><bookmark_value>sheets; printing sheet counts</bookmark_value><bookmark_value>page breaks; spreadsheet preview</bookmark_value><bookmark_value>editing;print ranges</bookmark_value><bookmark_value>viewing;print ranges</bookmark_value><bookmark_value>previews;page breaks for printing</bookmark_value>"
 msgstr ""
 
-#. 6Wsn5
+#. FEWmm
 #: print_exact.xhp
 msgctxt ""
 "print_exact.xhp\n"
 "hd_id3153194\n"
 "help.text"
-msgid "<variable id=\"print_exact\"><link href=\"text/scalc/guide/print_exact.xhp\" name=\"Defining Number of Pages for Printing\">Defining Number of Pages for Printing</link></variable>"
-msgstr "<variable id=\"print_exact\"><link href=\"text/scalc/guide/print_exact.xhp\" name=\"གཏག་པར་ཁ་གྲངས་གཏན་འཁེལ་རྒྱུ\">གཏག་པར་ཁ་གྲངས་གཏན་འཁེལ་རྒྱུ་</link></variable>"
+msgid "<variable id=\"print_exact\"><link href=\"text/scalc/guide/print_exact.xhp\">Defining Number of Pages for Printing</link></variable>"
+msgstr "<variable id=\"print_exact\"><link href=\"text/scalc/guide/print_exact.xhp\">གཏག་པར་ཁ་གྲངས་གཏན་འཁེལ་རྒྱུ་</link></variable>"
 
 #. 8omBt
 #: print_exact.xhp
@@ -10087,14 +10096,14 @@ msgctxt ""
 msgid "You can move the blue lines with the mouse. You will find further options in the Context menu, including adding an additional print range, removing the scaling and inserting additional manual line and column breaks."
 msgstr "ཁྱེད་ཀྱིས་ཙིག་རྟགས་སྤྱད་ནས་སྔོ་ཐིག་འདི་རྣམས་སྤོ་སྒུལ་བྱས་ཆོག   གཡས་མཐེབ་ཚལ་ཐོའི་ནང་ཁྱེད་ཀྱིས་བྱེད་ནུས་གཞན་འདེམས་ཆོག་ དཔེར་ན་གཏག་པར་ཁོངས་གསར་སྣོན་ གཏག་པར་ས་ཁོངས་རྩིས་མེད་  མངོན་པའི་སྡུར་ཚད་དང་ལག་ཐོག་ཕྲེང་བ་དང་སྟར་བརྗེ་རྩིས་མེད་བྱེད།"
 
-#. yfroe
+#. pv9mo
 #: print_exact.xhp
 msgctxt ""
 "print_exact.xhp\n"
 "par_id3151073\n"
 "help.text"
-msgid "<link href=\"text/scalc/01/03100000.xhp\" name=\"View - Page Break\">View - Page Break</link>"
-msgstr "<link href=\"text/scalc/01/03100000.xhp\" name=\"མཐོང་རིས་ - ཤོག་ལྷེའི་སྔོན་ལྟ་\">མཐོང་རིས་ - ཤོག་ལྷེའི་སྔོན་ལྟ་</link>"
+msgid "<link href=\"text/scalc/01/03100000.xhp\">View - Page Break</link>"
+msgstr "<link href=\"text/scalc/01/03100000.xhp\">མཐོང་རིས་ - ཤོག་ལྷེའི་སྔོན་ལྟ་</link>"
 
 #. ruFna
 #: print_landscape.xhp
@@ -10114,14 +10123,14 @@ msgctxt ""
 msgid "<bookmark_value>printing; sheet selections</bookmark_value>      <bookmark_value>sheets; printing in landscape</bookmark_value>      <bookmark_value>printing; landscape</bookmark_value>      <bookmark_value>landscape printing</bookmark_value>"
 msgstr "<bookmark_value>གཏག་པར། ལས་ཁྲ་འདེམས་པ།</bookmark_value><bookmark_value>ལས་ཁྲ། འཕྲེད་ཕྱོགས་གཏག་པར་བྱེད།</bookmark_value><bookmark_value>གཏག་པར། འཕྲེད་ཕྱོགས།</bookmark_value><bookmark_value>འཕྲེད་ཕྱོགས་གཏག་པར་བྱེད།</bookmark_value>"
 
-#. ff6kb
+#. Yw45t
 #: print_landscape.xhp
 msgctxt ""
 "print_landscape.xhp\n"
 "hd_id3153418\n"
 "help.text"
-msgid "<variable id=\"print_landscape\"><link href=\"text/scalc/guide/print_landscape.xhp\" name=\"Printing Sheets in Landscape Format\">Printing Sheets in Landscape Format</link></variable>"
-msgstr "<variable id=\"print_landscape\"><link href=\"text/scalc/guide/print_landscape.xhp\" name=\"ལས་ཁྲ་འཕྲེད་ཕྱོགས་གཏག་པར་བྱེད།\">ལས་ཁྲ་འཕྲེད་ཕྱོགས་གཏག་པར་བྱེད།</link></variable>"
+msgid "<variable id=\"print_landscape\"><link href=\"text/scalc/guide/print_landscape.xhp\">Printing Sheets in Landscape Format</link></variable>"
+msgstr "<variable id=\"print_landscape\"><link href=\"text/scalc/guide/print_landscape.xhp\">ལས་ཁྲ་འཕྲེད་ཕྱོགས་གཏག་པར་བྱེད།</link></variable>"
 
 #. Ce8BB
 #: print_landscape.xhp
@@ -10267,14 +10276,14 @@ msgctxt ""
 msgid "If under <emph>Format - Print ranges</emph> you have defined one or more print ranges, only the contents of these print ranges will be printed."
 msgstr "གལ་ཏེ་ <emph>རྣམ་གཞག་ - [གཏག་པར་ས་ཁོངས།</emph>འོག་གཏག་པར་ཁོངས་གཅིག་གམ་མང་པོ་མཚན་འཇོག་ཟིན་ན་གཏག་པར་ས་ཁོངས་འདི་རྣམས་ཁོ་ནའི་ནང་དོན་གཏག་པར་བྱེད།"
 
-#. EVXcd
+#. DHHJg
 #: print_landscape.xhp
 msgctxt ""
 "print_landscape.xhp\n"
 "par_id3156019\n"
 "help.text"
-msgid "<link href=\"text/scalc/01/03100000.xhp\" name=\"View - Page Break\">View - Page Break</link>"
-msgstr "<link href=\"text/scalc/01/03100000.xhp\" name=\"མཐོང་རིས་ - ཤོག་ལྷེའི་སྔོན་ལྟ་\">མཐོང་རིས་ - ཤོག་ལྷེའི་སྔོན་ལྟ་</link>"
+msgid "<link href=\"text/scalc/01/03100000.xhp\">View - Page Break</link>"
+msgstr "<link href=\"text/scalc/01/03100000.xhp\">མཐོང་རིས་ - ཤོག་ལྷེའི་སྔོན་ལྟ་</link>"
 
 #. vbjmr
 #: print_landscape.xhp
@@ -10303,14 +10312,14 @@ msgctxt ""
 msgid "<bookmark_value>printing; sheets on multiple pages</bookmark_value><bookmark_value>sheets; printing on multiple pages</bookmark_value><bookmark_value>rows; repeating when printing</bookmark_value><bookmark_value>columns; repeating when printing</bookmark_value><bookmark_value>repeating;columns/rows on printed pages</bookmark_value><bookmark_value>title rows; printing on all sheets</bookmark_value><bookmark_value>headers; printing on sheets</bookmark_value><bookmark_value>footers; printing on sheets</bookmark_value><bookmark_value>printing; rows/columns as table headings</bookmark_value><bookmark_value>headings;repeating rows/columns as</bookmark_value>"
 msgstr "<bookmark_value>གཏག་པར། ཤོག་མང་ལས་ཁྲ།</bookmark_value><bookmark_value>ལས་ཁྲ། ཤོག་མང་སྟེང་ཕྲེང་གཏག་པར།</bookmark_value><bookmark_value>ཕྲེང་;གཏག་པར་སྐབས་སྟར་བསྐྱར་ཟློས་</bookmark_value><bookmark_value>སྟར་;གཏག་པར་སྐབས་སྟར་བསྐྱར་ཟློས་</bookmark_value><bookmark_value>གཏན་འཇགས་ཕྲེང་དང་སྟར་;གཏག་པར་</bookmark_value><bookmark_value>ཕྲེང་/སྟར་བསྐྱར་ཟློས་ཀྱི་ ;གཏག་པར་</bookmark_value><bookmark_value>ཁ་བྱང་ཕྲེང་;ལས་ཁྲ་ཚང་མ་གཏག་པར་བྱེད་</bookmark_value><bookmark_value>ཤོག་སྨིན་;ལས་ཁྲ་གཏག་པར་</bookmark_value><bookmark_value>ཤོག་ཞབས་;ལས་ཁྲ་གཏག་པར་</bookmark_value><bookmark_value>གཏག་པར་;ཕྲེང་ནི་རེའུ་མིག་གི་ཁ་བྱང་བྱེད་</bookmark_value><bookmark_value>གཏག་པར་;སྟར་ནི་རེའུ་མིག་གི་ཁ་བྱང་བྱེད་</bookmark_value>"
 
-#. GaFEB
+#. BsWC9
 #: print_title_row.xhp
 msgctxt ""
 "print_title_row.xhp\n"
 "hd_id3153727\n"
 "help.text"
-msgid "<variable id=\"print_title_row\"><link href=\"text/scalc/guide/print_title_row.xhp\" name=\"Printing Rows or Columns on Every Page\">Printing Rows or Columns on Every Page</link></variable>"
-msgstr "<variable id=\"print_title_row\"><link href=\"text/scalc/guide/print_title_row.xhp\" name=\"ཤོག་ལྷེ་རེ་རེའི་ཐོག་ཕྲེང་ངམ་སྟར་གཏག་པར་བྱེད།\">ཤོག་ལྷེ་རེ་རེའི་ཐོག་ཕྲེང་ངམ་སྟར་གཏག་པར་བྱེད།</link></variable>"
+msgid "<variable id=\"print_title_row\"><link href=\"text/scalc/guide/print_title_row.xhp\">Printing Rows or Columns on Every Page</link></variable>"
+msgstr "<variable id=\"print_title_row\"><link href=\"text/scalc/guide/print_title_row.xhp\">ཤོག་ལྷེ་རེ་རེའི་ཐོག་ཕྲེང་ངམ་སྟར་གཏག་པར་བྱེད།</link></variable>"
 
 #. kzA5T
 #: print_title_row.xhp
@@ -10420,31 +10429,31 @@ msgctxt ""
 msgid "Rows to repeat are rows from the sheet. You can define headers and footers to be printed on each print page independently of this in <emph>Format - Page Style</emph>."
 msgstr ""
 
-#. b42kP
+#. PX4LE
 #: print_title_row.xhp
 msgctxt ""
 "print_title_row.xhp\n"
 "par_id3155380\n"
 "help.text"
-msgid "<link href=\"text/scalc/01/03100000.xhp\" name=\"View - Page Break Preview\">View - Page Break Preview</link>"
-msgstr "<link href=\"text/scalc/01/03100000.xhp\" name=\"མཐོང་རིས་ - ཤོག་ལྷེའི་སྔོན་ལྟ་\">མཐོང་རིས་ - ཤོག་ལྷེའི་སྔོན་ལྟ་</link>"
+msgid "<link href=\"text/scalc/01/03100000.xhp\">View - Page Break Preview</link>"
+msgstr "<link href=\"text/scalc/01/03100000.xhp\">མཐོང་རིས་ - ཤོག་ལྷེའི་སྔོན་ལྟ་</link>"
 
-#. uExLf
+#. vccDH
 #: print_title_row.xhp
 msgctxt ""
 "print_title_row.xhp\n"
 "par_id3154371\n"
 "help.text"
-msgid "<link href=\"text/scalc/01/05080300.xhp\" name=\"Format - Print ranges - Edit\">Format - Print ranges - Edit</link>"
-msgstr "<link href=\"text/scalc/01/05080300.xhp\" name=\"གཏག་པར་ས་ཁོངས་རྩོམ་སྒྲིག་བྱེད་པ།\">གཏག་པར་ས་ཁོངས་རྩོམ་སྒྲིག་བྱེད་པ།</link>"
+msgid "<link href=\"text/scalc/01/05080300.xhp\">Format - Print ranges - Edit</link>"
+msgstr "<link href=\"text/scalc/01/05080300.xhp\">གཏག་པར་ས་ཁོངས་རྩོམ་སྒྲིག་བྱེད་པ།</link>"
 
-#. EhgS7
+#. 9zjha
 #: print_title_row.xhp
 msgctxt ""
 "print_title_row.xhp\n"
 "par_id3146113\n"
 "help.text"
-msgid "<link href=\"text/scalc/01/05070000.xhp\" name=\"Format - Page Style - (Header / Footer)\">Format - Page Style - (Header / Footer)</link>"
+msgid "<link href=\"text/scalc/01/05070000.xhp\">Format - Page Style - (Header / Footer)</link>"
 msgstr ""
 
 #. AK3vB
@@ -10699,14 +10708,14 @@ msgctxt ""
 msgid "<bookmark_value>addressing; relative and absolute</bookmark_value><bookmark_value>references; absolute/relative</bookmark_value><bookmark_value>absolute addresses in spreadsheets</bookmark_value><bookmark_value>relative addresses</bookmark_value><bookmark_value>absolute references in spreadsheets</bookmark_value><bookmark_value>relative references</bookmark_value><bookmark_value>references; to cells</bookmark_value><bookmark_value>cells; references</bookmark_value>"
 msgstr "<bookmark_value>གནས་ཡུལ།  ལྟོས་བཅས་དང་ལྟོས་མེད།</bookmark_value><bookmark_value>འདྲེན་སྤྱོད།  ལྟོས་བཅས་/ལྟོས་མེད།</bookmark_value><bookmark_value>གློག་རྡུལ་རེའུ་མིག་ནང་གི་ལྟོས་མེད་གནས་ཡུལ།</bookmark_value><bookmark_value>ལྟོས་བཅས་གནས་ཡུལ།</bookmark_value><bookmark_value>གློག་རྡུལ་རེའུ་མིག་ནང་གི་ལྟོས་མེད་འདྲེན་སྤྱོད།</bookmark_value><bookmark_value>ལྟོས་བཅས་འདྲེན་སྤྱོད།</bookmark_value><bookmark_value>འདྲེན་སྤྱོད།  དྲམིག་ལ།</bookmark_value><bookmark_value>དྲ་མིག  འདྲེན་སྤྱོད།</bookmark_value>"
 
-#. hMp78
+#. SCMmK
 #: relativ_absolut_ref.xhp
 msgctxt ""
 "relativ_absolut_ref.xhp\n"
 "hd_id3156423\n"
 "help.text"
-msgid "<variable id=\"relativ_absolut_ref\"><link href=\"text/scalc/guide/relativ_absolut_ref.xhp\" name=\"Addresses and References, Absolute and Relative\">Addresses and References, Absolute and Relative</link></variable>"
-msgstr "<variable id=\"relativ_absolut_ref\"><link href=\"text/scalc/guide/relativ_absolut_ref.xhp\" name=\"གནས་ཡུལ་དང་འདྲེན་སྤྱོད་  ལྟོས་མེད་དང་ལྟོས་བཅས།\">གནས་ཡུལ་དང་འདྲེན་སྤྱོད་  ལྟོས་མེད་དང་ལྟོས་བཅས།</link></variable>"
+msgid "<variable id=\"relativ_absolut_ref\"><link href=\"text/scalc/guide/relativ_absolut_ref.xhp\">Addresses and References, Absolute and Relative</link></variable>"
+msgstr "<variable id=\"relativ_absolut_ref\"><link href=\"text/scalc/guide/relativ_absolut_ref.xhp\">གནས་ཡུལ་དང་འདྲེན་སྤྱོད་  ལྟོས་མེད་དང་ལྟོས་བཅས།</link></variable>"
 
 #. 6AVDc
 #: relativ_absolut_ref.xhp
@@ -10834,13 +10843,13 @@ msgctxt ""
 msgid "<bookmark_value>filters; removing duplicates</bookmark_value>    <bookmark_value>filters; finding unique values</bookmark_value>"
 msgstr ""
 
-#. Q5494
+#. HAqBY
 #: remove_duplicates.xhp
 msgctxt ""
 "remove_duplicates.xhp\n"
 "hd_id501630021281902\n"
 "help.text"
-msgid "<variable id=\"filters\"><link href=\"text/scalc/guide/remove_duplicates.xhp\" name=\"Duplicates_h1\">Removing Duplicate Values</link></variable>"
+msgid "<variable id=\"filters\"><link href=\"text/scalc/guide/remove_duplicates.xhp\">Removing Duplicate Values</link></variable>"
 msgstr ""
 
 #. ocizx
@@ -10861,13 +10870,13 @@ msgctxt ""
 msgid "Select the range of values from which duplicate values are to be removed. The values have to be arranged in a single column."
 msgstr ""
 
-#. 7fDQ9
+#. WA3SF
 #: remove_duplicates.xhp
 msgctxt ""
 "remove_duplicates.xhp\n"
 "par_id31630021517873\n"
 "help.text"
-msgid "Go to <menuitem>Data - More Filters - Standard Filter</menuitem>. This opens the <link href=\"text/shared/02/12090100.xhp\" name=\"std_dialog_link\"> Standard Filter</link> dialog."
+msgid "Go to <menuitem>Data - More Filters - Standard Filter</menuitem>. This opens the <link href=\"text/shared/02/12090100.xhp\"> Standard Filter</link> dialog."
 msgstr ""
 
 #. EVEzq
@@ -10951,14 +10960,14 @@ msgctxt ""
 msgid "<bookmark_value>renaming;sheets</bookmark_value>      <bookmark_value>sheet tabs;renaming</bookmark_value>      <bookmark_value>tables;renaming</bookmark_value>      <bookmark_value>names; sheets</bookmark_value>"
 msgstr "<bookmark_value>ལས་ཁྲ་མིང་བསྐྱར་འདོགས།</bookmark_value><bookmark_value>ལས་ཁྲ།  མིང་བཟོ་བཅོས།</bookmark_value><bookmark_value>མིང་།  ལས་ཁྲ།</bookmark_value>"
 
-#. Ussbk
+#. vikAG
 #: rename_table.xhp
 msgctxt ""
 "rename_table.xhp\n"
 "hd_id3150398\n"
 "help.text"
-msgid "<variable id=\"rename_table\"><link href=\"text/scalc/guide/rename_table.xhp\" name=\"Renaming Sheets\">Renaming Sheets</link></variable>"
-msgstr "<variable id=\"rename_table\"><link href=\"text/scalc/guide/rename_table.xhp\" name=\"ལས་ཁྲ་མིང་བསྐྱར་འདོགས།\">ལས་ཁྲ་མིང་བསྐྱར་འདོགས།</link></variable>"
+msgid "<variable id=\"rename_table\"><link href=\"text/scalc/guide/rename_table.xhp\">Renaming Sheets</link></variable>"
+msgstr "<variable id=\"rename_table\"><link href=\"text/scalc/guide/rename_table.xhp\">ལས་ཁྲ་མིང་བསྐྱར་འདོགས།</link></variable>"
 
 #. zEnG4
 #: rename_table.xhp
@@ -11194,14 +11203,14 @@ msgctxt ""
 msgid "<bookmark_value>numbers; rounded off</bookmark_value><bookmark_value>rounded off numbers</bookmark_value><bookmark_value>exact numbers in $[officename] Calc</bookmark_value><bookmark_value>decimal places; showing</bookmark_value><bookmark_value>changing;number of decimal places</bookmark_value><bookmark_value>values;rounded in calculations</bookmark_value><bookmark_value>calculating;rounded off values</bookmark_value><bookmark_value>numbers; decimal places</bookmark_value><bookmark_value>precision as shown</bookmark_value><bookmark_value>rounding precision</bookmark_value><bookmark_value>spreadsheets; values as shown</bookmark_value>"
 msgstr "<bookmark_value>གྲངས་ཀ། བཞི་དོར་ལྔ་སྒྲིལ།</bookmark_value><bookmark_value>བཞི་དོར་ལྔ་སྒྲིལ་གྲངས་ཀ།</bookmark_value><bookmark_value>$[officename] གློག་རྡུལ་རེའུ་མིག་ནང་གི་ཡང་དག་གྲངས་ཀ།</bookmark_value><bookmark_value>སིལ་གྲངས་གནས་གྲངས།  མངོན་པ།</bookmark_value><bookmark_value>ཐང་།  རྩིས་རྒྱག་ནང་དོར་འཇུག</bookmark_value><bookmark_value>རྩིས་རྒྱག  བཞི་དོར་ལྔ་སྒྲིལ་ཐང་།</bookmark_value>"
 
-#. K5BPL
+#. NXSGA
 #: rounding_numbers.xhp
 msgctxt ""
 "rounding_numbers.xhp\n"
 "hd_id3156422\n"
 "help.text"
-msgid "<variable id=\"rounding_numbers\"><link href=\"text/scalc/guide/rounding_numbers.xhp\" name=\"Using Rounded Off Numbers\">Using Rounded Off Numbers</link></variable>"
-msgstr "<variable id=\"rounding_numbers\"><link href=\"text/scalc/guide/rounding_numbers.xhp\" name=\"བཞི་དོར་ལྔ་སྒྲིལ་རྗེས་ཀྱི་གྲངས་ཀ་སྤྱོད་པ།\">བཞི་དོར་ལྔ་སྒྲིལ་རྗེས་ཀྱི་གྲངས་ཀ་སྤྱོད་པ།</link></variable>"
+msgid "<variable id=\"rounding_numbers\"><link href=\"text/scalc/guide/rounding_numbers.xhp\">Using Rounded Off Numbers</link></variable>"
+msgstr "<variable id=\"rounding_numbers\"><link href=\"text/scalc/guide/rounding_numbers.xhp\">བཞི་དོར་ལྔ་སྒྲིལ་རྗེས་ཀྱི་གྲངས་ཀ་སྤྱོད་པ།</link></variable>"
 
 #. dJpQD
 #: rounding_numbers.xhp
@@ -11302,23 +11311,23 @@ msgctxt ""
 msgid "Go to the <emph>Calculate</emph> page. Mark the <emph>Precision as shown</emph> field and exit the dialog with OK."
 msgstr "<emph>རྩིས་རྒྱག</emph>ཤོག་ངོས་ལ་བསྒྱུར།   <emph>མངོན་པའི་ཡང་དག་</emph>ཡིག་དུམ་བདམས་རྗེས་\"གཏན་འཁེལ།\"ལ་རྐྱང་རྡེབ་བྱས་ན་གླེང་སྒྲོམ་ཕྱིར་ཐོན་བྱེད།"
 
-#. qp8h5
+#. N6TMC
 #: rounding_numbers.xhp
 msgctxt ""
 "rounding_numbers.xhp\n"
 "par_id3145790\n"
 "help.text"
-msgid "<link href=\"text/shared/01/05020300.xhp\" name=\"Numbers\">Numbers</link>"
-msgstr "<link href=\"text/shared/01/05020300.xhp\" name=\"གྲངས་ཀ།\">གྲངས་ཀ།</link>"
+msgid "<link href=\"text/shared/01/05020300.xhp\">Numbers</link>"
+msgstr "<link href=\"text/shared/01/05020300.xhp\">གྲངས་ཀ།</link>"
 
-#. AoZCy
+#. GMiBZ
 #: rounding_numbers.xhp
 msgctxt ""
 "rounding_numbers.xhp\n"
 "par_id3147005\n"
 "help.text"
-msgid "<link href=\"text/shared/optionen/01060500.xhp\" name=\"Calculate\">Calculate</link>"
-msgstr "<link href=\"text/shared/optionen/01060500.xhp\" name=\"རྩིས་རྒྱག\">རྩིས་རྒྱག</link>"
+msgid "<link href=\"text/shared/optionen/01060500.xhp\">Calculate</link>"
+msgstr "<link href=\"text/shared/optionen/01060500.xhp\">རྩིས་རྒྱག</link>"
 
 #. 2CXMu
 #: row_height.xhp
@@ -11338,14 +11347,14 @@ msgctxt ""
 msgid "<bookmark_value>heights of cells</bookmark_value><bookmark_value>cell heights</bookmark_value><bookmark_value>cell widths</bookmark_value><bookmark_value>cells; heights and widths</bookmark_value><bookmark_value>widths of cells</bookmark_value><bookmark_value>column widths</bookmark_value><bookmark_value>rows; heights</bookmark_value><bookmark_value>columns; widths</bookmark_value><bookmark_value>changing;row heights/column widths</bookmark_value>"
 msgstr "<bookmark_value>དྲ་མིག་མཐོ་ཚད།</bookmark_value><bookmark_value>དྲ་མིག་མཐོ་ཚད།</bookmark_value><bookmark_value>དྲ་མིག མཐོ་ཚད་དང་ཞེང་ཚད།</bookmark_value><bookmark_value>དྲ་མིག་ཞེང་ཚད།</bookmark_value><bookmark_value>སྟར་ཞེང་།</bookmark_value><bookmark_value>ཕྲེང་། མཐོ་ཚད།</bookmark_value><bookmark_value>སྟར།  ཞེང་ཚད།</bookmark_value>"
 
-#. ZhKE7
+#. zRnfd
 #: row_height.xhp
 msgctxt ""
 "row_height.xhp\n"
 "hd_id3145748\n"
 "help.text"
-msgid "<variable id=\"row_height\"><link href=\"text/scalc/guide/row_height.xhp\" name=\"Changing Row Height or Column Width\">Changing Row Height or Column Width</link></variable>"
-msgstr "<variable id=\"row_height\"><link href=\"text/scalc/guide/row_height.xhp\" name=\"ཕྲེང་མཐོའམ་སྟར་ཞེང་བཟོ་བཅོས།་\">ཕྲེང་མཐོའམ་སྟར་ཞེང་བཟོ་བཅོས།</link></variable>"
+msgid "<variable id=\"row_height\"><link href=\"text/scalc/guide/row_height.xhp\">Changing Row Height or Column Width</link></variable>"
+msgstr "<variable id=\"row_height\"><link href=\"text/scalc/guide/row_height.xhp\">ཕྲེང་མཐོའམ་སྟར་ཞེང་བཟོ་བཅོས།</link></variable>"
 
 #. NXeZU
 #: row_height.xhp
@@ -11428,41 +11437,41 @@ msgctxt ""
 msgid "You will see the commands <emph>Row Height</emph> and <emph>Optimal row height</emph>. Choosing either opens a dialog."
 msgstr "ཁྱེད་ཀྱིས་བཀའ་ཚིག་མཐོང་བ་<emph>མཐོ་ཚད།</emph>དང་<emph>ཕྲེང་མཐོ་ལེགས་ཤོས།</emph>དེ་ཚོ་སོ་སོས་གླེང་སྒྲོམ་ཁ་ཕྱེ་ཐུབ།"
 
-#. XZYSf
+#. LcbwQ
 #: row_height.xhp
 msgctxt ""
 "row_height.xhp\n"
 "par_id3154487\n"
 "help.text"
-msgid "<link href=\"text/shared/01/05340100.xhp\" name=\"Row height\">Row height</link>"
-msgstr "<link href=\"text/shared/01/05340100.xhp\" name=\"མཐོ་ཚད།\">མཐོ་ཚད།</link>"
+msgid "<link href=\"text/shared/01/05340100.xhp\">Row height</link>"
+msgstr "<link href=\"text/shared/01/05340100.xhp\">མཐོ་ཚད།</link>"
 
-#. ftbnx
+#. uc7yU
 #: row_height.xhp
 msgctxt ""
 "row_height.xhp\n"
 "par_id3149408\n"
 "help.text"
-msgid "<link href=\"text/scalc/01/05030200.xhp\" name=\"Optimal row height\">Optimal row height</link>"
-msgstr "<link href=\"text/scalc/01/05030200.xhp\" name=\"ཕྲེང་མཐོ་ལེགས་ཤོས།\">ཕྲེང་མཐོ་ལེགས་ཤོས།</link>"
+msgid "<link href=\"text/scalc/01/05030200.xhp\">Optimal row height</link>"
+msgstr "<link href=\"text/scalc/01/05030200.xhp\">ཕྲེང་མཐོ་ལེགས་ཤོས།</link>"
 
-#. BJtSN
+#. K8Xsr
 #: row_height.xhp
 msgctxt ""
 "row_height.xhp\n"
 "par_id3153305\n"
 "help.text"
-msgid "<link href=\"text/shared/01/05340200.xhp\" name=\"Column width\">Column width</link>"
-msgstr "<link href=\"text/shared/01/05340200.xhp\" name=\"སྟར་ཞེང་།\">སྟར་ཞེང་།</link>"
+msgid "<link href=\"text/shared/01/05340200.xhp\">Column width</link>"
+msgstr "<link href=\"text/shared/01/05340200.xhp\">སྟར་ཞེང་།</link>"
 
-#. HGYEx
+#. THtNm
 #: row_height.xhp
 msgctxt ""
 "row_height.xhp\n"
 "par_id3153815\n"
 "help.text"
-msgid "<link href=\"text/scalc/01/05040200.xhp\" name=\"Optimal column width\">Optimal column width</link>"
-msgstr "<link href=\"text/scalc/01/05040200.xhp\" name=\"སྟར་ཞེང་ལེགས་ཤོས།\">སྟར་ཞེང་ལེགས་ཤོས།</link>"
+msgid "<link href=\"text/scalc/01/05040200.xhp\">Optimal column width</link>"
+msgstr "<link href=\"text/scalc/01/05040200.xhp\">སྟར་ཞེང་ལེགས་ཤོས།</link>"
 
 #. YRbvh
 #: scenario.xhp
@@ -11482,14 +11491,14 @@ msgctxt ""
 msgid "<bookmark_value>scenarios; creating/editing/deleting</bookmark_value><bookmark_value>opening;scenarios</bookmark_value><bookmark_value>selecting;scenarios in Navigator</bookmark_value>"
 msgstr "<bookmark_value>འཆར་འགོད། གསར་འཛུགས།</bookmark_value><bookmark_value>ཁ་ཕྱེ་བ།  དཔེ་མཚོན་འཆར་འགོད།</bookmark_value><bookmark_value>འདེམས་པ།  ལག་རོགས་ནང་གི་འཆར་འགོད།</bookmark_value>"
 
-#. 4gBns
+#. rmHtG
 #: scenario.xhp
 msgctxt ""
 "scenario.xhp\n"
 "hd_id3125863\n"
 "help.text"
-msgid "<variable id=\"scenario\"><link href=\"text/scalc/guide/scenario.xhp\" name=\"Using Scenarios\">Using Scenarios</link></variable>"
-msgstr "<variable id=\"scenario\"><link href=\"text/scalc/guide/scenario.xhp\" name=\"འཆར་འགོད་སྤྱོད་པ།\">འཆར་འགོད་སྤྱོད་པ།</link></variable>"
+msgid "<variable id=\"scenario\"><link href=\"text/scalc/guide/scenario.xhp\">Using Scenarios</link></variable>"
+msgstr "<variable id=\"scenario\"><link href=\"text/scalc/guide/scenario.xhp\">འཆར་འགོད་སྤྱོད་པ།</link></variable>"
 
 #. DGENT
 #: scenario.xhp
@@ -11635,14 +11644,14 @@ msgctxt ""
 msgid "If you want to know which values in the scenario affect other values, choose <emph>Tools - Detective - Trace Dependents</emph>. You see arrows to the cells that are directly dependent on the current cell."
 msgstr "གལ་ཏེ་ཁྱེད་ཀྱིས་འཆར་འགོད་ནང་གི་གཞི་གྲངས་ཞིག་གི་གཞི་གྲངས་གཞན་ལ་ཐད་ཀར་ཤུགས་རྐྱེན་ཐེབས་པ་ཤེས་འདོད་ན་ཐཚལ་ཐོའི་བཀའ་ཚིག་<emph>[ཡོ་བྱད།] - [སྤྱི་འགྲོས་ལྟ་ཞིབ།] - [འདྲེན་སྤྱོད་དྲ་མིག་རྗེས་འདེད།]</emph>སྤྱད་ཆོག   དེ་རྗེས་ཁྱེད་ཀྱིས་མིག་སྔའི་བདམས་ཟིན་དྲ་མིག་ནས་འབྲེལ་ཡོད་དྲ་མིག་འགའ་ཞིག་ལ་ཕྱོགས་པའི་མདའ་རྩེ་མཐོང་ཐུབ།"
 
-#. 3Rz4E
+#. tZ3Es
 #: scenario.xhp
 msgctxt ""
 "scenario.xhp\n"
 "par_id3154484\n"
 "help.text"
-msgid "<link href=\"text/scalc/01/06050000.xhp\" name=\"Creating Scenarios\">Creating Scenarios</link>"
-msgstr "<link href=\"text/scalc/01/06050000.xhp\" name=\" འཆར་འགོད་གསར་འཛུགས།\">འཆར་འགོད་གསར་འཛུགས།་</link>"
+msgid "<link href=\"text/scalc/01/06050000.xhp\">Creating Scenarios</link>"
+msgstr "<link href=\"text/scalc/01/06050000.xhp\">འཆར་འགོད་གསར་འཛུགས།་</link>"
 
 #. AG6Vf
 #: sorted_list.xhp
@@ -11662,14 +11671,14 @@ msgctxt ""
 msgid "<bookmark_value>filling;customized lists</bookmark_value><bookmark_value>sort lists;applying</bookmark_value><bookmark_value>defining;sort lists</bookmark_value><bookmark_value>geometric lists</bookmark_value><bookmark_value>arithmetic lists</bookmark_value><bookmark_value>series;sort lists</bookmark_value><bookmark_value>lists; user-defined</bookmark_value><bookmark_value>customized lists</bookmark_value>"
 msgstr "<bookmark_value>སྐོང་གསབ།  རེའུ་འགོད།</bookmark_value><bookmark_value>རིམ་སྒྲིག་རེའུ་འགོད།  ཉེར་སྤྱོད།</bookmark_value><bookmark_value>དྲ་མིག  རང་འགུལ་སྐོང་གསབ་བྱེད་ནུས།</bookmark_value><bookmark_value>དབྱིབས་རྩིས་རེའུ་འགོད།</bookmark_value><bookmark_value>ཨང་རྩིས་རེའུ་འགོད།</bookmark_value><bookmark_value>རིམ་སྟར།  རིམ་སྒྲིག་རེའུ་འགོད།</bookmark_value><bookmark_value> རེའུ་འགོད།  སྤྱོད་པོས་མཚན་འཇོག</bookmark_value>"
 
-#. WuFEM
+#. 486Qk
 #: sorted_list.xhp
 msgctxt ""
 "sorted_list.xhp\n"
 "hd_id3150870\n"
 "help.text"
-msgid "<variable id=\"sorted_list\"><link href=\"text/scalc/guide/sorted_list.xhp\" name=\"Applying Sort Lists\">Applying Sort Lists</link> </variable>"
-msgstr "<variable id=\"sorted_list\"><link href=\"text/scalc/guide/sorted_list.xhp\" name=\"ཉེར་སྤྱོད་རིམ་སྒྲིག་རེའུ་འགོད།\">ཉེར་སྤྱོད་རིམ་སྒྲིག་རེའུ་འགོད།</link></variable>"
+msgid "<variable id=\"sorted_list\"><link href=\"text/scalc/guide/sorted_list.xhp\">Applying Sort Lists</link> </variable>"
+msgstr "<variable id=\"sorted_list\"><link href=\"text/scalc/guide/sorted_list.xhp\">ཉེར་སྤྱོད་རིམ་སྒྲིག་རེའུ་འགོད།</link></variable>"
 
 #. oMwuD
 #: sorted_list.xhp
@@ -11707,14 +11716,14 @@ msgctxt ""
 msgid "The predefined series can be found under <switchinline select=\"sys\"><caseinline select=\"MAC\"><emph>%PRODUCTNAME - Preferences</emph></caseinline><defaultinline><emph>Tools - Options</emph></defaultinline></switchinline><emph> - %PRODUCTNAME Calc - Sort Lists</emph>. You can also create your own lists of text strings tailored to your needs, such as a list of your company's branch offices. When you use the information in these lists later (for example, as headings), just enter the first name in the list and expand the entry by dragging it with your mouse."
 msgstr ""
 
-#. qqeXK
+#. vnpQt
 #: sorted_list.xhp
 msgctxt ""
 "sorted_list.xhp\n"
 "par_id3147434\n"
 "help.text"
-msgid "<link href=\"text/shared/optionen/01060400.xhp\" name=\"Sort lists\">Sort lists</link>"
-msgstr "<link href=\"text/shared/optionen/01060400.xhp\" name=\"རིམ་སྒྲིག་ཤོག་ཚན།\">རིམ་སྒྲིག་ཤོག་ཚན།</link>"
+msgid "<link href=\"text/shared/optionen/01060400.xhp\">Sort lists</link>"
+msgstr "<link href=\"text/shared/optionen/01060400.xhp\">རིམ་སྒྲིག་ཤོག་ཚན།</link>"
 
 #. 6GdiT
 #: specialfilter.xhp
@@ -11734,13 +11743,13 @@ msgctxt ""
 msgid "<bookmark_value>filters;defining advanced filters </bookmark_value><bookmark_value>advanced filters</bookmark_value><bookmark_value>defining; advanced filters</bookmark_value><bookmark_value>database ranges; advanced filters</bookmark_value>"
 msgstr "<bookmark_value>འཚག་འདེམས།  མཐོ་རིམ་འཚག་འདེམས་མཚན་འཇོག</bookmark_value><bookmark_value>མཚན་འཇོག  མཐོ་རིམ་འཚག་འདེམས།</bookmark_value><bookmark_value>གཞི་གྲངས་མཛོད་ཁྱབ་ཁོངས།  མཐོ་རིམ་འཚག་འདེམས།</bookmark_value>"
 
-#. cjgod
+#. nzLyA
 #: specialfilter.xhp
 msgctxt ""
 "specialfilter.xhp\n"
 "hd_id3148798\n"
 "help.text"
-msgid "<variable id=\"specialfilter\"><link href=\"text/scalc/guide/specialfilter.xhp\" name=\"Applying Advanced Filters\">Applying Advanced Filters</link></variable>"
+msgid "<variable id=\"specialfilter\"><link href=\"text/scalc/guide/specialfilter.xhp\">Applying Advanced Filters</link></variable>"
 msgstr ""
 
 #. tYuAi
@@ -11968,22 +11977,22 @@ msgctxt ""
 msgid "<bookmark_value>subtotals;using subtotals tool</bookmark_value>"
 msgstr ""
 
-#. 6JBG9
+#. e7TMf
 #: subtotaltool.xhp
 msgctxt ""
 "subtotaltool.xhp\n"
 "hd_id631585177069332\n"
 "help.text"
-msgid "<variable id=\"subtotaltoolh1\"><link href=\"text/scalc/guide/subtotaltool.xhp\" name=\"Using Subtotal Tool\">Using Subtotal Tool</link></variable>"
+msgid "<variable id=\"subtotaltoolh1\"><link href=\"text/scalc/guide/subtotaltool.xhp\">Using Subtotal Tool</link></variable>"
 msgstr ""
 
-#. rC9BC
+#. FEwcj
 #: subtotaltool.xhp
 msgctxt ""
 "subtotaltool.xhp\n"
 "par_id301585177069332\n"
 "help.text"
-msgid "Calc offers the Subtotals tool as a more comprehensive alternative to the <link href=\"text/scalc/01/04060106.xhp#Section12\" name=\"subtotal\">SUBTOTAL function</link>. In contrast to SUBTOTAL, which only works on a single array, the Subtotals tool can create subtotals for up to three arrays arranged in labeled columns. It also groups subtotals by category and sorts them automatically, thereby eliminating the need to apply AutoFilters and filter categories by hand."
+msgid "Calc offers the Subtotals tool as a more comprehensive alternative to the <link href=\"text/scalc/01/04060106.xhp#Section12\">SUBTOTAL function</link>. In contrast to SUBTOTAL, which only works on a single array, the Subtotals tool can create subtotals for up to three arrays arranged in labeled columns. It also groups subtotals by category and sorts them automatically, thereby eliminating the need to apply AutoFilters and filter categories by hand."
 msgstr ""
 
 #. NEkbi
@@ -12130,14 +12139,14 @@ msgctxt ""
 msgid "<bookmark_value>superscript text in cells</bookmark_value><bookmark_value>subscript text in cells</bookmark_value><bookmark_value>cells; text super/sub</bookmark_value><bookmark_value>characters;superscript/subscript</bookmark_value>"
 msgstr "<bookmark_value>དྲ་མིག་ནང་གི་གོང་རྟགས་ཡིག་དེབ།</bookmark_value><bookmark_value>དྲ་མིག་ནང་གི་གཤམ་རྟགས་ཡིག་དེབ།</bookmark_value><bookmark_value>དྲ་མིག  ཡིག་དེབ་གོང་རྟགས་/གཤམ་རྟགས།</bookmark_value>"
 
-#. JLoBw
+#. qZkGz
 #: super_subscript.xhp
 msgctxt ""
 "super_subscript.xhp\n"
 "hd_id3151112\n"
 "help.text"
-msgid "<variable id=\"super_subscript\"><link href=\"text/scalc/guide/super_subscript.xhp\" name=\"Text Superscript / Subscript\">Text Superscript / Subscript</link></variable>"
-msgstr "<variable id=\"super_subscript\"><link href=\"text/scalc/guide/super_subscript.xhp\" name=\"གོང་རྟགས་/གཤམ་རྟགས་ཡི་གེ\">གོང་རྟགས་/གཤམ་རྟགས་ཡི་གེ</link></variable>"
+msgid "<variable id=\"super_subscript\"><link href=\"text/scalc/guide/super_subscript.xhp\">Text Superscript / Subscript</link></variable>"
+msgstr "<variable id=\"super_subscript\"><link href=\"text/scalc/guide/super_subscript.xhp\">གོང་རྟགས་/གཤམ་རྟགས་ཡི་གེ</link></variable>"
 
 #. DSxqD
 #: super_subscript.xhp
@@ -12184,14 +12193,14 @@ msgctxt ""
 msgid "Select the <emph>Subscript</emph> option and click OK."
 msgstr "<emph>གཤམ་རྟགས།</emph>འདེམས་གཞི་འདེམས་ཞིང་\"གཏན་འཁེལ།\"རྐྱང་རྡེབ་བྱེད།"
 
-#. Vh5Ek
+#. eqGzu
 #: super_subscript.xhp
 msgctxt ""
 "super_subscript.xhp\n"
 "par_id3153876\n"
 "help.text"
-msgid "<link href=\"text/shared/01/05020500.xhp\" name=\"Context menu - Character - Font Position\">Context menu - Character - Font Position</link>"
-msgstr "<link href=\"text/shared/01/05020500.xhp\" name=\"གནས་ས།\">གནས་ས།</link>"
+msgid "<link href=\"text/shared/01/05020500.xhp\">Context menu - Character - Font Position</link>"
+msgstr "<link href=\"text/shared/01/05020500.xhp\">གནས་ས།</link>"
 
 #. 2wVQM
 #: table_cellmerge.xhp
@@ -12211,13 +12220,13 @@ msgctxt ""
 msgid "<bookmark_value>merge/merging cells</bookmark_value>    <bookmark_value>unmerge/unmerging cells</bookmark_value>    <bookmark_value>split/splitting cells</bookmark_value>"
 msgstr ""
 
-#. BAqR3
+#. T5RbK
 #: table_cellmerge.xhp
 msgctxt ""
 "table_cellmerge.xhp\n"
 "hd_id8005005\n"
 "help.text"
-msgid "<variable id=\"table_cellmerge\"><link href=\"text/scalc/guide/table_cellmerge.xhp\" name=\"Merging and Unmerging Cells\">Merge and Unmerge Cells</link></variable>"
+msgid "<variable id=\"table_cellmerge\"><link href=\"text/scalc/guide/table_cellmerge.xhp\">Merge and Unmerge Cells</link></variable>"
 msgstr ""
 
 #. Hht67
@@ -12391,14 +12400,14 @@ msgctxt ""
 msgid "<bookmark_value>tables; transposing</bookmark_value><bookmark_value>transposing tables</bookmark_value><bookmark_value>inverting tables</bookmark_value><bookmark_value>swapping tables</bookmark_value><bookmark_value>columns; swap with rows</bookmark_value><bookmark_value>rows; swapping with columns</bookmark_value><bookmark_value>tables; rotating</bookmark_value><bookmark_value>rotating; tables</bookmark_value>"
 msgstr "<bookmark_value>རེའུ་མིག  གནས་སྐོར།</bookmark_value><bookmark_value>རེའུ་མིག་གནས་སྐོར། </bookmark_value><bookmark_value>རེའུ་མིག་ལྡོག་སྐོར།</bookmark_value><bookmark_value>རེའུ་མིག་བརྗེ་རེས།</bookmark_value><bookmark_value>སྟར།  ཕྲེང་སྤྱད་ནས་བརྗེ་རེས།</bookmark_value><bookmark_value>ཕྲེང་།  སྟར་སྤྱད་ནས་བརྗེ་རེས།</bookmark_value><bookmark_value>རེའུ་མིག  འཁྱིལ་འཁོར།</bookmark_value><bookmark_value>འཁྱིལ་འཁོར།  རེའུ་མིག</bookmark_value>"
 
-#. h6iqG
+#. TZEJK
 #: table_rotate.xhp
 msgctxt ""
 "table_rotate.xhp\n"
 "hd_id3154346\n"
 "help.text"
-msgid "<variable id=\"table_rotate\"><link href=\"text/scalc/guide/table_rotate.xhp\" name=\"Rotating Tables (Transposing)\">Rotating Tables (Transposing)</link></variable>"
-msgstr "<variable id=\"table_rotate\"><link href=\"text/scalc/guide/table_rotate.xhp\" name=\"རེའུ་མིག་འཁྱིལ་འཁོར་(གནས་སྐོར་)\">རེའུ་མིག་འཁྱིལ་འཁོར་(གནས་སྐོར་)</link></variable>"
+msgid "<variable id=\"table_rotate\"><link href=\"text/scalc/guide/table_rotate.xhp\">Rotating Tables (Transposing)</link></variable>"
+msgstr "<variable id=\"table_rotate\"><link href=\"text/scalc/guide/table_rotate.xhp\">རེའུ་མིག་འཁྱིལ་འཁོར་(གནས་སྐོར་)</link></variable>"
 
 #. fzyoE
 #: table_rotate.xhp
@@ -12463,14 +12472,14 @@ msgctxt ""
 msgid "If you now click OK the columns and rows are transposed."
 msgstr "གལ་ཏེ་ད་ལྟ་<emph>\"གཏན་འཁེལ།\"གནོན་མཐེབ་ལ་</emph>རྐྱང་རྡེབ་བྱས་ན་ སྟར་ཕྲེང་གནས་སྐོར་བྱེད།"
 
-#. ZerMW
+#. 2XdS2
 #: table_rotate.xhp
 msgctxt ""
 "table_rotate.xhp\n"
 "par_id3146969\n"
 "help.text"
-msgid "<link href=\"text/shared/01/02070000.xhp\" name=\"Paste Special\">Paste Special</link>"
-msgstr "<link href=\"text/shared/01/02070000.xhp\" name=\"འདེམས་པའི་རང་བཞིན་གྱི་སྦྱར་བ།\">འདེམས་པའི་རང་བཞིན་གྱི་སྦྱར་བ།</link>"
+msgid "<link href=\"text/shared/01/02070000.xhp\">Paste Special</link>"
+msgstr "<link href=\"text/shared/01/02070000.xhp\">འདེམས་པའི་རང་བཞིན་གྱི་སྦྱར་བ།</link>"
 
 #. qWjQg
 #: table_view.xhp
@@ -12490,14 +12499,14 @@ msgctxt ""
 msgid "<bookmark_value>row headers; hiding</bookmark_value><bookmark_value>column headers; hiding</bookmark_value><bookmark_value>tables; views</bookmark_value><bookmark_value>views; tables</bookmark_value><bookmark_value>grids;hiding lines in sheets</bookmark_value><bookmark_value>hiding;headers/grid lines</bookmark_value><bookmark_value>changing;table views</bookmark_value>"
 msgstr "<bookmark_value>ཕྲེང་ཁ་བྱང་།  གབ་པ།</bookmark_value><bookmark_value>སྟར་ཁ་བྱང་།  གབ་པ།</bookmark_value><bookmark_value>རེའུ་མིག  མཐོང་རིས།</bookmark_value><bookmark_value>མཐོང་རིས།  རེའུ་མིག</bookmark_value>"
 
-#. AuiXd
+#. t4Dpn
 #: table_view.xhp
 msgctxt ""
 "table_view.xhp\n"
 "hd_id3147304\n"
 "help.text"
-msgid "<variable id=\"table_view\"><link href=\"text/scalc/guide/table_view.xhp\" name=\"Changing Table Views\">Changing Table Views</link></variable>"
-msgstr "<variable id=\"table_view\"><link href=\"text/scalc/guide/table_view.xhp\" name=\"རེའུ་མིག་མཐོང་རིས་བཟོ་བཅོས།\">རེའུ་མིག་མཐོང་རིས་བཟོ་བཅོས།</link></variable>"
+msgid "<variable id=\"table_view\"><link href=\"text/scalc/guide/table_view.xhp\">Changing Table Views</link></variable>"
+msgstr "<variable id=\"table_view\"><link href=\"text/scalc/guide/table_view.xhp\">རེའུ་མིག་མཐོང་རིས་བཟོ་བཅོས།</link></variable>"
 
 #. Fnu8g
 #: table_view.xhp
@@ -12553,14 +12562,14 @@ msgctxt ""
 msgid "<bookmark_value>numbers;entering as text</bookmark_value>      <bookmark_value>text formats; for numbers</bookmark_value>      <bookmark_value>formats; numbers as text</bookmark_value>      <bookmark_value>cell formats; text/numbers</bookmark_value>      <bookmark_value>formatting;numbers as text</bookmark_value>"
 msgstr ""
 
-#. YjSEt
+#. Azs4A
 #: text_numbers.xhp
 msgctxt ""
 "text_numbers.xhp\n"
 "hd_id3145068\n"
 "help.text"
-msgid "<variable id=\"text_numbers\"><link href=\"text/scalc/guide/text_numbers.xhp\" name=\"Formatting Numbers as Text\">Formatting Numbers as Text</link></variable>"
-msgstr "<variable id=\"text_numbers\"><link href=\"text/scalc/guide/text_numbers.xhp\" name=\"གྲངས་ཀ་ནི་ཡི་གེའི་རྣམ་གཞག་ཅན་དུ་འགྱུར།\">གྲངས་ཀ་ནི་ཡི་གེའི་རྣམ་གཞག་ཅན་དུ་འགྱུར།</link></variable>"
+msgid "<variable id=\"text_numbers\"><link href=\"text/scalc/guide/text_numbers.xhp\">Formatting Numbers as Text</link></variable>"
+msgstr "<variable id=\"text_numbers\"><link href=\"text/scalc/guide/text_numbers.xhp\">གྲངས་ཀ་ནི་ཡི་གེའི་རྣམ་གཞག་ཅན་དུ་འགྱུར།</link></variable>"
 
 #. JPD2o
 #: text_numbers.xhp
@@ -12589,14 +12598,14 @@ msgctxt ""
 msgid "If you decide to enter a number directly as text, enter an apostrophe (') first. For example, for years in column headings, you can enter '1999, '2000 and '2001. The apostrophe is not visible in the cell, it only indicates that the entry is to be recognized as a text. This is useful if, for example, you enter a telephone number or postal code that begins with a zero (0), because a zero (0) at the start of a sequence of digits is removed in normal number formats."
 msgstr "གལ་ཏེ་ཁྱེད་ཀྱིས་ཐད་ཀར་གྲངས་ཀ་ཡི་གེར་རྩིས་ནས་འཇུག་རྒྱུ་གཏན་འཁེལ་ན་ གྲངས་ཀའི་སྔོན་དུ་འདྲེན་རྟགས་རྐྱང་པ་ (')འཇུག་དགོས།  དཔེར་ན་  ཁྱེད་ཀྱིས་སྟར་ཁ་བྱང་ནང་ལོ་གྲངས་ '1999དང་'2000 、 '2001བཅུག་ན་ འདྲེན་རྟགས་རྐྱང་པ་དྲ་མིག་ནང་མི་མངོན་  དེས་བཅུག་པའི་གྲངས་ཀ་ནི་ཡི་གེར་ངོས་འཛིན་བྱེད།  ཀླད་ཀོར་ (0) གྱིས་སྒོ་བཅུག་པའི་ཁ་པར་ཨང་གྲངས་དང་ཡིག་ཟམ་ཨང་གྲངས་འཇུག་སྐབས་ཐབས་ཤེས་འདི་ཤིན་ཏུ་ལེགས་  རྐྱེན་ནི་རྒྱུན་སྤྱོད་གྲངས་ཀའི་རྣམ་གཞག་སྤྱོད་སྐབས་གྲངས་ཀའི་རིམ་སྒྲིག་གོང་གི་ཀླད་ཀོར་དོར་འགྲོ"
 
-#. hnEQ6
+#. q4W79
 #: text_numbers.xhp
 msgctxt ""
 "text_numbers.xhp\n"
 "par_id3156284\n"
 "help.text"
-msgid "<link href=\"text/shared/01/05020300.xhp\" name=\"Format - Cells - Numbers\">Format - Cells - Numbers</link>"
-msgstr "<link href=\"text/shared/01/05020300.xhp\" name=\"རྣམ་གཞག་ -  དྲ་མིག་ - གྲངས་ཀ་\">རྣམ་གཞག་ -  དྲ་མིག་ - གྲངས་ཀ་</link>"
+msgid "<link href=\"text/shared/01/05020300.xhp\">Format - Cells - Numbers</link>"
+msgstr "<link href=\"text/shared/01/05020300.xhp\">རྣམ་གཞག་ -  དྲ་མིག་ - གྲངས་ཀ་</link>"
 
 #. MZp8B
 #: text_rotate.xhp
@@ -12616,14 +12625,14 @@ msgctxt ""
 msgid "<bookmark_value>cells; rotating text</bookmark_value>      <bookmark_value>rotating; text in cells</bookmark_value>      <bookmark_value>text in cells; writing vertically</bookmark_value>"
 msgstr "<bookmark_value>དྲ་མིག  ཡི་གེ་འཁྱིལ་འཁོར། </bookmark_value><bookmark_value>འཁྱིལ་འཁོར།  དྲ་མིག་ནང་གི་ཡི་གེ</bookmark_value><bookmark_value> དྲ་མིག་ནང་གི་ཡི་གེ  དྲང་འཕྱང་དུ་འབྲི་འཇུག</bookmark_value>"
 
-#. btUfR
+#. K94Go
 #: text_rotate.xhp
 msgctxt ""
 "text_rotate.xhp\n"
 "hd_id3151112\n"
 "help.text"
-msgid "<variable id=\"text_rotate\"><link href=\"text/scalc/guide/text_rotate.xhp\" name=\"Rotating Text\">Rotating Text</link></variable>"
-msgstr "<variable id=\"text_rotate\"><link href=\"text/scalc/guide/text_rotate.xhp\" name=\"ཡི་གེ་འཁྱིལ་འཁོར། \">ཡི་གེ་འཁྱིལ་འཁོར། </link></variable>"
+msgid "<variable id=\"text_rotate\"><link href=\"text/scalc/guide/text_rotate.xhp\">Rotating Text</link></variable>"
+msgstr "<variable id=\"text_rotate\"><link href=\"text/scalc/guide/text_rotate.xhp\">ཡི་གེ་འཁྱིལ་འཁོར། </link></variable>"
 
 #. DXQsT
 #: text_rotate.xhp
@@ -12661,23 +12670,23 @@ msgctxt ""
 msgid "In the <emph>Text orientation</emph> area use the mouse to select in the preview wheel the direction in which the text is to be rotated. Click <emph>OK</emph>."
 msgstr "ས་ཁོངས་ཀྱི་<emph>ཡི་གེའི་ཁ་ཕྱོགས།</emph>ནང་ཙིག་རྟགས་སྤྱད་ནས་སྔོན་ལྟའི་ཕྱོགས་སྟོན་འཁོར་ལོའི་སྟེང་ཡི་གེའི་འཁྱིལ་འཁོར་ཁ་ཕྱོགས་འདེམས།   <emph>\"གཏན་འཁེལ།\"ལ་</emph>རྡེབ་གནོན་བྱེད།"
 
-#. xZi7M
+#. KDYBL
 #: text_rotate.xhp
 msgctxt ""
 "text_rotate.xhp\n"
 "par_id3148456\n"
 "help.text"
-msgid "<link href=\"text/scalc/01/05020000.xhp\" name=\"Format - Cells\">Format - Cells</link>"
-msgstr "<link href=\"text/scalc/01/05020000.xhp\" name=\"རྣམ་གཞག་ - དྲ་མིག་\">རྣམ་གཞག་ - དྲ་མིག་</link>"
+msgid "<link href=\"text/scalc/01/05020000.xhp\">Format - Cells</link>"
+msgstr "<link href=\"text/scalc/01/05020000.xhp\">རྣམ་གཞག་ - དྲ་མིག་</link>"
 
-#. gVdDT
+#. Uvcyj
 #: text_rotate.xhp
 msgctxt ""
 "text_rotate.xhp\n"
 "par_id3154944\n"
 "help.text"
-msgid "<link href=\"text/shared/01/05340300.xhp\" name=\"Format - Cells - Alignment\">Format - Cells - Alignment</link>"
-msgstr "<link href=\"text/shared/01/05340300.xhp\" name=\"རྣམ་གཞག་ - དྲ་མིག་ - སྙོམས་གཤིབ་\">རྣམ་གཞག་ - དྲ་མིག་ - སྙོམས་གཤིབ་</link>"
+msgid "<link href=\"text/shared/01/05340300.xhp\">Format - Cells - Alignment</link>"
+msgstr "<link href=\"text/shared/01/05340300.xhp\">རྣམ་གཞག་ - དྲ་མིག་ - སྙོམས་གཤིབ་</link>"
 
 #. ExCrt
 #: text_wrap.xhp
@@ -12697,14 +12706,14 @@ msgctxt ""
 msgid "<bookmark_value>text in cells; multi-line</bookmark_value><bookmark_value>cells; text breaks</bookmark_value><bookmark_value>breaks in cells</bookmark_value><bookmark_value>multi-line text in cells</bookmark_value>"
 msgstr "<bookmark_value> དྲ་མིག་ནང་གི་ཡི་གེ  ཕྲེང་མང་།</bookmark_value><bookmark_value>དྲ་མིག  ཡི་གེ་བར་ཆོད།</bookmark_value><bookmark_value>བར་ཆོད།  དྲ་མིག་ནང་།</bookmark_value><bookmark_value>དྲ་མིག་ནང་གི་ཕྲེང་མང་ཡི་གེ</bookmark_value>"
 
-#. L6xkB
+#. 6siFB
 #: text_wrap.xhp
 msgctxt ""
 "text_wrap.xhp\n"
 "hd_id3154346\n"
 "help.text"
-msgid "<variable id=\"text_wrap\"><link href=\"text/scalc/guide/text_wrap.xhp\" name=\"Writing Multi-line Text\">Writing Multi-line Text</link></variable>"
-msgstr "<variable id=\"text_wrap\"><link href=\"text/scalc/guide/text_wrap.xhp\" name=\"ཕྲེང་མང་ཡི་གེ་འབྲི་འཇུག\">ཕྲེང་མང་ཡི་གེ་འབྲི་འཇུག</link></variable>"
+msgid "<variable id=\"text_wrap\"><link href=\"text/scalc/guide/text_wrap.xhp\">Writing Multi-line Text</link></variable>"
+msgstr "<variable id=\"text_wrap\"><link href=\"text/scalc/guide/text_wrap.xhp\">ཕྲེང་མང་ཡི་གེ་འབྲི་འཇུག</link></variable>"
 
 #. WGo9x
 #: text_wrap.xhp
@@ -12751,13 +12760,13 @@ msgctxt ""
 msgid "For automatic wrapping in XLS files, the rows in question should be set to Optimal Height."
 msgstr ""
 
-#. pED9m
+#. EtDAo
 #: text_wrap.xhp
 msgctxt ""
 "text_wrap.xhp\n"
 "par_id3145799\n"
 "help.text"
-msgid "<link href=\"text/scalc/01/05020000.xhp\" name=\"Format - Cells\">Format - Cells</link>"
+msgid "<link href=\"text/scalc/01/05020000.xhp\">Format - Cells</link>"
 msgstr ""
 
 #. rAuLt
@@ -12778,14 +12787,14 @@ msgctxt ""
 msgid "<bookmark_value>functions; user-defined</bookmark_value><bookmark_value>user-defined functions</bookmark_value><bookmark_value>Basic IDE for user-defined functions</bookmark_value><bookmark_value>IDE; Basic IDE</bookmark_value><bookmark_value>programming;functions</bookmark_value>"
 msgstr "<bookmark_value>རྟེན་གྲངས།  སྤྱོད་པོས་མཚན་འཇོག</bookmark_value><bookmark_value>སྤྱོད་པོས་མཚན་འཇོག་རྟེན་གྲངས།</bookmark_value><bookmark_value>Basic IDE;སྤྱོད་པ། </bookmark_value><bookmark_value>IDE; Basic IDE</bookmark_value>"
 
-#. ABAEY
+#. rYvdz
 #: userdefined_function.xhp
 msgctxt ""
 "userdefined_function.xhp\n"
 "hd_id3155411\n"
 "help.text"
-msgid "<variable id=\"userdefined_function\"><link href=\"text/scalc/guide/userdefined_function.xhp\" name=\"Defining Functions Yourself\">User-Defined Functions</link></variable>"
-msgstr "<variable id=\"userdefined_function\"><link href=\"text/scalc/guide/userdefined_function.xhp\" name=\"སྤྱོད་པོས་མཚན་འཇོག་རྟེན་གྲངས།\">སྤྱོད་པོས་མཚན་འཇོག་རྟེན་གྲངས།</link></variable>"
+msgid "<variable id=\"userdefined_function\"><link href=\"text/scalc/guide/userdefined_function.xhp\">User-Defined Functions</link></variable>"
+msgstr "<variable id=\"userdefined_function\"><link href=\"text/scalc/guide/userdefined_function.xhp\">སྤྱོད་པོས་མཚན་འཇོག་རྟེན་གྲངས།</link></variable>"
 
 #. 4PUhf
 #: userdefined_function.xhp
@@ -12805,14 +12814,14 @@ msgctxt ""
 msgid "You can define your own functions using the Basic-IDE. This method requires a basic knowledge of programming."
 msgstr "ཁྱེད་ཀྱིས་ Basic-IDE སྤྱད་ནས་སོ་སོའི་རྟེན་གྲངས་མཚན་ཉིད་བཞག་ཆོག   ཐབས་འདིར་རྩ་བའི་རིག་སྒྲིག་ཤེས་བྱ་དགོས།"
 
-#. F6npk
+#. egzia
 #: userdefined_function.xhp
 msgctxt ""
 "userdefined_function.xhp\n"
 "par_id3153768\n"
 "help.text"
-msgid "You can program functions as <link href=\"text/scalc/01/04060111.xhp\" name=\"add-ins\">add-ins</link>. This method requires an advanced knowledge of programming."
-msgstr "རྟེན་གྲངས་འབྲི་བྱ་ནི་ <link href=\"text/scalc/01/04060111.xhp\" name=\"Add In\">Add In</link>ཡིན།  ཐབས་འདིར་ཕུན་སུམ་ཚོགས་པའི་རིམ་སྒྲིག་ཤེས་བྱ་དགོས།"
+msgid "You can program functions as <link href=\"text/scalc/01/04060111.xhp\">add-ins</link>. This method requires an advanced knowledge of programming."
+msgstr "རྟེན་གྲངས་འབྲི་བྱ་ནི་ <link href=\"text/scalc/01/04060111.xhp\">Add In</link>ཡིན།  ཐབས་འདིར་ཕུན་སུམ་ཚོགས་པའི་རིམ་སྒྲིག་ཤེས་བྱ་དགོས།"
 
 #. H2JBv
 #: userdefined_function.xhp
@@ -13030,14 +13039,14 @@ msgctxt ""
 msgid "<bookmark_value>values; limiting on input</bookmark_value><bookmark_value>limits; specifying value limits on input</bookmark_value><bookmark_value>permitted cell contents</bookmark_value><bookmark_value>data validity</bookmark_value><bookmark_value>validity</bookmark_value><bookmark_value>cells; validity</bookmark_value><bookmark_value>error messages; defining for incorrect input</bookmark_value><bookmark_value>actions in case of incorrect input</bookmark_value><bookmark_value>Help tips; defining text for cell input</bookmark_value><bookmark_value>comments;help text for cells</bookmark_value><bookmark_value>cells; defining input help</bookmark_value><bookmark_value>macros; running when incorrect input</bookmark_value><bookmark_value>data; validity check</bookmark_value>"
 msgstr "<bookmark_value>ཐང་  ནང་འཇུག་སྐབས་ཚོད་འཛིན་ཡོད།</bookmark_value><bookmark_value>ཚོད་འཛིན་ཐང་།  ནང་འཇུག་སྐབས།</bookmark_value><bookmark_value>ཆོག་པའི་དྲ་མིག་ནང་དོན་སྟོན་རྒྱུ</bookmark_value><bookmark_value>གཞི་གྲངས་ནུས་ལྡན་རང་བཞིན།</bookmark_value><bookmark_value>ནུས་ལྡན་རང་བཞིན།</bookmark_value><bookmark_value>དྲ་མིག  ནུས་ལྡན་རང་བཞིན།</bookmark_value><bookmark_value>ནོར་འཁྲུལ་ཆ་འཕྲིན།  ནང་འཇུག་ནོར་བ་མཚན་འཇོག</bookmark_value><bookmark_value>ནོར་བའི་སྐབས་ཀྱི་བཀོལ་སྤྱོད་འཇུག་རྒྱུ</bookmark_value><bookmark_value>རོགས་རམ་དྲན་སྟོན།  དྲ་མིག་ནང་འཇུག་པའི་ཡི་གེའི་ཟུར་མཆན།</bookmark_value><bookmark_value>ཟུར་མཆན། དྲ་མིག་གི་རོགས་རམ་ཡིག་དེབ།</bookmark_value><bookmark_value>དྲ་མིག  ནང་འཇུག་རོགས་རམ་ཧུང་།</bookmark_value><bookmark_value>ཧུང་། ནང་འཇུག་ནོར་བའི་སྐབས་ཀྱི་འཁོར་རྒྱུག</bookmark_value><bookmark_value>གཞི་གྲངས། ནུས་ལྡན་རང་བཞིན་གྱི་བརྟག་དཔྱད།</bookmark_value>"
 
-#. mNVB9
+#. GAC8Q
 #: validity.xhp
 msgctxt ""
 "validity.xhp\n"
 "hd_id3156442\n"
 "help.text"
-msgid "<variable id=\"validity\"><link href=\"text/scalc/guide/validity.xhp\" name=\"Validity of Cell Contents\">Validity of Cell Contents</link></variable>"
-msgstr "<variable id=\"validity\"><link href=\"text/scalc/guide/validity.xhp\" name=\"དྲ་མིག་ནང་དོན་གྱི་ནུས་ལྡན་རང་བཞིན།\">དྲ་མིག་ནང་དོན་གྱི་ནུས་ལྡན་རང་བཞིན།</link></variable>"
+msgid "<variable id=\"validity\"><link href=\"text/scalc/guide/validity.xhp\">Validity of Cell Contents</link></variable>"
+msgstr "<variable id=\"validity\"><link href=\"text/scalc/guide/validity.xhp\">དྲ་མིག་ནང་དོན་གྱི་ནུས་ལྡན་རང་བཞིན།</link></variable>"
 
 #. XgWFZ
 #: validity.xhp
@@ -13057,13 +13066,13 @@ msgctxt ""
 msgid "The validity rule is activated when a new value is entered. If an invalid value has already been inserted into the cell, or if you insert a value in the cell either with drag-and-drop or by copying and pasting, the validity rule will not take effect."
 msgstr ""
 
-#. uVPcC
+#. N7bP8
 #: validity.xhp
 msgctxt ""
 "validity.xhp\n"
 "par_id5174718\n"
 "help.text"
-msgid "You can choose <emph>Tools - Detective</emph> at any time and choose the command <link href=\"text/scalc/01/06030800.xhp\" name=\"Mark Invalid Data\"><emph>Mark Invalid Data</emph></link> to display which cells contain invalid values."
+msgid "You can choose <emph>Tools - Detective</emph> at any time and choose the command <link href=\"text/scalc/01/06030800.xhp\"><emph>Mark Invalid Data</emph></link> to display which cells contain invalid values."
 msgstr ""
 
 #. vExqw
@@ -13111,14 +13120,14 @@ msgctxt ""
 msgid "In the <emph>Allow</emph> field, select an option."
 msgstr "<emph>ཆོག་པའི།</emph>ཡིག་དུམ་ནང་  ཁས་ལེན་གྱི་འདེམས་གཞི་ནི་\"གྲངས་ཐང་ཡོད་ཚད།\"ཡིན་  དྲ་མིག་གི་གཤར་བྱང་ལ་ཆ་རྐྱེན་སྒྲིག་སྐབས་རེའུ་འགོད་ནང་འདེམས་གཞི་གཞན་ཞིག་འདེམས་རོགས།"
 
-#. AN7uL
+#. xDJjD
 #: validity.xhp
 msgctxt ""
 "validity.xhp\n"
 "par_id3153011\n"
 "help.text"
-msgid "If you select \"Whole Numbers\", values such as \"12.5\" are not allowed. Choosing \"Date\" allows date information both in the local date format as well as in the form of a <link href=\"text/sbasic/shared/03030101.xhp\" name=\"serial date\">serial date</link>. Similarly, the \"Time\" condition permits time values such as \"12:00\" or serial time numbers. \"Text Length\" stipulates that cells are allowed to contain text only."
-msgstr "འདེམས་གཞི་འདིས་ཆ་རྐྱེན་དང་པོ་སྒྲིག་ཟིན།  གལ་ཏེ་\"ཧྲིལ་གྲངས།\"བདམས་ན་   \"12.5\" སོགས་གྲངས་ཐང་ཐོན་མི་ཆོག་  གྲངས་དེ་རྣམས་ཆ་རྐྱེན་གཞན་མཐུན་ནའང་ཡིན།  \"ཚེས་གྲངས།\"འདེམས་སྐབས་དེའི་ཚེས་གྲངས་རྣམ་པའམ་<link href=\"text/sbasic/shared/03030101.xhp\" name=\"སྦྲེལ་མཐུད་ཚེས་གྲངས།\">སྦྲེལ་མཐུད་ཚེས་གྲངས།</link>རྣམ་པས་ཚེས་གྲངས་ཆ་འཕྲིན་འཇུག་ཆོག   དེ་དང་འདྲ་བར་ \"དུས་ཚོད།\"ཆ་རྐྱེན་ལ་ \"12:00\" འམ་སྦྲེལ་མཐུས་དུས་ཚོད་རྣམ་པས་དུས་ཚོད་ཐང་བཅུག་ཆོག  \"ཡི་གེའི་རིང་ཚད།\"གིས་གཏན་འབེབས་ནི་དྲ་མིག་ནང་ཡི་གེ་ཁོ་ན་འདུས།"
+msgid "If you select \"Whole Numbers\", values such as \"12.5\" are not allowed. Choosing \"Date\" allows date information both in the local date format as well as in the form of a <link href=\"text/sbasic/shared/03030101.xhp\">serial date</link>. Similarly, the \"Time\" condition permits time values such as \"12:00\" or serial time numbers. \"Text Length\" stipulates that cells are allowed to contain text only."
+msgstr "འདེམས་གཞི་འདིས་ཆ་རྐྱེན་དང་པོ་སྒྲིག་ཟིན།  གལ་ཏེ་\"ཧྲིལ་གྲངས།\"བདམས་ན་   \"12.5\" སོགས་གྲངས་ཐང་ཐོན་མི་ཆོག་  གྲངས་དེ་རྣམས་ཆ་རྐྱེན་གཞན་མཐུན་ནའང་ཡིན།  \"ཚེས་གྲངས།\"འདེམས་སྐབས་དེའི་ཚེས་གྲངས་རྣམ་པའམ་<link href=\"text/sbasic/shared/03030101.xhp\">སྦྲེལ་མཐུད་ཚེས་གྲངས།</link>རྣམ་པས་ཚེས་གྲངས་ཆ་འཕྲིན་འཇུག་ཆོག   དེ་དང་འདྲ་བར་ \"དུས་ཚོད།\"ཆ་རྐྱེན་ལ་ \"12:00\" འམ་སྦྲེལ་མཐུས་དུས་ཚོད་རྣམ་པས་དུས་ཚོད་ཐང་བཅུག་ཆོག  \"ཡི་གེའི་རིང་ཚད།\"གིས་གཏན་འབེབས་ནི་དྲ་མིག་ནང་ཡི་གེ་ཁོ་ན་འདུས།"
 
 #. qGjDb
 #: validity.xhp
@@ -13192,13 +13201,13 @@ msgctxt ""
 msgid "If you select \"Macro\", then by using the <emph>Browse</emph> button you can specify a macro to be run in the event of an error."
 msgstr "གལ་ཏེ་\"ཧུང་།\"བདམས་ན་  <emph>མིག་བཤར།</emph>གནོན་མཐེབ་སྤྱད་ནས་ཧུང་གཅིག་སྟོན་ནས་ནོར་འཁྲུལ་ཐག་གཅོད་བྱས་ཆོག"
 
-#. xoScW
+#. eiEtj
 #: validity.xhp
 msgctxt ""
 "validity.xhp\n"
 "par_id3149011\n"
 "help.text"
-msgid "To display the error message, select <link href=\"text/scalc/01/12120300.xhp\" name=\"erroralert\">Show error message when invalid values are entered</link>."
+msgid "To display the error message, select <link href=\"text/scalc/01/12120300.xhp\">Show error message when invalid values are entered</link>."
 msgstr ""
 
 #. VTfnE
@@ -13210,14 +13219,14 @@ msgctxt ""
 msgid "After changing the action for a cell on the <emph>Error Alert</emph> tab page and closing the dialog with OK, you must first select another cell before the change takes effect."
 msgstr "གལ་ཏེ་<emph>ནོར་འཁྲུལ་སྙན་ཞུ།</emph>འདེམས་གཞིའི་ཁྭ་ནང་དྲ་མིག་གཅིག་གི་བཀོལ་སྤྱོད་སྒྱུར་ཞིང་\"གཏན་འཁེལ།\"གྱིས་གླེང་སྒྲོམ་ཁ་བརྒྱབ་ན་ངེས་པར་དུ་སྔོན་ལ་དྲ་མིག་གཞན་གཅིག་འདེམས་དགོས་དེ་རྗེས་བཟོས་པའི་སྒྱུར་བཅོས་ནུས་པ་ཐོན།"
 
-#. oQYeC
+#. PpEfP
 #: validity.xhp
 msgctxt ""
 "validity.xhp\n"
 "par_id3154805\n"
 "help.text"
-msgid "<link href=\"text/scalc/01/12120000.xhp\" name=\"Data - Validity\">Data - Validity</link>"
-msgstr "<link href=\"text/scalc/01/12120000.xhp\" name=\"གཞི་གྲངས་ - ནུས་ལྡན་རང་བཞིན་\">གཞི་གྲངས་ - ནུས་ལྡན་རང་བཞིན་</link>"
+msgid "<link href=\"text/scalc/01/12120000.xhp\">Data - Validity</link>"
+msgstr "<link href=\"text/scalc/01/12120000.xhp\">གཞི་གྲངས་ - ནུས་ལྡན་རང་བཞིན་</link>"
 
 #. cEdPu
 #: value_with_name.xhp
@@ -13237,14 +13246,14 @@ msgctxt ""
 msgid "<bookmark_value>cells; defining names</bookmark_value>      <bookmark_value>names; defining for cells</bookmark_value>      <bookmark_value>values; defining names</bookmark_value>      <bookmark_value>constants definition</bookmark_value>      <bookmark_value>variables; defining names</bookmark_value>      <bookmark_value>cell ranges; defining names</bookmark_value>      <bookmark_value>defining;names for cell ranges</bookmark_value>      <bookmark_value>formulas; defining names</bookmark_value>      <bookmark_value>addressing; by defined names</bookmark_value>      <bookmark_value>cell names; defining/addressing</bookmark_value>      <bookmark_value>references; by defined names</bookmark_value>      <bookmark_value>allowed cell names</bookmark_value>      <bookmark_value>renaming;cells</bookmark_value>"
 msgstr "<bookmark_value>དྲ་མིག མིང་མཚན་འཇོག</bookmark_value><bookmark_value>མིང་།  དྲ་མིག་ལ་སྤྱོད།</bookmark_value><bookmark_value>ཐང་།  མིང་མཚན་འཇོག</bookmark_value><bookmark_value>རྒྱུན་གྲངས་མཚན་འཇོག</bookmark_value><bookmark_value>འགྱུར་ཚད།  མིང་མཚན་འཇོག</bookmark_value><bookmark_value>དྲ་མིག་ཁྱབ་ཁོངས།  མིང་མཚན་འཇོག</bookmark_value><bookmark_value>མིང་མཚན་འཇོག  དྲ་མིག་ཁྱབ་ཁོངས།</bookmark_value><bookmark_value>སྤྱི་འགྲོས།  མིང་མཚན་འཇོག</bookmark_value><bookmark_value>དྲ་མིག་མིང་།  སྤྱི་འགྲོས་ནང་།</bookmark_value>"
 
-#. 7VrgE
+#. vT4C3
 #: value_with_name.xhp
 msgctxt ""
 "value_with_name.xhp\n"
 "hd_id3147434\n"
 "help.text"
-msgid "<variable id=\"value_with_name\"><link href=\"text/scalc/guide/value_with_name.xhp\" name=\"Naming Cells\">Naming Cells</link></variable>"
-msgstr "<variable id=\"value_with_name\"><link href=\"text/scalc/guide/value_with_name.xhp\" name=\"དྲ་མིག་མིང་འདོགས་\">དྲ་མིག་མིང་འདོགས་</link></variable>"
+msgid "<variable id=\"value_with_name\"><link href=\"text/scalc/guide/value_with_name.xhp\">Naming Cells</link></variable>"
+msgstr "<variable id=\"value_with_name\"><link href=\"text/scalc/guide/value_with_name.xhp\">དྲ་མིག་མིང་འདོགས་</link></variable>"
 
 #. EyNmi
 #: value_with_name.xhp
@@ -13399,13 +13408,13 @@ msgctxt ""
 msgid "If more than one name starts with the same characters, you can scroll forward through all the names using the <switchinline select=\"sys\"><caseinline select=\"MAC\"><keycode>Command</keycode></caseinline><defaultinline><keycode>Ctrl</keycode></defaultinline></switchinline> <keycode>+ Tab keys</keycode> and backward using the <keycode>Shift +</keycode> <switchinline select=\"sys\"><caseinline select=\"MAC\"><keycode>Command</keycode></caseinline><defaultinline><keycode>Ctrl</keycode></defaultinline></switchinline> <keycode>+ Tab</keycode> keys."
 msgstr ""
 
-#. VDbbB
+#. j7cYG
 #: value_with_name.xhp
 msgctxt ""
 "value_with_name.xhp\n"
 "par_id3153711\n"
 "help.text"
-msgid "<link href=\"text/scalc/01/04070100.xhp\" name=\"Sheet - Named Ranges and Expressions - Define\">Sheet - Named Ranges and Expressions - Define</link>"
+msgid "<link href=\"text/scalc/01/04070100.xhp\">Sheet - Named Ranges and Expressions - Define</link>"
 msgstr ""
 
 #. tT8Ku
@@ -13426,14 +13435,14 @@ msgctxt ""
 msgid "<bookmark_value>HTML WebQuery</bookmark_value><bookmark_value>ranges; inserting in tables</bookmark_value><bookmark_value>external data; inserting</bookmark_value><bookmark_value>tables; inserting external data</bookmark_value><bookmark_value>web pages; importing data</bookmark_value><bookmark_value>WebQuery filter</bookmark_value><bookmark_value>inserting; external data</bookmark_value><bookmark_value>data sources; external data</bookmark_value>"
 msgstr "<bookmark_value>HTML WebQuery</bookmark_value><bookmark_value>ཁྱབ་ཁོངས།  རེའུ་མིག་ནང་བསྒར་འཛུད། </bookmark_value><bookmark_value>ཕྱི་རོལ་གཞི་གྲངས།  བསྒར་འཛུད།</bookmark_value><bookmark_value>རེའུ་མིག  བསྒར་འཛུད་ཕྱི་རོལ་གཞི་གྲངས།</bookmark_value><bookmark_value>དྲ་ཤོག  གཞི་གྲངས་འདྲེན་འཇུག</bookmark_value><bookmark_value>WebQuery འཚག་འདེམས་ཆས།</bookmark_value><bookmark_value>ཕྱི་རོལ་གཞི་གྲངས།WebQuery</bookmark_value><bookmark_value>བསྒར་འཛུད།  ཕྱི་རོལ་གཞི་གྲངས།</bookmark_value><bookmark_value>གཞི་གྲངས་ཁུངས།  ཕྱི་རོལ་གཞི་གྲངས།</bookmark_value>"
 
-#. BbQqD
+#. LzMwA
 #: webquery.xhp
 msgctxt ""
 "webquery.xhp\n"
 "hd_id3125863\n"
 "help.text"
-msgid "<variable id=\"webquery\"><link href=\"text/scalc/guide/webquery.xhp\" name=\"Inserting External Data in Table (WebQuery)\">Inserting External Data in Table (WebQuery)</link></variable>"
-msgstr "<variable id=\"webquery\"><link href=\"text/scalc/guide/webquery.xhp\" name=\" ལས་ཁྲའི་ནང་ཕྱི་རོལ་གཞི་གྲངས་བསྒར་འཛུད་(WebQuery)\">ལས་ཁྲའི་ནང་ཕྱི་རོལ་གཞི་གྲངས་བསྒར་འཛུད་(WebQuery)</link></variable>"
+msgid "<variable id=\"webquery\"><link href=\"text/scalc/guide/webquery.xhp\">Inserting External Data in Table (WebQuery)</link></variable>"
+msgstr "<variable id=\"webquery\"><link href=\"text/scalc/guide/webquery.xhp\">ལས་ཁྲའི་ནང་ཕྱི་རོལ་གཞི་གྲངས་བསྒར་འཛུད་(WebQuery)</link></variable>"
 
 #. Uf8QW
 #: webquery.xhp
@@ -13624,14 +13633,14 @@ msgctxt ""
 msgid "Open <emph>Edit - Links</emph>. Here you can edit the link to the external data."
 msgstr "<emph>རྩོམ་སྒྲིག་ - ཐག་སྦྲེལ་</emph>ཁ་ཕྱེ།  འདིར་ཁྱེད་ཀྱིས་ཕྱི་རོལ་གཞི་གྲངས་ཀྱི་ཐག་སྦྲེལ་རྩོམ་སྒྲིག་ཆོག"
 
-#. mXauD
+#. xJkAV
 #: webquery.xhp
 msgctxt ""
 "webquery.xhp\n"
 "par_id3154650\n"
 "help.text"
-msgid "<link href=\"text/scalc/01/04090000.xhp\" name=\"External data dialog\">External data dialog</link>"
-msgstr "<link href=\"text/scalc/01/04090000.xhp\" name=\"ཕྱི་རོལ་གཞི་གྲངས་གླེང་སྒྲོམ།\">ཕྱི་རོལ་གཞི་གྲངས་གླེང་སྒྲོམ།</link>"
+msgid "<link href=\"text/scalc/01/04090000.xhp\">External data dialog</link>"
+msgstr "<link href=\"text/scalc/01/04090000.xhp\">ཕྱི་རོལ་གཞི་གྲངས་གླེང་སྒྲོམ།</link>"
 
 #. GnXq4
 #: wildcards.xhp
@@ -13651,13 +13660,13 @@ msgctxt ""
 msgid "<bookmark_value>wildcards in formulas</bookmark_value>    <bookmark_value>wildcards;examples</bookmark_value>"
 msgstr ""
 
-#. 98C5v
+#. ynEWi
 #: wildcards.xhp
 msgctxt ""
 "wildcards.xhp\n"
 "hd_id941629155075179\n"
 "help.text"
-msgid "<variable id=\"wildcards_h1\"><link href=\"text/scalc/guide/wildcards.xhp\" name=\"wildcards_link\">Using Wildcards in Formulas</link></variable>"
+msgid "<variable id=\"wildcards_h1\"><link href=\"text/scalc/guide/wildcards.xhp\">Using Wildcards in Formulas</link></variable>"
 msgstr ""
 
 #. yqMKw
@@ -13921,14 +13930,14 @@ msgctxt ""
 msgid "<bookmark_value>years; 2-digits</bookmark_value><bookmark_value>dates; 19xx/20xx</bookmark_value>"
 msgstr "<bookmark_value>ལོ།  གནས་གཉིས།</bookmark_value><bookmark_value>ཚེས་གྲངས། 19xx/20xx</bookmark_value>"
 
-#. xroNR
+#. DwNwj
 #: year2000.xhp
 msgctxt ""
 "year2000.xhp\n"
 "hd_id3150439\n"
 "help.text"
-msgid "<variable id=\"year2000\"><link href=\"text/scalc/guide/year2000.xhp\" name=\"19xx/20xx Years\">19xx/20xx Years</link></variable>"
-msgstr "<variable id=\"year2000\"><link href=\"text/scalc/guide/year2000.xhp\" name=\"19xx/20xx ལོ་\">19xx/20xx ལོ་</link></variable>"
+msgid "<variable id=\"year2000\"><link href=\"text/scalc/guide/year2000.xhp\">19xx/20xx Years</link></variable>"
+msgstr "<variable id=\"year2000\"><link href=\"text/scalc/guide/year2000.xhp\">19xx/20xx ལོ་</link></variable>"
 
 #. DeEcT
 #: year2000.xhp

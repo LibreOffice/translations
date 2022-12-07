@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2022-11-22 14:43+0100\n"
+"POT-Creation-Date: 2022-12-07 19:22+0100\n"
 "PO-Revision-Date: 2019-08-09 08:00+0000\n"
 "Last-Translator: serval2412 <serval2412@yahoo.fr>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,14 +34,14 @@ msgctxt ""
 msgid "<bookmark_value>automatic addressing in tables</bookmark_value>  <bookmark_value>natural language addressing</bookmark_value>  <bookmark_value>formulas; using row/column labels</bookmark_value>  <bookmark_value>text in cells; as addressing</bookmark_value>  <bookmark_value>addressing; automatic</bookmark_value>  <bookmark_value>name recognition on/off</bookmark_value>  <bookmark_value>row headers;using in formulas</bookmark_value>  <bookmark_value>column headers;using in formulas</bookmark_value>  <bookmark_value>columns; finding labels automatically</bookmark_value>  <bookmark_value>rows; finding labels automatically</bookmark_value>  <bookmark_value>recognizing; column and row labels</bookmark_value>"
 msgstr "<bookmark_value>表格中的自動定址</bookmark_value>      <bookmark_value>自然語言定址</bookmark_value>      <bookmark_value>公式; 使用列/欄標籤</bookmark_value>      <bookmark_value>儲存格中的文字; 作為定址</bookmark_value>      <bookmark_value>定址; 自動</bookmark_value>      <bookmark_value>開啟/關閉名稱識別</bookmark_value>      <bookmark_value>列標題; 用於公式中</bookmark_value>      <bookmark_value>欄標題; 用於公式中</bookmark_value>      <bookmark_value>欄; 自動尋找標籤</bookmark_value>      <bookmark_value>列; 自動尋找標籤</bookmark_value>      <bookmark_value>識別; 欄和列標籤</bookmark_value>"
 
-#. qAvAQ
+#. Jmw9V
 #: address_auto.xhp
 msgctxt ""
 "address_auto.xhp\n"
 "hd_id3148797\n"
 "help.text"
-msgid "<variable id=\"address_auto\"><link href=\"text/scalc/guide/address_auto.xhp\" name=\"Recognizing Names as Addressing\">Recognizing Names as Addressing</link></variable>"
-msgstr "<variable id=\"address_auto\"><link href=\"text/scalc/guide/address_auto.xhp\" name=\"辨識作為編排位址的名稱\">辨識作為編排位址的名稱</link></variable>"
+msgid "<variable id=\"address_auto\"><link href=\"text/scalc/guide/address_auto.xhp\">Recognizing Names as Addressing</link></variable>"
+msgstr "<variable id=\"address_auto\"><link href=\"text/scalc/guide/address_auto.xhp\">辨識作為編排位址的名稱</link></variable>"
 
 #. GgEvz
 #: address_auto.xhp
@@ -70,22 +70,31 @@ msgctxt ""
 msgid "In the example spreadsheet, you can use the string <item type=\"literal\">'Column One'</item> in a formula to refer to the cell range <item type=\"literal\">B3</item> to <item type=\"literal\">B5</item>, or <item type=\"literal\">'Column Two'</item> for the cell range <item type=\"literal\">C2</item> to <item type=\"literal\">C5</item>. You can also use <item type=\"literal\">'Row One'</item> for the cell range <item type=\"literal\">B3</item> to <item type=\"literal\">D3</item>, or <item type=\"literal\">'Row Two'</item> for the cell range <item type=\"literal\">B4</item> to <item type=\"literal\">D4</item>. The result of a formula that uses a cell name, for example, <item type=\"literal\">SUM('Column One')</item>, is 600."
 msgstr "在範例試算表中，您可以在公式中使用字串 <item type=\"literal\">'Column One'</item> 以表示儲存格範圍 <item type=\"literal\">B3</item> 至 <item type=\"literal\">B5</item> 或 <item type=\"literal\">'Column Two'</item> 以表示儲存格範圍 <item type=\"literal\">C2</item> 至 <item type=\"literal\">C5</item>。您也可以使用 <item type=\"literal\">'Row One'</item> 表示儲存格範圍 <item type=\"literal\">B3</item> 至 <item type=\"literal\">D3</item> 或 <item type=\"literal\">'Row Two'</item> 表示儲存格範圍 <item type=\"literal\">B4</item> 至 <item type=\"literal\">D4</item>。使用儲存格名稱的公式結果，例如 <item type=\"literal\">SUM('Column One')</item> 為 600。"
 
-#. VBpuo
+#. xYcEr
 #: address_auto.xhp
 msgctxt ""
 "address_auto.xhp\n"
 "par_id3155443\n"
 "help.text"
-msgid "This function is active by default. To turn this function off, choose <switchinline select=\"sys\"><caseinline select=\"MAC\"><emph>%PRODUCTNAME - Preferences</emph></caseinline><defaultinline><emph>Tools - Options</emph></defaultinline></switchinline><emph> - %PRODUCTNAME Calc - Calculate</emph> and clear the <emph>Automatically find column and row labels</emph> check box."
-msgstr "此功能預設會加以啟動。若要將此功能關閉，請選擇 <emph><switchinline select=\"sys\"><caseinline select=\"MAC\">[%PRODUCTNAME] - [喜好設定]</caseinline><defaultinline>[工具] - [選項]</defaultinline></switchinline> - [%PRODUCTNAME Calc] - [計算]</emph>，並清除 <emph>[自動尋找欄和列標籤]</emph> 核取方塊。"
+msgid "Automatically finding labels is a legacy feature and deactivated by default as it can produce nondeterministic behavior depending on actual document content. To turn this function on, choose <switchinline select=\"sys\"><caseinline select=\"MAC\"><emph>%PRODUCTNAME - Preferences</emph></caseinline><defaultinline><emph>Tools - Options</emph></defaultinline></switchinline><emph> - %PRODUCTNAME Calc - Calculate</emph> and mark the <emph>Automatically find column and row labels</emph> check box."
+msgstr ""
 
-#. ADRpB
+#. Q9Nee
+#: address_auto.xhp
+msgctxt ""
+"address_auto.xhp\n"
+"par_id3155444\n"
+"help.text"
+msgid "Using defined labels instead is always possible and behaves similar but in a defined way."
+msgstr ""
+
+#. ZuesG
 #: address_auto.xhp
 msgctxt ""
 "address_auto.xhp\n"
 "par_id3149210\n"
 "help.text"
-msgid "If you want a name to be automatically recognized by Calc, the name must start with a letter and be composed of alphanumeric characters. If you enter the name in the formula yourself, enclose the name in single quotation marks ('). If a single quotation mark appears in a name, you must enter a backslash in front of the quotation mark, for example, <item type=\"literal\">'Harry\\'s Bar'</item>."
+msgid "If you enter a label name in the formula yourself, enclose the name in single quotation marks ('). If a single quotation mark appears in a name, you must double it, for example, <item type=\"literal\">'Harry''s Bar'</item>."
 msgstr ""
 
 #. EXFye
@@ -106,13 +115,13 @@ msgctxt ""
 msgid "<bookmark_value>deactivating; automatic changes</bookmark_value>  <bookmark_value>tables; deactivating automatic changes in</bookmark_value>  <bookmark_value>AutoInput function on/off</bookmark_value>  <bookmark_value>text in cells;AutoInput function</bookmark_value>  <bookmark_value>cells; AutoInput function of text</bookmark_value>  <bookmark_value>input support in spreadsheets</bookmark_value>  <bookmark_value>changing; input in cells</bookmark_value>  <bookmark_value>AutoCorrect function;cell contents</bookmark_value>  <bookmark_value>cell input;AutoInput function</bookmark_value>  <bookmark_value>lowercase letters;AutoInput function (in cells)</bookmark_value>  <bookmark_value>capital letters;AutoInput function (in cells)</bookmark_value>  <bookmark_value>date formats;avoiding conversion to</bookmark_value>  <bookmark_value>number completion on/off</bookmark_value>  <bookmark_value>text completion on/off</bookmark_value>  <bookmark_value>word completion on/off</bookmark_value>"
 msgstr ""
 
-#. xyLjr
+#. GMvpd
 #: auto_off.xhp
 msgctxt ""
 "auto_off.xhp\n"
 "hd_id3149456\n"
 "help.text"
-msgid "<variable id=\"auto_off\"><link href=\"text/scalc/guide/auto_off.xhp\" name=\"Deactivating Automatic Changes\">Deactivating Automatic Changes</link> </variable>"
+msgid "<variable id=\"auto_off\"><link href=\"text/scalc/guide/auto_off.xhp\">Deactivating Automatic Changes</link> </variable>"
 msgstr ""
 
 #. 4h6m4
@@ -151,13 +160,13 @@ msgctxt ""
 msgid "When making an entry in a cell, $[officename] Calc automatically suggests matching input found in the same column. This function is known as <emph>AutoInput</emph>."
 msgstr "$[officename] Calc 提供一個在儲存個之中輸入時自動顯示其同欄已有的相同內容。這樣的功能叫<emph>自動完成</emph>。"
 
-#. QXemT
+#. rPWCd
 #: auto_off.xhp
 msgctxt ""
 "auto_off.xhp\n"
 "par_id3153878\n"
 "help.text"
-msgid "To turn the AutoInput on and off, set or remove the check mark in front of <link href=\"text/scalc/01/06130000.xhp\" name=\"Tools - AutoInput\"><emph>Tools - AutoInput</emph></link>."
+msgid "To turn the AutoInput on and off, set or remove the check mark in front of <link href=\"text/scalc/01/06130000.xhp\"><emph>Tools - AutoInput</emph></link>."
 msgstr ""
 
 #. 8G5gv
@@ -241,23 +250,23 @@ msgctxt ""
 msgid "Choose <item type=\"menuitem\">Tools - AutoCorrect - AutoCorrect Options</item>. Go to the <item type=\"menuitem\">Replace</item> tab. Select the word pair and click <item type=\"menuitem\">Delete</item>."
 msgstr "選擇 <item type=\"menuitem\">[工具] - [自動校正選項]</item>。移至 <item type=\"menuitem\">[取代]</item> 標籤。選取成對字組，然後按一下 <item type=\"menuitem\">[刪除]</item>。"
 
-#. mkLPr
+#. HzAWS
 #: auto_off.xhp
 msgctxt ""
 "auto_off.xhp\n"
 "par_id3152992\n"
 "help.text"
-msgid "<link href=\"text/scalc/01/06130000.xhp\" name=\"Tools - AutoInput\">Tools - AutoInput</link>"
+msgid "<link href=\"text/scalc/01/06130000.xhp\">Tools - AutoInput</link>"
 msgstr ""
 
-#. h5BG2
+#. v9BGX
 #: auto_off.xhp
 msgctxt ""
 "auto_off.xhp\n"
 "par_id3154368\n"
 "help.text"
-msgid "<link href=\"text/shared/01/06040000.xhp\" name=\"Tools - AutoCorrect\">Tools - AutoCorrect - AutoCorrect Options</link>"
-msgstr "<link href=\"text/shared/01/06040000.xhp\" name=\"[工具] - [自動校正]\">[工具] - [自動校正選項]</link>"
+msgid "<link href=\"text/shared/01/06040000.xhp\">Tools - AutoCorrect - AutoCorrect Options</link>"
+msgstr "<link href=\"text/shared/01/06040000.xhp\">[工具] - [自動校正選項]</link>"
 
 #. tdzBC
 #: autofilter.xhp
@@ -277,14 +286,14 @@ msgctxt ""
 msgid "<bookmark_value>filters, see also AutoFilter function</bookmark_value>      <bookmark_value>AutoFilter function;applying</bookmark_value>      <bookmark_value>sheets; filter values</bookmark_value>      <bookmark_value>numbers; filter sheets</bookmark_value>      <bookmark_value>columns; AutoFilter function</bookmark_value>      <bookmark_value>drop-down menus in sheet columns</bookmark_value>      <bookmark_value>database ranges; AutoFilter function</bookmark_value>"
 msgstr "<bookmark_value>篩選，另請參閱自動篩選功能</bookmark_value>      <bookmark_value>自動篩選功能; 套用</bookmark_value>      <bookmark_value>工作表; 篩選值</bookmark_value>      <bookmark_value>數字; 篩選工作表</bookmark_value>      <bookmark_value>欄; 自動篩選功能</bookmark_value>      <bookmark_value>工作表欄中的下拉式功能表</bookmark_value>      <bookmark_value>資料庫範圍; 自動篩選功能</bookmark_value>"
 
-#. WoBQt
+#. ukKtB
 #: autofilter.xhp
 msgctxt ""
 "autofilter.xhp\n"
 "hd_id3156423\n"
 "help.text"
-msgid "<variable id=\"autofilter\"><link href=\"text/scalc/guide/autofilter.xhp\" name=\"Applying AutoFilter\">Applying AutoFilter</link></variable>"
-msgstr "<variable id=\"autofilter\"><link href=\"text/scalc/guide/autofilter.xhp\" name=\"採用自動篩選\">採用自動篩選</link></variable>"
+msgid "<variable id=\"autofilter\"><link href=\"text/scalc/guide/autofilter.xhp\">Applying AutoFilter</link></variable>"
+msgstr "<variable id=\"autofilter\"><link href=\"text/scalc/guide/autofilter.xhp\">採用自動篩選</link></variable>"
 
 #. 7FoJn
 #: autofilter.xhp
@@ -367,32 +376,32 @@ msgctxt ""
 msgid "To assign different AutoFilters to different sheets, you must first define a database range on each sheet."
 msgstr "若要為不同的試算表指定不同的自動篩選，必須先定義每個試算表的資料庫範圍。"
 
-#. 8ViYy
+#. tBXAy
 #: autofilter.xhp
 msgctxt ""
 "autofilter.xhp\n"
 "par_id3159236\n"
 "help.text"
-msgid "The arithmetic functions also take account of the cells that are not visible due to an applied filter. For example, a sum of an entire column will also total the values in the filtered cells. Apply the <link href=\"text/scalc/01/04060106.xhp\" name=\"SUBTOTAL\">SUBTOTAL</link> function if only the cells visible after the application of a filter are to be taken into account."
-msgstr "運算函式也會因套用的篩選而考慮到看不見的儲存格。例如，計算整欄的總和時，篩選的儲存格中的數值也被計算在內。如果只計算套用篩選之後顯示的儲存格，則套用 <link href=\"text/scalc/01/04060106.xhp\" name=\"SUBTOTAL\">SUBTOTAL</link> 函式。"
+msgid "The arithmetic functions also take account of the cells that are not visible due to an applied filter. For example, a sum of an entire column will also total the values in the filtered cells. Apply the <link href=\"text/scalc/01/04060106.xhp\">SUBTOTAL</link> function if only the cells visible after the application of a filter are to be taken into account."
+msgstr "運算函式也會因套用的篩選而考慮到看不見的儲存格。例如，計算整欄的總和時，篩選的儲存格中的數值也被計算在內。如果只計算套用篩選之後顯示的儲存格，則套用 <link href=\"text/scalc/01/04060106.xhp\">SUBTOTAL</link> 函式。"
 
-#. nj46T
+#. KZJNX
 #: autofilter.xhp
 msgctxt ""
 "autofilter.xhp\n"
 "par_id3152985\n"
 "help.text"
-msgid "<link href=\"text/scalc/01/12040100.xhp\" name=\"Data - Filter - AutoFilter\">Data - Filter - AutoFilter</link>"
-msgstr "<link href=\"text/scalc/01/12040100.xhp\" name=\"「資料」-「篩選」-「自動篩選」\">「資料」-「篩選」-「自動篩選」</link>"
+msgid "<link href=\"text/scalc/01/12040100.xhp\">Data - Filter - AutoFilter</link>"
+msgstr "<link href=\"text/scalc/01/12040100.xhp\">「資料」-「篩選」-「自動篩選」</link>"
 
-#. UwaWC
+#. 2Dn9i
 #: autofilter.xhp
 msgctxt ""
 "autofilter.xhp\n"
 "par_id3154484\n"
 "help.text"
-msgid "<link href=\"text/scalc/01/04060106.xhp\" name=\"SUBTOTAL\">SUBTOTAL</link>"
-msgstr "<link href=\"text/scalc/01/04060106.xhp\" name=\"單項計算結果\">單項計算結果</link>"
+msgid "<link href=\"text/scalc/01/04060106.xhp\">SUBTOTAL</link>"
+msgstr "<link href=\"text/scalc/01/04060106.xhp\">單項計算結果</link>"
 
 #. XAtNE
 #: autoformat.xhp
@@ -412,14 +421,14 @@ msgctxt ""
 msgid "<bookmark_value>tables; AutoFormat</bookmark_value>    <bookmark_value>AutoFormat cell ranges</bookmark_value>    <bookmark_value>formats; automatically formatting spreadsheets</bookmark_value>    <bookmark_value>sheets;AutoFormat</bookmark_value>"
 msgstr ""
 
-#. EiEMB
+#. PYXFN
 #: autoformat.xhp
 msgctxt ""
 "autoformat.xhp\n"
 "hd_id3155132\n"
 "help.text"
-msgid "<variable id=\"autoformat\"><link href=\"text/scalc/guide/autoformat.xhp\" name=\"Using AutoFormat for Tables\">Applying Automatic Formatting to a Selected Cell Range</link></variable>"
-msgstr "<variable id=\"autoformat\"><link href=\"text/scalc/guide/autoformat.xhp\" name=\"針對表格使用自動格式\">將自動格式化套用至所選的儲存格範圍</link></variable>"
+msgid "<variable id=\"autoformat\"><link href=\"text/scalc/guide/autoformat.xhp\">Applying Automatic Formatting to a Selected Cell Range</link></variable>"
+msgstr "<variable id=\"autoformat\"><link href=\"text/scalc/guide/autoformat.xhp\">將自動格式化套用至所選的儲存格範圍</link></variable>"
 
 #. 7xexA
 #: autoformat.xhp
@@ -565,13 +574,13 @@ msgctxt ""
 msgid "The new AutoFormat styles created using the steps above can be applied to any %PRODUCTNAME Calc file. Hence they are not limited to the file where the style was created."
 msgstr ""
 
-#. hpPvo
+#. gKDHt
 #: autoformat.xhp
 msgctxt ""
 "autoformat.xhp\n"
 "par_id3159203\n"
 "help.text"
-msgid "<link href=\"text/scalc/01/05110000.xhp\" name=\"Format - AutoFormat\">Format - AutoFormat Styles</link>"
+msgid "<link href=\"text/scalc/01/05110000.xhp\">Format - AutoFormat Styles</link>"
 msgstr ""
 
 #. ZSCL9
@@ -592,13 +601,13 @@ msgctxt ""
 msgid "<bookmark_value>spreadsheets; backgrounds</bookmark_value><bookmark_value>backgrounds;cell ranges</bookmark_value><bookmark_value>tables; backgrounds</bookmark_value><bookmark_value>cells; backgrounds</bookmark_value><bookmark_value>rows, see also cells</bookmark_value><bookmark_value>columns, see also cells</bookmark_value>"
 msgstr ""
 
-#. tMFWU
+#. 4sJss
 #: background.xhp
 msgctxt ""
 "background.xhp\n"
 "hd_id3149346\n"
 "help.text"
-msgid "<variable id=\"background\"><link href=\"text/scalc/guide/background.xhp\" name=\"Defining Background Colors or Background Graphics\">Defining Background Colors or Background Graphics</link>            </variable>"
+msgid "<variable id=\"background\"><link href=\"text/scalc/guide/background.xhp\">Defining Background Colors or Background Graphics</link>            </variable>"
 msgstr ""
 
 #. gwwiM
@@ -673,13 +682,13 @@ msgctxt ""
 msgid "Select the graphic and click <emph>Open</emph>."
 msgstr "選取圖形，然後按一下 <emph>[開啟]</emph>。"
 
-#. 2BGVn
+#. 4oCgd
 #: background.xhp
 msgctxt ""
 "background.xhp\n"
 "par_id3153575\n"
 "help.text"
-msgid "The graphic is inserted anchored to the current cell. You can move and scale the graphic as you want. In your context menu you can use the <menuitem>Arrange - To Background</menuitem> command to place this in the background. To select a graphic that has been placed in the background, use the <link href=\"text/scalc/01/02110000.xhp\" name=\"Navigator\">Navigator</link>."
+msgid "The graphic is inserted anchored to the current cell. You can move and scale the graphic as you want. In your context menu you can use the <menuitem>Arrange - To Background</menuitem> command to place this in the background. To select a graphic that has been placed in the background, use the <link href=\"text/scalc/01/02110000.xhp\">Navigator</link>."
 msgstr ""
 
 #. vTxFX
@@ -691,13 +700,13 @@ msgctxt ""
 msgid "<link href=\"text/shared/guide/background.xhp\">Watermarks</link>"
 msgstr "<link href=\"text/shared/guide/background.xhp\">水印</link>"
 
-#. R8Ctk
+#. yWAyq
 #: background.xhp
 msgctxt ""
 "background.xhp\n"
 "par_id3156180\n"
 "help.text"
-msgid "<link href=\"text/shared/01/05210100.xhp\" name=\"Background tab page\"><emph>Background</emph> tab page</link>"
+msgid "<link href=\"text/shared/01/05210100.xhp\"><emph>Background</emph> tab page</link>"
 msgstr ""
 
 #. owozX
@@ -1294,14 +1303,14 @@ msgctxt ""
 msgid "<bookmark_value>dates; in cells</bookmark_value>  <bookmark_value>times; in cells</bookmark_value>  <bookmark_value>cells;date and time formats</bookmark_value>  <bookmark_value>current date and time values</bookmark_value>"
 msgstr "<bookmark_value>日期; 在儲存格中</bookmark_value>      <bookmark_value>時間; 在儲存格中</bookmark_value>      <bookmark_value>儲存格; 日期和時間格式</bookmark_value>      <bookmark_value>目前的日期和時間值</bookmark_value>"
 
-#. DKYwy
+#. P5PrP
 #: calc_date.xhp
 msgctxt ""
 "calc_date.xhp\n"
 "hd_id3146120\n"
 "help.text"
-msgid "<variable id=\"calc_date\"><link href=\"text/scalc/guide/calc_date.xhp\" name=\"Calculating With Dates and Times\">Calculating With Dates and Times</link></variable>"
-msgstr "<variable id=\"calc_date\"><link href=\"text/scalc/guide/calc_date.xhp\" name=\"對日期和時間進行計算\">對日期和時間進行計算</link></variable>"
+msgid "<variable id=\"calc_date\"><link href=\"text/scalc/guide/calc_date.xhp\">Calculating With Dates and Times</link></variable>"
+msgstr "<variable id=\"calc_date\"><link href=\"text/scalc/guide/calc_date.xhp\">對日期和時間進行計算</link></variable>"
 
 #. ZBgGk
 #: calc_date.xhp
@@ -1402,14 +1411,14 @@ msgctxt ""
 msgid "<bookmark_value>series; calculating</bookmark_value>      <bookmark_value>calculating; series</bookmark_value>      <bookmark_value>linear series</bookmark_value>      <bookmark_value>growth series</bookmark_value>      <bookmark_value>date series</bookmark_value>      <bookmark_value>powers of 2 calculations</bookmark_value>      <bookmark_value>cells; filling automatically</bookmark_value>      <bookmark_value>automatic cell filling</bookmark_value>      <bookmark_value>AutoFill function</bookmark_value>      <bookmark_value>filling;cells, automatically</bookmark_value>"
 msgstr "<bookmark_value>數列; 計算</bookmark_value>      <bookmark_value>計算; 數列</bookmark_value>      <bookmark_value>線性數列</bookmark_value>      <bookmark_value>成長數列</bookmark_value>      <bookmark_value>日期數列</bookmark_value>      <bookmark_value>2 次方計算</bookmark_value>      <bookmark_value>儲存格; 自動填入</bookmark_value>      <bookmark_value>自動填入儲存格</bookmark_value>      <bookmark_value>自動填入功能</bookmark_value>      <bookmark_value>填入; 儲存格, 自動</bookmark_value>"
 
-#. RxPrT
+#. VGhrd
 #: calc_series.xhp
 msgctxt ""
 "calc_series.xhp\n"
 "hd_id3150769\n"
 "help.text"
-msgid "<variable id=\"calc_series\"><link href=\"text/scalc/guide/calc_series.xhp\" name=\"Automatically Calculating Series\">Automatically Filling in Data Based on Adjacent Cells</link></variable>"
-msgstr "<variable id=\"calc_series\"><link href=\"text/scalc/guide/calc_series.xhp\" name=\"自動計算數列\">根據鄰近儲存格自動填入資料</link></variable>"
+msgid "<variable id=\"calc_series\"><link href=\"text/scalc/guide/calc_series.xhp\">Automatically Filling in Data Based on Adjacent Cells</link></variable>"
+msgstr "<variable id=\"calc_series\"><link href=\"text/scalc/guide/calc_series.xhp\">根據鄰近儲存格自動填入資料</link></variable>"
 
 #. C6vL5
 #: calc_series.xhp
@@ -1573,14 +1582,14 @@ msgctxt ""
 msgid "If you select a <emph>date</emph> series, the increment that you enter is added to the time unit that you specify."
 msgstr "如果您選取 <emph>[日期]</emph> 數列，您輸入的遞增會增加至所指定的時間單位。"
 
-#. NqenD
+#. ZNvtX
 #: calc_series.xhp
 msgctxt ""
 "calc_series.xhp\n"
 "par_id3159173\n"
 "help.text"
-msgid "<link href=\"text/shared/optionen/01060400.xhp\" name=\"Sort lists\">Sort lists</link>"
-msgstr "<link href=\"text/shared/optionen/01060400.xhp\" name=\"排序清單\">排序清單</link>"
+msgid "<link href=\"text/shared/optionen/01060400.xhp\">Sort lists</link>"
+msgstr "<link href=\"text/shared/optionen/01060400.xhp\">排序清單</link>"
 
 #. a8RRo
 #: calc_timevalues.xhp
@@ -1600,14 +1609,14 @@ msgctxt ""
 msgid "<bookmark_value>calculating;time differences</bookmark_value><bookmark_value>time differences</bookmark_value>"
 msgstr "<bookmark_value>計算;時間差異值</bookmark_value><bookmark_value>時間差異值</bookmark_value>"
 
-#. ovkGS
+#. kx4UD
 #: calc_timevalues.xhp
 msgctxt ""
 "calc_timevalues.xhp\n"
 "hd_id3150769\n"
 "help.text"
-msgid "<variable id=\"calc_timevalues\"><link href=\"text/scalc/guide/calc_timevalues.xhp\" name=\"Calculating Time Differences\">Calculating Time Differences</link></variable>"
-msgstr "<variable id=\"calc_timevalues\"><link href=\"text/scalc/guide/calc_timevalues.xhp\" name=\"計算時間差\">計算時間差</link></variable>"
+msgid "<variable id=\"calc_timevalues\"><link href=\"text/scalc/guide/calc_timevalues.xhp\">Calculating Time Differences</link></variable>"
+msgstr "<variable id=\"calc_timevalues\"><link href=\"text/scalc/guide/calc_timevalues.xhp\">計算時間差</link></variable>"
 
 #. Cv4BS
 #: calc_timevalues.xhp
@@ -1663,14 +1672,14 @@ msgctxt ""
 msgid "<bookmark_value>spreadsheets; calculating</bookmark_value><bookmark_value>calculating; spreadsheets</bookmark_value><bookmark_value>formulas; calculating</bookmark_value>"
 msgstr "<bookmark_value>公式; 計算</bookmark_value><bookmark_value>計算; 利用公式</bookmark_value><bookmark_value>範例; 公式計算</bookmark_value>"
 
-#. pkjAM
+#. mv4KH
 #: calculate.xhp
 msgctxt ""
 "calculate.xhp\n"
 "hd_id3150791\n"
 "help.text"
-msgid "<variable id=\"calculate\"><link href=\"text/scalc/guide/calculate.xhp\" name=\"Calculating in Spreadsheets\">Calculating in Spreadsheets</link></variable>"
-msgstr "<variable id=\"calculate\"><link href=\"text/scalc/guide/calculate.xhp\" name=\"在試算表中計算\">在試算表中計算</link></variable>"
+msgid "<variable id=\"calculate\"><link href=\"text/scalc/guide/calculate.xhp\">Calculating in Spreadsheets</link></variable>"
+msgstr "<variable id=\"calculate\"><link href=\"text/scalc/guide/calculate.xhp\">在試算表中計算</link></variable>"
 
 #. VKHds
 #: calculate.xhp
@@ -1933,14 +1942,14 @@ msgctxt ""
 msgid "<bookmark_value>protecting;cells and sheets</bookmark_value>      <bookmark_value>cells; protecting</bookmark_value>      <bookmark_value>cell protection; enabling</bookmark_value>      <bookmark_value>sheets; protecting</bookmark_value>      <bookmark_value>documents; protecting</bookmark_value>      <bookmark_value>cells; hiding for printing</bookmark_value>      <bookmark_value>changing; sheet protection</bookmark_value>      <bookmark_value>hiding;formulas</bookmark_value>      <bookmark_value>formulas;hiding</bookmark_value>"
 msgstr "<bookmark_value>保護; 儲存格與工作表</bookmark_value>      <bookmark_value>儲存格; 保護</bookmark_value>      <bookmark_value>儲存格保護; 啟用</bookmark_value>      <bookmark_value>工作表; 保護</bookmark_value>      <bookmark_value>文件; 保護</bookmark_value>      <bookmark_value>儲存格; 列印時隱藏</bookmark_value>      <bookmark_value>變更; 工作表保護</bookmark_value>      <bookmark_value>隱藏; 公式</bookmark_value>      <bookmark_value>公式; 隱藏</bookmark_value>"
 
-#. DDnnF
+#. WAuVd
 #: cell_protect.xhp
 msgctxt ""
 "cell_protect.xhp\n"
 "hd_id3146119\n"
 "help.text"
-msgid "<variable id=\"cell_protect\"><link href=\"text/scalc/guide/cell_protect.xhp\" name=\"Protecting Cells from Changes\">Protecting Cells from Changes</link></variable>"
-msgstr "<variable id=\"cell_protect\"><link href=\"text/scalc/guide/cell_protect.xhp\" name=\"防止儲存格變更\">防止儲存格變更</link> </variable>"
+msgid "<variable id=\"cell_protect\"><link href=\"text/scalc/guide/cell_protect.xhp\">Protecting Cells from Changes</link></variable>"
+msgstr "<variable id=\"cell_protect\"><link href=\"text/scalc/guide/cell_protect.xhp\">防止儲存格變更</link> </variable>"
 
 #. YzGFz
 #: cell_protect.xhp
@@ -2059,13 +2068,13 @@ msgctxt ""
 msgid "Apply the protection options."
 msgstr "套用保護選項。"
 
-#. yCZeB
+#. 6BoLD
 #: cell_protect.xhp
 msgctxt ""
 "cell_protect.xhp\n"
 "par_idN106C0\n"
 "help.text"
-msgid "To protect the cells from being changed, viewed or printed according to your settings in the <emph>Format - Cells</emph> dialog, choose <link href=\"text/scalc/01/06060100.xhp\" name=\"Tools protect sheet\"><menuitem>Tools - Protect Sheet</menuitem></link>."
+msgid "To protect the cells from being changed, viewed or printed according to your settings in the <emph>Format - Cells</emph> dialog, choose <link href=\"text/scalc/01/06060100.xhp\"><menuitem>Tools - Protect Sheet</menuitem></link>."
 msgstr ""
 
 #. doYSo
@@ -2122,14 +2131,14 @@ msgctxt ""
 msgid "<bookmark_value>cell protection; unprotecting</bookmark_value>      <bookmark_value>protecting; unprotecting cells</bookmark_value>      <bookmark_value>unprotecting cells</bookmark_value>"
 msgstr "<bookmark_value>儲存格保護; 取消保護</bookmark_value>      <bookmark_value>保護; 取消保護儲存格</bookmark_value>      <bookmark_value>取消保護儲存格</bookmark_value>"
 
-#. K8ukF
+#. RfFFV
 #: cell_unprotect.xhp
 msgctxt ""
 "cell_unprotect.xhp\n"
 "hd_id3153252\n"
 "help.text"
-msgid "<variable id=\"cell_unprotect\"><link href=\"text/scalc/guide/cell_unprotect.xhp\" name=\"Unprotecting Cells\">Unprotecting Cells</link> </variable>"
-msgstr "<variable id=\"cell_unprotect\"><link href=\"text/scalc/guide/cell_unprotect.xhp\" name=\"取消保護儲存格\">取消保護儲存格</link> </variable>"
+msgid "<variable id=\"cell_unprotect\"><link href=\"text/scalc/guide/cell_unprotect.xhp\">Unprotecting Cells</link> </variable>"
+msgstr "<variable id=\"cell_unprotect\"><link href=\"text/scalc/guide/cell_unprotect.xhp\">取消保護儲存格</link> </variable>"
 
 #. gK5Qh
 #: cell_unprotect.xhp
@@ -2185,14 +2194,14 @@ msgctxt ""
 msgid "<bookmark_value>cells; copying/deleting/formatting/moving</bookmark_value>      <bookmark_value>rows;visible and invisible</bookmark_value>      <bookmark_value>copying; visible cells only</bookmark_value>      <bookmark_value>formatting;visible cells only</bookmark_value>      <bookmark_value>moving;visible cells only</bookmark_value>      <bookmark_value>deleting;visible cells only</bookmark_value>      <bookmark_value>invisible cells</bookmark_value>      <bookmark_value>filters;copying visible cells only</bookmark_value>      <bookmark_value>hidden cells</bookmark_value>"
 msgstr "<bookmark_value>儲存格; 複製/刪除/格式化/移動</bookmark_value>      <bookmark_value>列; 可見和無法見的</bookmark_value>      <bookmark_value>複製; 僅可見的儲存格</bookmark_value>      <bookmark_value>格式化; 僅可見的儲存格</bookmark_value>      <bookmark_value>移動; 僅可見的儲存格</bookmark_value>      <bookmark_value>刪除; 僅可見的儲存格</bookmark_value>      <bookmark_value>不可見的儲存格</bookmark_value>      <bookmark_value>篩選; 僅複製可見的儲存格</bookmark_value>      <bookmark_value>隱藏的儲存格</bookmark_value>"
 
-#. jdYeD
+#. hWZTv
 #: cellcopy.xhp
 msgctxt ""
 "cellcopy.xhp\n"
 "hd_id3150440\n"
 "help.text"
-msgid "<variable id=\"cellcopy\"><link href=\"text/scalc/guide/cellcopy.xhp\" name=\"Only Copy Visible Cells\">Only Copy Visible Cells</link></variable>"
-msgstr "<variable id=\"cellcopy\"><link href=\"text/scalc/guide/cellcopy.xhp\" name=\"僅複製可見的儲存格\">僅複製可見的儲存格</link></variable>"
+msgid "<variable id=\"cellcopy\"><link href=\"text/scalc/guide/cellcopy.xhp\">Only Copy Visible Cells</link></variable>"
+msgstr "<variable id=\"cellcopy\"><link href=\"text/scalc/guide/cellcopy.xhp\">僅複製可見的儲存格</link></variable>"
 
 #. eAskd
 #: cellcopy.xhp
@@ -2257,14 +2266,14 @@ msgctxt ""
 msgid "Only the visible cells of the selection are copied, deleted, moved, or formatted."
 msgstr "這樣，就僅僅複製可見的儲存格。"
 
-#. 2mDPY
+#. E9sMe
 #: cellcopy.xhp
 msgctxt ""
 "cellcopy.xhp\n"
 "par_id3166427\n"
 "help.text"
-msgid "Cells were hidden using the <emph>Hide</emph> command in the context menu of the row or column headers, or through an <link href=\"text/scalc/01/12080000.xhp\" name=\"outline\">outline</link>."
-msgstr "儲存格已透過列標或欄號右鍵功能表中的<emph>[隱入]</emph>指令或透過<link href=\"text/scalc/01/12080000.xhp\" name=\"大綱\">大綱</link>被手動隱入。"
+msgid "Cells were hidden using the <emph>Hide</emph> command in the context menu of the row or column headers, or through an <link href=\"text/scalc/01/12080000.xhp\">outline</link>."
+msgstr "儲存格已透過列標或欄號右鍵功能表中的<emph>[隱入]</emph>指令或透過<link href=\"text/scalc/01/12080000.xhp\">大綱</link>被手動隱入。"
 
 #. hCVpN
 #: cellcopy.xhp
@@ -2302,14 +2311,14 @@ msgctxt ""
 msgid "<bookmark_value>drag and drop; referencing cells</bookmark_value>      <bookmark_value>cells; referencing by drag and drop </bookmark_value>      <bookmark_value>references;inserting by drag and drop</bookmark_value>      <bookmark_value>inserting;references, by drag and drop</bookmark_value>"
 msgstr "<bookmark_value>拖放; 參照儲存格</bookmark_value>      <bookmark_value>儲存格; 依拖放參照</bookmark_value>      <bookmark_value>參照; 依拖放插入</bookmark_value>      <bookmark_value>插入; 參照, 依拖放</bookmark_value>"
 
-#. sr78D
+#. pKiKK
 #: cellreference_dragdrop.xhp
 msgctxt ""
 "cellreference_dragdrop.xhp\n"
 "hd_id3154686\n"
 "help.text"
-msgid "<variable id=\"cellreference_dragdrop\"><link href=\"text/scalc/guide/cellreference_dragdrop.xhp\" name=\"Referencing Cells by Drag-and-Drop\">Referencing Cells by Drag-and-Drop</link></variable>"
-msgstr "<variable id=\"cellreference_dragdrop\"><link href=\"text/scalc/guide/cellreference_dragdrop.xhp\" name=\"透過拖放來參照儲存格\">透過拖放來參照儲存格</link></variable>"
+msgid "<variable id=\"cellreference_dragdrop\"><link href=\"text/scalc/guide/cellreference_dragdrop.xhp\">Referencing Cells by Drag-and-Drop</link></variable>"
+msgstr "<variable id=\"cellreference_dragdrop\"><link href=\"text/scalc/guide/cellreference_dragdrop.xhp\">透過拖放來參照儲存格</link></variable>"
 
 #. ANUwC
 #: cellreference_dragdrop.xhp
@@ -2347,14 +2356,14 @@ msgctxt ""
 msgid "Open the sheet in which you want to insert something."
 msgstr "開啟要插入某些內容的試算表。"
 
-#. G9pdw
+#. cFo33
 #: cellreference_dragdrop.xhp
 msgctxt ""
 "cellreference_dragdrop.xhp\n"
 "par_id3154732\n"
 "help.text"
-msgid "Open the <link href=\"text/scalc/01/02110000.xhp\" name=\"Navigator\">Navigator</link>. In the lower box of the Navigator select the source file."
-msgstr "開啟<link href=\"text/scalc/01/02110000.xhp\" name=\"[助手]\">[助手]</link>。在[助手]的底部方塊中選取來源檔案。"
+msgid "Open the <link href=\"text/scalc/01/02110000.xhp\">Navigator</link>. In the lower box of the Navigator select the source file."
+msgstr "開啟<link href=\"text/scalc/01/02110000.xhp\">[助手]</link>。在[助手]的底部方塊中選取來源檔案。"
 
 #. 36bq3
 #: cellreference_dragdrop.xhp
@@ -2410,14 +2419,14 @@ msgctxt ""
 msgid "<bookmark_value>sheet references</bookmark_value>      <bookmark_value>references; to cells in other sheets/documents</bookmark_value>      <bookmark_value>cells; operating in another document</bookmark_value>      <bookmark_value>documents;references</bookmark_value>"
 msgstr "<bookmark_value>工作表參照</bookmark_value>      <bookmark_value>參照; 其他工作表/文件中的儲存格</bookmark_value>      <bookmark_value>儲存格; 在其他文件中作業</bookmark_value>      <bookmark_value>文件; 參照</bookmark_value>"
 
-#. CEHES
+#. a5WVc
 #: cellreferences.xhp
 msgctxt ""
 "cellreferences.xhp\n"
 "hd_id3147436\n"
 "help.text"
-msgid "<variable id=\"cellreferences\"><link href=\"text/scalc/guide/cellreferences.xhp\" name=\"Referencing Other Sheets\">Referencing Other Sheets</link></variable>"
-msgstr "<variable id=\"cellreferences\"><link href=\"text/scalc/guide/cellreferences.xhp\" name=\"參照其他試算表\">參照其他試算表</link></variable>"
+msgid "<variable id=\"cellreferences\"><link href=\"text/scalc/guide/cellreferences.xhp\">Referencing Other Sheets</link></variable>"
+msgstr "<variable id=\"cellreferences\"><link href=\"text/scalc/guide/cellreferences.xhp\">參照其他試算表</link></variable>"
 
 #. S3C6m
 #: cellreferences.xhp
@@ -2581,14 +2590,14 @@ msgctxt ""
 msgid "If you drag the box in the lower right corner of the active cell to select a range of cells, $[officename] automatically inserts the corresponding references in the adjacent cells. As a result, the sheet name is preceded with a \"$\" sign to designate it as an <link href=\"text/scalc/guide/relativ_absolut_ref.xhp\">absolute reference</link>."
 msgstr ""
 
-#. hrgGP
+#. hmeJR
 #: cellreferences.xhp
 msgctxt ""
 "cellreferences.xhp\n"
 "par_id674459\n"
 "help.text"
-msgid "If you examine the name of the other document in this formula, you will notice that it is written as a <link href=\"text/shared/00/00000002.xhp#url\" name=\"URL\">URL</link>. This means that you can also enter a URL from the Internet."
-msgstr "如果您在此公式中檢查其他文件的名稱，將會注意到該名稱會撰寫為 <link href=\"text/shared/00/00000002.xhp#url\" name=\"URL\">URL</link>。這表示您也可以輸入一個網際網路 URL。"
+msgid "If you examine the name of the other document in this formula, you will notice that it is written as a <link href=\"text/shared/00/00000002.xhp#url\">URL</link>. This means that you can also enter a URL from the Internet."
+msgstr "如果您在此公式中檢查其他文件的名稱，將會注意到該名稱會撰寫為 <link href=\"text/shared/00/00000002.xhp#url\">URL</link>。這表示您也可以輸入一個網際網路 URL。"
 
 #. ABuMQ
 #: cellreferences_url.xhp
@@ -2608,14 +2617,14 @@ msgctxt ""
 msgid "<bookmark_value>HTML; in sheet cells</bookmark_value><bookmark_value>references; URL in cells</bookmark_value><bookmark_value>cells; Internet references</bookmark_value><bookmark_value>URL; in Calc</bookmark_value>"
 msgstr "<bookmark_value>HTML; 試算表儲存格中</bookmark_value><bookmark_value>參照; 儲存格中的 URL</bookmark_value><bookmark_value>儲存格; 網際網路參照</bookmark_value><bookmark_value>URL; 在 Calc 中</bookmark_value>"
 
-#. uWXco
+#. M5F2f
 #: cellreferences_url.xhp
 msgctxt ""
 "cellreferences_url.xhp\n"
 "hd_id3150441\n"
 "help.text"
-msgid "<variable id=\"cellreferences_url\"><link href=\"text/scalc/guide/cellreferences_url.xhp\" name=\"Referencing URLs\">Referencing URLs</link></variable>"
-msgstr "<variable id=\"cellreferences_url\"><link href=\"text/scalc/guide/cellreferences_url.xhp\" name=\"參照 URL\">參照 URL</link></variable>"
+msgid "<variable id=\"cellreferences_url\"><link href=\"text/scalc/guide/cellreferences_url.xhp\">Referencing URLs</link></variable>"
+msgstr "<variable id=\"cellreferences_url\"><link href=\"text/scalc/guide/cellreferences_url.xhp\">參照 URL</link></variable>"
 
 #. VHDGU
 #: cellreferences_url.xhp
@@ -2635,13 +2644,13 @@ msgctxt ""
 msgid "In a $[officename] Calc document, position the cursor in the cell into which you want to insert the external data."
 msgstr "將游標處於一個 $[officename] Calc 文件的一個儲存格之中，用以加入外來資料。"
 
-#. 5JKBf
+#. CcnFw
 #: cellreferences_url.xhp
 msgctxt ""
 "cellreferences_url.xhp\n"
 "par_id3145384\n"
 "help.text"
-msgid "Choose <item type=\"menuitem\">Sheet - External Links</item>. The <link href=\"text/scalc/01/04090000.xhp\" name=\"External Data\"><item type=\"menuitem\">External Data</item></link> dialog appears."
+msgid "Choose <item type=\"menuitem\">Sheet - External Links</item>. The <link href=\"text/scalc/01/04090000.xhp\"><item type=\"menuitem\">External Data</item></link> dialog appears."
 msgstr ""
 
 #. EQzxX
@@ -2689,14 +2698,14 @@ msgctxt ""
 msgid "Save your spreadsheet. When you open it again later, $[officename] Calc will update the linked cells following an inquiry."
 msgstr "現在儲存試算表。稍後重新開啟該文件時， $[officename] Calc 則會從按照設定來更新儲存格連接的內容。"
 
-#. qJWx2
+#. tapEk
 #: cellreferences_url.xhp
 msgctxt ""
 "cellreferences_url.xhp\n"
 "par_id3159204\n"
 "help.text"
-msgid "Under <switchinline select=\"sys\"><caseinline select=\"MAC\">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline> - <link href=\"text/shared/optionen/01040900.xhp\" name=\"Spreadsheet - General\"><item type=\"menuitem\">%PRODUCTNAME Calc - General</item></link> you can choose to have the update, when opened, automatically carried out either always, upon request or never. The update can be started manually in the dialog under <item type=\"menuitem\">Edit - Links</item>."
-msgstr "在 <switchinline select=\"sys\"><caseinline select=\"MAC\">[%PRODUCTNAME] - [喜好設定]</caseinline><defaultinline>[工具] - [選項]</defaultinline></switchinline> - <link href=\"text/shared/optionen/01040900.xhp\" name=\"[試算表] - [一般]\"><item type=\"menuitem\">[%PRODUCTNAME Calc] - [一般]</item></link> 下，您可以選擇是否一律、有請求時或一律不於開啟時自動執行更新。您可以在 <item type=\"menuitem\">[編輯] - [連結]</item> 下的對話方塊，手動啟動此更新。"
+msgid "Under <switchinline select=\"sys\"><caseinline select=\"MAC\">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline> - <link href=\"text/shared/optionen/01040900.xhp\"><item type=\"menuitem\">%PRODUCTNAME Calc - General</item></link> you can choose to have the update, when opened, automatically carried out either always, upon request or never. The update can be started manually in the dialog under <item type=\"menuitem\">Edit - Links</item>."
+msgstr "在 <switchinline select=\"sys\"><caseinline select=\"MAC\">[%PRODUCTNAME] - [喜好設定]</caseinline><defaultinline>[工具] - [選項]</defaultinline></switchinline> - <link href=\"text/shared/optionen/01040900.xhp\"><item type=\"menuitem\">[%PRODUCTNAME Calc] - [一般]</item></link> 下，您可以選擇是否一律、有請求時或一律不於開啟時自動執行更新。您可以在 <item type=\"menuitem\">[編輯] - [連結]</item> 下的對話方塊，手動啟動此更新。"
 
 #. 4DFzJ
 #: cellstyle_by_formula.xhp
@@ -2716,14 +2725,14 @@ msgctxt ""
 msgid "<bookmark_value>formats; assigning by formulas</bookmark_value>  <bookmark_value>cell formats; assigning by formulas</bookmark_value>  <bookmark_value>STYLE function example</bookmark_value>  <bookmark_value>cell styles;assigning by formulas</bookmark_value>  <bookmark_value>formulas;assigning cell formats</bookmark_value>"
 msgstr "<bookmark_value>格式; 依公式指定</bookmark_value>      <bookmark_value>儲存格格式; 依公式指定</bookmark_value>      <bookmark_value>STYLE 函式範例</bookmark_value>      <bookmark_value>儲存格樣式; 依公式指定</bookmark_value>      <bookmark_value>公式; 指定儲存格格式</bookmark_value>"
 
-#. USRGE
+#. x3HG2
 #: cellstyle_by_formula.xhp
 msgctxt ""
 "cellstyle_by_formula.xhp\n"
 "hd_id3145673\n"
 "help.text"
-msgid "<variable id=\"cellstyle_by_formula\"><link href=\"text/scalc/guide/cellstyle_by_formula.xhp\" name=\"Assigning Formats by Formula\">Assigning Formats by Formula</link></variable>"
-msgstr "<variable id=\"cellstyle_by_formula\"><link href=\"text/scalc/guide/cellstyle_by_formula.xhp\" name=\"依公式指定格式\">依公式指定格式</link> </variable>"
+msgid "<variable id=\"cellstyle_by_formula\"><link href=\"text/scalc/guide/cellstyle_by_formula.xhp\">Assigning Formats by Formula</link></variable>"
+msgstr "<variable id=\"cellstyle_by_formula\"><link href=\"text/scalc/guide/cellstyle_by_formula.xhp\">依公式指定格式</link> </variable>"
 
 #. EzSnh
 #: cellstyle_by_formula.xhp
@@ -2797,14 +2806,14 @@ msgctxt ""
 msgid "The \"&\" symbol designates the current contents of the <emph>Find</emph> field. The line must begin with an equal sign, since it is a formula. It is assumed that the cell styles \"Red\" and \"Green\" already exist."
 msgstr ""
 
-#. 4AgNk
+#. iF62Y
 #: cellstyle_by_formula.xhp
 msgctxt ""
 "cellstyle_by_formula.xhp\n"
 "par_id3149262\n"
 "help.text"
-msgid "Mark the fields <link href=\"text/shared/01/02100000.xhp\" name=\"Regular expressions\"><emph>Regular expressions</emph></link> and <emph>Current selection only</emph>. Click <emph>Find All</emph>."
-msgstr "標記「<link href=\"text/shared/01/02100000.xhp\" name=\"常規表述式\"><emph>常規表述式</emph></link>」和「<emph>只允許目前的選取</emph>」等欄位。按一下「<emph>搜尋全部</emph>」。"
+msgid "Mark the fields <link href=\"text/shared/01/02100000.xhp\"><emph>Regular expressions</emph></link> and <emph>Current selection only</emph>. Click <emph>Find All</emph>."
+msgstr "標記「<link href=\"text/shared/01/02100000.xhp\"><emph>常規表述式</emph></link>」和「<emph>只允許目前的選取</emph>」等欄位。按一下「<emph>搜尋全部</emph>」。"
 
 #. A3CBV
 #: cellstyle_by_formula.xhp
@@ -2842,14 +2851,14 @@ msgctxt ""
 msgid "<bookmark_value>conditional formatting; cells</bookmark_value>      <bookmark_value>cells; conditional formatting</bookmark_value>      <bookmark_value>formatting; conditional formatting</bookmark_value>      <bookmark_value>styles;conditional styles</bookmark_value>      <bookmark_value>cell formats; conditional</bookmark_value>      <bookmark_value>random numbers;examples</bookmark_value>      <bookmark_value>cell styles; copying</bookmark_value>      <bookmark_value>copying; cell styles</bookmark_value>      <bookmark_value>tables; copying cell styles</bookmark_value>"
 msgstr "<bookmark_value>條件式格式; 儲存格</bookmark_value>      <bookmark_value>儲存格; 條件式格式</bookmark_value>      <bookmark_value>格式; 條件式格式</bookmark_value>      <bookmark_value>樣式; 條件式樣式</bookmark_value>      <bookmark_value>儲存格格式; 條件式</bookmark_value>      <bookmark_value>亂數; 範例</bookmark_value>      <bookmark_value>儲存格樣式; 複製</bookmark_value>      <bookmark_value>複製; 儲存格樣式</bookmark_value>      <bookmark_value>表格; 複製儲存格樣式</bookmark_value>"
 
-#. 4jA2B
+#. WX8sY
 #: cellstyle_conditional.xhp
 msgctxt ""
 "cellstyle_conditional.xhp\n"
 "hd_id3149263\n"
 "help.text"
-msgid "<variable id=\"cellstyle_conditional\"><link href=\"text/scalc/guide/cellstyle_conditional.xhp\" name=\"Applying Conditional Formatting\">Applying Conditional Formatting</link></variable>"
-msgstr "<variable id=\"cellstyle_conditional\"><link href=\"text/scalc/guide/cellstyle_conditional.xhp\" name=\"使用有條件的格式\">使用條件式格式</link></variable>"
+msgid "<variable id=\"cellstyle_conditional\"><link href=\"text/scalc/guide/cellstyle_conditional.xhp\">Applying Conditional Formatting</link></variable>"
+msgstr "<variable id=\"cellstyle_conditional\"><link href=\"text/scalc/guide/cellstyle_conditional.xhp\">使用條件式格式</link></variable>"
 
 #. 3Feon
 #: cellstyle_conditional.xhp
@@ -2905,14 +2914,14 @@ msgctxt ""
 msgid "Choose <emph>Format - Conditional - Condition</emph>."
 msgstr ""
 
-#. nFqJG
+#. AnNxD
 #: cellstyle_conditional.xhp
 msgctxt ""
 "cellstyle_conditional.xhp\n"
 "par_id3146969\n"
 "help.text"
-msgid "Enter the condition(s) into the dialog box. The dialog is described in detail in <link href=\"text/scalc/01/05120000.xhp\" name=\"$[officename] Help\">$[officename] Help</link>, and an example is provided below:"
-msgstr "在對話方塊中輸入條件。<link href=\"text/scalc/01/05120000.xhp\" name=\"$[officename] 說明\">$[officename] 說明</link>中提供了該對話方塊的詳細說明。下面是一個範例："
+msgid "Enter the condition(s) into the dialog box. The dialog is described in detail in <link href=\"text/scalc/01/05120000.xhp\">$[officename] Help</link>, and an example is provided below:"
+msgstr "在對話方塊中輸入條件。<link href=\"text/scalc/01/05120000.xhp\">$[officename] 說明</link>中提供了該對話方塊的詳細說明。下面是一個範例："
 
 #. xDZ66
 #: cellstyle_conditional.xhp
@@ -3058,13 +3067,13 @@ msgctxt ""
 msgid "Set the cursor in a blank cell, for example, J14, and choose <emph>Insert - Function</emph>."
 msgstr "在空白儲存格中設定游標 (例如 J14)，然後選擇 <emph>[插入] - [函式]</emph>。"
 
-#. DGtFG
+#. xCigs
 #: cellstyle_conditional.xhp
 msgctxt ""
 "cellstyle_conditional.xhp\n"
 "par_id3156016\n"
 "help.text"
-msgid "Select the AVERAGE function. Use the mouse to select all your random numbers. If you cannot see the entire range, because the Function Wizard is obscuring it, you can temporarily shrink the dialog using the <link href=\"text/shared/00/00000001.xhp#shrink_maximize\" name=\"Shrink or Maximize\"><item type=\"menuitem\">Shrink</item></link> icon."
+msgid "Select the AVERAGE function. Use the mouse to select all your random numbers. If you cannot see the entire range, because the Function Wizard is obscuring it, you can temporarily shrink the dialog using the <link href=\"text/shared/00/00000001.xhp#shrink_maximize\"><item type=\"menuitem\">Shrink</item></link> icon."
 msgstr ""
 
 #. YEqsh
@@ -3184,13 +3193,13 @@ msgctxt ""
 msgid "In the <emph>Paste</emph> area, check only the <emph>Formats</emph> box. All other boxes must be unchecked. Click <emph>OK</emph>. Or you can click the <emph>Formats only</emph> button instead."
 msgstr ""
 
-#. YMDKA
+#. rcKCW
 #: cellstyle_conditional.xhp
 msgctxt ""
 "cellstyle_conditional.xhp\n"
 "par_id3159123\n"
 "help.text"
-msgid "<link href=\"text/scalc/01/05120000.xhp\" name=\"Format - Conditional formatting\">Format - Conditional - Condition</link>"
+msgid "<link href=\"text/scalc/01/05120000.xhp\">Format - Conditional - Condition</link>"
 msgstr ""
 
 #. HFoKB
@@ -3211,14 +3220,14 @@ msgctxt ""
 msgid "<bookmark_value>negative numbers</bookmark_value>      <bookmark_value>numbers; highlighting negative numbers</bookmark_value>      <bookmark_value>highlighting;negative numbers</bookmark_value>      <bookmark_value>colors;negative numbers</bookmark_value>      <bookmark_value>number formats;colors for negative numbers</bookmark_value>"
 msgstr "<bookmark_value>負數</bookmark_value>      <bookmark_value>數字; 標明負數</bookmark_value>      <bookmark_value>色彩標明; 負數</bookmark_value>      <bookmark_value>顏色; 負數</bookmark_value>      <bookmark_value>數字格式; 負數的顏色</bookmark_value>"
 
-#. XwR9x
+#. eGjJD
 #: cellstyle_minusvalue.xhp
 msgctxt ""
 "cellstyle_minusvalue.xhp\n"
 "hd_id3147434\n"
 "help.text"
-msgid "<variable id=\"cellstyle_minusvalue\"><link href=\"text/scalc/guide/cellstyle_minusvalue.xhp\" name=\"Highlighting Negative Numbers\">Highlighting Negative Numbers</link></variable>"
-msgstr "<variable id=\"cellstyle_minusvalue\"><link href=\"text/scalc/guide/cellstyle_minusvalue.xhp\" name=\"標明負數\">標明負數</link></variable>"
+msgid "<variable id=\"cellstyle_minusvalue\"><link href=\"text/scalc/guide/cellstyle_minusvalue.xhp\">Highlighting Negative Numbers</link></variable>"
+msgstr "<variable id=\"cellstyle_minusvalue\"><link href=\"text/scalc/guide/cellstyle_minusvalue.xhp\">標明負數</link></variable>"
 
 #. YGxpk
 #: cellstyle_minusvalue.xhp
@@ -3274,13 +3283,13 @@ msgctxt ""
 msgid "<bookmark_value>anchor;image</bookmark_value><bookmark_value>image anchor;in Calc</bookmark_value><bookmark_value>image anchor in Calc;changing</bookmark_value>"
 msgstr ""
 
-#. t3pgZ
+#. x5Kg7
 #: change_image_anchor.xhp
 msgctxt ""
 "change_image_anchor.xhp\n"
 "par_id851607971999527\n"
 "help.text"
-msgid "<variable id=\"anchor_image\"><link href=\"text/scalc/guide/change_image_anchor.xhp\" name=\"Changing Anchor of Image\">Changing the Anchor of an Image</link>  </variable>"
+msgid "<variable id=\"anchor_image\"><link href=\"text/scalc/guide/change_image_anchor.xhp\">Changing the Anchor of an Image</link>  </variable>"
 msgstr ""
 
 #. BoMUp
@@ -3373,14 +3382,14 @@ msgctxt ""
 msgid "<bookmark_value>consolidating data</bookmark_value>      <bookmark_value>ranges; combining</bookmark_value>      <bookmark_value>combining;cell ranges</bookmark_value>      <bookmark_value>tables; combining</bookmark_value>      <bookmark_value>data; merging cell ranges</bookmark_value>      <bookmark_value>merging;data ranges</bookmark_value>"
 msgstr "<bookmark_value>合併計算資料</bookmark_value>      <bookmark_value>範圍; 合併</bookmark_value>      <bookmark_value>合併; 儲存格範圍</bookmark_value>      <bookmark_value>表格; 合併</bookmark_value>      <bookmark_value>資料; 合併儲存格範圍</bookmark_value>      <bookmark_value>合併; 資料範圍</bookmark_value>"
 
-#. aUBxc
+#. 6ZGGL
 #: consolidate.xhp
 msgctxt ""
 "consolidate.xhp\n"
 "hd_id3150791\n"
 "help.text"
-msgid "<variable id=\"consolidate\"><link href=\"text/scalc/guide/consolidate.xhp\" name=\"Consolidating Data\">Consolidating Data</link></variable>"
-msgstr "<variable id=\"consolidate\"><link href=\"text/scalc/guide/consolidate.xhp\" name=\"資料的合併計算\">資料的合併計算</link></variable>"
+msgid "<variable id=\"consolidate\"><link href=\"text/scalc/guide/consolidate.xhp\">Consolidating Data</link></variable>"
+msgstr "<variable id=\"consolidate\"><link href=\"text/scalc/guide/consolidate.xhp\">資料的合併計算</link></variable>"
 
 #. dcJqU
 #: consolidate.xhp
@@ -3562,14 +3571,14 @@ msgctxt ""
 msgid "The data from the consolidation ranges and target range will be saved when you save the document. If you later open a document in which consolidation has been defined, this data will again be available."
 msgstr "該合併計算的範圍以及目標範圍的資料，將於儲存時一併儲存。如果您稍後將一個含有已定義合併計算的文件重新開啟，這些資料可以再此提供使用。"
 
-#. GGFhA
+#. BzNqC
 #: consolidate.xhp
 msgctxt ""
 "consolidate.xhp\n"
 "par_id3153039\n"
 "help.text"
-msgid "<link href=\"text/scalc/01/12070000.xhp\" name=\"Data - Consolidate\">Data - Consolidate</link>"
-msgstr "<link href=\"text/scalc/01/12070000.xhp\" name=\"「資料」-「合併計算」\">「資料」-「合併計算」</link>"
+msgid "<link href=\"text/scalc/01/12070000.xhp\">Data - Consolidate</link>"
+msgstr "<link href=\"text/scalc/01/12070000.xhp\">「資料」-「合併計算」</link>"
 
 #. UNSjU
 #: csv_files.xhp
@@ -3832,32 +3841,32 @@ msgctxt ""
 msgid "Click <item type=\"menuitem\">Save</item>."
 msgstr "按一下 <item type=\"menuitem\">[儲存]</item>。"
 
-#. U6QRD
+#. hDd2A
 #: csv_files.xhp
 msgctxt ""
 "csv_files.xhp\n"
 "par_id3153487\n"
 "help.text"
-msgid "<switchinline select=\"sys\"><caseinline select=\"MAC\">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline> - <link href=\"text/shared/optionen/01060100.xhp\" name=\"Spreadsheet - View\">%PRODUCTNAME Calc - View</link>"
-msgstr "<switchinline select=\"sys\"><caseinline select=\"MAC\">[%PRODUCTNAME] - [喜好設定]</caseinline><defaultinline>[工具] - [選項]</defaultinline></switchinline> - <link href=\"text/shared/optionen/01060100.xhp\" name=\"[試算表] - [檢視]\">[%PRODUCTNAME Calc] - [檢視]</link>"
+msgid "<switchinline select=\"sys\"><caseinline select=\"MAC\">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline> - <link href=\"text/shared/optionen/01060100.xhp\">%PRODUCTNAME Calc - View</link>"
+msgstr "<switchinline select=\"sys\"><caseinline select=\"MAC\">[%PRODUCTNAME] - [喜好設定]</caseinline><defaultinline>[工具] - [選項]</defaultinline></switchinline> - <link href=\"text/shared/optionen/01060100.xhp\">[%PRODUCTNAME Calc] - [檢視]</link>"
 
-#. W3bT3
+#. Dir44
 #: csv_files.xhp
 msgctxt ""
 "csv_files.xhp\n"
 "par_id3153008\n"
 "help.text"
-msgid "<link href=\"text/shared/00/00000207.xhp\" name=\"Export text files\">Export text files</link>"
-msgstr "<link href=\"text/shared/00/00000207.xhp\" name=\"匯出文字\">匯出文字</link>"
+msgid "<link href=\"text/shared/00/00000207.xhp\">Export text files</link>"
+msgstr "<link href=\"text/shared/00/00000207.xhp\">匯出文字</link>"
 
-#. jADCM
+#. GANDZ
 #: csv_files.xhp
 msgctxt ""
 "csv_files.xhp\n"
 "par_id3155595\n"
 "help.text"
-msgid "<link href=\"text/shared/00/00000208.xhp\" name=\"Import text files\">Import text files</link>"
-msgstr "<link href=\"text/shared/00/00000208.xhp\" name=\"匯入文字\">匯入文字</link>"
+msgid "<link href=\"text/shared/00/00000208.xhp\">Import text files</link>"
+msgstr "<link href=\"text/shared/00/00000208.xhp\">匯入文字</link>"
 
 #. ounFQ
 #: csv_formula.xhp
@@ -3877,14 +3886,14 @@ msgctxt ""
 msgid "<bookmark_value>csv files;formulas</bookmark_value>      <bookmark_value>formulas; importing/exporting as csv files</bookmark_value>      <bookmark_value>exporting;formulas as csv files</bookmark_value>      <bookmark_value>importing;csv files with formulas</bookmark_value>"
 msgstr "<bookmark_value>csv 檔案; 公式</bookmark_value>      <bookmark_value>公式; 匯入/匯出為 csv 檔案</bookmark_value>      <bookmark_value>匯出; 公式為 csv 檔案</bookmark_value>      <bookmark_value>匯入; 具公式的 csv 檔案</bookmark_value>"
 
-#. DfYsZ
+#. HJThG
 #: csv_formula.xhp
 msgctxt ""
 "csv_formula.xhp\n"
 "hd_id3153726\n"
 "help.text"
-msgid "<variable id=\"csv_formula\"><link href=\"text/scalc/guide/csv_formula.xhp\" name=\"Importing and Exporting Text Files\">Importing and Exporting CSV Text Files with Formulas</link></variable>"
-msgstr "<variable id=\"csv_formula\"><link href=\"text/scalc/guide/csv_formula.xhp\" name=\"匯入與匯出文字檔\">匯入與匯出具有公式的 CSV 文字檔</link></variable>"
+msgid "<variable id=\"csv_formula\"><link href=\"text/scalc/guide/csv_formula.xhp\">Importing and Exporting CSV Text Files with Formulas</link></variable>"
+msgstr "<variable id=\"csv_formula\"><link href=\"text/scalc/guide/csv_formula.xhp\">匯入與匯出具有公式的 CSV 文字檔</link></variable>"
 
 #. 7kmDr
 #: csv_formula.xhp
@@ -4039,32 +4048,32 @@ msgctxt ""
 msgid "If necessary, after you have saved, clear the <emph>Formulas</emph> check box to see the calculated results in the table again."
 msgstr "您也可以在儲存後再一次取消<emph>「公式」</emph>欄位的標記，因此可在試算表中再次看見計算出的結果。"
 
-#. D9voD
+#. LejdP
 #: csv_formula.xhp
 msgctxt ""
 "csv_formula.xhp\n"
 "par_id3153487\n"
 "help.text"
-msgid "<switchinline select=\"sys\"><caseinline select=\"MAC\">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline> - <link href=\"text/shared/optionen/01060100.xhp\" name=\"Spreadsheet - View\">%PRODUCTNAME Calc - View</link>"
-msgstr "<switchinline select=\"sys\"><caseinline select=\"MAC\">[%PRODUCTNAME] - [喜好設定]</caseinline><defaultinline>[工具] - [選項]</defaultinline></switchinline> - <link href=\"text/shared/optionen/01060100.xhp\" name=\"[試算表] - [檢視]\">[%PRODUCTNAME Calc] - [檢視]</link>"
+msgid "<switchinline select=\"sys\"><caseinline select=\"MAC\">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline> - <link href=\"text/shared/optionen/01060100.xhp\">%PRODUCTNAME Calc - View</link>"
+msgstr "<switchinline select=\"sys\"><caseinline select=\"MAC\">[%PRODUCTNAME] - [喜好設定]</caseinline><defaultinline>[工具] - [選項]</defaultinline></switchinline> - <link href=\"text/shared/optionen/01060100.xhp\">[%PRODUCTNAME Calc] - [檢視]</link>"
 
-#. iGg7e
+#. GgLZh
 #: csv_formula.xhp
 msgctxt ""
 "csv_formula.xhp\n"
 "par_id3153008\n"
 "help.text"
-msgid "<link href=\"text/shared/00/00000207.xhp\" name=\"Export text files\">Export text files</link>"
-msgstr "<link href=\"text/shared/00/00000207.xhp\" name=\"匯出文字\">匯出文字</link>"
+msgid "<link href=\"text/shared/00/00000207.xhp\">Export text files</link>"
+msgstr "<link href=\"text/shared/00/00000207.xhp\">匯出文字</link>"
 
-#. X5Eoo
+#. DHxaC
 #: csv_formula.xhp
 msgctxt ""
 "csv_formula.xhp\n"
 "par_id3155595\n"
 "help.text"
-msgid "<link href=\"text/shared/00/00000208.xhp\" name=\"Import text files\">Import text files</link>"
-msgstr "<link href=\"text/shared/00/00000208.xhp\" name=\"匯入文字\">匯入文字</link>"
+msgid "<link href=\"text/shared/00/00000208.xhp\">Import text files</link>"
+msgstr "<link href=\"text/shared/00/00000208.xhp\">匯入文字</link>"
 
 #. s2isa
 #: currency_format.xhp
@@ -4084,14 +4093,14 @@ msgctxt ""
 msgid "<bookmark_value>currency formats; spreadsheets</bookmark_value><bookmark_value>cells; currency formats</bookmark_value><bookmark_value>international currency formats</bookmark_value><bookmark_value>formats; currency formats in cells</bookmark_value><bookmark_value>currencies; default currencies</bookmark_value><bookmark_value>defaults;currency formats</bookmark_value><bookmark_value>changing;currency formats</bookmark_value>"
 msgstr "<bookmark_value>貨幣格式; 試算表</bookmark_value><bookmark_value>儲存格; 貨幣格式</bookmark_value><bookmark_value>國際貨幣格式</bookmark_value><bookmark_value>格式; 儲存格中的貨幣格式</bookmark_value><bookmark_value>貨幣; 預設貨幣</bookmark_value><bookmark_value>預設值; 貨幣格式</bookmark_value><bookmark_value>變更; 貨幣格式</bookmark_value>"
 
-#. GUpzE
+#. Dwibg
 #: currency_format.xhp
 msgctxt ""
 "currency_format.xhp\n"
 "hd_id3156329\n"
 "help.text"
-msgid "<variable id=\"currency_format\"><link href=\"text/scalc/guide/currency_format.xhp\" name=\"Cells in Currency Format\">Cells in Currency Format</link></variable>"
-msgstr "<variable id=\"currency_format\"><link href=\"text/scalc/guide/currency_format.xhp\" name=\"採用貨幣格式的儲存格\">採用貨幣格式的儲存格</link></variable>"
+msgid "<variable id=\"currency_format\"><link href=\"text/scalc/guide/currency_format.xhp\">Cells in Currency Format</link></variable>"
+msgstr "<variable id=\"currency_format\"><link href=\"text/scalc/guide/currency_format.xhp\">採用貨幣格式的儲存格</link></variable>"
 
 #. Tq9vD
 #: currency_format.xhp
@@ -4147,14 +4156,14 @@ msgctxt ""
 msgid "If, under <item type=\"menuitem\">Language</item>, you convert the cells to \"English (US)\", the English-language locale setting is also transferred and the default currency format is now \"$ 1,234.00\"."
 msgstr "若在 <item type=\"menuitem\">[語言]</item> 下將儲存格轉換成「英語 (美國)」，英文語言環境設定也隨之轉換，預設貨幣格式現在為「$ 1,234.00」。"
 
-#. CzbsK
+#. sHgcT
 #: currency_format.xhp
 msgctxt ""
 "currency_format.xhp\n"
 "par_id3154255\n"
 "help.text"
-msgid "<link href=\"text/shared/01/05020300.xhp\" name=\"Format - Cells - Numbers\">Format - Cells - Numbers</link>"
-msgstr "<link href=\"text/shared/01/05020300.xhp\" name=\"[格式] - [儲存格] - [數字]\">[格式] - [儲存格] - [數字]</link>"
+msgid "<link href=\"text/shared/01/05020300.xhp\">Format - Cells - Numbers</link>"
+msgstr "<link href=\"text/shared/01/05020300.xhp\">[格式] - [儲存格] - [數字]</link>"
 
 #. QoTwd
 #: database_define.xhp
@@ -4174,14 +4183,14 @@ msgctxt ""
 msgid "<bookmark_value>tables; database ranges</bookmark_value>      <bookmark_value>database ranges; defining</bookmark_value>      <bookmark_value>ranges; defining database ranges</bookmark_value>      <bookmark_value>defining;database ranges</bookmark_value>"
 msgstr "<bookmark_value>表格; 資料庫範圍</bookmark_value>      <bookmark_value>資料庫範圍; 定義</bookmark_value>      <bookmark_value>範圍; 定義資料庫範圍</bookmark_value>      <bookmark_value>定義; 資料庫範圍</bookmark_value>"
 
-#. bCxRx
+#. otSAA
 #: database_define.xhp
 msgctxt ""
 "database_define.xhp\n"
 "hd_id3154758\n"
 "help.text"
-msgid "<variable id=\"database_define\"><link href=\"text/scalc/guide/database_define.xhp\" name=\"Defining Database Ranges\">Defining a Database Range</link></variable>"
-msgstr "<variable id=\"database_define\"><link href=\"text/scalc/guide/database_define.xhp\" name=\"定義資料庫範圍\">定義資料庫範圍</link></variable>"
+msgid "<variable id=\"database_define\"><link href=\"text/scalc/guide/database_define.xhp\">Defining a Database Range</link></variable>"
+msgstr "<variable id=\"database_define\"><link href=\"text/scalc/guide/database_define.xhp\">定義資料庫範圍</link></variable>"
 
 #. 4BdV5
 #: database_define.xhp
@@ -4282,14 +4291,14 @@ msgctxt ""
 msgid "<bookmark_value>cell ranges;applying/removing filters</bookmark_value>      <bookmark_value>filtering;cell ranges/database ranges</bookmark_value>      <bookmark_value>database ranges;applying/removing filters</bookmark_value>      <bookmark_value>removing;cell range filters</bookmark_value>"
 msgstr "<bookmark_value>儲存格範圍; 套用/移除篩選</bookmark_value>      <bookmark_value>篩選; 儲存格範圍/資料庫範圍</bookmark_value>      <bookmark_value>資料庫範圍; 套用/移除篩選</bookmark_value>      <bookmark_value>移除; 儲存格範圍篩選</bookmark_value>"
 
-#. geiwR
+#. 6eTRN
 #: database_filter.xhp
 msgctxt ""
 "database_filter.xhp\n"
 "hd_id3153541\n"
 "help.text"
-msgid "<variable id=\"database_filter\"><link href=\"text/scalc/guide/database_filter.xhp\" name=\"Filtering Cell Ranges\">Filtering Cell Ranges</link></variable>"
-msgstr "<variable id=\"database_filter\"><link href=\"text/scalc/guide/database_filter.xhp\" name=\"篩選儲存格範圍\">篩選儲存格範圍</link></variable>"
+msgid "<variable id=\"database_filter\"><link href=\"text/scalc/guide/database_filter.xhp\">Filtering Cell Ranges</link></variable>"
+msgstr "<variable id=\"database_filter\"><link href=\"text/scalc/guide/database_filter.xhp\">篩選儲存格範圍</link></variable>"
 
 #. 4znQt
 #: database_filter.xhp
@@ -4453,13 +4462,13 @@ msgctxt ""
 msgid "Choose <item type=\"menuitem\">Data - Filter - Reset Filter</item>."
 msgstr "選擇 <item type=\"menuitem\">[資料] - [篩選] - [自動篩選]</item>。"
 
-#. EFnz4
+#. oFj8U
 #: database_filter.xhp
 msgctxt ""
 "database_filter.xhp\n"
 "par_id4525284\n"
 "help.text"
-msgid "<link href=\"https://wiki.documentfoundation.org/Documentation/How_Tos/Defining_a_Data_Range\" name=\"wiki.documentfoundation.org Defining a Data Range\">Wiki page about defining a data range</link>"
+msgid "<link href=\"https://wiki.documentfoundation.org/Documentation/How_Tos/Defining_a_Data_Range\">Wiki page about defining a data range</link>"
 msgstr ""
 
 #. ueLu8
@@ -4480,14 +4489,14 @@ msgctxt ""
 msgid "<bookmark_value>database ranges; sorting</bookmark_value>      <bookmark_value>sorting; database ranges</bookmark_value>      <bookmark_value>data;sorting in databases</bookmark_value>"
 msgstr "<bookmark_value>資料庫範圍; 排序</bookmark_value>      <bookmark_value>排序; 資料庫範圍</bookmark_value>      <bookmark_value>資料; 在資料庫中排序</bookmark_value>"
 
-#. P89iU
+#. bfmu3
 #: database_sort.xhp
 msgctxt ""
 "database_sort.xhp\n"
 "hd_id3150767\n"
 "help.text"
-msgid "<variable id=\"database_sort\"><link href=\"text/scalc/guide/database_sort.xhp\" name=\"Sorting Database Ranges\">Sorting Data</link></variable>"
-msgstr "<variable id=\"database_sort\"><link href=\"text/scalc/guide/database_sort.xhp\" name=\"排序資料庫範圍\">排序資料</link></variable>"
+msgid "<variable id=\"database_sort\"><link href=\"text/scalc/guide/database_sort.xhp\">Sorting Data</link></variable>"
+msgstr "<variable id=\"database_sort\"><link href=\"text/scalc/guide/database_sort.xhp\">排序資料</link></variable>"
 
 #. vddXD
 #: database_sort.xhp
@@ -4543,13 +4552,13 @@ msgctxt ""
 msgid "Click <emph>OK</emph>."
 msgstr "按一下 <emph>[確定]</emph>。"
 
-#. yFuM4
+#. biDGg
 #: database_sort.xhp
 msgctxt ""
 "database_sort.xhp\n"
 "par_id1846980\n"
 "help.text"
-msgid "<link href=\"https://wiki.documentfoundation.org/Documentation/How_Tos/Defining_a_Data_Range\" name=\"wiki.documentfoundation.org: Defining a Data Range\">Wiki page about defining a data range</link>"
+msgid "<link href=\"https://wiki.documentfoundation.org/Documentation/How_Tos/Defining_a_Data_Range\">Wiki page about defining a data range</link>"
 msgstr ""
 
 #. zsSK8
@@ -4570,14 +4579,14 @@ msgctxt ""
 msgid "<bookmark_value>pivot table function; introduction</bookmark_value><bookmark_value>DataPilot, see pivot table function</bookmark_value>"
 msgstr ""
 
-#. tAv25
+#. NNbkr
 #: datapilot.xhp
 msgctxt ""
 "datapilot.xhp\n"
 "hd_id3150448\n"
 "help.text"
-msgid "<variable id=\"datapilot\"><link href=\"text/scalc/guide/datapilot.xhp\" name=\"Pivot Table\">Pivot Table</link></variable>"
-msgstr "<variable id=\"datapilot\"><link href=\"text/scalc/guide/datapilot.xhp\" name=\"樞紐分析表\">樞紐分析表</link></variable>"
+msgid "<variable id=\"datapilot\"><link href=\"text/scalc/guide/datapilot.xhp\">Pivot Table</link></variable>"
+msgstr "<variable id=\"datapilot\"><link href=\"text/scalc/guide/datapilot.xhp\">樞紐分析表</link></variable>"
 
 #. X3qFY
 #: datapilot.xhp
@@ -4588,13 +4597,13 @@ msgctxt ""
 msgid "The <emph>pivot table</emph> (formerly known as <emph>DataPilot</emph>) allows you to combine, compare, and analyze large amounts of data. You can view different summaries of the source data, you can display the details of areas of interest, and you can create reports."
 msgstr ""
 
-#. EP4s6
+#. pUGwe
 #: datapilot.xhp
 msgctxt ""
 "datapilot.xhp\n"
 "par_id3145069\n"
 "help.text"
-msgid "A table that has been created as a <link href=\"text/scalc/01/12090000.xhp\" name=\"pivot table\">pivot table</link> is an interactive table. Data can be arranged, rearranged or summarized according to different points of view."
+msgid "A table that has been created as a <link href=\"text/scalc/01/12090000.xhp\">pivot table</link> is an interactive table. Data can be arranged, rearranged or summarized according to different points of view."
 msgstr ""
 
 #. cGChV
@@ -4615,14 +4624,14 @@ msgctxt ""
 msgid "<bookmark_value>pivot tables</bookmark_value>      <bookmark_value>pivot table function; calling up and applying</bookmark_value>"
 msgstr ""
 
-#. c5AAy
+#. HgqHr
 #: datapilot_createtable.xhp
 msgctxt ""
 "datapilot_createtable.xhp\n"
 "hd_id3148491\n"
 "help.text"
-msgid "<variable id=\"datapilot_createtable\"><link href=\"text/scalc/guide/datapilot_createtable.xhp\" name=\"Creating Pivot Tables\">Creating Pivot Tables</link></variable>"
-msgstr "<variable id=\"datapilot_createtable\"><link href=\"text/scalc/guide/datapilot_createtable.xhp\" name=\"建立樞紐分析表\">建立樞紐分析表</link></variable>"
+msgid "<variable id=\"datapilot_createtable\"><link href=\"text/scalc/guide/datapilot_createtable.xhp\">Creating Pivot Tables</link></variable>"
+msgstr "<variable id=\"datapilot_createtable\"><link href=\"text/scalc/guide/datapilot_createtable.xhp\">建立樞紐分析表</link></variable>"
 
 #. qrneD
 #: datapilot_createtable.xhp
@@ -4669,14 +4678,14 @@ msgctxt ""
 msgid "If the button is dropped in the <emph>Data Fields</emph> area it will be given a caption that also shows the formula that will be used to calculate the data."
 msgstr "如果按鈕放置於 <emph>[資料欄位]</emph> 區塊中，並且會給按鈕一個標籤同時顯示將用於計算資料的公式。"
 
-#. 8rEXv
+#. VnALH
 #: datapilot_createtable.xhp
 msgctxt ""
 "datapilot_createtable.xhp\n"
 "par_id3146974\n"
 "help.text"
-msgid "By double-clicking on one of the fields in the <emph>Data Fields</emph> area you can call up the <link href=\"text/scalc/01/12090105.xhp\" name=\"Data Field\"><emph>Data Field</emph></link> dialog."
-msgstr "連按兩下 <emph>[資料欄位]</emph> 區塊中的欄位之一，您可在該區塊呼叫<link href=\"text/scalc/01/12090105.xhp\" name=\"資料欄位\"><emph>[資料欄位]</emph></link> 對話方塊。"
+msgid "By double-clicking on one of the fields in the <emph>Data Fields</emph> area you can call up the <link href=\"text/scalc/01/12090105.xhp\"><emph>Data Field</emph></link> dialog."
+msgstr "連按兩下 <emph>[資料欄位]</emph> 區塊中的欄位之一，您可在該區塊呼叫<link href=\"text/scalc/01/12090105.xhp\"><emph>[資料欄位]</emph></link> 對話方塊。"
 
 #. PAuDC
 #: datapilot_createtable.xhp
@@ -4705,13 +4714,13 @@ msgctxt ""
 msgid "Remove a button by dragging it back to the area of the other buttons at the right of the dialog."
 msgstr "用滑鼠將欄位從區塊中移出時，就可以將這個欄位移動到其他的位置。"
 
-#. Hm6YC
+#. RVAdg
 #: datapilot_createtable.xhp
 msgctxt ""
 "datapilot_createtable.xhp\n"
 "par_id3147338\n"
 "help.text"
-msgid "To open the <link href=\"text/scalc/01/12090105.xhp\" name=\"Data Field\"><emph>Data Field</emph></link> dialog, double-click one of the buttons in the <emph>Row Fields</emph> or <emph>Column Fields</emph> area. Use the dialog to select if and to what extent <item type=\"productname\">%PRODUCTNAME</item> calculates display subtotals."
+msgid "To open the <link href=\"text/scalc/01/12090105.xhp\"><emph>Data Field</emph></link> dialog, double-click one of the buttons in the <emph>Row Fields</emph> or <emph>Column Fields</emph> area. Use the dialog to select if and to what extent <item type=\"productname\">%PRODUCTNAME</item> calculates display subtotals."
 msgstr ""
 
 #. iXULx
@@ -4741,14 +4750,14 @@ msgctxt ""
 msgid "<bookmark_value>pivot table function; deleting tables</bookmark_value>      <bookmark_value>deleting;pivot tables</bookmark_value>"
 msgstr ""
 
-#. CWysA
+#. aCv9D
 #: datapilot_deletetable.xhp
 msgctxt ""
 "datapilot_deletetable.xhp\n"
 "hd_id3153726\n"
 "help.text"
-msgid "<variable id=\"datapilot_deletetable\"><link href=\"text/scalc/guide/datapilot_deletetable.xhp\" name=\"Deleting Pivot Tables\">Deleting Pivot Tables</link></variable>"
-msgstr "<variable id=\"datapilot_deletetable\"><link href=\"text/scalc/guide/datapilot_deletetable.xhp\" name=\"刪除樞紐分析表\">刪除樞紐分析表</link></variable>"
+msgid "<variable id=\"datapilot_deletetable\"><link href=\"text/scalc/guide/datapilot_deletetable.xhp\">Deleting Pivot Tables</link></variable>"
+msgstr "<variable id=\"datapilot_deletetable\"><link href=\"text/scalc/guide/datapilot_deletetable.xhp\">刪除樞紐分析表</link></variable>"
 
 #. yvJds
 #: datapilot_deletetable.xhp
@@ -4786,14 +4795,14 @@ msgctxt ""
 msgid "<bookmark_value>pivot table function; editing tables</bookmark_value><bookmark_value>editing;pivot tables</bookmark_value>"
 msgstr ""
 
-#. SRQYX
+#. z8AYi
 #: datapilot_edittable.xhp
 msgctxt ""
 "datapilot_edittable.xhp\n"
 "hd_id3148663\n"
 "help.text"
-msgid "<variable id=\"datapilot_edittable\"><link href=\"text/scalc/guide/datapilot_edittable.xhp\" name=\"Editing Pivot Tables\">Editing Pivot Tables</link></variable>"
-msgstr "<variable id=\"datapilot_deletetable\"><link href=\"text/scalc/guide/datapilot_deletetable.xhp\" name=\"刪除樞紐分析表\">刪除樞紐分析表</link></variable>"
+msgid "<variable id=\"datapilot_edittable\"><link href=\"text/scalc/guide/datapilot_edittable.xhp\">Editing Pivot Tables</link></variable>"
+msgstr "<variable id=\"datapilot_deletetable\"><link href=\"text/scalc/guide/datapilot_deletetable.xhp\">刪除樞紐分析表</link></variable>"
 
 #. jDNdq
 #: datapilot_edittable.xhp
@@ -4876,14 +4885,14 @@ msgctxt ""
 msgid "<bookmark_value>pivot table function; filtering tables</bookmark_value><bookmark_value>filtering;pivot tables</bookmark_value>"
 msgstr ""
 
-#. B6RwS
+#. zNm6v
 #: datapilot_filtertable.xhp
 msgctxt ""
 "datapilot_filtertable.xhp\n"
 "hd_id3150792\n"
 "help.text"
-msgid "<variable id=\"datapilot_filtertable\"><link href=\"text/scalc/guide/datapilot_filtertable.xhp\" name=\"Filtering Pivot Tables\">Filtering Pivot Tables</link></variable>"
-msgstr "<variable id=\"datapilot_filtertable\"><link href=\"text/scalc/guide/datapilot_filtertable.xhp\" name=\"篩選樞紐分析表\">篩選樞紐分析表</link></variable>"
+msgid "<variable id=\"datapilot_filtertable\"><link href=\"text/scalc/guide/datapilot_filtertable.xhp\">Filtering Pivot Tables</link></variable>"
+msgstr "<variable id=\"datapilot_filtertable\"><link href=\"text/scalc/guide/datapilot_filtertable.xhp\">篩選樞紐分析表</link></variable>"
 
 #. ADCtg
 #: datapilot_filtertable.xhp
@@ -4894,13 +4903,13 @@ msgctxt ""
 msgid "You can use filters to remove unwanted data from a pivot table."
 msgstr "您可以使用篩選器來從樞紐分析表移除不想見到的資料。"
 
-#. GgnjB
+#. Dr4qw
 #: datapilot_filtertable.xhp
 msgctxt ""
 "datapilot_filtertable.xhp\n"
 "par_id3150441\n"
 "help.text"
-msgid "Click the <emph>Filter</emph> button in the sheet to call up the dialog for the filter conditions. Alternatively, call up the context menu of the pivot table and select the <emph>Filter</emph> command. The <link href=\"text/scalc/01/12090103.xhp\" name=\"Filter\"><emph>Filter</emph></link> dialog appears. Here you can filter the pivot table."
+msgid "Click the <emph>Filter</emph> button in the sheet to call up the dialog for the filter conditions. Alternatively, call up the context menu of the pivot table and select the <emph>Filter</emph> command. The <link href=\"text/scalc/01/12090103.xhp\"><emph>Filter</emph></link> dialog appears. Here you can filter the pivot table."
 msgstr ""
 
 #. TUAcu
@@ -5011,13 +5020,13 @@ msgctxt ""
 msgid "<bookmark_value>formatting;pivot tables</bookmark_value>"
 msgstr ""
 
-#. GN6EJ
+#. rsh3f
 #: datapilot_formatting.xhp
 msgctxt ""
 "datapilot_formatting.xhp\n"
 "hd_id341656099297638\n"
 "help.text"
-msgid "<variable id=\"h1\"><link href=\"text/scalc/guide/datapilot_formatting.xhp\" name=\"Formatting Pivot Tables\">Formatting Pivot Tables</link></variable>"
+msgid "<variable id=\"h1\"><link href=\"text/scalc/guide/datapilot_formatting.xhp\">Formatting Pivot Tables</link></variable>"
 msgstr ""
 
 #. aA7AD
@@ -5227,14 +5236,14 @@ msgctxt ""
 msgid "<bookmark_value>pivot table function; preventing data overwriting</bookmark_value><bookmark_value>output ranges of pivot tables</bookmark_value>"
 msgstr ""
 
-#. xFzFx
+#. xeirD
 #: datapilot_tipps.xhp
 msgctxt ""
 "datapilot_tipps.xhp\n"
 "hd_id3148663\n"
 "help.text"
-msgid "<variable id=\"datapilot_tipps\"><link href=\"text/scalc/guide/datapilot_tipps.xhp\" name=\"Selecting Pivot Table Output Ranges\">Selecting Pivot Table Output Ranges</link></variable>"
-msgstr "<variable id=\"datapilot_tipps\"><link href=\"text/scalc/guide/datapilot_tipps.xhp\" name=\"選取樞紐分析表輸出範圍\">選取樞紐分析表輸出範圍</link></variable>"
+msgid "<variable id=\"datapilot_tipps\"><link href=\"text/scalc/guide/datapilot_tipps.xhp\">Selecting Pivot Table Output Ranges</link></variable>"
+msgstr "<variable id=\"datapilot_tipps\"><link href=\"text/scalc/guide/datapilot_tipps.xhp\">選取樞紐分析表輸出範圍</link></variable>"
 
 #. kikhM
 #: datapilot_tipps.xhp
@@ -5290,14 +5299,14 @@ msgctxt ""
 msgid "<bookmark_value>pivot table import</bookmark_value><bookmark_value>pivot table function; refreshing tables</bookmark_value><bookmark_value>recalculating;pivot tables</bookmark_value><bookmark_value>updating;pivot tables</bookmark_value>"
 msgstr ""
 
-#. BxZL2
+#. SVyQU
 #: datapilot_updatetable.xhp
 msgctxt ""
 "datapilot_updatetable.xhp\n"
 "hd_id3150792\n"
 "help.text"
-msgid "<variable id=\"datapilot_updatetable\"><link href=\"text/scalc/guide/datapilot_updatetable.xhp\" name=\"Updating Pivot Tables\">Updating Pivot Tables</link></variable>"
-msgstr "<variable id=\"datapilot_createtable\"><link href=\"text/scalc/guide/datapilot_createtable.xhp\" name=\"建立樞紐分析表\">建立樞紐分析表</link></variable>"
+msgid "<variable id=\"datapilot_updatetable\"><link href=\"text/scalc/guide/datapilot_updatetable.xhp\">Updating Pivot Tables</link></variable>"
+msgstr "<variable id=\"datapilot_createtable\"><link href=\"text/scalc/guide/datapilot_createtable.xhp\">建立樞紐分析表</link></variable>"
 
 #. gaKCU
 #: datapilot_updatetable.xhp
@@ -5578,14 +5587,14 @@ msgctxt ""
 msgid "<bookmark_value>theme selection for sheets</bookmark_value><bookmark_value>layout;spreadsheets</bookmark_value><bookmark_value>cell styles; selecting</bookmark_value><bookmark_value>selecting;formatting themes</bookmark_value><bookmark_value>sheets;formatting themes</bookmark_value><bookmark_value>formats;themes for sheets</bookmark_value><bookmark_value>formatting;themes for sheets</bookmark_value>"
 msgstr "<bookmark_value>工作表的主題選取</bookmark_value><bookmark_value>版面配置; 試算表</bookmark_value><bookmark_value>儲存格樣式; 選取</bookmark_value><bookmark_value>選取; 格式化主題</bookmark_value><bookmark_value>工作表; 格式化主題</bookmark_value><bookmark_value>格式; 工作表主題</bookmark_value><bookmark_value>格式化; 工作表主題</bookmark_value>"
 
-#. kBFhA
+#. dt6vR
 #: design.xhp
 msgctxt ""
 "design.xhp\n"
 "hd_id3150791\n"
 "help.text"
-msgid "<variable id=\"design\"><link href=\"text/scalc/guide/design.xhp\" name=\"Selecting Themes for Sheets\">Selecting Themes for Sheets</link> </variable>"
-msgstr "<variable id=\"design\"><link href=\"text/scalc/guide/design.xhp\" name=\"選取工作表的主題\">選取工作表的主題</link></variable>"
+msgid "<variable id=\"design\"><link href=\"text/scalc/guide/design.xhp\">Selecting Themes for Sheets</link> </variable>"
+msgstr "<variable id=\"design\"><link href=\"text/scalc/guide/design.xhp\">選取工作表的主題</link></variable>"
 
 #. axrVR
 #: design.xhp
@@ -5677,14 +5686,14 @@ msgctxt ""
 msgid "As soon as you select another theme in the <emph>Theme Selection</emph> dialog, some of the properties of the custom style will be applied to the current spreadsheet. The modifications will be immediately visible in your spreadsheet."
 msgstr "一旦您在<emph>[選擇設計風格]</emph>對話方塊中選取了另一種風格，自訂樣式中的某些屬性將被採用到目前試算表中。所做的修改將立即呈現在試算表中。"
 
-#. CG6ba
+#. CRzqY
 #: design.xhp
 msgctxt ""
 "design.xhp\n"
 "par_id3146979\n"
 "help.text"
-msgid "<link href=\"text/scalc/02/06080000.xhp\" name=\"Theme selection\">Theme selection</link>"
-msgstr "<link href=\"text/scalc/02/06080000.xhp\" name=\"「選擇風格」\">「選擇風格」</link>"
+msgid "<link href=\"text/scalc/02/06080000.xhp\">Theme selection</link>"
+msgstr "<link href=\"text/scalc/02/06080000.xhp\">「選擇風格」</link>"
 
 #. t5ETg
 #: edit_multitables.xhp
@@ -5704,13 +5713,13 @@ msgctxt ""
 msgid "<bookmark_value>copying;values, to multiple sheets</bookmark_value><bookmark_value>pasting;values in multiple sheets</bookmark_value><bookmark_value>data;inserting in multiple sheets</bookmark_value><bookmark_value>sheets; simultaneous multiple filling</bookmark_value>"
 msgstr ""
 
-#. TTfnY
+#. 4PAZG
 #: edit_multitables.xhp
 msgctxt ""
 "edit_multitables.xhp\n"
 "hd_id3149456\n"
 "help.text"
-msgid "<variable id=\"edit_multitables\"><link href=\"text/scalc/guide/edit_multitables.xhp\" name=\"Copying to Multiple Sheets\">Copying to Multiple Sheets</link></variable>"
+msgid "<variable id=\"edit_multitables\"><link href=\"text/scalc/guide/edit_multitables.xhp\">Copying to Multiple Sheets</link></variable>"
 msgstr ""
 
 #. 4sMCm
@@ -5767,14 +5776,14 @@ msgctxt ""
 msgid "<bookmark_value>filters; applying/removing</bookmark_value>      <bookmark_value>rows;removing/redisplaying with filters</bookmark_value>      <bookmark_value>removing;filters</bookmark_value>"
 msgstr "<bookmark_value>篩選; 套用/移除</bookmark_value>      <bookmark_value>列; 移除篩選/使用篩選重新顯示</bookmark_value>      <bookmark_value>移除; 篩選</bookmark_value>"
 
-#. gcyYi
+#. WH2qG
 #: filters.xhp
 msgctxt ""
 "filters.xhp\n"
 "hd_id3153896\n"
 "help.text"
-msgid "<variable id=\"filters\"><link href=\"text/scalc/guide/filters.xhp\" name=\"Applying Filters\">Applying Filters</link></variable>"
-msgstr "<variable id=\"filters\"><link href=\"text/scalc/guide/filters.xhp\" name=\"採用篩選\">採用篩選</link></variable>"
+msgid "<variable id=\"filters\"><link href=\"text/scalc/guide/filters.xhp\">Applying Filters</link></variable>"
+msgstr "<variable id=\"filters\"><link href=\"text/scalc/guide/filters.xhp\">採用篩選</link></variable>"
 
 #. d4Uux
 #: filters.xhp
@@ -6091,14 +6100,14 @@ msgctxt ""
 msgid "<bookmark_value>text in cells; formatting</bookmark_value><bookmark_value>spreadsheets;formatting</bookmark_value><bookmark_value>backgrounds;cells and pages</bookmark_value><bookmark_value>borders;cells and pages</bookmark_value><bookmark_value>formatting;spreadsheets</bookmark_value><bookmark_value>numbers; formatting options for selected cells</bookmark_value><bookmark_value>cells; number formats</bookmark_value><bookmark_value>currencies;formats</bookmark_value>"
 msgstr "<bookmark_value>儲存格內的文字; 格式</bookmark_value><bookmark_value>試算表;格式</bookmark_value><bookmark_value>背景;儲存格和頁面</bookmark_value><bookmark_value>邊框;儲存格和頁面</bookmark_value><bookmark_value>格式;試算表</bookmark_value><bookmark_value>數字;所選儲存格的格式選項</bookmark_value><bookmark_value>儲存格;數字格式</bookmark_value><bookmark_value>貨幣;格式</bookmark_value>"
 
-#. Aairv
+#. eurEF
 #: format_table.xhp
 msgctxt ""
 "format_table.xhp\n"
 "hd_id3154125\n"
 "help.text"
-msgid "<variable id=\"format_table\"><link href=\"text/scalc/guide/format_table.xhp\" name=\"Designing Spreadsheets\">Formatting Spreadsheets</link></variable>"
-msgstr "<variable id=\"format_table\"><link href=\"text/scalc/guide/format_table.xhp\" name=\"設計試算表\">格式化試算表</link></variable>"
+msgid "<variable id=\"format_table\"><link href=\"text/scalc/guide/format_table.xhp\">Formatting Spreadsheets</link></variable>"
+msgstr "<variable id=\"format_table\"><link href=\"text/scalc/guide/format_table.xhp\">格式化試算表</link></variable>"
 
 #. WMnGx
 #: format_table.xhp
@@ -6181,13 +6190,13 @@ msgctxt ""
 msgid "To apply formatting attributes to an entire sheet, choose <emph>Format - Page Style</emph>. You can define headers and footers, for example, to appear on each printed page."
 msgstr ""
 
-#. pCwt2
+#. VGmPH
 #: format_table.xhp
 msgctxt ""
 "format_table.xhp\n"
 "par_id3145389\n"
 "help.text"
-msgid "An image that you have loaded with <item type=\"menuitem\">Format - Page Style - Background</item> is only visible in print or in the print preview. To display a background image on screen as well, insert the graphic image by choosing <item type=\"menuitem\">Insert - Image - From File</item> and arrange the image behind the cells by choosing <item type=\"menuitem\">Format - Arrange - To Background</item>. Use the <link href=\"text/scalc/01/02110000.xhp\" name=\"Navigator\">Navigator</link> to select the background image."
+msgid "An image that you have loaded with <item type=\"menuitem\">Format - Page Style - Background</item> is only visible in print or in the print preview. To display a background image on screen as well, insert the graphic image by choosing <item type=\"menuitem\">Insert - Image - From File</item> and arrange the image behind the cells by choosing <item type=\"menuitem\">Format - Arrange - To Background</item>. Use the <link href=\"text/scalc/01/02110000.xhp\">Navigator</link> to select the background image."
 msgstr ""
 
 #. vvAFw
@@ -6226,14 +6235,14 @@ msgctxt ""
 msgid "<bookmark_value>numbers;formatting decimals</bookmark_value>      <bookmark_value>formats; numbers in tables</bookmark_value>      <bookmark_value>tables; number formats</bookmark_value>      <bookmark_value>defaults; number formats in spreadsheets</bookmark_value>      <bookmark_value>decimal places;formatting numbers</bookmark_value>      <bookmark_value>formatting;numbers with decimals</bookmark_value>      <bookmark_value>formatting;adding/deleting decimal places</bookmark_value>      <bookmark_value>number formats; adding/deleting decimal places in cells</bookmark_value>      <bookmark_value>deleting; decimal places</bookmark_value>      <bookmark_value>decimal places; adding/deleting</bookmark_value>"
 msgstr "<bookmark_value>數字; 格式化小數點</bookmark_value><bookmark_value>格式; 表格中的數字</bookmark_value><bookmark_value>表格; 數字格式</bookmark_value><bookmark_value>預設值; 試算表中的數字格式</bookmark_value><bookmark_value>小數點位數; 格式化數字</bookmark_value><bookmark_value>格式化; 含小數點的數字</bookmark_value><bookmark_value>格式化; 增加/刪除小數點位數</bookmark_value><bookmark_value>數字格式; 增加/刪除儲存格中的小數點位數</bookmark_value><bookmark_value>刪除; 小數點位數</bookmark_value><bookmark_value>小數點位數; 增加/刪除</bookmark_value>"
 
-#. Qe83k
+#. Fcg2i
 #: format_value.xhp
 msgctxt ""
 "format_value.xhp\n"
 "hd_id3145367\n"
 "help.text"
-msgid "<variable id=\"format_value\"><link href=\"text/scalc/guide/format_value.xhp\" name=\"Formatting Numbers With Decimals\">Formatting Numbers With Decimals</link></variable>"
-msgstr "<variable id=\"format_value\"><link href=\"text/scalc/guide/format_value.xhp\" name=\"使用小數格式化數字\">使用小數格式化數字</link></variable>"
+msgid "<variable id=\"format_value\"><link href=\"text/scalc/guide/format_value.xhp\">Formatting Numbers With Decimals</link></variable>"
+msgstr "<variable id=\"format_value\"><link href=\"text/scalc/guide/format_value.xhp\">使用小數格式化數字</link></variable>"
 
 #. MBqzn
 #: format_value.xhp
@@ -6307,14 +6316,14 @@ msgctxt ""
 msgid "<bookmark_value>numbers;user-defined formatting</bookmark_value>      <bookmark_value>formatting; user-defined numbers</bookmark_value>      <bookmark_value>number formats; millions</bookmark_value>      <bookmark_value>format codes; user-defined number formats</bookmark_value>"
 msgstr "<bookmark_value>數字; 使用者定義的格式</bookmark_value>      <bookmark_value>格式化; 使用者定義的數字</bookmark_value>      <bookmark_value>數字格式; 百萬</bookmark_value>      <bookmark_value>格式代碼; 使用者定義的數字格式</bookmark_value>"
 
-#. VbsDd
+#. ATTjD
 #: format_value_userdef.xhp
 msgctxt ""
 "format_value_userdef.xhp\n"
 "hd_id3143268\n"
 "help.text"
-msgid "<variable id=\"format_value_userdef\"><link href=\"text/scalc/guide/format_value_userdef.xhp\" name=\"User-defined Number Formats\">User-defined Number Formats</link></variable>"
-msgstr "<variable id=\"format_value_userdef\"><link href=\"text/scalc/guide/format_value_userdef.xhp\" name=\"使用者定義的數字格式\">使用者定義的數字格式</link> </variable>"
+msgid "<variable id=\"format_value_userdef\"><link href=\"text/scalc/guide/format_value_userdef.xhp\">User-defined Number Formats</link></variable>"
+msgstr "<variable id=\"format_value_userdef\"><link href=\"text/scalc/guide/format_value_userdef.xhp\">使用者定義的數字格式</link> </variable>"
 
 #. AGNss
 #: format_value_userdef.xhp
@@ -6559,14 +6568,14 @@ msgctxt ""
 msgid "<bookmark_value>formulas; copying and pasting</bookmark_value><bookmark_value>copying; formulas</bookmark_value><bookmark_value>pasting;formulas</bookmark_value>"
 msgstr "<bookmark_value>公式; 複製與貼上</bookmark_value><bookmark_value>複製; 公式</bookmark_value><bookmark_value>貼上; 公式</bookmark_value>"
 
-#. Qtkdo
+#. LVG2x
 #: formula_copy.xhp
 msgctxt ""
 "formula_copy.xhp\n"
 "hd_id3151113\n"
 "help.text"
-msgid "<variable id=\"formula_copy\"><link href=\"text/scalc/guide/formula_copy.xhp\" name=\"Copying Formulas\">Copying Formulas</link></variable>"
-msgstr "<variable id=\"formula_copy\"><link href=\"text/scalc/guide/formula_copy.xhp\" name=\"複製公式\">複製公式</link></variable>"
+msgid "<variable id=\"formula_copy\"><link href=\"text/scalc/guide/formula_copy.xhp\">Copying Formulas</link></variable>"
+msgstr "<variable id=\"formula_copy\"><link href=\"text/scalc/guide/formula_copy.xhp\">複製公式</link></variable>"
 
 #. 3ZujS
 #: formula_copy.xhp
@@ -6685,14 +6694,14 @@ msgctxt ""
 msgid "<bookmark_value>formula bar; input line</bookmark_value><bookmark_value>input line in formula bar</bookmark_value><bookmark_value>formulas; inputting</bookmark_value><bookmark_value>inserting;formulas</bookmark_value>"
 msgstr "<bookmark_value>公式列; 輸入行</bookmark_value><bookmark_value>公式列中的輸入行</bookmark_value><bookmark_value>公式; 輸入</bookmark_value><bookmark_value>插入;公式</bookmark_value>"
 
-#. rP8CF
+#. pfDFF
 #: formula_enter.xhp
 msgctxt ""
 "formula_enter.xhp\n"
 "hd_id3150868\n"
 "help.text"
-msgid "<variable id=\"formula_enter\"><link href=\"text/scalc/guide/formula_enter.xhp\" name=\"Entering Formulas\">Entering Formulas</link></variable>"
-msgstr "<variable id=\"formula_enter\"><link href=\"text/scalc/guide/formula_enter.xhp\" name=\"輸入公式\">輸入公式</link></variable>"
+msgid "<variable id=\"formula_enter\"><link href=\"text/scalc/guide/formula_enter.xhp\">Entering Formulas</link></variable>"
+msgstr "<variable id=\"formula_enter\"><link href=\"text/scalc/guide/formula_enter.xhp\">輸入公式</link></variable>"
 
 #. H3w2m
 #: formula_enter.xhp
@@ -6775,14 +6784,14 @@ msgctxt ""
 msgid "You see the result <item type=\"literal\">42</item> in the cell. The cell contains the formula <item type=\"literal\">=+50-8</item>."
 msgstr "儲存格中會顯示結果 <item type=\"literal\">42</item>。儲存格包含公式 <item type=\"literal\">=+50-8</item>。"
 
-#. KGDF3
+#. H7Gc5
 #: formula_enter.xhp
 msgctxt ""
 "formula_enter.xhp\n"
 "par_id3155764\n"
 "help.text"
-msgid "If you are editing a formula with references, the references and the associated cells will be highlighted with the same color. You can now resize the reference border using the mouse, and the reference in the formula displayed in the input line also changes. <emph>Show references in color</emph> can be deactivated under <switchinline select=\"sys\"><caseinline select=\"MAC\">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline> - <link href=\"text/shared/optionen/01060300.xhp\" name=\"Spreadsheet - View\">%PRODUCTNAME Calc - View</link>."
-msgstr "若您正在依參照編輯公式，則該參照與其相關聯之儲存格將會以相同的色彩標明。您現在即可使用滑鼠重新調整參考邊界大小，此時顯示在輸入行中公式的參照也會一併變更。<emph>[以彩色顯示參照]</emph> 可於 <switchinline select=\"sys\"><caseinline select=\"MAC\">[%PRODUCTNAME] - [喜好設定]</caseinline><defaultinline>[工具] - [選項]</defaultinline></switchinline> - <link href=\"text/shared/optionen/01060300.xhp\" name=\"[試算表] - [檢視]\">[%PRODUCTNAME Calc] - [檢視]</link> 下加以停用。"
+msgid "If you are editing a formula with references, the references and the associated cells will be highlighted with the same color. You can now resize the reference border using the mouse, and the reference in the formula displayed in the input line also changes. <emph>Show references in color</emph> can be deactivated under <switchinline select=\"sys\"><caseinline select=\"MAC\">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline> - <link href=\"text/shared/optionen/01060300.xhp\">%PRODUCTNAME Calc - View</link>."
+msgstr "若您正在依參照編輯公式，則該參照與其相關聯之儲存格將會以相同的色彩標明。您現在即可使用滑鼠重新調整參考邊界大小，此時顯示在輸入行中公式的參照也會一併變更。<emph>[以彩色顯示參照]</emph> 可於 <switchinline select=\"sys\"><caseinline select=\"MAC\">[%PRODUCTNAME] - [喜好設定]</caseinline><defaultinline>[工具] - [選項]</defaultinline></switchinline> - <link href=\"text/shared/optionen/01060300.xhp\">[%PRODUCTNAME Calc] - [檢視]</link> 下加以停用。"
 
 #. G2WDH
 #: formula_enter.xhp
@@ -6793,23 +6802,23 @@ msgctxt ""
 msgid "<variable id=\"tip\">If you would like to view the calculation of individual elements of a formula, select the respective elements and press F9. For example, in the formula =SUM(A1:B12)*SUM(C1:D12) select the section SUM(C1:D12) and press F9 to view the subtotal for this area. </variable>"
 msgstr "<variable id=\"tip\">如果您想檢視公式個別元素的計算，請選取相應的元素並按 F9。例如，在 =SUM(A1:B12)*SUM(C1:D12) 這個公式中，您可以選取 SUM(C1:D12) 並按 F9，即可檢視此區塊的小計。</variable>"
 
-#. 3zBJH
+#. UNkCH
 #: formula_enter.xhp
 msgctxt ""
 "formula_enter.xhp\n"
 "par_id3150304\n"
 "help.text"
-msgid "If an error occurs when creating the formula, an <link href=\"text/scalc/05/02140000.xhp\" name=\"error message\">error message</link> appears in the active cell."
-msgstr "如果在您建立公式時碰到錯誤，則會顯示對應於使用中儲存格中的<link href=\"text/scalc/05/02140000.xhp\" name=\"錯誤碼\">錯誤碼</link>。"
+msgid "If an error occurs when creating the formula, an <link href=\"text/scalc/05/02140000.xhp\">error message</link> appears in the active cell."
+msgstr "如果在您建立公式時碰到錯誤，則會顯示對應於使用中儲存格中的<link href=\"text/scalc/05/02140000.xhp\">錯誤碼</link>。"
 
-#. GXy6w
+#. TMv6c
 #: formula_enter.xhp
 msgctxt ""
 "formula_enter.xhp\n"
 "par_id3152993\n"
 "help.text"
-msgid "<link href=\"text/scalc/main0206.xhp\" name=\"Formula bar\">Formula bar</link>"
-msgstr "<link href=\"text/scalc/main0206.xhp\" name=\"運算列\">運算列</link>"
+msgid "<link href=\"text/scalc/main0206.xhp\">Formula bar</link>"
+msgstr "<link href=\"text/scalc/main0206.xhp\">運算列</link>"
 
 #. a5yvD
 #: formula_value.xhp
@@ -6829,14 +6838,14 @@ msgctxt ""
 msgid "<bookmark_value>formulas; displaying in cells</bookmark_value><bookmark_value>values; displaying in tables</bookmark_value><bookmark_value>tables; displaying formulas/values</bookmark_value><bookmark_value>results display vs. formulas display</bookmark_value><bookmark_value>displaying; formulas instead of results</bookmark_value>"
 msgstr "<bookmark_value>公式; 在儲存格中顯示</bookmark_value><bookmark_value>值; 在表格中顯示</bookmark_value><bookmark_value>表格; 顯示公式/值</bookmark_value><bookmark_value>結果顯示與公式顯示</bookmark_value><bookmark_value>顯示; 公式而非結果</bookmark_value>"
 
-#. CAjGG
+#. mHXkN
 #: formula_value.xhp
 msgctxt ""
 "formula_value.xhp\n"
 "hd_id3153195\n"
 "help.text"
-msgid "<variable id=\"formula_value\"><link href=\"text/scalc/guide/formula_value.xhp\" name=\"Displaying Formulas or Values\">Displaying Formulas or Values</link></variable>"
-msgstr "<variable id=\"formula_value\"><link href=\"text/scalc/guide/formula_value.xhp\" name=\"顯示公式或數值\">顯示公式或數值</link></variable>"
+msgid "<variable id=\"formula_value\"><link href=\"text/scalc/guide/formula_value.xhp\">Displaying Formulas or Values</link></variable>"
+msgstr "<variable id=\"formula_value\"><link href=\"text/scalc/guide/formula_value.xhp\">顯示公式或數值</link></variable>"
 
 #. MeZFx
 #: formula_value.xhp
@@ -6874,14 +6883,14 @@ msgctxt ""
 msgid "If you want to view the calculation results instead of the formula, do not mark the Formulas box."
 msgstr "若要檢視計算結果而不是公式，請不要標記 [公式] 方塊。"
 
-#. iDByM
+#. a6ria
 #: formula_value.xhp
 msgctxt ""
 "formula_value.xhp\n"
 "par_id3153157\n"
 "help.text"
-msgid "<switchinline select=\"sys\"><caseinline select=\"MAC\">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline> - <link href=\"text/shared/optionen/01060100.xhp\" name=\"Spreadsheet - View\">%PRODUCTNAME Calc - View</link>"
-msgstr "<switchinline select=\"sys\"><caseinline select=\"MAC\">[%PRODUCTNAME] - [喜好設定]</caseinline><defaultinline>[工具] - [選項]</defaultinline></switchinline> - <link href=\"text/shared/optionen/01060100.xhp\" name=\"[試算表] - [檢視]\">[%PRODUCTNAME Calc] - [檢視]</link>"
+msgid "<switchinline select=\"sys\"><caseinline select=\"MAC\">%PRODUCTNAME - Preferences</caseinline><defaultinline>Tools - Options</defaultinline></switchinline> - <link href=\"text/shared/optionen/01060100.xhp\">%PRODUCTNAME Calc - View</link>"
+msgstr "<switchinline select=\"sys\"><caseinline select=\"MAC\">[%PRODUCTNAME] - [喜好設定]</caseinline><defaultinline>[工具] - [選項]</defaultinline></switchinline> - <link href=\"text/shared/optionen/01060100.xhp\">[%PRODUCTNAME Calc] - [檢視]</link>"
 
 #. xBkFL
 #: formulas.xhp
@@ -6901,14 +6910,14 @@ msgctxt ""
 msgid "<bookmark_value>formulas;calculating with</bookmark_value><bookmark_value>calculating; with formulas</bookmark_value><bookmark_value>examples;formula calculation</bookmark_value>"
 msgstr "<bookmark_value>公式; 計算</bookmark_value><bookmark_value>計算; 利用公式</bookmark_value><bookmark_value>範例; 公式計算</bookmark_value>"
 
-#. EQdXT
+#. snrES
 #: formulas.xhp
 msgctxt ""
 "formulas.xhp\n"
 "hd_id3155411\n"
 "help.text"
-msgid "<variable id=\"formulas\"><link href=\"text/scalc/guide/formulas.xhp\" name=\"Calculating With Formulas\">Calculating With Formulas</link></variable>"
-msgstr "<variable id=\"formulas\"><link href=\"text/scalc/guide/formulas.xhp\" name=\"以公式運算\">以公式運算</link></variable>"
+msgid "<variable id=\"formulas\"><link href=\"text/scalc/guide/formulas.xhp\">Calculating With Formulas</link></variable>"
+msgstr "<variable id=\"formulas\"><link href=\"text/scalc/guide/formulas.xhp\">以公式運算</link></variable>"
 
 #. iVVxK
 #: formulas.xhp
@@ -7081,23 +7090,23 @@ msgctxt ""
 msgid "It is also possible to nest functions in formulas, as shown in the example. You can also nest functions within functions. The Function Wizard assists you with nested functions."
 msgstr "還可以在公式中嵌套函式，如範例所示。您也可以在函式中嵌套函式。[函式精靈] 可以協助您使用嵌套函式。"
 
-#. CQoDo
+#. SEqap
 #: formulas.xhp
 msgctxt ""
 "formulas.xhp\n"
 "par_id3150213\n"
 "help.text"
-msgid "<link href=\"text/scalc/01/04060100.xhp\" name=\"Functions list\">Functions list</link>"
-msgstr "<link href=\"text/scalc/01/04060100.xhp\" name=\"函式清單\">函式清單</link>"
+msgid "<link href=\"text/scalc/01/04060100.xhp\">Functions list</link>"
+msgstr "<link href=\"text/scalc/01/04060100.xhp\">函式清單</link>"
 
-#. nFipB
+#. iENLX
 #: formulas.xhp
 msgctxt ""
 "formulas.xhp\n"
 "par_id3152869\n"
 "help.text"
-msgid "<link href=\"text/scalc/01/04060000.xhp\" name=\"AutoPilot: Functions\">Function Wizard</link>"
-msgstr "<link href=\"text/scalc/01/04060000.xhp\" name=\"AutoPilot：函式\">函式精靈</link>"
+msgid "<link href=\"text/scalc/01/04060000.xhp\">Function Wizard</link>"
+msgstr "<link href=\"text/scalc/01/04060000.xhp\">函式精靈</link>"
 
 #. 6XzRE
 #: fraction_enter.xhp
@@ -7117,14 +7126,14 @@ msgctxt ""
 msgid "<bookmark_value>fractions; entering</bookmark_value><bookmark_value>numbers; entering fractions </bookmark_value><bookmark_value>inserting;fractions</bookmark_value>"
 msgstr "<bookmark_value>分數; 輸入</bookmark_value><bookmark_value>數字; 輸入分數</bookmark_value><bookmark_value>插入;分數</bookmark_value>"
 
-#. ry5Y2
+#. 8YdA3
 #: fraction_enter.xhp
 msgctxt ""
 "fraction_enter.xhp\n"
 "hd_id3155411\n"
 "help.text"
-msgid "<variable id=\"fraction_enter\"><link href=\"text/scalc/guide/fraction_enter.xhp\" name=\"Entering Fractions \">Entering Fractions </link></variable>"
-msgstr "<variable id=\"fraction_enter\"><link href=\"text/scalc/guide/fraction_enter.xhp\" name=\"輸入分數\">輸入分數</link></variable>"
+msgid "<variable id=\"fraction_enter\"><link href=\"text/scalc/guide/fraction_enter.xhp\">Entering Fractions </link></variable>"
+msgstr "<variable id=\"fraction_enter\"><link href=\"text/scalc/guide/fraction_enter.xhp\">輸入分數</link></variable>"
 
 #. NEuqx
 #: fraction_enter.xhp
@@ -7180,14 +7189,14 @@ msgctxt ""
 msgid "<bookmark_value>goal seeking;example</bookmark_value><bookmark_value>equations in goal seek</bookmark_value><bookmark_value>calculating;variables in equations</bookmark_value><bookmark_value>variables;calculating equations</bookmark_value><bookmark_value>examples;goal seek</bookmark_value>"
 msgstr "<bookmark_value>目標搜尋;範例</bookmark_value><bookmark_value>目標搜尋中的方程式</bookmark_value><bookmark_value>計算;方程式中的變數</bookmark_value><bookmark_value>變數;計算方程式</bookmark_value><bookmark_value>範例;目標搜尋</bookmark_value>"
 
-#. QJcX6
+#. 2jF9G
 #: goalseek.xhp
 msgctxt ""
 "goalseek.xhp\n"
 "hd_id3145068\n"
 "help.text"
-msgid "<variable id=\"goalseek\"><link href=\"text/scalc/guide/goalseek.xhp\" name=\"Applying Goal Seek\">Applying Goal Seek</link></variable>"
-msgstr "<variable id=\"goalseek\"><link href=\"text/scalc/guide/goalseek.xhp\" name=\"使用目標搜尋\">使用目標搜尋</link></variable>"
+msgid "<variable id=\"goalseek\"><link href=\"text/scalc/guide/goalseek.xhp\">Applying Goal Seek</link></variable>"
+msgstr "<variable id=\"goalseek\"><link href=\"text/scalc/guide/goalseek.xhp\">使用目標搜尋</link></variable>"
 
 #. yeBWn
 #: goalseek.xhp
@@ -7288,14 +7297,14 @@ msgctxt ""
 msgid "A dialog appears informing you that the Goal Seek was successful. Click <emph>Yes</emph> to enter the result in the cell with the variable value."
 msgstr "螢幕上會顯示一個對話方塊通知您「目標搜尋」成功。按一下 <emph>[是]</emph> 在儲存格中輸入帶變數值的結果。"
 
-#. iMULv
+#. 6hzpw
 #: goalseek.xhp
 msgctxt ""
 "goalseek.xhp\n"
 "par_id3149409\n"
 "help.text"
-msgid "<link href=\"text/scalc/01/06040000.xhp\" name=\"Goal Seek\">Goal Seek</link>"
-msgstr "<link href=\"text/scalc/01/06040000.xhp\" name=\"目標搜尋\">目標搜尋</link>"
+msgid "<link href=\"text/scalc/01/06040000.xhp\">Goal Seek</link>"
+msgstr "<link href=\"text/scalc/01/06040000.xhp\">目標搜尋</link>"
 
 #. UhcpV
 #: html_doc.xhp
@@ -7315,14 +7324,14 @@ msgctxt ""
 msgid "<bookmark_value>HTML; sheets</bookmark_value><bookmark_value>sheets; HTML</bookmark_value><bookmark_value>saving; sheets in HTML</bookmark_value><bookmark_value>opening; sheets in HTML</bookmark_value>"
 msgstr "<bookmark_value>HTML; 試算表</bookmark_value><bookmark_value>試算表; HTML</bookmark_value><bookmark_value>儲存; HTML 中的試算表</bookmark_value><bookmark_value>開啟; HTML 中的試算表</bookmark_value>"
 
-#. aPFgV
+#. KAWf3
 #: html_doc.xhp
 msgctxt ""
 "html_doc.xhp\n"
 "hd_id3150542\n"
 "help.text"
-msgid "<variable id=\"html_doc\"><link href=\"text/scalc/guide/html_doc.xhp\" name=\"Saving and Opening Sheets in HTML\">Saving and Opening Sheets in HTML</link></variable>"
-msgstr "<variable id=\"html_doc\"><link href=\"text/scalc/guide/html_doc.xhp\" name=\"儲存和開啟 HTML 試算表\">儲存和開啟 HTML 試算表</link></variable>"
+msgid "<variable id=\"html_doc\"><link href=\"text/scalc/guide/html_doc.xhp\">Saving and Opening Sheets in HTML</link></variable>"
+msgstr "<variable id=\"html_doc\"><link href=\"text/scalc/guide/html_doc.xhp\">儲存和開啟 HTML 試算表</link></variable>"
 
 #. qFyZS
 #: html_doc.xhp
@@ -7414,23 +7423,23 @@ msgctxt ""
 msgid "All <item type=\"productname\">%PRODUCTNAME</item> Calc options are now available to you. However, not all options that <item type=\"productname\">%PRODUCTNAME</item> Calc offers for editing can be saved in HTML format."
 msgstr "這樣，您可以使用 <item type=\"productname\">%PRODUCTNAME</item> Calc 的全部選項。但並不是 <item type=\"productname\">%PRODUCTNAME</item> Calc 提供的所有編輯選項都可以儲存為 HTML 格式。"
 
-#. EVA3w
+#. jZZG4
 #: html_doc.xhp
 msgctxt ""
 "html_doc.xhp\n"
 "par_id3150370\n"
 "help.text"
-msgid "<link href=\"text/shared/01/01020000.xhp\" name=\"File - Open\">File - Open</link>"
-msgstr "<link href=\"text/shared/01/01020000.xhp\" name=\"「檔案」-「開啟舊檔」\">「檔案」-「開啟舊檔」</link>"
+msgid "<link href=\"text/shared/01/01020000.xhp\">File - Open</link>"
+msgstr "<link href=\"text/shared/01/01020000.xhp\">「檔案」-「開啟舊檔」</link>"
 
-#. ApBCr
+#. kdzh5
 #: html_doc.xhp
 msgctxt ""
 "html_doc.xhp\n"
 "par_id3150199\n"
 "help.text"
-msgid "<link href=\"text/shared/01/01070000.xhp\" name=\"File - Save As\">File - Save As</link>"
-msgstr "<link href=\"text/shared/01/01070000.xhp\" name=\"「檔案」-「另存新檔」\">「檔案」-「另存新檔」</link>"
+msgid "<link href=\"text/shared/01/01070000.xhp\">File - Save As</link>"
+msgstr "<link href=\"text/shared/01/01070000.xhp\">「檔案」-「另存新檔」</link>"
 
 #. 66Qu3
 #: integer_leading_zero.xhp
@@ -7450,14 +7459,14 @@ msgctxt ""
 msgid "<bookmark_value>zero values; entering leading zeros</bookmark_value>  <bookmark_value>numbers; with leading zeros</bookmark_value>  <bookmark_value>leading zeros</bookmark_value>  <bookmark_value>integers with leading zeros</bookmark_value>  <bookmark_value>cells; changing text/number formats</bookmark_value>  <bookmark_value>formats; changing text/number</bookmark_value>  <bookmark_value>text in cells; changing to numbers</bookmark_value>  <bookmark_value>converting;text with leading zeros, into numbers</bookmark_value>"
 msgstr "<bookmark_value>零值; 輸入前導零</bookmark_value>      <bookmark_value>數字; 前導字元為零</bookmark_value>      <bookmark_value>前導零</bookmark_value>      <bookmark_value>有前導零的整數</bookmark_value>      <bookmark_value>儲存格; 變更文字/數字格式</bookmark_value>      <bookmark_value>格式; 變更文字/數字</bookmark_value>      <bookmark_value>儲存格中的文字; 變更為數字</bookmark_value>      <bookmark_value>轉換; 具有前導零的文字, 轉換為數字</bookmark_value>"
 
-#. WJnMv
+#. KD3G4
 #: integer_leading_zero.xhp
 msgctxt ""
 "integer_leading_zero.xhp\n"
 "hd_id3147560\n"
 "help.text"
-msgid "<variable id=\"integer_leading_zero\"><link href=\"text/scalc/guide/integer_leading_zero.xhp\" name=\"Entering a Number with Leading Zeros\">Entering a Number with Leading Zeros</link></variable>"
-msgstr "<variable id=\"integer_leading_zero\"><link href=\"text/scalc/guide/integer_leading_zero.xhp\" name=\"輸入帶前導零的數字\">輸入帶前導零的數字</link></variable>"
+msgid "<variable id=\"integer_leading_zero\"><link href=\"text/scalc/guide/integer_leading_zero.xhp\">Entering a Number with Leading Zeros</link></variable>"
+msgstr "<variable id=\"integer_leading_zero\"><link href=\"text/scalc/guide/integer_leading_zero.xhp\">輸入帶前導零的數字</link></variable>"
 
 #. ZFk6Q
 #: integer_leading_zero.xhp
@@ -7576,14 +7585,14 @@ msgctxt ""
 msgid "<bookmark_value>accessibility; %PRODUCTNAME Calc shortcuts</bookmark_value><bookmark_value>shortcut keys;%PRODUCTNAME Calc accessibility</bookmark_value>"
 msgstr "<bookmark_value>協助工具; %PRODUCTNAME Calc 捷徑</bookmark_value><bookmark_value>捷徑鍵; %PRODUCTNAME Calc 協助工具</bookmark_value>"
 
-#. 5D3u4
+#. apy4f
 #: keyboard.xhp
 msgctxt ""
 "keyboard.xhp\n"
 "hd_id3145120\n"
 "help.text"
-msgid "<variable id=\"keyboard\"><link href=\"text/scalc/guide/keyboard.xhp\" name=\"Shortcut Keys (%PRODUCTNAME Calc Accessibility)\">Shortcut Keys (<item type=\"productname\">%PRODUCTNAME</item> Calc Accessibility)</link></variable>"
-msgstr "<variable id=\"keyboard\"><link href=\"text/scalc/guide/keyboard.xhp\" name=\"組合鍵 (%PRODUCTNAME Calc Accessibility)\">組合鍵 (<item type=\"productname\">%PRODUCTNAME</item> Calc 協助工具)</link></variable>"
+msgid "<variable id=\"keyboard\"><link href=\"text/scalc/guide/keyboard.xhp\">Shortcut Keys (<item type=\"productname\">%PRODUCTNAME</item> Calc Accessibility)</link></variable>"
+msgstr "<variable id=\"keyboard\"><link href=\"text/scalc/guide/keyboard.xhp\">組合鍵 (<item type=\"productname\">%PRODUCTNAME</item> Calc 協助工具)</link></variable>"
 
 #. P7WD8
 #: keyboard.xhp
@@ -7639,14 +7648,14 @@ msgctxt ""
 msgid "Controlling the Outline"
 msgstr "控制大綱"
 
-#. rBMm4
+#. CCpxA
 #: keyboard.xhp
 msgctxt ""
 "keyboard.xhp\n"
 "par_id3146120\n"
 "help.text"
-msgid "You can use the keyboard in <link href=\"text/scalc/01/12080000.xhp\" name=\"Outline\">Outline</link>:"
-msgstr "在<link href=\"text/scalc/01/12080000.xhp\" name=\"大綱\">大綱</link>中，您可以使用鍵盤："
+msgid "You can use the keyboard in <link href=\"text/scalc/01/12080000.xhp\">Outline</link>:"
+msgstr "在<link href=\"text/scalc/01/12080000.xhp\">大綱</link>中，您可以使用鍵盤："
 
 #. L9VfN
 #: keyboard.xhp
@@ -7783,14 +7792,14 @@ msgctxt ""
 msgid "<bookmark_value>tables; freezing</bookmark_value>  <bookmark_value>title rows; freezing during table split</bookmark_value>  <bookmark_value>rows; freezing</bookmark_value>  <bookmark_value>columns; freezing</bookmark_value>  <bookmark_value>freezing rows or columns</bookmark_value>  <bookmark_value>headers; freezing during table split</bookmark_value>  <bookmark_value>scrolling prevention in tables</bookmark_value>  <bookmark_value>windows; splitting</bookmark_value>  <bookmark_value>tables; splitting windows</bookmark_value>"
 msgstr "<bookmark_value>表格; 固定</bookmark_value><bookmark_value>標題列; 表格分割時固定</bookmark_value><bookmark_value>列; 固定</bookmark_value><bookmark_value>欄; 固定</bookmark_value><bookmark_value>固定; 列或欄</bookmark_value><bookmark_value>標題; 表格分割時固定</bookmark_value><bookmark_value>表格中防止捲動</bookmark_value><bookmark_value>視窗; 分割</bookmark_value><bookmark_value>表格; 分割視窗</bookmark_value>"
 
-#. 2WVYD
+#. R5isM
 #: line_fix.xhp
 msgctxt ""
 "line_fix.xhp\n"
 "hd_id3154684\n"
 "help.text"
-msgid "<variable id=\"line_fix\"><link href=\"text/scalc/guide/line_fix.xhp\" name=\"Freezing Rows or Columns as Headers\">Freezing Rows or Columns as Headers</link> </variable>"
-msgstr "<variable id=\"line_fix\"><link href=\"text/scalc/guide/line_fix.xhp\" name=\"固定列或欄為標題\">固定列或欄為標題</link></variable>"
+msgid "<variable id=\"line_fix\"><link href=\"text/scalc/guide/line_fix.xhp\">Freezing Rows or Columns as Headers</link> </variable>"
+msgstr "<variable id=\"line_fix\"><link href=\"text/scalc/guide/line_fix.xhp\">固定列或欄為標題</link></variable>"
 
 #. rQbwQ
 #: line_fix.xhp
@@ -7855,32 +7864,32 @@ msgctxt ""
 msgid "If you want to print a certain row on all pages of a document, choose <item type=\"menuitem\">Format - Print ranges - Edit</item>."
 msgstr "若您要在文件的所有頁面上列印特定列，則請使用<emph>「格式」-「列印範圍」-「編輯」。</emph>"
 
-#. Z29B7
+#. wn5VL
 #: line_fix.xhp
 msgctxt ""
 "line_fix.xhp\n"
 "par_id3147004\n"
 "help.text"
-msgid "<link href=\"text/scalc/01/07090000.xhp\" name=\"View - Freeze Cells - Freeze Rows and Columns\">View - Freeze Rows and Columns</link>"
+msgid "<link href=\"text/scalc/01/07090000.xhp\">View - Freeze Rows and Columns</link>"
 msgstr ""
 
-#. RbKLt
+#. mJABn
 #: line_fix.xhp
 msgctxt ""
 "line_fix.xhp\n"
 "par_id3150088\n"
 "help.text"
-msgid "<link href=\"text/scalc/01/07080000.xhp\" name=\"View - Split\">View - Split Window</link>"
-msgstr "<link href=\"text/scalc/01/07080000.xhp\" name=\"「視窗」-「分開」\">「視窗」-「分開」</link>"
+msgid "<link href=\"text/scalc/01/07080000.xhp\">View - Split Window</link>"
+msgstr "<link href=\"text/scalc/01/07080000.xhp\">「視窗」-「分開」</link>"
 
-#. uaqGG
+#. rLJGy
 #: line_fix.xhp
 msgctxt ""
 "line_fix.xhp\n"
 "par_id3150304\n"
 "help.text"
-msgid "<link href=\"text/scalc/01/05080300.xhp\" name=\"Format - Print ranges - Edit\">Format - Print ranges - Edit</link>"
-msgstr "<link href=\"text/scalc/01/05080300.xhp\" name=\"「格式」-「列印範圍」-「編輯」\">「格式」-「列印範圍」-「編輯」</link>"
+msgid "<link href=\"text/scalc/01/05080300.xhp\">Format - Print ranges - Edit</link>"
+msgstr "<link href=\"text/scalc/01/05080300.xhp\">「格式」-「列印範圍」-「編輯」</link>"
 
 #. JGxbG
 #: main.xhp
@@ -7900,14 +7909,14 @@ msgctxt ""
 msgid "<bookmark_value>HowTos for Calc</bookmark_value><bookmark_value>instructions; $[officename] Calc</bookmark_value>"
 msgstr "<bookmark_value>Calc 的使用方式</bookmark_value><bookmark_value>說明; $[officename] Calc</bookmark_value>"
 
-#. CDGGu
+#. Hjpmb
 #: main.xhp
 msgctxt ""
 "main.xhp\n"
 "hd_id3150770\n"
 "help.text"
-msgid "<variable id=\"main\"><link href=\"text/scalc/guide/main.xhp\" name=\"Instructions for Using $[officename] Calc\">Instructions for Using $[officename] Calc</link></variable>"
-msgstr "<variable id=\"main\"><link href=\"text/scalc/guide/main.xhp\" name=\"$[officename] Calc 的前言\">$[officename] Calc 的前言</link></variable>"
+msgid "<variable id=\"main\"><link href=\"text/scalc/guide/main.xhp\">Instructions for Using $[officename] Calc</link></variable>"
+msgstr "<variable id=\"main\"><link href=\"text/scalc/guide/main.xhp\">$[officename] Calc 的前言</link></variable>"
 
 #. izTXs
 #: main.xhp
@@ -7999,14 +8008,14 @@ msgctxt ""
 msgid "<bookmark_value>cells; selecting</bookmark_value>      <bookmark_value>marking cells</bookmark_value>      <bookmark_value>selecting;cells</bookmark_value>      <bookmark_value>multiple cells selection</bookmark_value>      <bookmark_value>selection modes in spreadsheets</bookmark_value>      <bookmark_value>tables; selecting ranges</bookmark_value>"
 msgstr "<bookmark_value>儲存格; 選取</bookmark_value>      <bookmark_value>標記儲存格</bookmark_value>      <bookmark_value>選取; 儲存格</bookmark_value>      <bookmark_value>選取多重儲存格</bookmark_value>      <bookmark_value>試算表中的選取模式</bookmark_value>      <bookmark_value>表格; 選取範圍 </bookmark_value>"
 
-#. agB5T
+#. mGHxj
 #: mark_cells.xhp
 msgctxt ""
 "mark_cells.xhp\n"
 "hd_id3153361\n"
 "help.text"
-msgid "<variable id=\"mark_cells\"><link href=\"text/scalc/guide/mark_cells.xhp\" name=\"Selecting Multiple Cells\">Selecting Multiple Cells</link></variable>"
-msgstr "<variable id=\"mark_cells\"><link href=\"text/scalc/guide/mark_cells.xhp\" name=\"選擇許多儲存格\">選擇許多儲存格</link></variable>"
+msgid "<variable id=\"mark_cells\"><link href=\"text/scalc/guide/mark_cells.xhp\">Selecting Multiple Cells</link></variable>"
+msgstr "<variable id=\"mark_cells\"><link href=\"text/scalc/guide/mark_cells.xhp\">選擇許多儲存格</link></variable>"
 
 #. DnPDm
 #: mark_cells.xhp
@@ -8188,14 +8197,14 @@ msgctxt ""
 msgid "A mouse click in a cell adds it to the already marked cells. A mouse click in a marked cell unmarks it. Alternatively, <switchinline select=\"sys\"><caseinline select=\"MAC\">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline>-click the cells."
 msgstr "在儲存格中按一下滑鼠按鈕可將其加入標記的儲存格。在標記的儲存格中按一下滑鼠按鈕即可解除標記。另外也可按住 <switchinline select=\"sys\"><caseinline select=\"MAC\">Command</caseinline><defaultinline>Ctrl</defaultinline></switchinline> 並按一下儲存格。"
 
-#. 2tZHj
+#. BBU2x
 #: mark_cells.xhp
 msgctxt ""
 "mark_cells.xhp\n"
 "par_id3154487\n"
 "help.text"
-msgid "<link href=\"text/scalc/main0208.xhp\" name=\"Status bar\">Status bar</link>"
-msgstr "<link href=\"text/scalc/main0208.xhp\" name=\"狀態列\">狀態列</link>"
+msgid "<link href=\"text/scalc/main0208.xhp\">Status bar</link>"
+msgstr "<link href=\"text/scalc/main0208.xhp\">狀態列</link>"
 
 #. AU6FR
 #: matrixformula.xhp
@@ -8215,14 +8224,14 @@ msgctxt ""
 msgid "<bookmark_value>matrices; entering matrix formulas</bookmark_value><bookmark_value>formulas; matrix formulas</bookmark_value><bookmark_value>inserting;matrix formulas</bookmark_value>"
 msgstr "<bookmark_value>矩陣; 輸入矩陣公式</bookmark_value><bookmark_value>公式; 矩陣公式</bookmark_value><bookmark_value>插入; 矩陣公式</bookmark_value>"
 
-#. vzNxD
+#. vKCkN
 #: matrixformula.xhp
 msgctxt ""
 "matrixformula.xhp\n"
 "hd_id3153969\n"
 "help.text"
-msgid "<variable id=\"matrixformula\"><link href=\"text/scalc/guide/matrixformula.xhp\" name=\"Entering Matrix Formulas\">Entering Matrix Formulas</link></variable>"
-msgstr "<variable id=\"matrixformula\"><link href=\"text/scalc/guide/matrixformula.xhp\" name=\"輸入矩陣公式\">輸入矩陣公式</link></variable>"
+msgid "<variable id=\"matrixformula\"><link href=\"text/scalc/guide/matrixformula.xhp\">Entering Matrix Formulas</link></variable>"
+msgstr "<variable id=\"matrixformula\"><link href=\"text/scalc/guide/matrixformula.xhp\">輸入矩陣公式</link></variable>"
 
 #. uo5ny
 #: matrixformula.xhp
@@ -8575,14 +8584,14 @@ msgctxt ""
 msgid "<bookmark_value>sheets; showing multiple</bookmark_value><bookmark_value>sheet tabs;using</bookmark_value><bookmark_value>views;multiple sheets</bookmark_value>"
 msgstr "<bookmark_value>試算表; 顯示多個</bookmark_value><bookmark_value>試算表分頁;使用</bookmark_value><bookmark_value>檢視;多個試算表</bookmark_value>"
 
-#. kGEYq
+#. WcDqZ
 #: multi_tables.xhp
 msgctxt ""
 "multi_tables.xhp\n"
 "hd_id3150769\n"
 "help.text"
-msgid "<variable id=\"multi_tables\"><link href=\"text/scalc/guide/multi_tables.xhp\" name=\"Navigating Through Sheet Tabs\">Navigating Through Sheet Tabs</link> </variable>"
-msgstr "<variable id=\"multi_tables\"><link href=\"text/scalc/guide/multi_tables.xhp\" name=\"瀏覽工作表分頁\">瀏覽工作表分頁</link> </variable>"
+msgid "<variable id=\"multi_tables\"><link href=\"text/scalc/guide/multi_tables.xhp\">Navigating Through Sheet Tabs</link> </variable>"
+msgstr "<variable id=\"multi_tables\"><link href=\"text/scalc/guide/multi_tables.xhp\">瀏覽工作表分頁</link> </variable>"
 
 #. Fpcz8
 #: multi_tables.xhp
@@ -8638,14 +8647,14 @@ msgctxt ""
 msgid "<bookmark_value>multiple operations</bookmark_value><bookmark_value>what if operations;two variables</bookmark_value><bookmark_value>tables; multiple operations in</bookmark_value><bookmark_value>data tables; multiple operations in</bookmark_value><bookmark_value>cross-classified tables</bookmark_value>"
 msgstr "<bookmark_value>多重運算</bookmark_value><bookmark_value>假設運算;兩個變數</bookmark_value><bookmark_value>表格;多重運算於</bookmark_value><bookmark_value>資料表格; 多重運算於</bookmark_value><bookmark_value>交叉類別表格</bookmark_value>"
 
-#. aDj8d
+#. XKeKS
 #: multioperation.xhp
 msgctxt ""
 "multioperation.xhp\n"
 "hd_id3147559\n"
 "help.text"
-msgid "<variable id=\"multioperation\"><link href=\"text/scalc/guide/multioperation.xhp\" name=\"Applying Multiple Operations\">Applying Multiple Operations</link></variable>"
-msgstr "<variable id=\"multioperation\"><link href=\"text/scalc/guide/multioperation.xhp\" name=\"套用多重運算\">套用多重運算</link></variable>"
+msgid "<variable id=\"multioperation\"><link href=\"text/scalc/guide/multioperation.xhp\">Applying Multiple Operations</link></variable>"
+msgstr "<variable id=\"multioperation\"><link href=\"text/scalc/guide/multioperation.xhp\">套用多重運算</link></variable>"
 
 #. mX8Gh
 #: multioperation.xhp
@@ -8944,14 +8953,14 @@ msgctxt ""
 msgid "Close the dialog with OK. You see the profits for the different selling prices in the range E2:H11."
 msgstr "選取 [確定] 以關閉對話方塊。您會看見範圍 E2:H11 中不同售價的利潤。"
 
-#. RDzCg
+#. fgJoa
 #: multioperation.xhp
 msgctxt ""
 "multioperation.xhp\n"
 "par_id3155104\n"
 "help.text"
-msgid "<link href=\"text/scalc/01/12060000.xhp\" name=\"Multiple operations\">Multiple operations</link>"
-msgstr "<link href=\"text/scalc/01/12060000.xhp\" name=\"多重運算\">多重運算</link>"
+msgid "<link href=\"text/scalc/01/12060000.xhp\">Multiple operations</link>"
+msgstr "<link href=\"text/scalc/01/12060000.xhp\">多重運算</link>"
 
 #. fdSJp
 #: multitables.xhp
@@ -8971,14 +8980,14 @@ msgctxt ""
 msgid "<bookmark_value>sheets; inserting</bookmark_value>      <bookmark_value>inserting; sheets</bookmark_value>      <bookmark_value>sheets; selecting multiple</bookmark_value>      <bookmark_value>appending sheets</bookmark_value>      <bookmark_value>selecting;multiple sheets</bookmark_value>      <bookmark_value>multiple sheets</bookmark_value>      <bookmark_value>calculating;multiple sheets</bookmark_value>"
 msgstr "<bookmark_value>工作表; 插入</bookmark_value>      <bookmark_value>插入; 工作表</bookmark_value>      <bookmark_value>工作表; 選取多個</bookmark_value>      <bookmark_value>附加工作表</bookmark_value>      <bookmark_value>選取; 多個工作表</bookmark_value>      <bookmark_value>多個工作表</bookmark_value>      <bookmark_value>計算; 多個工作表</bookmark_value>"
 
-#. kAW58
+#. EaKEB
 #: multitables.xhp
 msgctxt ""
 "multitables.xhp\n"
 "hd_id3154759\n"
 "help.text"
-msgid "<variable id=\"multitables\"><link href=\"text/scalc/guide/multitables.xhp\" name=\"Applying Multiple Sheets\">Applying Multiple Sheets</link></variable>"
-msgstr "<variable id=\"multitables\"><link href=\"text/scalc/guide/multitables.xhp\" name=\"套用多個工作表\">套用多個工作表</link></variable>"
+msgid "<variable id=\"multitables\"><link href=\"text/scalc/guide/multitables.xhp\">Applying Multiple Sheets</link></variable>"
+msgstr "<variable id=\"multitables\"><link href=\"text/scalc/guide/multitables.xhp\">套用多個工作表</link></variable>"
 
 #. VB2mS
 #: multitables.xhp
@@ -9115,23 +9124,23 @@ msgctxt ""
 msgid "<bookmark_value>comments; on cells</bookmark_value>      <bookmark_value>cells;comments</bookmark_value>      <bookmark_value>remarks on cells</bookmark_value>      <bookmark_value>formatting;comments on cells</bookmark_value>      <bookmark_value>viewing;comments on cells</bookmark_value>      <bookmark_value>displaying; comments</bookmark_value>"
 msgstr "<bookmark_value>評註; 在儲存格上</bookmark_value>      <bookmark_value>儲存格; 評註</bookmark_value>      <bookmark_value>儲存格上的註釋</bookmark_value>      <bookmark_value>格式化; 儲存格上的評註</bookmark_value>      <bookmark_value>檢視; 儲存格上的評註</bookmark_value>      <bookmark_value>顯示; 評註</bookmark_value>"
 
-#. YBYVe
+#. GBkCp
 #: note_insert.xhp
 msgctxt ""
 "note_insert.xhp\n"
 "hd_id3153968\n"
 "help.text"
-msgid "<variable id=\"note_insert\"><link href=\"text/scalc/guide/note_insert.xhp\" name=\"Inserting and Editing Comments\">Inserting and Editing Comments</link></variable>"
-msgstr "<variable id=\"note_insert\"><link href=\"text/scalc/guide/note_insert.xhp\" name=\"插入和編輯評註\">插入和編輯評註</link></variable>"
+msgid "<variable id=\"note_insert\"><link href=\"text/scalc/guide/note_insert.xhp\">Inserting and Editing Comments</link></variable>"
+msgstr "<variable id=\"note_insert\"><link href=\"text/scalc/guide/note_insert.xhp\">插入和編輯評註</link></variable>"
 
-#. ppiA9
+#. LT56i
 #: note_insert.xhp
 msgctxt ""
 "note_insert.xhp\n"
 "par_id3150440\n"
 "help.text"
-msgid "You can assign a comment to each cell by choosing <link href=\"text/shared/01/04050000.xhp\" name=\"Insert - Comment\"><emph>Insert - Comment</emph></link>. The comment is indicated by a small red square, the comment indicator, in the cell."
-msgstr "您可以選擇 <link href=\"text/shared/01/04050000.xhp\" name=\"[插入] - [評註]\"><emph>[插入] - [評註]</emph></link>，將評註指定給每個儲存格。此評註會以儲存格中一個小的紅色正方形表示，亦即評註標記。"
+msgid "You can assign a comment to each cell by choosing <link href=\"text/shared/01/04050000.xhp\"><emph>Insert - Comment</emph></link>. The comment is indicated by a small red square, the comment indicator, in the cell."
+msgstr "您可以選擇 <link href=\"text/shared/01/04050000.xhp\"><emph>[插入] - [評註]</emph></link>，將評註指定給每個儲存格。此評註會以儲存格中一個小的紅色正方形表示，亦即評註標記。"
 
 #. ZGJBc
 #: note_insert.xhp
@@ -9196,14 +9205,14 @@ msgctxt ""
 msgid "To display a help tip for a selected cell, use <emph>Data - Validity - Input Help</emph>."
 msgstr "若要顯示所選儲存格的說明提示，請使用<emph>[資料] - [有效] - [輸入說明]</emph>。"
 
-#. yGtBB
+#. pF67W
 #: note_insert.xhp
 msgctxt ""
 "note_insert.xhp\n"
 "par_id3153707\n"
 "help.text"
-msgid "<link href=\"text/shared/01/04050000.xhp\" name=\"Insert - Comment\">Insert - Comment</link>"
-msgstr "<link href=\"text/shared/01/04050000.xhp\" name=\"[插入] - [評註]\">[插入] - [評註]</link>"
+msgid "<link href=\"text/shared/01/04050000.xhp\">Insert - Comment</link>"
+msgstr "<link href=\"text/shared/01/04050000.xhp\">[插入] - [評註]</link>"
 
 #. 97G62
 #: numbers_text.xhp
@@ -9223,14 +9232,14 @@ msgctxt ""
 msgid "<bookmark_value>formats; text as numbers</bookmark_value>    <bookmark_value>time format conversion</bookmark_value>    <bookmark_value>date formats;conversion</bookmark_value>    <bookmark_value>converting;text, into numbers</bookmark_value>"
 msgstr ""
 
-#. pqhdm
+#. AAaGt
 #: numbers_text.xhp
 msgctxt ""
 "numbers_text.xhp\n"
 "hd_id0908200901265171\n"
 "help.text"
-msgid "<variable id=\"numbers_text\"><link href=\"text/scalc/guide/numbers_text.xhp\" name=\"Converting Text to Numbers\">Converting Text to Numbers</link></variable>"
-msgstr "<variable id=\"numbers_text\"><link href=\"text/scalc/guide/numbers_text.xhp\" name=\"Converting Text to Numbers\">將文字轉換成數字</link></variable>"
+msgid "<variable id=\"numbers_text\"><link href=\"text/scalc/guide/numbers_text.xhp\">Converting Text to Numbers</link></variable>"
+msgstr "<variable id=\"numbers_text\"><link href=\"text/scalc/guide/numbers_text.xhp\">將文字轉換成數字</link></variable>"
 
 #. rpHje
 #: numbers_text.xhp
@@ -9448,23 +9457,23 @@ msgctxt ""
 msgid "Changing the default text to number conversion settings"
 msgstr ""
 
-#. p9t4t
+#. 9NL9J
 #: numbers_text.xhp
 msgctxt ""
 "numbers_text.xhp\n"
 "par_id111567772433803\n"
 "help.text"
-msgid "The text to number conversion can be customized in the <link href=\"text/shared/optionen/detailedcalculation.xhp\" name=\"detailed_link\">Detailed Calculation Settings</link> option."
+msgid "The text to number conversion can be customized in the <link href=\"text/shared/optionen/detailedcalculation.xhp\">Detailed Calculation Settings</link> option."
 msgstr ""
 
-#. WE8wt
+#. igDCX
 #: numbers_text.xhp
 msgctxt ""
 "numbers_text.xhp\n"
 "par_id0908200901265544\n"
 "help.text"
-msgid "<link href=\"text/shared/01/05020300.xhp\" name=\"Format - Cells - Numbers\">Format - Cells - Numbers</link>"
-msgstr "<link href=\"text/shared/01/05020300.xhp\" name=\"[格式] - [儲存格] - [數字]\">[格式] - [儲存格] - [數字]</link>"
+msgid "<link href=\"text/shared/01/05020300.xhp\">Format - Cells - Numbers</link>"
+msgstr "<link href=\"text/shared/01/05020300.xhp\">[格式] - [儲存格] - [數字]</link>"
 
 #. 42xFw
 #: pivotchart.xhp
@@ -9484,22 +9493,22 @@ msgctxt ""
 msgid "<bookmark_value>chart;pivot chart</bookmark_value>        <bookmark_value>pivot table;pivot chart</bookmark_value>"
 msgstr ""
 
-#. AEE5J
+#. vGNqs
 #: pivotchart.xhp
 msgctxt ""
 "pivotchart.xhp\n"
 "hd_id141525139671420\n"
 "help.text"
-msgid "<variable id=\"pivotchart\"><link href=\"text/scalc/guide/pivotchart.xhp\" name=\"Pivot Chart\">Pivot Chart</link></variable>"
+msgid "<variable id=\"pivotchart\"><link href=\"text/scalc/guide/pivotchart.xhp\">Pivot Chart</link></variable>"
 msgstr ""
 
-#. 7LinF
+#. 9ZWLh
 #: pivotchart.xhp
 msgctxt ""
 "pivotchart.xhp\n"
 "par_id291525139878423\n"
 "help.text"
-msgid "A pivot chart is a chart with data range and data series of a <link href=\"text/scalc/guide/datapilot.xhp\" name=\"Pivot Table\">pivot table</link>."
+msgid "A pivot chart is a chart with data range and data series of a <link href=\"text/scalc/guide/datapilot.xhp\">pivot table</link>."
 msgstr ""
 
 #. VMZRC
@@ -9520,13 +9529,13 @@ msgctxt ""
 msgid "Pivot charts track the changes in the data issued from a pivot table and adjust the data series and data range accordingly."
 msgstr ""
 
-#. mZV4m
+#. jvYUC
 #: pivotchart.xhp
 msgctxt ""
 "pivotchart.xhp\n"
 "par_id191525177790601\n"
 "help.text"
-msgid "<link href=\"https://tomazvajngerl.blogspot.com/2017/03/pivot-charts-in-libreoffice-part-1.html\" name=\"Tomaž Vajngerl blog\">Technical details on %PRODUCTNAME pivot chart implementation</link>."
+msgid "<link href=\"https://tomazvajngerl.blogspot.com/2017/03/pivot-charts-in-libreoffice-part-1.html\">Technical details on %PRODUCTNAME pivot chart implementation</link>."
 msgstr ""
 
 #. D4FkY
@@ -9547,13 +9556,13 @@ msgctxt ""
 msgid "<bookmark_value>pivot chart;creating</bookmark_value>"
 msgstr ""
 
-#. LGXm7
+#. yyM9q
 #: pivotchart_create.xhp
 msgctxt ""
 "pivotchart_create.xhp\n"
 "hd_id441525141699185\n"
 "help.text"
-msgid "<variable id=\"pivotchartcreate\"><link href=\"text/scalc/guide/pivotchart_create.xhp\" name=\"pivot chart create\">Creating Pivot Charts</link></variable>"
+msgid "<variable id=\"pivotchartcreate\"><link href=\"text/scalc/guide/pivotchart_create.xhp\">Creating Pivot Charts</link></variable>"
 msgstr ""
 
 #. UuRST
@@ -9592,13 +9601,13 @@ msgctxt ""
 msgid "%PRODUCTNAME Calc automatically detects the pivot table and opens the pivot chart wizard."
 msgstr ""
 
-#. q3cHS
+#. 4WYiS
 #: pivotchart_create.xhp
 msgctxt ""
 "pivotchart_create.xhp\n"
 "par_id861525140391601\n"
 "help.text"
-msgid "Select the <link href=\"text/schart/01/wiz_chart_type.xhp\" name=\"Chart type\">Chart type</link> for the data in the chart wizard."
+msgid "Select the <link href=\"text/schart/01/wiz_chart_type.xhp\">Chart type</link> for the data in the chart wizard."
 msgstr ""
 
 #. DkotR
@@ -9610,13 +9619,13 @@ msgctxt ""
 msgid "The data range and the data series pages of the chart wizard are not enabled. They are controlled by the pivot table."
 msgstr ""
 
-#. 6tkMF
+#. c3MzL
 #: pivotchart_create.xhp
 msgctxt ""
 "pivotchart_create.xhp\n"
 "par_id511525140411625\n"
 "help.text"
-msgid "Select the <link href=\"text/schart/01/wiz_chart_elements.xhp\" name=\"Chart elements\">Chart Elements</link> of the pivot chart in the wizard."
+msgid "Select the <link href=\"text/schart/01/wiz_chart_elements.xhp\">Chart Elements</link> of the pivot chart in the wizard."
 msgstr ""
 
 #. DiBBF
@@ -9637,13 +9646,13 @@ msgctxt ""
 msgid "Deleting Pivot Charts"
 msgstr ""
 
-#. BEj4o
+#. 4gxme
 #: pivotchart_delete.xhp
 msgctxt ""
 "pivotchart_delete.xhp\n"
 "hd_id231525147891984\n"
 "help.text"
-msgid "<variable id=\"pivotchartdelete\"><link href=\"text/scalc/guide/pivotchart_delete.xhp\" name=\"Deleting a Pivot Chart\">Deleting a Pivot Chart</link></variable>"
+msgid "<variable id=\"pivotchartdelete\"><link href=\"text/scalc/guide/pivotchart_delete.xhp\">Deleting a Pivot Chart</link></variable>"
 msgstr ""
 
 #. GRQDA
@@ -9700,13 +9709,13 @@ msgctxt ""
 msgid "<bookmark_value>pivot chart;editing</bookmark_value>"
 msgstr ""
 
-#. fEdDB
+#. tCuUT
 #: pivotchart_edit.xhp
 msgctxt ""
 "pivotchart_edit.xhp\n"
 "hd_id271525144002806\n"
 "help.text"
-msgid "<variable id=\"pivotchartedit\"><link href=\"text/scalc/guide/pivotchart_edit.xhp\" name=\"Pivot Chart Editing\">Editing Pivot Charts</link></variable>"
+msgid "<variable id=\"pivotchartedit\"><link href=\"text/scalc/guide/pivotchart_edit.xhp\">Editing Pivot Charts</link></variable>"
 msgstr ""
 
 #. tyqEE
@@ -9736,22 +9745,22 @@ msgctxt ""
 msgid "Filtering Pivot Charts"
 msgstr ""
 
-#. 83phF
+#. BQj5B
 #: pivotchart_filter.xhp
 msgctxt ""
 "pivotchart_filter.xhp\n"
 "hd_id401525165755583\n"
 "help.text"
-msgid "<variable id=\"pivotchartfilter\"><link href=\"text/scalc/guide/pivotchart_filter.xhp\" name=\"Filtering Pivot Charts\">Filtering Pivot Charts</link></variable>"
+msgid "<variable id=\"pivotchartfilter\"><link href=\"text/scalc/guide/pivotchart_filter.xhp\">Filtering Pivot Charts</link></variable>"
 msgstr ""
 
-#. rByFE
+#. AkGAs
 #: pivotchart_filter.xhp
 msgctxt ""
 "pivotchart_filter.xhp\n"
 "par_id781525166702239\n"
 "help.text"
-msgid "Filters are used to remove unwanted data from the pivot chart. You can use filters in the pivot chart or in the corresponding <link href=\"text/scalc/guide/datapilot_filtertable.xhp\" name=\"Pivot table filtering\">pivot table</link>, since the resulting chart is exactly the same."
+msgid "Filters are used to remove unwanted data from the pivot chart. You can use filters in the pivot chart or in the corresponding <link href=\"text/scalc/guide/datapilot_filtertable.xhp\">pivot table</link>, since the resulting chart is exactly the same."
 msgstr ""
 
 #. n2tCy
@@ -9817,13 +9826,13 @@ msgctxt ""
 msgid "<bookmark_value>pivot chart;update</bookmark_value>"
 msgstr ""
 
-#. uViPN
+#. XvU7B
 #: pivotchart_update.xhp
 msgctxt ""
 "pivotchart_update.xhp\n"
 "hd_id281525146417678\n"
 "help.text"
-msgid "<variable id=\"pivotchartupdate\"><link href=\"text/scalc/guide/pivotchart_update.xhp\" name=\"Pivot Chart Update\">Updating Pivot Charts</link></variable>"
+msgid "<variable id=\"pivotchartupdate\"><link href=\"text/scalc/guide/pivotchart_update.xhp\">Updating Pivot Charts</link></variable>"
 msgstr ""
 
 #. JmbEt
@@ -9871,14 +9880,14 @@ msgctxt ""
 msgid "<bookmark_value>printing;sheet details</bookmark_value><bookmark_value>sheets; printing details</bookmark_value><bookmark_value>grids; printing sheet grids</bookmark_value><bookmark_value>formulas; printing, instead of results</bookmark_value><bookmark_value>comments; printing</bookmark_value><bookmark_value>charts;printing</bookmark_value><bookmark_value>sheet grids; printing</bookmark_value><bookmark_value>cells; printing grids</bookmark_value><bookmark_value>borders; printing cells</bookmark_value><bookmark_value>zero values; printing</bookmark_value><bookmark_value>null values; printing</bookmark_value><bookmark_value>draw objects;printing</bookmark_value>"
 msgstr "<bookmark_value>列印; 工作表詳細資訊</bookmark_value><bookmark_value>工作表; 列印詳細資訊</bookmark_value><bookmark_value>網格; 列印工作表網格</bookmark_value><bookmark_value>公式; 列印, 非結果</bookmark_value><bookmark_value>評註; 列印</bookmark_value><bookmark_value>圖表; 列印</bookmark_value><bookmark_value>工作表網格; 列印</bookmark_value><bookmark_value>儲存格; 列印網格</bookmark_value><bookmark_value>邊框; 列印儲存格</bookmark_value><bookmark_value>零值; 列印</bookmark_value><bookmark_value>空值; 列印</bookmark_value><bookmark_value>繪圖物件; 列印</bookmark_value>"
 
-#. cqFyW
+#. ikmor
 #: print_details.xhp
 msgctxt ""
 "print_details.xhp\n"
 "hd_id3154346\n"
 "help.text"
-msgid "<variable id=\"print_details\"><link href=\"text/scalc/guide/print_details.xhp\" name=\"Printing Sheet Details\">Printing Sheet Details</link></variable>"
-msgstr "<variable id=\"print_details\"><link href=\"text/scalc/guide/print_details.xhp\" name=\"列印試算表細節\">列印試算表細節</link></variable>"
+msgid "<variable id=\"print_details\"><link href=\"text/scalc/guide/print_details.xhp\">Printing Sheet Details</link></variable>"
+msgstr "<variable id=\"print_details\"><link href=\"text/scalc/guide/print_details.xhp\">列印試算表細節</link></variable>"
 
 #. hGEFc
 #: print_details.xhp
@@ -10006,14 +10015,14 @@ msgctxt ""
 msgid "Print the document."
 msgstr "請列印此文件。"
 
-#. jKV72
+#. TSBnz
 #: print_details.xhp
 msgctxt ""
 "print_details.xhp\n"
 "par_id3150345\n"
 "help.text"
-msgid "<link href=\"text/scalc/01/03100000.xhp\" name=\"View - Page Break\">View - Page Break</link>"
-msgstr "<link href=\"text/scalc/01/03100000.xhp\" name=\"「檢視」-「分頁預覽」\">「檢視」-「分頁預覽」</link>"
+msgid "<link href=\"text/scalc/01/03100000.xhp\">View - Page Break</link>"
+msgstr "<link href=\"text/scalc/01/03100000.xhp\">「檢視」-「分頁預覽」</link>"
 
 #. AgAiH
 #: print_exact.xhp
@@ -10033,14 +10042,14 @@ msgctxt ""
 msgid "<bookmark_value>printing; sheet counts</bookmark_value><bookmark_value>sheets; printing sheet counts</bookmark_value><bookmark_value>page breaks; spreadsheet preview</bookmark_value><bookmark_value>editing;print ranges</bookmark_value><bookmark_value>viewing;print ranges</bookmark_value><bookmark_value>previews;page breaks for printing</bookmark_value>"
 msgstr "<bookmark_value>列印; 試算表計數</bookmark_value><bookmark_value>試算表; 列印試算表計數</bookmark_value><bookmark_value>分頁; 試算表預覽</bookmark_value><bookmark_value>編輯;列印範圍</bookmark_value><bookmark_value>檢視;列印範圍</bookmark_value><bookmark_value>預覽;列印的分頁</bookmark_value>"
 
-#. 6Wsn5
+#. FEWmm
 #: print_exact.xhp
 msgctxt ""
 "print_exact.xhp\n"
 "hd_id3153194\n"
 "help.text"
-msgid "<variable id=\"print_exact\"><link href=\"text/scalc/guide/print_exact.xhp\" name=\"Defining Number of Pages for Printing\">Defining Number of Pages for Printing</link></variable>"
-msgstr "<variable id=\"print_exact\"><link href=\"text/scalc/guide/print_exact.xhp\" name=\"設定精準列印頁數\">設定精準列印頁數</link></variable>"
+msgid "<variable id=\"print_exact\"><link href=\"text/scalc/guide/print_exact.xhp\">Defining Number of Pages for Printing</link></variable>"
+msgstr "<variable id=\"print_exact\"><link href=\"text/scalc/guide/print_exact.xhp\">設定精準列印頁數</link></variable>"
 
 #. 8omBt
 #: print_exact.xhp
@@ -10087,14 +10096,14 @@ msgctxt ""
 msgid "You can move the blue lines with the mouse. You will find further options in the Context menu, including adding an additional print range, removing the scaling and inserting additional manual line and column breaks."
 msgstr "您可使用滑鼠移動藍線。右鍵功能表中可找到更多選項，包括增加其他列印範圍、移除比例縮放以及插入其他手動斷列和斷欄。"
 
-#. yfroe
+#. pv9mo
 #: print_exact.xhp
 msgctxt ""
 "print_exact.xhp\n"
 "par_id3151073\n"
 "help.text"
-msgid "<link href=\"text/scalc/01/03100000.xhp\" name=\"View - Page Break\">View - Page Break</link>"
-msgstr "<link href=\"text/scalc/01/03100000.xhp\" name=\"「檢視」-「分頁預覽」\">「檢視」-「分頁預覽」</link>"
+msgid "<link href=\"text/scalc/01/03100000.xhp\">View - Page Break</link>"
+msgstr "<link href=\"text/scalc/01/03100000.xhp\">「檢視」-「分頁預覽」</link>"
 
 #. ruFna
 #: print_landscape.xhp
@@ -10114,14 +10123,14 @@ msgctxt ""
 msgid "<bookmark_value>printing; sheet selections</bookmark_value>      <bookmark_value>sheets; printing in landscape</bookmark_value>      <bookmark_value>printing; landscape</bookmark_value>      <bookmark_value>landscape printing</bookmark_value>"
 msgstr "<bookmark_value>列印; 試算表選取</bookmark_value><bookmark_value>試算表; 橫向列印</bookmark_value><bookmark_value>列印; 橫向</bookmark_value><bookmark_value>橫向列印</bookmark_value>"
 
-#. ff6kb
+#. Yw45t
 #: print_landscape.xhp
 msgctxt ""
 "print_landscape.xhp\n"
 "hd_id3153418\n"
 "help.text"
-msgid "<variable id=\"print_landscape\"><link href=\"text/scalc/guide/print_landscape.xhp\" name=\"Printing Sheets in Landscape Format\">Printing Sheets in Landscape Format</link></variable>"
-msgstr "<variable id=\"print_landscape\"><link href=\"text/scalc/guide/print_landscape.xhp\" name=\"以橫向格式列印工作表\">以橫向格式列印工作表</link></variable>"
+msgid "<variable id=\"print_landscape\"><link href=\"text/scalc/guide/print_landscape.xhp\">Printing Sheets in Landscape Format</link></variable>"
+msgstr "<variable id=\"print_landscape\"><link href=\"text/scalc/guide/print_landscape.xhp\">以橫向格式列印工作表</link></variable>"
 
 #. Ce8BB
 #: print_landscape.xhp
@@ -10267,14 +10276,14 @@ msgctxt ""
 msgid "If under <emph>Format - Print ranges</emph> you have defined one or more print ranges, only the contents of these print ranges will be printed."
 msgstr "如果您在<emph>[格式] - [列印範圍]</emph>下已定義了一個或多個列印範圍，則只會列印這些列印範圍中的內容。"
 
-#. EVXcd
+#. DHHJg
 #: print_landscape.xhp
 msgctxt ""
 "print_landscape.xhp\n"
 "par_id3156019\n"
 "help.text"
-msgid "<link href=\"text/scalc/01/03100000.xhp\" name=\"View - Page Break\">View - Page Break</link>"
-msgstr "<link href=\"text/scalc/01/03100000.xhp\" name=\"「檢視」-「分頁預覽」\">「檢視」-「分頁預覽」</link>"
+msgid "<link href=\"text/scalc/01/03100000.xhp\">View - Page Break</link>"
+msgstr "<link href=\"text/scalc/01/03100000.xhp\">「檢視」-「分頁預覽」</link>"
 
 #. vbjmr
 #: print_landscape.xhp
@@ -10303,14 +10312,14 @@ msgctxt ""
 msgid "<bookmark_value>printing; sheets on multiple pages</bookmark_value><bookmark_value>sheets; printing on multiple pages</bookmark_value><bookmark_value>rows; repeating when printing</bookmark_value><bookmark_value>columns; repeating when printing</bookmark_value><bookmark_value>repeating;columns/rows on printed pages</bookmark_value><bookmark_value>title rows; printing on all sheets</bookmark_value><bookmark_value>headers; printing on sheets</bookmark_value><bookmark_value>footers; printing on sheets</bookmark_value><bookmark_value>printing; rows/columns as table headings</bookmark_value><bookmark_value>headings;repeating rows/columns as</bookmark_value>"
 msgstr "<bookmark_value>列印; 分佈多頁的試算表</bookmark_value><bookmark_value>試算表; 列印在多頁</bookmark_value><bookmark_value>列; 列印時重複</bookmark_value><bookmark_value>欄; 列印時重複</bookmark_value><bookmark_value>重複; 列印頁上的欄/列</bookmark_value><bookmark_value>標題列; 列印在所有試算表上</bookmark_value><bookmark_value>頁首; 列印在試算表上</bookmark_value><bookmark_value>頁尾; 列印在試算表上</bookmark_value><bookmark_value>列印; 將列/欄做為表格標題</bookmark_value><bookmark_value>標題; 重複列/欄為</bookmark_value>"
 
-#. GaFEB
+#. BsWC9
 #: print_title_row.xhp
 msgctxt ""
 "print_title_row.xhp\n"
 "hd_id3153727\n"
 "help.text"
-msgid "<variable id=\"print_title_row\"><link href=\"text/scalc/guide/print_title_row.xhp\" name=\"Printing Rows or Columns on Every Page\">Printing Rows or Columns on Every Page</link></variable>"
-msgstr "<variable id=\"print_title_row\"><link href=\"text/scalc/guide/print_title_row.xhp\" name=\"每頁列印出列或欄\">每頁列印出列或欄</link></variable>"
+msgid "<variable id=\"print_title_row\"><link href=\"text/scalc/guide/print_title_row.xhp\">Printing Rows or Columns on Every Page</link></variable>"
+msgstr "<variable id=\"print_title_row\"><link href=\"text/scalc/guide/print_title_row.xhp\">每頁列印出列或欄</link></variable>"
 
 #. kzA5T
 #: print_title_row.xhp
@@ -10420,31 +10429,31 @@ msgctxt ""
 msgid "Rows to repeat are rows from the sheet. You can define headers and footers to be printed on each print page independently of this in <emph>Format - Page Style</emph>."
 msgstr ""
 
-#. b42kP
+#. PX4LE
 #: print_title_row.xhp
 msgctxt ""
 "print_title_row.xhp\n"
 "par_id3155380\n"
 "help.text"
-msgid "<link href=\"text/scalc/01/03100000.xhp\" name=\"View - Page Break Preview\">View - Page Break Preview</link>"
-msgstr "<link href=\"text/scalc/01/03100000.xhp\" name=\"「檢視」-「分頁預覽」\">「檢視」-「分頁預覽」</link>"
+msgid "<link href=\"text/scalc/01/03100000.xhp\">View - Page Break Preview</link>"
+msgstr "<link href=\"text/scalc/01/03100000.xhp\">「檢視」-「分頁預覽」</link>"
 
-#. uExLf
+#. vccDH
 #: print_title_row.xhp
 msgctxt ""
 "print_title_row.xhp\n"
 "par_id3154371\n"
 "help.text"
-msgid "<link href=\"text/scalc/01/05080300.xhp\" name=\"Format - Print ranges - Edit\">Format - Print ranges - Edit</link>"
-msgstr "<link href=\"text/scalc/01/05080300.xhp\" name=\"「格式」-「列印範圍」-「編輯」\">「格式」-「列印範圍」-「編輯」</link>"
+msgid "<link href=\"text/scalc/01/05080300.xhp\">Format - Print ranges - Edit</link>"
+msgstr "<link href=\"text/scalc/01/05080300.xhp\">「格式」-「列印範圍」-「編輯」</link>"
 
-#. EhgS7
+#. 9zjha
 #: print_title_row.xhp
 msgctxt ""
 "print_title_row.xhp\n"
 "par_id3146113\n"
 "help.text"
-msgid "<link href=\"text/scalc/01/05070000.xhp\" name=\"Format - Page Style - (Header / Footer)\">Format - Page Style - (Header / Footer)</link>"
+msgid "<link href=\"text/scalc/01/05070000.xhp\">Format - Page Style - (Header / Footer)</link>"
 msgstr ""
 
 #. AK3vB
@@ -10699,14 +10708,14 @@ msgctxt ""
 msgid "<bookmark_value>addressing; relative and absolute</bookmark_value><bookmark_value>references; absolute/relative</bookmark_value><bookmark_value>absolute addresses in spreadsheets</bookmark_value><bookmark_value>relative addresses</bookmark_value><bookmark_value>absolute references in spreadsheets</bookmark_value><bookmark_value>relative references</bookmark_value><bookmark_value>references; to cells</bookmark_value><bookmark_value>cells; references</bookmark_value>"
 msgstr "<bookmark_value>試算表文件中的位址</bookmark_value><bookmark_value>參照; 絕對/相對</bookmark_value><bookmark_value>試算表中的絕對位址</bookmark_value><bookmark_value>相對位址</bookmark_value><bookmark_value>試算表中的絕對參照</bookmark_value><bookmark_value>相對參照</bookmark_value><bookmark_value>參照; 至儲存格</bookmark_value><bookmark_value>參照; 以顏色標記</bookmark_value><bookmark_value>儲存格; 參照</bookmark_value>"
 
-#. hMp78
+#. SCMmK
 #: relativ_absolut_ref.xhp
 msgctxt ""
 "relativ_absolut_ref.xhp\n"
 "hd_id3156423\n"
 "help.text"
-msgid "<variable id=\"relativ_absolut_ref\"><link href=\"text/scalc/guide/relativ_absolut_ref.xhp\" name=\"Addresses and References, Absolute and Relative\">Addresses and References, Absolute and Relative</link></variable>"
-msgstr "<variable id=\"relativ_absolut_ref\"><link href=\"text/scalc/guide/relativ_absolut_ref.xhp\" name=\"位址和參照, 絕對和相對\">位址和參照, 絕對和相對</link></variable>"
+msgid "<variable id=\"relativ_absolut_ref\"><link href=\"text/scalc/guide/relativ_absolut_ref.xhp\">Addresses and References, Absolute and Relative</link></variable>"
+msgstr "<variable id=\"relativ_absolut_ref\"><link href=\"text/scalc/guide/relativ_absolut_ref.xhp\">位址和參照, 絕對和相對</link></variable>"
 
 #. 6AVDc
 #: relativ_absolut_ref.xhp
@@ -10834,13 +10843,13 @@ msgctxt ""
 msgid "<bookmark_value>filters; removing duplicates</bookmark_value>    <bookmark_value>filters; finding unique values</bookmark_value>"
 msgstr ""
 
-#. Q5494
+#. HAqBY
 #: remove_duplicates.xhp
 msgctxt ""
 "remove_duplicates.xhp\n"
 "hd_id501630021281902\n"
 "help.text"
-msgid "<variable id=\"filters\"><link href=\"text/scalc/guide/remove_duplicates.xhp\" name=\"Duplicates_h1\">Removing Duplicate Values</link></variable>"
+msgid "<variable id=\"filters\"><link href=\"text/scalc/guide/remove_duplicates.xhp\">Removing Duplicate Values</link></variable>"
 msgstr ""
 
 #. ocizx
@@ -10861,13 +10870,13 @@ msgctxt ""
 msgid "Select the range of values from which duplicate values are to be removed. The values have to be arranged in a single column."
 msgstr ""
 
-#. 7fDQ9
+#. WA3SF
 #: remove_duplicates.xhp
 msgctxt ""
 "remove_duplicates.xhp\n"
 "par_id31630021517873\n"
 "help.text"
-msgid "Go to <menuitem>Data - More Filters - Standard Filter</menuitem>. This opens the <link href=\"text/shared/02/12090100.xhp\" name=\"std_dialog_link\"> Standard Filter</link> dialog."
+msgid "Go to <menuitem>Data - More Filters - Standard Filter</menuitem>. This opens the <link href=\"text/shared/02/12090100.xhp\"> Standard Filter</link> dialog."
 msgstr ""
 
 #. EVEzq
@@ -10951,14 +10960,14 @@ msgctxt ""
 msgid "<bookmark_value>renaming;sheets</bookmark_value>      <bookmark_value>sheet tabs;renaming</bookmark_value>      <bookmark_value>tables;renaming</bookmark_value>      <bookmark_value>names; sheets</bookmark_value>"
 msgstr "<bookmark_value>重新命名; 工作表</bookmark_value>      <bookmark_value>工作表分頁; 重新命名</bookmark_value>      <bookmark_value>表格; 重新命名</bookmark_value>      <bookmark_value>名稱; 工作表</bookmark_value>"
 
-#. Ussbk
+#. vikAG
 #: rename_table.xhp
 msgctxt ""
 "rename_table.xhp\n"
 "hd_id3150398\n"
 "help.text"
-msgid "<variable id=\"rename_table\"><link href=\"text/scalc/guide/rename_table.xhp\" name=\"Renaming Sheets\">Renaming Sheets</link></variable>"
-msgstr "<variable id=\"rename_table\"><link href=\"text/scalc/guide/rename_table.xhp\" name=\"重新命名試算表\">重新命名試算表</link></variable>"
+msgid "<variable id=\"rename_table\"><link href=\"text/scalc/guide/rename_table.xhp\">Renaming Sheets</link></variable>"
+msgstr "<variable id=\"rename_table\"><link href=\"text/scalc/guide/rename_table.xhp\">重新命名試算表</link></variable>"
 
 #. zEnG4
 #: rename_table.xhp
@@ -11194,14 +11203,14 @@ msgctxt ""
 msgid "<bookmark_value>numbers; rounded off</bookmark_value><bookmark_value>rounded off numbers</bookmark_value><bookmark_value>exact numbers in $[officename] Calc</bookmark_value><bookmark_value>decimal places; showing</bookmark_value><bookmark_value>changing;number of decimal places</bookmark_value><bookmark_value>values;rounded in calculations</bookmark_value><bookmark_value>calculating;rounded off values</bookmark_value><bookmark_value>numbers; decimal places</bookmark_value><bookmark_value>precision as shown</bookmark_value><bookmark_value>rounding precision</bookmark_value><bookmark_value>spreadsheets; values as shown</bookmark_value>"
 msgstr "<bookmark_value>數字; 四捨五入</bookmark_value><bookmark_value>四捨五入數字</bookmark_value><bookmark_value>$[officename] Calc 中的實際數字</bookmark_value><bookmark_value>小數點位數; 顯示</bookmark_value><bookmark_value>變更; 小數點位數</bookmark_value><bookmark_value>值; 於計算中捨入</bookmark_value><bookmark_value>計算; 四捨五入值</bookmark_value><bookmark_value>數字; 小數點位數</bookmark_value><bookmark_value>顯示的精度</bookmark_value><bookmark_value>捨入精度</bookmark_value><bookmark_value>試算表中; 顯示的值</bookmark_value>"
 
-#. K5BPL
+#. NXSGA
 #: rounding_numbers.xhp
 msgctxt ""
 "rounding_numbers.xhp\n"
 "hd_id3156422\n"
 "help.text"
-msgid "<variable id=\"rounding_numbers\"><link href=\"text/scalc/guide/rounding_numbers.xhp\" name=\"Using Rounded Off Numbers\">Using Rounded Off Numbers</link></variable>"
-msgstr "<variable id=\"rounding_numbers\"><link href=\"text/scalc/guide/rounding_numbers.xhp\" name=\"使用四捨五入的數子\">使用四捨五入的數子</link></variable>"
+msgid "<variable id=\"rounding_numbers\"><link href=\"text/scalc/guide/rounding_numbers.xhp\">Using Rounded Off Numbers</link></variable>"
+msgstr "<variable id=\"rounding_numbers\"><link href=\"text/scalc/guide/rounding_numbers.xhp\">使用四捨五入的數子</link></variable>"
 
 #. dJpQD
 #: rounding_numbers.xhp
@@ -11302,23 +11311,23 @@ msgctxt ""
 msgid "Go to the <emph>Calculate</emph> page. Mark the <emph>Precision as shown</emph> field and exit the dialog with OK."
 msgstr "移至 <emph>[計算]</emph> 頁面。標記 <emph>[顯示的精確度]</emph> 欄位，然後按一下 [確定] 結束對話方塊。"
 
-#. qp8h5
+#. N6TMC
 #: rounding_numbers.xhp
 msgctxt ""
 "rounding_numbers.xhp\n"
 "par_id3145790\n"
 "help.text"
-msgid "<link href=\"text/shared/01/05020300.xhp\" name=\"Numbers\">Numbers</link>"
-msgstr "<link href=\"text/shared/01/05020300.xhp\" name=\"「數字」\">「數字」</link>"
+msgid "<link href=\"text/shared/01/05020300.xhp\">Numbers</link>"
+msgstr "<link href=\"text/shared/01/05020300.xhp\">「數字」</link>"
 
-#. AoZCy
+#. GMiBZ
 #: rounding_numbers.xhp
 msgctxt ""
 "rounding_numbers.xhp\n"
 "par_id3147005\n"
 "help.text"
-msgid "<link href=\"text/shared/optionen/01060500.xhp\" name=\"Calculate\">Calculate</link>"
-msgstr "<link href=\"text/shared/optionen/01060500.xhp\" name=\"選項標籤「計算」\">選項標籤「計算」</link>"
+msgid "<link href=\"text/shared/optionen/01060500.xhp\">Calculate</link>"
+msgstr "<link href=\"text/shared/optionen/01060500.xhp\">選項標籤「計算」</link>"
 
 #. 2CXMu
 #: row_height.xhp
@@ -11338,14 +11347,14 @@ msgctxt ""
 msgid "<bookmark_value>heights of cells</bookmark_value><bookmark_value>cell heights</bookmark_value><bookmark_value>cell widths</bookmark_value><bookmark_value>cells; heights and widths</bookmark_value><bookmark_value>widths of cells</bookmark_value><bookmark_value>column widths</bookmark_value><bookmark_value>rows; heights</bookmark_value><bookmark_value>columns; widths</bookmark_value><bookmark_value>changing;row heights/column widths</bookmark_value>"
 msgstr "<bookmark_value>儲存格的高度</bookmark_value><bookmark_value>儲存格高度</bookmark_value><bookmark_value>儲存格寬度</bookmark_value><bookmark_value>儲存格; 高度和寬度</bookmark_value><bookmark_value>儲存格的寬度</bookmark_value><bookmark_value>欄寬</bookmark_value><bookmark_value>列; 高度</bookmark_value><bookmark_value>欄; 寬度</bookmark_value><bookmark_value>變更;列高/欄寬</bookmark_value>"
 
-#. ZhKE7
+#. zRnfd
 #: row_height.xhp
 msgctxt ""
 "row_height.xhp\n"
 "hd_id3145748\n"
 "help.text"
-msgid "<variable id=\"row_height\"><link href=\"text/scalc/guide/row_height.xhp\" name=\"Changing Row Height or Column Width\">Changing Row Height or Column Width</link></variable>"
-msgstr "<variable id=\"row_height\"><link href=\"text/scalc/guide/row_height.xhp\" name=\"變更列高或欄寬\">變更列高或欄寬</link></variable>"
+msgid "<variable id=\"row_height\"><link href=\"text/scalc/guide/row_height.xhp\">Changing Row Height or Column Width</link></variable>"
+msgstr "<variable id=\"row_height\"><link href=\"text/scalc/guide/row_height.xhp\">變更列高或欄寬</link></variable>"
 
 #. NXeZU
 #: row_height.xhp
@@ -11428,41 +11437,41 @@ msgctxt ""
 msgid "You will see the commands <emph>Row Height</emph> and <emph>Optimal row height</emph>. Choosing either opens a dialog."
 msgstr "您會看到 <emph>[列高]</emph> 和 <emph>[最適列高]</emph> 命令。兩者選擇後都會開啟對話方塊。"
 
-#. XZYSf
+#. LcbwQ
 #: row_height.xhp
 msgctxt ""
 "row_height.xhp\n"
 "par_id3154487\n"
 "help.text"
-msgid "<link href=\"text/shared/01/05340100.xhp\" name=\"Row height\">Row height</link>"
-msgstr "<link href=\"text/shared/01/05340100.xhp\" name=\"列高\">列高</link>"
+msgid "<link href=\"text/shared/01/05340100.xhp\">Row height</link>"
+msgstr "<link href=\"text/shared/01/05340100.xhp\">列高</link>"
 
-#. ftbnx
+#. uc7yU
 #: row_height.xhp
 msgctxt ""
 "row_height.xhp\n"
 "par_id3149408\n"
 "help.text"
-msgid "<link href=\"text/scalc/01/05030200.xhp\" name=\"Optimal row height\">Optimal row height</link>"
-msgstr "<link href=\"text/scalc/01/05030200.xhp\" name=\"最適列高\">最適列高</link>"
+msgid "<link href=\"text/scalc/01/05030200.xhp\">Optimal row height</link>"
+msgstr "<link href=\"text/scalc/01/05030200.xhp\">最適列高</link>"
 
-#. BJtSN
+#. K8Xsr
 #: row_height.xhp
 msgctxt ""
 "row_height.xhp\n"
 "par_id3153305\n"
 "help.text"
-msgid "<link href=\"text/shared/01/05340200.xhp\" name=\"Column width\">Column width</link>"
-msgstr "<link href=\"text/shared/01/05340200.xhp\" name=\"欄寬\">欄寬</link>"
+msgid "<link href=\"text/shared/01/05340200.xhp\">Column width</link>"
+msgstr "<link href=\"text/shared/01/05340200.xhp\">欄寬</link>"
 
-#. HGYEx
+#. THtNm
 #: row_height.xhp
 msgctxt ""
 "row_height.xhp\n"
 "par_id3153815\n"
 "help.text"
-msgid "<link href=\"text/scalc/01/05040200.xhp\" name=\"Optimal column width\">Optimal column width</link>"
-msgstr "<link href=\"text/scalc/01/05040200.xhp\" name=\"最適欄寬\">最適欄寬</link>"
+msgid "<link href=\"text/scalc/01/05040200.xhp\">Optimal column width</link>"
+msgstr "<link href=\"text/scalc/01/05040200.xhp\">最適欄寬</link>"
 
 #. YRbvh
 #: scenario.xhp
@@ -11482,14 +11491,14 @@ msgctxt ""
 msgid "<bookmark_value>scenarios; creating/editing/deleting</bookmark_value><bookmark_value>opening;scenarios</bookmark_value><bookmark_value>selecting;scenarios in Navigator</bookmark_value>"
 msgstr "<bookmark_value>分析藍本; 建立/編輯/刪除</bookmark_value><bookmark_value>開啟;分析藍本</bookmark_value><bookmark_value>選取;助手中的分析藍本</bookmark_value>"
 
-#. 4gBns
+#. rmHtG
 #: scenario.xhp
 msgctxt ""
 "scenario.xhp\n"
 "hd_id3125863\n"
 "help.text"
-msgid "<variable id=\"scenario\"><link href=\"text/scalc/guide/scenario.xhp\" name=\"Using Scenarios\">Using Scenarios</link></variable>"
-msgstr "<variable id=\"scenario\"><link href=\"text/scalc/guide/scenario.xhp\" name=\"使用分析藍本\">使用分析藍本</link></variable>"
+msgid "<variable id=\"scenario\"><link href=\"text/scalc/guide/scenario.xhp\">Using Scenarios</link></variable>"
+msgstr "<variable id=\"scenario\"><link href=\"text/scalc/guide/scenario.xhp\">使用分析藍本</link></variable>"
 
 #. DGENT
 #: scenario.xhp
@@ -11635,14 +11644,14 @@ msgctxt ""
 msgid "If you want to know which values in the scenario affect other values, choose <emph>Tools - Detective - Trace Dependents</emph>. You see arrows to the cells that are directly dependent on the current cell."
 msgstr "如果想知道分析藍本的哪些數值會影響其他數值，請選擇 <emph>[工具] - [偵測] - [追蹤依賴此的]</emph>。您會看到箭頭指向直接依賴目前儲存格的儲存格。"
 
-#. 3Rz4E
+#. tZ3Es
 #: scenario.xhp
 msgctxt ""
 "scenario.xhp\n"
 "par_id3154484\n"
 "help.text"
-msgid "<link href=\"text/scalc/01/06050000.xhp\" name=\"Creating Scenarios\">Creating Scenarios</link>"
-msgstr "<link href=\"text/scalc/01/06050000.xhp\" name=\"建立分析藍本\">建立分析藍本</link>"
+msgid "<link href=\"text/scalc/01/06050000.xhp\">Creating Scenarios</link>"
+msgstr "<link href=\"text/scalc/01/06050000.xhp\">建立分析藍本</link>"
 
 #. AG6Vf
 #: sorted_list.xhp
@@ -11662,14 +11671,14 @@ msgctxt ""
 msgid "<bookmark_value>filling;customized lists</bookmark_value><bookmark_value>sort lists;applying</bookmark_value><bookmark_value>defining;sort lists</bookmark_value><bookmark_value>geometric lists</bookmark_value><bookmark_value>arithmetic lists</bookmark_value><bookmark_value>series;sort lists</bookmark_value><bookmark_value>lists; user-defined</bookmark_value><bookmark_value>customized lists</bookmark_value>"
 msgstr "<bookmark_value>填入; 自訂清單</bookmark_value><bookmark_value>排序清單; 套用</bookmark_value><bookmark_value>定義; 排序清單</bookmark_value><bookmark_value>幾何清單</bookmark_value><bookmark_value>運算清單</bookmark_value><bookmark_value>數列; 排序清單</bookmark_value><bookmark_value>清單; 使用者定義</bookmark_value><bookmark_value>自訂清單</bookmark_value>"
 
-#. WuFEM
+#. 486Qk
 #: sorted_list.xhp
 msgctxt ""
 "sorted_list.xhp\n"
 "hd_id3150870\n"
 "help.text"
-msgid "<variable id=\"sorted_list\"><link href=\"text/scalc/guide/sorted_list.xhp\" name=\"Applying Sort Lists\">Applying Sort Lists</link> </variable>"
-msgstr "<variable id=\"sorted_list\"><link href=\"text/scalc/guide/sorted_list.xhp\" name=\"套用排序清單\">套用排序清單</link> </variable>"
+msgid "<variable id=\"sorted_list\"><link href=\"text/scalc/guide/sorted_list.xhp\">Applying Sort Lists</link> </variable>"
+msgstr "<variable id=\"sorted_list\"><link href=\"text/scalc/guide/sorted_list.xhp\">套用排序清單</link> </variable>"
 
 #. oMwuD
 #: sorted_list.xhp
@@ -11707,14 +11716,14 @@ msgctxt ""
 msgid "The predefined series can be found under <switchinline select=\"sys\"><caseinline select=\"MAC\"><emph>%PRODUCTNAME - Preferences</emph></caseinline><defaultinline><emph>Tools - Options</emph></defaultinline></switchinline><emph> - %PRODUCTNAME Calc - Sort Lists</emph>. You can also create your own lists of text strings tailored to your needs, such as a list of your company's branch offices. When you use the information in these lists later (for example, as headings), just enter the first name in the list and expand the entry by dragging it with your mouse."
 msgstr "可以在 <emph><switchinline select=\"sys\"><caseinline select=\"MAC\">[%PRODUCTNAME] - [喜好設定]</caseinline><defaultinline>[工具] - [選項]</defaultinline></switchinline> - [%PRODUCTNAME Calc] - [排序清單]</emph> 下找到預先定義的序列。您也可以依您的需求建立自己的文字字串清單，例如貴公司的分公司清單。當您於稍後使用清單中的資訊時 (例如，標題)，只需在清單中輸入名字，並以滑鼠拖曳的方式展開項目。"
 
-#. qqeXK
+#. vnpQt
 #: sorted_list.xhp
 msgctxt ""
 "sorted_list.xhp\n"
 "par_id3147434\n"
 "help.text"
-msgid "<link href=\"text/shared/optionen/01060400.xhp\" name=\"Sort lists\">Sort lists</link>"
-msgstr "<link href=\"text/shared/optionen/01060400.xhp\" name=\"排序清單\">排序清單</link>"
+msgid "<link href=\"text/shared/optionen/01060400.xhp\">Sort lists</link>"
+msgstr "<link href=\"text/shared/optionen/01060400.xhp\">排序清單</link>"
 
 #. 6GdiT
 #: specialfilter.xhp
@@ -11734,13 +11743,13 @@ msgctxt ""
 msgid "<bookmark_value>filters;defining advanced filters </bookmark_value><bookmark_value>advanced filters</bookmark_value><bookmark_value>defining; advanced filters</bookmark_value><bookmark_value>database ranges; advanced filters</bookmark_value>"
 msgstr "<bookmark_value>篩選; 定義進階篩選</bookmark_value><bookmark_value>進階篩選</bookmark_value><bookmark_value>定義; 進階篩選</bookmark_value><bookmark_value>資料庫範圍; 進階篩選</bookmark_value>"
 
-#. cjgod
+#. nzLyA
 #: specialfilter.xhp
 msgctxt ""
 "specialfilter.xhp\n"
 "hd_id3148798\n"
 "help.text"
-msgid "<variable id=\"specialfilter\"><link href=\"text/scalc/guide/specialfilter.xhp\" name=\"Applying Advanced Filters\">Applying Advanced Filters</link></variable>"
+msgid "<variable id=\"specialfilter\"><link href=\"text/scalc/guide/specialfilter.xhp\">Applying Advanced Filters</link></variable>"
 msgstr ""
 
 #. tYuAi
@@ -11968,22 +11977,22 @@ msgctxt ""
 msgid "<bookmark_value>subtotals;using subtotals tool</bookmark_value>"
 msgstr ""
 
-#. 6JBG9
+#. e7TMf
 #: subtotaltool.xhp
 msgctxt ""
 "subtotaltool.xhp\n"
 "hd_id631585177069332\n"
 "help.text"
-msgid "<variable id=\"subtotaltoolh1\"><link href=\"text/scalc/guide/subtotaltool.xhp\" name=\"Using Subtotal Tool\">Using Subtotal Tool</link></variable>"
+msgid "<variable id=\"subtotaltoolh1\"><link href=\"text/scalc/guide/subtotaltool.xhp\">Using Subtotal Tool</link></variable>"
 msgstr ""
 
-#. rC9BC
+#. FEwcj
 #: subtotaltool.xhp
 msgctxt ""
 "subtotaltool.xhp\n"
 "par_id301585177069332\n"
 "help.text"
-msgid "Calc offers the Subtotals tool as a more comprehensive alternative to the <link href=\"text/scalc/01/04060106.xhp#Section12\" name=\"subtotal\">SUBTOTAL function</link>. In contrast to SUBTOTAL, which only works on a single array, the Subtotals tool can create subtotals for up to three arrays arranged in labeled columns. It also groups subtotals by category and sorts them automatically, thereby eliminating the need to apply AutoFilters and filter categories by hand."
+msgid "Calc offers the Subtotals tool as a more comprehensive alternative to the <link href=\"text/scalc/01/04060106.xhp#Section12\">SUBTOTAL function</link>. In contrast to SUBTOTAL, which only works on a single array, the Subtotals tool can create subtotals for up to three arrays arranged in labeled columns. It also groups subtotals by category and sorts them automatically, thereby eliminating the need to apply AutoFilters and filter categories by hand."
 msgstr ""
 
 #. NEkbi
@@ -12130,14 +12139,14 @@ msgctxt ""
 msgid "<bookmark_value>superscript text in cells</bookmark_value><bookmark_value>subscript text in cells</bookmark_value><bookmark_value>cells; text super/sub</bookmark_value><bookmark_value>characters;superscript/subscript</bookmark_value>"
 msgstr "<bookmark_value>儲存格中的上標文字</bookmark_value><bookmark_value>儲存格中的下標文字</bookmark_value><bookmark_value>儲存格; 文字上標/下標</bookmark_value><bookmark_value>字元;上標/下標</bookmark_value>"
 
-#. JLoBw
+#. qZkGz
 #: super_subscript.xhp
 msgctxt ""
 "super_subscript.xhp\n"
 "hd_id3151112\n"
 "help.text"
-msgid "<variable id=\"super_subscript\"><link href=\"text/scalc/guide/super_subscript.xhp\" name=\"Text Superscript / Subscript\">Text Superscript / Subscript</link></variable>"
-msgstr "<variable id=\"super_subscript\"><link href=\"text/scalc/guide/super_subscript.xhp\" name=\"上標/下標文字\">上標/下標文字</link></variable>"
+msgid "<variable id=\"super_subscript\"><link href=\"text/scalc/guide/super_subscript.xhp\">Text Superscript / Subscript</link></variable>"
+msgstr "<variable id=\"super_subscript\"><link href=\"text/scalc/guide/super_subscript.xhp\">上標/下標文字</link></variable>"
 
 #. DSxqD
 #: super_subscript.xhp
@@ -12184,14 +12193,14 @@ msgctxt ""
 msgid "Select the <emph>Subscript</emph> option and click OK."
 msgstr "請選取<emph>「向下」</emph>選項並按一下「確定」。"
 
-#. Vh5Ek
+#. eqGzu
 #: super_subscript.xhp
 msgctxt ""
 "super_subscript.xhp\n"
 "par_id3153876\n"
 "help.text"
-msgid "<link href=\"text/shared/01/05020500.xhp\" name=\"Context menu - Character - Font Position\">Context menu - Character - Font Position</link>"
-msgstr "<link href=\"text/shared/01/05020500.xhp\" name=\"右鍵功能表-「字元」-「字型位置」\">右鍵功能表-「字元」-「字型位置」</link>"
+msgid "<link href=\"text/shared/01/05020500.xhp\">Context menu - Character - Font Position</link>"
+msgstr "<link href=\"text/shared/01/05020500.xhp\">右鍵功能表-「字元」-「字型位置」</link>"
 
 #. 2wVQM
 #: table_cellmerge.xhp
@@ -12211,13 +12220,13 @@ msgctxt ""
 msgid "<bookmark_value>merge/merging cells</bookmark_value>    <bookmark_value>unmerge/unmerging cells</bookmark_value>    <bookmark_value>split/splitting cells</bookmark_value>"
 msgstr ""
 
-#. BAqR3
+#. T5RbK
 #: table_cellmerge.xhp
 msgctxt ""
 "table_cellmerge.xhp\n"
 "hd_id8005005\n"
 "help.text"
-msgid "<variable id=\"table_cellmerge\"><link href=\"text/scalc/guide/table_cellmerge.xhp\" name=\"Merging and Unmerging Cells\">Merge and Unmerge Cells</link></variable>"
+msgid "<variable id=\"table_cellmerge\"><link href=\"text/scalc/guide/table_cellmerge.xhp\">Merge and Unmerge Cells</link></variable>"
 msgstr ""
 
 #. Hht67
@@ -12391,14 +12400,14 @@ msgctxt ""
 msgid "<bookmark_value>tables; transposing</bookmark_value><bookmark_value>transposing tables</bookmark_value><bookmark_value>inverting tables</bookmark_value><bookmark_value>swapping tables</bookmark_value><bookmark_value>columns; swap with rows</bookmark_value><bookmark_value>rows; swapping with columns</bookmark_value><bookmark_value>tables; rotating</bookmark_value><bookmark_value>rotating; tables</bookmark_value>"
 msgstr "<bookmark_value>表格; 轉置</bookmark_value><bookmark_value>轉置表格</bookmark_value><bookmark_value>表格; 逆轉</bookmark_value><bookmark_value>表格逆轉</bookmark_value><bookmark_value>表格; 交換</bookmark_value><bookmark_value>交換表格</bookmark_value><bookmark_value>欄; 與列交換</bookmark_value><bookmark_value>列; 與欄交換</bookmark_value><bookmark_value>表格; 旋轉</bookmark_value><bookmark_value>旋轉; 表格</bookmark_value>"
 
-#. h6iqG
+#. TZEJK
 #: table_rotate.xhp
 msgctxt ""
 "table_rotate.xhp\n"
 "hd_id3154346\n"
 "help.text"
-msgid "<variable id=\"table_rotate\"><link href=\"text/scalc/guide/table_rotate.xhp\" name=\"Rotating Tables (Transposing)\">Rotating Tables (Transposing)</link></variable>"
-msgstr "<variable id=\"table_rotate\"><link href=\"text/scalc/guide/table_rotate.xhp\" name=\"旋轉表格 (行欄替換)\">旋轉表格 (行欄替換)</link></variable>"
+msgid "<variable id=\"table_rotate\"><link href=\"text/scalc/guide/table_rotate.xhp\">Rotating Tables (Transposing)</link></variable>"
+msgstr "<variable id=\"table_rotate\"><link href=\"text/scalc/guide/table_rotate.xhp\">旋轉表格 (行欄替換)</link></variable>"
 
 #. fzyoE
 #: table_rotate.xhp
@@ -12463,14 +12472,14 @@ msgctxt ""
 msgid "If you now click OK the columns and rows are transposed."
 msgstr "如果您現在按一下<emph>「確定」</emph>按鈕，則欄和行會交互替換。"
 
-#. ZerMW
+#. 2XdS2
 #: table_rotate.xhp
 msgctxt ""
 "table_rotate.xhp\n"
 "par_id3146969\n"
 "help.text"
-msgid "<link href=\"text/shared/01/02070000.xhp\" name=\"Paste Special\">Paste Special</link>"
-msgstr "<link href=\"text/shared/01/02070000.xhp\" name=\"選擇性貼上\">選擇性貼上</link>"
+msgid "<link href=\"text/shared/01/02070000.xhp\">Paste Special</link>"
+msgstr "<link href=\"text/shared/01/02070000.xhp\">選擇性貼上</link>"
 
 #. qWjQg
 #: table_view.xhp
@@ -12490,14 +12499,14 @@ msgctxt ""
 msgid "<bookmark_value>row headers; hiding</bookmark_value><bookmark_value>column headers; hiding</bookmark_value><bookmark_value>tables; views</bookmark_value><bookmark_value>views; tables</bookmark_value><bookmark_value>grids;hiding lines in sheets</bookmark_value><bookmark_value>hiding;headers/grid lines</bookmark_value><bookmark_value>changing;table views</bookmark_value>"
 msgstr "<bookmark_value>列標題; 隱藏</bookmark_value><bookmark_value>欄標題; 隱藏</bookmark_value><bookmark_value>表格; 檢視</bookmark_value><bookmark_value>檢視; 表格</bookmark_value><bookmark_value>網格;隱藏試算表中的線條</bookmark_value><bookmark_value>隱藏;標題/網格線</bookmark_value><bookmark_value>變更;表格檢視</bookmark_value>"
 
-#. AuiXd
+#. t4Dpn
 #: table_view.xhp
 msgctxt ""
 "table_view.xhp\n"
 "hd_id3147304\n"
 "help.text"
-msgid "<variable id=\"table_view\"><link href=\"text/scalc/guide/table_view.xhp\" name=\"Changing Table Views\">Changing Table Views</link></variable>"
-msgstr "<variable id=\"table_view\"><link href=\"text/scalc/guide/table_view.xhp\" name=\"變更表格檢視\">變更表格檢視</link></variable>"
+msgid "<variable id=\"table_view\"><link href=\"text/scalc/guide/table_view.xhp\">Changing Table Views</link></variable>"
+msgstr "<variable id=\"table_view\"><link href=\"text/scalc/guide/table_view.xhp\">變更表格檢視</link></variable>"
 
 #. Fnu8g
 #: table_view.xhp
@@ -12553,14 +12562,14 @@ msgctxt ""
 msgid "<bookmark_value>numbers;entering as text</bookmark_value>      <bookmark_value>text formats; for numbers</bookmark_value>      <bookmark_value>formats; numbers as text</bookmark_value>      <bookmark_value>cell formats; text/numbers</bookmark_value>      <bookmark_value>formatting;numbers as text</bookmark_value>"
 msgstr "<bookmark_value>數字; 輸入為文字</bookmark_value>      <bookmark_value>文字格式; 用於數字</bookmark_value>      <bookmark_value>格式; 數字作為文字</bookmark_value>      <bookmark_value>儲存格格式; 文字/數字</bookmark_value>      <bookmark_value>格式化; 數字作為文字</bookmark_value>"
 
-#. YjSEt
+#. Azs4A
 #: text_numbers.xhp
 msgctxt ""
 "text_numbers.xhp\n"
 "hd_id3145068\n"
 "help.text"
-msgid "<variable id=\"text_numbers\"><link href=\"text/scalc/guide/text_numbers.xhp\" name=\"Formatting Numbers as Text\">Formatting Numbers as Text</link></variable>"
-msgstr "<variable id=\"text_numbers\"><link href=\"text/scalc/guide/text_numbers.xhp\" name=\"將數字格式化為文字\">將數字格式化為文字</link></variable>"
+msgid "<variable id=\"text_numbers\"><link href=\"text/scalc/guide/text_numbers.xhp\">Formatting Numbers as Text</link></variable>"
+msgstr "<variable id=\"text_numbers\"><link href=\"text/scalc/guide/text_numbers.xhp\">將數字格式化為文字</link></variable>"
 
 #. JPD2o
 #: text_numbers.xhp
@@ -12589,14 +12598,14 @@ msgctxt ""
 msgid "If you decide to enter a number directly as text, enter an apostrophe (') first. For example, for years in column headings, you can enter '1999, '2000 and '2001. The apostrophe is not visible in the cell, it only indicates that the entry is to be recognized as a text. This is useful if, for example, you enter a telephone number or postal code that begins with a zero (0), because a zero (0) at the start of a sequence of digits is removed in normal number formats."
 msgstr "如果您決定直接將數字作為文字輸入，請在數字前輸入一個撇號 (')。例如，您可以在欄標題中輸入年份 '1999、'2000 和 '2001。撇號不會顯示在儲存格中，它僅表示輸入的條目將被識別為文字。在輸入以零 (0) 開頭的電話號碼或郵政編碼時，此方法很有用，因為在常規數字格式中，數字序列開頭的零會被移除。"
 
-#. hnEQ6
+#. q4W79
 #: text_numbers.xhp
 msgctxt ""
 "text_numbers.xhp\n"
 "par_id3156284\n"
 "help.text"
-msgid "<link href=\"text/shared/01/05020300.xhp\" name=\"Format - Cells - Numbers\">Format - Cells - Numbers</link>"
-msgstr "<link href=\"text/shared/01/05020300.xhp\" name=\"[格式] - [儲存格] - [數字]\">[格式] - [儲存格] - [數字]</link>"
+msgid "<link href=\"text/shared/01/05020300.xhp\">Format - Cells - Numbers</link>"
+msgstr "<link href=\"text/shared/01/05020300.xhp\">[格式] - [儲存格] - [數字]</link>"
 
 #. MZp8B
 #: text_rotate.xhp
@@ -12616,14 +12625,14 @@ msgctxt ""
 msgid "<bookmark_value>cells; rotating text</bookmark_value>      <bookmark_value>rotating; text in cells</bookmark_value>      <bookmark_value>text in cells; writing vertically</bookmark_value>"
 msgstr "<bookmark_value>儲存格; 旋轉文字</bookmark_value>      <bookmark_value>旋轉; 儲存格中的文字</bookmark_value>      <bookmark_value>儲存格中的文字; 垂直寫入</bookmark_value>"
 
-#. btUfR
+#. K94Go
 #: text_rotate.xhp
 msgctxt ""
 "text_rotate.xhp\n"
 "hd_id3151112\n"
 "help.text"
-msgid "<variable id=\"text_rotate\"><link href=\"text/scalc/guide/text_rotate.xhp\" name=\"Rotating Text\">Rotating Text</link></variable>"
-msgstr "<variable id=\"text_rotate\"><link href=\"text/scalc/guide/text_rotate.xhp\" name=\"旋轉文字\">旋轉文字</link></variable>"
+msgid "<variable id=\"text_rotate\"><link href=\"text/scalc/guide/text_rotate.xhp\">Rotating Text</link></variable>"
+msgstr "<variable id=\"text_rotate\"><link href=\"text/scalc/guide/text_rotate.xhp\">旋轉文字</link></variable>"
 
 #. DXQsT
 #: text_rotate.xhp
@@ -12661,23 +12670,23 @@ msgctxt ""
 msgid "In the <emph>Text orientation</emph> area use the mouse to select in the preview wheel the direction in which the text is to be rotated. Click <emph>OK</emph>."
 msgstr "在 <emph>[文字方向]</emph> 區塊內使用滑鼠來選擇，在預覽處可以滾動滑鼠滾輪來改變文字方向。按一下 <emph>確定</emph>。"
 
-#. xZi7M
+#. KDYBL
 #: text_rotate.xhp
 msgctxt ""
 "text_rotate.xhp\n"
 "par_id3148456\n"
 "help.text"
-msgid "<link href=\"text/scalc/01/05020000.xhp\" name=\"Format - Cells\">Format - Cells</link>"
-msgstr "<link href=\"text/scalc/01/05020000.xhp\" name=\"「格式」-「儲存格」\">「格式」-「儲存格」</link>"
+msgid "<link href=\"text/scalc/01/05020000.xhp\">Format - Cells</link>"
+msgstr "<link href=\"text/scalc/01/05020000.xhp\">「格式」-「儲存格」</link>"
 
-#. gVdDT
+#. Uvcyj
 #: text_rotate.xhp
 msgctxt ""
 "text_rotate.xhp\n"
 "par_id3154944\n"
 "help.text"
-msgid "<link href=\"text/shared/01/05340300.xhp\" name=\"Format - Cells - Alignment\">Format - Cells - Alignment</link>"
-msgstr "<link href=\"text/shared/01/05340300.xhp\" name=\"「格式」-「儲存格」-「對齊」\">「格式」-「儲存格」-「對齊」</link>"
+msgid "<link href=\"text/shared/01/05340300.xhp\">Format - Cells - Alignment</link>"
+msgstr "<link href=\"text/shared/01/05340300.xhp\">「格式」-「儲存格」-「對齊」</link>"
 
 #. ExCrt
 #: text_wrap.xhp
@@ -12697,14 +12706,14 @@ msgctxt ""
 msgid "<bookmark_value>text in cells; multi-line</bookmark_value><bookmark_value>cells; text breaks</bookmark_value><bookmark_value>breaks in cells</bookmark_value><bookmark_value>multi-line text in cells</bookmark_value>"
 msgstr "<bookmark_value>儲存格中的文字; 多行</bookmark_value><bookmark_value>儲存格; 文字斷行</bookmark_value><bookmark_value>儲存格中的斷行</bookmark_value><bookmark_value>儲存格中的多行文字</bookmark_value>"
 
-#. L6xkB
+#. 6siFB
 #: text_wrap.xhp
 msgctxt ""
 "text_wrap.xhp\n"
 "hd_id3154346\n"
 "help.text"
-msgid "<variable id=\"text_wrap\"><link href=\"text/scalc/guide/text_wrap.xhp\" name=\"Writing Multi-line Text\">Writing Multi-line Text</link></variable>"
-msgstr "<variable id=\"text_wrap\"><link href=\"text/scalc/guide/text_wrap.xhp\" name=\"寫入多行文字\">寫入多行文字</link></variable>"
+msgid "<variable id=\"text_wrap\"><link href=\"text/scalc/guide/text_wrap.xhp\">Writing Multi-line Text</link></variable>"
+msgstr "<variable id=\"text_wrap\"><link href=\"text/scalc/guide/text_wrap.xhp\">寫入多行文字</link></variable>"
 
 #. WGo9x
 #: text_wrap.xhp
@@ -12751,13 +12760,13 @@ msgctxt ""
 msgid "For automatic wrapping in XLS files, the rows in question should be set to Optimal Height."
 msgstr ""
 
-#. pED9m
+#. EtDAo
 #: text_wrap.xhp
 msgctxt ""
 "text_wrap.xhp\n"
 "par_id3145799\n"
 "help.text"
-msgid "<link href=\"text/scalc/01/05020000.xhp\" name=\"Format - Cells\">Format - Cells</link>"
+msgid "<link href=\"text/scalc/01/05020000.xhp\">Format - Cells</link>"
 msgstr ""
 
 #. rAuLt
@@ -12778,14 +12787,14 @@ msgctxt ""
 msgid "<bookmark_value>functions; user-defined</bookmark_value><bookmark_value>user-defined functions</bookmark_value><bookmark_value>Basic IDE for user-defined functions</bookmark_value><bookmark_value>IDE; Basic IDE</bookmark_value><bookmark_value>programming;functions</bookmark_value>"
 msgstr "<bookmark_value>函式; 使用者定義</bookmark_value><bookmark_value>使用者定義的函式</bookmark_value><bookmark_value>用於使用者定義的函式之 Basic IDE</bookmark_value><bookmark_value>IDE; Basic IDE</bookmark_value><bookmark_value>程式設計; 函式</bookmark_value>"
 
-#. ABAEY
+#. rYvdz
 #: userdefined_function.xhp
 msgctxt ""
 "userdefined_function.xhp\n"
 "hd_id3155411\n"
 "help.text"
-msgid "<variable id=\"userdefined_function\"><link href=\"text/scalc/guide/userdefined_function.xhp\" name=\"Defining Functions Yourself\">User-Defined Functions</link></variable>"
-msgstr "<variable id=\"userdefined_function\"><link href=\"text/scalc/guide/userdefined_function.xhp\" name=\"使用者定義的函式\">使用者定義的函式</link></variable>"
+msgid "<variable id=\"userdefined_function\"><link href=\"text/scalc/guide/userdefined_function.xhp\">User-Defined Functions</link></variable>"
+msgstr "<variable id=\"userdefined_function\"><link href=\"text/scalc/guide/userdefined_function.xhp\">使用者定義的函式</link></variable>"
 
 #. 4PUhf
 #: userdefined_function.xhp
@@ -12805,14 +12814,14 @@ msgctxt ""
 msgid "You can define your own functions using the Basic-IDE. This method requires a basic knowledge of programming."
 msgstr "您可以使用 Basic-IDE 定義自己的函式。這種方法需要您具備基本的程式設計知識。"
 
-#. F6npk
+#. egzia
 #: userdefined_function.xhp
 msgctxt ""
 "userdefined_function.xhp\n"
 "par_id3153768\n"
 "help.text"
-msgid "You can program functions as <link href=\"text/scalc/01/04060111.xhp\" name=\"add-ins\">add-ins</link>. This method requires an advanced knowledge of programming."
-msgstr "您可將此函式程式設計為 <link href=\"text/scalc/01/04060111.xhp\" name=\"Add-In\">Add-In</link>。這種方法需要您具備豐富的程式設計知識。"
+msgid "You can program functions as <link href=\"text/scalc/01/04060111.xhp\">add-ins</link>. This method requires an advanced knowledge of programming."
+msgstr "您可將此函式程式設計為 <link href=\"text/scalc/01/04060111.xhp\">Add-In</link>。這種方法需要您具備豐富的程式設計知識。"
 
 #. H2JBv
 #: userdefined_function.xhp
@@ -13030,14 +13039,14 @@ msgctxt ""
 msgid "<bookmark_value>values; limiting on input</bookmark_value><bookmark_value>limits; specifying value limits on input</bookmark_value><bookmark_value>permitted cell contents</bookmark_value><bookmark_value>data validity</bookmark_value><bookmark_value>validity</bookmark_value><bookmark_value>cells; validity</bookmark_value><bookmark_value>error messages; defining for incorrect input</bookmark_value><bookmark_value>actions in case of incorrect input</bookmark_value><bookmark_value>Help tips; defining text for cell input</bookmark_value><bookmark_value>comments;help text for cells</bookmark_value><bookmark_value>cells; defining input help</bookmark_value><bookmark_value>macros; running when incorrect input</bookmark_value><bookmark_value>data; validity check</bookmark_value>"
 msgstr "<bookmark_value>值; 輸入限制</bookmark_value><bookmark_value>限制; 指定輸入限制值</bookmark_value><bookmark_value>允許的儲存格內容</bookmark_value><bookmark_value>資料有效性</bookmark_value><bookmark_value>有效性</bookmark_value><bookmark_value>儲存格; 有效性</bookmark_value><bookmark_value>錯誤訊息; 定義錯誤輸入</bookmark_value><bookmark_value>輸入錯誤時採取的動作</bookmark_value><bookmark_value>說明提示; 定義儲存格輸入的文字</bookmark_value><bookmark_value>評註; 儲存格的說明文字</bookmark_value><bookmark_value>儲存格; 定義輸入說明</bookmark_value><bookmark_value>巨集; 輸入錯誤時執行</bookmark_value><bookmark_value>資料; 有效性檢查</bookmark_value>"
 
-#. mNVB9
+#. GAC8Q
 #: validity.xhp
 msgctxt ""
 "validity.xhp\n"
 "hd_id3156442\n"
 "help.text"
-msgid "<variable id=\"validity\"><link href=\"text/scalc/guide/validity.xhp\" name=\"Validity of Cell Contents\">Validity of Cell Contents</link></variable>"
-msgstr "<variable id=\"validity\"><link href=\"text/scalc/guide/validity.xhp\" name=\"儲存格內容的有效性\">儲存格內容的有效性</link></variable>"
+msgid "<variable id=\"validity\"><link href=\"text/scalc/guide/validity.xhp\">Validity of Cell Contents</link></variable>"
+msgstr "<variable id=\"validity\"><link href=\"text/scalc/guide/validity.xhp\">儲存格內容的有效性</link></variable>"
 
 #. XgWFZ
 #: validity.xhp
@@ -13057,14 +13066,14 @@ msgctxt ""
 msgid "The validity rule is activated when a new value is entered. If an invalid value has already been inserted into the cell, or if you insert a value in the cell either with drag-and-drop or by copying and pasting, the validity rule will not take effect."
 msgstr "輸入新數值時會啟動有效規則。如果已在儲存格中插入了無效值，或者您以拖放或複製與貼上的方式在儲存格中插入了一個值，有效規則將不會起作用。"
 
-#. uVPcC
+#. N7bP8
 #: validity.xhp
 msgctxt ""
 "validity.xhp\n"
 "par_id5174718\n"
 "help.text"
-msgid "You can choose <emph>Tools - Detective</emph> at any time and choose the command <link href=\"text/scalc/01/06030800.xhp\" name=\"Mark Invalid Data\"><emph>Mark Invalid Data</emph></link> to display which cells contain invalid values."
-msgstr "您可隨時選擇 <emph>[工具] - [偵測]</emph>，然後選擇指令 <link href=\"text/scalc/01/06030800.xhp\" name=\"標記無效的資料\"><emph>[標記無效的資料]</emph></link>，以顯示包含無效值的儲存格。"
+msgid "You can choose <emph>Tools - Detective</emph> at any time and choose the command <link href=\"text/scalc/01/06030800.xhp\"><emph>Mark Invalid Data</emph></link> to display which cells contain invalid values."
+msgstr "您可隨時選擇 <emph>[工具] - [偵測]</emph>，然後選擇指令 <link href=\"text/scalc/01/06030800.xhp\"><emph>[標記無效的資料]</emph></link>，以顯示包含無效值的儲存格。"
 
 #. vExqw
 #: validity.xhp
@@ -13111,14 +13120,14 @@ msgctxt ""
 msgid "In the <emph>Allow</emph> field, select an option."
 msgstr "在 <emph>[允許]</emph> 欄位中，選取一個選項。"
 
-#. AN7uL
+#. xDJjD
 #: validity.xhp
 msgctxt ""
 "validity.xhp\n"
 "par_id3153011\n"
 "help.text"
-msgid "If you select \"Whole Numbers\", values such as \"12.5\" are not allowed. Choosing \"Date\" allows date information both in the local date format as well as in the form of a <link href=\"text/sbasic/shared/03030101.xhp\" name=\"serial date\">serial date</link>. Similarly, the \"Time\" condition permits time values such as \"12:00\" or serial time numbers. \"Text Length\" stipulates that cells are allowed to contain text only."
-msgstr "若選取「整數」，則不允許出現諸如「12.5」之類的數值。選擇「日期」，則可允許以本地日期格式或<link href=\"text/sbasic/shared/03030101.xhp\" name=\"連續日期\">連續日期</link>的形式輸入日期資訊。同樣地，「時間」條件允許以諸如「12:00」或連續時間的方式輸入時間值。「文字長度」規定儲存格中只能含有文字。"
+msgid "If you select \"Whole Numbers\", values such as \"12.5\" are not allowed. Choosing \"Date\" allows date information both in the local date format as well as in the form of a <link href=\"text/sbasic/shared/03030101.xhp\">serial date</link>. Similarly, the \"Time\" condition permits time values such as \"12:00\" or serial time numbers. \"Text Length\" stipulates that cells are allowed to contain text only."
+msgstr "若選取「整數」，則不允許出現諸如「12.5」之類的數值。選擇「日期」，則可允許以本地日期格式或<link href=\"text/sbasic/shared/03030101.xhp\">連續日期</link>的形式輸入日期資訊。同樣地，「時間」條件允許以諸如「12:00」或連續時間的方式輸入時間值。「文字長度」規定儲存格中只能含有文字。"
 
 #. qGjDb
 #: validity.xhp
@@ -13192,13 +13201,13 @@ msgctxt ""
 msgid "If you select \"Macro\", then by using the <emph>Browse</emph> button you can specify a macro to be run in the event of an error."
 msgstr "如果選取「巨集」，則可以使用<emph>[瀏覽]</emph>按鈕，指定一個在出現錯誤時執行的巨集。"
 
-#. xoScW
+#. eiEtj
 #: validity.xhp
 msgctxt ""
 "validity.xhp\n"
 "par_id3149011\n"
 "help.text"
-msgid "To display the error message, select <link href=\"text/scalc/01/12120300.xhp\" name=\"erroralert\">Show error message when invalid values are entered</link>."
+msgid "To display the error message, select <link href=\"text/scalc/01/12120300.xhp\">Show error message when invalid values are entered</link>."
 msgstr ""
 
 #. VTfnE
@@ -13210,14 +13219,14 @@ msgctxt ""
 msgid "After changing the action for a cell on the <emph>Error Alert</emph> tab page and closing the dialog with OK, you must first select another cell before the change takes effect."
 msgstr "如果您在<emph>「錯誤報告」</emph>標籤中變更了儲存格的動作，然後按「確定」來結束該對話方塊，則您必須在那些變更生效前，先另選一個儲存格。"
 
-#. oQYeC
+#. PpEfP
 #: validity.xhp
 msgctxt ""
 "validity.xhp\n"
 "par_id3154805\n"
 "help.text"
-msgid "<link href=\"text/scalc/01/12120000.xhp\" name=\"Data - Validity\">Data - Validity</link>"
-msgstr "<link href=\"text/scalc/01/12120000.xhp\" name=\"「日期」-「有效」\">「日期」-「有效」</link>"
+msgid "<link href=\"text/scalc/01/12120000.xhp\">Data - Validity</link>"
+msgstr "<link href=\"text/scalc/01/12120000.xhp\">「日期」-「有效」</link>"
 
 #. cEdPu
 #: value_with_name.xhp
@@ -13237,14 +13246,14 @@ msgctxt ""
 msgid "<bookmark_value>cells; defining names</bookmark_value>      <bookmark_value>names; defining for cells</bookmark_value>      <bookmark_value>values; defining names</bookmark_value>      <bookmark_value>constants definition</bookmark_value>      <bookmark_value>variables; defining names</bookmark_value>      <bookmark_value>cell ranges; defining names</bookmark_value>      <bookmark_value>defining;names for cell ranges</bookmark_value>      <bookmark_value>formulas; defining names</bookmark_value>      <bookmark_value>addressing; by defined names</bookmark_value>      <bookmark_value>cell names; defining/addressing</bookmark_value>      <bookmark_value>references; by defined names</bookmark_value>      <bookmark_value>allowed cell names</bookmark_value>      <bookmark_value>renaming;cells</bookmark_value>"
 msgstr "<bookmark_value>儲存格; 定義名稱</bookmark_value>      <bookmark_value>名稱; 為儲存格定義</bookmark_value>      <bookmark_value>值; 定義名稱</bookmark_value>      <bookmark_value>常數定義</bookmark_value>      <bookmark_value>變數; 定義名稱</bookmark_value>      <bookmark_value>儲存格範圍; 定義名稱</bookmark_value>      <bookmark_value>定義; 儲存格範圍的名稱</bookmark_value>      <bookmark_value>公式; 定義名稱</bookmark_value>      <bookmark_value>定址; 依定義的名稱</bookmark_value><bookmark_value>儲存格名稱; 定義/定址</bookmark_value><bookmark_value>參照; 依定義的名稱</bookmark_value>      <bookmark_value>允許的儲存格名稱</bookmark_value>      <bookmark_value>重新命名; 儲存格</bookmark_value>"
 
-#. 7VrgE
+#. vT4C3
 #: value_with_name.xhp
 msgctxt ""
 "value_with_name.xhp\n"
 "hd_id3147434\n"
 "help.text"
-msgid "<variable id=\"value_with_name\"><link href=\"text/scalc/guide/value_with_name.xhp\" name=\"Naming Cells\">Naming Cells</link></variable>"
-msgstr "<variable id=\"value_with_name\"><link href=\"text/scalc/guide/value_with_name.xhp\" name=\"命名儲存格\">命名儲存格</link></variable>"
+msgid "<variable id=\"value_with_name\"><link href=\"text/scalc/guide/value_with_name.xhp\">Naming Cells</link></variable>"
+msgstr "<variable id=\"value_with_name\"><link href=\"text/scalc/guide/value_with_name.xhp\">命名儲存格</link></variable>"
 
 #. EyNmi
 #: value_with_name.xhp
@@ -13399,13 +13408,13 @@ msgctxt ""
 msgid "If more than one name starts with the same characters, you can scroll forward through all the names using the <switchinline select=\"sys\"><caseinline select=\"MAC\"><keycode>Command</keycode></caseinline><defaultinline><keycode>Ctrl</keycode></defaultinline></switchinline> <keycode>+ Tab keys</keycode> and backward using the <keycode>Shift +</keycode> <switchinline select=\"sys\"><caseinline select=\"MAC\"><keycode>Command</keycode></caseinline><defaultinline><keycode>Ctrl</keycode></defaultinline></switchinline> <keycode>+ Tab</keycode> keys."
 msgstr ""
 
-#. VDbbB
+#. j7cYG
 #: value_with_name.xhp
 msgctxt ""
 "value_with_name.xhp\n"
 "par_id3153711\n"
 "help.text"
-msgid "<link href=\"text/scalc/01/04070100.xhp\" name=\"Sheet - Named Ranges and Expressions - Define\">Sheet - Named Ranges and Expressions - Define</link>"
+msgid "<link href=\"text/scalc/01/04070100.xhp\">Sheet - Named Ranges and Expressions - Define</link>"
 msgstr ""
 
 #. tT8Ku
@@ -13426,14 +13435,14 @@ msgctxt ""
 msgid "<bookmark_value>HTML WebQuery</bookmark_value><bookmark_value>ranges; inserting in tables</bookmark_value><bookmark_value>external data; inserting</bookmark_value><bookmark_value>tables; inserting external data</bookmark_value><bookmark_value>web pages; importing data</bookmark_value><bookmark_value>WebQuery filter</bookmark_value><bookmark_value>inserting; external data</bookmark_value><bookmark_value>data sources; external data</bookmark_value>"
 msgstr "<bookmark_value>HTML WebQuery</bookmark_value><bookmark_value>範圍; 插入表格</bookmark_value><bookmark_value>外部資料; 插入</bookmark_value><bookmark_value>表格; 插入外部資料</bookmark_value><bookmark_value>網頁; 匯入資料</bookmark_value><bookmark_value>WebQuery 篩選</bookmark_value><bookmark_value>插入; 外部資料</bookmark_value><bookmark_value>資料來源; 外部資料</bookmark_value>"
 
-#. BbQqD
+#. LzMwA
 #: webquery.xhp
 msgctxt ""
 "webquery.xhp\n"
 "hd_id3125863\n"
 "help.text"
-msgid "<variable id=\"webquery\"><link href=\"text/scalc/guide/webquery.xhp\" name=\"Inserting External Data in Table (WebQuery)\">Inserting External Data in Table (WebQuery)</link></variable>"
-msgstr "<variable id=\"webquery\"><link href=\"text/scalc/guide/webquery.xhp\" name=\"在試算表之中插入外部的資料\">在試算表之中插入外部的資料</link></variable>"
+msgid "<variable id=\"webquery\"><link href=\"text/scalc/guide/webquery.xhp\">Inserting External Data in Table (WebQuery)</link></variable>"
+msgstr "<variable id=\"webquery\"><link href=\"text/scalc/guide/webquery.xhp\">在試算表之中插入外部的資料</link></variable>"
 
 #. Uf8QW
 #: webquery.xhp
@@ -13624,14 +13633,14 @@ msgctxt ""
 msgid "Open <emph>Edit - Links</emph>. Here you can edit the link to the external data."
 msgstr "透過功能表指令<emph>「編輯」-「連結」</emph>來開啟「編輯捷徑」的對話方塊。在這裡您可以修改「外部的資料」的連結。"
 
-#. mXauD
+#. xJkAV
 #: webquery.xhp
 msgctxt ""
 "webquery.xhp\n"
 "par_id3154650\n"
 "help.text"
-msgid "<link href=\"text/scalc/01/04090000.xhp\" name=\"External data dialog\">External data dialog</link>"
-msgstr "<link href=\"text/scalc/01/04090000.xhp\" name=\"對話方塊「外部的資料」\">對話方塊「外部的資料」</link>"
+msgid "<link href=\"text/scalc/01/04090000.xhp\">External data dialog</link>"
+msgstr "<link href=\"text/scalc/01/04090000.xhp\">對話方塊「外部的資料」</link>"
 
 #. GnXq4
 #: wildcards.xhp
@@ -13651,13 +13660,13 @@ msgctxt ""
 msgid "<bookmark_value>wildcards in formulas</bookmark_value>    <bookmark_value>wildcards;examples</bookmark_value>"
 msgstr ""
 
-#. 98C5v
+#. ynEWi
 #: wildcards.xhp
 msgctxt ""
 "wildcards.xhp\n"
 "hd_id941629155075179\n"
 "help.text"
-msgid "<variable id=\"wildcards_h1\"><link href=\"text/scalc/guide/wildcards.xhp\" name=\"wildcards_link\">Using Wildcards in Formulas</link></variable>"
+msgid "<variable id=\"wildcards_h1\"><link href=\"text/scalc/guide/wildcards.xhp\">Using Wildcards in Formulas</link></variable>"
 msgstr ""
 
 #. yqMKw
@@ -13921,14 +13930,14 @@ msgctxt ""
 msgid "<bookmark_value>years; 2-digits</bookmark_value><bookmark_value>dates; 19xx/20xx</bookmark_value>"
 msgstr "<bookmark_value>年份; 兩位數</bookmark_value><bookmark_value>日期; 19xx/20xx</bookmark_value>"
 
-#. xroNR
+#. DwNwj
 #: year2000.xhp
 msgctxt ""
 "year2000.xhp\n"
 "hd_id3150439\n"
 "help.text"
-msgid "<variable id=\"year2000\"><link href=\"text/scalc/guide/year2000.xhp\" name=\"19xx/20xx Years\">19xx/20xx Years</link></variable>"
-msgstr "<variable id=\"year2000\"><link href=\"text/scalc/guide/year2000.xhp\" name=\"19xx/20xx 年\">19xx/20xx 年</link></variable>"
+msgid "<variable id=\"year2000\"><link href=\"text/scalc/guide/year2000.xhp\">19xx/20xx Years</link></variable>"
+msgstr "<variable id=\"year2000\"><link href=\"text/scalc/guide/year2000.xhp\">19xx/20xx 年</link></variable>"
 
 #. DeEcT
 #: year2000.xhp
