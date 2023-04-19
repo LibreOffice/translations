@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2023-03-20 12:32+0100\n"
-"PO-Revision-Date: 2023-03-15 17:36+0000\n"
+"POT-Creation-Date: 2023-04-19 12:24+0200\n"
+"PO-Revision-Date: 2023-04-18 19:33+0000\n"
 "Last-Translator: Adolfo Jayme Barrientos <fito@libreoffice.org>\n"
 "Language-Team: Catalan <https://translations.documentfoundation.org/projects/libo_help-master/textscalc01/ca/>\n"
 "Language: ca\n"
@@ -2058,7 +2058,7 @@ msgctxt ""
 "par_id2308201415431834837\n"
 "help.text"
 msgid "<ahelp hid=\".\">Value set to initiate the random number generator algorithm. It is used to initialize (seed) the random number generator in order to reproduce the same sequence of pseudorandom numbers. Specify a positive integer number (1, 2, ...) to produce a specific sequence, or leave the field blank if you don't need this particular feature.</ahelp>"
-msgstr "<ahelp hid=\".\">El valor establert per a iniciar l'algorisme generador de nombres aleatoris. S'utilitza per a inicialitzar (llavor) el generador de nombres aleatoris de manera que es reprodueixi la mateixa seqüència de nombres pseudoaleatoris. Especifiqueu un valor enter positiu (1, 2...) per a crear una seqüència específica o deixeu el camp en blanc si no necessiteu aquesta característica en particular.</ahelp>"
+msgstr "<ahelp hid=\".\">El valor establert per a iniciar l'algorisme generador de nombres aleatoris. S'utilitza per a inicialitzar (llavor) el generador de nombres aleatoris de manera que es reprodueixi la mateixa seqüència de nombres pseudoaleatoris. Especifiqueu un valor enter positiu (1, 2...) per a crear una seqüència específica o deixeu el camp en blanc si no necessiteu aquesta funcionalitat en particular.</ahelp>"
 
 #. JesZo
 #: 02140700.xhp
@@ -2850,7 +2850,7 @@ msgctxt ""
 "bm_id781654171314500\n"
 "help.text"
 msgid "<bookmark_value>Go to sheet</bookmark_value>    <bookmark_value>jump; to given sheet</bookmark_value>    <bookmark_value>sheet; go to directly</bookmark_value>    <bookmark_value>sheet; search and go to</bookmark_value>"
-msgstr ""
+msgstr "<bookmark_value>ves a un full</bookmark_value><bookmark_value>salta; al full indicat</bookmark_value><bookmark_value>full; ves directament a</bookmark_value><bookmark_value>full; cerca i ves a</bookmark_value>"
 
 #. Ky4LF
 #: 02220000.xhp
@@ -2877,7 +2877,7 @@ msgctxt ""
 "par_id231655657630178\n"
 "help.text"
 msgid "Choose <menuitem>Sheet - Navigate - Go To Sheet</menuitem>."
-msgstr ""
+msgstr "Trieu <menuitem>Full ▸ Navega ▸ Ves al full</menuitem>."
 
 #. dPFgf
 #: 02220000.xhp
@@ -2895,7 +2895,7 @@ msgctxt ""
 "par_id3153975\n"
 "help.text"
 msgid "<ahelp hid=\"SC_HID_GOTOTABLEMASK\">Type some characters contained in the searched sheet name. List of sheets will be limited to the sheet names containing these characters. Search is case-sensitive. If empty, all visible sheets are listed.</ahelp>"
-msgstr ""
+msgstr "<ahelp hid=\"SC_HID_GOTOTABLEMASK\">Teclegeu alguns caràcters del nom del full que cerqueu. La llista de fulls es limitarà als noms amb aquests caràcters. La cerca no distingeix majúscules i minúscules. Si està buida, s'hi enumeraran tots els fulls visibles.</ahelp>"
 
 #. aCw4F
 #: 02220000.xhp
@@ -18344,13 +18344,13 @@ msgctxt ""
 msgid "INDEX"
 msgstr "INDEX"
 
-#. qitDL
+#. KbZsD
 #: 04060109.xhp
 msgctxt ""
 "04060109.xhp\n"
 "par_id3150268\n"
 "help.text"
-msgid "<ahelp hid=\"HID_FUNC_INDEX\">INDEX returns a sub range, specified by row and column number, and/or an optional range index.</ahelp>"
+msgid "<ahelp hid=\"HID_FUNC_INDEX\">INDEX returns a value or an array of values from a reference range, specified by row and column index number or array of row and array of columns index numbers, and an optional range index.</ahelp>"
 msgstr ""
 
 #. dr8Bi
@@ -18362,40 +18362,67 @@ msgctxt ""
 msgid "INDEX(Reference [; [Row] [; [Column] [; Range]]])"
 msgstr ""
 
-#. pnaQW
+#. Gax8C
 #: 04060109.xhp
 msgctxt ""
 "04060109.xhp\n"
 "par_id3153260\n"
 "help.text"
-msgid "<emph>Reference</emph> is a reference, entered either directly or by specifying a range name. If the reference consists of multiple ranges, you must enclose the list of references or range names in parentheses, or use the tilde (~) concatenation/union operator."
+msgid "<emph>Reference</emph> is a reference, entered either directly or by specifying a range name. If the reference consists of multiple ranges, you must enclose the list of references or range names in parentheses, or use the tilde (~) <link href=\"text/scalc/01/04060199.xhp#referenceoperators\">range concatenation operator</link>."
 msgstr ""
 
-#. D2tov
+#. MKdnE
 #: 04060109.xhp
 msgctxt ""
 "04060109.xhp\n"
 "par_id3145302\n"
 "help.text"
-msgid "<emph>Row</emph> (optional) represents the row index of the reference range, for which to return a value. In case of zero or omitted (no specific row) all referenced rows are returned."
+msgid "<emph>Row</emph> (optional) represents the row or the array of row indexes of the reference range, for which to return a value. In case of zero or omitted (no specific row) all referenced rows are returned."
 msgstr ""
 
-#. PQAFz
+#. usFXV
 #: 04060109.xhp
 msgctxt ""
 "04060109.xhp\n"
 "par_id3154628\n"
 "help.text"
-msgid "<emph>Column</emph> (optional) represents the column index of the reference range, for which to return a value. In case of zero or omitted (no specific column) all referenced columns are returned."
+msgid "<emph>Column</emph> (optional) represents the column or array of column indexes of the reference range, for which to return a value. In case of zero or omitted (no specific column) all referenced columns are returned."
 msgstr ""
 
-#. S6zm8
+#. FBj7m
+#: 04060109.xhp
+msgctxt ""
+"04060109.xhp\n"
+"par_id621679327293280\n"
+"help.text"
+msgid "If <emph>Row</emph>, <emph>Column</emph> or both are omitted or defined as arrays of indexes, the INDEX function must be entered as an <link href=\"text/scalc/01/04060107.xhp\">array function</link>."
+msgstr ""
+
+#. BmioJ
 #: 04060109.xhp
 msgctxt ""
 "04060109.xhp\n"
 "par_id3155514\n"
 "help.text"
-msgid "<emph>Range</emph> (optional) represents the index of the subrange if referring to a multiple range, default 1."
+msgid "<emph>Range</emph> (optional) represents the index of the subrange if referring to a multiple range, default is 1."
+msgstr ""
+
+#. BMeAR
+#: 04060109.xhp
+msgctxt ""
+"04060109.xhp\n"
+"par_id541679331443608\n"
+"help.text"
+msgid "<input>{=INDEX({1,3,5;7,9,10},{2;1},1)}</input> return a 2 row array containing 7 and 1. The row index {2;1} pick row 2 then row 1. The columns index 1 picks the first column."
+msgstr ""
+
+#. RGnNr
+#: 04060109.xhp
+msgctxt ""
+"04060109.xhp\n"
+"par_id511679333116273\n"
+"help.text"
+msgid "<input>{=INDEX(D3:G12,{1;2;3;4},{3,1})}</input> return a 4 rows by 2 columns array. The row index array {1;2;3;4} picks rows 3 to 6 and {3;1} picks the third (F) and first column (D). Columns 1 and 3 of the source reference are swapped in the resulting array."
 msgstr ""
 
 #. 7pFH2
@@ -18416,23 +18443,23 @@ msgctxt ""
 msgid "<item type=\"input\">=INDEX(SumX;4;1)</item> returns the value from the range <emph>SumX</emph> in row 4 and column 1 as defined in <emph>Sheet - Named Ranges and Expressions - Define</emph>."
 msgstr "<item type=\"input\">=INDEX(SumaX;4;1)</item> retorna el valor de l'interval <emph>SumaX</emph> de la fila 4 i la columna 1 tal com s'ha definit a <emph>Full ▸ Intervals i expressions amb nom ▸ Defineix</emph>."
 
-#. EVP2w
+#. mfFAA
 #: 04060109.xhp
 msgctxt ""
 "04060109.xhp\n"
 "par_id4109012\n"
 "help.text"
-msgid "<item type=\"input\">=INDEX(A1:B6;1)</item> returns a reference to the first row of A1:B6."
-msgstr "<item type=\"input\">=INDEX(A1:B6;1)</item> retorna una referència a la primera fila de l'interval A1:B6."
+msgid "<input>{=INDEX(A1:B6;1)}</input> returns the values of the first row of A1:B6. Enter the formula as an <link href=\"text/scalc/01/04060107.xhp\">array formula</link>."
+msgstr ""
 
-#. DoWcg
+#. jLKKJ
 #: 04060109.xhp
 msgctxt ""
 "04060109.xhp\n"
 "par_id9272133\n"
 "help.text"
-msgid "<item type=\"input\">=INDEX(A1:B6;0;1)</item> returns a reference to the first column of A1:B6."
-msgstr "<item type=\"input\">=INDEX(A1:B6;0;1)</item> retorna una referència a la primera columna de l'interval A1:B6."
+msgid "<input>{=INDEX(A1:B6;0;1)}</input> returns the values of the first column of A1:B6. Enter the formula as an <link href=\"text/scalc/01/04060107.xhp\">array formula</link>."
+msgstr ""
 
 #. igC59
 #: 04060109.xhp
@@ -18443,22 +18470,22 @@ msgctxt ""
 msgid "<item type=\"input\">=INDEX(A1:B6;1;1)</item> indicates the value in the upper-left of the A1:B6 range."
 msgstr "<item type=\"input\">=INDEX(A1:B6;1;1)</item> indica el valor de la part superior esquerra de l'interval A1:B6."
 
-#. GbCcS
+#. GQjbB
 #: 04060109.xhp
 msgctxt ""
 "04060109.xhp\n"
 "par_id9960020\n"
 "help.text"
-msgid "<item type=\"input\">=INDEX((A1:B6;C1:D6);0;0;2)</item> returns a reference to the second range C1:D6 of the multiple range."
+msgid "<input>{=INDEX((A1:B6;C1:D6);0;0;2)}</input> returns the values of the second range C1:D6 of the multiple range. Enter the formula as an <link href=\"text/scalc/01/04060107.xhp\">array formula</link>."
 msgstr ""
 
-#. CuDuU
+#. HSbEt
 #: 04060109.xhp
 msgctxt ""
 "04060109.xhp\n"
-"par_id3158419\n"
+"par_id701677016751508\n"
 "help.text"
-msgid "<item type=\"input\">=INDEX(multi;4;1)</item> indicates the value contained in row 4 and column 1 of the (multiple) range, which you named under <emph>Sheet - Named Ranges and Expressions - Define</emph> as <emph>multi</emph> with the expression <emph>(A1:B6;C1:D6)</emph> for example. The multiple range may consist of several rectangular ranges, each with a row 4 and column 1. If you now want to call the second block of this multiple range enter the number <item type=\"input\">2</item> as the <emph>Range</emph> parameter."
+msgid "<link href=\"https://wiki.documentfoundation.org/Documentation/Calc_Functions/INDEX\">INDEX wiki page</link>."
 msgstr ""
 
 #. LCBWC
@@ -37580,7 +37607,7 @@ msgctxt ""
 "par_id3148594\n"
 "help.text"
 msgid "<emph>StDev</emph> represents the standard deviation of the normal distribution."
-msgstr "<emph>DesvEst</emph> és la desviació estàndard de la distribució normal."
+msgstr "<emph>DesvEst</emph> és la desviació tipus de la distribució normal."
 
 #. TUXfC
 #: 04060184.xhp
@@ -37589,7 +37616,7 @@ msgctxt ""
 "par_id3153921\n"
 "help.text"
 msgid "<item type=\"input\">=NORMINV(0.9;63;5)</item> returns 69.41. If the average egg weighs 63 grams with a standard deviation of 5, then there will be 90% probability that the egg will not be heavier than 69.41g grams."
-msgstr "<item type=\"input\">=INVNORM(0,9;63;5)</item> retorna 69,41. Si l'ou mitjà pesa 63 grams amb una desviació estàndard de 5, hi haurà una probabilitat del 90% que l'ou no pesi més de 69,41 grams."
+msgstr "<item type=\"input\">=INVNORM(0,9;63;5)</item> retorna 69,41. Si l'ou mitjà pesa 63 grams amb una desviació tipus de 5, hi haurà una probabilitat del 90% que l'ou no pesi més de 69,41 grams."
 
 #. 73wyE
 #: 04060184.xhp
@@ -37652,7 +37679,7 @@ msgctxt ""
 "par_id2948594\n"
 "help.text"
 msgid "<emph>StDev</emph> represents the standard deviation of the normal distribution."
-msgstr "<emph>DesvEst</emph> és la desviació estàndard de la distribució normal."
+msgstr "<emph>DesvEst</emph> és la desviació tipus de la distribució normal."
 
 #. mSfFV
 #: 04060184.xhp
@@ -37661,7 +37688,7 @@ msgctxt ""
 "par_id2953921\n"
 "help.text"
 msgid "<item type=\"input\">=NORM.INV(0.9;63;5)</item> returns 69.4077578277. If the average egg weighs 63 grams with a standard deviation of 5, then there will be 90% probability that the egg will not be heavier than 69.41g grams."
-msgstr "<item type=\"input\">=INV.NORM(0,9;63;5)</item> retorna 69,4077578277. Si l'ou mitjà pesa 63 grams amb una desviació estàndard de 5, hi haurà una probabilitat del 90% que l'ou no pesi més de 69,41 grams."
+msgstr "<item type=\"input\">=INV.NORM(0,9;63;5)</item> retorna 69,4077578277. Si l'ou mitjà pesa 63 grams amb una desviació tipus de 5, hi haurà una probabilitat del 90% que l'ou no pesi més de 69,41 grams."
 
 #. 432JF
 #: 04060184.xhp
@@ -37725,7 +37752,7 @@ msgctxt ""
 "par_id3156295\n"
 "help.text"
 msgid "<emph>StDev</emph> is the standard deviation of the distribution."
-msgstr "<emph>DesvEst</emph> és la desviació estàndard de la distribució."
+msgstr "<emph>DesvEst</emph> és la desviació tipus de la distribució."
 
 #. bzaMQ
 #: 04060184.xhp
@@ -37815,7 +37842,7 @@ msgctxt ""
 "par_id2916295\n"
 "help.text"
 msgid "<emph>StDev</emph> is the standard deviation of the distribution."
-msgstr "<emph>DesvEst</emph> és la desviació estàndard de la distribució."
+msgstr "<emph>DesvEst</emph> és la desviació tipus de la distribució."
 
 #. kAAAs
 #: 04060184.xhp
@@ -39338,7 +39365,7 @@ msgctxt ""
 "par_id3146888\n"
 "help.text"
 msgid "<ahelp hid=\"HID_FUNC_STABW\">Estimates the standard deviation based on a sample.</ahelp>"
-msgstr "<ahelp hid=\"HID_FUNC_STABW\">Calcula la desviació estàndard a partir d'una mostra.</ahelp>"
+msgstr "<ahelp hid=\"HID_FUNC_STABW\">Calcula la desviació tipus a partir d'una mostra.</ahelp>"
 
 #. 2b5hp
 #: 04060185.xhp
@@ -39447,7 +39474,7 @@ msgctxt ""
 "par_id3149187\n"
 "help.text"
 msgid "<ahelp hid=\"HID_FUNC_STABWN\">Calculates the standard deviation based on the entire population.</ahelp>"
-msgstr "<ahelp hid=\"HID_FUNC_STABWN\">Calcula la desviació estàndard a partir de tota la població.</ahelp>"
+msgstr "<ahelp hid=\"HID_FUNC_STABWN\">Calcula la desviació tipus a partir de tota la població.</ahelp>"
 
 #. zoiE5
 #: 04060185.xhp
@@ -39465,7 +39492,7 @@ msgctxt ""
 "par_id3153933\n"
 "help.text"
 msgid "<item type=\"input\">=STDEVP(A1:A50)</item> returns a standard deviation of the data referenced."
-msgstr "<item type=\"input\">=DESVESTP(A1:A50)</item> retorna una desviació estàndard de les dades referenciades."
+msgstr "<item type=\"input\">=DESVESTP(A1:A50)</item> retorna una desviació tipus de les dades referenciades."
 
 #. sQWP2
 #: 04060185.xhp
@@ -39492,7 +39519,7 @@ msgctxt ""
 "par_id2949187\n"
 "help.text"
 msgid "<ahelp hid=\"HID_FUNC_ST_DEV_P_MS\">Calculates the standard deviation based on the entire population.</ahelp>"
-msgstr "<ahelp hid=\"HID_FUNC_ST_DEV_P_MS\">Calcula la desviació estàndard a partir de tota la població.</ahelp>"
+msgstr "<ahelp hid=\"HID_FUNC_ST_DEV_P_MS\">Calcula la desviació tipus a partir de tota la població.</ahelp>"
 
 #. J5bPQ
 #: 04060185.xhp
@@ -39501,7 +39528,7 @@ msgctxt ""
 "par_id2954392\n"
 "help.text"
 msgid "STDEV.P(<embedvar href=\"text/scalc/01/ful_func.xhp#number255_1\" markup=\"keep\"/>)"
-msgstr "STDEV.P(<embedvar href=\"text/scalc/01/ful_func.xhp#number255_1\" markup=\"keep\"/>)"
+msgstr "DESVEST.P(<embedvar href=\"text/scalc/01/ful_func.xhp#number255_1\" markup=\"keep\"/>)"
 
 #. 9PAi8
 #: 04060185.xhp
@@ -46914,7 +46941,7 @@ msgctxt ""
 "par_id3154366\n"
 "help.text"
 msgid "You can only turn on the automatic hyphenation in $[officename] Calc when the <link href=\"text/shared/01/05340300.xhp\">row break</link> feature is active."
-msgstr "Només podeu activar la partició de mots automàtica al $[officename] Calc quan la característica de <link href=\"text/shared/01/05340300.xhp\">salt de fila</link> és activa."
+msgstr "Només podeu activar la partició de mots automàtica al $[officename] Calc quan la funcionalitat de <link href=\"text/shared/01/05340300.xhp\">salt de fila</link> és activa."
 
 #. 26g7N
 #: 06020000.xhp
@@ -47908,7 +47935,7 @@ msgctxt ""
 "hd_id711619431316966\n"
 "help.text"
 msgid "Allow users of this sheet to"
-msgstr ""
+msgstr "Permet els usuaris d'aquest full de"
 
 #. skcWB
 #: 06060100.xhp
@@ -48497,7 +48524,7 @@ msgctxt ""
 "tit\n"
 "help.text"
 msgid "Freeze Cells"
-msgstr ""
+msgstr "Congela les cel·les"
 
 #. U6FYG
 #: 07090100.xhp
@@ -48524,7 +48551,7 @@ msgctxt ""
 "par_id481612313262514\n"
 "help.text"
 msgid "Freezes the first column or the first row of the current spreadsheet."
-msgstr ""
+msgstr "Immobilitza la primera columna o fila del full de càlcul actual."
 
 #. ozNTG
 #: 12010000.xhp
@@ -48537,13 +48564,12 @@ msgstr "Defineix l'interval de la base de dades"
 
 #. AgxXS
 #: 12010000.xhp
-#, fuzzy
 msgctxt ""
 "12010000.xhp\n"
 "hd_id3157909\n"
 "help.text"
 msgid "<link href=\"text/scalc/01/12010000.xhp\">Define Range</link>"
-msgstr "<unk>GA Defineix l'interval</link>"
+msgstr "<link href=\"text/scalc/01/12010000.xhp\">Defineix l'interval</link>"
 
 #. 8zFH5
 #: 12010000.xhp
@@ -52896,7 +52922,7 @@ msgctxt ""
 "par_idN1059E\n"
 "help.text"
 msgid "Displays the top or bottom nn items when you sort by a specified field."
-msgstr "Mostra els elements nn superiors o inferiors quan ordeneu per un camp indicat."
+msgstr "Mostra els nn elements superiors o inferiors quan ordeneu per un camp indicat."
 
 #. 9BvAe
 #: 12090106.xhp
@@ -53644,13 +53670,13 @@ msgctxt ""
 msgid "Show selection list"
 msgstr "Mostra la llista de selecció"
 
-#. X4mFD
+#. CMMBv
 #: 12120100.xhp
 msgctxt ""
 "12120100.xhp\n"
 "par_idN1070D\n"
 "help.text"
-msgid "<ahelp hid=\"modules/scalc/ui/validationcriteriapage/showlist\">Shows a list of all valid strings or values to select from. The list can also be opened by selecting the cell and pressing <switchinline select=\"sys\"><caseinline select=\"MAC\"><keycode>Command+D</keycode></caseinline><defaultinline><keycode>Ctrl+D</keycode></defaultinline></switchinline>.</ahelp>"
+msgid "<ahelp hid=\"modules/scalc/ui/validationcriteriapage/showlist\">Shows a list of all valid strings or values to select from. The list can also be opened by selecting the cell and pressing <switchinline select=\"sys\"><caseinline select=\"MAC\"><keycode>Option+Down Arrow</keycode></caseinline><defaultinline><keycode>Alt+Down Arrow</keycode></defaultinline></switchinline>.</ahelp>"
 msgstr ""
 
 #. AuAaR
@@ -57577,7 +57603,7 @@ msgctxt ""
 "par_id2509201519230832\n"
 "help.text"
 msgid "<item type=\"input\">=AVERAGEIF(B2:B6;\">\"&SMALL(B2:B6;1))</item>"
-msgstr "<item type=\"input\">=MITJANA(A1:A50)</item>"
+msgstr "<item type=\"input\">=MITJANASI(B2:B6;\">\"&PETIT(B2:B6;1))</item>"
 
 #. 6MArD
 #: func_averageif.xhp
@@ -67812,13 +67838,13 @@ msgctxt ""
 msgid "This function always returns the numeric value 0, which allows to use it by adding the <emph>STYLE</emph> function to other functions in the same cell without changing its value."
 msgstr ""
 
-#. C6X4Q
+#. m2FBk
 #: func_style.xhp
 msgctxt ""
 "func_style.xhp\n"
 "par_id961673376106137\n"
 "help.text"
-msgid "<input>STYLE(\"Style\" [; Time [; \"Style2\"]])</input>"
+msgid "STYLE(\"Style\" [; Time [; \"Style2\"]])"
 msgstr ""
 
 #. NkFMi
@@ -74006,6 +74032,24 @@ msgctxt ""
 msgid "For more information on the moving average, refer to the <link href=\"https://en.wikipedia.org/wiki/Moving_average\">corresponding Wikipedia article</link>."
 msgstr "Per a més informació sobre la mitjana mòbil consulteu l'article <link href=\"https//en.wikipedia.org/wiki/Movingaverage\">corresponent de la Viquipèdia </link>."
 
+#. 8WEAB
+#: statistics_movingavg.xhp
+msgctxt ""
+"statistics_movingavg.xhp\n"
+"hd_id251681484186482\n"
+"help.text"
+msgid "Trim input range to actual data content"
+msgstr ""
+
+#. ehNLW
+#: statistics_movingavg.xhp
+msgctxt ""
+"statistics_movingavg.xhp\n"
+"par_id141681485134081\n"
+"help.text"
+msgid "Check this box to allow trimming of the input range to the actual data content before computing moving-average. Trimming data ignores unused or empty cells after the last non-empty cell in the input range, thus reducing the computing load of the moving average to the actual data. This checkbox is enabled by default."
+msgstr ""
+
 #. eoQu3
 #: statistics_movingavg.xhp
 msgctxt ""
@@ -74944,15 +74988,14 @@ msgctxt ""
 msgid "F Critical two-tail"
 msgstr "F cua crítica"
 
-#. jMBzo
+#. 6CEU9
 #: statistics_test_t.xhp
-#, fuzzy
 msgctxt ""
 "statistics_test_t.xhp\n"
 "tit\n"
 "help.text"
-msgid "T Test Statistics in Calc"
-msgstr "Estadístiques de prova T al Calc"
+msgid "Paired t-test in Calc"
+msgstr ""
 
 #. cKb9k
 #: statistics_test_t.xhp
@@ -75660,13 +75703,12 @@ msgstr "Dades XML"
 
 #. mRd9B
 #: xml_source.xhp
-#, fuzzy
 msgctxt ""
 "xml_source.xhp\n"
 "bm_id240920171018528200\n"
 "help.text"
 msgid "<bookmark_value>XML Source;load XML data in spreadsheets</bookmark_value>"
-msgstr "Font XML <bookmarkvalue>;càrrega de dades XML en fulls de càlcul</bookmarkvalue>"
+msgstr "<bookmark_value>font XML;càrrega de dades XML en fulls de càlcul</bookmark_value>"
 
 #. iaidA
 #: xml_source.xhp
@@ -75709,13 +75751,12 @@ msgstr "Trieu <item type=\"menuitem\">Data - Font XML</item>."
 
 #. m8sWR
 #: xml_source.xhp
-#, fuzzy
 msgctxt ""
 "xml_source.xhp\n"
 "hd_id801521494731764\n"
 "help.text"
 msgid "XML Source Dialog"
-msgstr "Diàleg font XML"
+msgstr "Diàleg Font XML"
 
 #. MZB9H
 #: xml_source.xhp
@@ -75957,7 +75998,7 @@ msgctxt ""
 "par_id71678262942683\n"
 "help.text"
 msgid "<image src=\"media/helpimg/scalc/calczoomslider.png\" id=\"img_id721678262942684\" width=\"282px\" height=\"40px\"><alt id=\"alt_id461678262942685\">Calc Zoom Slider</alt></image>"
-msgstr ""
+msgstr "<image src=\"media/helpimg/scalc/calczoomslider.png\" id=\"img_id721678262942684\" width=\"282px\" height=\"40px\"><alt id=\"alt_id461678262942685\">Control lliscant d'escala al Calc</alt></image>"
 
 #. 3svKV
 #: zoom.xhp
@@ -76002,7 +76043,7 @@ msgctxt ""
 "par_id841678230875046\n"
 "help.text"
 msgid "The center line on the zoom slider represents 100% zoom factor."
-msgstr ""
+msgstr "La línia central del control lliscant de l'escala representa el 100%."
 
 #. GrGzC
 #: zoom.xhp

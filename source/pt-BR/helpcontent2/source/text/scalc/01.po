@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2023-03-20 12:32+0100\n"
-"PO-Revision-Date: 2023-03-19 19:34+0000\n"
+"POT-Creation-Date: 2023-04-19 12:24+0200\n"
+"PO-Revision-Date: 2023-04-09 08:24+0000\n"
 "Last-Translator: Olivier Hallot <olivier.hallot@libreoffice.org>\n"
 "Language-Team: Portuguese (Brazil) <https://translations.documentfoundation.org/projects/libo_help-master/textscalc01/pt_BR/>\n"
 "Language: pt-BR\n"
@@ -18268,14 +18268,14 @@ msgctxt ""
 msgid "INDEX"
 msgstr "ÍNDICE"
 
-#. qitDL
+#. KbZsD
 #: 04060109.xhp
 msgctxt ""
 "04060109.xhp\n"
 "par_id3150268\n"
 "help.text"
-msgid "<ahelp hid=\"HID_FUNC_INDEX\">INDEX returns a sub range, specified by row and column number, and/or an optional range index.</ahelp>"
-msgstr "<ahelp hid=\"HID_FUNC_INDEX\">ÍNDICE retorna um subintervalo, especificado pelos números de coluna e linha, e um intervalo opcional.</ahelp>"
+msgid "<ahelp hid=\"HID_FUNC_INDEX\">INDEX returns a value or an array of values from a reference range, specified by row and column index number or array of row and array of columns index numbers, and an optional range index.</ahelp>"
+msgstr ""
 
 #. dr8Bi
 #: 04060109.xhp
@@ -18286,41 +18286,68 @@ msgctxt ""
 msgid "INDEX(Reference [; [Row] [; [Column] [; Range]]])"
 msgstr "ÍNDICE(Referência [; [Linha] [; [Coluna] [; Intervalo]]])"
 
-#. pnaQW
+#. Gax8C
 #: 04060109.xhp
 msgctxt ""
 "04060109.xhp\n"
 "par_id3153260\n"
 "help.text"
-msgid "<emph>Reference</emph> is a reference, entered either directly or by specifying a range name. If the reference consists of multiple ranges, you must enclose the list of references or range names in parentheses, or use the tilde (~) concatenation/union operator."
+msgid "<emph>Reference</emph> is a reference, entered either directly or by specifying a range name. If the reference consists of multiple ranges, you must enclose the list of references or range names in parentheses, or use the tilde (~) <link href=\"text/scalc/01/04060199.xhp#referenceoperators\">range concatenation operator</link>."
 msgstr ""
 
-#. D2tov
+#. MKdnE
 #: 04060109.xhp
 msgctxt ""
 "04060109.xhp\n"
 "par_id3145302\n"
 "help.text"
-msgid "<emph>Row</emph> (optional) represents the row index of the reference range, for which to return a value. In case of zero or omitted (no specific row) all referenced rows are returned."
+msgid "<emph>Row</emph> (optional) represents the row or the array of row indexes of the reference range, for which to return a value. In case of zero or omitted (no specific row) all referenced rows are returned."
 msgstr ""
 
-#. PQAFz
+#. usFXV
 #: 04060109.xhp
 msgctxt ""
 "04060109.xhp\n"
 "par_id3154628\n"
 "help.text"
-msgid "<emph>Column</emph> (optional) represents the column index of the reference range, for which to return a value. In case of zero or omitted (no specific column) all referenced columns are returned."
+msgid "<emph>Column</emph> (optional) represents the column or array of column indexes of the reference range, for which to return a value. In case of zero or omitted (no specific column) all referenced columns are returned."
 msgstr ""
 
-#. S6zm8
+#. FBj7m
+#: 04060109.xhp
+msgctxt ""
+"04060109.xhp\n"
+"par_id621679327293280\n"
+"help.text"
+msgid "If <emph>Row</emph>, <emph>Column</emph> or both are omitted or defined as arrays of indexes, the INDEX function must be entered as an <link href=\"text/scalc/01/04060107.xhp\">array function</link>."
+msgstr ""
+
+#. BmioJ
 #: 04060109.xhp
 msgctxt ""
 "04060109.xhp\n"
 "par_id3155514\n"
 "help.text"
-msgid "<emph>Range</emph> (optional) represents the index of the subrange if referring to a multiple range, default 1."
-msgstr "<emph>Intervalo</emph> (opcional) representa o índice do sub intervalo se este se referir a um intervalo múltiplo, o padrão é 1."
+msgid "<emph>Range</emph> (optional) represents the index of the subrange if referring to a multiple range, default is 1."
+msgstr ""
+
+#. BMeAR
+#: 04060109.xhp
+msgctxt ""
+"04060109.xhp\n"
+"par_id541679331443608\n"
+"help.text"
+msgid "<input>{=INDEX({1,3,5;7,9,10},{2;1},1)}</input> return a 2 row array containing 7 and 1. The row index {2;1} pick row 2 then row 1. The columns index 1 picks the first column."
+msgstr ""
+
+#. RGnNr
+#: 04060109.xhp
+msgctxt ""
+"04060109.xhp\n"
+"par_id511679333116273\n"
+"help.text"
+msgid "<input>{=INDEX(D3:G12,{1;2;3;4},{3,1})}</input> return a 4 rows by 2 columns array. The row index array {1;2;3;4} picks rows 3 to 6 and {3;1} picks the third (F) and first column (D). Columns 1 and 3 of the source reference are swapped in the resulting array."
+msgstr ""
 
 #. 7pFH2
 #: 04060109.xhp
@@ -18340,23 +18367,23 @@ msgctxt ""
 msgid "<item type=\"input\">=INDEX(SumX;4;1)</item> returns the value from the range <emph>SumX</emph> in row 4 and column 1 as defined in <emph>Sheet - Named Ranges and Expressions - Define</emph>."
 msgstr "<item type=\"input\">=ÍNDICE(SomaX;4;1)</item> retorna o valor a partir do intervalo <emph>SomaX</emph> na linha 4 e coluna 1 como definido em <emph>Planilha - Intervalos nomeados e expressões - Definir</emph>."
 
-#. EVP2w
+#. mfFAA
 #: 04060109.xhp
 msgctxt ""
 "04060109.xhp\n"
 "par_id4109012\n"
 "help.text"
-msgid "<item type=\"input\">=INDEX(A1:B6;1)</item> returns a reference to the first row of A1:B6."
-msgstr "<item type=\"input\">=ÍNDICE(A1:B6;1)</item> retorna uma referência para a primeira linha de A1:B6."
+msgid "<input>{=INDEX(A1:B6;1)}</input> returns the values of the first row of A1:B6. Enter the formula as an <link href=\"text/scalc/01/04060107.xhp\">array formula</link>."
+msgstr ""
 
-#. DoWcg
+#. jLKKJ
 #: 04060109.xhp
 msgctxt ""
 "04060109.xhp\n"
 "par_id9272133\n"
 "help.text"
-msgid "<item type=\"input\">=INDEX(A1:B6;0;1)</item> returns a reference to the first column of A1:B6."
-msgstr "<item type=\"input\">=ÍNDICE(A1:B6;0;1)</item> retorna uma referência para a primeira coluna de A1:B6."
+msgid "<input>{=INDEX(A1:B6;0;1)}</input> returns the values of the first column of A1:B6. Enter the formula as an <link href=\"text/scalc/01/04060107.xhp\">array formula</link>."
+msgstr ""
 
 #. igC59
 #: 04060109.xhp
@@ -18367,22 +18394,22 @@ msgctxt ""
 msgid "<item type=\"input\">=INDEX(A1:B6;1;1)</item> indicates the value in the upper-left of the A1:B6 range."
 msgstr "<item type=\"input\">=ÍNDICE(A1:B6;1;1)</item> indica o valor no canto superior esquerdo do intervalo A1:B6."
 
-#. GbCcS
+#. GQjbB
 #: 04060109.xhp
 msgctxt ""
 "04060109.xhp\n"
 "par_id9960020\n"
 "help.text"
-msgid "<item type=\"input\">=INDEX((A1:B6;C1:D6);0;0;2)</item> returns a reference to the second range C1:D6 of the multiple range."
+msgid "<input>{=INDEX((A1:B6;C1:D6);0;0;2)}</input> returns the values of the second range C1:D6 of the multiple range. Enter the formula as an <link href=\"text/scalc/01/04060107.xhp\">array formula</link>."
 msgstr ""
 
-#. CuDuU
+#. HSbEt
 #: 04060109.xhp
 msgctxt ""
 "04060109.xhp\n"
-"par_id3158419\n"
+"par_id701677016751508\n"
 "help.text"
-msgid "<item type=\"input\">=INDEX(multi;4;1)</item> indicates the value contained in row 4 and column 1 of the (multiple) range, which you named under <emph>Sheet - Named Ranges and Expressions - Define</emph> as <emph>multi</emph> with the expression <emph>(A1:B6;C1:D6)</emph> for example. The multiple range may consist of several rectangular ranges, each with a row 4 and column 1. If you now want to call the second block of this multiple range enter the number <item type=\"input\">2</item> as the <emph>Range</emph> parameter."
+msgid "<link href=\"https://wiki.documentfoundation.org/Documentation/Calc_Functions/INDEX\">INDEX wiki page</link>."
 msgstr ""
 
 #. LCBWC
@@ -41801,7 +41828,7 @@ msgctxt ""
 "par_id2511978\n"
 "help.text"
 msgid "Takes two references and returns a reference list, which is a concatenation of the left reference followed by the right reference. Double entries are referenced twice."
-msgstr ""
+msgstr "Toma duas referências e retorna uma lista de referências, que é a concatenação da referência à esquerda seguida da referência à direita. Entradas duplas são referenciadas em dobro."
 
 #. FayxP
 #: 04060199.xhp
@@ -41810,7 +41837,7 @@ msgctxt ""
 "par_id961672071835372\n"
 "help.text"
 msgid "<input>=COUNT(A1:B2~B2:C3)</input> counts values of A1:B2 and B2:C3. Note that the cell B2 is counted twice."
-msgstr ""
+msgstr "<input>=CONT.NÚM(A1:B2~B2:C3)</input> conta os valores de A1:B2 e B2:C3. Note que a célula B2 é contada em dobro."
 
 #. EYFWA
 #: 04060199.xhp
@@ -41819,7 +41846,7 @@ msgctxt ""
 "par_id401672243346224\n"
 "help.text"
 msgid "<input>=INDEX(A1:B2~C1:D2;2;1;2)</input> selects cell C2, that is, the first cell of the second row, first column, of the second range (C1:D2) of the range list."
-msgstr ""
+msgstr "<input>=ÍNDICE(A1:B2~C1:D2;2;1;2)</input> seleciona a célula C2, isto é, a primeira célula da segunda linha do segundo intervalo (C1:D2) da lista de intervalos."
 
 #. nVdpz
 #: 04060199.xhp
@@ -41828,7 +41855,7 @@ msgctxt ""
 "par_id181890\n"
 "help.text"
 msgid "A reference list is not allowed inside an array expression."
-msgstr ""
+msgstr "Não é permitido lista de referências em expressões de matriz."
 
 #. LfJJp
 #: 04070000.xhp
@@ -45347,7 +45374,7 @@ msgctxt ""
 "par_id541662923021543\n"
 "help.text"
 msgid "The cell content does not contain the text or number defined in the text box on the right."
-msgstr ""
+msgstr "A célula não contém o texto ou número definido na caixa de texto à direita."
 
 #. yF6EV
 #: 05120100.xhp
@@ -46013,7 +46040,7 @@ msgctxt ""
 "par_id41609780964157\n"
 "help.text"
 msgid "Data bar option fills the cell with solid or gradient color corresponding to the numeric value in the cell."
-msgstr ""
+msgstr "A opção da barra de dados preenche a célula com uma cor sólida ou gradiente correspondente ao valor numérico na célula."
 
 #. WHWWc
 #: 05120400.xhp
@@ -49163,7 +49190,7 @@ msgctxt ""
 "hd_id391674926239837\n"
 "help.text"
 msgid "Filter by Color"
-msgstr ""
+msgstr "Filtrar por cor"
 
 #. s5KFC
 #: 12040100.xhp
@@ -49208,7 +49235,7 @@ msgctxt ""
 "hd_id771674926517261\n"
 "help.text"
 msgid "Filter by Condition"
-msgstr ""
+msgstr "Filtrar por condição"
 
 #. 4oiCy
 #: 12040100.xhp
@@ -49271,7 +49298,7 @@ msgctxt ""
 "hd_id91674926632440\n"
 "help.text"
 msgid "Bottom 10"
-msgstr ""
+msgstr "Últimos 10"
 
 #. uWEex
 #: 12040100.xhp
@@ -49280,7 +49307,7 @@ msgctxt ""
 "par_id791674926643175\n"
 "help.text"
 msgid "Displays the 10 rows of the cell range that contain the lowest values in the cells of the current column. If these values are unique then no more than 10 rows will be visible, but if the values are not unique then it is possible for more than 10 rows to be shown."
-msgstr ""
+msgstr "Exibe as 10 linhas do intervalo de células que contêm os menores valores nas células da coluna atual. Se esses valores forem exclusivos, não mais do que 10 linhas estarão visíveis, mas se os valores não forem exclusivos, é possível que mais de 10 linhas sejam mostradas."
 
 #. wCDB5
 #: 12040100.xhp
@@ -49343,7 +49370,7 @@ msgctxt ""
 "hd_id731621534146408\n"
 "help.text"
 msgid "Show only current item"
-msgstr ""
+msgstr "Mostra somente o item atual"
 
 #. FURWe
 #: 12040100.xhp
@@ -49361,7 +49388,7 @@ msgctxt ""
 "hd_id11621534151081\n"
 "help.text"
 msgid "Hide only current item"
-msgstr ""
+msgstr "Oculta somente o item atual"
 
 #. EJgvW
 #: 12040100.xhp
@@ -53287,14 +53314,14 @@ msgctxt ""
 msgid "Show selection list"
 msgstr "Exibição de lista de seleção"
 
-#. X4mFD
+#. CMMBv
 #: 12120100.xhp
 msgctxt ""
 "12120100.xhp\n"
 "par_idN1070D\n"
 "help.text"
-msgid "<ahelp hid=\"modules/scalc/ui/validationcriteriapage/showlist\">Shows a list of all valid strings or values to select from. The list can also be opened by selecting the cell and pressing <switchinline select=\"sys\"><caseinline select=\"MAC\"><keycode>Command+D</keycode></caseinline><defaultinline><keycode>Ctrl+D</keycode></defaultinline></switchinline>.</ahelp>"
-msgstr "<ahelp hid=\"modules/scalc/ui/validationcriteriapage/showlist\">Mostra uma lista de cadeias de caracteres ou valores possíveis de serem selecionados. Esta lista também pode ser aberta selecionando a célula e pressionando <switchinline select=\"sys\"><caseinline select=\"MAC\"><keycode>Comando+D</keycode></caseinline><defaultinline><keycode>Ctrl+D</keycode></defaultinline></switchinline></ahelp>"
+msgid "<ahelp hid=\"modules/scalc/ui/validationcriteriapage/showlist\">Shows a list of all valid strings or values to select from. The list can also be opened by selecting the cell and pressing <switchinline select=\"sys\"><caseinline select=\"MAC\"><keycode>Option+Down Arrow</keycode></caseinline><defaultinline><keycode>Alt+Down Arrow</keycode></defaultinline></switchinline>.</ahelp>"
+msgstr ""
 
 #. AuAaR
 #: 12120100.xhp
@@ -54842,7 +54869,7 @@ msgctxt ""
 "tit\n"
 "help.text"
 msgid "Default Number Formats"
-msgstr ""
+msgstr "Formatos numéricos padrão"
 
 #. 8ndNr
 #: default_number_formats.xhp
@@ -54851,7 +54878,7 @@ msgctxt ""
 "hd_id111674498160040\n"
 "help.text"
 msgid "<link href=\"text/scalc/01/default_number_formats.xhp\">Number Format</link>"
-msgstr ""
+msgstr "<link href=\"text/scalc/01/default_number_formats.xhp\">Formatos numéricos</link>"
 
 #. vtUUF
 #: default_number_formats.xhp
@@ -54860,7 +54887,7 @@ msgctxt ""
 "par_id211674498160040\n"
 "help.text"
 msgid "Default number formats"
-msgstr ""
+msgstr "Formatos numéricos padrão"
 
 #. PddvV
 #: default_number_formats.xhp
@@ -54869,7 +54896,7 @@ msgctxt ""
 "hd_id3149182\n"
 "help.text"
 msgid "<link href=\"text/scalc/01/default_number_formats.xhp\">Number format: General</link>"
-msgstr ""
+msgstr "<link href=\"text/scalc/01/default_number_formats.xhp\">Formato numérico: Geral</link>"
 
 #. Bdin6
 #: default_number_formats.xhp
@@ -54878,7 +54905,7 @@ msgctxt ""
 "par_id3163802\n"
 "help.text"
 msgid "<ahelp hid=\".uno:NumberFormatStandard\" visibility=\"visible\">Applies the default number format to the selected cells.</ahelp>"
-msgstr ""
+msgstr "<ahelp hid=\".uno:NumberFormatStandard\" visibility=\"visible\">Aplica o formato numérico padrão às células selecionadas.</ahelp>"
 
 #. acBdB
 #: default_number_formats.xhp
@@ -54887,7 +54914,7 @@ msgctxt ""
 "par_id3155922\n"
 "help.text"
 msgid "<image src=\"cmd/lc_numberformatstandard.svg\" id=\"img_id3156024\" width=\"1cm\" height=\"1cm\"><alt id=\"alt_id3156024\">Icon General Number Format</alt></image>"
-msgstr ""
+msgstr "<image src=\"cmd/lc_numberformatstandard.svg\" id=\"img_id3156024\" width=\"1cm\" height=\"1cm\"><alt id=\"alt_id3156024\">Ícone Formato numérico Geral</alt></image>"
 
 #. obVcY
 #: default_number_formats.xhp
@@ -54896,7 +54923,7 @@ msgctxt ""
 "par_id3153361\n"
 "help.text"
 msgid "Number Format: General"
-msgstr ""
+msgstr "Formato numérico: Geral"
 
 #. E7GxE
 #: default_number_formats.xhp
@@ -54905,7 +54932,7 @@ msgctxt ""
 "hd_id381674560759637\n"
 "help.text"
 msgid "<link href=\"text/scalc/01/default_number_formats.xhp\">Number format: Number</link>"
-msgstr ""
+msgstr "<link href=\"text/scalc/01/default_number_formats.xhp\">Formato numérico: Número</link>"
 
 #. ASdou
 #: default_number_formats.xhp
@@ -54914,7 +54941,7 @@ msgctxt ""
 "par_id741674560753997\n"
 "help.text"
 msgid "Applies the default decimal number format to the selected cells."
-msgstr ""
+msgstr "Aplica o formato numérico decimal padrão às células selecionadas."
 
 #. hbYJM
 #: default_number_formats.xhp
@@ -54923,7 +54950,7 @@ msgctxt ""
 "par_id901674564711935\n"
 "help.text"
 msgid "<image src=\"cmd/lc_numberformatdecimal.svg\" id=\"img_id841674564711937\" width=\"1cm\" height=\"1cm\"><alt id=\"alt_id191674564711938\">Icon Number format: Number</alt></image>"
-msgstr ""
+msgstr "<image src=\"cmd/lc_numberformatdecimal.svg\" id=\"img_id841674564711937\" width=\"1cm\" height=\"1cm\"><alt id=\"alt_id191674564711938\">Ícone Formato numérico: Número</alt></image>"
 
 #. 4JhDr
 #: default_number_formats.xhp
@@ -54932,7 +54959,7 @@ msgctxt ""
 "par_id361674564711940\n"
 "help.text"
 msgid "Number format: Number"
-msgstr ""
+msgstr "Formato numérico: Número"
 
 #. w2Sfo
 #: default_number_formats.xhp
@@ -54941,7 +54968,7 @@ msgctxt ""
 "hd_id3156329\n"
 "help.text"
 msgid "<link href=\"text/scalc/01/default_number_formats.xhp\">Number format: Percent</link>"
-msgstr ""
+msgstr "<link href=\"text/scalc/01/default_number_formats.xhp\">Formato numérico: Porcentagem</link>"
 
 #. CQAWE
 #: default_number_formats.xhp
@@ -54950,7 +54977,7 @@ msgctxt ""
 "par_id3155629\n"
 "help.text"
 msgid "<ahelp hid=\".uno:NumberFormatPercent\">Applies the percentage format to the selected cells.</ahelp>"
-msgstr ""
+msgstr "<ahelp hid=\".uno:NumberFormatPercent\">Aplica o formato de porcentagem às células selecionadas.</ahelp>"
 
 #. WJkBh
 #: default_number_formats.xhp
@@ -54959,7 +54986,7 @@ msgctxt ""
 "par_id3153968\n"
 "help.text"
 msgid "<image id=\"img_id3150869\" src=\"cmd/lc_numberformatpercent.svg\" width=\"1cm\" height=\"1cm\"><alt id=\"alt_id3150869\">Icon Number Format: Percent</alt></image>"
-msgstr ""
+msgstr "<image id=\"img_id3150869\" src=\"cmd/lc_numberformatpercent.svg\" width=\"1cm\" height=\"1cm\"><alt id=\"alt_id3150869\">Ícone Formato numérico: porcentagem</alt></image>"
 
 #. beHGN
 #: default_number_formats.xhp
@@ -54968,7 +54995,7 @@ msgctxt ""
 "par_id3151114\n"
 "help.text"
 msgid "Number Format: Percent"
-msgstr ""
+msgstr "Formato numérico: Porcentagem"
 
 #. P67mA
 #: default_number_formats.xhp
@@ -54977,7 +55004,7 @@ msgctxt ""
 "hd_id3152892\n"
 "help.text"
 msgid "<link href=\"text/scalc/01/default_number_formats.xhp\">Number format: Currency</link>"
-msgstr ""
+msgstr "<link href=\"text/scalc/01/default_number_formats.xhp\">Formato numérico: Moeda</link>"
 
 #. 4gkvd
 #: default_number_formats.xhp
@@ -54986,7 +55013,7 @@ msgctxt ""
 "par_id3148837\n"
 "help.text"
 msgid "<ahelp hid=\".uno:NumberFormatCurrency\" visibility=\"visible\">Applies the default currency format to the selected cells.</ahelp>"
-msgstr ""
+msgstr "<ahelp hid=\".uno:NumberFormatCurrency\" visibility=\"visible\">Aplica o formato de moeda padrão às células selecionadas.</ahelp>"
 
 #. wNvKY
 #: default_number_formats.xhp
@@ -54995,7 +55022,7 @@ msgctxt ""
 "par_id3155267\n"
 "help.text"
 msgid "<image src=\"cmd/lc_numberformatcurrency.svg\" id=\"img_id3159096\" width=\"1cm\" height=\"1cm\"><alt id=\"alt_id3159096\">Currency Number Format Icon</alt></image>"
-msgstr ""
+msgstr "<image src=\"cmd/lc_numberformatcurrency.svg\" id=\"img_id3159096\" width=\"1cm\" height=\"1cm\"><alt id=\"alt_id3159096\">Ícone Formato numérico: moeda</alt></image>"
 
 #. KG3Ea
 #: default_number_formats.xhp
@@ -55004,7 +55031,7 @@ msgctxt ""
 "par_id3150214\n"
 "help.text"
 msgid "Number Format: Currency"
-msgstr ""
+msgstr "Formato numérico: Moeda"
 
 #. VmqXg
 #: default_number_formats.xhp
@@ -55013,7 +55040,7 @@ msgctxt ""
 "par_idN10843\n"
 "help.text"
 msgid "<link href=\"text/scalc/01/default_number_formats.xhp\">Number Format : Date</link>"
-msgstr ""
+msgstr "<link href=\"text/scalc/01/default_number_formats.xhp\">Formato numérico: Data</link>"
 
 #. czUYu
 #: default_number_formats.xhp
@@ -55022,7 +55049,7 @@ msgctxt ""
 "par_idN10847\n"
 "help.text"
 msgid "Applies the default date format to the selected cells."
-msgstr ""
+msgstr "Aplica o formato numérico padrão de data às células selecionadas."
 
 #. LLviv
 #: default_number_formats.xhp
@@ -55031,7 +55058,7 @@ msgctxt ""
 "par_id951674565406059\n"
 "help.text"
 msgid "<image src=\"cmd/lc_numberformatdate.svg\" id=\"img_id291674565406060\" width=\"1cm\" height=\"1cm\"><alt id=\"alt_id871674565406062\">Icon Number Format : Date</alt></image>"
-msgstr ""
+msgstr "<image src=\"cmd/lc_numberformatdate.svg\" id=\"img_id291674565406060\" width=\"1cm\" height=\"1cm\"><alt id=\"alt_id871674565406062\">Ícone Formato numérico: Data</alt></image>"
 
 #. GBmzD
 #: default_number_formats.xhp
@@ -55040,7 +55067,7 @@ msgctxt ""
 "par_id691674565406063\n"
 "help.text"
 msgid "Number Format : Date"
-msgstr ""
+msgstr "Formato numérico: Data"
 
 #. Gx3sL
 #: default_number_formats.xhp
@@ -55049,7 +55076,7 @@ msgctxt ""
 "hd_id531674560537020\n"
 "help.text"
 msgid "<link href=\"text/scalc/01/default_number_formats.xhp\">Number Format: Time</link>"
-msgstr ""
+msgstr "<link href=\"text/scalc/01/default_number_formats.xhp\">Formato numérico: Hora</link>"
 
 #. Py7SH
 #: default_number_formats.xhp
@@ -55058,7 +55085,7 @@ msgctxt ""
 "par_id301674560577097\n"
 "help.text"
 msgid "Applies the default time format to the selected cells."
-msgstr ""
+msgstr "Aplica o formato numérico padrão de hora às células selecionadas."
 
 #. o3DWb
 #: default_number_formats.xhp
@@ -55067,7 +55094,7 @@ msgctxt ""
 "par_id491674565650531\n"
 "help.text"
 msgid "<image src=\"cmd/lc_numberformattime.svg\" id=\"img_id461674565650532\" width=\"1cm\" height=\"1cm\"><alt id=\"alt_id231674565650533\">Icon Number Format: Time</alt></image>"
-msgstr ""
+msgstr "<image src=\"cmd/lc_numberformattime.svg\" id=\"img_id461674565650532\" width=\"1cm\" height=\"1cm\"><alt id=\"alt_id231674565650533\">Ícone Formato numérico: Hora</alt></image>"
 
 #. nABBs
 #: default_number_formats.xhp
@@ -55076,7 +55103,7 @@ msgctxt ""
 "par_id431674565650535\n"
 "help.text"
 msgid "Number Format: Time"
-msgstr ""
+msgstr "Formato numérico: Hora"
 
 #. BcDfm
 #: default_number_formats.xhp
@@ -55085,7 +55112,7 @@ msgctxt ""
 "par_idN1085E\n"
 "help.text"
 msgid "<link href=\"text/scalc/01/default_number_formats.xhp\">Number Format: Scientific</link>"
-msgstr ""
+msgstr "<link href=\"text/scalc/01/default_number_formats.xhp\">Formato numérico: Científico</link>"
 
 #. cFKyR
 #: default_number_formats.xhp
@@ -55094,7 +55121,7 @@ msgctxt ""
 "par_idN10862\n"
 "help.text"
 msgid "Applies the default scientific format to the selected cells."
-msgstr ""
+msgstr "Aplica o formato numérico científico padrão às células selecionadas."
 
 #. gCjsN
 #: default_number_formats.xhp
@@ -55103,7 +55130,7 @@ msgctxt ""
 "par_id691674565759525\n"
 "help.text"
 msgid "<image src=\"cmd/lc_numberformatscientific.svg\" id=\"img_id411674565759526\" width=\"1cm\" height=\"1cm\"><alt id=\"alt_id351674565759527\">Icon Number Format: Scientific</alt></image>"
-msgstr ""
+msgstr "<image src=\"cmd/lc_numberformatscientific.svg\" id=\"img_id411674565759526\" width=\"1cm\" height=\"1cm\"><alt id=\"alt_id351674565759527\">Ícone Formato numérico: Científico</alt></image>"
 
 #. 47V9G
 #: default_number_formats.xhp
@@ -55112,7 +55139,7 @@ msgctxt ""
 "par_id221674565759529\n"
 "help.text"
 msgid "Number Format: Scientific"
-msgstr ""
+msgstr "Formato numérico: Científico"
 
 #. SFQkA
 #: default_number_formats.xhp
@@ -55121,7 +55148,7 @@ msgctxt ""
 "hd_id3149164\n"
 "help.text"
 msgid "<link href=\"text/scalc/01/default_number_formats.xhp\">Number Format: Delete Decimal Place</link>"
-msgstr ""
+msgstr "<link href=\"text/scalc/01/default_number_formats.xhp\">Formato numérico: Excluir casa decimal</link>"
 
 #. qEctd
 #: default_number_formats.xhp
@@ -55130,7 +55157,7 @@ msgctxt ""
 "par_id3147264\n"
 "help.text"
 msgid "<ahelp hid=\".uno:NumberFormatDecDecimals\">Removes one decimal place from the numbers in the selected cells.</ahelp>"
-msgstr ""
+msgstr "<ahelp hid=\".uno:NumberFormatDecDecimals\">Remove uma casa decimal dos números das células selecionadas.</ahelp>"
 
 #. LSFkZ
 #: default_number_formats.xhp
@@ -55139,7 +55166,7 @@ msgctxt ""
 "par_id3145173\n"
 "help.text"
 msgid "<image id=\"img_id3153192\" src=\"cmd/lc_numberformatdecdecimals.svg\" width=\"1cm\" height=\"1cm\"><alt id=\"alt_id3153192\">Icon Delete Decimal Place</alt></image>"
-msgstr ""
+msgstr "<image id=\"img_id3153192\" src=\"cmd/lc_numberformatdecdecimals.svg\" width=\"1cm\" height=\"1cm\"><alt id=\"alt_id3153192\">Ícone Excluir casa decimal</alt></image>"
 
 #. DXLiU
 #: default_number_formats.xhp
@@ -55148,7 +55175,7 @@ msgctxt ""
 "par_id3154686\n"
 "help.text"
 msgid "Number Format: Delete Decimal Place"
-msgstr ""
+msgstr "Formato numérico: Excluir casa decimal"
 
 #. u7FnL
 #: default_number_formats.xhp
@@ -55157,7 +55184,7 @@ msgctxt ""
 "hd_id3150275\n"
 "help.text"
 msgid "<link href=\"text/scalc/01/default_number_formats.xhp\">Number Format: Add Decimal Place</link>"
-msgstr ""
+msgstr "<link href=\"text/scalc/01/default_number_formats.xhp\">Formato numérico: Adicionar casa decimal</link>"
 
 #. Nn4EB
 #: default_number_formats.xhp
@@ -55166,7 +55193,7 @@ msgctxt ""
 "par_id3150792\n"
 "help.text"
 msgid "<ahelp hid=\".uno:NumberFormatIncDecimals\">Adds one decimal place to the numbers in the selected cells.</ahelp>"
-msgstr ""
+msgstr "<ahelp hid=\".uno:NumberFormatIncDecimals\">Adiciona uma casa decimal aos números das células selecionadas.</ahelp>"
 
 #. LUPUq
 #: default_number_formats.xhp
@@ -55175,7 +55202,7 @@ msgctxt ""
 "par_id3145787\n"
 "help.text"
 msgid "<image id=\"img_id3145271\" src=\"cmd/lc_numberformatincdecimals.svg\" width=\"1cm\" height=\"1cm\"><alt id=\"alt_id3145271\">Icon Add Decimal Place</alt></image>"
-msgstr ""
+msgstr "<image id=\"img_id3145271\" src=\"cmd/lc_numberformatincdecimals.svg\" width=\"1cm\" height=\"1cm\"><alt id=\"alt_id3145271\">Ícone adicionar casa decimal</alt></image>"
 
 #. jXZSA
 #: default_number_formats.xhp
@@ -55184,7 +55211,7 @@ msgctxt ""
 "par_id3149262\n"
 "help.text"
 msgid "Number Format: Add Decimal Place"
-msgstr ""
+msgstr "Formato numérico: Adicionar casa decimal"
 
 #. ZS2DP
 #: default_number_formats.xhp
@@ -55193,7 +55220,7 @@ msgctxt ""
 "par_id3154908\n"
 "help.text"
 msgid "<link href=\"text/shared/01/05020300.xhp\">Format - Cells - Numbers</link>."
-msgstr ""
+msgstr "<link href=\"text/shared/01/05020300.xhp\">Formatar - Células - Números</link>."
 
 #. UiW5C
 #: ex_data_stat_func.xhp
@@ -56750,7 +56777,7 @@ msgctxt ""
 "par_id651677017267822\n"
 "help.text"
 msgid "<link href=\"https://wiki.documentfoundation.org/Documentation/Calc_Functions/AGGREGATE\">AGGREGATE wiki page</link>."
-msgstr ""
+msgstr "<link href=\"https://wiki.documentfoundation.org/Documentation/Calc_Functions/AGGREGATE\">Página wiki da função AGGREGAR</link>."
 
 #. cjxCG
 #: func_aggregate.xhp
@@ -56867,7 +56894,7 @@ msgctxt ""
 "par_id721677017247207\n"
 "help.text"
 msgid "<link href=\"https://wiki.documentfoundation.org/Documentation/Calc_Functions/ARABIC\">ARABIC wiki page</link>."
-msgstr ""
+msgstr "<link href=\"https://wiki.documentfoundation.org/Documentation/Calc_Functions/ARABIC\">Página wiki da função ÁRABE</link>."
 
 #. yugTC
 #: func_asc.xhp
@@ -56966,7 +56993,7 @@ msgctxt ""
 "par_id931677017229646\n"
 "help.text"
 msgid "<link href=\"https://wiki.documentfoundation.org/Documentation/Calc_Functions/ASC\">ASC wiki page</link>."
-msgstr ""
+msgstr "<link href=\"https://wiki.documentfoundation.org/Documentation/Calc_Functions/ASC\">Página wiki da função ASC</link>."
 
 #. y9q7t
 #: func_averageif.xhp
@@ -57299,7 +57326,7 @@ msgctxt ""
 "par_id421677017213184\n"
 "help.text"
 msgid "<link href=\"https://wiki.documentfoundation.org/Documentation/Calc_Functions/AVERAGEIF\">AVERAGEIF wiki page</link>."
-msgstr ""
+msgstr "<link href=\"https://wiki.documentfoundation.org/Documentation/Calc_Functions/AVERAGEIF\">Página wiki da função MÉDIASE</link>."
 
 #. TUEKr
 #: func_averageifs.xhp
@@ -57488,7 +57515,7 @@ msgctxt ""
 "par_id371677017196557\n"
 "help.text"
 msgid "<link href=\"https://wiki.documentfoundation.org/Documentation/Calc_Functions/AVERAGEIFS\">AVERAGEIFS wiki page</link>."
-msgstr ""
+msgstr "<link href=\"https://wiki.documentfoundation.org/Documentation/Calc_Functions/AVERAGEIFS\">Página wiki da função MÉDIASES</link>."
 
 #. s6GFW
 #: func_ceiling.xhp
@@ -58010,7 +58037,7 @@ msgctxt ""
 "par_id971677016806972\n"
 "help.text"
 msgid "<link href=\"https://wiki.documentfoundation.org/Documentation/Calc_Functions/CEILING\">CEILING</link>, <link href=\"https://wiki.documentfoundation.org/Documentation/Calc_Functions/CEILING.XCL\">CEILING.XCL</link>, <link href=\"https://wiki.documentfoundation.org/Documentation/Calc_Functions/CEILING.PRECISE\">CEILING.PRECISE</link>, <link href=\"https://wiki.documentfoundation.org/Documentation/Calc_Functions/ISO.CEILING\">ISO.CEILING</link>, <link href=\"https://wiki.documentfoundation.org/Documentation/Calc_Functions/CEILING.MATH\">CEILING.MATH</link> wiki pages."
-msgstr ""
+msgstr "Páginas wiki das funções <link href=\"https://wiki.documentfoundation.org/Documentation/Calc_Functions/CEILING\">TETO</link>, <link href=\"https://wiki.documentfoundation.org/Documentation/Calc_Functions/CEILING.XCL\">TETO.XCL</link>, <link href=\"https://wiki.documentfoundation.org/Documentation/Calc_Functions/CEILING.PRECISE\">TETO.PRECISO</link>, <link href=\"https://wiki.documentfoundation.org/Documentation/Calc_Functions/ISO.CEILING\">ISO.TETO</link>, <link href=\"https://wiki.documentfoundation.org/Documentation/Calc_Functions/CEILING.MATH\">TETO.MAT</link>."
 
 #. GuEcB
 #: func_color.xhp
@@ -58118,7 +58145,7 @@ msgctxt ""
 "par_id61677016779611\n"
 "help.text"
 msgid "<link href=\"https://wiki.documentfoundation.org/Documentation/Calc_Functions/COLOR\">COLOR wiki page</link>."
-msgstr ""
+msgstr "<link href=\"https://wiki.documentfoundation.org/Documentation/Calc_Functions/COLOR\">Página wiki da função COR</link>."
 
 #. cfeEJ
 #: func_concat.xhp
@@ -58199,7 +58226,7 @@ msgctxt ""
 "par_id701677016751508\n"
 "help.text"
 msgid "<link href=\"https://wiki.documentfoundation.org/Documentation/Calc_Functions/CONCAT\">CONCAT wiki page</link>."
-msgstr ""
+msgstr "<link href=\"https://wiki.documentfoundation.org/Documentation/Calc_Functions/CONCAT\">Página wiki da função CONCAT</link>."
 
 #. D6Gew
 #: func_concat.xhp
@@ -60188,7 +60215,7 @@ msgctxt ""
 "par_id131677016670241\n"
 "help.text"
 msgid "<link href=\"https://wiki.documentfoundation.org/Documentation/Calc_Functions/COUNTIFS\">COUNTIFS wiki page</link>."
-msgstr ""
+msgstr "<link href=\"https://wiki.documentfoundation.org/Documentation/Calc_Functions/COUNTIFS\">Página wiki da função CONT.SES</link>."
 
 #. GW3GV
 #: func_date.xhp
@@ -60296,7 +60323,7 @@ msgctxt ""
 "par_id701677016652715\n"
 "help.text"
 msgid "<link href=\"https://wiki.documentfoundation.org/Documentation/Calc_Functions/DATE\">DATE wiki page</link>."
-msgstr ""
+msgstr "<link href=\"https://wiki.documentfoundation.org/Documentation/Calc_Functions/DATE\">Página wiki da função DATA</link>."
 
 #. pCLUK
 #: func_datedif.xhp
@@ -60521,7 +60548,7 @@ msgctxt ""
 "par_id311677016639702\n"
 "help.text"
 msgid "<link href=\"https://wiki.documentfoundation.org/Documentation/Calc_Functions/DATEDIF\">DATEDIF wiki page</link>."
-msgstr ""
+msgstr "<link href=\"https://wiki.documentfoundation.org/Documentation/Calc_Functions/DATEDIF\">Página wiki da função DATADIF</link>."
 
 #. 7eFQV
 #: func_datevalue.xhp
@@ -60611,7 +60638,7 @@ msgctxt ""
 "par_id331677016625664\n"
 "help.text"
 msgid "<link href=\"https://wiki.documentfoundation.org/Documentation/Calc_Functions/DATEVALUE\">DATEVALUE wiki page</link>."
-msgstr ""
+msgstr "<link href=\"https://wiki.documentfoundation.org/Documentation/Calc_Functions/DATEVALUE\">Página wiki da função DATA.VALOR</link>."
 
 #. hrZuN
 #: func_day.xhp
@@ -60701,7 +60728,7 @@ msgctxt ""
 "par_id951677016613386\n"
 "help.text"
 msgid "<link href=\"https://wiki.documentfoundation.org/Documentation/Calc_Functions/DAY\">DAY wiki page</link>."
-msgstr ""
+msgstr "<link href=\"https://wiki.documentfoundation.org/Documentation/Calc_Functions/DAY\">Página wiki da função DIA</link>."
 
 #. MsTm6
 #: func_days.xhp
@@ -61250,7 +61277,7 @@ msgctxt ""
 "par_id121020152053105891\n"
 "help.text"
 msgid "#NULL! (Err:521)"
-msgstr ""
+msgstr "#NULO! (Err:521)"
 
 #. YFSGC
 #: func_error_type.xhp
@@ -61259,7 +61286,7 @@ msgctxt ""
 "par_id121020152053148760\n"
 "help.text"
 msgid "#DIV/0! (Err:532)"
-msgstr ""
+msgstr "#DIV/0! (Err:532)"
 
 #. DkwY8
 #: func_error_type.xhp
@@ -61268,7 +61295,7 @@ msgctxt ""
 "par_id121020152053296785\n"
 "help.text"
 msgid "#VALUE! (Err:519)"
-msgstr ""
+msgstr "#VALOR! (Err:519)"
 
 #. 8Ezt4
 #: func_error_type.xhp
@@ -61277,7 +61304,7 @@ msgctxt ""
 "par_id121020152053329868\n"
 "help.text"
 msgid "#REF! (Err:524)"
-msgstr ""
+msgstr "#REF! (Err:524)"
 
 #. A6cRC
 #: func_error_type.xhp
@@ -61286,7 +61313,7 @@ msgctxt ""
 "par_id121020152053353976\n"
 "help.text"
 msgid "#NAME? (Err:525)"
-msgstr ""
+msgstr "#NOME? (Err:525)"
 
 #. HtBtf
 #: func_error_type.xhp
@@ -61295,7 +61322,7 @@ msgctxt ""
 "par_id121020152053408216\n"
 "help.text"
 msgid "#NUM! (Err:503)"
-msgstr ""
+msgstr "#NUM! (Err:503)"
 
 #. nQMa6
 #: func_error_type.xhp
@@ -61304,7 +61331,7 @@ msgctxt ""
 "par_id121020152054007072\n"
 "help.text"
 msgid "#N/A (Err:32767)"
-msgstr ""
+msgstr "#N/DISP (Err:32767)"
 
 #. ZB8XE
 #: func_error_type.xhp
@@ -66893,7 +66920,7 @@ msgctxt ""
 "par_id441673375101757\n"
 "help.text"
 msgid "<ahelp hid=\"HID_FUNC_VORLAGE\"><variable id=\"func_style_desc\">Applies a style to the cell containing the formula.</variable></ahelp> After a set amount of time, another style can be applied."
-msgstr ""
+msgstr "<ahelp hid=\"HID_FUNC_VORLAGE\"><variable id=\"func_style_desc\">Aplica um estilo à célula que contém a fórmula.</variable></ahelp> Após um período de tempo determinado, outro estilo pode ser aplicado."
 
 #. GswPt
 #: func_style.xhp
@@ -66902,15 +66929,15 @@ msgctxt ""
 "par_id681673375365338\n"
 "help.text"
 msgid "This function always returns the numeric value 0, which allows to use it by adding the <emph>STYLE</emph> function to other functions in the same cell without changing its value."
-msgstr ""
+msgstr "Esta função sempre retorna o valor numérico 0, o que permite utilizá-la adicionando a função <emph>ESTILO</emph> a outras funções na mesma célula sem alterar seu valor."
 
-#. C6X4Q
+#. m2FBk
 #: func_style.xhp
 msgctxt ""
 "func_style.xhp\n"
 "par_id961673376106137\n"
 "help.text"
-msgid "<input>STYLE(\"Style\" [; Time [; \"Style2\"]])</input>"
+msgid "STYLE(\"Style\" [; Time [; \"Style2\"]])"
 msgstr ""
 
 #. NkFMi
@@ -66920,7 +66947,7 @@ msgctxt ""
 "par_id31673375542211\n"
 "help.text"
 msgid "<emph>Style</emph> is the name of the cell style to be applied to the cell. Style names are not case-sensitive and must be entered in quotation marks."
-msgstr ""
+msgstr "<emph>Estilo</emph> é o nome do estilo de célula a ser aplicado à célula. Os nomes de estilo não diferenciam maiúsculas de minúsculas e devem ser inseridos entre aspas."
 
 #. 8E46w
 #: func_style.xhp
@@ -66929,7 +66956,7 @@ msgctxt ""
 "par_id161673375589532\n"
 "help.text"
 msgid "<emph>Time</emph> is an optional time range in seconds. After this time is elapsed, the style defined in <emph>Style2</emph> is applied. Leave this parameter blank if you do not want the style to be changed."
-msgstr ""
+msgstr "<emph>Tempo</emph> é um intervalo de tempo opcional em segundos. Depois de decorrido esse tempo, aplica-se o estilo definido em <emph>Estilo2</emph>. Deixe este parâmetro em branco se não quiser que o estilo seja alterado."
 
 #. aFQCT
 #: func_style.xhp
@@ -66938,7 +66965,7 @@ msgctxt ""
 "par_id81673375703156\n"
 "help.text"
 msgid "<emph>Style2</emph> is the optional name of a cell style assigned to the cell after the time specified in the <emph>Time</emph> parameter has passed. If this parameter is missing the \"Default\" cell style is applied."
-msgstr ""
+msgstr "<emph>Estilo2</emph> é o nome opcional de um estilo de célula atribuído à célula após o tempo decorrido especificado no parâmetro <emph>Tempo</emph>. Se omitido, aplica-se o estilo de célula \"Padrão\"."
 
 #. ryUMD
 #: func_style.xhp
@@ -66947,7 +66974,7 @@ msgctxt ""
 "par_id971673376620554\n"
 "help.text"
 msgid "<embedvar href=\"text/scalc/00/00000004.xhp#optional\"/>"
-msgstr ""
+msgstr "<embedvar href=\"text/scalc/00/00000004.xhp#optional\"/>"
 
 #. U3hrJ
 #: func_style.xhp
@@ -66956,7 +66983,7 @@ msgctxt ""
 "par_id491673376748686\n"
 "help.text"
 msgid "<input>=10+STYLE(\"Good\",60,\"Neutral\")</input>"
-msgstr ""
+msgstr "<input>=10+ESTILO(\"Bom\",60,\"Neutro\")</input>"
 
 #. 8deaD
 #: func_style.xhp
@@ -66965,7 +66992,7 @@ msgctxt ""
 "par_id11673376842469\n"
 "help.text"
 msgid "Enters the value 10 into the cell and applies the style named \"Good\". After 60 seconds, the style \"Neutral\" is applied."
-msgstr ""
+msgstr "Insere o valor 10 na célula e aplica o estilo denominado \"Bom\". Após 60 segundos, aplica-se o estilo \"Neutro\"."
 
 #. UYv4h
 #: func_style.xhp
@@ -66974,7 +67001,7 @@ msgctxt ""
 "par_id271673376901358\n"
 "help.text"
 msgid "<input>=A1*A2+STYLE(IF(CURRENT()<100,\"Bad\",\"Good\"))</input>"
-msgstr ""
+msgstr "<input>=A1*A2+ESTILO(SE(ATUAL()<100,\"Ruim\",\"Bom\"))</input>"
 
 #. Zt8eb
 #: func_style.xhp
@@ -66983,7 +67010,7 @@ msgctxt ""
 "par_id1001673377339392\n"
 "help.text"
 msgid "Enters the result of multiplying the values in cells A1 and A2 and applies the style \"Bad\" if the result is less than 100, otherwise the style \"Good\" is applied. Here the function <emph>CURRENT()</emph> is used to get the currently evaluated value of the function in the cell."
-msgstr ""
+msgstr "Insere o resultado da multiplicação dos valores nas células A1 e A2 e aplica o estilo \"Ruim\" se o resultado for menor que 100, caso contrário, aplica-se o estilo \"Bom\". Aqui a função <emph>ATUAL()</emph> é usada para obter o valor atual da função na célula."
 
 #. nMoAR
 #: func_style.xhp
@@ -66992,7 +67019,7 @@ msgctxt ""
 "par_id761673377678426\n"
 "help.text"
 msgid "<input>=\"Total\"&T(STYLE(\"Result\"))</input>"
-msgstr ""
+msgstr "<input>=\"Total\"&T(ESTILO(\"Resultado\"))</input>"
 
 #. hBUAA
 #: func_style.xhp
@@ -67001,7 +67028,7 @@ msgctxt ""
 "par_id871673377683120\n"
 "help.text"
 msgid "Enters the text \"Total\" into the cell and applies the style named \"Result\". Note that this example deals with textual values, hence the output of the <emph>STYLE</emph> function needs to be appended to the text using the & operator. The function <emph>T()</emph> is used to prevent the number \"0\" being appended to the resulting text."
-msgstr ""
+msgstr "Insere o texto \"Total\" na célula e aplica o estilo denominado \"Resultado\". Observe que este exemplo lida com valores textuais, portanto, a saída da função <emph>ESTILO</emph> precisa ser anexada ao texto usando o operador &. A função <emph>T()</emph> é usada para evitar que o número \"0\" seja acrescentado ao texto resultante."
 
 #. zzt3s
 #: func_style.xhp
@@ -67010,7 +67037,7 @@ msgctxt ""
 "par_id201677014634447\n"
 "help.text"
 msgid "<link href=\"https://wiki.documentfoundation.org/Documentation/Calc_Functions/STYLE\">STYLE wiki page</link>."
-msgstr ""
+msgstr "<link href=\"https://wiki.documentfoundation.org/Documentation/Calc_Functions/STYLE\">Página wiki da função ESTILO</link>."
 
 #. rEQGK
 #: func_style.xhp
@@ -67019,7 +67046,7 @@ msgctxt ""
 "par_id631673379195650\n"
 "help.text"
 msgid "<link href=\"text/scalc/01/04060109.xhp\">Spreadsheet Functions</link>"
-msgstr ""
+msgstr "<link href=\"text/scalc/01/04060109.xhp\">Funções de planilha</link>"
 
 #. VZ5Ga
 #: func_style.xhp
@@ -67028,7 +67055,7 @@ msgctxt ""
 "par_id151673379420755\n"
 "help.text"
 msgid "<link href=\"text/scalc/guide/cellstyle_by_formula.xhp\">Assigning Formats by Formula</link>"
-msgstr ""
+msgstr "<link href=\"text/scalc/guide/cellstyle_by_formula.xhp\">Atribuir formatos por fórmula</link>"
 
 #. YADMA
 #: func_style.xhp
@@ -67037,7 +67064,7 @@ msgctxt ""
 "par_id461673376361959\n"
 "help.text"
 msgid "<link href=\"text/scalc/01/04060104.xhp#func_current_description\">CURRENT function</link>"
-msgstr ""
+msgstr "<link href=\"text/scalc/01/04060104.xhp#func_current_description\">Função ATUAL</link>"
 
 #. L6tnb
 #: func_style.xhp
@@ -67046,7 +67073,7 @@ msgctxt ""
 "par_id381673378944042\n"
 "help.text"
 msgid "<link href=\"text/scalc/01/04060110.xhp#t\">T function</link>"
-msgstr ""
+msgstr "<link href=\"text/scalc/01/04060110.xhp#t\">Função T</link>"
 
 #. mEZBk
 #: func_sum.xhp
@@ -67127,7 +67154,7 @@ msgctxt ""
 "par_id3151756\n"
 "help.text"
 msgid "A formula such as <input>=SUM((A1:A40>=C1)*(A1:A40<C2)*B1:B40)</input> may be entered as an <link href=\"text/scalc/01/04060107.xhp\">array formula</link> by pressing the Shift<switchinline select=\"sys\"><caseinline select=\"MAC\">+Command</caseinline><defaultinline>+Ctrl</defaultinline></switchinline>+Enter keys instead of simply pressing the Enter key to finish entering the formula. The formula will then be shown in the Formula bar enclosed in braces and operates by multiplying corresponding elements of the arrays together and returning their sum."
-msgstr ""
+msgstr "Uma fórmula como <input>=SOMA((A1:A40>=C1)*(A1:A40<C2)*B1:B40)</input> pode ser inserida como um <link href=\"text/scalc/01 /04060107.xhp\">fórmula de matriz</link> pressionando as teclas Shift<switchinline select=\"sys\"><caseinline select=\"MAC\">+Command</caseinline><defaultinline>+Ctrl</defaultinline></switchinline >+ Enter em vez de simplesmente pressionar a tecla Enter para terminar de inserir a fórmula. A fórmula será mostrada na Barra de fórmulas entre chaves e opera multiplicando os elementos correspondentes das matrizes e retornando sua soma."
 
 #. KohAT
 #: func_sum.xhp
@@ -67136,7 +67163,7 @@ msgctxt ""
 "par_id771677014538669\n"
 "help.text"
 msgid "<link href=\"https://wiki.documentfoundation.org/Documentation/Calc_Functions/SUM\">SUM wiki page</link>."
-msgstr ""
+msgstr "<link href=\"https://wiki.documentfoundation.org/Documentation/Calc_Functions/SUM\">Página wiki da função SOMA</link>."
 
 #. DfceH
 #: func_sumifs.xhp
@@ -67325,7 +67352,7 @@ msgctxt ""
 "par_id971677014512029\n"
 "help.text"
 msgid "<link href=\"https://wiki.documentfoundation.org/Documentation/Calc_Functions/SUMIFS\">SUMIFS wiki page</link>."
-msgstr ""
+msgstr "<link href=\"https://wiki.documentfoundation.org/Documentation/Calc_Functions/SUMIFS\">Página wiki da função SOMASES</link>."
 
 #. UUeQC
 #: func_switch.xhp
@@ -67442,7 +67469,7 @@ msgctxt ""
 "par_id171677014475983\n"
 "help.text"
 msgid "<link href=\"https://wiki.documentfoundation.org/Documentation/Calc_Functions/SWITCH\">SWITCH wiki page</link>."
-msgstr ""
+msgstr "<link href=\"https://wiki.documentfoundation.org/Documentation/Calc_Functions/SWITCH\">Página wiki da função PARÂMETRO</link>."
 
 #. XELDQ
 #: func_switch.xhp
@@ -67586,7 +67613,7 @@ msgctxt ""
 "par_id761677014445916\n"
 "help.text"
 msgid "<link href=\"https://wiki.documentfoundation.org/Documentation/Calc_Functions/TEXTJOIN\">TEXTJOIN wiki page</link>."
-msgstr ""
+msgstr "<link href=\"https://wiki.documentfoundation.org/Documentation/Calc_Functions/TEXTJOIN\">Página wiki da função UNIRTEXTO</link>."
 
 #. CdeS7
 #: func_textjoin.xhp
@@ -67694,7 +67721,7 @@ msgctxt ""
 "par_id741677014416564\n"
 "help.text"
 msgid "<link href=\"https://wiki.documentfoundation.org/Documentation/Calc_Functions/TIME\">TIME wiki page</link>."
-msgstr ""
+msgstr "<link href=\"https://wiki.documentfoundation.org/Documentation/Calc_Functions/TIME\">Página wiki da função TEMPO</link>."
 
 #. eUYTq
 #: func_timevalue.xhp
@@ -67793,7 +67820,7 @@ msgctxt ""
 "par_id191677014389883\n"
 "help.text"
 msgid "<link href=\"https://wiki.documentfoundation.org/Documentation/Calc_Functions/TIMEVALUE\">TIMEVALUE wiki page</link>."
-msgstr ""
+msgstr "<link href=\"https://wiki.documentfoundation.org/Documentation/Calc_Functions/TIMEVALUE\">Página wiki da função VALOR.TEMPO</link>."
 
 #. 8LaX7
 #: func_today.xhp
@@ -67865,7 +67892,7 @@ msgctxt ""
 "par_id691677014365707\n"
 "help.text"
 msgid "<link href=\"https://wiki.documentfoundation.org/Documentation/Calc_Functions/TODAY\">TODAY wiki page</link>."
-msgstr ""
+msgstr "<link href=\"https://wiki.documentfoundation.org/Documentation/Calc_Functions/TODAY\">Página wiki da função HOJE</link>."
 
 #. Y2uYG
 #: func_trunc.xhp
@@ -67919,7 +67946,7 @@ msgctxt ""
 "par_id321641927458888\n"
 "help.text"
 msgid "The rounding method used by this function is known as <emph>rounding towards zero</emph>. The magnitude of the resulting number will always be less than or equal to the original number."
-msgstr ""
+msgstr "O método de arredondamento usado por esta função é conhecido como <emph>arredondamento para zero</emph>. A magnitude do número resultante será sempre menor ou igual ao número original."
 
 #. SqCQv
 #: func_trunc.xhp
@@ -68000,7 +68027,7 @@ msgctxt ""
 "par_id821677013765236\n"
 "help.text"
 msgid "<link href=\"https://wiki.documentfoundation.org/Documentation/Calc_Functions/TRUNC\">TRUNC wiki page</link>."
-msgstr ""
+msgstr "<link href=\"https://wiki.documentfoundation.org/Documentation/Calc_Functions/TRUNC\">Página wiki da função TRUNCAR</link>."
 
 #. w86Dm
 #: func_value.xhp
@@ -68135,7 +68162,7 @@ msgctxt ""
 "par_id711677013742963\n"
 "help.text"
 msgid "<link href=\"https://wiki.documentfoundation.org/Documentation/Calc_Functions/VALUE\">VALUE wiki page</link>."
-msgstr ""
+msgstr "<link href=\"https://wiki.documentfoundation.org/Documentation/Calc_Functions/VALUE\">Página wiki da função VALOR</link>."
 
 #. dQeP6
 #: func_webservice.xhp
@@ -68153,7 +68180,7 @@ msgctxt ""
 "hd_id391677019419915\n"
 "help.text"
 msgid "<variable id=\"h1\"><link href=\"text/scalc/01/func_webservice.xhp\">URI Functions</link></variable>"
-msgstr ""
+msgstr "<variable id=\"h1\"><link href=\"text/scalc/01/func_webservice.xhp\">Funções de Internet (URI)</link></variable>"
 
 #. 9vyBF
 #: func_webservice.xhp
@@ -68162,7 +68189,7 @@ msgctxt ""
 "par_id141677019419921\n"
 "help.text"
 msgid "These spreadsheet functions are used for inserting data from Universal Resource Identifiers (URI)."
-msgstr ""
+msgstr "Estas funções de planilha servem para inserir dados de identificadores universais de recursos (URI)."
 
 #. 8sQry
 #: func_webservice.xhp
@@ -68378,7 +68405,7 @@ msgctxt ""
 "par_id781677019731175\n"
 "help.text"
 msgid "<link href=\"https://wiki.documentfoundation.org/Documentation/Calc_Functions/WEBSERVICE\">WEBSERVICE</link>, <link href=\"https://wiki.documentfoundation.org/Documentation/Calc_Functions/FILTERXML\">FILTERXML</link>, <link href=\"https://wiki.documentfoundation.org/Documentation/Calc_Functions/ENCODEURL\">ENCODEURL</link>  wiki pages."
-msgstr ""
+msgstr "<link href=\"https://wiki.documentfoundation.org/Documentation/Calc_Functions/WEBSERVICE\">SERVIÇOWEB</link>, <link href=\"https://wiki.documentfoundation.org/Documentation/Calc_Functions/FILTERXML\">FILTROXML</link>, <link href=\"https://wiki.documentfoundation.org/Documentation/Calc_Functions/ENCODEURL\">CODIFURL</link>  wiki pages."
 
 #. VBELn
 #: func_weekday.xhp
@@ -68630,7 +68657,7 @@ msgctxt ""
 "par_id131677013566555\n"
 "help.text"
 msgid "<link href=\"https://wiki.documentfoundation.org/Documentation/Calc_Functions/WEEKDAY\">WEEKDAY wiki page</link>."
-msgstr ""
+msgstr "<link href=\"https://wiki.documentfoundation.org/Documentation/Calc_Functions/WEEKDAY\">Página wiki da função DIA.DA.SEMANA</link>."
 
 #. 3iMGJ
 #: func_weeknum.xhp
@@ -68936,7 +68963,7 @@ msgctxt ""
 "par_id361677013519430\n"
 "help.text"
 msgid "<link href=\"https://wiki.documentfoundation.org/Documentation/Calc_Functions/WEEKNUM\">WEEKNUM wiki page</link>."
-msgstr ""
+msgstr "<link href=\"https://wiki.documentfoundation.org/Documentation/Calc_Functions/WEEKNUM\">Página wiki da função NÚM.SEMANA</link>."
 
 #. ZoCGw
 #: func_weeknum_ooo.xhp
@@ -69062,7 +69089,7 @@ msgctxt ""
 "par_id521677013377460\n"
 "help.text"
 msgid "<link href=\"https://wiki.documentfoundation.org/Documentation/Calc_Functions/WEEKNUM_OOO\">WEEKNUM_OOO wiki page</link>."
-msgstr ""
+msgstr "<link href=\"https://wiki.documentfoundation.org/Documentation/Calc_Functions/WEEKNUM_OOO\">Página wiki da função NÚM.SEMANA_OOO</link>."
 
 #. 9CdUK
 #: func_weeknumadd.xhp
@@ -69161,7 +69188,7 @@ msgctxt ""
 "par_id801677013334251\n"
 "help.text"
 msgid "<link href=\"https://wiki.documentfoundation.org/Documentation/Calc_Functions/WEEKNUM_EXCEL2003\">WEEKNUM_EXCEL2003 wiki page</link>."
-msgstr ""
+msgstr "<link href=\"https://wiki.documentfoundation.org/Documentation/Calc_Functions/WEEKNUM_EXCEL2003\">Página wiki da função NÚM.SEMANA_EXCEL2003</link>."
 
 #. ibEk3
 #: func_workday.intl.xhp
@@ -69341,7 +69368,7 @@ msgctxt ""
 "par_id521677013308530\n"
 "help.text"
 msgid "<link href=\"https://wiki.documentfoundation.org/Documentation/Calc_Functions/WORKDAY.INTL\">WORKDAY.INTL wiki page</link>."
-msgstr ""
+msgstr "<link href=\"https://wiki.documentfoundation.org/Documentation/Calc_Functions/WORKDAY.INTL\">Página wiki da função DIATRABALHO.INTL</link>."
 
 #. 5dvmu
 #: func_workday.xhp
@@ -69449,7 +69476,7 @@ msgctxt ""
 "par_id501677013269388\n"
 "help.text"
 msgid "<link href=\"https://wiki.documentfoundation.org/Documentation/Calc_Functions/WORKDAY\">WORKDAY wiki page</link>."
-msgstr ""
+msgstr "<link href=\"https://wiki.documentfoundation.org/Documentation/Calc_Functions/WORKDAY\">Página wiki da função DIAÚTIL</link>."
 
 #. dABAX
 #: func_year.xhp
@@ -69548,7 +69575,7 @@ msgctxt ""
 "par_id371677013165080\n"
 "help.text"
 msgid "<link href=\"https://wiki.documentfoundation.org/Documentation/Calc_Functions/YEAR\">YEAR wiki page</link>."
-msgstr ""
+msgstr "<link href=\"https://wiki.documentfoundation.org/Documentation/Calc_Functions/YEAR\">Página wiki da função ANO</link>."
 
 #. kAjPe
 #: func_yearfrac.xhp
@@ -70412,7 +70439,7 @@ msgctxt ""
 "par_id221589959855748\n"
 "help.text"
 msgid "You can install more solver engines as extensions, if available. Open <menuitem>Tools - Extensions</menuitem> and browse to the Extensions web site to search for extensions."
-msgstr ""
+msgstr "Você pode instalar mais algoritmos do solver como extensões, se disponíveis. Abra o menu <menuitem>Ferramentas - Extensões</menuitem> e navegue até o sitio internet das extensões para pesquisar as extensões."
 
 #. QtDyE
 #: solver_options.xhp
@@ -72826,6 +72853,24 @@ msgctxt ""
 msgid "For more information on the moving average, refer to the <link href=\"https://en.wikipedia.org/wiki/Moving_average\">corresponding Wikipedia article</link>."
 msgstr "Para mais informações sobre média móvel, consulte o <link href=\"https://en.wikipedia.org/wiki/Moving_average\">artigo correspondente na Wikipédia</link>."
 
+#. 8WEAB
+#: statistics_movingavg.xhp
+msgctxt ""
+"statistics_movingavg.xhp\n"
+"hd_id251681484186482\n"
+"help.text"
+msgid "Trim input range to actual data content"
+msgstr ""
+
+#. ehNLW
+#: statistics_movingavg.xhp
+msgctxt ""
+"statistics_movingavg.xhp\n"
+"par_id141681485134081\n"
+"help.text"
+msgid "Check this box to allow trimming of the input range to the actual data content before computing moving-average. Trimming data ignores unused or empty cells after the last non-empty cell in the input range, thus reducing the computing load of the moving average to the actual data. This checkbox is enabled by default."
+msgstr ""
+
 #. eoQu3
 #: statistics_movingavg.xhp
 msgctxt ""
@@ -73726,14 +73771,14 @@ msgctxt ""
 msgid "F Critical two-tail"
 msgstr "F Crítico bicaudal"
 
-#. jMBzo
+#. 6CEU9
 #: statistics_test_t.xhp
 msgctxt ""
 "statistics_test_t.xhp\n"
 "tit\n"
 "help.text"
-msgid "T Test Statistics in Calc"
-msgstr "Estatísticas de teste T no Calc"
+msgid "Paired t-test in Calc"
+msgstr ""
 
 #. cKb9k
 #: statistics_test_t.xhp
@@ -74597,7 +74642,7 @@ msgctxt ""
 "tit\n"
 "help.text"
 msgid "Zoom"
-msgstr ""
+msgstr "Zoom"
 
 #. BFTKX
 #: zoom.xhp
@@ -74606,7 +74651,7 @@ msgctxt ""
 "bm_id61678279382558\n"
 "help.text"
 msgid "<bookmark_value>Zoom;spreadsheet</bookmark_value>    <bookmark_value>Zoom in;spreadsheet</bookmark_value>    <bookmark_value>Zoom out;spreadsheet</bookmark_value>"
-msgstr ""
+msgstr "<bookmark_value>Zoom;planilha</bookmark_value>    <bookmark_value>mais zoom;planilha</bookmark_value>    <bookmark_value>menos zoom;planilha</bookmark_value>"
 
 #. FvoRD
 #: zoom.xhp
@@ -74615,7 +74660,7 @@ msgctxt ""
 "hd_id301674151617149\n"
 "help.text"
 msgid "<variable id=\"h1\"><link href=\"text/scalc/01/zoom.xhp\">Zooming In and Out in Calc</link></variable>"
-msgstr ""
+msgstr "<variable id=\"h1\"><link href=\"text/scalc/01/zoom.xhp\">Mais zoom e menos zoom no Calc</link></variable>"
 
 #. DYtFG
 #: zoom.xhp
@@ -74624,7 +74669,7 @@ msgctxt ""
 "par_id841674151617153\n"
 "help.text"
 msgid "Zoom allows users to magnify and reduce the screen display. Multiple methods of zooming in and out are available in Calc."
-msgstr ""
+msgstr "O zoom permite ampliar e reduzir a exibição na tela. Vários métodos de ampliação e redução estão disponíveis no Calc."
 
 #. rwFVD
 #: zoom.xhp
@@ -74633,7 +74678,7 @@ msgctxt ""
 "par_id791678229927893\n"
 "help.text"
 msgid "Choose one of the following methods:"
-msgstr ""
+msgstr "Escolha um dos seguintes métodos:"
 
 #. eqb5j
 #: zoom.xhp
@@ -74642,7 +74687,7 @@ msgctxt ""
 "par_id91678230156720\n"
 "help.text"
 msgid "Choose menu <menuitem>View - Zoom</menuitem>, and select the magnification value in the submenu."
-msgstr ""
+msgstr "Acesse <menuitem>Exibir - Zoom</menuitem>, e selecione o valor de ampliação no submenu."
 
 #. M3VFu
 #: zoom.xhp
@@ -74651,7 +74696,7 @@ msgctxt ""
 "par_id421678230024566\n"
 "help.text"
 msgid "Click the plus (or minus) icon on the zoom slider in the status bar. The screen size increases (or decreases) by 10% with each click."
-msgstr ""
+msgstr "Clique no ícone mais (ou menos) na régua de zoom da barra de status. O tamanho da tela aumenta (ou diminui) de 10% a cada clique."
 
 #. ZLGvd
 #: zoom.xhp
@@ -74660,7 +74705,7 @@ msgctxt ""
 "par_id511678230735657\n"
 "help.text"
 msgid "Drag the Zoom slider handle to adjust the magnification factor with the mouse."
-msgstr ""
+msgstr "Arraste a alça da régua de zoom para ajustar o fator de ampliação com o mouse."
 
 #. GrFgu
 #: zoom.xhp
@@ -74669,7 +74714,7 @@ msgctxt ""
 "par_id461674152484428\n"
 "help.text"
 msgid "Press <switchinline select=\"sys\"><caseinline select=\"MAC\"><keycode>Command</keycode></caseinline><defaultinline><keycode>Ctrl</keycode></defaultinline></switchinline> while rolling the mouse wheel."
-msgstr ""
+msgstr "Pressione <switchinline select=\"sys\"><caseinline select=\"MAC\"><keycode>Command</keycode></caseinline><defaultinline><keycode>Ctrl</keycode></defaultinline></switchinline> enquanto gira a roda do mouse."
 
 #. hnANA
 #: zoom.xhp
@@ -74678,7 +74723,7 @@ msgctxt ""
 "par_id71678262942683\n"
 "help.text"
 msgid "<image src=\"media/helpimg/scalc/calczoomslider.png\" id=\"img_id721678262942684\" width=\"282px\" height=\"40px\"><alt id=\"alt_id461678262942685\">Calc Zoom Slider</alt></image>"
-msgstr ""
+msgstr "<image src=\"media/helpimg/scalc/calczoomslider.png\" id=\"img_id721678262942684\" width=\"282px\" height=\"40px\"><alt id=\"alt_id461678262942685\">Régua do zoom do Calc</alt></image>"
 
 #. 3svKV
 #: zoom.xhp
@@ -74687,7 +74732,7 @@ msgctxt ""
 "par_id41678230455376\n"
 "help.text"
 msgid "20% is the minimum zoom factor. 400% is the maximum."
-msgstr ""
+msgstr "O fator mínimo de zoom é 20%. O fator máximo é 400%."
 
 #. DpeBz
 #: zoom.xhp
@@ -74696,7 +74741,7 @@ msgctxt ""
 "hd_id101678230496709\n"
 "help.text"
 msgid "Zooming with the Zoom slider"
-msgstr ""
+msgstr "Ampliar com a régua de zoom."
 
 #. DzEnz
 #: zoom.xhp
@@ -74705,7 +74750,7 @@ msgctxt ""
 "par_id361678230881080\n"
 "help.text"
 msgid "In addition to the slider plus and minus icons, you can drag the slider handle to manually adjust the zoom factor."
-msgstr ""
+msgstr "Além dos ícones de mais e menos da régua, você pode arrastar a alça da régua para ajustar manualmente o fator de zoom."
 
 #. CabnS
 #: zoom.xhp
@@ -74714,7 +74759,7 @@ msgctxt ""
 "par_id531678230887813\n"
 "help.text"
 msgid "Also, click anywhere on the slider to adjust the zoom factor."
-msgstr ""
+msgstr "E também, pode clicar em qualquer lugar da régua para ajustar o fator de zoom."
 
 #. dWykD
 #: zoom.xhp
@@ -74723,7 +74768,7 @@ msgctxt ""
 "par_id841678230875046\n"
 "help.text"
 msgid "The center line on the zoom slider represents 100% zoom factor."
-msgstr ""
+msgstr "A linha central da régua de zoom representa o fator de ampliação de 100%."
 
 #. GrGzC
 #: zoom.xhp
@@ -74732,7 +74777,7 @@ msgctxt ""
 "hd_id631678233685940\n"
 "help.text"
 msgid "Access Zoom via the menu"
-msgstr ""
+msgstr "Acessar o zoom pelo menu"
 
 #. MS7p5
 #: zoom.xhp
@@ -74741,7 +74786,7 @@ msgctxt ""
 "par_id501678233750773\n"
 "help.text"
 msgid "Choose menu <menuitem>View – Zoom</menuitem>. The predefined options are:"
-msgstr ""
+msgstr "Acesse o menu <menuitem>Exibir – Zoom</menuitem>. As opções predefinidas são:"
 
 #. xCqjf
 #: zoom.xhp
@@ -74750,7 +74795,7 @@ msgctxt ""
 "par_id391678233854552\n"
 "help.text"
 msgid "<menuitem>Entire Page</menuitem>: resizes the display to fit the width and height of the page."
-msgstr ""
+msgstr "<menuitem>Página inteira</menuitem>: redimensiona a exibição para caber na largura e altura da página."
 
 #. k8CEL
 #: zoom.xhp
@@ -74759,7 +74804,7 @@ msgctxt ""
 "par_id31678233860361\n"
 "help.text"
 msgid "<menuitem>Page Width</menuitem>: resizes the display to fit the width of the page, limited to the minimum and maximum zoom factor. The top and bottom edges of the selection may not be visible."
-msgstr ""
+msgstr "<menuitem>Largura da página</menuitem>: redimensiona a exibição para caber na largura da página, limitado aos fatores mínimo e máximo de zoom. As extremidades superior e inferior da seleção podem ficar ocultas."
 
 #. dG4GA
 #: zoom.xhp
@@ -74768,4 +74813,4 @@ msgctxt ""
 "par_id681678233866236\n"
 "help.text"
 msgid "<menuitem>Optimal View</menuitem>: resizes the display to fit the width and height of the selected cells. The enlargement or reduction are limited to the minimum and maximum zoom factors. If only one cell is selected then it will zoom to 100%."
-msgstr ""
+msgstr "<menuitem>Ideal</menuitem>: redimensiona a exibição para caber na altura e largura das células selecionadas. A ampliação ou redução são limitadas ao máximo e mínimo do zoom. Se somente uma célula for selecionada, redefine o zoom para 100%."
