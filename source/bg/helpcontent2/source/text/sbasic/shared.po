@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
 "POT-Creation-Date: 2023-03-20 12:32+0100\n"
-"PO-Revision-Date: 2023-05-27 06:34+0000\n"
+"PO-Revision-Date: 2023-06-05 12:35+0000\n"
 "Last-Translator: Mihail Balabanov <m.balabanov@gmail.com>\n"
 "Language-Team: Bulgarian <https://translations.documentfoundation.org/projects/libo_help-master/textsbasicshared/bg/>\n"
 "Language: bg\n"
@@ -34025,7 +34025,7 @@ msgctxt ""
 "par_id851677925987795\n"
 "help.text"
 msgid "Object"
-msgstr ""
+msgstr "Object"
 
 #. ykaLN
 #: 03132300.xhp
@@ -34034,7 +34034,7 @@ msgctxt ""
 "par_id561677933999834\n"
 "help.text"
 msgid "<emph>Type</emph>: The fully qualified Uno type name.  Supported data types are <literal>void</literal>, <literal>char</literal>, <literal>boolean</literal>, <literal>byte</literal>, <literal>short</literal>, <literal>unsigned short</literal>, <literal>long</literal>, <literal>unsigned long</literal>, <literal>hyper</literal>, <literal>unsigned hyper</literal>, <literal>float</literal>, <literal>double</literal>, <literal>string</literal>, <literal>type</literal>, and <literal>any</literal>. Names are case sensitive and may be preceded by square brackets to indicate an array."
-msgstr ""
+msgstr "<emph>Type</emph>: напълно квалифицираното име на тип на Uno.  Поддържаните типове данни са <literal>void</literal>, <literal>char</literal>, <literal>boolean</literal>, <literal>byte</literal>, <literal>short</literal>, <literal>unsigned short</literal>, <literal>long</literal>, <literal>unsigned long</literal>, <literal>hyper</literal>, <literal>unsigned hyper</literal>, <literal>float</literal>, <literal>double</literal>, <literal>string</literal>, <literal>type</literal> и <literal>any</literal>. В имената малките и главните букви се различават, а пред тях може да се поставят квадратни скоби, за да се укаже масив."
 
 #. DmXcC
 #: 03132300.xhp
@@ -34043,7 +34043,7 @@ msgctxt ""
 "par_id521677934011767\n"
 "help.text"
 msgid "<emph>Value</emph>: A strictly typed value."
-msgstr ""
+msgstr "<emph>Value</emph>: стойност със строг тип."
 
 #. 6tFRV
 #: 03132300.xhp
@@ -34052,7 +34052,7 @@ msgctxt ""
 "par_id3150541\n"
 "help.text"
 msgid "If <literal>CreateUnoValue</literal> cannot convert the value to the specified Uno type, an error occurs. The <literal>com.sun.star.script.Converter</literal> service is responsible for the conversion."
-msgstr ""
+msgstr "Ако <literal>CreateUnoValue</literal> не може да преобразува стойността към зададения тип на Uno, възниква грешка. За преобразуване се използва услугата <literal>com.sun.star.script.Converter</literal>."
 
 #. qXCo6
 #: 03132300.xhp
@@ -34061,7 +34061,7 @@ msgctxt ""
 "par_id3153524\n"
 "help.text"
 msgid "This function is intended for use in situations where the default Basic to Uno type converting mechanism is insufficient. This happens calling generic <literal>Any</literal> based API methods, such as <link href=\"https://api.libreoffice.org/docs/idl/ref/interfacecom_1_1sun_1_1star_1_1beans_1_1XPropertySet.html\">com.sun.star.beans.XPropertySet</link><literal>.setPropertyValue()</literal> or <link href=\"https://api.libreoffice.org/docs/idl/ref/interfacecom_1_1sun_1_1star_1_1container_1_1XNameContainer.html\">com.sun.star.container.XNameContainer</link><literal>.insertByName()</literal>. <literal>CreateUnoValue()</literal> sets a value object for the unknown Uno type."
-msgstr ""
+msgstr "Тази функция е предназначена за случаи, в които подразбираният механизъм за преобразуване на типове от Basic към Uno е недостатъчен. Така е при извикване на общи методи на API, базирани на <literal>Any</literal>, например <link href=\"https://api.libreoffice.org/docs/idl/ref/interfacecom_1_1sun_1_1star_1_1beans_1_1XPropertySet.html\">com.sun.star.beans.XPropertySet</link><literal>.setPropertyValue()</literal> или <link href=\"https://api.libreoffice.org/docs/idl/ref/interfacecom_1_1sun_1_1star_1_1container_1_1XNameContainer.html\">com.sun.star.container.XNameContainer</link><literal>.insertByName()</literal>. <literal>CreateUnoValue()</literal> задава обект стойност за неизвестния тип на Uno."
 
 #. 3XxhD
 #: 03132300.xhp
@@ -34070,7 +34070,7 @@ msgctxt ""
 "par_id511677928924995\n"
 "help.text"
 msgid "This example uses <link href=\"https://api.libreoffice.org/docs/idl/ref/interfacecom_1_1sun_1_1star_1_1beans_1_1XPropertySet.html\">com.sun.star.beans.XPropertySet</link><literal>.addProperty()</literal> method to create a document property whose default values requires <literal>CreateUnoValue()</literal> usage:"
-msgstr ""
+msgstr "В този пример е използван методът <link href=\"https://api.libreoffice.org/docs/idl/ref/interfacecom_1_1sun_1_1star_1_1beans_1_1XPropertySet.html\">com.sun.star.beans.XPropertySet</link><literal>.addProperty()</literal>, за да се създаде свойство на документ, чиито подразбирани стойности изискват употреба на <literal>CreateUnoValue()</literal>:"
 
 #. vJXdv
 #: 03132300.xhp
@@ -34079,7 +34079,7 @@ msgctxt ""
 "par_id3150769\n"
 "help.text"
 msgid "You can also use this function to pass non-Any values, but this is not recommended. If Basic already knows the target type, using the <literal>CreateUnoValue()</literal> function will only lead to additional converting operations that slow down the Basic execution."
-msgstr ""
+msgstr "Можете да използвате тази функция и за предаване на стойности не от тип Any, но това не се препоръчва. Ако Basic познава целевия тип, използването на <literal>CreateUnoValue()</literal> ще доведе до излишни преобразувания, които само ще забавят изпълнението на кода на Basic."
 
 #. yUCwp
 #: 03132400.xhp
@@ -34574,7 +34574,7 @@ msgctxt ""
 "par_id061420170730135034\n"
 "help.text"
 msgid "<emph>ValueArray</emph>: The array of values of the cash-flow. The values represent cash flow values at regular intervals, at least one value must be negative (payments), and at least one value must be positive (income)."
-msgstr ""
+msgstr "<emph>ValueArray</emph>: масивът от стойности за паричните потоци. Стойностите представят парични потоци, постъпващи през регулярни интервали, като поне една стойност трябва да е отрицателна (плащане) и поне една – положителна (приход)."
 
 #. FemwK
 #: 03140003.xhp
@@ -34583,7 +34583,7 @@ msgctxt ""
 "par_id061420170730137782\n"
 "help.text"
 msgid "<emph>Guess</emph>: An initial estimate at what the IRR will be."
-msgstr ""
+msgstr "<emph>Guess</emph>: начално приближение за резултата."
 
 #. BU7LM
 #: 03140003.xhp
@@ -35717,7 +35717,7 @@ msgctxt ""
 "par_id240720170117391741\n"
 "help.text"
 msgid "<emph>Date</emph>: The date expression to be formatted."
-msgstr ""
+msgstr "<emph>Date</emph>: изразът от тип дата, който да бъде форматиран."
 
 #. WC3h8
 #: 03150000.xhp
@@ -36302,7 +36302,7 @@ msgctxt ""
 "par_id240720170117391741\n"
 "help.text"
 msgid "<emph>expression</emph>: Required. A numeric expression to be formatted. If <literal>expression</literal> is a string, then the decimal and thousands separator need to be localized."
-msgstr ""
+msgstr "<emph>expression</emph>: задължителен. Числов израз, чиято стойност да се форматира. Ако <literal>expression</literal> е низ, тогава десетичният разделител и разделителят на хилядите трябва да са локализирани."
 
 #. mD2xQ
 #: 03170010.xhp
@@ -36347,7 +36347,7 @@ msgctxt ""
 "par_id241542199046808\n"
 "help.text"
 msgid "<emph>vbUseDefault or -2</emph>: Use the user interface locale settings. This is the default when omitted."
-msgstr ""
+msgstr "<emph>vbUseDefault или -2</emph>: да се използват настройките за локал на потребителския интерфейс. Това е подразбираната стойност при пропуснат аргумент."
 
 #. xEHZb
 #: 03170010.xhp
@@ -36383,7 +36383,7 @@ msgctxt ""
 "par_id241542191246808\n"
 "help.text"
 msgid "<emph>vbUseDefault or -2</emph>: Same as vbFalse. This is the default when omitted."
-msgstr ""
+msgstr "<emph>vbUseDefault или -2</emph>: също като vbFalse. Това е подразбираната стойност при пропуснат аргумент."
 
 #. pj4ES
 #: 03170010.xhp
@@ -36419,7 +36419,7 @@ msgctxt ""
 "par_id241542191267808\n"
 "help.text"
 msgid "<emph>vbUseDefault or -2</emph>: Same as vbFalse. This is the default when omitted."
-msgstr ""
+msgstr "<emph>vbUseDefault или -2</emph>: също като vbFalse. Това е подразбираната стойност при пропуснат аргумент."
 
 #. Bdq8A
 #: 03170020.xhp
@@ -36428,7 +36428,7 @@ msgctxt ""
 "tit\n"
 "help.text"
 msgid "FormatPercent Function [VBA]"
-msgstr ""
+msgstr "Функция FormatPercent [VBA]"
 
 #. YhjAo
 #: 03170020.xhp
@@ -36437,7 +36437,7 @@ msgctxt ""
 "bm_id661542193659245\n"
 "help.text"
 msgid "<bookmark_value>FormatPercent function</bookmark_value>"
-msgstr ""
+msgstr "<bookmark_value>FormatPercent, функция</bookmark_value>"
 
 #. 5GSq4
 #: 03170020.xhp
@@ -36446,7 +36446,7 @@ msgctxt ""
 "hd_id871542193473857\n"
 "help.text"
 msgid "<link href=\"text/sbasic/shared/03170020.xhp\">FormatPercent [VBA]</link>"
-msgstr ""
+msgstr "<link href=\"text/sbasic/shared/03170020.xhp\">FormatPercent [VBA]</link>"
 
 #. wE9n7
 #: 03170020.xhp
@@ -36455,7 +36455,7 @@ msgctxt ""
 "par_id351542193473858\n"
 "help.text"
 msgid "Returns a string with a number formatting applied to a numeric expression. A percent sign is appended to the returned string."
-msgstr ""
+msgstr "Връща низ с числово форматиране, приложено върху стойността на числов израз. Към връщания низ се добавя знак за процент."
 
 #. EBFVE
 #: 03170020.xhp
@@ -36464,7 +36464,7 @@ msgctxt ""
 "par_id771542204286220\n"
 "help.text"
 msgid "MsgBox FormatPercent(12.2, NumDigitsAfterDecimal:=2) ' 1220.00% if selected user interface is english"
-msgstr ""
+msgstr "MsgBox FormatPercent(12.2, NumDigitsAfterDecimal:=2) ' 1220.00% ако е избран потребителски интерфейс на английски"
 
 #. 4nxgE
 #: 03170020.xhp
@@ -36473,7 +36473,7 @@ msgctxt ""
 "par_id671542204307459\n"
 "help.text"
 msgid "MsgBox FormatPercent(\"-,2\", 2, IncludeLeadingDigit:=vbTrue) ' -20,00% if french user interface"
-msgstr ""
+msgstr "MsgBox FormatPercent(\"-,2\", 2, IncludeLeadingDigit:=vbTrue) ' -20,00% ако е избран потребителски интерфейс на френски"
 
 #. 5qH6F
 #: 03170020.xhp
@@ -36482,7 +36482,7 @@ msgctxt ""
 "par_id61542204328859\n"
 "help.text"
 msgid "MsgBox FormatPercent(\"-0.2\", 2) ' -20.00% for en-US, -0,00 for fr-CA, de-AT or pt-BR"
-msgstr ""
+msgstr "MsgBox FormatPercent(\"-0.2\", 2) ' -20.00% за en-US, -0,00 за fr-CA, de-AT или pt-BR"
 
 #. y4XTq
 #: 03170020.xhp
@@ -36491,7 +36491,7 @@ msgctxt ""
 "par_id421542204347269\n"
 "help.text"
 msgid "MsgBox FormatPercent(-0.2, UseComputerRegionalSettings, UseParensForNegativeNumbers:=vbTrue) ' (20,00)% if pt-BR"
-msgstr ""
+msgstr "MsgBox FormatPercent(-0.2, UseComputerRegionalSettings, UseParensForNegativeNumbers:=vbTrue) ' (20,00)% за pt-BR"
 
 #. DoAx5
 #: 03170020.xhp
@@ -36500,7 +36500,7 @@ msgctxt ""
 "par_id151542204366706\n"
 "help.text"
 msgid "MsgBox FormatPercent(\"-0,2\", UseComputerRegionalSettings, vbUseDefault, vbTrue) ' (20,00)% if german"
-msgstr ""
+msgstr "MsgBox FormatPercent(\"-0,2\", UseComputerRegionalSettings, vbUseDefault, vbTrue) ' (20,00)% за немски"
 
 #. GZf86
 #: 03170020.xhp
@@ -36509,7 +36509,7 @@ msgctxt ""
 "par_id971542204385212\n"
 "help.text"
 msgid "MsgBox FormatPercent(\"-12345678\", -1, vbUseDefault, vbUseDefault, GroupDigits:=vbTrue) ' -1 234 567 800,00% for fr-BE"
-msgstr ""
+msgstr "MsgBox FormatPercent(\"-12345678\", -1, vbUseDefault, vbUseDefault, GroupDigits:=vbTrue) ' -1 234 567 800,00% за fr-BE"
 
 #. MxFCq
 #: 05060700.xhp
@@ -39884,7 +39884,7 @@ msgctxt ""
 "par_id551648117368688\n"
 "help.text"
 msgid "<literal>CompatibilityMode</literal> function always returns the mode that is active after its execution. That is, if called with an argument, it returns the new mode; if called without an argument, it returns the active mode without modifying it."
-msgstr ""
+msgstr "Функцията <literal>CompatibilityMode</literal> винаги връща режима, който е активен след изпълнението ѝ. Това значи, че ако е извикана с аргумент, връща новия режим, а ако е извикана без аргумент, връща активния режим, без да го сменя."
 
 #. buGpD
 #: compatibilitymode.xhp
@@ -41261,7 +41261,7 @@ msgctxt ""
 "par_id111548419647867\n"
 "help.text"
 msgid "Partition( Number, Start, Stop, Interval)"
-msgstr ""
+msgstr "Partition(Number, Start, Stop, Interval)"
 
 #. EXFRi
 #: partition.xhp
@@ -41279,7 +41279,7 @@ msgctxt ""
 "par_id841548420006137\n"
 "help.text"
 msgid "<emph>Start</emph>: Required. An integer number defining the lower value of the range of numbers."
-msgstr "<emph>Start</emph>: задължителен. Цяло число, определящо долната граница на интервалите."
+msgstr "<emph>Start</emph>: задължителен. Цяло число, определящо най-ниската стойност на диапазона от числа."
 
 #. A4Hit
 #: partition.xhp
@@ -41288,7 +41288,7 @@ msgctxt ""
 "par_id781548420012105\n"
 "help.text"
 msgid "<emph>Stop</emph>: Required. An integer number defining the highest value of the range."
-msgstr ""
+msgstr "<emph>Stop</emph>: задължителен. Цяло число, определящо най-високата стойност на диапазона."
 
 #. evEzB
 #: partition.xhp
@@ -41297,7 +41297,7 @@ msgctxt ""
 "par_id371548420017250\n"
 "help.text"
 msgid "<emph>Interval</emph>: Required. An integer number that specifies the size of the partitions within the range of numbers (between <literal>Start</literal> and <literal>Stop</literal>)."
-msgstr ""
+msgstr "<emph>Interval</emph>: задължителен. Цяло число, указващо размера на интервалите, на които е подразделен числовият диапазон (между <literal>Start</literal> и <literal>Stop</literal>)."
 
 #. 9xjpK
 #: partition.xhp
@@ -41954,7 +41954,7 @@ msgctxt ""
 "par_id771622762489917\n"
 "help.text"
 msgid "StrConv(string As String, Conversion As Integer, [ LCID ])"
-msgstr ""
+msgstr "StrConv(string As String, Conversion As Integer, [ LCID ])"
 
 #. c44hy
 #: strconv.xhp
@@ -41963,7 +41963,7 @@ msgctxt ""
 "par_id421622762822934\n"
 "help.text"
 msgid "<emph>string</emph>: Any valid string expression."
-msgstr ""
+msgstr "<emph>string</emph>: произволен валиден низов израз."
 
 #. 56k2A
 #: strconv.xhp
