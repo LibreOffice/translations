@@ -3,14 +3,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: LibreOffice 7.6\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2023-05-30 13:23+0200\n"
-"PO-Revision-Date: 2023-05-24 17:54+0200\n"
+"POT-Creation-Date: 2023-06-30 21:12+0200\n"
+"PO-Revision-Date: 2023-07-01 17:59+0200\n"
 "Last-Translator: Martin Srebotnjak <miles@filmsi.net>\n"
 "Language-Team: sl.libreoffice.org\n"
+"Language: sl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: sl\n"
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n%100==4 ? 2 : 3);\n"
 "X-Generator: Virtaal 0.7.1\n"
 "X-Accelerator-Marker: ~\n"
@@ -19,8 +19,8 @@ msgstr ""
 
 #: sw/inc/AccessibilityCheckStrings.hrc:16
 msgctxt "STR_NO_ALT"
-msgid "No alt or description text for graphic “%OBJECT_NAME%”."
-msgstr "Nadomestno ali opisno besedilo za grafiko »%OBJECT_NAME%« ni določeno."
+msgid "%OBJECT_NAME%"
+msgstr "%OBJECT_NAME%"
 
 #: sw/inc/AccessibilityCheckStrings.hrc:17
 msgctxt "STR_TABLE_MERGE_SPLIT"
@@ -147,7 +147,12 @@ msgctxt "STR_DOCUMENT_TITLE"
 msgid "Document title is not set."
 msgstr "Naslov dokumenta ni določen."
 
-#: sw/inc/AccessibilityCheckStrings.hrc:44
+#: sw/inc/AccessibilityCheckStrings.hrc:43
+msgctxt "STR_ENTER_DOCUMENT_TITLE"
+msgid "Enter document title:"
+msgstr "Vnesite naslov dokumenta:"
+
+#: sw/inc/AccessibilityCheckStrings.hrc:45
 msgctxt "STR_ENTER_ALT"
 msgid "Enter alternative text:"
 msgstr "Vnesite nadomestno besedilo:"
@@ -8564,31 +8569,46 @@ msgid "Opens the Caption dialog. It has the same information as the dialog you g
 msgstr "Odpre pogovorno okno Napis. Vsebuje enake podatke kot pogovorno okno, do katerega dostopate prek %PRODUCTNAME Writer – Samopoimenovanje v pogovornem oknu Možnosti."
 
 #: sw/inc/strings.hrc:1472
+msgctxt "STR_A11Y_DESIGN_MODE_TITLE"
+msgid "The forms are not editable"
+msgstr "Obrazcev ni možno urejati"
+
+#: sw/inc/strings.hrc:1473
+msgctxt "STR_A11Y_DESIGN_MODE_PRIMARY"
+msgid "Would you like to switch to design mode?"
+msgstr "Ali želite preklopiti v oblikovalni način?"
+
+#: sw/inc/strings.hrc:1474
+msgctxt "STR_A11Y_DESIGN_MODE_SECONDARY"
+msgid "You need to switch to design mode to edit forms."
+msgstr "Za urejanje obrazcev morate preklopiti v oblikovalni način."
+
+#: sw/inc/strings.hrc:1476
 msgctxt "STR_MARK_COPY"
 msgid "%1 Copy "
 msgstr "Kopija %1 "
 
-#: sw/inc/strings.hrc:1474
+#: sw/inc/strings.hrc:1478
 msgctxt "STR_INFORODLG_FOLDED_PRIMARY"
 msgid "You are trying to delete folded (hidden) content."
 msgstr "Izbrisati poskušate strnjeno (skrito) vsebino."
 
-#: sw/inc/strings.hrc:1475
+#: sw/inc/strings.hrc:1479
 msgctxt "STR_INFORODLG_FOLDED_SECONDARY"
 msgid "To delete this content, first unfold it so you can see what you intend to delete."
 msgstr "Če želite dejansko izbrisati to vsebino, jo najprej razprite, da vidite, kaj boste s tem izbrisali."
 
-#: sw/inc/strings.hrc:1477
+#: sw/inc/strings.hrc:1481
 msgctxt "STR_PARAGRAPH_DIRECT_FORMATTING"
 msgid "Paragraph Direct Formatting"
 msgstr "Neposredno oblikovanje odstavkov"
 
-#: sw/inc/strings.hrc:1478
+#: sw/inc/strings.hrc:1482
 msgctxt "STR_CHARACTER_DIRECT_FORMATTING"
 msgid "Character Direct Formatting"
 msgstr "Neposredno oblikovanje znakov"
 
-#: sw/inc/strings.hrc:1479
+#: sw/inc/strings.hrc:1483
 msgctxt "STR_CHARACTER_DIRECT_FORMATTING_TAG"
 msgid "df"
 msgstr "NeOb"
@@ -8665,17 +8685,17 @@ msgstr "Združi enovrstične odstavke"
 
 #: sw/inc/utlui.hrc:43
 msgctxt "RID_SHELLRES_AUTOFMTSTRS"
-msgid "Set \"Text body\" Style"
+msgid "Set \"Body Text\" Style"
 msgstr "Nastavi slog »Telo besedila«"
 
 #: sw/inc/utlui.hrc:44 sw/inc/utlui.hrc:46
 msgctxt "RID_SHELLRES_AUTOFMTSTRS"
-msgid "Set \"Text body indent\" Style"
-msgstr "Nastavi slog »Zamik telesa besedila«"
+msgid "Set \"Body Text, Indented\" Style"
+msgstr "Nastavi slog »Telo besedila, z zamikom«"
 
 #: sw/inc/utlui.hrc:45
 msgctxt "RID_SHELLRES_AUTOFMTSTRS"
-msgid "Set \"Hanging indent\" Style"
+msgid "Set \"Hanging Indent\" Style"
 msgstr "Nastavi slog »Viseči zamik«"
 
 #: sw/inc/utlui.hrc:47
@@ -8707,6 +8727,51 @@ msgstr "Prečrkuje madžarsko besedilo z desne na levo v staro madžarsko pisavo
 msgctxt "RID_SHELLRES_AUTOFMTSTRS"
 msgid "DOI citation recognition"
 msgstr "Prepoznavanje citatov DOI"
+
+#: sw/uiconfig/swriter/ui/a11ycheckissuespanel.ui:41
+msgctxt "a11ycheckissuespanel|expand_document_label"
+msgid "Document"
+msgstr "Dokument"
+
+#: sw/uiconfig/swriter/ui/a11ycheckissuespanel.ui:70
+msgctxt "a11ycheckissuespanel|expand_styles_label"
+msgid "Styles"
+msgstr "Slogi"
+
+#: sw/uiconfig/swriter/ui/a11ycheckissuespanel.ui:100
+msgctxt "a11ycheckissuespanel|expand_no_alt_label"
+msgid "Missing alternative or description text"
+msgstr "Manjka nadomestno ali opisno besedilo"
+
+#: sw/uiconfig/swriter/ui/a11ycheckissuespanel.ui:129
+msgctxt "a11ycheckissuespanel|expand_table_label"
+msgid "Table"
+msgstr "Tabela"
+
+#: sw/uiconfig/swriter/ui/a11ycheckissuespanel.ui:158
+msgctxt "a11ycheckissuespanel|expand_formatting_label"
+msgid "Formatting"
+msgstr "Oblikovanje"
+
+#: sw/uiconfig/swriter/ui/a11ycheckissuespanel.ui:187
+msgctxt "a11ycheckissuespanel|expand_hyperlink_label"
+msgid "Hyperlink"
+msgstr "Hiperpovezava"
+
+#: sw/uiconfig/swriter/ui/a11ycheckissuespanel.ui:216
+msgctxt "a11ycheckissuespanel|expand_fakes_label"
+msgid "Fakes"
+msgstr "Imitacije"
+
+#: sw/uiconfig/swriter/ui/a11ycheckissuespanel.ui:245
+msgctxt "a11ycheckissuespanel|expand_numbering_label"
+msgid "Numbering"
+msgstr "Oštevilčevanje"
+
+#: sw/uiconfig/swriter/ui/a11ycheckissuespanel.ui:274
+msgctxt "a11ycheckissuespanel|expand_other_label"
+msgid "Other"
+msgstr "Drugo"
 
 #: sw/uiconfig/swriter/ui/abstractdialog.ui:22
 msgctxt "abstractdialog|AbstractDialog"
@@ -13009,9 +13074,9 @@ msgid "Numbering"
 msgstr "Oštevilčevanje"
 
 #: sw/uiconfig/swriter/ui/footnotepage.ui:50
-msgctxt "footnotepage|label7"
-msgid "Counting"
-msgstr "Štetje"
+msgctxt "footnotepage|offset"
+msgid "Start at"
+msgstr "Začni z"
 
 #: sw/uiconfig/swriter/ui/footnotepage.ui:62
 msgctxt "footnotepage|label8"
@@ -13024,9 +13089,9 @@ msgid "Position"
 msgstr "Položaj"
 
 #: sw/uiconfig/swriter/ui/footnotepage.ui:92
-msgctxt "footnotepage|offset"
-msgid "Start at"
-msgstr "Začni z"
+msgctxt "footnotepage|label7"
+msgid "Counting"
+msgstr "Štetje"
 
 #: sw/uiconfig/swriter/ui/footnotepage.ui:104
 msgctxt "footnotepage|label11"
@@ -14301,7 +14366,7 @@ msgstr "Razlikuj velike in male črke"
 #: sw/uiconfig/swriter/ui/indexentry.ui:588
 msgctxt "indexentry|selectedentrytitle"
 msgid "For Selected Entry"
-msgstr "(Za) Izbrani vnos"
+msgstr "Za izbrani vnos"
 
 #: sw/uiconfig/swriter/ui/indexentry.ui:615
 msgctxt "indexentry|last|tooltip_text"
@@ -17495,18 +17560,18 @@ msgstr "Kopira_j"
 
 #: sw/uiconfig/swriter/ui/navigatorcontextmenu.ui:60
 msgctxt "navigatorcontextmenu|STR_DELETE_CHAPTER"
-msgid "Delete Chapter"
-msgstr "Izbriši poglavje"
+msgid "Delete Heading"
+msgstr "Izbriši naslov"
 
 #: sw/uiconfig/swriter/ui/navigatorcontextmenu.ui:69
 msgctxt "navigatorcontextmenu|STR_PROMOTE_CHAPTER"
-msgid "Move Chapter Up"
-msgstr "Premakni poglavje navzgor"
+msgid "Move Heading Up"
+msgstr "Premakni naslov navzgor"
 
 #: sw/uiconfig/swriter/ui/navigatorcontextmenu.ui:78
 msgctxt "navigatorcontextmenu|STR_DEMOTE_CHAPTER"
-msgid "Move Chapter Down"
-msgstr "Premakni poglavje navzdol"
+msgid "Move Heading Down"
+msgstr "Premakni naslov navzdol"
 
 #: sw/uiconfig/swriter/ui/navigatorcontextmenu.ui:87
 msgctxt "navigatorcontextmenu|STR_PROMOTE_LEVEL"
@@ -17850,7 +17915,7 @@ msgstr "Prikaže ali skrije seznam Krmarja."
 
 #: sw/uiconfig/swriter/ui/navigatorpanel.ui:570
 msgctxt "navigatorpanel|promote|tooltip_text"
-msgid "Promote outline level"
+msgid "Promote Outline Level"
 msgstr "Povišaj raven orisa"
 
 #: sw/uiconfig/swriter/ui/navigatorpanel.ui:574
@@ -17860,7 +17925,7 @@ msgstr "Za en nivo poveča orisni nivo izbranega naslova in naslove, ki se pojav
 
 #: sw/uiconfig/swriter/ui/navigatorpanel.ui:586
 msgctxt "navigatorpanel|demote|tooltip_text"
-msgid "Demote outline level"
+msgid "Demote Outline Level"
 msgstr "Ponižaj raven orisa"
 
 #: sw/uiconfig/swriter/ui/navigatorpanel.ui:590
@@ -17870,8 +17935,8 @@ msgstr "Za eno raven zmanjša orisno raven izbranega naslova in naslove, ki se p
 
 #: sw/uiconfig/swriter/ui/navigatorpanel.ui:602
 msgctxt "navigatorpanel|chapterup|tooltip_text"
-msgid "Move chapter up"
-msgstr "Premakni poglavje navzgor"
+msgid "Move Heading Up"
+msgstr "Premakni naslov navzgor"
 
 #: sw/uiconfig/swriter/ui/navigatorpanel.ui:606
 msgctxt "navigatorpanel|extended_tip|chapterup"
@@ -17880,8 +17945,8 @@ msgstr "V Krmarju in v dokumentu premakne izbrani naslov in besedilo pod naslovo
 
 #: sw/uiconfig/swriter/ui/navigatorpanel.ui:618
 msgctxt "navigatorpanel|chapterdown|tooltip_text"
-msgid "Move chapter down"
-msgstr "Premakni poglavje navzdol"
+msgid "Move Heading Down"
+msgstr "Premakni naslov navzdol"
 
 #: sw/uiconfig/swriter/ui/navigatorpanel.ui:622
 msgctxt "navigatorpanel|extended_tip|chapterdown"
@@ -19202,7 +19267,7 @@ msgstr "Dodeljena raven seznama"
 #: sw/uiconfig/swriter/ui/numparapage.ui:222
 msgctxt "numparapage|comboLB_LIST_LEVEL"
 msgid "Same as outline level"
-msgstr "Kot raven orisa/Enaka ravni orisa"
+msgstr "Kot raven orisa"
 
 #: sw/uiconfig/swriter/ui/numparapage.ui:223
 msgctxt "numparapage|comboLB_LIST_LEVEL"
@@ -19685,30 +19750,25 @@ msgstr "Skrij odstavke polj zbirke podatkov (npr. pri spajanju dokumentov) s pra
 
 #: sw/uiconfig/swriter/ui/optcompatpage.ui:239
 msgctxt "optcompatpage|format"
-msgid "Render non-breaking spaces (NBSP) as standard-space-width (off for fixed size)"
-msgstr "Upodobi nedeljive presledke za standardno širino presledka (namesto fiksne velikosti)"
-
-#: sw/uiconfig/swriter/ui/optcompatpage.ui:240
-msgctxt "optcompatpage|format"
 msgid "<User settings>"
 msgstr "<nastavitve uporabnika>"
 
-#: sw/uiconfig/swriter/ui/optcompatpage.ui:250
+#: sw/uiconfig/swriter/ui/optcompatpage.ui:249
 msgctxt "optcompatpage|default"
 msgid "Use as _Default"
 msgstr "Uporabi kot _privzeto"
 
-#: sw/uiconfig/swriter/ui/optcompatpage.ui:258
+#: sw/uiconfig/swriter/ui/optcompatpage.ui:257
 msgctxt "extended_tip|default"
 msgid "Click to use the current settings on this tab page as the default for further sessions with Writer."
 msgstr "Kliknite, če želite uporabiti trenutne nastavitve na tem zavihku kot privzete nastavitve za prihodnja opravila v programu Writer."
 
-#: sw/uiconfig/swriter/ui/optcompatpage.ui:273
+#: sw/uiconfig/swriter/ui/optcompatpage.ui:272
 msgctxt "optcompatpage|label11"
 msgid "Compatibility options for “%DOCNAME”"
 msgstr "Možnosti združljivosti za »%DOCNAME«"
 
-#: sw/uiconfig/swriter/ui/optcompatpage.ui:288
+#: sw/uiconfig/swriter/ui/optcompatpage.ui:287
 msgctxt "extended_tip|OptCompatPage"
 msgid "Specifies compatibility settings for text documents. These options help in fine-tuning Writer when importing Microsoft Word documents."
 msgstr "Določa nastavitve združljivosti za dokumente z besedilom. Te možnosti pomagajo pri podrobni nastavitvi programa Writer za uvažanje dokumentov programa Microsoft Word."
@@ -21176,97 +21236,97 @@ msgctxt "pagenumberdlg|PageNumberDialog"
 msgid "Page Number Wizard"
 msgstr "Čarovnik za številke strani"
 
-#: sw/uiconfig/swriter/ui/pagenumberdlg.ui:90
+#: sw/uiconfig/swriter/ui/pagenumberdlg.ui:92
 msgctxt "pagenumberdlg|positionLabel"
 msgid "Position:"
 msgstr "Položaj:"
 
-#: sw/uiconfig/swriter/ui/pagenumberdlg.ui:95
+#: sw/uiconfig/swriter/ui/pagenumberdlg.ui:97
 msgctxt "pagenumberdlg|positionLabel-atkobject"
 msgid "Position"
 msgstr "Položaj"
 
-#: sw/uiconfig/swriter/ui/pagenumberdlg.ui:111
+#: sw/uiconfig/swriter/ui/pagenumberdlg.ui:113
 msgctxt "pagenumberdlg|positionCombo"
 msgid "Top of page (Header)"
 msgstr "Vrh strani (glava)"
 
-#: sw/uiconfig/swriter/ui/pagenumberdlg.ui:112
+#: sw/uiconfig/swriter/ui/pagenumberdlg.ui:114
 msgctxt "pagenumberdlg|positionCombo"
 msgid "Bottom of page (Footer)"
 msgstr "Dno strani (noga)"
 
-#: sw/uiconfig/swriter/ui/pagenumberdlg.ui:116
+#: sw/uiconfig/swriter/ui/pagenumberdlg.ui:118
 msgctxt "pagenumbering|extended_tip|positionCombo"
 msgid "Insert page number in footer."
 msgstr "Vstavi številko strani v nogo."
 
-#: sw/uiconfig/swriter/ui/pagenumberdlg.ui:132
+#: sw/uiconfig/swriter/ui/pagenumberdlg.ui:134
 msgctxt "pagenumberdlg|alignmentLabel"
 msgid "Alignment:"
 msgstr "Poravnava:"
 
-#: sw/uiconfig/swriter/ui/pagenumberdlg.ui:137
+#: sw/uiconfig/swriter/ui/pagenumberdlg.ui:139
 msgctxt "pagenumberdlg|alignmentLabel-atkobject"
 msgid "Alignment"
 msgstr "Poravnava"
 
-#: sw/uiconfig/swriter/ui/pagenumberdlg.ui:153
+#: sw/uiconfig/swriter/ui/pagenumberdlg.ui:155
 msgctxt "pagenumberdlg|alignmentCombo"
 msgid "Left"
 msgstr "Levo"
 
-#: sw/uiconfig/swriter/ui/pagenumberdlg.ui:154
+#: sw/uiconfig/swriter/ui/pagenumberdlg.ui:156
 msgctxt "pagenumberdlg|alignmentCombo"
 msgid "Center"
 msgstr "Sredina"
 
-#: sw/uiconfig/swriter/ui/pagenumberdlg.ui:155
+#: sw/uiconfig/swriter/ui/pagenumberdlg.ui:157
 msgctxt "pagenumberdlg|alignmentCombo"
 msgid "Right"
 msgstr "Desno"
 
-#: sw/uiconfig/swriter/ui/pagenumberdlg.ui:159
+#: sw/uiconfig/swriter/ui/pagenumberdlg.ui:161
 msgctxt "pagenumbering|extended_tip|alignmentCombo"
 msgid "Align page number in page footer or header."
 msgstr "Poravna številko strani v nogi oz. glavi strani."
 
-#: sw/uiconfig/swriter/ui/pagenumberdlg.ui:171
+#: sw/uiconfig/swriter/ui/pagenumberdlg.ui:173
 msgctxt "pagenumberdlg|mirrorCheckbox"
 msgid "Mirror on even pages"
 msgstr "Zrcali na sodih straneh"
 
-#: sw/uiconfig/swriter/ui/pagenumberdlg.ui:180
+#: sw/uiconfig/swriter/ui/pagenumberdlg.ui:182
 msgctxt "pagenumberdlg|extended_tip|mirrorCheckbox"
 msgid "Creates separate left/right pages with mirrored page number placements"
 msgstr "Ustvari ločene leve/desne strani z zrcaljeno postavitvijo številk strani"
 
-#: sw/uiconfig/swriter/ui/pagenumberdlg.ui:192
+#: sw/uiconfig/swriter/ui/pagenumberdlg.ui:194
 msgctxt "pagenumberdlg|pagetotalCheckbox"
 msgid "Include page total"
 msgstr "Vključi skupno število strani"
 
-#: sw/uiconfig/swriter/ui/pagenumberdlg.ui:202
+#: sw/uiconfig/swriter/ui/pagenumberdlg.ui:204
 msgctxt "pagenumberdlg|extended_tip|pagetotalCheckbox"
 msgid "Also insert the total number of pages"
 msgstr "Vstavi tudi skupno število strani."
 
-#: sw/uiconfig/swriter/ui/pagenumberdlg.ui:218
+#: sw/uiconfig/swriter/ui/pagenumberdlg.ui:220
 msgctxt "pagenumberdlg|numfmtLabel"
 msgid "Page numbers:"
 msgstr "Številke strani:"
 
-#: sw/uiconfig/swriter/ui/pagenumberdlg.ui:226
+#: sw/uiconfig/swriter/ui/pagenumberdlg.ui:228
 msgctxt "pagenumberdlg|alignmentLabel-atkobject"
 msgid "Number format"
 msgstr "Oblika številk"
 
-#: sw/uiconfig/swriter/ui/pagenumberdlg.ui:245
+#: sw/uiconfig/swriter/ui/pagenumberdlg.ui:247
 msgctxt "pagenumberdlg|extended_tip|numfmtlb"
 msgid "Select a numbering scheme for the page numbering."
 msgstr "Izberite način oštevilčevanja številk strani."
 
-#: sw/uiconfig/swriter/ui/pagenumberdlg.ui:272
+#: sw/uiconfig/swriter/ui/pagenumberdlg.ui:274
 msgctxt "pagenumberdlg|previewLabel"
 msgid "Preview"
 msgstr "Predogled"
