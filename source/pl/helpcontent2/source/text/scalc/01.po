@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
 "POT-Creation-Date: 2023-05-17 13:16+0200\n"
-"PO-Revision-Date: 2023-08-28 14:38+0000\n"
+"PO-Revision-Date: 2023-08-30 05:38+0000\n"
 "Last-Translator: Adam Rak <kitynska@gmail.com>\n"
 "Language-Team: Polish <https://translations.documentfoundation.org/projects/libo_help-7-5/textscalc01/pl/>\n"
 "Language: pl\n"
@@ -21560,7 +21560,7 @@ msgctxt ""
 "par_id2958467\n"
 "help.text"
 msgid "<item type=\"input\">=MIDB(\"中国\";2;1)</item> returns \" \" (byte position 2 is not at the beginning of a character in a DBCS string; 1 space character is returned)."
-msgstr ""
+msgstr "<item type=\"input\">=FRAGMENT.TEKSTU.B(\"中国\";2;1)</item> zwraca \" \" (pozycja bajtu 2 nie jest początkiem znaku w ciągu DBCS, 1 znak spacji jest zwracany)."
 
 #. SXLij
 #: 04060110.xhp
@@ -21569,7 +21569,7 @@ msgctxt ""
 "par_id2958477\n"
 "help.text"
 msgid "<item type=\"input\">=MIDB(\"中国\";2;2)</item> returns \" \" (byte position 2 points to the last half of the first character in the DBCS string; the 2 bytes asked for therefore constitutes the last half of the first character and the first half of the second character in the string; 2 space characters are therefore returned)."
-msgstr ""
+msgstr "<item type=\"input\">=FRAGMENT.TEKSTU.B(\"中国\";2;2)</item> zwraca \"  \" (pozycja bajtu 2 punktów do ostatniej połowy pierwszego znaku w ciągu DBCS, 2 bajty stanowią ostatnią połowę pierwszego znaku i pierwszą połowę drugiego znaku w ciągu, 2 znaki spacji są zwracane)."
 
 #. cFw7V
 #: 04060110.xhp
@@ -21578,7 +21578,7 @@ msgctxt ""
 "par_id2958487\n"
 "help.text"
 msgid "<item type=\"input\">=MIDB(\"中国\";2;3)</item> returns \" 国\" (byte position 2 is not at the beginning of a character in a DBCS string; a space character is returned for byte position 2)."
-msgstr ""
+msgstr "<item type=\"input\">=FRAGMENT.TEKSTU.B(\"中国\";2;3)</item> zwraca \" 国\" (pozycja bajtu 2 nie jest początkiem znaku w ciągu DBCS, zwracany jest znak spacji dla pozycji bajtu 2)."
 
 #. drtpL
 #: 04060110.xhp
@@ -21587,7 +21587,7 @@ msgctxt ""
 "par_id2958497\n"
 "help.text"
 msgid "<item type=\"input\">=MIDB(\"中国\";3;1)</item> returns \" \" (byte position 3 is at the beginning of a character in a DBCS string, but 1 byte is only half a DBCS character and a space character is therefore returned instead)."
-msgstr ""
+msgstr "<item type=\"input\">=FRAGMENT.TEKSTU.B(\"中国\";3;1)</item> \" \" (pozycja bajtu 3 nie jest początkiem znaku w ciągu DBCS, ale 1 bajt jest tylko połową znaku DBCS i zwracany jest znak spacji)"
 
 #. koipq
 #: 04060110.xhp
@@ -21596,7 +21596,7 @@ msgctxt ""
 "par_id2958507\n"
 "help.text"
 msgid "<item type=\"input\">=MIDB(\"中国\";3;2)</item> returns \"国\" (byte position 3 is at the beginning of a character in a DBCS string, and 2 bytes constitute one DBCS character)."
-msgstr ""
+msgstr "<item type=\"input\">=FRAGMENT.TEKSTU.B(\"中国\";3;2)</item> zwraca \"国\" (pozycja bajtu 3 jest początkiem znaku w ciągu DBCS i 2 bajty stanowią jeden znak DBCS)."
 
 #. aQmsH
 #: 04060110.xhp
@@ -21605,7 +21605,7 @@ msgctxt ""
 "par_id2958517\n"
 "help.text"
 msgid "<item type=\"input\">=MIDB(\"office\";2;3)</item> returns \"ffi\" (byte position 2 is at the beginning of a character in a non-DBCS string, and 3 bytes of a non-DBCS string constitute 3 characters)."
-msgstr ""
+msgstr "<item type=\"input\">=FRAGMENT.TEKSTU.B(\"office\";2;3)</item> zwraca \"ffi\" (pozycja bajtu 2 jest początkiem znaku w ciągu nie DBCS i 3 bajty ciągu nie DBCS stanowią 3 znaki)."
 
 #. k4kCo
 #: 04060110.xhp
@@ -21659,7 +21659,7 @@ msgctxt ""
 "par_id3155364\n"
 "help.text"
 msgid "<item type=\"input\">=PROPER(\"the document foundation\")</item> returns The Document Foundation."
-msgstr ""
+msgstr "<item type=\"input\">=Z.WIELKIEJ.LITERY(\"the document foundation\")</item> zwraca The Document Foundation."
 
 #. MeADa
 #: 04060110.xhp
@@ -21821,7 +21821,7 @@ msgctxt ""
 "par_id381626381556310\n"
 "help.text"
 msgid "Refer to the <link href=\"https://wiki.documentfoundation.org/Documentation/Calc_Functions/REPT\">REPT</link> wiki page for more details about this function."
-msgstr ""
+msgstr "Więcej informacji na temat tej funkcji można znaleźć na stronie wiki <link href=\"https://wiki.documentfoundation.org/Documentation/Calc_Functions/REPT\">POWT</link>."
 
 #. mtFNA
 #: 04060110.xhp
@@ -21857,7 +21857,7 @@ msgctxt ""
 "par_id3154344\n"
 "help.text"
 msgid "RIGHT(\"Text\" [; Number])"
-msgstr ""
+msgstr "PRAWY(\"tekst\" [; liczba])"
 
 #. dveYp
 #: 04060110.xhp
@@ -21875,7 +21875,7 @@ msgctxt ""
 "par_id3153350\n"
 "help.text"
 msgid "<emph>Number</emph> (optional) is the number of characters from the right part of the text. If this parameter is not defined, one character is returned."
-msgstr ""
+msgstr "<emph>Liczba</emph> (parametr opcjonalny) to liczba znaków z prawej części tekstu. Jeżeli ten parametr nie jest zdefiniowany, zwracany jest jeden znak."
 
 #. xNFMc
 #: 04060110.xhp
@@ -21902,7 +21902,7 @@ msgctxt ""
 "hd_id2949805\n"
 "help.text"
 msgid "<variable id=\"rightbvar\"><link href=\"text/scalc/01/04060110.xhp#rightb\">RIGHTB</link></variable>"
-msgstr ""
+msgstr "<variable id=\"rightbvar\"><link href=\"text/scalc/01/04060110.xhp#rightb\">PRAWY.B</link></variable>"
 
 #. gvrHM
 #: 04060110.xhp
@@ -21920,7 +21920,7 @@ msgctxt ""
 "par_id2954344\n"
 "help.text"
 msgid "RIGHTB(\"Text\" [; Number_bytes])"
-msgstr ""
+msgstr "PRAWY.B(\"Tekst\" [; Liczba_bajtów])"
 
 #. jvjXS
 #: 04060110.xhp
@@ -21938,7 +21938,7 @@ msgctxt ""
 "par_id2953350\n"
 "help.text"
 msgid "<emph>Number_bytes</emph> (optional) specifies the number of characters you want RIGHTB to extract, based on bytes. If this parameter is not defined, one byte is returned."
-msgstr ""
+msgstr "<emph>Liczba_bajtów</emph> (opcjonalny) oznacza liczbę znaków, którą PRAWY.B ma wyodrębnić na podstawie bajtów. Jeśli ten parametr nie został zdefiniowany, zwracany jest jeden znak."
 
 #. KnAgN
 #: 04060110.xhp
@@ -22010,7 +22010,7 @@ msgctxt ""
 "par_id3148692\n"
 "help.text"
 msgid "<ahelp hid=\"HID_FUNC_SUCHEN\">Returns the position of a text segment within a character string.</ahelp> You can set the start of the search as an option. The search text can be a number or any sequence of characters. The search is not case-sensitive. If the text is not found, returns error 519 (#VALUE)."
-msgstr ""
+msgstr "<ahelp hid=\"HID_FUNC_SUCHEN\">Zwraca pozycję segmentu tekstu w ciągu znaków.</ahelp> Opcjonalnie możesz ustawić początek wyszukiwania. Wyszukiwany tekst może być liczbą lub dowolnym ciągiem znaków. W wyszukiwaniu nie jest uwzględniana wielkość liter. Jeśli tekst nie zostanie znaleziony, zwraca błąd 519 (#ARG)."
 
 #. GU5p2
 #: 04060110.xhp
@@ -22019,7 +22019,7 @@ msgctxt ""
 "par_id3154671\n"
 "help.text"
 msgid "SEARCH(\"FindText\"; \"Text\" [; Position])"
-msgstr ""
+msgstr "SZUKAJ.TEKST(\"znajdź_tekst\"; \"tekst\" [; pozycja])"
 
 #. yP57Q
 #: 04060110.xhp
@@ -22091,7 +22091,7 @@ msgctxt ""
 "par_id3147582\n"
 "help.text"
 msgid "SUBSTITUTE(\"Text\"; \"SearchText\"; \"NewText\" [; Occurrence])"
-msgstr ""
+msgstr "PODSTAW(\"tekst\"; \"szukany_tekst\"; \"nowy_tekst\" [; wystąpienie])"
 
 #. tydqc
 #: 04060110.xhp
@@ -22235,7 +22235,7 @@ msgctxt ""
 "par_id3147213\n"
 "help.text"
 msgid "<ahelp hid=\"HID_FUNC_TEXT\">Converts a value into text according to a given format.</ahelp>"
-msgstr ""
+msgstr "<ahelp hid=\"HID_FUNC_TEXT\">Konwertuje wartość na tekst zgodnie z zadanym formatem.</ahelp>"
 
 #. YjEZu
 #: 04060110.xhp
@@ -22244,7 +22244,7 @@ msgctxt ""
 "par_id3147377\n"
 "help.text"
 msgid "TEXT(Value; Format)"
-msgstr ""
+msgstr "TEKST(wartość; format)"
 
 #. hGrSa
 #: 04060110.xhp
@@ -22253,7 +22253,7 @@ msgctxt ""
 "par_id3147389\n"
 "help.text"
 msgid "<emph>Value</emph> is the value (numerical or textual) to be converted."
-msgstr ""
+msgstr "<emph>Wartość</emph> to wartość (numeryczna lub tekstowa) do przeliczenia."
 
 #. 3GZvU
 #: 04060110.xhp
@@ -22289,7 +22289,7 @@ msgctxt ""
 "par_id3674124\n"
 "help.text"
 msgid "<item type=\"input\">=TEXT(\"xyz\";\"=== @ ===\")</item> returns the text === xyz ==="
-msgstr ""
+msgstr "<item type=\"input\">=TEKST(\"xyz\";\"=== @ ===\")</item> zwraca tekst === xyz ==="
 
 #. YAD8g
 #: 04060110.xhp
@@ -22298,7 +22298,7 @@ msgctxt ""
 "par_id3145364\n"
 "help.text"
 msgid "See also <link href=\"text/shared/01/05020301.xhp\">Number format codes</link>: custom format codes defined by the user."
-msgstr ""
+msgstr "Zobacz także <link href=\"text/shared/01/05020301.xhp\">Kody formatu liczb</link>: niestandardowe kody formatu zdefiniowane przez użytkownika."
 
 #. wFCZg
 #: 04060110.xhp
@@ -22856,7 +22856,7 @@ msgctxt ""
 "par_id151626469224135\n"
 "help.text"
 msgid "<input>=ROT13(\"Gur Qbphzrag Sbhaqngvba jnf sbhaqrq va Frcgrzore 2010.\")</input> returns the string \"The Document Foundation was founded in September 2010.\". Notice how spaces, digits, and full stops are unaffected by ROT13."
-msgstr ""
+msgstr "<input>=ROT13(\"Shaqnpwn Gur Qbphzrag Sbhaqngvba cbjfgnłn jr jemrśavh 2010 ebxh.\")</input> zwraca ciąg znaków „Fundacja The Document Foundation powstała we wrześniu 2010 roku.”. Zwróć uwagę, że ROT13 nie ma wpływu na spacje, cyfry i kropki."
 
 #. Hzbcx
 #: 04060111.xhp
@@ -22865,7 +22865,7 @@ msgctxt ""
 "par_id221626469509161\n"
 "help.text"
 msgid "Refer to the <link href=\"https://wiki.documentfoundation.org/Documentation/Calc_Functions/ROT13\">ROT13</link> wiki page for more details about this function."
-msgstr ""
+msgstr "Więcej informacji na temat tej funkcji można znaleźć na stronie wiki <link href=\"https://wiki.documentfoundation.org/Documentation/Calc_Functions/ROT13\">ROT13</link>."
 
 #. CFJsA
 #: 04060111.xhp
@@ -23018,7 +23018,7 @@ msgctxt ""
 "par_id3151387\n"
 "help.text"
 msgid "<emph>StartDate</emph> is the start date in the interval."
-msgstr ""
+msgstr "<emph>DataPocz</emph> to data początkowa interwału."
 
 #. AGYKD
 #: 04060111.xhp
@@ -23027,7 +23027,7 @@ msgctxt ""
 "par_id3146324\n"
 "help.text"
 msgid "<emph>EndDate</emph> is the end date in the interval. The end date must be greater than the start date, or else an error is returned."
-msgstr ""
+msgstr "<emph>DataKonca</emph> to data końcowa interwału. Data końcowa musi być późniejsza niż data początkowa, w przeciwnym razie zostanie zwrócony błąd."
 
 #. PcBbC
 #: 04060111.xhp
@@ -23036,7 +23036,7 @@ msgctxt ""
 "par_id3166467\n"
 "help.text"
 msgid "<emph>Type</emph> specifies the type of difference to be calculated. Possible values are 0 (time interval) or 1 (calendar weeks)."
-msgstr ""
+msgstr "<emph>Typ</emph> określa typ różnicy, która ma zostać obliczona. Możliwe wartości to 0 (przedział czasu) lub 1 (tygodnie kalendarzowe)."
 
 #. QaW6B
 #: 04060111.xhp
@@ -23045,7 +23045,7 @@ msgctxt ""
 "par_id81641990941192\n"
 "help.text"
 msgid "If <emph>Type = 0</emph> the function will assume that 7 days is equivalent to one week without considering any specific day to mark the beginning of a week."
-msgstr ""
+msgstr "Jeśli <emph>Typ = 0</emph>, funkcja przyjmie, że 7 dni odpowiada jednemu tygodniowi, nie biorąc pod uwagę żadnego konkretnego dnia wyznaczającego początek tygodnia."
 
 #. geCV7
 #: 04060111.xhp
@@ -23054,7 +23054,7 @@ msgctxt ""
 "par_id31641991010650\n"
 "help.text"
 msgid "If <emph>Type = 1</emph> the function will consider Monday to be the first day of the week. Therefore, except for the start date, each occurrence of a Monday in the interval is counted as an additional week."
-msgstr ""
+msgstr "Jeśli <emph>Typ = 1</emph> funkcja uzna poniedziałek za pierwszy dzień tygodnia. Dlatego też, poza datą początkową, każde wystąpienie poniedziałku w interwale liczone jest jako dodatkowy tydzień."
 
 #. CF4K3
 #: 04060111.xhp
@@ -23063,7 +23063,7 @@ msgctxt ""
 "par_id971641990480242\n"
 "help.text"
 msgid "This function considers Monday to be the first day of the week regardless of the current locale settings."
-msgstr ""
+msgstr "Ta funkcja uznaje poniedziałek za pierwszy dzień tygodnia, niezależnie od bieżących ustawień regionalnych."
 
 #. H2Gpc
 #: 04060111.xhp
@@ -23072,7 +23072,7 @@ msgctxt ""
 "par_id671641994821992\n"
 "help.text"
 msgid "In the following examples, dates are passed as strings. However, they can also be stored in separate cells and be passed as references."
-msgstr ""
+msgstr "W poniższych przykładach daty są przekazywane jako ciągi znaków. Można je jednak również przechowywać w oddzielnych komórkach i przekazywać jako odniesienia."
 
 #. SyEBP
 #: 04060111.xhp
@@ -23081,7 +23081,7 @@ msgctxt ""
 "par_id71641991391639\n"
 "help.text"
 msgid "<input>=WEEKS(\"01/12/2022\",\"01/17/2022\",0)</input> returns 0 because <emph>Type</emph> was set to 0 and there are only 5 days in the interval."
-msgstr ""
+msgstr "<input>=TYGODNIE(\"01/12/2022\",\"01/17/2022\",0)</input> zwraca 0, ponieważ <emph>Typ</emph> ustawiono na 0, a jest tylko 5 dni w interwale."
 
 #. zVfY3
 #: 04060111.xhp
@@ -23090,7 +23090,7 @@ msgctxt ""
 "par_id71641991390039\n"
 "help.text"
 msgid "<input>=WEEKS(\"01/12/2022\",\"01/19/2022\",0)</input> returns 1 because <emph>Type</emph> was set to 0 and there are 7 days in the interval."
-msgstr ""
+msgstr "<input>=TYGODNIE(\"01/12/2022\",\"01/19/2022\",0)</input> zwraca 1, ponieważ <emph>Typ</emph> ustawiono na 0, a jest 7 dni w interwale."
 
 #. rABLZ
 #: 04060111.xhp
@@ -23099,7 +23099,7 @@ msgctxt ""
 "par_id71641991391123\n"
 "help.text"
 msgid "<input>=WEEKS(\"01/12/2022\",\"01/17/2022\",1)</input> returns 1 because <emph>Type</emph> was set to 1 and the interval contains a Monday, since 01/12/2022 is a Wednesday and 01/17/2022 is a Monday."
-msgstr ""
+msgstr "<input>=TYGODNIE(\"01/12/2022\",\"01/17/2022\",1)</input> zwraca 1, ponieważ <emph>Typ</emph> ustawiono na 1, a interwał zawiera poniedziałek, ponieważ 12.01.2022 to środa, a 17.01.2022 to poniedziałek."
 
 #. AxokT
 #: 04060111.xhp
@@ -23108,7 +23108,7 @@ msgctxt ""
 "par_id71641991332523\n"
 "help.text"
 msgid "<input>=WEEKS(\"01/10/2022\",\"01/15/2022\",1)</input> returns 0 because <emph>Type</emph> was set to 1 and the interval does not contain any Mondays, except for the start date."
-msgstr ""
+msgstr "<input>=TYGODNIE(\"01/10/2022\",\"01/15/2022\",1)</input> zwraca 0, ponieważ <emph>Typ</emph> ustawiono na 1, a interwał nie zawiera żadnych poniedziałków, z wyjątkiem daty rozpoczęcia."
 
 #. 94JhK
 #: 04060111.xhp
@@ -23225,7 +23225,7 @@ msgctxt ""
 "par_id3150361\n"
 "help.text"
 msgid "$[officename] Calc can be expanded by Add-Ins, which are external programming modules providing additional functions for working with spreadsheets. These are listed in the <emph>Function Wizard</emph> in the <emph>Add-In</emph> category. If you would like to program an Add-In yourself, you can learn here which functions must be exported by the <switchinline select=\"sys\"><caseinline select=\"UNIX\">shared library</caseinline><defaultinline>external DLL</defaultinline></switchinline> so that the Add-In can be successfully attached."
-msgstr ""
+msgstr "$[officename] Calc można rozbudować o dodatki, czyli zewnętrzne moduły programistyczne udostępniające dodatkowe funkcje do pracy z arkuszami kalkulacyjnymi. Są one wymienione w <emph>Kreatorze funkcji</emph> w kategorii <emph>Dodatki</emph>. Jeśli chcesz samodzielnie zaprogramować dodatek, możesz dowiedzieć się tutaj, które funkcje muszą zostać wyeksportowane przez <switchinline select=\"sys\"><caseinline select=\"UNIX\">bibliotekę współdzieloną</caseinline><defaultinline>zewnętrzną bibliotekę DLL</defaultinline></switchinline>, aby można było pomyślnie dołączyć dodatek."
 
 #. qyzrA
 #: 04060112.xhp
@@ -23234,7 +23234,7 @@ msgctxt ""
 "par_id3149211\n"
 "help.text"
 msgid "$[officename] searches the Add-in folder defined in the configuration for a suitable <switchinline select=\"sys\"><caseinline select=\"UNIX\">shared library</caseinline><defaultinline>DLL</defaultinline></switchinline>. To be recognized by $[officename], the <switchinline select=\"sys\"><caseinline select=\"UNIX\">shared library</caseinline><defaultinline>DLL</defaultinline></switchinline> must have certain properties, as explained in the following. This information allows you to program your own Add-In for <emph>Function Wizard</emph> of $[officename] Calc."
-msgstr ""
+msgstr "$[officename] przeszukuje folder dodatku zdefiniowany w konfiguracji pod kątem odpowiedniej <switchinline select=\"sys\"><caseinline select=\"UNIX\">biblioteki współdzielonej</caseinline><defaultinline>DLL</defaultinline></switchinline>. Aby została rozpoznana przez $[officename], <switchinline select=\"sys\"><caseinline select=\"UNIX\">biblioteka współdzielona</caseinline><defaultinline>DLL</defaultinline></switchinline> musi mieć określone właściwości, jak wyjaśniono poniżej. Informacje te umożliwiają zaprogramowanie własnego dodatku dla <emph>Kreatora funkcji</emph> programu $[officename] Calc."
 
 #. CAC5V
 #: 04060112.xhp
@@ -23261,7 +23261,7 @@ msgctxt ""
 "hd_id3152890\n"
 "help.text"
 msgid "Functions of <switchinline select=\"sys\"><caseinline select=\"UNIX\">Shared Library</caseinline><defaultinline>AddIn DLL</defaultinline></switchinline>"
-msgstr ""
+msgstr "Funkcje <switchinline select=\"sys\"><caseinline select=\"UNIX\">biblioteki współdzielonej</caseinline><defaultinline>dodatku DLL</defaultinline></switchinline>"
 
 #. Q8NDw
 #: 04060112.xhp
@@ -23450,7 +23450,7 @@ msgctxt ""
 "hd_id3156396\n"
 "help.text"
 msgid "<switchinline select=\"sys\"><caseinline select=\"UNIX\">Shared Library</caseinline><defaultinline>DLL</defaultinline></switchinline> functions"
-msgstr ""
+msgstr "<switchinline select=\"sys\"><caseinline select=\"UNIX\">Biblioteka współdzielona</caseinline><defaultinline>DLL</defaultinline></switchinline>"
 
 #. wVc9G
 #: 04060112.xhp
@@ -23459,7 +23459,7 @@ msgctxt ""
 "par_id3153019\n"
 "help.text"
 msgid "Following you will find a description of those functions, which are called at the <switchinline select=\"sys\"><caseinline select=\"UNIX\">Shared Library</caseinline><defaultinline>external DLL</defaultinline></switchinline>."
-msgstr ""
+msgstr "Poniżej znajdziesz opis tych funkcji, które są wywoływane w <switchinline select=\"sys\"><caseinline select=\"UNIX\">bibliotece współdzielonej</caseinline><defaultinline>zewnętrznej bibliotece DLL</defaultinline></switchinline>."
 
 #. kDo37
 #: 04060112.xhp
@@ -23468,7 +23468,7 @@ msgctxt ""
 "par_id3150038\n"
 "help.text"
 msgid "For all <switchinline select=\"sys\"><caseinline select=\"UNIX\">Shared Library</caseinline><defaultinline>DLL</defaultinline></switchinline> functions, the following applies:"
-msgstr ""
+msgstr "W przypadku wszystkich funkcji <switchinline select=\"sys\"><caseinline select=\"UNIX\">biblioteki współdzielonej</caseinline><defaultinline>DLL</defaultinline></switchinline> obowiązuje następująca zasada:"
 
 #. QZ7q4
 #: 04060112.xhp
@@ -23477,7 +23477,7 @@ msgctxt ""
 "par_id3147616\n"
 "help.text"
 msgid "<emph>Output</emph>: Resulting value"
-msgstr ""
+msgstr "<emph>Wyjście</emph>: wartość wynikowa"
 
 #. kqhgX
 #: 04060112.xhp
