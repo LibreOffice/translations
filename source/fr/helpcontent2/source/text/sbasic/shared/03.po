@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2023-04-19 12:24+0200\n"
-"PO-Revision-Date: 2023-08-11 20:08+0000\n"
+"POT-Creation-Date: 2023-09-12 14:57+0200\n"
+"PO-Revision-Date: 2023-09-11 19:22+0000\n"
 "Last-Translator: sophie <gautier.sophie@gmail.com>\n"
 "Language-Team: French <https://translations.documentfoundation.org/projects/libo_help-master/textsbasicshared03/fr/>\n"
 "Language: fr\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
 "X-Accelerator-Marker: ~\n"
-"X-Generator: Weblate 4.15.2\n"
+"X-Generator: LibreOffice\n"
 "X-POOTLE-MTIME: 1561879999.000000\n"
 
 #. ViEWM
@@ -763,6 +763,15 @@ msgctxt ""
 msgid "<bookmark_value>BASIC Tools library</bookmark_value>"
 msgstr "<bookmark_value>Bibliothèque BASIC Tools</bookmark_value>"
 
+#. 3npFA
+#: lib_tools.xhp
+msgctxt ""
+"lib_tools.xhp\n"
+"par_id901528999850603\n"
+"help.text"
+msgid "<embedvar href=\"text/sbasic/shared/00000003.xhp#basiclibrarynote\" markup=\"keep\"/><br/>        <item type=\"literal\">GlobalScope.BasicLibraries.LoadLibrary(\"Tools\")</item>"
+msgstr ""
+
 #. Fzsaz
 #: lib_tools.xhp
 msgctxt ""
@@ -897,6 +906,15 @@ msgctxt ""
 "help.text"
 msgid "Miscellaneous functions and subroutines."
 msgstr "Fonctions et sous routines diverses."
+
+#. ET8dB
+#: lib_tools.xhp
+msgctxt ""
+"lib_tools.xhp\n"
+"hd_id481688911437449\n"
+"help.text"
+msgid "Example"
+msgstr ""
 
 #. 534YG
 #: lib_tools.xhp
@@ -2446,14 +2464,14 @@ msgctxt ""
 msgid "SFDocuments.Base service"
 msgstr "Service SFDocuments.Base"
 
-#. RAHDf
+#. fCppF
 #: sf_base.xhp
 msgctxt ""
 "sf_base.xhp\n"
 "bm_id781582391760253\n"
 "help.text"
-msgid "<variable id=\"ctrls_h1\"><link href=\"text/sbasic/shared/03/sf_base.xhp\"><literal>SFDocuments</literal>.<literal>Base</literal> service</link></variable>"
-msgstr "<variable id=\"ctrls_h1\"><link href=\"text/sbasic/shared/03/sf_base.xhp\"><literal>SFDocuments</literal>.<literal>Service</literal> Base</link></variable>"
+msgid "<variable id=\"BaseService\"><link href=\"text/sbasic/shared/03/sf_base.xhp\"><literal>SFDocuments</literal>.<literal>Base</literal> service</link></variable>"
+msgstr ""
 
 #. 4KK8s
 #: sf_base.xhp
@@ -2599,6 +2617,15 @@ msgctxt ""
 msgid "Closes the given form document. Returns <literal>True</literal> if closure is successful."
 msgstr "Ferme le document de formulaire donné. Renvoie <literal>True</literal> si la fermeture réussit."
 
+#. UCFtA
+#: sf_base.xhp
+msgctxt ""
+"sf_base.xhp\n"
+"par_id81692554166441\n"
+"help.text"
+msgid "The method <literal>CloseFormDocument</literal> is deprecated since %PRODUCTNAME 7.6. Although it is still available, it may be removed from the <literal>Base</literal> service in a future release. Use the <literal>CloseDocument</literal> method from the <literal>FormDocument</literal> service instead."
+msgstr ""
+
 #. ycunk
 #: sf_base.xhp
 msgctxt ""
@@ -2670,6 +2697,15 @@ msgctxt ""
 "help.text"
 msgid "A <literal>SFDocuments.Form</literal> object representing the form specified in the <literal>Form</literal> argument."
 msgstr "Un objet <literal>SFDocuments.Form</literal> représentant le formulaire spécifié dans l'argument <literal>Form</literal>."
+
+#. cifGC
+#: sf_base.xhp
+msgctxt ""
+"sf_base.xhp\n"
+"par_id81692554166191\n"
+"help.text"
+msgid "The method <literal>Forms</literal> is deprecated since %PRODUCTNAME 7.6. Although it is still available, it may be removed from the <literal>Base</literal> service in a future release. Use the <literal>Forms</literal> method from the <literal>FormDocument</literal> service instead."
+msgstr ""
 
 #. pEtwt
 #: sf_base.xhp
@@ -2770,23 +2806,32 @@ msgctxt ""
 msgid "<emph>formdocument:</emph> The name of a <literal>FormDocument</literal> to be checked, as a case-sensitive string."
 msgstr "<emph>formdocument :</emph> le nom d'un <literal>FormDocument</literal> à vérifier, en tant que chaîne sensible à la casse."
 
-#. RS3kj
+#. vzCvY
 #: sf_base.xhp
 msgctxt ""
 "sf_base.xhp\n"
 "par_id801619099743199\n"
 "help.text"
-msgid "Opens the specified <literal>FormDocument</literal> either in normal or in design mode."
-msgstr "Ouvre le <literal>FormDocument</literal> spécifié en mode normal ou en mode création."
+msgid "Opens the specified <literal>FormDocument</literal> either in normal or in design mode. This method returns a <literal>FormDocument</literal> service instance corresponding to the specified form document."
+msgstr ""
 
-#. 38vtF
+#. UEGjL
 #: sf_base.xhp
 msgctxt ""
 "sf_base.xhp\n"
 "par_id451619100075330\n"
 "help.text"
-msgid "If the form document is already open, it is activated without changing its mode. The method returns <literal>True</literal> if the form document could be opened."
-msgstr "Si le document formulaire est déjà ouvert, il est activé sans changer son mode. La méthode renvoie <literal>True</literal> si le document de formulaire a pu être ouvert."
+msgid "If the form document is already open, it is activated without changing its mode."
+msgstr ""
+
+#. ZGYRs
+#: sf_base.xhp
+msgctxt ""
+"sf_base.xhp\n"
+"par_id651692554712005\n"
+"help.text"
+msgid "If the specified form document does not exist, then <literal>Nothing</literal> is returned."
+msgstr ""
 
 #. dUE6w
 #: sf_base.xhp
@@ -2950,6 +2995,15 @@ msgctxt ""
 msgid "Returns <literal>True</literal> if the document was successfully printed."
 msgstr "Renvoie <literal>True</literal> si le document a été imprimé avec succès."
 
+#. yqC7c
+#: sf_base.xhp
+msgctxt ""
+"sf_base.xhp\n"
+"par_id81692554166367\n"
+"help.text"
+msgid "The method <literal>PrintOut</literal> is deprecated since %PRODUCTNAME 7.6. Although it is still available, it may be removed from the <literal>Base</literal> service in a future release. Use the <literal>PrintOut</literal> method from the <literal>FormDocument</literal> service instead."
+msgstr ""
+
 #. pwm7n
 #: sf_base.xhp
 msgctxt ""
@@ -2994,6 +3048,15 @@ msgctxt ""
 "help.text"
 msgid "Returns <literal>True</literal> when successful."
 msgstr "Renvoie <literal>True</literal> en cas de succès."
+
+#. s5k6j
+#: sf_base.xhp
+msgctxt ""
+"sf_base.xhp\n"
+"par_id81692554166449\n"
+"help.text"
+msgid "The method <literal>SetPrinter</literal> is deprecated since %PRODUCTNAME 7.6. Although it is still available, it may be removed from the <literal>Base</literal> service in a future release. Use the <literal>SetPrinter</literal> method from the <literal>Document</literal> service instead."
+msgstr ""
 
 #. uGA7B
 #: sf_base.xhp
@@ -8188,14 +8251,14 @@ msgctxt ""
 msgid "' The inserted column spans all rows in the sheet"
 msgstr "' La colonne insérée s'étend sur toutes les lignes de la feuille"
 
-#. DDG3C
+#. D4fh3
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id141595692394382\n"
 "help.text"
-msgid "Sorts the given range based on a set of columns/rows that are considered as keys. The sorting order may vary by column/row. It returns a string representing the modified range of cells. The size of the modified area is fully determined by the size of the source area."
-msgstr "Trie la plage donnée en fonction d'un ensemble de colonnes/lignes considérées comme des clés. L'ordre de tri peut varier selon la colonne/ligne. Elle renvoie une chaîne représentant la plage de cellules modifiée. La taille de la zone modifiée est entièrement déterminée par la taille de la zone source."
+msgid "Sort the given range on any number of columns/rows. The sorting order may vary by column/row. If the number of sort keys is > 3 then the range is sorted several times, by groups of 3 keys, starting from the last key. It returns a string representing the modified range of cells. The size of the modified area is fully determined by the size of the source area."
+msgstr ""
 
 #. MVGBC
 #: sf_calc.xhp
@@ -8215,14 +8278,14 @@ msgctxt ""
 msgid "<emph>sortkeys</emph>: A scalar (if 1 column/row) or an array of column/row numbers starting from 1."
 msgstr "<emph>sortkeys</emph> : un scalaire (si 1 colonne/ligne) ou une matrice de numéros de colonne/ligne commençant à 1."
 
-#. aQF93
+#. k5CZ4
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id421595692962095\n"
 "help.text"
-msgid "<emph>sortorder</emph>: A scalar or an array of strings containing the values \"ASC\" (ascending), \"DESC\" (descending) or \"\" (which defaults to ascending). Each item is paired with the corresponding item in <literal>sortkeys</literal>. If the <literal>sortorder</literal> array is shorter than <literal>sortkeys</literal>, the remaining keys are sorted in ascending order."
-msgstr "<emph>sortorder</emph> : un scalaire ou une matrice de chaînes contenant les valeurs \"ASC\" (croissant), \"DESC\" (décroissant) ou \"\" (par défaut, croissant). Chaque élément est associé à l'élément correspondant dans les <literal>sortkeys</literal>. Si le tableau <literal>sortorder</literal> est plus court que <literal>sortkeys</literal>, les clés restantes sont triées par ordre croissant."
+msgid "<emph>sortorder</emph>: A scalar or an array of strings containing the values \"ASC\" (ascending), \"DESC\" (descending). Each item is paired with the corresponding item in <literal>sortkeys</literal>. If the <literal>sortorder</literal> array is shorter than <literal>sortkeys</literal>, the remaining keys are sorted in ascending order."
+msgstr ""
 
 #. GVpuf
 #: sf_calc.xhp
@@ -9610,6 +9673,60 @@ msgctxt ""
 msgid "' Returns the first 50 employee records ordered by the 'FirstName' field"
 msgstr "' Renvoie les 50 premiers enregistrements d'employés triés par le champ 'FirstName'"
 
+#. BjQGE
+#: sf_database.xhp
+msgctxt ""
+"sf_database.xhp\n"
+"par_id801619099743199\n"
+"help.text"
+msgid "Opens the specified form document in normal mode. This method returns a <literal>FormDocument</literal> service instance corresponding to the specified form document."
+msgstr ""
+
+#. DWmz6
+#: sf_database.xhp
+msgctxt ""
+"sf_database.xhp\n"
+"par_id451619100075330\n"
+"help.text"
+msgid "If the form document is already open, the form document window is activated."
+msgstr ""
+
+#. WVNUN
+#: sf_database.xhp
+msgctxt ""
+"sf_database.xhp\n"
+"par_id651692554712005\n"
+"help.text"
+msgid "If the specified form document does not exist, then <literal>Nothing</literal> is returned."
+msgstr ""
+
+#. bEzqx
+#: sf_database.xhp
+msgctxt ""
+"sf_database.xhp\n"
+"par_id941619099797810\n"
+"help.text"
+msgid "<emph>formdocument:</emph> The name of the <literal>FormDocument</literal> to be opened, as a case-sensitive string."
+msgstr ""
+
+#. bERnJ
+#: sf_database.xhp
+msgctxt ""
+"sf_database.xhp\n"
+"par_id251619100191992\n"
+"help.text"
+msgid "Most form documents are stored in the root of the Base document and they can be opened simply using their names, as in the example below:"
+msgstr ""
+
+#. LNaUs
+#: sf_database.xhp
+msgctxt ""
+"sf_database.xhp\n"
+"par_id351619100327505\n"
+"help.text"
+msgid "If form documents are organized in folders, it becomes necessary to include the folder name to specify the form document to be opened, as illustrated in the following example:"
+msgstr ""
+
 #. BS9jq
 #: sf_database.xhp
 msgctxt ""
@@ -10627,14 +10744,14 @@ msgctxt ""
 msgid "Before using the <literal>Dialog</literal> service the <literal>ScriptForge</literal> library needs to be loaded or imported:"
 msgstr "Avant d'utiliser le service <literal>Dialog</literal>, la bibliothèque <literal>ScriptForge</literal> doit être chargée ou importée :"
 
-#. S8GrJ
+#. EzMcF
 #: sf_dialog.xhp
 msgctxt ""
 "sf_dialog.xhp\n"
 "par_id361598174756160\n"
 "help.text"
-msgid "The <literal>Dialog</literal> service is invoked through the <literal>CreateScriptService</literal> method. It requires three positional arguments to specify the dialog box to activate:"
-msgstr "Le service <literal>Dialog</literal> est appelé via la méthode <literal>CreateScriptService</literal>. Il nécessite trois arguments de position pour spécifier la boîte de dialogue à activer :"
+msgid "The <literal>Dialog</literal> service is invoked through the <literal>CreateScriptService</literal> method. It requires three supplemental positional arguments to specify the dialog box to activate:"
+msgstr ""
 
 #. KyBGV
 #: sf_dialog.xhp
@@ -10743,6 +10860,78 @@ msgctxt ""
 "help.text"
 msgid "Use the string \"GlobalScope\" as the <emph>container</emph> argument when the dialog is stored either in <menuitem>My Macros & Dialogs</menuitem> or in <menuitem>Application Macros & Dialogs</menuitem>."
 msgstr "Utilisez la chaîne \"GlobalScope\" comme argument <emph>container</emph> lorsque la boîte de dialogue est stockée soit dans <menuitem>Mes macros et boîtes de dialogue</menuitem> ou dans <menuitem>Application Macros & Dialogs</menuitem>."
+
+#. vwuNC
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id461688463074274\n"
+"help.text"
+msgid "The dialog service offers methods that create new controls dynamically in an existing dialog predefined with the <link href=\"text/sbasic/guide/create_dialog.html\">Dialog Editor</link>. A dialog is initialized with controls in the Dialog Editor and new controls can be added at run-time before or after the dialog <literal>Execute()</literal> statement."
+msgstr ""
+
+#. Rdc5q
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id261688459210848\n"
+"help.text"
+msgid "The <literal>Dialog</literal> service can equally be invoked - through the <literal>CreateScriptService</literal> method - when creating dialogs on-the-fly; It requires two supplemental positional arguments:"
+msgstr ""
+
+#. B82Et
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id751688460276630\n"
+"help.text"
+msgid "<emph>DialogName</emph>: A case-sensitive string designating the dialog."
+msgstr ""
+
+#. QucaE
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id291688460281953\n"
+"help.text"
+msgid "<emph>Library</emph>: The case-sensitive name of the library where to store the dialog. Default value is \"Standard\"."
+msgstr ""
+
+#. sKdLk
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id601619633410089\n"
+"help.text"
+msgid "Or using Python:"
+msgstr ""
+
+#. vHBvS
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"pyc_id981688462077340\n"
+"help.text"
+msgid "dlg = CreateScriptService(\"NewDialog\", \"myDialog1\")  # \"Standard\" library is used"
+msgstr ""
+
+#. wF8Se
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"pyc_id681619620065191\n"
+"help.text"
+msgid "# ... Process controls and do what is needed"
+msgstr ""
+
+#. JhBcB
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id951688460698125\n"
+"help.text"
+msgid "All properties and methods applicable to predefined dialogs are available for such new dialogs. In particular the series of <literal>CreateXXX()</literal> methods for the additionof new dialog controls."
+msgstr ""
 
 #. 8iyqo
 #: sf_dialog.xhp
@@ -11095,14 +11284,14 @@ msgctxt ""
 msgid "Event properties"
 msgstr "Propriétés de l'événement"
 
-#. GyjGD
+#. EQdEV
 #: sf_dialog.xhp
 msgctxt ""
 "sf_dialog.xhp\n"
 "par_id41612629140856\n"
 "help.text"
-msgid "Returns a URI string with the reference to the script triggered by the event. Read its specification in the <link href=\"https://wiki.documentfoundation.org/Documentation/DevGuide/Scripting_Framework#Scripting_Framework_URI_Specification\">scripting framework URI specification</link>."
-msgstr "Renvoie une chaîne URI avec la référence au script déclenché par l'événement. Lisez sa spécification dans la <link href=\"https://wiki.documentfoundation.org/Documentation/DevGuide/Scripting_Framework#Scripting_Framework_URI_Specification\">spécification de l'URI du framework de script</link>."
+msgid "<literal>On…</literal> properties return a URI string with the reference to the script triggered by the event. <literal>On…</literal> properties can be set programmatically.<br/>Read its specification in the <link href=\"https://wiki.documentfoundation.org/Documentation/DevGuide/Scripting_Framework#Scripting_Framework_URI_Specification\">scripting framework URI specification</link>."
+msgstr ""
 
 #. XCC7C
 #: sf_dialog.xhp
@@ -11113,14 +11302,14 @@ msgctxt ""
 msgid "Name"
 msgstr "Nom"
 
-#. V3bin
+#. eFrre
 #: sf_dialog.xhp
 msgctxt ""
 "sf_dialog.xhp\n"
 "par_id401612628879819\n"
 "help.text"
-msgid "ReadOnly"
-msgstr "Lecture seule"
+msgid "Read/Write"
+msgstr ""
 
 #. uW85z
 #: sf_dialog.xhp
@@ -11311,6 +11500,15 @@ msgctxt ""
 msgid "Mouse button released"
 msgstr "Bouton de la souris relâché"
 
+#. Z4Lnx
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id401687779361420\n"
+"help.text"
+msgid "Assigning events via the Basic IDE and assigning events via macros are mutually exclusive."
+msgstr ""
+
 #. 9uiAA
 #: sf_dialog.xhp
 msgctxt ""
@@ -11319,6 +11517,15 @@ msgctxt ""
 "help.text"
 msgid "List of Methods in the Dialog Service"
 msgstr "Liste des méthodes dans le service Dialog"
+
+#. GbtVM
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id161660427825856\n"
+"help.text"
+msgid "Dimensioning a dialog is done by using <link href=\"text/sbasic/shared/00000002.xhp#AppFontUnits\">Map AppFont units</link>. A dialog or control model also uses AppFont units. While their views use pixels."
+msgstr ""
 
 #. DiCyL
 #: sf_dialog.xhp
@@ -11428,6 +11635,42 @@ msgctxt ""
 msgid "dlg2 = CreateScriptService('Dialog', ...)  # Open a second dialog"
 msgstr "dlg2 = CreateScriptService('Dialog', ...)  # Ouvrir une deuxième boîte de dialogue"
 
+#. wAahr
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id161584552357982\n"
+"help.text"
+msgid "Duplicate an existing control of any typein the actual dialog. The duplicated control is left unchanged and can be relocated."
+msgstr ""
+
+#. CCUpB
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id1992584541368789\n"
+"help.text"
+msgid "<emph>SourceName</emph>: The name of the control to duplicate."
+msgstr ""
+
+#. Bv4DW
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id1001584541368789\n"
+"help.text"
+msgid "<emph>ControlName</emph>: A valid control name as a case-sensitive string. It must not exist yet."
+msgstr ""
+
+#. PFJHH
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id31688475132631\n"
+"help.text"
+msgid "<emph>Left</emph>, <emph>Top</emph>: The coordinates of the new control expressed in <link href=\"text/sbasic/shared/00000002.xhp#AppFontUnits\">Map AppFont units</link>."
+msgstr ""
+
 #. 4qLn9
 #: sf_dialog.xhp
 msgctxt ""
@@ -11464,6 +11707,1248 @@ msgctxt ""
 msgid "<emph>ControlName</emph> : A valid control name as a case-sensitive string. If absent, the list of control names is returned as a zero-based array."
 msgstr "<emph>ControlName</emph> : un nom de contrôle valide sous forme de chaîne sensible à la casse. S'il est absent, la liste des noms de contrôle est renvoyée sous la forme d'une matrice de base zéro."
 
+#. qkyvc
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id381591885776500\n"
+"help.text"
+msgid "Create a new control of type Button in the current dialog."
+msgstr ""
+
+#. UUuAw
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"parm_ControlName\n"
+"help.text"
+msgid "<emph>ControlName</emph>: the name of the new control. It must not exist yet."
+msgstr ""
+
+#. GDYGN
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"parm_Place\n"
+"help.text"
+msgid "<emph>Place</emph>: either …"
+msgstr ""
+
+#. KNVZv
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id421598177970993\n"
+"help.text"
+msgid "a Basic <link href=\"sbasic/shared/03104200.xhp\">Array</link> or Python tuple with 4 elements: (X, Y, width, height)"
+msgstr ""
+
+#. HCiRn
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id881591858229301\n"
+"help.text"
+msgid "a com.sun.star.awt.Rectangle [X, Y, Width, Height] object"
+msgstr ""
+
+#. 3Mdpm
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id241688051343685\n"
+"help.text"
+msgid "All elements are expressed in <link href=\"text/sbasic/shared/00000002.xhp#AppFontUnits\">Map AppFont units</link>."
+msgstr ""
+
+#. f4DZt
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id971688053679708\n"
+"help.text"
+msgid "<emph>Toggle</emph>: when <literal>True</literal> a Toggle button is created. Default = <literal>False</literal>"
+msgstr ""
+
+#. sR8Fy
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id961688054652555\n"
+"help.text"
+msgid "<emph>Push</emph>: \"OK\", \"CANCEL\" or \"\" (default)"
+msgstr ""
+
+#. kjvhr
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id961688054748539\n"
+"help.text"
+msgid "An instance of <link href=\"text/sbasic/shared/03/sf_dialogcontrol.xhp\"><literal>SFDialogs</literal>.<literal>DialogControl</literal></link> service or <literal>Nothing</literal>."
+msgstr ""
+
+#. RB88M
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"bas_id241688389976612\n"
+"help.text"
+msgid "Set myButton = oDlg.CreateButton(\"Button1\", Array(20, 20, 60, 15))"
+msgstr ""
+
+#. 4Aydt
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"pyc_id861688389993653\n"
+"help.text"
+msgid "myButton = dlg.CreateButton('Button1', (20, 20, 60, 15))"
+msgstr ""
+
+#. goc7H
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id991591995776500\n"
+"help.text"
+msgid "Create a new control of type CheckBox in the current dialog."
+msgstr ""
+
+#. pVaTF
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id241688132171052\n"
+"help.text"
+msgid "<emph>MultiLine</emph>: When True (default = False), the caption may be displayed on more than one line."
+msgstr ""
+
+#. tAwLB
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"bas_id211688391124091\n"
+"help.text"
+msgid "Set myCheckBox = oDlg.CreateCheckBox(\"CheckBox1\", Array(20, 20, 60, 15), MultiLine := True)"
+msgstr ""
+
+#. FSe7M
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"pyc_id711688391128090\n"
+"help.text"
+msgid "myCheckBox = dlg.CreateCheckBox('CheckBox1', (20, 20, 60, 15), MultiLine = True)"
+msgstr ""
+
+#. GzFFo
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id991591885776500\n"
+"help.text"
+msgid "Create a new control of type ComboBox in the current dialog."
+msgstr ""
+
+#. EBEZu
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id241688132526109\n"
+"help.text"
+msgid "<emph>Border</emph>: \"3D\" (default) or \"FLAT\" or \"NONE\""
+msgstr ""
+
+#. GdLkB
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id641688132528598\n"
+"help.text"
+msgid "<emph>DropDown</emph>: When True (default), a drop down button is displayed"
+msgstr ""
+
+#. tYvPA
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id901688132529427\n"
+"help.text"
+msgid "<emph>LineCount</emph>: Specifies the maximum line count displayed in the drop down (default = 5)"
+msgstr ""
+
+#. No6yL
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"bas_id571688391233995\n"
+"help.text"
+msgid "Set myComboBox = oDlg.CreateComboBox(\"ComboBox1\", Array(20, 20, 60, 15), Dropdown := True)"
+msgstr ""
+
+#. vQ37B
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"pyc_id681688391240490\n"
+"help.text"
+msgid "myComboBox = dlg.CreateComboBox('ComboBox1', (20, 20, 60, 15), Dropdown = True)"
+msgstr ""
+
+#. CW7CF
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id991591005776500\n"
+"help.text"
+msgid "Create a new control of type CurrencyField in the current dialog."
+msgstr ""
+
+#. CzJFF
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id511688132750220\n"
+"help.text"
+msgid "<emph>Border</emph>: \"3D\" (default) or \"FLAT\" or \"NONE\""
+msgstr ""
+
+#. HnJzn
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id751688132750844\n"
+"help.text"
+msgid "<emph>SpinButton</emph>: when True (default = False), a spin button is present"
+msgstr ""
+
+#. kCCaS
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id741688132751443\n"
+"help.text"
+msgid "<emph>MinValue</emph>: the smallest value that can be entered in the control. Default = -1000000"
+msgstr ""
+
+#. MAm9M
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id361688132752004\n"
+"help.text"
+msgid "<emph>MaxValue</emph>: the largest value that can be entered in the control. Default = +1000000"
+msgstr ""
+
+#. UHBgk
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id371688132752523\n"
+"help.text"
+msgid "<emph>Increment</emph>: the step when the spin button is pressed. Default = 1"
+msgstr ""
+
+#. mWecS
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id321688132753003\n"
+"help.text"
+msgid "<emph>Accuracy</emph>: specifies the decimal accuracy. Default = 2 decimal digits"
+msgstr ""
+
+#. CdDEE
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"bas_id931688391314834\n"
+"help.text"
+msgid "Set myCurrencyField = oDlg.CreateCurrencyField(\"CurrencyField1\", Array(20, 20, 60, 15), SpinButton := True)"
+msgstr ""
+
+#. JYQZW
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"pyc_id41688391319204\n"
+"help.text"
+msgid "myCurrencyField = dlg.CreateCurrencyField('CurrencyField1', (20, 20, 60, 15), SpinButton = True)"
+msgstr ""
+
+#. TP42B
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id199598185776500\n"
+"help.text"
+msgid "Create a new control of type DateField in the current dialog."
+msgstr ""
+
+#. WJDCR
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id831688133418579\n"
+"help.text"
+msgid "<emph>Border</emph>: \"3D\" (default) or \"FLAT\" or \"NONE\""
+msgstr ""
+
+#. TeyCg
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id521688133422980\n"
+"help.text"
+msgid "<emph>DropDown</emph>: when True (default = False), a dropdown button is shown"
+msgstr ""
+
+#. cpD54
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id361688133423860\n"
+"help.text"
+msgid "<emph>MinDate</emph>: the smallest date that can be entered in the control. Default = 1900-01-01"
+msgstr ""
+
+#. E4APT
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id221688133424380\n"
+"help.text"
+msgid "<emph>MaxDate</emph>: the largest Date that can be entered in the control. Default = 2200-12-31"
+msgstr ""
+
+#. Ddvtg
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"bas_id431688391456485\n"
+"help.text"
+msgid "Set myDateField = oDlg.CreateDateField(\"DateField1\", Array(20, 20, 60, 15), Dropdown := True)"
+msgstr ""
+
+#. yD5iD
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"pyc_id491688391462954\n"
+"help.text"
+msgid "myDateField = dlg.CreateDateField('DateField1', (20, 20, 60, 15), Dropdown = True)"
+msgstr ""
+
+#. uJLUS
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id199591885776511\n"
+"help.text"
+msgid "Create a new control of type FileControl in the current dialog."
+msgstr ""
+
+#. Z8TBR
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id1001688133702877\n"
+"help.text"
+msgid "<emph>Border</emph>: \"3D\" (default) or \"FLAT\" or \"NONE\""
+msgstr ""
+
+#. i7pDw
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"bas_id741688391752376\n"
+"help.text"
+msgid "Set myFileControl = oDlg.CreateFileControl(\"FileControl1\", Array(20, 20, 60, 15))"
+msgstr ""
+
+#. GFDZP
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"pyc_id181688391760784\n"
+"help.text"
+msgid "myFileControl = dlg.CreateFileControl('FileControl1', (20, 20, 60, 15))"
+msgstr ""
+
+#. uDBpj
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id199195885776500\n"
+"help.text"
+msgid "Create a new control of type FixedLine in the current dialog."
+msgstr ""
+
+#. FstFf
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id351688134656035\n"
+"help.text"
+msgid "<emph>Orientation</emph>: \"H[orizontal]\" or \"V[ertical]\"."
+msgstr ""
+
+#. FrBtJ
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"bas_id301688392274784\n"
+"help.text"
+msgid "Set myFixedLine = oDlg.CreateFixedLine(\"FixedLine1\", Array(20, 20, 60, 15), Orientation := \"vertical\")"
+msgstr ""
+
+#. 2kKJa
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"pyc_id491688392278136\n"
+"help.text"
+msgid "myFixedLine = dlg.CreateFixedLine('FixedLine1', (20, 20, 60, 15), Orientation = 'vertical')"
+msgstr ""
+
+#. SdNPZ
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id199721885776533\n"
+"help.text"
+msgid "Create a new control of type FixedText in the current dialog."
+msgstr ""
+
+#. qWysV
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id781688134809419\n"
+"help.text"
+msgid "<emph>Border</emph>: \"NONE\" (default) or \"FLAT\" or \"3D\""
+msgstr ""
+
+#. vzdDb
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id311688134819532\n"
+"help.text"
+msgid "<emph>Multiline</emph>: When True (default = False), the caption may be displayed on more than one line"
+msgstr ""
+
+#. 24XQ9
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id121688134820022\n"
+"help.text"
+msgid "<emph>Align</emph>: horizontal alignment, \"LEFT\" (default) or \"CENTER\" or \"RIGHT\""
+msgstr ""
+
+#. AabE3
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id316881340820555\n"
+"help.text"
+msgid "<emph>VerticalAlign</emph>: vertical alignment, \"TOP\" (default) or \"MIDDLE\" or \"BOTTOM\""
+msgstr ""
+
+#. byaD6
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"bas_id521688392367919\n"
+"help.text"
+msgid "Set myFixedText = oDlg.CreateFixedText(\"FixedText1\", Array(20, 20, 60, 15), MultiLine := True)"
+msgstr ""
+
+#. CDXiP
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"pyc_id971688392372871\n"
+"help.text"
+msgid "myFixedText = dlg.CreateFixedText('FixedText1', (20, 20, 60, 15), MultiLine = True)"
+msgstr ""
+
+#. uwXZE
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id199591885776500\n"
+"help.text"
+msgid "Create a new control of type FormattedField in the current dialog."
+msgstr ""
+
+#. Egi57
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id561688135183954\n"
+"help.text"
+msgid "<emph>Border</emph>: \"3D\" (default) or \"FLAT\" or \"NONE\""
+msgstr ""
+
+#. fBb4e
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id691688135184764\n"
+"help.text"
+msgid "<emph>SpinButton</emph>: when True (default = False), a spin button is present"
+msgstr ""
+
+#. gGMo2
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id941688135185218\n"
+"help.text"
+msgid "<emph>MinValue</emph>: the smallest value that can be entered in the control. Default = -1000000"
+msgstr ""
+
+#. LurdS
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id881688135185626\n"
+"help.text"
+msgid "<emph>MaxValue</emph>: the largest value that can be entered in the control. Default = +1000000"
+msgstr ""
+
+#. YpxN5
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"bas_id211688392640319\n"
+"help.text"
+msgid "Set myFormattedField = oDlg.CreateFormattedField(\"FormattedField1\", Array(20, 20, 60, 15), SpinButton := True)"
+msgstr ""
+
+#. 5h4ou
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"pyc_id481688392650918\n"
+"help.text"
+msgid "myFormattedField = dlg.CreateFormattedField('FormattedField1', (20, 20, 60, 15), SpinButton = True)"
+msgstr ""
+
+#. i7sEM
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id100691885776500\n"
+"help.text"
+msgid "Create a new control of type GroupBox in the current dialog."
+msgstr ""
+
+#. 3LLk5
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"bas_id1001688392702670\n"
+"help.text"
+msgid "Set myGroupBox = oDlg.CreateGroupBox(\"GroupBox1\", Array(20, 20, 60, 15))"
+msgstr ""
+
+#. Hjrdi
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"pyc_id941688392712142\n"
+"help.text"
+msgid "myGroupBox = dlg.CreateGroupBox('GroupBox1', (20, 20, 60, 15))"
+msgstr ""
+
+#. eCPow
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id101701885776500\n"
+"help.text"
+msgid "Create a new control of type Hyperlink in the current dialog."
+msgstr ""
+
+#. ZLjCH
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id731688542076471\n"
+"help.text"
+msgid "<emph>Border</emph>: \"NONE\" (default) or \"FLAT\" or \"3D\""
+msgstr ""
+
+#. jKDEF
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id241688542076988\n"
+"help.text"
+msgid "<emph>MultiLine</emph>: When True (default = False), the caption may be displayed on more than one line"
+msgstr ""
+
+#. oBCY5
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id831688542077407\n"
+"help.text"
+msgid "<emph>Align</emph>: horizontal alignment, \"LEFT\" (default) or \"CENTER\" or \"RIGHT\""
+msgstr ""
+
+#. E45Rv
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id941688542077873\n"
+"help.text"
+msgid "<emph>VerticalAlign</emph>: vertical alignment, \"TOP\" (default) or \"MIDDLE\" or \"BOTTOM\""
+msgstr ""
+
+#. jGgKr
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"bas_id1012788392702670\n"
+"help.text"
+msgid "Set myHyperlink = oDlg.CreateHyperlink(\"Hyperlink1\", Array(20, 20, 60, 15), MultiLine := True)"
+msgstr ""
+
+#. b29ot
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"pyc_id941688470312142\n"
+"help.text"
+msgid "myHyperlink = dlg.CreateHyperlink('Hyperlink1', (20, 20, 60, 15), MultiLine = True)"
+msgstr ""
+
+#. GVE4D
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id199591885776504\n"
+"help.text"
+msgid "Create a new control of type ImageControl in the current dialog."
+msgstr ""
+
+#. oYoCP
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id551688135418418\n"
+"help.text"
+msgid "<emph>Border</emph>: \"3D\" (default) or \"FLAT\" or \"NONE\""
+msgstr ""
+
+#. mFJZ4
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id431688135405342\n"
+"help.text"
+msgid "<emph>Scale</emph>: One of next values: \"FITTOSIZE\" (default), \"KEEPRATIO\" or \"NO\""
+msgstr ""
+
+#. JHzUz
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"bas_id911688392874655\n"
+"help.text"
+msgid "Set myImageControl = oDlg.CreateImageControl(\"ImageControl1\", Array(20, 20, 60, 15))"
+msgstr ""
+
+#. Ayx3d
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"pyc_id271688392883751\n"
+"help.text"
+msgid "myImageControl = dlg.CreateImageControl('ImageControl1\", (20, 20, 60, 15))"
+msgstr ""
+
+#. fXxUk
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id199591885776506\n"
+"help.text"
+msgid "Create a new control of type ListBox in the current dialog."
+msgstr ""
+
+#. EJiPj
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id1001688135548955\n"
+"help.text"
+msgid "<emph>Border</emph>: \"3D\" (default) or \"FLAT\" or \"NONE\""
+msgstr ""
+
+#. PZ4LB
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id11688135550412\n"
+"help.text"
+msgid "<emph>DropDown</emph>: When True (default), a drop down button is displayed"
+msgstr ""
+
+#. GJVah
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id121688135552418\n"
+"help.text"
+msgid "<emph>LineCount</emph>: Specifies the maximum line count displayed in the drop down (default = 5)"
+msgstr ""
+
+#. HPNpE
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id661688135552802\n"
+"help.text"
+msgid "<emph>MultiSelect</emph>: When True, more than 1 entry may be selected. Default = False"
+msgstr ""
+
+#. 8iFoG
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"bas_id771688392940502\n"
+"help.text"
+msgid "Set myListBox = oDlg.CreateListBox(\"ListBox1\", Array(20, 20, 60, 15), Dropdown := True, MultiSelect := True)"
+msgstr ""
+
+#. Me33n
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"pyc_id921688392950230\n"
+"help.text"
+msgid "myListBox = dlg.CreateListBox('ListBox1', (20, 20, 60, 15), Dropdown = True, MultiSelect = True)"
+msgstr ""
+
+#. Zowb3
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id199591885776510\n"
+"help.text"
+msgid "Create a new control of type NumericField in the current dialog."
+msgstr ""
+
+#. zzVVQ
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id841688135885946\n"
+"help.text"
+msgid "<emph>Border</emph>: \"3D\" (default) or \"FLAT\" or \"NONE\""
+msgstr ""
+
+#. uZyEN
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id781688135886499\n"
+"help.text"
+msgid "<emph>SpinButton</emph>: when True (default = False), a spin button is present"
+msgstr ""
+
+#. XbJfV
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id481688135887010\n"
+"help.text"
+msgid "<emph>MinValue</emph>: the smallest value that can be entered in the control. Default = -1000000"
+msgstr ""
+
+#. UxiQT
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id371688135887594\n"
+"help.text"
+msgid "<emph>MaxValue</emph>: the largest value that can be entered in the control. Default = +1000000"
+msgstr ""
+
+#. geRML
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id191688135888122\n"
+"help.text"
+msgid "<emph>Increment</emph>: the step when the spin button is pressed. Default = 1"
+msgstr ""
+
+#. GEbxq
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id451688135888638\n"
+"help.text"
+msgid "<emph>Accuracy</emph>: specifies the decimal accuracy. Default = 2 decimal digits"
+msgstr ""
+
+#. KpDyW
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"bas_id1001688393400045\n"
+"help.text"
+msgid "Set myNumericField = oDlg.CreateNumericField(\"NumericField1\", Array(20, 20, 60, 15), SpinButton := True)"
+msgstr ""
+
+#. AATC9
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"pyc_id951688393408429\n"
+"help.text"
+msgid "myNumericField = dlg.CreateNumericField('NumericField1', (20, 20, 60, 15), SpinButton = True)"
+msgstr ""
+
+#. Movj2
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id200591996776500\n"
+"help.text"
+msgid "Create a new control of type PatternField in the current dialog."
+msgstr ""
+
+#. hHGWt
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id251688136173107\n"
+"help.text"
+msgid "<emph>Border</emph>: \"3D\" (default) or \"FLAT\" or \"NONE\""
+msgstr ""
+
+#. rtHid
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id631688136173778\n"
+"help.text"
+msgid "<emph>EditMask</emph>: a character code that determines what the user may enter<br/>Refer to <link href=\"https://wiki.documentfoundation.org/Documentation/DevGuide/Graphical_User_Interfaces#Pattern_Field\">Pattern_Field</link> in the wiki for more information."
+msgstr ""
+
+#. EAbCo
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id321688136174244\n"
+"help.text"
+msgid "<emph>LiteralMask</emph>: contains the initial values that are displayed in the pattern field"
+msgstr ""
+
+#. gFGyA
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"bas_id1001688393462780\n"
+"help.text"
+msgid "Set myPatternField = oDlg.CreatePatternField(\"PatternField1\", Array(20, 20, 60, 15), EditMask := \"NNLNNLLLLL\", LiteralMask := \"__.__.2002\")"
+msgstr ""
+
+#. VVGBT
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"pyc_id231688393481925\n"
+"help.text"
+msgid "myPatternField = dlg.CreatePatternField('PatternField1', (20, 20, 60, 15), EditMask = 'NNLNNLLLLL', LiteralMask = '__.__.2002')"
+msgstr ""
+
+#. APQmw
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id311591885776500\n"
+"help.text"
+msgid "Create a new control of type ProgressBar in the current dialog."
+msgstr ""
+
+#. 4BBzC
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id551688136587329\n"
+"help.text"
+msgid "<emph>Border</emph>: \"3D\" (default) or \"FLAT\" or \"NONE\""
+msgstr ""
+
+#. JvdPM
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id411688136587778\n"
+"help.text"
+msgid "<emph>MinValue</emph>: the smallest value that can be entered in the control. Default = 0"
+msgstr ""
+
+#. W3vPH
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id261688136588146\n"
+"help.text"
+msgid "<emph>MaxValue</emph>: the largest value that can be entered in the control. Default = 100"
+msgstr ""
+
+#. vUT2B
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"bas_id361688393568688\n"
+"help.text"
+msgid "Set myProgressBar = oDlg.CreateProgressBar(\"ProgressBar1\", Array(20, 20, 60, 15), MaxValue := 1000)"
+msgstr ""
+
+#. i82Pi
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"pyc_id971688393576061\n"
+"help.text"
+msgid "myProgressBar = dlg.CreateProgressBar('ProgressBar1', (20, 20, 60, 15), MaxValue = 1000)"
+msgstr ""
+
+#. X8cwi
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id200502985776500\n"
+"help.text"
+msgid "Create a new control of type RadioButton in the current dialog."
+msgstr ""
+
+#. G7VYd
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id211688136829297\n"
+"help.text"
+msgid "<emph>MultiLine</emph>: When True (default = False), the caption may be displayed on more than one line"
+msgstr ""
+
+#. uXqbU
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"bas_id61688393673927\n"
+"help.text"
+msgid "Set myRadioButton = oDlg.CreateRadioButton(\"RadioButton1\", Array(20, 20, 60, 15), MultiLine := True)"
+msgstr ""
+
+#. 9zbeK
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"pyc_id751688393681262\n"
+"help.text"
+msgid "myRadioButton = dlg.CreateRadioButton('RadioButton1', (20, 20, 60, 15), MultiLine = True)"
+msgstr ""
+
+#. sJGgM
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id200591886886500\n"
+"help.text"
+msgid "Create a new control of type ScrollBar in the current dialog."
+msgstr ""
+
+#. eqt7D
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id731688136882518\n"
+"help.text"
+msgid "<emph>Orientation</emph>: H[orizontal] or V[ertical]"
+msgstr ""
+
+#. ukFA2
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id341688136882960\n"
+"help.text"
+msgid "<emph>Border</emph>: \"3D\" (default) or \"FLAT\" or \"NONE\""
+msgstr ""
+
+#. 5azTe
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id621688136883363\n"
+"help.text"
+msgid "<emph>MinValue</emph>: the smallest value that can be entered in the control. Default = 0"
+msgstr ""
+
+#. rCC4o
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id241688136883785\n"
+"help.text"
+msgid "<emph>MaxValue</emph>: the largest value that can be entered in the control. Default = 100"
+msgstr ""
+
+#. qRFL3
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"bas_id881688393719078\n"
+"help.text"
+msgid "Set myScrollBar = oDlg.CreateScrollBar(\"ScrollBar1\", Array(20, 20, 60, 15), MaxValue := 1000)"
+msgstr ""
+
+#. oEcHD
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"pyc_id551688393726542\n"
+"help.text"
+msgid "myScrollBar = dialog.CreateScrollBar('ScrollBar1', (20, 20, 60, 15), MaxValue = 1000)"
+msgstr ""
+
+#. WMACC
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id200502985776722\n"
+"help.text"
+msgid "Create a new control of type TableControl in the current dialog."
+msgstr ""
+
+#. iFFvS
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id541688393982300\n"
+"help.text"
+msgid "<emph>Border</emph>: \"3D\" (default) or \"FLAT\" or \"NONE\""
+msgstr ""
+
+#. aR6Ak
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id351688393983486\n"
+"help.text"
+msgid "<emph>RowHeaders</emph>: when True (default), the row Headers are shown"
+msgstr ""
+
+#. 4ti6y
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id941688393983846\n"
+"help.text"
+msgid "<emph>ColumnHeaders</emph>: when True (default), the column Headers are shown"
+msgstr ""
+
+#. 7CcWA
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id141688393984239\n"
+"help.text"
+msgid "<emph>ScrollBars</emph>: H[orizontal] or V[ertical] or B[oth] or N[one] (default). Scrollbars appear dynamically when they are needed."
+msgstr ""
+
+#. WzrfY
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id741688393984702\n"
+"help.text"
+msgid "<emph>GridLines</emph>: when True (default = False) horizontal and vertical lines are painted between the grid cells"
+msgstr ""
+
+#. HFGE2
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"bas_id901688393903227\n"
+"help.text"
+msgid "Set myTableControl = oDlg.CreateTableControl(\"TableControl1\", Array(20, 20, 60, 15), ScrollBars := \"B\")"
+msgstr ""
+
+#. uQgSs
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"pyc_id201688393912277\n"
+"help.text"
+msgid "myTableControl = dlg.CreateTableControl('TableControl1', (20, 20, 60, 15), ScrollBars = 'B')"
+msgstr ""
+
+#. rWc7n
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id200591895776500\n"
+"help.text"
+msgid "Create a new control of type TextField in the current dialog."
+msgstr ""
+
+#. VeTxt
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id281688394635114\n"
+"help.text"
+msgid "<emph>Border</emph>: \"3D\" (default) or \"FLAT\" or \"NONE\""
+msgstr ""
+
+#. BiVFx
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id341688394635645\n"
+"help.text"
+msgid "<emph>MultiLine</emph>: When True (default = False), the caption may be displayed on more than one line"
+msgstr ""
+
+#. BVC62
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id671688394636092\n"
+"help.text"
+msgid "<emph>MaximumLength</emph>: the maximum character count (default = 0 meaning unlimited)"
+msgstr ""
+
+#. WqBWr
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id231688394641827\n"
+"help.text"
+msgid "<emph>PasswordCharacter</emph>: a single character specifying the echo for a password text field (default = \"\")"
+msgstr ""
+
+#. o5AYA
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"bas_id171688394748227\n"
+"help.text"
+msgid "Set myTextField = oDlg.CreateTextField(\"TextField1\", Array(20, 20, 120, 50), MultiLine := True)"
+msgstr ""
+
+#. bdP85
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"pyc_id651688394757252\n"
+"help.text"
+msgid "myTextField = dlg.CreateTextField('TextField1', (20, 20, 120, 50), MultiLine = True)"
+msgstr ""
+
+#. QdBXd
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id200591895776611\n"
+"help.text"
+msgid "Create a new control of type TimeField in the current dialog."
+msgstr ""
+
+#. ADdEz
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id771688394821811\n"
+"help.text"
+msgid "<emph>Border</emph>: \"3D\" (default) or \"FLAT\" or \"NONE\""
+msgstr ""
+
+#. rEYM9
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id711688394822256\n"
+"help.text"
+msgid "<emph>MinTime</emph>: the smallest time that can be entered in the control. Default = 0"
+msgstr ""
+
+#. 9m7F9
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id491688394822582\n"
+"help.text"
+msgid "<emph>MaxTime</emph>: the largest time that can be entered in the control. Default = 24h"
+msgstr ""
+
+#. YYn8U
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"bas_id341688394893210\n"
+"help.text"
+msgid "Set myTimeField = oDlg.CreateTimeField(\"TimeField1\", Array(20, 20, 60, 15))"
+msgstr ""
+
+#. esoAA
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"pyc_id31688394900314\n"
+"help.text"
+msgid "myTimeField = dlog.CreateTimeField('TimeField1', (20, 20, 60, 15))"
+msgstr ""
+
+#. Dm3pE
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id200692885776500\n"
+"help.text"
+msgid "Create a new control of type TreeControl in the current dialog."
+msgstr ""
+
+#. KBrUN
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id241688394984562\n"
+"help.text"
+msgid "<emph>Border</emph>: \"3D\" (default) or \"FLAT\" or \"NONE\""
+msgstr ""
+
+#. cFso7
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"bas_id941688395020850\n"
+"help.text"
+msgid "Set myTreeControl = oDlg.CreateTreeControl(\"TreeControl1\", Array(20, 20, 60, 15))"
+msgstr ""
+
+#. GDWGT
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"pyc_id721688395030169\n"
+"help.text"
+msgid "myTreeControl = dlg.CreateTreeControl('TreeControl1', (20, 20, 60, 15))"
+msgstr ""
+
 #. j8x9C
 #: sf_dialog.xhp
 msgctxt ""
@@ -11490,24 +12975,6 @@ msgctxt ""
 "help.text"
 msgid "<emph>returnvalue</emph>: The value passed to the running <literal>Execute()</literal> method."
 msgstr "<emph>returnvalue</emph> : la valeur transmise à la méthode <literal>Execute()</literal> en cours d'exécution."
-
-#. ABome
-#: sf_dialog.xhp
-msgctxt ""
-"sf_dialog.xhp\n"
-"par_id411620110780170\n"
-"help.text"
-msgid "Using %PRODUCTNAME Basic:"
-msgstr "En utilisant %PRODUCTNAME Basic :"
-
-#. EtAN6
-#: sf_dialog.xhp
-msgctxt ""
-"sf_dialog.xhp\n"
-"par_id11620110819754\n"
-"help.text"
-msgid "Using Python:"
-msgstr "En utilisant Python :"
 
 #. aizuC
 #: sf_dialog.xhp
@@ -11644,14 +13111,86 @@ msgctxt ""
 msgid "Read the <link href=\"text/sbasic/shared/03/sf_l10n.xhp\">L10N service</link> help page to learn more about how PO and POT files are handled."
 msgstr "Lisez la page d'aide du <link href=\"text/sbasic/shared/03/sf_l10n.xhp\">service L10N</link> pour en savoir plus sur la gestion des fichiers PO et POT."
 
-#. mA4Nm
+#. yGR7U
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id21598298953697\n"
+"help.text"
+msgid "Set the tabulation index of a series of controls. The sequence of controls are given as an array of control names from the first to the last."
+msgstr ""
+
+#. GfyZ2
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id921688543457317\n"
+"help.text"
+msgid "Controls with an index >= 1 are not accessible with the TAB key if:<br/>- they are omitted from the given list<br/> - their type is FixedLine, GroupBox or ProgressBar<br/>- they are disabled"
+msgstr ""
+
+#. sx3QG
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id111688543698861\n"
+"help.text"
+msgid "<emph>TabsList</emph>: an array of valid control names in the order of tabulation"
+msgstr ""
+
+#. dqQvh
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id381688543699284\n"
+"help.text"
+msgid "<emph>Start</emph>: the tab index to be assigned to the 1st control in the list. Default = 1"
+msgstr ""
+
+#. CEhSS
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id321688543699637\n"
+"help.text"
+msgid "<emph>Increment</emph>: the difference between 2 successive tab indexes. Default = 1"
+msgstr ""
+
+#. DFWjc
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id401688543845094\n"
+"help.text"
+msgid "<literal>True</literal> when successful."
+msgstr ""
+
+#. 3XGLC
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"bas_id791620301085031\n"
+"help.text"
+msgid "oDlg.OrderTabs(Array(\"myListBox\", \"myTextField\", \"myNumericField\"), Start := 10)"
+msgstr ""
+
+#. UGwcg
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"pyc_id941620303073866\n"
+"help.text"
+msgid "dlg.OrderTabs(('myListBox', 'myTextField', 'myNumericField'), Start = 10)"
+msgstr ""
+
+#. 4FcCi
 #: sf_dialog.xhp
 msgctxt ""
 "sf_dialog.xhp\n"
 "par_id21598187953697\n"
 "help.text"
-msgid "Moves the topleft corner of a dialog to new coordinates and/or modify its dimensions. All distances are expressed in 1/100 mm. Without arguments, the method resets the initial dimensions. Return <literal>True</literal> if the resize was successful."
-msgstr "Déplace le coin supérieur gauche d'une boîte de dialogue vers de nouvelles coordonnées et/ou modifie ses dimensions. Toutes les distances sont exprimées en 1/100 mm. Sans arguments, la méthode réinitialise les dimensions initiales. Renvoie <literal>True</literal> si le redimensionnement a réussi."
+msgid "Moves the topleft corner of a dialog to new coordinates and/or modify its dimensions. All distances are expressed in AppFont units. Without arguments, the method resets the initial dimensions. Return <literal>True</literal> if the resize was successful."
+msgstr ""
 
 #. XRdLE
 #: sf_dialog.xhp
@@ -11689,41 +13228,32 @@ msgctxt ""
 msgid "<emph>Height</emph>: the height of the rectangle containing the dialog"
 msgstr "<emph>Height</emph> : la hauteur du rectangle contenant la boîte de dialogue"
 
-#. H4CtP
+#. nEvvd
 #: sf_dialog.xhp
 msgctxt ""
 "sf_dialog.xhp\n"
 "par_id211651236676180\n"
 "help.text"
-msgid "Negative or missing arguments are left unchanged"
-msgstr "Les arguments négatifs ou manquants restent inchangés"
+msgid "Missing arguments are left unchanged"
+msgstr ""
 
-#. guvaM
+#. aADKy
 #: sf_dialog.xhp
 msgctxt ""
 "sf_dialog.xhp\n"
-"bas_id791620301085031\n"
+"bas_id791621411085031\n"
 "help.text"
-msgid "oDialog.Resize(1000, 2000, Height := 6000) ' Width is not changed"
-msgstr "oDialog.Resize(1000, 2000, Height := 6000) ' La largeur n'est pas modifiée"
+msgid "oDlg.Resize(1000, 2000, Height := 6000) ' Width is not changed"
+msgstr ""
 
-#. pEVvm
+#. DwqUe
 #: sf_dialog.xhp
 msgctxt ""
 "sf_dialog.xhp\n"
-"par_id181620112217958\n"
+"pyc_id941620304183866\n"
 "help.text"
-msgid "With Python:"
-msgstr "Avec Python :"
-
-#. gBerj
-#: sf_dialog.xhp
-msgctxt ""
-"sf_dialog.xhp\n"
-"pyc_id941620303073866\n"
-"help.text"
-msgid "oDialog.Resize(1000, 2000, Height = 6000)  # Width is not changed"
-msgstr "oDialog.Resize(1000, 2000, Height = 6000)  # La largeur n'est pas modifiée"
+msgid "dlg.Resize(1000, 2000, Height = 6000)  # Width is not changed"
+msgstr ""
 
 #. 6DRxV
 #: sf_dialog.xhp
@@ -11895,15 +13425,6 @@ msgctxt ""
 "help.text"
 msgid "In this example a button in <literal>DlgConsole</literal> is substituting inhibited window closing:"
 msgstr "Dans cet exemple, un bouton dans <literal>DlgConsole</literal> remplace la fermeture de fenêtre inhibée :"
-
-#. 7z7hg
-#: sf_dialog.xhp
-msgctxt ""
-"sf_dialog.xhp\n"
-"par_id811620112217958\n"
-"help.text"
-msgid "With Python:"
-msgstr "En Python :"
 
 #. BFfGX
 #: sf_dialogcontrol.xhp
@@ -12148,6 +13669,15 @@ msgctxt ""
 msgid "The <literal>DialogControl</literal> service is available for these control types:"
 msgstr "Le service <literal>DialogControl</literal> est disponible pour ces types de contrôle :"
 
+#. gTfDQ
+#: sf_dialogcontrol.xhp
+msgctxt ""
+"sf_dialogcontrol.xhp\n"
+"par_id271687789435391\n"
+"help.text"
+msgid "• TableControl<br/>• TextField<br/>• TimeField<br/>• TreeControl<br/> <br/>"
+msgstr ""
+
 #. 7xddb
 #: sf_dialogcontrol.xhp
 msgctxt ""
@@ -12201,6 +13731,24 @@ msgctxt ""
 "help.text"
 msgid "Description"
 msgstr "Description"
+
+#. cAKRH
+#: sf_dialogcontrol.xhp
+msgctxt ""
+"sf_dialogcontrol.xhp\n"
+"par_id372693668519172\n"
+"help.text"
+msgid "Yes"
+msgstr ""
+
+#. M4GR3
+#: sf_dialogcontrol.xhp
+msgctxt ""
+"sf_dialogcontrol.xhp\n"
+"par_id771583778386455\n"
+"help.text"
+msgid "The Border property refers to the surrounding of the control: 3D, FLAT or NONE."
+msgstr ""
 
 #. xNGhR
 #: sf_dialogcontrol.xhp
@@ -12616,6 +14164,24 @@ msgctxt ""
 msgid "Specifies the data contained in a combobox or a listbox."
 msgstr "Spécifie les données contenues dans une zone de liste ou une zone combinée."
 
+#. PmMEu
+#: sf_dialogcontrol.xhp
+msgctxt ""
+"sf_dialogcontrol.xhp\n"
+"par_id781598516674550\n"
+"help.text"
+msgid "Yes"
+msgstr ""
+
+#. PEFC6
+#: sf_dialogcontrol.xhp
+msgctxt ""
+"sf_dialogcontrol.xhp\n"
+"par_id11159815676440\n"
+"help.text"
+msgid "The <literal>TabIndex</literal> property specifies a control's place in the tab order in the dialog."
+msgstr ""
+
 #. q532w
 #: sf_dialogcontrol.xhp
 msgctxt ""
@@ -12679,6 +14245,33 @@ msgctxt ""
 msgid "Specifies if the checkbox control may appear dimmed (grayed) or not."
 msgstr "Spécifie si le contrôle de la case à cocher peut apparaître grisé ou non."
 
+#. rZGBG
+#: sf_dialogcontrol.xhp
+msgctxt ""
+"sf_dialogcontrol.xhp\n"
+"par_id701598517671337\n"
+"help.text"
+msgid "No"
+msgstr ""
+
+#. vQoQG
+#: sf_dialogcontrol.xhp
+msgctxt ""
+"sf_dialogcontrol.xhp\n"
+"par_id481687785271551\n"
+"help.text"
+msgid "Hyperlink"
+msgstr ""
+
+#. MmMXv
+#: sf_dialogcontrol.xhp
+msgctxt ""
+"sf_dialogcontrol.xhp\n"
+"par_id1001598540024252\n"
+"help.text"
+msgid "The URL to open when the control is clicked."
+msgstr ""
+
 #. BDWA7
 #: sf_dialogcontrol.xhp
 msgctxt ""
@@ -12688,14 +14281,14 @@ msgctxt ""
 msgid "No"
 msgstr "Non"
 
-#. Cj2Rr
+#. GYx9T
 #: sf_dialogcontrol.xhp
 msgctxt ""
 "sf_dialogcontrol.xhp\n"
 "par_id1001598540024225\n"
 "help.text"
-msgid "Refer to <link href=\"text/sbasic/shared/03/sf_dialogcontrol.xhp#hd_id81598540704978\">Value property</link>"
-msgstr "Reportez-vous à la <link href=\"text/sbasic/shared/03/sf_dialogcontrol.xhp#hd_id81598540704978\">propriété de Value</link>"
+msgid "Refer to <link href=\"text/sbasic/shared/03/sf_dialogcontrol.xhp#hd_ValueProperty\">Value property</link>"
+msgstr ""
 
 #. PqKgo
 #: sf_dialogcontrol.xhp
@@ -12823,14 +14416,14 @@ msgctxt ""
 msgid "The UNO object representing the tree control data model. Refer to <link href=\"https://api.libreoffice.org/docs/idl/ref/interfacecom_1_1sun_1_1star_1_1awt_1_1tree_1_1XMutableTreeDataModel.html\">XMutableTreeDataModel</link> in Application Programming Interface (API) documentation for detailed information."
 msgstr "L'objet UNO représentant le modèle de données de contrôle d'arborescence. Reportez-vous à <link href=\"https://api.libreoffice.org/docs/idl/ref/interfacecom_1_1sun_1_1star_1_1awt_1_1tree_1_1XMutableTreeDataModel.html\">XMutableTreeDataModel</link> dans la documentation de l'interface de programmation d'application (API) pour des informations détaillées."
 
-#. dfWTW
+#. VLPsS
 #: sf_dialogcontrol.xhp
 msgctxt ""
 "sf_dialogcontrol.xhp\n"
-"hd_id81598540704978\n"
+"hd_ValueProperty\n"
 "help.text"
 msgid "The <variable id=\"ValueProperty\">Value property</variable>"
-msgstr "La <variable id=\"ValueProperty\">propriété Value</variable>"
+msgstr ""
 
 #. JHK7w
 #: sf_dialogcontrol.xhp
@@ -13012,6 +14605,15 @@ msgctxt ""
 msgid "The text appearing in the field"
 msgstr "Le texte apparaissant dans le champ"
 
+#. DRtmo
+#: sf_dialogcontrol.xhp
+msgctxt ""
+"sf_dialogcontrol.xhp\n"
+"par_id61687963745108\n"
+"help.text"
+msgid "There's no <literal>Value</literal> property for GroupBox, Hyperlink, ImageControl and TreeControl dialog controls."
+msgstr ""
+
 #. CABLr
 #: sf_dialogcontrol.xhp
 msgctxt ""
@@ -13020,15 +14622,6 @@ msgctxt ""
 "help.text"
 msgid "Event properties"
 msgstr "Propriétés de l'événement"
-
-#. Y8TAs
-#: sf_dialogcontrol.xhp
-msgctxt ""
-"sf_dialogcontrol.xhp\n"
-"par_id41612629140856\n"
-"help.text"
-msgid "Returns a URI string with the reference to the script triggered by the event. Read its specification in the <link href=\"https://wiki.documentfoundation.org/Documentation/DevGuide/Scripting_Framework#Scripting_Framework_URI_Specification\">scripting framework URI specification</link>."
-msgstr "Renvoie une chaîne URI avec la référence au script déclenché par l'événement. Lisez sa spécification dans la <link href=\"https://wiki.documentfoundation.org/Documentation/DevGuide/Scripting_Framework#Scripting_Framework_URI_Specification\">spécification de l'URI du framework de script</link>."
 
 #. fkFAt
 #: sf_dialogcontrol.xhp
@@ -13543,6 +15136,78 @@ msgctxt ""
 msgid "<emph>casesensitive</emph>: Default value is <literal>False</literal>"
 msgstr "<emph>casesensitive</emph> : la valeur par défaut est <literal>False</literal>"
 
+#. tCfF4
+#: sf_dialogcontrol.xhp
+msgctxt ""
+"sf_dialogcontrol.xhp\n"
+"par_id871583933076484\n"
+"help.text"
+msgid "Move the top-left corner of a dialog control to new coordinates and/or modify its dimensions. Return <literal>True</literal> if resizing was successful."
+msgstr ""
+
+#. pzYAg
+#: sf_dialogcontrol.xhp
+msgctxt ""
+"sf_dialogcontrol.xhp\n"
+"par_id351687783159237\n"
+"help.text"
+msgid "All distances are expressed in <link href=\"text/sbasic/shared/00000002.xhp#AppFontUnits\">Map AppFont units</link> and are measured from the top-left corner of the parent dialog. Without arguments the method resizes the control to its \"preferred size\", a size adjusted depending on its actual content. Missing arguments are left unchanged."
+msgstr ""
+
+#. 7RcPA
+#: sf_dialogcontrol.xhp
+msgctxt ""
+"sf_dialogcontrol.xhp\n"
+"par_id911687783094143\n"
+"help.text"
+msgid "<emph>Left</emph>: The horizontal distance from the top-left corner"
+msgstr ""
+
+#. n6cEo
+#: sf_dialogcontrol.xhp
+msgctxt ""
+"sf_dialogcontrol.xhp\n"
+"par_id251687783287236\n"
+"help.text"
+msgid "<emph>Top</emph>: The vertical distance from the top-left corner"
+msgstr ""
+
+#. EpNL7
+#: sf_dialogcontrol.xhp
+msgctxt ""
+"sf_dialogcontrol.xhp\n"
+"par_id291687783328508\n"
+"help.text"
+msgid "<emph>Width</emph>: the horizontal width of the rectangle containing the control"
+msgstr ""
+
+#. RMsh8
+#: sf_dialogcontrol.xhp
+msgctxt ""
+"sf_dialogcontrol.xhp\n"
+"par_id901687783339292\n"
+"help.text"
+msgid "<emph>Height</emph>: the vertical height of the rectangle containing the control"
+msgstr ""
+
+#. k6MEJ
+#: sf_dialogcontrol.xhp
+msgctxt ""
+"sf_dialogcontrol.xhp\n"
+"bas_id361598179153096\n"
+"help.text"
+msgid "oControl.Resize(100, 200, Height:=6000) ' Width is unchanged"
+msgstr ""
+
+#. Cay6f
+#: sf_dialogcontrol.xhp
+msgctxt ""
+"sf_dialogcontrol.xhp\n"
+"pyc_id821620319176082\n"
+"help.text"
+msgid "ctrl.Resize(300, 200, 1500)  # Height is unchanged"
+msgstr ""
+
 #. 3oU3L
 #: sf_dialogcontrol.xhp
 msgctxt ""
@@ -13597,14 +15262,14 @@ msgctxt ""
 msgid "<emph>dataarray</emph>: Data to be entered into the table represented as an Array of Arrays in Basic or a tuple of tuples in Python. The data must include column and row headers if they are to be displayed by the <literal>TableControl</literal>."
 msgstr "<emph>dataarray</emph> : données à saisir dans la table représentée sous la forme d'une matrice de matrices en Basic ou d'un tuple de tuples en Python. Les données doivent inclure des en-têtes de colonne et de ligne si elles doivent être affichées par le <literal>TableControl</literal>."
 
-#. 6AKaJ
+#. zGc73
 #: sf_dialogcontrol.xhp
 msgctxt ""
 "sf_dialogcontrol.xhp\n"
 "par_id1001584541257025\n"
 "help.text"
-msgid "<emph>widths</emph>: Array containing the relative widths of each column. In other words, <literal>widths = Array(1, 2)</literal> means that the second column is twice as wide as the first one. If the number of values in the array is smaller than the number of columns in the table, then the last value in the array is used to define the width of the remaining columns."
-msgstr "<emph>widths</emph> : matrice contenant les largeurs relatives de chaque colonne. En d'autres termes, <literal>widths = Array(1, 2)</literal> signifie que la deuxième colonne est deux fois plus large que la première. Si le nombre de valeurs dans la matrice est inférieur au nombre de colonnes dans la table, la dernière valeur de la matrice est utilisée pour définir la largeur des colonnes restantes."
+msgid "<emph>widths</emph>: Array containing the relative widths of each column. In other words, <literal>widths = (1, 2)</literal> means that the second column is twice as wide as the first one. If the number of values in the array is smaller than the number of columns in the table, then the last value in the array is used to define the width of the remaining columns."
+msgstr ""
 
 #. AEGq3
 #: sf_dialogcontrol.xhp
@@ -13614,6 +15279,15 @@ msgctxt ""
 "help.text"
 msgid "<emph>alignments</emph>: Defines the alignment in each column as a string in which each character can be \"L\" (Left), \"C\" (Center), \"R\" (Right) or \" \" (whitespace, default, meaning left for strings and right for numeric values). If the length of the string is shorter than the number of columns in the table, then the last character in the string is used to define the alignment of the remaining columns."
 msgstr "<emph>alignements</emph> : définit l'alignement dans chaque colonne sous la forme d'une chaîne dans laquelle chaque caractère peut être \"L\" (gauche), \"C\" (centre), \"R\" (droite) ou \" \" (espace, par défaut, c'est-à-dire à gauche pour les chaînes et à droite pour les valeurs numériques). Si la longueur de la chaîne est inférieure au nombre de colonnes du tableau, le dernier caractère de la chaîne est utilisé pour définir l'alignement des colonnes restantes."
+
+#. i3UBY
+#: sf_dialogcontrol.xhp
+msgctxt ""
+"sf_dialogcontrol.xhp\n"
+"par_id551688397846388\n"
+"help.text"
+msgid "<emph>RowHeaderWidth</emph>: width of the row header column expressed in <link href=\"text/sbasic/shared/00000002.xhp#AppFontUnits\">Map AppFont units</link>. Default = 10. The argument is ignored when the <literal>TableControl</literal> has no row header."
+msgstr ""
 
 #. CK6RC
 #: sf_dialogcontrol.xhp
@@ -14668,6 +16342,33 @@ msgctxt ""
 msgid "Returns a list with the export filter names applicable to the current document as a zero-based array of strings. Filters used for both import/export are also returned."
 msgstr "Renvoie une liste avec les noms de filtres d'export applicables au document actuel sous la forme d'une matrice de chaînes de base zéro. Les filtres utilisés pour l'import/export sont également renvoyés."
 
+#. jndk4
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
+"par_id201589194571306\n"
+"help.text"
+msgid "Yes"
+msgstr ""
+
+#. KsJ8e
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
+"par_id941589194571044\n"
+"help.text"
+msgid "Returns a string with the URL path to the root of the virtual file system of the document. Use the <literal>FileSystem</literal> service to view its contents, as well as to create, open and read files stored in it."
+msgstr ""
+
+#. kmW9L
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
+"par_id941589194576584\n"
+"help.text"
+msgid "Refer to <link href=\"text/sbasic/shared/03/sf_filesystem.xhp#virtual_fs\">this help page</link> to learn more on how to access and manipulate folders and files in the virtual file system of a %PRODUCTNAME file."
+msgstr ""
+
 #. 7vqDq
 #: sf_document.xhp
 msgctxt ""
@@ -15000,6 +16701,87 @@ msgctxt ""
 "help.text"
 msgid "Refer to the <link href=\"text/sbasic/shared/03/sf_menu.xhp\"><input>SFWidgets.Menu</input></link> help page to learn more about how to create/remove menus in %PRODUCTNAME document windows."
 msgstr "Reportez-vous à la page d'aide <link href=\"text/sbasic/shared/03/sf_menu.xhp\"><input>SFWidgets.Menu</input></link> pour en savoir plus sur la création/suppression de menus dans les fenêtres de documents %PRODUCTNAME."
+
+#. v8axk
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
+"par_id156589200192258\n"
+"help.text"
+msgid "Suspends user interface (UI) updates during the execution of a macro. Optionally, the mouse pointer can be changed into an hourglass while UI updates are suspended."
+msgstr ""
+
+#. gAwTA
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
+"par_id851688837646904\n"
+"help.text"
+msgid "This method may provide some performance benefits for macros that perform numerous operations that require UI updates."
+msgstr ""
+
+#. MRdkT
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
+"par_id211635436910325\n"
+"help.text"
+msgid "<emph>echoon</emph>: Specify <literal>False</literal> to suspend UI updates. The default value is <literal>True</literal>, which enables real time UI updates."
+msgstr ""
+
+#. eLkJM
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
+"par_id141635436912288\n"
+"help.text"
+msgid "<emph>hourglass</emph>: Specify <literal>True</literal> to change the mouse pointer to an hourglass (Default = <literal>False</literal>)."
+msgstr ""
+
+#. i8X6R
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
+"par_id741689124521451\n"
+"help.text"
+msgid "Moving the mouse pointer after it changed to an hourglass may cause it to switch to a different pointer depending on its new background."
+msgstr ""
+
+#. PVXfC
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
+"bas_id941688837091778\n"
+"help.text"
+msgid "' Suspends UI updates and change mouse pointer to an hourglass"
+msgstr ""
+
+#. i5pkB
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
+"bas_id561688837092732\n"
+"help.text"
+msgid "' Other macro commands"
+msgstr ""
+
+#. hxDXE
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
+"bas_id251688837093108\n"
+"help.text"
+msgid "' Restores UI updates and mouse pointer"
+msgstr ""
+
+#. 6snES
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
+"pyc_id691688837494400\n"
+"help.text"
+msgid "..."
+msgstr ""
 
 #. CGKZA
 #: sf_document.xhp
@@ -16450,6 +18232,123 @@ msgctxt ""
 msgid "The following code snippet invokes the <literal>FileSystem</literal> service. The method <literal>BuildPath</literal> was used as an example."
 msgstr "L'extrait de code suivant appelle le service <literal>FileSystem</literal>. La méthode <literal>BuildPath</literal> a été utilisée comme exemple."
 
+#. MJbkm
+#: sf_filesystem.xhp
+msgctxt ""
+"sf_filesystem.xhp\n"
+"hd_id981689594663689\n"
+"help.text"
+msgid "Accessing the Virtual File System of a Document"
+msgstr ""
+
+#. LyBAJ
+#: sf_filesystem.xhp
+msgctxt ""
+"sf_filesystem.xhp\n"
+"par_id661689594721047\n"
+"help.text"
+msgid "%PRODUCTNAME document files are compressed ZIP files that contain the files and folders that represent the actual document contents. While the document is open, it is possible to access this virtual file system, explore its structure, as well as read and create files and folders."
+msgstr ""
+
+#. YHDGU
+#: sf_filesystem.xhp
+msgctxt ""
+"sf_filesystem.xhp\n"
+"par_id891689594949717\n"
+"help.text"
+msgid "The following example shows how to create a text file named <literal>myFile.txt</literal> and store it inside the document's virtual file system."
+msgstr ""
+
+#. rsRAs
+#: sf_filesystem.xhp
+msgctxt ""
+"sf_filesystem.xhp\n"
+"bas_id661689595249846\n"
+"help.text"
+msgid "' Gets the URL path notation to the root of the virtual file system"
+msgstr ""
+
+#. TG5wG
+#: sf_filesystem.xhp
+msgctxt ""
+"sf_filesystem.xhp\n"
+"bas_id941689595087305\n"
+"help.text"
+msgid "' Creates the folder \"myDir\" if it does not exist"
+msgstr ""
+
+#. 2usN3
+#: sf_filesystem.xhp
+msgctxt ""
+"sf_filesystem.xhp\n"
+"bas_id911689595459107\n"
+"help.text"
+msgid "' Creates the file and write some text into it"
+msgstr ""
+
+#. 75XUC
+#: sf_filesystem.xhp
+msgctxt ""
+"sf_filesystem.xhp\n"
+"par_id121689595522630\n"
+"help.text"
+msgid "In general, all methods of the <literal>FileSystem</literal> service can be used to manipulate files in the document's virtual file system. However, the following restrictions apply:"
+msgstr ""
+
+#. Du7UF
+#: sf_filesystem.xhp
+msgctxt ""
+"sf_filesystem.xhp\n"
+"par_id321689595825516\n"
+"help.text"
+msgid "It is not possible to create files in the root folder. Use existing subfolders or create new folders to store files in the document's file system."
+msgstr ""
+
+#. vsqoB
+#: sf_filesystem.xhp
+msgctxt ""
+"sf_filesystem.xhp\n"
+"par_id861689595826432\n"
+"help.text"
+msgid "The <literal>FileNaming</literal> notation is always considered to be \"URL\"."
+msgstr ""
+
+#. CbqEb
+#: sf_filesystem.xhp
+msgctxt ""
+"sf_filesystem.xhp\n"
+"par_id181689595826743\n"
+"help.text"
+msgid "The methods <literal>CompareFiles</literal>, <literal>GetFileModified</literal>, <literal>HashFile</literal>, <literal>PickFile</literal> and <literal>PickFolder</literal> are not applicable."
+msgstr ""
+
+#. AuBgo
+#: sf_filesystem.xhp
+msgctxt ""
+"sf_filesystem.xhp\n"
+"par_id361689595827152\n"
+"help.text"
+msgid "The method <literal>GetFileLen</literal> always returns zero."
+msgstr ""
+
+#. WJsDa
+#: sf_filesystem.xhp
+msgctxt ""
+"sf_filesystem.xhp\n"
+"par_id131689596237329\n"
+"help.text"
+msgid "The method <literal>Normalize</literal> always returns the input string unchanged."
+msgstr ""
+
+#. GJMuQ
+#: sf_filesystem.xhp
+msgctxt ""
+"sf_filesystem.xhp\n"
+"par_id51689595641705\n"
+"help.text"
+msgid "The path to the virtual file system is not a physical address on the computer's hard drive. It can only be accessed from within a %PRODUCTNAME script and it only exists while the document file is open."
+msgstr ""
+
 #. Gsznv
 #: sf_filesystem.xhp
 msgctxt ""
@@ -17431,14 +19330,23 @@ msgctxt ""
 msgid "Returns a randomly generated temporary file name that is useful for performing operations that require a temporary file."
 msgstr "Renvoie un nom de fichier temporaire généré de manière aléatoire qui est utile pour effectuer des opérations nécessitant un fichier temporaire."
 
-#. FS3qq
+#. 7saEX
 #: sf_filesystem.xhp
 msgctxt ""
 "sf_filesystem.xhp\n"
 "par_id391613061770924\n"
 "help.text"
-msgid "The returned file name does not have any suffix. The folder part of the returned string is the system's temporary folder."
-msgstr "Le nom de fichier renvoyé n'a pas de suffixe. La partie dossier de la chaîne renvoyée est le dossier temporaire du système."
+msgid "By default, the returned file name does not have an extension. Use the <literal>extension</literal> parameter to specify the extension of the file name to be generated."
+msgstr ""
+
+#. FTQwD
+#: sf_filesystem.xhp
+msgctxt ""
+"sf_filesystem.xhp\n"
+"par_id251689599133544\n"
+"help.text"
+msgid "The folder part of the returned string is the system's temporary folder."
+msgstr ""
 
 #. W7gF7
 #: sf_filesystem.xhp
@@ -17448,6 +19356,15 @@ msgctxt ""
 "help.text"
 msgid "The method does not create the temporary file."
 msgstr "Cette méthode ne crée pas le fichier temporaire."
+
+#. pDA3H
+#: sf_filesystem.xhp
+msgctxt ""
+"sf_filesystem.xhp\n"
+"par_id471584113435991\n"
+"help.text"
+msgid "<emph>extension</emph>: The extension of the temporary file name (Default = \"\")."
+msgstr ""
 
 #. ch2AJ
 #: sf_filesystem.xhp
@@ -20842,6 +22759,303 @@ msgctxt ""
 msgid "bas.MsgBox('Selected option: ' + control.Caption)"
 msgstr "bas.MsgBox('Selected option: ' + control.Caption)"
 
+#. evuZx
+#: sf_formdocument.xhp
+msgctxt ""
+"sf_formdocument.xhp\n"
+"tit\n"
+"help.text"
+msgid "SFDocuments.FormDocument service"
+msgstr ""
+
+#. AQWCM
+#: sf_formdocument.xhp
+msgctxt ""
+"sf_formdocument.xhp\n"
+"bm_id781582391760253\n"
+"help.text"
+msgid "<variable id=\"ctrls_h1\"><link href=\"text/sbasic/shared/03/sf_formdocument.xhp\"><literal>SFDocuments</literal>.<literal>FormDocument</literal> service</link></variable>"
+msgstr ""
+
+#. hQ3hK
+#: sf_formdocument.xhp
+msgctxt ""
+"sf_formdocument.xhp\n"
+"par_id321692486382326\n"
+"help.text"
+msgid "The <literal>FormDocument</literal> service allows to access form documents stored in %PRODUCTNAME Base documents."
+msgstr ""
+
+#. zQHTF
+#: sf_formdocument.xhp
+msgctxt ""
+"sf_formdocument.xhp\n"
+"par_id621692487292145\n"
+"help.text"
+msgid "In a Base document, existing form documents can be viewed by selecting <menuitem>View - Forms</menuitem> in the user interface. Each form document may be composed of one or more forms, including the main form and other sub-forms."
+msgstr ""
+
+#. uNbgU
+#: sf_formdocument.xhp
+msgctxt ""
+"sf_formdocument.xhp\n"
+"par_id891692486448415\n"
+"help.text"
+msgid "This service inherits methods and properties from the <literal>Document</literal> service and is often used alongside the <literal>Base</literal> and <literal>Database</literal> services."
+msgstr ""
+
+#. gGFFZ
+#: sf_formdocument.xhp
+msgctxt ""
+"sf_formdocument.xhp\n"
+"par_id241619032941497\n"
+"help.text"
+msgid "Refer to the <link href=\"text/sbasic/shared/03/sf_document.xhp\"><literal>Document</literal> service</link> to learn more about methods and properties that can be used to manage %PRODUCTNAME documents."
+msgstr ""
+
+#. 3jTab
+#: sf_formdocument.xhp
+msgctxt ""
+"sf_formdocument.xhp\n"
+"hd_id581582885621841\n"
+"help.text"
+msgid "Service invocation"
+msgstr ""
+
+#. KxGkv
+#: sf_formdocument.xhp
+msgctxt ""
+"sf_formdocument.xhp\n"
+"par_id141609955500101\n"
+"help.text"
+msgid "Before using the <literal>FormDocument</literal> service the <literal>ScriptForge</literal> library needs to be loaded or imported:"
+msgstr ""
+
+#. 99UBC
+#: sf_formdocument.xhp
+msgctxt ""
+"sf_formdocument.xhp\n"
+"par_id991692486784449\n"
+"help.text"
+msgid "A <literal>FormDocument</literal> service instance can be created by calling the method <literal>OpenFormDocument</literal> that exists both in the <literal>Base</literal> and <literal>Database</literal> services."
+msgstr ""
+
+#. txPPF
+#: sf_formdocument.xhp
+msgctxt ""
+"sf_formdocument.xhp\n"
+"par_id381692486890118\n"
+"help.text"
+msgid "The example below uses the <literal>UI</literal> service to open a Base document and then retrieve a form document. Note that in this example both the Base document and the form document will be opened and displayed on the screen."
+msgstr ""
+
+#. qkQZ7
+#: sf_formdocument.xhp
+msgctxt ""
+"sf_formdocument.xhp\n"
+"par_id151692489140384\n"
+"help.text"
+msgid "Calling <literal>OpenFormDocument</literal> for a form document that is already open will activate the document window and bring it to focus."
+msgstr ""
+
+#. vEFGV
+#: sf_formdocument.xhp
+msgctxt ""
+"sf_formdocument.xhp\n"
+"par_id871623102536956\n"
+"help.text"
+msgid "The examples above can be translated to Python as follows:"
+msgstr ""
+
+#. wxdh6
+#: sf_formdocument.xhp
+msgctxt ""
+"sf_formdocument.xhp\n"
+"par_id451619034669263\n"
+"help.text"
+msgid "List of Methods in the FormDocument Service"
+msgstr ""
+
+#. jY8vp
+#: sf_formdocument.xhp
+msgctxt ""
+"sf_formdocument.xhp\n"
+"par_id801916099743199\n"
+"help.text"
+msgid "Closes the form document referred to by the <literal>FormDocument</literal> instance. Returns <literal>True</literal> if the form document was successfully closed."
+msgstr ""
+
+#. wN7iT
+#: sf_formdocument.xhp
+msgctxt ""
+"sf_formdocument.xhp\n"
+"par_id481619036833610\n"
+"help.text"
+msgid "Returns either an array with the names of the main forms contained in the form document or a <literal>Form</literal> service instance referring to a specific form."
+msgstr ""
+
+#. RuFja
+#: sf_formdocument.xhp
+msgctxt ""
+"sf_formdocument.xhp\n"
+"par_id311692532433990\n"
+"help.text"
+msgid "Call this method without arguments to obtain a zero-based string array with the names of all forms contained in the form document."
+msgstr ""
+
+#. qg4FH
+#: sf_formdocument.xhp
+msgctxt ""
+"sf_formdocument.xhp\n"
+"par_id491692532525080\n"
+"help.text"
+msgid "Provide a form name or index as argument to obtain a <literal>Form</literal> service instance corresponding to the specified form."
+msgstr ""
+
+#. GbkH9
+#: sf_formdocument.xhp
+msgctxt ""
+"sf_formdocument.xhp\n"
+"par_id281692532725116\n"
+"help.text"
+msgid "A form document has at least one main form. More complex form documents may be composed of more than one form and sub-forms."
+msgstr ""
+
+#. Au3TH
+#: sf_formdocument.xhp
+msgctxt ""
+"sf_formdocument.xhp\n"
+"par_id91692538279673\n"
+"help.text"
+msgid "<input>svc.Forms(form: str): svc</input>"
+msgstr ""
+
+#. TKZq2
+#: sf_formdocument.xhp
+msgctxt ""
+"sf_formdocument.xhp\n"
+"par_id91692538279664\n"
+"help.text"
+msgid "<input>svc.Forms(form: int): svc</input>"
+msgstr ""
+
+#. 23Cgd
+#: sf_formdocument.xhp
+msgctxt ""
+"sf_formdocument.xhp\n"
+"par_id211692538352686\n"
+"help.text"
+msgid "<emph>form</emph>: This argument can be either a string with the name of a form that exists in the form document or the zero-based index of the form that shall be returned. If this argument is not specific, then an array with the name of all available forms is returned."
+msgstr ""
+
+#. wktWB
+#: sf_formdocument.xhp
+msgctxt ""
+"sf_formdocument.xhp\n"
+"par_id151692537703209\n"
+"help.text"
+msgid "The following example checks if the form document contains a form named \"MainForm\":"
+msgstr ""
+
+#. nNdtW
+#: sf_formdocument.xhp
+msgctxt ""
+"sf_formdocument.xhp\n"
+"par_id661692537831637\n"
+"help.text"
+msgid "The example below retrieves the form named \"MainForm\" and moves it to the last record:"
+msgstr ""
+
+#. Nw4c6
+#: sf_formdocument.xhp
+msgctxt ""
+"sf_formdocument.xhp\n"
+"par_id921619036922844\n"
+"help.text"
+msgid "To learn more about form methods and properties, refer to the <link href=\"text/sbasic/shared/03/sf_form.xhp\"><literal>Form</literal> service help page</link>."
+msgstr ""
+
+#. 5SoGW
+#: sf_formdocument.xhp
+msgctxt ""
+"sf_formdocument.xhp\n"
+"par_id156589200121138\n"
+"help.text"
+msgid "This method sends the contents form document to the default printer or to the printer defined by the <literal>SetPrinter()</literal> method."
+msgstr ""
+
+#. hQ6GC
+#: sf_formdocument.xhp
+msgctxt ""
+"sf_formdocument.xhp\n"
+"par_id981611169416934\n"
+"help.text"
+msgid "Returns <literal>True</literal> if the document was successfully sent to the printer."
+msgstr ""
+
+#. 2qnYG
+#: sf_formdocument.xhp
+msgctxt ""
+"sf_formdocument.xhp\n"
+"par_id211635436910093\n"
+"help.text"
+msgid "<emph>pages</emph>: The pages to print as a string. This argument should be specified in the same manner as in the user interface (see <menuitem>File - Print</menuitem> dialog). Example: \"1-4;10;15-18\". The default value is an empty string \"\" which will cause all pages to be printed."
+msgstr ""
+
+#. mxFXk
+#: sf_formdocument.xhp
+msgctxt ""
+"sf_formdocument.xhp\n"
+"par_id141635436912146\n"
+"help.text"
+msgid "<emph>copies</emph>: The number of copies to be printed (Default = 1)."
+msgstr ""
+
+#. nr7DR
+#: sf_formdocument.xhp
+msgctxt ""
+"sf_formdocument.xhp\n"
+"par_id871692539875337\n"
+"help.text"
+msgid "<emph>printbackground</emph>: specifies whether the background image should be printed (Default = True)."
+msgstr ""
+
+#. dDtPU
+#: sf_formdocument.xhp
+msgctxt ""
+"sf_formdocument.xhp\n"
+"par_id661692539947123\n"
+"help.text"
+msgid "<emph>printblankpages</emph>: specifies whether blank pages should be printed (Default = False)."
+msgstr ""
+
+#. hJvtc
+#: sf_formdocument.xhp
+msgctxt ""
+"sf_formdocument.xhp\n"
+"par_id661692539947144\n"
+"help.text"
+msgid "<emph>printevenpages</emph>: specifies whether even pages should be printed (Default = True)."
+msgstr ""
+
+#. 7tyim
+#: sf_formdocument.xhp
+msgctxt ""
+"sf_formdocument.xhp\n"
+"par_id661692539947875\n"
+"help.text"
+msgid "<emph>printoddpages</emph>: specifies whether odd pages should be printed (Default = True)."
+msgstr ""
+
+#. BxCRK
+#: sf_formdocument.xhp
+msgctxt ""
+"sf_formdocument.xhp\n"
+"par_id661692539947323\n"
+"help.text"
+msgid "<emph>printimages</emph>: specifies whether images should be printed (Default = True)."
+msgstr ""
+
 #. czP76
 #: sf_intro.xhp
 msgctxt ""
@@ -21364,6 +23578,15 @@ msgctxt ""
 msgid "This will open the Python shell and now you can start typing commands that will be executed by %PRODUCTNAME. But first you need to set up the socket connection."
 msgstr "Cela ouvrira le shell Python et vous pourrez maintenant commencer à saisir des commandes qui seront exécutées par %PRODUCTNAME. Mais vous devez d'abord configurer la connexion socket."
 
+#. NGS3a
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"par_id761689720152565\n"
+"help.text"
+msgid "Read the section <link href=\"text/sbasic/shared/03/sf_intro.xhp#pythonpath\">Setting PYTHONPATH</link> below in case of errors importing <literal>scriptforge.py</literal> or <literal>uno.py</literal>."
+msgstr ""
+
 #. s54tE
 #: sf_intro.xhp
 msgctxt ""
@@ -21381,6 +23604,96 @@ msgctxt ""
 "help.text"
 msgid "Now you can run other Python commands and they will be able to communicate with the %PRODUCTNAME process. For example:"
 msgstr "Vous pouvez maintenant exécuter d'autres commandes Python et elles pourront communiquer avec le processus %PRODUCTNAME. Par exemple :"
+
+#. oiPx9
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"bm_id631689720744160\n"
+"help.text"
+msgid "<bookmark_value>Python interpreter;PYTHONPATH</bookmark_value>"
+msgstr ""
+
+#. FPh6P
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"hd_id341689720315095\n"
+"help.text"
+msgid "Setting PYTHONPATH"
+msgstr ""
+
+#. XCiS5
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"par_id811689720328559\n"
+"help.text"
+msgid "Depending on your operating system's configuration you will need to set the environment variable <literal>PYTHONPATH</literal> in order to import the <literal>scriptforge.py</literal> library, which in turn requires importing the <literal>uno.py</literal> library."
+msgstr ""
+
+#. AtNfv
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"par_id781689720489355\n"
+"help.text"
+msgid "Use your operating system's file search tool to determine the directory where both these files are located."
+msgstr ""
+
+#. uLiYM
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"par_id431689720583565\n"
+"help.text"
+msgid "For instance, on a default Ubuntu installation both files may be located at:"
+msgstr ""
+
+#. nxQGQ
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"par_id791689720632086\n"
+"help.text"
+msgid "<emph>scriptforge.py</emph>: Located in <literal>/usr/lib/libreoffice/program</literal>"
+msgstr ""
+
+#. Dzfaq
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"par_id881689720632438\n"
+"help.text"
+msgid "<emph>uno.py</emph>: Located in <literal>/usr/lib/python3/dist-packages</literal>"
+msgstr ""
+
+#. 2vEpX
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"par_id701689720782180\n"
+"help.text"
+msgid "In this case, set the environment variable <literal>PYTHONPATH</literal> as follows before starting the Python interpreter:"
+msgstr ""
+
+#. 9BRx3
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"par_id601689720825610\n"
+"help.text"
+msgid "<input>export PYTHONPATH=/usr/lib/libreoffice/program:/usr/lib/python3/dist-packages</input>"
+msgstr ""
+
+#. UDLem
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"par_id971689720909044\n"
+"help.text"
+msgid "The location of these files will be different for each operating system and %PRODUCTNAME installation method."
+msgstr ""
 
 #. VCRTD
 #: sf_l10n.xhp
@@ -23542,6 +25855,24 @@ msgctxt ""
 msgid "Returns the locale of the operating system as a string in the format \"la-CO\" (language-COUNTRY). This is equivalent to the <literal>Locale</literal> property."
 msgstr "Renvoie les paramètres régionaux du système d'exploitation sous forme de chaîne au format \"la-CO\" (langue-PAYS). Ceci est équivalent à la propriété <literal>Locale</literal>."
 
+#. BFiEF
+#: sf_platform.xhp
+msgctxt ""
+"sf_platform.xhp\n"
+"par_id561633021702057\n"
+"help.text"
+msgid "Yes"
+msgstr ""
+
+#. 4Wfdk
+#: sf_platform.xhp
+msgctxt ""
+"sf_platform.xhp\n"
+"par_id831633021741958\n"
+"help.text"
+msgid "Returns a <literal>Dictionary</literal> instance containing key-value pairs with the information found in the <emph>Tools - Options - User Data</emph> dialog."
+msgstr ""
+
 #. FJs9t
 #: sf_platform.xhp
 msgctxt ""
@@ -23550,6 +25881,24 @@ msgctxt ""
 "help.text"
 msgid "The following examples in Basic and Python illustrate how to use the <literal>Fonts</literal> property to write the names of all available fonts to the current Calc sheet starting at cell \"A1\":"
 msgstr "Les exemples suivants en Basic et Python illustrent comment utiliser la propriété <literal>Fonts</literal> pour écrire les noms de toutes les polices disponibles dans la feuille Calc active à partir de la cellule \"A1\" :"
+
+#. q4gNG
+#: sf_platform.xhp
+msgctxt ""
+"sf_platform.xhp\n"
+"par_id371692709207404\n"
+"help.text"
+msgid "The example below demonstrates how to create a Calc table with all the values stored in the <literal>UserData</literal> property, which is a <literal>Dictionary</literal> service instance:"
+msgstr ""
+
+#. sEkap
+#: sf_platform.xhp
+msgctxt ""
+"sf_platform.xhp\n"
+"par_id611692709647033\n"
+"help.text"
+msgid "The examples above can be written in Python as follows:"
+msgstr ""
 
 #. eEZPy
 #: sf_platform.xhp
@@ -27869,7 +30218,7 @@ msgctxt ""
 "par_id891580140334754\n"
 "help.text"
 msgid "<emph>newstr</emph>: The replacing string."
-msgstr ""
+msgstr "<emph>newstr</emph> : la chaîne de remplacement."
 
 #. gJRAr
 #: sf_string.xhp
@@ -27878,7 +30227,7 @@ msgctxt ""
 "par_id581580140345221\n"
 "help.text"
 msgid "<emph>casesensitive</emph>: The search can be case sensitive or not (Default = <literal>False</literal>)."
-msgstr ""
+msgstr "<emph>casesensitive</emph> : la recherche peut être sensible à la casse ou non (par défaut = <literal>False</literal>)."
 
 #. ykPVR
 #: sf_string.xhp
@@ -27887,7 +30236,7 @@ msgctxt ""
 "bas_id961612384647003\n"
 "help.text"
 msgid "' \"Lxxxx xxxxx xxxxx xxx xxxx, xxxxxxxxxxx xxxxxxxxxx xxxx.\" (each lowercase letter is replaced by \"x\")"
-msgstr ""
+msgstr "\" \"Lxxxx xxxxx xxxxx xxx xxxx, xxxxxxxxxxx xxxxxxxxxx xxxx.\" (chaque lettre minuscule est remplacée par \"x\")"
 
 #. rkMsv
 #: sf_string.xhp
@@ -27896,7 +30245,7 @@ msgctxt ""
 "bas_id751612384623936\n"
 "help.text"
 msgid "' \"x x x x x, x x x.\" (each word is replaced by \"x\")"
-msgstr ""
+msgstr "' \"x x x x x, x x x.\" (chaque mot est remplacé par \"x\")"
 
 #. 2Gd5C
 #: sf_string.xhp
@@ -27905,7 +30254,7 @@ msgctxt ""
 "par_id51580146471894\n"
 "help.text"
 msgid "Replaces in a string some or all occurrences of an array of strings by an array of new strings."
-msgstr ""
+msgstr "Remplace dans une chaîne certaines ou toutes les occurrences d'une matrice de chaînes par une matrice de nouvelles chaînes."
 
 #. SDpot
 #: sf_string.xhp
@@ -27914,7 +30263,7 @@ msgctxt ""
 "par_id831580146504326\n"
 "help.text"
 msgid "<emph>inputstr</emph>: The input string on which replacements will occur."
-msgstr ""
+msgstr "<emph>inputstr</emph> : la chaîne d'entrée sur laquelle les remplacements auront lieu."
 
 #. UfuEm
 #: sf_string.xhp
@@ -27923,7 +30272,7 @@ msgctxt ""
 "par_id411580146514927\n"
 "help.text"
 msgid "<emph>oldstr</emph>: A single string or an array of strings. Zero-length strings are ignored."
-msgstr ""
+msgstr "<emph>oldstr</emph> : une chaîne unique ou une matrice de chaînes. Les chaînes de longueur nulle sont ignorées."
 
 #. Ukr3F
 #: sf_string.xhp
@@ -27932,7 +30281,7 @@ msgctxt ""
 "par_id591580146532966\n"
 "help.text"
 msgid "<emph>newstr</emph>: The replacing string or the array of replacing strings."
-msgstr ""
+msgstr "<emph>newstr</emph> : la chaîne de remplacement ou la matrice de chaînes de remplacement."
 
 #. 7BQ7F
 #: sf_string.xhp
@@ -27941,7 +30290,7 @@ msgctxt ""
 "par_id611612384873347\n"
 "help.text"
 msgid "If <literal>oldstr</literal> is an array, each occurrence of any of the items in <literal>oldstr</literal> is replaced by <literal>newstr</literal>."
-msgstr ""
+msgstr "Si <literal>oldstr</literal> est une matrice, chaque occurrence de l'un des éléments de <literal>oldstr</literal> est remplacée par <literal>newstr</literal>."
 
 #. AfRz6
 #: sf_string.xhp
@@ -27950,7 +30299,7 @@ msgctxt ""
 "par_id611612384880820\n"
 "help.text"
 msgid "If <literal>oldstr</literal> and <literal>newstr</literal> are arrays, replacements occur one by one up to the <literal>UBound(newstr)</literal>."
-msgstr ""
+msgstr "Si <literal>oldstr</literal> et <literal>newstr</literal> sont des matrices, les remplacements se produisent un par un jusqu'à <literal>UBound(newstr)</literal>."
 
 #. E39aH
 #: sf_string.xhp
@@ -27959,7 +30308,7 @@ msgctxt ""
 "par_id241612385058264\n"
 "help.text"
 msgid "If <literal>oldstr</literal> has more entries than <literal>newstr</literal>, then the residual elements in <literal>oldstr</literal> are replaced by the last element in <literal>newstr</literal>."
-msgstr ""
+msgstr "Si <literal>oldstr</literal> a plus d'entrées que <literal>newstr</literal>, alors les éléments résiduels de <literal>oldstr</literal> sont remplacés par le dernier élément de <literal>newstr</literal> ."
 
 #. MkqW5
 #: sf_string.xhp
@@ -27968,7 +30317,7 @@ msgctxt ""
 "par_id701580146547619\n"
 "help.text"
 msgid "<emph>occurrences</emph>: The maximum number of replacements. The default value is 0, meaning that all occurrences will be replaced."
-msgstr ""
+msgstr "<emph>occurrences</emph> : nombre maximum de remplacements. La valeur par défaut est 0, ce qui signifie que toutes les occurrences seront remplacées."
 
 #. QX33p
 #: sf_string.xhp
@@ -27977,7 +30326,7 @@ msgctxt ""
 "par_id741612385380533\n"
 "help.text"
 msgid "When <literal>oldstr</literal> is an array, the <literal>occurrence</literal> parameter is computed separately for each item in the array."
-msgstr ""
+msgstr "Lorsque <literal>oldstr</literal> est une matrice, le paramètre <literal>occurrence</literal> est calculé séparément pour chaque élément de la matrice."
 
 #. aWrvA
 #: sf_string.xhp
@@ -27986,7 +30335,7 @@ msgctxt ""
 "par_id301580146556599\n"
 "help.text"
 msgid "<emph>casesensitive</emph>: The search can be case sensitive or not (Default = <literal>False</literal>)."
-msgstr ""
+msgstr "<emph>casesensitive</emph> : la recherche peut être sensible à la casse ou non (par défaut = <literal>False</literal>)."
 
 #. eygyi
 #: sf_string.xhp
@@ -27995,7 +30344,7 @@ msgctxt ""
 "par_id901580147558931\n"
 "help.text"
 msgid "Returns a string with a readable representation of the argument, truncated at a given length. This is useful mainly for debugging or logging purposes."
-msgstr ""
+msgstr "Renvoie une chaîne avec une représentation lisible de l'argument, tronquée à une longueur donnée. Ceci est utile principalement à des fins de débogage ou de journalisation."
 
 #. cU3Ev
 #: sf_string.xhp
@@ -28004,7 +30353,7 @@ msgctxt ""
 "par_id11612386054691\n"
 "help.text"
 msgid "If the <literal>anyvalue</literal> parameter is an object, it will be enclosed with square brackets \"[\" and \"]\"."
-msgstr ""
+msgstr "Si le paramètre <literal>anyvalue</literal> est un objet, il sera entouré de crochets \"[\" et \"]\"."
 
 #. gVB32
 #: sf_string.xhp
@@ -28013,7 +30362,7 @@ msgctxt ""
 "par_id491612386081802\n"
 "help.text"
 msgid "In strings, tabs and line breaks are replaced by \\t, \\n or \\r."
-msgstr ""
+msgstr "Dans les chaînes, les tabulations et les sauts de ligne sont remplacés par \\t, \\n ou \\r."
 
 #. SfUGD
 #: sf_string.xhp
@@ -28022,7 +30371,7 @@ msgctxt ""
 "par_id921612386089103\n"
 "help.text"
 msgid "If the final length exceeds the <literal>maxlength</literal> parameter, the latter part of the string is replaced by \" ... (N)\" where N is the total length of the original string before truncation."
-msgstr ""
+msgstr "Si la longueur finale dépasse le paramètre <literal>maxlength</literal>, la dernière partie de la chaîne est remplacée par \" ... (N)\" où N est la longueur totale de la chaîne d'origine avant troncature."
 
 #. zLfNR
 #: sf_string.xhp
@@ -28031,7 +30380,7 @@ msgctxt ""
 "par_id91580147593626\n"
 "help.text"
 msgid "<emph>anyvalue</emph>: The input value to be represented. It can be any value, such as a string, an array, a Basic object, a UNO object, etc."
-msgstr ""
+msgstr "<emph>anyvalue</emph> : la valeur d'entrée à représenter. Il peut s'agir de n'importe quelle valeur, comme une chaîne, un tableau, un objet Basic, un objet UNO, etc."
 
 #. hdDFi
 #: sf_string.xhp
@@ -28040,7 +30389,7 @@ msgctxt ""
 "par_id811580147609322\n"
 "help.text"
 msgid "<emph>maxlength</emph>: The maximum length of the resulting string. The default value is 0, meaning there is no limit to the length of the resulting representation."
-msgstr ""
+msgstr "<emph>maxlength</emph> : La longueur maximale de la chaîne résultante. La valeur par défaut est 0, ce qui signifie qu'il n'y a aucune limite à la longueur de la représentation résultante."
 
 #. Ape7i
 #: sf_string.xhp
@@ -28049,7 +30398,7 @@ msgctxt ""
 "par_id641612386659292\n"
 "help.text"
 msgid "Note that the representation of data types such as Arrays and <literal>ScriptForge.Dictionary</literal> object instances include both the data type and their values:"
-msgstr ""
+msgstr "Notez que la représentation des types de données tels que les matrices et les instances d'objets <literal>ScriptForge.Dictionary</literal> incluent à la fois le type de données et leurs valeurs :"
 
 #. ZFFAD
 #: sf_string.xhp
@@ -28058,7 +30407,7 @@ msgctxt ""
 "bas_id971612386906463\n"
 "help.text"
 msgid "' An example with a Basic built-in Array"
-msgstr ""
+msgstr "' Un exemple avec une matrice intégrée en Basic"
 
 #. GEZzM
 #: sf_string.xhp
@@ -28067,7 +30416,7 @@ msgctxt ""
 "bas_id401612386876329\n"
 "help.text"
 msgid "' An example with a ScriptForge Array"
-msgstr ""
+msgstr "' Un exemple avec une matrice ScriptForge"
 
 #. mZ3ar
 #: sf_string.xhp
@@ -28076,7 +30425,7 @@ msgctxt ""
 "bas_id551612386931680\n"
 "help.text"
 msgid "' An example with a ScriptForge Dictionary"
-msgstr ""
+msgstr "' Un exemple avec un dictionnaire ScriptForge"
 
 #. vvADG
 #: sf_string.xhp
@@ -28085,7 +30434,7 @@ msgctxt ""
 "par_id411580312925741\n"
 "help.text"
 msgid "Returns the input string in reversed order."
-msgstr ""
+msgstr "Renvoie la chaîne d'entrée dans l'ordre inversé."
 
 #. RxpPa
 #: sf_string.xhp
@@ -28094,7 +30443,7 @@ msgctxt ""
 "par_id141612387177873\n"
 "help.text"
 msgid "This method is equivalent to the built-in <link href=\"text/sbasic/shared/03120412.xhp\"><literal>StrReverse</literal> Basic function</link>."
-msgstr ""
+msgstr "Cette méthode est équivalente à la <link href=\"text/sbasic/shared/03120412.xhp\"><literal>StrReverse</literal> fonction de base</link> intégrée."
 
 #. ZEarP
 #: sf_string.xhp
@@ -28103,7 +30452,7 @@ msgctxt ""
 "par_id961612387463144\n"
 "help.text"
 msgid "To use the <literal>StrReverse</literal> function, the statement <literal>Option VBASupport 1</literal> must be present in the module."
-msgstr ""
+msgstr "Pour utiliser la fonction <literal>StrReverse</literal>, l'instruction <literal>Option VBASupport 1</literal> doit être présente dans le module."
 
 #. pSyL6
 #: sf_string.xhp
@@ -28112,7 +30461,7 @@ msgctxt ""
 "par_id241580312964497\n"
 "help.text"
 msgid "<emph>inputstr</emph>: The string to be reversed."
-msgstr ""
+msgstr "<emph>inputstr</emph> : la chaîne à inverser."
 
 #. KBFDk
 #: sf_string.xhp
@@ -28121,7 +30470,7 @@ msgctxt ""
 "par_id721580210762286\n"
 "help.text"
 msgid "Returns a zero-based array of strings with the lines in the input string. Each item in the array is obtained by splitting the input string at newline characters."
-msgstr ""
+msgstr "Renvoie une matrice de chaînes de base zéro avec les lignes de la chaîne d'entrée. Chaque élément de la matrice est obtenu en divisant la chaîne d'entrée en caractères de nouvelle ligne."
 
 #. nuUF6
 #: sf_string.xhp
@@ -28130,7 +30479,7 @@ msgctxt ""
 "par_id481580210806878\n"
 "help.text"
 msgid "<emph>inputstr</emph>: The string to be split."
-msgstr ""
+msgstr "<emph>inputstr</emph> : la chaîne à diviser."
 
 #. FEFUw
 #: sf_string.xhp
@@ -28139,7 +30488,7 @@ msgctxt ""
 "par_id231580210820309\n"
 "help.text"
 msgid "<emph>keepbreaks</emph>: When <literal>True</literal>, line breaks are preserved in the output array (default = <literal>False</literal>)."
-msgstr ""
+msgstr "<emph>keepbreaks</emph> : lorsque <literal>True</literal>, les sauts de ligne sont conservés dans le tableau de sortie (par défaut = <literal>False</literal>)."
 
 #. HAG8Q
 #: sf_string.xhp
@@ -28148,7 +30497,7 @@ msgctxt ""
 "par_id471580211762739\n"
 "help.text"
 msgid "Splits a string into an array of elements using a specified delimiter."
-msgstr ""
+msgstr "Divise une chaîne en une matrice d'éléments à l'aide d'un délimiteur spécifié."
 
 #. zsADB
 #: sf_string.xhp
@@ -28157,7 +30506,7 @@ msgctxt ""
 "par_id281612388034501\n"
 "help.text"
 msgid "If a quoted substring contains a delimiter, it is ignored. This is useful when parsing CSV-like records that contain quoted strings."
-msgstr ""
+msgstr "Si une sous-chaîne entre guillemets contient un délimiteur, celui-ci est ignoré. Ceci est utile lors de l'analyse d'enregistrements de type CSV contenant des chaînes entre guillemets."
 
 #. JKAaG
 #: sf_string.xhp
@@ -28166,7 +30515,7 @@ msgctxt ""
 "par_id881580211809490\n"
 "help.text"
 msgid "<emph>inputstr</emph>: The string to be split."
-msgstr ""
+msgstr "<emph>inputstr</emph> : la chaîne à diviser."
 
 #. PFDPa
 #: sf_string.xhp
@@ -28175,7 +30524,7 @@ msgctxt ""
 "par_id811580211821162\n"
 "help.text"
 msgid "<emph>delimiter</emph>: A string of one or more characters that will be used as delimiter. The default delimiter is the ASCII space \" \" character."
-msgstr ""
+msgstr "<emph>delimiter</emph> : Une chaîne d'un ou plusieurs caractères qui sera utilisée comme délimiteur. Le délimiteur par défaut est le caractère espace ASCII \" \"."
 
 #. 3rGRu
 #: sf_string.xhp
@@ -28184,7 +30533,7 @@ msgctxt ""
 "par_id181580211833778\n"
 "help.text"
 msgid "<emph>occurrences</emph>: The maximum number of substrings to return. The default value is 0, meaning that there is no limit to the number of returned strings."
-msgstr ""
+msgstr "<emph>occurrences</emph> : le nombre maximum de sous-chaînes à renvoyer. La valeur par défaut est 0, ce qui signifie qu'il n'y a pas de limite au nombre de chaînes renvoyées."
 
 #. W2og7
 #: sf_string.xhp
@@ -28193,7 +30542,7 @@ msgctxt ""
 "par_id421599123777334\n"
 "help.text"
 msgid "<emph>quotechar</emph>: Either the single (') or double (\") quote."
-msgstr ""
+msgstr "<emph>quotechar</emph> : soit le guillemet simple (') ou double (\")."
 
 #. DiYMJ
 #: sf_string.xhp
@@ -28202,7 +30551,7 @@ msgctxt ""
 "par_id661627251379676\n"
 "help.text"
 msgid "Beware of the differences between Basic and Python when representing strings. For example, in Basic two \"\" characters inside a string are interpreted as a single \" character. In Python, strings enclosed with single quotes can contain \" characters without having to double them."
-msgstr ""
+msgstr "Méfiez-vous des différences entre Basic et Python lors de la représentation de chaînes. Par exemple, en Basic, deux caractères \"\" à l'intérieur d'une chaîne sont interprétés comme un seul caractère \". En Python, les chaînes entourées de guillemets simples peuvent contenir des caractères \" sans avoir à les doubler."
 
 #. 6Q2tJ
 #: sf_string.xhp
@@ -28211,7 +30560,7 @@ msgctxt ""
 "par_id771580212837884\n"
 "help.text"
 msgid "Returns <literal>True</literal> if the first characters of a string are identical to a given substring."
-msgstr ""
+msgstr "Renvoie <literal>True</literal> si les premiers caractères d'une chaîne sont identiques à une sous-chaîne donnée."
 
 #. BYx4G
 #: sf_string.xhp
@@ -28220,7 +30569,7 @@ msgctxt ""
 "par_id781612393174350\n"
 "help.text"
 msgid "This method returns <literal>False</literal> if either the input string or the substring have a length = 0 or when the substring is longer than the input string."
-msgstr ""
+msgstr "Cette méthode renvoie <literal>False</literal> si la chaîne d'entrée ou la sous-chaîne a une longueur = 0 ou lorsque la sous-chaîne est plus longue que la chaîne d'entrée."
 
 #. jrzxu
 #: sf_string.xhp
@@ -28229,7 +30578,7 @@ msgctxt ""
 "par_id271580212876135\n"
 "help.text"
 msgid "<emph>inputstr</emph>: The string to be tested."
-msgstr ""
+msgstr "<emph>inputstr</emph> : la chaîne à tester."
 
 #. tE9WD
 #: sf_string.xhp
@@ -28238,7 +30587,7 @@ msgctxt ""
 "par_id571580212889462\n"
 "help.text"
 msgid "<emph>substring</emph>: The substring to be searched at the start of <literal>inputstr</literal>."
-msgstr ""
+msgstr "<emph>substring</emph> : la sous-chaîne à rechercher au début de <literal>inputstr</literal>."
 
 #. ZeQP4
 #: sf_string.xhp
@@ -28247,7 +30596,7 @@ msgctxt ""
 "par_id811580212900799\n"
 "help.text"
 msgid "<emph>casesensitive</emph>: The search can be case sensitive or not (Default = <literal>False</literal>)."
-msgstr ""
+msgstr "<emph>casesensitive</emph> : la recherche peut être sensible à la casse ou non (par défaut = <literal>False</literal>)."
 
 #. DGgBx
 #: sf_string.xhp
@@ -28256,7 +30605,7 @@ msgctxt ""
 "par_id911580295999690\n"
 "help.text"
 msgid "Returns the input string without its leading and trailing whitespaces."
-msgstr ""
+msgstr "Renvoie la chaîne d'entrée sans ses espaces de début et de fin."
 
 #. BESEu
 #: sf_string.xhp
@@ -28265,7 +30614,7 @@ msgctxt ""
 "par_id541580296044377\n"
 "help.text"
 msgid "<emph>inputstr</emph>: The string to trim."
-msgstr ""
+msgstr "<emph>inputstr</emph> : la chaîne à couper."
 
 #. 44XZC
 #: sf_string.xhp
@@ -28274,7 +30623,7 @@ msgctxt ""
 "par_id61580483096936\n"
 "help.text"
 msgid "Converts any escaped sequence (\\\\, \\n, \\r, \\t) in the input string to their corresponding ASCII character."
-msgstr ""
+msgstr "Convertit toute séquence échappée (\\\\, \\n, \\r, \\t) dans la chaîne d'entrée en son caractère ASCII correspondant."
 
 #. mzTsG
 #: sf_string.xhp
@@ -28283,7 +30632,7 @@ msgctxt ""
 "par_id971580483124743\n"
 "help.text"
 msgid "<emph>inputstr</emph>: The string to be converted."
-msgstr ""
+msgstr "<emph>inputstr</emph> : la chaîne à convertir."
 
 #. BoYHV
 #: sf_string.xhp
@@ -28292,7 +30641,7 @@ msgctxt ""
 "par_id831580213634029\n"
 "help.text"
 msgid "Removes the single or double quotes enclosing the input string."
-msgstr ""
+msgstr "Supprime les guillemets simples ou doubles entourant la chaîne d'entrée."
 
 #. Ae8c5
 #: sf_string.xhp
@@ -28301,7 +30650,7 @@ msgctxt ""
 "par_id811612393585600\n"
 "help.text"
 msgid "This is useful when parsing CSV-like records that contain quoted strings."
-msgstr ""
+msgstr "Ceci est utile lors de l'analyse d'enregistrements de type CSV contenant des chaînes entre guillemets."
 
 #. BhVvp
 #: sf_string.xhp
@@ -28310,7 +30659,7 @@ msgctxt ""
 "par_id761580213677493\n"
 "help.text"
 msgid "<emph>inputstr</emph>: The string to unquote."
-msgstr ""
+msgstr "<emph>inputstr</emph> : la chaîne dont les guillemets doivent être supprimés."
 
 #. gRUHA
 #: sf_string.xhp
@@ -28319,7 +30668,7 @@ msgctxt ""
 "par_id211599129509890\n"
 "help.text"
 msgid "<emph>quotechar</emph>: Either the single (') or double (\") quote (default)."
-msgstr ""
+msgstr "<emph>quotechar</emph> : soit le guillemet simple (') ou double (\"\") (par défaut)."
 
 #. nGq4Q
 #: sf_string.xhp
@@ -28328,7 +30677,7 @@ msgctxt ""
 "bas_id371580213702598\n"
 "help.text"
 msgid "' s = \"Some text\" (without enclosing quotes)"
-msgstr ""
+msgstr "' s = \"Du texte\" (sans guillemets)"
 
 #. Fp8ip
 #: sf_string.xhp
@@ -28337,7 +30686,7 @@ msgctxt ""
 "bas_id51580213693694\n"
 "help.text"
 msgid "' The string below does not have enclosing quotes, so it remains unchanged"
-msgstr ""
+msgstr "' La chaîne ci-dessous n'a pas de guillemets, elle reste donc inchangée"
 
 #. A4Eki
 #: sf_string.xhp
@@ -28346,7 +30695,7 @@ msgctxt ""
 "bas_id961612393917830\n"
 "help.text"
 msgid "' s = \"Some text\" (unchanged)"
-msgstr ""
+msgstr "' s = \"Du texte\" (inchangé)"
 
 #. ULtxx
 #: sf_string.xhp
@@ -28355,7 +30704,7 @@ msgctxt ""
 "bas_id461612394182689\n"
 "help.text"
 msgid "' Quotes inside the string are not removed"
-msgstr ""
+msgstr "' Les guillemets à l'intérieur de la chaîne ne sont pas supprimés"
 
 #. 8w4ia
 #: sf_string.xhp
@@ -28364,7 +30713,7 @@ msgctxt ""
 "bas_id961612394171208\n"
 "help.text"
 msgid "' s = \"The \"\"true\"\" meaning\" (unchanged)"
-msgstr ""
+msgstr "' s = \"The \"\"true\"\" meaning\" (inchangé)"
 
 #. JGhWK
 #: sf_string.xhp
@@ -28373,7 +30722,7 @@ msgctxt ""
 "par_id871585834468102\n"
 "help.text"
 msgid "Converts the input string into an array of substrings so that each item in the array has at most a given number of characters."
-msgstr ""
+msgstr "Convertit la chaîne d'entrée en une matrice de sous-chaînes afin que chaque élément du tableau contienne au plus un nombre donné de caractères."
 
 #. 4G9FU
 #: sf_string.xhp
@@ -28382,7 +30731,7 @@ msgctxt ""
 "par_id21612394465120\n"
 "help.text"
 msgid "In practice, this method returns a zero-based array of output lines, without newlines at the end, except for the pre-existing line-breaks."
-msgstr ""
+msgstr "En pratique, cette méthode renvoie une matrice de lignes de sortie de base zéro, sans nouvelles lignes à la fin, à l'exception des sauts de ligne préexistants."
 
 #. BN3eR
 #: sf_string.xhp
@@ -28391,7 +30740,7 @@ msgctxt ""
 "par_id601612395193333\n"
 "help.text"
 msgid "Tabs are expanded using the same procedure performed by the <link href=\"text/sbasic/shared/03/sf_string.xhp#ExpandTabs\">ExpandTabs</link> method."
-msgstr ""
+msgstr "Les onglets sont développés à l'aide de la même procédure effectuée par la méthode <link href=\"text/sbasic/shared/03/sf_string.xhp#ExpandTabs\">ExpandTabs</link>."
 
 #. vLtDg
 #: sf_string.xhp
@@ -28400,7 +30749,7 @@ msgctxt ""
 "par_id641612394826616\n"
 "help.text"
 msgid "Symbolic line breaks are replaced by their equivalent ASCII characters."
-msgstr ""
+msgstr "Les sauts de ligne symboliques sont remplacés par leurs caractères ASCII équivalents."
 
 #. y7VvP
 #: sf_string.xhp
@@ -28409,7 +30758,7 @@ msgctxt ""
 "par_id361612394859733\n"
 "help.text"
 msgid "If the wrapped output has no content, the returned array is empty."
-msgstr ""
+msgstr "Si la sortie encapsulée n'a pas de contenu, la matrice renvoyée est vide."
 
 #. SNRzH
 #: sf_string.xhp
@@ -28418,7 +30767,7 @@ msgctxt ""
 "par_id251585834468498\n"
 "help.text"
 msgid "<emph>inputstr</emph>: The string to wrap."
-msgstr ""
+msgstr "<emph>inputstr</emph> : la chaîne à envelopper."
 
 #. MiptC
 #: sf_string.xhp
@@ -28427,7 +30776,7 @@ msgctxt ""
 "par_id351585834773177\n"
 "help.text"
 msgid "<emph>width</emph>: The maximum number of characters in each line (Default = 70)."
-msgstr ""
+msgstr "<emph>width</emph> : le nombre maximum de caractères dans chaque ligne (par défaut = 70)."
 
 #. epG6z
 #: sf_string.xhp
@@ -28436,7 +30785,7 @@ msgctxt ""
 "par_id741585834874500\n"
 "help.text"
 msgid "<emph>tabsize</emph>: Before wrapping the text, the existing TAB <literal>Chr(9)</literal> characters are replaced with spaces. The argument <literal>tabsize</literal> defines the TAB stops at TabSize + 1, 2 * TabSize + 1 , ... N * TabSize + 1 (Default = 8)."
-msgstr ""
+msgstr "<emph>tabsize</emph> : avant d'envelopper le texte, les caractères TAB <literal>Chr(9)</literal> existants sont remplacés par des espaces. L'argument <literal>tabsize</literal> définit les arrêts de tabulation à TabSize + 1, 2 * TabSize + 1 , ... N * TabSize + 1 (par défaut = 8)."
 
 #. HjZDB
 #: sf_textstream.xhp
@@ -28445,7 +30794,7 @@ msgctxt ""
 "tit\n"
 "help.text"
 msgid "ScriptForge.TextStream service"
-msgstr ""
+msgstr "Service ScriptForge.TextStream"
 
 #. yCCia
 #: sf_textstream.xhp
@@ -28454,7 +30803,7 @@ msgctxt ""
 "bm_id351585330787295\n"
 "help.text"
 msgid "<variable id=\"TextStreamService\"><link href=\"text/sbasic/shared/03/sf_textstream.xhp\"><literal>ScriptForge</literal>.<literal>TextStream</literal> service</link></variable>"
-msgstr ""
+msgstr "<variable id=\"TextStreamService\"><link href=\"text/sbasic/shared/03/sf_textstream.xhp\">Service <literal>ScriptForge</literal>.<literal>TextStream</literal></link></variable>"
 
 #. nBJsE
 #: sf_textstream.xhp
@@ -28463,7 +30812,7 @@ msgctxt ""
 "par_id511585330787205\n"
 "help.text"
 msgid "The <literal>TextStream</literal> service is used to sequentially read from and write to files opened or created using the <literal>ScriptForge.FileSystem</literal> service."
-msgstr ""
+msgstr "Le service <literal>TextStream</literal> est utilisé pour lire et écrire séquentiellement dans des fichiers ouverts ou créés à l'aide du service <literal>ScriptForge.FileSystem</literal>."
 
 #. TeRTa
 #: sf_textstream.xhp
@@ -28472,7 +30821,7 @@ msgctxt ""
 "par_id41613596903894\n"
 "help.text"
 msgid "The methods <literal>OpenTextFile</literal> and <literal>CreateTextFile</literal> from the <literal>FileSystem</literal> service return an instance of the <literal>TextStream</literal> service."
-msgstr ""
+msgstr "Les méthodes <literal>OpenTextFile</literal> et <literal>CreateTextFile</literal> du service <literal>FileSystem</literal> renvoient une instance du service <literal>TextStream</literal>."
 
 #. MVFWC
 #: sf_textstream.xhp
@@ -28481,7 +30830,7 @@ msgctxt ""
 "par_id161585330787262\n"
 "help.text"
 msgid "Line delimiters may be specified by the user. In input operations CR, LF or CR+LF are supported. In output operations, the default line delimiter is the one used by the operating system."
-msgstr ""
+msgstr "Les délimiteurs de lignes peuvent être spécifiés par l'utilisateur. Dans les opérations d'entrée, CR, LF ou CR+LF sont pris en charge. Dans les opérations de sortie, le délimiteur de ligne par défaut est celui utilisé par le système d'exploitation."
 
 #. GDkir
 #: sf_textstream.xhp
@@ -28490,7 +30839,7 @@ msgctxt ""
 "par_id831613598137669\n"
 "help.text"
 msgid "The line delimiter for the operating system where the macro is being executed can be accessed using the <literal>SF_String.sfNEWLINE</literal> property."
-msgstr ""
+msgstr "Le délimiteur de ligne du système d'exploitation sur lequel la macro est exécutée est accessible à l'aide de la propriété <literal>SF_String.sfNEWLINE</literal>."
 
 #. SvXzF
 #: sf_textstream.xhp
@@ -28499,7 +30848,7 @@ msgctxt ""
 "par_id851613597445432\n"
 "help.text"
 msgid "All operations needed to read from or write to a file (open, read/write and close) are presumed to happen during the same macro run."
-msgstr ""
+msgstr "Toutes les opérations nécessaires pour lire ou écrire dans un fichier (ouverture, lecture/écriture et fermeture) sont présumées se produire au cours de la même exécution de macro."
 
 #. dc5KN
 #: sf_textstream.xhp
@@ -28508,7 +30857,7 @@ msgctxt ""
 "hd_id83158533078741\n"
 "help.text"
 msgid "Service invocation"
-msgstr ""
+msgstr "Invocation du service"
 
 #. AuQX2
 #: sf_textstream.xhp
@@ -28517,7 +30866,7 @@ msgctxt ""
 "par_id351613598192725\n"
 "help.text"
 msgid "The examples below in Basic and Python use the <literal>OpenTextFile</literal> method to create an instance of the <literal>TextStream</literal> Service."
-msgstr ""
+msgstr "Les exemples ci-dessous en Basic et Python utilisent la méthode <literal>OpenTextFile</literal> pour créer une instance du service <literal>TextStream</literal>."
 
 #. UUudg
 #: sf_textstream.xhp
@@ -28526,7 +30875,7 @@ msgctxt ""
 "par_id371585330787197\n"
 "help.text"
 msgid "The file must be closed with the <literal>CloseFile</literal> method after all read or write operations have been executed:"
-msgstr ""
+msgstr "Le fichier doit être fermé avec la méthode <literal>CloseFile</literal> après que toutes les opérations de lecture ou d'écriture aient été exécutées :"
 
 #. zNveN
 #: sf_textstream.xhp
@@ -28535,7 +30884,7 @@ msgctxt ""
 "par_id891582733781994\n"
 "help.text"
 msgid "Optionally, the resources used by the <literal>TextStream</literal> instance can be released using the <literal>Dispose</literal> method:"
-msgstr ""
+msgstr "Facultativement, les ressources utilisées par l'instance <literal>TextStream</literal> peuvent être libérées à l'aide de la méthode <literal>Dispose</literal> :"
 
 #. L8vEQ
 #: sf_textstream.xhp
@@ -28544,7 +30893,7 @@ msgctxt ""
 "par_id121612917368946\n"
 "help.text"
 msgid "The methods in the <literal>TextStream</literal> service are mostly based on the <link href=\"https://api.libreoffice.org/docs/idl/ref/interfacecom_1_1sun_1_1star_1_1io_1_1XTextInputStream.html\"><literal>XTextInputStream</literal></link> and <link href=\"https://api.libreoffice.org/docs/idl/ref/interfacecom_1_1sun_1_1star_1_1io_1_1XTextOutputStream.html\"><literal>XTextOutputStream</literal></link> UNO interfaces."
-msgstr ""
+msgstr "Les méthodes du service <literal>TextStream</literal> sont principalement basées sur les interfaces UNO <link href=\"https://api.libreoffice.org/docs/idl/ref/interfacecom_1_1sun_1_1star_1_1io_1_1XTextInputStream.html\"><literal>XTextInputStream</literal></link> et <link href=\"https://api.libreoffice.org/docs/idl/ref/interfacecom_1_1sun_1_1star_1_1io_1_1XTextOutputStream.html\"><literal>XTextOutputStream</literal></link>."
 
 #. JAmgD
 #: sf_textstream.xhp
@@ -28553,7 +30902,7 @@ msgctxt ""
 "hd_id941585330787948\n"
 "help.text"
 msgid "Properties"
-msgstr ""
+msgstr "Propriétés"
 
 #. aN9zM
 #: sf_textstream.xhp
@@ -28562,7 +30911,7 @@ msgctxt ""
 "par_id631585330787267\n"
 "help.text"
 msgid "Name"
-msgstr ""
+msgstr "Nom"
 
 #. vwGC5
 #: sf_textstream.xhp
@@ -28571,7 +30920,7 @@ msgctxt ""
 "par_id401585330787370\n"
 "help.text"
 msgid "Readonly"
-msgstr ""
+msgstr "Lecture seule"
 
 #. GpL38
 #: sf_textstream.xhp
@@ -28580,7 +30929,7 @@ msgctxt ""
 "par_id581585330787700\n"
 "help.text"
 msgid "Type"
-msgstr ""
+msgstr "Type"
 
 #. 6FDuM
 #: sf_textstream.xhp
@@ -28589,7 +30938,7 @@ msgctxt ""
 "par_id551585330787608\n"
 "help.text"
 msgid "Description"
-msgstr ""
+msgstr "Description"
 
 #. ECkTm
 #: sf_textstream.xhp
@@ -28598,7 +30947,7 @@ msgctxt ""
 "par_id181585330787752\n"
 "help.text"
 msgid "Yes"
-msgstr ""
+msgstr "Oui"
 
 #. YFkaY
 #: sf_textstream.xhp
@@ -28607,7 +30956,7 @@ msgctxt ""
 "par_id901585330787680\n"
 "help.text"
 msgid "Used in read mode. A <literal>True</literal> value indicates that the end of the file has been reached. A test using this property should precede calls to the <literal>ReadLine</literal> method."
-msgstr ""
+msgstr "Utilisé en mode lecture. Une valeur <literal>True</literal> indique que la fin du fichier a été atteinte. Un test utilisant cette propriété doit précéder les appels à la méthode <literal>ReadLine</literal>."
 
 #. EFEnA
 #: sf_textstream.xhp
@@ -28616,7 +30965,7 @@ msgctxt ""
 "par_id561585330787568\n"
 "help.text"
 msgid "Yes"
-msgstr ""
+msgstr "Oui"
 
 #. cVCoJ
 #: sf_textstream.xhp
@@ -28625,7 +30974,7 @@ msgctxt ""
 "par_id741585330787777\n"
 "help.text"
 msgid "The character set to be used. The default encoding is \"UTF-8\"."
-msgstr ""
+msgstr "Le jeu de caractères à utiliser. L'encodage par défaut est \"UTF-8\"."
 
 #. p5s3X
 #: sf_textstream.xhp
@@ -28634,7 +30983,7 @@ msgctxt ""
 "par_id641585330787207\n"
 "help.text"
 msgid "Yes"
-msgstr ""
+msgstr "Oui"
 
 #. JjEqX
 #: sf_textstream.xhp
@@ -28643,7 +30992,7 @@ msgctxt ""
 "par_id281585330787614\n"
 "help.text"
 msgid "Returns the name of the current file either in URL format or in the native operating system's format, depending on the current value of the <literal>FileNaming</literal> property of the <literal>FileSystem</literal> service."
-msgstr ""
+msgstr "Renvoie le nom du fichier actuel soit au format URL, soit au format du système d'exploitation natif, en fonction de la valeur actuelle de la propriété <literal>FileNaming</literal> du service <literal>FileSystem</literal>."
 
 #. goEnw
 #: sf_textstream.xhp
@@ -28652,7 +31001,7 @@ msgctxt ""
 "par_id111585330787410\n"
 "help.text"
 msgid "Yes"
-msgstr ""
+msgstr "Oui"
 
 #. MZS6Z
 #: sf_textstream.xhp
@@ -28661,7 +31010,7 @@ msgctxt ""
 "par_id861585330787417\n"
 "help.text"
 msgid "Indicates the input/output mode. Possible values are \"READ\", \"WRITE\" or \"APPEND\"."
-msgstr ""
+msgstr "Indique le mode d'entrée/sortie. Les valeurs possibles sont \"READ\", \"WRITE\" ou \"APPEND\"."
 
 #. 7nTb9
 #: sf_textstream.xhp
@@ -28670,7 +31019,7 @@ msgctxt ""
 "par_id87158533078795\n"
 "help.text"
 msgid "Yes"
-msgstr ""
+msgstr "Oui"
 
 #. j45gC
 #: sf_textstream.xhp
@@ -28679,7 +31028,7 @@ msgctxt ""
 "par_id561585330787741\n"
 "help.text"
 msgid "Returns the number of lines read or written so far."
-msgstr ""
+msgstr "Renvoie le nombre de lignes lues ou écrites jusqu'à présent."
 
 #. CLAvQ
 #: sf_textstream.xhp
@@ -28688,7 +31037,7 @@ msgctxt ""
 "par_id531585330787157\n"
 "help.text"
 msgid "No"
-msgstr ""
+msgstr "Non"
 
 #. rdA5M
 #: sf_textstream.xhp
@@ -28697,7 +31046,7 @@ msgctxt ""
 "par_id691585330787279\n"
 "help.text"
 msgid "Sets or returns the current delimiter to be inserted between two successive written lines. The default value is the native line delimiter in the current operating system."
-msgstr ""
+msgstr "Définit ou renvoie le délimiteur actuel à insérer entre deux lignes écrites successives. La valeur par défaut est le délimiteur de ligne natif du système d'exploitation actuel."
 
 #. veDBj
 #: sf_textstream.xhp
@@ -28706,7 +31055,7 @@ msgctxt ""
 "par_id141613001281573\n"
 "help.text"
 msgid "To learn more about the names of character sets, visit <link href=\"https://www.iana.org/assignments/character-sets/character-sets.xhtml\">IANA's Character Set</link> page. Be aware that %PRODUCTNAME does not implement all existing character sets."
-msgstr ""
+msgstr "Pour en savoir plus sur les noms des jeux de caractères, visitez la page <link href=\"https://www.iana.org/assignments/character-sets/character-sets.xhtml\">Jeu de caractères de l'IANA</link>. Sachez que %PRODUCTNAME n'implémente pas tous les jeux de caractères existants."
 
 #. hKJkD
 #: sf_textstream.xhp
@@ -28715,7 +31064,7 @@ msgctxt ""
 "par_id891611613601554\n"
 "help.text"
 msgid "List of Methods in the TextStream Service"
-msgstr ""
+msgstr "Liste des méthodes dans le service textStream"
 
 #. DBBKM
 #: sf_textstream.xhp
@@ -28724,7 +31073,7 @@ msgctxt ""
 "par_id421585330787675\n"
 "help.text"
 msgid "Closes the current input or output stream and empties the output buffer if relevant. Returns <literal>True</literal> if the file was successfully closed."
-msgstr ""
+msgstr "Ferme le flux d'entrée ou de sortie actuel et vide le tampon de sortie le cas échéant. Renvoie <literal>True</literal> si le fichier a été fermé avec succès."
 
 #. MCW3q
 #: sf_textstream.xhp
@@ -28733,7 +31082,7 @@ msgctxt ""
 "par_id65158533078799\n"
 "help.text"
 msgid "Returns all the remaining lines in the text stream as a single string. Line breaks are not removed."
-msgstr ""
+msgstr "Renvoie toutes les lignes restantes du flux de texte sous la forme d'une seule chaîne. Les sauts de ligne ne sont pas supprimés."
 
 #. Vr34D
 #: sf_textstream.xhp
@@ -28742,7 +31091,7 @@ msgctxt ""
 "par_id71613600347125\n"
 "help.text"
 msgid "The resulting string can be split in lines either by using the <literal>Split</literal> built-in Basic function if the line delimiter is known, or with the <literal>SF_String.SplitLines</literal> method."
-msgstr ""
+msgstr "La chaîne résultante peut être divisée en lignes soit en utilisant la fonction de base intégrée <literal>Split</literal> si le délimiteur de ligne est connu, soit avec la méthode <literal>SF_String.SplitLines</literal>."
 
 #. VRLGn
 #: sf_textstream.xhp
@@ -28751,7 +31100,7 @@ msgctxt ""
 "par_id91585330787373\n"
 "help.text"
 msgid "For large files, using the <literal>ReadAll</literal> method wastes memory resources. In such cases it is recommended to read the file line by line using the <literal>ReadLine</literal> method."
-msgstr ""
+msgstr "Pour les fichiers volumineux, l'utilisation de la méthode <literal>ReadAll</literal> gaspille des ressources mémoire. Dans de tels cas, il est recommandé de lire le fichier ligne par ligne en utilisant la méthode <literal>ReadLine</literal>."
 
 #. BuBVA
 #: sf_textstream.xhp
@@ -28760,7 +31109,7 @@ msgctxt ""
 "par_id921613595637851\n"
 "help.text"
 msgid "Consider the text file \"Students.txt\" with the following contents (a name in each line):"
-msgstr ""
+msgstr "Considérons le fichier texte \"Students.txt\" avec le contenu suivant (un nom dans chaque ligne) :"
 
 #. hk7q4
 #: sf_textstream.xhp
@@ -28769,7 +31118,7 @@ msgctxt ""
 "par_id391613596019750\n"
 "help.text"
 msgid "The examples below in Basic and Python use the <literal>ReadAll</literal> and <literal>SplitLines</literal> methods to read the contents of the file into an array of strings:"
-msgstr ""
+msgstr "Les exemples ci-dessous en Basic et Python utilisent les méthodes <literal>ReadAll</literal> et <literal>SplitLines</literal> pour lire le contenu du fichier dans une matrice de chaînes :"
 
 #. BuRJE
 #: sf_textstream.xhp
@@ -28778,7 +31127,7 @@ msgctxt ""
 "bas_id251613595640550\n"
 "help.text"
 msgid "'Loads the FileSystem service"
-msgstr ""
+msgstr "'Charge le service FileSystem"
 
 #. L2a3D
 #: sf_textstream.xhp
@@ -28787,7 +31136,7 @@ msgctxt ""
 "bas_id181613595641087\n"
 "help.text"
 msgid "'Opens the text file with the names to be read"
-msgstr ""
+msgstr "'Ouvre le fichier texte avec les noms à lire"
 
 #. rDCSD
 #: sf_textstream.xhp
@@ -28796,7 +31145,7 @@ msgctxt ""
 "bas_id711613595642109\n"
 "help.text"
 msgid "'Reads all the contents in the input file as a single string"
-msgstr ""
+msgstr "'Lit tout le contenu du fichier d'entrée sous la forme d'une seule chaîne"
 
 #. 6w73J
 #: sf_textstream.xhp
@@ -28805,7 +31154,7 @@ msgctxt ""
 "bas_id961613595643093\n"
 "help.text"
 msgid "'Splits the string into an array"
-msgstr ""
+msgstr "'Divise la chaîne en une matrice"
 
 #. 7Fq9E
 #: sf_textstream.xhp
@@ -28814,7 +31163,7 @@ msgctxt ""
 "par_id871585330787885\n"
 "help.text"
 msgid "Returns the next line in the text stream as a string. Line breaks are removed from the returned string."
-msgstr ""
+msgstr "Renvoie la ligne suivante du flux de texte sous forme de chaîne. Les sauts de ligne sont supprimés de la chaîne renvoyée."
 
 #. 6iDcF
 #: sf_textstream.xhp
@@ -28823,7 +31172,7 @@ msgctxt ""
 "par_id431613600221626\n"
 "help.text"
 msgid "The <literal>AtEndOfStream</literal> test should precede the <literal>ReadLine</literal> method like in the example below."
-msgstr ""
+msgstr "Le test <literal>AtEndOfStream</literal> doit précéder la méthode <literal>ReadLine</literal> comme dans l'exemple ci-dessous."
 
 #. GRRkq
 #: sf_textstream.xhp
@@ -28832,7 +31181,7 @@ msgctxt ""
 "par_id171585330787774\n"
 "help.text"
 msgid "An error will be raised if the <literal>AtEndOfStream</literal> was reached during the previous <literal>ReadLine</literal> or <literal>SkipLine</literal> method call."
-msgstr ""
+msgstr "Une erreur sera générée si le <literal>AtEndOfStream</literal> a été atteint lors du précédent appel de méthode <literal>ReadLine</literal> ou <literal>SkipLine</literal>."
 
 #. mAty4
 #: sf_textstream.xhp
@@ -28841,7 +31190,7 @@ msgctxt ""
 "par_id11585330787847\n"
 "help.text"
 msgid "Skips the next line in the input stream when reading a <literal>TextStream</literal> file."
-msgstr ""
+msgstr "Ignore la ligne suivante dans le flux d'entrée lors de la lecture d'un fichier <literal>TextStream</literal>."
 
 #. FDMJB
 #: sf_textstream.xhp
@@ -28850,7 +31199,7 @@ msgctxt ""
 "par_id441613600704766\n"
 "help.text"
 msgid "This method can result in <literal>AtEndOfStream</literal> being set to <literal>True</literal>."
-msgstr ""
+msgstr "Cette méthode peut entraîner la définition de <literal>AtEndOfStream</literal> sur <literal>True</literal>."
 
 #. D4JVb
 #: sf_textstream.xhp
@@ -28859,7 +31208,7 @@ msgctxt ""
 "par_id141585330787657\n"
 "help.text"
 msgid "Writes a specified number of empty lines to the output stream."
-msgstr ""
+msgstr "Écrit un nombre spécifié de lignes vides dans le flux de sortie."
 
 #. YsBUm
 #: sf_textstream.xhp
@@ -28868,7 +31217,7 @@ msgctxt ""
 "par_id291585330787357\n"
 "help.text"
 msgid "<emph>lines</emph>: The number of empty lines to write to the file."
-msgstr ""
+msgstr "<emph>lines</emph> : le nombre de lignes vides à écrire dans le fichier."
 
 #. GCPCC
 #: sf_textstream.xhp
@@ -28877,7 +31226,7 @@ msgctxt ""
 "par_id101585330787215\n"
 "help.text"
 msgid "Writes the given string to the output stream as a single line."
-msgstr ""
+msgstr "Écrit la chaîne donnée dans le flux de sortie sur une seule ligne."
 
 #. Eska7
 #: sf_textstream.xhp
@@ -28886,7 +31235,7 @@ msgctxt ""
 "par_id421613601002074\n"
 "help.text"
 msgid "The character defined in the <literal>NewLine</literal> property is used as the line delimiter."
-msgstr ""
+msgstr "Le caractère défini dans la propriété <literal>NewLine</literal> est utilisé comme délimiteur de ligne."
 
 #. LXFPE
 #: sf_textstream.xhp
@@ -28895,7 +31244,7 @@ msgctxt ""
 "par_id491585330787650\n"
 "help.text"
 msgid "<emph>line</emph>: The line to write, may be empty."
-msgstr ""
+msgstr "<emph>line</emph> : la ligne à écrire, peut être vide."
 
 #. PM5Bx
 #: sf_textstream.xhp
@@ -28904,7 +31253,7 @@ msgctxt ""
 "par_id821626894480105\n"
 "help.text"
 msgid "The examples below in Basic and Python create a text file in CSV format in which each line contains a value and its square until <literal>lastValue</literal> is reached."
-msgstr ""
+msgstr "Les exemples ci-dessous en Basic et Python créent un fichier texte au format CSV dans lequel chaque ligne contient une valeur et son carré jusqu'à ce que <literal>lastValue</literal> soit atteint."
 
 #. 39u4o
 #: sf_textstream.xhp
@@ -28913,7 +31262,7 @@ msgctxt ""
 "bas_id21613321528612\n"
 "help.text"
 msgid "'Instantiates the FileSystem Service"
-msgstr ""
+msgstr "'Instancie le service FileSystem"
 
 #. FnTiG
 #: sf_textstream.xhp
@@ -28922,7 +31271,7 @@ msgctxt ""
 "bas_id191613321529277\n"
 "help.text"
 msgid "'Creates a text file"
-msgstr ""
+msgstr "'Crée un fichier texte"
 
 #. f5RSB
 #: sf_textstream.xhp
@@ -28931,7 +31280,7 @@ msgctxt ""
 "bas_id641613321530181\n"
 "help.text"
 msgid "'Writes the Value and Value squared, separated by \";\""
-msgstr ""
+msgstr "'Écrit la valeur et la valeur au carré, séparées par \";\""
 
 #. FCowk
 #: sf_textstream.xhp
@@ -28940,7 +31289,7 @@ msgctxt ""
 "bas_id141613321530960\n"
 "help.text"
 msgid "myFile.WriteLine(\"Value;Value Squared\")"
-msgstr ""
+msgstr "myFile.WriteLine(\"Value;Value Squared\")"
 
 #. m9Mo4
 #: sf_textstream.xhp
@@ -28949,7 +31298,7 @@ msgctxt ""
 "bas_id881613321532598\n"
 "help.text"
 msgid "'Closes the file and free resources"
-msgstr ""
+msgstr "'Ferme le fichier et libère les ressources"
 
 #. PCSPY
 #: sf_timer.xhp
@@ -28958,7 +31307,7 @@ msgctxt ""
 "tit\n"
 "help.text"
 msgid "ScriptForge.Timer service"
-msgstr ""
+msgstr "Service ScriptForge.Timer"
 
 #. uvCrq
 #: sf_timer.xhp
@@ -28967,7 +31316,7 @@ msgctxt ""
 "hd_id731582733781114\n"
 "help.text"
 msgid "<variable id=\"TimerService\"><link href=\"text/sbasic/shared/03/sf_timer.xhp\"><literal>ScriptForge</literal>.<literal>Timer</literal> service</link></variable>"
-msgstr ""
+msgstr "<variable id=\"TimerService\"><link href=\"text/sbasic/shared/03/sf_timer.xhp\">Service <literal>ScriptForge</literal>.<literal>Timer</literal></link></variable>"
 
 #. WyVvH
 #: sf_timer.xhp
@@ -28976,7 +31325,7 @@ msgctxt ""
 "par_id961582733781662\n"
 "help.text"
 msgid "The <literal>Timer</literal> service measures the amount of time it takes to run user scripts."
-msgstr ""
+msgstr "Le service <literal>Timer</literal> mesure le temps nécessaire à l'exécution des scripts utilisateur."
 
 #. qDa8E
 #: sf_timer.xhp
@@ -28985,7 +31334,7 @@ msgctxt ""
 "par_id181582733781323\n"
 "help.text"
 msgid "A <literal>Timer</literal> measures <emph>durations</emph>. It can be:"
-msgstr ""
+msgstr "Un <literal>Timer</literal> mesure les <emph>durées</emph>. Ça peut être:"
 
 #. ErpLm
 #: sf_timer.xhp
@@ -28994,7 +31343,7 @@ msgctxt ""
 "par_id711582733781252\n"
 "help.text"
 msgid "Started, to indicate when to start measuring time."
-msgstr ""
+msgstr "Démarré, pour indiquer quand commencer à mesurer le temps."
 
 #. NAAFg
 #: sf_timer.xhp
@@ -29003,7 +31352,7 @@ msgctxt ""
 "par_id631582733781431\n"
 "help.text"
 msgid "Suspended, to pause measuring running time."
-msgstr ""
+msgstr "Suspendu, pour suspendre la mesure du temps de fonctionnement."
 
 #. nt9Qc
 #: sf_timer.xhp
@@ -29012,7 +31361,7 @@ msgctxt ""
 "par_id691582733781498\n"
 "help.text"
 msgid "Resumed, to continue tracking running time after the Timer has been suspended."
-msgstr ""
+msgstr "Reprise, pour continuer à suivre le temps d'exécution après la suspension du minuteur."
 
 #. DVCBM
 #: sf_timer.xhp
@@ -29021,7 +31370,7 @@ msgctxt ""
 "par_id31582733781344\n"
 "help.text"
 msgid "Restarted, which will cancel previous measurements and start the <literal>Timer</literal> at zero."
-msgstr ""
+msgstr "Redémarré, ce qui annulera les mesures précédentes et démarrera le <literal>Timer</literal> à zéro."
 
 #. dm7yA
 #: sf_timer.xhp
@@ -29030,7 +31379,7 @@ msgctxt ""
 "par_id991582733781280\n"
 "help.text"
 msgid "Durations are expressed in seconds with a precision of 3 decimal digits (milliseconds). A duration value of 12.345 means 12 seconds and 345 milliseconds"
-msgstr ""
+msgstr "Les durées sont exprimées en secondes avec une précision de 3 chiffres décimaux (millisecondes). Une valeur de durée de 12,345 signifie 12 secondes et 345 millisecondes"
 
 #. CVhDR
 #: sf_timer.xhp
@@ -29039,7 +31388,7 @@ msgctxt ""
 "hd_id201582733781265\n"
 "help.text"
 msgid "Service invocation"
-msgstr ""
+msgstr "Invocation du service"
 
 #. fYto9
 #: sf_timer.xhp
@@ -29048,7 +31397,7 @@ msgctxt ""
 "par_id141609955500101\n"
 "help.text"
 msgid "Before using the <literal>Timer</literal> service the <literal>ScriptForge</literal> library needs to be loaded or imported:"
-msgstr ""
+msgstr "Avant d'utiliser le service <literal>Timer</literal>, la bibliothèque <literal>ScriptForge</literal> doit être chargée ou importée :"
 
 #. SCYEX
 #: sf_timer.xhp
@@ -29057,7 +31406,7 @@ msgctxt ""
 "par_id891610734806133\n"
 "help.text"
 msgid "The example below creates a <literal>Timer</literal> object named <literal>myTimer</literal> and starts it immediately."
-msgstr ""
+msgstr "L'exemple ci-dessous crée un objet <literal>Timer</literal> nommé <literal>myTimer</literal> et le démarre immédiatement."
 
 #. WMZog
 #: sf_timer.xhp
@@ -29066,7 +31415,7 @@ msgctxt ""
 "bas_id681582733781715\n"
 "help.text"
 msgid "'The timer starts immediately when the second argument = True, default = False"
-msgstr ""
+msgstr "'Le minuteur démarre immédiatement lorsque le deuxième argument = True, par défaut = False"
 
 #. CnZqc
 #: sf_timer.xhp
@@ -29075,7 +31424,7 @@ msgctxt ""
 "par_id891582733781994\n"
 "help.text"
 msgid "It is recommended to free resources after use:"
-msgstr ""
+msgstr "Il est recommandé de libérer des ressources après utilisation :"
 
 #. 8h3fp
 #: sf_timer.xhp
@@ -29084,7 +31433,7 @@ msgctxt ""
 "hd_id521582733781450\n"
 "help.text"
 msgid "Properties"
-msgstr ""
+msgstr "Propriétés"
 
 #. dVncX
 #: sf_timer.xhp
@@ -29093,7 +31442,7 @@ msgctxt ""
 "par_id71582733781260\n"
 "help.text"
 msgid "Name"
-msgstr ""
+msgstr "Nom"
 
 #. hFnkK
 #: sf_timer.xhp
@@ -29102,7 +31451,7 @@ msgctxt ""
 "par_id711582733781103\n"
 "help.text"
 msgid "Readonly"
-msgstr ""
+msgstr "Lecture seule"
 
 #. NvqK9
 #: sf_timer.xhp
@@ -29111,7 +31460,7 @@ msgctxt ""
 "par_id76158273378122\n"
 "help.text"
 msgid "Type"
-msgstr ""
+msgstr "Type"
 
 #. 7zFYh
 #: sf_timer.xhp
@@ -29120,7 +31469,7 @@ msgctxt ""
 "par_id751582733781926\n"
 "help.text"
 msgid "Description"
-msgstr ""
+msgstr "Description"
 
 #. T92or
 #: sf_timer.xhp
@@ -29129,7 +31478,7 @@ msgctxt ""
 "par_id621582733781588\n"
 "help.text"
 msgid "Yes"
-msgstr ""
+msgstr "Oui"
 
 #. 9yDgM
 #: sf_timer.xhp
@@ -29138,7 +31487,7 @@ msgctxt ""
 "par_id731582733781476\n"
 "help.text"
 msgid "The actual running time elapsed since start or between start and stop (does not consider suspended time)"
-msgstr ""
+msgstr "Le temps de fonctionnement réel écoulé depuis le démarrage ou entre le démarrage et l'arrêt (ne prend pas en compte le temps suspendu)"
 
 #. ThAaG
 #: sf_timer.xhp
@@ -29147,7 +31496,7 @@ msgctxt ""
 "par_id301582733781498\n"
 "help.text"
 msgid "Yes"
-msgstr ""
+msgstr "Oui"
 
 #. tqpDU
 #: sf_timer.xhp
@@ -29156,7 +31505,7 @@ msgctxt ""
 "par_id401582733781608\n"
 "help.text"
 msgid "<literal>True</literal> when timer is started or suspended"
-msgstr ""
+msgstr "<literal>True</literal> lorsque le minuteur est démarré ou suspendu"
 
 #. pSPgk
 #: sf_timer.xhp
@@ -29165,7 +31514,7 @@ msgctxt ""
 "par_id181582733781551\n"
 "help.text"
 msgid "Yes"
-msgstr ""
+msgstr "Oui"
 
 #. SGyi4
 #: sf_timer.xhp
@@ -29174,7 +31523,7 @@ msgctxt ""
 "par_id161582733781328\n"
 "help.text"
 msgid "<literal>True</literal> when timer is started and suspended"
-msgstr ""
+msgstr "<literal>True</literal> lorsque le minuteur est démarré et suspendu"
 
 #. qoNpD
 #: sf_timer.xhp
@@ -29183,7 +31532,7 @@ msgctxt ""
 "par_id651582733781874\n"
 "help.text"
 msgid "Yes"
-msgstr ""
+msgstr "Oui"
 
 #. E45MD
 #: sf_timer.xhp
@@ -29192,7 +31541,7 @@ msgctxt ""
 "par_id171582733781456\n"
 "help.text"
 msgid "The actual time elapsed while suspended since start or between start and stop"
-msgstr ""
+msgstr "Le temps réel écoulé pendant la suspension depuis le démarrage ou entre le démarrage et l'arrêt"
 
 #. gxF8S
 #: sf_timer.xhp
@@ -29201,7 +31550,7 @@ msgctxt ""
 "par_id141582733781303\n"
 "help.text"
 msgid "Yes"
-msgstr ""
+msgstr "Oui"
 
 #. FeCob
 #: sf_timer.xhp
@@ -29210,7 +31559,7 @@ msgctxt ""
 "par_id411582733781932\n"
 "help.text"
 msgid "The actual time elapsed since start or between start and stop (including suspensions and running time)"
-msgstr ""
+msgstr "Le temps réel écoulé depuis le démarrage ou entre le démarrage et l'arrêt (y compris les suspensions et le temps de fonctionnement)"
 
 #. a63gW
 #: sf_timer.xhp
@@ -29219,7 +31568,7 @@ msgctxt ""
 "par_id9158273378151\n"
 "help.text"
 msgid "Note that the <literal>TotalDuration</literal> property is equivalent to summing the <literal>Duration</literal> and <literal>SuspendDuration</literal> properties."
-msgstr ""
+msgstr "Notez que la propriété <literal>TotalDuration</literal> équivaut à la somme des propriétés <literal>Duration</literal> et <literal>SuspendDuration</literal>."
 
 #. Mav4g
 #: sf_timer.xhp
@@ -29228,7 +31577,7 @@ msgctxt ""
 "hd_id141582734141895\n"
 "help.text"
 msgid "Methods"
-msgstr ""
+msgstr "Méthodes"
 
 #. P8RQj
 #: sf_timer.xhp
@@ -29237,7 +31586,7 @@ msgctxt ""
 "par_id291582734377752\n"
 "help.text"
 msgid "All methods do not require arguments and return a <literal>Boolean</literal> value."
-msgstr ""
+msgstr "Toutes les méthodes ne nécessitent pas d'arguments et renvoient une valeur <literal>Boolean</literal>."
 
 #. onEib
 #: sf_timer.xhp
@@ -29246,7 +31595,7 @@ msgctxt ""
 "par_id311582734894257\n"
 "help.text"
 msgid "If the returned value is <literal>False</literal>, then nothing happened."
-msgstr ""
+msgstr "Si la valeur renvoyée est <literal>False</literal>, alors rien ne s'est produit."
 
 #. U82Do
 #: sf_timer.xhp
@@ -29255,7 +31604,7 @@ msgctxt ""
 "par_id871582734180676\n"
 "help.text"
 msgid "Name"
-msgstr ""
+msgstr "Nom"
 
 #. 6oGwx
 #: sf_timer.xhp
@@ -29264,7 +31613,7 @@ msgctxt ""
 "par_id971582734180676\n"
 "help.text"
 msgid "Description"
-msgstr ""
+msgstr "Description"
 
 #. ZMfpe
 #: sf_timer.xhp
@@ -29273,7 +31622,7 @@ msgctxt ""
 "par_id911582734180676\n"
 "help.text"
 msgid "Returned value"
-msgstr ""
+msgstr "Valeur renvoyée"
 
 #. 6DJTP
 #: sf_timer.xhp
@@ -29282,7 +31631,7 @@ msgctxt ""
 "par_id301582734180676\n"
 "help.text"
 msgid "Resumes the <literal>Timer</literal> if it has been suspended"
-msgstr ""
+msgstr "Reprend le <literal>Timer</literal> s'il a été suspendu"
 
 #. ixF7A
 #: sf_timer.xhp
@@ -29291,7 +31640,7 @@ msgctxt ""
 "par_id661582734180676\n"
 "help.text"
 msgid "<literal>False</literal> if the timer is not suspended"
-msgstr ""
+msgstr "<literal>False</literal> si le timer n'est pas suspendu"
 
 #. AAozF
 #: sf_timer.xhp
@@ -29768,6 +32117,15 @@ msgctxt ""
 "par_id651606319411328\n"
 "help.text"
 msgid "List of Properties in the FormControl Service"
+msgstr ""
+
+#. kPCcD
+#: sf_toc.xhp
+msgctxt ""
+"sf_toc.xhp\n"
+"hd_id101671192705399\n"
+"help.text"
+msgid "<literal>SFDocuments</literal>.<literal>FormDocument</literal> service"
 msgstr ""
 
 #. DCwnN
