@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2023-10-02 11:34+0200\n"
+"POT-Creation-Date: 2023-12-04 15:06+0100\n"
 "PO-Revision-Date: 2021-03-07 18:15+0000\n"
 "Last-Translator: Riyadh Talal <riyadhtalal@gmail.com>\n"
 "Language-Team: Arabic <https://translations.documentfoundation.org/projects/libo_help-master/textsbasicshared03/ar/>\n"
@@ -9133,6 +9133,267 @@ msgctxt ""
 msgid "To make SQL statements more readable, you may use square brackets \"[ ]\" to enclose names of tables, queries and fields instead of using other enclosing characters that may be exclusive to certain Relational Database Management Systems (RDBMS). But beware that enclosing characters are mandatory in this context."
 msgstr ""
 
+#. Xcc8E
+#: sf_database.xhp
+msgctxt ""
+"sf_database.xhp\n"
+"hd_id461701357494930\n"
+"help.text"
+msgid "Transaction handling"
+msgstr ""
+
+#. 9is6W
+#: sf_database.xhp
+msgctxt ""
+"sf_database.xhp\n"
+"bm_id121701365380522\n"
+"help.text"
+msgid "<bookmark_value>Database service; Transaction handling</bookmark_value>"
+msgstr ""
+
+#. kEjYS
+#: sf_database.xhp
+msgctxt ""
+"sf_database.xhp\n"
+"par_id71701357507703\n"
+"help.text"
+msgid "By default the database handles transactions in auto-commit mode, meaning that a commit is done after every SQL statement."
+msgstr ""
+
+#. dHSK7
+#: sf_database.xhp
+msgctxt ""
+"sf_database.xhp\n"
+"par_id321701357603871\n"
+"help.text"
+msgid "Use the <literal>SetTransactionMode</literal> method to change the default behavior, which allows for manual commits and rollbacks."
+msgstr ""
+
+#. WXGcE
+#: sf_database.xhp
+msgctxt ""
+"sf_database.xhp\n"
+"par_id431701443412927\n"
+"help.text"
+msgid "The methods <literal>Commit</literal> and <literal>Rollback</literal> are used to delimit transactions."
+msgstr ""
+
+#. 4UBP5
+#: sf_database.xhp
+msgctxt ""
+"sf_database.xhp\n"
+"par_id531701365474516\n"
+"help.text"
+msgid "In %PRODUCTNAME, there are five types of transaction isolation modes, as defined in the <link href=\"https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1sdbc_1_1TransactionIsolation.html\">com.sun.star.sdbc.TransactionIsolation</link> constant group:"
+msgstr ""
+
+#. 7zGGY
+#: sf_database.xhp
+msgctxt ""
+"sf_database.xhp\n"
+"par_id631701441607725\n"
+"help.text"
+msgid "Constant"
+msgstr ""
+
+#. 7n7YU
+#: sf_database.xhp
+msgctxt ""
+"sf_database.xhp\n"
+"par_id671701441607725\n"
+"help.text"
+msgid "Value"
+msgstr ""
+
+#. YJ7FT
+#: sf_database.xhp
+msgctxt ""
+"sf_database.xhp\n"
+"par_id441701441607725\n"
+"help.text"
+msgid "Interpretation"
+msgstr ""
+
+#. N2Ybb
+#: sf_database.xhp
+msgctxt ""
+"sf_database.xhp\n"
+"par_id681701441607725\n"
+"help.text"
+msgid "NONE"
+msgstr ""
+
+#. AGVcL
+#: sf_database.xhp
+msgctxt ""
+"sf_database.xhp\n"
+"par_id831701441607725\n"
+"help.text"
+msgid "0"
+msgstr ""
+
+#. HKAzv
+#: sf_database.xhp
+msgctxt ""
+"sf_database.xhp\n"
+"par_id601701441607725\n"
+"help.text"
+msgid "Transaction handling is disabled and the database is set to the default auto-commit mode."
+msgstr ""
+
+#. m3Ba6
+#: sf_database.xhp
+msgctxt ""
+"sf_database.xhp\n"
+"par_id681701441607147\n"
+"help.text"
+msgid "READ_UNCOMMITTED"
+msgstr ""
+
+#. F7zmg
+#: sf_database.xhp
+msgctxt ""
+"sf_database.xhp\n"
+"par_id831701441607208\n"
+"help.text"
+msgid "1"
+msgstr ""
+
+#. aAAV4
+#: sf_database.xhp
+msgctxt ""
+"sf_database.xhp\n"
+"par_id601701441607099\n"
+"help.text"
+msgid "Dirty reads, non-repeatable reads and phantom reads can occur."
+msgstr ""
+
+#. XefrK
+#: sf_database.xhp
+msgctxt ""
+"sf_database.xhp\n"
+"par_id601701441603205\n"
+"help.text"
+msgid "If a row is changed by a transaction, another transaction will be able to read these changes even if they have not been committed."
+msgstr ""
+
+#. bwY55
+#: sf_database.xhp
+msgctxt ""
+"sf_database.xhp\n"
+"par_id681701441607317\n"
+"help.text"
+msgid "READ_COMMITTED"
+msgstr ""
+
+#. WpA5g
+#: sf_database.xhp
+msgctxt ""
+"sf_database.xhp\n"
+"par_id831701441607714\n"
+"help.text"
+msgid "2"
+msgstr ""
+
+#. uNAxC
+#: sf_database.xhp
+msgctxt ""
+"sf_database.xhp\n"
+"par_id601701441607012\n"
+"help.text"
+msgid "Dirty reads are prevented, however non-repeatable reads and phantom reads can occur."
+msgstr ""
+
+#. dieTe
+#: sf_database.xhp
+msgctxt ""
+"sf_database.xhp\n"
+"par_id601701441608244\n"
+"help.text"
+msgid "This level prevents that rows with uncommitted changes are read."
+msgstr ""
+
+#. VA3sE
+#: sf_database.xhp
+msgctxt ""
+"sf_database.xhp\n"
+"par_id681701441607209\n"
+"help.text"
+msgid "REPEATABLE_READ"
+msgstr ""
+
+#. t9SuL
+#: sf_database.xhp
+msgctxt ""
+"sf_database.xhp\n"
+"par_id831701441607103\n"
+"help.text"
+msgid "4"
+msgstr ""
+
+#. Bpi2d
+#: sf_database.xhp
+msgctxt ""
+"sf_database.xhp\n"
+"par_id601701441607300\n"
+"help.text"
+msgid "Dirty reads and non-repeatable reads are prevented. However, phantom reads can occur."
+msgstr ""
+
+#. jbJiF
+#: sf_database.xhp
+msgctxt ""
+"sf_database.xhp\n"
+"par_id601701441608161\n"
+"help.text"
+msgid "Besides preventing uncommitted data from being read, it also prevents that two read operations in the same transaction return different results."
+msgstr ""
+
+#. 6EXCL
+#: sf_database.xhp
+msgctxt ""
+"sf_database.xhp\n"
+"par_id681701441607060\n"
+"help.text"
+msgid "SERIALIZABLE"
+msgstr ""
+
+#. DYyES
+#: sf_database.xhp
+msgctxt ""
+"sf_database.xhp\n"
+"par_id831701441607688\n"
+"help.text"
+msgid "8"
+msgstr ""
+
+#. Yxxsv
+#: sf_database.xhp
+msgctxt ""
+"sf_database.xhp\n"
+"par_id601701441607896\n"
+"help.text"
+msgid "Dirty reads, non-repeatable reads and phantom reads are prevented."
+msgstr ""
+
+#. rJaPT
+#: sf_database.xhp
+msgctxt ""
+"sf_database.xhp\n"
+"par_id601701441607117\n"
+"help.text"
+msgid "In addition to the constraints of the previous level, it also ensures that the set of records that match a <literal>WHERE</literal> clause remains unchanged inside the same transaction."
+msgstr ""
+
+#. 8GoMd
+#: sf_database.xhp
+msgctxt ""
+"sf_database.xhp\n"
+"par_id991701357744355\n"
+"help.text"
+msgid "Read the Wikipedia page on <link href=\"https://en.wikipedia.org/wiki/Isolation_(database_systems)\">Isolation in Database Systems</link> to learn more about transaction integrity."
+msgstr ""
+
 #. CAFnK
 #: sf_database.xhp
 msgctxt ""
@@ -9446,6 +9707,123 @@ msgctxt ""
 "par_id201587913266596\n"
 "help.text"
 msgid "Closes the current database connection."
+msgstr ""
+
+#. xhv9F
+#: sf_database.xhp
+msgctxt ""
+"sf_database.xhp\n"
+"par_id201587913264308\n"
+"help.text"
+msgid "Commits all updates done since the previous <literal>Commit</literal> or <literal>Rollback</literal> call."
+msgstr ""
+
+#. P4TEF
+#: sf_database.xhp
+msgctxt ""
+"sf_database.xhp\n"
+"par_id391701355293522\n"
+"help.text"
+msgid "This method is ignored if commits are done automatically after each SQL statement, i.e. the database is set to the default auto-commit mode."
+msgstr ""
+
+#. DHATj
+#: sf_database.xhp
+msgctxt ""
+"sf_database.xhp\n"
+"bas_id141701355821478\n"
+"help.text"
+msgid "' Set the REPEATABLE_READ transaction level"
+msgstr ""
+
+#. 2mfAJ
+#: sf_database.xhp
+msgctxt ""
+"sf_database.xhp\n"
+"bas_id311701355662993\n"
+"help.text"
+msgid "' Test some condition before committing"
+msgstr ""
+
+#. xNjdS
+#: sf_database.xhp
+msgctxt ""
+"sf_database.xhp\n"
+"bas_id711701355663208\n"
+"help.text"
+msgid "' Restore auto-commit mode"
+msgstr ""
+
+#. XigYX
+#: sf_database.xhp
+msgctxt ""
+"sf_database.xhp\n"
+"par_id41599488113502\n"
+"help.text"
+msgid "Creates a <literal>Dataset</literal> service instance based on a table, query or SQL <literal>SELECT</literal> statement."
+msgstr ""
+
+#. MX6BM
+#: sf_database.xhp
+msgctxt ""
+"sf_database.xhp\n"
+"par_id591701267115505\n"
+"help.text"
+msgid "<emph>sqlcommand</emph>: A table name, a query name or a valid SQL <literal>SELECT</literal> statement. Identifiers may be enclosed with square brackets. This argument is case-sensitive."
+msgstr ""
+
+#. HSKm4
+#: sf_database.xhp
+msgctxt ""
+"sf_database.xhp\n"
+"par_id841701267114060\n"
+"help.text"
+msgid "<emph>directsql</emph>: Set this argument to <literal>True</literal> to send the statement directly to the database engine without preprocessing by %PRODUCTNAME (Default = <literal>False</literal>)."
+msgstr ""
+
+#. ZoWu5
+#: sf_database.xhp
+msgctxt ""
+"sf_database.xhp\n"
+"par_id241701267114527\n"
+"help.text"
+msgid "<emph>filter</emph>: Specifies the condition that records must match to be included in the returned dataset. This argument is expressed as a SQL <literal>WHERE</literal> statement without the \"WHERE\" keyword."
+msgstr ""
+
+#. SGBKv
+#: sf_database.xhp
+msgctxt ""
+"sf_database.xhp\n"
+"par_id471701267115093\n"
+"help.text"
+msgid "<emph>orderby</emph>: Specifies the ordering of the dataset as a SQL <literal>ORDER BY</literal> statement without the \"ORDER BY\" keyword."
+msgstr ""
+
+#. V8pDK
+#: sf_database.xhp
+msgctxt ""
+"sf_database.xhp\n"
+"par_id941701267748877\n"
+"help.text"
+msgid "The following examples in Basic and Python return a dataset with the records of a table named \"Customers\"."
+msgstr ""
+
+#. Ebnho
+#: sf_database.xhp
+msgctxt ""
+"sf_database.xhp\n"
+"bas_id241701267631273\n"
+"help.text"
+msgid "oDataset = myDatabase.CreateDataset(\"Customers\", Filter := \"[Name] LIKE 'A'\")"
+msgstr ""
+
+#. h2NSq
+#: sf_database.xhp
+msgctxt ""
+"sf_database.xhp\n"
+"pyc_id931701267696812\n"
+"help.text"
+msgid "dataset = myDatabase.CreateDataset(\"Customers\", Filter = \"[Name] LIKE 'A'\")"
 msgstr ""
 
 #. nwbSh
@@ -9799,6 +10177,15 @@ msgctxt ""
 msgid "<emph>tablename</emph>: The name of an existing table as a case-sensitive String."
 msgstr ""
 
+#. gU77J
+#: sf_database.xhp
+msgctxt ""
+"sf_database.xhp\n"
+"par_id31599490603311\n"
+"help.text"
+msgid "Cancels all changes made to the database since the last <literal>Commit</literal> or <literal>Rollback</literal> call."
+msgstr ""
+
 #. FMBEy
 #: sf_database.xhp
 msgctxt ""
@@ -9842,6 +10229,1356 @@ msgctxt ""
 "par_id51599490609377\n"
 "help.text"
 msgid "<emph>directsql</emph>: When <literal>True</literal>, the SQL command is sent to the database engine without pre-analysis. (Default = <literal>False</literal>). For queries, the applied option is the one set when the query was defined."
+msgstr ""
+
+#. iNCig
+#: sf_database.xhp
+msgctxt ""
+"sf_database.xhp\n"
+"par_id31599490604648\n"
+"help.text"
+msgid "Defines the level of isolation in database transactions."
+msgstr ""
+
+#. GQaTd
+#: sf_database.xhp
+msgctxt ""
+"sf_database.xhp\n"
+"par_id281701459963822\n"
+"help.text"
+msgid "By default databases manage transactions in auto-commit mode, which means that a <literal>Commit</literal> is automatically performed after every SQL statement."
+msgstr ""
+
+#. Yq5UG
+#: sf_database.xhp
+msgctxt ""
+"sf_database.xhp\n"
+"par_id181701460140309\n"
+"help.text"
+msgid "Use this method to manually determine the isolation level of transactions. When a transaction mode other than <literal>NONE</literal> is set, the script has to explicitly call the <literal>Commit</literal> method to apply the changes to the database."
+msgstr ""
+
+#. NKoDH
+#: sf_database.xhp
+msgctxt ""
+"sf_database.xhp\n"
+"par_id211701461020712\n"
+"help.text"
+msgid "This method returns <literal>True</literal> when successful."
+msgstr ""
+
+#. GwemZ
+#: sf_database.xhp
+msgctxt ""
+"sf_database.xhp\n"
+"par_id831701530239962\n"
+"help.text"
+msgid "Changing the transaction mode closes all <literal>Dataset</literal> instances created from the current database."
+msgstr ""
+
+#. DeBne
+#: sf_database.xhp
+msgctxt ""
+"sf_database.xhp\n"
+"par_id701599490609584\n"
+"help.text"
+msgid "<emph>transactionmode</emph>: Specifies the transaction mode. This argument must be one of the constants defined in <link href=\"https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1sdbc_1_1TransactionIsolation.html\">com.sun.star.sdbc.TransactionIsolation</link> (Default = <literal>NONE</literal>)"
+msgstr ""
+
+#. NYvXV
+#: sf_database.xhp
+msgctxt ""
+"sf_database.xhp\n"
+"par_id301701459879269\n"
+"help.text"
+msgid "Read the section <link href=\"text/sbasic/shared/03/sf_database.xhp#Transaction\">Transaction handling</link> above to learn more about the transaction isolation levels used in %PRODUCTNAME."
+msgstr ""
+
+#. DQkEN
+#: sf_database.xhp
+msgctxt ""
+"sf_database.xhp\n"
+"bas_id951701460628717\n"
+"help.text"
+msgid "' Reset the transaction mode to default"
+msgstr ""
+
+#. q2YAr
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"tit\n"
+"help.text"
+msgid "SFDatabases.Dataset service"
+msgstr ""
+
+#. p9Y5W
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"hd_id731582733781114\n"
+"help.text"
+msgid "<variable id=\"DatasetService\"><link href=\"text/sbasic/shared/03/sf_dataset.xhp\"><literal>SFDatabases</literal>.<literal>Dataset</literal> service</link></variable>"
+msgstr ""
+
+#. CmkuE
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id571700837631557\n"
+"help.text"
+msgid "The <literal>Dataset</literal> service is used to represent tabular data produced by a database. With this service it is possible to:"
+msgstr ""
+
+#. HktQA
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id891589189452545\n"
+"help.text"
+msgid "Navigate through and access the data in a dataset."
+msgstr ""
+
+#. 9PgHh
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id811589189463041\n"
+"help.text"
+msgid "Update, insert and remove records in a dataset."
+msgstr ""
+
+#. rByVk
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id251701124711074\n"
+"help.text"
+msgid "Updating and inserting records using the <literal>Dataset</literal> service is slower than using SQL statements. When updating or inserting large amounts of records, it is recommended to use SQL statements instead of using the methods in this service."
+msgstr ""
+
+#. WAVCq
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"hd_id581582885621841\n"
+"help.text"
+msgid "Service invocation"
+msgstr ""
+
+#. HqBAw
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id141609955500101\n"
+"help.text"
+msgid "Before using the <literal>Dataset</literal> service the <literal>ScriptForge</literal> library needs to be loaded or imported:"
+msgstr ""
+
+#. dBCRY
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id411700851985942\n"
+"help.text"
+msgid "The <literal>Dataset</literal> service is invoked using the <literal>CreateDataset</literal> method, which can be called either from a <literal>Database</literal> service instance or from another <literal>Dataset</literal> instance."
+msgstr ""
+
+#. uB7FC
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id771700853155061\n"
+"help.text"
+msgid "The following example creates a <literal>Dataset</literal> from the table \"Customers\" stored in a database file."
+msgstr ""
+
+#. BPxCC
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"bas_id491701125551393\n"
+"help.text"
+msgid "oDataset = oDatabase.CreateDataset(\"Customers\")"
+msgstr ""
+
+#. kjDBm
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id821701125782721\n"
+"help.text"
+msgid "Upon the creation of the <literal>Dataset</literal>, the current record is positioned before the first record."
+msgstr ""
+
+#. 5RQVs
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id171700853415555\n"
+"help.text"
+msgid "The example below creates a <literal>Dataset</literal> instance by filtering the original dataset."
+msgstr ""
+
+#. jsCLR
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"pyc_id301701127357007\n"
+"help.text"
+msgid "dataset = database.CreateDataset(\"Customers\")"
+msgstr ""
+
+#. vvGTe
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"pyc_id181701127476970\n"
+"help.text"
+msgid "new_dataset = dataset.CreateDataset(filter = \"[City]='New York'\")"
+msgstr ""
+
+#. UbDcm
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"hd_id351582885195476\n"
+"help.text"
+msgid "Properties"
+msgstr ""
+
+#. 9jpZ5
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id41582885195836\n"
+"help.text"
+msgid "Name"
+msgstr ""
+
+#. wYVH2
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id31582885195372\n"
+"help.text"
+msgid "Readonly"
+msgstr ""
+
+#. BzGFs
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id31582885195238\n"
+"help.text"
+msgid "Type"
+msgstr ""
+
+#. uDWJe
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id931582885195131\n"
+"help.text"
+msgid "Description"
+msgstr ""
+
+#. vvCt8
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id861582885655779\n"
+"help.text"
+msgid "No"
+msgstr ""
+
+#. tbT3C
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id581582885655885\n"
+"help.text"
+msgid "Returns <literal>True</literal> if the current record position is before the first record in the dataset, otherwise returns <literal>False</literal>."
+msgstr ""
+
+#. EteGE
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id581582885655855\n"
+"help.text"
+msgid "Set this property to <literal>True</literal> to move the cursor to the beginning of the dataset. Setting this property to <literal>False</literal> is ignored."
+msgstr ""
+
+#. Bqkq3
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id861582885655669\n"
+"help.text"
+msgid "Yes"
+msgstr ""
+
+#. PPmEj
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id271582885623525\n"
+"help.text"
+msgid "<literal>Dictionary</literal> service"
+msgstr ""
+
+#. brqY4
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id581582885657885\n"
+"help.text"
+msgid "Returns a <literal>Dictionary</literal>  with the default values used for each field in the dataset. The fields or columns in the dataset are the keys in the dictionary."
+msgstr ""
+
+#. 3hnoA
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id581582885653105\n"
+"help.text"
+msgid "The database field types are converted to their corresponding Basic/Python data types. When the field type is undefined, the default value is <literal>Null</literal> if the field is nullable or <literal>Empty</literal>."
+msgstr ""
+
+#. 9f7Zn
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id861582885655710\n"
+"help.text"
+msgid "No"
+msgstr ""
+
+#. 5DCq8
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id581582885611885\n"
+"help.text"
+msgid "Returns <literal>True</literal> if the current record position is after the last record in the dataset, otherwise returns <literal>False</literal>."
+msgstr ""
+
+#. A4QYe
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id581582885609855\n"
+"help.text"
+msgid "Set this property to <literal>True</literal> to move the cursor to the end of the dataset. Setting this property to <literal>False</literal> is ignored."
+msgstr ""
+
+#. FXQzh
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id861582885655205\n"
+"help.text"
+msgid "Yes"
+msgstr ""
+
+#. pKHRj
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id581582885655369\n"
+"help.text"
+msgid "Returns an <literal>Array</literal> containing the names of all fields in the dataset."
+msgstr ""
+
+#. iDYwc
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id861582885655966\n"
+"help.text"
+msgid "Yes"
+msgstr ""
+
+#. 2wGrC
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id581582885655812\n"
+"help.text"
+msgid "Returns the filter applied in addition to the eventual <literal>WHERE</literal> clause(s) in the initial SQL statement. This property is expressed as a <literal>WHERE</literal> clause without the \"WHERE\" keyword."
+msgstr ""
+
+#. niyhC
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id861582885655212\n"
+"help.text"
+msgid "Yes"
+msgstr ""
+
+#. QyUBG
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id581582885655344\n"
+"help.text"
+msgid "Returns the ordering clause that replaces the eventual <literal>ORDER BY</literal> clause present in the initial SQL statement. This property is expressed as a <literal>ORDER BY</literal> clause without the \"ORDER BY\" keywords."
+msgstr ""
+
+#. 4qKPb
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id861582885655788\n"
+"help.text"
+msgid "Yes"
+msgstr ""
+
+#. SCZG6
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id271582885655522\n"
+"help.text"
+msgid "<literal>Database</literal> service"
+msgstr ""
+
+#. TCDSW
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id581582885655062\n"
+"help.text"
+msgid "Returns the <literal>Database</literal> instance corresponding to the parent database of the current dataset."
+msgstr ""
+
+#. SBPcF
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id861582885650968\n"
+"help.text"
+msgid "Yes"
+msgstr ""
+
+#. HoZCK
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id581582885656472\n"
+"help.text"
+msgid "Returns the exact number of records in the dataset."
+msgstr ""
+
+#. CYZ2R
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id581582885656491\n"
+"help.text"
+msgid "Note that the evaluation of this property implies browsing the whole dataset, which may be costly depending on the dataset size."
+msgstr ""
+
+#. 8SziE
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id861582886340968\n"
+"help.text"
+msgid "Yes"
+msgstr ""
+
+#. ExPSX
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id581582884026472\n"
+"help.text"
+msgid "Returns the number of the current record starting at 1. Returns 0 if this property is unknown."
+msgstr ""
+
+#. 3tm4G
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id861582886349968\n"
+"help.text"
+msgid "Yes"
+msgstr ""
+
+#. ZTuFP
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id581582884023472\n"
+"help.text"
+msgid "Returns the source of the dataset. It can be either a table name, a query name or a SQL statement."
+msgstr ""
+
+#. bGyUH
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id861582886352968\n"
+"help.text"
+msgid "Yes"
+msgstr ""
+
+#. doL3q
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id581582884295472\n"
+"help.text"
+msgid "Returns the source of the dataset. It can be one of the following string values: <literal>TABLE</literal>, <literal>QUERY</literal> or <literal>SQL</literal>."
+msgstr ""
+
+#. cA9pt
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id861582886368268\n"
+"help.text"
+msgid "Yes"
+msgstr ""
+
+#. XYGFy
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id581582884255372\n"
+"help.text"
+msgid "Returns an <literal>Array</literal> containing the names of the fields of the dataset that are updatable."
+msgstr ""
+
+#. F6ZCq
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id861582886302268\n"
+"help.text"
+msgid "Yes"
+msgstr ""
+
+#. ykZky
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id581582884370372\n"
+"help.text"
+msgid "Returns a <literal>Dictionary</literal> containing the pairs (field name: value) of the current record in the dataset."
+msgstr ""
+
+#. aao9u
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id861582886325668\n"
+"help.text"
+msgid "Yes"
+msgstr ""
+
+#. hTAUU
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id271582887376762\n"
+"help.text"
+msgid "<literal>UNO</literal> object"
+msgstr ""
+
+#. rhAHw
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id581582884392072\n"
+"help.text"
+msgid "Returns the <link href=\"https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1sdb_1_1RowSet.html\">com.sun.star.sdb.RowSet</link> UNO object representing the dataset."
+msgstr ""
+
+#. DCeqW
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id651606319520519\n"
+"help.text"
+msgid "List of Methods in the Dataset Service"
+msgstr ""
+
+#. HPN2T
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id93158919969864\n"
+"help.text"
+msgid "Closes the current dataset. This method returns <literal>True</literal> when successful."
+msgstr ""
+
+#. EM77w
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id781701179217081\n"
+"help.text"
+msgid "It is recommended to close the dataset after its use to free resources."
+msgstr ""
+
+#. 8ocyE
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id93158919343864\n"
+"help.text"
+msgid "Returns a <literal>Dataset</literal> service instance from an existing dataset by applying the specified filter and order by statements."
+msgstr ""
+
+#. sTshg
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id381701012509515\n"
+"help.text"
+msgid "<emph>filter</emph>: Specifies the condition that records must match to be included in the returned dataset. This argument is expressed as a SQL <literal>WHERE</literal> statement without the \"WHERE\" keyword. If this argument is not specified, then the filter used in the current dataset is applied, otherwise the current filter is replaced by this argument."
+msgstr ""
+
+#. 96FYs
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id381701012563515\n"
+"help.text"
+msgid "<emph>orderby</emph>: Specifies the ordering of the dataset as a SQL <literal>ORDER BY</literal> statement without the \"ORDER BY\" keyword. If this argument is not specified, then the sorting order used in the current dataset is applied, otherwise the current sorting order is replaced by this argument."
+msgstr ""
+
+#. nGFDX
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"pyc_id221701180362978\n"
+"help.text"
+msgid "new_dataset = dataset.CreateDataset(filter = \"\")"
+msgstr ""
+
+#. 3GUnc
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"pyc_id581701180363338\n"
+"help.text"
+msgid "new_dataset = dataset.CreateDataset(filter = \"[Name] = 'John'\")"
+msgstr ""
+
+#. FfGsf
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"pyc_id261701180365275\n"
+"help.text"
+msgid "new_dataset = dataset.CreateDataset(filter = \"[Name] LIKE 'A'\")"
+msgstr ""
+
+#. xFhtG
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"pyc_id481701180365786\n"
+"help.text"
+msgid "new_dataset = dataset.CreateDataset(filter = f\"({dataset.Filter}) AND [Name] LIKE 'A'\")"
+msgstr ""
+
+#. nSBrV
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id93158919961074\n"
+"help.text"
+msgid "Deletes the current record from the dataset. This method returns <literal>True</literal> when successful."
+msgstr ""
+
+#. DeLNv
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id101701180833688\n"
+"help.text"
+msgid "After this operation the cursor is positioned at the record immediately after the deleted record. If the deleted record is the last in the dataset, then the cursor is positioned after it and the property <literal>EOF</literal> returns <literal>True</literal>."
+msgstr ""
+
+#. GVCDT
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id93158955243864\n"
+"help.text"
+msgid "Exports the value of a binary field of the current record to the specified file."
+msgstr ""
+
+#. tF5uw
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id171701181928026\n"
+"help.text"
+msgid "If the specified field is not binary or if it contains no data, then the output file is not created."
+msgstr ""
+
+#. wmnpF
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id381701012500605\n"
+"help.text"
+msgid "<emph>fieldname</emph>: The name of the binary field to be exported, as a case-sensitive string."
+msgstr ""
+
+#. U7h8Q
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id381701012563717\n"
+"help.text"
+msgid "<emph>filename</emph>: The complete path to the file to be created using the notation defined in the <literal>FileSystem</literal>.<literal>FileNaming</literal> property."
+msgstr ""
+
+#. bLWJ5
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id417011815228395\n"
+"help.text"
+msgid "<emph>overwrite</emph>: Set this argument to <literal>True</literal> to allow the destination file to be overwritten (Default = <literal>False</literal>)."
+msgstr ""
+
+#. somcy
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id1001701183010649\n"
+"help.text"
+msgid "In the example below the dataset contains a field named \"Picture\" that shall be exported to an image file."
+msgstr ""
+
+#. baa7B
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"bas_id191701180096457\n"
+"help.text"
+msgid "oDataset.ExportValueToFile(\"Picture\", \"C:\\my_image.png\", True)"
+msgstr ""
+
+#. HSjEn
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"pyc_id221701180362303\n"
+"help.text"
+msgid "dataset.ExportValueToFile(\"Picture\", r\"C:\\my_image.png\", True)"
+msgstr ""
+
+#. jUxfq
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id93158919349654\n"
+"help.text"
+msgid "Returns the contents of the dataset in a 2-dimensional array, starting from the first record after the current record."
+msgstr ""
+
+#. wKNGY
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id86170118381308\n"
+"help.text"
+msgid "After execution, the cursor is positioned at the row that was last read or after the last record in the dataset, in which case the <literal>EOF</literal> property returns <literal>True</literal>."
+msgstr ""
+
+#. CYiz6
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id86170118381410\n"
+"help.text"
+msgid "This method can be used to read data from the dataset in chunks, whose size is defined by the <literal>maxrows</literal> argument."
+msgstr ""
+
+#. Qa3iR
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id741701183770602\n"
+"help.text"
+msgid "The returned array will always have two dimensions, even if the dataset contains a single column and a single record."
+msgstr ""
+
+#. 4QAUM
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id381701010547515\n"
+"help.text"
+msgid "<emph>header</emph>: Set this argument to <literal>True</literal> to make the first entry in the <literal>Array</literal> contain the column headers (Default = <literal>False</literal>)."
+msgstr ""
+
+#. iCFyh
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id381701012520715\n"
+"help.text"
+msgid "<emph>maxrows</emph>: Define the maximum number of records to be returned. If the number of existing records is smaller than <literal>maxrows</literal>, then the returned array will have only the existing records. Leave this argument blank or set it to zero to return all rows in the dataset (Default = 0)"
+msgstr ""
+
+#. mMgUE
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id171701202610657\n"
+"help.text"
+msgid "The following example reads a dataset in chunks of 100 rows until all the dataset has been read."
+msgstr ""
+
+#. jGCUD
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id93190955243864\n"
+"help.text"
+msgid "Returns the value of the specified field from the current record of the dataset."
+msgstr ""
+
+#. odbAa
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id171701181922516\n"
+"help.text"
+msgid "If the specified field is binary, then its length is returned."
+msgstr ""
+
+#. Tb26K
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id381701012554805\n"
+"help.text"
+msgid "<emph>fieldname</emph>: The name of the field to be returned, as a case-sensitive string."
+msgstr ""
+
+#. 9DEBy
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"bas_id191701180036057\n"
+"help.text"
+msgid "currId = oDataset.GetValue(FieldName := \"ID\")"
+msgstr ""
+
+#. Km78M
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"pyc_id221701180366903\n"
+"help.text"
+msgid "curr_id = dataset.GetValue(fieldname = \"ID\")"
+msgstr ""
+
+#. pDNd8
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id93190998043864\n"
+"help.text"
+msgid "Inserts a new record at the end of the dataset and initialize its fields with the specified values."
+msgstr ""
+
+#. HQzFF
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id941701206804894\n"
+"help.text"
+msgid "If the primary key of the dataset is an auto value, then this method returns the primary key value of the new record. Otherwise, the method will return 0 (when successful) or -1 (when not successful)."
+msgstr ""
+
+#. bESBG
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id51701203344601\n"
+"help.text"
+msgid "Updatable fields with unspecified values are initialized with their default values."
+msgstr ""
+
+#. Ee77f
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id171701181920016\n"
+"help.text"
+msgid "If the specified field is binary, then its length is returned."
+msgstr ""
+
+#. hzFC6
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id381701012511805\n"
+"help.text"
+msgid "<emph>pvargs</emph>: A <literal>Dictionary</literal> containing pairs of field names and their respective values. Alternatively, an even number of arguments can be specified alternating field names (as a <literal>String</literal>) and their values."
+msgstr ""
+
+#. UdWGr
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id641701259882955\n"
+"help.text"
+msgid "Consider a table named \"Customers\" with 4 fields: \"ID\" (<literal>BigInt</literal>, auto value and primary key), \"Name\" (<literal>VarChar</literal>), \"Age\" (<literal>Integer</literal>), \"City\" (<literal>VarChar</literal>)."
+msgstr ""
+
+#. dEDJy
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id701701205243738\n"
+"help.text"
+msgid "The example below inserts a new record into this dataset using a <literal>Dictionary</literal>."
+msgstr ""
+
+#. zucti
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"bas_id131701260037206\n"
+"help.text"
+msgid "oDataset = oDatabase.CreateDataset(\"Customers\")"
+msgstr ""
+
+#. FaMQe
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"bas_id171701260037639\n"
+"help.text"
+msgid "oNewData.Add(\"Name\", \"John\")"
+msgstr ""
+
+#. cDNXj
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"bas_id641701260037815\n"
+"help.text"
+msgid "oNewData.Add(\"Age\", 50)"
+msgstr ""
+
+#. J83BR
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"bas_id401701260038016\n"
+"help.text"
+msgid "oNewData.Add(\"City\", \"Chicago\")"
+msgstr ""
+
+#. BiEnX
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id671701260191972\n"
+"help.text"
+msgid "The same result can be achieved by passing all pairs of fields and values as arguments:"
+msgstr ""
+
+#. aPs48
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"bas_id91701260241574\n"
+"help.text"
+msgid "oDataset.Insert(\"Name\", \"John\", \"Age\", 50, \"City\", \"Chicago\")"
+msgstr ""
+
+#. GJrf8
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"pyc_id401701260819750\n"
+"help.text"
+msgid "dataset = database.CreateDataset(\"Customers\")"
+msgstr ""
+
+#. GibCs
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"pyc_id181701260820135\n"
+"help.text"
+msgid "new_data = {\"Name\": \"John\", \"Age\": 30, \"City\": \"Chicago\"}"
+msgstr ""
+
+#. tEtaE
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"pyc_id651701260820486\n"
+"help.text"
+msgid "new_id = dataset.Insert(new_data)"
+msgstr ""
+
+#. PL6Tb
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id971701261086678\n"
+"help.text"
+msgid "The following calls are accepted in Python:"
+msgstr ""
+
+#. iVyAx
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"pyc_id101701260954243\n"
+"help.text"
+msgid "dataset.Insert(\"Name\", \"John\", \"Age\", 50, \"City\", \"Chicago\")"
+msgstr ""
+
+#. SSUPT
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"pyc_id131701261111943\n"
+"help.text"
+msgid "dataset.Insert(Name = \"John\", Age = 50, City = \"Chicago\")"
+msgstr ""
+
+#. NYaXF
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id93190955243874\n"
+"help.text"
+msgid "Moves the dataset cursor to the first (with <literal>MoveFirst</literal>) or to the last (with <literal>MoveLast</literal>) record."
+msgstr ""
+
+#. MNACy
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id411701262609847\n"
+"help.text"
+msgid "This method returns <literal>True</literal> when successful."
+msgstr ""
+
+#. 9vNrm
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id61701280052346\n"
+"help.text"
+msgid "Deleted records are ignored by this method."
+msgstr ""
+
+#. pHTs8
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"bas_id191701180876057\n"
+"help.text"
+msgid "oDataset.MoveFirst()"
+msgstr ""
+
+#. 5E5mc
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"pyc_id221701180096903\n"
+"help.text"
+msgid "dataset.MoveFirst()"
+msgstr ""
+
+#. YFTHA
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id93190955243345\n"
+"help.text"
+msgid "Moves the dataset cursor forward (with <literal>MoveNext</literal>) or backwards (with <literal>MovePrevious</literal>) by a given number of records."
+msgstr ""
+
+#. ZgZBd
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id411701262609872\n"
+"help.text"
+msgid "This method returns <literal>True</literal> when successful."
+msgstr ""
+
+#. P3w8A
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id617012800527025\n"
+"help.text"
+msgid "Deleted records are ignored by this method."
+msgstr ""
+
+#. uETmF
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id381701012554644\n"
+"help.text"
+msgid "<emph>offset</emph>: The number of records by which the cursor shall be moved forward or backwards. This argument may be a negative value (Default = 1)."
+msgstr ""
+
+#. TBpEB
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"bas_id191701180036941\n"
+"help.text"
+msgid "oDataset.MoveNext()"
+msgstr ""
+
+#. sAtoz
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"bas_id951701262692898\n"
+"help.text"
+msgid "oDataset.MoveNext(5)"
+msgstr ""
+
+#. vASBX
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"pyc_id221701180366885\n"
+"help.text"
+msgid "dataset.MoveNext()"
+msgstr ""
+
+#. ovQ9A
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"pyc_id601701262720188\n"
+"help.text"
+msgid "dataset.MoveNext(5)"
+msgstr ""
+
+#. gfYEg
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id93190955243383\n"
+"help.text"
+msgid "Reloads the dataset from the database. The properties <literal>Filter</literal> and <literal>OrderBy</literal> may be defined when calling this method."
+msgstr ""
+
+#. qTLq2
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id411701262522872\n"
+"help.text"
+msgid "This method returns <literal>True</literal> when successful."
+msgstr ""
+
+#. 4N2Sk
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id681701263394717\n"
+"help.text"
+msgid "Reloading the dataset is useful when records have been inserted to or deleted from the database. Note that the methods <literal>CreateDataset</literal> and <literal>Reload</literal> perform similar functions, however <literal>Reload</literal> reuses the same <literal>Dataset</literal> class instance."
+msgstr ""
+
+#. BeqeG
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id381701012509626\n"
+"help.text"
+msgid "<emph>filter</emph>: Specifies the condition that records must match to be included in the returned dataset. This argument is expressed as a SQL <literal>WHERE</literal> statement without the \"WHERE\" keyword. If this argument is not specified, then the filter used in the current dataset is applied, otherwise the current filter is replaced by this argument."
+msgstr ""
+
+#. 7kCWx
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id381701012563914\n"
+"help.text"
+msgid "<emph>orderby</emph>: Specifies the ordering of the dataset as a SQL <literal>ORDER BY</literal> statement without the \"ORDER BY\" keyword. If this argument is not specified, then the sorting order used in the current dataset is applied, otherwise the current sorting order is replaced by this argument."
+msgstr ""
+
+#. D4cHf
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"bas_id191701180036128\n"
+"help.text"
+msgid "oDataset.Reload()"
+msgstr ""
+
+#. xAG6h
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"bas_id951701262692252\n"
+"help.text"
+msgid "oDataset.Reload(Filter := \"[Name] = 'John'\", OrderBy := \"Age\")"
+msgstr ""
+
+#. NK5Zg
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"pyc_id221701180367255\n"
+"help.text"
+msgid "dataset.Reload()"
+msgstr ""
+
+#. VxECB
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"pyc_id601701262720097\n"
+"help.text"
+msgid "dataset.Reload(Filter = \"[Name] = 'John'\", OrderBy = \"Age\""
+msgstr ""
+
+#. AQgTY
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id93190955060783\n"
+"help.text"
+msgid "Update the values of the specified fields in the current record."
+msgstr ""
+
+#. 9y7wT
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id411701262529574\n"
+"help.text"
+msgid "This method returns <literal>True</literal> when successful."
+msgstr ""
+
+#. AuDhR
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id381701012546805\n"
+"help.text"
+msgid "<emph>pvargs</emph>: A <literal>Dictionary</literal> containing pairs of field names and their respective values. Alternatively, an even number of arguments can be specified alternating field names (as a <literal>String</literal>) and their values."
+msgstr ""
+
+#. UpZsi
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id791701264626511\n"
+"help.text"
+msgid "The example below updates the current record using a <literal>Dictionary</literal>."
+msgstr ""
+
+#. 9XyJf
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"bas_id617012650175222\n"
+"help.text"
+msgid "oNewValues = CreateScriptService(\"Dictionary\")"
+msgstr ""
+
+#. qjYTQ
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"bas_id511701265017930\n"
+"help.text"
+msgid "oNewValues.Add(\"Age\", 51)"
+msgstr ""
+
+#. kDD7r
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"bas_id491701265018498\n"
+"help.text"
+msgid "oNewValues.Add(\"City\", \"New York\")"
+msgstr ""
+
+#. FTLwr
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"bas_id401701265027933\n"
+"help.text"
+msgid "oDataset.Update(oNewValues)"
+msgstr ""
+
+#. ioYcY
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id221701264980261\n"
+"help.text"
+msgid "The same result can be achieved by passing all pairs of fields and values as arguments:"
+msgstr ""
+
+#. xfo7y
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"bas_id191701180033508\n"
+"help.text"
+msgid "oDataset.Update(\"Age\", 51, \"City\", \"New York\")"
+msgstr ""
+
+#. VhWGr
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"pyc_id221701180363025\n"
+"help.text"
+msgid "new_values = {\"Age\": 51, \"City\": \"New York\"}"
+msgstr ""
+
+#. sPdJv
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"pyc_id601701262720082\n"
+"help.text"
+msgid "dataset.Update(new_values)"
+msgstr ""
+
+#. oWPDV
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"pyc_id761701265203650\n"
+"help.text"
+msgid "dataset.Update(\"Age\", 51, \"City\", \"New York\")"
+msgstr ""
+
+#. 8RvfD
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"pyc_id141701265203921\n"
+"help.text"
+msgid "dataset.Update(Age = 51, City = \"New York\")"
 msgstr ""
 
 #. 4TmY5
@@ -10951,13 +12688,13 @@ msgctxt ""
 msgid "# ... Process controls and do what is needed"
 msgstr ""
 
-#. JhBcB
+#. h9PeA
 #: sf_dialog.xhp
 msgctxt ""
 "sf_dialog.xhp\n"
 "par_id951688460698125\n"
 "help.text"
-msgid "All properties and methods applicable to predefined dialogs are available for such new dialogs. In particular the series of <literal>CreateXXX()</literal> methods for the additionof new dialog controls."
+msgid "All properties and methods applicable to predefined dialogs are available for such new dialogs. In particular the series of <literal>CreateXXX()</literal> methods for the addition of new dialog controls."
 msgstr ""
 
 #. 8iyqo
@@ -11662,13 +13399,13 @@ msgctxt ""
 msgid "dlg2 = CreateScriptService('Dialog', ...)  # Open a second dialog"
 msgstr ""
 
-#. wAahr
+#. T2ARe
 #: sf_dialog.xhp
 msgctxt ""
 "sf_dialog.xhp\n"
 "par_id161584552357982\n"
 "help.text"
-msgid "Duplicate an existing control of any typein the actual dialog. The duplicated control is left unchanged and can be relocated."
+msgid "Duplicate an existing control of any type in the actual dialog. The duplicated control is left unchanged and can be relocated."
 msgstr ""
 
 #. CCUpB
@@ -11867,24 +13604,6 @@ msgctxt ""
 "par_id901688132529427\n"
 "help.text"
 msgid "<emph>LineCount</emph>: Specifies the maximum line count displayed in the drop down (default = 5)"
-msgstr ""
-
-#. No6yL
-#: sf_dialog.xhp
-msgctxt ""
-"sf_dialog.xhp\n"
-"bas_id571688391233995\n"
-"help.text"
-msgid "Set myComboBox = oDlg.CreateComboBox(\"ComboBox1\", Array(20, 20, 60, 15), Dropdown := True)"
-msgstr ""
-
-#. vQ37B
-#: sf_dialog.xhp
-msgctxt ""
-"sf_dialog.xhp\n"
-"pyc_id681688391240490\n"
-"help.text"
-msgid "myComboBox = dlg.CreateComboBox('ComboBox1', (20, 20, 60, 15), Dropdown = True)"
 msgstr ""
 
 #. CzvWq
@@ -12400,24 +14119,6 @@ msgctxt ""
 msgid "<emph>MultiLine</emph>: When <literal>True</literal> (default = <literal>False</literal>), the caption may be displayed on more than one line"
 msgstr ""
 
-#. uXqbU
-#: sf_dialog.xhp
-msgctxt ""
-"sf_dialog.xhp\n"
-"bas_id61688393673927\n"
-"help.text"
-msgid "Set myRadioButton = oDlg.CreateRadioButton(\"RadioButton1\", Array(20, 20, 60, 15), MultiLine := True)"
-msgstr ""
-
-#. 9zbeK
-#: sf_dialog.xhp
-msgctxt ""
-"sf_dialog.xhp\n"
-"pyc_id751688393681262\n"
-"help.text"
-msgid "myRadioButton = dlg.CreateRadioButton('RadioButton1', (20, 20, 60, 15), MultiLine = True)"
-msgstr ""
-
 #. FXgot
 #: sf_dialog.xhp
 msgctxt ""
@@ -12614,24 +14315,6 @@ msgctxt ""
 "par_id241688394984562\n"
 "help.text"
 msgid "<emph>Border</emph>: \"3D\" (default) or \"FLAT\" or \"NONE\""
-msgstr ""
-
-#. cFso7
-#: sf_dialog.xhp
-msgctxt ""
-"sf_dialog.xhp\n"
-"bas_id941688395020850\n"
-"help.text"
-msgid "Set myTreeControl = oDlg.CreateTreeControl(\"TreeControl1\", Array(20, 20, 60, 15))"
-msgstr ""
-
-#. GDWGT
-#: sf_dialog.xhp
-msgctxt ""
-"sf_dialog.xhp\n"
-"pyc_id721688395030169\n"
-"help.text"
-msgid "myTreeControl = dlg.CreateTreeControl('TreeControl1', (20, 20, 60, 15))"
 msgstr ""
 
 #. j8x9C
@@ -12848,24 +14531,6 @@ msgctxt ""
 "par_id401688543845094\n"
 "help.text"
 msgid "<literal>True</literal> when successful."
-msgstr ""
-
-#. 3XGLC
-#: sf_dialog.xhp
-msgctxt ""
-"sf_dialog.xhp\n"
-"bas_id791620301085031\n"
-"help.text"
-msgid "oDlg.OrderTabs(Array(\"myListBox\", \"myTextField\", \"myNumericField\"), Start := 10)"
-msgstr ""
-
-#. UGwcg
-#: sf_dialog.xhp
-msgctxt ""
-"sf_dialog.xhp\n"
-"pyc_id941620303073866\n"
-"help.text"
-msgid "dlg.OrderTabs(('myListBox', 'myTextField', 'myNumericField'), Start = 10)"
 msgstr ""
 
 #. 4FcCi
@@ -13937,15 +15602,6 @@ msgctxt ""
 "par_id701598517671337\n"
 "help.text"
 msgid "No"
-msgstr ""
-
-#. vQoQG
-#: sf_dialogcontrol.xhp
-msgctxt ""
-"sf_dialogcontrol.xhp\n"
-"par_id481687785271551\n"
-"help.text"
-msgid "Hyperlink"
 msgstr ""
 
 #. MmMXv
@@ -18808,6 +20464,24 @@ msgctxt ""
 msgid "<emph>filter</emph>: A string containing wildcards (\"?\" and \"*\") that will be applied to the resulting list of files (default = \"\")."
 msgstr ""
 
+#. DpWGe
+#: sf_filesystem.xhp
+msgctxt ""
+"sf_filesystem.xhp\n"
+"par_id731583944543907\n"
+"help.text"
+msgid "<emph>includesubfolders</emph>: Set this argument to <literal>True</literal> to include the contents of subfolders (Default = <literal>False</literal>)."
+msgstr ""
+
+#. snMqC
+#: sf_filesystem.xhp
+msgctxt ""
+"sf_filesystem.xhp\n"
+"bas_id901701437618763\n"
+"help.text"
+msgid "' Returns all files matching the \"*.txt\" filter, including files in subfolders"
+msgstr ""
+
 #. zG7ec
 #: sf_filesystem.xhp
 msgctxt ""
@@ -19517,6 +21191,15 @@ msgctxt ""
 "par_id471585648674921\n"
 "help.text"
 msgid "<emph>filter</emph>: A string containing wildcards (\"?\" and \"*\") that will be applied to the resulting list of folders (default = \"\")."
+msgstr ""
+
+#. WCB4h
+#: sf_filesystem.xhp
+msgctxt ""
+"sf_filesystem.xhp\n"
+"par_id731583944548857\n"
+"help.text"
+msgid "<emph>includesubfolders</emph>: Set this argument to <literal>True</literal> to include the contents of subfolders (Default = <literal>False</literal>)."
 msgstr ""
 
 #. XQG8t
@@ -22453,6 +24136,15 @@ msgctxt ""
 msgid "SFDocuments.FormDocument service"
 msgstr ""
 
+#. Y2ddY
+#: sf_formdocument.xhp
+msgctxt ""
+"sf_formdocument.xhp\n"
+"bm_id41582391760252\n"
+"help.text"
+msgid "<bookmark_value>FormDocument service</bookmark_value>"
+msgstr ""
+
 #. AQWCM
 #: sf_formdocument.xhp
 msgctxt ""
@@ -22534,6 +24226,15 @@ msgctxt ""
 msgid "The example below uses the <literal>UI</literal> service to open a Base document and then retrieve a form document. Note that in this example both the Base document and the form document will be opened and displayed on the screen."
 msgstr ""
 
+#. ZRxCq
+#: sf_formdocument.xhp
+msgctxt ""
+"sf_formdocument.xhp\n"
+"par_id591692487747857\n"
+"help.text"
+msgid "The following example uses the <literal>Database</literal> service to open the form document. In this case, the Base file will not be opened and only the form document will be shown."
+msgstr ""
+
 #. qkQZ7
 #: sf_formdocument.xhp
 msgctxt ""
@@ -22604,24 +24305,6 @@ msgctxt ""
 "par_id281692532725116\n"
 "help.text"
 msgid "A form document has at least one main form. More complex form documents may be composed of more than one form and sub-forms."
-msgstr ""
-
-#. Au3TH
-#: sf_formdocument.xhp
-msgctxt ""
-"sf_formdocument.xhp\n"
-"par_id91692538279673\n"
-"help.text"
-msgid "<input>svc.Forms(form: str): svc</input>"
-msgstr ""
-
-#. TKZq2
-#: sf_formdocument.xhp
-msgctxt ""
-"sf_formdocument.xhp\n"
-"par_id91692538279664\n"
-"help.text"
-msgid "<input>svc.Forms(form: int): svc</input>"
 msgstr ""
 
 #. 23Cgd
@@ -23965,13 +25648,13 @@ msgctxt ""
 msgid "The method returns <literal>True</literal> if successful."
 msgstr ""
 
-#. BsmCX
+#. 9ewFc
 #: sf_l10n.xhp
 msgctxt ""
 "sf_l10n.xhp\n"
 "par_id31586102707537\n"
 "help.text"
-msgid "<emph>filename</emph>: The output file in <literal>FileSystem.FileNaming</literal> notation."
+msgid "<emph>filename</emph>: The full output file name in <literal>FileSystem.FileNaming</literal> notation."
 msgstr ""
 
 #. jQV77
@@ -25549,13 +27232,13 @@ msgctxt ""
 msgid "Yes"
 msgstr ""
 
-#. 4Wfdk
+#. v4LD3
 #: sf_platform.xhp
 msgctxt ""
 "sf_platform.xhp\n"
 "par_id831633021741958\n"
 "help.text"
-msgid "Returns a <literal>Dictionary</literal> instance containing key-value pairs with the information found in the <emph>Tools - Options - User Data</emph> dialog."
+msgid "Returns a <literal>Dictionary</literal> instance containing key-value pairs in relation with <emph>Tools - Options - User Data</emph> dialog."
 msgstr ""
 
 #. FJs9t
@@ -31642,6 +33325,24 @@ msgctxt ""
 msgid "List of Properties in the Database Service"
 msgstr ""
 
+#. FpWGN
+#: sf_toc.xhp
+msgctxt ""
+"sf_toc.xhp\n"
+"hd_id101671192603066\n"
+"help.text"
+msgid "<literal>SFDatabases</literal>.<literal>Dataset</literal> service"
+msgstr ""
+
+#. zzVnN
+#: sf_toc.xhp
+msgctxt ""
+"sf_toc.xhp\n"
+"par_id651606319591202\n"
+"help.text"
+msgid "List of Properties in the Dataset Service"
+msgstr ""
+
 #. rGLDA
 #: sf_toc.xhp
 msgctxt ""
@@ -31984,6 +33685,42 @@ msgctxt ""
 msgid "List of Properties in the Timer Service"
 msgstr ""
 
+#. SZgAH
+#: sf_toc.xhp
+msgctxt ""
+"sf_toc.xhp\n"
+"hd_id1016711992036103\n"
+"help.text"
+msgid "<literal>ScriptForge</literal>.<literal>Toolbar</literal> service"
+msgstr ""
+
+#. uKPSJ
+#: sf_toc.xhp
+msgctxt ""
+"sf_toc.xhp\n"
+"par_id651606205603658\n"
+"help.text"
+msgid "List of Properties in the Toolbar Service"
+msgstr ""
+
+#. cFDeN
+#: sf_toc.xhp
+msgctxt ""
+"sf_toc.xhp\n"
+"hd_id1016711992054103\n"
+"help.text"
+msgid "<literal>ScriptForge</literal>.<literal>ToolbarButton</literal> service"
+msgstr ""
+
+#. wauAF
+#: sf_toc.xhp
+msgctxt ""
+"sf_toc.xhp\n"
+"par_id651635105603658\n"
+"help.text"
+msgid "List of Properties in the ToolbarButton Service"
+msgstr ""
+
 #. MexL5
 #: sf_toc.xhp
 msgctxt ""
@@ -32018,6 +33755,897 @@ msgctxt ""
 "par_id651606313658328\n"
 "help.text"
 msgid "List of Properties in the UnitTest Service"
+msgstr ""
+
+#. EBb8i
+#: sf_toolbar.xhp
+msgctxt ""
+"sf_toolbar.xhp\n"
+"tit\n"
+"help.text"
+msgid "SFWidgets.Toolbar service"
+msgstr ""
+
+#. pqQFq
+#: sf_toolbar.xhp
+msgctxt ""
+"sf_toolbar.xhp\n"
+"hd_id731582733781114\n"
+"help.text"
+msgid "<variable id=\"ToolbarService\"><link href=\"text/sbasic/shared/03/sf_toolbar.xhp\"><literal>SFWidgets</literal>.<literal>Toolbar</literal> service</link></variable>"
+msgstr ""
+
+#. oqrPc
+#: sf_toolbar.xhp
+msgctxt ""
+"sf_toolbar.xhp\n"
+"par_id571700837631557\n"
+"help.text"
+msgid "The <literal>Toolbar</literal> service allows to retrieve information related to the toolbars available for a specific document window. With this service it is possible to:"
+msgstr ""
+
+#. vwn3U
+#: sf_toolbar.xhp
+msgctxt ""
+"sf_toolbar.xhp\n"
+"par_id891589189452545\n"
+"help.text"
+msgid "Toggle the visibility of specific toolbars."
+msgstr ""
+
+#. Cq89r
+#: sf_toolbar.xhp
+msgctxt ""
+"sf_toolbar.xhp\n"
+"par_id811589189463041\n"
+"help.text"
+msgid "Access information about the buttons available in each toolbar."
+msgstr ""
+
+#. tGA5p
+#: sf_toolbar.xhp
+msgctxt ""
+"sf_toolbar.xhp\n"
+"par_id141700851608146\n"
+"help.text"
+msgid "Each %PRODUCTNAME application has its own set of available toolbars. This service handles both built-in and custom toolbars."
+msgstr ""
+
+#. EnCbC
+#: sf_toolbar.xhp
+msgctxt ""
+"sf_toolbar.xhp\n"
+"par_id181700851890467\n"
+"help.text"
+msgid "The status bar and the menu bar are not considered toolbars in the context of this service."
+msgstr ""
+
+#. x39EK
+#: sf_toolbar.xhp
+msgctxt ""
+"sf_toolbar.xhp\n"
+"hd_id581582885621841\n"
+"help.text"
+msgid "Service invocation"
+msgstr ""
+
+#. sDTg5
+#: sf_toolbar.xhp
+msgctxt ""
+"sf_toolbar.xhp\n"
+"par_id141609955500101\n"
+"help.text"
+msgid "Before using the <literal>Toolbar</literal> service the <literal>ScriptForge</literal> library needs to be loaded or imported:"
+msgstr ""
+
+#. H4Jrb
+#: sf_toolbar.xhp
+msgctxt ""
+"sf_toolbar.xhp\n"
+"par_id411700851985942\n"
+"help.text"
+msgid "The <literal>Toolbar</literal> service is invoked using the <literal>Toolbars</literal> method, which is available in the following services: <literal>Calc</literal>, <literal>Datasheet</literal>, <literal>Document</literal>, <literal>FormDocument</literal> and <literal>Writer</literal>."
+msgstr ""
+
+#. DXXZt
+#: sf_toolbar.xhp
+msgctxt ""
+"sf_toolbar.xhp\n"
+"par_id771700853155061\n"
+"help.text"
+msgid "The example below gets an <literal>Array</literal> with the names of the toolbars available in the current document."
+msgstr ""
+
+#. dCrhf
+#: sf_toolbar.xhp
+msgctxt ""
+"sf_toolbar.xhp\n"
+"par_id961700853354817\n"
+"help.text"
+msgid "Use the <literal>Toolbars</literal> method without arguments to retrieve an array with available toolbar names."
+msgstr ""
+
+#. LGmwr
+#: sf_toolbar.xhp
+msgctxt ""
+"sf_toolbar.xhp\n"
+"par_id171700853415555\n"
+"help.text"
+msgid "The example below toggles the visibility of the <menuitem>Standard</menuitem> toolbar:"
+msgstr ""
+
+#. UDbvF
+#: sf_toolbar.xhp
+msgctxt ""
+"sf_toolbar.xhp\n"
+"hd_id351582885195476\n"
+"help.text"
+msgid "Properties"
+msgstr ""
+
+#. JyMa7
+#: sf_toolbar.xhp
+msgctxt ""
+"sf_toolbar.xhp\n"
+"par_id41582885195836\n"
+"help.text"
+msgid "Name"
+msgstr ""
+
+#. ynz5j
+#: sf_toolbar.xhp
+msgctxt ""
+"sf_toolbar.xhp\n"
+"par_id31582885195372\n"
+"help.text"
+msgid "Readonly"
+msgstr ""
+
+#. 2FULu
+#: sf_toolbar.xhp
+msgctxt ""
+"sf_toolbar.xhp\n"
+"par_id31582885195238\n"
+"help.text"
+msgid "Type"
+msgstr ""
+
+#. CXito
+#: sf_toolbar.xhp
+msgctxt ""
+"sf_toolbar.xhp\n"
+"par_id931582885195131\n"
+"help.text"
+msgid "Description"
+msgstr ""
+
+#. NWaGJ
+#: sf_toolbar.xhp
+msgctxt ""
+"sf_toolbar.xhp\n"
+"par_id861582885655779\n"
+"help.text"
+msgid "Yes"
+msgstr ""
+
+#. NFBvJ
+#: sf_toolbar.xhp
+msgctxt ""
+"sf_toolbar.xhp\n"
+"par_id581582885655885\n"
+"help.text"
+msgid "Returns <literal>True</literal> when the toolbar is part of the set of standard toolbars shipped with %PRODUCTNAME."
+msgstr ""
+
+#. 2sRrz
+#: sf_toolbar.xhp
+msgctxt ""
+"sf_toolbar.xhp\n"
+"par_id861582885655669\n"
+"help.text"
+msgid "Yes"
+msgstr ""
+
+#. kBEqC
+#: sf_toolbar.xhp
+msgctxt ""
+"sf_toolbar.xhp\n"
+"par_id581582885657885\n"
+"help.text"
+msgid "Returns <literal>True</literal> when the toolbar is active in the window and docked."
+msgstr ""
+
+#. wgQVn
+#: sf_toolbar.xhp
+msgctxt ""
+"sf_toolbar.xhp\n"
+"par_id861582885655710\n"
+"help.text"
+msgid "Yes"
+msgstr ""
+
+#. pnCss
+#: sf_toolbar.xhp
+msgctxt ""
+"sf_toolbar.xhp\n"
+"par_id581582885655102\n"
+"help.text"
+msgid "Returns <literal>True</literal> when the toolbar is available in all documents of the same type."
+msgstr ""
+
+#. QdmGf
+#: sf_toolbar.xhp
+msgctxt ""
+"sf_toolbar.xhp\n"
+"par_id861582885655205\n"
+"help.text"
+msgid "Yes"
+msgstr ""
+
+#. JkADV
+#: sf_toolbar.xhp
+msgctxt ""
+"sf_toolbar.xhp\n"
+"par_id581582885655369\n"
+"help.text"
+msgid "Returns the name of the toolbar."
+msgstr ""
+
+#. SPCka
+#: sf_toolbar.xhp
+msgctxt ""
+"sf_toolbar.xhp\n"
+"par_id861582885655966\n"
+"help.text"
+msgid "Yes"
+msgstr ""
+
+#. 9tRd5
+#: sf_toolbar.xhp
+msgctxt ""
+"sf_toolbar.xhp\n"
+"par_id581582885655812\n"
+"help.text"
+msgid "Returns the resource URL of the toolbar, in the form <literal>private:toolbar/toolbar_name</literal>."
+msgstr ""
+
+#. JKEeR
+#: sf_toolbar.xhp
+msgctxt ""
+"sf_toolbar.xhp\n"
+"par_id861582885655212\n"
+"help.text"
+msgid "No"
+msgstr ""
+
+#. cAQFF
+#: sf_toolbar.xhp
+msgctxt ""
+"sf_toolbar.xhp\n"
+"par_id581582885655344\n"
+"help.text"
+msgid "Returns <literal>True</literal> when the toolbar is active and visible in the document window."
+msgstr ""
+
+#. DsnCd
+#: sf_toolbar.xhp
+msgctxt ""
+"sf_toolbar.xhp\n"
+"par_id861582885655788\n"
+"help.text"
+msgid "Yes"
+msgstr ""
+
+#. SBzqD
+#: sf_toolbar.xhp
+msgctxt ""
+"sf_toolbar.xhp\n"
+"par_id581582885655062\n"
+"help.text"
+msgid "Returns the <link href=\"https://api.libreoffice.org/docs/idl/ref/interfacecom_1_1sun_1_1star_1_1ui_1_1XUIElement.html\">com.sun.star.ui.XUIElement</link> UNO object that represents the toolbar."
+msgstr ""
+
+#. NaxAS
+#: sf_toolbar.xhp
+msgctxt ""
+"sf_toolbar.xhp\n"
+"par_id651606319520519\n"
+"help.text"
+msgid "List of Methods in the Toolbar Service"
+msgstr ""
+
+#. FED3g
+#: sf_toolbar.xhp
+msgctxt ""
+"sf_toolbar.xhp\n"
+"par_id93158919969864\n"
+"help.text"
+msgid "Returns an <literal>Array</literal> containing the names of all toolbar buttons when called without arguments."
+msgstr ""
+
+#. ZFAQU
+#: sf_toolbar.xhp
+msgctxt ""
+"sf_toolbar.xhp\n"
+"par_id421611148353046\n"
+"help.text"
+msgid "Provide the name of a toolbar button as argument to obtain a <literal>ToolbarButton</literal> service instance."
+msgstr ""
+
+#. 4FNvr
+#: sf_toolbar.xhp
+msgctxt ""
+"sf_toolbar.xhp\n"
+"par_id381701012526415\n"
+"help.text"
+msgid "<emph>buttonname</emph>: The name of a toolbar button in the current toolbar."
+msgstr ""
+
+#. KDGVG
+#: sf_toolbar.xhp
+msgctxt ""
+"sf_toolbar.xhp\n"
+"par_id601611148017930\n"
+"help.text"
+msgid "The example below returns the command executed when the button <menuitem>New</menuitem> is clicked in the <menuitem>Standard</menuitem> toolbar:"
+msgstr ""
+
+#. wAXLm
+#: sf_toolbar.xhp
+msgctxt ""
+"sf_toolbar.xhp\n"
+"par_id531701012694220\n"
+"help.text"
+msgid "Inactive toolbars do not have buttons. Therefore, calling the <literal>ToolbarButtons</literal> method will make the toolbar visible."
+msgstr ""
+
+#. C2z22
+#: sf_toolbarbutton.xhp
+msgctxt ""
+"sf_toolbarbutton.xhp\n"
+"tit\n"
+"help.text"
+msgid "SFWidgets.ToolbarButton service"
+msgstr ""
+
+#. 7vbG4
+#: sf_toolbarbutton.xhp
+msgctxt ""
+"sf_toolbarbutton.xhp\n"
+"hd_id731582733781114\n"
+"help.text"
+msgid "<variable id=\"ToolbarButtonService\"><link href=\"text/sbasic/shared/03/sf_toolbarbutton.xhp\"><literal>SFWidgets</literal>.<literal>ToolbarButton</literal> service</link></variable>"
+msgstr ""
+
+#. 3WPXi
+#: sf_toolbarbutton.xhp
+msgctxt ""
+"sf_toolbarbutton.xhp\n"
+"par_id571700837631557\n"
+"help.text"
+msgid "The <literal>ToolbarButton</literal> service allows to retrieve information related to the toolbar buttons available in a given toolbar. With this service it is possible to:"
+msgstr ""
+
+#. AFA7c
+#: sf_toolbarbutton.xhp
+msgctxt ""
+"sf_toolbarbutton.xhp\n"
+"par_id891589189452545\n"
+"help.text"
+msgid "Toggle the visibility of toolbar elements."
+msgstr ""
+
+#. uvPBu
+#: sf_toolbarbutton.xhp
+msgctxt ""
+"sf_toolbarbutton.xhp\n"
+"par_id811589189463041\n"
+"help.text"
+msgid "Execute the command associated with a given toolbar button."
+msgstr ""
+
+#. GF4Sh
+#: sf_toolbarbutton.xhp
+msgctxt ""
+"sf_toolbarbutton.xhp\n"
+"hd_id581582885621841\n"
+"help.text"
+msgid "Service invocation"
+msgstr ""
+
+#. Jv5uU
+#: sf_toolbarbutton.xhp
+msgctxt ""
+"sf_toolbarbutton.xhp\n"
+"par_id141609955500101\n"
+"help.text"
+msgid "Before using the <literal>ToolbarButton</literal> service the <literal>ScriptForge</literal> library needs to be loaded or imported:"
+msgstr ""
+
+#. 84iEK
+#: sf_toolbarbutton.xhp
+msgctxt ""
+"sf_toolbarbutton.xhp\n"
+"par_id411700851985942\n"
+"help.text"
+msgid "The <literal>ToolbarButton</literal> service is invoked using the <literal>ToolbarButtons</literal> method from the <literal>Toolbar</literal> service."
+msgstr ""
+
+#. bXAc8
+#: sf_toolbarbutton.xhp
+msgctxt ""
+"sf_toolbarbutton.xhp\n"
+"par_id771700853155061\n"
+"help.text"
+msgid "The example below retrieves the names of all buttons available in the <menuitem>Standard</menuitem> toolbar."
+msgstr ""
+
+#. dBPud
+#: sf_toolbarbutton.xhp
+msgctxt ""
+"sf_toolbarbutton.xhp\n"
+"par_id961700853354817\n"
+"help.text"
+msgid "Use the <literal>ToolbarButtons</literal> method without arguments to retrieve an array with all available toolbar button names."
+msgstr ""
+
+#. MCeGq
+#: sf_toolbarbutton.xhp
+msgctxt ""
+"sf_toolbarbutton.xhp\n"
+"par_id171700853415555\n"
+"help.text"
+msgid "The example below toggles the visibility of the <menuitem>Print</menuitem> button in the <menuitem>Standard</menuitem> toolbar:"
+msgstr ""
+
+#. EccFb
+#: sf_toolbarbutton.xhp
+msgctxt ""
+"sf_toolbarbutton.xhp\n"
+"bas_id117008537580631\n"
+"help.text"
+msgid "oToolbarButton = oToolbar.ToolbarButtons(\"Print\")"
+msgstr ""
+
+#. WL7SE
+#: sf_toolbarbutton.xhp
+msgctxt ""
+"sf_toolbarbutton.xhp\n"
+"par_id981701021131646\n"
+"help.text"
+msgid "The button name passed as argument to the <literal>ToolbarButtons</literal> method is the localized button name defined in the <menuitem>Tools - Customize - Toolbars</menuitem> dialog."
+msgstr ""
+
+#. UbFqB
+#: sf_toolbarbutton.xhp
+msgctxt ""
+"sf_toolbarbutton.xhp\n"
+"par_id531701012694220\n"
+"help.text"
+msgid "Inactive toolbars do not have buttons. Therefore, calling the <literal>ToolbarButtons</literal> method will make the toolbar visible."
+msgstr ""
+
+#. noSwD
+#: sf_toolbarbutton.xhp
+msgctxt ""
+"sf_toolbarbutton.xhp\n"
+"pyc_id351701021554314\n"
+"help.text"
+msgid "toolbar_button = toolbar.ToolbarButtons(\"Print\")"
+msgstr ""
+
+#. zVUEe
+#: sf_toolbarbutton.xhp
+msgctxt ""
+"sf_toolbarbutton.xhp\n"
+"hd_id351582885195476\n"
+"help.text"
+msgid "Properties"
+msgstr ""
+
+#. v9qLc
+#: sf_toolbarbutton.xhp
+msgctxt ""
+"sf_toolbarbutton.xhp\n"
+"par_id41582885195836\n"
+"help.text"
+msgid "Name"
+msgstr ""
+
+#. ZEAQj
+#: sf_toolbarbutton.xhp
+msgctxt ""
+"sf_toolbarbutton.xhp\n"
+"par_id31582885195372\n"
+"help.text"
+msgid "Readonly"
+msgstr ""
+
+#. XsFaH
+#: sf_toolbarbutton.xhp
+msgctxt ""
+"sf_toolbarbutton.xhp\n"
+"par_id31582885195238\n"
+"help.text"
+msgid "Type"
+msgstr ""
+
+#. L7CFQ
+#: sf_toolbarbutton.xhp
+msgctxt ""
+"sf_toolbarbutton.xhp\n"
+"par_id931582885195131\n"
+"help.text"
+msgid "Description"
+msgstr ""
+
+#. rD5Wn
+#: sf_toolbarbutton.xhp
+msgctxt ""
+"sf_toolbarbutton.xhp\n"
+"par_id861582885655779\n"
+"help.text"
+msgid "Yes"
+msgstr ""
+
+#. HmTft
+#: sf_toolbarbutton.xhp
+msgctxt ""
+"sf_toolbarbutton.xhp\n"
+"par_id581582885655885\n"
+"help.text"
+msgid "Returns the name of the button."
+msgstr ""
+
+#. XFmBe
+#: sf_toolbarbutton.xhp
+msgctxt ""
+"sf_toolbarbutton.xhp\n"
+"par_id861582885655669\n"
+"help.text"
+msgid "Yes"
+msgstr ""
+
+#. wxbpS
+#: sf_toolbarbutton.xhp
+msgctxt ""
+"sf_toolbarbutton.xhp\n"
+"par_id581582885657885\n"
+"help.text"
+msgid "Returns the height of the button, in pixels."
+msgstr ""
+
+#. KKkBJ
+#: sf_toolbarbutton.xhp
+msgctxt ""
+"sf_toolbarbutton.xhp\n"
+"par_id861582885655710\n"
+"help.text"
+msgid "Yes"
+msgstr ""
+
+#. DPmJW
+#: sf_toolbarbutton.xhp
+msgctxt ""
+"sf_toolbarbutton.xhp\n"
+"par_id581582885655102\n"
+"help.text"
+msgid "Returns the index of the button in its parent toolbar."
+msgstr ""
+
+#. NWZML
+#: sf_toolbarbutton.xhp
+msgctxt ""
+"sf_toolbarbutton.xhp\n"
+"par_id861582885655205\n"
+"help.text"
+msgid "No"
+msgstr ""
+
+#. DarcX
+#: sf_toolbarbutton.xhp
+msgctxt ""
+"sf_toolbarbutton.xhp\n"
+"par_id581582885655369\n"
+"help.text"
+msgid "The UNO command or script executed when the button is pressed. Read the Wiki page <link href=\"https://wiki.documentfoundation.org/Documentation/DevGuide/Scripting_Framework#Scripting_Framework_URI_Specification\">Scripting Framework URI Specification</link> to learn more on how to define a URI string."
+msgstr ""
+
+#. 5cZz5
+#: sf_toolbarbutton.xhp
+msgctxt ""
+"sf_toolbarbutton.xhp\n"
+"par_id861582885655966\n"
+"help.text"
+msgid "Yes"
+msgstr ""
+
+#. CVk4f
+#: sf_toolbarbutton.xhp
+msgctxt ""
+"sf_toolbarbutton.xhp\n"
+"par_id271582885605065\n"
+"help.text"
+msgid "<literal>Toolbar</literal> service"
+msgstr ""
+
+#. ky5Ft
+#: sf_toolbarbutton.xhp
+msgctxt ""
+"sf_toolbarbutton.xhp\n"
+"par_id581582885655812\n"
+"help.text"
+msgid "Returns a <literal>Toolbar</literal> service instance corresponding to the parent toolbar of the current toolbar button."
+msgstr ""
+
+#. evEJD
+#: sf_toolbarbutton.xhp
+msgctxt ""
+"sf_toolbarbutton.xhp\n"
+"par_id861582885655212\n"
+"help.text"
+msgid "No"
+msgstr ""
+
+#. RFDDd
+#: sf_toolbarbutton.xhp
+msgctxt ""
+"sf_toolbarbutton.xhp\n"
+"par_id581582885655344\n"
+"help.text"
+msgid "Specifies the tooltip text shown when the user hovers over the toolbar button."
+msgstr ""
+
+#. 7rEk3
+#: sf_toolbarbutton.xhp
+msgctxt ""
+"sf_toolbarbutton.xhp\n"
+"par_id861582885655788\n"
+"help.text"
+msgid "No"
+msgstr ""
+
+#. Xwj6X
+#: sf_toolbarbutton.xhp
+msgctxt ""
+"sf_toolbarbutton.xhp\n"
+"par_id581582885655062\n"
+"help.text"
+msgid "Specifies whether the toolbar button is visible or not."
+msgstr ""
+
+#. MAiCW
+#: sf_toolbarbutton.xhp
+msgctxt ""
+"sf_toolbarbutton.xhp\n"
+"par_id861582885651058\n"
+"help.text"
+msgid "Yes"
+msgstr ""
+
+#. nBeFQ
+#: sf_toolbarbutton.xhp
+msgctxt ""
+"sf_toolbarbutton.xhp\n"
+"par_id581582885653342\n"
+"help.text"
+msgid "Returns the width of the button, in pixels."
+msgstr ""
+
+#. XBYFY
+#: sf_toolbarbutton.xhp
+msgctxt ""
+"sf_toolbarbutton.xhp\n"
+"par_id861582885636258\n"
+"help.text"
+msgid "Yes"
+msgstr ""
+
+#. 4uB2C
+#: sf_toolbarbutton.xhp
+msgctxt ""
+"sf_toolbarbutton.xhp\n"
+"par_id581582885641742\n"
+"help.text"
+msgid "Returns the X (horizontal) coordinate of the top-left corner of the button, in pixels."
+msgstr ""
+
+#. nZBBC
+#: sf_toolbarbutton.xhp
+msgctxt ""
+"sf_toolbarbutton.xhp\n"
+"par_id861582885603158\n"
+"help.text"
+msgid "Yes"
+msgstr ""
+
+#. sapte
+#: sf_toolbarbutton.xhp
+msgctxt ""
+"sf_toolbarbutton.xhp\n"
+"par_id581582885609942\n"
+"help.text"
+msgid "Returns the Y (vertical) coordinate of the top-left corner of the button, in pixels."
+msgstr ""
+
+#. 5EuPv
+#: sf_toolbarbutton.xhp
+msgctxt ""
+"sf_toolbarbutton.xhp\n"
+"hd_id501701094012462\n"
+"help.text"
+msgid "Use of <literal>ToolbarButton</literal> alongside the <literal>PopupMenu</literal> service"
+msgstr ""
+
+#. BA5AH
+#: sf_toolbarbutton.xhp
+msgctxt ""
+"sf_toolbarbutton.xhp\n"
+"par_id731701094077095\n"
+"help.text"
+msgid "A common use case of the properties <literal>X</literal> and <literal>Y</literal> described above is to open a popup menu in the position where the toolbar button is located."
+msgstr ""
+
+#. y6sZ3
+#: sf_toolbarbutton.xhp
+msgctxt ""
+"sf_toolbarbutton.xhp\n"
+"par_id761701094138529\n"
+"help.text"
+msgid "Suppose you create the script below and associate it with a button named \"My Button\" in the <literal>standardbar</literal>. When it is clicked, a popup menu will be shown with 3 options for the user to select."
+msgstr ""
+
+#. ScQ7D
+#: sf_toolbarbutton.xhp
+msgctxt ""
+"sf_toolbarbutton.xhp\n"
+"bas_id971701094239852\n"
+"help.text"
+msgid "oButton = oToolbar.ToolbarButtons(\"My Button\")"
+msgstr ""
+
+#. FdnTg
+#: sf_toolbarbutton.xhp
+msgctxt ""
+"sf_toolbarbutton.xhp\n"
+"bas_id521701094240308\n"
+"help.text"
+msgid "oPopup.AddItem(\"Item A\", \"A\")"
+msgstr ""
+
+#. q5NAy
+#: sf_toolbarbutton.xhp
+msgctxt ""
+"sf_toolbarbutton.xhp\n"
+"bas_id201701094240523\n"
+"help.text"
+msgid "oPopup.AddItem(\"Item B\", \"B\")"
+msgstr ""
+
+#. hSrs9
+#: sf_toolbarbutton.xhp
+msgctxt ""
+"sf_toolbarbutton.xhp\n"
+"bas_id961701094240764\n"
+"help.text"
+msgid "oPopup.AddItem(\"Item C\", \"C\")"
+msgstr ""
+
+#. nN4Ci
+#: sf_toolbarbutton.xhp
+msgctxt ""
+"sf_toolbarbutton.xhp\n"
+"bas_id531701094241275\n"
+"help.text"
+msgid "MsgBox \"Your choice: \" & strResponse"
+msgstr ""
+
+#. FEgta
+#: sf_toolbarbutton.xhp
+msgctxt ""
+"sf_toolbarbutton.xhp\n"
+"pyc_id231701094980046\n"
+"help.text"
+msgid "toolbutton = toolbar.ToolbarButtons(\"My Button\")"
+msgstr ""
+
+#. AUB9g
+#: sf_toolbarbutton.xhp
+msgctxt ""
+"sf_toolbarbutton.xhp\n"
+"pyc_id521701094980469\n"
+"help.text"
+msgid "popup.AddItem(\"Item A\", \"A\")"
+msgstr ""
+
+#. Afb6C
+#: sf_toolbarbutton.xhp
+msgctxt ""
+"sf_toolbarbutton.xhp\n"
+"pyc_id841701094980684\n"
+"help.text"
+msgid "popup.AddItem(\"Item B\", \"B\")"
+msgstr ""
+
+#. NDiSP
+#: sf_toolbarbutton.xhp
+msgctxt ""
+"sf_toolbarbutton.xhp\n"
+"pyc_id441701094980908\n"
+"help.text"
+msgid "popup.AddItem(\"Item C\", \"C\")"
+msgstr ""
+
+#. dW3ae
+#: sf_toolbarbutton.xhp
+msgctxt ""
+"sf_toolbarbutton.xhp\n"
+"pyc_id241701094981357\n"
+"help.text"
+msgid "bas.MsgBox(f\"Your choice: {response}\")"
+msgstr ""
+
+#. FdzNA
+#: sf_toolbarbutton.xhp
+msgctxt ""
+"sf_toolbarbutton.xhp\n"
+"par_id651606319520519\n"
+"help.text"
+msgid "List of Methods in the ToolbarButton Service"
+msgstr ""
+
+#. oGWqY
+#: sf_toolbarbutton.xhp
+msgctxt ""
+"sf_toolbarbutton.xhp\n"
+"par_id93158919969864\n"
+"help.text"
+msgid "Executes the command or script associated with the toolbar button."
+msgstr ""
+
+#. 7BYZB
+#: sf_toolbarbutton.xhp
+msgctxt ""
+"sf_toolbarbutton.xhp\n"
+"par_id191701023292148\n"
+"help.text"
+msgid "This method returns the value returned by the command or script executed."
+msgstr ""
+
+#. DypG2
+#: sf_toolbarbutton.xhp
+msgctxt ""
+"sf_toolbarbutton.xhp\n"
+"par_id731701023160247\n"
+"help.text"
+msgid "Use the <literal>OnClick</literal> property to determine the command or script that shall be executed. If the command/script does not return any value, then <literal>Null</literal> is returned."
+msgstr ""
+
+#. o3Jvt
+#: sf_toolbarbutton.xhp
+msgctxt ""
+"sf_toolbarbutton.xhp\n"
+"par_id601611148017930\n"
+"help.text"
+msgid "The example below executes the <menuitem>Print</menuitem> button from the <menuitem>Standard</menuitem> toolbar:"
+msgstr ""
+
+#. PErti
+#: sf_toolbarbutton.xhp
+msgctxt ""
+"sf_toolbarbutton.xhp\n"
+"bas_id841701013457456\n"
+"help.text"
+msgid "oToolbarButton = oToolbar.ToolbarButtons(\"Print\")"
+msgstr ""
+
+#. izBv6
+#: sf_toolbarbutton.xhp
+msgctxt ""
+"sf_toolbarbutton.xhp\n"
+"pyc_id351701020654314\n"
+"help.text"
+msgid "toolbar_button = toolbar.ToolbarButtons(\"Print\")"
 msgstr ""
 
 #. dphFv
