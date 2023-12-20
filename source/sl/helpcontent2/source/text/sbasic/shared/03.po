@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: LibreOffice 24.02\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2023-11-12 23:30+0100\n"
-"PO-Revision-Date: 2023-11-22 22:37+0200\n"
+"POT-Creation-Date: 2023-12-10 12:10+0100\n"
+"PO-Revision-Date: 2023-12-18 23:40+0200\n"
 "Last-Translator: Martin Srebotnjak <miles@filmsi.net>\n"
 "Language-Team: sl.libreoffice.org\n"
 "Language: sl\n"
@@ -7343,7 +7343,7 @@ msgctxt ""
 "par_id141595692394382\n"
 "help.text"
 msgid "Sort the given range on any number of columns/rows. The sorting order may vary by column/row. If the number of sort keys is > 3 then the range is sorted several times, by groups of 3 keys, starting from the last key. It returns a string representing the modified range of cells. The size of the modified area is fully determined by the size of the source area."
-msgstr "Razvrsti dani obseg glede po poljubnem številu stolpcev/vrstic. Vrstni red razvrščanja se lahko razlikuje po stolpcih/vrsticah. Če je število razvrstitvenih ključev večje od 3, se obseg razvrsti večkrat, v skupinah s po tremi ključi, začenši z zadnjim ključem. Vrne niz, ki predstavlja spremenjeni obseg celic. Velikost spremenjenega področja je povsem določen z velikostjo izvornega področja."
+msgstr "Razvrsti dani obseg glede na poljubno število stolpcev/vrstic. Vrstni red razvrščanja se lahko razlikuje po stolpcih/vrsticah. Če je število razvrstitvenih ključev večje od 3, se obseg razvrsti večkrat, v skupinah s po tremi ključi, začenši z zadnjim ključem. Vrne niz, ki predstavlja spremenjeni obseg celic. Velikost spremenjenega področja je povsem določen z velikostjo izvornega področja."
 
 #: sf_calc.xhp
 msgctxt ""
@@ -8124,6 +8124,238 @@ msgstr "Da bi bile izjave SQL lažje berljive, lahko uporabite neobvezne oglate 
 #: sf_database.xhp
 msgctxt ""
 "sf_database.xhp\n"
+"hd_id461701357494930\n"
+"help.text"
+msgid "Transaction handling"
+msgstr "Ravnanje s transakcijami"
+
+#: sf_database.xhp
+msgctxt ""
+"sf_database.xhp\n"
+"bm_id121701365380522\n"
+"help.text"
+msgid "<bookmark_value>Database service; Transaction handling</bookmark_value>"
+msgstr "<bookmark_value>storitev Database;ravnanje s transakcijami</bookmark_value>"
+
+#: sf_database.xhp
+msgctxt ""
+"sf_database.xhp\n"
+"par_id71701357507703\n"
+"help.text"
+msgid "By default the database handles transactions in auto-commit mode, meaning that a commit is done after every SQL statement."
+msgstr "Zbirka podatkov privzeto upravlja s transakcijami v načinu samodejne potrditve, kar pomeni, da se potrditev opravi po vsakem ukazu SQL."
+
+#: sf_database.xhp
+msgctxt ""
+"sf_database.xhp\n"
+"par_id321701357603871\n"
+"help.text"
+msgid "Use the <literal>SetTransactionMode</literal> method to change the default behavior, which allows for manual commits and rollbacks."
+msgstr "Uporabite metodo <literal>SetTransactionMode</literal>, da spremenite privzeto vedenje, kar omogoča ročne uveljavitve in povrnitve."
+
+#: sf_database.xhp
+msgctxt ""
+"sf_database.xhp\n"
+"par_id431701443412927\n"
+"help.text"
+msgid "The methods <literal>Commit</literal> and <literal>Rollback</literal> are used to delimit transactions."
+msgstr "Metodi <literal>Commit</literal> in <literal>Rollback</literal> se uporabljata za razločevanje transakcij."
+
+#: sf_database.xhp
+msgctxt ""
+"sf_database.xhp\n"
+"par_id531701365474516\n"
+"help.text"
+msgid "In %PRODUCTNAME, there are five types of transaction isolation modes, as defined in the <link href=\"https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1sdbc_1_1TransactionIsolation.html\">com.sun.star.sdbc.TransactionIsolation</link> constant group:"
+msgstr "V %PRODUCTNAME je pet vrst načinov izolacije transakcij, kot je definirano v skupini konstant <link href=\"https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1sdbc_1_1TransactionIsolation.html\">com.sun.star.sdbc.TransactionIsolation</link>:"
+
+#: sf_database.xhp
+msgctxt ""
+"sf_database.xhp\n"
+"par_id631701441607725\n"
+"help.text"
+msgid "Constant"
+msgstr "Konstanta"
+
+#: sf_database.xhp
+msgctxt ""
+"sf_database.xhp\n"
+"par_id671701441607725\n"
+"help.text"
+msgid "Value"
+msgstr "Vrednost"
+
+#: sf_database.xhp
+msgctxt ""
+"sf_database.xhp\n"
+"par_id441701441607725\n"
+"help.text"
+msgid "Interpretation"
+msgstr "Interpretacija"
+
+#: sf_database.xhp
+msgctxt ""
+"sf_database.xhp\n"
+"par_id681701441607725\n"
+"help.text"
+msgid "NONE"
+msgstr "NONE"
+
+#: sf_database.xhp
+msgctxt ""
+"sf_database.xhp\n"
+"par_id831701441607725\n"
+"help.text"
+msgid "0"
+msgstr "0"
+
+#: sf_database.xhp
+msgctxt ""
+"sf_database.xhp\n"
+"par_id601701441607725\n"
+"help.text"
+msgid "Transaction handling is disabled and the database is set to the default auto-commit mode."
+msgstr "Ravnanje s transakcijami je onemogočeno in zbirka podatkov je nastavljena v privzeti način samodejnega potrjevanja."
+
+#: sf_database.xhp
+msgctxt ""
+"sf_database.xhp\n"
+"par_id681701441607147\n"
+"help.text"
+msgid "READ_UNCOMMITTED"
+msgstr "READ_UNCOMMITTED"
+
+#: sf_database.xhp
+msgctxt ""
+"sf_database.xhp\n"
+"par_id831701441607208\n"
+"help.text"
+msgid "1"
+msgstr "1"
+
+#: sf_database.xhp
+msgctxt ""
+"sf_database.xhp\n"
+"par_id601701441607099\n"
+"help.text"
+msgid "Dirty reads, non-repeatable reads and phantom reads can occur."
+msgstr "Dogodijo se lahko branja nepotrjenih podatkov, neponovljiva branja in fantomska branja."
+
+#: sf_database.xhp
+msgctxt ""
+"sf_database.xhp\n"
+"par_id601701441603205\n"
+"help.text"
+msgid "If a row is changed by a transaction, another transaction will be able to read these changes even if they have not been committed."
+msgstr "Če transakcija spremeni vrstico, bo lahko druga transakcija prebrala te spremembe, čeprav niso bile potrjene."
+
+#: sf_database.xhp
+msgctxt ""
+"sf_database.xhp\n"
+"par_id681701441607317\n"
+"help.text"
+msgid "READ_COMMITTED"
+msgstr "READ_COMMITTED"
+
+#: sf_database.xhp
+msgctxt ""
+"sf_database.xhp\n"
+"par_id831701441607714\n"
+"help.text"
+msgid "2"
+msgstr "2"
+
+#: sf_database.xhp
+msgctxt ""
+"sf_database.xhp\n"
+"par_id601701441607012\n"
+"help.text"
+msgid "Dirty reads are prevented, however non-repeatable reads and phantom reads can occur."
+msgstr "Branja nepotrjenih podatkov so preprečena, medtem ko se neponovljiva in fantomska branja lahko dogodijo."
+
+#: sf_database.xhp
+msgctxt ""
+"sf_database.xhp\n"
+"par_id601701441608244\n"
+"help.text"
+msgid "This level prevents that rows with uncommitted changes are read."
+msgstr "Ta raven preprečuje, da bi bile vrstice z nepotrjenimi spremembami prebrane."
+
+#: sf_database.xhp
+msgctxt ""
+"sf_database.xhp\n"
+"par_id681701441607209\n"
+"help.text"
+msgid "REPEATABLE_READ"
+msgstr "REPEATABLE_READ"
+
+#: sf_database.xhp
+msgctxt ""
+"sf_database.xhp\n"
+"par_id831701441607103\n"
+"help.text"
+msgid "4"
+msgstr "4"
+
+#: sf_database.xhp
+msgctxt ""
+"sf_database.xhp\n"
+"par_id601701441607300\n"
+"help.text"
+msgid "Dirty reads and non-repeatable reads are prevented. However, phantom reads can occur."
+msgstr "Branja nepotrjenih podatkov in neponovljiva branja so preprečena. Fantomska branja se lahko vršijo."
+
+#: sf_database.xhp
+msgctxt ""
+"sf_database.xhp\n"
+"par_id601701441608161\n"
+"help.text"
+msgid "Besides preventing uncommitted data from being read, it also prevents that two read operations in the same transaction return different results."
+msgstr "Poleg preprečevanja branja nepotrjenih podatkov preprečuje tudi, da dve bralni operaciji v isti transakciji vrneta različne rezultate."
+
+#: sf_database.xhp
+msgctxt ""
+"sf_database.xhp\n"
+"par_id681701441607060\n"
+"help.text"
+msgid "SERIALIZABLE"
+msgstr "SERIALIZABLE"
+
+#: sf_database.xhp
+msgctxt ""
+"sf_database.xhp\n"
+"par_id831701441607688\n"
+"help.text"
+msgid "8"
+msgstr "8"
+
+#: sf_database.xhp
+msgctxt ""
+"sf_database.xhp\n"
+"par_id601701441607896\n"
+"help.text"
+msgid "Dirty reads, non-repeatable reads and phantom reads are prevented."
+msgstr "Branja nepotrjenih podatkov ter neponovljiva in fantomska branja so preprečena."
+
+#: sf_database.xhp
+msgctxt ""
+"sf_database.xhp\n"
+"par_id601701441607117\n"
+"help.text"
+msgid "In addition to the constraints of the previous level, it also ensures that the set of records that match a <literal>WHERE</literal> clause remains unchanged inside the same transaction."
+msgstr "Poleg omejitev prejšnje ravni zagotavlja tudi, da ostane nabor zapisov, ki se ujemajo s pogojem <literal>WHERE</literal>, nespremenjen v okviru iste transakcije."
+
+#: sf_database.xhp
+msgctxt ""
+"sf_database.xhp\n"
+"par_id991701357744355\n"
+"help.text"
+msgid "Read the Wikipedia page on <link href=\"https://en.wikipedia.org/wiki/Isolation_(database_systems)\">Isolation in Database Systems</link> to learn more about transaction integrity."
+msgstr "Preberite sestavek na Wikipediji o <link href=\"https://en.wikipedia.org/wiki/Isolation_(database_systems)\">Izolaciji v sistemih zbirk podatkov</link> (v angl.), da izveste več o integriteti transakcij."
+
+#: sf_database.xhp
+msgctxt ""
+"sf_database.xhp\n"
 "hd_id91587913266988\n"
 "help.text"
 msgid "Service invocation"
@@ -8400,6 +8632,110 @@ msgctxt ""
 "help.text"
 msgid "Closes the current database connection."
 msgstr "Zapre trenutno povezavo zbirke podatkov."
+
+#: sf_database.xhp
+msgctxt ""
+"sf_database.xhp\n"
+"par_id201587913264308\n"
+"help.text"
+msgid "Commits all updates done since the previous <literal>Commit</literal> or <literal>Rollback</literal> call."
+msgstr "Potrdi vse opravljene posodobitve od prejšnjega klica <literal>Commit</literal> ali <literal>Rollback</literal>."
+
+#: sf_database.xhp
+msgctxt ""
+"sf_database.xhp\n"
+"par_id391701355293522\n"
+"help.text"
+msgid "This method is ignored if commits are done automatically after each SQL statement, i.e. the database is set to the default auto-commit mode."
+msgstr "Ta metoda je prezrta, če so potrditve izvedene samodejno po vsakem ukazu SQL, t.j. zbirka podatkov je nastavljena na privzeti način samodejnega potrjevanja."
+
+#: sf_database.xhp
+msgctxt ""
+"sf_database.xhp\n"
+"bas_id141701355821478\n"
+"help.text"
+msgid "' Set the REPEATABLE_READ transaction level"
+msgstr "' Določi raven transakcije REPEATABLE_READ"
+
+#: sf_database.xhp
+msgctxt ""
+"sf_database.xhp\n"
+"bas_id311701355662993\n"
+"help.text"
+msgid "' Test some condition before committing"
+msgstr "' Preizkusi nekatere pogoje pred potrditvijo"
+
+#: sf_database.xhp
+msgctxt ""
+"sf_database.xhp\n"
+"bas_id711701355663208\n"
+"help.text"
+msgid "' Restore auto-commit mode"
+msgstr "' Obnovi način samodejnega potrjevanja"
+
+#: sf_database.xhp
+msgctxt ""
+"sf_database.xhp\n"
+"par_id41599488113502\n"
+"help.text"
+msgid "Creates a <literal>Dataset</literal> service instance based on a table, query or SQL <literal>SELECT</literal> statement."
+msgstr "Ustvari instanco storitve <literal>Dataset</literal> na osnovi tabele, poizvedbe ali izjave SQL <literal>SELECT</literal>."
+
+#: sf_database.xhp
+msgctxt ""
+"sf_database.xhp\n"
+"par_id591701267115505\n"
+"help.text"
+msgid "<emph>sqlcommand</emph>: A table name, a query name or a valid SQL <literal>SELECT</literal> statement. Identifiers may be enclosed with square brackets. This argument is case-sensitive."
+msgstr "<emph>sqlcommand</emph>: ime tabele, ime poizvedbe ali veljavna izjava SQL <literal>SELECT</literal>. Identifikatorji so lahko zaobjeti z oglatimi oklepaji. Ta argument razlikuje med velikimi in malimi črkami."
+
+#: sf_database.xhp
+msgctxt ""
+"sf_database.xhp\n"
+"par_id841701267114060\n"
+"help.text"
+msgid "<emph>directsql</emph>: Set this argument to <literal>True</literal> to send the statement directly to the database engine without preprocessing by %PRODUCTNAME (Default = <literal>False</literal>)."
+msgstr "<emph>directsql</emph>: ko je <literal>True</literal>, pošlje ukaz SQL pogonu zbirke podatkov brez predhodne analize v %PRODUCTNAME (privzeta vrednost je <literal>False</literal>)."
+
+#: sf_database.xhp
+msgctxt ""
+"sf_database.xhp\n"
+"par_id241701267114527\n"
+"help.text"
+msgid "<emph>filter</emph>: Specifies the condition that records must match to be included in the returned dataset. This argument is expressed as a SQL <literal>WHERE</literal> statement without the \"WHERE\" keyword."
+msgstr "<emph>filter</emph>: določa pogoj, katerega morajo izpolnjevati zapisi, da so vključeni v vrnjeni nabor podatkov. Ta argument je izražen kot stavek SQL <literal>WHERE</literal> brez ključne besede »WHERE«."
+
+#: sf_database.xhp
+msgctxt ""
+"sf_database.xhp\n"
+"par_id471701267115093\n"
+"help.text"
+msgid "<emph>orderby</emph>: Specifies the ordering of the dataset as a SQL <literal>ORDER BY</literal> statement without the \"ORDER BY\" keyword."
+msgstr "<emph>orderby</emph>: določa, v kakšnem zaporedju naj bodo prikazani zapisi kot stavek SQL <literal>ORDER BY</literal>, vendar brez ključnih besed »ORDER BY«."
+
+#: sf_database.xhp
+msgctxt ""
+"sf_database.xhp\n"
+"par_id941701267748877\n"
+"help.text"
+msgid "The following examples in Basic and Python return a dataset with the records of a table named \"Customers\"."
+msgstr "Spodnja primera v Basicu in Pythonu vrneta nabor podatkov z zapisi tabele, imenovane »Stranke«."
+
+#: sf_database.xhp
+msgctxt ""
+"sf_database.xhp\n"
+"bas_id241701267631273\n"
+"help.text"
+msgid "oDataset = myDatabase.CreateDataset(\"Customers\", Filter := \"[Name] LIKE 'A'\")"
+msgstr "oDataset = myDatabase.CreateDataset(\"Stranke\", Filter := \"[Ime] LIKE 'A'\")"
+
+#: sf_database.xhp
+msgctxt ""
+"sf_database.xhp\n"
+"pyc_id931701267696812\n"
+"help.text"
+msgid "dataset = myDatabase.CreateDataset(\"Customers\", Filter = \"[Name] LIKE 'A'\")"
+msgstr "dataset = myDatabase.CreateDataset(\"Stranke\", Filter = \"[Ime] LIKE 'A'\")"
 
 #: sf_database.xhp
 msgctxt ""
@@ -8716,6 +9052,14 @@ msgstr "<emph>tablename</emph>: ime obstoječe tabele kot niz vrste String; razl
 #: sf_database.xhp
 msgctxt ""
 "sf_database.xhp\n"
+"par_id31599490603311\n"
+"help.text"
+msgid "Cancels all changes made to the database since the last <literal>Commit</literal> or <literal>Rollback</literal> call."
+msgstr "Prekliče vse spremembe, opravljene v zbirki podatkov od zadnjega klica <literal>Commit</literal> ali <literal>Rollback</literal>."
+
+#: sf_database.xhp
+msgctxt ""
+"sf_database.xhp\n"
 "par_id31599490609759\n"
 "help.text"
 msgid "Executes an action query of an SQL statement such as creating a table, as well as inserting, updating and deleting records."
@@ -8752,6 +9096,1206 @@ msgctxt ""
 "help.text"
 msgid "<emph>directsql</emph>: When <literal>True</literal>, the SQL command is sent to the database engine without pre-analysis. (Default = <literal>False</literal>). For queries, the applied option is the one set when the query was defined."
 msgstr "<emph>directsql</emph>: ko je <literal>True</literal>, pošlje ukaz SQL pogonu zbirke podatkov brez predhodne analize (privzeta vrednost je <literal>False</literal>). Za poizvedbe je uporabljena tista možnost, ki je veljala ob določitvi poizvedbe."
+
+#: sf_database.xhp
+msgctxt ""
+"sf_database.xhp\n"
+"par_id31599490604648\n"
+"help.text"
+msgid "Defines the level of isolation in database transactions."
+msgstr "Določa raven izolacije v transakcijah zbirke podatkov."
+
+#: sf_database.xhp
+msgctxt ""
+"sf_database.xhp\n"
+"par_id281701459963822\n"
+"help.text"
+msgid "By default databases manage transactions in auto-commit mode, which means that a <literal>Commit</literal> is automatically performed after every SQL statement."
+msgstr "Zbirke podatkov privzeto opravljajo transakcije v načinu samodejnega potrjevanja, kar pomeni, da je <literal>Commit</literal> samodejno izveden po vsaki izjavi SQL."
+
+#: sf_database.xhp
+msgctxt ""
+"sf_database.xhp\n"
+"par_id181701460140309\n"
+"help.text"
+msgid "Use this method to manually determine the isolation level of transactions. When a transaction mode other than <literal>NONE</literal> is set, the script has to explicitly call the <literal>Commit</literal> method to apply the changes to the database."
+msgstr "Uporabite to metodo, da ročno določite raven izolacije transakcij. Če je nastavljen drug način transakcij od <literal>NONE</literal>, mora skript eksplicitno klicati metodo <literal>Commit</literal>, da uveljavi spremembe v zbirki podatkov."
+
+#: sf_database.xhp
+msgctxt ""
+"sf_database.xhp\n"
+"par_id211701461020712\n"
+"help.text"
+msgid "This method returns <literal>True</literal> when successful."
+msgstr "Metoda vrne <literal>True</literal>, če uspe."
+
+#: sf_database.xhp
+msgctxt ""
+"sf_database.xhp\n"
+"par_id831701530239962\n"
+"help.text"
+msgid "Changing the transaction mode closes all <literal>Dataset</literal> instances created from the current database."
+msgstr "Sprememba načina transakcij zapre vse instance <literal>Dataset</literal>, ustvarjene iz trenutne zbirke podatkov."
+
+#: sf_database.xhp
+msgctxt ""
+"sf_database.xhp\n"
+"par_id701599490609584\n"
+"help.text"
+msgid "<emph>transactionmode</emph>: Specifies the transaction mode. This argument must be one of the constants defined in <link href=\"https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1sdbc_1_1TransactionIsolation.html\">com.sun.star.sdbc.TransactionIsolation</link> (Default = <literal>NONE</literal>)"
+msgstr "<emph>transactionmode</emph>: določa način transakcije. Ta argument mora biti ena od konstant, definiranih v <link href=\"https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1sdbc_1_1TransactionIsolation.html\">com.sun.star.sdbc.TransactionIsolation</link> (privzeta vrednost je <literal>NONE</literal>)."
+
+#: sf_database.xhp
+msgctxt ""
+"sf_database.xhp\n"
+"par_id301701459879269\n"
+"help.text"
+msgid "Read the section <link href=\"text/sbasic/shared/03/sf_database.xhp#Transaction\">Transaction handling</link> above to learn more about the transaction isolation levels used in %PRODUCTNAME."
+msgstr "Oglejte si stran pomoči <link href=\"text/sbasic/shared/03/sf_database.xhp#Transaction\">Ravnanje s transakcijami</link> (v angl.), da izveste več o ravneh izolacije transakcij v %PRODUCTNAME."
+
+#: sf_database.xhp
+msgctxt ""
+"sf_database.xhp\n"
+"bas_id951701460628717\n"
+"help.text"
+msgid "' Reset the transaction mode to default"
+msgstr "' Ponastavi način transakcije na privzetega"
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"tit\n"
+"help.text"
+msgid "SFDatabases.Dataset service"
+msgstr "Storitev SFDatabases.Dataset"
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"hd_id731582733781114\n"
+"help.text"
+msgid "<variable id=\"DatasetService\"><link href=\"text/sbasic/shared/03/sf_dataset.xhp\"><literal>SFDatabases</literal>.<literal>Dataset</literal> service</link></variable>"
+msgstr "<variable id=\"DatasetService\"><link href=\"text/sbasic/shared/03/sf_dataset.xhp\">Storitev <literal>SFDatabases</literal>.<literal>Dataset</literal></link></variable>"
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id571700837631557\n"
+"help.text"
+msgid "The <literal>Dataset</literal> service is used to represent tabular data produced by a database. With this service it is possible to:"
+msgstr "Storitev <literal>Dataset</literal> se uporablja za predstavljanje tabelaričnih podatkov, ki jih izdela zbirka podatkov. S to storitvijo je možno:"
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id891589189452545\n"
+"help.text"
+msgid "Navigate through and access the data in a dataset."
+msgstr "krmarjenje po in dostop do podatkov v naboru podatkov;"
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id811589189463041\n"
+"help.text"
+msgid "Update, insert and remove records in a dataset."
+msgstr "posodabljanje, vstavljanje in odstranjevanje zapisov v naboru podatkov."
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id251701124711074\n"
+"help.text"
+msgid "Updating and inserting records using the <literal>Dataset</literal> service is slower than using SQL statements. When updating or inserting large amounts of records, it is recommended to use SQL statements instead of using the methods in this service."
+msgstr "Posodabljanje in vstavljanje zapisov s storitvijo <literal>Dataset</literal> je počasnejše od uporabe ukazov SQL. Če posodabljate ali vstavljate velike količine zapisov, priporočamo, da uporabljate ukaze SQL namesto metod iz te storitve."
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"hd_id581582885621841\n"
+"help.text"
+msgid "Service invocation"
+msgstr "Priklic storitve"
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id141609955500101\n"
+"help.text"
+msgid "Before using the <literal>Dataset</literal> service the <literal>ScriptForge</literal> library needs to be loaded or imported:"
+msgstr "Pred uporabo storitve <literal>Dataset</literal> je potrebno naložiti ali uvoziti knjižnico <literal>ScriptForge</literal>:"
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id411700851985942\n"
+"help.text"
+msgid "The <literal>Dataset</literal> service is invoked using the <literal>CreateDataset</literal> method, which can be called either from a <literal>Database</literal> service instance or from another <literal>Dataset</literal> instance."
+msgstr "Storitev <literal>Dataset</literal> prikličete z uporabo metode <literal>CreateDataset</literal>, ki jo lahko kličete iz instance storitve <literal>Database</literal> ali iz druge instance <literal>Dataset</literal>."
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id771700853155061\n"
+"help.text"
+msgid "The following example creates a <literal>Dataset</literal> from the table \"Customers\" stored in a database file."
+msgstr "Naslednji primer ustvari <literal>Dataset</literal> iz tabele »Stranke«, shranjene v datoteki zbirke podatkov."
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"bas_id491701125551393\n"
+"help.text"
+msgid "oDataset = oDatabase.CreateDataset(\"Customers\")"
+msgstr "oDataset = oDatabase.CreateDataset(\"Stranke\")"
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id821701125782721\n"
+"help.text"
+msgid "Upon the creation of the <literal>Dataset</literal>, the current record is positioned before the first record."
+msgstr "Ob nastanku <literal>Dataset</literal> se trenutni zapis nahaja pred prvim zapisom."
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id171700853415555\n"
+"help.text"
+msgid "The example below creates a <literal>Dataset</literal> instance by filtering the original dataset."
+msgstr "Spodnji primer ustvari instanco storitve <literal>Dataset</literal> s filtriranjem izvirnega nabora podatkov."
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"pyc_id301701127357007\n"
+"help.text"
+msgid "dataset = database.CreateDataset(\"Customers\")"
+msgstr "dataset = database.CreateDataset(\"Stranke\")"
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"pyc_id181701127476970\n"
+"help.text"
+msgid "new_dataset = dataset.CreateDataset(filter = \"[City]='New York'\")"
+msgstr "new_dataset = dataset.CreateDataset(filter = \"[Kraj]='Ljubljana'\")"
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"hd_id351582885195476\n"
+"help.text"
+msgid "Properties"
+msgstr "Lastnosti"
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id41582885195836\n"
+"help.text"
+msgid "Name"
+msgstr "Ime"
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id31582885195372\n"
+"help.text"
+msgid "Readonly"
+msgstr "Samo za branje"
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id31582885195238\n"
+"help.text"
+msgid "Type"
+msgstr "Vrsta"
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id931582885195131\n"
+"help.text"
+msgid "Description"
+msgstr "Opis"
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id861582885655779\n"
+"help.text"
+msgid "No"
+msgstr "Ne"
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id581582885655885\n"
+"help.text"
+msgid "Returns <literal>True</literal> if the current record position is before the first record in the dataset, otherwise returns <literal>False</literal>."
+msgstr "Vrne <literal>True</literal>, če je trenutni položaj zapisa pred prvim zapisom v množici zapisov, sicer vrne <literal>False</literal>."
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id581582885655855\n"
+"help.text"
+msgid "Set this property to <literal>True</literal> to move the cursor to the beginning of the dataset. Setting this property to <literal>False</literal> is ignored."
+msgstr "Nastavite to lastnost na <literal>True</literal>, da pomaknete kazalko na začetek nabora podatkov. Nastavljanje te lastnosti na <literal>False</literal> je prezrto."
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id861582885655669\n"
+"help.text"
+msgid "Yes"
+msgstr "Da"
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id271582885623525\n"
+"help.text"
+msgid "<literal>Dictionary</literal> service"
+msgstr "Storitev <literal>Dictionary</literal>"
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id581582885657885\n"
+"help.text"
+msgid "Returns a <literal>Dictionary</literal>  with the default values used for each field in the dataset. The fields or columns in the dataset are the keys in the dictionary."
+msgstr "Vrne <literal>Dictionary</literal> s privzetimi vrednostmi, uporabljenimi za vsako polje v naboru podatkov. Polja ali stolpci v naboru podatkov so ključi v slovarju."
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id581582885653105\n"
+"help.text"
+msgid "The database field types are converted to their corresponding Basic/Python data types. When the field type is undefined, the default value is <literal>Null</literal> if the field is nullable or <literal>Empty</literal>."
+msgstr "Vrste polj podatkovne zbirke se pretvorijo v ustrezne podatkovne vrste Basic/Python. Če je vrsta polja nedefinirana, je privzeta vrednost <literal>Null</literal>, če je polje mogoče izničiti, ali <literal>Empty</literal>."
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id861582885655710\n"
+"help.text"
+msgid "No"
+msgstr "Ne"
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id581582885611885\n"
+"help.text"
+msgid "Returns <literal>True</literal> if the current record position is after the last record in the dataset, otherwise returns <literal>False</literal>."
+msgstr "Vrne <literal>True</literal>, če je trenutni položaj zapisa po zadnjem zapisu v množici zapisov, sicer vrne <literal>False</literal>."
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id581582885609855\n"
+"help.text"
+msgid "Set this property to <literal>True</literal> to move the cursor to the end of the dataset. Setting this property to <literal>False</literal> is ignored."
+msgstr "Nastavite to lastnost na <literal>True</literal>, da pomaknete kazalko na konec nabora podatkov. Nastavljanje te lastnosti na <literal>False</literal> je prezrto."
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id861582885655205\n"
+"help.text"
+msgid "Yes"
+msgstr "Da"
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id581582885655369\n"
+"help.text"
+msgid "Returns an <literal>Array</literal> containing the names of all fields in the dataset."
+msgstr "Vrne polje <literal>Array</literal> z imeni vseh polj v naboru podatkov."
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id861582885655966\n"
+"help.text"
+msgid "Yes"
+msgstr "Da"
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id581582885655812\n"
+"help.text"
+msgid "Returns the filter applied in addition to the eventual <literal>WHERE</literal> clause(s) in the initial SQL statement. This property is expressed as a <literal>WHERE</literal> clause without the \"WHERE\" keyword."
+msgstr "Vrne uveljavljen filter poleg morebitnih stavkov <literal>WHERE</literal> v začetnem ukazu SQL. Ta lastnost je izražena kot ukaz <literal>WHERE</literal> brez ključne besede »WHERE«."
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id861582885655212\n"
+"help.text"
+msgid "Yes"
+msgstr "Da"
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id581582885655344\n"
+"help.text"
+msgid "Returns the ordering clause that replaces the eventual <literal>ORDER BY</literal> clause present in the initial SQL statement. This property is expressed as a <literal>ORDER BY</literal> clause without the \"ORDER BY\" keywords."
+msgstr "Vrne ukaz razvrščanja, ki zamenja morebitni stavek <literal>ORDER BY</literal>, prisoten v začetnem ukazu SQL. Ta lastnost je izražena kot ukaz <literal>ORDER BY</literal> brez ključne besede »ORDER BY«."
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id861582885655788\n"
+"help.text"
+msgid "Yes"
+msgstr "Da"
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id271582885655522\n"
+"help.text"
+msgid "<literal>Database</literal> service"
+msgstr "Storitev <literal>Database</literal>"
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id581582885655062\n"
+"help.text"
+msgid "Returns the <literal>Database</literal> instance corresponding to the parent database of the current dataset."
+msgstr "Vrne instanco storitve <literal>Database</literal>, ki ustreza nadrejeni zbirki podatkov trenutnega nabora podatkov."
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id861582885650968\n"
+"help.text"
+msgid "Yes"
+msgstr "Da"
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id581582885656472\n"
+"help.text"
+msgid "Returns the exact number of records in the dataset."
+msgstr "Vrne natanko število zapisov v naboru podatkov."
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id581582885656491\n"
+"help.text"
+msgid "Note that the evaluation of this property implies browsing the whole dataset, which may be costly depending on the dataset size."
+msgstr "Upoštevajte, da je ovrednotenje te lastnosti implicira brskanje po celem naboru podatkov, kar lahko predstavlja visok strošek glede na velikost nabora podatkov."
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id861582886340968\n"
+"help.text"
+msgid "Yes"
+msgstr "Da"
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id581582884026472\n"
+"help.text"
+msgid "Returns the number of the current record starting at 1. Returns 0 if this property is unknown."
+msgstr "Vrne številko trenutnega zapisa, začenši z 1. Vrne 0, če ta lastnosti ni znana."
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id861582886349968\n"
+"help.text"
+msgid "Yes"
+msgstr "Da"
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id581582884023472\n"
+"help.text"
+msgid "Returns the source of the dataset. It can be either a table name, a query name or a SQL statement."
+msgstr "Vrne vir nabora podatkov. To je lahko ime tabele, ime poizvedbe ali izjava SQL."
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id861582886352968\n"
+"help.text"
+msgid "Yes"
+msgstr "Da"
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id581582884295472\n"
+"help.text"
+msgid "Returns the source of the dataset. It can be one of the following string values: <literal>TABLE</literal>, <literal>QUERY</literal> or <literal>SQL</literal>."
+msgstr "Vrne vir nabora podatkov. To je lahko niz z eno od naslednjih vrednosti: <literal>TABLE</literal>, <literal>QUERY</literal> in <literal>SQL</literal>."
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id861582886368268\n"
+"help.text"
+msgid "Yes"
+msgstr "Da"
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id581582884255372\n"
+"help.text"
+msgid "Returns an <literal>Array</literal> containing the names of the fields of the dataset that are updatable."
+msgstr "Vrne polje <literal>Array</literal> z imeni polj nabora podatkov, ki jih je moč posodobiti."
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id861582886302268\n"
+"help.text"
+msgid "Yes"
+msgstr "Da"
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id581582884370372\n"
+"help.text"
+msgid "Returns a <literal>Dictionary</literal> containing the pairs (field name: value) of the current record in the dataset."
+msgstr "Vrne <literal>Dictionary</literal> s pari (ime polja: vrednost) trenutnega zapisa v naboru podatkov."
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id861582886325668\n"
+"help.text"
+msgid "Yes"
+msgstr "Da"
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id271582887376762\n"
+"help.text"
+msgid "<literal>UNO</literal> object"
+msgstr "Predmet <literal>UNO</literal>"
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id581582884392072\n"
+"help.text"
+msgid "Returns the <link href=\"https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1sdb_1_1RowSet.html\">com.sun.star.sdb.RowSet</link> UNO object representing the dataset."
+msgstr "Vrne predmet UNO <link href=\"https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1sdb_1_1RowSet.html\">com.sun.star.sdb.RowSet</link>, ki predstavlja nabor podatkov."
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id651606319520519\n"
+"help.text"
+msgid "List of Methods in the Dataset Service"
+msgstr "Seznam metod v storitvi Dataset"
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id93158919969864\n"
+"help.text"
+msgid "Closes the current dataset. This method returns <literal>True</literal> when successful."
+msgstr "Zapre trenutni nabor podatkov. Metoda vrne <literal>True</literal>, če uspe."
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id781701179217081\n"
+"help.text"
+msgid "It is recommended to close the dataset after its use to free resources."
+msgstr "Priporočamo, da po uporabi nabora podatkov le tega zaprete, da sprostite vire."
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id93158919343864\n"
+"help.text"
+msgid "Returns a <literal>Dataset</literal> service instance from an existing dataset by applying the specified filter and order by statements."
+msgstr "Vrne instanco storitve <literal>Dataset</literal> iz obstoječega nabora podatkov z uveljavljanjem določenega filtra in ukazov za razvrščanje."
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id381701012509515\n"
+"help.text"
+msgid "<emph>filter</emph>: Specifies the condition that records must match to be included in the returned dataset. This argument is expressed as a SQL <literal>WHERE</literal> statement without the \"WHERE\" keyword. If this argument is not specified, then the filter used in the current dataset is applied, otherwise the current filter is replaced by this argument."
+msgstr "<emph>filter</emph>: določa pogoj, ki ga morajo izpolnjevati zapisi, da so vključeni v vrnjeni nabor podatkov. Ta argument je izražen kot ukaz SQL <literal>WHERE</literal> brez ključne besede »WHERE«. Če ta argument ni naveden, potem se uveljavi filter, uporabljen v trenutnem naboru podatkov, sicer se trenutni filter nadomesti s tem argumentom."
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id381701012563515\n"
+"help.text"
+msgid "<emph>orderby</emph>: Specifies the ordering of the dataset as a SQL <literal>ORDER BY</literal> statement without the \"ORDER BY\" keyword. If this argument is not specified, then the sorting order used in the current dataset is applied, otherwise the current sorting order is replaced by this argument."
+msgstr "<emph>orderby</emph>: določa razvrstitev nabora podatkov kot ukaz SQL <literal>ORDER BY</literal> brez ključne besede »ORDER BY«. Če ta argument ni naveden, potem se uveljavi zaporedje razvrščanja kot v trenutnem naboru podatkov, sicer trenutno zaporedje razvrščanja nadomesti ta argument."
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"pyc_id221701180362978\n"
+"help.text"
+msgid "new_dataset = dataset.CreateDataset(filter = \"\")"
+msgstr "new_dataset = dataset.CreateDataset(filter = \"\")"
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"pyc_id581701180363338\n"
+"help.text"
+msgid "new_dataset = dataset.CreateDataset(filter = \"[Name] = 'John'\")"
+msgstr "new_dataset = dataset.CreateDataset(filter = \"[Ime] = 'Janez'\")"
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"pyc_id261701180365275\n"
+"help.text"
+msgid "new_dataset = dataset.CreateDataset(filter = \"[Name] LIKE 'A'\")"
+msgstr "new_dataset = dataset.CreateDataset(filter = \"[Ime] LIKE 'A'\")"
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"pyc_id481701180365786\n"
+"help.text"
+msgid "new_dataset = dataset.CreateDataset(filter = f\"({dataset.Filter}) AND [Name] LIKE 'A'\")"
+msgstr "new_dataset = dataset.CreateDataset(filter = f\"({dataset.Filter}) AND [Ime] LIKE 'A'\")"
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id93158919961074\n"
+"help.text"
+msgid "Deletes the current record from the dataset. This method returns <literal>True</literal> when successful."
+msgstr "Izbriše trenutni zapis iz nabora podatkov. Ta metoda vrne <literal>True</literal>, če uspe."
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id101701180833688\n"
+"help.text"
+msgid "After this operation the cursor is positioned at the record immediately after the deleted record. If the deleted record is the last in the dataset, then the cursor is positioned after it and the property <literal>EOF</literal> returns <literal>True</literal>."
+msgstr "Po tej operaciji je kazalec postavljen na zapis neposredno za izbrisanim zapisom. Če je izbrisani zapis zadnji v naboru podatkov, potem se kazalec postavi za njim in lastnost <literal>EOF</literal> vrne <literal>True</literal>."
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id93158955243864\n"
+"help.text"
+msgid "Exports the value of a binary field of the current record to the specified file."
+msgstr "Izvozi vrednost dvojiškega polja trenutnega zapisa v navedeno datoteko."
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id171701181928026\n"
+"help.text"
+msgid "If the specified field is not binary or if it contains no data, then the output file is not created."
+msgstr "Če navedeno polje ni dvojiško ali ne vsebuje podatkov, izhodna datoteka ne bo ustvarjena."
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id381701012500605\n"
+"help.text"
+msgid "<emph>fieldname</emph>: The name of the binary field to be exported, as a case-sensitive string."
+msgstr "<emph>fieldname</emph>: ime dvojiškega polja, ki bo izvoženo; niz, ki razlikuje med velikimi in malimi črkami."
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id381701012563717\n"
+"help.text"
+msgid "<emph>filename</emph>: The complete path to the file to be created using the notation defined in the <literal>FileSystem</literal>.<literal>FileNaming</literal> property."
+msgstr "<emph>filename</emph>: polna pot do datoteke, ki jo želite ustvariti; slediti mora zapisu v lastnosti <literal>FileSystem</literal>.<literal>FileNaming</literal>."
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id417011815228395\n"
+"help.text"
+msgid "<emph>overwrite</emph>: Set this argument to <literal>True</literal> to allow the destination file to be overwritten (Default = <literal>False</literal>)."
+msgstr "<emph>overwrite</emph>: nastavite ta argument na <literal>True</literal>, da je ciljno datoteko možno prepisati (privzeta vrednost je <literal>False</literal>)."
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id1001701183010649\n"
+"help.text"
+msgid "In the example below the dataset contains a field named \"Picture\" that shall be exported to an image file."
+msgstr "V spodnjem primeru nabor podatkov vsebuje polje »Slika«, ki naj se izvozi v slikovno datoteko."
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"bas_id191701180096457\n"
+"help.text"
+msgid "oDataset.ExportValueToFile(\"Picture\", \"C:\\my_image.png\", True)"
+msgstr "oDataset.ExportValueToFile(\"Slika\", \"C:\\moja_slika.png\", True)"
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"pyc_id221701180362303\n"
+"help.text"
+msgid "dataset.ExportValueToFile(\"Picture\", r\"C:\\my_image.png\", True)"
+msgstr "dataset.ExportValueToFile(\"Slika\", r\"C:\\moja_slika.png\", True)"
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id93158919349654\n"
+"help.text"
+msgid "Returns the contents of the dataset in a 2-dimensional array, starting from the first record after the current record."
+msgstr "Vrne vsebino nabora podatkov v dvodimenzionalnem polju, začenši s prvim zapisom po trenutnem zapisu."
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id86170118381308\n"
+"help.text"
+msgid "After execution, the cursor is positioned at the row that was last read or after the last record in the dataset, in which case the <literal>EOF</literal> property returns <literal>True</literal>."
+msgstr "Po izvedbi se kazalec nahaja pri vrstici, ki je bila nazadnje prebrana ali za zadnjim zapisom v naboru podatkov, v tem primeru lastnost <literal>EOF</literal> vrne <literal>True</literal>."
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id86170118381410\n"
+"help.text"
+msgid "This method can be used to read data from the dataset in chunks, whose size is defined by the <literal>maxrows</literal> argument."
+msgstr "Ta metoda pošlje vsebino dokumenta privzetemu tiskalniku ali tiskalniku, ki ga določa metoda <literal>SetPrinter</literal>."
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id741701183770602\n"
+"help.text"
+msgid "The returned array will always have two dimensions, even if the dataset contains a single column and a single record."
+msgstr "Vrnjeno polje bo imelo vedno dve dimenziji, tudi če nabor podatkov vsebuje en sam stolpec in en sam zapis."
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id381701010547515\n"
+"help.text"
+msgid "<emph>header</emph>: Set this argument to <literal>True</literal> to make the first entry in the <literal>Array</literal> contain the column headers (Default = <literal>False</literal>)."
+msgstr "<emph>header</emph>: nastavite ta argument na <literal>True</literal>, da bo prvi vnos v polju <literal>Array</literal> vseboval glave stolpcev (privzeta vrednost je <literal>False</literal>)."
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id381701012520715\n"
+"help.text"
+msgid "<emph>maxrows</emph>: Define the maximum number of records to be returned. If the number of existing records is smaller than <literal>maxrows</literal>, then the returned array will have only the existing records. Leave this argument blank or set it to zero to return all rows in the dataset (Default = 0)"
+msgstr "<emph>maxrows</emph>: določite največje število zapisov, ki bodo vrnjeni. Če je število obstoječih zapisov manjše kot <literal>maxrows</literal>, bo vrnjeno polje imelo samo obstoječe zapise. Pustite ta argument prazen ali ga nastavite na nič, da vrne vse vrstice v naboru podatkov (privzeta vrednost je 0)."
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id171701202610657\n"
+"help.text"
+msgid "The following example reads a dataset in chunks of 100 rows until all the dataset has been read."
+msgstr "Naslednji primer prebere nabor podatkov v kosih po 100 vrstic, dokler ni prebran celoten nabor podatkov."
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id93190955243864\n"
+"help.text"
+msgid "Returns the value of the specified field from the current record of the dataset."
+msgstr "Vrne vrednost navedenega polja od trenutnega zapisa nabora podatkov."
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id171701181922516\n"
+"help.text"
+msgid "If the specified field is binary, then its length is returned."
+msgstr "Če navedeno polje ni dvojiško, vrne njegovo dolžino."
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id381701012554805\n"
+"help.text"
+msgid "<emph>fieldname</emph>: The name of the field to be returned, as a case-sensitive string."
+msgstr "<emph>fieldname</emph>: ime polja, ki bo vrnjeno, kot niz; razlikuje med velikimi in malimi črkami."
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"bas_id191701180036057\n"
+"help.text"
+msgid "currId = oDataset.GetValue(FieldName := \"ID\")"
+msgstr "currId = oDataset.GetValue(FieldName := \"ID\")"
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"pyc_id221701180366903\n"
+"help.text"
+msgid "curr_id = dataset.GetValue(fieldname = \"ID\")"
+msgstr "curr_id = dataset.GetValue(fieldname = \"ID\")"
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id93190998043864\n"
+"help.text"
+msgid "Inserts a new record at the end of the dataset and initialize its fields with the specified values."
+msgstr "Vstavi nov zapis na konec nabora podatkov in inicializira njegova polja z navedenimi vrednostmi."
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id941701206804894\n"
+"help.text"
+msgid "If the primary key of the dataset is an auto value, then this method returns the primary key value of the new record. Otherwise, the method will return 0 (when successful) or -1 (when not successful)."
+msgstr "Če je primarni ključ nabora podatkov samodejna vrednost, ta metoda vrne vrednost primarnega ključa novega zapisa. Sicer metoda vrne 0 (če je uspešna) ali -1 (če ni uspešna)."
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id51701203344601\n"
+"help.text"
+msgid "Updatable fields with unspecified values are initialized with their default values."
+msgstr "Polja, ki jih je moč posodobiti z nenavedenimi vrednostmi, se inicializirajo s svojimi privzetimi vrednostmi."
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id171701181920016\n"
+"help.text"
+msgid "If the specified field is binary, then its length is returned."
+msgstr "Če navedeno polje ni dvojiško, vrne njegovo dolžino."
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id381701012511805\n"
+"help.text"
+msgid "<emph>pvargs</emph>: A <literal>Dictionary</literal> containing pairs of field names and their respective values. Alternatively, an even number of arguments can be specified alternating field names (as a <literal>String</literal>) and their values."
+msgstr "<emph>pvargs</emph>: <literal>Dictionary</literal>, ki vsebuje pare imen polj in njihovih vrednosti. Namesto tega lahko navedete sodo število argumentov, kjer se izmenjujejo imena polj (kot nizi <literal>String</literal>) in njihove vrednosti."
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id641701259882955\n"
+"help.text"
+msgid "Consider a table named \"Customers\" with 4 fields: \"ID\" (<literal>BigInt</literal>, auto value and primary key), \"Name\" (<literal>VarChar</literal>), \"Age\" (<literal>Integer</literal>), \"City\" (<literal>VarChar</literal>)."
+msgstr "Predstavljajte si tabelo »Stranke« s 4 polji: »ID« (<literal>BigInt</literal>, samodejna vrednost in primarni ključ), »Ime« (<literal>VarChar</literal>), »Starost« (<literal>Integer</literal>), »Kraj« (<literal>VarChar</literal>)."
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id701701205243738\n"
+"help.text"
+msgid "The example below inserts a new record into this dataset using a <literal>Dictionary</literal>."
+msgstr "Spodnji primer vstavi nov zapis v ta nabor podatkov z uporabo <literal>Dictionary</literal>."
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"bas_id131701260037206\n"
+"help.text"
+msgid "oDataset = oDatabase.CreateDataset(\"Customers\")"
+msgstr "oDataset = oDatabase.CreateDataset(\"Stranke\")"
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"bas_id171701260037639\n"
+"help.text"
+msgid "oNewData.Add(\"Name\", \"John\")"
+msgstr "oNewData.Add(\"Ime\", \"Janez\")"
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"bas_id641701260037815\n"
+"help.text"
+msgid "oNewData.Add(\"Age\", 50)"
+msgstr "oNewData.Add(\"Starost\", 50)"
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"bas_id401701260038016\n"
+"help.text"
+msgid "oNewData.Add(\"City\", \"Chicago\")"
+msgstr "oNewData.Add(\"Kraj\", \"Celje\")"
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id671701260191972\n"
+"help.text"
+msgid "The same result can be achieved by passing all pairs of fields and values as arguments:"
+msgstr "Enak rezultat lahko dosežemo s podajanjem vseh parov polj in vrednosti kot argumentov:"
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"bas_id91701260241574\n"
+"help.text"
+msgid "oDataset.Insert(\"Name\", \"John\", \"Age\", 50, \"City\", \"Chicago\")"
+msgstr "oDataset.Insert(\"Ime\", \"Janez\", \"Starost\", 50, \"Kraj\", \"Celje\")"
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"pyc_id401701260819750\n"
+"help.text"
+msgid "dataset = database.CreateDataset(\"Customers\")"
+msgstr "dataset = database.CreateDataset(\"Stranke\")"
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"pyc_id181701260820135\n"
+"help.text"
+msgid "new_data = {\"Name\": \"John\", \"Age\": 30, \"City\": \"Chicago\"}"
+msgstr "new_data = {\"Ime\": \"Janez\", \"Starost\": 30, \"Kraj\": \"Celje\"}"
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"pyc_id651701260820486\n"
+"help.text"
+msgid "new_id = dataset.Insert(new_data)"
+msgstr "new_id = dataset.Insert(new_data)"
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id971701261086678\n"
+"help.text"
+msgid "The following calls are accepted in Python:"
+msgstr "Naslednji klici so sprejeti v Pythonu:"
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"pyc_id101701260954243\n"
+"help.text"
+msgid "dataset.Insert(\"Name\", \"John\", \"Age\", 50, \"City\", \"Chicago\")"
+msgstr "dataset.Insert(\"Ime\", \"Janez\", \"Starost\", 50, \"Kraj\", \"Celje\")"
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"pyc_id131701261111943\n"
+"help.text"
+msgid "dataset.Insert(Name = \"John\", Age = 50, City = \"Chicago\")"
+msgstr "dataset.Insert(Ime = \"Janez\", Starost = 50, Kraj = \"Celje\")"
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id93190955243874\n"
+"help.text"
+msgid "Moves the dataset cursor to the first (with <literal>MoveFirst</literal>) or to the last (with <literal>MoveLast</literal>) record."
+msgstr "Premakne kazalec nabora podatkov na prvi (z <literal>MoveFirst</literal>) ali zadnji (z <literal>MoveLast</literal>) zapis."
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id411701262609847\n"
+"help.text"
+msgid "This method returns <literal>True</literal> when successful."
+msgstr "Ta metoda vrne <literal>True</literal>, če uspe."
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id61701280052346\n"
+"help.text"
+msgid "Deleted records are ignored by this method."
+msgstr "Ta metoda prezre izbrisane zapise."
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"bas_id191701180876057\n"
+"help.text"
+msgid "oDataset.MoveFirst()"
+msgstr "oDataset.MoveFirst()"
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"pyc_id221701180096903\n"
+"help.text"
+msgid "dataset.MoveFirst()"
+msgstr "dataset.MoveFirst()"
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id93190955243345\n"
+"help.text"
+msgid "Moves the dataset cursor forward (with <literal>MoveNext</literal>) or backwards (with <literal>MovePrevious</literal>) by a given number of records."
+msgstr "Premakne kazalec nabora podatkov naprej (z <literal>MoveNext</literal>) ali nazaj (z <literal>MovePrevious</literal>) za dano število zapisov."
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id411701262609872\n"
+"help.text"
+msgid "This method returns <literal>True</literal> when successful."
+msgstr "Ta metoda vrne <literal>True</literal>, če uspe."
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id617012800527025\n"
+"help.text"
+msgid "Deleted records are ignored by this method."
+msgstr "Ta metoda prezre izbrisane zapise."
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id381701012554644\n"
+"help.text"
+msgid "<emph>offset</emph>: The number of records by which the cursor shall be moved forward or backwards. This argument may be a negative value (Default = 1)."
+msgstr "<emph>offset</emph>: število zapisov, za kolikor se želite pomakniti naprej ali nazaj. Argument ima lahko negativno vrednost (privzeto = 1)."
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"bas_id191701180036941\n"
+"help.text"
+msgid "oDataset.MoveNext()"
+msgstr "oDataset.MoveNext()"
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"bas_id951701262692898\n"
+"help.text"
+msgid "oDataset.MoveNext(5)"
+msgstr "oDataset.MoveNext(5)"
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"pyc_id221701180366885\n"
+"help.text"
+msgid "dataset.MoveNext()"
+msgstr "dataset.MoveNext()"
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"pyc_id601701262720188\n"
+"help.text"
+msgid "dataset.MoveNext(5)"
+msgstr "dataset.MoveNext(5)"
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id93190955243383\n"
+"help.text"
+msgid "Reloads the dataset from the database. The properties <literal>Filter</literal> and <literal>OrderBy</literal> may be defined when calling this method."
+msgstr "Ponovno naloži nabor podatkov iz zbirke podatkov. Lastnosti <literal>Filter</literal> in <literal>OrderBy</literal> sta lahko definirani pri klicu te metode."
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id411701262522872\n"
+"help.text"
+msgid "This method returns <literal>True</literal> when successful."
+msgstr "Ta metoda vrne <literal>True</literal>, če uspe."
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id681701263394717\n"
+"help.text"
+msgid "Reloading the dataset is useful when records have been inserted to or deleted from the database. Note that the methods <literal>CreateDataset</literal> and <literal>Reload</literal> perform similar functions, however <literal>Reload</literal> reuses the same <literal>Dataset</literal> class instance."
+msgstr "Ponovno nalaganje nabora podatkov je uporabno, ko so bili v zbirko podatkov vstavljeni ali izbrisani zapisi. Upoštevajte, da metodi <literal>CreateDataset</literal> in <literal>Reload</literal> izvajata podobni funkciji, medtem ko <literal>Reload</literal> ponovno uporabi iste instance razreda <literal>Dataset</literal>."
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id381701012509626\n"
+"help.text"
+msgid "<emph>filter</emph>: Specifies the condition that records must match to be included in the returned dataset. This argument is expressed as a SQL <literal>WHERE</literal> statement without the \"WHERE\" keyword. If this argument is not specified, then the filter used in the current dataset is applied, otherwise the current filter is replaced by this argument."
+msgstr "<emph>filter</emph>: določa pogoj, ki ga morajo izpolnjevati zapisi, da so vključeni v vrnjeni nabor podatkov. Ta argument je izražen kot ukaz SQL <literal>WHERE</literal> brez ključne besede »WHERE«. Če ta argument ni naveden, potem se uveljavi filter, uporabljen v trenutnem naboru podatkov, sicer se trenutni filter nadomesti s tem argumentom."
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id381701012563914\n"
+"help.text"
+msgid "<emph>orderby</emph>: Specifies the ordering of the dataset as a SQL <literal>ORDER BY</literal> statement without the \"ORDER BY\" keyword. If this argument is not specified, then the sorting order used in the current dataset is applied, otherwise the current sorting order is replaced by this argument."
+msgstr "<emph>orderby</emph>: določa razvrstitev nabora podatkov kot ukaz SQL <literal>ORDER BY</literal> brez ključne besede »ORDER BY«. Če ta argument ni naveden, potem se uveljavi zaporedje razvrščanja kot v trenutnem naboru podatkov, sicer trenutno zaporedje razvrščanja nadomesti ta argument."
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"bas_id191701180036128\n"
+"help.text"
+msgid "oDataset.Reload()"
+msgstr "oDataset.Reload()"
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"bas_id951701262692252\n"
+"help.text"
+msgid "oDataset.Reload(Filter := \"[Name] = 'John'\", OrderBy := \"Age\")"
+msgstr "oDataset.Reload(Filter := \"[Ime] = 'Janez'\", OrderBy := \"Starost\")"
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"pyc_id221701180367255\n"
+"help.text"
+msgid "dataset.Reload()"
+msgstr "dataset.Reload()"
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"pyc_id601701262720097\n"
+"help.text"
+msgid "dataset.Reload(Filter = \"[Name] = 'John'\", OrderBy = \"Age\""
+msgstr "dataset.Reload(Filter = \"[Ime] = 'Janez'\", OrderBy = \"Starost\""
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id93190955060783\n"
+"help.text"
+msgid "Update the values of the specified fields in the current record."
+msgstr "Posodobite vrednosti navedenih polj v trenutnem zapisu."
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id411701262529574\n"
+"help.text"
+msgid "This method returns <literal>True</literal> when successful."
+msgstr "Ta metoda vrne <literal>True</literal>, če uspe."
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id381701012546805\n"
+"help.text"
+msgid "<emph>pvargs</emph>: A <literal>Dictionary</literal> containing pairs of field names and their respective values. Alternatively, an even number of arguments can be specified alternating field names (as a <literal>String</literal>) and their values."
+msgstr "<emph>pvargs</emph>: <literal>Dictionary</literal>, ki vsebuje pare imen polj in njihovih vrednosti. Namesto tega lahko navedete sodo število argumentov, kjer se izmenjujejo imena polj (kot nizi <literal>String</literal>) in njihove vrednosti."
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id791701264626511\n"
+"help.text"
+msgid "The example below updates the current record using a <literal>Dictionary</literal>."
+msgstr "Spodnji primer posodobi trenutni zapis z uporabo <literal>Dictionary</literal>."
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"bas_id617012650175222\n"
+"help.text"
+msgid "oNewValues = CreateScriptService(\"Dictionary\")"
+msgstr "oNewValues = CreateScriptService(\"Dictionary\")"
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"bas_id511701265017930\n"
+"help.text"
+msgid "oNewValues.Add(\"Age\", 51)"
+msgstr "oNewValues.Add(\"Starost\", 51)"
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"bas_id491701265018498\n"
+"help.text"
+msgid "oNewValues.Add(\"City\", \"New York\")"
+msgstr "oNewValues.Add(\"Kraj\", \"Ljubljana\")"
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"bas_id401701265027933\n"
+"help.text"
+msgid "oDataset.Update(oNewValues)"
+msgstr "oDataset.Update(oNewValues)"
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"par_id221701264980261\n"
+"help.text"
+msgid "The same result can be achieved by passing all pairs of fields and values as arguments:"
+msgstr "Enak rezultat lahko dosežemo s podajanjem vseh parov polj in vrednosti kot argumentov:"
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"bas_id191701180033508\n"
+"help.text"
+msgid "oDataset.Update(\"Age\", 51, \"City\", \"New York\")"
+msgstr "oDataset.Update(\"Starost\", 51, \"Kraj\", \"Ljubljana\")"
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"pyc_id221701180363025\n"
+"help.text"
+msgid "new_values = {\"Age\": 51, \"City\": \"New York\"}"
+msgstr "new_values = {\"Starost\": 51, \"Kraj\": \"Ljubljana\"}"
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"pyc_id601701262720082\n"
+"help.text"
+msgid "dataset.Update(new_values)"
+msgstr "dataset.Update(new_values)"
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"pyc_id761701265203650\n"
+"help.text"
+msgid "dataset.Update(\"Age\", 51, \"City\", \"New York\")"
+msgstr "dataset.Update(\"Starost\", 51, \"Kraj\", \"Ljubljana\")"
+
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"pyc_id141701265203921\n"
+"help.text"
+msgid "dataset.Update(Age = 51, City = \"New York\")"
+msgstr "dataset.Update(Starost = 51, Kraj = \"Ljubljana\")"
 
 #: sf_datasheet.xhp
 msgctxt ""
@@ -9695,7 +11239,7 @@ msgctxt ""
 "par_id421598178080993\n"
 "help.text"
 msgid "a Basic <link href=\"sbasic/shared/03104200.xhp\">Array</link> or Python tuple with 4 elements: (X, Y, width, height)"
-msgstr "<link href=\"sbasic/shared/03104200.xhp\">Array</link> v Basicu ali dvojica Python s 4 elementi: (X, Y, širina, višina)"
+msgstr "<link href=\"sbasic/shared/03104200.xhp\">Array</link> v Basicu ali dvojica Python s 4 elementi: (X, Y, širina, višina) ali"
 
 #: sf_dialog.xhp
 msgctxt ""
@@ -9742,7 +11286,7 @@ msgctxt ""
 "sf_dialog.xhp\n"
 "par_id951688460698125\n"
 "help.text"
-msgid "All properties and methods applicable to predefined dialogs are available for such new dialogs. In particular the series of <literal>CreateXXX()</literal> methods for the additionof new dialog controls."
+msgid "All properties and methods applicable to predefined dialogs are available for such new dialogs. In particular the series of <literal>CreateXXX()</literal> methods for the addition of new dialog controls."
 msgstr "Za taka nova pogovorna okna so na voljo vse lastnosti in metode, ki veljajo za vnaprej določena pogovorna okna. Zlasti vrsta metod <literal>CreateXXX()</literal> za dodajanje novih kontrolnikov pogovornim oknom."
 
 #: sf_dialog.xhp
@@ -10374,7 +11918,7 @@ msgctxt ""
 "sf_dialog.xhp\n"
 "par_id161584552357982\n"
 "help.text"
-msgid "Duplicate an existing control of any typein the actual dialog. The duplicated control is left unchanged and can be relocated."
+msgid "Duplicate an existing control of any type in the actual dialog. The duplicated control is left unchanged and can be relocated."
 msgstr "Podvoji obstoječi kontrolnik poljubne vrste v dejanskem pogovornem oknu. Podvojeni kontrolnik ostane nespremenjen in ga je moč premestiti."
 
 #: sf_dialog.xhp
@@ -10471,7 +12015,7 @@ msgctxt ""
 "par_id881591858229301\n"
 "help.text"
 msgid "a com.sun.star.awt.Rectangle [X, Y, Width, Height] object"
-msgstr "ali predmet pravokotnika com.sun.star.awt.Rectangle [X, Y, širina, višina]"
+msgstr "ali predmet pravokotnika com.sun.star.awt.Rectangle [X, Y, širina, višina]."
 
 #: sf_dialog.xhp
 msgctxt ""
@@ -10535,7 +12079,7 @@ msgctxt ""
 "par_id241688132526109\n"
 "help.text"
 msgid "<emph>Border</emph>: \"3D\" (default) or \"FLAT\" or \"NONE\""
-msgstr "<emph>Border</emph>: \"3D\" (privzeto) ali \"FLAT\" ali \"NONE\"."
+msgstr "<emph>Border</emph>: \"3D\" (privzeto), \"FLAT\" ali \"NONE\"."
 
 #: sf_dialog.xhp
 msgctxt ""
@@ -10556,22 +12100,6 @@ msgstr "<emph>LineCount</emph>: določa največje število vrstic, prikazanih v 
 #: sf_dialog.xhp
 msgctxt ""
 "sf_dialog.xhp\n"
-"bas_id571688391233995\n"
-"help.text"
-msgid "Set myComboBox = oDlg.CreateComboBox(\"ComboBox1\", Array(20, 20, 60, 15), Dropdown := True)"
-msgstr "Set myComboBox = oDlg.CreateComboBox(\"KombiPolje1\", Array(20, 20, 60, 15), Dropdown := True)"
-
-#: sf_dialog.xhp
-msgctxt ""
-"sf_dialog.xhp\n"
-"pyc_id681688391240490\n"
-"help.text"
-msgid "myComboBox = dlg.CreateComboBox('ComboBox1', (20, 20, 60, 15), Dropdown = True)"
-msgstr "myComboBox = dlg.CreateComboBox('KombiPolje1', (20, 20, 60, 15), Dropdown = True)"
-
-#: sf_dialog.xhp
-msgctxt ""
-"sf_dialog.xhp\n"
 "par_id991591005776500\n"
 "help.text"
 msgid "Create a new control of type <literal>CurrencyField</literal> in the current dialog."
@@ -10583,7 +12111,7 @@ msgctxt ""
 "par_id511688132750220\n"
 "help.text"
 msgid "<emph>Border</emph>: \"3D\" (default) or \"FLAT\" or \"NONE\""
-msgstr "<emph>Border</emph>: \"3D\" (privzeto) ali \"FLAT\" ali \"NONE\"."
+msgstr "<emph>Border</emph>: \"3D\" (privzeto), \"FLAT\" ali \"NONE\"."
 
 #: sf_dialog.xhp
 msgctxt ""
@@ -10623,7 +12151,7 @@ msgctxt ""
 "par_id321688132753003\n"
 "help.text"
 msgid "<emph>Accuracy</emph>: specifies the decimal accuracy. Default = 2 decimal digits"
-msgstr "<emph>Accuracy</emph>: določa natančnost v decimalkah (privzeto = 2 decimalni mesti)."
+msgstr "<emph>Accuracy</emph>: določa natančnost v decimalkah. Privzeta vrednost je 2 decimalni mesti."
 
 #: sf_dialog.xhp
 msgctxt ""
@@ -10639,7 +12167,7 @@ msgctxt ""
 "par_id831688133418579\n"
 "help.text"
 msgid "<emph>Border</emph>: \"3D\" (default) or \"FLAT\" or \"NONE\""
-msgstr "<emph>Border</emph>: \"3D\" (privzeto) ali \"FLAT\" ali \"NONE\"."
+msgstr "<emph>Border</emph>: \"3D\" (privzeto), \"FLAT\" ali \"NONE\"."
 
 #: sf_dialog.xhp
 msgctxt ""
@@ -10679,7 +12207,7 @@ msgctxt ""
 "par_id1001688133702877\n"
 "help.text"
 msgid "<emph>Border</emph>: \"3D\" (default) or \"FLAT\" or \"NONE\""
-msgstr "<emph>Border</emph>: \"3D\" (privzeto) ali \"FLAT\" ali \"NONE\""
+msgstr "<emph>Border</emph>: \"3D\" (privzeto), \"FLAT\" ali \"NONE\"."
 
 #: sf_dialog.xhp
 msgctxt ""
@@ -10711,7 +12239,7 @@ msgctxt ""
 "par_id781688134809419\n"
 "help.text"
 msgid "<emph>Border</emph>: \"NONE\" (default) or \"FLAT\" or \"3D\""
-msgstr "<emph>Border</emph>: \"3D\" (privzeto), \"FLAT\" ali \"NONE\"."
+msgstr "<emph>Border</emph>: \"NONE\" (privzeto), \"FLAT\" ali \"3D\"."
 
 #: sf_dialog.xhp
 msgctxt ""
@@ -10751,7 +12279,7 @@ msgctxt ""
 "par_id561688135183954\n"
 "help.text"
 msgid "<emph>Border</emph>: \"3D\" (default) or \"FLAT\" or \"NONE\""
-msgstr "<emph>Border</emph>: \"3D\" (privzeto) ali \"FLAT\" ali \"NONE\"."
+msgstr "<emph>Border</emph>: \"3D\" (privzeto), \"FLAT\" ali \"NONE\"."
 
 #: sf_dialog.xhp
 msgctxt ""
@@ -10799,7 +12327,7 @@ msgctxt ""
 "par_id731688542076471\n"
 "help.text"
 msgid "<emph>Border</emph>: \"NONE\" (default) or \"FLAT\" or \"3D\""
-msgstr "<emph>Border</emph>: \"NONE\" (privzeto) ali \"FLAT\" ali \"3D\"."
+msgstr "<emph>Border</emph>: \"NONE\" (privzeto), \"FLAT\" ali \"3D\"."
 
 #: sf_dialog.xhp
 msgctxt ""
@@ -10839,7 +12367,7 @@ msgctxt ""
 "par_id551688135418418\n"
 "help.text"
 msgid "<emph>Border</emph>: \"3D\" (default) or \"FLAT\" or \"NONE\""
-msgstr "<emph>Border</emph>: \"3D\" (privzeto) ali \"FLAT\" ali \"NONE\"."
+msgstr "<emph>Border</emph>: \"3D\" (privzeto), \"FLAT\" ali \"NONE\"."
 
 #: sf_dialog.xhp
 msgctxt ""
@@ -10863,7 +12391,7 @@ msgctxt ""
 "par_id1001688135548955\n"
 "help.text"
 msgid "<emph>Border</emph>: \"3D\" (default) or \"FLAT\" or \"NONE\""
-msgstr "<emph>Border</emph>: \"3D\" (privzeto) ali \"FLAT\" ali \"NONE\"."
+msgstr "<emph>Border</emph>: \"3D\" (privzeto), \"FLAT\" ali \"NONE\"."
 
 #: sf_dialog.xhp
 msgctxt ""
@@ -10903,7 +12431,7 @@ msgctxt ""
 "par_id841688135885946\n"
 "help.text"
 msgid "<emph>Border</emph>: \"3D\" (default) or \"FLAT\" or \"NONE\""
-msgstr "<emph>Border</emph>: \"3D\" (privzeto) ali \"FLAT\" ali \"NONE\"."
+msgstr "<emph>Border</emph>: \"3D\" (privzeto), \"FLAT\" ali \"NONE\"."
 
 #: sf_dialog.xhp
 msgctxt ""
@@ -10959,7 +12487,7 @@ msgctxt ""
 "par_id251688136173107\n"
 "help.text"
 msgid "<emph>Border</emph>: \"3D\" (default) or \"FLAT\" or \"NONE\""
-msgstr "<emph>Border</emph>: \"3D\" (privzeto) ali \"FLAT\" ali \"NONE\"."
+msgstr "<emph>Border</emph>: \"3D\" (privzeto), \"FLAT\" ali \"NONE\"."
 
 #: sf_dialog.xhp
 msgctxt ""
@@ -10967,7 +12495,7 @@ msgctxt ""
 "par_id631688136173778\n"
 "help.text"
 msgid "<emph>EditMask</emph>: a character code that determines what the user may enter<br/>Refer to <link href=\"https://wiki.documentfoundation.org/Documentation/DevGuide/Graphical_User_Interfaces#Pattern_Field\">Pattern_Field</link> in the wiki for more information."
-msgstr "<emph>EditMask</emph>: znakovna koda, ki določa, kaj lahko uporabnik vnese.<br/>Za več informacij glejte <link href=\"https://wiki.documentfoundation.org/Documentation/DevGuide/Graphical_User_Interfaces#Pattern_Field\">Pattern_Field</link> na wikiju."
+msgstr "<emph>EditMask</emph>: znakovna koda, ki določa, kaj lahko uporabnik vnese.<br/>Za več informacij glejte <link href=\"https://wiki.documentfoundation.org/Documentation/DevGuide/Graphical_User_Interfaces#Pattern_Field\">Pattern_Field</link> na wikiju (v angl.)."
 
 #: sf_dialog.xhp
 msgctxt ""
@@ -10991,7 +12519,7 @@ msgctxt ""
 "par_id551688136587329\n"
 "help.text"
 msgid "<emph>Border</emph>: \"3D\" (default) or \"FLAT\" or \"NONE\""
-msgstr "<emph>Border</emph>: \"3D\" (privzeto) ali \"FLAT\" ali \"NONE\"."
+msgstr "<emph>Border</emph>: \"3D\" (privzeto), \"FLAT\" ali \"NONE\"."
 
 #: sf_dialog.xhp
 msgctxt ""
@@ -11028,22 +12556,6 @@ msgstr "<emph>MultiLine</emph>: če je <literal>True</literal> (privzeta vrednos
 #: sf_dialog.xhp
 msgctxt ""
 "sf_dialog.xhp\n"
-"bas_id61688393673927\n"
-"help.text"
-msgid "Set myRadioButton = oDlg.CreateRadioButton(\"RadioButton1\", Array(20, 20, 60, 15), MultiLine := True)"
-msgstr "Set mojIzbirniGumb = oDlg.CreateRadioButton(\"IzbirniGumb1\", Array(20, 20, 60, 15), MultiLine := True)"
-
-#: sf_dialog.xhp
-msgctxt ""
-"sf_dialog.xhp\n"
-"pyc_id751688393681262\n"
-"help.text"
-msgid "myRadioButton = dlg.CreateRadioButton('RadioButton1', (20, 20, 60, 15), MultiLine = True)"
-msgstr "mojIzbirniGumb = dlg.CreateRadioButton('IzbirniGumb1', (20, 20, 60, 15), MultiLine = True)"
-
-#: sf_dialog.xhp
-msgctxt ""
-"sf_dialog.xhp\n"
 "par_id200591886886500\n"
 "help.text"
 msgid "Create a new control of type <literal>ScrollBar</literal> in the current dialog."
@@ -11063,7 +12575,7 @@ msgctxt ""
 "par_id341688136882960\n"
 "help.text"
 msgid "<emph>Border</emph>: \"3D\" (default) or \"FLAT\" or \"NONE\""
-msgstr "<emph>Border</emph>: \"3D\" (privzeto) ali \"FLAT\" ali \"NONE\"."
+msgstr "<emph>Border</emph>: \"3D\" (privzeto), \"FLAT\" ali \"NONE\"."
 
 #: sf_dialog.xhp
 msgctxt ""
@@ -11095,7 +12607,7 @@ msgctxt ""
 "par_id541688393982300\n"
 "help.text"
 msgid "<emph>Border</emph>: \"3D\" (default) or \"FLAT\" or \"NONE\""
-msgstr "<emph>Border</emph>: \"3D\" (privzeto) ali \"FLAT\" ali \"NONE\"."
+msgstr "<emph>Border</emph>: \"3D\" (privzeto), \"FLAT\" ali \"NONE\"."
 
 #: sf_dialog.xhp
 msgctxt ""
@@ -11143,7 +12655,7 @@ msgctxt ""
 "par_id281688394635114\n"
 "help.text"
 msgid "<emph>Border</emph>: \"3D\" (default) or \"FLAT\" or \"NONE\""
-msgstr "<emph>Border</emph>: \"3D\" (privzeto) ali \"FLAT\" ali \"NONE\"."
+msgstr "<emph>Border</emph>: \"3D\" (privzeto), \"FLAT\" ali \"NONE\"."
 
 #: sf_dialog.xhp
 msgctxt ""
@@ -11183,7 +12695,7 @@ msgctxt ""
 "par_id771688394821811\n"
 "help.text"
 msgid "<emph>Border</emph>: \"3D\" (default) or \"FLAT\" or \"NONE\""
-msgstr "<emph>Border</emph>: \"3D\" (privzeto) ali \"FLAT\" ali \"NONE\"."
+msgstr "<emph>Border</emph>: \"3D\" (privzeto), \"FLAT\" ali \"NONE\"."
 
 #: sf_dialog.xhp
 msgctxt ""
@@ -11215,23 +12727,7 @@ msgctxt ""
 "par_id241688394984562\n"
 "help.text"
 msgid "<emph>Border</emph>: \"3D\" (default) or \"FLAT\" or \"NONE\""
-msgstr "<emph>Border</emph>: \"3D\" (privzeto) ali \"FLAT\" ali \"NONE\"."
-
-#: sf_dialog.xhp
-msgctxt ""
-"sf_dialog.xhp\n"
-"bas_id941688395020850\n"
-"help.text"
-msgid "Set myTreeControl = oDlg.CreateTreeControl(\"TreeControl1\", Array(20, 20, 60, 15))"
-msgstr "Set mojDrevesniKontrolnik = oDlg.CreateTreeControl(\"DrevesniKontrolnik1\", Array(20, 20, 60, 15))"
-
-#: sf_dialog.xhp
-msgctxt ""
-"sf_dialog.xhp\n"
-"pyc_id721688395030169\n"
-"help.text"
-msgid "myTreeControl = dlg.CreateTreeControl('TreeControl1', (20, 20, 60, 15))"
-msgstr "mojDrevesniKontrolnik = dlg.CreateTreeControl('DrevesniKontrolnik1', (20, 20, 60, 15))"
+msgstr "<emph>Border</emph>: \"3D\" (privzeto), \"FLAT\" ali \"NONE\"."
 
 #: sf_dialog.xhp
 msgctxt ""
@@ -11415,7 +12911,7 @@ msgctxt ""
 "par_id321688543699637\n"
 "help.text"
 msgid "<emph>Increment</emph>: the difference between 2 successive tab indexes. Default = 1"
-msgstr "<emph>Increment</emph>: razlika med dvema zaporednima indeksoma tabulatorjev (privzeto = 1)."
+msgstr "<emph>Increment</emph>: razlika med dvema zaporednima indeksoma tabulatorke (privzeto = 1)."
 
 #: sf_dialog.xhp
 msgctxt ""
@@ -11424,22 +12920,6 @@ msgctxt ""
 "help.text"
 msgid "<literal>True</literal> when successful."
 msgstr "Vrne <literal>True</literal>, če uspe."
-
-#: sf_dialog.xhp
-msgctxt ""
-"sf_dialog.xhp\n"
-"bas_id791620301085031\n"
-"help.text"
-msgid "oDlg.OrderTabs(Array(\"myListBox\", \"myTextField\", \"myNumericField\"), Start := 10)"
-msgstr "oDlg.OrderTabs(Array(\"mojeSeznamskoPolje\", \"mojeBesedilnoPolje\", \"mojeStevilskoPolje\"), Start := 10)"
-
-#: sf_dialog.xhp
-msgctxt ""
-"sf_dialog.xhp\n"
-"pyc_id941620303073866\n"
-"help.text"
-msgid "dlg.OrderTabs(('myListBox', 'myTextField', 'myNumericField'), Start = 10)"
-msgstr "dlg.OrderTabs(('mojeSeznamskoPolje', 'mojeBesedilnoPolje', 'mojeStevilskoPolje'), Start = 10)"
 
 #: sf_dialog.xhp
 msgctxt ""
@@ -12396,14 +13876,6 @@ msgstr "Ne"
 #: sf_dialogcontrol.xhp
 msgctxt ""
 "sf_dialogcontrol.xhp\n"
-"par_id481687785271551\n"
-"help.text"
-msgid "Hyperlink"
-msgstr "Hiperpovezava"
-
-#: sf_dialogcontrol.xhp
-msgctxt ""
-"sf_dialogcontrol.xhp\n"
 "par_id1001598540024252\n"
 "help.text"
 msgid "The URL to open when the control is clicked."
@@ -13191,7 +14663,7 @@ msgctxt ""
 "par_id351687783159237\n"
 "help.text"
 msgid "All distances are expressed in <link href=\"text/sbasic/shared/00000002.xhp#AppFontUnits\">Map AppFont units</link> and are measured from the top-left corner of the parent dialog. Without arguments the method resizes the control to its \"preferred size\", a size adjusted depending on its actual content. Missing arguments are left unchanged."
-msgstr "Vse instance so izražene v <link href=\"text/sbasic/shared/00000002.xhp#AppFontUnits\">enotah Map AppFont</link> in se merijo od levega zgornjega kota nadrejenega pogovornega okna. Brez argumentov metoda spremeni velikost kontrolnika na njegovo \"želeno velikost\", ki se prilagodi glede na njegovo dejansko vsebino. Manjkajoči argumenti ostanejo nespremenjeni."
+msgstr "Vse instance so izražene v <link href=\"text/sbasic/shared/00000002.xhp#AppFontUnits\">enotah Map AppFont</link> in se merijo od levega zgornjega kota nadrejenega pogovornega okna. Brez argumentov metoda spremeni velikost kontrolnika na njegovo »želeno velikost«, ki se prilagodi glede na njegovo dejansko vsebino. Manjkajoči argumenti ostanejo nespremenjeni."
 
 #: sf_dialogcontrol.xhp
 msgctxt ""
@@ -14271,7 +15743,7 @@ msgctxt ""
 "par_id941589194576584\n"
 "help.text"
 msgid "Refer to <link href=\"text/sbasic/shared/03/sf_filesystem.xhp#virtual_fs\">this help page</link> to learn more on how to access and manipulate folders and files in the virtual file system of a %PRODUCTNAME file."
-msgstr "Glejte <link href=\"text/sbasic/shared/03/sf_filesystem.xhp#virtual_fs\">to stran pomoči</link>, da izveste več o načinih dostopa in ravnanja z mapami in datotekam v navideznem datotečnem sistemu dokumenta %PRODUCTNAME."
+msgstr "Glejte <link href=\"text/sbasic/shared/03/sf_filesystem.xhp#virtual_fs\">to stran pomoči</link>, da izveste več o načinih dostopa in ravnanja z mapami in datotekami v navideznem datotečnem sistemu dokumenta %PRODUCTNAME."
 
 #: sf_document.xhp
 msgctxt ""
@@ -14340,6 +15812,22 @@ msgstr "<literal>True</literal>, če je dokument dejansko v načinu samo za bran
 #: sf_document.xhp
 msgctxt ""
 "sf_document.xhp\n"
+"par_id201589196128733\n"
+"help.text"
+msgid "Yes"
+msgstr "Da"
+
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
+"par_id372699195028843\n"
+"help.text"
+msgid "List of available style families. Applicable to all document types except Base."
+msgstr "Seznam razpoložljivih družin slogov. Velja za vse vrste dokumentov, razen za Base."
+
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
 "par_id201589195028733\n"
 "help.text"
 msgid "No"
@@ -14390,8 +15878,32 @@ msgctxt ""
 "sf_document.xhp\n"
 "par_id881582885195976\n"
 "help.text"
-msgid "The UNO object <link href=\"https://api.libreoffice.org/docs/idl/ref/interfacecom_1_1sun_1_1star_1_1lang_1_1XComponent.html\"><literal>com.sun.star.lang.XComponent</literal></link> or <link href=\"https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1sdb_1_1OfficeDatabaseDocument.html\"><literal>com.sun.star.comp.dba.ODatabaseDocument</literal></link> representing the document"
-msgstr "Predmet UNO <link href=\"https://api.libreoffice.org/docs/idl/ref/interfacecom_1_1sun_1_1star_1_1lang_1_1XComponent.html\"><literal>com.sun.star.lang.XComponent</literal></link> ali <link href=\"https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1sdb_1_1OfficeDatabaseDocument.html\"><literal>com.sun.star.comp.dba.ODatabaseDocument</literal></link>, ki predstavlja dokument"
+msgid "The UNO object <link href=\"https://api.libreoffice.org/docs/idl/ref/interfacecom_1_1sun_1_1star_1_1lang_1_1XComponent.html\"><literal>com.sun.star.lang.XComponent</literal></link> or <link href=\"https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1sdb_1_1OfficeDatabaseDocument.html\"><literal>com.sun.star.comp.dba.ODatabaseDocument</literal></link> representing the document."
+msgstr "Predmet UNO <link href=\"https://api.libreoffice.org/docs/idl/ref/interfacecom_1_1sun_1_1star_1_1lang_1_1XComponent.html\"><literal>com.sun.star.lang.XComponent</literal></link> ali <link href=\"https://api.libreoffice.org/docs/idl/ref/servicecom_1_1sun_1_1star_1_1sdb_1_1OfficeDatabaseDocument.html\"><literal>com.sun.star.comp.dba.ODatabaseDocument</literal></link>, ki predstavlja dokument."
+
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
+"par_id232682885195686\n"
+"help.text"
+msgid "Yes"
+msgstr "Da"
+
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
+"par_id371693885195525\n"
+"help.text"
+msgid "UNO Object"
+msgstr "Predmet UNO"
+
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
+"par_id881582885205976\n"
+"help.text"
+msgid "A <literal>com.sun.star.XXX.DocumentSettings</literal> UNO object - where XXX is sheet, text, drawing or presentation - that gives access to UNO internal properties, that are specific to the document's type."
+msgstr "Predmet UNO <literal>com.sun.star.XXX.DocumentSettings</literal> – kjer je XXX »sheet« (preglednica), »text« (besedilo), »drawing« (risba) ali »presentation« (predstavitev) – ki daje dostop do internih lastnosti UNO, ki so specifične za dano vrsto dokumenta."
 
 #: sf_document.xhp
 msgctxt ""
@@ -14572,6 +16084,46 @@ msgstr "Oglejte si stran pomoči <link href=\"text/sbasic/shared/03/sf_menu.xhp\
 #: sf_document.xhp
 msgctxt ""
 "sf_document.xhp\n"
+"par_id652699200121080\n"
+"help.text"
+msgid "Suppresses a single style or an array of styles given by their nameswithin a specific styles family. Only user-defined styles may be deleted, built-in styles are ignored. It applies to all document types except <literal>Base</literal> and <literal>FormDocument</literal>."
+msgstr "Potlači posamezen slog ali niz slogov, ki so podani z imeni v določeni družini slogov. Izbrišete lahko samo uporabniško določene sloge, vgrajeni slogi so prezrti. Uporablja se za vse vrste dokumentov, razen za <literal>Base</literal> in <literal>FormDocument</literal>."
+
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
+"par_id361580300131416\n"
+"help.text"
+msgid "<emph>family</emph>: One of the style families present in the actual document, as a case-sensitive string. Valid family names can be retrieved using <literal>StyleFamilies</literal> property."
+msgstr "<emph>families</emph>: ena od družin slogov, prisotna v dejanskem dokumentu, podana kot niz, v katerem se ločuje med malimi in velikimi črkami. Imena veljavnih družin lahko pridobite z lastnostjo <literal>StyleFamilies</literal>."
+
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
+"par_id361589211129686\n"
+"help.text"
+msgid "<emph>stylelist</emph>: A single style name as a string or an array of style names. The style names may be localized or not. The StylesList is typically the output of the execution of a <literal>Styles()</literal> method."
+msgstr "<emph>stylelist</emph>: posamezno ime sloga kot niz ali polje imen slogov. Imena slogov so lahko lokalizirana ali ne. Seznam slogov StylesList je običajno rezultat izvajanja metode <literal>Styles()</literal>."
+
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
+"bas_id551699456930743\n"
+"help.text"
+msgid "' Removing unused paragraph styles"
+msgstr "' Odstranjevanje neuporabljenih slogov odstavka"
+
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
+"pyc_id61699457030186\n"
+"help.text"
+msgid "# Removing styles according to a prefix"
+msgstr "# Odstranjevanje slogov glede na njihovo predpono"
+
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
 "par_id156589200192258\n"
 "help.text"
 msgid "Suspends user interface (UI) updates during the execution of a macro. Optionally, the mouse pointer can be changed into an hourglass while UI updates are suspended."
@@ -14583,7 +16135,7 @@ msgctxt ""
 "par_id851688837646904\n"
 "help.text"
 msgid "This method may provide some performance benefits for macros that perform numerous operations that require UI updates."
-msgstr "Ta metoda lahko pozitivno vpliva na hitrost izvajanja makrov, ki izvajajo številne operacije, ki zahtevajo posodobitve uporabniškega vmesnika."
+msgstr "Ta metoda lahko pozitivno vpliva na hitrost izvajanja makrov, ki izvajajo številne operacije, ki zahtevajo posodobitev uporabniškega vmesnika."
 
 #: sf_document.xhp
 msgctxt ""
@@ -14631,7 +16183,7 @@ msgctxt ""
 "bas_id251688837093108\n"
 "help.text"
 msgid "' Restores UI updates and mouse pointer"
-msgstr "' Ponovno omogoči posodobitve vmesnika in kazalec miške"
+msgstr "' Obnovi posodobitve vmesnika in kazalec miške"
 
 #: sf_document.xhp
 msgctxt ""
@@ -14720,6 +16272,70 @@ msgctxt ""
 "help.text"
 msgid "' Sets to True the option to export comments as PDF notes"
 msgstr "' Možnost izvoza komentarjev kot opomb PDF nastavi na True"
+
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
+"par_id266589200121149\n"
+"help.text"
+msgid "This method loads all the styles belonging to one or more style families from a closed file into the actual document. The actual document must be a <literal>Calc</literal> or a <literal>Writer</literal> document."
+msgstr "Ta metoda naloži vse sloge, ki pripadajo eni ali več družin slogov iz zaprte datoteke v dejanski dokument. Slednji mora biti dokument programa <literal>Calc</literal> ali <literal>Writer</literal>."
+
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
+"par_id11701265953648\n"
+"help.text"
+msgid "Are always imported together:"
+msgstr "Vedno so uvoženi skupaj:"
+
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
+"par_id221701265998649\n"
+"help.text"
+msgid "<literal>ParagraphStyles</literal> and <literal>CharacterStyles</literal>"
+msgstr "<literal>ParagraphStyles</literal> in <literal>CharacterStyles</literal>"
+
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
+"par_id441701265999801\n"
+"help.text"
+msgid "<literal>NumberingStyles</literal> and <literal>ListStyles</literal>"
+msgstr "<literal>NumberingStyles</literal> in <literal>ListStyles</literal>"
+
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
+"par_id091611169416945\n"
+"help.text"
+msgid "Returns <literal>True</literal> if styles were successfully imported."
+msgstr "Vrne <literal>True</literal>, če so bili slogi uspešno uvoženi."
+
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
+"par_id321635436910004\n"
+"help.text"
+msgid "<emph>filename</emph>: The file from which to load the styles in the <literal>FileSystem</literal> notation. The file is presumed to be of the same document type as the actual document."
+msgstr "<emph>filename</emph>: ime datoteke, iz katere se naložijo slogi, v zapisu <literal>FileSystem</literal>. Za to datoteko se predvideva, da je iste vrste kot dejanski dokument."
+
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
+"par_id251635436912157\n"
+"help.text"
+msgid "<emph>families</emph>: One of the style families present in the actual document, as a case-sensitive string or an array of such strings. Default = all families."
+msgstr "<emph>families</emph>: ena od družin slogov, prisotna v dejavnem dokumentu, podana kot niz, v katerem se ločuje med malimi in velikimi črkami, ali kot polje takšnih nizov. Privzeto = all families (vse družine)."
+
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
+"par_id362635436912268\n"
+"help.text"
+msgid "<emph>overwrite</emph>: When <literal>True</literal>, the actual styles may be overwritten. Default is <literal>False</literal>."
+msgstr "<emph>overwrite</emph>: če je <literal>True</literal>, bo možno prepisati trenutne sloge (privzeta vrednost je <literal>False</literal>)."
 
 #: sf_document.xhp
 msgctxt ""
@@ -15088,6 +16704,182 @@ msgctxt ""
 "help.text"
 msgid "<emph>paperformat</emph>: Specifies the paper format as a string value that can be either <literal>A3</literal>, <literal>A4</literal>, <literal>A5</literal>, <literal>LETTER</literal>, <literal>LEGAL</literal> or <literal>TABLOID</literal>. Left unchanged when absent."
 msgstr "<emph>paperformat</emph>: določa velikost strani oz. papirja kot niz in ima možne vrednosti <literal>A3</literal>, <literal>A4</literal>, <literal>A5</literal>, <literal>LETTER</literal>, <literal>LEGAL</literal> ali <literal>TABLOID</literal>. Če argument ni podan, ostane nespremenjena privzeta vrednost."
+
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
+"par_id652600200121080\n"
+"help.text"
+msgid "Retrieves a list of styles matching an optional compound criteria, the returned array may be empty. It applies to all document types except <literal>Base</literal>."
+msgstr "Pridobi seznam slogov, ki se ujemajo z neobveznim pogojem, vrnjeno polje pa je lahko prazno. Velja za vse vrste dokumentov, razen <literal>Base</literal>."
+
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
+"par_id361589322129686\n"
+"help.text"
+msgid "<emph>category</emph>: A case-insensitive string: TEXT, CHAPTER, LIST, INDEX, EXTRA, HTML. For their respective meanings, refer to <link href=\"https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1style_1_1ParagraphStyleCategory.html\">paragraph style category</link> API documentation."
+msgstr "<emph>category</emph>: niz, pri katerem se ne razlikujejo velike in male črke: TEXT, CHAPTER, LIST, INDEX, EXTRA, HTML. Za njihove ustrezne pomene glejte dokumentacijo API: <link href=\"https://api.libreoffice.org/docs/idl/ref/namespacecom_1_1sun_1_1star_1_1style_1_1ParagraphStyleCategory.html\">kategorija sloga odstavka</link> (v angl.)."
+
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
+"par_id921701269531603\n"
+"help.text"
+msgid "This argument is ignored when the Family differs from \"ParagraphStyles\"."
+msgstr "Ta argument je prezrt, če družina (Family) ni enaka »ParagraphStyles«."
+
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
+"par_id472589322129797\n"
+"help.text"
+msgid "<emph>namepattern</emph>: A filter on the style names, as a case-sensitive string pattern. The names include the internal and localized names."
+msgstr "<emph>namepattern</emph>: filter za imena sloga kot niz, ki razlikuje med velikimi in malimi črkami. Med imena so vključena notranja in prevedena imena."
+
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
+"par_id551701269163643\n"
+"help.text"
+msgid "Admitted wildcard are:"
+msgstr "Podprti so naslednji nadomestni znaki:"
+
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
+"par_id481701269193780\n"
+"help.text"
+msgid "the \"?\" representing any single character."
+msgstr "\"?\" predstavlja poljuben posamičen znak."
+
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
+"par_id821701269197990\n"
+"help.text"
+msgid "the \"*\" representing zero, one, or multiple characters"
+msgstr "\"*\" predstavlja nič, enega ali več poljubnih znakov."
+
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
+"par_id583589322129808\n"
+"help.text"
+msgid "<emph>parentstyle</emph>: When present, only the children of the given, localized or not, parent style name are retained."
+msgstr "<emph>parentstyle</emph>: če je prisoten, so ohranjeni le podrejeni poimensko podanega, lokaliziranega ali ne, nadrejenega sloga."
+
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
+"par_id694589322129919\n"
+"help.text"
+msgid "<emph>used</emph>: When <literal>True</literal>, the style must be used in the document, when absent the argument is ignored."
+msgstr "<emph>used</emph>: če je <literal>True</literal>, mora biti slog uporabljen v dokumentu; če je izpuščen, je argument prezrt."
+
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
+"par_id705589322129020\n"
+"help.text"
+msgid "<emph>userdefined</emph>: When <literal>True</literal>, the style must have been added by the user, either in the document or its template, when absent, the argument is ignored."
+msgstr "<emph>userdefined</emph>: če je <literal>True</literal>, je slog dodal uporabnik, v dokumentu ali njegovi predlogi; če ni podan, je argument prezrt."
+
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
+"bas_id751644827903865\n"
+"help.text"
+msgid "vStyles = oDoc.Styles(\"ParagraphStyles\") 'All styles in the family"
+msgstr "vSlogi = oDoc.Styles(\"ParagraphStyles\") 'Vsi slogi v družini"
+
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
+"bas_id32799458678382\n"
+"help.text"
+msgid "vStyles = oDoc.Styles(\"ParagraphStyles\", \"H*\") 'Heading, Heading 1, ..."
+msgstr "vSlogi = oDoc.Styles(\"ParagraphStyles\", \"H*\") 'Naslov kot Heading, Naslov 1 kot Heading 1, ..."
+
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
+"bas_id621654231224240\n"
+"help.text"
+msgid "vStyles = oDoc.Styles(\"ParagraphStyles\", Used := False, UserDefined := True) ' All user-defined styles that are not used"
+msgstr "vSlogi = oDoc.Styles(\"ParagraphStyles\", Used := False, UserDefined := True) ' Vsi uporabniško določeni slogi, ki niso v rabi"
+
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
+"bas_id421701270188965\n"
+"help.text"
+msgid "vStyles = oDoc.Styles(\"ParagraphStyles\", ParentStyle := \"Standard\") ' All styles derived from the 'Default Paragraph Style'"
+msgstr "vSlogi = oDoc.Styles(\"ParagraphStyles\", ParentStyle := \"Standard\") ' Vsi slogi, ki slonijo na slogu 'Privzeti slog odstavka'"
+
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
+"pyc_id901701270289703\n"
+"help.text"
+msgid "vStyles = doc.Styles('ParagraphStyles')  #All styles in the family"
+msgstr "vSlogi = doc.Styles('ParagraphStyles')  #Vsi slogi v družini"
+
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
+"pyc_id91701270291214\n"
+"help.text"
+msgid "vStyles = doc.Styles('ParagraphStyles', 'H*')  #Heading, Heading 1, ..."
+msgstr "vSlogi = doc.Styles('ParagraphStyles', 'H*')  #Naslov kot Heading, Naslov 1 kot Heading 1, ..."
+
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
+"pyc_id381701270291427\n"
+"help.text"
+msgid "vStyles = doc.Styles('ParagraphStyles', Used = False, UserDefined = True)  # All user-defined styles that are not used"
+msgstr "vSlogi = doc.Styles('ParagraphStyles', Used = False, UserDefined = True)  # Vsi uporabniško določeni slogi, ki niso v rabi"
+
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
+"pyc_id841701270291654\n"
+"help.text"
+msgid "vStyles = doc.Styles('ParagraphStyles', ParentStyle = 'Standard\")  # All styles derived from the \"Default Paragraph Style\""
+msgstr "vSlogi = doc.Styles('ParagraphStyles', ParentStyle = 'Standard\")  # Vsi slogi, ki slonijo na slogu 'Privzeti slog odstavka'"
+
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
+"par_id091612259727155\n"
+"help.text"
+msgid "This method returns either a list of the available toolbar names in the actual document or a Toolbar object instance from the SFWidgets library."
+msgstr "Ta metoda vrne seznam imen razpoložljivih orodnih vrstic v dejanskem dokumentu ali instanco predmeta Toolbar iz knjižnice SFWidgets."
+
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
+"par_id361580321120786\n"
+"help.text"
+msgid "<emph>ToolbarName</emph>: The usual name of one of the available toolbars."
+msgstr "<emph>ToolbarName</emph>: ime ene od razpoložljivih orodnih vrstic."
+
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
+"par_id091612259616155\n"
+"help.text"
+msgid "This method returns the UNO representation of a given style for all document types except <literal>Base</literal>. <literal>Nothing</literal> is returned when the StyleName does not exist in the given Family."
+msgstr "Ta metoda vrne reprezentacijo UNO podanega sloga za vse vrste dokumentov, razen za <literal>Base</literal>. Vrne <literal>Nothing</literal>, če slog z imenom StyleName v dani družini Family ne obstaja."
+
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
+"par_id361589211120786\n"
+"help.text"
+msgid "<emph>stylename</emph>: One of the styles present in the given family, as a case-sensitive string. The <literal>StyleName</literal> may be localized or not."
+msgstr "<emph>stylename</emph>: eden od slogov, prisotnih v dani družini, podan kot niz, ki ločuje med velikimi in malimi črkami. <literal>StyleName</literal> je lahko lokaliziran."
 
 #: sf_exception.xhp
 msgctxt ""
@@ -15967,7 +17759,7 @@ msgctxt ""
 "bas_id941689595087305\n"
 "help.text"
 msgid "' Creates the folder \"myDir\" if it does not exist"
-msgstr "' Ustvari mapo \"myDir\", če še ne obstaja"
+msgstr "' Ustvari mapo »myDir«, če še ne obstaja"
 
 #: sf_filesystem.xhp
 msgctxt ""
@@ -15999,7 +17791,7 @@ msgctxt ""
 "par_id861689595826432\n"
 "help.text"
 msgid "The <literal>FileNaming</literal> notation is always considered to be \"URL\"."
-msgstr "Notacija <literal>FileNaming</literal> je vedno pričakovana kot \"URL\"."
+msgstr "Notacija <literal>FileNaming</literal> je vedno pričakovana kot »URL«."
 
 #: sf_filesystem.xhp
 msgctxt ""
@@ -16007,7 +17799,7 @@ msgctxt ""
 "par_id181689595826743\n"
 "help.text"
 msgid "The methods <literal>CompareFiles</literal>, <literal>GetFileModified</literal>, <literal>HashFile</literal>, <literal>PickFile</literal> and <literal>PickFolder</literal> are not applicable."
-msgstr "Metod <literal>CompareFiles</literal> in <literal>GetFileModified</literal>, <literal>HashFile</literal>, <literal>PickFile</literal> in <literal>PickFolder</literal> ni možno uporabiti."
+msgstr "Metod <literal>CompareFiles</literal>, <literal>GetFileModified</literal>, <literal>HashFile</literal>, <literal>PickFile</literal> in <literal>PickFolder</literal> ni možno uporabiti."
 
 #: sf_filesystem.xhp
 msgctxt ""
@@ -16295,7 +18087,7 @@ msgctxt ""
 "par_id111601118910848\n"
 "help.text"
 msgid "<emph>comparecontents</emph>: When <literal>True</literal>, the contents of the files are compared (default = <literal>False</literal>)."
-msgstr "<emph>compareCcntents</emph>: če je <literal>True</literal>, bo vsebina datotek primerjana (privzeta vrednost je <literal>False</literal>)."
+msgstr "<emph>comparecontents</emph>: če je <literal>True</literal>, bo vsebina datotek primerjana (privzeta vrednost je <literal>False</literal>)."
 
 #: sf_filesystem.xhp
 msgctxt ""
@@ -16720,6 +18512,22 @@ msgctxt ""
 "help.text"
 msgid "<emph>filter</emph>: A string containing wildcards (\"?\" and \"*\") that will be applied to the resulting list of files (default = \"\")."
 msgstr "<emph>filter</emph>: niz, ki vsebuje nadomestne znake (\"?\" in \"*\"), ki bodo uporabljeni na vrnjenem seznamu datotek (privzeto je enak »«)."
+
+#: sf_filesystem.xhp
+msgctxt ""
+"sf_filesystem.xhp\n"
+"par_id731583944543907\n"
+"help.text"
+msgid "<emph>includesubfolders</emph>: Set this argument to <literal>True</literal> to include the contents of subfolders (Default = <literal>False</literal>)."
+msgstr "<emph>includesubfolders</emph>: ta argument nastavite na <literal>True</literal>, da vključite vsebino podmap (privzeta vrednost je <literal>False</literal>)."
+
+#: sf_filesystem.xhp
+msgctxt ""
+"sf_filesystem.xhp\n"
+"bas_id901701437618763\n"
+"help.text"
+msgid "' Returns all files matching the \"*.txt\" filter, including files in subfolders"
+msgstr "' Vrne vse datoteke, ki se ujemajo s filtrom \"*.txt\", vključno z datotekami iz podmap"
 
 #: sf_filesystem.xhp
 msgctxt ""
@@ -17352,6 +19160,14 @@ msgctxt ""
 "help.text"
 msgid "<emph>filter</emph>: A string containing wildcards (\"?\" and \"*\") that will be applied to the resulting list of folders (default = \"\")."
 msgstr "<emph>filter</emph>: niz, ki vsebuje nadomestne znake (\"?\" in \"*\"), ki bodo uporabljeni za seznam map kot rezultatu (privzeto = \"\")."
+
+#: sf_filesystem.xhp
+msgctxt ""
+"sf_filesystem.xhp\n"
+"par_id731583944548857\n"
+"help.text"
+msgid "<emph>includesubfolders</emph>: Set this argument to <literal>True</literal> to include the contents of subfolders (Default = <literal>False</literal>)."
+msgstr "<emph>includesubfolders</emph>: ta argument nastavite na <literal>True</literal>, da vključite vsebino podmap (privzeta vrednost je <literal>False</literal>)."
 
 #: sf_form.xhp
 msgctxt ""
@@ -19964,6 +21780,14 @@ msgstr "Storitev SFDocuments.FormDocument"
 #: sf_formdocument.xhp
 msgctxt ""
 "sf_formdocument.xhp\n"
+"bm_id41582391760252\n"
+"help.text"
+msgid "<bookmark_value>FormDocument service</bookmark_value>"
+msgstr "<bookmark_value>storitev FormDocument</bookmark_value>"
+
+#: sf_formdocument.xhp
+msgctxt ""
+"sf_formdocument.xhp\n"
 "bm_id781582391760253\n"
 "help.text"
 msgid "<variable id=\"ctrls_h1\"><link href=\"text/sbasic/shared/03/sf_formdocument.xhp\"><literal>SFDocuments</literal>.<literal>FormDocument</literal> service</link></variable>"
@@ -20036,6 +21860,14 @@ msgstr "Spodnji primer uporablja storitev <literal>UI</literal> za odprtje dokum
 #: sf_formdocument.xhp
 msgctxt ""
 "sf_formdocument.xhp\n"
+"par_id591692487747857\n"
+"help.text"
+msgid "The following example uses the <literal>Database</literal> service to open the form document. In this case, the Base file will not be opened and only the form document will be shown."
+msgstr "Spodnji primer uporablja storitev <literal>Database</literal> za odprtje dokumenta obrazca. Upoštevajte, da se v tem primeru datoteka ne bo odprla in na zaslonu bo prikazan samo dokument obrazca."
+
+#: sf_formdocument.xhp
+msgctxt ""
+"sf_formdocument.xhp\n"
 "par_id151692489140384\n"
 "help.text"
 msgid "Calling <literal>OpenFormDocument</literal> for a form document that is already open will activate the document window and bring it to focus."
@@ -20071,7 +21903,7 @@ msgctxt ""
 "par_id481619036833610\n"
 "help.text"
 msgid "Returns either an array with the names of the main forms contained in the form document or a <literal>Form</literal> service instance referring to a specific form."
-msgstr "Vrne polje z imeni glavnih obrazcev, vsebovanih v dokumentu obrazca, ali instanco storitve <literal>Form</literal>, ki se nanaša na določen obrazec."
+msgstr "Vrne polje z imeni glavnih obrazcev, vsebovanih v dokumentu obrazca, ali instanco storitve <literal>Form</literal>, ki se sklicuje na določen obrazec."
 
 #: sf_formdocument.xhp
 msgctxt ""
@@ -20087,7 +21919,7 @@ msgctxt ""
 "par_id491692532525080\n"
 "help.text"
 msgid "Provide a form name or index as argument to obtain a <literal>Form</literal> service instance corresponding to the specified form."
-msgstr "Kot argument navedite ime obrazca ali indeks, da dobite instanco storitve <literal>Form</literal>, ki ustreza navedenemu obrazcu."
+msgstr "Kot argument navedite ime obrazca ali njegov indeks, da dobite instanco storitve <literal>Form</literal>, ki ustreza navedenemu obrazcu."
 
 #: sf_formdocument.xhp
 msgctxt ""
@@ -20095,23 +21927,7 @@ msgctxt ""
 "par_id281692532725116\n"
 "help.text"
 msgid "A form document has at least one main form. More complex form documents may be composed of more than one form and sub-forms."
-msgstr "Dokument obrazca vsebuje vsaj en glavni obrazec. Zapletenejši dokumenti obrazcev lahko sestavlja več obrazcev in podobrazcev."
-
-#: sf_formdocument.xhp
-msgctxt ""
-"sf_formdocument.xhp\n"
-"par_id91692538279673\n"
-"help.text"
-msgid "<input>svc.Forms(form: str): svc</input>"
-msgstr "<input>svc.Forms(form: str): svc</input>"
-
-#: sf_formdocument.xhp
-msgctxt ""
-"sf_formdocument.xhp\n"
-"par_id91692538279664\n"
-"help.text"
-msgid "<input>svc.Forms(form: int): svc</input>"
-msgstr "<input>svc.Forms(form: int): svc</input>"
+msgstr "Dokument obrazca vsebuje vsaj en glavni obrazec. Zapletenejše dokumente obrazcev lahko sestavlja več obrazcev in podobrazcev."
 
 #: sf_formdocument.xhp
 msgctxt ""
@@ -20119,7 +21935,7 @@ msgctxt ""
 "par_id211692538352686\n"
 "help.text"
 msgid "<emph>form</emph>: This argument can be either a string with the name of a form that exists in the form document or the zero-based index of the form that shall be returned. If this argument is not specific, then an array with the name of all available forms is returned."
-msgstr "<emph>form</emph>: ta argument je lahko niz z imenom obrazca, ki obstaja v dokumentu obrazca, ali indeks obrazca, ki bo vrnjen. Če ta argument ni določen, vrne polje z imeni vseh razpoložljivih obrazcev."
+msgstr "<emph>form</emph>: ta argument je lahko niz z imenom obrazca, ki obstaja v dokumentu obrazca, ali indeks obrazca, ki bo vrnjen, ki se šteje od nič naprej. Če ta argument ni določen, vrne polje z imeni vseh razpoložljivih obrazcev."
 
 #: sf_formdocument.xhp
 msgctxt ""
@@ -20127,7 +21943,7 @@ msgctxt ""
 "par_id151692537703209\n"
 "help.text"
 msgid "The following example checks if the form document contains a form named \"MainForm\":"
-msgstr "Naslednji primer preveri, če dokument obrazca vsebuje obrazec z imenom \"MainForm\":"
+msgstr "Naslednji primer preveri, če dokument obrazca vsebuje obrazec z imenom »MainForm«:"
 
 #: sf_formdocument.xhp
 msgctxt ""
@@ -20135,7 +21951,7 @@ msgctxt ""
 "par_id661692537831637\n"
 "help.text"
 msgid "The example below retrieves the form named \"MainForm\" and moves it to the last record:"
-msgstr "Spodnji primer pridobi obrazec \"MainForm\" in ga premakne na zadnji zapis:"
+msgstr "Spodnji primer pridobi obrazec z imenom »MainForm« in ga premakne na zadnji zapis:"
 
 #: sf_formdocument.xhp
 msgctxt ""
@@ -20167,7 +21983,7 @@ msgctxt ""
 "par_id211635436910093\n"
 "help.text"
 msgid "<emph>pages</emph>: The pages to print as a string. This argument should be specified in the same manner as in the user interface (see <menuitem>File - Print</menuitem> dialog). Example: \"1-4;10;15-18\". The default value is an empty string \"\" which will cause all pages to be printed."
-msgstr "<emph>pages</emph>: strani za tiskanje, podane kot niz. Ta argument je treba navesti na enak način kot v uporabniškem vmesniku (glejte pogovorno okno <menuitem>Datoteka – Natisni</menuitem>). Primer: \"1-4;10;15-18\". Privzeta vrednost je prazen niz \"\", zaradi česar se natisnejo vse strani."
+msgstr "<emph>pages</emph>: strani za tiskanje, podane kot niz. Ta argument je treba navesti na enak način kot v uporabniškem vmesniku (glejte pogovorno okno <menuitem>Datoteka – Natisni</menuitem>). Primer: \"1-4;10;15-18\". Privzeta vrednost je prazen niz (\"\"), zaradi česar se natisnejo vse strani."
 
 #: sf_formdocument.xhp
 msgctxt ""
@@ -20711,7 +22527,7 @@ msgctxt ""
 "bm_id631689720744160\n"
 "help.text"
 msgid "<bookmark_value>Python interpreter;PYTHONPATH</bookmark_value>"
-msgstr "<bookmark_value>Python;tolmač;tolmač Python;PYTHONPATH</bookmark_value>"
+msgstr "<bookmark_value>Python;tolmač</bookmark_value><bookmark_value>tolmač Python;PYTHONPATH</bookmark_value><bookmark_value>interpretor Python;glejte tolmač Python</bookmark_value><bookmark_value>interpreter Python;glejte tolmač Python</bookmark_value>"
 
 #: sf_intro.xhp
 msgctxt ""
@@ -20727,7 +22543,7 @@ msgctxt ""
 "par_id811689720328559\n"
 "help.text"
 msgid "Depending on your operating system's configuration you will need to set the environment variable <literal>PYTHONPATH</literal> in order to import the <literal>scriptforge.py</literal> library, which in turn requires importing the <literal>uno.py</literal> library."
-msgstr "Glede na nastavitve operacijskega sistema boste morali določiti okoljsko spremenljivko <literal>PYTHONPATH</literal> za uvoz knjižnice <literal>scriptforge.py</literal>, ki zahteva uvoz knjižnice <literal>uno.py</literal>."
+msgstr "Glede na nastavitve operacijskega sistema boste morali določiti okoljsko spremenljivko <literal>PYTHONPATH</literal> za uvoz knjižnice <literal>scriptforge.py</literal>, ki posledično zahteva uvoz knjižnice <literal>uno.py</literal>."
 
 #: sf_intro.xhp
 msgctxt ""
@@ -21310,8 +23126,8 @@ msgctxt ""
 "sf_l10n.xhp\n"
 "par_id31586102707537\n"
 "help.text"
-msgid "<emph>filename</emph>: The output file in <literal>FileSystem.FileNaming</literal> notation."
-msgstr "<emph>filename</emph>:izhodna datoteka v notaciji <literal>FileSystem.FileNaming</literal>."
+msgid "<emph>filename</emph>: The full output file name in <literal>FileSystem.FileNaming</literal> notation."
+msgstr "<emph>filename</emph>: polno ime izhodne datoteke v notaciji <literal>FileSystem.FileNaming</literal>."
 
 #: sf_l10n.xhp
 msgctxt ""
@@ -22719,7 +24535,7 @@ msgctxt ""
 "par_id831633021741958\n"
 "help.text"
 msgid "Returns a <literal>Dictionary</literal> instance containing key-value pairs in relation with <emph>Tools - Options - User Data</emph> dialog."
-msgstr "Vrne instanco <literal>Dictionary</literal>, ki vsebuje pare ključ-vrednost glede na pogovorno okno <emph>Orodja – Možnosti – Uporabniški podatki</emph>."
+msgstr "Vrne instanco storitve <literal>Dictionary</literal>, ki vsebuje pare ključ-vrednost glede na pogovorno okno <emph>Orodja – Možnosti – Uporabniški podatki</emph>."
 
 #: sf_platform.xhp
 msgctxt ""
@@ -28132,6 +29948,22 @@ msgstr "Seznam lastnosti v storitvi Database"
 #: sf_toc.xhp
 msgctxt ""
 "sf_toc.xhp\n"
+"hd_id101671192603066\n"
+"help.text"
+msgid "<literal>SFDatabases</literal>.<literal>Dataset</literal> service"
+msgstr "Storitev <literal>SFDatabases</literal>.<literal>Dataset</literal>"
+
+#: sf_toc.xhp
+msgctxt ""
+"sf_toc.xhp\n"
+"par_id651606319591202\n"
+"help.text"
+msgid "List of Properties in the Dataset Service"
+msgstr "Seznam lastnosti v storitvi Dataset"
+
+#: sf_toc.xhp
+msgctxt ""
+"sf_toc.xhp\n"
 "hd_id101671192690807\n"
 "help.text"
 msgid "<literal>SFDatabases</literal>.<literal>Datasheet</literal> service"
@@ -28436,6 +30268,38 @@ msgstr "Seznam lastnosti storitve Timer"
 #: sf_toc.xhp
 msgctxt ""
 "sf_toc.xhp\n"
+"hd_id1016711992036103\n"
+"help.text"
+msgid "<literal>ScriptForge</literal>.<literal>Toolbar</literal> service"
+msgstr "Storitev <literal>ScriptForge</literal>.<literal>Toolbar</literal>"
+
+#: sf_toc.xhp
+msgctxt ""
+"sf_toc.xhp\n"
+"par_id651606205603658\n"
+"help.text"
+msgid "List of Properties in the Toolbar Service"
+msgstr "Seznam lastnosti storitve Toolbar"
+
+#: sf_toc.xhp
+msgctxt ""
+"sf_toc.xhp\n"
+"hd_id1016711992054103\n"
+"help.text"
+msgid "<literal>ScriptForge</literal>.<literal>ToolbarButton</literal> service"
+msgstr "Storitev <literal>ScriptForge</literal>.<literal>ToolbarButton</literal>"
+
+#: sf_toc.xhp
+msgctxt ""
+"sf_toc.xhp\n"
+"par_id651635105603658\n"
+"help.text"
+msgid "List of Properties in the ToolbarButton Service"
+msgstr "Seznam lastnosti v storitvi ToolbarButton"
+
+#: sf_toc.xhp
+msgctxt ""
+"sf_toc.xhp\n"
 "hd_id1016711992512950\n"
 "help.text"
 msgid "<literal>ScriptForge</literal>.<literal>UI</literal> service"
@@ -28464,6 +30328,798 @@ msgctxt ""
 "help.text"
 msgid "List of Properties in the UnitTest Service"
 msgstr "Seznam lastnosti storitve UnitTest"
+
+#: sf_toolbar.xhp
+msgctxt ""
+"sf_toolbar.xhp\n"
+"tit\n"
+"help.text"
+msgid "SFWidgets.Toolbar service"
+msgstr "Storitev SFWidgets.Toolbar"
+
+#: sf_toolbar.xhp
+msgctxt ""
+"sf_toolbar.xhp\n"
+"hd_id731582733781114\n"
+"help.text"
+msgid "<variable id=\"ToolbarService\"><link href=\"text/sbasic/shared/03/sf_toolbar.xhp\"><literal>SFWidgets</literal>.<literal>Toolbar</literal> service</link></variable>"
+msgstr "<variable id=\"ToolbarService\"><link href=\"text/sbasic/shared/03/sf_toolbar.xhp\">Storitev <literal>SFDocuments</literal>.<literal>Toolbar</literal></link></variable>"
+
+#: sf_toolbar.xhp
+msgctxt ""
+"sf_toolbar.xhp\n"
+"par_id571700837631557\n"
+"help.text"
+msgid "The <literal>Toolbar</literal> service allows to retrieve information related to the toolbars available for a specific document window. With this service it is possible to:"
+msgstr "Storitev <literal>Toolbar</literal> omogoča pridobivanje informacij, ki se nanašajo na orodne vrstice, ki so na voljo v danem oknu dokumenta. Ta storitev omogoča:"
+
+#: sf_toolbar.xhp
+msgctxt ""
+"sf_toolbar.xhp\n"
+"par_id891589189452545\n"
+"help.text"
+msgid "Toggle the visibility of specific toolbars."
+msgstr "Preklopite vidljivost določenih orodnih vrstic."
+
+#: sf_toolbar.xhp
+msgctxt ""
+"sf_toolbar.xhp\n"
+"par_id811589189463041\n"
+"help.text"
+msgid "Access information about the buttons available in each toolbar."
+msgstr "Dostopajte do informacij o gumbih, ki so na voljo v vsaki orodni vrstici."
+
+#: sf_toolbar.xhp
+msgctxt ""
+"sf_toolbar.xhp\n"
+"par_id141700851608146\n"
+"help.text"
+msgid "Each %PRODUCTNAME application has its own set of available toolbars. This service handles both built-in and custom toolbars."
+msgstr "Vsak modul %PRODUCTNAME ima svoj lasten nabor razpoložljivih orodnih vrstic. Ta storitev ravna tako z vgrajenimi kot prilagojenimi orodnimi vrsticami."
+
+#: sf_toolbar.xhp
+msgctxt ""
+"sf_toolbar.xhp\n"
+"par_id181700851890467\n"
+"help.text"
+msgid "The status bar and the menu bar are not considered toolbars in the context of this service."
+msgstr "Vrstica stanja in menijska vrstica ne veljata za orodni vrstici v kontekstu te storitve."
+
+#: sf_toolbar.xhp
+msgctxt ""
+"sf_toolbar.xhp\n"
+"hd_id581582885621841\n"
+"help.text"
+msgid "Service invocation"
+msgstr "Priklic storitve"
+
+#: sf_toolbar.xhp
+msgctxt ""
+"sf_toolbar.xhp\n"
+"par_id141609955500101\n"
+"help.text"
+msgid "Before using the <literal>Toolbar</literal> service the <literal>ScriptForge</literal> library needs to be loaded or imported:"
+msgstr "Pred uporabo storitve <literal>Toolbar</literal> je potrebno naložiti ali uvoziti knjižnico <literal>ScriptForge</literal>:"
+
+#: sf_toolbar.xhp
+msgctxt ""
+"sf_toolbar.xhp\n"
+"par_id411700851985942\n"
+"help.text"
+msgid "The <literal>Toolbar</literal> service is invoked using the <literal>Toolbars</literal> method, which is available in the following services: <literal>Calc</literal>, <literal>Datasheet</literal>, <literal>Document</literal>, <literal>FormDocument</literal> and <literal>Writer</literal>."
+msgstr "Storitev <literal>Toolbar</literal>, ki jo je možno priklicati z metodo <literal>Toolbars</literal>, ki je na voljo v naslednjih storitvah: <literal>Calc</literal>, <literal>Datasheet</literal>, <literal>Document</literal>, <literal>FormDocument</literal> in <literal>Writer</literal>."
+
+#: sf_toolbar.xhp
+msgctxt ""
+"sf_toolbar.xhp\n"
+"par_id771700853155061\n"
+"help.text"
+msgid "The example below gets an <literal>Array</literal> with the names of the toolbars available in the current document."
+msgstr "Spodnji primer pridobi polje <literal>Array</literal> z imeni vseh razpoložljivih orodnih vrstic v trenutnem dokumentu."
+
+#: sf_toolbar.xhp
+msgctxt ""
+"sf_toolbar.xhp\n"
+"par_id961700853354817\n"
+"help.text"
+msgid "Use the <literal>Toolbars</literal> method without arguments to retrieve an array with available toolbar names."
+msgstr "Uporabite metodo <literal>Toolbars</literal> brez argumentov za pridobivanje polja z imeni razpoložljivih orodnih vrstic."
+
+#: sf_toolbar.xhp
+msgctxt ""
+"sf_toolbar.xhp\n"
+"par_id171700853415555\n"
+"help.text"
+msgid "The example below toggles the visibility of the <menuitem>Standard</menuitem> toolbar:"
+msgstr "Spodnji primer preklopi vidnost orodne vrstice <menuitem>Standardno</menuitem>:"
+
+#: sf_toolbar.xhp
+msgctxt ""
+"sf_toolbar.xhp\n"
+"hd_id351582885195476\n"
+"help.text"
+msgid "Properties"
+msgstr "Lastnosti"
+
+#: sf_toolbar.xhp
+msgctxt ""
+"sf_toolbar.xhp\n"
+"par_id41582885195836\n"
+"help.text"
+msgid "Name"
+msgstr "Ime"
+
+#: sf_toolbar.xhp
+msgctxt ""
+"sf_toolbar.xhp\n"
+"par_id31582885195372\n"
+"help.text"
+msgid "Readonly"
+msgstr "Samo za branje"
+
+#: sf_toolbar.xhp
+msgctxt ""
+"sf_toolbar.xhp\n"
+"par_id31582885195238\n"
+"help.text"
+msgid "Type"
+msgstr "Vrsta"
+
+#: sf_toolbar.xhp
+msgctxt ""
+"sf_toolbar.xhp\n"
+"par_id931582885195131\n"
+"help.text"
+msgid "Description"
+msgstr "Opis"
+
+#: sf_toolbar.xhp
+msgctxt ""
+"sf_toolbar.xhp\n"
+"par_id861582885655779\n"
+"help.text"
+msgid "Yes"
+msgstr "Da"
+
+#: sf_toolbar.xhp
+msgctxt ""
+"sf_toolbar.xhp\n"
+"par_id581582885655885\n"
+"help.text"
+msgid "Returns <literal>True</literal> when the toolbar is part of the set of standard toolbars shipped with %PRODUCTNAME."
+msgstr "Vrne <literal>True</literal>, če je orodna vrstica del nabora standardnih orodnih vrstic, vključenih v %PRODUCTNAME."
+
+#: sf_toolbar.xhp
+msgctxt ""
+"sf_toolbar.xhp\n"
+"par_id861582885655669\n"
+"help.text"
+msgid "Yes"
+msgstr "Da"
+
+#: sf_toolbar.xhp
+msgctxt ""
+"sf_toolbar.xhp\n"
+"par_id581582885657885\n"
+"help.text"
+msgid "Returns <literal>True</literal> when the toolbar is active in the window and docked."
+msgstr "Vrne <literal>True</literal>, če je orodna vrstica dejavna v oknu in zasidrana."
+
+#: sf_toolbar.xhp
+msgctxt ""
+"sf_toolbar.xhp\n"
+"par_id861582885655710\n"
+"help.text"
+msgid "Yes"
+msgstr "Da"
+
+#: sf_toolbar.xhp
+msgctxt ""
+"sf_toolbar.xhp\n"
+"par_id581582885655102\n"
+"help.text"
+msgid "Returns <literal>True</literal> when the toolbar is available in all documents of the same type."
+msgstr "Vrne <literal>True</literal>, če je orodna vrstica na voljo vsem dokumentom iste vrste."
+
+#: sf_toolbar.xhp
+msgctxt ""
+"sf_toolbar.xhp\n"
+"par_id861582885655205\n"
+"help.text"
+msgid "Yes"
+msgstr "Da"
+
+#: sf_toolbar.xhp
+msgctxt ""
+"sf_toolbar.xhp\n"
+"par_id581582885655369\n"
+"help.text"
+msgid "Returns the name of the toolbar."
+msgstr "Vrne ime orodne vrstice."
+
+#: sf_toolbar.xhp
+msgctxt ""
+"sf_toolbar.xhp\n"
+"par_id861582885655966\n"
+"help.text"
+msgid "Yes"
+msgstr "Da"
+
+#: sf_toolbar.xhp
+msgctxt ""
+"sf_toolbar.xhp\n"
+"par_id581582885655812\n"
+"help.text"
+msgid "Returns the resource URL of the toolbar, in the form <literal>private:toolbar/toolbar_name</literal>."
+msgstr "Vrne URL vira orodne vrstice v obliki <literal>private:toolbar/orodnavrstica_ime</literal>."
+
+#: sf_toolbar.xhp
+msgctxt ""
+"sf_toolbar.xhp\n"
+"par_id861582885655212\n"
+"help.text"
+msgid "No"
+msgstr "Ne"
+
+#: sf_toolbar.xhp
+msgctxt ""
+"sf_toolbar.xhp\n"
+"par_id581582885655344\n"
+"help.text"
+msgid "Returns <literal>True</literal> when the toolbar is active and visible in the document window."
+msgstr "Vrne <literal>True</literal>, če je orodna vrstica dejavna in vidna v oknu dokumenta."
+
+#: sf_toolbar.xhp
+msgctxt ""
+"sf_toolbar.xhp\n"
+"par_id861582885655788\n"
+"help.text"
+msgid "Yes"
+msgstr "Da"
+
+#: sf_toolbar.xhp
+msgctxt ""
+"sf_toolbar.xhp\n"
+"par_id581582885655062\n"
+"help.text"
+msgid "Returns the <link href=\"https://api.libreoffice.org/docs/idl/ref/interfacecom_1_1sun_1_1star_1_1ui_1_1XUIElement.html\">com.sun.star.ui.XUIElement</link> UNO object that represents the toolbar."
+msgstr "Vrne predmet UNO <link href=\"https://api.libreoffice.org/docs/idl/ref/interfacecom_1_1sun_1_1star_1_1ui_1_1XUIElement.html\">com.sun.star.ui.XUIElement</link>, ki predstavlja orodno vrstico."
+
+#: sf_toolbar.xhp
+msgctxt ""
+"sf_toolbar.xhp\n"
+"par_id651606319520519\n"
+"help.text"
+msgid "List of Methods in the Toolbar Service"
+msgstr "Seznam metod v storitvi Toolbar"
+
+#: sf_toolbar.xhp
+msgctxt ""
+"sf_toolbar.xhp\n"
+"par_id93158919969864\n"
+"help.text"
+msgid "Returns an <literal>Array</literal> containing the names of all toolbar buttons when called without arguments."
+msgstr "Vrne polje <literal>Array</literal> z imeni vseh gumbov orodne vrstice, če ga kličete brez argumentov."
+
+#: sf_toolbar.xhp
+msgctxt ""
+"sf_toolbar.xhp\n"
+"par_id421611148353046\n"
+"help.text"
+msgid "Provide the name of a toolbar button as argument to obtain a <literal>ToolbarButton</literal> service instance."
+msgstr "Kot argument navedite ime gumba orodne vrstice, da dobite instanco storitve <literal>ToolbarButton</literal>."
+
+#: sf_toolbar.xhp
+msgctxt ""
+"sf_toolbar.xhp\n"
+"par_id381701012526415\n"
+"help.text"
+msgid "<emph>buttonname</emph>: The name of a toolbar button in the current toolbar."
+msgstr "<emph>buttonname</emph>: ime gumba orodne vrstice v trenutni orodni vrstici."
+
+#: sf_toolbar.xhp
+msgctxt ""
+"sf_toolbar.xhp\n"
+"par_id601611148017930\n"
+"help.text"
+msgid "The example below returns the command executed when the button <menuitem>New</menuitem> is clicked in the <menuitem>Standard</menuitem> toolbar:"
+msgstr "Spodnji primer vrne ukaz, izveden, ko je pritisnjen gumb <menuitem>Nov</menuitem> v orodni vrstici <menuitem>Standardno</menuitem>:"
+
+#: sf_toolbar.xhp
+msgctxt ""
+"sf_toolbar.xhp\n"
+"par_id531701012694220\n"
+"help.text"
+msgid "Inactive toolbars do not have buttons. Therefore, calling the <literal>ToolbarButtons</literal> method will make the toolbar visible."
+msgstr "Nedejavne orodne vrstice nimajo gumbov. Zato naredite s klicem metode <literal>ToolbarButtons</literal> orodno vrstico vidno."
+
+#: sf_toolbarbutton.xhp
+msgctxt ""
+"sf_toolbarbutton.xhp\n"
+"tit\n"
+"help.text"
+msgid "SFWidgets.ToolbarButton service"
+msgstr "Storitev SFWidgets.ToolbarButton"
+
+#: sf_toolbarbutton.xhp
+msgctxt ""
+"sf_toolbarbutton.xhp\n"
+"hd_id731582733781114\n"
+"help.text"
+msgid "<variable id=\"ToolbarButtonService\"><link href=\"text/sbasic/shared/03/sf_toolbarbutton.xhp\"><literal>SFWidgets</literal>.<literal>ToolbarButton</literal> service</link></variable>"
+msgstr "<variable id=\"ToolbarButtonService\"><link href=\"text/sbasic/shared/03/sf_toolbarbutton.xhp\">Storitev <literal>SFWidgets</literal>.<literal>ToolbarButton</literal></link></variable>"
+
+#: sf_toolbarbutton.xhp
+msgctxt ""
+"sf_toolbarbutton.xhp\n"
+"par_id571700837631557\n"
+"help.text"
+msgid "The <literal>ToolbarButton</literal> service allows to retrieve information related to the toolbar buttons available in a given toolbar. With this service it is possible to:"
+msgstr "Storitev <literal>ToolbarButton</literal> omogoča pridobivanje informacij, ki se nanašajo na gumbe orodne vrstice, ki so na voljo v dani orodni vrstici. Ta storitev omogoča:"
+
+#: sf_toolbarbutton.xhp
+msgctxt ""
+"sf_toolbarbutton.xhp\n"
+"par_id891589189452545\n"
+"help.text"
+msgid "Toggle the visibility of toolbar elements."
+msgstr "Preklopite vidljivost elementov orodne vrstice."
+
+#: sf_toolbarbutton.xhp
+msgctxt ""
+"sf_toolbarbutton.xhp\n"
+"par_id811589189463041\n"
+"help.text"
+msgid "Execute the command associated with a given toolbar button."
+msgstr "Izvede ukaz, povezan z danim gumbom orodne vrstice."
+
+#: sf_toolbarbutton.xhp
+msgctxt ""
+"sf_toolbarbutton.xhp\n"
+"hd_id581582885621841\n"
+"help.text"
+msgid "Service invocation"
+msgstr "Priklic storitve"
+
+#: sf_toolbarbutton.xhp
+msgctxt ""
+"sf_toolbarbutton.xhp\n"
+"par_id141609955500101\n"
+"help.text"
+msgid "Before using the <literal>ToolbarButton</literal> service the <literal>ScriptForge</literal> library needs to be loaded or imported:"
+msgstr "Pred uporabo storitve <literal>ToolbarButton</literal> je potrebno naložiti ali uvoziti knjižnico <literal>ScriptForge</literal>:"
+
+#: sf_toolbarbutton.xhp
+msgctxt ""
+"sf_toolbarbutton.xhp\n"
+"par_id411700851985942\n"
+"help.text"
+msgid "The <literal>ToolbarButton</literal> service is invoked using the <literal>ToolbarButtons</literal> method from the <literal>Toolbar</literal> service."
+msgstr "Storitev <literal>ToolbarButton</literal> prikličete z uporabo metode <literal>ToolbarButtons</literal> iz storitve <literal>Toolbar</literal>."
+
+#: sf_toolbarbutton.xhp
+msgctxt ""
+"sf_toolbarbutton.xhp\n"
+"par_id771700853155061\n"
+"help.text"
+msgid "The example below retrieves the names of all buttons available in the <menuitem>Standard</menuitem> toolbar."
+msgstr "Spodnji primer pridobi imena vseh gumbov, ki so na voljo v orodni vrstici <menuitem>Standardno</menuitem>."
+
+#: sf_toolbarbutton.xhp
+msgctxt ""
+"sf_toolbarbutton.xhp\n"
+"par_id961700853354817\n"
+"help.text"
+msgid "Use the <literal>ToolbarButtons</literal> method without arguments to retrieve an array with all available toolbar button names."
+msgstr "Uporabite metodo <literal>ToolbarButtons</literal> brez argumentov za pridobivanje polja z imeni vseh razpoložljivih gumbov orodnih vrstic."
+
+#: sf_toolbarbutton.xhp
+msgctxt ""
+"sf_toolbarbutton.xhp\n"
+"par_id171700853415555\n"
+"help.text"
+msgid "The example below toggles the visibility of the <menuitem>Print</menuitem> button in the <menuitem>Standard</menuitem> toolbar:"
+msgstr "Spodnji primer preklopi vidnost gumba <menuitem>Natisni</menuitem> v orodni vrstici <menuitem>Standardno</menuitem>:"
+
+#: sf_toolbarbutton.xhp
+msgctxt ""
+"sf_toolbarbutton.xhp\n"
+"bas_id117008537580631\n"
+"help.text"
+msgid "oToolbarButton = oToolbar.ToolbarButtons(\"Print\")"
+msgstr "oToolbarButton = oToolbar.ToolbarButtons(\"Print\")"
+
+#: sf_toolbarbutton.xhp
+msgctxt ""
+"sf_toolbarbutton.xhp\n"
+"par_id981701021131646\n"
+"help.text"
+msgid "The button name passed as argument to the <literal>ToolbarButtons</literal> method is the localized button name defined in the <menuitem>Tools - Customize - Toolbars</menuitem> dialog."
+msgstr "Ime gumba, podano kot argument metodi <literal>ToolbarButtons</literal>, je lokalizirano ime gumba, določenega v pogovornem oknu <menuitem>Orodja – Prilagodi – Orodne vrstice</menuitem>."
+
+#: sf_toolbarbutton.xhp
+msgctxt ""
+"sf_toolbarbutton.xhp\n"
+"par_id531701012694220\n"
+"help.text"
+msgid "Inactive toolbars do not have buttons. Therefore, calling the <literal>ToolbarButtons</literal> method will make the toolbar visible."
+msgstr "Nedejavne orodne vrstice nimajo gumbov. Zato klic metode <literal>ToolbarButtons</literal> povzroči, da je orodna vrstica vidna."
+
+#: sf_toolbarbutton.xhp
+msgctxt ""
+"sf_toolbarbutton.xhp\n"
+"pyc_id351701021554314\n"
+"help.text"
+msgid "toolbar_button = toolbar.ToolbarButtons(\"Print\")"
+msgstr "toolbar_button = toolbar.ToolbarButtons(\"Print\")"
+
+#: sf_toolbarbutton.xhp
+msgctxt ""
+"sf_toolbarbutton.xhp\n"
+"hd_id351582885195476\n"
+"help.text"
+msgid "Properties"
+msgstr "Lastnosti"
+
+#: sf_toolbarbutton.xhp
+msgctxt ""
+"sf_toolbarbutton.xhp\n"
+"par_id41582885195836\n"
+"help.text"
+msgid "Name"
+msgstr "Ime"
+
+#: sf_toolbarbutton.xhp
+msgctxt ""
+"sf_toolbarbutton.xhp\n"
+"par_id31582885195372\n"
+"help.text"
+msgid "Readonly"
+msgstr "Samo za branje"
+
+#: sf_toolbarbutton.xhp
+msgctxt ""
+"sf_toolbarbutton.xhp\n"
+"par_id31582885195238\n"
+"help.text"
+msgid "Type"
+msgstr "Vrsta"
+
+#: sf_toolbarbutton.xhp
+msgctxt ""
+"sf_toolbarbutton.xhp\n"
+"par_id931582885195131\n"
+"help.text"
+msgid "Description"
+msgstr "Opis"
+
+#: sf_toolbarbutton.xhp
+msgctxt ""
+"sf_toolbarbutton.xhp\n"
+"par_id861582885655779\n"
+"help.text"
+msgid "Yes"
+msgstr "Da"
+
+#: sf_toolbarbutton.xhp
+msgctxt ""
+"sf_toolbarbutton.xhp\n"
+"par_id581582885655885\n"
+"help.text"
+msgid "Returns the name of the button."
+msgstr "Vrne ime gumba."
+
+#: sf_toolbarbutton.xhp
+msgctxt ""
+"sf_toolbarbutton.xhp\n"
+"par_id861582885655669\n"
+"help.text"
+msgid "Yes"
+msgstr "Da"
+
+#: sf_toolbarbutton.xhp
+msgctxt ""
+"sf_toolbarbutton.xhp\n"
+"par_id581582885657885\n"
+"help.text"
+msgid "Returns the height of the button, in pixels."
+msgstr "Vrne višino gumba v slikovnih točkah."
+
+#: sf_toolbarbutton.xhp
+msgctxt ""
+"sf_toolbarbutton.xhp\n"
+"par_id861582885655710\n"
+"help.text"
+msgid "Yes"
+msgstr "Da"
+
+#: sf_toolbarbutton.xhp
+msgctxt ""
+"sf_toolbarbutton.xhp\n"
+"par_id581582885655102\n"
+"help.text"
+msgid "Returns the index of the button in its parent toolbar."
+msgstr "Vrne indeks gumba v njegovi nadrejeni orodni vrstici."
+
+#: sf_toolbarbutton.xhp
+msgctxt ""
+"sf_toolbarbutton.xhp\n"
+"par_id861582885655205\n"
+"help.text"
+msgid "No"
+msgstr "Ne"
+
+#: sf_toolbarbutton.xhp
+msgctxt ""
+"sf_toolbarbutton.xhp\n"
+"par_id581582885655369\n"
+"help.text"
+msgid "The UNO command or script executed when the button is pressed. Read the Wiki page <link href=\"https://wiki.documentfoundation.org/Documentation/DevGuide/Scripting_Framework#Scripting_Framework_URI_Specification\">Scripting Framework URI Specification</link> to learn more on how to define a URI string."
+msgstr "Ukaz UNO ali skript, ki se izvede ob pritisku gumba. Če želite izvedeti več o določanju nizov URI, si preberite stran wiki <link href=\"https://wiki.documentfoundation.org/Documentation/DevGuide/Scripting_Framework#Scripting_Framework_URI_Specification\">specifikacije URI ogrodja za skriptanje</link> (v angl.)."
+
+#: sf_toolbarbutton.xhp
+msgctxt ""
+"sf_toolbarbutton.xhp\n"
+"par_id861582885655966\n"
+"help.text"
+msgid "Yes"
+msgstr "Da"
+
+#: sf_toolbarbutton.xhp
+msgctxt ""
+"sf_toolbarbutton.xhp\n"
+"par_id271582885605065\n"
+"help.text"
+msgid "<literal>Toolbar</literal> service"
+msgstr "Storitev<br/><literal>Toolbar</literal>"
+
+#: sf_toolbarbutton.xhp
+msgctxt ""
+"sf_toolbarbutton.xhp\n"
+"par_id581582885655812\n"
+"help.text"
+msgid "Returns a <literal>Toolbar</literal> service instance corresponding to the parent toolbar of the current toolbar button."
+msgstr "Vrne instanco storitve <literal>Toolbar</literal>, ki ustreza nadrejeni orodni vrstici trenutnega gumba orodne vrstice."
+
+#: sf_toolbarbutton.xhp
+msgctxt ""
+"sf_toolbarbutton.xhp\n"
+"par_id861582885655212\n"
+"help.text"
+msgid "No"
+msgstr "Ne"
+
+#: sf_toolbarbutton.xhp
+msgctxt ""
+"sf_toolbarbutton.xhp\n"
+"par_id581582885655344\n"
+"help.text"
+msgid "Specifies the tooltip text shown when the user hovers over the toolbar button."
+msgstr "Namig oz. besedilo pomoči, ki se prikaže, če z miško postanete nad gumbom orodne vrstice."
+
+#: sf_toolbarbutton.xhp
+msgctxt ""
+"sf_toolbarbutton.xhp\n"
+"par_id861582885655788\n"
+"help.text"
+msgid "No"
+msgstr "Ne"
+
+#: sf_toolbarbutton.xhp
+msgctxt ""
+"sf_toolbarbutton.xhp\n"
+"par_id581582885655062\n"
+"help.text"
+msgid "Specifies whether the toolbar button is visible or not."
+msgstr "Določa, ali je gumb orodne vrstice viden ali ne."
+
+#: sf_toolbarbutton.xhp
+msgctxt ""
+"sf_toolbarbutton.xhp\n"
+"par_id861582885651058\n"
+"help.text"
+msgid "Yes"
+msgstr "Da"
+
+#: sf_toolbarbutton.xhp
+msgctxt ""
+"sf_toolbarbutton.xhp\n"
+"par_id581582885653342\n"
+"help.text"
+msgid "Returns the width of the button, in pixels."
+msgstr "Vrne širino gumba v slikovnih točkah."
+
+#: sf_toolbarbutton.xhp
+msgctxt ""
+"sf_toolbarbutton.xhp\n"
+"par_id861582885636258\n"
+"help.text"
+msgid "Yes"
+msgstr "Da"
+
+#: sf_toolbarbutton.xhp
+msgctxt ""
+"sf_toolbarbutton.xhp\n"
+"par_id581582885641742\n"
+"help.text"
+msgid "Returns the X (horizontal) coordinate of the top-left corner of the button, in pixels."
+msgstr "Vrne (vodoravno) koordinato X levega vrhnjega kota gumba v slikovnih točkah."
+
+#: sf_toolbarbutton.xhp
+msgctxt ""
+"sf_toolbarbutton.xhp\n"
+"par_id861582885603158\n"
+"help.text"
+msgid "Yes"
+msgstr "Da"
+
+#: sf_toolbarbutton.xhp
+msgctxt ""
+"sf_toolbarbutton.xhp\n"
+"par_id581582885609942\n"
+"help.text"
+msgid "Returns the Y (vertical) coordinate of the top-left corner of the button, in pixels."
+msgstr "Vrne (navpično) koordinato Y levega vrhnjega kota gumba v slikovnih točkah."
+
+#: sf_toolbarbutton.xhp
+msgctxt ""
+"sf_toolbarbutton.xhp\n"
+"hd_id501701094012462\n"
+"help.text"
+msgid "Use of <literal>ToolbarButton</literal> alongside the <literal>PopupMenu</literal> service"
+msgstr "Uporaba <literal>ToolbarButton</literal> ob storitvi <literal>PopupMenu</literal>"
+
+#: sf_toolbarbutton.xhp
+msgctxt ""
+"sf_toolbarbutton.xhp\n"
+"par_id731701094077095\n"
+"help.text"
+msgid "A common use case of the properties <literal>X</literal> and <literal>Y</literal> described above is to open a popup menu in the position where the toolbar button is located."
+msgstr "Pogost primer rabe zgoraj opisanih lastnosti <literal>X</literal> in <literal>Y</literal> je pri odpiranju pojavnega menija na položaju, kjer se nahaja gumb orodne vrstice."
+
+#: sf_toolbarbutton.xhp
+msgctxt ""
+"sf_toolbarbutton.xhp\n"
+"par_id761701094138529\n"
+"help.text"
+msgid "Suppose you create the script below and associate it with a button named \"My Button\" in the <literal>standardbar</literal>. When it is clicked, a popup menu will be shown with 3 options for the user to select."
+msgstr "Recimo, da ustvarite spodnji skript in ga povežete z gumbom z imenom »Moj gumb« v <literal>standardbar</literal> (vrstici Standardno). Ko ga kliknete, se prikaže pojavni meni s tremi možnostmi, med katerimi lahko uporabnik izbira."
+
+#: sf_toolbarbutton.xhp
+msgctxt ""
+"sf_toolbarbutton.xhp\n"
+"bas_id971701094239852\n"
+"help.text"
+msgid "oButton = oToolbar.ToolbarButtons(\"My Button\")"
+msgstr "oButton = oToolbar.ToolbarButtons(\"Moj gumb\")"
+
+#: sf_toolbarbutton.xhp
+msgctxt ""
+"sf_toolbarbutton.xhp\n"
+"bas_id521701094240308\n"
+"help.text"
+msgid "oPopup.AddItem(\"Item A\", \"A\")"
+msgstr "oPopup.AddItem(\"Element A\", \"A\")"
+
+#: sf_toolbarbutton.xhp
+msgctxt ""
+"sf_toolbarbutton.xhp\n"
+"bas_id201701094240523\n"
+"help.text"
+msgid "oPopup.AddItem(\"Item B\", \"B\")"
+msgstr "oPopup.AddItem(\"Element B\", \"B\")"
+
+#: sf_toolbarbutton.xhp
+msgctxt ""
+"sf_toolbarbutton.xhp\n"
+"bas_id961701094240764\n"
+"help.text"
+msgid "oPopup.AddItem(\"Item C\", \"C\")"
+msgstr "oPopup.AddItem(\"Element C\", \"C\")"
+
+#: sf_toolbarbutton.xhp
+msgctxt ""
+"sf_toolbarbutton.xhp\n"
+"bas_id531701094241275\n"
+"help.text"
+msgid "MsgBox \"Your choice: \" & strResponse"
+msgstr "MsgBox \"Vaš izbor: \" & strResponse"
+
+#: sf_toolbarbutton.xhp
+msgctxt ""
+"sf_toolbarbutton.xhp\n"
+"pyc_id231701094980046\n"
+"help.text"
+msgid "toolbutton = toolbar.ToolbarButtons(\"My Button\")"
+msgstr "toolbutton = toolbar.ToolbarButtons(\"Moj gumb\")"
+
+#: sf_toolbarbutton.xhp
+msgctxt ""
+"sf_toolbarbutton.xhp\n"
+"pyc_id521701094980469\n"
+"help.text"
+msgid "popup.AddItem(\"Item A\", \"A\")"
+msgstr "popup.AddItem(\"Element A\", \"A\")"
+
+#: sf_toolbarbutton.xhp
+msgctxt ""
+"sf_toolbarbutton.xhp\n"
+"pyc_id841701094980684\n"
+"help.text"
+msgid "popup.AddItem(\"Item B\", \"B\")"
+msgstr "popup.AddItem(\"Element B\", \"B\")"
+
+#: sf_toolbarbutton.xhp
+msgctxt ""
+"sf_toolbarbutton.xhp\n"
+"pyc_id441701094980908\n"
+"help.text"
+msgid "popup.AddItem(\"Item C\", \"C\")"
+msgstr "popup.AddItem(\"Element C\", \"C\")"
+
+#: sf_toolbarbutton.xhp
+msgctxt ""
+"sf_toolbarbutton.xhp\n"
+"pyc_id241701094981357\n"
+"help.text"
+msgid "bas.MsgBox(f\"Your choice: {response}\")"
+msgstr "bas.MsgBox(f\"Vaš izbor: {response}\")"
+
+#: sf_toolbarbutton.xhp
+msgctxt ""
+"sf_toolbarbutton.xhp\n"
+"par_id651606319520519\n"
+"help.text"
+msgid "List of Methods in the ToolbarButton Service"
+msgstr "Seznam metod v storitvi ToolbarButton"
+
+#: sf_toolbarbutton.xhp
+msgctxt ""
+"sf_toolbarbutton.xhp\n"
+"par_id93158919969864\n"
+"help.text"
+msgid "Executes the command or script associated with the toolbar button."
+msgstr "Izvede ukaz ali skript, povezan z gumbom orodne vrstice."
+
+#: sf_toolbarbutton.xhp
+msgctxt ""
+"sf_toolbarbutton.xhp\n"
+"par_id191701023292148\n"
+"help.text"
+msgid "This method returns the value returned by the command or script executed."
+msgstr "Ta metoda vrne vrednost, ki jo vrne izvedeni ukaz ali skript."
+
+#: sf_toolbarbutton.xhp
+msgctxt ""
+"sf_toolbarbutton.xhp\n"
+"par_id731701023160247\n"
+"help.text"
+msgid "Use the <literal>OnClick</literal> property to determine the command or script that shall be executed. If the command/script does not return any value, then <literal>Null</literal> is returned."
+msgstr "Uporabite lastnost <literal>OnClick</literal> za določanje ukaza ali skripta, ki naj se izvrši. Če ukaz/skript ne vrne nobene vrednosti, je vrnjeno <literal>Null</literal>."
+
+#: sf_toolbarbutton.xhp
+msgctxt ""
+"sf_toolbarbutton.xhp\n"
+"par_id601611148017930\n"
+"help.text"
+msgid "The example below executes the <menuitem>Print</menuitem> button from the <menuitem>Standard</menuitem> toolbar:"
+msgstr "Spodnji primer izvede gumb <menuitem>Natisni</menuitem> iz orodne vrstice <menuitem>Standardno</menuitem>:"
+
+#: sf_toolbarbutton.xhp
+msgctxt ""
+"sf_toolbarbutton.xhp\n"
+"bas_id841701013457456\n"
+"help.text"
+msgid "oToolbarButton = oToolbar.ToolbarButtons(\"Print\")"
+msgstr "oToolbarButton = oToolbar.ToolbarButtons(\"Print\")"
+
+#: sf_toolbarbutton.xhp
+msgctxt ""
+"sf_toolbarbutton.xhp\n"
+"pyc_id351701020654314\n"
+"help.text"
+msgid "toolbar_button = toolbar.ToolbarButtons(\"Print\")"
+msgstr "toolbar_button = toolbar.ToolbarButtons(\"Print\")"
 
 #: sf_ui.xhp
 msgctxt ""
