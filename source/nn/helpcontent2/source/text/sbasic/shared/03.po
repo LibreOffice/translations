@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2024-01-22 14:04+0100\n"
+"POT-Creation-Date: 2024-02-02 00:04+0100\n"
 "PO-Revision-Date: 2023-12-24 09:45+0000\n"
 "Last-Translator: Kolbjørn Stuestøl <kolbjoern@stuestoel.no>\n"
 "Language-Team: Norwegian Nynorsk <https://translations.documentfoundation.org/projects/libo_help-master/textsbasicshared03/nn/>\n"
@@ -10224,6 +10224,15 @@ msgctxt ""
 msgid "SFDatabases.Dataset service"
 msgstr "SFDatabases.Dataset-tenesta"
 
+#. JdWin
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"bm_id261582733781987\n"
+"help.text"
+msgid "<bookmark_value>Dataset service</bookmark_value>"
+msgstr ""
+
 #. p9Y5W
 #: sf_dataset.xhp
 msgctxt ""
@@ -10440,14 +10449,14 @@ msgctxt ""
 msgid "<literal>Dictionary</literal> service"
 msgstr "<literal>Dictionary</literal>-tenesta"
 
-#. brqY4
+#. CQWtE
 #: sf_dataset.xhp
 msgctxt ""
 "sf_dataset.xhp\n"
 "par_id581582885657885\n"
 "help.text"
-msgid "Returns a <literal>Dictionary</literal>  with the default values used for each field in the dataset. The fields or columns in the dataset are the keys in the dictionary."
-msgstr "Returnerer ei <literal>ordliste</literal> med standardverdiane brukte i kvart felt i datasettet. Felta eller kolonnane i datasettet er nøklane i ordlista."
+msgid "Returns a <literal>Dictionary</literal> with the default values used for each field in the dataset. The fields or columns in the dataset are the keys in the dictionary."
+msgstr ""
 
 #. 3hnoA
 #: sf_dataset.xhp
@@ -10719,6 +10728,15 @@ msgctxt ""
 msgid "List of Methods in the Dataset Service"
 msgstr "Liste over metodar i datasett-tenesta"
 
+#. GeTvk
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"bm_id92158919969883\n"
+"help.text"
+msgid "<bookmark_value>Dataset service;CloseDataset</bookmark_value>"
+msgstr ""
+
 #. HPN2T
 #: sf_dataset.xhp
 msgctxt ""
@@ -10737,14 +10755,23 @@ msgctxt ""
 msgid "It is recommended to close the dataset after its use to free resources."
 msgstr "Det vert rådd til å lukka datasettet etter bruk for å frigje resursar."
 
-#. 8ocyE
+#. hMmFX
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"bm_id92158919969443\n"
+"help.text"
+msgid "<bookmark_value>Dataset service;CreateDataset</bookmark_value>"
+msgstr ""
+
+#. pB3e6
 #: sf_dataset.xhp
 msgctxt ""
 "sf_dataset.xhp\n"
 "par_id93158919343864\n"
 "help.text"
-msgid "Returns a <literal>Dataset</literal> service instance from an existing dataset by applying the specified filter and order by statements."
-msgstr "Returnerer ein førekomst av <literal>Dataset</literal>-tenesta frå eit eksisterande datasett ved å bruka det spesifiserte filteret og rekkjefølgja ut frå uttrykk."
+msgid "Returns a <literal>Dataset</literal> service instance from an existing dataset by applying the specified filter and <literal>ORDER BY</literal> statements."
+msgstr ""
 
 #. sTshg
 #: sf_dataset.xhp
@@ -10764,14 +10791,59 @@ msgctxt ""
 msgid "<emph>orderby</emph>: Specifies the ordering of the dataset as a SQL <literal>ORDER BY</literal> statement without the \"ORDER BY\" keyword. If this argument is not specified, then the sorting order used in the current dataset is applied, otherwise the current sorting order is replaced by this argument."
 msgstr "<emph>orderby</emph>: Spesifiserer rekkjefølgja på datasettet som eit SQL <literal>ORDER BY</literal>-uttrykk utan «ORDER BY»-nøkkelordet. Viss dette argumentet ikkje er spesifisert, vert rekkjefølgja i det gjeldande datasettet brukt, elles vert den gjeldande rekkjefølgja byt ut med dette argumentet."
 
-#. nGFDX
+#. yW4B8
 #: sf_dataset.xhp
 msgctxt ""
 "sf_dataset.xhp\n"
-"pyc_id221701180362978\n"
+"bas_id721701180069642\n"
 "help.text"
-msgid "new_dataset = dataset.CreateDataset(filter = \"\")"
-msgstr "new_dataset = dataset.CreateDataset(filter = \"\")"
+msgid "' Use an empty string to remove the current filter"
+msgstr ""
+
+#. upazw
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"bas_id981701180070457\n"
+"help.text"
+msgid "' Examples of common filters"
+msgstr ""
+
+#. sDiFY
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"bas_id217011800710769\n"
+"help.text"
+msgid "oNewDataset = oDataset.CreateDataset(Filter := \"[Name] = 'John'\")"
+msgstr ""
+
+#. 6CWiF
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"bas_id341701180070985\n"
+"help.text"
+msgid "oNewDataset = oDataset.CreateDataset(Filter := \"[Name] LIKE 'A'\")"
+msgstr ""
+
+#. f3E2J
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"bas_id371701180071169\n"
+"help.text"
+msgid "' It is possible to append additional conditions to the current filter"
+msgstr ""
+
+#. UFevo
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"bas_id817011802603460\n"
+"help.text"
+msgid "oNewDataset = oDataset.CreateDataset(Filter := \"(\" & oDataset.Filter & \") AND [Name] LIKE 'A'\")"
+msgstr ""
 
 #. 3GUnc
 #: sf_dataset.xhp
@@ -10800,6 +10872,15 @@ msgctxt ""
 msgid "new_dataset = dataset.CreateDataset(filter = f\"({dataset.Filter}) AND [Name] LIKE 'A'\")"
 msgstr "new_dataset = dataset.CreateDataset(filter = f\"({dataset.Filter}) AND [Name] LIKE 'A'\")"
 
+#. xB6gV
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"bm_id9215369969883\n"
+"help.text"
+msgid "<bookmark_value>Dataset service;Delete</bookmark_value>"
+msgstr ""
+
 #. nSBrV
 #: sf_dataset.xhp
 msgctxt ""
@@ -10817,6 +10898,15 @@ msgctxt ""
 "help.text"
 msgid "After this operation the cursor is positioned at the record immediately after the deleted record. If the deleted record is the last in the dataset, then the cursor is positioned after it and the property <literal>EOF</literal> returns <literal>True</literal>."
 msgstr "Etter denne operasjonen vert markøren plassert på posten like etter den sletta posten. Viss den sletta posten er den siste i datasettet, vert markøren plassert etter denne og eigenskapen <literal>EOF</literal> returnerer <literal>Sann</literal>."
+
+#. kQmsS
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"bm_id92153179969443\n"
+"help.text"
+msgid "<bookmark_value>Dataset service;ExportValueToFile</bookmark_value>"
+msgstr ""
 
 #. GVCDT
 #: sf_dataset.xhp
@@ -10890,6 +10980,15 @@ msgctxt ""
 msgid "dataset.ExportValueToFile(\"Picture\", r\"C:\\my_image.png\", True)"
 msgstr "dataset.ExportValueToFile(\"Bilete\",r\"C:\\Biletet_mitt.png\", True)"
 
+#. QQxdA
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"bm_id92158910859443\n"
+"help.text"
+msgid "<bookmark_value>Dataset service;GetRows</bookmark_value>"
+msgstr ""
+
 #. jUxfq
 #: sf_dataset.xhp
 msgctxt ""
@@ -10953,6 +11052,15 @@ msgctxt ""
 msgid "The following example reads a dataset in chunks of 100 rows until all the dataset has been read."
 msgstr "Eksempelet nedanfor les eit datasett i bitar på 100 rader til heile datasettet er lese."
 
+#. EQJcD
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"bm_id92153179971743\n"
+"help.text"
+msgid "<bookmark_value>Dataset service;GetValue</bookmark_value>"
+msgstr ""
+
 #. jGCUD
 #: sf_dataset.xhp
 msgctxt ""
@@ -10979,6 +11087,15 @@ msgctxt ""
 "help.text"
 msgid "<emph>fieldname</emph>: The name of the field to be returned, as a case-sensitive string."
 msgstr "<emph>feltnamn</emph>: Namnet på feltet som skal returnerast som ein streng som skil mellom store og små bokstavar."
+
+#. gJVKU
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"bm_id92153179527743\n"
+"help.text"
+msgid "<bookmark_value>Dataset service;Insert</bookmark_value>"
+msgstr ""
 
 #. pDNd8
 #: sf_dataset.xhp
@@ -11142,6 +11259,15 @@ msgctxt ""
 msgid "dataset.Insert(Name = \"John\", Age = 50, City = \"Chicago\")"
 msgstr "dataset.Insert(Namn = \"John\", Alder = 50, By = \"Chicago\")"
 
+#. TbKTJ
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"bm_id92159920571743\n"
+"help.text"
+msgid "<bookmark_value>Dataset service;MoveFirst</bookmark_value>      <bookmark_value>Dataset service;MoveLast</bookmark_value>"
+msgstr ""
+
 #. NYaXF
 #: sf_dataset.xhp
 msgctxt ""
@@ -11168,6 +11294,15 @@ msgctxt ""
 "help.text"
 msgid "Deleted records are ignored by this method."
 msgstr "Sletta postar vert ignorerte med denne metoden."
+
+#. 3WjAz
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"bm_id92157026521743\n"
+"help.text"
+msgid "<bookmark_value>Dataset service;MoveNext</bookmark_value>      <bookmark_value>Dataset service;MovePrevious</bookmark_value>"
+msgstr ""
 
 #. YFTHA
 #: sf_dataset.xhp
@@ -11204,6 +11339,15 @@ msgctxt ""
 "help.text"
 msgid "<emph>offset</emph>: The number of records by which the cursor shall be moved forward or backwards. This argument may be a negative value (Default = 1)."
 msgstr "<emph>offset</emph>: Kor mange postar markøren skal flyttast framover eller bakover. Dette argumentet kan vera negativt (standard = 1)."
+
+#. YwssF
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"bm_id92157026521993\n"
+"help.text"
+msgid "<bookmark_value>Dataset service;Reload</bookmark_value>"
+msgstr ""
 
 #. gfYEg
 #: sf_dataset.xhp
@@ -11267,6 +11411,15 @@ msgctxt ""
 "help.text"
 msgid "dataset.Reload(Filter = \"[Name] = 'John'\", OrderBy = \"Age\")"
 msgstr "dataset.Reload(Filter = \"[Namn] = 'John'\", OrderBy = \"Alder\")"
+
+#. eGCiM
+#: sf_dataset.xhp
+msgctxt ""
+"sf_dataset.xhp\n"
+"bm_id92157026521088\n"
+"help.text"
+msgid "<bookmark_value>Dataset service;Update</bookmark_value>"
+msgstr ""
 
 #. AQgTY
 #: sf_dataset.xhp
@@ -13257,14 +13410,14 @@ msgctxt ""
 msgid "<emph>ControlName</emph> : A valid control name as a case-sensitive string. If absent, the list of control names is returned as a zero-based array."
 msgstr "<emph>KontrolNamn</emph>: Eit gyldig kontrollnamn som ein streng (som skil mellom små og store bokstavar). Viss denne manglar vert lista over kontrollnamn returnert som ei nullbasert matrise."
 
-#. YWeDt
+#. YGUjF
 #: sf_dialog.xhp
 msgctxt ""
 "sf_dialog.xhp\n"
 "par_id381591885776500\n"
 "help.text"
-msgid "Create a new control of type <literal>Button</literal> in the current dialog."
-msgstr "Lagar eit nytt kontrollelement av typen <literal>Knapp</literal> i det gjeldande dialogvindauget."
+msgid "Creates a new control of type <literal>Button</literal> in the current dialog."
+msgstr ""
 
 #. UUuAw
 #: sf_dialog.xhp
@@ -13338,14 +13491,14 @@ msgctxt ""
 msgid "An instance of <link href=\"text/sbasic/shared/03/sf_dialogcontrol.xhp\"><literal>SFDialogs</literal>.<literal>DialogControl</literal></link> service or <literal>Nothing</literal>."
 msgstr "Ein førekomst av tenesta <link href=\"text/sbasic/shared/03/sf_dialogcontrol.xhp\"><literal>SFDialogs</literal>.<literal>DialogControl</literal></link> eller <literal>Nothing</literal>."
 
-#. ztBSW
+#. v64nV
 #: sf_dialog.xhp
 msgctxt ""
 "sf_dialog.xhp\n"
 "par_id991591995776500\n"
 "help.text"
-msgid "Create a new control of type <literal>CheckBox</literal> in the current dialog."
-msgstr "Lagar eit nytt kontrollelement av typen <literal>Avkryssingsboks</literal> i det gjeldande dialogvindauget."
+msgid "Creates a new control of type <literal>CheckBox</literal> in the current dialog."
+msgstr ""
 
 #. NFpS6
 #: sf_dialog.xhp
@@ -13356,23 +13509,23 @@ msgctxt ""
 msgid "<emph>MultiLine</emph>: When <literal>True</literal> (default = <literal>False</literal>), the caption may be displayed on more than one line."
 msgstr "<emph>MultiLine</emph>: Når <literal>Sann</literal> (standard = <literal>Usann</literal>), kan biletteksten visast på meir enn éi linje."
 
-#. c7gRE
+#. FyigU
 #: sf_dialog.xhp
 msgctxt ""
 "sf_dialog.xhp\n"
 "par_id991591885776500\n"
 "help.text"
-msgid "Create a new control of type <literal>ComboBox</literal> in the current dialog."
-msgstr "Lagar eit nytt kontrollelement av typen <literal>Kombinasjonsboks</literal> i det gjeldande dialogvindauget."
+msgid "Creates a new control of type <literal>ComboBox</literal> in the current dialog."
+msgstr ""
 
-#. EBEZu
+#. EDEni
 #: sf_dialog.xhp
 msgctxt ""
 "sf_dialog.xhp\n"
 "par_id241688132526109\n"
 "help.text"
-msgid "<emph>Border</emph>: \"3D\" (default) or \"FLAT\" or \"NONE\""
-msgstr "<emph>Border</emph>: \"3D\" (standard) eller \"FLAT\" eller \"NONE\""
+msgid "<emph>Border</emph>: \"3D\" (default), \"FLAT\" or \"NONE\""
+msgstr ""
 
 #. xAa2y
 #: sf_dialog.xhp
@@ -13392,23 +13545,23 @@ msgctxt ""
 msgid "<emph>LineCount</emph>: Specifies the maximum line count displayed in the drop down (default = 5)"
 msgstr "<emph>LineCount</emph>: Spesifiserer det høgste talet på linjer vist i nedtrekket (standard = 5)"
 
-#. CzvWq
+#. Ezmhb
 #: sf_dialog.xhp
 msgctxt ""
 "sf_dialog.xhp\n"
 "par_id991591005776500\n"
 "help.text"
-msgid "Create a new control of type <literal>CurrencyField</literal> in the current dialog."
-msgstr "Lagar eit nytt kontrollelement av typen <literal>Valutafelt</literal> i det gjeldande dialogvindauget."
+msgid "Creates a new control of type <literal>CurrencyField</literal> in the current dialog."
+msgstr ""
 
-#. CzJFF
+#. 4ipoE
 #: sf_dialog.xhp
 msgctxt ""
 "sf_dialog.xhp\n"
 "par_id511688132750220\n"
 "help.text"
-msgid "<emph>Border</emph>: \"3D\" (default) or \"FLAT\" or \"NONE\""
-msgstr "<emph>Border</emph>: \"3D\" (standard) eller \"FLAT\" eller \"NONE\""
+msgid "<emph>Border</emph>: \"3D\" (default), \"FLAT\" or \"NONE\""
+msgstr ""
 
 #. 9Y7sF
 #: sf_dialog.xhp
@@ -13455,23 +13608,23 @@ msgctxt ""
 msgid "<emph>Accuracy</emph>: specifies the decimal accuracy. Default = 2 decimal digits"
 msgstr "<emph>Accuracy</emph>: spesifiserer talet på desimalar. Standard = 2."
 
-#. WEbJY
+#. FqGdd
 #: sf_dialog.xhp
 msgctxt ""
 "sf_dialog.xhp\n"
 "par_id199598185776500\n"
 "help.text"
-msgid "Create a new control of type <literal>DateField</literal> in the current dialog."
-msgstr "Lagar eit nytt kontrollelement av typen <literal>DateField</literal> i det gjeldande dialogvindauget."
+msgid "Creates a new control of type <literal>DateField</literal> in the current dialog."
+msgstr ""
 
-#. WJDCR
+#. apRe6
 #: sf_dialog.xhp
 msgctxt ""
 "sf_dialog.xhp\n"
 "par_id831688133418579\n"
 "help.text"
-msgid "<emph>Border</emph>: \"3D\" (default) or \"FLAT\" or \"NONE\""
-msgstr "<emph>Border</emph>: \"3D\" (standard) eller \"FLAT\" eller \"NONE\""
+msgid "<emph>Border</emph>: \"3D\" (default), \"FLAT\" or \"NONE\""
+msgstr ""
 
 #. LiKFk
 #: sf_dialog.xhp
@@ -13500,59 +13653,59 @@ msgctxt ""
 msgid "<emph>MaxDate</emph>: the largest date that can be entered in the control. Default = 2200-12-31"
 msgstr "<emph>MaxValue</emph>: den høgaste datoen som kan skrivast inn i kontrollelementet. Standard = 2200-12-31"
 
-#. xP5vF
+#. GG7n7
 #: sf_dialog.xhp
 msgctxt ""
 "sf_dialog.xhp\n"
 "par_id199591885776511\n"
 "help.text"
-msgid "Create a new control of type <literal>FileControl</literal> in the current dialog."
-msgstr "Lagar eit nytt kontrollelement av typen <literal>FileControl</literal> i det gjeldande dialogvindauget."
+msgid "Creates a new control of type <literal>FileControl</literal> in the current dialog."
+msgstr ""
 
-#. Z8TBR
+#. FYMFM
 #: sf_dialog.xhp
 msgctxt ""
 "sf_dialog.xhp\n"
 "par_id1001688133702877\n"
 "help.text"
-msgid "<emph>Border</emph>: \"3D\" (default) or \"FLAT\" or \"NONE\""
-msgstr "<emph>Border</emph>: \"3D\" (standard) eller \"FLAT\" eller \"NONE\""
+msgid "<emph>Border</emph>: \"3D\" (default), \"FLAT\" or \"NONE\""
+msgstr ""
 
-#. GB9hB
+#. eMjvr
 #: sf_dialog.xhp
 msgctxt ""
 "sf_dialog.xhp\n"
 "par_id199195885776500\n"
 "help.text"
-msgid "Create a new control of type <literal>FixedLine</literal> in the current dialog."
-msgstr "Lagar eit nytt kontrollelement av typen <literal>FixedLine</literal> i det gjeldande dialogvindauget."
+msgid "Creates a new control of type <literal>FixedLine</literal> in the current dialog."
+msgstr ""
 
-#. FstFf
+#. ZNKBx
 #: sf_dialog.xhp
 msgctxt ""
 "sf_dialog.xhp\n"
 "par_id351688134656035\n"
 "help.text"
-msgid "<emph>Orientation</emph>: \"H[orizontal]\" or \"V[ertical]\"."
-msgstr "<emph>Orientation</emph>: \"H[orizontal]\" eller \"V[ertical]\"."
+msgid "<emph>Orientation</emph>: for horizontal orientation use \"H\" or \"Horizontal\"; for vertical orientation use \"V\" or \"Vertical\"."
+msgstr ""
 
-#. fQ7cw
+#. wgF6X
 #: sf_dialog.xhp
 msgctxt ""
 "sf_dialog.xhp\n"
 "par_id199721885776533\n"
 "help.text"
-msgid "Create a new control of type <literal>FixedText</literal> in the current dialog."
-msgstr "Lagar eit nytt kontrollelement av typen <literal>FixedText</literal> i det gjeldande dialogvindauget."
+msgid "Creates a new control of type <literal>FixedText</literal> in the current dialog."
+msgstr ""
 
-#. qWysV
+#. 4GQp7
 #: sf_dialog.xhp
 msgctxt ""
 "sf_dialog.xhp\n"
 "par_id781688134809419\n"
 "help.text"
-msgid "<emph>Border</emph>: \"NONE\" (default) or \"FLAT\" or \"3D\""
-msgstr "<emph>Border</emph>: \"NONE\" (standard) eller \"FLAT\" eller \"3D\""
+msgid "<emph>Border</emph>: \"NONE\" (default), \"FLAT\" or \"3D\""
+msgstr ""
 
 #. dG4NW
 #: sf_dialog.xhp
@@ -13563,41 +13716,41 @@ msgctxt ""
 msgid "<emph>Multiline</emph>: When <literal>True</literal> (default = <literal>False</literal>), the caption may be displayed on more than one line"
 msgstr "<emph>MultiLine</emph>: Når <literal>Sann</literal> (standard = <literal>Usann</literal>), kan biletteksten visast på meir enn éi linje."
 
-#. 24XQ9
+#. tBZ6N
 #: sf_dialog.xhp
 msgctxt ""
 "sf_dialog.xhp\n"
 "par_id121688134820022\n"
 "help.text"
-msgid "<emph>Align</emph>: horizontal alignment, \"LEFT\" (default) or \"CENTER\" or \"RIGHT\""
-msgstr "<emph>Align</emph>: vassrett justering, \"LEFT\" (standard) eller \"CENTER\" eller \"RIGHT\""
+msgid "<emph>Align</emph>: horizontal alignment, \"LEFT\" (default), \"CENTER\" or \"RIGHT\""
+msgstr ""
 
-#. AabE3
+#. Ye4uy
 #: sf_dialog.xhp
 msgctxt ""
 "sf_dialog.xhp\n"
 "par_id316881340820555\n"
 "help.text"
-msgid "<emph>VerticalAlign</emph>: vertical alignment, \"TOP\" (default) or \"MIDDLE\" or \"BOTTOM\""
-msgstr "<emph>VerticalAlign</emph>: loddrett justering, \"TOP\" (standard) eller \"MIDDLE\" eller \"BOTTOM\""
+msgid "<emph>VerticalAlign</emph>: vertical alignment, \"TOP\" (default), \"MIDDLE\" or \"BOTTOM\""
+msgstr ""
 
-#. BFyLA
+#. rLPrm
 #: sf_dialog.xhp
 msgctxt ""
 "sf_dialog.xhp\n"
 "par_id199591885776500\n"
 "help.text"
-msgid "Create a new control of type <literal>FormattedField</literal> in the current dialog."
-msgstr "Lagar eit nytt kontrollelement av typen <literal>FormattedField</literal> i det gjeldande dialogvindauget."
+msgid "Creates a new control of type <literal>FormattedField</literal> in the current dialog."
+msgstr ""
 
-#. Egi57
+#. MxCET
 #: sf_dialog.xhp
 msgctxt ""
 "sf_dialog.xhp\n"
 "par_id561688135183954\n"
 "help.text"
-msgid "<emph>Border</emph>: \"3D\" (default) or \"FLAT\" or \"NONE\""
-msgstr "<emph>Border</emph>: \"3D\" (standard) eller \"FLAT\" eller \"NONE\""
+msgid "<emph>Border</emph>: \"3D\" (default), \"FLAT\" or \"NONE\""
+msgstr ""
 
 #. yEPP4
 #: sf_dialog.xhp
@@ -13626,32 +13779,32 @@ msgctxt ""
 msgid "<emph>MaxValue</emph>: the largest value that can be entered in the control. Default = +1000000"
 msgstr "<emph>MaxValue</emph>: den høgaste verdien som kan skrivast inn i kontrollelementet. Standard = +1000000"
 
-#. fnPFv
+#. Ba9CC
 #: sf_dialog.xhp
 msgctxt ""
 "sf_dialog.xhp\n"
 "par_id100691885776500\n"
 "help.text"
-msgid "Create a new control of type <literal>GroupBox</literal> in the current dialog."
-msgstr "Lagar eit nytt kontrollelement av typen <literal>GroupBox</literal> i det gjeldande dialogvindauget."
+msgid "Creates a new control of type <literal>GroupBox</literal> in the current dialog."
+msgstr ""
 
-#. mSbuC
+#. dAVZb
 #: sf_dialog.xhp
 msgctxt ""
 "sf_dialog.xhp\n"
 "par_id101701885776500\n"
 "help.text"
-msgid "Create a new control of type <literal>Hyperlink</literal> in the current dialog."
-msgstr "Lagar eit nytt kontrollelement av typen <literal>Hyperlink</literal> i det gjeldande dialogvindauget."
+msgid "Creates a new control of type <literal>Hyperlink</literal> in the current dialog."
+msgstr ""
 
-#. ZLjCH
+#. 6KsbB
 #: sf_dialog.xhp
 msgctxt ""
 "sf_dialog.xhp\n"
 "par_id731688542076471\n"
 "help.text"
-msgid "<emph>Border</emph>: \"NONE\" (default) or \"FLAT\" or \"3D\""
-msgstr "<emph>Border</emph>: \"NONE\" (standard) eller \"FLAT\" eller \"3D\""
+msgid "<emph>Border</emph>: \"NONE\" (default), \"FLAT\" or \"3D\""
+msgstr ""
 
 #. kibrW
 #: sf_dialog.xhp
@@ -13662,41 +13815,41 @@ msgctxt ""
 msgid "<emph>MultiLine</emph>: When <literal>True</literal> (default = <literal>False</literal>), the caption may be displayed on more than one line"
 msgstr "<emph>MultiLine</emph>: Når <literal>Sann</literal> (standard = <literal>Usann</literal>), kan biletteksten visast på meir enn éi linje."
 
-#. oBCY5
+#. ERkE3
 #: sf_dialog.xhp
 msgctxt ""
 "sf_dialog.xhp\n"
 "par_id831688542077407\n"
 "help.text"
-msgid "<emph>Align</emph>: horizontal alignment, \"LEFT\" (default) or \"CENTER\" or \"RIGHT\""
-msgstr "<emph>Align</emph>: vassrett justering, \"LEFT\" (standard) eller \"CENTER\" eller \"RIGHT\""
+msgid "<emph>Align</emph>: horizontal alignment, \"LEFT\" (default), \"CENTER\" or \"RIGHT\""
+msgstr ""
 
-#. E45Rv
+#. tJ3hr
 #: sf_dialog.xhp
 msgctxt ""
 "sf_dialog.xhp\n"
 "par_id941688542077873\n"
 "help.text"
-msgid "<emph>VerticalAlign</emph>: vertical alignment, \"TOP\" (default) or \"MIDDLE\" or \"BOTTOM\""
-msgstr "<emph>VerticalAlign</emph>: loddrett justering, \"TOP\" (standard) eller \"MIDDLE\" eller \"BOTTOM\""
+msgid "<emph>VerticalAlign</emph>: vertical alignment, \"TOP\" (default), \"MIDDLE\" or \"BOTTOM\""
+msgstr ""
 
-#. RSnLh
+#. PEGWX
 #: sf_dialog.xhp
 msgctxt ""
 "sf_dialog.xhp\n"
 "par_id199591885776504\n"
 "help.text"
-msgid "Create a new control of type <literal>ImageControl</literal> in the current dialog."
-msgstr "Lagar eit nytt kontrollelement av typen <literal>ImageControl</literal> i det gjeldande dialogvindauget."
+msgid "Creates a new control of type <literal>ImageControl</literal> in the current dialog."
+msgstr ""
 
-#. oYoCP
+#. NhwZ8
 #: sf_dialog.xhp
 msgctxt ""
 "sf_dialog.xhp\n"
 "par_id551688135418418\n"
 "help.text"
-msgid "<emph>Border</emph>: \"3D\" (default) or \"FLAT\" or \"NONE\""
-msgstr "<emph>Border</emph>: \"3D\" (standard) eller \"FLAT\" eller \"NONE\""
+msgid "<emph>Border</emph>: \"3D\" (default), \"FLAT\" or \"NONE\""
+msgstr ""
 
 #. mFJZ4
 #: sf_dialog.xhp
@@ -13707,23 +13860,23 @@ msgctxt ""
 msgid "<emph>Scale</emph>: One of next values: \"FITTOSIZE\" (default), \"KEEPRATIO\" or \"NO\""
 msgstr "<emph>Scale</emph>: Ein av desse verdiane: \"FITTOSIZE\" (standard), \"KEEPRATIO\" eller \"NO\""
 
-#. qBHYH
+#. 3CNDT
 #: sf_dialog.xhp
 msgctxt ""
 "sf_dialog.xhp\n"
 "par_id199591885776506\n"
 "help.text"
-msgid "Create a new control of type <literal>ListBox</literal> in the current dialog."
-msgstr "Lagar eit nytt kontrollelement av typen <literal>ListBox</literal> i det gjeldande dialogvindauget."
+msgid "Creates a new control of type <literal>ListBox</literal> in the current dialog."
+msgstr ""
 
-#. EJiPj
+#. PFYBo
 #: sf_dialog.xhp
 msgctxt ""
 "sf_dialog.xhp\n"
 "par_id1001688135548955\n"
 "help.text"
-msgid "<emph>Border</emph>: \"3D\" (default) or \"FLAT\" or \"NONE\""
-msgstr "<emph>Border</emph>: \"3D\" (standard) eller \"FLAT\" eller \"NONE\""
+msgid "<emph>Border</emph>: \"3D\" (default), \"FLAT\" or \"NONE\""
+msgstr ""
 
 #. FQ6Eh
 #: sf_dialog.xhp
@@ -13752,23 +13905,23 @@ msgctxt ""
 msgid "<emph>MultiSelect</emph>: When <literal>True</literal>, more than 1 entry may be selected. Default = <literal>False</literal>"
 msgstr "<emph>MultiSelect</emph>: Når <literal>Sann</literal> kan meir enn éi oppføring veljast. Standard = <literal>Usann</literal>"
 
-#. 2td5s
+#. A6Ffu
 #: sf_dialog.xhp
 msgctxt ""
 "sf_dialog.xhp\n"
 "par_id199591885776510\n"
 "help.text"
-msgid "Create a new control of type <literal>NumericField</literal> in the current dialog."
-msgstr "Lagar eit nytt kontrollelement av typen <literal>NumericField</literal> i det gjeldande dialogvindauget."
+msgid "Creates a new control of type <literal>NumericField</literal> in the current dialog."
+msgstr ""
 
-#. zzVVQ
+#. T3jBp
 #: sf_dialog.xhp
 msgctxt ""
 "sf_dialog.xhp\n"
 "par_id841688135885946\n"
 "help.text"
-msgid "<emph>Border</emph>: \"3D\" (default) or \"FLAT\" or \"NONE\""
-msgstr "<emph>Border</emph>: \"3D\" (standard) eller \"FLAT\" eller \"NONE\""
+msgid "<emph>Border</emph>: \"3D\" (default), \"FLAT\" or \"NONE\""
+msgstr ""
 
 #. TMyYy
 #: sf_dialog.xhp
@@ -13815,23 +13968,23 @@ msgctxt ""
 msgid "<emph>Accuracy</emph>: specifies the decimal accuracy. Default = 2 decimal digits"
 msgstr "<emph>Accuracy</emph>: spesifiserer talet på desimalar. Standard = 2."
 
-#. XDRog
+#. tVkcA
 #: sf_dialog.xhp
 msgctxt ""
 "sf_dialog.xhp\n"
 "par_id200591996776500\n"
 "help.text"
-msgid "Create a new control of type <literal>PatternField</literal> in the current dialog."
-msgstr "Lagar eit nytt kontrollelement av typen <literal>PatternField</literal> i det gjeldande dialogvindauget."
+msgid "Creates a new control of type <literal>PatternField</literal> in the current dialog."
+msgstr ""
 
-#. hHGWt
+#. MrNfF
 #: sf_dialog.xhp
 msgctxt ""
 "sf_dialog.xhp\n"
 "par_id251688136173107\n"
 "help.text"
-msgid "<emph>Border</emph>: \"3D\" (default) or \"FLAT\" or \"NONE\""
-msgstr "<emph>Border</emph>: \"3D\" (standard) eller \"FLAT\" eller \"NONE\""
+msgid "<emph>Border</emph>: \"3D\" (default), \"FLAT\" or \"NONE\""
+msgstr ""
 
 #. rtHid
 #: sf_dialog.xhp
@@ -13851,23 +14004,23 @@ msgctxt ""
 msgid "<emph>LiteralMask</emph>: contains the initial values that are displayed in the pattern field"
 msgstr "<emph>LiteralMask</emph>: inneheld startverdiane som vert viste i mønsterfeltet"
 
-#. amC4c
+#. CTGFA
 #: sf_dialog.xhp
 msgctxt ""
 "sf_dialog.xhp\n"
 "par_id311591885776500\n"
 "help.text"
-msgid "Create a new control of type <literal>ProgressBar</literal> in the current dialog."
-msgstr "Lagar eit nytt kontrollelement av typen <literal>ProgressBar</literal> i det gjeldande dialogvindauget."
+msgid "Creates a new control of type <literal>ProgressBar</literal> in the current dialog."
+msgstr ""
 
-#. 4BBzC
+#. 2FTe2
 #: sf_dialog.xhp
 msgctxt ""
 "sf_dialog.xhp\n"
 "par_id551688136587329\n"
 "help.text"
-msgid "<emph>Border</emph>: \"3D\" (default) or \"FLAT\" or \"NONE\""
-msgstr "<emph>Border</emph>: \"3D\" (standard) eller \"FLAT\" eller \"NONE\""
+msgid "<emph>Border</emph>: \"3D\" (default), \"FLAT\" or \"NONE\""
+msgstr ""
 
 #. JvdPM
 #: sf_dialog.xhp
@@ -13887,14 +14040,14 @@ msgctxt ""
 msgid "<emph>MaxValue</emph>: the largest value that can be entered in the control. Default = 100"
 msgstr "<emph>MaxValue</emph>: den høgaste verdien som kan skrivast inn i kontrollelementet. Standard = 100"
 
-#. orPfn
+#. oABGE
 #: sf_dialog.xhp
 msgctxt ""
 "sf_dialog.xhp\n"
 "par_id200502985776500\n"
 "help.text"
-msgid "Create a new control of type <literal>RadioButton</literal> in the current dialog."
-msgstr "Lagar eit nytt kontrollelement av typen <literal>RadioButton</literal> i det gjeldande dialogvindauget."
+msgid "Creates a new control of type <literal>RadioButton</literal> in the current dialog."
+msgstr ""
 
 #. NFUPV
 #: sf_dialog.xhp
@@ -13905,32 +14058,32 @@ msgctxt ""
 msgid "<emph>MultiLine</emph>: When <literal>True</literal> (default = <literal>False</literal>), the caption may be displayed on more than one line"
 msgstr "<emph>MultiLine</emph>: Når <literal>Sann</literal> (standard = <literal>Usann</literal>), kan biletteksten visast på meir enn éi linje."
 
-#. FXgot
+#. 3qZg3
 #: sf_dialog.xhp
 msgctxt ""
 "sf_dialog.xhp\n"
 "par_id200591886886500\n"
 "help.text"
-msgid "Create a new control of type <literal>ScrollBar</literal> in the current dialog."
-msgstr "Lagar eit nytt kontrollelement av typen <literal>ScrollBar</literal> i det gjeldande dialogvindauget."
+msgid "Creates a new control of type <literal>ScrollBar</literal> in the current dialog."
+msgstr ""
 
-#. eqt7D
+#. Z2q8f
 #: sf_dialog.xhp
 msgctxt ""
 "sf_dialog.xhp\n"
 "par_id731688136882518\n"
 "help.text"
-msgid "<emph>Orientation</emph>: H[orizontal] or V[ertical]"
-msgstr "<emph>Orientation</emph>: H[orizontal] eller V[ertical]."
+msgid "<emph>Orientation</emph>: for horizontal orientation use \"H\" or \"Horizontal\"; for vertical orientation use \"V\" or \"Vertical\"."
+msgstr ""
 
-#. ukFA2
+#. Amf4r
 #: sf_dialog.xhp
 msgctxt ""
 "sf_dialog.xhp\n"
 "par_id341688136882960\n"
 "help.text"
-msgid "<emph>Border</emph>: \"3D\" (default) or \"FLAT\" or \"NONE\""
-msgstr "<emph>Border</emph>: \"3D\" (standard) eller \"FLAT\" eller \"NONE\""
+msgid "<emph>Border</emph>: \"3D\" (default), \"FLAT\" or \"NONE\""
+msgstr ""
 
 #. 5azTe
 #: sf_dialog.xhp
@@ -13950,23 +14103,23 @@ msgctxt ""
 msgid "<emph>MaxValue</emph>: the largest value that can be entered in the control. Default = 100"
 msgstr "<emph>MaxValue</emph>: den høgaste verdien som kan skrivast inn i kontrollelementet. Standard = 100"
 
-#. PfwHb
+#. z62Pw
 #: sf_dialog.xhp
 msgctxt ""
 "sf_dialog.xhp\n"
 "par_id200502985776722\n"
 "help.text"
-msgid "Create a new control of type <literal>TableControl</literal> in the current dialog."
-msgstr "Lagar eit nytt kontrollelement av typen <literal>TableControl</literal> i det gjeldande dialogvindauget."
+msgid "Creates a new control of type <literal>TableControl</literal> in the current dialog."
+msgstr ""
 
-#. iFFvS
+#. nhfDm
 #: sf_dialog.xhp
 msgctxt ""
 "sf_dialog.xhp\n"
 "par_id541688393982300\n"
 "help.text"
-msgid "<emph>Border</emph>: \"3D\" (default) or \"FLAT\" or \"NONE\""
-msgstr "<emph>Border</emph>: \"3D\" (standard) eller \"FLAT\" eller \"NONE\""
+msgid "<emph>Border</emph>: \"3D\" (default), \"FLAT\" or \"NONE\""
+msgstr ""
 
 #. gjYXC
 #: sf_dialog.xhp
@@ -13986,14 +14139,14 @@ msgctxt ""
 msgid "<emph>ColumnHeaders</emph>: when <literal>True</literal> (default), the column Headers are shown"
 msgstr "<emph>ColumnHeaders</emph>: når <literal>Sann</literal> (standard) vert kolonneoverskriftene viste"
 
-#. 7CcWA
+#. SsoFj
 #: sf_dialog.xhp
 msgctxt ""
 "sf_dialog.xhp\n"
 "par_id141688393984239\n"
 "help.text"
-msgid "<emph>ScrollBars</emph>: H[orizontal] or V[ertical] or B[oth] or N[one] (default). Scrollbars appear dynamically when they are needed."
-msgstr "<emph>ScrollBars</emph>: H[orizontal] eller V[ertical] eller B[oth] eller N[one] (standard). Rullefelta vert viste dynamiske når dei trengst."
+msgid "<emph>ScrollBars</emph>: possible values are: \"H\" or \"Horizontal\" (horizontal scrollbars), \"V\" or \"Vertical\" (vertical scrollbars); \"B\" or \"Both\" (both scrollbars); \"N\" or \"None\" (default) for no scrollbars. Scrollbars appear dynamically when they are needed."
+msgstr ""
 
 #. SjB3M
 #: sf_dialog.xhp
@@ -14004,23 +14157,23 @@ msgctxt ""
 msgid "<emph>GridLines</emph>: when <literal>True</literal> (default = <literal>False</literal>) horizontal and vertical lines are painted between the grid cells"
 msgstr "<emph>GridLines</emph>: når <literal>TSann</literal> (dstandard = <literal>Usann</literal>) det vert viste vassrette og loddrette injer mellom rutenettcellene."
 
-#. Afff6
+#. 2DAZy
 #: sf_dialog.xhp
 msgctxt ""
 "sf_dialog.xhp\n"
 "par_id200591895776500\n"
 "help.text"
-msgid "Create a new control of type <literal>TextField</literal> in the current dialog."
-msgstr "Lagar eit nytt kontrollelement av typen <literal>TextField</literal> i det gjeldande dialogvindauget."
+msgid "Creates a new control of type <literal>TextField</literal> in the current dialog."
+msgstr ""
 
-#. VeTxt
+#. CoJb2
 #: sf_dialog.xhp
 msgctxt ""
 "sf_dialog.xhp\n"
 "par_id281688394635114\n"
 "help.text"
-msgid "<emph>Border</emph>: \"3D\" (default) or \"FLAT\" or \"NONE\""
-msgstr "<emph>Border</emph>: \"3D\" (standard) eller \"FLAT\" eller \"NONE\""
+msgid "<emph>Border</emph>: \"3D\" (default), \"FLAT\" or \"NONE\""
+msgstr ""
 
 #. g2ZgE
 #: sf_dialog.xhp
@@ -14049,23 +14202,23 @@ msgctxt ""
 msgid "<emph>PasswordCharacter</emph>: a single character specifying the echo for a password text field (default = \"\")"
 msgstr "<emph>PasswordCharacter</emph>: eit enkelt teikn som spesifiserer ekkoet for passordfeltet (standard = \"\")"
 
-#. eFECE
+#. ZJQiw
 #: sf_dialog.xhp
 msgctxt ""
 "sf_dialog.xhp\n"
 "par_id200591895776611\n"
 "help.text"
-msgid "Create a new control of type <literal>TimeField</literal> in the current dialog."
-msgstr "Lagar eit nytt kontrollelement av typen <literal>TimeField</literal> i det gjeldande dialogvindauget."
+msgid "Creates a new control of type <literal>TimeField</literal> in the current dialog."
+msgstr ""
 
-#. ADdEz
+#. sBWUe
 #: sf_dialog.xhp
 msgctxt ""
 "sf_dialog.xhp\n"
 "par_id771688394821811\n"
 "help.text"
-msgid "<emph>Border</emph>: \"3D\" (default) or \"FLAT\" or \"NONE\""
-msgstr "<emph>Border</emph>: \"3D\" (standard) eller \"FLAT\" eller \"NONE\""
+msgid "<emph>Border</emph>: \"3D\" (default), \"FLAT\" or \"NONE\""
+msgstr ""
 
 #. rEYM9
 #: sf_dialog.xhp
@@ -14085,23 +14238,23 @@ msgctxt ""
 msgid "<emph>MaxTime</emph>: the largest time that can be entered in the control. Default = 24h"
 msgstr "<emph>MaxTime</emph>: den høgaste tidsverdien som kan skrivast inn i kontrollelementet. Standard = 24h"
 
-#. CcyYS
+#. noA6Y
 #: sf_dialog.xhp
 msgctxt ""
 "sf_dialog.xhp\n"
 "par_id200692885776500\n"
 "help.text"
-msgid "Create a new control of type <literal>TreeControl</literal> in the current dialog."
-msgstr "Lagar eit nytt kontrollelement av typen <literal>TreeControl</literal> i det gjeldande dialogvindauget."
+msgid "Creates a new control of type <literal>TreeControl</literal> in the current dialog."
+msgstr ""
 
-#. KBrUN
+#. A7UxA
 #: sf_dialog.xhp
 msgctxt ""
 "sf_dialog.xhp\n"
 "par_id241688394984562\n"
 "help.text"
-msgid "<emph>Border</emph>: \"3D\" (default) or \"FLAT\" or \"NONE\""
-msgstr "<emph>Border</emph>: \"3D\" (standard) eller \"FLAT\" eller \"NONE\""
+msgid "<emph>Border</emph>: \"3D\" (default), \"FLAT\" or \"NONE\""
+msgstr ""
 
 #. j8x9C
 #: sf_dialog.xhp
@@ -14310,14 +14463,14 @@ msgctxt ""
 msgid "<emph>Increment</emph>: the difference between 2 successive tab indexes. Default = 1"
 msgstr "<emph>Increment</emph>: avstanden mellom to nærliggjande tabulatorindeksar. Standard = 1"
 
-#. DFWjc
+#. EKAHq
 #: sf_dialog.xhp
 msgctxt ""
 "sf_dialog.xhp\n"
 "par_id401688543845094\n"
 "help.text"
-msgid "<literal>True</literal> when successful."
-msgstr "<literal>Sann</literal> når han lukkast."
+msgid "Returns <literal>True</literal> when successful."
+msgstr ""
 
 #. 4FcCi
 #: sf_dialog.xhp
@@ -14805,15 +14958,6 @@ msgctxt ""
 msgid "The <literal>DialogControl</literal> service is available for these control types:"
 msgstr "Tenesta <literal>DialogControl</literal> er tilgjengeleg for desse kontrolltypane:"
 
-#. gTfDQ
-#: sf_dialogcontrol.xhp
-msgctxt ""
-"sf_dialogcontrol.xhp\n"
-"par_id271687789435391\n"
-"help.text"
-msgid "• TableControl<br/>• TextField<br/>• TimeField<br/>• TreeControl<br/> <br/>"
-msgstr "• TableControl<br/>• TextField<br/>• TimeField<br/>• TreeControl<br/> <br/>"
-
 #. 7xddb
 #: sf_dialogcontrol.xhp
 msgctxt ""
@@ -14877,14 +15021,14 @@ msgctxt ""
 msgid "Yes"
 msgstr "Ja"
 
-#. M4GR3
+#. KfD9d
 #: sf_dialogcontrol.xhp
 msgctxt ""
 "sf_dialogcontrol.xhp\n"
 "par_id771583778386455\n"
 "help.text"
-msgid "The Border property refers to the surrounding of the control: 3D, FLAT or NONE."
-msgstr "Border-eigenskapen refererer til omgivnadene til kontrollelementet: 3D, FLAT eller NONE."
+msgid "The <literal>Border</literal> property refers to the surrounding of the control: \"3D\", \"FLAT\" or \"NONE\"."
+msgstr ""
 
 #. xNGhR
 #: sf_dialogcontrol.xhp
@@ -15732,14 +15876,14 @@ msgctxt ""
 msgid "The text appearing in the field"
 msgstr "Teksten som vert vist i feltet"
 
-#. DRtmo
+#. NQJq7
 #: sf_dialogcontrol.xhp
 msgctxt ""
 "sf_dialogcontrol.xhp\n"
 "par_id61687963745108\n"
 "help.text"
-msgid "There's no <literal>Value</literal> property for GroupBox, Hyperlink, ImageControl and TreeControl dialog controls."
-msgstr "Det er ingen <literal>Value</literal>-eigenskap for kontrollelementa GroupBox, Hyperlink, ImageControl og TreeControl i dialogvindauga."
+msgid "There is no <literal>Value</literal> property for <literal>GroupBox</literal>, <literal>Hyperlink</literal>, <literal>ImageControl</literal> and <literal>TreeControl</literal> dialog controls."
+msgstr ""
 
 #. CABLr
 #: sf_dialogcontrol.xhp
@@ -17669,14 +17813,14 @@ msgctxt ""
 msgid "UNO Object"
 msgstr "UNO-objekt"
 
-#. Hu6zu
+#. Hqb6G
 #: sf_document.xhp
 msgctxt ""
 "sf_document.xhp\n"
 "par_id881582885205976\n"
 "help.text"
-msgid "A <literal>com.sun.star.XXX.DocumentSettings</literal> UNO object - where XXX is sheet, text, drawing or presentation - that gives access to UNO internal properties, that are specific to the document's type."
-msgstr "Eit <literal>com.sun.star.XXX.DocumentSettings</literal> UNO-objekt ‒ der XXX er ark, tekst, teikning eller presentasjon ‒ som gjev tilgang til UNO interne eigenskapar som er spesifikke for dokumenttypen.that are specific to the document's type."
+msgid "A <literal>com.sun.star.XXX.DocumentSettings</literal> UNO object, where XXX is either <literal>sheet</literal>, <literal>text</literal>, <literal>drawing</literal> or <literal>presentation</literal>. This object gives access to the internal UNO properties that are specific to the document's type."
+msgstr ""
 
 #. coFyk
 #: sf_document.xhp
@@ -17894,14 +18038,14 @@ msgctxt ""
 msgid "<emph>family</emph>: One of the style families present in the actual document, as a case-sensitive string. Valid family names can be retrieved using <literal>StyleFamilies</literal> property."
 msgstr "<emph>family</emph>: Ein av stilfamiliane i det gjeldande dokumentet, som ein streng som skil mellom store og små bokstavar.Gyldige familenamn kan hentast ved hjelp av  eigenskapen <literal>StyleFamilies</literal>."
 
-#. 6AnyP
+#. gXy2j
 #: sf_document.xhp
 msgctxt ""
 "sf_document.xhp\n"
 "par_id361589211129686\n"
 "help.text"
-msgid "<emph>stylelist</emph>: A single style name as a string or an array of style names. The style names may be localized or not. The StylesList is typically the output of the execution of a <literal>Styles()</literal> method."
-msgstr "<emph>stylelis</emph>: Eit enkelt stilnmn som ein streng eller ei matrise med stilnamn. Stilnamna kan vera lokale eller ikkje. «StylesList» er vanlegvis resultatet av utføringa av eim <literal>Styles()</literal>-metode."
+msgid "<emph>stylelist</emph>: A single style name as a string or an array of style names. The style names may be localized or not. The <literal>StylesList</literal> is typically the output of the execution of a <literal>Styles()</literal> method."
+msgstr ""
 
 #. AJtnV
 #: sf_document.xhp
@@ -17992,15 +18136,6 @@ msgctxt ""
 "help.text"
 msgid "' Restores UI updates and mouse pointer"
 msgstr "Gjenopprettar oppdateringar for brukargrensesnittet og musepeikaren"
-
-#. 6snES
-#: sf_document.xhp
-msgctxt ""
-"sf_document.xhp\n"
-"pyc_id691688837494400\n"
-"help.text"
-msgid "..."
-msgstr "..."
 
 #. CGKZA
 #: sf_document.xhp
@@ -18146,14 +18281,14 @@ msgctxt ""
 msgid "<emph>filename</emph>: The file from which to load the styles in the <literal>FileSystem</literal> notation. The file is presumed to be of the same document type as the actual document."
 msgstr "<emph>filename</emph>: Fila som stilane skal lastast inn frå i <literal>FileSystem</literal>-notasjon. Det vert gått ut frå at fila er av same dokumenttype som det aktuelle dokumentet."
 
-#. hXEZC
+#. cQ2o3
 #: sf_document.xhp
 msgctxt ""
 "sf_document.xhp\n"
 "par_id251635436912157\n"
 "help.text"
-msgid "<emph>families</emph>: One of the style families present in the actual document, as a case-sensitive string or an array of such strings. Default = all families."
-msgstr "<emph>families</emph>: Ein av filfamiliane som finst i det aktuelle dokumentet, som ein streng som skil mellom store og små bokstavar eller ei matrise med slike strengar. Standard = alle familiar."
+msgid "<emph>families</emph>: One of the style families present in the actual document, as a case-sensitive string or an array of such strings. Leave this argument blank to import all families."
+msgstr ""
 
 #. 2TZYE
 #: sf_document.xhp
@@ -18758,14 +18893,14 @@ msgctxt ""
 msgid "<emph>ToolbarName</emph>: The usual name of one of the available toolbars."
 msgstr "<emph>ToolbarName</emph>: Det vanlege namnet på ei av verktøylinjene."
 
-#. jSJAa
+#. W5qzn
 #: sf_document.xhp
 msgctxt ""
 "sf_document.xhp\n"
 "par_id091612259616155\n"
 "help.text"
-msgid "This method returns the UNO representation of a given style for all document types except <literal>Base</literal>. <literal>Nothing</literal> is returned when the StyleName does not exist in the given Family."
-msgstr "Denne metoden returnerer UNO-representasjonen av ein gjeven stil for alle dokumenttypane unnateke <literal>Base</literal>. <literal>Ingenting</literal> vert returnert når StyleName ikkje finst i den gjevne familien."
+msgid "This method returns the UNO representation of a given style for all document types except <literal>Base</literal>. <literal>Nothing</literal> is returned when the <literal>StyleName</literal> does not exist in the given family."
+msgstr ""
 
 #. ignqD
 #: sf_document.xhp
@@ -35083,24 +35218,6 @@ msgctxt ""
 msgid "a valid and unique <literal>WindowName</literal> for the currently active window. When the window cannot be identified, a zero-length string is returned."
 msgstr "eit gyldig og unikt <literal>WindowName</literal> til det gjeldande aktive vindauget. Når vindauget ikkje kan identifiserast, vert det returnert ein streng med null lengd."
 
-#. DiCRC
-#: sf_ui.xhp
-msgctxt ""
-"sf_ui.xhp\n"
-"par_id658517913266754\n"
-"help.text"
-msgid "Yes"
-msgstr "Ja"
-
-#. Bjyuv
-#: sf_ui.xhp
-msgctxt ""
-"sf_ui.xhp\n"
-"par_id153587913266349\n"
-"help.text"
-msgid "The list of the currently open documents. Special windows are ignored. This list consists of a zero-based one dimensional array either of filenames (in SF_FileSystem.FileNaming notation) or of window titles for unsaved documents."
-msgstr "Lista over gjeldande opne dokument. Spesialvindauge vert ignorerte. Denne lista består av ei null-basert eindimensjonal matrise av anten filnamn (i SF_FileSystem.FileNaming-notasjon) eller av titlar på dokument som ikkje er lagra."
-
 #. 5oGpF
 #: sf_ui.xhp
 msgctxt ""
@@ -35290,14 +35407,14 @@ msgctxt ""
 msgid "Creates and stores a new %PRODUCTNAME Base document embedding an empty database of the given type. The method returns a <literal>Document</literal> service instance."
 msgstr "Opprettar og lagrar eit nytt %PRODUCTNAME Base-dokument som byggjar inn ein tom database av den gjevne typen. Metoden returnerer ein førekomst av tenesta <literal>Document</literal>."
 
-#. gqGpB
+#. rba2y
 #: sf_ui.xhp
 msgctxt ""
 "sf_ui.xhp\n"
 "par_id441596554849949\n"
 "help.text"
-msgid "<emph>filename</emph> : Identifies the file to create. It must follow the <literal>SF_FileSystem.FileNaming</literal> notation. If the file already exists, it is overwritten without warning"
-msgstr "<emph>filname</emph>: Identifiserer fila som skal opprettast. Det må følgja <literal>SF_FileSystem.FileNaming</literal>-notasjonen. Viss fila finst frå før, vert ho overskrive utan varsel"
+msgid "<emph>filename</emph> : Identifies the file to create. It must follow the <literal>SF_FileSystem.FileNaming</literal> notation. If the file already exists, it is overwritten without warning."
+msgstr ""
 
 #. Jub7D
 #: sf_ui.xhp
@@ -35326,14 +35443,14 @@ msgctxt ""
 msgid "<emph>calcfilename</emph> : Only when <literal>embeddeddatabase</literal> = \"CALC\", <literal>calcfilename</literal> represents the file containing the tables as Calc sheets. The file must exist or an error is raised."
 msgstr "<emph>calcfilename</emph>: Berre når <literal>embeddeddatabase</literal> = \"CALC\", representerer <literal>calcfilename</literal> fila som inneheld tabellane som Calc-ark. Fila må finnast frå før, elles vert det generert det ein feil."
 
-#. GtB5n
+#. hE42G
 #: sf_ui.xhp
 msgctxt ""
 "sf_ui.xhp\n"
 "par_id651588521753997\n"
 "help.text"
-msgid "Create a new %PRODUCTNAME document of a given type or based on a given template. The method returns a document object."
-msgstr "Opprett eit nytt %PRODUCTNAME-dokument av ein gjeven type eller basert på ein gjeven mal. Metoden returnerer eit dokumentobjekt."
+msgid "Create a new %PRODUCTNAME document of a given type or based on a given template. The method returns an instance of the document class or one of its subclasses (Calc, Writer)."
+msgstr ""
 
 #. JnBPt
 #: sf_ui.xhp
@@ -35371,14 +35488,32 @@ msgctxt ""
 msgid "In both examples below, the first call to <literal>CreateDocument</literal> method creates a blank Calc document, whereas the second creates a document from a template file."
 msgstr "I begge eksempla nedanfor set det første kallet til metoden <literal>CreateDocument</literal> opp eit tomt Calc-dokument, medan det andre set opp eit dokument frå ei malfil."
 
-#. shCRf
+#. ScuJG
+#: sf_ui.xhp
+msgctxt ""
+"sf_ui.xhp\n"
+"par_id651699521753997\n"
+"help.text"
+msgid "The list of the currently open documents. Special windows are ignored. This list consists of a zero-based one dimensional array either of filenames - using <link href=\"text/sbasic/shared/03/sf_filesystem.xhp#properties_toc\">ScriptForge.FileSystem.FileNaming</link> notation - or of window titles for unsaved documents."
+msgstr ""
+
+#. m2ASE
+#: sf_ui.xhp
+msgctxt ""
+"sf_ui.xhp\n"
+"par_id701620773517802\n"
+"help.text"
+msgid "In both examples below, the method may return an empty array if there are no documents open."
+msgstr ""
+
+#. pGhdJ
 #: sf_ui.xhp
 msgctxt ""
 "sf_ui.xhp\n"
 "par_id201588520551463\n"
 "help.text"
-msgid "Returns an open document object referring to either the active window, a given window or the active document."
-msgstr "Returnerer eit ope dokument-objekt som refererer til anten det aktive vindauget, eit gjeve vindauge eller det aktive dokumentet."
+msgid "Returns an instance of the Document class or one of its subclasses (Calc, Writer, Base, FormDocument) referring to either a given window or the active document."
+msgstr ""
 
 #. SNDqY
 #: sf_ui.xhp
@@ -35434,14 +35569,14 @@ msgctxt ""
 msgid "<emph>windowname</emph>: see the definitions <link href=\"text/sbasic/shared/03/sf_ui.xhp#WindowName\">above</link>. If this argument is absent, the active window is minimized."
 msgstr "<emph>windowname</emph>: sjå definisjonane <link href=\"text/sbasic/shared/03/sf_ui.xhp#WindowName\">ovanfor</link>. Viss dette argumentet manglar, vert det gjeldande vindauget minimert."
 
-#. WHDDQ
+#. vWCRg
 #: sf_ui.xhp
 msgctxt ""
 "sf_ui.xhp\n"
 "par_id691596555746539\n"
 "help.text"
-msgid "Open an existing %PRODUCTNAME Base document. The method returns a document object."
-msgstr "Opnar eit %PRODUCTNAME Base-dokument som finst frå før. Metoden returnerer eit dokument-objekt."
+msgid "Open an existing %PRODUCTNAME Base document. The method returns a <literal>Base</literal> object."
+msgstr ""
 
 #. CZBya
 #: sf_ui.xhp
@@ -35461,14 +35596,14 @@ msgctxt ""
 msgid "<emph>registrationname</emph>: The name to use to find the database in the databases register. It is ignored if <literal>FileName</literal> <> \"\"."
 msgstr "<emph>registrationname</emph>: Namnet som vert brukt for å finna databasen i databaseregisteret. Dette argument vert ignorert viss <literal>filnamn</literal> <> \"\"."
 
-#. TqAd2
+#. 52XhB
 #: sf_ui.xhp
 msgctxt ""
 "sf_ui.xhp\n"
 "id721596556313545\n"
 "help.text"
-msgid "<emph>macroexecution</emph>: 0 = behaviour is defined by the user configuration, 1 = macros are not executable, 2 = macros are executable."
-msgstr "<emph>macroexecution</emph>: 0 = åtferda vert bestemt av brukaroppsettet, 1 = makroar er ikkje køyrbare, 2 = makroar er køyrbare."
+msgid "<emph>macroexecution</emph>: 0 = behaviour is defined by the user configuration, 1 = macros are not executable, 2 = macros are executable. Default is 0."
+msgstr ""
 
 #. FgnaJ
 #: sf_ui.xhp
@@ -35524,14 +35659,14 @@ msgctxt ""
 msgid "<emph>hidden</emph>: if <literal>True</literal>, open the new document in the background (default = <literal>False</literal>). To use with caution: activation or closure afterwards can only happen programmatically."
 msgstr "<emph>hidden</emph>: viss <literal>Sann</literal>, opnar du det nye dokumentet i bakgrunnen (standard = <literal>Usann</literal>). Må brukast med varsemd sidan aktivering eller lukking seinare berre kan skje programmatisk."
 
-#. sbgeH
+#. rPwY9
 #: sf_ui.xhp
 msgctxt ""
 "sf_ui.xhp\n"
 "par_id981588524474719\n"
 "help.text"
-msgid "<emph>macroexecution</emph>: 0 = behaviour is defined by the user configuration, 1 = macros are not executable, 2 = macros are executable."
-msgstr "<emph>macroexecution</emph>: 0 = åtferda vert bestemt av brukaroppsettet, 1 = makroar er ikkje køyrbare, 2 = makroar er køyrbare."
+msgid "<emph>macroexecution</emph>: 0 = behaviour is defined by the user configuration, 1 = macros are not executable, 2 = macros are executable. Default is 0."
+msgstr ""
 
 #. AF7iF
 #: sf_ui.xhp
