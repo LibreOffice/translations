@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
 "POT-Creation-Date: 2023-05-10 12:32+0200\n"
-"PO-Revision-Date: 2023-11-18 07:37+0000\n"
+"PO-Revision-Date: 2024-02-14 22:38+0000\n"
 "Last-Translator: Tuomas Hietala <tuomas.hietala@iki.fi>\n"
 "Language-Team: Finnish <https://translations.documentfoundation.org/projects/libo_ui-7-6/filtermessages/fi/>\n"
 "Language: fi\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Accelerator-Marker: ~\n"
-"X-Generator: Weblate 5.1.1\n"
+"X-Generator: Weblate 5.3.1\n"
 "X-POOTLE-MTIME: 1563900856.000000\n"
 
 #. 5AQgJ
@@ -251,7 +251,7 @@ msgstr "PDF-versioristiriita"
 #: filter/inc/strings.hrc:72
 msgctxt "STR_WARN_TRANSP_VERSION"
 msgid "Transparency is not supported in PDF versions earlier than PDF 1.4. A transparent object was painted opaque instead"
-msgstr "Versiota 1.4 vanhemmat PDF-muodot eivät salli läpinäkyviä objekteja. Läpinäkyvä objekti muutettiin peittäväksi."
+msgstr "Versiota 1.4 edeltävät PDF-versiot eivät tue läpinäkyviä objekteja. Läpinäkyvä objekti muutettiin peittäväksi."
 
 #. CyosP
 #: filter/inc/strings.hrc:73
@@ -269,7 +269,7 @@ msgstr "Lomakkeen ohjausobjekti sisälsi toiminnon, jota PDF/A-standardi ei tue.
 #: filter/inc/strings.hrc:75
 msgctxt "STR_WARN_TRANSP_CONVERTED"
 msgid "Some objects were converted to an image in order to remove transparencies, because the target PDF format does not support transparencies. Possibly better results can be achieved if you remove the transparent objects before exporting."
-msgstr "Joitakin objekteja muunnettiin kuviksi, koska ne sisälsivät läpinäkyviä osia. PDF-muoto ei tue läpinäkyvyyttä. Parempi lopputulos voidaan saavuttaa, jos läpinäkyvät objektit poistetaan ennen vientiä PDF-muotoon."
+msgstr "Joitakin objekteja muunnettiin kuviksi läpinäkyvien osien poistamiseksi, koska valittu PDF-muoto ei tue läpinäkyvyyttä. Mahdollisesti paremman lopputuloksen voi saavuttaa, jos poistaa läpinäkyvät objektit ennen vientiä."
 
 #. qtCcB
 #: filter/inc/strings.hrc:76
@@ -543,7 +543,7 @@ msgstr "JPEG-pakkaus"
 #: filter/uiconfig/ui/pdfgeneralpage.ui:335
 msgctxt "pdfgeneralpage|extended_tip|jpegcompress"
 msgid "Select a JPEG compression level. With a high quality level, almost all pixels are preserved. With a low quality level, some pixels are lost and artifacts are introduced, but file sizes are reduced."
-msgstr ""
+msgstr "Valitse JPEG-pakkaustaso. Korkea laatutaso säilyttää lähes kaikki kuvapisteet. Matala laatutaso hukkaa osan kuvapisteistä ja tuottaa vääristymiä, mutta tiedostokoot pienenevät."
 
 #. ST3Rc
 #: filter/uiconfig/ui/pdfgeneralpage.ui:349
@@ -871,22 +871,21 @@ msgstr "Rakenne"
 
 #. QEAua
 #: filter/uiconfig/ui/pdflinkspage.ui:29
-#, fuzzy
 msgctxt "pdflinkspage|export"
 msgid "Export bookmarks as named destinations"
-msgstr "Muunna kirjanmerkit nimetyksi näkymiksi"
+msgstr "Vie kirjanmerkit nimettyinä kohteina"
 
 #. XCKUE
 #: filter/uiconfig/ui/pdflinkspage.ui:35
 msgctxt "pdflinkspage|export|tooltip_text"
 msgid "Enable the checkbox to export bookmarks in your document as named destinations in the PDF document."
-msgstr ""
+msgstr "Tämän asetuksen valitseminen vie asiakirjan kirjanmerkit PDF-asiakirjan nimettyinä kohteina."
 
 #. vECBd
 #: filter/uiconfig/ui/pdflinkspage.ui:38
 msgctxt "pdflinkspage|extended_tip|export"
 msgid "Enable the checkbox to export bookmarks in your document as named destinations in the PDF document. The destinations correspond to the location of your bookmarks. Use these destinations to create URL links that point to these locations in the PDF document."
-msgstr ""
+msgstr "Tämän asetuksen valitseminen vie asiakirjan kirjanmerkit PDF-asiakirjan nimettyinä kohteina. Kohteet vastaavat kirjanmerkkien sijainteja. Kohteita käyttäen voi luoda URL-linkkejä, jotka vievät näihin kohtiin PDF-asiakirjassa."
 
 #. aCCLQ
 #: filter/uiconfig/ui/pdflinkspage.ui:49
@@ -1058,10 +1057,9 @@ msgstr "Käyttöoikeussalasana asetettu"
 
 #. hRJpp
 #: filter/uiconfig/ui/pdfsecuritypage.ui:164
-#, fuzzy
 msgctxt "pdfsecuritypage|label11"
 msgid "PDF document will be restricted"
-msgstr "PDF-asiakirjan oikeuksia rajoitetaan"
+msgstr "PDF-asiakirjasta tulee käyttörajoitettu"
 
 #. L3oQx
 #: filter/uiconfig/ui/pdfsecuritypage.ui:188
@@ -1071,17 +1069,15 @@ msgstr "Käyttöoikeussalasanaa ei ole asetettu"
 
 #. s3RBF
 #: filter/uiconfig/ui/pdfsecuritypage.ui:200
-#, fuzzy
 msgctxt "pdfsecuritypage|label13"
 msgid "PDF document will be unrestricted"
-msgstr "PDF-asiakirjan oikeuksia ei rajoiteta"
+msgstr "PDF-asiakirjan käyttöä ei rajoiteta"
 
 #. 4jwu7
 #: filter/uiconfig/ui/pdfsecuritypage.ui:224
-#, fuzzy
 msgctxt "pdfsecuritypage|label14"
 msgid "PDF document will not be restricted due to PDF/A export."
-msgstr "PDF-asiakirjan käsittelyä ei rajoiteta PDF/A-viennissä."
+msgstr "PDF/A-viennistä johtuen PDF-asiakirjan käyttöä ei rajoiteta."
 
 #. 9CFqB
 #: filter/uiconfig/ui/pdfsecuritypage.ui:244
@@ -1939,7 +1935,7 @@ msgstr "Näyttää Avaa-valintaikkunan suodattimen avaamiseksi XSLT-suodatinpake
 #: filter/uiconfig/ui/xmlfiltersettings.ui:290
 msgctxt "xmlfiltersettings|extended_tip|XMLFilterSettingsDialog"
 msgid "Opens the XML Filter Settings dialog, where you can create, edit, delete, and test filters to import and to export XML files."
-msgstr ""
+msgstr "Avaa XML-suodattimien asetukset -valintaikkunan, jossa voit luoda, muokata, poistaa ja kokeilla XML-tiedostojen tuonti- ja vientisuodattimia."
 
 #. rLZ5z
 #: filter/uiconfig/ui/xmlfiltertabpagegeneral.ui:23
