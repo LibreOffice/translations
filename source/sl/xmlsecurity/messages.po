@@ -1,16 +1,16 @@
 #. extracted from xmlsecurity/inc
 msgid ""
 msgstr ""
-"Project-Id-Version: LibreOffice 24.02\n"
+"Project-Id-Version: LibreOffice 24.8\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2023-12-23 09:15+0100\n"
-"PO-Revision-Date: 2023-12-19 10:14+0200\n"
+"POT-Creation-Date: 2024-05-30 08:34+0200\n"
+"PO-Revision-Date: 2024-05-31 16:28+0200\n"
 "Last-Translator: Martin Srebotnjak <miles@filmsi.net>\n"
 "Language-Team: sl.libreoffice.org\n"
+"Language: sl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: sl\n"
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n%100==4 ? 2 : 3);\n"
 "X-Generator: Virtaal 0.7.1\n"
 "X-Accelerator-Marker: ~\n"
@@ -202,6 +202,30 @@ msgstr ""
 "\n"
 "Okvarjeni podatki potrdila: %{data}"
 
+#: xmlsecurity/inc/strings.hrc:67
+msgctxt "STR_RELOAD_FILE_WARNING"
+msgid "Reload the file to apply the new macro security level"
+msgstr "Ponovno naložite datoteko, da uveljavite novo raven varnosti makra."
+
+#: xmlsecurity/inc/strings.hrc:68
+msgctxt "STR_TRUST_UNTRUSTED_PUBKEY"
+msgid ""
+"Security warning: the following OpenPGP public key is untrusted:\n"
+"\n"
+"%{data}\n"
+"\n"
+"Encrypting with an untrusted public key increases the risk of a \"man-in-the-middle\" attack. A successful \"man-in-the-middle\" attack gives malicious third parties the ability to decrypt your document.\n"
+"\n"
+"Do you really want to encrypt your document with this untrusted public key?"
+msgstr ""
+"Varnostno opozorilo: naslednji javni ključ OpenPGP ni zaupanja vreden:\n"
+"\n"
+"%{data}\n"
+"\n"
+"Šifriranje z javnim ključem, ki ni zaupanja vreden, poveča tveganje napada \"osebe-vmes\". Uspešen napad \"osebe-vmes\" omogoča tretjim stranem s slabimi nameni, da dešifrirajo vaš dokument.\n"
+"\n"
+"Ali resnično želite šifrirati dokument s tem javnim ključem, ki ni zaupanja vreden?"
+
 msgctxt "stock"
 msgid "_Add"
 msgstr "Doda_j"
@@ -317,12 +341,12 @@ msgstr "Imate zasebni ključ, ki odgovarja temu potrdilu."
 #: xmlsecurity/uiconfig/ui/certgeneral.ui:213
 msgctxt "certgeneral|valid_to"
 msgid "Valid to:"
-msgstr "Veljavno do:"
+msgstr "Veljaven do:"
 
 #: xmlsecurity/uiconfig/ui/certpage.ui:33
 msgctxt "certpage|label1"
-msgid "Certification path"
-msgstr "Pot potrjevanja"
+msgid "Certificate Path"
+msgstr "Pot digitalnega potrdila"
 
 #: xmlsecurity/uiconfig/ui/certpage.ui:45
 msgctxt "certpage|viewcert"
@@ -336,8 +360,8 @@ msgstr "Stran Pot digitalnega potrdila pogovornega okna Pokaži potrdilo prikaž
 
 #: xmlsecurity/uiconfig/ui/certpage.ui:122
 msgctxt "certpage|label2"
-msgid "Certification status"
-msgstr "Stanje potrjevanja"
+msgid "Certificate status"
+msgstr "Stanje digitalnega potrdila"
 
 #: xmlsecurity/uiconfig/ui/certpage.ui:148
 msgctxt "extended_tip|status"
@@ -546,6 +570,31 @@ msgctxt "extended_tip|vhigh"
 msgid "Trusted file locations can be set on the Trusted Sources tab page. Any macro from a trusted file location is allowed to run."
 msgstr "Zaupanja vredna mesta datotek lahko nastavite na strani zavihka Zaupanja vredni viri. Izvaja se lahko vsak makro z zaupanja vrednega mesta datotek."
 
+#: xmlsecurity/uiconfig/ui/securitylevelpage.ui:116
+msgctxt "SecurityLevelPage|vhighimg"
+msgid "Very high security level"
+msgstr "Zelo visoka varnostna raven"
+
+#: xmlsecurity/uiconfig/ui/securitylevelpage.ui:134
+msgctxt "SecurityLevelPage|highimg"
+msgid "High security level"
+msgstr "Visoka varnostna raven"
+
+#: xmlsecurity/uiconfig/ui/securitylevelpage.ui:152
+msgctxt "SecurityLevelPage|medimg"
+msgid "Medium security level"
+msgstr "Srednja varnostna raven"
+
+#: xmlsecurity/uiconfig/ui/securitylevelpage.ui:170
+msgctxt "SecurityLevelPage|lowimg"
+msgid "Low security level"
+msgstr "Nizka varnostna raven"
+
+#: xmlsecurity/uiconfig/ui/securitylevelpage.ui:207
+msgctxt "SecurityLevelPage|warningimg"
+msgid "File reload needed"
+msgstr "Datoteko je treba ponovno naložiti"
+
 #: xmlsecurity/uiconfig/ui/securitytrustpage.ui:61
 msgctxt "securitytrustpage|viewcert"
 msgid "_View..."
@@ -708,5 +757,5 @@ msgstr "Podrobnosti"
 
 #: xmlsecurity/uiconfig/ui/viewcertdialog.ui:206
 msgctxt "viewcertdialog|path"
-msgid "Certification Path"
-msgstr "Pot potrjevanja"
+msgid "Certificate Path"
+msgstr "Pot digitalnega potrdila"
