@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2024-05-27 12:59+0200\n"
-"PO-Revision-Date: 2024-05-30 21:08+0000\n"
+"POT-Creation-Date: 2024-06-03 12:06+0200\n"
+"PO-Revision-Date: 2024-06-03 09:45+0000\n"
 "Last-Translator: Stanislav Horáček <stanislav.horacek@gmail.com>\n"
 "Language-Team: Czech <https://translations.documentfoundation.org/projects/libo_help-master/textscalc01/cs/>\n"
 "Language: cs\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 "X-Accelerator-Marker: ~\n"
-"X-Generator: Weblate 5.4.3\n"
+"X-Generator: LibreOffice\n"
 "X-Project-Style: openoffice\n"
 "X-POOTLE-MTIME: 1559927186.000000\n"
 
@@ -54584,6 +54584,15 @@ msgctxt ""
 msgid "This function ignores any text or empty cell within a data range. If you suspect wrong results from this function, look for text in the data ranges. To highlight text contents in a data range, use the <link href=\"text/scalc/01/03080000.xhp\">value highlighting</link> feature."
 msgstr "Tato funkce ignoruje veškerý text a prázdné buňky v oblasti dat. Jestliže se zdá, že funkce vrací chybné výsledky, vyhledejte v oblastech dat text. Textový obsah můžete zvýraznit pomocí <link href=\"text/scalc/01/03080000.xhp\">zvýrazňování hodnot</link>."
 
+#. DB6XT
+#: common_func.xhp
+msgctxt ""
+"common_func.xhp\n"
+"par_id431716730587722\n"
+"help.text"
+msgid "Any of the optional arguments can be omitted. An optional argument is required to be preceded by the preceding separators."
+msgstr ""
+
 #. GAPGX
 #: common_func_workdaysintl.xhp
 msgctxt ""
@@ -57148,6 +57157,15 @@ msgctxt ""
 "help.text"
 msgid "This function is always recalculated whenever a recalculation occurs."
 msgstr "Tato funkce se v případě, že je spuštěn přepočet, vždy přepočítá."
+
+#. fSXNw
+#: ful_func.xhp
+msgctxt ""
+"ful_func.xhp\n"
+"par_id711715953325962\n"
+"help.text"
+msgid "The function is always <emph>case insensitive</emph>, independent from the setting of <emph>Case sensitive</emph> checkbox in <switchinline select=\"sys\"><caseinline select=\"MAC\"><menuitem>%PRODUCTNAME - Preferences</menuitem></caseinline><defaultinline><menuitem>Tools - Options</menuitem></defaultinline></switchinline> - <link href=\"text/shared/optionen/01060500.xhp\"><menuitem>%PRODUCTNAME Calc - Calculate</menuitem></link>."
+msgstr ""
 
 #. 8DbP2
 #: func_aggregate.xhp
@@ -62414,23 +62432,23 @@ msgctxt ""
 msgid "<variable id=\"h1\"><link href=\"text/scalc/01/func_filter.xhp\">FILTER</link></variable>"
 msgstr "<variable id=\"h1\"><link href=\"text/scalc/01/func_filter.xhp\">FILTER</link></variable>"
 
-#. nKHpG
+#. dxbQ9
 #: func_filter.xhp
 msgctxt ""
 "func_filter.xhp\n"
 "par_id771708806478128\n"
 "help.text"
-msgid "Filters a data range or array based on conditions you specify."
-msgstr "Filtruje oblast dat nebo matici podle zadaných podmínek."
+msgid "Filters a data range or array based on specified conditions."
+msgstr ""
 
-#. M2JTs
+#. tuppo
 #: func_filter.xhp
 msgctxt ""
 "func_filter.xhp\n"
 "par_id211708281649651\n"
 "help.text"
-msgid "FILTER(Range, Criteria, Return if empty)"
-msgstr "FILTER(Oblast, Kritéria, Prázdná návratová hodnota)"
+msgid "FILTER( Range; Criteria [; Return if empty])"
+msgstr ""
 
 #. SGrA5
 #: func_filter.xhp
@@ -62450,32 +62468,32 @@ msgctxt ""
 msgid "<emph>Criteria</emph>: A boolean array whose height (filtering by columns) or width (filtering by rows) is the same as the array, used to select data from the <emph>Range</emph>."
 msgstr "<emph>Kritéria</emph>: Booleovská matice, jejíž výška (filtrování podle sloupců) nebo šířka (filtrování podle řádků) je stejná jako u matice. Použije se pro výběr dat z oblasti <emph>Oblast</emph>."
 
-#. KjAXK
+#. ZcP2E
 #: func_filter.xhp
 msgctxt ""
 "func_filter.xhp\n"
 "par_id421709395146863\n"
 "help.text"
-msgid "<emph>Return if empty</emph>: the value to return if all values in the Include array are empty (filter return nothing)."
-msgstr "<emph>Prázdná návratová hodnota</emph>: hodnota, která se má vrátit, pokud jsou všechny hodnoty v matici pro zahrnutí prázdné (filtr nic nevrátí)."
+msgid "<emph>Result if empty</emph>: (optional) the value to return if all values in the <emph>Criteria</emph> array are empty (filter return nothing)."
+msgstr ""
 
-#. PAajv
+#. AFtpH
 #: func_filter.xhp
 msgctxt ""
 "func_filter.xhp\n"
 "par_id21709506838932\n"
 "help.text"
-msgid "<input>{=FILTER(A2:C13,A2:A13>50)}</input> returns the array {57,49,12|56,33,60|57,,} containing all grades with Maths grade above 50. Note that this is an array formula."
-msgstr "<input>{=FILTER(A2:C13,A2:A13>50)}</input> vrátí matici {57,49,12|56,33,60|57,,}, která obsahuje všechny známky pro případy, kdy známka z matematiky byla vyšší než 50. Jedná se o maticový vzorec."
+msgid "<input>{=FILTER(A2:C13;A2:A13>50)}</input> returns the array containing all grades with Maths grade above 50. Note that this is an <link href=\"text/scalc/01/04060107.xhp#creating_array_formulas\">array formula</link>."
+msgstr ""
 
-#. WhdTC
+#. METQ9
 #: func_filter.xhp
 msgctxt ""
 "func_filter.xhp\n"
 "par_id561709507935610\n"
 "help.text"
-msgid "<input>{=FILTER(A2:C13,B2:B13>90,\"No results\")}</input>  Returns the string \"No results\", since no grade on Physics is above 90."
-msgstr "<input>{=FILTER(A2:C13,B2:B13>90,\"Žádné výsledky\")}</input> vrátí řetězec „Žádné výsledky“, protože žádná známka z fyziky není vyšší než 90."
+msgid "<input>{=FILTER(A2:C13;B2:B13>90;\"No results\")}</input>  Returns the string \"No results\", since no grade on Physics is above 90."
+msgstr ""
 
 #. q34Yg
 #: func_filter.xhp
@@ -66941,14 +66959,14 @@ msgctxt ""
 msgid "Generates an array of random numbers between two limit values."
 msgstr "Vygeneruje matici náhodných čísel mezi dvěma hodnotami mezí."
 
-#. 9wxNC
+#. ArGrF
 #: func_randarray.xhp
 msgctxt ""
 "func_randarray.xhp\n"
 "par_id211708281649651\n"
 "help.text"
-msgid "RANDARRAY([Rows], [Columns], [Min], [Max], [Integers])"
-msgstr "RANDARRAY([Řádky], [Sloupce], [Min], [Max], [Celá čísla])"
+msgid "RANDARRAY([Rows [; Columns [; Min [; Max [; Integers] ] ] ])"
+msgstr ""
 
 #. FDbmd
 #: func_randarray.xhp
@@ -67013,14 +67031,14 @@ msgctxt ""
 msgid "If <emph>Rows</emph> or <emph>Columns</emph> are references to the content of other cells, the array dimensions do not change when the referenced content changes. The array formula must be deleted and re-entered."
 msgstr "Pokud argument <emph>Řádky</emph> nebo <emph>Sloupce</emph> odkazují na obsah jiných buněk, rozměry matice se při změně odkazovaného obsahu nezmění, ale maticový vzorec je potřeba smazat a znovu zadat."
 
-#. ERYkg
+#. mz6p3
 #: func_randarray.xhp
 msgctxt ""
 "func_randarray.xhp\n"
 "par_id521715616457946\n"
 "help.text"
-msgid "<input>{=RANDARRAY(10,4,10,50,1)}</input> returns an array of 10 rows, 4 columns with minimum value 10 and maximum value of 50 of whole numbers (integers)."
-msgstr "<input>{=RANDARRAY(10;4;10;50;1)}</input> vrátí matici 10 řádků a 4 sloupců obsahující celá čísla s minimální hodnotou 10 a maximální hodnotou 50."
+msgid "<input>{=RANDARRAY(10;4;10;50;1)}</input> returns an array of 10 rows, 4 columns with minimum value 10 and maximum value of 50 of whole numbers (integers)."
+msgstr ""
 
 #. iGDsD
 #: func_randarray.xhp
@@ -68084,14 +68102,14 @@ msgctxt ""
 msgid "The array is filled from the first row to the right up to the value of <emph>Columns</emph>, and then down to the number of rows."
 msgstr "Matice se naplňuje od prvního řádku doprava až po hodnotu <emph>Sloupce</emph> a poté dolů až po počet řádků."
 
-#. sC8E6
+#. u9vnG
 #: func_sequence.xhp
 msgctxt ""
 "func_sequence.xhp\n"
 "par_id201714595986945\n"
 "help.text"
-msgid "<input>{=SEQUENCE(3,3,10,11)}</input> returns the 3-by-3 array below with an upper-right value of 10 and filling the array to the right and then downward in steps of 11."
-msgstr "<input>{=SEQUENCE(3;3;10;11)}</input> vrátí matici 3 × 3 s hodnotou 10 v levém horním rohu a vyplněnou doprava a následně dolů s krokem 11."
+msgid "<input>{=SEQUENCE(3,3,10,11)}</input> returns the 3-by-3 array below with an upper-left value of 10 and filling the array to the right and then downward in steps of 11."
+msgstr ""
 
 #. sNE2S
 #: func_sequence.xhp
@@ -68237,50 +68255,50 @@ msgctxt ""
 msgid "Enter the formula as an <link href=\"text/scalc/01/04060107.xhp\">array formula</link>."
 msgstr "Vzorec zadejte jako <link href=\"text/scalc/01/04060107.xhp\">maticový</link>."
 
-#. LksfE
+#. DmRKh
 #: func_sort.xhp
 msgctxt ""
 "func_sort.xhp\n"
 "par_id211708281649651\n"
 "help.text"
-msgid "SORT(Range [, SortIndex[, SortOrder[, ByCol]]])"
-msgstr "SORT(Oblast [, Index řazení[, Pořadí řazení[, Podle sloupce]]])"
+msgid "SORT(Range [; SortIndex [; SortOrder [; ByCol] ] ])"
+msgstr ""
 
-#. 4iAJz
+#. gmV6H
 #: func_sort.xhp
 msgctxt ""
 "func_sort.xhp\n"
 "par_id551711457515235\n"
 "help.text"
-msgid "<emph>Range:</emph> Required. The range or array to sort."
-msgstr "<emph>Oblast:</emph> Vyžadováno. Oblast nebo matice, která se má seřadit."
+msgid "<emph>Range:</emph> the range or array to sort."
+msgstr ""
 
-#. Epf9D
+#. WQaKY
 #: func_sort.xhp
 msgctxt ""
 "func_sort.xhp\n"
 "par_id151711457520290\n"
 "help.text"
-msgid "<emph>SortIndex:</emph> Optional. The number indicating the row or column to sort by."
-msgstr "<emph>Index řazení:</emph> Nepovinné. Číslo označující řádek nebo sloupec, podle kterého se má řadit."
+msgid "<emph>SortIndex:</emph> (optional). The number indicating the row or column to sort by."
+msgstr ""
 
-#. 2cgDj
+#. P5DGG
 #: func_sort.xhp
 msgctxt ""
 "func_sort.xhp\n"
 "par_id131711457525811\n"
 "help.text"
-msgid "<emph>SortOrder:</emph> Optional. A number indicating the desired sort order; 1 for ascending order (default), -1 for descending order."
-msgstr "<emph>Pořadí řazení:</emph> Nepovinné. Číslo udávající požadované pořadí řazení; 1 značí vzestupné pořadí (výchozí), -1 sestupné pořadí."
+msgid "<emph>SortOrder:</emph> (optional). A number indicating the desired sort order; 1 for ascending order (default), -1 for descending order."
+msgstr ""
 
-#. JwCYE
+#. 5Vo8L
 #: func_sort.xhp
 msgctxt ""
 "func_sort.xhp\n"
 "par_id351711457531579\n"
 "help.text"
-msgid "<emph>ByCol:</emph> Optional. A logical value indicating the desired sort direction; <emph>FALSE</emph> to sort by row (default), <emph>TRUE</emph> to sort by column."
-msgstr "<emph>Podle sloupce:</emph> Nepovinné. Logická hodnota udávající požadovaný směr řazení; <emph>NEPRAVDA</emph> značí řazení podle řádku (výchozí), <emph>PRAVDA</emph> podle sloupce."
+msgid "<emph>ByCol:</emph> (optional). A logical value indicating the desired sort direction; <emph>FALSE</emph> to sort by row (default), <emph>TRUE</emph> to sort by column."
+msgstr ""
 
 #. hDBib
 #: func_sort.xhp
@@ -68471,14 +68489,14 @@ msgctxt ""
 msgid "Sorts the contents of a range or array based on the values in a corresponding range or array."
 msgstr "Seřadí obsah oblasti nebo matice podle hodnot v jiné oblasti nebo matici."
 
-#. EUgaa
+#. 52ZFJ
 #: func_sortby.xhp
 msgctxt ""
 "func_sortby.xhp\n"
 "par_id211708281649651\n"
 "help.text"
-msgid "SORTBY(Range, SortByRange1, SortOrder1[, SortByRange2, SortOrder2,[...]])"
-msgstr "SORTBY(Oblast, Seřadit podle oblasti 1, Pořadí řazení 1[, Seřadit podle oblasti 2, Pořadí řazení 2,[...]])"
+msgid "SORTBY(Range; SortByRange1; SortOrder1 [; SortByRange2; SortOrder2,[...] ])"
+msgstr ""
 
 #. gifyS
 #: func_sortby.xhp
@@ -68489,32 +68507,32 @@ msgctxt ""
 msgid "<emph>Range</emph>: The array or range to sort."
 msgstr "<emph>Oblast</emph>: Matice nebo oblast, která se má seřadit."
 
-#. k3ADs
+#. i3EwL
 #: func_sortby.xhp
 msgctxt ""
 "func_sortby.xhp\n"
 "par_id291711544460323\n"
 "help.text"
-msgid "<emph>SortByRange1, SortByRange2,... </emph>: Range 1, range 2,... are the arrays or ranges to sort on."
-msgstr "<emph>Seřadit podle oblasti 1, Seřadit podle oblasti 2,... </emph>: Matice nebo oblasti, podle kterých se má řadit."
+msgid "<emph>SortByRange1, SortByRange2,... </emph>: range 1, range 2,... are the arrays or ranges to sort on."
+msgstr ""
 
-#. FTuBa
+#. BA6NF
 #: func_sortby.xhp
 msgctxt ""
 "func_sortby.xhp\n"
 "par_id501711544465886\n"
 "help.text"
-msgid "<emph>SortOrder1, SortOrder2,...</emph> : Order 1, order 2,... are the orders to use for sorting. 1 for ascending, -1 for descending. Default is ascending."
-msgstr "<emph>Pořadí řazení 1, Pořadí řazení 2,...</emph> : Pořadí použitá pro řazení. 1 značí vzestupné, -1 sestupné. Výchozím je vzestupné."
+msgid "<emph>SortOrder1, SortOrder2,...</emph> : order 1, order 2,... are the orders to use for sorting. 1 for ascending, -1 for descending. Default is ascending."
+msgstr ""
 
-#. FA2hL
+#. jhZ65
 #: func_sortby.xhp
 msgctxt ""
 "func_sortby.xhp\n"
 "par_id131711466000482\n"
 "help.text"
-msgid "<input>{=SORTBY(A2:C7,A2:A7,1,C2:C7,-1)}</input>"
-msgstr "<input>{=SORTBY(A2:C7;A2:A7;1;C2:C7;-1)}</input>"
+msgid "<input>{=SORTBY(A2:C7;A2:A7;1;C2:C7;-1)}</input>"
+msgstr ""
 
 #. q9cpQ
 #: func_sortby.xhp
@@ -68937,7 +68955,7 @@ msgctxt ""
 "par_id6670125\n"
 "help.text"
 msgid "<input>=SUMIF(B2:B5,\">=20\",C2:C6)</input>"
-msgstr ""
+msgstr "<input>=SUMIF(B2:B5;\">=20\";C2:C6)</input>"
 
 #. nUdXV
 #: func_sumif.xhp
@@ -68946,7 +68964,7 @@ msgctxt ""
 "par_id341710857230552\n"
 "help.text"
 msgid "Sums values from the range B2:B6 only if the corresponding values in the range A1:A5 are >=20. Returns 340 because the fifth and sixth rows do not meet the criterion."
-msgstr ""
+msgstr "Sečte hodnoty z oblasti B2:B6 pouze tehdy, pokud jsou odpovídající hodnoty v oblasti A1:A5 větší nebo rovny 20. Vrátí 340, protože pátý a šestý řádek kritérium nesplňují."
 
 #. Zjs4B
 #: func_sumif.xhp
@@ -68955,7 +68973,7 @@ msgctxt ""
 "hd_id291710867590698\n"
 "help.text"
 msgid "Using regular expressions"
-msgstr ""
+msgstr "Použití regulárních výrazů"
 
 #. 2XByE
 #: func_sumif.xhp
@@ -68964,7 +68982,7 @@ msgctxt ""
 "par_id911710859836541\n"
 "help.text"
 msgid "<input>=SUMIF(A2:A6,\"pen\",C2:C5)</input>"
-msgstr ""
+msgstr "<input>=SUMIF(A2:A6;\"nůž\";C2:C5)</input>"
 
 #. 3ggQs
 #: func_sumif.xhp
@@ -68973,7 +68991,7 @@ msgctxt ""
 "par_id31710859838046\n"
 "help.text"
 msgid "Sums values from the range C2:C6 only if the corresponding range in A2:A6 exactly match the letters \"pen\". Returns 85 because rows A2 and A4:A6 do not meet the criterion."
-msgstr ""
+msgstr "Sečte hodnoty z oblasti C2:C6 pouze tehdy, pokud se odpovídající hodnoty v oblasti A2:A6 přesně shodují s písmeny \"nůž\". Vrátí 85, protože řádky A2 a A4:A6 kritérium nesplňují."
 
 #. L9Ftz
 #: func_sumif.xhp
@@ -68982,7 +69000,7 @@ msgctxt ""
 "par_id781710871590769\n"
 "help.text"
 msgid "<input>=SUMIF(A2:A6,\"pen*\",C2:C6)</input>"
-msgstr ""
+msgstr "<input>=SUMIF(A2:A6;\"nůž*\";C2:C6)</input>"
 
 #. netyd
 #: func_sumif.xhp
@@ -68991,7 +69009,7 @@ msgctxt ""
 "par_id431710871624405\n"
 "help.text"
 msgid "Sums the values from the range C2:C6 only if the corresponding cell in range A2:A6 contains the letters \"pen\". Returns the value 150 because rows A4:A5 do not meet the criterion."
-msgstr ""
+msgstr "Sečte hodnoty z oblasti C2:C6 pouze tehdy, pokud odpovídající hodnoty v oblasti A2:A6 obsahují písmena \"nůž\". Vrátí 150, protože řádky A4:A5 kritérium nesplňují."
 
 #. PdFbx
 #: func_sumif.xhp
@@ -69000,7 +69018,7 @@ msgctxt ""
 "par_id311711128230771\n"
 "help.text"
 msgid "<input>=SUMIF(ProductName,\"pen*\",Revenue)</input>"
-msgstr ""
+msgstr "<input>=SUMIF(NázevZboží;\"nůž*\";Tržby)</input>"
 
 #. ZeyUD
 #: func_sumif.xhp
@@ -69009,7 +69027,7 @@ msgctxt ""
 "par_id741711128545751\n"
 "help.text"
 msgid "A named range can be given as the Range or SumRange parameter. For example, if the columns in the above table are respectively named \"ProductName\", \"Sales\", and \"Revenue\", the function returns 150. This function will only work as described if you have defined the names of the columns using the <link href=\"text/scalc/01/04070100.xhp#definenames)\">Define Names</link> dialog."
-msgstr ""
+msgstr "Jako parametry Oblast nebo Oblast pro součet lze zadat pojmenovanou oblast. Jestliže jsou například sloupce výše uvedené tabulky pojmenovány \"NázevZboží\", \"Prodeje\" a \"Tržby\", funkce vrátí 150. Takto se bude funkce chovat pouze tehdy, pokud jste pomocí dialogového okna <link href=\"text/scalc/01/04070100.xhp#definenames)\">Definovat názvy</link> názvy sloupců definovali."
 
 #. amnCv
 #: func_sumif.xhp
@@ -69018,7 +69036,7 @@ msgctxt ""
 "hd_id531711029933195\n"
 "help.text"
 msgid "Reference to a cell as a criterion"
-msgstr ""
+msgstr "Odkaz na buňku jako kritérium"
 
 #. sGzYo
 #: func_sumif.xhp
@@ -69027,7 +69045,7 @@ msgctxt ""
 "par_id561711031254255\n"
 "help.text"
 msgid "If you need to change a criterion easily, you may specify it in a separate cell and use a reference to this cell in the condition of the SUMIFS function. For example:"
-msgstr ""
+msgstr "Potřebujete-li kritérium snadno změnit, můžete jej zadat do samostatné buňky, na kterou odkážete v podmínce funkce SUMIF. Například:"
 
 #. pAzfZ
 #: func_sumif.xhp
@@ -69036,7 +69054,7 @@ msgctxt ""
 "par_id331711030450765\n"
 "help.text"
 msgid "<input>=SUMIF(A2:A6,E2,C2:C6)</input>"
-msgstr ""
+msgstr "<input>=SUMIF(A2:A6;E2;C2:C6)</input>"
 
 #. sFiDn
 #: func_sumif.xhp
@@ -69045,7 +69063,7 @@ msgctxt ""
 "par_id11711031541218\n"
 "help.text"
 msgid "If E2 = pen, the function returns 85 because the link to the cell is substituted with its contents."
-msgstr ""
+msgstr "Pokud E2 = nůž, funkce vrátí 85, jelikož odkaz na buňku bude nahrazen jejím obsahem."
 
 #. gyimf
 #: func_sumif.xhp
@@ -69054,7 +69072,7 @@ msgctxt ""
 "par_id771677014538669\n"
 "help.text"
 msgid "<link href=\"https://wiki.documentfoundation.org/Documentation/Calc_Functions/SUMIF\">SUMIF wiki page</link>."
-msgstr ""
+msgstr "<link href=\"https://wiki.documentfoundation.org/Documentation/Calc_Functions/SUMIF\">Wiki stránka SUMIF</link>."
 
 #. DfceH
 #: func_sumifs.xhp
@@ -69954,16 +69972,7 @@ msgctxt ""
 "par_id771708806478128\n"
 "help.text"
 msgid "Returns the array of unique values from a range or array of values."
-msgstr ""
-
-#. h3r2U
-#: func_unique.xhp
-msgctxt ""
-"func_unique.xhp\n"
-"par_id711715953325962\n"
-"help.text"
-msgid "The UNIQUE function is always case sensitive, independent from the setting of <emph>Case sensitive</emph> checkbox in <switchinline select=\"sys\"><caseinline select=\"MAC\"><menuitem>%PRODUCTNAME - Preferences</menuitem></caseinline><defaultinline><menuitem>Tools - Options</menuitem></defaultinline></switchinline> - <link href=\"text/shared/optionen/01060500.xhp\"><menuitem>%PRODUCTNAME Calc - Calculate</menuitem></link>."
-msgstr ""
+msgstr "Vrátí z oblasti nebo matice hodnot matici jedinečných hodnot."
 
 #. A8bJf
 #: func_unique.xhp
@@ -69972,7 +69981,7 @@ msgctxt ""
 "par_id211708281649651\n"
 "help.text"
 msgid "UNIQUE(Array, [By col], [Uniqueness])"
-msgstr ""
+msgstr "UNIQUE(Matice, [Podle sloupce], [Jedinečnost])"
 
 #. DUA7p
 #: func_unique.xhp
@@ -69981,7 +69990,7 @@ msgctxt ""
 "par_id381715698113514\n"
 "help.text"
 msgid "<emph>Array</emph>: the range or array from which to return unique values."
-msgstr ""
+msgstr "<emph>Matice</emph>: oblast nebo matice, ze které se mají jedinečné hodnoty vrátit."
 
 #. ZDyWq
 #: func_unique.xhp
@@ -69990,7 +69999,7 @@ msgctxt ""
 "par_id311715698119400\n"
 "help.text"
 msgid "<emph>By col</emph>: (optional) a logical value that indicates how to compare data: TRUE - compares data horizontally for a match of all cells in each column, across all columns. FALSE or omitted (default) - compares data vertically, for a match of all cells of each row, across all rows."
-msgstr ""
+msgstr "<emph>Podle sloupce</emph> (nepovinné): logická hodnota určující, jak se mají data porovnávat: PRAVDA – data se porovnají data vodorovně, pro každý sloupec se hledá shoda všech jeho buněk, a to napříč všemi sloupci. NEPRAVDA nebo vynecháno (výchozí) – data porovnají svisle, pro každý řádek se hledá shoda všech, a to napříč všemi řádky."
 
 #. DSDnH
 #: func_unique.xhp
@@ -69999,7 +70008,7 @@ msgctxt ""
 "par_id531715698124705\n"
 "help.text"
 msgid "<emph>Uniqueness</emph>: (optional) A logical value that defines which values are considered unique. TRUE returns values that occur only once. The default is FALSE or omitted, which returns all distinct values in the range or array."
-msgstr ""
+msgstr "<emph>Jedinečnost</emph> (nepovinné): Logická hodnota určující, jaké hodnoty jsou považovány za jedinečné. PRAVDA – vrátí hodnoty, které se vyskytují pouze jednou. NEPRAVDA nebo vynecháno – vrátí všechny navzájem odlišné hodnoty v oblasti nebo matici."
 
 #. fknB6
 #: func_unique.xhp
@@ -70008,7 +70017,7 @@ msgctxt ""
 "par_id501715889339407\n"
 "help.text"
 msgid "The UNIQUE function must be entered as an <link href=\"text/scalc/01/04060107.xhp#creating_array_formulas\">array formula</link>."
-msgstr ""
+msgstr "Funkci UNIQUE je nutné zadat jako <link href=\"text/scalc/01/04060107.xhp#creating_array_formulas\">maticový vzorec</link>."
 
 #. RUvGf
 #: func_unique.xhp
@@ -70017,7 +70026,7 @@ msgctxt ""
 "par_id471715980557106\n"
 "help.text"
 msgid "Given the data table below, the examples returns unique occurrences of grades and age."
-msgstr ""
+msgstr "Pro následující tabulku dat vrátí příklady jedinečné výskyty kombinací třídy a věku."
 
 #. Kgeri
 #: func_unique.xhp
@@ -70026,7 +70035,7 @@ msgctxt ""
 "hd_id931715984553129\n"
 "help.text"
 msgid "Example 1"
-msgstr ""
+msgstr "Příklad 1"
 
 #. nbDpQ
 #: func_unique.xhp
@@ -70035,7 +70044,7 @@ msgctxt ""
 "par_id641715980827372\n"
 "help.text"
 msgid "<input>{=UNIQUE(B1:C10,FALSE(),FALSE())}</input> returns the array below. The grades and ages of the rows with name Andy and Harry are returned only once. The same for rows with name Eva and Irene."
-msgstr ""
+msgstr "<input>{=UNIQUE(B1:C10;FALSE();FALSE())}</input> vrátí níže uvedenou matici. Třída a věk řádků se jmény Aleš a Jindřich se vrátí pouze jedno. Totéž platí pro řádky se jmény Eva a Irena."
 
 #. 9XEhA
 #: func_unique.xhp
@@ -70044,7 +70053,7 @@ msgctxt ""
 "par_id641715983343641\n"
 "help.text"
 msgid "<emph>Grade</emph>"
-msgstr ""
+msgstr "<emph>Třída</emph>"
 
 #. LFWFS
 #: func_unique.xhp
@@ -70053,7 +70062,7 @@ msgctxt ""
 "par_id511715983350731\n"
 "help.text"
 msgid "<emph>Age</emph>"
-msgstr ""
+msgstr "<emph>Věk</emph>"
 
 #. i74Ub
 #: func_unique.xhp
@@ -70062,7 +70071,7 @@ msgctxt ""
 "hd_id981715984567844\n"
 "help.text"
 msgid "Example 2"
-msgstr ""
+msgstr "Příklad 2"
 
 #. FuxKt
 #: func_unique.xhp
@@ -70071,7 +70080,7 @@ msgctxt ""
 "par_id801715981230387\n"
 "help.text"
 msgid "<input>{=UNIQUE(B1:C10,FALSE(),TRUE())}</input>, with <emph>Uniqueness</emph> as TRUE. Returns the array below with the rows of Andy, Harry, Eva and Irene omitted because their combined grades and ages are not unique."
-msgstr ""
+msgstr "<input>{=UNIQUE(B1:C10;FALSE();TRUE())}</input>, s parametrem <emph>Jedinečnost</emph> jako PRAVDA. Vrátí níže uvedenou matici, v níž jsou vynechány řádky pro jména Aleš, Jindřich, Eva a Irena, protože jejich kombinace třídy a věku nejsou jedinečné."
 
 #. dScyG
 #: func_unique.xhp
@@ -70080,7 +70089,7 @@ msgctxt ""
 "par_id501715983764524\n"
 "help.text"
 msgid "<emph>Grade</emph>"
-msgstr ""
+msgstr "<emph>Třída</emph>"
 
 #. GAopa
 #: func_unique.xhp
@@ -70089,7 +70098,7 @@ msgctxt ""
 "par_id31715983773608\n"
 "help.text"
 msgid "<emph>Age</emph>"
-msgstr ""
+msgstr "<emph>Věk</emph>"
 
 #. oV47W
 #: func_unique.xhp
@@ -70783,6 +70792,15 @@ msgctxt ""
 "help.text"
 msgid "System"
 msgstr "Systém"
+
+#. cM6zS
+#: func_weeknum.xhp
+msgctxt ""
+"func_weeknum.xhp\n"
+"par_id901535122363436\n"
+"help.text"
+msgid "Description"
+msgstr ""
 
 #. V79BD
 #: func_weeknum.xhp
@@ -71585,41 +71603,41 @@ msgctxt ""
 msgid "Searches for a value in an array and returns a reference to a cell or range of cells."
 msgstr "Vyhledá hodnotu v matici a vrátí odkaz na buňku nebo oblast buněk."
 
-#. xMTVW
+#. bywFk
 #: func_xlookup.xhp
 msgctxt ""
 "func_xlookup.xhp\n"
 "par_id631708282151776\n"
 "help.text"
-msgid "XLOOKUP function is a modern and flexible replacement for older functions like <link href=\"text/scalc/01/04060109.xhp#Section9\">VLOOKUP</link>, <link href=\"text/scalc/01/04060109.xhp#Section17\">HLOOKUP</link>, and <link href=\"text/scalc/01/04060109.xhp#Section14\">LOOKUP</link>.  XLOOKUP supports approximate and exact matching, wildcards (* ?) for partial matches, and lookups in vertical or horizontal ranges. XLOOKUP can perform a reverse search and offers a fast binary search option when working with large datasets."
-msgstr "Funkce XLOOKUP je moderní a flexibilní náhradou starších funkcí <link href=\"text/scalc/01/04060109.xhp#Section9\">VLOOKUP</link>, <link href=\"text/scalc/01/04060109.xhp#Section17\">HLOOKUP</link> a <link href=\"text/scalc/01/04060109.xhp#Section14\">LOOKUP</link>. XLOOKUP podporuje přibližnou a přesnou shodu, zástupné znaky (* ?) pro částečnou shodu a vyhledávání ve svislých i vodorovných oblastech. Umožňuje vyhledávat odzadu a pro práci s rozsáhlými daty nabízí také rychlé binární vyhledávání."
+msgid "XLOOKUP function is a modern and flexible replacement for older functions like <link href=\"text/scalc/01/04060109.xhp#Section9\">VLOOKUP</link>, <link href=\"text/scalc/01/04060109.xhp#Section17\">HLOOKUP</link>, and <link href=\"text/scalc/01/04060109.xhp#Section14\">LOOKUP</link>. XLOOKUP supports approximate and exact matching, wildcards (* ?) for partial matches, and lookups in vertical or horizontal ranges. XLOOKUP can perform a reverse search and offers a fast binary search option when working with large datasets."
+msgstr ""
 
-#. VESoP
+#. TwFcc
 #: func_xlookup.xhp
 msgctxt ""
 "func_xlookup.xhp\n"
 "par_id211708281649651\n"
 "help.text"
-msgid "XLOOKUP(Lookup; Array; Return [; NotFound; MatchType; SearchMode ] )"
-msgstr "XLOOKUP(Vyhledávání; Matice; Výsledek [; Nenalezeno; Typ shody; Režim vyhledávání ] )"
+msgid "XLOOKUP( [Lookup] ; Array ; Return [ ; [ NotFound ] [ ; [MatchType] [ ; SearchMode ] ] ] )"
+msgstr ""
 
-#. 3zUXb
+#. WoJu6
 #: func_xlookup.xhp
 msgctxt ""
 "func_xlookup.xhp\n"
 "par_id861708281340704\n"
 "help.text"
-msgid "<emph>Lookup</emph>: The value of any type to search for in <emph>Array</emph>. If omitted, XLOOKUP returns blank cells it finds in <emph>Array</emph>."
-msgstr "<emph>Vyhledávání</emph>: Hodnota jakéhokoliv typu, která se má vyhledat v <emph>Matici</emph>. Pokud je vynechána, vrátí se v <emph>Matici</emph> nalezené prázdné buňky."
+msgid "<emph>Lookup</emph>: (optional) The value of any type to search for in <emph>Array</emph>. If omitted, XLOOKUP returns blank cells it finds in <emph>Array</emph>."
+msgstr ""
 
-#. qUjAU
+#. hBE9s
 #: func_xlookup.xhp
 msgctxt ""
 "func_xlookup.xhp\n"
 "par_id831708281625340\n"
 "help.text"
-msgid "<emph>Array</emph>: is the reference of the array or range to search."
-msgstr "<emph>Matice</emph>: je odkaz na matici nebo oblast, v níž se má vyhledávat."
+msgid "<emph>Array</emph>: is the reference of the array to search.  Array must be a 1-dimensional array and must be contained in one sheet only."
+msgstr ""
 
 #. nWhEP
 #: func_xlookup.xhp
@@ -71630,176 +71648,149 @@ msgctxt ""
 msgid "<emph>Return</emph>: is the reference of the array or range to return."
 msgstr "<emph>Výsledek</emph>: je odkaz na matici nebo oblast, která se má vrátit."
 
-#. 2LnvD
+#. G4DLq
 #: func_xlookup.xhp
 msgctxt ""
 "func_xlookup.xhp\n"
 "par_id821708357634624\n"
 "help.text"
-msgid "If <emph>Return</emph> is an array of values, the XLOOKUP function must be entered as an <link href=\"text/scalc/01/04060107.xhp#creating_array_formulas\">array formula</link>."
-msgstr "Je-li <emph>Výsledek</emph> maticí hodnot, funkci XLOOKUP je nutné zadat jako <link href=\"text/scalc/01/04060107.xhp#creating_array_formulas\">maticový vzorec</link>."
+msgid "If <emph>Return</emph> is a range of cells, the XLOOKUP function must be entered as an <link href=\"text/scalc/01/04060107.xhp#creating_array_formulas\">array formula</link>."
+msgstr ""
 
-#. 3fY6K
+#. WTFGZ
 #: func_xlookup.xhp
 msgctxt ""
 "func_xlookup.xhp\n"
 "par_id271708281637035\n"
 "help.text"
-msgid "<emph>NotFound</emph>: a text to return if the <emph>Lookup</emph> value is not found. If a valid match is not found, and <emph>NotFound</emph> is omitted, returns #N/A."
-msgstr "<emph>Nenalezeno</emph>: text, který se má vrátit, pokud není nalezena hodnota <emph>Vyhledávání</emph>. Pokud není platná hodnota nalezena a zároveň je tento argument vynechán, vrátí se #N/A."
+msgid "<emph>NotFound</emph>: a text or cell content to return if the <emph>Lookup</emph> value is not found. If a valid match is not found and <emph>NotFound</emph> is omitted, the function returns the #N/A error."
+msgstr ""
 
-#. hBDsh
+#. ruAWq
 #: func_xlookup.xhp
 msgctxt ""
 "func_xlookup.xhp\n"
 "par_id121708281643207\n"
 "help.text"
-msgid "<emph>MatchType</emph>: Specify the match type:"
-msgstr "<emph>Typ shody</emph>: Určete typ shody:"
+msgid "<emph>MatchType</emph>: (optional) specifies the match type. Values can be:"
+msgstr ""
 
-#. aCZbP
+#. go9sN
 #: func_xlookup.xhp
 msgctxt ""
 "func_xlookup.xhp\n"
 "par_id111708281542144\n"
 "help.text"
-msgid "<emph>0</emph> - Exact match (default). If <emph>Lookup</emph> value is not found and <emph>NotFound</emph> text is omitted, then return #N/A."
-msgstr "<emph>0</emph> - Přesná shoda (výchozí). Pokud není hodnota <emph>Vyhledávání</emph> nalezena a je vynechán text <emph>Nenalezeno</emph>, vrátí se #N/A."
+msgid "<emph>0</emph>: exact match (default). If <emph>Lookup</emph> value is not found and <emph>NotFound</emph> text is omitted, then return the #N/A error."
+msgstr ""
 
-#. w5rBH
+#. CtG9A
 #: func_xlookup.xhp
 msgctxt ""
 "func_xlookup.xhp\n"
 "par_id851708281548335\n"
 "help.text"
-msgid "<emph>-1</emph> - Exact match. If <emph>Lookup</emph> value is not found, then return the next smaller item."
-msgstr "<emph>-1</emph> - Přesná shoda. Pokud není hodnota <emph>Vyhledávání nalezena</emph>, vrátí se následující menší položka."
+msgid "<emph>-1</emph>: attempt exact match. If <emph>Lookup</emph> value is not found, then return the next smaller item."
+msgstr ""
 
-#. zQiND
+#. CpEkK
 #: func_xlookup.xhp
 msgctxt ""
 "func_xlookup.xhp\n"
 "par_id801708281553430\n"
 "help.text"
-msgid "<emph>1</emph> - Exact match. If <emph>Lookup</emph> value is not found, then return the next larger item."
-msgstr "<emph>1</emph> - Přesná shoda. Pokud není hodnota <emph>Vyhledávání nalezena</emph>, vrátí se následující větší položka."
+msgid "<emph>1</emph>: attempt exact match. If <emph>Lookup</emph> value is not found, then return the next larger item."
+msgstr ""
 
-#. 4Jxvx
+#. JJ3M2
 #: func_xlookup.xhp
 msgctxt ""
 "func_xlookup.xhp\n"
 "par_id881708281558005\n"
 "help.text"
-msgid "<emph>2</emph> - A <link href=\"text/scalc/guide/wildcards.xhp\">wildcard</link> match where characters *, ?, and ~ have special meaning."
-msgstr "<emph>2</emph> - Shoda se <link href=\"text/scalc/guide/wildcards.xhp\">zástupnými znaky</link> *, ? a ~, které mají zvláštní význam."
+msgid "<emph>2</emph>: a <link href=\"text/scalc/guide/wildcards.xhp\">wildcard</link> match where characters *, ?, and ~ have special meanings."
+msgstr ""
 
-#. CxCof
+#. EqTBc
 #: func_xlookup.xhp
 msgctxt ""
 "func_xlookup.xhp\n"
 "par_id871708281607313\n"
 "help.text"
-msgid "<emph>SearchMode</emph>: Specify the search mode to use:"
-msgstr "<emph>Režim vyhledávání</emph>: Určete, který režim vyhledávání se má použít:"
+msgid "<emph>SearchMode</emph>: (optional) specifies the search mode to use."
+msgstr ""
 
-#. Lc3bp
+#. FfKjN
 #: func_xlookup.xhp
 msgctxt ""
 "func_xlookup.xhp\n"
 "par_id281708281579757\n"
 "help.text"
-msgid "<emph>1</emph>: - Search starting at the first item (default)."
-msgstr "<emph>1</emph> - Vyhledávat se bude od první položky (výchozí)."
+msgid "<emph>1</emph>: returns the first occurrence starting from the first item of <emph>Array</emph> (default)."
+msgstr ""
 
-#. HVoEm
+#. 8CD3w
 #: func_xlookup.xhp
 msgctxt ""
 "func_xlookup.xhp\n"
 "par_id251708281584285\n"
 "help.text"
-msgid "<emph>-1</emph> - Reverse search starting at the last item."
-msgstr "<emph>-1</emph> - Vyhledávat se bude odzadu, od poslední položky."
+msgid "<emph>-1</emph>: reverse search. Returns the first occurrence starting from the last item of <emph>Array</emph>."
+msgstr ""
 
-#. CFAD4
+#. 6aABE
 #: func_xlookup.xhp
 msgctxt ""
 "func_xlookup.xhp\n"
 "par_id191708281589997\n"
 "help.text"
-msgid "<emph>2</emph> - Binary search that relies on <emph>Array</emph> being sorted in ascending order. If not sorted, invalid results will be returned."
-msgstr "<emph>2</emph> - Binární vyhledávání, které předpokládá, že je <emph>Matice</emph> vzestupně seřazena. Jestliže seřazena není, vrátí se chybné výsledky."
+msgid "<emph>2</emph>: binary search that relies on <emph>Array</emph> being sorted in ascending order. If not sorted, invalid results will be returned."
+msgstr ""
 
-#. mAGCX
+#. pwwij
 #: func_xlookup.xhp
 msgctxt ""
 "func_xlookup.xhp\n"
 "par_id561708281595885\n"
 "help.text"
-msgid "<emph>-2</emph> - Binary search that relies on <emph>Array</emph> being sorted in descending order. If not sorted, invalid results will be returned."
-msgstr "<emph>-2</emph> - Binární vyhledávání, které předpokládá, že je <emph>Matice</emph> sestupně seřazena. Jestliže seřazena není, vrátí se chybné výsledky."
+msgid "<emph>-2</emph>: binary search that relies on <emph>Array</emph> being sorted in descending order. If not sorted, invalid results will be returned."
+msgstr ""
 
-#. vD6hn
+#. fHQrZ
 #: func_xlookup.xhp
 msgctxt ""
 "func_xlookup.xhp\n"
-"par_id961708354814163\n"
+"par_id141716739193733\n"
 "help.text"
-msgid "The table below contains a glossary for translators:"
-msgstr "Následující tabulka obsahuje slovník pojmů pro překladatele:"
+msgid "<input>{=XLOOKUP(\"Atomic Number\";A2:A4;A2:DO4)}</input> returns the array"
+msgstr ""
 
-#. MSv55
+#. tkRq7
 #: func_xlookup.xhp
 msgctxt ""
 "func_xlookup.xhp\n"
-"par_id781708353695722\n"
+"par_id231716739652495\n"
 "help.text"
-msgid "<emph>English</emph>"
-msgstr "<emph>Anglicky</emph>"
+msgid "<input>{=XLOOKUP(\"Helium\";B1:DO1;B1:DO4)}</input> returns the array"
+msgstr ""
 
-#. 5G7WA
+#. D5tG5
 #: func_xlookup.xhp
 msgctxt ""
 "func_xlookup.xhp\n"
-"par_id641708353695723\n"
+"par_id21716739329244\n"
 "help.text"
-msgid "<emph>French</emph>"
-msgstr "<emph>Francouzsky</emph>"
+msgid "Helium"
+msgstr ""
 
-#. GRDeG
-#: func_xlookup.xhp
-msgctxt ""
-"func_xlookup.xhp\n"
-"par_id671708353695724\n"
-"help.text"
-msgid "<emph>Italian</emph>"
-msgstr "<emph>Italsky</emph>"
-
-#. JfbWn
-#: func_xlookup.xhp
-msgctxt ""
-"func_xlookup.xhp\n"
-"par_id331708353781503\n"
-"help.text"
-msgid "<emph>Japanese</emph>"
-msgstr "<emph>Japonsky</emph>"
-
-#. CmUw2
-#: func_xlookup.xhp
-msgctxt ""
-"func_xlookup.xhp\n"
-"par_id31708356677157\n"
-"help.text"
-msgid "<input>={XLOOKUP(\"New\", A2:A4, B2:D4,\"Missing\")}</input> returns the array {\"Nouveau\",\"Nuovo\",\"新しい\"}."
-msgstr "<input>={XLOOKUP(\"New\", A2:A4, B2:D4,\"Chybí\")}</input> vrátí matici {\"Nouveau\",\"Nuovo\",\"新しい\"}."
-
-#. Z9pX4
+#. vaCSD
 #: func_xlookup.xhp
 msgctxt ""
 "func_xlookup.xhp\n"
 "par_id671708356683379\n"
 "help.text"
-msgid "<input>={XLOOKUP(\"Reload\", A2:A4, B2:D4,\"Missing\")}</input> returns the array {\"Missing\",\"Missing\",\"Missing\"}."
-msgstr "<input>={XLOOKUP(\"Reload\", A2:A4, B2:D4,\"Chybí\")}</input> vrátí matici {\"Chybí\",\"Chybí\",\"Chybí\"}."
+msgid "<input>{=XLOOKUP(\"Kryptonite\";B1:DO1;B1:DO4;\"Unknown element\")}</input> returns the array {\"Unknown element\",\"Unknown element\",\"Unknown element\",\"Unknown element\"}."
+msgstr ""
 
 #. SzUpN
 #: func_xlookup.xhp
@@ -71837,23 +71828,32 @@ msgctxt ""
 msgid "<variable id=\"h1\"><link href=\"text/scalc/01/func_xmatch.xhp\">XMATCH</link></variable>"
 msgstr "<variable id=\"h1\"><link href=\"text/scalc/01/func_xmatch.xhp\">XMATCH</link></variable>"
 
-#. B9dyV
+#. 8GYav
 #: func_xmatch.xhp
 msgctxt ""
 "func_xmatch.xhp\n"
 "par_id581708279355738\n"
 "help.text"
-msgid "Searches for a value in an array or range of cells and returns the relative position of the item."
-msgstr "Vyhledá hodnotu v matici nebo oblasti buněk a vrátí její relativní pozici."
+msgid "Searches for a value in a one-dimensional array and returns the relative position of the item."
+msgstr ""
 
-#. MFVXB
+#. qJsbC
+#: func_xmatch.xhp
+msgctxt ""
+"func_xmatch.xhp\n"
+"par_id321716754048322\n"
+"help.text"
+msgid "XMATCH outperforms function <link href=\"text/scalc/01/04060109.xhp#Section12\">MATCH</link> as it allows searches according to the search mode."
+msgstr ""
+
+#. NFwz8
 #: func_xmatch.xhp
 msgctxt ""
 "func_xmatch.xhp\n"
 "par_id211708281649651\n"
 "help.text"
-msgid "XMATCH(Lookup; Array [; MatchType; SearchMode ] )"
-msgstr "XMATCH(Vyhledávání; Matice [; Typ shody; Režim vyhledávání ] )"
+msgid "XMATCH(Lookup; Array [; MatchType [; SearchMode ] ] )"
+msgstr ""
 
 #. NA2BM
 #: func_xmatch.xhp
@@ -71873,23 +71873,23 @@ msgctxt ""
 msgid "<emph>Array</emph>: is the reference of the array or range to search."
 msgstr "<emph>Matice</emph>: je odkaz na matici nebo oblast, v níž se má vyhledávat."
 
-#. EorAV
+#. WMXaP
 #: func_xmatch.xhp
 msgctxt ""
 "func_xmatch.xhp\n"
-"par_id391708364611193\n"
+"par_id471716753503759\n"
 "help.text"
-msgid "XMATCH outperforms function MATCH as it allows searches according to the search mode."
-msgstr "Výhodou funkce XMATCH je oproti funkci MATCH to, že umožňuje vyhledávat podle určitého režimu."
+msgid "<input>=XMATCH(\"Atomic Number\",A1:A4)</input> returns 3, the third line of the A1:A4 array."
+msgstr ""
 
-#. yRpQy
+#. QTDzi
 #: func_xmatch.xhp
 msgctxt ""
 "func_xmatch.xhp\n"
-"par_id31708356677157\n"
+"par_id581716753499133\n"
 "help.text"
-msgid "<input>=XMATCH(\"Save\", A2:A4, 0, 1)</input> returns 2, the second line of the A2:A4 range."
-msgstr "<input>=XMATCH(\"Save\", A2:A4, 0, 1)</input> vrátí 2, druhý řádek oblasti A2:A4."
+msgid "<input>=XMATCH(\"Li\",A2:DO2)</input> returns 4, the fourth column of the A2:DO2 array."
+msgstr ""
 
 #. 2AAX5
 #: func_xmatch.xhp
@@ -71961,7 +71961,7 @@ msgctxt ""
 "par_id451715611481885\n"
 "help.text"
 msgid "YEAR() returns the integer part of the year."
-msgstr ""
+msgstr "YEAR() vrátí celočíselnou část roku."
 
 #. 3RPng
 #: func_year.xhp
@@ -73644,7 +73644,7 @@ msgctxt ""
 "par_id401698839153661\n"
 "help.text"
 msgid "Opens the <emph>Sparklines Properties</emph> dialog to define sparkline settings."
-msgstr ""
+msgstr "Otevře dialogové okno <emph>Vlastnosti minigrafu</emph> pro určení nastavení minigrafu."
 
 #. wUPfH
 #: sparklines.xhp

@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2024-05-27 12:59+0200\n"
+"POT-Creation-Date: 2024-06-03 12:06+0200\n"
 "PO-Revision-Date: 2019-02-27 15:24+0000\n"
 "Last-Translator: Ingmārs Dīriņš <melhiors14@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -54583,6 +54583,15 @@ msgctxt ""
 msgid "This function ignores any text or empty cell within a data range. If you suspect wrong results from this function, look for text in the data ranges. To highlight text contents in a data range, use the <link href=\"text/scalc/01/03080000.xhp\">value highlighting</link> feature."
 msgstr ""
 
+#. DB6XT
+#: common_func.xhp
+msgctxt ""
+"common_func.xhp\n"
+"par_id431716730587722\n"
+"help.text"
+msgid "Any of the optional arguments can be omitted. An optional argument is required to be preceded by the preceding separators."
+msgstr ""
+
 #. GAPGX
 #: common_func_workdaysintl.xhp
 msgctxt ""
@@ -57146,6 +57155,15 @@ msgctxt ""
 "par_id1001601332672155\n"
 "help.text"
 msgid "This function is always recalculated whenever a recalculation occurs."
+msgstr ""
+
+#. fSXNw
+#: ful_func.xhp
+msgctxt ""
+"ful_func.xhp\n"
+"par_id711715953325962\n"
+"help.text"
+msgid "The function is always <emph>case insensitive</emph>, independent from the setting of <emph>Case sensitive</emph> checkbox in <switchinline select=\"sys\"><caseinline select=\"MAC\"><menuitem>%PRODUCTNAME - Preferences</menuitem></caseinline><defaultinline><menuitem>Tools - Options</menuitem></defaultinline></switchinline> - <link href=\"text/shared/optionen/01060500.xhp\"><menuitem>%PRODUCTNAME Calc - Calculate</menuitem></link>."
 msgstr ""
 
 #. 8DbP2
@@ -62413,22 +62431,22 @@ msgctxt ""
 msgid "<variable id=\"h1\"><link href=\"text/scalc/01/func_filter.xhp\">FILTER</link></variable>"
 msgstr ""
 
-#. nKHpG
+#. dxbQ9
 #: func_filter.xhp
 msgctxt ""
 "func_filter.xhp\n"
 "par_id771708806478128\n"
 "help.text"
-msgid "Filters a data range or array based on conditions you specify."
+msgid "Filters a data range or array based on specified conditions."
 msgstr ""
 
-#. M2JTs
+#. tuppo
 #: func_filter.xhp
 msgctxt ""
 "func_filter.xhp\n"
 "par_id211708281649651\n"
 "help.text"
-msgid "FILTER(Range, Criteria, Return if empty)"
+msgid "FILTER( Range; Criteria [; Return if empty])"
 msgstr ""
 
 #. SGrA5
@@ -62449,31 +62467,31 @@ msgctxt ""
 msgid "<emph>Criteria</emph>: A boolean array whose height (filtering by columns) or width (filtering by rows) is the same as the array, used to select data from the <emph>Range</emph>."
 msgstr ""
 
-#. KjAXK
+#. ZcP2E
 #: func_filter.xhp
 msgctxt ""
 "func_filter.xhp\n"
 "par_id421709395146863\n"
 "help.text"
-msgid "<emph>Return if empty</emph>: the value to return if all values in the Include array are empty (filter return nothing)."
+msgid "<emph>Result if empty</emph>: (optional) the value to return if all values in the <emph>Criteria</emph> array are empty (filter return nothing)."
 msgstr ""
 
-#. PAajv
+#. AFtpH
 #: func_filter.xhp
 msgctxt ""
 "func_filter.xhp\n"
 "par_id21709506838932\n"
 "help.text"
-msgid "<input>{=FILTER(A2:C13,A2:A13>50)}</input> returns the array {57,49,12|56,33,60|57,,} containing all grades with Maths grade above 50. Note that this is an array formula."
+msgid "<input>{=FILTER(A2:C13;A2:A13>50)}</input> returns the array containing all grades with Maths grade above 50. Note that this is an <link href=\"text/scalc/01/04060107.xhp#creating_array_formulas\">array formula</link>."
 msgstr ""
 
-#. WhdTC
+#. METQ9
 #: func_filter.xhp
 msgctxt ""
 "func_filter.xhp\n"
 "par_id561709507935610\n"
 "help.text"
-msgid "<input>{=FILTER(A2:C13,B2:B13>90,\"No results\")}</input>  Returns the string \"No results\", since no grade on Physics is above 90."
+msgid "<input>{=FILTER(A2:C13;B2:B13>90;\"No results\")}</input>  Returns the string \"No results\", since no grade on Physics is above 90."
 msgstr ""
 
 #. q34Yg
@@ -66940,13 +66958,13 @@ msgctxt ""
 msgid "Generates an array of random numbers between two limit values."
 msgstr ""
 
-#. 9wxNC
+#. ArGrF
 #: func_randarray.xhp
 msgctxt ""
 "func_randarray.xhp\n"
 "par_id211708281649651\n"
 "help.text"
-msgid "RANDARRAY([Rows], [Columns], [Min], [Max], [Integers])"
+msgid "RANDARRAY([Rows [; Columns [; Min [; Max [; Integers] ] ] ])"
 msgstr ""
 
 #. FDbmd
@@ -67012,13 +67030,13 @@ msgctxt ""
 msgid "If <emph>Rows</emph> or <emph>Columns</emph> are references to the content of other cells, the array dimensions do not change when the referenced content changes. The array formula must be deleted and re-entered."
 msgstr ""
 
-#. ERYkg
+#. mz6p3
 #: func_randarray.xhp
 msgctxt ""
 "func_randarray.xhp\n"
 "par_id521715616457946\n"
 "help.text"
-msgid "<input>{=RANDARRAY(10,4,10,50,1)}</input> returns an array of 10 rows, 4 columns with minimum value 10 and maximum value of 50 of whole numbers (integers)."
+msgid "<input>{=RANDARRAY(10;4;10;50;1)}</input> returns an array of 10 rows, 4 columns with minimum value 10 and maximum value of 50 of whole numbers (integers)."
 msgstr ""
 
 #. iGDsD
@@ -68083,13 +68101,13 @@ msgctxt ""
 msgid "The array is filled from the first row to the right up to the value of <emph>Columns</emph>, and then down to the number of rows."
 msgstr ""
 
-#. sC8E6
+#. u9vnG
 #: func_sequence.xhp
 msgctxt ""
 "func_sequence.xhp\n"
 "par_id201714595986945\n"
 "help.text"
-msgid "<input>{=SEQUENCE(3,3,10,11)}</input> returns the 3-by-3 array below with an upper-right value of 10 and filling the array to the right and then downward in steps of 11."
+msgid "<input>{=SEQUENCE(3,3,10,11)}</input> returns the 3-by-3 array below with an upper-left value of 10 and filling the array to the right and then downward in steps of 11."
 msgstr ""
 
 #. sNE2S
@@ -68236,49 +68254,49 @@ msgctxt ""
 msgid "Enter the formula as an <link href=\"text/scalc/01/04060107.xhp\">array formula</link>."
 msgstr ""
 
-#. LksfE
+#. DmRKh
 #: func_sort.xhp
 msgctxt ""
 "func_sort.xhp\n"
 "par_id211708281649651\n"
 "help.text"
-msgid "SORT(Range [, SortIndex[, SortOrder[, ByCol]]])"
+msgid "SORT(Range [; SortIndex [; SortOrder [; ByCol] ] ])"
 msgstr ""
 
-#. 4iAJz
+#. gmV6H
 #: func_sort.xhp
 msgctxt ""
 "func_sort.xhp\n"
 "par_id551711457515235\n"
 "help.text"
-msgid "<emph>Range:</emph> Required. The range or array to sort."
+msgid "<emph>Range:</emph> the range or array to sort."
 msgstr ""
 
-#. Epf9D
+#. WQaKY
 #: func_sort.xhp
 msgctxt ""
 "func_sort.xhp\n"
 "par_id151711457520290\n"
 "help.text"
-msgid "<emph>SortIndex:</emph> Optional. The number indicating the row or column to sort by."
+msgid "<emph>SortIndex:</emph> (optional). The number indicating the row or column to sort by."
 msgstr ""
 
-#. 2cgDj
+#. P5DGG
 #: func_sort.xhp
 msgctxt ""
 "func_sort.xhp\n"
 "par_id131711457525811\n"
 "help.text"
-msgid "<emph>SortOrder:</emph> Optional. A number indicating the desired sort order; 1 for ascending order (default), -1 for descending order."
+msgid "<emph>SortOrder:</emph> (optional). A number indicating the desired sort order; 1 for ascending order (default), -1 for descending order."
 msgstr ""
 
-#. JwCYE
+#. 5Vo8L
 #: func_sort.xhp
 msgctxt ""
 "func_sort.xhp\n"
 "par_id351711457531579\n"
 "help.text"
-msgid "<emph>ByCol:</emph> Optional. A logical value indicating the desired sort direction; <emph>FALSE</emph> to sort by row (default), <emph>TRUE</emph> to sort by column."
+msgid "<emph>ByCol:</emph> (optional). A logical value indicating the desired sort direction; <emph>FALSE</emph> to sort by row (default), <emph>TRUE</emph> to sort by column."
 msgstr ""
 
 #. hDBib
@@ -68470,13 +68488,13 @@ msgctxt ""
 msgid "Sorts the contents of a range or array based on the values in a corresponding range or array."
 msgstr ""
 
-#. EUgaa
+#. 52ZFJ
 #: func_sortby.xhp
 msgctxt ""
 "func_sortby.xhp\n"
 "par_id211708281649651\n"
 "help.text"
-msgid "SORTBY(Range, SortByRange1, SortOrder1[, SortByRange2, SortOrder2,[...]])"
+msgid "SORTBY(Range; SortByRange1; SortOrder1 [; SortByRange2; SortOrder2,[...] ])"
 msgstr ""
 
 #. gifyS
@@ -68488,31 +68506,31 @@ msgctxt ""
 msgid "<emph>Range</emph>: The array or range to sort."
 msgstr ""
 
-#. k3ADs
+#. i3EwL
 #: func_sortby.xhp
 msgctxt ""
 "func_sortby.xhp\n"
 "par_id291711544460323\n"
 "help.text"
-msgid "<emph>SortByRange1, SortByRange2,... </emph>: Range 1, range 2,... are the arrays or ranges to sort on."
+msgid "<emph>SortByRange1, SortByRange2,... </emph>: range 1, range 2,... are the arrays or ranges to sort on."
 msgstr ""
 
-#. FTuBa
+#. BA6NF
 #: func_sortby.xhp
 msgctxt ""
 "func_sortby.xhp\n"
 "par_id501711544465886\n"
 "help.text"
-msgid "<emph>SortOrder1, SortOrder2,...</emph> : Order 1, order 2,... are the orders to use for sorting. 1 for ascending, -1 for descending. Default is ascending."
+msgid "<emph>SortOrder1, SortOrder2,...</emph> : order 1, order 2,... are the orders to use for sorting. 1 for ascending, -1 for descending. Default is ascending."
 msgstr ""
 
-#. FA2hL
+#. jhZ65
 #: func_sortby.xhp
 msgctxt ""
 "func_sortby.xhp\n"
 "par_id131711466000482\n"
 "help.text"
-msgid "<input>{=SORTBY(A2:C7,A2:A7,1,C2:C7,-1)}</input>"
+msgid "<input>{=SORTBY(A2:C7;A2:A7;1;C2:C7;-1)}</input>"
 msgstr ""
 
 #. q9cpQ
@@ -69955,15 +69973,6 @@ msgctxt ""
 msgid "Returns the array of unique values from a range or array of values."
 msgstr ""
 
-#. h3r2U
-#: func_unique.xhp
-msgctxt ""
-"func_unique.xhp\n"
-"par_id711715953325962\n"
-"help.text"
-msgid "The UNIQUE function is always case sensitive, independent from the setting of <emph>Case sensitive</emph> checkbox in <switchinline select=\"sys\"><caseinline select=\"MAC\"><menuitem>%PRODUCTNAME - Preferences</menuitem></caseinline><defaultinline><menuitem>Tools - Options</menuitem></defaultinline></switchinline> - <link href=\"text/shared/optionen/01060500.xhp\"><menuitem>%PRODUCTNAME Calc - Calculate</menuitem></link>."
-msgstr ""
-
 #. A8bJf
 #: func_unique.xhp
 msgctxt ""
@@ -70783,6 +70792,15 @@ msgctxt ""
 msgid "System"
 msgstr ""
 
+#. cM6zS
+#: func_weeknum.xhp
+msgctxt ""
+"func_weeknum.xhp\n"
+"par_id901535122363436\n"
+"help.text"
+msgid "Description"
+msgstr ""
+
 #. V79BD
 #: func_weeknum.xhp
 msgctxt ""
@@ -71584,40 +71602,40 @@ msgctxt ""
 msgid "Searches for a value in an array and returns a reference to a cell or range of cells."
 msgstr ""
 
-#. xMTVW
+#. bywFk
 #: func_xlookup.xhp
 msgctxt ""
 "func_xlookup.xhp\n"
 "par_id631708282151776\n"
 "help.text"
-msgid "XLOOKUP function is a modern and flexible replacement for older functions like <link href=\"text/scalc/01/04060109.xhp#Section9\">VLOOKUP</link>, <link href=\"text/scalc/01/04060109.xhp#Section17\">HLOOKUP</link>, and <link href=\"text/scalc/01/04060109.xhp#Section14\">LOOKUP</link>.  XLOOKUP supports approximate and exact matching, wildcards (* ?) for partial matches, and lookups in vertical or horizontal ranges. XLOOKUP can perform a reverse search and offers a fast binary search option when working with large datasets."
+msgid "XLOOKUP function is a modern and flexible replacement for older functions like <link href=\"text/scalc/01/04060109.xhp#Section9\">VLOOKUP</link>, <link href=\"text/scalc/01/04060109.xhp#Section17\">HLOOKUP</link>, and <link href=\"text/scalc/01/04060109.xhp#Section14\">LOOKUP</link>. XLOOKUP supports approximate and exact matching, wildcards (* ?) for partial matches, and lookups in vertical or horizontal ranges. XLOOKUP can perform a reverse search and offers a fast binary search option when working with large datasets."
 msgstr ""
 
-#. VESoP
+#. TwFcc
 #: func_xlookup.xhp
 msgctxt ""
 "func_xlookup.xhp\n"
 "par_id211708281649651\n"
 "help.text"
-msgid "XLOOKUP(Lookup; Array; Return [; NotFound; MatchType; SearchMode ] )"
+msgid "XLOOKUP( [Lookup] ; Array ; Return [ ; [ NotFound ] [ ; [MatchType] [ ; SearchMode ] ] ] )"
 msgstr ""
 
-#. 3zUXb
+#. WoJu6
 #: func_xlookup.xhp
 msgctxt ""
 "func_xlookup.xhp\n"
 "par_id861708281340704\n"
 "help.text"
-msgid "<emph>Lookup</emph>: The value of any type to search for in <emph>Array</emph>. If omitted, XLOOKUP returns blank cells it finds in <emph>Array</emph>."
+msgid "<emph>Lookup</emph>: (optional) The value of any type to search for in <emph>Array</emph>. If omitted, XLOOKUP returns blank cells it finds in <emph>Array</emph>."
 msgstr ""
 
-#. qUjAU
+#. hBE9s
 #: func_xlookup.xhp
 msgctxt ""
 "func_xlookup.xhp\n"
 "par_id831708281625340\n"
 "help.text"
-msgid "<emph>Array</emph>: is the reference of the array or range to search."
+msgid "<emph>Array</emph>: is the reference of the array to search.  Array must be a 1-dimensional array and must be contained in one sheet only."
 msgstr ""
 
 #. nWhEP
@@ -71629,175 +71647,148 @@ msgctxt ""
 msgid "<emph>Return</emph>: is the reference of the array or range to return."
 msgstr ""
 
-#. 2LnvD
+#. G4DLq
 #: func_xlookup.xhp
 msgctxt ""
 "func_xlookup.xhp\n"
 "par_id821708357634624\n"
 "help.text"
-msgid "If <emph>Return</emph> is an array of values, the XLOOKUP function must be entered as an <link href=\"text/scalc/01/04060107.xhp#creating_array_formulas\">array formula</link>."
+msgid "If <emph>Return</emph> is a range of cells, the XLOOKUP function must be entered as an <link href=\"text/scalc/01/04060107.xhp#creating_array_formulas\">array formula</link>."
 msgstr ""
 
-#. 3fY6K
+#. WTFGZ
 #: func_xlookup.xhp
 msgctxt ""
 "func_xlookup.xhp\n"
 "par_id271708281637035\n"
 "help.text"
-msgid "<emph>NotFound</emph>: a text to return if the <emph>Lookup</emph> value is not found. If a valid match is not found, and <emph>NotFound</emph> is omitted, returns #N/A."
+msgid "<emph>NotFound</emph>: a text or cell content to return if the <emph>Lookup</emph> value is not found. If a valid match is not found and <emph>NotFound</emph> is omitted, the function returns the #N/A error."
 msgstr ""
 
-#. hBDsh
+#. ruAWq
 #: func_xlookup.xhp
 msgctxt ""
 "func_xlookup.xhp\n"
 "par_id121708281643207\n"
 "help.text"
-msgid "<emph>MatchType</emph>: Specify the match type:"
+msgid "<emph>MatchType</emph>: (optional) specifies the match type. Values can be:"
 msgstr ""
 
-#. aCZbP
+#. go9sN
 #: func_xlookup.xhp
 msgctxt ""
 "func_xlookup.xhp\n"
 "par_id111708281542144\n"
 "help.text"
-msgid "<emph>0</emph> - Exact match (default). If <emph>Lookup</emph> value is not found and <emph>NotFound</emph> text is omitted, then return #N/A."
+msgid "<emph>0</emph>: exact match (default). If <emph>Lookup</emph> value is not found and <emph>NotFound</emph> text is omitted, then return the #N/A error."
 msgstr ""
 
-#. w5rBH
+#. CtG9A
 #: func_xlookup.xhp
 msgctxt ""
 "func_xlookup.xhp\n"
 "par_id851708281548335\n"
 "help.text"
-msgid "<emph>-1</emph> - Exact match. If <emph>Lookup</emph> value is not found, then return the next smaller item."
+msgid "<emph>-1</emph>: attempt exact match. If <emph>Lookup</emph> value is not found, then return the next smaller item."
 msgstr ""
 
-#. zQiND
+#. CpEkK
 #: func_xlookup.xhp
 msgctxt ""
 "func_xlookup.xhp\n"
 "par_id801708281553430\n"
 "help.text"
-msgid "<emph>1</emph> - Exact match. If <emph>Lookup</emph> value is not found, then return the next larger item."
+msgid "<emph>1</emph>: attempt exact match. If <emph>Lookup</emph> value is not found, then return the next larger item."
 msgstr ""
 
-#. 4Jxvx
+#. JJ3M2
 #: func_xlookup.xhp
 msgctxt ""
 "func_xlookup.xhp\n"
 "par_id881708281558005\n"
 "help.text"
-msgid "<emph>2</emph> - A <link href=\"text/scalc/guide/wildcards.xhp\">wildcard</link> match where characters *, ?, and ~ have special meaning."
+msgid "<emph>2</emph>: a <link href=\"text/scalc/guide/wildcards.xhp\">wildcard</link> match where characters *, ?, and ~ have special meanings."
 msgstr ""
 
-#. CxCof
+#. EqTBc
 #: func_xlookup.xhp
 msgctxt ""
 "func_xlookup.xhp\n"
 "par_id871708281607313\n"
 "help.text"
-msgid "<emph>SearchMode</emph>: Specify the search mode to use:"
+msgid "<emph>SearchMode</emph>: (optional) specifies the search mode to use."
 msgstr ""
 
-#. Lc3bp
+#. FfKjN
 #: func_xlookup.xhp
 msgctxt ""
 "func_xlookup.xhp\n"
 "par_id281708281579757\n"
 "help.text"
-msgid "<emph>1</emph>: - Search starting at the first item (default)."
+msgid "<emph>1</emph>: returns the first occurrence starting from the first item of <emph>Array</emph> (default)."
 msgstr ""
 
-#. HVoEm
+#. 8CD3w
 #: func_xlookup.xhp
 msgctxt ""
 "func_xlookup.xhp\n"
 "par_id251708281584285\n"
 "help.text"
-msgid "<emph>-1</emph> - Reverse search starting at the last item."
+msgid "<emph>-1</emph>: reverse search. Returns the first occurrence starting from the last item of <emph>Array</emph>."
 msgstr ""
 
-#. CFAD4
+#. 6aABE
 #: func_xlookup.xhp
 msgctxt ""
 "func_xlookup.xhp\n"
 "par_id191708281589997\n"
 "help.text"
-msgid "<emph>2</emph> - Binary search that relies on <emph>Array</emph> being sorted in ascending order. If not sorted, invalid results will be returned."
+msgid "<emph>2</emph>: binary search that relies on <emph>Array</emph> being sorted in ascending order. If not sorted, invalid results will be returned."
 msgstr ""
 
-#. mAGCX
+#. pwwij
 #: func_xlookup.xhp
 msgctxt ""
 "func_xlookup.xhp\n"
 "par_id561708281595885\n"
 "help.text"
-msgid "<emph>-2</emph> - Binary search that relies on <emph>Array</emph> being sorted in descending order. If not sorted, invalid results will be returned."
+msgid "<emph>-2</emph>: binary search that relies on <emph>Array</emph> being sorted in descending order. If not sorted, invalid results will be returned."
 msgstr ""
 
-#. vD6hn
+#. fHQrZ
 #: func_xlookup.xhp
 msgctxt ""
 "func_xlookup.xhp\n"
-"par_id961708354814163\n"
+"par_id141716739193733\n"
 "help.text"
-msgid "The table below contains a glossary for translators:"
+msgid "<input>{=XLOOKUP(\"Atomic Number\";A2:A4;A2:DO4)}</input> returns the array"
 msgstr ""
 
-#. MSv55
+#. tkRq7
 #: func_xlookup.xhp
 msgctxt ""
 "func_xlookup.xhp\n"
-"par_id781708353695722\n"
+"par_id231716739652495\n"
 "help.text"
-msgid "<emph>English</emph>"
+msgid "<input>{=XLOOKUP(\"Helium\";B1:DO1;B1:DO4)}</input> returns the array"
 msgstr ""
 
-#. 5G7WA
+#. D5tG5
 #: func_xlookup.xhp
 msgctxt ""
 "func_xlookup.xhp\n"
-"par_id641708353695723\n"
+"par_id21716739329244\n"
 "help.text"
-msgid "<emph>French</emph>"
+msgid "Helium"
 msgstr ""
 
-#. GRDeG
-#: func_xlookup.xhp
-msgctxt ""
-"func_xlookup.xhp\n"
-"par_id671708353695724\n"
-"help.text"
-msgid "<emph>Italian</emph>"
-msgstr ""
-
-#. JfbWn
-#: func_xlookup.xhp
-msgctxt ""
-"func_xlookup.xhp\n"
-"par_id331708353781503\n"
-"help.text"
-msgid "<emph>Japanese</emph>"
-msgstr ""
-
-#. CmUw2
-#: func_xlookup.xhp
-msgctxt ""
-"func_xlookup.xhp\n"
-"par_id31708356677157\n"
-"help.text"
-msgid "<input>={XLOOKUP(\"New\", A2:A4, B2:D4,\"Missing\")}</input> returns the array {\"Nouveau\",\"Nuovo\",\"新しい\"}."
-msgstr ""
-
-#. Z9pX4
+#. vaCSD
 #: func_xlookup.xhp
 msgctxt ""
 "func_xlookup.xhp\n"
 "par_id671708356683379\n"
 "help.text"
-msgid "<input>={XLOOKUP(\"Reload\", A2:A4, B2:D4,\"Missing\")}</input> returns the array {\"Missing\",\"Missing\",\"Missing\"}."
+msgid "<input>{=XLOOKUP(\"Kryptonite\";B1:DO1;B1:DO4;\"Unknown element\")}</input> returns the array {\"Unknown element\",\"Unknown element\",\"Unknown element\",\"Unknown element\"}."
 msgstr ""
 
 #. SzUpN
@@ -71836,22 +71827,31 @@ msgctxt ""
 msgid "<variable id=\"h1\"><link href=\"text/scalc/01/func_xmatch.xhp\">XMATCH</link></variable>"
 msgstr ""
 
-#. B9dyV
+#. 8GYav
 #: func_xmatch.xhp
 msgctxt ""
 "func_xmatch.xhp\n"
 "par_id581708279355738\n"
 "help.text"
-msgid "Searches for a value in an array or range of cells and returns the relative position of the item."
+msgid "Searches for a value in a one-dimensional array and returns the relative position of the item."
 msgstr ""
 
-#. MFVXB
+#. qJsbC
+#: func_xmatch.xhp
+msgctxt ""
+"func_xmatch.xhp\n"
+"par_id321716754048322\n"
+"help.text"
+msgid "XMATCH outperforms function <link href=\"text/scalc/01/04060109.xhp#Section12\">MATCH</link> as it allows searches according to the search mode."
+msgstr ""
+
+#. NFwz8
 #: func_xmatch.xhp
 msgctxt ""
 "func_xmatch.xhp\n"
 "par_id211708281649651\n"
 "help.text"
-msgid "XMATCH(Lookup; Array [; MatchType; SearchMode ] )"
+msgid "XMATCH(Lookup; Array [; MatchType [; SearchMode ] ] )"
 msgstr ""
 
 #. NA2BM
@@ -71872,22 +71872,22 @@ msgctxt ""
 msgid "<emph>Array</emph>: is the reference of the array or range to search."
 msgstr ""
 
-#. EorAV
+#. WMXaP
 #: func_xmatch.xhp
 msgctxt ""
 "func_xmatch.xhp\n"
-"par_id391708364611193\n"
+"par_id471716753503759\n"
 "help.text"
-msgid "XMATCH outperforms function MATCH as it allows searches according to the search mode."
+msgid "<input>=XMATCH(\"Atomic Number\",A1:A4)</input> returns 3, the third line of the A1:A4 array."
 msgstr ""
 
-#. yRpQy
+#. QTDzi
 #: func_xmatch.xhp
 msgctxt ""
 "func_xmatch.xhp\n"
-"par_id31708356677157\n"
+"par_id581716753499133\n"
 "help.text"
-msgid "<input>=XMATCH(\"Save\", A2:A4, 0, 1)</input> returns 2, the second line of the A2:A4 range."
+msgid "<input>=XMATCH(\"Li\",A2:DO2)</input> returns 4, the fourth column of the A2:DO2 array."
 msgstr ""
 
 #. 2AAX5
