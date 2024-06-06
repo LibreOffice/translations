@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2024-06-03 12:06+0200\n"
-"PO-Revision-Date: 2024-05-27 07:38+0000\n"
+"POT-Creation-Date: 2024-06-06 13:17+0200\n"
+"PO-Revision-Date: 2024-06-05 01:45+0000\n"
 "Last-Translator: Po-Yen Huang <jeff.huang@ossii.com.tw>\n"
 "Language-Team: Chinese (Traditional) <https://translations.documentfoundation.org/projects/libo_ui-master/scmessages/zh_Hant/>\n"
 "Language: zh-TW\n"
@@ -14279,24 +14279,31 @@ msgctxt "SC_OPCODE_X_LOOKUP"
 msgid "Match Mode"
 msgstr "符合模式"
 
-#. d2Wkh
+#. afJBG
 #: sc/inc/scfuncs.hrc:3393
 msgctxt "SC_OPCODE_X_LOOKUP"
-msgid "0, -1, 1 or 2 "
-msgstr "0, -1, 1 或 2 "
+msgid ""
+"0 - Exact match. Will return #N/A if no match. (default).\n"
+"-1 - Exact match or the next smaller item.\n"
+"1 - Exact match or the next larger item.\n"
+"2 - Wildcard or regular expression match."
+msgstr ""
 
 #. EvSiP
-#. TODO : add explanation of values
 #: sc/inc/scfuncs.hrc:3394
 msgctxt "SC_OPCODE_X_LOOKUP"
 msgid "Search Mode"
 msgstr "搜尋模式"
 
-#. idJvP
+#. aUEgE
 #: sc/inc/scfuncs.hrc:3395
 msgctxt "SC_OPCODE_X_LOOKUP"
-msgid "1, -1, 2 or -2 "
-msgstr "1, -1, 2 或 -2 "
+msgid ""
+"1 - Search from the first value (default).\n"
+"-1 - Search from the last value (reverse).\n"
+"2 - Binary search values sorted in ascending order.\n"
+"-2 - Binary search values sorted in descending order."
+msgstr ""
 
 #. KZapz
 #: sc/inc/scfuncs.hrc:3401
@@ -14502,24 +14509,31 @@ msgctxt "SC_OPCODE_X_MATCH"
 msgid "Match Mode"
 msgstr "符合模式"
 
-#. t6qx7
+#. 2oEFA
 #: sc/inc/scfuncs.hrc:3455
 msgctxt "SC_OPCODE_X_MATCH"
-msgid "0, -1, 1 or 2 "
-msgstr "0, -1, 1 或 2 "
+msgid ""
+"0 - Exact match. Will return #N/A if no match. (default).\n"
+"-1 - Exact match or the next smaller item.\n"
+"1 - Exact match or the next larger item.\n"
+"2 - Wildcard or regular expression match."
+msgstr ""
 
 #. UtoXD
-#. TODO : add explanation of values
 #: sc/inc/scfuncs.hrc:3456
 msgctxt "SC_OPCODE_X_MATCH"
 msgid "Search Mode"
 msgstr "搜尋模式"
 
-#. uZCBe
+#. J9uEM
 #: sc/inc/scfuncs.hrc:3457
 msgctxt "SC_OPCODE_X_MATCH"
-msgid "1, -1, 2 or -2 "
-msgstr "1, -1, 2 或 -2 "
+msgid ""
+"1 - Search from the first value (default).\n"
+"-1 - Search from the last value (reverse).\n"
+"2 - Binary search values sorted in ascending order.\n"
+"-2 - Binary search values sorted in descending order."
+msgstr ""
 
 #. XJ4FS
 #: sc/inc/scfuncs.hrc:3463
@@ -17048,11 +17062,11 @@ msgctxt "SC_OPCODE_RANDARRAY"
 msgid "Integers"
 msgstr "整數"
 
-#. UiLts
+#. rMwVv
 #: sc/inc/scfuncs.hrc:4251
 msgctxt "SC_OPCODE_RANDARRAY"
-msgid "Return whole numbers (TRUE) or decimal values (FALSE)."
-msgstr "回傳整數 (TRUE) 或小數 (FALSE)。"
+msgid "Return integer (TRUE) or decimal (FALSE) values."
+msgstr ""
 
 #. NJR3E
 #: sc/inc/scfuncs.hrc:4257
@@ -17095,6 +17109,48 @@ msgstr "單一性"
 msgctxt "SC_OPCODE_UNIQUE"
 msgid "Logical value that defines what values are considered unique: TRUE - returns values that occur only once. FALSE or omitted (default) - returns all distinct (different) values in the range or array."
 msgstr "定義哪些值被視為唯一的邏輯值：TRUE - 回傳僅出現一次的值。FALSE 或省略（預設）- 回傳範圍或陣列中的所有不同值。"
+
+#. axamT
+#: sc/inc/scfuncs.hrc:4269
+msgctxt "SC_OPCODE_LET"
+msgid "The LET function assigns names to calculation results. This allows storing intermediate calculations, values, or defining names inside a formula. These names only apply within the scope of the LET function."
+msgstr ""
+
+#. 6DDAi
+#: sc/inc/scfuncs.hrc:4270
+msgctxt "SC_OPCODE_LET"
+msgid "Name 1"
+msgstr ""
+
+#. a7LQR
+#: sc/inc/scfuncs.hrc:4271
+msgctxt "SC_OPCODE_LET"
+msgid "The first name to assign. Must start with a letter. Cannot be the output of a formula or conflict with range syntax."
+msgstr ""
+
+#. KsyBM
+#: sc/inc/scfuncs.hrc:4272
+msgctxt "SC_OPCODE_LET"
+msgid "Name value "
+msgstr ""
+
+#. Dn2DE
+#: sc/inc/scfuncs.hrc:4273
+msgctxt "SC_OPCODE_LET"
+msgid "Name value 1, Name value 2,... The value or calculation to assign to Name."
+msgstr ""
+
+#. CHAMD
+#: sc/inc/scfuncs.hrc:4274
+msgctxt "SC_OPCODE_LET"
+msgid "Calculation or Name "
+msgstr ""
+
+#. tFMkP
+#: sc/inc/scfuncs.hrc:4275
+msgctxt "SC_OPCODE_LET"
+msgid "A calculation that uses all names within the LET function. This must be the last argument in the LET function. Or a second Name to assign to a second Name value. If a second Name is specified, Name value 2 and Calculation or Name 3 become required."
+msgstr ""
 
 #. pDDme
 #: sc/inc/scstyles.hrc:29
@@ -23172,7 +23228,7 @@ msgstr "標準(_S)"
 #: sc/uiconfig/scalc/ui/drawtemplatedialog.ui:126
 msgctxt "drawtemplatedialog|organizer"
 msgid "General"
-msgstr ""
+msgstr "一般"
 
 #. qSfk8
 #: sc/uiconfig/scalc/ui/drawtemplatedialog.ui:149
@@ -28119,7 +28175,7 @@ msgstr "頁面樣式"
 #: sc/uiconfig/scalc/ui/pagetemplatedialog.ui:127
 msgctxt "pagetemplatedialog|organizer"
 msgid "General"
-msgstr ""
+msgstr "一般"
 
 #. CbW7A
 #: sc/uiconfig/scalc/ui/pagetemplatedialog.ui:150
@@ -28197,7 +28253,7 @@ msgstr "儲存格樣式"
 #: sc/uiconfig/scalc/ui/paratemplatedialog.ui:126
 msgctxt "paratemplatedialog|organizer"
 msgid "General"
-msgstr ""
+msgstr "一般"
 
 #. asnEd
 #: sc/uiconfig/scalc/ui/paratemplatedialog.ui:149
@@ -33983,11 +34039,11 @@ msgctxt "validationcriteriapage|liststore1"
 msgid "All values"
 msgstr "所有的值"
 
-#. B9wqg
+#. HbA4D
 #: sc/uiconfig/scalc/ui/validationcriteriapage.ui:48
 msgctxt "validationcriteriapage|liststore1"
-msgid "Whole Numbers"
-msgstr "整數"
+msgid "Integer"
+msgstr ""
 
 #. hCaRD
 #: sc/uiconfig/scalc/ui/validationcriteriapage.ui:49
