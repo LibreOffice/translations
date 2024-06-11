@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2024-06-06 13:17+0200\n"
+"POT-Creation-Date: 2024-06-10 14:48+0200\n"
 "PO-Revision-Date: 2021-08-10 09:21+0000\n"
 "Last-Translator: Mihkel Tõnnov <mihhkel@gmail.com>\n"
 "Language-Team: Estonian <https://translations.documentfoundation.org/projects/libo_help-master/textscalc01/et/>\n"
@@ -18348,6 +18348,15 @@ msgctxt ""
 "help.text"
 msgid "<item type=\"input\">=SUM(INDIRECT(\"a1:\" & ADDRESS(1;3)))</item> totals the cells in the area of A1 up to the cell with the address defined by row 1 and column 3. This means that area A1:C1 is totaled."
 msgstr "<item type=\"input\">=SUM(INDIRECT(\"a1:\" & ADDRESS(1;3)))</item> liidab ala A1 lahtrite väärtused kuni lahtrini, mille aadress on määratud reaga 1 ja veeruga 3. See tähendab, et liidetakse ala A1:C1 väärtused."
+
+#. MssCB
+#: 04060109.xhp
+msgctxt ""
+"04060109.xhp\n"
+"par_id701677016751509\n"
+"help.text"
+msgid "<link href=\"https://wiki.documentfoundation.org/Documentation/Calc_Functions/INDIRECT\">INDIRECT wiki page</link>."
+msgstr ""
 
 #. T2BJo
 #: 04060109.xhp
@@ -65255,6 +65264,132 @@ msgctxt ""
 "par_id801677015502335\n"
 "help.text"
 msgid "<link href=\"https://wiki.documentfoundation.org/Documentation/Calc_Functions/JIS\">JIS wiki page</link>."
+msgstr ""
+
+#. ANivD
+#: func_let.xhp
+msgctxt ""
+"func_let.xhp\n"
+"tit\n"
+"help.text"
+msgid "LET function"
+msgstr ""
+
+#. mp4Fy
+#: func_let.xhp
+msgctxt ""
+"func_let.xhp\n"
+"bm_id361708283183878\n"
+"help.text"
+msgid "<bookmark_value>LET function</bookmark_value>"
+msgstr ""
+
+#. cUrJc
+#: func_let.xhp
+msgctxt ""
+"func_let.xhp\n"
+"hd_id721717677746932\n"
+"help.text"
+msgid "<variable id=\"h1\"><link href=\"text/scalc/01/func_let.xhp\">LET</link></variable>"
+msgstr ""
+
+#. NFFDr
+#: func_let.xhp
+msgctxt ""
+"func_let.xhp\n"
+"par_id71717677746935\n"
+"help.text"
+msgid "Assigns names to calculation results. This allows storing intermediate calculations, values, or defining names inside a formula. These names only apply within the scope of the LET function."
+msgstr ""
+
+#. A9iKa
+#: func_let.xhp
+msgctxt ""
+"func_let.xhp\n"
+"par_id211708281649651\n"
+"help.text"
+msgid "LET(Name1; Name_value1; Calculation_or_Name2; [Name_value2; Calculation_or_Name3 [; ...]])"
+msgstr ""
+
+#. voGvK
+#: func_let.xhp
+msgctxt ""
+"func_let.xhp\n"
+"par_id301717681619674\n"
+"help.text"
+msgid "<emph>Name1</emph>: the first name to assign. Must start with a letter. Cannot be the output of a formula or conflict with range syntax."
+msgstr ""
+
+#. CDP5D
+#: func_let.xhp
+msgctxt ""
+"func_let.xhp\n"
+"par_id721717688901981\n"
+"help.text"
+msgid "Name1 must follow the <link href=\"text/scalc/guide/value_with_name.xhp\">naming rules of %PRODUCTNAME Calc</link>."
+msgstr ""
+
+#. pXGwN
+#: func_let.xhp
+msgctxt ""
+"func_let.xhp\n"
+"par_id951717681624139\n"
+"help.text"
+msgid "<emph>Name_value1</emph>: the value or calculation to assign to Name1."
+msgstr ""
+
+#. RpF5L
+#: func_let.xhp
+msgctxt ""
+"func_let.xhp\n"
+"par_id421717686226452\n"
+"help.text"
+msgid "<emph>Name2; Name_value2;...</emph>: (optional) same as Name1 and Name_value1, respectively. Name_value2 must follow Name2 and so on."
+msgstr ""
+
+#. ii4Cd
+#: func_let.xhp
+msgctxt ""
+"func_let.xhp\n"
+"par_id231717686233659\n"
+"help.text"
+msgid "<emph>Calculation</emph>: a formula expression that uses all names within the LET function."
+msgstr ""
+
+#. AaFRL
+#: func_let.xhp
+msgctxt ""
+"func_let.xhp\n"
+"par_id91717686350018\n"
+"help.text"
+msgid "<emph>Calculation</emph> must be the last argument in the LET function."
+msgstr ""
+
+#. vGdpF
+#: func_let.xhp
+msgctxt ""
+"func_let.xhp\n"
+"par_id121717701196975\n"
+"help.text"
+msgid "Calculate the molar mass of the water molecule knowing that the molecule has 2 hydrogen atoms and one oxygen atom."
+msgstr ""
+
+#. s46BC
+#: func_let.xhp
+msgctxt ""
+"func_let.xhp\n"
+"par_id311717701158800\n"
+"help.text"
+msgid "<input>=LET(mHydro; HLOOKUP(\"Hydrogen\"; $A$1:$DO$4; 4; 0); mOxy; HLOOKUP(\"Oxygen\"; $A$1:$DO$4; 4; 0); \"The molar mass of water is \"&(mOxy+2*mHydro)&\" g/mol\")</input> returns \"The molar mass of water is 18.015 g/mol\"."
+msgstr ""
+
+#. TGwea
+#: func_let.xhp
+msgctxt ""
+"func_let.xhp\n"
+"par_id701677016751508\n"
+"help.text"
+msgid "<link href=\"https://wiki.documentfoundation.org/Documentation/Calc_Functions/LET\">LET wiki page</link>."
 msgstr ""
 
 #. Cauxq
