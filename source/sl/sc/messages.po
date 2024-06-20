@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: LibreOffice 24.8\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2024-05-30 08:34+0200\n"
-"PO-Revision-Date: 2024-05-31 18:29+0200\n"
+"POT-Creation-Date: 2024-06-17 10:36+0200\n"
+"PO-Revision-Date: 2024-06-20 09:41+0200\n"
 "Last-Translator: Martin Srebotnjak <miles@filmsi.net>\n"
 "Language-Team: sl.libreoffice.org\n"
 "Language: sl\n"
@@ -11955,10 +11955,17 @@ msgstr "Način ujemanja"
 
 #: sc/inc/scfuncs.hrc:3393
 msgctxt "SC_OPCODE_X_LOOKUP"
-msgid "0, -1, 1 or 2 "
-msgstr "0, -1, 1 ali 2 "
+msgid ""
+"0 - Exact match. Will return #N/A if no match. (default).\n"
+"-1 - Exact match or the next smaller item.\n"
+"1 - Exact match or the next larger item.\n"
+"2 - Wildcard or regular expression match."
+msgstr ""
+"0 - Natančen zadetek. Vrne napako #N/A, če zadetka ni (privzeto).\n"
+"-1 - Natančen zadetek ali prvi naslednji manjši element.\n"
+"1 - Natančen zadetek ali naslednji večji element.\n"
+"2 - Zadetek z nadomestnimi znaki ali regularnim izrazom."
 
-#. TODO : add explanation of values
 #: sc/inc/scfuncs.hrc:3394
 msgctxt "SC_OPCODE_X_LOOKUP"
 msgid "Search Mode"
@@ -11966,8 +11973,16 @@ msgstr "Iskalni način"
 
 #: sc/inc/scfuncs.hrc:3395
 msgctxt "SC_OPCODE_X_LOOKUP"
-msgid "1, -1, 2 or -2 "
-msgstr "1, -1, 2 ali -2 "
+msgid ""
+"1 - Search from the first value (default).\n"
+"-1 - Search from the last value (reverse).\n"
+"2 - Binary search values sorted in ascending order.\n"
+"-2 - Binary search values sorted in descending order."
+msgstr ""
+"1 - Iskanje od prve vrednosti (privzeto).\n"
+"-1 - Iskanje od zadnje vrednosti (obratno).\n"
+"2 - Vrednosti binarnega iskanja, razvrščene v naraščajočem zaporedju.\n"
+"-2 - Vrednosti binarnega iskanja, razvrščene v padajočem zaporedju."
 
 #: sc/inc/scfuncs.hrc:3401
 msgctxt "SC_OPCODE_INDEX"
@@ -12141,10 +12156,17 @@ msgstr "Način ujemanja"
 
 #: sc/inc/scfuncs.hrc:3455
 msgctxt "SC_OPCODE_X_MATCH"
-msgid "0, -1, 1 or 2 "
-msgstr "0, -1, 1 ali 2 "
+msgid ""
+"0 - Exact match. Will return #N/A if no match. (default).\n"
+"-1 - Exact match or the next smaller item.\n"
+"1 - Exact match or the next larger item.\n"
+"2 - Wildcard or regular expression match."
+msgstr ""
+"0 - Natančen zadetek. Vrne napako #N/A, če zadetka ni (privzeto).\n"
+"-1 - Natančen zadetek ali prvi naslednji manjši element.\n"
+"1 - Natančen zadetek ali naslednji večji element.\n"
+"2 - Zadetek z nadomestnimi znaki ali regularnim izrazom."
 
-#. TODO : add explanation of values
 #: sc/inc/scfuncs.hrc:3456
 msgctxt "SC_OPCODE_X_MATCH"
 msgid "Search Mode"
@@ -12152,8 +12174,16 @@ msgstr "Iskalni način"
 
 #: sc/inc/scfuncs.hrc:3457
 msgctxt "SC_OPCODE_X_MATCH"
-msgid "1, -1, 2 or -2 "
-msgstr "1, -1, 2 ali -2 "
+msgid ""
+"1 - Search from the first value (default).\n"
+"-1 - Search from the last value (reverse).\n"
+"2 - Binary search values sorted in ascending order.\n"
+"-2 - Binary search values sorted in descending order."
+msgstr ""
+"1 - Iskanje od prve vrednosti (privzeto).\n"
+"-1 - Iskanje od zadnje vrednosti (obratno).\n"
+"2 - Vrednosti binarnega iskanja, razvrščene v naraščajočem zaporedju.\n"
+"-2 - Vrednosti binarnega iskanja, razvrščene v padajočem zaporedju."
 
 #: sc/inc/scfuncs.hrc:3463
 msgctxt "SC_OPCODE_OFFSET"
@@ -14263,7 +14293,7 @@ msgstr "Cela števila"
 
 #: sc/inc/scfuncs.hrc:4251
 msgctxt "SC_OPCODE_RANDARRAY"
-msgid "Return whole numbers (TRUE) or decimal values (FALSE)."
+msgid "Return integer (TRUE) or decimal (FALSE) values."
 msgstr "Vrne cela števila (TRUE oz. res je) ali decimalna števila (FALSE oz. ni res)."
 
 #: sc/inc/scfuncs.hrc:4257
@@ -14289,7 +14319,7 @@ msgstr "Po stolpcu"
 #: sc/inc/scfuncs.hrc:4261
 msgctxt "SC_OPCODE_UNIQUE"
 msgid "Logical value indicating how to compare data: TRUE - compares data across columns. FALSE or omitted (default) - compares data across rows."
-msgstr "Logične vrednost, ki nakazuje, kako naj se podatki primerjajo: TRUE (oz. res je) – primerja podatke med stolpci, FALSE (oz. ni res) ali izpuščeno (privzeto) – primerja podatke med vrstcami."
+msgstr "Logične vrednost, ki nakazuje, kako naj se podatki primerjajo: TRUE (oz. res je) – primerja podatke med stolpci, FALSE (oz. ni res) ali izpuščeno (privzeto) – primerja podatke med vrsticami."
 
 #: sc/inc/scfuncs.hrc:4262
 msgctxt "SC_OPCODE_UNIQUE"
@@ -14300,6 +14330,41 @@ msgstr "Edinstveno"
 msgctxt "SC_OPCODE_UNIQUE"
 msgid "Logical value that defines what values are considered unique: TRUE - returns values that occur only once. FALSE or omitted (default) - returns all distinct (different) values in the range or array."
 msgstr "Logična vrednost, ki določa, katere vrednosti veljajo za edinstvene: TRUE – vrne vrednosti, ki se pojavijo samo enkrat, kar je pojem edinstvenosti v zbirki podatkov. FALSE ali izpuščeno (privzeto) – vrne vse posebne (različne) vrednosti v območju ali matriki."
+
+#: sc/inc/scfuncs.hrc:4269
+msgctxt "SC_OPCODE_LET"
+msgid "The LET function assigns names to calculation results. This allows storing intermediate calculations, values, or defining names inside a formula. These names only apply within the scope of the LET function."
+msgstr "Funkcija LET dodeljuje imena rezultatom izračuna. S tem omogoča shranjevanje vmesnih izračunov, vrednosti ali določanje imen v formulah. Ta imena se uveljavijo le v okviru funkcije LET."
+
+#: sc/inc/scfuncs.hrc:4270
+msgctxt "SC_OPCODE_LET"
+msgid "Name 1"
+msgstr "Ime 1"
+
+#: sc/inc/scfuncs.hrc:4271
+msgctxt "SC_OPCODE_LET"
+msgid "The first name to assign. Must start with a letter. Cannot be the output of a formula or conflict with range syntax."
+msgstr "Prvo ime, ki ga želite dodeliti. Začeti se mora s črko. Ne more biti izhod formule ali spora s skladnjo obsega."
+
+#: sc/inc/scfuncs.hrc:4272
+msgctxt "SC_OPCODE_LET"
+msgid "Name value "
+msgstr "Vrednost imena "
+
+#: sc/inc/scfuncs.hrc:4273
+msgctxt "SC_OPCODE_LET"
+msgid "Name value 1, Name value 2,... The value or calculation to assign to Name."
+msgstr "Vrednost imena 1, vrednost imena 2, ... Vrednost ali izračun, dodeljen posameznemu imenu."
+
+#: sc/inc/scfuncs.hrc:4274
+msgctxt "SC_OPCODE_LET"
+msgid "Calculation or Name "
+msgstr "Izračun ali ime "
+
+#: sc/inc/scfuncs.hrc:4275
+msgctxt "SC_OPCODE_LET"
+msgid "A calculation that uses all names within the LET function. This must be the last argument in the LET function. Or a second Name to assign to a second Name value. If a second Name is specified, Name value 2 and Calculation or Name 3 become required."
+msgstr "Izračun, ki uporablja vsa imena iz funkcije LET. To mora biti zadnji argument funkcije LET. Ali drugo ime, ki naj bo dodeljeno vrednosti drugega imena. Če je določeno drug ime, sta vrednost 2 imena in izračun ali ime 3 obvezna."
 
 #: sc/inc/scstyles.hrc:29
 msgctxt "RID_CELLSTYLEFAMILY"
@@ -19372,8 +19437,8 @@ msgstr "_Standardno"
 
 #: sc/uiconfig/scalc/ui/drawtemplatedialog.ui:126
 msgctxt "drawtemplatedialog|organizer"
-msgid "Organizer"
-msgstr "Organizator"
+msgid "General"
+msgstr "Splošno"
 
 #: sc/uiconfig/scalc/ui/drawtemplatedialog.ui:149
 msgctxt "drawtemplatedialog|line"
@@ -23497,8 +23562,8 @@ msgstr "Slog strani"
 
 #: sc/uiconfig/scalc/ui/pagetemplatedialog.ui:127
 msgctxt "pagetemplatedialog|organizer"
-msgid "Organizer"
-msgstr "Organizator"
+msgid "General"
+msgstr "Splošno"
 
 #: sc/uiconfig/scalc/ui/pagetemplatedialog.ui:150
 msgctxt "pagetemplatedialog|page"
@@ -23562,8 +23627,8 @@ msgstr "Slog celice"
 
 #: sc/uiconfig/scalc/ui/paratemplatedialog.ui:126
 msgctxt "paratemplatedialog|organizer"
-msgid "Organizer"
-msgstr "Organizator"
+msgid "General"
+msgstr "Splošno"
 
 #: sc/uiconfig/scalc/ui/paratemplatedialog.ui:149
 msgctxt "paratemplatedialog|numbers"
@@ -26868,7 +26933,7 @@ msgstr "Razpon"
 #: sc/uiconfig/scalc/ui/sparklinedialog.ui:688
 msgctxt "sparklinedialog|extended_tip|cbEmptyCells"
 msgid "Display empty cells as: Gap - the missing data is not displayed. The line type discontinues in the gap and the column is not displayed. Zero - the missing data is displayed as value zero. Span - for line type only, draws a continuous line connecting the previous value to the next value."
-msgstr "Prikažite prazne celice kot: Vrzel – manjkajoči podatki niso prikazani. Črtna vrsta se v vrzeli prekine in stolpec ni prikazan.   Nič – manjkajoči podatki se prikažejo kot vrednost nič. Razpon – samo pri črtni vrsti nariše neprekinjeno črto, ki povezuje prejšnjo vrednost z naslednjo."
+msgstr "Prikažite prazne celice kot: Vrzel – manjkajoči podatki niso prikazani. Črtna vrsta se v vrzeli prekine in stolpec ni prikazan. Nič – manjkajoči podatki se prikažejo kot vrednost nič. Razpon – samo pri črtni vrsti nariše neprekinjeno črto, ki povezuje prejšnjo vrednost z naslednjo."
 
 #: sc/uiconfig/scalc/ui/sparklinedialog.ui:699
 msgctxt "SparklineDialog|checkButton_Hidden"
@@ -26908,7 +26973,7 @@ msgstr "Naložen"
 #: sc/uiconfig/scalc/ui/sparklinedialog.ui:749
 msgctxt "sparklinedialog|extended_tip|cbType"
 msgid "Select the sparkline type in the drop-down list. Choices are: Line - draws a line between data values.  Column - draws a bar for each data value. Stacked - also known as win/loss: displays equally sized bars indicating positive and negative values."
-msgstr "Na spustnem seznamu izberite vrsto mini-grafikona. Možnosti so:    Črtni – nariše črto med vrednostmi podatkov.    Stolpčni – nariše stolpec za vsako podatkovno vrednost.    Naložen – znan tudi kot dobitek/izguba. Prikaže enakomerne stolpce, ki označujejo pozitivne in negativne vrednosti."
+msgstr "Na spustnem seznamu izberite vrsto mini-grafikona. Možnosti so: Črtni – nariše črto med vrednostmi podatkov. Stolpčni – nariše stolpec za vsako podatkovno vrednost. Naložen – znan tudi kot dobitek/izguba; prikaže enakomerne stolpce, ki označujejo pozitivne in negativne vrednosti."
 
 #: sc/uiconfig/scalc/ui/sparklinedialog.ui:762
 msgctxt "SparklineDialog|label_Type"
@@ -26938,12 +27003,12 @@ msgstr "Po meri"
 #: sc/uiconfig/scalc/ui/sparklinedialog.ui:817
 msgctxt "sparklinedialog|extended_tip|cbMinAxisType"
 msgid "Individual: sets automatically the minimum value for each sparkline based on the sparkline data range values. Group: sets the minimum value based on the lower and higher values found in the group of sparklines. Custom: enter the minimum value for the sparkline group."
-msgstr " Posamično: samodejno nastavi najmanjšo vrednost za vsak mini grafikon na podlagi vrednosti podatkovnega območja mini grafikona.    Združi: nastavi najmanjšo vrednost na podlagi nižjih in višjih vrednosti, najdenih v skupini mini grafikonov.  Po meri: vnesite najmanjšo vrednost za skupino mini grafikonov."
+msgstr "Posamično: samodejno nastavi najmanjšo vrednost za vsak mini grafikon na podlagi vrednosti podatkovnega območja mini grafikona. Združi: nastavi najmanjšo vrednost na podlagi nižjih in višjih vrednosti, najdenih v skupini mini grafikonov. Po meri: vnesite najmanjšo vrednost za skupino mini grafikonov."
 
 #: sc/uiconfig/scalc/ui/sparklinedialog.ui:836
 msgctxt "sparklinedialog|extended_tip|seMinAxis"
 msgid "Spin or enter number to set the minimum value for the Y axis."
-msgstr "Zavrtite ali vnesite številko, ki določa najmanjšo vrednost na osi Y."
+msgstr "Zasukajte ali vnesite številko, ki določa najmanjšo vrednost na osi Y."
 
 #: sc/uiconfig/scalc/ui/sparklinedialog.ui:851
 msgctxt "SparklineDialog|option_MaxAxis_Individual"
@@ -26963,12 +27028,12 @@ msgstr "Po meri"
 #: sc/uiconfig/scalc/ui/sparklinedialog.ui:857
 msgctxt "sparklinedialog|extended_tip|cbMaxAxisType"
 msgid "Individual: sets automatically the maximum value for each sparkline based on the sparkline data range values. Group: sets the maximum value based on the lower and higher values found in the group of sparklines. Custom: enter the maximum value for the sparkline group."
-msgstr " Posamično: samodejno nastavi največjo vrednost za vsak mini-grafikon na podlagi vrednosti podatkovnega območja mini-grafikonov.    Združi: nastavi največjo vrednost na podlagi nižjih in višjih vrednosti, ugotovljenih v skupini mini-grafikonov.  Po meri: vnesite največjo vrednost za skupino mini-grafikonov."
+msgstr "Posamično: samodejno nastavi največjo vrednost za vsak mini grafikon na podlagi vrednosti podatkovnega območja mini grafikonov. Združi: nastavi največjo vrednost na podlagi nižjih in višjih vrednosti, ugotovljenih v skupini mini grafikonov. Po meri: vnesite največjo vrednost za skupino mini grafikonov."
 
 #: sc/uiconfig/scalc/ui/sparklinedialog.ui:876
 msgctxt "sparklinedialog|extended_tip|seMaxAxis"
 msgid "Spin or enter number to set the maximum value for the Y axis."
-msgstr "Zavrtite ali vnesite številko, ki določa največjo vrednost na osi Y."
+msgstr "Zasukajte ali vnesite številko, ki določa največjo vrednost na osi Y."
 
 #: sc/uiconfig/scalc/ui/sparklinedialog.ui:890
 msgctxt "SparklineDialog|label_AxisMaximum"
@@ -28170,7 +28235,7 @@ msgstr "_Mrežne črte:"
 #: sc/uiconfig/scalc/ui/tpviewpage.ui:718
 msgctxt "extended_tip|_Grid lines:"
 msgid "Specifies when grid lines will be displayed. "
-msgstr "Določa prikaz mrežnih črt. "
+msgstr "Določa vrsto prikaza mrežnih črt. "
 
 #: sc/uiconfig/scalc/ui/tpviewpage.ui:732
 msgctxt "tpviewpage|grid"
@@ -28394,8 +28459,8 @@ msgstr "Vse vrednosti"
 
 #: sc/uiconfig/scalc/ui/validationcriteriapage.ui:48
 msgctxt "validationcriteriapage|liststore1"
-msgid "Whole Numbers"
-msgstr "Cela števila"
+msgid "Integer"
+msgstr "Celo število"
 
 #: sc/uiconfig/scalc/ui/validationcriteriapage.ui:49
 msgctxt "validationcriteriapage|liststore1"
