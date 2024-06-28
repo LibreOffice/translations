@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2024-06-06 13:17+0200\n"
-"PO-Revision-Date: 2024-05-29 21:15+0000\n"
+"POT-Creation-Date: 2024-06-25 12:28+0200\n"
+"PO-Revision-Date: 2024-06-26 01:45+0000\n"
 "Last-Translator: Theppitak Karoonboonyanan <theppitak@gmail.com>\n"
 "Language-Team: Thai <https://translations.documentfoundation.org/projects/libo_ui-master/scmessages/th/>\n"
 "Language: th\n"
@@ -14277,16 +14277,17 @@ msgstr "ถ้าระบุ ก็จะคืนค่าข้อควา�
 #: sc/inc/scfuncs.hrc:3392
 msgctxt "SC_OPCODE_X_LOOKUP"
 msgid "Match Mode"
-msgstr "โหมดการจับคู่"
+msgstr "โหมดการเทียบค่า"
 
-#. afJBG
+#. vEqB5
 #: sc/inc/scfuncs.hrc:3393
 msgctxt "SC_OPCODE_X_LOOKUP"
 msgid ""
 "0 - Exact match. Will return #N/A if no match. (default).\n"
 "-1 - Exact match or the next smaller item.\n"
 "1 - Exact match or the next larger item.\n"
-"2 - Wildcard or regular expression match."
+"2 - Wildcard match.\n"
+"3 - Regular expression match."
 msgstr ""
 
 #. EvSiP
@@ -14304,6 +14305,10 @@ msgid ""
 "2 - Binary search values sorted in ascending order.\n"
 "-2 - Binary search values sorted in descending order."
 msgstr ""
+"1 - เริ่มค้นหาจากค่าแรก (ค่าปริยาย)\n"
+"-1 - เริ่มค้นหาจากค่าสุดท้าย (ย้อนกลับ)\n"
+"2 - ค้นหาแบบทวิภาค (binary search) ในข้อมูลที่เรียงลำดับจากน้อยไปหามาก\n"
+"-2 - ค้นหาแบบทวิภาค (binary search) ในข้อมูลที่เรียงลำดับจากมากไปหาน้อย"
 
 #. KZapz
 #: sc/inc/scfuncs.hrc:3401
@@ -14509,21 +14514,22 @@ msgctxt "SC_OPCODE_X_MATCH"
 msgid "Match Mode"
 msgstr "โหมดการเทียบค่า"
 
-#. 2oEFA
+#. DZ2bC
 #: sc/inc/scfuncs.hrc:3455
 msgctxt "SC_OPCODE_X_MATCH"
 msgid ""
 "0 - Exact match. Will return #N/A if no match. (default).\n"
 "-1 - Exact match or the next smaller item.\n"
 "1 - Exact match or the next larger item.\n"
-"2 - Wildcard or regular expression match."
+"2 - Wildcard match.\n"
+"3 - Regular expression match."
 msgstr ""
 
 #. UtoXD
 #: sc/inc/scfuncs.hrc:3456
 msgctxt "SC_OPCODE_X_MATCH"
 msgid "Search Mode"
-msgstr "โหมดการค้น"
+msgstr "โหมดการค้นหา"
 
 #. J9uEM
 #: sc/inc/scfuncs.hrc:3457
@@ -14534,6 +14540,10 @@ msgid ""
 "2 - Binary search values sorted in ascending order.\n"
 "-2 - Binary search values sorted in descending order."
 msgstr ""
+"1 - เริ่มค้นหาจากค่าแรก (ค่าปริยาย)\n"
+"-1 - เริ่มค้นหาจากค่าสุดท้าย (ย้อนกลับ)\n"
+"2 - ค้นหาแบบทวิภาค (binary search) ในข้อมูลที่เรียงลำดับจากน้อยไปหามาก\n"
+"-2 - ค้นหาแบบทวิภาค (binary search) ในข้อมูลที่เรียงลำดับจากมากไปหาน้อย"
 
 #. XJ4FS
 #: sc/inc/scfuncs.hrc:3463
@@ -17066,7 +17076,7 @@ msgstr "เป็นจำนวนเต็ม"
 #: sc/inc/scfuncs.hrc:4251
 msgctxt "SC_OPCODE_RANDARRAY"
 msgid "Return integer (TRUE) or decimal (FALSE) values."
-msgstr ""
+msgstr "ให้คืนค่าจำนวนเต็ม (TRUE) หรือเลขทศนิยม (FALSE)"
 
 #. NJR3E
 #: sc/inc/scfuncs.hrc:4257
@@ -17114,43 +17124,43 @@ msgstr "ค่าตรรกะที่กำหนดว่าค่าแบ
 #: sc/inc/scfuncs.hrc:4269
 msgctxt "SC_OPCODE_LET"
 msgid "The LET function assigns names to calculation results. This allows storing intermediate calculations, values, or defining names inside a formula. These names only apply within the scope of the LET function."
-msgstr ""
+msgstr "ฟังก์ชัน LET ใช้ตั้งชื่อให้กับผลการคำนวณต่างๆ ทำให้สามารถเก็บผลการคำนวณระหว่างกลาง หรือค่าใดๆ หรือกำหนดชื่อตัวแปรที่ใช้ในสูตรได้ ชื่อเหล่านี้สามารถใช้ได้ภายในขอบเขตของฟังก์ชัน LET เท่านั้น"
 
 #. 6DDAi
 #: sc/inc/scfuncs.hrc:4270
 msgctxt "SC_OPCODE_LET"
 msgid "Name 1"
-msgstr ""
+msgstr "ชื่อ 1"
 
 #. a7LQR
 #: sc/inc/scfuncs.hrc:4271
 msgctxt "SC_OPCODE_LET"
 msgid "The first name to assign. Must start with a letter. Cannot be the output of a formula or conflict with range syntax."
-msgstr ""
+msgstr "ชื่อแรกที่จะตั้ง ต้องขึ้นต้นด้วยตัวอักษร ไม่สามารถเป็นผลลัพธ์ของสูตรหรือสับสนกับไวยากรณ์ของการอ้างช่วงได้"
 
 #. KsyBM
 #: sc/inc/scfuncs.hrc:4272
 msgctxt "SC_OPCODE_LET"
 msgid "Name value "
-msgstr ""
+msgstr "ค่าของชื่อ "
 
 #. Dn2DE
 #: sc/inc/scfuncs.hrc:4273
 msgctxt "SC_OPCODE_LET"
 msgid "Name value 1, Name value 2,... The value or calculation to assign to Name."
-msgstr ""
+msgstr "ค่าของชื่อ 1, ค่าของชื่อ 2,... ค่าหรือการคำนวณที่จะกำหนดให้กับชื่อ"
 
 #. CHAMD
 #: sc/inc/scfuncs.hrc:4274
 msgctxt "SC_OPCODE_LET"
 msgid "Calculation or Name "
-msgstr ""
+msgstr "การคำนวณหรือชื่อ "
 
 #. tFMkP
 #: sc/inc/scfuncs.hrc:4275
 msgctxt "SC_OPCODE_LET"
 msgid "A calculation that uses all names within the LET function. This must be the last argument in the LET function. Or a second Name to assign to a second Name value. If a second Name is specified, Name value 2 and Calculation or Name 3 become required."
-msgstr ""
+msgstr "การคำนวณที่ใช้ชื่อทั้งหมดที่กำหนดในฟังก์ชัน LET ซึ่งการคำนวณดังกล่าวต้องเป็นอาร์กิวเมนต์สุดท้ายของฟังก์ชัน LET หรือมิฉะนั้นก็เป็นชื่อที่สองที่จะกำหนดให้กับค่าที่สอง โดยถ้ามีการกำหนดชื่อที่สอง ก็จะต้องมี “ค่าของชื่อ 2” และ “การคำนวณหรือชื่อ 3” ตามมา"
 
 #. pDDme
 #: sc/inc/scstyles.hrc:29
@@ -23225,91 +23235,91 @@ msgid "_Standard"
 msgstr "_มาตรฐาน"
 
 #. Dnnbp
-#: sc/uiconfig/scalc/ui/drawtemplatedialog.ui:126
+#: sc/uiconfig/scalc/ui/drawtemplatedialog.ui:125
 msgctxt "drawtemplatedialog|organizer"
 msgid "General"
-msgstr ""
+msgstr "ทั่วไป"
 
 #. qSfk8
-#: sc/uiconfig/scalc/ui/drawtemplatedialog.ui:149
+#: sc/uiconfig/scalc/ui/drawtemplatedialog.ui:148
 msgctxt "drawtemplatedialog|line"
 msgid "Line"
 msgstr "เส้น"
 
 #. GFaA9
-#: sc/uiconfig/scalc/ui/drawtemplatedialog.ui:173
+#: sc/uiconfig/scalc/ui/drawtemplatedialog.ui:172
 msgctxt "drawtemplatedialog|area"
 msgid "Area"
 msgstr "พื้นที่"
 
 #. JcspJ
-#: sc/uiconfig/scalc/ui/drawtemplatedialog.ui:197
+#: sc/uiconfig/scalc/ui/drawtemplatedialog.ui:196
 msgctxt "drawtemplatedialog|shadowing"
 msgid "Shadowing"
 msgstr "แสงเงา"
 
 #. sQnEr
-#: sc/uiconfig/scalc/ui/drawtemplatedialog.ui:221
+#: sc/uiconfig/scalc/ui/drawtemplatedialog.ui:220
 msgctxt "drawtemplatedialog|transparency"
 msgid "Transparency"
 msgstr "ความโปร่งใส"
 
 #. nrmzw
-#: sc/uiconfig/scalc/ui/drawtemplatedialog.ui:245
+#: sc/uiconfig/scalc/ui/drawtemplatedialog.ui:244
 msgctxt "drawtemplatedialog|font"
 msgid "Font"
 msgstr "แบบอักษร"
 
 #. MfVx4
-#: sc/uiconfig/scalc/ui/drawtemplatedialog.ui:269
+#: sc/uiconfig/scalc/ui/drawtemplatedialog.ui:268
 msgctxt "drawtemplatedialog|fonteffect"
 msgid "Font Effects"
 msgstr "ลูกเล่นตัวอักษร"
 
 #. wvB6g
-#: sc/uiconfig/scalc/ui/drawtemplatedialog.ui:293
+#: sc/uiconfig/scalc/ui/drawtemplatedialog.ui:292
 msgctxt "drawtemplatedialog|indents"
 msgid "Indents & Spacing"
 msgstr "ระยะร่นและระยะห่าง"
 
 #. BuWKT
-#: sc/uiconfig/scalc/ui/drawtemplatedialog.ui:317
+#: sc/uiconfig/scalc/ui/drawtemplatedialog.ui:316
 msgctxt "drawtemplatedialog|text"
 msgid "Text"
 msgstr "ข้อความ"
 
 #. buF9B
-#: sc/uiconfig/scalc/ui/drawtemplatedialog.ui:341
+#: sc/uiconfig/scalc/ui/drawtemplatedialog.ui:340
 msgctxt "drawtemplatedialog|animation"
 msgid "Text Animation"
 msgstr "การเคลื่อนไหวข้อความ"
 
 #. pLtGk
-#: sc/uiconfig/scalc/ui/drawtemplatedialog.ui:365
+#: sc/uiconfig/scalc/ui/drawtemplatedialog.ui:364
 msgctxt "drawtemplatedialog|dimensioning"
 msgid "Dimensioning"
 msgstr "เส้นบอกขนาด"
 
 #. CDEt8
-#: sc/uiconfig/scalc/ui/drawtemplatedialog.ui:389
+#: sc/uiconfig/scalc/ui/drawtemplatedialog.ui:388
 msgctxt "drawtemplatedialog|alignment"
 msgid "Alignment"
 msgstr "การจัดแนว"
 
 #. Bh59e
-#: sc/uiconfig/scalc/ui/drawtemplatedialog.ui:413
+#: sc/uiconfig/scalc/ui/drawtemplatedialog.ui:412
 msgctxt "drawtemplatedialog|asiantypo"
 msgid "Asian Typography"
 msgstr "ตัวพิมพ์แบบเอเชีย"
 
 #. eCHjk
-#: sc/uiconfig/scalc/ui/drawtemplatedialog.ui:437
+#: sc/uiconfig/scalc/ui/drawtemplatedialog.ui:436
 msgctxt "drawtemplatedialog|tabs"
 msgid "Tabs"
 msgstr "จุดตั้งระยะ"
 
 #. 6emuB
-#: sc/uiconfig/scalc/ui/drawtemplatedialog.ui:461
+#: sc/uiconfig/scalc/ui/drawtemplatedialog.ui:460
 msgctxt "drawtemplatedialog|background"
 msgid "Highlighting"
 msgstr "การเน้น"
@@ -23908,102 +23918,6 @@ msgctxt "findreplace|delete"
 msgid "Delete"
 msgstr "ลบ"
 
-#. AfnFz
-#: sc/uiconfig/scalc/ui/floatingborderstyle.ui:34
-msgctxt "floatingborderstyle|none|tooltip_text"
-msgid "No Border"
-msgstr "ไม่มีเส้นขอบ"
-
-#. J9YqG
-#: sc/uiconfig/scalc/ui/floatingborderstyle.ui:45
-msgctxt "floatingborderstyle|all|tooltip_text"
-msgid "All Borders"
-msgstr "เส้นขอบทุกเส้น"
-
-#. 3dsGE
-#: sc/uiconfig/scalc/ui/floatingborderstyle.ui:56
-msgctxt "floatingborderstyle|outside|tooltip_text"
-msgid "Outside Borders"
-msgstr "เส้นขอบด้านนอก"
-
-#. BQ8N3
-#: sc/uiconfig/scalc/ui/floatingborderstyle.ui:67
-msgctxt "floatingborderstyle|thickbox|tooltip_text"
-msgid "Thick Box Border"
-msgstr "เส้นขอบกล่องหนา"
-
-#. RSWP6
-#: sc/uiconfig/scalc/ui/floatingborderstyle.ui:90
-msgctxt "floatingborderstyle|thickbottom|tooltip_text"
-msgid "Thick Bottom Border"
-msgstr "เส้นขอบล่างหนา"
-
-#. d9rkv
-#: sc/uiconfig/scalc/ui/floatingborderstyle.ui:101
-msgctxt "floatingborderstyle|doublebottom|tooltip_text"
-msgid "Double Bottom Border"
-msgstr "เส้นขอบล่างคู่"
-
-#. A6jir
-#: sc/uiconfig/scalc/ui/floatingborderstyle.ui:112
-msgctxt "floatingborderstyle|topthickbottom|tooltip_text"
-msgid "Top and Thick Bottom Borders"
-msgstr "เส้นขอบบนธรรมดาและขอบล่างหนา"
-
-#. 5QWSV
-#: sc/uiconfig/scalc/ui/floatingborderstyle.ui:123
-msgctxt "floatingborderstyle|topdoublebottom|tooltip_text"
-msgid "Top and Double Bottom Borders"
-msgstr "เส้นขอบบนธรรมดาและขอบล่างคู่"
-
-#. of4fP
-#: sc/uiconfig/scalc/ui/floatingborderstyle.ui:146
-msgctxt "floatingborderstyle|left|tooltip_text"
-msgid "Left Border"
-msgstr "เส้นขอบซ้าย"
-
-#. FWwqR
-#: sc/uiconfig/scalc/ui/floatingborderstyle.ui:157
-msgctxt "floatingborderstyle|right|tooltip_text"
-msgid "Right Border"
-msgstr "เส้นขอบขวา"
-
-#. sDFmj
-#: sc/uiconfig/scalc/ui/floatingborderstyle.ui:168
-msgctxt "floatingborderstyle|top|tooltip_text"
-msgid "Top Border"
-msgstr "เส้นขอบบน"
-
-#. nhY8S
-#: sc/uiconfig/scalc/ui/floatingborderstyle.ui:179
-msgctxt "floatingborderstyle|bottom|tooltip_text"
-msgid "Bottom Border"
-msgstr "เส้นขอบล่าง"
-
-#. BF7XZ
-#: sc/uiconfig/scalc/ui/floatingborderstyle.ui:202
-msgctxt "floatingborderstyle|diagup|tooltip_text"
-msgid "Diagonal Up Border"
-msgstr "เส้นขอบเฉียงขึ้นทางขวา"
-
-#. 8FWZ3
-#: sc/uiconfig/scalc/ui/floatingborderstyle.ui:214
-msgctxt "floatingborderstyle|diagdown|tooltip_text"
-msgid "Diagonal Down Border"
-msgstr "เส้นขอบเฉียงลงทางขวา"
-
-#. CQeWw
-#: sc/uiconfig/scalc/ui/floatingborderstyle.ui:226
-msgctxt "floatingborderstyle|topbottom|tooltip_text"
-msgid "Top and Bottom Borders"
-msgstr "เส้นขอบบนและล่าง"
-
-#. ZAJ9s
-#: sc/uiconfig/scalc/ui/floatingborderstyle.ui:238
-msgctxt "floatingborderstyle|leftright|tooltip_text"
-msgid "Left and Right Borders"
-msgstr "เส้นขอบซ้ายและขวา"
-
 #. 5pFcG
 #: sc/uiconfig/scalc/ui/floatinglinestyle.ui:27
 msgctxt "floatinglinestyle|more"
@@ -24041,49 +23955,49 @@ msgid "Format Cells"
 msgstr "จัดรูปแบบเซลล์"
 
 #. ngekD
-#: sc/uiconfig/scalc/ui/formatcellsdialog.ui:112
+#: sc/uiconfig/scalc/ui/formatcellsdialog.ui:111
 msgctxt "formatcellsdialog|numbers"
 msgid "Numbers"
 msgstr "ตัวเลข"
 
 #. TvoWD
-#: sc/uiconfig/scalc/ui/formatcellsdialog.ui:135
+#: sc/uiconfig/scalc/ui/formatcellsdialog.ui:134
 msgctxt "formatcellsdialog|font"
 msgid "Font"
 msgstr "แบบอักษร"
 
 #. 3oXRX
-#: sc/uiconfig/scalc/ui/formatcellsdialog.ui:159
+#: sc/uiconfig/scalc/ui/formatcellsdialog.ui:158
 msgctxt "formatcellsdialog|fonteffects"
 msgid "Font Effects"
 msgstr "ลูกเล่นตัวอักษร"
 
 #. iuvXW
-#: sc/uiconfig/scalc/ui/formatcellsdialog.ui:183
+#: sc/uiconfig/scalc/ui/formatcellsdialog.ui:182
 msgctxt "formatcellsdialog|alignment"
 msgid "Alignment"
 msgstr "การจัดแนว"
 
 #. MfFdu
-#: sc/uiconfig/scalc/ui/formatcellsdialog.ui:207
+#: sc/uiconfig/scalc/ui/formatcellsdialog.ui:206
 msgctxt "formatcellsdialog|asiantypography"
 msgid "Asian Typography"
 msgstr "ตัวพิมพ์แบบเอเชีย"
 
 #. FtWjv
-#: sc/uiconfig/scalc/ui/formatcellsdialog.ui:231
+#: sc/uiconfig/scalc/ui/formatcellsdialog.ui:230
 msgctxt "formatcellsdialog|borders"
 msgid "Borders"
 msgstr "เส้นขอบ"
 
 #. 9S8Sy
-#: sc/uiconfig/scalc/ui/formatcellsdialog.ui:255
+#: sc/uiconfig/scalc/ui/formatcellsdialog.ui:254
 msgctxt "formatcellsdialog|background"
 msgid "Background"
 msgstr "พื้นหลัง"
 
 #. hbPUf
-#: sc/uiconfig/scalc/ui/formatcellsdialog.ui:279
+#: sc/uiconfig/scalc/ui/formatcellsdialog.ui:278
 msgctxt "formatcellsdialog|cellprotection"
 msgid "Cell Protection"
 msgstr "การปกป้องเซลล์"
@@ -28172,43 +28086,43 @@ msgid "Page Style"
 msgstr "กระบวนแบบหน้า"
 
 #. F6ehW
-#: sc/uiconfig/scalc/ui/pagetemplatedialog.ui:127
+#: sc/uiconfig/scalc/ui/pagetemplatedialog.ui:126
 msgctxt "pagetemplatedialog|organizer"
 msgid "General"
-msgstr ""
+msgstr "ทั่วไป"
 
 #. CbW7A
-#: sc/uiconfig/scalc/ui/pagetemplatedialog.ui:150
+#: sc/uiconfig/scalc/ui/pagetemplatedialog.ui:149
 msgctxt "pagetemplatedialog|page"
 msgid "Page"
 msgstr "หน้า"
 
 #. yXBdU
-#: sc/uiconfig/scalc/ui/pagetemplatedialog.ui:174
+#: sc/uiconfig/scalc/ui/pagetemplatedialog.ui:173
 msgctxt "pagetemplatedialog|borders"
 msgid "Borders"
 msgstr "เส้นขอบ"
 
 #. AYC9K
-#: sc/uiconfig/scalc/ui/pagetemplatedialog.ui:198
+#: sc/uiconfig/scalc/ui/pagetemplatedialog.ui:197
 msgctxt "pagetemplatedialog|background"
 msgid "Background"
 msgstr "พื้นหลัง"
 
 #. qEnHY
-#: sc/uiconfig/scalc/ui/pagetemplatedialog.ui:222
+#: sc/uiconfig/scalc/ui/pagetemplatedialog.ui:221
 msgctxt "pagetemplatedialog|header"
 msgid "Header"
 msgstr "หัวกระดาษ"
 
 #. LLLXG
-#: sc/uiconfig/scalc/ui/pagetemplatedialog.ui:246
+#: sc/uiconfig/scalc/ui/pagetemplatedialog.ui:245
 msgctxt "pagetemplatedialog|footer"
 msgid "Footer"
 msgstr "ท้ายกระดาษ"
 
 #. W5b3a
-#: sc/uiconfig/scalc/ui/pagetemplatedialog.ui:270
+#: sc/uiconfig/scalc/ui/pagetemplatedialog.ui:269
 msgctxt "pagetemplatedialog|sheet"
 msgid "Sheet"
 msgstr "แผ่นงาน"
@@ -28250,55 +28164,55 @@ msgid "Cell Style"
 msgstr "ลักษณะเซลล์"
 
 #. EMrke
-#: sc/uiconfig/scalc/ui/paratemplatedialog.ui:126
+#: sc/uiconfig/scalc/ui/paratemplatedialog.ui:125
 msgctxt "paratemplatedialog|organizer"
 msgid "General"
-msgstr ""
+msgstr "ทั่วไป"
 
 #. asnEd
-#: sc/uiconfig/scalc/ui/paratemplatedialog.ui:149
+#: sc/uiconfig/scalc/ui/paratemplatedialog.ui:148
 msgctxt "paratemplatedialog|numbers"
 msgid "Numbers"
 msgstr "ตัวเลข"
 
 #. gT7a7
-#: sc/uiconfig/scalc/ui/paratemplatedialog.ui:173
+#: sc/uiconfig/scalc/ui/paratemplatedialog.ui:172
 msgctxt "paratemplatedialog|font"
 msgid "Font"
 msgstr "แบบอักษร"
 
 #. d5N6G
-#: sc/uiconfig/scalc/ui/paratemplatedialog.ui:197
+#: sc/uiconfig/scalc/ui/paratemplatedialog.ui:196
 msgctxt "paratemplatedialog|fonteffects"
 msgid "Font Effects"
 msgstr "ลูกเล่นตัวอักษร"
 
 #. mXKgq
-#: sc/uiconfig/scalc/ui/paratemplatedialog.ui:221
+#: sc/uiconfig/scalc/ui/paratemplatedialog.ui:220
 msgctxt "paratemplatedialog|alignment"
 msgid "Alignment"
 msgstr "การจัดแนว"
 
 #. 2YK98
-#: sc/uiconfig/scalc/ui/paratemplatedialog.ui:245
+#: sc/uiconfig/scalc/ui/paratemplatedialog.ui:244
 msgctxt "paratemplatedialog|asiantypo"
 msgid "Asian Typography"
 msgstr "ตัวพิมพ์แบบเอเชีย"
 
 #. CfvF5
-#: sc/uiconfig/scalc/ui/paratemplatedialog.ui:269
+#: sc/uiconfig/scalc/ui/paratemplatedialog.ui:268
 msgctxt "paratemplatedialog|borders"
 msgid "Borders"
 msgstr "เส้นขอบ"
 
 #. CDaQE
-#: sc/uiconfig/scalc/ui/paratemplatedialog.ui:293
+#: sc/uiconfig/scalc/ui/paratemplatedialog.ui:292
 msgctxt "paratemplatedialog|background"
 msgid "Background"
 msgstr "พื้นหลัง"
 
 #. qCRSA
-#: sc/uiconfig/scalc/ui/paratemplatedialog.ui:317
+#: sc/uiconfig/scalc/ui/paratemplatedialog.ui:316
 msgctxt "paratemplatedialog|protection"
 msgid "Cell Protection"
 msgstr "การปกป้องเซลล์"
@@ -34043,7 +33957,7 @@ msgstr "ทุกค่า"
 #: sc/uiconfig/scalc/ui/validationcriteriapage.ui:48
 msgctxt "validationcriteriapage|liststore1"
 msgid "Integer"
-msgstr ""
+msgstr "จำนวนเต็ม"
 
 #. hCaRD
 #: sc/uiconfig/scalc/ui/validationcriteriapage.ui:49
