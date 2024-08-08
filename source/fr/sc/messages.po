@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
 "POT-Creation-Date: 2024-06-25 12:28+0200\n"
-"PO-Revision-Date: 2024-02-27 01:45+0000\n"
+"PO-Revision-Date: 2024-07-29 01:45+0000\n"
 "Last-Translator: Jean-Baptiste Faure <jbfaure@libreoffice.org>\n"
 "Language-Team: French <https://translations.documentfoundation.org/projects/libo_ui-master/scmessages/fr/>\n"
 "Language: fr\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
 "X-Accelerator-Marker: ~\n"
-"X-Generator: LibreOffice\n"
+"X-Generator: Weblate 5.4.3\n"
 "X-POOTLE-MTIME: 1562267285.000000\n"
 
 #. kBovX
@@ -1290,7 +1290,7 @@ msgstr "Pied de page"
 #: sc/inc/globstr.hrc:222
 msgctxt "STR_TOO_MANY_COLUMNS_DATA_FORM"
 msgid "Too many columns in the data form."
-msgstr ""
+msgstr "Trop de colonnes dans le formulaire de données."
 
 #. 499qP
 #. BEGIN error constants and error strings.
@@ -3035,6 +3035,9 @@ msgid ""
 "\n"
 "Do you want to recalculate all row heights now?"
 msgstr ""
+"Le contenu de certaines cellules peut ne pas être entièrement visible. Le recalcul des hauteurs de ligne les rendra visibles, mais cela peut prendre un certain temps.\n"
+"\n"
+"Voulez-vous recalculer toutes les hauteurs de ligne maintenant ?"
 
 #. YgjzK
 #: sc/inc/globstr.hrc:508
@@ -8891,7 +8894,7 @@ msgstr "Valeur "
 #: sc/inc/scfuncs.hrc:1760
 msgctxt "SC_OPCODE_VAR_A"
 msgid "Value 1; value 2; ... are arguments representing a sample taken from the population."
-msgstr ""
+msgstr "Valeur 1 ; valeur 2 ; ... sont des arguments représentant un échantillon de la population."
 
 #. gB6db
 #: sc/inc/scfuncs.hrc:1766
@@ -8999,7 +9002,7 @@ msgstr "Valeur "
 #: sc/inc/scfuncs.hrc:1808
 msgctxt "SC_OPCODE_ST_DEV_A"
 msgid "Value 1; value 2; ... are arguments representing a sample taken from the population."
-msgstr ""
+msgstr "Valeur 1 ; valeur 2 ; ... sont des arguments représentant un échantillon de la population."
 
 #. 4gTUB
 #: sc/inc/scfuncs.hrc:1814
@@ -9089,7 +9092,7 @@ msgstr "Valeur "
 #: sc/inc/scfuncs.hrc:1848
 msgctxt "SC_OPCODE_AVERAGE_A"
 msgid "Value 1; value 2; ... are arguments representing a sample taken from the population."
-msgstr ""
+msgstr "Valeur 1 ; valeur 2 ; ... sont des arguments représentant un échantillon de la population."
 
 #. H6DCB
 #: sc/inc/scfuncs.hrc:1854
@@ -14225,61 +14228,61 @@ msgstr "Si la valeur est VRAIE ou non fournie, la colonne de recherche du tablea
 #: sc/inc/scfuncs.hrc:3383
 msgctxt "SC_OPCODE_X_LOOKUP"
 msgid "Extended vertical search and reference to indicated cells."
-msgstr ""
+msgstr "Recherche verticale étendue et référence aux cellules indiquées."
 
 #. aJEdP
 #: sc/inc/scfuncs.hrc:3384
 msgctxt "SC_OPCODE_X_LOOKUP"
 msgid "Search criterion"
-msgstr ""
+msgstr "Critère de recherche"
 
 #. hKyH5
 #: sc/inc/scfuncs.hrc:3385
 msgctxt "SC_OPCODE_X_LOOKUP"
 msgid "The value to be found in the first column."
-msgstr ""
+msgstr "La valeur à rechercher dans la première colonne."
 
 #. LQsQ9
 #: sc/inc/scfuncs.hrc:3386
 msgctxt "SC_OPCODE_X_LOOKUP"
 msgid "Search Array"
-msgstr ""
+msgstr "Matrice de recherche"
 
 #. wGtsD
 #: sc/inc/scfuncs.hrc:3387
 msgctxt "SC_OPCODE_X_LOOKUP"
 msgid "The array or range to search."
-msgstr ""
+msgstr "La matrice ou la plage où rechercher"
 
 #. yhzFf
 #: sc/inc/scfuncs.hrc:3388
 msgctxt "SC_OPCODE_X_LOOKUP"
 msgid "Result Array"
-msgstr ""
+msgstr "Matrice résultat"
 
 #. VUQxn
 #: sc/inc/scfuncs.hrc:3389
 msgctxt "SC_OPCODE_X_LOOKUP"
 msgid "The array or range to return."
-msgstr ""
+msgstr "La matrice ou la plage à renvoyer."
 
 #. WECuA
 #: sc/inc/scfuncs.hrc:3390
 msgctxt "SC_OPCODE_X_LOOKUP"
 msgid "Result if not found"
-msgstr ""
+msgstr "Résultat si rien trouvé"
 
 #. FF2F7
 #: sc/inc/scfuncs.hrc:3391
 msgctxt "SC_OPCODE_X_LOOKUP"
 msgid "If given, return given text, otherwise return #N/A."
-msgstr ""
+msgstr "Si précisé, renvoie le texte indiqué, sinon renvoie #N/A."
 
 #. UGCMv
 #: sc/inc/scfuncs.hrc:3392
 msgctxt "SC_OPCODE_X_LOOKUP"
 msgid "Match Mode"
-msgstr ""
+msgstr "Mode de correspondance"
 
 #. vEqB5
 #: sc/inc/scfuncs.hrc:3393
@@ -14291,12 +14294,17 @@ msgid ""
 "2 - Wildcard match.\n"
 "3 - Regular expression match."
 msgstr ""
+"0 - Correspondance exacte. Retourne #N/A si aucune correspondance n'a été trouvée. (par défaut).\n"
+"-1 - Correspondance exacte ou l'élément le plus petit suivant.\n"
+"1 - Correspondance exacte ou l'élément supérieur suivant.\n"
+"2 - Correspondance avec un joker.\n"
+"3 - Correspondance par expression régulière."
 
 #. EvSiP
 #: sc/inc/scfuncs.hrc:3394
 msgctxt "SC_OPCODE_X_LOOKUP"
 msgid "Search Mode"
-msgstr ""
+msgstr "Mode de recherche"
 
 #. aUEgE
 #: sc/inc/scfuncs.hrc:3395
@@ -14307,6 +14315,10 @@ msgid ""
 "2 - Binary search values sorted in ascending order.\n"
 "-2 - Binary search values sorted in descending order."
 msgstr ""
+"1 - Recherche à partir de la première valeur (par défaut).\n"
+"-1 - Recherche à partir de la dernière valeur (inverse).\n"
+"2 - Recherche binaires de valeurs triées par ordre croissant.\n"
+"-2 - Recherche binaire de valeurs triées par ordre décroissant."
 
 #. KZapz
 #: sc/inc/scfuncs.hrc:3401
