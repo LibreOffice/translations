@@ -1,10 +1,10 @@
 #. extracted from xmlsecurity/inc
 msgid ""
 msgstr ""
-"Project-Id-Version: LibreOffice 24.8\n"
+"Project-Id-Version: LibreOffice 25.2\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2024-07-05 10:52+0200\n"
-"PO-Revision-Date: 2024-05-31 16:28+0200\n"
+"POT-Creation-Date: 2024-11-10 17:18+0100\n"
+"PO-Revision-Date: 2024-10-27 22:48+0200\n"
 "Last-Translator: Martin Srebotnjak <miles@filmsi.net>\n"
 "Language-Team: sl.libreoffice.org\n"
 "MIME-Version: 1.0\n"
@@ -192,6 +192,26 @@ msgid "Encrypt"
 msgstr "Šifriraj"
 
 #: xmlsecurity/inc/strings.hrc:66
+msgctxt "selectcertificatedialog|str_loaded_certs_base"
+msgid "Certificates are loaded from:\n"
+msgstr "Potrdila so naložena iz:\n"
+
+#: xmlsecurity/inc/strings.hrc:67
+msgctxt "selectcertificatedialog|str_loaded_certs_openpgp_gpg"
+msgid "GPG/GnuPG (OpenPGP)"
+msgstr "GPG/GnuPG (OpenPGP)"
+
+#: xmlsecurity/inc/strings.hrc:68
+msgctxt "selectcertificatedialog|str_loaded_certs_x509_mscrypt"
+msgid "Windows Certificate Manager / CertMgr (X.509)"
+msgstr "Upravitelj potrdil Windows / CertMgr (X.509)"
+
+#: xmlsecurity/inc/strings.hrc:69
+msgctxt "selectcertificatedialog|str_loaded_certs_x509_nss"
+msgid "NSS Certificate DB in the Mozilla Profile (X.509) at:\n"
+msgstr "Zbirke potrdil NSS v profilu brskalnika Mozilla (X.509) pri:\n"
+
+#: xmlsecurity/inc/strings.hrc:71
 msgctxt "STR_BROKEN_MACRO_CERTIFICATE_DATA"
 msgid ""
 "Macro security problem!\n"
@@ -202,12 +222,12 @@ msgstr ""
 "\n"
 "Okvarjeni podatki potrdila: %{data}"
 
-#: xmlsecurity/inc/strings.hrc:67
+#: xmlsecurity/inc/strings.hrc:72
 msgctxt "STR_RELOAD_FILE_WARNING"
 msgid "Reload the file to apply the new macro security level"
 msgstr "Ponovno naložite datoteko, da uveljavite novo raven varnosti makra."
 
-#: xmlsecurity/inc/strings.hrc:68
+#: xmlsecurity/inc/strings.hrc:73
 msgctxt "STR_TRUST_UNTRUSTED_PUBKEY"
 msgid ""
 "Security warning: the following OpenPGP public key is untrusted:\n"
@@ -222,7 +242,7 @@ msgstr ""
 "\n"
 "%{data}\n"
 "\n"
-"Šifriranje z javnim ključem, ki ni zaupanja vreden, poveča tveganje napada \"osebe-vmes\". Uspešen napad \"osebe-vmes\" omogoča tretjim stranem s slabimi nameni, da dešifrirajo vaš dokument.\n"
+"Šifriranje z javnim ključem, ki ni zaupanja vreden, poveča tveganje napada »osebe-vmes«. Uspešen napad »osebe-vmes« omogoča tretjim stranem s slabimi nameni, da dešifrirajo vaš dokument.\n"
 "\n"
 "Ali resnično želite šifrirati dokument s tem javnim ključem, ki ni zaupanja vreden?"
 
@@ -343,6 +363,11 @@ msgctxt "certgeneral|valid_to"
 msgid "Valid to:"
 msgstr "Veljaven do:"
 
+#: xmlsecurity/uiconfig/ui/certgeneral.ui:250
+msgctxt "certgeneral|type"
+msgid "Key type: "
+msgstr "Vrsta ključa: "
+
 #: xmlsecurity/uiconfig/ui/certpage.ui:33
 msgctxt "certpage|label1"
 msgid "Certificate Path"
@@ -393,102 +418,97 @@ msgctxt "digitalsignaturesdialog|dochint"
 msgid "The following have signed the document content: "
 msgstr "Vsebino dokumenta so podpisali:"
 
-#: xmlsecurity/uiconfig/ui/digitalsignaturesdialog.ui:133
+#: xmlsecurity/uiconfig/ui/digitalsignaturesdialog.ui:134
 msgctxt "digitalsignaturesdialog|signed"
 msgid "Signed by "
 msgstr "Podpisani "
 
-#: xmlsecurity/uiconfig/ui/digitalsignaturesdialog.ui:146
+#: xmlsecurity/uiconfig/ui/digitalsignaturesdialog.ui:147
 msgctxt "digitalsignaturesdialog|issued"
 msgid "Digital ID issued by "
 msgstr "Digitalni ID izdal "
 
-#: xmlsecurity/uiconfig/ui/digitalsignaturesdialog.ui:159
+#: xmlsecurity/uiconfig/ui/digitalsignaturesdialog.ui:160
 msgctxt "digitalsignaturesdialog|date"
 msgid "Date"
 msgstr "Datum"
 
-#: xmlsecurity/uiconfig/ui/digitalsignaturesdialog.ui:172
+#: xmlsecurity/uiconfig/ui/digitalsignaturesdialog.ui:173
 msgctxt "digitalsignaturesdialog|description"
 msgid "Description"
 msgstr "Opis"
 
-#: xmlsecurity/uiconfig/ui/digitalsignaturesdialog.ui:185
+#: xmlsecurity/uiconfig/ui/digitalsignaturesdialog.ui:186
 msgctxt "digitalsignaturesdialog|type"
 msgid "Signature type"
 msgstr "Vrsta podpisa"
 
-#: xmlsecurity/uiconfig/ui/digitalsignaturesdialog.ui:196
+#: xmlsecurity/uiconfig/ui/digitalsignaturesdialog.ui:197
 msgctxt "digitalsignaturesdialog|extended_tip|signatures"
 msgid "Lists the digital signatures for the current document."
 msgstr "Prikaže seznam digitalnih podpisov za trenutni dokument."
 
-#: xmlsecurity/uiconfig/ui/digitalsignaturesdialog.ui:216
+#: xmlsecurity/uiconfig/ui/digitalsignaturesdialog.ui:218
 msgctxt "digitalsignaturesdialog|view"
 msgid "View Certificate..."
 msgstr "Pokaži potrdilo ..."
 
-#: xmlsecurity/uiconfig/ui/digitalsignaturesdialog.ui:222
+#: xmlsecurity/uiconfig/ui/digitalsignaturesdialog.ui:224
 msgctxt "digitalsignaturesdialog|extended_tip|view"
 msgid "Opens the View Certificate dialog."
 msgstr "Odpre pogovorno okno Pokaži potrdilo."
 
-#: xmlsecurity/uiconfig/ui/digitalsignaturesdialog.ui:234
+#: xmlsecurity/uiconfig/ui/digitalsignaturesdialog.ui:236
 msgctxt "digitalsignaturesdialog|sign"
 msgid "Sign Document..."
 msgstr "Podpiši dokument ..."
 
-#: xmlsecurity/uiconfig/ui/digitalsignaturesdialog.ui:241
+#: xmlsecurity/uiconfig/ui/digitalsignaturesdialog.ui:243
 msgctxt "digitalsignaturesdialog|extended_tip|sign"
 msgid "Opens the Select Certificate dialog."
 msgstr "Odpre pogovorno okno Izberi potrdilo."
 
-#: xmlsecurity/uiconfig/ui/digitalsignaturesdialog.ui:253
+#: xmlsecurity/uiconfig/ui/digitalsignaturesdialog.ui:255
 msgctxt "digitalsignaturesdialog|remove"
 msgid "Remove"
 msgstr "Odstrani"
 
-#: xmlsecurity/uiconfig/ui/digitalsignaturesdialog.ui:259
+#: xmlsecurity/uiconfig/ui/digitalsignaturesdialog.ui:261
 msgctxt "digitalsignaturesdialog|extended_tip|remove"
 msgid "Removes the selected signature from the list. Removes all subsequent signatures as well, in case of PDF."
 msgstr "Odstrani izbrano potrdilo s seznama. Odstrani tudi vse naslednje podpise, če gre za PDF."
 
-#: xmlsecurity/uiconfig/ui/digitalsignaturesdialog.ui:271
+#: xmlsecurity/uiconfig/ui/digitalsignaturesdialog.ui:273
 msgctxt "digitalsignaturesdialog|start_certmanager"
-msgid "Start Certificate Manager..."
-msgstr "Zaženi upravitelja potrdil ..."
+msgid "GPG Certificate Manager"
+msgstr "Upravitelj potrdil GPG"
 
-#: xmlsecurity/uiconfig/ui/digitalsignaturesdialog.ui:358
+#: xmlsecurity/uiconfig/ui/digitalsignaturesdialog.ui:362
 msgctxt "digitalsignaturesdialog|macrohint"
 msgid "The following have signed the document macro:"
 msgstr "Makro dokumenta so podpisali:"
 
-#: xmlsecurity/uiconfig/ui/digitalsignaturesdialog.ui:370
-msgctxt "digitalsignaturesdialog|packagehint"
-msgid "The following have signed this package:"
-msgstr "Ta paket so podpisali:"
-
-#: xmlsecurity/uiconfig/ui/digitalsignaturesdialog.ui:389
+#: xmlsecurity/uiconfig/ui/digitalsignaturesdialog.ui:385
 msgctxt "digitalsignaturesdialog|validft"
 msgid "The signatures in this document are valid"
 msgstr "Podpisi v tem dokumentu so veljavni"
 
-#: xmlsecurity/uiconfig/ui/digitalsignaturesdialog.ui:413
+#: xmlsecurity/uiconfig/ui/digitalsignaturesdialog.ui:409
 msgctxt "digitalsignaturesdialog|invalidft"
 msgid "The signatures in this document are invalid"
 msgstr "Podpisi v tem dokumentu so neveljavni"
 
-#: xmlsecurity/uiconfig/ui/digitalsignaturesdialog.ui:426
+#: xmlsecurity/uiconfig/ui/digitalsignaturesdialog.ui:422
 msgctxt "digitalsignaturesdialog|oldsignatureft"
 msgid "At least one signature has problems: the document is only partially signed."
 msgstr "Z vsaj enim podpisom so težave: dokument je le delno podpisan."
 
-#: xmlsecurity/uiconfig/ui/digitalsignaturesdialog.ui:439
+#: xmlsecurity/uiconfig/ui/digitalsignaturesdialog.ui:435
 msgctxt "digitalsignaturesdialog|notvalidatedft"
 msgid "At least one signature has problems: the certificate could not be validated."
 msgstr "Z vsaj enim podpisom so težave: potrdila ni mogoče overiti."
 
-#: xmlsecurity/uiconfig/ui/digitalsignaturesdialog.ui:504
+#: xmlsecurity/uiconfig/ui/digitalsignaturesdialog.ui:501
 msgctxt "digitalsignaturesdialog|extended_tip|DigitalSignaturesDialog"
 msgid "Adds and removes digital signatures to and from your document. You can also use the dialog to view certificates."
 msgstr "Doda ali odstrani digitalni podpis dokumentu. S pomočjo tega pogovornega okna si lahko ogledate tudi digitalna potrdila."
@@ -623,7 +643,7 @@ msgstr "Izdajatelj"
 #: xmlsecurity/uiconfig/ui/securitytrustpage.ui:153
 msgctxt "securitytrustpage|date"
 msgid "Expiration date"
-msgstr "Veljaven do"
+msgstr "Veljavno do"
 
 #: xmlsecurity/uiconfig/ui/securitytrustpage.ui:164
 msgctxt "extended_tip|certificates"
@@ -665,77 +685,87 @@ msgctxt "securitytrustpage|label4"
 msgid "Trusted File Locations"
 msgstr "Zaupanja vredna mesta datotek"
 
-#: xmlsecurity/uiconfig/ui/selectcertificatedialog.ui:20
+#: xmlsecurity/uiconfig/ui/selectcertificatedialog.ui:24
 msgctxt "selectcertificatedialog|SelectCertificateDialog"
 msgid "Select Certificate"
 msgstr "Izberi potrdilo"
 
-#: xmlsecurity/uiconfig/ui/selectcertificatedialog.ui:98
+#: xmlsecurity/uiconfig/ui/selectcertificatedialog.ui:100
 msgctxt "selectcertificatedialog|sign"
-msgid "Select the certificate you want to use for signing:"
-msgstr "Izberite digitalno potrdilo, ki ga želite uporabiti za podpisovanje:"
+msgid "Select the certificate you want to use for signing."
+msgstr "Izberite digitalno potrdilo, ki ga želite uporabiti za podpisovanje."
 
-#: xmlsecurity/uiconfig/ui/selectcertificatedialog.ui:109
+#: xmlsecurity/uiconfig/ui/selectcertificatedialog.ui:115
 msgctxt "selectcertificatedialog|encrypt"
 msgid "Select the certificate you want to use for encryption:"
 msgstr "Izberite digitalno potrdilo, ki ga želite uporabiti za šifriranje:"
 
-#: xmlsecurity/uiconfig/ui/selectcertificatedialog.ui:141
+#: xmlsecurity/uiconfig/ui/selectcertificatedialog.ui:165
 msgctxt "selectcertificatedialog|issuedto"
 msgid "Issued to"
 msgstr "Izdano za"
 
-#: xmlsecurity/uiconfig/ui/selectcertificatedialog.ui:156
+#: xmlsecurity/uiconfig/ui/selectcertificatedialog.ui:180
 msgctxt "selectcertificatedialog|issuedby"
 msgid "Issued by"
 msgstr "Izdajatelj"
 
-#: xmlsecurity/uiconfig/ui/selectcertificatedialog.ui:171
+#: xmlsecurity/uiconfig/ui/selectcertificatedialog.ui:195
 msgctxt "selectcertificatedialog|type"
-msgid "Expiration date"
-msgstr "Veljavno do"
+msgid "Type"
+msgstr "Vrsta"
 
-#: xmlsecurity/uiconfig/ui/selectcertificatedialog.ui:184
+#: xmlsecurity/uiconfig/ui/selectcertificatedialog.ui:210
+msgctxt "selectcertificatedialog|expiration"
+msgid "Expiration date"
+msgstr "Veljaven do"
+
+#: xmlsecurity/uiconfig/ui/selectcertificatedialog.ui:225
+msgctxt "selectcertificatedialog|usage"
+msgid "Certificate usage"
+msgstr "Raba potrdila"
+
+#: xmlsecurity/uiconfig/ui/selectcertificatedialog.ui:238
 msgctxt "selectcertificatedialog|extended_tip|signatures"
 msgid "Select the certificate that you want to digitally sign the current document with."
 msgstr "Izberite potrdilo, s katerim želite digitalno podpisati trenutni dokument."
 
-#: xmlsecurity/uiconfig/ui/selectcertificatedialog.ui:204
+#: xmlsecurity/uiconfig/ui/selectcertificatedialog.ui:259
 msgctxt "selectcertificatedialog|extended_tip|searchbox"
 msgid "Search for certificate by issuer name or email."
 msgstr "Iščite potrdilo po imenu ali e-naslovu izdajatelja."
 
-#: xmlsecurity/uiconfig/ui/selectcertificatedialog.ui:222
+#: xmlsecurity/uiconfig/ui/selectcertificatedialog.ui:278
 msgctxt "selectcertificatedialog|label2"
 msgid "Description:"
 msgstr "Opis:"
 
-#: xmlsecurity/uiconfig/ui/selectcertificatedialog.ui:238
+#: xmlsecurity/uiconfig/ui/selectcertificatedialog.ui:294
 msgctxt "selectcertificatedialog|extended_tip|description"
 msgid "Type a purpose for the signature."
 msgstr "Vnesite namen podpisa."
 
-#: xmlsecurity/uiconfig/ui/selectcertificatedialog.ui:262
+#: xmlsecurity/uiconfig/ui/selectcertificatedialog.ui:319
 msgctxt "selectcertificatedialog|viewcert"
 msgid "View Certificate..."
 msgstr "Pokaži potrdilo ..."
 
-#: xmlsecurity/uiconfig/ui/selectcertificatedialog.ui:269
+#: xmlsecurity/uiconfig/ui/selectcertificatedialog.ui:326
 msgctxt "selectcertificatedialog|extended_tip|viewcert"
 msgid "Opens the View Certificate dialog where you can examine the selected certificate."
 msgstr "Odpre pogovorno okno Pokaži potrdilo za izbrano digitalno potrdilo."
 
-#: xmlsecurity/uiconfig/ui/selectcertificatedialog.ui:281
+#: xmlsecurity/uiconfig/ui/selectcertificatedialog.ui:338
 msgctxt "selectcertificatedialog|reloadcert"
 msgid "Reload Certificates"
 msgstr "Ponovno naloži potrdila"
 
-#: xmlsecurity/uiconfig/ui/selectcertificatedialog.ui:288
+#: xmlsecurity/uiconfig/ui/selectcertificatedialog.ui:345
 msgctxt "selectcertificatedialog|extended_tip|reloadcert"
 msgid "Reload the list of certificates."
 msgstr "Ponovno naloži seznam digitalnih potrdil."
 
-#: xmlsecurity/uiconfig/ui/selectcertificatedialog.ui:320
+#: xmlsecurity/uiconfig/ui/selectcertificatedialog.ui:378
 msgctxt "selectcertificatedialog|extended_tip|SelectCertificateDialog"
 msgid "Select the certificate that you want to digitally sign the current document with."
 msgstr "Izberite potrdilo, s katerim želite digitalno podpisati trenutni dokument."

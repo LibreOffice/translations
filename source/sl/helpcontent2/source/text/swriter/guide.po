@@ -1,10 +1,10 @@
 #. extracted from helpcontent2/source/text/swriter/guide
 msgid ""
 msgstr ""
-"Project-Id-Version: LibreOffice 24.8\n"
+"Project-Id-Version: LibreOffice 25.2\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2024-07-05 10:51+0200\n"
-"PO-Revision-Date: 2024-07-07 22:49+0200\n"
+"POT-Creation-Date: 2024-11-10 17:17+0100\n"
+"PO-Revision-Date: 2024-11-18 18:48+0200\n"
 "Last-Translator: Martin Srebotnjak <miles@filmsi.net>\n"
 "Language-Team: sl.libreoffice.org\n"
 "Language: sl\n"
@@ -2758,7 +2758,7 @@ msgctxt ""
 "captions_numbers.xhp\n"
 "par_id3154249\n"
 "help.text"
-msgid "Select the object to get a caption."
+msgid "Select the object to caption."
 msgstr "Izberite predmet, ki mu želite dodati napis."
 
 #: captions_numbers.xhp
@@ -13030,8 +13030,8 @@ msgctxt ""
 "search_regexp.xhp\n"
 "par_id0509200916345516\n"
 "help.text"
-msgid "Regular expressions can be used to search for some unspecified or even invisible characters."
-msgstr "Regularne izraze lahko uporabite za iskanje nekaterih nenavedenih ali celo nevidnih znakov."
+msgid "Regular expressions are special patterns used to find and manipulate text, helping you locate specific information within texts."
+msgstr "Regularni izrazi so posebni vzorci, s pomočjo katerih lahko iščemo in spreminjamo besedilo oz. poiščemo določene podatke v besedilih."
 
 #: search_regexp.xhp
 msgctxt ""
@@ -13108,6 +13108,14 @@ msgstr "Regularni izraz za en sam znak je pika (.)."
 #: search_regexp.xhp
 msgctxt ""
 "search_regexp.xhp\n"
+"par_id3149642\n"
+"help.text"
+msgid "The regular expression for a word character \\w, and \\d for a decimal digit."
+msgstr "Regularni izraz za besedni znak je \\w, za desetiško števko pa \\d."
+
+#: search_regexp.xhp
+msgctxt ""
+"search_regexp.xhp\n"
 "par_id3153136\n"
 "help.text"
 msgid "The regular expression for zero or more occurrences of the previous character is an asterisk. For example: \"123*\" finds \"12\" \"123\", and \"1233\"."
@@ -13118,32 +13126,40 @@ msgctxt ""
 "search_regexp.xhp\n"
 "par_id3149609\n"
 "help.text"
-msgid "The regular expression combination to search for zero or more occurrences of any character is a period and asterisk (.*)."
-msgstr "Regularni izraz za iskanje od 0 pa do več pojavitev kateregakoli znaka je pika in zvezdica (.*)."
+msgid "The regular expression to search for zero or more occurrences of any character is a period and asterisk (.*)."
+msgstr "Regularni izraz za iskanje od nič pa do več pojavitev poljubnega znaka je pika z zvezdico (.*)."
 
 #: search_regexp.xhp
 msgctxt ""
 "search_regexp.xhp\n"
-"par_id3149854\n"
+"par_id3153138\n"
 "help.text"
-msgid "The regular expression for the end of a paragraph is a dollar sign ($). The regular expression character combination for the start of a paragraph is a caret and a period (^.)."
-msgstr "Regularni izraz za konec odstavka je znak za dolar ($). Regularni izraz za začetek odstavka je strešica in pika (^.)."
+msgid "The regular expression for one or more occurrences of the previous character is a plus sign (+). For example: \"\\w+\" finds any word, \"\\d+\" any number."
+msgstr "Regularni izraz za eno ali več pojavitev prejšnjega znaka je znak plus (+). Primer: »\\w+« najde poljubno besedo, »\\d+« poljubno število."
 
 #: search_regexp.xhp
 msgctxt ""
 "search_regexp.xhp\n"
 "par_id0509200916345545\n"
 "help.text"
-msgid "The regular expression for a tab character is \\t."
-msgstr "Regularni izraz za tabulatorski znak je \\t."
+msgid "The regular expression for a tab character is \\t. More generally, \\s stands for all kinds of \"spaces\", like non-breaking space, carriage return ..."
+msgstr "Regularni izraz za tabulatorski znak je \\t. V splošnem \\s predstavlja vse vrste »presledkov«, kot so neprelomni presledek, prelom vrstice, ..."
+
+#: search_regexp.xhp
+msgctxt ""
+"search_regexp.xhp\n"
+"par_id3149854\n"
+"help.text"
+msgid "The regular expression for the end of a paragraph is a dollar sign ($). The regular expression for the start of a paragraph is a caret and a period (^.). The regular expression for an empty paragraph is ^$."
+msgstr "Regularni izraz za konec odstavka je znak za dolar ($). Regularni izraz za začetek odstavka je strešica in pika (^.). Regularni izraz za prazen odstavek je ^$."
 
 #: search_regexp.xhp
 msgctxt ""
 "search_regexp.xhp\n"
 "par_id3153414\n"
 "help.text"
-msgid "A search using a regular expression will work only within one paragraph. To search using a regular expression in more than one paragraph, do a separate search in each paragraph."
-msgstr "Regularne izraze lahko iščete samo znotraj istega odstavka. Če želite iskati z regularnim izrazom v več kot enem odstavku, za vsak odstavek izvedite ločeno iskanje."
+msgid "A search using a regular expression will work only within one paragraph. That is, a \\n will match a line break within a paragraph."
+msgstr "Regularne izraze lahko iščete samo znotraj istega odstavka. Tako \\n najde prelom vrstice le v danem odstavku."
 
 #: section_edit.xhp
 msgctxt ""
@@ -14104,6 +14120,14 @@ msgctxt ""
 "help.text"
 msgid "Use the styles spotlight to inspect usage of styles and direct formatting in the document."
 msgstr "Uporabite izpostavitev slogov, da preučite rabo slogov in neposrednega oblikovanja v dokumentu."
+
+#: spotlight_styles.xhp
+msgctxt ""
+"spotlight_styles.xhp\n"
+"par_id391725544807126\n"
+"help.text"
+msgid "Choose <menuitem>Format - Spotlight</menuitem> and select an option from the submenu."
+msgstr "Izberite <menuitem>Oblika – Izpostavi</menuitem> in izberite eno od možnosti v podmeniju."
 
 #: spotlight_styles.xhp
 msgctxt ""
@@ -16966,8 +16990,8 @@ msgctxt ""
 "using_hyphen.xhp\n"
 "tit\n"
 "help.text"
-msgid "Hyphenation"
-msgstr "Deljenje besed"
+msgid "Using Hyphenation"
+msgstr "Raba deljenja besed"
 
 #: using_hyphen.xhp
 msgctxt ""
@@ -16982,8 +17006,8 @@ msgctxt ""
 "using_hyphen.xhp\n"
 "hd_id3149695\n"
 "help.text"
-msgid "<variable id=\"using_hyphen\"><link href=\"text/swriter/guide/using_hyphen.xhp\">Hyphenation</link></variable>"
-msgstr "<variable id=\"using_hyphen\"><link href=\"text/swriter/guide/using_hyphen.xhp\">Deljenje besed</link></variable>"
+msgid "<variable id=\"using_hyphen\"><link href=\"text/swriter/guide/using_hyphen.xhp\">Using Hyphenation</link></variable>"
+msgstr "<variable id=\"using_hyphen\"><link href=\"text/swriter/guide/using_hyphen.xhp\">Raba deljenja besed</link></variable>"
 
 #: using_hyphen.xhp
 msgctxt ""
@@ -18060,6 +18084,14 @@ msgstr "Število besed in znakov je prikazano v vrstici stanja in se posodablja 
 #: words_count.xhp
 msgctxt ""
 "words_count.xhp\n"
+"par_idN105D2\n"
+"help.text"
+msgid "Word and character count for a section is shown in the <link href=\"text/swriter/guide/navigator.xhp\">Navigator</link> as a tooltip when the mouse pointer is over the name of this section."
+msgstr "Števec besed in znakov v odseku se prikaže v <link href=\"text/swriter/guide/navigator.xhp\">Krmarju</link> kot namig, ko se kazalec miške nahaja nad imenom odseka."
+
+#: words_count.xhp
+msgctxt ""
+"words_count.xhp\n"
 "par_idN106D1\n"
 "help.text"
 msgid "If you want to count only some text of your document, select the text."
@@ -18110,8 +18142,8 @@ msgctxt ""
 "words_count.xhp\n"
 "par_id111620090113400\n"
 "help.text"
-msgid "To add a custom character to be considered as the word limit, choose <switchinline select=\"sys\"><caseinline select=\"MAC\"><emph>%PRODUCTNAME - Preferences</emph></caseinline><defaultinline><emph>Tools - Options</emph></defaultinline></switchinline><emph> - %PRODUCTNAME Writer - General</emph> and add the character into the <emph>Additional separators</emph> field."
-msgstr "Če želite, dodati znak po meri, ki naj šteje za razmejitev med besedami oz. kot ločilo, izberite <switchinline select=\"sys\"><caseinline select=\"MAC\"><emph>%PRODUCTNAME – Nastavitve</emph></caseinline><defaultinline><emph>Orodja – Možnosti</emph></defaultinline></switchinline><emph> – %PRODUCTNAME Writer – Splošno</emph> in dodajte znak v polje <emph>Dodatna ločila</emph>."
+msgid "To add a custom character to be considered as the word limit, choose <switchinline select=\"sys\"><caseinline select=\"MAC\"><emph>%PRODUCTNAME - Preferences</emph></caseinline><defaultinline><emph>Tools - Options</emph></defaultinline></switchinline><emph> - %PRODUCTNAME Writer - General</emph> and add the character into the <emph>Additional separators</emph> field. By default, this field contains em dash (—) and en dash (–)."
+msgstr "Če želite, dodati znak po meri, ki naj šteje za razmejitev med besedami oz. kot ločilo, izberite <switchinline select=\"sys\"><caseinline select=\"MAC\"><emph>%PRODUCTNAME – Nastavitve</emph></caseinline><defaultinline><emph>Orodja – Možnosti</emph></defaultinline></switchinline><emph> – %PRODUCTNAME Writer – Splošno</emph> in dodajte znak v polje <emph>Dodatna ločila</emph>. To polje privzeto vsebuje em dash (—) in en dash (–)."
 
 #: words_count.xhp
 msgctxt ""
@@ -18128,6 +18160,14 @@ msgctxt ""
 "help.text"
 msgid "<link href=\"text/shared/01/01100400.xhp\">File - Properties - Statistics</link>"
 msgstr "<link href=\"text/shared/01/01100400.xhp\">Datoteka – Lastnosti – Statistika</link>"
+
+#: words_count.xhp
+msgctxt ""
+"words_count.xhp\n"
+"par_id3147444\n"
+"help.text"
+msgid "<link href=\"text/swriter/01/06040000.xhp\">Word Count</link>"
+msgstr "<link href=\"text/swriter/01/06040000.xhp\">Štetje besed</link>"
 
 #: wrap.xhp
 msgctxt ""
