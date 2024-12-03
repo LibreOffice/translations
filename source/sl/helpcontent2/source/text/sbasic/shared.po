@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: LibreOffice 25.2\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2024-11-10 17:17+0100\n"
-"PO-Revision-Date: 2024-11-17 18:07+0200\n"
+"POT-Creation-Date: 2024-12-01 13:44+0100\n"
+"PO-Revision-Date: 2024-12-02 08:47+0200\n"
 "Last-Translator: Martin Srebotnjak <miles@filmsi.net>\n"
 "Language-Team: sl.libreoffice.org\n"
 "Language: sl\n"
@@ -11534,8 +11534,8 @@ msgctxt ""
 "03030101.xhp\n"
 "par_id3151074\n"
 "help.text"
-msgid "MsgBox sDate ' returns 04/09/1964"
-msgstr "MsgBox sDate ' vrne 04/09/1964"
+msgid "MsgBox sDate ' returns 1964-04-09 in ISO 8601 format"
+msgstr "MsgBox sDate ' vrne 1964-04-09 v zapisu ISO 8601"
 
 #: 03030102.xhp
 msgctxt ""
@@ -12478,8 +12478,8 @@ msgctxt ""
 "03030108.xhp\n"
 "par_id3146921\n"
 "help.text"
-msgid "return both 12/31/2002 in the date format of your system"
-msgstr "obe vrneta 31. 12. 2002 v sistemski datumski obliki"
+msgid "return both 2002-12-31 in the date format of your system"
+msgstr "obe vrneta 2002-12-31 v sistemski datumski obliki"
 
 #: 03030110.xhp
 msgctxt ""
@@ -27470,40 +27470,40 @@ msgctxt ""
 "03120306.xhp\n"
 "bm_id3143268\n"
 "help.text"
-msgid "<bookmark_value>Mid function</bookmark_value>  <bookmark_value>Mid statement</bookmark_value>"
-msgstr "<bookmark_value>funkcija Mid</bookmark_value><bookmark_value>ukaz Mid</bookmark_value>"
+msgid "<bookmark_value>Mid function</bookmark_value>"
+msgstr "<bookmark_value>funkcija Mid</bookmark_value>"
 
 #: 03120306.xhp
 msgctxt ""
 "03120306.xhp\n"
 "hd_id3143268\n"
 "help.text"
-msgid "<link href=\"text/sbasic/shared/03120306.xhp\">Mid Function, Mid Statement</link>"
-msgstr "<link href=\"text/sbasic/shared/03120306.xhp\">Ukaz Mid, funkcija Mid</link>"
+msgid "<link href=\"text/sbasic/shared/03120306.xhp\">Mid Function</link>"
+msgstr "<link href=\"text/sbasic/shared/03120306.xhp\">Funkcija Mid</link>"
 
 #: 03120306.xhp
 msgctxt ""
 "03120306.xhp\n"
 "par_id3148473\n"
 "help.text"
-msgid "Returns the specified portion of a string expression (<emph>Mid function</emph>), or replaces the portion of a string expression with another string (<emph>Mid statement</emph>)."
-msgstr "Vrne zahtevani del izraza vrste niza-String (<emph>funkcija Mid</emph>), ali pa zamenja del niza z drugim nizom (<emph>ukaz Mid</emph>)."
+msgid "Returns the specified portion of a string expression (<emph>Mid function</emph>), or replaces the portion of a string expression with another string (<emph>Mid subroutine</emph>)."
+msgstr "Vrne zahtevani del izraza vrste niza String (<emph>funkcija Mid</emph>), ali pa zamenja del niza z drugim nizom (<emph>procedura Mid</emph>)."
 
 #: 03120306.xhp
 msgctxt ""
 "03120306.xhp\n"
 "par_id3147530\n"
 "help.text"
-msgid "Mid (Text As String, Start As Long [, Length As Long])"
-msgstr "Mid (Besedilo As String, Začetek As Long [, Dolžina As Long])"
+msgid "Mid(string As String, Start As Long [, Length As Long]) As String"
+msgstr "Mid(besedilo As String, Začetek As Long [, Dolžina As Long]) As String"
 
 #: 03120306.xhp
 msgctxt ""
 "03120306.xhp\n"
 "par_id3147540\n"
 "help.text"
-msgid "Mid (Text As String, Start As Long, Length As Long, Text As String)"
-msgstr "Mid (Besedilo As String, Začetek As Long , Dolžina As Long, Besedilo2 As String)"
+msgid "Mid([ByRef] string As String, Start As Long, [Length As Long], Text As String)"
+msgstr "Mid([ByRef] besedilo As String, Začetek As Long , [Dolžina As Long], Besedilo2 As String)"
 
 #: 03120306.xhp
 msgctxt ""
@@ -27518,8 +27518,8 @@ msgctxt ""
 "03120306.xhp\n"
 "par_id3148664\n"
 "help.text"
-msgid "<emph>Text:</emph> Any string expression that you want to modify."
-msgstr "<emph>Besedilo:</emph> poljuben niz, ki ga želite spremeniti."
+msgid "<emph>string:</emph> Any string expression that you want to extract (<emph>Mid function</emph>). Any text variable name that you want to modify (<emph>Mid subroutine</emph>)."
+msgstr "<emph>besedilo:</emph> poljuben niz, ki ga želite izluščiti (<emph>funkcija Mid</emph>). Poljubno ime besedilne spremenljivke, k ga želite spremeniti (<emph>procedura Mid</emph>)."
 
 #: 03120306.xhp
 msgctxt ""
@@ -27550,16 +27550,96 @@ msgctxt ""
 "03120306.xhp\n"
 "par_id3144762\n"
 "help.text"
-msgid "If the Length parameter in the <emph>Mid statement</emph> is less than the length of the text that you want to replace, the text is reduced to the specified length."
-msgstr "Če je parameter Dolzina v <emph>ukazu Mid</emph> krajši od dolžine besedila, ki ga želite zamenjati, se besedilo skrajša na navedeno dolžino."
+msgid "If the Length parameter in the <emph>Mid subroutine</emph> is less than the length of the text that you want to replace, the text is reduced to the specified length."
+msgstr "Če je parameter Dolžina v <emph>proceduri Mid</emph> krajši od dolžine besedila, ki ga želite zamenjati, se besedilo skrajša na navedeno dolžino."
 
 #: 03120306.xhp
 msgctxt ""
 "03120306.xhp\n"
 "par_id3150769\n"
 "help.text"
-msgid "<emph>Text:</emph> The string to replace the string expression (<emph>Mid statement</emph>)."
-msgstr "<emph>Besedilo:</emph> Niz, ki naj zamenja vsebino (<emph>ukaz Mid</emph>)."
+msgid "<emph>Text:</emph> The string to replace the string expression (<emph>Mid subroutine</emph>)."
+msgstr "<emph>Besedilo:</emph> Niz, ki naj zamenja besedilni niz (<emph>procedura Mid</emph>)."
+
+#: 03120306.xhp
+msgctxt ""
+"03120306.xhp\n"
+"bas_id251731518141762\n"
+"help.text"
+msgid "func1:"
+msgstr "func1:"
+
+#: 03120306.xhp
+msgctxt ""
+"03120306.xhp\n"
+"bas_id81731518142155\n"
+"help.text"
+msgid "MsgBox Mid(text, 13, 8)   ' returns the word \"original\""
+msgstr "MsgBox Mid(text, 13, 8)   'vrne besedo \"original\""
+
+#: 03120306.xhp
+msgctxt ""
+"03120306.xhp\n"
+"bas_id71731518142368\n"
+"help.text"
+msgid "MsgBox text               ' text is not modified"
+msgstr "MsgBox text               ' besedilo ni spremenjeno"
+
+#: 03120306.xhp
+msgctxt ""
+"03120306.xhp\n"
+"bas_id91731518142552\n"
+"help.text"
+msgid "stmt1:"
+msgstr "stmt1:"
+
+#: 03120306.xhp
+msgctxt ""
+"03120306.xhp\n"
+"bas_id51731518274333\n"
+"help.text"
+msgid "MsgBox text               ' returns \"This is the new Text\""
+msgstr "MsgBox text               ' vrne \"This is the new Text\""
+
+#: 03120306.xhp
+msgctxt ""
+"03120306.xhp\n"
+"bas_id651731518274713\n"
+"help.text"
+msgid "func2:"
+msgstr "func2:"
+
+#: 03120306.xhp
+msgctxt ""
+"03120306.xhp\n"
+"bas_id461725547890578\n"
+"help.text"
+msgid "MsgBox Mid(start:=10, string:=\"The quick brown fox ..\") ' shows \" brown fox ..\""
+msgstr "MsgBox Mid(start:=10, string:=\"The quick brown fox ..\") ' pokaže \" brown fox ..\""
+
+#: 03120306.xhp
+msgctxt ""
+"03120306.xhp\n"
+"bas_id291731517149800\n"
+"help.text"
+msgid "stmt2:"
+msgstr "stmt2:"
+
+#: 03120306.xhp
+msgctxt ""
+"03120306.xhp\n"
+"bas_id31731517580882\n"
+"help.text"
+msgid "MsgBox text               ' returns \"This is a new Phrase\""
+msgstr "MsgBox text               ' vrne \"This is a new Phrase\""
+
+#: 03120306.xhp
+msgctxt ""
+"03120306.xhp\n"
+"par_idm1341550256\n"
+"help.text"
+msgid "End Sub"
+msgstr "End Sub"
 
 #: 03120307.xhp
 msgctxt ""
@@ -36822,8 +36902,8 @@ msgctxt ""
 "main0601.xhp\n"
 "par_id3147226\n"
 "help.text"
-msgid "This help section explains the most common functions of %PRODUCTNAME Basic. For more in-depth information please refer to the <link href=\"https://wiki.documentfoundation.org/Documentation/BASIC_Guide\">OpenOffice.org BASIC Programming Guide</link> on the Wiki."
-msgstr "Ta odsek pomoči razloži najpogostejše funkcije programskega jezika %PRODUCTNAME Basic. Za bolj poglobljene informacije si oglejte <link href=\"https://wiki.documentfoundation.org/Documentation/BASIC_Guide\">Vodnik za programiranje OpenOffice.org BASIC</link> (v angl.) na wikiju."
+msgid "This help section explains the most common functions of %PRODUCTNAME Basic. For more in-depth information please refer to the <link href=\"https://wiki.documentfoundation.org/Documentation/BASIC_Guide\">%PRODUCTNAME BASIC Programming Guide</link> on the Wiki."
+msgstr "Ta odsek pomoči razloži najpogostejše funkcije programskega jezika %PRODUCTNAME Basic. Za bolj poglobljene informacije si oglejte <link href=\"https://wiki.documentfoundation.org/Documentation/BASIC_Guide\">Vodnik za programiranje %PRODUCTNAME BASIC</link> (v angl.) na wikiju."
 
 #: main0601.xhp
 msgctxt ""
