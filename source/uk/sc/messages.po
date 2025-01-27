@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2024-12-19 11:07+0100\n"
-"PO-Revision-Date: 2025-01-06 01:45+0000\n"
+"POT-Creation-Date: 2025-01-27 13:40+0100\n"
+"PO-Revision-Date: 2025-01-15 01:45+0000\n"
 "Last-Translator: Євген Кондратюк <lachend@gmail.com>\n"
 "Language-Team: Ukrainian <https://translations.documentfoundation.org/projects/libo_ui-master/scmessages/uk/>\n"
 "Language: uk\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Accelerator-Marker: ~\n"
-"X-Generator: Weblate 5.9.1\n"
+"X-Generator: LibreOffice\n"
 "X-POOTLE-MTIME: 1563958760.000000\n"
 
 #. kBovX
@@ -3542,7 +3542,7 @@ msgstr "Тіньова вартість"
 #: sc/inc/globstr.hrc:590
 msgctxt "STR_SENSITIVITY_RHS"
 msgid "Constraint R.H. Side"
-msgstr ""
+msgstr "Обмеження з правого боку"
 
 #. dB8cp
 #: sc/inc/pvfundlg.hrc:28
@@ -17228,89 +17228,395 @@ msgctxt "SC_OPCODE_RANDARRAY"
 msgid "Return integer (TRUE) or decimal (FALSE) values."
 msgstr "Виводить цілі (TRUE) або десяткові (FALSE) значення."
 
-#. NJR3E
+#. 4uTLx
 #: sc/inc/scfuncs.hrc:4257
+msgctxt "SC_OPCODE_DROP"
+msgid "Excludes a specified number of contiguous rows or columns from the start or end of an array."
+msgstr ""
+
+#. W6FYc
+#: sc/inc/scfuncs.hrc:4258
+msgctxt "SC_OPCODE_DROP"
+msgid "Array"
+msgstr ""
+
+#. zEu4G
+#: sc/inc/scfuncs.hrc:4259
+msgctxt "SC_OPCODE_DROP"
+msgid "The array from which to drop rows or columns."
+msgstr ""
+
+#. BFPt4
+#: sc/inc/scfuncs.hrc:4260
+msgctxt "SC_OPCODE_DROP"
+msgid "Rows"
+msgstr ""
+
+#. yyjnc
+#: sc/inc/scfuncs.hrc:4261
+msgctxt "SC_OPCODE_DROP"
+msgid "The number of rows to drop. A negative value drops from the end of the array."
+msgstr ""
+
+#. GQ7cE
+#: sc/inc/scfuncs.hrc:4262
+msgctxt "SC_OPCODE_DROP"
+msgid "Column"
+msgstr ""
+
+#. cAxPB
+#: sc/inc/scfuncs.hrc:4263
+msgctxt "SC_OPCODE_DROP"
+msgid "The number of columns to drop. A negative value drops from the end of the array."
+msgstr ""
+
+#. cXvVY
+#: sc/inc/scfuncs.hrc:4269
+msgctxt "SC_OPCODE_EXPAND"
+msgid "Expands or pads an array to specified row and column dimensions."
+msgstr ""
+
+#. kuERH
+#: sc/inc/scfuncs.hrc:4270
+msgctxt "SC_OPCODE_EXPAND"
+msgid "Array"
+msgstr ""
+
+#. E9YDC
+#: sc/inc/scfuncs.hrc:4271
+msgctxt "SC_OPCODE_EXPAND"
+msgid "The array to expand."
+msgstr ""
+
+#. EaNgG
+#: sc/inc/scfuncs.hrc:4272
+msgctxt "SC_OPCODE_EXPAND"
+msgid "Rows"
+msgstr ""
+
+#. QzQiB
+#: sc/inc/scfuncs.hrc:4273
+msgctxt "SC_OPCODE_EXPAND"
+msgid "The number of rows in the expanded array. If missing, rows will not be expanded."
+msgstr ""
+
+#. jLBEp
+#: sc/inc/scfuncs.hrc:4274
+msgctxt "SC_OPCODE_EXPAND"
+msgid "Column"
+msgstr ""
+
+#. EVAXE
+#: sc/inc/scfuncs.hrc:4275
+msgctxt "SC_OPCODE_EXPAND"
+msgid "The number of columns in the expanded array. If missing, columns will not be expanded."
+msgstr ""
+
+#. QPyBK
+#: sc/inc/scfuncs.hrc:4276
+msgctxt "SC_OPCODE_EXPAND"
+msgid "Pad with"
+msgstr ""
+
+#. kHatA
+#: sc/inc/scfuncs.hrc:4277
+msgctxt "SC_OPCODE_EXPAND"
+msgid "The value with which to pad. The default is #N/A."
+msgstr ""
+
+#. JnsYT
+#: sc/inc/scfuncs.hrc:4283
+msgctxt "SC_OPCODE_TAKE"
+msgid "Returns a specified number of contiguous rows or columns from the start or end of an array."
+msgstr ""
+
+#. dFLFb
+#: sc/inc/scfuncs.hrc:4284
+msgctxt "SC_OPCODE_TAKE"
+msgid "Array"
+msgstr ""
+
+#. ycFef
+#: sc/inc/scfuncs.hrc:4285
+msgctxt "SC_OPCODE_TAKE"
+msgid "The array from which to take rows or columns."
+msgstr ""
+
+#. DzBCL
+#: sc/inc/scfuncs.hrc:4286
+msgctxt "SC_OPCODE_TAKE"
+msgid "Rows"
+msgstr ""
+
+#. KBPBn
+#: sc/inc/scfuncs.hrc:4287
+msgctxt "SC_OPCODE_TAKE"
+msgid "The number of rows to take. A negative value takes from the end of the array."
+msgstr ""
+
+#. eRGvR
+#: sc/inc/scfuncs.hrc:4288
+msgctxt "SC_OPCODE_TAKE"
+msgid "Column"
+msgstr ""
+
+#. ZexcG
+#: sc/inc/scfuncs.hrc:4289
+msgctxt "SC_OPCODE_TAKE"
+msgid "The number of columns to take. A negative value takes from the end of the array."
+msgstr ""
+
+#. 4dkE2
+#: sc/inc/scfuncs.hrc:4295
+msgctxt "SC_OPCODE_TOCOL"
+msgid "transforms an array into a single column."
+msgstr ""
+
+#. UAzNC
+#: sc/inc/scfuncs.hrc:4296
+msgctxt "SC_OPCODE_TOCOL"
+msgid "Array"
+msgstr ""
+
+#. SFGHg
+#: sc/inc/scfuncs.hrc:4297
+msgctxt "SC_OPCODE_TOCOL"
+msgid "The range or array to return as a column."
+msgstr ""
+
+#. uACXu
+#: sc/inc/scfuncs.hrc:4298
+msgctxt "SC_OPCODE_TOCOL"
+msgid "Ignore"
+msgstr ""
+
+#. UaqvP
+#: sc/inc/scfuncs.hrc:4299
+msgctxt "SC_OPCODE_TOCOL"
+msgid "Whether to ignore certain types of values. 0 or omitted - keep all values (default). 1 - ignore blanks. 2 - ignore errors. 3 - ignore blanks and errors."
+msgstr ""
+
+#. qNLAi
+#: sc/inc/scfuncs.hrc:4300
+msgctxt "SC_OPCODE_TOCOL"
+msgid "Scan by column"
+msgstr ""
+
+#. bcArN
+#: sc/inc/scfuncs.hrc:4301
+msgctxt "SC_OPCODE_TOCOL"
+msgid "Scan the array by column. FALSE or omitted (default) - the array is scanned by row. TRUE - the array is scanned by column."
+msgstr ""
+
+#. PGyxj
+#: sc/inc/scfuncs.hrc:4307
+msgctxt "SC_OPCODE_TOROW"
+msgid "transforms an array into a single row."
+msgstr ""
+
+#. W9bWe
+#: sc/inc/scfuncs.hrc:4308
+msgctxt "SC_OPCODE_TOROW"
+msgid "Array"
+msgstr ""
+
+#. XxE93
+#: sc/inc/scfuncs.hrc:4309
+msgctxt "SC_OPCODE_TOROW"
+msgid "The range or array to return as a row."
+msgstr ""
+
+#. AqqBC
+#: sc/inc/scfuncs.hrc:4310
+msgctxt "SC_OPCODE_TOROW"
+msgid "Ignore"
+msgstr ""
+
+#. CURrx
+#: sc/inc/scfuncs.hrc:4311
+msgctxt "SC_OPCODE_TOROW"
+msgid "Whether to ignore certain types of values. 0 or omitted - keep all values (default). 1 - ignore blanks. 2 - ignore errors. 3 - ignore blanks and errors."
+msgstr ""
+
+#. E4XDf
+#: sc/inc/scfuncs.hrc:4312
+msgctxt "SC_OPCODE_TOROW"
+msgid "Scan by column"
+msgstr ""
+
+#. 5bZRy
+#: sc/inc/scfuncs.hrc:4313
+msgctxt "SC_OPCODE_TOROW"
+msgid "Scan the array by column. FALSE or omitted (default) - the array is scanned by row. TRUE - the array is scanned by column."
+msgstr ""
+
+#. NJR3E
+#: sc/inc/scfuncs.hrc:4319
 msgctxt "SC_OPCODE_UNIQUE"
 msgid "Returns a list of unique values from a range or array."
 msgstr "Виводить список унікальних значень з діапазону або масиву."
 
 #. NepxE
-#: sc/inc/scfuncs.hrc:4258
+#: sc/inc/scfuncs.hrc:4320
 msgctxt "SC_OPCODE_UNIQUE"
 msgid "Array"
 msgstr "Масив"
 
 #. 2sVga
-#: sc/inc/scfuncs.hrc:4259
+#: sc/inc/scfuncs.hrc:4321
 msgctxt "SC_OPCODE_UNIQUE"
 msgid "The range or array from which to return unique values."
 msgstr "Діапазон або масив, з якого потрібно отримати унікальні значення."
 
 #. fGfWS
-#: sc/inc/scfuncs.hrc:4260
+#: sc/inc/scfuncs.hrc:4322
 msgctxt "SC_OPCODE_UNIQUE"
 msgid "By col"
 msgstr "За стовп"
 
 #. SASmk
-#: sc/inc/scfuncs.hrc:4261
+#: sc/inc/scfuncs.hrc:4323
 msgctxt "SC_OPCODE_UNIQUE"
 msgid "Logical value indicating how to compare data: TRUE - compares data across columns. FALSE or omitted (default) - compares data across rows."
 msgstr "Логічне значення, що вказує на спосіб порівняння даних: TRUE - порівнює дані по стовпчиках. FALSE або пропущено (типово) - порівнює дані по рядках."
 
 #. hVQ6i
-#: sc/inc/scfuncs.hrc:4262
+#: sc/inc/scfuncs.hrc:4324
 msgctxt "SC_OPCODE_UNIQUE"
 msgid "Uniqueness"
 msgstr "Унікальність"
 
 #. EUVys
-#: sc/inc/scfuncs.hrc:4263
+#: sc/inc/scfuncs.hrc:4325
 msgctxt "SC_OPCODE_UNIQUE"
 msgid "Logical value that defines what values are considered unique: TRUE - returns values that occur only once. FALSE or omitted (default) - returns all distinct (different) values in the range or array."
 msgstr "Логічне значення, що вказує, які значення вважати унікальними: TRUE - повертає значення, що зустрічаються лише один раз. FALSE або пропущено (типово) - виводить всі відмінні (різні) значення в діапазоні або масиві."
 
 #. axamT
-#: sc/inc/scfuncs.hrc:4269
+#: sc/inc/scfuncs.hrc:4331
 msgctxt "SC_OPCODE_LET"
 msgid "The LET function assigns names to calculation results. This allows storing intermediate calculations, values, or defining names inside a formula. These names only apply within the scope of the LET function."
 msgstr "Функція LET присвоює імена результатам обчислень. Це дозволяє зберігати проміжні обчислення, значення або задавати імена всередині формули. Ці імена застосовуються лише в межах області видимості функції LET."
 
 #. 6DDAi
-#: sc/inc/scfuncs.hrc:4270
+#: sc/inc/scfuncs.hrc:4332
 msgctxt "SC_OPCODE_LET"
 msgid "Name 1"
 msgstr "Назва 1"
 
 #. a7LQR
-#: sc/inc/scfuncs.hrc:4271
+#: sc/inc/scfuncs.hrc:4333
 msgctxt "SC_OPCODE_LET"
 msgid "The first name to assign. Must start with a letter. Cannot be the output of a formula or conflict with range syntax."
 msgstr "Назва, яку потрібно призначити. Має починатися з літери. Не може бути виведенням формули або конфліктувати з синтаксисом діапазону."
 
 #. KsyBM
-#: sc/inc/scfuncs.hrc:4272
+#: sc/inc/scfuncs.hrc:4334
 msgctxt "SC_OPCODE_LET"
 msgid "Name value "
 msgstr "Значення на́зви "
 
 #. Dn2DE
-#: sc/inc/scfuncs.hrc:4273
+#: sc/inc/scfuncs.hrc:4335
 msgctxt "SC_OPCODE_LET"
 msgid "Name value 1, Name value 2,... The value or calculation to assign to Name."
 msgstr "Значення на́зви 1, Значення на́зви 2,... Значення або формула, виражена Назвою."
 
 #. CHAMD
-#: sc/inc/scfuncs.hrc:4274
+#: sc/inc/scfuncs.hrc:4336
 msgctxt "SC_OPCODE_LET"
 msgid "Calculation or Name "
 msgstr "Розрахунок або Назва "
 
 #. tFMkP
-#: sc/inc/scfuncs.hrc:4275
+#: sc/inc/scfuncs.hrc:4337
 msgctxt "SC_OPCODE_LET"
 msgid "A calculation that uses all names within the LET function. This must be the last argument in the LET function. Or a second Name to assign to a second Name value. If a second Name is specified, Name value 2 and Calculation or Name 3 become required."
 msgstr "Розрахунок, який використовує всі назви у функції LET. Це має бути останній аргумент у функції LET або друга Назва для присвоєння другому значенню Назви. Якщо вказана друга Назва, Назва значення 2 і Розрахунок або Назва 3 стають обов'язковими."
+
+#. oBDEA
+#: sc/inc/scfuncs.hrc:4343
+msgctxt "SC_OPCODE_WRAPCOLS"
+msgid "Wraps the provided row or column of values by columns after a specified number of elements to form a new array."
+msgstr ""
+
+#. fC6RK
+#: sc/inc/scfuncs.hrc:4344
+msgctxt "SC_OPCODE_WRAPCOLS"
+msgid "Range"
+msgstr ""
+
+#. nfZyj
+#: sc/inc/scfuncs.hrc:4345
+msgctxt "SC_OPCODE_WRAPCOLS"
+msgid "the range to wrap."
+msgstr ""
+
+#. GE3HQ
+#: sc/inc/scfuncs.hrc:4346
+msgctxt "SC_OPCODE_WRAPCOLS"
+msgid "Wrap count"
+msgstr ""
+
+#. FWsCt
+#: sc/inc/scfuncs.hrc:4347
+msgctxt "SC_OPCODE_WRAPCOLS"
+msgid "The maximum number of values for each column."
+msgstr ""
+
+#. zkjFB
+#: sc/inc/scfuncs.hrc:4348
+msgctxt "SC_OPCODE_WRAPCOLS"
+msgid "Pad with"
+msgstr ""
+
+#. knbjc
+#: sc/inc/scfuncs.hrc:4349
+msgctxt "SC_OPCODE_WRAPCOLS"
+msgid "The value with which to pad. The default is #N/A."
+msgstr ""
+
+#. BDA7q
+#: sc/inc/scfuncs.hrc:4355
+msgctxt "SC_OPCODE_WRAPROWS"
+msgid "Wraps the provided row or column of values by rows after a specified number of elements to form a new array."
+msgstr ""
+
+#. 7esii
+#: sc/inc/scfuncs.hrc:4356
+msgctxt "SC_OPCODE_WRAPROWS"
+msgid "Range"
+msgstr ""
+
+#. FLJwx
+#: sc/inc/scfuncs.hrc:4357
+msgctxt "SC_OPCODE_WRAPROWS"
+msgid "the range to wrap."
+msgstr ""
+
+#. aLHUi
+#: sc/inc/scfuncs.hrc:4358
+msgctxt "SC_OPCODE_WRAPROWS"
+msgid "Wrap count"
+msgstr ""
+
+#. 3CEsK
+#: sc/inc/scfuncs.hrc:4359
+msgctxt "SC_OPCODE_WRAPROWS"
+msgid "The maximum number of values for each row."
+msgstr ""
+
+#. iTCWg
+#: sc/inc/scfuncs.hrc:4360
+msgctxt "SC_OPCODE_WRAPROWS"
+msgid "Pad with"
+msgstr ""
+
+#. e3K5s
+#: sc/inc/scfuncs.hrc:4361
+msgctxt "SC_OPCODE_WRAPROWS"
+msgid "The value with which to pad. The default is #N/A."
+msgstr ""
 
 #. pDDme
 #: sc/inc/scstyles.hrc:29
@@ -19586,115 +19892,115 @@ msgstr "значення містять текст"
 #: sc/inc/strings.hrc:428
 msgctxt "STR_CONDITION_NOT_CONTAINS_TEXT"
 msgid "values don't contain text"
-msgstr ""
+msgstr "значення не містять тексту"
 
 #. r6Usp
 #: sc/inc/strings.hrc:429
 msgctxt "STR_CONDITION_FORMULA"
 msgid "formula is"
-msgstr ""
+msgstr "формула є"
 
 #. PXAAm
 #: sc/inc/strings.hrc:430
 msgctxt "STR_CONDITION_TODAY"
 msgid "date is today"
-msgstr ""
+msgstr "сьогоднішня дата"
 
 #. DjLCy
 #: sc/inc/strings.hrc:431
 msgctxt "STR_CONDITION_YESTERDAY"
 msgid "date is yesterday"
-msgstr ""
+msgstr "вчорашня дата"
 
 #. j5dhY
 #: sc/inc/strings.hrc:432
 msgctxt "STR_CONDITION_TOMORROW"
 msgid "date is tomorrow"
-msgstr ""
+msgstr "завтрашня дата"
 
 #. 7iXCz
 #: sc/inc/strings.hrc:433
 msgctxt "STR_CONDITION_LAST7DAYS"
 msgid "date is in last 7 days"
-msgstr ""
+msgstr "дата в межах останніх 7 днів"
 
 #. wFkGv
 #: sc/inc/strings.hrc:434
 msgctxt "STR_CONDITION_THISWEEK"
 msgid "date is in this week"
-msgstr ""
+msgstr "дата в межах цього тижня"
 
 #. FuW2H
 #: sc/inc/strings.hrc:435
 msgctxt "STR_CONDITION_LASTWEEK"
 msgid "date is in last week"
-msgstr ""
+msgstr "дата - в межах минулого тижня"
 
 #. PWJvg
 #: sc/inc/strings.hrc:436
 msgctxt "STR_CONDITION_NEXTWEEK"
 msgid "date is in next week"
-msgstr ""
+msgstr "дата - в межах наступного тижня"
 
 #. Q2pSf
 #: sc/inc/strings.hrc:437
 msgctxt "STR_CONDITION_THISMONTH"
 msgid "date is in this month"
-msgstr ""
+msgstr "дата - у межах цього місяця"
 
 #. KfVAc
 #: sc/inc/strings.hrc:438
 msgctxt "STR_CONDITION_LASTMONTH"
 msgid "date is in last month"
-msgstr ""
+msgstr "дата - у межах минулого місяця"
 
 #. kooBA
 #: sc/inc/strings.hrc:439
 msgctxt "STR_CONDITION_NEXTMONTH"
 msgid "date is in next month"
-msgstr ""
+msgstr "дата - у межах наступного місяця"
 
 #. bPp5N
 #: sc/inc/strings.hrc:440
 msgctxt "STR_CONDITION_THISYEAR"
 msgid "date is in this year"
-msgstr ""
+msgstr "дата - у цьому році"
 
 #. LaSDq
 #: sc/inc/strings.hrc:441
 msgctxt "STR_CONDITION_LASTYEAR"
 msgid "date is in last year"
-msgstr ""
+msgstr "дата - у межах минулого року"
 
 #. AqNgF
 #: sc/inc/strings.hrc:442
 msgctxt "STR_CONDITION_NEXTYEAR"
 msgid "date is in next year"
-msgstr ""
+msgstr "дата - в наступному році"
 
 #. Xd9YB
 #: sc/inc/strings.hrc:443
 msgctxt "STR_DUPLICATERECORDS_WARNING"
 msgid "Warning!"
-msgstr ""
+msgstr "Попередження!"
 
 #. kfQsW
 #: sc/inc/strings.hrc:444
 msgctxt "STR_DUPLICATERECORDS_NODATAFOUND"
 msgid "No data found to operate on."
-msgstr ""
+msgstr "Не знайдено даних для обробки."
 
 #. pfvsB
 #: sc/inc/strings.hrc:445
 msgctxt "STR_DUPLICATERECORDS_DATACONATINSROWHEADERS"
 msgid "Data contains row headers"
-msgstr ""
+msgstr "Дані містять заголовки рядків"
 
 #. FUqtC
 #: sc/inc/strings.hrc:446
 msgctxt "STR_DUPLICATERECORDS_DATACONATINSCOLUMNHEADERS"
 msgid "Data contains column headers"
-msgstr ""
+msgstr "Дані містять заголовки стовпців"
 
 #. Wp8Us
 #: sc/inc/strings.hrc:449
@@ -19709,6 +20015,8 @@ msgid ""
 "AutoCalculate: Off\n"
 "Click to enable."
 msgstr ""
+"Авто-розрахунок: Вимк\n"
+"Натисніть для увімкнення."
 
 #. Et4zM
 #: sc/inc/subtotals.hrc:28
@@ -20730,11 +21038,11 @@ msgctxt "condformatmanager|extended_tip|CondFormatManager"
 msgid "This dialog allows you to see all the conditional formatting defined in the spreadsheet."
 msgstr "Це діалогове вікно дозволяє побачити всі умовні форматування, задіяні на цьому аркуші."
 
-#. nrXMW
+#. FVsyY
 #: sc/uiconfig/scalc/ui/conditionaleasydialog.ui:8
 msgctxt "conditionaleasydialog|title"
-msgid "Apply conditional formatting..."
-msgstr "Застосувати умовне форматування..."
+msgid "Highlight cells..."
+msgstr ""
 
 #. pDRks
 #: sc/uiconfig/scalc/ui/conditionaleasydialog.ui:46
@@ -20752,37 +21060,37 @@ msgstr "Закриває вікно і скасовує усі зміни."
 #: sc/uiconfig/scalc/ui/conditionaleasydialog.ui:118
 msgctxt "conditioneasydialog|extended_tip|entryNumber"
 msgid "Enter the first value of the range or text for comparison and formatting."
-msgstr ""
+msgstr "Введіть перше значення діапазону або текст для порівняння та форматування."
 
 #. vCaQL
 #: sc/uiconfig/scalc/ui/conditionaleasydialog.ui:138
 msgctxt "conditionaleasydialog|extended_tip|entryNumber2"
 msgid "Enter the second value of the range for comparison and formatting."
-msgstr ""
+msgstr "Введіть друге значення діапазону для порівняння та форматування."
 
 #. jGKBA
 #: sc/uiconfig/scalc/ui/conditionaleasydialog.ui:152
 msgctxt "conditionaleasydialog|label"
 msgid "Apply cell style"
-msgstr ""
+msgstr "Застосувати стиль комірки"
 
 #. 69Ebq
 #: sc/uiconfig/scalc/ui/conditionaleasydialog.ui:184
 msgctxt "conditioneasydialog|extended_tip|themeCombo"
 msgid "Cell style to apply when conditions are met."
-msgstr ""
+msgstr "Стиль комірки для застосування при виконанні умов."
 
 #. iDFcc
 #: sc/uiconfig/scalc/ui/conditionaleasydialog.ui:207
 msgctxt "conditionaleasydialog|label"
 msgid "Highlight cells with values %1"
-msgstr ""
+msgstr "Виділити клітинки зі значеннями %1"
 
 #. sEZe7
 #: sc/uiconfig/scalc/ui/conditionaleasydialog.ui:246
 msgctxt "conditioneasydialog|extended_tip|entryRange"
 msgid "Range of cells for conditional formatting."
-msgstr ""
+msgstr "Діапазон комірок для умовного форматування."
 
 #. 5MDWE
 #: sc/uiconfig/scalc/ui/conditionaleasydialog.ui:264
@@ -23002,7 +23310,7 @@ msgstr "Закриває вікно і скасовує усі зміни."
 #: sc/uiconfig/scalc/ui/definedatabaserangedialog.ui:156
 msgctxt "definedatabaserangedialog|extended_tip|entry-list"
 msgid "Available database ranges"
-msgstr ""
+msgstr "Доступні діапазони баз даних"
 
 #. RMghE
 #: sc/uiconfig/scalc/ui/definedatabaserangedialog.ui:176
@@ -23074,7 +23382,7 @@ msgstr "Містить всього _рядків"
 #: sc/uiconfig/scalc/ui/definedatabaserangedialog.ui:383
 msgctxt "definedatabaserangedialog|extended_tip|ContainsTotalsRow"
 msgid "The database range has a row for totals."
-msgstr ""
+msgstr "Діапазон бази даних має рядок для підсумків."
 
 #. AeZB2
 #: sc/uiconfig/scalc/ui/definedatabaserangedialog.ui:395
@@ -23128,7 +23436,7 @@ msgstr "Операції:"
 #: sc/uiconfig/scalc/ui/definedatabaserangedialog.ui:483
 msgctxt "definedatabaserangedialog|invalid"
 msgid "Invalid range"
-msgstr "Невірний діапазон"
+msgstr "Неприпустимий діапазон"
 
 #. dHJw9
 #: sc/uiconfig/scalc/ui/definedatabaserangedialog.ui:498
@@ -23716,121 +24024,127 @@ msgstr "Вилучити коментар"
 #: sc/uiconfig/scalc/ui/duplicaterecordsdlg.ui:22
 msgctxt "duplicaterecordsdialog|duplicaterecordsdialog"
 msgid "Handle Duplicate Records"
-msgstr ""
+msgstr "Обробка дублікатів записів"
 
 #. FmXH7
 #: sc/uiconfig/scalc/ui/duplicaterecordsdlg.ui:37
 msgctxt "duplicaterecordsdialog|helpbutton"
 msgid "_Help"
-msgstr ""
+msgstr "_Довідка"
 
 #. 4WCn4
 #: sc/uiconfig/scalc/ui/duplicaterecordsdlg.ui:52
 msgctxt "duplicaterecordsdialog|okbtn"
 msgid "_OK"
-msgstr ""
+msgstr "_ОК"
 
 #. Ys425
 #: sc/uiconfig/scalc/ui/duplicaterecordsdlg.ui:66
 msgctxt "duplicaterecordsdialog|cancelbtn"
 msgid "Ca_ncel"
-msgstr ""
+msgstr "Ві_дміна"
 
 #. oPmFC
 #: sc/uiconfig/scalc/ui/duplicaterecordsdlg.ui:98
 msgctxt "duplicaterecordsdialog|compare"
 msgid "Compare:"
-msgstr ""
+msgstr "Порівняти:"
 
 #. c8Hb9
 #: sc/uiconfig/scalc/ui/duplicaterecordsdlg.ui:112
 msgctxt "duplicaterecordsdialog|header"
 msgid "Hea_der:"
-msgstr ""
+msgstr "За_головок:"
 
 #. 9WA84
 #: sc/uiconfig/scalc/ui/duplicaterecordsdlg.ui:127
 msgctxt "duplicaterecordsdialog|action"
 msgid "Action:"
-msgstr ""
+msgstr "Дія:"
 
 #. GDCoN
 #: sc/uiconfig/scalc/ui/duplicaterecordsdlg.ui:161
 msgctxt "duplicaterecordsdialog|treeviewcolumn4"
 msgid "All"
-msgstr ""
+msgstr "Усі"
 
 #. RxyGA
 #: sc/uiconfig/scalc/ui/duplicaterecordsdlg.ui:177
 msgctxt "duplicaterecordsdialog|treeviewcolumn5"
 msgid "Row/Column"
-msgstr ""
+msgstr "Рядок/Стовпець"
 
 #. oeax5
 #: sc/uiconfig/scalc/ui/duplicaterecordsdlg.ui:200
 msgctxt "duplicaterecordsdialog|row"
 msgid "_Rows"
-msgstr ""
+msgstr "_Рядки"
 
 #. GcKSE
 #: sc/uiconfig/scalc/ui/duplicaterecordsdlg.ui:204
 msgctxt "duplicaterecordsdialog|row"
 msgid "Compare rows."
-msgstr ""
+msgstr "Порівняти рядки."
 
 #. rMjRt
 #: sc/uiconfig/scalc/ui/duplicaterecordsdlg.ui:217
 msgctxt "duplicaterecordsdialog|column"
 msgid "_Columns"
-msgstr ""
+msgstr "_Стовпці"
 
 #. ZFN6o
 #: sc/uiconfig/scalc/ui/duplicaterecordsdlg.ui:221
 msgctxt "duplicaterecordsdialog|column"
 msgid "Compare columns."
-msgstr ""
+msgstr "Порівняти стовпці."
 
 #. 3ttrH
 #: sc/uiconfig/scalc/ui/duplicaterecordsdlg.ui:245
 msgctxt "duplicaterecordsdialog|select"
 msgid "_Select"
-msgstr ""
+msgstr "Вибрати"
 
 #. eNBtW
 #: sc/uiconfig/scalc/ui/duplicaterecordsdlg.ui:249
 msgctxt "duplicaterecordsdialog|select"
 msgid "Select duplicate records."
-msgstr ""
+msgstr "Вибрати дублікати записів."
 
 #. hbNrq
 #: sc/uiconfig/scalc/ui/duplicaterecordsdlg.ui:262
 msgctxt "duplicaterecordsdialog|remove"
 msgid "R_emove"
-msgstr ""
+msgstr "Ви_лучити"
 
 #. Krvk8
 #: sc/uiconfig/scalc/ui/duplicaterecordsdlg.ui:266
 msgctxt "duplicaterecordsdialog|remove"
 msgid "Remove duplicate records."
-msgstr ""
+msgstr "Вилучити дублікати записів."
 
 #. kBFiG
 #: sc/uiconfig/scalc/ui/duplicaterecordsdlg.ui:290
 msgctxt "duplicaterecordsdialog|includesheaders"
 msgid "Select to exclude the row/column headers from duplicate comparison."
+msgstr "Виберіть, щоб виключити заголовки рядків/стовпців з порівняння дублікатів."
+
+#. DFZ8U
+#: sc/uiconfig/scalc/ui/duplicaterecordsdlg.ui:305
+msgctxt "duplicaterecordsdialog|compareby"
+msgid "Compare by:"
 msgstr ""
 
 #. C7EVS
 #: sc/uiconfig/scalc/ui/duplicaterecordsdlg.ui:315
 msgctxt "duplicaterecordsdialog|allcheckbtn"
 msgid "_All"
-msgstr ""
+msgstr "_Усе"
 
 #. pBHAC
 #: sc/uiconfig/scalc/ui/duplicaterecordsdlg.ui:319
 msgctxt "duplicaterecordsdialog|allcheckbtn"
 msgid "Select/unselect all records."
-msgstr ""
+msgstr "Вибрати/відмінити виділення всіх записів."
 
 #. PL8Bz
 #: sc/uiconfig/scalc/ui/erroralerttabpage.ui:15
@@ -24480,6 +24794,30 @@ msgctxt "formulacalculationoptions|comboSyntaxRef"
 msgid "Use formula syntax"
 msgstr "Використовувати синтаксис формул"
 
+#. nGnBz
+#: sc/uiconfig/scalc/ui/formulacalculationoptions.ui:139
+msgctxt "formulacalculationoptions|comboSyntaxRef"
+msgid "Calc A1"
+msgstr ""
+
+#. UvJqb
+#: sc/uiconfig/scalc/ui/formulacalculationoptions.ui:140
+msgctxt "formulacalculationoptions|comboSyntaxRef"
+msgid "Excel A1"
+msgstr ""
+
+#. XYSaM
+#: sc/uiconfig/scalc/ui/formulacalculationoptions.ui:141
+msgctxt "formulacalculationoptions|comboSyntaxRef"
+msgid "Excel R1C1"
+msgstr ""
+
+#. S7QFC
+#: sc/uiconfig/scalc/ui/formulacalculationoptions.ui:142
+msgctxt "formulacalculationoptions|comboSyntaxRef"
+msgid "Calc A1 | Excel A1"
+msgstr ""
+
 #. Gd4ne
 #: sc/uiconfig/scalc/ui/formulacalculationoptions.ui:155
 msgctxt "formulacalculationoptions|comboConversion"
@@ -24612,119 +24950,131 @@ msgctxt "functionpanel|category"
 msgid "Last Used"
 msgstr "Востаннє використано"
 
-#. uRXDm
+#. NYNE9
 #: sc/uiconfig/scalc/ui/functionpanel.ui:70
+msgctxt "functionpanel|category"
+msgid "Favourites"
+msgstr ""
+
+#. uRXDm
+#: sc/uiconfig/scalc/ui/functionpanel.ui:71
 msgctxt "functionpanel|category"
 msgid "All"
 msgstr "Усі"
 
 #. Fk97C
-#: sc/uiconfig/scalc/ui/functionpanel.ui:71
+#: sc/uiconfig/scalc/ui/functionpanel.ui:72
 msgctxt "functionpanel|category"
 msgid "Database"
 msgstr "База даних"
 
 #. hCefc
-#: sc/uiconfig/scalc/ui/functionpanel.ui:72
+#: sc/uiconfig/scalc/ui/functionpanel.ui:73
 msgctxt "functionpanel|category"
 msgid "Date&Time"
 msgstr "Дата і час"
 
 #. Cj6Vy
-#: sc/uiconfig/scalc/ui/functionpanel.ui:73
+#: sc/uiconfig/scalc/ui/functionpanel.ui:74
 msgctxt "functionpanel|category"
 msgid "Financial"
 msgstr "Фінансові"
 
 #. gS2PB
-#: sc/uiconfig/scalc/ui/functionpanel.ui:74
+#: sc/uiconfig/scalc/ui/functionpanel.ui:75
 msgctxt "functionpanel|category"
 msgid "Information"
 msgstr "Інформація"
 
 #. rMqtg
-#: sc/uiconfig/scalc/ui/functionpanel.ui:75
+#: sc/uiconfig/scalc/ui/functionpanel.ui:76
 msgctxt "functionpanel|category"
 msgid "Logical"
 msgstr "Логічне"
 
 #. 6cFkD
-#: sc/uiconfig/scalc/ui/functionpanel.ui:76
+#: sc/uiconfig/scalc/ui/functionpanel.ui:77
 msgctxt "functionpanel|category"
 msgid "Mathematical"
 msgstr "Математичне"
 
 #. RdQeE
-#: sc/uiconfig/scalc/ui/functionpanel.ui:77
+#: sc/uiconfig/scalc/ui/functionpanel.ui:78
 msgctxt "functionpanel|category"
 msgid "Array"
 msgstr "Масив"
 
 #. h4kRr
-#: sc/uiconfig/scalc/ui/functionpanel.ui:78
+#: sc/uiconfig/scalc/ui/functionpanel.ui:79
 msgctxt "functionpanel|category"
 msgid "Statistical"
 msgstr "Статистичне"
 
 #. 6XCsS
-#: sc/uiconfig/scalc/ui/functionpanel.ui:79
+#: sc/uiconfig/scalc/ui/functionpanel.ui:80
 msgctxt "functionpanel|category"
 msgid "Spreadsheet"
 msgstr "Електронна таблиця"
 
 #. DwfB5
-#: sc/uiconfig/scalc/ui/functionpanel.ui:80
+#: sc/uiconfig/scalc/ui/functionpanel.ui:81
 msgctxt "functionpanel|category"
 msgid "Text"
 msgstr "Текст"
 
 #. BCiyc
-#: sc/uiconfig/scalc/ui/functionpanel.ui:81
+#: sc/uiconfig/scalc/ui/functionpanel.ui:82
 msgctxt "functionpanel|category"
 msgid "Add-in"
 msgstr "Додаток"
 
 #. tDNFD
-#: sc/uiconfig/scalc/ui/functionpanel.ui:85
+#: sc/uiconfig/scalc/ui/functionpanel.ui:86
 msgctxt "functionpanel|extended_tip|category"
 msgid "Displays the available functions."
 msgstr "Показує доступні функції."
 
 #. V9ATp
-#: sc/uiconfig/scalc/ui/functionpanel.ui:133
+#: sc/uiconfig/scalc/ui/functionpanel.ui:134
 msgctxt "functionpanel|extended_tip|funclist"
 msgid "Displays the available functions."
 msgstr "Показує доступні функції."
 
 #. SFuAq
-#: sc/uiconfig/scalc/ui/functionpanel.ui:155
+#: sc/uiconfig/scalc/ui/functionpanel.ui:156
 msgctxt "functionpanel|search"
 msgid "Search all functions"
 msgstr "Шукати у всіх функціях"
 
 #. 4m78Y
-#: sc/uiconfig/scalc/ui/functionpanel.ui:159
+#: sc/uiconfig/scalc/ui/functionpanel.ui:160
 msgctxt "functionpanel|accessiblename|search"
 msgid "Search all functions"
 msgstr "Шукати у всіх функціях"
 
 #. zCfcN
-#: sc/uiconfig/scalc/ui/functionpanel.ui:171
+#: sc/uiconfig/scalc/ui/functionpanel.ui:172
 msgctxt "functionpanel|similaritysearch"
 msgid "Similar"
-msgstr ""
+msgstr "Схоже"
 
 #. 9DNe7
-#: sc/uiconfig/scalc/ui/functionpanel.ui:179
+#: sc/uiconfig/scalc/ui/functionpanel.ui:180
 msgctxt "functionpanel|extended_tip|similaritysearch"
 msgid "Search and Sort functions by similarity"
+msgstr "Функції пошуку та сортування за схожістю"
+
+#. esYCC
+#: sc/uiconfig/scalc/ui/functionpanel.ui:225
+msgctxt "functionpanel|help"
+msgid "Help"
 msgstr ""
 
 #. cStgX
-#: sc/uiconfig/scalc/ui/functionpanel.ui:229
+#: sc/uiconfig/scalc/ui/functionpanel.ui:230
 msgctxt "functionpanel|help|tooltip_text"
 msgid "Go to Function's Help Page"
-msgstr ""
+msgstr "Перейти на сторінку довідки функції"
 
 #. dmA3u
 #: sc/uiconfig/scalc/ui/goalseekdlg.ui:8
@@ -27778,31 +28128,31 @@ msgstr "Видалити"
 #: sc/uiconfig/scalc/ui/onlyactivesheetsaveddialog.ui:23
 msgctxt "onlyactivesheetsaveddialog|checkbox"
 msgid "_Show this message again"
-msgstr ""
+msgstr "_Показати це повідомлення знову"
 
 #. EhGBt
 #: sc/uiconfig/scalc/ui/onlyactivesheetsaveddialog.ui:40
 msgctxt "onlyactivesheetsaveddialog|button"
 msgid "_OK"
-msgstr ""
+msgstr "_ОК"
 
 #. QCjPW
 #: sc/uiconfig/scalc/ui/onlyactivesheetsaveddialog.ui:70
 msgctxt "onlyactivesheetsaveddialog|title"
 msgid "Warning"
-msgstr ""
+msgstr "Попередження"
 
 #. uGFGE
 #: sc/uiconfig/scalc/ui/onlyactivesheetsaveddialog.ui:101
 msgctxt "onlyactivesheetsaveddialog|text"
 msgid "Only the active sheet was saved."
-msgstr ""
+msgstr "Збережено лише активний аркуш."
 
 #. VDCoJ
 #: sc/uiconfig/scalc/ui/onlyactivesheetsaveddialog.ui:123
 msgctxt "onlyactivesheetsaveddialog|image"
 msgid "Warning image"
-msgstr ""
+msgstr "Попереджувальне зображення"
 
 #. T2p5k
 #: sc/uiconfig/scalc/ui/optcalculatepage.ui:42
@@ -27958,55 +28308,55 @@ msgstr "Циклічні посилання"
 #: sc/uiconfig/scalc/ui/optcalculatepage.ui:539
 msgctxt "optcalculatepage|datestd"
 msgid "1899-12-30 (defa_ult)"
-msgstr ""
+msgstr "1899-12-30 (ти_пово)"
 
 #. BJ4J4
 #: sc/uiconfig/scalc/ui/optcalculatepage.ui:543
 msgctxt "optcalculatepage|datestd|tooltip_text"
 msgid "Value 0 corresponds to 1899-12-30"
-msgstr ""
+msgstr "Значення 0 відповідає 1899-12-30"
 
 #. BhENG
 #: sc/uiconfig/scalc/ui/optcalculatepage.ui:549
 msgctxt "extended_tip|datestd"
 msgid "Sets 1899-12-30 as day zero."
-msgstr ""
+msgstr "Встановлює 1899-12-30 за нульовий день."
 
 #. hMsbb
 #: sc/uiconfig/scalc/ui/optcalculatepage.ui:560
 msgctxt "optcalculatepage|datesc10"
 msgid "1900-01-01 (Star_Calc 1.0)"
-msgstr ""
+msgstr "1900-01-01 (Star_Calc 1.0)"
 
 #. 5pd9U
 #: sc/uiconfig/scalc/ui/optcalculatepage.ui:564
 msgctxt "optcalculatepage|datesc10|tooltip_text"
 msgid "Value 0 corresponds to 1900-01-01"
-msgstr ""
+msgstr "Значення 0 відповідає 1900-01-01"
 
 #. DL4rY
 #: sc/uiconfig/scalc/ui/optcalculatepage.ui:570
 msgctxt "extended_tip|datesc10"
 msgid "Sets 1900-01-01 as day zero. Use this setting for StarCalc 1.0 spreadsheets containing date entries."
-msgstr ""
+msgstr "Встановлює 1900-01-01 за нульовий день. Використовуйте цей параметр для електронних таблиць StarCalc 1.0, що містять записи з датами."
 
 #. t5Cz4
 #: sc/uiconfig/scalc/ui/optcalculatepage.ui:581
 msgctxt "optcalculatepage|date1904"
 msgid "_1904-01-01"
-msgstr ""
+msgstr "_1904-01-01"
 
 #. BPRsN
 #: sc/uiconfig/scalc/ui/optcalculatepage.ui:585
 msgctxt "optcalculatepage|date1904|tooltip_text"
 msgid "0 corresponds to 1904-01-01"
-msgstr ""
+msgstr "0 відповідає 1904-01-01"
 
 #. aEwAF
 #: sc/uiconfig/scalc/ui/optcalculatepage.ui:591
 msgctxt "extended_tip|date1904"
 msgid "Sets 1904-01-01 as day zero. Use this setting for spreadsheets that are imported in a foreign format."
-msgstr ""
+msgstr "Встановлює 1904-01-01 за нульовий день. Використовуйте цей параметр для електронних таблиць, імпортованих в інших форматах."
 
 #. ggkEL
 #: sc/uiconfig/scalc/ui/optcalculatepage.ui:625
@@ -29779,7 +30129,7 @@ msgstr "Пі_дтвердити:"
 #: sc/uiconfig/scalc/ui/protectsheetdlg.ui:195
 msgctxt "protectsheetdlg|extended_tip|passwordbar"
 msgid "Measure of password strength"
-msgstr ""
+msgstr "Оцінка надійності пароля"
 
 #. 7ccwU
 #: sc/uiconfig/scalc/ui/protectsheetdlg.ui:233
@@ -29797,13 +30147,13 @@ msgstr "Вибирати захищені комірки"
 #: sc/uiconfig/scalc/ui/protectsheetdlg.ui:323
 msgctxt "protectsheetdlg|delete-columns"
 msgid "Delete columns with unprotected cells"
-msgstr ""
+msgstr "Видалити стовпці з незахищеними комірками"
 
 #. voVBX
 #: sc/uiconfig/scalc/ui/protectsheetdlg.ui:335
 msgctxt "protectsheetdlg|delete-rows"
 msgid "Delete rows with unprotected cells"
-msgstr ""
+msgstr "Видалити рядки з незахищеними комірками"
 
 #. cVdms
 #: sc/uiconfig/scalc/ui/protectsheetdlg.ui:347
@@ -29827,13 +30177,13 @@ msgstr "Вибирати незахищені комірки"
 #: sc/uiconfig/scalc/ui/protectsheetdlg.ui:383
 msgctxt "protectsheetdlg|delete-columns"
 msgid "Use AutoFilter"
-msgstr ""
+msgstr "Використати АвтоФільтр"
 
 #. 7iUEa
 #: sc/uiconfig/scalc/ui/protectsheetdlg.ui:395
 msgctxt "protectsheetdlg|delete-columns"
 msgid "Use Pivot Table and Pivot Chart"
-msgstr ""
+msgstr "Використати зведену таблицю та зведену діаграму"
 
 #. MTnMc
 #: sc/uiconfig/scalc/ui/protectsheetdlg.ui:433
@@ -30733,13 +31083,13 @@ msgstr "Оновлювати посилання при упорядкуванн�
 #: sc/uiconfig/scalc/ui/scgeneralpage.ui:592
 msgctxt "scgeneralpage|warnactivesheet_cb"
 msgid "Warn when saving only the active sheet"
-msgstr ""
+msgstr "Попереджати при збереженні тільки активного аркуша"
 
 #. BsySV
 #: sc/uiconfig/scalc/ui/scgeneralpage.ui:600
 msgctxt "extended_tip|legacy_cell_selection_cb"
 msgid "Specifies whether a warning box informs when saving was applied to only the active sheet."
-msgstr ""
+msgstr "Тут вказують, чи буде показано попередження, якщо збереження було застосовано лише до активного аркуша."
 
 #. M9G8o
 #: sc/uiconfig/scalc/ui/scgeneralpage.ui:620
@@ -31555,7 +31905,7 @@ msgstr "Зазначте межі вибраних комірок."
 #: sc/uiconfig/scalc/ui/sidebarcellappearance.ui:76
 msgctxt "sidebarcellappearance|bordertype|accessible_name"
 msgid "Borders"
-msgstr ""
+msgstr "Обрамлення"
 
 #. D2TVi
 #: sc/uiconfig/scalc/ui/sidebarcellappearance.ui:96
@@ -32779,13 +33129,13 @@ msgstr "Власна"
 #: sc/uiconfig/scalc/ui/sparklinedialog.ui:857
 msgctxt "sparklinedialog|extended_tip|cbMaxAxisType"
 msgid "Individual: sets automatically the maximum value for each sparkline based on the sparkline data range values. Group: sets the maximum value based on the lower and higher values found in the group of sparklines. Custom: enter the maximum value for the sparkline group."
-msgstr ""
+msgstr "Індивідуальний: автоматично встановлює максимальне значення для кожної лінії тренду на основі значень діапазону даних лінії тренду. Груповий: встановлює максимальне значення на основі найнижчого та найвищого значень, знайдених у групі ліній тренду. Власний: введіть максимальне значення для групи ліній тренду."
 
 #. LwjfH
 #: sc/uiconfig/scalc/ui/sparklinedialog.ui:876
 msgctxt "sparklinedialog|extended_tip|seMaxAxis"
 msgid "Spin or enter number to set the maximum value for the Y axis."
-msgstr ""
+msgstr "Прокрутіть або введіть число, щоб встановити максимальне значення для осі Y."
 
 #. kiBE8
 #: sc/uiconfig/scalc/ui/sparklinedialog.ui:890
@@ -32809,7 +33159,7 @@ msgstr "Показати вісь X"
 #: sc/uiconfig/scalc/ui/sparklinedialog.ui:926
 msgctxt "sparklinedialog|extended_tip|cbDisplayXAxix"
 msgid "Check to show the X axis for sparklines."
-msgstr ""
+msgstr "Відмітьте, щоб показати вісь X для ліній тренду."
 
 #. uAAF6
 #: sc/uiconfig/scalc/ui/sparklinedialog.ui:942
@@ -33493,13 +33843,13 @@ msgstr "Упорядкування ділянки, вибраної в полі 
 #: sc/uiconfig/scalc/ui/subtotaloptionspage.ui:90
 msgctxt "subtotaloptionspage|sort"
 msgid "_Summary below data"
-msgstr ""
+msgstr "_Зведені дані нижче"
 
 #. oiyMs
 #: sc/uiconfig/scalc/ui/subtotaloptionspage.ui:99
 msgctxt "subtotaloptionspage|extended_tip|summarybelow"
 msgid "Decide if the subtotals below or above the data. Reposition subtotals when you change the summary below data options."
-msgstr ""
+msgstr "Вирішіть, чи будуть проміжні підсумки нижче або вище даних. Перемістіть проміжні підсумки, коли ви змінюєте параметри підсумків під даними."
 
 #. 6jJEr
 #: sc/uiconfig/scalc/ui/subtotaloptionspage.ui:114
@@ -33667,13 +34017,13 @@ msgstr "Виберіть розділювач для даних."
 #: sc/uiconfig/scalc/ui/textimportcsv.ui:304
 msgctxt "textimportcsv|todetectseparator"
 msgid "Detected"
-msgstr ""
+msgstr "Виявлено"
 
 #. Aw5aq
 #: sc/uiconfig/scalc/ui/textimportcsv.ui:313
 msgctxt "textimportcsv|extended_tip|todetectseparator"
 msgid "Use detected separator."
-msgstr ""
+msgstr "Використовуйте виявлений розділювач."
 
 #. 2BKqB
 #: sc/uiconfig/scalc/ui/textimportcsv.ui:341
@@ -34021,7 +34371,7 @@ msgstr "В_казівник коментаря"
 #: sc/uiconfig/scalc/ui/tpviewpage.ui:77
 msgctxt "extended_tip|annot"
 msgid "Specifies that a small triangle in the top right corner of the cell indicates that a comment exists."
-msgstr ""
+msgstr "Цим задають, що маленький трикутник у верхньому правому куті комірки вказує на наявність коментаря."
 
 #. EA5Q9
 #: sc/uiconfig/scalc/ui/tpviewpage.ui:88
@@ -34033,7 +34383,7 @@ msgstr "Індик_атор формули та підказка"
 #: sc/uiconfig/scalc/ui/tpviewpage.ui:96
 msgctxt "extended_tip|formulamark"
 msgid "Draws a blue triangle in the bottom-left corner of a cell that contains a formula. When pointing over the blue triangle, the formula is shown in a tool tip even if a different cell is selected."
-msgstr ""
+msgstr "Малює синій трикутник у лівому нижньому куті клітинки, що містить формулу. При наведенні вказівника на синій трикутник формула відображається у підказці, навіть якщо вибрано іншу клітинку."
 
 #. G6GjE
 #: sc/uiconfig/scalc/ui/tpviewpage.ui:107
@@ -34087,25 +34437,25 @@ msgstr "Позначте галочкою поле «Виділення коль
 #: sc/uiconfig/scalc/ui/tpviewpage.ui:287
 msgctxt "tpviewpage|value"
 msgid "Highlight cell in edit mode"
-msgstr ""
+msgstr "Виділити комірку в режимі редагування"
 
 #. owsEV
 #: sc/uiconfig/scalc/ui/tpviewpage.ui:295
 msgctxt "extended_tip|value"
 msgid "Mark this box to show highlighted background when the cell is in edit mode."
-msgstr ""
+msgstr "Позначте тут, щоб показувати підсвічене тло, коли комірка перебуває в режимі редагування."
 
 #. czZNn
 #: sc/uiconfig/scalc/ui/tpviewpage.ui:319
 msgctxt "tpviewpage|noteauthor"
 msgid "Comment authorship"
-msgstr ""
+msgstr "Авторство коментаря"
 
 #. ereWP
 #: sc/uiconfig/scalc/ui/tpviewpage.ui:326
 msgctxt "extended_tip|cbNoteAuthor"
 msgid "Specifies whether the author of the comment is displayed above the comment."
-msgstr ""
+msgstr "Вказує, чи буде показано автора над коментарем."
 
 #. qtccR
 #: sc/uiconfig/scalc/ui/tpviewpage.ui:354
@@ -34183,7 +34533,7 @@ msgstr "Підсумок у по_шуку"
 #: sc/uiconfig/scalc/ui/tpviewpage.ui:485
 msgctxt "extended_tip|cbSummary"
 msgid "If this box is checked, a Search Results window appears when you choose Find All in the Find Box, which summarizes the search results."
-msgstr ""
+msgstr "Якщо тут стоїть позначка, при виборі пункту \"Знайти все\" у полі \"Знайти\" з'являється вікно «Результати пошуку», в якому підсумовуються результати пошуку."
 
 #. Ws4Ev
 #: sc/uiconfig/scalc/ui/tpviewpage.ui:578
@@ -34243,7 +34593,7 @@ msgstr "_Лінії сітки:"
 #: sc/uiconfig/scalc/ui/tpviewpage.ui:718
 msgctxt "extended_tip|_Grid lines:"
 msgid "Specifies when grid lines will be displayed. "
-msgstr ""
+msgstr "Цим вказують, коли відображатимуться лінії сітки. "
 
 #. BUibB
 #: sc/uiconfig/scalc/ui/tpviewpage.ui:732
@@ -34309,7 +34659,7 @@ msgstr "Показувати типовий системний вказівни�
 #: sc/uiconfig/scalc/ui/tpviewpage.ui:795
 msgctxt "extended_tip|rbSystemCursor"
 msgid "Shows the pointer as the system default, typically as an arrow."
-msgstr ""
+msgstr "Показує типовий вказівник, зазвичай у вигляді стрілки."
 
 #. Cb4AM
 #: sc/uiconfig/scalc/ui/tpviewpage.ui:862
@@ -34327,7 +34677,7 @@ msgstr "Об'єкти/Зображення:"
 #: sc/uiconfig/scalc/ui/tpviewpage.ui:899
 msgctxt "extended_tip|Ob_jects/Images:"
 msgid "Defines if objects and graphics are shown or hidden."
-msgstr ""
+msgstr "Визначає, відображаються чи приховані об’єкти та графіка."
 
 #. vLBFR
 #: sc/uiconfig/scalc/ui/tpviewpage.ui:912
@@ -34339,7 +34689,7 @@ msgstr "Ді_аграми:"
 #: sc/uiconfig/scalc/ui/tpviewpage.ui:918
 msgctxt "extended_tip|Char_ts:"
 msgid "Defines if charts in your document are shown or hidden."
-msgstr ""
+msgstr "Визначає, відображаються чи приховані діаграми в документі."
 
 #. q544D
 #: sc/uiconfig/scalc/ui/tpviewpage.ui:931
@@ -34351,7 +34701,7 @@ msgstr "_Графічні об'єкти:"
 #: sc/uiconfig/scalc/ui/tpviewpage.ui:937
 msgctxt "extended_tip|_Drawing objects:"
 msgid "Defines if drawing objects in your document are shown or hidden."
-msgstr ""
+msgstr "Визначає, відображаються чи приховані малюнки в документі."
 
 #. mpELg
 #: sc/uiconfig/scalc/ui/tpviewpage.ui:951
@@ -34513,7 +34863,7 @@ msgstr "Усі значення"
 #: sc/uiconfig/scalc/ui/validationcriteriapage.ui:48
 msgctxt "validationcriteriapage|liststore1"
 msgid "Integer"
-msgstr ""
+msgstr "Ціле"
 
 #. hCaRD
 #: sc/uiconfig/scalc/ui/validationcriteriapage.ui:49
@@ -34694,7 +35044,7 @@ msgstr "Введіть найбільше значення параметра п
 #: sc/uiconfig/scalc/ui/validationcriteriapage.ui:300
 msgctxt "validationcriteriapage|allowempty"
 msgid "Case _sensitive"
-msgstr ""
+msgstr "Враховувати _регістр"
 
 #. 3HjmP
 #: sc/uiconfig/scalc/ui/validationcriteriapage.ui:334

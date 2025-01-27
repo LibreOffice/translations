@@ -3,9 +3,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2024-12-19 11:07+0100\n"
-"PO-Revision-Date: 2025-01-07 13:30+0000\n"
-"Last-Translator: Mireia Goula Iglesias <mireiagoula@gmail.com>\n"
+"POT-Creation-Date: 2025-01-27 13:40+0100\n"
+"PO-Revision-Date: 2025-01-27 07:13+0000\n"
+"Last-Translator: Adolfo Jayme Barrientos <fitojb@ubuntu.com>\n"
 "Language-Team: Catalan <https://translations.documentfoundation.org/projects/libo_ui-master/scmessages/ca/>\n"
 "Language: ca\n"
 "MIME-Version: 1.0\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Accelerator-Marker: ~\n"
-"X-Generator: Weblate 5.9.1\n"
+"X-Generator: LibreOffice\n"
 "X-POOTLE-MTIME: 1562916192.000000\n"
 
 #. kBovX
@@ -3468,7 +3468,7 @@ msgstr "Sensibilitat"
 #: sc/inc/globstr.hrc:579
 msgctxt "STR_SENSITIVITY_TITLE"
 msgid "Sensitivity Report"
-msgstr ""
+msgstr "Informe de sensibilitat"
 
 #. HjFPQ
 #: sc/inc/globstr.hrc:580
@@ -3498,7 +3498,7 @@ msgstr "Cel·la"
 #: sc/inc/globstr.hrc:584
 msgctxt "STR_SENSITIVITY_FINALVALUE"
 msgid "Final Value"
-msgstr ""
+msgstr "Valor final"
 
 #. 7nDM2
 #: sc/inc/globstr.hrc:585
@@ -14421,6 +14421,11 @@ msgid ""
 "2 - Wildcard match.\n"
 "3 - Regular expression match."
 msgstr ""
+"0 - Coincidència exacta. Retornarà #N/A si no hi ha coincidència. (per defecte).\n"
+"-1 - Coincidència exacta o el següent element més petit.\n"
+"1 - Coincidència exacta o el següent element més gran.\n"
+"2 - Coincidència comodí.\n"
+"3 - Coincidència d'expressió regular."
 
 #. EvSiP
 #: sc/inc/scfuncs.hrc:3394
@@ -14437,6 +14442,10 @@ msgid ""
 "2 - Binary search values sorted in ascending order.\n"
 "-2 - Binary search values sorted in descending order."
 msgstr ""
+"1 - Cerca a partir del primer valor (per defecte).\n"
+"-1 - Cerca a partir de l'últim valor (inverteix).\n"
+"2 - Valors de cerca binaris ordenats en ordre ascendent.\n"
+"-2 - Valors de cerca binaris ordenats en ordre descendent."
 
 #. KZapz
 #: sc/inc/scfuncs.hrc:3401
@@ -14652,6 +14661,11 @@ msgid ""
 "2 - Wildcard match.\n"
 "3 - Regular expression match."
 msgstr ""
+"0 - Coincidència exacta. Retornarà #N/A si no hi ha coincidència. (per defecte).\n"
+"-1 - Coincidència exacta o l'element següent més petit.\n"
+"1 - Coincidència exacta o l'element següent més gran.\n"
+"2 - Coincidència comodí.\n"
+"3 - Coincidència d'expressió regular."
 
 #. UtoXD
 #: sc/inc/scfuncs.hrc:3456
@@ -14668,6 +14682,10 @@ msgid ""
 "2 - Binary search values sorted in ascending order.\n"
 "-2 - Binary search values sorted in descending order."
 msgstr ""
+"1 - Cerca des del primer valor (per defecte).\n"
+"-1 - Cerca des de l'últim valor (inverteix).\n"
+"2 - Valors binaris de cerca ordenats en ordre ascendent.\n"
+"-2 - Valors vinaris de cerca ordenats en ordre descendent."
 
 #. XJ4FS
 #: sc/inc/scfuncs.hrc:3463
@@ -16984,13 +17002,13 @@ msgstr "Resultat si està buit"
 #: sc/inc/scfuncs.hrc:4195
 msgctxt "SC_OPCODE_FILTER"
 msgid "The value to return if all values in the included array are empty (filter returns nothing)."
-msgstr ""
+msgstr "El valor a retornar si tots els valors de la matriu inclosa estan buits (el filtre no retorna res)."
 
 #. gSZGa
 #: sc/inc/scfuncs.hrc:4201
 msgctxt "SC_OPCODE_SORT"
 msgid "Sorts the contents of a range or array."
-msgstr ""
+msgstr "Ordena el contingut d'un interval o matriu."
 
 #. 5dG8m
 #: sc/inc/scfuncs.hrc:4202
@@ -17002,19 +17020,19 @@ msgstr "Interval"
 #: sc/inc/scfuncs.hrc:4203
 msgctxt "SC_OPCODE_SORT"
 msgid "The range, or array to sort."
-msgstr ""
+msgstr "L'interval o matriu a ordenar."
 
 #. 3vzBe
 #: sc/inc/scfuncs.hrc:4204
 msgctxt "SC_OPCODE_SORT"
 msgid "Sort index"
-msgstr ""
+msgstr "Índex d'ordenació"
 
 #. SWhii
 #: sc/inc/scfuncs.hrc:4205
 msgctxt "SC_OPCODE_SORT"
 msgid "A number indicating the row or column to sort by."
-msgstr ""
+msgstr "Un número que indica per quina fila o columna s'ha d'ordenar."
 
 #. uFhZs
 #: sc/inc/scfuncs.hrc:4206
@@ -17026,7 +17044,7 @@ msgstr "Criteri d'ordenació"
 #: sc/inc/scfuncs.hrc:4207
 msgctxt "SC_OPCODE_SORT"
 msgid "A number indicating the desired sort order; 1 for ascending order (default), -1 for descending order."
-msgstr ""
+msgstr "Un número que indica l'ordre d'ordenació desitjat; 1 per ordre ascendent (per defecte), -1 per ordre descendent."
 
 #. fnsqA
 #: sc/inc/scfuncs.hrc:4208
@@ -17038,25 +17056,25 @@ msgstr "Per columna"
 #: sc/inc/scfuncs.hrc:4209
 msgctxt "SC_OPCODE_SORT"
 msgid "A logical value indicating the desired sort direction; FALSE to sort by row (default), TRUE to sort by column."
-msgstr ""
+msgstr "Un valor lògic que indica la direcció d'ordenació desitjada; FALS per a ordenar per files (per defecte), CERT per a ordenar per columnes."
 
 #. 5AEwL
 #: sc/inc/scfuncs.hrc:4215
 msgctxt "SC_OPCODE_SORTBY"
 msgid "Sorts the contents of a range or array based on the values in a corresponding range or array."
-msgstr ""
+msgstr "Ordena el contingut d'un interval o matriu basant-se en els valors d'un interval o matriu corresponents."
 
 #. g4Mpg
 #: sc/inc/scfuncs.hrc:4216
 msgctxt "SC_OPCODE_SORTBY"
 msgid "Sort range"
-msgstr ""
+msgstr "Interval d'ordenació"
 
 #. YsFWA
 #: sc/inc/scfuncs.hrc:4217
 msgctxt "SC_OPCODE_SORTBY"
 msgid "The array or range to sort."
-msgstr ""
+msgstr "La matriu o interval a ordenar."
 
 #. hkF48
 #: sc/inc/scfuncs.hrc:4218
@@ -17068,7 +17086,7 @@ msgstr "Ordena per interval "
 #: sc/inc/scfuncs.hrc:4219
 msgctxt "SC_OPCODE_SORTBY"
 msgid "Range 1, range 2,... are the arrays or ranges to sort on."
-msgstr ""
+msgstr "Interval 1, interval 2... són els intervals o matrius a ordenar."
 
 #. jUFcA
 #: sc/inc/scfuncs.hrc:4220
@@ -17080,13 +17098,13 @@ msgstr "Criteri d'ordenació "
 #: sc/inc/scfuncs.hrc:4221
 msgctxt "SC_OPCODE_SORTBY"
 msgid "Order 1, order 2,... are the orders to use for sorting. 1 for ascending, -1 for descending. Default is ascending."
-msgstr ""
+msgstr "Ordre 1, ordre 2... són els ordres a utilitzar per a ordenar. 1 per a ascendent, 1- per a descendent. Per defecte, és ascendent."
 
 #. yvUDG
 #: sc/inc/scfuncs.hrc:4227
 msgctxt "SC_OPCODE_MAT_SEQUENCE"
 msgid "Generates a list of sequential numbers in an array, such as 1, 2, 3, 4."
-msgstr ""
+msgstr "Genera una llista de números seqüencials en una matriu, com ara 1, 2, 3, 4."
 
 #. ZavA8
 #: sc/inc/scfuncs.hrc:4228
@@ -17122,7 +17140,7 @@ msgstr "Inici"
 #: sc/inc/scfuncs.hrc:4233
 msgctxt "SC_OPCODE_MAT_SEQUENCE"
 msgid "The first number in the sequence."
-msgstr ""
+msgstr "El primer número de la seqüència."
 
 #. L3NNF
 #: sc/inc/scfuncs.hrc:4234
@@ -17134,13 +17152,13 @@ msgstr "Pas"
 #: sc/inc/scfuncs.hrc:4235
 msgctxt "SC_OPCODE_MAT_SEQUENCE"
 msgid "The amount to increment each subsequent value in the array."
-msgstr ""
+msgstr "En una matriu, la quantitat a incrementar cada valor següent."
 
 #. 8HzKM
 #: sc/inc/scfuncs.hrc:4241
 msgctxt "SC_OPCODE_RANDARRAY"
 msgid "Generates an array of random numbers between two limit values."
-msgstr ""
+msgstr "Genera una matriu de nombres aleatoris entre dos valors límit."
 
 #. jksQe
 #: sc/inc/scfuncs.hrc:4242
@@ -17176,7 +17194,7 @@ msgstr "Mínim"
 #: sc/inc/scfuncs.hrc:4247
 msgctxt "SC_OPCODE_RANDARRAY"
 msgid "The lower limit of the generated numbers."
-msgstr ""
+msgstr "El límit inferior dels números generats."
 
 #. DGi8h
 #: sc/inc/scfuncs.hrc:4248
@@ -17188,7 +17206,7 @@ msgstr "Màxim"
 #: sc/inc/scfuncs.hrc:4249
 msgctxt "SC_OPCODE_RANDARRAY"
 msgid "The upper limit of the generated numbers."
-msgstr ""
+msgstr "El límit superior dels números generats."
 
 #. WBWq3
 #: sc/inc/scfuncs.hrc:4250
@@ -17202,88 +17220,394 @@ msgctxt "SC_OPCODE_RANDARRAY"
 msgid "Return integer (TRUE) or decimal (FALSE) values."
 msgstr "Retorna valors enters (CERT) o decimals (FALS)."
 
-#. NJR3E
+#. 4uTLx
 #: sc/inc/scfuncs.hrc:4257
-msgctxt "SC_OPCODE_UNIQUE"
-msgid "Returns a list of unique values from a range or array."
+msgctxt "SC_OPCODE_DROP"
+msgid "Excludes a specified number of contiguous rows or columns from the start or end of an array."
 msgstr ""
 
-#. NepxE
+#. W6FYc
 #: sc/inc/scfuncs.hrc:4258
+msgctxt "SC_OPCODE_DROP"
+msgid "Array"
+msgstr ""
+
+#. zEu4G
+#: sc/inc/scfuncs.hrc:4259
+msgctxt "SC_OPCODE_DROP"
+msgid "The array from which to drop rows or columns."
+msgstr ""
+
+#. BFPt4
+#: sc/inc/scfuncs.hrc:4260
+msgctxt "SC_OPCODE_DROP"
+msgid "Rows"
+msgstr ""
+
+#. yyjnc
+#: sc/inc/scfuncs.hrc:4261
+msgctxt "SC_OPCODE_DROP"
+msgid "The number of rows to drop. A negative value drops from the end of the array."
+msgstr ""
+
+#. GQ7cE
+#: sc/inc/scfuncs.hrc:4262
+msgctxt "SC_OPCODE_DROP"
+msgid "Column"
+msgstr ""
+
+#. cAxPB
+#: sc/inc/scfuncs.hrc:4263
+msgctxt "SC_OPCODE_DROP"
+msgid "The number of columns to drop. A negative value drops from the end of the array."
+msgstr ""
+
+#. cXvVY
+#: sc/inc/scfuncs.hrc:4269
+msgctxt "SC_OPCODE_EXPAND"
+msgid "Expands or pads an array to specified row and column dimensions."
+msgstr ""
+
+#. kuERH
+#: sc/inc/scfuncs.hrc:4270
+msgctxt "SC_OPCODE_EXPAND"
+msgid "Array"
+msgstr ""
+
+#. E9YDC
+#: sc/inc/scfuncs.hrc:4271
+msgctxt "SC_OPCODE_EXPAND"
+msgid "The array to expand."
+msgstr ""
+
+#. EaNgG
+#: sc/inc/scfuncs.hrc:4272
+msgctxt "SC_OPCODE_EXPAND"
+msgid "Rows"
+msgstr ""
+
+#. QzQiB
+#: sc/inc/scfuncs.hrc:4273
+msgctxt "SC_OPCODE_EXPAND"
+msgid "The number of rows in the expanded array. If missing, rows will not be expanded."
+msgstr ""
+
+#. jLBEp
+#: sc/inc/scfuncs.hrc:4274
+msgctxt "SC_OPCODE_EXPAND"
+msgid "Column"
+msgstr ""
+
+#. EVAXE
+#: sc/inc/scfuncs.hrc:4275
+msgctxt "SC_OPCODE_EXPAND"
+msgid "The number of columns in the expanded array. If missing, columns will not be expanded."
+msgstr ""
+
+#. QPyBK
+#: sc/inc/scfuncs.hrc:4276
+msgctxt "SC_OPCODE_EXPAND"
+msgid "Pad with"
+msgstr ""
+
+#. kHatA
+#: sc/inc/scfuncs.hrc:4277
+msgctxt "SC_OPCODE_EXPAND"
+msgid "The value with which to pad. The default is #N/A."
+msgstr ""
+
+#. JnsYT
+#: sc/inc/scfuncs.hrc:4283
+msgctxt "SC_OPCODE_TAKE"
+msgid "Returns a specified number of contiguous rows or columns from the start or end of an array."
+msgstr ""
+
+#. dFLFb
+#: sc/inc/scfuncs.hrc:4284
+msgctxt "SC_OPCODE_TAKE"
+msgid "Array"
+msgstr ""
+
+#. ycFef
+#: sc/inc/scfuncs.hrc:4285
+msgctxt "SC_OPCODE_TAKE"
+msgid "The array from which to take rows or columns."
+msgstr ""
+
+#. DzBCL
+#: sc/inc/scfuncs.hrc:4286
+msgctxt "SC_OPCODE_TAKE"
+msgid "Rows"
+msgstr ""
+
+#. KBPBn
+#: sc/inc/scfuncs.hrc:4287
+msgctxt "SC_OPCODE_TAKE"
+msgid "The number of rows to take. A negative value takes from the end of the array."
+msgstr ""
+
+#. eRGvR
+#: sc/inc/scfuncs.hrc:4288
+msgctxt "SC_OPCODE_TAKE"
+msgid "Column"
+msgstr ""
+
+#. ZexcG
+#: sc/inc/scfuncs.hrc:4289
+msgctxt "SC_OPCODE_TAKE"
+msgid "The number of columns to take. A negative value takes from the end of the array."
+msgstr ""
+
+#. 4dkE2
+#: sc/inc/scfuncs.hrc:4295
+msgctxt "SC_OPCODE_TOCOL"
+msgid "transforms an array into a single column."
+msgstr ""
+
+#. UAzNC
+#: sc/inc/scfuncs.hrc:4296
+msgctxt "SC_OPCODE_TOCOL"
+msgid "Array"
+msgstr ""
+
+#. SFGHg
+#: sc/inc/scfuncs.hrc:4297
+msgctxt "SC_OPCODE_TOCOL"
+msgid "The range or array to return as a column."
+msgstr ""
+
+#. uACXu
+#: sc/inc/scfuncs.hrc:4298
+msgctxt "SC_OPCODE_TOCOL"
+msgid "Ignore"
+msgstr ""
+
+#. UaqvP
+#: sc/inc/scfuncs.hrc:4299
+msgctxt "SC_OPCODE_TOCOL"
+msgid "Whether to ignore certain types of values. 0 or omitted - keep all values (default). 1 - ignore blanks. 2 - ignore errors. 3 - ignore blanks and errors."
+msgstr ""
+
+#. qNLAi
+#: sc/inc/scfuncs.hrc:4300
+msgctxt "SC_OPCODE_TOCOL"
+msgid "Scan by column"
+msgstr ""
+
+#. bcArN
+#: sc/inc/scfuncs.hrc:4301
+msgctxt "SC_OPCODE_TOCOL"
+msgid "Scan the array by column. FALSE or omitted (default) - the array is scanned by row. TRUE - the array is scanned by column."
+msgstr ""
+
+#. PGyxj
+#: sc/inc/scfuncs.hrc:4307
+msgctxt "SC_OPCODE_TOROW"
+msgid "transforms an array into a single row."
+msgstr ""
+
+#. W9bWe
+#: sc/inc/scfuncs.hrc:4308
+msgctxt "SC_OPCODE_TOROW"
+msgid "Array"
+msgstr ""
+
+#. XxE93
+#: sc/inc/scfuncs.hrc:4309
+msgctxt "SC_OPCODE_TOROW"
+msgid "The range or array to return as a row."
+msgstr ""
+
+#. AqqBC
+#: sc/inc/scfuncs.hrc:4310
+msgctxt "SC_OPCODE_TOROW"
+msgid "Ignore"
+msgstr ""
+
+#. CURrx
+#: sc/inc/scfuncs.hrc:4311
+msgctxt "SC_OPCODE_TOROW"
+msgid "Whether to ignore certain types of values. 0 or omitted - keep all values (default). 1 - ignore blanks. 2 - ignore errors. 3 - ignore blanks and errors."
+msgstr ""
+
+#. E4XDf
+#: sc/inc/scfuncs.hrc:4312
+msgctxt "SC_OPCODE_TOROW"
+msgid "Scan by column"
+msgstr ""
+
+#. 5bZRy
+#: sc/inc/scfuncs.hrc:4313
+msgctxt "SC_OPCODE_TOROW"
+msgid "Scan the array by column. FALSE or omitted (default) - the array is scanned by row. TRUE - the array is scanned by column."
+msgstr ""
+
+#. NJR3E
+#: sc/inc/scfuncs.hrc:4319
+msgctxt "SC_OPCODE_UNIQUE"
+msgid "Returns a list of unique values from a range or array."
+msgstr "Retorna una llista de valors únics a partir d'un interval o matriu."
+
+#. NepxE
+#: sc/inc/scfuncs.hrc:4320
 msgctxt "SC_OPCODE_UNIQUE"
 msgid "Array"
 msgstr "Matriu"
 
 #. 2sVga
-#: sc/inc/scfuncs.hrc:4259
+#: sc/inc/scfuncs.hrc:4321
 msgctxt "SC_OPCODE_UNIQUE"
 msgid "The range or array from which to return unique values."
-msgstr ""
+msgstr "L'interval o matriu a partir dels quals retornar valors únics."
 
 #. fGfWS
-#: sc/inc/scfuncs.hrc:4260
+#: sc/inc/scfuncs.hrc:4322
 msgctxt "SC_OPCODE_UNIQUE"
 msgid "By col"
 msgstr "Per columnes"
 
 #. SASmk
-#: sc/inc/scfuncs.hrc:4261
+#: sc/inc/scfuncs.hrc:4323
 msgctxt "SC_OPCODE_UNIQUE"
 msgid "Logical value indicating how to compare data: TRUE - compares data across columns. FALSE or omitted (default) - compares data across rows."
-msgstr ""
+msgstr "Valor lògic que indica com comparar les dades: CERT - compara les dades per columnes. FALS o omès (per defecte) - compara les dades per files."
 
 #. hVQ6i
-#: sc/inc/scfuncs.hrc:4262
+#: sc/inc/scfuncs.hrc:4324
 msgctxt "SC_OPCODE_UNIQUE"
 msgid "Uniqueness"
 msgstr "Unicitat"
 
 #. EUVys
-#: sc/inc/scfuncs.hrc:4263
+#: sc/inc/scfuncs.hrc:4325
 msgctxt "SC_OPCODE_UNIQUE"
 msgid "Logical value that defines what values are considered unique: TRUE - returns values that occur only once. FALSE or omitted (default) - returns all distinct (different) values in the range or array."
-msgstr ""
+msgstr "Valor lògic que defineix quins valors es consideren únics: CERT - retorna valors que ocorren només una vegada. FALS o omès (per defecte) - retorna tots els valors diferents de l'interval o matriu."
 
 #. axamT
-#: sc/inc/scfuncs.hrc:4269
+#: sc/inc/scfuncs.hrc:4331
 msgctxt "SC_OPCODE_LET"
 msgid "The LET function assigns names to calculation results. This allows storing intermediate calculations, values, or defining names inside a formula. These names only apply within the scope of the LET function."
-msgstr ""
+msgstr "La funció LET assigna noms als resultats del càlcul. Això permet d'emmagatzemar càlculs intermedis, valors o definir noms dins una fórmula. Aquests noms només s'apliquen dins de l'abast de la funció LET."
 
 #. 6DDAi
-#: sc/inc/scfuncs.hrc:4270
+#: sc/inc/scfuncs.hrc:4332
 msgctxt "SC_OPCODE_LET"
 msgid "Name 1"
 msgstr "Nom 1"
 
 #. a7LQR
-#: sc/inc/scfuncs.hrc:4271
+#: sc/inc/scfuncs.hrc:4333
 msgctxt "SC_OPCODE_LET"
 msgid "The first name to assign. Must start with a letter. Cannot be the output of a formula or conflict with range syntax."
-msgstr ""
+msgstr "El primer nom a assignar. Ha de començar per una lletra. No pot ser el resultat d'una fórmula o entrarà en conflicte amb la sintaxi de l'interval."
 
 #. KsyBM
-#: sc/inc/scfuncs.hrc:4272
+#: sc/inc/scfuncs.hrc:4334
 msgctxt "SC_OPCODE_LET"
 msgid "Name value "
 msgstr "Valor del nom. "
 
 #. Dn2DE
-#: sc/inc/scfuncs.hrc:4273
+#: sc/inc/scfuncs.hrc:4335
 msgctxt "SC_OPCODE_LET"
 msgid "Name value 1, Name value 2,... The value or calculation to assign to Name."
-msgstr ""
+msgstr "Valor del nom 1, valor del nom 2... El valor o càlcul a assignar al nom."
 
 #. CHAMD
-#: sc/inc/scfuncs.hrc:4274
+#: sc/inc/scfuncs.hrc:4336
 msgctxt "SC_OPCODE_LET"
 msgid "Calculation or Name "
 msgstr "Càlcul o nom "
 
 #. tFMkP
-#: sc/inc/scfuncs.hrc:4275
+#: sc/inc/scfuncs.hrc:4337
 msgctxt "SC_OPCODE_LET"
 msgid "A calculation that uses all names within the LET function. This must be the last argument in the LET function. Or a second Name to assign to a second Name value. If a second Name is specified, Name value 2 and Calculation or Name 3 become required."
+msgstr "Un càlcul que utilitza tots els noms dins la funció LET. Aquest ha de ser l'últim argument de la funció LET. O un segon nom a assignar a un valor de segon nom. Si s'especifica un segon nom, es requerirà el valor de nom 2 i el càlcul o nom 3."
+
+#. oBDEA
+#: sc/inc/scfuncs.hrc:4343
+msgctxt "SC_OPCODE_WRAPCOLS"
+msgid "Wraps the provided row or column of values by columns after a specified number of elements to form a new array."
+msgstr ""
+
+#. fC6RK
+#: sc/inc/scfuncs.hrc:4344
+msgctxt "SC_OPCODE_WRAPCOLS"
+msgid "Range"
+msgstr ""
+
+#. nfZyj
+#: sc/inc/scfuncs.hrc:4345
+msgctxt "SC_OPCODE_WRAPCOLS"
+msgid "the range to wrap."
+msgstr ""
+
+#. GE3HQ
+#: sc/inc/scfuncs.hrc:4346
+msgctxt "SC_OPCODE_WRAPCOLS"
+msgid "Wrap count"
+msgstr ""
+
+#. FWsCt
+#: sc/inc/scfuncs.hrc:4347
+msgctxt "SC_OPCODE_WRAPCOLS"
+msgid "The maximum number of values for each column."
+msgstr ""
+
+#. zkjFB
+#: sc/inc/scfuncs.hrc:4348
+msgctxt "SC_OPCODE_WRAPCOLS"
+msgid "Pad with"
+msgstr ""
+
+#. knbjc
+#: sc/inc/scfuncs.hrc:4349
+msgctxt "SC_OPCODE_WRAPCOLS"
+msgid "The value with which to pad. The default is #N/A."
+msgstr ""
+
+#. BDA7q
+#: sc/inc/scfuncs.hrc:4355
+msgctxt "SC_OPCODE_WRAPROWS"
+msgid "Wraps the provided row or column of values by rows after a specified number of elements to form a new array."
+msgstr ""
+
+#. 7esii
+#: sc/inc/scfuncs.hrc:4356
+msgctxt "SC_OPCODE_WRAPROWS"
+msgid "Range"
+msgstr ""
+
+#. FLJwx
+#: sc/inc/scfuncs.hrc:4357
+msgctxt "SC_OPCODE_WRAPROWS"
+msgid "the range to wrap."
+msgstr ""
+
+#. aLHUi
+#: sc/inc/scfuncs.hrc:4358
+msgctxt "SC_OPCODE_WRAPROWS"
+msgid "Wrap count"
+msgstr ""
+
+#. 3CEsK
+#: sc/inc/scfuncs.hrc:4359
+msgctxt "SC_OPCODE_WRAPROWS"
+msgid "The maximum number of values for each row."
+msgstr ""
+
+#. iTCWg
+#: sc/inc/scfuncs.hrc:4360
+msgctxt "SC_OPCODE_WRAPROWS"
+msgid "Pad with"
+msgstr ""
+
+#. e3K5s
+#: sc/inc/scfuncs.hrc:4361
+msgctxt "SC_OPCODE_WRAPROWS"
+msgid "The value with which to pad. The default is #N/A."
 msgstr ""
 
 #. pDDme
@@ -18296,7 +18620,7 @@ msgstr "Redueix la barra de fórmules"
 #: sc/inc/strings.hrc:192
 msgctxt "SCSTR_QHELP_SELECT_ALL_CELLS"
 msgid "Click here to select all cells"
-msgstr ""
+msgstr "Feu clic aquí per a seleccionar totes les cel·les"
 
 #. nSD8r
 #: sc/inc/strings.hrc:194
@@ -19421,37 +19745,37 @@ msgstr "Especifica que s'inclogui un petit rectangle a l'extrem superior dret d'
 #: sc/inc/strings.hrc:404
 msgctxt "STR_CONDITION_EQUAL"
 msgid "values equal to"
-msgstr ""
+msgstr "valors iguals a"
 
 #. 9Sr4b
 #: sc/inc/strings.hrc:405
 msgctxt "STR_CONDITION_LESS"
 msgid "values less than"
-msgstr ""
+msgstr "valors inferiors a"
 
 #. feEEu
 #: sc/inc/strings.hrc:406
 msgctxt "STR_CONDITION_GREATER"
 msgid "values greater than"
-msgstr ""
+msgstr "valors superiors a"
 
 #. j9GF6
 #: sc/inc/strings.hrc:407
 msgctxt "STR_CONDITION_EQLESS"
 msgid "values equal or less than"
-msgstr ""
+msgstr "valors iguals o inferiors a"
 
 #. AprEb
 #: sc/inc/strings.hrc:408
 msgctxt "STR_CONDITION_EQGREATER"
 msgid "values equal or greater than"
-msgstr ""
+msgstr "valors iguals o superiors a"
 
 #. EwND6
 #: sc/inc/strings.hrc:409
 msgctxt "STR_CONDITION_NOT_EQUAL"
 msgid "values not equal to"
-msgstr ""
+msgstr "valors diferents de"
 
 #. FDBXx
 #: sc/inc/strings.hrc:411
@@ -19469,13 +19793,13 @@ msgstr ""
 #: sc/inc/strings.hrc:413
 msgctxt "STR_CONDITION_DUPLICATE"
 msgid "values duplicate"
-msgstr ""
+msgstr "valors duplicats"
 
 #. 7FM9a
 #: sc/inc/strings.hrc:414
 msgctxt "STR_CONDITION_NOT_DUPLICATE"
 msgid "values not duplicate"
-msgstr ""
+msgstr "valors no duplicats"
 
 #. uLnQ7
 #: sc/inc/strings.hrc:415
@@ -19565,97 +19889,97 @@ msgstr ""
 #: sc/inc/strings.hrc:429
 msgctxt "STR_CONDITION_FORMULA"
 msgid "formula is"
-msgstr ""
+msgstr "la fórmula és"
 
 #. PXAAm
 #: sc/inc/strings.hrc:430
 msgctxt "STR_CONDITION_TODAY"
 msgid "date is today"
-msgstr ""
+msgstr "la data és avui"
 
 #. DjLCy
 #: sc/inc/strings.hrc:431
 msgctxt "STR_CONDITION_YESTERDAY"
 msgid "date is yesterday"
-msgstr ""
+msgstr "la data és ahir"
 
 #. j5dhY
 #: sc/inc/strings.hrc:432
 msgctxt "STR_CONDITION_TOMORROW"
 msgid "date is tomorrow"
-msgstr ""
+msgstr "la data és demà"
 
 #. 7iXCz
 #: sc/inc/strings.hrc:433
 msgctxt "STR_CONDITION_LAST7DAYS"
 msgid "date is in last 7 days"
-msgstr ""
+msgstr "la data és en els últims 7 dies"
 
 #. wFkGv
 #: sc/inc/strings.hrc:434
 msgctxt "STR_CONDITION_THISWEEK"
 msgid "date is in this week"
-msgstr ""
+msgstr "la data és d'aquesta setmana"
 
 #. FuW2H
 #: sc/inc/strings.hrc:435
 msgctxt "STR_CONDITION_LASTWEEK"
 msgid "date is in last week"
-msgstr ""
+msgstr "la data és de la setmana passada"
 
 #. PWJvg
 #: sc/inc/strings.hrc:436
 msgctxt "STR_CONDITION_NEXTWEEK"
 msgid "date is in next week"
-msgstr ""
+msgstr "la data de la setmana vinent"
 
 #. Q2pSf
 #: sc/inc/strings.hrc:437
 msgctxt "STR_CONDITION_THISMONTH"
 msgid "date is in this month"
-msgstr ""
+msgstr "la data és d'aquest mes"
 
 #. KfVAc
 #: sc/inc/strings.hrc:438
 msgctxt "STR_CONDITION_LASTMONTH"
 msgid "date is in last month"
-msgstr ""
+msgstr "la data és del mes passat"
 
 #. kooBA
 #: sc/inc/strings.hrc:439
 msgctxt "STR_CONDITION_NEXTMONTH"
 msgid "date is in next month"
-msgstr ""
+msgstr "la data és del mes vinent"
 
 #. bPp5N
 #: sc/inc/strings.hrc:440
 msgctxt "STR_CONDITION_THISYEAR"
 msgid "date is in this year"
-msgstr ""
+msgstr "la data és d'aquest any"
 
 #. LaSDq
 #: sc/inc/strings.hrc:441
 msgctxt "STR_CONDITION_LASTYEAR"
 msgid "date is in last year"
-msgstr ""
+msgstr "la data és de l'any passat"
 
 #. AqNgF
 #: sc/inc/strings.hrc:442
 msgctxt "STR_CONDITION_NEXTYEAR"
 msgid "date is in next year"
-msgstr ""
+msgstr "la data és de l'any vinent"
 
 #. Xd9YB
 #: sc/inc/strings.hrc:443
 msgctxt "STR_DUPLICATERECORDS_WARNING"
 msgid "Warning!"
-msgstr ""
+msgstr "Avís!"
 
 #. kfQsW
 #: sc/inc/strings.hrc:444
 msgctxt "STR_DUPLICATERECORDS_NODATAFOUND"
 msgid "No data found to operate on."
-msgstr ""
+msgstr "No s'ha trobat cap dada amb la qual treballar."
 
 #. pfvsB
 #: sc/inc/strings.hrc:445
@@ -19682,6 +20006,8 @@ msgid ""
 "AutoCalculate: Off\n"
 "Click to enable."
 msgstr ""
+"Càlcul automàtic: desactivat\n"
+"Feu clic per a activar-lo."
 
 #. Et4zM
 #: sc/inc/subtotals.hrc:28
@@ -20023,7 +20349,7 @@ msgstr "Suprimeix"
 #: sc/uiconfig/scalc/ui/allheaderfooterdialog.ui:8
 msgctxt "allheaderfooterdialog|AllHeaderFooterDialog"
 msgid "Headers/Footers"
-msgstr "Capçaleres/Peus"
+msgstr "Capçaleres/peus"
 
 #. 5TTBG
 #: sc/uiconfig/scalc/ui/allheaderfooterdialog.ui:112
@@ -20703,11 +21029,11 @@ msgctxt "condformatmanager|extended_tip|CondFormatManager"
 msgid "This dialog allows you to see all the conditional formatting defined in the spreadsheet."
 msgstr "Aquest diàleg us permet veure tota la formatació condicional definida en el full de càlcul."
 
-#. nrXMW
+#. FVsyY
 #: sc/uiconfig/scalc/ui/conditionaleasydialog.ui:8
 msgctxt "conditionaleasydialog|title"
-msgid "Apply conditional formatting..."
-msgstr "Aplica la formatació condicional..."
+msgid "Highlight cells..."
+msgstr ""
 
 #. pDRks
 #: sc/uiconfig/scalc/ui/conditionaleasydialog.ui:46
@@ -23793,11 +24119,17 @@ msgctxt "duplicaterecordsdialog|includesheaders"
 msgid "Select to exclude the row/column headers from duplicate comparison."
 msgstr ""
 
+#. DFZ8U
+#: sc/uiconfig/scalc/ui/duplicaterecordsdlg.ui:305
+msgctxt "duplicaterecordsdialog|compareby"
+msgid "Compare by:"
+msgstr ""
+
 #. C7EVS
 #: sc/uiconfig/scalc/ui/duplicaterecordsdlg.ui:315
 msgctxt "duplicaterecordsdialog|allcheckbtn"
 msgid "_All"
-msgstr ""
+msgstr "_Tot"
 
 #. pBHAC
 #: sc/uiconfig/scalc/ui/duplicaterecordsdlg.ui:319
@@ -24453,6 +24785,30 @@ msgctxt "formulacalculationoptions|comboSyntaxRef"
 msgid "Use formula syntax"
 msgstr "Usa la sintaxi de la fórmula"
 
+#. nGnBz
+#: sc/uiconfig/scalc/ui/formulacalculationoptions.ui:139
+msgctxt "formulacalculationoptions|comboSyntaxRef"
+msgid "Calc A1"
+msgstr ""
+
+#. UvJqb
+#: sc/uiconfig/scalc/ui/formulacalculationoptions.ui:140
+msgctxt "formulacalculationoptions|comboSyntaxRef"
+msgid "Excel A1"
+msgstr ""
+
+#. XYSaM
+#: sc/uiconfig/scalc/ui/formulacalculationoptions.ui:141
+msgctxt "formulacalculationoptions|comboSyntaxRef"
+msgid "Excel R1C1"
+msgstr ""
+
+#. S7QFC
+#: sc/uiconfig/scalc/ui/formulacalculationoptions.ui:142
+msgctxt "formulacalculationoptions|comboSyntaxRef"
+msgid "Calc A1 | Excel A1"
+msgstr ""
+
 #. Gd4ne
 #: sc/uiconfig/scalc/ui/formulacalculationoptions.ui:155
 msgctxt "formulacalculationoptions|comboConversion"
@@ -24585,116 +24941,128 @@ msgctxt "functionpanel|category"
 msgid "Last Used"
 msgstr "Usades recentment"
 
-#. uRXDm
+#. NYNE9
 #: sc/uiconfig/scalc/ui/functionpanel.ui:70
+msgctxt "functionpanel|category"
+msgid "Favourites"
+msgstr ""
+
+#. uRXDm
+#: sc/uiconfig/scalc/ui/functionpanel.ui:71
 msgctxt "functionpanel|category"
 msgid "All"
 msgstr "Totes"
 
 #. Fk97C
-#: sc/uiconfig/scalc/ui/functionpanel.ui:71
+#: sc/uiconfig/scalc/ui/functionpanel.ui:72
 msgctxt "functionpanel|category"
 msgid "Database"
 msgstr "Bases de dades"
 
 #. hCefc
-#: sc/uiconfig/scalc/ui/functionpanel.ui:72
+#: sc/uiconfig/scalc/ui/functionpanel.ui:73
 msgctxt "functionpanel|category"
 msgid "Date&Time"
 msgstr "Data i hora"
 
 #. Cj6Vy
-#: sc/uiconfig/scalc/ui/functionpanel.ui:73
+#: sc/uiconfig/scalc/ui/functionpanel.ui:74
 msgctxt "functionpanel|category"
 msgid "Financial"
 msgstr "Financeres"
 
 #. gS2PB
-#: sc/uiconfig/scalc/ui/functionpanel.ui:74
+#: sc/uiconfig/scalc/ui/functionpanel.ui:75
 msgctxt "functionpanel|category"
 msgid "Information"
 msgstr "Informació"
 
 #. rMqtg
-#: sc/uiconfig/scalc/ui/functionpanel.ui:75
+#: sc/uiconfig/scalc/ui/functionpanel.ui:76
 msgctxt "functionpanel|category"
 msgid "Logical"
 msgstr "Lògiques"
 
 #. 6cFkD
-#: sc/uiconfig/scalc/ui/functionpanel.ui:76
+#: sc/uiconfig/scalc/ui/functionpanel.ui:77
 msgctxt "functionpanel|category"
 msgid "Mathematical"
 msgstr "Matemàtiques"
 
 #. RdQeE
-#: sc/uiconfig/scalc/ui/functionpanel.ui:77
+#: sc/uiconfig/scalc/ui/functionpanel.ui:78
 msgctxt "functionpanel|category"
 msgid "Array"
 msgstr "Matriu"
 
 #. h4kRr
-#: sc/uiconfig/scalc/ui/functionpanel.ui:78
+#: sc/uiconfig/scalc/ui/functionpanel.ui:79
 msgctxt "functionpanel|category"
 msgid "Statistical"
 msgstr "Estadístiques"
 
 #. 6XCsS
-#: sc/uiconfig/scalc/ui/functionpanel.ui:79
+#: sc/uiconfig/scalc/ui/functionpanel.ui:80
 msgctxt "functionpanel|category"
 msgid "Spreadsheet"
 msgstr "Full de càlcul"
 
 #. DwfB5
-#: sc/uiconfig/scalc/ui/functionpanel.ui:80
+#: sc/uiconfig/scalc/ui/functionpanel.ui:81
 msgctxt "functionpanel|category"
 msgid "Text"
 msgstr "Text"
 
 #. BCiyc
-#: sc/uiconfig/scalc/ui/functionpanel.ui:81
+#: sc/uiconfig/scalc/ui/functionpanel.ui:82
 msgctxt "functionpanel|category"
 msgid "Add-in"
 msgstr "Complement"
 
 #. tDNFD
-#: sc/uiconfig/scalc/ui/functionpanel.ui:85
+#: sc/uiconfig/scalc/ui/functionpanel.ui:86
 msgctxt "functionpanel|extended_tip|category"
 msgid "Displays the available functions."
 msgstr "Mostra les funciones disponibles."
 
 #. V9ATp
-#: sc/uiconfig/scalc/ui/functionpanel.ui:133
+#: sc/uiconfig/scalc/ui/functionpanel.ui:134
 msgctxt "functionpanel|extended_tip|funclist"
 msgid "Displays the available functions."
 msgstr "Mostra les funciones disponibles."
 
 #. SFuAq
-#: sc/uiconfig/scalc/ui/functionpanel.ui:155
+#: sc/uiconfig/scalc/ui/functionpanel.ui:156
 msgctxt "functionpanel|search"
 msgid "Search all functions"
 msgstr "Cerca totes les funcions"
 
 #. 4m78Y
-#: sc/uiconfig/scalc/ui/functionpanel.ui:159
+#: sc/uiconfig/scalc/ui/functionpanel.ui:160
 msgctxt "functionpanel|accessiblename|search"
 msgid "Search all functions"
 msgstr "Cerca totes les funcions"
 
 #. zCfcN
-#: sc/uiconfig/scalc/ui/functionpanel.ui:171
+#: sc/uiconfig/scalc/ui/functionpanel.ui:172
 msgctxt "functionpanel|similaritysearch"
 msgid "Similar"
 msgstr ""
 
 #. 9DNe7
-#: sc/uiconfig/scalc/ui/functionpanel.ui:179
+#: sc/uiconfig/scalc/ui/functionpanel.ui:180
 msgctxt "functionpanel|extended_tip|similaritysearch"
 msgid "Search and Sort functions by similarity"
 msgstr ""
 
+#. esYCC
+#: sc/uiconfig/scalc/ui/functionpanel.ui:225
+msgctxt "functionpanel|help"
+msgid "Help"
+msgstr ""
+
 #. cStgX
-#: sc/uiconfig/scalc/ui/functionpanel.ui:229
+#: sc/uiconfig/scalc/ui/functionpanel.ui:230
 msgctxt "functionpanel|help|tooltip_text"
 msgid "Go to Function's Help Page"
 msgstr ""
@@ -25195,7 +25563,7 @@ msgstr "Defineix la capçalera o el peu de pàgina, o hi dona format, per a un e
 #: sc/uiconfig/scalc/ui/headerfooterdialog.ui:8
 msgctxt "headerfooterdialog|HeaderFooterDialog"
 msgid "Headers/Footers"
-msgstr "Capçaleres/Peus"
+msgstr "Capçaleres/peus"
 
 #. 84Cdv
 #: sc/uiconfig/scalc/ui/headerfooterdialog.ui:112
@@ -26395,7 +26763,7 @@ msgstr "Finestra activa"
 #: sc/uiconfig/scalc/ui/navigatorpanel.ui:330
 msgctxt "navigatorpanel|extended_tip|documents"
 msgid "Lists currently open spreadsheets."
-msgstr ""
+msgstr "Enumera els fulls de càlcul oberts actualment."
 
 #. F58Zg
 #: sc/uiconfig/scalc/ui/navigatorpanel.ui:383
@@ -28306,7 +28674,7 @@ msgstr "Alçada òptima de fila:"
 #: sc/uiconfig/scalc/ui/optformula.ui:196
 msgctxt "optformula|extended_tip|rowheightrecalc"
 msgid "Define either we want to calculate the optimal row heights or we do not want at load time."
-msgstr "Defineix si volem o no calcular l'alçada òptima de fila en carregar el document."
+msgstr "Defineix si volem calcular l'alçada òptima de fila o no en carregar el document."
 
 #. xoCdo
 #: sc/uiconfig/scalc/ui/optformula.ui:211
@@ -29770,13 +30138,13 @@ msgstr "Seleccionar les cel·les protegides"
 #: sc/uiconfig/scalc/ui/protectsheetdlg.ui:323
 msgctxt "protectsheetdlg|delete-columns"
 msgid "Delete columns with unprotected cells"
-msgstr ""
+msgstr "Suprimir columnes amb cel·les desprotegides"
 
 #. voVBX
 #: sc/uiconfig/scalc/ui/protectsheetdlg.ui:335
 msgctxt "protectsheetdlg|delete-rows"
 msgid "Delete rows with unprotected cells"
-msgstr ""
+msgstr "Suprimir files amb cel·les desprotegides"
 
 #. cVdms
 #: sc/uiconfig/scalc/ui/protectsheetdlg.ui:347
@@ -29800,7 +30168,7 @@ msgstr "Selecciona les cel·les desprotegides"
 #: sc/uiconfig/scalc/ui/protectsheetdlg.ui:383
 msgctxt "protectsheetdlg|delete-columns"
 msgid "Use AutoFilter"
-msgstr ""
+msgstr "Usa el filtre automàtic"
 
 #. 7iUEa
 #: sc/uiconfig/scalc/ui/protectsheetdlg.ui:395
@@ -30952,7 +31320,7 @@ msgstr "Capçalera (esquerra)"
 #: sc/uiconfig/scalc/ui/sharedfooterdialog.ui:8
 msgctxt "sharedfooterdialog|SharedFooterDialog"
 msgid "Headers/Footers"
-msgstr "Capçaleres/Peus"
+msgstr "Capçaleres/peus"
 
 #. bCUGs
 #: sc/uiconfig/scalc/ui/sharedfooterdialog.ui:112
@@ -30976,7 +31344,7 @@ msgstr "Peu"
 #: sc/uiconfig/scalc/ui/sharedheaderdialog.ui:8
 msgctxt "sharedheaderdialog|SharedHeaderDialog"
 msgid "Headers/Footers"
-msgstr "Capçaleres/Peus"
+msgstr "Capçaleres/peus"
 
 #. mYxKb
 #: sc/uiconfig/scalc/ui/sharedheaderdialog.ui:112
