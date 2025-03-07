@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
 "POT-Creation-Date: 2025-01-07 15:27+0100\n"
-"PO-Revision-Date: 2025-03-03 19:23+0000\n"
+"PO-Revision-Date: 2025-03-04 23:04+0000\n"
 "Last-Translator: kees538 <kees538@gmail.com>\n"
 "Language-Team: Dutch <https://translations.documentfoundation.org/projects/libo_help-25-2/textscalc01/nl/>\n"
 "Language: nl\n"
@@ -8591,7 +8591,7 @@ msgctxt ""
 "hd_id3147081\n"
 "help.text"
 msgid "ISERROR"
-msgstr "ISFOUT"
+msgstr "ALS.FOUT"
 
 #. GeByF
 #: 04060104.xhp
@@ -8609,7 +8609,7 @@ msgctxt ""
 "par_id3153155\n"
 "help.text"
 msgid "ISERROR(Value)"
-msgstr "ISFOUT(Waarde)"
+msgstr "ALS.FOUT(Waarde; Alternatieve waarde)"
 
 #. Usvv4
 #: 04060104.xhp
@@ -8627,7 +8627,7 @@ msgctxt ""
 "par_id3150256\n"
 "help.text"
 msgid "<item type=\"input\">=ISERROR(C8)</item> where cell C8 contains <item type=\"input\">=1/0</item> returns TRUE, because 1/0 is an error."
-msgstr "<item type=\"input\">=ISFOUT(C8)</item>, waar cel C8 <item type=\"input\">=1/0</item> bevat, geeft WAAR, omdat 1/0 een fout is."
+msgstr "<item type=\"input\">=ALS.FOUT(C8;C9)</item>, als cel C8 <item type=\"input\">=1/0</item> bevat, geeft de waarde C9, omdat 1/0 een foutwaarde geeft."
 
 #. CCX3g
 #: 04060104.xhp
@@ -8636,7 +8636,7 @@ msgctxt ""
 "par_id1889095\n"
 "help.text"
 msgid "<item type=\"input\">=ISERROR(C9)</item> where cell C9 contains <item type=\"input\">=NA()</item> returns TRUE."
-msgstr "<item type=\"input\">=ISFOUT(C9)</item>, waar cel C9 <item type=\"input\">=NB()</item> bevat, geeft WAAR terug."
+msgstr "<item type=\"input\">=ALS.FOUT(C8;C9)</item>, als cel C8 <item type=\"input\">13</item> bevat, geeft 13 de waarde van C8, wat geen fout is."
 
 #. 4LmNf
 #: 04060104.xhp
@@ -9140,7 +9140,7 @@ msgctxt ""
 "hd_id3153685\n"
 "help.text"
 msgid "ISNA"
-msgstr "ISNB"
+msgstr "ALS.NB"
 
 #. 37cBk
 #: 04060104.xhp
@@ -9167,7 +9167,7 @@ msgctxt ""
 "par_id3153748\n"
 "help.text"
 msgid "ISNA(Value)"
-msgstr "ISNB(Waarde)"
+msgstr "ALS.NB(Waarde)"
 
 #. UfAek
 #: 04060104.xhp
@@ -9185,7 +9185,7 @@ msgctxt ""
 "par_id3154852\n"
 "help.text"
 msgid "<item type=\"input\">=ISNA(D3)</item> returns FALSE as a result."
-msgstr "<item type=\"input\">=ISNB(D3)</item> geeft ONWAAR als resultaat."
+msgstr "<item type=\"input\">=ALS.NB(D3)</item> geeft ONWAAR als resultaat."
 
 #. 8pRTT
 #: 04060104.xhp
@@ -10409,7 +10409,7 @@ msgctxt ""
 "par_id3159123\n"
 "help.text"
 msgid "AND(<embedvar href=\"text/scalc/01/ful_func.xhp#logical255_1\" markup=\"keep\"/>)"
-msgstr "EN(<embedvar href=\"text/scalc/01/ful_func.xhp#logical255_1\" markup=\"keep\"/>)"
+msgstr "EN(Logische waarde 1 ; Logische waarde 2 (optioneel); …)(<embedvar href=\"text/scalc/01/ful_func.xhp#logical255_1\" markup=\"keep\"/>)"
 
 #. 3exzA
 #: 04060105.xhp
@@ -10535,7 +10535,7 @@ msgctxt ""
 "par_id3154558\n"
 "help.text"
 msgid "IF(Test [; [ThenValue] [; [OtherwiseValue]]])"
-msgstr "ALS(Test [; [DanWaarde] [; [AndersWaarde]]])"
+msgstr "ALS(Test; Dan waarde (optioneel); Anders waarde (optioneel))"
 
 #. JnjcT
 #: 04060105.xhp
@@ -10589,7 +10589,7 @@ msgctxt ""
 "par_id11607570458867\n"
 "help.text"
 msgid "<input>=IF(A1>5;100;)</input> If the value in <literal>A1</literal> is less than <literal>5</literal>, the value <literal>0</literal> is returned because the empty <emph>OtherwiseValue</emph> is interpreted as <literal>0</literal>; otherwise <literal>100</literal> is returned."
-msgstr "<input>=ALS(A1>5;100;)</input> als de waarde in <literal>A1</literal> minder is dan <literal>5</literal>, wordt de waarde <literal>0</literal> geretourneerd, omdat lege <emph>AndersWaarde</emph> geïnterpreteerd wordt als <literal>0</literal>; anders wordt <literal>100</literal> geretourneerd."
+msgstr "<input>=ALS(A1>5;100;)</input> als de waarde in <literal>A1</literal> kleiner is dan <literal>5</literal>, wordt de waarde <literal>0</literal> geretourneerd, omdat lege <emph>Anders waarde</emph> geïnterpreteerd wordt als <literal>0</literal>; anders wordt <literal>100</literal> geretourneerd."
 
 #. BKYkX
 #: 04060105.xhp
@@ -10688,7 +10688,7 @@ msgctxt ""
 "par_id3150468\n"
 "help.text"
 msgid "OR(<embedvar href=\"text/scalc/01/ful_func.xhp#logical255_1\" markup=\"keep\"/>)"
-msgstr "OF(<embedvar href=\"text/scalc/01/ful_func.xhp#logical255_1\" markup=\"keep\"/>)"
+msgstr "OF(Logische waarde 1 ; Logische waarde 2 (optioneel); …)(<embedvar href=\"text/scalc/01/ful_func.xhp#logical255_1\" markup=\"keep\"/>)"
 
 #. oFKWj
 #: 04060105.xhp
@@ -10796,7 +10796,7 @@ msgctxt ""
 "par_id3154314\n"
 "help.text"
 msgid "<item type=\"input\">=NOT(AND(A;B))</item> returns TRUE"
-msgstr "<item type=\"input\">=NIET(EN(A;B))</item> geeft WAAR terug"
+msgstr "<item type=\"input\">=ALS(A1>5;100;)</item> Als de waarde in A1 kleiner is dan 5, wordt de waarde 0 geretourneerd omdat de lege Anders waarde wordt geïnterpreteerd als 0; anders wordt 100 geretourneerd."
 
 #. 7bq9r
 #: 04060105.xhp
@@ -10814,7 +10814,7 @@ msgctxt ""
 "hd_id3156257\n"
 "help.text"
 msgid "XOR"
-msgstr "XOR"
+msgstr "EX.OF"
 
 #. ACsTA
 #: 04060105.xhp
@@ -10841,7 +10841,7 @@ msgctxt ""
 "par_id3150469\n"
 "help.text"
 msgid "XOR(<embedvar href=\"text/scalc/01/ful_func.xhp#logical255_1\" markup=\"keep\"/>)"
-msgstr "XOF(<embedvar href=\"text/scalc/01/ful_func.xhp#logical255_1\" markup=\"keep\"/>)"
+msgstr "EX.OF(Logische waarde 1 ; Logische waarde 2 (optioneel); …)(<embedvar href=\"text/scalc/01/ful_func.xhp#logical255_1\" markup=\"keep\"/>)"
 
 #. 2QMxz
 #: 04060105.xhp
@@ -10850,7 +10850,7 @@ msgctxt ""
 "par_id3083286\n"
 "help.text"
 msgid "<item type=\"input\">=XOR(TRUE();TRUE())</item> returns FALSE"
-msgstr "<item type=\"input\">=XOF(WAAR();WAAR())</item> geeft ONWAAR"
+msgstr "<item type=\"input\">=EX.OF(WAAR();WAAR())</item> geeft ONWAAR"
 
 #. sACsD
 #: 04060105.xhp
@@ -10859,7 +10859,7 @@ msgctxt ""
 "par_id3083445\n"
 "help.text"
 msgid "<item type=\"input\">=XOR(TRUE();TRUE();TRUE())</item> returns TRUE"
-msgstr "<item type=\"input\">=XOF(WAAR();WAAR();WAAR())</item> geeft WAAR"
+msgstr "<item type=\"input\">=EX.OF(WAAR();WAAR();WAAR())</item> geeft WAAR"
 
 #. Uhsea
 #: 04060105.xhp
@@ -10868,7 +10868,7 @@ msgctxt ""
 "par_id3154315\n"
 "help.text"
 msgid "<item type=\"input\">=XOR(FALSE();TRUE())</item> returns TRUE"
-msgstr "<item type=\"input\">=XOF(ONWAAR();WAAR())</item> geeft WAAR"
+msgstr "<item type=\"input\">=EX.OF(ONWAAR();WAAR())</item> geeft WAAR"
 
 #. 3Ed6j
 #: 04060106.xhp
@@ -62809,7 +62809,7 @@ msgctxt ""
 "par_id271556235333493\n"
 "help.text"
 msgid "IFS(expression1; result1[; expression2; result2][; ... ; [expression127; result127]])"
-msgstr "ALS.VOORWAARDEN(Test1; Resultaat1[; Test2; Resultaat2][; ... ; [Test127; Resultaat127]])"
+msgstr "ALS.VOORWAARDEN(Test1; Resultaat1; Test2 (optioneel); Resultaat2 (optioneel); ... )"
 
 #. 3KbKX
 #: func_ifs.xhp
@@ -62836,7 +62836,7 @@ msgctxt ""
 "par_id641556235704257\n"
 "help.text"
 msgid "IFS( expression1, result1, expression2, result2, expression3, result3 ) is executed as"
-msgstr "IFS( Test1, Resultaat1, Test2, Resultaat2, Test3, Resultaat3) wordt uitgevoerd als"
+msgstr "ALS.VOORWAARDEN( Test1, Resultaat1, Test2, Resultaat2, Test3, Resultaat3) wordt uitgevoerd als"
 
 #. NriAd
 #: func_ifs.xhp
@@ -62908,7 +62908,7 @@ msgctxt ""
 "par_id541556235771022\n"
 "help.text"
 msgid "If there is a result missing for an expression or is no expression is TRUE, a #N/A error is returned."
-msgstr "Als er een resultaat ontbreekt voor een uitdrukking of als geen enkele expressie WAAR is, wordt een #N/A-fout geretourneerd."
+msgstr "ls er een resultaat ontbreekt voor een uitdrukking of als geen enkele expressie WAAR is, wordt een #N/B-fout geretourneerd."
 
 #. 8sMKs
 #: func_ifs.xhp
@@ -62917,7 +62917,7 @@ msgctxt ""
 "par_id181556235788473\n"
 "help.text"
 msgid "If expression is neither TRUE or FALSE, a #VALUE error is returned."
-msgstr "Als de test niet WAAR of ONWAAR is, wordt een #VALUE-fout geretourneerd."
+msgstr "Als de test niet WAAR of ONWAAR is, wordt een #WAARDE!-fout geretourneerd."
 
 #. kxdSM
 #: func_ifs.xhp
@@ -69532,7 +69532,7 @@ msgctxt ""
 "par_id521556242803283\n"
 "help.text"
 msgid "SWITCH(expression; value1; result1[; value2; result2][; ... ; [value127; result127][; default_result]])"
-msgstr "SCHAKELEN(Uitdrukking; Waarde1; Resultaat1[; Waarde2; Resultaat2][; ... ; [Waarde127; Resultaat27][; standaardresultaat]])"
+msgstr "SCHAKELEN(Uitdrukking; Waarde1; Resultaat1; Waarde2 (optioneel); Resultaat2 (optioneel; ...)"
 
 #. p8fL8
 #: func_switch.xhp
@@ -69586,7 +69586,7 @@ msgctxt ""
 "par_id871556243022881\n"
 "help.text"
 msgid "If no <emph>value</emph> equals <emph>expression</emph> and no default result is given, a #N/A error is returned."
-msgstr "Als geen <emph>waarde</emph> gelijk is aan <emph>expression</emph> en er geen standaard resultaat wordt gegeven, wordt een #N/A-fout geretourneerd."
+msgstr "Als geen <emph>waarde</emph> gelijk is aan de <emph>uitdrukking</emph> en er geen standaard resultaat wordt gegeven, wordt een #N/B-fout geretourneerd."
 
 #. YQYUn
 #: func_switch.xhp
