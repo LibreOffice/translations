@@ -3,9 +3,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2025-03-26 17:21+0100\n"
-"PO-Revision-Date: 2025-03-04 14:49+0000\n"
-"Last-Translator: serval2412 <serval2412@yahoo.fr>\n"
+"POT-Creation-Date: 2025-04-09 13:50+0200\n"
+"PO-Revision-Date: 2025-04-02 12:53+0000\n"
+"Last-Translator: Karl Morten Ramberg <karl.m.ramberg@gmail.com>\n"
 "Language-Team: Norwegian Bokmål <https://translations.documentfoundation.org/projects/libo_help-master/textsbasicshared03/nb_NO/>\n"
 "Language: nb\n"
 "MIME-Version: 1.0\n"
@@ -3337,6 +3337,15 @@ msgctxt ""
 msgid "List of Methods in the Basic Service"
 msgstr "Liste over metoder i basistjenesten"
 
+#. z7PPA
+#: sf_basic.xhp
+msgctxt ""
+"sf_basic.xhp\n"
+"par_id891743424581473\n"
+"help.text"
+msgid "Python alternatives exist for methods marked with <emph>(*)</emph>."
+msgstr ""
+
 #. GvjSD
 #: sf_basic.xhp
 msgctxt ""
@@ -3436,6 +3445,33 @@ msgctxt ""
 msgid "A system path file name."
 msgstr "En systemsti-filnavn."
 
+#. dwoXY
+#: sf_basic.xhp
+msgctxt ""
+"sf_basic.xhp\n"
+"par_id51743414232819\n"
+"help.text"
+msgid "<link href=\"text/sbasic/python/python_programming.xhp\">uno module</link> fileUrlToSystemPath() method returns a system path using an identical syntax."
+msgstr ""
+
+#. ndMtg
+#: sf_basic.xhp
+msgctxt ""
+"sf_basic.xhp\n"
+"pyc_id731743414363054\n"
+"help.text"
+msgid "import uno"
+msgstr ""
+
+#. FyLiF
+#: sf_basic.xhp
+msgctxt ""
+"sf_basic.xhp\n"
+"pyc_id541743414376664\n"
+"help.text"
+msgid "filename = uno.fileUrlToSystemPath( \"file:///C:/Program%20Files%20(x86)/LibreOffice/News.txt\" )"
+msgstr ""
+
 #. 7YMKT
 #: sf_basic.xhp
 msgctxt ""
@@ -3462,6 +3498,33 @@ msgctxt ""
 "help.text"
 msgid "A <literal>file:</literal> URL as a string."
 msgstr "En <literal>fil:</literal> URL som en streng."
+
+#. 8mZ6G
+#: sf_basic.xhp
+msgctxt ""
+"sf_basic.xhp\n"
+"par_id51744524232819\n"
+"help.text"
+msgid "<link href=\"text/sbasic/python/python_programming.xhp\">uno module</link> systemPathToFileUrl() method returns a file URL for the given system path."
+msgstr ""
+
+#. wDNUn
+#: sf_basic.xhp
+msgctxt ""
+"sf_basic.xhp\n"
+"pyc_id742843414363054\n"
+"help.text"
+msgid "from uno import systemPathToFileUrl as ConvertToUrl"
+msgstr ""
+
+#. yQ5Lq
+#: sf_basic.xhp
+msgctxt ""
+"sf_basic.xhp\n"
+"pyc_id552843414376664\n"
+"help.text"
+msgid "filename = ConvertToUrl( 'C:\\Program Files(x86)\\LibreOffice\\News.txt' )"
+msgstr ""
 
 #. kyZyo
 #: sf_basic.xhp
@@ -3498,6 +3561,33 @@ msgctxt ""
 "help.text"
 msgid "<emph>unostructure</emph>: A fully qualified structure name such as <literal>com.sun.star.beans.Property</literal> or <literal>com.sun.star.util.DateTime</literal>."
 msgstr "<emph>unostructure</emph>: Et fullt kvalifisert strukturnavn som <literal>com.sun.star.beans.Property</literal> eller <literal>com.sun.star.util.DateTime</literal>."
+
+#. zDyBD
+#: sf_basic.xhp
+msgctxt ""
+"sf_basic.xhp\n"
+"par_id51743424332819\n"
+"help.text"
+msgid "<link href=\"text/sbasic/python/python_programming.xhp\">uno module</link> createUnoStruct() method creates an instance of a Uno structure type."
+msgstr ""
+
+#. KwRUT
+#: sf_basic.xhp
+msgctxt ""
+"sf_basic.xhp\n"
+"pyc_id731754514363054\n"
+"help.text"
+msgid "import uno"
+msgstr ""
+
+#. dKYqK
+#: sf_basic.xhp
+msgctxt ""
+"sf_basic.xhp\n"
+"pyc_id541754514376664\n"
+"help.text"
+msgid "p = uno.createUnoStruct( 'com.sun.star.beans.Property' )"
+msgstr ""
 
 #. rZoCx
 #: sf_basic.xhp
@@ -12992,7 +13082,7 @@ msgctxt ""
 "par_id41612629140856\n"
 "help.text"
 msgid "<literal>On…</literal> event properties are URI strings that reference a script triggered for an event. Read its specification in the <link href=\"https://wiki.documentfoundation.org/Documentation/DevGuide/Scripting_Framework#Scripting_Framework_URI_Specification\">scripting framework URI specification</link>."
-msgstr ""
+msgstr "<literal>På…</literal> hendelsesegenskaper er URI-strenger som refererer til et skript som utløses for en hendelse. Les spesifikasjonen i <link href=\"https://wiki.documentfoundation.org/Documentation/DevGuide/Scripting_Framework#Scripting_Framework_URI_Specification\">URI-spesifikasjonen for skriptrammeverk</link>."
 
 #. XCC7C
 #: sf_dialog.xhp
@@ -13109,7 +13199,7 @@ msgctxt ""
 "par_id661742233979615\n"
 "help.text"
 msgid "<emph>Tip: </emph><literal>All On…</literal> properties can be set programmatically.<br/> <link href=\"https://wiki.documentfoundation.org/Macros/ScriptForge/TreeControlExample\">How to display data in a tree control</link> example in %PRODUCTNAME Wiki demonstrates such."
-msgstr ""
+msgstr "<emph>Tips: </emph><literal>Alle On…</literal>-egenskaper kan settes programmatisk.<br/> <link href=\"https://wiki.documentfoundation.org/Macros/ScriptForge/TreeControlExample\">Hvordan vise data i en trekontroll</link>-eksempel i %PRODUCTNAME Wiki demonstrerer slikt."
 
 #. Z4Lnx
 #: sf_dialog.xhp
@@ -13136,7 +13226,7 @@ msgctxt ""
 "par_id361742221167679\n"
 "help.text"
 msgid "<literal>TabPageContainer</literal> controls are not available in Dialog Editor."
-msgstr ""
+msgstr "<literal>TabPageContainer</literal> kontroller er ikke tilgjengelige i Dialog Editor."
 
 #. GbtVM
 #: sf_dialog.xhp
@@ -14081,7 +14171,7 @@ msgctxt ""
 "par_id311502985787722\n"
 "help.text"
 msgid "Creates a new control of type <literal>TabPageContainer</literal> in the current dialog. Tabs are spread over separate lines inside the dialog when necessary. Multiple <literal>TabPageContainer</literal> are not supported."
-msgstr ""
+msgstr "Oppretter en ny kontroll av typen <literal>TabPageContainer</literal> i den gjeldende dialogboksen. Faner er spredt over separate linjer inne i dialogboksen når det er nødvendig. Flere <literal>TabPageContainer</literal> støttes ikke."
 
 #. wDhFB
 #: sf_dialog.xhp
@@ -14090,7 +14180,7 @@ msgctxt ""
 "par_id371742219905086\n"
 "help.text"
 msgid "<literal>TagePageContainer</literal> control creation comes always last in a dialog creation."
-msgstr ""
+msgstr "Oppretting av <literal>TagePageContainer</literal> kontroll kommer alltid sist i en dialogoppretting."
 
 #. t9ddT
 #: sf_dialog.xhp
@@ -14099,7 +14189,7 @@ msgctxt ""
 "par_id351688394093486\n"
 "help.text"
 msgid "<emph>TabHeaders</emph>: An array of strings defining each individual label for tabs"
-msgstr ""
+msgstr "<emph>TabHeaders</emph>: En rekke strenger som definerer hver enkelt etikett for faner"
 
 #. zdBzW
 #: sf_dialog.xhp
@@ -14108,7 +14198,7 @@ msgctxt ""
 "par_id541689403982300\n"
 "help.text"
 msgid "<emph>Border</emph>: \"3D\" (default), \"FLAT\" or \"NONE\""
-msgstr ""
+msgstr "<emph>Kantlinje</emph>: \"3D\" (standard), \"FLAT\" eller \"INGEN\""
 
 #. 2DAZy
 #: sf_dialog.xhp
@@ -14378,7 +14468,7 @@ msgctxt ""
 "par_id21598299063697\n"
 "help.text"
 msgid "Import and duplicate an existing control of any type from one dialog to the actual dialog. The duplicated control is left unchanged. The new control can be renamed and relocated. Events handlers, when present, may be imported too."
-msgstr ""
+msgstr "Importer og dupliser en eksisterende kontroll av hvilken som helst type fra én dialogboks til selve dialogboksen. Den dupliserte kontrollen forblir uendret. Den nye kontrollen kan gis nytt navn og flyttes. Eventbehandlere, når de er tilstede, kan også importeres."
 
 #. AvJEA
 #: sf_dialog.xhp
@@ -14387,7 +14477,7 @@ msgctxt ""
 "par_id111688543709861\n"
 "help.text"
 msgid "<emph>SourceDialog</emph>: an <literal>SFDialogs.Dialog</literal> class instance."
-msgstr ""
+msgstr "<emph>SourceDialog</emph>: en klasseforekomst <literal>SFDialogs.Dialog</literal>."
 
 #. ryVL3
 #: sf_dialog.xhp
@@ -14396,7 +14486,7 @@ msgctxt ""
 "par_id381688543709284\n"
 "help.text"
 msgid "<emph>SourceName</emph>: the name of the control to import."
-msgstr ""
+msgstr "<emph>Kildenavn</emph>: navnet på kontrollen som skal importeres."
 
 #. k7CpJ
 #: sf_dialog.xhp
@@ -14405,7 +14495,7 @@ msgctxt ""
 "par_id381689653709284\n"
 "help.text"
 msgid "<emph>ControlName</emph>: the name of the new control. It must not exist yet. Default is <emph>SourceName</emph>"
-msgstr ""
+msgstr "<emph>Kontrollnavn</emph>: navnet på den nye kontrollen. Det må ikke eksistere ennå. Standard er <emph>Kildenavn</emph>"
 
 #. 3AYd5
 #: sf_dialog.xhp
@@ -14414,7 +14504,7 @@ msgctxt ""
 "par_id321688543709637\n"
 "help.text"
 msgid "<emph>Page</emph>: the page number of the new control. Default = 0"
-msgstr ""
+msgstr "<emph>Side</emph>: sidenummeret til den nye kontrollen. Standard = 0"
 
 #. Y3XT6
 #: sf_dialog.xhp
@@ -14423,7 +14513,7 @@ msgctxt ""
 "par_id222688543709861\n"
 "help.text"
 msgid "<emph>OffsetX, OffsetY</emph>: the number of pixels to add to the source control coordinates in \"Map AppFont\" units. Default = 0, may be negative."
-msgstr ""
+msgstr "<emph>OffsetX, OffsetY</emph>: antall piksler som skal legges til kildekontrollkoordinatene i \"Map AppFont\"-enheter. Standard = 0, kan være negativ."
 
 #. GrGTV
 #: sf_dialog.xhp
@@ -14432,7 +14522,7 @@ msgctxt ""
 "par_id321799543709637\n"
 "help.text"
 msgid "<emph>IncludeOnProperties</emph>: include the OnXXX event properties. Default = False."
-msgstr ""
+msgstr "<emph>IncludeOnProperties</emph>: inkluderer OnXXX-hendelsesegenskapene. Standard = False."
 
 #. yGR7U
 #: sf_dialog.xhp
@@ -14981,7 +15071,7 @@ msgctxt ""
 "par_id271741623728937\n"
 "help.text"
 msgid "<literal>TabPageContainer</literal> control type is not defined in the Dialog Editor."
-msgstr ""
+msgstr "Kontrolltypen <literal>TabPageContainer</literal> er ikke definert i dialogredigereren."
 
 #. 7xddb
 #: sf_dialogcontrol.xhp
@@ -15719,7 +15809,7 @@ msgctxt ""
 "par_id741612700446459\n"
 "help.text"
 msgid "Yes"
-msgstr ""
+msgstr "Ja"
 
 #. DnKXu
 #: sf_dialogcontrol.xhp
@@ -15728,7 +15818,7 @@ msgctxt ""
 "par_id311612700446893\n"
 "help.text"
 msgid "UNO<br/>object"
-msgstr ""
+msgstr "UNO<br/>objekt"
 
 #. ssCz8
 #: sf_dialogcontrol.xhp
@@ -15737,7 +15827,7 @@ msgctxt ""
 "par_id691612700446892\n"
 "help.text"
 msgid "The UNO object representing the table control data model. Refer to <link href=\"https://api.libreoffice.org/docs/idl/ref/interfacecom_1_1sun_1_1star_1_1awt_1_1grid_1_1XGridColumnModel.html\">XGridColumnModel</link> in Application Programming Interface (API) documentation for detailed information."
-msgstr ""
+msgstr "UNO-objektet som representerer tabellkontrolldatamodellen. Se <link href=\"https://api.libreoffice.org/docs/idl/ref/interfacecom_1_1sun_1_1star_1_1awt_1_1grid_1_1XGridColumnModel.html\">XGridColumnModel</link> i dokumentasjonen for Application Programming Interface (API) for detaljert informasjon."
 
 #. LSAeK
 #: sf_dialogcontrol.xhp
@@ -15746,7 +15836,7 @@ msgctxt ""
 "par_id741612811446459\n"
 "help.text"
 msgid "Yes"
-msgstr ""
+msgstr "Ja"
 
 #. sFVoA
 #: sf_dialogcontrol.xhp
@@ -15755,7 +15845,7 @@ msgctxt ""
 "par_id311612811446893\n"
 "help.text"
 msgid "UNO<br/>object"
-msgstr ""
+msgstr "UNO<br/>objekt"
 
 #. EB9tC
 #: sf_dialogcontrol.xhp
@@ -15764,7 +15854,7 @@ msgctxt ""
 "par_id691612811446892\n"
 "help.text"
 msgid "The UNO object representing the tree control data model. Refer to <link href=\"https://api.libreoffice.org/docs/idl/ref/interfacecom_1_1sun_1_1star_1_1awt_1_1grid_1_1XGridDataModel.html\">XGridDataModel</link> in Application Programming Interface (API) documentation for detailed information."
-msgstr ""
+msgstr "UNO-objektet som representerer trekontrolldatamodellen. Se <link href=\"https://api.libreoffice.org/docs/idl/ref/interfacecom_1_1sun_1_1star_1_1awt_1_1grid_1_1XGridDataModel.html\">XGridDataModel</link> i dokumentasjonen for Application Programming Interface (API) for detaljert informasjon."
 
 #. VLPsS
 #: sf_dialogcontrol.xhp
@@ -15944,7 +16034,7 @@ msgctxt ""
 "par_id552598543254951\n"
 "help.text"
 msgid "A dialog may have several numbered tabs identifiable or modifiable by their <literal>Value</literal> property."
-msgstr ""
+msgstr "En dialogboks kan ha flere nummererte faner som kan identifiseres eller endres ved deres <literal>Verdi</literal>-egenskap."
 
 #. CVTcE
 #: sf_dialogcontrol.xhp
@@ -15989,7 +16079,7 @@ msgctxt ""
 "par_id961612628879819\n"
 "help.text"
 msgid "Name (event API link)"
-msgstr ""
+msgstr "Navn (kobling til hendelses-API)"
 
 #. 2A2Ex
 #: sf_dialogcontrol.xhp
@@ -16133,7 +16223,7 @@ msgctxt ""
 "par_id882722707606121\n"
 "help.text"
 msgid "(Not in Basic IDE) when a tab in a TabPage control is selected"
-msgstr ""
+msgstr "(Ikke i Basic IDE) når en fane i en TabPage-kontroll er valgt"
 
 #. th6Kr
 #: sf_dialogcontrol.xhp
@@ -20608,14 +20698,14 @@ msgctxt ""
 msgid "<emph>filename</emph>: A string representing the file to be tested."
 msgstr "<emph>filnavn</emph>: En streng som representerer filen som skal testes."
 
-#. ChDCL
+#. Cpp7b
 #: sf_filesystem.xhp
 msgctxt ""
 "sf_filesystem.xhp\n"
 "par_id11158394432779\n"
 "help.text"
-msgid "Returns a zero-based array of the files stored in a given folder. Each entry in the array is a string containing the full path and file name."
-msgstr "Returnerer en null-basert matrise av filene som er lagret i en gitt mappe. Hver oppføring i matrisen er en streng som inneholder hele banen og filnavnet."
+msgid "Returns a zero-based array (BASIC) or tuple (Python) of the files stored in a given folder. Each entry in the array or tuple is a string containing the full path and file name."
+msgstr ""
 
 #. JVjE3
 #: sf_filesystem.xhp
@@ -27464,7 +27554,7 @@ msgctxt ""
 "par_id561744021702057\n"
 "help.text"
 msgid "Yes"
-msgstr ""
+msgstr "Ja"
 
 #. 5fv9w
 #: sf_platform.xhp
@@ -27473,7 +27563,7 @@ msgctxt ""
 "par_id831744021741958\n"
 "help.text"
 msgid "Returns the prefix used to name new documents (\"Untitled \" in english)."
-msgstr ""
+msgstr "Returnerer prefikset som brukes til å navngi nye dokumenter (\"Uten tittel \" på engelsk)."
 
 #. BFiEF
 #: sf_platform.xhp
@@ -27491,6 +27581,15 @@ msgctxt ""
 "par_id831633021741958\n"
 "help.text"
 msgid "Returns a <literal>ScriptForge.Dictionary</literal> instance containing key-value pairs in relation with <emph>Tools - Options - User Data</emph> dialog."
+msgstr "Returnerer en <literal>ScriptForge.Dictionary</literal>-forekomst som inneholder nøkkel-verdi-par i forhold til <emph>Verktøy - Alternativer - Brukerdata</emph>-dialogen."
+
+#. p2UcC
+#: sf_platform.xhp
+msgctxt ""
+"sf_platform.xhp\n"
+"par_id951743155374013\n"
+"help.text"
+msgid "Extensive operating system name identification is available from <link href=\"text/scalc/01/04060104.xhp#bm_id3691824\">INFO(\"system\")</link> Calc formula."
 msgstr ""
 
 #. FJs9t
