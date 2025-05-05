@@ -3,9 +3,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2025-04-09 13:50+0200\n"
-"PO-Revision-Date: 2025-03-05 00:01+0000\n"
-"Last-Translator: Christian Lohmaier <cloph@documentfoundation.org>\n"
+"POT-Creation-Date: 2025-05-05 12:00+0200\n"
+"PO-Revision-Date: 2025-05-05 04:55+0000\n"
+"Last-Translator: Christian Kühl <kuehl.christian@googlemail.com>\n"
 "Language-Team: German <https://translations.documentfoundation.org/projects/libo_ui-master/sfx2messages/de/>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
@@ -168,7 +168,7 @@ msgstr "Dokumentversionen"
 #: include/sfx2/strings.hrc:49
 msgctxt "STR_NEW_FILENAME_SAVE"
 msgid "If you do not want to overwrite the original document, you should save your work under a new filename."
-msgstr "Wenn Sie das Originaldokument nicht überschreiben möchten, sollten Sie Ihre Arbeit unter einem neuen Dateinamen speichern."
+msgstr "Wenn das Originaldokument nicht überschrieben werden soll, muss die Arbeit unter einem neuen Dateinamen gespeichert werden."
 
 #. LHuxN
 #: include/sfx2/strings.hrc:50
@@ -221,7 +221,7 @@ msgid ""
 "Do you want to save the document?"
 msgstr ""
 "Das Dokument muss gespeichert werden, bevor es signiert werden kann. Beim Speichern werden alle vorhandenen Signaturen entfernt.\n"
-"Möchten Sie das Dokument speichern?"
+"Soll das Dokument gespeichert werden?"
 
 #. iFaMb
 #: include/sfx2/strings.hrc:60
@@ -263,7 +263,7 @@ msgstr "$1 Dokumentvorlage erfolgreich exportiert."
 #: include/sfx2/strings.hrc:66
 msgctxt "STR_MSG_QUERY_COPY"
 msgid "$1 could not be moved to the category \"$2\". Do you want to copy the template instead?"
-msgstr "$1 kann nicht in die Kategorie \"$2\" verschoben werden. Möchten Sie die Dokumentvorlage stattdessen kopieren?"
+msgstr "$1 kann nicht in die Kategorie \"$2\" verschoben werden. Soll die Dokumentvorlage stattdessen kopiert werden?"
 
 #. 9bJN3
 #: include/sfx2/strings.hrc:67
@@ -349,7 +349,7 @@ msgstr "Soll die ausgewählte Kategorie gelöscht werden?"
 #: include/sfx2/strings.hrc:77
 msgctxt "STR_QMSG_TEMPLATE_OVERWRITE"
 msgid "A template named $1 already exists in $2. Do you want to overwrite it?"
-msgstr "Eine Dokumentvorlage mit dem Namen $1 existiert bereits in $2. Möchten Sie diese überschreiben?"
+msgstr "Eine Dokumentvorlage mit dem Namen $1 existiert bereits in $2. Diese überschreiben?"
 
 #. 6MoGu
 #: include/sfx2/strings.hrc:78
@@ -497,7 +497,7 @@ msgid ""
 "Maybe no web browser could be found on your system. In that case, please check your Desktop Preferences or install a web browser (for example, Firefox) in the default location requested during the browser installation."
 msgstr ""
 "Öffnen von \"$(ARG1)\" schlug mit dem Fehlercode $(ARG2) und folgender Nachricht fehl: \"$(ARG3)\"\n"
-"Vielleicht wurde kein Webbrowser auf Ihrem System gefunden. In diesem Fall prüfen Sie bitte Ihre Desktop-Einstellungen oder installieren Sie einen Webbrowser (beispielsweise Firefox) am vorgegebenen Ort, wie während der Browser-Installation gefordert."
+"Vielleicht wurde kein Webbrowser auf dem System gefunden. In diesem Fall bitte die Desktop-Einstellungen prüfen oder einen Webbrowser (beispielsweise Firefox) am vorgegebenen Ort installieren, wie während der Browser-Installation gefordert."
 
 #. QEABe
 #: include/sfx2/strings.hrc:104
@@ -507,7 +507,7 @@ msgid ""
 "Do you really want to open it?"
 msgstr ""
 "Es ist möglicherweise gefährlich, \"$(ARG1)\" zu öffnen.\n"
-"Möchten Sie es wirklich öffnen?"
+"Soll es wirklich geöffnet werden?"
 
 #. ADqLM
 #: include/sfx2/strings.hrc:105
@@ -787,113 +787,121 @@ msgid ""
 "Do you want to continue saving the document?"
 msgstr ""
 "Das Speichern entfernt alle existierenden Signaturen.\n"
-"Möchten Sie mit dem Speichern fortfahren?"
+"Soll mit dem Speichern fortgefahren werden?"
+
+#. zxeJ7
+#: include/sfx2/strings.hrc:149
+msgctxt "RID_SVXSTR_XMLSEC_QUERY_LOSINGSCRIPTINGSIGNATURE"
+msgid ""
+"Saving with password will remove all existing scripting signatures, and (depending on macro security settings) macros in the document may no longer be runnable.\n"
+"Do you want to continue saving the document with password?"
+msgstr ""
 
 #. cGnF9
-#: include/sfx2/strings.hrc:149
+#: include/sfx2/strings.hrc:150
 msgctxt "RID_SVXSTR_XMLSEC_QUERY_SAVEBEFORESIGN"
 msgid ""
 "The document has to be saved before it can be signed.\n"
 "Do you want to save the document?"
 msgstr ""
 "Das Dokument muss gespeichert werden, bevor es signiert werden kann.\n"
-"Möchten Sie das Dokument jetzt speichern?"
+"Soll das Dokument jetzt gespeichert werden?"
 
 #. zNVEd
-#: include/sfx2/strings.hrc:150
+#: include/sfx2/strings.hrc:151
 msgctxt "STR_QUERY_CANCELCHECKOUT"
 msgid ""
 "This will discard all changes on the server since check-out.\n"
 "Do you want to proceed?"
 msgstr ""
 "Dies verwirft alle Änderungen seit dem Abmelden vom Server.\n"
-"Möchten Sie fortfahren?"
+"Fortfahren?"
 
 #. QeNqB
-#: include/sfx2/strings.hrc:151
+#: include/sfx2/strings.hrc:152
 msgctxt "STR_QUERY_REMEMBERSIGNATURE"
 msgid "Do you want to remember that signature for each save?"
-msgstr "Möchten Sie diese Signatur für jeden Speichervorgang merken?"
+msgstr "Diese Signatur für jeden Speichervorgang merken?"
 
 #. NBpa3
-#: include/sfx2/strings.hrc:152
+#: include/sfx2/strings.hrc:153
 msgctxt "STR_ERROR_NOMATCHINGDEFUALTCERT"
 msgid ""
 "Couldn't find a matching signing key. The document won't be signed.\n"
 "Please update the signing key in Options."
 msgstr ""
 "Es konnte kein passender Signaturschlüssel gefunden werden. Das Dokument wird nicht signiert.\n"
-"Bitte aktualisieren Sie den Signaturschlüssel in den Optionen."
+"Bitte den Signaturschlüssel in den Optionen aktualisieren."
 
 #. jufLD
-#: include/sfx2/strings.hrc:153
+#: include/sfx2/strings.hrc:154
 msgctxt "STR_INFO_WRONGDOCFORMAT"
 msgid "This document must be saved in OpenDocument file format before it can be digitally signed."
 msgstr "Dieses Dokument muss im OpenDocument Dokumentformat gespeichert werden, bevor es digital signiert werden kann."
 
 #. ori9u
-#: include/sfx2/strings.hrc:154
+#: include/sfx2/strings.hrc:155
 msgctxt "RID_XMLSEC_DOCUMENTSIGNED"
 msgid " (Signed)"
 msgstr " (Signiert)"
 
 #. kgWZS
-#: include/sfx2/strings.hrc:155
+#: include/sfx2/strings.hrc:156
 msgctxt "STR_EMBEDDED_TITLE"
 msgid " (Embedded document)"
 msgstr " (Eingebettetes Dokument)"
 
 #. 3nT9T
-#: include/sfx2/strings.hrc:156
+#: include/sfx2/strings.hrc:157
 msgctxt "STR_STANDARD"
 msgid "Standard"
 msgstr "Standard"
 
 #. FjCuJ
-#: include/sfx2/strings.hrc:157
+#: include/sfx2/strings.hrc:158
 msgctxt "RID_SVXSTR_FILELINK"
 msgid "Document"
 msgstr "Dokument"
 
 #. BfMd3
-#: include/sfx2/strings.hrc:158
+#: include/sfx2/strings.hrc:159
 msgctxt "STR_NONE"
 msgid "- None -"
 msgstr "– Keine –"
 
 #. XBXvE
-#: include/sfx2/strings.hrc:159
+#: include/sfx2/strings.hrc:160
 msgctxt "saveastemplatedlg|categorylist"
 msgid "None"
 msgstr "Keine"
 
 #. 5kUsi
-#: include/sfx2/strings.hrc:160
+#: include/sfx2/strings.hrc:161
 msgctxt "RID_SVXSTR_GRAPHICLINK"
 msgid "Image"
 msgstr "Bild"
 
 #. dUK2G
-#: include/sfx2/strings.hrc:161
+#: include/sfx2/strings.hrc:162
 msgctxt "STR_SFX_FILTERNAME_ALL"
 msgid "All files"
 msgstr "Alle Dateien"
 
 #. E39E2
-#: include/sfx2/strings.hrc:162
+#: include/sfx2/strings.hrc:163
 msgctxt "STR_SFX_FILTERNAME_PDF"
 msgid "PDF files"
 msgstr "PDF-Dateien"
 
 #. gCHbP
-#: include/sfx2/strings.hrc:163
+#: include/sfx2/strings.hrc:164
 msgctxt "RID_SVXSTR_EDITGRFLINK"
 msgid "Link Image"
 msgstr "Bild verknüpfen"
 
 #. u9H7a
 #. i66948 used in project scripting
-#: include/sfx2/strings.hrc:165
+#: include/sfx2/strings.hrc:166
 msgctxt "STR_ERRUNOEVENTBINDUNG"
 msgid ""
 "An appropriate component method %1\n"
@@ -904,46 +912,46 @@ msgstr ""
 "Eine passende Komponentenmethode %1\n"
 "konnte nicht gefunden werden.\n"
 "\n"
-"Überprüfen Sie die Schreibweise des Methodennamens."
+"Bitte die Schreibweise des Methodennamens überprüfen."
 
 #. 2FLYB
-#: include/sfx2/strings.hrc:166
+#: include/sfx2/strings.hrc:167
 msgctxt "RID_SVXSTR_GRFILTER_OPENERROR"
 msgid "Image file cannot be opened"
 msgstr "Bilddatei kann nicht geöffnet werden"
 
 #. 6eLsb
-#: include/sfx2/strings.hrc:167
+#: include/sfx2/strings.hrc:168
 msgctxt "RID_SVXSTR_GRFILTER_IOERROR"
 msgid "Image file cannot be read"
 msgstr "Bilddatei kann nicht gelesen werden"
 
 #. HGRsV
-#: include/sfx2/strings.hrc:168
+#: include/sfx2/strings.hrc:169
 msgctxt "RID_SVXSTR_GRFILTER_FORMATERROR"
 msgid "Unknown image format"
 msgstr "Unbekanntes Bildformat"
 
 #. YJhGK
-#: include/sfx2/strings.hrc:169
+#: include/sfx2/strings.hrc:170
 msgctxt "RID_SVXSTR_GRFILTER_VERSIONERROR"
 msgid "This version of the image file is not supported"
 msgstr "Die Version der Bilddatei wird nicht unterstützt"
 
 #. Sn8KQ
-#: include/sfx2/strings.hrc:170
+#: include/sfx2/strings.hrc:171
 msgctxt "RID_SVXSTR_GRFILTER_FILTERERROR"
 msgid "Image filter not found"
 msgstr "Grafikfilter nicht gefunden"
 
 #. huEFV
-#: include/sfx2/strings.hrc:171
+#: include/sfx2/strings.hrc:172
 msgctxt "RID_SVXSTR_TXTFILTER_FILTERERROR"
 msgid "This is not a text document"
 msgstr "Dies ist kein Textdokument"
 
 #. ejBgZ
-#: include/sfx2/strings.hrc:172
+#: include/sfx2/strings.hrc:173
 msgctxt "RID_SVXSTR_END_REDLINING_WARNING"
 msgid ""
 "This action will exit the change recording mode.\n"
@@ -959,240 +967,240 @@ msgstr ""
 "\n"
 
 #. E2CcY
-#: include/sfx2/strings.hrc:173
+#: include/sfx2/strings.hrc:174
 msgctxt "RID_SVXSTR_INCORRECT_PASSWORD"
 msgid "Incorrect password"
 msgstr "Fehlerhaftes Kennwort"
 
 #. 7Ezso
-#: include/sfx2/strings.hrc:174
+#: include/sfx2/strings.hrc:175
 msgctxt "RID_SVXSTR_GPG_ENCRYPT_FAILURE"
 msgid "OpenPGP key not trusted, damaged, or encryption failure. Please try again."
-msgstr "Der OpenPGP-Schlüssel ist nicht vertrauenswürdig, beschädigt oder die Verschlüsselung schlug fehl. Bitte versuchen Sie es erneut."
+msgstr "Der OpenPGP-Schlüssel ist nicht vertrauenswürdig, beschädigt oder die Verschlüsselung schlug fehl. Bitte erneut versuchen."
 
 #. DQCUm
-#: include/sfx2/strings.hrc:176
+#: include/sfx2/strings.hrc:177
 msgctxt "STR_PASSWD_MIN_LEN"
 msgid "(Minimum $(MINLEN) characters)"
 msgstr "(mindestens $(MINLEN) Zeichen)"
 
 #. ZKZnh
-#: include/sfx2/strings.hrc:177
+#: include/sfx2/strings.hrc:178
 msgctxt "STR_PASSWD_MIN_LEN1"
 msgid "(Minimum 1 character)"
 msgstr "(mindestens 1 Zeichen)"
 
 #. B3WoF
-#: include/sfx2/strings.hrc:178
+#: include/sfx2/strings.hrc:179
 msgctxt "STR_PASSWD_EMPTY"
 msgid "(The password can be empty)"
 msgstr "(Das Kennwort kann leer sein.)"
 
 #. iBD9D
-#: include/sfx2/strings.hrc:179
+#: include/sfx2/strings.hrc:180
 msgctxt "STR_MODULENOTINSTALLED"
 msgid "The action could not be executed. The %PRODUCTNAME program module needed for this action is currently not installed."
 msgstr "Die Aktion konnte nicht ausgeführt werden. Das dafür benötigte %PRODUCTNAME-Modul ist momentan nicht installiert."
 
 #. TXAV5
-#: include/sfx2/strings.hrc:181
+#: include/sfx2/strings.hrc:182
 msgctxt "STR_FILTER_NOT_INSTALLED"
 msgid ""
 "The selected filter $(FILTER) has not been installed.\n"
 "Would you like to do this now?"
 msgstr ""
 "Der ausgewählte Filter $(FILTER) ist nicht installiert.\n"
-"Möchten Sie das nachholen?"
+"Dies jetzt nachholen?"
 
 #. gQhYY
-#: include/sfx2/strings.hrc:182
+#: include/sfx2/strings.hrc:183
 msgctxt "STR_FILTER_CONSULT_SERVICE"
 msgid ""
 "The selected filter $(FILTER) is not included in your edition.\n"
 "You can find information about orders on our homepage."
 msgstr ""
-"Der ausgewählte Filter $(FILTER) ist in Ihrer Edition nicht enthalten.\n"
-"Informationen zu Bestellmöglichkeiten finden Sie auf unserer Homepage."
+"Der ausgewählte Filter $(FILTER) ist in dieser Edition nicht enthalten.\n"
+"Informationen zu Bestellmöglichkeiten sind auf unserer Homepage zu finden."
 
 #. Y9yeS
-#: include/sfx2/strings.hrc:184
+#: include/sfx2/strings.hrc:185
 msgctxt "STR_WELCOME_LINE1"
 msgid "Welcome to %PRODUCTNAME."
 msgstr "Willkommen bei %PRODUCTNAME."
 
 #. DVEkR
-#: include/sfx2/strings.hrc:185
+#: include/sfx2/strings.hrc:186
 msgctxt "STR_WELCOME_LINE2"
 msgid "Drop a document here or open an app to create one."
-msgstr "Legen Sie hier ein Dokument ab oder wählen Sie eine Anwendung aus, um eines zu erstellen."
+msgstr "Hier ein Dokument ablegen oder eine Anwendung starten, um eines zu erstellen."
 
 #. oTVdA
 #. Translators: Target types in Auto-redaction dialog
-#: include/sfx2/strings.hrc:188
+#: include/sfx2/strings.hrc:189
 msgctxt "STR_REDACTION_TARGET_TYPE_TEXT"
 msgid "Text"
 msgstr "Text"
 
 #. eG5qc
-#: include/sfx2/strings.hrc:189
+#: include/sfx2/strings.hrc:190
 msgctxt "STR_REDACTION_TARGET_TYPE_REGEX"
 msgid "Regular expression"
 msgstr "Regulärer Ausdruck"
 
 #. TaDCG
-#: include/sfx2/strings.hrc:190
+#: include/sfx2/strings.hrc:191
 msgctxt "STR_REDACTION_TARGET_TYPE_PREDEF"
 msgid "Predefined"
 msgstr "Vordefiniert"
 
 #. bDjwW
-#: include/sfx2/strings.hrc:191
+#: include/sfx2/strings.hrc:192
 msgctxt "STR_REDACTION_TARGET_TYPE_UNKNOWN"
 msgid "Unknown"
 msgstr "Unbekannt"
 
 #. YgzCk
 #. Translators: Values for the Case Sensitive and the Whole Words columns in Auto-redaction dialog
-#: include/sfx2/strings.hrc:194
+#: include/sfx2/strings.hrc:195
 msgctxt "STR_REDACTION_YES"
 msgid "Yes"
 msgstr "Ja"
 
 #. oZNaM
-#: include/sfx2/strings.hrc:195
+#: include/sfx2/strings.hrc:196
 msgctxt "STR_REDACTION_NO"
 msgid "No"
 msgstr "Nein"
 
 #. FM3Gf
 #. Translators: Misc strings of the Auto Redaction dialog
-#: include/sfx2/strings.hrc:198
+#: include/sfx2/strings.hrc:199
 msgctxt "STR_REDACTION_TARGET"
 msgid "Target"
 msgstr "Zielvorgabe"
 
 #. m2i7V
-#: include/sfx2/strings.hrc:199
+#: include/sfx2/strings.hrc:200
 msgctxt "STR_REDACTION_LOAD_TARGETS"
 msgid "Load Targets"
 msgstr "Zielvorgaben laden"
 
 #. HgrwX
-#: include/sfx2/strings.hrc:200
+#: include/sfx2/strings.hrc:201
 msgctxt "STR_REDACTION_SAVE_TARGETS"
 msgid "Save Targets"
 msgstr "Zielvorgaben speichern"
 
 #. MYMTF
-#: include/sfx2/strings.hrc:201
+#: include/sfx2/strings.hrc:202
 msgctxt "STR_REDACTION_FIELDS_REQUIRED"
 msgid "All fields are required"
 msgstr "Alle Felder sind erforderlich"
 
 #. rQS6M
-#: include/sfx2/strings.hrc:202
+#: include/sfx2/strings.hrc:203
 msgctxt "STR_REDACTION_TARGET_NAME_CLASH"
 msgid "There is already a target with this name"
 msgstr "Es existiert bereits eine Zielvorgabe mit diesem Namen"
 
 #. s248s
-#: include/sfx2/strings.hrc:203
+#: include/sfx2/strings.hrc:204
 msgctxt "STR_REDACTION_MULTI_EDIT"
 msgid "You have selected multiple targets, but only one target can be edited at once."
-msgstr "Sie haben mehrere Zielvorgaben ausgewählt, es kann aber nur eine Zielvorgabe zurzeit bearbeitet werden."
+msgstr "Mehrere Zielvorgaben wurden ausgewählt, es kann aber nur eine Zielvorgabe zurzeit bearbeitet werden."
 
 #. BTayC
-#: include/sfx2/strings.hrc:204
+#: include/sfx2/strings.hrc:205
 msgctxt "STR_REDACTION_MULTI_DELETE"
 msgid "Are you sure you would like to delete $(TARGETSCOUNT) targets at once?"
-msgstr "Möchten Sie wirklich $(TARGETSCOUNT) Zielvorgaben auf einmal löschen?"
+msgstr "Sollen $(TARGETSCOUNT) Zielvorgaben wirklich auf einmal gelöscht werden?"
 
 #. qFqDC
-#: include/sfx2/strings.hrc:205
+#: include/sfx2/strings.hrc:206
 msgctxt "STR_REDACTION_JSON_FILE_FILTER"
 msgid "Target Set (*.json)"
 msgstr "Zielvorgabe-Set (*.json)"
 
 #. EGCo6
-#: include/sfx2/strings.hrc:206
+#: include/sfx2/strings.hrc:207
 msgctxt "STR_REDACTION_EDIT_TARGET"
 msgid "Edit Target"
 msgstr "Zielvorgabe bearbeiten"
 
 #. ACY9D
-#: include/sfx2/strings.hrc:207
+#: include/sfx2/strings.hrc:208
 msgctxt "STR_REDACTION_TARGET_ADD_ERROR"
 msgid "An error occurred while adding new target. Please report this incident."
-msgstr "Beim Hinzufügen einer neuen Zielvorgabe ist ein Fehler aufgetreten. Bitte melden Sie diesen Vorfall."
+msgstr "Beim Hinzufügen einer neuen Zielvorgabe ist ein Fehler aufgetreten. Bitte diesen Vorfall melden."
 
 #. 6Jog7
-#: include/sfx2/strings.hrc:208
+#: include/sfx2/strings.hrc:209
 msgctxt "STR_REDACTION_NO_DRAW_WARNING"
 msgid "Draw module is needed for redaction. Please make sure you have %PRODUCTNAME Draw installed and working correctly."
-msgstr "Für die Redigierung wird das Modul Zeichnung benötigt. Stellen Sie sicher, dass %PRODUCTNAME Draw installiert ist und ordnungsgemäß funktioniert."
+msgstr "Für die Redigierung wird das Modul Zeichnung benötigt. Bitte sicherstellen, dass %PRODUCTNAME Draw installiert ist und ordnungsgemäß funktioniert."
 
 #. FQ9kN
-#: include/sfx2/strings.hrc:210
+#: include/sfx2/strings.hrc:211
 msgctxt "STR_SFX_FILEDLG_ACTUALVERSION"
 msgid "Current version"
 msgstr "Aktuelle Version"
 
 #. GFAEM
-#: include/sfx2/strings.hrc:211
+#: include/sfx2/strings.hrc:212
 msgctxt "STR_SFX_EXPLORERFILE_EXPORT"
 msgid "Export"
 msgstr "Exportieren"
 
 #. 2DBBC
-#: include/sfx2/strings.hrc:212
+#: include/sfx2/strings.hrc:213
 msgctxt "STR_SFX_EXPLORERFILE_INSERT"
 msgid "Insert"
 msgstr "Einfügen"
 
 #. VBKtt
-#: include/sfx2/strings.hrc:213
+#: include/sfx2/strings.hrc:214
 msgctxt "STR_SFX_EXPLORERFILE_BUTTONINSERT"
 msgid "~Insert"
 msgstr "~Einfügen"
 
 #. DcLFD
-#: include/sfx2/strings.hrc:214
+#: include/sfx2/strings.hrc:215
 msgctxt "STR_SFX_IMPORT_ALL_IMAGES"
 msgid "<All images>"
 msgstr "<Alle Bilder>"
 
 #. tPDwc
-#: include/sfx2/strings.hrc:215
+#: include/sfx2/strings.hrc:216
 msgctxt "STR_PB_SAVEACOPY"
 msgid "Save a Copy"
 msgstr "Eine Kopie speichern"
 
 #. CrEzt
-#: include/sfx2/strings.hrc:216
+#: include/sfx2/strings.hrc:217
 msgctxt "STR_PB_COMPAREDOC"
 msgid "Compare to Original Document"
 msgstr "Mit Originaldokument vergleichen"
 
 #. 4qMCh
-#: include/sfx2/strings.hrc:217
+#: include/sfx2/strings.hrc:218
 msgctxt "STR_PB_MERGEDOC"
 msgid "Merge with"
 msgstr "Zusammenführen mit"
 
 #. cDMBG
-#: include/sfx2/strings.hrc:219
+#: include/sfx2/strings.hrc:220
 msgctxt "STR_SFX_NEWOFFICEDOC"
 msgid "%PRODUCTNAME document"
 msgstr "%PRODUCTNAME-Dokument"
 
 #. 43QYo
-#: include/sfx2/strings.hrc:220
+#: include/sfx2/strings.hrc:221
 msgctxt "SFX_ST_DURATION_FORMAT"
 msgid " Y: %1 M: %2 D: %3 H: %4 M: %5 S: %6"
 msgstr " J: %1 M: %2 T: %3 H: %4 M: %5 S: %6"
 
 #. jQX7C
-#: include/sfx2/strings.hrc:221
+#: include/sfx2/strings.hrc:222
 msgctxt "STR_SFX_QUERY_WRONG_TYPE"
 msgid ""
 "The value entered does not match the specified type.\n"
@@ -1202,31 +1210,31 @@ msgstr ""
 "Der Wert wird als Text gespeichert."
 
 #. cinmA
-#: include/sfx2/strings.hrc:223
+#: include/sfx2/strings.hrc:224
 msgctxt "STR_QUERY_OVERWRITE"
 msgid "Style already exists. Overwrite?"
 msgstr "Vorlage existiert bereits. Überschreiben?"
 
 #. f627N
-#: include/sfx2/strings.hrc:225
+#: include/sfx2/strings.hrc:226
 msgctxt "STR_RESET"
 msgid "~Reset"
 msgstr "~Zurücksetzen"
 
 #. EXGDb
-#: include/sfx2/strings.hrc:226
+#: include/sfx2/strings.hrc:227
 msgctxt "STR_TABPAGE_INVALIDNAME"
 msgid "This name is already in use."
 msgstr "Der Name wird bereits für eine Vorlage verwendet."
 
 #. N5aeR
-#: include/sfx2/strings.hrc:227
+#: include/sfx2/strings.hrc:228
 msgctxt "STR_TABPAGE_INVALIDSTYLE"
 msgid "This Style does not exist."
 msgstr "Diese Vorlage existiert nicht."
 
 #. CYQwN
-#: include/sfx2/strings.hrc:228
+#: include/sfx2/strings.hrc:229
 msgctxt "STR_TABPAGE_INVALIDPARENT"
 msgid ""
 "This Style cannot be used as a base Style,\n"
@@ -1236,7 +1244,7 @@ msgstr ""
 "da eine Rekursion entstehen würde."
 
 #. ECPSd
-#: include/sfx2/strings.hrc:229
+#: include/sfx2/strings.hrc:230
 msgctxt "STR_POOL_STYLE_NAME"
 msgid ""
 "Name already exists as a default Style.\n"
@@ -1246,7 +1254,7 @@ msgstr ""
 "Bitte einen anderen Namen vergeben."
 
 #. NWDmA
-#: include/sfx2/strings.hrc:230
+#: include/sfx2/strings.hrc:231
 msgctxt "STR_DELETE_STYLE_USED"
 msgid ""
 "One or more of the selected styles is in use in this document.\n"
@@ -1254,145 +1262,145 @@ msgid ""
 "Do you still wish to delete these styles?\n"
 msgstr ""
 "Eine oder mehrere der ausgewählten Vorlagen sind in diesem Dokument in Verwendung.\n"
-"Wenn Sie diese Vorlagen löschen, wird dem Text oder Objekt die übergeordnete Vorlage zugewiesen.\n"
+"Wenn diese Vorlagen gelöscht werden, wird dem Text oder Objekt die übergeordnete Vorlage zugewiesen.\n"
 "Sollen die ausgewählten Vorlagen gelöscht werden?\n"
 
 #. kuD77
-#: include/sfx2/strings.hrc:231
+#: include/sfx2/strings.hrc:232
 msgctxt "STR_DELETE_STYLE"
 msgid "Styles in use: "
 msgstr "Vorlagen in Verwendung: "
 
 #. 4JhEW
-#: include/sfx2/strings.hrc:232
+#: include/sfx2/strings.hrc:233
 msgctxt "STR_SID_NAVIGATOR"
 msgid "Navigator"
 msgstr "Navigator"
 
 #. Acahp
-#: include/sfx2/strings.hrc:233
+#: include/sfx2/strings.hrc:234
 msgctxt "STR_ERROR_WRONG_CONFIRM"
 msgid "Faulty password confirmation"
 msgstr "Fehlerhafte Bestätigung des Kennwortes"
 
 #. 6uv4b
-#: include/sfx2/strings.hrc:234
+#: include/sfx2/strings.hrc:235
 msgctxt "STR_PDF_EXPORT_SEND"
 msgid "Send"
 msgstr "Senden"
 
 #. 9HHQw
-#: include/sfx2/strings.hrc:235
+#: include/sfx2/strings.hrc:236
 msgctxt "STR_FONT_TABPAGE"
 msgid "Font"
 msgstr "Schriftart"
 
 #. 7baC6
-#: include/sfx2/strings.hrc:237
+#: include/sfx2/strings.hrc:238
 msgctxt "STR_VIEWVERSIONCOMMENT"
 msgid "View Version Comment"
 msgstr "Versionskommentar anzeigen"
 
 #. LGiF8
-#: include/sfx2/strings.hrc:238
+#: include/sfx2/strings.hrc:239
 msgctxt "STR_NO_NAME_SET"
 msgid "(no name set)"
 msgstr "(kein Name zugewiesen)"
 
 #. rZ4Ao
-#: include/sfx2/strings.hrc:240
+#: include/sfx2/strings.hrc:241
 msgctxt "STR_STYLE_FILTER_HIERARCHICAL"
 msgid "Hierarchical"
 msgstr "Hierarchisch"
 
 #. 4VXDe
-#: include/sfx2/strings.hrc:242
+#: include/sfx2/strings.hrc:243
 msgctxt "STR_MACRO_LOSS"
 msgid "Do you really want to cancel the recording? Any steps recorded up to this point will be lost."
 msgstr "Soll die Aufzeichnung wirklich abgebrochen werden? Alle bis zu diesem Punkt aufgezeichneten Schritte gehen damit verloren."
 
 #. 9MnrK
-#: include/sfx2/strings.hrc:243
+#: include/sfx2/strings.hrc:244
 msgctxt "STR_CANCEL_RECORDING"
 msgid "Cancel Recording"
 msgstr "Aufzeichnung abbrechen"
 
 #. m9FCm
-#: include/sfx2/strings.hrc:245
+#: include/sfx2/strings.hrc:246
 msgctxt "RID_CNT_STR_WAITING"
 msgid "The templates are being initialized for first-time usage."
 msgstr "Die Dokumentvorlagen werden jetzt für die erstmalige Verwendung einmal initialisiert."
 
 #. F3ym2
-#: include/sfx2/strings.hrc:247
+#: include/sfx2/strings.hrc:248
 msgctxt "STR_NODEFPRINTER"
 msgid ""
 "No default printer found.\n"
 "Please choose a printer and try again."
 msgstr ""
 "Keinen Standarddrucker gefunden.\n"
-"Bitte wählen Sie einen Drucker aus und versuchen Sie es noch einmal."
+"Bitte einen Drucker auswählen und noch einmal versuchen."
 
 #. a3NTu
-#: include/sfx2/strings.hrc:248
+#: include/sfx2/strings.hrc:249
 msgctxt "STR_NOSTARTPRINTER"
 msgid ""
 "Could not start printer.\n"
 "Please check your printer configuration."
 msgstr ""
 "Der Drucker konnte nicht gestartet werden.\n"
-"Bitte überprüfen Sie Ihre Druckerkonfiguration."
+"Bitte die Druckerkonfiguration prüfen."
 
 #. acKHX
-#: include/sfx2/strings.hrc:249
+#: include/sfx2/strings.hrc:250
 msgctxt "STR_ERROR_PRINTER_BUSY"
 msgid "Printer busy"
 msgstr "Drucker bereits in Betrieb"
 
 #. hDEUj
-#: include/sfx2/strings.hrc:250
+#: include/sfx2/strings.hrc:251
 msgctxt "STR_READONLY"
 msgid " (read-only)"
 msgstr " (Schreibgeschützt)"
 
 #. uL87C
-#: include/sfx2/strings.hrc:251
+#: include/sfx2/strings.hrc:252
 msgctxt "STR_PRINT_NEWORI"
 msgid ""
 "The page size and orientation have been modified.\n"
 "Would you like to save the new settings in the\n"
 "active document?"
 msgstr ""
-"Sie haben die Seitenausrichtungs-Einstellung geändert.\n"
+"Die Einstellung der Seitenausrichtung wurde geändert.\n"
 "Sollen die geänderten Einstellungen in das Dokument\n"
 "übernommen werden?"
 
 #. cxuAH
-#: include/sfx2/strings.hrc:252
+#: include/sfx2/strings.hrc:253
 msgctxt "STR_PRINT_NEWSIZE"
 msgid ""
 "The page size has been modified.\n"
 "Should the new settings be saved\n"
 "in the active document?"
 msgstr ""
-"Sie haben die Seitengröße geändert.\n"
+"Die Seitengröße wurde geändert.\n"
 "Sollen die geänderten Einstellungen in das\n"
 "Dokument übernommen werden?"
 
 #. 4QJxB
-#: include/sfx2/strings.hrc:253
+#: include/sfx2/strings.hrc:254
 msgctxt "STR_PRINT_NEWORISIZE"
 msgid ""
 "The page size and orientation have been modified.\n"
 "Would you like to save the new settings in the\n"
 "active document?"
 msgstr ""
-"Sie haben die Seitenausrichtungs-Einstellung geändert.\n"
+"Die Einstellung der Seitenausrichtung wurde geändert.\n"
 "Sollen die geänderten Einstellungen in das Dokument\n"
 "übernommen werden?"
 
 #. RXbfs
-#: include/sfx2/strings.hrc:254
+#: include/sfx2/strings.hrc:255
 msgctxt "STR_CANT_CLOSE"
 msgid ""
 "The document cannot be closed because a\n"
@@ -1402,18 +1410,18 @@ msgstr ""
 "da noch ein Druckauftrag läuft."
 
 #. YGyQP
-#: include/sfx2/strings.hrc:255
+#: include/sfx2/strings.hrc:256
 msgctxt "STR_ERROR_SEND_MAIL"
 msgid ""
 "An error occurred in sending the message. Possible errors could be a missing user account or a defective setup.\n"
 "Please check the %PRODUCTNAME settings or your email program settings."
 msgstr ""
 "Fehler beim Versenden der Nachricht. Mögliche Fehler sind ein fehlendes Nutzerkonto oder ein fehlerhaftes Setup.\n"
-"Bitte überprüfen Sie die Einstellungen von %PRODUCTNAME oder Ihres E-Mail-Programms."
+"Bitte die Einstellungen von %PRODUCTNAME oder des E-Mail-Programms prüfen."
 
 #. 3nzi6
 #. Error codes look like "MAPI_E_FAILURE" or "1234"
-#: include/sfx2/strings.hrc:257
+#: include/sfx2/strings.hrc:258
 msgctxt "STR_ERROR_SEND_MAIL_CODE"
 msgid ""
 "An error occurred in sending the message. Possible errors could be a missing user account or a defective setup.\n"
@@ -1425,632 +1433,632 @@ msgstr ""
 "Der Fehlercode ist $1"
 
 #. ZWTDr
-#: include/sfx2/strings.hrc:258
+#: include/sfx2/strings.hrc:259
 msgctxt "STR_ERROR_SEND_MAIL_HEADER"
 msgid "Error sending mail"
 msgstr "Fehler beim Versenden der Nachricht"
 
 #. QVS2D
-#: include/sfx2/strings.hrc:259
+#: include/sfx2/strings.hrc:260
 msgctxt "STR_QUERY_OPENASTEMPLATE"
 msgid "This document cannot be edited, possibly due to missing access rights. Do you want to edit a copy of the document?"
-msgstr "Das Dokument kann nicht bearbeitet werden, beispielsweise aufgrund fehlender Rechte. Möchten Sie stattdessen mit einer Kopie weiterarbeiten?"
+msgstr "Das Dokument kann nicht bearbeitet werden, beispielsweise aufgrund fehlender Rechte. Soll stattdessen mit einer Kopie weitergearbeitet werden?"
 
 #. ZdGNX
-#: include/sfx2/strings.hrc:260
+#: include/sfx2/strings.hrc:261
 msgctxt "STR_QUERY_OPENASTEMPLATE_LOCKED"
 msgid ""
 "This document cannot be edited, because it is locked in another session.%LOCKINFO\n"
 "Do you want to edit a copy of the document?"
 msgstr ""
 "Dieses Dokument kann nicht bearbeitet werden, da es in einer anderen Sitzung gesperrt ist. %LOCKINFO\n"
-"Möchten Sie eine Kopie des Dokuments bearbeiten?"
+"Soll eine Kopie des Dokuments bearbeitet werden?"
 
 #. n3sMB
-#: include/sfx2/strings.hrc:261
+#: include/sfx2/strings.hrc:262
 msgctxt "STR_QUERY_OPENASTEMPLATE_ALLOW_IGNORE"
 msgid "You can also try to ignore the lock and open the file for editing."
-msgstr "Sie können auch versuchen, die Sperre zu ignorieren und die Datei zur Bearbeitung zu öffnen."
+msgstr "Es kann auch versucht werden, die Sperre zu ignorieren und die Datei zur Bearbeitung zu öffnen."
 
 #. yaKxR
-#: include/sfx2/strings.hrc:262
+#: include/sfx2/strings.hrc:263
 msgctxt "STR_QUERY_OPENASTEMPLATE_OPENCOPY_BTN"
 msgid "Open ~Copy"
 msgstr "~Kopie öffnen"
 
 #. UYkFP
-#: include/sfx2/strings.hrc:263
+#: include/sfx2/strings.hrc:264
 msgctxt "STR_QUERY_OPENASTEMPLATE_OPEN_BTN"
 msgid "~Open"
 msgstr "Öff~nen"
 
 #. GcSXH
-#: include/sfx2/strings.hrc:264
+#: include/sfx2/strings.hrc:265
 msgctxt "STR_REPAIREDDOCUMENT"
 msgid " (repaired document)"
 msgstr " (repariertes Dokument)"
 
 #. HPqkX
-#: include/sfx2/strings.hrc:265
+#: include/sfx2/strings.hrc:266
 msgctxt "STR_NONCHECKEDOUT_DOCUMENT"
 msgid "This document is not checked out on the server."
 msgstr "Das Dokument wurde nicht vom Server abgemeldet."
 
 #. uPc29
-#: include/sfx2/strings.hrc:266
+#: include/sfx2/strings.hrc:267
 msgctxt "STR_GET_INVOLVED_TEXT"
 msgid "Help us make %PRODUCTNAME even better!"
 msgstr "Helfen Sie uns, %PRODUCTNAME noch besser zu machen!"
 
 #. PboiP
-#: include/sfx2/strings.hrc:267
+#: include/sfx2/strings.hrc:268
 msgctxt "STR_GET_INVOLVED_BUTTON"
 msgid "Get involved"
 msgstr "Mitmachen"
 
 #. 9Hfyw
-#: include/sfx2/strings.hrc:268
+#: include/sfx2/strings.hrc:269
 msgctxt "STR_DONATE_TEXT"
 msgid "Support the development of %PRODUCTNAME."
 msgstr "Die Entwicklung von %PRODUCTNAME unterstützen."
 
 #. KzgoD
 #. Translators: text will be abbreviated at >8 characters, eg. "Please D..."
-#: include/sfx2/strings.hrc:270
+#: include/sfx2/strings.hrc:271
 msgctxt "STR_DONATE_BUTTON"
 msgid "Donate"
 msgstr "Spenden"
 
 #. G8bbK
-#: include/sfx2/strings.hrc:271
+#: include/sfx2/strings.hrc:272
 msgctxt "STR_WHATSNEW"
 msgid "You are running version %PRODUCTVERSION of %PRODUCTNAME for the first time. Do you want to learn what's new?"
-msgstr "Sie starten erstmals Version %PRODUCTVERSION von %PRODUCTNAME. Möchten Sie die Neuerungen kennenlernen?"
+msgstr "Erstmaliger Start der Version %PRODUCTVERSION von %PRODUCTNAME. Die Neuerungen kennenlernen?"
 
 #. J5UkB
-#: include/sfx2/strings.hrc:272
+#: include/sfx2/strings.hrc:273
 msgctxt "STR_WHATSNEW_BUTTON"
 msgid "Release Notes"
 msgstr "Versionshinweise"
 
 #. c7NPT
-#: include/sfx2/strings.hrc:273
+#: include/sfx2/strings.hrc:274
 msgctxt "STR_READONLY_DOCUMENT"
 msgid "This document is open in read-only mode."
 msgstr "Das Dokument ist schreibgeschützt geöffnet."
 
 #. KyyFk
-#: include/sfx2/strings.hrc:274
+#: include/sfx2/strings.hrc:275
 msgctxt "STR_READONLY_PDF"
 msgid "This PDF is open in read-only mode to allow signing the existing file."
 msgstr "Diese PDF-Datei ist schreibgeschützt geöffnet, um das Signieren der bestehenden Datei zu ermöglichen."
 
 #. MENvD
-#: include/sfx2/strings.hrc:275
+#: include/sfx2/strings.hrc:276
 msgctxt "STR_CLASSIFIED_DOCUMENT"
 msgid "The classification label of this document is %1."
 msgstr "Die Klassifizierungs-Beschriftung dieses Dokuments ist %1."
 
 #. 3B3ij
-#: include/sfx2/strings.hrc:276
+#: include/sfx2/strings.hrc:277
 msgctxt "STR_TARGET_DOC_NOT_CLASSIFIED"
 msgid "This document must be classified before the clipboard can be pasted."
 msgstr "Das Dokument muss klassifiziert sein, bevor die Zwischenablage eingefügt werden kann."
 
 #. BYcYH
-#: include/sfx2/strings.hrc:277
+#: include/sfx2/strings.hrc:278
 msgctxt "STR_DOC_CLASSIFICATION_TOO_LOW"
 msgid "This document has a lower classification level than the clipboard."
 msgstr "Dieses Dokument hat eine niedrigere Klassifizierungsebene als die Zwischenablage."
 
 #. EJPzh
-#: include/sfx2/strings.hrc:278
+#: include/sfx2/strings.hrc:279
 msgctxt "STR_CLASSIFIED_INTELLECTUAL_PROPERTY"
 msgid "Level"
 msgstr "Ebene"
 
 #. itVew
-#: include/sfx2/strings.hrc:279
+#: include/sfx2/strings.hrc:280
 msgctxt "STR_CLASSIFIED_NATIONAL_SECURITY"
 msgid "National Security:"
 msgstr "Nationale Sicherheit:"
 
 #. ZBXbG
-#: include/sfx2/strings.hrc:280
+#: include/sfx2/strings.hrc:281
 msgctxt "STR_CLASSIFIED_EXPORT_CONTROL"
 msgid "Export Control:"
 msgstr "Exportkontrolle:"
 
 #. QAnvx
-#: include/sfx2/strings.hrc:281
+#: include/sfx2/strings.hrc:282
 msgctxt "STR_CHECKOUT"
 msgid "Check Out"
 msgstr "Ausleihe"
 
 #. PwPNw
-#: include/sfx2/strings.hrc:282
+#: include/sfx2/strings.hrc:283
 msgctxt "STR_READONLY_EDIT"
 msgid "Edit Document"
 msgstr "Dokument bearbeiten"
 
 #. FCeC5
-#: include/sfx2/strings.hrc:283
+#: include/sfx2/strings.hrc:284
 msgctxt "STR_READONLY_SIGN"
 msgid "Sign Document"
 msgstr "Dokument signieren"
 
 #. MEfTq
-#: include/sfx2/strings.hrc:284
+#: include/sfx2/strings.hrc:285
 msgctxt "STR_READONLY_FINISH_SIGN"
 msgid "Finish Signing"
 msgstr "Signierung beenden"
 
 #. pkWmU
-#: include/sfx2/strings.hrc:285
+#: include/sfx2/strings.hrc:286
 msgctxt "STR_SIGNATURE_BROKEN"
 msgid "This document has an invalid signature."
 msgstr "Dieses Dokument hat eine ungültige Signatur."
 
 #. Vd3CU
-#: include/sfx2/strings.hrc:286
+#: include/sfx2/strings.hrc:287
 msgctxt "STR_SIGNATURE_INVALID"
 msgid "The signature was valid, but the document has been modified"
 msgstr "Die Signatur ist gültig, aber das Dokument wurde geändert"
 
 #. 2HNfx
-#: include/sfx2/strings.hrc:287
+#: include/sfx2/strings.hrc:288
 msgctxt "STR_SIGNATURE_NOTVALIDATED"
 msgid "At least one signature has problems: the certificate could not be validated."
 msgstr "Mindestens eine Signatur weist Probleme auf: Das Zertifikat konnte nicht bestätigt werden."
 
 #. tjCmr
-#: include/sfx2/strings.hrc:288
+#: include/sfx2/strings.hrc:289
 msgctxt "STR_SIGNATURE_PARTIAL_OK"
 msgid "At least one signature has problems: the document is only partially signed."
 msgstr "Mindestens eine Signatur weist Probleme auf: Das Dokument ist nur teilweise signiert."
 
 #. mU6ot
-#: include/sfx2/strings.hrc:289
+#: include/sfx2/strings.hrc:290
 msgctxt "STR_SIGNATURE_NOTVALIDATED_PARTIAL_OK"
 msgid "The certificate could not be validated and the document is only partially signed."
 msgstr "Das Zertifikat kann nicht verifiziert werden, sodass das Dokument nur teilweise signiert ist."
 
 #. FKDbE
-#: include/sfx2/strings.hrc:290
+#: include/sfx2/strings.hrc:291
 msgctxt "STR_SIGNATURE_OK"
 msgid "This document is digitally signed and the signature is valid."
 msgstr "Dieses Dokument ist digital signiert und die Signatur ist gültig."
 
 #. rMGka
-#: include/sfx2/strings.hrc:291
+#: include/sfx2/strings.hrc:292
 msgctxt "STR_SIGNATURE_SHOW"
 msgid "Show Signatures"
 msgstr "Signaturen anzeigen"
 
 #. fkzJb
-#: include/sfx2/strings.hrc:292
+#: include/sfx2/strings.hrc:293
 msgctxt "STR_TRACK_CHANGES_BUTTON"
 msgid "Show Toolbar"
 msgstr "Symbolleiste einblenden"
 
 #. 68ZqS
-#: include/sfx2/strings.hrc:293
+#: include/sfx2/strings.hrc:294
 msgctxt "STR_TRACK_CHANGES_BUTTON_HIDE"
 msgid "Hide Toolbar"
 msgstr "Symbolleiste ausblenden"
 
 #. BzVAA
-#: include/sfx2/strings.hrc:294
+#: include/sfx2/strings.hrc:295
 msgctxt "STR_HYPHENATION_BUTTON"
 msgid "Learn more"
-msgstr "Erfahren Sie mehr"
+msgstr "Mehr erfahren"
 
 #. BSyb4
-#: include/sfx2/strings.hrc:295
+#: include/sfx2/strings.hrc:296
 msgctxt "STR_REFRESH_MASTER_PASSWORD"
 msgid "The master password is stored in an outdated format, you should refresh it"
-msgstr "Das Master-Kennwort ist in einem veralteten Format gespeichert, Sie sollten es aktualisieren"
+msgstr "Das Master-Kennwort ist in einem veralteten Format gespeichert, es sollte aktualisiert werden"
 
 #. ysChU
-#: include/sfx2/strings.hrc:296
+#: include/sfx2/strings.hrc:297
 msgctxt "STR_REFRESH_PASSWORD"
 msgid "Refresh Password"
 msgstr "Kennwort aktualisieren"
 
 #. vf46C
-#: include/sfx2/strings.hrc:297
+#: include/sfx2/strings.hrc:298
 msgctxt "STR_MACROS_DISABLED_TITLE"
 msgid "Macros disabled"
 msgstr "Makros deaktiviert"
 
 #. zkERU
-#: include/sfx2/strings.hrc:298
+#: include/sfx2/strings.hrc:299
 msgctxt "STR_CONTAINS_MACROS"
 msgid "Macros in this document are disabled due to the Macro Security settings."
 msgstr "Makros sind in diesem Dokument aufgrund der Makrosicherheitseinstellungen deaktiviert."
 
 #. XbFQD
-#: include/sfx2/strings.hrc:299
+#: include/sfx2/strings.hrc:300
 msgctxt "STR_MACROS_DISABLED"
 msgid "Macros are disabled due to the Macro Security settings."
 msgstr "Makros sind aufgrund der Makrosicherheitseinstellungen deaktiviert."
 
 #. AZRwF
-#: include/sfx2/strings.hrc:300
+#: include/sfx2/strings.hrc:301
 msgctxt "STR_MACROS_DISABLED_SIGNATURE_INVALID"
 msgid "Macros are signed, but at least one signature has problems."
 msgstr "Makros sind signiert, aber mindestens eine Signatur weist Probleme auf."
 
 #. DRiDD
-#: include/sfx2/strings.hrc:301
+#: include/sfx2/strings.hrc:302
 msgctxt "STR_MACROS_DISABLED_CONTENT_UNSIGNED"
 msgid "Macros are signed, but the document (containing document events) is not signed."
 msgstr "Makros sind signiert, aber das Dokument (das Dokumentereignisse enthält) ist nicht signiert."
 
 #. BSkEp
-#: include/sfx2/strings.hrc:302
+#: include/sfx2/strings.hrc:303
 msgctxt "STR_MACROS"
 msgid "Show Macros"
 msgstr "Makros anzeigen"
 
 #. EMwTw
-#: include/sfx2/strings.hrc:303
+#: include/sfx2/strings.hrc:304
 msgctxt "STR_MACROS"
 msgid "Show Security Options"
 msgstr "Sicherheitsoptionen anzeigen"
 
 #. mBmGc
-#: include/sfx2/strings.hrc:304
+#: include/sfx2/strings.hrc:305
 msgctxt "STR_EVENTS"
 msgid "Show Events"
 msgstr "Ereignisse anzeigen"
 
 #. kej8D
 #. Translators: default Impress template names
-#: include/sfx2/strings.hrc:307
+#: include/sfx2/strings.hrc:308
 msgctxt "STR_TEMPLATE_NAME1"
 msgid "Grey Elegant"
 msgstr "Grau elegant"
 
 #. FkuLG
-#: include/sfx2/strings.hrc:308
+#: include/sfx2/strings.hrc:309
 msgctxt "STR_TEMPLATE_NAME2"
 msgid "Beehive"
 msgstr "Bienenkorb"
 
 #. uwaPH
-#: include/sfx2/strings.hrc:309
+#: include/sfx2/strings.hrc:310
 msgctxt "STR_TEMPLATE_NAME3"
 msgid "Blue Curve"
 msgstr "Blauer Verlauf"
 
 #. hHRDz
-#: include/sfx2/strings.hrc:310
+#: include/sfx2/strings.hrc:311
 msgctxt "STR_TEMPLATE_NAME4"
 msgid "Blueprint Plans"
 msgstr "Blaupausenpläne"
 
 #. MAnPU
-#: include/sfx2/strings.hrc:311
+#: include/sfx2/strings.hrc:312
 msgctxt "STR_TEMPLATE_NAME5"
 msgid "Candy"
 msgstr "Bonbon"
 
 #. jEiAn
-#: include/sfx2/strings.hrc:312
+#: include/sfx2/strings.hrc:313
 msgctxt "STR_TEMPLATE_NAME6"
 msgid "Yellow Idea"
 msgstr "Gelbe Idee"
 
 #. QDNuB
-#: include/sfx2/strings.hrc:313
+#: include/sfx2/strings.hrc:314
 msgctxt "STR_TEMPLATE_NAME7"
 msgid "DNA"
 msgstr "DNA"
 
 #. XBrCi
-#: include/sfx2/strings.hrc:314
+#: include/sfx2/strings.hrc:315
 msgctxt "STR_TEMPLATE_NAME8"
 msgid "Focus"
 msgstr "Fokus"
 
 #. GADdA
-#: include/sfx2/strings.hrc:315
+#: include/sfx2/strings.hrc:316
 msgctxt "STR_TEMPLATE_NAME9"
 msgid "Forestbird"
 msgstr "Wald"
 
 #. TT8G5
-#: include/sfx2/strings.hrc:316
+#: include/sfx2/strings.hrc:317
 msgctxt "STR_TEMPLATE_NAME10"
 msgid "Freshes"
 msgstr "Frisch"
 
 #. C5N9D
-#: include/sfx2/strings.hrc:317
+#: include/sfx2/strings.hrc:318
 msgctxt "STR_TEMPLATE_NAME11"
 msgid "Inspiration"
 msgstr "Inspiration"
 
 #. fCKG9
-#: include/sfx2/strings.hrc:318
+#: include/sfx2/strings.hrc:319
 msgctxt "STR_TEMPLATE_NAME12"
 msgid "Lights"
 msgstr "Lichter"
 
 #. pcLWs
-#: include/sfx2/strings.hrc:319
+#: include/sfx2/strings.hrc:320
 msgctxt "STR_TEMPLATE_NAME13"
 msgid "Growing Liberty"
 msgstr "Wachsende Freiheit"
 
 #. xo2gC
-#: include/sfx2/strings.hrc:320
+#: include/sfx2/strings.hrc:321
 msgctxt "STR_TEMPLATE_NAME14"
 msgid "Metropolis"
 msgstr "Metropolis"
 
 #. FFDBk
-#: include/sfx2/strings.hrc:321
+#: include/sfx2/strings.hrc:322
 msgctxt "STR_TEMPLATE_NAME15"
 msgid "Midnightblue"
 msgstr "Nachtblau"
 
 #. yiCzk
-#: include/sfx2/strings.hrc:322
+#: include/sfx2/strings.hrc:323
 msgctxt "STR_TEMPLATE_NAME16"
 msgid "Nature Illustration"
 msgstr "Natur"
 
 #. cCZzC
-#: include/sfx2/strings.hrc:323
+#: include/sfx2/strings.hrc:324
 msgctxt "STR_TEMPLATE_NAME17"
 msgid "Pencil"
 msgstr "Stift"
 
 #. Ji4Cw
-#: include/sfx2/strings.hrc:324
+#: include/sfx2/strings.hrc:325
 msgctxt "STR_TEMPLATE_NAME18"
 msgid "Piano"
 msgstr "Klavier"
 
 #. mrbiq
-#: include/sfx2/strings.hrc:325
+#: include/sfx2/strings.hrc:326
 msgctxt "STR_TEMPLATE_NAME19"
 msgid "Portfolio"
 msgstr "Portfolio"
 
 #. ysBGy
-#: include/sfx2/strings.hrc:326
+#: include/sfx2/strings.hrc:327
 msgctxt "STR_TEMPLATE_NAME20"
 msgid "Progress"
 msgstr "Fortschritt"
 
 #. gtPt9
-#: include/sfx2/strings.hrc:327
+#: include/sfx2/strings.hrc:328
 msgctxt "STR_TEMPLATE_NAME21"
 msgid "Sunset"
 msgstr "Sonnenuntergang"
 
 #. 73Y2e
-#: include/sfx2/strings.hrc:328
+#: include/sfx2/strings.hrc:329
 msgctxt "STR_TEMPLATE_NAME22"
 msgid "Vintage"
 msgstr "Traditionell"
 
 #. MSY8y
-#: include/sfx2/strings.hrc:329
+#: include/sfx2/strings.hrc:330
 msgctxt "STR_TEMPLATE_NAME23"
 msgid "Vivid"
 msgstr "Lebendig"
 
 #. QDZBz
 #. Translators: default Writer template names
-#: include/sfx2/strings.hrc:331
+#: include/sfx2/strings.hrc:332
 msgctxt "STR_TEMPLATE_NAME24"
 msgid "CV"
 msgstr "CV"
 
 #. Koe3V
-#: include/sfx2/strings.hrc:332
+#: include/sfx2/strings.hrc:333
 msgctxt "STR_TEMPLATE_NAME25"
 msgid "Resume"
 msgstr "Resümee"
 
 #. hCpfD
-#: include/sfx2/strings.hrc:333
+#: include/sfx2/strings.hrc:334
 msgctxt "STR_TEMPLATE_NAME26"
 msgid "Default"
 msgstr "Standard"
 
 #. d7Hyk
-#: include/sfx2/strings.hrc:334
+#: include/sfx2/strings.hrc:335
 msgctxt "STR_TEMPLATE_NAME27"
 msgid "Modern"
 msgstr "Modern"
 
 #. CVJEC
-#: include/sfx2/strings.hrc:335
+#: include/sfx2/strings.hrc:336
 msgctxt "STR_TEMPLATE_NAME28"
 msgid "Modern business letter sans-serif"
 msgstr "Moderner Geschäftsbrief, serifenlos"
 
 #. 95GeB
-#: include/sfx2/strings.hrc:336
+#: include/sfx2/strings.hrc:337
 msgctxt "STR_TEMPLATE_NAME29"
 msgid "Modern business letter serif"
 msgstr "Moderner Geschäftsbrief, mit Serifen"
 
 #. XdU49
-#: include/sfx2/strings.hrc:337
+#: include/sfx2/strings.hrc:338
 msgctxt "STR_TEMPLATE_NAME30"
 msgid "Businesscard with logo"
 msgstr "Visitenkarte, mit Logo"
 
 #. UAmSj
-#: include/sfx2/strings.hrc:338
+#: include/sfx2/strings.hrc:339
 msgctxt "STR_TEMPLATE_NAME31"
 msgid "Simple"
 msgstr "Einfach"
 
 #. W7NVH
-#: include/sfx2/strings.hrc:339
+#: include/sfx2/strings.hrc:340
 msgctxt "STR_TEMPLATE_NAME32"
 msgid "BPMN"
 msgstr "BPMN"
 
 #. PUBoR
-#: include/sfx2/strings.hrc:340
+#: include/sfx2/strings.hrc:341
 msgctxt "STR_TEMPLATE_NAME33"
 msgid "Simplified Chinese Normal"
 msgstr "Vereinfachtes Chinesisch, normal"
 
 #. eBJ96
-#: include/sfx2/strings.hrc:341
+#: include/sfx2/strings.hrc:342
 msgctxt "STR_TEMPLATE_NAME34"
 msgid "Japanese Normal"
 msgstr "Japanisch, normal"
 
 #. ZaGGB
-#: include/sfx2/strings.hrc:343
+#: include/sfx2/strings.hrc:344
 msgctxt "STR_CLEAR_CHAR"
 msgid "Remove"
 msgstr "Entfernen"
 
 #. JReRY
-#: include/sfx2/strings.hrc:344
+#: include/sfx2/strings.hrc:345
 msgctxt "STR_CLEAR_ALL_CHAR"
 msgid "Clear All"
 msgstr "Alle löschen"
 
 #. yC8Gs
-#: include/sfx2/strings.hrc:346
+#: include/sfx2/strings.hrc:347
 msgctxt "STR_PASSWORD_LEN"
 msgid "Password length"
 msgstr "Kennwortlänge"
 
 #. FKFmJ
-#: include/sfx2/strings.hrc:347
+#: include/sfx2/strings.hrc:348
 msgctxt "STR_PASSWORD_WARNING"
 msgid "The password you have entered causes interoperability issues. Please enter a password that is shorter than 52 bytes, or longer than 55 bytes."
-msgstr "Das Kennwort, das Sie eingegeben haben, verursacht Kompatibilitätsprobleme. Bitte geben Sie ein Kennwort ein, dass kürzer als 52 Bytes oder länger als 55 Bytes ist."
+msgstr "Das eingegebene Kennwort verursacht Kompatibilitätsprobleme. Bitte ein Kennwort eingeben, dass kürzer als 52 Bytes oder länger als 55 Bytes ist."
 
 #. jBQFN
-#: include/sfx2/strings.hrc:349
+#: include/sfx2/strings.hrc:350
 msgctxt "STR_CTRLCLICKHYPERLINK"
 msgid "%{key}-click to open hyperlink: %{link}"
 msgstr "[%{key}+Klick], um folgenden Hyperlink zu öffnen: %{link}"
 
 #. jC3AK
-#: include/sfx2/strings.hrc:350
+#: include/sfx2/strings.hrc:351
 msgctxt "STR_CLICKHYPERLINK"
 msgid "Click to open hyperlink: %{link}"
 msgstr "Klicken, um den Hyperlink zu öffnen: %{link}"
 
 #. eFJMp
-#: include/sfx2/strings.hrc:352
+#: include/sfx2/strings.hrc:353
 msgctxt "STR_STYLEUSEDBY"
 msgid "(used by: %STYLELIST)"
 msgstr "(verwendet von: %STYLELIST)"
 
 #. 6UgqW
-#: include/sfx2/strings.hrc:354
+#: include/sfx2/strings.hrc:355
 msgctxt "STR_DOCUMENT"
 msgid "Document"
 msgstr "Textdokument"
 
 #. XDGTb
-#: include/sfx2/strings.hrc:355
+#: include/sfx2/strings.hrc:356
 msgctxt "STR_SPREADSHEET"
 msgid "Spreadsheet"
 msgstr "Tabellendokument"
 
 #. 3UZXB
-#: include/sfx2/strings.hrc:356
+#: include/sfx2/strings.hrc:357
 msgctxt "STR_PRESENTATION"
 msgid "Presentation"
 msgstr "Präsentation"
 
 #. noN5s
-#: include/sfx2/strings.hrc:357
+#: include/sfx2/strings.hrc:358
 msgctxt "STR_DRAWING"
 msgid "Drawing"
 msgstr "Zeichnung"
 
 #. QpuFo
-#: include/sfx2/strings.hrc:358
+#: include/sfx2/strings.hrc:359
 msgctxt "STR_RECENT"
 msgid "Recently used"
 msgstr "Zuletzt verwendet"
 
 #. EcAjb
-#: include/sfx2/strings.hrc:359
+#: include/sfx2/strings.hrc:360
 msgctxt "STR_NORECENT"
 msgid "No recent characters"
 msgstr "Keine zuletzt verwendeteten Zeichen"
 
 #. tfjbD
-#: include/sfx2/strings.hrc:361
+#: include/sfx2/strings.hrc:362
 msgctxt "STR_ACTION_RESET_ALL_DEFAULT_TEMPLATES"
 msgid "Reset All De~fault Templates"
 msgstr "Alle Dokumentvorlagen auf Standard zurücksetzen"
 
 #. GWuDE
-#: include/sfx2/strings.hrc:362
+#: include/sfx2/strings.hrc:363
 msgctxt "STR_ACTION_RESET_WRITER_TEMPLATE"
 msgid "Reset De~fault Text Document"
 msgstr "Textdokumentvorlage auf Standard zurücksetzen"
 
 #. j5eV8
-#: include/sfx2/strings.hrc:363
+#: include/sfx2/strings.hrc:364
 msgctxt "STR_ACTION_RESET_CALC_TEMPLATE"
 msgid "Reset De~fault Spreadsheet"
 msgstr "Tabellendokumentvorlage auf Standard zurücksetzen"
 
 #. mWp3t
-#: include/sfx2/strings.hrc:364
+#: include/sfx2/strings.hrc:365
 msgctxt "STR_ACTION_RESET_IMPRESS_TEMPLATE"
 msgid "Reset De~fault Presentation"
 msgstr "Präsentationsdokumentvorlage auf Standard zurücksetzen"
 
 #. wfExB
-#: include/sfx2/strings.hrc:365
+#: include/sfx2/strings.hrc:366
 msgctxt "STR_ACTION_RESET_DRAW_TEMPLATE"
 msgid "Reset De~fault Drawing"
 msgstr "Zeichnungsdokumentvorlage auf Standard zurücksetzen"
 
 #. BFaGA
-#: include/sfx2/strings.hrc:366
+#: include/sfx2/strings.hrc:367
 msgctxt "STR_ACTION_IMPORT"
 msgid "~Import"
 msgstr "~Importieren…"
 
 #. 8Cwfk
-#: include/sfx2/strings.hrc:367
+#: include/sfx2/strings.hrc:368
 msgctxt "STR_ACTION_EXTENSIONS"
 msgid "E~xtensions"
 msgstr "Erweiterungen…"
 
 #. idGvM
-#: include/sfx2/strings.hrc:368
+#: include/sfx2/strings.hrc:369
 msgctxt "STR_WINDOW_TITLE_RENAME_TEMPLATE"
 msgid "Rename"
 msgstr "Umbenennen"
 
 #. EyjE3
-#: include/sfx2/strings.hrc:369
+#: include/sfx2/strings.hrc:370
 msgctxt "STR_WINDOW_TITLE_RENAME_CATEGORY"
 msgid "Rename Category"
 msgstr "Kategorie umbenennen"
 
 #. T79Eb
-#: include/sfx2/strings.hrc:370
+#: include/sfx2/strings.hrc:371
 msgctxt "STR_WINDOW_TITLE_RENAME_NEW_CATEGORY"
 msgid "New Category"
 msgstr "Neue Kategorie…"
 
 #. fCRA7
-#: include/sfx2/strings.hrc:372
+#: include/sfx2/strings.hrc:373
 msgctxt "STR_OBJECT_INSPECTOR"
 msgid "UNO Object Inspector"
 msgstr "UNO-Objektinspektor"
@@ -2342,7 +2350,7 @@ msgstr "Ja oder nein"
 #: sfx2/inc/dinfdlg.hrc:83
 msgctxt "documentinfopage|extended_tip|userdatacb"
 msgid "Saves the user's full name with the file. You can edit the name by choosing Tools - Options - %PRODUCTNAME - User Data."
-msgstr "Speichert den vollen Namen des Anwenders mit der Datei. Sie können den Namen unter »Extras ▸ Optionen… ▸ %PRODUCTNAME ▸ Anwenderdaten« bearbeiten."
+msgstr "Speichert den vollen Namen des Anwenders mit der Datei. Der Name kann unter »Extras ▸ Optionen… ▸ %PRODUCTNAME ▸ Anwenderdaten« bearbeitet werden."
 
 #. AxhLy
 #: sfx2/inc/doctempl.hrc:29
@@ -3002,7 +3010,7 @@ msgstr "Wert"
 #: sfx2/uiconfig/ui/custominfopage.ui:116
 msgctxt "custominfopage|extended_tip|properties"
 msgid "Enter your custom contents. You can change the name, type, and contents of each row. You can add or remove rows. The items will be exported as metadata to other file formats."
-msgstr "Geben Sie Ihre gewünschten Informationen ein. Sie können für jede Zeile Namen, Typ und Inhalt anpassen und Zeilen hinzufügen oder löschen. Die Einträge werden in anderen Dateiformaten als Metadaten gespeichert."
+msgstr "Die gewünschten Informationen eingeben. Für jede Zeile kann Name, Typ und Inhalt angepasst und Zeilen hinzugefügt oder gelöscht werden. Die Einträge werden in anderen Dateiformaten als Metadaten gespeichert."
 
 #. au5jH
 #: sfx2/uiconfig/ui/custominfopage.ui:138
@@ -3104,73 +3112,73 @@ msgstr "_Kommentare:"
 #: sfx2/uiconfig/ui/descriptioninfopage.ui:210
 msgctxt "descriptioninfopage|extended_tip|title"
 msgid "Enter a title for the document."
-msgstr "Geben Sie einen Titel für das Dokument ein. Dabei kann sich der Titel vom Dateinamen unterscheiden."
+msgstr "Einen Titel für das Dokument eingeben. Dabei kann sich der Titel vom Dateinamen unterscheiden."
 
 #. rvZHi
 #: sfx2/uiconfig/ui/descriptioninfopage.ui:227
 msgctxt "descriptioninfopage|extended_tip|subject"
 msgid "Enter a subject for the document. You can use a subject to group documents with similar contents."
-msgstr "Geben Sie ein Thema für das Dokument ein. Ein solches Thema kann zur thematischen Gruppierung von Dokumenten genutzt werden."
+msgstr "Ein Thema für das Dokument eingeben. Ein solches Thema kann zur thematischen Gruppierung von Dokumenten genutzt werden."
 
 #. FoxGh
 #: sfx2/uiconfig/ui/descriptioninfopage.ui:244
 msgctxt "descriptioninfopage|extended_tip|keywords"
 msgid "Enter the words that you want to use to index the content of your document. Keywords must be separated by commas. A keyword can contain white space characters or semicolons."
-msgstr "Geben Sie die zur Indizierung des Dokumentinhalts gewünschten Schlüsselwörter ein. Die einzelnen Schlüsselwörter werden durch Kommata getrennt. Ein Schlüsselwort darf Leerzeichen und Semikola enthalten."
+msgstr "Die zur Indizierung des Dokumentinhalts gewünschten Schlüsselwörter eingeben. Die einzelnen Schlüsselwörter werden durch Kommata getrennt. Ein Schlüsselwort darf Leerzeichen und Semikola enthalten."
 
 #. 64GNQ
 #: sfx2/uiconfig/ui/descriptioninfopage.ui:261
 msgctxt "descriptioninfopage|extended_tip|contributor"
 msgid "Enter the names of the people, organizations, or other entities that have made contributions to the document."
-msgstr "Geben Sie die Namen der Personen, Organisationen oder anderen Einrichtungen ein, die zum Dokument beigetragen haben."
+msgstr "Die Namen der Personen, Organisationen oder anderen Einrichtungen eingeben, die zum Dokument beigetragen haben."
 
 #. ECAfA
 #: sfx2/uiconfig/ui/descriptioninfopage.ui:278
 msgctxt "descriptioninfopage|extended_tip|coverage"
 msgid "Enter the time, place, or jurisdiction that the document is relevant to."
-msgstr "Geben Sie die Zeit, den Ort oder die Gerichtsbarkeit ein, für die das Dokument relevant ist."
+msgstr "Die Zeit, den Ort oder die Gerichtsbarkeit eingeben, für die das Dokument relevant ist."
 
 #. EGix4
 #: sfx2/uiconfig/ui/descriptioninfopage.ui:295
 msgctxt "descriptioninfopage|extended_tip|identifier"
 msgid "Enter a unique and unambiguous identifier for the document."
-msgstr "Geben Sie eine eindeutige und einmalige Kennung für das Dokument ein."
+msgstr "Eine eindeutige und einmalige Kennung für das Dokument eingeben."
 
 #. FQphA
 #: sfx2/uiconfig/ui/descriptioninfopage.ui:312
 msgctxt "descriptioninfopage|extended_tip|publisher"
 msgid "Enter the name of the entity that is making the document available."
-msgstr "Geben Sie den Namen der juristische Person ein, die das Dokument zur Verfügung stellt."
+msgstr "Den Namen der juristische Person eingeben, die das Dokument zur Verfügung stellt."
 
 #. n8gwE
 #: sfx2/uiconfig/ui/descriptioninfopage.ui:329
 msgctxt "descriptioninfopage|extended_tip|relation"
 msgid "Enter information about a resource related to the document."
-msgstr "Geben Sie Informationen zu einer sich auf das Dokument beziehenden Ressource ein."
+msgstr "Informationen zu einer sich auf das Dokument beziehenden Ressource eingeben."
 
 #. ZiijJ
 #: sfx2/uiconfig/ui/descriptioninfopage.ui:346
 msgctxt "descriptioninfopage|extended_tip|rights"
 msgid "Enter information about intellectual property rights associated with the document."
-msgstr "Geben Sie Informationen zu den mit dem Dokument verbundenen geistigen Eigentumsrechten ein."
+msgstr "Informationen zu den mit dem Dokument verbundenen geistigen Eigentumsrechten eingeben."
 
 #. Nze95
 #: sfx2/uiconfig/ui/descriptioninfopage.ui:363
 msgctxt "descriptioninfopage|extended_tip|source"
 msgid "Enter information about other resources from which the document is derived."
-msgstr "Geben Sie Informationen zu anderen Ressourcen ein, aus denen das Dokument stammt."
+msgstr "Informationen zu anderen Ressourcen eingeben, aus denen das Dokument stammt."
 
 #. UEyYw
 #: sfx2/uiconfig/ui/descriptioninfopage.ui:380
 msgctxt "descriptioninfopage|extended_tip|type"
 msgid "Enter information about the category or format of the document."
-msgstr "Geben Sie Informationen zur Kategorie oder zum Format des Dokuments ein."
+msgstr "Informationen zur Kategorie oder zum Format des Dokuments eingeben."
 
 #. bo2q7
 #: sfx2/uiconfig/ui/descriptioninfopage.ui:405
 msgctxt "descriptioninfopage|extended_tip|comments"
 msgid "Enter comments to help identify the document."
-msgstr "Geben Sie einen Kommentar ein, an dem Sie das Dokument leicht erkennen können."
+msgstr "Einen Kommentar eingeben, an dem das Dokument leicht zu erkennen ist."
 
 #. sGW3Z
 #: sfx2/uiconfig/ui/descriptioninfopage.ui:418
@@ -3340,7 +3348,7 @@ msgstr "Schriftarten ins Dokument _einbetten"
 #: sfx2/uiconfig/ui/documentfontspage.ui:36
 msgctxt "documentfontspage|extended_tip|embedFonts"
 msgid "Mark this box to embed document fonts into the document file, for portability between different computer systems."
-msgstr "Aktivieren Sie dieses Kästchen, um die verwendeten Schriftarten in die Dokumentdatei einzubetten und die Portabilität zwischen verschiedenen Computersystemen zu gewährleisten."
+msgstr "Dieses Markierfeld aktivieren, um die verwendeten Schriftarten in die Dokumentdatei einzubetten und die Portabilität zwischen verschiedenen Computersystemen zu gewährleisten."
 
 #. 6rfon
 #: sfx2/uiconfig/ui/documentfontspage.ui:48
@@ -3562,7 +3570,7 @@ msgstr "Bearbeiten des Dokuments bestätigen"
 #: sfx2/uiconfig/ui/editdocumentdialog.ui:13
 msgctxt "editdocumentdialog|EditDocumentDialog"
 msgid "Are you sure you want to edit the document?"
-msgstr "Sind Sie sicher, dass Sie das Dokument bearbeiten möchten?"
+msgstr "Soll das Dokument wirklich bearbeitet werden?"
 
 #. AMrnx
 #: sfx2/uiconfig/ui/editdocumentdialog.ui:14
@@ -3658,7 +3666,7 @@ msgstr "%PRODUCTNAME konnte keine funktionierende E-Mail-Konfiguration finden."
 #: sfx2/uiconfig/ui/errorfindemaildialog.ui:15
 msgctxt "errorfindemaildialog|ErrorFindEmailDialog"
 msgid "Please save this document locally instead and attach it from within your email client."
-msgstr "Speichern Sie dieses Dokument stattdessen lokal und fügen Sie es in Ihrem E-Mail-Programm als Anhang hinzu."
+msgstr "Dieses Dokument stattdessen lokal speichern und es im E-Mail-Programm als Anhang hinzufügen."
 
 #. DVQUS
 #: sfx2/uiconfig/ui/floatingrecord.ui:7
@@ -3730,7 +3738,7 @@ msgstr "Für die aktuelle UI-Sprache ($UILOCALE) ist die Offline-Hilfe für %PRO
 #: sfx2/uiconfig/ui/helpmanual.ui:13
 msgctxt "helpmanual|onlinehelpmanual"
 msgid "You may either install it from our website or your system’s repositories, or read an online version."
-msgstr "Sie können sie entweder von unserer Webseite beziehungsweise aus den Archiven Ihres Systems installieren oder eine Online-Version lesen."
+msgstr "Diese entweder von unserer Webseite beziehungsweise aus den Archiven Ihres Systems installieren oder eine Online-Version lesen."
 
 #. AaeBL
 #: sfx2/uiconfig/ui/helpmanual.ui:23
@@ -3856,13 +3864,13 @@ msgid ""
 msgstr ""
 "%PRODUCTNAME wird unter den Bedingungen der Mozilla Public License, v. 2.0, zur Verfügung gestellt. Eine Kopie der MPL ist unter http://mozilla.org/MPL/2.0/ erhältlich.\n"
 "\n"
-"Zusätzliche Copyright-Hinweise und Lizenzbedingungen für Code von Dritten, die für Teile der Software gelten, sind in der Datei LICENSE.html enthalten; wählen Sie Lizenz anzeigen, um genaue Details auf Englisch zu sehen.\n"
+"Zusätzliche Copyright-Hinweise und Lizenzbedingungen für Code von Dritten, die für Teile der Software gelten, sind in der Datei LICENSE.html enthalten; Lizenz anzeigen wählen, um genaue Details auf Englisch zu sehen.\n"
 "\n"
 "Alle erwähnten Marken und eingetragenen Warenzeichen sind Eigentum ihrer jeweiligen Inhaber.\n"
 "\n"
 "Urheberrecht © 2000–2025 LibreOffice-Mitwirkende. Alle Rechte vorbehalten.\n"
 "\n"
-"Dieses Produkt wurde von %OOOVENDOR erstellt, basierend auf OpenOffice.org, welches das Urheberrecht 2000, 2011 von Oracle und/oder seinen Partnern hat. %OOOVENDOR erkennt alle Mitglieder der Gemeinschaft an, weitere Einzelheiten finden Sie unter http://www.libreoffice.org/."
+"Dieses Produkt wurde von %OOOVENDOR erstellt, basierend auf OpenOffice.org, welches das Urheberrecht 2000, 2011 von Oracle und/oder seinen Partnern hat. %OOOVENDOR erkennt alle Mitglieder der Gemeinschaft an, weitere Einzelheiten sind unter http://www.libreoffice.org/ zu finden."
 
 #. QuVoN
 #: sfx2/uiconfig/ui/linefragment.ui:57
@@ -3928,7 +3936,7 @@ msgstr "Pfad zur Quelldatei. Relative Pfadangaben müssen durch eine vollständi
 #: sfx2/uiconfig/ui/linkeditdialog.ui:181
 msgctxt "linkeditdialog|extended_tip|category"
 msgid "Lists the section or object that the link refers to in the source file. If you want, you can enter a new section or object here."
-msgstr "Listet den Abschnitt oder das Objekt auf, auf welchen beziehungsweise welches die Verknüpfung in der Quelldatei verweist. Falls gewünscht, können Sie einen neuen Abschnitt oder ein neues Objekt eingeben."
+msgstr "Listet den Abschnitt auf, auf welchen, oder das Objekt, auf welches die Verknüpfung in der Quelldatei verweist. Bei Bedarf kann ein neuer Abschnitt oder ein neues Objekt eingegeben werden."
 
 #. hiapi
 #: sfx2/uiconfig/ui/linkeditdialog.ui:196
@@ -3958,13 +3966,13 @@ msgstr "Kopiert Vorlagen aus dem ausgewählten externen Dokument in das aktuelle
 #: sfx2/uiconfig/ui/loadtemplatedialog.ui:48
 msgctxt "loadtemplatedialog|extended_tip|fromfile"
 msgid "Locate the file containing the styles that you want to load, and then click Open."
-msgstr "Suchen Sie die Datei, in der die zu ladenden Vorlagen enthalten sind, und klicken Sie dann auf »OK«."
+msgstr "Die Datei suchen, in der die zu ladenden Vorlagen enthalten sind, dann auf »OK« klicken."
 
 #. YCguC
 #: sfx2/uiconfig/ui/loadtemplatedialog.ui:165
 msgctxt "loadtemplatedialog|extended_tip|categories"
 msgid "Lists the available template categories. Click a category to view its contents in the Templates list."
-msgstr "Zeigt eine Liste der verfügbaren Kategorien für Dokumentvorlagen an. Klicken Sie auf eine Kategorie, um ihren Inhalt in der Liste Vorlagen anzuzeigen."
+msgstr "Zeigt eine Liste der verfügbaren Kategorien für Dokumentvorlagen an. Auf eine Kategorie klicken, um deren Inhalt in der Liste „Vorlagen“ anzuzeigen."
 
 #. PZS7L
 #: sfx2/uiconfig/ui/loadtemplatedialog.ui:176
@@ -4078,7 +4086,7 @@ msgstr "Überschreibt Vorlagen mit gleichem Namen"
 #: sfx2/uiconfig/ui/loadtemplatedialog.ui:353
 msgctxt "loadtemplatedialog|extended_tip|overwrite"
 msgid "Replaces styles in the current document that have the same name as the styles you are loading."
-msgstr "Ersetzt bei Namensgleichheit die Vorlagen des aktuellen Dokuments durch die Vorlagen, die Sie in das Dokument laden."
+msgstr "Ersetzt bei Namensgleichheit die Vorlagen des aktuellen Dokuments durch die in das Dokument geladenen Vorlagen."
 
 #. 7ru2R
 #: sfx2/uiconfig/ui/loadtemplatedialog.ui:376
@@ -4132,7 +4140,7 @@ msgstr "_Bereich:"
 #: sfx2/uiconfig/ui/managestylepage.ui:93
 msgctxt "managestylepage|extended_tip|nextstyle"
 msgid "Select an existing style that you want to follow the current style in your document. For paragraph styles, the next style is applied to an empty paragraph that is created when you press Enter at the end of an existing paragraph. For page styles, the next style is applied when a new page is created."
-msgstr "Wählen Sie eine vorhandene Formatvorlage aus, die der aktuellen Vorlage in Ihrem Dokument folgen soll. Bei Absatzvorlagen wird die Folgevorlage auf einen leeren Absatz angewendet, der erstellt wird, wenn Sie am Ende eines vorhandenen Absatzes die Eingabetaste drücken. Bei Seitenvorlagen wird die Folgevorlage angewendet, wenn eine neue Seite erstellt wird."
+msgstr "Eine vorhandene Formatvorlage auswählen, die der aktuellen Vorlage im Dokument folgen soll. Bei Absatzvorlagen wird die Folgevorlage auf einen leeren Absatz angewendet, der erstellt wird, wenn am Ende eines vorhandenen Absatzes [Eingabetaste] gedrückt wird. Bei Seitenvorlagen wird die Folgevorlage angewendet, wenn eine neue Seite erstellt wird."
 
 #. MMhJQ
 #: sfx2/uiconfig/ui/managestylepage.ui:104
@@ -4150,7 +4158,7 @@ msgstr "Die Eigenschaften der Folgevorlage bearbeiten."
 #: sfx2/uiconfig/ui/managestylepage.ui:127
 msgctxt "managestylepage|extended_tip|linkedwith"
 msgid "Select an existing style (or - None -) to provide its definitions to the current style. Use the other tabs to modify the inherited style."
-msgstr "Wählen Sie eine vorhandene Formatvorlage (oder \"- Keine -\") aus, um deren Definitionen der aktuellen Formatvorlage hinzuzufügen. Verwenden Sie die anderen Register, um die übernommene Formatvorlage zu ändern."
+msgstr "Eine vorhandene Formatvorlage (oder \"- Keine -\") auswählen, um deren Definitionen der aktuellen Formatvorlage hinzuzufügen. Die anderen Register können verwendet werden, um die übernommene Formatvorlage zu ändern."
 
 #. 7XGEs
 #: sfx2/uiconfig/ui/managestylepage.ui:138
@@ -4168,7 +4176,7 @@ msgstr "Die Eigenschaften der übergeordneten Vorlage bearbeiten."
 #: sfx2/uiconfig/ui/managestylepage.ui:161
 msgctxt "managestylepage|extended_tip|category"
 msgid "Displays the category for the current style. If you are creating or modifying a new style, select 'Custom Style' from the list."
-msgstr "Zeigt die Kategorie der aktuellen Formatvorlage an. Wenn Sie eine neue Formatvorlage erstellen oder ändern, wählen Sie „Benutzerdefinierte Vorlagen“ aus der Liste."
+msgstr "Zeigt die Kategorie der aktuellen Formatvorlage an. Wird eine neue Formatvorlage erstellt oder geändert, sollte „Benutzerdefinierte Vorlagen“ in der Liste ausgewählt sein."
 
 #. cFCws
 #: sfx2/uiconfig/ui/managestylepage.ui:172
@@ -4186,7 +4194,7 @@ msgstr "Alle Änderungen an der Absatzformatierung im Dokument eines Absatzes mi
 #: sfx2/uiconfig/ui/managestylepage.ui:181
 msgctxt "managestylepage|extended_tip|autoupdate"
 msgid "Updates the style when you apply direct formatting to a paragraph using this style in your document. The formatting of all paragraphs using this style is automatically updated."
-msgstr "Aktualisiert die Absatzvorlage, wenn Sie eine direkte Formatierung auf einen Absatz in Ihrem Dokument anwenden, der diese Vorlage verwendet. Die Formatierung aller Absätze, die diese Absatzvorlage verwenden, wird automatisch aktualisiert."
+msgstr "Aktualisiert die Absatzvorlage, wenn eine direkte Formatierung auf einen Absatz im Dokument angewendet wird, der diese Vorlage verwendet. Die Formatierung aller Absätze, die diese Absatzvorlage verwenden, wird automatisch aktualisiert."
 
 #. s49RT
 #: sfx2/uiconfig/ui/managestylepage.ui:201
@@ -4282,7 +4290,7 @@ msgstr "Papier_größe"
 #: sfx2/uiconfig/ui/optprintpage.ui:117
 msgctxt "extended_tip|papersize"
 msgid "Mark this check box if a certain paper size is needed for printing the current document."
-msgstr "Aktivieren Sie dieses Markierfeld, wenn zum Drucken des aktuellen Dokuments eine bestimmte Papiergröße erforderlich ist."
+msgstr "Dieses Markierfeld aktivieren, wenn zum Drucken des aktuellen Dokuments eine bestimmte Papiergröße erforderlich ist."
 
 #. stDFq
 #: sfx2/uiconfig/ui/optprintpage.ui:128
@@ -4294,7 +4302,7 @@ msgstr "_Papierausrichtung"
 #: sfx2/uiconfig/ui/optprintpage.ui:136
 msgctxt "extended_tip|paperorient"
 msgid "Mark this check box if you need a certain paper orientation for printing the current document."
-msgstr "Wählen Sie dieses Markierfeld, falls Sie für den Ausdruck des aktuellen Dokuments eine bestimmte Papierausrichtung benötigen."
+msgstr "Dieses Markierfeld aktivieren, falls für den Ausdruck des aktuellen Dokuments eine bestimmte Papierausrichtung benötigt wird."
 
 #. L6rtF
 #: sfx2/uiconfig/ui/optprintpage.ui:147
@@ -4306,7 +4314,7 @@ msgstr "_Transparenz"
 #: sfx2/uiconfig/ui/optprintpage.ui:155
 msgctxt "extended_tip|trans"
 msgid "Mark this check box if you always want to be warned if transparent objects are contained in the document."
-msgstr "Aktivieren Sie dieses Markierfeld, um stets eine Warnung über transparente Objekte im aktuellen Dokument zu erhalten."
+msgstr "Dieses Markierfeld aktivieren, um stets eine Warnung über transparente Objekte im aktuellen Dokument zu erhalten."
 
 #. C5jZN
 #: sfx2/uiconfig/ui/optprintpage.ui:209
@@ -4474,7 +4482,7 @@ msgstr "Transparenz redu_zieren"
 #: sfx2/uiconfig/ui/optprintpage.ui:595
 msgctxt "extended_tip|reducetrans"
 msgid "If you mark this field the transparent objects will be printed like normal, non-transparent objects, depending on your selection in the following two option buttons."
-msgstr "Wenn Sie dieses Feld markieren, werden transparente Objekte (abhängig von Ihrer Wahl in den folgenden beiden Optionsfeldern) wie normale, nicht transparente Objekte gedruckt."
+msgstr "Dieses Markierfeld aktivieren, wenn transparente Objekte (abhängig von der Wahl in den folgenden beiden Optionsfeldern) wie normale, nicht transparente Objekte gedruckt werden sollen."
 
 #. B4C76
 #: sfx2/uiconfig/ui/optprintpage.ui:613
@@ -4582,7 +4590,7 @@ msgstr "Kennwort"
 #: sfx2/uiconfig/ui/password.ui:211
 msgctxt "password|extended_tip|pass1ed"
 msgid "Type a password. A password is case sensitive."
-msgstr "Geben Sie ein Kennwort ein. Ein Kennwort unterscheidet zwischen Groß- und Kleinschreibung."
+msgstr "Ein Kennwort eingeben. Ein Kennwort unterscheidet zwischen Groß- und Kleinschreibung."
 
 #. Y8R6K
 #: sfx2/uiconfig/ui/password.ui:229
@@ -4600,7 +4608,7 @@ msgstr "Zeichen von Kennwörtern anzeigen oder verstecken"
 #: sfx2/uiconfig/ui/password.ui:262
 msgctxt "password|extended_tip|confirm1ed"
 msgid "Re-enter the password."
-msgstr "Geben Sie das Kennwort erneut ein."
+msgstr "Das Kennwort erneut eingeben."
 
 #. JBr3g
 #: sfx2/uiconfig/ui/password.ui:280
@@ -4630,7 +4638,7 @@ msgstr "Bestätigen:"
 #: sfx2/uiconfig/ui/password.ui:401
 msgctxt "password|extended_tip|pass2ed"
 msgid "Type a password. A password is case sensitive."
-msgstr "Geben Sie ein Kennwort ein. Ein Kennwort unterscheidet zwischen Groß- und Kleinschreibung."
+msgstr "Ein Kennwort eingeben. Ein Kennwort unterscheidet zwischen Groß- und Kleinschreibung."
 
 #. FFPUB
 #: sfx2/uiconfig/ui/password.ui:419
@@ -4642,7 +4650,7 @@ msgstr "Zeichen von Kennwörtern anzeigen oder verstecken"
 #: sfx2/uiconfig/ui/password.ui:451
 msgctxt "password|extended_tip|confirm2ed"
 msgid "Re-enter the password."
-msgstr "Geben Sie das Kennwort erneut ein."
+msgstr "Das Kennwort erneut eingeben."
 
 #. Di72F
 #: sfx2/uiconfig/ui/password.ui:469
@@ -4690,7 +4698,7 @@ msgstr "Änderungen am Dokument „$(DOC)“ vor dem Schließen speichern?"
 #: sfx2/uiconfig/ui/querysavedialog.ui:14
 msgctxt "querysavedialog|QuerySaveDialog"
 msgid "Your changes will be lost if you don’t save them."
-msgstr "Ihre Änderungen gehen verloren, wenn Sie diese nicht speichern."
+msgstr "Die Änderungen gehen verloren, wenn sie nicht gespeichert werden."
 
 #. sQCdE
 #: sfx2/uiconfig/ui/querysavedialog.ui:25
@@ -4714,7 +4722,7 @@ msgstr "Abgesicherten Modus starten"
 #: sfx2/uiconfig/ui/safemodequerydialog.ui:12
 msgctxt "safemodequerydialog|label"
 msgid "Are you sure you want to restart %PRODUCTNAME and enter safe mode?"
-msgstr "Sind Sie sicher, dass Sie %PRODUCTNAME im abgesicherten Modus neu starten möchten?"
+msgstr "Soll %PRODUCTNAME wirklich im abgesicherten Modus neu gestartet werden?"
 
 #. DpN8R
 #: sfx2/uiconfig/ui/safemodequerydialog.ui:40
@@ -4732,7 +4740,7 @@ msgstr "Als Dokumentvorlage speichern"
 #: sfx2/uiconfig/ui/saveastemplatedlg.ui:104
 msgctxt "saveastemplatedlg|create_label"
 msgid "Enter a name for the template."
-msgstr "Geben Sie einen Namen für die Dokumentvorlage ein."
+msgstr "Einen Namen für die Dokumentvorlage eingeben."
 
 #. Gjb3A
 #: sfx2/uiconfig/ui/saveastemplatedlg.ui:105
@@ -4744,7 +4752,7 @@ msgstr "Vorlagenname eingeben:"
 #: sfx2/uiconfig/ui/saveastemplatedlg.ui:128
 msgctxt "saveastemplatedlg|extended_tip|name_entry"
 msgid "Enter a name for the template."
-msgstr "Geben Sie einen Namen für die Dokumentvorlage ein."
+msgstr "Einen Namen für die Dokumentvorlage eingeben."
 
 #. 4ANkg
 #: sfx2/uiconfig/ui/saveastemplatedlg.ui:156
@@ -4756,13 +4764,13 @@ msgstr "Vorlage in ausgewählter Kategorie speichern."
 #: sfx2/uiconfig/ui/saveastemplatedlg.ui:157
 msgctxt "saveastemplatedlg|select_label"
 msgid "Select Template _Category:"
-msgstr "Wählen Sie die Vorlagenkategorie:"
+msgstr "Vorlagenkategorie auswählen:"
 
 #. JBPKb
 #: sfx2/uiconfig/ui/saveastemplatedlg.ui:205
 msgctxt "saveastemplatedlg|extended_tip|categorylb"
 msgid "Select a category in which to save the new template."
-msgstr "Wählen Sie eine Kategorie, unter der die neue Dokumentvorlage gespeichert werden soll."
+msgstr "Eine Kategorie wählen, unter der die neue Dokumentvorlage gespeichert werden soll."
 
 #. wpZGc
 #: sfx2/uiconfig/ui/saveastemplatedlg.ui:225
@@ -4858,7 +4866,7 @@ msgstr "Schützen…"
 #: sfx2/uiconfig/ui/securityinfopage.ui:72
 msgctxt "securityinfopage|extended_tip|protect"
 msgid "Protects the change recording state with a password. If change recording is protected for the current document, the button is named Unprotect. Click Unprotect and type the correct password to disable the protection."
-msgstr "Schützt den Status der Aufzeichnung von Änderungen mit einem Kennwort. Wenn die Aufzeichnung von Änderungen für das aktuelle Dokument geschützt ist, lautet die Beschriftung der Schaltfläche Schutz aufheben. Klicken Sie auf »Schutz aufheben« und geben Sie das richtige Kennwort ein, um den Schutz zu deaktivieren."
+msgstr "Schützt den Status der Aufzeichnung von Änderungen mit einem Kennwort. Wenn die Aufzeichnung von Änderungen für das aktuelle Dokument geschützt ist, lautet die Beschriftung der Schaltfläche »Schutz aufheben«. Auf »Schutz aufheben« klicken und das richtige Kennwort eingeben, um den Schutz zu deaktivieren."
 
 #. jgWP4
 #: sfx2/uiconfig/ui/securityinfopage.ui:84
@@ -4870,7 +4878,7 @@ msgstr "Schutz auf_heben…"
 #: sfx2/uiconfig/ui/securityinfopage.ui:91
 msgctxt "securityinfopage|extended_tip|unprotect"
 msgid "Protects the change recording state with a password. If change recording is protected for the current document, the button is named Unprotect. Click Unprotect and type the correct password to disable the protection."
-msgstr "Schützt den Status der Aufzeichnung von Änderungen mit einem Kennwort. Wenn die Aufzeichnung von Änderungen für das aktuelle Dokument geschützt ist, lautet die Beschriftung der Schaltfläche Schutz aufheben. Klicken Sie auf »Schutz aufheben« und geben Sie das richtige Kennwort ein, um den Schutz zu deaktivieren."
+msgstr "Schützt den Status der Aufzeichnung von Änderungen mit einem Kennwort. Wenn die Aufzeichnung von Änderungen für das aktuelle Dokument geschützt ist, lautet die Beschriftung der Schaltfläche »Schutz aufheben«. Auf »Schutz aufheben« klicken und das richtige Kennwort eingeben, um den Schutz zu deaktivieren."
 
 #. JNezG
 #: sfx2/uiconfig/ui/securityinfopage.ui:113
@@ -5320,19 +5328,19 @@ msgstr "Zeigt die Vorlagennamen beispielhaft in ihrer Formatierung an. "
 #: sfx2/uiconfig/ui/templatepanel.ui:242
 msgctxt "commontemplate|STR_SPOTLIGHT_CHECKBOX"
 msgid "Spotlight"
-msgstr ""
+msgstr "Hervorhebung"
 
 #. Frjk2
 #: sfx2/uiconfig/ui/templatepanel.ui:249
 msgctxt "templatepanel|extended_tip|spotlightstyles"
 msgid "Displays a color and a unique number code for each applied paragraph or character style in the document. "
-msgstr ""
+msgstr "Zeigt für jede im Dokument angewendete Absatz- oder Zeichenvorlage eine Farbe und einen eindeutigen Nummerncode an. "
 
 #. qu6Fz
 #: sfx2/uiconfig/ui/templatepanel.ui:272
 msgctxt "templatepanel|extended_tip|filter"
 msgid "Select a filter for the list of styles."
-msgstr "Legen Sie einen Filter für die Liste der Formatvorlagen fest."
+msgstr "Einen Filter für die Liste der Formatvorlagen festlegen."
 
 #. irBvi
 #: sfx2/uiconfig/ui/templatepanel.ui:326 sfx2/uiconfig/ui/templatepanel.ui:383
@@ -5362,7 +5370,7 @@ msgstr "Gespeichert von: "
 #: sfx2/uiconfig/ui/versioncommentdialog.ui:161
 msgctxt "versioncommentdialog|extended_tip|VersionCommentDialog"
 msgid "Enter a comment here when you are saving a new version. If you clicked Show to open this dialog, you cannot edit the comment."
-msgstr "Eingabe eines Kommentars zu der zu speichernden Version. Wenn Sie diesen Dialog über die Schaltfläche Anzeigen aufgerufen haben, lässt sich der Kommentar nicht bearbeiten."
+msgstr "Eingabe eines Kommentars zu der zu speichernden Version. Wenn dieser Dialog über die Schaltfläche »Anzeigen« aufgerufen wurde, lässt sich der Kommentar nicht bearbeiten."
 
 #. oBSSb
 #: sfx2/uiconfig/ui/versionscmis.ui:47
@@ -5428,7 +5436,7 @@ msgstr "_Vergleichen"
 #: sfx2/uiconfig/ui/versionsofdialog.ui:72
 msgctxt "versionsofdialog|extended_tip|compare"
 msgid "Compare the changes that were made in each version."
-msgstr "Vergleichen Sie die Änderungen, die zwischen den Versionen vorgenommen wurden."
+msgstr "Die zwischen den Versionen vorgenommenen Änderungen vergleichen."
 
 #. UkbhC
 #: sfx2/uiconfig/ui/versionsofdialog.ui:84
@@ -5476,7 +5484,7 @@ msgstr "_Beim Schließen immer eine neue Version speichern"
 #: sfx2/uiconfig/ui/versionsofdialog.ui:210
 msgctxt "versionsofdialog|extended_tip|always"
 msgid "If you have made changes to your document then a new version is automatically saved when you close the document."
-msgstr "Wenn Sie Änderungen an Ihrem Dokument vorgenommen haben, wird automatisch eine neue Version gespeichert, wenn Sie das Dokument schließen."
+msgstr "Wenn Änderungen am Dokument vorgenommen wurden, wird beim Schließen des Dokuments automatisch eine neue Version gespeichert."
 
 #. vuHjH
 #: sfx2/uiconfig/ui/versionsofdialog.ui:225
