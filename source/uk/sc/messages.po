@@ -3,9 +3,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2025-05-09 18:30+0200\n"
-"PO-Revision-Date: 2025-03-04 22:19+0000\n"
-"Last-Translator: I <a.ilkiv.ye@gmail.com>\n"
+"POT-Creation-Date: 2025-05-30 12:45+0200\n"
+"PO-Revision-Date: 2025-05-22 15:55+0000\n"
+"Last-Translator: Євген Кондратюк <lachend@gmail.com>\n"
 "Language-Team: Ukrainian <https://translations.documentfoundation.org/projects/libo_ui-master/scmessages/uk/>\n"
 "Language: uk\n"
 "MIME-Version: 1.0\n"
@@ -2753,11 +2753,13 @@ msgctxt "STR_ERR_NAME_EXISTS"
 msgid "Invalid name. Already in use for the selected scope."
 msgstr "Недопустима назва. Вже використана у вибраній області видимості."
 
-#. qDNs9
+#. GxYui
 #: sc/inc/globstr.hrc:464
 msgctxt "STR_ERR_NAME_INVALID"
-msgid "Invalid name. Start with a letter, use only letters, numbers and underscore."
-msgstr "Некоректна назва. Почніть з літери; використовуйте лише літери, цифри та нижні підкреслення."
+msgid ""
+"Invalid name. It must start with a letter (excluding c, C, r, or R followed by a number) or underscore.\n"
+"Only letters, numbers, and underscores are permitted."
+msgstr ""
 
 #. owW4Y
 #: sc/inc/globstr.hrc:465
@@ -3548,7 +3550,7 @@ msgstr "Обмеження з правого боку"
 #: sc/inc/globstr.hrc:591
 msgctxt "STD_ERR_CSV_PARSE"
 msgid "An error occurred while parsing the CSV file."
-msgstr ""
+msgstr "Виникла помилка при розборі CSV-файлу."
 
 #. dB8cp
 #: sc/inc/pvfundlg.hrc:28
@@ -17328,7 +17330,7 @@ msgstr "Кількість відкинутих рядків. Від'ємне з
 #: sc/inc/scfuncs.hrc:4282
 msgctxt "SC_OPCODE_DROP"
 msgid "Columns"
-msgstr ""
+msgstr "Колонки"
 
 #. cAxPB
 #: sc/inc/scfuncs.hrc:4283
@@ -17370,7 +17372,7 @@ msgstr "Кількість рядків у розширеному масиві. 
 #: sc/inc/scfuncs.hrc:4294
 msgctxt "SC_OPCODE_EXPAND"
 msgid "Columns"
-msgstr ""
+msgstr "Колонки"
 
 #. EVAXE
 #: sc/inc/scfuncs.hrc:4295
@@ -17394,7 +17396,7 @@ msgstr "Значення кількості заповнення. Типовим
 #: sc/inc/scfuncs.hrc:4303
 msgctxt "SC_OPCODE_HSTACK"
 msgid "Appends arrays horizontally to create a larger array."
-msgstr ""
+msgstr "Додає масиви по горизонталі для створення більшого масиву."
 
 #. LnAFg
 #: sc/inc/scfuncs.hrc:4304 sc/inc/scfuncs.hrc:4306
@@ -17412,13 +17414,13 @@ msgstr "Перший масив, який потрібно додати."
 #: sc/inc/scfuncs.hrc:4307
 msgctxt "SC_OPCODE_HSTACK"
 msgid "Array 1, Array 2,... The following arrays to append. If an array has fewer rows, #N/A error will be returned in the additional rows."
-msgstr ""
+msgstr "Масив 1, Масив 2,... Наступні масиви для додавання. Якщо масив має менше рядків, у додаткових рядках буде видано помилку #N/A."
 
 #. 7zS24
 #: sc/inc/scfuncs.hrc:4313
 msgctxt "SC_OPCODE_VSTACK"
 msgid "Appends arrays vertically to create a larger array."
-msgstr ""
+msgstr "Додає масиви по вертикалі для створення більшого масиву."
 
 #. rhVRC
 #: sc/inc/scfuncs.hrc:4314 sc/inc/scfuncs.hrc:4316
@@ -17436,7 +17438,7 @@ msgstr "Перший масив для додавання."
 #: sc/inc/scfuncs.hrc:4317
 msgctxt "SC_OPCODE_VSTACK"
 msgid "Array 1, Array 2,... The following arrays to append. If an array has fewer columns, #N/A error will be returned in the additional columns."
-msgstr ""
+msgstr "Масив 1, Масив 2,... Наступні масиви для додавання. Якщо масив має менше стовпців, у додаткових стовпцях буде видано помилку #N/A."
 
 #. JnsYT
 #: sc/inc/scfuncs.hrc:4323
@@ -17472,7 +17474,7 @@ msgstr "Кількість рядків, які потрібно взяти. В�
 #: sc/inc/scfuncs.hrc:4328
 msgctxt "SC_OPCODE_TAKE"
 msgid "Columns"
-msgstr ""
+msgstr "Стовпці"
 
 #. ZexcG
 #: sc/inc/scfuncs.hrc:4329
@@ -17480,332 +17482,488 @@ msgctxt "SC_OPCODE_TAKE"
 msgid "The number of columns to take. A negative value takes from the end of the array."
 msgstr "Кількість стовпців, які потрібно взяти. Від'ємне значення береться з кінця масиву."
 
-#. wdZTd
+#. GwyMB
 #: sc/inc/scfuncs.hrc:4335
-msgctxt "SC_OPCODE_TEXTSPLIT"
-msgid "Splits text by a given delimiter to an array of multiple cells."
+msgctxt "SC_OPCODE_TEXTAFTER"
+msgid "Returns the text that occurs after a given substring or delimiter."
 msgstr ""
 
-#. DH7h4
+#. cicY2
 #: sc/inc/scfuncs.hrc:4336
-msgctxt "SC_OPCODE_TEXTSPLIT"
+msgctxt "SC_OPCODE_TEXTAFTER"
 msgid "Text"
 msgstr ""
 
-#. dqSdF
+#. 3WLYF
 #: sc/inc/scfuncs.hrc:4337
+msgctxt "SC_OPCODE_TEXTAFTER"
+msgid "The original text."
+msgstr ""
+
+#. z4pDr
+#: sc/inc/scfuncs.hrc:4338
+msgctxt "SC_OPCODE_TEXTAFTER"
+msgid "Delimiter"
+msgstr ""
+
+#. YEbwu
+#: sc/inc/scfuncs.hrc:4339
+msgctxt "SC_OPCODE_TEXTAFTER"
+msgid "The delimiter. Multiple delimiters can be supplied."
+msgstr ""
+
+#. HPDvF
+#: sc/inc/scfuncs.hrc:4340
+msgctxt "SC_OPCODE_TEXTAFTER"
+msgid "Instance Number"
+msgstr ""
+
+#. DmVZL
+#: sc/inc/scfuncs.hrc:4341
+msgctxt "SC_OPCODE_TEXTAFTER"
+msgid "The instance of the delimiter after which to extract text. The default is 1. A negative number starts searching from the end."
+msgstr ""
+
+#. fpoGj
+#: sc/inc/scfuncs.hrc:4342
+msgctxt "SC_OPCODE_TEXTAFTER"
+msgid "Match Mode"
+msgstr ""
+
+#. iSfJi
+#: sc/inc/scfuncs.hrc:4343
+msgctxt "SC_OPCODE_TEXTAFTER"
+msgid "Set to 1 to perform a case-insensitive match. The default is 0."
+msgstr ""
+
+#. nAF2s
+#: sc/inc/scfuncs.hrc:4344
+msgctxt "SC_OPCODE_TEXTAFTER"
+msgid "Match End"
+msgstr ""
+
+#. W2DGj
+#: sc/inc/scfuncs.hrc:4345
+msgctxt "SC_OPCODE_TEXTAFTER"
+msgid "Set to 1 to treat the end of text as a delimiter. The default is 0."
+msgstr ""
+
+#. PG6qj
+#: sc/inc/scfuncs.hrc:4346
+msgctxt "SC_OPCODE_TEXTAFTER"
+msgid "If Not Found"
+msgstr ""
+
+#. vfgZc
+#: sc/inc/scfuncs.hrc:4347
+msgctxt "SC_OPCODE_TEXTAFTER"
+msgid "The value returned if no match is found. The default is #N/A."
+msgstr ""
+
+#. f88EE
+#: sc/inc/scfuncs.hrc:4353
+msgctxt "SC_OPCODE_TEXTBEFORE"
+msgid "Returns the text that occurs before a given substring or delimiter."
+msgstr ""
+
+#. NNriC
+#: sc/inc/scfuncs.hrc:4354
+msgctxt "SC_OPCODE_TEXTBEFORE"
+msgid "Text"
+msgstr ""
+
+#. HsEG8
+#: sc/inc/scfuncs.hrc:4355
+msgctxt "SC_OPCODE_TEXTBEFORE"
+msgid "The original text."
+msgstr ""
+
+#. E4a5z
+#: sc/inc/scfuncs.hrc:4356
+msgctxt "SC_OPCODE_TEXTBEFORE"
+msgid "Delimiter"
+msgstr ""
+
+#. qDFZy
+#: sc/inc/scfuncs.hrc:4357
+msgctxt "SC_OPCODE_TEXTBEFORE"
+msgid "The delimiter. Multiple delimiters can be supplied."
+msgstr ""
+
+#. gNHAi
+#: sc/inc/scfuncs.hrc:4358
+msgctxt "SC_OPCODE_TEXTBEFORE"
+msgid "Instance Number"
+msgstr ""
+
+#. sD4zC
+#: sc/inc/scfuncs.hrc:4359
+msgctxt "SC_OPCODE_TEXTBEFORE"
+msgid "The instance of the delimiter before which to extract text. The default is 1. A negative number starts searching from the end."
+msgstr ""
+
+#. Adzeh
+#: sc/inc/scfuncs.hrc:4360
+msgctxt "SC_OPCODE_TEXTBEFORE"
+msgid "Match Mode"
+msgstr ""
+
+#. Pi2Ti
+#: sc/inc/scfuncs.hrc:4361
+msgctxt "SC_OPCODE_TEXTBEFORE"
+msgid "Set to 1 to perform a case-insensitive match. The default is 0."
+msgstr ""
+
+#. sACA2
+#: sc/inc/scfuncs.hrc:4362
+msgctxt "SC_OPCODE_TEXTBEFORE"
+msgid "Match End"
+msgstr ""
+
+#. UxpD6
+#: sc/inc/scfuncs.hrc:4363
+msgctxt "SC_OPCODE_TEXTBEFORE"
+msgid "Set to 1 to treat the end of text as a delimiter. The default is 0."
+msgstr ""
+
+#. aCnZX
+#: sc/inc/scfuncs.hrc:4364
+msgctxt "SC_OPCODE_TEXTBEFORE"
+msgid "If Not Found"
+msgstr ""
+
+#. xCZYH
+#: sc/inc/scfuncs.hrc:4365
+msgctxt "SC_OPCODE_TEXTBEFORE"
+msgid "The value returned if no match is found. The default is #N/A."
+msgstr ""
+
+#. wdZTd
+#: sc/inc/scfuncs.hrc:4371
+msgctxt "SC_OPCODE_TEXTSPLIT"
+msgid "Splits text by a given delimiter to an array of multiple cells."
+msgstr "Розділяє текст за заданим роздільником на масив з декількох комірок."
+
+#. DH7h4
+#: sc/inc/scfuncs.hrc:4372
+msgctxt "SC_OPCODE_TEXTSPLIT"
+msgid "Text"
+msgstr "Текст"
+
+#. dqSdF
+#: sc/inc/scfuncs.hrc:4373
 msgctxt "SC_OPCODE_TEXTSPLIT"
 msgid "The text to split."
-msgstr ""
+msgstr "Текст для розділення."
 
 #. pdpxt
-#: sc/inc/scfuncs.hrc:4338
+#: sc/inc/scfuncs.hrc:4374
 msgctxt "SC_OPCODE_TEXTSPLIT"
 msgid "Column Delimiter"
-msgstr ""
+msgstr "Роздільник стовпців"
 
 #. nfMAr
-#: sc/inc/scfuncs.hrc:4339
+#: sc/inc/scfuncs.hrc:4375
 msgctxt "SC_OPCODE_TEXTSPLIT"
 msgid "The text to delimit the columns. Multiple delimiters can be supplied."
-msgstr ""
+msgstr "Текст для розділення стовпців. Можна вказати декілька роздільників."
 
 #. qZGq2
-#: sc/inc/scfuncs.hrc:4340
+#: sc/inc/scfuncs.hrc:4376
 msgctxt "SC_OPCODE_TEXTSPLIT"
 msgid "Row Delimiter"
-msgstr ""
+msgstr "Роздільник рядків"
 
 #. dPnbc
-#: sc/inc/scfuncs.hrc:4341
+#: sc/inc/scfuncs.hrc:4377
 msgctxt "SC_OPCODE_TEXTSPLIT"
 msgid "The text to delimit the rows. Multiple delimiters can be supplied."
-msgstr ""
+msgstr "Текст для розділення рядків. Можна вказати декілька роздільників."
 
 #. jD3sa
-#: sc/inc/scfuncs.hrc:4342
+#: sc/inc/scfuncs.hrc:4378
 msgctxt "SC_OPCODE_TEXTSPLIT"
 msgid "Ignore Empty"
-msgstr ""
+msgstr "Ігнорувати порожні"
 
-#. QFZpt
-#: sc/inc/scfuncs.hrc:4343
+#. 6LwdP
+#: sc/inc/scfuncs.hrc:4379
 msgctxt "SC_OPCODE_TEXTSPLIT"
-msgid "Set to TRUE to ignore consecutive delimiters otherwise creates an empty cell. The default to FALSE."
+msgid "Set to TRUE to ignore consecutive delimiters otherwise it creates an empty cell. The default is FALSE."
 msgstr ""
 
 #. kkAYp
-#: sc/inc/scfuncs.hrc:4344
+#: sc/inc/scfuncs.hrc:4380
 msgctxt "SC_OPCODE_TEXTSPLIT"
 msgid "Match mode"
-msgstr ""
+msgstr "Режим співпадіння"
 
-#. DmNiP
-#: sc/inc/scfuncs.hrc:4345
+#. iX8cx
+#: sc/inc/scfuncs.hrc:4381
 msgctxt "SC_OPCODE_TEXTSPLIT"
-msgid "Set to 1 to perform a case-insensitive match otherwise does a case-sensitive match. The default to 0."
+msgid "Set to 1 to perform a case-insensitive match. The default is 0."
 msgstr ""
 
 #. vXECz
-#: sc/inc/scfuncs.hrc:4346
+#: sc/inc/scfuncs.hrc:4382
 msgctxt "SC_OPCODE_TEXTSPLIT"
 msgid "Pad with"
-msgstr ""
+msgstr "Вкласти"
 
 #. h4db2
-#: sc/inc/scfuncs.hrc:4347
+#: sc/inc/scfuncs.hrc:4383
 msgctxt "SC_OPCODE_TEXTSPLIT"
 msgid "The value with which to pad. The default is #N/A."
-msgstr ""
+msgstr "Значення кількості заповнення. Типовим є #N/A."
 
 #. DdFFE
-#: sc/inc/scfuncs.hrc:4353
+#: sc/inc/scfuncs.hrc:4389
 msgctxt "SC_OPCODE_TOCOL"
 msgid "Transforms an array into a single column."
-msgstr ""
+msgstr "Перетворює масив на один стовпець."
 
 #. UAzNC
-#: sc/inc/scfuncs.hrc:4354
+#: sc/inc/scfuncs.hrc:4390
 msgctxt "SC_OPCODE_TOCOL"
 msgid "Array"
 msgstr "Масив"
 
 #. CHojs
-#: sc/inc/scfuncs.hrc:4355
+#: sc/inc/scfuncs.hrc:4391
 msgctxt "SC_OPCODE_TOCOL"
 msgid "The range or array to return as a single column."
 msgstr "Діапазон або масив, який потрібно вивести у вигляді одного стовпця."
 
 #. uACXu
-#: sc/inc/scfuncs.hrc:4356
+#: sc/inc/scfuncs.hrc:4392
 msgctxt "SC_OPCODE_TOCOL"
 msgid "Ignore"
 msgstr "Ігнорувати"
 
 #. b7EQW
-#: sc/inc/scfuncs.hrc:4357
+#: sc/inc/scfuncs.hrc:4393
 msgctxt "SC_OPCODE_TOCOL"
 msgid "Whether to ignore certain types of values. 0 or omitted - keep all values (default). 1 - ignore blank cells. 2 - ignore cells with error. 3 - ignore blanks cells and cells with error."
 msgstr "Чи ігнорувати певні типи значень. 0 або пропущено - зберігати всі значення (типово). 1 - ігнорувати порожні комірки. 2 - ігнорувати комірки з помилками. 3 - ігнорувати порожні комірки та комірки з помилками."
 
 #. qNLAi
-#: sc/inc/scfuncs.hrc:4358
+#: sc/inc/scfuncs.hrc:4394
 msgctxt "SC_OPCODE_TOCOL"
 msgid "Scan by column"
 msgstr "Переглядати за рядками"
 
 #. bcArN
-#: sc/inc/scfuncs.hrc:4359
+#: sc/inc/scfuncs.hrc:4395
 msgctxt "SC_OPCODE_TOCOL"
 msgid "Scan the array by column. FALSE or omitted (default) - the array is scanned by row. TRUE - the array is scanned by column."
 msgstr "Переглядати масив за стовпцями. FALSE або пропущено (типове) – масив переглядається за рядками. TRUE – масив переглядається за стовпцями."
 
 #. PGyxj
-#: sc/inc/scfuncs.hrc:4365
+#: sc/inc/scfuncs.hrc:4401
 msgctxt "SC_OPCODE_TOROW"
 msgid "transforms an array into a single row."
 msgstr "перетворює масив в один рядок."
 
 #. W9bWe
-#: sc/inc/scfuncs.hrc:4366
+#: sc/inc/scfuncs.hrc:4402
 msgctxt "SC_OPCODE_TOROW"
 msgid "Array"
 msgstr "Масив"
 
 #. 5MEvT
-#: sc/inc/scfuncs.hrc:4367
+#: sc/inc/scfuncs.hrc:4403
 msgctxt "SC_OPCODE_TOROW"
 msgid "The range or array to return as a single row."
 msgstr "Діапазон або масив, який потрібно вивести у вигляді одного рядка."
 
 #. AqqBC
-#: sc/inc/scfuncs.hrc:4368
+#: sc/inc/scfuncs.hrc:4404
 msgctxt "SC_OPCODE_TOROW"
 msgid "Ignore"
 msgstr "Знехтувати"
 
 #. wcpQF
-#: sc/inc/scfuncs.hrc:4369
+#: sc/inc/scfuncs.hrc:4405
 msgctxt "SC_OPCODE_TOROW"
 msgid "Whether to ignore certain types of values. 0 or omitted - keep all values (default). 1 - ignore blank cells. 2 - ignore cells with error. 3 - ignore blanks cells and cells with error."
 msgstr "Чи ігнорувати певні типи значень. 0 або пропущено - зберігати всі значення (типово). 1 - ігнорувати порожні комірки. 2 - ігнорувати комірки з помилками. 3 - ігнорувати порожні комірки та комірки з помилками."
 
 #. E4XDf
-#: sc/inc/scfuncs.hrc:4370
+#: sc/inc/scfuncs.hrc:4406
 msgctxt "SC_OPCODE_TOROW"
 msgid "Scan by column"
 msgstr "Переглядати за стовпцями"
 
 #. 5bZRy
-#: sc/inc/scfuncs.hrc:4371
+#: sc/inc/scfuncs.hrc:4407
 msgctxt "SC_OPCODE_TOROW"
 msgid "Scan the array by column. FALSE or omitted (default) - the array is scanned by row. TRUE - the array is scanned by column."
 msgstr "Переглядати масив за стовпцями. FALSE або пропущено (типове) – масив переглядається за рядками. TRUE – масив переглядається за стовпцями."
 
 #. NJR3E
-#: sc/inc/scfuncs.hrc:4377
+#: sc/inc/scfuncs.hrc:4413
 msgctxt "SC_OPCODE_UNIQUE"
 msgid "Returns a list of unique values from a range or array."
 msgstr "Виводить список унікальних значень з діапазону або масиву."
 
 #. NepxE
-#: sc/inc/scfuncs.hrc:4378
+#: sc/inc/scfuncs.hrc:4414
 msgctxt "SC_OPCODE_UNIQUE"
 msgid "Array"
 msgstr "Масив"
 
 #. 2sVga
-#: sc/inc/scfuncs.hrc:4379
+#: sc/inc/scfuncs.hrc:4415
 msgctxt "SC_OPCODE_UNIQUE"
 msgid "The range or array from which to return unique values."
 msgstr "Діапазон або масив, з якого потрібно отримати унікальні значення."
 
 #. fGfWS
-#: sc/inc/scfuncs.hrc:4380
+#: sc/inc/scfuncs.hrc:4416
 msgctxt "SC_OPCODE_UNIQUE"
 msgid "By col"
 msgstr "За стовп"
 
 #. SASmk
-#: sc/inc/scfuncs.hrc:4381
+#: sc/inc/scfuncs.hrc:4417
 msgctxt "SC_OPCODE_UNIQUE"
 msgid "Logical value indicating how to compare data: TRUE - compares data across columns. FALSE or omitted (default) - compares data across rows."
 msgstr "Логічне значення, що вказує на спосіб порівняння даних: TRUE - порівнює дані по стовпчиках. FALSE або пропущено (типово) - порівнює дані по рядках."
 
 #. hVQ6i
-#: sc/inc/scfuncs.hrc:4382
+#: sc/inc/scfuncs.hrc:4418
 msgctxt "SC_OPCODE_UNIQUE"
 msgid "Uniqueness"
 msgstr "Унікальність"
 
 #. EUVys
-#: sc/inc/scfuncs.hrc:4383
+#: sc/inc/scfuncs.hrc:4419
 msgctxt "SC_OPCODE_UNIQUE"
 msgid "Logical value that defines what values are considered unique: TRUE - returns values that occur only once. FALSE or omitted (default) - returns all distinct (different) values in the range or array."
 msgstr "Логічне значення, що вказує, які значення вважати унікальними: TRUE - повертає значення, що зустрічаються лише один раз. FALSE або пропущено (типово) - виводить всі відмінні (різні) значення в діапазоні або масиві."
 
 #. axamT
-#: sc/inc/scfuncs.hrc:4389
+#: sc/inc/scfuncs.hrc:4425
 msgctxt "SC_OPCODE_LET"
 msgid "The LET function assigns names to calculation results. This allows storing intermediate calculations, values, or defining names inside a formula. These names only apply within the scope of the LET function."
 msgstr "Функція LET присвоює імена результатам обчислень. Це дозволяє зберігати проміжні обчислення, значення або задавати імена всередині формули. Ці імена застосовуються лише в межах області видимості функції LET."
 
 #. 6DDAi
-#: sc/inc/scfuncs.hrc:4390
+#: sc/inc/scfuncs.hrc:4426
 msgctxt "SC_OPCODE_LET"
 msgid "Name 1"
 msgstr "Назва 1"
 
 #. a7LQR
-#: sc/inc/scfuncs.hrc:4391
+#: sc/inc/scfuncs.hrc:4427
 msgctxt "SC_OPCODE_LET"
 msgid "The first name to assign. Must start with a letter. Cannot be the output of a formula or conflict with range syntax."
 msgstr "Назва, яку потрібно призначити. Має починатися з літери. Не може бути виведенням формули або конфліктувати з синтаксисом діапазону."
 
 #. KsyBM
-#: sc/inc/scfuncs.hrc:4392
+#: sc/inc/scfuncs.hrc:4428
 msgctxt "SC_OPCODE_LET"
 msgid "Name value "
 msgstr "Значення на́зви "
 
 #. Dn2DE
-#: sc/inc/scfuncs.hrc:4393
+#: sc/inc/scfuncs.hrc:4429
 msgctxt "SC_OPCODE_LET"
 msgid "Name value 1, Name value 2,... The value or calculation to assign to Name."
 msgstr "Значення на́зви 1, Значення на́зви 2,... Значення або формула, виражена Назвою."
 
 #. CHAMD
-#: sc/inc/scfuncs.hrc:4394
+#: sc/inc/scfuncs.hrc:4430
 msgctxt "SC_OPCODE_LET"
 msgid "Calculation or Name "
 msgstr "Розрахунок або Назва "
 
 #. tFMkP
-#: sc/inc/scfuncs.hrc:4395
+#: sc/inc/scfuncs.hrc:4431
 msgctxt "SC_OPCODE_LET"
 msgid "A calculation that uses all names within the LET function. This must be the last argument in the LET function. Or a second Name to assign to a second Name value. If a second Name is specified, Name value 2 and Calculation or Name 3 become required."
 msgstr "Розрахунок, який використовує всі назви у функції LET. Це має бути останній аргумент у функції LET або друга Назва для присвоєння другому значенню Назви. Якщо вказана друга Назва, Назва значення 2 і Розрахунок або Назва 3 стають обов'язковими."
 
 #. oBDEA
-#: sc/inc/scfuncs.hrc:4401
+#: sc/inc/scfuncs.hrc:4437
 msgctxt "SC_OPCODE_WRAPCOLS"
 msgid "Wraps the provided row or column of values by columns after a specified number of elements to form a new array."
 msgstr "Обертає наданий рядок або стовпець значень по стовпцях після вказаної кількості елементів, утворюючи новий масив."
 
 #. fC6RK
-#: sc/inc/scfuncs.hrc:4402
+#: sc/inc/scfuncs.hrc:4438
 msgctxt "SC_OPCODE_WRAPCOLS"
 msgid "Range"
 msgstr "Діапазон"
 
 #. nfZyj
-#: sc/inc/scfuncs.hrc:4403
+#: sc/inc/scfuncs.hrc:4439
 msgctxt "SC_OPCODE_WRAPCOLS"
 msgid "the range to wrap."
 msgstr "діапазон для обертання."
 
 #. GE3HQ
-#: sc/inc/scfuncs.hrc:4404
+#: sc/inc/scfuncs.hrc:4440
 msgctxt "SC_OPCODE_WRAPCOLS"
 msgid "Wrap count"
 msgstr "Кількість обертів"
 
 #. FWsCt
-#: sc/inc/scfuncs.hrc:4405
+#: sc/inc/scfuncs.hrc:4441
 msgctxt "SC_OPCODE_WRAPCOLS"
 msgid "The maximum number of values for each column."
 msgstr "Максимальна кількість значень для кожного стовпця."
 
 #. zkjFB
-#: sc/inc/scfuncs.hrc:4406
+#: sc/inc/scfuncs.hrc:4442
 msgctxt "SC_OPCODE_WRAPCOLS"
 msgid "Pad with"
 msgstr "Вкласти"
 
 #. knbjc
-#: sc/inc/scfuncs.hrc:4407
+#: sc/inc/scfuncs.hrc:4443
 msgctxt "SC_OPCODE_WRAPCOLS"
 msgid "The value with which to pad. The default is #N/A."
 msgstr "Значення кількості заповнення. Типовим є #N/A."
 
 #. BDA7q
-#: sc/inc/scfuncs.hrc:4413
+#: sc/inc/scfuncs.hrc:4449
 msgctxt "SC_OPCODE_WRAPROWS"
 msgid "Wraps the provided row or column of values by rows after a specified number of elements to form a new array."
 msgstr "Обертає наданий рядок або стовпець значень по рядках після вказаної кількості елементів, утворюючи новий масив."
 
 #. 7esii
-#: sc/inc/scfuncs.hrc:4414
+#: sc/inc/scfuncs.hrc:4450
 msgctxt "SC_OPCODE_WRAPROWS"
 msgid "Range"
 msgstr "Діапазон"
 
 #. FLJwx
-#: sc/inc/scfuncs.hrc:4415
+#: sc/inc/scfuncs.hrc:4451
 msgctxt "SC_OPCODE_WRAPROWS"
 msgid "the range to wrap."
 msgstr "діапазон для обертання."
 
 #. aLHUi
-#: sc/inc/scfuncs.hrc:4416
+#: sc/inc/scfuncs.hrc:4452
 msgctxt "SC_OPCODE_WRAPROWS"
 msgid "Wrap count"
 msgstr "Кількість обертів"
 
 #. 3CEsK
-#: sc/inc/scfuncs.hrc:4417
+#: sc/inc/scfuncs.hrc:4453
 msgctxt "SC_OPCODE_WRAPROWS"
 msgid "The maximum number of values for each row."
 msgstr "Максимальна кількість значень для кожного рядка."
 
 #. iTCWg
-#: sc/inc/scfuncs.hrc:4418
+#: sc/inc/scfuncs.hrc:4454
 msgctxt "SC_OPCODE_WRAPROWS"
 msgid "Pad with"
 msgstr "Вкласти"
 
 #. e3K5s
-#: sc/inc/scfuncs.hrc:4419
+#: sc/inc/scfuncs.hrc:4455
 msgctxt "SC_OPCODE_WRAPROWS"
 msgid "The value with which to pad. The default is #N/A."
 msgstr "Значення кількості заповнення. Типовим є #N/A."
@@ -20544,7 +20702,7 @@ msgstr "Стовпці"
 #: sc/uiconfig/scalc/ui/aggregatefunctionentry.ui:69
 msgctxt "aggregatefunctionentry|extended_tip|ed_columns"
 msgid "Column index in the database range."
-msgstr ""
+msgstr "Індекс стовпця в діапазоні бази даних."
 
 #. BDhZj
 #: sc/uiconfig/scalc/ui/aggregatefunctionentry.ui:80
@@ -23190,19 +23348,19 @@ msgstr "Діапазон бази даних:"
 #: sc/uiconfig/scalc/ui/dataproviderdlg.ui:122
 msgctxt "dataproviderdlg|extended_tip|select_dg_range"
 msgid "The database range to receive the data from the provider."
-msgstr ""
+msgstr "Діапазон бази даних для отримання даних від надавача."
 
 #. A9mkB
 #: sc/uiconfig/scalc/ui/dataproviderdlg.ui:136
 msgctxt "dataproviderdlg/provider"
 msgid "Data Format:"
-msgstr ""
+msgstr "Формат даних:"
 
 #. 3YVZZ
 #: sc/uiconfig/scalc/ui/dataproviderdlg.ui:158
 msgctxt "dataproviderdlg|extended_tip|provider_lst"
 msgid "The format of the data to be imported."
-msgstr ""
+msgstr "Формат даних для імпорту."
 
 #. RGiXi
 #: sc/uiconfig/scalc/ui/dataproviderdlg.ui:172
@@ -23214,7 +23372,7 @@ msgstr "URL:"
 #: sc/uiconfig/scalc/ui/dataproviderdlg.ui:189
 msgctxt "dataproviderdlg|extended_tip|ed_url"
 msgid "The URL of the data provider.For local file, insert the file path and name. For web service, insert the URL."
-msgstr ""
+msgstr "URL-адреса постачальника даних. Для локального файлу вставте шлях до файлу та його ім'я. Для веб-сервісу – вставте URL-адресу."
 
 #. GKDQA
 #: sc/uiconfig/scalc/ui/dataproviderdlg.ui:200
@@ -23226,13 +23384,13 @@ msgstr "Огляд"
 #: sc/uiconfig/scalc/ui/dataproviderdlg.ui:215
 msgctxt "dataproviderdlg/id"
 msgid "Identifier:"
-msgstr ""
+msgstr "Ідентифікатор:"
 
 #. 8DHcr
 #: sc/uiconfig/scalc/ui/dataproviderdlg.ui:232
 msgctxt "dataproviderdlg|extended_tip|ed_id"
 msgid "The table identifier in the HTML source or the XPath in XML source."
-msgstr ""
+msgstr "Ідентифікатор таблиці в HTML-джерелі або XPath у XML-джерелі."
 
 #. pwS4k
 #: sc/uiconfig/scalc/ui/dataproviderdlg.ui:248
@@ -23256,85 +23414,85 @@ msgstr "Внести перетворення"
 #: sc/uiconfig/scalc/ui/dataproviderdlg.ui:293
 msgctxt "dataproviderdlg|extended_tip|add_transformation"
 msgid "Includes the selected transformation to the transformation set. Transformations are included at the bottom of the list."
-msgstr ""
+msgstr "Додає вибране перетворення до набору перетворень. Перетворення розташовані внизу списку."
 
 #. 3gAD7
 #: sc/uiconfig/scalc/ui/dataproviderdlg.ui:308
 msgctxt "dataproviderdlg|transformation_list"
 msgid "Delete Columns"
-msgstr ""
+msgstr "Видалити стовпці"
 
 #. jVEGr
 #: sc/uiconfig/scalc/ui/dataproviderdlg.ui:309
 msgctxt "dataproviderdlg|transformation_list"
 msgid "Delete Rows"
-msgstr ""
+msgstr "Видалити рядки"
 
 #. 5ECwU
 #: sc/uiconfig/scalc/ui/dataproviderdlg.ui:310
 msgctxt "dataproviderdlg|transformation_list"
 msgid "Swap Rows"
-msgstr ""
+msgstr "Поміняти місцями рядки"
 
 #. W8ict
 #: sc/uiconfig/scalc/ui/dataproviderdlg.ui:311
 msgctxt "dataproviderdlg|transformation_list"
 msgid "Split Column"
-msgstr ""
+msgstr "Розділити стовпець"
 
 #. BriDb
 #: sc/uiconfig/scalc/ui/dataproviderdlg.ui:312
 msgctxt "dataproviderdlg|transformation_list"
 msgid "Merge Columns"
-msgstr ""
+msgstr "Об'єднати стовпці"
 
 #. TR39A
 #: sc/uiconfig/scalc/ui/dataproviderdlg.ui:313
 msgctxt "dataproviderdlg|transformation_list"
 msgid "Text Transformation"
-msgstr ""
+msgstr "Перетворення тексту"
 
 #. BkFha
 #: sc/uiconfig/scalc/ui/dataproviderdlg.ui:314
 msgctxt "dataproviderdlg|transformation_list"
 msgid "Sort Columns"
-msgstr ""
+msgstr "Сортування стовпців"
 
 #. S8GHs
 #: sc/uiconfig/scalc/ui/dataproviderdlg.ui:315
 msgctxt "dataproviderdlg|transformation_list"
 msgid "Aggregate Functions"
-msgstr ""
+msgstr "Агрегатні функції"
 
 #. Fyzur
 #: sc/uiconfig/scalc/ui/dataproviderdlg.ui:316
 msgctxt "dataproviderdlg|transformation_list"
 msgid "Numeric"
-msgstr ""
+msgstr "Цифровий"
 
 #. dR5tx
 #: sc/uiconfig/scalc/ui/dataproviderdlg.ui:317
 msgctxt "dataproviderdlg|transformation_list"
 msgid "Replace Null"
-msgstr ""
+msgstr "Замінити нуль"
 
 #. T94zb
 #: sc/uiconfig/scalc/ui/dataproviderdlg.ui:318
 msgctxt "dataproviderdlg|transformation_list"
 msgid "Date and Time"
-msgstr ""
+msgstr "Дата і час"
 
 #. 2wLSM
 #: sc/uiconfig/scalc/ui/dataproviderdlg.ui:319
 msgctxt "dataproviderdlg|transformation_list"
 msgid "Find and Replace"
-msgstr ""
+msgstr "Знайти і замінити"
 
 #. uxVAq
 #: sc/uiconfig/scalc/ui/dataproviderdlg.ui:323
 msgctxt "dataproviderdlg|extended_tip|transformation_box"
 msgid "Available transformations that can be applied to the provided data."
-msgstr ""
+msgstr "Доступні перетворення, які можна застосувати до наданих даних."
 
 #. cSgeU
 #: sc/uiconfig/scalc/ui/dataproviderdlg.ui:368
@@ -23358,7 +23516,7 @@ msgstr "Прийняти зміни"
 #: sc/uiconfig/scalc/ui/dataproviderdlg.ui:434
 msgctxt "dataproviderdlg|extended_tip|apply"
 msgid "Applies the transformations to the provided data and displays results in the Preview area for inspection."
-msgstr ""
+msgstr "Застосовує перетворення до наданих даних і відображає результати в області попереднього перегляду для перевірки."
 
 #. 6pCFs
 #: sc/uiconfig/scalc/ui/dataproviderdlg.ui:453
@@ -23472,7 +23630,7 @@ msgstr "Потік даних в реальному часі для електр
 #: sc/uiconfig/scalc/ui/datetimetransformationentry.ui:29
 msgctxt "datetimetransformationentry|name"
 msgid "Date and Time"
-msgstr ""
+msgstr "Дата і час"
 
 #. P4zeS
 #: sc/uiconfig/scalc/ui/datetimetransformationentry.ui:48
@@ -23586,13 +23744,13 @@ msgstr "Час"
 #: sc/uiconfig/scalc/ui/datetimetransformationentry.ui:80
 msgctxt "datetimetransformationentry/cols"
 msgid "Cols(; Separated)"
-msgstr ""
+msgstr "Стовпці (; Окремо)"
 
 #. S2dXC
 #: sc/uiconfig/scalc/ui/datetimetransformationentry.ui:83
 msgctxt "datetimetransformationentry|extended_tip|ed_columns"
 msgid "List of column indexes to apply the date transformation, separated by semicolons."
-msgstr ""
+msgstr "Список індексів стовпців для застосування перетворення дати, розділених крапкою з комою."
 
 #. sM9XW
 #: sc/uiconfig/scalc/ui/datetimetransformationentry.ui:94
@@ -23798,11 +23956,11 @@ msgctxt "definename|label4"
 msgid "Scope:"
 msgstr "Область дії:"
 
-#. 8LBjA
+#. SeYrM
 #: sc/uiconfig/scalc/ui/definename.ui:142
 msgctxt "definename|extended_tip|edit"
-msgid "Enter the name of the area for which you want to define a reference or a formula expression."
-msgstr "Введіть назву області, на яку Ви хотіли б посилатись або використати в формулах."
+msgid "Enter the name of the area for which you want to define a reference or a formula expression. It must start with a letter (excluding c, C, r, or R followed by a number) or underscore. Only letters, numbers, and underscores are permitted."
+msgstr ""
 
 #. yDeUA
 #: sc/uiconfig/scalc/ui/definename.ui:166
@@ -23883,7 +24041,7 @@ msgid "Allows you to specify the Area type (optional) for the reference."
 msgstr "Дозволяє вказати Тип області для посилань (не обов'язково)."
 
 #. gBKqi
-#: sc/uiconfig/scalc/ui/definename.ui:360
+#: sc/uiconfig/scalc/ui/definename.ui:357
 msgctxt "definename|extended_tip|DefineNameDialog"
 msgid "Opens a dialog where you can specify a name for a selected area or a name for a formula expression."
 msgstr "Відкриває діалогове вікно, де можна задати назву для виділеної області або назву формульного виразу."
@@ -23970,7 +24128,7 @@ msgstr "Стовпці (; Окремо)"
 #: sc/uiconfig/scalc/ui/deletecolumnentry.ui:49
 msgctxt "deletecolumnentry|extended_tip|ed_columns"
 msgid "List of column indexes to delete, separated by semicolons."
-msgstr ""
+msgstr "Список індексів стовпців для видалення, розділених крапкою з комою."
 
 #. tGfwG
 #: sc/uiconfig/scalc/ui/deletecolumnentry.ui:60
@@ -23982,7 +24140,7 @@ msgstr "Видалити"
 #: sc/uiconfig/scalc/ui/deletecolumnentry.ui:67
 msgctxt "deletecolumnentry|extended_tip|ed_delete"
 msgid "Removes this entry from the transformation list."
-msgstr ""
+msgstr "Видаляє цей запис зі списку перетворень."
 
 #. VWjSF
 #: sc/uiconfig/scalc/ui/deletecontents.ui:8
@@ -24102,31 +24260,31 @@ msgstr "Задає вміст, який слід видалити з актив�
 #: sc/uiconfig/scalc/ui/deleterowentry.ui:29
 msgctxt "deleterow|delete_label"
 msgid "Delete Rows"
-msgstr ""
+msgstr "Видалити рядки"
 
 #. E3mtR
 #: sc/uiconfig/scalc/ui/deleterowentry.ui:46
 msgctxt "deleterow|value"
 msgid "Lookup value"
-msgstr ""
+msgstr "Значення для пошуку"
 
 #. VjWx5
 #: sc/uiconfig/scalc/ui/deleterowentry.ui:49
 msgctxt "deleterowentry|extended_tip|ed_find"
 msgid "The value to look for in the database."
-msgstr ""
+msgstr "Значення, яке потрібно шукати в базі даних."
 
 #. yDJLN
 #: sc/uiconfig/scalc/ui/deleterowentry.ui:65
 msgctxt "deleterow|column"
 msgid "Column index"
-msgstr ""
+msgstr "Індекс стовпчика"
 
 #. F8Emo
 #: sc/uiconfig/scalc/ui/deleterowentry.ui:68
 msgctxt "deleterowentry| extended_tip|ed_columns"
 msgid "Column index in the database range."
-msgstr ""
+msgstr "Індекс стовпця в діапазоні бази даних."
 
 #. yhzDR
 #: sc/uiconfig/scalc/ui/deleterowentry.ui:79
@@ -24408,7 +24566,7 @@ msgstr "Порівняти рядки."
 #: sc/uiconfig/scalc/ui/duplicaterecordsdlg.ui:217
 msgctxt "duplicaterecordsdialog|column"
 msgid "Colu_mns"
-msgstr ""
+msgstr "С_товпці"
 
 #. ZFN6o
 #: sc/uiconfig/scalc/ui/duplicaterecordsdlg.ui:221
@@ -24972,7 +25130,7 @@ msgstr "Колір шрифту"
 #: sc/uiconfig/scalc/ui/findreplaceentry.ui:29
 msgctxt "findreplace|label_action"
 msgid "Find and Replace"
-msgstr ""
+msgstr "Знайти і замінити"
 
 #. T9kUg
 #: sc/uiconfig/scalc/ui/findreplaceentry.ui:46
@@ -24984,7 +25142,7 @@ msgstr "Знайти"
 #: sc/uiconfig/scalc/ui/findreplaceentry.ui:49
 msgctxt "findreplaceentry|extended_tip|ed_find"
 msgid "The value to find."
-msgstr ""
+msgstr "Значення для пошуку."
 
 #. mBfPJ
 #: sc/uiconfig/scalc/ui/findreplaceentry.ui:65
@@ -24996,7 +25154,7 @@ msgstr "Замінити на:"
 #: sc/uiconfig/scalc/ui/findreplaceentry.ui:68
 msgctxt "findreplaceentry|extended_tip|ed_replace"
 msgid "The replacement value."
-msgstr ""
+msgstr "Значення для заміни."
 
 #. RF57t
 #: sc/uiconfig/scalc/ui/findreplaceentry.ui:84
@@ -25008,7 +25166,7 @@ msgstr "Стовпчик"
 #: sc/uiconfig/scalc/ui/findreplaceentry.ui:87
 msgctxt "findreplaceentry|extended_tip|ed_columns"
 msgid "The index of the column to find value and replace it."
-msgstr ""
+msgstr "За індексом стовпця знайти значення і замінити його."
 
 #. WWQzs
 #: sc/uiconfig/scalc/ui/findreplaceentry.ui:98
@@ -25290,7 +25448,7 @@ msgstr "Востаннє використано"
 #: sc/uiconfig/scalc/ui/functionpanel.ui:70
 msgctxt "functionpanel|category"
 msgid "Favorites"
-msgstr ""
+msgstr "Обране"
 
 #. uRXDm
 #: sc/uiconfig/scalc/ui/functionpanel.ui:71
@@ -25527,55 +25685,55 @@ msgid "Grouping"
 msgstr "Групування"
 
 #. 64CQA
-#: sc/uiconfig/scalc/ui/groupbydate.ui:122
+#: sc/uiconfig/scalc/ui/groupbydate.ui:119
 msgctxt "groupbydate|auto_start"
 msgid "_Automatically"
 msgstr "_Автоматично"
 
 #. u9esd
-#: sc/uiconfig/scalc/ui/groupbydate.ui:137
+#: sc/uiconfig/scalc/ui/groupbydate.ui:134
 msgctxt "groupbydate|manual_start"
 msgid "_Manually at:"
 msgstr "_Вручну на:"
 
 #. uLqPc
-#: sc/uiconfig/scalc/ui/groupbydate.ui:175
+#: sc/uiconfig/scalc/ui/groupbydate.ui:178
 msgctxt "groupbydate|label1"
 msgid "Start"
 msgstr "Початок"
 
 #. F9Q6s
-#: sc/uiconfig/scalc/ui/groupbydate.ui:207
+#: sc/uiconfig/scalc/ui/groupbydate.ui:210
 msgctxt "groupbydate|auto_end"
 msgid "A_utomatically"
 msgstr "_Автоматично"
 
 #. c77d8
-#: sc/uiconfig/scalc/ui/groupbydate.ui:222
+#: sc/uiconfig/scalc/ui/groupbydate.ui:225
 msgctxt "groupbydate|manual_end"
 msgid "Ma_nually at:"
 msgstr "В_ручну на:"
 
 #. 7atAW
-#: sc/uiconfig/scalc/ui/groupbydate.ui:260
+#: sc/uiconfig/scalc/ui/groupbydate.ui:269
 msgctxt "groupbydate|label2"
 msgid "End"
 msgstr "Кінець"
 
 #. PbDbU
-#: sc/uiconfig/scalc/ui/groupbydate.ui:294
+#: sc/uiconfig/scalc/ui/groupbydate.ui:303
 msgctxt "groupbydate|days"
 msgid "Number of _days:"
 msgstr "Кількість _днів:"
 
 #. GGREf
-#: sc/uiconfig/scalc/ui/groupbydate.ui:312
+#: sc/uiconfig/scalc/ui/groupbydate.ui:321
 msgctxt "groupbydate|intervals"
 msgid "_Intervals:"
 msgstr "_Інтервали:"
 
 #. aQKHp
-#: sc/uiconfig/scalc/ui/groupbydate.ui:410
+#: sc/uiconfig/scalc/ui/groupbydate.ui:419
 msgctxt "groupbydate|label3"
 msgid "Group by"
 msgstr "Групувати за"
@@ -26403,46 +26561,46 @@ msgid "Select cells in the document to update the range."
 msgstr "Виберіть комірки документа для оновлення діапазону."
 
 #. WCnsd
-#: sc/uiconfig/scalc/ui/managenamesdialog.ui:215
+#: sc/uiconfig/scalc/ui/managenamesdialog.ui:216
 msgctxt "managenamesdialog|label2"
 msgid "Name:"
 msgstr "Назва:"
 
 #. XY33d
-#: sc/uiconfig/scalc/ui/managenamesdialog.ui:229
+#: sc/uiconfig/scalc/ui/managenamesdialog.ui:230
 msgctxt "managenamesdialog|label4"
 msgid "Scope:"
 msgstr "Область дії:"
 
 #. oXFBG
-#: sc/uiconfig/scalc/ui/managenamesdialog.ui:246
+#: sc/uiconfig/scalc/ui/managenamesdialog.ui:247
 msgctxt "managenamesdialog|extended_tip|scope"
 msgid "Select the scope of the named range or named formula. Document (Global) means the name is valid for the whole document."
 msgstr "Виберіть призначення названого діапазону або названої формули. «Документ (загальний)» означає, що назва дійсна для всього документа."
 
 #. 2dF7g
-#: sc/uiconfig/scalc/ui/managenamesdialog.ui:271
+#: sc/uiconfig/scalc/ui/managenamesdialog.ui:272
 msgctxt "managenamesdialog|extended_tip|range"
 msgid "The reference of the selected area name is shown here as an absolute value."
 msgstr "Посилання на назву виділеної області показано тут як абсолютне значення."
 
 #. EJrBk
-#: sc/uiconfig/scalc/ui/managenamesdialog.ui:288
+#: sc/uiconfig/scalc/ui/managenamesdialog.ui:289
 msgctxt "managenamesdialog|extended_tip|assign"
 msgid "Click the Shrink icon to reduce the dialog to the size of the input field. It is then easier to mark the required reference in the sheet. The icons then automatically convert to the Maximize icon. Click it to restore the dialog to its original size."
 msgstr "Клацніть значок Згорнути, щоб зменшити діалогове вікно до розміру поля введення. Після цього легше вибрати потрібне посилання на аркуші. Потім значок автоматично перетвориться на значок Розгорнути. Клацніть його, щоб відновити початковий розмір діалогового вікна."
 
 #. ddGRB
-#: sc/uiconfig/scalc/ui/managenamesdialog.ui:309
+#: sc/uiconfig/scalc/ui/managenamesdialog.ui:310
 msgctxt "managenamesdialog|label3"
 msgid "Range or formula expression:"
 msgstr "Діапазон або формула:"
 
-#. CEMJp
-#: sc/uiconfig/scalc/ui/managenamesdialog.ui:328
+#. AzEvE
+#: sc/uiconfig/scalc/ui/managenamesdialog.ui:329
 msgctxt "managenamesdialog|extended_tip|name"
-msgid "Enter the name of the area for which you want to define a reference or a formula expression."
-msgstr "Введіть назву області, на яку Ви хотіли б посилатись або використати в формулах."
+msgid "Enter the name of the area for which you want to define a reference or a formula expression. It must start with a letter (excluding c, C, r, or R followed by a number) or underscore. Only letters, numbers, and underscores are permitted."
+msgstr ""
 
 #. dGcEm
 #: sc/uiconfig/scalc/ui/managenamesdialog.ui:361
@@ -26517,13 +26675,13 @@ msgid "Deletes the selected element or elements without requiring confirmation."
 msgstr "Вилучає вибрані елементи без запиту щодо підтвердження."
 
 #. j3EMw
-#: sc/uiconfig/scalc/ui/managenamesdialog.ui:527
+#: sc/uiconfig/scalc/ui/managenamesdialog.ui:524
 msgctxt "managenamesdialog|extended_tip|ManageNamesDialog"
 msgid "Opens a dialog where you can specify a name for a selected area or a name for a formula expression."
 msgstr "Відкриває діалогове вікно, де можна задати назву для виділеної області або назву формульного виразу."
 
 #. 96fTt
-#: sc/uiconfig/scalc/ui/managenamesdialog.ui:532
+#: sc/uiconfig/scalc/ui/managenamesdialog.ui:529
 msgctxt "managenamesdialog|treeviewcolumn1"
 msgid "column"
 msgstr "стовпчик"
@@ -26568,31 +26726,31 @@ msgstr "Об'єднати вибрані комірки в одну або ро�
 #: sc/uiconfig/scalc/ui/mergecolumnentry.ui:29
 msgctxt "mergecolumnentry|name"
 msgid "Merge Columns"
-msgstr ""
+msgstr "Об'єднати стовпці"
 
 #. iK9Sb
 #: sc/uiconfig/scalc/ui/mergecolumnentry.ui:46
 msgctxt "mergecolumnentry/separator"
 msgid "Separator string"
-msgstr ""
+msgstr "Розділювальний рядок"
 
 #. q8wd8
 #: sc/uiconfig/scalc/ui/mergecolumnentry.ui:49
 msgctxt "mergecolumnentry|extended_tip|ed_separator"
 msgid "Character or string added between the values in each row of the columns to merge."
-msgstr ""
+msgstr "Символ або рядок, доданий між значеннями в кожному рядку стовпців для об'єднання."
 
 #. 9ZX3j
 #: sc/uiconfig/scalc/ui/mergecolumnentry.ui:65
 msgctxt "mergecolumnentry/cols"
 msgid "Cols(; Separated)"
-msgstr ""
+msgstr "Стовпці (; Окремо)"
 
 #. P5HMr
 #: sc/uiconfig/scalc/ui/mergecolumnentry.ui:68
 msgctxt "mergecolumnentry|extended_tip|ed_columns"
 msgid "List of column indexes to merge, separated by semicolons."
-msgstr ""
+msgstr "Список індексів стовпців для об'єднання, розділених крапкою з комою."
 
 #. cMGtd
 #: sc/uiconfig/scalc/ui/mergecolumnentry.ui:79
@@ -28380,7 +28538,7 @@ msgstr "Змінити контур"
 #: sc/uiconfig/scalc/ui/numbertransformationentry.ui:29
 msgctxt "numbertransformationentry|name"
 msgid "Numeric"
-msgstr ""
+msgstr "Цифровий"
 
 #. M6K87
 #: sc/uiconfig/scalc/ui/numbertransformationentry.ui:48
@@ -28464,13 +28622,13 @@ msgstr "Непарне"
 #: sc/uiconfig/scalc/ui/numbertransformationentry.ui:75
 msgctxt "numbertransformationentry/cols"
 msgid "Cols(; Separated)"
-msgstr ""
+msgstr "Стовпці (; Окремо)"
 
 #. 7BisG
 #: sc/uiconfig/scalc/ui/numbertransformationentry.ui:78
 msgctxt "numbertransformationentry|extended_tip|ed_columns"
 msgid "List of column indexes to apply the numeric transformation, separated by semicolons."
-msgstr ""
+msgstr "Список індексів стовпців для застосування числового перетворення, розділених крапкою з комою."
 
 #. FFa8s
 #: sc/uiconfig/scalc/ui/numbertransformationentry.ui:89
@@ -30141,7 +30299,7 @@ msgstr "Автоматично призначає рядки без підпис
 #: sc/uiconfig/scalc/ui/pivottablelayoutdialog.ui:662
 msgctxt "pivottablelayoutdialog|check-total-rows"
 msgid "Show totals row"
-msgstr ""
+msgstr "Показати підсумковий рядок"
 
 #. FdXjF
 #: sc/uiconfig/scalc/ui/pivottablelayoutdialog.ui:670
@@ -30153,7 +30311,7 @@ msgstr "Розрахунок і відображення загального п
 #: sc/uiconfig/scalc/ui/pivottablelayoutdialog.ui:681
 msgctxt "pivottablelayoutdialog|check-total-columns"
 msgid "Show totals column"
-msgstr ""
+msgstr "Показати підсумковий сповпець"
 
 #. DEFgB
 #: sc/uiconfig/scalc/ui/pivottablelayoutdialog.ui:689
@@ -30897,7 +31055,7 @@ msgstr "Виконує регресійний аналіз набору дани
 #: sc/uiconfig/scalc/ui/replacenulltransformationentry.ui:29
 msgctxt "replacenulltransformationentry|name"
 msgid "Replace Null"
-msgstr ""
+msgstr "Замінити нуль"
 
 #. 5DqkR
 #: sc/uiconfig/scalc/ui/replacenulltransformationentry.ui:46
@@ -30909,13 +31067,13 @@ msgstr "Замінити на"
 #: sc/uiconfig/scalc/ui/replacenulltransformationentry.ui:60
 msgctxt "replacenulltransformationentry/cols"
 msgid "Cols(; Separated)"
-msgstr ""
+msgstr "Стовпці (; Окремо)"
 
 #. ZAkHs
 #: sc/uiconfig/scalc/ui/replacenulltransformationentry.ui:63
 msgctxt "replacenulltransformationentry|extended_tip|ed_columns"
 msgid "List of column indexes to replace nulls, separated by semicolons."
-msgstr ""
+msgstr "Список індексів стовпців для заміни нулів, розділених крапкою з комою."
 
 #. KHAnu
 #: sc/uiconfig/scalc/ui/replacenulltransformationentry.ui:74
@@ -32271,7 +32429,7 @@ msgstr "Обрамлення"
 #: sc/uiconfig/scalc/ui/sidebarcellappearance.ui:87
 msgctxt "sidebarcellappearance|cellbordertype-atkobject"
 msgid "Border Style"
-msgstr ""
+msgstr "Стиль обрамлення"
 
 #. D2TVi
 #: sc/uiconfig/scalc/ui/sidebarcellappearance.ui:101
@@ -33093,19 +33251,19 @@ msgstr "Додаткові параметри сортування."
 #: sc/uiconfig/scalc/ui/sorttransformationentry.ui:29
 msgctxt "sorttransformationentry|name"
 msgid "Sort Columns"
-msgstr ""
+msgstr "Сортування стовпців"
 
 #. BCBMg
 #: sc/uiconfig/scalc/ui/sorttransformationentry.ui:46
 msgctxt "sorttransformationentry/cols"
 msgid "Column index"
-msgstr ""
+msgstr "Індекс стовпчика"
 
 #. kSqEK
 #: sc/uiconfig/scalc/ui/sorttransformationentry.ui:49
 msgctxt "sorttransformationentry|extended_tip|ed_columns"
 msgid "The column index for sorting data."
-msgstr ""
+msgstr "Індекс стовпця для сортування даних."
 
 #. 2nUfs
 #: sc/uiconfig/scalc/ui/sorttransformationentry.ui:60
@@ -33549,25 +33707,25 @@ msgstr "Розділити стовпець"
 #: sc/uiconfig/scalc/ui/splitcolumnentry.ui:46
 msgctxt "splitcolumnentry/separator"
 msgid "Separator string"
-msgstr ""
+msgstr "Розділювальний рядок"
 
 #. QxEDe
 #: sc/uiconfig/scalc/ui/splitcolumnentry.ui:49
 msgctxt "splitcolumnentry|extended_tip|ed_separator"
 msgid "The character or string used to separate the column in two."
-msgstr ""
+msgstr "Символ або набір символів, що використовується для розділення стовпця на дві частини."
 
 #. GmoFA
 #: sc/uiconfig/scalc/ui/splitcolumnentry.ui:65
 msgctxt "splitcolumnentry/cols"
 msgid "Column index"
-msgstr ""
+msgstr "Індекс стовпчика"
 
 #. 5uB3c
 #: sc/uiconfig/scalc/ui/splitcolumnentry.ui:68
 msgctxt "splitcolumnentry|extended_tip|num_cols"
 msgid "The index of the column to split."
-msgstr ""
+msgstr "Індекс стовпця, який потрібно розділити."
 
 #. P8ZCJ
 #: sc/uiconfig/scalc/ui/splitcolumnentry.ui:79
@@ -34233,7 +34391,7 @@ msgstr "_Зведені дані нижче"
 #: sc/uiconfig/scalc/ui/subtotaloptionspage.ui:99
 msgctxt "subtotaloptionspage|extended_tip|summarybelow"
 msgid "Specify if the subtotals are positioned below or above the data."
-msgstr ""
+msgstr "Вкажіть, чи будуть проміжні підсумки розташовані нижче або вище даних."
 
 #. 6jJEr
 #: sc/uiconfig/scalc/ui/subtotaloptionspage.ui:114
@@ -34299,7 +34457,7 @@ msgstr "Задайте параметри для обчислення та по�
 #: sc/uiconfig/scalc/ui/swaprowsentry.ui:29
 msgctxt "swaprows|action"
 msgid "Swap Rows"
-msgstr ""
+msgstr "Поміняти місцями рядки"
 
 #. sig3h
 #: sc/uiconfig/scalc/ui/swaprowsentry.ui:46
@@ -34311,7 +34469,7 @@ msgstr "Перший рядок"
 #: sc/uiconfig/scalc/ui/swaprowsentry.ui:49
 msgctxt "swaprowsentry|extended_tip|ed_row1"
 msgid "The first row to swap position with the second row."
-msgstr ""
+msgstr "Перший рядок поміняти місцями з другим."
 
 #. rDLdF
 #: sc/uiconfig/scalc/ui/swaprowsentry.ui:65
@@ -34323,7 +34481,7 @@ msgstr "Другий рядок"
 #: sc/uiconfig/scalc/ui/swaprowsentry.ui:68
 msgctxt "swaprowsentry|extended_tip|ed_row2"
 msgid "The second row to swap position with the first row."
-msgstr ""
+msgstr "Другий рядок поміняти місцями з першим."
 
 #. E7ATE
 #: sc/uiconfig/scalc/ui/swaprowsentry.ui:79
@@ -34635,7 +34793,7 @@ msgstr "Текст за стовпчиками"
 #: sc/uiconfig/scalc/ui/textimportcsv.ui:875
 msgctxt "textimportcsv|alwaysshow"
 msgid "_Always show on import"
-msgstr ""
+msgstr "_Завжди показувати при імпорті"
 
 #. XjAZq
 #: sc/uiconfig/scalc/ui/textimportcsv.ui:895
@@ -34725,13 +34883,13 @@ msgstr "Обрізати"
 #: sc/uiconfig/scalc/ui/texttransformationentry.ui:66
 msgctxt "texttransformationentry/cols"
 msgid "Cols(; Separated)"
-msgstr ""
+msgstr "Стовпці (; Окремо)"
 
 #. BeWhA
 #: sc/uiconfig/scalc/ui/texttransformationentry.ui:69
 msgctxt "texttransformationentry|extended_tip|ed_columns"
 msgid "List of column indexes to perform the text transformation, separated by semicolons."
-msgstr ""
+msgstr "Список індексів стовпців для перетворення тексту, розділених крапкою з комою."
 
 #. aoBA3
 #: sc/uiconfig/scalc/ui/texttransformationentry.ui:80

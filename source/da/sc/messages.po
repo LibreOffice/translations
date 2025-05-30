@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2025-05-09 18:30+0200\n"
-"PO-Revision-Date: 2025-05-19 13:32+0000\n"
+"POT-Creation-Date: 2025-05-30 12:45+0200\n"
+"PO-Revision-Date: 2025-05-20 13:55+0000\n"
 "Last-Translator: Lars Jødal <lajo@rn.dk>\n"
 "Language-Team: Danish <https://translations.documentfoundation.org/projects/libo_ui-master/scmessages/da/>\n"
 "Language: da\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Accelerator-Marker: ~\n"
-"X-Generator: Weblate 5.10.1\n"
+"X-Generator: LibreOffice\n"
 "X-POOTLE-MTIME: 1562523528.000000\n"
 
 #. kBovX
@@ -2749,11 +2749,13 @@ msgctxt "STR_ERR_NAME_EXISTS"
 msgid "Invalid name. Already in use for the selected scope."
 msgstr "Ugyldigt navn. Allerede i brug for det valgte virkefelt."
 
-#. qDNs9
+#. GxYui
 #: sc/inc/globstr.hrc:464
 msgctxt "STR_ERR_NAME_INVALID"
-msgid "Invalid name. Start with a letter, use only letters, numbers and underscore."
-msgstr "Ugyldigt navn. Begynd med et bogstav og anvend kun bogstaver, tal og understregning."
+msgid ""
+"Invalid name. It must start with a letter (excluding c, C, r, or R followed by a number) or underscore.\n"
+"Only letters, numbers, and underscores are permitted."
+msgstr ""
 
 #. owW4Y
 #: sc/inc/globstr.hrc:465
@@ -17475,332 +17477,488 @@ msgctxt "SC_OPCODE_TAKE"
 msgid "The number of columns to take. A negative value takes from the end of the array."
 msgstr "Antallet af kolonner, som skal hentes. En negativ værdi henter fra matricens slutning."
 
-#. wdZTd
+#. GwyMB
 #: sc/inc/scfuncs.hrc:4335
+msgctxt "SC_OPCODE_TEXTAFTER"
+msgid "Returns the text that occurs after a given substring or delimiter."
+msgstr ""
+
+#. cicY2
+#: sc/inc/scfuncs.hrc:4336
+msgctxt "SC_OPCODE_TEXTAFTER"
+msgid "Text"
+msgstr ""
+
+#. 3WLYF
+#: sc/inc/scfuncs.hrc:4337
+msgctxt "SC_OPCODE_TEXTAFTER"
+msgid "The original text."
+msgstr ""
+
+#. z4pDr
+#: sc/inc/scfuncs.hrc:4338
+msgctxt "SC_OPCODE_TEXTAFTER"
+msgid "Delimiter"
+msgstr ""
+
+#. YEbwu
+#: sc/inc/scfuncs.hrc:4339
+msgctxt "SC_OPCODE_TEXTAFTER"
+msgid "The delimiter. Multiple delimiters can be supplied."
+msgstr ""
+
+#. HPDvF
+#: sc/inc/scfuncs.hrc:4340
+msgctxt "SC_OPCODE_TEXTAFTER"
+msgid "Instance Number"
+msgstr ""
+
+#. DmVZL
+#: sc/inc/scfuncs.hrc:4341
+msgctxt "SC_OPCODE_TEXTAFTER"
+msgid "The instance of the delimiter after which to extract text. The default is 1. A negative number starts searching from the end."
+msgstr ""
+
+#. fpoGj
+#: sc/inc/scfuncs.hrc:4342
+msgctxt "SC_OPCODE_TEXTAFTER"
+msgid "Match Mode"
+msgstr ""
+
+#. iSfJi
+#: sc/inc/scfuncs.hrc:4343
+msgctxt "SC_OPCODE_TEXTAFTER"
+msgid "Set to 1 to perform a case-insensitive match. The default is 0."
+msgstr ""
+
+#. nAF2s
+#: sc/inc/scfuncs.hrc:4344
+msgctxt "SC_OPCODE_TEXTAFTER"
+msgid "Match End"
+msgstr ""
+
+#. W2DGj
+#: sc/inc/scfuncs.hrc:4345
+msgctxt "SC_OPCODE_TEXTAFTER"
+msgid "Set to 1 to treat the end of text as a delimiter. The default is 0."
+msgstr ""
+
+#. PG6qj
+#: sc/inc/scfuncs.hrc:4346
+msgctxt "SC_OPCODE_TEXTAFTER"
+msgid "If Not Found"
+msgstr ""
+
+#. vfgZc
+#: sc/inc/scfuncs.hrc:4347
+msgctxt "SC_OPCODE_TEXTAFTER"
+msgid "The value returned if no match is found. The default is #N/A."
+msgstr ""
+
+#. f88EE
+#: sc/inc/scfuncs.hrc:4353
+msgctxt "SC_OPCODE_TEXTBEFORE"
+msgid "Returns the text that occurs before a given substring or delimiter."
+msgstr ""
+
+#. NNriC
+#: sc/inc/scfuncs.hrc:4354
+msgctxt "SC_OPCODE_TEXTBEFORE"
+msgid "Text"
+msgstr ""
+
+#. HsEG8
+#: sc/inc/scfuncs.hrc:4355
+msgctxt "SC_OPCODE_TEXTBEFORE"
+msgid "The original text."
+msgstr ""
+
+#. E4a5z
+#: sc/inc/scfuncs.hrc:4356
+msgctxt "SC_OPCODE_TEXTBEFORE"
+msgid "Delimiter"
+msgstr ""
+
+#. qDFZy
+#: sc/inc/scfuncs.hrc:4357
+msgctxt "SC_OPCODE_TEXTBEFORE"
+msgid "The delimiter. Multiple delimiters can be supplied."
+msgstr ""
+
+#. gNHAi
+#: sc/inc/scfuncs.hrc:4358
+msgctxt "SC_OPCODE_TEXTBEFORE"
+msgid "Instance Number"
+msgstr ""
+
+#. sD4zC
+#: sc/inc/scfuncs.hrc:4359
+msgctxt "SC_OPCODE_TEXTBEFORE"
+msgid "The instance of the delimiter before which to extract text. The default is 1. A negative number starts searching from the end."
+msgstr ""
+
+#. Adzeh
+#: sc/inc/scfuncs.hrc:4360
+msgctxt "SC_OPCODE_TEXTBEFORE"
+msgid "Match Mode"
+msgstr ""
+
+#. Pi2Ti
+#: sc/inc/scfuncs.hrc:4361
+msgctxt "SC_OPCODE_TEXTBEFORE"
+msgid "Set to 1 to perform a case-insensitive match. The default is 0."
+msgstr ""
+
+#. sACA2
+#: sc/inc/scfuncs.hrc:4362
+msgctxt "SC_OPCODE_TEXTBEFORE"
+msgid "Match End"
+msgstr ""
+
+#. UxpD6
+#: sc/inc/scfuncs.hrc:4363
+msgctxt "SC_OPCODE_TEXTBEFORE"
+msgid "Set to 1 to treat the end of text as a delimiter. The default is 0."
+msgstr ""
+
+#. aCnZX
+#: sc/inc/scfuncs.hrc:4364
+msgctxt "SC_OPCODE_TEXTBEFORE"
+msgid "If Not Found"
+msgstr ""
+
+#. xCZYH
+#: sc/inc/scfuncs.hrc:4365
+msgctxt "SC_OPCODE_TEXTBEFORE"
+msgid "The value returned if no match is found. The default is #N/A."
+msgstr ""
+
+#. wdZTd
+#: sc/inc/scfuncs.hrc:4371
 msgctxt "SC_OPCODE_TEXTSPLIT"
 msgid "Splits text by a given delimiter to an array of multiple cells."
 msgstr "Opdeler en tekst ved et givet skilletegn til en matrix med flere celler."
 
 #. DH7h4
-#: sc/inc/scfuncs.hrc:4336
+#: sc/inc/scfuncs.hrc:4372
 msgctxt "SC_OPCODE_TEXTSPLIT"
 msgid "Text"
 msgstr "Tekst"
 
 #. dqSdF
-#: sc/inc/scfuncs.hrc:4337
+#: sc/inc/scfuncs.hrc:4373
 msgctxt "SC_OPCODE_TEXTSPLIT"
 msgid "The text to split."
 msgstr "Teksten, som skal opdeles."
 
 #. pdpxt
-#: sc/inc/scfuncs.hrc:4338
+#: sc/inc/scfuncs.hrc:4374
 msgctxt "SC_OPCODE_TEXTSPLIT"
 msgid "Column Delimiter"
 msgstr "Kolonneskilletegn"
 
 #. nfMAr
-#: sc/inc/scfuncs.hrc:4339
+#: sc/inc/scfuncs.hrc:4375
 msgctxt "SC_OPCODE_TEXTSPLIT"
 msgid "The text to delimit the columns. Multiple delimiters can be supplied."
 msgstr "Teksten, som adskiller kolonnerne. Du kan angive flere tegn."
 
 #. qZGq2
-#: sc/inc/scfuncs.hrc:4340
+#: sc/inc/scfuncs.hrc:4376
 msgctxt "SC_OPCODE_TEXTSPLIT"
 msgid "Row Delimiter"
 msgstr "Rækkeskilletegn"
 
 #. dPnbc
-#: sc/inc/scfuncs.hrc:4341
+#: sc/inc/scfuncs.hrc:4377
 msgctxt "SC_OPCODE_TEXTSPLIT"
 msgid "The text to delimit the rows. Multiple delimiters can be supplied."
 msgstr "Teksten, som adskiller rækkerne. Du kan angive flere tegn."
 
 #. jD3sa
-#: sc/inc/scfuncs.hrc:4342
+#: sc/inc/scfuncs.hrc:4378
 msgctxt "SC_OPCODE_TEXTSPLIT"
 msgid "Ignore Empty"
 msgstr "Ignorér tomme"
 
-#. QFZpt
-#: sc/inc/scfuncs.hrc:4343
+#. 6LwdP
+#: sc/inc/scfuncs.hrc:4379
 msgctxt "SC_OPCODE_TEXTSPLIT"
-msgid "Set to TRUE to ignore consecutive delimiters otherwise creates an empty cell. The default to FALSE."
-msgstr "Sæt til SAND for at ignorere efterfølgende skilletegn, som ellers opretter en tom celle. Standardværdien er FALSK."
-
-#. kkAYp
-#: sc/inc/scfuncs.hrc:4344
-msgctxt "SC_OPCODE_TEXTSPLIT"
-msgid "Match mode"
+msgid "Set to TRUE to ignore consecutive delimiters otherwise it creates an empty cell. The default is FALSE."
 msgstr ""
 
-#. DmNiP
-#: sc/inc/scfuncs.hrc:4345
+#. kkAYp
+#: sc/inc/scfuncs.hrc:4380
 msgctxt "SC_OPCODE_TEXTSPLIT"
-msgid "Set to 1 to perform a case-insensitive match otherwise does a case-sensitive match. The default to 0."
+msgid "Match mode"
+msgstr "Sammenligningstilstand"
+
+#. iX8cx
+#: sc/inc/scfuncs.hrc:4381
+msgctxt "SC_OPCODE_TEXTSPLIT"
+msgid "Set to 1 to perform a case-insensitive match. The default is 0."
 msgstr ""
 
 #. vXECz
-#: sc/inc/scfuncs.hrc:4346
+#: sc/inc/scfuncs.hrc:4382
 msgctxt "SC_OPCODE_TEXTSPLIT"
 msgid "Pad with"
-msgstr ""
+msgstr "Udfyld med"
 
 #. h4db2
-#: sc/inc/scfuncs.hrc:4347
+#: sc/inc/scfuncs.hrc:4383
 msgctxt "SC_OPCODE_TEXTSPLIT"
 msgid "The value with which to pad. The default is #N/A."
-msgstr ""
+msgstr "Den værdi, som der skal udfyldes med. Standardværdien er #N/A."
 
 #. DdFFE
-#: sc/inc/scfuncs.hrc:4353
+#: sc/inc/scfuncs.hrc:4389
 msgctxt "SC_OPCODE_TOCOL"
 msgid "Transforms an array into a single column."
-msgstr ""
+msgstr "Transformerer en matrix til en enkelt kolonne."
 
 #. UAzNC
-#: sc/inc/scfuncs.hrc:4354
+#: sc/inc/scfuncs.hrc:4390
 msgctxt "SC_OPCODE_TOCOL"
 msgid "Array"
 msgstr "Matrix"
 
 #. CHojs
-#: sc/inc/scfuncs.hrc:4355
+#: sc/inc/scfuncs.hrc:4391
 msgctxt "SC_OPCODE_TOCOL"
 msgid "The range or array to return as a single column."
 msgstr "Området eller matricen, der skal returneres som en enkelt kolonne."
 
 #. uACXu
-#: sc/inc/scfuncs.hrc:4356
+#: sc/inc/scfuncs.hrc:4392
 msgctxt "SC_OPCODE_TOCOL"
 msgid "Ignore"
 msgstr "Ignorér"
 
 #. b7EQW
-#: sc/inc/scfuncs.hrc:4357
+#: sc/inc/scfuncs.hrc:4393
 msgctxt "SC_OPCODE_TOCOL"
 msgid "Whether to ignore certain types of values. 0 or omitted - keep all values (default). 1 - ignore blank cells. 2 - ignore cells with error. 3 - ignore blanks cells and cells with error."
 msgstr "Om bestemte værdityper skal ignoreres. 0 eller udeladt – behold alle værdier (standard). 1 – ignorér tomme celler. 2 – ignorér celler med fejl. 3 – ignorér tomme celler og celler med fejl."
 
 #. qNLAi
-#: sc/inc/scfuncs.hrc:4358
+#: sc/inc/scfuncs.hrc:4394
 msgctxt "SC_OPCODE_TOCOL"
 msgid "Scan by column"
 msgstr "Gennemløb ud fra kolonner"
 
 #. bcArN
-#: sc/inc/scfuncs.hrc:4359
+#: sc/inc/scfuncs.hrc:4395
 msgctxt "SC_OPCODE_TOCOL"
 msgid "Scan the array by column. FALSE or omitted (default) - the array is scanned by row. TRUE - the array is scanned by column."
 msgstr "Gennemløb matricen efter kolonner. FALSK eller udeladt (standard): matricen gennemløbes efter rækker. SAND: matricen gennemløbes efter kolonner."
 
 #. PGyxj
-#: sc/inc/scfuncs.hrc:4365
+#: sc/inc/scfuncs.hrc:4401
 msgctxt "SC_OPCODE_TOROW"
 msgid "transforms an array into a single row."
 msgstr "transformerer en matrix til en enkelt række."
 
 #. W9bWe
-#: sc/inc/scfuncs.hrc:4366
+#: sc/inc/scfuncs.hrc:4402
 msgctxt "SC_OPCODE_TOROW"
 msgid "Array"
 msgstr "Matrix"
 
 #. 5MEvT
-#: sc/inc/scfuncs.hrc:4367
+#: sc/inc/scfuncs.hrc:4403
 msgctxt "SC_OPCODE_TOROW"
 msgid "The range or array to return as a single row."
 msgstr "Området eller matricen, der skal returneres som en enkelt række."
 
 #. AqqBC
-#: sc/inc/scfuncs.hrc:4368
+#: sc/inc/scfuncs.hrc:4404
 msgctxt "SC_OPCODE_TOROW"
 msgid "Ignore"
 msgstr "Ignorér"
 
 #. wcpQF
-#: sc/inc/scfuncs.hrc:4369
+#: sc/inc/scfuncs.hrc:4405
 msgctxt "SC_OPCODE_TOROW"
 msgid "Whether to ignore certain types of values. 0 or omitted - keep all values (default). 1 - ignore blank cells. 2 - ignore cells with error. 3 - ignore blanks cells and cells with error."
 msgstr "Om bestemte værdityper skal ignoreres. 0 eller udeladt – behold alle værdier (standard). 1 – ignorér tomme celler. 2 – ignorér celler med fejl. 3 – ignorér tomme celler og celler med fejl."
 
 #. E4XDf
-#: sc/inc/scfuncs.hrc:4370
+#: sc/inc/scfuncs.hrc:4406
 msgctxt "SC_OPCODE_TOROW"
 msgid "Scan by column"
 msgstr "Gennemløb ud fra kolonner"
 
 #. 5bZRy
-#: sc/inc/scfuncs.hrc:4371
+#: sc/inc/scfuncs.hrc:4407
 msgctxt "SC_OPCODE_TOROW"
 msgid "Scan the array by column. FALSE or omitted (default) - the array is scanned by row. TRUE - the array is scanned by column."
 msgstr "Gennemløb matricen efter kolonner. FALSK eller udeladt (standard): matricen gennemløbes efter rækker. SAND: matricen gennemløbes efter kolonner."
 
 #. NJR3E
-#: sc/inc/scfuncs.hrc:4377
+#: sc/inc/scfuncs.hrc:4413
 msgctxt "SC_OPCODE_UNIQUE"
 msgid "Returns a list of unique values from a range or array."
 msgstr "Returnerer en liste med entydige (unikke) værdier fra et område eller en matrix."
 
 #. NepxE
-#: sc/inc/scfuncs.hrc:4378
+#: sc/inc/scfuncs.hrc:4414
 msgctxt "SC_OPCODE_UNIQUE"
 msgid "Array"
 msgstr "Matrix"
 
 #. 2sVga
-#: sc/inc/scfuncs.hrc:4379
+#: sc/inc/scfuncs.hrc:4415
 msgctxt "SC_OPCODE_UNIQUE"
 msgid "The range or array from which to return unique values."
 msgstr "Området eller matricen, som der skal returneres entydige (unikke) værdier fra."
 
 #. fGfWS
-#: sc/inc/scfuncs.hrc:4380
+#: sc/inc/scfuncs.hrc:4416
 msgctxt "SC_OPCODE_UNIQUE"
 msgid "By col"
 msgstr "Efter kolonne"
 
 #. SASmk
-#: sc/inc/scfuncs.hrc:4381
+#: sc/inc/scfuncs.hrc:4417
 msgctxt "SC_OPCODE_UNIQUE"
 msgid "Logical value indicating how to compare data: TRUE - compares data across columns. FALSE or omitted (default) - compares data across rows."
 msgstr "Logisk værdi som angiver, hvordan data skal sammenlignes: SAND – sammenligner data mellem kolonner. FALSK eller udeladt (standard) – sammenligner data mellem rækker."
 
 #. hVQ6i
-#: sc/inc/scfuncs.hrc:4382
+#: sc/inc/scfuncs.hrc:4418
 msgctxt "SC_OPCODE_UNIQUE"
 msgid "Uniqueness"
 msgstr "Unikhed"
 
 #. EUVys
-#: sc/inc/scfuncs.hrc:4383
+#: sc/inc/scfuncs.hrc:4419
 msgctxt "SC_OPCODE_UNIQUE"
 msgid "Logical value that defines what values are considered unique: TRUE - returns values that occur only once. FALSE or omitted (default) - returns all distinct (different) values in the range or array."
 msgstr "Logisk værdi som definerer, hvad der regnes for unikt: SAND – returnerer værdier som kun forekommer én gang. FALSK eller udeladt (standard) – returnerer alle distinkte (forskellige) værdier i området eller matricen."
 
 #. axamT
-#: sc/inc/scfuncs.hrc:4389
+#: sc/inc/scfuncs.hrc:4425
 msgctxt "SC_OPCODE_LET"
 msgid "The LET function assigns names to calculation results. This allows storing intermediate calculations, values, or defining names inside a formula. These names only apply within the scope of the LET function."
 msgstr "LET-funktionen tildeler navne til beregningsresultater. Dette gør det muligt at gemme mellemresultater og værdier, eller at definere navne inde i en formel. Disse navne gælder kun indenfor LET-funktionens virkefelt."
 
 #. 6DDAi
-#: sc/inc/scfuncs.hrc:4390
+#: sc/inc/scfuncs.hrc:4426
 msgctxt "SC_OPCODE_LET"
 msgid "Name 1"
 msgstr "Navn 1"
 
 #. a7LQR
-#: sc/inc/scfuncs.hrc:4391
+#: sc/inc/scfuncs.hrc:4427
 msgctxt "SC_OPCODE_LET"
 msgid "The first name to assign. Must start with a letter. Cannot be the output of a formula or conflict with range syntax."
 msgstr "Det første navn som skal tildeles. Skal begynde med et bogstav. Må ikke være output af en formel eller være i konflikt med områdesyntaks."
 
 #. KsyBM
-#: sc/inc/scfuncs.hrc:4392
+#: sc/inc/scfuncs.hrc:4428
 msgctxt "SC_OPCODE_LET"
 msgid "Name value "
 msgstr "Navneværdi "
 
 #. Dn2DE
-#: sc/inc/scfuncs.hrc:4393
+#: sc/inc/scfuncs.hrc:4429
 msgctxt "SC_OPCODE_LET"
 msgid "Name value 1, Name value 2,... The value or calculation to assign to Name."
 msgstr "Navneværdi 1, Navneværdi 2, ... Værdien eller beregningen, som skal tildeles Navn."
 
 #. CHAMD
-#: sc/inc/scfuncs.hrc:4394
+#: sc/inc/scfuncs.hrc:4430
 msgctxt "SC_OPCODE_LET"
 msgid "Calculation or Name "
 msgstr "Beregning eller navn "
 
 #. tFMkP
-#: sc/inc/scfuncs.hrc:4395
+#: sc/inc/scfuncs.hrc:4431
 msgctxt "SC_OPCODE_LET"
 msgid "A calculation that uses all names within the LET function. This must be the last argument in the LET function. Or a second Name to assign to a second Name value. If a second Name is specified, Name value 2 and Calculation or Name 3 become required."
 msgstr "En beregning som bruger alle navne i LET-funktionen. Dette skal være det sidste argument i LET-funktionen. Eller et andet navn, som skal tildeles et en anden navneværdi. Hvis et andet navn er specificeret, kræves Navneværdi 2 og Beregning eller Navn 3."
 
 #. oBDEA
-#: sc/inc/scfuncs.hrc:4401
+#: sc/inc/scfuncs.hrc:4437
 msgctxt "SC_OPCODE_WRAPCOLS"
 msgid "Wraps the provided row or column of values by columns after a specified number of elements to form a new array."
 msgstr "Ombryder den givne række eller kolonne af værdier, efter kolonner ud fra et specificeret antal elementer, for at danne en ny matrix."
 
 #. fC6RK
-#: sc/inc/scfuncs.hrc:4402
+#: sc/inc/scfuncs.hrc:4438
 msgctxt "SC_OPCODE_WRAPCOLS"
 msgid "Range"
 msgstr "Område"
 
 #. nfZyj
-#: sc/inc/scfuncs.hrc:4403
+#: sc/inc/scfuncs.hrc:4439
 msgctxt "SC_OPCODE_WRAPCOLS"
 msgid "the range to wrap."
 msgstr "området som skal ombrydes."
 
 #. GE3HQ
-#: sc/inc/scfuncs.hrc:4404
+#: sc/inc/scfuncs.hrc:4440
 msgctxt "SC_OPCODE_WRAPCOLS"
 msgid "Wrap count"
 msgstr "Antal ombrydninger"
 
 #. FWsCt
-#: sc/inc/scfuncs.hrc:4405
+#: sc/inc/scfuncs.hrc:4441
 msgctxt "SC_OPCODE_WRAPCOLS"
 msgid "The maximum number of values for each column."
 msgstr "Det maksimale antal værdier i hver kolonne."
 
 #. zkjFB
-#: sc/inc/scfuncs.hrc:4406
+#: sc/inc/scfuncs.hrc:4442
 msgctxt "SC_OPCODE_WRAPCOLS"
 msgid "Pad with"
 msgstr "Udfyld med"
 
 #. knbjc
-#: sc/inc/scfuncs.hrc:4407
+#: sc/inc/scfuncs.hrc:4443
 msgctxt "SC_OPCODE_WRAPCOLS"
 msgid "The value with which to pad. The default is #N/A."
 msgstr "Værdien, der skal fyldes ud med. Standardværdien er #N/A."
 
 #. BDA7q
-#: sc/inc/scfuncs.hrc:4413
+#: sc/inc/scfuncs.hrc:4449
 msgctxt "SC_OPCODE_WRAPROWS"
 msgid "Wraps the provided row or column of values by rows after a specified number of elements to form a new array."
 msgstr "Ombryder den givne række eller kolonne af værdier, efter rækker ud fra et specificeret antal elementer, for at danne en ny matrix."
 
 #. 7esii
-#: sc/inc/scfuncs.hrc:4414
+#: sc/inc/scfuncs.hrc:4450
 msgctxt "SC_OPCODE_WRAPROWS"
 msgid "Range"
 msgstr "Område"
 
 #. FLJwx
-#: sc/inc/scfuncs.hrc:4415
+#: sc/inc/scfuncs.hrc:4451
 msgctxt "SC_OPCODE_WRAPROWS"
 msgid "the range to wrap."
 msgstr "området som skal ombrydes."
 
 #. aLHUi
-#: sc/inc/scfuncs.hrc:4416
+#: sc/inc/scfuncs.hrc:4452
 msgctxt "SC_OPCODE_WRAPROWS"
 msgid "Wrap count"
 msgstr "Antal ombrydninger"
 
 #. 3CEsK
-#: sc/inc/scfuncs.hrc:4417
+#: sc/inc/scfuncs.hrc:4453
 msgctxt "SC_OPCODE_WRAPROWS"
 msgid "The maximum number of values for each row."
 msgstr "Det maksimale antal værdier i hver række."
 
 #. iTCWg
-#: sc/inc/scfuncs.hrc:4418
+#: sc/inc/scfuncs.hrc:4454
 msgctxt "SC_OPCODE_WRAPROWS"
 msgid "Pad with"
 msgstr "Udfyld med"
 
 #. e3K5s
-#: sc/inc/scfuncs.hrc:4419
+#: sc/inc/scfuncs.hrc:4455
 msgctxt "SC_OPCODE_WRAPROWS"
 msgid "The value with which to pad. The default is #N/A."
 msgstr "Værdien, der skal fyldes ud med. Standardværdien er #N/A."
@@ -20538,7 +20696,7 @@ msgstr "Kolonner"
 #: sc/uiconfig/scalc/ui/aggregatefunctionentry.ui:69
 msgctxt "aggregatefunctionentry|extended_tip|ed_columns"
 msgid "Column index in the database range."
-msgstr ""
+msgstr "Kolonneindeks i database-området."
 
 #. BDhZj
 #: sc/uiconfig/scalc/ui/aggregatefunctionentry.ui:80
@@ -23184,19 +23342,19 @@ msgstr "Databaseområde:"
 #: sc/uiconfig/scalc/ui/dataproviderdlg.ui:122
 msgctxt "dataproviderdlg|extended_tip|select_dg_range"
 msgid "The database range to receive the data from the provider."
-msgstr ""
+msgstr "Databaseområdet, som skal modtage data fra kilden."
 
 #. A9mkB
 #: sc/uiconfig/scalc/ui/dataproviderdlg.ui:136
 msgctxt "dataproviderdlg/provider"
 msgid "Data Format:"
-msgstr ""
+msgstr "Dataformat:"
 
 #. 3YVZZ
 #: sc/uiconfig/scalc/ui/dataproviderdlg.ui:158
 msgctxt "dataproviderdlg|extended_tip|provider_lst"
 msgid "The format of the data to be imported."
-msgstr ""
+msgstr "Formatet af de data, som skal importeres."
 
 #. RGiXi
 #: sc/uiconfig/scalc/ui/dataproviderdlg.ui:172
@@ -23208,7 +23366,7 @@ msgstr "URL:"
 #: sc/uiconfig/scalc/ui/dataproviderdlg.ui:189
 msgctxt "dataproviderdlg|extended_tip|ed_url"
 msgid "The URL of the data provider.For local file, insert the file path and name. For web service, insert the URL."
-msgstr ""
+msgstr "Netadressen på datakilden. For en lokal fil, indsæt filens sti og navn. For en web-tjeneste, indsæt URL'en."
 
 #. GKDQA
 #: sc/uiconfig/scalc/ui/dataproviderdlg.ui:200
@@ -23220,13 +23378,13 @@ msgstr "Gennemsøg"
 #: sc/uiconfig/scalc/ui/dataproviderdlg.ui:215
 msgctxt "dataproviderdlg/id"
 msgid "Identifier:"
-msgstr ""
+msgstr "Identifikator:"
 
 #. 8DHcr
 #: sc/uiconfig/scalc/ui/dataproviderdlg.ui:232
 msgctxt "dataproviderdlg|extended_tip|ed_id"
 msgid "The table identifier in the HTML source or the XPath in XML source."
-msgstr ""
+msgstr "Tabelidentifikatoren i HTML-kilden eller XPath i XML-kilden."
 
 #. pwS4k
 #: sc/uiconfig/scalc/ui/dataproviderdlg.ui:248
@@ -23250,49 +23408,49 @@ msgstr "Tilføj transformationer"
 #: sc/uiconfig/scalc/ui/dataproviderdlg.ui:293
 msgctxt "dataproviderdlg|extended_tip|add_transformation"
 msgid "Includes the selected transformation to the transformation set. Transformations are included at the bottom of the list."
-msgstr ""
+msgstr "Tilføjer den valgte transformation til transformationssættet. Transformationer tilføjes ved bunden af listen."
 
 #. 3gAD7
 #: sc/uiconfig/scalc/ui/dataproviderdlg.ui:308
 msgctxt "dataproviderdlg|transformation_list"
 msgid "Delete Columns"
-msgstr ""
+msgstr "Slet kolonner"
 
 #. jVEGr
 #: sc/uiconfig/scalc/ui/dataproviderdlg.ui:309
 msgctxt "dataproviderdlg|transformation_list"
 msgid "Delete Rows"
-msgstr ""
+msgstr "Slet rækker"
 
 #. 5ECwU
 #: sc/uiconfig/scalc/ui/dataproviderdlg.ui:310
 msgctxt "dataproviderdlg|transformation_list"
 msgid "Swap Rows"
-msgstr ""
+msgstr "Ombyt rækker"
 
 #. W8ict
 #: sc/uiconfig/scalc/ui/dataproviderdlg.ui:311
 msgctxt "dataproviderdlg|transformation_list"
 msgid "Split Column"
-msgstr ""
+msgstr "Opdel kolonne"
 
 #. BriDb
 #: sc/uiconfig/scalc/ui/dataproviderdlg.ui:312
 msgctxt "dataproviderdlg|transformation_list"
 msgid "Merge Columns"
-msgstr ""
+msgstr "Flet kolonner"
 
 #. TR39A
 #: sc/uiconfig/scalc/ui/dataproviderdlg.ui:313
 msgctxt "dataproviderdlg|transformation_list"
 msgid "Text Transformation"
-msgstr ""
+msgstr "Teksttransformation"
 
 #. BkFha
 #: sc/uiconfig/scalc/ui/dataproviderdlg.ui:314
 msgctxt "dataproviderdlg|transformation_list"
 msgid "Sort Columns"
-msgstr ""
+msgstr "Sortér kolonner"
 
 #. S8GHs
 #: sc/uiconfig/scalc/ui/dataproviderdlg.ui:315
@@ -23304,31 +23462,31 @@ msgstr ""
 #: sc/uiconfig/scalc/ui/dataproviderdlg.ui:316
 msgctxt "dataproviderdlg|transformation_list"
 msgid "Numeric"
-msgstr ""
+msgstr "Numerisk"
 
 #. dR5tx
 #: sc/uiconfig/scalc/ui/dataproviderdlg.ui:317
 msgctxt "dataproviderdlg|transformation_list"
 msgid "Replace Null"
-msgstr ""
+msgstr "Erstat nul"
 
 #. T94zb
 #: sc/uiconfig/scalc/ui/dataproviderdlg.ui:318
 msgctxt "dataproviderdlg|transformation_list"
 msgid "Date and Time"
-msgstr ""
+msgstr "Dato og klokkeslæt"
 
 #. 2wLSM
 #: sc/uiconfig/scalc/ui/dataproviderdlg.ui:319
 msgctxt "dataproviderdlg|transformation_list"
 msgid "Find and Replace"
-msgstr ""
+msgstr "Find og erstat"
 
 #. uxVAq
 #: sc/uiconfig/scalc/ui/dataproviderdlg.ui:323
 msgctxt "dataproviderdlg|extended_tip|transformation_box"
 msgid "Available transformations that can be applied to the provided data."
-msgstr ""
+msgstr "Tilgængelige transformationer, som kan anvendes på de givne data."
 
 #. cSgeU
 #: sc/uiconfig/scalc/ui/dataproviderdlg.ui:368
@@ -23352,7 +23510,7 @@ msgstr "Anvend ændringerne"
 #: sc/uiconfig/scalc/ui/dataproviderdlg.ui:434
 msgctxt "dataproviderdlg|extended_tip|apply"
 msgid "Applies the transformations to the provided data and displays results in the Preview area for inspection."
-msgstr ""
+msgstr "Anvender transformationerne på de angivne data og viser resultatet som forhåndsvisning til gennemsyn."
 
 #. 6pCFs
 #: sc/uiconfig/scalc/ui/dataproviderdlg.ui:453
@@ -23466,7 +23624,7 @@ msgstr "Live datastrøm for regneark"
 #: sc/uiconfig/scalc/ui/datetimetransformationentry.ui:29
 msgctxt "datetimetransformationentry|name"
 msgid "Date and Time"
-msgstr ""
+msgstr "Dato og klokkeslæt"
 
 #. P4zeS
 #: sc/uiconfig/scalc/ui/datetimetransformationentry.ui:48
@@ -23792,11 +23950,11 @@ msgctxt "definename|label4"
 msgid "Scope:"
 msgstr "Virkefelt:"
 
-#. 8LBjA
+#. SeYrM
 #: sc/uiconfig/scalc/ui/definename.ui:142
 msgctxt "definename|extended_tip|edit"
-msgid "Enter the name of the area for which you want to define a reference or a formula expression."
-msgstr "Indtast navnet på området, som du vil definere en henvisning eller et formeludtryk for."
+msgid "Enter the name of the area for which you want to define a reference or a formula expression. It must start with a letter (excluding c, C, r, or R followed by a number) or underscore. Only letters, numbers, and underscores are permitted."
+msgstr ""
 
 #. yDeUA
 #: sc/uiconfig/scalc/ui/definename.ui:166
@@ -23877,7 +24035,7 @@ msgid "Allows you to specify the Area type (optional) for the reference."
 msgstr "Giver dig mulighed for at angive Områdetypen (valgfri) for henvisningen."
 
 #. gBKqi
-#: sc/uiconfig/scalc/ui/definename.ui:360
+#: sc/uiconfig/scalc/ui/definename.ui:357
 msgctxt "definename|extended_tip|DefineNameDialog"
 msgid "Opens a dialog where you can specify a name for a selected area or a name for a formula expression."
 msgstr "Åbner en dialog hvor du kan angive et navn for et udvalgt område eller et formeludtryk."
@@ -24096,31 +24254,31 @@ msgstr "Specificerer det indhold, der skal slettes fra den aktive celle eller fr
 #: sc/uiconfig/scalc/ui/deleterowentry.ui:29
 msgctxt "deleterow|delete_label"
 msgid "Delete Rows"
-msgstr ""
+msgstr "Slet rækker"
 
 #. E3mtR
 #: sc/uiconfig/scalc/ui/deleterowentry.ui:46
 msgctxt "deleterow|value"
 msgid "Lookup value"
-msgstr ""
+msgstr "Opslagsværdi"
 
 #. VjWx5
 #: sc/uiconfig/scalc/ui/deleterowentry.ui:49
 msgctxt "deleterowentry|extended_tip|ed_find"
 msgid "The value to look for in the database."
-msgstr ""
+msgstr "Den værdi, der skal søges efter i databasen."
 
 #. yDJLN
 #: sc/uiconfig/scalc/ui/deleterowentry.ui:65
 msgctxt "deleterow|column"
 msgid "Column index"
-msgstr ""
+msgstr "Kolonneindeks"
 
 #. F8Emo
 #: sc/uiconfig/scalc/ui/deleterowentry.ui:68
 msgctxt "deleterowentry| extended_tip|ed_columns"
 msgid "Column index in the database range."
-msgstr ""
+msgstr "Kolonneindeks i database-området."
 
 #. yhzDR
 #: sc/uiconfig/scalc/ui/deleterowentry.ui:79
@@ -24402,7 +24560,7 @@ msgstr "Sammenlign rækker."
 #: sc/uiconfig/scalc/ui/duplicaterecordsdlg.ui:217
 msgctxt "duplicaterecordsdialog|column"
 msgid "Colu_mns"
-msgstr ""
+msgstr "Kolonner"
 
 #. ZFN6o
 #: sc/uiconfig/scalc/ui/duplicaterecordsdlg.ui:221
@@ -24966,7 +25124,7 @@ msgstr "Skriftfarve"
 #: sc/uiconfig/scalc/ui/findreplaceentry.ui:29
 msgctxt "findreplace|label_action"
 msgid "Find and Replace"
-msgstr ""
+msgstr "Find og erstat"
 
 #. T9kUg
 #: sc/uiconfig/scalc/ui/findreplaceentry.ui:46
@@ -24978,7 +25136,7 @@ msgstr "Find"
 #: sc/uiconfig/scalc/ui/findreplaceentry.ui:49
 msgctxt "findreplaceentry|extended_tip|ed_find"
 msgid "The value to find."
-msgstr ""
+msgstr "Værdien, som skal findes."
 
 #. mBfPJ
 #: sc/uiconfig/scalc/ui/findreplaceentry.ui:65
@@ -24990,7 +25148,7 @@ msgstr "Erstat med"
 #: sc/uiconfig/scalc/ui/findreplaceentry.ui:68
 msgctxt "findreplaceentry|extended_tip|ed_replace"
 msgid "The replacement value."
-msgstr ""
+msgstr "Erstatningsværdien."
 
 #. RF57t
 #: sc/uiconfig/scalc/ui/findreplaceentry.ui:84
@@ -25002,7 +25160,7 @@ msgstr "Kolonne"
 #: sc/uiconfig/scalc/ui/findreplaceentry.ui:87
 msgctxt "findreplaceentry|extended_tip|ed_columns"
 msgid "The index of the column to find value and replace it."
-msgstr ""
+msgstr "Indekset på den kolonne, hvor værdien skal findes og erstattes."
 
 #. WWQzs
 #: sc/uiconfig/scalc/ui/findreplaceentry.ui:98
@@ -25284,7 +25442,7 @@ msgstr "Sidst brugt"
 #: sc/uiconfig/scalc/ui/functionpanel.ui:70
 msgctxt "functionpanel|category"
 msgid "Favorites"
-msgstr ""
+msgstr "Favoritter"
 
 #. uRXDm
 #: sc/uiconfig/scalc/ui/functionpanel.ui:71
@@ -25521,55 +25679,55 @@ msgid "Grouping"
 msgstr "Gruppering"
 
 #. 64CQA
-#: sc/uiconfig/scalc/ui/groupbydate.ui:122
+#: sc/uiconfig/scalc/ui/groupbydate.ui:119
 msgctxt "groupbydate|auto_start"
 msgid "_Automatically"
 msgstr "Automatisk"
 
 #. u9esd
-#: sc/uiconfig/scalc/ui/groupbydate.ui:137
+#: sc/uiconfig/scalc/ui/groupbydate.ui:134
 msgctxt "groupbydate|manual_start"
 msgid "_Manually at:"
 msgstr "Manuelt ved:"
 
 #. uLqPc
-#: sc/uiconfig/scalc/ui/groupbydate.ui:175
+#: sc/uiconfig/scalc/ui/groupbydate.ui:178
 msgctxt "groupbydate|label1"
 msgid "Start"
 msgstr "Start"
 
 #. F9Q6s
-#: sc/uiconfig/scalc/ui/groupbydate.ui:207
+#: sc/uiconfig/scalc/ui/groupbydate.ui:210
 msgctxt "groupbydate|auto_end"
 msgid "A_utomatically"
 msgstr "Automatisk"
 
 #. c77d8
-#: sc/uiconfig/scalc/ui/groupbydate.ui:222
+#: sc/uiconfig/scalc/ui/groupbydate.ui:225
 msgctxt "groupbydate|manual_end"
 msgid "Ma_nually at:"
 msgstr "Manuelt ved:"
 
 #. 7atAW
-#: sc/uiconfig/scalc/ui/groupbydate.ui:260
+#: sc/uiconfig/scalc/ui/groupbydate.ui:269
 msgctxt "groupbydate|label2"
 msgid "End"
 msgstr "Slut"
 
 #. PbDbU
-#: sc/uiconfig/scalc/ui/groupbydate.ui:294
+#: sc/uiconfig/scalc/ui/groupbydate.ui:303
 msgctxt "groupbydate|days"
 msgid "Number of _days:"
 msgstr "Antal dage:"
 
 #. GGREf
-#: sc/uiconfig/scalc/ui/groupbydate.ui:312
+#: sc/uiconfig/scalc/ui/groupbydate.ui:321
 msgctxt "groupbydate|intervals"
 msgid "_Intervals:"
 msgstr "_Intervaller:"
 
 #. aQKHp
-#: sc/uiconfig/scalc/ui/groupbydate.ui:410
+#: sc/uiconfig/scalc/ui/groupbydate.ui:419
 msgctxt "groupbydate|label3"
 msgid "Group by"
 msgstr "Gruppér efter"
@@ -26397,46 +26555,46 @@ msgid "Select cells in the document to update the range."
 msgstr "Vælg celler i dokumentet for at opdatere området."
 
 #. WCnsd
-#: sc/uiconfig/scalc/ui/managenamesdialog.ui:215
+#: sc/uiconfig/scalc/ui/managenamesdialog.ui:216
 msgctxt "managenamesdialog|label2"
 msgid "Name:"
 msgstr "Navn:"
 
 #. XY33d
-#: sc/uiconfig/scalc/ui/managenamesdialog.ui:229
+#: sc/uiconfig/scalc/ui/managenamesdialog.ui:230
 msgctxt "managenamesdialog|label4"
 msgid "Scope:"
 msgstr "Virkefelt:"
 
 #. oXFBG
-#: sc/uiconfig/scalc/ui/managenamesdialog.ui:246
+#: sc/uiconfig/scalc/ui/managenamesdialog.ui:247
 msgctxt "managenamesdialog|extended_tip|scope"
 msgid "Select the scope of the named range or named formula. Document (Global) means the name is valid for the whole document."
 msgstr "Vælg virkefeltet for det navngivne område eller den navngivne formel. Dokument(Global) betyder, at navnet er gældende i hele dokumentet."
 
 #. 2dF7g
-#: sc/uiconfig/scalc/ui/managenamesdialog.ui:271
+#: sc/uiconfig/scalc/ui/managenamesdialog.ui:272
 msgctxt "managenamesdialog|extended_tip|range"
 msgid "The reference of the selected area name is shown here as an absolute value."
 msgstr "Henvisningen på det valgte områdenavn vises her som en absolut værdi."
 
 #. EJrBk
-#: sc/uiconfig/scalc/ui/managenamesdialog.ui:288
+#: sc/uiconfig/scalc/ui/managenamesdialog.ui:289
 msgctxt "managenamesdialog|extended_tip|assign"
 msgid "Click the Shrink icon to reduce the dialog to the size of the input field. It is then easier to mark the required reference in the sheet. The icons then automatically convert to the Maximize icon. Click it to restore the dialog to its original size."
 msgstr "Klik på ikonet Formindsk for at reducere dialogen til størrelsen af indtastningsfeltet. Det gør det lettere at markere den nødvendige reference i arket. Ikonet ændrer sig automatisk til et Maksimer-ikon. Klik på dette for at gendanne dialogen til sin oprindelige størrelse."
 
 #. ddGRB
-#: sc/uiconfig/scalc/ui/managenamesdialog.ui:309
+#: sc/uiconfig/scalc/ui/managenamesdialog.ui:310
 msgctxt "managenamesdialog|label3"
 msgid "Range or formula expression:"
 msgstr "Område- eller formeludtryk:"
 
-#. CEMJp
-#: sc/uiconfig/scalc/ui/managenamesdialog.ui:328
+#. AzEvE
+#: sc/uiconfig/scalc/ui/managenamesdialog.ui:329
 msgctxt "managenamesdialog|extended_tip|name"
-msgid "Enter the name of the area for which you want to define a reference or a formula expression."
-msgstr "Indtast navnet på området, som du vil definere en henvisning eller et formeludtryk for."
+msgid "Enter the name of the area for which you want to define a reference or a formula expression. It must start with a letter (excluding c, C, r, or R followed by a number) or underscore. Only letters, numbers, and underscores are permitted."
+msgstr ""
 
 #. dGcEm
 #: sc/uiconfig/scalc/ui/managenamesdialog.ui:361
@@ -26511,13 +26669,13 @@ msgid "Deletes the selected element or elements without requiring confirmation."
 msgstr "Sletter det markerede element eller elementer uden at kræve bekræftelse."
 
 #. j3EMw
-#: sc/uiconfig/scalc/ui/managenamesdialog.ui:527
+#: sc/uiconfig/scalc/ui/managenamesdialog.ui:524
 msgctxt "managenamesdialog|extended_tip|ManageNamesDialog"
 msgid "Opens a dialog where you can specify a name for a selected area or a name for a formula expression."
 msgstr "Åbner en dialog hvor du kan angive et navn for et udvalgt område eller et formeludtryk."
 
 #. 96fTt
-#: sc/uiconfig/scalc/ui/managenamesdialog.ui:532
+#: sc/uiconfig/scalc/ui/managenamesdialog.ui:529
 msgctxt "managenamesdialog|treeviewcolumn1"
 msgid "column"
 msgstr "kolonne"
@@ -26562,7 +26720,7 @@ msgstr "Kombinerer de markerede celler til en enkelt celle eller opdeler fletted
 #: sc/uiconfig/scalc/ui/mergecolumnentry.ui:29
 msgctxt "mergecolumnentry|name"
 msgid "Merge Columns"
-msgstr ""
+msgstr "Flet kolonner"
 
 #. iK9Sb
 #: sc/uiconfig/scalc/ui/mergecolumnentry.ui:46
@@ -30135,7 +30293,7 @@ msgstr "Tildeler automatisk rækker uden etiketter til kategorien for rækken ov
 #: sc/uiconfig/scalc/ui/pivottablelayoutdialog.ui:662
 msgctxt "pivottablelayoutdialog|check-total-rows"
 msgid "Show totals row"
-msgstr ""
+msgstr "Vis sammentællingsrække"
 
 #. FdXjF
 #: sc/uiconfig/scalc/ui/pivottablelayoutdialog.ui:670

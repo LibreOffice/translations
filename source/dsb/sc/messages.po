@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2025-05-09 18:30+0200\n"
+"POT-Creation-Date: 2025-05-30 12:45+0200\n"
 "PO-Revision-Date: 2025-05-11 19:56+0000\n"
 "Last-Translator: Michael Wolf <milupo@sorbzilla.de>\n"
 "Language-Team: Lower Sorbian <https://translations.documentfoundation.org/projects/libo_ui-master/scmessages/dsb/>\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n % 100 == 1) ? 0 : ((n % 100 == 2) ? 1 : ((n % 100 == 3 || n % 100 == 4) ? 2 : 3));\n"
 "X-Accelerator-Marker: ~\n"
-"X-Generator: Weblate 5.10.1\n"
+"X-Generator: LibreOffice\n"
 "X-POOTLE-MTIME: 1565009164.000000\n"
 
 #. kBovX
@@ -2757,11 +2757,13 @@ msgctxt "STR_ERR_NAME_EXISTS"
 msgid "Invalid name. Already in use for the selected scope."
 msgstr "Njepłaśiwe mě. Wužywa se južo za wubrany wobceŕk."
 
-#. qDNs9
+#. GxYui
 #: sc/inc/globstr.hrc:464
 msgctxt "STR_ERR_NAME_INVALID"
-msgid "Invalid name. Start with a letter, use only letters, numbers and underscore."
-msgstr "Njepłaśiwe mě. Zachopśo z pismikom, wužywajśo jano pismiki, licby a pódsmužku."
+msgid ""
+"Invalid name. It must start with a letter (excluding c, C, r, or R followed by a number) or underscore.\n"
+"Only letters, numbers, and underscores are permitted."
+msgstr ""
 
 #. owW4Y
 #: sc/inc/globstr.hrc:465
@@ -17485,332 +17487,488 @@ msgctxt "SC_OPCODE_TAKE"
 msgid "The number of columns to take. A negative value takes from the end of the array."
 msgstr "Licba słupow, kótarež se maju braś. Negatiwna gódnota wót kóńca matriks bjerjo."
 
-#. wdZTd
+#. GwyMB
 #: sc/inc/scfuncs.hrc:4335
+msgctxt "SC_OPCODE_TEXTAFTER"
+msgid "Returns the text that occurs after a given substring or delimiter."
+msgstr ""
+
+#. cicY2
+#: sc/inc/scfuncs.hrc:4336
+msgctxt "SC_OPCODE_TEXTAFTER"
+msgid "Text"
+msgstr ""
+
+#. 3WLYF
+#: sc/inc/scfuncs.hrc:4337
+msgctxt "SC_OPCODE_TEXTAFTER"
+msgid "The original text."
+msgstr ""
+
+#. z4pDr
+#: sc/inc/scfuncs.hrc:4338
+msgctxt "SC_OPCODE_TEXTAFTER"
+msgid "Delimiter"
+msgstr ""
+
+#. YEbwu
+#: sc/inc/scfuncs.hrc:4339
+msgctxt "SC_OPCODE_TEXTAFTER"
+msgid "The delimiter. Multiple delimiters can be supplied."
+msgstr ""
+
+#. HPDvF
+#: sc/inc/scfuncs.hrc:4340
+msgctxt "SC_OPCODE_TEXTAFTER"
+msgid "Instance Number"
+msgstr ""
+
+#. DmVZL
+#: sc/inc/scfuncs.hrc:4341
+msgctxt "SC_OPCODE_TEXTAFTER"
+msgid "The instance of the delimiter after which to extract text. The default is 1. A negative number starts searching from the end."
+msgstr ""
+
+#. fpoGj
+#: sc/inc/scfuncs.hrc:4342
+msgctxt "SC_OPCODE_TEXTAFTER"
+msgid "Match Mode"
+msgstr ""
+
+#. iSfJi
+#: sc/inc/scfuncs.hrc:4343
+msgctxt "SC_OPCODE_TEXTAFTER"
+msgid "Set to 1 to perform a case-insensitive match. The default is 0."
+msgstr ""
+
+#. nAF2s
+#: sc/inc/scfuncs.hrc:4344
+msgctxt "SC_OPCODE_TEXTAFTER"
+msgid "Match End"
+msgstr ""
+
+#. W2DGj
+#: sc/inc/scfuncs.hrc:4345
+msgctxt "SC_OPCODE_TEXTAFTER"
+msgid "Set to 1 to treat the end of text as a delimiter. The default is 0."
+msgstr ""
+
+#. PG6qj
+#: sc/inc/scfuncs.hrc:4346
+msgctxt "SC_OPCODE_TEXTAFTER"
+msgid "If Not Found"
+msgstr ""
+
+#. vfgZc
+#: sc/inc/scfuncs.hrc:4347
+msgctxt "SC_OPCODE_TEXTAFTER"
+msgid "The value returned if no match is found. The default is #N/A."
+msgstr ""
+
+#. f88EE
+#: sc/inc/scfuncs.hrc:4353
+msgctxt "SC_OPCODE_TEXTBEFORE"
+msgid "Returns the text that occurs before a given substring or delimiter."
+msgstr ""
+
+#. NNriC
+#: sc/inc/scfuncs.hrc:4354
+msgctxt "SC_OPCODE_TEXTBEFORE"
+msgid "Text"
+msgstr ""
+
+#. HsEG8
+#: sc/inc/scfuncs.hrc:4355
+msgctxt "SC_OPCODE_TEXTBEFORE"
+msgid "The original text."
+msgstr ""
+
+#. E4a5z
+#: sc/inc/scfuncs.hrc:4356
+msgctxt "SC_OPCODE_TEXTBEFORE"
+msgid "Delimiter"
+msgstr ""
+
+#. qDFZy
+#: sc/inc/scfuncs.hrc:4357
+msgctxt "SC_OPCODE_TEXTBEFORE"
+msgid "The delimiter. Multiple delimiters can be supplied."
+msgstr ""
+
+#. gNHAi
+#: sc/inc/scfuncs.hrc:4358
+msgctxt "SC_OPCODE_TEXTBEFORE"
+msgid "Instance Number"
+msgstr ""
+
+#. sD4zC
+#: sc/inc/scfuncs.hrc:4359
+msgctxt "SC_OPCODE_TEXTBEFORE"
+msgid "The instance of the delimiter before which to extract text. The default is 1. A negative number starts searching from the end."
+msgstr ""
+
+#. Adzeh
+#: sc/inc/scfuncs.hrc:4360
+msgctxt "SC_OPCODE_TEXTBEFORE"
+msgid "Match Mode"
+msgstr ""
+
+#. Pi2Ti
+#: sc/inc/scfuncs.hrc:4361
+msgctxt "SC_OPCODE_TEXTBEFORE"
+msgid "Set to 1 to perform a case-insensitive match. The default is 0."
+msgstr ""
+
+#. sACA2
+#: sc/inc/scfuncs.hrc:4362
+msgctxt "SC_OPCODE_TEXTBEFORE"
+msgid "Match End"
+msgstr ""
+
+#. UxpD6
+#: sc/inc/scfuncs.hrc:4363
+msgctxt "SC_OPCODE_TEXTBEFORE"
+msgid "Set to 1 to treat the end of text as a delimiter. The default is 0."
+msgstr ""
+
+#. aCnZX
+#: sc/inc/scfuncs.hrc:4364
+msgctxt "SC_OPCODE_TEXTBEFORE"
+msgid "If Not Found"
+msgstr ""
+
+#. xCZYH
+#: sc/inc/scfuncs.hrc:4365
+msgctxt "SC_OPCODE_TEXTBEFORE"
+msgid "The value returned if no match is found. The default is #N/A."
+msgstr ""
+
+#. wdZTd
+#: sc/inc/scfuncs.hrc:4371
 msgctxt "SC_OPCODE_TEXTSPLIT"
 msgid "Splits text by a given delimiter to an array of multiple cells."
 msgstr "Źěli tekst z danym źěleńskim znamuškom do matriks někotarych celow."
 
 #. DH7h4
-#: sc/inc/scfuncs.hrc:4336
+#: sc/inc/scfuncs.hrc:4372
 msgctxt "SC_OPCODE_TEXTSPLIT"
 msgid "Text"
 msgstr "Tekst"
 
 #. dqSdF
-#: sc/inc/scfuncs.hrc:4337
+#: sc/inc/scfuncs.hrc:4373
 msgctxt "SC_OPCODE_TEXTSPLIT"
 msgid "The text to split."
 msgstr "Tekst, kótaryž se ma źěliś."
 
 #. pdpxt
-#: sc/inc/scfuncs.hrc:4338
+#: sc/inc/scfuncs.hrc:4374
 msgctxt "SC_OPCODE_TEXTSPLIT"
 msgid "Column Delimiter"
 msgstr "Źěleńske znamuško za słupy"
 
 #. nfMAr
-#: sc/inc/scfuncs.hrc:4339
+#: sc/inc/scfuncs.hrc:4375
 msgctxt "SC_OPCODE_TEXTSPLIT"
 msgid "The text to delimit the columns. Multiple delimiters can be supplied."
 msgstr "Tekst, kótaryž ma słupy wobgranicowaś. Móžośo někotare źěleńske znamuška pódaś."
 
 #. qZGq2
-#: sc/inc/scfuncs.hrc:4340
+#: sc/inc/scfuncs.hrc:4376
 msgctxt "SC_OPCODE_TEXTSPLIT"
 msgid "Row Delimiter"
 msgstr "Źěleńske znamuško za smužki"
 
 #. dPnbc
-#: sc/inc/scfuncs.hrc:4341
+#: sc/inc/scfuncs.hrc:4377
 msgctxt "SC_OPCODE_TEXTSPLIT"
 msgid "The text to delimit the rows. Multiple delimiters can be supplied."
 msgstr "Tekst, kótaryž ma smužki wobgranicowaś. Móžośo někotare źěleńske znamuška pódaś."
 
 #. jD3sa
-#: sc/inc/scfuncs.hrc:4342
+#: sc/inc/scfuncs.hrc:4378
 msgctxt "SC_OPCODE_TEXTSPLIT"
 msgid "Ignore Empty"
 msgstr "Prozny ignorěrowaś"
 
-#. QFZpt
-#: sc/inc/scfuncs.hrc:4343
+#. 6LwdP
+#: sc/inc/scfuncs.hrc:4379
 msgctxt "SC_OPCODE_TEXTSPLIT"
-msgid "Set to TRUE to ignore consecutive delimiters otherwise creates an empty cell. The default to FALSE."
-msgstr "Stajśo toś to nastajenje na TRUE, aby na se slědujuce źěleńske znamuška ignorěrowaś, howac se prozna cela napórajo. Standard je FALSE."
+msgid "Set to TRUE to ignore consecutive delimiters otherwise it creates an empty cell. The default is FALSE."
+msgstr ""
 
 #. kkAYp
-#: sc/inc/scfuncs.hrc:4344
+#: sc/inc/scfuncs.hrc:4380
 msgctxt "SC_OPCODE_TEXTSPLIT"
 msgid "Match mode"
 msgstr "Modus wótpowědowanja"
 
-#. DmNiP
-#: sc/inc/scfuncs.hrc:4345
+#. iX8cx
+#: sc/inc/scfuncs.hrc:4381
 msgctxt "SC_OPCODE_TEXTSPLIT"
-msgid "Set to 1 to perform a case-insensitive match otherwise does a case-sensitive match. The default to 0."
-msgstr "Stajśo na 1, aby wótpowědowanje wuwjadło, kótarež na wjelike pismiki njeźiwa, howac se wótpowědowanje wuwjeźo, kótarež na wjelike pismiki źiwa. Standard jo 0."
+msgid "Set to 1 to perform a case-insensitive match. The default is 0."
+msgstr ""
 
 #. vXECz
-#: sc/inc/scfuncs.hrc:4346
+#: sc/inc/scfuncs.hrc:4382
 msgctxt "SC_OPCODE_TEXTSPLIT"
 msgid "Pad with"
 msgstr "Połniś z"
 
 #. h4db2
-#: sc/inc/scfuncs.hrc:4347
+#: sc/inc/scfuncs.hrc:4383
 msgctxt "SC_OPCODE_TEXTSPLIT"
 msgid "The value with which to pad. The default is #N/A."
 msgstr "Gódnota, z kótarejž se ma połniś. Standard jo #N/A."
 
 #. DdFFE
-#: sc/inc/scfuncs.hrc:4353
+#: sc/inc/scfuncs.hrc:4389
 msgctxt "SC_OPCODE_TOCOL"
 msgid "Transforms an array into a single column."
 msgstr "Pśetwórjujo matriks do jadnotliwego słupa."
 
 #. UAzNC
-#: sc/inc/scfuncs.hrc:4354
+#: sc/inc/scfuncs.hrc:4390
 msgctxt "SC_OPCODE_TOCOL"
 msgid "Array"
 msgstr "Matriks"
 
 #. CHojs
-#: sc/inc/scfuncs.hrc:4355
+#: sc/inc/scfuncs.hrc:4391
 msgctxt "SC_OPCODE_TOCOL"
 msgid "The range or array to return as a single column."
 msgstr "Wobceŕk abo matriks, kótarejž se matej ako jadnotliwy słup wrośiś."
 
 #. uACXu
-#: sc/inc/scfuncs.hrc:4356
+#: sc/inc/scfuncs.hrc:4392
 msgctxt "SC_OPCODE_TOCOL"
 msgid "Ignore"
 msgstr "Ignorěrowaś"
 
 #. b7EQW
-#: sc/inc/scfuncs.hrc:4357
+#: sc/inc/scfuncs.hrc:4393
 msgctxt "SC_OPCODE_TOCOL"
 msgid "Whether to ignore certain types of values. 0 or omitted - keep all values (default). 1 - ignore blank cells. 2 - ignore cells with error. 3 - ignore blanks cells and cells with error."
 msgstr "Lěc se maju wěste gódnotowe typy ignorěrowaś. 0 abo wuwóstajony – wšykne gódnoty wobchowaś (standard). 1 – prozne cele ignorěrowaś. 2 – cele ze zmólku ignorěrowaś. 3 – prozne cele a cele ze zmólku ignorěrowaś."
 
 #. qNLAi
-#: sc/inc/scfuncs.hrc:4358
+#: sc/inc/scfuncs.hrc:4394
 msgctxt "SC_OPCODE_TOCOL"
 msgid "Scan by column"
 msgstr "Pó słupje scannowaś"
 
 #. bcArN
-#: sc/inc/scfuncs.hrc:4359
+#: sc/inc/scfuncs.hrc:4395
 msgctxt "SC_OPCODE_TOCOL"
 msgid "Scan the array by column. FALSE or omitted (default) - the array is scanned by row. TRUE - the array is scanned by column."
 msgstr "Scannujśo matriks pó słupje. FALSE abo wuwóstajony (standard) – matriks se pó smužce scannujo. TRUE – matriks se pó słupje scannujo."
 
 #. PGyxj
-#: sc/inc/scfuncs.hrc:4365
+#: sc/inc/scfuncs.hrc:4401
 msgctxt "SC_OPCODE_TOROW"
 msgid "transforms an array into a single row."
 msgstr "pśetwórjujo matriks do jadnotliweje smužki."
 
 #. W9bWe
-#: sc/inc/scfuncs.hrc:4366
+#: sc/inc/scfuncs.hrc:4402
 msgctxt "SC_OPCODE_TOROW"
 msgid "Array"
 msgstr "Matriks"
 
 #. 5MEvT
-#: sc/inc/scfuncs.hrc:4367
+#: sc/inc/scfuncs.hrc:4403
 msgctxt "SC_OPCODE_TOROW"
 msgid "The range or array to return as a single row."
 msgstr "Wobceŕk abo matriks, kótarejž se matej ako jadnotliwa smužka wrośiś."
 
 #. AqqBC
-#: sc/inc/scfuncs.hrc:4368
+#: sc/inc/scfuncs.hrc:4404
 msgctxt "SC_OPCODE_TOROW"
 msgid "Ignore"
 msgstr "Ignorěrowaś"
 
 #. wcpQF
-#: sc/inc/scfuncs.hrc:4369
+#: sc/inc/scfuncs.hrc:4405
 msgctxt "SC_OPCODE_TOROW"
 msgid "Whether to ignore certain types of values. 0 or omitted - keep all values (default). 1 - ignore blank cells. 2 - ignore cells with error. 3 - ignore blanks cells and cells with error."
 msgstr "Lěc se maju wěste gódnotowe typy ignorěrowaś. 0 abo wuwóstajony – wšykne gódnoty wobchowaś (standard). 1 – prozne cele ignorěrowaś. 2 – cele ze zmólku ignorěrowaś. 3 – prozne cele a cele ze zmólku ignorěrowaś."
 
 #. E4XDf
-#: sc/inc/scfuncs.hrc:4370
+#: sc/inc/scfuncs.hrc:4406
 msgctxt "SC_OPCODE_TOROW"
 msgid "Scan by column"
 msgstr "Pó słupje scannowaś"
 
 #. 5bZRy
-#: sc/inc/scfuncs.hrc:4371
+#: sc/inc/scfuncs.hrc:4407
 msgctxt "SC_OPCODE_TOROW"
 msgid "Scan the array by column. FALSE or omitted (default) - the array is scanned by row. TRUE - the array is scanned by column."
 msgstr "Scannujśo matriks pó słupje. FALSE abo wuwóstajony (standard) – matriks se pó smužce scannujo. TRUE – matriks se pó słupje scannujo."
 
 #. NJR3E
-#: sc/inc/scfuncs.hrc:4377
+#: sc/inc/scfuncs.hrc:4413
 msgctxt "SC_OPCODE_UNIQUE"
 msgid "Returns a list of unique values from a range or array."
 msgstr "Wrośijo lisćinu jadnorazowych gódnotow z wobceŕka abo z matriks."
 
 #. NepxE
-#: sc/inc/scfuncs.hrc:4378
+#: sc/inc/scfuncs.hrc:4414
 msgctxt "SC_OPCODE_UNIQUE"
 msgid "Array"
 msgstr "Matriks"
 
 #. 2sVga
-#: sc/inc/scfuncs.hrc:4379
+#: sc/inc/scfuncs.hrc:4415
 msgctxt "SC_OPCODE_UNIQUE"
 msgid "The range or array from which to return unique values."
 msgstr "Wobceŕk, z kótaregož, abo matriks, z kótarejež se maju jadnorazowe gódnoty wrośiś."
 
 #. fGfWS
-#: sc/inc/scfuncs.hrc:4380
+#: sc/inc/scfuncs.hrc:4416
 msgctxt "SC_OPCODE_UNIQUE"
 msgid "By col"
 msgstr "Pó słupje"
 
 #. SASmk
-#: sc/inc/scfuncs.hrc:4381
+#: sc/inc/scfuncs.hrc:4417
 msgctxt "SC_OPCODE_UNIQUE"
 msgid "Logical value indicating how to compare data: TRUE - compares data across columns. FALSE or omitted (default) - compares data across rows."
 msgstr "Logiska gódnota, kótaraž pódawa, kak se maju daty pśirownaś: TRUE – pśirownujo daty mjazy słupami. FALSE abo wuwóstajony (standard) – pśirownujo daty mjazy smužkami."
 
 #. hVQ6i
-#: sc/inc/scfuncs.hrc:4382
+#: sc/inc/scfuncs.hrc:4418
 msgctxt "SC_OPCODE_UNIQUE"
 msgid "Uniqueness"
 msgstr "Jadnoraznosć"
 
 #. EUVys
-#: sc/inc/scfuncs.hrc:4383
+#: sc/inc/scfuncs.hrc:4419
 msgctxt "SC_OPCODE_UNIQUE"
 msgid "Logical value that defines what values are considered unique: TRUE - returns values that occur only once. FALSE or omitted (default) - returns all distinct (different) values in the range or array."
 msgstr "Logiska gódnota, kótaraž definěrujo, kótare gódnoty maju se za jadnorazowe: TRUE – wrośijo gódnoty, kótarež jano jaden raz wustupuju. FALSE abo wuwóstajony (standard) – wrośijo wšykne rozdźělne gódnoty we wobceŕku abo w matriks."
 
 #. axamT
-#: sc/inc/scfuncs.hrc:4389
+#: sc/inc/scfuncs.hrc:4425
 msgctxt "SC_OPCODE_LET"
 msgid "The LET function assigns names to calculation results. This allows storing intermediate calculations, values, or defining names inside a formula. These names only apply within the scope of the LET function."
 msgstr "Funkcija LET wobliceńskim wuslědkam mjenja pśipokazujo. To zmóžnja, mjazywoblicenja, mjazygódnoty składowaś, abo mjenja w formuli definěrowaś. Toś te mjenja se jano na wobceŕk płaśiwosći funkcije LET nałožuju."
 
 #. 6DDAi
-#: sc/inc/scfuncs.hrc:4390
+#: sc/inc/scfuncs.hrc:4426
 msgctxt "SC_OPCODE_LET"
 msgid "Name 1"
 msgstr "Mě 1"
 
 #. a7LQR
-#: sc/inc/scfuncs.hrc:4391
+#: sc/inc/scfuncs.hrc:4427
 msgctxt "SC_OPCODE_LET"
 msgid "The first name to assign. Must start with a letter. Cannot be the output of a formula or conflict with range syntax."
 msgstr "Prědne mě, kótarež se ma pśipokazaś. Mě musy se z pismikom zachopiś. Njamóžo wudaśe formule byś abo njesmějo z wobceŕkoweju syntaksu do konflikta pśiś."
 
 #. KsyBM
-#: sc/inc/scfuncs.hrc:4392
+#: sc/inc/scfuncs.hrc:4428
 msgctxt "SC_OPCODE_LET"
 msgid "Name value "
 msgstr "Mjenjowa gódnota "
 
 #. Dn2DE
-#: sc/inc/scfuncs.hrc:4393
+#: sc/inc/scfuncs.hrc:4429
 msgctxt "SC_OPCODE_LET"
 msgid "Name value 1, Name value 2,... The value or calculation to assign to Name."
 msgstr "Mjenjowa gódnota 1, mjenjowa gódnota 2,… Gódnota abo woblicenje, kótarejž se matej mjenjeju pśipokazaś."
 
 #. CHAMD
-#: sc/inc/scfuncs.hrc:4394
+#: sc/inc/scfuncs.hrc:4430
 msgctxt "SC_OPCODE_LET"
 msgid "Calculation or Name "
 msgstr "Woblicenje abo mě "
 
 #. tFMkP
-#: sc/inc/scfuncs.hrc:4395
+#: sc/inc/scfuncs.hrc:4431
 msgctxt "SC_OPCODE_LET"
 msgid "A calculation that uses all names within the LET function. This must be the last argument in the LET function. Or a second Name to assign to a second Name value. If a second Name is specified, Name value 2 and Calculation or Name 3 become required."
 msgstr "Woblicenje, kótarež wšykne mjenja we funkciji LET wužywa. To musy slědny argument we funkciji LET byś. Abo druge mě, kótarež se ma drugej mjenjowej gódnośe pśipokazaś. Jolic druge mě jo pódane, budu mjenjowa gódnota 2 a woblicenje abo mě 3 trjebne."
 
 #. oBDEA
-#: sc/inc/scfuncs.hrc:4401
+#: sc/inc/scfuncs.hrc:4437
 msgctxt "SC_OPCODE_WRAPCOLS"
 msgid "Wraps the provided row or column of values by columns after a specified number of elements to form a new array."
 msgstr "Łamjo pódanu smužku abo słup gódnotow pó słupach za pódaneju licbu elementow, aby se nowa matriks twóriła."
 
 #. fC6RK
-#: sc/inc/scfuncs.hrc:4402
+#: sc/inc/scfuncs.hrc:4438
 msgctxt "SC_OPCODE_WRAPCOLS"
 msgid "Range"
 msgstr "Wobceŕk"
 
 #. nfZyj
-#: sc/inc/scfuncs.hrc:4403
+#: sc/inc/scfuncs.hrc:4439
 msgctxt "SC_OPCODE_WRAPCOLS"
 msgid "the range to wrap."
 msgstr "wobceŕk, kótaryž se ma łamaś."
 
 #. GE3HQ
-#: sc/inc/scfuncs.hrc:4404
+#: sc/inc/scfuncs.hrc:4440
 msgctxt "SC_OPCODE_WRAPCOLS"
 msgid "Wrap count"
 msgstr "Licenje łamaś"
 
 #. FWsCt
-#: sc/inc/scfuncs.hrc:4405
+#: sc/inc/scfuncs.hrc:4441
 msgctxt "SC_OPCODE_WRAPCOLS"
 msgid "The maximum number of values for each column."
 msgstr "Maksimalna licba gódnotow za kuždy słup."
 
 #. zkjFB
-#: sc/inc/scfuncs.hrc:4406
+#: sc/inc/scfuncs.hrc:4442
 msgctxt "SC_OPCODE_WRAPCOLS"
 msgid "Pad with"
 msgstr "Połniś z"
 
 #. knbjc
-#: sc/inc/scfuncs.hrc:4407
+#: sc/inc/scfuncs.hrc:4443
 msgctxt "SC_OPCODE_WRAPCOLS"
 msgid "The value with which to pad. The default is #N/A."
 msgstr "Gódnota, z kótarejž se ma połniś. Standard jo #N/A."
 
 #. BDA7q
-#: sc/inc/scfuncs.hrc:4413
+#: sc/inc/scfuncs.hrc:4449
 msgctxt "SC_OPCODE_WRAPROWS"
 msgid "Wraps the provided row or column of values by rows after a specified number of elements to form a new array."
 msgstr "Łamjo pódanu smužku abo słup gódnotow pó smužkach za pódaneju licbu elementow, aby se nowa matriks twóriła."
 
 #. 7esii
-#: sc/inc/scfuncs.hrc:4414
+#: sc/inc/scfuncs.hrc:4450
 msgctxt "SC_OPCODE_WRAPROWS"
 msgid "Range"
 msgstr "Wobceŕk"
 
 #. FLJwx
-#: sc/inc/scfuncs.hrc:4415
+#: sc/inc/scfuncs.hrc:4451
 msgctxt "SC_OPCODE_WRAPROWS"
 msgid "the range to wrap."
 msgstr "wobceŕk, kótaryž se ma łamaś."
 
 #. aLHUi
-#: sc/inc/scfuncs.hrc:4416
+#: sc/inc/scfuncs.hrc:4452
 msgctxt "SC_OPCODE_WRAPROWS"
 msgid "Wrap count"
 msgstr "Licenje łamaś"
 
 #. 3CEsK
-#: sc/inc/scfuncs.hrc:4417
+#: sc/inc/scfuncs.hrc:4453
 msgctxt "SC_OPCODE_WRAPROWS"
 msgid "The maximum number of values for each row."
 msgstr "Maksimalna licba gódnotow za kuždu smužku."
 
 #. iTCWg
-#: sc/inc/scfuncs.hrc:4418
+#: sc/inc/scfuncs.hrc:4454
 msgctxt "SC_OPCODE_WRAPROWS"
 msgid "Pad with"
 msgstr "Połniś z"
 
 #. e3K5s
-#: sc/inc/scfuncs.hrc:4419
+#: sc/inc/scfuncs.hrc:4455
 msgctxt "SC_OPCODE_WRAPROWS"
 msgid "The value with which to pad. The default is #N/A."
 msgstr "Gódnota, z kótarejž se ma połniś. Standard jo #N/A."
@@ -23804,11 +23962,11 @@ msgctxt "definename|label4"
 msgid "Scope:"
 msgstr "Wobceŕk płaśiwosći:"
 
-#. 8LBjA
+#. SeYrM
 #: sc/uiconfig/scalc/ui/definename.ui:142
 msgctxt "definename|extended_tip|edit"
-msgid "Enter the name of the area for which you want to define a reference or a formula expression."
-msgstr "Zapódajśo mě wobceŕka, za kótaryž cośo póśěg abo formulowy wuraz definěrowaś."
+msgid "Enter the name of the area for which you want to define a reference or a formula expression. It must start with a letter (excluding c, C, r, or R followed by a number) or underscore. Only letters, numbers, and underscores are permitted."
+msgstr ""
 
 #. yDeUA
 #: sc/uiconfig/scalc/ui/definename.ui:166
@@ -23889,7 +24047,7 @@ msgid "Allows you to specify the Area type (optional) for the reference."
 msgstr "Zmóžnja wam, typ wobceŕka (opcionalny) za póśěg pódaś."
 
 #. gBKqi
-#: sc/uiconfig/scalc/ui/definename.ui:360
+#: sc/uiconfig/scalc/ui/definename.ui:357
 msgctxt "definename|extended_tip|DefineNameDialog"
 msgid "Opens a dialog where you can specify a name for a selected area or a name for a formula expression."
 msgstr "Wócynja dialog, źož móžośo mě za wubrany wobceŕk abo za formulowy wuraz pódaś."
@@ -25533,55 +25691,55 @@ msgid "Grouping"
 msgstr "W kupce rědowaś"
 
 #. 64CQA
-#: sc/uiconfig/scalc/ui/groupbydate.ui:122
+#: sc/uiconfig/scalc/ui/groupbydate.ui:119
 msgctxt "groupbydate|auto_start"
 msgid "_Automatically"
 msgstr "_Awtomatiski"
 
 #. u9esd
-#: sc/uiconfig/scalc/ui/groupbydate.ui:137
+#: sc/uiconfig/scalc/ui/groupbydate.ui:134
 msgctxt "groupbydate|manual_start"
 msgid "_Manually at:"
 msgstr "_Manuelnje pla:"
 
 #. uLqPc
-#: sc/uiconfig/scalc/ui/groupbydate.ui:175
+#: sc/uiconfig/scalc/ui/groupbydate.ui:178
 msgctxt "groupbydate|label1"
 msgid "Start"
 msgstr "Zachopjeńk"
 
 #. F9Q6s
-#: sc/uiconfig/scalc/ui/groupbydate.ui:207
+#: sc/uiconfig/scalc/ui/groupbydate.ui:210
 msgctxt "groupbydate|auto_end"
 msgid "A_utomatically"
 msgstr "Awto_matiski"
 
 #. c77d8
-#: sc/uiconfig/scalc/ui/groupbydate.ui:222
+#: sc/uiconfig/scalc/ui/groupbydate.ui:225
 msgctxt "groupbydate|manual_end"
 msgid "Ma_nually at:"
 msgstr "Ma_nuelnje pla:"
 
 #. 7atAW
-#: sc/uiconfig/scalc/ui/groupbydate.ui:260
+#: sc/uiconfig/scalc/ui/groupbydate.ui:269
 msgctxt "groupbydate|label2"
 msgid "End"
 msgstr "Kóńc"
 
 #. PbDbU
-#: sc/uiconfig/scalc/ui/groupbydate.ui:294
+#: sc/uiconfig/scalc/ui/groupbydate.ui:303
 msgctxt "groupbydate|days"
 msgid "Number of _days:"
 msgstr "Licba _dnjow:"
 
 #. GGREf
-#: sc/uiconfig/scalc/ui/groupbydate.ui:312
+#: sc/uiconfig/scalc/ui/groupbydate.ui:321
 msgctxt "groupbydate|intervals"
 msgid "_Intervals:"
 msgstr "_Interwale:"
 
 #. aQKHp
-#: sc/uiconfig/scalc/ui/groupbydate.ui:410
+#: sc/uiconfig/scalc/ui/groupbydate.ui:419
 msgctxt "groupbydate|label3"
 msgid "Group by"
 msgstr "Rědowaś pó"
@@ -26409,46 +26567,46 @@ msgid "Select cells in the document to update the range."
 msgstr "Wubjeŕśo cele w dokumenśe, aby wobceŕk aktualizěrował."
 
 #. WCnsd
-#: sc/uiconfig/scalc/ui/managenamesdialog.ui:215
+#: sc/uiconfig/scalc/ui/managenamesdialog.ui:216
 msgctxt "managenamesdialog|label2"
 msgid "Name:"
 msgstr "Mě:"
 
 #. XY33d
-#: sc/uiconfig/scalc/ui/managenamesdialog.ui:229
+#: sc/uiconfig/scalc/ui/managenamesdialog.ui:230
 msgctxt "managenamesdialog|label4"
 msgid "Scope:"
 msgstr "Wobceŕk płaśiwosći:"
 
 #. oXFBG
-#: sc/uiconfig/scalc/ui/managenamesdialog.ui:246
+#: sc/uiconfig/scalc/ui/managenamesdialog.ui:247
 msgctxt "managenamesdialog|extended_tip|scope"
 msgid "Select the scope of the named range or named formula. Document (Global) means the name is valid for the whole document."
 msgstr "Wubjeŕśo wobceŕk płaśiwosći pomjenjonego wobceŕka abo pomjenjoneje formule. Dokument (globalny) wóznamjenijo, až mě jo płaśiwe za ceły dokument."
 
 #. 2dF7g
-#: sc/uiconfig/scalc/ui/managenamesdialog.ui:271
+#: sc/uiconfig/scalc/ui/managenamesdialog.ui:272
 msgctxt "managenamesdialog|extended_tip|range"
 msgid "The reference of the selected area name is shown here as an absolute value."
 msgstr "Póśěg wubranego wobceŕkowego mjenja se how ako absolutna gódnota pokazujo."
 
 #. EJrBk
-#: sc/uiconfig/scalc/ui/managenamesdialog.ui:288
+#: sc/uiconfig/scalc/ui/managenamesdialog.ui:289
 msgctxt "managenamesdialog|extended_tip|assign"
 msgid "Click the Shrink icon to reduce the dialog to the size of the input field. It is then easier to mark the required reference in the sheet. The icons then automatically convert to the Maximize icon. Click it to restore the dialog to its original size."
 msgstr "Klikniśo na symbol Pómjeńšyś, aby dialog na wjelilkosć zapódawańskego póla pómjeńšył. Jo pón lažčej, póžedany póśěg w tabeli markěrowaś. Symbol se awtomatiski do symbola Maksiměrowaś pśetwórjujo. Klikniśo na njen, aby dialog na jogo spócetnu wjelikosć wótnowił."
 
 #. ddGRB
-#: sc/uiconfig/scalc/ui/managenamesdialog.ui:309
+#: sc/uiconfig/scalc/ui/managenamesdialog.ui:310
 msgctxt "managenamesdialog|label3"
 msgid "Range or formula expression:"
 msgstr "Wobceŕk abo formulowy wuraz:"
 
-#. CEMJp
-#: sc/uiconfig/scalc/ui/managenamesdialog.ui:328
+#. AzEvE
+#: sc/uiconfig/scalc/ui/managenamesdialog.ui:329
 msgctxt "managenamesdialog|extended_tip|name"
-msgid "Enter the name of the area for which you want to define a reference or a formula expression."
-msgstr "Zapódajśo mě wobceŕka, za kótaryž cośo póśěg abo formulowy wuraz definěrowaś."
+msgid "Enter the name of the area for which you want to define a reference or a formula expression. It must start with a letter (excluding c, C, r, or R followed by a number) or underscore. Only letters, numbers, and underscores are permitted."
+msgstr ""
 
 #. dGcEm
 #: sc/uiconfig/scalc/ui/managenamesdialog.ui:361
@@ -26523,13 +26681,13 @@ msgid "Deletes the selected element or elements without requiring confirmation."
 msgstr "Lašujo wubrany element abo elementy bźez trjebnego wobkšuśenja."
 
 #. j3EMw
-#: sc/uiconfig/scalc/ui/managenamesdialog.ui:527
+#: sc/uiconfig/scalc/ui/managenamesdialog.ui:524
 msgctxt "managenamesdialog|extended_tip|ManageNamesDialog"
 msgid "Opens a dialog where you can specify a name for a selected area or a name for a formula expression."
 msgstr "Wócynja dialog, źož móžośo mě za wubrany wobceŕk abo mě za formulowy wuraz pódaś."
 
 #. 96fTt
-#: sc/uiconfig/scalc/ui/managenamesdialog.ui:532
+#: sc/uiconfig/scalc/ui/managenamesdialog.ui:529
 msgctxt "managenamesdialog|treeviewcolumn1"
 msgid "column"
 msgstr "słup"

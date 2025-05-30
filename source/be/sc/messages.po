@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2025-05-09 18:30+0200\n"
-"PO-Revision-Date: 2025-05-15 01:56+0000\n"
+"POT-Creation-Date: 2025-05-30 12:45+0200\n"
+"PO-Revision-Date: 2025-05-23 19:56+0000\n"
 "Last-Translator: Valery Levanchuk <levanchuk@gmail.com>\n"
 "Language-Team: Belarusian <https://translations.documentfoundation.org/projects/libo_ui-master/scmessages/be/>\n"
 "Language: be\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Accelerator-Marker: ~\n"
-"X-Generator: Weblate 5.10.1\n"
+"X-Generator: LibreOffice\n"
 "X-POOTLE-MTIME: 1542022554.000000\n"
 
 #. kBovX
@@ -685,7 +685,7 @@ msgstr "Імпартаваць"
 #: sc/inc/globstr.hrc:123
 msgctxt "STR_MSSG_DOSUBTOTALS_0"
 msgid "%PRODUCTNAME Calc"
-msgstr "%PRODUCTNAME Calc"
+msgstr "%PRODUCTNAME Сalc"
 
 #. 5wfvQ
 #: sc/inc/globstr.hrc:124
@@ -2753,11 +2753,13 @@ msgctxt "STR_ERR_NAME_EXISTS"
 msgid "Invalid name. Already in use for the selected scope."
 msgstr "Недапушчальная назва. Ужо выкарыстана ў выбраным абсягу бачнасці."
 
-#. qDNs9
+#. GxYui
 #: sc/inc/globstr.hrc:464
 msgctxt "STR_ERR_NAME_INVALID"
-msgid "Invalid name. Start with a letter, use only letters, numbers and underscore."
-msgstr "Дрэнная назва. Пачніце з літары, выкарыстоўвайце толькі літары, лічбы і падкрэсліванне."
+msgid ""
+"Invalid name. It must start with a letter (excluding c, C, r, or R followed by a number) or underscore.\n"
+"Only letters, numbers, and underscores are permitted."
+msgstr ""
 
 #. owW4Y
 #: sc/inc/globstr.hrc:465
@@ -3536,7 +3538,7 @@ msgstr "Дапушчальнае Паелічэнне"
 #: sc/inc/globstr.hrc:589
 msgctxt "STR_SENSITIVITY_SHADOWPRICE"
 msgid "Shadow Price"
-msgstr "Серая Цана"
+msgstr "Шэры Кошт"
 
 #. jEhRV
 #: sc/inc/globstr.hrc:590
@@ -17480,332 +17482,488 @@ msgctxt "SC_OPCODE_TAKE"
 msgid "The number of columns to take. A negative value takes from the end of the array."
 msgstr "Колькасць слупкоў для ўліку. Адмоўнае значэнне бярэцца з канца масіва."
 
-#. wdZTd
+#. GwyMB
 #: sc/inc/scfuncs.hrc:4335
+msgctxt "SC_OPCODE_TEXTAFTER"
+msgid "Returns the text that occurs after a given substring or delimiter."
+msgstr ""
+
+#. cicY2
+#: sc/inc/scfuncs.hrc:4336
+msgctxt "SC_OPCODE_TEXTAFTER"
+msgid "Text"
+msgstr ""
+
+#. 3WLYF
+#: sc/inc/scfuncs.hrc:4337
+msgctxt "SC_OPCODE_TEXTAFTER"
+msgid "The original text."
+msgstr ""
+
+#. z4pDr
+#: sc/inc/scfuncs.hrc:4338
+msgctxt "SC_OPCODE_TEXTAFTER"
+msgid "Delimiter"
+msgstr ""
+
+#. YEbwu
+#: sc/inc/scfuncs.hrc:4339
+msgctxt "SC_OPCODE_TEXTAFTER"
+msgid "The delimiter. Multiple delimiters can be supplied."
+msgstr ""
+
+#. HPDvF
+#: sc/inc/scfuncs.hrc:4340
+msgctxt "SC_OPCODE_TEXTAFTER"
+msgid "Instance Number"
+msgstr ""
+
+#. DmVZL
+#: sc/inc/scfuncs.hrc:4341
+msgctxt "SC_OPCODE_TEXTAFTER"
+msgid "The instance of the delimiter after which to extract text. The default is 1. A negative number starts searching from the end."
+msgstr ""
+
+#. fpoGj
+#: sc/inc/scfuncs.hrc:4342
+msgctxt "SC_OPCODE_TEXTAFTER"
+msgid "Match Mode"
+msgstr ""
+
+#. iSfJi
+#: sc/inc/scfuncs.hrc:4343
+msgctxt "SC_OPCODE_TEXTAFTER"
+msgid "Set to 1 to perform a case-insensitive match. The default is 0."
+msgstr ""
+
+#. nAF2s
+#: sc/inc/scfuncs.hrc:4344
+msgctxt "SC_OPCODE_TEXTAFTER"
+msgid "Match End"
+msgstr ""
+
+#. W2DGj
+#: sc/inc/scfuncs.hrc:4345
+msgctxt "SC_OPCODE_TEXTAFTER"
+msgid "Set to 1 to treat the end of text as a delimiter. The default is 0."
+msgstr ""
+
+#. PG6qj
+#: sc/inc/scfuncs.hrc:4346
+msgctxt "SC_OPCODE_TEXTAFTER"
+msgid "If Not Found"
+msgstr ""
+
+#. vfgZc
+#: sc/inc/scfuncs.hrc:4347
+msgctxt "SC_OPCODE_TEXTAFTER"
+msgid "The value returned if no match is found. The default is #N/A."
+msgstr ""
+
+#. f88EE
+#: sc/inc/scfuncs.hrc:4353
+msgctxt "SC_OPCODE_TEXTBEFORE"
+msgid "Returns the text that occurs before a given substring or delimiter."
+msgstr ""
+
+#. NNriC
+#: sc/inc/scfuncs.hrc:4354
+msgctxt "SC_OPCODE_TEXTBEFORE"
+msgid "Text"
+msgstr ""
+
+#. HsEG8
+#: sc/inc/scfuncs.hrc:4355
+msgctxt "SC_OPCODE_TEXTBEFORE"
+msgid "The original text."
+msgstr ""
+
+#. E4a5z
+#: sc/inc/scfuncs.hrc:4356
+msgctxt "SC_OPCODE_TEXTBEFORE"
+msgid "Delimiter"
+msgstr ""
+
+#. qDFZy
+#: sc/inc/scfuncs.hrc:4357
+msgctxt "SC_OPCODE_TEXTBEFORE"
+msgid "The delimiter. Multiple delimiters can be supplied."
+msgstr ""
+
+#. gNHAi
+#: sc/inc/scfuncs.hrc:4358
+msgctxt "SC_OPCODE_TEXTBEFORE"
+msgid "Instance Number"
+msgstr ""
+
+#. sD4zC
+#: sc/inc/scfuncs.hrc:4359
+msgctxt "SC_OPCODE_TEXTBEFORE"
+msgid "The instance of the delimiter before which to extract text. The default is 1. A negative number starts searching from the end."
+msgstr ""
+
+#. Adzeh
+#: sc/inc/scfuncs.hrc:4360
+msgctxt "SC_OPCODE_TEXTBEFORE"
+msgid "Match Mode"
+msgstr ""
+
+#. Pi2Ti
+#: sc/inc/scfuncs.hrc:4361
+msgctxt "SC_OPCODE_TEXTBEFORE"
+msgid "Set to 1 to perform a case-insensitive match. The default is 0."
+msgstr ""
+
+#. sACA2
+#: sc/inc/scfuncs.hrc:4362
+msgctxt "SC_OPCODE_TEXTBEFORE"
+msgid "Match End"
+msgstr ""
+
+#. UxpD6
+#: sc/inc/scfuncs.hrc:4363
+msgctxt "SC_OPCODE_TEXTBEFORE"
+msgid "Set to 1 to treat the end of text as a delimiter. The default is 0."
+msgstr ""
+
+#. aCnZX
+#: sc/inc/scfuncs.hrc:4364
+msgctxt "SC_OPCODE_TEXTBEFORE"
+msgid "If Not Found"
+msgstr ""
+
+#. xCZYH
+#: sc/inc/scfuncs.hrc:4365
+msgctxt "SC_OPCODE_TEXTBEFORE"
+msgid "The value returned if no match is found. The default is #N/A."
+msgstr ""
+
+#. wdZTd
+#: sc/inc/scfuncs.hrc:4371
 msgctxt "SC_OPCODE_TEXTSPLIT"
 msgid "Splits text by a given delimiter to an array of multiple cells."
 msgstr "Падзяляе тэкст па зададзеным раздзяляльніку на масіў з некалькіх ячэек."
 
 #. DH7h4
-#: sc/inc/scfuncs.hrc:4336
+#: sc/inc/scfuncs.hrc:4372
 msgctxt "SC_OPCODE_TEXTSPLIT"
 msgid "Text"
 msgstr "Тэкст"
 
 #. dqSdF
-#: sc/inc/scfuncs.hrc:4337
+#: sc/inc/scfuncs.hrc:4373
 msgctxt "SC_OPCODE_TEXTSPLIT"
 msgid "The text to split."
 msgstr "Тэкст для падзелу."
 
 #. pdpxt
-#: sc/inc/scfuncs.hrc:4338
+#: sc/inc/scfuncs.hrc:4374
 msgctxt "SC_OPCODE_TEXTSPLIT"
 msgid "Column Delimiter"
 msgstr "Абмежавальнік Слупкоў"
 
 #. nfMAr
-#: sc/inc/scfuncs.hrc:4339
+#: sc/inc/scfuncs.hrc:4375
 msgctxt "SC_OPCODE_TEXTSPLIT"
 msgid "The text to delimit the columns. Multiple delimiters can be supplied."
 msgstr "Тэкст для размежавання слупкоў. Можна ўказаць некалькі раздзяляльнікаў."
 
 #. qZGq2
-#: sc/inc/scfuncs.hrc:4340
+#: sc/inc/scfuncs.hrc:4376
 msgctxt "SC_OPCODE_TEXTSPLIT"
 msgid "Row Delimiter"
 msgstr "Раздзяляльнік Радкоў"
 
 #. dPnbc
-#: sc/inc/scfuncs.hrc:4341
+#: sc/inc/scfuncs.hrc:4377
 msgctxt "SC_OPCODE_TEXTSPLIT"
 msgid "The text to delimit the rows. Multiple delimiters can be supplied."
 msgstr "Тэкст для раздзялення радкоў. Можна ўказаць некалькі раздзяляльнікаў."
 
 #. jD3sa
-#: sc/inc/scfuncs.hrc:4342
+#: sc/inc/scfuncs.hrc:4378
 msgctxt "SC_OPCODE_TEXTSPLIT"
 msgid "Ignore Empty"
 msgstr "Ігнараваць Пустыя"
 
-#. QFZpt
-#: sc/inc/scfuncs.hrc:4343
+#. 6LwdP
+#: sc/inc/scfuncs.hrc:4379
 msgctxt "SC_OPCODE_TEXTSPLIT"
-msgid "Set to TRUE to ignore consecutive delimiters otherwise creates an empty cell. The default to FALSE."
-msgstr "Усталюйце значэнне TRUE, каб ігнараваць паслядоўныя раздзяляльнікі, інакш ствараецца пустая ячэйка. Значэнне па умаўчанні — FALSE."
+msgid "Set to TRUE to ignore consecutive delimiters otherwise it creates an empty cell. The default is FALSE."
+msgstr ""
 
 #. kkAYp
-#: sc/inc/scfuncs.hrc:4344
+#: sc/inc/scfuncs.hrc:4380
 msgctxt "SC_OPCODE_TEXTSPLIT"
 msgid "Match mode"
 msgstr "Рэжым супадзення"
 
-#. DmNiP
-#: sc/inc/scfuncs.hrc:4345
+#. iX8cx
+#: sc/inc/scfuncs.hrc:4381
 msgctxt "SC_OPCODE_TEXTSPLIT"
-msgid "Set to 1 to perform a case-insensitive match otherwise does a case-sensitive match. The default to 0."
-msgstr "Усталюйце значэнне 1, каб супадзенне выконвалася без уліку рэгістра, інакш выконваецца супадзенне з улікам рэгістра. Значэнне па умаўчанні — 0."
+msgid "Set to 1 to perform a case-insensitive match. The default is 0."
+msgstr ""
 
 #. vXECz
-#: sc/inc/scfuncs.hrc:4346
+#: sc/inc/scfuncs.hrc:4382
 msgctxt "SC_OPCODE_TEXTSPLIT"
 msgid "Pad with"
 msgstr "Запаўненне"
 
 #. h4db2
-#: sc/inc/scfuncs.hrc:4347
+#: sc/inc/scfuncs.hrc:4383
 msgctxt "SC_OPCODE_TEXTSPLIT"
 msgid "The value with which to pad. The default is #N/A."
 msgstr "Значэнне, якім трэба дапоўніць. Значэнне па змаўчанні — #N/A."
 
 #. DdFFE
-#: sc/inc/scfuncs.hrc:4353
+#: sc/inc/scfuncs.hrc:4389
 msgctxt "SC_OPCODE_TOCOL"
 msgid "Transforms an array into a single column."
 msgstr "Пераўтварае масіў у адзін слупок."
 
 #. UAzNC
-#: sc/inc/scfuncs.hrc:4354
+#: sc/inc/scfuncs.hrc:4390
 msgctxt "SC_OPCODE_TOCOL"
 msgid "Array"
 msgstr "Масіў"
 
 #. CHojs
-#: sc/inc/scfuncs.hrc:4355
+#: sc/inc/scfuncs.hrc:4391
 msgctxt "SC_OPCODE_TOCOL"
 msgid "The range or array to return as a single column."
 msgstr "Дыяпазон або масіў, які трэба вярнуць у выглядзе аднаго слупка."
 
 #. uACXu
-#: sc/inc/scfuncs.hrc:4356
+#: sc/inc/scfuncs.hrc:4392
 msgctxt "SC_OPCODE_TOCOL"
 msgid "Ignore"
 msgstr "Ігнараваць"
 
 #. b7EQW
-#: sc/inc/scfuncs.hrc:4357
+#: sc/inc/scfuncs.hrc:4393
 msgctxt "SC_OPCODE_TOCOL"
 msgid "Whether to ignore certain types of values. 0 or omitted - keep all values (default). 1 - ignore blank cells. 2 - ignore cells with error. 3 - ignore blanks cells and cells with error."
 msgstr "Ці ігнараваць пэўныя тыпы значэнняў. 0 або прапушчана — захаваць усе значэнні (па умаўчанні). 1 — ігнараваць пустыя ячэйкі. 2 — ігнараваць ячэйкі з памылкай. 3 — ігнараваць пустыя ячэйкі і ячэйкі з памылкай."
 
 #. qNLAi
-#: sc/inc/scfuncs.hrc:4358
+#: sc/inc/scfuncs.hrc:4394
 msgctxt "SC_OPCODE_TOCOL"
 msgid "Scan by column"
 msgstr "Сканіраванне па слупках"
 
 #. bcArN
-#: sc/inc/scfuncs.hrc:4359
+#: sc/inc/scfuncs.hrc:4395
 msgctxt "SC_OPCODE_TOCOL"
 msgid "Scan the array by column. FALSE or omitted (default) - the array is scanned by row. TRUE - the array is scanned by column."
 msgstr "Сканаваць масіў па слупках. FALSE або апушчана (па умаўчанні) — масіў скануецца па радках. TRUE — масіў скануецца па слупках."
 
 #. PGyxj
-#: sc/inc/scfuncs.hrc:4365
+#: sc/inc/scfuncs.hrc:4401
 msgctxt "SC_OPCODE_TOROW"
 msgid "transforms an array into a single row."
 msgstr "пераўтварае масіў у адзін радок."
 
 #. W9bWe
-#: sc/inc/scfuncs.hrc:4366
+#: sc/inc/scfuncs.hrc:4402
 msgctxt "SC_OPCODE_TOROW"
 msgid "Array"
 msgstr "Масіў"
 
 #. 5MEvT
-#: sc/inc/scfuncs.hrc:4367
+#: sc/inc/scfuncs.hrc:4403
 msgctxt "SC_OPCODE_TOROW"
 msgid "The range or array to return as a single row."
 msgstr "Дыяпазон або масіў, які трэба вярнуць у выглядзе аднаго радка."
 
 #. AqqBC
-#: sc/inc/scfuncs.hrc:4368
+#: sc/inc/scfuncs.hrc:4404
 msgctxt "SC_OPCODE_TOROW"
 msgid "Ignore"
 msgstr "Ігнараваць"
 
 #. wcpQF
-#: sc/inc/scfuncs.hrc:4369
+#: sc/inc/scfuncs.hrc:4405
 msgctxt "SC_OPCODE_TOROW"
 msgid "Whether to ignore certain types of values. 0 or omitted - keep all values (default). 1 - ignore blank cells. 2 - ignore cells with error. 3 - ignore blanks cells and cells with error."
 msgstr "Ці ігнараваць пэўныя тыпы значэнняў. 0 або прапушчана — захаваць усе значэнні (па умаўчанні). 1 — ігнараваць пустыя ячэйкі. 2 — ігнараваць ячэйкі з памылкай. 3 — ігнараваць пустыя ячэйкі і ячэйкі з памылкай."
 
 #. E4XDf
-#: sc/inc/scfuncs.hrc:4370
+#: sc/inc/scfuncs.hrc:4406
 msgctxt "SC_OPCODE_TOROW"
 msgid "Scan by column"
 msgstr "Сканіраванне па слупках"
 
 #. 5bZRy
-#: sc/inc/scfuncs.hrc:4371
+#: sc/inc/scfuncs.hrc:4407
 msgctxt "SC_OPCODE_TOROW"
 msgid "Scan the array by column. FALSE or omitted (default) - the array is scanned by row. TRUE - the array is scanned by column."
 msgstr "Сканаваць масіў па слупках. FALSE або апушчана (па умаўчанні) — масіў скануецца па радках. TRUE — масіў скануецца па слупках."
 
 #. NJR3E
-#: sc/inc/scfuncs.hrc:4377
+#: sc/inc/scfuncs.hrc:4413
 msgctxt "SC_OPCODE_UNIQUE"
 msgid "Returns a list of unique values from a range or array."
 msgstr "Вяртае спіс унікальных значэнняў з дыяпазону або масіва."
 
 #. NepxE
-#: sc/inc/scfuncs.hrc:4378
+#: sc/inc/scfuncs.hrc:4414
 msgctxt "SC_OPCODE_UNIQUE"
 msgid "Array"
 msgstr "Масіў"
 
 #. 2sVga
-#: sc/inc/scfuncs.hrc:4379
+#: sc/inc/scfuncs.hrc:4415
 msgctxt "SC_OPCODE_UNIQUE"
 msgid "The range or array from which to return unique values."
 msgstr "Дыяпазон або масіў, з якога трэба вярнуць унікальныя значэнні."
 
 #. fGfWS
-#: sc/inc/scfuncs.hrc:4380
+#: sc/inc/scfuncs.hrc:4416
 msgctxt "SC_OPCODE_UNIQUE"
 msgid "By col"
 msgstr "Па слупку"
 
 #. SASmk
-#: sc/inc/scfuncs.hrc:4381
+#: sc/inc/scfuncs.hrc:4417
 msgctxt "SC_OPCODE_UNIQUE"
 msgid "Logical value indicating how to compare data: TRUE - compares data across columns. FALSE or omitted (default) - compares data across rows."
 msgstr "Лагічнае значэнне, якое паказвае, як параўноўваць дадзеныя: TRUE — параўноўвае дадзеныя па слупках. FALSE або прапушчана (па умаўчанні) — параўноўвае дадзеныя па радках."
 
 #. hVQ6i
-#: sc/inc/scfuncs.hrc:4382
+#: sc/inc/scfuncs.hrc:4418
 msgctxt "SC_OPCODE_UNIQUE"
 msgid "Uniqueness"
 msgstr "Унікальнасць"
 
 #. EUVys
-#: sc/inc/scfuncs.hrc:4383
+#: sc/inc/scfuncs.hrc:4419
 msgctxt "SC_OPCODE_UNIQUE"
 msgid "Logical value that defines what values are considered unique: TRUE - returns values that occur only once. FALSE or omitted (default) - returns all distinct (different) values in the range or array."
 msgstr "Лагічнае значэнне, якое вызначае, якія значэнні лічацца ўнікальнымі: TRUE - вяртае значэнні, якія сустракаюцца толькі адзін раз. FALSE або прапушчана (па умаўчанні) - вяртае ўсе розныя (адрозныя) значэнні ў дыяпазоне або масіве."
 
 #. axamT
-#: sc/inc/scfuncs.hrc:4389
+#: sc/inc/scfuncs.hrc:4425
 msgctxt "SC_OPCODE_LET"
 msgid "The LET function assigns names to calculation results. This allows storing intermediate calculations, values, or defining names inside a formula. These names only apply within the scope of the LET function."
 msgstr "Функцыя LET прысвойвае імёны вынікам вылічэнняў. Гэта дазваляе захоўваць прамежкавыя вылічэнні, значэнні або вызначальныя імёны ўнутры формулы. Гэтыя імёны прымяняюцца толькі ў межах функцыі LET."
 
 #. 6DDAi
-#: sc/inc/scfuncs.hrc:4390
+#: sc/inc/scfuncs.hrc:4426
 msgctxt "SC_OPCODE_LET"
 msgid "Name 1"
 msgstr "Назва 1"
 
 #. a7LQR
-#: sc/inc/scfuncs.hrc:4391
+#: sc/inc/scfuncs.hrc:4427
 msgctxt "SC_OPCODE_LET"
 msgid "The first name to assign. Must start with a letter. Cannot be the output of a formula or conflict with range syntax."
 msgstr "Першае імя для прысваення. Павінна пачынацца з літары. Не можа быць вынікам формулы або супярэчыць сінтаксісу дыяпазону."
 
 #. KsyBM
-#: sc/inc/scfuncs.hrc:4392
+#: sc/inc/scfuncs.hrc:4428
 msgctxt "SC_OPCODE_LET"
 msgid "Name value "
 msgstr "Значэнне Назвы "
 
 #. Dn2DE
-#: sc/inc/scfuncs.hrc:4393
+#: sc/inc/scfuncs.hrc:4429
 msgctxt "SC_OPCODE_LET"
 msgid "Name value 1, Name value 2,... The value or calculation to assign to Name."
 msgstr "Значэнне назвы 1, значэнне назвы 2,... Значэнне або вылічэнне, якое трэба прысвоіць назве."
 
 #. CHAMD
-#: sc/inc/scfuncs.hrc:4394
+#: sc/inc/scfuncs.hrc:4430
 msgctxt "SC_OPCODE_LET"
 msgid "Calculation or Name "
 msgstr "Разлік або Назва "
 
 #. tFMkP
-#: sc/inc/scfuncs.hrc:4395
+#: sc/inc/scfuncs.hrc:4431
 msgctxt "SC_OPCODE_LET"
 msgid "A calculation that uses all names within the LET function. This must be the last argument in the LET function. Or a second Name to assign to a second Name value. If a second Name is specified, Name value 2 and Calculation or Name 3 become required."
 msgstr "Вылічэнне, якое выкарыстоўвае ўсе імёны ў функцыі LET. Гэта павінен быць апошні аргумент у функцыі LET. Або другая назва, якую трэба прысвоіць другому значэнню назвы. Калі пазначана другая назва, абавязковымі становяцца значэнне назвы 2 і вылічэнне або назва 3."
 
 #. oBDEA
-#: sc/inc/scfuncs.hrc:4401
+#: sc/inc/scfuncs.hrc:4437
 msgctxt "SC_OPCODE_WRAPCOLS"
 msgid "Wraps the provided row or column of values by columns after a specified number of elements to form a new array."
 msgstr "Абгортвае радок або слупок значэнняў слупкамі пасля зададзенай колькасці элементаў, каб сфармаваць новы масіў."
 
 #. fC6RK
-#: sc/inc/scfuncs.hrc:4402
+#: sc/inc/scfuncs.hrc:4438
 msgctxt "SC_OPCODE_WRAPCOLS"
 msgid "Range"
 msgstr "Дыяпазон"
 
 #. nfZyj
-#: sc/inc/scfuncs.hrc:4403
+#: sc/inc/scfuncs.hrc:4439
 msgctxt "SC_OPCODE_WRAPCOLS"
 msgid "the range to wrap."
 msgstr "Дыяпазон для абгортвання."
 
 #. GE3HQ
-#: sc/inc/scfuncs.hrc:4404
+#: sc/inc/scfuncs.hrc:4440
 msgctxt "SC_OPCODE_WRAPCOLS"
 msgid "Wrap count"
 msgstr "Колькасць абгортак"
 
 #. FWsCt
-#: sc/inc/scfuncs.hrc:4405
+#: sc/inc/scfuncs.hrc:4441
 msgctxt "SC_OPCODE_WRAPCOLS"
 msgid "The maximum number of values for each column."
 msgstr "Максімальная колькасць значэнняў для кожнага слупка."
 
 #. zkjFB
-#: sc/inc/scfuncs.hrc:4406
+#: sc/inc/scfuncs.hrc:4442
 msgctxt "SC_OPCODE_WRAPCOLS"
 msgid "Pad with"
 msgstr "Запаўненне"
 
 #. knbjc
-#: sc/inc/scfuncs.hrc:4407
+#: sc/inc/scfuncs.hrc:4443
 msgctxt "SC_OPCODE_WRAPCOLS"
 msgid "The value with which to pad. The default is #N/A."
 msgstr "Значэнне, якім трэба дапоўніць. Значэнне па умаўчанні — #N/A."
 
 #. BDA7q
-#: sc/inc/scfuncs.hrc:4413
+#: sc/inc/scfuncs.hrc:4449
 msgctxt "SC_OPCODE_WRAPROWS"
 msgid "Wraps the provided row or column of values by rows after a specified number of elements to form a new array."
 msgstr "Абгортвае ўведзены радок або слупок значэнняў радкамі пасля зададзенай колькасці элементаў, каб сфармаваць новы масіў."
 
 #. 7esii
-#: sc/inc/scfuncs.hrc:4414
+#: sc/inc/scfuncs.hrc:4450
 msgctxt "SC_OPCODE_WRAPROWS"
 msgid "Range"
 msgstr "Дыяпазон"
 
 #. FLJwx
-#: sc/inc/scfuncs.hrc:4415
+#: sc/inc/scfuncs.hrc:4451
 msgctxt "SC_OPCODE_WRAPROWS"
 msgid "the range to wrap."
 msgstr "Дыяпазон для абгортвання."
 
 #. aLHUi
-#: sc/inc/scfuncs.hrc:4416
+#: sc/inc/scfuncs.hrc:4452
 msgctxt "SC_OPCODE_WRAPROWS"
 msgid "Wrap count"
 msgstr "Колькасць абгортак"
 
 #. 3CEsK
-#: sc/inc/scfuncs.hrc:4417
+#: sc/inc/scfuncs.hrc:4453
 msgctxt "SC_OPCODE_WRAPROWS"
 msgid "The maximum number of values for each row."
 msgstr "Максімальная колькасць значэнняў для кожнага радка."
 
 #. iTCWg
-#: sc/inc/scfuncs.hrc:4418
+#: sc/inc/scfuncs.hrc:4454
 msgctxt "SC_OPCODE_WRAPROWS"
 msgid "Pad with"
 msgstr "Запаўненне"
 
 #. e3K5s
-#: sc/inc/scfuncs.hrc:4419
+#: sc/inc/scfuncs.hrc:4455
 msgctxt "SC_OPCODE_WRAPROWS"
 msgid "The value with which to pad. The default is #N/A."
 msgstr "Значэнне, якім трэба дапоўніць. Значэнне па умаўчанні — #N/A."
@@ -18448,7 +18606,7 @@ msgstr "С~таронкі:"
 #: sc/inc/strings.hrc:126
 msgctxt "SCSTR_PRINTOPT_PRODNAME"
 msgid "%PRODUCTNAME %s"
-msgstr "%PRODUCTNAME %s"
+msgstr "%PRODUCTNAME - %s"
 
 #. 4BEKq
 #: sc/inc/strings.hrc:127
@@ -18472,7 +18630,7 @@ msgstr "Абнаўленне вонкавых спасылак."
 #: sc/inc/strings.hrc:130
 msgctxt "SCSTR_FORMULA_SYNTAX_CALC_A1"
 msgid "Calc A1"
-msgstr "Calc A1"
+msgstr "Сalc A1"
 
 #. xEQCB
 #: sc/inc/strings.hrc:131
@@ -23798,11 +23956,11 @@ msgctxt "definename|label4"
 msgid "Scope:"
 msgstr "Абсяг бачнасці:"
 
-#. 8LBjA
+#. SeYrM
 #: sc/uiconfig/scalc/ui/definename.ui:142
 msgctxt "definename|extended_tip|edit"
-msgid "Enter the name of the area for which you want to define a reference or a formula expression."
-msgstr "Увядзіце назву вобласці, для якой вы хочаце вызначыць спасылку або формулу."
+msgid "Enter the name of the area for which you want to define a reference or a formula expression. It must start with a letter (excluding c, C, r, or R followed by a number) or underscore. Only letters, numbers, and underscores are permitted."
+msgstr ""
 
 #. yDeUA
 #: sc/uiconfig/scalc/ui/definename.ui:166
@@ -23883,7 +24041,7 @@ msgid "Allows you to specify the Area type (optional) for the reference."
 msgstr "Дазваляе вызначыць тып вобласці (неабавязкова) для спасылкі."
 
 #. gBKqi
-#: sc/uiconfig/scalc/ui/definename.ui:360
+#: sc/uiconfig/scalc/ui/definename.ui:357
 msgctxt "definename|extended_tip|DefineNameDialog"
 msgid "Opens a dialog where you can specify a name for a selected area or a name for a formula expression."
 msgstr "Адчыняе дыялогавае акно, у якім можна задаць назву для выбранай вобласці або назву для формулы."
@@ -25134,7 +25292,7 @@ msgstr "Формульны сінтаксіс"
 #: sc/uiconfig/scalc/ui/formulacalculationoptions.ui:139
 msgctxt "formulacalculationoptions|comboSyntaxRef"
 msgid "Calc A1"
-msgstr "Calc A1"
+msgstr "Сalc A1"
 
 #. UvJqb
 #: sc/uiconfig/scalc/ui/formulacalculationoptions.ui:140
@@ -25152,7 +25310,7 @@ msgstr "Excel R1C1"
 #: sc/uiconfig/scalc/ui/formulacalculationoptions.ui:142
 msgctxt "formulacalculationoptions|comboSyntaxRef"
 msgid "Calc A1 | Excel A1"
-msgstr "Calc A1 | Excel A1"
+msgstr "Сalc A1 | Excel A1"
 
 #. Gd4ne
 #: sc/uiconfig/scalc/ui/formulacalculationoptions.ui:155
@@ -25527,55 +25685,55 @@ msgid "Grouping"
 msgstr "Групаванне"
 
 #. 64CQA
-#: sc/uiconfig/scalc/ui/groupbydate.ui:122
+#: sc/uiconfig/scalc/ui/groupbydate.ui:119
 msgctxt "groupbydate|auto_start"
 msgid "_Automatically"
 msgstr "Аўтаматычна"
 
 #. u9esd
-#: sc/uiconfig/scalc/ui/groupbydate.ui:137
+#: sc/uiconfig/scalc/ui/groupbydate.ui:134
 msgctxt "groupbydate|manual_start"
 msgid "_Manually at:"
 msgstr "Адвольна ў:"
 
 #. uLqPc
-#: sc/uiconfig/scalc/ui/groupbydate.ui:175
+#: sc/uiconfig/scalc/ui/groupbydate.ui:178
 msgctxt "groupbydate|label1"
 msgid "Start"
 msgstr "Пачатак"
 
 #. F9Q6s
-#: sc/uiconfig/scalc/ui/groupbydate.ui:207
+#: sc/uiconfig/scalc/ui/groupbydate.ui:210
 msgctxt "groupbydate|auto_end"
 msgid "A_utomatically"
 msgstr "Аўтаматычна"
 
 #. c77d8
-#: sc/uiconfig/scalc/ui/groupbydate.ui:222
+#: sc/uiconfig/scalc/ui/groupbydate.ui:225
 msgctxt "groupbydate|manual_end"
 msgid "Ma_nually at:"
 msgstr "Адвольна ў:"
 
 #. 7atAW
-#: sc/uiconfig/scalc/ui/groupbydate.ui:260
+#: sc/uiconfig/scalc/ui/groupbydate.ui:269
 msgctxt "groupbydate|label2"
 msgid "End"
 msgstr "Канец"
 
 #. PbDbU
-#: sc/uiconfig/scalc/ui/groupbydate.ui:294
+#: sc/uiconfig/scalc/ui/groupbydate.ui:303
 msgctxt "groupbydate|days"
 msgid "Number of _days:"
 msgstr "Колькасць дз_ён:"
 
 #. GGREf
-#: sc/uiconfig/scalc/ui/groupbydate.ui:312
+#: sc/uiconfig/scalc/ui/groupbydate.ui:321
 msgctxt "groupbydate|intervals"
 msgid "_Intervals:"
 msgstr "_Інтэрвалы:"
 
 #. aQKHp
-#: sc/uiconfig/scalc/ui/groupbydate.ui:410
+#: sc/uiconfig/scalc/ui/groupbydate.ui:419
 msgctxt "groupbydate|label3"
 msgid "Group by"
 msgstr "Групаваць паводле"
@@ -26403,46 +26561,46 @@ msgid "Select cells in the document to update the range."
 msgstr "Выберыце клеткі, каб абнавіць абсяг."
 
 #. WCnsd
-#: sc/uiconfig/scalc/ui/managenamesdialog.ui:215
+#: sc/uiconfig/scalc/ui/managenamesdialog.ui:216
 msgctxt "managenamesdialog|label2"
 msgid "Name:"
 msgstr "Назва:"
 
 #. XY33d
-#: sc/uiconfig/scalc/ui/managenamesdialog.ui:229
+#: sc/uiconfig/scalc/ui/managenamesdialog.ui:230
 msgctxt "managenamesdialog|label4"
 msgid "Scope:"
 msgstr "Абсяг бачнасці:"
 
 #. oXFBG
-#: sc/uiconfig/scalc/ui/managenamesdialog.ui:246
+#: sc/uiconfig/scalc/ui/managenamesdialog.ui:247
 msgctxt "managenamesdialog|extended_tip|scope"
 msgid "Select the scope of the named range or named formula. Document (Global) means the name is valid for the whole document."
 msgstr "Выберыце вобласць дзеяння названага дыяпазону або названай формулы. «Дакумент (Глабальны)» азначае, што назва дзейнічае для ўсяго дакумента."
 
 #. 2dF7g
-#: sc/uiconfig/scalc/ui/managenamesdialog.ui:271
+#: sc/uiconfig/scalc/ui/managenamesdialog.ui:272
 msgctxt "managenamesdialog|extended_tip|range"
 msgid "The reference of the selected area name is shown here as an absolute value."
 msgstr "Спасылка на назву выбранай вобласці тут паказана ў выглядзе абсалютнага значэння."
 
 #. EJrBk
-#: sc/uiconfig/scalc/ui/managenamesdialog.ui:288
+#: sc/uiconfig/scalc/ui/managenamesdialog.ui:289
 msgctxt "managenamesdialog|extended_tip|assign"
 msgid "Click the Shrink icon to reduce the dialog to the size of the input field. It is then easier to mark the required reference in the sheet. The icons then automatically convert to the Maximize icon. Click it to restore the dialog to its original size."
 msgstr "Націсніце значок «Зменшыць», каб паменшыць дыялогавае акно да памеру поля ўводу. Тады будзе лягчэй адзначыць патрэбную спасылку на аркушы. Затым значкі аўтаматычна пераўтворацца ў значок «Разгарнуць». Націсніце на яго, каб аднавіць дыялогавае акно да першапачатковага памеру."
 
 #. ddGRB
-#: sc/uiconfig/scalc/ui/managenamesdialog.ui:309
+#: sc/uiconfig/scalc/ui/managenamesdialog.ui:310
 msgctxt "managenamesdialog|label3"
 msgid "Range or formula expression:"
 msgstr "Дыяпазон або формула:"
 
-#. CEMJp
-#: sc/uiconfig/scalc/ui/managenamesdialog.ui:328
+#. AzEvE
+#: sc/uiconfig/scalc/ui/managenamesdialog.ui:329
 msgctxt "managenamesdialog|extended_tip|name"
-msgid "Enter the name of the area for which you want to define a reference or a formula expression."
-msgstr "Увядзіце назву вобласці, для якой вы хочаце вызначыць спасылку або формулу."
+msgid "Enter the name of the area for which you want to define a reference or a formula expression. It must start with a letter (excluding c, C, r, or R followed by a number) or underscore. Only letters, numbers, and underscores are permitted."
+msgstr ""
 
 #. dGcEm
 #: sc/uiconfig/scalc/ui/managenamesdialog.ui:361
@@ -26517,13 +26675,13 @@ msgid "Deletes the selected element or elements without requiring confirmation."
 msgstr "Выдаляе выбраны элемент або элементы без пацвярджэння."
 
 #. j3EMw
-#: sc/uiconfig/scalc/ui/managenamesdialog.ui:527
+#: sc/uiconfig/scalc/ui/managenamesdialog.ui:524
 msgctxt "managenamesdialog|extended_tip|ManageNamesDialog"
 msgid "Opens a dialog where you can specify a name for a selected area or a name for a formula expression."
 msgstr "Адчыняе дыялогавае акно, у якім можна задаць назву для выбранай вобласці або назву для формулы."
 
 #. 96fTt
-#: sc/uiconfig/scalc/ui/managenamesdialog.ui:532
+#: sc/uiconfig/scalc/ui/managenamesdialog.ui:529
 msgctxt "managenamesdialog|treeviewcolumn1"
 msgid "column"
 msgstr "калонка"
@@ -28072,7 +28230,6 @@ msgstr "Крыжаваная спасылка"
 
 #. GEsRE
 #: sc/uiconfig/scalc/ui/notebookbar_groups.ui:152
-#, fuzzy
 msgctxt "notebookbar_groups|stylemenudefault"
 msgid "Default"
 msgstr "Прадвызначана"
@@ -33686,7 +33843,6 @@ msgstr "Аператар 4"
 
 #. upKBs
 #: sc/uiconfig/scalc/ui/standardfilterdialog.ui:300
-#, fuzzy
 msgctxt "standardfilterdialog|label2"
 msgid "Operator"
 msgstr "Аператар"

@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2025-05-09 18:30+0200\n"
-"PO-Revision-Date: 2025-05-11 19:56+0000\n"
+"POT-Creation-Date: 2025-05-30 12:45+0200\n"
+"PO-Revision-Date: 2025-05-30 10:50+0000\n"
 "Last-Translator: Ming Hua <plateauwolf@qq.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://translations.documentfoundation.org/projects/libo_ui-master/scmessages/zh_Hans/>\n"
 "Language: zh-CN\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Accelerator-Marker: ~\n"
-"X-Generator: Weblate 5.10.1\n"
+"X-Generator: LibreOffice\n"
 "X-POOTLE-MTIME: 1562731995.000000\n"
 
 #. kBovX
@@ -2745,11 +2745,13 @@ msgctxt "STR_ERR_NAME_EXISTS"
 msgid "Invalid name. Already in use for the selected scope."
 msgstr "无效的名称。已经在选中的作用范围内使用过了。"
 
-#. qDNs9
+#. GxYui
 #: sc/inc/globstr.hrc:464
 msgctxt "STR_ERR_NAME_INVALID"
-msgid "Invalid name. Start with a letter, use only letters, numbers and underscore."
-msgstr "无效的名称。必须以英文字母开头，且只能包含字母、数字和下划线。"
+msgid ""
+"Invalid name. It must start with a letter (excluding c, C, r, or R followed by a number) or underscore.\n"
+"Only letters, numbers, and underscores are permitted."
+msgstr ""
 
 #. owW4Y
 #: sc/inc/globstr.hrc:465
@@ -6557,79 +6559,79 @@ msgstr "计算函数公式所在位置的现值。"
 #: sc/inc/scfuncs.hrc:851
 msgctxt "SC_OPCODE_FALSE"
 msgid "Defines the logical value as FALSE."
-msgstr "定义逻辑值为 FALSE。"
+msgstr "将逻辑值定义为假 (False)。"
 
 #. gBTKc
 #: sc/inc/scfuncs.hrc:857
 msgctxt "SC_OPCODE_NOT"
 msgid "Reverses the value of the argument."
-msgstr "对参数值求反。"
+msgstr "对参数值取反。"
 
 #. RFgjB
 #: sc/inc/scfuncs.hrc:858
 msgctxt "SC_OPCODE_NOT"
 msgid "Logical value"
-msgstr "Logical value"
+msgstr "逻辑值"
 
 #. AjEum
 #: sc/inc/scfuncs.hrc:859
 msgctxt "SC_OPCODE_NOT"
 msgid "An expression that can be either TRUE or FALSE."
-msgstr "一个能够计算出 TRUE 或 FALSE 的表达式。"
+msgstr "能够取值真 (True) 或假 (False) 的表达式。"
 
 #. LzbKn
 #: sc/inc/scfuncs.hrc:865
 msgctxt "SC_OPCODE_TRUE"
 msgid "Returns the logical value TRUE."
-msgstr "返回逻辑值 TRUE。"
+msgstr "返回逻辑值真 (True)。"
 
 #. v3TGN
 #: sc/inc/scfuncs.hrc:871
 msgctxt "SC_OPCODE_IF"
 msgid "Specifies a logical test to be performed."
-msgstr "指定一个要执行的逻辑值检查。"
+msgstr "指定要进行的逻辑检验。"
 
 #. MYB24
 #: sc/inc/scfuncs.hrc:872
 msgctxt "SC_OPCODE_IF"
 msgid "Test"
-msgstr "Test"
+msgstr "检验"
 
 #. CTh7g
 #: sc/inc/scfuncs.hrc:873
 msgctxt "SC_OPCODE_IF"
 msgid "Any value or expression which can be either TRUE or FALSE."
-msgstr "一个逻辑值为 TRUE 或 FALSE 的任意数值或表达式。"
+msgstr "能够取值真 (True) 或假 (False) 的任意数值或表达式。"
 
 #. 7GF68
 #: sc/inc/scfuncs.hrc:874
 msgctxt "SC_OPCODE_IF"
 msgid "Then value"
-msgstr "则值"
+msgstr "真返回值"
 
 #. 6D8BZ
 #: sc/inc/scfuncs.hrc:875
 msgctxt "SC_OPCODE_IF"
 msgid "The result of the function if the logical test returns a TRUE."
-msgstr "如果逻辑测试结果为 TRUE ，则返回函数结果。"
+msgstr "当逻辑检验返回真 (True) 时，函数所取的结果值。"
 
 #. 6nEAt
 #: sc/inc/scfuncs.hrc:876
 msgctxt "SC_OPCODE_IF"
 msgid "Otherwise value"
-msgstr "否则值"
+msgstr "假返回值"
 
 #. eEZDV
 #: sc/inc/scfuncs.hrc:877
 msgctxt "SC_OPCODE_IF"
 msgid "The result of the function if the logical test returns FALSE."
-msgstr "如果逻辑测试结果为 FALSE ，则返回函数结果。"
+msgstr "当逻辑检验返回假 (False) 时，函数所取的结果值。"
 
 #. edvgD
 #: sc/inc/scfuncs.hrc:883
 msgctxt "SC_OPCODE_IF_ERROR"
 msgid "Returns value if not an error value, else alternative."
-msgstr "如果非错误值，则返回该值，否则返回备选值。"
+msgstr "如果输入参数值非错误，则返回该值；否则返回备选值。"
 
 #. NLF3b
 #: sc/inc/scfuncs.hrc:884
@@ -6641,7 +6643,7 @@ msgstr "值"
 #: sc/inc/scfuncs.hrc:885
 msgctxt "SC_OPCODE_IF_ERROR"
 msgid "The value to be calculated."
-msgstr "要计算的数值。"
+msgstr "要进行函数计算的值。"
 
 #. vGUD4
 #: sc/inc/scfuncs.hrc:886
@@ -6653,13 +6655,13 @@ msgstr "备选值"
 #: sc/inc/scfuncs.hrc:887
 msgctxt "SC_OPCODE_IF_ERROR"
 msgid "The alternative to be returned, should value be an error value."
-msgstr "若值为错误值，此时要返回的备选值。"
+msgstr "当输入参数值为错误时，函数返回的备选值。"
 
 #. AEkuH
 #: sc/inc/scfuncs.hrc:893
 msgctxt "SC_OPCODE_IF_NA"
 msgid "Returns value if not a #N/A error, else alternative."
-msgstr "若非 #N/A 错误，则返回该值，否则返回备选值。"
+msgstr "如果输入参数值并非不适用 (#N/A) 错误，则返回该值；否则返回备选值。"
 
 #. vUvwA
 #: sc/inc/scfuncs.hrc:894
@@ -6671,7 +6673,7 @@ msgstr "值"
 #: sc/inc/scfuncs.hrc:895
 msgctxt "SC_OPCODE_IF_NA"
 msgid "The value to be calculated."
-msgstr "要计算的数值。"
+msgstr "要进行函数计算的值。"
 
 #. LcnBF
 #: sc/inc/scfuncs.hrc:896
@@ -6683,61 +6685,61 @@ msgstr "备选值"
 #: sc/inc/scfuncs.hrc:897
 msgctxt "SC_OPCODE_IF_NA"
 msgid "The alternative to be returned, should value be a #N/A error."
-msgstr "若值为 #N/A 错误，此时要返回的备选值。"
+msgstr "当输入参数值为不适用 (#N/A) 错误时，函数返回的备选值。"
 
 #. xUnPu
 #: sc/inc/scfuncs.hrc:903
 msgctxt "SC_OPCODE_OR"
 msgid "Returns TRUE if an argument is TRUE."
-msgstr "如果有一个参数为 TRUE，则返回 TRUE。"
+msgstr "如果任何一个参数为真 (True)，则返回值为真 (True)。"
 
 #. kHpqi
 #: sc/inc/scfuncs.hrc:904
 msgctxt "SC_OPCODE_OR"
 msgid "Logical value "
-msgstr "Logical value "
+msgstr "逻辑值 "
 
 #. 8XBdG
 #: sc/inc/scfuncs.hrc:905
 msgctxt "SC_OPCODE_OR"
 msgid "Logical value 1, logical value 2,... are conditions to be tested and which return either TRUE or FALSE."
-msgstr "逻辑值 1; 逻辑值 2;... 为需要进行检验的 1 到 30 个条件，为 TRUE 或 FALSE。"
+msgstr "逻辑值 1、逻辑值 2、……等是要进行检验的各个条件，每个都会返回真 (True) 或假 (False)。"
 
 #. oWP6A
 #: sc/inc/scfuncs.hrc:911
 msgctxt "SC_OPCODE_XOR"
 msgid "Returns TRUE if an odd number of arguments evaluates to TRUE."
-msgstr "若值为 TRUE 的参数个数为奇数则返回 TRUE。"
+msgstr "若有奇数个参数的运算结果为真 (True)，则返回值为真 (True)。"
 
 #. k66Hq
 #: sc/inc/scfuncs.hrc:912
 msgctxt "SC_OPCODE_XOR"
 msgid "Logical value "
-msgstr "Logical value "
+msgstr "逻辑值 "
 
 #. sX2H9
 #: sc/inc/scfuncs.hrc:913
 msgctxt "SC_OPCODE_XOR"
 msgid "Logical value 1, logical value 2, ... are conditions to be tested and which return either TRUE or FALSE."
-msgstr "逻辑值 1、逻辑值 2、... 是用于测试的 1~30 个条件，均应该返回 TRUE 或 FALSE。"
+msgstr "逻辑值 1、逻辑值 2、……等是要进行检验的各个条件，每个都会返回真 (True) 或假 (False)。"
 
 #. DrctE
 #: sc/inc/scfuncs.hrc:919
 msgctxt "SC_OPCODE_AND"
 msgid "Returns TRUE if all arguments are TRUE."
-msgstr "设定成 TRUE ，如果所有元素是 TRUE。"
+msgstr "如果所有参数都为真 (True)，则返回值为真 (True)。"
 
 #. xY9uD
 #: sc/inc/scfuncs.hrc:920
 msgctxt "SC_OPCODE_AND"
 msgid "Logical value "
-msgstr "Logical value "
+msgstr "逻辑值 "
 
 #. f9SWZ
 #: sc/inc/scfuncs.hrc:921
 msgctxt "SC_OPCODE_AND"
 msgid "Logical value 1, logical value 2;...are conditions to be tested and each returns either TRUE or FALSE."
-msgstr "逻辑值 1，逻辑值 2，... 是 1 至 30 个待测试的条件，每个条件返回的结果必须为 TRUE 或 FALSE。"
+msgstr "逻辑值 1、逻辑值 2、……等是要进行检验的各个条件，每个都会返回真 (True) 或假 (False)。"
 
 #. EXiAr
 #: sc/inc/scfuncs.hrc:927
@@ -15181,7 +15183,7 @@ msgstr "用于组合的文本和/或单元格区域。"
 #: sc/inc/scfuncs.hrc:3629
 msgctxt "SC_OPCODE_IFS_MS"
 msgid "Checks 1 or more conditions and returns a value corresponding to the first true condition."
-msgstr "检查1个或多个条件，并返回满足的第一个条件对应的值。"
+msgstr "检查一个或多个条件，返回第一个结果为真条件所对应的值。"
 
 #. Zjofa
 #: sc/inc/scfuncs.hrc:3630
@@ -15193,7 +15195,7 @@ msgstr "检验"
 #: sc/inc/scfuncs.hrc:3631
 msgctxt "SC_OPCODE_IFS_MS"
 msgid "Any value or expression which can be either TRUE or FALSE."
-msgstr "逻辑值为 TRUE 或 FALSE 的任意值或表达式。"
+msgstr "能够取值真 (True) 或假 (False) 的任意数值或表达式。"
 
 #. 9BALa
 #: sc/inc/scfuncs.hrc:3632
@@ -15205,13 +15207,13 @@ msgstr "结果"
 #: sc/inc/scfuncs.hrc:3633
 msgctxt "SC_OPCODE_IFS_MS"
 msgid "The result of the function if test is TRUE."
-msgstr "当测试结果为 TRUE 时函数的结果。"
+msgstr "当检验结果为真 (True) 时函数返回的结果。"
 
 #. g8sc4
 #: sc/inc/scfuncs.hrc:3639
 msgctxt "SC_OPCODE_SWITCH_MS"
 msgid "Compares expression against list of value/result pairs, and returns result for first value that matches the expression.  If expression does not match any value, a default result is returned, if it is placed as final item in parameter list without a value."
-msgstr "将表达式与一个「值／结果」列表中的值相比较，返回第一个与表达式匹配的值所对应的结果。如果表达式和所有值都不匹配，则可以返回一个默认结果。默认结果放在参数列表末尾，且没有相对应的值。"
+msgstr "将表达式与一个「值／结果」列表中的各个值相比较，并返回第一个匹配表达式的值所对应的结果。如果表达式和列表中所有值都不匹配，则在已设置的情况下返回默认结果。设置默认结果的方式是在参数列表末尾放一个没有对应值的结果。"
 
 #. PneN8
 #: sc/inc/scfuncs.hrc:3640
@@ -15223,7 +15225,7 @@ msgstr "表达式"
 #: sc/inc/scfuncs.hrc:3641
 msgctxt "SC_OPCODE_SWITCH_MS"
 msgid "Value to be compared against value1…valueN (N ≤ 127)"
-msgstr "用于和「值1...值N (N ≤ 127)」参数相比较的值"
+msgstr "用于和参数「值1、...、值N」(N ≤ 127) 相比较"
 
 #. 9wcvj
 #: sc/inc/scfuncs.hrc:3642
@@ -15235,7 +15237,7 @@ msgstr "值"
 #: sc/inc/scfuncs.hrc:3643
 msgctxt "SC_OPCODE_SWITCH_MS"
 msgid "Value to compare against expression. If no result is given, then value is returned as default result."
-msgstr "用于和表达式参数相比较的值。如果没有设定结果参数，则默认将此值参数当结果返回。"
+msgstr "用于和表达式相比较的值。如果没有带结果参数，则将此值当作默认结果返回。"
 
 #. dsARv
 #: sc/inc/scfuncs.hrc:3644
@@ -15247,7 +15249,7 @@ msgstr "结果"
 #: sc/inc/scfuncs.hrc:3645
 msgctxt "SC_OPCODE_SWITCH_MS"
 msgid "Value to return when corresponding value argument matches expression."
-msgstr "当对应的值参数与表达式参数匹配时，将此值作为函数结果返回。"
+msgstr "当对应的值参数匹配表达式时，函数返回此结果。"
 
 #. m2wBA
 #: sc/inc/scfuncs.hrc:3650
@@ -17470,332 +17472,488 @@ msgctxt "SC_OPCODE_TAKE"
 msgid "The number of columns to take. A negative value takes from the end of the array."
 msgstr "要提取的列数。负值会从数组末尾处提取列。"
 
-#. wdZTd
+#. GwyMB
 #: sc/inc/scfuncs.hrc:4335
+msgctxt "SC_OPCODE_TEXTAFTER"
+msgid "Returns the text that occurs after a given substring or delimiter."
+msgstr ""
+
+#. cicY2
+#: sc/inc/scfuncs.hrc:4336
+msgctxt "SC_OPCODE_TEXTAFTER"
+msgid "Text"
+msgstr ""
+
+#. 3WLYF
+#: sc/inc/scfuncs.hrc:4337
+msgctxt "SC_OPCODE_TEXTAFTER"
+msgid "The original text."
+msgstr ""
+
+#. z4pDr
+#: sc/inc/scfuncs.hrc:4338
+msgctxt "SC_OPCODE_TEXTAFTER"
+msgid "Delimiter"
+msgstr ""
+
+#. YEbwu
+#: sc/inc/scfuncs.hrc:4339
+msgctxt "SC_OPCODE_TEXTAFTER"
+msgid "The delimiter. Multiple delimiters can be supplied."
+msgstr ""
+
+#. HPDvF
+#: sc/inc/scfuncs.hrc:4340
+msgctxt "SC_OPCODE_TEXTAFTER"
+msgid "Instance Number"
+msgstr ""
+
+#. DmVZL
+#: sc/inc/scfuncs.hrc:4341
+msgctxt "SC_OPCODE_TEXTAFTER"
+msgid "The instance of the delimiter after which to extract text. The default is 1. A negative number starts searching from the end."
+msgstr ""
+
+#. fpoGj
+#: sc/inc/scfuncs.hrc:4342
+msgctxt "SC_OPCODE_TEXTAFTER"
+msgid "Match Mode"
+msgstr ""
+
+#. iSfJi
+#: sc/inc/scfuncs.hrc:4343
+msgctxt "SC_OPCODE_TEXTAFTER"
+msgid "Set to 1 to perform a case-insensitive match. The default is 0."
+msgstr ""
+
+#. nAF2s
+#: sc/inc/scfuncs.hrc:4344
+msgctxt "SC_OPCODE_TEXTAFTER"
+msgid "Match End"
+msgstr ""
+
+#. W2DGj
+#: sc/inc/scfuncs.hrc:4345
+msgctxt "SC_OPCODE_TEXTAFTER"
+msgid "Set to 1 to treat the end of text as a delimiter. The default is 0."
+msgstr ""
+
+#. PG6qj
+#: sc/inc/scfuncs.hrc:4346
+msgctxt "SC_OPCODE_TEXTAFTER"
+msgid "If Not Found"
+msgstr ""
+
+#. vfgZc
+#: sc/inc/scfuncs.hrc:4347
+msgctxt "SC_OPCODE_TEXTAFTER"
+msgid "The value returned if no match is found. The default is #N/A."
+msgstr ""
+
+#. f88EE
+#: sc/inc/scfuncs.hrc:4353
+msgctxt "SC_OPCODE_TEXTBEFORE"
+msgid "Returns the text that occurs before a given substring or delimiter."
+msgstr ""
+
+#. NNriC
+#: sc/inc/scfuncs.hrc:4354
+msgctxt "SC_OPCODE_TEXTBEFORE"
+msgid "Text"
+msgstr ""
+
+#. HsEG8
+#: sc/inc/scfuncs.hrc:4355
+msgctxt "SC_OPCODE_TEXTBEFORE"
+msgid "The original text."
+msgstr ""
+
+#. E4a5z
+#: sc/inc/scfuncs.hrc:4356
+msgctxt "SC_OPCODE_TEXTBEFORE"
+msgid "Delimiter"
+msgstr ""
+
+#. qDFZy
+#: sc/inc/scfuncs.hrc:4357
+msgctxt "SC_OPCODE_TEXTBEFORE"
+msgid "The delimiter. Multiple delimiters can be supplied."
+msgstr ""
+
+#. gNHAi
+#: sc/inc/scfuncs.hrc:4358
+msgctxt "SC_OPCODE_TEXTBEFORE"
+msgid "Instance Number"
+msgstr ""
+
+#. sD4zC
+#: sc/inc/scfuncs.hrc:4359
+msgctxt "SC_OPCODE_TEXTBEFORE"
+msgid "The instance of the delimiter before which to extract text. The default is 1. A negative number starts searching from the end."
+msgstr ""
+
+#. Adzeh
+#: sc/inc/scfuncs.hrc:4360
+msgctxt "SC_OPCODE_TEXTBEFORE"
+msgid "Match Mode"
+msgstr ""
+
+#. Pi2Ti
+#: sc/inc/scfuncs.hrc:4361
+msgctxt "SC_OPCODE_TEXTBEFORE"
+msgid "Set to 1 to perform a case-insensitive match. The default is 0."
+msgstr ""
+
+#. sACA2
+#: sc/inc/scfuncs.hrc:4362
+msgctxt "SC_OPCODE_TEXTBEFORE"
+msgid "Match End"
+msgstr ""
+
+#. UxpD6
+#: sc/inc/scfuncs.hrc:4363
+msgctxt "SC_OPCODE_TEXTBEFORE"
+msgid "Set to 1 to treat the end of text as a delimiter. The default is 0."
+msgstr ""
+
+#. aCnZX
+#: sc/inc/scfuncs.hrc:4364
+msgctxt "SC_OPCODE_TEXTBEFORE"
+msgid "If Not Found"
+msgstr ""
+
+#. xCZYH
+#: sc/inc/scfuncs.hrc:4365
+msgctxt "SC_OPCODE_TEXTBEFORE"
+msgid "The value returned if no match is found. The default is #N/A."
+msgstr ""
+
+#. wdZTd
+#: sc/inc/scfuncs.hrc:4371
 msgctxt "SC_OPCODE_TEXTSPLIT"
 msgid "Splits text by a given delimiter to an array of multiple cells."
 msgstr "将文本按照一个给定的分界符切分到一个数组或多个单元格中。"
 
 #. DH7h4
-#: sc/inc/scfuncs.hrc:4336
+#: sc/inc/scfuncs.hrc:4372
 msgctxt "SC_OPCODE_TEXTSPLIT"
 msgid "Text"
 msgstr "文本"
 
 #. dqSdF
-#: sc/inc/scfuncs.hrc:4337
+#: sc/inc/scfuncs.hrc:4373
 msgctxt "SC_OPCODE_TEXTSPLIT"
 msgid "The text to split."
 msgstr "要切分的文本。"
 
 #. pdpxt
-#: sc/inc/scfuncs.hrc:4338
+#: sc/inc/scfuncs.hrc:4374
 msgctxt "SC_OPCODE_TEXTSPLIT"
 msgid "Column Delimiter"
 msgstr "列分界符"
 
 #. nfMAr
-#: sc/inc/scfuncs.hrc:4339
+#: sc/inc/scfuncs.hrc:4375
 msgctxt "SC_OPCODE_TEXTSPLIT"
 msgid "The text to delimit the columns. Multiple delimiters can be supplied."
 msgstr "用于标记各列之间边界的文本。可以提供多个列分界符。"
 
 #. qZGq2
-#: sc/inc/scfuncs.hrc:4340
+#: sc/inc/scfuncs.hrc:4376
 msgctxt "SC_OPCODE_TEXTSPLIT"
 msgid "Row Delimiter"
 msgstr "行分界符"
 
 #. dPnbc
-#: sc/inc/scfuncs.hrc:4341
+#: sc/inc/scfuncs.hrc:4377
 msgctxt "SC_OPCODE_TEXTSPLIT"
 msgid "The text to delimit the rows. Multiple delimiters can be supplied."
 msgstr "用于标记各行之间边界的文本。可以提供多个行分界符。"
 
 #. jD3sa
-#: sc/inc/scfuncs.hrc:4342
+#: sc/inc/scfuncs.hrc:4378
 msgctxt "SC_OPCODE_TEXTSPLIT"
 msgid "Ignore Empty"
 msgstr "忽略空位"
 
-#. QFZpt
-#: sc/inc/scfuncs.hrc:4343
+#. 6LwdP
+#: sc/inc/scfuncs.hrc:4379
 msgctxt "SC_OPCODE_TEXTSPLIT"
-msgid "Set to TRUE to ignore consecutive delimiters otherwise creates an empty cell. The default to FALSE."
+msgid "Set to TRUE to ignore consecutive delimiters otherwise it creates an empty cell. The default is FALSE."
 msgstr ""
 
 #. kkAYp
-#: sc/inc/scfuncs.hrc:4344
+#: sc/inc/scfuncs.hrc:4380
 msgctxt "SC_OPCODE_TEXTSPLIT"
 msgid "Match mode"
 msgstr "匹配模式"
 
-#. DmNiP
-#: sc/inc/scfuncs.hrc:4345
+#. iX8cx
+#: sc/inc/scfuncs.hrc:4381
 msgctxt "SC_OPCODE_TEXTSPLIT"
-msgid "Set to 1 to perform a case-insensitive match otherwise does a case-sensitive match. The default to 0."
+msgid "Set to 1 to perform a case-insensitive match. The default is 0."
 msgstr ""
 
 #. vXECz
-#: sc/inc/scfuncs.hrc:4346
+#: sc/inc/scfuncs.hrc:4382
 msgctxt "SC_OPCODE_TEXTSPLIT"
 msgid "Pad with"
 msgstr ""
 
 #. h4db2
-#: sc/inc/scfuncs.hrc:4347
+#: sc/inc/scfuncs.hrc:4383
 msgctxt "SC_OPCODE_TEXTSPLIT"
 msgid "The value with which to pad. The default is #N/A."
 msgstr ""
 
 #. DdFFE
-#: sc/inc/scfuncs.hrc:4353
+#: sc/inc/scfuncs.hrc:4389
 msgctxt "SC_OPCODE_TOCOL"
 msgid "Transforms an array into a single column."
 msgstr "将数组转换成单独一列。"
 
 #. UAzNC
-#: sc/inc/scfuncs.hrc:4354
+#: sc/inc/scfuncs.hrc:4390
 msgctxt "SC_OPCODE_TOCOL"
 msgid "Array"
 msgstr "数组"
 
 #. CHojs
-#: sc/inc/scfuncs.hrc:4355
+#: sc/inc/scfuncs.hrc:4391
 msgctxt "SC_OPCODE_TOCOL"
 msgid "The range or array to return as a single column."
 msgstr "要作为单独一列返回的区域或数组。"
 
 #. uACXu
-#: sc/inc/scfuncs.hrc:4356
+#: sc/inc/scfuncs.hrc:4392
 msgctxt "SC_OPCODE_TOCOL"
 msgid "Ignore"
 msgstr "忽略"
 
 #. b7EQW
-#: sc/inc/scfuncs.hrc:4357
+#: sc/inc/scfuncs.hrc:4393
 msgctxt "SC_OPCODE_TOCOL"
 msgid "Whether to ignore certain types of values. 0 or omitted - keep all values (default). 1 - ignore blank cells. 2 - ignore cells with error. 3 - ignore blanks cells and cells with error."
 msgstr "是否忽略某些类型的值。0 或无此参数 - 保留所有值 (默认)。1 - 忽略空白单元格。2 - 忽略有错误的单元格。3 - 忽略空白单元格和有错误的单元格。"
 
 #. qNLAi
-#: sc/inc/scfuncs.hrc:4358
+#: sc/inc/scfuncs.hrc:4394
 msgctxt "SC_OPCODE_TOCOL"
 msgid "Scan by column"
 msgstr "逐列遍历"
 
 #. bcArN
-#: sc/inc/scfuncs.hrc:4359
+#: sc/inc/scfuncs.hrc:4395
 msgctxt "SC_OPCODE_TOCOL"
 msgid "Scan the array by column. FALSE or omitted (default) - the array is scanned by row. TRUE - the array is scanned by column."
 msgstr "是否逐列遍历数组。FALSE 或无此参数 - 按每一行的顺序遍历数组 (默认)。TRUE - 按每一列的顺序遍历数组。"
 
 #. PGyxj
-#: sc/inc/scfuncs.hrc:4365
+#: sc/inc/scfuncs.hrc:4401
 msgctxt "SC_OPCODE_TOROW"
 msgid "transforms an array into a single row."
 msgstr "将数组转换成单独一行。"
 
 #. W9bWe
-#: sc/inc/scfuncs.hrc:4366
+#: sc/inc/scfuncs.hrc:4402
 msgctxt "SC_OPCODE_TOROW"
 msgid "Array"
 msgstr "数组"
 
 #. 5MEvT
-#: sc/inc/scfuncs.hrc:4367
+#: sc/inc/scfuncs.hrc:4403
 msgctxt "SC_OPCODE_TOROW"
 msgid "The range or array to return as a single row."
 msgstr "要作为单独一行返回的区域或数组。"
 
 #. AqqBC
-#: sc/inc/scfuncs.hrc:4368
+#: sc/inc/scfuncs.hrc:4404
 msgctxt "SC_OPCODE_TOROW"
 msgid "Ignore"
 msgstr "忽略"
 
 #. wcpQF
-#: sc/inc/scfuncs.hrc:4369
+#: sc/inc/scfuncs.hrc:4405
 msgctxt "SC_OPCODE_TOROW"
 msgid "Whether to ignore certain types of values. 0 or omitted - keep all values (default). 1 - ignore blank cells. 2 - ignore cells with error. 3 - ignore blanks cells and cells with error."
 msgstr "是否忽略某些类型的值。0 或无此参数 - 保留所有值 (默认)。1 - 忽略空白单元格。2 - 忽略有错误的单元格。3 - 忽略空白单元格和有错误的单元格。"
 
 #. E4XDf
-#: sc/inc/scfuncs.hrc:4370
+#: sc/inc/scfuncs.hrc:4406
 msgctxt "SC_OPCODE_TOROW"
 msgid "Scan by column"
 msgstr "逐列遍历"
 
 #. 5bZRy
-#: sc/inc/scfuncs.hrc:4371
+#: sc/inc/scfuncs.hrc:4407
 msgctxt "SC_OPCODE_TOROW"
 msgid "Scan the array by column. FALSE or omitted (default) - the array is scanned by row. TRUE - the array is scanned by column."
 msgstr "是否逐列遍历数组。FALSE 或无此参数 - 按每一行的顺序遍历数组 (默认)。TRUE - 按每一列的顺序遍历数组。"
 
 #. NJR3E
-#: sc/inc/scfuncs.hrc:4377
+#: sc/inc/scfuncs.hrc:4413
 msgctxt "SC_OPCODE_UNIQUE"
 msgid "Returns a list of unique values from a range or array."
 msgstr "返回一个单元格范围或数组中全部唯一值的列表。"
 
 #. NepxE
-#: sc/inc/scfuncs.hrc:4378
+#: sc/inc/scfuncs.hrc:4414
 msgctxt "SC_OPCODE_UNIQUE"
 msgid "Array"
 msgstr "数组"
 
 #. 2sVga
-#: sc/inc/scfuncs.hrc:4379
+#: sc/inc/scfuncs.hrc:4415
 msgctxt "SC_OPCODE_UNIQUE"
 msgid "The range or array from which to return unique values."
 msgstr "单元格范围或数组，返回其中的唯一值。"
 
 #. fGfWS
-#: sc/inc/scfuncs.hrc:4380
+#: sc/inc/scfuncs.hrc:4416
 msgctxt "SC_OPCODE_UNIQUE"
 msgid "By col"
 msgstr "按列比较"
 
 #. SASmk
-#: sc/inc/scfuncs.hrc:4381
+#: sc/inc/scfuncs.hrc:4417
 msgctxt "SC_OPCODE_UNIQUE"
 msgid "Logical value indicating how to compare data: TRUE - compares data across columns. FALSE or omitted (default) - compares data across rows."
 msgstr "表示如何比较数据的逻辑值：TRUE - 比较各列的数据；FALSE 或省略此参数 (默认值) - 比较各行的数据。"
 
 #. hVQ6i
-#: sc/inc/scfuncs.hrc:4382
+#: sc/inc/scfuncs.hrc:4418
 msgctxt "SC_OPCODE_UNIQUE"
 msgid "Uniqueness"
 msgstr "唯一性"
 
 #. EUVys
-#: sc/inc/scfuncs.hrc:4383
+#: sc/inc/scfuncs.hrc:4419
 msgctxt "SC_OPCODE_UNIQUE"
 msgid "Logical value that defines what values are considered unique: TRUE - returns values that occur only once. FALSE or omitted (default) - returns all distinct (different) values in the range or array."
 msgstr "定义哪些数据被判断为唯一的逻辑值：TRUE - 返回仅出现一次的值；FALSE 或省略此参数 (默认值) - 返回单元格范围或数组中所有互不相同的值。"
 
 #. axamT
-#: sc/inc/scfuncs.hrc:4389
+#: sc/inc/scfuncs.hrc:4425
 msgctxt "SC_OPCODE_LET"
 msgid "The LET function assigns names to calculation results. This allows storing intermediate calculations, values, or defining names inside a formula. These names only apply within the scope of the LET function."
 msgstr "LET 函数为计算结果命名。这可以在公式内部存储计算的中间结果，数值，或者定义名称。这些名称仅能在 LET 函数内部使用。"
 
 #. 6DDAi
-#: sc/inc/scfuncs.hrc:4390
+#: sc/inc/scfuncs.hrc:4426
 msgctxt "SC_OPCODE_LET"
 msgid "Name 1"
 msgstr "名称 1"
 
 #. a7LQR
-#: sc/inc/scfuncs.hrc:4391
+#: sc/inc/scfuncs.hrc:4427
 msgctxt "SC_OPCODE_LET"
 msgid "The first name to assign. Must start with a letter. Cannot be the output of a formula or conflict with range syntax."
 msgstr "指定的第一个名称。必须以英文字母开头。不能作为公式的返回值或与单元格范围语法有冲突。"
 
 #. KsyBM
-#: sc/inc/scfuncs.hrc:4392
+#: sc/inc/scfuncs.hrc:4428
 msgctxt "SC_OPCODE_LET"
 msgid "Name value "
 msgstr "名称值 "
 
 #. Dn2DE
-#: sc/inc/scfuncs.hrc:4393
+#: sc/inc/scfuncs.hrc:4429
 msgctxt "SC_OPCODE_LET"
 msgid "Name value 1, Name value 2,... The value or calculation to assign to Name."
 msgstr "名称值 1, 名称值 2,... 要赋值给「名称」的值或计算式。"
 
 #. CHAMD
-#: sc/inc/scfuncs.hrc:4394
+#: sc/inc/scfuncs.hrc:4430
 msgctxt "SC_OPCODE_LET"
 msgid "Calculation or Name "
 msgstr "计算式或名称 "
 
 #. tFMkP
-#: sc/inc/scfuncs.hrc:4395
+#: sc/inc/scfuncs.hrc:4431
 msgctxt "SC_OPCODE_LET"
 msgid "A calculation that uses all names within the LET function. This must be the last argument in the LET function. Or a second Name to assign to a second Name value. If a second Name is specified, Name value 2 and Calculation or Name 3 become required."
 msgstr "使用了 LET 函数中所有名称的计算式。必须是 LET 函数的最后一个参数。或者是要赋予名称值的第二个名称。如果指定为第二个名称，则必须再有「名称值 2」和「计算式或名称 3」参数。"
 
 #. oBDEA
-#: sc/inc/scfuncs.hrc:4401
+#: sc/inc/scfuncs.hrc:4437
 msgctxt "SC_OPCODE_WRAPCOLS"
 msgid "Wraps the provided row or column of values by columns after a specified number of elements to form a new array."
 msgstr ""
 
 #. fC6RK
-#: sc/inc/scfuncs.hrc:4402
+#: sc/inc/scfuncs.hrc:4438
 msgctxt "SC_OPCODE_WRAPCOLS"
 msgid "Range"
 msgstr ""
 
 #. nfZyj
-#: sc/inc/scfuncs.hrc:4403
+#: sc/inc/scfuncs.hrc:4439
 msgctxt "SC_OPCODE_WRAPCOLS"
 msgid "the range to wrap."
 msgstr ""
 
 #. GE3HQ
-#: sc/inc/scfuncs.hrc:4404
+#: sc/inc/scfuncs.hrc:4440
 msgctxt "SC_OPCODE_WRAPCOLS"
 msgid "Wrap count"
 msgstr ""
 
 #. FWsCt
-#: sc/inc/scfuncs.hrc:4405
+#: sc/inc/scfuncs.hrc:4441
 msgctxt "SC_OPCODE_WRAPCOLS"
 msgid "The maximum number of values for each column."
 msgstr ""
 
 #. zkjFB
-#: sc/inc/scfuncs.hrc:4406
+#: sc/inc/scfuncs.hrc:4442
 msgctxt "SC_OPCODE_WRAPCOLS"
 msgid "Pad with"
 msgstr ""
 
 #. knbjc
-#: sc/inc/scfuncs.hrc:4407
+#: sc/inc/scfuncs.hrc:4443
 msgctxt "SC_OPCODE_WRAPCOLS"
 msgid "The value with which to pad. The default is #N/A."
 msgstr ""
 
 #. BDA7q
-#: sc/inc/scfuncs.hrc:4413
+#: sc/inc/scfuncs.hrc:4449
 msgctxt "SC_OPCODE_WRAPROWS"
 msgid "Wraps the provided row or column of values by rows after a specified number of elements to form a new array."
 msgstr ""
 
 #. 7esii
-#: sc/inc/scfuncs.hrc:4414
+#: sc/inc/scfuncs.hrc:4450
 msgctxt "SC_OPCODE_WRAPROWS"
 msgid "Range"
 msgstr ""
 
 #. FLJwx
-#: sc/inc/scfuncs.hrc:4415
+#: sc/inc/scfuncs.hrc:4451
 msgctxt "SC_OPCODE_WRAPROWS"
 msgid "the range to wrap."
 msgstr ""
 
 #. aLHUi
-#: sc/inc/scfuncs.hrc:4416
+#: sc/inc/scfuncs.hrc:4452
 msgctxt "SC_OPCODE_WRAPROWS"
 msgid "Wrap count"
 msgstr ""
 
 #. 3CEsK
-#: sc/inc/scfuncs.hrc:4417
+#: sc/inc/scfuncs.hrc:4453
 msgctxt "SC_OPCODE_WRAPROWS"
 msgid "The maximum number of values for each row."
 msgstr ""
 
 #. iTCWg
-#: sc/inc/scfuncs.hrc:4418
+#: sc/inc/scfuncs.hrc:4454
 msgctxt "SC_OPCODE_WRAPROWS"
 msgid "Pad with"
 msgstr ""
 
 #. e3K5s
-#: sc/inc/scfuncs.hrc:4419
+#: sc/inc/scfuncs.hrc:4455
 msgctxt "SC_OPCODE_WRAPROWS"
 msgid "The value with which to pad. The default is #N/A."
 msgstr ""
@@ -23786,11 +23944,11 @@ msgctxt "definename|label4"
 msgid "Scope:"
 msgstr "范围:"
 
-#. 8LBjA
+#. SeYrM
 #: sc/uiconfig/scalc/ui/definename.ui:142
 msgctxt "definename|extended_tip|edit"
-msgid "Enter the name of the area for which you want to define a reference or a formula expression."
-msgstr "输入要定义引用或公式表达式的区域名称。"
+msgid "Enter the name of the area for which you want to define a reference or a formula expression. It must start with a letter (excluding c, C, r, or R followed by a number) or underscore. Only letters, numbers, and underscores are permitted."
+msgstr ""
 
 #. yDeUA
 #: sc/uiconfig/scalc/ui/definename.ui:166
@@ -23871,7 +24029,7 @@ msgid "Allows you to specify the Area type (optional) for the reference."
 msgstr "允许您指定引用的「区域类型」(可选)。"
 
 #. gBKqi
-#: sc/uiconfig/scalc/ui/definename.ui:360
+#: sc/uiconfig/scalc/ui/definename.ui:357
 msgctxt "definename|extended_tip|DefineNameDialog"
 msgid "Opens a dialog where you can specify a name for a selected area or a name for a formula expression."
 msgstr "打开一个对话框，您可以在对话框中为选中的区域、或者为公式表达式命名。"
@@ -25392,7 +25550,7 @@ msgstr "按照相似性对函数进行查找与排序"
 #: sc/uiconfig/scalc/ui/functionpanel.ui:225
 msgctxt "functionpanel|help"
 msgid "Help"
-msgstr ""
+msgstr "帮助"
 
 #. cStgX
 #: sc/uiconfig/scalc/ui/functionpanel.ui:230
@@ -25515,55 +25673,55 @@ msgid "Grouping"
 msgstr "分组"
 
 #. 64CQA
-#: sc/uiconfig/scalc/ui/groupbydate.ui:122
+#: sc/uiconfig/scalc/ui/groupbydate.ui:119
 msgctxt "groupbydate|auto_start"
 msgid "_Automatically"
 msgstr "自动(_A)"
 
 #. u9esd
-#: sc/uiconfig/scalc/ui/groupbydate.ui:137
+#: sc/uiconfig/scalc/ui/groupbydate.ui:134
 msgctxt "groupbydate|manual_start"
 msgid "_Manually at:"
 msgstr "手动在(_M):"
 
 #. uLqPc
-#: sc/uiconfig/scalc/ui/groupbydate.ui:175
+#: sc/uiconfig/scalc/ui/groupbydate.ui:178
 msgctxt "groupbydate|label1"
 msgid "Start"
 msgstr "开始"
 
 #. F9Q6s
-#: sc/uiconfig/scalc/ui/groupbydate.ui:207
+#: sc/uiconfig/scalc/ui/groupbydate.ui:210
 msgctxt "groupbydate|auto_end"
 msgid "A_utomatically"
 msgstr "自动(_U)"
 
 #. c77d8
-#: sc/uiconfig/scalc/ui/groupbydate.ui:222
+#: sc/uiconfig/scalc/ui/groupbydate.ui:225
 msgctxt "groupbydate|manual_end"
 msgid "Ma_nually at:"
 msgstr "手动(_N):"
 
 #. 7atAW
-#: sc/uiconfig/scalc/ui/groupbydate.ui:260
+#: sc/uiconfig/scalc/ui/groupbydate.ui:269
 msgctxt "groupbydate|label2"
 msgid "End"
 msgstr "结束"
 
 #. PbDbU
-#: sc/uiconfig/scalc/ui/groupbydate.ui:294
+#: sc/uiconfig/scalc/ui/groupbydate.ui:303
 msgctxt "groupbydate|days"
 msgid "Number of _days:"
 msgstr "天数(_D):"
 
 #. GGREf
-#: sc/uiconfig/scalc/ui/groupbydate.ui:312
+#: sc/uiconfig/scalc/ui/groupbydate.ui:321
 msgctxt "groupbydate|intervals"
 msgid "_Intervals:"
 msgstr "间隔(_I):"
 
 #. aQKHp
-#: sc/uiconfig/scalc/ui/groupbydate.ui:410
+#: sc/uiconfig/scalc/ui/groupbydate.ui:419
 msgctxt "groupbydate|label3"
 msgid "Group by"
 msgstr "分组"
@@ -26391,46 +26549,46 @@ msgid "Select cells in the document to update the range."
 msgstr "选择文档中的单元格以更新区域。"
 
 #. WCnsd
-#: sc/uiconfig/scalc/ui/managenamesdialog.ui:215
+#: sc/uiconfig/scalc/ui/managenamesdialog.ui:216
 msgctxt "managenamesdialog|label2"
 msgid "Name:"
 msgstr "名称:"
 
 #. XY33d
-#: sc/uiconfig/scalc/ui/managenamesdialog.ui:229
+#: sc/uiconfig/scalc/ui/managenamesdialog.ui:230
 msgctxt "managenamesdialog|label4"
 msgid "Scope:"
 msgstr "范围:"
 
 #. oXFBG
-#: sc/uiconfig/scalc/ui/managenamesdialog.ui:246
+#: sc/uiconfig/scalc/ui/managenamesdialog.ui:247
 msgctxt "managenamesdialog|extended_tip|scope"
 msgid "Select the scope of the named range or named formula. Document (Global) means the name is valid for the whole document."
 msgstr "选择命名区域或命名公式的作用域。「文档 (全局)」表示名称对整个文档有效。"
 
 #. 2dF7g
-#: sc/uiconfig/scalc/ui/managenamesdialog.ui:271
+#: sc/uiconfig/scalc/ui/managenamesdialog.ui:272
 msgctxt "managenamesdialog|extended_tip|range"
 msgid "The reference of the selected area name is shown here as an absolute value."
 msgstr "选中区域名称的引用在此显示为绝对值。"
 
 #. EJrBk
-#: sc/uiconfig/scalc/ui/managenamesdialog.ui:288
+#: sc/uiconfig/scalc/ui/managenamesdialog.ui:289
 msgctxt "managenamesdialog|extended_tip|assign"
 msgid "Click the Shrink icon to reduce the dialog to the size of the input field. It is then easier to mark the required reference in the sheet. The icons then automatically convert to the Maximize icon. Click it to restore the dialog to its original size."
 msgstr "点击「缩小」图标，将对话框缩小至输入字段的大小。这样，就可以更方便地在工作表中标记所需的引用。图标将自动变为「最大化」图标。再次点击该图标，对话框将恢复为原始大小。"
 
 #. ddGRB
-#: sc/uiconfig/scalc/ui/managenamesdialog.ui:309
+#: sc/uiconfig/scalc/ui/managenamesdialog.ui:310
 msgctxt "managenamesdialog|label3"
 msgid "Range or formula expression:"
 msgstr "范围或公式表达式:"
 
-#. CEMJp
-#: sc/uiconfig/scalc/ui/managenamesdialog.ui:328
+#. AzEvE
+#: sc/uiconfig/scalc/ui/managenamesdialog.ui:329
 msgctxt "managenamesdialog|extended_tip|name"
-msgid "Enter the name of the area for which you want to define a reference or a formula expression."
-msgstr "输入要定义引用或公式表达式的区域名称。"
+msgid "Enter the name of the area for which you want to define a reference or a formula expression. It must start with a letter (excluding c, C, r, or R followed by a number) or underscore. Only letters, numbers, and underscores are permitted."
+msgstr ""
 
 #. dGcEm
 #: sc/uiconfig/scalc/ui/managenamesdialog.ui:361
@@ -26505,13 +26663,13 @@ msgid "Deletes the selected element or elements without requiring confirmation."
 msgstr "删除选中的元素或不询问确认的元素。"
 
 #. j3EMw
-#: sc/uiconfig/scalc/ui/managenamesdialog.ui:527
+#: sc/uiconfig/scalc/ui/managenamesdialog.ui:524
 msgctxt "managenamesdialog|extended_tip|ManageNamesDialog"
 msgid "Opens a dialog where you can specify a name for a selected area or a name for a formula expression."
 msgstr "打开一个对话框，您可以在对话框中为选中的区域、或者为公式表达式命名。"
 
 #. 96fTt
-#: sc/uiconfig/scalc/ui/managenamesdialog.ui:532
+#: sc/uiconfig/scalc/ui/managenamesdialog.ui:529
 msgctxt "managenamesdialog|treeviewcolumn1"
 msgid "column"
 msgstr "列"
@@ -34299,7 +34457,7 @@ msgstr "第一行"
 #: sc/uiconfig/scalc/ui/swaprowsentry.ui:49
 msgctxt "swaprowsentry|extended_tip|ed_row1"
 msgid "The first row to swap position with the second row."
-msgstr ""
+msgstr "第一行，将和第二行互换位置。"
 
 #. rDLdF
 #: sc/uiconfig/scalc/ui/swaprowsentry.ui:65
@@ -34311,7 +34469,7 @@ msgstr "第二行"
 #: sc/uiconfig/scalc/ui/swaprowsentry.ui:68
 msgctxt "swaprowsentry|extended_tip|ed_row2"
 msgid "The second row to swap position with the first row."
-msgstr ""
+msgstr "第二行，将和第一行互换位置。"
 
 #. E7ATE
 #: sc/uiconfig/scalc/ui/swaprowsentry.ui:79
