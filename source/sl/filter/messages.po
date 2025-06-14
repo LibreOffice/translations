@@ -1,16 +1,16 @@
 #. extracted from filter/inc
 msgid ""
 msgstr ""
-"Project-Id-Version: LibreOffice 25.2\n"
+"Project-Id-Version: LibreOffice 25.8\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2024-12-01 13:44+0100\n"
-"PO-Revision-Date: 2024-12-01 17:43+0200\n"
+"POT-Creation-Date: 2025-04-28 18:01+0200\n"
+"PO-Revision-Date: 2025-04-18 15:28+0200\n"
 "Last-Translator: Martin Srebotnjak <miles@filmsi.net>\n"
 "Language-Team: sl.libreoffice.org\n"
-"Language: sl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: sl\n"
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n%100==4 ? 2 : 3);\n"
 "X-Generator: Virtaal 0.7.1\n"
 "X-Accelerator-Marker: ~\n"
@@ -518,231 +518,261 @@ msgstr "Hibridni PDF (vde_laj datoteko ODF)"
 
 #: filter/uiconfig/ui/pdfgeneralpage.ui:550
 msgctxt "pdfgeneralpage|embed|tooltip_text"
-msgid "Creates a PDF that is easily editable in %PRODUCTNAME"
-msgstr "Omogoči enostavno urejanje tega dokumenta PDF v %PRODUCTNAME"
+msgid "Creates a PDF that embeds the original ODF file as an attachment."
+msgstr "Ustvari PDF, ki ima vdelano izvorno datoteko ODF kot priponko."
 
 #: filter/uiconfig/ui/pdfgeneralpage.ui:556
 msgctxt "pdfgeneralpage|extended_tip|embed"
-msgid "This setting enables you to export the document as a .pdf file containing two file formats: PDF and ODF."
-msgstr "Ta nastavitev omogoča izvoz dokumenta kot datoteke .pdf, ki vsebuje dve vrsti datotek: PDF in ODF."
+msgid "This setting enables you to export the document as a .pdf file containing two file formats: PDF and ODF as an attachment. "
+msgstr "Ta nastavitev omogoča izvoz dokumenta kot datoteke .pdf, ki vsebuje dve vrsti datotek: PDF in ODF kot priponko."
 
-#: filter/uiconfig/ui/pdfgeneralpage.ui:567
-msgctxt "pdfgeneralpage|tagged"
-msgid "_Tagged PDF (add document structure)"
-msgstr "_Označeni PDF (dodaj strukturo dokumenta)"
+#: filter/uiconfig/ui/pdfgeneralpage.ui:583
+msgctxt "pdfgeneralpage|pdf_version|tooltip_text"
+msgid "Select the PDF version. PDF/A version variants creates an ISO 19005 compliant PDF file, ideal for long-term document preservation."
+msgstr "Izberite različico dokumenta PDF. Ustvari datoteko PDF, skladno s standardom ISO 19005-2, ki je idealna za dolgotrajno hrambo in arhiviranje dokumentov."
 
-#: filter/uiconfig/ui/pdfgeneralpage.ui:571
-msgctxt "pdfgeneralpage|tagged|tooltip_text"
-msgid "Includes a document's content structure information in a PDF"
-msgstr "Vključuje strukturo vsebine dokumenta v PDF"
-
-#: filter/uiconfig/ui/pdfgeneralpage.ui:577
-msgctxt "pdfgeneralpage|extended_tip|tagged"
-msgid "Select to write PDF tags. This can increase file size by huge amounts."
-msgstr "Izberite za zapis značk PDF. To lahko krepko poveča velikost datoteke."
+#: filter/uiconfig/ui/pdfgeneralpage.ui:587
+msgctxt "pdfgeneralpage|pdf_version"
+msgid "PDF 1.7"
+msgstr "ODF 1.7"
 
 #: filter/uiconfig/ui/pdfgeneralpage.ui:588
-msgctxt "pdfgeneralpage|forms"
-msgid "Create PDF for_m"
-msgstr "_Ustvari obrazec PDF"
+msgctxt "pdfgeneralpage|pdf_version"
+msgid "PDF 2.0"
+msgstr "PDF 2.0"
+
+#: filter/uiconfig/ui/pdfgeneralpage.ui:589
+msgctxt "pdfgeneralpage|pdf_version"
+msgid "PDF/A-1b (PDF 1.4 base)"
+msgstr "PDF/A-1b (na osnovi PDF 1.4)"
+
+#: filter/uiconfig/ui/pdfgeneralpage.ui:590
+msgctxt "pdfgeneralpage|pdf_version"
+msgid "PDF/A-2b (PDF 1.7 base)"
+msgstr "PDF/A-2b (na osnovi PDF 1.7)"
+
+#: filter/uiconfig/ui/pdfgeneralpage.ui:591
+msgctxt "pdfgeneralpage|pdf_version"
+msgid "PDF/A-3b (PDF 1.7 base)"
+msgstr "PDF/A-3b (na osnovi PDF 1.7)"
 
 #: filter/uiconfig/ui/pdfgeneralpage.ui:592
-msgctxt "pdfgeneralpage|forms|tooltip_text"
-msgid "Creates a PDF with fields that can be filled out"
-msgstr "Ustvari PDF s polji, ki jih je mogoče izpolniti"
+msgctxt "pdfgeneralpage|pdf_version"
+msgid "PDF/A-4 (PDF 2.0 base)"
+msgstr "PDF/A-4 (na osnovi PDF 2.0)"
 
-#: filter/uiconfig/ui/pdfgeneralpage.ui:598
-msgctxt "pdfgeneralpage|extended_tip|forms"
-msgid "Choose to create a PDF form. This can be filled out and printed by the user of the PDF document."
-msgstr "Izberite, če želite ustvariti obrazec PDF. Tovrstni dokument PDF lahko uporabnik izpolni in natisne."
+#: filter/uiconfig/ui/pdfgeneralpage.ui:599
+msgctxt "pdfgeneralpage|extended_tip|pdf_version"
+msgid "Versions can be either the \"classic\" PDF (i.e. PDF 1.7, PDF 2.0) or PDF/A conformant. PDF/A is defined as an electronic document file format for long term preservation  and archiving. It allows only a subset of PDF features that are compatible with that use case. For example: All fonts that were used in the source document will be embedded into the generated PDF file. PDF tags will be written."
+msgstr "Različice so lahko \"klasični\" PDF (t.j. PDF 1.7, PDF 2.0) ali zapis, skladen s PDF/A. Zapis PDF/A je določen kot elektronski zapis datotek dokumentov za dolgoročno hrambo in arhiviranje. Za to rabo so združljiv le podnabor vseh funkcionalnosti zapisa PDF. Primer: Vse pisave, uporabljene v izvornem dokumentu, bodo vdelane v ustvarjeno datoteko PDF. Zapisane bodo tudi značke PDF."
 
-#: filter/uiconfig/ui/pdfgeneralpage.ui:618
-msgctxt "pdfgeneralpage|allowdups"
-msgid "Allow duplicate field _names"
-msgstr "Dovoli podvojena i_mena polj"
+#: filter/uiconfig/ui/pdfgeneralpage.ui:620
+msgctxt "pdfgeneralpage|pdf_version"
+msgid "PDF_ Version:"
+msgstr "_Različica PDF:"
 
-#: filter/uiconfig/ui/pdfgeneralpage.ui:627
-msgctxt "pdfgeneralpage|extended_tip|allowdups"
-msgid "Allows you to use the same field name for multiple fields in the generated PDF file. If disabled, field names will be exported using generated unique names."
-msgstr "Omogoča uporabo istega imena za več polj v ustvarjeni datoteki PDF. Če ni potrjeno, bodo polja izvožena z uporabo ustvarjenih enkratnih imen."
-
-#: filter/uiconfig/ui/pdfgeneralpage.ui:643
-msgctxt "pdfgeneralpage|format"
-msgid "FDF"
-msgstr "FDF"
-
-#: filter/uiconfig/ui/pdfgeneralpage.ui:644
-msgctxt "pdfgeneralpage|format"
-msgid "PDF"
-msgstr "PDF"
-
-#: filter/uiconfig/ui/pdfgeneralpage.ui:645
-msgctxt "pdfgeneralpage|format"
-msgid "HTML"
-msgstr "HTML"
-
-#: filter/uiconfig/ui/pdfgeneralpage.ui:646
-msgctxt "pdfgeneralpage|format"
-msgid "XML"
-msgstr "XML"
-
-#: filter/uiconfig/ui/pdfgeneralpage.ui:650
-msgctxt "pdfgeneralpage|extended_tip|format"
-msgid "Select the format of submitting forms from within the PDF file."
-msgstr "Izberite obliko oddaje obrazcev v datoteki PDF."
-
-#: filter/uiconfig/ui/pdfgeneralpage.ui:672
-msgctxt "pdfgeneralpage|label7"
-msgid "Submit _format:"
-msgstr "Pošlji _obliko:"
-
-#: filter/uiconfig/ui/pdfgeneralpage.ui:703
-msgctxt "pdfgeneralpage|pdfa"
-msgid "Archival (P_DF/A, ISO 19005)"
-msgstr "Arhivski P_DF/A (ISO 19005)"
-
-#: filter/uiconfig/ui/pdfgeneralpage.ui:707
-msgctxt "pdfgeneralpage|pdfa|tooltip_text"
-msgid "Creates an ISO 19005-2 compliant PDF file, ideal for long-term document preservation"
-msgstr "Ustvari datoteko PDF, skladno s standardom ISO 19005-2, ki je idealna za dolgotrajno hrambo in arhiviranje dokumentov."
-
-#: filter/uiconfig/ui/pdfgeneralpage.ui:713
-msgctxt "pdfgeneralpage|extended_tip|pdfa"
-msgid "Converts to the PDF/A-2b or PDF/A-1b format. This is defined as an electronic document file format for long term preservation. All fonts that were used in the source document will be embedded into the generated PDF file. PDF tags will be written."
-msgstr "Pretvori v zapis PDF/A-2b ali PDF/A-1b. Ta je določen kot elektronski zapis datotek dokumentov za dolgoročno hrambo. Vse pisave, uporabljene v izvornem dokumentu, bodo vdelane v ustvarjeno datoteko PDF. Zapisane bodo tudi značke PDF."
-
-#: filter/uiconfig/ui/pdfgeneralpage.ui:762
-msgctxt "pdfgeneralpage|pdfaversion"
-msgid "PDF_/A version:"
-msgstr "Različica PDF/A:"
-
-#: filter/uiconfig/ui/pdfgeneralpage.ui:794
+#: filter/uiconfig/ui/pdfgeneralpage.ui:652
 msgctxt "pdfgeneralpage|pdfua"
 msgid "Universal Accessibilit_y (PDF/UA)"
 msgstr "Univer_zalna dostopnost (PDF/UA)"
 
-#: filter/uiconfig/ui/pdfgeneralpage.ui:798
+#: filter/uiconfig/ui/pdfgeneralpage.ui:656
 msgctxt "pdfgeneralpage|pdfua|tooltip_text"
 msgid "Creates a universal accessibility-compliant PDF file that follows the requirements of PDF/UA (ISO 14289) specifications."
 msgstr "Ustvari univerzalno dostopno datoteko PDF, ki upošteva zahteve standarda PDF/UA (ISO 142899)."
 
-#: filter/uiconfig/ui/pdfgeneralpage.ui:804
+#: filter/uiconfig/ui/pdfgeneralpage.ui:662
 msgctxt "pdfgeneralpage|extended_tip|pdfua"
 msgid "Creates a universal accessibility-complying PDF file that follows the requirements of PDF/UA (ISO 14289) specifications."
 msgstr "Ustvari univerzalno dostopno datoteko PDF, ki je skladna z zahtevami standarda PDF/UA (ISO 142899)."
 
-#: filter/uiconfig/ui/pdfgeneralpage.ui:819
-msgctxt "pdfgeneralpage|label4"
+#: filter/uiconfig/ui/pdfgeneralpage.ui:677
+msgctxt "pdfgeneralpage|general_label"
 msgid "General"
 msgstr "Splošno"
 
-#: filter/uiconfig/ui/pdfgeneralpage.ui:848
+#: filter/uiconfig/ui/pdfgeneralpage.ui:717
+msgctxt "pdfgeneralpage|allowdups"
+msgid "Allow duplicate field _names"
+msgstr "Dovoli podvojena i_mena polj"
+
+#: filter/uiconfig/ui/pdfgeneralpage.ui:726
+msgctxt "pdfgeneralpage|extended_tip|allowdups"
+msgid "Allows you to use the same field name for multiple fields in the generated PDF file. If disabled, field names will be exported using generated unique names."
+msgstr "Omogoča uporabo istega imena za več polj v ustvarjeni datoteki PDF. Če ni potrjeno, bodo polja izvožena z uporabo ustvarjenih enkratnih imen."
+
+#: filter/uiconfig/ui/pdfgeneralpage.ui:742
+msgctxt "pdfgeneralpage|format"
+msgid "FDF"
+msgstr "FDF"
+
+#: filter/uiconfig/ui/pdfgeneralpage.ui:743
+msgctxt "pdfgeneralpage|format"
+msgid "PDF"
+msgstr "PDF"
+
+#: filter/uiconfig/ui/pdfgeneralpage.ui:744
+msgctxt "pdfgeneralpage|format"
+msgid "HTML"
+msgstr "HTML"
+
+#: filter/uiconfig/ui/pdfgeneralpage.ui:745
+msgctxt "pdfgeneralpage|format"
+msgid "XML"
+msgstr "XML"
+
+#: filter/uiconfig/ui/pdfgeneralpage.ui:749
+msgctxt "pdfgeneralpage|extended_tip|format"
+msgid "Select the format of submitting forms from within the PDF file."
+msgstr "Izberite obliko oddaje obrazcev v datoteki PDF."
+
+#: filter/uiconfig/ui/pdfgeneralpage.ui:771
+msgctxt "pdfgeneralpage|label7"
+msgid "Submit _format:"
+msgstr "Pošlji _obliko:"
+
+#: filter/uiconfig/ui/pdfgeneralpage.ui:796
+msgctxt "pdfgeneralpage|forms"
+msgid "Create PDF for_m"
+msgstr "_Ustvari obrazec PDF"
+
+#: filter/uiconfig/ui/pdfgeneralpage.ui:800
+msgctxt "pdfgeneralpage|forms|tooltip_text"
+msgid "Creates a PDF with fields that can be filled out"
+msgstr "Ustvari PDF s polji, ki jih je mogoče izpolniti"
+
+#: filter/uiconfig/ui/pdfgeneralpage.ui:806
+msgctxt "pdfgeneralpage|extended_tip|forms"
+msgid "Choose to create a PDF form. This can be filled out and printed by the user of the PDF document."
+msgstr "Izberite, če želite ustvariti obrazec PDF. Tovrstni dokument PDF lahko uporabnik izpolni in natisne."
+
+#: filter/uiconfig/ui/pdfgeneralpage.ui:821
+msgctxt "pdfgeneralpage|forms_label"
+msgid "Forms"
+msgstr "Obrazci"
+
+#: filter/uiconfig/ui/pdfgeneralpage.ui:850
 msgctxt "pdfgeneralpage|bookmarks"
 msgid "Export outl_ines"
 msgstr "Izvozi or_is"
 
-#: filter/uiconfig/ui/pdfgeneralpage.ui:855
+#: filter/uiconfig/ui/pdfgeneralpage.ui:854
 msgctxt "pdfgeneralpage|bookmarks|tooltip_text"
 msgid "Export headings along with hyperlinked entries in Table of Contents as PDF bookmarks."
 msgstr "Izvozi naslove skupaj z vnosi kazala vsebine s povezavami kot zaznamke PDF."
 
-#: filter/uiconfig/ui/pdfgeneralpage.ui:858
+#: filter/uiconfig/ui/pdfgeneralpage.ui:860
 msgctxt "pdfgeneralpage|extended_tip|bookmarks"
 msgid "PDF bookmarks are created for all paragraphs with outline level 1 or greater and for all “Table of Contents” entries with hyperlinks."
 msgstr "Zaznamki PDF se ustvarijo za vse odstavke z ravnjo orisa 1 ali več ter za vse vnose kazala vsebine s hiperpovezavami."
 
-#: filter/uiconfig/ui/pdfgeneralpage.ui:869
+#: filter/uiconfig/ui/pdfgeneralpage.ui:871
 msgctxt "pdfgeneralpage|exportplaceholders"
 msgid "Expo_rt placeholders"
 msgstr "Izvozi ogra_de"
 
-#: filter/uiconfig/ui/pdfgeneralpage.ui:878
+#: filter/uiconfig/ui/pdfgeneralpage.ui:880
 msgctxt "pdfgeneralpage|extended_tip|exportplaceholders"
 msgid "Export the placeholders fields visual markings only. The exported placeholder is ineffective."
 msgstr "Izvozi le vidne oznake polj za ograde. Izvožene ograde so brez funkcije."
 
-#: filter/uiconfig/ui/pdfgeneralpage.ui:889
+#: filter/uiconfig/ui/pdfgeneralpage.ui:891
 msgctxt "pdfgeneralpage|comments"
 msgid "Comm_ents as PDF annotations"
 msgstr "Kom_entarji kot pripombe PDF"
 
-#: filter/uiconfig/ui/pdfgeneralpage.ui:898
+#: filter/uiconfig/ui/pdfgeneralpage.ui:900
 msgctxt "pdfgeneralpage|extended_tip|comments"
 msgid "Select to export comments of Writer and Calc documents as PDF annotations."
 msgstr "Izberite za izvoz komentarjev dokumentov Writer ali Calc kot pripomb PDF."
 
-#: filter/uiconfig/ui/pdfgeneralpage.ui:909
+#: filter/uiconfig/ui/pdfgeneralpage.ui:911
 msgctxt "pdfgeneralpage|emptypages"
 msgid "Exp_ort automatically inserted blank pages"
 msgstr "Izvozi samodejno _vstavljene prazne strani"
 
-#: filter/uiconfig/ui/pdfgeneralpage.ui:918
+#: filter/uiconfig/ui/pdfgeneralpage.ui:920
 msgctxt "pdfgeneralpage|extended_tip|emptypages"
 msgid "If switched on, automatically inserted blank pages are exported to the PDF file. This is best if you are printing the pdf file double-sided. Example: In a book a chapter paragraph style is set to always start with an odd numbered page. If the previous chapter ends on an odd page, then an even numbered blank page is normally automatically inserted. This option controls whether to export that even numbered page or not."
 msgstr "Če izberete to možnost, bodo samodejno vstavljene prazne strani tudi vključene v datoteko PDF. To je smiselno, če tiskate datoteko obojestransko. Primer: V knjigi je slog odstavka poglavja vedno nastavljen, da se začne na lihi strani. Če se prejšnje poglavje konča na lihi strani, vstavi oštevilčeno sodo prazno stran. S to izbiro določite, ali naj bo ta soda stran del izvoženega dokumenta."
 
-#: filter/uiconfig/ui/pdfgeneralpage.ui:929
+#: filter/uiconfig/ui/pdfgeneralpage.ui:931
 msgctxt "pdfgeneralpage|usereferencexobject"
 msgid "Use reference XObjects"
 msgstr "Uporabi sklicne XObjects"
 
-#: filter/uiconfig/ui/pdfgeneralpage.ui:938
+#: filter/uiconfig/ui/pdfgeneralpage.ui:940
 msgctxt "pdfgeneralpage|extended_tip|usereferencexobject"
 msgid "When the option is enabled, then the reference XObject markup is used:  viewers have to support this markup to show vector images. Otherwise a fallback bitmap is shown in the viewer."
 msgstr "Če je možnost potrjena, bo uporabljen označevalni zapis sklica XObject: bralniki morajo podpirati to označevanje, da lahko prikažejo vektorske slike. Sicer se v bralniku prikaže rezervna bitna slika."
 
-#: filter/uiconfig/ui/pdfgeneralpage.ui:949
+#: filter/uiconfig/ui/pdfgeneralpage.ui:951
 msgctxt "pdfgeneralpage|hiddenpages"
 msgid "Export _hidden pages"
 msgstr "Izvozi s_krite strani"
 
-#: filter/uiconfig/ui/pdfgeneralpage.ui:958
+#: filter/uiconfig/ui/pdfgeneralpage.ui:960
 msgctxt "pdfgeneralpage|extended_tip|hiddenpages"
 msgid "Exports document hidden slides."
 msgstr "Izvozi skrite prosojnice dokumenta."
 
-#: filter/uiconfig/ui/pdfgeneralpage.ui:969
+#: filter/uiconfig/ui/pdfgeneralpage.ui:971
 msgctxt "pdfgeneralpage|notes"
 msgid "Export _notes pages"
 msgstr "Izvozi stra_ni z opombami"
 
-#: filter/uiconfig/ui/pdfgeneralpage.ui:978
+#: filter/uiconfig/ui/pdfgeneralpage.ui:980
 msgctxt "pdfgeneralpage|extended_tip|notes"
 msgid "Export also the Notes pages view at the end of the exported PDF presentation document."
 msgstr "Izvozi tudi strani opomb na koncu izvoženega dokumenta predstavitve PDF."
 
-#: filter/uiconfig/ui/pdfgeneralpage.ui:989
+#: filter/uiconfig/ui/pdfgeneralpage.ui:991
 msgctxt "pdfgeneralpage|onlynotes"
 msgid "Export onl_y notes pages"
 msgstr "Izvozi _le strani z opombami"
 
-#: filter/uiconfig/ui/pdfgeneralpage.ui:999
+#: filter/uiconfig/ui/pdfgeneralpage.ui:1001
 msgctxt "pdfgeneralpage|extended_tip|onlynotes"
 msgid "Exports only the Notes page views."
 msgstr "Izvozi le strani z opombami."
 
-#: filter/uiconfig/ui/pdfgeneralpage.ui:1010
+#: filter/uiconfig/ui/pdfgeneralpage.ui:1012
 msgctxt "pdfgeneralpage|singlepagesheets"
 msgid "Whole sheet export"
 msgstr "Izvoz delovnih listov v celoti"
 
-#: filter/uiconfig/ui/pdfgeneralpage.ui:1019
+#: filter/uiconfig/ui/pdfgeneralpage.ui:1021
 msgctxt "pdfgeneralpage|extended_tip|singlepagessheets"
 msgid "Ignores each sheet’s paper size, print ranges and shown/hidden status and puts every sheet (even hidden sheets) on exactly one page, which is exactly as small or large as needed to fit the whole contents of the sheet."
 msgstr "Prezre velikost papirja, obseg tiskanja in status skritosti posameznega delovnega lista. Ta možnost postavi vsak delovni list (vključno s skritimi delovnimi listi) na natanko eno stran. Velikost vsebine delovnega lista se prilagodi tako, da zapolni eno stran."
 
-#: filter/uiconfig/ui/pdfgeneralpage.ui:1030
+#: filter/uiconfig/ui/pdfgeneralpage.ui:1032
 msgctxt "pdfgeneralpage|commentsinmargin"
 msgid "_Comments in margin"
 msgstr "_Komentarji na robu"
 
-#: filter/uiconfig/ui/pdfgeneralpage.ui:1039
+#: filter/uiconfig/ui/pdfgeneralpage.ui:1041
 msgctxt "pdfgeneralpage|extended_tip|commentsinmargin"
 msgid "Select to export comments of Writer documents in the page margin."
 msgstr "Potrdite polje, če želite izvoziti komentarje na robu strani v dokumentih Writer."
 
-#: filter/uiconfig/ui/pdfgeneralpage.ui:1054
-msgctxt "pdfgeneralpage|label9"
+#: filter/uiconfig/ui/pdfgeneralpage.ui:1052
+msgctxt "pdfgeneralpage|tagged"
+msgid "_Tagged PDF (add document structure)"
+msgstr "_Označeni PDF (dodaj strukturo dokumenta)"
+
+#: filter/uiconfig/ui/pdfgeneralpage.ui:1056
+msgctxt "pdfgeneralpage|tagged|tooltip_text"
+msgid "Includes a document's content structure information in a PDF"
+msgstr "Vključuje strukturo vsebine dokumenta v PDF"
+
+#: filter/uiconfig/ui/pdfgeneralpage.ui:1062
+msgctxt "pdfgeneralpage|extended_tip|tagged"
+msgid "Select to write PDF tags. This can increase file size by huge amounts."
+msgstr "Izberite za zapis značk PDF. To lahko krepko poveča velikost datoteke."
+
+#: filter/uiconfig/ui/pdfgeneralpage.ui:1077
+msgctxt "pdfgeneralpage|structure_label"
 msgid "Structure"
 msgstr "Struktura"
 
@@ -1546,92 +1576,92 @@ msgctxt "xmlfiltersettings|XMLFilterSettingsDialog"
 msgid "XML Filter Settings"
 msgstr "Nastavitve filtra XML"
 
-#: filter/uiconfig/ui/xmlfiltersettings.ui:41
+#: filter/uiconfig/ui/xmlfiltersettings.ui:42
 msgctxt "xmlfiltersettings|extended_tip|help"
 msgid "Displays the help page for this dialog."
 msgstr "Prikaže stran pomoči za to pogovorno okno."
 
-#: filter/uiconfig/ui/xmlfiltersettings.ui:63
+#: filter/uiconfig/ui/xmlfiltersettings.ui:64
 msgctxt "xmlfiltersettings|extended_tip|close"
 msgid "Closes the dialog."
 msgstr "Zapre pogovorno okno."
 
-#: filter/uiconfig/ui/xmlfiltersettings.ui:110
+#: filter/uiconfig/ui/xmlfiltersettings.ui:111
 msgctxt "xmlfiltersettings|header_name"
 msgid "Name"
 msgstr "Ime"
 
-#: filter/uiconfig/ui/xmlfiltersettings.ui:123
+#: filter/uiconfig/ui/xmlfiltersettings.ui:124
 msgctxt "xmlfiltersettings|header_type"
 msgid "Type"
 msgstr "Vrsta"
 
-#: filter/uiconfig/ui/xmlfiltersettings.ui:134
+#: filter/uiconfig/ui/xmlfiltersettings.ui:135
 msgctxt "xmlfiltersettings|extended_tip|filterlist"
 msgid "Select one or more filters, then click one of the buttons."
 msgstr "Izberite enega ali več filtrov, nato pa kliknite enega izmed gumbov."
 
-#: filter/uiconfig/ui/xmlfiltersettings.ui:156
+#: filter/uiconfig/ui/xmlfiltersettings.ui:157
 msgctxt "xmlfiltersettings|new"
 msgid "_New..."
 msgstr "_Nov ..."
 
-#: filter/uiconfig/ui/xmlfiltersettings.ui:163
+#: filter/uiconfig/ui/xmlfiltersettings.ui:164
 msgctxt "xmlfiltersettings|extended_tip|new"
 msgid "Opens a dialog for creating a new filter."
 msgstr "Odpre pogovorno okno, v katerem ustvarite nov filter."
 
-#: filter/uiconfig/ui/xmlfiltersettings.ui:175
+#: filter/uiconfig/ui/xmlfiltersettings.ui:176
 msgctxt "xmlfiltersettings|edit"
 msgid "_Edit..."
 msgstr "_Uredi ..."
 
-#: filter/uiconfig/ui/xmlfiltersettings.ui:182
+#: filter/uiconfig/ui/xmlfiltersettings.ui:183
 msgctxt "xmlfiltersettings|extended_tip|edit"
 msgid "Opens a dialog for editing the selected filter."
 msgstr "Odpre pogovorno okno za urejanje izbranega filtra."
 
-#: filter/uiconfig/ui/xmlfiltersettings.ui:194
+#: filter/uiconfig/ui/xmlfiltersettings.ui:195
 msgctxt "xmlfiltersettings|test"
 msgid "_Test XSLTs..."
 msgstr "_Preizkusi XSLT-je ..."
 
-#: filter/uiconfig/ui/xmlfiltersettings.ui:201
+#: filter/uiconfig/ui/xmlfiltersettings.ui:202
 msgctxt "xmlfiltersettings|extended_tip|test"
 msgid "Opens a dialog for testing the selected filter."
 msgstr "Odpre pogovorno okno za preizkus izbranega filtra."
 
-#: filter/uiconfig/ui/xmlfiltersettings.ui:213
+#: filter/uiconfig/ui/xmlfiltersettings.ui:214
 msgctxt "xmlfiltersettings|delete"
 msgid "_Delete..."
 msgstr "_Izbriši ..."
 
-#: filter/uiconfig/ui/xmlfiltersettings.ui:220
+#: filter/uiconfig/ui/xmlfiltersettings.ui:221
 msgctxt "xmlfiltersettings|extended_tip|delete"
 msgid "Deletes the selected file after you confirm the dialog that follows."
 msgstr "Ko potrdite pogovorno okno, ki sledi, bo izbrani filter izbrisan."
 
-#: filter/uiconfig/ui/xmlfiltersettings.ui:232
+#: filter/uiconfig/ui/xmlfiltersettings.ui:233
 msgctxt "xmlfiltersettings|save"
 msgid "_Save as Package..."
 msgstr "_Shrani kot paket ..."
 
-#: filter/uiconfig/ui/xmlfiltersettings.ui:239
+#: filter/uiconfig/ui/xmlfiltersettings.ui:240
 msgctxt "xmlfiltersettings|extended_tip|save"
 msgid "Displays a Save as dialog to save the selected file as an XSLT filter package (*.jar)."
 msgstr "Če želite izbrani filter shraniti kot filtrski paket XSLT (*.jar), se prikaže pogovorno okno Shrani kot."
 
-#: filter/uiconfig/ui/xmlfiltersettings.ui:251
+#: filter/uiconfig/ui/xmlfiltersettings.ui:252
 msgctxt "xmlfiltersettings|open"
 msgid "_Open Package..."
 msgstr "_Odpri paket ..."
 
-#: filter/uiconfig/ui/xmlfiltersettings.ui:258
+#: filter/uiconfig/ui/xmlfiltersettings.ui:259
 msgctxt "xmlfiltersettings|extended_tip|open"
 msgid "Displays an Open dialog to open a filter from an XSLT filter package (*.jar)."
 msgstr "Če želite iz filtrskega paketa XSLT (*.jar) odpreti filter, se prikaže pogovorno okno Odpri."
 
-#: filter/uiconfig/ui/xmlfiltersettings.ui:290
+#: filter/uiconfig/ui/xmlfiltersettings.ui:291
 msgctxt "xmlfiltersettings|extended_tip|XMLFilterSettingsDialog"
 msgid "Opens the XML Filter Settings dialog, where you can create, edit, delete, and test filters to import and to export XML files."
 msgstr "Odpre pogovorno okno Nastavitve filtra XML, v katerem lahko ustvarite, uredite, izbrišete in preizkusite filtre, namenjene uvažanju in izvažanju datotek XML."
@@ -1641,52 +1671,52 @@ msgctxt "xmlfiltertabpagegeneral|label2"
 msgid "_Filter name:"
 msgstr "Ime _filtra:"
 
-#: filter/uiconfig/ui/xmlfiltertabpagegeneral.ui:37
-msgctxt "xmlfiltertabpagegeneral|label3"
-msgid "_Application:"
-msgstr "_Program:"
-
-#: filter/uiconfig/ui/xmlfiltertabpagegeneral.ui:51
-msgctxt "xmlfiltertabpagegeneral|label4"
-msgid "_Name of file type:"
-msgstr "I_me vrste datoteke:"
-
-#: filter/uiconfig/ui/xmlfiltertabpagegeneral.ui:65
-msgctxt "xmlfiltertabpagegeneral|label5"
-msgid "File _extension:"
-msgstr "Datote_čna pripona:"
-
-#: filter/uiconfig/ui/xmlfiltertabpagegeneral.ui:79
-msgctxt "xmlfiltertabpagegeneral|label6"
-msgid "Comment_s:"
-msgstr "Komentar_ji:"
-
-#: filter/uiconfig/ui/xmlfiltertabpagegeneral.ui:100
+#: filter/uiconfig/ui/xmlfiltertabpagegeneral.ui:43
 msgctxt "xmlfiltertabpagegeneral|extended_tip|filtername"
 msgid "Enter the name that you want to display in the list box of the XML Filter Settings dialog."
 msgstr "Vnesite ime, ki ga želite prikazati v pogovornem oknu Nastavitve filtra XML."
 
-#: filter/uiconfig/ui/xmlfiltertabpagegeneral.ui:119
-msgctxt "xmlfiltertabpagegeneral|extended_tip|extension"
-msgid "Enter the file extension to use when you open a file without specifying a filter. The file extension is used to determine which filter to use."
-msgstr "Vnesite končnico datoteke, ki naj velja, ko odprete datoteko brez določitve filtra. Končnica datoteke določa, kateri filter naj bo uporabljen."
+#: filter/uiconfig/ui/xmlfiltertabpagegeneral.ui:56
+msgctxt "xmlfiltertabpagegeneral|label3"
+msgid "_Application:"
+msgstr "_Program:"
 
-#: filter/uiconfig/ui/xmlfiltertabpagegeneral.ui:138
-msgctxt "xmlfiltertabpagegeneral|extended_tip|interfacename"
-msgid "Enter the name that you want to display in the File type box in file dialogs."
-msgstr "Vnesite ime, ki ga želite prikazati v polju Vrsta datoteke v pogovornih oknih za datoteke."
-
-#: filter/uiconfig/ui/xmlfiltertabpagegeneral.ui:162
+#: filter/uiconfig/ui/xmlfiltertabpagegeneral.ui:81
 msgctxt "xmlfiltertabpagegeneral|extended_tip|application"
 msgid "Select the application that you want to use with the filter."
 msgstr "Izberite program, ki ga želite uporabiti s filtrom."
 
-#: filter/uiconfig/ui/xmlfiltertabpagegeneral.ui:186
+#: filter/uiconfig/ui/xmlfiltertabpagegeneral.ui:94
+msgctxt "xmlfiltertabpagegeneral|label4"
+msgid "_Name of file type:"
+msgstr "I_me vrste datoteke:"
+
+#: filter/uiconfig/ui/xmlfiltertabpagegeneral.ui:114
+msgctxt "xmlfiltertabpagegeneral|extended_tip|interfacename"
+msgid "Enter the name that you want to display in the File type box in file dialogs."
+msgstr "Vnesite ime, ki ga želite prikazati v polju Vrsta datoteke v pogovornih oknih za datoteke."
+
+#: filter/uiconfig/ui/xmlfiltertabpagegeneral.ui:127
+msgctxt "xmlfiltertabpagegeneral|label5"
+msgid "File _extension:"
+msgstr "Datote_čna pripona:"
+
+#: filter/uiconfig/ui/xmlfiltertabpagegeneral.ui:147
+msgctxt "xmlfiltertabpagegeneral|extended_tip|extension"
+msgid "Enter the file extension to use when you open a file without specifying a filter. The file extension is used to determine which filter to use."
+msgstr "Vnesite končnico datoteke, ki naj velja, ko odprete datoteko brez določitve filtra. Končnica datoteke določa, kateri filter naj bo uporabljen."
+
+#: filter/uiconfig/ui/xmlfiltertabpagegeneral.ui:160
+msgctxt "xmlfiltertabpagegeneral|label6"
+msgid "Comment_s:"
+msgstr "Komentar_ji:"
+
+#: filter/uiconfig/ui/xmlfiltertabpagegeneral.ui:187
 msgctxt "xmlfiltertabpagegeneral|extended_tip|description"
 msgid "Enter a comment (optional)."
 msgstr "Vnesite komentar (neobvezno)."
 
-#: filter/uiconfig/ui/xmlfiltertabpagegeneral.ui:206
+#: filter/uiconfig/ui/xmlfiltertabpagegeneral.ui:207
 msgctxt "xmlfiltertabpagegeneral|extended_tip|XmlFilterTabPageGeneral"
 msgid "Enter or edit general information for an XML filter."
 msgstr "Vnesite ali uredite splošne podatke o filtru XML."
@@ -1706,60 +1736,60 @@ msgctxt "xmlfiltertabpagetransformation|label4"
 msgid "_XSLT for export:"
 msgstr "_XSLT za izvoz:"
 
-#: filter/uiconfig/ui/xmlfiltertabpagetransformation.ui:69
-msgctxt "xmlfiltertabpagetransformation|browseexport"
-msgid "Brows_e..."
-msgstr "Pre_brskaj ..."
-
-#: filter/uiconfig/ui/xmlfiltertabpagetransformation.ui:76
-msgctxt "xmlfiltertabpagetransformation|extended_tip|browseexport"
-msgid "Opens a file selection dialog."
-msgstr "Odpre pogovorno okno za izbor datoteke."
-
-#: filter/uiconfig/ui/xmlfiltertabpagetransformation.ui:89
-msgctxt "xmlfiltertabpagetransformation|label5"
-msgid "XSLT _for import:"
-msgstr "XSLT _za uvoz:"
-
-#: filter/uiconfig/ui/xmlfiltertabpagetransformation.ui:101
-msgctxt "xmlfiltertabpagetransformation|browseimport"
-msgid "B_rowse..."
-msgstr "P_rebrskaj ..."
-
-#: filter/uiconfig/ui/xmlfiltertabpagetransformation.ui:108
-msgctxt "xmlfiltertabpagetransformation|extended_tip|browseimport"
-msgid "Opens a file selection dialog."
-msgstr "Odpre pogovorno okno za izbor datoteke."
-
-#: filter/uiconfig/ui/xmlfiltertabpagetransformation.ui:121
-msgctxt "xmlfiltertabpagetransformation|label6"
-msgid "Template for _import:"
-msgstr "Predloga za _uvoz:"
-
-#: filter/uiconfig/ui/xmlfiltertabpagetransformation.ui:133
-msgctxt "xmlfiltertabpagetransformation|browsetemp"
-msgid "Browse..."
-msgstr "Prebrskaj ..."
-
-#: filter/uiconfig/ui/xmlfiltertabpagetransformation.ui:139
-msgctxt "xmlfiltertabpagetransformation|extended_tip|browsetemp"
-msgid "Opens a file selection dialog."
-msgstr "Odpre pogovorno okno za izbor datoteke."
-
-#: filter/uiconfig/ui/xmlfiltertabpagetransformation.ui:162
+#: filter/uiconfig/ui/xmlfiltertabpagetransformation.ui:81
 msgctxt "xmlfiltertabpagetransformation|extended_tip|xsltexport"
 msgid "If this is an export filter, enter the file name of the XSLT stylesheet that you want to use for exporting."
 msgstr "Če je to filter za izvoz, vnesite ime filtra slogovne predloge XSLT, ki jo želite uporabiti za izvažanje."
 
-#: filter/uiconfig/ui/xmlfiltertabpagetransformation.ui:185
+#: filter/uiconfig/ui/xmlfiltertabpagetransformation.ui:92
+msgctxt "xmlfiltertabpagetransformation|browseexport"
+msgid "Brows_e..."
+msgstr "Pre_brskaj ..."
+
+#: filter/uiconfig/ui/xmlfiltertabpagetransformation.ui:99
+msgctxt "xmlfiltertabpagetransformation|extended_tip|browseexport"
+msgid "Opens a file selection dialog."
+msgstr "Odpre pogovorno okno za izbor datoteke."
+
+#: filter/uiconfig/ui/xmlfiltertabpagetransformation.ui:112
+msgctxt "xmlfiltertabpagetransformation|label5"
+msgid "XSLT _for import:"
+msgstr "XSLT _za uvoz:"
+
+#: filter/uiconfig/ui/xmlfiltertabpagetransformation.ui:136
 msgctxt "xmlfiltertabpagetransformation|extended_tip|xsltimport"
 msgid "If this is an import filter, enter the file name of the XSLT stylesheet that you want to use for importing."
 msgstr "Če je to filter za uvoz, vnesite ime filtra slogovne predloge XSLT, ki jo želite uporabiti za uvažanje."
 
-#: filter/uiconfig/ui/xmlfiltertabpagetransformation.ui:208
+#: filter/uiconfig/ui/xmlfiltertabpagetransformation.ui:147
+msgctxt "xmlfiltertabpagetransformation|browseimport"
+msgid "B_rowse..."
+msgstr "P_rebrskaj ..."
+
+#: filter/uiconfig/ui/xmlfiltertabpagetransformation.ui:154
+msgctxt "xmlfiltertabpagetransformation|extended_tip|browseimport"
+msgid "Opens a file selection dialog."
+msgstr "Odpre pogovorno okno za izbor datoteke."
+
+#: filter/uiconfig/ui/xmlfiltertabpagetransformation.ui:167
+msgctxt "xmlfiltertabpagetransformation|label6"
+msgid "Template for _import:"
+msgstr "Predloga za _uvoz:"
+
+#: filter/uiconfig/ui/xmlfiltertabpagetransformation.ui:191
 msgctxt "xmlfiltertabpagetransformation|extended_tip|tempimport"
 msgid "Enter the name of the template that you want to use for importing. In the template, styles are defined to display XML tags."
 msgstr "Vnesite ime predloge, ki jo želite uporabiti za uvažanje. V predlogi so določeni slogi, s katerimi se prikažejo oznake XML."
+
+#: filter/uiconfig/ui/xmlfiltertabpagetransformation.ui:202
+msgctxt "xmlfiltertabpagetransformation|browsetemp"
+msgid "Browse..."
+msgstr "Prebrskaj ..."
+
+#: filter/uiconfig/ui/xmlfiltertabpagetransformation.ui:208
+msgctxt "xmlfiltertabpagetransformation|extended_tip|browsetemp"
+msgid "Opens a file selection dialog."
+msgstr "Odpre pogovorno okno za izbor datoteke."
 
 #: filter/uiconfig/ui/xmlfiltertabpagetransformation.ui:229
 msgctxt "xmlfiltertabpagetransformation|filtercb"
