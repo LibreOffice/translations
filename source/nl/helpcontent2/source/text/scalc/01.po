@@ -3,8 +3,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2025-07-23 13:31+0200\n"
-"PO-Revision-Date: 2025-07-15 12:53+0000\n"
+"POT-Creation-Date: 2025-07-31 14:42+0200\n"
+"PO-Revision-Date: 2025-07-31 12:47+0000\n"
 "Last-Translator: kees538 <kees538@gmail.com>\n"
 "Language-Team: Dutch <https://translations.documentfoundation.org/projects/libo_help-master/textscalc01/nl/>\n"
 "Language: nl\n"
@@ -17629,7 +17629,7 @@ msgctxt ""
 "par_id1027200802301348\n"
 "help.text"
 msgid "For interoperability the ADDRESS and INDIRECT functions support an optional parameter to specify whether the R1C1 address notation instead of the usual A1 notation should be used."
-msgstr "Voor interoperabiliteit ondersteunen de functies ADRES en INDIRECT een optionele parameter om te specificeren of de adresnotatie R1C1 in plaats van de gebruikelijke notatie A1 moet worden gebruikt."
+msgstr "Voor interoperabiliteit ondersteunen de functies ADRES en INDIRECT een optionele parameter om te specificeren of de formulesyntaxis R1C1 in plaats van de gebruikelijke formulesyntaxis A1 moet worden gebruikt."
 
 #. JJpSk
 #: 04060109.xhp
@@ -17665,7 +17665,7 @@ msgctxt ""
 "par_id1027200802301556\n"
 "help.text"
 msgid "In case of R1C1 notation, ADDRESS returns address strings using the exclamation mark '!' as the sheet name separator, and INDIRECT expects the exclamation mark as sheet name separator. Both functions still use the dot '.' sheet name separator with A1 notation."
-msgstr "In de notatie R1C1 geeft ADRES adressen als tekenreeksen terug met behulp van het uitroepteken '!' als het scheidingsteken voor de bladnaam en INDIRECT verwacht het uitroepteken als scheidingsteken voor de bladnaam. Beide functies gebruiken nog steeds de punt '.' als scheidingsteken voor de bladnaam met de notatie A1."
+msgstr "In de formulesyntaxis R1C1 geeft ADRES adressen als tekenreeksen terug met behulp van het uitroepteken '!' als het scheidingsteken voor de bladnaam en INDIRECT verwacht het uitroepteken als scheidingsteken voor de bladnaam. Beide functies gebruiken nog steeds de punt '.' als scheidingsteken voor de bladnaam met de formulesyntaxis A1."
 
 #. tBvLY
 #: 04060109.xhp
@@ -17710,7 +17710,7 @@ msgctxt ""
 "par_id3154707\n"
 "help.text"
 msgid "ADDRESS(Row; Column [; Abs [; A1 [; \"Sheet\"]]])"
-msgstr "ADRES(Rij; Kolom ; ABS (optioneel); A1 (optioneel); Blad (optioneel))"
+msgstr "ADRES(Rij_getal; Kolom_getal; ABS_getal (optioneel); A1 (optioneel); Blad_tekst (optioneel)"
 
 #. FyoLc
 #: 04060109.xhp
@@ -18558,14 +18558,14 @@ msgctxt ""
 msgid "VLOOKUP"
 msgstr "VERT.ZOEKEN"
 
-#. qFEgu
+#. DQLVH
 #: 04060109.xhp
 msgctxt ""
 "04060109.xhp\n"
 "par_id3149984\n"
 "help.text"
-msgid "<ahelp hid=\"HID_FUNC_SVERWEIS\">Vertical search with reference to adjacent cells to the right.</ahelp> This function checks if a specific value is contained in the first column of an array. The function then returns the value in the same row of the column named by <emph>Index</emph>. If the <emph>Sorted</emph> parameter is omitted or set to TRUE or one, it is assumed that the data is sorted in ascending order. In this case, if the exact <emph>Lookup</emph> is not found, the last value that is smaller than the criterion will be returned. If <emph>Sorted</emph> is set to FALSE or zero, an exact match must be found, otherwise the error <emph>Error: Value Not Available</emph> will be the result. Thus with a value of zero the data does not need to be sorted in ascending order."
-msgstr "<ahelp hid=\"HID_FUNC_SVERWEIS\">Verticaal zoeken met verwijzing naar aangrenzende cellen aan de rechterkant.</ahelp> Deze functie controleert of een specifieke waarde in de eerste kolom van een array staat. De functie retourneert dan de waarde in dezelfde rij van de kolom genoemd door <emph>Index</emph>. Als de parameter <emph>Gesorteerd</emph> wordt weggelaten of wordt ingesteld op WAAR of één, wordt aangenomen dat de gegevens in oplopende volgorde worden gesorteerd. In dit geval, als de exacte <emph>Lookup</emph> niet wordt gevonden, wordt de laatste waarde die kleiner is dan het criterium geretourneerd. Als <emph>Gesorteerd</emph> is ingesteld op ONWAAR of nul, moet een exacte overeenkomst worden gevonden, anders zal de fout <emph>Fout: Waarde niet beschikbaar</emph> het resultaat zijn. Met een waarde van nul hoeven de gegevens dus niet in oplopende volgorde te worden gesorteerd."
+msgid "<ahelp hid=\"HID_FUNC_SVERWEIS\">Vertical search with reference to adjacent cells to the right.</ahelp> This function checks if a specific value is contained in the first column of an array. The function then returns the value in the same row of the column named by <emph>Index</emph>. If the <emph>SortedRangeLookup</emph> parameter is omitted or set to TRUE or one, it is assumed that the data is sorted in ascending order. In this case, if the exact <emph>Lookup</emph> is not found, the last value that is smaller than the criterion will be returned. If <emph>SortedRangeLookup</emph> is set to FALSE or zero, an exact match must be found, otherwise the error <emph>Error: Value Not Available</emph> will be the result. Thus with a value of zero the data does not need to be sorted in ascending order."
+msgstr ""
 
 #. j8RoY
 #: 04060109.xhp
@@ -27547,7 +27547,7 @@ msgctxt ""
 "par_id3148987\n"
 "help.text"
 msgid "MDURATION(Settlement; Maturity; Coupon; Yield; Frequency [; Basis])"
-msgstr "AANG.DUUR(Aankoopdatum; Vervaldatum; Nominale rente; Rendement; Frequentie ; Soort jaar (optioneel))"
+msgstr "AANG.DUUR(Aankoopdatum; Vervaldatum; Coupon; Rendement; Frequentie ; Soort jaar (optioneel))"
 
 #. xTn69
 #: 04060119.xhp
@@ -27556,7 +27556,7 @@ msgctxt ""
 "par_id3148619\n"
 "help.text"
 msgid "<emph>Settlement</emph> is the date of purchase of the security."
-msgstr "<emph>Aankoopdatum</emph> is de datum van aankoop van het waardepapier."
+msgstr "<emph>Stortingsdatum</emph> is de datum van aankoop van het waardepapier."
 
 #. UgBHk
 #: 04060119.xhp
@@ -27574,7 +27574,7 @@ msgctxt ""
 "par_id3154338\n"
 "help.text"
 msgid "<emph>Coupon</emph> is the annual nominal rate of interest (coupon interest rate)"
-msgstr "<emph>Nominale rente</emph> is de jaarlijkse nominale rentekoers (coupon rentekoers)."
+msgstr "<emph>Coupon</emph> is de jaarlijkse nominale rentekoers (coupon rentekoers)."
 
 #. 5NyMh
 #: 04060119.xhp
@@ -29239,7 +29239,7 @@ msgctxt ""
 "par_id3158000\n"
 "help.text"
 msgid "<item type=\"input\">=COUNTA(2;4;6;\"eight\")</item> = 4. The count of values is therefore 4."
-msgstr "<item type=\"input\">=AANTALARG(2;4;6;\"acht\")</item> = 4. De telling van getallen is daarom 4."
+msgstr "<item type=\"input\">=AANTALARG(2;4;6;\"acht\")</item> = 4. De telling van waardes is daarom 4."
 
 #. uuPnw
 #: 04060181.xhp
@@ -54925,7 +54925,7 @@ msgctxt ""
 "par_id101585468691583\n"
 "help.text"
 msgid "<emph>Range1</emph> – required argument. It is a range of cells, a name of a named range, or a label of a column or a row, to which the corresponding criterion is to be applied."
-msgstr "<emph>Bereik 1</emph> – vereist argument. Het is een celbereik, een naam van een benoemd bereik of een label van een kolom of rij waarop het overeenkomstige criterium moet worden toegepast."
+msgstr "<emph>Criteriumbereik1</emph> – vereist argument. Het is een celbereik, een naam van een benoemd bereik of een label van een kolom of rij waarop het overeenkomstige criterium moet worden toegepast."
 
 #. iEkaJ
 #: ex_data_stat_func.xhp
@@ -55033,7 +55033,7 @@ msgctxt ""
 "par_id190621657742\n"
 "help.text"
 msgid "<emph>Range2</emph> – Optional. Range2 and all the following mean the same as Range1."
-msgstr "<emph>Bereik 2</emph> – Optioneel. Bereik 2 en alle volgende hebben dezelfde betekenis als Bereik 1."
+msgstr "<emph>Criterumbereik 2</emph> – Optioneel. Criterumbereik 2 en alle volgende hebben dezelfde betekenis als Criterumbereik 1."
 
 #. FyA7p
 #: ex_data_stat_func.xhp
@@ -55672,7 +55672,7 @@ msgctxt ""
 "par_id931584395947010\n"
 "help.text"
 msgid "<emph>Number 1; Number 2; … ; Number 255</emph> are numbers, references to cells or to cell ranges of numbers."
-msgstr "<emph>Waarde 1; Waarde 2; … ; Waarde 255</emph> zijn getallen, verwijzingen naar cellen of naar celbereiken van getallen."
+msgstr "<emph>Waarde 1; Waarde 2; … ; Waarde 255</emph> zijn waardes, verwijzingen naar cellen of naar celbereiken van waardes."
 
 #. RLXz8
 #: ful_func.xhp
@@ -60280,7 +60280,7 @@ msgctxt ""
 "par_id27421466710275\n"
 "help.text"
 msgid "COUNTIFS(Range; Criterion[; Range2; Criterion2][; ... ; [Range127; Criterion127]])"
-msgstr "AANTALLEN.ALS(Bereik 1; Criteria 1; Bereik 2 (optioneel); Criteria 2 (optioneel); ...)"
+msgstr "AANTALLEN.ALS(Criteriumbereik 1; Criterium 1; Criteriumbereik 2; Criterium 2 (optioneel); …)"
 
 #. KTAXW
 #: func_countifs.xhp
@@ -60289,7 +60289,7 @@ msgctxt ""
 "par_id14734320631377\n"
 "help.text"
 msgid "<emph>Range, Range2, ...</emph> and <emph>Criterion, Criterion2, ...</emph> must have the same size, otherwise the function returns err:502 - Invalid argument."
-msgstr "<emph>Bereik 1, Bereik 2, ...</emph> en <emph>Criterium 1, Criterium 2, ...</emph> moet dezelfde grootte hebben, anders retourneert de functie fout:502 - Ongeldig argument."
+msgstr "<emph>Criteriumbereik 1, Criteriumbereik 2, ...</emph> en <emph>Criterium, Criterium 2, ...</emph> moet dezelfde grootte hebben, anders retourneert de functie fout:502 - Ongeldig argument."
 
 #. ZuFZj
 #: func_countifs.xhp
@@ -60316,7 +60316,7 @@ msgctxt ""
 "par_id323511393121175\n"
 "help.text"
 msgid "Counts the amount of rows of the range B2:B6 with values greater than or equal to 20. Returns 3, because the fifth and the sixth rows do not meet the criterion."
-msgstr "Telt het aantal rijen van het bereik B2:B6 die waarden groter dan of gelijk aan 20 bevatten. Dit geeft 3, omdat de vijfde en zesde rij niet aan het criterium voldoen."
+msgstr "Telt het aantal rijen van het criteriumbereik B2:B6 die waardes groter dan of gelijk aan 20 bevatten. Dit geeft 3, omdat de vijfde en zesde rij niet aan het criteriumbereik voldoen."
 
 #. 4aGmq
 #: func_countifs.xhp
@@ -60334,7 +60334,7 @@ msgctxt ""
 "par_id109622995127628\n"
 "help.text"
 msgid "Counts the amount of rows that contain simultaneously values greater than 70 in the C2:C6 range and values greater than or equal to 20 in the B2:B6 range. Returns 2, because the second, the fifth and the sixth rows do not meet at least one criterion."
-msgstr "Telt het aantal rijen dat tegelijkertijd waarden groter dan 70 bevatten in het bereik C2:C6 en waarden groter dan of gelijk aan 20 in het bereik B2:B6. Dit geeft 2, omdat de tweede, de vijfde en de zesde rij niet voldoen aan tenminste één criterium."
+msgstr "Telt het aantal rijen dat tegelijkertijd waardes groter dan 70 bevatten in het Criteriumbereik C2:C6 en waardes groter dan of gelijk aan 20 in het Criteriumbereik B2:B6. Dit geeft 2, omdat de tweede, de vijfde en de zesde rij niet voldoen aan tenminste één criterium."
 
 #. AGcGC
 #: func_countifs.xhp
@@ -60370,7 +60370,7 @@ msgctxt ""
 "par_id22137303324873\n"
 "help.text"
 msgid "Counts the amount of rows of the B2:B6 range that contain only alphabet symbols. Returns 1, because only sixth row meets the criterion."
-msgstr "Telt het aantal rijen in het bereik B2:B6 die alleen alfabetische symbolen bevatten. Dit geeft 1, want alleen de zesde rij voldoet aan het criterium."
+msgstr "Telt het aantal rijen in het criteriumbereik B2:B6 die alleen alfabetische symbolen bevatten. Dit geeft 1, want alleen de zesde rij voldoet aan het criterium."
 
 #. pNABF
 #: func_countifs.xhp
@@ -60388,7 +60388,7 @@ msgctxt ""
 "par_id1105320769334\n"
 "help.text"
 msgid "Counts the amount of rows of the B2:B6 range excluding rows with minimum and maximum values of this range. Returns 2, because the third, the fifth and the sixth rows do not meet at least one criterion."
-msgstr "Telt het aantal rijen in het bereik B2:B6 met uitzondering van rijen die minimum en maximum waarden van dit bereik bevatten. Dit geeft 2, omdat de derde, vijfde en zesde rij niet voldoen aan tenminste één criterium."
+msgstr "Telt het aantal rijen in het criteriumbereik B2:B6 met uitzondering van rijen die minimum en maximum waarden van dit criteriumbereik bevatten. Dit geeft 2, omdat de derde, vijfde en zesde rij niet voldoen aan tenminste één criterium."
 
 #. jdWB5
 #: func_countifs.xhp
@@ -60406,7 +60406,7 @@ msgctxt ""
 "par_id111252614832220\n"
 "help.text"
 msgid "Counts the amount of rows that correspond to all cells of the A2:A6 range starting with \"pen\" and to all cells of the B2:B6 range with exception of its maximum. Returns 1, because only second row meets all criteria."
-msgstr "Telt het aantal rijen die overeenkomen met alle cellen van het bereik A2:A6 die beginnen met \"pen\" en alle cellen van het bereik B2:B6 met uitzondering van zijn maximum. Dit geeft 1, want alleen de tweede rij voldoet aan alle criteria."
+msgstr "Telt het aantal rijen die overeenkomen met alle cellen van het criteriumbereik A2:A6 die beginnen met \"pen\" en alle cellen van het criteriumbereik B2:B6 met uitzondering van zijn maximum. Dit geeft 1, want alleen de tweede rij voldoet aan alle criteria."
 
 #. rG36d
 #: func_countifs.xhp
