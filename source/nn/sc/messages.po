@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2025-04-10 15:52+0200\n"
+"POT-Creation-Date: 2025-09-17 16:16+0930\n"
 "PO-Revision-Date: 2025-03-27 20:53+0000\n"
 "Last-Translator: Kolbjørn Stuestøl <kolbjoern@stuestoel.no>\n"
 "Language-Team: Norwegian Nynorsk <https://translations.documentfoundation.org/projects/libo_ui-25-2/scmessages/nn/>\n"
@@ -17223,89 +17223,757 @@ msgctxt "SC_OPCODE_RANDARRAY"
 msgid "Return integer (TRUE) or decimal (FALSE) values."
 msgstr "Returner heiltal- (SANN) eller desimal- (USANN) verdiar."
 
-#. NJR3E
+#. ADmez
 #: sc/inc/scfuncs.hrc:4257
+msgctxt "SC_OPCODE_CHOOSECOLS"
+msgid "Returns the specified columns from an array."
+msgstr "Returnerer dei gjevne kolonnane frå ei matrise."
+
+#. mgCeG
+#: sc/inc/scfuncs.hrc:4258
+msgctxt "SC_OPCODE_CHOOSECOLS"
+msgid "Array"
+msgstr "Matrise"
+
+#. vErtR
+#: sc/inc/scfuncs.hrc:4259
+msgctxt "SC_OPCODE_CHOOSECOLS"
+msgid "The array containing the columns to be returned in the new array."
+msgstr "Matrisa som inneheld kolonnane som skal returnerast til den nye matrisa."
+
+#. EuvxU
+#: sc/inc/scfuncs.hrc:4260
+msgctxt "SC_OPCODE_CHOOSECOLS"
+msgid "Column "
+msgstr "Kolonne "
+
+#. Akc9t
+#: sc/inc/scfuncs.hrc:4261
+msgctxt "SC_OPCODE_CHOOSECOLS"
+msgid "Column 1, Column 2,... The list of column numbers to be returned."
+msgstr "Kolonne 1, Kolonne 2,... Lista over kolonnenummer som skal returnerast."
+
+#. 78gQu
+#: sc/inc/scfuncs.hrc:4267
+msgctxt "SC_OPCODE_CHOOSEROWS"
+msgid "Returns the specified rows from an array."
+msgstr "Returnerer dei gjevne radene frå ei matrise."
+
+#. JAg4y
+#: sc/inc/scfuncs.hrc:4268
+msgctxt "SC_OPCODE_CHOOSEROWS"
+msgid "Array"
+msgstr "Matrise"
+
+#. GFWtk
+#: sc/inc/scfuncs.hrc:4269
+msgctxt "SC_OPCODE_CHOOSEROWS"
+msgid "The array containing the rows to be returned in the new array."
+msgstr "Matrisa som inneheld radene som skal returnerast til den nye matrisa."
+
+#. PDBbE
+#: sc/inc/scfuncs.hrc:4270
+msgctxt "SC_OPCODE_CHOOSEROWS"
+msgid "Row "
+msgstr "Rad "
+
+#. dXjgB
+#: sc/inc/scfuncs.hrc:4271
+msgctxt "SC_OPCODE_CHOOSEROWS"
+msgid "Row 1, Row 2,... The list of row numbers to be returned."
+msgstr "Rad 1, Rad 2,… Lista over radnummer som skal returnerast."
+
+#. 4uTLx
+#: sc/inc/scfuncs.hrc:4277
+msgctxt "SC_OPCODE_DROP"
+msgid "Excludes a specified number of contiguous rows or columns from the start or end of an array."
+msgstr "Ekskluderer eit spesifisert tal på samanhengande rader eller kolonnar frå byrjinga eller slutten av ei matrise."
+
+#. W6FYc
+#: sc/inc/scfuncs.hrc:4278
+msgctxt "SC_OPCODE_DROP"
+msgid "Array"
+msgstr "Matrise"
+
+#. zEu4G
+#: sc/inc/scfuncs.hrc:4279
+msgctxt "SC_OPCODE_DROP"
+msgid "The array from which to drop rows or columns."
+msgstr "Matrisa som rader eller kolonnar skal droppast frå."
+
+#. BFPt4
+#: sc/inc/scfuncs.hrc:4280
+msgctxt "SC_OPCODE_DROP"
+msgid "Rows"
+msgstr "Rader"
+
+#. yyjnc
+#: sc/inc/scfuncs.hrc:4281
+msgctxt "SC_OPCODE_DROP"
+msgid "The number of rows to drop. A negative value drops from the end of the array."
+msgstr "Kor mange rader som skal slettast. Med ein negativ verdi vert slutten av matrisa sletta."
+
+#. GQ7cE
+#: sc/inc/scfuncs.hrc:4282
+#, fuzzy
+msgctxt "SC_OPCODE_DROP"
+msgid "Column"
+msgstr "Kolonne"
+
+#. cAxPB
+#: sc/inc/scfuncs.hrc:4283
+msgctxt "SC_OPCODE_DROP"
+msgid "The number of columns to drop. A negative value drops from the end of the array."
+msgstr "Kor mange kolonnar som skal slettast. Med ein negativ verdi vert slutten av matrisa sletta."
+
+#. cXvVY
+#: sc/inc/scfuncs.hrc:4289
+msgctxt "SC_OPCODE_EXPAND"
+msgid "Expands or pads an array to specified row and column dimensions."
+msgstr "Utvider eller fyller ei matrise til gjevne rad- og kolonnedimensjonar."
+
+#. kuERH
+#: sc/inc/scfuncs.hrc:4290
+msgctxt "SC_OPCODE_EXPAND"
+msgid "Array"
+msgstr "Matrise"
+
+#. E9YDC
+#: sc/inc/scfuncs.hrc:4291
+msgctxt "SC_OPCODE_EXPAND"
+msgid "The array to expand."
+msgstr "Matrisa som skal utvidast."
+
+#. EaNgG
+#: sc/inc/scfuncs.hrc:4292
+msgctxt "SC_OPCODE_EXPAND"
+msgid "Rows"
+msgstr "Rader"
+
+#. QzQiB
+#: sc/inc/scfuncs.hrc:4293
+msgctxt "SC_OPCODE_EXPAND"
+msgid "The number of rows in the expanded array. If missing, rows will not be expanded."
+msgstr "Talet på rader i den utvida matrisa. Viss denne manglar, vert radene ikkje utvida."
+
+#. jLBEp
+#: sc/inc/scfuncs.hrc:4294
+#, fuzzy
+msgctxt "SC_OPCODE_EXPAND"
+msgid "Column"
+msgstr "Kolonne"
+
+#. EVAXE
+#: sc/inc/scfuncs.hrc:4295
+msgctxt "SC_OPCODE_EXPAND"
+msgid "The number of columns in the expanded array. If missing, columns will not be expanded."
+msgstr "Talet på kolonnar i den utvida matrisa. Viss denne manglar, vert kolonnene ikkje utvida."
+
+#. QPyBK
+#: sc/inc/scfuncs.hrc:4296
+msgctxt "SC_OPCODE_EXPAND"
+msgid "Pad with"
+msgstr "Fyll ut med"
+
+#. kHatA
+#: sc/inc/scfuncs.hrc:4297
+msgctxt "SC_OPCODE_EXPAND"
+msgid "The value with which to pad. The default is #N/A."
+msgstr "Verdien det skal fyllast ut med. Standardverdien er #I/T."
+
+#. P3HaZ
+#: sc/inc/scfuncs.hrc:4303
+#, fuzzy
+msgctxt "SC_OPCODE_HSTACK"
+msgid "Appends arrays horizontally to create a larger array"
+msgstr "Legg til matriser vassrett (horisontalt) for å laga ei større matrise."
+
+#. LnAFg
+#: sc/inc/scfuncs.hrc:4304
+msgctxt "SC_OPCODE_HSTACK"
+msgid "Array"
+msgstr "Matrise"
+
+#. uHbHC
+#: sc/inc/scfuncs.hrc:4305
+msgctxt "SC_OPCODE_HSTACK"
+msgid "The first array to append."
+msgstr "Den første matrisa som skal leggjast til."
+
+#. UK4bK
+#: sc/inc/scfuncs.hrc:4306
+#, fuzzy
+msgctxt "SC_OPCODE_HSTACK"
+msgid "Array "
+msgstr "Vektor "
+
+#. QRA57
+#: sc/inc/scfuncs.hrc:4307
+msgctxt "SC_OPCODE_HSTACK"
+msgid "Array 1, Array 2,... The following arrays to append. If an array has fewer rows, #N/A error will be returned in the additional rows."
+msgstr "Matrise 1, Matrise 2,… Føljande matriser skal leggjast til. Viss ei matrise har ferre rader vert feilen #I/T returnert i dei neste radene."
+
+#. zmGHv
+#: sc/inc/scfuncs.hrc:4313
+#, fuzzy
+msgctxt "SC_OPCODE_VSTACK"
+msgid "Appends arrays vertically to create a larger array"
+msgstr "Legg til matriser loddrett for å laga ei større matrise."
+
+#. rhVRC
+#: sc/inc/scfuncs.hrc:4314
+msgctxt "SC_OPCODE_VSTACK"
+msgid "Array"
+msgstr "Matrise"
+
+#. tGHH9
+#: sc/inc/scfuncs.hrc:4315
+msgctxt "SC_OPCODE_VSTACK"
+msgid "The first array to append."
+msgstr "Den første matrisa som skal leggjast til."
+
+#. 9isjH
+#: sc/inc/scfuncs.hrc:4316
+#, fuzzy
+msgctxt "SC_OPCODE_VSTACK"
+msgid "Array "
+msgstr "Vektor "
+
+#. Kb6Xc
+#: sc/inc/scfuncs.hrc:4317
+msgctxt "SC_OPCODE_VSTACK"
+msgid "Array 1, Array 2,... The following arrays to append. If an array has fewer columns, #N/A error will be returned in the additional columns."
+msgstr "Matrise 1, Matrise 2,… Føljande matriser skal leggjast til. Viss ei matrise har ferre kolonnar, vert feilen #I/T returnert i dei neste radene."
+
+#. JnsYT
+#: sc/inc/scfuncs.hrc:4323
+msgctxt "SC_OPCODE_TAKE"
+msgid "Returns a specified number of contiguous rows or columns from the start or end of an array."
+msgstr "Returnerer eit spesifisert tal på samanhengande rader eller kolonnar frå byrjinga eller slutten av matrisa."
+
+#. dFLFb
+#: sc/inc/scfuncs.hrc:4324
+msgctxt "SC_OPCODE_TAKE"
+msgid "Array"
+msgstr "Matrise"
+
+#. ycFef
+#: sc/inc/scfuncs.hrc:4325
+msgctxt "SC_OPCODE_TAKE"
+msgid "The array from which to take rows or columns."
+msgstr "Matrisa som radene eller kolonnane skal hentast frå."
+
+#. DzBCL
+#: sc/inc/scfuncs.hrc:4326
+msgctxt "SC_OPCODE_TAKE"
+msgid "Rows"
+msgstr "Rader"
+
+#. KBPBn
+#: sc/inc/scfuncs.hrc:4327
+msgctxt "SC_OPCODE_TAKE"
+msgid "The number of rows to take. A negative value takes from the end of the array."
+msgstr "Kor mange rader som skal hentast. Ein negativ verdi gjer at radene vert henta frå slutten av matrisa."
+
+#. eRGvR
+#: sc/inc/scfuncs.hrc:4328
+#, fuzzy
+msgctxt "SC_OPCODE_TAKE"
+msgid "Column"
+msgstr "Kolonne"
+
+#. ZexcG
+#: sc/inc/scfuncs.hrc:4329
+msgctxt "SC_OPCODE_TAKE"
+msgid "The number of columns to take. A negative value takes from the end of the array."
+msgstr "Kor mange kolonnar som skal hentast. Ein negativ verdi gjer at kolonnane vert henta frå slutten av matrisa."
+
+#. GwyMB
+#: sc/inc/scfuncs.hrc:4335
+msgctxt "SC_OPCODE_TEXTAFTER"
+msgid "Returns the text that occurs after a given substring or delimiter."
+msgstr "Returnerer teksten som kjem etter ein gjeven delstreng eller eit skiljeteikn."
+
+#. cicY2
+#: sc/inc/scfuncs.hrc:4336
+msgctxt "SC_OPCODE_TEXTAFTER"
+msgid "Text"
+msgstr "Tekst"
+
+#. 3WLYF
+#: sc/inc/scfuncs.hrc:4337
+msgctxt "SC_OPCODE_TEXTAFTER"
+msgid "The original text."
+msgstr "Den opphavlege teksten."
+
+#. z4pDr
+#: sc/inc/scfuncs.hrc:4338
+msgctxt "SC_OPCODE_TEXTAFTER"
+msgid "Delimiter"
+msgstr "Skiljeteikn"
+
+#. YEbwu
+#: sc/inc/scfuncs.hrc:4339
+msgctxt "SC_OPCODE_TEXTAFTER"
+msgid "The delimiter. Multiple delimiters can be supplied."
+msgstr "Skiljeteiknet. Fleire skilleteikn kan brukast."
+
+#. HPDvF
+#: sc/inc/scfuncs.hrc:4340
+msgctxt "SC_OPCODE_TEXTAFTER"
+msgid "Instance Number"
+msgstr "Førekomstnummer"
+
+#. DmVZL
+#: sc/inc/scfuncs.hrc:4341
+msgctxt "SC_OPCODE_TEXTAFTER"
+msgid "The instance of the delimiter after which to extract text. The default is 1. A negative number starts searching from the end."
+msgstr "Førekomsten av skiljeteiknet, i høve til kva tekst som skal trekkjast ut. Standardverdien er 1. Er talet negativt, byrjar søket frå slutten."
+
+#. fpoGj
+#: sc/inc/scfuncs.hrc:4342
+msgctxt "SC_OPCODE_TEXTAFTER"
+msgid "Match Mode"
+msgstr "Treffmodus"
+
+#. iSfJi
+#: sc/inc/scfuncs.hrc:4343
+msgctxt "SC_OPCODE_TEXTAFTER"
+msgid "Set to 1 to perform a case-insensitive match. The default is 0."
+msgstr "Sett til 1 for å utføra eit søk som ikkje skil mellom store og små bokstavar. Standardinnstillinga er 0."
+
+#. nAF2s
+#: sc/inc/scfuncs.hrc:4344
+msgctxt "SC_OPCODE_TEXTAFTER"
+msgid "Match End"
+msgstr "Slutt på teksten"
+
+#. W2DGj
+#: sc/inc/scfuncs.hrc:4345
+msgctxt "SC_OPCODE_TEXTAFTER"
+msgid "Set to 1 to treat the end of text as a delimiter. The default is 0."
+msgstr "Sett til 1 for å handsama slutten av teksten som eit skiljeteikn. Standardinnstillinga er 0."
+
+#. PG6qj
+#: sc/inc/scfuncs.hrc:4346
+msgctxt "SC_OPCODE_TEXTAFTER"
+msgid "If Not Found"
+msgstr "Viss ikkje funne"
+
+#. vfgZc
+#: sc/inc/scfuncs.hrc:4347
+msgctxt "SC_OPCODE_TEXTAFTER"
+msgid "The value returned if no match is found. The default is #N/A."
+msgstr "Verdien som vert returnert viss inge treff. Standardverdien er #I/T."
+
+#. f88EE
+#: sc/inc/scfuncs.hrc:4353
+msgctxt "SC_OPCODE_TEXTBEFORE"
+msgid "Returns the text that occurs before a given substring or delimiter."
+msgstr "Returnerer teksten som står framføre ein gjeven delstreng eller eit skiljeteikn."
+
+#. NNriC
+#: sc/inc/scfuncs.hrc:4354
+msgctxt "SC_OPCODE_TEXTBEFORE"
+msgid "Text"
+msgstr "Tekst"
+
+#. HsEG8
+#: sc/inc/scfuncs.hrc:4355
+msgctxt "SC_OPCODE_TEXTBEFORE"
+msgid "The original text."
+msgstr "Den opphavlege teksten."
+
+#. E4a5z
+#: sc/inc/scfuncs.hrc:4356
+msgctxt "SC_OPCODE_TEXTBEFORE"
+msgid "Delimiter"
+msgstr "Skiljeteikn"
+
+#. qDFZy
+#: sc/inc/scfuncs.hrc:4357
+msgctxt "SC_OPCODE_TEXTBEFORE"
+msgid "The delimiter. Multiple delimiters can be supplied."
+msgstr "Skiljeteiknet. Fleire skilleteikn kan brukast."
+
+#. gNHAi
+#: sc/inc/scfuncs.hrc:4358
+msgctxt "SC_OPCODE_TEXTBEFORE"
+msgid "Instance Number"
+msgstr "Førekomstnummer"
+
+#. sD4zC
+#: sc/inc/scfuncs.hrc:4359
+msgctxt "SC_OPCODE_TEXTBEFORE"
+msgid "The instance of the delimiter before which to extract text. The default is 1. A negative number starts searching from the end."
+msgstr "Førekomsten av skiljeteiknet som kjem etter teksten som skal trekkjast ut. Standard er 1. Er talet negativt, ver teksten trekt ut frå slutten."
+
+#. Adzeh
+#: sc/inc/scfuncs.hrc:4360
+msgctxt "SC_OPCODE_TEXTBEFORE"
+msgid "Match Mode"
+msgstr "Treffmodus"
+
+#. Pi2Ti
+#: sc/inc/scfuncs.hrc:4361
+msgctxt "SC_OPCODE_TEXTBEFORE"
+msgid "Set to 1 to perform a case-insensitive match. The default is 0."
+msgstr "Sett til 1 for å utføra eit søk som ikkje skil mellom store og små bokstavar. Standardinnstillinga er 0."
+
+#. sACA2
+#: sc/inc/scfuncs.hrc:4362
+msgctxt "SC_OPCODE_TEXTBEFORE"
+msgid "Match End"
+msgstr "Slutt på teksten"
+
+#. UxpD6
+#: sc/inc/scfuncs.hrc:4363
+msgctxt "SC_OPCODE_TEXTBEFORE"
+msgid "Set to 1 to treat the end of text as a delimiter. The default is 0."
+msgstr "Sett til 1 for å handsama slutten av teksten som eit skiljeteikn. Standardinnstillinga er 0."
+
+#. aCnZX
+#: sc/inc/scfuncs.hrc:4364
+msgctxt "SC_OPCODE_TEXTBEFORE"
+msgid "If Not Found"
+msgstr "Viss ikkje funne"
+
+#. xCZYH
+#: sc/inc/scfuncs.hrc:4365
+msgctxt "SC_OPCODE_TEXTBEFORE"
+msgid "The value returned if no match is found. The default is #N/A."
+msgstr "Verdien som vert returnert viss inge treff. Standardverdien er #I/T."
+
+#. wdZTd
+#: sc/inc/scfuncs.hrc:4371
+msgctxt "SC_OPCODE_TEXTSPLIT"
+msgid "Splits text by a given delimiter to an array of multiple cells."
+msgstr "Delar tekst med eit gjeve skiljeteikn til ei matrise eller fleire celler."
+
+#. DH7h4
+#: sc/inc/scfuncs.hrc:4372
+msgctxt "SC_OPCODE_TEXTSPLIT"
+msgid "Text"
+msgstr "Tekst"
+
+#. dqSdF
+#: sc/inc/scfuncs.hrc:4373
+msgctxt "SC_OPCODE_TEXTSPLIT"
+msgid "The text to split."
+msgstr "Teksten som skal delast."
+
+#. pdpxt
+#: sc/inc/scfuncs.hrc:4374
+msgctxt "SC_OPCODE_TEXTSPLIT"
+msgid "Column Delimiter"
+msgstr "Kolonneskiljeteikn"
+
+#. nfMAr
+#: sc/inc/scfuncs.hrc:4375
+msgctxt "SC_OPCODE_TEXTSPLIT"
+msgid "The text to delimit the columns. Multiple delimiters can be supplied."
+msgstr "Teksten som skil kolonnane. Du kan bruka fleire teikn."
+
+#. qZGq2
+#: sc/inc/scfuncs.hrc:4376
+msgctxt "SC_OPCODE_TEXTSPLIT"
+msgid "Row Delimiter"
+msgstr "Radskiljeteikn"
+
+#. dPnbc
+#: sc/inc/scfuncs.hrc:4377
+msgctxt "SC_OPCODE_TEXTSPLIT"
+msgid "The text to delimit the rows. Multiple delimiters can be supplied."
+msgstr "Teksten som skil radene. Du kan bruka fleire teikn."
+
+#. jD3sa
+#: sc/inc/scfuncs.hrc:4378
+msgctxt "SC_OPCODE_TEXTSPLIT"
+msgid "Ignore Empty"
+msgstr "Ignorer tomme"
+
+#. 6LwdP
+#: sc/inc/scfuncs.hrc:4379
+msgctxt "SC_OPCODE_TEXTSPLIT"
+msgid "Set to TRUE to ignore consecutive delimiters otherwise it creates an empty cell. The default is FALSE."
+msgstr "Sett til SANN for å ignorera etterfølgjande skiljeteikn, elles vert det laga ei tom celle. Standardverdien er USANN."
+
+#. kkAYp
+#: sc/inc/scfuncs.hrc:4380
+msgctxt "SC_OPCODE_TEXTSPLIT"
+msgid "Match mode"
+msgstr "Treffmodus"
+
+#. iX8cx
+#: sc/inc/scfuncs.hrc:4381
+msgctxt "SC_OPCODE_TEXTSPLIT"
+msgid "Set to 1 to perform a case-insensitive match. The default is 0."
+msgstr "Sett til 1 for å utføra eit søk som ikkje skil mellom store og små bokstavar. Standardinnstillinga er 0."
+
+#. vXECz
+#: sc/inc/scfuncs.hrc:4382
+msgctxt "SC_OPCODE_TEXTSPLIT"
+msgid "Pad with"
+msgstr "Fyll ut med"
+
+#. h4db2
+#: sc/inc/scfuncs.hrc:4383
+msgctxt "SC_OPCODE_TEXTSPLIT"
+msgid "The value with which to pad. The default is #N/A."
+msgstr "Verdien det skal fyllast ut med. Standardverdien er #I/T."
+
+#. 4dkE2
+#: sc/inc/scfuncs.hrc:4389
+#, fuzzy
+msgctxt "SC_OPCODE_TOCOL"
+msgid "transforms an array into a single column."
+msgstr "Omformar ei matrise til ei enkelt kolonne."
+
+#. UAzNC
+#: sc/inc/scfuncs.hrc:4390
+msgctxt "SC_OPCODE_TOCOL"
+msgid "Array"
+msgstr "Matrise"
+
+#. CHojs
+#: sc/inc/scfuncs.hrc:4391
+msgctxt "SC_OPCODE_TOCOL"
+msgid "The range or array to return as a single column."
+msgstr "Området eller matrisa som skal returnerast som ein enkelt kolonne."
+
+#. uACXu
+#: sc/inc/scfuncs.hrc:4392
+msgctxt "SC_OPCODE_TOCOL"
+msgid "Ignore"
+msgstr "Ignorer"
+
+#. b7EQW
+#: sc/inc/scfuncs.hrc:4393
+msgctxt "SC_OPCODE_TOCOL"
+msgid "Whether to ignore certain types of values. 0 or omitted - keep all values (default). 1 - ignore blank cells. 2 - ignore cells with error. 3 - ignore blanks cells and cells with error."
+msgstr "Om visse typar verdiar skal ignorerast. 0 eller utelate – behald alle verdiane (standard). 1 – ignorer tomme celler. 2 – ignorer celler med feil. 3 – ignorer tomme celler og celler med feil."
+
+#. qNLAi
+#: sc/inc/scfuncs.hrc:4394
+msgctxt "SC_OPCODE_TOCOL"
+msgid "Scan by column"
+msgstr "Skann etter kolonne"
+
+#. bcArN
+#: sc/inc/scfuncs.hrc:4395
+msgctxt "SC_OPCODE_TOCOL"
+msgid "Scan the array by column. FALSE or omitted (default) - the array is scanned by row. TRUE - the array is scanned by column."
+msgstr "Skann matrisa kolonnevis. USANN eller sløyfa (standard) – matrisa vert skanna etter rad. SANN – matrisa vert skanna etter kolonne."
+
+#. PGyxj
+#: sc/inc/scfuncs.hrc:4401
+msgctxt "SC_OPCODE_TOROW"
+msgid "transforms an array into a single row."
+msgstr "omformar ei matrise til ei eneklt rad."
+
+#. W9bWe
+#: sc/inc/scfuncs.hrc:4402
+msgctxt "SC_OPCODE_TOROW"
+msgid "Array"
+msgstr "Matrise"
+
+#. 5MEvT
+#: sc/inc/scfuncs.hrc:4403
+msgctxt "SC_OPCODE_TOROW"
+msgid "The range or array to return as a single row."
+msgstr "Området eller matrisa som skal returnerast som ei enkelt rad."
+
+#. AqqBC
+#: sc/inc/scfuncs.hrc:4404
+msgctxt "SC_OPCODE_TOROW"
+msgid "Ignore"
+msgstr "Ignorer"
+
+#. wcpQF
+#: sc/inc/scfuncs.hrc:4405
+msgctxt "SC_OPCODE_TOROW"
+msgid "Whether to ignore certain types of values. 0 or omitted - keep all values (default). 1 - ignore blank cells. 2 - ignore cells with error. 3 - ignore blanks cells and cells with error."
+msgstr "Om visse typar verdiar skal ignorerast. 0 eller utelate – behald alle verdiane (standard). 1 – ignorer tomme celler. 2 – ignorer celler med feil. 3 – ignorer tomme celler og celler med feil."
+
+#. E4XDf
+#: sc/inc/scfuncs.hrc:4406
+msgctxt "SC_OPCODE_TOROW"
+msgid "Scan by column"
+msgstr "Skann etter kolonne"
+
+#. 5bZRy
+#: sc/inc/scfuncs.hrc:4407
+msgctxt "SC_OPCODE_TOROW"
+msgid "Scan the array by column. FALSE or omitted (default) - the array is scanned by row. TRUE - the array is scanned by column."
+msgstr "Skann matrisa kolonnevis. USANN eller sløyfa (standard) – matrisa vert skanna etter rad. SANN – matrisa vert skanna etter kolonne."
+
+#. NJR3E
+#: sc/inc/scfuncs.hrc:4413
 msgctxt "SC_OPCODE_UNIQUE"
 msgid "Returns a list of unique values from a range or array."
 msgstr "Returnerer ei liste over unike verdiar frå eit område eller ei matrise."
 
 #. NepxE
-#: sc/inc/scfuncs.hrc:4258
+#: sc/inc/scfuncs.hrc:4414
 msgctxt "SC_OPCODE_UNIQUE"
 msgid "Array"
 msgstr "Matrise"
 
 #. 2sVga
-#: sc/inc/scfuncs.hrc:4259
+#: sc/inc/scfuncs.hrc:4415
 msgctxt "SC_OPCODE_UNIQUE"
 msgid "The range or array from which to return unique values."
 msgstr "Området eller matrisa som det skal returnerast unike verdiar frå."
 
 #. fGfWS
-#: sc/inc/scfuncs.hrc:4260
+#: sc/inc/scfuncs.hrc:4416
 msgctxt "SC_OPCODE_UNIQUE"
 msgid "By col"
 msgstr "Etter kol"
 
 #. SASmk
-#: sc/inc/scfuncs.hrc:4261
+#: sc/inc/scfuncs.hrc:4417
 msgctxt "SC_OPCODE_UNIQUE"
 msgid "Logical value indicating how to compare data: TRUE - compares data across columns. FALSE or omitted (default) - compares data across rows."
 msgstr "Logisk verdi som indikerer korleis dataa skal samanliknast: SANN ‒ samanlikn data på tvers av kolonnane. USANN eller utelate ‒ samanlikna data på tvers av radene."
 
 #. hVQ6i
-#: sc/inc/scfuncs.hrc:4262
+#: sc/inc/scfuncs.hrc:4418
 msgctxt "SC_OPCODE_UNIQUE"
 msgid "Uniqueness"
 msgstr "Unikskap"
 
 #. EUVys
-#: sc/inc/scfuncs.hrc:4263
+#: sc/inc/scfuncs.hrc:4419
 msgctxt "SC_OPCODE_UNIQUE"
 msgid "Logical value that defines what values are considered unique: TRUE - returns values that occur only once. FALSE or omitted (default) - returns all distinct (different) values in the range or array."
 msgstr "Logisk verdi som definerer kva verdiar som skal sjåast på som unike: SANN ‒ returnerer verdiar som fuinst berre éin gong. USANN eller utelate (standard)‒ returnerer alle distinkte (ulike) verdiar i området eller matrisa."
 
 #. axamT
-#: sc/inc/scfuncs.hrc:4269
+#: sc/inc/scfuncs.hrc:4425
 msgctxt "SC_OPCODE_LET"
 msgid "The LET function assigns names to calculation results. This allows storing intermediate calculations, values, or defining names inside a formula. These names only apply within the scope of the LET function."
 msgstr "LET-funksjonen gjev namn til utrekningsresultat. Dette gjer det mogleg å lagra mellomliggjande utrekningar, verdiar eller definera namn i ein formel. Desse namna gjeld berre innføre ramma av LET-funksjonen."
 
 #. 6DDAi
-#: sc/inc/scfuncs.hrc:4270
+#: sc/inc/scfuncs.hrc:4426
 msgctxt "SC_OPCODE_LET"
 msgid "Name 1"
 msgstr "Namn 1"
 
 #. a7LQR
-#: sc/inc/scfuncs.hrc:4271
+#: sc/inc/scfuncs.hrc:4427
 msgctxt "SC_OPCODE_LET"
 msgid "The first name to assign. Must start with a letter. Cannot be the output of a formula or conflict with range syntax."
 msgstr "Det første namnet som skal tildelast. Må byrja med ein bokstav. Kan ikkje vera utdata frå ein formel eller i konflikt med områdesyntaks."
 
 #. KsyBM
-#: sc/inc/scfuncs.hrc:4272
+#: sc/inc/scfuncs.hrc:4428
 msgctxt "SC_OPCODE_LET"
 msgid "Name value "
 msgstr "Namneverdi "
 
 #. Dn2DE
-#: sc/inc/scfuncs.hrc:4273
+#: sc/inc/scfuncs.hrc:4429
 msgctxt "SC_OPCODE_LET"
 msgid "Name value 1, Name value 2,... The value or calculation to assign to Name."
 msgstr "Namneverdi 1, Namneverdi 2, … Verdien eller kalkulasjonen som skal tildelast namnet."
 
 #. CHAMD
-#: sc/inc/scfuncs.hrc:4274
+#: sc/inc/scfuncs.hrc:4430
 msgctxt "SC_OPCODE_LET"
 msgid "Calculation or Name "
 msgstr "Utrekning eller namn "
 
 #. tFMkP
-#: sc/inc/scfuncs.hrc:4275
+#: sc/inc/scfuncs.hrc:4431
 msgctxt "SC_OPCODE_LET"
 msgid "A calculation that uses all names within the LET function. This must be the last argument in the LET function. Or a second Name to assign to a second Name value. If a second Name is specified, Name value 2 and Calculation or Name 3 become required."
 msgstr "Ei utrekning som brukar alle namna i LET-funksjonen. Dette må vera det siste argumentet i LET-funksjonen, eller eit anna namn for å tilordna ein andre namnverdi. Viss eit anna namn er spesifisert, krevst Namnverdi 2 og utrekning, eller Namn 3."
+
+#. oBDEA
+#: sc/inc/scfuncs.hrc:4437
+msgctxt "SC_OPCODE_WRAPCOLS"
+msgid "Wraps the provided row or column of values by columns after a specified number of elements to form a new array."
+msgstr "Bryt den gjevne rada eller kolonnen med verdier etter kolonnar etter eit spesifisert tal på element for å laga ei ny matrise."
+
+#. fC6RK
+#: sc/inc/scfuncs.hrc:4438
+msgctxt "SC_OPCODE_WRAPCOLS"
+msgid "Range"
+msgstr "Område"
+
+#. nfZyj
+#: sc/inc/scfuncs.hrc:4439
+msgctxt "SC_OPCODE_WRAPCOLS"
+msgid "the range to wrap."
+msgstr "området som skal brytast"
+
+#. GE3HQ
+#: sc/inc/scfuncs.hrc:4440
+msgctxt "SC_OPCODE_WRAPCOLS"
+msgid "Wrap count"
+msgstr "Talet på brytingar"
+
+#. FWsCt
+#: sc/inc/scfuncs.hrc:4441
+msgctxt "SC_OPCODE_WRAPCOLS"
+msgid "The maximum number of values for each column."
+msgstr "Det høgste talet på verdiar for kvar kolonne."
+
+#. zkjFB
+#: sc/inc/scfuncs.hrc:4442
+msgctxt "SC_OPCODE_WRAPCOLS"
+msgid "Pad with"
+msgstr "Fyll ut med"
+
+#. knbjc
+#: sc/inc/scfuncs.hrc:4443
+msgctxt "SC_OPCODE_WRAPCOLS"
+msgid "The value with which to pad. The default is #N/A."
+msgstr "Verdien det skal fyllast ut med. Standardverdien er #I/T."
+
+#. BDA7q
+#: sc/inc/scfuncs.hrc:4449
+msgctxt "SC_OPCODE_WRAPROWS"
+msgid "Wraps the provided row or column of values by rows after a specified number of elements to form a new array."
+msgstr "Bryt den gjevne rada eller kolonnen med verdier etter rader etter eit spesifisert tal på element for å laga ei ny matrise."
+
+#. 7esii
+#: sc/inc/scfuncs.hrc:4450
+msgctxt "SC_OPCODE_WRAPROWS"
+msgid "Range"
+msgstr "Område"
+
+#. FLJwx
+#: sc/inc/scfuncs.hrc:4451
+msgctxt "SC_OPCODE_WRAPROWS"
+msgid "the range to wrap."
+msgstr "området som skal brytast"
+
+#. aLHUi
+#: sc/inc/scfuncs.hrc:4452
+msgctxt "SC_OPCODE_WRAPROWS"
+msgid "Wrap count"
+msgstr "Talet på brytingar"
+
+#. 3CEsK
+#: sc/inc/scfuncs.hrc:4453
+msgctxt "SC_OPCODE_WRAPROWS"
+msgid "The maximum number of values for each row."
+msgstr "Det høgste talet på verdiar for kvar rad."
+
+#. iTCWg
+#: sc/inc/scfuncs.hrc:4454
+msgctxt "SC_OPCODE_WRAPROWS"
+msgid "Pad with"
+msgstr "Fyll ut med"
+
+#. e3K5s
+#: sc/inc/scfuncs.hrc:4455
+msgctxt "SC_OPCODE_WRAPROWS"
+msgid "The value with which to pad. The default is #N/A."
+msgstr "Verdien det skal fyllast ut med. Standardverdien er #I/T."
 
 #. pDDme
 #: sc/inc/scstyles.hrc:29
@@ -20408,50 +21076,48 @@ msgctxt "cellprotectionpage|extended_tip|checkHideAll"
 msgid "Hides formulas and contents of the selected cells."
 msgstr "Kryss av her for å gøyma formlane og innhaldet i dei merkte cellene."
 
-#. fBWyS
+#. XDDcB
 #: sc/uiconfig/scalc/ui/cellprotectionpage.ui:99
+#, fuzzy
 msgctxt "cellprotectionpage|label1"
-msgid ""
-"Cell protection is only effective after the current sheet has been protected.\n"
-"\n"
-"Select 'Protect Sheet' from the 'Tools' menu."
+msgid "Cell protection is only effective after the current sheet has been protected."
 msgstr ""
 "Cellevernet fungerer berre etter at sjølve reknearket er verna.\n"
 "\n"
 "Vel «Vern dokument» frå verktøymenyen."
 
 #. bVREg
-#: sc/uiconfig/scalc/ui/cellprotectionpage.ui:121
+#: sc/uiconfig/scalc/ui/cellprotectionpage.ui:119
 msgctxt "cellprotectionpage|LabelProtection"
 msgid "Protection"
 msgstr "Vern"
 
 #. A5DFp
-#: sc/uiconfig/scalc/ui/cellprotectionpage.ui:151
+#: sc/uiconfig/scalc/ui/cellprotectionpage.ui:149
 msgctxt "cellprotectionpage|checkHidePrinting"
 msgid "Hide _when printing"
 msgstr "_Gøym ved utskrift"
 
 #. ZosAc
-#: sc/uiconfig/scalc/ui/cellprotectionpage.ui:160
+#: sc/uiconfig/scalc/ui/cellprotectionpage.ui:158
 msgctxt "cellprotectionpage|extended_tip|checkHidePrinting"
 msgid "Keeps the selected cells from being printed."
 msgstr "Kryss av her for å hindra utskrift av dei merkte cellene."
 
 #. QqUqE
-#: sc/uiconfig/scalc/ui/cellprotectionpage.ui:175
+#: sc/uiconfig/scalc/ui/cellprotectionpage.ui:173
 msgctxt "cellprotectionpage|label4"
 msgid "The cells selected will be omitted when printing."
 msgstr "Dei merkte cellene kjem ikkje med på utskrifta."
 
 #. 8RuyP
-#: sc/uiconfig/scalc/ui/cellprotectionpage.ui:194
+#: sc/uiconfig/scalc/ui/cellprotectionpage.ui:192
 msgctxt "cellprotectionpage|label3"
 msgid "Print"
 msgstr "Skriv ut"
 
 #. DPWp6
-#: sc/uiconfig/scalc/ui/cellprotectionpage.ui:208
+#: sc/uiconfig/scalc/ui/cellprotectionpage.ui:206
 msgctxt "cellprotectionpage|extended_tip|CellProtectionPage"
 msgid "Defines protection options for selected cells."
 msgstr "Vel kva slags vern dei merkja cellene skal få."
@@ -20726,11 +21392,11 @@ msgctxt "condformatmanager|extended_tip|CondFormatManager"
 msgid "This dialog allows you to see all the conditional formatting defined in the spreadsheet."
 msgstr "Dette dialogvindauget viser alle vilkårsformateringane som er definerte i reknearket."
 
-#. nrXMW
+#. FVsyY
 #: sc/uiconfig/scalc/ui/conditionaleasydialog.ui:8
 msgctxt "conditionaleasydialog|title"
-msgid "Apply conditional formatting..."
-msgstr "Bruk vilkårsformatering…"
+msgid "Highlight cells..."
+msgstr "Uthev celler …"
 
 #. pDRks
 #: sc/uiconfig/scalc/ui/conditionaleasydialog.ui:46
@@ -31541,32 +32207,38 @@ msgctxt "sidebarcellappearance|bordertype|accessible_name"
 msgid "Borders"
 msgstr "Kantar"
 
+#. FXK8B
+#: sc/uiconfig/scalc/ui/sidebarcellappearance.ui:87
+msgctxt "sidebarcellappearance|cellbordertype-atkobject"
+msgid "Border Style"
+msgstr "Kantlinjestil"
+
 #. D2TVi
-#: sc/uiconfig/scalc/ui/sidebarcellappearance.ui:96
+#: sc/uiconfig/scalc/ui/sidebarcellappearance.ui:101
 msgctxt "sidebarcellappearance|borderlinecolor|tooltip_text"
 msgid "Select the line color of the borders."
 msgstr "Vel linjefargane for kantane."
 
 #. GqfZD
-#: sc/uiconfig/scalc/ui/sidebarcellappearance.ui:105
+#: sc/uiconfig/scalc/ui/sidebarcellappearance.ui:110
 msgctxt "sidebarcellappearance|linecolor|tooltip_text"
 msgid "Select the line color of the borders."
 msgstr "Vel farge for kantlinjene."
 
 #. 8AUBs
-#: sc/uiconfig/scalc/ui/sidebarcellappearance.ui:115
+#: sc/uiconfig/scalc/ui/sidebarcellappearance.ui:120
 msgctxt "sidebarcellappearance|borderlinecolor-atkobject"
 msgid "Border Line Color"
 msgstr "Kantlinjefarge"
 
 #. VgXDF
-#: sc/uiconfig/scalc/ui/sidebarcellappearance.ui:136
+#: sc/uiconfig/scalc/ui/sidebarcellappearance.ui:141
 msgctxt "sidebarcellappearance|linestyle|tooltip_text"
 msgid "Select the line style of the borders."
 msgstr "Vel linjestilen for kantane."
 
 #. jaxhA
-#: sc/uiconfig/scalc/ui/sidebarcellappearance.ui:146
+#: sc/uiconfig/scalc/ui/sidebarcellappearance.ui:151
 msgctxt "sidebarcellappearance|borderlinestyle-atkobject"
 msgid "Border Line Style"
 msgstr "Kantlinjestil"

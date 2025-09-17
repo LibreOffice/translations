@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2025-04-10 15:52+0200\n"
+"POT-Creation-Date: 2025-09-17 16:16+0930\n"
 "PO-Revision-Date: 2025-08-13 16:53+0000\n"
 "Last-Translator: Xosé <xosecalvo@gmail.com>\n"
 "Language-Team: Galician <https://translations.documentfoundation.org/projects/libo_ui-25-2/scmessages/gl/>\n"
@@ -17223,89 +17223,757 @@ msgctxt "SC_OPCODE_RANDARRAY"
 msgid "Return integer (TRUE) or decimal (FALSE) values."
 msgstr "Devolver valores enteiros (VERDADEIRO) ou decimais (FALSO)."
 
-#. NJR3E
+#. ADmez
 #: sc/inc/scfuncs.hrc:4257
+msgctxt "SC_OPCODE_CHOOSECOLS"
+msgid "Returns the specified columns from an array."
+msgstr "Devolve as columnas indicadas dunha matriz."
+
+#. mgCeG
+#: sc/inc/scfuncs.hrc:4258
+msgctxt "SC_OPCODE_CHOOSECOLS"
+msgid "Array"
+msgstr "Matriz"
+
+#. vErtR
+#: sc/inc/scfuncs.hrc:4259
+msgctxt "SC_OPCODE_CHOOSECOLS"
+msgid "The array containing the columns to be returned in the new array."
+msgstr "A matriz que contén as columnas que se queren na nova matriz."
+
+#. EuvxU
+#: sc/inc/scfuncs.hrc:4260
+msgctxt "SC_OPCODE_CHOOSECOLS"
+msgid "Column "
+msgstr "Columna "
+
+#. Akc9t
+#: sc/inc/scfuncs.hrc:4261
+msgctxt "SC_OPCODE_CHOOSECOLS"
+msgid "Column 1, Column 2,... The list of column numbers to be returned."
+msgstr "Columna 1, Columna 2,... a lista de números de columna que hai que devolver."
+
+#. 78gQu
+#: sc/inc/scfuncs.hrc:4267
+msgctxt "SC_OPCODE_CHOOSEROWS"
+msgid "Returns the specified rows from an array."
+msgstr "Devolve as filas indicadas dunha matriz."
+
+#. JAg4y
+#: sc/inc/scfuncs.hrc:4268
+msgctxt "SC_OPCODE_CHOOSEROWS"
+msgid "Array"
+msgstr "Matriz"
+
+#. GFWtk
+#: sc/inc/scfuncs.hrc:4269
+msgctxt "SC_OPCODE_CHOOSEROWS"
+msgid "The array containing the rows to be returned in the new array."
+msgstr "A matriz que contén as filas que se queren na nova matriz."
+
+#. PDBbE
+#: sc/inc/scfuncs.hrc:4270
+msgctxt "SC_OPCODE_CHOOSEROWS"
+msgid "Row "
+msgstr "Fila "
+
+#. dXjgB
+#: sc/inc/scfuncs.hrc:4271
+msgctxt "SC_OPCODE_CHOOSEROWS"
+msgid "Row 1, Row 2,... The list of row numbers to be returned."
+msgstr "Fila 1, Fila 2,... A lista de números de fila que hai que devolver."
+
+#. 4uTLx
+#: sc/inc/scfuncs.hrc:4277
+msgctxt "SC_OPCODE_DROP"
+msgid "Excludes a specified number of contiguous rows or columns from the start or end of an array."
+msgstr "Exclúe un número determinado de filas ou columnas contiguos do comezo ou do final da matriz."
+
+#. W6FYc
+#: sc/inc/scfuncs.hrc:4278
+msgctxt "SC_OPCODE_DROP"
+msgid "Array"
+msgstr "Matriz"
+
+#. zEu4G
+#: sc/inc/scfuncs.hrc:4279
+msgctxt "SC_OPCODE_DROP"
+msgid "The array from which to drop rows or columns."
+msgstr "A matriz da que retirar filas ou columnas."
+
+#. BFPt4
+#: sc/inc/scfuncs.hrc:4280
+msgctxt "SC_OPCODE_DROP"
+msgid "Rows"
+msgstr "Filas"
+
+#. yyjnc
+#: sc/inc/scfuncs.hrc:4281
+msgctxt "SC_OPCODE_DROP"
+msgid "The number of rows to drop. A negative value drops from the end of the array."
+msgstr "O número de filas que hai que retirar. Un valor negativo retira desde o final da matriz."
+
+#. GQ7cE
+#: sc/inc/scfuncs.hrc:4282
+#, fuzzy
+msgctxt "SC_OPCODE_DROP"
+msgid "Column"
+msgstr "Columna"
+
+#. cAxPB
+#: sc/inc/scfuncs.hrc:4283
+msgctxt "SC_OPCODE_DROP"
+msgid "The number of columns to drop. A negative value drops from the end of the array."
+msgstr "O número de columnas que hai que retirar. Un valor negativo retira desde o final da matriz."
+
+#. cXvVY
+#: sc/inc/scfuncs.hrc:4289
+msgctxt "SC_OPCODE_EXPAND"
+msgid "Expands or pads an array to specified row and column dimensions."
+msgstr "Expande ou completa unha matriz até as dimensións de filas e columnas indicadas."
+
+#. kuERH
+#: sc/inc/scfuncs.hrc:4290
+msgctxt "SC_OPCODE_EXPAND"
+msgid "Array"
+msgstr "Matriz"
+
+#. E9YDC
+#: sc/inc/scfuncs.hrc:4291
+msgctxt "SC_OPCODE_EXPAND"
+msgid "The array to expand."
+msgstr "A matriz que hai que expandir."
+
+#. EaNgG
+#: sc/inc/scfuncs.hrc:4292
+msgctxt "SC_OPCODE_EXPAND"
+msgid "Rows"
+msgstr "Filas"
+
+#. QzQiB
+#: sc/inc/scfuncs.hrc:4293
+msgctxt "SC_OPCODE_EXPAND"
+msgid "The number of rows in the expanded array. If missing, rows will not be expanded."
+msgstr "O número de filas da matriz expandida. Se falta, non se expanden as filas."
+
+#. jLBEp
+#: sc/inc/scfuncs.hrc:4294
+#, fuzzy
+msgctxt "SC_OPCODE_EXPAND"
+msgid "Column"
+msgstr "Columna"
+
+#. EVAXE
+#: sc/inc/scfuncs.hrc:4295
+msgctxt "SC_OPCODE_EXPAND"
+msgid "The number of columns in the expanded array. If missing, columns will not be expanded."
+msgstr "O número de columnas da matriz expandida. Se faltan, non se expanden as columnas."
+
+#. QPyBK
+#: sc/inc/scfuncs.hrc:4296
+msgctxt "SC_OPCODE_EXPAND"
+msgid "Pad with"
+msgstr "Encher con"
+
+#. kHatA
+#: sc/inc/scfuncs.hrc:4297
+msgctxt "SC_OPCODE_EXPAND"
+msgid "The value with which to pad. The default is #N/A."
+msgstr "O valor co que encher. Por omisión é #N/DISP."
+
+#. P3HaZ
+#: sc/inc/scfuncs.hrc:4303
+#, fuzzy
+msgctxt "SC_OPCODE_HSTACK"
+msgid "Appends arrays horizontally to create a larger array"
+msgstr "Amence matrices horizontalmente para crear unha matriz maior."
+
+#. LnAFg
+#: sc/inc/scfuncs.hrc:4304
+msgctxt "SC_OPCODE_HSTACK"
+msgid "Array"
+msgstr "Matriz"
+
+#. uHbHC
+#: sc/inc/scfuncs.hrc:4305
+msgctxt "SC_OPCODE_HSTACK"
+msgid "The first array to append."
+msgstr "A primeira matriz que hai que amecer."
+
+#. UK4bK
+#: sc/inc/scfuncs.hrc:4306
+#, fuzzy
+msgctxt "SC_OPCODE_HSTACK"
+msgid "Array "
+msgstr "Matriz "
+
+#. QRA57
+#: sc/inc/scfuncs.hrc:4307
+msgctxt "SC_OPCODE_HSTACK"
+msgid "Array 1, Array 2,... The following arrays to append. If an array has fewer rows, #N/A error will be returned in the additional rows."
+msgstr "Matriz 1, Matriz 2,... As matrices seguintes que hai que amecer. Se unha matriz ten menos filas devólvese o erro #N/DISP nas filas adicionais."
+
+#. zmGHv
+#: sc/inc/scfuncs.hrc:4313
+#, fuzzy
+msgctxt "SC_OPCODE_VSTACK"
+msgid "Appends arrays vertically to create a larger array"
+msgstr "Amece matrices verticalmente para crear unha matriz maior."
+
+#. rhVRC
+#: sc/inc/scfuncs.hrc:4314
+msgctxt "SC_OPCODE_VSTACK"
+msgid "Array"
+msgstr "Matriz"
+
+#. tGHH9
+#: sc/inc/scfuncs.hrc:4315
+msgctxt "SC_OPCODE_VSTACK"
+msgid "The first array to append."
+msgstr "A primeira matriz que hai que amecer."
+
+#. 9isjH
+#: sc/inc/scfuncs.hrc:4316
+#, fuzzy
+msgctxt "SC_OPCODE_VSTACK"
+msgid "Array "
+msgstr "Matriz "
+
+#. Kb6Xc
+#: sc/inc/scfuncs.hrc:4317
+msgctxt "SC_OPCODE_VSTACK"
+msgid "Array 1, Array 2,... The following arrays to append. If an array has fewer columns, #N/A error will be returned in the additional columns."
+msgstr "Matriz 1, Matriz 2,... As matrices seguintes que hai que amecer. Se unha matriz ten menos columnas devólvese un erro #N/DISP nas columnas adicionais."
+
+#. JnsYT
+#: sc/inc/scfuncs.hrc:4323
+msgctxt "SC_OPCODE_TAKE"
+msgid "Returns a specified number of contiguous rows or columns from the start or end of an array."
+msgstr "Devolve un número determinado de filas ou columnas contiguas desde o comezo ou fin dunha matriz."
+
+#. dFLFb
+#: sc/inc/scfuncs.hrc:4324
+msgctxt "SC_OPCODE_TAKE"
+msgid "Array"
+msgstr "Matriz"
+
+#. ycFef
+#: sc/inc/scfuncs.hrc:4325
+msgctxt "SC_OPCODE_TAKE"
+msgid "The array from which to take rows or columns."
+msgstr "A matriz da que tomar filas ou columnas."
+
+#. DzBCL
+#: sc/inc/scfuncs.hrc:4326
+msgctxt "SC_OPCODE_TAKE"
+msgid "Rows"
+msgstr "Filas"
+
+#. KBPBn
+#: sc/inc/scfuncs.hrc:4327
+msgctxt "SC_OPCODE_TAKE"
+msgid "The number of rows to take. A negative value takes from the end of the array."
+msgstr "O número de filas que hai que tomar. Un valor negativo toma desde o fin da matriz."
+
+#. eRGvR
+#: sc/inc/scfuncs.hrc:4328
+#, fuzzy
+msgctxt "SC_OPCODE_TAKE"
+msgid "Column"
+msgstr "Columna"
+
+#. ZexcG
+#: sc/inc/scfuncs.hrc:4329
+msgctxt "SC_OPCODE_TAKE"
+msgid "The number of columns to take. A negative value takes from the end of the array."
+msgstr "O número de columnas que hai que tomar. Un valor negativo toma desde o fin da matriz."
+
+#. GwyMB
+#: sc/inc/scfuncs.hrc:4335
+msgctxt "SC_OPCODE_TEXTAFTER"
+msgid "Returns the text that occurs after a given substring or delimiter."
+msgstr "Devolve un texto que aparece despois dunha subcadea ou delimitador dados."
+
+#. cicY2
+#: sc/inc/scfuncs.hrc:4336
+msgctxt "SC_OPCODE_TEXTAFTER"
+msgid "Text"
+msgstr "Texto"
+
+#. 3WLYF
+#: sc/inc/scfuncs.hrc:4337
+msgctxt "SC_OPCODE_TEXTAFTER"
+msgid "The original text."
+msgstr "O texto orixinal."
+
+#. z4pDr
+#: sc/inc/scfuncs.hrc:4338
+msgctxt "SC_OPCODE_TEXTAFTER"
+msgid "Delimiter"
+msgstr "Delimitador"
+
+#. YEbwu
+#: sc/inc/scfuncs.hrc:4339
+msgctxt "SC_OPCODE_TEXTAFTER"
+msgid "The delimiter. Multiple delimiters can be supplied."
+msgstr "O delimitador. Pódense indicar varios delimitadores."
+
+#. HPDvF
+#: sc/inc/scfuncs.hrc:4340
+msgctxt "SC_OPCODE_TEXTAFTER"
+msgid "Instance Number"
+msgstr "Número da instancia"
+
+#. DmVZL
+#: sc/inc/scfuncs.hrc:4341
+msgctxt "SC_OPCODE_TEXTAFTER"
+msgid "The instance of the delimiter after which to extract text. The default is 1. A negative number starts searching from the end."
+msgstr "A instancia do delimitador despois da que extraer o texto. Por omisión, 1. Un número negativo comeza a busca polo final."
+
+#. fpoGj
+#: sc/inc/scfuncs.hrc:4342
+msgctxt "SC_OPCODE_TEXTAFTER"
+msgid "Match Mode"
+msgstr "Modo de coincidencia"
+
+#. iSfJi
+#: sc/inc/scfuncs.hrc:4343
+msgctxt "SC_OPCODE_TEXTAFTER"
+msgid "Set to 1 to perform a case-insensitive match. The default is 0."
+msgstr "Se é 1, ignóranse maiúsculas e minúsculas. Por omisión é 0."
+
+#. nAF2s
+#: sc/inc/scfuncs.hrc:4344
+msgctxt "SC_OPCODE_TEXTAFTER"
+msgid "Match End"
+msgstr "Coincidir o final"
+
+#. W2DGj
+#: sc/inc/scfuncs.hrc:4345
+msgctxt "SC_OPCODE_TEXTAFTER"
+msgid "Set to 1 to treat the end of text as a delimiter. The default is 0."
+msgstr "Se é 1, trátase o final do texto como delimitador. Por omisión é 0."
+
+#. PG6qj
+#: sc/inc/scfuncs.hrc:4346
+msgctxt "SC_OPCODE_TEXTAFTER"
+msgid "If Not Found"
+msgstr "Se non se atopa"
+
+#. vfgZc
+#: sc/inc/scfuncs.hrc:4347
+msgctxt "SC_OPCODE_TEXTAFTER"
+msgid "The value returned if no match is found. The default is #N/A."
+msgstr "O valor devolto se non se atopa coincidencia. Por omisión é #N/DISP."
+
+#. f88EE
+#: sc/inc/scfuncs.hrc:4353
+msgctxt "SC_OPCODE_TEXTBEFORE"
+msgid "Returns the text that occurs before a given substring or delimiter."
+msgstr "Devolve o texto que aparece antes dunha subcadea ou delimitador datos."
+
+#. NNriC
+#: sc/inc/scfuncs.hrc:4354
+msgctxt "SC_OPCODE_TEXTBEFORE"
+msgid "Text"
+msgstr "Texto"
+
+#. HsEG8
+#: sc/inc/scfuncs.hrc:4355
+msgctxt "SC_OPCODE_TEXTBEFORE"
+msgid "The original text."
+msgstr "O texto orixinal."
+
+#. E4a5z
+#: sc/inc/scfuncs.hrc:4356
+msgctxt "SC_OPCODE_TEXTBEFORE"
+msgid "Delimiter"
+msgstr "Delimitador"
+
+#. qDFZy
+#: sc/inc/scfuncs.hrc:4357
+msgctxt "SC_OPCODE_TEXTBEFORE"
+msgid "The delimiter. Multiple delimiters can be supplied."
+msgstr "O delimitador. Pódense indicar varios delimitadores."
+
+#. gNHAi
+#: sc/inc/scfuncs.hrc:4358
+msgctxt "SC_OPCODE_TEXTBEFORE"
+msgid "Instance Number"
+msgstr "Número da instancia"
+
+#. sD4zC
+#: sc/inc/scfuncs.hrc:4359
+msgctxt "SC_OPCODE_TEXTBEFORE"
+msgid "The instance of the delimiter before which to extract text. The default is 1. A negative number starts searching from the end."
+msgstr "A instancia do delimitador antes da que extraer o texto. Por omisión é 1. Un número negativo comeza a busca polo final."
+
+#. Adzeh
+#: sc/inc/scfuncs.hrc:4360
+msgctxt "SC_OPCODE_TEXTBEFORE"
+msgid "Match Mode"
+msgstr "Modo de coincidencia"
+
+#. Pi2Ti
+#: sc/inc/scfuncs.hrc:4361
+msgctxt "SC_OPCODE_TEXTBEFORE"
+msgid "Set to 1 to perform a case-insensitive match. The default is 0."
+msgstr "Se é 1, ignóranse maiúsculas e minúsculas. Por omisión é 0."
+
+#. sACA2
+#: sc/inc/scfuncs.hrc:4362
+msgctxt "SC_OPCODE_TEXTBEFORE"
+msgid "Match End"
+msgstr "Coincidir o final"
+
+#. UxpD6
+#: sc/inc/scfuncs.hrc:4363
+msgctxt "SC_OPCODE_TEXTBEFORE"
+msgid "Set to 1 to treat the end of text as a delimiter. The default is 0."
+msgstr "Se é 1, trátase o final do texto como delimitador. Por omisión é 0."
+
+#. aCnZX
+#: sc/inc/scfuncs.hrc:4364
+msgctxt "SC_OPCODE_TEXTBEFORE"
+msgid "If Not Found"
+msgstr "Se non se atopa"
+
+#. xCZYH
+#: sc/inc/scfuncs.hrc:4365
+msgctxt "SC_OPCODE_TEXTBEFORE"
+msgid "The value returned if no match is found. The default is #N/A."
+msgstr "O valor devolto se non se atopa coincidencia. Por omisión é #N/DISP."
+
+#. wdZTd
+#: sc/inc/scfuncs.hrc:4371
+msgctxt "SC_OPCODE_TEXTSPLIT"
+msgid "Splits text by a given delimiter to an array of multiple cells."
+msgstr "Divide o texto por un delimitador dado nunha matriz de varias celas."
+
+#. DH7h4
+#: sc/inc/scfuncs.hrc:4372
+msgctxt "SC_OPCODE_TEXTSPLIT"
+msgid "Text"
+msgstr "Texto"
+
+#. dqSdF
+#: sc/inc/scfuncs.hrc:4373
+msgctxt "SC_OPCODE_TEXTSPLIT"
+msgid "The text to split."
+msgstr "O texto que dividir."
+
+#. pdpxt
+#: sc/inc/scfuncs.hrc:4374
+msgctxt "SC_OPCODE_TEXTSPLIT"
+msgid "Column Delimiter"
+msgstr "Delimitador de columna"
+
+#. nfMAr
+#: sc/inc/scfuncs.hrc:4375
+msgctxt "SC_OPCODE_TEXTSPLIT"
+msgid "The text to delimit the columns. Multiple delimiters can be supplied."
+msgstr "O texto que delimita as columnas. Pódense indicar varios delimitadores."
+
+#. qZGq2
+#: sc/inc/scfuncs.hrc:4376
+msgctxt "SC_OPCODE_TEXTSPLIT"
+msgid "Row Delimiter"
+msgstr "Delimitador de filas"
+
+#. dPnbc
+#: sc/inc/scfuncs.hrc:4377
+msgctxt "SC_OPCODE_TEXTSPLIT"
+msgid "The text to delimit the rows. Multiple delimiters can be supplied."
+msgstr "O texto para delimitar as filas. Pódense indicar varios delimitadores."
+
+#. jD3sa
+#: sc/inc/scfuncs.hrc:4378
+msgctxt "SC_OPCODE_TEXTSPLIT"
+msgid "Ignore Empty"
+msgstr "Ignorar baleiro"
+
+#. 6LwdP
+#: sc/inc/scfuncs.hrc:4379
+msgctxt "SC_OPCODE_TEXTSPLIT"
+msgid "Set to TRUE to ignore consecutive delimiters otherwise it creates an empty cell. The default is FALSE."
+msgstr "Defina como VERDADEIRO para ignorar delimitadores consecutivos; se non, créase unha cela baleira. Por omisión é FALSO."
+
+#. kkAYp
+#: sc/inc/scfuncs.hrc:4380
+msgctxt "SC_OPCODE_TEXTSPLIT"
+msgid "Match mode"
+msgstr "Modo de coincidencia"
+
+#. iX8cx
+#: sc/inc/scfuncs.hrc:4381
+msgctxt "SC_OPCODE_TEXTSPLIT"
+msgid "Set to 1 to perform a case-insensitive match. The default is 0."
+msgstr "Se é 1, ignóranse maiúsculas e minúsculas. Por omisión é 0."
+
+#. vXECz
+#: sc/inc/scfuncs.hrc:4382
+msgctxt "SC_OPCODE_TEXTSPLIT"
+msgid "Pad with"
+msgstr "Encher con"
+
+#. h4db2
+#: sc/inc/scfuncs.hrc:4383
+msgctxt "SC_OPCODE_TEXTSPLIT"
+msgid "The value with which to pad. The default is #N/A."
+msgstr "O valor co que encher. Por omisión é #N/DISP."
+
+#. 4dkE2
+#: sc/inc/scfuncs.hrc:4389
+#, fuzzy
+msgctxt "SC_OPCODE_TOCOL"
+msgid "transforms an array into a single column."
+msgstr "Transforma unha matriz nunha única columna."
+
+#. UAzNC
+#: sc/inc/scfuncs.hrc:4390
+msgctxt "SC_OPCODE_TOCOL"
+msgid "Array"
+msgstr "Matriz"
+
+#. CHojs
+#: sc/inc/scfuncs.hrc:4391
+msgctxt "SC_OPCODE_TOCOL"
+msgid "The range or array to return as a single column."
+msgstr "O intervalo ou matriz que hai que devolver como columna única."
+
+#. uACXu
+#: sc/inc/scfuncs.hrc:4392
+msgctxt "SC_OPCODE_TOCOL"
+msgid "Ignore"
+msgstr "Ignorar"
+
+#. b7EQW
+#: sc/inc/scfuncs.hrc:4393
+msgctxt "SC_OPCODE_TOCOL"
+msgid "Whether to ignore certain types of values. 0 or omitted - keep all values (default). 1 - ignore blank cells. 2 - ignore cells with error. 3 - ignore blanks cells and cells with error."
+msgstr "Se ignorar determinados tipos de valores. = ou omitido - manter todos os valores (predeterminado). 1 - ignorar celas baleiras. 2 - ignorar celas con erros. 3 - ignorar celas baleiras e celas con erros."
+
+#. qNLAi
+#: sc/inc/scfuncs.hrc:4394
+msgctxt "SC_OPCODE_TOCOL"
+msgid "Scan by column"
+msgstr "Examinar por columna"
+
+#. bcArN
+#: sc/inc/scfuncs.hrc:4395
+msgctxt "SC_OPCODE_TOCOL"
+msgid "Scan the array by column. FALSE or omitted (default) - the array is scanned by row. TRUE - the array is scanned by column."
+msgstr "Examinar a matriz por columna FALSO ou omitido (predeterminado) - a matriz examínase por columna. VERDADEIRO - a matriz examínase por columna."
+
+#. PGyxj
+#: sc/inc/scfuncs.hrc:4401
+msgctxt "SC_OPCODE_TOROW"
+msgid "transforms an array into a single row."
+msgstr "transforma unha matriz nunha fila única."
+
+#. W9bWe
+#: sc/inc/scfuncs.hrc:4402
+msgctxt "SC_OPCODE_TOROW"
+msgid "Array"
+msgstr "Matriz"
+
+#. 5MEvT
+#: sc/inc/scfuncs.hrc:4403
+msgctxt "SC_OPCODE_TOROW"
+msgid "The range or array to return as a single row."
+msgstr "O intervalo ou matriz que hai que devolver como fila única."
+
+#. AqqBC
+#: sc/inc/scfuncs.hrc:4404
+msgctxt "SC_OPCODE_TOROW"
+msgid "Ignore"
+msgstr "Ignorar"
+
+#. wcpQF
+#: sc/inc/scfuncs.hrc:4405
+msgctxt "SC_OPCODE_TOROW"
+msgid "Whether to ignore certain types of values. 0 or omitted - keep all values (default). 1 - ignore blank cells. 2 - ignore cells with error. 3 - ignore blanks cells and cells with error."
+msgstr "Se ignorar determinados tipos de valores. = ou omitido - manter todos os valores (predeterminado). 1 - ignorar celas baleiras. 2 - ignorar celas con erros. 3 - ignorar celas baleiras e celas con erros."
+
+#. E4XDf
+#: sc/inc/scfuncs.hrc:4406
+msgctxt "SC_OPCODE_TOROW"
+msgid "Scan by column"
+msgstr "Examinar por columna"
+
+#. 5bZRy
+#: sc/inc/scfuncs.hrc:4407
+msgctxt "SC_OPCODE_TOROW"
+msgid "Scan the array by column. FALSE or omitted (default) - the array is scanned by row. TRUE - the array is scanned by column."
+msgstr "Examinar a matriz por columna FALSO ou omitido (predeterminado) - a matriz examínase por columna. VERDADEIRO - a matriz examínase por columna."
+
+#. NJR3E
+#: sc/inc/scfuncs.hrc:4413
 msgctxt "SC_OPCODE_UNIQUE"
 msgid "Returns a list of unique values from a range or array."
 msgstr "Devolve unha lista de valores únicos dun intervalo ou matriz."
 
 #. NepxE
-#: sc/inc/scfuncs.hrc:4258
+#: sc/inc/scfuncs.hrc:4414
 msgctxt "SC_OPCODE_UNIQUE"
 msgid "Array"
 msgstr "Matriz"
 
 #. 2sVga
-#: sc/inc/scfuncs.hrc:4259
+#: sc/inc/scfuncs.hrc:4415
 msgctxt "SC_OPCODE_UNIQUE"
 msgid "The range or array from which to return unique values."
 msgstr "O intervalo ou matriz do que devolver valores únicos."
 
 #. fGfWS
-#: sc/inc/scfuncs.hrc:4260
+#: sc/inc/scfuncs.hrc:4416
 msgctxt "SC_OPCODE_UNIQUE"
 msgid "By col"
 msgstr "Por columna"
 
 #. SASmk
-#: sc/inc/scfuncs.hrc:4261
+#: sc/inc/scfuncs.hrc:4417
 msgctxt "SC_OPCODE_UNIQUE"
 msgid "Logical value indicating how to compare data: TRUE - compares data across columns. FALSE or omitted (default) - compares data across rows."
 msgstr "Valor lóxico que indica como comparar os datos: VERDADEIRO - compara os datos entre columnas. FALSO, ou omitido, (predeterminado) - compara os datos entre filas."
 
 #. hVQ6i
-#: sc/inc/scfuncs.hrc:4262
+#: sc/inc/scfuncs.hrc:4418
 msgctxt "SC_OPCODE_UNIQUE"
 msgid "Uniqueness"
 msgstr "Unicidade"
 
 #. EUVys
-#: sc/inc/scfuncs.hrc:4263
+#: sc/inc/scfuncs.hrc:4419
 msgctxt "SC_OPCODE_UNIQUE"
 msgid "Logical value that defines what values are considered unique: TRUE - returns values that occur only once. FALSE or omitted (default) - returns all distinct (different) values in the range or array."
 msgstr "Valor lóxico que define que valores se consideran únicos: VERDADEIRO - devolve valores que só aparecen unha vez. FALSO, ou omitido, (predeterminado) - devolve todos os valores distintos (diferentes) do intervalo ou matriz."
 
 #. axamT
-#: sc/inc/scfuncs.hrc:4269
+#: sc/inc/scfuncs.hrc:4425
 msgctxt "SC_OPCODE_LET"
 msgid "The LET function assigns names to calculation results. This allows storing intermediate calculations, values, or defining names inside a formula. These names only apply within the scope of the LET function."
 msgstr "A función LET asigna nomes a resultados de cálculos. Isto permite almacenar cálculos intermedios, valores ou definir nomes dentro dunha fórmula. Estes nomes só se aplican no ámbito da función LET."
 
 #. 6DDAi
-#: sc/inc/scfuncs.hrc:4270
+#: sc/inc/scfuncs.hrc:4426
 msgctxt "SC_OPCODE_LET"
 msgid "Name 1"
 msgstr "Nome 1"
 
 #. a7LQR
-#: sc/inc/scfuncs.hrc:4271
+#: sc/inc/scfuncs.hrc:4427
 msgctxt "SC_OPCODE_LET"
 msgid "The first name to assign. Must start with a letter. Cannot be the output of a formula or conflict with range syntax."
 msgstr "O primeiro nome para asignar. Debe comezar por unha letra. Non pode ser a saída dunha fórmula ou entrar en conflito coa sintaxe dun intervalo."
 
 #. KsyBM
-#: sc/inc/scfuncs.hrc:4272
+#: sc/inc/scfuncs.hrc:4428
 msgctxt "SC_OPCODE_LET"
 msgid "Name value "
 msgstr "Valor do nome - "
 
 #. Dn2DE
-#: sc/inc/scfuncs.hrc:4273
+#: sc/inc/scfuncs.hrc:4429
 msgctxt "SC_OPCODE_LET"
 msgid "Name value 1, Name value 2,... The value or calculation to assign to Name."
 msgstr "Valor do nome 1, Valor do nome 2,... O valor ou cálculo para asignar a Nome."
 
 #. CHAMD
-#: sc/inc/scfuncs.hrc:4274
+#: sc/inc/scfuncs.hrc:4430
 msgctxt "SC_OPCODE_LET"
 msgid "Calculation or Name "
 msgstr "Cálculo ou Nome - "
 
 #. tFMkP
-#: sc/inc/scfuncs.hrc:4275
+#: sc/inc/scfuncs.hrc:4431
 msgctxt "SC_OPCODE_LET"
 msgid "A calculation that uses all names within the LET function. This must be the last argument in the LET function. Or a second Name to assign to a second Name value. If a second Name is specified, Name value 2 and Calculation or Name 3 become required."
 msgstr "Un cálculo que emprega todos os nomes dentro da función LET. Debe ser o derradeiro argumento da función LET. Ou un segundo Nome para asignar a un segundo valor de Nome. Se se indica un segundo Nome, Valor de nome 2 e Cálculo ou Nome 3 son obrigatorios."
+
+#. oBDEA
+#: sc/inc/scfuncs.hrc:4437
+msgctxt "SC_OPCODE_WRAPCOLS"
+msgid "Wraps the provided row or column of values by columns after a specified number of elements to form a new array."
+msgstr ""
+
+#. fC6RK
+#: sc/inc/scfuncs.hrc:4438
+msgctxt "SC_OPCODE_WRAPCOLS"
+msgid "Range"
+msgstr "Intervalo"
+
+#. nfZyj
+#: sc/inc/scfuncs.hrc:4439
+msgctxt "SC_OPCODE_WRAPCOLS"
+msgid "the range to wrap."
+msgstr ""
+
+#. GE3HQ
+#: sc/inc/scfuncs.hrc:4440
+msgctxt "SC_OPCODE_WRAPCOLS"
+msgid "Wrap count"
+msgstr ""
+
+#. FWsCt
+#: sc/inc/scfuncs.hrc:4441
+msgctxt "SC_OPCODE_WRAPCOLS"
+msgid "The maximum number of values for each column."
+msgstr "O número máximo de valores de cada columna."
+
+#. zkjFB
+#: sc/inc/scfuncs.hrc:4442
+msgctxt "SC_OPCODE_WRAPCOLS"
+msgid "Pad with"
+msgstr "Encher con"
+
+#. knbjc
+#: sc/inc/scfuncs.hrc:4443
+msgctxt "SC_OPCODE_WRAPCOLS"
+msgid "The value with which to pad. The default is #N/A."
+msgstr "O valor co que encher. Por omisión é #N/DISP."
+
+#. BDA7q
+#: sc/inc/scfuncs.hrc:4449
+msgctxt "SC_OPCODE_WRAPROWS"
+msgid "Wraps the provided row or column of values by rows after a specified number of elements to form a new array."
+msgstr ""
+
+#. 7esii
+#: sc/inc/scfuncs.hrc:4450
+msgctxt "SC_OPCODE_WRAPROWS"
+msgid "Range"
+msgstr "Intervalo"
+
+#. FLJwx
+#: sc/inc/scfuncs.hrc:4451
+msgctxt "SC_OPCODE_WRAPROWS"
+msgid "the range to wrap."
+msgstr ""
+
+#. aLHUi
+#: sc/inc/scfuncs.hrc:4452
+msgctxt "SC_OPCODE_WRAPROWS"
+msgid "Wrap count"
+msgstr ""
+
+#. 3CEsK
+#: sc/inc/scfuncs.hrc:4453
+msgctxt "SC_OPCODE_WRAPROWS"
+msgid "The maximum number of values for each row."
+msgstr "O número máximo de valores de cada fila."
+
+#. iTCWg
+#: sc/inc/scfuncs.hrc:4454
+msgctxt "SC_OPCODE_WRAPROWS"
+msgid "Pad with"
+msgstr "Encher con"
+
+#. e3K5s
+#: sc/inc/scfuncs.hrc:4455
+msgctxt "SC_OPCODE_WRAPROWS"
+msgid "The value with which to pad. The default is #N/A."
+msgstr "O valor co que encher. Por omisión é #N/DISP."
 
 #. pDDme
 #: sc/inc/scstyles.hrc:29
@@ -20408,50 +21076,48 @@ msgctxt "cellprotectionpage|extended_tip|checkHideAll"
 msgid "Hides formulas and contents of the selected cells."
 msgstr "Agocha as fórmulas e o contido das celas seleccionadas."
 
-#. fBWyS
+#. XDDcB
 #: sc/uiconfig/scalc/ui/cellprotectionpage.ui:99
+#, fuzzy
 msgctxt "cellprotectionpage|label1"
-msgid ""
-"Cell protection is only effective after the current sheet has been protected.\n"
-"\n"
-"Select 'Protect Sheet' from the 'Tools' menu."
+msgid "Cell protection is only effective after the current sheet has been protected."
 msgstr ""
 "A protección das celas só terá efecto se a folla actual estiver protexida.\n"
 "\n"
 "Seleccione «Protexer folla» no menú «Ferramentas»."
 
 #. bVREg
-#: sc/uiconfig/scalc/ui/cellprotectionpage.ui:121
+#: sc/uiconfig/scalc/ui/cellprotectionpage.ui:119
 msgctxt "cellprotectionpage|LabelProtection"
 msgid "Protection"
 msgstr "Protección"
 
 #. A5DFp
-#: sc/uiconfig/scalc/ui/cellprotectionpage.ui:151
+#: sc/uiconfig/scalc/ui/cellprotectionpage.ui:149
 msgctxt "cellprotectionpage|checkHidePrinting"
 msgid "Hide _when printing"
 msgstr "Agochar _durante a impresión"
 
 #. ZosAc
-#: sc/uiconfig/scalc/ui/cellprotectionpage.ui:160
+#: sc/uiconfig/scalc/ui/cellprotectionpage.ui:158
 msgctxt "cellprotectionpage|extended_tip|checkHidePrinting"
 msgid "Keeps the selected cells from being printed."
 msgstr "Impide que se impriman as celas seleccionadas."
 
 #. QqUqE
-#: sc/uiconfig/scalc/ui/cellprotectionpage.ui:175
+#: sc/uiconfig/scalc/ui/cellprotectionpage.ui:173
 msgctxt "cellprotectionpage|label4"
 msgid "The cells selected will be omitted when printing."
 msgstr "As celas seleccionadas serán omitidas ao imprimir."
 
 #. 8RuyP
-#: sc/uiconfig/scalc/ui/cellprotectionpage.ui:194
+#: sc/uiconfig/scalc/ui/cellprotectionpage.ui:192
 msgctxt "cellprotectionpage|label3"
 msgid "Print"
 msgstr "Imprimir"
 
 #. DPWp6
-#: sc/uiconfig/scalc/ui/cellprotectionpage.ui:208
+#: sc/uiconfig/scalc/ui/cellprotectionpage.ui:206
 msgctxt "cellprotectionpage|extended_tip|CellProtectionPage"
 msgid "Defines protection options for selected cells."
 msgstr "Indica as opcións de protección das celas seleccionadas."
@@ -20726,11 +21392,11 @@ msgctxt "condformatmanager|extended_tip|CondFormatManager"
 msgid "This dialog allows you to see all the conditional formatting defined in the spreadsheet."
 msgstr "Esta caixa de diálogo permite ver todos os formatos condicionais definidos na folla de cálculo."
 
-#. nrXMW
+#. FVsyY
 #: sc/uiconfig/scalc/ui/conditionaleasydialog.ui:8
 msgctxt "conditionaleasydialog|title"
-msgid "Apply conditional formatting..."
-msgstr "Aplicar formato condicional..."
+msgid "Highlight cells..."
+msgstr "Realzar celas..."
 
 #. pDRks
 #: sc/uiconfig/scalc/ui/conditionaleasydialog.ui:46
@@ -31541,32 +32207,38 @@ msgctxt "sidebarcellappearance|bordertype|accessible_name"
 msgid "Borders"
 msgstr "Bordos"
 
+#. FXK8B
+#: sc/uiconfig/scalc/ui/sidebarcellappearance.ui:87
+msgctxt "sidebarcellappearance|cellbordertype-atkobject"
+msgid "Border Style"
+msgstr "Estilo de bordo"
+
 #. D2TVi
-#: sc/uiconfig/scalc/ui/sidebarcellappearance.ui:96
+#: sc/uiconfig/scalc/ui/sidebarcellappearance.ui:101
 msgctxt "sidebarcellappearance|borderlinecolor|tooltip_text"
 msgid "Select the line color of the borders."
 msgstr "Seleccione a cor de liña dos bordos."
 
 #. GqfZD
-#: sc/uiconfig/scalc/ui/sidebarcellappearance.ui:105
+#: sc/uiconfig/scalc/ui/sidebarcellappearance.ui:110
 msgctxt "sidebarcellappearance|linecolor|tooltip_text"
 msgid "Select the line color of the borders."
 msgstr "Seleccione a cor de liña dos bordos."
 
 #. 8AUBs
-#: sc/uiconfig/scalc/ui/sidebarcellappearance.ui:115
+#: sc/uiconfig/scalc/ui/sidebarcellappearance.ui:120
 msgctxt "sidebarcellappearance|borderlinecolor-atkobject"
 msgid "Border Line Color"
 msgstr "Cor da liña de bordo"
 
 #. VgXDF
-#: sc/uiconfig/scalc/ui/sidebarcellappearance.ui:136
+#: sc/uiconfig/scalc/ui/sidebarcellappearance.ui:141
 msgctxt "sidebarcellappearance|linestyle|tooltip_text"
 msgid "Select the line style of the borders."
 msgstr "Seleccione o estilo de liña dos bordos."
 
 #. jaxhA
-#: sc/uiconfig/scalc/ui/sidebarcellappearance.ui:146
+#: sc/uiconfig/scalc/ui/sidebarcellappearance.ui:151
 msgctxt "sidebarcellappearance|borderlinestyle-atkobject"
 msgid "Border Line Style"
 msgstr "Estilo da liña de bordo"

@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2025-04-10 15:52+0200\n"
+"POT-Creation-Date: 2025-09-17 16:16+0930\n"
 "PO-Revision-Date: 2025-06-13 16:53+0000\n"
 "Last-Translator: Andreas Pettersson <amvpet@gmail.com>\n"
 "Language-Team: Swedish <https://translations.documentfoundation.org/projects/libo_ui-25-2/scmessages/sv/>\n"
@@ -17223,89 +17223,757 @@ msgctxt "SC_OPCODE_RANDARRAY"
 msgid "Return integer (TRUE) or decimal (FALSE) values."
 msgstr "Returnera heltalsvärden (TRUE) eller decimalvärden (FALSE)."
 
-#. NJR3E
+#. ADmez
 #: sc/inc/scfuncs.hrc:4257
+msgctxt "SC_OPCODE_CHOOSECOLS"
+msgid "Returns the specified columns from an array."
+msgstr "Returnerar de angivna kolumnerna från en matris."
+
+#. mgCeG
+#: sc/inc/scfuncs.hrc:4258
+msgctxt "SC_OPCODE_CHOOSECOLS"
+msgid "Array"
+msgstr "Matris"
+
+#. vErtR
+#: sc/inc/scfuncs.hrc:4259
+msgctxt "SC_OPCODE_CHOOSECOLS"
+msgid "The array containing the columns to be returned in the new array."
+msgstr "Matrisen som innehåller kolumnerna som ska returneras i den nya matrisen."
+
+#. EuvxU
+#: sc/inc/scfuncs.hrc:4260
+msgctxt "SC_OPCODE_CHOOSECOLS"
+msgid "Column "
+msgstr "Kolumn "
+
+#. Akc9t
+#: sc/inc/scfuncs.hrc:4261
+msgctxt "SC_OPCODE_CHOOSECOLS"
+msgid "Column 1, Column 2,... The list of column numbers to be returned."
+msgstr "Kolumn 1, Kolumn 2,... Listan över kolumnnummer som ska returneras."
+
+#. 78gQu
+#: sc/inc/scfuncs.hrc:4267
+msgctxt "SC_OPCODE_CHOOSEROWS"
+msgid "Returns the specified rows from an array."
+msgstr "Returnerar de angivna raderna från en matris."
+
+#. JAg4y
+#: sc/inc/scfuncs.hrc:4268
+msgctxt "SC_OPCODE_CHOOSEROWS"
+msgid "Array"
+msgstr "Matris"
+
+#. GFWtk
+#: sc/inc/scfuncs.hrc:4269
+msgctxt "SC_OPCODE_CHOOSEROWS"
+msgid "The array containing the rows to be returned in the new array."
+msgstr "Matrisen som innehåller raderna som ska returneras i den nya matrisen."
+
+#. PDBbE
+#: sc/inc/scfuncs.hrc:4270
+msgctxt "SC_OPCODE_CHOOSEROWS"
+msgid "Row "
+msgstr "Rad "
+
+#. dXjgB
+#: sc/inc/scfuncs.hrc:4271
+msgctxt "SC_OPCODE_CHOOSEROWS"
+msgid "Row 1, Row 2,... The list of row numbers to be returned."
+msgstr "Rad 1, Rad 2,... Listan över radnummer som ska returneras."
+
+#. 4uTLx
+#: sc/inc/scfuncs.hrc:4277
+msgctxt "SC_OPCODE_DROP"
+msgid "Excludes a specified number of contiguous rows or columns from the start or end of an array."
+msgstr "Exkluderar ett specificerat antal sammanhängande rader eller kolumner från början eller slutet av en matris."
+
+#. W6FYc
+#: sc/inc/scfuncs.hrc:4278
+msgctxt "SC_OPCODE_DROP"
+msgid "Array"
+msgstr "Matris"
+
+#. zEu4G
+#: sc/inc/scfuncs.hrc:4279
+msgctxt "SC_OPCODE_DROP"
+msgid "The array from which to drop rows or columns."
+msgstr "Matrisen från vilken rader eller kolumner ska exkluderas."
+
+#. BFPt4
+#: sc/inc/scfuncs.hrc:4280
+msgctxt "SC_OPCODE_DROP"
+msgid "Rows"
+msgstr "Rader"
+
+#. yyjnc
+#: sc/inc/scfuncs.hrc:4281
+msgctxt "SC_OPCODE_DROP"
+msgid "The number of rows to drop. A negative value drops from the end of the array."
+msgstr "Antalet rader som ska exkluderas. Ett negativt värde tar bort från slutet av matrisen."
+
+#. GQ7cE
+#: sc/inc/scfuncs.hrc:4282
+#, fuzzy
+msgctxt "SC_OPCODE_DROP"
+msgid "Column"
+msgstr "Kolumn"
+
+#. cAxPB
+#: sc/inc/scfuncs.hrc:4283
+msgctxt "SC_OPCODE_DROP"
+msgid "The number of columns to drop. A negative value drops from the end of the array."
+msgstr "Antalet kolumner som ska exkluderas. Ett negativt värde tar bort från slutet av matrisen."
+
+#. cXvVY
+#: sc/inc/scfuncs.hrc:4289
+msgctxt "SC_OPCODE_EXPAND"
+msgid "Expands or pads an array to specified row and column dimensions."
+msgstr "Expanderar eller fyller ut en matris till specificerade rad- och kolumndimensioner."
+
+#. kuERH
+#: sc/inc/scfuncs.hrc:4290
+msgctxt "SC_OPCODE_EXPAND"
+msgid "Array"
+msgstr "Matris"
+
+#. E9YDC
+#: sc/inc/scfuncs.hrc:4291
+msgctxt "SC_OPCODE_EXPAND"
+msgid "The array to expand."
+msgstr "Matrisen att expandera."
+
+#. EaNgG
+#: sc/inc/scfuncs.hrc:4292
+msgctxt "SC_OPCODE_EXPAND"
+msgid "Rows"
+msgstr "Rader"
+
+#. QzQiB
+#: sc/inc/scfuncs.hrc:4293
+msgctxt "SC_OPCODE_EXPAND"
+msgid "The number of rows in the expanded array. If missing, rows will not be expanded."
+msgstr "Antalet rader i den expanderade matrisen. Om det saknas kommer raderna inte att utökas."
+
+#. jLBEp
+#: sc/inc/scfuncs.hrc:4294
+#, fuzzy
+msgctxt "SC_OPCODE_EXPAND"
+msgid "Column"
+msgstr "Kolumn"
+
+#. EVAXE
+#: sc/inc/scfuncs.hrc:4295
+msgctxt "SC_OPCODE_EXPAND"
+msgid "The number of columns in the expanded array. If missing, columns will not be expanded."
+msgstr "Antalet kolumner i den expanderade matrisen. Om det saknas kommer kolumner inte att utökas."
+
+#. QPyBK
+#: sc/inc/scfuncs.hrc:4296
+msgctxt "SC_OPCODE_EXPAND"
+msgid "Pad with"
+msgstr "Fyll ut med"
+
+#. kHatA
+#: sc/inc/scfuncs.hrc:4297
+msgctxt "SC_OPCODE_EXPAND"
+msgid "The value with which to pad. The default is #N/A."
+msgstr "Värdet som ska fyllas ut med. Standard är #N/A."
+
+#. P3HaZ
+#: sc/inc/scfuncs.hrc:4303
+#, fuzzy
+msgctxt "SC_OPCODE_HSTACK"
+msgid "Appends arrays horizontally to create a larger array"
+msgstr "Lägger till matriser horisontellt för att skapa en större matris."
+
+#. LnAFg
+#: sc/inc/scfuncs.hrc:4304
+msgctxt "SC_OPCODE_HSTACK"
+msgid "Array"
+msgstr "Matris"
+
+#. uHbHC
+#: sc/inc/scfuncs.hrc:4305
+msgctxt "SC_OPCODE_HSTACK"
+msgid "The first array to append."
+msgstr "Den första matrisen som ska läggas till."
+
+#. UK4bK
+#: sc/inc/scfuncs.hrc:4306
+#, fuzzy
+msgctxt "SC_OPCODE_HSTACK"
+msgid "Array "
+msgstr "Matris "
+
+#. QRA57
+#: sc/inc/scfuncs.hrc:4307
+msgctxt "SC_OPCODE_HSTACK"
+msgid "Array 1, Array 2,... The following arrays to append. If an array has fewer rows, #N/A error will be returned in the additional rows."
+msgstr "Matris 1, Matris 2,... Följande matriser ska läggas till. Om en matris har färre rader kommer #N/A-felet att returneras i de ytterligare raderna."
+
+#. zmGHv
+#: sc/inc/scfuncs.hrc:4313
+#, fuzzy
+msgctxt "SC_OPCODE_VSTACK"
+msgid "Appends arrays vertically to create a larger array"
+msgstr "Lägger till matriser vertikalt för att skapa en större matris."
+
+#. rhVRC
+#: sc/inc/scfuncs.hrc:4314
+msgctxt "SC_OPCODE_VSTACK"
+msgid "Array"
+msgstr "Matris"
+
+#. tGHH9
+#: sc/inc/scfuncs.hrc:4315
+msgctxt "SC_OPCODE_VSTACK"
+msgid "The first array to append."
+msgstr "Den första matrisen som ska läggas till."
+
+#. 9isjH
+#: sc/inc/scfuncs.hrc:4316
+#, fuzzy
+msgctxt "SC_OPCODE_VSTACK"
+msgid "Array "
+msgstr "Matris "
+
+#. Kb6Xc
+#: sc/inc/scfuncs.hrc:4317
+msgctxt "SC_OPCODE_VSTACK"
+msgid "Array 1, Array 2,... The following arrays to append. If an array has fewer columns, #N/A error will be returned in the additional columns."
+msgstr "Matris 1, Matris 2,... Följande matriser ska läggas till. Om en matris har färre kolumner kommer #N/A-felet att returneras i de ytterligare kolumnerna."
+
+#. JnsYT
+#: sc/inc/scfuncs.hrc:4323
+msgctxt "SC_OPCODE_TAKE"
+msgid "Returns a specified number of contiguous rows or columns from the start or end of an array."
+msgstr "Returnerar ett angivet antal sammanhängande rader eller kolumner från början eller slutet av en matris."
+
+#. dFLFb
+#: sc/inc/scfuncs.hrc:4324
+msgctxt "SC_OPCODE_TAKE"
+msgid "Array"
+msgstr "Matris"
+
+#. ycFef
+#: sc/inc/scfuncs.hrc:4325
+msgctxt "SC_OPCODE_TAKE"
+msgid "The array from which to take rows or columns."
+msgstr "Matrisen från vilken rader eller kolumner ska tas från."
+
+#. DzBCL
+#: sc/inc/scfuncs.hrc:4326
+msgctxt "SC_OPCODE_TAKE"
+msgid "Rows"
+msgstr "Rader"
+
+#. KBPBn
+#: sc/inc/scfuncs.hrc:4327
+msgctxt "SC_OPCODE_TAKE"
+msgid "The number of rows to take. A negative value takes from the end of the array."
+msgstr "Antal rader som ska tas. Ett negativt värde tar från slutet av matrisen."
+
+#. eRGvR
+#: sc/inc/scfuncs.hrc:4328
+#, fuzzy
+msgctxt "SC_OPCODE_TAKE"
+msgid "Column"
+msgstr "Kolumn"
+
+#. ZexcG
+#: sc/inc/scfuncs.hrc:4329
+msgctxt "SC_OPCODE_TAKE"
+msgid "The number of columns to take. A negative value takes from the end of the array."
+msgstr "Antalet kolumner som ska tas. Ett negativt värde tar från slutet av matrisen."
+
+#. GwyMB
+#: sc/inc/scfuncs.hrc:4335
+msgctxt "SC_OPCODE_TEXTAFTER"
+msgid "Returns the text that occurs after a given substring or delimiter."
+msgstr "Returnerar texten som förekommer efter en given delsträng eller avgränsare."
+
+#. cicY2
+#: sc/inc/scfuncs.hrc:4336
+msgctxt "SC_OPCODE_TEXTAFTER"
+msgid "Text"
+msgstr "Text"
+
+#. 3WLYF
+#: sc/inc/scfuncs.hrc:4337
+msgctxt "SC_OPCODE_TEXTAFTER"
+msgid "The original text."
+msgstr "Originaltexten."
+
+#. z4pDr
+#: sc/inc/scfuncs.hrc:4338
+msgctxt "SC_OPCODE_TEXTAFTER"
+msgid "Delimiter"
+msgstr "Avgränsare"
+
+#. YEbwu
+#: sc/inc/scfuncs.hrc:4339
+msgctxt "SC_OPCODE_TEXTAFTER"
+msgid "The delimiter. Multiple delimiters can be supplied."
+msgstr "Avgränsare. Flera avgränsare kan anges."
+
+#. HPDvF
+#: sc/inc/scfuncs.hrc:4340
+msgctxt "SC_OPCODE_TEXTAFTER"
+msgid "Instance Number"
+msgstr "Instansnummer"
+
+#. DmVZL
+#: sc/inc/scfuncs.hrc:4341
+msgctxt "SC_OPCODE_TEXTAFTER"
+msgid "The instance of the delimiter after which to extract text. The default is 1. A negative number starts searching from the end."
+msgstr "Instansen av avgränsaren efter vilken text ska extraheras. Standardvärdet är 1. Ett negativt tal börjar söka från slutet."
+
+#. fpoGj
+#: sc/inc/scfuncs.hrc:4342
+msgctxt "SC_OPCODE_TEXTAFTER"
+msgid "Match Mode"
+msgstr "Matchningsläge"
+
+#. iSfJi
+#: sc/inc/scfuncs.hrc:4343
+msgctxt "SC_OPCODE_TEXTAFTER"
+msgid "Set to 1 to perform a case-insensitive match. The default is 0."
+msgstr "Ställ in på 1 för att utföra en skiftlägeskänslig matchning. Standardinställningen är 0."
+
+#. nAF2s
+#: sc/inc/scfuncs.hrc:4344
+msgctxt "SC_OPCODE_TEXTAFTER"
+msgid "Match End"
+msgstr "Slut på match"
+
+#. W2DGj
+#: sc/inc/scfuncs.hrc:4345
+msgctxt "SC_OPCODE_TEXTAFTER"
+msgid "Set to 1 to treat the end of text as a delimiter. The default is 0."
+msgstr "Ställ in på 1 för att behandla slutet av texten som en avgränsare. Standardvärdet är 0."
+
+#. PG6qj
+#: sc/inc/scfuncs.hrc:4346
+msgctxt "SC_OPCODE_TEXTAFTER"
+msgid "If Not Found"
+msgstr "Om den inte hittas"
+
+#. vfgZc
+#: sc/inc/scfuncs.hrc:4347
+msgctxt "SC_OPCODE_TEXTAFTER"
+msgid "The value returned if no match is found. The default is #N/A."
+msgstr "Värdet som returneras om ingen matchning hittas. Standardvärdet är #N/A."
+
+#. f88EE
+#: sc/inc/scfuncs.hrc:4353
+msgctxt "SC_OPCODE_TEXTBEFORE"
+msgid "Returns the text that occurs before a given substring or delimiter."
+msgstr "Returnerar texten som förekommer före en given delsträng eller avgränsare."
+
+#. NNriC
+#: sc/inc/scfuncs.hrc:4354
+msgctxt "SC_OPCODE_TEXTBEFORE"
+msgid "Text"
+msgstr "Text"
+
+#. HsEG8
+#: sc/inc/scfuncs.hrc:4355
+msgctxt "SC_OPCODE_TEXTBEFORE"
+msgid "The original text."
+msgstr "Originaltexten."
+
+#. E4a5z
+#: sc/inc/scfuncs.hrc:4356
+msgctxt "SC_OPCODE_TEXTBEFORE"
+msgid "Delimiter"
+msgstr "Avgränsare"
+
+#. qDFZy
+#: sc/inc/scfuncs.hrc:4357
+msgctxt "SC_OPCODE_TEXTBEFORE"
+msgid "The delimiter. Multiple delimiters can be supplied."
+msgstr "Avgränsare. Flera avgränsare kan anges."
+
+#. gNHAi
+#: sc/inc/scfuncs.hrc:4358
+msgctxt "SC_OPCODE_TEXTBEFORE"
+msgid "Instance Number"
+msgstr "Instansnummer"
+
+#. sD4zC
+#: sc/inc/scfuncs.hrc:4359
+msgctxt "SC_OPCODE_TEXTBEFORE"
+msgid "The instance of the delimiter before which to extract text. The default is 1. A negative number starts searching from the end."
+msgstr "Instansen av avgränsaren före vilken text ska extraheras. Standardvärdet är 1. Ett negativt tal börjar söka från slutet."
+
+#. Adzeh
+#: sc/inc/scfuncs.hrc:4360
+msgctxt "SC_OPCODE_TEXTBEFORE"
+msgid "Match Mode"
+msgstr "Matchningsläge"
+
+#. Pi2Ti
+#: sc/inc/scfuncs.hrc:4361
+msgctxt "SC_OPCODE_TEXTBEFORE"
+msgid "Set to 1 to perform a case-insensitive match. The default is 0."
+msgstr "Ställ in på 1 för att utföra en skiftlägeskänslig matchning. Standardinställningen är 0."
+
+#. sACA2
+#: sc/inc/scfuncs.hrc:4362
+msgctxt "SC_OPCODE_TEXTBEFORE"
+msgid "Match End"
+msgstr "Slut på match"
+
+#. UxpD6
+#: sc/inc/scfuncs.hrc:4363
+msgctxt "SC_OPCODE_TEXTBEFORE"
+msgid "Set to 1 to treat the end of text as a delimiter. The default is 0."
+msgstr "Ställ in på 1 för att behandla slutet av texten som en avgränsare. Standardvärdet är 0."
+
+#. aCnZX
+#: sc/inc/scfuncs.hrc:4364
+msgctxt "SC_OPCODE_TEXTBEFORE"
+msgid "If Not Found"
+msgstr "Om den inte hittas"
+
+#. xCZYH
+#: sc/inc/scfuncs.hrc:4365
+msgctxt "SC_OPCODE_TEXTBEFORE"
+msgid "The value returned if no match is found. The default is #N/A."
+msgstr "Värdet som returneras om ingen matchning hittas. Standardvärdet är #N/A."
+
+#. wdZTd
+#: sc/inc/scfuncs.hrc:4371
+msgctxt "SC_OPCODE_TEXTSPLIT"
+msgid "Splits text by a given delimiter to an array of multiple cells."
+msgstr "Delar text med ett givet avgränsningstecken till en matris med flera celler."
+
+#. DH7h4
+#: sc/inc/scfuncs.hrc:4372
+msgctxt "SC_OPCODE_TEXTSPLIT"
+msgid "Text"
+msgstr "Text"
+
+#. dqSdF
+#: sc/inc/scfuncs.hrc:4373
+msgctxt "SC_OPCODE_TEXTSPLIT"
+msgid "The text to split."
+msgstr "Texten som ska delas."
+
+#. pdpxt
+#: sc/inc/scfuncs.hrc:4374
+msgctxt "SC_OPCODE_TEXTSPLIT"
+msgid "Column Delimiter"
+msgstr "Kolumnavgränsare"
+
+#. nfMAr
+#: sc/inc/scfuncs.hrc:4375
+msgctxt "SC_OPCODE_TEXTSPLIT"
+msgid "The text to delimit the columns. Multiple delimiters can be supplied."
+msgstr "Texten som avgränsar kolumnerna. Flera avgränsare kan anges."
+
+#. qZGq2
+#: sc/inc/scfuncs.hrc:4376
+msgctxt "SC_OPCODE_TEXTSPLIT"
+msgid "Row Delimiter"
+msgstr "Radavgränsare"
+
+#. dPnbc
+#: sc/inc/scfuncs.hrc:4377
+msgctxt "SC_OPCODE_TEXTSPLIT"
+msgid "The text to delimit the rows. Multiple delimiters can be supplied."
+msgstr "Texten som avgränsar raderna. Flera avgränsare kan anges."
+
+#. jD3sa
+#: sc/inc/scfuncs.hrc:4378
+msgctxt "SC_OPCODE_TEXTSPLIT"
+msgid "Ignore Empty"
+msgstr "Ignorera tomma"
+
+#. 6LwdP
+#: sc/inc/scfuncs.hrc:4379
+msgctxt "SC_OPCODE_TEXTSPLIT"
+msgid "Set to TRUE to ignore consecutive delimiters otherwise it creates an empty cell. The default is FALSE."
+msgstr "Sätt till SANT för att ignorera efterföljande avgränsare, annars skapas en tom cell. Standardvärdet är FALSKT."
+
+#. kkAYp
+#: sc/inc/scfuncs.hrc:4380
+msgctxt "SC_OPCODE_TEXTSPLIT"
+msgid "Match mode"
+msgstr "Matchningsläge"
+
+#. iX8cx
+#: sc/inc/scfuncs.hrc:4381
+msgctxt "SC_OPCODE_TEXTSPLIT"
+msgid "Set to 1 to perform a case-insensitive match. The default is 0."
+msgstr "Ställ in på 1 för att utföra en skiftlägeskänslig matchning. Standardinställningen är 0."
+
+#. vXECz
+#: sc/inc/scfuncs.hrc:4382
+msgctxt "SC_OPCODE_TEXTSPLIT"
+msgid "Pad with"
+msgstr "Fyll ut med"
+
+#. h4db2
+#: sc/inc/scfuncs.hrc:4383
+msgctxt "SC_OPCODE_TEXTSPLIT"
+msgid "The value with which to pad. The default is #N/A."
+msgstr "Värdet som ska fyllas ut med. Standard är #N/A."
+
+#. 4dkE2
+#: sc/inc/scfuncs.hrc:4389
+#, fuzzy
+msgctxt "SC_OPCODE_TOCOL"
+msgid "transforms an array into a single column."
+msgstr "Omvandlar en matris till en enda kolumn."
+
+#. UAzNC
+#: sc/inc/scfuncs.hrc:4390
+msgctxt "SC_OPCODE_TOCOL"
+msgid "Array"
+msgstr "Matris"
+
+#. CHojs
+#: sc/inc/scfuncs.hrc:4391
+msgctxt "SC_OPCODE_TOCOL"
+msgid "The range or array to return as a single column."
+msgstr "Området eller matrisen som ska returneras som en enda kolumn."
+
+#. uACXu
+#: sc/inc/scfuncs.hrc:4392
+msgctxt "SC_OPCODE_TOCOL"
+msgid "Ignore"
+msgstr "Ignorera"
+
+#. b7EQW
+#: sc/inc/scfuncs.hrc:4393
+msgctxt "SC_OPCODE_TOCOL"
+msgid "Whether to ignore certain types of values. 0 or omitted - keep all values (default). 1 - ignore blank cells. 2 - ignore cells with error. 3 - ignore blanks cells and cells with error."
+msgstr "Om man ska ignorera vissa typer av värden. 0 eller utelämnad - behåll alla värden (standard). 1 - ignorera tomma celler. 2 - ignorera celler med fel. 3 - ignorera tomma celler och celler med fel."
+
+#. qNLAi
+#: sc/inc/scfuncs.hrc:4394
+msgctxt "SC_OPCODE_TOCOL"
+msgid "Scan by column"
+msgstr "Skanna efter kolumn"
+
+#. bcArN
+#: sc/inc/scfuncs.hrc:4395
+msgctxt "SC_OPCODE_TOCOL"
+msgid "Scan the array by column. FALSE or omitted (default) - the array is scanned by row. TRUE - the array is scanned by column."
+msgstr "Skanna matrisen efter kolumn. FALSE eller utelämnad (standard) - matrisen skannas efter rad. TRUE - matrisen skannas efter kolumn."
+
+#. PGyxj
+#: sc/inc/scfuncs.hrc:4401
+msgctxt "SC_OPCODE_TOROW"
+msgid "transforms an array into a single row."
+msgstr "Omvandlar en matris till en enda rad."
+
+#. W9bWe
+#: sc/inc/scfuncs.hrc:4402
+msgctxt "SC_OPCODE_TOROW"
+msgid "Array"
+msgstr "Matris"
+
+#. 5MEvT
+#: sc/inc/scfuncs.hrc:4403
+msgctxt "SC_OPCODE_TOROW"
+msgid "The range or array to return as a single row."
+msgstr "Området eller matrisen som ska returneras som en enda rad."
+
+#. AqqBC
+#: sc/inc/scfuncs.hrc:4404
+msgctxt "SC_OPCODE_TOROW"
+msgid "Ignore"
+msgstr "Ignorera"
+
+#. wcpQF
+#: sc/inc/scfuncs.hrc:4405
+msgctxt "SC_OPCODE_TOROW"
+msgid "Whether to ignore certain types of values. 0 or omitted - keep all values (default). 1 - ignore blank cells. 2 - ignore cells with error. 3 - ignore blanks cells and cells with error."
+msgstr "Om man ska ignorera vissa typer av värden. 0 eller utelämnad - behåll alla värden (standard). 1 - ignorera tomma celler. 2 - ignorera celler med fel. 3 - ignorera tomma celler och celler med fel."
+
+#. E4XDf
+#: sc/inc/scfuncs.hrc:4406
+msgctxt "SC_OPCODE_TOROW"
+msgid "Scan by column"
+msgstr "Skanna efter kolumn"
+
+#. 5bZRy
+#: sc/inc/scfuncs.hrc:4407
+msgctxt "SC_OPCODE_TOROW"
+msgid "Scan the array by column. FALSE or omitted (default) - the array is scanned by row. TRUE - the array is scanned by column."
+msgstr "Skanna matrisen efter kolumn. FALSE eller utelämnad (standard) - matrisen skannas efter rad. TRUE - matrisen skannas efter kolumn."
+
+#. NJR3E
+#: sc/inc/scfuncs.hrc:4413
 msgctxt "SC_OPCODE_UNIQUE"
 msgid "Returns a list of unique values from a range or array."
 msgstr "Returnerar en lista med unika värden från ett intervall eller en matris."
 
 #. NepxE
-#: sc/inc/scfuncs.hrc:4258
+#: sc/inc/scfuncs.hrc:4414
 msgctxt "SC_OPCODE_UNIQUE"
 msgid "Array"
 msgstr "Matris"
 
 #. 2sVga
-#: sc/inc/scfuncs.hrc:4259
+#: sc/inc/scfuncs.hrc:4415
 msgctxt "SC_OPCODE_UNIQUE"
 msgid "The range or array from which to return unique values."
 msgstr "Området eller matrisen från vilken unika värden ska returneras."
 
 #. fGfWS
-#: sc/inc/scfuncs.hrc:4260
+#: sc/inc/scfuncs.hrc:4416
 msgctxt "SC_OPCODE_UNIQUE"
 msgid "By col"
 msgstr "Efter kolumn"
 
 #. SASmk
-#: sc/inc/scfuncs.hrc:4261
+#: sc/inc/scfuncs.hrc:4417
 msgctxt "SC_OPCODE_UNIQUE"
 msgid "Logical value indicating how to compare data: TRUE - compares data across columns. FALSE or omitted (default) - compares data across rows."
 msgstr "Logiskt värde som indikerar hur data jämförs: SANN - jämför data mellan kolumner. FALSK eller utelämnad (standard) - jämför data mellan rader."
 
 #. hVQ6i
-#: sc/inc/scfuncs.hrc:4262
+#: sc/inc/scfuncs.hrc:4418
 msgctxt "SC_OPCODE_UNIQUE"
 msgid "Uniqueness"
 msgstr "Unikhet"
 
 #. EUVys
-#: sc/inc/scfuncs.hrc:4263
+#: sc/inc/scfuncs.hrc:4419
 msgctxt "SC_OPCODE_UNIQUE"
 msgid "Logical value that defines what values are considered unique: TRUE - returns values that occur only once. FALSE or omitted (default) - returns all distinct (different) values in the range or array."
 msgstr "Logiskt värde som definierar vilka värden som anses vara unika: SANN - returnerar värden som bara förekommer en gång. FALSK eller utelämnad (standard) - returnerar alla distinkta (olika) värden i intervallet eller matrisen."
 
 #. axamT
-#: sc/inc/scfuncs.hrc:4269
+#: sc/inc/scfuncs.hrc:4425
 msgctxt "SC_OPCODE_LET"
 msgid "The LET function assigns names to calculation results. This allows storing intermediate calculations, values, or defining names inside a formula. These names only apply within the scope of the LET function."
 msgstr "LET-funktionen tilldelar beräkningsresultat namn. Detta gör det möjligt att lagra mellanliggande beräkningar, värden eller definiera namn i en formel. Dessa namn gäller endast inom ramen för LET-funktionen."
 
 #. 6DDAi
-#: sc/inc/scfuncs.hrc:4270
+#: sc/inc/scfuncs.hrc:4426
 msgctxt "SC_OPCODE_LET"
 msgid "Name 1"
 msgstr "Namn 1"
 
 #. a7LQR
-#: sc/inc/scfuncs.hrc:4271
+#: sc/inc/scfuncs.hrc:4427
 msgctxt "SC_OPCODE_LET"
 msgid "The first name to assign. Must start with a letter. Cannot be the output of a formula or conflict with range syntax."
 msgstr "Det första namnet att tilldela. Måste börja med en bokstav. Kan inte vara resultatet av en formel eller konflikt med intervallsyntaxen."
 
 #. KsyBM
-#: sc/inc/scfuncs.hrc:4272
+#: sc/inc/scfuncs.hrc:4428
 msgctxt "SC_OPCODE_LET"
 msgid "Name value "
 msgstr "Namnvärde "
 
 #. Dn2DE
-#: sc/inc/scfuncs.hrc:4273
+#: sc/inc/scfuncs.hrc:4429
 msgctxt "SC_OPCODE_LET"
 msgid "Name value 1, Name value 2,... The value or calculation to assign to Name."
 msgstr "Namnvärde 1, Namnvärde 2,... Värdet eller beräkningen att tilldela Namn."
 
 #. CHAMD
-#: sc/inc/scfuncs.hrc:4274
+#: sc/inc/scfuncs.hrc:4430
 msgctxt "SC_OPCODE_LET"
 msgid "Calculation or Name "
 msgstr "Beräkning eller namn "
 
 #. tFMkP
-#: sc/inc/scfuncs.hrc:4275
+#: sc/inc/scfuncs.hrc:4431
 msgctxt "SC_OPCODE_LET"
 msgid "A calculation that uses all names within the LET function. This must be the last argument in the LET function. Or a second Name to assign to a second Name value. If a second Name is specified, Name value 2 and Calculation or Name 3 become required."
 msgstr "En beräkning som använder alla namn inom LET-funktionen. Detta måste vara det sista argumentet i LET-funktionen. Eller ett andra namn att tilldela ett andra namnvärde. Om ett andra namn anges krävs namnvärde 2 och beräkning eller namn 3."
+
+#. oBDEA
+#: sc/inc/scfuncs.hrc:4437
+msgctxt "SC_OPCODE_WRAPCOLS"
+msgid "Wraps the provided row or column of values by columns after a specified number of elements to form a new array."
+msgstr "Bryter den angivna raden eller kolumnen med värden efter kolumner efter ett angivet antal element för att bilda en ny matris."
+
+#. fC6RK
+#: sc/inc/scfuncs.hrc:4438
+msgctxt "SC_OPCODE_WRAPCOLS"
+msgid "Range"
+msgstr "Område"
+
+#. nfZyj
+#: sc/inc/scfuncs.hrc:4439
+msgctxt "SC_OPCODE_WRAPCOLS"
+msgid "the range to wrap."
+msgstr "området som ska brytas."
+
+#. GE3HQ
+#: sc/inc/scfuncs.hrc:4440
+msgctxt "SC_OPCODE_WRAPCOLS"
+msgid "Wrap count"
+msgstr "Antal brytningar"
+
+#. FWsCt
+#: sc/inc/scfuncs.hrc:4441
+msgctxt "SC_OPCODE_WRAPCOLS"
+msgid "The maximum number of values for each column."
+msgstr "Det maximala antalet värden för varje kolumn."
+
+#. zkjFB
+#: sc/inc/scfuncs.hrc:4442
+msgctxt "SC_OPCODE_WRAPCOLS"
+msgid "Pad with"
+msgstr "Fyll ut med"
+
+#. knbjc
+#: sc/inc/scfuncs.hrc:4443
+msgctxt "SC_OPCODE_WRAPCOLS"
+msgid "The value with which to pad. The default is #N/A."
+msgstr "Värdet som ska fyllas ut med. Standard är #N/A."
+
+#. BDA7q
+#: sc/inc/scfuncs.hrc:4449
+msgctxt "SC_OPCODE_WRAPROWS"
+msgid "Wraps the provided row or column of values by rows after a specified number of elements to form a new array."
+msgstr "Bryter den angivna raden eller kolumnen med värden efter rader efter ett angivet antal element för att bilda en ny matris."
+
+#. 7esii
+#: sc/inc/scfuncs.hrc:4450
+msgctxt "SC_OPCODE_WRAPROWS"
+msgid "Range"
+msgstr "Område"
+
+#. FLJwx
+#: sc/inc/scfuncs.hrc:4451
+msgctxt "SC_OPCODE_WRAPROWS"
+msgid "the range to wrap."
+msgstr "området som ska brytas."
+
+#. aLHUi
+#: sc/inc/scfuncs.hrc:4452
+msgctxt "SC_OPCODE_WRAPROWS"
+msgid "Wrap count"
+msgstr "Antal brytningar"
+
+#. 3CEsK
+#: sc/inc/scfuncs.hrc:4453
+msgctxt "SC_OPCODE_WRAPROWS"
+msgid "The maximum number of values for each row."
+msgstr "Det maximala antalet värden för varje rad."
+
+#. iTCWg
+#: sc/inc/scfuncs.hrc:4454
+msgctxt "SC_OPCODE_WRAPROWS"
+msgid "Pad with"
+msgstr "Fyll ut med"
+
+#. e3K5s
+#: sc/inc/scfuncs.hrc:4455
+msgctxt "SC_OPCODE_WRAPROWS"
+msgid "The value with which to pad. The default is #N/A."
+msgstr "Värdet som ska fyllas ut med. Standard är #N/A."
 
 #. pDDme
 #: sc/inc/scstyles.hrc:29
@@ -20408,50 +21076,48 @@ msgctxt "cellprotectionpage|extended_tip|checkHideAll"
 msgid "Hides formulas and contents of the selected cells."
 msgstr "Döljer formler och innehåll i de markerade cellerna."
 
-#. fBWyS
+#. XDDcB
 #: sc/uiconfig/scalc/ui/cellprotectionpage.ui:99
+#, fuzzy
 msgctxt "cellprotectionpage|label1"
-msgid ""
-"Cell protection is only effective after the current sheet has been protected.\n"
-"\n"
-"Select 'Protect Sheet' from the 'Tools' menu."
+msgid "Cell protection is only effective after the current sheet has been protected."
 msgstr ""
 "Cellskydd är bara verksamt efter det att det aktiva bladet har skyddats.\n"
 "\n"
 "Välj 'Skydda blad' från menyn 'Verktyg'."
 
 #. bVREg
-#: sc/uiconfig/scalc/ui/cellprotectionpage.ui:121
+#: sc/uiconfig/scalc/ui/cellprotectionpage.ui:119
 msgctxt "cellprotectionpage|LabelProtection"
 msgid "Protection"
 msgstr "Skydd"
 
 #. A5DFp
-#: sc/uiconfig/scalc/ui/cellprotectionpage.ui:151
+#: sc/uiconfig/scalc/ui/cellprotectionpage.ui:149
 msgctxt "cellprotectionpage|checkHidePrinting"
 msgid "Hide _when printing"
 msgstr "Dölj vid _utskrift"
 
 #. ZosAc
-#: sc/uiconfig/scalc/ui/cellprotectionpage.ui:160
+#: sc/uiconfig/scalc/ui/cellprotectionpage.ui:158
 msgctxt "cellprotectionpage|extended_tip|checkHidePrinting"
 msgid "Keeps the selected cells from being printed."
 msgstr "Gör att de markerade cellerna inte skrivs ut."
 
 #. QqUqE
-#: sc/uiconfig/scalc/ui/cellprotectionpage.ui:175
+#: sc/uiconfig/scalc/ui/cellprotectionpage.ui:173
 msgctxt "cellprotectionpage|label4"
 msgid "The cells selected will be omitted when printing."
 msgstr "De markerade cellerna kommer inte att skrivas ut."
 
 #. 8RuyP
-#: sc/uiconfig/scalc/ui/cellprotectionpage.ui:194
+#: sc/uiconfig/scalc/ui/cellprotectionpage.ui:192
 msgctxt "cellprotectionpage|label3"
 msgid "Print"
 msgstr "Skriv ut"
 
 #. DPWp6
-#: sc/uiconfig/scalc/ui/cellprotectionpage.ui:208
+#: sc/uiconfig/scalc/ui/cellprotectionpage.ui:206
 msgctxt "cellprotectionpage|extended_tip|CellProtectionPage"
 msgid "Defines protection options for selected cells."
 msgstr "Definierar skyddsalternativ för de markerade cellerna."
@@ -20726,11 +21392,11 @@ msgctxt "condformatmanager|extended_tip|CondFormatManager"
 msgid "This dialog allows you to see all the conditional formatting defined in the spreadsheet."
 msgstr "I den här dialogrutan kan du se all villkorlig formatering definierad i kalkylbladet."
 
-#. nrXMW
+#. FVsyY
 #: sc/uiconfig/scalc/ui/conditionaleasydialog.ui:8
 msgctxt "conditionaleasydialog|title"
-msgid "Apply conditional formatting..."
-msgstr "Använd villkorlig formatering..."
+msgid "Highlight cells..."
+msgstr "Markera celler..."
 
 #. pDRks
 #: sc/uiconfig/scalc/ui/conditionaleasydialog.ui:46
@@ -31541,32 +32207,38 @@ msgctxt "sidebarcellappearance|bordertype|accessible_name"
 msgid "Borders"
 msgstr "Inramning"
 
+#. FXK8B
+#: sc/uiconfig/scalc/ui/sidebarcellappearance.ui:87
+msgctxt "sidebarcellappearance|cellbordertype-atkobject"
+msgid "Border Style"
+msgstr "Inramningsstil"
+
 #. D2TVi
-#: sc/uiconfig/scalc/ui/sidebarcellappearance.ui:96
+#: sc/uiconfig/scalc/ui/sidebarcellappearance.ui:101
 msgctxt "sidebarcellappearance|borderlinecolor|tooltip_text"
 msgid "Select the line color of the borders."
 msgstr "Välj linjefärg för inramningen."
 
 #. GqfZD
-#: sc/uiconfig/scalc/ui/sidebarcellappearance.ui:105
+#: sc/uiconfig/scalc/ui/sidebarcellappearance.ui:110
 msgctxt "sidebarcellappearance|linecolor|tooltip_text"
 msgid "Select the line color of the borders."
 msgstr "Välj linjefärg för inramningen."
 
 #. 8AUBs
-#: sc/uiconfig/scalc/ui/sidebarcellappearance.ui:115
+#: sc/uiconfig/scalc/ui/sidebarcellappearance.ui:120
 msgctxt "sidebarcellappearance|borderlinecolor-atkobject"
 msgid "Border Line Color"
 msgstr "Ramlinjefärg"
 
 #. VgXDF
-#: sc/uiconfig/scalc/ui/sidebarcellappearance.ui:136
+#: sc/uiconfig/scalc/ui/sidebarcellappearance.ui:141
 msgctxt "sidebarcellappearance|linestyle|tooltip_text"
 msgid "Select the line style of the borders."
 msgstr "Välj linjestil för inramningen."
 
 #. jaxhA
-#: sc/uiconfig/scalc/ui/sidebarcellappearance.ui:146
+#: sc/uiconfig/scalc/ui/sidebarcellappearance.ui:151
 msgctxt "sidebarcellappearance|borderlinestyle-atkobject"
 msgid "Border Line Style"
 msgstr "Ramlinjestil"

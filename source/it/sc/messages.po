@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2025-04-10 15:52+0200\n"
+"POT-Creation-Date: 2025-09-17 16:16+0930\n"
 "PO-Revision-Date: 2025-08-06 09:53+0000\n"
 "Last-Translator: Valter Mura <valtermura@gmail.com>\n"
 "Language-Team: Italian <https://translations.documentfoundation.org/projects/libo_ui-25-2/scmessages/it/>\n"
@@ -17223,89 +17223,757 @@ msgctxt "SC_OPCODE_RANDARRAY"
 msgid "Return integer (TRUE) or decimal (FALSE) values."
 msgstr "Restituisce valori interi (VERO) o decimali (FALSO)."
 
-#. NJR3E
+#. ADmez
 #: sc/inc/scfuncs.hrc:4257
+msgctxt "SC_OPCODE_CHOOSECOLS"
+msgid "Returns the specified columns from an array."
+msgstr "Restituisce le colonne specificate a partire da una matrice."
+
+#. mgCeG
+#: sc/inc/scfuncs.hrc:4258
+msgctxt "SC_OPCODE_CHOOSECOLS"
+msgid "Array"
+msgstr "Matrice"
+
+#. vErtR
+#: sc/inc/scfuncs.hrc:4259
+msgctxt "SC_OPCODE_CHOOSECOLS"
+msgid "The array containing the columns to be returned in the new array."
+msgstr "Matrice contenente le colonne da restituire nella nuova matrice."
+
+#. EuvxU
+#: sc/inc/scfuncs.hrc:4260
+msgctxt "SC_OPCODE_CHOOSECOLS"
+msgid "Column "
+msgstr "Colonna "
+
+#. Akc9t
+#: sc/inc/scfuncs.hrc:4261
+msgctxt "SC_OPCODE_CHOOSECOLS"
+msgid "Column 1, Column 2,... The list of column numbers to be returned."
+msgstr "Colonna 1, Colonna 2,... L'elenco dei numeri delle colonne da restituire."
+
+#. 78gQu
+#: sc/inc/scfuncs.hrc:4267
+msgctxt "SC_OPCODE_CHOOSEROWS"
+msgid "Returns the specified rows from an array."
+msgstr "Restituisce le righe specificate a partire da una matrice."
+
+#. JAg4y
+#: sc/inc/scfuncs.hrc:4268
+msgctxt "SC_OPCODE_CHOOSEROWS"
+msgid "Array"
+msgstr "Matrice"
+
+#. GFWtk
+#: sc/inc/scfuncs.hrc:4269
+msgctxt "SC_OPCODE_CHOOSEROWS"
+msgid "The array containing the rows to be returned in the new array."
+msgstr "Matrice contenente le righe da restituire nella nuova matrice."
+
+#. PDBbE
+#: sc/inc/scfuncs.hrc:4270
+msgctxt "SC_OPCODE_CHOOSEROWS"
+msgid "Row "
+msgstr "Riga "
+
+#. dXjgB
+#: sc/inc/scfuncs.hrc:4271
+msgctxt "SC_OPCODE_CHOOSEROWS"
+msgid "Row 1, Row 2,... The list of row numbers to be returned."
+msgstr "Riga 1, Riga 2,... L'elenco dei numeri delle righe da restituire."
+
+#. 4uTLx
+#: sc/inc/scfuncs.hrc:4277
+msgctxt "SC_OPCODE_DROP"
+msgid "Excludes a specified number of contiguous rows or columns from the start or end of an array."
+msgstr "Esclude un numero specificato di righe o colonne contigue dall'inizio o dalla fine di una matrice."
+
+#. W6FYc
+#: sc/inc/scfuncs.hrc:4278
+msgctxt "SC_OPCODE_DROP"
+msgid "Array"
+msgstr "Matrice"
+
+#. zEu4G
+#: sc/inc/scfuncs.hrc:4279
+msgctxt "SC_OPCODE_DROP"
+msgid "The array from which to drop rows or columns."
+msgstr "Matrice da cui eliminare righe o colonne."
+
+#. BFPt4
+#: sc/inc/scfuncs.hrc:4280
+msgctxt "SC_OPCODE_DROP"
+msgid "Rows"
+msgstr "Righe"
+
+#. yyjnc
+#: sc/inc/scfuncs.hrc:4281
+msgctxt "SC_OPCODE_DROP"
+msgid "The number of rows to drop. A negative value drops from the end of the array."
+msgstr "Numero di righe da eliminare. Un valore negativo elimina le righe dalla fine della matrice."
+
+#. GQ7cE
+#: sc/inc/scfuncs.hrc:4282
+#, fuzzy
+msgctxt "SC_OPCODE_DROP"
+msgid "Column"
+msgstr "Colonna"
+
+#. cAxPB
+#: sc/inc/scfuncs.hrc:4283
+msgctxt "SC_OPCODE_DROP"
+msgid "The number of columns to drop. A negative value drops from the end of the array."
+msgstr "Numero di colonne da eliminare. Un valore negativo elimina le colonne dalla fine della matrice."
+
+#. cXvVY
+#: sc/inc/scfuncs.hrc:4289
+msgctxt "SC_OPCODE_EXPAND"
+msgid "Expands or pads an array to specified row and column dimensions."
+msgstr "Espande o completa una matrice alle dimensioni specificate di righe e colonne."
+
+#. kuERH
+#: sc/inc/scfuncs.hrc:4290
+msgctxt "SC_OPCODE_EXPAND"
+msgid "Array"
+msgstr "Matrice"
+
+#. E9YDC
+#: sc/inc/scfuncs.hrc:4291
+msgctxt "SC_OPCODE_EXPAND"
+msgid "The array to expand."
+msgstr "La matrice da espandere."
+
+#. EaNgG
+#: sc/inc/scfuncs.hrc:4292
+msgctxt "SC_OPCODE_EXPAND"
+msgid "Rows"
+msgstr "Righe"
+
+#. QzQiB
+#: sc/inc/scfuncs.hrc:4293
+msgctxt "SC_OPCODE_EXPAND"
+msgid "The number of rows in the expanded array. If missing, rows will not be expanded."
+msgstr "Numero di righe nella matrice espansa. Se non specificato, le righe non verranno estese."
+
+#. jLBEp
+#: sc/inc/scfuncs.hrc:4294
+#, fuzzy
+msgctxt "SC_OPCODE_EXPAND"
+msgid "Column"
+msgstr "Colonna"
+
+#. EVAXE
+#: sc/inc/scfuncs.hrc:4295
+msgctxt "SC_OPCODE_EXPAND"
+msgid "The number of columns in the expanded array. If missing, columns will not be expanded."
+msgstr "Numero di colonne nella matrice espansa. Se non specificato, le colonne non verranno estese."
+
+#. QPyBK
+#: sc/inc/scfuncs.hrc:4296
+msgctxt "SC_OPCODE_EXPAND"
+msgid "Pad with"
+msgstr "Riempi con"
+
+#. kHatA
+#: sc/inc/scfuncs.hrc:4297
+msgctxt "SC_OPCODE_EXPAND"
+msgid "The value with which to pad. The default is #N/A."
+msgstr "Valore con cui eseguire il riempimento. L'impostazione predefinita è #N/D."
+
+#. P3HaZ
+#: sc/inc/scfuncs.hrc:4303
+#, fuzzy
+msgctxt "SC_OPCODE_HSTACK"
+msgid "Appends arrays horizontally to create a larger array"
+msgstr "Aggiunge matrici orizzontalmente per creare una matrice più grande."
+
+#. LnAFg
+#: sc/inc/scfuncs.hrc:4304
+msgctxt "SC_OPCODE_HSTACK"
+msgid "Array"
+msgstr "Matrice"
+
+#. uHbHC
+#: sc/inc/scfuncs.hrc:4305
+msgctxt "SC_OPCODE_HSTACK"
+msgid "The first array to append."
+msgstr "La prima matrice da aggiungere."
+
+#. UK4bK
+#: sc/inc/scfuncs.hrc:4306
+#, fuzzy
+msgctxt "SC_OPCODE_HSTACK"
+msgid "Array "
+msgstr "Matrice "
+
+#. QRA57
+#: sc/inc/scfuncs.hrc:4307
+msgctxt "SC_OPCODE_HSTACK"
+msgid "Array 1, Array 2,... The following arrays to append. If an array has fewer rows, #N/A error will be returned in the additional rows."
+msgstr "Matrice 1, Matrice 2,... Le seguenti matrici da aggiungere. Se una matrice contiene meno righe, nelle righe supplementari viene restituito l'errore #N/D."
+
+#. zmGHv
+#: sc/inc/scfuncs.hrc:4313
+#, fuzzy
+msgctxt "SC_OPCODE_VSTACK"
+msgid "Appends arrays vertically to create a larger array"
+msgstr "Aggiunge matrici verticalmente per creare una matrice più grande."
+
+#. rhVRC
+#: sc/inc/scfuncs.hrc:4314
+msgctxt "SC_OPCODE_VSTACK"
+msgid "Array"
+msgstr "Matrice"
+
+#. tGHH9
+#: sc/inc/scfuncs.hrc:4315
+msgctxt "SC_OPCODE_VSTACK"
+msgid "The first array to append."
+msgstr "La prima matrice da aggiungere."
+
+#. 9isjH
+#: sc/inc/scfuncs.hrc:4316
+#, fuzzy
+msgctxt "SC_OPCODE_VSTACK"
+msgid "Array "
+msgstr "Matrice "
+
+#. Kb6Xc
+#: sc/inc/scfuncs.hrc:4317
+msgctxt "SC_OPCODE_VSTACK"
+msgid "Array 1, Array 2,... The following arrays to append. If an array has fewer columns, #N/A error will be returned in the additional columns."
+msgstr "Matrice 1, Matrice 2,... Le seguenti matrici da aggiungere. Se una matrice contiene meno colonne, nelle colonne supplementari verrà restituito l'errore #N/D."
+
+#. JnsYT
+#: sc/inc/scfuncs.hrc:4323
+msgctxt "SC_OPCODE_TAKE"
+msgid "Returns a specified number of contiguous rows or columns from the start or end of an array."
+msgstr "Restituisce un numero specificato di righe o colonne contigue a partire dall'inizio o dalla fine di una matrice."
+
+#. dFLFb
+#: sc/inc/scfuncs.hrc:4324
+msgctxt "SC_OPCODE_TAKE"
+msgid "Array"
+msgstr "Matrice"
+
+#. ycFef
+#: sc/inc/scfuncs.hrc:4325
+msgctxt "SC_OPCODE_TAKE"
+msgid "The array from which to take rows or columns."
+msgstr "Matrice da cui estrarre le righe o le colonne."
+
+#. DzBCL
+#: sc/inc/scfuncs.hrc:4326
+msgctxt "SC_OPCODE_TAKE"
+msgid "Rows"
+msgstr "Righe"
+
+#. KBPBn
+#: sc/inc/scfuncs.hrc:4327
+msgctxt "SC_OPCODE_TAKE"
+msgid "The number of rows to take. A negative value takes from the end of the array."
+msgstr "Numero di righe da estrarre. Un valore negativo estrae le righe a partire dalla fine della matrice."
+
+#. eRGvR
+#: sc/inc/scfuncs.hrc:4328
+#, fuzzy
+msgctxt "SC_OPCODE_TAKE"
+msgid "Column"
+msgstr "Colonna"
+
+#. ZexcG
+#: sc/inc/scfuncs.hrc:4329
+msgctxt "SC_OPCODE_TAKE"
+msgid "The number of columns to take. A negative value takes from the end of the array."
+msgstr "Numero di colonne da estrarre. Un valore negativo estrae le colonne a partire dalla fine della matrice."
+
+#. GwyMB
+#: sc/inc/scfuncs.hrc:4335
+msgctxt "SC_OPCODE_TEXTAFTER"
+msgid "Returns the text that occurs after a given substring or delimiter."
+msgstr "Restituisce il testo che compare dopo una determinata sotto-stringa o delimitatore."
+
+#. cicY2
+#: sc/inc/scfuncs.hrc:4336
+msgctxt "SC_OPCODE_TEXTAFTER"
+msgid "Text"
+msgstr "Testo"
+
+#. 3WLYF
+#: sc/inc/scfuncs.hrc:4337
+msgctxt "SC_OPCODE_TEXTAFTER"
+msgid "The original text."
+msgstr "Il testo originale."
+
+#. z4pDr
+#: sc/inc/scfuncs.hrc:4338
+msgctxt "SC_OPCODE_TEXTAFTER"
+msgid "Delimiter"
+msgstr "Delimitatore"
+
+#. YEbwu
+#: sc/inc/scfuncs.hrc:4339
+msgctxt "SC_OPCODE_TEXTAFTER"
+msgid "The delimiter. Multiple delimiters can be supplied."
+msgstr "Delimitatore. Si possono specificare più delimitatori."
+
+#. HPDvF
+#: sc/inc/scfuncs.hrc:4340
+msgctxt "SC_OPCODE_TEXTAFTER"
+msgid "Instance Number"
+msgstr "Numero di istanza"
+
+#. DmVZL
+#: sc/inc/scfuncs.hrc:4341
+msgctxt "SC_OPCODE_TEXTAFTER"
+msgid "The instance of the delimiter after which to extract text. The default is 1. A negative number starts searching from the end."
+msgstr "Istanza del delimitatore dopo il quale estrarre il testo. Il valore predefinito è 1. Un numero negativo avvia la ricerca dalla fine."
+
+#. fpoGj
+#: sc/inc/scfuncs.hrc:4342
+msgctxt "SC_OPCODE_TEXTAFTER"
+msgid "Match Mode"
+msgstr "Modo Corrispondenza"
+
+#. iSfJi
+#: sc/inc/scfuncs.hrc:4343
+msgctxt "SC_OPCODE_TEXTAFTER"
+msgid "Set to 1 to perform a case-insensitive match. The default is 0."
+msgstr "Imposta a 1 per trovare le corrispondenze senza distinzione tra maiuscole e minuscole. Il valore predefinito è 0."
+
+#. nAF2s
+#: sc/inc/scfuncs.hrc:4344
+msgctxt "SC_OPCODE_TEXTAFTER"
+msgid "Match End"
+msgstr "Corrispondenza alla fine"
+
+#. W2DGj
+#: sc/inc/scfuncs.hrc:4345
+msgctxt "SC_OPCODE_TEXTAFTER"
+msgid "Set to 1 to treat the end of text as a delimiter. The default is 0."
+msgstr "Imposta a 1 per trattare la fine del testo come un delimitatore. Il valore predefinito è 0."
+
+#. PG6qj
+#: sc/inc/scfuncs.hrc:4346
+msgctxt "SC_OPCODE_TEXTAFTER"
+msgid "If Not Found"
+msgstr "Se non trovato"
+
+#. vfgZc
+#: sc/inc/scfuncs.hrc:4347
+msgctxt "SC_OPCODE_TEXTAFTER"
+msgid "The value returned if no match is found. The default is #N/A."
+msgstr "Valore restituito se non viene trovata alcuna corrispondenza. Il valore predefinito è #N/D."
+
+#. f88EE
+#: sc/inc/scfuncs.hrc:4353
+msgctxt "SC_OPCODE_TEXTBEFORE"
+msgid "Returns the text that occurs before a given substring or delimiter."
+msgstr "Restituisce il testo che precede una determinata sotto-stringa o un delimitatore."
+
+#. NNriC
+#: sc/inc/scfuncs.hrc:4354
+msgctxt "SC_OPCODE_TEXTBEFORE"
+msgid "Text"
+msgstr "Testo"
+
+#. HsEG8
+#: sc/inc/scfuncs.hrc:4355
+msgctxt "SC_OPCODE_TEXTBEFORE"
+msgid "The original text."
+msgstr "Il testo originale."
+
+#. E4a5z
+#: sc/inc/scfuncs.hrc:4356
+msgctxt "SC_OPCODE_TEXTBEFORE"
+msgid "Delimiter"
+msgstr "Delimitatore"
+
+#. qDFZy
+#: sc/inc/scfuncs.hrc:4357
+msgctxt "SC_OPCODE_TEXTBEFORE"
+msgid "The delimiter. Multiple delimiters can be supplied."
+msgstr "Delimitatore. Si possono specificare più delimitatori."
+
+#. gNHAi
+#: sc/inc/scfuncs.hrc:4358
+msgctxt "SC_OPCODE_TEXTBEFORE"
+msgid "Instance Number"
+msgstr "Numero di istanza"
+
+#. sD4zC
+#: sc/inc/scfuncs.hrc:4359
+msgctxt "SC_OPCODE_TEXTBEFORE"
+msgid "The instance of the delimiter before which to extract text. The default is 1. A negative number starts searching from the end."
+msgstr "L'istanza del delimitatore prima della quale estrarre il testo. Il valore predefinito è 1. Un numero negativo avvia la ricerca dalla fine."
+
+#. Adzeh
+#: sc/inc/scfuncs.hrc:4360
+msgctxt "SC_OPCODE_TEXTBEFORE"
+msgid "Match Mode"
+msgstr "Modo Corrispondenza"
+
+#. Pi2Ti
+#: sc/inc/scfuncs.hrc:4361
+msgctxt "SC_OPCODE_TEXTBEFORE"
+msgid "Set to 1 to perform a case-insensitive match. The default is 0."
+msgstr "Imposta a 1 per trovare le corrispondenze senza distinzione tra maiuscole e minuscole. Il valore predefinito è 0."
+
+#. sACA2
+#: sc/inc/scfuncs.hrc:4362
+msgctxt "SC_OPCODE_TEXTBEFORE"
+msgid "Match End"
+msgstr "Corrispondenza alla fine"
+
+#. UxpD6
+#: sc/inc/scfuncs.hrc:4363
+msgctxt "SC_OPCODE_TEXTBEFORE"
+msgid "Set to 1 to treat the end of text as a delimiter. The default is 0."
+msgstr "Imposta a 1 per trattare la fine del testo come un delimitatore. Il valore predefinito è 0."
+
+#. aCnZX
+#: sc/inc/scfuncs.hrc:4364
+msgctxt "SC_OPCODE_TEXTBEFORE"
+msgid "If Not Found"
+msgstr "Se non trovato"
+
+#. xCZYH
+#: sc/inc/scfuncs.hrc:4365
+msgctxt "SC_OPCODE_TEXTBEFORE"
+msgid "The value returned if no match is found. The default is #N/A."
+msgstr "Valore restituito se non viene trovata alcuna corrispondenza. Il valore predefinito è #N/D."
+
+#. wdZTd
+#: sc/inc/scfuncs.hrc:4371
+msgctxt "SC_OPCODE_TEXTSPLIT"
+msgid "Splits text by a given delimiter to an array of multiple cells."
+msgstr "Suddivide il testo in base a un delimitatore specificato in una matrice di più celle."
+
+#. DH7h4
+#: sc/inc/scfuncs.hrc:4372
+msgctxt "SC_OPCODE_TEXTSPLIT"
+msgid "Text"
+msgstr "Testo"
+
+#. dqSdF
+#: sc/inc/scfuncs.hrc:4373
+msgctxt "SC_OPCODE_TEXTSPLIT"
+msgid "The text to split."
+msgstr "Testo da suddividere."
+
+#. pdpxt
+#: sc/inc/scfuncs.hrc:4374
+msgctxt "SC_OPCODE_TEXTSPLIT"
+msgid "Column Delimiter"
+msgstr "Delimitatore di colonna"
+
+#. nfMAr
+#: sc/inc/scfuncs.hrc:4375
+msgctxt "SC_OPCODE_TEXTSPLIT"
+msgid "The text to delimit the columns. Multiple delimiters can be supplied."
+msgstr "Testo che delimita le colonne. Possono essere inseriti più delimitatori."
+
+#. qZGq2
+#: sc/inc/scfuncs.hrc:4376
+msgctxt "SC_OPCODE_TEXTSPLIT"
+msgid "Row Delimiter"
+msgstr "Delimitatore di riga"
+
+#. dPnbc
+#: sc/inc/scfuncs.hrc:4377
+msgctxt "SC_OPCODE_TEXTSPLIT"
+msgid "The text to delimit the rows. Multiple delimiters can be supplied."
+msgstr "Testo che delimita le righe. Possono essere inseriti più delimitatori."
+
+#. jD3sa
+#: sc/inc/scfuncs.hrc:4378
+msgctxt "SC_OPCODE_TEXTSPLIT"
+msgid "Ignore Empty"
+msgstr "Ignora se vuoto"
+
+#. 6LwdP
+#: sc/inc/scfuncs.hrc:4379
+msgctxt "SC_OPCODE_TEXTSPLIT"
+msgid "Set to TRUE to ignore consecutive delimiters otherwise it creates an empty cell. The default is FALSE."
+msgstr "Imposta su VERO per ignorare i delimitatori consecutivi, diversamente verrà creata una cella vuota. L'impostazione predefinita è FALSO."
+
+#. kkAYp
+#: sc/inc/scfuncs.hrc:4380
+msgctxt "SC_OPCODE_TEXTSPLIT"
+msgid "Match mode"
+msgstr "Modo corrispondenza"
+
+#. iX8cx
+#: sc/inc/scfuncs.hrc:4381
+msgctxt "SC_OPCODE_TEXTSPLIT"
+msgid "Set to 1 to perform a case-insensitive match. The default is 0."
+msgstr "Imposta a 1 per trovare le corrispondenze senza distinzione tra maiuscole e minuscole. Il valore predefinito è 0."
+
+#. vXECz
+#: sc/inc/scfuncs.hrc:4382
+msgctxt "SC_OPCODE_TEXTSPLIT"
+msgid "Pad with"
+msgstr "Riempi con"
+
+#. h4db2
+#: sc/inc/scfuncs.hrc:4383
+msgctxt "SC_OPCODE_TEXTSPLIT"
+msgid "The value with which to pad. The default is #N/A."
+msgstr "Valore con cui eseguire il riempimento. L'impostazione predefinita è #N/D."
+
+#. 4dkE2
+#: sc/inc/scfuncs.hrc:4389
+#, fuzzy
+msgctxt "SC_OPCODE_TOCOL"
+msgid "transforms an array into a single column."
+msgstr "Trasforma una matrice in un'unica colonna."
+
+#. UAzNC
+#: sc/inc/scfuncs.hrc:4390
+msgctxt "SC_OPCODE_TOCOL"
+msgid "Array"
+msgstr "Matrice"
+
+#. CHojs
+#: sc/inc/scfuncs.hrc:4391
+msgctxt "SC_OPCODE_TOCOL"
+msgid "The range or array to return as a single column."
+msgstr "L'intervallo o la matrice da restituire come unica colonna."
+
+#. uACXu
+#: sc/inc/scfuncs.hrc:4392
+msgctxt "SC_OPCODE_TOCOL"
+msgid "Ignore"
+msgstr "Ignora"
+
+#. b7EQW
+#: sc/inc/scfuncs.hrc:4393
+msgctxt "SC_OPCODE_TOCOL"
+msgid "Whether to ignore certain types of values. 0 or omitted - keep all values (default). 1 - ignore blank cells. 2 - ignore cells with error. 3 - ignore blanks cells and cells with error."
+msgstr "Indica se ignorare determinati tipi di valori. 0 od omesso: mantiene tutti i valori (impostazione predefinita). 1: ignora le celle vuote. 2: ignora le celle con errori. 3: ignora le celle vuote e le celle con errori."
+
+#. qNLAi
+#: sc/inc/scfuncs.hrc:4394
+msgctxt "SC_OPCODE_TOCOL"
+msgid "Scan by column"
+msgstr "Scansiona per colonna"
+
+#. bcArN
+#: sc/inc/scfuncs.hrc:4395
+msgctxt "SC_OPCODE_TOCOL"
+msgid "Scan the array by column. FALSE or omitted (default) - the array is scanned by row. TRUE - the array is scanned by column."
+msgstr "Effettua la scansione della matrice per colonna. FALSO od omesso (impostazione predefinita): la matrice viene scansionata per riga. VERO: la matrice viene scansionata per colonna."
+
+#. PGyxj
+#: sc/inc/scfuncs.hrc:4401
+msgctxt "SC_OPCODE_TOROW"
+msgid "transforms an array into a single row."
+msgstr "trasforma una matrice in un'unica riga."
+
+#. W9bWe
+#: sc/inc/scfuncs.hrc:4402
+msgctxt "SC_OPCODE_TOROW"
+msgid "Array"
+msgstr "Matrice"
+
+#. 5MEvT
+#: sc/inc/scfuncs.hrc:4403
+msgctxt "SC_OPCODE_TOROW"
+msgid "The range or array to return as a single row."
+msgstr "L'intervallo o la matrice da restituire come singola riga."
+
+#. AqqBC
+#: sc/inc/scfuncs.hrc:4404
+msgctxt "SC_OPCODE_TOROW"
+msgid "Ignore"
+msgstr "Ignora"
+
+#. wcpQF
+#: sc/inc/scfuncs.hrc:4405
+msgctxt "SC_OPCODE_TOROW"
+msgid "Whether to ignore certain types of values. 0 or omitted - keep all values (default). 1 - ignore blank cells. 2 - ignore cells with error. 3 - ignore blanks cells and cells with error."
+msgstr "Indica se ignorare determinati tipi di valori. 0 od omesso: mantiene tutti i valori (impostazione predefinita). 1: ignora le celle vuote. 2: ignora le celle con errori. 3: ignora le celle vuote e le celle con errori."
+
+#. E4XDf
+#: sc/inc/scfuncs.hrc:4406
+msgctxt "SC_OPCODE_TOROW"
+msgid "Scan by column"
+msgstr "Scansiona per colonna"
+
+#. 5bZRy
+#: sc/inc/scfuncs.hrc:4407
+msgctxt "SC_OPCODE_TOROW"
+msgid "Scan the array by column. FALSE or omitted (default) - the array is scanned by row. TRUE - the array is scanned by column."
+msgstr "Effettua la scansione della matrice per colonna. FALSO od omesso (impostazione predefinita): la matrice viene scansionata per riga. VERO: la matrice viene scansionata per colonna."
+
+#. NJR3E
+#: sc/inc/scfuncs.hrc:4413
 msgctxt "SC_OPCODE_UNIQUE"
 msgid "Returns a list of unique values from a range or array."
 msgstr "Restituisce un elenco di valori univoci derivanti da un intervallo o da una matrice."
 
 #. NepxE
-#: sc/inc/scfuncs.hrc:4258
+#: sc/inc/scfuncs.hrc:4414
 msgctxt "SC_OPCODE_UNIQUE"
 msgid "Array"
 msgstr "Matrice"
 
 #. 2sVga
-#: sc/inc/scfuncs.hrc:4259
+#: sc/inc/scfuncs.hrc:4415
 msgctxt "SC_OPCODE_UNIQUE"
 msgid "The range or array from which to return unique values."
 msgstr "L'intervallo o la matrice da cui restituire i valori univoci."
 
 #. fGfWS
-#: sc/inc/scfuncs.hrc:4260
+#: sc/inc/scfuncs.hrc:4416
 msgctxt "SC_OPCODE_UNIQUE"
 msgid "By col"
 msgstr "Per col."
 
 #. SASmk
-#: sc/inc/scfuncs.hrc:4261
+#: sc/inc/scfuncs.hrc:4417
 msgctxt "SC_OPCODE_UNIQUE"
 msgid "Logical value indicating how to compare data: TRUE - compares data across columns. FALSE or omitted (default) - compares data across rows."
 msgstr "Valore logico che specifica la modalità di confronto dei dati: VERO - confronta i dati tra le colonne. FALSO oppure omesso (valore predefinito) - confronta i dati tra le righe."
 
 #. hVQ6i
-#: sc/inc/scfuncs.hrc:4262
+#: sc/inc/scfuncs.hrc:4418
 msgctxt "SC_OPCODE_UNIQUE"
 msgid "Uniqueness"
 msgstr "Unicità"
 
 #. EUVys
-#: sc/inc/scfuncs.hrc:4263
+#: sc/inc/scfuncs.hrc:4419
 msgctxt "SC_OPCODE_UNIQUE"
 msgid "Logical value that defines what values are considered unique: TRUE - returns values that occur only once. FALSE or omitted (default) - returns all distinct (different) values in the range or array."
 msgstr "Valore logico che definisce quali sono i valori da considerare unici: VERO - restituisce i valori che si riscontrano una sola volta. FALSO oppure omesso (valore predefinito) - restituisce tutti i valori distinti (diversi) nell'intervallo o nella matrice."
 
 #. axamT
-#: sc/inc/scfuncs.hrc:4269
+#: sc/inc/scfuncs.hrc:4425
 msgctxt "SC_OPCODE_LET"
 msgid "The LET function assigns names to calculation results. This allows storing intermediate calculations, values, or defining names inside a formula. These names only apply within the scope of the LET function."
 msgstr "La funzione LET assegna nomi ai risultati dei calcoli. Ciò consente di memorizzare calcoli intermedi, valori o di definire nomi all'interno di una formula. Questi nomi si applicano solo nell'ambito della funzione LET."
 
 #. 6DDAi
-#: sc/inc/scfuncs.hrc:4270
+#: sc/inc/scfuncs.hrc:4426
 msgctxt "SC_OPCODE_LET"
 msgid "Name 1"
 msgstr "Nome 1"
 
 #. a7LQR
-#: sc/inc/scfuncs.hrc:4271
+#: sc/inc/scfuncs.hrc:4427
 msgctxt "SC_OPCODE_LET"
 msgid "The first name to assign. Must start with a letter. Cannot be the output of a formula or conflict with range syntax."
 msgstr "Il primo nome da assegnare. Deve iniziare con una lettera. Non può essere l'output di una formula o essere in conflitto con la sintassi dell'intervallo."
 
 #. KsyBM
-#: sc/inc/scfuncs.hrc:4272
+#: sc/inc/scfuncs.hrc:4428
 msgctxt "SC_OPCODE_LET"
 msgid "Name value "
 msgstr "Valore nome "
 
 #. Dn2DE
-#: sc/inc/scfuncs.hrc:4273
+#: sc/inc/scfuncs.hrc:4429
 msgctxt "SC_OPCODE_LET"
 msgid "Name value 1, Name value 2,... The value or calculation to assign to Name."
 msgstr "Valore nome 1, valore nome 2,... Il valore o il calcolo da assegnare a Nome."
 
 #. CHAMD
-#: sc/inc/scfuncs.hrc:4274
+#: sc/inc/scfuncs.hrc:4430
 msgctxt "SC_OPCODE_LET"
 msgid "Calculation or Name "
 msgstr "Calcolo o Nome "
 
 #. tFMkP
-#: sc/inc/scfuncs.hrc:4275
+#: sc/inc/scfuncs.hrc:4431
 msgctxt "SC_OPCODE_LET"
 msgid "A calculation that uses all names within the LET function. This must be the last argument in the LET function. Or a second Name to assign to a second Name value. If a second Name is specified, Name value 2 and Calculation or Name 3 become required."
 msgstr "Un calcolo che utilizza tutti i nomi contenuti nella funzione LET. Deve essere l'ultimo argomento all'interno di tale funzione. Oppure un secondo Nome da assegnare a un secondo valore Nome. Se viene specificato un secondo Nome, il valore Nome 2 e il Calcolo o il Nome 3 diventano obbligatori."
+
+#. oBDEA
+#: sc/inc/scfuncs.hrc:4437
+msgctxt "SC_OPCODE_WRAPCOLS"
+msgid "Wraps the provided row or column of values by columns after a specified number of elements to form a new array."
+msgstr "Suddivide i valori della riga o della colonna specificata in più colonne dopo un determinato numero di elementi in modo da formare una nuova matrice."
+
+#. fC6RK
+#: sc/inc/scfuncs.hrc:4438
+msgctxt "SC_OPCODE_WRAPCOLS"
+msgid "Range"
+msgstr "Intervallo"
+
+#. nfZyj
+#: sc/inc/scfuncs.hrc:4439
+msgctxt "SC_OPCODE_WRAPCOLS"
+msgid "the range to wrap."
+msgstr "Intervallo dei valori da suddividere."
+
+#. GE3HQ
+#: sc/inc/scfuncs.hrc:4440
+msgctxt "SC_OPCODE_WRAPCOLS"
+msgid "Wrap count"
+msgstr "Numero di valori"
+
+#. FWsCt
+#: sc/inc/scfuncs.hrc:4441
+msgctxt "SC_OPCODE_WRAPCOLS"
+msgid "The maximum number of values for each column."
+msgstr "Numero massimo di valori per ogni colonna."
+
+#. zkjFB
+#: sc/inc/scfuncs.hrc:4442
+msgctxt "SC_OPCODE_WRAPCOLS"
+msgid "Pad with"
+msgstr "Riempi con"
+
+#. knbjc
+#: sc/inc/scfuncs.hrc:4443
+msgctxt "SC_OPCODE_WRAPCOLS"
+msgid "The value with which to pad. The default is #N/A."
+msgstr "Valore con cui eseguire il riempimento. L'impostazione predefinita è #N/D."
+
+#. BDA7q
+#: sc/inc/scfuncs.hrc:4449
+msgctxt "SC_OPCODE_WRAPROWS"
+msgid "Wraps the provided row or column of values by rows after a specified number of elements to form a new array."
+msgstr "Suddivide i valori della riga o della colonna specificata in più righe dopo un determinato numero di elementi in modo da formare una nuova matrice."
+
+#. 7esii
+#: sc/inc/scfuncs.hrc:4450
+msgctxt "SC_OPCODE_WRAPROWS"
+msgid "Range"
+msgstr "Intervallo"
+
+#. FLJwx
+#: sc/inc/scfuncs.hrc:4451
+msgctxt "SC_OPCODE_WRAPROWS"
+msgid "the range to wrap."
+msgstr "Intervallo dei valori da suddividere."
+
+#. aLHUi
+#: sc/inc/scfuncs.hrc:4452
+msgctxt "SC_OPCODE_WRAPROWS"
+msgid "Wrap count"
+msgstr "Numero di valori"
+
+#. 3CEsK
+#: sc/inc/scfuncs.hrc:4453
+msgctxt "SC_OPCODE_WRAPROWS"
+msgid "The maximum number of values for each row."
+msgstr "Numero massimo di valori per ogni riga."
+
+#. iTCWg
+#: sc/inc/scfuncs.hrc:4454
+msgctxt "SC_OPCODE_WRAPROWS"
+msgid "Pad with"
+msgstr "Riempi con"
+
+#. e3K5s
+#: sc/inc/scfuncs.hrc:4455
+msgctxt "SC_OPCODE_WRAPROWS"
+msgid "The value with which to pad. The default is #N/A."
+msgstr "Valore con cui eseguire il riempimento. L'impostazione predefinita è #N/D."
 
 #. pDDme
 #: sc/inc/scstyles.hrc:29
@@ -20408,50 +21076,48 @@ msgctxt "cellprotectionpage|extended_tip|checkHideAll"
 msgid "Hides formulas and contents of the selected cells."
 msgstr "Nasconde le formule e i contenuti delle celle selezionate."
 
-#. fBWyS
+#. XDDcB
 #: sc/uiconfig/scalc/ui/cellprotectionpage.ui:99
+#, fuzzy
 msgctxt "cellprotectionpage|label1"
-msgid ""
-"Cell protection is only effective after the current sheet has been protected.\n"
-"\n"
-"Select 'Protect Sheet' from the 'Tools' menu."
+msgid "Cell protection is only effective after the current sheet has been protected."
 msgstr ""
 "Per attivare la protezione cella, è necessario proteggere il foglio attivo.\n"
 "\n"
 "Scegli 'Proteggi foglio' dal menu 'Strumenti'."
 
 #. bVREg
-#: sc/uiconfig/scalc/ui/cellprotectionpage.ui:121
+#: sc/uiconfig/scalc/ui/cellprotectionpage.ui:119
 msgctxt "cellprotectionpage|LabelProtection"
 msgid "Protection"
 msgstr "Protezione"
 
 #. A5DFp
-#: sc/uiconfig/scalc/ui/cellprotectionpage.ui:151
+#: sc/uiconfig/scalc/ui/cellprotectionpage.ui:149
 msgctxt "cellprotectionpage|checkHidePrinting"
 msgid "Hide _when printing"
 msgstr "_Non stampare"
 
 #. ZosAc
-#: sc/uiconfig/scalc/ui/cellprotectionpage.ui:160
+#: sc/uiconfig/scalc/ui/cellprotectionpage.ui:158
 msgctxt "cellprotectionpage|extended_tip|checkHidePrinting"
 msgid "Keeps the selected cells from being printed."
 msgstr "Impedisce la stampa delle celle selezionate."
 
 #. QqUqE
-#: sc/uiconfig/scalc/ui/cellprotectionpage.ui:175
+#: sc/uiconfig/scalc/ui/cellprotectionpage.ui:173
 msgctxt "cellprotectionpage|label4"
 msgid "The cells selected will be omitted when printing."
 msgstr "Le celle della selezione corrente non saranno stampate."
 
 #. 8RuyP
-#: sc/uiconfig/scalc/ui/cellprotectionpage.ui:194
+#: sc/uiconfig/scalc/ui/cellprotectionpage.ui:192
 msgctxt "cellprotectionpage|label3"
 msgid "Print"
 msgstr "Stampa"
 
 #. DPWp6
-#: sc/uiconfig/scalc/ui/cellprotectionpage.ui:208
+#: sc/uiconfig/scalc/ui/cellprotectionpage.ui:206
 msgctxt "cellprotectionpage|extended_tip|CellProtectionPage"
 msgid "Defines protection options for selected cells."
 msgstr "Specifica le opzioni di protezione per le celle selezionate."
@@ -20726,11 +21392,11 @@ msgctxt "condformatmanager|extended_tip|CondFormatManager"
 msgid "This dialog allows you to see all the conditional formatting defined in the spreadsheet."
 msgstr "Questa finestra di dialogo consente di vedere tutte le formattazioni condizionali definite nel foglio elettronico."
 
-#. nrXMW
+#. FVsyY
 #: sc/uiconfig/scalc/ui/conditionaleasydialog.ui:8
 msgctxt "conditionaleasydialog|title"
-msgid "Apply conditional formatting..."
-msgstr "Applica formattazione condizionale..."
+msgid "Highlight cells..."
+msgstr "Evidenzia celle..."
 
 #. pDRks
 #: sc/uiconfig/scalc/ui/conditionaleasydialog.ui:46
@@ -31541,32 +32207,38 @@ msgctxt "sidebarcellappearance|bordertype|accessible_name"
 msgid "Borders"
 msgstr "Bordi"
 
+#. FXK8B
+#: sc/uiconfig/scalc/ui/sidebarcellappearance.ui:87
+msgctxt "sidebarcellappearance|cellbordertype-atkobject"
+msgid "Border Style"
+msgstr "Stile bordo"
+
 #. D2TVi
-#: sc/uiconfig/scalc/ui/sidebarcellappearance.ui:96
+#: sc/uiconfig/scalc/ui/sidebarcellappearance.ui:101
 msgctxt "sidebarcellappearance|borderlinecolor|tooltip_text"
 msgid "Select the line color of the borders."
 msgstr "Seleziona il colore di linea dei bordi."
 
 #. GqfZD
-#: sc/uiconfig/scalc/ui/sidebarcellappearance.ui:105
+#: sc/uiconfig/scalc/ui/sidebarcellappearance.ui:110
 msgctxt "sidebarcellappearance|linecolor|tooltip_text"
 msgid "Select the line color of the borders."
 msgstr "Seleziona il colore di linea dei bordi."
 
 #. 8AUBs
-#: sc/uiconfig/scalc/ui/sidebarcellappearance.ui:115
+#: sc/uiconfig/scalc/ui/sidebarcellappearance.ui:120
 msgctxt "sidebarcellappearance|borderlinecolor-atkobject"
 msgid "Border Line Color"
 msgstr "Colore linea bordo"
 
 #. VgXDF
-#: sc/uiconfig/scalc/ui/sidebarcellappearance.ui:136
+#: sc/uiconfig/scalc/ui/sidebarcellappearance.ui:141
 msgctxt "sidebarcellappearance|linestyle|tooltip_text"
 msgid "Select the line style of the borders."
 msgstr "Seleziona lo stile di linea dei bordi."
 
 #. jaxhA
-#: sc/uiconfig/scalc/ui/sidebarcellappearance.ui:146
+#: sc/uiconfig/scalc/ui/sidebarcellappearance.ui:151
 msgctxt "sidebarcellappearance|borderlinestyle-atkobject"
 msgid "Border Line Style"
 msgstr "Stile linea bordo"
