@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2025-11-03 12:53+0100\n"
+"POT-Creation-Date: 2025-11-18 17:38+0100\n"
 "PO-Revision-Date: 2025-10-30 13:55+0000\n"
 "Last-Translator: Andreas Pettersson <amvpet@gmail.com>\n"
 "Language-Team: Swedish <https://translations.documentfoundation.org/projects/libo_ui-master/scmessages/sv/>\n"
@@ -20360,8 +20360,26 @@ msgctxt "STR_CONTENT_WITH_UNKNOWN_ENCRYPTION"
 msgid "Document contains DRM content that is encrypted with an unknown encryption method. Only the un-encrypted content will be shown."
 msgstr "Dokumentet innehåller DRM-innehåll som är krypterat med en okänd krypteringsmetod. Endast okrypterat innehåll kommer att visas."
 
-#. kLnJj
+#. YzTzQ
 #: sc/inc/strings.hrc:451
+msgctxt "STR_TRACK_CHANGES_INFOBAR_TITLE"
+msgid "Track Changes"
+msgstr ""
+
+#. kZAFi
+#: sc/inc/strings.hrc:452
+msgctxt "STR_DOCUMENT_HAS_CHANGES"
+msgid "Document contains tracked changes and recording is enabled."
+msgstr ""
+
+#. X3DFB
+#: sc/inc/strings.hrc:453
+msgctxt "STR_DOCUMENT_TRACKS_CHANGES"
+msgid "Recording of changes is enabled."
+msgstr ""
+
+#. kLnJj
+#: sc/inc/strings.hrc:455
 msgctxt "STR_AUTOCALC_OFF"
 msgid ""
 "AutoCalculate: Off\n"
@@ -32691,11 +32709,11 @@ msgctxt "sortoptionspage|case"
 msgid "Case _sensitive"
 msgstr "Gör _skillnad på gemener/VERSALER"
 
-#. iLUst
+#. bsDJX
 #: sc/uiconfig/scalc/ui/sortoptionspage.ui:37
 msgctxt "sortoptionspage|extended_tip|case"
-msgid "Sorts first by uppercase letters and then by lowercase letters. For Asian locales, special handling applies."
-msgstr "Sorterar först efter versaler och sedan efter gemener. För asiatiska språk gäller särskild hantering."
+msgid "Treats lowercase and uppercase variants of a letter as different characters. For Asian locales, special handling applies."
+msgstr ""
 
 #. RM629
 #: sc/uiconfig/scalc/ui/sortoptionspage.ui:48
@@ -32709,140 +32727,158 @@ msgctxt "sortoptionspage|extended_tip|formats"
 msgid "Preserves the current cell formatting."
 msgstr "Behåller den aktuella formateringen i cellen."
 
-#. cSDLE
+#. Gtck5
 #: sc/uiconfig/scalc/ui/sortoptionspage.ui:73
 msgctxt "sortoptionspage|naturalsort"
-msgid "Recognize numbers within strings"
-msgstr "Känner igen tal i strängar"
+msgid "Enable natural sort"
+msgstr "Aktivera naturlig sortering"
 
-#. 3uXDX
+#. BviDT
 #: sc/uiconfig/scalc/ui/sortoptionspage.ui:78
 msgctxt "sortoptionspage|naturalsort"
+msgid "Numbers embedded in text are sorted according to their value."
+msgstr ""
+
+#. HUq43
+#: sc/uiconfig/scalc/ui/sortoptionspage.ui:83
+msgctxt "sortoptionspage|extended_tip|naturalsort"
 msgid "For numbers embedded in text, sorting uses their values instead of their sequence of digit characters. Example: A1, A2, A10 instead of A1, A10, A2"
-msgstr "För tal inbäddade i text använder sorteringen deras värden istället för deras sekvens av siffror. Exempel: A1, A2, A10 istället för A1, A10, A2"
+msgstr ""
 
-#. pFhCH
-#: sc/uiconfig/scalc/ui/sortoptionspage.ui:90
-msgctxt "sortoptionspage|naturalsort|doublenaturalsortrb"
-msgid "Use decimal numbers as a whole"
-msgstr "Använd decimaltal som helhet"
-
-#. FGeaW
+#. buyrV
 #: sc/uiconfig/scalc/ui/sortoptionspage.ui:95
 msgctxt "sortoptionspage|naturalsort|doublenaturalsortrb"
-msgid "Decimal numbers are detected. Example: A1.14, A1.2, A2.5, A10 (with dot as separator)"
-msgstr "Decimaltal detekteras. Exempel: A1.14, A1.2, A2.5, A10 (med punkt som avgränsare)"
+msgid "Recognize decimal separator"
+msgstr ""
 
-#. UvAAR
-#: sc/uiconfig/scalc/ui/sortoptionspage.ui:108
-msgctxt "sortoptionspage|naturalsort|integernaturalsortrb"
-msgid "Split in integer and fractions"
-msgstr "Dela upp i heltal och bråk"
+#. kQFF4
+#: sc/uiconfig/scalc/ui/sortoptionspage.ui:100
+msgctxt "sortoptionspage|naturalsort|doublenaturalsortrb"
+msgid "Example: A1.14 (with dot as separator) contains character 'A' and number 1.14"
+msgstr ""
 
-#. ZwG8g
-#: sc/uiconfig/scalc/ui/sortoptionspage.ui:113
+#. PVtG3
+#: sc/uiconfig/scalc/ui/sortoptionspage.ui:106
+msgctxt "sortoptionspage|extended_tip|doublenaturalsortrb"
+msgid "Example: A1.14, A1.2, A2.5, A10 (with dot as separator). The locale determines which character is used as the decimal separator."
+msgstr ""
+
+#. KBoR6
+#: sc/uiconfig/scalc/ui/sortoptionspage.ui:118
 msgctxt "sortoptionspage|naturalsort|integernaturalsortrb"
-msgid "Decimal separator is treated as ordinary character. Example: A1.2, A1.14, A2.5, A10"
-msgstr "Decimaltecken behandlas som vanligt tecken. Exempel: A1.2, A1.14, A2.5, A10"
+msgid "Decimal separator as regular character"
+msgstr ""
+
+#. PZzPm
+#: sc/uiconfig/scalc/ui/sortoptionspage.ui:123
+msgctxt "sortoptionspage|naturalsort|integernaturalsortrb"
+msgid "Example: In A1.14, the dot is a character, not a decimal separator."
+msgstr ""
+
+#. kFVpA
+#: sc/uiconfig/scalc/ui/sortoptionspage.ui:130
+msgctxt "sortoptionspage|extended_tip|integernaturalsortrb"
+msgid "Example: A1.14 contains character 'A', number 1, character '.' and number 14."
+msgstr ""
 
 #. yev2y
-#: sc/uiconfig/scalc/ui/sortoptionspage.ui:133
+#: sc/uiconfig/scalc/ui/sortoptionspage.ui:148
 msgctxt "sortoptionspage|includenotes"
 msgid "Include boundary column(s) containing only comments"
 msgstr "Inkludera kantkolumn(er) endast innehållande kommentarer"
 
 #. NJ69D
-#: sc/uiconfig/scalc/ui/sortoptionspage.ui:147
+#: sc/uiconfig/scalc/ui/sortoptionspage.ui:162
 msgctxt "sortoptionspage|includeimages"
 msgid "Include boundary column(s) containing only images"
 msgstr "Inkludera kantkolumn(er) endast innehållande bilder"
 
 #. eZ8XM
-#: sc/uiconfig/scalc/ui/sortoptionspage.ui:161
+#: sc/uiconfig/scalc/ui/sortoptionspage.ui:176
 msgctxt "sortoptionspage|copyresult"
 msgid "Copy sort results to:"
 msgstr "Kopiera sorteringsresultat till:"
 
 #. gis9V
-#: sc/uiconfig/scalc/ui/sortoptionspage.ui:172
+#: sc/uiconfig/scalc/ui/sortoptionspage.ui:187
 msgctxt "sortoptionspage|extended_tip|copyresult"
 msgid "Copies the sorted list to the cell range that you specify."
 msgstr "Kopierar den sorterade listan till ett cellområde som du anger."
 
 #. GwzEB
-#: sc/uiconfig/scalc/ui/sortoptionspage.ui:183
+#: sc/uiconfig/scalc/ui/sortoptionspage.ui:198
 msgctxt "sortoptionspage|sortuser"
 msgid "Custom sort order"
 msgstr "Användardefinierad sorteringsordning"
 
 #. aDYdR
-#: sc/uiconfig/scalc/ui/sortoptionspage.ui:194
+#: sc/uiconfig/scalc/ui/sortoptionspage.ui:209
 msgctxt "sortoptionspage|extended_tip|sortuser"
 msgid "Click here and then select the custom sort order that you want."
 msgstr "Klicka här och markera den sorteringsordning som du vill använda."
 
 #. WKWmE
-#: sc/uiconfig/scalc/ui/sortoptionspage.ui:218
+#: sc/uiconfig/scalc/ui/sortoptionspage.ui:233
 msgctxt "sortoptionspage|outarealb-atkobject"
 msgid "Copy sort results to:"
 msgstr "Kopiera sorteringsresultat till:"
 
 #. ABAdF
-#: sc/uiconfig/scalc/ui/sortoptionspage.ui:219
+#: sc/uiconfig/scalc/ui/sortoptionspage.ui:234
 msgctxt "sortoptionspage|extended_tip|outarealb"
 msgid "Select a named cell range where you want to display the sorted list, or enter a cell range in the input box."
 msgstr "Välj ett namngivet cellområde där du vill visa den sorterade listan eller ange ett cellområde i inmatningsrutan."
 
 #. ABGSS
-#: sc/uiconfig/scalc/ui/sortoptionspage.ui:238
+#: sc/uiconfig/scalc/ui/sortoptionspage.ui:253
 msgctxt "sortoptionspage|outareaed-atkobject"
 msgid "Copy sort results to:"
 msgstr "Kopiera sorteringsresultat till:"
 
 #. kpVh9
-#: sc/uiconfig/scalc/ui/sortoptionspage.ui:239
+#: sc/uiconfig/scalc/ui/sortoptionspage.ui:254
 msgctxt "sortoptionspage|extended_tip|outareaed"
 msgid "Enter the cell range where you want to display the sorted list, or select a named range from the list."
 msgstr "Ange det cellområde där den sorterade listan ska visas eller välj ett namngivet område från listan."
 
 #. iWcGs
-#: sc/uiconfig/scalc/ui/sortoptionspage.ui:265
+#: sc/uiconfig/scalc/ui/sortoptionspage.ui:280
 msgctxt "sortoptionspage|sortuserlb-atkobject"
 msgid "Custom sort order"
 msgstr "Användardefinierad sorteringsordning"
 
 #. wkSRh
-#: sc/uiconfig/scalc/ui/sortoptionspage.ui:286
+#: sc/uiconfig/scalc/ui/sortoptionspage.ui:301
 msgctxt "sortoptionspage|label6"
 msgid "Locale"
 msgstr "Språkvariant"
 
 #. dBv73
-#: sc/uiconfig/scalc/ui/sortoptionspage.ui:300
+#: sc/uiconfig/scalc/ui/sortoptionspage.ui:315
 msgctxt "sortoptionspage|algorithmft"
 msgid "Options"
 msgstr "Alternativ"
 
 #. oA9A5
-#: sc/uiconfig/scalc/ui/sortoptionspage.ui:321
+#: sc/uiconfig/scalc/ui/sortoptionspage.ui:336
 msgctxt "sortoptionspage|extended_tip|language"
 msgid "Select the locale for the sorting rules."
 msgstr "Välj språk för sorteringsreglerna."
 
 #. ybsEh
-#: sc/uiconfig/scalc/ui/sortoptionspage.ui:337
+#: sc/uiconfig/scalc/ui/sortoptionspage.ui:352
 msgctxt "sortoptionspage|extended_tip|algorithmlb"
 msgid "Select a sorting option for the locale."
 msgstr "Välj ett sorteringsalternativ för språket."
 
 #. aDahD
-#: sc/uiconfig/scalc/ui/sortoptionspage.ui:358
+#: sc/uiconfig/scalc/ui/sortoptionspage.ui:373
 msgctxt "sortoptionspage|label2"
 msgid "Sort Options"
 msgstr "Sorteringsalternativ"
 
 #. 7AH6P
-#: sc/uiconfig/scalc/ui/sortoptionspage.ui:373
+#: sc/uiconfig/scalc/ui/sortoptionspage.ui:388
 msgctxt "sortoptionspage|extended_tip|SortOptionsPage"
 msgid "Sets additional sorting options."
 msgstr "Definierar övriga sorteringsalternativ."
