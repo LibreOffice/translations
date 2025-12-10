@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2025-10-16 12:00+0200\n"
+"POT-Creation-Date: 2025-12-10 15:42+0100\n"
 "PO-Revision-Date: 2025-03-04 14:54+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Vietnamese <https://translations.documentfoundation.org/projects/libo_help-master/textsbasicshared03/vi/>\n"
@@ -16657,13 +16657,13 @@ msgctxt ""
 msgid "A dictionary is a collection of key-item pairs"
 msgstr ""
 
-#. fZDre
+#. CQUYn
 #: sf_dictionary.xhp
 msgctxt ""
 "sf_dictionary.xhp\n"
 "par_id861582884516571\n"
 "help.text"
-msgid "The key is a case-insensitive string"
+msgid "The key is a string. In Basic scripts, the case sensitivity of the key is determined at Dictionary creation. In Python scripts, the key is always case-sensitive."
 msgstr ""
 
 #. 2AdDG
@@ -16684,13 +16684,13 @@ msgctxt ""
 msgid "Keys and items can be retrieved, counted, updated, and much more."
 msgstr ""
 
-#. LtaTT
+#. oY6bP
 #: sf_dictionary.xhp
 msgctxt ""
 "sf_dictionary.xhp\n"
 "par_id971582884636922\n"
 "help.text"
-msgid "The Dictionary service is similar to the built-in %PRODUCTNAME Basic <literal>Collection</literal> object, however with more features. For example, <literal>Collection</literal> objects do not support the retrieval of keys. Moreover, Dictionaries provide additional capabilities as replacing keys, testing if a specific key already exists and converting the Dictionary into an Array object or JSON string."
+msgid "The Dictionary service is similar to the built-in %PRODUCTNAME Basic <literal>Collection</literal> object, however with more features. For example, <literal>Collection</literal> objects do not support the retrieval of keys. Moreover, Dictionaries provide additional capabilities as replacing keys, testing if a specific key already exists and converting the Dictionary into an array of PropertyValues or a JSON string."
 msgstr ""
 
 #. RkMHR
@@ -16711,6 +16711,15 @@ msgctxt ""
 msgid "The following example creates <literal>myDict</literal> as an empty dictionary."
 msgstr ""
 
+#. Qsut4
+#: sf_dictionary.xhp
+msgctxt ""
+"sf_dictionary.xhp\n"
+"bas_id251765034282638\n"
+"help.text"
+msgid "' The keys are case-sensitive, hence the second argument is <literal>True</literal>"
+msgstr ""
+
 #. BghTS
 #: sf_dictionary.xhp
 msgctxt ""
@@ -16729,13 +16738,13 @@ msgctxt ""
 msgid "The example below creates an empty instance of the <literal>Dictionary</literal> service and uses the Python native <literal>update</literal> method to populate it with the contents of a Python <literal>dict</literal> object."
 msgstr ""
 
-#. bnDdK
+#. AGLAS
 #: sf_dictionary.xhp
 msgctxt ""
 "sf_dictionary.xhp\n"
 "pyc_id61626869417128\n"
 "help.text"
-msgid "# Initialize myDict as an empty dict object"
+msgid "# Initialize myDict as an empty Dictionary object"
 msgstr ""
 
 #. Zijqj
@@ -16765,13 +16774,13 @@ msgctxt ""
 msgid "# Initialize myDict with the content of dico"
 msgstr ""
 
-#. UHQFC
+#. Bqi6V
 #: sf_dictionary.xhp
 msgctxt ""
 "sf_dictionary.xhp\n"
 "par_id211626699007613\n"
 "help.text"
-msgid "Because Python has built-in dictionary support, most of the methods in the <literal>Dictionary</literal> service are available for Basic scripts only. Exceptions are <literal>ConvertToPropertyValues</literal> and <literal>ImportFromPropertyValues</literal> that are supported in both Basic and Python."
+msgid "Because Python has built-in dictionary support, most of the methods in the <literal>Dictionary</literal> service are available for Basic scripts only. Exceptions are the <literal>ConvertToPropertyValues</literal> and <literal>ImportFromPropertyValues</literal> methods that are supported in both Basic and Python."
 msgstr ""
 
 #. Dd4Pp
@@ -16927,13 +16936,13 @@ msgctxt ""
 msgid "Adds a new key-item pair into the dictionary. Returns <literal>True</literal> if successful."
 msgstr ""
 
-#. 4zw8b
+#. PWDbM
 #: sf_dictionary.xhp
 msgctxt ""
 "sf_dictionary.xhp\n"
 "par_id341582887670030\n"
 "help.text"
-msgid "<emph>key</emph>: String value used to identify the Item. The key is not case-sensitive."
+msgid "<emph>key</emph>: String value used to identify the Item. The case sensitivity of the key was determined at Dictionary creation.."
 msgstr ""
 
 #. UFFFG
@@ -17206,13 +17215,13 @@ msgctxt ""
 msgid "Retrieves an existing dictionary entry based on its key. Returns the value of the item if successful, otherwise returns <literal>Empty</literal>."
 msgstr ""
 
-#. MV7Wq
+#. dGCvf
 #: sf_dictionary.xhp
 msgctxt ""
 "sf_dictionary.xhp\n"
 "par_id551582890399669\n"
 "help.text"
-msgid "<emph>key</emph>: Not case-sensitive. If it does not exist, <literal>Empty</literal> value is returned."
+msgid "<emph>key</emph>: If it does not exist, the <literal>Empty</literal> value is returned."
 msgstr ""
 
 #. rGqyT
@@ -17233,13 +17242,13 @@ msgctxt ""
 msgid "Removes an existing dictionary entry based on its key. Returns <literal>True</literal> if successful."
 msgstr ""
 
-#. EhVL2
+#. QR5yu
 #: sf_dictionary.xhp
 msgctxt ""
 "sf_dictionary.xhp\n"
 "par_id551582890366999\n"
 "help.text"
-msgid "<emph>key</emph>: Not case-sensitive. Must exist in the dictionary, otherwise an <literal>UNKNOWNKEYERROR</literal> error is raised."
+msgid "<emph>key</emph>: Must exist in the dictionary, otherwise an <literal>UNKNOWNKEYERROR</literal> error is raised."
 msgstr ""
 
 #. GyK3j
@@ -17260,13 +17269,13 @@ msgctxt ""
 msgid "Replaces an existing item value based on its key. Returns <literal>True</literal> if successful."
 msgstr ""
 
-#. w4w9A
+#. R9YRt
 #: sf_dictionary.xhp
 msgctxt ""
 "sf_dictionary.xhp\n"
 "par_id991582895615535\n"
 "help.text"
-msgid "<emph>key</emph>: String value representing the key whose value will be replaced. Not case-sensitive. If the key does not exist in the dictionary, an <literal>UNKNOWNKEYERROR</literal> error is raised."
+msgid "<emph>key</emph>: String value representing the key whose value will be replaced. If the key does not exist in the dictionary, an <literal>UNKNOWNKEYERROR</literal> error is raised."
 msgstr ""
 
 #. FA4hz
@@ -17287,22 +17296,22 @@ msgctxt ""
 msgid "Replaces an existing key in the dictionary by a new key. The item value is left unchanged. Returns <literal>True</literal> if successful."
 msgstr ""
 
-#. jKp7C
+#. dPmwA
 #: sf_dictionary.xhp
 msgctxt ""
 "sf_dictionary.xhp\n"
 "par_id911582896597619\n"
 "help.text"
-msgid "<emph>key</emph>: String value representing the key to be replaced. Not case-sensitive. If the key does not exist in the dictionary, a <literal>UNKNOWNKEYERROR</literal> error is raised."
+msgid "<emph>key</emph>: String value representing the key to be replaced. If the key does not exist in the dictionary, a <literal>UNKNOWNKEYERROR</literal> error is raised."
 msgstr ""
 
-#. Dku2D
+#. 7YTCi
 #: sf_dictionary.xhp
 msgctxt ""
 "sf_dictionary.xhp\n"
 "par_id531582896597989\n"
 "help.text"
-msgid "<emph>value</emph>: String value for the new key. Not case-sensitive. If the new key already exists in the dictionary, an <literal>DUPLICATEKEYERROR</literal> error is raised."
+msgid "<emph>value</emph>: String value for the new key. If the new key already exists in the dictionary, a <literal>DUPLICATEKEYERROR</literal> error is raised."
 msgstr ""
 
 #. jasej
