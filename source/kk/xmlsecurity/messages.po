@@ -4,16 +4,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
 "POT-Creation-Date: 2024-09-16 19:51+0200\n"
-"PO-Revision-Date: 2024-06-11 01:45+0000\n"
+"PO-Revision-Date: 2026-01-07 10:30+0000\n"
 "Last-Translator: Baurzhan Muftakhidinov <baurthefirst@gmail.com>\n"
-"Language-Team: Kazakh <https://translations.documentfoundation.org/projects/libo_ui-master/xmlsecuritymessages/kk/>\n"
+"Language-Team: Kazakh <https://translations.documentfoundation.org/projects/libo_ui-25-8/xmlsecuritymessages/kk/>\n"
 "Language: kk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Accelerator-Marker: ~\n"
-"X-Generator: LibreOffice\n"
+"X-Generator: Weblate 5.10.1\n"
 "X-POOTLE-MTIME: 1554998560.000000\n"
 
 #. EyJrF
@@ -98,7 +98,7 @@ msgstr "MD5 сигнатурасы"
 #: xmlsecurity/inc/strings.hrc:38
 msgctxt "STR_XMLSECDLG_OPENED_CRTMGR"
 msgid "You have opened the certificate manager at\n"
-msgstr ""
+msgstr "Сіз сертификаттар басқарушысын келесі жерде аштыңыз\n"
 
 #. YFxBG
 #: xmlsecurity/inc/strings.hrc:39
@@ -226,25 +226,25 @@ msgstr "Шифрлеу"
 #: xmlsecurity/inc/strings.hrc:66
 msgctxt "selectcertificatedialog|str_loaded_certs_base"
 msgid "Certificates are loaded from:\n"
-msgstr ""
+msgstr "Сертификаттар жүктеп алынған жері:\n"
 
 #. hjY6w
 #: xmlsecurity/inc/strings.hrc:67
 msgctxt "selectcertificatedialog|str_loaded_certs_openpgp_gpg"
 msgid "GPG/GnuPG (OpenPGP)"
-msgstr ""
+msgstr "GPG/GnuPG (OpenPGP)"
 
 #. x7bmA
 #: xmlsecurity/inc/strings.hrc:68
 msgctxt "selectcertificatedialog|str_loaded_certs_x509_mscrypt"
 msgid "Windows Certificate Manager / CertMgr (X.509)"
-msgstr ""
+msgstr "Windows сертификаттар басқарушысы / CertMgr (X.509)"
 
 #. 4YPYc
 #: xmlsecurity/inc/strings.hrc:69
 msgctxt "selectcertificatedialog|str_loaded_certs_x509_nss"
 msgid "NSS Certificate DB in the Mozilla Profile (X.509) at:\n"
-msgstr ""
+msgstr "Mozilla профиліндегі NSS сертификаттар дерекқоры (X.509) келесі адресте:\n"
 
 #. FSe5D
 #: xmlsecurity/inc/strings.hrc:71
@@ -276,6 +276,13 @@ msgid ""
 "\n"
 "Do you really want to encrypt your document with this untrusted public key?"
 msgstr ""
+"Қауіпсіздік ескертуі: келесі OpenPGP ашық кілтіне сенім жоқ:\n"
+"\n"
+"%{data}\n"
+"\n"
+"Сенімсіз ашық кілтпен шифрлеу «ортадағы адам» (man-in-the-middle) шабуылының қаупін арттырады. Сәтті жасалған «ортадағы адам» шабуылы қаскөй үшінші тараптарға құжатыңыздың шифрын ашуға мүмкіндік береді.\n"
+"\n"
+"Құжатыңызды осы сенімсіз ашық кілтпен шынымен шифрлегіңіз келе ме?"
 
 #. wH3TZ
 msgctxt "stock"
@@ -424,7 +431,7 @@ msgstr "Дейін жарамды:"
 #: xmlsecurity/uiconfig/ui/certgeneral.ui:250
 msgctxt "certgeneral|type"
 msgid "Key type: "
-msgstr ""
+msgstr "Кілт түрі: "
 
 #. EFAWt
 #: xmlsecurity/uiconfig/ui/certpage.ui:33
@@ -562,7 +569,7 @@ msgstr "Таңдалған қолтаңбаны тізімнен өшіреді.
 #: xmlsecurity/uiconfig/ui/digitalsignaturesdialog.ui:273
 msgctxt "digitalsignaturesdialog|start_certmanager"
 msgid "GPG Certificate Manager"
-msgstr ""
+msgstr "GPG сертификаттар басқарушысы"
 
 #. rRYC3
 #: xmlsecurity/uiconfig/ui/digitalsignaturesdialog.ui:362
@@ -616,7 +623,7 @@ msgstr "Қауіпсіздік деңгейі"
 #: xmlsecurity/uiconfig/ui/macrosecuritydialog.ui:134
 msgctxt "macrosecuritydialog|SecurityTrustPage"
 msgid "Trusted Sources"
-msgstr "Сенімді қайнар көздер"
+msgstr "Сенімді көздер"
 
 #. Za9FH
 #: xmlsecurity/uiconfig/ui/securitylevelpage.ui:18
@@ -660,12 +667,15 @@ msgid ""
 "Only signed macros and macros from trusted file locations are executed.\n"
 "Unsigned macros are disabled."
 msgstr ""
+"_Жоғары.\n"
+"Тек қолтаңбасы бар макростар және сенімді файл орындарынан алынған макростар орындалады.\n"
+"Қолтаңбасы жоқ макростар сөндірілген."
 
 #. nbL9B
 #: xmlsecurity/uiconfig/ui/securitylevelpage.ui:75
 msgctxt "extended_tip|high"
 msgid "Only signed macros or macros from a trusted file location are allowed to run. Macros signed with untrusted certificates will require confirmation to run, when located in untrusted file locations. Trusted certificates and trusted file locations can be set on the Trusted Sources tab page."
-msgstr ""
+msgstr "Тек қолтаңбасы бар макростардың немесе сенімді файл орнынан алынған макростардың орындалуына рұқсат етіледі. Сенімсіз файл орындарында орналасқан және сенімсіз сертификаттармен қол қойылған макростарды орындау үшін растау қажет болады. Сенімді сертификаттар мен сенімді файл орындарын «Сенімді көздер» бетінде баптауға болады."
 
 #. SDdW5
 #: xmlsecurity/uiconfig/ui/securitylevelpage.ui:86
@@ -809,7 +819,7 @@ msgstr "Сертификатты таңдау"
 #: xmlsecurity/uiconfig/ui/selectcertificatedialog.ui:100
 msgctxt "selectcertificatedialog|sign"
 msgid "Select the certificate you want to use for signing."
-msgstr ""
+msgstr "Қол қою үшін пайдаланғыңыз келетін сертификатты таңдаңыз."
 
 #. jcCAA
 #: xmlsecurity/uiconfig/ui/selectcertificatedialog.ui:115
@@ -857,7 +867,7 @@ msgstr "Ағымдағы құжатқа цифрлық қолтаңба қою �
 #: xmlsecurity/uiconfig/ui/selectcertificatedialog.ui:259
 msgctxt "selectcertificatedialog|extended_tip|searchbox"
 msgid "Search for certificate by issuer name or email."
-msgstr ""
+msgstr "Сертификатты шығарушының аты немесе электрондық поштасы бойынша іздеу."
 
 #. dbgmP
 #: xmlsecurity/uiconfig/ui/selectcertificatedialog.ui:278
@@ -893,7 +903,7 @@ msgstr "Сертификаттарды қайта жүктеу"
 #: xmlsecurity/uiconfig/ui/selectcertificatedialog.ui:345
 msgctxt "selectcertificatedialog|extended_tip|reloadcert"
 msgid "Reload the list of certificates."
-msgstr ""
+msgstr "Сертификаттар тізімін қайта жүктеу."
 
 #. snAQh
 #: xmlsecurity/uiconfig/ui/selectcertificatedialog.ui:378
@@ -917,7 +927,7 @@ msgstr "Жалпы"
 #: xmlsecurity/uiconfig/ui/viewcertdialog.ui:107
 msgctxt "viewcertdialog|details"
 msgid "Details"
-msgstr "Көбірек білу"
+msgstr "Ақпараты"
 
 #. DEXmc
 #: xmlsecurity/uiconfig/ui/viewcertdialog.ui:131
