@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2025-12-10 15:42+0100\n"
+"POT-Creation-Date: 2026-02-05 14:39+0100\n"
 "PO-Revision-Date: 2025-03-04 14:43+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Gujarati <https://translations.documentfoundation.org/projects/libo_help-master/textsbasicshared03/gu/>\n"
@@ -1105,6 +1105,15 @@ msgctxt ""
 msgid "Array items may contain any type of value, including (sub)arrays."
 msgstr ""
 
+#. 2NrU6
+#: sf_array.xhp
+msgctxt ""
+"sf_array.xhp\n"
+"par_id831765200111034\n"
+"help.text"
+msgid "One-dimensional arrays containing only one-dimensional subarrays are called below <literal>data arrays</literal>. They are particularly suited for exchanges of tabular data with <literal>Python</literal> scripts and <literal>Calc</literal> sheets."
+msgstr ""
+
 #. hdC3J
 #: sf_array.xhp
 msgctxt ""
@@ -1294,6 +1303,159 @@ msgctxt ""
 msgid "<emph>sortorder</emph>: It can be either \"ASC\", \"DESC\" or \"\" (not sorted). The default value is \"\"."
 msgstr ""
 
+#. guBAB
+#: sf_array.xhp
+msgctxt ""
+"sf_array.xhp\n"
+"bm_id741765204030416\n"
+"help.text"
+msgid "<bookmark_value>Array service;ConvertFromDataArray</bookmark_value>"
+msgstr ""
+
+#. A8zk4
+#: sf_array.xhp
+msgctxt ""
+"sf_array.xhp\n"
+"par_id41765204240195\n"
+"help.text"
+msgid "Convert a data array to a <literal>Basic</literal> array.<br/>A data array is an array of subarrays. On request, the individual output items are reduced to strings or doubles only."
+msgstr ""
+
+#. iEoEk
+#: sf_array.xhp
+msgctxt ""
+"sf_array.xhp\n"
+"par_id411765207592513\n"
+"help.text"
+msgid "The method returns a scalar, a zero-based 1D array or a zero-based 2D array.<br/>The number of columns in the resulting 2D array is equal to the number of items in the 1st subarray. If next subarrays have a different size, next rows will be complemented with the <literal>fillvalue</literal> argument or truncated."
+msgstr ""
+
+#. 2tGzp
+#: sf_array.xhp
+msgctxt ""
+"sf_array.xhp\n"
+"par_id561581234214489\n"
+"help.text"
+msgid "<emph>dataarray</emph>: An array of subarrays. Array and subarrays must be zero-based.<br/>Typically a data array is either output by"
+msgstr ""
+
+#. DJ7vY
+#: sf_array.xhp
+msgctxt ""
+"sf_array.xhp\n"
+"par_id151765206451449\n"
+"help.text"
+msgid "the <link href=\"text/sbasic/shared/03/sf_session.xhp#ExecuteCalcFunction\">session.ExecuteCalcFunction()</link> method"
+msgstr ""
+
+#. eQBM3
+#: sf_array.xhp
+msgctxt ""
+"sf_array.xhp\n"
+"par_id851765206498930\n"
+"help.text"
+msgid "a Python script returning a tuple of tuples"
+msgstr ""
+
+#. r6Vmi
+#: sf_array.xhp
+msgctxt ""
+"sf_array.xhp\n"
+"par_id51765206545727\n"
+"help.text"
+msgid "the <literal>getDataArray()</literal> method from the <literal>com.sun.star.sheet.XCellRangeData</literal> interface"
+msgstr ""
+
+#. zzMfr
+#: sf_array.xhp
+msgctxt ""
+"sf_array.xhp\n"
+"par_id361765207142576\n"
+"help.text"
+msgid "<emph>isrange</emph>: When <literal>True</literal> (default = <literal>False</literal>), the items are converted to strings or doubles."
+msgstr ""
+
+#. FBLKp
+#: sf_array.xhp
+msgctxt ""
+"sf_array.xhp\n"
+"par_id861765207423152\n"
+"help.text"
+msgid "<emph>fillvalue</emph>: How to replace missing items. Default = the empty string."
+msgstr ""
+
+#. WTXMU
+#: sf_array.xhp
+msgctxt ""
+"sf_array.xhp\n"
+"bm_id741953578080416\n"
+"help.text"
+msgid "<bookmark_value>Array service;ConvertToDataArray</bookmark_value>"
+msgstr ""
+
+#. Haeq4
+#: sf_array.xhp
+msgctxt ""
+"sf_array.xhp\n"
+"par_id41796324240195\n"
+"help.text"
+msgid "Create a data array from a scalar, a 1D array or a 2D array.<br/>A data array is a zero-based array of zero-based subarrays. On request, the individual output items are reduced to strings or doubles only."
+msgstr ""
+
+#. BvApk
+#: sf_array.xhp
+msgctxt ""
+"sf_array.xhp\n"
+"par_id561781234214489\n"
+"help.text"
+msgid "The returned data array is typically used as"
+msgstr ""
+
+#. Db427
+#: sf_array.xhp
+msgctxt ""
+"sf_array.xhp\n"
+"par_id851769514498930\n"
+"help.text"
+msgid "a tuple of (sub)tuples passed to a Python script"
+msgstr ""
+
+#. AdgDE
+#: sf_array.xhp
+msgctxt ""
+"sf_array.xhp\n"
+"par_id51769437545727\n"
+"help.text"
+msgid "argument of the <literal>setDataArray()</literal> method from the <literal>com.sun.star.sheet.XCellRangeData</literal> interface"
+msgstr ""
+
+#. bRAjE
+#: sf_array.xhp
+msgctxt ""
+"sf_array.xhp\n"
+"par_id281765284424698\n"
+"help.text"
+msgid "<emph>data</emph>: The input scalar, 1D or 2D array."
+msgstr ""
+
+#. BXhBx
+#: sf_array.xhp
+msgctxt ""
+"sf_array.xhp\n"
+"par_id361765207357976\n"
+"help.text"
+msgid "<emph>isrange</emph>: When <literal>True</literal> (default = <literal>False</literal>), the array items are stored as (possibly empty) strings or doubles only into the data array."
+msgstr ""
+
+#. LRqZU
+#: sf_array.xhp
+msgctxt ""
+"sf_array.xhp\n"
+"par_id286465207423152\n"
+"help.text"
+msgid "<emph>rows, columns</emph>: The number of rows or columns of the returned data array. When they exceed the limits of <literal>data</literal>, fill with zero-length strings. If <literal>rows</literal> = 1 and the input array is a vector, the data array is aligned horizontally (by default, vectors are aligned vertically). When absent, the size of the output is determined by the input array."
+msgstr ""
+
 #. 7AGE6
 #: sf_array.xhp
 msgctxt ""
@@ -1328,6 +1490,69 @@ msgctxt ""
 "par_id511626977461127\n"
 "help.text"
 msgid "The second column contains the data that will be associated to the corresponding label in the dictionary."
+msgstr ""
+
+#. G9Ymn
+#: sf_array.xhp
+msgctxt ""
+"sf_array.xhp\n"
+"bm_id741953548620416\n"
+"help.text"
+msgid "<bookmark_value>Array service;ConvertToRange</bookmark_value>"
+msgstr ""
+
+#. G8BZg
+#: sf_array.xhp
+msgctxt ""
+"sf_array.xhp\n"
+"par_id41796364640195\n"
+"help.text"
+msgid "Create a valid cells range content from a scalar, a 1D array, a 2D array or a data array (a data array is a zero-based array of zero-based subarrays). The lower bounds of arrays are preserved in the output."
+msgstr ""
+
+#. G66MS
+#: sf_array.xhp
+msgctxt ""
+"sf_array.xhp\n"
+"par_id311765287171028\n"
+"help.text"
+msgid "The individual items are always reduced to strings or doubles, including booleans or dates."
+msgstr ""
+
+#. Cje28
+#: sf_array.xhp
+msgctxt ""
+"sf_array.xhp\n"
+"par_id561786541214489\n"
+"help.text"
+msgid "The returned scalar or 2D array is a valid argument of the <link href=\"text/sbasic/shared/03/sf_session.xhp#ExecuteCalcFunction\">session.ExecuteCalcFunction()</link> method. This is particularly useful in the context of [complex] array functions."
+msgstr ""
+
+#. VU8ZH
+#: sf_array.xhp
+msgctxt ""
+"sf_array.xhp\n"
+"par_id281257984424698\n"
+"help.text"
+msgid "<emph>data</emph>: The input scalar, 1D array,2D array or data array."
+msgstr ""
+
+#. 7QZet
+#: sf_array.xhp
+msgctxt ""
+"sf_array.xhp\n"
+"par_id361765202557976\n"
+"help.text"
+msgid "<emph>direction</emph>: The alignment of the range when it is a vector, either \"V\"[ertical, default] or \"H\"[orizontal]."
+msgstr ""
+
+#. vnFE8
+#: sf_array.xhp
+msgctxt ""
+"sf_array.xhp\n"
+"bas_id681765288940028\n"
+"help.text"
+msgid "matrix = SF_Array.AppendRow(matrix, Array(7, 8, -9))"
 msgstr ""
 
 #. bGXKd
@@ -4039,6 +4264,15 @@ msgctxt ""
 msgid "Copying and importing massive amounts of data"
 msgstr ""
 
+#. jCT7g
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id721767801758480\n"
+"help.text"
+msgid "Simple cell ranges formatting"
+msgstr ""
+
 #. UFCyZ
 #: sf_calc.xhp
 msgctxt ""
@@ -4570,6 +4804,42 @@ msgctxt ""
 msgid "The single selected range as a string or the list of selected ranges as an array."
 msgstr ""
 
+#. EmokQ
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id301592407166042\n"
+"help.text"
+msgid "Yes"
+msgstr ""
+
+#. 9AdDe
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id81592407275611\n"
+"help.text"
+msgid "None"
+msgstr ""
+
+#. yA362
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id59159251716522\n"
+"help.text"
+msgid "String or array of strings"
+msgstr ""
+
+#. MNmzu
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id85159350716560\n"
+"help.text"
+msgid "Returns the full sorted list of all named ranges in the document. The names defined in a single sheet are qualified with the sheet name."
+msgstr ""
+
 #. PFB5D
 #: sf_calc.xhp
 msgctxt ""
@@ -4957,6 +5227,33 @@ msgctxt ""
 msgid "A <literal>com.sun.star.Table.XCellRange</literal> UNO object."
 msgstr ""
 
+#. b36Z2
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id393214315404944\n"
+"help.text"
+msgid "Yes"
+msgstr ""
+
+#. 8fRJC
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id1001592316547525\n"
+"help.text"
+msgid "RangeName As String"
+msgstr ""
+
+#. G2zSE
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id321592315406565\n"
+"help.text"
+msgid "A <literal>com.sun.star.awt.Rectangle</literal> UNO structure, describing, in pixels, the area on the screen where the range is located."
+msgstr ""
+
 #. nAD2d
 #: sf_calc.xhp
 msgctxt ""
@@ -5137,6 +5434,213 @@ msgctxt ""
 msgid "Activating a sheet makes sense only if it is performed on a Calc document. To make sure you have a Calc document at hand you can use the <literal>isCalc</literal> property of the document object, which returns <literal>True</literal> if it is a Calc document and <literal>False</literal> otherwise."
 msgstr ""
 
+#. fVyBd
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id241767804819943\n"
+"help.text"
+msgid "Align horizontally or vertically a range of cells."
+msgstr ""
+
+#. GE9mT
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id361767804834191\n"
+"help.text"
+msgid "A filter formula can be specified to determine which cells shall be affected."
+msgstr ""
+
+#. nPgLg
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id691767804870278\n"
+"help.text"
+msgid "<emph>targetrange</emph>: The cell or the range as a string in which cells should be re-aligned."
+msgstr ""
+
+#. om3C3
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id191767876299030\n"
+"help.text"
+msgid "<emph>alignment</emph>: a string combining 1 or 2 of next upper-case characters (other characters are ignored):"
+msgstr ""
+
+#. zMMu9
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id861767876487227\n"
+"help.text"
+msgid "L, R or C: left, right or center horizontally."
+msgstr ""
+
+#. BB9As
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id1001767881841565\n"
+"help.text"
+msgid "B, T or M: bottom, top or center vertically (middle)."
+msgstr ""
+
+#. iAYrD
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"bas_id41176780499844\n"
+"help.text"
+msgid "' Center all numeric cells, both horizontally and vertically."
+msgstr ""
+
+#. Cj4ND
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"bas_id691767805014441\n"
+"help.text"
+msgid "doc.AlignRange(\"SheetX.A1:J30\", \"Middle,Center\", filterformula := \"=IsNumeric(A1)\", filterscope := \"CELL\")"
+msgstr ""
+
+#. YREaD
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"pyc_id251767805127221\n"
+"help.text"
+msgid "# Center all numeric cells, both horizontally and vertically."
+msgstr ""
+
+#. MUAFB
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"pyc_id281767805141277\n"
+"help.text"
+msgid "doc.AlignRange('SheetX.A1:J30', 'Middle,Center', filterformula = '=IsNumeric(A1)', filterscope = 'CELL')"
+msgstr ""
+
+#. dn344
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id961767883490277\n"
+"help.text"
+msgid "Apply within and around a range of cells a set of line borders."
+msgstr ""
+
+#. CRMw2
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id881767883501990\n"
+"help.text"
+msgid "The impacted cells may be determined with a filter formula and its scope."
+msgstr ""
+
+#. wXMGo
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id21767883519188\n"
+"help.text"
+msgid "All the borders have the same standard width, style and color. Pre-existing border lines in the impacted cells, rows or columns are first cleared. Other cells in the range are left untouched."
+msgstr ""
+
+#. CYQgM
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id511767883610363\n"
+"help.text"
+msgid "To clear the full range set <literal>border</literal> to \"\" and skip the <literal>filterformula</literal> argument."
+msgstr ""
+
+#. E4BZB
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id811767884294334\n"
+"help.text"
+msgid "<emph>targetrange</emph>: The cell or the range as a string on which borders should be applied."
+msgstr ""
+
+#. Mng3D
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id511767884331312\n"
+"help.text"
+msgid "<emph>border</emph>: A string combining next upper-case characters (other characters are ignored):"
+msgstr ""
+
+#. MgE8h
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id641767884455599\n"
+"help.text"
+msgid "B, L, T, R: bottom, left, top, right outer lines."
+msgstr ""
+
+#. yFMUC
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id531767884469933\n"
+"help.text"
+msgid "H, V: horizontal, vertical inner lines."
+msgstr ""
+
+#. QUkhv
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id91767884600419\n"
+"help.text"
+msgid "U, D: bottom-up, top-down diagonals."
+msgstr ""
+
+#. mD7DR
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"bas_id671767884770350\n"
+"help.text"
+msgid "' Border all numeric cells with a bottom line, including the horizontal inner lines."
+msgstr ""
+
+#. ARwoe
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"bas_id741767884782255\n"
+"help.text"
+msgid "doc.BorderRange(\"SheetX.A1:J30\", \"HB\", filterformula := \"=IsNumeric(A1)\", filterscope := \"CELL\")"
+msgstr ""
+
+#. FydrE
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"pyc_id891767884794918\n"
+"help.text"
+msgid "# Border all numeric cells with a bottom line, including the horizontal inner lines."
+msgstr ""
+
+#. gdknd
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"pyc_id751767884803859\n"
+"help.text"
+msgid "doc.BorderRange('SheetX.A1:J30', 'HB', filterformula = '=IsNumeric(A1)', filterscope = 'CELL')"
+msgstr ""
+
 #. KWFFF
 #: sf_calc.xhp
 msgctxt ""
@@ -5227,58 +5731,58 @@ msgctxt ""
 msgid "A filter formula can be specified to determine which cells shall be affected."
 msgstr ""
 
-#. UXnVo
+#. M5PqA
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id441592919577809\n"
 "help.text"
-msgid "<emph>range:</emph> The range to be cleared, as a string."
+msgid "<emph>range</emph>: The range to be cleared, as a string."
 msgstr ""
 
-#. Bq7qT
+#. AkJoo
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id351670939954166\n"
 "help.text"
-msgid "<emph>filterformula:</emph> A Calc formula that shall be applied to the given range to determine which cells will be affected. The specified formula must return <literal>True</literal> or <literal>False</literal>. If this argument is not specified, then all cells in the range are affected."
+msgid "<emph>filterformula</emph>: A Calc formula that shall be applied to the given range to determine which cells will be affected. The specified formula must return <literal>True</literal> or <literal>False</literal>. If this argument is not specified, then all cells in the range are affected."
 msgstr ""
 
-#. Lvzwc
+#. UJPwv
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id461670939954392\n"
 "help.text"
-msgid "<emph>filterscope:</emph> Determines how <literal>filterformula</literal> is expanded to the given range. This argument is mandatory if a <literal>filterformula</literal> is specified. The following values are accepted:"
+msgid "<emph>filterscope</emph>: Determines how <literal>filterformula</literal> is expanded to the given range. This argument is mandatory if a <literal>filterformula</literal> is specified. The following values are accepted:"
 msgstr ""
 
-#. 3pGBf
+#. Pgaym
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id991670941074213\n"
 "help.text"
-msgid "<emph>\"CELL\":</emph> The formula specified in the <literal>filterformula</literal> argument is expanded once for each cell in <literal>range</literal>."
+msgid "<emph>\"CELL\"</emph>: The formula specified in the <literal>filterformula</literal> argument is expanded once for each cell in <literal>range</literal>."
 msgstr ""
 
-#. YGjYE
+#. nCDPi
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id911670941074926\n"
 "help.text"
-msgid "<emph>\"ROW\":</emph> The formula specified in the <literal>filterformula</literal> argument is expanded once for each row in <literal>range</literal>."
+msgid "<emph>\"ROW\"</emph>: The formula specified in the <literal>filterformula</literal> argument is expanded once for each row in <literal>range</literal>."
 msgstr ""
 
-#. Uufc3
+#. DLjCf
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id581670941075101\n"
 "help.text"
-msgid "<emph>\"COLUMN\":</emph> The formula specified in the <literal>filterformula</literal> argument is expanded once for each column in <literal>range</literal>."
+msgid "<emph>\"COLUMN\"</emph>: The formula specified in the <literal>filterformula</literal> argument is expanded once for each column in <literal>range</literal>."
 msgstr ""
 
 #. gZzon
@@ -5389,13 +5893,13 @@ msgctxt ""
 msgid "myDoc.ClearAll(\"SheetX.A1:J10\", \"=SUM(SheetX.A1:A10)>100\", \"COLUMN\")"
 msgstr ""
 
-#. Wz6CH
+#. CL3ZG
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id211592919864118\n"
 "help.text"
-msgid "Clears the formats and styles in the given range."
+msgid "Clears the formats and cell styles in the given range."
 msgstr ""
 
 #. PqtC3
@@ -5459,6 +5963,87 @@ msgctxt ""
 "par_id461670942483664\n"
 "help.text"
 msgid "Refer to the <link href=\"text/sbasic/shared/03/sf_calc.xhp#ClearAll\"><literal>ClearAll</literal></link> method documentation for examples on how to use the arguments <literal>filterformula</literal> and <literal>filterscope</literal>."
+msgstr ""
+
+#. EyGXB
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id491768047007245\n"
+"help.text"
+msgid "Define fore- and background colors of a range of cells."
+msgstr ""
+
+#. r25ZX
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id281768047040820\n"
+"help.text"
+msgid "The impacted cells may be determined with a filter formula and its scope."
+msgstr ""
+
+#. EmGXj
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id751768053467898\n"
+"help.text"
+msgid "<emph>targetrange</emph>: the cell or the range as a string in which cells should be (re-)colorizeed."
+msgstr ""
+
+#. HsEog
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id491768053636577\n"
+"help.text"
+msgid "<emph>foreground</emph>: the foreground color as the output of the RGB() function. A negative value erases the foreground color"
+msgstr ""
+
+#. rj48G
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id851768053644934\n"
+"help.text"
+msgid "<emph>background</emph>: the background color as the output of the RGB() function. A negative value erases the background color"
+msgstr ""
+
+#. QBzRk
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"bas_id801768053837818\n"
+"help.text"
+msgid "' Paint the numeric cell(s) in red."
+msgstr ""
+
+#. vyzBX
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"bas_id117680538448860\n"
+"help.text"
+msgid "doc.ColorizeRange(\"SheetX.A1:J30\", background := RGB(255, 0, 0), filterformula := \"=IsNumeric(A1), filterscope := \"CELL\")"
+msgstr ""
+
+#. 7cv3r
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"pyc_id231768053859976\n"
+"help.text"
+msgid "# Paint the numeric cell(s) in red."
+msgstr ""
+
+#. BzDVc
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"pyc_id671768053869964\n"
+"help.text"
+msgid "doc.ColorizeRange('SheetX.A1:J30', background = basic.RGB(255, 0, 0), filterformula = '=IsNumeric(A1)', filterscope = 'CELL')"
 msgstr ""
 
 #. JWFDb
@@ -6163,49 +6748,49 @@ msgctxt ""
 msgid "Creates a new chart object showing the data in the specified range. The returned chart object can be further manipulated using the <literal>Chart</literal> service."
 msgstr ""
 
-#. 2YZ5H
+#. tkmpN
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id841592903121025\n"
 "help.text"
-msgid "<emph>chartname:</emph> The user-defined name of the chart to be created. The name must be unique in the same sheet."
+msgid "<emph>chartname</emph>: The user-defined name of the chart to be created. The name must be unique in the same sheet."
 msgstr ""
 
-#. BBtB3
+#. HAJBW
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id5515929031213680\n"
 "help.text"
-msgid "<emph>sheetname:</emph> The name of the sheet where the chart will be placed."
+msgid "<emph>sheetname</emph>: The name of the sheet where the chart will be placed."
 msgstr ""
 
-#. GEiCb
+#. GmNGF
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id5515929031211522\n"
 "help.text"
-msgid "<emph>range:</emph> The range to be used as the data source for the chart. The range may refer to any sheet of the Calc document."
+msgid "<emph>range</emph>: The range to be used as the data source for the chart. The range may refer to any sheet of the Calc document."
 msgstr ""
 
-#. L3dSo
+#. ji9ZZ
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id5515929031216390\n"
 "help.text"
-msgid "<emph>columnheader:</emph> When <literal>True</literal>, the topmost row of the range is used as labels for the category axis or the legend (Default = <literal>False</literal>)."
+msgid "<emph>columnheader</emph>: When <literal>True</literal>, the topmost row of the range is used as labels for the category axis or the legend (Default = <literal>False</literal>)."
 msgstr ""
 
-#. iyq5m
+#. cCGsi
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id5515929031211633\n"
 "help.text"
-msgid "<emph>rowheader:</emph> When <literal>True</literal>, the leftmost column of the range is used as labels for the category axis or the legend. (Default = <literal>False</literal>)."
+msgid "<emph>rowheader</emph>: When <literal>True</literal>, the leftmost column of the range is used as labels for the category axis or the legend. (Default = <literal>False</literal>)."
 msgstr ""
 
 #. CKzBZ
@@ -6262,31 +6847,31 @@ msgctxt ""
 msgid "<emph>pivottablename:</emph> The user-defined name of the new pivot table."
 msgstr ""
 
-#. vvGTx
+#. FnP5G
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id5515929031203640\n"
 "help.text"
-msgid "<emph>sourcerange:</emph> The range containing the raw data, as a string. It is assumed that the first row contains the field names that are used by the pivot table."
+msgid "<emph>sourcerange</emph>: The range containing the raw data, as a string. It is assumed that the first row contains the field names that are used by the pivot table."
 msgstr ""
 
-#. twWbD
+#. KTB64
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id5515929031210400\n"
 "help.text"
-msgid "<emph>targetcell:</emph> The top-left cell where the new pivot table will be placed. If a range is specified, only its top-left cell is considered."
+msgid "<emph>targetcell</emph>: The top-left cell where the new pivot table will be placed. If a range is specified, only its top-left cell is considered."
 msgstr ""
 
-#. YXG64
+#. TmBX8
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id5515929031951290\n"
 "help.text"
-msgid "<emph>datafields:</emph> It can be either a single string or an array containing strings that define field names and functions to be applied. When an array is specified, it must follow the syntax <input>Array(\"FieldName[;Function]\", ...)</input>."
+msgid "<emph>datafields</emph>: It can be either a single string or an array containing strings that define field names and functions to be applied. When an array is specified, it must follow the syntax <input>Array(\"FieldName[;Function]\", ...)</input>."
 msgstr ""
 
 #. cKZ3U
@@ -6298,49 +6883,49 @@ msgctxt ""
 msgid "The allowed functions are: <literal>Sum</literal>, <literal>Count</literal>, <literal>Average</literal>, <literal>Max</literal>, <literal>Min</literal>, <literal>Product</literal>, <literal>CountNums</literal>, <literal>StDev</literal>, <literal>StDevP</literal>, <literal>Var</literal>, <literal>VarP</literal> and <literal>Median</literal>. Function names must be provided in English. When all values are numerical, <literal>Sum</literal> is the default function, otherwise the default function is <literal>Count</literal>."
 msgstr ""
 
-#. JKCoA
+#. jbTFL
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id5515929031211003\n"
 "help.text"
-msgid "<emph>rowfields:</emph> A single string or an array with the field names that will be used as the pivot table rows."
+msgid "<emph>rowfields</emph> A single string or an array with the field names that will be used as the pivot table rows."
 msgstr ""
 
-#. 8GW5G
+#. MJqkq
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id5515929031211114\n"
 "help.text"
-msgid "<emph>columnfields:</emph> A single string or an array with the field names that will be used as the pivot table columns."
+msgid "<emph>columnfields</emph>: A single string or an array with the field names that will be used as the pivot table columns."
 msgstr ""
 
-#. iTL7C
+#. StG8M
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id361652796141240\n"
 "help.text"
-msgid "<emph>filterbutton:</emph> Determines whether a filter button will be displayed above the pivot table (Default = <literal>True</literal>)."
+msgid "<emph>filterbutton</emph>: Determines whether a filter button will be displayed above the pivot table (Default = <literal>True</literal>)."
 msgstr ""
 
-#. FXyRo
+#. 4an9v
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id661652796200051\n"
 "help.text"
-msgid "<emph>rowtotals:</emph> Specifies if a separate column for row totals will be added to the pivot table (Default = <literal>True</literal>)."
+msgid "<emph>rowtotals</emph>: Specifies if a separate column for row totals will be added to the pivot table (Default = <literal>True</literal>)."
 msgstr ""
 
-#. xf8Nt
+#. KTkuC
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id671652796274304\n"
 "help.text"
-msgid "<emph>columntotals</emph> Specifies if a separate row for column totals will be added to the pivot table (Default = <literal>True</literal>)"
+msgid "<emph>columntotals</emph>: Specifies if a separate row for column totals will be added to the pivot table (Default = <literal>True</literal>)"
 msgstr ""
 
 #. EWpPF
@@ -6550,6 +7135,213 @@ msgctxt ""
 msgid "Cells in the given range that contain text will be ignored by all of these functions. For example, the <literal>DCount</literal> method will not count cells with text, only numerical cells."
 msgstr ""
 
+#. RBBQB
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id471768055753462\n"
+"help.text"
+msgid "Specify simple and easy properties of the font to be used in a range of cells."
+msgstr ""
+
+#. W4wNz
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id991768055771625\n"
+"help.text"
+msgid "The impacted cells may be determined with a filter formula and its scope."
+msgstr ""
+
+#. JhBhd
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id931768055801780\n"
+"help.text"
+msgid "To apply more complex font decorations, apply the usual and numerous <literal>UNO</literal> properties available in the <literal>XCell</literal> or <literal>XCellRange</literal> interfaces."
+msgstr ""
+
+#. vEJ9i
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id871768056133127\n"
+"help.text"
+msgid "<emph>targetrange</emph>: The cell or the range as a string in which cell fonts should be re-decorated."
+msgstr ""
+
+#. K3Pqw
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id671768056195921\n"
+"help.text"
+msgid "<emph>fontname</emph>: The name of the font to be used. The name is not checked. Default = no change."
+msgstr ""
+
+#. CnZoB
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id971768056327357\n"
+"help.text"
+msgid "<emph>fontsize</emph>: The size of the font in pixels. Default = no change."
+msgstr ""
+
+#. gZXT5
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id711768056157938\n"
+"help.text"
+msgid "<emph>decoration</emph>: A string combining 1 or more of next upper-case characters (other characters are ignored). Default = no change:"
+msgstr ""
+
+#. BHQCL
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id281768056503337\n"
+"help.text"
+msgid "B, U, I, S: Bold, Underline, Italic, Strikethrough."
+msgstr ""
+
+#. Zq4Fs
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"bas_id161768056709597\n"
+"help.text"
+msgid "' Modify the font size and apply bold and underline properties to the numeric cells."
+msgstr ""
+
+#. aw72Z
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"bas_id601768057322683\n"
+"help.text"
+msgid "doc.DecorateFont(\"SheetX.A1:J30\", fontsize := 15, decoration := \"Bold,Underline\", filterformula := \"=IsNumeric(A1)\", filterscope := \"CELL\")"
+msgstr ""
+
+#. T5zMp
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"pyc_id661768057052508\n"
+"help.text"
+msgid "# Modify the font size and apply bold and underline properties to the numeric cells."
+msgstr ""
+
+#. v4Ccg
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"pyc_id721768057070406\n"
+"help.text"
+msgid "doc.DecorateFont('SheetX.A1:J30', fontsize = 15, decoration = 'Bold,Underline', filterformula = '=IsNumeric(A1)', filterscope = 'CELL')"
+msgstr ""
+
+#. 9TDpa
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id471779055753462\n"
+"help.text"
+msgid "Define a new name in the worksheet, at global or sheet level. If the name exists already, it is overwritten without warning. After creation, the new name can be used in formulaes. Returns <literal>True</literal> when successful."
+msgstr ""
+
+#. eXCbC
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id991779055771625\n"
+"help.text"
+msgid "Use <literal>DefinedNames</literal> property to examine existing named ranges."
+msgstr ""
+
+#. hpBBA
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id871768164133127\n"
+"help.text"
+msgid "<emph>definedname</emph>: The name to be created or modified without warning. Note that homonyms may exist, but not in the same sheet and not at global level."
+msgstr ""
+
+#. Cpfip
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id671768067295921\n"
+"help.text"
+msgid "<emph>value</emph>: The new name as:"
+msgstr ""
+
+#. GJ9KG
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id281769156503337\n"
+"help.text"
+msgid "a range reference as a string, often a single cell"
+msgstr ""
+
+#. Byy9B
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id281768067503337\n"
+"help.text"
+msgid "a scalar value as a number or a string"
+msgstr ""
+
+#. kH4xH
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id281768056613337\n"
+"help.text"
+msgid "a formula starting with the \"=\" sign"
+msgstr ""
+
+#. 3d92T
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id501769173466354\n"
+"help.text"
+msgid "When <literal>Value</literal> is a range, the top-left cell is set as reference cell."
+msgstr ""
+
+#. ZKAmj
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id971768167327357\n"
+"help.text"
+msgid "<emph>sheetname</emph>: The defined name scope is that of the specified sheet. The \"~\" shortcut is accepted."
+msgstr ""
+
+#. Nr7S4
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"bas_id601768068422683\n"
+"help.text"
+msgid "doc.DefineName(\"NewName\", Sheet := \"Sheet3\", Value := \"H2\")"
+msgstr ""
+
+#. WKzbJ
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"pyc_id721768068170406\n"
+"help.text"
+msgid "doc.DefineName('NewName', sheet = 'Sheet3', value = 'H2')"
+msgstr ""
+
 #. S6JvC
 #: sf_calc.xhp
 msgctxt ""
@@ -6629,6 +7421,87 @@ msgctxt ""
 "bas_id991655655060661\n"
 "help.text"
 msgid "' Exports the range as a PNG file and overwrites the destination file if it exists"
+msgstr ""
+
+#. t9CxJ
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id551768059444915\n"
+"help.text"
+msgid "Apply a given number format to a cell or a range of cells."
+msgstr ""
+
+#. GvPT2
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id411768059580525\n"
+"help.text"
+msgid "The impacted cells may be determined with a filter formula and its scope."
+msgstr ""
+
+#. gWTJA
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id841768060290225\n"
+"help.text"
+msgid "<emph>targetrange</emph>: The cell or the range as a string that should receive the format."
+msgstr ""
+
+#. BvGDV
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id991768060908752\n"
+"help.text"
+msgid "<emph>numberformat</emph>: The format to apply, as a string."
+msgstr ""
+
+#. mBEwe
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id951768060527854\n"
+"help.text"
+msgid "<emph>locale</emph>: A la-CO (language-COUNTRY) combination to indicate the used locale. The default locale is the output of the <literal>platform.FormatLocale</literal> property"
+msgstr ""
+
+#. 6b8nb
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"bas_id3176806070882\n"
+"help.text"
+msgid "' Format only the cells containing a numeric value."
+msgstr ""
+
+#. FgFri
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"bas_id741768060809331\n"
+"help.text"
+msgid "doc.FormatRange(\"SheetX.A1:J30\", \"0,00E+00\", filterformula := \"=IsNumeric(A1)\", filterscope := \"CELL\")"
+msgstr ""
+
+#. fiKDA
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"pyc_id281768060928971\n"
+"help.text"
+msgid "# Format only the cells containing a numeric value."
+msgstr ""
+
+#. CSsEU
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"pyc_id641768060943953\n"
+"help.text"
+msgid "doc.FormatRange('SheetX.A1:J30', '0,00E+00', filterformula = '=IsNumeric(A1)', filterscope = 'CELL')"
 msgstr ""
 
 #. BVKEy
@@ -9086,6 +9959,447 @@ msgctxt ""
 "bas_id201635340749006\n"
 "help.text"
 msgid "' Keyword arguments are supported"
+msgstr ""
+
+#. u59mC
+#: sf_contextmenu.xhp
+msgctxt ""
+"sf_contextmenu.xhp\n"
+"tit\n"
+"help.text"
+msgid "SFWidgets.ContextMenu service"
+msgstr ""
+
+#. WdyKT
+#: sf_contextmenu.xhp
+msgctxt ""
+"sf_contextmenu.xhp\n"
+"bm_id681600788076499\n"
+"help.text"
+msgid "<variable id=\"ContextMenuService\"><link href=\"text/sbasic/shared/03/sf_contextmenu.xhp\"><literal>SFWidgets</literal>.<literal>ContextMenu</literal> service</link></variable>"
+msgstr ""
+
+#. MJaiF
+#: sf_contextmenu.xhp
+msgctxt ""
+"sf_contextmenu.xhp\n"
+"par_id41766933792189\n"
+"help.text"
+msgid "Context menus are predefined at %PRODUCTNAME installation. They can be customized in the <literal>Tools + Customize</literal> dialog."
+msgstr ""
+
+#. P8AG5
+#: sf_contextmenu.xhp
+msgctxt ""
+"sf_contextmenu.xhp\n"
+"par_id181600788076612\n"
+"help.text"
+msgid "The <literal>ContextMenu</literal> service provides the following capabilities:"
+msgstr ""
+
+#. D2LxB
+#: sf_contextmenu.xhp
+msgctxt ""
+"sf_contextmenu.xhp\n"
+"par_id301600788076785\n"
+"help.text"
+msgid "Replace temporarily all the menu items of a specific context menu."
+msgstr ""
+
+#. NxBKL
+#: sf_contextmenu.xhp
+msgctxt ""
+"sf_contextmenu.xhp\n"
+"par_id1001600788076848\n"
+"help.text"
+msgid "Temporarily add new menu items at the bottom of a predefined context menu."
+msgstr ""
+
+#. jhTKz
+#: sf_contextmenu.xhp
+msgctxt ""
+"sf_contextmenu.xhp\n"
+"par_id771766934178093\n"
+"help.text"
+msgid "Make the context menu temporarily inactive."
+msgstr ""
+
+#. SCBB3
+#: sf_contextmenu.xhp
+msgctxt ""
+"sf_contextmenu.xhp\n"
+"par_id131767624894605\n"
+"help.text"
+msgid "The new menu settings are not saved anywhere. Neither in the document nor in the %PRODUCTNAME settings."
+msgstr ""
+
+#. 4KFw4
+#: sf_contextmenu.xhp
+msgctxt ""
+"sf_contextmenu.xhp\n"
+"par_id451766933271852\n"
+"help.text"
+msgid "A context menu is usually triggered by a right-click on a specific area of a document. Consider clicking in a cell or on a sheet tab in a <literal>Calc</literal> document."
+msgstr ""
+
+#. De8Ad
+#: sf_contextmenu.xhp
+msgctxt ""
+"sf_contextmenu.xhp\n"
+"hd_id281600788076359\n"
+"help.text"
+msgid "Service invocation"
+msgstr ""
+
+#. VjxCN
+#: sf_contextmenu.xhp
+msgctxt ""
+"sf_contextmenu.xhp\n"
+"par_id141609955500101\n"
+"help.text"
+msgid "Before using the <literal>ContextMenu</literal> service the <literal>ScriptForge</literal> library needs to be loaded or imported:"
+msgstr ""
+
+#. rGXGT
+#: sf_contextmenu.xhp
+msgctxt ""
+"sf_contextmenu.xhp\n"
+"par_id321614902851541\n"
+"help.text"
+msgid "The <literal>ContextMenu</literal> service is instantiated from the <link href=\"text/sbasic/shared/03/sf_document.xhp#ContextMenus\">SF_Document.ContextMenus()</link> and <link href=\"text/sbasic/shared/03/sf_datasheet.xhp#ContextMenus\">SF_Datasheet.ContextMenus()</link> methods only."
+msgstr ""
+
+#. REfNp
+#: sf_contextmenu.xhp
+msgctxt ""
+"sf_contextmenu.xhp\n"
+"par_id341636718182262\n"
+"help.text"
+msgid "Running the <literal>Sub</literal> defined above redefines the context menu related to a specific area in the document, here a cell belonging to a <literal>Calc</literal> document."
+msgstr ""
+
+#. 5x7PF
+#: sf_contextmenu.xhp
+msgctxt ""
+"sf_contextmenu.xhp\n"
+"par_id271767283860030\n"
+"help.text"
+msgid "The new definition will remain active until the document is closed or until the context menu is redefined again."
+msgstr ""
+
+#. cdXEQ
+#: sf_contextmenu.xhp
+msgctxt ""
+"sf_contextmenu.xhp\n"
+"par_id991636718278125\n"
+"help.text"
+msgid "Use the <literal>Dispose</literal> method to free resources after executing the context menu."
+msgstr ""
+
+#. EEyb7
+#: sf_contextmenu.xhp
+msgctxt ""
+"sf_contextmenu.xhp\n"
+"par_id131635275172617\n"
+"help.text"
+msgid "The example above can be written in Python as follows:"
+msgstr ""
+
+#. XFprc
+#: sf_contextmenu.xhp
+msgctxt ""
+"sf_contextmenu.xhp\n"
+"hd_id711600788076834\n"
+"help.text"
+msgid "Properties"
+msgstr ""
+
+#. roesJ
+#: sf_contextmenu.xhp
+msgctxt ""
+"sf_contextmenu.xhp\n"
+"par_id461600788076917\n"
+"help.text"
+msgid "Name"
+msgstr ""
+
+#. Zu9RF
+#: sf_contextmenu.xhp
+msgctxt ""
+"sf_contextmenu.xhp\n"
+"par_id221600788076591\n"
+"help.text"
+msgid "Readonly"
+msgstr ""
+
+#. vWRqB
+#: sf_contextmenu.xhp
+msgctxt ""
+"sf_contextmenu.xhp\n"
+"par_id761600788076328\n"
+"help.text"
+msgid "Type"
+msgstr ""
+
+#. dAXkA
+#: sf_contextmenu.xhp
+msgctxt ""
+"sf_contextmenu.xhp\n"
+"par_id67160078807636\n"
+"help.text"
+msgid "Description"
+msgstr ""
+
+#. dZUPG
+#: sf_contextmenu.xhp
+msgctxt ""
+"sf_contextmenu.xhp\n"
+"par_id801767285654313\n"
+"help.text"
+msgid "Yes"
+msgstr ""
+
+#. cRtgX
+#: sf_contextmenu.xhp
+msgctxt ""
+"sf_contextmenu.xhp\n"
+"par_id201767285702754\n"
+"help.text"
+msgid "The parent document class (or one of its subclasses) instance."
+msgstr ""
+
+#. XEKy4
+#: sf_contextmenu.xhp
+msgctxt ""
+"sf_contextmenu.xhp\n"
+"par_id49160078807654\n"
+"help.text"
+msgid "Yes"
+msgstr ""
+
+#. M9FSD
+#: sf_contextmenu.xhp
+msgctxt ""
+"sf_contextmenu.xhp\n"
+"par_id81600788076419\n"
+"help.text"
+msgid "Character used to define the access key of a menu item. The default character is <literal>~</literal>."
+msgstr ""
+
+#. RfvMe
+#: sf_contextmenu.xhp
+msgctxt ""
+"sf_contextmenu.xhp\n"
+"par_id311600788076756\n"
+"help.text"
+msgid "Yes"
+msgstr ""
+
+#. Ss4BC
+#: sf_contextmenu.xhp
+msgctxt ""
+"sf_contextmenu.xhp\n"
+"par_id441600788076826\n"
+"help.text"
+msgid "Character or string that defines how menu items are nested. The default character is <literal>></literal>."
+msgstr ""
+
+#. x4HBM
+#: sf_contextmenu.xhp
+msgctxt ""
+"sf_contextmenu.xhp\n"
+"hd_id181636719707892\n"
+"help.text"
+msgid "Menu and Submenus"
+msgstr ""
+
+#. 8TjxT
+#: sf_contextmenu.xhp
+msgctxt ""
+"sf_contextmenu.xhp\n"
+"par_id741636719725402\n"
+"help.text"
+msgid "To create a context menu with submenus, use the character defined in the <literal>SubmenuCharacter</literal> property while creating the menu entry to define where it will be placed. For instance, consider the following menu/submenu hierarchy."
+msgstr ""
+
+#. KnTJY
+#: sf_contextmenu.xhp
+msgctxt ""
+"sf_contextmenu.xhp\n"
+"par_id211636720111489\n"
+"help.text"
+msgid "The code below uses the default submenu character <literal>></literal> to create the menu/submenu hierarchy defined above:"
+msgstr ""
+
+#. fTwMB
+#: sf_contextmenu.xhp
+msgctxt ""
+"sf_contextmenu.xhp\n"
+"par_id121636721243578\n"
+"help.text"
+msgid "The string <literal>---</literal> is used to define separator lines in menus or submenus."
+msgstr ""
+
+#. SA2cX
+#: sf_contextmenu.xhp
+msgctxt ""
+"sf_contextmenu.xhp\n"
+"hd_id211636723438558\n"
+"help.text"
+msgid "Using icons"
+msgstr ""
+
+#. EUFs9
+#: sf_contextmenu.xhp
+msgctxt ""
+"sf_contextmenu.xhp\n"
+"par_id981636723485402\n"
+"help.text"
+msgid "Unlike popup menus, context menu items must not contain any icons."
+msgstr ""
+
+#. nr4Dw
+#: sf_contextmenu.xhp
+msgctxt ""
+"sf_contextmenu.xhp\n"
+"hd_id501582887473754\n"
+"help.text"
+msgid "Methods"
+msgstr ""
+
+#. tDvjd
+#: sf_contextmenu.xhp
+msgctxt ""
+"sf_contextmenu.xhp\n"
+"par_id891611613601554\n"
+"help.text"
+msgid "List of Methods in the ContextMenu Service"
+msgstr ""
+
+#. JhCRr
+#: sf_contextmenu.xhp
+msgctxt ""
+"sf_contextmenu.xhp\n"
+"par_id93158919969864\n"
+"help.text"
+msgid "Make the <emph>added items</emph> of the <emph>context menu stored in the document</emph> available for execution, or, at the opposite, disable them, depending on the argument."
+msgstr ""
+
+#. Didmr
+#: sf_contextmenu.xhp
+msgctxt ""
+"sf_contextmenu.xhp\n"
+"par_id821591631203996\n"
+"help.text"
+msgid "<emph>enable:</emph> When <literal>True</literal> (default), the local menu stored in the document is made active. When <literal>False</literal>, the local menu is ignored and the global menu defined at %PRODUCTNAME level takes the precedence."
+msgstr ""
+
+#. Ek9UR
+#: sf_contextmenu.xhp
+msgctxt ""
+"sf_contextmenu.xhp\n"
+"par_id93158919963364\n"
+"help.text"
+msgid "Inserts a menu entry in the context menu."
+msgstr ""
+
+#. 8RExm
+#: sf_contextmenu.xhp
+msgctxt ""
+"sf_contextmenu.xhp\n"
+"par_id821591631203021\n"
+"help.text"
+msgid "<emph>menuitem:</emph> Defines the text to be displayed in the menu. This argument also defines the hierarchy of the item inside the menu by using the submenu character. Set the last component to <literal>\"---\"</literal> to define a line separator."
+msgstr ""
+
+#. LKYs2
+#: sf_contextmenu.xhp
+msgctxt ""
+"sf_contextmenu.xhp\n"
+"par_id821591631203026\n"
+"help.text"
+msgid "<emph>command:</emph> The name of the UNO command that will be run when the item is clicked, without the <literal>.uno:</literal> prefix. If the command name does not exist or is not applicable, nothing will happen."
+msgstr ""
+
+#. Q5w45
+#: sf_contextmenu.xhp
+msgctxt ""
+"sf_contextmenu.xhp\n"
+"par_id11636721652886\n"
+"help.text"
+msgid "<emph>script:</emph> The URI for a Basic or Python script that will be executed when the item is clicked. Note that the given script will not get any argument."
+msgstr ""
+
+#. rto8C
+#: sf_contextmenu.xhp
+msgctxt ""
+"sf_contextmenu.xhp\n"
+"bas_id41158919969106\n"
+"help.text"
+msgid "menu.AddItem(\"Menu top>Item 1\", command := \"About\")"
+msgstr ""
+
+#. AF6DS
+#: sf_contextmenu.xhp
+msgctxt ""
+"sf_contextmenu.xhp\n"
+"pyc_id321621534170554\n"
+"help.text"
+msgid "menu.AddItem('Menu top>Item 1', command = 'About')"
+msgstr ""
+
+#. pM7aY
+#: sf_contextmenu.xhp
+msgctxt ""
+"sf_contextmenu.xhp\n"
+"par_id93158919963279\n"
+"help.text"
+msgid "Remove all items, both"
+msgstr ""
+
+#. YSkCR
+#: sf_contextmenu.xhp
+msgctxt ""
+"sf_contextmenu.xhp\n"
+"par_id221767624286826\n"
+"help.text"
+msgid "predefined with <literal>Tools + Customize</literal> and saved in the document"
+msgstr ""
+
+#. W6dCT
+#: sf_contextmenu.xhp
+msgctxt ""
+"sf_contextmenu.xhp\n"
+"par_id241767624361262\n"
+"help.text"
+msgid "added with <literal>contextmenu.AddItem()</literal>"
+msgstr ""
+
+#. G4RyK
+#: sf_contextmenu.xhp
+msgctxt ""
+"sf_contextmenu.xhp\n"
+"par_id131767624674146\n"
+"help.text"
+msgid "This action cannot be reverted except by closing and reopening the document."
+msgstr ""
+
+#. t5rAC
+#: sf_contextmenu.xhp
+msgctxt ""
+"sf_contextmenu.xhp\n"
+"par_id351767624521068\n"
+"help.text"
+msgid "Afterwards, when relevant, use AddItem() to insert new menu items."
+msgstr ""
+
+#. T9Cvr
+#: sf_contextmenu.xhp
+msgctxt ""
+"sf_contextmenu.xhp\n"
+"par_id51636726671698\n"
+"help.text"
+msgid "Associate next <literal>Sub/def</literal> with the on-right-click event of a sheet. The custom menu appears when right-clicking in column C of the Calc sheet, otherwise the normal behaviour is preserved."
 msgstr ""
 
 #. zNFY6
@@ -11887,6 +13201,24 @@ msgctxt ""
 msgid "Specifies a filter to be applied to the datasheet expressed as the <literal>WHERE</literal> clause of a SQL query without the <literal>WHERE</literal> keyword. If an empty string is specified then the active <literal>Filter</literal> is removed."
 msgstr ""
 
+#. EpfGJ
+#: sf_datasheet.xhp
+msgctxt ""
+"sf_datasheet.xhp\n"
+"par_id62176771736067\n"
+"help.text"
+msgid "Yes"
+msgstr ""
+
+#. qrLBt
+#: sf_datasheet.xhp
+msgctxt ""
+"sf_datasheet.xhp\n"
+"par_id711767717327534\n"
+"help.text"
+msgid "<literal>True</literal> when the datasheet has not been closed (f.i. by a user action)."
+msgstr ""
+
 #. uiSkN
 #: sf_datasheet.xhp
 msgctxt ""
@@ -11903,6 +13235,24 @@ msgctxt ""
 "par_id21600788076541\n"
 "help.text"
 msgid "Returns the number of rows in the datasheet."
+msgstr ""
+
+#. QKEoL
+#: sf_datasheet.xhp
+msgctxt ""
+"sf_datasheet.xhp\n"
+"par_id258019194571067\n"
+"help.text"
+msgid "Yes"
+msgstr ""
+
+#. EfDeR
+#: sf_datasheet.xhp
+msgctxt ""
+"sf_datasheet.xhp\n"
+"par_id941589194572219\n"
+"help.text"
+msgid "Returns a list with the menu names present in the menubar."
 msgstr ""
 
 #. ZERuR
@@ -12902,6 +14252,24 @@ msgctxt ""
 "par_id111583839767195\n"
 "help.text"
 msgid "Specify the height of the dialog box."
+msgstr ""
+
+#. nnL3u
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id62176771736067\n"
+"help.text"
+msgid "Yes"
+msgstr ""
+
+#. CaDMb
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id711767717327534\n"
+"help.text"
+msgid "<literal>True</literal> when the dialog box has not been closed (f.i. by a user action)."
 msgstr ""
 
 #. KD2zy
@@ -17674,6 +19042,24 @@ msgctxt ""
 msgid "Returns a list with the import filter names applicable to the current document as a zero-based array of strings. Filters used for both import/export are also returned."
 msgstr ""
 
+#. Fqkwb
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
+"par_id62176771736067\n"
+"help.text"
+msgid "Yes"
+msgstr ""
+
+#. DyZj8
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
+"par_id711767717327534\n"
+"help.text"
+msgid "<literal>True</literal> when the document has not been closed (f.i. by a user action)."
+msgstr ""
+
 #. Yo8T4
 #: sf_document.xhp
 msgctxt ""
@@ -17708,6 +19094,24 @@ msgctxt ""
 "par_id311589194910190\n"
 "help.text"
 msgid "Gives access to the Keywords property of the document. Represented as a comma-separated list of keywords"
+msgstr ""
+
+#. zUJGW
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
+"par_id258019194571067\n"
+"help.text"
+msgid "Yes"
+msgstr ""
+
+#. 6aL4u
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
+"par_id941589194572219\n"
+"help.text"
+msgid "Returns a list with the menu names present in the menubar."
 msgstr ""
 
 #. EHM84
@@ -17933,6 +19337,33 @@ msgctxt ""
 "par_id361589200121646\n"
 "help.text"
 msgid "<emph>saveask</emph> : If <literal>True</literal> (default), the user is invited to confirm if the changes should be written on disk. This argument is ignored if the document was not modified."
+msgstr ""
+
+#. EDGGG
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
+"par_id091159759727155\n"
+"help.text"
+msgid "This method returns either a list of the available context menus in the actual document or a <link href=\"text/sbasic/shared/03/sf_contextmenu.xhp\"><input>SFWidgets.ContextMenu</input></link> service instance."
+msgstr ""
+
+#. Wwugc
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
+"par_id471766938992932\n"
+"help.text"
+msgid "<emph>contextmenuname</emph>: One of the available context menus. The name of a context menu is the last component of the resource URL: <literal>\"private:resource/popupmenu/the-name-here\"</literal>."
+msgstr ""
+
+#. zXMhC
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
+"par_id361587733122507\n"
+"help.text"
+msgid "<emph>submenuchar</emph>: The delimiter used to create menu trees when calling methods as <literal>AddItem</literal> from the <literal>ContextMenu</literal> service. The default value is \">\"."
 msgstr ""
 
 #. RhAbC
@@ -18817,22 +20248,22 @@ msgctxt ""
 msgid "vStyles = doc.Styles('ParagraphStyles', ParentStyle = 'Standard\")  # All styles derived from the \"Default Paragraph Style\""
 msgstr ""
 
-#. wHDkF
+#. oT94E
 #: sf_document.xhp
 msgctxt ""
 "sf_document.xhp\n"
 "par_id091612259727155\n"
 "help.text"
-msgid "This method returns either a list of the available toolbar names in the actual document or an instance <link href=\"text/sbasic/shared/03/sf_toolbar.xhp\"><input>SFWidgets.Toolbar</input></link> service."
+msgid "This method returns either a list of the available toolbar names in the actual document or a <link href=\"text/sbasic/shared/03/sf_toolbar.xhp\"><input>SFWidgets.Toolbar</input></link> service instance."
 msgstr ""
 
-#. n65W7
+#. GKFtg
 #: sf_document.xhp
 msgctxt ""
 "sf_document.xhp\n"
 "par_id361580321120786\n"
 "help.text"
-msgid "<emph>ToolbarName</emph>: The usual name of one of the available toolbars."
+msgid "<emph>toolbarname</emph>: The usual name of one of the available toolbars."
 msgstr ""
 
 #. W5qzn
@@ -18979,6 +20410,60 @@ msgctxt ""
 msgid "Optionally stop its execution"
 msgstr ""
 
+#. ExgKk
+#: sf_exception.xhp
+msgctxt ""
+"sf_exception.xhp\n"
+"par_id111515981158495\n"
+"help.text"
+msgid "When an error is detected in a call to the <literal>ScriptForge API</literal>, the behaviour of the application is determined by specific properties:"
+msgstr ""
+
+#. wJt8E
+#: sf_exception.xhp
+msgctxt ""
+"sf_exception.xhp\n"
+"par_id458866141202844\n"
+"help.text"
+msgid "Log the error in the <literal>Exception</literal> console. This is always done."
+msgstr ""
+
+#. eBgEC
+#: sf_exception.xhp
+msgctxt ""
+"sf_exception.xhp\n"
+"par_id751581258235313\n"
+"help.text"
+msgid "Inform the user about the error with either a standard or a localized message."
+msgstr ""
+
+#. PPCpD
+#: sf_exception.xhp
+msgctxt ""
+"sf_exception.xhp\n"
+"par_id441765553270628\n"
+"help.text"
+msgid "To force a silent mode, set :"
+msgstr ""
+
+#. xfG3L
+#: sf_exception.xhp
+msgctxt ""
+"sf_exception.xhp\n"
+"par_id931587149514777\n"
+"help.text"
+msgid "<br/>To not stop the execution of the current macro, set:"
+msgstr ""
+
+#. 6Y6H5
+#: sf_exception.xhp
+msgctxt ""
+"sf_exception.xhp\n"
+"par_id631765553683083\n"
+"help.text"
+msgid "<br/>It then makes sense before further processing to explore the values of:"
+msgstr ""
+
 #. vFJRL
 #: sf_exception.xhp
 msgctxt ""
@@ -19042,13 +20527,13 @@ msgctxt ""
 msgid "Properties"
 msgstr ""
 
-#. JDNi6
+#. GTSsM
 #: sf_exception.xhp
 msgctxt ""
 "sf_exception.xhp\n"
 "par_id911621036526404\n"
 "help.text"
-msgid "The properties listed below are only available for <emph>Basic</emph> scripts."
+msgid "The properties listed below are only available for <emph>Basic</emph> scripts. They are related to errors occurring in any macro statement."
 msgstr ""
 
 #. s3E9G
@@ -19166,6 +20651,186 @@ msgctxt ""
 "par_id461584978880380\n"
 "help.text"
 msgid "Raising or clearing an <literal>Exception</literal> resets its properties."
+msgstr ""
+
+#. FQjDK
+#: sf_exception.xhp
+msgctxt ""
+"sf_exception.xhp\n"
+"par_id181765554961078\n"
+"help.text"
+msgid "The properties listed below are available for <emph>Basic</emph> and <emph>Python</emph> scripts. They are related to errors detected by the <literal>ScriptForge API</literal> only."
+msgstr ""
+
+#. UY4DC
+#: sf_exception.xhp
+msgctxt ""
+"sf_exception.xhp\n"
+"par_id271587849211792\n"
+"help.text"
+msgid "Name"
+msgstr ""
+
+#. oWZpF
+#: sf_exception.xhp
+msgctxt ""
+"sf_exception.xhp\n"
+"par_id241584978152150\n"
+"help.text"
+msgid "Readonly"
+msgstr ""
+
+#. CPCyD
+#: sf_exception.xhp
+msgctxt ""
+"sf_exception.xhp\n"
+"par_id771765555314886\n"
+"help.text"
+msgid "Return type"
+msgstr ""
+
+#. TYDBr
+#: sf_exception.xhp
+msgctxt ""
+"sf_exception.xhp\n"
+"par_id621948578211403\n"
+"help.text"
+msgid "Description"
+msgstr ""
+
+#. BWrfD
+#: sf_exception.xhp
+msgctxt ""
+"sf_exception.xhp\n"
+"par_id71584948415562\n"
+"help.text"
+msgid "No"
+msgstr ""
+
+#. Qv3SD
+#: sf_exception.xhp
+msgctxt ""
+"sf_exception.xhp\n"
+"par_id811765555755965\n"
+"help.text"
+msgid "Boolean"
+msgstr ""
+
+#. GuUNN
+#: sf_exception.xhp
+msgctxt ""
+"sf_exception.xhp\n"
+"par_id581581178715701\n"
+"help.text"
+msgid "Indicates whether script errors are displayed in a message box when they occur."
+msgstr ""
+
+#. 3ruBq
+#: sf_exception.xhp
+msgctxt ""
+"sf_exception.xhp\n"
+"par_id241610652699444\n"
+"help.text"
+msgid "Default value is <literal>False</literal>."
+msgstr ""
+
+#. 8pfeh
+#: sf_exception.xhp
+msgctxt ""
+"sf_exception.xhp\n"
+"par_id211584978214321\n"
+"help.text"
+msgid "Yes"
+msgstr ""
+
+#. rnDEF
+#: sf_exception.xhp
+msgctxt ""
+"sf_exception.xhp\n"
+"par_id241765556008756\n"
+"help.text"
+msgid "String"
+msgstr ""
+
+#. LjhrW
+#: sf_exception.xhp
+msgctxt ""
+"sf_exception.xhp\n"
+"par_id691584971598474\n"
+"help.text"
+msgid "The code returned by  the last call to the <literal>ScriptForge API</literal> from a user script."
+msgstr ""
+
+#. yGZKA
+#: sf_exception.xhp
+msgctxt ""
+"sf_exception.xhp\n"
+"par_id151339952632828\n"
+"help.text"
+msgid "It is the zero-length string if everything ran without error."
+msgstr ""
+
+#. RXacm
+#: sf_exception.xhp
+msgctxt ""
+"sf_exception.xhp\n"
+"par_id211584971574321\n"
+"help.text"
+msgid "Yes"
+msgstr ""
+
+#. nFDET
+#: sf_exception.xhp
+msgctxt ""
+"sf_exception.xhp\n"
+"par_id241765555888756\n"
+"help.text"
+msgid "String"
+msgstr ""
+
+#. pgyKU
+#: sf_exception.xhp
+msgctxt ""
+"sf_exception.xhp\n"
+"par_id691594301598474\n"
+"help.text"
+msgid "The description of the code returned by  the last call to the <literal>ScriptForge API</literal> from a user script."
+msgstr ""
+
+#. uAhxE
+#: sf_exception.xhp
+msgctxt ""
+"sf_exception.xhp\n"
+"par_id151331144632828\n"
+"help.text"
+msgid "It is the zero-length string if everything ran without error."
+msgstr ""
+
+#. 3EssQ
+#: sf_exception.xhp
+msgctxt ""
+"sf_exception.xhp\n"
+"par_id671584978788789\n"
+"help.text"
+msgid "No"
+msgstr ""
+
+#. 64gwY
+#: sf_exception.xhp
+msgctxt ""
+"sf_exception.xhp\n"
+"par_id85577555755965\n"
+"help.text"
+msgid "Boolean"
+msgstr ""
+
+#. bLCJd
+#: sf_exception.xhp
+msgctxt ""
+"sf_exception.xhp\n"
+"par_id951584454566296\n"
+"help.text"
+msgid "Indicates whether the macro is stopped when <literal>ScriptForge</literal> detects a user script error."
 msgstr ""
 
 #. ssXEB
@@ -24883,13 +26548,13 @@ msgctxt ""
 msgid "<emph>Run Scripts inside the current %PRODUCTNAME process:</emph> Python scripts are executed from within the %PRODUCTNAME process by using the <menuitem>Tools - Macros - Run Macro</menuitem> menu or the APSO extension to call user scripts stored in the Python scripts folder. You can also use the APSO Python shell to interactively run Python scripts."
 msgstr ""
 
-#. pnXQT
+#. CJSf3
 #: sf_intro.xhp
 msgctxt ""
 "sf_intro.xhp\n"
 "par_id761623365278133\n"
 "help.text"
-msgid "<emph>Run Scripts separately from the %PRODUCTNAME process:</emph> Python scripts are executed from an external process that connects to an ongoing %PRODUCTNAME process using a socket."
+msgid "<emph>Run Scripts separately from the %PRODUCTNAME process:</emph> Python scripts are executed from an external process that connects to an ongoing %PRODUCTNAME process using a <literal>pipe</literal> or a <literal>socket</literal>."
 msgstr ""
 
 #. DzGf6
@@ -25171,13 +26836,13 @@ msgctxt ""
 msgid "For example, suppose you get <emph>/usr/lib/libreoffice/</emph> as the result from running the Python code above. Then you need to consider <emph>/usr/lib/libreoffice/program</emph> as the path to run your Python scripts."
 msgstr ""
 
-#. 6EYGe
+#. 9gYtW
 #: sf_intro.xhp
 msgctxt ""
 "sf_intro.xhp\n"
 "hd_id231623370501084\n"
 "help.text"
-msgid "Start %PRODUCTNAME with socket settings"
+msgid "Start %PRODUCTNAME with <literal>pipe</literal> or <literal>socket</literal> settings"
 msgstr ""
 
 #. F94mp
@@ -25189,40 +26854,40 @@ msgctxt ""
 msgid "To run Python scripts from a separate process, you need to start %PRODUCTNAME with a few additional options that specify the hostname and port through which the external process will communicate with the %PRODUCTNAME component process."
 msgstr ""
 
-#. mfbEM
+#. 25FTZ
 #: sf_intro.xhp
 msgctxt ""
 "sf_intro.xhp\n"
 "par_id221623369584132\n"
 "help.text"
-msgid "Open the your operating system's command prompt, navigate to the program folder of your %PRODUCTNAME installation directory and type:"
+msgid "Open the your operating system's command prompt, navigate to the program folder of your %PRODUCTNAME installation directory and type either:"
 msgstr ""
 
-#. 6hDm4
+#. fkUD7
 #: sf_intro.xhp
 msgctxt ""
 "sf_intro.xhp\n"
 "par_id981623370706743\n"
 "help.text"
-msgid "The command above will start %PRODUCTNAME with a communication channel open so that other processes can exchange messages with it."
+msgid "Either command above will start %PRODUCTNAME with a communication channel open so that other processes can exchange messages with it."
 msgstr ""
 
-#. SB5LE
+#. y2EfD
 #: sf_intro.xhp
 msgctxt ""
 "sf_intro.xhp\n"
 "par_id621623370871360\n"
 "help.text"
-msgid "Note that the previous example opens %PRODUCTNAME start center. If you want to open a specific component, for instance Writer, you can add the --writer flag to the command, as follows."
+msgid "Note that the previous example opens %PRODUCTNAME start center. If you want to open a specific component, for instance <literal>Writer</literal>, you can add the --writer flag to the command, as follows."
 msgstr ""
 
-#. cVRuV
+#. VLmLq
 #: sf_intro.xhp
 msgctxt ""
 "sf_intro.xhp\n"
 "par_id431623373618951\n"
 "help.text"
-msgid "Take note of the <literal>host</literal> and <literal>port</literal> parameters, which in this example are <emph>localhost</emph> and <emph>2021</emph>, respectively."
+msgid "Take note of the <literal>name</literal>, or <literal>host</literal> and <literal>port</literal> parameters, which in this example are <emph>libreoffice</emph>, or <emph>localhost</emph> and <emph>2021</emph>, respectively."
 msgstr ""
 
 #. Z7z5C
@@ -25261,13 +26926,40 @@ msgctxt ""
 msgid "<emph>On Windows:</emph>"
 msgstr ""
 
-#. HGBuK
+#. 8GoDQ
 #: sf_intro.xhp
 msgctxt ""
 "sf_intro.xhp\n"
 "par_id791623373520018\n"
 "help.text"
-msgid "This will open the Python shell and now you can start typing commands that will be executed by %PRODUCTNAME. But first you need to set up the socket connection."
+msgid "This will open the Python shell and now you can start typing commands that will be executed by %PRODUCTNAME. But first you need to set up the <literal>pipe</literal> or the <literal>socket</literal> connection. The <literal>ScriptForge()</literal> statement below must precede the very first call to <literal>CreateScriptService()</literal>."
+msgstr ""
+
+#. qzZM4
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"par_id771765126113017\n"
+"help.text"
+msgid "Run either:"
+msgstr ""
+
+#. kREpk
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"pyc_id631765125675526\n"
+"help.text"
+msgid "from scriptforge import ScriptForge, CreateScriptService"
+msgstr ""
+
+#. 3YpfC
+#: sf_intro.xhp
+msgctxt ""
+"sf_intro.xhp\n"
+"pyc_id791765125744865\n"
+"help.text"
+msgid "ScriptForge(pipe='libreoffice')"
 msgstr ""
 
 #. NGS3a
@@ -25279,13 +26971,13 @@ msgctxt ""
 msgid "Read the section <link href=\"text/sbasic/shared/03/sf_intro.xhp#pythonpath\">Setting PYTHONPATH</link> below in case of errors importing <literal>scriptforge.py</literal> or <literal>uno.py</literal>."
 msgstr ""
 
-#. s54tE
+#. ZtsNn
 #: sf_intro.xhp
 msgctxt ""
 "sf_intro.xhp\n"
 "par_id351623373686414\n"
 "help.text"
-msgid "The second line of code above defines the <literal>host</literal> and <literal>port</literal> settings so that the Python shell can communicate with an ongoing %PRODUCTNAME process opened with the same socket settings."
+msgid "The second line of code above defines the <literal>pipe</literal> or <literal>host</literal> and <literal>port</literal> settings so that the Python shell can communicate with an ongoing %PRODUCTNAME process opened with the same pipe or socket settings."
 msgstr ""
 
 #. RiXDx
@@ -29779,6 +31471,15 @@ msgctxt ""
 msgid "Execute a Calc function using its English name and based on the given arguments.      <br/>If the arguments are arrays, the function is executed as an <link href=\"text/scalc/01/04060107.xhp\">array formula</link>."
 msgstr ""
 
+#. 2keJr
+#: sf_session.xhp
+msgctxt ""
+"sf_session.xhp\n"
+"par_id301765386823466\n"
+"help.text"
+msgid "The method returns a (string or numeric) scalar or the array of arrays returned by the call to the function."
+msgstr ""
+
 #. EDU9x
 #: sf_session.xhp
 msgctxt ""
@@ -29788,22 +31489,112 @@ msgctxt ""
 msgid "<emph>calcfunction</emph>: The name of the Calc function to be called, in English."
 msgstr ""
 
-#. FJJJh
+#. BoiKB
 #: sf_session.xhp
 msgctxt ""
 "sf_session.xhp\n"
 "par_id371582816585183\n"
 "help.text"
-msgid "<emph>args</emph>: The arguments to be passed to the called Calc function. Each argument must be either a string, a numeric value or an array of arrays combining those types."
+msgid "<emph>args</emph>: The arguments to be passed to the called Calc function.<br/>Each argument may be either"
 msgstr ""
 
-#. XMfUD
+#. fvNgo
 #: sf_session.xhp
 msgctxt ""
 "sf_session.xhp\n"
-"bas_id881582816585185\n"
+"par_id831765386157812\n"
 "help.text"
-msgid "' Generates an error."
+msgid "a string, a numeric value, a date or a boolean"
+msgstr ""
+
+#. ErvKE
+#: sf_session.xhp
+msgctxt ""
+"sf_session.xhp\n"
+"par_id651765386268792\n"
+"help.text"
+msgid "a 1D array, a 2D array or an array of arrays combining above datatypes"
+msgstr ""
+
+#. voNBk
+#: sf_session.xhp
+msgctxt ""
+"sf_session.xhp\n"
+"par_id121765386355137\n"
+"help.text"
+msgid "a <literal>com.sun.star.table.XCellRange</literal> UNO object"
+msgstr ""
+
+#. JYXqx
+#: sf_session.xhp
+msgctxt ""
+"sf_session.xhp\n"
+"bas_id71765387395209\n"
+"help.text"
+msgid "' --------"
+msgstr ""
+
+#. wEr7h
+#: sf_session.xhp
+msgctxt ""
+"sf_session.xhp\n"
+"bas_id81765387429208\n"
+"help.text"
+msgid "table1 = Array(\"Symbol\", \"H\", \"He\", \"Li\")"
+msgstr ""
+
+#. EnHH2
+#: sf_session.xhp
+msgctxt ""
+"sf_session.xhp\n"
+"bas_id521765387469537\n"
+"help.text"
+msgid "table2 = Array(\"AtomicNumber\", 1.0, 2.0, 3.0)"
+msgstr ""
+
+#. GACGJ
+#: sf_session.xhp
+msgctxt ""
+"sf_session.xhp\n"
+"bas_id251765387503314\n"
+"help.text"
+msgid "table3 = Array(\"Mass\", 1.008, 4.0026, 6.94)"
+msgstr ""
+
+#. 6ggYS
+#: sf_session.xhp
+msgctxt ""
+"sf_session.xhp\n"
+"bas_id211765387545431\n"
+"help.text"
+msgid "table = Array(table1, table2, table3)  ' array of arrays"
+msgstr ""
+
+#. EvDaN
+#: sf_session.xhp
+msgctxt ""
+"sf_session.xhp\n"
+"bas_id471765387597098\n"
+"help.text"
+msgid "search = Array(\"Symbol\", \"AtomicNumber\", \"Mass\")"
+msgstr ""
+
+#. hN9sS
+#: sf_session.xhp
+msgctxt ""
+"sf_session.xhp\n"
+"bas_id991765387635800\n"
+"help.text"
+msgid "result = session.ExecuteCalcFunction(\"XLOOKUP\", \"Mass\", search, table)"
+msgstr ""
+
+#. RBskH
+#: sf_session.xhp
+msgctxt ""
+"sf_session.xhp\n"
+"bas_id721765387704768\n"
+"help.text"
+msgid "MsgBox result(0)(3)  ' 6.94"
 msgstr ""
 
 #. ygESx
@@ -33629,6 +35420,24 @@ msgctxt ""
 "par_id651606319520654\n"
 "help.text"
 msgid "List of Properties in the Calc Service"
+msgstr ""
+
+#. AdH8y
+#: sf_toc.xhp
+msgctxt ""
+"sf_toc.xhp\n"
+"hd_id101671188886417\n"
+"help.text"
+msgid "<literal>SFWidgets</literal>.<literal>ContextMenu</literal> service"
+msgstr ""
+
+#. Di7ib
+#: sf_toc.xhp
+msgctxt ""
+"sf_toc.xhp\n"
+"par_id651655884130218\n"
+"help.text"
+msgid "List of Properties in the ContextMenu Service"
 msgstr ""
 
 #. 8B4AP

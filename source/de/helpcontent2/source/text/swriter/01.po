@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2026-01-12 12:40+0100\n"
+"POT-Creation-Date: 2026-02-05 14:39+0100\n"
 "PO-Revision-Date: 2026-01-23 04:55+0000\n"
 "Last-Translator: Christian Kühl <kuehl.christian@googlemail.com>\n"
 "Language-Team: German <https://translations.documentfoundation.org/projects/libo_help-master/textswriter01/de/>\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Accelerator-Marker: ~\n"
-"X-Generator: Weblate 5.10.1\n"
+"X-Generator: LibreOffice\n"
 "X-POOTLE-MTIME: 1565411718.000000\n"
 
 #. KvqYw
@@ -5236,23 +5236,32 @@ msgctxt ""
 msgid "With condition"
 msgstr "Mit Bedingung"
 
-#. GkVws
+#. SG3TB
 #: 04020100.xhp
 msgctxt ""
 "04020100.xhp\n"
 "par_id3154343\n"
 "help.text"
-msgid "<ahelp hid=\".\">Enter the condition that must be met to hide the section.</ahelp> A condition is a <link href=\"text/swriter/01/04090200.xhp\">logical expression</link>, such as \"SALUTATION EQ Mr.\". For example, if you use the <link href=\"text/swriter/guide/form_letters_main.xhp\">mail merge</link> form letter feature to define a database field called \"Salutation\" that contains \"Mr.\", \"Ms.\", or \"Sir or Madam\", you can then specify that a section will only be printed if the salutation is \"Mr.\"."
-msgstr "<ahelp hid=\".\">Legen Sie die Bedingung fest, die erfüllt werden muss, damit der Bereich versteckt wird.</ahelp> Eine Bedingung ist ein <link href=\"text/swriter/01/04090200.xhp\">logischer Ausdruck</link> wie beispielsweise \"ANREDE EQ Hr.\". Wenn Sie beispielsweise mit der Funktion <link href=\"text/swriter/guide/form_letters_main.xhp\">Seriendruck</link> ein Datenbankfeld namens \"Anrede\" definieren, das die Werte \"Sehr geehrter Herr\", \"Sehr geehrte Frau\" oder \"Sehr geehrte Dame, sehr geehrter Herr\" enthalten kann, so können Sie weiter festlegen, dass ein bestimmter Bereich nur dann gedruckt wird, wenn die Anrede \"Sehr geehrter Herr\" ist."
+msgid "<ahelp hid=\".\">Enter the condition that must be met to hide the section.</ahelp> A condition is a <link href=\"text/swriter/01/04090200.xhp\">logical expression</link> and must resolve to TRUE or FALSE."
+msgstr ""
 
-#. NSYCM
+#. EBKbm
 #: 04020100.xhp
 msgctxt ""
 "04020100.xhp\n"
 "par_id3150086\n"
 "help.text"
-msgid "Another example would be to create the field variable \"x\" and set its value to 1. Then specify a condition based on this variable for hiding a section, such as: \"x eq 1\". If you want to display the section, set the value of the variable \"x\" to \"0\"."
-msgstr "Ein anderes Beispiel: Sie könnten eine Feldvariable \"x\" erstellen und ihren Wert auf 1 setzen. Anschließend legen Sie eine Bedingung auf Basis dieser Variablen fest, mit der Sie einen Bereich verstecken, beispielsweise \"x eq 1\". Um den Bereich anzuzeigen, setzen Sie den Wert der Variablen \"x\" auf \"0\"."
+msgid "For example, you can create the field variable <emph>x</emph> and set its value to 1. Then specify a condition based on this variable for hiding a section, such as: <emph>x EQ 1</emph> to hide the section. If you want to display the section, set the value of the variable <emph>x</emph> to 0."
+msgstr ""
+
+#. wYJfj
+#: 04020100.xhp
+msgctxt ""
+"04020100.xhp\n"
+"par_id391767359626214\n"
+"help.text"
+msgid "When using conditions based on database fields, always fully qualify the field by specifying it as <emph>Database_name.Table_name.Field_name</emph>."
+msgstr ""
 
 #. SFuYt
 #: 04020100.xhp
@@ -16270,14 +16279,14 @@ msgctxt ""
 msgid "<variable id=\"hyphenation_zone_hd\">Hyphenation zone</variable>"
 msgstr "<variable id=\"hyphenation_zone_hd\">Silbentrennungsbereich</variable>"
 
-#. iKBAb
+#. 8fqAm
 #: 05030200.xhp
 msgctxt ""
 "05030200.xhp\n"
 "par_id3153549\n"
 "help.text"
-msgid "<ahelp hid=\"cui/ui/textflowpage/spinHyphenZone\">To reduce hyphenation, enter the length of the hyphenation zone. Instead of the possible hyphenation, the line will break between words, if the remaining horizontal space does not exceed the hyphenation zone. Hyphenation zone results in enlarged spaces between words in justified text, and greater distance from paragraph margins in non-justified text.</ahelp>"
-msgstr "<ahelp hid=\"cui/ui/textflowpage/spinHyphenZone\">Um die Silbentrennung zu verringern, geben Sie die Länge des Silbentrennungsbereichs ein. Anstelle der möglichen Silbentrennung wird die Zeile dann zwischen Wörtern umgebrochen, wenn der verbleibende horizontale Raum den Silbentrennungsbereich nicht überschreitet. Der Silbentrennungsbereich führt zu vergrößerten Abständen zwischen Wörtern in Blocksatz und zu einem größeren Abstand zu Absatzrändern in nicht in Blocksatz geschriebenem Text.</ahelp>"
+msgid "<ahelp hid=\"cui/ui/textflowpage/spinHyphenZone\">The hyphenation zone defines the maximum amount of blank space allowed at the end of a line (or added to justified lines) before Writer attempts to hyphenate the next word to improve spacing. A larger hyphenation zone creates a more uneven right margin, as fewer words are hyphenated. A smaller hyphenation zone results in a smoother right margin, as more words are hyphenated to fill the space. To reduce hyphenation, enter the length of the hyphenation zone.</ahelp>"
+msgstr ""
 
 #. mvc7q
 #: 05030200.xhp
@@ -17025,6 +17034,24 @@ msgctxt ""
 "help.text"
 msgid "Outline level and List style are independent of each other. Use <menuitem>Tools - Heading Numbering</menuitem> to assign a numbering format to paragraph styles used as headings in a document outline structure."
 msgstr "Gliederungsebene und Listenvorlage sind unabhängig voneinander. Verwenden Sie <menuitem>Extras – Kapitelnummerierung</menuitem>, um Absatzvorlagen, die als Überschriften in einer Dokumentgliederungsstruktur verwendet werden, ein Nummerierungsformat zuzuweisen."
+
+#. 9qnar
+#: 05030800.xhp
+msgctxt ""
+"05030800.xhp\n"
+"hd_id701767743234067\n"
+"help.text"
+msgid "List Level"
+msgstr ""
+
+#. 3n9AL
+#: 05030800.xhp
+msgctxt ""
+"05030800.xhp\n"
+"par_id241767743241003\n"
+"help.text"
+msgid "Assign a list level from 1 to 10 to the selected paragraphs or paragraph style."
+msgstr ""
 
 #. YQXpL
 #: 05030800.xhp
@@ -27870,6 +27897,69 @@ msgctxt ""
 "help.text"
 msgid "Check, if text conveys additional meaning with (direct) formatting."
 msgstr "Überprüfung, ob Text durch (direkte) Formatierung zusätzliche Bedeutung vermittelt."
+
+#. ZhX7A
+#: baseline_grid.xhp
+msgctxt ""
+"baseline_grid.xhp\n"
+"tit\n"
+"help.text"
+msgid "Baseline Grid"
+msgstr ""
+
+#. G4uzC
+#: baseline_grid.xhp
+msgctxt ""
+"baseline_grid.xhp\n"
+"bm_id571767535451864\n"
+"help.text"
+msgid "<bookmark_value>view;baseline grid</bookmark_value>        <bookmark_value>register-true;baseline grid</bookmark_value>        <bookmark_value>baseline grid;page line spacing</bookmark_value>        <bookmark_value>page line spacing;baseline grid</bookmark_value>"
+msgstr ""
+
+#. ne82j
+#: baseline_grid.xhp
+msgctxt ""
+"baseline_grid.xhp\n"
+"hd_id3160476\n"
+"help.text"
+msgid "<link href=\"text/swriter/01/baseline_grid.xhp#display_baseline_grid\">Display Baseline Grid</link>"
+msgstr ""
+
+#. 3kGyu
+#: baseline_grid.xhp
+msgctxt ""
+"baseline_grid.xhp\n"
+"par_id71849725\n"
+"help.text"
+msgid "Displays the baseline grid for <link href=\"text/shared/00/00000005.xhp#pageline-spacing\">page line-spacing</link> in text documents."
+msgstr ""
+
+#. S27AZ
+#: baseline_grid.xhp
+msgctxt ""
+"baseline_grid.xhp\n"
+"par_id131686520802426\n"
+"help.text"
+msgid "The page line-spacing feature aligns all affected text portions so that the bottoms of the text lines align with an invisible grid. This invisible grid is called the baseline grid. This baseline grid is calculated based on the reference style defined for the page line-spacing. If page line-spacing is not enabled for a given page, the standard reference style (i.e. Body Text) is used to position the baseline grid."
+msgstr ""
+
+#. BLDTL
+#: baseline_grid.xhp
+msgctxt ""
+"baseline_grid.xhp\n"
+"par_id71849724\n"
+"help.text"
+msgid "The baseline grid is not available in HTML / XML documents."
+msgstr ""
+
+#. JMwFC
+#: baseline_grid.xhp
+msgctxt ""
+"baseline_grid.xhp\n"
+"par_id3156738\n"
+"help.text"
+msgid "<link href=\"text/swriter/guide/registertrue.xhp\">Printing with Page line-spacing</link>"
+msgstr ""
 
 #. KvomA
 #: contentcontrol00.xhp
