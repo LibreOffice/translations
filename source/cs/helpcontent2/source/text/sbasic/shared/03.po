@@ -4,8 +4,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
 "POT-Creation-Date: 2026-02-12 14:31+0100\n"
-"PO-Revision-Date: 2026-03-15 17:30+0000\n"
-"Last-Translator: raal <raal@post.cz>\n"
+"PO-Revision-Date: 2026-03-30 10:31+0000\n"
+"Last-Translator: Stanislav Horáček <stanislav.horacek@gmail.com>\n"
 "Language-Team: Czech <https://translations.documentfoundation.org/projects/libo_help-master/textsbasicshared03/cs/>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
@@ -1112,7 +1112,7 @@ msgctxt ""
 "par_id831765200111034\n"
 "help.text"
 msgid "One-dimensional arrays containing only one-dimensional subarrays are called below <literal>data arrays</literal>. They are particularly suited for exchanges of tabular data with <literal>Python</literal> scripts and <literal>Calc</literal> sheets."
-msgstr "Jednorozměrná pole obsahující pouze jednorozměrná podpole jsou nazývána níže <literal>datová pole</literal>. Jsou zvláště vhodné pro výměnu tabulkových dat s <literal>Python</literal> skripty a listy <literal>Calcu</literal>."
+msgstr "Jednorozměrná pole obsahující pouze jednorozměrná podpole jsou dále nazývána <literal>pole dat</literal>. Jsou zvláště vhodné pro výměnu tabulkových dat se skripty v jazyce <literal>Python</literal> a listy programu <literal>Calc</literal>."
 
 #. hdC3J
 #: sf_array.xhp
@@ -1310,7 +1310,7 @@ msgctxt ""
 "bm_id741765204030416\n"
 "help.text"
 msgid "<bookmark_value>Array service;ConvertFromDataArray</bookmark_value>"
-msgstr "<bookmark_value>Služba Array (Pole);ConvertFromDataArray</bookmark_value>"
+msgstr "<bookmark_value>Array (služba);ConvertFromDataArray</bookmark_value>"
 
 #. A8zk4
 #: sf_array.xhp
@@ -1319,7 +1319,7 @@ msgctxt ""
 "par_id41765204240195\n"
 "help.text"
 msgid "Convert a data array to a <literal>Basic</literal> array.<br/>A data array is an array of subarrays. On request, the individual output items are reduced to strings or doubles only."
-msgstr "Převede datové pole na <literal>Basic</literal> pole.<br/>Datové pole je pole podpolí. Na požádání jsou jednotlivé výstupní položky redukovány pouze na řetězce nebo datový typ Double."
+msgstr "Převede pole dat na pole jazyka <literal>Basic</literal>.<br/>Pole dat je pole podpolí. Na požádání jsou jednotlivé položky výstupu redukovány na řetězce nebo čísla typu double."
 
 #. iEoEk
 #: sf_array.xhp
@@ -1328,7 +1328,7 @@ msgctxt ""
 "par_id411765207592513\n"
 "help.text"
 msgid "The method returns a scalar, a zero-based 1D array or a zero-based 2D array.<br/>The number of columns in the resulting 2D array is equal to the number of items in the 1st subarray. If next subarrays have a different size, next rows will be complemented with the <literal>fillvalue</literal> argument or truncated."
-msgstr "Metoda vrací skalární, nulové 1D pole nebo nulové 2D pole.<br/>Počet sloupců ve výsledném 2D poli se rovná počtu položek v 1. podpoli. Pokud mají další podpole jinou velikost, další řádky budou doplněny argumentem <literal>fillvalue</literal> nebo budou zkráceny."
+msgstr "Metoda vrací skalár, jednorozměrné pole začínající od 0 nebo dvourozměrné pole začínající od 0.<br/>Počet sloupců ve výsledném dvourozměrném poli se rovná počtu položek v prvním podpoli. Pokud mají další podpole jinou velikost, jejich řádky budou doplněny argumentem <literal>fillvalue</literal> nebo budou zkráceny."
 
 #. 2tGzp
 #: sf_array.xhp
@@ -1337,7 +1337,7 @@ msgctxt ""
 "par_id561581234214489\n"
 "help.text"
 msgid "<emph>dataarray</emph>: An array of subarrays. Array and subarrays must be zero-based.<br/>Typically a data array is either output by"
-msgstr "<emph>dataarray</emph>: Pole skládající se z podpolí. Pole a podpole musí začínat nulou.<br/>Typicky je datové pole buď výstupem"
+msgstr "<emph>dataarray</emph>: Pole skládající se z podpolí. Pole a podpole musí začínat nulou.<br/>Typicky je pole dat výstupem"
 
 #. DJ7vY
 #: sf_array.xhp
@@ -1355,7 +1355,7 @@ msgctxt ""
 "par_id851765206498930\n"
 "help.text"
 msgid "a Python script returning a tuple of tuples"
-msgstr "skript Pythonu vracející n-tici"
+msgstr "skriptu Pythonu vracejícího n-tici n-tic"
 
 #. r6Vmi
 #: sf_array.xhp
@@ -1364,7 +1364,7 @@ msgctxt ""
 "par_id51765206545727\n"
 "help.text"
 msgid "the <literal>getDataArray()</literal> method from the <literal>com.sun.star.sheet.XCellRangeData</literal> interface"
-msgstr ""
+msgstr "metody <literal>getDataArray()</literal> z rozhraní <literal>com.sun.star.sheet.XCellRangeData</literal>"
 
 #. zzMfr
 #: sf_array.xhp
@@ -1373,7 +1373,7 @@ msgctxt ""
 "par_id361765207142576\n"
 "help.text"
 msgid "<emph>isrange</emph>: When <literal>True</literal> (default = <literal>False</literal>), the items are converted to strings or doubles."
-msgstr ""
+msgstr "<emph>isrange</emph>: Je-li <literal>True</literal> (výchozí = <literal>False</literal>), položky se převedou na řetězce, nebo čísla typu double."
 
 #. FBLKp
 #: sf_array.xhp
@@ -1382,7 +1382,7 @@ msgctxt ""
 "par_id861765207423152\n"
 "help.text"
 msgid "<emph>fillvalue</emph>: How to replace missing items. Default = the empty string."
-msgstr ""
+msgstr "<emph>fillvalue</emph>: Čím nahradit chybějící položky. Výchozí = prázdný řetězec."
 
 #. WTXMU
 #: sf_array.xhp
@@ -1391,7 +1391,7 @@ msgctxt ""
 "bm_id741953578080416\n"
 "help.text"
 msgid "<bookmark_value>Array service;ConvertToDataArray</bookmark_value>"
-msgstr ""
+msgstr "<bookmark_value>Array (služba);ConvertToDataArray</bookmark_value>"
 
 #. Haeq4
 #: sf_array.xhp
@@ -1400,7 +1400,7 @@ msgctxt ""
 "par_id41796324240195\n"
 "help.text"
 msgid "Create a data array from a scalar, a 1D array or a 2D array.<br/>A data array is a zero-based array of zero-based subarrays. On request, the individual output items are reduced to strings or doubles only."
-msgstr ""
+msgstr "Vytvoří pole dat ze skaláru, jednorozměrného pole nebo dvourozměrného pole.<br/>Pole dat se skládá z podpolí, pole i podpole začínají od 0. Na požádání jsou jednotlivé položky výstup redukovány na řetězce nebo čísla typu double."
 
 #. BvApk
 #: sf_array.xhp
@@ -1409,7 +1409,7 @@ msgctxt ""
 "par_id561781234214489\n"
 "help.text"
 msgid "The returned data array is typically used as"
-msgstr ""
+msgstr "Vrácené pole dat se typicky používá jako"
 
 #. Db427
 #: sf_array.xhp
@@ -1418,7 +1418,7 @@ msgctxt ""
 "par_id851769514498930\n"
 "help.text"
 msgid "a tuple of (sub)tuples passed to a Python script"
-msgstr ""
+msgstr "n-tice (pod)n-tic předávaných skriptu Pythonu"
 
 #. AdgDE
 #: sf_array.xhp
@@ -1427,7 +1427,7 @@ msgctxt ""
 "par_id51769437545727\n"
 "help.text"
 msgid "argument of the <literal>setDataArray()</literal> method from the <literal>com.sun.star.sheet.XCellRangeData</literal> interface"
-msgstr ""
+msgstr "argument metody <literal>setDataArray()</literal> z rozhraní <literal>com.sun.star.sheet.XCellRangeData</literal>"
 
 #. bRAjE
 #: sf_array.xhp
@@ -1436,7 +1436,7 @@ msgctxt ""
 "par_id281765284424698\n"
 "help.text"
 msgid "<emph>data</emph>: The input scalar, 1D or 2D array."
-msgstr ""
+msgstr "<emph>data</emph>: Vstupní skalár nebo jednorozměrné či dvourozměrné pole."
 
 #. BXhBx
 #: sf_array.xhp
@@ -1445,7 +1445,7 @@ msgctxt ""
 "par_id361765207357976\n"
 "help.text"
 msgid "<emph>isrange</emph>: When <literal>True</literal> (default = <literal>False</literal>), the array items are stored as (possibly empty) strings or doubles only into the data array."
-msgstr ""
+msgstr "<emph>isrange</emph>: Je-li <literal>True</literal> (výchozí = <literal>False</literal>), položky pole se uloží do pole dat jako řetězce (mohou být i prázdné), nebo čísla typu double."
 
 #. LRqZU
 #: sf_array.xhp
@@ -1454,7 +1454,7 @@ msgctxt ""
 "par_id286465207423152\n"
 "help.text"
 msgid "<emph>rows, columns</emph>: The number of rows or columns of the returned data array. When they exceed the limits of <literal>data</literal>, fill with zero-length strings. If <literal>rows</literal> = 1 and the input array is a vector, the data array is aligned horizontally (by default, vectors are aligned vertically). When absent, the size of the output is determined by the input array."
-msgstr ""
+msgstr "<emph>rows, columns</emph>: Počet řádků nebo sloupců vráceného pole dat. Položky přesahující rozměry argumentu <literal>data</literal> se vyplní řetezci nulové délky. Pokud <literal>rows</literal> = 1 a vstupním polem je vektor, pole dat bude uspořádáno vodorovně (ve výchozím nastavení jsou vektory uspořádány svisle). Není-li zadáno, velikost výstupu se určí podle vstupního pole."
 
 #. 7AGE6
 #: sf_array.xhp
@@ -1499,7 +1499,7 @@ msgctxt ""
 "bm_id741953548620416\n"
 "help.text"
 msgid "<bookmark_value>Array service;ConvertToRange</bookmark_value>"
-msgstr ""
+msgstr "<bookmark_value>Array (služba);ConvertToRange</bookmark_value>"
 
 #. G8BZg
 #: sf_array.xhp
@@ -1508,7 +1508,7 @@ msgctxt ""
 "par_id41796364640195\n"
 "help.text"
 msgid "Create a valid cells range content from a scalar, a 1D array, a 2D array or a data array (a data array is a zero-based array of zero-based subarrays). The lower bounds of arrays are preserved in the output."
-msgstr ""
+msgstr "Vytvoří platný obsah oblasti buněk ze skaláru, jednorozměrného či dvourozměrného pole nebo pole dat (pole dat je od 0 začínající pole od 0 začínajících podpolí). Ve výstupu se zachovají dolní meze polí."
 
 #. G66MS
 #: sf_array.xhp
@@ -1517,7 +1517,7 @@ msgctxt ""
 "par_id311765287171028\n"
 "help.text"
 msgid "The individual items are always reduced to strings or doubles, including booleans or dates."
-msgstr ""
+msgstr "Jednotlivé položky se vždy redukují na řetězce nebo čísla typu double, a to včetně booleovských hodnot nebo dat."
 
 #. Cje28
 #: sf_array.xhp
@@ -1526,7 +1526,7 @@ msgctxt ""
 "par_id561786541214489\n"
 "help.text"
 msgid "The returned scalar or 2D array is a valid argument of the <link href=\"text/sbasic/shared/03/sf_session.xhp#ExecuteCalcFunction\">session.ExecuteCalcFunction()</link> method. This is particularly useful in the context of [complex] array functions."
-msgstr ""
+msgstr "Vrácený skalár nebo dvourozměrné pole je platným argumentem metody <link href=\"text/sbasic/shared/03/sf_session.xhp#ExecuteCalcFunction\">session.ExecuteCalcFunction()</link>. To je užitečné zejména při práci s komplexními maticovými funkcemi."
 
 #. VU8ZH
 #: sf_array.xhp
@@ -1535,7 +1535,7 @@ msgctxt ""
 "par_id281257984424698\n"
 "help.text"
 msgid "<emph>data</emph>: The input scalar, 1D array,2D array or data array."
-msgstr ""
+msgstr "<emph>data</emph>: Vstupní skalár, jednorozměrné či dvourozměrné pole nebo pole dat."
 
 #. 7QZet
 #: sf_array.xhp
@@ -1544,7 +1544,7 @@ msgctxt ""
 "par_id361765202557976\n"
 "help.text"
 msgid "<emph>direction</emph>: The alignment of the range when it is a vector, either \"V\"[ertical, default] or \"H\"[orizontal]."
-msgstr ""
+msgstr "<emph>direction</emph>: Uspořádání oblasti, pokud se jedná o vektor, buď \"V\" (svislé), nebo \"H\" (vodorovné)."
 
 #. vnFE8
 #: sf_array.xhp
@@ -1553,7 +1553,7 @@ msgctxt ""
 "bas_id681765288940028\n"
 "help.text"
 msgid "matrix = SF_Array.AppendRow(matrix, Array(7, 8, -9))"
-msgstr ""
+msgstr "matrix = SF_Array.AppendRow(matrix, Array(7, 8, -9))"
 
 #. bGXKd
 #: sf_array.xhp
@@ -4271,7 +4271,7 @@ msgctxt ""
 "par_id721767801758480\n"
 "help.text"
 msgid "Simple cell ranges formatting"
-msgstr ""
+msgstr "Formátování prostých oblastí buněk"
 
 #. UFCyZ
 #: sf_calc.xhp
@@ -4784,7 +4784,7 @@ msgctxt ""
 "par_id81592407165611\n"
 "help.text"
 msgid "None"
-msgstr "Žádný"
+msgstr "žádný"
 
 #. UUDuD
 #: sf_calc.xhp
@@ -4811,7 +4811,7 @@ msgctxt ""
 "par_id301592407166042\n"
 "help.text"
 msgid "Yes"
-msgstr ""
+msgstr "ano"
 
 #. 9AdDe
 #: sf_calc.xhp
@@ -4820,7 +4820,7 @@ msgctxt ""
 "par_id81592407275611\n"
 "help.text"
 msgid "None"
-msgstr ""
+msgstr "žádný"
 
 #. yA362
 #: sf_calc.xhp
@@ -4829,7 +4829,7 @@ msgctxt ""
 "par_id59159251716522\n"
 "help.text"
 msgid "String or array of strings"
-msgstr ""
+msgstr "String nebo pole řetězců"
 
 #. MNmzu
 #: sf_calc.xhp
@@ -4838,7 +4838,7 @@ msgctxt ""
 "par_id85159350716560\n"
 "help.text"
 msgid "Returns the full sorted list of all named ranges in the document. The names defined in a single sheet are qualified with the sheet name."
-msgstr ""
+msgstr "Vrátí seřazený úplný seznam pojmenovaných oblastí v dokumentu. Názvy definované v jediném listu obsahují název tohoto listu."
 
 #. PFB5D
 #: sf_calc.xhp
@@ -5234,7 +5234,7 @@ msgctxt ""
 "par_id393214315404944\n"
 "help.text"
 msgid "Yes"
-msgstr ""
+msgstr "ano"
 
 #. 8fRJC
 #: sf_calc.xhp
@@ -5243,7 +5243,7 @@ msgctxt ""
 "par_id1001592316547525\n"
 "help.text"
 msgid "RangeName As String"
-msgstr ""
+msgstr "RangeName jako String"
 
 #. G2zSE
 #: sf_calc.xhp
@@ -5252,7 +5252,7 @@ msgctxt ""
 "par_id321592315406565\n"
 "help.text"
 msgid "A <literal>com.sun.star.awt.Rectangle</literal> UNO structure, describing, in pixels, the area on the screen where the range is located."
-msgstr ""
+msgstr "Struktura UNO <literal>com.sun.star.awt.Rectangle</literal> popisující v pixelech část obrazovky, v níž je oblast umístěna."
 
 #. nAD2d
 #: sf_calc.xhp
@@ -7637,7 +7637,7 @@ msgctxt ""
 "par_id331592231156425\n"
 "help.text"
 msgid "Get the value(s) stored in the given range of cells as a single value, a 1D array or a 2D array. All values are either doubles or strings."
-msgstr "Získá hodnotu či hodnoty uložené v zadané oblasti buněk, a to jako jednu hodnotu, nebo jako jednorozměrní či dvourozměrné pole. Každá hodnota je buď číslo typu double, nebo řetězec."
+msgstr "Získá hodnotu či hodnoty uložené v zadané oblasti buněk, a to jako jednu hodnotu, nebo jako jednorozměrné či dvourozměrné pole. Každá hodnota je buď číslo typu double, nebo řetězec."
 
 #. XACNZ
 #: sf_calc.xhp
