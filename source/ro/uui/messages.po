@@ -4,7 +4,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
 "POT-Creation-Date: 2025-03-26 17:22+0100\n"
-"PO-Revision-Date: 2026-03-30 20:30+0000\n"
+"PO-Revision-Date: 2026-04-28 07:30+0000\n"
 "Last-Translator: Miloiu Andrei-Valentin <miloiuandrei@gmail.com>\n"
 "Language-Team: Romanian <https://translations.documentfoundation.org/projects/libo_ui-25-8/uuimessages/ro/>\n"
 "Language: ro\n"
@@ -48,6 +48,9 @@ msgid ""
 "$(ARG1)\n"
 "Storing those large module(s) in binary format, which is necessary for password protection, makes them unreadable in versions older than LibreOffice 5.0.3. If you want to avoid this please split the module into smaller pieces."
 msgstr ""
+"Salvezi o bibliotecă Basic protejată prin parolă, care conține următoarele module mari:\n"
+"$(ARG1)\n"
+"Stocarea acestor module mari în format binar, necesară pentru protecția prin parolă, le face ilizibile în versiunile mai vechi decât LibreOffice 5.0.3. Dacă vrei să eviți acest lucru, te rugăm să împarți modulul în părți mai mici."
 
 #. 3rNDF
 #: uui/inc/ids.hrc:43
@@ -61,6 +64,13 @@ msgid ""
 "\n"
 "Are you certain that this file is a legacy document created many years ago?"
 msgstr ""
+"Atenție!\n"
+"\n"
+"Ești pe cale să încarci un tip de fișier foarte neobișnuit ($(ARG2)) de la adresa URL:\n"
+"\n"
+"$(ARG1)\n"
+"\n"
+"Ești sigur(ă) că acest fișier este un document vechi, creat cu mulți ani în urmă?"
 
 #. v6bPE
 #: uui/inc/ids.hrc:45
@@ -648,6 +658,10 @@ msgid ""
 "Open document read-only, or ignore own file locking and open the document for editing.\n"
 "Select Notify to open read-only and get notified when the document becomes editable."
 msgstr ""
+"Fișierul de document „$(ARG1)” este blocat pentru editare personală pe un alt sistem, deoarece $(ARG2)\n"
+"\n"
+"Deschide documentul în modul doar citire sau ignoră blocarea propriului fișier și deschide documentul pentru editare.\n"
+"Selectează Notificare pentru a deschide în modul doar citire și a primi o notificare când documentul devine editabil."
 
 #. 8mKMg
 #: uui/inc/strings.hrc:34
@@ -675,6 +689,9 @@ msgid ""
 "\n"
 "Close document on other system and retry saving or ignore own file locking and save current document."
 msgstr ""
+"Fișierul de document „$(ARG1)” este blocat pentru editare personală pe un alt sistem din $(ARG2)\n"
+"\n"
+"Închide documentul pe alt sistem și încearcă din nou să salvezi sau ignoră blocarea propriului fișier și salvează documentul curent."
 
 #. ZCJGW
 #: uui/inc/strings.hrc:38
@@ -720,6 +737,9 @@ msgid ""
 "\n"
 "Select Notify to open read-only and get notified when the document becomes editable."
 msgstr ""
+"Fișierul de blocare nu a putut fi creat pentru acces exclusiv de către %PRODUCTNAME, din cauza lipsei permisiunii de a crea un fișier de blocare în locația respectivă sau a lipsei de spațiu liber pe disc.\n"
+"\n"
+"Selectează Notificare pentru a deschide în modul doar citire și a primi o notificare când documentul devine editabil."
 
 #. CaBXF
 #: uui/inc/strings.hrc:47
@@ -731,7 +751,7 @@ msgstr "Deschide doa~r pentru citire"
 #: uui/inc/strings.hrc:48
 msgctxt "STR_LOCKFAILED_OPENREADONLY_NOTIFY_BTN"
 msgid "~Notify"
-msgstr ""
+msgstr "~Notifică"
 
 #. q5Dhj
 #: uui/inc/strings.hrc:50
@@ -740,6 +760,8 @@ msgid ""
 "Document Name: $(ARG1)\n"
 "User Name: $(ARG2)"
 msgstr ""
+"Numele documentui: $(ARG1)\n"
+"Numele utilizatorului:  $(ARG2)"
 
 #. EXAAf
 #: uui/inc/strings.hrc:51
@@ -761,6 +783,9 @@ msgid ""
 "\n"
 "Do you want to save anyway?"
 msgstr ""
+"Fișierul a fost modificat de când a fost deschis pentru editare în %PRODUCTNAME. Salvarea versiunii tale a documentului va suprascrie modificările făcute de alții.\n"
+"\n"
+"Vrei să salvezi oricum?"
 
 #. DGYmK
 #: uui/inc/strings.hrc:55
@@ -784,6 +809,11 @@ msgid ""
 "\n"
 "Try again later to save document or save a copy of that document."
 msgstr ""
+"Fișierul de documentul „$(ARG1)” este blocat pentru editare de către:\n"
+"\n"
+"$(ARG2)\n"
+"\n"
+"Încearcă din nou mai târziu să salvează documentul sau să salvează o copie a documentului respectiv."
 
 #. b3UBG
 #: uui/inc/strings.hrc:59
@@ -795,6 +825,11 @@ msgid ""
 "\n"
 "You may try to ignore the file locking and overwrite the existing document."
 msgstr ""
+"Fișierul de document '$(ARG1)' este blocat pentru editare de către:\n"
+"\n"
+"$(ARG2)\n"
+"\n"
+"Poți încerca să ignori blocarea fișierului și să suprascrii documentul existent."
 
 #. 8JFLZ
 #: uui/inc/strings.hrc:60
@@ -868,7 +903,7 @@ msgstr "Confirmarea parolei nu se potrivește cu parola."
 #: uui/inc/strings.hrc:73
 msgctxt "STR_LOCKCORRUPT_TITLE"
 msgid "Lock file is corrupted"
-msgstr ""
+msgstr "Fișierul de blocare este corupt"
 
 #. nkUGA
 #: uui/inc/strings.hrc:74
@@ -878,6 +913,9 @@ msgid ""
 "\n"
 "Select Notify to open read-only and get notified when the document becomes editable."
 msgstr ""
+"Fișierul de blocare este corupt și probabil gol. Deschiderea documentului în modul doar pentru citire și închiderea acestuia elimină fișierul de blocare corupt.\n"
+"\n"
+"Selectează Notifică pentru a deschide documentul în modul doar pentru citire și a primi o notificare când acesta devine editabil."
 
 #. fKEYB
 #: uui/inc/strings.hrc:75
@@ -889,13 +927,13 @@ msgstr "Deschide doa~r pentru citire"
 #: uui/inc/strings.hrc:76
 msgctxt "STR_LOCKCORRUPT_OPENREADONLY_NOTIFY_BTN"
 msgid "~Notify"
-msgstr ""
+msgstr "~Notifică"
 
 #. rBAR3
 #: uui/inc/strings.hrc:78
 msgctxt "STR_RELOADEDITABLE_TITLE"
 msgid "Document is now editable"
-msgstr ""
+msgstr "Documentul este acum editabil"
 
 #. cVZuC
 #: uui/inc/strings.hrc:79
@@ -905,24 +943,27 @@ msgid ""
 "\n"
 "Reload this document for editing?"
 msgstr ""
+"Fișierul documentului „$(ARG1)” este acum editabil\n"
+"\n"
+"Reîncarci acest document pentru editare?"
 
 #. vynDE
 #: uui/inc/strings.hrc:80
 msgctxt "STR_RELOADEDITABLE_BTN"
 msgid "~Reload"
-msgstr ""
+msgstr "~Reîncarcă"
 
 #. QCVhW
 #: uui/inc/strings.hrc:81
 msgctxt "STR_LOADREADONLY_MSG"
 msgid "The author would like you to open '$(ARG1)' as read-only unless you need to make changes. Open as read-only?"
-msgstr ""
+msgstr "Autorul dorește să deschizi „$(ARG1)” doar ca în modul citire, cu excepția cazului în care trebuie să faci modificări. Îl deschizi doar ca în modul citire?"
 
 #. CjJ2y
 #: uui/inc/strings.hrc:82
 msgctxt "STR_VERIFY_CERT"
 msgid "You need to view the certificate first."
-msgstr ""
+msgstr "Trebuie să vizualizezi mai întâi certificatul."
 
 #. 45x3T
 #: uui/uiconfig/ui/authfallback.ui:8
@@ -946,7 +987,7 @@ msgstr "Selecție filtru"
 #: uui/uiconfig/ui/filterselect.ui:137
 msgctxt "filterselect|extended_tip|filters"
 msgid "Select the import filter for the file that you want to open."
-msgstr ""
+msgstr "Selectează filtrul de importare pentru fișierul pe care vrei să îl deschizi."
 
 #. 8o9Bq
 #: uui/uiconfig/ui/logindialog.ui:8
@@ -964,7 +1005,7 @@ msgstr "_Utilizare credențiale sistem"
 #: uui/uiconfig/ui/logindialog.ui:99
 msgctxt "logindialog|remember"
 msgid "_Remember credentials"
-msgstr ""
+msgstr "_Reține acreditările"
 
 #. pryAC
 #: uui/uiconfig/ui/logindialog.ui:129
@@ -1076,25 +1117,25 @@ msgstr "_Aveți întotdeauna încredere în macrocomenzile de la această sursă
 #: uui/uiconfig/ui/macrowarnmedium.ui:128
 msgctxt "macrowarnmedium|viewSignsButton"
 msgid "_Show Signatures…"
-msgstr ""
+msgstr "Afișează _semnăturile…"
 
 #. fCrAW
 #: uui/uiconfig/ui/macrowarnmedium.ui:145
 msgctxt "macrowarnmedium|viewCertButton"
 msgid "_Show Certificate…"
-msgstr ""
+msgstr "Afișea_ză certificatul…"
 
 #. sd5Xp
 #: uui/uiconfig/ui/macrowarnmedium.ui:171
 msgctxt "macrowarnmedium|certNoLongerValidLabel"
 msgid "Warning: The certificate is no longer valid."
-msgstr ""
+msgstr "Atenție: Certificatul nu mai este valid."
 
 #. K2umf
 #: uui/uiconfig/ui/macrowarnmedium.ui:183
 msgctxt "macrowarnmedium|certNotYetValidLabel"
 msgid "Warning: The certificate is not yet valid."
-msgstr ""
+msgstr "Atenție: Certificatul încă nu este valid."
 
 #. BABeG
 #: uui/uiconfig/ui/masterpassworddlg.ui:8
@@ -1106,19 +1147,19 @@ msgstr "Introduceți parola principală"
 #: uui/uiconfig/ui/masterpassworddlg.ui:87
 msgctxt "masterpassworddlg|label1"
 msgid "_Enter password:"
-msgstr "_Introduceți parola:"
+msgstr "_Introdu parola:"
 
 #. bRcP4
 #: uui/uiconfig/ui/masterpassworddlg.ui:110
 msgctxt "masterpassworddlg|extended_tip|password"
 msgid "Type a password. A password is case sensitive."
-msgstr ""
+msgstr "Introdu o parolă. O parolă ține cont de majuscule/minuscule."
 
 #. Twvfe
 #: uui/uiconfig/ui/masterpassworddlg.ui:136
 msgctxt "extended_tip|MasterPasswordDialog"
 msgid "Enter the master password to continue."
-msgstr ""
+msgstr "Introdu parola principală pentru a continua."
 
 #. qAMT2
 #: uui/uiconfig/ui/password.ui:18
@@ -1130,37 +1171,37 @@ msgstr "Setare parolă"
 #: uui/uiconfig/ui/password.ui:133
 msgctxt "password|extended_tip|newpassEntry"
 msgid "Type a password. A password is case sensitive."
-msgstr ""
+msgstr "Introdu o parolă. O parolă ține cont de majuscule/minuscule."
 
 #. G9hkG
 #: uui/uiconfig/ui/password.ui:151
 msgctxt "password|togglebt1-atkobject"
 msgid "Show Characters"
-msgstr ""
+msgstr "Arată caracterele"
 
 #. rQrpP
 #: uui/uiconfig/ui/password.ui:152
 msgctxt "password|extended_tip|togglebt1"
 msgid "Show or Hide password characters"
-msgstr ""
+msgstr "Afișează sau ascunde caracterele parolei"
 
 #. QbKd2
 #: uui/uiconfig/ui/password.ui:183
 msgctxt "password|extended_tip|confirmpassEntry"
 msgid "Re-enter the password."
-msgstr ""
+msgstr "Reintrodu parola"
 
 #. FRfH6
 #: uui/uiconfig/ui/password.ui:201
 msgctxt "password|togglebt2-atkobject"
 msgid "Show Characters"
-msgstr ""
+msgstr "Afișează caracterele"
 
 #. 3DHHi
 #: uui/uiconfig/ui/password.ui:202
 msgctxt "password|extended_tip|togglebt2"
 msgid "Show or Hide password characters"
-msgstr ""
+msgstr "Afișează sau ascunde caracterele parolei"
 
 #. ioiyr
 #: uui/uiconfig/ui/setmasterpassworddlg.ui:8
@@ -1178,19 +1219,19 @@ msgstr "Parolele pentru conexiunile la internet sunt protejate de parola princip
 #: uui/uiconfig/ui/setmasterpassworddlg.ui:111
 msgctxt "setmasterpassworddlg|label2"
 msgid "_Enter password:"
-msgstr "_Introduceți parola:"
+msgstr "_Introdu parola:"
 
 #. AG7BG
 #: uui/uiconfig/ui/setmasterpassworddlg.ui:151
 msgctxt "extended_tip|password1"
 msgid "Enter the master password."
-msgstr ""
+msgstr "Introdu parola principală"
 
 #. 7EACD
 #: uui/uiconfig/ui/setmasterpassworddlg.ui:165
 msgctxt "setmasterpassworddlg|password1levelbar"
 msgid "Bar that displays password strength visually."
-msgstr ""
+msgstr "Bară care afișează vizual puterea parolei."
 
 #. yaAhh
 #: uui/uiconfig/ui/setmasterpassworddlg.ui:177
@@ -1202,7 +1243,7 @@ msgstr "_Reintroduceți parola:"
 #: uui/uiconfig/ui/setmasterpassworddlg.ui:198
 msgctxt "extended_tip|password2"
 msgid "Enter the master password again."
-msgstr ""
+msgstr "Introdu din nou parola principală."
 
 #. aNzdJ
 #: uui/uiconfig/ui/setmasterpassworddlg.ui:213
@@ -1214,7 +1255,7 @@ msgstr "Atenție: Dacă uitați parola principală, nu veți putea accesa nicio 
 #: uui/uiconfig/ui/setmasterpassworddlg.ui:243
 msgctxt "setmasterpassworddlg|extended_tip|SetMasterPasswordDialog"
 msgid "Assign a master password to protect the access to a saved password."
-msgstr ""
+msgstr "Atribuie o parolă principală pentru a proteja accesul la o parolă salvată."
 
 #. dAeLu
 #: uui/uiconfig/ui/simplenameclash.ui:8
