@@ -1,16 +1,16 @@
 #. extracted from helpcontent2/source/text/sbasic/shared/03
 msgid ""
 msgstr ""
-"Project-Id-Version: LibreOffice 26.2\n"
+"Project-Id-Version: LibreOffice 26.8\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
-"POT-Creation-Date: 2025-12-10 15:42+0100\n"
-"PO-Revision-Date: 2025-12-11 18:38+0200\n"
+"POT-Creation-Date: 2026-05-26 16:03+0200\n"
+"PO-Revision-Date: 2026-05-28 10:02+0200\n"
 "Last-Translator: Martin Srebotnjak <miles@filmsi.net>\n"
 "Language-Team: sl.libreoffice.org\n"
+"Language: sl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: sl\n"
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 0 : n%100==2 ? 1 : n%100==3 || n%100==4 ? 2 : 3);\n"
 "X-Generator: Virtaal 0.7.1\n"
 "X-Accelerator-Marker: ~\n"
@@ -988,6 +988,14 @@ msgstr "Elementi polja so lahko vrednosti poljubne vrste, vključno s (pod)polji
 #: sf_array.xhp
 msgctxt ""
 "sf_array.xhp\n"
+"par_id831765200111034\n"
+"help.text"
+msgid "One-dimensional arrays containing only one-dimensional subarrays are called below <literal>data arrays</literal>. They are particularly suited for exchanges of tabular data with <literal>Python</literal> scripts and <literal>Calc</literal> sheets."
+msgstr "Enodimenzionalna polja, ki vsebujejo samo enodimenzionalna podpolja, so v nadaljevanju poimenovana <literal>podatkovna polja</literal>. Posebej primerna so za izmenjavo tabuliranih podatkov s skripti <literal>Python</literal> in delovnimi listi <literal>Calc</literal>."
+
+#: sf_array.xhp
+msgctxt ""
+"sf_array.xhp\n"
 "hd_id981586595097630\n"
 "help.text"
 msgid "Service invocation"
@@ -1023,7 +1031,7 @@ msgctxt ""
 "par_id571609956486468\n"
 "help.text"
 msgid "Because Python has built-in list and tuple support, most of the methods in the <literal>Array</literal> service are available for Basic scripts only. The only exception is <literal>ImportFromCSVFile</literal> which is supported in both Basic and Python."
-msgstr "Python ima vgrajeno podporo za sezname in pare, zato je večina metod iz storitve <literal>Array</literal> na voljo le za skripte Basic. Edina izjema je <literal>ImportFromCSVFile</literal>, ki je podprta tako v Basicu kot Pythonu."
+msgstr "Python ima vgrajeno podporo za sezname in n-terice, zato je večina metod iz storitve <literal>Array</literal> na voljo le za skripte Basic. Edina izjema je <literal>ImportFromCSVFile</literal>, ki je podprta tako v Basicu kot Pythonu."
 
 #: sf_array.xhp
 msgctxt ""
@@ -1156,6 +1164,142 @@ msgstr "<emph>sortorder</emph>: vrstni red razvrščanja, možne vrednosti so \"
 #: sf_array.xhp
 msgctxt ""
 "sf_array.xhp\n"
+"bm_id741765204030416\n"
+"help.text"
+msgid "<bookmark_value>Array service;ConvertFromDataArray</bookmark_value>"
+msgstr "<bookmark_value>storitev Array;ConvertFromDataArray</bookmark_value>"
+
+#: sf_array.xhp
+msgctxt ""
+"sf_array.xhp\n"
+"par_id41765204240195\n"
+"help.text"
+msgid "Convert a data array to a <literal>Basic</literal> array.<br/>A data array is an array of subarrays. On request, the individual output items are reduced to strings or doubles only."
+msgstr "Pretvorite podatkovno polje v polje <literal>Basic</literal>.<br/>Podatkovno polje je polje podpolj. Na zahtevo so posamezni izhodni elementi reducirani na nize ali samo doubles/pare/števila s plavajočo vejico z dvojno natančnostjo."
+
+#: sf_array.xhp
+msgctxt ""
+"sf_array.xhp\n"
+"par_id411765207592513\n"
+"help.text"
+msgid "The method returns a scalar, a zero-based 1D array or a zero-based 2D array.<br/>The number of columns in the resulting 2D array is equal to the number of items in the 1st subarray. If next subarrays have a different size, next rows will be complemented with the <literal>fillvalue</literal> argument or truncated."
+msgstr "Metoda vrne skalar, ničelno osnovano enodimenzionalno polje ali ničelno osnovano dvodimenzionalno polje.<br/>Število stolpcev v rezultatnem dvodimenzionalnem polju je enako številu elementov v prvem podpolju. Če so naslednja podpolja različne velikosti, bodo naslednje vrstice komplementirane z argumentom <literal>fillvalue</literal> ali porezane."
+
+#: sf_array.xhp
+msgctxt ""
+"sf_array.xhp\n"
+"par_id561581234214489\n"
+"help.text"
+msgid "<emph>dataarray</emph>: An array of subarrays. Array and subarrays must be zero-based.<br/>Typically a data array is either output by"
+msgstr "<emph>dataarray</emph>: polje podpolj. Polja in podpolja morajo biti na  ničelni osnovi.<br/>Tipično je podatkovno polje izhod"
+
+#: sf_array.xhp
+msgctxt ""
+"sf_array.xhp\n"
+"par_id151765206451449\n"
+"help.text"
+msgid "the <link href=\"text/sbasic/shared/03/sf_session.xhp#ExecuteCalcFunction\">session.ExecuteCalcFunction()</link> method"
+msgstr "metode <link href=\"text/sbasic/shared/03/sf_session.xhp#ExecuteCalcFunction\">session.ExecuteCalcFunction()</link>"
+
+#: sf_array.xhp
+msgctxt ""
+"sf_array.xhp\n"
+"par_id851765206498930\n"
+"help.text"
+msgid "a Python script returning a tuple of tuples"
+msgstr "skripta v Pyhonu, ki vrne n-terico n-teric"
+
+#: sf_array.xhp
+msgctxt ""
+"sf_array.xhp\n"
+"par_id51765206545727\n"
+"help.text"
+msgid "the <literal>getDataArray()</literal> method from the <literal>com.sun.star.sheet.XCellRangeData</literal> interface"
+msgstr "metoda <literal>getDataArray()</literal> iz vmesnika <literal>com.sun.star.sheet.XCellRangeData</literal>"
+
+#: sf_array.xhp
+msgctxt ""
+"sf_array.xhp\n"
+"par_id361765207142576\n"
+"help.text"
+msgid "<emph>isrange</emph>: When <literal>True</literal> (default = <literal>False</literal>), the items are converted to strings or doubles."
+msgstr "<emph>isrange</emph>: če je <literal>True</literal> (privzeta vrednost je <literal>False</literal>), se vsi elementi pretvorijo v nize ali doubles/pare/števila plavajoče vejice z dvojno natančnostjo."
+
+#: sf_array.xhp
+msgctxt ""
+"sf_array.xhp\n"
+"par_id861765207423152\n"
+"help.text"
+msgid "<emph>fillvalue</emph>: How to replace missing items. Default = the empty string."
+msgstr "<emph>fillvalue</emph>: kako nadomestiti manjkajoče elemente. Privzeta vrednost je prazen niz."
+
+#: sf_array.xhp
+msgctxt ""
+"sf_array.xhp\n"
+"bm_id741953578080416\n"
+"help.text"
+msgid "<bookmark_value>Array service;ConvertToDataArray</bookmark_value>"
+msgstr "<bookmark_value>storitev Array;ConvertToDataArray</bookmark_value>"
+
+#: sf_array.xhp
+msgctxt ""
+"sf_array.xhp\n"
+"par_id41796324240195\n"
+"help.text"
+msgid "Create a data array from a scalar, a 1D array or a 2D array.<br/>A data array is a zero-based array of zero-based subarrays. On request, the individual output items are reduced to strings or doubles only."
+msgstr "Ustvarite podatkovno polje iz skalarja, enodimenzionalnega polja ali dvodimenzionalnega polja.<br/>Podatkovno polje je ničelno osnovano polje ničelno zasnovanih podpolj. Na zahtevo so posamezni izhodni elementi reducirani na zgolj nize ali števila z dvojno natančnostjo."
+
+#: sf_array.xhp
+msgctxt ""
+"sf_array.xhp\n"
+"par_id561781234214489\n"
+"help.text"
+msgid "The returned data array is typically used as"
+msgstr "Vrnjeno podatkovno polje je običajno uporabljeno kot"
+
+#: sf_array.xhp
+msgctxt ""
+"sf_array.xhp\n"
+"par_id851769514498930\n"
+"help.text"
+msgid "a tuple of (sub)tuples passed to a Python script"
+msgstr "n-terica (pod)n-teric, podanih skriptu Python"
+
+#: sf_array.xhp
+msgctxt ""
+"sf_array.xhp\n"
+"par_id51769437545727\n"
+"help.text"
+msgid "argument of the <literal>setDataArray()</literal> method from the <literal>com.sun.star.sheet.XCellRangeData</literal> interface"
+msgstr "argument metode <literal>setDataArray()</literal> iz vmesnika <literal>com.sun.star.sheet.XCellRangeData</literal>"
+
+#: sf_array.xhp
+msgctxt ""
+"sf_array.xhp\n"
+"par_id281765284424698\n"
+"help.text"
+msgid "<emph>data</emph>: The input scalar, 1D or 2D array."
+msgstr "<emph>data</emph>: vhodni skalar, 1- ali 2-dimenzionalna matrika."
+
+#: sf_array.xhp
+msgctxt ""
+"sf_array.xhp\n"
+"par_id361765207357976\n"
+"help.text"
+msgid "<emph>isrange</emph>: When <literal>True</literal> (default = <literal>False</literal>), the array items are stored as (possibly empty) strings or doubles only into the data array."
+msgstr "<emph>isrange</emph>: če je <literal>True</literal> (privzeta vrednost je <literal>False</literal>), so elementi polja shranjeni samo kot (morda prazni) nizi ali pari/števila plavajoče vejice z dvojno natančnostjo v podatkovnem polju."
+
+#: sf_array.xhp
+msgctxt ""
+"sf_array.xhp\n"
+"par_id286465207423152\n"
+"help.text"
+msgid "<emph>rows, columns</emph>: The number of rows or columns of the returned data array. When they exceed the limits of <literal>data</literal>, fill with zero-length strings. If <literal>rows</literal> = 1 and the input array is a vector, the data array is aligned horizontally (by default, vectors are aligned vertically). When absent, the size of the output is determined by the input array."
+msgstr "<emph>rows, columns</emph>: število vrstic ali stolpcev vrnjenega podatkovnega polja. Če presegajo meje <literal>data</literal>, se zapolnijo z nizi ničelne dolžine. Če je <literal>rows</literal> = 1 in je vhodno polje vektor, se podatkovno polje poravna vodoravno (privzeto so vektorji poravnani navpično). Če manjka, velikost izhoda določa vhodno polje."
+
+#: sf_array.xhp
+msgctxt ""
+"sf_array.xhp\n"
 "par_id71582557214489\n"
 "help.text"
 msgid "Store the content of a 2-columns array into a <link href=\"text/sbasic/shared/03/sf_dictionary.xhp\">ScriptForge.Dictionary</link> object.      <br/>The key will be extracted from the first column, the item from the second."
@@ -1184,6 +1328,62 @@ msgctxt ""
 "help.text"
 msgid "The second column contains the data that will be associated to the corresponding label in the dictionary."
 msgstr "Drugi stolpec vsebuje podatke, ki bodo povezani z ustrezno oznako v slovarju."
+
+#: sf_array.xhp
+msgctxt ""
+"sf_array.xhp\n"
+"bm_id741953548620416\n"
+"help.text"
+msgid "<bookmark_value>Array service;ConvertToRange</bookmark_value>"
+msgstr "<bookmark_value>storitev Array;ConvertToRange</bookmark_value>"
+
+#: sf_array.xhp
+msgctxt ""
+"sf_array.xhp\n"
+"par_id41796364640195\n"
+"help.text"
+msgid "Create a valid cells range content from a scalar, a 1D array, a 2D array or a data array (a data array is a zero-based array of zero-based subarrays). The lower bounds of arrays are preserved in the output."
+msgstr "Ustvarite vsebino veljavnega obsega celic iz skalarja, enodimenzionalnega polja, dvodimenzionalnega polja ali podatkovnega polja (podatkovno polje je ničelno osnovano polje ničelno osnovanih podpolj). Nižje meje polj se ohranijo v izhodu."
+
+#: sf_array.xhp
+msgctxt ""
+"sf_array.xhp\n"
+"par_id311765287171028\n"
+"help.text"
+msgid "The individual items are always reduced to strings or doubles, including booleans or dates."
+msgstr "Posamezni elementi so vedno reducirani na nize ali pare/števila plavajoče vejice z dvojno natančnostjo, vključno z logičnimi vrednostmi in datumi."
+
+#: sf_array.xhp
+msgctxt ""
+"sf_array.xhp\n"
+"par_id561786541214489\n"
+"help.text"
+msgid "The returned scalar or 2D array is a valid argument of the <link href=\"text/sbasic/shared/03/sf_session.xhp#ExecuteCalcFunction\">session.ExecuteCalcFunction()</link> method. This is particularly useful in the context of [complex] array functions."
+msgstr "Vrnjeni skalar ali dvodimenzionalno polje je veljaven argument metode <link href=\"text/sbasic/shared/03/sf_session.xhp#ExecuteCalcFunction\">session.ExecuteCalcFunction()</link>. To je še posebej uporabno v kontekstu [kompleksnih] matričnih funkcij."
+
+#: sf_array.xhp
+msgctxt ""
+"sf_array.xhp\n"
+"par_id281257984424698\n"
+"help.text"
+msgid "<emph>data</emph>: The input scalar, 1D array,2D array or data array."
+msgstr "<emph>data</emph>: vhodni skalar, eno-, dvodimenzionalno polje ali podatkovno polje."
+
+#: sf_array.xhp
+msgctxt ""
+"sf_array.xhp\n"
+"par_id361765202557976\n"
+"help.text"
+msgid "<emph>direction</emph>: The alignment of the range when it is a vector, either \"V\"[ertical, default] or \"H\"[orizontal]."
+msgstr "<emph>direction</emph>: poravnava obsega, ko gre za vektor, možne vrednosti so \"V\" (navpično, privzeto) ali \"H\" (vodoravno)."
+
+#: sf_array.xhp
+msgctxt ""
+"sf_array.xhp\n"
+"bas_id681765288940028\n"
+"help.text"
+msgid "matrix = SF_Array.AppendRow(matrix, Array(7, 8, -9))"
+msgstr "matrix = SF_Array.AppendRow(matrix, Array(7, 8, -9))"
 
 #: sf_array.xhp
 msgctxt ""
@@ -3500,6 +3700,46 @@ msgstr "Vrne celoštevilsko vrednost za barvo, sestavljeno iz rdeče, zelene in 
 #: sf_basic.xhp
 msgctxt ""
 "sf_basic.xhp\n"
+"bm_id631776436784840\n"
+"help.text"
+msgid "<bookmark_value>Basic service;Wait</bookmark_value>"
+msgstr "<bookmark_value>storitev Basic;Wait</bookmark_value>"
+
+#: sf_basic.xhp
+msgctxt ""
+"sf_basic.xhp\n"
+"par_id281776436891998\n"
+"help.text"
+msgid "Convenient function to replicate the Basic Wait() function in Python scripts"
+msgstr "Priročna funkcija za nadomeščanje funkcije Basica Wait() v skriptih Python"
+
+#: sf_basic.xhp
+msgctxt ""
+"sf_basic.xhp\n"
+"par_id191776437132275\n"
+"help.text"
+msgid "This method is normally not necessary. But constructions like:"
+msgstr "Ta metoda običajno ni potrebna. A sestavi, kot je:"
+
+#: sf_basic.xhp
+msgctxt ""
+"sf_basic.xhp\n"
+"par_id801776437659657\n"
+"help.text"
+msgid "have the drawback to often freeze the %PRODUCTNAME user interface. While the following code might be a good alternative:"
+msgstr "imajo slabo plat, da pogosto zamrznejo uporabniški vmesnik %PRODUCTNAME. Naslednja koda pa je lahko dobra alternativa:"
+
+#: sf_basic.xhp
+msgctxt ""
+"sf_basic.xhp\n"
+"par_id11776438005743\n"
+"help.text"
+msgid "<emph>millisec</emph>: the amount of time (in milliseconds) to wait before the program is continued."
+msgstr "<emph>millisec</emph>: količina časa (v milisekundah) za čakanje, preden program nadaljuje z delom."
+
+#: sf_basic.xhp
+msgctxt ""
+"sf_basic.xhp\n"
 "bm_id81618907851793\n"
 "help.text"
 msgid "<bookmark_value>Basic service;Xray</bookmark_value>"
@@ -3592,6 +3832,14 @@ msgctxt ""
 "help.text"
 msgid "Copying and importing massive amounts of data"
 msgstr "kopiranje in uvažanje ogromnih količin podatkov."
+
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id721767801758480\n"
+"help.text"
+msgid "Simple cell ranges formatting"
+msgstr "Oblikovanje enostavnih obsegov celic"
 
 #: sf_calc.xhp
 msgctxt ""
@@ -4068,6 +4316,38 @@ msgstr "Enojni izbrani obseg kot niz ali seznam izbranih obsegov kot polje."
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
+"par_id301592407166042\n"
+"help.text"
+msgid "Yes"
+msgstr "Da"
+
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id81592407275611\n"
+"help.text"
+msgid "None"
+msgstr "Brez"
+
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id59159251716522\n"
+"help.text"
+msgid "String or array of strings"
+msgstr "Niz ali polje nizov"
+
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id85159350716560\n"
+"help.text"
+msgid "Returns the full sorted list of all named ranges in the document. The names defined in a single sheet are qualified with the sheet name."
+msgstr "Vrne polni razvrščeni seznam vseh poimenovanih obsegov v dokumentu. Imena, definirana na enem samem delovnem listu, se kvalificirajo z imenom delovnega lista."
+
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
 "par_id301592407165606\n"
 "help.text"
 msgid "Yes"
@@ -4412,6 +4692,30 @@ msgstr "Predmet UNO <literal>com.sun.star.Table.XCellRange</literal>."
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
+"par_id393214315404944\n"
+"help.text"
+msgid "Yes"
+msgstr "Da"
+
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id1001592316547525\n"
+"help.text"
+msgid "RangeName As String"
+msgstr "ImeObsega As String"
+
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id321592315406565\n"
+"help.text"
+msgid "A <literal>com.sun.star.awt.Rectangle</literal> UNO structure, describing, in pixels, the area on the screen where the range is located."
+msgstr "Struktura UNO <literal>com.sun.star.awt.Rectangle</literal>, ki opisuje v slikovnih točkah področje zaslona, na katerem se obseg nahaja."
+
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
 "par_id501592315567199\n"
 "help.text"
 msgid "Yes"
@@ -4572,6 +4876,190 @@ msgstr "Aktiviranje delovnega lista je smiselno le za delo z dokumentom programa
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
+"par_id241767804819943\n"
+"help.text"
+msgid "Align horizontally or vertically a range of cells."
+msgstr "Poravna obseg celic vodoravno ali navpično."
+
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id361767804834191\n"
+"help.text"
+msgid "A filter formula can be specified to determine which cells shall be affected."
+msgstr "Določite lahko formulo filtra, ki določa, na katere celice naj vpliva."
+
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id691767804870278\n"
+"help.text"
+msgid "<emph>targetrange</emph>: The cell or the range as a string in which cells should be re-aligned."
+msgstr "<emph>targetrange</emph>: celica ali obseg kot niz, v katerem naj bodo celice ponovno poravnane."
+
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id191767876299030\n"
+"help.text"
+msgid "<emph>alignment</emph>: a string combining 1 or 2 of next upper-case characters (other characters are ignored):"
+msgstr "<emph>alignment</emph>: niz, ki združuje 1 ali 2 od naslednjih velikih črk (drugi znaki so prezrti):"
+
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id861767876487227\n"
+"help.text"
+msgid "L, R or C: left, right or center horizontally."
+msgstr "L, R ali C: levo (L), desno (D) ali vodoravno na sredi (C)."
+
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id1001767881841565\n"
+"help.text"
+msgid "B, T or M: bottom, top or center vertically (middle)."
+msgstr "B, T ali M: na dnu (B), vrhu (T) ali navpično na sredi (M)."
+
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"bas_id41176780499844\n"
+"help.text"
+msgid "' Center all numeric cells, both horizontally and vertically."
+msgstr "' Sredini vse številske celice, tako vodoravno kot navpično."
+
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"bas_id691767805014441\n"
+"help.text"
+msgid "doc.AlignRange(\"SheetX.A1:J30\", \"Middle,Center\", filterformula := \"=IsNumeric(A1)\", filterscope := \"CELL\")"
+msgstr "doc.AlignRange(\"DelovniListX.A1:J30\", \"Middle,Center\", filterformula := \"=IsNumeric(A1)\", filterscope := \"CELL\")"
+
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"pyc_id251767805127221\n"
+"help.text"
+msgid "# Center all numeric cells, both horizontally and vertically."
+msgstr "# Sredini vse številske celice, tako vodoravno kot navpično."
+
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"pyc_id281767805141277\n"
+"help.text"
+msgid "doc.AlignRange('SheetX.A1:J30', 'Middle,Center', filterformula = '=IsNumeric(A1)', filterscope = 'CELL')"
+msgstr "doc.AlignRange('DelovniListX.A1:J30', 'Middle,Center', filterformula = '=IsNumeric(A1)', filterscope = 'CELL')"
+
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id961767883490277\n"
+"help.text"
+msgid "Apply within and around a range of cells a set of line borders."
+msgstr "V in okoli obsega celic uveljavi nabor črtnih obrob."
+
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id881767883501990\n"
+"help.text"
+msgid "The impacted cells may be determined with a filter formula and its scope."
+msgstr "Prizadete celice lahko določite s formulo filtra in njenim dosegom."
+
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id21767883519188\n"
+"help.text"
+msgid "All the borders have the same standard width, style and color. Pre-existing border lines in the impacted cells, rows or columns are first cleared. Other cells in the range are left untouched."
+msgstr "Vse obrobe imajo enako standardno širino, slog in barvo. Predhodno obstoječe črte obrob v prizadetih celicah, vrsticah in stolpcih se najprej počistijo. Druge celice v obsegu ostanejo nedotaknjene."
+
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id511767883610363\n"
+"help.text"
+msgid "To clear the full range set <literal>border</literal> to \"\" and skip the <literal>filterformula</literal> argument."
+msgstr "Da počistite polni nabor obsega <literal>border</literal> na \"\" in preskoči argument <literal>filterformula</literal>."
+
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id811767884294334\n"
+"help.text"
+msgid "<emph>targetrange</emph>: The cell or the range as a string on which borders should be applied."
+msgstr "<emph>targetrange</emph>: celica ali obseg kot niz, v katerem naj bodo uveljavljene obrobe."
+
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id511767884331312\n"
+"help.text"
+msgid "<emph>border</emph>: A string combining next upper-case characters (other characters are ignored):"
+msgstr "<emph>border</emph>: niz, ki vsebuje kombinacijo naslednjih velikih črk (drugi znaki so prezrti):"
+
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id641767884455599\n"
+"help.text"
+msgid "B, L, T, R: bottom, left, top, right outer lines."
+msgstr "B (za Bottom), L (Left), T (Top), R (Right): spodnje, leve, vrhnje, leve zunanje črte."
+
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id531767884469933\n"
+"help.text"
+msgid "H, V: horizontal, vertical inner lines."
+msgstr "H (Horizontal), V (Vertical): vodoravne, navpične notranje črte."
+
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id91767884600419\n"
+"help.text"
+msgid "U, D: bottom-up, top-down diagonals."
+msgstr "U, D: diagonala od spodaj navzgor (U), od zgoraj navzdol (D)."
+
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"bas_id671767884770350\n"
+"help.text"
+msgid "' Border all numeric cells with a bottom line, including the horizontal inner lines."
+msgstr "' Obrobi vse številske celice s spodnjo črto, vključno z vodoravnimi notranjimi črtami."
+
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"bas_id741767884782255\n"
+"help.text"
+msgid "doc.BorderRange(\"SheetX.A1:J30\", \"HB\", filterformula := \"=IsNumeric(A1)\", filterscope := \"CELL\")"
+msgstr "doc.BorderRange(\"DelovniListX.A1:J30\", \"HB\", filterformula := \"=IsNumeric(A1)\", filterscope := \"CELL\")"
+
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"pyc_id891767884794918\n"
+"help.text"
+msgid "# Border all numeric cells with a bottom line, including the horizontal inner lines."
+msgstr "# Obrobi vse številske celice s spodnjo črto, vključno z vodoravnimi notranjimi črtami."
+
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"pyc_id751767884803859\n"
+"help.text"
+msgid "doc.BorderRange('SheetX.A1:J30', 'HB', filterformula = '=IsNumeric(A1)', filterscope = 'CELL')"
+msgstr "doc.BorderRange('DelovniListX.A1:J30', 'HB', filterformula = '=IsNumeric(A1)', filterscope = 'CELL')"
+
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
 "par_id93158919969856\n"
 "help.text"
 msgid "Returns either the list with the names of all chart objects in a given sheet or a single <literal>Chart</literal> service instance."
@@ -4654,7 +5142,7 @@ msgctxt ""
 "sf_calc.xhp\n"
 "par_id441592919577809\n"
 "help.text"
-msgid "<emph>range:</emph> The range to be cleared, as a string."
+msgid "<emph>range</emph>: The range to be cleared, as a string."
 msgstr "<emph>range</emph>: obseg, ki bo počiščen, kot niz."
 
 #: sf_calc.xhp
@@ -4662,7 +5150,7 @@ msgctxt ""
 "sf_calc.xhp\n"
 "par_id351670939954166\n"
 "help.text"
-msgid "<emph>filterformula:</emph> A Calc formula that shall be applied to the given range to determine which cells will be affected. The specified formula must return <literal>True</literal> or <literal>False</literal>. If this argument is not specified, then all cells in the range are affected."
+msgid "<emph>filterformula</emph>: A Calc formula that shall be applied to the given range to determine which cells will be affected. The specified formula must return <literal>True</literal> or <literal>False</literal>. If this argument is not specified, then all cells in the range are affected."
 msgstr "<emph>filterformula</emph>: formula programa Calc, ki deluje na danem obsegu in določa, na katere celice bo vplivalo. Navedena formula mora vrniti <literal>True</literal> ali <literal>False</literal>. Če ta argument ni naveden, bo vplivalo na vse celice v obsegu."
 
 #: sf_calc.xhp
@@ -4670,7 +5158,7 @@ msgctxt ""
 "sf_calc.xhp\n"
 "par_id461670939954392\n"
 "help.text"
-msgid "<emph>filterscope:</emph> Determines how <literal>filterformula</literal> is expanded to the given range. This argument is mandatory if a <literal>filterformula</literal> is specified. The following values are accepted:"
+msgid "<emph>filterscope</emph>: Determines how <literal>filterformula</literal> is expanded to the given range. This argument is mandatory if a <literal>filterformula</literal> is specified. The following values are accepted:"
 msgstr "<emph>filterscope</emph>: določa, kako se <literal>filterformula</literal> širi na dani obseg. Ta argument je obvezen, če je določena formula <literal>filterformula</literal>. Sprejema naslednje vrednosti:"
 
 #: sf_calc.xhp
@@ -4678,7 +5166,7 @@ msgctxt ""
 "sf_calc.xhp\n"
 "par_id991670941074213\n"
 "help.text"
-msgid "<emph>\"CELL\":</emph> The formula specified in the <literal>filterformula</literal> argument is expanded once for each cell in <literal>range</literal>."
+msgid "<emph>\"CELL\"</emph>: The formula specified in the <literal>filterformula</literal> argument is expanded once for each cell in <literal>range</literal>."
 msgstr "<emph>\"CELL\"</emph>: formula, navedena v argumentu <literal>filterformula</literal>, se širi enkrat za vsako celico v obsegu <literal>range</literal>."
 
 #: sf_calc.xhp
@@ -4686,7 +5174,7 @@ msgctxt ""
 "sf_calc.xhp\n"
 "par_id911670941074926\n"
 "help.text"
-msgid "<emph>\"ROW\":</emph> The formula specified in the <literal>filterformula</literal> argument is expanded once for each row in <literal>range</literal>."
+msgid "<emph>\"ROW\"</emph>: The formula specified in the <literal>filterformula</literal> argument is expanded once for each row in <literal>range</literal>."
 msgstr "<emph>\"ROW\"</emph>: formula, navedena v argumentu <literal>filterformula</literal>, se širi enkrat za vsako vrstico v obsegu <literal>range</literal>."
 
 #: sf_calc.xhp
@@ -4694,7 +5182,7 @@ msgctxt ""
 "sf_calc.xhp\n"
 "par_id581670941075101\n"
 "help.text"
-msgid "<emph>\"COLUMN\":</emph> The formula specified in the <literal>filterformula</literal> argument is expanded once for each column in <literal>range</literal>."
+msgid "<emph>\"COLUMN\"</emph>: The formula specified in the <literal>filterformula</literal> argument is expanded once for each column in <literal>range</literal>."
 msgstr "<emph>\"COLUMN\"</emph>: formula, navedena v argumentu <literal>filterformula</literal>, se širi enkrat za vsak stolpec v obsegu <literal>range</literal>."
 
 #: sf_calc.xhp
@@ -4742,8 +5230,8 @@ msgctxt ""
 "sf_calc.xhp\n"
 "bas_id521592919518126\n"
 "help.text"
-msgid "oDoc.ClearAll(\"SheetX.A1:J10\", \"=SUM(SheetX.A1:J1)>100\", \"ROW\")"
-msgstr "oDoc.ClearAll(\"DelovniListX.A1:J10\", \"=SUM(DelovniListX.A1:J1)>100\", \"ROW\")"
+msgid "oDoc.ClearAll(\"SheetX.A1:J10\", \"=SUM(SheetX.A1:J1)>500\", \"ROW\")"
+msgstr "oDoc.ClearAll(\"DelovniListX.A1:J10\", \"=SUM(DelovniListX.A1:J1)>500\", \"ROW\")"
 
 #: sf_calc.xhp
 msgctxt ""
@@ -4758,8 +5246,8 @@ msgctxt ""
 "sf_calc.xhp\n"
 "bas_id521592919577149\n"
 "help.text"
-msgid "oDoc.ClearAll(\"SheetX.A1:J10\", \"=SUM(SheetX.A1:A10)>100\", \"COLUMN\")"
-msgstr "oDoc.ClearAll(\"DelovniListX.A1:J10\", \"=SUM(DelovniListX.A1:A10)>100\", \"COLUMN\")"
+msgid "oDoc.ClearAll(\"SheetX.A1:J10\", \"=SUM(SheetX.A1:A10)>500\", \"COLUMN\")"
+msgstr "oDoc.ClearAll(\"DelovniListX.A1:J10\", \"=SUM(DelovniListX.A1:A10)>500\", \"COLUMN\")"
 
 #: sf_calc.xhp
 msgctxt ""
@@ -4782,24 +5270,24 @@ msgctxt ""
 "sf_calc.xhp\n"
 "pyc_id261670942025274\n"
 "help.text"
-msgid "myDoc.ClearAll(\"SheetX.A1:J10\", \"=SUM(SheetX.A1:J1)>100\", \"ROW\")"
-msgstr "mojDokument.ClearAll(\"DelovniListX.A1:J10\", \"=SUM(DelovniListX.A1:J1)>100\", \"ROW\")"
+msgid "myDoc.ClearAll(\"SheetX.A1:J10\", \"=SUM(SheetX.A1:J1)>500\", \"ROW\")"
+msgstr "mojDokument.ClearAll(\"DelovniListX.A1:J10\", \"=SUM(DelovniListX.A1:J1)>500\", \"ROW\")"
 
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "pyc_id711670942025635\n"
 "help.text"
-msgid "myDoc.ClearAll(\"SheetX.A1:J10\", \"=SUM(SheetX.A1:A10)>100\", \"COLUMN\")"
-msgstr "mojDokument.ClearAll(\"DelovniListX.A1:J10\", \"=SUM(DelovniListX.A1:A10)>100\", \"COLUMN\")"
+msgid "myDoc.ClearAll(\"SheetX.A1:J10\", \"=SUM(SheetX.A1:A10)>500\", \"COLUMN\")"
+msgstr "mojDokument.ClearAll(\"DelovniListX.A1:J10\", \"=SUM(DelovniListX.A1:A10)>500\", \"COLUMN\")"
 
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id211592919864118\n"
 "help.text"
-msgid "Clears the formats and styles in the given range."
-msgstr "Počisti oblikovanje in sloge v podanem obsegu."
+msgid "Clears the formats and cell styles in the given range."
+msgstr "Počisti oblikovanje in sloge celic v podanem obsegu."
 
 #: sf_calc.xhp
 msgctxt ""
@@ -4856,6 +5344,78 @@ msgctxt ""
 "help.text"
 msgid "Refer to the <link href=\"text/sbasic/shared/03/sf_calc.xhp#ClearAll\"><literal>ClearAll</literal></link> method documentation for examples on how to use the arguments <literal>filterformula</literal> and <literal>filterscope</literal>."
 msgstr "Glejte dokumentacijo metode <link href=\"text/sbasic/shared/03/sf_calc.xhp#ClearAll\"><literal>ClearAll</literal></link>, kjer najdete primere za uporabo argumentov <literal>filterformula</literal> in <literal>filterscope</literal>."
+
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id491768047007245\n"
+"help.text"
+msgid "Define fore- and background colors of a range of cells."
+msgstr "Določite barvo ospredja in ozadja za obseg celic."
+
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id281768047040820\n"
+"help.text"
+msgid "The impacted cells may be determined with a filter formula and its scope."
+msgstr "Prizadete celice lahko določite s formulo filtra in njenim dosegom."
+
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id751768053467898\n"
+"help.text"
+msgid "<emph>targetrange</emph>: the cell or the range as a string in which cells should be (re-)colorizeed."
+msgstr "<emph>targetrange</emph>: celica ali obseg kot niz, v katerem naj bodo celice (ponovno) obarvane."
+
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id491768053636577\n"
+"help.text"
+msgid "<emph>foreground</emph>: the foreground color as the output of the RGB() function. A negative value erases the foreground color"
+msgstr "<emph>foreground</emph>: barva ospredja kot izhod funkcije RGB(). Negativna vrednost izbriše barvo ospredja."
+
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id851768053644934\n"
+"help.text"
+msgid "<emph>background</emph>: the background color as the output of the RGB() function. A negative value erases the background color"
+msgstr "<emph>background</emph>: barva ozadja kot izhod funkcije RGB(). Negativna vrednost izbriše barvo ozadja."
+
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"bas_id801768053837818\n"
+"help.text"
+msgid "' Paint the numeric cell(s) in red."
+msgstr "' Pobarva številske celice v rdeče."
+
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"bas_id117680538448860\n"
+"help.text"
+msgid "doc.ColorizeRange(\"SheetX.A1:J30\", background := RGB(255, 0, 0), filterformula := \"=IsNumeric(A1), filterscope := \"CELL\")"
+msgstr "doc.ColorizeRange(\"DelovniListX.A1:J30\", background := RGB(255, 0, 0), filterformula := \"=IsNumeric(A1), filterscope := \"CELL\")"
+
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"pyc_id231768053859976\n"
+"help.text"
+msgid "# Paint the numeric cell(s) in red."
+msgstr "# Pobarva številske celice v rdeče."
+
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"pyc_id671768053869964\n"
+"help.text"
+msgid "doc.ColorizeRange('SheetX.A1:J30', background = basic.RGB(255, 0, 0), filterformula = '=IsNumeric(A1)', filterscope = 'CELL')"
+msgstr "doc.ColorizeRange('DelovniListX.A1:J30', background = basic.RGB(255, 0, 0), filterformula = '=IsNumeric(A1)', filterscope = 'CELL')"
 
 #: sf_calc.xhp
 msgctxt ""
@@ -5486,15 +6046,15 @@ msgctxt ""
 "sf_calc.xhp\n"
 "par_id841592903121025\n"
 "help.text"
-msgid "<emph>chartname:</emph> The user-defined name of the chart to be created. The name must be unique in the same sheet."
-msgstr "<emph>chartname:</emph> uporabniško določeno ime grafikona, ki bo ustvarjen. Ime mora biti enkratno oz. na delovnem listu ne sme biti uporabljeno."
+msgid "<emph>chartname</emph>: The user-defined name of the chart to be created. The name must be unique in the same sheet."
+msgstr "<emph>chartname</emph>: uporabniško določeno ime grafikona, ki bo ustvarjen. Ime mora biti enkratno oz. na delovnem listu ne sme biti uporabljeno."
 
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id5515929031213680\n"
 "help.text"
-msgid "<emph>sheetname:</emph> The name of the sheet where the chart will be placed."
+msgid "<emph>sheetname</emph>: The name of the sheet where the chart will be placed."
 msgstr "<emph>sheetname</emph>: ime delovnega lista, na katerega želite umestiti grafikon."
 
 #: sf_calc.xhp
@@ -5502,24 +6062,24 @@ msgctxt ""
 "sf_calc.xhp\n"
 "par_id5515929031211522\n"
 "help.text"
-msgid "<emph>range:</emph> The range to be used as the data source for the chart. The range may refer to any sheet of the Calc document."
-msgstr "<emph>range:</emph> obseg, ki bo uporabljen kot vir podatkov za grafikon. Obseg se lahko nanaša na poljuben delovni list v dokumentu programa Calc."
+msgid "<emph>range</emph>: The range to be used as the data source for the chart. The range may refer to any sheet of the Calc document."
+msgstr "<emph>range:</emph>: obseg, ki bo uporabljen kot vir podatkov za grafikon. Obseg se lahko nanaša na poljuben delovni list v dokumentu programa Calc."
 
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id5515929031216390\n"
 "help.text"
-msgid "<emph>columnheader:</emph> When <literal>True</literal>, the topmost row of the range is used as labels for the category axis or the legend (Default = <literal>False</literal>)."
-msgstr "<emph>columnheader:</emph> če je <literal>True</literal>, bo vrhnja vrstica obsega služila za oznake na osi kategorij ali legendo (privzeta vrednost je <literal>False</literal>)."
+msgid "<emph>columnheader</emph>: When <literal>True</literal>, the topmost row of the range is used as labels for the category axis or the legend (Default = <literal>False</literal>)."
+msgstr "<emph>columnheader</emph>: če je <literal>True</literal>, bo vrhnja vrstica obsega služila za oznake na osi kategorij ali legendo (privzeta vrednost je <literal>False</literal>)."
 
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id5515929031211633\n"
 "help.text"
-msgid "<emph>rowheader:</emph> When <literal>True</literal>, the leftmost column of the range is used as labels for the category axis or the legend. (Default = <literal>False</literal>)."
-msgstr "<emph>rowheader:</emph> če je <literal>True</literal>, bo skrajno levi stolpec služil za oznake na osi kategorij ali legendo (privzeta vrednost je <literal>False</literal>)."
+msgid "<emph>rowheader</emph>: When <literal>True</literal>, the leftmost column of the range is used as labels for the category axis or the legend. (Default = <literal>False</literal>)."
+msgstr "<emph>rowheader</emph>: če je <literal>True</literal>, bo skrajno levi stolpec služil za oznake na osi kategorij ali legendo (privzeta vrednost je <literal>False</literal>)."
 
 #: sf_calc.xhp
 msgctxt ""
@@ -5574,7 +6134,7 @@ msgctxt ""
 "sf_calc.xhp\n"
 "par_id5515929031203640\n"
 "help.text"
-msgid "<emph>sourcerange:</emph> The range containing the raw data, as a string. It is assumed that the first row contains the field names that are used by the pivot table."
+msgid "<emph>sourcerange</emph>: The range containing the raw data, as a string. It is assumed that the first row contains the field names that are used by the pivot table."
 msgstr "<emph>sourcerange</emph>: obseg, ki vsebuje neobdelane podatke, kot niz. Predvideva se, da vsebuje prva vrstica imena polj, ki jih uporablja vrtilna tabela."
 
 #: sf_calc.xhp
@@ -5582,15 +6142,15 @@ msgctxt ""
 "sf_calc.xhp\n"
 "par_id5515929031210400\n"
 "help.text"
-msgid "<emph>targetcell:</emph> The top-left cell where the new pivot table will be placed. If a range is specified, only its top-left cell is considered."
-msgstr "<emph>targetcell</emph>: celica levo zgoraj, kamor bo umeščena nova vrtilna tabela. Če je podan obseg, se obravnava le njegova leva vrhnja celica."
+msgid "<emph>targetcell</emph>: The top-left cell where the new pivot table will be placed. If a range is specified, only its top-left cell is considered."
+msgstr "<emph>targetcell</emph>: celica skrajno levo zgoraj, kamor bo umeščena nova vrtilna tabela. Če je podan obseg, se obravnava le njegova leva vrhnja celica."
 
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
 "par_id5515929031951290\n"
 "help.text"
-msgid "<emph>datafields:</emph> It can be either a single string or an array containing strings that define field names and functions to be applied. When an array is specified, it must follow the syntax <input>Array(\"FieldName[;Function]\", ...)</input>."
+msgid "<emph>datafields</emph>: It can be either a single string or an array containing strings that define field names and functions to be applied. When an array is specified, it must follow the syntax <input>Array(\"FieldName[;Function]\", ...)</input>."
 msgstr "<emph>datafields</emph>: lahko je posamezen niz ali polje nizov, ki določajo imena polj in funkcije, ki bodo uporabljene. Če je določeno polje, mora imeti skladnjo <input>Array(\"ImePolja[;funkcija]\", ...)</input>."
 
 #: sf_calc.xhp
@@ -5606,7 +6166,7 @@ msgctxt ""
 "sf_calc.xhp\n"
 "par_id5515929031211003\n"
 "help.text"
-msgid "<emph>rowfields:</emph> A single string or an array with the field names that will be used as the pivot table rows."
+msgid "<emph>rowfields</emph> A single string or an array with the field names that will be used as the pivot table rows."
 msgstr "<emph>rowfields</emph>: posamezen niz ali polje nizov z imeni polj, ki bodo uporabljena kot vrstice vrtilne tabele."
 
 #: sf_calc.xhp
@@ -5614,7 +6174,7 @@ msgctxt ""
 "sf_calc.xhp\n"
 "par_id5515929031211114\n"
 "help.text"
-msgid "<emph>columnfields:</emph> A single string or an array with the field names that will be used as the pivot table columns."
+msgid "<emph>columnfields</emph>: A single string or an array with the field names that will be used as the pivot table columns."
 msgstr "<emph>columnfields</emph>: posamezen niz ali polje nizov z imeni polj, ki bodo uporabljena kot stolpci vrtilne tabele."
 
 #: sf_calc.xhp
@@ -5622,7 +6182,7 @@ msgctxt ""
 "sf_calc.xhp\n"
 "par_id361652796141240\n"
 "help.text"
-msgid "<emph>filterbutton:</emph> Determines whether a filter button will be displayed above the pivot table (Default = <literal>True</literal>)."
+msgid "<emph>filterbutton</emph>: Determines whether a filter button will be displayed above the pivot table (Default = <literal>True</literal>)."
 msgstr "<emph>filterbutton</emph>: določa, ali bo gumb filtra prikazan nad vrtilno tabelo (privzeta vrednost je <literal>True</literal>)."
 
 #: sf_calc.xhp
@@ -5630,7 +6190,7 @@ msgctxt ""
 "sf_calc.xhp\n"
 "par_id661652796200051\n"
 "help.text"
-msgid "<emph>rowtotals:</emph> Specifies if a separate column for row totals will be added to the pivot table (Default = <literal>True</literal>)."
+msgid "<emph>rowtotals</emph>: Specifies if a separate column for row totals will be added to the pivot table (Default = <literal>True</literal>)."
 msgstr "<emph>rowtotals</emph>: določa, ali bo v vrtilno tabelo dodan ločen stolpec za vsote vrstic (privzeta vrednost je <literal>True</literal>)."
 
 #: sf_calc.xhp
@@ -5638,7 +6198,7 @@ msgctxt ""
 "sf_calc.xhp\n"
 "par_id671652796274304\n"
 "help.text"
-msgid "<emph>columntotals</emph> Specifies if a separate row for column totals will be added to the pivot table (Default = <literal>True</literal>)"
+msgid "<emph>columntotals</emph>: Specifies if a separate row for column totals will be added to the pivot table (Default = <literal>True</literal>)"
 msgstr "<emph>columntotals</emph>: določa, ali bo v vrtilno tabelo dodana ločena vrstica za vsote stolpcev (privzeta vrednost je <literal>True</literal>)."
 
 #: sf_calc.xhp
@@ -5828,6 +6388,190 @@ msgstr "Vse te funkcije prezrejo celice v danem obsegu, ki vsebujejo besedilo. P
 #: sf_calc.xhp
 msgctxt ""
 "sf_calc.xhp\n"
+"par_id471768055753462\n"
+"help.text"
+msgid "Specify simple and easy properties of the font to be used in a range of cells."
+msgstr "Določite enostavne lastnosti pisave, ki bo uporabljena za obseg celic."
+
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id991768055771625\n"
+"help.text"
+msgid "The impacted cells may be determined with a filter formula and its scope."
+msgstr "Prizadete celice lahko določite s formulo filtriranja in njenim dosegom."
+
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id931768055801780\n"
+"help.text"
+msgid "To apply more complex font decorations, apply the usual and numerous <literal>UNO</literal> properties available in the <literal>XCell</literal> or <literal>XCellRange</literal> interfaces."
+msgstr "Če želite uveljaviti kompleksnejše okrasitve pisave, uveljavite običajne in številne lastnosti <literal>UNO</literal>, ki so na voljo v vmesnikih <literal>XCell</literal> ali <literal>XCellRange</literal>."
+
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id871768056133127\n"
+"help.text"
+msgid "<emph>targetrange</emph>: The cell or the range as a string in which cell fonts should be re-decorated."
+msgstr "<emph>targetrange</emph>: celica ali obseg kot niz, v katerem naj bodo pisave (ponovno) okrašene."
+
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id671768056195921\n"
+"help.text"
+msgid "<emph>fontname</emph>: The name of the font to be used. The name is not checked. Default = no change."
+msgstr "<emph>fontname</emph>: ime pisave, ki bo uporabljena. Ime se ne preverja. Privzeta vrednost pomeni, da sprememb ni."
+
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id971768056327357\n"
+"help.text"
+msgid "<emph>fontsize</emph>: The size of the font in pixels. Default = no change."
+msgstr "<emph>fontsize</emph>: velikost pisave v slikovnih točkah. Privzeta vrednost pomeni, da sprememb ni."
+
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id711768056157938\n"
+"help.text"
+msgid "<emph>decoration</emph>: A string combining 1 or more of next upper-case characters (other characters are ignored). Default = no change:"
+msgstr "<emph>decoration</emph>: niz, ki združuje 1 ali več velikih črk v sosledju (drugi znaki so prezrti). Privzeta vrednost pomeni, da sprememb ni:"
+
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id281768056503337\n"
+"help.text"
+msgid "B, U, I, S: Bold, Underline, Italic, Strikethrough."
+msgstr "B ali Bold, U ali Underline, I ali Italic, S ali Strikethrough: krepko, podčrtano, ležeče, prečrtano."
+
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"bas_id161768056709597\n"
+"help.text"
+msgid "' Modify the font size and apply bold and underline properties to the numeric cells."
+msgstr "' Spremeni velikost pisave in uveljavi lastnosti krepke in podčrtane pisave v številskih celicah."
+
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"bas_id601768057322683\n"
+"help.text"
+msgid "doc.DecorateFont(\"SheetX.A1:J30\", fontsize := 15, decoration := \"Bold,Underline\", filterformula := \"=IsNumeric(A1)\", filterscope := \"CELL\")"
+msgstr "doc.DecorateFont(\"DelovniListX.A1:J30\", fontsize := 15, decoration := \"Bold,Underline\", filterformula := \"=IsNumeric(A1)\", filterscope := \"CELL\")"
+
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"pyc_id661768057052508\n"
+"help.text"
+msgid "# Modify the font size and apply bold and underline properties to the numeric cells."
+msgstr "# Spremeni velikost pisave in uveljavi lastnosti krepke in podčrtane pisave v številskih celicah."
+
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"pyc_id721768057070406\n"
+"help.text"
+msgid "doc.DecorateFont('SheetX.A1:J30', fontsize = 15, decoration = 'Bold,Underline', filterformula = '=IsNumeric(A1)', filterscope = 'CELL')"
+msgstr "doc.DecorateFont('DelovniListX.A1:J30', fontsize = 15, decoration = 'Bold,Underline', filterformula = '=IsNumeric(A1)', filterscope = 'CELL')"
+
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id471779055753462\n"
+"help.text"
+msgid "Define a new name in the worksheet, at global or sheet level. If the name exists already, it is overwritten without warning. After creation, the new name can be used in formulas. Returns <literal>True</literal> when successful."
+msgstr "Določite novo ime v preglednici, na globalni ravni ali ravni delovnega lista. Če ime že obstaja, ga prepiše brez opozorila. Po nastanku lahko novo ime uporabite v formulah. Vrne <literal>True</literal>, če uspe."
+
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id991779055771625\n"
+"help.text"
+msgid "Use <literal>DefinedNames</literal> property to examine existing named ranges."
+msgstr "Uporabite lastnost <literal>DefinedNames</literal>, da preučite obstoječe imenovane obsege."
+
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id871768164133127\n"
+"help.text"
+msgid "<emph>definedname</emph>: The name to be created or modified without warning. Note that homonyms may exist, but not in the same sheet and not at global level."
+msgstr "<emph>definedname</emph>: ime, ki bo ustvarjeno ali spremenjeno brez opozorila. Upoštevajte, da lahko obstajajo enakozvočnice, vendar ne na istem delovnem listu in ne na globalni ravni."
+
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id671768067295921\n"
+"help.text"
+msgid "<emph>value</emph>: The new name as:"
+msgstr "<emph>value</emph>: novo ime kot:"
+
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id281769156503337\n"
+"help.text"
+msgid "a range reference as a string, often a single cell"
+msgstr "sklic na obseg kot niz, pogosto ena sama celica,"
+
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id281768067503337\n"
+"help.text"
+msgid "a scalar value as a number or a string"
+msgstr "skalarna vrednost kot število ali niz,"
+
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id281768056613337\n"
+"help.text"
+msgid "a formula starting with the \"=\" sign"
+msgstr "formula, ki se začenja z znakom \"=\"."
+
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id501769173466354\n"
+"help.text"
+msgid "When <literal>Value</literal> is a range, the top-left cell is set as reference cell."
+msgstr "Če je <literal>Value</literal> obseg, je skrajna leva vrhnja celica, nastavljena kot sklicna celica."
+
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id971768167327357\n"
+"help.text"
+msgid "<emph>sheetname</emph>: The defined name scope is that of the specified sheet. The \"~\" shortcut is accepted."
+msgstr "<emph>sheetname</emph>: doseg definiranega imena je za navedeni delovni list. Sprejema bližnjico \"~\"."
+
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"bas_id601768068422683\n"
+"help.text"
+msgid "doc.DefineName(\"NewName\", Sheet := \"Sheet3\", Value := \"H2\")"
+msgstr "doc.DefineName(\"NovoIme\", Sheet := \"DelovniList3\", Value := \"H2\")"
+
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"pyc_id721768068170406\n"
+"help.text"
+msgid "doc.DefineName('NewName', sheet = 'Sheet3', value = 'H2')"
+msgstr "doc.DefineName('NovoIme', sheet = 'DelovniList3', value = 'H2')"
+
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
 "par_id501623063693113\n"
 "help.text"
 msgid "Exports the specified range as an image or PDF file."
@@ -5896,6 +6640,78 @@ msgctxt ""
 "help.text"
 msgid "' Exports the range as a PNG file and overwrites the destination file if it exists"
 msgstr "' Izvozi obseg kot datoteko PNG in prepiše ciljno datoteko, če že obstaja"
+
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id551768059444915\n"
+"help.text"
+msgid "Apply a given number format to a cell or a range of cells."
+msgstr "Uveljavite dano oblikovanje številk v celici ali obsegu celic."
+
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id411768059580525\n"
+"help.text"
+msgid "The impacted cells may be determined with a filter formula and its scope."
+msgstr "Prizadete celice lahko določite s formulo filtra in njenim dosegom."
+
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id841768060290225\n"
+"help.text"
+msgid "<emph>targetrange</emph>: The cell or the range as a string that should receive the format."
+msgstr "<emph>targetrange</emph>: celica ali obseg kot niz, ki naj bo deležen oblikovanja."
+
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id991768060908752\n"
+"help.text"
+msgid "<emph>numberformat</emph>: The format to apply, as a string."
+msgstr "<emph>numberformat</emph>: oblika, ki naj bo uveljavljena, podana kot niz."
+
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"par_id951768060527854\n"
+"help.text"
+msgid "<emph>locale</emph>: A la-CO (language-COUNTRY) combination to indicate the used locale. The default locale is the output of the <literal>platform.FormatLocale</literal> property"
+msgstr "<emph>locale</emph>: kombinacija je-DR (jezik-DRŽAVA), ki nakazuje uporabljene področne nastavitve. Privzeta področna nastavitev je izhodna vrednost lastnosti <literal>platform.FormatLocale</literal>."
+
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"bas_id3176806070882\n"
+"help.text"
+msgid "' Format only the cells containing a numeric value."
+msgstr "' Oblikuj samo celice, ki vsebujejo številske vrednosti."
+
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"bas_id741768060809331\n"
+"help.text"
+msgid "doc.FormatRange(\"SheetX.A1:J30\", \"0,00E+00\", filterformula := \"=IsNumeric(A1)\", filterscope := \"CELL\")"
+msgstr "doc.FormatRange(\"SheetX.A1:J30\", \"0,00E+00\", filterformula := \"=IsNumeric(A1)\", filterscope := \"CELL\")"
+
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"pyc_id281768060928971\n"
+"help.text"
+msgid "# Format only the cells containing a numeric value."
+msgstr "# Oblikuj samo celice, ki vsebujejo številske vrednosti."
+
+#: sf_calc.xhp
+msgctxt ""
+"sf_calc.xhp\n"
+"pyc_id641768060943953\n"
+"help.text"
+msgid "doc.FormatRange('SheetX.A1:J30', '0,00E+00', filterformula = '=IsNumeric(A1)', filterscope = 'CELL')"
+msgstr "doc.FormatRange('SheetX.A1:J30', '0,00E+00', filterformula = '=IsNumeric(A1)', filterscope = 'CELL')"
 
 #: sf_calc.xhp
 msgctxt ""
@@ -8080,6 +8896,398 @@ msgctxt ""
 "help.text"
 msgid "' Keyword arguments are supported"
 msgstr "' Imenovani argumenti so podprti"
+
+#: sf_contextmenu.xhp
+msgctxt ""
+"sf_contextmenu.xhp\n"
+"tit\n"
+"help.text"
+msgid "SFWidgets.ContextMenu service"
+msgstr "Storitev SFWidgets.ContextMenu"
+
+#: sf_contextmenu.xhp
+msgctxt ""
+"sf_contextmenu.xhp\n"
+"bm_id681600788076499\n"
+"help.text"
+msgid "<variable id=\"ContextMenuService\"><link href=\"text/sbasic/shared/03/sf_contextmenu.xhp\"><literal>SFWidgets</literal>.<literal>ContextMenu</literal> service</link></variable>"
+msgstr "<variable id=\"ContextMenuService\"><link href=\"text/sbasic/shared/03/sf_contextmenu.xhp\">Storitev <literal>SFWidgets</literal>.<literal>ContextMenu</literal></link></variable>"
+
+#: sf_contextmenu.xhp
+msgctxt ""
+"sf_contextmenu.xhp\n"
+"par_id41766933792189\n"
+"help.text"
+msgid "Context menus are predefined at %PRODUCTNAME installation. They can be customized in the <literal>Tools + Customize</literal> dialog."
+msgstr "Kontekstni meniji so vnaprej določeni ob namestitvi %PRODUCTNAME. Ni jih možno prilagajati prek pogovornega okna <literal>Orodja + Prilagodi</literal>."
+
+#: sf_contextmenu.xhp
+msgctxt ""
+"sf_contextmenu.xhp\n"
+"par_id181600788076612\n"
+"help.text"
+msgid "The <literal>ContextMenu</literal> service provides the following capabilities:"
+msgstr "Storitev <literal>ContextMenu</literal> zagotavlja naslednje zmožnosti:"
+
+#: sf_contextmenu.xhp
+msgctxt ""
+"sf_contextmenu.xhp\n"
+"par_id301600788076785\n"
+"help.text"
+msgid "Replace temporarily all the menu items of a specific context menu."
+msgstr "Začasno zamenja vse elemente menija v določenem kontekstnem meniju."
+
+#: sf_contextmenu.xhp
+msgctxt ""
+"sf_contextmenu.xhp\n"
+"par_id1001600788076848\n"
+"help.text"
+msgid "Temporarily add new menu items at the bottom of a predefined context menu."
+msgstr "Začasno doda nove menijske izbire na dno vnaprej določenega kontekstnega menija."
+
+#: sf_contextmenu.xhp
+msgctxt ""
+"sf_contextmenu.xhp\n"
+"par_id771766934178093\n"
+"help.text"
+msgid "Make the context menu temporarily inactive."
+msgstr "Naredi kontekstni meni začasno nedejaven."
+
+#: sf_contextmenu.xhp
+msgctxt ""
+"sf_contextmenu.xhp\n"
+"par_id131767624894605\n"
+"help.text"
+msgid "The new menu settings are not saved anywhere. Neither in the document nor in the %PRODUCTNAME settings."
+msgstr "Nove nastavitve menija niso nikjer shranjene: niti v dokumentu niti v nastavitvah %PRODUCTNAME."
+
+#: sf_contextmenu.xhp
+msgctxt ""
+"sf_contextmenu.xhp\n"
+"par_id451766933271852\n"
+"help.text"
+msgid "A context menu is usually triggered by a right-click on a specific area of a document. Consider clicking in a cell or on a sheet tab in a <literal>Calc</literal> document."
+msgstr "Kontekstni meni običajno sproži desni klik določenega področja dokumenta. Zamislite si klik celice ali zavihka delovnega lista v dokumentu <literal>Calc</literal>."
+
+#: sf_contextmenu.xhp
+msgctxt ""
+"sf_contextmenu.xhp\n"
+"hd_id281600788076359\n"
+"help.text"
+msgid "Service invocation"
+msgstr "Priklic storitve"
+
+#: sf_contextmenu.xhp
+msgctxt ""
+"sf_contextmenu.xhp\n"
+"par_id141609955500101\n"
+"help.text"
+msgid "Before using the <literal>ContextMenu</literal> service the <literal>ScriptForge</literal> library needs to be loaded or imported:"
+msgstr "Pred uporabo storitve <literal>ContextMenu</literal> je potrebno naložiti ali uvoziti knjižnico <literal>ScriptForge</literal>:"
+
+#: sf_contextmenu.xhp
+msgctxt ""
+"sf_contextmenu.xhp\n"
+"par_id321614902851541\n"
+"help.text"
+msgid "The <literal>ContextMenu</literal> service is instantiated from the <link href=\"text/sbasic/shared/03/sf_document.xhp#ContextMenus\">SF_Document.ContextMenus()</link> and <link href=\"text/sbasic/shared/03/sf_datasheet.xhp#ContextMenus\">SF_Datasheet.ContextMenus()</link> methods only."
+msgstr "Storitev <literal>ContextMenu</literal> se kliče samo iz metod <link href=\"text/sbasic/shared/03/sf_document.xhp#ContextMenus\">SF_Document.ContextMenus()</link> in <link href=\"text/sbasic/shared/03/sf_datasheet.xhp#ContextMenus\">SF_Datasheet.ContextMenus()</link>."
+
+#: sf_contextmenu.xhp
+msgctxt ""
+"sf_contextmenu.xhp\n"
+"par_id341636718182262\n"
+"help.text"
+msgid "Running the <literal>Sub</literal> defined above redefines the context menu related to a specific area in the document, here a cell belonging to a <literal>Calc</literal> document."
+msgstr "Izvajanje <literal>Sub</literal>, določeno zgoraj, ponovno definira kontekstni meni glede na določeno področje v dokumentu, v tem primeru je to celica, ki pripada dokumentu <literal>Calc</literal>."
+
+#: sf_contextmenu.xhp
+msgctxt ""
+"sf_contextmenu.xhp\n"
+"par_id271767283860030\n"
+"help.text"
+msgid "The new definition will remain active until the document is closed or until the context menu is redefined again."
+msgstr "Nova definicija bo ostala dejavna vse dokler dokument ni zaprt ali kontekstni meni ni znova definiran."
+
+#: sf_contextmenu.xhp
+msgctxt ""
+"sf_contextmenu.xhp\n"
+"par_id991636718278125\n"
+"help.text"
+msgid "Use the <literal>Dispose</literal> method to free resources after executing the context menu."
+msgstr "Uporabite metodo <literal>Dispose</literal>, da sprostite vire po izvedbi kontekstnega menija."
+
+#: sf_contextmenu.xhp
+msgctxt ""
+"sf_contextmenu.xhp\n"
+"par_id131635275172617\n"
+"help.text"
+msgid "The example above can be written in Python as follows:"
+msgstr "Zgornji primer lahko zapišemo v Pythonu na sledeč način:"
+
+#: sf_contextmenu.xhp
+msgctxt ""
+"sf_contextmenu.xhp\n"
+"hd_id711600788076834\n"
+"help.text"
+msgid "Properties"
+msgstr "Lastnosti"
+
+#: sf_contextmenu.xhp
+msgctxt ""
+"sf_contextmenu.xhp\n"
+"par_id461600788076917\n"
+"help.text"
+msgid "Name"
+msgstr "Ime"
+
+#: sf_contextmenu.xhp
+msgctxt ""
+"sf_contextmenu.xhp\n"
+"par_id221600788076591\n"
+"help.text"
+msgid "Readonly"
+msgstr "Samo za branje"
+
+#: sf_contextmenu.xhp
+msgctxt ""
+"sf_contextmenu.xhp\n"
+"par_id761600788076328\n"
+"help.text"
+msgid "Type"
+msgstr "Vrsta"
+
+#: sf_contextmenu.xhp
+msgctxt ""
+"sf_contextmenu.xhp\n"
+"par_id67160078807636\n"
+"help.text"
+msgid "Description"
+msgstr "Opis"
+
+#: sf_contextmenu.xhp
+msgctxt ""
+"sf_contextmenu.xhp\n"
+"par_id801767285654313\n"
+"help.text"
+msgid "Yes"
+msgstr "Da"
+
+#: sf_contextmenu.xhp
+msgctxt ""
+"sf_contextmenu.xhp\n"
+"par_id201767285702754\n"
+"help.text"
+msgid "The parent document class (or one of its subclasses) instance."
+msgstr "Instanca nadrejenega razreda dokumenta (ali enega njegovih podrazredov)."
+
+#: sf_contextmenu.xhp
+msgctxt ""
+"sf_contextmenu.xhp\n"
+"par_id49160078807654\n"
+"help.text"
+msgid "Yes"
+msgstr "Da"
+
+#: sf_contextmenu.xhp
+msgctxt ""
+"sf_contextmenu.xhp\n"
+"par_id81600788076419\n"
+"help.text"
+msgid "Character used to define the access key of a menu item. The default character is <literal>~</literal>."
+msgstr "Znak, ki določa dostopno tipko za menijski element. Privzeta vrednost je <literal>~</literal>."
+
+#: sf_contextmenu.xhp
+msgctxt ""
+"sf_contextmenu.xhp\n"
+"par_id311600788076756\n"
+"help.text"
+msgid "Yes"
+msgstr "Da"
+
+#: sf_contextmenu.xhp
+msgctxt ""
+"sf_contextmenu.xhp\n"
+"par_id441600788076826\n"
+"help.text"
+msgid "Character or string that defines how menu items are nested. The default character is <literal>></literal>."
+msgstr "Znak ali niz, ki določa, kako so elementi menija gnezdeni. Privzeti znak je <literal>></literal>."
+
+#: sf_contextmenu.xhp
+msgctxt ""
+"sf_contextmenu.xhp\n"
+"hd_id181636719707892\n"
+"help.text"
+msgid "Menu and Submenus"
+msgstr "Meni in podmeniji"
+
+#: sf_contextmenu.xhp
+msgctxt ""
+"sf_contextmenu.xhp\n"
+"par_id741636719725402\n"
+"help.text"
+msgid "To create a context menu with submenus, use the character defined in the <literal>SubmenuCharacter</literal> property while creating the menu entry to define where it will be placed. For instance, consider the following menu/submenu hierarchy."
+msgstr "Za izdelavo kontekstnega menija s podmeniji uporabite znak, določen z lastnostjo <literal>SubmenuCharacter</literal>, medtem ko ustvarjate menijski vnos z določitvijo, kam bo postavljen. Razmislite npr. o naslednji hierarhiji menija/podmenijev."
+
+#: sf_contextmenu.xhp
+msgctxt ""
+"sf_contextmenu.xhp\n"
+"par_id211636720111489\n"
+"help.text"
+msgid "The code below uses the default submenu character <literal>></literal> to create the menu/submenu hierarchy defined above:"
+msgstr "Spodnja koda uporablja privzeti znak podmenija <literal>></literal> za tvorbo zgoraj določene hierarhije menija/podmenijev:"
+
+#: sf_contextmenu.xhp
+msgctxt ""
+"sf_contextmenu.xhp\n"
+"par_id121636721243578\n"
+"help.text"
+msgid "The string <literal>---</literal> is used to define separator lines in menus or submenus."
+msgstr "Niz <literal>---</literal> je uporabljen za določitev črtnih ločil v menijih in podmenijih."
+
+#: sf_contextmenu.xhp
+msgctxt ""
+"sf_contextmenu.xhp\n"
+"hd_id211636723438558\n"
+"help.text"
+msgid "Using icons"
+msgstr "Uporaba ikon"
+
+#: sf_contextmenu.xhp
+msgctxt ""
+"sf_contextmenu.xhp\n"
+"par_id981636723485402\n"
+"help.text"
+msgid "Unlike popup menus, context menu items must not contain any icons."
+msgstr "Za razliko od pojavnih menijev izbire kontekstnega menija ne smejo vsebovati ikon."
+
+#: sf_contextmenu.xhp
+msgctxt ""
+"sf_contextmenu.xhp\n"
+"hd_id501582887473754\n"
+"help.text"
+msgid "Methods"
+msgstr "Metode"
+
+#: sf_contextmenu.xhp
+msgctxt ""
+"sf_contextmenu.xhp\n"
+"par_id891611613601554\n"
+"help.text"
+msgid "List of Methods in the ContextMenu Service"
+msgstr "Seznam metod storitve ContextMenu"
+
+#: sf_contextmenu.xhp
+msgctxt ""
+"sf_contextmenu.xhp\n"
+"par_id93158919969864\n"
+"help.text"
+msgid "Make the <emph>added items</emph> of the <emph>context menu stored in the document</emph> available for execution, or, at the opposite, disable them, depending on the argument."
+msgstr "<emph>Dodane izbire</emph> v <emph>kontekstnem meniju, shranjenem v dokumentu,</emph> dajte na voljo za izvajanje ali jih, ravno nasprotno, onemogočite, odvisno od argumenta."
+
+#: sf_contextmenu.xhp
+msgctxt ""
+"sf_contextmenu.xhp\n"
+"par_id821591631203996\n"
+"help.text"
+msgid "<emph>enable:</emph> When <literal>True</literal> (default), the local menu stored in the document is made active. When <literal>False</literal>, the local menu is ignored and the global menu defined at %PRODUCTNAME level takes the precedence."
+msgstr "<emph>enable</emph>: če ima vrednost <literal>True</literal> (privzeta vrednost),je krajevni meni, shranjen v dokumentu, aktiven. Če je <literal>False</literal>, je krajevni meni prezrt in prednost ima globalni meni, ki je definiran na ravni %PRODUCTNAME."
+
+#: sf_contextmenu.xhp
+msgctxt ""
+"sf_contextmenu.xhp\n"
+"par_id93158919963364\n"
+"help.text"
+msgid "Inserts a menu entry in the context menu."
+msgstr "Vstavi menijski vnos v kontekstni meni."
+
+#: sf_contextmenu.xhp
+msgctxt ""
+"sf_contextmenu.xhp\n"
+"par_id821591631203021\n"
+"help.text"
+msgid "<emph>menuitem:</emph> Defines the text to be displayed in the menu. This argument also defines the hierarchy of the item inside the menu by using the submenu character. Set the last component to <literal>\"---\"</literal> to define a line separator."
+msgstr "<emph>menuitem:</emph> določa besedilo, ki bo prikazano v meniju. Ta argument definira tudi hierarhijo elementa v meniju z uporabo znaka za podmeni. Zadnjo komponento nastavite na <literal>\"---\"</literal>, da določite ločilno črto."
+
+#: sf_contextmenu.xhp
+msgctxt ""
+"sf_contextmenu.xhp\n"
+"par_id821591631203026\n"
+"help.text"
+msgid "<emph>command:</emph> The name of the UNO command that will be run when the item is clicked, without the <literal>.uno:</literal> prefix. If the command name does not exist or is not applicable, nothing will happen."
+msgstr "<emph>command:</emph> ime ukaza UNO, ki bo izveden, ko bo element kliknjen, brez predpone <literal>.uno:</literal>. Če ime ukaza ne obstaja ali ni relevantno v tem kontekstu, se ne zgodi nič."
+
+#: sf_contextmenu.xhp
+msgctxt ""
+"sf_contextmenu.xhp\n"
+"par_id11636721652886\n"
+"help.text"
+msgid "<emph>script:</emph> The URI for a Basic or Python script that will be executed when the item is clicked. Note that the given script will not get any argument."
+msgstr "<emph>script:</emph> URI za skript Basic oz. Python, ki bo izvršen, ko se zgodi klik elementa. Upoštevajte, da dani skript ne prejme nobenega argumenta."
+
+#: sf_contextmenu.xhp
+msgctxt ""
+"sf_contextmenu.xhp\n"
+"bas_id41158919969106\n"
+"help.text"
+msgid "menu.AddItem(\"Menu top>Item 1\", command := \"About\")"
+msgstr "menu.AddItem(\"Menu top>Item 1\", command := \"O programu\")"
+
+#: sf_contextmenu.xhp
+msgctxt ""
+"sf_contextmenu.xhp\n"
+"pyc_id321621534170554\n"
+"help.text"
+msgid "menu.AddItem('Menu top>Item 1', command = 'About')"
+msgstr "menu.AddItem('Menu top>Item 1', command = 'O programu')"
+
+#: sf_contextmenu.xhp
+msgctxt ""
+"sf_contextmenu.xhp\n"
+"par_id93158919963279\n"
+"help.text"
+msgid "Remove all items, both"
+msgstr "Odstrani vse elemente, oba"
+
+#: sf_contextmenu.xhp
+msgctxt ""
+"sf_contextmenu.xhp\n"
+"par_id221767624286826\n"
+"help.text"
+msgid "predefined with <literal>Tools + Customize</literal> and saved in the document"
+msgstr "vnaprej določeno z <literal>Orodja + Prilagodi</literal> in shranjen v dokumentu"
+
+#: sf_contextmenu.xhp
+msgctxt ""
+"sf_contextmenu.xhp\n"
+"par_id241767624361262\n"
+"help.text"
+msgid "added with <literal>contextmenu.AddItem()</literal>"
+msgstr "dodano s <literal>contextmenu.AddItem()</literal>"
+
+#: sf_contextmenu.xhp
+msgctxt ""
+"sf_contextmenu.xhp\n"
+"par_id131767624674146\n"
+"help.text"
+msgid "This action cannot be reverted except by closing and reopening the document."
+msgstr "Tega dejanja ni možno povrniti, razen če zaprete in ponovno odprete dokument."
+
+#: sf_contextmenu.xhp
+msgctxt ""
+"sf_contextmenu.xhp\n"
+"par_id351767624521068\n"
+"help.text"
+msgid "Afterwards, when relevant, use AddItem() to insert new menu items."
+msgstr "Kasneje. če je to potrebno, uporabite AddItem(), da vstavite nove menijske vnose."
+
+#: sf_contextmenu.xhp
+msgctxt ""
+"sf_contextmenu.xhp\n"
+"par_id51636726671698\n"
+"help.text"
+msgid "Associate next <literal>Sub/def</literal> with the on-right-click event of a sheet. The custom menu appears when right-clicking in column C of the Calc sheet, otherwise the normal behaviour is preserved."
+msgstr "Nato povežite <literal>Sub/def</literal> z dogodkom ob desnem kliku (on-right-click) delovnega lista. Pojavi se meni po meri, če desno kliknete v stolpec C delovnega lista Calc, sicer se ohrani običajno vedenje."
 
 #: sf_database.xhp
 msgctxt ""
@@ -10572,6 +11780,22 @@ msgstr "Določa filter, ki bo uveljavljen na delovnem listu, izražen kot stavek
 #: sf_datasheet.xhp
 msgctxt ""
 "sf_datasheet.xhp\n"
+"par_id62176771736067\n"
+"help.text"
+msgid "Yes"
+msgstr "Da"
+
+#: sf_datasheet.xhp
+msgctxt ""
+"sf_datasheet.xhp\n"
+"par_id711767717327534\n"
+"help.text"
+msgid "<literal>True</literal> when the datasheet has not been closed (f.i. by a user action)."
+msgstr "<literal>True</literal>, če podatkovni delovni list ni zaprt (npr. z dejanjem uporabnika)."
+
+#: sf_datasheet.xhp
+msgctxt ""
+"sf_datasheet.xhp\n"
 "par_id391600788076253\n"
 "help.text"
 msgid "Yes"
@@ -10584,6 +11808,22 @@ msgctxt ""
 "help.text"
 msgid "Returns the number of rows in the datasheet."
 msgstr "Vrne število vseh vrstic v delovnem listu."
+
+#: sf_datasheet.xhp
+msgctxt ""
+"sf_datasheet.xhp\n"
+"par_id258019194571067\n"
+"help.text"
+msgid "Yes"
+msgstr "Da"
+
+#: sf_datasheet.xhp
+msgctxt ""
+"sf_datasheet.xhp\n"
+"par_id941589194572219\n"
+"help.text"
+msgid "Returns a list with the menu names present in the menubar."
+msgstr "Vrne seznam z imeni menijev, prisotnih v menijski vrstici."
 
 #: sf_datasheet.xhp
 msgctxt ""
@@ -11231,7 +12471,7 @@ msgctxt ""
 "par_id421598178080993\n"
 "help.text"
 msgid "a Basic <link href=\"text/sbasic/shared/03104200.xhp\">Array</link> or Python tuple with 4 elements: (X, Y, width, height)"
-msgstr "<link href=\"text/sbasic/shared/03104200.xhp\">Array</link> v Basicu ali dvojica Python s 4 elementi: (X, Y, širina, višina) ali"
+msgstr "<link href=\"text/sbasic/shared/03104200.xhp\">Array</link> v Basicu ali n-terica Python s 4 elementi: (X, Y, širina, višina) ali"
 
 #: sf_dialog.xhp
 msgctxt ""
@@ -11472,6 +12712,22 @@ msgctxt ""
 "help.text"
 msgid "Specify the height of the dialog box."
 msgstr "Določite višino pogovornega okna."
+
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id62176771736067\n"
+"help.text"
+msgid "Yes"
+msgstr "Da"
+
+#: sf_dialog.xhp
+msgctxt ""
+"sf_dialog.xhp\n"
+"par_id711767717327534\n"
+"help.text"
+msgid "<literal>True</literal> when the dialog box has not been closed (f.i. by a user action)."
+msgstr "<literal>True</literal>, če pogovorno okno ni zaprto (npr. z dejanjem uporabnika)."
 
 #: sf_dialog.xhp
 msgctxt ""
@@ -11943,7 +13199,7 @@ msgctxt ""
 "par_id421598177970993\n"
 "help.text"
 msgid "a Basic <link href=\"sbasic/shared/03104200.xhp\">Array</link> or Python tuple with 4 elements: (X, Y, width, height)"
-msgstr "<link href=\"sbasic/shared/03104200.xhp\">Array</link> v Basicu ali dvojica Python s 4 elementi: (X, Y, širina, višina) ali"
+msgstr "<link href=\"sbasic/shared/03104200.xhp\">Array</link> v Basicu ali n-terica Python s 4 elementi: (X, Y, širina, višina) ali"
 
 #: sf_dialog.xhp
 msgctxt ""
@@ -12590,8 +13846,8 @@ msgctxt ""
 "sf_dialog.xhp\n"
 "par_id371742219905086\n"
 "help.text"
-msgid "<literal>TagePageContainer</literal> control creation comes always last in a dialog creation."
-msgstr "Izdelava kontrolnika <literal>TagePageContainer</literal> je na vrsti vedno zadnja pri ustvarjanju pogovornega okna."
+msgid "<literal>TabPageContainer</literal> control creation comes always last in a dialog creation."
+msgstr "Izdelava kontrolnika <literal>TabPageContainer</literal> je na vrsti vedno zadnja pri ustvarjanju pogovornega okna."
 
 #: sf_dialog.xhp
 msgctxt ""
@@ -15716,6 +16972,22 @@ msgstr "Vrne seznam z imeni uvoznih filtrov, ki jih je moč uporabiti za trenutn
 #: sf_document.xhp
 msgctxt ""
 "sf_document.xhp\n"
+"par_id62176771736067\n"
+"help.text"
+msgid "Yes"
+msgstr "Da"
+
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
+"par_id711767717327534\n"
+"help.text"
+msgid "<literal>True</literal> when the document has not been closed (f.i. by a user action)."
+msgstr "<literal>True</literal>, če dokument ni zaprt (npr. z dejanjem uporabnika)."
+
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
 "par_id761589194633950\n"
 "help.text"
 msgid "Yes"
@@ -15744,6 +17016,22 @@ msgctxt ""
 "help.text"
 msgid "Gives access to the Keywords property of the document. Represented as a comma-separated list of keywords"
 msgstr "Nudi dostop do ključnih besed dokumenta (lastnost Keywords). Predstavljen v obliki z vejicami ločenega seznama ključnih besed"
+
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
+"par_id258019194571067\n"
+"help.text"
+msgid "Yes"
+msgstr "Da"
+
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
+"par_id941589194572219\n"
+"help.text"
+msgid "Returns a list with the menu names present in the menubar."
+msgstr "Vrne seznam z imeni menijev, prisotnih v menijski vrstici."
 
 #: sf_document.xhp
 msgctxt ""
@@ -15944,6 +17232,30 @@ msgctxt ""
 "help.text"
 msgid "<emph>saveask</emph> : If <literal>True</literal> (default), the user is invited to confirm if the changes should be written on disk. This argument is ignored if the document was not modified."
 msgstr "<emph>saveask</emph>: če je enako <literal>True</literal> (privzeto), povpraša uporabnika, da potrdi, ali naj se spremembe shranijo na disk. Ta argument je prezrt, če dokument ni bil spremenjen."
+
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
+"par_id091159759727155\n"
+"help.text"
+msgid "This method returns either a list of the available context menus in the actual document or a <link href=\"text/sbasic/shared/03/sf_contextmenu.xhp\"><input>SFWidgets.ContextMenu</input></link> service instance."
+msgstr "Ta metoda vrne seznam imen razpoložljivih kontekstnih menijev v trenutnem dokumentu ali instanco storitve <link href=\"text/sbasic/shared/03/sf_contextmenu.xhp\"><input>SFWidgets.ContextMenu</input></link>."
+
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
+"par_id471766938992932\n"
+"help.text"
+msgid "<emph>contextmenuname</emph>: One of the available context menus. The name of a context menu is the last component of the resource URL: <literal>\"private:resource/popupmenu/the-name-here\"</literal>."
+msgstr "<emph>contextmenuname</emph>: eden izmen razpoložljivih kontekstnih menijev. Ime kontekstnega menija je zadnja komponenta URL-ja vira: <literal>\"private:resource/popupmenu/tukaj-je-ime\"</literal>."
+
+#: sf_document.xhp
+msgctxt ""
+"sf_document.xhp\n"
+"par_id361587733122507\n"
+"help.text"
+msgid "<emph>submenuchar</emph>: The delimiter used to create menu trees when calling methods as <literal>AddItem</literal> from the <literal>ContextMenu</literal> service. The default value is \">\"."
+msgstr "<emph>submenuchar</emph>: ločilo za ustvarjanje menijskih dreves pri klicu metod, kot je <literal>AddItem</literal> v storitvi <literal>ContextMenu</literal>. Privzeta vrednost je »>«."
 
 #: sf_document.xhp
 msgctxt ""
@@ -16734,7 +18046,7 @@ msgctxt ""
 "sf_document.xhp\n"
 "par_id091612259727155\n"
 "help.text"
-msgid "This method returns either a list of the available toolbar names in the actual document or an instance <link href=\"text/sbasic/shared/03/sf_toolbar.xhp\"><input>SFWidgets.Toolbar</input></link> service."
+msgid "This method returns either a list of the available toolbar names in the actual document or a <link href=\"text/sbasic/shared/03/sf_toolbar.xhp\"><input>SFWidgets.Toolbar</input></link> service instance."
 msgstr "Ta metoda vrne seznam imen razpoložljivih orodnih vrstic v trenutnem dokumentu ali instanco storitve <link href=\"text/sbasic/shared/03/sf_toolbar.xhp\"><input>SFWidgets.Toolbar</input></link>."
 
 #: sf_document.xhp
@@ -16742,8 +18054,8 @@ msgctxt ""
 "sf_document.xhp\n"
 "par_id361580321120786\n"
 "help.text"
-msgid "<emph>ToolbarName</emph>: The usual name of one of the available toolbars."
-msgstr "<emph>ToolbarName</emph>: ime ene od razpoložljivih orodnih vrstic."
+msgid "<emph>toolbarname</emph>: The usual name of one of the available toolbars."
+msgstr "<emph>toolbarname</emph>: ime ene od razpoložljivih orodnih vrstic."
 
 #: sf_document.xhp
 msgctxt ""
@@ -16876,6 +18188,54 @@ msgstr "po želji ustavi svoje izvajanje."
 #: sf_exception.xhp
 msgctxt ""
 "sf_exception.xhp\n"
+"par_id111515981158495\n"
+"help.text"
+msgid "When an error is detected in a call to the <literal>ScriptForge API</literal>, the behaviour of the application is determined by specific properties:"
+msgstr "Če je zaznana napaka v klicu <literal>API-ja ScriptForge</literal>, je vedenje programa določeno z nekaterimi lastnostmi:"
+
+#: sf_exception.xhp
+msgctxt ""
+"sf_exception.xhp\n"
+"par_id458866141202844\n"
+"help.text"
+msgid "Log the error in the <literal>Exception</literal> console. This is always done."
+msgstr "zabeleži napako v konzoli <literal>Exception</literal>, to stori vedno;"
+
+#: sf_exception.xhp
+msgctxt ""
+"sf_exception.xhp\n"
+"par_id751581258235313\n"
+"help.text"
+msgid "Inform the user about the error with either a standard or a localized message."
+msgstr "obvesti uporabnika o napaki prek standardnega ali prevedenega sporočila."
+
+#: sf_exception.xhp
+msgctxt ""
+"sf_exception.xhp\n"
+"par_id441765553270628\n"
+"help.text"
+msgid "To force a silent mode, set :"
+msgstr "Za vsilitev tihega načina nastavite:"
+
+#: sf_exception.xhp
+msgctxt ""
+"sf_exception.xhp\n"
+"par_id931587149514777\n"
+"help.text"
+msgid "<br/>To not stop the execution of the current macro, set:"
+msgstr "<br/>Če ne želite ustaviti izvajanja trenutnega makra, nastavite:"
+
+#: sf_exception.xhp
+msgctxt ""
+"sf_exception.xhp\n"
+"par_id631765553683083\n"
+"help.text"
+msgid "<br/>It then makes sense before further processing to explore the values of:"
+msgstr "<br/>Nato je smiselno, da pred nadaljnjo obdelavo raziščete vrednosti:"
+
+#: sf_exception.xhp
+msgctxt ""
+"sf_exception.xhp\n"
 "par_id771621035263403\n"
 "help.text"
 msgid "In <emph>Python scripts</emph> the <literal>Exception</literal> service is mostly used for debugging purposes. Methods such as <literal>DebugPrint</literal>, <literal>Console</literal> and <literal>DebugDisplay</literal> are useful to quickly print messages, log data and open the console window from within a Python script."
@@ -16934,8 +18294,8 @@ msgctxt ""
 "sf_exception.xhp\n"
 "par_id911621036526404\n"
 "help.text"
-msgid "The properties listed below are only available for <emph>Basic</emph> scripts."
-msgstr "Spodaj naštete lastnosti so na voljo le za skripte <emph>Basic</emph>."
+msgid "The properties listed below are only available for <emph>Basic</emph> scripts. They are related to errors occurring in any macro statement."
+msgstr "Spodaj naštete lastnosti so na voljo le za skripte <emph>Basic</emph>. Povezane so z napakami, ki se pojavijo v poljubnem ukazu makra."
 
 #: sf_exception.xhp
 msgctxt ""
@@ -17040,6 +18400,166 @@ msgctxt ""
 "help.text"
 msgid "Raising or clearing an <literal>Exception</literal> resets its properties."
 msgstr "Priklic ali čiščenje izjeme <literal>Exception</literal> ponastavi njene lastnosti."
+
+#: sf_exception.xhp
+msgctxt ""
+"sf_exception.xhp\n"
+"par_id181765554961078\n"
+"help.text"
+msgid "The properties listed below are available for <emph>Basic</emph> and <emph>Python</emph> scripts. They are related to errors detected by the <literal>ScriptForge API</literal> only."
+msgstr "Spodaj naštete lastnosti so na voljo za skripte <emph>Basic</emph> in <emph>Python</emph>. Povezane so z napakami, ki jih zazna samo <literal>API ScriptForge</literal>."
+
+#: sf_exception.xhp
+msgctxt ""
+"sf_exception.xhp\n"
+"par_id271587849211792\n"
+"help.text"
+msgid "Name"
+msgstr "Ime"
+
+#: sf_exception.xhp
+msgctxt ""
+"sf_exception.xhp\n"
+"par_id241584978152150\n"
+"help.text"
+msgid "Readonly"
+msgstr "Samo za branje"
+
+#: sf_exception.xhp
+msgctxt ""
+"sf_exception.xhp\n"
+"par_id771765555314886\n"
+"help.text"
+msgid "Return type"
+msgstr "Vrsta vrnjene vrednosti"
+
+#: sf_exception.xhp
+msgctxt ""
+"sf_exception.xhp\n"
+"par_id621948578211403\n"
+"help.text"
+msgid "Description"
+msgstr "Opis"
+
+#: sf_exception.xhp
+msgctxt ""
+"sf_exception.xhp\n"
+"par_id71584948415562\n"
+"help.text"
+msgid "No"
+msgstr "Ne"
+
+#: sf_exception.xhp
+msgctxt ""
+"sf_exception.xhp\n"
+"par_id811765555755965\n"
+"help.text"
+msgid "Boolean"
+msgstr "Logična vrednost (Boolean)"
+
+#: sf_exception.xhp
+msgctxt ""
+"sf_exception.xhp\n"
+"par_id581581178715701\n"
+"help.text"
+msgid "Indicates whether script errors are displayed in a message box when they occur."
+msgstr "Nakazuje, ali so napake skripta prikazane v sporočilu, ko se dogodijo."
+
+#: sf_exception.xhp
+msgctxt ""
+"sf_exception.xhp\n"
+"par_id241610652699444\n"
+"help.text"
+msgid "Default value is <literal>False</literal>."
+msgstr "Privzeta vrednost je <literal>False</literal>."
+
+#: sf_exception.xhp
+msgctxt ""
+"sf_exception.xhp\n"
+"par_id211584978214321\n"
+"help.text"
+msgid "Yes"
+msgstr "Da"
+
+#: sf_exception.xhp
+msgctxt ""
+"sf_exception.xhp\n"
+"par_id241765556008756\n"
+"help.text"
+msgid "String"
+msgstr "Niz (String)"
+
+#: sf_exception.xhp
+msgctxt ""
+"sf_exception.xhp\n"
+"par_id691584971598474\n"
+"help.text"
+msgid "The code returned by  the last call to the <literal>ScriptForge API</literal> from a user script."
+msgstr "Koda, ki jo vrne zadnji klic <literal>API-ja ScriptForge</literal> iz uporabniškega skripta."
+
+#: sf_exception.xhp
+msgctxt ""
+"sf_exception.xhp\n"
+"par_id151339952632828\n"
+"help.text"
+msgid "It is the zero-length string if everything ran without error."
+msgstr "To je niz ničelne dolžine, če je vse potekalo brez napake."
+
+#: sf_exception.xhp
+msgctxt ""
+"sf_exception.xhp\n"
+"par_id211584971574321\n"
+"help.text"
+msgid "Yes"
+msgstr "Da"
+
+#: sf_exception.xhp
+msgctxt ""
+"sf_exception.xhp\n"
+"par_id241765555888756\n"
+"help.text"
+msgid "String"
+msgstr "Niz (String)"
+
+#: sf_exception.xhp
+msgctxt ""
+"sf_exception.xhp\n"
+"par_id691594301598474\n"
+"help.text"
+msgid "The description of the code returned by  the last call to the <literal>ScriptForge API</literal> from a user script."
+msgstr "Opis kode, ki jo vrne zadnji klic <literal>ScriptForge API</literal> iz uporabniškega skripta."
+
+#: sf_exception.xhp
+msgctxt ""
+"sf_exception.xhp\n"
+"par_id151331144632828\n"
+"help.text"
+msgid "It is the zero-length string if everything ran without error."
+msgstr "To je niz ničelne dolžine, če je vse potekalo brez napake."
+
+#: sf_exception.xhp
+msgctxt ""
+"sf_exception.xhp\n"
+"par_id671584978788789\n"
+"help.text"
+msgid "No"
+msgstr "Ne"
+
+#: sf_exception.xhp
+msgctxt ""
+"sf_exception.xhp\n"
+"par_id85577555755965\n"
+"help.text"
+msgid "Boolean"
+msgstr "Logična vrednost (Boolean)"
+
+#: sf_exception.xhp
+msgctxt ""
+"sf_exception.xhp\n"
+"par_id951584454566296\n"
+"help.text"
+msgid "Indicates whether the macro is stopped when <literal>ScriptForge</literal> detects a user script error."
+msgstr "Pokaže, ali je makro ustavljen, ko <literal>ScriptForge</literal> zazna napako uporabniškega skripta."
 
 #: sf_exception.xhp
 msgctxt ""
@@ -19028,10 +20548,18 @@ msgstr "<emph>defaultfolder</emph>: niz vsebuje ime mape, ki bo prikazana, ko se
 #: sf_filesystem.xhp
 msgctxt ""
 "sf_filesystem.xhp\n"
+"par_id561776091933025\n"
+"help.text"
+msgid "<emph>title</emph>: Text to display in the dialog header. The default is set by the desktop environment."
+msgstr "<emph>title</emph>: besedilo, ki bo prikazano v glavi pogovornega okna. Privzeto vrednost določa namizno okolje."
+
+#: sf_filesystem.xhp
+msgctxt ""
+"sf_filesystem.xhp\n"
 "par_id821583671701764\n"
 "help.text"
-msgid "<emph>freetext</emph>: Text to display in the dialog (default = \"\")."
-msgstr "<emph>freetext</emph>: besedilo, ki bo prikazano v pogovornem oknu (privzeto = \"\")."
+msgid "<emph>freetext</emph>: Text to display in the dialog (default = \"\"). This parameter is deprecated."
+msgstr "<emph>freetext</emph>: besedilo, ki bo prikazano v pogovornem oknu (privzeto = \"\"). Ta parameter je opuščen."
 
 #: sf_filesystem.xhp
 msgctxt ""
@@ -21996,7 +23524,7 @@ msgstr "<emph>Imena metod in lastnosti:</emph> v Pythonu se vse metode in lastno
 #: sf_intro.xhp
 msgctxt ""
 "sf_intro.xhp\n"
-"par_id741623411104297\n"
+"par_id741623411104308\n"
 "help.text"
 msgid "<emph>Arguments:</emph> All keyword arguments passed on to methods are lowercased."
 msgstr "<emph>Argumenti:</emph> vsi metodam posredovani parametri ključnih besed so zapisani z malimi črkami."
@@ -22104,462 +23632,6 @@ msgctxt ""
 "help.text"
 msgid "Running Python scripts on %PRODUCTNAME"
 msgstr "Izvajanje skriptov Python v %PRODUCTNAME"
-
-#: sf_intro.xhp
-msgctxt ""
-"sf_intro.xhp\n"
-"par_id411623364895100\n"
-"help.text"
-msgid "Depending on what you intend to achieve, you may choose one of the following approaches to running Python scripts in %PRODUCTNAME:"
-msgstr "Glede na to, kaj želite doseči, lahko izberete enega od naslednjih načinov izvajanja skriptov Python v %PRODUCTNAME:"
-
-#: sf_intro.xhp
-msgctxt ""
-"sf_intro.xhp\n"
-"par_id681623365274024\n"
-"help.text"
-msgid "<emph>Run Scripts inside the current %PRODUCTNAME process:</emph> Python scripts are executed from within the %PRODUCTNAME process by using the <menuitem>Tools - Macros - Run Macro</menuitem> menu or the APSO extension to call user scripts stored in the Python scripts folder. You can also use the APSO Python shell to interactively run Python scripts."
-msgstr "<emph>izvajanje skriptov v okviru trenutnega procesa %PRODUCTNAME:</emph> skripti Python se izvajajo znotraj procesa %PRODUCTNAME z uporabo menija <menuitem>Orodja – Makri – Zaženi makro</menuitem> ali razširitve APSO, tako da kličete uporabniške skripte, shranjene v mapi skriptov Python. Uporabite lahko tudi lupino Python razširitve APSO, da skripte Python izvajate interaktivno."
-
-#: sf_intro.xhp
-msgctxt ""
-"sf_intro.xhp\n"
-"par_id761623365278133\n"
-"help.text"
-msgid "<emph>Run Scripts separately from the %PRODUCTNAME process:</emph> Python scripts are executed from an external process that connects to an ongoing %PRODUCTNAME process using a socket."
-msgstr "<emph>izvajanje skriptov ločeno od procesa %PRODUCTNAME:</emph> skripti Python se izvajajo v zunanjem procesu, ki se poveže s tekočim procesom %PRODUCTNAME z uporabo vtičnice."
-
-#: sf_intro.xhp
-msgctxt ""
-"sf_intro.xhp\n"
-"par_id631623365667011\n"
-"help.text"
-msgid "If you plan to run scripts from inside the %PRODUCTNAME process, it is recommended to install the <link href=\"https://extensions.libreoffice.org/en/extensions/show/apso-alternative-script-organizer-for-python\">APSO (Alternative Script Organizer for Python) extension</link>. However, to develop Python scripts from outside %PRODUCTNAME, you can choose your preferred Python IDE."
-msgstr "Če nameravate izvajati skripte v okviru procesa %PRODUCTNAME, priporočamo namestitev <link href=\"https://extensions.libreoffice.org/en/extensions/show/apso-alternative-script-organizer-for-python\">razširitve APSO (Alternative Python Script Organizer)</link>. Za razvoj skriptov Python izven %PRODUCTNAME lahko izberete tudi svoje priljubljeno razvojno okolje IDE za Python."
-
-#: sf_intro.xhp
-msgctxt ""
-"sf_intro.xhp\n"
-"hd_id431623365836802\n"
-"help.text"
-msgid "Running Scripts from inside the %PRODUCTNAME process"
-msgstr "Izvajanje skriptov v okviru procesa %PRODUCTNAME"
-
-#: sf_intro.xhp
-msgctxt ""
-"sf_intro.xhp\n"
-"hd_id111623365861568\n"
-"help.text"
-msgid "Using the APSO extension"
-msgstr "Z uporabo razširitve APSO"
-
-#: sf_intro.xhp
-msgctxt ""
-"sf_intro.xhp\n"
-"par_id681623365892513\n"
-"help.text"
-msgid "The easiest way to get started with Python scripting in %PRODUCTNAME is by installing the APSO extension. After installing it, open any %PRODUCTNAME component and go to <menuitem>Tools - Macros - Organize Python Scripts</menuitem>."
-msgstr "Prve korake s skripti Python v %PRODUCTNAME najenostavneje opravite z namestitvijo razširitve APSO. Po njeni namestitvi odprite poljubno komponento paketa %PRODUCTNAME in izberite <menuitem>Orodja – Makri – Organize Python scripts</menuitem>."
-
-#: sf_intro.xhp
-msgctxt ""
-"sf_intro.xhp\n"
-"par_id111623366334727\n"
-"help.text"
-msgid "In APSO's main window go to <menuitem>Menu - Python Shell</menuitem>."
-msgstr "V osrednjem oknu APSO izberite <menuitem>Menu – Python Shell</menuitem>."
-
-#: sf_intro.xhp
-msgctxt ""
-"sf_intro.xhp\n"
-"par_id931623366329927\n"
-"help.text"
-msgid "Alternatively you can open APSO using the default shortcut <keycode>Alt + Shift + F11</keycode>."
-msgstr "Namesto tega lahko odprete razširitev APSO s privzeto kombinacijo tipk <keycode>izmenjalka + dvigalka + F11</keycode>."
-
-#: sf_intro.xhp
-msgctxt ""
-"sf_intro.xhp\n"
-"par_id661623366478092\n"
-"help.text"
-msgid "Now you can start typing Python commands and the shell will print the corresponding output after each line of code is executed."
-msgstr "Zdaj lahko pričnete s pisanjem ukazov Python in v lupini se izpiše ustrezen izhod po vsaki izvedeni vrstice kode."
-
-#: sf_intro.xhp
-msgctxt ""
-"sf_intro.xhp\n"
-"par_id581623366559478\n"
-"help.text"
-msgid "To start using the <literal>ScriptForge</literal> library, you need to import the <literal>CreateScriptService</literal> method, with which you will be able to access the services provided by the library. The example below uses the <literal>Basic</literal> service to display a message box."
-msgstr "Za delo s knjižnico <literal>ScriptForge</literal> morate uvoziti metodo <literal>CreateScriptService</literal>, s katero boste lahko dostopali do storitev, ki jih ponuja knjižnica. Spodnji primer uporablja storitev <literal>Basic</literal>, s katero prikaže okno s sporočilom."
-
-#: sf_intro.xhp
-msgctxt ""
-"sf_intro.xhp\n"
-"par_id701623366829587\n"
-"help.text"
-msgid "To run the example above, enter each line in the Python shell, one by one, pressing the Enter key after you type each line of code."
-msgstr "Za izvajanje zgornjega primera vnesite vsako vrstico posebej v lupino Python, tako da po vsaki vrstici kode pritisnete vnašalko."
-
-#: sf_intro.xhp
-msgctxt ""
-"sf_intro.xhp\n"
-"par_id471623366906045\n"
-"help.text"
-msgid "Now you can start executing Python commands using any of the ScriptForge services. For example, the code snippet below uses the <literal>UI</literal> service to create a blank Writer document."
-msgstr "Zdaj lahko pričnete izvajati ukaze Python z uporabo poljubne storitve ScriptForge. Primer: spodnji odlomek kode uporablja storitev <literal>UI</literal> za izdelavo praznega dokumenta programa Writer."
-
-#: sf_intro.xhp
-msgctxt ""
-"sf_intro.xhp\n"
-"hd_id961623367376768\n"
-"help.text"
-msgid "Creating Python script files"
-msgstr "Ustvarjanje datotek skriptov Python"
-
-#: sf_intro.xhp
-msgctxt ""
-"sf_intro.xhp\n"
-"par_id821623367433650\n"
-"help.text"
-msgid "You can create your own Python files and edit them with your preferred text editor. Later you can call them from within any %PRODUCTNAME component."
-msgstr "Ustvarite lahko lastne datoteke Python in jih urejate v svojem priljubljenem urejevalniku besedil. Kasneje jih lahko kličete iz poljubne komponente %PRODUCTNAME."
-
-#: sf_intro.xhp
-msgctxt ""
-"sf_intro.xhp\n"
-"par_id51623367560321\n"
-"help.text"
-msgid "The first step is to locate where your user scripts are stored. For that, refer to <link href=\"text/sbasic/python/python_locations.xhp\">Python Scripts Organization and Location</link> help page."
-msgstr "Najprej morate poiskati mesto, kjer so shranjeni vaši uporabniški skripti. Glede tega si oglejte stran pomoči <link href=\"text/sbasic/python/python_locations.xhp\">Organizacija in mesto skriptov v Pythonu</link>."
-
-#: sf_intro.xhp
-msgctxt ""
-"sf_intro.xhp\n"
-"par_id821623367773032\n"
-"help.text"
-msgid "Now you can create a text file inside your Python user scripts folder, for instance <emph>sf_test.py</emph>, and start typing your scripts."
-msgstr "Zdaj lahko ustvarite besedilno datoteko v mapi svojih uporabniških skriptov Python, npr. <emph>sf_test.py</emph>, in pričnete s pisanjem svojih skriptov."
-
-#: sf_intro.xhp
-msgctxt ""
-"sf_intro.xhp\n"
-"par_id271623367917630\n"
-"help.text"
-msgid "Next is a simple example that gets the numeric value from a Calc cell and increments it by 1. Simply type the following code into the <emph>sf_test.py</emph> file."
-msgstr "Sledi enostaven primer, ki pridobi številsko vrednost iz celice dokumenta Calc in jo poveča za 1. Preprosto vnesite sledečo kodo v datoteko <emph>sf_test.py</emph>."
-
-#: sf_intro.xhp
-msgctxt ""
-"sf_intro.xhp\n"
-"par_id171623368511426\n"
-"help.text"
-msgid "This example creates the <literal>increment_cell</literal> function. Note that <literal>g_exportedScripts</literal> is a tuple that tells which functions will be displayed in %PRODUCTNAME as user scripts."
-msgstr "Ta primer ustvari funkcijo <literal>increment_cell</literal>. Upoštevajte, da je <literal>g_exportedScripts</literal> n-terica, ki določa, katere funkcije bodo v %PRODUCTNAME prikazane kot uporabniški skripti."
-
-#: sf_intro.xhp
-msgctxt ""
-"sf_intro.xhp\n"
-"par_id471623368615244\n"
-"help.text"
-msgid "To run this script from within a Calc document:"
-msgstr "Ta skript izvedete v dokumentu Calc na sledeč način:"
-
-#: sf_intro.xhp
-msgctxt ""
-"sf_intro.xhp\n"
-"par_id811623368677444\n"
-"help.text"
-msgid "Create or open a Calc file."
-msgstr "Ustvarite ali odprite datoteko programa Calc."
-
-#: sf_intro.xhp
-msgctxt ""
-"sf_intro.xhp\n"
-"par_id281623368679141\n"
-"help.text"
-msgid "Enter some numeric value into cell \"A1\" in the current sheet."
-msgstr "Vnesite številsko vrednost v celico »A1« na trenutnem delovnem listu."
-
-#: sf_intro.xhp
-msgctxt ""
-"sf_intro.xhp\n"
-"par_id111623368679893\n"
-"help.text"
-msgid "Go to <menuitem>Tools - Macros - Run Macros</menuitem> ."
-msgstr "Izberite <menuitem>Orodja – Makri – Zaženi makro</menuitem>."
-
-#: sf_intro.xhp
-msgctxt ""
-"sf_intro.xhp\n"
-"par_id421623368680565\n"
-"help.text"
-msgid "Choose My Macros - sf_test in the library selector. Then choose the <literal>increment_cell</literal> function under the <menuitem>Macro Name</menuitem> list."
-msgstr "V izbirniku knjižnic izberite Moji Makri – sf_test. Nato izberite funkcijo <literal>increment_cell</literal> na seznamu <menuitem>Ime makra</menuitem>."
-
-#: sf_intro.xhp
-msgctxt ""
-"sf_intro.xhp\n"
-"par_id131623368875763\n"
-"help.text"
-msgid "Click <emph>Run</emph>. Note that the value in cell \"A1\" was incremented by 1."
-msgstr "Kliknite <emph>Zaženi</emph>. Upoštevajte, da je vrednost v celici »A1« povečana za 1."
-
-#: sf_intro.xhp
-msgctxt ""
-"sf_intro.xhp\n"
-"par_id781623368934689\n"
-"help.text"
-msgid "You can also use APSO to run Python scripts in a similar manner:"
-msgstr "Na podoben način lahko za izvajanje skriptov Python uporabite tudi razširitev APSO:"
-
-#: sf_intro.xhp
-msgctxt ""
-"sf_intro.xhp\n"
-"par_id501623369002537\n"
-"help.text"
-msgid "First open APSO by going to <menuitem>Tools - Macros - Organize Python Scripts</menuitem>."
-msgstr "Naprej odprite APSO z <menuitem>Orodja – Makri – Organize Python scripts</menuitem>."
-
-#: sf_intro.xhp
-msgctxt ""
-"sf_intro.xhp\n"
-"par_id521623369004825\n"
-"help.text"
-msgid "In the macro list, navigate to <menuitem>My Macros - sf_test - increment_cell</menuitem>."
-msgstr "Na seznamu makrov krmarite do <menuitem>Moji makri – sf_test – increment_cell</menuitem>."
-
-#: sf_intro.xhp
-msgctxt ""
-"sf_intro.xhp\n"
-"par_id101623369005929\n"
-"help.text"
-msgid "Click <menuitem>Execute</menuitem>."
-msgstr "Kliknite <menuitem>Zaženi</menuitem>."
-
-#: sf_intro.xhp
-msgctxt ""
-"sf_intro.xhp\n"
-"hd_id531623369208159\n"
-"help.text"
-msgid "Running Scripts separately from the %PRODUCTNAME process"
-msgstr "Od procesa %PRODUCTNAME ločeno izvajanje skriptov"
-
-#: sf_intro.xhp
-msgctxt ""
-"sf_intro.xhp\n"
-"hd_id261623370168228\n"
-"help.text"
-msgid "Determining the Installation Path"
-msgstr "Ugotavljanje namestitvene poti"
-
-#: sf_intro.xhp
-msgctxt ""
-"sf_intro.xhp\n"
-"par_id261623369722023\n"
-"help.text"
-msgid "The first step to run scripts from a separate process is to find the folder where %PRODUCTNAME is installed. There are several ways to do that, but <literal>ScriptForge</literal> provides a quick way to identify your installation path. For that, open APSO's Python shell and type:"
-msgstr "Prvi korak za izvajanje skriptov iz ločenega procesa je, da poiščete mapo, kjer je nameščen %PRODUCTNAME. Obstaja več načinov za to, vendar <literal>ScriptForge</literal> ponuja hiter način za identifikacijo vaše namestitvene poti. V ta namen odprite lupino Python razširitve APSO in vnesite:"
-
-#: sf_intro.xhp
-msgctxt ""
-"sf_intro.xhp\n"
-"par_id81623370150730\n"
-"help.text"
-msgid "The output from the code above is the base directory where %PRODUCTNAME is installed. Now you need to add the \"program\" subfolder to the resulting path. This is the base folder from which you will run Python scripts from a separate process."
-msgstr "Rezultat zgornje kode je osnovna mapa, kjer je nameščen paket %PRODUCTNAME. Zdaj morate rezultatu dodati podmapo »program«. To je osnovna mapa, iz katere boste izvajali skripte Python v ločenem procesu."
-
-#: sf_intro.xhp
-msgctxt ""
-"sf_intro.xhp\n"
-"par_id451623370201479\n"
-"help.text"
-msgid "For example, suppose you get <emph>/usr/lib/libreoffice/</emph> as the result from running the Python code above. Then you need to consider <emph>/usr/lib/libreoffice/program</emph> as the path to run your Python scripts."
-msgstr "Primer: recimo, da je rezultat zgornje kode Python <emph>/usr/lib/libreoffice/</emph>. Kot pot za izvajanje svojih skriptov Python morate tako uporabiti <emph>/usr/lib/libreoffice/program</emph>."
-
-#: sf_intro.xhp
-msgctxt ""
-"sf_intro.xhp\n"
-"hd_id231623370501084\n"
-"help.text"
-msgid "Start %PRODUCTNAME with socket settings"
-msgstr "Zagon %PRODUCTNAME z nastavitvami vtičnic"
-
-#: sf_intro.xhp
-msgctxt ""
-"sf_intro.xhp\n"
-"par_id721623369245475\n"
-"help.text"
-msgid "To run Python scripts from a separate process, you need to start %PRODUCTNAME with a few additional options that specify the hostname and port through which the external process will communicate with the %PRODUCTNAME component process."
-msgstr "Če želite izvajati skripte Python iz ločenega procesa, morate zagnati %PRODUCTNAME z nekaj dodatnimi možnostmi, ki določajo ime gostitelja in vrata, skozi katera bo zunanji proces komuniciral s procesom komponente %PRODUCTNAME."
-
-#: sf_intro.xhp
-msgctxt ""
-"sf_intro.xhp\n"
-"par_id221623369584132\n"
-"help.text"
-msgid "Open the your operating system's command prompt, navigate to the program folder of your %PRODUCTNAME installation directory and type:"
-msgstr "Odprite ukazno vrstico operacijskega sistema, krmarite do programske mape svoje namestitvene mape %PRODUCTNAME in vnesite:"
-
-#: sf_intro.xhp
-msgctxt ""
-"sf_intro.xhp\n"
-"par_id981623370706743\n"
-"help.text"
-msgid "The command above will start %PRODUCTNAME with a communication channel open so that other processes can exchange messages with it."
-msgstr "Zgornji ukaz zažene %PRODUCTNAME z odprtim kanalom za komunikacijo, tako da lahko ostali procesi z njim izmenjujejo sporočila."
-
-#: sf_intro.xhp
-msgctxt ""
-"sf_intro.xhp\n"
-"par_id621623370871360\n"
-"help.text"
-msgid "Note that the previous example opens %PRODUCTNAME start center. If you want to open a specific component, for instance Writer, you can add the --writer flag to the command, as follows."
-msgstr "Upoštevajte, da prejšnji primer odpre začetno središče %PRODUCTNAME. Če želite odpreti določeno komponento paketa, npr. program Writer, lahko ukazu dodate zastavico --writer, kot sledi."
-
-#: sf_intro.xhp
-msgctxt ""
-"sf_intro.xhp\n"
-"par_id431623373618951\n"
-"help.text"
-msgid "Take note of the <literal>host</literal> and <literal>port</literal> parameters, which in this example are <emph>localhost</emph> and <emph>2021</emph>, respectively."
-msgstr "Zapomnite si vrednost parametrov <literal>host</literal> in <literal>port</literal>, ki sta v tem primeru <emph>localhost</emph> in <emph>2021</emph>."
-
-#: sf_intro.xhp
-msgctxt ""
-"sf_intro.xhp\n"
-"hd_id861623370468356\n"
-"help.text"
-msgid "Running an External Python Shell"
-msgstr "Izvajanje zunanje lupine Python"
-
-#: sf_intro.xhp
-msgctxt ""
-"sf_intro.xhp\n"
-"par_id621623371253647\n"
-"help.text"
-msgid "Start the Python shell from within the <emph>program</emph> folder inside your %PRODUCTNAME installation path. Follow the steps <link href=\"text/sbasic/shared/03/sf_intro.xhp#InstallPath\">above</link> to learn how to find your installation path."
-msgstr "Zaženite lupino Python iz mape <emph>program</emph> znotraj svoje namestitvene poti %PRODUCTNAME. Sledite <link href=\"text/sbasic/shared/03/sf_intro.xhp#InstallPath\">zgornjim</link> korakom, da izveste, kako poiskati svojo namestitveno pot."
-
-#: sf_intro.xhp
-msgctxt ""
-"sf_intro.xhp\n"
-"par_id11623373098602\n"
-"help.text"
-msgid "<emph>On Linux / Mac OS:</emph>"
-msgstr "<emph>Na sistemih GNU/Linux in macOS:</emph>"
-
-#: sf_intro.xhp
-msgctxt ""
-"sf_intro.xhp\n"
-"par_id311623373151552\n"
-"help.text"
-msgid "<emph>On Windows:</emph>"
-msgstr "<emph>Na sistemih Windows:</emph>"
-
-#: sf_intro.xhp
-msgctxt ""
-"sf_intro.xhp\n"
-"par_id791623373520018\n"
-"help.text"
-msgid "This will open the Python shell and now you can start typing commands that will be executed by %PRODUCTNAME. But first you need to set up the socket connection."
-msgstr "S tem odprete lupino Python in zdaj lahko začnete vnašati ukaze, ki se bodo izvajali v %PRODUCTNAME. Najprej pa morate nastaviti povezavo prek vtičnice."
-
-#: sf_intro.xhp
-msgctxt ""
-"sf_intro.xhp\n"
-"par_id761689720152565\n"
-"help.text"
-msgid "Read the section <link href=\"text/sbasic/shared/03/sf_intro.xhp#pythonpath\">Setting PYTHONPATH</link> below in case of errors importing <literal>scriptforge.py</literal> or <literal>uno.py</literal>."
-msgstr "Če naletite na napake pri uvozu <literal>scriptforge.py</literal> ali <literal>uno.py</literal>, preberite spodnje podpoglavje <link href=\"text/sbasic/shared/03/sf_intro.xhp#pythonpath\">Določanje PYTHONPATH</link>."
-
-#: sf_intro.xhp
-msgctxt ""
-"sf_intro.xhp\n"
-"par_id351623373686414\n"
-"help.text"
-msgid "The second line of code above defines the <literal>host</literal> and <literal>port</literal> settings so that the Python shell can communicate with an ongoing %PRODUCTNAME process opened with the same socket settings."
-msgstr "Druga vrstica zgornje kode določa nastavitvi <literal>host</literal> in <literal>port</literal>, tako da lahko lupina Python komunicira s tekočim procesom %PRODUCTNAME, ki je odprt z istimi nastavitvami vtičnice."
-
-#: sf_intro.xhp
-msgctxt ""
-"sf_intro.xhp\n"
-"par_id721623373769471\n"
-"help.text"
-msgid "Now you can run other Python commands and they will be able to communicate with the %PRODUCTNAME process. For example:"
-msgstr "Zdaj lahko izvajate druge ukaze Python in ti bodo lahko komunicirali s procesom %PRODUCTNAME. Primer:"
-
-#: sf_intro.xhp
-msgctxt ""
-"sf_intro.xhp\n"
-"bm_id631689720744160\n"
-"help.text"
-msgid "<bookmark_value>Python interpreter;PYTHONPATH</bookmark_value>"
-msgstr "<bookmark_value>Python;tolmač</bookmark_value><bookmark_value>tolmač Python;PYTHONPATH</bookmark_value><bookmark_value>interpretor Python;glejte tolmač Python</bookmark_value><bookmark_value>interpreter Python;glejte tolmač Python</bookmark_value>"
-
-#: sf_intro.xhp
-msgctxt ""
-"sf_intro.xhp\n"
-"hd_id341689720315095\n"
-"help.text"
-msgid "Setting PYTHONPATH"
-msgstr "Določanje PYTHONPATH"
-
-#: sf_intro.xhp
-msgctxt ""
-"sf_intro.xhp\n"
-"par_id811689720328559\n"
-"help.text"
-msgid "Depending on your operating system's configuration you will need to set the environment variable <literal>PYTHONPATH</literal> in order to import the <literal>scriptforge.py</literal> library, which in turn requires importing the <literal>uno.py</literal> library."
-msgstr "Glede na nastavitve operacijskega sistema boste morali določiti okoljsko spremenljivko <literal>PYTHONPATH</literal> za uvoz knjižnice <literal>scriptforge.py</literal>, ki posledično zahteva uvoz knjižnice <literal>uno.py</literal>."
-
-#: sf_intro.xhp
-msgctxt ""
-"sf_intro.xhp\n"
-"par_id781689720489355\n"
-"help.text"
-msgid "Use your operating system's file search tool to determine the directory where both these files are located."
-msgstr "Uporabite orodje iskanja datotek vašega operacijskega sistema, da določite mapi, v katerih se nahajata ti datoteki."
-
-#: sf_intro.xhp
-msgctxt ""
-"sf_intro.xhp\n"
-"par_id431689720583565\n"
-"help.text"
-msgid "For instance, on a default Ubuntu installation both files may be located at:"
-msgstr "Na privzeti namestitvi Ubuntu se datoteki tako najverjetneje nahajata v:"
-
-#: sf_intro.xhp
-msgctxt ""
-"sf_intro.xhp\n"
-"par_id791689720632086\n"
-"help.text"
-msgid "<emph>scriptforge.py</emph>: Located in <literal>/usr/lib/libreoffice/program</literal>"
-msgstr "<emph>scriptforge.py</emph>: nahaja se v <literal>/usr/lib/libreoffice/program</literal>"
-
-#: sf_intro.xhp
-msgctxt ""
-"sf_intro.xhp\n"
-"par_id881689720632438\n"
-"help.text"
-msgid "<emph>uno.py</emph>: Located in <literal>/usr/lib/python3/dist-packages</literal>"
-msgstr "<emph>uno.py</emph>: nahaja se v <literal>/usr/lib/python3/dist-packages</literal>"
-
-#: sf_intro.xhp
-msgctxt ""
-"sf_intro.xhp\n"
-"par_id701689720782180\n"
-"help.text"
-msgid "In this case, set the environment variable <literal>PYTHONPATH</literal> as follows before starting the Python interpreter:"
-msgstr "V tem primeru okoljsko spremenljivko <literal>PYTHONPATH</literal> pred zagonom tolmača Python nastavite tako:"
-
-#: sf_intro.xhp
-msgctxt ""
-"sf_intro.xhp\n"
-"par_id971689720909044\n"
-"help.text"
-msgid "The location of these files will be different for each operating system and %PRODUCTNAME installation method."
-msgstr "Mesto teh datotek se razlikuje glede na operacijski sistem in metodo namestitve %PRODUCTNAME."
 
 #: sf_l10n.xhp
 msgctxt ""
@@ -25190,8 +26262,8 @@ msgctxt ""
 "sf_region.xhp\n"
 "par_id611656014040098\n"
 "help.text"
-msgid "The time offset between the timezone and the Greenwich Meridian Time (GMT) is expressed in minutes."
-msgstr "Časovni zamik med časovnim pasom in greenwiškim srednjim časom je izražen v minutah."
+msgid "The time offset between the timezone and the Greenwich Mean Time (GMT) is expressed in minutes."
+msgstr "Časovni zamik med časovnim pasom in greenwiškim srednjim časom (GMT, angl. Greenwich Mean Time) je izražen v minutah."
 
 #: sf_region.xhp
 msgctxt ""
@@ -26476,6 +27548,14 @@ msgstr "Izvede funkcijo Calc z njenim angleškim imenom in s podanimi argumenti.
 #: sf_session.xhp
 msgctxt ""
 "sf_session.xhp\n"
+"par_id301765386823466\n"
+"help.text"
+msgid "The method returns a (string or numeric) scalar or the array of arrays returned by the call to the function."
+msgstr "Metoda vrne (niz ali številski) skalar polja polj, ki ga vrne klic funkcije."
+
+#: sf_session.xhp
+msgctxt ""
+"sf_session.xhp\n"
 "par_id771582816585183\n"
 "help.text"
 msgid "<emph>calcfunction</emph>: The name of the Calc function to be called, in English."
@@ -26486,16 +27566,96 @@ msgctxt ""
 "sf_session.xhp\n"
 "par_id371582816585183\n"
 "help.text"
-msgid "<emph>args</emph>: The arguments to be passed to the called Calc function. Each argument must be either a string, a numeric value or an array of arrays combining those types."
-msgstr "<emph>arg0, arg1, ...</emph>: argumenti za klicano funkcijo Calc. Vsak argument mora biti niz, številska vrednost ali polje kombinacije le-teh."
+msgid "<emph>args</emph>: The arguments to be passed to the called Calc function.<br/>Each argument may be either"
+msgstr "<emph>args</emph>: argumenti, podani klicani funkciji Calc.<br/>Vsak argument je lahko"
 
 #: sf_session.xhp
 msgctxt ""
 "sf_session.xhp\n"
-"bas_id881582816585185\n"
+"par_id831765386157812\n"
 "help.text"
-msgid "' Generates an error."
-msgstr "' Povzroči napako."
+msgid "a string, a numeric value, a date or a boolean"
+msgstr "niz, številska vrednost, datum ali logična vrednost;"
+
+#: sf_session.xhp
+msgctxt ""
+"sf_session.xhp\n"
+"par_id651765386268792\n"
+"help.text"
+msgid "a 1D array, a 2D array or an array of arrays combining above datatypes"
+msgstr "eno-, dvodimenzionalno polje ali polje polj, ki združuje zgornje vrste podatkov;"
+
+#: sf_session.xhp
+msgctxt ""
+"sf_session.xhp\n"
+"par_id121765386355137\n"
+"help.text"
+msgid "a <literal>com.sun.star.table.XCellRange</literal> UNO object"
+msgstr "predmet UNO <literal>com.sun.star.table.XCellRange</literal>."
+
+#: sf_session.xhp
+msgctxt ""
+"sf_session.xhp\n"
+"bas_id71765387395209\n"
+"help.text"
+msgid "' --------"
+msgstr "' --------"
+
+#: sf_session.xhp
+msgctxt ""
+"sf_session.xhp\n"
+"bas_id81765387429208\n"
+"help.text"
+msgid "table1 = Array(\"Symbol\", \"H\", \"He\", \"Li\")"
+msgstr "tabela1 = Array(\"Simbol\", \"H\", \"He\", \"Li\")"
+
+#: sf_session.xhp
+msgctxt ""
+"sf_session.xhp\n"
+"bas_id521765387469537\n"
+"help.text"
+msgid "table2 = Array(\"AtomicNumber\", 1.0, 2.0, 3.0)"
+msgstr "tabela2 = Array(\"AtomskoStevilo\", 1.0, 2.0, 3.0)"
+
+#: sf_session.xhp
+msgctxt ""
+"sf_session.xhp\n"
+"bas_id251765387503314\n"
+"help.text"
+msgid "table3 = Array(\"Mass\", 1.008, 4.0026, 6.94)"
+msgstr "tabela3 = Array(\"Masa\", 1.008, 4.0026, 6.94)"
+
+#: sf_session.xhp
+msgctxt ""
+"sf_session.xhp\n"
+"bas_id211765387545431\n"
+"help.text"
+msgid "table = Array(table1, table2, table3)  ' array of arrays"
+msgstr "tabela = Array(tabela1, tabela2, tabela3)  ' polje polj"
+
+#: sf_session.xhp
+msgctxt ""
+"sf_session.xhp\n"
+"bas_id471765387597098\n"
+"help.text"
+msgid "search = Array(\"Symbol\", \"AtomicNumber\", \"Mass\")"
+msgstr "search = Array(\"Simbol\", \"AtomskoStevilo\", \"Masa\")"
+
+#: sf_session.xhp
+msgctxt ""
+"sf_session.xhp\n"
+"bas_id991765387635800\n"
+"help.text"
+msgid "result = session.ExecuteCalcFunction(\"XLOOKUP\", \"Mass\", search, table)"
+msgstr "result = session.ExecuteCalcFunction(\"XLOOKUP\", \"Masa\", search, tabela)"
+
+#: sf_session.xhp
+msgctxt ""
+"sf_session.xhp\n"
+"bas_id721765387704768\n"
+"help.text"
+msgid "MsgBox result(0)(3)  ' 6.94"
+msgstr "MsgBox result(0)(3)  ' 6,94"
 
 #: sf_session.xhp
 msgctxt ""
@@ -29900,6 +31060,22 @@ msgstr "Seznam lastnosti v storitvi Calc"
 #: sf_toc.xhp
 msgctxt ""
 "sf_toc.xhp\n"
+"hd_id101671188886417\n"
+"help.text"
+msgid "<literal>SFWidgets</literal>.<literal>ContextMenu</literal> service"
+msgstr "Storitev <literal>SFWidgets</literal>.<literal>ContextMenu</literal>"
+
+#: sf_toc.xhp
+msgctxt ""
+"sf_toc.xhp\n"
+"par_id651655884130218\n"
+"help.text"
+msgid "List of Properties in the ContextMenu Service"
+msgstr "Seznam lastnosti storitve ContextMenu"
+
+#: sf_toc.xhp
+msgctxt ""
+"sf_toc.xhp\n"
 "hd_id101671192601677\n"
 "help.text"
 msgid "<literal>SFDocuments</literal>.<literal>Chart</literal> service"
@@ -31526,8 +32702,8 @@ msgctxt ""
 "sf_ui.xhp\n"
 "par_id13159655484952\n"
 "help.text"
-msgid "Creates and stores a new %PRODUCTNAME Base document embedding an empty database of the given type. The method returns a <literal>Document</literal> service instance."
-msgstr "Ustvari in shrani nov dokument %PRODUCTNAME Base, ki vdela prazno zbirko podatkov dane vrste. Metoda vrne instanco storitve <literal>Document</literal>."
+msgid "Creates and stores a new %PRODUCTNAME Base document embedding an empty database of the given type, or connected to an existing database file. The method returns a <literal>Base</literal> service instance."
+msgstr "Ustvari in shrani nov dokument %PRODUCTNAME Base, ki vdela prazno zbirko podatkov dane vrste ali povezane z obstoječo datoteko zbirke podatkov. Metoda vrne instanco storitve <literal>Base</literal>."
 
 #: sf_ui.xhp
 msgctxt ""
@@ -31542,8 +32718,8 @@ msgctxt ""
 "sf_ui.xhp\n"
 "par_id381596554849698\n"
 "help.text"
-msgid "<emph>embeddeddatabase</emph> : Either \"HSQLDB\" (default), \"FIREBIRD\" or \"CALC\"."
-msgstr "<emph>embeddeddatabase</emph>: možne vrste vdelane zbirke podatkov so \"HSQLDB\" (privzeto), \"FIREBIRD\" in \"CALC\"."
+msgid "<emph>embeddeddatabase</emph> : Either \"HSQLDB\" (default), \"FIREBIRD\", \"FIREBIRD_EXTERNAL\" or \"CALC\"."
+msgstr "<emph>embeddeddatabase</emph>: možne vrste vdelane zbirke podatkov so \"HSQLDB\" (privzeto), \"FIREBIRD\", \"FIREBIRD_EXTERNAL\" in \"CALC\"."
 
 #: sf_ui.xhp
 msgctxt ""
@@ -31556,10 +32732,18 @@ msgstr "<emph>registrationname</emph>: ime, uporabljeno za hrambo nove zbirke po
 #: sf_ui.xhp
 msgctxt ""
 "sf_ui.xhp\n"
+"par_id31776429301152\n"
+"help.text"
+msgid "<emph>datafilename</emph> : Only when <literal>embeddeddatabase</literal> = \"CALC\" or \"FIREBIRD_EXTERNAL\", <literal>datafilename</literal> represents the file containing the tables as Calc sheets or as database tables. The file must exist or an error is raised."
+msgstr "<emph>datafilename</emph>: samo ko ima parameter <literal>embeddeddatabase</literal> vrednost \"CALC\", predstavlja <literal>datafilename</literal> datoteko, ki vsebuje tabele kot delovne liste datoteke programa Calc. Datoteka mora obstajati, sicer javi napako."
+
+#: sf_ui.xhp
+msgctxt ""
+"sf_ui.xhp\n"
 "par_id181629364905056\n"
 "help.text"
-msgid "<emph>calcfilename</emph> : Only when <literal>embeddeddatabase</literal> = \"CALC\", <literal>calcfilename</literal> represents the file containing the tables as Calc sheets. The file must exist or an error is raised."
-msgstr "<emph>calcfilename</emph>: samo ko ima parameter <literal>embeddeddatabase</literal> vrednost \"CALC\", predstavlja <literal>calcfilename</literal> datoteko, ki vsebuje tabele kot delovne liste datoteke programa Calc. Datoteka mora obstajati, sicer javi napako."
+msgid "<emph>calcfilename</emph> : Only when <literal>embeddeddatabase</literal> = \"CALC\", <literal>calcfilename</literal> represents the file containing the tables as Calc sheets. The file must exist or an error is raised. The parameter is deprecated."
+msgstr "<emph>calcfilename</emph>: samo ko ima parameter <literal>embeddeddatabase</literal> vrednost \"CALC\", predstavlja <literal>calcfilename</literal> datoteko, ki vsebuje tabele kot delovne liste datoteke programa Calc. Ta parameter je zastarel oz. opuščen."
 
 #: sf_ui.xhp
 msgctxt ""
@@ -33487,7 +34671,7 @@ msgctxt ""
 "par_id611623063742045\n"
 "help.text"
 msgid "A zero-based Array (or a tuple in Python) with the names of all the forms contained in the document (if the <literal>form</literal> argument is absent)"
-msgstr "Ničelno polje (ali par v Pythonu) z imeni vseh obrazcev, vsebovanih v dokumentu obrazca (če ni podan argument <literal>form</literal>)."
+msgstr "Ničelno polje (ali n-terica v Pythonu) z imeni vseh obrazcev, vsebovanih v dokumentu obrazca (če ni podan argument <literal>form</literal>)."
 
 #: sf_writer.xhp
 msgctxt ""
