@@ -4,16 +4,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.libreoffice.org/enter_bug.cgi?product=LibreOffice&bug_status=UNCONFIRMED&component=UI\n"
 "POT-Creation-Date: 2024-09-16 19:51+0200\n"
-"PO-Revision-Date: 2023-08-10 13:24+0000\n"
+"PO-Revision-Date: 2026-08-16 22:00+0000\n"
 "Last-Translator: Joan Montané <joan@montane.cat>\n"
-"Language-Team: Catalan <https://translations.documentfoundation.org/projects/libo_ui-master/xmlsecuritymessages/ca_VALENCIA/>\n"
+"Language-Team: Catalan <https://translations.documentfoundation.org/projects/libo_ui-26-2/xmlsecuritymessages/ca_VALENCIA/>\n"
 "Language: ca-valencia\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Accelerator-Marker: ~\n"
-"X-Generator: LibreOffice\n"
+"X-Generator: Weblate 2026.6.1\n"
 "X-POOTLE-MTIME: 1527111160.000000\n"
 
 #. EyJrF
@@ -98,7 +98,7 @@ msgstr "Empremta digital MD5"
 #: xmlsecurity/inc/strings.hrc:38
 msgctxt "STR_XMLSECDLG_OPENED_CRTMGR"
 msgid "You have opened the certificate manager at\n"
-msgstr ""
+msgstr "Heu obert el gestor de certificats de\n"
 
 #. YFxBG
 #: xmlsecurity/inc/strings.hrc:39
@@ -226,25 +226,25 @@ msgstr "Xifra"
 #: xmlsecurity/inc/strings.hrc:66
 msgctxt "selectcertificatedialog|str_loaded_certs_base"
 msgid "Certificates are loaded from:\n"
-msgstr ""
+msgstr "Els certificats es carreguen des de:\n"
 
 #. hjY6w
 #: xmlsecurity/inc/strings.hrc:67
 msgctxt "selectcertificatedialog|str_loaded_certs_openpgp_gpg"
 msgid "GPG/GnuPG (OpenPGP)"
-msgstr ""
+msgstr "GPG/GnuPG (OpenPGP)"
 
 #. x7bmA
 #: xmlsecurity/inc/strings.hrc:68
 msgctxt "selectcertificatedialog|str_loaded_certs_x509_mscrypt"
 msgid "Windows Certificate Manager / CertMgr (X.509)"
-msgstr ""
+msgstr "Gestor de certificats del Windows / CertMgr (X.509)"
 
 #. 4YPYc
 #: xmlsecurity/inc/strings.hrc:69
 msgctxt "selectcertificatedialog|str_loaded_certs_x509_nss"
 msgid "NSS Certificate DB in the Mozilla Profile (X.509) at:\n"
-msgstr ""
+msgstr "BD de certificats NSS en el perfil Mozilla (X.509) a:\n"
 
 #. FSe5D
 #: xmlsecurity/inc/strings.hrc:71
@@ -262,7 +262,7 @@ msgstr ""
 #: xmlsecurity/inc/strings.hrc:72
 msgctxt "STR_RELOAD_FILE_WARNING"
 msgid "Reload the file to apply the new macro security level"
-msgstr ""
+msgstr "Torneu a carregar el fitxer per a aplicar el nivell de seguretat nou"
 
 #. AeZzq
 #: xmlsecurity/inc/strings.hrc:73
@@ -276,6 +276,13 @@ msgid ""
 "\n"
 "Do you really want to encrypt your document with this untrusted public key?"
 msgstr ""
+"Avís de seguretat: aquesta clau pública OpenPGP no és fiable:\n"
+"\n"
+"%{data}\n"
+"\n"
+"Xifrar amb una clau pública no de confiança augmenta el risc de sofrir un atac d'intercepció. Un atac reeixit d'aquest tipus dona a tercers malintencionats la capacitat de desxifrar el vostre document.\n"
+"\n"
+"Realment voleu xifrar el document amb aquesta clau pública no fiable?"
 
 #. wH3TZ
 msgctxt "stock"
@@ -424,13 +431,13 @@ msgstr "Vàlid fins a:"
 #: xmlsecurity/uiconfig/ui/certgeneral.ui:250
 msgctxt "certgeneral|type"
 msgid "Key type: "
-msgstr ""
+msgstr "Tipus de clau: "
 
 #. EFAWt
 #: xmlsecurity/uiconfig/ui/certpage.ui:33
 msgctxt "certpage|label1"
 msgid "Certificate Path"
-msgstr ""
+msgstr "Camí del certificat"
 
 #. y2mBB
 #: xmlsecurity/uiconfig/ui/certpage.ui:45
@@ -448,7 +455,7 @@ msgstr "La pàgina Camí del certificat del diàleg Visualitza el certificat mos
 #: xmlsecurity/uiconfig/ui/certpage.ui:122
 msgctxt "certpage|label2"
 msgid "Certificate status"
-msgstr ""
+msgstr "Estat del certificat"
 
 #. YTTCA
 #: xmlsecurity/uiconfig/ui/certpage.ui:148
@@ -562,7 +569,7 @@ msgstr "Elimina la signatura seleccionada de la llista. Elimina també totes les
 #: xmlsecurity/uiconfig/ui/digitalsignaturesdialog.ui:273
 msgctxt "digitalsignaturesdialog|start_certmanager"
 msgid "GPG Certificate Manager"
-msgstr ""
+msgstr "Gestor de certificats GPG"
 
 #. rRYC3
 #: xmlsecurity/uiconfig/ui/digitalsignaturesdialog.ui:362
@@ -660,12 +667,15 @@ msgid ""
 "Only signed macros and macros from trusted file locations are executed.\n"
 "Unsigned macros are disabled."
 msgstr ""
+"A_lta.\n"
+"Només s'executen macros i macros signades des d'ubicacions de fitxers de confiança.\n"
+"Les macros sense signar estan desactivades."
 
 #. nbL9B
 #: xmlsecurity/uiconfig/ui/securitylevelpage.ui:75
 msgctxt "extended_tip|high"
 msgid "Only signed macros or macros from a trusted file location are allowed to run. Macros signed with untrusted certificates will require confirmation to run, when located in untrusted file locations. Trusted certificates and trusted file locations can be set on the Trusted Sources tab page."
-msgstr ""
+msgstr "Només es permeten executar macros o macros signades des d'una ubicació de fitxer de confiança. Les macros signades amb certificats no fiables requeriran confirmació per a executar-se, si es troben en ubicacions de fitxers no fiables. Els certificats de confiança i les ubicacions de fitxers de confiança es poden establir a la pestanya Fonts de confiança."
 
 #. SDdW5
 #: xmlsecurity/uiconfig/ui/securitylevelpage.ui:86
@@ -689,31 +699,31 @@ msgstr "Podeu definir les ubicacions de fitxer fiables a la pàgina Fonts fiable
 #: xmlsecurity/uiconfig/ui/securitylevelpage.ui:116
 msgctxt "SecurityLevelPage|vhighimg"
 msgid "Very high security level"
-msgstr ""
+msgstr "Nivell de seguretat molt alt"
 
 #. PG9Kz
 #: xmlsecurity/uiconfig/ui/securitylevelpage.ui:134
 msgctxt "SecurityLevelPage|highimg"
 msgid "High security level"
-msgstr ""
+msgstr "Nivell de seguretat alt"
 
 #. mm6H3
 #: xmlsecurity/uiconfig/ui/securitylevelpage.ui:152
 msgctxt "SecurityLevelPage|medimg"
 msgid "Medium security level"
-msgstr ""
+msgstr "Nivell de seguretat mitjà"
 
 #. odkxv
 #: xmlsecurity/uiconfig/ui/securitylevelpage.ui:170
 msgctxt "SecurityLevelPage|lowimg"
 msgid "Low security level"
-msgstr ""
+msgstr "Nivell de seguretat baix"
 
 #. Dd4PX
 #: xmlsecurity/uiconfig/ui/securitylevelpage.ui:207
 msgctxt "SecurityLevelPage|warningimg"
 msgid "File reload needed"
-msgstr ""
+msgstr "Cal recarregar el fitxer"
 
 #. 5kj8c
 #: xmlsecurity/uiconfig/ui/securitytrustpage.ui:61
@@ -809,7 +819,7 @@ msgstr "Seleccioneu un certificat"
 #: xmlsecurity/uiconfig/ui/selectcertificatedialog.ui:100
 msgctxt "selectcertificatedialog|sign"
 msgid "Select the certificate you want to use for signing."
-msgstr ""
+msgstr "Seleccioneu el certificat que voleu utilitzar per a signar."
 
 #. jcCAA
 #: xmlsecurity/uiconfig/ui/selectcertificatedialog.ui:115
@@ -857,7 +867,7 @@ msgstr "Seleccioneu el certificat amb el qual vulgueu signar digitalment el docu
 #: xmlsecurity/uiconfig/ui/selectcertificatedialog.ui:259
 msgctxt "selectcertificatedialog|extended_tip|searchbox"
 msgid "Search for certificate by issuer name or email."
-msgstr ""
+msgstr "Cerca certificats pel nom d'emissor o per adreça electrònica de correu."
 
 #. dbgmP
 #: xmlsecurity/uiconfig/ui/selectcertificatedialog.ui:278
@@ -887,13 +897,13 @@ msgstr "Obri el diàleg Mostra el certificat, que vos permet examinar el certifi
 #: xmlsecurity/uiconfig/ui/selectcertificatedialog.ui:338
 msgctxt "selectcertificatedialog|reloadcert"
 msgid "Reload Certificates"
-msgstr ""
+msgstr "Torna a carrega els certificats"
 
 #. AGWLN
 #: xmlsecurity/uiconfig/ui/selectcertificatedialog.ui:345
 msgctxt "selectcertificatedialog|extended_tip|reloadcert"
 msgid "Reload the list of certificates."
-msgstr ""
+msgstr "Torna a carrega la llista de certificats."
 
 #. snAQh
 #: xmlsecurity/uiconfig/ui/selectcertificatedialog.ui:378
@@ -923,4 +933,4 @@ msgstr "Detalls"
 #: xmlsecurity/uiconfig/ui/viewcertdialog.ui:131
 msgctxt "viewcertdialog|path"
 msgid "Certificate Path"
-msgstr ""
+msgstr "Camí del certificat"
